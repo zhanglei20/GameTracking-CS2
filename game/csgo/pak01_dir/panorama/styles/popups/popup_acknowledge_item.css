@@ -1,4 +1,4 @@
-/* Prettified by Source 2 Viewer 10.2.0.0 - https://valveresourceformat.github.io */
+/* Prettified by Source 2 Viewer - https://valveresourceformat.github.io */
 
 CSGODelayLoadPanel
 {
@@ -103,10 +103,12 @@ CSGODelayLoadPanel.Offscreen
 {
 	font-size: 28px;
 	width: fit-children;
+	max-width: 900px;
 	font-weight: bold;
 	height: fit-children;
 	vertical-align: bottom;
 	white-space: normal;
+	text-overflow: ellipsis;
 }
 
 .popup-acknowledge__subtitle
