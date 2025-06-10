@@ -413,6 +413,9 @@
 #CSGO_Event_Desc
 #CSGO_Event_Details_Desc
 #CSGO_Event_Details_MvpDesc
+#CSGO_Event_HighlightReel_CharmDesc
+#CSGO_Event_HighlightReel_CharmOnSouvenir
+#CSGO_Event_HighlightReel_Desc
 #CSGO_FakePlayer_%s
 #CSGO_FakePlayer_Albatross
 #CSGO_FakePlayer_Alpha
@@ -530,8 +533,11 @@
 #Cancel
 #Chatwheel_affirmative
 #Chatwheel_aplan
+#Chatwheel_attacking
 #Chatwheel_bombat
 #Chatwheel_bombcarrierspotted
+#Chatwheel_bombpickedup
+#Chatwheel_bombsiteclear
 #Chatwheel_bplan
 #Chatwheel_cheer
 #Chatwheel_compliment
@@ -546,13 +552,18 @@
 #Chatwheel_followme
 #Chatwheel_gethostage
 #Chatwheel_gogogo
+#Chatwheel_gotheadshot
 #Chatwheel_grenade
+#Chatwheel_guardinga
+#Chatwheel_guardingb
 #Chatwheel_guardingbomb
 #Chatwheel_heardnoise
 #Chatwheel_holdposition
 #Chatwheel_ifixbomb
 #Chatwheel_ihavethebomb
+#Chatwheel_ikilledsniper
 #Chatwheel_inposition
+#Chatwheel_lostround
 #Chatwheel_midplan
 #Chatwheel_multipleenemieshere
 #Chatwheel_needbackup
@@ -560,13 +571,22 @@
 #Chatwheel_oneenemyhere
 #Chatwheel_onmyway
 #Chatwheel_peptalk
+#Chatwheel_planted
+#Chatwheel_plantedata
+#Chatwheel_plantedatb
+#Chatwheel_plantingata
+#Chatwheel_plantingatb
 #Chatwheel_quiet
 #Chatwheel_requestecoround
+#Chatwheel_requestgethostages
+#Chatwheel_requestleader
 #Chatwheel_requestplan
 #Chatwheel_requestspend
 #Chatwheel_requestweapon
 #Chatwheel_rotatetome
+#Chatwheel_sawheadshot
 #Chatwheel_sectorclear
+#Chatwheel_seehostagestaken
 #Chatwheel_smoke
 #Chatwheel_sniperspotted
 #Chatwheel_sorry
@@ -953,6 +973,8 @@
 #GameUI_Stat_LastMatch_RoundsWon
 #GameUI_Stat_LastMatch_TWins
 #GameUI_VoiceAbusePenaltyNag
+#HighlightDesc_%s
+#HighlightReel_%s
 #Item_Ad
 #Item_CollectionReward
 #Item_Crafted
@@ -1030,6 +1052,8 @@
 #Overwatch_Error_ExtractionFailed
 #Overwatch_Error_FilesAccess
 #P0_?G0
+#PANOHUD_Spectate_Navigation_CopyHighlight
+#PANOHUD_Spectate_Navigation_PlayHighlight
 #PANOHUD_Spectate_Navigation_ToggleXRay_Off
 #PANOHUD_Spectate_Navigation_ToggleXRay_On
 #PANORAMA_CONNWARNING_BODY
@@ -1864,12 +1888,12 @@
 #ebe2ca
 #ede47a
 #emptystring
-#favored
 #ff0000
 #ffdf93
 #ffffff
 #genuine
 #haunted
+#highlight
 #hud_telemetry_excessive_jitter_time
 #hud_telemetry_frametime_fps
 #hud_telemetry_graph_ms
@@ -2255,6 +2279,7 @@ $taser_charge
 %s%c%08lx.%s%d
 %s%s%s crc=0x%x metadatasz=%d
 %s%s.vcompmat
+%s%s.webm
 %s%s=%.2f (float)
 %s%s=%.2f,%.2f,%.2f (vector)
 %s%s=%d "%s" (enum)
@@ -6425,7 +6450,6 @@ $taser_charge
 4@AA
 4C_C4
 4Ch;
-4Cxyi
 4F0I
 4Mv8
 4STEAMUNIFIEDMESSAGES_INTERFACE_VERSION001
@@ -6630,6 +6654,7 @@ $taser_charge
 8<pl
 8= zp
 8A6j
+8B3q*
 8CAmmoDef
 8CFXQueueI16ParticleParams_t19ImpactTraceParams_tE
 8CFXQueueI17PlaceDecalEvent_tiE
@@ -7707,6 +7732,7 @@ BInit
 BIsHost
 BIsSteamInputActiveAndControllersConnected
 BIsTransparent
+BLAST.tv Austin 2025 CS2 Major Championship
 BLAST.tv Paris 2023 CS:GO Major Championship
 BLOOM Down
 BLoadLayout
@@ -8012,6 +8038,7 @@ BuildCustomFields_R( %s ) -- \n
 BuildDataRuns
 BuildDebugPanel
 BuildFlattenedChains_R
+BuildHighlightReelSchemaJSON
 BuildItemSchemaDefJSON
 BuildItemTagsObject
 BuildParticleSimList
@@ -9183,7 +9210,6 @@ CSparseShadowTreeGameSystem::GameShutdown\n
 CSpawnGroupMgrGameSystem::ActivateSpawnGroup:  no such group %s\n
 CSpawnGroupMgrGameSystem::FrameBoundary:  invoking unload of spawn group %s(%s)\n
 CSpawnGroupMgrGameSystem::UnloadSpawnGroup:  queueing unload of spawn group %s(%s)\n
-CSteamUnifiedMessageDispatcher::SendMethod: Cannot invoke method without first registering listener.\n
 CSteamWorksGameStatsClient
 CStorePage
 CStrongHandle
@@ -9350,6 +9376,7 @@ CVoiceStatus::UpdateSpeakerStatus: ent %d ss[%d] talking = %d\n
 CW.Agree
 CW.BombAt
 CW.BombCarrierHere
+CW.BombsiteClear
 CW.CheckHostage
 CW.Cheer
 CW.Compliment
@@ -9363,25 +9390,42 @@ CW.GoA
 CW.GoB
 CW.GoGoGo
 CW.GoToLocMid
+CW.GuardingA
+CW.GuardingB
 CW.GuardingDroppedBomb
 CW.HeardNoise
 CW.HoldPosition
 CW.IFixBomb
+CW.IKilledSniper
+CW.ISeeBomb
+CW.ImAttacking
 CW.InPosition
+CW.MyHeadshot
 CW.NeedBackup
 CW.NeedDecoy
 CW.NeedDrop
 CW.NeedFire
 CW.NeedFlash
 CW.NeedGrenade
+CW.NeedLeader
 CW.NeedPlan
+CW.NeedQuiet
 CW.NeedSmoke
 CW.OMW
 CW.PepTalk
+CW.PickedUpC4
+CW.PlantedAtA
+CW.PlantedAtB
+CW.PlantingAtA
+CW.PlantingAtB
 CW.Regroup
+CW.RequestGetHostages
+CW.RoundLost
+CW.SawHeadshot
 CW.SectorClear
 CW.SeesEnemiesMultiple
 CW.SeesEnemy
+CW.SeesHostagesBeingTaken
 CW.SeesSingleEnemy
 CW.SniperWarning
 CW.Sorry
@@ -9392,6 +9436,7 @@ CW.TeamFallBack
 CW.Thanks
 CW.WeHaveTheBomb
 CW.YouFixBomb
+CW.wePlanted
 CWatchableFriendsInfo -- request [%u] is starting GOTV relay, extended timeout by %u seconds...\n
 CWatchableFriendsInfo -- request [%u] received %u friends\n
 CWatchableFriendsInfo -- request [%u] timed out for %u matches (%u)!\n
@@ -10931,6 +10976,8 @@ Duplicate alternate icon definition '%s' (%llu)
 Duplicate alternate icon definition (%d)
 Duplicate attribute definition index (%d)
 Duplicate equip region named "%s".
+Duplicate highlight reel definition id %d
+Duplicate highlight reel name '%s'
 Duplicate item definition (%d)
 Duplicate itemset name (%s) found!
 Duplicate keychain definition id %d
@@ -12312,6 +12359,7 @@ GetExpirationDate
 GetFakeItemIDToRepresentPlayerID
 GetFakeItemIDToRepresentTeamID
 GetFauxItemIDFromDefAndPaintIndex
+GetFauxItemIDFromDefAndPaintIndexUB1
 GetFieldPriority
 GetFirstVetoTeamID
 GetFlairItemId
@@ -13229,6 +13277,13 @@ Hides this layer
 Hierarchically spawn an entity group from a set of spawn tables.
 HighPrecisionLightingOffset
 Highlight
+Highlight reel definition %s: id must be a positive integer
+Highlight reel definition %s: invalid "map"
+Highlight reel definition %s: invalid "matchid"
+Highlight reel definition %s: invalid "tournament event id"
+Highlight reel definition %s: invalid "tournament event stage id"
+Highlight reel definition %s: invalid "tournament event team id"
+Highlight reel definition %s: missing "id"
 HighlightIntervals
 HighlightPanel
 HighlightPatchBySlot
@@ -13290,6 +13345,7 @@ HotKey_ControlBot
 HotKey_DirectorOn
 HotKey_Map
 HotKey_ReplayLastKill
+HotKey_ViewHighlight
 HotKey_XRay
 Hours
 HoveringOverKeychain
@@ -13313,6 +13369,7 @@ HudCommandQueueStateAdd
 HudCommandQueueStateUpdate
 HudEventIndicator
 HudFrameTimeGraph
+HudHighlightClip
 HudInWorld
 HudLowerLeft
 HudNetJitterGraph
@@ -13899,6 +13956,7 @@ ItemIsInFavorites
 ItemNameCraftNumberFormat
 ItemNameUniqueFormat
 ItemNameWithQualityFormat
+ItemNameWithQualityFormat_13
 ItemPanel
 ItemPips
 ItemPrice
@@ -14005,6 +14063,7 @@ Key Encipherment
 KeyValues3
 Keychain definition %s: missing "name"
 Keychain definition %s: name must be a positive integer
+Keychain definition %s: unsupported item_quality '%s'
 KeychainGhostHandData
 KeychainMarkup
 KeychainRemoveToolCharges
@@ -14217,6 +14276,7 @@ LookupFlatGroup
 Loop Point
 LoopModeGameStartup
 LoopModeGame_client
+Loot List %s: "match_highlight_reel_keychain" block refers to unknown keychain '%s'.\n
 Loot List %s: Looking for attribute template "%s" that couldn't be found in "random_attribute_templates" block.\n
 Loot List %s: Missing required field "chance" in the "random_attributes" block.
 Loot definition %s: Attribute "%s" missing required 'weight' field
@@ -21988,6 +22048,7 @@ Z~wl
 ^Nij
 ^RB!r
 _%s.json
+_720p
 _DateOnly
 _Ek6b]
 _GMT
@@ -22016,6 +22077,7 @@ __strcat_chk
 __timezone
 __vfprintf_chk
 __xstat
+_beta
 _buildcubemaps
 _buildcubemaps.vpk
 _buildsparseshadowtree
@@ -22061,6 +22123,7 @@ _util_drawtext_pos
 _xU`u
 _}eOk
 `28)fk
+`43P*
 `:zQF
 `A33
 `Bwall
@@ -23734,6 +23797,7 @@ catmullrom_tangent
 cc_noattenuate
 ccs received early
 cdP%
+cdn.akamai.steamstatic.com
 ceil
 cell: (%d, %d, %d)\n
 cell_info
@@ -25577,6 +25641,7 @@ fast_allocator_regression_test
 fatPixels
 fatal
 fatdemo.proto
+favored
 favorites
 favouriteDrink
 favs
@@ -26533,6 +26598,7 @@ high_end_only
 highdamage
 highest_string
 highlightDeprecated
+highlight_reels
 highlights
 hint_name
 hip_dip_chng_dir
@@ -26631,6 +26697,7 @@ http://www.twitch.tv/%s
 http://www.twitch.tv/settings/connections
 https proxy request
 https://
+https://%s/apps/csgo/videos/highlightreels%s/%03d/%03d_%03dv%03d_%03d_%s_%s_%s
 https://%s/linkfilter/?url=%s
 https://%s/newsentry/%s
 https://api%s.steampowered.com/ICSGOServers_%d/GetLeaderboardEntries/v1?format=json&lbname=%s
@@ -26766,7 +26833,6 @@ icons/ui/chatwheel_fire.svg
 icons/ui/chatwheel_flashbang.svg
 icons/ui/chatwheel_followme.svg
 icons/ui/chatwheel_followyou.svg
-icons/ui/chatwheel_gethostage.svg
 icons/ui/chatwheel_gogogo.svg
 icons/ui/chatwheel_grenade.svg
 icons/ui/chatwheel_guardingbomb.svg
@@ -27664,6 +27730,7 @@ is rental
 isAutoCancel
 isAutoConfirm
 isIcon
+isIcon4x
 isItemPreview
 isMapPreview
 isPatchStickerIcon
@@ -27900,6 +27967,7 @@ key_enc_algor
 keybind_changed
 keyblob header parse error
 keyblob too short
+keychain slot 0 highlight
 keychain slot 0 id
 keychain slot 0 offset x
 keychain slot 0 offset y
@@ -27968,7 +28036,6 @@ kv 0x%p Release refcount == %d\n
 kw.6#
 k~Rz
 l <= sizeof(c->iv)
-l&+3z
 l&rB6
 l4Ot
 l7@J
@@ -28816,6 +28883,7 @@ mat_vtxlit_new_path 0
 mat_vtxlit_new_path 1
 match%u_%021llu_%010u_%03u
 match_end_conditions
+match_highlight_reel_keychain
 match_stats
 matchdl
 matchdlcode
@@ -28834,6 +28902,7 @@ matchesLost
 matchesTied
 matchesWon
 matches_won_this_series
+matchid
 matchinfo
 matchinfo.tmp
 matchmaking
@@ -33667,8 +33736,11 @@ uppervalue
 upvotes
 urandom_result > 0 || ( urandom_result < 0 && errno == EINTR )
 urgent
+url%s
 url( 
 url( none )
+url_1080p
+url_480p
 usable_gc
 usable_out_of_game
 usage:  %s <entindex>\n
@@ -34289,7 +34361,6 @@ web-spoke-length-scale
 web-spoke-line-softness
 web-spoke-line-thickness
 web_resources
-webm
 webp
 webvtt-cue end-time must have value greater than start-time
 webvtt-cue-id truncated
