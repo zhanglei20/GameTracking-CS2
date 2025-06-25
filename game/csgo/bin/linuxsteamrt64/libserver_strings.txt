@@ -276,8 +276,69 @@
 #Chat_SavePlayer_Saved
 #Chat_SavePlayer_Savior
 #Chat_SavePlayer_Spectator
+#Chatwheel_affirmative
 #Chatwheel_aplan
+#Chatwheel_attacking
+#Chatwheel_bombat
+#Chatwheel_bombcarrierspotted
+#Chatwheel_bombpickedup
+#Chatwheel_bombsiteclear
 #Chatwheel_bplan
+#Chatwheel_cheer
+#Chatwheel_compliment
+#Chatwheel_coveringyou
+#Chatwheel_decoy
+#Chatwheel_droppedbomb
+#Chatwheel_enemyspotted
+#Chatwheel_fallback
+#Chatwheel_fire
+#Chatwheel_flashbang
+#Chatwheel_followingyou
+#Chatwheel_followme
+#Chatwheel_gethostage
+#Chatwheel_gogogo
+#Chatwheel_gotheadshot
+#Chatwheel_grenade
+#Chatwheel_guardinga
+#Chatwheel_guardingb
+#Chatwheel_guardingbomb
+#Chatwheel_heardnoise
+#Chatwheel_holdposition
+#Chatwheel_ifixbomb
+#Chatwheel_ihavethebomb
+#Chatwheel_ikilledsniper
+#Chatwheel_inposition
+#Chatwheel_lostround
+#Chatwheel_midplan
+#Chatwheel_multipleenemieshere
+#Chatwheel_needbackup
+#Chatwheel_negative
+#Chatwheel_oneenemyhere
+#Chatwheel_onmyway
+#Chatwheel_peptalk
+#Chatwheel_planted
+#Chatwheel_plantedata
+#Chatwheel_plantedatb
+#Chatwheel_plantingata
+#Chatwheel_plantingatb
+#Chatwheel_quiet
+#Chatwheel_requestecoround
+#Chatwheel_requestgethostages
+#Chatwheel_requestleader
+#Chatwheel_requestplan
+#Chatwheel_requestspend
+#Chatwheel_requestweapon
+#Chatwheel_rotatetome
+#Chatwheel_sawheadshot
+#Chatwheel_sectorclear
+#Chatwheel_seehostagestaken
+#Chatwheel_smoke
+#Chatwheel_sniperspotted
+#Chatwheel_sorry
+#Chatwheel_spreadout
+#Chatwheel_sticktogether
+#Chatwheel_thanks
+#Chatwheel_youfixbomb
 #Cstrike_TitlesTXT_Accept_Radio
 #Cstrike_TitlesTXT_Affirmative
 #Cstrike_TitlesTXT_Alias_Not_Avail
@@ -814,7 +875,6 @@
 #customized
 #developer
 #ebe2ca
-#favored
 #funfact_best_accuracy
 #funfact_best_counterterrorist_accuracy
 #funfact_best_terrorist_accuracy
@@ -878,6 +938,7 @@
 #game_nextmap
 #genuine
 #haunted
+#highlight
 #hostagerescuetime
 #normal
 #selfmade
@@ -3829,7 +3890,6 @@ $tFa\v
 27CSoundAreaEntityOrientedBox
 27CSoundEventPathCornerEntity
 27CSoundOpvarSetOBBWindEntity
-27CSteamServiceMethodUMHelper
 27CTraceFilterHitEntitiesOnly
 27CTraceFilterIngnoreGrenades
 27CUserMessageServerFrameTime
@@ -3904,7 +3964,6 @@ $tFa\v
 28IEconItemAttributeDefinition
 28IPhysicsEntitySolverAutoList
 28ISkeletonAnimationController
-28ISteamUnifiedMessageListener
 28PlayerRankingInfo_PerMapRank
 28SimpleConstraintSoundProfile
 28Source1LegacyGameEventList_t
@@ -5142,7 +5201,6 @@ Bomb Damage is %.0f, Radius is %.0f\n
 BombIsBeingDefused
 BombPlants
 BombTargetUse does nothing\n
-BombsiteClear
 BombsiteSecure
 Bone merge bones from parent were invalid: parent model '%s': our model '%s'
 BoneConstraintList
@@ -5955,7 +6013,6 @@ CSpawnGroupMgrGameSystem: flushed %d queued entity calls\n
 CSpawnGroupMgrGameSystem::ActivateSpawnGroup:  no such group %s\n
 CSpawnGroupMgrGameSystem::FrameBoundary:  invoking unload of spawn group %s(%s)\n
 CSpawnGroupMgrGameSystem::UnloadSpawnGroup:  queueing unload of spawn group %s(%s)\n
-CSteamUnifiedMessageDispatcher::SendMethod: Cannot invoke method without first registering listener.\n
 CSteamWorksGameStatsServer
 CStressDamageSystem
 CStrongHandle
@@ -6052,7 +6109,70 @@ CViewModelPredictedSimulationTimeGameSystem
 CVoiceGameMgr::ClientCommand: VModEnable (%d)\n
 CVoiceGameMgr::ClientCommand: cmd %s from invalid client (%d)\n
 CVoiceGameMgr::ClientCommand: vban (0x%x) (0x%x) from %d\n
+CW.Agree
+CW.BombAt
+CW.BombCarrierHere
+CW.BombsiteClear
+CW.CheckHostage
 CW.Cheer
+CW.Compliment
+CW.CoveringYou
+CW.Disagree
+CW.DroppedBomb
+CW.EcoRound
+CW.FollowMe
+CW.FollowingYou
+CW.GoA
+CW.GoB
+CW.GoGoGo
+CW.GoToLocMid
+CW.GuardingA
+CW.GuardingB
+CW.GuardingDroppedBomb
+CW.HeardNoise
+CW.HoldPosition
+CW.IFixBomb
+CW.IKilledSniper
+CW.ISeeBomb
+CW.ImAttacking
+CW.InPosition
+CW.MyHeadshot
+CW.NeedBackup
+CW.NeedDecoy
+CW.NeedDrop
+CW.NeedFire
+CW.NeedFlash
+CW.NeedGrenade
+CW.NeedLeader
+CW.NeedPlan
+CW.NeedQuiet
+CW.NeedSmoke
+CW.OMW
+CW.PepTalk
+CW.PickedUpC4
+CW.PlantedAtA
+CW.PlantedAtB
+CW.PlantingAtA
+CW.PlantingAtB
+CW.Regroup
+CW.RequestGetHostages
+CW.RoundLost
+CW.SawHeadshot
+CW.SectorClear
+CW.SeesEnemiesMultiple
+CW.SeesEnemy
+CW.SeesHostagesBeingTaken
+CW.SeesSingleEnemy
+CW.SniperWarning
+CW.Sorry
+CW.SpendRound
+CW.SpreadOut
+CW.StickTogether
+CW.TeamFallBack
+CW.Thanks
+CW.WeHaveTheBomb
+CW.YouFixBomb
+CW.wePlanted
 CWeakHandle
 CWorkThread -- Sleep
 CWorkThreadPool::StartWorkThread: Thread creation failed.\n
@@ -6146,7 +6266,6 @@ Change Team
 ChangeLogger
 Changed attribute in %d areas\n
 Chatter
-Chatwheel sounds begin with CW.\n
 Check Requirement
 CheckClient
 CheckPoint
@@ -6300,7 +6419,6 @@ Could not allocate and bind entity to bot edict.\n
 Could not execute '%s' because this graph domain does not support the required IGapHost
 Could not find a CBaseAnimGraph under the crosshair
 Could not find an entity matching name or id of %s\n
-Could not find given player radio command\n
 Could not find pParamValue!
 Couldn't find HLTV client player.
 Couldn't find any entity named '%s'\n
@@ -6663,6 +6781,8 @@ Duplicate alternate icon definition '%s' (%llu)
 Duplicate alternate icon definition (%d)
 Duplicate attribute definition index (%d)
 Duplicate equip region named "%s".
+Duplicate highlight reel definition id %d
+Duplicate highlight reel name '%s'
 Duplicate item definition (%d)
 Duplicate itemset name (%s) found!
 Duplicate keychain definition id %d
@@ -7642,7 +7762,6 @@ Health: %i
 Healthshot.Success
 Heard enemy, holding position for %f2.1 seconds...\n
 Heard noise (%s from %s, pri %s, time %3.1f)\n
-HeardNoise
 Heat: %.1f
 HeavyWakeTaunt
 Help
@@ -7654,6 +7773,13 @@ Hiding spot off nav mesh\n
 HidingSpotService
 HidingSpotServiceHidingSpotArray
 Hierarchically spawn an entity group from a set of spawn tables.
+Highlight reel definition %s: id must be a positive integer
+Highlight reel definition %s: invalid "map"
+Highlight reel definition %s: invalid "matchid"
+Highlight reel definition %s: invalid "tournament event id"
+Highlight reel definition %s: invalid "tournament event stage id"
+Highlight reel definition %s: invalid "tournament event team id"
+Highlight reel definition %s: missing "id"
 History/ExtraAccountCT
 History/ExtraAccountTerrorist
 History/HostageSpawnIndices
@@ -7720,7 +7846,6 @@ HostageSpawnExclusionGroup8
 HostageSpawnExclusionGroup9
 HostageThink
 HostageUse
-HostagesBeingTaken
 HostagesTaken
 Hours
 HullDesc_tiny
@@ -8479,6 +8604,7 @@ KV3 save transfer failed: %s
 KeyValues3
 Keychain definition %s: missing "name"
 Keychain definition %s: name must be a positive integer
+Keychain definition %s: unsupported item_quality '%s'
 Kick
 Kicking user %s (sv_kick_players_with_cooldown=%d)\n
 KillEaterRank
@@ -8607,6 +8733,7 @@ Loop Point
 LoopInit:  in "error" map - disconnecting...\n
 LoopModeGameStartup
 LoopModeGame_server
+Loot List %s: "match_highlight_reel_keychain" block refers to unknown keychain '%s'.\n
 Loot List %s: Looking for attribute template "%s" that couldn't be found in "random_attribute_templates" block.\n
 Loot List %s: Missing required field "chance" in the "random_attributes" block.
 Loot definition %s: Attribute "%s" missing required 'weight' field
@@ -10932,7 +11059,6 @@ Smooth curve decreasing slower as it approaches zero
 Snap the 2nd target's position to target 1's position
 SndEmitterSystem
 SndSosTriggerOpvarWaitOver
-SniperWarning
 Sniping near a rescue zone\n
 Sniping near bombsite\n
 Sniping near hostages\n
@@ -12924,7 +13050,6 @@ commonName
 commonitem
 community_sparkle
 competitive
-compliment
 composite_material_path
 compressedtangentframe
 computer
@@ -13791,7 +13916,6 @@ fake_derived_a
 fake_derived_b
 fakeclient
 fallDownAndAsleep
-fallback
 fan_addnoise
 fan_end
 fan_falloff
@@ -13810,6 +13934,7 @@ farzscale
 fast
 fatal
 fatdemo.proto
+favored
 favorites
 favouriteDrink
 fbihrt_epic
@@ -13994,7 +14119,6 @@ follow_player_across_teleport
 follow_renderorigin
 follow_rootbone
 following entity %d
-followme
 font_name
 fopen
 fopen('
@@ -14344,6 +14468,7 @@ high_priority
 highdamage
 highlight_instance_id
 highlight_node_id
+highlight_reels
 hingeaxis
 hingefriction
 hint_activator_caption
@@ -14805,7 +14930,6 @@ inmin
 inner_angle
 inner_radius
 innerconeangle
-inposition
 inputOffset
 inputType
 input_angles
@@ -14965,6 +15089,7 @@ k_EGCMsgResponseUnknownError
 kevlar(%d) 
 keyBag
 keyUsage
+keychain slot 0 highlight
 keychain slot 0 id
 keychain slot 0 offset x
 keychain slot 0 offset y
@@ -15596,6 +15721,8 @@ mask='%s'
 mass %.1f
 massscale
 master
+match_highlight_reel_keychain
+matchid
 matchmaking
 materialDamageOverlay
 material_base
@@ -15951,7 +16078,6 @@ nearest_area_distance_threshold
 nearlyempty
 nearz
 neck
-needbackup
 needs_match
 negated
 nested asn1 error
@@ -17060,7 +17186,6 @@ sect409r1
 sect571k1
 sect571r1
 section
-sectorclear
 secure device signature
 security
 seeAlso
@@ -17764,7 +17889,6 @@ texture_based_animation_position_keys
 texture_based_animation_rotation_keys
 textureframe
 texturename
-thanks
 the Earth
 theta
 thinkalways
@@ -18028,6 +18152,10 @@ total_wins_pistolround
 toteam
 touchoutputperentitydelay
 tough
+tournament event id
+tournament event stage id
+tournament event team0 id
+tournament event team1 id
 tournament_drop
 tournament_event_id
 tournament_player_id
