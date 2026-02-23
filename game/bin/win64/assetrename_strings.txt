@@ -470,6 +470,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 &nbsp;&nbsp;There is one code reference that may need to be manually fixed:<br>\n
 &nbsp;&nbsp;There is one code reference that will need to be manually fixed:<br>\n
 &nbsp;&nbsp;VMDL File saved: %s<br>\n
+&nbsp;&nbsp;VTEX File saved : %s<br>\n
 '%s' is not a valid variable type
 'OverrideClass' was specified but class '%s' has not been previously defined.\n
 '\n#k_EProtoDebugVisibility_ValveServer
@@ -14492,6 +14493,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 <font color=red>&nbsp;&nbsp;ERROR: Failed to read VTEX file.</font><br>\n
 <font color=red>&nbsp;&nbsp;ERROR: Failed to read file.</font><br>\n
 <font color=red>&nbsp;&nbsp;ERROR: Failed to save kv1: %s.</font><br>\n
+<font color=red>&nbsp;&nbsp;ERROR: Failed to save kv3 to buffer: %s.</font><br>\n
 <font color=red>&nbsp;&nbsp;ERROR: Failed to save kv3: %s.</font><br>\n
 <font color=red>&nbsp;&nbsp;ERROR: Failed to write fixed-up data %s</font><br>\n
 <font color=red>ERROR: Failed to load file %s.</font><br>\n
@@ -16811,7 +16813,6 @@ CDmeDag::GetParentWorldMatrix called on a dag that has different rotation and tr
 CDmeDotaTileGrid
 CDmeDrawCallSnapshot
 CDmeImageProcessor
-CDmeInputTexture
 CDmeLog: interpolable type %s doesn't have an interpolation function!
 CDmeNavData
 CDmeNodeInstanceData
@@ -19110,6 +19111,7 @@ DriverBone
 DumpModeDecode: Not enough data for scanline %d
 Duplicate a UV Map texcoord channel
 Duplicate attribute name %s encountered!\n
+Duplicate bone %d renamed :: "%s" -> "%s"\n
 Duplicate child mesh name
 Duplicate hit group (%s) specified in destructible parts system data.  Please fix.
 Duplicate model config '%s'
@@ -25411,8 +25413,6 @@ Zpm"U
 \ng default\n
 \nh?oT
 \nk>oB
-\r&nbsp;&nbsp;VTEX File saved : %s<br>\n
-\r<font color=red>&nbsp;&nbsp;ERROR: Failed to save kv3 to buffer: %s.</font><br>\n
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?event@QObject@@UEAA_NPEAVQEvent@@@Z
 \r?eventFilter@QObject@@UEAA_NPEAV1@PEAVQEvent@@@Z
@@ -25427,7 +25427,7 @@ Zpm"U
 \r?information@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z
 \r?information@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1W421@2@Z
 \r?initPainter@QWidget@@MEBAXPEAVQPainter@@@Z
-\rDuplicate bone %d renamed :: "%s" -> "%s"\n
+\rCDmeInputTexture
 \rGraph Object is null
 \rModelDoc
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
@@ -25440,8 +25440,9 @@ Zpm"U
 \r\n\tTYPE_ENUM
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
 \r\tV_expf
+\rinvalid bone index(%d) specified, valid range[0:%d]\n
 \rp\f`\v0\nP!'\f
-\rsmartprop2
+\rvsmart
 \src\shaders\
 \t2t4J6$"$
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
@@ -28153,7 +28154,6 @@ interpolator_right
 interpretation
 interrupted
 intmap
-invalid bone index(%d) specified, valid range[0:%d]\n
 invalid compound data group
 invalid hash bucket count
 invalid header in CprImpl(Compound)
@@ -31542,7 +31542,6 @@ vs_5_0
 vs_6_0
 vscale
 vsky
-vsmart
 vsubgrph
 vsutils_py
 vtex

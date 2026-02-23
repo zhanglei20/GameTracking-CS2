@@ -209,7 +209,6 @@ $%llx
 54CProductInfo_SetRichPresenceLocalization_Request_Token
 59CChinaAgreementSessions_StartAgreementSessionInGame_Request
 59CQuest_PublisherAddCommunityItemsToPlayer_Request_Attribute
-5Sh&
 60CChinaAgreementSessions_StartAgreementSessionInGame_Response
 60CWorkshop_SetItemPaymentRules_Request_PartnerItemPaymentRule
 61CWorkshop_SetItemPaymentRules_Request_WorkshopItemPaymentRule
@@ -461,6 +460,7 @@ GamesTypes: unable to set convars. There are no convars for game type/mode (%s:%
 GamesTypes: unable to set game type and mode. Could not find type/mode matching type:%s/mode:%s.\n
 GamesTypes: unable to set game type and mode. Game type value is outside valid range.  (value == %d)\n
 GetPchTempTextBuffer() called after UninitTempTextBuffers()
+Host settings have bad key %s:%d\n
 HostUtils001
 InetSearchServerDetails
 InetSearchServerDetails/pingxuid

@@ -293,11 +293,11 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 (Filter)
 (No Active Session)
 (No Asset)
+(Ykm
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
 (null)
-(ykm
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\r?hideEvent@QComboBox@@MEAAXPEAVQHideEvent@@@Z
@@ -3047,15 +3047,14 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?userType@QVariant@@QEBAHXZ
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 ?xMk
-?xNk
 ?ysB
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @Integer overflow in %s
 @PXk
+@Tgm
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 @^8U)zj
 @spawn
-@tgm
 A fatal error occurred.
 A new location must be selected in order to save the file.
 A resource error occurred.
@@ -4146,9 +4145,10 @@ Greens
 Grid layout should be an array of arrays
 Group3Options
 Group4Options
+H%gm
 HAC K  Unused Binding
-HEgm
 HH:mm:ss
+HMgm
 HSLA
 HSLA\t
 HSVA
@@ -4164,7 +4164,7 @@ Hide
 Hide unless error/warning occurs
 High Contrast
 Highlights
-Hmgm
+Hihm
 Home
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HorizontalStrafeCamera
@@ -5581,6 +5581,7 @@ Y?setHotSpot@QDrag@@QEAAXAEBVQPoint@@@Z
 Y?setHslF@QColor@@QEAAXNNNN@Z
 Y?setHsvF@QColor@@QEAAXNNNN@Z
 Y?setIcon@QStandardItem@@QEAAXAEBVQIcon@@@Z
+YBim
 YCbCrCoefficients
 YCbCrPositioning
 YCbCrSubsampling
@@ -5593,7 +5594,6 @@ Y\tV_roundf
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 YawCameraLeft
 YawCameraRight
-Ybim
 Yellow
 Yellows
 Yes - Discard and reload from disk
@@ -5767,7 +5767,6 @@ Zpm"U
 \r\f\v\v\n\n\t\t\t\t\t
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
 \r\tV_expf
-\rxRk
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?addPolygon@QPainterPath@@QEAAXAEBVQPolygonF@@@Z
 \t?alpha@QColor@@QEBAHXZ
@@ -5887,13 +5886,13 @@ _nextafter
 _toolsautosave
 _volumeatlas_
 _wjb
+`9km
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?value@QColor@@QEBAHXZ
 `?valueF@QColor@@QEBANXZ
 `Q?lightnessF@QColor@@QEBANXZ
 `RTTI
-`Ykm
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
 `\tV_sinf
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z

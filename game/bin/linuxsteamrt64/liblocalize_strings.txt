@@ -144,7 +144,6 @@
 +Inf
 -Inf
 /resource/valve_
-0qe`(
 12CRefCounted1I23ILocalizeCompiledString20CRefCountServiceBaseI6CRefMTEE
 14CBaseAppSystemI9ILocalizeE
 15CTier0AppSystemI9ILocalizeLx0EE
@@ -157,6 +156,7 @@
 34CLocalizeCompiledStringSinglePlain
 35CLocalizeCompiledStringLocVariables
 36CLocalizeCompiledStringMessageFormat
+4k4$
 9CLocalize
 9ILocalize
 :help
@@ -332,6 +332,7 @@ es-419
 es_419
 es_ES
 fi_FI
+file://
 finnish
 fr_FR
 french

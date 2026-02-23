@@ -466,6 +466,9 @@ bot_debug 0 (gamedll cheat)
 bot_debug_target 0 (gamedll cheat)
 	For internal testing purposes.
 
+bot_defense_rush_chance 33 (gamedll cheat)
+	Are the defense bots going to rush.
+
 bot_defer_to_human_goals false (gamedll release commandline_enforced)
 	If nonzero and there is a human on the team, the bots will not do the scenario tasks.
 
