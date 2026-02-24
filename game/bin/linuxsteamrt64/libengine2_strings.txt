@@ -1667,7 +1667,7 @@ $lZT
 20ISource2ServerConfig
 20ISource2WorldSession
 20PacketEntitiesFilter
-21:37:27
+21:54:28
 21C2S_CONNECT_Message_t
 21CCLCMsg_BaselineAck_t
 21CEngineGotvSyncPacket
@@ -1952,9 +1952,11 @@ $lZT
 36CMsgSource2PlayStatsPackedRecordList
 36CNETMsg_SpawnGroup_SetCreationTick_t
 36CSource1InputHandlerPreClientHandler
+36CSource2Metrics_FetchMapData_Request
 37CCompressedResourceManifestRefCounted
 37CMetaDuplicationAutoCompletionFunctor
 37CSource1InputHandlerPostClientHandler
+37CSource2Metrics_FetchMapData_Response
 37CVConsole2FlattenedSerializerListener
 37CWaitForGameServerStartupPrerequisite
 37IKV3TransferInterface_Worldspace_Load
@@ -1994,6 +1996,7 @@ $lZT
 456789:;<=
 45CMsgSource2PlayStatsPackedRecordList_FieldDef
 45CNetworkServerSpawnGroup_AllocatePrerequisite
+45CSource2Metrics_FetchMapData_Response_MapData
 45CSource2Metrics_MatchPerfSummary_Notification
 476\r
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
@@ -4544,7 +4547,7 @@ Failure
 False
 FastHexToBuffer() wants non-negative integers, not 
 Features
-Feb  9 2026
+Feb 23 2026
 February
 Feel free to add support for more if you need it.
 Field "
@@ -8212,6 +8215,7 @@ ThreadGetProcessPriority
 ThreadInMainThread
 ThreadInPrimaryOrSecondaryMainThread
 ThreadNanoSleep
+ThreadSetPerfSetAffinity
 ThreadSetPriority
 ThreadSetProcessPriority
 ThreadSleep

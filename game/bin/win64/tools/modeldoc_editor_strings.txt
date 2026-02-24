@@ -27,7 +27,7 @@
   R%d: %15s %25s %s\n
   Top-level Mesh Op '%s' returning a cached result.\n
   V%d: '%s' (%s)\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  #%d: %d Faces, %d Verts, %d Edges\n
@@ -686,29 +686,34 @@ $schemasystem/schema_enable_defines.h
 (%d tracks)
 ((6"8(:,<*>
 (0`hpx
+(19H
+(1RH
 (1iH
 (4pZ\n
-(5IH
-(5nH
-(5vH
-(9LH
+(58H
+(9nH
+(9wH
 (? Queued)
 (?!\d)[\w_]*
 (Advanced Feature) Used to specify special interaction rules or exclusions. References a name in scripts/collision_properties.txt.
 (Anonymous)
+(AtH
 (Cannot dynamically spawn a prop_static)
 (Custom Colors Disabled)
 (Debug Feature) Used to draw collision with the same material in Physics Debugger as in Hammer.
 (Debug) Visualize Simplification Edges
+(EDH
+(EdH
 (Edges to Faces)
 (Edges to Vertices)
-(EeH
 (EpH
+(ErH
 (Error)
 (Faces to Edges)
 (Faces to Vertices)
 (Filter)
-(MNH
+(I0H
+(MJH
 (Mesh Substring Filter)
 (Multiple)
 (No Active Session)
@@ -718,16 +723,12 @@ $schemasystem/schema_enable_defines.h
 (No class selected)
 (Outliner Filter)
 (Preview Outliner Filter)
-(QGO
-(QKO
-(QrH
+(QeH
 (Specified in project's gameinfo.gi)
 (Steam Audio) Update physics surface property of VMDL files. They are used for picking acoustic material property for Steam Audio.
-(UBH
-(UPH
+(U7H
 (Vertices to Edges)
 (Vertices to Faces)
-(YAH
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\t"\r\n\vCNETMsg_NOP"'\n
@@ -756,23 +757,20 @@ $schemasystem/schema_enable_defines.h
 (\v2\v.CMsgVector
 (\v2\v.CMsg_CVars:
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(aCH
-(axH
+(aAH
+(aFH
+(aZH
 (export) %d %s %d %s %s\n
 (export) %d %s %d %s\n
-(i1H
-(iZH
 (layer %d)
-(mbH
-(mmH
+(m5H
+(myH
 (no-compile)
 (null)
-(q9H
-(qRH
-(qiH
-(u8H
-(ynH
-(ywH
+(qqH
+(qvH
+(uLH
+(yfH
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )#GameUI_Disconnect_PureServer_ClientExtra
 )#GameUI_Disconnect_RemoteProblem_BadCrypt
@@ -13145,8 +13143,6 @@ $schemasystem/schema_enable_defines.h
 8-byte data pool
 8@HP:
 8Csinf
-8QSH
-8YGH
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n\textension
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
@@ -13794,6 +13790,7 @@ $schemasystem/schema_enable_defines.h
 ?MoveFrom@CBufferString@@QEAAXAEAV1@@Z
 ?Nearest@CVertexKDTree@@QEBAXAEBV?$Vec3D@M@@AEAV?$CUtlVectorFixedGrowable@PEBM$0EA@H@@@Z
 ?OutputIndentation@IFormatOutputStream@@UEAAXXZ
+?PaV
 ?ParallelCallQueued@CCallQueue@@QEAAXPEBDPEAVIThreadPool@@@Z
 ?ParseToken@CUtlBuffer@@QEAA_NPEBD0PEADH@Z
 ?PathJoin@CUtlString@@SA?AV1@PEBD0@Z
@@ -19840,7 +19837,7 @@ Grow or Shrink
 Grow or shrink a selection
 Grow the selection by adding contiguous components to the selection.
 H.FM
-H5CO
+H1DO
 HAC K  Unused Binding
 HELPER_BONE
 HH:mm:ss
@@ -19850,6 +19847,7 @@ HSVA
 HSVA\t
 HSequence ID
 HUD Display
+HYDO
 Hack Dota Layer Opaque
 Hack Dota Layer Opaque Translucent
 HairShader
@@ -19959,7 +19957,6 @@ How much to consider facing angle in occlusion.
 How quickly the elasticity target pose changes to match the current pose
 How sensitive the setting thresholds for 'stationary' should be - a value of 1 means use the vdata settings directly.
 How the end effector should be rotated after the solve.
-HqDO
 Hud Settings
 Hull
 Hull Per Element
@@ -20148,6 +20145,7 @@ Importing a file whose mod (%s) is not in the leafiest search path.<br>Do you wa
 Imports The Skeleton From The Specified File Or SkeletonFile Node
 In Frame
 In-Game Animation Capture
+InEO
 InFrame
 InFrame frame, also called "apex" and "in", can be aliased via "entrytag" in sequence KV
 Inactive events ignored
@@ -25249,7 +25247,6 @@ YCbCrCoefficients
 YCbCrPositioning
 YCbCrSubsampling
 YClipPathUnits
-YJEO
 YO?insertColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 YPosition
 YResolution
@@ -25257,6 +25254,7 @@ YY?setDropAction@QDropEvent@@QEAAXW4DropAction@Qt@@@Z
 Y\n)NETWORK_DISCONNECT_NO_PEER_GROUP_HANDLERS
 Y\n*NETWORK_DISCONNECT_STRINGTABLEMSG_OVERFLOW
 Y\n0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
+Y\nEO
 Y\tV_roundf
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 Yaw Bounce
@@ -25504,6 +25502,7 @@ Zpm"U
 \n?editorEvent@QStyledItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \nDescription: %s
 \nErrors Found:\n%s
+\nGGH
 \nIHDRPLTEIDATIENDtRNScHRMgAMAiCCPsBITsRGBtEXtzTXtiTXtbKGDhISTpHYssPLTtIMEoFFseXIf
 \nThickness: %.1f [inches]
 \n[ERR] Not enough memory, shop for some more RAM. See you!\n
@@ -25577,7 +25576,6 @@ Zpm"U
 \n\voutput_type
 \n\vsource_file
 \n\vspawn_count
-\neEO
 \ng default\n
 \nh?oT
 \nk>oB
@@ -25895,6 +25893,8 @@ _zero
 `Q?lightnessF@QColor@@QEBANXZ
 `RTTI
 `V?queryKeyboardModifiers@QGuiApplication@@SA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
+`YFO
+`YHH
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
 `\tV_sinf
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
@@ -25926,6 +25926,7 @@ _zero
 `omni callsig'
 `placement delete closure'
 `placement delete[] closure'
+`qGO
 `scalar deleting destructor'
 `string'
 `template static data member constructor helper'
@@ -25949,6 +25950,7 @@ _zero
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
+`yFO
 a6>r
 a:fulltype
 a:typeparam

@@ -17,6 +17,8 @@
 		{ m_OldName =  "CEntityIndex"				 	m_NewName = "int32" },
 		{ m_OldName =  "CSWeaponState_t"				m_NewName = "uint32" },
 		{ m_OldName =  "WorldGroupId_t"					m_NewName = "uint32" },
+		{ m_OldName =  "PlayerAnimEvent_t"				m_NewName = "WeaponGameplayAnimState" },
+		{ m_OldName =  "WeaponAttackType_t"				m_NewName = "int32" },
 	]
 }	
 

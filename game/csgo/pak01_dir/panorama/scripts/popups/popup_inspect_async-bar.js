@@ -213,6 +213,24 @@ var InspectAsyncActionBar;
             };
             HoldButton.SetupButton(btnSettings);
         }
+        if (worktype === 'delete') {
+            elNegative.visible = false;
+            elOK.visible = false;
+            const btnHoldAction = elPanel.FindChildInLayoutFile('AsyncItemWorkAcceptNegativeHold');
+            btnHoldAction.RemoveClass('AsyncItemWorkAcceptNegativeHidden');
+            const btnSettings = {
+                btn: btnHoldAction,
+                tooltip: '#popup_delete_tooltip',
+                locString: '#popup_' + worktype + '_button',
+                loopingSound: 'UI.Laptop.ButtonFillLoop',
+                timerCompleteAction: () => {
+                    _OnAccept(oSettings, elPanel, true);
+                    btnHoldAction.enabled = false;
+                }
+            };
+            HoldButton.SetupButton(btnSettings);
+            return;
+        }
         const toolId = InspectShared.GetPopupSetting('tool_id');
         const itemDefName = InventoryAPI.GetItemDefinitionName(itemId);
         const btnStyle = InspectShared.GetPopupSetting('override_async_btn_style') === false ?

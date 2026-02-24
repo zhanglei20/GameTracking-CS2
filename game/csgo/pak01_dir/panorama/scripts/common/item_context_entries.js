@@ -943,7 +943,7 @@ var ItemContextEntries;
                 let oSettings = {
                     item_id: id,
                     override_async_btn_style: 'Negative',
-                    store_item_id: 'delete'
+                    work_type: 'delete'
                 };
                 elPanel.Data().oSettings = oSettings;
             }

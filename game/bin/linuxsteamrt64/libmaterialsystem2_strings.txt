@@ -653,7 +653,7 @@ ZN37CTypesafeIntrospectedToKV3TypeManagerILy500152889462E24PostProcessingResourc
 \n*** Unable to parse Version in HEADER section of %s!\n\n
 \n*** Unknown rule "%s" in %s!\n\n
 \n*** Unknown text found in FEATURES section in %s: "%s"\n\n
-\n*** material2.cpp(1570): Error! Trying to load material "%s" without any params!\n
+\n*** material2.cpp(1548): Error! Trying to load material "%s" without any params!\n
 \n*** vfx_common.cpp(1410): Error opening file "%s"!\n\n
 \n*** vfx_common.cpp(1487): Error opening file "%s"!\n\n
 \n*** vfx_common.cpp(5867): Error opening file "%s"!\n\n
@@ -674,18 +674,18 @@ ZN37CTypesafeIntrospectedToKV3TypeManagerILy500152889462E24PostProcessingResourc
 \n\t%02i%% (%i/%i)
 \n\t\tDynamic:
 \nmaterial2.cpp(119): ERROR! Can't load vfx_dx dll, dynamic shader compile unavailable!\n
-\nmaterial2.cpp(1565): Error! Material "%s" is already loaded!\n
-\nmaterial2.cpp(1599): Cannot find shader entry in material "%s"! Using error.vfx!\n
-\nmaterial2.cpp(1642): Error creating shader %s and cannot load error.vfx instead!\n
-\nmaterial2.cpp(1681): Error creating fallback shader %s for %s for material %s! A fallback shader cannot fallback to a different shader!\n
-\nmaterial2.cpp(1693): Error creating fallback shader %s for %s for material %s!\n
-\nmaterial2.cpp(1697): Error creating fallback shader %s for %s and cannot load error.vfx instead!\n
-\nmaterial2.cpp(1724): Error creating shader %s for material %s!\n
-\nmaterial2.cpp(1729): Error creating shader %s and cannot load error.vfx instead!\n
-\nmaterial2.cpp(1739): Error creating static combos for shader %s and error.vfx instead!\n
-\nmaterial2.cpp(2868): Dynamic shader compile failed for %s in material "%s"!\n
-\nmaterial2.cpp(3590): All bad! The error material failed in dynamic shader compile!\n
-\nmaterial2.cpp(4414): Find a graphics programmer! Trying to bind a "%s" shader that doesn't exist! for %s\n
+\nmaterial2.cpp(1543): Error! Material "%s" is already loaded!\n
+\nmaterial2.cpp(1577): Cannot find shader entry in material "%s"! Using error.vfx!\n
+\nmaterial2.cpp(1620): Error creating shader %s and cannot load error.vfx instead!\n
+\nmaterial2.cpp(1659): Error creating fallback shader %s for %s for material %s! A fallback shader cannot fallback to a different shader!\n
+\nmaterial2.cpp(1671): Error creating fallback shader %s for %s for material %s!\n
+\nmaterial2.cpp(1675): Error creating fallback shader %s for %s and cannot load error.vfx instead!\n
+\nmaterial2.cpp(1702): Error creating shader %s for material %s!\n
+\nmaterial2.cpp(1707): Error creating shader %s and cannot load error.vfx instead!\n
+\nmaterial2.cpp(1717): Error creating static combos for shader %s and error.vfx instead!\n
+\nmaterial2.cpp(2843): Dynamic shader compile failed for %s in material "%s"!\n
+\nmaterial2.cpp(3565): All bad! The error material failed in dynamic shader compile!\n
+\nmaterial2.cpp(4389): Find a graphics programmer! Trying to bind a "%s" shader that doesn't exist! for %s\n
 \src\shaders\
 \t\tStatic:
 ^^^ Attribute-based texture warning is now disabled after outputting 50 warnings.\n
@@ -981,14 +981,14 @@ mat_print_materials %s -show_none
 mat_print_shader_info %s -show_used_combos
 mat_print_shader_info %s -show_used_combos -%s
 material2.cpp
-material2.cpp(1638): Error creating shader %s for material %s!\n
-material2.cpp(2460): DxSupportLevel %d not supported!\n
-material2.cpp(3175): Failed call to FindOrLoadStaticComboData()!\n
-material2.cpp(660): Material "%s" is requesting a bad mode "%s"!\n
-material2.cpp(783): Error! Material "%s" doesn't have any valid layers to get the CVsInputSignatureVector from!\n
-material2.cpp(815): Error! Material "%s" doesn't have a CVsInputSignatureVector!\n
-material2.cpp(833): Error! Material "%s" has invalid signature index %d!\n
-material2.cpp:2811
+material2.cpp(1616): Error creating shader %s for material %s!\n
+material2.cpp(2435): DxSupportLevel %d not supported!\n
+material2.cpp(3150): Failed call to FindOrLoadStaticComboData()!\n
+material2.cpp(644): Material "%s" is requesting a bad mode "%s"!\n
+material2.cpp(767): Error! Material "%s" doesn't have any valid layers to get the CVsInputSignatureVector from!\n
+material2.cpp(799): Error! Material "%s" doesn't have a CVsInputSignatureVector!\n
+material2.cpp(817): Error! Material "%s" has invalid signature index %d!\n
+material2.cpp:2786
 material_shader_params.cpp(1002): Unknown variable type for %s in material "%s"!\n
 material_shader_params.cpp(1047): Invalid data type for render state variable %s in material "%s"!\n
 material_shader_params.cpp(1100): Invalid data type for render state variable %s in material "%s"!\n

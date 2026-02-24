@@ -9103,6 +9103,7 @@ $taser_charge
 4tpD
 4zj@1;IJ
 4|2;#GameUI_Retake_Card_LightEmUp,1,1,rifle1,grenade0|2;#GameUI_Retake_Card_Kobe,1,1,rifle1,grenade2|1;#GameUI_Retake_Card_1g,1,1,rifle1,grenade3|1;#GameUI_Retake_Card_DisappearingAct,1,1,rifle1,grenade1|1;#GameUI_Retake_Card_EyesOnTarget,1,1,weapon_aug
+4~3<M
 5'0v2ZP
 5-535;5A5Q5e5o5q5w5{5}5
 5-\rGw
@@ -9303,6 +9304,7 @@ $taser_charge
 8192
 8285-YOAZ-6049
 82\n:XPH
+83\nN
 851Pe
 8835-KLXV-0292
 8<pl
@@ -9565,7 +9567,6 @@ $taser_charge
 <weapon>
 =!=-=3=7=?=C=o=s=u=y={=
 =&sf9
-=3fL
 == %d Entities Dumped\n
 == PulseGraphDef ==\n
 == false\n
@@ -26357,7 +26358,7 @@ _var
 _xU`u
 _}eOk
 `28)fk
-`43!D
+`43!T
 `:zQF
 `D$daM-l
 `DZG
@@ -28566,8 +28567,8 @@ component
 composite_inputs
 composite_material_order
 composite_material_path
-compositematerialmanager.cpp(3293): 
-compositematerialmanager.cpp(3316): 
+compositematerialmanager.cpp(3300): 
+compositematerialmanager.cpp(3323): 
 compositematerials/compositematerialgamesystem.cpp
 compositematerialslib
 compressed length too long
@@ -31699,7 +31700,7 @@ i2d_pr.c
 i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
-i4@E
+i4@U
 i4a."
 i5BH
 iA5StringSyntax
@@ -33062,6 +33063,7 @@ kv 0x%p Release refcount == %d\n
 kw.6#
 k~Rz
 l <= sizeof(c->iv)
+l&+3Sl
 l&rB6
 l4Ot
 l7@J
@@ -38453,6 +38455,7 @@ t1_ext.c
 t1_lib.c
 t1_reneg.c
 t2U 
+t3@P
 t4O_
 t80z
 tA`KO/3G!\n7h=
@@ -40575,7 +40578,6 @@ y#y&Jb
 y-offset
 y0JY
 y2Cu
-y3}o
 y;w9
 y?iLa
 yG/9
