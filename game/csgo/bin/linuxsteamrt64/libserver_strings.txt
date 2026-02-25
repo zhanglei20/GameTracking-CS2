@@ -1391,6 +1391,7 @@ $light_emissive
 (config:{text: string, x: number, y: number, duration: number, color: Color})
 (connectionId:number)
 (damage: number, info?: Object)
+(data: string)
 (debug)
 (default)
 (duration: number)
@@ -1398,6 +1399,7 @@ $light_emissive
 (hInflictor, hAttacker, flDamage) - Allocate a damageinfo object, used as an argument to TakeDamage(). Call DestroyDamageInfo( hInfo ) to free the object.
 (health: number)
 (immunityColor: color)
+(inputs:number)
 (int iIndex, int iPoint, Vector vOrigin, QAngle qAngles ) - Set the transform for a control on a particle effect
 (int iIndex, int iPoint, Vector vOrigin, Vector vecForward ) - Set the origin and forward direction for a control on a particle effect
 (int iIndex, int iPoint, Vector vecOffset ) - Set the linear offset for a control on a particle effect
@@ -2725,6 +2727,7 @@ $light_emissive
 15CCSHitboxSystem
 15CCSObserverPawn
 15CCSPetPlacement
+15CCSScriptSystem
 15CCSUsrMsg_Shake
 15CCSUsrMsg_Train
 15CCSWeaponSystem
@@ -5496,6 +5499,7 @@ $light_emissive
 22CUserMessageScreenTilt
 22CUserMessageWaterShake
 22CUserMessage_DllStatus
+22IAddonListChangeNotify
 22IBoneTransformOverride
 22IEconItemSetDefinition
 22IEventRegisterCallback
@@ -5711,6 +5715,7 @@ $light_emissive
 24CGameSystemStaticFactoryI14CGameTimescaleS0_E
 24CGameSystemStaticFactoryI15CCSAddonManagerS0_E
 24CGameSystemStaticFactoryI15CCSHLTVDirectorS0_E
+24CGameSystemStaticFactoryI15CCSScriptSystemS0_E
 24CGameSystemStaticFactoryI15CCSWeaponSystemS0_E
 24CGameSystemStaticFactoryI15CItemGenerationS0_E
 24CGameSystemStaticFactoryI16CFuncMoverSystemS0_E
@@ -7025,6 +7030,7 @@ $light_emissive
 >KS[ac5>IU^c+0<LZc
 ?33s?
 ???CRR_Response bogus index
+?KA8
 @player_start_teleport_destination
 @workshop
 A CT bot doesn't know what to do while the bomb is planted!\n
@@ -7144,7 +7150,9 @@ APPSYSTEM: In ConnectGameInterfaces(), tried to use different connection modes!\
 APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!\n
 AREA_DAMAGE
 ASN1 lib
+ATTACK
 ATTACK END\n
+ATTACK2
 ATTACKING: %s
 AVOID
 AVelocity: %.2f %.2f %.2f
@@ -7227,6 +7235,8 @@ Additive Blend
 Additive Blend (Masked): %.2f%%
 Additive Blend: %.2f%%
 AdditiveAnims
+Addon save file exceeds max size setting (%s)\n
+Addon save file reached max size for this server (%s)\n
 Adds CSS class(es) to the panel
 Adds a team (by index) to the broadcast list
 Adds an I/O connection that will call the named function on the passed entity when the specified output fires.
@@ -7432,6 +7442,7 @@ AwardText
 Axis
 AxisAngleToQuaternion
 B-Spline
+BACK
 BADFUNCTIONPOINTER
 BANG!
 BAddToMessage
@@ -7884,6 +7895,7 @@ CCSPointPulseAPI::OnRoundEnd
 CCSPointPulseAPI::OnRoundFreezeEnd
 CCSPointPulseAPI::OnRoundStart
 CCSPointPulseSystem
+CCSScriptSystem
 CCSUsrMsg_AdjustMoney_t
 CCSUsrMsg_CallVoteFailed_t
 CCSUsrMsg_CurrentRoundOdds_t
@@ -8635,6 +8647,7 @@ CS2Bullets
 CS2ClientPerfData
 CSDamageFlags
 CSDamageType
+CSDamageTypes
 CSForceTeamThink
 CSGO Compute AI Data\n
 CSGO: CSGO: Compute Hiding spots [ disabled for survival maps ]\n
@@ -8646,6 +8659,7 @@ CSGO: Compute Hiding spots
 CSGOVScriptGameSystem
 CSGearSlot
 CSHitGroup
+CSInputs
 CSLoadoutSlot
 CSMovementVelocityQuantizer_t
 CSObserverPawn
@@ -9422,6 +9436,7 @@ DSA-SHA1-old
 DSA-old
 DSO lib
 DSO support routines
+DUCK
 DUCKING 
 DVCS
 DX11
@@ -10102,6 +10117,7 @@ FLASHBANG: %0.2f \n
 FOLLOW
 FORCE_DEATH
 FORCE_NOT_USED
+FORWARD
 FOV2D
 FPlayerCanRespawn: pPlayer=0
 FX_FireBullets: GetCSWeaponDataFromItem failed for weapon %s\n
@@ -10173,6 +10189,7 @@ Failed to load %s\n
 Failed to load KV3 AI Data\n
 Failed to load cs_script "%s"\n
 Failed to load file: %s\n
+Failed to load map save file %s\n
 Failed to open file
 Failed to play server side instructor hint: no player specified for hint\n
 Failed to precache script entity %s of type %s: script entity instance is null\n
@@ -10193,6 +10210,8 @@ Failed to start replay, requires HTLV to be enabled to work\n
 Failed to update networkable loadout\n
 Failed to update on remove script entity %s of type %s: script entity instance is null\n
 Failed to write %s!\n
+Failed to write '%s' to steam cloud\n
+Failed to write map save file to %s\n
 Failed with no pGoalArea and no pGoalPos
 Failed with no pStartArea
 Failing to submit row for a grenade detonation: Grenade has no weapon info!\n
@@ -10844,6 +10863,7 @@ GetReportedPosition
 GetRightVector
 GetRootMoveParent
 GetRoundsPlayed
+GetSaveData
 GetSceneByIndex
 GetScore
 GetScriptClassForDesignerName
@@ -11154,6 +11174,7 @@ IDEA-ECB
 IDEA-OFB
 IGNORED due to being marked "Dont save".\n
 IGNORED, no across_transition flag & no globalname\n
+IGNORE_ARMOR
 IGNORE_ENEMIES
 IGameSystem::Init( %-80s ) %8.3f msec
 IGameSystem::PostInit( %-80s ) %8.3f msec
@@ -11869,6 +11890,7 @@ Invalid request for mesh %d in model %s with %d entry remapping start table\n
 Invalid request for mesh %d in model %s with no remapping table starts\n
 Invalid request for mesh %d in model %s with no remapping table\n
 Invalid return type from Instance.OnBeforePlayerDamage.\n
+Invalid return type from Instance.OnModifyPlayerDamage.\n
 Invalid save, failed to open file\n
 Invalid script. No valid imports found.\n
 Invalid skirmish '%s' in mp_endmatch_votenextmap_wargames_modes\n
@@ -11923,6 +11945,7 @@ IsFreezePeriod
 IsGlowing
 IsGrabbable
 IsInToolsMode
+IsInputPressed
 IsLineBlockedBySmoke
 IsMarkedForDeletion
 IsMaster
@@ -12050,12 +12073,14 @@ LADDER
 LARGE_CENTERED_HULL
 LARGE_HULL
 LATE 
+LEFT
 LEFTARM
 LEFTLEG
 LEVEL DESIGN ERROR: Divide by zero in math_value\n
 LEVEL DESIGN ERROR: Entity %s is parented to itself!\n
 LOCKED
 LOOK_AT_SPOT
+LOOK_AT_WEAPON
 LOOK_TOWARDS_SPOT
 LOS check failed.  Obstructed.
 LOST DAMAGE:\t\t
@@ -12154,6 +12179,7 @@ LoadNavMesh: unable to read movable meshes setting 'gravity follows rotation'.\n
 LoadSubclasses
 LoadThink
 Loaded %d rays\n
+Loaded existing workshop save file from %s\n
 Loaded server checkpoint %s, starting match with score %d:%d after round %d\n
 Loading custom game "%s" with map "%s"\n
 Loading script "%s"\n
@@ -13396,6 +13422,7 @@ OnMinPlayerDist2
 OnMinPlayerDist3
 OnMinPlayerDistAll
 OnMixed
+OnModifyPlayerDamage
 OnMoneySpent
 OnMoneySpentFail
 OnMotionEnabled
@@ -14042,6 +14069,7 @@ RC5-CFB
 RC5-ECB
 RC5-OFB
 RDO_AB
+RELOAD
 REMOVENORAGDOLL
 RESCUE_HOSTAGES
 RESOURCE_HANDLE_INVALID
@@ -14064,6 +14092,7 @@ RIFLE1
 RIFLE2
 RIFLE3
 RIFLE4
+RIGHT
 RIGHTARM
 RIGHTLEG
 RIPEMD160
@@ -14429,6 +14458,7 @@ SHA512
 SHOCK
 SHOTGUN
 SHOULD_BE_DESTROYED
+SHOW_SCORES
 SKIP (no prior visit of '%s')
 SLASH
 SLOWBURN
@@ -14544,6 +14574,8 @@ SaveRestoreIO
 SaveRestoreIOFiltered
 SaveRestoreSyncIO
 SaveThink
+Saved to '%s' steam cloud\n
+Saving existing workshop save file from %s\n
 Saving game to %s...\n
 Saving money for next round.\n
 Scale INV R%d <- R%d / R%d
@@ -15264,6 +15296,7 @@ SetRestLength
 SetRotateType
 SetRotationDistance
 SetRotatorTarget
+SetSaveData
 SetScale
 SetScriptOwnerEntity
 SetScrollSpeed
@@ -16429,6 +16462,8 @@ Warp XY
 Warp XYZ
 Warp Z
 Warp attempted for animation with invalid warp events!
+WasInputJustPressed
+WasInputJustReleased
 Water.PlayerEnter
 Water.PlayerExit
 Water: Level %0.3f\n
@@ -16577,6 +16612,7 @@ ZN30CheckAreasOverlappingBreakable6SearchEvEUlR8CNavAreaE_
 ZN9CSNavMesh19FindMinimumCostAreaINS_26FarAwayFromPositionFunctorEEEP8CNavAreaS3_RT_EUlRS2_E_
 ZNK19CNavObstacleOverlap22AppendElemsForObstacleEyP23CUtlVectorFixedGrowableIjLm64EiEEUlRKjE_
 ZNK19CNavObstacleOverlap22AppendObstaclesForElemEjP23CUtlVectorFixedGrowableIyLm32EiEEUlRKyE_
+ZOOM
 Z]_abcTZ\_bcLTV[`c@FJS]c-27AQc
 Z^`bccUY\`ccMPU\acADIR\c./4=Oc
 Zero Pose Task
@@ -22278,6 +22314,7 @@ save/%s/%s.sav
 save/%s_%s.kv3.txt
 save/*.hl?
 saveAndRestore
+save_%s.txt
 save_maxarray_spew set to %d\n
 save_threshold
 savedwep_lastinv
@@ -23883,6 +23920,7 @@ v8::HandleScope::~HandleScope()
 v8::Int32::Value() const
 v8::Integer::New(v8::Isolate*, int)
 v8::Integer::NewFromUnsigned(v8::Isolate*, unsigned int)
+v8::Integer::Value() const
 v8::Isolate::Enter()
 v8::Isolate::Exit()
 v8::Isolate::GetCurrent()
@@ -23937,6 +23975,7 @@ v8::Value::IsObject() const
 v8::Value::IsUint32() const
 v8::Value::NumberValue(v8::Local<v8::Context>) const
 v8::Value::ToInt32(v8::Local<v8::Context>) const
+v8::Value::ToInteger(v8::Local<v8::Context>) const
 v8::Value::ToNumber(v8::Local<v8::Context>) const
 v8::Value::ToObject(v8::Local<v8::Context>) const
 v8::Value::ToString(v8::Local<v8::Context>) const
@@ -24363,6 +24402,7 @@ wm_bodygroup_override
 wm_bodygroup_state_override
 work item
 workshop
+workshop_saves
 workthreadpool.cpp
 world
 world.glass

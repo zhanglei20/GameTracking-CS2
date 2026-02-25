@@ -620,6 +620,7 @@ Netchan queued message new high water mark reached by %s at %d messages\n
 Network System Initialized\n
 Network field tried to use a priority that has not been registered!\n
 Network socket '%s' opened on port %d\n
+NetworkConfigLimits
 NetworkMessages::FindOrCreateNetMessage: Message %s is of size %d in leaf code, but protobuf object is size %lld, the added fields should be placed into object derived from protobuf and then CNetMessagePB references that\n
 NetworkReplayCompatField_t %s::%s on field '%s' is using possibly bogus this pointer from class %s!\n
 NetworkSystem
@@ -663,6 +664,7 @@ ProcessMessages
 ProcessOverride encountered unknown directive NetworkOverrideType_t(%d)\n
 Processing
 Proto 
+PublicUniverse
 QAngle
 Quaternion
 QuaternionStorage

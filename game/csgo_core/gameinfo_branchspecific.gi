@@ -7,6 +7,7 @@
 
 	FileSystem
 	{
+		ForceFixedAppIds	1
 		SteamAppId			730
 		BreakpadAppId			2347771
 		BreakpadAppId_Tools		2347779
