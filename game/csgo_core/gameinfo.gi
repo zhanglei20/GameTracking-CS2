@@ -145,6 +145,11 @@
 
 	NetworkSystem
 	{
+		PublicUniverse
+		{
+			"NetworkConfigLimits"	"1"
+		}
+
 		BetaUniverse
 		{
 			"FakeLag"			"40"

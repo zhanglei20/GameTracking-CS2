@@ -303,7 +303,7 @@ function ChessJS() {
                 ["A", "Z"],
             ],
             false,
-            false
+            false,
         );
         var peg$e6 = peg$otherExpectation("tag value");
         var peg$e7 = peg$classExpectation(['"'], true, false);
@@ -1390,7 +1390,7 @@ function ChessJS() {
             throw peg$buildStructuredError(
                 peg$maxFailExpected,
                 peg$maxFailPos < input.length ? input.charAt(peg$maxFailPos) : null,
-                peg$maxFailPos < input.length ? peg$computeLocation(peg$maxFailPos, peg$maxFailPos + 1) : peg$computeLocation(peg$maxFailPos, peg$maxFailPos)
+                peg$maxFailPos < input.length ? peg$computeLocation(peg$maxFailPos, peg$maxFailPos + 1) : peg$computeLocation(peg$maxFailPos, peg$maxFailPos),
             );
         }
     }
@@ -3468,7 +3468,7 @@ function ChessJS() {
     };
 }
 
-const { BISHOP, BLACK, Chess, DEFAULT_POSITION, KING, KNIGHT, Move, PAWN, QUEEN, ROOK, SEVEN_TAG_ROSTER, SQUARES, WHITE } = ChessJS();
+const { BISHOP, BLACK, Chess, DEFAULT_POSITION, KING, KNIGHT, Move, PAWN, QUEEN, ROOK, SEVEN_TAG_ROSTER, SQUARES, WHITE, validateFen } = ChessJS();
 
 let chess = new Chess();
 
@@ -3497,13 +3497,7 @@ async function RunChess() {
 
     while (!chess.isGameOver()) {
         await Delay(0);
-        let move;
-        if (chess.turn() === BLACK) {
-            move = await AIMove();
-        } else {
-            move = await AIMove();
-        }
-
+        const move = await AIMove();
         await AnimateMove(move);
     }
 
@@ -3667,6 +3661,7 @@ async function AIMove() {
         undosNeeded--;
     }
     chess.move(bestMove);
+    writeSaveKey("chess", chess.fen());
     return bestMove;
 }
 
@@ -3737,7 +3732,17 @@ function GetFitness(color) {
 
 /** @param {Chess?} oldChess  */
 function Init(oldChess) {
-    if (oldChess && !oldChess.isGameOver()) chess = oldChess;
+    if (oldChess) {
+        if (!oldChess.isGameOver()) {
+            chess = oldChess;
+        }
+    } else {
+        // Check if save data exists. Because script_zoo is not a workshop addon it won't find any unless the user ran with "-addon".
+        const saveData = readSaveKey("chess");
+        if (validateFen(saveData).ok) {
+            chess.load(saveData);
+        }
+    }
     FindCenters();
     Instance.SetNextThink(Instance.GetGameTime());
 }
@@ -3783,4 +3788,21 @@ function shuffle(arr) {
         [arr[i - 1], arr[j]] = [arr[j], arr[i - 1]];
     }
     return arr;
+}
+
+// Allows multiple scripts to use the same save without stepping on each other's toes
+function readSaveKey(key) {
+    const data = Instance.GetSaveData();
+    try {
+        return JSON.parse(data)[key];
+    } catch {}
+    return "";
+}
+function writeSaveKey(key, value) {
+    let json = {};
+    try {
+        json = JSON.parse(Instance.GetSaveData());
+    } catch {}
+    json[key] = value;
+    Instance.SetSaveData(JSON.stringify(json));
 }

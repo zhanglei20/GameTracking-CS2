@@ -10779,6 +10779,9 @@ sv_weapon_swap_difficulty_near_hi_pri 2 (gamedll clientdll replicated release)
 sv_workshop_allow_other_maps true (gamedll release)
 	When hosting a workshop collection, users can play other workshop map on this server when it is empty and then mapcycle into this server collection.
 
+sv_workshop_map_save_data_max_filesize_mb 1 (gamedll release commandline_enforced)
+	<no description>
+
 sys_minidumpexpandedspew true (developmentonly defensive)
 	<no description>
 
