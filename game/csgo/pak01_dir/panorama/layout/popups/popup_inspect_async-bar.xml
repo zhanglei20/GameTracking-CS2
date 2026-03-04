@@ -10,7 +10,7 @@
 	<Panel class="popup-capability__button-row" useglobalcontext="true">
 		<Panel class="left-right-flow horizontal-align-right">
 			<ItemImage id="AsyncItemWorkDescImage" class="popup-capability__purchase__image" scaling="stretch-to-fit-x-preserve-aspect" />
-			<Label id="AsyncItemWorkDesc" html="true" class="popup-capability__purchase__text stratum-font" text="" />
+			<Label id="AsyncItemWorkDesc" html="true" hittest="false" class="popup-capability__purchase__text stratum-font" text="" />
 			<Panel id="NameableSpinner" class="Spinner vertical-center horizontal-center hidden" />
 			<Panel class="spacer" />
 			<TextButton id="AsyncItemWorkAcceptNegativeHold" class="PopupButtonTimer Negative AsyncItemWorkAcceptNegativeHidden" html="true" text="{s:action-label}">
@@ -23,7 +23,8 @@
 			<TextButton id="AsyncItemWorkAcceptConfirm" html="true" class="PopupButton" text="#SFUI_Accept" />
 			<TextButton id="AsyncItemWorkCancelBtn" html="true" class="PopupButton" text="#GameUI_Close" />
 		</Panel>
-		<Panel class="left-right-flow horizontal-align-left" defaultfocus="">
+		<Panel class="left-right-flow horizontal-align-left full-height" hittest="false">
+			<DropDown class="PopupButton vertical-center horizontal-align-left" id="AsyncOfferLimitDropdown" menuclass="DropDownMenu hidden" onmouseover="UiToolkitAPI.ShowTextTooltip( &apos;AsyncOfferLimitDropdown&apos;, &apos;#terminal_offer_limit_tooltip&apos; )" onmouseout="UiToolkitAPI.HideTextTooltip();" style="tooltip-position: right;" />
 			<Panel class="left-right-flow vertical-center hidden">
 				<RadioButton id="InspectWeaponBtn" group="popup-inspect-view" class="IconButton" onmouseover="UiToolkitAPI.ShowTextTooltip( &apos;InspectWeaponBtn&apos;, &apos;#tooltip_inspect_weapon_model&apos; );" onmouseout="UiToolkitAPI.HideTextTooltip();">
 					<Image class="" textureheight="36" texturewidth="36" src="s2r://panorama/images/icons/equipment/p250.vsvg" />

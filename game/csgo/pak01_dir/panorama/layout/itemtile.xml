@@ -22,7 +22,7 @@
 		<Label id="JsCanRentItem" html="true" class="item-tile__rental-expiration stratum-regular-italic can-rent" text="#item-rental-time-remaining" />
 		<Panel class="item-tile__rarity" id="JsRarity" />
 		<Panel class="item-tile__top-left-down">
-			<Label class="item-tile__recent hidden" id="JsRecent" text="#inv_session_prop_recent" />
+			<Label class="item-tile__recent hidden" html="true" id="JsRecent" text="#inv_session_prop_recent" />
 			<Image id="JsOriginalOwner" class="item-tile__original-owner hidden" texturewidth="24" textureheight="24" src="s2r://panorama/images/icons/icon_original_owner.vsvg" />
 		</Panel>
 		<Panel class="item-tile__equipped">

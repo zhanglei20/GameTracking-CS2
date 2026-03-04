@@ -42,7 +42,10 @@ var InspectHeader;
         elLabel.SetHasClass('hide', !bHasExpirationDate);
     }
     function _SetOriginalOwner(elPanel, itemId) {
-        elPanel.FindChildInLayoutFile('InspectOriginalOwner').visible = (InventoryAPI.GetItemAttributeValue(itemId, '{uint32}purchaser account id') != undefined);
+        const elOriginalOwner = elPanel.FindChildInLayoutFile('InspectOriginalOwner');
+        elOriginalOwner.visible = (InventoryAPI.GetItemAttributeValue(itemId, '{uint32}purchaser account id') != undefined);
+        const elImage = elPanel.FindChildInLayoutFile('InspectSetImage');
+        elOriginalOwner.SetHasClass('horizontal-center', !elImage.visible);
     }
     function _SetRarity(elPanel, itemId) {
         const rarityColor = InventoryAPI.GetItemRarityColor(itemId);

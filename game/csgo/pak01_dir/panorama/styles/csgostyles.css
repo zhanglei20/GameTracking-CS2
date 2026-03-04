@@ -3773,6 +3773,11 @@ EdgeScrollBar.Vertical #MaxButton
 	margin-right: 4px;
 }
 
+.right-margin-6
+{
+	margin-right: 6px;
+}
+
 .right-margin
 {
 	margin-right: 8px;

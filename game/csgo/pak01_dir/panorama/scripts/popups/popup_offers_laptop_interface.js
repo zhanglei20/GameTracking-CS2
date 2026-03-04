@@ -173,6 +173,21 @@ var CollectionOffers;
         line: '#dealer_message_addition_factory_new_',
         sender: 'dealer'
     };
+    const dealerOfferLimitMessage = {
+        line: '#dealer_message_set_offer_limit_',
+        sender: 'dealer',
+        action: async () => {
+            await Async.Delay(.5);
+            _ShowMessageOfferLimit();
+        }
+    };
+    const dealerContainerExpired = {
+        line: '#dealer_message_timerexpired_',
+        sender: 'dealer',
+        action: () => {
+            _MakeMessage(systemDealerLeaveContainerDestroy);
+        }
+    };
     const systemDealerJoin = {
         line: '#system_dealer_join_chat_0',
         sender: 'system',
@@ -205,13 +220,35 @@ var CollectionOffers;
             Close(true);
         }
     };
-    const systemContainerExpired = {
-        line: '#dealer_message_timerexpired_',
-        sender: 'dealer',
-        action: () => {
-            _MakeMessage(systemDealerLeaveContainerDestroy);
+    const systemOfferLimitSetWithBootstrapAction = {
+        line: '#system_user_updated_offer_limit_0',
+        sender: 'system',
+        action: async () => {
+            await ShowDealerOfferLimitAcknowledge(true);
+            const elWaitMessage = _ShowDealerWaitMessageDotDotDot();
+            await Async.Delay(2);
+            (await elWaitMessage).visible = false;
+            _OnSystemDealerJoinBootstrap();
         }
     };
+    const systemOfferLimitSet = {
+        line: '#system_user_updated_offer_limit_0',
+        sender: 'system',
+        action: () => {
+            ShowDealerOfferLimitAcknowledge();
+        }
+    };
+    async function ShowDealerOfferLimitAcknowledge(firstTime = false) {
+        let oLimits = JSON.parse(InventoryAPI.GetVolatileLimits());
+        if (oLimits.limit !== 0) {
+            const strLine = !firstTime ? '#dealer_message_limit_' : '#dealer_message_limit_first_time_';
+            await _MakeMessage({ line: strLine, sender: 'dealer' });
+        }
+        else {
+            const strLine = !firstTime ? '#dealer_message_limit_unlimited_' : '#dealer_message_limit_first_time_unlimited_';
+            await _MakeMessage({ line: strLine, sender: 'dealer' });
+        }
+    }
     function Init(itemId, elScreen) {
         m_idContainerItem = itemId;
         m_defidxContainerItem = InventoryAPI.GetItemDefinitionIndex(m_idContainerItem);
@@ -372,6 +409,7 @@ var CollectionOffers;
     }
     async function _OnSystemDealerJoinBootstrap() {
         let numOffers = InventoryAPI.GetItemAttributeValue(m_idContainerItem, '{uint32}quest points remaining');
+        let oLimits = JSON.parse(InventoryAPI.GetVolatileLimits());
         if (numOffers == undefined) {
             m_numOfferCounter = 0;
             await _MakeMessage(dealerIntroMessage);
@@ -380,6 +418,11 @@ var CollectionOffers;
             m_numOfferCounter = numOffers;
             await _MakeMessage(dealerReturningToContractMessage);
         }
+        const setting = oLimits.choices.find(item => item.limit === oLimits.limit);
+        m_elScreen.SetDialogVariable('limit', GetLimitString(setting?.limit, setting?.label));
+        m_elScreen.FindChildInLayoutFile('id-offer-limit-setting').SetPanelEvent('onactivate', () => {
+            ShowOfferLimitPopup();
+        });
         m_elScreen.FindChildInLayoutFile('id-laptop-connected-icon').SetHasClass('connected', true);
         m_elScreen.FindChildInLayoutFile('id-laptop-signal-icon').SetHasClass('connected-' + m_signalBars, true);
     }
@@ -435,8 +478,7 @@ var CollectionOffers;
             elUserButtonContainer.SetDialogVariable('offer-count', $.Localize('#dealer_offer_' + _CurrentOfferNumber()));
             elUserButtonContainer.SetDialogVariable('user-response-title', $.Localize('#user_btn_purchase_title', elUserButtonContainer));
         }
-        m_elYesBtn.SetDialogVariable('price', OfferItemData.price);
-        _SetUpUserOfferConfirmDeclineBtns(elWaitMessage.FindChildInLayoutFile('id-offer-' + OfferItemData.itemId));
+        _SetUpUserOfferConfirmDeclineBtns(elWaitMessage.FindChildInLayoutFile('id-offer-' + OfferItemData.itemId), OfferItemData);
     }
     async function _DealerEstablishExistingOffer() {
         const elWaitMessage = await _ShowDealerWaitMessageDotDotDot();
@@ -652,109 +694,74 @@ var CollectionOffers;
         m_elYesBtn.enabled = bEnable;
         m_elNoBtn.enabled = bEnable;
         m_elEndBtn.enabled = bEnable;
+        m_elScreen.FindChildInLayoutFile('id-offer-limit-setting').enabled = bEnable;
         m_elScreen.FindChildInLayoutFile('id-price-tooltip').SetHasClass('faded', !bEnable);
     }
-    let _m_buttonDown = false;
-    let _m_buttonTimer = 0;
-    let _m_buttonTimerHandle = null;
-    function _SetUpUserOfferConfirmDeclineBtns(elOffer) {
-        m_elEndBtn.visible = false;
-        m_elYesBtn.SwitchClass('bnt-type', 'positive');
-        m_elYesBtn.text = $.Localize(_RandomizeLocString('#user_btn_accept_'), m_elYesBtn);
-        m_elYesBtn.SetPanelEvent('onmouseover', () => { UiToolkitAPI.ShowTextTooltipStyled(m_elYesBtn.id, '#user_btn_purchase_desc_purchase', 'tooltip-offer-actions'); });
-        m_elYesBtn.SetPanelEvent('onmouseout', () => { UiToolkitAPI.HideTextTooltip(); });
-        m_elYesBtn.SetPanelEvent('onmouseup', () => _OnMouseUp(m_elYesBtn));
-        m_elYesBtn.SetPanelEvent('onmousedown', () => _OnMouseDown(m_elYesBtn, () => {
-            _EnableActionButtons(false);
-            _MakeMessage(dealerOpenCheckOutMessage);
-            OffersLaptop.LaptopSoundPlayOnce('UI.Laptop.Drop.Purchased');
-        }));
-        if (_IsFinalOffer()) {
-            m_elYesBtn.enabled = true;
-            m_elNoBtn.enabled = false;
-            m_elNoBtn.visible = false;
-            m_elScreen.FindChildInLayoutFile('id-price-tooltip').SetHasClass('faded', false);
-            m_elEndBtn.visible = true;
-            m_elEndBtn.enabled = true;
-            m_elEndBtn.SwitchClass('bnt-type', 'negative');
-            m_elEndBtn.SetPanelEvent('onmouseover', () => { UiToolkitAPI.ShowTextTooltipStyled(m_elEndBtn.id, '#user_btn_purchase_desc_end', 'tooltip-offer-actions'); });
-            m_elEndBtn.SetPanelEvent('onmouseout', () => { UiToolkitAPI.HideTextTooltip(); });
-            m_elEndBtn.SetPanelEvent('onmouseup', () => _OnMouseUp(m_elEndBtn));
-            m_elEndBtn.SetPanelEvent('onmousedown', () => _OnMouseDown(m_elEndBtn, () => {
-                _EnableActionButtons(false);
-                _DealerEndTransaction();
-            }));
-            return;
-        }
-        m_elEndBtn.visible = false;
-        m_elNoBtn.text = $.Localize(_IsFinalOffer() ? '#user_btn_decline' : _RandomizeLocString('#user_btn_next_'), m_elNoBtn);
-        m_elNoBtn.SwitchClass('bnt-type', 'yellow');
-        m_elNoBtn.SetPanelEvent('onmouseover', () => { UiToolkitAPI.ShowTextTooltipStyled(m_elNoBtn.id, '#user_btn_purchase_desc_continue', 'tooltip-offer-actions'); });
-        m_elNoBtn.SetPanelEvent('onmouseout', () => { UiToolkitAPI.HideTextTooltip(); });
-        m_elNoBtn.SetPanelEvent('onmouseup', () => _OnMouseUp(m_elNoBtn));
-        m_elNoBtn.SetPanelEvent('onmousedown', () => _OnMouseDown(m_elNoBtn, () => {
-            _EnableActionButtons(false);
-            elOffer.SetHasClass('rejected', true);
-            elOffer.SetDialogVariable('offer-status', $.Localize('#dealer_offer_attachment_status-declined-price', elOffer));
-            elOffer.FindChildInLayoutFile('id-offer-desc').text = $.Localize('#dealer_offer_attachment_status-declined', elOffer);
-            m_elScreen.FindChildInLayoutFile('id-offer-preview-panel-container').SetHasClass('show', false);
-            m_elScreen.FindChildInLayoutFile('id-weapon-wear-rating-pointer').style.transform = 'translateX(100%) translateY(3px) scaleY(-1);';
-            m_elScreen.FindChildInLayoutFile('id-chat-messages-bg').SetHasClass('show', false);
-            OffersLaptop.LaptopSoundPlayOnce('UI.Laptop.Drop.Discarded');
-            _MakeMessage(systemUserRejectOffer);
-            _MakeMessage(dealerNextOffer);
-        }));
-        _EnableActionButtons(true);
-    }
-    function _OnMouseDown(elBtn, funcAction) {
-        CancelButtonTimer(elBtn);
-        _m_buttonDown = true;
-        _m_buttonTimer = 0;
-        IncrementButtonTimer(elBtn, funcAction);
-    }
-    function _OnMouseUp(elBtn) {
-        CancelButtonTimer(elBtn);
-        _m_buttonDown = false;
-        _m_buttonTimer = 0;
-        elBtn.FindChild('id-response-btn-timer').visible = false;
-        elBtn.FindChild('id-response-btn-timer').style.width = '0%;';
-        _MakeFingerPrints(m_elScreen);
-    }
-    function IncrementButtonTimer(elBtn, funcAction) {
-        ++_m_buttonTimer;
-        if (_m_buttonTimer <= 10 && _m_buttonDown) {
-            elBtn.FindChild('id-response-btn-timer').visible = true;
-            elBtn.FindChild('id-response-btn-timer').style.width = (_m_buttonTimer * 10) + '%;';
-            if (_m_buttonTimerHandle == null) {
-                _m_buttonTimerHandle = $.Schedule(.1, () => IncrementButtonTimer(elBtn, funcAction));
-                if (elBtn.id === 'id-user-message-yes') {
-                    OffersLaptop.LaptopSoundStartLooping('UI.Laptop.ButtonFillLoop');
+    let _m_savedOffer = null;
+    let _m_savedOfferItemData = null;
+    function _SetUpUserOfferConfirmDeclineBtns(elOffer, OfferItemData) {
+        _m_savedOffer = elOffer;
+        _m_savedOfferItemData = OfferItemData;
+        const numPaidAlready = 0;
+        let payPrice = OfferItemData.price;
+        m_elYesBtn.SetDialogVariable('price', payPrice);
+        m_elYesBtn.visible = true;
+        m_elNoBtn.visible = !_IsFinalOffer() && (numPaidAlready === 0);
+        m_elEndBtn.visible = _IsFinalOffer() && (numPaidAlready === 0);
+        m_elScreen.FindChildInLayoutFile('id-offer-limit-setting').visible = (numPaidAlready === 0);
+        m_elScreen.FindChildInLayoutFile('id-price-tooltip').visible = (numPaidAlready === 0);
+        if (m_elYesBtn.visible) {
+            const btnYesSettings = {
+                btn: m_elYesBtn,
+                tooltip: '#user_btn_purchase_desc_purchase',
+                locString: $.Localize(_RandomizeLocString('#user_btn_accept_'), m_elYesBtn),
+                tooltipStyle: 'tooltip-offer-actions',
+                loopingSound: 'UI.Laptop.ButtonFillLoop',
+                timerCompleteAction: () => {
+                    _EnableActionButtons(false);
+                    _MakeMessage(dealerOpenCheckOutMessage);
+                    OffersLaptop.LaptopSoundPlayOnce('UI.Laptop.Drop.Purchased');
                 }
-                else {
-                    OffersLaptop.LaptopSoundStartLooping('UI.Laptop.ButtonFillLoop_Deny');
+            };
+            HoldButton.SetupButton(btnYesSettings);
+        }
+        if (m_elEndBtn.visible) {
+            const btnEndSettings = {
+                btn: m_elEndBtn,
+                tooltip: '#user_btn_purchase_desc_end',
+                locString: $.Localize('#user_btn_end'),
+                tooltipStyle: 'tooltip-offer-actions',
+                loopingSound: 'UI.Laptop.ButtonFillLoop',
+                timerCompleteAction: () => {
+                    _EnableActionButtons(false);
+                    _DealerEndTransaction();
                 }
-            }
-            else {
-                $.Schedule(.1, () => IncrementButtonTimer(elBtn, funcAction));
-            }
-            return;
+            };
+            HoldButton.SetupButton(btnEndSettings);
         }
-        if (_m_buttonDown) {
-            funcAction();
+        if (m_elNoBtn.visible) {
+            const btnNoSettings = {
+                btn: m_elNoBtn,
+                tooltip: '#user_btn_purchase_desc_continue',
+                locString: $.Localize(_IsFinalOffer() ? '#user_btn_decline' : _RandomizeLocString('#user_btn_next_'), m_elNoBtn),
+                tooltipStyle: 'tooltip-offer-actions',
+                loopingSound: 'UI.Laptop.ButtonFillLoop',
+                timerCompleteAction: () => {
+                    _EnableActionButtons(false);
+                    elOffer.SetHasClass('rejected', true);
+                    elOffer.SetDialogVariable('offer-status', $.Localize('#dealer_offer_attachment_status-declined-price', elOffer));
+                    elOffer.FindChildInLayoutFile('id-offer-desc').text = $.Localize('#dealer_offer_attachment_status-declined', elOffer);
+                    m_elScreen.FindChildInLayoutFile('id-offer-preview-panel-container').SetHasClass('show', false);
+                    m_elScreen.FindChildInLayoutFile('id-weapon-wear-rating-pointer').style.transform = 'translateX(100%) translateY(3px) scaleY(-1);';
+                    m_elScreen.FindChildInLayoutFile('id-chat-messages-bg').SetHasClass('show', false);
+                    OffersLaptop.LaptopSoundPlayOnce('UI.Laptop.Drop.Discarded');
+                    _MakeMessage(systemUserRejectOffer);
+                    _MakeMessage(dealerNextOffer);
+                }
+            };
+            HoldButton.SetupButton(btnNoSettings);
         }
-        _OnMouseUp(elBtn);
-    }
-    function CancelButtonTimer(elBtn) {
-        if (_m_buttonTimerHandle !== null) {
-            $.CancelScheduled(_m_buttonTimerHandle);
-            if (elBtn.id === 'id-user-message-yes') {
-                OffersLaptop.LaptopSoundStopLooping('UI.Laptop.ButtonFillLoop');
-            }
-            else {
-                OffersLaptop.LaptopSoundStopLooping('UI.Laptop.ButtonFillLoop_Deny');
-            }
-            _m_buttonTimerHandle = null;
-        }
+        _EnableActionButtons(numPaidAlready === 0);
     }
     function OnInventoryUpdated() {
         if (m_bWrappingUpThisTransaction)
@@ -766,7 +773,7 @@ var CollectionOffers;
         m_idContainerItem = '';
         _EnableActionButtons(false);
         m_elEndBtn.enabled = false;
-        _MakeMessage(systemContainerExpired);
+        _MakeMessage(dealerContainerExpired);
     }
     CollectionOffers.OnInventoryUpdated = OnInventoryUpdated;
     function OnItemCustomizationNotification(numericType, szType, itemid) {
@@ -963,7 +970,6 @@ var CollectionOffers;
         elParent.SetPanelEvent('onactivate', () => {
             _MakeFingerPrints(m_elScreen);
             _XpCollectionPopup();
-            m_elScreen.FindChildInLayoutFile('id-popup-lootlist').SetHasClass('show', true);
         });
         for (let i = 0; i < count; i++) {
             const itemId = InventoryAPI.GetLootListItemIdByIndex(m_idContainerItem, i);
@@ -989,10 +995,8 @@ var CollectionOffers;
         }
     }
     function _XpCollectionPopup() {
-        m_elScreen.FindChildInLayoutFile('id-close-popup-lootlist').SetPanelEvent('onactivate', () => {
-            OffersLaptop.LaptopSoundPlayOnce('UI.Laptop.Click');
-            m_elScreen.FindChildInLayoutFile('id-popup-lootlist').SetHasClass('show', false);
-        });
+        m_elScreen.FindChildInLayoutFile('id-popup-in-screen').SetHasClass('show-lootlist', true);
+        m_elScreen.FindChildInLayoutFile('id-close-popup-in-screen').SetPanelEvent('onactivate', () => CloseInScreenPopup('show-lootlist'));
         const oHistoricData = InventoryAPI.GetCacheTypeElementJSOByIndex('VolatileItemOffer', InventoryAPI.GetCacheTypeElementIndexByKey('VolatileItemOffer', m_defidxContainerItem));
         const oClaimedData = InventoryAPI.GetCacheTypeElementJSOByIndex('VolatileItemClaimedRewards', InventoryAPI.GetCacheTypeElementIndexByKey('VolatileItemClaimedRewards', m_defidxContainerItem));
         const elParent = m_elScreen.FindChildInLayoutFile('id-offer-xp-lootlist');
@@ -1064,6 +1068,78 @@ var CollectionOffers;
                 });
             }
         }
+    }
+    async function _ShowMessageOfferLimit() {
+        const elMessage = $.CreatePanel('Panel', m_elMessagesParent, '');
+        elMessage.BLoadLayoutSnippet('interaction-offer-limit-message');
+        elMessage.AddClass('show');
+        const oSettings = {
+            parentPanel: elMessage.FindChildInLayoutFile('id-interaction-list'),
+            buttonClass: 'message-interaction__text-button',
+            group: 'offer-limit-message',
+            namePrefix: 'id-limit-message',
+            isContextMenu: false
+        };
+        MakeOfferLimitRadioButton(oSettings);
+        await Async.Delay(.1);
+        m_elMessagesParent.ScrollToBottom();
+        return elMessage;
+    }
+    function ShowOfferLimitPopup() {
+        m_elScreen.FindChildInLayoutFile('id-popup-in-screen').SetHasClass('show-settings', true);
+        m_elScreen.FindChildInLayoutFile('id-close-popup-in-screen').SetPanelEvent('onactivate', () => CloseInScreenPopup('show-settings'));
+        const oSettings = {
+            parentPanel: m_elScreen.FindChildInLayoutFile('id-offer-settings'),
+            buttonClass: 'popup-offers-setting__text-button',
+            group: 'offer-limit',
+            namePrefix: 'id-limit-popup',
+            isContextMenu: true
+        };
+        MakeOfferLimitRadioButton(oSettings);
+    }
+    function MakeOfferLimitRadioButton(oSetting) {
+        let oLimits = JSON.parse(InventoryAPI.GetVolatileLimits());
+        for (let i = 0; i < oLimits.choices.length; i++) {
+            let elButton = oSetting.parentPanel.FindChild(oSetting.namePrefix + oLimits.choices[i].limit);
+            if (!elButton) {
+                elButton = $.CreatePanel('RadioButton', oSetting.parentPanel, oSetting.namePrefix + oLimits.choices[i].limit, {
+                    class: oSetting.buttonClass,
+                    group: 'offer-limit',
+                    html: 'true',
+                    text: '{s:setting-label}'
+                });
+                elButton.SetDialogVariable('limit-setting', oLimits.choices[i]?.label);
+                const locString = (oLimits.choices[i].limit !== 0) ?
+                    $.Localize(_RandomizeLocString('#user_message_limit_'), elButton) :
+                    $.Localize(_RandomizeLocString('#user_message_limit_unlimited_'), elButton);
+                elButton.SetDialogVariable('setting-label', locString);
+                elButton.SetPanelEvent('onactivate', () => {
+                    InventoryAPI.SetVolatileLimits(oLimits.choices[i].limit);
+                    m_elScreen.SetDialogVariable('limit', GetLimitString(oLimits.choices[i]?.limit, oLimits.choices[i]?.label));
+                    if (oSetting.isContextMenu) {
+                        $.Schedule(.25, () => CloseInScreenPopup('show-settings'));
+                        oSetting.parentPanel.Children().forEach(element => element.enabled = false);
+                        ShowDealerOfferLimitAcknowledge();
+                        return;
+                    }
+                    else {
+                        oSetting.parentPanel.SetHasClass('hide', true);
+                        _MakeMessage(systemOfferLimitSetWithBootstrapAction);
+                    }
+                });
+            }
+            if (oSetting.isContextMenu) {
+                elButton.checked = ((oLimits.limit === oLimits.choices[i].limit) && oLimits.selected === true);
+                elButton.enabled = !elButton.checked;
+            }
+        }
+    }
+    function CloseInScreenPopup(className) {
+        OffersLaptop.LaptopSoundPlayOnce('UI.Laptop.Click');
+        m_elScreen.FindChildInLayoutFile('id-popup-in-screen').SetHasClass(className, false);
+    }
+    function GetLimitString(nLimit, sLimitLabel) {
+        return nLimit === 0 ? $.Localize(sLimitLabel) : sLimitLabel;
     }
 })(CollectionOffers || (CollectionOffers = {}));
 var DecodeText;

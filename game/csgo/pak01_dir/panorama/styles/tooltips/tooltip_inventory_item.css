@@ -19,10 +19,14 @@
 	visibility:visible;
 }
 
-.collection-label
+.collection-text-style
 {
 	font-weight: normal;
 	font-size: 14px;
+}
+
+.collection-label
+{
 	visibility:collapse;
 }
 

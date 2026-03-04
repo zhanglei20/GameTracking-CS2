@@ -268,12 +268,18 @@ var InspectAsyncActionBar;
                 elDescImage.visible = false;
                 return;
             }
+            const terminalValue = InventoryAPI.GetItemAttributeValue(itemId, '{uint32}volatile container');
+            const isTerminal = (terminalValue == '' || terminalValue == undefined || terminalValue == 0) ? false : true;
             if (itemDefName && itemDefName.indexOf("spray") != -1)
                 sOkButtonText = sOkButtonText + "_graffiti";
             else if (itemDefName && itemDefName.indexOf("tournament_pass_") != -1)
                 sOkButtonText = sOkButtonText + "_fantoken";
-            else if (InventoryAPI.GetItemAttributeValue(itemId, '{uint32}volatile container'))
+            else if (terminalValue)
                 sOkButtonText = sOkButtonText + "_terminal";
+            const elDropdown = elPanel.FindChildInLayoutFile('AsyncOfferLimitDropdown');
+            elDropdown.SetHasClass('hidden', !isTerminal);
+            if (isTerminal)
+                _SetUpOfferLimitDropdown(elDropdown);
         }
         if (worktype === 'can_sticker') {
             const listStickers = ItemInfo.GetitemStickerList(itemId);
@@ -296,6 +302,27 @@ var InspectAsyncActionBar;
         elOK.text = sOkButtonText;
         elOK.AddClass(btnStyle);
         _SetPanelEventOnAccept();
+    }
+    function _SetUpOfferLimitDropdown(elDropdown) {
+        const oLimits = JSON.parse(InventoryAPI.GetVolatileLimits());
+        for (let i = 0; i < oLimits.choices.length; i++) {
+            if (!elDropdown.HasOption('id-dropdown-limit-' + oLimits.choices[i].limit)) {
+                let elOption = $.CreatePanel('Label', elDropdown, 'id-dropdown-limit-' + oLimits.choices[i].limit, {
+                    class: 'DropDownMenu'
+                });
+                elOption.SetDialogVariable('limit', $.Localize(oLimits.choices[i].label));
+                elOption.text = $.Localize('#offer_limit_setting', elOption);
+                elOption.SetAttributeUInt32('limit', oLimits.choices[i].limit);
+                elDropdown.AddOption(elOption);
+            }
+        }
+        elDropdown.SetPanelEvent('oninputsubmit', () => _OnOfferLimitDropdownSubmit(elDropdown));
+        elDropdown.SetSelected('id-dropdown-limit-' + oLimits.limit);
+    }
+    function _OnOfferLimitDropdownSubmit(elDropdown) {
+        const elSelected = elDropdown.GetSelected();
+        const nLimit = elSelected.GetAttributeUInt32('limit', 0);
+        InventoryAPI.SetVolatileLimits(nLimit);
     }
     function _SetUpDescription(elPanel) {
         const elDescLabel = elPanel.FindChildInLayoutFile('AsyncItemWorkDesc');

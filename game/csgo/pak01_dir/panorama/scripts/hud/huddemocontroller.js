@@ -123,17 +123,15 @@ var HudDemoController;
                 sFileName = sFileName.substring(nSlashIndex + 1);
             cp.SetDialogVariable("total_time", TicksToTimeText(state.nTotalTicks, state.nSecondsPerTick, false));
             if (state?.bIsPlayingBroadcast) {
+                hud.SetHasClass("DemoControllerHidden", false);
                 hud.SetHasClass("DemoControllerMinimal", false);
                 hud.SetHasClass("DemoControllerFull", false);
             }
             else {
                 let nUIMode = Number(GameInterfaceAPI.GetSettingString("demo_ui_mode"));
-                if (nUIMode == 1) {
-                    hud.SetHasClass("DemoControllerMinimal", true);
-                }
-                else if (nUIMode == 2) {
-                    hud.SetHasClass("DemoControllerFull", true);
-                }
+                hud.SetHasClass("DemoControllerHidden", nUIMode == 0);
+                hud.SetHasClass("DemoControllerMinimal", nUIMode == 1);
+                hud.SetHasClass("DemoControllerFull", nUIMode == 2);
             }
             OnHighlightsModeChanged(state.bIsPlayingHighlights);
             bHighlightsMode = state.bIsPlayingHighlights;
