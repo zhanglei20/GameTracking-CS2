@@ -343,6 +343,16 @@
 	visibility:visible;
 }
 
+.item-tile__onmarket
+{
+	height: 16px;
+	width: 16px;
+	transform: scaleX(-1);
+	vertical-align: center;
+	margin-right: 1px;
+	wash-color: baseText;
+}
+
 .item-tile__original-owner
 {
 	margin-left: 8px;

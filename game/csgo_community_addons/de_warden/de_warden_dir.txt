@@ -372,7 +372,7 @@ materials/de_warden/monterey_cypress_bark/monterey_cypress_bark.vmat_c CRC:00716
 materials/de_warden/monterey_cypress_bark/monterey_cypress_bark_color_tif_a716819.vtex_c CRC:00543b56f9 size:1400212
 materials/de_warden/monterey_cypress_bark/monterey_cypress_bark_normal_tif_acf65e41.vtex_c CRC:00256f339d size:2798436
 materials/de_warden/monterey_cypress_bark/monterey_cypress_bark_vmat_g_tambientocclusion_9782fd5c.vtex_c CRC:00fbd446d5 size:2008
-materials/de_warden/moss_01/moss_01.vmat_c CRC:001ca18853 size:4309
+materials/de_warden/moss_01/moss_01.vmat_c CRC:00af8acde0 size:4392
 materials/de_warden/moss_01/moss_01_color_png_f4e9893b.vtex_c CRC:00d16dc9ff size:1400180
 materials/de_warden/moss_01/moss_01_height_png_1f83de80.vtex_c CRC:0046998172 size:1400244
 materials/de_warden/moss_01/moss_01_height_png_3a4cf3f3.vtex_c CRC:006d948792 size:1400292
@@ -390,7 +390,7 @@ materials/de_warden/painted_bricks_worn/painted_bricks_worn.vmat_c CRC:000c454eb
 materials/de_warden/painted_bricks_worn/painted_bricks_worn_color_png_512d594c.vtex_c CRC:00c436afcd size:5594548
 materials/de_warden/painted_bricks_worn/painted_bricks_worn_height_png_adbf20cb.vtex_c CRC:009ee6d134 size:5594612
 materials/de_warden/painted_bricks_worn/painted_bricks_worn_normal_png_9c4f459.vtex_c CRC:00a10ff897 size:5594628
-materials/de_warden/painted_concrete_01/painted_concrete_01.vmat_c CRC:001b4baecc size:4181
+materials/de_warden/painted_concrete_01/painted_concrete_01.vmat_c CRC:006e9461af size:4312
 materials/de_warden/painted_concrete_01/painted_concrete_01_color_psd_4c3b9834.vtex_c CRC:00407790e1 size:5594468
 materials/de_warden/painted_concrete_01/painted_concrete_01_damaged_blend.vmat_c CRC:0003ba9900 size:7240
 materials/de_warden/painted_concrete_01/painted_concrete_01_damaged_blend_overlay.vmat_c CRC:00d739e772 size:7592
@@ -604,8 +604,10 @@ materials/de_warden/worn_plaster_01/worn_plaster_01_color_tga_523055d3.vtex_c CR
 materials/de_warden/worn_plaster_01/worn_plaster_01_height_tga_32fbcc90.vtex_c CRC:00684b826b size:1400212
 materials/de_warden/worn_plaster_01/worn_plaster_01_height_tga_4cec3a67.vtex_c CRC:00d8479e8a size:1400212
 materials/de_warden/worn_plaster_01/worn_plaster_01_normal_tga_c8fb9d5a.vtex_c CRC:00b69c768f size:1400276
+materials/de_warden/worn_plaster_02/worn_plaster_02.vmat_c CRC:0058855c09 size:4264
 materials/de_warden/worn_plaster_02/worn_plaster_02_color_png_fefea71f.vtex_c CRC:003b6b23b7 size:5594548
 materials/de_warden/worn_plaster_02/worn_plaster_02_height_png_7172ac85.vtex_c CRC:0032375bc6 size:5594564
+materials/de_warden/worn_plaster_02/worn_plaster_02_height_png_762c4102.vtex_c CRC:00966b9c16 size:5594580
 materials/de_warden/worn_plaster_02/worn_plaster_02_normal_png_6772b05a.vtex_c CRC:000bba71de size:5594628
 materials/default/default_ao_tga_559f1ac6.vtex_c CRC:00aef61552 size:2200
 materials/default/default_bentnormal_tga_2023e987.vtex_c CRC:00f3748ef8 size:2272

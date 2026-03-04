@@ -895,7 +895,6 @@ $lZT
 --CNetworkGameServerBase
 --startmovie
 -0123456789
--0x8000'0000p0f <= flTicks && flTicks < +0x8000'0000p0f
 -5?KYks
 -> Reservation cookie %llx:  reason %s\n
 -?Vb,?H$+?Z
@@ -1633,6 +1632,7 @@ $lZT
 1wsHp
 2%sT5
 200000
+20:08:06
 20CCLCMsg_ClientInfo_t
 20CCLCMsg_CmdKeyValues
 20CCLCMsg_Diagnostic_t
@@ -1667,7 +1667,6 @@ $lZT
 20ISource2ServerConfig
 20ISource2WorldSession
 20PacketEntitiesFilter
-21:54:28
 21C2S_CONNECT_Message_t
 21CCLCMsg_BaselineAck_t
 21CEngineGotvSyncPacket
@@ -3865,7 +3864,6 @@ CheckServerReservationUpdate: %d conn periodic update\n
 CheckTimeouts: Disconnecting client: %s %s, after a netchan-decided timeout of %0.2fs with no acks received\n
 CheckTimeouts: Disconnecting client: %s %s, after a server-decided timeout of %0.2fs with no acks received\n
 CheckTransmit
-CheckedAdd
 Cherokee
 ClampFloatToZero_SSE2
 Clamping split screen users to 1 due to -tools mode.\n
@@ -4547,7 +4545,6 @@ Failure
 False
 FastHexToBuffer() wants non-negative integers, not 
 Features
-Feb 23 2026
 February
 Feel free to add support for more if you need it.
 Field "
@@ -4672,7 +4669,6 @@ Free physical memory: %.2f MiB\n
 Freed EMS handle %u
 Freed XMS handle %u
 Friday
-FromFloatTicks
 Full Frame
 FullFrameSplit tick=%d, chunk=%d of %d\n
 FullPacketGoto
@@ -5304,7 +5300,6 @@ Invoke '%s' failed with code %d
 InvokeMiniDumpHandler
 Is fixup operator client running at low FPS? Only %d/%d fixup ticks available for %s\n
 Is the server pausable.
-IsValidFrac( flFrac )
 IsValidIndex( i )
 Issue an rcon command.
 J3GS
@@ -5642,6 +5637,7 @@ MapValueRef::SetInt64Value
 MapValueRef::SetStringValue
 MapValueRef::SetUInt32Value
 MapValueRef::SetUInt64Value
+Mar  4 2026
 March
 Marked tick %u in '%s'\n
 Marker,GPUTimeAvgMS,GPUTimeRangeMS,GPUTimeMinMS,GPUTimeMaxMS\n
@@ -7003,6 +6999,7 @@ RenderDeviceMgr001
 RenderHardwareConfig002
 RenderService
 RenderService::OnClientOutput
+RenderService::OnClientPostAdvanceTick
 RenderService_001
 RenderSystem/VulkanOnly
 RenderSystem/VulkanOnlyTestProbability
@@ -11588,7 +11585,6 @@ results.txt
 resume
 retail
 retval
-rhs < 0 ? ret < lhs : ret >= lhs
 rnd_down
 rnd_up
 rnn_celt_autocorr
@@ -15664,7 +15660,6 @@ throw
 throw 
 tick
 tick_interval
-ticks_and_frac.cpp
 ticks_per_interval
 tier0
 time

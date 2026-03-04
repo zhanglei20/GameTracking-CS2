@@ -31,7 +31,9 @@ var HoldButton;
             return;
         if ('tooltip' in settings && settings.tooltip !== '') {
             settings.btn.SetPanelEvent('onmouseover', () => {
-                UiToolkitAPI.ShowTextTooltipStyled(settings.btn.id, settings.tooltip, ('tooltipStyle' in settings) ? settings.tooltipStyle : '');
+                if (settings.btn.enabled) {
+                    UiToolkitAPI.ShowTextTooltipStyled(settings.btn.id, settings.tooltip, ('tooltipStyle' in settings) ? settings.tooltipStyle : '');
+                }
             });
             settings.btn.SetPanelEvent('onmouseout', () => { UiToolkitAPI.HideTextTooltip(); });
         }

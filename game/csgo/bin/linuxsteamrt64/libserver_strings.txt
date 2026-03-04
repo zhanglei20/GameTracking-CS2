@@ -1063,6 +1063,7 @@ $light_emissive
 %s finished post idle at %0.2f\n
 %s follows %s
 %s has no hitboxes\n
+%s hit the sellback limit.\n
 %s is a priority script and cannot be kicked out of the queue\n
 %s is abstract but didn't have any networkable descendents [found %d possibles], make (at least) one of these leaf classes networkable!!!\n
 %s is already preloading!\n
@@ -1377,6 +1378,7 @@ $light_emissive
 (Output drawable)
 (SERVER) Inventory for account (%d):\n
 (WIPE AND EXTRACT)
+(ammo:number)
 (callback: function)
 (className: string)
 (color)
@@ -7030,7 +7032,6 @@ $light_emissive
 >KS[ac5>IU^c+0<LZc
 ?33s?
 ???CRR_Response bogus index
-?KA8
 @player_start_teleport_destination
 @workshop
 A CT bot doesn't know what to do while the bomb is planted!\n
@@ -9066,7 +9067,6 @@ CheckPoint
 CheckSpawnThink
 CheckStuffThink
 CheckThreadID
-CheckedSub
 Checking nearby threatening enemy gunfire!\n
 Checking out where our friend was killed\n
 Checks if entity a and entity b are in hierarchy together
@@ -10669,6 +10669,7 @@ Get vector to center of object - absolute coords
 Get vector to eye position - absolute coords.
 Get whether the hostage is currently being carried or not
 GetAbsAngles
+GetAbsAngularVelocity
 GetAbsOrigin
 GetAbsScale
 GetAbsVelocity
@@ -10703,6 +10704,7 @@ GetClassName
 GetClassNameAsCStr
 GetClassNameOverride
 GetClassname
+GetClipAmmo
 GetColor
 GetCommandClient
 GetCommandClient() : returns the player who issued this console command.
@@ -10780,8 +10782,10 @@ GetMaterialGroupHash
 GetMaterialGroupHash(): Get the material group hash of this entity.
 GetMaterialGroupMask
 GetMaterialGroupMask(): Get the mesh group mask of this entity.
+GetMaxClipAmmo
 GetMaxHealth
 GetMaxOutputDelay
+GetMaxReserveAmmo
 GetModelName
 GetModelScale
 GetMoveParent
@@ -10860,6 +10864,7 @@ GetRenderAlpha(): Get the alpha modulation of this entity.
 GetRenderColor
 GetRenderColor(): Get the render color of the entity.
 GetReportedPosition
+GetReserveAmmo
 GetRightVector
 GetRootMoveParent
 GetRoundsPlayed
@@ -11938,6 +11943,8 @@ IsConnected
 IsCrouched
 IsCrouching
 IsDedicatedServer
+IsDucked
+IsDucking
 IsEnabled
 IsEnemyPartVisible
 IsFakeClient
@@ -13902,7 +13909,6 @@ Plays/modifies a sound from this entity. changes sound if nPitch and/or flVol or
 Please move your current gameinfo.gi agent settings to a %s file and create a %s file with a 'default' entry containing all the nav nulls. Then add "NavHullsPreset" "default" to your gameinfo.gi file. For now we'll continue to load the agent settings but this path is deprecated ( antonioc@ ).
 Please specify 0 or 1 with the -stream Parameter\n
 Please wait for broadcast to start ...
-PlusOneTick
 Point entity.
 PointAtEntity
 PointTemplate
@@ -15062,6 +15068,7 @@ SetBrightness
 SetBrightnessDelta
 SetBrightnessScale
 SetCamera
+SetClipAmmo
 SetClipPrimary
 SetClipSecondary
 SetColor
@@ -15291,6 +15298,7 @@ SetRenderMode
 SetRenderMode( int ): Sets the render mode of the entity.
 SetRenderingEnabled
 SetReportedPosition
+SetReserveAmmo
 SetReserveAmmoAmount
 SetRestLength
 SetRotateType
@@ -17194,6 +17202,7 @@ altpath
 always tradable
 always_known
 ambient_generic
+ammo
 ammo_grenade_limit_total 5\n
 ammobalancing_removable
 amount
@@ -17212,6 +17221,7 @@ ang_yaw
 ang_z
 angles: %g %g %g
 angularLimit
+angularVelocity
 angular_damping_ratio_x
 angular_damping_ratio_y
 angular_damping_ratio_z
@@ -20635,7 +20645,6 @@ m_nParamIndex < 0
 m_nSamples
 m_nSound
 m_nSpawnGroupCount
-m_nTicks < INT_MAX
 m_nameList
 m_pAnimGraph1Instance == nullptr && m_pAnimGraph2Instance == nullptr && m_pAnimGraphInstanceOwner != nullptr
 m_pAnimGraphDestructibleGraphController
@@ -21296,8 +21305,6 @@ open_buymenu
 opened
 operation_coin
 operation_type
-operator+
-operator-
 operatorName
 operatorname
 optionalEntityName
@@ -22229,7 +22236,6 @@ revolver
 revolving_loot_lists
 reward_drop_list
 rfc822Mailbox
-rhs > 0 ? ret < lhs : ret >= lhs
 rifle
 rifle0
 rifle1

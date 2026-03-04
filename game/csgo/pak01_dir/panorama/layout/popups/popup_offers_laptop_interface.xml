@@ -37,6 +37,16 @@
 				<Panel id="id-message" />
 			</Panel>
 		</snippet>
+		<snippet name="interaction-offer-limit-message">
+			<Panel class="chat-message chat-message-interaction">
+				<Panel id="id-interaction-list" class="interaction-card">
+					<Label class="interaction-card-desc stratum-regular" text="#laptop_max_offer_tooltip" />
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="radiobutton-limit">
+			<RadioButton class="message-interaction__text-button" text="Up to $50" />
+		</snippet>
 		<snippet name="system-message">
 			<Panel class="chat-message chat-message-system">
 				<Label id="id-chat-message-label" class="chat-message__body stratum-regular" text="" />
@@ -133,23 +143,27 @@
 						</Panel>
 						<Panel class="chat-messages-container">
 							<Panel id="id-chat-messages-bg" class="chat-messages-bg" />
-							<Image class="chat-messages-bg-icon" textureheight="480" texturewidth="-1" src="s2r://panorama/images/icons/ui/arms_deal_icon.vsvg" />
 							<Panel id="id-chat-messages" class="chat-messages" />
 						</Panel>
-						<Panel class="chat-user-responses">
+						<Panel id="id-user-messages-parent" class="chat-user-responses">
 							<Panel id="id-user-messages-container" class="chat-user-responses__container">
-								<Label html="true" class="chat-user-responses__title stratum-regular" text="{s:user-response-title}" />
+								<Panel class="full-width bottom-margin left-margin-6 right-margin-6">
+									<Panel class="left-right-flow horizontal-align-left">
+										<Label html="true" class="chat-user-responses__title stratum-regular" text="{s:user-response-title}" />
+										<Image id="id-price-tooltip" class="user-response-price-tooltip" textureheight="18" texturewidth="-1" src="s2r://panorama/images/icons/ui/info.vsvg" />
+									</Panel>
+									<TextButton id="id-offer-limit-setting" html="true" class="chat-user-limit-offer-setting stratum-regular" text="#offer_limit_setting_interface" />
+								</Panel>
 								<Panel class="full-width">
 									<Panel class="left-right-flow">
-										<TextButton id="id-user-message-yes" class="user-response-btn" html="true" text="#user_btn_accept">
+										<TextButton id="id-user-message-yes" class="user-response-btn positive" html="true" text="#user_btn_accept">
 											<Panel id="id-response-btn-timer" class="user-response-btn__timer" />
 										</TextButton>
-										<Image id="id-price-tooltip" class="user-response-price-tooltip" textureheight="20" texturewidth="-1" src="s2r://panorama/images/icons/ui/info.vsvg" />
 									</Panel>
-									<TextButton id="id-user-message-no" class="user-response-btn" text="#user_btn_next">
+									<TextButton id="id-user-message-no" class="user-response-btn yellow" text="#user_btn_next">
 										<Panel id="id-response-btn-timer" class="user-response-btn__timer" />
 									</TextButton>
-									<TextButton id="id-user-message-end" force-no-composition-layer="true" class="user-response-btn" text="#user_btn_end">
+									<TextButton id="id-user-message-end" force-no-composition-layer="true" class="user-response-btn negative" text="#user_btn_end">
 										<Panel id="id-response-btn-timer" class="user-response-btn__timer" />
 									</TextButton>
 								</Panel>
@@ -227,14 +241,24 @@
 					</Panel>
 				</Panel>
 			</Panel>
-			<Panel id="id-popup-lootlist" class="popup-lootlist-container">
-				<Button id="id-close-popup-lootlist" class="full-width full-height" />
+			<Panel id="id-popup-in-screen" class="popup-laptop-container">
+				<Button id="id-close-popup-in-screen" class="full-width full-height" />
 				<Panel hittest="true" class="popup-lootlist" onactivate="">
 					<Panel class="window__title-bar">
 						<Label class="window__title-bar__title stratum-regular" text="#popup_lootlist_title" />
 					</Panel>
 					<Label class="popup-lootlist__desc stratum-regular" text="#popup_lootlist_desc" />
 					<Panel id="id-offer-xp-lootlist" class="popup-lootlist__list" />
+				</Panel>
+				<Panel hittest="true" class="popup-offers-settings" onactivate="">
+					<Label class="popup-lootlist__desc stratum-regular" text="#popup_offer_limit_desc" />
+					<Panel class="popup-lootlist__list__section">
+						<Image texturewidth="-1" textureheight="8" class="window__weapon-info__bracket top-right" src="s2r://panorama/images/hud/bracket.vsvg" />
+						<Image texturewidth="-1" textureheight="8" class="window__weapon-info__bracket bottom-right" src="s2r://panorama/images/hud/bracket.vsvg" />
+						<Image texturewidth="-1" textureheight="8" class="window__weapon-info__bracket top-left" src="s2r://panorama/images/hud/bracket.vsvg" />
+						<Image texturewidth="-1" textureheight="8" class="window__weapon-info__bracket bottom-left" src="s2r://panorama/images/hud/bracket.vsvg" />
+						<Panel id="id-offer-settings" class="top-bottom-flow padding-8" />
+					</Panel>
 				</Panel>
 			</Panel>
 			<Image class="laptop-broken-screen" hittest="false" src="s2r://panorama/images/backgrounds/broken_laptop_screen_psd.vtex" onactivate="" />

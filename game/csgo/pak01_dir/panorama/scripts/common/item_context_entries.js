@@ -930,7 +930,23 @@ var ItemContextEntries;
             OnSelected: (id) => {
                 $.DispatchEvent('CSGOPlaySoundEffect', 'inventory_inspect_sellOnMarket', 'MOUSE');
                 $.DispatchEvent('ContextMenuEvent', '');
-                InventoryAPI.SellItem(id);
+                InventoryAPI.MarketListingForItem(id, 'create');
+            }
+        },
+        {
+            name: 'marketlisting',
+            style: (id) => 'TopSeparator',
+            bActionIsRentalAware: true,
+            AvailableForItem: (id) => {
+                if (MyPersonaAPI.GetLauncherType() === 'perfectworld')
+                    return false;
+                let unProtectedEscrowValue = InventoryAPI.GetItemAttributeValue(id, '{uint32}trade protected escrow date');
+                return ((unProtectedEscrowValue !== undefined) && (unProtectedEscrowValue == 0));
+            },
+            OnSelected: (id) => {
+                $.DispatchEvent('CSGOPlaySoundEffect', 'inventory_inspect_sellOnMarket', 'MOUSE');
+                $.DispatchEvent('ContextMenuEvent', '');
+                InventoryAPI.MarketListingForItem(id, 'view');
             }
         },
         {
