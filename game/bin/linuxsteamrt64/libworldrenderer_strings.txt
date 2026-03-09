@@ -154,7 +154,6 @@ Not safe to 'new' this class due to alignment requirements
 NumCols() <= V_ARRAYSIZE( s_DummyRow )
 Physics
 PushCurrentSkewBrightnessValuesToSceneObject
-QAw#Z
 RESOURCE_TYPE_ENTITY_LUMP
 RESOURCE_TYPE_WORLD
 RESOURCE_TYPE_WORLD_NODE

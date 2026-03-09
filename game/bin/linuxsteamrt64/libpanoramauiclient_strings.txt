@@ -2106,7 +2106,6 @@ program
 progress
 pthread_cancel
 purple
-qd$6
 radial
 radial( 
 rebeccapurple

@@ -156,7 +156,6 @@
 34CLocalizeCompiledStringSinglePlain
 35CLocalizeCompiledStringLocVariables
 36CLocalizeCompiledStringMessageFormat
-4k4$
 9CLocalize
 9ILocalize
 :help
