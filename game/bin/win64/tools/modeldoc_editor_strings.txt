@@ -13019,8 +13019,8 @@ $schemasystem/schema_enable_defines.h
 2\rU2t
 2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp4)
-2\vpT&
+2\vpT)
+2\vpt&
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -13790,7 +13790,6 @@ $schemasystem/schema_enable_defines.h
 ?MoveFrom@CBufferString@@QEAAXAEAV1@@Z
 ?Nearest@CVertexKDTree@@QEBAXAEBV?$Vec3D@M@@AEAV?$CUtlVectorFixedGrowable@PEBM$0EA@H@@@Z
 ?OutputIndentation@IFormatOutputStream@@UEAAXXZ
-?PaV
 ?ParallelCallQueued@CCallQueue@@QEAAXPEBDPEAVIThreadPool@@@Z
 ?ParseToken@CUtlBuffer@@QEAA_NPEBD0PEADH@Z
 ?PathJoin@CUtlString@@SA?AV1@PEBD0@Z
@@ -15391,8 +15390,7 @@ $schemasystem/schema_enable_defines.h
 @C:\buildworker\csgo_rel_win64\build\src\mathlib\extended\generic_expr.g
 @HPX
 @HPX&I
-@HPX`hv`
-@HVp
+@HPX`hv
 @Integer overflow in %s
 @Invalid
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
@@ -22994,12 +22992,12 @@ RMouseDoubleClick
 ROTATION
 RSDS
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fp4)
+R\fpT)
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\tV_powf
 R\v0!F
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vpT&
+R\vpt&
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Rad2 Deg
 Radial Basis Function Type
@@ -28909,7 +28907,7 @@ quadratic
 quaternion_array
 quiet
 r\tVr.>T
-r\vp4)
+r\vpT)
 rad2deg
 radiant
 radiant_creeps

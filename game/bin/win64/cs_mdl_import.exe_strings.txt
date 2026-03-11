@@ -7364,60 +7364,65 @@ $prefix_element$
 /yQA
 0 0 0
 0 0 0 255
+00O@
 0123456789abcdefghijklmnopqrstuvwxyz
 016@
 019@
-02P@
-02w@
+01H@
+01b@
+02b@
 031@
-03H@
-04H@
-04a@
+03w@
+05H@
+05b@
 073@
-07H@
-07b@
-08T@
-09w@
+09v@
 0A8@
 0AW@
-0BT@
-0DH@
+0CH@
+0CW@
 0E>X
-0ET@
-0EZ@
-0Gw@
-0HT@
+0FT@
+0GM@
+0Hw@
+0ID@
 0J6@
-0Jw@
-0KQ@
-0LT@
+0Kv@
+0Kw@
+0LL@
 0M5@
-0SS@
+0NM@
+0TF@
 0U9@
-0UN@
+0UT@
 0X8b?~
+0XN@
+0YG@
 0\r%0t
-0aP@
-0bb@
+0bF@
 0c4@
-0eS@
-0gP@
+0cZ@
+0hP@
+0hT@
 0i4@
 0iN>/
-0iT@
-0jw@
+0jM@
 0kw@
-0mw@
-0nS@
-0ow@
+0lA@
+0lw@
+0mT@
+0nw@
+0pK@
 0pT@
+0pw@
+0uT@
+0vM@
+0vN@
+0vT@
 0w1@
-0wL@
-0wP@
 0x%llx
 0y6@
-0yM@
-0zb@
+0zS@
 1#IND
 1#INF
 1#QNAN
@@ -7443,7 +7448,8 @@ $prefix_element$
 2DBlendFromAnimation
 2\rU2t
 2\tV_isnand
-2\vp0
+2\vp4
+2\vpP
 2_BONE_IK
 37>k
 3>N;kU
@@ -13138,21 +13144,17 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P0R@
-P1w@
-P2M@
-P2v@
-P3N@
+P2P@
 P46@
 P4File
+P4a@
 P58@
-P6M@
-P6v@
-P7E@
+P5H@
+P7b@
 P87@
-P8N@
-P9R@
-P9v@
+P8H@
+P8T@
+P9H@
 PANEL_ID
 PARENT
 PARTICLE_EHANDLE__
@@ -13173,11 +13175,12 @@ PATTACH_RENDERORIGIN_FOLLOW
 PATTACH_ROOTBONE_FOLLOW
 PATTACH_WATERWAKE
 PATTACH_WORLDORIGIN
-PBM@
-PBW@
-PCW@
+PAW@
+PBT@
 PE7@
-PEw@
+PET@
+PEZ@
+PEv@
 PFNoiseModifier_t
 PFNoiseTurbulence_t
 PFNoiseType_t
@@ -13254,18 +13257,16 @@ PF_TYPE_RANDOM_UNIFORM
 PF_TYPE_RENDERER_CAMERA_DISTANCE
 PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT
 PF_TYPE_SNAPSHOT_COUNT
+PFw@
 PGDInstruction_t
 PHT@
 PHY Import: Invalid solid index %d in keyvalues\n
 PHY Import: Solid with index %d is defined twice!\n
-PHZ@
 PInstruction_t<41>::Run
 PInstruction_t<42>::Run
-PJT@
-PKT@
+PKQ@
 PLATFORM
-PMS@
-PMZ@
+PLT@
 PM_TYPE_CONTROL_POINT
 PM_TYPE_COUNT
 PM_TYPE_INVALID
@@ -13277,11 +13278,9 @@ POSE_SPACE_BONE
 POSE_SPACE_MORPH
 POS_FLOATLITERAL
 POS_INTLITERAL
-PPZ@
-PQM@
 PRIVATE
+PSS@
 PT2@
-PTZ@
 PT_TYPE_CONTROL_POINT
 PT_TYPE_CONTROL_POINT_RANGE
 PT_TYPE_COUNT
@@ -13290,6 +13289,7 @@ PT_TYPE_NAMED_VALUE
 PU2@
 PULSE_CALL_ASYNC_FIRE
 PULSE_CALL_SYNC
+PUN@
 PURH
 PV2@
 PVAL_ANY
@@ -13352,6 +13352,7 @@ PX2@
 PY2@
 PZ2@
 Pa5@
+PaP@
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
@@ -13433,7 +13434,9 @@ Pass Outflow
 PathRemoveFileSpecA
 Pause
 Pause the cursor at this point.
+Pbb@
 Pe6^
+PeS@
 Peak
 Peak Cycle
 Peak Frame
@@ -13455,6 +13458,7 @@ Persistent
 Perturb vertex positions using sine waves.
 Pf\n%d %d\n-1.000000\n
 Pg4@
+PgP@
 Photometric tag is missing, assuming data is YCbCr
 Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
@@ -13628,6 +13632,7 @@ Plat_VirtualAlloc
 Plat_VirtualFree
 Plat_WindowToOsSpecificHandle
 Play End Cap Effect
+PnS@
 Po8@
 Point
 Point 0
@@ -13682,6 +13687,7 @@ PosterSettings
 Posture
 Power scale for applying the supplemental ambient occlusion map.
 Pp8@
+PpT@
 Pre-Age Noise
 Pre-Clear Selection
 Precision Degrees
@@ -13739,8 +13745,6 @@ Projected Primitive
 PropWorldOrigin
 PropertyEditorSystem_001
 Prune pieces < error threshold
-PsJ@
-PsM@
 Pull towards control point
 Pulse
 Pulse Graph
@@ -13783,10 +13787,10 @@ PulseValueType_t
 PulseVariableKeysSource_t
 Push Out
 Push mesh faces outward along their local normal. Optionally build shell geometry.
-PvD@
-PvP@
-PwM@
-PyP@
+PwL@
+PwP@
+PyM@
+Pzb@
 Q2XXR
 Q5rHg,>
 QAf?
@@ -13949,9 +13953,9 @@ RIGHT
 ROTATION
 RSDS
 RST%d
-R\fp0
+R\fpP
 R\tV_powf
-R\vp0
+R\vpP
 R_T5Y
 Rad2 Deg
 Radial Basis Function Type
@@ -17912,6 +17916,7 @@ lower_hemisphere_is_black
 lowest
 lowprecisionuv
 lowprecisionuv1
+lzz@
 m?H7
 mG4>
 m\nXo
@@ -20403,46 +20408,43 @@ owM&
 owner dead
 ownerlog
 owns_polymorphic_data
-p0H@
+p0R@
 p10@
-p1H@
-p2S@
-p3a@
-p3b@
+p2H@
+p2M@
+p3N@
 p46@
 p4lib
-p5F@
+p6M@
 p71@
-p7b@
-p8H@
-p9T@
-pBH@
-pCH@
-pCT@
+p7E@
+p8N@
+p9R@
+pAw@
+pBM@
+pBW@
+pCW@
 pCheckpointName
+pDH@
 pDescription
-pEb@
-pFZ@
-pGN@
-pIw@
+pHT@
+pHZ@
+pJT@
+pJw@
+pKT@
 pM0@
 pM5@
+pMS@
+pMZ@
 pMessage
 pO6@
-pOb@
+pPZ@
 pQ7@
-pSb@
-pTG@
+pQM@
+pTZ@
 pTagName
-pUG@
-pUS@
-pXG@
-pXT@
-pYB@
-pZZ@
 p\r0\fP
 p\tV_strlower_fast
-paL@
 panorama_image
 panorama_layout
 panorama_style
@@ -20496,8 +20498,6 @@ pathclass
 pathnode
 pathnodeclass
 pattern
-peP@
-peT@
 peak
 peak_attr
 peak_cycle
@@ -20512,7 +20512,6 @@ percentage minimum
 permission denied
 permissive
 pervertexlighting
-pgS@
 ph4@
 phonememap
 phys
@@ -20532,6 +20531,7 @@ physicspreview
 physicspreviewrendermesh
 pi1@
 pi4@
+piT@
 pick_type
 picks_expected
 piece
@@ -20564,7 +20564,6 @@ plane point
 plastic
 plasticity
 playerclip
-pnG@
 po8@
 point
 point offset
@@ -20614,7 +20613,6 @@ postprocessing
 posture
 posture_nohands
 posxyz
-ppS@
 pq5@
 preMerge face 0
 preMerge face 1
@@ -20676,9 +20674,9 @@ proportional fade out time
 protocol error
 protocol not supported
 prune
+psJ@
+psM@
 pseudo-
-puM@
-puP@
 publiccontent
 publish_data
 publish_data.txt
@@ -20696,12 +20694,12 @@ purecall
 pushoff
 pushout_strength
 pv5@
+pvD@
+pvP@
 pvTarget
-pwD@
-pxS@
-pxT@
+pwM@
+pyP@
 pz5@
-pzS@
 qAdjust
 qS>g?h3
 qangle
@@ -20715,9 +20713,9 @@ quaternion
 quaternion log
 quaternion_array
 r%dc%d
-r\fp0
+r\fpP
 r\tVr.>T
-r\vp0
+r\vpP
 r_freezeparticles
 r_limit_particle_job_duration
 r_particle_max_detail_level

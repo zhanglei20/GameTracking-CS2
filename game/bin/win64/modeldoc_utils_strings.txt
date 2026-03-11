@@ -7508,6 +7508,7 @@ $prefix_element$
 2\n??9FbxDataType@fbxsdk@@QEBA_NAEBV01@@Z
 2\rU2t
 2\tV_isnand
+2\vp4
 2_BONE_IK
 3 FB
 37>k
@@ -16588,7 +16589,6 @@ owM&
 owner dead
 ownerlog
 owns_polymorphic_data
-p>LA
 pCheckpointName
 pDescription
 pTagName

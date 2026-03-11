@@ -563,7 +563,6 @@ _response
 _rule
 _scene_stop_time_
 _to_curve_
-aRBi
 actors
 anchor_actor_name
 animclip

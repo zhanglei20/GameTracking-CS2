@@ -465,7 +465,7 @@
 	vertical-align: center;
 	transform: translateY( -1px );
 	color: textGreyColor;
-	height: 16px;
+	height: 18px;
 	text-overflow: ellipsis;
 }
 
@@ -1230,12 +1230,11 @@
 
 .window__weapon-preview .window__weapon-preview__collection-icon
 {
-	opacity: .15;
+	opacity: .10;
 	brightness: .25;
 	padding: 20px;
 	vertical-align: center;
 	horizontal-align: center;
-	-s2-mix-blend-mode: screen;
 	z-index: 1;
 	blur: gaussian( 5, 5, 3 );
 }
@@ -1980,7 +1979,7 @@
 	horizontal-align: right;
 	vertical-align: bottom;
 	margin-right: 72px;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 	flow-children: down;
 	background-color: window-background-color;
 	width: 250px;
@@ -2133,11 +2132,16 @@
 	opacity: 1;
 }
 
-.popup-lootlist .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__item:hover .popup-lootlist__list__item__name,.popup-offers-settings .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__item:hover .popup-lootlist__list__item__name
+.popup-lootlist .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__item:hover:not(:disabled) .popup-lootlist__list__item__name,.popup-offers-settings .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__item:hover:not(:disabled) .popup-lootlist__list__item__name
 {
 	border: 1px solid rgba(111, 129, 139, 0.25);
 	brightness: 2;
 	box-shadow: hollow #00000067 0px 0px 6px 1px;
+}
+
+.popup-lootlist .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__item:disabled .popup-lootlist__list__item__name,.popup-offers-settings .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__item:disabled .popup-lootlist__list__item__name
+{
+	opacity: .20;
 }
 
 .popup-lootlist .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__section__progress,.popup-offers-settings .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__section__progress
@@ -2178,5 +2182,10 @@
 .popup-lootlist .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__section__btn:disabled,.popup-offers-settings .popup-lootlist__list .popup-lootlist__list__section_items .popup-lootlist__list__section__btn:disabled
 {
 	opacity: .20;
+}
+
+.laptop-wash-color-unusual
+{
+	wash-color: color-rarity-unusual;
 }
 

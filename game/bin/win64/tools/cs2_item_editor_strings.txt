@@ -14,10 +14,12 @@
  (%d remaining)...
  (08@HPX`hpx
  (08@HPX`j0k
- (08@HPXb 
+ (08@HPXb0
  (08@HPZ0k
+ (08@HR0
+ (08@J0
  (08@J0k
- (0X`hpz 
+ (0X`hpz0
  (Boosted +1)
  (repeat)
  - IsCheckedOut: %s\n
@@ -444,21 +446,28 @@ $schemasystem/schema_enable_defines.h
 (#Player_DisconnectReason_InputAutomation
 ((6"8(:,<*>
 (0`hpx
-(14X
-(5KX
-(9WX
-(9bX
+(1FY
+(1aY
+(1eY
+(1kY
+(5KY
+(5OY
+(5lY
+(5wY
+(A2Y
+(A6Y
 (Documents Filter - Use | for OR, space for AND)
+(ErY
 (Filter)
-(I8X
-(M6X
+(MGY
+(MXY
+(MZY
+(MmY
+(MyY
 (No Active Session)
 (Outliner Filter)
-(QEX
-(QIX
-(QgX
-(QxX
-(UjX
+(QLY
+(UNY
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -608,21 +617,23 @@ $schemasystem/schema_enable_defines.h
 (\v2\v.CMsgVector
 (\v2\v.CMsg_CVars:
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(a7X
-(aAX
+(aUY
+(avY
 (default)
-(e3X
-(eBX
-(eMX
-(i4X
-(ilX
-(iwX
-(m2X
+(ecY
+(i4Y
+(itY
+(m0Y
+(m1Y
+(mQY
+(mnY
+(mpY
+(mxY
 (null)
-(qTX
-(qnX
-(uHX
-(uaX
+(u3Y
+(uVY
+(y2Y
+(yFY
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )#GameUI_Disconnect_PureServer_ClientExtra
 )#GameUI_Disconnect_RemoteProblem_BadCrypt
@@ -752,6 +763,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_ChildModelName@?1??GetAttributeTable_Impl@CompositeMaterialEditorPoint_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_ChooseTeam@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_CollectionPaintKits@?1??GetAttributeTable_CCS2EconNode_Collection@CCS2EconNode_Collection@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_CollectionUnusual@?1??GetAttributeTable_CCS2EconNode_Collection@CCS2EconNode_Collection@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Color@?1??GetAttributeTable_CCS2EconNode_Color@CCS2EconNode_Color@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_ColorName@?1??GetAttributeTable_CCS2EconNode_Rarity@CCS2EconNode_Rarity@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_DeathCam@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -831,6 +843,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_PaintKits@?1??GetAttributeTable_CCS2EconNode_DiscreteLootList@CCS2EconNode_DiscreteLootList@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_PaintKits@?1??GetAttributeTable_CCS2EconNode_DiscreteSet@CCS2EconNode_DiscreteSet@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_PaintKits@?1??GetAttributeTable_CCaseUnusualContents@CCaseUnusualContents@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_PaintKits@?1??GetAttributeTable_CCollectionUnusualContents@CCollectionUnusualContents@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_PaintKits@?1??GetAttributeTable_CUnusualLootListContents@CUnusualLootListContents@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_PreGenerationKVs@?1??GetAttributeTable_Impl@CompositeMaterial_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Rarity@?1??GetAttributeTable_CCS2EconNode_KeychainKit@CCS2EconNode_KeychainKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -858,7 +871,9 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_TargetKVs@?1??GetAttributeTable_Impl@CompositeMaterial_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Timing@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_UnusualContents@?1??GetAttributeTable_CCaseUnusual@CCaseUnusual@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_UnusualContents@?1??GetAttributeTable_CCollectionUnusual@CCollectionUnusual@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_UnusualName@?1??GetAttributeTable_CCaseUnusual@CCaseUnusual@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_UnusualName@?1??GetAttributeTable_CCollectionUnusual@CCollectionUnusual@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Weapon@?1??GetAttributeTable_CCasePaintKit@CCasePaintKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Weapon@?1??GetAttributeTable_CCollectionPaintKit@CCollectionPaintKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Weapon@?1??GetAttributeTable_CDiscreteLootList_PaintKit@CDiscreteLootList_PaintKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -888,6 +903,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_bIncludeStatTrak@?1??GetAttributeTable_CCS2EconNode_MusicKitBox@CCS2EconNode_MusicKitBox@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bIncludeStatTrakCoupon@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bIncludeUnpainted@?1??GetAttributeTable_CCS2EconNode_UnusualLootList@CCS2EconNode_UnusualLootList@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bIncludeUnusual@?1??GetAttributeTable_CCS2EconNode_Collection@CCS2EconNode_Collection@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bIsScratchTarget@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPassWhenTrue@?1??GetAttributeTable_Impl@CompMatMutatorCondition_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPassWhenTrue@?1??GetAttributeTable_Impl@CompositeMaterialMatchFilter_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -933,6 +949,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_nReservedCouponIndex@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nReservedCouponIndex@?1??GetAttributeTable_CCS2EconNode_MusicKitBox@CCS2EconNode_MusicKitBox@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nReservedCouponIndex@?1??GetAttributeTable_CCS2EconNode_StickerCapsule@CCS2EconNode_StickerCapsule@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_nReservedLootListIndex@?1??GetAttributeTable_CCS2EconNode_Collection@CCS2EconNode_Collection@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nReservedLootListIndex@?1??GetAttributeTable_CCS2EconNode_CommunityCase@CCS2EconNode_CommunityCase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nReservedLootListIndex@?1??GetAttributeTable_CCS2EconNode_MusicKitBox@CCS2EconNode_MusicKitBox@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nReservedLootListIndex@?1??GetAttributeTable_CCS2EconNode_StickerCapsule@CCS2EconNode_StickerCapsule@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1120,6 +1137,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttr@HUCompositeMaterialInputLooseVariable_t@@@@
 .?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_CaseKey@@@@
 .?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_Coin@@@@
+.?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_Collection@@@@
 .?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_CommunityCase@@@@
 .?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_KeychainKit@@@@
 .?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_MusicKit@@@@
@@ -1175,6 +1193,8 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCCaseUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualContents@@H$0A@@@@@VCCaseUnusual@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCCaseUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualPaintKit@@H$0A@@@@@VCCaseUnusualContents@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCCollectionPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionPaintKit@@H$0A@@@@@VCCS2EconNode_Collection@@@@
+.?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCCollectionUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualContents@@H$0A@@@@@VCCollectionUnusual@@@@
+.?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCCollectionUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualPaintKit@@H$0A@@@@@VCCollectionUnusualContents@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCDiscreteLootList_KeychainKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_KeychainKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCDiscreteLootList_PaintKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_PaintKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCDiscreteLootList_StickerKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_StickerKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@@@
@@ -1192,6 +1212,9 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttr@VCCaseUnusualContents@@VCCaseUnusual@@@@
 .?AV?$CBaseConcreteToolAttr@VCCaseUnusualPaintKit@@VCCaseUnusualContents@@@@
 .?AV?$CBaseConcreteToolAttr@VCCollectionPaintKit@@VCCS2EconNode_Collection@@@@
+.?AV?$CBaseConcreteToolAttr@VCCollectionUnusual@@VCCS2EconNode_Collection@@@@
+.?AV?$CBaseConcreteToolAttr@VCCollectionUnusualContents@@VCCollectionUnusual@@@@
+.?AV?$CBaseConcreteToolAttr@VCCollectionUnusualPaintKit@@VCCollectionUnusualContents@@@@
 .?AV?$CBaseConcreteToolAttr@VCDiscreteLootList_KeychainKit@@VCCS2EconNode_DiscreteLootList@@@@
 .?AV?$CBaseConcreteToolAttr@VCDiscreteLootList_PaintKit@@VCCS2EconNode_DiscreteLootList@@@@
 .?AV?$CBaseConcreteToolAttr@VCDiscreteLootList_StickerKit@@VCCS2EconNode_DiscreteLootList@@@@
@@ -1227,6 +1250,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCasePaintKit@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCaseUnusual@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCollectionPaintKit@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCollectionUnusual@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCDiscreteLootList_KeychainKit@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCDiscreteLootList_PaintKit@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCDiscreteLootList_StickerKit@@@@
@@ -1272,6 +1296,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttrValue@HUCompositeMaterialInputLooseVariable_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_CaseKey@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_Coin@@@@
+.?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_Collection@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_CommunityCase@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_KeychainKit@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_MusicKit@@@@
@@ -1330,6 +1355,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCasePaintKit@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCaseUnusual@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCollectionPaintKit@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCollectionUnusual@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCDiscreteLootList_KeychainKit@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCDiscreteLootList_PaintKit@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCDiscreteLootList_StickerKit@@@@
@@ -1378,6 +1404,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttr@HUCompositeMaterialInputLooseVariable_t@@X@@
 .?AV?$CConcreteToolAttr@HVCCS2EconNode_CaseKey@@X@@
 .?AV?$CConcreteToolAttr@HVCCS2EconNode_Coin@@X@@
+.?AV?$CConcreteToolAttr@HVCCS2EconNode_Collection@@X@@
 .?AV?$CConcreteToolAttr@HVCCS2EconNode_CommunityCase@@X@@
 .?AV?$CConcreteToolAttr@HVCCS2EconNode_KeychainKit@@X@@
 .?AV?$CConcreteToolAttr@HVCCS2EconNode_MusicKit@@X@@
@@ -1433,6 +1460,8 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCCaseUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualContents@@H$0A@@@@@VCCaseUnusual@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCCaseUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualPaintKit@@H$0A@@@@@VCCaseUnusualContents@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCCollectionPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionPaintKit@@H$0A@@@@@VCCS2EconNode_Collection@@X@@
+.?AV?$CConcreteToolAttr@V?$CUtlVector@VCCollectionUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualContents@@H$0A@@@@@VCCollectionUnusual@@X@@
+.?AV?$CConcreteToolAttr@V?$CUtlVector@VCCollectionUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualPaintKit@@H$0A@@@@@VCCollectionUnusualContents@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCDiscreteLootList_KeychainKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_KeychainKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCDiscreteLootList_PaintKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_PaintKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCDiscreteLootList_StickerKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_StickerKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@X@@
@@ -1450,6 +1479,9 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttr@VCCaseUnusualContents@@VCCaseUnusual@@X@@
 .?AV?$CConcreteToolAttr@VCCaseUnusualPaintKit@@VCCaseUnusualContents@@X@@
 .?AV?$CConcreteToolAttr@VCCollectionPaintKit@@VCCS2EconNode_Collection@@X@@
+.?AV?$CConcreteToolAttr@VCCollectionUnusual@@VCCS2EconNode_Collection@@X@@
+.?AV?$CConcreteToolAttr@VCCollectionUnusualContents@@VCCollectionUnusual@@X@@
+.?AV?$CConcreteToolAttr@VCCollectionUnusualPaintKit@@VCCollectionUnusualContents@@X@@
 .?AV?$CConcreteToolAttr@VCDiscreteLootList_KeychainKit@@VCCS2EconNode_DiscreteLootList@@X@@
 .?AV?$CConcreteToolAttr@VCDiscreteLootList_PaintKit@@VCCS2EconNode_DiscreteLootList@@X@@
 .?AV?$CConcreteToolAttr@VCDiscreteLootList_StickerKit@@VCCS2EconNode_DiscreteLootList@@X@@
@@ -1485,6 +1517,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCasePaintKit@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCaseUnusual@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCollectionPaintKit@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCCollectionUnusual@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCDiscreteLootList_KeychainKit@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCDiscreteLootList_PaintKit@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCDiscreteLootList_StickerKit@@X@@
@@ -1576,6 +1609,8 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCCaseUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualContents@@H$0A@@@@@VCCaseUnusual@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCCaseUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualPaintKit@@H$0A@@@@@VCCaseUnusualContents@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCCollectionPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionPaintKit@@H$0A@@@@@VCCS2EconNode_Collection@@@@
+.?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCCollectionUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualContents@@H$0A@@@@@VCCollectionUnusual@@@@
+.?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCCollectionUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualPaintKit@@H$0A@@@@@VCCollectionUnusualContents@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCDiscreteLootList_KeychainKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_KeychainKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCDiscreteLootList_PaintKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_PaintKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCDiscreteLootList_StickerKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_StickerKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@@@
@@ -1585,8 +1620,10 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCUnusualLootListPaintKit@@HV?$CUtlVectorMemory_Growable@VCUnusualLootListPaintKit@@H$0A@@@@@VCUnusualLootListContents@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCCaseKey@@VCCS2EconNode_CommunityCase@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCCaseUnusual@@VCCS2EconNode_CommunityCase@@@@
+.?AV?$CConcreteToolAttrGetForModify@VCCollectionUnusual@@VCCS2EconNode_Collection@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_CaseKey@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_Coin@@@@
+.?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_Collection@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_CommunityCase@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_KeychainKit@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_MusicKit@@@@
@@ -1631,6 +1668,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCasePaintKit@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCaseUnusual@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCollectionPaintKit@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCollectionUnusual@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCDiscreteLootList_KeychainKit@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCDiscreteLootList_PaintKit@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCDiscreteLootList_StickerKit@@@@
@@ -1687,6 +1725,9 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CDefaultToolAttrTableForStruct@VCCaseUnusualContents@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCCaseUnusualPaintKit@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCCollectionPaintKit@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCCollectionUnusual@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCCollectionUnusualContents@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCCollectionUnusualPaintKit@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCDiscreteLootList_KeychainKit@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCDiscreteLootList_PaintKit@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCDiscreteLootList_StickerKit@@@@
@@ -1799,6 +1840,8 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCCaseUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualContents@@H$0A@@@@@VCCaseUnusual@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCCaseUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualPaintKit@@H$0A@@@@@VCCaseUnusualContents@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCCollectionPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionPaintKit@@H$0A@@@@@VCCS2EconNode_Collection@@@@
+.?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCCollectionUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualContents@@H$0A@@@@@VCCollectionUnusual@@@@
+.?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCCollectionUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualPaintKit@@H$0A@@@@@VCCollectionUnusualContents@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCDiscreteLootList_KeychainKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_KeychainKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCDiscreteLootList_PaintKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_PaintKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCDiscreteLootList_StickerKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_StickerKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@@@
@@ -1808,8 +1851,10 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCUnusualLootListPaintKit@@HV?$CUtlVectorMemory_Growable@VCUnusualLootListPaintKit@@H$0A@@@@@VCUnusualLootListContents@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCCaseKey@@VCCS2EconNode_CommunityCase@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCCaseUnusual@@VCCS2EconNode_CommunityCase@@@@
+.?AV?$CToolAttrGetForModifyAccess@VCCollectionUnusual@@VCCS2EconNode_Collection@@@@
 .?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_CaseKey@@@@
 .?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_Coin@@@@
+.?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_Collection@@@@
 .?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_CommunityCase@@@@
 .?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_KeychainKit@@@@
 .?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_MusicKit@@@@
@@ -1854,6 +1899,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCasePaintKit@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCaseUnusual@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCollectionPaintKit@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCollectionUnusual@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCDiscreteLootList_KeychainKit@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCDiscreteLootList_PaintKit@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCDiscreteLootList_StickerKit@@@@
@@ -1920,6 +1966,8 @@ $schemasystem/schema_enable_defines.h
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCCaseUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualContents@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCCaseUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualPaintKit@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCCollectionPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionPaintKit@@H$0A@@@@@@@
+.?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCCollectionUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualContents@@H$0A@@@@@@@
+.?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCCollectionUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualPaintKit@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCDiscreteLootList_KeychainKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_KeychainKit@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCDiscreteLootList_PaintKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_PaintKit@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCDiscreteLootList_StickerKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_StickerKit@@H$0A@@@@@@@
@@ -1937,6 +1985,9 @@ $schemasystem/schema_enable_defines.h
 .?AV?$IToolAttrConcreteDataAccess@VCCaseUnusualContents@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCCaseUnusualPaintKit@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCCollectionPaintKit@@@@
+.?AV?$IToolAttrConcreteDataAccess@VCCollectionUnusual@@@@
+.?AV?$IToolAttrConcreteDataAccess@VCCollectionUnusualContents@@@@
+.?AV?$IToolAttrConcreteDataAccess@VCCollectionUnusualPaintKit@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCDiscreteLootList_KeychainKit@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCDiscreteLootList_PaintKit@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCDiscreteLootList_StickerKit@@@@
@@ -2107,6 +2158,8 @@ $schemasystem/schema_enable_defines.h
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCCaseUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualContents@@H$0A@@@@@VCCaseUnusual@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCCaseUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCaseUnusualPaintKit@@H$0A@@@@@VCCaseUnusualContents@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCCollectionPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionPaintKit@@H$0A@@@@@VCCS2EconNode_Collection@@X@@
+.?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCCollectionUnusualContents@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualContents@@H$0A@@@@@VCCollectionUnusual@@X@@
+.?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCCollectionUnusualPaintKit@@HV?$CUtlVectorMemory_Growable@VCCollectionUnusualPaintKit@@H$0A@@@@@VCCollectionUnusualContents@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCDiscreteLootList_KeychainKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_KeychainKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCDiscreteLootList_PaintKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_PaintKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCDiscreteLootList_StickerKit@@HV?$CUtlVectorMemory_Growable@VCDiscreteLootList_StickerKit@@H$0A@@@@@VCCS2EconNode_DiscreteLootList@@X@@
@@ -3031,7 +3084,7 @@ $schemasystem/schema_enable_defines.h
 0$2z4
 08@HP
 08@HR0k
-08@J 
+08@J0
 08B0k
 08\fj
 0:<\n\fdelta_ignore
@@ -3212,6 +3265,7 @@ $schemasystem/schema_enable_defines.h
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vp4
 2aboutToShow()
 2activated( int )
 2changed()
@@ -3283,6 +3337,8 @@ $schemasystem/schema_enable_defines.h
 5\n\vnested_type
 5\n\vtype_caches
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
+60P@
+60d@
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -3306,8 +3362,6 @@ $schemasystem/schema_enable_defines.h
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
 7\n\tenum_type
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
-81fX
-85ZW
 8@HP:
 8@J0k
 8B0k
@@ -3322,9 +3376,6 @@ $schemasystem/schema_enable_defines.h
 8\n\textension
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8]qX
-8meX
-8muW
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 9\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
@@ -5004,10 +5055,11 @@ $schemasystem/schema_enable_defines.h
 @08@HPX`hpx
 @08N
 @20k
+@6PK@
 @HPX
 @HPX&I
-@HPX`hv0
-@HdR
+@HPX`hv@p@
+@NPq@
 @\n\fSingleObject
 @\n\vserver_type
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
@@ -5087,6 +5139,7 @@ AssetBrowse( %s )
 AssetBrowse( png )
 AssetBrowse( txt )
 AssetBrowse( vmat )
+AssetBrowse( vmat, *filterProcedural:location=content )
 AssetBrowse( vmdl )
 AssetBrowse( vsnd )
 AssetBrowse( vtex )
@@ -5190,6 +5243,9 @@ CCaseUnusualContents
 CCaseUnusualPaintKit
 CClientHeaderOverwatchEvidence
 CCollectionPaintKit
+CCollectionUnusual
+CCollectionUnusualContents
+CCollectionUnusualPaintKit
 CDataGCCStrike15_v2_MatchInfo
 CDiscreteLootList_KeychainKit
 CDiscreteLootList_PaintKit
@@ -5923,7 +5979,6 @@ FocusOut
 FolderName
 FoliageAnimation
 Follow user preference
-Fpw?
 FreeEnvironmentStringsW
 FreeLibrary
 From EconItems
@@ -6006,6 +6061,7 @@ Global
 GlobalHotkeys
 GlobalStatistics
 GlobalTopLevel
+Glove
 Glove model %s (def idx %d) is missing world model key.
 Go To
 Google.Protobuf.Reflection
@@ -6086,6 +6142,7 @@ Include Price - $2.49
 Include StatTrak
 Include StatTrak Coupon
 Include Unpainted
+Include Unusual
 Including
 IndicateEditorStateModified
 Information
@@ -6582,7 +6639,7 @@ OrigMat
 Other Tools
 Outliner
 OverlayProjectionDirection
-P08@J 
+P08@J0
 P08J
 P08N
 P20k
@@ -6642,7 +6699,7 @@ Patina
 Patina Extended
 Pedestal Model
 PerVertexLighting
-Pf u?
+Pf0R@
 PgDn
 PgUp
 Physics
@@ -7452,7 +7509,7 @@ Zip system failure.\n
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n EGCItemCustomizationNotification
 \f\n?deselect@QLineEdit@@QEAAXXZ
-\fp\vPX
+\fp\vPh
 \n CMsgItemAcknowledged__DEPRECATED
 \n CSVCMsg_GameSessionConfiguration
 \n google/protobuf/descriptor.proto
@@ -7557,7 +7614,6 @@ Zip system failure.\n
 \nInvalid item name '%1'.\n\n%2\n
 \nNo modified item assets. Nothing to save.\n
 \nOpened By: 
-\nQZW
 \nS?moveTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 \nThis assigns a permanent Schema reservation with the GC required for shipping.\n\nAre you sure?\n
 \nThis will delete '%1' from the tree.\n\nAre you sure?\n
@@ -7994,7 +8050,6 @@ Zip system failure.\n
 \r\n\tTYPE_BOOL
 \r\n\tTYPE_ENUM
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
-\rtext
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?alpha@QColor@@QEBAHXZ
 \t?alphaF@QColor@@QEBANXZ
@@ -8133,7 +8188,6 @@ _toolsautosave
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 `adjustor{
 `anonymous namespace'
-`awY
 `b0k
 `copy constructor closure'
 `d0k
@@ -8451,6 +8505,7 @@ coclass
 coin_
 cointerface 
 collection_item_id
+collection_unusual
 collision_property
 collisionmesh
 color%i
@@ -8807,6 +8862,7 @@ force_gc_to_generate
 force_output_description
 foreground
 forever
+fpt@
 fractionrounds
 free_trial_account
 friendly_name
@@ -8909,6 +8965,7 @@ gift__potential_targets
 gifts
 global
 gloves
+gloves/paints
 google.protobuf"G\n
 graffiti
 graffiti_tints
@@ -8968,7 +9025,8 @@ host_computationtime
 host_frame_dropped_pct_x10
 host_unfiltered_frametime
 hours
-hpz 
+hpz0
+hq7Y
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
 iValueIn
 i\f?forward@QTextBrowser@@UEAAXXZ
@@ -9004,6 +9062,7 @@ in_use
 inappropriate io control operation
 include
 include_unpainted
+include_unusual_lootlist
 index
 inherit_attr
 initial_inventory
@@ -9473,6 +9532,7 @@ m_CaseUnusual
 m_ChooseTeam
 m_CollectionPaintKits
 m_CollectionPaintKits/%d/m_Name
+m_CollectionUnusual
 m_Context
 m_DeathCam
 m_DescriptionTag
@@ -9551,6 +9611,7 @@ m_bIncludePrice
 m_bIncludeStatTrak
 m_bIncludeStatTrakCoupon
 m_bIncludeUnpainted
+m_bIncludeUnusual
 m_bIsNotMatchedToMaterial
 m_bNoShadow
 m_bOnlyShadow
@@ -9688,7 +9749,6 @@ my_current_event_stages
 my_current_event_teams
 my_current_team
 n03>Pu
-n0x?
 nBuildError
 nCentralDirectoryEntries_ThisDisk
 nCentralDirectoryEntries_Total
@@ -9818,17 +9878,15 @@ owner dead
 owner_only
 owns_polymorphic_data
 p08@H^
-p0jp
 p0p@
 p20k
-p6`t?
+p6pQ@
 p@HPX`h\f
 pButton
 pCurrentFocusWidget
 pData
 pEvent
 pFilter
-pFpw?
 pPrevFocusWidget
 pResultKV
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
@@ -10246,6 +10304,7 @@ special
 spectators_count
 spectators_count_lnk
 spectators_count_tv
+sporty_gloves
 spray
 spray0
 spray_

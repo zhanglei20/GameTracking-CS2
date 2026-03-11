@@ -1620,7 +1620,7 @@ RadioButton.content-navbar__tabs__btn--small Label
 	visibility: collapse;
 }
 
-.MainMenuRootPanel--PauseMenuMode .PauseMenuModeOnly
+.MainMenuRootPanel--PauseMenuMode .PauseMenuModeOnly:not(.hide-non-prime)
 {
 	visibility: visible;
 }

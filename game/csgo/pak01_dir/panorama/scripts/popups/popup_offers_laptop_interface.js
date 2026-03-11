@@ -755,6 +755,10 @@ var CollectionOffers;
                     m_elScreen.FindChildInLayoutFile('id-weapon-wear-rating-pointer').style.transform = 'translateX(100%) translateY(3px) scaleY(-1);';
                     m_elScreen.FindChildInLayoutFile('id-chat-messages-bg').SetHasClass('show', false);
                     OffersLaptop.LaptopSoundPlayOnce('UI.Laptop.Drop.Discarded');
+                    const elModel = m_elScreen.FindChildInLayoutFile('id-offer-preview-panel');
+                    if (elModel) {
+                        elModel.DeleteAsync(.25);
+                    }
                     _MakeMessage(systemUserRejectOffer);
                     _MakeMessage(dealerNextOffer);
                 }
@@ -809,13 +813,19 @@ var CollectionOffers;
         let cameraSuffix = cameraData !== undefined ? cameraData.camera : '0';
         let camera = 'camera_' + OfferItemData.itemType + '_' + cameraSuffix;
         let elModel = m_elScreen.FindChildInLayoutFile('id-offer-preview-panel');
+        let slot = InventoryAPI.GetDefaultSlot(OfferItemData.itemId);
+        let rotationDeg = slot === 'clothing_hands' ? 0 : 360;
+        let rotationXAmount = slot === 'clothing_hands' ? 0 : 30;
+        let rotationYAmount = slot === 'clothing_hands' ? 0 : 20;
+        let rotationPeriod = slot === 'clothing_hands' ? 0 : 16;
         if (!elModel) {
-            elModel = _MakeMapItemPreviewPanel("ui/xpshop_item");
-            elModel.SetRotationLimits(360, 360);
-            elModel.SetAutoRotateAmount(30, 20);
-            elModel.SetAutoRotatePeriod(16, 16);
+            elModel = _MakeMapItemPreviewPanel("ui/xpshop_item", !(slot === 'clothing_hands'));
             m_elScreen.defaultfocus = 'id-offer-preview-panel';
         }
+        m_elScreen.FindChildInLayoutFile('id-offer-camera-hints').visible = !(slot === 'clothing_hands');
+        elModel.SetRotationLimits(rotationDeg, rotationDeg);
+        elModel.SetAutoRotateAmount(rotationXAmount, rotationYAmount);
+        elModel.SetAutoRotatePeriod(rotationPeriod, rotationPeriod);
         elModel.SetActiveItem(0);
         elModel.SetItemItemId(OfferItemData.itemId, '');
         elModel.SetCamera(camera);
@@ -889,7 +899,7 @@ var CollectionOffers;
                 break;
         }
     }
-    function _MakeMapItemPreviewPanel(mapName) {
+    function _MakeMapItemPreviewPanel(mapName, isGloves) {
         return $.CreatePanel('MapItemPreviewPanel', m_elScreen.FindChildInLayoutFile('id-offer-preview-panel-container'), 'id-offer-preview-panel', {
             class: 'window__offer__preview-panel',
             "require-composition-layer": "true",
@@ -908,7 +918,7 @@ var CollectionOffers;
             auto_rotate_period_x: "0",
             auto_rotate_period_y: "0",
             auto_recenter: true,
-            panzoom_enabled: true,
+            panzoom_enabled: isGloves,
             tabindex: "auto",
             selectionpos: "auto",
             hittest: "true",
@@ -982,9 +992,10 @@ var CollectionOffers;
             if (!elItem) {
                 elItem = $.CreatePanel("Panel", raritySection, itemId);
                 elItem.BLoadLayoutSnippet('offer-collection-item');
-                _SetRarityColor(elItem, InventoryAPI.GetItemRarityColor(itemId));
+                _SetRarityColor(elItem, (rarityNum === 0) ? '#ffd700' : InventoryAPI.GetItemRarityColor(itemId));
             }
-            const bSeenInHistoricData = (oHistoricData && oHistoricData.faux_itemid.includes(itemId)) ? true : false;
+            const iidCheckHistoricData = (rarityNum === 0) ? InventoryAPI.GetFauxItemIDFromDefAndPaintIndexUB1(m_defidxContainerItem, 1, 3) : itemId;
+            const bSeenInHistoricData = (oHistoricData && oHistoricData.faux_itemid.includes(iidCheckHistoricData)) ? true : false;
             if (m_initialDotsUpdateFinished && !elItem.BHasClass('seen') && bSeenInHistoricData) {
                 elItem.SetHasClass('seen-anim', bSeenInHistoricData);
             }
@@ -1027,18 +1038,21 @@ var CollectionOffers;
                     $.DispatchEvent("LootlistItemPreview", itemId, InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(m_defidxContainerItem, 0) +
                         ',' + '');
                 });
+                elItem.enabled = rarityNum !== 0;
             }
-            const bSeenInHistoricData = (oHistoricData && oHistoricData.faux_itemid.includes(itemId)) ? true : false;
+            const iidCheckHistoricData = (rarityNum === 0) ? InventoryAPI.GetFauxItemIDFromDefAndPaintIndexUB1(m_defidxContainerItem, 1, 3) : itemId;
+            const bSeenInHistoricData = (oHistoricData && oHistoricData.faux_itemid.includes(iidCheckHistoricData)) ? true : false;
             elItem.SetHasClass('seen', bSeenInHistoricData);
             if (bSeenInHistoricData) {
                 raritySection.SetDialogVariableInt('seen', ++itemsSeenInRarityTier);
             }
             raritySection.SetDialogVariableInt('total', ++itemsInRarityTier);
-            _SetRarityColor(elItem.FindChildInLayoutFile('id-lootlist-xp-rarity'), InventoryAPI.GetItemRarityColor(itemId));
-            elItem.SetDialogVariable('loot-name', InventoryAPI.GetItemName(itemId));
+            _SetRarityColor(elItem.FindChildInLayoutFile('id-lootlist-xp-rarity'), (rarityNum === 0) ? '#ffd700' : InventoryAPI.GetItemRarityColor(itemId));
+            elItem.SetDialogVariable('loot-name', (rarityNum === 0) ? $.Localize(InventoryAPI.GetLootListUnusualItemName(m_idContainerItem)) : InventoryAPI.GetItemName(itemId));
             let btn = raritySection.FindChildInLayoutFile('id-lootlist-xp-claim');
             if (btn) {
-                const bClaimed = (oClaimedData && oClaimedData.reward.includes(rarityNum)) ? true : false;
+                const iClaimRewardID = (rarityNum === 0) ? 99 : rarityNum;
+                const bClaimed = (oClaimedData && oClaimedData.reward.includes(iClaimRewardID)) ? true : false;
                 const bAllowClaimingXP = !bClaimed && (itemsSeenInRarityTier == itemsInRarityTier);
                 btn.enabled = bAllowClaimingXP && (itemsSeenInRarityTier == itemsInRarityTier);
                 btn.text = $.Localize(bClaimed ? '#popup_lootlist_claim_ok' : '#popup_lootlist_claim_xp', btn);
@@ -1062,7 +1076,7 @@ var CollectionOffers;
                     if (m_tmsExpectingXpGrantNotification && (Date.now() - m_tmsExpectingXpGrantNotification < 1500))
                         return;
                     m_tmsExpectingXpGrantNotification = Date.now();
-                    InventoryAPI.ClaimVolatileReward(m_defidxContainerItem, rarityNum);
+                    InventoryAPI.ClaimVolatileReward(m_defidxContainerItem, iClaimRewardID);
                     btn.enabled = false;
                     btn.text = $.Localize('#popup_lootlist_claim_ww', btn);
                 });

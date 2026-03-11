@@ -8361,7 +8361,8 @@ $prefix_element$
 2\rU2t
 2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpD
+2\vp0
+2\vpd
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -15095,10 +15096,11 @@ RMouseDoubleClick
 ROTATION
 RSDS
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpD
+R\fpd
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\tV_powf
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+R\vp0
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Rad2 Deg
 Radial Basis Function Type
@@ -19635,7 +19637,7 @@ quadratic
 quaternion_array
 quiet
 r\tVr.>T
-r\vpD
+r\vpd
 r_renderdoc_capture_thumbnail_rendering
 rad2deg
 radius0_key

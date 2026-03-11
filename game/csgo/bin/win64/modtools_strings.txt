@@ -28,10 +28,10 @@
  (%u = 0x%x)\n
  (08@HPX`hpx
  (08@HPX`j
- (08@HPXb@H
+ (08@HPXb I
  (08@HPZ
- (08@HR@H
- (0X`hpz@H
+ (08@HR I
+ (0X`hpz I
  (deprecated)
  * Adding Bone :: < %10.4f %10.4f %10.4f >\n
  - (Additive)
@@ -8986,16 +8986,16 @@ $schemasystem/schema_enable_defines.h
 0.01 5.0
 08@HP
 08@HR
-08@J@H
+08@J I
 08\fj
 0:<\n\fdelta_ignore
+0>M8
 0E>X
-0H4v
+0PBr
 0T.Q
 0X8b?~
 0\r%0t
 0iN>/
-0v (v
 1#IND
 1#INF
 1#QNAN
@@ -9044,7 +9044,6 @@ $schemasystem/schema_enable_defines.h
 8&Kx
 8@HP:
 8Csinf
-8F0\r
 8\n\textension
 8ke?;
 9>70
@@ -9228,7 +9227,7 @@ $schemasystem/schema_enable_defines.h
 @%s_lookFrame_1
 @%s_lookFrame_2
 @08@HPX`hpx
-@08N (v
+@08N
 @HPX
 @HPX&I
 @HPX`hv
@@ -12780,14 +12779,13 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P08@J@H
-P08J
-P08N (v
-P2@H
+P08@J I
+P08JpI
+P08N
+P2 I
 P@HPX`hpx\f
 PARENT
 PF\n%d %d\n-1.000000\n
-PH4v
 POINT
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
@@ -13096,7 +13094,6 @@ RSDS2
 R\tV_powf
 R\v0!F
 R\vp!y
-R\vpH4v
 Radial Basis Function Type
 Radius Params CP ( Prop Group Smallest Radius / Prop Group Largest Radius / Number of Avg Objects )
 Radius of surface sample ray traces.
@@ -14266,12 +14263,10 @@ Zpm"U
 \fV0U
 \fV4U
 \f\tV_expd
-\fp\vPT
 \n CSVCMsg_GameSessionConfiguration
 \n google/protobuf/descriptor.proto
 \n)NETWORK_DISCONNECT_KICKED_INPUTAUTOMATION
 \nIHDRPLTEIDATIENDtRNScHRMgAMAiCCPsBITsRGBtEXtzTXtiTXtbKGDhISTpHYssPLTtIMEoFFseXIf
-\nPH4v
 \n[ERR] Not enough memory, shop for some more RAM. See you!\n
 \n\fCNETMsg_Tick
 \n\fFieldOptions
@@ -14386,7 +14381,6 @@ Zpm"U
 \tg_pThreadPool
 \tkE>fvw
 \vA03>A|
-\vpH4v
 ]\n,NETWORK_DISCONNECT_REJECT_INVALIDRESERVATION
 ^<V7w
 ^RfN>
@@ -14463,9 +14457,7 @@ _temp_tangent
 _volumeatlas_
 _wjb
 _zero
-`H4v
 `RTTI
-`\rP\f0H4v
 `\tV_sinf
 `anonymous namespace'
 `copy constructor closure'
@@ -14504,7 +14496,6 @@ _zero
 `vftable'
 `virtual displacement map'
 a6>r
-aBv (v
 abcdefghijklmnopqrstuvwxyz
 absolute
 acceleration
@@ -15298,7 +15289,7 @@ host unreachable
 host_computationtime
 host_frame_dropped_pct_x10
 host_unfiltered_frametime
-hpz@H
+hpz I
 hullIvr-0.obj
 hullIvr-1.obj
 hullIvr-2.obj
@@ -16011,12 +16002,12 @@ overwrite_existing_flags_only
 owM&
 owner dead
 owns_polymorphic_data
-p08@H^ (v
+p08@H^
+p0jp\n
 p0p@
-p2@H
+p2 I
 p@HPX`h\f
 pEvent != nullptr
-pH4v
 pParentTrack != nullptr
 pPose != nullptr
 p\r0\fP
@@ -16094,7 +16085,6 @@ plane
 plastic
 plasticity
 players_networkids
-pn (v
 point
 point0_key
 point1_key
@@ -16168,7 +16158,6 @@ qS>g?h3
 quad_bend_tolerance
 quadratic
 r>Effector: %s
-r\fpH4v
 r\tVr.>T
 radius0_key
 radius1_key

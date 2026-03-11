@@ -15000,12 +15000,13 @@ $worldspacetype
 0:<\n\fdelta_ignore
 0;Q5[
 0<cz
-0>97I
 0E>X
 0M2~@p
 0T.Q
+0TiG
 0W/5
 0X8b?~
+0Xq<
 0Z@q
 0\f504P
 0\f?focusOutEvent@QGraphicsView@@MEAAXPEAVQFocusEvent@@@Z
@@ -15015,6 +15016,8 @@ $worldspacetype
 0iN>/
 0pp@5tqE?|sO541
 0tU+xc:
+0tc<
+0vLW<
 0x%1
 0x%llx
 0x%p = %s '%s'
@@ -15857,6 +15860,8 @@ $worldspacetype
 2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
 2\vp!J
+2\vpTiG
+2\vpXq<
 2^pV
 2_BONE_IK
 2a"l
@@ -16081,6 +16086,8 @@ $worldspacetype
 6l13
 6lkc
 6myY;
+6p"I
+6p\tI
 6qo~
 6r-m_v
 6r1ij
@@ -19012,7 +19019,7 @@ $worldspacetype
 @%s_lookFrame_1
 @%s_lookFrame_2
 @08@HPX`hpx
-@08N
+@08NLW<
 @0pp
 @BH]f
 @HPX
@@ -19032,6 +19039,7 @@ $worldspacetype
 @fff>fff>fff>fff>
 @i1V
 @n2w
+@nLW<
 @spawn
 @unnamed_%d
 A 0 to 1 parameter value of the path at which the camera frustum will be drawn when the camera path is selected. Adjusting this will update the time.
@@ -30467,7 +30475,7 @@ P-384
 P-521
 P08@J
 P08J 
-P08N
+P08NLW<
 P1\t98"
 P4CopyFile
 P4CopyFile: Couldn't copy "%s" to "%s"\n
@@ -30661,7 +30669,6 @@ PKEY_RSA_VERIFYRECOVER
 PKEY_SET_TYPE
 PKEY_USAGE_PERIOD
 PKIX
-PLM<
 PLUG_TYPE_INPUT
 PLUG_TYPE_OUTPUT
 PLUG_TYPE_RELAY_OMNIDIRECTIONAL_LEGACY
@@ -31358,6 +31365,7 @@ Proxy Instance
 Proxy Name
 Proxy Target Cylce
 Prune pieces < error threshold
+Ptc<
 Public Key
 Public-Key
 Public-Key: (%d bit)\n
@@ -31747,12 +31755,15 @@ RSA_verify_PKCS1_PSS_mgf1
 RSDS
 RT60 for low, mid, and high frequency bands for the probe.
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fpXq<
 R\n?background@QPainter@@QEBAAEBVQBrush@@XZ
 R\r1>Vp
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\tV_powf
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R\vp!6
+R\vpTiG
+R\vptc<
 R]Di
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Rad2 Deg
@@ -36895,6 +36906,7 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
+\fp\v`TiG
 \ful2
 \fy&3Gl
 \game
@@ -36989,6 +37001,7 @@ Z~wl
 \nIHDRPLTEIDATIENDtRNScHRMgAMAiCCPsBITsRGBtEXtzTXtiTXtbKGDhISTpHYssPLTtIMEoFFseXIf
 \nIf the map is built without these entities it will not function correctly in game.\nContinue with build anyway?
 \nNo game entities will be available for creation.\n
+\nPtc<
 \nRead only files which will NOT be saved:\n
 \nS?moveTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 \nThe following required entities are missing:
@@ -37080,7 +37093,6 @@ Z~wl
 \prefabs
 \prefabs\
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
-\r0H6
 \r?AddChild@FbxNode@fbxsdk@@QEAA_NPEAV12@@Z
 \r?AddMaterial@FbxNode@fbxsdk@@QEAAHPEAVFbxSurfaceMaterial@2@@Z
 \r?AddNodeAttribute@FbxNode@fbxsdk@@QEAA_NPEAVFbxNodeAttribute@2@PEAVFbxStatus@2@@Z
@@ -37311,6 +37323,8 @@ Z~wl
 \v\vTSG
 \vj0k
 \vjC7
+\vpXq<
+\vptc<
 ]1h=bfz
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
@@ -37538,6 +37552,7 @@ _}eOk
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
+`fLW<
 `fPw.\vM
 `generic-class-parameter-
 `generic-method-parameter-
@@ -37552,6 +37567,7 @@ _}eOk
 `managed vector constructor iterator'
 `managed vector copy constructor iterator'
 `managed vector destructor iterator'
+`nLW<
 `non-type-template-parameter
 `o_je
 `omni callsig'
@@ -37599,6 +37615,7 @@ a?worldTransform@QPainter@@QEBAAEBVQTransform@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a@XZ
 aA0k
+aBvLW<
 aD/x
 aDSS
 aECDH
@@ -39253,7 +39270,6 @@ cylinder
 cz>Sp
 d e not congruent to 1
 d"?validate@QDoubleSpinBox@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
-d(0`K
 d.allOrFirstTier
 d.authenticatedData
 d.certificate
@@ -40265,9 +40281,12 @@ f%wyLmX:
 f&dy
 f1cK%
 f45\r
+f?7I
 fBB\fy
 fC\tc
 fD>b
+fK7I
+fLW<
 fL\ri
 fP;y
 fSelectionOverlayAlpha
@@ -43982,6 +44001,7 @@ nHandleSize
 nInstanceIndex
 nItemIndex
 nKillPriority
+nLW<
 nLayoffState
 nLevel
 nLodLevel
@@ -43998,6 +44018,8 @@ nNumerator
 nOption
 nOptionIndex
 nOriginSpace
+nP!I
+nP\rI
 nPathSpace
 nPickMode
 nPlacementMode
@@ -44591,7 +44613,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
+p08@H^LW<
 p0j 
 p0p@
 p2{l
@@ -44600,7 +44622,8 @@ p4Z3
 p5Z3
 p5\nL,
 p618
-p>e6I
+p6P\vI
+p>LW<
 p@0pqE5tsO?|1
 p@HPX`h\f
 pAction
@@ -44620,7 +44643,6 @@ pEvent
 pFilter
 pG_*h
 pIp 
-pLM<
 pLightRigButton
 pMapNode
 pMaterialGroupName
@@ -44639,6 +44661,7 @@ pSourceFunc
 pSpecified
 pTagName
 pTargetName
+pTiG
 pToolButton
 pToolsVisModeButton
 pTraceResult
@@ -44646,6 +44669,7 @@ pU>\AL
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
 pWidget
 pWindow
+pXq<
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\r0\fP
 p\tV_strlower_fast
@@ -44911,6 +44935,7 @@ players_networkids
 plugId0
 plugId1
 plugTypes
+pnLW<
 point
 point arithmetic failure
 point at infinity
@@ -45154,6 +45179,7 @@ pseudonym
 psk identity not found
 psk no client cb
 psk no server cb
+ptc<
 pub: 
 pub_key
 pubkey
@@ -45246,9 +45272,11 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
+r\fptc<
 r\n?dragLeaveEvent@QGraphicsItem@@MEAAXPEAVQGraphicsSceneDragDropEvent@@@Z
 r\tVr.>T
 r\vDi
+r\vpXq<
 r_dota_wind_min_high_freq_strength
 rad2deg
 radius0_key
@@ -47700,6 +47728,7 @@ vEnd
 vF'l
 vForward
 vHandleOffset
+vLW<
 vModelScale
 vOrigin
 vPathOffset

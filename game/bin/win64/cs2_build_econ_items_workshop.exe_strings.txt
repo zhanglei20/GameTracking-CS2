@@ -142,7 +142,6 @@
 /src/
 0iN>/
 11Y@
-2\vp0
 37>k
 3>N;kU
 3>fvw
@@ -596,8 +595,6 @@ PostProcessingSystem_001
 PropertyEditorSystem_001
 QueryPerformanceCounter
 RSDSUZu
-R\fp0
-R\vp0
 RaiseException
 RegisterConCommand: Unknown error registering con command "%s"!\n
 RegisterConVar: Unknown error registering convar "%s"!\n
@@ -784,6 +781,7 @@ _CaseHardening
 _CustomPaintJob
 _CustomPaintJobExtended
 _FIXME_
+_Glove
 _Gunsmith
 _GunsmithCaseHardening
 _GunsmithExtended
@@ -1003,7 +1001,6 @@ publish_data
 publish_data.txt
 purecall
 r\tVr.>T
-r\vp0
 range check failure
 read only file system
 reserved_item_index

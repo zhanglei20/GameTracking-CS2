@@ -6909,6 +6909,9 @@ r_character_decal_resolution 1024 (min: 256, developmentonly defensive)
 r_cs2_show_icon_editor false (developmentonly clientdll replicated cheat menubar_item)
 	CSGO/Icon Editor
 
+r_csgo_barnlight_shadow_scale_preview 4 (developmentonly clientdll)
+	<no description>
+
 r_csgo_bloom_threshold_all_samples true (developmentonly clientdll)
 	Execute bloom threshold once per sample during downsample (default enabled, higher quality, less bloom aliasing)
 
@@ -6929,6 +6932,12 @@ r_csgo_cmaa_extra_sharp false (developmentonly clientdll defensive)
 
 r_csgo_cmaa_quality 3 (developmentonly clientdll defensive)
 	0=low, 1=medium, 2=high, 3=ultra
+
+r_csgo_csm_max_visible_distance 7500 (developmentonly clientdll)
+	<no description>
+
+r_csgo_csm_max_visible_distance_preview 2000 (developmentonly clientdll)
+	<no description>
 
 r_csgo_csm_override_staticgeo_cascades_alphatest false (developmentonly clientdll defensive)
 	If lb_csm_override_staticgeo_cascades true, ensure objects with SCENEOBJECTFLAG_ALPHA_TESTED flag will be rendered into cascade.

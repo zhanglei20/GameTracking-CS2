@@ -1044,6 +1044,7 @@ ms_6_5
 nBatchIndices <= 16384
 nBatchIndices <= nMaxIndexCountPerPass
 normalize_safe
+p<Ha
 panorama/fonts
 panorama_text_pango
 postprocessingsystem.cpp

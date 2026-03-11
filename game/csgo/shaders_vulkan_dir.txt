@@ -36,6 +36,11 @@ shaders/vfx/csgo_copy_rt.ini CRC:0000000000 size:0
 shaders/vfx/csgo_copy_rt_vulkan_50_features.vcs CRC:009a66f931 size:1634
 shaders/vfx/csgo_copy_rt_vulkan_50_ps.vcs CRC:006f657be0 size:2105
 shaders/vfx/csgo_copy_rt_vulkan_50_vs.vcs CRC:009432e997 size:1985
+shaders/vfx/csgo_customglove_preview.ini CRC:0000000000 size:0
+shaders/vfx/csgo_customglove_preview_vulkan_50_features.vcs CRC:00c7db69f6 size:9746
+shaders/vfx/csgo_customglove_preview_vulkan_50_ps.vcs CRC:009d2b1f6c size:162696
+shaders/vfx/csgo_customglove_preview_vulkan_50_psrs.vcs CRC:00e13b55a4 size:1874
+shaders/vfx/csgo_customglove_preview_vulkan_50_vs.vcs CRC:00f3a807d6 size:11681
 shaders/vfx/csgo_dronecam.ini CRC:0000000000 size:0
 shaders/vfx/csgo_dronecam_vulkan_50_features.vcs CRC:009ad1f0fe size:1778
 shaders/vfx/csgo_dronecam_vulkan_50_ps.vcs CRC:0043515d6c size:2911
@@ -135,10 +140,10 @@ shaders/vfx/csgo_static_overlay_vulkan_50_ps.vcs CRC:0034705f98 size:915991
 shaders/vfx/csgo_static_overlay_vulkan_50_psrs.vcs CRC:002062ae91 size:2610
 shaders/vfx/csgo_static_overlay_vulkan_50_vs.vcs CRC:006f4cd86b size:145885
 shaders/vfx/csgo_textile_layer.ini CRC:0000000000 size:0
-shaders/vfx/csgo_textile_layer_vulkan_50_features.vcs CRC:0091cec7fc size:5026
-shaders/vfx/csgo_textile_layer_vulkan_50_ps.vcs CRC:0089db9369 size:72049
-shaders/vfx/csgo_textile_layer_vulkan_50_psrs.vcs CRC:003c5075b7 size:1858
-shaders/vfx/csgo_textile_layer_vulkan_50_vs.vcs CRC:0092c87c0a size:8746
+shaders/vfx/csgo_textile_layer_vulkan_50_features.vcs CRC:0020b671d3 size:7250
+shaders/vfx/csgo_textile_layer_vulkan_50_ps.vcs CRC:0060ef0bf8 size:128240
+shaders/vfx/csgo_textile_layer_vulkan_50_psrs.vcs CRC:00e15633e2 size:1858
+shaders/vfx/csgo_textile_layer_vulkan_50_vs.vcs CRC:0062bb13c6 size:9860
 shaders/vfx/csgo_ui_texture_attribute.ini CRC:0000000000 size:0
 shaders/vfx/csgo_ui_texture_attribute_vulkan_50_features.vcs CRC:004419e54c size:1602
 shaders/vfx/csgo_ui_texture_attribute_vulkan_50_ps.vcs CRC:008a5b0ff8 size:1966

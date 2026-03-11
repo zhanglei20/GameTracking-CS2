@@ -188,6 +188,7 @@ WARNING: resource '%s' is an unrecognized resource type!\n
 [% 5ims alloc] [% 5ims async] [% 5ims final] [% 5i / %10s] TOTAL\n
 [% 5ims cb] [% 5ims async cb] [% 5i / %10s] %s\n
 [% 5ims cb] [% 5ims async cb] [% 5i / %10s] TOTAL\n
+[TH8Z
 [refcount % 4d]
 \t\t[ FAIL ] - Manifest contains an illegal resource name "%s"!\n
 ___error_resource__
