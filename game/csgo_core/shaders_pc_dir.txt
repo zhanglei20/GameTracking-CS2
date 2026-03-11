@@ -26,9 +26,9 @@ shaders/vfx/csgo_composite_inputs_pc_50_features.vcs CRC:001d70309e size:2642
 shaders/vfx/csgo_composite_inputs_pc_50_ps.vcs CRC:00a6b307f8 size:7014
 shaders/vfx/csgo_composite_inputs_pc_50_vs.vcs CRC:00cdae4334 size:2015
 shaders/vfx/csgo_customglove.ini CRC:0000000000 size:0
-shaders/vfx/csgo_customglove_pc_50_features.vcs CRC:00eb36b70f size:5778
-shaders/vfx/csgo_customglove_pc_50_ps.vcs CRC:0095c8a00e size:16564
-shaders/vfx/csgo_customglove_pc_50_vs.vcs CRC:0033c87add size:1902
+shaders/vfx/csgo_customglove_pc_50_features.vcs CRC:00aaeecacf size:11538
+shaders/vfx/csgo_customglove_pc_50_ps.vcs CRC:0065f50794 size:38537
+shaders/vfx/csgo_customglove_pc_50_vs.vcs CRC:00c9ee03c0 size:3716
 shaders/vfx/csgo_customweapon.ini CRC:0000000000 size:0
 shaders/vfx/csgo_customweapon_pc_50_features.vcs CRC:00b70a4815 size:6642
 shaders/vfx/csgo_customweapon_pc_50_ps.vcs CRC:00ced74fae size:2369533

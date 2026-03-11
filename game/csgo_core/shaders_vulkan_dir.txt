@@ -26,9 +26,9 @@ shaders/vfx/csgo_composite_inputs_vulkan_50_features.vcs CRC:001d70309e size:264
 shaders/vfx/csgo_composite_inputs_vulkan_50_ps.vcs CRC:00dcfe5427 size:13510
 shaders/vfx/csgo_composite_inputs_vulkan_50_vs.vcs CRC:00e21d8681 size:2081
 shaders/vfx/csgo_customglove.ini CRC:0000000000 size:0
-shaders/vfx/csgo_customglove_vulkan_50_features.vcs CRC:00605a5b28 size:5842
-shaders/vfx/csgo_customglove_vulkan_50_ps.vcs CRC:003712952d size:28424
-shaders/vfx/csgo_customglove_vulkan_50_vs.vcs CRC:00d9172cc5 size:2019
+shaders/vfx/csgo_customglove_vulkan_50_features.vcs CRC:00d3aa1999 size:11570
+shaders/vfx/csgo_customglove_vulkan_50_ps.vcs CRC:0099953ff5 size:79241
+shaders/vfx/csgo_customglove_vulkan_50_vs.vcs CRC:0052d5011b size:4282
 shaders/vfx/csgo_customweapon.ini CRC:0000000000 size:0
 shaders/vfx/csgo_customweapon_vulkan_50_features.vcs CRC:00559cec0c size:6722
 shaders/vfx/csgo_customweapon_vulkan_50_ps.vcs CRC:00df29219d size:5827782

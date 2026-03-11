@@ -111,7 +111,9 @@ var OffersLaptop;
                 _UpdateLootListItemInfo(elItem, itemid, itemId);
                 elItem.SetPanelEvent('onactivate', _OnActivateLootlistTile.bind(undefined, itemid, itemId, ''));
                 elItem.SetPanelEvent('oncontextmenu', _OnActivateLootlistTile.bind(undefined, itemid, itemId, ''));
-                $.GetContextPanel().FindChildInLayoutFile('CanDecodableBrowseBtn').SetPanelEvent('onactivate', callBackFunc.bind(undefined, itemid, itemId, ''));
+                if (i === 0) {
+                    $.GetContextPanel().FindChildInLayoutFile('CanDecodableBrowseBtn').SetPanelEvent('onactivate', callBackFunc.bind(undefined, itemid, itemId, ''));
+                }
                 if (itemid !== m_specialItemId) {
                     m_aItemsInLootlist.push({
                         id: itemid,

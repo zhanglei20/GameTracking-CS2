@@ -233,6 +233,12 @@ var InspectModelImage;
         const panel = _LoadInspectMap(itemId, oSettings);
         _SetParticlesBg(itemId, panel);
         SetItemCameraByWeaponType(itemId, panel, false);
+        if (InventoryAPI.GetLoadoutCategory(itemId) === 'secondary')
+            panel.SetCSMSplitPlane0DistanceOverride(30.0);
+        else if (InventoryAPI.GetLoadoutCategory(itemId) === 'smg')
+            panel.SetCSMSplitPlane0DistanceOverride(40.0);
+        else if (InventoryAPI.GetLoadoutCategory(itemId) === 'rifle')
+            panel.SetCSMSplitPlane0DistanceOverride(55.0);
         const settings = ItemInfo.GetOrUpdateVanityCharacterSettings();
         settings.panel = panel;
         settings.weaponItemId = '';
@@ -257,6 +263,7 @@ var InspectModelImage;
         const panel = _LoadInspectMap(itemId, oSettings);
         _SetParticlesBg(itemId, panel);
         _TransitionCamera(panel, 'melee');
+        panel.SetCSMSplitPlane0DistanceOverride(30.0);
         return panel;
     }
     function _InitStickerScene(itemId) {
@@ -421,6 +428,7 @@ var InspectModelImage;
         const panel = _LoadInspectMap(itemId, oSettings);
         _SetParticlesBg(itemId, panel);
         _TransitionCamera(panel, 'gloves', true);
+        panel.SetCSMSplitPlane0DistanceOverride(15.0);
         return panel;
     }
     function _InitNametagScene(itemId) {
@@ -463,6 +471,7 @@ var InspectModelImage;
         const panel = _LoadInspectMap(itemId, oSettings);
         _SetParticlesBg(itemId, panel);
         _TransitionCamera(panel, 'nametag_close');
+        panel.SetCSMSplitPlane0DistanceOverride(10.0);
         return panel;
     }
     function _GetBackGroundMap(bUseMainMenuMap = false) {

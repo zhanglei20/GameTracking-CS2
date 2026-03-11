@@ -31,6 +31,11 @@ shaders/vfx/csgo_copy_rt.ini CRC:0000000000 size:0
 shaders/vfx/csgo_copy_rt_pc_50_features.vcs CRC:009a66f931 size:1634
 shaders/vfx/csgo_copy_rt_pc_50_ps.vcs CRC:002e5475cd size:1966
 shaders/vfx/csgo_copy_rt_pc_50_vs.vcs CRC:008fb5ddb8 size:1919
+shaders/vfx/csgo_customglove_preview.ini CRC:0000000000 size:0
+shaders/vfx/csgo_customglove_preview_pc_50_features.vcs CRC:0084978a32 size:9714
+shaders/vfx/csgo_customglove_preview_pc_50_ps.vcs CRC:002a93ac53 size:66556
+shaders/vfx/csgo_customglove_preview_pc_50_psrs.vcs CRC:00e13b55a4 size:1874
+shaders/vfx/csgo_customglove_preview_pc_50_vs.vcs CRC:0046fe4e80 size:12505
 shaders/vfx/csgo_dronecam.ini CRC:0000000000 size:0
 shaders/vfx/csgo_dronecam_pc_50_features.vcs CRC:009ad1f0fe size:1778
 shaders/vfx/csgo_dronecam_pc_50_ps.vcs CRC:00fe8f08ae size:2633
@@ -110,10 +115,10 @@ shaders/vfx/csgo_static_overlay_pc_50_ps.vcs CRC:00386dd7de size:510439
 shaders/vfx/csgo_static_overlay_pc_50_psrs.vcs CRC:00405e0119 size:2626
 shaders/vfx/csgo_static_overlay_pc_50_vs.vcs CRC:00de41ecce size:193285
 shaders/vfx/csgo_textile_layer.ini CRC:0000000000 size:0
-shaders/vfx/csgo_textile_layer_pc_50_features.vcs CRC:0005158afe size:4946
-shaders/vfx/csgo_textile_layer_pc_50_ps.vcs CRC:00a7810e25 size:35192
-shaders/vfx/csgo_textile_layer_pc_50_psrs.vcs CRC:003c5075b7 size:1858
-shaders/vfx/csgo_textile_layer_pc_50_vs.vcs CRC:005b0a0337 size:10094
+shaders/vfx/csgo_textile_layer_pc_50_features.vcs CRC:0076da52ef size:7170
+shaders/vfx/csgo_textile_layer_pc_50_ps.vcs CRC:00accf0538 size:62932
+shaders/vfx/csgo_textile_layer_pc_50_psrs.vcs CRC:00e15633e2 size:1858
+shaders/vfx/csgo_textile_layer_pc_50_vs.vcs CRC:001f442942 size:11644
 shaders/vfx/csgo_ui_texture_attribute.ini CRC:0000000000 size:0
 shaders/vfx/csgo_ui_texture_attribute_pc_50_features.vcs CRC:004419e54c size:1602
 shaders/vfx/csgo_ui_texture_attribute_pc_50_ps.vcs CRC:00b91c0cf7 size:1848

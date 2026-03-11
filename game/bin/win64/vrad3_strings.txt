@@ -1790,7 +1790,6 @@ R<Xb
 RSDS
 RTLightmap
 R\tV_powf
-R\vpl
 Radius Random
 Random Cull
 Randomly Flip Yaw
@@ -2730,7 +2729,7 @@ path_trace_triangles_gpu_init
 path_trace_triangles_gpu_shutdown
 path_trajectory
 pattern
-pc64 Mar  6 2026 09:50:07
+pc64 Mar 11 2026 13:43:32
 permission denied
 physicsSimplificationError
 physicsSimplificationOverride
@@ -2770,7 +2769,6 @@ protocol not supported
 purecall
 qangle_array
 quaternion_array
-r\fpl
 r\tVr.>T
 radiusScale
 radius_random

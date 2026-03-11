@@ -84,7 +84,7 @@
 				<Image texturewidth="-1" textureheight="8" class="window__weapon-info__bracket bottom-left" src="s2r://panorama/images/hud/bracket.vsvg" />
 				<Panel id="id-lootlist-items" class="popup-lootlist__list__section_items">
 					<Panel class="full-width">
-						<Label id="id-offer-desc" class="popup-lootlist__list__section__progress stratum-regular" text="#popup_lootlist_progress" />
+						<Label id="id-offer-desc" class="popup-lootlist__list__section__progress stratum-regular" text="#popup_lootlist_progress:f" />
 						<TextButton id="id-lootlist-xp-claim" class="popup-lootlist__list__section__btn" text=" " />
 					</Panel>
 				</Panel>
@@ -205,7 +205,7 @@
 										</Panel>
 									</Panel>
 								</Panel>
-								<Panel class="window__weapon-preview__camera-hints" hittest="false">
+								<Panel id="id-offer-camera-hints" class="window__weapon-preview__camera-hints" hittest="false">
 									<Image id="id-offer-pan_hint" texturewidth="-1" textureheight="20" src="s2r://panorama/images/icons/ui/camera_pan_hint.vsvg" />
 									<Image id="id-offer-zoom_hint" texturewidth="-1" textureheight="20" src="s2r://panorama/images/icons/ui/camera_zoom_hint.vsvg" />
 								</Panel>

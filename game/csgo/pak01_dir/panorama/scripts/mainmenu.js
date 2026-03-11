@@ -365,6 +365,7 @@ var MainMenu;
         const elContextPanel = $.GetContextPanel();
         elContextPanel.AddClass('MainMenuRootPanel--PauseMenuMode');
         elContextPanel.SetHasClass('MainMenuRootPanel--PauseMenuDuringDemoPlayback', GameStateAPI.IsDemoOrHltv());
+        $('#id-pausemenu-mission-panel').SetHasClass('hide-non-prime', MyPersonaAPI.GetElevatedState() != 'elevated');
         const bQueuedMatchmaking = GameStateAPI.IsQueuedMatchmaking();
         const bGotvSpectating = elContextPanel.IsGotvSpectating();
         const bIsCommunityServer = !_m_bPerfectWorld && MatchStatsAPI.IsConnectedToCommunityServer();
