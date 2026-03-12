@@ -1,9 +1,9 @@
-ClientVersion=2000749
-ServerVersion=2000749
-PatchVersion=1.41.3.9
+ClientVersion=2000750
+ServerVersion=2000750
+PatchVersion=1.41.4.0
 ProductName=cs2
 appID=730
 ServerAppID=2347773
-SourceRevision=10516414
+SourceRevision=10517293
 VersionDate=Mar 11 2026
-VersionTime=15:29:33
+VersionTime=18:42:07
