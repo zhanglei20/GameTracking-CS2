@@ -14,7 +14,7 @@ Protobufs/google/
 *.bin
 *.tmp
 exceptions.txt
-DumpSource2/.stringsignore
+steam_buildid.txt
 
 # Ignore all translations
 **/*_arabic*.txt

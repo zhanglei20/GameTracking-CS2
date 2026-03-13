@@ -1,0 +1,24 @@
+name: Update
+
+on:
+    workflow_dispatch:
+        inputs:
+            branch:
+                description: 'CS2 Branch'
+                required: false
+                default: 'public'
+                type: string      
+
+concurrency:
+    group: ${{ github.workflow }}
+    cancel-in-progress: true
+
+jobs:
+    process:
+        permissions:
+            contents: write
+        uses: steamtracking/gametracking/.github/workflows/gametracking.yml@master    
+        secrets: inherit
+        with:
+          folder: csgo
+          branch: ${{ github.event.inputs.branch }}
