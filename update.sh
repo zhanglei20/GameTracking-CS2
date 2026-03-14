@@ -19,10 +19,12 @@ DeduplicateStringsFrom ".dll" "game/bin/linuxsteamrt64/libengine2_strings.txt" "
 DeduplicateStringsFrom ".exe" "game/bin/linuxsteamrt64/libengine2_strings.txt" "game/bin/linuxsteamrt64/libtier0_strings.txt" "DumpSource2/.stringsignore"
 ProcessVPK
 
+echo "::group::Extracting VPKs"
+
 set +e
 while IFS= read -r -d '' file
 do
-	echo " > $file"
+	echo " $file"
 
 	# When updating vpk_extensions, also update "vpk:..." in files.json
 	"$VRF_PATH" \
@@ -36,6 +38,8 @@ do
 	fi
 done <   <(find . -type f -name "pak01_dir.vpk" -print0)
 set -e
+
+echo "::endgroup::"
 
 while IFS= read -r -d '' file
 do
