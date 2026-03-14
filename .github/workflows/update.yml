@@ -28,5 +28,5 @@ jobs:
         with:
           branch: ${{ github.event.inputs.branch }}
           appid: 730
-          runs-on-windows: true
+          run-on-windows: true
           reset-gametracking: ${{ inputs.reset-gametracking }}
