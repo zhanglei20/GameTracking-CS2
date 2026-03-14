@@ -2795,7 +2795,6 @@ BlackLevelDeltaH
 BlackLevelDeltaV
 BlackLevelRepeatDim
 BlackPointChanged
-Blend Mode
 Bloom
 Bloom %d
 Bloom Radius
@@ -2835,37 +2834,25 @@ CBasePulseGraphInstance::StartGraphReload( %p ) %s\n
 CBasePulseGraphInstance::~CBasePulseGraphInstance( %p )\n
 CBaseToolsModelInstance::CreateReversedIBs(4572): 
 CBindableCamera
-CBloomLayer
-CBrightnessContrastColorCorrectionLayer
 CBufferString
 CCITT Group 3
 CCITT Group 4
 CCITT RLE
 CCITT RLE/W
-CColorBalanceColorCorrectionLayer
-CColorCorrectionLayer
 CColorGradient
-CColorLookupColorCorrectionLayer
-CColorTintColorCorrectionLayer
-CCurvesColorCorrectionLayer
 CEntityNameString
 CFALayout
 CFAPlaneColor
-CFogScatteringLayer
 CGlobalHotkeyCommands
 CGlobalSymbol
 CGlobalSymbolCaseSensitive
-CHueSaturationColorCorrectionLayer
 CInputBindManager::HandleInputCode recursion depth got too deep.\n
 CKV3MemberNameSet
 CKV3MemberNameWithStorage
-CLayerMask
-CLevelsColorCorrectionLayer
 CLightingControlRig
 CLightingControlRig::DestroyBackgroundMap
 CLightingControlRig::ReloadLightRigConfig
 CLightingPreviewPopupUI
-CLocalContrastLayer
 CModelPreviewAttachedModel
 CNewParticleEffect::DetectChanges
 COMMAND_TEXT_MODE_BUTTON
@@ -2875,7 +2862,6 @@ COMMAND_TEXT_MODE_NONE
 CParticleCollectionBindingInstance::HACK_UnusedBinding
 CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1140
 CPiecewiseCurve
-CPostProcessData
 CPostProcessEditorApp
 CPostProcessEditorApp::SetPreviewModel
 CPostProcessEditorMainWnd
@@ -3113,7 +3099,6 @@ CQWidgetDebugger
 CRenderOptionsPopupUI
 CStrongHandle
 CTSQueue<struct ParticleSoundQueueEntry_t *,0>::Push
-CToneMappingLayer
 CTonemappingPopupUI
 CToolAxisObjectDesc::DrawArray
 CToolHud
@@ -3133,7 +3118,6 @@ CToolSceneJointAxes
 CToolSceneJointNames
 CToolSceneJointRotations
 CToolSceneLight
-CToolSceneLightRig
 CToolSceneModel
 CToolSceneNode
 CToolSceneNodeGroup
@@ -3179,8 +3163,6 @@ CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CUtlVector<int>
 CUtlVectorFixedGrowable
 CVertexListSceneObject
-CVibranceColorCorrectionLayer
-CVignetteLayer
 CalibrationIlluminant1
 CalibrationIlluminant2
 Call C%d:I%d (%s)
@@ -3248,7 +3230,6 @@ Checkout Failed
 Checkout Failed.
 Checkout was NOT successful! To save you must select a different file.
 Checkout?
-Children
 ChromaBlurRadius
 Clamp Float
 Clamp Int
@@ -3534,7 +3515,6 @@ FaxRecvTime
 FaxSubAddress
 Feather
 FieldOfViewCotangent
-File
 File Opened by Other User
 File Opened by Other Users
 File not open for reading
@@ -3769,21 +3749,6 @@ Kill All Other Cursors
 Kill Cursors With Tag
 Kill This Cursor And Cancel
 Kill This Cursor And Fail
-LAYER_MASK_COLOR_RANGE
-LAYER_MASK_LUMINOSITY
-LAYER_TYPE_BLOOM
-LAYER_TYPE_BRIGHTNESS_CONTRAST
-LAYER_TYPE_COLOR_BALANCE
-LAYER_TYPE_COLOR_TINT
-LAYER_TYPE_CURVES
-LAYER_TYPE_FOG_SCATTERING
-LAYER_TYPE_HUE_SATURATION
-LAYER_TYPE_LEVELS
-LAYER_TYPE_LOCAL_CONTRAST
-LAYER_TYPE_LUT
-LAYER_TYPE_TONEMAPPING
-LAYER_TYPE_VIBRANCE
-LAYER_TYPE_VIGNETTE
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -3813,8 +3778,6 @@ Layer Opacity:
 Layer Settings
 LayerDock
 LayerMaskDock
-LayerMaskType_t
-LayerType_t
 Leap to Chunk C%d
 Left Mouse (Point)
 Length (magnitude) of Vector
@@ -3868,7 +3831,6 @@ Low Contrast
 Lum Source: Diffuse<-->Pixel
 Luminosity:
 MATERIAL_THUMBNAIL
-MAX_LAYER_TYPES
 MAtomicTransfersAsPlainString
 MENU
 MMouse
@@ -4030,7 +3992,6 @@ No: Do not checkout.
 NodeID %d port '%s' called from C%d:I%d
 Nonstandard tile length %d, convert file
 Nonstandard tile width %d, convert file
-Normalize Vector
 Normalize Vector a
 Not R%d <- !R%d
 Not a TIFF file, bad magic number %d (0x%x)
@@ -4175,7 +4136,6 @@ Output aborted.
 OutputBlackLevelChanged
 OutputWhiteLevelChanged
 OverlayProjectionDirection
-Override
 Overwrite With Current
 P?isValid@QColor@@QEBA_NXZ
 P?item@QStandardItemModel@@QEBAPEAVQStandardItem@@HH@Z
@@ -4494,7 +4454,6 @@ Saving session to file: '%s'\n
 ScalableAOBias
 ScalableAORadius
 ScalableAOStrength
-Scale
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 Scene:
@@ -4625,7 +4584,6 @@ StoNits
 Stop Timer
 Stop any active timers - the completed outflow will still fire
 StopSendingCameraTo
-Strength
 Strength:
 Strings Are Equal Case Sensitive
 StripByteCounts
@@ -5533,21 +5491,11 @@ lowprecisionuv
 lowprecisionuv1
 mX?setBlueF@QColor@@QEAAXN@Z
 m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
-m_Background
-m_BackgroundMap
 m_Bindings
 m_Context
-m_Exposure
-m_Grid
 m_InputMacros
-m_MapName
-m_PointLights
-m_PostProcessing
 m_Results
-m_Sky
-m_SpotLights
 m_Stops
-m_Suns
 m_TagValue
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
@@ -5557,106 +5505,23 @@ m_bDrawLast
 m_bFirstEvaluate
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
-m_bInverted
 m_bIsNotMatchedToMaterial
 m_bNoShadow
 m_bOnlyShadow
-m_bParentToCamera
-m_bParticlesTraceAgainstMap
-m_bPreserveLuminosity
-m_bRelativePositioning
 m_bRemoveWhenOutOfScope
-m_bRender3DSkybox
 m_bShutdown
 m_bUseCompressedNormalTangent
-m_bVisible
-m_curvePointsB
-m_curvePointsG
-m_curvePointsR
-m_curvePointsRGB
 m_externalMethodTargetGraph
-m_flAxisScale
-m_flGammaB
-m_flGammaG
-m_flGammaR
-m_flGammaRGB
-m_flLightSourceRadius
-m_flMaxEV
-m_flMinEV
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_hDef
-m_hPostProcessing
-m_layers
-m_lut
-m_nBlueYellowBalH
-m_nBlueYellowBalM
-m_nBlueYellowBalS
-m_nBrightnessBlue
-m_nBrightnessCyan
-m_nBrightnessGreen
-m_nBrightnessMagenta
-m_nBrightnessMaster
-m_nBrightnessRed
-m_nBrightnessYellow
-m_nContrast
 m_nCurrentWakeIndex
 m_nCursorID
-m_nDim
 m_nGraphID
-m_nGreenMagentaBalH
-m_nGreenMagentaBalM
-m_nGreenMagentaBalS
-m_nHueBlue
-m_nHueCyan
-m_nHueGreen
-m_nHueMagenta
-m_nHueMaster
-m_nHueRed
-m_nHueYellow
-m_nInputBlackPointB
-m_nInputBlackPointG
-m_nInputBlackPointR
-m_nInputBlackPointRGB
-m_nInputWhitePointB
-m_nInputWhitePointG
-m_nInputWhitePointR
-m_nInputWhitePointRGB
-m_nLumMaskCenter
-m_nLumMaskShape
-m_nLumMaskWidth
-m_nOpacityPercent
-m_nOutputBlackPointB
-m_nOutputBlackPointG
-m_nOutputBlackPointR
-m_nOutputBlackPointRGB
-m_nOutputWhitePointB
-m_nOutputWhitePointG
-m_nOutputWhitePointR
-m_nOutputWhitePointRGB
-m_nRedCyanBalH
-m_nRedCyanBalM
-m_nRedCyanBalS
 m_nResult
-m_nRigType
-m_nSaturation
-m_nSaturationBlue
-m_nSaturationCyan
-m_nSaturationGreen
-m_nSaturationMagenta
-m_nSaturationMaster
-m_nSaturationRed
-m_nSaturationYellow
 m_nStackDepthWhenAdded
-m_nStrength
 m_nSubjectID
-m_nTintColorB
-m_nTintColorG
-m_nTintColorR
-m_nVibrance
 m_nYieldToken
-m_pLayerMask
-m_vLookAt
 mapped
 materials/dev/gray_50.vmat
 materials/dev/tools_2d_generic.vmat
@@ -5888,7 +5753,6 @@ tools/keybindings/postprocess_editor_key_bindings.txt
 tools/keybindings/shared_tool_key_bindings.txt
 toolsVisModeIndex
 tools_preview
-toolscenelightrigs.vdata
 toolscenevismodes.txt
 transient
 transparency

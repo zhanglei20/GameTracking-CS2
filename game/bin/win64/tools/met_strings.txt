@@ -3133,7 +3133,6 @@ Check if the cursor already has the given tag.
 CheckBox
 CheckState
 ChildOf
-Children
 Choose Color
 Choose Color - "%1"
 Choose Material
@@ -3339,9 +3338,6 @@ DynamicExpressions
 DynamicParams
 E&xit
 E<G&Iw
-EMaterialLayer_t
-EMaterialVariable_t
-EMaterialVariables_t
 ERROR!
 ERROR! LoadFromJPG( %s ) failed!\n
 ERROR! LoadFromPNG( %s ) failed!\n
@@ -3389,7 +3385,6 @@ Entity Class
 Entity Render Attributes:
 EntityName
 EntityRenderAttributeSelected
-Enum
 Eq R%d <- R%d == R%d
 Error (problem that prevents task success)
 Error Evaluating!
@@ -3919,7 +3914,6 @@ N?horizontalAdvance@QFontMetrics@@QEBAHAEBVQString@@H@Z
 N?horizontalAdvance@QFontMetrics@@QEBAHVQChar@@@Z
 N?index@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
 NO COMMAND TARGET
-NORMAL
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
 NULL CELL 
 NULL VP8Io parameter in VP8Decode().
@@ -3976,7 +3970,6 @@ NodeID %d port '%s' called from C%d:I%d
 Nonstandard tile length %d, convert file
 Nonstandard tile width %d, convert file
 Normal Map Conversion
-Normalize Vector
 Normalize Vector a
 Not R%d <- !R%d
 Not a TIFF file, bad magic number %d (0x%x)
@@ -4588,7 +4581,6 @@ Save the material under a new name.
 SaveAction
 SaveAllAction
 SaveAsAction
-Scale
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 ScrLk
@@ -5910,8 +5902,6 @@ import
 incorrect count for field "%s" (%u, expecting %u); tag ignored
 incorrect count for field "%s" (%u, expecting %u); tag trimmed
 index
-inheritedVariableSources
-inheritedVariableValues
 int2
 int3
 int4
@@ -5950,23 +5940,10 @@ m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 m_Bindings
 m_Context
-m_EnumLabel
-m_ExportName
-m_Group
-m_HiddenVariableUiNames
 m_InputMacros
-m_Layers
-m_RefFileEnding
-m_RefType
-m_ReferenceVariableIndex
 m_Stops
-m_SubGroup
 m_TagValue
-m_UiName
-m_UiOptions
-m_VariableNames
 m_allVars
-m_alternateInput
 m_argIndexArray
 m_argTypeArray
 m_argValueArray
@@ -5983,12 +5960,8 @@ m_bGlobalsBDA
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bHasShaderProgram
-m_bInitialTextureInput
 m_bIsLayerConstant
-m_bIsLayeredShader
 m_bIsNotMatchedToMaterial
-m_bLayerAllowOverride
-m_bLayerReference
 m_bNoShadow
 m_bOnlyShadow
 m_bStaticCB
@@ -5998,22 +5971,15 @@ m_byteCodeData
 m_byteCodeIndex
 m_comboType
 m_constantBufferBindingArray
-m_default
-m_defaultColor
-m_defaultInput
 m_defaultInputTexture
-m_defaultSlider
 m_dynamicComboArray
 m_dynamicComboIDs
 m_dynamicComboRenderState
 m_dynamicComboRuleArray
 m_dynamicComboVars
 m_dynamicComboVarsRef
-m_error
 m_expr
-m_expression
 m_externalMethodTargetGraph
-m_fDefaultSlider
 m_fl
 m_flDefault
 m_flSlopeIncoming
@@ -6024,15 +5990,11 @@ m_iFeatureIndex
 m_indexAndRegisterOffsetArray
 m_indexAndRegisterOffsetCount
 m_indexAndRegisterOffsetStart
-m_inheritedValue
-m_inheritedValueSource
 m_inputColorSpace
 m_inputProcessingCommand
 m_intDefault
 m_intMax
 m_intMin
-m_max
-m_min
 m_mipProcessingCommand
 m_modeArray
 m_nByteCodeDataIdx
@@ -6045,7 +6007,6 @@ m_nConstantBufferSize
 m_nContextStateAffectedByVariable
 m_nCurrentWakeIndex
 m_nDescriptorSet
-m_nElements
 m_nExtraRuleData
 m_nFirstConstantElement
 m_nFirstRenderStateElement
@@ -6058,10 +6019,6 @@ m_nOffs
 m_nRegisterElements
 m_nRegisterOffset
 m_nSize
-m_nSortKeyGroup
-m_nSortKeySubGroup
-m_nSortKeyVariable
-m_nTextureAutoFillCount
 m_nTypeSpecificBits
 m_nVariableBinding
 m_nVariableSourceMax
@@ -6071,11 +6028,8 @@ m_outputTextureFormat
 m_pCompiledExpression
 m_pCompiledUIVisibilityExpression
 m_pSourceString
-m_precision
 m_programData
 m_programHashes
-m_referencedExpressionPath
-m_referencedValuePath
 m_registerType
 m_ruleType
 m_shaderComboSourceType
@@ -6086,7 +6040,6 @@ m_staticComboData
 m_staticComboIDs
 m_staticComboRuleArray
 m_staticComboSettings
-m_step
 m_stringArray
 m_szAliasName
 m_szErrorString
@@ -6095,7 +6048,6 @@ m_szStaticCombo
 m_szTextureFileEnding
 m_szUiGroup
 m_textureChannelProcessorArray
-m_textureSuffix
 m_uiType
 m_vGradientFogExponents
 m_variableDescriptionArray
@@ -6273,7 +6225,6 @@ scanline
 screenWindowCenter
 screenWindowWidth
 scripts/activity_modifier_weights.txt
-scripts/detail_prop_types.vdata
 scroll_widget
 selected
 self

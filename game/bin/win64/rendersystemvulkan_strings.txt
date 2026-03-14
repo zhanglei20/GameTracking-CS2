@@ -1389,7 +1389,6 @@ NGXGetPathUsingQAI
 NGXLoadCoreLibrary
 NGXLoadLibrary
 NGXSafeInitializeLog
-NORMAL
 NULL VP8Io parameter in VP8Decode().
 NV Raytracing Validation
 NVIDIA 

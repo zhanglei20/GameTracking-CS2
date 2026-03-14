@@ -7626,7 +7626,6 @@ Additional related files absolute paths forbidden: %s
 Adds or merges the pose parameter range of the specified pose paramater
 Adjust Acceleration
 AdobeDeflate
-Advanced
 Affect All Bones
 Affect Children
 Affect Edges
@@ -7715,7 +7714,6 @@ And R%d <- R%d && R%d
 Angle Limit
 Angle Streams In Radians
 Angle Threshold
-Angles
 Angular Damping
 Angular Damping Ratio
 Angular Dot Product
@@ -7951,7 +7949,6 @@ BTools
 Back-solve Joints
 Back-solve Joints Drive Meshes
 Back-solve Min Weight
-Background Color
 Bad %s anim filename '%s' (encountered while importing %s)
 Bad bodygroup name '%s'
 Bad class description
@@ -8966,7 +8963,6 @@ Ceiling - round float up to nearest integer)
 Ceiling Float
 CellLength
 CellWidth
-Center
 Center Of Mass
 Center Offset
 Center Vertices
@@ -8998,7 +8994,6 @@ Child of a prefab must be a clone of a source node
 ChildDocument
 ChildDocumentList
 ChildDocumentViewer
-Choice
 Choice #%d
 Choice #0 (default)
 Choice A
@@ -9363,6 +9358,7 @@ Creates a weightlist on the model
 Creates an animation from the model's bind pose
 Cross Product Vector
 Cross Product of Vector a x Vector b
+Crossfade
 Cull Distance
 Cull End Time
 Cull Percentage
@@ -9429,7 +9425,6 @@ Decay Time
 Default (No Name)
 Default (No RGB Tint)
 Default Gravity Scale
-Default Material Group
 Default Root Bone Name
 Default offset for cp1 relative to cp0 if cp1 not set
 Default: %s
@@ -9484,9 +9479,7 @@ Different Indices On Mesh vs Bind Pose For "%s" Added Anchor Bone
 Different Indices On Mesh vs Bind Pose For "%s" Bone
 Diffuse lighting amount
 Dilate pixels at UV island edges.
-Dimensions
 Direction Matching Strength
-Disable
 Disable Compression
 Disable Continuous Collision Detection
 Disable Morph
@@ -9773,8 +9766,6 @@ Enable particle outlining
 Encountered an element array attribute '%s' while reading the prefix element
 Encountered an element attribute '%s' while reading the prefix element
 Encountered invalid element ID data!
-End Cycle
-End Effector
 End Effector Offset Attachment
 End Effector Rotation Fix Behaviour
 End Frame
@@ -10018,7 +10009,6 @@ Failed to split .rts channel label "%s" into <prefix>.<channel>
 Failed to split full path "%s" while initializing\n
 Failed to unserialize document data from kv3 data:\n%s
 Failed to write file: %s\n
-Falloff
 Far Field Only
 Fast Drag
 Fast Sweep
@@ -10035,7 +10025,6 @@ FaxRecvParams
 FaxRecvTime
 FaxSubAddress
 FeEffectName
-Feet
 FeetSettings
 FieldOfViewCotangent
 File is not a valid input; contains ".nocompile.": %s
@@ -10063,9 +10052,7 @@ Fingers_R
 First Control Point Location
 First Control Point Number
 First Control Point Parent
-First Frame
 First Point
-FirstFrame
 Fit Transform to Model
 Fit Transform to Vertex Selection
 Fit Vertex Transform Bounds to Model
@@ -10731,7 +10718,6 @@ L Ankle
 L Hip
 L Knee
 L2 Regularization
-LEFT
 LL Offset in FLU local space
 LL control point number
 LOD %d (%.1f)
@@ -10751,9 +10737,7 @@ LZWDecodeCompat: Not enough data at scanline %d (short %ld bytes)
 LZWDecodeCompat: Wrong length of decoded string: data probably corrupted at scanline %d
 LZWPreDecode
 LZWSetupEncode
-Last Frame
 Last two rows as percentage of total size %f %%:\n
-LastFrame
 Latency CP
 Latency CP field
 Layer %d:  adding key at time %d [%d -> %d], value 
@@ -10921,10 +10905,8 @@ LogL16InitState
 LogLuvDecode24: Not enough data at row %d (short %d pixels)
 LogLuvDecode32: Not enough data at row %d (short %d pixels)
 LogLuvInitState
-LookAtChain
 LookAtChainEditor
 LookAtList
-Loop
 Loop End Frame
 Loop FPS
 Loop Start Frame
@@ -11044,7 +11026,6 @@ Materials/VertexData
 MatrixWorldToCamera
 MatrixWorldToScreen
 Matteing
-Max Angle
 Max Bend Angle
 Max BodyGroup count
 Max Bone count
@@ -11055,7 +11036,6 @@ Max Int
 Max Length
 Max MaterialGroup count 
 Max Morph Shape
-Max Offset
 Max Pitch
 Max Range/Radius
 Max Steering Angle
@@ -11122,12 +11102,10 @@ MeshSortOptionsEditor
 Meshes
 Meshgroup '%s' ignoring 'bEnabledByDefault' because it's not the first entry in the bodygroup
 Metacarpal Bone
-Min Angle
 Min Float
 Min Int
 Min Length
 Min Morph Shape
-Min Offset
 Min Pitch
 Min Steering Angle
 Min Suspension Offset
@@ -11404,7 +11382,6 @@ Normal texture scroll rate
 NormalBias
 Normalize
 Normalize Output
-Normalize Vector
 Normalize Vector a
 NoseV
 NostrilFlare
@@ -11923,7 +11900,6 @@ Radius of the capsule
 Radius of the primitive to project normals from.
 Radius0
 Radius1
-Ragdoll
 Ragdoll Applies Bind Pose Root
 Ramp Control Point Linear Random
 Ramp Scalar Linear Random
@@ -12219,7 +12195,6 @@ Save a named value of any type on the cursor.
 Scalar Property not backed by a valid group.
 Scalar Random
 Scalar field
-Scale
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 Scale Radius from Initial Value
@@ -12532,7 +12507,6 @@ Sqr Float
 Sqr Int
 Sqrt
 Square root
-Start Cycle
 Start Frame
 Start Frame Number
 Start Loop
@@ -12574,7 +12548,6 @@ Stray Box
 Stray Radius
 Stray Radius Stretchiness
 Stream Name
-Strength
 Stretch Scale
 Stretch Stiffness
 Stretchiness
@@ -12603,7 +12576,6 @@ Suppress warnings regarding the joint weight count per vertex exceeding allowabl
 Suppress warnings when bodygroups specify meshes that do not exist. This is useful if the bodygroup definition is in a shared prefab and missing warnings are expected or benign.
 Suppressed Shapes
 Surface Bias
-Surface Property
 Surface Property Override
 SurfacePropPicker()
 Suspender Spring
@@ -12672,7 +12644,6 @@ Tail Frame Number
 TanFrameQuat
 Tangent of angle. Input in radians, output in radians
 Target Body
-Target Bone
 Target Bone Name
 Target Color
 Target Guide Hair Count
@@ -12828,7 +12799,6 @@ Torsion Stiffness
 Total1
 Totals
 Trace Direction Override
-Trace Distance
 Trace Height
 Trace Length
 Trace Radius
@@ -13134,7 +13104,6 @@ Warning! Unsupported FBX UV Mapping/Reference Mode %d/%d\n
 Warning! Unsupported FBX VertexColor Mapping/Reference Mode %d/%d\n
 Wavefront OBJ
 Wavelength
-Weight
 Weight Threshold
 Weight list to apply to this animation at runtime.<p><span style="color:#ffff00"><b>NOTE</b></span>: Animgraph animations should not apply a weightlist here.  When using animgraph, a weightlist should be applied via a <span style="color:#7b364f"><b>Bone Mask</b></span> node in the graph.
 Weight list to apply to this animation.<p><span style="color:#ffff00"><b>NOTE</b></span>: Animgraph animations should not use activities or activity weights.
@@ -13624,7 +13593,6 @@ body_collection
 body_group_choice
 body_group_count
 body_group_name
-bodygroup
 bodygroupchoices
 boneIndicesAndWeights
 boneIndicesAndWeights$0
@@ -14280,7 +14248,6 @@ filenameBase
 filter
 filter_bone_influence_threshold
 filter_bones
-filter_type
 filterclass
 finalTime
 final_time
@@ -14822,7 +14789,6 @@ m_AutoCreateSetName
 m_Bodies
 m_ChildResourceList
 m_CollisionAttributes
-m_CompilerIdentifier
 m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNameOrientation
 m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition
 m_Data.m_EndEffectorFixedOffsetAttachment
@@ -15164,7 +15130,6 @@ m_poseParameterArray
 m_qFixupRotation
 m_rbfParameters
 m_reference
-m_rotation
 m_sBindPoseReference
 m_sBoneMask
 m_sBonename
@@ -15188,7 +15153,6 @@ m_sWeightedBone
 m_sequenceArray
 m_syntheticAnimationArray
 m_szBoneMask
-m_translation
 m_uuid
 m_vControlPoint1DefaultOffsetRelativeToControlPoint0
 m_vLocalOffset00
@@ -16224,7 +16188,6 @@ suppressed_field
 surface_bias
 surface_offset
 surface_prop_override
-surface_properties
 surface_property
 suspender
 swap_left_and_right_bones

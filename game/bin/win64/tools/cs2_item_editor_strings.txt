@@ -4466,10 +4466,8 @@ AssetBrowse(
 AssetBrowse( %s )
 AssetBrowse( png )
 AssetBrowse( txt )
-AssetBrowse( vmat )
 AssetBrowse( vmat, *filterProcedural:location=content )
 AssetBrowse( vmdl )
-AssetBrowse( vsnd )
 AssetBrowse( vtex )
 AssetBrowse( wav )
 Associated Discrete Set
@@ -4939,7 +4937,6 @@ Checkout Failed
 Checkout Failed.
 Checkout was NOT successful! To save you must select a different file.
 Checkout?
-Children
 Choose Team
 Circular visibility dependency '%s' found in '%s'.\n
 Class
@@ -4984,6 +4981,7 @@ Could not resolve item type to root folder.
 Coupon Index
 Coupons
 Courier
+Create
 Create %1
 Create Copy
 Create Copy From '%1'
@@ -5431,7 +5429,6 @@ ItemDescriptionsLanguageBlock
 ItemEditorItemId
 ItemEditorItemId()
 ItemSet
-Items
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
 J\v?event@QLabel@@MEAA_NPEAVQEvent@@@Z
 Jump to Item
@@ -5463,7 +5460,6 @@ KeychainKit_Default
 KeychainKit_Missinglink
 KillEaterRank
 Kit "[%s]" specified, but doesn't exist!! You're probably missing an entry in items_paintkits.txt or items_stickerkits.txt or need to run with -use_local_item_data\n
-LEFT
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -7236,7 +7232,6 @@ confirm
 confirmation_id
 connections
 const char*
-contains
 contains_patches_representing_organizations
 contains_stickers_autographed_by_proplayers
 contains_stickers_representing_organizations
@@ -7476,7 +7471,6 @@ filePath
 files_prevented_trusted
 filter
 filterText
-filter_type
 filterclass
 first_sale_date
 first_valid_class
@@ -7514,7 +7508,6 @@ forever
 fpt@
 fractionrounds
 free_trial_account
-friendlyname
 frozen
 fullstate_undo
 fvalue
@@ -8122,7 +8115,6 @@ m_DescriptionTag
 m_DevOnlyTag
 m_EndOfMatch
 m_FirstSaleDate
-m_FriendlyName
 m_Image
 m_InputMacros
 m_ItemDescription
@@ -8143,7 +8135,6 @@ m_LegacySprayTextureNoDrips
 m_LootListContents
 m_LostRound
 m_MainMenu
-m_MapName
 m_Model
 m_MusicKitName
 m_MusicKits
@@ -8862,7 +8853,6 @@ suggestions
 supplemental_data
 supply_crate
 suppressed_field
-surface_properties
 survival
 svalue
 system

@@ -2141,7 +2141,6 @@ EvLa
 Ew`)9Q
 Excluded
 Expecting: 
-Experimental
 Exponent:
 Exported scene as OBJ to %s.\n
 Exported scene as PHONONSCENE to %s.\n
@@ -2629,7 +2628,6 @@ O1NzNfj'fGv
 O7v%
 O?#7n
 OBJ lib
-OBJECT
 OBJECT DESCRIPTOR
 OBJ_NAME_new_index
 OBJ_add_object
@@ -5854,7 +5852,6 @@ m_flProbeVisRadius
 m_flProbeVisThreshold
 m_flQuality
 m_flSizeThreshold
-m_flSpacing
 m_grid
 m_movables
 m_nAmbisonicsOrder
@@ -5879,7 +5876,6 @@ m_probes
 m_reverbClusteringSettings
 m_reverbCompressionSettings
 m_reverbSettings
-m_vEnd
 m_vecAABBs
 m_vecClusterForProbe
 m_vecCompressedData

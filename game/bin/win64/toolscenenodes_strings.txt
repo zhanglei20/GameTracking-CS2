@@ -108,12 +108,10 @@
 !3mmXs
 !5!A!I!O!Y![!_!s!}!
 !9iV
-!= (or missing)
 !?triggered@QAction@@QEAAX_N@Z
 !AECO
 !HRN
 !\f?focusNextPrevChild@QScrollArea@@UEAA_N_N@Z
-!__IsSmartPropPulseActive
 !expected_len || s->s3->previous_client_finished_len
 !expected_len || s->s3->previous_server_finished_len
 !fUY\n
@@ -475,8 +473,6 @@ $prefix_element$
 'prB2
 'sp3s
 ( %1, %2, %3, %4% )
-( m_PlaceAtPositions == ALL ) || ( m_PlaceAtPositions == START_AND_END ) || ( m_PlaceAtPositions == CONTROL_POINTS )
-( m_SelectionMode != SPECIFIC )
 ( m_nChunkHashesSize % sizeof( ChunkHashFraction_t ) ) == 0
 ( nSelectionMode != SPECIFIC )
 (!(1(=(?(I(Q([(](a(g(u(
@@ -556,24 +552,9 @@ $prefix_element$
 +"?updateGeometries@QListView@@MEAAXXZ
 +'+1+3+=+?+K+O+U+i+m+o+{+
 +(#\v&dbF:xrJ'$#
-+Auto Tags
 +D5X
-+End Points
-+Forward
-+Line End Point A
-+Line End Point B
-+Orientation
-+Origin
 +Parameters
-+Position A
-+Position B
-+Result
 +Sgs
-+Target Point
-+Trace Away
-+Trace Direction
-+Vector A
-+Vector B
 +\f?focusOutEvent@QComboBox@@MEAAXPEAVQFocusEvent@@@Z
 +\t?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 +gC&s
@@ -3478,12 +3459,7 @@ $prefix_element$
 /usr/local/ssl/private
 /zt1
 0 to 1 value controlling how much random offset is applied to each point. A value of 0 will generate a regular grid of points.
-0 to 1 value indicating the amout of random offset that should be applied to the reguluarly spaced positions
 0 to 1 value specifying the location on the local x-axis of the deformer around which the bend will occur. A value of 0 means the bend will occur around the minimum end of the deformer, a value of 1 means the bend will occur around the maximum end of the deformer, a value of 0.5 means the bend will occur at the center of the deformer volume.
-0.0 180.0
-0.0 to 1.0 value indicating the probability of this element being evaluated. Where a value of 0 means the element will never be evaluated and 1.0 means it will always be evaluated
-0.001 1.0
-0.01 1.0
 0123456789
 02V8[
 05=k
@@ -3503,7 +3479,6 @@ $prefix_element$
 0x%llx
 0x%p = %s '%s'
 0}dV
-1 64
 1 component
 1 edge
 1 face
@@ -3835,7 +3810,6 @@ $prefix_element$
 <unsupported>
 =!=-=3=7=?=C=o=s=u=y={=
 =&sf9
-== (or missing)
 == PulseGraphDef ==\n
 =O?AqP
 =Q9M
@@ -4970,15 +4944,10 @@ $prefix_element$
 @i1V
 @n2w
 @spawn
-A group of elements that will all be evaulated.
-A local offset to apply to the base volume of the deformer that will not apply to its children.
-A local rotation to apply to apply the base volume of the deformer that will not apply to its children. This can be used to alter the direction of the deformation.
 A new location must be selected in order to save the file.
 A seed value for randomly generated content associated with this object, such as detail props.
-A set of points defining a path to use when an external path isn't specified. This will be used in the preview and thumbnail for the smart prop. It will also be used when the smart prop is placed in Hammer before a path is selected.
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
 A tint color to apply to the entire smart prop. The evaluation of the smart prop receives this color and may use it directly or may modify it before assigning a tint to the individual parts of the smart prop.
-A weight determining the frequency at which this model is placed relative to other models within the detail type. The weights of all models are summed and the probability of selecting this model is its weight divided by the sum weight.
 A!A3A5A;A?AYAeAkAwA{A
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 A%N_A
@@ -5074,12 +5043,10 @@ AI\tHpH8x
 AJsN
 ALG_MODULE_INIT
 ALL:!EXPORT:!LOW:!aNULL:!eNULL:!SSLv2
-ALL_IN_ORDER
 ALWAYS
 ANSI X9.62
 ANY PRIVATE KEY
 APPEND_EXP
-ARRAY: Grid is a specific number of grid divisions. FILL: The boundary is filled with as many as will fit at the specified cell spacing.
 ARRAY_MEMBERS_VIA_PARENT
 ARRAY_PARENT_ONLY
 ASCII
@@ -5175,29 +5142,6 @@ ASN1_seq_unpack
 ASN1_sign
 ASN1_unpack_string
 ASN1_verify
-ASSET_FILTER_CONTAINS
-ASSET_FILTER_DEF_SUBASSET
-ASSET_FILTER_DEPREF_ASSET
-ASSET_FILTER_DEPREF_BY_ASSET
-ASSET_FILTER_DOES_NOT_CONTAIN
-ASSET_FILTER_EQUAL
-ASSET_FILTER_EQUAL_OR_MISSING
-ASSET_FILTER_EXACT_DEF_SUBASSET
-ASSET_FILTER_EXACT_DEPREF_ASSET
-ASSET_FILTER_EXACT_DEPREF_BY_ASSET
-ASSET_FILTER_EXACT_PARENTED_BY_ASSET
-ASSET_FILTER_EXACT_PARENTS_ASSET
-ASSET_FILTER_EXACT_REF_SUBASSET
-ASSET_FILTER_FUNC_COUNT
-ASSET_FILTER_GREATER
-ASSET_FILTER_GREATER_EQUAL
-ASSET_FILTER_LESS
-ASSET_FILTER_LESS_EQUAL
-ASSET_FILTER_NOT_EQUAL
-ASSET_FILTER_NOT_EQUAL_OR_MISSING
-ASSET_FILTER_PARENTED_BY_ASSET
-ASSET_FILTER_PARENTS_ASSET
-ASSET_FILTER_REF_SUBASSET
 ATTR_NAME__ADD_CUSTOM_TAG
 AUTHORITY_INFO_ACCESS
 AUTHORITY_KEYID
@@ -5246,41 +5190,24 @@ AddonMapCommand
 AddonMapCommandIsAddonImplied
 Addr
 Address
-Adjust deformation falloff from the center of the region to the endpoints.
 AdobeDeflate
 Affiliation Changed
 Ag*g*
-Align Backward with Normal
-Align Forward with Normal
 Align To Axis
-Align Up With Normal
-Align the initial orientation of each placed object based on it position on the sphere or circle.
-All positions
 Allocation of the face failed (not a topology failure).
 Allow Deformation
 Allow models in the smart prop to emit lighting
-Allows the parent element to be conditionally evaluated base on the current surface angle. The surface angle is set based on the initial placement of the smart prop object, but can also be updated by the Trace to Surface modifier.
-Allows the parent element to be conditionally evaluated based on attributes assigned to the surface material.
-Allows the parent element to be conditionally evaluated based on surface properties.
 Alpha Fade In Random
 Alpha Fade Out Random
 Alpha Fade and Decay
 Alpha Random
 Alpha decoder initialization failed.
 Alpha of the fade, where 0 = fully transparent and 255 = fully opaque.
-Alternate strings this tag will match when searching for assets by name.
 Always Orient Up
 Ambisonics field of how to reach to nearby inside probes in small spaces.
 Ambisonics field of how to reach to nearby outside probes.
-An element which fits one or more instances of a set of choices on to a line.
-An element which is used to apply a set of modifiers to the state of its parent.
-An element which places an instance of its child elements at a specified interval along a path.
-An element which places multiple instances of its child elements within a radius.
-An element which places multiple instances of its child elements.
-An element which selects a single choice from its set of child choices.
 AnalogBalance
 And R%d <- R%d && R%d
-Angles
 AnimGraph2Clip()
 AnimatableSceneObjectDesc
 Animation Bone Flags
@@ -5292,22 +5219,10 @@ Any Extended Key Usage
 Any Other Cursors Have Tag
 Any Purpose
 Any language
-Application Mode
 Applies ONLY if the item is a member of an array
 Applies ONLY if the item is the parent of an array
 Applies to any attributes
 Applies to array parents or non-array items (just not array members)
-Apply Modifiers
-Apply a position offset to the current transform.
-Apply a random position offset to the current transform.
-Apply a random rotation to the current transform.
-Apply a random scale to the current transform.
-Apply a rotation to the current transform according to the alignment of two points.
-Apply a rotation to the current transform.
-Apply a scale to the current transform.
-Apply scale to the last element in order to fit the line. Only proceed to scale additional elements if the scale range of the last element is not sufficient.
-Apply the active deformer to the current transform as a rigid deformation and disable the deformer.
-ApplyColorMode_t
 ApplyDeformer
 ApplyTransform
 ApplyTransformToEdges
@@ -5351,17 +5266,12 @@ AsShotPreProfileMatrix
 AsShotWhiteXY
 Assert True
 AssertFatalCast
-AssetEditInfoFilterFunc_t
-AssetEngineCommand_t
-AssetWarningFixType_t
 AssignMaterialToFaces
 AssignMaterialToOverlay
 AssignSmoothingModeToEdges
 Async Fire C%d:I%d
 Async Simulate Particles
 AtlasToVolumeTextureConversion(3089): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
-Attachment Mode
-Attempt to apply the same amount of scale to all of the elements placed on the line while still respecting their size constraints.
 Attempted to add two format updaters with the same file format (%s)!\n
 Attempted to add two legacy updaters with the same file format (%s)!\n
 Attempted to add two serializers with the same file encoding (%s)!\n
@@ -5372,10 +5282,8 @@ Attempting to register the command %s for context %s multiple times\n
 Attribute.%s.%s
 Audio Probe
 Authority Information Access
-AutoTagVDataCondition_t
 AutoVisGroup
 Av $1
-Axis around which the rotation will occur
 B channel not found!\n
 B!rA
 B#B)B/BCBSBUB[BaBsB}B
@@ -5402,7 +5310,6 @@ B8G8R8A8_UNORM
 B8G8R8X8_UNORM
 B8Z"h
 B>J7I
-BACKWARD_NORMAL
 BAD ENUMERATED
 BAD INTEGER
 BAD RECURSION DEPTH\n
@@ -5592,11 +5499,6 @@ Bd]U
 Begin mouse capture [%i]: %s\n
 Begin testing a condition composed of Observable values. Continues checking until canceled.
 Begin testing a condition composed of Observable variable references. Continues checking until true.
-Bend Angle
-Bend Deformer
-Bend Point
-Bend Radius
-Bend amount to apply, specified in degrees. Bend occurs along the local x-axis and bends around the local z-axis
 BestQualityScale
 Between the attribute label and editor
 Bh;+j
@@ -5617,8 +5519,6 @@ BlackLevelRepeatDim
 Blend Layer 1 (R)
 Blend Layer 2 (G)
 Blend Layer 3 (B)
-Blend Weight Scale
-Blend weight at which the model will be at full density. Must be between the minimum and maximum blend weight values. The density of this model placement will increase with the blend weight value up to this value at which point it will be at full density.
 BlendLayersUsingTimeSelection
 BoX5
 Bottom Edge
@@ -5745,11 +5645,6 @@ CAST5-CFB
 CAST5-ECB
 CAST5-OFB
 CATMUL_ROM
-CAssetInfoFilterParams
-CAssetTagInfo
-CAssetTypeConfig
-CAssetWarning
-CAssetWarningCheck
 CBI]6
 CBaseEditorSession::Revert - RevertFile failed: %s\n
 CBaseEditorSession::UpdateFileStatus - Failed to get file info: %s\n
@@ -5760,9 +5655,7 @@ CBasePulseGraphInstance::InitInstance_Internal( %s; %p ) %s\n
 CBasePulseGraphInstance::Shutdown( %s; %p ) %s\n
 CBasePulseGraphInstance::StartGraphReload( %p ) %s\n
 CBasePulseGraphInstance::~CBasePulseGraphInstance( %p )\n
-CBaseToolInfo
 CBaseToolsModelInstance::CreateReversedIBs(4572): 
-CBitmapAssetTypeInfo
 CBufferString
 CCITT Group 3
 CCITT Group 4
@@ -5784,9 +5677,7 @@ CDataModel::Unserialize
 CDependencyGraph::Cleanup
 CDependencyGraph::FindAttrNode
 CDependencyGraph::Reset
-CDetailPropModel
 CDetailPropObjectManager::UpdateDirtyObjects()
-CDetailPropType
 CDmAttribute pool
 CDmExtraVertexData
 CDmExtraVertexStream
@@ -5823,15 +5714,12 @@ CDmeTileSetMapInfo
 CDmeTypedLog< T >::BlendLayersUsingTimeSelection
 CDmeTypedLogLayer::Compress
 CDmeTypedLogLayer::Decompress
-CENTER
 CERTIFICATE
 CERTIFICATE PAIR
 CERTIFICATE REQUEST
 CERTIFICATEPOLICIES
 CEdgeSelectionSetDataElement
-CEngineToolInfo
 CEntityNameString
-CExternalToolInfo
 CFALayout
 CFAPlaneColor
 CFaceSelectionSetDataElement
@@ -5966,9 +5854,7 @@ CMS_sign_receipt
 CMS_stream
 CMS_uncompress
 CMS_verify
-CManifestInfo
 CManifestInstance
-CMapAssetTypeInfo
 CMapBox
 CMapCable
 CMapCordon
@@ -6063,7 +5949,6 @@ CModelHelper::UpdateMaterialOverride
 CModelMaterialGroupName
 CModelOverrideData::UpdateVertexBuffer
 CModelPreviewAttachedModel
-CModuleManifests
 CNavArea::PostLoad: Corrupt navigation data. Cannot connect Navigation Areas.\n
 CNavArea::PostLoad: Corrupt navigation ladder data. Cannot connect Navigation Areas.\n
 CNavGenParams - Nav mesh requests project default generation parameters but actual parameters\n  used during construction differ from defaults. Please re-export the map.\n
@@ -6092,10 +5977,8 @@ CONF_parse_list
 CONNECT
 CONN_CTRL
 CONN_STATE
-CONTROL_POINTS
 COPY_EMAIL
 COPY_ISSUER
-CORNER
 CObjectSelectionSetDataElement
 CPBQ
 CPackedStore::CPackedStore
@@ -6154,7 +6037,6 @@ CPulseCursorFuncs::KillThisCursorAndCancel
 CPulseCursorFuncs::KillThisCursorAndFail
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
-CPulseGraphInstance_SmartPropEval
 CPulseGraphInstance_SmartPropEval::Evaluate
 CPulseMathlib::AbsFloat
 CPulseMathlib::AbsInt
@@ -6315,61 +6197,29 @@ CRYPTO_get_ex_new_index
 CRYPTO_get_new_dynlockid
 CRYPTO_get_new_lockid
 CRYPTO_set_ex_data
-CResourceAssetTypeInfo
 CResourceNameTyped
 CSPName
 CSelectionSetDataElement
 CSequenceListHelper::GetSequenceNames
-CSimpleAssetTypeInfo
-CSmartPropAPI
 CSmartPropAPI::AddModel
 CSmartPropAPI::RandomFloat
 CSmartPropAttributeAngles
-CSmartPropAttributeApplyColorMode
 CSmartPropAttributeBool
-CSmartPropAttributeChoiceSelectionMode
 CSmartPropAttributeChoiceSelectionMode - non literal selection mode not currently supported
 CSmartPropAttributeColor
-CSmartPropAttributeColorSelectionMode
-CSmartPropAttributeCoordinateSpace
-CSmartPropAttributeDirection
-CSmartPropAttributeDistributionMode
 CSmartPropAttributeFloat
-CSmartPropAttributeGridOriginMode
-CSmartPropAttributeGridPlacementMode
 CSmartPropAttributeInt
 CSmartPropAttributeLocatorName
 CSmartPropAttributeMaterialGroup
 CSmartPropAttributeMaterialName
 CSmartPropAttributeModelName
-CSmartPropAttributePathPositions
-CSmartPropAttributePickMode
-CSmartPropAttributeRadiusPlacementMode
-CSmartPropAttributeScaleMode
 CSmartPropAttributeStateName
 CSmartPropAttributeString
 CSmartPropAttributeSurfaceProperty
-CSmartPropAttributeTraceNoHit
 CSmartPropAttributeVariableValue
 CSmartPropAttributeVector
 CSmartPropAttributeVector2D
 CSmartPropAttributeVector4D
-CSmartPropChoice
-CSmartPropChoiceOption
-CSmartPropElement
-CSmartPropElement_BendDeformer
-CSmartPropElement_Deformer
-CSmartPropElement_Layout2DGrid
-CSmartPropElement_MidpointDeformer
-CSmartPropElement_Model
-CSmartPropElement_ModelEntity
-CSmartPropElement_PlaceInSphere
-CSmartPropElement_PlaceMultiple
-CSmartPropElement_PlaceOnPath
-CSmartPropElement_PropDynamic
-CSmartPropElement_PropPhysics
-CSmartPropElement_SmartProp
-CSmartPropExprAPI
 CSmartPropExprAPI::EvaluationDepth
 CSmartPropExprAPI::InstanceCount
 CSmartPropExprAPI::InstanceIndex
@@ -6379,18 +6229,9 @@ CSmartPropExprAPI::MaxEvaluationDepth
 CSmartPropExprAPI::PathParameter
 CSmartPropExprAPI::RandomFloat
 CSmartPropExprAPI::RandomInt
-CSmartPropFilter
-CSmartPropFilterAPI
 CSmartPropFilterAPI::Filter
 CSmartPropFilterAPI::FilterProbability
 CSmartPropFilterAPI::FilterSurfaceAngle
-CSmartPropFilter_Expression
-CSmartPropFilter_MaterialAttributes
-CSmartPropFilter_VariableValue
-CSmartPropMaterialReplacement
-CSmartPropModifier
-CSmartPropOperation
-CSmartPropOperationAPI
 CSmartPropOperationAPI::RandomOffset
 CSmartPropOperationAPI::RandomRotation
 CSmartPropOperationAPI::RandomScale
@@ -6402,106 +6243,26 @@ CSmartPropOperationAPI::SetPosition
 CSmartPropOperationAPI::SetTintColor
 CSmartPropOperationAPI::TraceInDirection
 CSmartPropOperationAPI::Translate
-CSmartPropOperation_ComputeCrossProduct3D
-CSmartPropOperation_ComputeDistance3D
-CSmartPropOperation_ComputeDotProduct3D
-CSmartPropOperation_ComputeNormalizedVector3D
-CSmartPropOperation_ComputeProjectVector3D
-CSmartPropOperation_ComputeVectorBetweenPoints3D
-CSmartPropOperation_CreateLocator
-CSmartPropOperation_CreateRotator
-CSmartPropOperation_CreateSizer
-CSmartPropOperation_MaterialOverride
-CSmartPropOperation_MaterialReplacementAPI
 CSmartPropOperation_MaterialReplacementAPI::AddMaterialOverride
 CSmartPropOperation_MaterialReplacementAPI::ClearMaterialOverrides
-CSmartPropOperation_MaterialTint
-CSmartPropOperation_RandomColorTintColor
-CSmartPropOperation_RestoreState
 CSmartPropOperation_RestoreState - m_bDiscardIfUknown false values not currently supported
 CSmartPropOperation_RestoreState - m_bDiscardIfUknown nonliteral not currently supported
 CSmartPropOperation_RestoreState - non literal selection mode not currently supported
-CSmartPropOperation_RigidDeformation
-CSmartPropOperation_RotateTowards
-CSmartPropOperation_SaveColor
-CSmartPropOperation_SaveDirection
-CSmartPropOperation_SavePosition
-CSmartPropOperation_SaveScale
-CSmartPropOperation_SaveState
-CSmartPropOperation_SaveSurfaceNormal
-CSmartPropOperation_SetMateraialGroupChoice
-CSmartPropOperation_SetOrientation
-CSmartPropOperation_SetPosition
-CSmartPropOperation_Trace
-CSmartPropOperation_TraceToLine
-CSmartPropOperation_TraceToPoint
-CSmartPropParameter
-CSmartPropPulse_BaseQueryableFlow
-CSmartPropPulse_CreateLocator
 CSmartPropPulse_CreateLocator::Run
-CSmartPropPulse_CreateRotator
 CSmartPropPulse_CreateRotator::Run
-CSmartPropPulse_CreateSizer
 CSmartPropPulse_CreateSizer::Run
-CSmartPropPulse_CriteriaPathPosition
 CSmartPropPulse_CriteriaPathPosition::CheckRequirement
-CSmartPropPulse_CriteriaPathPosition::Criteria_t
-CSmartPropPulse_FitOnLine
 CSmartPropPulse_FitOnLine::Pick
-CSmartPropPulse_Group
 CSmartPropPulse_Group::Run
-CSmartPropPulse_PickOneSelector
 CSmartPropPulse_PickOneSelector::Pick
-CSmartPropPulse_PlaceInSphere
 CSmartPropPulse_PlaceInSphere::Run
-CSmartPropPulse_PlaceOnPath
 CSmartPropPulse_PlaceOnPath::Place
-CSmartPropPulse_SelectionChoiceWeight
 CSmartPropPulse_SelectionChoiceWeight::CheckRequirement
-CSmartPropPulse_SelectionChoiceWeight::Criteria_t
-CSmartPropPulse_SelectionEndCap
 CSmartPropPulse_SelectionEndCap::CheckRequirement
-CSmartPropPulse_SelectionEndCap::Criteria_t
-CSmartPropPulse_SelectionLinearLength
 CSmartPropPulse_SelectionLinearLength::CheckRequirement
-CSmartPropPulse_SelectionLinearLength::Criteria_t
-CSmartPropPulse_SmartProp
 CSmartPropPulse_SmartProp::Run
-CSmartPropRoot
-CSmartPropSelectionCriteria
-CSmartPropSelectionCriteria_EndCap
-CSmartPropSelectionCriteria_IsValid
-CSmartPropSelectionCriteria_PathPosition
-CSmartPropTransformOperation
-CSmartPropVariable
 CSmartPropVariableComparison
 CSmartPropVariableValue
-CSmartPropVariable_Angles
-CSmartPropVariable_ApplyColorMode
-CSmartPropVariable_Bool
-CSmartPropVariable_ChoiceSelectionMode
-CSmartPropVariable_Color
-CSmartPropVariable_ColorSelectionMode
-CSmartPropVariable_CoordinateSpace
-CSmartPropVariable_DirectionVector
-CSmartPropVariable_DistributionMode
-CSmartPropVariable_Float
-CSmartPropVariable_GridOriginMode
-CSmartPropVariable_GridPlacementMode
-CSmartPropVariable_Int
-CSmartPropVariable_Material
-CSmartPropVariable_MaterialGroup
-CSmartPropVariable_Model
-CSmartPropVariable_PathPositions
-CSmartPropVariable_PickMode
-CSmartPropVariable_RadiusPlacementMode
-CSmartPropVariable_ScaleMode
-CSmartPropVariable_String
-CSmartPropVariable_SurfaceProperty
-CSmartPropVariable_TraceNoHit
-CSmartPropVariable_Vector2D
-CSmartPropVariable_Vector3D
-CSmartPropVariable_Vector4D
 CSteamAudioAmbisonicValues
 CSteamAudioBandValues
 CSteamAudioData
@@ -6516,7 +6277,6 @@ CSteamAudioSignal
 CStoredCamera
 CStoredCameras
 CStrongHandle
-CSubassetTypeInfo
 CT Certificate SCTs
 CT Precertificate Poison
 CT Precertificate SCTs
@@ -6537,7 +6297,6 @@ CToolRenderContext::PushTransform - busted through MAX_MATRIX_STACK_DEPTH (%d)
 CToolRenderContext::PushTransform - matrix stack underflow
 CToolSceneNode
 CToolSceneVmap
-CToolsConfig
 CTrajectoryPath
 CTrajectoryPathNode
 CURVE_TANGENT_FREE
@@ -6684,7 +6443,6 @@ CUtlRBTree<struct LayerEvent_t<unsigned char>,class CLessFunc<&public: static bo
 CUtlSortVector<struct ChunkHashFraction_t,class CUtlSortVectorDefaultLess<struct ChunkHashFraction_t::SortKey_t>,class CUtlVector<struct ChunkHashFraction_t,int,class CUtlVectorMemory_Growable<struct ChunkHashFraction_t,int,0> > >::Find
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CUtlVectorFixedGrowable
-CVMMDAssetTypeInfo
 CVcn
 CVertexListSceneObject
 CVertexSelectionSetDataElement
@@ -6707,7 +6465,6 @@ CameraCalibration2
 CameraSerialNumber
 CameraTargetDistance
 Can not read scanlines from a tiled image
-Can this object be scaled. If enabled the minimum and maximum lengths must be set to specify the size range of allowable scale.
 Can't find helper '%s' - fgd error?\n
 Cancel
 Cancel observing.
@@ -6737,19 +6494,16 @@ Cannot unserialize a prefix element here (type "$prefix_element$")
 Cannot write directory, out of space
 CapToggle
 Caps
-Cast Shadows
 Cast of %s loses value information (returning %s) in %s on %s:%u\n
 Catmul-Rom
 Catmull-Rom
 Catmull-Rom (Norm X)
 Catmull-Rom (Norm)
 Catmull-Rom (Tangent)
-Causes the parent element to only be evaluated with a specified random probability.
 Ceiling - round float up to nearest integer)
 Ceiling Float
 CellLength
 CellWidth
-Center
 Centeroncamera
 Certificate Hold
 Certificate Sign
@@ -6783,19 +6537,9 @@ Checkout Failed.
 Checkout was NOT successful! To save you must select a different file.
 Checkout?
 CheekH
-Child Selection Mode
-Child elements will be placed within a circle of the specified radius.
-Child elements will be placed within a sphere of the specified radius.
-Children
-Choice
 Choice A
 Choice B
 Choice C
-Choice Index
-Choice Name
-Choice Output Variable
-Choice Weight
-Choices
 ChromaBlurRadius
 Chunk hash not found.
 ChunkHashFraction_t::GetBLAKE3HashContents
@@ -6811,7 +6555,6 @@ Class
 Class does not allow allocation from its schema binding
 CleanFaxData
 Cleanup
-Clear Active Overrides
 Clear History
 Clear Material Overrides
 Clear any previous material overrides.
@@ -6832,7 +6575,6 @@ Cluster Index
 ClutterSceneObjectDesc
 Code Signing
 Code=
-Coefficient to modulate the rotation
 Cofactor: 
 CollapseEdge
 CollapseFace
@@ -6845,20 +6587,11 @@ CollisionWireframeDisabled
 Collisions
 Color + Alpha
 Color Fade
-Color Gradient
 Color Light From Control Point
-Color Position
 Color Random
-Color Selection
-Color Selection mode
 Color data not supported, attribute stream '%s' will be discarded\n
-Color for the tag badge
-Color to be applied if this choice is selected.
-Color to display the rotator handle with.
-Color to use to display the configuration handle.
 ColorAlpha
 ColorBrightness
-ColorChoice_t
 ColorContrast
 ColorMap
 ColorMatrix1
@@ -6874,11 +6607,9 @@ Command Name
 Command.%s.%s
 Commit Step
 Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
-Compares the current value of a variable to the specified value. If the comparison is false the element evaluation is stopped.
 Compile As Override
 Compiled GUI file
 Compiled Vis Data
-Complete fade out size
 Completed
 Component Locking Textures
 Components
@@ -6890,16 +6621,11 @@ Compression algorithm does not support random access
 Compression scheme %u %s decoding is not implemented
 Compression scheme %u %s encoding is not implemented
 Compute
-Compute a dot or cross product between two 3D vectors
-Compute the distance between two 3D points
-Compute the spacing distance in the 2d plane defined by the up direction. Most useful when using a fixed up direction, if maintaining a distance in the 2d plane is more important than maintaing distance along the path.
-Compute the vector between two 3D points
 ComputeShaderSkinning
 ComputeTilesForModelInstances
 Computes 2 ( 2.71...) raised to a power
 Computes e ( 2.71...) raised to a power
 Conditional
-ConfigurationHandleShape_t
 Configured
 ConnectionData
 ConsecutiveBadFaxLines
@@ -6924,11 +6650,7 @@ Content-Type: multipart/signed;
 Content-Type: text/plain\r\n\r\n
 Context
 ContigousSelectFloodFill
-Continuous Interpolation
 Controls the average distance between any two object locations. However with random offsets object locations may be closer.
-Controls the size at which a model marked as a detail object will fade out.
-Controls whether or not the configuration of the locator can include scale. If enabled scale can be applied to the editable locator in Hammer. If disabled the scale will not be editable and the current scale will be used.
-Controls whether or not the locator can be edited in a smart prop configuration. If enabled an editable locator will appear when the smart prop is placed in Hammer. Any changes to that locator will modify the current transform.
 Conversion from DmeMesh to PolygonMesh removed %i of %i faces.\n
 Convert %s R%d <- %s R%d
 Convert degrees (0-180) to radians (0-pi)
@@ -6943,10 +6665,6 @@ ConvertSelfToPulse unimplemented (%s)
 ConvertSelfToPulse_Criteria unimplemented (%s)
 ConvertSelfToPulse_Modifier unimplemented (%s)
 Convexity Angle
-Coordinate Space
-Coordinate space the axis of rotation is specified in.
-Coordinate space the end point is specified in.
-Coordinate space the origin is specified in. Using Element space allows specifying a value relative to the current position. However, world space should generally be used when for variable values.
 Copy 'element' to the end of 'a', increasing its count by one.
 Copy R%d <- R%d
 Copy of map file %s does not have a valid world. World element handle: %i
@@ -6954,7 +6672,6 @@ CopyFrom
 Copyright
 Cordon
 Cordon Name
-Corner
 Cosine of angle. Input in radians, output in radians
 Could not add file(s): %s
 Could not check in file(s): %s
@@ -6967,18 +6684,11 @@ CounterStrike
 Courier
 Cpoint_deformer
 Create In Hierarchy
-Create Locator
 Create Prefab Runtime Entity
-Create Rotator
-Create Sizer
-Create a locator with the current transform. The locator may optionally be configurable, so that its transform can be modified in Hammer.
-Create a rotator that will be displayed at the current location, allowing the user to manipulate a rotation around an axis. The rotation value can be applied to the current transform as well as saved to a variable.
-Create a sizer that will be displayed at the current location, allowing the user to manipulate the specified set of size values.
 CreateBufferForLines(114): 
 CreateDlgAddToExisting
 CreateDlgHideSelected
 CreateDlgRemoveFromOthers
-Creates a bend deformer that is applied to child elements. The deformation bends the local space x-axis around the local space z-axis. The Angles property can be used to rotate the local axis to change the direction of deformation.
 Criteria with nonliteral enabled state unsupported (%s)
 Critical
 CrlID
@@ -7005,7 +6715,6 @@ Cursor[ ptr:%p | id:%d | graph:%p ]: ~CPulseExecCursor()\n
 Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
 CurveEditor
-CurveEditor()
 Custom Groups
 Custom Vis Group
 Custom2DColors
@@ -7140,7 +6849,6 @@ DH_generate_key
 DH_generate_parameters_ex
 DH_new_method
 DHparams_print_fp
-DIAMOND
 DIRECTORYSTRING
 DIR_ADD
 DIR_CTRL
@@ -7282,7 +6990,6 @@ DcO/lcK+hSK
 Dd g4X3
 Deactivate %s
 Deactivate all instances
-Debug
 Debug Focus Widget
 Debug Widget Under Mouse
 DebugTreeHover
@@ -7296,12 +7003,6 @@ Debugger break with widget: 0x%p\n
 Decipher Only
 DecompressTextureBits
 Default (no scale)
-Default Material
-Default Material Group
-Default Model
-Default Path In World Space
-Default Surface Property
-Default material group (skin) to assign to the variable value.
 DefaultCropOrigin
 DefaultCropSize
 DefaultGrassMaterial
@@ -7314,13 +7015,9 @@ DefaultPointEntity
 DefaultScale
 DefaultSolidEntity
 DefaultTextureScale
-Defines a color gradient from which a color can be selected based on the selection mode.
-Defines a color gradient from which a random color will be piked.
 Deflate
 Deform Children
-Deformable Entity Settings
 Deformation Axis
-Deformation Enabled
 Deformation Mode
 Deformer
 Deformer %i
@@ -7334,7 +7031,6 @@ DeleteFaces
 DeleteVertices
 Density
 Density Layer
-Density Scale
 Dependent on context, single convex if part of an entity, mesh if world geometry
 DeregisterEventSource
 Derived must implement
@@ -7343,28 +7039,23 @@ Designable
 Desired Kill Priority
 Detach R%d
 Detail Objects
-Detail Prop Type
 DetailDistance
 DetailProps:LoadModels
 Dhq0\ri
-Diamond
 Didn't expect '=' for non-flags non-choices variable %s
 Different CRL scope
 Diffie-Hellman based MAC
 Diffie-Hellman part of OpenSSL 1.0.2j  26 Sep 2016
 Diffie-Hellman routines
 Digital Signature
-Dimensions
 Dimensions InOut Fraction
 Dimensions Probe
 Dimensions Size
 DirName
 DirName: 
-Direction Vector
 Direction of the path reaching the probe.
 Directly specifies the name of a collision group to assign to the mesh, replaces any group specified by the material or collision property.
 Directory
-Disable Dynamic Deformable
 Disable Height Displacement
 Disable In Low Quality Mode
 Disable Merging
@@ -7376,14 +7067,10 @@ Displacement
 DisplacementBrushSettings
 DisplacementMappingSelectionDepthBias
 Display Base Face
-Display Model
 Display as voxels
 Distance Between Control Points Scale
 Distance at which each part of the prop starts to fade. Only applies if Cull Distance > 0. Positive values are absolute values, while negative values are relative to the cull distance. For example Cull Distance = 100, Start Fade Distance = -30 means the object will start fading at 70 units away and will disappear when 100 units away.
 Distance to Control Points Scale
-Distribute the child element evenly within the specified area of volume
-Distribute the child elements randomly within the specified area or volume
-Distribution Mode
 Div R%d <- R%d / R%d
 Divisions (X)
 Divisions (Y)
@@ -7522,19 +7209,10 @@ DmeVertexData
 DmeVertexDataBase
 DmeVertexDeltaData
 DnRv
-Do not allow selected elements to be scaled, the parts may not fit the line exactly
 Do not load vmf files in hammer, import to a vmap first!
 Do not render when using the lowest quality video settings. This object is a non-essential detail.
 Do not show in the row (but maybe show in context menu)
 Do not trace against any cable objects.
-Do not trace against any models (only hit world geometry).
-Do not trace against cable geometry.
-Do not trace against dynamic entities which may move in game.
-Do not trace against no draw materials (material attribute 'mapbuilder.nodraw').
-Do not trace against sky materials (attribute 'mapbuilder.sky').
-Do not trace against tool materials (attribute 'tools.toolsmaterial').
-Do not trace against translucent materials (materials with 'alphatest' or 'translucent' attributes).
-Do nothing
 DoTransform
 DockWidgetArea
 DocumentName
@@ -7733,7 +7411,6 @@ EDH-RSA-DES-CBC3-SHA
 EDIPARTYNAME
 EECDH
 EG{M
-ELEMENT
 ELEM_NAME__ENT_ATTR_TYPES
 ELF0
 EN2 s/
@@ -7867,7 +7544,6 @@ E[3M
 E[hr
 E\nQc
 E\tV_logd
-Each element will be scaled to is maximum allowable size that will still fit on the line.
 EarlyRetireParticleSystems
 Ease In
 Ease In/Out
@@ -7887,12 +7563,9 @@ Edit
 EditGameClassProps
 Editor Only
 Ee{5
-Effect Size
 EhQ,[3
 EjNG
 Element Access R%d <- R%d[R%d]
-Element space
-Element space transform, includes the transform of the current element, which is also relative to the object.
 Element uses unknown element type %s\n
 Element.%s
 Email address mismatch
@@ -7906,21 +7579,14 @@ Emissive Lighting
 Emissive Lighting Boost
 EmitEditingFinishedOnDrop
 EnableSSAO
-Enables an alternate interpolation method that doesnt deform endpoint tangents.
 Encipher Only
 Encountered an element array attribute '%s' while reading the prefix element
 Encountered an element attribute '%s' while reading the prefix element
 Encountered invalid element ID data!
-End Cap Settings
 End Fade Dist
-End Point
 End Target
 End mouse capture [%i] due to hidden widget\n
 End mouse capture [%i]: %s\n
-End point of the line to trace to.
-End point space
-Endpoint of deformation region.
-Enforce Limits
 Enter
 Enter 
 Enter PEM pass phrase:
@@ -7971,8 +7637,6 @@ Evaluate
 Evaluate the curve at the specified input position
 Evaluate the gradient at a position between 0 and 1
 Evaluated %s in %.2fms\n
-Evaluates a specified smart prop as a child of the current element.
-Evaluates the specified expression, if the result of the expression is false evaluation of the element is stopped.
 Evaluation Depth
 EvaluationDepth
 Event %u layer %i at time %i type %s\n
@@ -8043,7 +7707,6 @@ EventTileGridLayerListChanged_t
 EventTileGridResized_t
 EventTileGridTileSetMapChanged_t
 EventTileSetModified_t
-Every N positions
 Ew`)9Q
 Excluded
 ExitTools
@@ -8103,7 +7766,6 @@ Expecting numbers 'min_x' 'min_y' 'min_z'
 Expecting quoted attribute value for attribute "%s", didn't find one!
 Expecting tag name
 Expecting: 
-Experimental
 Experimental - please ignore
 Exponent:
 Exponential Decay
@@ -8114,9 +7776,6 @@ ExportFbxEmbedTextures
 ExportFbxUnit
 ExportHidden
 ExportProps
-Expression to evaluate to detemrine if this parameter should be read-only. Can be used to make this parameter read-only based on the state of other parameters.
-Expression to evaluate to determine if this choice is currently valid.
-Expression to evaluate to determine if this parameter should be hidden. Can be used to hide this parameter based on the state of other parameters.
 Extended OCSP Status
 Extension
 Extension Request
@@ -8139,7 +7798,6 @@ FGD Variable %s has bad default value %d (has bits set that are not valid choice
 FILE pointer
 FILE_CTRL
 FILE_READ
-FILL
 FIPS
 FIPS routines
 FIPS_CIPHERINIT
@@ -8149,13 +7807,10 @@ FIPS_CIPHER_CTX_SET_KEY_LENGTH
 FIPS_DIGESTINIT
 FIPS_MD_CTX_COPY
 FIPS_mode_set
-FIRST
 FN|p
 FORCE_UINT
 FORM
 FORMAT
-FORWARD
-FORWARD_NORMAL
 FULL
 FU\n-XP
 FV|FgUV
@@ -8172,7 +7827,6 @@ Face was successfully added
 FaceSelection
 Facial Animation File
 Factory for element type '%s' already exists (Check your IMPLEMENT_ELEMENT_FACTORY macros for duplicate lookupNames)\n
-Fade Level
 Fade Start Distance
 Fail Outflow
 Failed to add filter for asset tag %s, unknown tag.\n
@@ -8202,7 +7856,6 @@ Failed to parse channel info.\n
 Failed to read
 Failed to read %d bytes\n
 Failed to read attribute.\n
-Falloff
 FastAssetPicked
 Fax3Decode1D
 Fax3Decode2D
@@ -8223,11 +7876,8 @@ Field Type: %s\n
 Field=
 FieldOfViewCotangent
 File not open for reading
-Fill
-Fill the area based on the largest bounds of child elements as specified in their selection criteria.
 FillOrder
 Film
-Filter
 Filter Probability
 Filter Surface Angle
 Filter Using Exclusion Volumes
@@ -8236,12 +7886,6 @@ Filter downstream elements based on a specified random probability
 Filter downstream elements based on a true/false condition
 Filter downstream elements based on the current surface angle. The surface angle is set based on the initial placement of the smart prop object, but can also be updated by the Trace to Surface modifier.
 Filter:
-Filter: Expression
-Filter: Material Attributes
-Filter: Probability
-Filter: Surface Angles
-Filter: Surface Properties
-Filter: Variable Value
 FilterProbability
 FilterSurfaceAngle
 FilterTextures
@@ -8252,10 +7896,6 @@ FindAttrNode
 Fingers
 Fingers_L
 Fingers_R
-First
-Fit on Line
-Fit on Line Pick Mode
-Fit on Line Scale Mode
 Fixed
 Fixed Array Enums
 FixedArrayEnums
@@ -8302,10 +7942,7 @@ FoliageAnimation
 Follow user preference
 Fop]
 Force Hidden
-Force Static
-Force this model to be placed as a static model rather then generating an entity.
 ForceStaticPropsForModelDrags
-Forward direction (+x)
 ForwardSpeedMax
 Found duplicate attributes: '%s' and '%s', keeping '%s' < %s > and removing '%s' < %s >\n
 Frac
@@ -8316,7 +7953,6 @@ Free
 FreeByteCounts
 FreeOffsets
 Full
-Full Density Blend Weight
 Function "%s" takes %i parameters, but %i were given
 F|w)a]c
 G channel not found!\n
@@ -8379,9 +8015,6 @@ GOST94
 GOST94-GOST89-GOST89
 GOST94-NULL-GOST94
 GPSIFDOffset
-GRADIENT_LOCATION
-GRADIENT_RANDOM
-GRADIENT_RANDOM_STOP
 GRAPHICSTRING
 GREATER
 GREATER_OR_EQUAL
@@ -8395,8 +8028,6 @@ GameDefaultFarZ
 GameFeatureSet
 GeneralNames
 GeneralString
-Generate the grid by placing N x N children.
-Generates set of child instances arranged in a regular grid layout.
 Generator (compressed):
 Generator (hybrid):
 Generator (uncompressed):
@@ -8438,9 +8069,6 @@ GlobalTopLevel
 GoJJw
 GoXis
 Go^ldg
-Gradient Random
-Gradient Random Stop
-Gradient Specific Value
 Gradient()
 GradientFog
 Grass
@@ -8451,12 +8079,8 @@ Grayscale
 Grid
 Grid Height
 Grid Nav Markup
-Grid Origin
-Grid Placement
 Grid Width
 Grid layout should be an array of arrays
-Grid segments along Length axis.
-Grid segments along width axis.
 Grid0
 Grid10
 Grid1024
@@ -8525,7 +8149,6 @@ HammerImagePlane_Indices
 HammerImagePlane_Verts
 HammerInfo
 HammerObjectPicker()
-Handle Settings
 Handle Shape
 HandleColor
 Hardware
@@ -8566,7 +8189,6 @@ HotspotMappingMode
 HotspotPerFace
 HotspotTilingSelectionMode
 HoverItemChanged
-How much should the surface normal up direction influence the final orientation. [ 0, 1 ] where 0 = don't modify the orientation, 1 = completely re-orient to match the surface.
 Hp)X?
 Hq,r/f
 HqI9x
@@ -8634,58 +8256,25 @@ I\n?compare@QString@@QEBAHAEBV1@W4CaseSensitivity@Qt@@@Z
 I\r?endsWith@QString@@QEBA_NVQChar@@W4CaseSensitivity@Qt@@@Z
 I\r?hitButton@QCheckBox@@MEBA_NAEBVQPoint@@@Z
 I\tHA\t981G'dc
-Icon associated with the tag
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
 If -1 timer will continue forever
-If No Surface Hit
-If a variable name is specified, sets the value of that variable to the index of the selected choice
 If checked, decompress and show compressed reverb IRs.
-If checked, this model will not deform in game when the smart prop is placed inside a dynamic deformable entity (such as func_deformable_brush).
-If enabled a model will be displayed at the position of the sizer that can be used to select the sizer in Hammer.
 If enabled and the smart prop is inside a prefab, the evaluation of the smart prop considers only the contents of the parent prefab, not anything outside the prefab. For example, if enabled, any traces performed by the smart prop will only hit other objects within the parent prefab.
-If enabled the model will be rendered as a detail object, which is faster for placing many small objects and has fade out functionality, but may have different lighting characteristics. Detail object models support only uniform scale and will use the largest component of the scale value.
 If enabled the prefab will be loaded when it is the child of another prefab, if disabled, this prefab will not be loaded if it is the child of another prefab.
 If enabled the prefab will not be baked into the parent map during map compile, but instead will be dynamically loaded in the game. This requires the target map to be compiled separately. Additionally this requires support for dynamic loading of maps by the game, which may not be supported by all games and game systems. Do not use without checking to see if this is fully supported by the game you are working on.
-If enabled, any changes made to the evaluation state by the target smart prop (as well as modifiers) will only apply locally and will not affect the evaluation state of the parent. Disabling this will allow modifications to the evaluation state by the referenced smart prop to apply the current state of the of the parent. For example if the referenced smart prop applies a transform and you want the transform to affect the elements in the parent after this element, then you should disable local evaluation state.
 If enabled, any entity target names within the prefab will have a prefix applied to ensure they are unique. This prevents any issues with entities in two different prefabs having name collisions.
-If enabled, clear any previous material overrides, so that only the material replacements specified in this table will be active.
-If enabled, instead of tracing from the origin to the line, trace away from the line for the specified distance starting at the origin.
-If enabled, instead of tracing from the origin to the target point, trace away from the target point for the specified distance starting at the origin.
-If enabled, only the transform of the model will be modified by any active deformer, the vertices of the model will not be changed by the deformer.
-If enabled, the default path values will be treated as world space values, if disabled they are treated as object space values. Typically it makes sense for literal values to be treated as being in object space, but if the values are being supplied by locators they will typically be in world space.
-If enabled, the minimum and maximum rotation angles will be used to limit the range of the rotation.
-If enabled, the object level scale will be ignored, meaning any scale applied in Hammer will have no effect on the element or its children.
-If enabled, the rotation will be reset to a world space instead of object space, meaning any rotation applied to the object in Hammer will be ignored.
 If enabled, there will be a point_prefab entity at runtime representing this prefab as an EntityIO target (requires Relays and a Target Name). Map Relay connections will not be baked, but will instead route through this entity.
-If enabled, this value will be exposed as a parameter that can be set on the smart prop object in hammer.
-If no surface is hit move the current transform to the end of the trace.
-If no surface is hit move the current transform to the start of the trace.
-If no surface is hit stop evaluation of the current element, no following modifiers will be evaluated and the current transform will not be modified.
-If no surface it hit, don't update the transform at all, act as if the trace was not performed.
-If non-empty, specifies the name of a surface property to use for all physics shapes of the specified model, overriding any surface properties specified within the model.
-If non-zero, specifies the angle increment to which the randomly selected value will be snapped. Note that the snap value is absolute, not relative to the min or max, but if the if the min or max are not multiples of the snap value they can still be selected.
-If non-zero, specifies the increment to which the randomly selected offset value will be snapped. Note that the snap value is absolute, not relative to the min or max, but if the if the min or max are not multiples of the snap value they can still be selected.
-If non-zero, specifies the increment to which the randomly selected scale value will be snapped. Note that the snap value is absolute, not relative to the min or max, but if the min or max are not multiples of the snap value they can still be selected.
-If not using a fixed up direction, provides an initial up direction which will be used to determine the orientation of first element on the path, after that the elements will incrementally update to follow the path and may not match this direction. If Use Fixed Up direction is specified, then all elements will use this direction to deterime their up direction.
-If set, draw this as an overlay image on the asset preview
 If set, the contents of the prefab will not be included in visibility calculations.
-If set, the presence of this tag will cause the tools to hide the asset from users by default. NOTE: This means if an asset gets tagged with this it might 'dissapear' from the UI!
-If set, the presence of this tag will cause the tools to suppress or dissuade use in several ways (and draw a red X over the asset preview)
 If specified, each wait interval will vary randomly between WaitInterval this value
 If specified, provides the name of an entry in scripts/collision_properties.txt that specifies the collision group and interaction layers to use, rather than those specified in the material. 
 If the file is saved in this location it cannot be used in game.\nSave here anyway?
-If the smart prop is child of a deformable entity, this setting specifies how the entity generated by this element will be attached to the deformable surface.
-If the smart prop is child of a deformable entity, this setting specifies how the entity generated by this element will be oriented relative to the deformable surface.
-If the specified vectors are not orthogonal, normally the up vector will be adjusted to make it orthogonal to the forward vector. If prioritize up is true, then the forward vector will be adjusted to be orthogonal to the specified up vector instead.
 If this cursor spawns other work via Fire And Forget, should this Tag be inherited?
 If this is enabled and name fixup is enabled, the prefix used for name fixup will be the prefab target name instead of the unique id. If the target name is empty then the prefab the unique id will still be used as the prefix. Note that if two prefabs use the same target name for their prefix it will be possible to have entities inside the prefabs end up with name collisions.
 If true this geometry is used as an occluder for precomputed visibility
 If true this geometry will be baked into the world geometry of the map so that the model is not referenced at runtime.
 If true this will not be merged with other geometry during map compile (reduces rendering efficiency).
-If true, the parent element will be discarded there is no state with the specified name. If false, and there is no state with the specified name then no changes are made.
 If true, this geometry renders into baked cube maps
-If true, treat the specified up direction as fixed up direction to apply to all elements placed on the path. If false the up direction is just an initial direction.
 IgnoreConsoleKeypress
 Ignored
 Ij)s
@@ -8726,7 +8315,6 @@ Indicate that a checkpoint has been reached.
 Indicates a test failure if Value is false.
 Indicates a test failure if value is false; only tested when running unit tests
 Influence radius of the probe.
-InfoDataFilter_t
 Inherit Velocity
 Inherit all
 Inhibit Policy Mapping
@@ -8736,9 +8324,7 @@ Initial Scalar Noise
 Initial Velocity Noise
 InkNames
 InkSet
-Inner radius from the placement position where the model can appear.
 Input Binding Error
-Input Coordinate Space
 Input Debugger [%1]
 Input Sequence
 Input Shapes
@@ -8769,7 +8355,6 @@ Integer division - unlike the divide (/) node, this will truncate any remainder 
 Internal error, unknown tag 0x%x
 International Organizations
 InteroperabilityIFDOffset
-Interpret Vector B as plane normal.
 Invalid 'dockWidgetArea (%s)
 Invalid 'toolbarArea' (%s)
 Invalid Path
@@ -8805,19 +8390,14 @@ IquO
 IrradVolumeOuterHull
 IrradVolumeVoxels
 Is In Test Mode
-Is Valid
 Is Valid Vector
 Is Valid World Vector
-Is this an element which should be placed at the end of the line.
-Is this an element which should be placed at the start of the line.
-Is this element enabled? If not enabled, this element will not be evaluted and will have no effect on the result.
 IsEmbeddedSubClass
 Isosurface
 IsosurfaceTriangleIndices
 IsosurfaceWireframeIndices
 Issuer certificate lookup error
 ItemFile
-Items
 ItemsFiles
 Iw,e=2-b[
 IytF
@@ -8917,12 +8497,8 @@ L<L7
 L@4T
 L@CURVE_TANGENT_LINEAR
 LAM\rhaI)|pL<
-LARGEST_FIRST
 LBN6
-LEAST_AGGRESSIVE
-LEFT
 LESS
-LESS_AGGRESSIVE
 LESS_OR_EQUAL
 LG.HK
 LINEAR
@@ -8952,7 +8528,6 @@ LZWSetupEncode
 L\r?hitButton@QToolButton@@MEBA_NAEBVQPoint@@@Z
 L\t?canDropMimeData@QAbstractItemModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z
 L_?toImage@QPixmap@@QEBA?AVQImage@@XZ
-Largest fitting
 Lasso select intersecting
 Lasso select through
 Last perforce error was: "%s"\n
@@ -8961,8 +8536,6 @@ Lattice Control Point
 Lattice Deformer
 LatticeDeformerEnabled
 LaunchEngineTool
-Lay out child elements with their origin at the center of each grid cell.
-Lay out child elements with their origin at the corner of each grid cell.
 Layer %d:  adding key at time %d [%d -> %d], value 
 Layer Composite Operators
 Layer Name
@@ -8972,15 +8545,10 @@ Layer which provides a color tint to be applied to the grass.
 Layer which provides a tint color to be applied to objects
 Layer which specified the density at which the grass is to be placed across the terrain.
 Layer which specifies the height the grass will be placed at. Grass placement only supports height, not displacement.
-Layout Grid
-Layout length vertically (Along Z axis instead of Y).
 LbWf
 Leaking %i elements\n
 Leap to Chunk C%d
-Least Aggressive
-Least aggressive fade out. The object will be quite small before fading out. Fade out will only complete at the size cull limit.
 Left Edge
-Left direction (+y)
 Left4Dead
 LeftFingers
 Legs
@@ -8992,9 +8560,7 @@ LensInfo
 Lerp Float
 Lerp Vector
 Lerp World Vector
-Less Aggressive
 Less R%d <- R%d < R%d
-Less aggressive fade out. The object will not fade out until it is smaller on screen than normal.
 LessEq R%d <- R%d <= R%d
 Lifespan Decay
 Lifespan from distance to world
@@ -9020,7 +8586,6 @@ Line length mismatch
 LineColor
 LineLength
 Linear Interp.
-Linear Length
 Linear Scale
 LinearResponseLimit
 LinearScale
@@ -9029,13 +8594,6 @@ LinkedEntityClass
 LipLoV
 LipUpV
 LipsV
-List of child elements which will appear if this element appears
-List of material attributes on which this element is not valid. If empty, the element is not restricted to any specific surfaces.
-List of material attributes on which this element is valid. If empty, the element is not restricted to any specific surfaces.
-List of possible colors which may be selected
-List of surface properties on which this element is not valid. If empty element is not restricted to any specific surfaces.
-List of surface properties on which this element is valid. If empty element is not restricted to any specific surfaces.
-List of the root level elements making up the smart prop definition, each element may be an entire tree.
 Live Audition
 Load Default Positions
 Load at runtime
@@ -9052,8 +8610,6 @@ LoadNavMesh: bad buffer alignment.\n
 LoadNavMesh: unable to read movable meshes setting 'gravity follows rotation'.\n
 Loading map: %s
 Loading prefab: %s
-Local space position translation to apply to the current transform
-Local space rotation (in degrees) to apply to the current transform
 LocalKeySet
 LocalizedCameraModel
 Locator
@@ -9077,7 +8633,6 @@ Ltc$
 M'Ezb
 M-laO
 M0 E
-MAINTAIN_OFFSET
 MAPCLASS_ERROR
 MASK:
 MAtomicTransfersAsPlainString
@@ -9101,10 +8656,6 @@ MMouseDoubleClick
 MODULE_INIT
 MODULE_LOAD_DSO
 MODULE_RUN
-MORE_AGGRESSIVE
-MOST_AGGRESSIVE
-MOVE_TO_END
-MOVE_TO_START
 MPropertyAutoExpandSelf
 MPropertyCustomEditor
 MPropertyFlattenIntoParentRow
@@ -9116,8 +8667,6 @@ MPulseExpressionAlias
 MPulseFunctionHiddenInTool
 MS[;6
 MSmartPropClassVersion
-MULTIPLY_CURRENT
-MULTIPLY_OBJECT
 MVDataAnonymousNode
 MVDataAssociatedFile
 MVDataBase
@@ -9152,7 +8701,6 @@ M\t?canDropMimeData@QAbstractProxyModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@H
 M\v?event@QListWidget@@MEAA_NPEAVQEvent@@@Z
 M\vOj
 Mail
-Maintain Closest Triangle Offset
 Make
 Make Angle
 Make Angle From Forward Vector
@@ -9197,22 +8745,14 @@ Material 1 Weight
 Material 2
 Material 2 Weight
 Material Adjustment Params
-Material Asset Variable
-Material Color Tint
 Material Group %s
 Material Group Vertex Buffer
 Material Name
-Material Override
-Material Replacements
 Material Shading
 Material Values
-Material group (skin) to assign to use with the model.
-Material group variable to set to the selected choice.
 Material to be applied to the grass cards
-Material to which color tint is to be applied.
 MaterialAdjustmentParamsStruct
 MaterialFindOrBlockingLoad
-MaterialGroupChoice_t
 MaterialSampler
 MaterialSamplerLayer
 MaterialSamplerView
@@ -9223,7 +8763,6 @@ Materials Probe
 MatrixWorldToCamera
 MatrixWorldToScreen
 Matteing
-Max Blend Weight
 Max Cameras
 Max Evaluation Depth
 Max Float
@@ -9233,27 +8772,12 @@ Max number of Nav Areas limit reached (%i).
 MaxEvaluationDepth
 MaxExposure
 MaxSampleValue
-Maximize scale
 Maximum
-Maximum Angle
 Maximum Size Scale
-Maximum allowable length for the object. Must be >= length. If length is 100 and maximum length is 160, then the object may be assigned a scale in the rage [ 1.0, 1.6 ].
-Maximum blend weight value for which the model will be placed. If the blend weight value is more than this value, the model will not be placed.
-Maximum depth of smart prop evaluation stack during evaluation.
 Maximum distance at which individual parts of the prop will be visible. If 0 the setting on individual parts of the smart prop will be used.
-Maximum length
-Maximum length of the trace. Surfaces beyond this distance will not be hit.
-Maximum number of instances of this object and its children to be placed.
 Maximum of two values (float)
 Maximum of two values (int)
 Maximum projection angle
-Maximum random position offset
-Maximum random scale value to apply to the model.
-Maximum range of random offset to apply along the model's local up direction
-Maximum range of the random rotation to apply the model.
-Maximum rotation range
-Maximum scale range
-Maximum slope on which the target will be placed.
 Mc]T=
 MergeMesh
 MergeVertices
@@ -9287,11 +8811,6 @@ Microsoft Server Gated Crypto
 Microsoft Smartcardlogin
 Microsoft Trust List Signing
 Microsoft Universal Principal Name
-Midpoint Deformer
-Midpoint Offset
-Midpoint Rotation
-Midpoint Scale
-Min Blend Weight
 Min Float
 Min Int
 MinExposure
@@ -9304,26 +8823,9 @@ MinghuaQuS
 MinghuaQuw
 Minigame
 Minimum
-Minimum Angle
-Minimum Length of filled grid cells.
 Minimum Size Scale
-Minimum Width of filled grid cells.
-Minimum allowable length for the object. Must be <= length. If length is 100 and minimum length is 20, then the object may be assigned a scale in the rage [ 0.2, 1.0 ].
-Minimum blend weight value for which the model will be placed. If the blend weight value is less than this value, the model will not be placed.
-Minimum length
-Minimum number of instances of this object and its children to be placed.
 Minimum of two values (float)
 Minimum of two values (int)
-Minimum random position offset
-Minimum random scale value to apply to the model.
-Minimum range of random offset to apply along the model's local up direction
-Minimum range of the random rotation to apply the model. Random rotation is applied in the local space of the model. Rotation values are ordered pitch, yaw, roll.
-Minimum rotation range
-Minimum scale range
-Minimum scale to apply to the model based on the final material layer blend weight. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in.
-Minimum scale to apply to the model based the painted detail prop density. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale.
-Minimum slope on which the target will be placed. Slope is a [ 0, 180 ] value based on the surface normal where horizontal surface (floor) is 0, vertical surface (wall) is 90, and a horizontal upside down surface (ceiling) is 180.
-Minimum slope on which the target will be placed. Slope is a [ 0, 180 ] value of the surface normal rotation from up such that 0 is a horizontal surface (floor), 90 is a vertical surface (wall), 180 is horizontal upside down surface (ceiling).
 MinimumExpanding
 Mirror
 MirrorAcrossPlane
@@ -9336,26 +8838,18 @@ Mlt(J
 MnZ/rs
 Mod R%d <- R%d %% R%d
 Model (%s) %s
-Model Asset Variable
-Model containing the set of material groups to select.
 Model conversion: %d conversions in %.3fsec (%.3fms each)\n
-Model to be displayed.
 ModelAnimGraph2Identifier()
 ModelDistance
 ModelHasAnimgraph
 ModelHelper
 ModelInstance
 ModelMaterialGroupName()
-Modifiers
 Module32First
 Module32Next
 Modulus:
-More Aggressive
-More aggressive fade out. The object will fade out while larger on screen than normal.
 Morph
-Most Aggressive
 Most active material around a probe.
-Most aggressive fade out. The object will fade out while still quite large on screen.
 Mouse4
 Mouse4DoubleClick
 Mouse5
@@ -9363,8 +8857,6 @@ Mouse5DoubleClick
 MouseWheelControlsFarPlane
 Movable Reverb Index
 MovableMesh: Unable to parse mesh id string '%s'. This movable mesh will probably not work.\n
-Move to end
-Move to start
 Movement Basic
 Movement Dampen Relative to Control Point
 Movement Lock to Bone
@@ -9378,10 +8870,6 @@ MrFW
 Mtb\t4
 Mul R%d <- R%d * R%d
 Multiple Convex Hulls
-Multiply current tint
-Multiply object tint
-Multiply with the current color tint value.
-Multiply with the object level color tint and replace the current color value.
 Must enable sky light IBL to extract HDR sunlight from the skybox.
 M}8vhJ
 N!vh
@@ -9432,7 +8920,6 @@ NISTP256_PRE_COMP_NEW
 NISTP521_PRE_COMP_NEW
 NO COMMAND TARGET
 NO X509_NAME
-NORMAL
 NOT an attr
 NOTICEREF
 NOTICE_SECTION
@@ -9457,15 +8944,6 @@ N\v7e_
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 N_U9203
 N`UaK
-Name of the locator. This can be used to reference the locator in this element or its children. If the locator is configurable, the locator will be identified by this name in Hammer.
-Name of the model resource (.vmdl) to place.
-Name of the parameter which will appear as a property in the Hammer object properties ui when selecting an object using this smart prop.
-Name of the path to use. This path name will show up in the property editor when selecting a placement of this smart prop in Hammer, allowing selection of a path object in the map to use.
-Name of the previously saved state to restore
-Name of the target smart prop resource (.vsmart) to evaluate.
-Name to assign to the saved state, the save state can be restored later using this name.
-Name used to identify the rotator. Must be unique within the parent element.
-Name used to identify the sizer. Must be unique within the paraent element.
 Name\t\t\t\t\tCount\t\tParticle Count\n
 Natural logarithm (base e)
 Nav mesh (v%d/%d) loaded with %u nav areas for %u hulls.\n
@@ -9510,8 +8988,6 @@ Netscape SSL Server Name
 Netscape SSL server
 Netscape Server Gated Crypto
 Never close the group automatically (used to indicate an error like the process exiting unexpectedly)
-New Material
-New material to replace the original material with.
 NextPath
 NextSession
 No %s specified. Expected '=' '[' <%s> ']'
@@ -9526,10 +9002,8 @@ No Widget Under Mouse
 No Widget Under Mouse @(%1,%2)
 No bone or attachment named '%s'
 No conversion from KV3 to variant type %d (%s)
-No fade out. The object will not fade out, but will still be culled when below the minimum size and will pop at that that point.
 No matching animgraphs.
 No physics for this mesh
-No scaling
 No signal '%s'
 No slot '%s'
 No space for "TransferFunction" tag
@@ -9553,13 +9027,9 @@ Non Repudiation
 Nonce
 Nonstandard tile length %d, convert file
 Nonstandard tile width %d, convert file
-Normal fade out. The object will fade at when at the standard size on screen.
 NormalBlendOverride
 NormalIntensity
-Normalize Vector
 Normalize Vector a
-Normalize the value of a 3d vector.
-Normalized (Direction Vector)
 NoseV
 NostrilFlare
 Not %s
@@ -9599,7 +9069,6 @@ NumMul
 NumSub
 NumToggle
 Number of Sides
-Number of instances of this object and its children to be placed.
 NumberOfInks
 Nw!qB
 NwJ\rH
@@ -9612,7 +9081,6 @@ O1NzNfj'fGv
 O7v%
 O?#7n
 OBJ lib
-OBJECT
 OBJECT DESCRIPTOR
 OBJ_NAME_new_index
 OBJ_add_object
@@ -9690,26 +9158,16 @@ Object Signer
 Object Signing
 Object Signing CA
 Object Spacing
-Object space
-Object space transform, relative to the object placement, but does not include the current element transform.
 Objects
 Occlusion Deviation
 Occlusion Path Ratio
 Occlusion Probe
 Occlusion Reflection Ratio
-Occlusion Value
 Occlusion path deviation between the source and selected probe.
 Occlusion path ratio of direct path over shortest path between the source and selected probe.
 Occlusion ratio of indirect reflection energy over direct energy between the source and selected probe.
 Occlusion value between the source and selected probe.
-Offset from path
-Offset from the start of the path to place the first point.
-Offset of the locator relative to the current transform. This allows the locator to be created at an offset location without applying that offset to the current transform.
-Offset of the rotator relative to the current transform. This allows the rotator to be created at an offset location without applying that offset to the current transform.
-Offset to apply to the path, specifies a horizontal and vertical offset to apply relative to the up direction.
-Offset to apply to the specified origin along the trace direction to compute the starting point of the trace.
 OffsetFacesAlongNormal
-Offsets the center of the deformation region.
 Oh%u'
 OkClicked
 Old Auto Hidden
@@ -9752,9 +9210,7 @@ One of the client procedures is NULL pointer.
 Only Baked Shadows
 Only Realtime Shadows
 Only Some Reasons
-Only at start and end
 Only models
-Only place at the start or end of the path
 Only world geometry
 Only wrote %d (of %d) values when saving map!
 Opacity
@@ -9779,10 +9235,6 @@ OpenVConsole
 Operate
 Operator cycle found during dependency graph traversal!\n
 OptimizeCollisionV2
-Option Display Name
-Option Value Name
-Optional second key to check
-Optional text that will appear in the outliner to help organize Smart Prop elements and communicate their purpose to other users.
 Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
 Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
@@ -9791,31 +9243,23 @@ Order:
 Orient Rotation to 2D Direction
 Orient To Surface
 OrientPrimitives
-Original Material
-Original material to replace. This is the material specified in the model, including any material group asignment within the model. Does not consider any existing material overrides specified within the smart prop.
 OriginalRawFileData
 OriginalRawFileName
 OrqK
 Oscillate Scalar
 Oscillate Vector
 Out of memory allocating %d byte temp buffer.
-Outer radius from the placement position where the model can appear.
 Outflow List
 Outgoing Tangent Type
 Output Format
-Output Variable
 Output aborted.
-Outputs the absolute position of the midpoint post deformation.
 Outside Direction Field
 Outside Distance: %0.2f
-Overall grid dimension along X axis.
-Overall grid dimension along Y axis.
 OverlayBoxSize
 OverlayProjectionDirection
 OverlaySurface
 OverlaySurfaceIndices
 OverlaySurfaceVertices
-Override Surface Property
 Ow!y
 P!bxo
 P(UH 
@@ -10048,7 +9492,6 @@ PanoramaLayout()
 PanoramaStyle()
 PanoramaVideo()
 Parameter '%s' corresponds to an entity target name, but is sent to input '%s' on '%s' which is not marked as being a target name. (FGD Error?)\n
-Parameter Display Name
 Parameters
 Parent Map: %s\n
 ParseEXRHeaderFromMemory failed! Error message: %s\n
@@ -10063,22 +9506,17 @@ ParticleCompileBinaryIdenticalHack_underlying_struct
 ParticlesLib
 Pass Outflow
 Path Cable
-Path Evaluation Space
 Path Name
 Path Node
 Path Node <%s>
 Path Overflow, must be less than 260 characters.
 Path Parameter
-Path Positions
 Path Type
-Path control points
 Path: %s
-PathEntity
 PathParameter
 Pathing Ceofficients
 Pathing Direction
 Pathing Distance Ratio
-Pathing EQ
 Pathing EQ for low, mid, and high frequency bands.
 Pathing Probe
 Pathing coefficients for 1st order Ambisonics.
@@ -10088,9 +9526,6 @@ Peer haven't sent GOST certificate, required for selected ciphersuite
 Per-Edge
 Per-Tile
 PerVertexLighting
-Perform a trace between the specified origin and a specified target point.
-Perform a trace from a specified origin point to a the closest point on a line.
-Perform a trace in a direction from a specified origin and stop when a surface is hit.
 Permanent Identifier
 Permitted
 PgDn
@@ -10110,41 +9545,18 @@ PhysicsTypeOverride_Mesh
 PhysicsTypeOverride_MultiConvex
 PhysicsTypeOverride_SingleConvex
 Pick
-Pick a choice specified by an additional authored value.
-Pick a random choice from the child elements that will fit within the remaining length, repeat this process until the line is full or no child will fit in the remaining length.
-Pick a random color from anywhere on the authored color gradient
-Pick the first valid choice. Selection criteria may be added to a choice to determine if it is valid.
-Pick the largest child element that will fit in the remaining length of the line, repeat this process until the line is full or no child will fit in the remaining length.
-PickMode_t
-Picks a material group from a set of choices and assigns that material group to a specified variable.
 Piecewise Bezier
 PivotPaint
 PivotToolSnapToBBox
 PixarLog
 Place
-Place In Radius
-Place Multiple
-Place On Path
-Place all in order
-Place all of the child elements in the order they are specified even if they do not fit the line or do not fill the line. NOTE: end cap settings are ignored in this mode.
-Place at all positions along the path
-Place at every Nth position along the path, skipping over the other positions
-Place at path control points instead of every point along the path, when this is selected the path spacing no longer applies
-Place in circle
-Place in sphere
-Place on Path
 PlaceInSphere Parent Cursor
-Placement Shape
-Places a model as the child of an element.
-Places a prop dynamic entity.
-Places a prop physics entity.
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Plants
 Please make sure you deleted history on the mesh before exporting.\nThe mesh apparently has %d vertices, but %d blendWeights in field %s, while having %d weights per vertex\n
 Pm8A?
 PmR"H?
-PointEntity
 Policy
 Policy Qualifier CPS
 Policy Qualifier User Notice
@@ -10161,17 +9573,14 @@ Polymesh wireframe
 Polynomial:
 PosXyz
 PosableSkeleton
-Position A
 Position Along Path Random
 Position Along Path Sequential
-Position B
 Position From Parent Particles
 Position In CP Hierarchy
 Position Modify Offset Random
 Position Modify Warp Random
 Position Within Box Random
 Position Within Sphere Random
-Position of origin point.
 Position on Model Random
 PostLoadFromFile
 PostMapLoadCommands
@@ -10220,15 +9629,10 @@ ProcessNotifyList: encountered a deleted object. Tell a programmer.
 Program has invalid instruction %i
 Program uses more temp variables than are supported. Needs %i, max is %i
 Project On Backfacing
-Project Vector
-Project Vector A onto Vector B
 ProjectPolygonsOntoTriangles(), C:\buildworker\csgo_rel_win64\build\src\meshutils\triangulatepolygon.cpp:1923
 Projection Distance
 Projection Mode
 Projection Targets
-Projection to plane
-Prop Dynamic
-Prop Physics
 PropStatic
 PropWorldOrigin
 Properties
@@ -10373,7 +9777,6 @@ R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RAND lib
 RAND part of OpenSSL 1.0.2j  26 Sep 2016
-RANDOM
 RAND_get_rand_method
 RAND_init_fips
 RC2(128)
@@ -10405,26 +9808,8 @@ RE!r
 RE4\t
 READ_N
 REAL
-REGULAR
-RELATIVE
-REPLACE
 REQUEST_CERTIFICATE
 REQUEST_VERIFY
-RESOURCE_ENCODING_COMPILEIMAGEUTILS_TEXT
-RESOURCE_ENCODING_COUNT
-RESOURCE_ENCODING_INTROSPECTED
-RESOURCE_ENCODING_INVALID
-RESOURCE_ENCODING_KV3
-RESOURCE_ENCODING_LEGACY_VSND
-RESOURCE_ENCODING_MBUF
-RESOURCE_ENCODING_MIDX
-RESOURCE_ENCODING_MSLT
-RESOURCE_ENCODING_MVTX
-RESOURCE_ENCODING_RAW_BYTES
-RESOURCE_ENCODING_TEXT
-RESOURCE_ENCODING_VRMAN
-RESOURCE_ENCODING_VSNAP
-RESOURCE_ENCODING_VTEX
 RFC 3779 resource not subset of parent's resources
 RFC 5639 curve over a 160 bit prime field
 RFC 5639 curve over a 192 bit prime field
@@ -10534,8 +9919,6 @@ R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@X
 R_T5Y
 Rad2 Deg
 Radius Random
-Radius at which the rotator handle should be displayed.
-Radius of the bend. If 0 the radius will be computed automatically to preserve the length of the inner edge of the x-axis. If a non-zero value is specified then the inner edge will maintain this radius, but its length will change.
 Ramp Rule Set
 Random Cull
 Random Int
@@ -10544,13 +9927,9 @@ Random Offset
 Random Rotation
 Random Scale
 Random Seed
-Random fitting
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
 Randomly Flip Yaw
-Randomly pick a choice. If the choices have weights, the weights will be used to determine the probability of picking a given choice
-Randomly select one of the color stops specified on the gradient. Never picks a value between stops.
 Randomness
-RangeEditor()
 Ratio between shortest distance and pathing distance between the probes.
 RawDataUniqueID
 RayTracingEnvironment::RefineNode
@@ -10572,10 +9951,7 @@ Register Test Checkpoint
 RegisterEventSourceW
 Registered ID
 Registering anonymous field with tag %d (0x%x) failed
-Regular
 Reinterpret Instance %s R%d <- %s R%d
-Relative to Surface
-Relative weight of this choice, higher weighted choices are more likely to be selected.
 Reloading
 Reloading...
 Remap Clamped Float
@@ -10606,34 +9982,24 @@ Render To Cubemaps
 Render With Dynamic
 Render this object with other dynamic objects
 Render to Cubemaps
-Render unlit maps as fullbright
 Render with Dynamic Objects
 RenderOrder
-Replace the current color tint value completely, overwriting any object level tint.
-Replace the current state with a previously saved state.
-Replace tint
 ReportEventW
 Requested Blend Weight Limit of %d is too large, setting to system max of %d
 Requested split stream input layout from non-split material!
 Require Explicit Policy
-Required for any auto-tag. Restricts the auto-application of this tag to a specific asset type (string from assettypes_common.txt like 'material_asset' or 'model_asset')
 Required3dSkyboxEntities
 RequiredGameEntities
 RequirementPort
 Requirement_ExternalPort
 Reset
 Reset Scale
-Reset the current rotation such the element only inherits the object level rotation, but does not inherit the rotation applied to its parent.
-Reset the current scale such the element only inherits the object level scale, but does not inherit the scale applied to its parent.
 Resettable
 Resetting value of tile property '%s' from invalid value '%s' to default value '%s'\n
 ResolutionGate
 ResolutionUnit
-ResourceBlockTypeInfo_t
 ResourceCompiler
 ResourceCompiler/PhysicsBuilder/DefaultHammerMeshSimplification
-ResourceDataEncodingType_t
-Restore State
 ResultMaxX
 ResultMaxY
 ResultMaxZ
@@ -10657,7 +10023,6 @@ Reverb Times
 Reverb impulse response for the probe.
 Reverb scale for low, mid, and high frequency bands for the probe.
 Reverse Preview Unit
-Reverse Y
 Revert?
 RevertClicked
 Reverted %d file(s).
@@ -10675,11 +10040,8 @@ Right Edge
 RightFingers
 Rigid
 Rigid Constraint
-Rigid Deformation Only
-Root of a smart prop, contains a list of elements to evaluate.
 RootSelectionSet
 Rotate
-Rotate the center of the deformation region.
 RotateConstrain
 RotateToolUseRelativeMode
 Rotation Basic
@@ -10723,9 +10085,6 @@ S8#w
 S<Fb
 S<hN-AO
 S?openUrl@QDesktopServices@@SA_NAEBVQUrl@@@Z
-SCALE_END_TO_FIT
-SCALE_EQUALLY
-SCALE_MAXIMIZE
 SECG curve over a 112 bit prime field
 SECG curve over a 113 bit binary field
 SECG curve over a 128 bit prime field
@@ -10747,7 +10106,6 @@ SEED-CFB
 SEED-ECB
 SEED-OFB
 SEED-SHA
-SEGMENT
 SEQUENCE
 SEQWRAP
 SER<
@@ -10784,12 +10142,9 @@ SMIME_read_PKCS7
 SMIME_text
 SMaxSampleValue
 SMinSampleValue
-SNAP
 SNMPv2
 SNtu
 SO~c
-SPECIFIC
-SPECIFIC_COLOR
 SQ8_d`\
 SRTP_AES128_CM_SHA1_32
 SRTP_AES128_CM_SHA1_80
@@ -10895,8 +10250,6 @@ SSLv2
 SSLv3
 SSLv3 part of OpenSSL 1.0.2j  26 Sep 2016
 STANDIN: %1
-START_AND_END
-STIFFEN
 STRENGTH
 STR_COPY
 SUITEB128
@@ -10922,37 +10275,17 @@ SamplesPerPixel tag is missing, assuming correct SamplesPerPixel value is 1
 SamplesPerPixel tag is missing, assuming correct SamplesPerPixel value is 3
 Saturate
 Saturate (clamps float between 0 and 1)
-Save Current Color
-Save Current Position
-Save Current Scale
-Save Current Surface Normal
-Save Direction Vector
 Save File
 Save Session
-Save State
 Save a named value of any type on the cursor.
 Save changes when building the map
 Save session
-Save the current color tint value to a specified variable
-Save the current position to a specified variable in the requested coordinate space
-Save the current scale factor to a specified variable.
-Save the current state, allowing it to be restored at a later state.
-Save the current surface normal to a specified variable in the requested coordinate space
-Save the specified direction vector to a specified variable, in the requested coordinate space
-Scale
 Scale INV R%d <- R%d / R%d
 Scale Locking Textures
-Scale Mode
 Scale R%d <- R%d * R%d
 Scale down by 2
 Scale down by 4
 Scale down by 8
-Scale equally
-Scale factor (may be non-uniform) to be applied directly to the model (in the model's local space).
-Scale last
-Scale the center of the deformation region.
-Scale to apply only to the locator model
-Scale to apply to the current transform
 Scale up by 2
 Scale up by 4
 Scale up by 8
@@ -10961,15 +10294,12 @@ ScaleGrid0
 ScaleGrid10
 ScaleGrid1024
 ScaleGridDot
-ScaleMode_t
 ScaleToolUseRelativeMode
 ScalpD
 SceneSystem
 Schema description file
 ScrLk
 ScrToggle
-Screen space size [ 0, 1 ] (where 1 is the whole screen) at which the model will be completely faded out. Anything smaller than this size will not be visible, anything larger will start fading in.
-Screen space size [ 0, 1 ] (where 1 is the whole screen) at which the model will begin to to fade out. Anything larger will be fully visible, anything smaller will start to fade out.
 Scrollbars
 Sd:z
 Secure Electronic Transactions
@@ -10977,18 +10307,14 @@ Security
 Seed:
 Seek error at scanline %lu
 Select Backfacing
-Select Single Child
 Select a an entity to specify a location to sample lighting from, instead of using this entity's bounding box center.
 Select a an entity to specify a location to sample lighting from, instead of using this object's bounding box center.
 Select a unit type that's capable of this navlink movement to preview it in-editor.
-Select model LOD level. The default Auto LOD means the lod will be picked based on the size of the model on screen. If a specific level is selected, then that lod level will always be used regardless of the size of the model on screen.
 SelectAllOnClickFocus
 SelectContiguousNormalThreshold
 SelectFirstItemAfterFilter
 Selected Attribute Types
 Selection
-Selection Criteria
-Selection Mode
 Selection Weight
 SelectionAdd
 SelectionChanged
@@ -11007,20 +10333,10 @@ SerializeAuxiliaryDataFiles FAILED (save): %s\n
 SerializeAuxiliaryDataFiles FAILED (serialize): %s\n
 SessionCycleWidget
 Set As Source
-Set Material Group Choice
 Set Position
 Set Tint Color
-Set Variable
-Set a color tint to apply to a specific material.
-Set the color tint to a selection from within the defined gradient.
-Set the color tint to one color out of a pre-selected set of colors.
-Set the current orientation from a specified forward and up vector.
 Set the number of elements in the array.
-Set the position of the current transform.
 Set the probe as source.
-Set the value of a variable.
-Set this to automatically apply this tag based on an asset filter string. (NOTE: Auto tag names MUST start with an '@' character!)
-Set this to automatically apply this tag to assets based on references from a VData file. (NOTE: Auto tag names MUST start with an '@' character!)
 SetAngles
 SetAsSource
 SetBlackboardReference BR%d (%s) <- R%d 
@@ -11049,26 +10365,10 @@ ShadowAtlasWidth
 ShadowFarPlane
 ShadowMapMaxSize
 ShadowScale
-Shape of the configuration handle to display.
 Shared Environment
 Shift
-Shifts every other cell row and/or column.
-Should a control to select the specific choice be shown when this prop is placed in Hammer.
 Should baked lighting be generated for this object. If default is selected, the choice is left to individual parts.
 Should have already been loaded via CVDataTypeManager::RegisterExtRefs
-Should instances of this model generate shadows in the lightmap. Note that shadows in the light map will persist even after the model fades out.
-Should the child elements be oriented based on the line. If enabled the child elements placed on the line will be oriented such that their +x axis points along the line towards the end point.
-Should the deformation be applied. If disabled the children will still be placed, but will not be deformed. Esentially making the element behave as a group.
-Should the entity created by this element cast shadows.
-Should the model cast shadows.
-Should the pitch (rotation around left vector) value be reset.
-Should the return value be normalized to unit length (direction vector).
-Should the roll (rotation around forward vector) value be reset.
-Should the rotation be applied to the current transform.
-Should the yaw (roation around the up vector) value be reset.
-Should this element be placed at the first positions on the path
-Should this element be placed at the last positions on the path
-Should this physics prop start in a sleeping (non-simulating) state such that it won't update until it is woken up by an external event.
 ShouldPunchThroughPolymorphism
 Show Clustered Probes Only
 Show Collision Models
@@ -11113,8 +10413,6 @@ Sine of angle. Input in radians, output in radians
 Single Convex Hull
 Single Hull
 SingleHull
-Size of the base volume to be deformed.
-Size of the configuration handle.
 SizePolicy
 SizePolicy array must have two elements
 Sizer: %s
@@ -11128,44 +10426,22 @@ Skybox Map 3
 Skybox entity not found: %s.
 Skybox3dInMainView
 SkyboxSlot
-Slope
 Smart Prop
 Smart Prop %s
 Smart Prop (%s)
-Smart Prop Element
 Smart Prop File
 Smart Prop Locator
-Smart Prop Reference
-Smart Prop Root
 Smart Prop cannot be updated because the smart prop definition file '%s' could not be found.
 Smart Prop evaluation currently locked. Un-check 'Lock Evaluation' in the object properties to enable updates for this smart prop.
 Smart Prop update disabled because the definition file '%s' version has changed. Select 'Update To Current Version' in the object properties to re-evaluate using the new version.
 Smart Props
 SmartProp:LoadOverrideMaterials
 SmartProp:LoadParts
-SmartPropAttributeEditor( LODLevel )
-SmartPropAttributeEditor( MaterialGroupFromVariable )
 SmartPropAttributeEditor(MaterialGroup)
-SmartPropAttributeEditor(MaterialInSmartProp)
 SmartPropAttributeEditor(SurfaceProperty)
-SmartPropAttributeEditor(VariableValue)
 SmartPropAttributeEditor(angles)
 SmartPropAttributeEditor(bool)
 SmartPropAttributeEditor(color)
-SmartPropAttributeEditor(enum:ApplyColorMode_t)
-SmartPropAttributeEditor(enum:PickMode_t)
-SmartPropAttributeEditor(enum:ScaleMode_t)
-SmartPropAttributeEditor(enum:SmartPropChoiceSelectionMode_t)
-SmartPropAttributeEditor(enum:SmartPropColorSelectionMode_t)
-SmartPropAttributeEditor(enum:SmartPropDirection_t)
-SmartPropAttributeEditor(enum:SmartPropDistributionMode_t)
-SmartPropAttributeEditor(enum:SmartPropGridOriginBasis_t)
-SmartPropAttributeEditor(enum:SmartPropGridPlacementMode_t)
-SmartPropAttributeEditor(enum:SmartPropPathPositions_t)
-SmartPropAttributeEditor(enum:SmartPropRadiusPlacementMode_t)
-SmartPropAttributeEditor(enum:SmartPropSpace_t)
-SmartPropAttributeEditor(enum:TraceNoHitResult_t)
-SmartPropAttributeEditor(expression)
 SmartPropAttributeEditor(float)
 SmartPropAttributeEditor(integer)
 SmartPropAttributeEditor(locator)
@@ -11176,38 +10452,15 @@ SmartPropAttributeEditor(string)
 SmartPropAttributeEditor(vector2)
 SmartPropAttributeEditor(vector3)
 SmartPropAttributeEditor(vector4)
-SmartPropChoiceSelectionMode_t
-SmartPropColorSelectionMode_t
-SmartPropDeformableAttachMode_t
-SmartPropDeformableOrientMode_t
-SmartPropDetailFadeLevel_t
-SmartPropDirection_t
-SmartPropDistributionMode_t
 SmartPropEval
-SmartPropGridOriginBasis_t
-SmartPropGridPlacementMode_t
 SmartPropInstanceRendering
-SmartPropItemNameEditor( Locator )
-SmartPropItemNameEditor( SavedState )
-SmartPropItemNameEditor( Variable:Color )
-SmartPropItemNameEditor( Variable:Float )
-SmartPropItemNameEditor( Variable:Integer )
-SmartPropItemNameEditor( Variable:MaterialGroup )
-SmartPropItemNameEditor( Variable:Vector )
-SmartPropItemNameEditor( Variable:Vector3 )
-SmartPropPathPositions_t
-SmartPropRadiusPlacementMode_t
-SmartPropSpace_t
 SmartPropVariableValueEditor( comparison )
 SmartPropVariableValueEditor()
 Smoothing Angle
 Sn^G
-Snap to Surface
 SnappingEnabled
 SnapshotFile
-Soft deform the center of a volume defined by two endpoints.
 Software
-SolidEntity
 SortKey_t
 Source Data Layers
 Source Node
@@ -11215,94 +10468,23 @@ Source Output
 Source Probe Index
 Source Width
 Space
-Space in which the origin position is defined.
-Space in which the target position is defined.
-Space in which the up direction is defined.
-Space in which the up target is defined.
 Spacing
-Spacing between points on the path
 SparseShadowTrees
 Spawn Group
 Spawn Group (%d objects)
-Specific
-Specific Child
-Specific Color
 Specified class '%s' is a base class, @exclude cannot be used for base classes
-Specified what to do when a trace does not hit a surface.
-Specifies a basis direction vector ( Forward, Left, or UP).
-Specifies a coordinate space in which a point or vector value is defined.
-Specifies a distribution mode used to determine how certain elements distribute instances of their children within a space.
-Specifies a float variable to which the rotation value should be output. The variable only receives the rotation around the axis, the axis of rotation does not affect this output.
 Specifies a material replacement to apply to all following models. Mapping goes from the material specified by the model( including material group selection ) to the replacement material. Previous material overrides are not considered when determining the base material.
-Specifies a table of material replacements to apply to all following models. Mapping goes from the material specified by the model (including material group selection) to the replacement material. Previous material overrides are not considered when determining the base material.
-Specifies a weighting value which affects that likelyhood of selecting this element which picking a choice.
 Specifies additional interaction layers to append to the set of Interacts As layers assigned to the mesh.
 Specifies additional interaction layers to append to the set of Interacts With layers assigned to the mesh.
-Specifies an offset in the local space of the element to apply to the configuration handle.
-Specifies an offset to use when determining the Nth position to place an element at. For example if placing at every third position with an offset of 0, an element will appear at positions 1, 4, 7, and so on. But if an offset of 2 is set instead of 0, then an element will appear at positions 3, 6, and 9 and so on.
-Specifies how a color tint value is to be applied with respect to the existing color tint
-Specifies how a fit on line element will pick which child elements it will place.
-Specifies how a fit on line element will scale generate scale values for the objects it places.
 Specifies how collision shapes are to generated.
-Specifies how scale is applied to each of the selected element in order to fit them to the line.
-Specifies how the color is to be selected from the authored set of choices
-Specifies how the color is to be specified.
-Specifies how the initial selection of a choice should be handled.
-Specifies how the material group is to be selected from the authored set of choices
-Specifies how the positions are computed based on the radius.
-Specifies how the selected color should be applied to the current color.
-Specifies how to place elements within a grid.
-Specifies if this element is currently valid choice.
-Specifies that this is a special part that should be used at the start or end of the line.
 Specifies the angle of bend to apply in degrees. Range is [ -360, 360 ]. Negative values cause the bend to occur in the opposite direction.
-Specifies the angle the rotator should be set to initially.
-Specifies the behavior when the trace does not hit a surface.
-Specifies the coordinate space in which the end point values are specified.
-Specifies the coordinate space of position A.
-Specifies the coordinate space of position B.
-Specifies the coordinate space of posivectortion B.
-Specifies the coordinate space of the saved position value.
-Specifies the coordinate space of the specified position value.
-Specifies the coordinate space of vector A.
-Specifies the coordinate space that vector should be returned in.
-Specifies the coordinate space the distance should be computed in. The scale of the coordinate space may affect the distance value.
-Specifies the coordinate space the forward direction is being specified in
-Specifies the coordinate space the target point is specified in.
-Specifies the coordinate space the trace direction vector is specified in.
-Specifies the coordinate space the up direction is being specified in
-Specifies the current version of this smart prop. Any existing references to this smart prop with an older version number will not automatically update.
-Specifies the end point of the line in the specified coordinate space.
-Specifies the index of the child to pick.
-Specifies the index of the color to pick
-Specifies the index of the material group choice to pick
-Specifies the length of the line that will be taken up if this element is selected.
-Specifies the length of this element, used when fitting an element on to a line.
 Specifies the local space axis which the deformer will bend around.
 Specifies the map file whose contents will be referenced by this prefab.
 Specifies the maximum angle difference between the overlay and triangles the overlay will project onto. Value can be between 0 and 180, where 0 means the overlay will only project onto surfaces facing the exact same direction as the overlay, and 180 will allow the overlay to project onto surfaces facing completely the opposite direction.
-Specifies the method by which a child element is selected from a list.
-Specifies the method by which a color selection is to be made.
-Specifies the method to be used to distribute.
-Specifies the method to use to determine which positions this element should be placed at along the path.
-Specifies the minimum angle limit in degrees
 Specifies the name by which the prefab can be referenced by entity i/o. The set of inputs the prefab has is defined by the map relays in the target map.
-Specifies the name of the material group (skin) to use when displaying the specified model.
-Specifies the number of degrees the rotation should snap to. If set to 0, then the rotation snapping will be controlled by the rotation snapping in Hammer.
-Specifies the number of props placed per square foot.
-Specifies the origin point for the start of the trace. To trace from the current position, set to < 0, 0, 0 > and set the coordinate space to Element Space
-Specifies the overall grid origin location. Corner origin grids default to quadrant I, but may be expressed in others using negative values for Width and/or Length.
-Specifies the path positions at which this element may appear.
 Specifies the radius of the bend. When the value is 0, the radius is automatically calculated to preserve the length of the deformer volume for the specified angle. If an explict radius is specified then the inside edge of the bend will match this radius for all angle values, however this will result the the deformer changing the length of its contents.
-Specifies the set of positions that are valid for path placement.
-Specifies the shape (circle, or sphere) to use with elements that place children within a radius.
 Specifies the size of the volume of space to be deformed.
 Specifies the smart prop which this object will instantiate
-Specifies the space in which the provided input path is to be evalauted.<br><br><b>World Space</b>: The input path will be evaluated in world space, such that child elements will be placed directly on the target path regardless of the transform of the smart prop object. <br><b>Object Space</b>: The world space transform of the input path will be ignored and instead the path will be evaluated relative to the transform of the smart prop object. <br><b>Element Space</b>: The world space transform of the input path will be ignored and instead the path will be evaluated relative to the transform of the current element within the smart prop. 
-Specifies the spacing between positions. For example, a value of 1 will place the element at very position, 2 every other position, 3 every third position
-Specifies the start point of the line in the specified coordinate space.
-Specifies where the origin of a child element is placed realative to each grid cell.
-Specifies which direction vector to save.
-Specify a specific color value (may be linked to a variable
 Spline
 Split Angle
 Split Color
@@ -11327,10 +10509,8 @@ Stack part of OpenSSL 1.0.2j  26 Sep 2016
 Standard
 Start Asleep
 Start Fade Dist
-Start Point
 Start Target
 Start a timer with the specified duration, fire the OnInterval output 
-Start fade out size
 StartDisabled
 State
 Static Overlay
@@ -11347,13 +10527,9 @@ Steam Audio/Probe Boxes
 Steam Audio/Probes
 SteamAudioEnabled
 StereoFlip
-Stiffen Overlapping Joints
 StoNits
 Stop Timer
-Stop When
 Stop any active timers - the completed outflow will still fire
-Stop evaluation
-Stop placing copies of the children when this expression evaluates to true.
 StretchArches
 StringArrayArray
 Strings Are Equal Case Sensitive
@@ -11379,8 +10555,6 @@ Suite B: invalid public key algorithm
 Suite B: invalid signature algorithm
 Superseded
 SupportsDisplacementMapping
-Surface Property
-Surface Property Variable
 SurfacePropPicker()
 SwitchToEngineWindow
 Symbol table:  %d entries %llu bytes\n
@@ -11490,7 +10664,6 @@ TXJw^{
 TYPE=
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
 Tabbed Mode
-Table specifying pairs of existing materials and the material to replace them with.
 Tag 
 Tag %d
 Tag Cursor
@@ -11532,20 +10705,16 @@ The 'Hammer' settings section of gameinfo.gi was not found. No game entities wil
 The Navigation Mesh was built with an old server dll - reanalyze the mesh!
 The Type of movement needed to traverse this navlink in a backwards direction.
 The Type of movement needed to traverse this navlink.
-The VData file to read
-The distance from the line formed by the endpoints that encapsulated the deformation region.
 The file <pre>"%s"</pre> is in a directory which cannot be modified.<br>%s
 The file was not checked out. To save you must select a different file.
 The filename may only contain lower case alphanumeric characters, dashes, and underscores.
 The gameinfo.gi file is missing or incomplete!\n
 The gameinfo.gi file is missing or incomplete.
-The key whose value must match the asset name (ie. something like 'm_Model' if you want to apply this tag to .vmdl assets that are referenced by the vdata file)
 The map properties of this prefab's map specify a targetname of '%s', which is a classname! Please change to avoid using a classname.
 The nav mesh needs a full nav_analyze\n
 The only detail layers this mesh belongs to
 The selected map is not marked as a shared environment: <pre> %s </pre> In the shared map, go to Map > Map Properties and set Map Type to 'Shared Environment'\n
 The selected skybox map is not marked as a skybox map: <pre> %s </pre> In the skybox map, go to Map > Map Properties and set Map Type to '3D Skybox'\n
-The target point to trace to from the origin.
 There is already another open editor session with this pathname.
 This expression determines whether the tag should actually be applied to an asset\nIt will be evaluated against vdata entries where the key matches the asset - if any of them evaluate to true the tag will be applied.\nMost simple expressions involving the VData keys are supported. Use 'true' to tag unconditionally.
 This file is marked as READ ONLY.  You will not be able to save your changes.\n\n%s
@@ -11608,10 +10777,7 @@ TimeSlicedShadowMapRendering
 TimeToMaxSpeed
 Tint
 Tint Color
-Tint Color Choice
-Tint Color Gradient
 Tint Layer
-Tint Mode
 TintColor
 To the left of the attribute label
 To the right of the attribute editor
@@ -11630,11 +10796,8 @@ Took %llums to rebuild surface mesh\n
 Tool Brushes
 ToolBarArea
 ToolDrag
-ToolEditContext_ID_SmartProp_Variable
 ToolEvents
 ToolFramework
-ToolImage( 16 )
-ToolImage( 64 )
 ToolScene
 ToolSelect
 Tools - Hammer
@@ -11651,33 +10814,13 @@ Top Left Corner
 Top Right Corner
 Totals
 Trace In Direction
-Trace Miss Behavior
-Trace away from line
-Trace away from point
-Trace filtering
 TraceInDirection
-TraceNoHitResult_t
 Track Mouse & Focus
 Trail Length Random
 Trailer Field: 0x
 TransferFunction
 Transform Contents
 Transform Locked
-Transform: Random Offset
-Transform: Random Rotation
-Transform: Random Scale
-Transform: Reset Rotation
-Transform: Reset Scale
-Transform: Rigid Deformation
-Transform: Rotate
-Transform: Rotate Towards
-Transform: Scale
-Transform: Set Orientation
-Transform: Set Position
-Transform: Trace In Direction
-Transform: Trace To Line
-Transform: Trace To Point
-Transform: Translate
 TransformPositions
 Translate
 TranslateToolAlignToSurface
@@ -11723,7 +10866,6 @@ UI_set_result
 UNDEF
 UNIV
 UNIVERSALSTRING
-UP_NORMAL
 URI:%s
 USERNOTICE
 UTCTIME
@@ -11752,7 +10894,6 @@ Unexpected EOF in quoted string
 Unexpected end of input
 Unhandled/unrecognized child entry (Must have a _class, or be a special entry like: vbox=[] hbox=[] grid=[[],[]] flowing=[] spacing=NUM stretch=NUM
 Unhide quick-hidden
-Uniform scale to be applied to the model, certain properties like detail object mean only uniform scale may be applied to the model.
 UniqueCameraModel
 UnitFile
 Units
@@ -11800,8 +10941,6 @@ Unsupported primitive type: %d\n
 Unsupported use of property accessor "%s.%s", property accessors can only be used variables
 Unused
 Unweighted
-Up direction (+z)
-Up vector which is used to determine the rotation of each element around the line.
 Update Detail Props
 UpdateAllTileFaces
 UpdateButtonStatusFromAction
@@ -11821,7 +10960,6 @@ Use For Reverb
 Use Normals From Base Polygons
 Use Radius Culling
 Use VPhysics
-Use a color value from a specified location on the gradient
 UseBaseVertex
 UseCustom
 UseFirstAnimationAsDefault
@@ -11830,8 +10968,6 @@ UseTintColor
 Used to boost emissive lighting from models. Note that boosting emissive on smaller areas can create more lighting artifacts/noise.
 Used to flag a test as having failed.
 Usegroupcolors
-User-facing description of the tag
-User-facing tag name
 UsesBakedLighting
 UsesBakedLightingPerVertex
 Using 16-bit blend indices\n
@@ -11877,8 +11013,6 @@ VISIBLE
 VISIBLESTRING
 VIgq qC:
 VM%G]f
-VMAP_MANUAL_RECOMPILE
-VMDL_CONVERT_TO_MODELDOC
 VMS_BIND_SYM
 VMS_LOAD
 VMS_MERGER
@@ -11901,35 +11035,22 @@ Va?width@QPixmap@@QEBAHXZ
 Valid Content Absolute Path
 Valid External Path
 Valid Game Absolute Path
-Valid Path Positions
 Valid Relative Path
-Valid When
 Value 0-1 how far along duration (always 0 if duration is -1)
-Value indicating if the model's up direction should be matched to the surface. Value should be in the [ 0, 1 ] range, where 0 means that the model up will be model (or object space) up and will ignore the surface direction, and 1 indicates that the model up will exactly match the surface normal.
 Valve Map File
 ValveSMMem:%s
 ValveSMMut:%s
 Variable "%s" has %i components, a specific component must be specified, for example use: "%s.x"
 Variable %s has bad default value %s (no choices with that name or value)
 Variation Id
-Vary cell shift in X.
-Vary cell shift in Y.
 VbfOc,p
 Vcsc 
 Vec2
 Vec3
 Vec4
-Vector 2D
-Vector 3D
-Vector 4D
-Vector A
-Vector B
-Vector Between Points
 Vector Displacement (Y Up)
 Vector Displacement (Z Up)
 Vector To World Vector
-Vector in the local space of the child element to be aligned with sphere or circle
-Vector up direction of the plane of the circle. This in the local space of the current element.
 Velocity Inherit from Control Point
 Velocity Noise
 Velocity Random
@@ -12035,7 +11156,6 @@ WfMD{
 When False
 When True
 When enabled, the normals of the final surface will use the normals from the base polygons of the overlay instead of the normals of the surface that the overlay is being projected onto.
-When the up direction is not orthogonal to the line direction normally the up vector will be adjusted to make it orthogonal to the line direction. If prioritize up is true, then the up direction will be maintained and the forward direction will be adjusted.
 Whether to continue executing
 WhiteLevel
 WhiteOnBlack
@@ -12059,8 +11179,6 @@ World Space X
 World Space Y
 World Space Z
 World Vector To Vector
-World space
-World space transform, not relative to the specific smart prop object placement.
 World/Mesh Geometry
 World/Static Overlays
 World/Static Props
@@ -12072,7 +11190,6 @@ Writable
 Write error at scanline %lu
 Writeable
 X to the Y power
-X-Axis Size
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X24_TYPELESS_G8_UINT
 X32_TYPELESS_G8X24_UINT
@@ -12247,7 +11364,6 @@ Xuub
 XwA0
 Xz"7
 Y-Axis
-Y-Axis Size
 Y-Ny
 Y4i%
 Y93a=7c@
@@ -12290,7 +11406,6 @@ Z"T-47\f8
 Z#Pe
 Z+5AS
 Z-Axis
-Z-Axis Size
 Z0zd
 Z7"c
 Z72\v
@@ -12326,8 +11441,6 @@ ZoomSensitivityMouseMove
 ZoomSensitivityMouseWheel
 Zpwz
 Z~wl
-[ 0, 1 ] Value specifying the location along the local x-axis the bend will occur around
-[ 0, 1 ] Value specifying the location on the gradient to pick the color from.
 [ Chunk%d ]
 [ written at chunk start last-read I%d ]
 [ written by I%d last-read I%d ]
@@ -12617,7 +11730,6 @@ _bakeresourcecache
 _bakeresourcecache.vpk
 _cells
 _color
-_editor/next_element_id
 _entname_fixup_prefix
 _fgd
 _flt.vpk
@@ -12895,7 +12007,6 @@ bAllowTranslation
 bApplyToCurrentTransform
 bB"`3
 bConfigurable
-bConfigurable == false
 bContinue
 bDefaultPathInWorldSpace
 bDisplayModel
@@ -12912,18 +12023,14 @@ bIgnoreTranslucent
 bInherit
 bIsDetailObject
 bJ*h
-bMoveSelectedEnabled
 bN.l
 bOrientAlongLine
 bPb:L7X)
 bPrioritizeUp
 bSh&+
-bShowSelectionModeChangeNotificationIcons
-bShowToolChangeNotificationIcons
 bUseFixedUpDirection
 bUseProjectedDistance
 bValue
-bViewFocusStealing
 bV}TS
 b\fzUkm
 b\tV_sinhf
@@ -13052,8 +12159,6 @@ bf-ofb
 bgD$
 bh.b|C
 biased
-biased 0 1024
-biased 0 4096
 bie.+
 bignum out of range
 bignum routines
@@ -13470,7 +12575,6 @@ constrainVelocity
 constrain_to_origin
 constrain_velocity
 cont [ %d ]
-contains
 content and data present
 content not found
 content type mismatch
@@ -13719,8 +12823,6 @@ defaultcamera
 defaultcurvetype
 defaultedgezerovalue
 defaultvalue
-defines subasset
-defines subasset (exact)
 deformable
 deformable_attach_mode
 deformable_attach_orientation_mode
@@ -13868,7 +12970,6 @@ documentPublisher
 documentSeries
 documentTitle
 documentVersion
-doesn't contain
 domain
 domainComponent
 domainRelatedObject
@@ -14313,7 +13414,6 @@ filePath
 filename too big
 filenameBase
 filter
-filter_type
 filterclass
 finalTime
 final_time
@@ -15102,7 +14202,6 @@ internal list error
 internalInputs
 international-organizations
 internationaliSDNNumber
-interpolationMode
 interpolationType
 interpolator_left
 interpolator_right
@@ -15531,396 +14630,107 @@ mXRecord
 mZKB
 m\ta=\ruWb
 m_ActiveValue
-m_AdditionalExtensions
-m_AllowedMaterialAttributes
-m_AlternateAssetKey
-m_ArgsWithLineColumn
-m_AssetKey
-m_AssetType
-m_AssetTypes
-m_AssetWarnings
-m_AutoDataTag
-m_AutoFilterTag
 m_Bindings
-m_BlockID
-m_Blocks
-m_Checks
 m_ChoiceGroups
-m_ChoiceSelection
 m_ChoiceValues
 m_ChoiceVariables
 m_ClassNames
 m_ClassVersions
-m_ColorPosition
-m_ColorSelection
 m_Comparison
-m_CompileDependsOnResourceTypes
-m_CompilerIdentifier
 m_Components
 m_Context
 m_ControlPointPositions
-m_CoordinateSpace
-m_CoordinateSpaceA
-m_CoordinateSpaceB
 m_CurveSegmentMidpointPositions
-m_DefaultOption
-m_DefaultPath
-m_DefaultPathInWorldSpace
 m_Deformers
 m_DeltaTransform
-m_DirectionVector
-m_DisallowedMaterialAttributes
-m_DisplayColor
-m_DistributionMode
-m_DistributionMode == RANDOM
 m_DrawCalls
 m_ElementPath
-m_Encoding
-m_EndPointA
-m_EndPointB
-m_EndPointSpaceA
-m_EndPointSpaceB
-m_EngineCommands
-m_EngineModulesThatReferenceAssets
-m_EngineTools
-m_ExcludeAddonNames
-m_ExcludeFromMods
-m_Executable
-m_Ext
-m_ExternalTools
 m_ExtraStreams
-m_FilterFunc
-m_Filters
-m_FixDescription
-m_FixType
-m_ForwardDirectionSpace
-m_FriendlyName
-m_GridArrangement
-m_GridArrangement == FILL
-m_GridArrangement == FILL || m_bAlternateShift == false
-m_GridArrangement == SEGMENT
-m_GridOriginMode
-m_Group
-m_HandleColor
-m_HandleShape
-m_HandleSize
-m_HideExpression
-m_HideForRetailMods
 m_IR
-m_Icon
-m_IconLg
-m_IconSm
 m_ImageFileRelativePath
 m_InputMacros
-m_InputPositionA
-m_InputPositionB
-m_InputVector
-m_InputVectorA
-m_InputVectorB
-m_InterfaceName
-m_IntrospectedRootStruct
 m_Keys
-m_Library
-m_LimitToMods
 m_LocalToWorld
 m_LocatorConfig
-m_LocatorName
-m_Manifests
-m_MatchSystemExecutable
-m_MaterialGroup
-m_MaterialGroupChoices
 m_MaterialOverrideTables
-m_MaterialReplacements
 m_MaterialTintTables
 m_MeshResourceName
-m_Mod
-m_Models
 m_NavAreas.Count() < CNavMarkerData::MAX_ELEMENTS
 m_Normals
-m_Options
-m_OriginSpace
-m_OriginalMaterial
-m_OutputChoiceVariableName
-m_OutputCoordinateSpace
-m_OutputVariable
-m_OutputVariableMaxX
-m_OutputVariableMaxY
-m_OutputVariableMaxZ
-m_OutputVariableMinX
-m_OutputVariableMinY
-m_OutputVariableMinZ
-m_OutputVariableName
-m_OverrideToolShortcutName
 m_Parts
-m_PathName
-m_PathSpace
-m_Place
-m_PlaceAtPositions
-m_PlacementMode
-m_PlacementMode == SPHERE
-m_PointSpace
 m_Positions
-m_PreviewThumbnailOverlayIcon
-m_PriorityExts
-m_ReadOnlyExpression
 m_ReferencedMeshSnapshots
-m_ReplacementMaterial
 m_ReplacementTable
-m_RequireSearchableIntKey
-m_RequireSearchableIntValue
-m_RequiredSpecialDependency
 m_ResourceNames
-m_ResourceVersion
-m_Resources
-m_RestrictAutoTagToAssetType
-m_RestrictAutoTagToAssetType == ""
 m_Results
-m_SelectionMode
-m_SelectionMode != GRADIENT_LOCATION
-m_SelectionMode != SPECIFIC_COLOR
-m_SelectionMode == SPECIFIC_COLOR
-m_SourceFile
-m_SpecificChildIndex
-m_StateName
 m_Stops
 m_Streams
-m_SubassetTypes
-m_SupportedExts
-m_SuppressSubstrings
-m_SurfacePropertyOverride
-m_TagAliases
-m_TagColor
-m_TagDescription
-m_TagIcon
 m_TagValue
-m_TargetPoint
-m_TargetPointSpace
-m_TargetSpace
-m_Test_InjectSearchable
 m_Texcoords
-m_ThumbnailOverlayImage
 m_TintTable
-m_Title
-m_ToolIcon
-m_UpDirectionSpace
-m_UpSpace
-m_VariableComparison
 m_VariableValue.m_TargetName
-m_VariableValues
-m_WorkingDir
-m_bAlignOrientation
-m_bAlignOrientation == false
-m_bAllowAtEnd
-m_bAllowAtStart
-m_bAllowRotation
-m_bAllowScale
-m_bAllowScale == false
-m_bAllowTranslation
-m_bAllowedToCompileInTestMode
-m_bAlternateShift
-m_bApplyToCurrentTransform
 m_bBakedTwoSided
-m_bBringEngineToFront
 m_bCanBatchWithDynamicShaderConstants
-m_bCanHighlightSubassets
-m_bCannotBeAMultiParentChildCompile
-m_bCannotBeShown
-m_bCastStaticShadows
 m_bChildCursorsShouldInherit
-m_bClearCurrentOverrides
 m_bConditionValue
-m_bConfigurable
-m_bConfigurable == false
-m_bContentFileIsText
-m_bContinuousSpline
 m_bCordonsVisible
-m_bDebugCommandline
-m_bDeformationEnabled
-m_bDetailObject
-m_bDetailObject == false
-m_bDetailObject == true
-m_bDisableDynamicDeformable
-m_bDiscardIfUknown
-m_bDisplayModel
-m_bDoNotWarnAboutLargeAssetBatches
 m_bDrawLast
-m_bEnd
-m_bEnforceLimits
-m_bEnforceLimits == false
-m_bExposeAsParameter
-m_bExposeAsParameter == false
 m_bFirstEvaluate
 m_bFlipFaces
-m_bFollowReferences
-m_bForceStatic
-m_bForceStatic == true
-m_bHACK_ProvideResultMaxX
-m_bHACK_ProvideResultMaxY
-m_bHACK_ProvideResultMaxZ
-m_bHACK_ProvideResultMinX
-m_bHACK_ProvideResultMinY
-m_bHACK_ProvideResultMinZ
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
-m_bHideTypeByDefault
-m_bIgnoreCables
-m_bIgnoreCompiledState
-m_bIgnoreObjectRotation
-m_bIgnoreObjectScale
 m_bIsCordoning
-m_bIsNontrivialChildAssetType
 m_bIsNotMatchedToMaterial
-m_bIsSecondaryTool
-m_bIsWorkshopItemTool
-m_bIsWorkshopManagerTool
 m_bLiveParameterUpdate
-m_bLocalEvaluationState
 m_bNoShadow
-m_bNormalized
 m_bOnlyShadow
-m_bOnlyWarnAddons
-m_bOnlyWarnIfContentFilePresent
-m_bOnlyWarnIfGameFilePresent
-m_bOrientAlongLine
-m_bPlane
-m_bPrefersIconForThumbnail
-m_bPrefersLivePreview
-m_bPresentInGameTree
-m_bPreventDirectCompile
-m_bPrioritizeUp
 m_bRemoveWhenOutOfScope
 m_bRenderClusteredProbesOnly
 m_bRenderProbeRadius
-m_bResetPitch
-m_bResetRoll
-m_bResetYaw
-m_bRestoreState
-m_bRigidDeformation
-m_bShouldCompileErrorFallbackToDisk
 m_bShowCompressedIR
-m_bShowInRevisionSubMenu
-m_bStart
-m_bSuppressFullFingerprintCalculation
-m_bTagHidesAssetByDefault
-m_bTagIndicatesRejectedAsset
-m_bTraceAway
-m_bTraceAway == false
-m_bUnrecognizedReferencesAreErrors
 m_bUseCompressedNormalTangent
-m_bUseFixedUpDirection
-m_bUseProjectedDistance
 m_bUseShadowFastPath
-m_bVerticalLength
 m_externalMethodTargetGraph
-m_fFalloff
 m_fMoveTo
-m_flAlternateShiftLength
-m_flAlternateShiftWidth
-m_flBendAngle
-m_flBendPoint
-m_flBendRadius
-m_flBlendWeightFullDenstity
-m_flBlendWeightMax
-m_flBlendWeightMin
-m_flBlendWeightMinScale
-m_flConstraintMaxX
-m_flConstraintMaxY
-m_flConstraintMaxZ
-m_flConstraintMinX
-m_flConstraintMinY
-m_flConstraintMinZ
 m_flDeltaValue
-m_flDensityMinScale
 m_flDimensionsInOutValue
 m_flDimensionsSizeValue
-m_flDisplayRadius
-m_flDisplayScale
-m_flInitialAngle
-m_flInitialMaxX
-m_flInitialMaxY
-m_flInitialMaxZ
-m_flInitialMinX
-m_flInitialMinY
-m_flInitialMinZ
-m_flMaxSurfaceSlope
-m_flMinSurfaceSlope
 m_flOcclusionDeviation
 m_flOcclusionDistanceRatio
 m_flOcclusionReflectionRatio
 m_flOcclusionValue
-m_flOffsetAlongPath
 m_flOpacityScale
 m_flOrder0
 m_flOrder10
 m_flOrder11
 m_flOrder12
-m_flOrientToSurface
-m_flParamaterMaxValue
-m_flParamaterMinValue
 m_flPathingDistanceRatio
-m_flPositionRadiusInner
-m_flPositionRadiusOuter
 m_flProbeRadius
-m_flRandomVerticalOffsetMax
-m_flRandomVerticalOffsetMin
-m_flRandomness
-m_flReverbTimeHigh
-m_flReverbTimeLow
-m_flReverbTimeMid
 m_flSlopeIncoming
 m_flSlopeOutgoing
-m_flSnapIncrement
-m_flSnappingIncrement
-m_flSpacing
-m_flSpacingLength
-m_flSpacingWidth
-m_flUniformModelScale
-m_flWeight0
-m_flWeight1
-m_flWeight2
 m_hDef
-m_hPulseGraph
-m_hSmartProp
 m_iszNPC
 m_materialsValues
-m_nAssetTypeVersion
 m_nClusterIndex
-m_nContentVersion
-m_nCountL
-m_nCountMax
-m_nCountMin
-m_nCountW
 m_nCurrentWakeIndex
 m_nCursorID
 m_nDefinitionVersion
-m_nDeformableAttachmentMode
-m_nDeformableOrientationMode
 m_nDeformationMode
 m_nDeformerIndex
-m_nDetailObjectFadeLevel
 m_nDrawCall
 m_nFieldDataStates
 m_nGraphID
 m_nHash
 m_nInterpolationMode
-m_nLodLevel
 m_nMaterialOverrideTableIndex
 m_nMaterialTintTableIndex
-m_nMaxDepth
 m_nMovableIndex
-m_nNthPositionIndexOffset
-m_nParamaterMaxValue
-m_nParamaterMinValue
-m_nPickMode
-m_nPlaceEveryNthPosition
 m_nProbeIndex
 m_nProbeIndexSource
 m_nProbeType
 m_nResourceNameIndex
 m_nResult
-m_nScaleMode
 m_nSelectedProbeType
-m_nSourceLine
 m_nStackDepthWhenAdded
 m_nSubjectID
 m_nYieldToken
@@ -15930,31 +14740,13 @@ m_pathingCoeffs
 m_pathingEQ
 m_reverbScales
 m_reverbTimes
-m_sLabel
-m_sSmartProp
 m_sValue0
-m_vAlignDirection
 m_vDeltaMax
 m_vDeltaMin
 m_vDimensionsInsideSizeField
 m_vDimensionsOutsideField
-m_vEnd
-m_vForwardVector
-m_vHandleOffset
-m_vModelScale
 m_vNonUniformScale
 m_vNumDivisions
-m_vOriginPos
-m_vPathOffset
-m_vPlaneUpDirection
-m_vRotationAxis
-m_vScale
-m_vSize
-m_vSnapIncrement
-m_vTargetPos
-m_vTraceDirection
-m_vUpDirection
-m_vUpPos
 m_vecNavLinkMovementNames
 ma\v\r01!
 mac absent
@@ -16722,11 +15514,7 @@ parentAttachment
 parentBindRotation
 parentConstraint
 parent_cursor_id
-parented by asset
-parented by asset (exact)
 parentname
-parents asset
-parents asset (exact)
 parse error
 parse tlsext
 particleSnapshotSpacing
@@ -16894,8 +15682,6 @@ population
 port_name
 posTolerance
 posable
-position of target point.
-position of up point.
 position$0
 position$0Indices
 positionChannel
@@ -16992,7 +15778,6 @@ prop_physics_respawnable
 prop_static
 propattr_flatten_into_parent_row
 propdataname
-properties
 propertyNameIndices
 propertyNames
 propertyStrings
@@ -17138,12 +15923,6 @@ refOrientation
 referenceID
 referenceName
 reference_map
-referenced or depended-on by asset
-referenced or depended-on by asset (exact)
-references or depends on asset
-references or depends on asset (exact)
-references subasset
-references subasset (exact)
 registeredAddress
 registers
 reject
@@ -17338,7 +16117,6 @@ scriptlist
 scripts/activity_modifier_weights.txt
 scripts/collision_detail_layers.vdata
 scripts/collision_properties.txt
-scripts/detail_prop_types.vdata
 scripts/hammerinfo.txt
 scripts/nav_hulls.vdata
 scripts/nav_hulls_presets.vdata
@@ -17736,7 +16514,6 @@ smartPropConfigurationHelper
 smartPropFilename
 smartPropPartSet
 smart_prop
-smartprop_choice_options
 smartprop_print_timings
 smartprops
 smime text error
@@ -18013,7 +16790,6 @@ supports_loop
 suppressed
 suppressed_field
 surfacePropertyOverride
-surface_properties
 surface_property_override
 surname
 syncEngineFramerate
@@ -18613,7 +17389,6 @@ vsDmxIO houdiniSceneIO
 vsUtils.py
 vscale
 vsky
-vsmart
 vsutils_py
 vtex
 vv == NULL

@@ -36950,7 +36950,6 @@ Duplicate __proto__ fields are not allowed in object literals
 Duplicate capture group name
 Duplicate export of '%'
 Duplicate parameter name not allowed in this context
-Duration
 DurationFormat
 DurationFormatConstructor
 DurationFormatPrototypeFormat
@@ -38201,7 +38200,6 @@ Illegal property in declaration context
 Illegal return statement
 Illegal value for localeMatcher:%
 IllegalHandler
-Immediate
 Immediate256
 Immediately after CommitAssignmentPhase.
 Immutable prototype object '%' cannot have their prototype set
@@ -39430,7 +39428,6 @@ LOAD_HANDLER_TYPE
 LOG10E
 LOG2E
 LOONG64
-LOOP
 LPAREN
 L\tL\nL\vL\fL\rL
 Label '%' has already been declared
@@ -39782,7 +39779,6 @@ LookupIterator::ACCESSOR == it.state()
 LookupIterator::ACCESS_CHECK != it.state()
 LookupTrampoline Descriptor
 LookupWithVector Descriptor
-Loop
 Loop %d headed at #%d\n
 Loop depth = %d 
 LoopExit
@@ -43608,7 +43604,6 @@ TraceEnter
 TraceExit
 TraceInstruction
 TracingFlags::runtime_stats
-Transition
 Transition strings during a full GC with stack
 TransitionAndStoreArrayElement
 TransitionAndStoreElement
@@ -49412,7 +49407,6 @@ promise_value_thunk_finally_shared_fun
 promise_withresolvers_result_map
 promote pages based on utilization
 propagation roots: 
-properties
 properties.size() < std::numeric_limits<uint32_t>::max()
 properties_slot->kind() == TranslatedValue::kTagged
 property '

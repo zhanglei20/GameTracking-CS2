@@ -995,7 +995,6 @@ A minimum on particle simulation time, particle simulation happening more freque
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
 A#B7
 A#Bg
-ALPHA
 ALPHA2
 AN?NbX?\f
 AT\tK
@@ -1079,7 +1078,6 @@ Begin testing a condition composed of Observable variable references. Continues 
 BindlessParticleShader
 Blobulator
 Bone Indices
-Bone Weights
 Box Angles
 Box Flags
 Box Maxs
@@ -1326,6 +1324,7 @@ Creating collection:
 Creation Time
 Cross Product Vector
 Cross Product of Vector a x Vector b
+Crossfade
 Cull or modify relative to neighboring particles
 Cull random
 Cull relative to model
@@ -1338,6 +1337,13 @@ Cursor Has Tag
 Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
 Cycle Scalar
+DETAIL_2_COMBO_ADD
+DETAIL_2_COMBO_ADD_SELF_ILLUM
+DETAIL_2_COMBO_CROSSFADE
+DETAIL_2_COMBO_MOD2X
+DETAIL_2_COMBO_MUL
+DETAIL_2_COMBO_OFF
+DETAIL_2_COMBO_UNINITIALIZED
 D\tV_log2f
 D_COMPRESSED_NORMALS_AND_TANGENTS
 D_DEBUG_STATS
@@ -1358,6 +1364,7 @@ Depth
 DepthMap
 Desired Kill Priority
 Detach R%d
+Detail2Combo_t
 Diffuse particle attributes
 Disable to get a better look at what's happening offscreen
 DisableSorting
@@ -1685,7 +1692,6 @@ Mul R%d <- R%d * R%d
 Multiplier for falling back to cheaper effects under load.
 NI>R
 NONE/Disabled
-NORMAL
 NULL CELL 
 Named model body part random
 Named model mesh group random
@@ -1705,7 +1711,6 @@ Normal align to CP
 Normal lock to control point
 Normal modify offset random
 NormalTexture
-Normalize Vector
 Normalize Vector a
 Normalize vector
 Not R%d <- !R%d
@@ -2008,7 +2013,6 @@ SHADER_EXTRA_DATA2
 Saturate
 Saturate (clamps float between 0 and 1)
 Save a named value of any type on the cursor.
-Scale
 Scale Current Value Raw
 Scale INV R%d <- R%d / R%d
 Scale Initial Value
@@ -2047,7 +2051,6 @@ Set Event
 Set Float
 Set Simulation Timescale
 Set System-Wide Float
-Set Variable
 Set Vector
 Set child control points from particle positions
 Set child control points objects to model particles

@@ -516,7 +516,6 @@ AVSubtitleRect
 AVUI
 AVup
 Active Format Description data
-Advanced
 Advanced Coding Profile
 Advanced Core Profile
 Advanced Real Time Simple Profile
@@ -653,7 +652,6 @@ Cannot use previous picture in error concealment\n
 Canopus HQ/HQA
 Canopus HQX
 Canopus Lossless Codec
-Center
 Changing field mode (%d -> %d) between slices is not allowed\n
 Channel count %d
 Channel layout '%s' with %d channels does not match number of specified channels %d\n

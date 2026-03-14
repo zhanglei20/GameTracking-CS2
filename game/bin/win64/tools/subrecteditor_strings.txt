@@ -2058,7 +2058,6 @@ Checkout Failed
 Checkout Failed.
 Checkout was NOT successful! To save you must select a different file.
 Checkout?
-Children
 Class
 Clear History
 Clear Recent File List
@@ -2086,6 +2085,7 @@ Could not check in file(s): %s
 Could not check out file(s): %s
 Could not check out file\n%s
 Courier
+Create
 Create Rectangle
 Ctrl
 Custom Changelist
@@ -2170,7 +2170,6 @@ Failed to unserialize document data from kv3 data:\n%s
 Failed to write file: %s\n
 Fast Asset Search
 FastAssetPicked
-File
 File Opened by Other User
 File Opened by Other Users
 File opened with errors
@@ -3028,7 +3027,6 @@ portrait
 portrait (inverted)
 preview_material
 primary
-properties
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quiet

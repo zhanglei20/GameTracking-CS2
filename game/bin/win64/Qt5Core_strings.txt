@@ -10769,7 +10769,6 @@ CookIslands
 CopticScript
 CopyAction
 CopySid
-Corner
 Cornish
 Corsican
 CosineCurve
@@ -10782,6 +10781,7 @@ Country
 CoverWindow
 CrashExit
 Crashed
+Create
 CreateEventExW
 CreateEventW
 CreateFile %ls failed.
@@ -11023,7 +11023,6 @@ EJ}o!p~o"p
 EKFK
 EKZ1b0
 EL1I
-ELEMENT
 EMPTY
 ENTITIES
 ENxp]NR
@@ -23957,7 +23956,6 @@ progressValueChanged
 progressive
 project.museum
 promo
-properties
 propertiesAssigned
 property
 propertyName

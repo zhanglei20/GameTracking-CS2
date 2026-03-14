@@ -5295,7 +5295,6 @@ CToolSceneJointAxes
 CToolSceneJointNames
 CToolSceneJointRotations
 CToolSceneLight
-CToolSceneLightRig
 CToolSceneModel
 CToolSceneNode
 CToolSceneNodeGroup
@@ -5468,7 +5467,6 @@ Child %d
 Child Asset(s)
 Child particle system
 Child%d
-Children
 ChromaBlurRadius
 Clamp Float
 Clamp Int
@@ -5506,7 +5504,6 @@ CollectionFloatInput
 CollectionRendererFloatInput
 CollectionRendererVecInput
 CollectionVecInput
-Color Gradient
 Color Picker
 Color:
 ColorDialogFinished
@@ -5736,7 +5733,6 @@ Directory error
 Directs each subsequent cursor to a different path. The order can be sequential, shuffled, or totally random. Keywords: cycle, exit.
 Directs the cursor to different paths depending on a boolean condition. Equivalent to an if-else statement in code. Keywords: exit, continue.
 Directs the cursor to the path matching the passed in value.<br>(or the default path if the value doesn't match any user-defined paths). Keywords: exit
-Disable
 Disable Perforce Operations?
 Disallow interrupts.
 Display Set
@@ -6044,7 +6040,6 @@ FaxRecvTime
 FaxSubAddress
 Feedback
 FieldOfViewCotangent
-File
 File Opened by Other User
 File Opened by Other Users
 File does not contain a root object of type '%s'
@@ -6083,7 +6078,6 @@ Fire at all entities with the desired name (standard Hammer behavior).
 FireAtName
 Fires a series of child cursors at the specified times.
 Fires multiple child cursors simultaneously, and optionally waits for completion. Similar to Timeline or Parallel Branch. This will split execution into many simultaneous branches.
-First
 First Value
 Fixed
 Flag sets do not have long names
@@ -6191,7 +6185,6 @@ H>2v
 HAC K  Unused Binding
 HELLO
 HELPER_BONE
-HIDE
 HSLA
 HSLA\t
 HSVA
@@ -6398,7 +6391,6 @@ ItemFile
 ItemIsolateView
 ItemIsolateVignette
 ItemSlots
-Items
 ItemsFiles
 J%f%f%f%f%f%f%f%f
 JIGGLE_BONE
@@ -6430,7 +6422,6 @@ Kill Cursors With Tag
 Kill This Cursor And Cancel
 Kill This Cursor And Fail
 L>Cq
-LEFT
 LMouse
 LMouseDoubleClick
 LOD Value %g - %g
@@ -6510,7 +6501,6 @@ LogLuvInitState
 Logical And &&
 Logical Not !
 Logical Or ||
-Loop
 Loop Action Animation?
 Loop For Each
 Loop From %s Through %s%s
@@ -6871,7 +6861,6 @@ Noise Turbulence:
 Noise Type:
 Nonstandard tile length %d, convert file
 Nonstandard tile width %d, convert file
-Normalize Vector
 Normalize Vector a
 Not Equal !=
 Not R%d <- !R%d
@@ -7244,7 +7233,6 @@ Outputs at random, repeats allowed
 Outputs selected in order
 Outside World
 OverlayProjectionDirection
-Override
 Override target content folder
 Overwrite Existing Files?
 Overwrite With Current
@@ -7501,7 +7489,6 @@ PulseEvent_TopologyWillChangeLaterNotification_t
 PulseNodeEmbedded
 PulseNodeGeneric
 PulsePanel
-PulsePortUserVisibility_t
 PulseRequirementEvaluationOperator_t::AND
 PulseRequirementEvaluationOperator_t::OR
 PulseRequirementFailBehavior_t::SKIP_DOWNSTREAM_NODES
@@ -7789,7 +7776,6 @@ SGILog compression supported only for %s, or raw data
 SGILog24
 SGILogDataFmt
 SGILogEncode
-SHOW
 SLIDER_BACKFILL_EMPTY
 SLIDER_BACKFILL_HARD
 SLIDER_BACKFILL_HILL
@@ -7836,7 +7822,6 @@ Save session
 ScalableAOBias
 ScalableAORadius
 ScalableAOStrength
-Scale
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 Scale:
@@ -7886,7 +7871,6 @@ Set Animgraph Param '%s'
 Set Child
 Set Control Point Configuration Name '%s'
 Set Detail Level
-Set Variable
 Set an animgraph parameter on a prop_dynamic entity.
 Set the number of elements in the array.
 Set:
@@ -8150,7 +8134,6 @@ TakeRenderDocCapture
 Takes the value of each element in the array
 TanFrameQuat
 Tangent of angle. Input in radians, output in radians
-Target Attachment
 Target Graph
 Target Input not found (%d)
 Target Override: %s
@@ -8338,7 +8321,6 @@ UIMatRTTexture.vtex
 UIName
 UIPath
 UITextureOnModel
-UNSPECIFIED
 U\8h(
 U\r?home@QTextBrowser@@UEAAXXZ
 Ultra:
@@ -9228,7 +9210,6 @@ field_name
 filePath
 filter
 filterText
-filter_type
 filterclass
 firetrigger
 fixed_height
@@ -9620,8 +9601,6 @@ m_AdditionalActors
 m_Arg
 m_ArgumentPorts
 m_ArrayIndexPorts
-m_Background
-m_BackgroundMap
 m_BadParseExprString
 m_BaseClasses
 m_Bindings
@@ -9646,15 +9625,12 @@ m_EntityParent
 m_EntityTargetAttachment
 m_ExitPortSyms
 m_ExpectedReturnType
-m_Exposure
 m_ExprPortVariables
 m_ExprText
 m_FalseVal
 m_FirstArg
 m_Format
-m_FriendlyName
 m_GenericKeys
-m_Grid
 m_HelpContextName
 m_Helpers
 m_In_Array
@@ -9677,7 +9653,6 @@ m_LegacyDefaultStr
 m_LiteralValueTypeWhenSaved
 m_LongName
 m_LoopHeader
-m_MapName
 m_MetaData
 m_MirroredAncestorInparamName
 m_MirroredAncestorNodeID
@@ -9696,23 +9671,18 @@ m_OutputParameter
 m_ParamModelName
 m_ParamValue
 m_PlugType
-m_PointLights
-m_PostProcessing
 m_PrimaryPoint
 m_PropertyName
 m_Results
 m_SecondArg
 m_SingleParamType
-m_Sky
 m_Source
 m_SourceID
 m_SourceNode
-m_SpotLights
 m_Step
 m_StepPoint
 m_Stop
 m_Stops
-m_Suns
 m_TagValue
 m_TargetGraph
 m_TargetOverrides
@@ -9742,12 +9712,8 @@ m_bNoShadow
 m_bNodeSkip
 m_bNotCondition
 m_bOnlyShadow
-m_bParentToCamera
-m_bParticlesTraceAgainstMap
 m_bRangeIncludesEndpoint
-m_bRelativePositioning
 m_bRemoveWhenOutOfScope
-m_bRender3DSkybox
 m_bShutdown
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
@@ -9757,15 +9723,10 @@ m_bmins
 m_cachedParamValueType
 m_eRbfType
 m_externalMethodTargetGraph
-m_flAxisScale
 m_flIdealHeight
-m_flLightSourceRadius
-m_flMaxEV
-m_flMinEV
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_hDef
-m_hPostProcessing
 m_hitboxsets
 m_iValue
 m_influenceFlags
@@ -9785,7 +9746,6 @@ m_nNumExits
 m_nRequirementFailBehavior
 m_nRequirementOperator
 m_nResult
-m_nRigType
 m_nStackDepthWhenAdded
 m_nSubjectID
 m_nUserVisibility
@@ -9794,7 +9754,6 @@ m_pItemSet
 m_rbfParameters
 m_rgbColor
 m_strEditorModel
-m_vLookAt
 m_vcdFilename
 m_vecAdditionalActorsData
 m_vecGameBlackboards
@@ -9904,7 +9863,6 @@ nSelection
 nToolId
 nTypeInt
 nValue
-nVarDefID
 nX?setBold@QFont@@QEAAX_N@Z
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
@@ -10199,7 +10157,6 @@ step < 0 && index > stop
 step > 0
 step > 0 && index < stop
 stop > index
-strValueEncoded
 streak_effect
 stretch
 string_instanced
@@ -10214,7 +10171,6 @@ suggestions
 summon
 summon_persona_1
 suppressed_field
-surface_properties
 system_state
 tBAnimNodeID
 t\n?beginEditBlock@QTextCursor@@QEAAXXZ
@@ -10304,7 +10260,6 @@ toolsVisModeIndex
 tools_preview
 tools_renderscenes
 toolscene_gizmo_algorithm
-toolscenelightrigs.vdata
 toolscenenodes
 toolscenevismodes.txt
 tormentor

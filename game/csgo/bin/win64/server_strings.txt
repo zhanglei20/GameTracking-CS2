@@ -8757,7 +8757,6 @@ $tH@T\tI
 /usr/local/ssl/lib/engines
 /usr/local/ssl/private
 /zt1
-0 180
 0 == ( pInstance->GetOwnerEntity()->GetEntityIdentity()->GetFlags() & EF_IN_STAGING_LIST )
 0.5 = 50% speed\n1 = 100% speed\n2 = 200% speed\n(Only editable when Fixed Length is false)
 0123456789
@@ -9856,7 +9855,6 @@ Array Set Count
 Array Shuffle
 Assert True
 AssertFatalCast
-AssetBrowse( vmdl, *requiredoubleclick )
 Associated Player Pawn
 Async Fire C%d:I%d
 Async%llu
@@ -9949,6 +9947,7 @@ BAD RECURSION DEPTH\n
 BAD-TYPE
 BADFUNCTIONPOINTER
 BANG!
+BANNER
 BASIC_CONSTRAINTS
 BAddToMessage
 BAsyncSend
@@ -10101,6 +10100,7 @@ BULLET_PLAYER_762MM
 BULLET_PLAYER_9MM
 BULLET_PLAYER_BUCKSHOT
 BURN
+BUY_MENU
 BY_FILE_CTRL
 BY_Lq)
 BYield
@@ -11507,6 +11507,7 @@ CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::ExecutePostPhysicsPoseTasks
 CNmGraphInstance::ExecutePrePhysicsPoseTasks
 CNmGraphInstance::GetCurrentGraphTimingInfo
+CNmParticleEvent::Type_t
 CNmTaskSystem::SerializeTasks
 CNmTaskSystem::UpdatePostPhysics
 CNmTaskSystem::UpdatePrePhysics
@@ -12925,6 +12926,7 @@ Counter
 Counter-Strike 2
 CoveringFriend
 CrateType
+Create
 Create Effect
 Create Explosion
 Create a C proxy for a script-based spawn group filter
@@ -12961,6 +12963,7 @@ CreateTrigger( vecMin, vecMax ) : Creates and returns an AABB trigger
 CreateTriggerRadiusApproximate
 CreateTriggerRadiusApproximate( vecOrigin, flRadius ) : Creates and returns an AABB trigger thats bigger than the radius provided
 CreateUniformRandomStream
+Create_CFG
 Created EHANDLE test entity. Run this command again to transmit the second ent.\n
 Created physics for %s\n
 Creates a new particle effect
@@ -13160,6 +13163,7 @@ DH_generate_key
 DH_generate_parameters_ex
 DH_new_method
 DHparams_print_fp
+DIORAMA
 DIRECT
 DIRECTORYSTRING
 DIR_ADD
@@ -13456,7 +13460,6 @@ Direction: %s
 Directory
 Directory copy (%s)\n
 DirtySpatialPartitionEntityList
-Disable
 Disable Override - %.2f
 Disable auto blink for BaseActor
 Disable motion for the prop
@@ -13626,7 +13629,6 @@ Duplicate recipe definition (%d)
 Duplicate sound material value (%d)
 Duplicate sticker kit ID %d
 Duplicate sticker kit name '%s'
-Duration
 Dynamic - Asleep
 Dynamic - Awake
 DynamicAtr:%s
@@ -13836,6 +13838,7 @@ EM_ScreenOverlay
 EN2 s/
 ENCRYPTED
 ENCRYPTED PRIVATE KEY
+END_OF_MATCH
 ENEMY
 ENERGYBEAM
 ENGAGE_AND_INVESTIGATE
@@ -14264,7 +14267,6 @@ Executing server command (%u bytes):\n%s\n---\n
 Exp2
 ExpandThink
 Expecting: 
-Experimental
 Explode
 ExplodeDamage
 ExplodeRadius
@@ -14337,7 +14339,6 @@ FIPS_DIGESTINIT
 FIPS_MD_CTX_COPY
 FIPS_mode_set
 FIRE
-FIRST
 FLASH
 FLASHBANG: %0.2f \n
 FN|p
@@ -14346,7 +14347,6 @@ FORCE_DEATH
 FORCE_NOT_USED
 FORM
 FORMAT
-FORWARD
 FOV2D
 FPlayerCanRespawn: pPlayer=0
 FU\n-XP
@@ -14574,7 +14574,6 @@ FireworksCrate.Start
 FireworksCrate.Stop
 Firing PickRandom input on logic_case %s with no cases set up\n
 Firing: (%s)\n
-First
 First player connected, %s = %d\n
 First valid class must be less than or equal to last valid class.
 First valid item slot must be less than or equal to last valid item slot.
@@ -15578,6 +15577,7 @@ INT_NEW_EX_DATA
 INT_RSA_VERIFY
 INT_TS_RESP_VERIFY_TOKEN
 INVALID CGameEventStartTouchCollideAdaptor
+INVENTORY_INSPECT
 IN_PROGRESS
 INdK
 IP Address
@@ -15620,6 +15620,7 @@ IgniteHitboxFireScale
 IgniteLifetime
 IgniteNumHitboxFires
 Ignore External Lookats
+IgnoreHealthCheck
 IgnoreUserInput
 Ignoring impact, energy %.0f (%.2f)\n
 Ignoring speaking bot %s at round end\n
@@ -16431,7 +16432,6 @@ ItemGenericTouch
 ItemGenericTriggerHelperTouch
 ItemSoda.Bounce
 ItemTouch
-Items
 Iw,e=2-b[
 IytF
 I{i3|G
@@ -16550,7 +16550,6 @@ LAYOUT_CUSTOM
 LAYOUT_HAND_DEFAULT
 LAYOUT_WORLD_DEFAULT
 LBN6
-LEFT
 LEFTARM
 LEFTLEG
 LEVEL DESIGN ERROR: Divide by zero in math_value\n
@@ -16709,7 +16708,6 @@ LookAtActorName
 LookSpeed
 LookTime
 LookType
-Loop
 Loop Count
 Loop Time
 Loop To End
@@ -16744,6 +16742,7 @@ M'Ezb
 M-laO
 M0 E
 MACHINEGUN
+MAIN_MENU
 MASK:
 MAlternateSemanticName
 MAtomicTransfersAsPlainString
@@ -17185,7 +17184,6 @@ NONAV
 NONAVNONSOLID
 NON_ZUP
 NON_ZUP_TRANSITION
-NORMAL
 NOT BREAKABLE
 NOT an attr
 NOT networked
@@ -17379,7 +17377,6 @@ Non Repudiation
 Non-entity Aggregate: %s
 Nonce
 None 
-Normalize Vector
 Normalize Vector a
 Not 
 Not After: 
@@ -17423,7 +17420,6 @@ O5@F
 O7v%
 O?#7n
 OBJ lib
-OBJECT
 OBJECT DESCRIPTOR
 OBJ_NAME_new_index
 OBJ_add_object
@@ -17432,6 +17428,10 @@ OBJ_dup
 OBJ_nid2ln
 OBJ_nid2obj
 OBJ_nid2sn
+OBSERVER_INTERP_NONE
+OBSERVER_INTERP_SETTLING
+OBSERVER_INTERP_STARTING
+OBSERVER_INTERP_TRAVELING
 OBSTACLE_TOP
 OCSP
 OCSP Archive Cutoff
@@ -17510,11 +17510,11 @@ Object %d (of %d) =========================\n
 Object Signer
 Object Signing
 Object Signing CA
+ObserverInterpState_t
 ObserverPawn
 Oh%u'
 On Canceled
 On End
-On Finished
 On Fired
 On Interval
 On Start
@@ -18419,6 +18419,7 @@ Pressed
 Pressing...
 PressureDelay
 PrettyFont:%s:%d:%d
+PreviewCharacterMode
 Primary   %02x%02x%02x
 PrimaryWeapon
 Prime:
@@ -19347,7 +19348,6 @@ Saved to '%s' steam cloud\n
 Saving existing workshop save file from %s\n
 Saving game to %s...\n
 Saving money for next round.\n
-Scale
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 ScaleDamage
@@ -20546,6 +20546,8 @@ TARGET_BOMBED
 TARGET_SAVED
 TASER
 TC\tf\
+TEAM_INTRO
+TEAM_SELECT
 TEArmorRicochet_GameEvent_t
 TEBeamEntPoint_GameEvent_t
 TEBeamEnts_GameEvent_t
@@ -21366,6 +21368,7 @@ W3i+,
 W>peSp>9
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.\n
 WALKABLESEED
+WALKING
 WARNING! Field %s is using the wrong FIELD_ type!\nFix this or you'll see a crash.\n
 WARNING: Attempted to send a steamworks gamestats row when the steamworks interface was not available!
 WARNING: Attempting to set fields on a stopped sound\n
@@ -21399,11 +21402,15 @@ WIN32_NAME_CONVERTER
 WIN32_PATHBYADDR
 WIN32_SPLITTER
 WIN32_UNLOAD
+WINGMAN_INTRO
 WL6e}:
 WLs6
 WOCR
 WOL: 0x%p (%s)
 WORKSHOP COMMAND: %s does not exist, ignoring\n
+WORLDTEXT_ORIENTATION_DEFAULT
+WORLDTEXT_ORIENTATION_FACEUSER
+WORLDTEXT_ORIENTATION_FACEUSER_UPRIGHT
 WP4$!
 WPN_ACTION_COMPLETE
 WPN_BLOCK_INSPECT
@@ -21489,7 +21496,6 @@ Weapon_Taser.ChargeReady
 Weapon_Taser.Single
 Wearable
 WebApi
-Weight
 Welcome message contained %s twice\n
 WeldVertices
 WfMD{
@@ -21539,6 +21545,7 @@ WorldDim
 WorldGameSystem
 WorldRenderer/LPVEdgeBlending
 WorldSpaceCenter
+WorldTextPanelOrientation_t
 Wrapper class over g_pDebugOverlay instance
 WrgoI
 Write Cached Pose
@@ -23717,7 +23724,6 @@ bn_expand2
 body_collection
 body_substring_keys
 body_substring_values
-bodygroup
 bodygroupchoices
 bodygroups
 bodyque
@@ -24320,7 +24326,6 @@ constraint_type
 consumed_server_angle_changes
 cont [ %d ]
 contactshadow
-contains
 contains_patches_representing_organizations
 contains_stickers_autographed_by_proplayers
 contains_stickers_representing_organizations
@@ -28171,7 +28176,6 @@ m_DefaultKV3
 m_Entity_pEnvMap
 m_Entity_pLightProbeVolume
 m_Entity_pSceneObject
-m_FriendlyName
 m_HelpContextName
 m_Helpers
 m_Inputs
@@ -28223,7 +28227,6 @@ m_command
 m_conceptCooldowns
 m_deltaTime
 m_ePlayerControllerKickPolicyMask
-m_events
 m_externalMethodTargetGraph
 m_fMatchStartTime: %f\n
 m_fMoveTo
@@ -28290,7 +28293,6 @@ m_nNavObstacleType
 m_nNoiseRunningGuid
 m_nParamIndex < 0
 m_nResult
-m_nSamples
 m_nSound
 m_nSpawnGroupCount
 m_nStackDepthWhenAdded
@@ -31826,7 +31828,6 @@ supportedAlgorithms
 supportedApplicationContext
 suppress_creation_on_death
 surf_prop
-surface_properties
 surface_type
 surname
 survival

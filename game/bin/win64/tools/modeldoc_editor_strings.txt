@@ -645,38 +645,21 @@ $prefix_element$
 *showassetpreview
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
 +"?updateGeometries@QListView@@MEAAXXZ
-+Additive
 +Advanced Options
-+Advanced Search Rules
 +Animation
-+Attachment
 +Chain Settings
 +Collision and Limits
-+Conditions
-+Config
 +Default Solver Settings
 +Default Target Settings
-+Easing
 +Effect Duration
-+Import Options
-+Metadata
 +Motion Resistance
 +On Break
 +On Break/+Physics
 +On Break/Fade
-+Optional
-+Particle
-+Position
 +Positioning
-+Preview
-+Primary Skeleton
-+Secondary Skeletons
 +Sequence
 +Simulation
 +Skinning Options
-+Sound
-+Target Time
-+Transition
 +Visuals
 +\f?focusOutEvent@QComboBox@@MEAAXPEAVQFocusEvent@@@Z
 +\t?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
@@ -11766,10 +11749,7 @@ $prefix_element$
 /]?size@QImage@@QEBA?AVQSize@@XZ
 /animation/graphs/
 /animgraphs/
-0 100
-0 180
 0.000
-0.01 5.0
 0000``
 08@HR
 08@J
@@ -14715,7 +14695,6 @@ Adjust DegreesMinMax
 Adjust Event Timing?
 Adjust Radius
 AdobeDeflate
-Advanced
 Advanced Options
 Affect All Bones
 Affect Children
@@ -14818,7 +14797,6 @@ Angle Threshold
 Angle Vertical
 Angle of the bone in the model's bind pose
 Angle of the bone relative to its parent bone
-Angles
 Angles {%.1f,%.1f,%.1f}\nAxis {%.2f,%.2f,%.2f} Angle %.1f
 Angular Damping
 Angular Damping Ratio
@@ -14885,7 +14863,6 @@ AnimGraph2
 AnimGraph2 Skeleton Files (*.vnmskel )
 AnimGraph2Clip()
 AnimGraph2List
-AnimGraphID()
 AnimIncludeModel
 AnimMarkupBase
 AnimMarkupCurveBase
@@ -14908,7 +14885,6 @@ AnimatedMaterialAttribute
 AnimatedMaterialAttributeColor
 AnimatedMaterialAttributeValue
 Animation 2
-Animation Clip
 Animation Controls
 Animation Details
 Animation Event Preview
@@ -15016,16 +14992,10 @@ Asset
 Asset Browser
 AssetBrowse( %s )
 AssetBrowse( abc )
-AssetBrowse( dmx, fbx, *requiredoubleclick )
-AssetBrowse( vmdl, *requiredoubleclick )
 AssetBrowse( vmdl_prefab )
 AssetBrowse( vmodel_template )
-AssetBrowse( vnmclip, *requiredoubleclick )
 AssetBrowse( vnmgraph )
-AssetBrowse( vnmgraph, *requiredoubleclick )
 AssetBrowse( vnmskel )
-AssetBrowse( vnmskel, *requiredoubleclick )
-AssetBrowse( vpcf, *requiredoubleclick )
 AssetBrowse( vpulse, *extraFilterString=(pulse_domain=ServerEntity)pulse_domain_subtype=prop_physics|pulse_domain_subtype=prop_ragdoll|pulse_domain_subtype=prop_dynamic )
 Assign A Channel
 Assign B Channel
@@ -15156,7 +15126,6 @@ BackBufferBlit
 BackGroundFill_t
 BackGroundStyle_t
 Background
-Background Color
 BackgroundColorChanged
 Backspace
 Bad Settings
@@ -15264,7 +15233,6 @@ Bind Angles (Relative)
 Bind Current Selection to This Bone
 Bind Origin (Absolute)
 Bind Origin (Relative)
-Bind Pose
 Bind Pose Direction
 Bind Pose Reference File
 Binding removed due to active drag: %s
@@ -15280,30 +15248,21 @@ BlackLevelDeltaV
 BlackLevelRepeatDim
 Blend %.2fs
 Blend (Masked): %.2f%%
-Blend 1D
 Blend 1D (Velocity)
-Blend 2D
 Blend Anim Events
-Blend Mode
 Blend Root Motion
 Blend Root Motion (Additive)
-Blend Space
 Blend Time Seconds
 Blend Weight
 Blend Weight Easing
 Blend Weights Per Vertex
 Blend: %.2f%%
 BlendIndices
-BlendSpace1D()
-BlendSpace2D()
-BlendTree
-BlendTreeState
 Blend\tWeight
 Blends
 BlockTransition
 Blur Radius
 Body Collection
-Body Group
 Body Group Choice
 Body Group Name
 Body Groups
@@ -15364,7 +15323,6 @@ BoneConstraintRbf :: input bone count %d != input pose count %d :: %s\n
 BoneConstraintRbf :: output bone count %d != output pose count %d :: %s\n
 BoneMarkup
 BoneMarkupList
-BoneMaskID()
 BoneName
 BoneRelativeNode
 BoneReplacements
@@ -15940,199 +15898,20 @@ CMotionAnalysisSettings
 CMotionAnalysisSettings_Foot
 CNewParticleEffect::DetectChanges
 CNmAdditiveBlendTask - Trying to blend additively, using a non-additive pose\n
-CNmAnimDocument
-CNmBlendSpace1D
-CNmBlendSpace1D::Point_t
-CNmBlendSpace2D
-CNmClipDocEvent
-CNmClipDocEventTrack
-CNmClipDocEventTrack::Type_t
-CNmClipDocEvent_BodyGroup
-CNmClipDocEvent_EntityAttribute
 CNmClipDocEvent_EntityAttribute::PerformValidation
-CNmClipDocEvent_EntityAttribute_Type_t
-CNmClipDocEvent_FloatCurve
-CNmClipDocEvent_Foot
-CNmClipDocEvent_FrameSnap
-CNmClipDocEvent_ID
 CNmClipDocEvent_ID::PerformValidation
-CNmClipDocEvent_Legacy
 CNmClipDocEvent_Legacy::PerformValidation
-CNmClipDocEvent_MaterialAttribute
 CNmClipDocEvent_MaterialAttribute::PerformValidation
-CNmClipDocEvent_OrientationWarp
 CNmClipDocEvent_OrientationWarp::PerformValidation
-CNmClipDocEvent_Particle
 CNmClipDocEvent_Particle::PerformValidation
-CNmClipDocEvent_RootMotion
 CNmClipDocEvent_RootMotion::PerformValidation
-CNmClipDocEvent_Sound
 CNmClipDocEvent_Sound::PerformValidation
-CNmClipDocEvent_TargetWarp
 CNmClipDocEvent_TargetWarp::PerformValidation
-CNmClipDocEvent_Transition
-CNmClipDocument
-CNmClipDocument::AdditiveBaseFrame_t
-CNmClipDocument::AdditiveType_t
 CNmEventRelevance_t
-CNmGraphDocAndNode
-CNmGraphDocAnimationPoseNode
-CNmGraphDocAnimationPoseNode::CData
-CNmGraphDocBlend1DNode
-CNmGraphDocBlend2DNode
-CNmGraphDocBoneMaskBlendNode
-CNmGraphDocBoneMaskNode
-CNmGraphDocBoneMaskParameterReferenceNode
-CNmGraphDocBoneMaskResultNode
-CNmGraphDocBoneMaskSelectorNode
-CNmGraphDocBoneMaskSwitchNode
-CNmGraphDocBoneMaskVirtualParameterNode
-CNmGraphDocBoolControlParameterNode
-CNmGraphDocBoolParameterReferenceNode
-CNmGraphDocBoolResultNode
-CNmGraphDocBoolVirtualParameterNode
-CNmGraphDocCachedBoolNode
-CNmGraphDocCachedFloatNode
-CNmGraphDocCachedIDNode
-CNmGraphDocCachedTargetNode
-CNmGraphDocCachedVectorNode
-CNmGraphDocClipNode
-CNmGraphDocClipNode::CData
-CNmGraphDocClipSelectorNode
-CNmGraphDocCommentNode
-CNmGraphDocControlParameterNode
-CNmGraphDocCurrentSyncEventIDNode
-CNmGraphDocCurrentSyncEventNode
-CNmGraphDocEntryOverrideNode
-CNmGraphDocEntryStateOverrideConditionsNode
-CNmGraphDocEntryStateOverrideConduitNode
-CNmGraphDocExternalGraphNode
-CNmGraphDocExternalPoseNode
-CNmGraphDocFixedWeightBoneMaskNode
-CNmGraphDocFloatAngleMathNode
-CNmGraphDocFloatClampNode
-CNmGraphDocFloatComparisonNode
-CNmGraphDocFloatControlParameterNode
-CNmGraphDocFloatCurveEventNode
-CNmGraphDocFloatCurveNode
-CNmGraphDocFloatEaseNode
-CNmGraphDocFloatMathNode
-CNmGraphDocFloatParameterReferenceNode
-CNmGraphDocFloatRangeComparisonNode
-CNmGraphDocFloatRemapNode
-CNmGraphDocFloatRemapNode::RemapRange_t
-CNmGraphDocFloatResultNode
-CNmGraphDocFloatSelectorNode
-CNmGraphDocFloatSelectorNode::Option_t
-CNmGraphDocFloatSwitchNode
-CNmGraphDocFloatVirtualParameterNode
-CNmGraphDocFlowGraph
-CNmGraphDocFlowGraph::Connection_t
-CNmGraphDocFlowNode
-CNmGraphDocFootEventConditionNode
-CNmGraphDocFootstepEventIDNode
-CNmGraphDocFootstepEventPercentageThroughNode
-CNmGraphDocGlobalTransitionConduitNode
-CNmGraphDocGlobalTransitionNode
-CNmGraphDocGraph
-CNmGraphDocGraphEventConditionNode
-CNmGraphDocGraphEventConditionNode::Condition_t
-CNmGraphDocIDComparisonNode
-CNmGraphDocIDControlParameterNode
-CNmGraphDocIDEventConditionNode
-CNmGraphDocIDEventConditionNode::SearchRule_t
-CNmGraphDocIDEventNode
-CNmGraphDocIDEventPercentageThroughNode
-CNmGraphDocIDParameterReferenceNode
-CNmGraphDocIDResultNode
-CNmGraphDocIDSelectorNode
-CNmGraphDocIDSwitchNode
-CNmGraphDocIDToFloatNode
-CNmGraphDocIDToFloatNode::Mapping_t
-CNmGraphDocIDVirtualParameterNode
-CNmGraphDocIsExternalGraphSlotFilledNode
-CNmGraphDocIsExternalPoseSetNode
-CNmGraphDocIsInactiveBranchConditionNode
-CNmGraphDocIsTargetSetNode
-CNmGraphDocLayerBaseNode
-CNmGraphDocLayerBlendNode
-CNmGraphDocLocalLayerNode
-CNmGraphDocNode
-CNmGraphDocNotNode
-CNmGraphDocOrNode
-CNmGraphDocOrientationWarpNode
-CNmGraphDocOrientationWarpNode::OffsetType_t
-CNmGraphDocParameterBaseNode
-CNmGraphDocParameterReferenceNode
-CNmGraphDocParameterizedClipSelectorNode
-CNmGraphDocParameterizedClipSelectorNode::CData
-CNmGraphDocParameterizedSelectorNode
-CNmGraphDocParameterizedSelectorNode::CData
-CNmGraphDocPoseResultNode
-CNmGraphDocReferencePoseNode
-CNmGraphDocReferencedGraphNode
-CNmGraphDocReferencedGraphNode::CData
-CNmGraphDocResultNode
-CNmGraphDocRootMotionOverrideNode
-CNmGraphDocScaleNode
-CNmGraphDocSelectorBaseNode
-CNmGraphDocSelectorConditionNode
-CNmGraphDocSelectorNode
-CNmGraphDocStateCompletedConditionNode
-CNmGraphDocStateLayerDataNode
-CNmGraphDocStateMachineGraph
-CNmGraphDocStateMachineGraphNode
-CNmGraphDocStateMachineLayerNode
-CNmGraphDocStateMachineNode
-CNmGraphDocStateNode
-CNmGraphDocStateNode::StateEvent_t
-CNmGraphDocStateNode::StateType_t
-CNmGraphDocStateNode::TimedStateEventType_t
-CNmGraphDocStateNode::TimedStateEvent_t
-CNmGraphDocSyncEventIndexConditionNode
-CNmGraphDocTargetControlParameterNode
-CNmGraphDocTargetInfoNode
-CNmGraphDocTargetOffsetNode
-CNmGraphDocTargetParameterReferenceNode
-CNmGraphDocTargetPointNode
-CNmGraphDocTargetResultNode
-CNmGraphDocTargetSelectorNode
-CNmGraphDocTargetVirtualParameterNode
-CNmGraphDocTargetWarpNode
-CNmGraphDocTimeConditionNode
-CNmGraphDocTransitionConduitNode
-CNmGraphDocTransitionEventConditionNode
-CNmGraphDocTransitionNode
-CNmGraphDocTransitionNode::TimeMatchMode_t
-CNmGraphDocVariationDataNode
-CNmGraphDocVariationDataNode::CData
-CNmGraphDocVariationDataNode::OverrideValue_t
-CNmGraphDocVariationIDComparisonNode
-CNmGraphDocVariationIDComparisonNode::CData
-CNmGraphDocVectorControlParameterNode
-CNmGraphDocVectorCreateNode
-CNmGraphDocVectorInfoNode
-CNmGraphDocVectorNegateNode
-CNmGraphDocVectorParameterReferenceNode
-CNmGraphDocVectorResultNode
-CNmGraphDocVectorVirtualParameterNode
-CNmGraphDocVelocityBlendNode
-CNmGraphDocVirtualParameterNode
-CNmGraphDocZeroPoseNode
-CNmGraphDocument
-CNmGraphDocument::DebugParameterSet_t
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::GetCurrentGraphTimingInfo
-CNmGraphParameterArchetype
 CNmGraphParameterArchetype::EntryType_t
-CNmIKRigDocument
-CNmIKRigLink
-CNmIKRigTarget
-CNmPreviewArchetype
-CNmPreviewArchetype::SecondarySkeleton_t
-CNmSkeletonDocument
-CNmSkeletonDocument::SecondarySkeleton_t
-CNmVariationHierarchy
+CNmParticleEvent::Type_t
 COMMAND_TEXT_MODE_BUTTON
 COMMAND_TEXT_MODE_ICON
 COMMAND_TEXT_MODE_MENU
@@ -16595,7 +16374,6 @@ CToolSceneJointAxes
 CToolSceneJointNames
 CToolSceneJointRotations
 CToolSceneLight
-CToolSceneLightRig
 CToolSceneModel
 CToolSceneNode
 CToolSceneNodeGroup
@@ -16857,12 +16635,10 @@ Ceiling Float
 Ceiling( A ) 
 CellLength
 CellWidth
-Center
 Center Of Mass
 Center Vertices
 Center pose, i.e. frame 1 from the 3 frame turn animation file with frame 1 subtracted :: %s
 Center vertices relative to the origin using average vertex position. Optionally rotate.
-Centimeters
 Chain End Bone Name
 Chain Forward Dir
 Chain Length
@@ -16941,8 +16717,6 @@ Child of a prefab must be a clone of a source node
 ChildDocument
 ChildDocumentList
 ChildDocumentViewer
-Children
-Choice
 Choice #%d
 Choice #0 (default)
 Choice A
@@ -16990,7 +16764,6 @@ Clip Preview
 Clip Selector
 ClipBoard
 ClipPath
-Clone
 Cloned State has an invalid source state node!
 Close &All
 Close Outline at Hard Edges
@@ -17144,23 +16917,6 @@ ClothTri
 ClothTwist
 ClothVertexMap
 CloudTexture
-CnmGraphDocChainLookatNode
-CnmGraphDocChainLookatNode::CData
-CnmGraphDocConstBoneTargetNode
-CnmGraphDocConstBoolNode
-CnmGraphDocConstFloatNode
-CnmGraphDocConstIDNode
-CnmGraphDocConstTargetNode
-CnmGraphDocConstVectorNode
-CnmGraphDocDurationScaleNode
-CnmGraphDocFollowBoneNode
-CnmGraphDocFollowBoneNode::CData
-CnmGraphDocSpeedScaleNode
-CnmGraphDocTwoBoneIKNode
-CnmGraphDocTwoBoneIKNode::CData
-CnmGraphDocVariationConstFloatNode
-CnmGraphDocVariationConstFloatNode::CData
-CnmGraphDocVelocityBasedSpeedScaleNode
 Col Fixed Blend Val
 Collapse All
 Collapse Edges
@@ -17397,6 +17153,7 @@ Counteract Animation
 Counteract motion in the joint
 Courier
 Courier New
+Create
 Create AO proxies from physics shapes
 Create Biped Ragdoll
 Create Cloth Self-Collision Cluster containing given bones
@@ -17431,12 +17188,14 @@ CreateOneOfEveryNode
 CreatePrefabFromSelection
 CreatePreviewWindowMenu
 CreateSemaphoreW
+Create_CFG
 Creates an animation from the model's bind pose
 Creates cloth shapes from physics shapes
 Creates distance field nodes from model joints
 Creates physics shapes and joints for a selection of bones
 Cross Product Vector
 Cross Product of Vector a x Vector b
+Crossfade
 Ctrl
 Ctrl Soft Offset from
 Ctrl offset from
@@ -17541,7 +17300,6 @@ Default ID
 Default LOD (Automatic)
 Default Layout
 Default Mask
-Default Material Group
 Default Mesh Visibility (Honor Bodygroups)
 Default Root Bone Name
 Default: %.2f
@@ -17627,10 +17385,8 @@ Didn't expect '=' for non-flags non-choices variable %s
 Different Indices On Mesh vs Bind Pose For "%s" Added Anchor Bone
 Different Indices On Mesh vs Bind Pose For "%s" Bone
 Dilate pixels at UV island edges.
-Dimensions
 Direction (Character)
 Directory error
-Disable
 Disable Compression
 Disable Continuous Collision Detection
 Disable Morph
@@ -17756,7 +17512,6 @@ Duplicate target body (%s) specified in body markup.  Please fix.
 Duplicate the specified attachments and mirror them in the specified axes
 DuplicateAndMirrorAttachmentOpts_t
 DuplicateSelectedNodes
-Duration
 Duration (Seconds)
 Duration = %.2f
 Duration Interruption Threshold
@@ -17782,8 +17537,6 @@ ERROR: %s
 ERROR: Failed to open file for key bindings:\n%1\n
 ERROR: Failed to read key bindings from:\n%1\n
 ERROR: Unable to create an attribute handle! Save, quit, restart and clean up your file to have fewer elements!\n
-EVENT_ENTITY_ATTR_TYPE_FLOAT
-EVENT_ENTITY_ATTR_TYPE_INT
 EXEC-BEGIN (UNSUPRESSED): %s
 EXEC-BEGIN-MODIFIER: %s
 EXEC-BEGIN: %s
@@ -18020,8 +17773,6 @@ Enabled && Disabled Nodes
 Encountered an element array attribute '%s' while reading the prefix element
 Encountered an element attribute '%s' while reading the prefix element
 Encountered invalid element ID data!
-End Cycle
-End Effector
 End Effector Offset Attachment
 End Effector Rotation Fix Behaviour
 End Frame
@@ -18047,7 +17798,6 @@ EntityName
 Entry Overrides
 Entry State
 Entry State Conditions
-EntryOverrideTree
 EnumArray
 Envelope in inches
 Epsilon
@@ -18148,7 +17898,6 @@ Expected eg. [10,20] or 30
 Expected identifier after '@'
 Expected matching '{' '}'
 Expected matching '{' '}' (started on line %d)
-Expected secondary skeletons
 Expected string literal for include directive
 Expected syntax: %s=weight, unexpected extra '=' found\n
 Expecting '('
@@ -18188,7 +17937,6 @@ Expecting numbers 'max_x' 'max_y' 'max_z'
 Expecting numbers 'min_x' 'min_y' 'min_z'
 Expecting quoted attribute value for attribute "%s", didn't find one!
 Expecting tag name
-Experimental
 Explicit Length
 Explicitly authored snapshot vertex - best used together with CModelDocEmptyVSNAP
 Explicitly define what detail layers specific shapes should/shouldn't belong to
@@ -18360,7 +18108,6 @@ Failed to shoot bullet '%1' - unrecognized in this game, or shooting not support
 Failed to unserialize document data from kv3 data:\n%s
 Failed to write file: %s\n
 Fallback
-Falloff
 False Value
 False: %.3f
 False: %s
@@ -18395,11 +18142,9 @@ Feather Weight In
 Feather Weight Out
 Feather Weights (%s-%s)
 Feature disabled
-Feet
 FeetSettings
 Field Of View
 FieldOfViewCotangent
-File
 File Opened by Other User
 File Opened by Other Users
 File References
@@ -18444,10 +18189,8 @@ Finds the difference between the last frame and the first frame in the animation
 Finger Bone
 Finger Chain
 Finished generating distance field nodes.
-First Frame
 First Point
 First-Person Camera Preview
-FirstFrame
 Fit Transform to Model
 Fit Transform to Vertex Selection
 Fit Vertex Transform Bounds to Model
@@ -18702,7 +18445,6 @@ GlobalHotkeys
 GlobalLightOverride
 GlobalSize
 GlobalTopLevel
-GlobalTransitionConduit
 Globally Replace All Materials In Mesh
 Globally Replace All Materials In Model
 Go To
@@ -18827,8 +18569,6 @@ Hide unless error/warning occurs
 HideInWorkshopTools
 High Quality Interpolation
 Highest
-HighestPercentageThrough
-HighestWeight
 Highlight Edited Cells
 Highlight Material
 Highlight Silhouette
@@ -19026,7 +18766,6 @@ ImageFullLength
 ImageFullWidth
 ImageLength
 ImageWidth
-Immediate
 Immovable Hint
 Immovable model (hint)
 Implicit
@@ -19072,7 +18811,6 @@ InFrame
 InFrame frame, also called "apex" and "in", can be aliased via "entrytag" in sequence KV
 Inactive events ignored
 Inappropriate photometric interpretation %d for SGILog compression; %s
-Inches
 Include
 Include $cloth Joints
 Include %1 Nodes
@@ -19322,7 +19060,6 @@ ItemFile
 ItemIsolateView
 ItemIsolateVignette
 ItemSlots
-Items
 ItemsContextMenuRequested
 ItemsFiles
 Iterate to Element
@@ -19402,7 +19139,6 @@ L Hip
 L Knee
 L2 Regularization
 L?fff?
-LEFT
 LLLLLL
 LMouse
 LMouseDoubleClick
@@ -19434,10 +19170,8 @@ LabelPos_t
 LabelledDebugHelperDebug
 Lasso select
 LassoSelect
-Last Frame
 Last perforce error was: "%s"\n
 Last two rows as percentage of total size %f %%:\n
-LastFrame
 LastLoadDirectory
 LastSaveDirectory
 Launch Game Preview
@@ -19517,7 +19251,6 @@ List File References
 List of bones
 List of meshes
 List of meshes that contribute to this LOD Group
-List the set of bones that need to be sampled in model space for sub-frames. Warning! This can be REALLY expensive so be careful with this!
 ListFileReferences
 Listen For Root Motion Events
 Load
@@ -19578,11 +19311,9 @@ LogLuvInitState
 LookAt Chain Bone Changed
 LookAt Chain Bones
 LookAt Chain Weight Changed
-LookAtChain
 LookAtChainEditor
 LookAtList
 Looking In
-Loop
 Loop End Frame
 Loop FPS
 Loop Start Frame
@@ -19771,12 +19502,6 @@ Match Target Forward Only
 Match Time In Seconds
 Match case
 Match whole word
-MatchClosestSyncEventID
-MatchClosestSyncEventIDAndPercentage
-MatchSourceSyncEventIndex
-MatchSourceSyncEventIndexAndPercentage
-MatchSourceSyncEventPercentage
-MatchSyncEventIDAndPercentage
 Material "%1" is not present in the source model.\nClick to remove from this materialgroup.
 Material "%s" doesn't support skinning but model has bones & animation, mesh will not animate.
 Material "%s" failed to load.
@@ -19802,7 +19527,6 @@ MatrixMultiply
 MatrixWorldToCamera
 MatrixWorldToScreen
 Matteing
-Max Angle
 Max Angular Velocity Degrees
 Max Autosave Space 2
 Max Bend Angle
@@ -19816,14 +19540,12 @@ Max Length
 Max Linear Velocity
 Max MaterialGroup count 
 Max Morph Shape
-Max Offset
 Max Pitch
 Max Range/Radius
 Max Saves Per Map
 Max Steering Angle
 Max Suspension Offset
 Max Tangent Length
-Max Tension
 Max Tension Changed
 Max Twist Angle
 Max U
@@ -19887,7 +19609,6 @@ Meshes
 Meshes: %d\n
 Meta Tags
 Metacarpal Bone
-Min Angle
 Min Bounds
 Min Float
 Min Idle Turn Angle
@@ -19895,7 +19616,6 @@ Min Idle Turn Angle Changed
 Min Int
 Min Length
 Min Morph Shape
-Min Offset
 Min Pitch
 Min Steering Angle
 Min Suspension Offset
@@ -19994,7 +19714,6 @@ ModelDocActivity()
 ModelDocAssetBrowse
 ModelDocAssetBrowse( *ShowRelatedFile, dmx, fbx, rts, smd )
 ModelDocAssetBrowse( *ShowRelatedFile, dmx, smd, fbx )
-ModelDocAssetBrowse( dmx, fbx, smd, *requiredoubleclick, *ShowRelatedFile )
 ModelDocBoneMergeTool
 ModelDocEditorAnimCaptureToolbar
 ModelDocEditorApp
@@ -20328,15 +20047,10 @@ NextSession
 NextToolsVisMode
 NmDocEvent_PostModify_t
 NmDocEvent_PreModify_t
-NmEventConditionOperator_t
-NmEventPriorityRule_t
 NmFollowBoneMode_t
-NmGraphDocGraphType_t
-NmGraphDocPin_t
 NmSkeletonList
 NmSkeletonReference
 NmTransitionRule_t
-NmVariation_t
 No %s node to check for scale
 No %s specified. Expected '=' '[' <%s> ']'
 No 'ModelDoc' section found in gameinfo.gi for current mod
@@ -20505,7 +20219,6 @@ Nonstandard tile width %d, convert file
 Normal Attribute Simplification Weight
 Normal Size:
 NormalBias
-Normalize Vector
 Normalize Vector a
 Not R%d <- !R%d
 Not Set
@@ -20564,7 +20277,6 @@ O\n?done@QFileDialog@@MEAAXH@Z
 Oa?width@QImage@@QEBAHXZ
 Object
 Object Rotation
-OffState
 Offset Angle
 Offset Angles
 Offset Axis of Rotation
@@ -21069,8 +20781,6 @@ Only applied to hitboxes which have a "Forced Transform" at runtime.  Currently 
 Only checks source state
 Only discards channels which are static in addition to matching any of the above.  Static means the animation channel's value does not change during the entire animation.
 Only wrote %d (of %d) values when saving map!
-OnlySearchAnimEvents
-OnlySearchGraphEvents
 Open
 Open Containing Folder
 Open File
@@ -21124,7 +20834,6 @@ Orient Parent Only
 Orient toward child bone.
 Orient toward parent bone.
 Orientation Score Weight
-Orientation Warp
 Orientation Warp failed since there is not enough time left to warp or we're past the warp event!
 Orientation warp failed since there wasnt a valid target direction set!
 Origin of the bone in the model's bind pose
@@ -21171,7 +20880,6 @@ Overlay Blend (Masked): %.2f%%
 Overlay Blend: %.2f%%
 OverlayProjectionDirection
 Overridden by Variation
-Override
 Override Center Of Mass
 Override Move Dir X
 Override Move Dir Y
@@ -21184,7 +20892,6 @@ Override all mesh normals with a specific vector.
 Override bone scale information on an animation
 Override model bounds.
 Override surface property for auto-created physics. (Default behavior is to pick the first surfaceprop in the parent document.)
-Override the final duration of this clip in seconds (0 or a negative value means use the authored duration)
 Override the health this external piece will spawn with regardless of the VMDL propdata. (For embedded pieces, just add propdata child node.)
 Override the mass this embedded piece will spawn with regardless of the VMDL propdata.
 OverrideVectorStream
@@ -21799,7 +21506,6 @@ Radius of the capsule
 Radius of the primitive to project normals from.
 Radius0
 Radius1
-Ragdoll
 Ragdoll Applies Bind Pose Root
 Random Choice Weight
 Random Color
@@ -21807,7 +21513,6 @@ Random Seed
 Random Spawn Chance
 RandomizeMorphControllerWeights
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
-RangeEditor()
 Range_t
 Range_t::GetPercentageThrough
 RawDataUniqueID
@@ -21885,12 +21590,6 @@ Relative Origin[0]
 Relative Origin[1]
 Relative Origin[2]
 Relative Vector
-RelativeToAnimation
-RelativeToAnimationFrame
-RelativeToCharacter
-RelativeToFrame
-RelativeToOriginalRootMotion
-RelativeToSkeleton
 Relaxation Factor
 Relevance
 Reload
@@ -22101,7 +21800,6 @@ Root Bone
 Root Bone Name
 Root Graph
 Root Motion
-Root Motion Blend
 Root Motion Override
 Root Motion Weight
 Root Offset
@@ -22229,7 +21927,6 @@ Saving   :: %s\n
 ScalableAOBias
 ScalableAORadius
 ScalableAOStrength
-Scale
 Scale Factor:
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
@@ -22270,7 +21967,6 @@ Search prefabs
 Search: All Events
 Search: Anim Events
 Search: State Events
-SearchAll
 Second Point
 Second input will be ignored for this operation
 Secondary Aim At
@@ -22515,10 +22211,6 @@ Should have eyes attachment
 Should have prop_data
 Should it be considered an error if this bone isn't found to rename?
 Should not have prop_data
-Should the translation curve change as the orientation is being warped?
-Should we apply an abs to the result (is performed before we take into account the negate option)
-Should we ignore any invalid option and remove them from the selection. This is useful if different variations has different sets of options filled
-Should we negate the result (absolute value will be performed before negation)
 ShouldPunchThroughPolymorphism
 Show Active Sequence Bounds
 Show Advanced Options
@@ -22754,8 +22446,6 @@ Specify an ambient occlusion map (source texture) to multiply over the generated
 Specify that root motion should be extracted from this animation, if no root bone is specified, the first bone without a parent is used
 Specify that the animation markup child nodes for this animation should be processed in the order they appear.
 Specify the framerate at which to play back the animation.  It is filled in from the data in the animation file so normally it doesn't need to be modified.
-Specify the import end frame (0 or a negative value means use the last frame in the authored animation)
-Specify the import start frame (0 or a negative value means use the first frame in the authored animation)
 Specify the initial frame range:
 Specify the local hierarchy frame range:
 Specify the motion type.  Choices are as follows: <br><b>Single</b>: Extract motion from the first frame of the animation.<br><b>Uniform</b>: Extract motion from every frame in the animation.<br><b>Specified</b>: Specify the frame ranges with which to extract motion.<br>
@@ -22796,7 +22486,6 @@ Split a Vector2D into component parts.
 Split a World Vector into component parts.
 Split an Angle into component parts.
 Spring Between Children
-Spring Constant
 Spring Constant Changed
 Spurious value not expected in this class. Click to remove.
 Sqr Float
@@ -22805,7 +22494,6 @@ Sqrt
 Square root
 Standin Dock
 Start Bone Mask
-Start Cycle
 Start Distance Changed
 Start Frame
 Start Frame Number
@@ -22824,10 +22512,7 @@ State Completed
 State Completed Conditions are only allowed to be connected to a single transition
 State Events
 State Layer Data
-State Machine
 State Machine Layer
-StateMachine
-StateMachineState
 Static Only
 Static Only Tolerance
 Status
@@ -22891,7 +22576,6 @@ Stream Data:\n
 Stream Name
 Stream Visualization
 Stream Visualizer
-Strength
 Stretch Scale
 Stretch Stiffness
 Stretchiness
@@ -22928,7 +22612,6 @@ Suppressed Shapes
 Surface Bias
 Surface Bias 
 Surface Normals
-Surface Property
 Surface Property Override
 Surface property '%s'\nDensity: %.1f [kg/m^3]
 Surface property change detected - mass display updated
@@ -23011,7 +22694,6 @@ TakeRenderDocCapture
 TanFrameQuat
 Tangent of angle. Input in radians, output in radians
 Target Body
-Target Bone
 Target Bone Name
 Target Color
 Target Guide Hair Count
@@ -23022,14 +22704,11 @@ Target Node Name
 Target Offset
 Target Orientation
 Target Point
-Target Position
-Target Selector
 Target Sync Event ID set but we are not in a sync event ID time match mode - The supplied ID will be ignored!
 Target Sync ID
 Target Triangle Percent
 Target Update Angle Threshold Degrees
 Target Update Distance Threshold Degrees
-Target Warp
 Target Warp: Feature preserving XY warp required scaling is lower than the minimum allowed threshold. Falling back to LERP!
 Target Warp: Trying to XY warp backwards, falling back to LERP!
 Target Warp: XY warp curve blowout detected! Falling back to LERP!
@@ -23099,7 +22778,6 @@ The animation to export.
 The autosave directory does not exist and could not be created.\nThe autosave feature will be disabled.
 The autosave feature will be disabled
 The autosave feature will be disabled.
-The bone that we expect this skeleton to be attached to in the parent
 The color format of the field
 The color to assign to the specified attribute when at full intensity. During fade in and fade out the value will blend from black to this value. Note that when the color value is provided to a material expression it will be in linear color space.
 The current autosave directory does not have an absolute path.\nThe autosave feature will be disabled.
@@ -23124,8 +22802,6 @@ The first match of the find string will be replaced with this.  No regular expre
 The following files are referenced by this model and must be checked out before saving, would you like to check them out?\n
 The frame at which to end using animation data.  By default it's the last frame of the animation.
 The frame at which to start using animation data.  By default it's 0, the first frame of the animation.
-The frame to use when generating an additive, if you are generating relative to another animation and this is set to -1, we will extract each frame from it's corresponding frame in the base anim
-The frame to use when generating an additive, only valid for 'RelativeToFrame' and 'RelativeToAnimationFrame' 
 The gameinfo.gi file is missing or incomplete!\n
 The index of the field, e.g. multiple texture coordinate fields
 The input bones and pose samples for the Rbf.  The input are the driver bones.
@@ -23154,7 +22830,6 @@ The resource name of the model to include.
 The saved pose data for this bone
 The scope of the document where searching will occur, set via the context when launched.
 The source file of this autosave is already open. Close it first to open this file.
-The source file to use as the base of the additive
 The specified mesh node is used to generate this texture.
 The target bone to use.  Animgraph will let you override this on a per node basis.
 The type of entity to spawn for the break piece.
@@ -23204,7 +22879,6 @@ TileLength
 TileOffsets
 TileWidth
 Time Between Saves
-Time Condition
 Time Dilation Factor
 Time Match Mode
 Time Multiplier
@@ -23218,8 +22892,6 @@ Time in seconds from the end of the animation over which it will fade out when i
 Time in seconds from the start of the animation over which it will fade int when it starts playing.
 Time since the start of the timer
 Time: %2.f
-TimeElapsed
-TimeRemaining
 Timed State Events
 Timeline
 Timeline Activate
@@ -23335,7 +23007,6 @@ Torsion Stiffness
 Total Distance: %f, %f, %f\n
 Total Weight
 Totals
-Trace Distance
 Trace Height
 Trace Radius
 Trace the distance field with low fidelity far field occlusion only. This can be much faster, but the result will lack high frequency occlusion detail.
@@ -23353,10 +23024,8 @@ Transform Bindpose Bone
 Transform Bindpose Bone [%s]
 Transform Vertices
 Transforms the animation by the specified values
-Transition
 Transition Conduit
 Transition Event Condition
-TransitionConduit
 Translate
 Translate the overall model by the specified vector.
 Translation
@@ -23580,7 +23249,6 @@ User-Specified Color
 User-Specified MaterialGroup
 User-picks require a name
 User-specified color/materialgroup requires a node name
-UserSpecifiedFrame
 Uses the current pose of the skeleton, otherwise uses the bind pose to export
 Using 16-bit blend indices\n
 Using deprecated 'base=prefix' syntax for adding a prefix to a base class
@@ -23635,7 +23303,6 @@ Value to set the 'foot' key (if nonempty)
 ValueChanged
 ValueEdited
 ValuePos_t
-ValueTree
 ValveBiped
 ValveSMMem:%s
 ValveSMMut:%s
@@ -23727,7 +23394,6 @@ Viewing SkeletonFile: %s
 Viewing Source Content (no modifiers)
 Virtual Parameters
 Virtual Vertex Distance
-VirtualParameterValueTree
 Vis:0 
 Vis:1 
 Visit Developer Help URL
@@ -23789,7 +23455,6 @@ Warp Z
 Warp attempted for animation with invalid warp events!
 Warp event is not allowed to be within the first or last frame!
 Wavelength
-Weight
 Weight %s = %s is out of range\n
 Weight 0
 Weight Threshold
@@ -23816,7 +23481,6 @@ What type of object this is.
 Wheel joint.
 When False
 When True
-When not being driven by a sync time, control looping behavior 
 When picking between random choices, determines odds this choice is picked compared to others. (eg. a weight of 2 is twice as likely to be picked as weight of 1)
 When this breakpiece breaks, should it be able to intersect with the parent that spawned it?
 When this model is loaded preserve vertex data in CPU memory.
@@ -23969,7 +23633,6 @@ Z\f?convertFromImage@QPixmap@@QEAA_NAEBVQImage@@V?$QFlags@W4ImageConversionFlag@
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 Zero
 Zero Extent
-Zero Pose
 Zero Pose Task
 Zero frame animations are not supported for warping!
 Zero input vector for info node!
@@ -24730,7 +24393,6 @@ body_group_name
 body_head
 body_head_persona_1
 body_locations
-bodygroup
 bodygroup_name
 bodygroupchoices
 bodygroups
@@ -25378,7 +25040,6 @@ filter
 filterText
 filter_bone_influence_threshold
 filter_bones
-filter_type
 filterclass
 filterinY
 filterinZ
@@ -25419,7 +25080,6 @@ flDegrees
 flDuration
 flElapsed
 flExponent
-flFOV
 flFloat
 flFrac
 flHeight
@@ -26065,13 +25725,10 @@ m_AnkleBoneNames
 m_AntiTunnelGroups
 m_ArgumentDependencies
 m_AttachmentNames
-m_Background
-m_BackgroundMap
 m_Bindings
 m_Bodies
 m_ChildResourceList
 m_CollisionAttributes
-m_CompilerIdentifier
 m_Context
 m_CreatedEventFootValue
 m_CreatedEventType
@@ -26085,14 +25742,11 @@ m_DefaultTargetSettings.m_Bone
 m_DefaultTargetSettings.m_TargetSource
 m_EndEffectorFixedOffsetAttachment
 m_EnumArray
-m_Exposure
 m_Feet
 m_FitInfluences
 m_Fx
-m_Grid
 m_HingeAxis
 m_HitGroup
-m_IDValues
 m_IncludedDetailLayers
 m_Indices
 m_InputDependencies
@@ -26101,16 +25755,13 @@ m_Int
 m_IntArray
 m_Integrator
 m_LocalBindPose
-m_MapName
 m_MissingDetailLayers
 m_ModelVertexSetName
 m_ParameterType
 m_ParentJoint
 m_PartsData
-m_PointLights
 m_PoleVectorForAxis
 m_PoleVectorForAxis 
-m_PostProcessing
 m_PresetNodeBases
 m_RelativeFilename
 m_Results
@@ -26118,21 +25769,18 @@ m_RootRelativePath
 m_SearchPath
 m_SearchableUserData
 m_Shapes
-m_Sky
 m_SoftParents
 m_SourceEdges
 m_SourceQuads
 m_Special
 m_SpecialDependencies
 m_SpecialInputDependencies
-m_SpotLights
 m_StiffHinges
 m_Stops
 m_Str
 m_String
 m_SubassetDefinitions
 m_SubassetReferences
-m_Suns
 m_SurfaceProp
 m_TagValue
 m_TestEnum
@@ -26140,17 +25788,10 @@ m_ToolMaterial
 m_UserData
 m_VertexSet
 m_WeakReferenceList
-m_additiveBaseFilename
-m_additiveBaseFrame
-m_additiveType
-m_animationSkeletonName
-m_attachToBoneName
 m_attachments
 m_bAddBendOnlyRods
 m_bAddBoneToRenderMesh
 m_bAddStiffnessRods
-m_bAllowMultipleOutConnections
-m_bAllowPitchForFacing
 m_bAlwaysDynamicOnClient
 m_bAnimRotation
 m_bBakedTwoSided
@@ -26159,7 +25800,6 @@ m_bCanCollideWithWorldCapsulesAndSpheres
 m_bCanCollideWithWorldHulls
 m_bCanCollideWithWorldMeshes
 m_bChildCursorsShouldInherit
-m_bClampDurationToSource
 m_bClothCollisionLayers
 m_bCollide
 m_bConditionValue
@@ -26182,28 +25822,16 @@ m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bHasMassOverride
 m_bHasSkinning
-m_bIgnoreInactiveBranchEvents
 m_bImmovableHint
-m_bIsAttachableProp
-m_bIsBoneID
-m_bIsDisabled
-m_bIsDynamicPin
-m_bIsEntry
-m_bIsExit
-m_bIsFullyInState
 m_bIsGameFile
 m_bIsLinearLimitEnabled
 m_bIsNotMatchedToMaterial
 m_bIsSwingLimit1Enabled
 m_bIsSwingLimit2Enabled
-m_bIsSyncTrack
 m_bIsTwistLimitEnabled
 m_bKeepAsQuad
 m_bKeychainMotion
-m_bLimitSearchToSourceState
-m_bListenForRootMotionEvents
 m_bMadeInModelDoc
-m_bMatchOnlySpecificMarkerID
 m_bMirrorX
 m_bMirrorY
 m_bMirrorZ
@@ -26214,17 +25842,10 @@ m_bNoShadow
 m_bOnlyShadow
 m_bOptional
 m_bOsOffset
-m_bOverrideMoveDirX
-m_bOverrideMoveDirY
-m_bOverrideMoveDirZ
 m_bParentJointRequiresAlignment
-m_bParentToCamera
-m_bParticlesTraceAgainstMap
 m_bPerBoneScaleEnabled
 m_bPositionDriven
-m_bRelativePositioning
 m_bRemoveWhenOutOfScope
-m_bRender3DSkybox
 m_bRigidEdgeHinges
 m_bShutdown
 m_bSimulated
@@ -26243,79 +25864,41 @@ m_bUseRods
 m_bUseShadowFastPath
 m_bVirtual
 m_bodyLocationDef
-m_bodyPartChoiceName
-m_boneMaskSetDefinitions
-m_bonesToSampleInModelSpace
-m_boolValues
 m_capabilities
-m_chainEndBoneName
-m_clip
-m_cloneSourceStateID
-m_comment
-m_comparisonOperator
-m_debugParameterSets
-m_defaultID
-m_defaultResourceName
 m_eColorFormat
 m_eMaxBlendWeightsPerVertex
 m_eMirrorSpace
 m_eRbfType
 m_eRenderPrimitiveType
-m_easeTime
-m_easing
-m_effectorBoneName
-m_endStateID
-m_entryStateID
-m_entryType
-m_eventClass
-m_eventClassName
-m_eventTracks
-m_events
-m_expectedValues
 m_externalMethodTargetGraph
-m_fixedTimeValue
 m_flAddCurvature
 m_flAdditionalShearStretch
 m_flAngularThresholdSlow
 m_flAngularThresholdStopped
 m_flAntiShrink
-m_flAxisScale
 m_flBendStiffness
-m_flBoneMaskBlendInTimePercentage
 m_flCollisionRadius
 m_flContractionFactor
 m_flDefaultGroundFriction
 m_flDefaultWorldCollisionPenetration
-m_flDesiredDuration
-m_flDesiredVelocity
-m_flDurationOverrideSeconds
-m_flDurationSeconds
 m_flExtraStretch
 m_flFollowWeight
-m_flGlobalScale
 m_flGoalStrengthBias
 m_flGroundFriction
 m_flInbaSwing
 m_flInbaTwist
 m_flLegacyStretchForce
-m_flLightSourceRadius
 m_flLinearThresholdSlow
 m_flLinearThresholdStopped
 m_flMakeRods
 m_flMassBias
-m_flMaxAngularVelocityDegrees
-m_flMaxEV
-m_flMaxLinearVelocity
 m_flMaxRadians
 m_flMeshSimplifyMaxError
-m_flMinEV
 m_flMinRadians
 m_flMotionBias
-m_flMultiplier
 m_flQuadBendTolerance
 m_flRelaxationFactor
 m_flRenderInfluence
-m_flSamplingPositionErrorThreshold
 m_flShearResistance
 m_flSlopeIncoming
 m_flSlopeOutgoing
@@ -26323,32 +25906,11 @@ m_flSpringDamping
 m_flStrayRadiusInv
 m_flStrayRadiusRelaxationFactor
 m_flStretchiness
-m_flTargetUpdateAngleThresholdDegrees
-m_flTargetUpdateDistanceThresholdDegrees
-m_flViewZoom
 m_flWorldFriction
-m_floatValues
-m_floatingComment
-m_followTargetBoneName
-m_fromNodeID
-m_graphType
 m_hDef
-m_hPostProcessing
-m_highLODBones
 m_hitboxsets
-m_ignoreEvents
 m_influenceFlags
-m_inputPinID
-m_inputPins
-m_isInclusiveCheck
-m_isSynchronized
-m_links
-m_mappings
-m_markerIDToMatch
-m_maskID
-m_matchID
 m_morphSet
-m_nAdditiveBaseFrameIdx
 m_nBone
 m_nBones
 m_nChildBone
@@ -26364,81 +25926,20 @@ m_nMergePriority
 m_nNodes
 m_nParentBone
 m_nResult
-m_nRigType
 m_nRoleHint
 m_nRopeOptions
 m_nSerial
 m_nStackDepthWhenAdded
 m_nSubjectID
-m_nSyncEventIdx
 m_nUserData
-m_nValueType
 m_nYieldToken
-m_nodeColor
-m_offsetType
-m_onlySampleBaseRootMotion
-m_optionLabels
-m_optionalID
-m_options
-m_outputPinID
-m_outputPins
-m_overrides
-m_pChildGraph
-m_pDefaultVariationData
-m_pRootGraph
-m_pSecondaryGraph
-m_parameterGroupName
-m_parameterName
-m_parameterUUID
-m_parameterValueType
-m_parentID
-m_particleSystem
-m_pinID
-m_pinToStateMapping
-m_pointNames
-m_points
-m_previewMax
-m_previewMin
-m_previewModelName
-m_previewStartBoneID
-m_previewStartValue
-m_primarySkeleton
-m_priorityRule
 m_qFixupRotation
 m_rbfParameters
-m_resultType
-m_rootBoneName
-m_rotation
 m_sMDLFilename
 m_sMaterialName
 m_sSemanticName
-m_searchRule
-m_secondaryAnimationSkeletonNames
-m_secondarySkeletonSettings
-m_size
-m_sourceFilename
-m_startStateID
-m_stateEvents
-m_switchDynamically
-m_targetOrientation
-m_targetPosition
-m_timeElapsedEvents
-m_timeMatchMode
-m_timeRemainingEvents
-m_timedStateEvents
-m_toNodeID
-m_translation
-m_useFramesAsInput
 m_uuid
-m_vLookAt
-m_valueType
-m_variation
-m_variationHierarchy
-m_variationTimeValue
-m_variations
 m_vecSpeculationPosMiddle
-m_vectorValues
-m_viewOffset
 m_xTransform
 main_view
 make_two_sided
@@ -27472,7 +26973,6 @@ suppressed_field
 surface_bias
 surface_offset
 surface_prop_override
-surface_properties
 surface_property
 surfacepropertyeditor
 suspender
@@ -28076,7 +27576,6 @@ toolsVisModeIndex
 tools_preview
 tools_renderscenes
 toolscene_gizmo_algorithm
-toolscenelightrigs.vdata
 toolscenevismodes.txt
 tormentor
 torsion_spring

@@ -3160,7 +3160,6 @@ Additional Related File
 Additional pixel spacing between children
 Addr
 Address
-Advanced
 AfterDataModelsUpdated
 Alignment of STRETCH will be ignored due to FixedSize property
 AllSelected
@@ -3328,7 +3327,6 @@ CBindableCamera
 CBufferString
 CColorGradient
 CDeleteWorkingSetsPromptDialog
-CENTER
 CEntityNameString
 CGenericFilterDomain::IListener
 CGlobalHotkeyCommands
@@ -3654,7 +3652,6 @@ CTonemappingPopupUI
 CToolAxisObjectDesc::DrawArray
 CToolSceneAxis
 CToolSceneLight
-CToolSceneLightRig
 CToolSceneNode
 CToolSceneNodeGroup
 CToolSceneSky
@@ -3722,7 +3719,6 @@ CapToggle
 Caps
 Ceiling - round float up to nearest integer)
 Ceiling Float
-Center
 Centered
 Cgraphcanvas_debug_layout
 Changelist
@@ -3737,7 +3733,6 @@ Checkout
 Checkout and open '%1' in %2
 CheckoutAndOpenRoot
 Child Asset(s)
-Children
 Clamp Float
 Clamp Int
 Clamp value to range (float)
@@ -3752,7 +3747,6 @@ ClearInputHistory
 ClearThumbnailCache
 Clicked
 Client Exclusions Active: %s
-Clone
 Clone Set
 Clone the selected working set
 CloneWorkingSetAction
@@ -3849,7 +3843,6 @@ Data_Branch1zBranch2x
 Data_Branch2yz
 Date/Time
 DateChanged
-Debug
 Debug Focus Widget
 Debug Widget Under Mouse
 Debug-print path to root
@@ -4010,7 +4003,6 @@ Failed to save colors: %s\n
 Fast Asset Search
 FastAssetPicked
 FatColor_t
-File
 File '%1'
 File Hierarchy
 Files Belonging to Selected Assets
@@ -4269,7 +4261,6 @@ Kill Cursors With Tag
 Kill This Cursor And Cancel
 Kill This Cursor And Fail
 LAST_CHILD
-LEFT
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -4497,7 +4488,6 @@ Non-Asset Game Dependency
 Non-Asset Reference
 Non-Asset Weak Reference
 NoneSelected
-Normalize Vector
 Normalize Vector a
 Not At Head: %s\n
 Not R%d <- !R%d
@@ -5096,7 +5086,6 @@ Save description
 Save the current search in the Saved Search list below.
 SavedSearchSaved
 SavedSearchSelected
-Scale
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 Scan for assets that require specific attention.
@@ -5272,7 +5261,6 @@ Statistics...
 Stop Timer
 Stop any active timers - the completed outflow will still fire
 StopSendingCameraTo
-Stretch
 Strings Are Equal Case Sensitive
 Strong Ref
 Style of the background. By default it is SolidPattern.
@@ -6322,20 +6310,10 @@ lowprecisionuv1
 mX?setBlueF@QColor@@QEAAXN@Z
 m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
-m_Background
-m_BackgroundMap
 m_Bindings
 m_Context
-m_Exposure
-m_Grid
 m_InputMacros
-m_MapName
-m_PointLights
-m_PostProcessing
-m_Sky
-m_SpotLights
 m_Stops
-m_Suns
 m_TagValue
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
@@ -6347,25 +6325,14 @@ m_bHasBakedLightingFromVertexStream
 m_bIsNotMatchedToMaterial
 m_bNoShadow
 m_bOnlyShadow
-m_bParentToCamera
-m_bParticlesTraceAgainstMap
-m_bRelativePositioning
-m_bRender3DSkybox
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 m_externalMethodTargetGraph
-m_flAxisScale
-m_flLightSourceRadius
-m_flMaxEV
-m_flMinEV
 m_flSlopeIncoming
 m_flSlopeOutgoing
-m_hPostProcessing
 m_nCurrentWakeIndex
 m_nGraphID
-m_nRigType
 m_tail != QUEUE_ITERATOR_INVALID
-m_vLookAt
 magenta
 mapped
 margin
@@ -6668,7 +6635,6 @@ tools/layout/common/graph_canvas_debugger.vqlayout
 toolsVisModeIndex
 tools_preview
 tools_renderscenes
-toolscenelightrigs.vdata
 transparent
 tree
 turquoise

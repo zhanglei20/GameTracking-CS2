@@ -444,7 +444,6 @@ Discarded rule %s\n
 Don't Attenuate Captions
 Dota
 Duplicate include: %s\n
-Duration
 ENTITYIO
 Ease In
 Ease In/Out
@@ -519,7 +518,6 @@ Look at Actor
 LookAtActorName
 LookSpeed
 LookType
-Loop
 Loop Count
 Loop Time
 LoopCount

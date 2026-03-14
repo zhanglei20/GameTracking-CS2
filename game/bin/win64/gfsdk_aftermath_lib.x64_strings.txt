@@ -1434,7 +1434,6 @@ CommandList
 CommandQueue
 CommitReadPipe
 CommitWritePipe
-Component
 CompositeConstruct
 CompositeConstructContinuedINTEL
 CompositeConstructReplicateEXT
@@ -2200,7 +2199,6 @@ DXGI_FORMAT_Y416
 DXGI_FORMAT_YUY2
 Data
 Data chunk
-Debug
 Debug Info Version
 Debug info file %s does not contain IL debug information, but has source-level debug information. This could be a driver bug.
 Debug info file %s does not contain any debug information. This could be a driver bug or corrupted debug information.
@@ -3086,7 +3084,6 @@ ImageSparseTexelsResident
 ImageTexelPointer
 ImageWrite
 Imagination
-Immediate
 Impl
 ImplementInRegisterMapINTEL
 Import
@@ -3521,7 +3518,6 @@ Multiple source languages detected in SPIR-V module, filename: %s
 Multiple source line found for PC %llX
 Multiple source/IL line found for address 0x%llx
 Multiple sources for given file name with conflicting contents.
-NAME
 NClamp
 NEIP
 NMax
@@ -3539,7 +3535,6 @@ NamedBarrierInitialize
 NamedMaximumRegistersINTEL
 Nazara ShaderLang Compiler
 Nct9,
-Nearest
 Netease Games
 Netease Games Messiah Shader Compiler
 Never resolved function from blockaddress

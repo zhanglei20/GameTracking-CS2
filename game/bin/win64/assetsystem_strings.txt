@@ -91,7 +91,6 @@
 !3mmXs
 !5!A!I!O!Y![!_!s!}!
 !9iV
-!= (or missing)
 !AECO
 !HRN
 !V_strcmp( hChild->m_TestPayload.GetMemberString( "nested_payload_str" ), "child_gamma" )
@@ -460,7 +459,6 @@ $prefix_element$
 *laM-\SO
 +'+1+3+=+?+K+O+U+i+m+o+{+
 +(#\v&dbF:xrJ'$#
-+Auto Tags
 +D5X
 +Sgs
 +gC&s
@@ -1147,9 +1145,6 @@ $prefix_element$
 /usr/local/ssl/private
 /zt1
 0$h7
-0.0 180.0
-0.001 1.0
-0.01 1.0
 0123456789
 02V8[
 05=k
@@ -1413,7 +1408,6 @@ $prefix_element$
 <unsupported>
 =!=-=3=7=?=C=o=s=u=y={=
 =&sf9
-== (or missing)
 ==== AssetSystemTest Complete! ====\n
 =============== content builder batch ===============\n
 ===============> %d assets recompiled\n
@@ -1467,7 +1461,6 @@ $prefix_element$
 @overridden_asset
 @readonly_asset
 @untagged
-A weight determining the frequency at which this model is placed relative to other models within the detail type. The weights of all models are summed and the probability of selecting this model is its weight divided by the sum weight.
 A!A3A5A;A?AYAeAkAwA{A
 A%N_A
 A,uw"
@@ -1660,29 +1653,6 @@ ASSETS: File name symbol table is over half full (%llu)\n
 ASSETS: Mod name symbol table is over half full (%llu)\n
 ASSETS: Relative dir symbol table is over half full (%llu)\n
 ASSETS: Root path symbol table is over half full (%llu)\n
-ASSET_FILTER_CONTAINS
-ASSET_FILTER_DEF_SUBASSET
-ASSET_FILTER_DEPREF_ASSET
-ASSET_FILTER_DEPREF_BY_ASSET
-ASSET_FILTER_DOES_NOT_CONTAIN
-ASSET_FILTER_EQUAL
-ASSET_FILTER_EQUAL_OR_MISSING
-ASSET_FILTER_EXACT_DEF_SUBASSET
-ASSET_FILTER_EXACT_DEPREF_ASSET
-ASSET_FILTER_EXACT_DEPREF_BY_ASSET
-ASSET_FILTER_EXACT_PARENTED_BY_ASSET
-ASSET_FILTER_EXACT_PARENTS_ASSET
-ASSET_FILTER_EXACT_REF_SUBASSET
-ASSET_FILTER_FUNC_COUNT
-ASSET_FILTER_GREATER
-ASSET_FILTER_GREATER_EQUAL
-ASSET_FILTER_LESS
-ASSET_FILTER_LESS_EQUAL
-ASSET_FILTER_NOT_EQUAL
-ASSET_FILTER_NOT_EQUAL_OR_MISSING
-ASSET_FILTER_PARENTED_BY_ASSET
-ASSET_FILTER_PARENTS_ASSET
-ASSET_FILTER_REF_SUBASSET
 AUTHORITY_INFO_ACCESS
 AUTHORITY_KEYID
 AW:S
@@ -1706,7 +1676,6 @@ Alpha Fade Out Random
 Alpha Fade and Decay
 Alpha Random
 Alpha decoder initialization failed.
-Alternate strings this tag will match when searching for assets by name.
 AnalogBalance
 Animation Bone Flags
 Animation Configuration File
@@ -1744,8 +1713,6 @@ Asset:\n
 AssetBrowser
 AssetDependencies
 AssetDependencyTier: % 4d - %s\n
-AssetEditInfoFilterFunc_t
-AssetEngineCommand_t
 AssetPath
 AssetSystem
 AssetSystem Stats:\n
@@ -1771,7 +1738,6 @@ AssetTagVDataFilter
 AssetTags
 AssetTagsManifest
 AssetTypes
-AssetWarningFixType_t
 Assets in asset system: %d
 Assetsystem Table "%s" (%d entries)\n
 Assetsystem cannot start: %s\n
@@ -1793,7 +1759,6 @@ Attempted to read an attribute ("%s") of an inappropriate type!\n
 Attempted to read an attribute ("%s") of unknown type %s!\n
 Authority Information Access
 Auto-tags MUST have an asset type restriction specified
-AutoTagVDataCondition_t
 Automatic and user-provided tags
 Av $1
 B!rA
@@ -1956,8 +1921,6 @@ BlackLevel
 BlackLevelDeltaH
 BlackLevelDeltaV
 BlackLevelRepeatDim
-Blend Weight Scale
-Blend weight at which the model will be at full density. Must be between the minimum and maximum blend weight values. The density of this model placement will increase with the blend weight value up to this value at which point it will be at full density.
 BlockingReloadCompileReplacementBufferAndChildren
 BoX5
 BrowInV
@@ -2027,7 +1990,6 @@ CAST5-ECB
 CAST5-OFB
 CAsset::EnsureFileWritable( %s, %d ) -> %s\n
 CAsset::RequireInstanceInfo
-CAssetInfoFilterParams
 CAssetStringTable16 is overflowing 16 bits\n
 CAssetStringTable32 is overflowing 32 bits\n
 CAssetSystem::AddToReloadQueue( %s ): %s\n
@@ -2043,16 +2005,10 @@ CAssetSystem::UpdateAllAssetFileCRCs(), C:\buildworker\csgo_rel_win64\build\src\
 CAssetSystemTest::RunTests
 CAssetSystemTestSetup::DiscardInMemoryReplacement
 CAssetSystemTestSetup::EnsureAssetIsUpToDate
-CAssetTagInfo
-CAssetTypeConfig
-CAssetWarning
-CAssetWarningCheck
 CAsyncLoadResourceHeaderPromise::GetHeader
 CAsyncLoadResourceHeaderPromise::IsHeaderValid
 CAsyncLoadResourceHeaderPromise::StartNewReadRequest
 CBI]6
-CBaseToolInfo
-CBitmapAssetTypeInfo
 CBufferString
 CCITT Group 3
 CCITT Group 4
@@ -2073,8 +2029,6 @@ CDataModel::Unserialize
 CDependencyGraph::Cleanup
 CDependencyGraph::FindAttrNode
 CDependencyGraph::Reset
-CDetailPropModel
-CDetailPropType
 CDmAttribute pool
 CDmExtraVertexStream
 CDmSerializerBinary: Attribute '%s' of element '%s' read as '%s' but expected '%s'\n
@@ -2091,8 +2045,6 @@ CERTIFICATE
 CERTIFICATE PAIR
 CERTIFICATE REQUEST
 CERTIFICATEPOLICIES
-CEngineToolInfo
-CExternalToolInfo
 CFALayout
 CFAPlaneColor
 CGP%AI
@@ -2231,9 +2183,7 @@ CMS_sign_receipt
 CMS_stream
 CMS_uncompress
 CMS_verify
-CManifestInfo
 CManifestInstance
-CMapAssetTypeInfo
 CMapCable
 CMapCordon
 CMapDotaTileGrid
@@ -2258,7 +2208,6 @@ CMapTileProxy
 CMapVariableSet
 CMapWorld
 CModelMaterialGroupName
-CModuleManifests
 COLLECT_DATA
 COMPILED
 COMPLEMENTOFALL
@@ -2301,12 +2250,9 @@ CRYPTO_set_ex_data
 CResourceAsset::RecompileAsset
 CResourceAsset::UpdateCacheRequest
 CResourceAssetType::CalculateDependencies
-CResourceAssetTypeInfo
 CResourceNameTyped
 CSPName
-CSimpleAssetTypeInfo
 CStdAssetFileSystem::AssetFS_TraverseDirectoryAndWatchForChanges
-CSubassetTypeInfo
 CT Certificate SCTs
 CT Precertificate Poison
 CT Precertificate SCTs
@@ -2319,7 +2265,6 @@ CTestAssetFileSystem::RCFS_GetSearchPath
 CTestAssetFileSystem::RCFS_RemoveSearchPath
 CTestAssetFileSystem::RCFS_RestoreAndDestroySearchPathState
 CTestAssetFileSystem::RCFS_SplitFullPath
-CToolsConfig
 CTrajectoryPath
 CTrajectoryPathNode
 CUndoArrayAttributeSetMultipleValueElement
@@ -2361,7 +2306,6 @@ CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<in
 CUtlSortVector<struct ChunkHashFraction_t,class CUtlSortVectorDefaultLess<struct ChunkHashFraction_t::SortKey_t>,class CUtlVector<struct ChunkHashFraction_t,int,class CUtlVectorMemory_Growable<struct ChunkHashFraction_t,int,0> > >::Find
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CVDataAutoTagger
-CVMMDAssetTypeInfo
 CVcn
 CVisibilityMgr
 CWeakHandle
@@ -2425,7 +2369,6 @@ Cofactor:
 Color Fade
 Color Light From Control Point
 Color Random
-Color for the tag badge
 ColorMap
 ColorMatrix1
 ColorMatrix2
@@ -2434,7 +2377,6 @@ Colormap
 Compiled Asset Without Content Always Up-to-Date
 Compiled GUI file
 Compiler Version
-Complete fade out size
 Compression
 Compression algorithm does not support random access
 Compression scheme %u %s decoding is not implemented
@@ -2753,10 +2695,8 @@ DefaultCropOrigin
 DefaultCropSize
 DefaultScale
 Deflate
-Density Scale
 Depends on out-of-date '%s':\n -> reason: %s
 DeregisterEventSource
-Detail Prop Type
 Dhq0\ri
 Different CRL scope
 Diffie-Hellman based MAC
@@ -3207,7 +3147,6 @@ Expecting element type name, didn't find it!
 Expecting element type, didn't find it!
 Expecting quoted attribute value for attribute "%s", didn't find one!
 Expecting: 
-Experimental
 Exponent:
 Extended OCSP Status
 Extension
@@ -3307,7 +3246,6 @@ Frame not displayable.
 Frame setup failed
 FreeByteCounts
 FreeOffsets
-Full Density Blend Weight
 FullDependencyList:\n
 F|w)a]c
 G0Tv~:
@@ -3504,10 +3442,6 @@ ISSUING_DIST_POINT
 ITU-T
 IV block
 I\tHA\t981G'dc
-Icon associated with the tag
-If set, draw this as an overlay image on the asset preview
-If set, the presence of this tag will cause the tools to hide the asset from users by default. NOTE: This means if an asset gets tagged with this it might 'dissapear' from the UI!
-If set, the presence of this tag will cause the tools to suppress or dissuade use in several ways (and draw a red X over the asset preview)
 IgnoreCompiledState set for type (%s)
 Ignoring already-handled file change: %s\n
 Ignoring failure to traverse directory and/or watch for changes: %s\n
@@ -3531,7 +3465,6 @@ ImplicitDependingOnMe
 Inappropriate photometric interpretation %d for SGILog compression; %s
 Incorrect keyframe parameters.
 Independent
-InfoDataFilter_t
 Information about the current assetsystem database.
 Inherit Velocity
 Inherit all
@@ -3754,20 +3687,13 @@ MapNode
 Mask Algorithm: 
 MaskedAreas
 Match Particle Velocities
-Material group (skin) to assign to use with the model.
 MatrixWorldToCamera
 MatrixWorldToScreen
 Matteing
-Max Blend Weight
 Max Velocity
 Max amount of time to wait (in ms) for input dependencies to stop being written before abandoning the compile
 Max length of strings to dump in assetsystem_dump_table
 MaxSampleValue
-Maximum blend weight value for which the model will be placed. If the blend weight value is more than this value, the model will not be placed.
-Maximum random scale value to apply to the model.
-Maximum range of random offset to apply along the model's local up direction
-Maximum range of the random rotation to apply the model.
-Maximum slope on which the target will be placed.
 Mc]T=
 Merging CCITT Fax 3 codec-specific tags failed
 Merging CCITT Fax 4 codec-specific tags failed
@@ -3785,26 +3711,17 @@ Microsoft Server Gated Crypto
 Microsoft Smartcardlogin
 Microsoft Trust List Signing
 Microsoft Universal Principal Name
-Min Blend Weight
 MinSampleValue
 MinghuaQu
 MinghuaQu)
 MinghuaQuS
 MinghuaQuw
-Minimum blend weight value for which the model will be placed. If the blend weight value is less than this value, the model will not be placed.
-Minimum random scale value to apply to the model.
-Minimum range of random offset to apply along the model's local up direction
-Minimum range of the random rotation to apply the model. Random rotation is applied in the local space of the model. Rotation values are ordered pitch, yaw, roll.
-Minimum scale to apply to the model based on the final material layer blend weight. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in.
-Minimum scale to apply to the model based the painted detail prop density. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale.
-Minimum slope on which the target will be placed. Slope is a [ 0, 180 ] value based on the surface normal where horizontal surface (floor) is 0, vertical surface (wall) is 90, and a horizontal upside down surface (ceiling) is 180.
 Missing required special dependency '%s'
 Missing required special dependency 'TestResource_RequiredDependency'
 MissingRequired
 MlT8
 Mlt(J
 MnZ/rs
-Model to be displayed.
 Module32First
 Module32Next
 Modulus:
@@ -3952,7 +3869,6 @@ O1NzNfj'fGv
 O7v%
 O?#7n
 OBJ lib
-OBJECT
 OBJECT DESCRIPTOR
 OBJ_NAME_new_index
 OBJ_add_object
@@ -4052,7 +3968,6 @@ OpenSSL X9.42 DH method
 OpenSSL default
 OpenSSL default user interface
 Operator cycle found during dependency graph traversal!\n
-Optional second key to check
 Order: 
 Orient Rotation to 2D Direction
 OriginalRawFileData
@@ -4390,21 +4305,6 @@ REAL
 REDIRED2RERL
 REQUEST_CERTIFICATE
 REQUEST_VERIFY
-RESOURCE_ENCODING_COMPILEIMAGEUTILS_TEXT
-RESOURCE_ENCODING_COUNT
-RESOURCE_ENCODING_INTROSPECTED
-RESOURCE_ENCODING_INVALID
-RESOURCE_ENCODING_KV3
-RESOURCE_ENCODING_LEGACY_VSND
-RESOURCE_ENCODING_MBUF
-RESOURCE_ENCODING_MIDX
-RESOURCE_ENCODING_MSLT
-RESOURCE_ENCODING_MVTX
-RESOURCE_ENCODING_RAW_BYTES
-RESOURCE_ENCODING_TEXT
-RESOURCE_ENCODING_VRMAN
-RESOURCE_ENCODING_VSNAP
-RESOURCE_ENCODING_VTEX
 RESOURCE_LOAD_FAIL
 RESOURCE_LOAD_RELOAD
 RESOURCE_LOAD_SUCCESS
@@ -4541,12 +4441,9 @@ Remap Scalar
 Remove From CRL
 ReportEventW
 Require Explicit Policy
-Required for any auto-tag. Restricts the auto-application of this tag to a specific asset type (string from assettypes_common.txt like 'material_asset' or 'model_asset')
 Reset
 ResolutionUnit
 Resource Compile Failed
-ResourceBlockTypeInfo_t
-ResourceDataEncodingType_t
 Rg4I
 RichTIFFIPTC
 RigArms
@@ -4776,8 +4673,6 @@ Scanning for Asset Files (%d/%d): '%s' = %s, previously scanned %u directories a
 Scanning for Asset Files (%d/%d): previously scanned %u directories and %u files
 Scanning for Asset Files (%d/%d): scanned %u directories and %u files
 Schema description file
-Screen space size [ 0, 1 ] (where 1 is the whole screen) at which the model will be completely faded out. Anything smaller than this size will not be visible, anything larger will start fading in.
-Screen space size [ 0, 1 ] (where 1 is the whole screen) at which the model will begin to to fade out. Anything larger will be fully visible, anything smaller will start to fade out.
 Sd:z
 Searchable %s value found on %d asset type%s\n
 Secure Electronic Transactions
@@ -4790,15 +4685,12 @@ Sequence Two Random
 Serialize: File encoding %s is undefined!\n
 Serialize: File encoding '%s' is undefined!\n
 Serialize: Format %s expects to be written to a binary format, but the buffer is a text-format buffer\n
-Set this to automatically apply this tag based on an asset filter string. (NOTE: Auto tag names MUST start with an '@' character!)
-Set this to automatically apply this tag to assets based on references from a VData file. (NOTE: Auto tag names MUST start with an '@' character!)
 Set to true to revert to old behavior
 SetConsoleMode
 SetGrowSize
 Setting up field info failed
 ShadowScale
 Should have already been loaded via CVDataTypeManager::RegisterExtRefs
-Should instances of this model generate shadows in the lightmap. Note that shadows in the light map will persist even after the model fades out.
 Show regardless of user setting
 Signature verification failed.
 Skipping registration of failed in-memory compile result for resource: '%s' (root = '%s')\n
@@ -4807,11 +4699,9 @@ Skipping reload of in-memory compiled resource '%s' without a compiled replaceme
 Sn^G
 Software
 Source file not present.
-Specifies the number of props placed per square foot.
 Spew info for assets that match the specified substring
 Sr89[
 Stack part of OpenSSL 1.0.2j  26 Sep 2016
-Start fade out size
 StereoFlip
 StoNits
 StripByteCounts
@@ -4956,8 +4846,6 @@ TestTwoContentFileResourceType
 Texture Configuration File
 TextureFormat
 TextureWrapModes
-The VData file to read
-The key whose value must match the asset name (ie. something like 'm_Model' if you want to apply this tag to .vmdl assets that are referenced by the vdata file)
 This a child resource with no parents.
 This expression determines whether the tag should actually be applied to an asset\nIt will be evaluated against vdata entries where the key matches the asset - if any of them evaluate to true the tag will be applied.\nMost simple expressions involving the VData keys are supported. Use 'true' to tag unconditionally.
 This is a BigTIFF file.  This format not supported\nby this version of libtiff.
@@ -4982,8 +4870,6 @@ TongueH
 TongueV
 TongueWidth
 Too much
-ToolImage( 16 )
-ToolImage( 64 )
 Tools Auto-Checkout
 Toolutils
 Totals
@@ -5075,8 +4961,6 @@ Updating dependencies: %d%% (%s/%s) - %s
 Usage: "assetsystem_dump_table <table_name>" where table_name is either * (for all) or one of:\n
 Usage: assetsystem_check_compile_state <asset_name>\n
 Use old behavior of calling ProcessFileChanges() immediately after recompiling a resource
-User-facing description of the tag
-User-facing tag name
 Using rule file '%s'\n
 Ut]<E
 Uv1t
@@ -5111,8 +4995,6 @@ VISIBLE
 VISIBLESTRING
 VIgq qC:
 VM%G]f
-VMAP_MANUAL_RECOMPILE
-VMDL_CONVERT_TO_MODELDOC
 VMS_BIND_SYM
 VMS_LOAD
 VMS_MERGER
@@ -5137,7 +5019,6 @@ V_IsAbsolutePath( pFromAbsPath )
 V_IsAbsolutePath( pToAbsPath )
 V_a|I
 V_strStartsWith( pActualReason, pInfo->m_ExpectedNextCompileReasonStartsWith )
-Value indicating if the model's up direction should be matched to the surface. Value should be in the [ 0, 1 ] range, where 0 means that the model up will be model (or object space) up and will ignore the surface direction, and 1 indicates that the model up will exactly match the surface normal.
 Valve Map File
 ValveSMMem:%s
 ValveSMMut:%s
@@ -6244,7 +6125,6 @@ cons:
 constrainVelocity
 constrain_velocity
 cont [ %d ]
-contains
 content
 content and data present
 content not found
@@ -6457,8 +6337,6 @@ defaultRightValue
 defaultValue
 defaultcurvetype
 defaultedgezerovalue
-defines subasset
-defines subasset (exact)
 deltaCRL
 deltaRevocationList
 dependency
@@ -6574,7 +6452,6 @@ documentPublisher
 documentSeries
 documentTitle
 documentVersion
-doesn't contain
 domain
 domainComponent
 domainRelatedObject
@@ -7757,140 +7634,34 @@ mS'7
 mXRecord
 mZKB
 m\ta=\ruWb
-m_AdditionalExtensions
 m_AdditionalInputDependencies
 m_AdditionalRelatedFiles
-m_AlternateAssetKey
-m_ArgsWithLineColumn
 m_ArgumentDependencies
-m_AssetKey
-m_AssetType
-m_AssetTypes
-m_AssetWarnings
-m_AutoDataTag
-m_AutoFilterTag
-m_BlockID
-m_Blocks
 m_Buffer.TellMaxPut() == 0
-m_Checks
 m_ChildResourceList
-m_CompileDependsOnResourceTypes
-m_CompilerIdentifier
-m_Encoding
-m_EngineCommands
-m_EngineModulesThatReferenceAssets
-m_EngineTools
-m_ExcludeAddonNames
-m_ExcludeFromMods
-m_Executable
-m_Ext
-m_ExternalTools
-m_FilterFunc
-m_Filters
-m_FixDescription
-m_FixType
-m_FriendlyName
-m_Group
-m_HideForRetailMods
-m_Icon
-m_IconLg
-m_IconSm
 m_InputDependencies
-m_InterfaceName
-m_IntrospectedRootStruct
-m_Library
-m_LimitToMods
-m_Manifests
-m_MatchSystemExecutable
-m_MaterialGroup
-m_Mod
-m_Models
-m_OverrideToolShortcutName
 m_ParameterType
-m_PreviewThumbnailOverlayIcon
-m_PriorityExts
 m_RelativeFilename
-m_RequireSearchableIntKey
-m_RequireSearchableIntValue
-m_RequiredSpecialDependency
-m_ResourceVersion
-m_Resources
-m_RestrictAutoTagToAssetType
-m_RestrictAutoTagToAssetType == ""
 m_RootRelativePath
 m_SearchPath
 m_SearchableUserData
-m_SourceFile
 m_Special
 m_SpecialDependencies
 m_SpecialInputDependencies
 m_String
 m_SubassetDefinitions
 m_SubassetReferences
-m_SubassetTypes
-m_SupportedExts
-m_SuppressSubstrings
-m_TagAliases
-m_TagColor
-m_TagDescription
-m_TagIcon
-m_Test_InjectSearchable
-m_ThumbnailOverlayImage
-m_Title
-m_ToolIcon
 m_UserData
 m_WeakReferenceList
-m_WorkingDir
-m_bAllowedToCompileInTestMode
-m_bBringEngineToFront
-m_bCanHighlightSubassets
-m_bCannotBeAMultiParentChildCompile
-m_bCannotBeShown
-m_bCastStaticShadows
-m_bContentFileIsText
-m_bDebugCommandline
-m_bDoNotWarnAboutLargeAssetBatches
 m_bFileExists
-m_bFollowReferences
-m_bHideTypeByDefault
-m_bIgnoreCompiledState
 m_bIsGameFile
-m_bIsNontrivialChildAssetType
-m_bIsSecondaryTool
-m_bIsWorkshopItemTool
-m_bIsWorkshopManagerTool
-m_bOnlyWarnAddons
-m_bOnlyWarnIfContentFilePresent
-m_bOnlyWarnIfGameFilePresent
 m_bOptional
-m_bPrefersIconForThumbnail
-m_bPrefersLivePreview
-m_bPresentInGameTree
-m_bPreventDirectCompile
-m_bShouldCompileErrorFallbackToDisk
-m_bShowInRevisionSubMenu
-m_bSuppressFullFingerprintCalculation
-m_bTagHidesAssetByDefault
-m_bTagIndicatesRejectedAsset
-m_bUnrecognizedReferencesAreErrors
 m_ePromiseState != EPromiseState::Unresolved
 m_fMoveTo
-m_flBlendWeightFullDenstity
-m_flBlendWeightMax
-m_flBlendWeightMin
-m_flBlendWeightMinScale
-m_flDensityMinScale
-m_flMaxSurfaceSlope
-m_flMinSurfaceSlope
-m_flOrientToSurface
-m_flRandomVerticalOffsetMax
-m_flRandomVerticalOffsetMin
-m_nAssetTypeVersion
 m_nFileCRC
 m_nFingerprint
 m_nFingerprintDefault
 m_nPoints > 0
-m_nSourceLine
 m_nUserData
 m_pVertexData
 ma\v\r01!
@@ -8458,10 +8229,6 @@ parent_alpha
 parent_beta
 parent_gamma
 parent_ref
-parented by asset
-parented by asset (exact)
-parents asset
-parents asset (exact)
 parse error
 parse tlsext
 partyName
@@ -8765,14 +8532,8 @@ ref:%s
 refOrientation
 refby
 refby_count
-referenced or depended-on by asset
-referenced or depended-on by asset (exact)
 referenced_soundevent_
 referenced_surface_property_
-references or depends on asset
-references or depends on asset (exact)
-references subasset
-references subasset (exact)
 registeredAddress
 reject
 relative_dirs
@@ -8916,7 +8677,6 @@ screenWindowCenter
 screenWindowWidth
 scripted_sequence
 scriptlist
-scripts/detail_prop_types.vdata
 scripts/tools/core_asset_tags.vdata
 scripts/tools/game_asset_tags.vdata
 scsv received when renegotiating

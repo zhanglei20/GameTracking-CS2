@@ -12174,7 +12174,6 @@ Ancient
 And R%d <- R%d && R%d
 Ang_Acc
 AngleDiff
-Angles
 AnglesToVector
 Anim Clip
 Anim Events
@@ -12483,6 +12482,7 @@ BAD INTEGER
 BAD RECURSION DEPTH\n
 BAD-TYPE
 BADFUNCTIONPOINTER
+BANNER
 BASIC_CONSTRAINTS
 BAcceptsFocus
 BAcceptsInput
@@ -12650,6 +12650,7 @@ BULLET_PLAYER_BUCKSHOT
 BUMP_WITH_TIMEOUT_WHEN_LEARNED
 BURN
 BUYMENU: %s %s %s\n
+BUY_MENU
 BValidateCrosshairCode
 BYOC
 BY_FILE_CTRL
@@ -14284,6 +14285,7 @@ CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::ExecutePostPhysicsPoseTasks
 CNmGraphInstance::ExecutePrePhysicsPoseTasks
 CNmGraphInstance::GetCurrentGraphTimingInfo
+CNmParticleEvent::Type_t
 CNmTaskSystem::DeserializeTasks
 CNmTaskSystem::SerializeTasks
 CNmTaskSystem::UpdatePostPhysics
@@ -15817,7 +15819,6 @@ Checks to see if the given hScript is a valid entity
 ChickenGameSystem
 Child
 Child %d %s
-Children
 China
 Chinatown
 Chlorine
@@ -16278,6 +16279,7 @@ CoverGaps1
 CraftIngredients
 Crashsite
 CrateIcon
+Create
 Create PerViewConstantBufferCsgo_t
 Create PictureInPicture PerViewConstantBufferCsgo_t
 Create a C proxy for a script-based spawn group filter
@@ -16321,6 +16323,7 @@ CreateSession
 CreateTempCombinedItemWithTool
 CreateUniformRandomStream
 CreateVideoPlayer
+Create_CFG
 Created Composite Material Render Target: %s [%s]\n
 Created Map Annotation %d/%d\n
 Created physics for %s\n
@@ -16536,6 +16539,7 @@ DH_generate_key
 DH_generate_parameters_ex
 DH_new_method
 DHparams_print_fp
+DIORAMA
 DIRECT
 DIRECTORYSTRING
 DIR_ADD
@@ -17058,7 +17062,6 @@ DeviceConfigurationPanel
 DeviceID
 Dhq0\ri
 DialogVariablesHeader
-Diamond
 Didn't find an entity of class %s at %d\n
 Didnt supply startpos and endpos to Script TraceLine call, failing, setting called to false\n
 Didnt supply startpos, endpos, and ent to Script TraceCollideable call, failing, setting called to false\n
@@ -17070,7 +17073,6 @@ Diffie-Hellman routines
 Digital Signature
 DimBackground
 DimBaseText
-Dimensions
 DirName
 DirName: 
 DirectChallenge_ChooseClanKey
@@ -17084,7 +17086,6 @@ Directory
 Directory copy (%s)\n
 Directory not empty
 DirtySpatialPartitionEntityList
-Disable
 Disable Override - %.2f
 Disable auto blink for BaseActor
 Disable this entity.
@@ -17297,7 +17298,6 @@ Duplicate recipe definition (%d)
 Duplicate sound material value (%d)
 Duplicate sticker kit ID %d
 Duplicate sticker kit name '%s'
-Duration
 Dust
 Dust II
 Dutch
@@ -17517,6 +17517,7 @@ EM_ScreenOverlay
 EN2 s/
 ENCRYPTED
 ENCRYPTED PRIVATE KEY
+END_OF_MATCH
 ENERGYBEAM
 ENGINE lib
 ENGINE_FREE_UTIL
@@ -17923,7 +17924,6 @@ Exp2
 Expected game mode %s to be in game type %s, but match specifies %s\n
 Expected tick base to be %d+%d=%d, but controller tick base is %d\n
 Expecting: 
-Experimental
 ExplodeDamage
 ExplodeRadius
 Explosion.GasCan
@@ -18288,7 +18288,6 @@ Fired when the relay is spawned. If the relay is set to only trigger once, it wi
 Fired when the relay is triggered. If the relay is set to only trigger once, it will delete itself after firing this output.
 Fired when the server starts a countdown to force the local player on a team.
 Fireworks.Explode
-First
 First valid class must be less than or equal to last valid class.
 First valid item slot must be less than or equal to last valid item slot.
 FirstPersonLegsDisableDistortion
@@ -20100,6 +20099,7 @@ INT_NEW_EX_DATA
 INT_RSA_VERIFY
 INT_TS_RESP_VERIFY_TOKEN
 INVALID CGameEventStartTouchCollideAdaptor
+INVENTORY_INSPECT
 INdK
 IP Address
 IP Address:%d.%d.%d.%d
@@ -20160,6 +20160,7 @@ IfHoverOtherEvent
 IfNotHasClassEvent
 IfNotHoverOtherEvent
 Ignore External Lookats
+IgnoreHealthCheck
 Ignoring %s: unsupported file type.\n
 Ignoring '%s' (default rule)\n
 Ignoring '%s'\n
@@ -20668,7 +20669,6 @@ ItemTypeDescKillEater
 ItemTypeDescKillEaterAlt
 Item_%c
 Item_%s
-Items
 Iw,e=2-b[
 IytF
 I{i3|G
@@ -21034,7 +21034,6 @@ Look at position
 LookAtActorName
 LookSpeed
 LookType
-Loop
 Loop Count
 Loop Time
 LoopCount
@@ -21071,6 +21070,7 @@ Lunacy
 M'Ezb
 M-laO
 M0 E
+MAIN_MENU
 MASK:
 MATCH-
 MATCHSTATS\t%s, round %d, value %d\n
@@ -21808,7 +21808,6 @@ None given.
 None\n
 NormalWaterLayer
 NormalWsTexture
-Normalize Vector
 Normalize Vector a
 Normally false. If true, use fast zoom unless explicitly told not to.
 North
@@ -21864,7 +21863,6 @@ O7v%
 O?#7n
 OAuth Token, granted on success
 OBJ lib
-OBJECT
 OBJECT DESCRIPTOR
 OBJ_NAME_new_index
 OBJ_add_object
@@ -21873,6 +21871,10 @@ OBJ_dup
 OBJ_nid2ln
 OBJ_nid2obj
 OBJ_nid2sn
+OBSERVER_INTERP_NONE
+OBSERVER_INTERP_SETTLING
+OBSERVER_INTERP_STARTING
+OBSERVER_INTERP_TRAVELING
 OCSP
 OCSP Archive Cutoff
 OCSP CRL ID
@@ -21951,6 +21953,7 @@ Oakley-EC2N-4
 Object Signer
 Object Signing
 Object Signing CA
+ObserverInterpState_t
 ObserverPawn
 Obtained direct RTT measurements to relays in %d POPs.  Closest %d are:\n
 OcclusionQueryIssueLayer
@@ -21960,7 +21963,6 @@ Offline
 Offscreen
 Oh%u'
 On Canceled
-On Finished
 On Interval
 On True
 OnActualHealthRemovedChangedCompat
@@ -22987,6 +22989,7 @@ PrevSearch
 Preview
 Preview Character
 Preview Lighting - Not indicative of shipping quality or performance. Please bake lightmaps.
+PreviewCharacterMode
 PreviewModelVoice
 PreviewStickerInModelPanel
 PreviousItemButton
@@ -24096,7 +24099,6 @@ SaveRestoreIOFiltered
 SaveRestoreSyncIO
 Saved log to '%s'\n
 Saving game to %s...\n
-Scale
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 Scale for the pinch zoom gesture.
@@ -25542,6 +25544,8 @@ TChinese
 TD_OFFSET_NORMAL
 TD_OFFSET_PACKED
 TDeath
+TEAM_INTRO
+TEAM_SELECT
 TEArmorRicochet_GameEvent_t
 TEBeamEntPoint_GameEvent_t
 TEBeamEnts_GameEvent_t
@@ -25875,8 +25879,6 @@ Time since shake (x), Time of last shake (y), z, w, unused
 Time since the start of the timer
 Time,Player 1 Position,Smooth FPS,Frame FPS,Smooth MS,Frame MS,Server Frame MS\n
 TimeAchieved
-TimeElapsed
-TimeRemaining
 TimeScale
 TimeScaleContextMenu
 TimeSlicedShadowMapRendering
@@ -26683,6 +26685,7 @@ W3fp
 W3i+,
 W>peSp>9
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.\n
+WALKING
 WARNING! Field %s is using the wrong FIELD_ type!\nFix this or you'll see a crash.\n
 WARNING: Attempted to send a steamworks gamestats row when the steamworks interface was not available!
 WARNING: BreakFadeEmissive not supported on this entity (%s %s)\n
@@ -26715,10 +26718,14 @@ WIN32_NAME_CONVERTER
 WIN32_PATHBYADDR
 WIN32_SPLITTER
 WIN32_UNLOAD
+WINGMAN_INTRO
 WL6e}:
 WLs6
 WOCR
 WOL: 0x%p (%s)
+WORLDTEXT_ORIENTATION_DEFAULT
+WORLDTEXT_ORIENTATION_FACEUSER
+WORLDTEXT_ORIENTATION_FACEUSER_UPRIGHT
 WP4$!
 WPN_ACTION_COMPLETE
 WPN_BLOCK_INSPECT
@@ -26858,7 +26865,6 @@ WebAPIValues
 WebBrowser
 WebVTT Parse Error %d: %s:%u:%u - %s.\n
 WedgeKeybinding
-Weight
 Welcome message contained %s twice\n
 West
 WetnessDroplets
@@ -26936,6 +26942,7 @@ WorldRenderer/EnvironmentMapUseCubeArray
 WorldRenderer/EnvironmentMapsIndividualArrays
 WorldRenderer/LPVEdgeBlending
 WorldText: %s %f
+WorldTextPanelOrientation_t
 WorldUITextPanel
 Worldspace Render Bounds: [%.2f %.2f %.2f] -> [%.2f %.2f %.2f]\n
 Wrapper
@@ -29352,7 +29359,6 @@ boar
 body_collection
 body_substring_keys
 body_substring_values
-bodygroup
 bodygroupchoices
 bodygroups
 bodylower
@@ -30300,7 +30306,6 @@ consumer_shortcutid
 cont [ %d ]
 contactshadow
 contain
-contains
 contains_patches_representing_organizations
 contains_stickers_autographed_by_proplayers
 contains_stickers_representing_organizations
@@ -32488,7 +32493,6 @@ friendlyCountryName
 friendlyName
 friendly_%s
 friendly_name_without_target
-friendlyname
 friends
 frog
 from
@@ -35066,7 +35070,6 @@ m_Entity_pLightProbeVolume
 m_Entity_pSceneObject
 m_FieldTypeAliases
 m_FiringStartTime
-m_FriendlyName
 m_HelpContextName
 m_Helpers
 m_Inputs
@@ -35167,7 +35170,6 @@ m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 m_bUsingCommandQueue=%d
 m_bUsingLegacyDefault
-m_bVisible
 m_bWalking
 m_bWeaponDropOveriderActive
 m_b_LeansPoseModeChange
@@ -35190,7 +35192,6 @@ m_eLastFootIKState
 m_eMoverBonemaskChoice
 m_eRunMode
 m_eRunWalkCrouch
-m_events
 m_externalMethodTargetGraph
 m_fFloat1
 m_fFloat2
@@ -35341,7 +35342,6 @@ m_nParamIndex < 0
 m_nPixelSSTHeight
 m_nPixelSSTWidth
 m_nResult
-m_nSamples
 m_nSpawnGroupCount
 m_nStackDepthWhenAdded
 m_nSubjectID
@@ -40028,7 +40028,6 @@ suppress_anim_event_sounds
 suppress_creation_on_death
 suppress_on_restore
 surface
-surface_properties
 surname
 surrender
 surrendered

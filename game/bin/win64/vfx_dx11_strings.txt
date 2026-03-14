@@ -268,7 +268,6 @@ C:\buildworker\csgo_rel_win64\build\_build_\vfx\vfx_dx\_vpc_vfx_dx11\default\win
 C:\buildworker\csgo_rel_win64\build\src\vfx\compiletargetexpr.g
 C:\buildworker\csgo_rel_win64\build\src\vfx\vfx_dx\hlslvariables.g
 C:\buildworker\csgo_rel_win64\build\src\vfx\vfxexpr.g
-CLAMP
 COMMENT
 COMMON
 COMPARISON_ANISOTROPIC
@@ -367,7 +366,6 @@ EQUAL
 ERROR!
 ESC_SEQ
 EXPORT
-Enum
 Error adding shader to cache\n
 Error loading D3D compiler DLL %s!\n
 Error masking unused parts for vfx file CVfxDx11::CompileShaderAndGetVariables(612): \n
@@ -390,7 +388,6 @@ FakeBindlessTexture2D
 Feature combo %s referenced in expression doesn't exist.
 Features
 FillMode
-Filter
 FoliageAnimation
 Function %s() expects %d arguments. Found %d.
 GREATER
@@ -510,7 +507,6 @@ PixelShader
 PointStream
 Preprocessed HLSL code
 PropWorldOrigin
-REPLACE
 REV_SUBTRACT
 RWBuffer
 RWByteAddressBuffer

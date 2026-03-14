@@ -401,7 +401,6 @@ Feature
 FeatureAlias
 FeatureRule
 Features
-File
 FrameUpdate
 G(knN
 GLSL.std.450
@@ -490,7 +489,6 @@ More than 8 active color correction lookup textures!\n
 MotionVectorsMaxDistance
 MoveToEx
 Must run with -shaderstats to use mat_shading_complexity!\n
-NORMAL
 NOTE: Each static combo creates multiple shader programs based on the dynamic combos available.\n\n
 NULL shader pointer!\n
 NeedsLightProbe

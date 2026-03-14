@@ -7531,7 +7531,6 @@ CToolSceneJointAxes
 CToolSceneJointNames
 CToolSceneJointRotations
 CToolSceneLight
-CToolSceneLightRig
 CToolSceneModel
 CToolSceneNode
 CToolSceneNodeGroup
@@ -7883,7 +7882,6 @@ CheckState
 Checkout file from Perforce?
 Checkout...
 CheekH
-Children
 Choose Action
 Choose Animations Sets without changing existing timeframe...
 Choose Character
@@ -7976,7 +7974,6 @@ Compare strings with case sensitivity, in contrast to normal string equality whi
 CompileKeyTimeList
 Compiled GUI file
 Completed
-Component
 Compress Logs
 Compress log layer
 Compress log layers
@@ -8048,6 +8045,7 @@ Couldn't write stereo-pair image.\n
 CounterStrike
 Courier
 Courier New
+Create
 Create %s Constraint
 Create %s Multi-Constraint
 Create Animation Set
@@ -8563,7 +8561,6 @@ Dump float log to console
 DumpModeDecode: Not enough data for scanline %d
 Duplicate Preset Name
 Duplicate Shortcuts
-Duration
 DurationChanged
 Dynamic Configs
 E<G&Iw
@@ -8908,7 +8905,6 @@ FaxRecvParams
 FaxRecvTime
 FaxSubAddress
 FieldOfViewCotangent
-File
 File "%s" contains no animations!
 File Exists
 File Name
@@ -8936,7 +8932,6 @@ Film
 Film Clip
 Film Track
 Film Track Group
-Filter
 Filter Log
 Filter Size:
 Filter Width:
@@ -8956,8 +8951,6 @@ Fingers
 Fingers_L
 Fingers_R
 Finish Floating Modification Layer
-First
-First Frame
 First:
 FirstSlide
 FirstpersonLegsFade
@@ -9020,7 +9013,6 @@ Frame Clips
 Frame End
 Frame Rate:
 Frame Selected Controls
-Frame Selection
 Frame Start
 Frame not displayable.
 Frame setup failed
@@ -9324,7 +9316,6 @@ InkNames
 InkSet
 InnerProduct
 Input Binding Error
-Input Data
 Input Debugger [%1]
 Input Sequence
 InputBindSystem
@@ -9492,7 +9483,6 @@ L_?toImage@QPixmap@@QEBA?AVQImage@@XZ
 LabelPos_t
 Lane Creep
 Lane Creeps
-Last Frame
 Last two rows as percentage of total size %f %%:\n
 LastDMXFile
 LastFileName
@@ -9608,7 +9598,6 @@ Look at Actor
 LookAtActorName
 LookSpeed
 LookType
-Loop
 Loop Count
 Loop Time
 LoopCount
@@ -9946,7 +9935,6 @@ Non-fatal Error Exporting Animations
 Nonstandard tile length %d, convert file
 Nonstandard tile width %d, convert file
 Normalize
-Normalize Vector
 Normalize Vector a
 Normalize curve display
 NoseV
@@ -10392,7 +10380,6 @@ Output aborted.
 Output memory size is zero
 Overlay Texture
 OverlayProjectionDirection
-Override
 Override Frame Rate
 Override Game's Post Processing
 Override Shutter Speed
@@ -11202,7 +11189,6 @@ Sc?L7I?$(
 ScalableAOBias
 ScalableAORadius
 ScalableAOStrength
-Scale
 Scale Center:
 Scale Down Only
 Scale INV R%d <- R%d / R%d
@@ -14262,21 +14248,11 @@ m%d%d
 mX?setBlueF@QColor@@QEAAXN@Z
 m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
-m_Background
-m_BackgroundMap
 m_Bindings
 m_Context
-m_Exposure
-m_Grid
 m_InputMacros
-m_MapName
-m_PointLights
-m_PostProcessing
 m_Results
-m_Sky
-m_SpotLights
 m_Stops
-m_Suns
 m_TagValue
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
@@ -14289,20 +14265,12 @@ m_bHasBakedLightingFromVertexStream
 m_bIsNotMatchedToMaterial
 m_bNoShadow
 m_bOnlyShadow
-m_bParentToCamera
-m_bParticlesTraceAgainstMap
-m_bRelativePositioning
 m_bRemoveWhenOutOfScope
-m_bRender3DSkybox
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 m_buttonBox
 m_externalMethodTargetGraph
 m_fMoveTo
-m_flAxisScale
-m_flLightSourceRadius
-m_flMaxEV
-m_flMinEV
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_floatEdit00
@@ -14322,19 +14290,16 @@ m_floatEdit31
 m_floatEdit32
 m_floatEdit33
 m_hDef
-m_hPostProcessing
 m_label
 m_nCurrentWakeIndex
 m_nCursorID
 m_nGraphID
 m_nLoopCount
 m_nResult
-m_nRigType
 m_nStackDepthWhenAdded
 m_nSubjectID
 m_nYieldToken
 m_pVertexData
-m_vLookAt
 mailto:SFMbugs@valvesoftware.com?subject=Bug Report from SFM user&body=
 maintain position along path
 makefile
@@ -15331,7 +15296,6 @@ tools/keybindings/shared_tool_key_bindings.txt
 toolsVisModeIndex
 tools_preview
 tools_renderscenes
-toolscenelightrigs.vdata
 toolscenevismodes.txt
 topLeft
 totadisconls\n
