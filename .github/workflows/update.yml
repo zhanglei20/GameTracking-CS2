@@ -20,6 +20,5 @@ jobs:
         uses: steamtracking/gametracking/.github/workflows/gametracking.yml@master    
         secrets: inherit
         with:
-          folder: csgo
           branch: ${{ github.event.inputs.branch }}
           appid: 730
