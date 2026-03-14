@@ -13,6 +13,7 @@ Protobufs/google/
 *.bsp
 *.bin
 *.tmp
+*.mdmp
 exceptions.txt
 steam_buildid.txt
 

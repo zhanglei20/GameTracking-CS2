@@ -4,10 +4,6 @@ set -euo pipefail
 cd "${0%/*}"
 . ../common.sh
 
-echo "Downloading CS2..."
-
-$STEAM_FILE_DOWNLOADER_PATH --username "$STEAM_USERNAME" --password "$STEAM_PASSWORD" --appid 730 --output . --branch $STEAM_BRANCH
-
 echo "Processing CS2..."
 
 set +e
@@ -28,7 +24,7 @@ while IFS= read -r -d '' file
 do
 	echo " > $file"
 
-	# When updating vpk_extensions, also update "vpk:..." in GameTracking/files.json
+	# When updating vpk_extensions, also update "vpk:..." in files.json
 	"$VRF_PATH" \
 		--input "$file" \
 		--output "$(echo "$file" | sed -e 's/\.vpk$/\//g')" \
