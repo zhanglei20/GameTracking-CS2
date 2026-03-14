@@ -2,8 +2,6 @@
  : %s : vol: %4.2f, sndlvl: %4.2f \n
  changes to final result of %.2f\n
 !!SyncExtref!!%s
-!m_bBlocksEvents
-!m_bMatchEventSubString
 #OS_Default_Device
 $procedural
 $toolgraphs
@@ -2932,10 +2930,6 @@ logic_perspective_switch_float
 logic_perspective_switch_string
 logic_string_match_12
 lvl: %3.2f 
-m_Behavior_EntIndex != kMatch
-m_Behavior_EventName != kMatch || m_bMatchEventSubString
-m_Behavior_Opvar != kMatch
-m_Behavior_String != kMatch
 m_MixCommands
 m_PreviewInputs
 m_PreviewTweak

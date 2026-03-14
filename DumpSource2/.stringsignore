@@ -3,6 +3,7 @@
 !(m_bAnimated && m_bScaleAnimationRate)
 !m_bAnimated
 !m_bBlendFramesSeq0
+!m_bBlocksEvents
 !m_bDisableChildren
 !m_bDistanceAlpha
 !m_bDistributeEvenly
@@ -10,6 +11,7 @@
 !m_bEnableNamedValues
 !m_bEnableProjectedDepthControls
 !m_bFog
+!m_bMatchEventSubString
 !m_bOutline
 !m_bParticleShadows
 !m_bRefract
@@ -4936,6 +4938,15 @@ Get data related to mix group matching string
 Get physics surface properties for all the materials.
 Get request X-Origin-Auth string
 Get the latest version of the map and host it on this server.
+GetAnimGraphControllerManagerSaveRestoreOps
+GetAnimGraphControllerPtrSaveRestoreOps
+GetAnimGraphSaveRestoreOps
+GetAttributeDictSaveDataOps
+GetChoreoServicesSaveRestoreOps
+GetHitgroupDisableListSaveRestoreOps
+GetPulseInstanceSaveRestoreOps
+GetSoundSaveRestoreOps
+GetThinkContextSaveDataOps
 Gibs the given entity(s)\n\tArguments:   \t{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
 Give a supply of ammo for current weapon..\n
 Give item oriented to player angles.\n\tArguments: <item_name>
@@ -9374,6 +9385,7 @@ Toggles the radar scale
 Toggles viewport size between small + full window.
 Toggles visibility of the debug overlay system.
 ToolEditContext_ID_VMDL
+ToolEditContext_ID_VPCF
 Topdown games set this to handle distance and offscreen location differently.
 Total health of this damage level. When it reaches 0, the damage level is 'broken' using the breakable prop system.
 Total size of the texture pool in MB
@@ -13272,9 +13284,13 @@ m_AxialEdges
 m_BLASes
 m_BackgroundMaterialName
 m_Behavior_EntIndex
+m_Behavior_EntIndex != kMatch
 m_Behavior_EventName
+m_Behavior_EventName != kMatch || m_bMatchEventSubString
 m_Behavior_Opvar
+m_Behavior_Opvar != kMatch
 m_Behavior_String
+m_Behavior_String != kMatch
 m_BindPose
 m_BlackboardReferences
 m_BlackboardResource
@@ -26666,6 +26682,8 @@ z
 zfar
 znear
 zoom_sensitivity_ratio
+{ 'Output'='m_strEntityOutput' 'Param'='m_strEntityOutputParam' 'Until Canceled'='m_bListenUntilCanceled' }
+{ 'TagName'='m_TagName' }
 { KV3DefaultTestFnName = 'CParticleModelInputDefaultTestFunc' }
 { KV3DefaultTestFnName = 'CParticleTransformInputDefaultTestFunc' }
 { SkipImprintFGDClassOnKV3 = true SkipRemoveKeysInKV3AtFGDDefault = true KV3DefaultTestFnName = 'CParticleFloatInputDefaultTestFunc' }

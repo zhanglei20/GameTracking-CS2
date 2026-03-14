@@ -10680,9 +10680,6 @@ GetAngles
 GetAnglesAsVector
 GetAngularVelocity
 GetAnimGraph2TimeDeltaAndUpdatePrevTick
-GetAnimGraphControllerManagerSaveRestoreOps
-GetAnimGraphControllerPtrSaveRestoreOps
-GetAnimGraphSaveRestoreOps
 GetArmor
 GetArrayElement R%d <- R%d[ R%d ]
 GetAttachmentAngles
@@ -10699,7 +10696,6 @@ GetBoundingMins
 GetBounds
 GetCenter
 GetChildren
-GetChoreoServicesSaveRestoreOps
 GetClassName
 GetClassNameAsCStr
 GetClassNameOverride
@@ -10756,7 +10752,6 @@ GetGearSlot
 GetGround
 GetGroundEntity
 GetHealth
-GetHitgroupDisableListSaveRestoreOps
 GetInflictor
 GetInlineConst R%d <- C%d (%s)
 GetInputsForScriptClass
@@ -10856,7 +10851,6 @@ GetPlayerSpeechDuration
 GetPrice
 GetPrivateScriptScope
 GetPublicScriptScope
-GetPulseInstanceSaveRestoreOps
 GetRange
 GetRangeModifier
 GetRenderAlpha
@@ -10882,7 +10876,6 @@ GetStr
 GetStr(name) : returns the convar as a string. May return null if no such convar.
 GetTeam
 GetTeamNumber
-GetThinkContextSaveDataOps
 GetTotalledDamage
 GetTraceHit
 GetType
@@ -16040,7 +16033,6 @@ Too many shards (%d), skipping any above (%d)\n
 Too many vertical sections for minimap (> %d), skipping.\n
 Too much Recast debug data; skipping tile\n
 Tool '%s' missing required type.
-ToolEditContext_ID_VPCF
 TopBottomSplitter
 Total %d entities (%d empty)\n
 Touch Expansion: %s(%d)
@@ -24464,8 +24456,6 @@ zmax
 zmin
 zoom_in_sound
 zoom_out_sound
-{ 'Output'='m_strEntityOutput' 'Param'='m_strEntityOutputParam' 'Until Canceled'='m_bListenUntilCanceled' }
-{ 'TagName'='m_TagName' }
 { className='PulseServerDebugNode' }
 { pulse_context_hints_port='pTarget1' }
 { pulse_context_hints_port='pTarget2' }

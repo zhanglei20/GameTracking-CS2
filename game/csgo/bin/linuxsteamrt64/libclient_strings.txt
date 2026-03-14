@@ -15520,9 +15520,6 @@ GetAllSeasonPremierLeaderboardRegions
 GetAllSeasonPremierLeaderboards
 GetAmmoType
 GetAnimGraph2TimeDeltaAndUpdatePrevTick
-GetAnimGraphControllerManagerSaveRestoreOps
-GetAnimGraphControllerPtrSaveRestoreOps
-GetAnimGraphSaveRestoreOps
 GetAntiAddictionTimeRemaining
 GetAppID
 GetArrayElement R%d <- R%d[ R%d ]
@@ -15741,7 +15738,6 @@ GetGuidelinePositions
 GetHashType() == ChunkHashFraction_t::EHashType::BLAKE3
 GetHashType() == ChunkHashFraction_t::EHashType::MD5
 GetHealth
-GetHitgroupDisableListSaveRestoreOps
 GetHostSteamID
 GetHudIconFileName
 GetHudPlayerXuid
@@ -16118,7 +16114,6 @@ GetShuffleItems
 GetSlotEquippedWithDefIndex
 GetSortMethodByIndex
 GetSortMethodsCount
-GetSoundSaveRestoreOps
 GetSpawnedEntities
 GetSpawnedEntities() : Get the list of the most recent spawned entities
 GetSpecStatCount
@@ -24633,7 +24628,6 @@ ToggleStyle
 Too many 3d skyboxes! Cannot find a slot for skybox %s!\n
 Too many simultaneously active particle systems!\n
 Tool '%s' missing required type.
-ToolEditContext_ID_VPCF
 ToolObjects/CubeMap
 ToolObjects/GlobalLight
 ToolObjects/LightProbeVolume
