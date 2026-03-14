@@ -15,7 +15,7 @@ class C_EconItemView : public IEconItemInterface
 	bool m_bInventoryImageTriedCache;
 	int32 m_nInventoryImageRgbaWidth;
 	int32 m_nInventoryImageRgbaHeight;
-	char[4096] m_szCurrentLoadCachedFileName;
+	char[260] m_szCurrentLoadCachedFileName;
 	bool m_bRestoreCustomMaterialAfterPrecache;
 	// MNetworkEnable
 	uint16 m_iItemDefinitionIndex;

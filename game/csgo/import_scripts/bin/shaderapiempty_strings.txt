@@ -1,21 +1,9 @@
-                          
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
- Type Descriptor'
-.00cfg
 .?AV?$CBaseAppSystem@VIShaderDeviceMgr@@@@
 .?AVCEmptyMesh@@
 .?AVCShaderAPIEmpty@@
 .?AVCShaderDeviceEmpty@@
 .?AVCShaderDeviceMgrEmpty@@
 .?AVCShaderShadowEmpty@@
-.?AVCUtlCStringConversion@@
-.?AVCUtlCharConversion@@
-.?AVCUtlNoEscConversion@@
-.?AVIAppSystem@@
 .?AVIDebugTextureInfo@@
 .?AVIHardwareConfigInternal@@
 .?AVIIndexBuffer@@
@@ -27,137 +15,37 @@
 .?AVIShaderDynamicAPI@@
 .?AVIShaderShadow@@
 .?AVIVertexBuffer@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.data
-.data$r
-.edata
 .gfids$x
 .gfids$y
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.rdata
-.rdata$r
-.rdata$zzzdbg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$yd
-.xdata$x
 ?5Wg4p
 ?VEngineCvar007
 ?tanh
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
 COLORCORRECTION_VERSION_1
-CloseHandle
-CorExitProcess
-CreateFileW
 DebugTextureInfo001
-DecodePointer
-DeleteCriticalSection
 Empty shader\n
-EnterCriticalSection
 EventSystem001
-ExitProcess
-FindClose
 FindFirstFileExA
 FindNextFileA
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
-FreeEnvironmentStringsW
-FreeLibrary
 GameUISystemMgr001
-GetACP
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetEnvironmentStringsW
-GetFileType
-GetLastError
-GetModuleFileNameA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemTimeAsFileTime
-HH:mm:ss
 IMEManager001
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
-InterlockedFlushSList
-IsDebuggerPresent
-IsProcessorFeaturePresent
-IsValidCodePage
-KERNEL32.dll
-LCMapStringEx
-LCMapStringW
-LeaveCriticalSection
-LoadLibraryExW
-LocaleNameToLCID
 MDLCache004
-MM/dd/yy
 MatSystemSurface006
 MaterialSystemHardwareConfig013
-MultiByteToWideChar
 Physics2 Interface ActorMgr v0.1
 Physics2 Interface ResourceMgr v0.1
 Physics2 Interface v0.3
-QueryPerformanceCounter
 QueuedLoaderVersion001
-RSDS
 RenderDevice001
 RenderHardwareConfig001
 RenderSystemSurface001
 ResourceSystem004
-RtlUnwind
 STAR_System001
 SceneSystem_001
-SetFilePointerEx
-SetLastError
-SetStdHandle
-SetUnhandledExceptionFilter
 ShaderApi029
 ShaderDevice001
 ShaderDeviceMgr001
 ShaderShadow010
-TerminateProcess
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
-UnhandledExceptionFilter
 VBAllocTracker001
 VDataCache003
 VDmeMakeFileUtils001
@@ -177,68 +65,7 @@ VResourceAccessControl001
 VShaderUtil001
 VSoundEmitter003
 VStudioRender026
-WideCharToMultiByte
-WriteConsoleW
-WriteFile
 WriteMiniDump
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__stdcall
-__thiscall
-__unaligned
-__vectorcall
-_cabs
-_hypot
-_logb
-_nextafter
-`RTTI
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
-abcdefghijklmnopqrstuvwxyz
 c:\buildslave\csgo_trunk_win32\build\src\materialsystem\shaderapiempty\Release\shaderapiempty.pdb
-ceil
-dddd, MMMM dd, yyyy
-fabs
-fmod
 lzZ?
-operator "" 
-restrict(
 shaderapiempty.dll
-tier0.dll

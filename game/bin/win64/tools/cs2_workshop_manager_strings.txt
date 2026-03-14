@@ -1,5 +1,4 @@
                     
-                          
             Not Before: 
         Issuer:%c
         Serial Number:
@@ -9,8 +8,6 @@
         Validity\n
     Signature Algorithm: 
   ##%%&&))**,,//1122447788;;==>>@@CCEEFFIIJJLLOOQQRRTTWWXX[[]]^^aabbddgghhkkmmnnppssuuvvyyzz||
- !"#$%&'()*+,-./
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  %1 Files.
  %1 Total.
  %4hf
@@ -24,10 +21,6 @@
  ?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
  ?tr@QLabel@@SA?AVQString@@PEBD0H@Z
  ?tr@QTextEdit@@SA?AVQString@@PEBD0H@Z
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
  FLK
  FWa
  GMT
@@ -35,7 +28,6 @@
  Published Items 
  Published Maps 
  T;6P/Arc
- Type Descriptor'
  WARNING: Exceeds %1 upload limit!
  Xia
  ^LXjt
@@ -44,6 +36,7 @@
  export
  filename="%s"%s
  filename="smime.p7s"%s%s
+ for 
  iciNWq
  micalg="
  name=
@@ -350,7 +343,6 @@ $hRh
 &New Submission
 &Re-Upload
 &Refresh View
-&Sgw
 &V6J
 &View in Workshop
 &Ylb
@@ -383,7 +375,6 @@ $hRh
 (h`H1pqA
 (i/Al
 (jvg;
-(null)
 (vQF
 (wMww
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
@@ -405,7 +396,6 @@ $hRh
 *0fT
 *1~Pt
 *5pB
-*StO9>T
 *UlS
 *Y$ve
 *\fhsD
@@ -462,7 +452,6 @@ $hRh
 ....................
 ../src/devtools/bin/certificates/game/
 ..uR5&m
-.00cfg
 .4bb
 .97yY
 .?AV?$CBaseAppSystem@VIToolSystem2@@@@
@@ -477,11 +466,7 @@ $hRh
 .?AV?$CTier2AppSystem@VIToolSystem2@@$0A@@@
 .?AV?$CTier3AppSystem@VIToolSystem2@@$0A@@@
 .?AVCBaseToolSystem2@@
-.?AVCBaseVModuleMetadataProvider@@
 .?AVCCS2WorkshopManagerTool@@
-.?AVCCallbackBase@@
-.?AVCModuleMetadataProvider_ResourceManifests@@
-.?AVCPostConnectCallback@@
 .?AVCQChangeLogTextEdit@@
 .?AVCQMainWindow@@
 .?AVCQPreviewImageLabel@@
@@ -492,10 +477,7 @@ $hRh
 .?AVCQVBoxLayoutMaxSize@@
 .?AVCQWorkshopVPKManifestWidget@@
 .?AVCQtImageCache@@
-.?AVCSchemaInstallCallback@@
-.?AVIAppSystem@@
 .?AVIQtImageCache@@
-.?AVIScreenshotCallback@@
 .?AVIToolSystem2@@
 .?AVQAbstractButton@@
 .?AVQAbstractItemModel@@
@@ -532,27 +514,6 @@ $hRh
 .?AVQTimer@@
 .?AVQVBoxLayout@@
 .?AVQWidget@@
-.?AVbad_exception@std@@
-.?AVexception@std@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCC
-.CRT$XCU
-.CRT$XCZ
-.CRT$XDA
-.CRT$XDZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XLA
-.CRT$XLC
-.CRT$XLZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
 .HCK\v
 .Q.Ol
 .\crypto\asn1\a_bitstr.c
@@ -814,53 +775,15 @@ $hRh
 .\ssl\t1_lib.c
 .\ssl\t1_reneg.c
 .\v?event@QAbstractItemView@@MEAA_NPEAVQEvent@@@Z
-.bat
 .bmxz
-.bss
-.cmd
-.com
-.data
-.data$r
-.data$rs
-.dll
 .dx_LV9
-.edata
-.exe
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
 .lbN
 .msi
-.pdata
 .pp@0
 .rar
-.rdata
-.rdata$00
-.rdata$T
-.rdata$r
-.rdata$voltmd
-.rdata$zzzdbg
 .reg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
 .text$
-.text$di
-.text$mn
-.text$mn$00
-.text$mn$21
-.text$x
-.text$yd
-.tls
-.tls$
-.tls$ZZZ
 .x7B
-.xJ>Hf
-.xdata
-.xdata$x
 .yAu[7
 /'/)/A/E/K/M/Q/W/o/u/}/
 /2x1
@@ -876,6 +799,7 @@ $hRh
 /vpk.privatekey.vdf
 /vpk.publickey.vdf
 /zt1
+0123456789
 02V8[
 05=k
 08bX
@@ -889,16 +813,10 @@ $hRh
 0\r0#0)070;0U0Y0[0g0q0y0}0
 0\r?endInsertRows@QAbstractItemModel@@IEAAXXZ
 0e\r8
-0iN>/
 0pp@5tqE?|sO541
 0tU+xc:
 0}dV
 1!1'1-191C1E1K1]1a1g1m1s1
-1#IND
-1#INF
-1#QNAN
-1#SNAN
-11Y@
 11nN
 12'0
 12v)
@@ -998,10 +916,7 @@ $hRh
 3%3+3/353A3G3[3_3g3k3s3y3
 31tPR
 35-w
-37>k
 37LQ
-3>N;kU
-3>fvw
 3DES
 3DES(168)
 3Ej%Tb
@@ -1164,7 +1079,6 @@ $hRh
 ;"lY7
 ;5jNf
 ;83\v\nHBJ7
-;?0123456789:;<=>?
 ;LGEW
 ;Qo0
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
@@ -1196,12 +1110,9 @@ $hRh
 <unsupported>
 =!=-=3=7=?=C=o=s=u=y={=
 =&sf9
-=87M
 =O?AqP
 =Q9M
-=cQ6
 =cdE
-=imb;D
 =trF6,#
 >#>)>/>3>A>W>c>e>w>
 >4|6eXg_e
@@ -1209,19 +1120,11 @@ $hRh
 >Sem
 >WK6
 >\v?\r?7?;?=?A?Y?_?e?g?y?}?
->cQ6
 >fN46R^
->jtm}S
 >l\rur
 >p00<
 >yhP
 >ztq
-?7zQ6$
-??0CThreadRWLock_FastRead@@QEAA@XZ
-??0CUtlBuffer@@QEAA@HHW4BufferFlags_t@0@@Z
-??0CUtlString@@QEAA@AEBVCBufferString@@@Z
-??0CUtlSymbolTable@@QEAA@HH_N@Z
-??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
 ??0QAbstractTableModel@@QEAA@PEAVQObject@@@Z
 ??0QAction@@QEAA@AEBVQIcon@@AEBVQString@@PEAVQObject@@@Z
 ??0QAction@@QEAA@AEBVQString@@PEAVQObject@@@Z
@@ -1284,11 +1187,7 @@ $hRh
 ??0QVariant@@QEAA@XZ
 ??0QVariant@@QEAA@_J@Z
 ??0QWidget@@QEAA@PEAV0@V?$QFlags@W4WindowType@Qt@@@@@Z
-??1CThreadSemaphore@@QEAA@XZ
-??1CThreadSyncObject@@QEAA@XZ
-??1CUtlSymbolTable@@QEAA@XZ
 ??1Connection@QMetaObject@@QEAA@XZ
-??1KeyValues@@QEAA@XZ
 ??1QAbstractTableModel@@UEAA@XZ
 ??1QAction@@UEAA@XZ
 ??1QByteArray@@QEAA@XZ
@@ -1328,7 +1227,6 @@ $hRh
 ??1QVBoxLayout@@UEAA@XZ
 ??1QVariant@@QEAA@XZ
 ??1QWidget@@UEAA@XZ
-??4CUtlString@@QEAAAEAV0@AEBVCBufferString@@@Z
 ??4QColor@@QEAAAEAV0@AEBV0@@Z
 ??4QIcon@@QEAAAEAV0@$$QEAV0@@Z
 ??4QPixmap@@QEAAAEAV0@$$QEAV0@@Z
@@ -1336,98 +1234,16 @@ $hRh
 ??4QString@@QEAAAEAV0@AEBV0@@Z
 ??4QString@@QEAAAEAV0@PEBD@Z
 ??8@YA_NAEBVQString@@0@Z
-??8CUtlString@@QEBA_NAEBV0@@Z
 ??8QColor@@QEBA_NAEBV0@@Z
 ??9QString@@QEBA_NPEBD@Z
 ??BQByteArray@@QEBAPEBDXZ
 ??BQIcon@@QEBA?AVQVariant@@XZ
-??HCUtlString@@QEBA?AV0@PEBD@Z
 ??MQTableWidgetItem@@UEBA_NAEBV0@@Z
-??YCUtlString@@QEAAAEAV0@AEBV0@@Z
-??YCUtlString@@QEAAAEAV0@PEBD@Z
 ??YQString@@QEAAAEAV0@AEBV0@@Z
 ??YQString@@QEAAAEAV0@PEBD@Z
-?AcquireLock@CAtomicMutex@@AEAAXI@Z
-?AddString@CUtlSymbolTable@@QEAA?AVCUtlSymbol@@PEBDPEA_N@Z
-?Append@CUtlString@@QEAAXPEBD@Z
-?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
-?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
-?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
-?DirName@CUtlString@@QEBA?AV1@XZ
-?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
-?EnsureCapacity@CUtlBuffer@@QEAAXH@Z
-?EnterScopeInternalBudgetFlags@?$VProfScopeHelper@$0A@$0A@@@SAP6AXXZPEBDAEAUVProfBudgetGroupCallSite@@AEBVCUtlSourceLocation@@@Z
-?ExtractFilePath@CBufferString@@QEAAPEBDPEBD_N@Z
-?Find@CUtlSymbolTable@@QEBA?AVCUtlSymbol@@PEBD@Z
-?FindKey@KeyValues@@QEAAPEAV1@PEBD_N@Z
-?FindKey@KeyValues@@QEBAPEBV1@PEBD@Z
-?FioClose@@YAHPEAX@Z
-?FioCreateFile@@YAHPEBDW4EFioAccessFlags@@W4EFioShareFlags@@W4EFioCreateMode@@IPEAPEAX@Z
-?FioGetSize@@YAHPEAXPEA_K@Z
-?FioReadAt@@YAHPEAX_K0HPEAH@Z
-?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixSlashes@CUtlString@@QEAAXD@Z
-?FixupPathName@CBufferString@@QEAAPEBDD@Z
-?Format@CBufferString@@QEAAHPEBDZZ
-?Format@CUtlString@@QEAAHPEBDZZ
-?FreeMemoryBlock@CUtlString@@AEAAXXZ
-?GetBaseFilename@CUtlString@@QEBA?AV1@XZ
-?GetExtensionAlloc@CUtlString@@QEBA?AV1@XZ
-?GetFirstSubKey@KeyValues@@QEAAPEAV1@XZ
-?GetName@KeyValues@@QEBAPEBDXZ
-?GetNextKey@KeyValues@@QEAAPEAV1@XZ
 ?HAI\t81\t9dcG'
 ?HP4
-?HaveWriteLock_BlockReadsNow@CThreadRWLock_FastRead@@QEAAX_N@Z
-?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
-?Internal_GetString@CKeyValues_Data@@IEAAPEBDPEBDPEAD_K@Z
-?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
-?LoadFromFile@KeyValues@@QEAA_NPEAVIFileSystem@@PEBD1P6A_N1PEAX@Z21@Z
-?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBDAEBUKV3ID_t@@2I@Z
-?LoadKV3FromKV1Text_Translated@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBDW4KV1TextEscapeBehavior_t@@PEBUKV1ToKV3Translation_t@@H2_NI@Z
-?LooksLikeKV3TextData@@YA_NPEBXHPEAUKV3ID_t@@PEADH@Z
-?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
-?MakeRelativePath@CBufferString@@QEAAPEBDPEBD0_N@Z
-?MoveFrom@CBufferString@@QEAAXAEAV1@@Z
-?PathJoin@CUtlString@@SA?AV1@PEBD0@Z
-?ProcessSingleBuffer@CBlake3HashContext@@SAXPEBX_KPEAE1@Z
-?Purge@CBufferString@@QEAAXH@Z
-?Purge@CUtlString@@QEAAXXZ
-?Put@CUtlBuffer@@QEAAXPEBXH@Z
-?RemoveAll@CUtlSymbolTable@@QEAAXXZ
-?RemoveDotSlashes@CBufferString@@QEAAPEBDD@Z
-?RemoveFirstDir@CBufferString@@QEAAPEBDPEAV1@@Z
-?Replace@CBufferString@@QEAAHPEBD0_N@Z
-?Replace@CUtlString@@QEBA?AV1@PEBD0_N@Z
-?Right@CUtlString@@QEBA?AV1@H@Z
-?SaveToFile@KeyValues@@QEAA_NPEAVIFileSystem@@PEBD1_N2@Z
-?SeekPut@CUtlBuffer@@QEAAXW4SeekType_t@1@H@Z
-?Set@CUtlString@@QEAAXPEBD@Z
-?SetDirect@CUtlString@@QEAAXPEBDH@Z
-?SetInt@KeyValues@@QEAAXPEBDH@Z
-?SetString@KeyValues@@QEAAXPEBD0@Z
-?Slice@CUtlString@@QEBA?AV1@HH@Z
-?Split@CSplitString@@AEAAXPEBDHPEAPEBDH_N@Z
-?SplitString@CUtlStringList@@AEAAXPEBDPEBQEBDH@Z
-?StartsWith_FastCaseInsensitive@CBufferString@@QEBA_NPEBD@Z
-?StripExtension@CBufferString@@QEAAPEBD_N@Z
-?StripExtension@CUtlString@@QEBA?AV1@XZ
-?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
-?StripTrailingSlash@CUtlString@@QEAAXXZ
-?ThreadAtomicNotifyOne@@YAXPEAI@Z
-?ToLowerFast@CBufferString@@QEAAXH@Z
-?Trim@CUtlString@@QEAAXPEBD@Z
-?UUUUUU
-?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
-?UnlockRead_LockForWrite@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@PEBDHW4WriteLockTransition_t@1@@Z
-?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
-?UnqualifiedFilenameAlloc@CUtlString@@QEBA?AV1@XZ
 ?VBH;
-?V_stristr_fast@@YAPEBDPEBD0@Z
-?V_strnlen@@YAHPEBDH@Z
-?Wait@CThreadSyncObject@@QEAA_NI@Z
 ?\n?availableGeometry@QScreen@@QEBA?AVQRect@@XZ
 ?accept@QDialog@@UEAAXXZ
 ?actionEvent@QMenu@@MEAAXPEAVQActionEvent@@@Z
@@ -1509,7 +1325,6 @@ $hRh
 ?drawPixmap@QPainter@@QEAAXAEBVQRectF@@AEBVQPixmap@@0@Z
 ?drawText@QPainter@@QEAAXAEBVQRect@@HAEBVQString@@PEAV2@@Z
 ?dt]X
-?f`Y4
 ?fillRect@QPainter@@QEAAXAEBVQRect@@AEBVQColor@@@Z
 ?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z
 ?fromBase64@QByteArray@@SA?AV1@AEBV1@@Z
@@ -1691,7 +1506,6 @@ $hRh
 ?pixmap@QLabel@@QEBA?AVQPixmap@@W4ReturnByValueConstant@Qt@@@Z
 ?pos@QWidget@@QEBA?AVQPoint@@XZ
 ?property@QObject@@QEBA?AVQVariant@@PEBD@Z
-?qBJ
 ?qt_metacall@QAbstractTableModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QAction@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QCheckBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -1963,7 +1777,6 @@ $hRh
 ?uWS
 ?urls@QMimeData@@QEBA?AV?$QList@VQUrl@@@@XZ
 ?x29
-?ysB
 @!@%@+@1@?@C@E@]@a@g@m@
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @0pp
@@ -1986,11 +1799,9 @@ A2VPD
 A4Wn>
 A9ur
 A<fP
-A>pP&
 A>x8
 AA Compromise
 AACompromise
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
 AC2,h
 ACCESS_DESCRIPTION
 ACPT_STATE
@@ -2007,7 +1818,6 @@ ADH-CAMELLIA256-SHA
 ADH-DES-CBC3-SHA
 ADH-RC4-MD5
 ADH-SEED-SHA
-ADVAPI32.dll
 AD_DVCS
 AEAD
 AECDH
@@ -2075,6 +1885,7 @@ ALL:!EXPORT:!LOW:!aNULL:!eNULL:!SSLv2
 ANSI X9.62
 ANY PRIVATE KEY
 APPEND_EXP
+ASCII
 ASIDENTIFIERCHOICE_CANONIZE
 ASIDENTIFIERCHOICE_IS_CANONICAL
 ASN.1 part of OpenSSL 1.0.2j  26 Sep 2016
@@ -2177,7 +1988,6 @@ Aborting... query is already in flight\n
 About &Qt
 AcG\nt
 Acceptable OCSP Responses
-AcquireSRWLockExclusive
 AddonConfig/VpkDirectories
 Affiliation Changed
 Ag*g*
@@ -2185,9 +1995,7 @@ An error occurred while retrieving file information.\nSome files will not be sho
 Any Extended Key Usage
 Any Purpose
 Any language
-AppPolicyGetProcessTerminationMethod
 Arabesque Art & Arabian Mythology
-AreFileApisANSI
 Arg list too long
 Armsrace
 AssertFatalCast
@@ -2224,7 +2032,6 @@ BAD RECURSION DEPTH\n
 BAD-TYPE
 BASIC_CONSTRAINTS
 BC (default)
-BC?>6t9^\tc:>
 BEOS_BIND_FUNC
 BEOS_BIND_VAR
 BEOS_LOAD
@@ -2234,7 +2041,6 @@ BF-CBC
 BF-CFB
 BF-ECB
 BF-OFB
-BF>^G
 BFEo
 BFUa.X
 BIGNUM
@@ -2358,11 +2164,7 @@ C:\buildworker\csgo_rel_win64\build\_build_\tools\cs2_workshop_manager\_vpc_cs2_
 C:\buildworker\csgo_rel_win64\build\src\common\crypto.cpp
 C:\buildworker\csgo_rel_win64\build\src\common\opensslwrapper.cpp
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\threadtoolstypes.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlblockvector.h
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utldict.h
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlsortvector.h
 C:\buildworker\csgo_rel_win64\build\src\public\vpklib\packedstore.h
 C:\buildworker\csgo_rel_win64\build\src\vpklib\packedstore.cpp
 CA Compromise
@@ -2418,9 +2220,6 @@ CHECK_NAME_CONSTRAINTS
 CHECK_PADDING_MD
 CHECK_POLICY
 CHECK_SUITEB_CIPHER_LIST
-CKeyValues3Array::EnsureElementCapacity
-CKeyValues3Array::InsertMultipleBefore
-CKeyValues3Table::EnsureMemberCapacity
 CKh/Q
 CLIENT_CERTIFICATE
 CLIENT_FINISHED
@@ -2579,21 +2378,14 @@ CRYPTO_get_new_lockid
 CRYPTO_set_ex_data
 CS2WorkshopManager
 CSPName
-CSemiAutoRWLockT<class CThreadRWLock_FastRead>::LockForWrite
-CSemiAutoRWLockT<class CThreadRWLock_FastRead>::Unlock
 CT Certificate SCTs
 CT Precertificate Poison
 CT Precertificate SCTs
 CT Precertificate Signer
 CUtlBlockVector<struct FileHandleTracker_t,int,class CMemAllocAllocator>::GrowCount
 CUtlDict<struct `public: void __cdecl CQWorkshopVPKManifestWidget::SetFromList(char const *,class CUtlVector<struct ManifestFile_t,int,class CUtlVectorMemory_Growable<struct ManifestFile_t,int,0> > const &)'::`2'::extensionMetric_t,class CDefFastCaselessStringLess>::Insert
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
-CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::AddPage
-CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::Alloc
 CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::AddPage
-CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTreeBase
 CUtlSortVector<struct ChunkHashFraction_t,class CUtlSortVectorDefaultLess<struct ChunkHashFraction_t::SortKey_t>,class CUtlVector<struct ChunkHashFraction_t,int,class CUtlVectorMemory_Growable<struct ChunkHashFraction_t,int,0> > >::Find
 CUtlSortVector<struct ChunkHashFraction_t,class CUtlSortVectorDefaultLess<struct ChunkHashFraction_t::SortKey_t>,class CUtlVector<struct ChunkHashFraction_t,int,class CUtlVectorMemory_Growable<struct ChunkHashFraction_t,int,0> > >::FindLessOrEqual
 CUtlSortVector<struct ChunkHashFraction_t,class CUtlSortVectorDefaultLess<struct ChunkHashFraction_t::SortKey_t>,class CUtlVector<struct ChunkHashFraction_t,int,class CUtlVectorMemory_Growable<struct ChunkHashFraction_t,int,0> > >::Insert
@@ -2620,13 +2412,10 @@ ChunkHashFraction_t
 ChunkHashFraction_t::GetPackFileNumber
 ClQ(|
 Classic
-CloseHandle
 CloseToolhelp32Snapshot
 Code Signing
 Code=
 Cofactor: 
-CompareStringEx
-CompareStringW
 Content file %s is corrupt. Hashing could not be verified. Verify integrity of game files.\n
 Content file %s is corrupt; Chunk hash not found (expected: %d, found: %d)\n
 Content file %s is corrupt; signature couldn't be verified. Verify integrity of game files\n
@@ -2638,11 +2427,8 @@ Content-Type: %ssignature;
 Content-Type: application/ocsp-request\r\nContent-Length: %d\r\n\r\n
 Content-Type: multipart/signed;
 Content-Type: text/plain\r\n\r\n
-CorExitProcess
 Couldn't load %s key %s, will not sign %s.\n
 Create new workshop item (PublishFileID: %llu).\n
-CreateFileW
-CreateToolhelp32Snapshot
 Created %s.
 Critical
 CrlID
@@ -2676,6 +2462,7 @@ DAE!
 DAL\fL@
 DBDc
 DBF-
+DEFAULT
 DEF_ADD_INDEX
 DEF_GET_CLASS
 DEF_LOAD
@@ -2892,7 +2679,6 @@ Decipher Only
 Delete
 Delete Submission - %1
 Delete the submission
-DeleteCriticalSection
 Deleting selected file
 DeregisterEventSource
 Desert Eagle
@@ -3117,7 +2903,6 @@ ERROR: selector [%d] invalid\n
 ESS_ADD_SIGNING_CERT
 ESS_CERT_ID_NEW_INIT
 ESS_SIGNING_CERT_NEW_INIT
-ET5>
 ET`K\
 ETh7
 EVP lib
@@ -3193,11 +2978,9 @@ EhQ,[3
 EjNG
 Email address mismatch
 Encipher Only
-EncodePointer
 Encryption
 Enter 
 Enter PEM pass phrase:
-EnterCriticalSection
 Enterprises
 EovVY
 Ep0u
@@ -3210,7 +2993,6 @@ Exceeds %1 upload limit! Please optimize your content under this limit.
 Excluded
 Exec format error
 Exit the workshop manager
-ExitProcess
 Expecting: 
 Experimental
 Exponent:
@@ -3229,7 +3011,6 @@ F9q'
 F<mb
 FAMAS
 FDA~i
-FEMh\f
 FF!w
 FILE pointer
 FILE_CTRL
@@ -3266,23 +3047,12 @@ Field=
 File Size
 File exists
 File too large
-FileTimeToSystemTime
 Filename '%s' is invalid to be contained in a VPK
 Filename too long
-FindClose
-FindFirstFileExW
-FindNextFileW
 Five-SeveN
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
 FlushConsoleInputBuffer
-FlushFileBuffers
 Fm{#t
 Fop]
-FreeEnvironmentStringsW
-FreeLibrary
 Fruits & Vegetables
 Function not implemented
 F|w)a]c
@@ -3292,7 +3062,6 @@ G2bQ
 G2xVo\?
 G3SG1
 GBd<}v
-GCTL
 GENERALIZEDTIME
 GENERALSTRING
 GENERAL_ALLOCATE_BOOLEAN
@@ -3357,43 +3126,10 @@ GenerateSHA256Digest
 Generator (compressed):
 Generator (hybrid):
 Generator (uncompressed):
-GetACP
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetConsoleOutputCP
-GetCurrentDirectoryW
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
 GetCursorInfo
-GetDriveTypeW
-GetEnvironmentStringsW
-GetFileInformationByHandle
-GetFileSizeEx
-GetFileType
-GetForegroundWindow
-GetFullPathNameW
-GetLastError
-GetModuleFileNameW
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetProcessWindowStation
 GetQueueStatus
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemInfo
 GetSystemTime
-GetSystemTimeAsFileTime
-GetTickCount
-GetTimeZoneInformation
-GetUserObjectInformationW
 Gew}
 GlobalMemoryStatus
 Glock-18
@@ -3412,7 +3148,6 @@ H@H9xqI
 HBJ\nTRF
 HEAD 
 HH&a
-HH:mm:ss
 HIGH
 HMAC
 HMAC GOST 34.11-94
@@ -3474,8 +3209,6 @@ IDEA-CFB
 IDEA-ECB
 IDEA-OFB
 IMPLICIT
-IND)ind)
-INITY
 INT_CTRL_HELPER
 INT_CTX_NEW
 INT_DUP_EX_DATA
@@ -3512,11 +3245,7 @@ Inappropriate I/O control operation
 Independent
 Inherit all
 Inhibit Policy Mapping
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
 Input/output error
-InterlockedFlushSList
 International Organizations
 Interrupted function call
 Invalid argument
@@ -3525,10 +3254,7 @@ Invalid seek
 Invalidity Date
 IquO
 Is a directory
-IsDebuggerPresent
-IsProcessorFeaturePresent
 IsTemplate
-IsValidCodePage
 Issuer certificate lookup error
 Iw,e=2-b[
 IytF
@@ -3568,7 +3294,6 @@ K8uH
 K;xs
 KCsJ
 KDF failed
-KERNEL32.dll
 KFz"
 KISA
 KMBo8[
@@ -3584,8 +3309,6 @@ Kbf}
 Key Agreement
 Key Compromise
 Key Encipherment
-KeyValues3: pre-allocated array memory is too small for %u elements (%u bytes available, %u bytes needed)\n
-KeyValues3: pre-allocated table memory is too small for %u members (%u bytes available, %u bytes needed)\n
 KlD#
 KsF8
 Ksg4X
@@ -3596,12 +3319,9 @@ L0fO*'
 L4Eud
 L4uGv~;6
 L5^x|S
-L>ev
 L@4T
 LAM\rhaI)|pL<
 LBN6
-LCMapStringEx
-LCMapStringW
 LG.HK
 LINEBUFFER_CTRL
 LIST_ADD
@@ -3618,14 +3338,10 @@ L\t?canDropMimeData@QAbstractItemModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HH
 L_?toImage@QPixmap@@QEBA?AVQImage@@XZ
 Last Updated
 LbWf
-LeaveCriticalSection
 Load certs from files in a directory
 Load file into cache
-LoadLibraryA
-LoadLibraryExW
 LoadLibraryW
 LocalKeySet
-LocaleNameToLCID
 LqH!)8
 LsiX
 Ltc$
@@ -3652,7 +3368,6 @@ MIC-CLEAR
 MIC-ONLY
 MIME MHS
 MIME-Version: 1.0%s
-MM/dd/yy
 MM/dd/yyyy hh:mm:ss AP
 MODULE_INIT
 MODULE_LOAD_DSO
@@ -3668,7 +3383,6 @@ Mail
 Management
 Mask Algorithm: 
 Mc]T=
-MessageBoxW
 Microsoft CSP Name
 Microsoft Commercial Code Signing
 Microsoft Encrypted File System
@@ -3691,7 +3405,6 @@ Modulus:
 Mq~h
 MrFW
 Mtb\t4
-MultiByteToWideChar
 Music
 M}8vhJ
 N!vh
@@ -3706,8 +3419,6 @@ N?greenF@QColor@@QEBANXZ
 N?height@QImage@@QEBAHXZ
 N?height@QPixmap@@QEBAHXZ
 NAME_CONSTRAINTS
-NAN(IND)
-NAN(SNAN)
 NCONF_dump_bio
 NCONF_dump_fp
 NCONF_get_number
@@ -3757,7 +3468,6 @@ N[iY
 N\v7e_
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 N`UaK
-NavSystem001
 Negev
 NetApiBufferFree
 NetStatisticsGet
@@ -3875,7 +3585,6 @@ OPENSSL_ia32cap
 OPENSSL_init
 OPENSSL_malloc Error
 OTHERNAME
-OZQ%
 O\r5x
 O_yG|
 Oa?width@QImage@@QEBAHXZ
@@ -4147,7 +3856,6 @@ PUBLIC KEY
 PUT 
 Packed store %s with refcount > 0.\n
 Parameters
-PeekNamedPipe
 Peer haven't sent GOST certificate, required for selected ciphersuite
 Permanent Identifier
 Permission denied
@@ -4167,8 +3875,6 @@ Private-Key: (%d bit)\n
 Privilege Withdrawn
 Proc-Type: 
 Proc-Type: 4,
-Process32First
-Process32Next
 Proxy Certificate Information
 Public Key
 Public-Key
@@ -4191,11 +3897,8 @@ Qjh/T
 Qj{Jd
 QoOG
 Qpr2
-Qt5Core.dll
-Qt5Gui.dll
 Qt5Widgets.dll
 QtJ\f?
-QueryPerformanceCounter
 Q{qk
 R/Qs
 R2I_CERTPOL
@@ -4332,7 +4035,6 @@ RSA_verify
 RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
-RSDS
 R\fp4
 R\r1>Vp
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
@@ -4341,8 +4043,6 @@ Rbg.E
 Re-Upload
 Read-only file system
 ReadConsoleInputW
-ReadConsoleW
-ReadFile
 Ready
 Reasons
 Refresh
@@ -4350,7 +4050,6 @@ Refresh the view of published submissions
 RefreshFileBrowser
 RegisterEventSourceW
 Registered ID
-ReleaseSRWLockExclusive
 Remove From CRL
 ReportEventW
 Requesting %d/%d items from Steam...
@@ -4365,11 +4064,6 @@ Rg4I
 Rq[R
 RrBoN
 RtIF
-RtlCaptureContext
-RtlLookupFunctionEntry
-RtlPcToFileHeader
-RtlUnwindEx
-RtlVirtualUnwind
 RxT\f0<1
 Rxy3
 RzQU
@@ -4386,7 +4080,6 @@ S2I_ASN1_SKEY_ID
 S2I_SKEY_ID
 S2zw
 S8#w
-S9>H
 S<Fb
 S<hN-AO
 S?openUrl@QDesktopServices@@SA_NAEBVQUrl@@@Z
@@ -4438,7 +4131,6 @@ SMIME-CAPS
 SMIME_read_ASN1
 SMIME_read_PKCS7
 SMIME_text
-SNAN)
 SNMPv2
 SNtu
 SO~c
@@ -4560,7 +4252,6 @@ SXNET_add_id_ulong
 SXNET_get_id_asc
 SXNET_get_id_ulong
 SXNetID
-S\tV_qsort
 S\vQN
 Salt Length: 0x
 Sawed-Off Shotgun
@@ -4571,20 +4262,12 @@ Seed:
 Selected Attribute Types
 SendQueryUGCRequest() failed. Error=%d Result=%d\n
 Set encryption keys, will sign %s.\n
-SetConsoleCtrlHandler
 SetConsoleMode
-SetEndOfFile
-SetEnvironmentVariableW
-SetFilePointerEx
 SetGrowSize
-SetLastError
-SetStdHandle
-SetUnhandledExceptionFilter
 Show the Asset Browser
 Signature verification failed.
 Signed.\n
 Signing keys are set, will attempt to sign vpk.\n
-SleepConditionVariableSRW
 Sn^G
 SortKey_t
 Spy Tech
@@ -4602,8 +4285,6 @@ Suite B: invalid public key algorithm
 Suite B: invalid signature algorithm
 Superseded
 SystemFunction036
-SystemTimeToFileTime
-SystemTimeToTzSpecificLocalTime
 T*8U
 T0.S
 T61STRING
@@ -4677,13 +4358,10 @@ TS_TST_INFO_set_tsa
 TS_VERIFY
 TS_VERIFY_CERT
 TS_VERIFY_CTX_new
-TUUUU
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 TXJw^{
 TYPE=
-T\tV_qsort_s
 Tec-9
-TerminateProcess
 This is an S/MIME signed message%s%s
 Thread32First
 Thread32Next
@@ -4692,10 +4370,6 @@ Time Stamp signing
 Time Stamping
 Title
 Title: "
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 Too many links
 Too many open files
 Too many open files in system
@@ -4732,23 +4406,19 @@ UNDEF
 UNIV
 UNIVERSALSTRING
 URI:%s
-USER32.dll
 USERNOTICE
 USP-S
 UTCTIME
-UTF-16LEUNICODE
 UTF8
 UTF8STRING
 UTF8String
-UUUUUU
 UUUUUUUUUUUUUU<o(
 UUUUUUUUUUUa\f\v
 U^?supportedImageFormats@QImageReader@@SA?AV?$QList@VQByteArray@@@@XZ
 U^Pg
 Ugi<
 Unable to delete the workshop item from Steam!
-UnhandledExceptionFilter
-Unknown exception
+Unknown error
 Unknown version %d for vpk %s
 Unprocessed type %d\n
 Unspecified
@@ -4847,7 +4517,6 @@ WOCR
 WP4$!
 WRITE_PENDING
 WRw[
-WS2_32.dll
 WSASTARTUP
 WSAStartup
 WSAstartup
@@ -4857,21 +4526,16 @@ WTLS curve over a 160 bit prime field
 WTLS curvs over a 224 bit prime field
 WZTR
 W\noB
-WakeAllConditionVariable
 Wcr"
 We_A0
 Weapon Finish
 WfMD{
-WideCharToMultiByte
 Wingman
 Wmn|CH
 Wn4'
 WrgoI
-WriteConsoleW
-WriteFile
 Writing [%dx%d] preview image to: %s\n
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
-X/4B
 X400Name
 X400Name:<unsupported>
 X500
@@ -5086,7 +4750,6 @@ Z~wl
 [HEX DUMP]:
 [HTiW
 [OdP
-[aOni*{
 [f7@7F
 [fo@e
 [ve,P
@@ -5229,16 +4892,8 @@ Z~wl
 \tHAI8xpH\f
 \tJm_9
 \tLa0+
-\tV_vsnprintf
-\tWarning
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_binarytohex
-\t_V_strncmp
-\t_V_strncpy
-\t_V_strnicmp_fast
-\tcQr
-\tg_pMemAlloc
-\tkE>fvw
 \toRE
 \ttqE5
 \t}BzJ88
@@ -5265,7 +4920,6 @@ Z~wl
 ][LK~lO
 ]\r?horizontalOffset@QListView@@MEBAHXZ
 ^.om5r
-^<V7w
 ^DnJ
 ^DqPt
 ^J_spY
@@ -5278,20 +4932,6 @@ _Lx6
 _OPENSSL_isservice
 _YWL
 __IsValveCQTabbedStyle
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__stdcall
-__swift_1
-__swift_2
-__swift_3
-__thiscall
-__unaligned
-__vectorcall
 _bakeresourcecache
 _flt.vpk
 _g@Cg
@@ -5305,46 +4945,10 @@ _}eOk
 `DZG
 `H(hqA1p
 `ITS
-`RTTI
 `VX:H
-`anonymous namespace'
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
 `fPw.\vM
 `h9T~
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
 `o_je
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
 `yNT
 a null shared library handle was used
 a(hq
@@ -5380,10 +4984,10 @@ aSRP
 aXvC
 a]?xG
 aaControls
-abcdefghijklmnopqrstuvwxyz
 ac-auditEntity
 ac-proxying
 ac-targeting
+accept
 accept error
 acceptableResponses
 account
@@ -5392,11 +4996,7 @@ ad_timestamping
 add signer error
 adding object
 additional verification
-address family not supported
-address in use
-address not available
 address=
-advapi32.dll
 aes iv setup failed
 aes key setup failed
 aes(partial)
@@ -5446,8 +5046,8 @@ algor
 algorithm
 algorithm mismatch
 algorithms
-already connected
 already loaded
+always
 ansi-X9-62
 anyExtendedKeyUsage
 anyPolicy
@@ -5478,7 +5078,6 @@ associatedName
 attempt to reuse session in different context
 attrib
 attributes
-audio
 authAttrs
 auth_attr
 authority and issuer serial number mismatch
@@ -5532,7 +5131,6 @@ bad ecc cert
 bad ecdsa signature
 bad ecpoint
 bad end line
-bad exception
 bad fixed header decrypt
 bad fopen mode
 bad generator
@@ -5547,7 +5145,6 @@ bad length
 bad mac decode
 bad mac length
 bad magic number
-bad message
 bad message type
 bad object
 bad object header
@@ -5583,6 +5180,7 @@ bad value
 bad version number
 bad write retry
 bad x509 filetype
+base
 base64 decode error
 base64 encoding
 basicConstraints
@@ -5634,7 +5232,6 @@ brainpoolP384r1
 brainpoolP384t1
 brainpoolP512r1
 brainpoolP512t1
-broken pipe
 bt1+
 bu\N
 buffer
@@ -5672,7 +5269,6 @@ cNAMERecord
 cNUGK
 cRLSign
 c\r1m
-c\tV_snprintf
 c`FE%
 ca dn length mismatch
 ca dn too long
@@ -5812,11 +5408,7 @@ compressionAlgorithm
 configuration file routines
 conflicting engine id
 connect error
-connection aborted
-connection already in progress
 connection id is different
-connection refused
-connection reset
 connection type not set
 cons: 
 cont [ %d ]
@@ -5956,7 +5548,6 @@ d2i_TS_RESP
 d2i_X509_PKEY
 d35P
 d4\tp
-d8L2
 d=%-2d hl=%ld l=%4ld 
 d=%-2d hl=%ld l=inf  
 dAN"
@@ -5970,7 +5561,6 @@ dWry
 dZ!2.
 d[kHy 
 d_r_0
-data
 data between ccs and finished
 data greater than mod len
 data is wrong
@@ -5987,7 +5577,6 @@ date
 db("0
 dcObject
 dcobject
-dddd, MMMM dd, yyyy
 debug_malloc
 debug_malloc2
 decipherOnly
@@ -6019,7 +5608,6 @@ des-ede3-cfb8
 des-ede3-ofb
 des-ofb
 des3
-destination address required
 destinationIndicator
 desx
 desx-cbc
@@ -6137,14 +5725,11 @@ duplicate zone id
 dvcs
 dynamic
 dynlock
-e+000
 e+3E
 eBeL
 eC z
 eContent
 eContentType
-eF>t
-eLK(w
 eN.d\tA
 eNULL
 eODj
@@ -6308,6 +5893,7 @@ expecting an object
 expecting an rsa key
 expecting private key blob
 expecting public key blob
+experimental
 explicit
 explicit length mismatch
 explicit tag not constructed
@@ -6361,6 +5947,7 @@ fips mode not supported
 fips2
 first num too large
 first octet invalid
+fopen
 fopen('
 format error in CRL's lastUpdate field
 format error in CRL's nextUpdate field
@@ -6368,6 +5955,7 @@ format error in certificate's notAfter field
 format error in certificate's notBefore field
 forward
 fpnS
+fread
 freshestCRL
 friendlyCountry
 friendlyCountryName
@@ -6417,6 +6005,7 @@ generationQualifier
 generator:
 generic cryptogram
 geometry
+gethostbyname
 gethostbyname addr is not af inet
 getservbyname
 gf2m not supported
@@ -6444,7 +6033,6 @@ g|FeW\v
 g|MT
 h&eC
 h*Ax
-h0'D
 h0XB
 h2Wl
 h2n_\
@@ -6493,7 +6081,6 @@ holdInstructionNone
 holdInstructionReject
 homePostalAddress
 homeTelephoneNumber
-host unreachable
 houseIdentifier
 hr_H
 http request
@@ -6780,7 +6367,6 @@ idea-cfb
 idea-ecb
 idea-ofb
 identified-organization
-identifier removed
 idp mismatch
 if.F<h
 ifTK
@@ -6824,7 +6410,6 @@ inhibitPolicyMapping
 init failed
 initialization error
 initials
-inity
 input not initialized
 input not reduced
 int_dhvparams
@@ -6927,7 +6512,6 @@ invalid trust
 invalid universalstring length
 invalid utf8string
 invalid x931 digest
-invalid_parameter
 invalidityDate
 ioctlsocket
 ipsec3
@@ -6996,7 +6580,6 @@ k26C*
 k8\vD
 k8fo
 k8xA
-k=yI
 kDHE
 kDHd
 kDHr
@@ -7104,7 +6687,6 @@ loading cert dir
 loading defaults
 localKeyID
 localityName
-location
 locator
 m&9W
 m*Zu
@@ -7113,14 +6695,12 @@ m>FC*a7H
 m>gh
 mAFr
 mDJe
-mG4>
 mK1f
 mK<v
 mOD:V
 mS'7
 mXRecord
 mZKB
-m\nXo
 m\ta=\ruWb
 ma\v\r01!
 mac absent
@@ -7162,12 +6742,10 @@ message digest
 message digest is null
 message extensions
 message imprint mismatch
-message size
 message too long
 messageDigest
 messagedigest attribute wrong length
 messagedigest wrong length
-method
 method not supported
 mgf1
 mgf1 with sha1 (default)
@@ -7232,7 +6810,6 @@ multiple sgc restarts
 mzP"T
 n < (int)sizeof(ctx->enc_data)
 n does not equal p q
-n03>Pu
 n0?X
 n1Z 
 n5cM
@@ -7245,7 +6822,6 @@ nStf,a
 nSw}Z\tu
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 n\r2S
-n\tV_stricmp_fast
 n`3i
 name constraints minimum and maximum not supported
 name too long
@@ -7256,8 +6832,6 @@ name=
 nameAssigner
 nameConstraints
 named_curve
-nan(ind)
-nan(snan)
 nbio connect error
 ne[9
 need new setup values
@@ -7265,9 +6839,6 @@ need one signer
 need organization and numbers
 nested asn1 error
 nested asn1 string
-network down
-network reset
-network unreachable
 newer crl not newer
 nextUpdate
 nextupdate before thisupdate
@@ -7277,7 +6848,6 @@ nkey <= EVP_MAX_KEY_LENGTH
 nmI\n8
 nmvos^\n
 no accept port specified
-no buffer space
 no cert set for us to verify
 no certificate assigned
 no certificate returned
@@ -7320,15 +6890,12 @@ no issuer details
 no key
 no key or cert
 no key set
-no link
 no load function
 no matching choice type
 no matching digest
 no matching digest type found
 no matching recipient
 no matching signature
-no message
-no message available
 no method specified
 no msgsigdigest
 no multipart body failure
@@ -7344,7 +6911,6 @@ no private key
 no private key assigned
 no private value
 no privatekey
-no protocol option
 no protocols available
 no proxy cert policy language defined
 no public exponent
@@ -7368,7 +6934,6 @@ no signers
 no solution
 no srtp profiles
 no start line
-no stream resources
 no subject details
 no such engine
 no such file
@@ -7391,13 +6956,10 @@ nonce mismatch
 nonce not returned
 not a NIST prime
 not a signed receipt
-not a socket
 not a square
-not a stream
 not a supported NIST prime
 not ascii format
 not basic response
-not connected
 not dek info
 not encrypted
 not encrypted data
@@ -7459,7 +7021,6 @@ object
 object identifier routines
 object not ascii format
 objsign
-obwQ4
 ocsphelper
 od?;7y
 odMsh
@@ -7479,20 +7040,14 @@ onlyattr
 onlysomereasons
 onlyuser
 opaque PRF input too long
+opendir
 openssl.cnf
 openssl_conf
-operation canceled
-operation in progress
 operation not allowed in fips mode
 operation not defined
-operation not supported
 operation not supported for this keytype
 operation not supported on this type
-operation would block
 operaton not initialized
-operator "" 
-operator co_await
-operator<=>
 optionalSignature
 orOF
 order
@@ -7520,9 +7075,7 @@ othername
 othername error
 othername:<unsupported>
 out of memory
-owM&
 owner
-owner dead
 p is not prime
 p not prime
 p!PcA1|
@@ -7702,9 +7255,7 @@ privilegeWithdrawn
 problems getting password
 problems mapping cipher functions
 producedAt
-protocol error
 protocol is shutdown
-protocol not supported
 protocolInformation
 provide parameters
 proxy certificates not allowed, please set the appropriate flag
@@ -7733,7 +7284,6 @@ publicKey
 public_key
 publish_time
 publish_time_readable
-purecall
 pvk data too short
 pvk too short
 pzKD)
@@ -7774,14 +7324,12 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
-r\tVr.>T
 r\vDi
 r\vp4
 rand
 rand2
 random number generation failed
 random number generator
-range check failure
 rc2-40-cbc
 rc2-64-cbc
 rc2-cbc
@@ -7838,7 +7386,6 @@ responseExtensions
 responseStatus
 responseType
 responses
-restrict(
 result too large
 result too small
 retransmit:  message %d non-existant\n
@@ -8177,9 +7724,9 @@ smimeencrypt
 smimesign
 sm{c
 sn_d.
-snan)
 snmpv2
 so=H*m
+socket
 spkac
 srtp could not allocate profiles
 srtp protection profile list too long
@@ -8322,20 +7869,15 @@ sslv3 alert unexpected message
 sslv3 alert unsupported certificate
 sslv3 rollback attack
 stLDp
-stack buffer overrun (/GS failure)
-state not recoverable
 stateOrProvinceName
 status expired
 status not yet valid
 status too old
-steam_api64.dll
 store
 store init error
-stream timeout
 streaming not supported
 street
 streetAddress
-string too long
 string too short
 string=
 string_to_hex
@@ -8393,7 +7935,6 @@ tdYv
 telephoneNumber
 teletexTerminalIdentifier
 telexNumber
-text file busy
 text/plain
 text:
 textEncodedORAddress
@@ -8404,12 +7945,10 @@ the meth_data stack is corrupt
 there must be one signer
 thisUpdate
 thread=%lu, 
-tier0.dll
 time not ascii format
 time stamp routines
 time syscall error
 timeStamping
-timed out
 timestampsign
 title
 tls client cert req with anon cipher
@@ -8449,7 +7988,6 @@ token present
 too large
 too long
 too many iterations
-too many symbolic link levels
 too many temporary variables
 tools_asset_info.bin
 tools_thumbnail_cache.bin
@@ -8646,13 +8184,11 @@ userNotice
 userPassword
 utf8only
 uxX/
-uzKs@>
 v'A>M6
 v)56
 v0o/5
 v1(0)
 v1GZ
-v2!L.2
 v2i_ASN1_BIT_STRING
 v2i_GENERAL_NAMES
 v2i_GENERAL_NAME_ex
@@ -8668,7 +8204,6 @@ v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 valid
 validity
 value missing
-value too large
 value.bag
 value.byKey
 value.byName
@@ -8748,7 +8283,6 @@ wrong message type
 wrong number of key bits
 wrong order
 wrong pkcs7 type
-wrong protocol type
 wrong public key type
 wrong signature length
 wrong signature size

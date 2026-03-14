@@ -2758,6 +2758,9 @@ cv_bot_ai_bt_hiding_spot_show false (gamedll replicated cheat)
 cv_bot_ai_bt_moveto_show_next_hiding_spot false (gamedll replicated cheat)
 	Draw the hiding spot the bot will check next.
 
+d3d_max_feature_level "<Not set>" (developmentonly defensive)
+	Report the maximum D3D feature level available.
+
 damage_impact_heavy 40 (developmentonly clientdll defensive)
 	Damage ABOVE this value is considered heavy damage
 
@@ -3113,9 +3116,6 @@ engine_show_frame_pacing false (release)
 	<no description>
 
 engine_show_frame_ticks false (developmentonly defensive)
-	<no description>
-
-engine_sleep_busy_waits false (developmentonly)
 	<no description>
 
 engine_sse42 true (developmentonly defensive)
@@ -6552,6 +6552,9 @@ particle_cluster_nodraw false (developmentonly gamedll clientdll replicated defe
 particle_cluster_use_collision_hulls true (developmentonly gamedll clientdll replicated defensive)
 	<no description>
 
+particle_debug_creation_filter "" (developmentonly clientdll hidden replicated defensive)
+	<no description>
+
 particle_test_attach_attachment 0 (gamedll cheat)
 	Attachment index for attachment mode
 
@@ -6852,9 +6855,6 @@ r_RainParticleDensity 1 (developmentonly clientdll defensive)
 r_add_views_in_pre_output false (developmentonly defensive)
 	<no description>
 
-r_allow_low_gpu_memory_mode true (release)
-	Allow Low GPU Memory mode (i.e. when building maps).
-
 r_allow_onesweep_gpusort true (developmentonly defensive)
 	<no description>
 
@@ -6887,9 +6887,6 @@ r_async_shader_compile_notify_frequency 10 (developmentonly)
 
 r_bloom_tent_filter_radius 3.1 (developmentonly clientdll cheat)
 	bloom mip up-sample filtering radius (using 3x3 tent filter, radius in mip level texels), 0.0 radius => box (2x2) filter with (fixed) 1.0 radius
-
-r_cache_pool_allocations true (developmentonly)
-	<no description>
 
 r_character_decal_monitor_draw_frustum false (developmentonly)
 	<no description>
@@ -7362,6 +7359,12 @@ r_dopixelvisibility true (cheat)
 r_draw3dskybox true (developmentonly clientdll defensive)
 	<no description>
 
+r_draw_first_tri_only false (cheat)
+	<no description>
+
+r_draw_instances true (cheat)
+	<no description>
+
 r_draw_overlays true (developmentonly defensive)
 	<no description>
 
@@ -7403,6 +7406,12 @@ r_drawviewmodel true (clientdll cheat)
 
 r_drawworld true (cheat)
 	Render the world.
+
+r_dx11_debug_clean false (release)
+	Aggressively unbind bound resources to cleanup DX11 debug warnings.
+
+r_dx11_software_cmd_lists true (developmentonly defensive)
+	Enable Software Command lists for DX11 (Avoid using deferred contexts)
 
 r_enable_rigid_animation false (developmentonly clientdll)
 	<no description>
@@ -7481,6 +7490,9 @@ r_flashlightvisualizetrace false (clientdll cheat)
 
 r_flush_on_pooled_ib_resize true (release)
 	<no description>
+
+r_force_no_present false (cheat)
+	Force the render device to not present frames.
 
 r_force_render_frame_count 5 (developmentonly)
 	The number of frames to render when a
@@ -7629,6 +7641,9 @@ r_indirectlighting true (cheat)
 r_late_particle_job_sync false (developmentonly clientdll defensive)
 	<no description>
 
+r_legacy_vsync false (developmentonly hidden defensive)
+	Use legacy vsync mode -- for testing for a couple user machines.
+
 r_light_flickering_enabled true (developmentonly gamedll clientdll replicated defensive)
 	<no description>
 
@@ -7679,12 +7694,6 @@ r_mapextents 16384 (clientdll cheat)
 
 r_max_texture_pool_size 0 (developmentonly defensive)
 	Upper limit on texture pool size.
-
-r_memory_aliasing true (developmentonly)
-	Allow disabling memory aliasing in the device memory pool.  This is just intended for testing/ruling out aliasing issues.
-
-r_mipgen_compute_shader true (developmentonly defensive)
-	Use compute shader for mipgen.
 
 r_mixed_shadows_fade_in_time 0.5 (developmentonly gamedll clientdll replicated defensive)
 	<no description>
@@ -7737,6 +7746,18 @@ r_particle_shadows_compute true (clientdll release)
 r_particle_timescale 0 (reference)
 	<no description>
 
+r_pipeline_stats_command_flush false (developmentonly defensive)
+	Experimental: Set to 1 to enable full GPU pipeline flushing after each command list.
+
+r_pipeline_stats_flush_before_sleeping false (developmentonly defensive)
+	Experimental: Set to 1 to enable GPU pipeline flushes right before the render thread sleeps to wait for more work.
+
+r_pipeline_stats_present_flush false (developmentonly defensive)
+	Experimental: Set to 1 to enable full GPU pipeline flushing after each present.
+
+r_pipeline_stats_use_flush_api true (developmentonly defensive)
+	Experimental: Set to 1 to use the ID3D11DeviceContext11::Flush() to flush the GPU pipeline instead of queries.
+
 r_pixelvisibility_partial true (cheat)
 	<no description>
 
@@ -7760,9 +7781,6 @@ r_player_visibility_strength 1.1 (developmentonly clientdll cheat)
 
 r_post_bloom_debug 0 (developmentonly clientdll)
 	1 = bloom output (before thresholding), 2 = quarter res downsample, 3 = quarter res effects bloom 4 = quarter res effects raw
-
-r_prefer_loop_unrolling true (developmentonly defensive)
-	Prefer shader loop unrolling.
 
 r_propsmaxdist 1200 (developmentonly clientdll defensive)
 	Maximum visible distance
@@ -7811,9 +7829,6 @@ r_shadowtile_waveops false (reference)
 
 r_show_build_info true (clientdll archive release)
 	Build information. Leave this enabled when submitting bug screenshots and videos, please!
-
-r_show_gpu_memory_visualizer false (developmentonly cheat menubar_item)
-	SceneSystem/Vulkan GPU Memory Visualizer
 
 r_show_time_info false (clientdll release)
 	Show real time, large.
@@ -7867,6 +7882,9 @@ r_ssao_strength 1.2 (developmentonly defensive)
 	<no description>
 
 r_strip_invisible_during_sceneobject_update false (developmentonly clientdll defensive)
+	<no description>
+
+r_suppress_redundant_state_changes true (developmentonly defensive)
 	<no description>
 
 r_test1_maximum_wait_ms 10 (clientdll release)
@@ -7950,47 +7968,23 @@ r_threaded_particles false (reference)
 r_threaded_scene_object_update true (developmentonly clientdll defensive)
 	<no description>
 
+r_timestamp_query_multiplier 1 (developmentonly defensive)
+	Set the TIMESTAMP query cycle multiplier, for drivers that lie
+
 r_translucent true (cheat)
 	Enable rendering of translucent geometry
 
 r_update_particles_on_render_only_frames false (developmentonly clientdll defensive)
 	<no description>
 
+r_use_memory_budget_model false (developmentonly defensive)
+	Use a model of GPU memory use to determine budget rather than querying the OS.
+
 r_validate_texture_streaming false (developmentonly defensive)
 	Dumps state of texture streaming at the next frame boundary.
 
 r_vconsole_foregroundforcerender true (developmentonly defensive)
 	When VConsole is in the foreground, force all engine & tools to render
-
-r_vma_defrag_algorithm 1 (developmentonly)
-	Defrag algorithm 0=Fast 1=Balanced 2=full 3=Extensive
-
-r_vma_defrag_enabled true (developmentonly)
-	<no description>
-
-r_vma_defrag_max_allocation_count_per_pass 256 (developmentonly)
-	During a VMA defrag, number of moves per pass.
-
-r_vma_defrag_max_allocation_size_per_pass 32 (developmentonly)
-	During a VMA defrag, number of MB in moves per pass.
-
-r_vma_defrag_moves_per_frame 20 (developmentonly)
-	During a VMA defrag, number of moves to process for a pass in a single frame update.
-
-r_vma_defrag_threshold_mb 256 (release)
-	<no description>
-
-r_vulkan_force_sync1 false (developmentonly)
-	<no description>
-
-r_vulkan_sw_cmd_lists true (release)
-	Enable Software Command lists for Vulkan
-
-r_vulkan_validation_filter_in "" (developmentonly)
-	Comma delimited list of stristr filters for including validation messages.  Only messages matching filter will be included.
-
-r_vulkan_validation_filter_out "" (developmentonly)
-	Comma delimited list of stristr filters for excluding validation messages.  Any messages matching filter will be excluded.
 
 r_wait_on_present false (developmentonly defensive)
 	<no description>
@@ -8127,6 +8121,9 @@ report_cliententitysim false (clientdll cheat)
 report_clientthinklist false (clientdll cheat)
 	List all clientside entities thinking and time - will report and turn itself off.
 
+report_connection_failure_percentage 0 (developmentonly defensive)
+	<no description>
+
 reset_voice_on_input_stallout false (userinfo)
 	If true, resets the input device when there was a long enough hitch between callbacks.
 
@@ -8180,12 +8177,6 @@ rr_followup_maxdist 1800 (gamedll cheat)
 
 rr_thenany_score_slop 0 (gamedll archive cheat)
 	When computing respondents for a 'THEN ANY' rule, all rule-matching scores within this much of the best score will be considered.
-
-rtx_allow_blas_compact true (developmentonly defensive)
-	<no description>
-
-rtx_allow_blas_create true (developmentonly defensive)
-	<no description>
 
 rtx_dynamic_blas true (developmentonly defensive)
 	Allow dynamic BLAS creation for geometry going through the compute shader skinning path.
@@ -11518,24 +11509,6 @@ vprof_scope_entity_thinks false (developmentonly gamedll clientdll replicated de
 	<no description>
 
 vprof_think_limit false (developmentonly gamedll defensive)
-	<no description>
-
-vulkan_batch_size 500 (developmentonly defensive)
-	<no description>
-
-vulkan_batch_submits true (developmentonly defensive)
-	<no description>
-
-vulkan_dedicated_allocation_threshold 512 (developmentonly defensive)
-	Size (in KBs) above which textures should be allocated in dedicated memory (NV-only).
-
-vulkan_link_time_optimize_libraries true (release)
-	<no description>
-
-vulkan_pipeline_compile_spew false (developmentonly defensive)
-	<no description>
-
-vulkan_pipeline_compile_throttle_ms 0 (developmentonly defensive)
 	<no description>
 
 weapon_accuracy_forcespread 0 (gamedll clientdll replicated release)

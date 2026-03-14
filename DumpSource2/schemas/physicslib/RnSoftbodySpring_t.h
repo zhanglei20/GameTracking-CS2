@@ -1,8 +1,8 @@
 // MGetKV3ClassDefaults = {
 //	"m_nParticle":
 //	[
-//		0,
-//		0
+//		61888,
+//		43901
 //	],
 //	"m_flLength": 0.000000
 //}

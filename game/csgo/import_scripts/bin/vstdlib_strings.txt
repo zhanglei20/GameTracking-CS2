@@ -1,27 +1,14 @@
-                          
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  ( def. "%s" )
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
- Type Descriptor'
  [%.3f server clamped to %.3f]
 "%s" = "%s"
 #D5p
 %-80s - %.80s\n
 %i %i %i %i
 %s: [ %p ]\n
-&Sgw
 ( 8PX
-(null)
 -threads
-.00cfg
-.?AV?$CBaseAppSystem@VICvar@@@@
 .?AV?$CBaseAppSystem@VICvarQuery@@@@
 .?AV?$CBaseAppSystem@VIEventSystem@@@@
-.?AV?$CBaseAppSystem@VIProcessUtils@@@@
-.?AV?$CConCommandMemberAccessor@VCCvar@@@@
 .?AV?$CDefaultTSHashConstructor@VCEventId@@@@
 .?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CRefCountServiceBase@$00VCRefMT@@@@
@@ -32,101 +19,32 @@
 .?AV?$CTier1AppSystem@VIEventSystem@@$0A@@@
 .?AV?$CTier1AppSystem@VIProcessUtils@@$0A@@@
 .?AV?$ITSHashConstructor@VCEventId@@@@
-.?AVCAsyncScheduledFunctionManager@@
 .?AVCCVarIteratorInternal@CCvar@@
-.?AVCCountJob@ThreadPoolTest@@
-.?AVCCvar@@
 .?AVCDefaultAccessor@@
 .?AVCDefaultCvarQuery@@
-.?AVCDisposableKeyValuesSystem@@
 .?AVCDummyJob@?1??GetDummyJob@CThreadPool@@EAEPAVCJob@@XZ@
 .?AVCEmptyConVar@@
 .?AVCEventSystem@@
 .?AVCExecuteTestExecuteJob@ThreadPoolTest@@
 .?AVCExecuteTestJob@ThreadPoolTest@@
 .?AVCFunctorJob@@
-.?AVCGlobalThreadPool@@
 .?AVCJob@@
-.?AVCJobThread@@
-.?AVCKeyValuesSystem@@
-.?AVCKeyValuesSystemBase@@
 .?AVCMemoryStack@@
-.?AVCProcess@@
-.?AVCProcessPipeRead@@
-.?AVCProcessUtils@@
 .?AVCSplitScreenAddedConVar@@
-.?AVCThread@@
-.?AVCThreadPool@@
 .?AVCUniformRandomStream@@
-.?AVCUtlCStringConversion@@
-.?AVCUtlCharConversion@@
-.?AVCUtlNoEscConversion@@
 .?AVCWorkerThread@@
-.?AVConCommand@@
 .?AVConCommandBase@@
 .?AVConVar@@
 .?AVConVar_ServerBounded@@
-.?AVIAppSystem@@
-.?AVIAsyncScheduledFunctions@@
 .?AVICVarIteratorInternal@ICvar@@
-.?AVICommandCallback@@
-.?AVICommandCompletionCallback@@
 .?AVIConCommandBaseAccessor@@
 .?AVIConVar@@
-.?AVICvar@@
 .?AVICvarQuery@@
 .?AVIEventSystem@@
-.?AVIKeyValuesSystem@@
 .?AVIMemoryInfo@@
-.?AVIPipeRead@@
-.?AVIProcess@@
-.?AVIProcessUtils@@
-.?AVIRefCounted@@
-.?AVIThreadPool@@
 .?AVIUniformRandomStream@@
-.?AV__non_rtti_object@std@@
-.?AVbad_cast@std@@
-.?AVbad_typeid@std@@
-.?AVexception@std@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.data
-.data$r
-.edata
 .gfids$x
 .gfids$y
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.rdata
-.rdata$r
-.rdata$zzzdbg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$yd
-.xdata$x
-1#IND
-1#INF
-1#QNAN
-1#SNAN
 2ieO=
 4g%6
 5M[g
@@ -135,12 +53,10 @@
 700WP
 <8bunz8
 <@En[vP
-=87M
 ?3xj
 ?5Wg4p
 ?5a1
 ?7Tf(
-?8bunz8
 ??0CGaussianRandomStream@@QAE@$$QAV0@@Z
 ??0CGaussianRandomStream@@QAE@ABV0@@Z
 ??0CGaussianRandomStream@@QAE@PAVIUniformRandomStream@@@Z
@@ -161,7 +77,6 @@
 ??4CUniformRandomStream@@QAEAAV0@ABV0@@Z
 ??_7CUniformRandomStream@@6B@
 ??_FCGaussianRandomStream@@QAEXXZ
-?@En[vP
 ?AttachToStream@CGaussianRandomStream@@QAEXPAVIUniformRandomStream@@@Z
 ?CallWorker@CWorkerThread@@QAEHII_N@Z
 ?Check@CThreadEvent@@QAE_NXZ
@@ -211,15 +126,11 @@
 ?pEly
 ?{fHn
 @VNQ
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Access violation - no RTTI data!
 AddMemoryInfoCallback
 Ai0T
 AiFC.
 Attempted to add job to job queue that has already been completed\n
-Bad dynamic_cast!
 Bfe9
-CAsyncScheduledFunctionManager::Init
 CCvar::FindCommandBase
 CKeyValuesSystem::m_HashItemMemPool
 CMemoryStack unattributed
@@ -232,12 +143,10 @@ CUtlFixedMemory overflow!\n
 CUtlLinkedList overflow! (exhausted memory allocator)\n
 CUtlRBTree overflow!\n
 Cannot add a thread job already committed to another thread pool\n
-CloseHandle
 ConVar(%s) defined with infinite float value (%s)\n
 ConVarRef %s doesn't point to an existing ConVar\n
 Convar %s has conflicting %s flags (child: %s%s, parent: %s%s, parent wins)\n
 Convar %s has multiple help strings:\n\tparent (wins): "%s"\n\tchild: "%s"\n
-CorExitProcess
 Coroutine_Cancel
 Coroutine_DebugAssert
 Coroutine_DebugBreak
@@ -246,132 +155,55 @@ Coroutine_IsActive
 Coroutine_ReleaseThreadMemory
 Coroutine_ValidateGlobals
 Could not execute the command:\n   %s\nWindows gave the error message:\n   "%s"\n
-Could not read from pipe associated with command %s\nWindows gave the error message:\n   "%s"\n
 CqTR;
-CreateFileW
-CreatePipe
-CreateProcessA
 Cvar_Find
 DebugTextureInfo001
-DecodePointer
 Defaulting to limit of 3 worker threads, use -threads on command line if want more\n
-DeleteCriticalSection
-DuplicateHandle
 Eb2]A=
-EnterCriticalSection
 EventSystem001
-ExitProcess
 F0$?3=1
 FCVAR_ARCHIVE_GAMECONSOLE
 FCVAR_NEVER_AS_STRING
-FEMh\f
-FindClose
 FindFirstFileExA
 FindNextFileA
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 FmtStrVSNPrintf truncated to %d without QUIET_TRUNCATION specified!\n
 Forced execute test failed!\n
-FormatMessageA
-FreeEnvironmentStringsW
-FreeLibrary
 GAMECONSOLEGUEST
 GAMECONSOLESPLITSCREEN
 GYM=
 GameUISystemMgr001
-GetACP
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetEnvironmentStringsW
-GetExitCodeProcess
-GetFileType
-GetLastError
-GetModuleFileNameA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessAffinityMask
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemInfo
-GetSystemTimeAsFileTime
-HH:mm:ss
 Ht=c
 IMEManager001
-IND)ind)
-INITY
 IOJob
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
 InstallChangeCallback called with NULL callback, ignoring!!!\n
 InstallChangeCallback ignoring duplicate change callback!!!\n
 InstallUniformRandomStream
-InterlockedFlushSList
-IsDebuggerPresent
-IsProcessorFeaturePresent
-IsValidCodePage
-KERNEL32.dll
-LCMapStringEx
-LCMapStringW
 La8i
 Le?2
-LeaveCriticalSection
-LoadLibraryA
-LoadLibraryExW
-LocaleNameToLCID
 Lyc>=
 MDLCache004
-MM/dd/yy
 MatSystemSurface006
 MaterialSystemHardwareConfig013
 MkK?
-MultiByteToWideChar
-NAN(IND)
-NAN(SNAN)
-PeekNamedPipe
 Perf warning: Forgot to unregister listeners on event queue %p\n
 Pex?0
 Physics2 Interface ActorMgr v0.1
 Physics2 Interface ResourceMgr v0.1
 Physics2 Interface v0.3
-QueryPerformanceCounter
 QueuedLoaderVersion001
-RSDS
-ReadFile
 RemoveMemoryInfoCallback
 RenderDevice001
 RenderHardwareConfig001
 RenderSystemSurface001
 ResourceSystem004
-RtlUnwind
-SNAN)
 STAR_System001
 SceneSystem_001
 ServiceJobAndRelease ExecuteInternal
-SetFilePointerEx
-SetLastError
-SetStdHandle
 SetThreadIdealProcessor
-SetUnhandledExceptionFilter
 TURKISH
-TerminateProcess
 TestForcedExecute DONE\n
 TestForcedExecute\n
-ThreadGetPriority
 ThreadInterlockedAssignIf64
 ThreadPoolTest:         %d threads -- %d (%d) jobs processed in %fms, %fms to suspend (%f/%f) [ (main) %d, %d, %d, %d, %d, %d, %d, %d, %d]\n
 ThreadPoolTest:         Testing! Sleep %d, interleave %d, prioritized %d \n
@@ -380,17 +212,10 @@ ThreadPoolTest:     Distribute\n
 ThreadPoolTest:     Non-distribute\n
 ThreadSetAffinity
 ThreadSetDebugName
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 Too many arguments, sorry\n
 Tried to install the same listener on the same event id + queue twice!\n
 Tried to look up command %s as if it were a variable.\n
 T~OXu
-UUUUU
-UnhandledExceptionFilter
-Unknown exception
 VBAllocTracker001
 VCvarQuery001
 VDataCache003
@@ -418,117 +243,37 @@ V_UTF8ToUnicode
 V_UTF8_strncpy
 V_UnicodeToUCS2
 V_UnicodeToUTF8
-VirtualAlloc
-VirtualFree
 WARNING: unable to link %s and %s because one or more is a ConCommand.\n
-WaitForSingleObject
 Warning:  %s = '%s' is infinite, clamping value.\n
-WideCharToMultiByte
 WorkerThread ServiceJobAndRelease
-WriteConsoleW
-WriteFile
 WriteMiniDump
-X/4B
 X4I+
-[aOni*{
 \fO4W
-\tcQr
-^<V7w
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__stdcall
-__thiscall
-__unaligned
-__vectorcall
-_cabs
-_hypot
-_logb
-_nextafter
-`RTTI
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
 aDJ=
-abcdefghijklmnopqrstuvwxyz
 c:\buildslave\csgo_trunk_win32\build\src\public\tier0/tslist.h
 c:\buildslave\csgo_trunk_win32\build\src\vstdlib\Release\vstdlib.pdb
 c?e2
-ceil
-d8L2
-dddd, MMMM dd, yyyy
-e+000
-eLK(w
-fabs
-fmod
+cvar.cpp
 g_ClockSpeedMillisecondsMultiplier
 g_VCoverage
 g_tm_api
-h0'D
 hI{L[
 hb?O2
-inity
 jobthread.cpp
 k:UG
-k=yI
-kernel32.dll
 ls1=
 lzZ?
 m1WY$
-m\nXo
-nan(ind)
-nan(snan)
+mempool.cpp
 notconnected
 np?z 
-obwQ4
-operator "" 
-owM&
 pnJ=
 r7Yr7=
-restrict(
 sU0&?W
-snan)
 ss_added
 tLVv
-tier0.dll
 u?^p?o4
 uXO=
-v2!L.2
 vstdlib.dll
 xpxxxx
 z*va

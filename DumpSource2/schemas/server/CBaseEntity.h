@@ -98,7 +98,7 @@ class CBaseEntity : public CEntityInstance
 	CUtlSymbolLarge m_iszDamageFilterName;
 	float32 m_flMoveDoneTime;
 	// MNetworkEnable
-	// MNetworkSendProxyRecipientsFilter = "(NULL)"
+	// MNetworkSendProxyRecipientsFilter = "SubclassID_RecipientsFilter"
 	CUtlStringToken m_nSubclassID;
 	// MNetworkEnable
 	// MNetworkPriority = 0
@@ -108,7 +108,7 @@ class CBaseEntity : public CEntityInstance
 	// MNetworkEnable
 	// MNetworkPriority = 1
 	// MNetworkSerializer = "simulationTimeSerializer"
-	// MNetworkSendProxyRecipientsFilter = "(NULL)"
+	// MNetworkSendProxyRecipientsFilter = "SendProxyNoPlayerEntities_RecipientsFilter"
 	float32 m_flSimulationTime;
 	// MNetworkEnable
 	GameTime_t m_flCreateTime;
