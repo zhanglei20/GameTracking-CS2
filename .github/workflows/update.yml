@@ -30,3 +30,4 @@ jobs:
           appid: 730
           run-on-windows: true
           reset-gametracking: ${{ inputs.reset-gametracking }}
+          dumpsource2-schema-json: "cs2"

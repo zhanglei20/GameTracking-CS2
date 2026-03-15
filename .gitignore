@@ -16,6 +16,7 @@ Protobufs/google/
 *.mdmp
 exceptions.txt
 steam_buildid.txt
+DumpSource2/schemas.json
 
 # Ignore all translations
 **/*_arabic*.txt
