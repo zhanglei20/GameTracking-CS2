@@ -3834,7 +3834,6 @@ Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
 Custom Color
 Custom Colors
-DEFAULT
 DELETE
 DRAG_HANDLE
 D\tV_log2f
@@ -4302,7 +4301,6 @@ Lerp Vector
 Lerp World Vector
 Less R%d <- R%d < R%d
 LessEq R%d <- R%d <= R%d
-LightRigType_t
 LightingControl
 LightmapUV
 LightmapUVW
@@ -4318,7 +4316,6 @@ M/dd/yyyy h:mm ap
 M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
 MATERIALTOFACESELECTION 
-MATERIAL_THUMBNAIL
 MAtomicTransfersAsPlainString
 MENU
 MMouse
@@ -4438,7 +4435,6 @@ NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
 NTH_CHILD
 NTH_LAST_CHILD
 NULL CELL 
-NUM_TYPES
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 Name Contains
 Natural
@@ -4755,7 +4751,6 @@ P?item@QStandardItemModel@@QEBAPEAVQStandardItem@@HH@Z
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
 PORT
-PREVIEW
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 PackedBlobNormal
 Padding
@@ -5279,7 +5274,6 @@ T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
 T?prepare@QStaticText@@QEAAXAEBVQTransform@@AEBVQFont@@@Z
-THUMBNAIL
 TT?pixelSize@QFont@@QEBAHXZ
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 T\n?doubleClickInterval@QApplication@@SAHXZ

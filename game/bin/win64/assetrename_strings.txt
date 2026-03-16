@@ -14962,11 +14962,6 @@ ANDROID_VULKAN
 ANDROID_VULKAN_4_0
 ANDROID_VULKAN_4_1
 ANDROID_VULKAN_5_0
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Axis
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Line
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Pie
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Sphere
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Text
 ARRAY_MEMBERS_VIA_PARENT
 ARRAY_PARENT_ONLY
 ATTACHMENT_INFLUENCE_FLAGS_NONE
@@ -15527,10 +15522,8 @@ BestQualityScale
 Between the attribute label and editor
 Bias
 Bias to Center
-Binary
 Binary (deterministic sequential ids)
 Binary: Element uses unknown element type %s\n
-BinaryNodeTiming
 Bind Current Selection to This Bone
 Bind Pose Reference File
 BindIdentityInstanceIDBufferAndSetRenderState: GetMode == NULL? Can't Render\n
@@ -15735,7 +15728,6 @@ CAnimUpdateContextBuilder
 CAnimValue
 CAnimVariant
 CAnimationGraphInstance
-CAnimationGraphVisualizerPrimitiveType
 CAnimationLayer
 CAssetSelection
 CAssociateResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!\n
@@ -17327,7 +17319,6 @@ Creates an animation from the model's bind pose
 Criteria with nonliteral enabled state unsupported (%s)
 Cross Product Vector
 Cross Product of Vector a x Vector b
-Crossfade
 Crosshairs
 Cull Distance
 Cull Random
@@ -17416,12 +17407,6 @@ DblClick\n
 Deactivate %s
 Deactivate all instances
 Debug Draw Color
-Debug Hold Forward
-Debug Hold Left
-Debug Hold Up
-Debug X Axis Circle
-Debug Y Axis Circle
-Debug Z Axis Circle
 DebugVisGeometry
 DecompressTextureBits
 Default (No Name)
@@ -20797,20 +20782,6 @@ R?mapRect@QTransform@@QEBA?AVQRectF@@AEBV2@@Z
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RBF Based Anim Constraint
 REF NOT FOUND: 
-RENDER_PRIM_COMPUTE_SHADER
-RENDER_PRIM_HETEROGENOUS
-RENDER_PRIM_INSTANCED_QUADS
-RENDER_PRIM_LINES
-RENDER_PRIM_LINES_WITH_ADJACENCY
-RENDER_PRIM_LINE_STRIP
-RENDER_PRIM_LINE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_MESH_SHADER
-RENDER_PRIM_POINTS
-RENDER_PRIM_TRIANGLES
-RENDER_PRIM_TRIANGLES_WITH_ADJACENCY
-RENDER_PRIM_TRIANGLE_STRIP
-RENDER_PRIM_TRIANGLE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_TYPE_COUNT
 RIGHT
 RIGID
 ROTATION
@@ -20982,7 +20953,6 @@ RenderMeshList
 RenderMeshMarkup
 RenderPrimitiveBox
 RenderPrimitiveSphere
-RenderPrimitiveType_t
 Replace Asset doing FixupAssetRefsInternal for %s\n
 Replace Asset: %1
 Replace Materials
@@ -21127,13 +21097,6 @@ SGILogDataFmt
 SGILogEncode
 SMaxSampleValue
 SMinSampleValue
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Forward
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Left
-SOLVEIKCHAINANIMNODEDEBUGSETTING_None
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Up
-SOLVEIKCHAINANIMNODEDEBUGSETTING_X_Axis_Circle
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Y_Axis_Circle
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Z_Axis_Circle
 SSAOBias
 SSAORadius
 SSAOStrength
@@ -21514,7 +21477,6 @@ Soft Link
 Softbody
 Software
 Solid Collision at Zero Weight
-SolveIKChainAnimNodeDebugSetting
 Solved
 Solved Foot 
 Solved Knee
@@ -21743,8 +21705,6 @@ Swing Offset Angle
 Switch Threshold
 Symbol
 Symbol table:  %d entries %llu bytes\n
-SyncChildren
-Synchronize Children
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
 TAG_
@@ -22278,8 +22238,6 @@ Updating references to file: %s\n
 Use Best Size Match
 Use Block Solver
 Use Child Offset Attachment
-Use Child1
-Use Child2
 Use Curvature Drop
 Use Expensive Tangents
 Use Flat Color
@@ -22300,8 +22258,6 @@ Use UV2 for Lightmap Charting
 Use VPhysics
 Use a higher quality solver for this joint. Improves accuracy / stiffness but increases CPU cost.
 UseBaseVertex
-UseChild1
-UseChild2
 UseCustom
 UseFirstAnimationAsDefault
 UseRenderFarm

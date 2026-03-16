@@ -446,6 +446,11 @@ AMMO_POSITION_PRIMARY
 AMMO_POSITION_SECONDARY
 AMMO_RESERVE_STAYS_WITH_WEAPON
 AND
+ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Axis
+ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Line
+ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Pie
+ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Sphere
+ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Text
 ANIMATION_PROCESSING_CLIENT_INTERPOLATION
 ANIMATION_PROCESSING_CLIENT_PREDICTION
 ANIMATION_PROCESSING_CLIENT_RENDER
@@ -564,6 +569,8 @@ Add an IP address to the ban list.
 Add cluster # to visualization, (-1) to clear
 Add current area to the selected set.
 Add specified area id to the selected set.
+Add to Current Value Raw
+Add to Initial Value
 AddCorrectionDelta
 Additional amp on the depth dimension reflections.  Note negative numbers mean this feedback bypasses the filter (predelay).
 Additional amp on the height dimension reflections.  Note negative numbers mean this feedback bypasses the filter (predelay).
@@ -651,6 +658,7 @@ AllowFacingPitch
 AllowMoveX
 AllowMoveY
 AllowMoveZ
+AllowTransition
 Allows flipping the model, regardless of whether it is built left or right handed
 Allows players to drop grenades.
 Allows players to drop knives.
@@ -935,6 +943,7 @@ Away from closest point
 Axis around which the rotation will occur
 B
 BACKWARD_NORMAL
+BANNER
 BBOX_DIMENSIONS
 BBOX_MINS_MAXS
 BBOX_RADIUS
@@ -966,6 +975,7 @@ BOOL
 BRUSHSOLID_ALWAYS
 BRUSHSOLID_NEVER
 BRUSHSOLID_TOGGLE
+BUY_MENU
 Back
 Background Color
 Backplane distance
@@ -1008,7 +1018,9 @@ Bias relative to Entity
 Bias relative to Hitbox
 Biases the mip level the texture streaming system choses to stream for each texture.
 Bilinear
+Binary
 BinaryNodeChildOption
+BinaryNodeTiming
 Bind Pose
 Bind a key for a particular splitscreen player.
 Bind a key.
@@ -1069,6 +1081,7 @@ Block Selection Metric
 Block Tags from Waning States
 Block all communication from players on the enemy team.
 Block loading of the navmesh. Unplayable, only used for memory sampling.
+BlockTransition
 Blocked
 BloodType
 BloomBlendMode_t
@@ -1100,6 +1113,11 @@ BoneDemoCaptureSettings_t
 BoneMask
 BoneMaskBlendSpace
 BoneMaskID()
+BoneTransformSpace_Invalid
+BoneTransformSpace_Model
+BoneTransformSpace_Parent
+BoneTransformSpace_World
+BoneTransformSpace_t
 Bonemerge the player onto the entity under the crosshairs
 Bones
 Bool
@@ -1157,6 +1175,7 @@ Bypass secure challenge on TV port
 Bypasses lookup of soundscapes for indvidual audio sources when enabled.
 Bytecode instruction
 C
+C4LightEffect_t
 CAI_ChangeHintGroup
 CAI_Expresser
 CAI_ExpresserWithFollowup
@@ -1363,6 +1382,7 @@ CAnimationGraphVisualizerAxis
 CAnimationGraphVisualizerLine
 CAnimationGraphVisualizerPie
 CAnimationGraphVisualizerPrimitiveBase
+CAnimationGraphVisualizerPrimitiveType
 CAnimationGraphVisualizerSphere
 CAnimationGraphVisualizerText
 CAnimationGroup
@@ -2219,6 +2239,7 @@ CNmEventConsumerHudModelArmsAttributes
 CNmEventConsumerLegacy
 CNmEventConsumerParticle
 CNmEventConsumerSound
+CNmEventRelevance_t
 CNmExternalPoseNode::CDefinition
 CNmFixedWeightBoneMaskNode::CDefinition
 CNmFloatAngleMathNode::CDefinition
@@ -2399,6 +2420,7 @@ CNmGraphEventConditionNode::CDefinition
 CNmGraphEventConditionNode::Condition_t
 CNmGraphNode::CDefinition
 CNmGraphParameterArchetype
+CNmGraphParameterArchetype::EntryType_t
 CNmGraphVariationUserData
 CNmIDComparisonNode::CDefinition
 CNmIDComparisonNode::Comparison_t
@@ -2437,6 +2459,7 @@ CNmParameterizedBlendNode::Parameterization_t
 CNmParameterizedClipSelectorNode::CDefinition
 CNmParameterizedSelectorNode::CDefinition
 CNmParticleEvent
+CNmParticleEvent::Type_t
 CNmPassthroughNode::CDefinition
 CNmPoseNode::CDefinition
 CNmPoseTask
@@ -4238,6 +4261,8 @@ Clears the list of names to display text debugging information about the given e
 Clears the marked Area or Ladder.
 Clears the shader cache used for dynamic shader compile.
 Client Simulate
+ClientAndServer
+ClientOnly
 ClientSimulate
 Clientside physics push away (0=off, 1=only localplayer, 1=all players)
 Clip Data
@@ -4380,6 +4405,7 @@ Compute the vector between two 3D points
 Condition
 Condition to evaluate when any of its dependent values change.
 Conditionally Allowed
+ConditionallyAllowTransition
 ConditionallyAllowed
 Conditions
 ConfigIndex
@@ -4463,6 +4489,7 @@ CovMatrix3
 Crash the client. Optional parameter -- type of crash:\n 0: read from NULL\n 1: write to NULL\n 2: force an Assert\n 3: infinite loop\n 4: stack buffer overrun\n 5: multiple asserts across multiple threads. Optional number of threads (default 5)\n 6: looping memory leak until we're out of memory. Optional allocation size in bytes (default 1048576/1MB)
 Crawl height
 Crawl height of navigating agent capsules if enabled.
+Create
 Create Locator
 Create Rotator
 Create Sizer
@@ -4477,6 +4504,7 @@ Create a variable that can contain the name of a vsnd file that can be modified 
 Create multiple copies of a track at different volumes for processing or mixing separately.
 Create test character proxy
 CreatePredictionError
+Create_CFG
 Creates a bend deformer that is applied to child elements. The deformation bends the local space x-axis around the local space z-axis. The Angles property can be used to rotate the local axis to change the direction of deformation.
 Creates a dense field of delay/feedback/reflections.  This is basically a sequence of allpass filters and short delay lines.  Can be used to create part of a reverb effect.
 Creates a dlight in front of the player
@@ -4490,12 +4518,14 @@ Creates new cursors for when an animgraph tag is handled. Will listen until canc
 Creates the named particle system where the player is looking.\n\tArguments:   \t{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
 Cross Fade
 Cross Product
+Crossfade
 Crossfade Amount (0.0 = no crossfade, 1.0 = constant crossfading)
 Crossfade Time
 Crossfade time (seconds)
 Crouch
 Crouch height
 Crouch height of navigating agent capsules if enabled.
+Crouching
 Cubes
 Cubic
 Cull Lifetime
@@ -4530,6 +4560,7 @@ Cycles focus between the game window and undocked imgui windows
 Cyclic Coordinate Descent solver - A solver that can handle any number of bones and works by iteratively solving for the rotation of each bone in the chain.
 D
 DARRYL_DEFEAT
+DEFAULT
 DEFAULT_FORMAT_DMX
 DEFAULT_FORMAT_FBX
 DEFAULT_FORMAT_OBJ
@@ -4537,6 +4568,13 @@ DEFINE
 DEPLOYED
 DEPRICATED_EF_NOINTERP
 DETACH_REGISTER
+DETAIL_2_COMBO_ADD
+DETAIL_2_COMBO_ADD_SELF_ILLUM
+DETAIL_2_COMBO_CROSSFADE
+DETAIL_2_COMBO_MOD2X
+DETAIL_2_COMBO_MUL
+DETAIL_2_COMBO_OFF
+DETAIL_2_COMBO_UNINITIALIZED
 DETAIL_COMBO_ADD
 DETAIL_COMBO_ADD_SELF_ILLUM
 DETAIL_COMBO_MOD2X
@@ -4563,6 +4601,7 @@ DFLAG_SUPPRESS_PHYSICS_FORCE
 DFLAG_SUPPRESS_SCREENSPACE_DAMAGE_FX
 DFLAG_SUPPRESS_UTILREMOVE
 DIAMOND
+DIORAMA
 DISCARD
 DIV
 DIV_FLOAT
@@ -4599,6 +4638,7 @@ DOOR_CLOSED
 DOOR_CLOSING
 DOOR_OPEN
 DOOR_OPENING
+DOOR_ROTATING_OPEN_BOT
 DOOR_SPAWN_AJAR
 DOOR_SPAWN_CLOSED
 DOOR_SPAWN_OPEN_BACK
@@ -4659,12 +4699,18 @@ Dead players can hear all dead enemy communication (voice, chat)
 Dead players can speak (voice, text) to the living
 Debris
 Debug
+Debug Hold Forward
+Debug Hold Left
+Debug Hold Up
 Debug Name
 Debug Normalized Length
 Debug Offset
 Debug Setting
 Debug This Node
 Debug Traces
+Debug X Axis Circle
+Debug Y Axis Circle
+Debug Z Axis Circle
 Debug animation graph
 Debug bodygroups
 Debug bone name for interpolation spew of CAnimationState.
@@ -4774,6 +4820,7 @@ DestructiblePartDestructionDeathBehavior_t
 DestructiblePartDestructionRequest_t
 Detach From Owner
 Detail Prop Type
+Detail2Combo_t
 DetailCombo_t
 Detect from CP's Object
 Determines how many Zeus purchases a player can make per round (0 to disallow, -1 to have no limit).
@@ -5101,6 +5148,7 @@ EMaterialVariable_t
 EMaterialVariables_t
 EMidiNote
 EMode_t
+END_OF_MATCH
 END_SIM_HISTORY_TYPES
 ENTITY
 ENTITY_DISSOLVE_CORE
@@ -5168,6 +5216,8 @@ EXPLOSION_TYPE_NONE
 EXPLOSION_TYPE_SHRAPNEL
 EXPLOSION_TYPE_SMOKEGRENADE
 EXPLOSION_TYPE_TRIPMINE
+EXPORT_ENCODING_BINARY
+EXPORT_ENCODING_TEXT
 EXPRESSION
 EXPRESSION_CONCAT
 EXPRESSION_TEXT
@@ -5452,6 +5502,7 @@ Experimental: Set to 1 to enable full GPU pipeline flushing after each present.
 Experimental: Set to 1 to use the ID3D11DeviceContext11::Flush() to flush the GPU pipeline instead of queries.
 Expiration Time (seconds)
 Explosion
+Explosions
 Explosive Barrel
 Expo
 Exponential Falloff
@@ -6210,6 +6261,7 @@ Grain Size (ms)
 Grant healthshots in deathmatch after n kills
 Granulator Container
 Graph Writable
+GraphIDs
 Graphics driver recommendation (NVIDIA 581.80 / AMD 23.11.1)
 Gravity
 Greater Than
@@ -6503,6 +6555,7 @@ INT16
 INT32
 INT8
 INVALID
+INVENTORY_INSPECT
 IN_ALL
 IN_ATTACK
 IN_ATTACK2
@@ -6705,7 +6758,7 @@ Ignore VAC and auth errors for client connected via localhost address or in-engi
 Ignore conditions which would end the current round
 Ignore delta time (RenderTrails)
 Ignore nav areas with at least one side smaller than this amount during approach point calculation.
-IgnoreHealt
+IgnoreHealthCheck
 IgnoreInactiveEvents
 IgnoreKillEntityFlag
 IgnoreSource
@@ -6723,6 +6776,7 @@ Immediate
 Impact Options
 ImportExportOptionsEditableData_t
 ImportExportOptionsEditableData_t::ExportDefaultFormat_t
+ImportExportOptionsEditableData_t::ExportEncoding_t
 ImportExportOptionsEditableData_t::ExportFbxUnit_t
 Imports an existing CS:GO configuration file into CS2
 In case of intermittent network problems, how long should playcast retry fragment retrieval before resorting to resync
@@ -7009,6 +7063,9 @@ LAYER_TYPE_VIGNETTE
 LAYOUTPOSITIONTYPE_FRACTIONAL
 LAYOUTPOSITIONTYPE_NONE
 LAYOUTPOSITIONTYPE_VIEWPORT_RELATIVE
+LAYOUT_CUSTOM
+LAYOUT_HAND_DEFAULT
+LAYOUT_WORLD_DEFAULT
 LEAST_AGGRESSIVE
 LEFT
 LERP
@@ -7180,6 +7237,7 @@ Less Than
 Less aggressive fade out. The object will not fade out until it is smaller on screen than normal.
 LessThan
 LessThanEqual
+LessonPanelLayoutFileTypes_t
 Level Override
 Level Volume
 Library for interacting with a few global test values.
@@ -7187,6 +7245,7 @@ Library for interacting with pulse cursors.
 LifeState_t
 Light Radius
 LightRenderingChanged
+LightRigType_t
 Lighten
 Lighting and Shadows
 Lightmap set to use, only works on map load
@@ -7351,6 +7410,7 @@ Luminance
 Lurking player xray glow scaling.
 MAE_DEFEAT
 MAINTAIN_OFFSET
+MAIN_MENU
 MASK_F
 MATCH
 MATCH_FILTER_MATERIAL_ATTRIBUTE_EQUALS
@@ -7363,6 +7423,7 @@ MATERIAL_ATTRIBUTE_TAG_COLOR
 MATERIAL_ATTRIBUTE_TAG_VALUE
 MATERIAL_PROXY_STATUS_EFFECT
 MATERIAL_PROXY_TINT
+MATERIAL_THUMBNAIL
 MAX_LAYER_TYPES
 MAX_PATTACH_TYPES
 MAX_RESPONSE_NAME
@@ -7972,6 +8033,8 @@ NUM_NAV_DIR_TYPE_DIRECTIONS
 NUM_OBSERVER_MODES
 NUM_PLAYER_STATES
 NUM_RUMBLE_EFFECTS
+NUM_STANCES
+NUM_TYPES
 NVIDIA Low Latency Trigger Flash
 NVIDIA Low Latency/AMD Anti-Lag 2 (0 = off, 1 = on, 2 = NV-only, on + boost)
 Name
@@ -8030,6 +8093,7 @@ NmEventConditionOperator_t
 NmEventConditionRules_t
 NmEventPriorityRule_t
 NmFloatCurveCompressionSettings_t
+NmFollowBoneMode_t
 NmFootPhaseCondition_t
 NmFootPhase_t
 NmFrameSnapEventMode_t
@@ -8046,6 +8110,7 @@ NmSyncTrackTime_t
 NmTargetWarpAlgorithm_t
 NmTargetWarpRule_t
 NmTransitionRuleCondition_t
+NmTransitionRule_t
 NmVariation_t
 No
 No Collision Behavior
@@ -8129,6 +8194,10 @@ OBJECT_TYPE_RENDER_TO_CUBEMAPS
 OBJECT_TYPE_RENDER_WITH_DYNAMIC
 OBJECT_TYPE_STATIC_CUBE_MAP
 OBJECT_TYPE_WORLDSPACE_TEXURE_BLEND
+OBSERVER_INTERP_NONE
+OBSERVER_INTERP_SETTLING
+OBSERVER_INTERP_STARTING
+OBSERVER_INTERP_TRAVELING
 OBSOLETE replaced by mobile_fps_* - Battery saver mode. 0=off, 1=on
 OBS_MODE_CHASE
 OBS_MODE_FIXED
@@ -8197,6 +8266,7 @@ OVERLAY_VISIBILITY_TRACES_BIT
 Object space
 Object space transform, relative to the object placement, but does not include the current element transform.
 ObjectTypeFlags_t
+ObserverInterpState_t
 ObserverMode_t
 Occlusion
 Occlusion Value
@@ -8658,9 +8728,15 @@ PARTICLE_SELECTION_NUMBER
 PARTICLE_SEQUENCE_CROP_OVERRIDE_DEFAULT
 PARTICLE_SEQUENCE_CROP_OVERRIDE_FORCE_OFF
 PARTICLE_SEQUENCE_CROP_OVERRIDE_FORCE_ON
+PARTICLE_SET_ADD_TO_CURRENT_VALUE
+PARTICLE_SET_ADD_TO_INITIAL_VALUE
 PARTICLE_SET_PARENT_IMMEDIATE
 PARTICLE_SET_PARENT_NO
 PARTICLE_SET_PARENT_ROOT
+PARTICLE_SET_RAMP_CURRENT_VALUE
+PARTICLE_SET_REPLACE_VALUE
+PARTICLE_SET_SCALE_CURRENT_VALUE
+PARTICLE_SET_SCALE_INITIAL_VALUE
 PARTICLE_SORTING_CREATION_TIME
 PARTICLE_SORTING_NEAREST
 PARTICLE_TOPOLOGY_CUBES
@@ -8808,6 +8884,7 @@ POINT_WORLD_TEXT_REORIENT_NONE
 POSETYPE_DYNAMIC
 POSETYPE_INVALID
 POSETYPE_STATIC
+PREVIEW
 PRIVATE
 PROPERTY
 PROVIDER_GENERIC
@@ -8969,6 +9046,7 @@ ParticleReplicationMode_t
 ParticleRotationLockType_t
 ParticleSelection_t
 ParticleSequenceCropOverride_t
+ParticleSetMethod_t
 ParticleSortingChoiceList_t
 ParticleTextureLayerBlendType_t
 ParticleTopology_t
@@ -9209,6 +9287,7 @@ Preview Min Range
 Preview Model
 Preview Sequence
 Preview an economy item
+PreviewCharacterMode
 PreviewEOMCelebration
 PreviewWeaponState
 Primary Clip Size
@@ -9302,10 +9381,12 @@ Profile Name
 Project Vector
 Project Vector A onto Vector B
 Projection to plane
+Prone
 Prop Debug
 Prop Dynamic
 Prop Joints
 Prop Physics
+PropDoorRotatingOpenDirection_e
 PropDoorRotatingSpawnPos_t
 Propagation Scale
 Property Mutators
@@ -9314,6 +9395,7 @@ Public field 'delay' name.
 Public field name to query.
 PulseApiFeature_t
 PulseBestOutflowRules_t
+PulseCollisionGroup_t
 PulseCursorCancelPriority_t
 PulseCursorExecResult_t
 PulseCursorID_t
@@ -9427,6 +9509,20 @@ RENDER_MULTISAMPLE_8X
 RENDER_MULTISAMPLE_INVALID
 RENDER_MULTISAMPLE_NONE
 RENDER_MULTISAMPLE_TYPE_COUNT
+RENDER_PRIM_COMPUTE_SHADER
+RENDER_PRIM_HETEROGENOUS
+RENDER_PRIM_INSTANCED_QUADS
+RENDER_PRIM_LINES
+RENDER_PRIM_LINES_WITH_ADJACENCY
+RENDER_PRIM_LINE_STRIP
+RENDER_PRIM_LINE_STRIP_WITH_ADJACENCY
+RENDER_PRIM_MESH_SHADER
+RENDER_PRIM_POINTS
+RENDER_PRIM_TRIANGLES
+RENDER_PRIM_TRIANGLES_WITH_ADJACENCY
+RENDER_PRIM_TRIANGLE_STRIP
+RENDER_PRIM_TRIANGLE_STRIP_WITH_ADJACENCY
+RENDER_PRIM_TYPE_COUNT
 RENDER_SLOT_INVALID
 RENDER_SLOT_PER_INSTANCE
 RENDER_SLOT_PER_VERTEX
@@ -9536,6 +9632,7 @@ RagdollPoseControl
 Raise ground by this much for all cloth that traces the ground; should be 0 ideally
 Raise the bottom of the drag select volume.
 Raise the top of the drag select volume.
+Ramp Current Value at Input Rate Per Second
 Random
 Random -1 - 1 Value
 Random -1 - 1 x Time
@@ -9686,6 +9783,7 @@ RenderMeshSlotType_t
 RenderMode_t
 RenderModelSubModelFieldType_t
 RenderMultisampleType_t
+RenderPrimitiveType_t
 RenderProjectedMaterial_t
 RenderSkeletonBone_t
 RenderSlotType_t
@@ -9847,6 +9945,7 @@ Rotation Error Range
 Rotation Limits
 Rotation Offset
 Rotation Parameter
+RotationAndTranslation
 RotationOnly
 RotatorHistoryEntry_t
 RotatorQueueEntry_t
@@ -9905,6 +10004,8 @@ SCENEOBJECT_VIS_MATERIAL
 SCENEOBJECT_VIS_NONE
 SCENEOBJECT_VIS_OBJECT
 SCENEOBJECT_VIS_TEXTURE_SIZE
+SCENE_ONPLAYERDEATH_CANCEL
+SCENE_ONPLAYERDEATH_DO_NOTHING
 SCRIPTS
 SCRIPT_BODY
 SCRIPT_CLEANUP
@@ -10004,6 +10105,13 @@ SOLID_OBB
 SOLID_POINT
 SOLID_SPHERE
 SOLID_VPHYSICS
+SOLVEIKCHAINANIMNODEDEBUGSETTING_Forward
+SOLVEIKCHAINANIMNODEDEBUGSETTING_Left
+SOLVEIKCHAINANIMNODEDEBUGSETTING_None
+SOLVEIKCHAINANIMNODEDEBUGSETTING_Up
+SOLVEIKCHAINANIMNODEDEBUGSETTING_X_Axis_Circle
+SOLVEIKCHAINANIMNODEDEBUGSETTING_Y_Axis_Circle
+SOLVEIKCHAINANIMNODEDEBUGSETTING_Z_Axis_Circle
 SOLVEIKCHAINANIMNODESETTINGSOURCE_Default
 SOLVEIKCHAINANIMNODESETTINGSOURCE_Override
 SORT_BY_NUMBER_OF_VALID_CRITERIA
@@ -10093,6 +10201,10 @@ SS_ONDEATH_ANIMATED_DEATH
 SS_ONDEATH_NOT_APPLICABLE
 SS_ONDEATH_RAGDOLL
 SS_ONDEATH_UNDEFINED
+STANCE_CROUCHING
+STANCE_CURRENT
+STANCE_DEFAULT
+STANCE_PRONE
 START_AND_END
 STATETAGBEHAVIOR_ACTIVE_WHILE_CURRENT
 STATETAGBEHAVIOR_ACTIVE_WHILE_FULLY_BLENDED
@@ -10125,6 +10237,9 @@ SUBCLASS_SCOPE_COUNT
 SUBCLASS_SCOPE_NONE
 SUBCLASS_SCOPE_PLAYER_WEAPONS
 SUBCLASS_SCOPE_PRECIPITATION
+SUBCLASS_VDATA_CREATED
+SUBCLASS_VDATA_RELOADED
+SUBCLASS_VDATA_SUBCLASS_CHANGED
 SUBGRAPH_INTERPOLATION_KEEP_LAST_SUBGRAPH_RUNNING
 SUBGRAPH_INTERPOLATION_TEMPORAL_CROSSFADE
 SUBGRAPH_INTERPOLATION_TEMPORAL_FADE_OUT
@@ -10183,7 +10298,9 @@ Scalar for player tagging modifier when hit. Lower values for greater tagging.
 ScalarExpressionType_t
 Scale
 Scale Animation Motion
+Scale Current Value Raw
 Scale Error Range
+Scale Initial Value
 Scale Mode
 Scale Start/End Control Point
 Scale child particle radius based on parent radius
@@ -10221,6 +10338,7 @@ Scaling for falloff of weapon firing sounds
 Scan all of the loaded modules and validate any resource manifests found
 SceneEventId_t
 SceneObject_t
+SceneOnPlayerDeath_t
 SceneRequestHandle_t
 SceneSystem/Aggregates/Debug Visualizer
 SceneSystem/Aggregates/Draw Aggregates
@@ -10349,6 +10467,24 @@ Send full frame on every hltv replay transition
 Send tables cache file
 Sends a bot to the marked nav area (useful for testing navigation meshes)
 Sends a bot to the selected nav area (useful for testing navigation meshes)
+SeqCmd_Add
+SeqCmd_Blend
+SeqCmd_Copy
+SeqCmd_FetchCycle
+SeqCmd_FetchFrame
+SeqCmd_FetchFrameRange
+SeqCmd_IKLockInPlace
+SeqCmd_IKRestoreAll
+SeqCmd_LinearDelta
+SeqCmd_Nop
+SeqCmd_ReverseSequence
+SeqCmd_Scale
+SeqCmd_Sequence
+SeqCmd_Slerp
+SeqCmd_Subtract
+SeqCmd_Transform
+SeqCmd_Worldspace
+SeqCmd_t
 SeqMode_t
 SeqPoseSetting_t
 Sequence
@@ -10378,6 +10514,7 @@ Server will not allow the client to buffer up more than N ms of commands.
 Server will stop generating substitute commands if client hasn't sent one, after N in a row
 ServerAuthoritative
 ServerAuthoritativeWeaponSlot_t
+ServerOnly
 Set Alpha
 Set Color
 Set Enabled
@@ -10784,6 +10921,7 @@ SolidEntity
 SolidType_t
 Solo
 Solve IK Chain
+SolveIKChainAnimNodeDebugSetting
 SolveIKChainAnimNodeSettingSource
 SolveIKChainPoseOpFixedSettings_t
 Solver Mode
@@ -10985,6 +11123,7 @@ Stance Scale
 Stance Source
 StanceInfo_t
 StanceOverrideMode
+StanceType_t
 Standard Deviation
 StandardLightingAttenuationStyle_t
 Start
@@ -11098,6 +11237,7 @@ Sub-Sample Between Input Points
 SubGraph
 SubGraph File
 SubModel Field Type
+SubclassVDataChangeType_t
 Submit annotation to workshop. To update an existing submission add its ID number from the workshop URL as a second argument.
 Subsurface sample count
 Subtitle offset distance (forward, in front of player)
@@ -11124,6 +11264,8 @@ Switches between a selection of vsnds based on a provided index.
 Switches to navmesh for the specified spawngroup
 Symbol Parameter
 Sync Cycles
+SyncChildren
+Synchronize Children
 Synchronize particles
 Synchronized
 Synchronous - wait for the method to fully complete before returning
@@ -11137,12 +11279,20 @@ T bonus card for full buy round when playing bomb site retake.
 T enemy card for full buy round when playing bomb site retake.
 T style crosshair
 TACTICAL_SEARCH
+TEAM_INTRO
+TEAM_SELECT
 TESTBED: Amped Decaying Sine Wave Container
 TESTBED: Decaying Sine Wave Container
 TESTBED: FM Synth Container
 TEXT
 TEXTURE_REPETITION_PARTICLE
 TEXTURE_REPETITION_PATH
+THUMBNAIL
+TIMELINE_COMPRESSION_AVERAGE
+TIMELINE_COMPRESSION_AVERAGE_BLEND
+TIMELINE_COMPRESSION_COUNT_PER_INTERVAL
+TIMELINE_COMPRESSION_SUM
+TIMELINE_COMPRESSION_TOTAL
 TODO Display autoaim radius
 TODO show entities that block NPC LOS
 TODO show messages for this entity
@@ -11291,6 +11441,7 @@ Tests ray cast
 Tests sphere cast
 Texel Alpha & Alpha Reference
 Texel Alpha & Particle Alpha & Alpha Reference
+Text
 Text Color
 Text Position
 TextBlock()
@@ -11471,6 +11622,7 @@ Timed
 Timed Block Limiter
 Timed Decay
 TimedEvent
+TimelineCompression_t
 Timing Blend
 Timing Control
 Timing Method
@@ -11593,6 +11745,7 @@ Translate X
 Translate Y
 Translate Z
 Translation Error Range
+TranslationOnly
 Transmission Value (High Freq)
 Transmission Value (Low Freq)
 Transmission Value (Mid Freq)
@@ -11714,6 +11867,8 @@ Use
 Use Acceleration
 Use Bias + Clamp
 Use Blend Source
+Use Child1
+Use Child2
 Use Custom Colors
 Use Custom Duration
 Use Default Cropping Behavior
@@ -11758,6 +11913,8 @@ Use the specified behavior tree file to drive the bot behavior.
 Use the specified entity for animation debugging.
 Use this to tell Steam to relaunch the app right after existing
 Use to debug break on any soundevent that is started matching this name
+UseChild1
+UseChild2
 Used by the client to inform the server of their desired queue length.  Derived from cl_tickpacket_recvmargin_desired and cl_tickpacket_desired_queuelength
 Used to create reverb effects based on a model of a reverb plate.
 Used to create reverb effects based on a symmetrical room.
@@ -12096,6 +12253,7 @@ W Max
 W Min
 W Value
 WALK
+WALKING
 WALKUP
 WATER_WAKE_IDLE
 WATER_WAKE_NONE
@@ -12220,6 +12378,7 @@ WEAPON_SOUND_ZOOM_OUT
 WEST
 WHITE
 WHITESPACE
+WINGMAN_INTRO
 WL_Chest
 WL_Count
 WL_Feet
@@ -12231,6 +12390,9 @@ WORLD
 WORLDTEXT_HORIZONTAL_ALIGN_CENTER
 WORLDTEXT_HORIZONTAL_ALIGN_LEFT
 WORLDTEXT_HORIZONTAL_ALIGN_RIGHT
+WORLDTEXT_ORIENTATION_DEFAULT
+WORLDTEXT_ORIENTATION_FACEUSER
+WORLDTEXT_ORIENTATION_FACEUSER_UPRIGHT
 WORLDTEXT_VERTICAL_ALIGN_BOTTOM
 WORLDTEXT_VERTICAL_ALIGN_CENTER
 WORLDTEXT_VERTICAL_ALIGN_TOP
@@ -12489,6 +12651,7 @@ WorldNodeOnDiskBufferData_t
 WorldNode_t
 WorldSpace
 WorldTextPanelHorizontalAlign_t
+WorldTextPanelOrientation_t
 WorldTextPanelVerticalAlign_t
 World_t
 Worldspace Center
@@ -12931,6 +13094,8 @@ bot_max_vision_distance_override
 bot_mimic
 bot_mimic_spec_buttons
 bot_mimic_yaw_offset
+bot_path
+bot_path <all> <t|ct> <type> <difficulty> <name> - Tells a specific bot to follow a human path, matching the given criteria.
 bot_pistols_only
 bot_place
 bot_place - Places a bot from the map at where the local player is pointing.
@@ -14375,6 +14540,9 @@ eInactive
 eInstantStop
 eInvalid
 eKill
+eLightEffectDropped
+eLightEffectNone
+eLightEffectThirdPersonHeld
 eLiteralValue
 eLowerBody
 eMedium
@@ -14629,6 +14797,9 @@ exec
 exec_async
 execifexists
 execute_command_every_frame
+expDirected
+expRandom
+expUsePrecise
 explode
 explodes molotov(0) or Incendiary (1) at crosshair location with single param
 explodes smoke grenade at crosshair location
@@ -22650,6 +22821,7 @@ m_lookPitchID
 m_lookPitchVel
 m_lookTargetID
 m_lookTargetWorldSpaceID
+m_lookUpAngle
 m_lookYaw
 m_lookYawVel
 m_lookatChainName

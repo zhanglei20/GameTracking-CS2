@@ -8639,7 +8639,6 @@ Allow Pitch For Facing
 Allow Rotation
 Allow Target Update
 Allow non-uniform scale to skew normals
-AllowTransition
 Allows the user to override the auto-generated footcycle settings with custom settings
 Alpha decoder initialization failed.
 Also Missing Exclusive Detail Layers
@@ -8960,7 +8959,6 @@ Blend Weights Per Vertex
 Blend time: %.2f
 Blend: %.2f%%
 Blends
-BlockTransition
 Blur Radius
 Bm_Plane
 Body Collection
@@ -9409,12 +9407,9 @@ CNmClipDocEvent_Particle::PerformValidation
 CNmClipDocEvent_RootMotion::PerformValidation
 CNmClipDocEvent_Sound::PerformValidation
 CNmClipDocEvent_TargetWarp::PerformValidation
-CNmEventRelevance_t
 CNmGraphDocAimCSNode
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::GetCurrentGraphTimingInfo
-CNmGraphParameterArchetype::EntryType_t
-CNmParticleEvent::Type_t
 CParentAttachmentName
 CPiecewiseCurve
 CRenderMeshSimplifyParams
@@ -9584,8 +9579,6 @@ Clear Rest of Selection
 Clear Unselected to Zero
 Clear selection of mesh vertices, edges, or faces.
 Clears and populates the list from the current model
-ClientAndServer
-ClientOnly
 Clip
 Clip Selector
 ClipPath
@@ -9747,7 +9740,6 @@ Computed Cavity Map for %i pixels in %.3f (%i pixels per job, %i total traces)\n
 Computed PointOcclusionMap for %i pixels in %.3f (%i pixels per job, %i total traces)\n
 Computes Bent Normals
 Computes wrinkle map values for morphs
-ConditionallyAllowTransition
 Config
 ConfigCommand
 ConfigElement
@@ -9823,13 +9815,10 @@ Couldn't overwrite explicitly defined Morph Control :: %s
 Couldn't overwrite explicitly defined Morph Rule :: %s = %s
 Counteract Animation
 Counteract motion in the joint
-Create
 Create Left
 Create Right
 CreateIndexBufferFromIndexArray(61): 
-Create_CFG
 Creates an animation from the model's bind pose
-Crossfade
 Cull Unskinned Verts
 Current Sync Event
 Current Sync Event ID
@@ -10568,7 +10557,6 @@ Goal Strength Bias
 Goal Strength Scale
 Graph Event Condition
 Graph Events
-GraphIDs
 Graphs
 Gravity Multiplier
 GrayResponseCurve
@@ -11307,10 +11295,8 @@ Next edge before queue update
 Next edge error %.1f inch, collapse angle %.1f deg
 NmDocEvent_PostModify_t
 NmDocEvent_PreModify_t
-NmFollowBoneMode_t
 NmSkeletonList
 NmSkeletonReference
-NmTransitionRule_t
 No %s specified. Expected '=' '[' <%s> ']'
 No 'position' data stream for VSNAP!
 No Blend
@@ -11804,20 +11790,6 @@ R8_TYPELESS
 R8_UNORM
 R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
-RENDER_PRIM_COMPUTE_SHADER
-RENDER_PRIM_HETEROGENOUS
-RENDER_PRIM_INSTANCED_QUADS
-RENDER_PRIM_LINES
-RENDER_PRIM_LINES_WITH_ADJACENCY
-RENDER_PRIM_LINE_STRIP
-RENDER_PRIM_LINE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_MESH_SHADER
-RENDER_PRIM_POINTS
-RENDER_PRIM_TRIANGLES
-RENDER_PRIM_TRIANGLES_WITH_ADJACENCY
-RENDER_PRIM_TRIANGLE_STRIP
-RENDER_PRIM_TRIANGLE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_TYPE_COUNT
 RIGHT
 ROTATION
 RSDS2
@@ -11929,7 +11901,6 @@ RenderMeshList
 RenderMeshMarkup
 RenderPrimitiveBox
 RenderPrimitiveSphere
-RenderPrimitiveType_t
 Replace Materials
 Replace Specific Body's Joints
 Replace materials on an input mesh
@@ -11978,7 +11949,6 @@ Rotation Angle Z
 Rotation Ignore Threshold
 Rotation Only
 Rotation Weight
-RotationAndTranslation
 Row Fixed Blend Val
 Row pixels integer overflow (rowpixels %u)
 RowsPerStrip
@@ -12088,7 +12058,6 @@ SelectionSet
 SelectionSetList
 Selectors
 Selects faces whose UVs overlap. Note that neighboring faces are not considered overlapping, and there is a minor tolerance to this check.
-ServerOnly
 Set Bodygroup On Other Models
 Set Initial Values For Extract Motion Node
 Set LOD threshold from current camera distance
@@ -12526,7 +12495,6 @@ Translation Ignore Threshold
 Translation Offset
 Translation Only
 Translation Weight
-TranslationOnly
 Treat Warnings as Errors
 Triangulation Failed - You have invalid parameter values!
 Tried to load a polymorphic pointer with no '%s' key

@@ -13317,7 +13317,6 @@ Begin/End keyword expected\n
 BeginWriteAt not called
 Bezier Fit/Key Reducer
 BezierQuadric
-Binary
 BinaryData
 BindPose
 BindPose - Incomplete BindPose [link nodes parents]

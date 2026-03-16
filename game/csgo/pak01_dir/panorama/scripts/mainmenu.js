@@ -1022,7 +1022,6 @@ var MainMenu;
         elPanel.Data().oSettings = oSettings;
     }
     function _OnShowXrayCasePopup(toolid, caseId, bShowPopupWarning = false) {
-        const showpopup = bShowPopupWarning ? 'yes' : 'no';
         const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('popup-inspect-' + caseId, 'file://{resources}/layout/popups/popup_capability_decodable.xml');
         let oSettings = {
             item_id: caseId,

@@ -1006,8 +1006,6 @@ Activate
 Activity %s has %d sequences with a total weight of %d!\n
 Add R%d <- R%d + R%d
 Add the array 'b' to the end of 'a'.
-Add to Current Value Raw
-Add to Initial Value
 Address of m_Children.m_pHead: [%p]\n
 All Particle Systems:\n
 Allocated Particles
@@ -1324,7 +1322,6 @@ Creating collection:
 Creation Time
 Cross Product Vector
 Cross Product of Vector a x Vector b
-Crossfade
 Cull or modify relative to neighboring particles
 Cull random
 Cull relative to model
@@ -1337,13 +1334,6 @@ Cursor Has Tag
 Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
 Cycle Scalar
-DETAIL_2_COMBO_ADD
-DETAIL_2_COMBO_ADD_SELF_ILLUM
-DETAIL_2_COMBO_CROSSFADE
-DETAIL_2_COMBO_MOD2X
-DETAIL_2_COMBO_MUL
-DETAIL_2_COMBO_OFF
-DETAIL_2_COMBO_UNINITIALIZED
 D\tV_log2f
 D_COMPRESSED_NORMALS_AND_TANGENTS
 D_DEBUG_STATS
@@ -1364,7 +1354,6 @@ Depth
 DepthMap
 Desired Kill Priority
 Detach R%d
-Detail2Combo_t
 Diffuse particle attributes
 Disable to get a better look at what's happening offscreen
 DisableSorting
@@ -1736,8 +1725,6 @@ P8?2
 PARENT_PARTICLE_ID
 PARENT_PARTICLE_INDEX
 PARTICLE_ID
-PARTICLE_SET_ADD_TO_CURRENT_VALUE
-PARTICLE_SET_RAMP_CURRENT_VALUE
 PET_SupportFadingOpaqueModels
 PITCH
 PRECIPITATION
@@ -1759,7 +1746,6 @@ Particle initializers always run. Previously, some initializers would silently b
 Particle needs recompiling: '%s'\nBrowse to the particle in asset browser, right click and select Full Recompile.
 Particle systems larger than this in every dimension skip culling to save CPU.  They will be drawn anyway.
 ParticleParamID_t
-ParticleSetMethod_t
 ParticleSystem
 ParticleSystemRequiredResources
 Particlelib: Unsupported CPU or GPU for particle definition "%s"!\n
@@ -1848,7 +1834,6 @@ R\fpT
 Rad2 Deg
 Radius from CP object
 Radius scale
-Ramp Current Value at Input Rate Per Second
 Ramp control point linear random
 Ramp scalar linear random
 Ramp scalar linear simple
@@ -2013,9 +1998,7 @@ SHADER_EXTRA_DATA2
 Saturate
 Saturate (clamps float between 0 and 1)
 Save a named value of any type on the cursor.
-Scale Current Value Raw
 Scale INV R%d <- R%d / R%d
-Scale Initial Value
 Scale R%d <- R%d * R%d
 ScaleMatrix
 Scene Object Pointer

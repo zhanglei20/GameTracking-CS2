@@ -3794,7 +3794,6 @@ Less R%d <- R%d < R%d
 LessEq R%d <- R%d <= R%d
 Levels
 Levels %d
-LightRigType_t
 Lighting Preview
 LightingControl
 LightmapUV
@@ -3830,7 +3829,6 @@ Lookup Table %d
 Low Contrast
 Lum Source: Diffuse<-->Pixel
 Luminosity:
-MATERIAL_THUMBNAIL
 MAtomicTransfersAsPlainString
 MENU
 MMouse
@@ -3949,7 +3947,6 @@ NO COMMAND TARGET
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
 NULL CELL 
 NULL VP8Io parameter in VP8Decode().
-NUM_TYPES
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 N_U9203
 Name\t\t\t\t\tCount\t\tParticle Count\n
@@ -4142,7 +4139,6 @@ P?item@QStandardItemModel@@QEBAPEAVQStandardItem@@HH@Z
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
 POISONED 
-PREVIEW
 PURH
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 P\v?event@QMdiSubWindow@@MEAA_NPEAVQEvent@@@Z
@@ -4614,7 +4610,6 @@ T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
-THUMBNAIL
 TIFFAppendToStrip
 TIFFClientOpen
 TIFFFetchDirectory

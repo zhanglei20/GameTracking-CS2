@@ -419,7 +419,6 @@ BAsyncSend
 BAsyncSendProto
 B\nP\t0
 Bad read pointer - no RTTI data!
-Binary
 Binary/ptr
 Binary/size
 Busy

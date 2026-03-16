@@ -111,10 +111,9 @@
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
  (08@HPX`j
- (08@HPXb
+ (08@HPXb`
  (08@HPZ
- (08@HR
- (0X`hpz
+ (0X`hpz`
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -222,6 +221,7 @@
 !(meth->ext_flags & SSL_EXT_FLAG_SENT)
 !.CPlayer_GetNicknameList_Response"<
 !.CPublishedFile_Subscribe_Request
+!3Pq
 !3mmXs
 !5!A!I!O!Y![!_!s!}!
 !9iV
@@ -2239,7 +2239,7 @@ $ze2
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
-%n4Hv
+%n48v
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -2589,7 +2589,6 @@ $ze2
 &'&)&5&;&?&K&S&Y&e&i&o&{&
 &(optional) Filter by privacy settings.
 &0000
-&3pq
 &4?NewFromTwoByte@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBGW4NewStringType@2@H@Z
 &8@Cb
 &?IsBoolean@Value@v8@@QEBA_NXZ
@@ -2694,7 +2693,7 @@ $ze2
 (.CPlayer_SetPerFriendPreferences_Request
 (0'yX
 (0x%08X)'??'
-(4Xu
+(4Hu
 (5Me
 (5jP
 (ACTIVE)
@@ -2989,7 +2988,7 @@ $ze2
 ).CPlayer_GetPerFriendPreferences_Response"M
 ).CPlayer_SetCommunityPreferences_Response"+
 ).CPlayer_SetPerFriendPreferences_Response"G
-)24xu
+)24hu
 )4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )A service for accessing Steam player dataB
 )App Id this file is being published FROM.
@@ -3206,7 +3205,7 @@ $ze2
 --forward-all-args--
 --single-literal--
 -.CPlayer_GetNewSteamAnnouncementState_Request
--4hu
+-4Xu
 -5X5
 -;-C-I-M-a-e-q-
 -> Success (%d attempts)\n
@@ -10925,7 +10924,7 @@ $ze2
 02V8[
 05=k
 08@HR
-08@J
+08@J`
 08bX
 09,h
 0;Q5[
@@ -11340,6 +11339,7 @@ $ze2
 6144
 62$|S)6f
 64CK\vH
+64xu
 6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 67-s
@@ -11706,12 +11706,14 @@ $ze2
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08Nd
+@08N
 @0pp
+@6PW
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
 @Global Blend - Attempting a global blend with an additive pose! This is undefined behavior!\n
+@HVp
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11724,8 +11726,8 @@ $ze2
 @\n\tPlacement
 @\n\vserver_type
 @cl_aggregate_particles
-@clothing2
 @dKb]
+@equipment4
 @fff>fff>fff>fff>
 @ffffff
 @i1V
@@ -12148,7 +12150,6 @@ All lootlists must have names.
 All-Star
 AllocGroundLink: failed to allocate groundlink_t.!!!\n
 AllowOversized
-AllowTransition
 Alpha Test
 AlphaTest
 Alpine
@@ -12482,7 +12483,6 @@ BAD INTEGER
 BAD RECURSION DEPTH\n
 BAD-TYPE
 BADFUNCTIONPOINTER
-BANNER
 BASIC_CONSTRAINTS
 BAcceptsFocus
 BAcceptsInput
@@ -12650,7 +12650,6 @@ BULLET_PLAYER_BUCKSHOT
 BUMP_WITH_TIMEOUT_WHEN_LEARNED
 BURN
 BUYMENU: %s %s %s\n
-BUY_MENU
 BValidateCrosshairCode
 BYOC
 BY_FILE_CTRL
@@ -12751,7 +12750,6 @@ Blacksite
 Blank
 Blend: %.2f%%
 Block Headers | 
-BlockTransition
 BlogAPI
 Blood
 BloodDefaultColor
@@ -12956,7 +12954,6 @@ C4.PlantSound
 C4.PlantSoundB
 C4.PlantSoundB_10sec
 C4.PlantSound_10sec
-C4LightEffect_t
 C4Precache
 C6DN
 C7HSY
@@ -14279,13 +14276,11 @@ CNetworkedQuantizedFloat:  called before encoder initialized, use DECLARE_NETWOR
 CNewParticleEffect::DetectChanges
 CNmAdditiveBlendTask - Trying to blend additively, using a non-additive pose\n
 CNmAimCSTask::TrySetupSolverData
-CNmEventRelevance_t
 CNmGraphInstance
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::ExecutePostPhysicsPoseTasks
 CNmGraphInstance::ExecutePrePhysicsPoseTasks
 CNmGraphInstance::GetCurrentGraphTimingInfo
-CNmParticleEvent::Type_t
 CNmTaskSystem::DeserializeTasks
 CNmTaskSystem::SerializeTasks
 CNmTaskSystem::UpdatePostPhysics
@@ -15895,7 +15890,6 @@ Client tick %d (%d) last exec cmd %d, predicting %d commands %d..%d\n
 Client tick %d + %.2f final predicted tick %d + %.2f, offset = %.3f seconds, %.2f ticks\n
 Client update required
 Client-ID
-ClientAndServer
 ClientCreateMoveFirst
 ClientCreateMoveSubTick
 ClientCurTime
@@ -15962,7 +15956,6 @@ ClientLauncher
 ClientLogonFatalError( %u ): %s\n
 ClientModeCSNormal::OnEvent
 ClientModeCSNormalPostProcessing
-ClientOnly
 ClientScheme
 ClientSessionLookup
 ClientSimulate_Think
@@ -16124,7 +16117,6 @@ Computes 2 ( 2.71...) raised to a power
 Computes e ( 2.71...) raised to a power
 ConcreteEntityList:  approaching limit, allocating entity chuck %d/%d for ents [%d -> %d]\n
 ConditionId_t
-ConditionallyAllowTransition
 Cone
 ConfigImport
 ConfigName
@@ -16279,7 +16271,6 @@ CoverGaps1
 CraftIngredients
 Crashsite
 CrateIcon
-Create
 Create PerViewConstantBufferCsgo_t
 Create PictureInPicture PerViewConstantBufferCsgo_t
 Create a C proxy for a script-based spawn group filter
@@ -16323,7 +16314,6 @@ CreateSession
 CreateTempCombinedItemWithTool
 CreateUniformRandomStream
 CreateVideoPlayer
-Create_CFG
 Created Composite Material Render Target: %s [%s]\n
 Created Map Annotation %d/%d\n
 Created physics for %s\n
@@ -16346,7 +16336,6 @@ Crosshair settings were imported, disabling cl_crosshair_recoil.\n
 CrosshairCode
 CrosshairObserver
 CrosshairPreviewControls
-Crouching
 Cruise
 CryptAcquireContextW
 CryptGenRandom
@@ -16438,7 +16427,6 @@ DEAD
 DEBRIS
 DECALS_SAVE_RESTORE_VERSION
 DECOYGRENADE
-DEFAULT
 DEF_ADD_INDEX
 DEF_GET_CLASS
 DEF_LOAD
@@ -16539,7 +16527,6 @@ DH_generate_key
 DH_generate_parameters_ex
 DH_new_method
 DHparams_print_fp
-DIORAMA
 DIRECT
 DIRECTORYSTRING
 DIR_ADD
@@ -17517,7 +17504,6 @@ EM_ScreenOverlay
 EN2 s/
 ENCRYPTED
 ENCRYPTED PRIVATE KEY
-END_OF_MATCH
 ENERGYBEAM
 ENGINE lib
 ENGINE_FREE_UTIL
@@ -20099,7 +20085,6 @@ INT_NEW_EX_DATA
 INT_RSA_VERIFY
 INT_TS_RESP_VERIFY_TOKEN
 INVALID CGameEventStartTouchCollideAdaptor
-INVENTORY_INSPECT
 INdK
 IP Address
 IP Address:%d.%d.%d.%d
@@ -20160,7 +20145,6 @@ IfHoverOtherEvent
 IfNotHasClassEvent
 IfNotHoverOtherEvent
 Ignore External Lookats
-IgnoreHealthCheck
 Ignoring %s: unsupported file type.\n
 Ignoring '%s' (default rule)\n
 Ignoring '%s'\n
@@ -20691,7 +20675,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
-JY3@r
+JY30r
 JZIX
 J\nHBF
 J`KL
@@ -20832,7 +20816,7 @@ LOG_MESSAGE
 LONG
 LONG_C2I
 LPVIndex
-LS&\nKX
+LS&\nKH
 LT[N
 LT_txt
 LXKQ
@@ -21070,7 +21054,6 @@ Lunacy
 M'Ezb
 M-laO
 M0 E
-MAIN_MENU
 MASK:
 MATCH-
 MATCHSTATS\t%s, round %d, value %d\n
@@ -21652,7 +21635,6 @@ NULLNAME
 NULL\n
 NUMERIC
 NUMERICSTRING
-NUM_STANCES
 NWzl\n\
 NXfT>o
 N[Ox
@@ -21726,8 +21708,6 @@ NextItemButton
 NextMatchVotingData
 NextSearch
 NextWeaponSelection
-NmFollowBoneMode_t
-NmTransitionRule_t
 No %s found.\n
 No 'skirmish_rank_info' key found in items schema\n
 No DATA block for resource\n
@@ -21871,10 +21851,6 @@ OBJ_dup
 OBJ_nid2ln
 OBJ_nid2obj
 OBJ_nid2sn
-OBSERVER_INTERP_NONE
-OBSERVER_INTERP_SETTLING
-OBSERVER_INTERP_STARTING
-OBSERVER_INTERP_TRAVELING
 OCSP
 OCSP Archive Cutoff
 OCSP CRL ID
@@ -21953,7 +21929,6 @@ Oakley-EC2N-4
 Object Signer
 Object Signing
 Object Signing CA
-ObserverInterpState_t
 ObserverPawn
 Obtained direct RTT measurements to relays in %d POPs.  Closest %d are:\n
 OcclusionQueryIssueLayer
@@ -22176,15 +22151,14 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08J0[
-P08Nd
+P08@J`
+P08J
+P08N
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
-P3 r
 P5[1
-P6@p
+P6PQ
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -22697,6 +22671,7 @@ Permission denied
 Permit Responses
 Permitted
 PersonalStore
+PfP>
 Phoenix Compound
 PhysBlockHeader_t
 PhysDisableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
@@ -22854,6 +22829,7 @@ Playsoundscape %s:Unknown command %s\n
 Please specify 0 or 1 with the -stream Parameter\n
 Pm8A?
 PmR"H?
+PnP?
 Point entity.
 PointsAnim
 Pole vector (raw dir: {%.2f, %.2f, %.2f})
@@ -22989,7 +22965,6 @@ PrevSearch
 Preview
 Preview Character
 Preview Lighting - Not indicative of shipping quality or performance. Please bake lightmaps.
-PreviewCharacterMode
 PreviewModelVoice
 PreviewStickerInModelPanel
 PreviousItemButton
@@ -23051,7 +23026,6 @@ ProgressDamageTaken
 ProgressSecondaryStatusText
 ProgressStatusText
 PromptShowSelectItemForCapabilityPopup
-Prone
 PropBreakableCreateAll
 PropColon
 PropData
@@ -23089,7 +23063,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
-Q$4Hu
+Q$48u
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23781,7 +23755,6 @@ RotateOrientation
 RotatePosition
 RotateQuaternionByAxisAngle
 Rotation Only
-RotationAndTranslation
 RotationDelta
 RotationDeltaAsAngularVelocity
 RotationVector
@@ -24038,10 +24011,6 @@ SSLv3
 SSLv3 part of OpenSSL 1.0.2j  26 Sep 2016
 SST data (%s) found in %s.vpk for current video settings, loading...\n
 SSTData_CSM%d
-STANCE_CROUCHING
-STANCE_CURRENT
-STANCE_DEFAULT
-STANCE_PRONE
 START
 START_SOUND
 STEAMTIMELINE_INTERFACE_V004
@@ -24052,9 +24021,6 @@ STRENGTH
 STRING1
 STRING2
 STR_COPY
-SUBCLASS_VDATA_CREATED
-SUBCLASS_VDATA_RELOADED
-SUBCLASS_VDATA_SUBCLASS_CHANGED
 SUB_Remove called on entity with health > 0\n
 SUITEB128
 SUITEB128C2
@@ -24445,7 +24411,6 @@ Server=%d, global=%d, Event %s%s\n
 ServerAvatarOverrides
 ServerForcingTeamJoin
 ServerHltvInfo
-ServerOnly
 ServerReserved
 ServerSessionID
 ServerViewAngleChangeSystem
@@ -25279,7 +25244,6 @@ Stack part of OpenSSL 1.0.2j  26 Sep 2016
 Stackable Item
 StackableItem
 Stage#%u
-StanceType_t
 Star the team intro menu.
 StarLadder 2019 Berlin CS:GO Major Championship
 StarLadder Budapest 2025 CS2 Major Championship
@@ -25472,7 +25436,6 @@ Sub R%d <- R%d - R%d
 SubPanelBgColor
 SubType
 Subclass: %s
-SubclassVDataChangeType_t
 Subject Information Access
 Submachine Gun
 SubmissionPreview
@@ -25535,7 +25498,7 @@ SystemInputLanguageChanged
 SystemMemoryMB
 T*8U
 T0.S
-T30r
+T3 r
 T61STRING
 T72[t
 TASK=%llu\n
@@ -25544,8 +25507,6 @@ TChinese
 TD_OFFSET_NORMAL
 TD_OFFSET_PACKED
 TDeath
-TEAM_INTRO
-TEAM_SELECT
 TEArmorRicochet_GameEvent_t
 TEBeamEntPoint_GameEvent_t
 TEBeamEnts_GameEvent_t
@@ -25588,11 +25549,6 @@ TE_ShatterSurfaceId
 TE_WorldDecalId
 TF_Unique_Prepend_Proper
 TGhost
-TIMELINE_COMPRESSION_AVERAGE
-TIMELINE_COMPRESSION_AVERAGE_BLEND
-TIMELINE_COMPRESSION_COUNT_PER_INTERVAL
-TIMELINE_COMPRESSION_SUM
-TIMELINE_COMPRESSION_TOTAL
 TIMEOUT
 TINY_CENTERED_HULL
 TINY_HULL
@@ -25783,7 +25739,6 @@ TestMusicVolume
 TestScriptManager
 TestSpread
 Test_CheckPoint 
-Text
 TextAngleOverride
 TextButton
 TextCursorColor
@@ -25887,7 +25842,6 @@ TimeSubmitted
 Timed out waiting %d secs for reply msg %d from GC.  Assuming connection has been disrupted.\n
 Timed out.
 Timeline
-TimelineCompression_t
 TimelineEvents
 TimerBar
 TimerIcon
@@ -26035,7 +25989,6 @@ TransformContextValue
 Transit
 TransitionToCamera
 Transition_DataDriven
-TranslationOnly
 Translucent
 Translucent %s
 Translucent Forward
@@ -26685,7 +26638,6 @@ W3fp
 W3i+,
 W>peSp>9
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.\n
-WALKING
 WARNING! Field %s is using the wrong FIELD_ type!\nFix this or you'll see a crash.\n
 WARNING: Attempted to send a steamworks gamestats row when the steamworks interface was not available!
 WARNING: BreakFadeEmissive not supported on this entity (%s %s)\n
@@ -26718,14 +26670,10 @@ WIN32_NAME_CONVERTER
 WIN32_PATHBYADDR
 WIN32_SPLITTER
 WIN32_UNLOAD
-WINGMAN_INTRO
 WL6e}:
 WLs6
 WOCR
 WOL: 0x%p (%s)
-WORLDTEXT_ORIENTATION_DEFAULT
-WORLDTEXT_ORIENTATION_FACEUSER
-WORLDTEXT_ORIENTATION_FACEUSER_UPRIGHT
 WP4$!
 WPN_ACTION_COMPLETE
 WPN_BLOCK_INSPECT
@@ -26942,7 +26890,6 @@ WorldRenderer/EnvironmentMapUseCubeArray
 WorldRenderer/EnvironmentMapsIndividualArrays
 WorldRenderer/LPVEdgeBlending
 WorldText: %s %f
-WorldTextPanelOrientation_t
 WorldUITextPanel
 Worldspace Render Bounds: [%.2f %.2f %.2f] -> [%.2f %.2f %.2f]\n
 Wrapper
@@ -28094,9 +28041,9 @@ Z~wl
 \r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \r\vpL1
 \r^mX
-\rcenter
 \ri1I
 \rjwB\t
+\rmain
 \roKK
 \rrCj
 \rusercmd.proto"V\n
@@ -28289,7 +28236,6 @@ Z~wl
 \vj0k
 \vjC7
 ]1h=bfz
-]3Pr
 ]FhSD}
 ]GT7]
 ]G\nY1
@@ -28390,6 +28336,7 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
+`6pX
 `:zQF
 `D$daM-l
 `DZG
@@ -28420,7 +28367,6 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
-aBvd
 aD/x
 aDSS
 aECDH
@@ -29075,7 +29021,7 @@ b <= sizeof ctx->buf
 b <= sizeof ctx->final
 b0M%
 b2i_PVK_bio
-b3`r
+b3Pr
 b5o-
 b=G3
 bB"`3
@@ -30024,6 +29970,7 @@ cloth_sleep_enabled
 cloth_stiffness_on_ragdoll
 clothing
 clothing1
+clothing2
 clothing4
 clothing5
 clothing6
@@ -30755,7 +30702,6 @@ d2i_SSL_SESSION
 d2i_TS_RESP
 d2i_X509_PKEY
 d35P
-d4(v
 d4\tp
 d7NSuLq2
 d=%-2d hl=%ld l=%4ld 
@@ -31449,9 +31395,6 @@ eFootIKState
 eIdleAngleSelector
 eIkChoice
 eJumpType
-eLightEffectDropped
-eLightEffectNone
-eLightEffectThirdPersonHeld
 eMoverBonemaskChoice
 eN.d\tA
 eNULL
@@ -31765,7 +31708,6 @@ equipment0
 equipment1
 equipment2
 equipment3
-equipment4
 equipment5
 equipped
 equipped_class_t
@@ -33196,6 +33138,7 @@ hour
 hours
 houseIdentifier
 hover
+hpz`
 hr_H
 href="
 hscroll
@@ -33315,7 +33258,7 @@ i2d_SSL_SESSION
 i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
-i48v
+i4(v
 i4a."
 i5BH
 iA5StringSyntax
@@ -34687,6 +34630,7 @@ kvtags
 kw.6#
 k~Rz
 l <= sizeof(c->iv)
+l&+3pq
 l&rB6
 l4Ot
 l7@J
@@ -34694,7 +34638,7 @@ lC57
 lDcW
 lM2p
 l\n\fexcludedtags
-l`w4hv
+l`w4Xv
 label_token
 ladder
 ladder_cycle
@@ -35441,7 +35385,6 @@ magnifier_resolve_rt
 magpie
 mail
 mailPreferenceOption
-main
 main-menu
 main_view
 major_highlight_charm
@@ -37035,7 +36978,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^d
+p08@H^
+p0j0)
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37052,7 +36996,6 @@ p4Z3
 p5Z3
 p5\nL,
 p618
-p6p9
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pAC_PhysicsProp
@@ -37062,6 +37005,7 @@ pD4t
 pData->GetDataDescMap() == pTemplateDataMap
 pDescription
 pDest
+pF@B
 pField
 pFilter
 pG_*h
@@ -38167,7 +38111,7 @@ r$0I
 r-IE
 r184
 r3A~
-r4Xv
+r4Hv
 r<\rND
 rAGW
 rB2pBB
@@ -42050,7 +41994,7 @@ zoomwithuiscale
 zxNIjo
 zz2K
 { "limit": %d, "selected": %s, "choices": [  %s  { "limit": 0, "label": "#SFUI_Settings_Volatile_Limit_Unlimited" }  ] }
-{4xv
+{4hv
 {5`q@roz?
 {8w1
 {9d:c

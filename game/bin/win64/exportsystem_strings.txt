@@ -989,7 +989,6 @@ Attempted to read an attribute ("%s") of unknown type %s!\n
 Autodesk
 B-Spline
 Base Layer
-Binary
 Binary (deterministic sequential ids)
 Binary: Element uses unknown element type %s\n
 Bind

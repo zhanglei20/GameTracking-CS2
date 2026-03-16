@@ -10781,7 +10781,6 @@ Country
 CoverWindow
 CrashExit
 Crashed
-Create
 CreateEventExW
 CreateEventW
 CreateFile %ls failed.
@@ -14789,7 +14788,6 @@ TempLocation
 Temporary Directory
 Teso
 Tests
-Text
 TextAlignmentRole
 TextBrowserInteraction
 TextBypassShaping

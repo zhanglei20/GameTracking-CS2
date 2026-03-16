@@ -9618,7 +9618,6 @@ Allow Flex Length
 Allow Non-Matching Bones
 Allow Rotation
 Allow non-uniform scale to skew normals
-AllowTransition
 Allows the user to override the auto-generated footcycle settings with custom settings
 Alpha Fade In Random
 Alpha Fade Out Random
@@ -9976,7 +9975,6 @@ BestQualityScale
 Between the attribute label and editor
 Bias
 Bias to Center
-Binary
 Binary (deterministic sequential ids)
 Binary: Element uses unknown element type %s\n
 Bind Current Selection to This Bone
@@ -9994,7 +9992,6 @@ Blend %.2fs
 Blend Anim Events
 Blend Time Seconds
 Blend Weights Per Vertex
-BlockTransition
 Blur Radius
 Bm_Plane
 Body Collection
@@ -10525,8 +10522,6 @@ CNmClipDocEvent_Particle::PerformValidation
 CNmClipDocEvent_RootMotion::PerformValidation
 CNmClipDocEvent_Sound::PerformValidation
 CNmClipDocEvent_TargetWarp::PerformValidation
-CNmEventRelevance_t
-CNmParticleEvent::Type_t
 COMMAND_TEXT_MODE_BUTTON
 COMMAND_TEXT_MODE_ICON
 COMMAND_TEXT_MODE_MENU
@@ -11071,8 +11066,6 @@ Clear thumbnail cache
 ClearCache
 ClearInputHistory
 Clears and populates the list from the current model
-ClientAndServer
-ClientOnly
 ClipPath
 Close Outline at Hard Edges
 Close the group automatically after a short wait (good for 'success' messages)
@@ -11247,7 +11240,6 @@ Computes 2 ( 2.71...) raised to a power
 Computes Bent Normals
 Computes e ( 2.71...) raised to a power
 Computes wrinkle map values for morphs
-ConditionallyAllowTransition
 Config
 ConfigCommand
 ConfigElement
@@ -11340,7 +11332,6 @@ Couldn't overwrite explicitly defined Morph Rule :: %s = %s
 Counteract Animation
 Counteract motion in the joint
 Courier
-Create
 Create In Hierarchy
 Create Left
 Create Right
@@ -11348,12 +11339,10 @@ CreateIndexBufferFromIndexArray(61):
 CreateTesselatedCube(265): 
 CreateTesselatedPlane(374): 
 CreateTesselatedSphere(140): 
-Create_CFG
 Creates an animation from the model's bind pose
 Criteria with nonliteral enabled state unsupported (%s)
 Cross Product Vector
 Cross Product of Vector a x Vector b
-Crossfade
 Ctrl
 Cube
 Cull Random
@@ -12659,7 +12648,6 @@ Lifetime Pre-Age Noise
 Lifetime Random
 Lifetime from Time to Impact
 Light
-LightRigType_t
 Lighting Preview
 LightingControl
 LightmapScaleBias
@@ -12738,7 +12726,6 @@ Lowest
 M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
 MATERIAL_ATTRIBUTE:%s_%i
-MATERIAL_THUMBNAIL
 MAlternateSemanticName
 MAtomicTransfersAsPlainString
 MENU
@@ -13062,7 +13049,6 @@ NOT_EQUAL
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
 NULL CELL 
 NULL VP8Io parameter in VP8Decode().
-NUM_TYPES
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 N_U9203
 Name Mode
@@ -13107,7 +13093,6 @@ NmClipAssetPreview
 NmSkeletonAssetPreview
 NmSkeletonList
 NmSkeletonReference
-NmTransitionRule_t
 No %s specified. Expected '=' '[' <%s> ']'
 No 'position' data stream for VSNAP!
 No Active Window
@@ -13429,7 +13414,6 @@ POINT
 POISONED 
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
-PREVIEW
 PURH
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 PackBits
@@ -13821,20 +13805,6 @@ R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RBF Based Anim Constraint
-RENDER_PRIM_COMPUTE_SHADER
-RENDER_PRIM_HETEROGENOUS
-RENDER_PRIM_INSTANCED_QUADS
-RENDER_PRIM_LINES
-RENDER_PRIM_LINES_WITH_ADJACENCY
-RENDER_PRIM_LINE_STRIP
-RENDER_PRIM_LINE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_MESH_SHADER
-RENDER_PRIM_POINTS
-RENDER_PRIM_TRIANGLES
-RENDER_PRIM_TRIANGLES_WITH_ADJACENCY
-RENDER_PRIM_TRIANGLE_STRIP
-RENDER_PRIM_TRIANGLE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_TYPE_COUNT
 RGBA\t
 RGBA\t%1\t%2\t%3\t%4
 RIGHT
@@ -13991,7 +13961,6 @@ RenderPendingAssetThumbnails - skipping no-longer-relevant thumbnail for %s\n
 RenderPendingAssetThumbnails - updating thumbnail for %s\n
 RenderPrimitiveBox
 RenderPrimitiveSphere
-RenderPrimitiveType_t
 Replace Materials
 Replace Specific Body's Joints
 Replace materials on an input mesh
@@ -14233,7 +14202,6 @@ SequencePicked
 Serialize: File encoding %s is undefined!\n
 Serialize: File encoding '%s' is undefined!\n
 Serialize: Format %s expects to be written to a binary format, but the buffer is a text-format buffer\n
-ServerOnly
 Set Bodygroup On Other Models
 Set Initial Values For Extract Motion Node
 Set LOD threshold from current camera distance
@@ -14587,7 +14555,6 @@ T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
-THUMBNAIL
 TIFFAppendToStrip
 TIFFClientOpen
 TIFFFetchDirectory

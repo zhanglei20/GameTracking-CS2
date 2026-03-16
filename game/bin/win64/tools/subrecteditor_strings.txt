@@ -2085,7 +2085,6 @@ Could not check in file(s): %s
 Could not check out file(s): %s
 Could not check out file\n%s
 Courier
-Create
 Create Rectangle
 Ctrl
 Custom Changelist

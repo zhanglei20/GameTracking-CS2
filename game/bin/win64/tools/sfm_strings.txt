@@ -6739,7 +6739,6 @@ Begin testing a condition composed of Observable values. Continues checking unti
 Begin testing a condition composed of Observable variable references. Continues checking until true.
 BestQualityScale
 Big : voiced alveolar stop
-Binary
 Binary (deterministic sequential ids)
 Binary: Element uses unknown element type %s\n
 Binding removed due to active drag: %s
@@ -8045,7 +8044,6 @@ Couldn't write stereo-pair image.\n
 CounterStrike
 Courier
 Courier New
-Create
 Create %s Constraint
 Create %s Multi-Constraint
 Create Animation Set
@@ -9533,7 +9531,6 @@ Lifetime Random
 Lifetime from Time to Impact
 Lifetime:
 Light
-LightRigType_t
 Lighting Preview
 LightingControl
 LightmapUV
@@ -9607,7 +9604,6 @@ M>tF
 M?globalPos@QMouseEvent@@QEBA?AVQPoint@@XZ
 M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
-MATERIAL_THUMBNAIL
 MAtomicTransfersAsPlainString
 MENU
 MMouse
@@ -9852,7 +9848,6 @@ NP? A
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
 NULL CELL 
 NULL VP8Io parameter in VP8Decode().
-NUM_TYPES
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 N_U9203
 Name:
@@ -10412,7 +10407,6 @@ PHONEME_EXTRACTOR_001
 PK?J{
 POISONED 
 PPPPPP
-PREVIEW
 PURH
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 PackBits
@@ -11741,7 +11735,6 @@ T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
 T?primaryScreen@QGuiApplication@@SAPEAVQScreen@@XZ
 TGA doesn't match source data.\n
 TGAWriter::WriteRectNoAlloc - Could not read '%s'\n
-THUMBNAIL
 THen : voiced dental fricative
 THin : voiceless dental fricative
 TIFFAppendToStrip

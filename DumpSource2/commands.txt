@@ -245,6 +245,9 @@ bot_kill (gamedll cheat)
 bot_knives_only (gamedll release)
 	Restricts the bots to only using knives
 
+bot_path (gamedll cheat)
+	bot_path <all> <t|ct> <type> <difficulty> <name> - Tells a specific bot to follow a human path, matching the given criteria.
+
 bot_pistols_only (gamedll release)
 	Restricts the bots to only using pistols
 

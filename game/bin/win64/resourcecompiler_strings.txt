@@ -20693,11 +20693,6 @@ ANDROID_VULKAN
 ANDROID_VULKAN_4_0
 ANDROID_VULKAN_4_1
 ANDROID_VULKAN_5_0
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Axis
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Line
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Pie
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Sphere
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Text
 ANSI X9.62
 ANY PRIVATE KEY
 APPEND_EXP
@@ -20995,7 +20990,6 @@ Allow non-uniform scale to skew normals
 Allow%d
 AllowBackfaceCulling
 AllowNP2Textures
-AllowTransition
 Allows the user to override the auto-generated footcycle settings with custom settings
 Alpha Fade In Random
 Alpha Fade Out Random
@@ -21720,11 +21714,9 @@ Bh;+j
 Bias
 Bias to Center
 Big Number part of OpenSSL 1.0.2j  26 Sep 2016
-Binary
 Binary (deterministic sequential ids)
 Binary: Element uses unknown element type %s\n
 BinaryBlobArg
-BinaryNodeTiming
 Bind Current Selection to This Bone
 Bind Pose Reference File
 BindIdentityInstanceIDBufferAndSetRenderState: GetMode == NULL? Can't Render\n
@@ -21777,7 +21769,6 @@ BlockDef does not contain a start key\n
 BlockDef does not contain an end key\n
 BlockDef is not one of these valid types: strip, comment, override\n
 BlockDefs
-BlockTransition
 Blocking Load for Pulse Load Entity VData
 Bloom %d
 BloomPass
@@ -22124,7 +22115,6 @@ CAnimUpdateContextBuilder
 CAnimValue
 CAnimVariant
 CAnimationGraphInstance
-CAnimationGraphVisualizerPrimitiveType
 CAnimationLayer
 CAssociateResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!\n
 CAssociateResourceBlockLoader::LoadInternal: Skipping compile of %s\n
@@ -22884,11 +22874,8 @@ CNmClipDocEvent_Particle::PerformValidation
 CNmClipDocEvent_RootMotion::PerformValidation
 CNmClipDocEvent_Sound::PerformValidation
 CNmClipDocEvent_TargetWarp::PerformValidation
-CNmEventRelevance_t
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::GetCurrentGraphTimingInfo
-CNmGraphParameterArchetype::EntryType_t
-CNmParticleEvent::Type_t
 COLLECT_DATA
 COMMENT
 COMMON
@@ -24031,8 +24018,6 @@ Clear Unselected to Zero
 Clear any previous material overrides.
 Clear selection of mesh vertices, edges, or faces.
 Clears and populates the list from the current model
-ClientAndServer
-ClientOnly
 Clip
 Clip %s has invalid tag span
 Clip %s using in Motion Item %s has invalid tag span
@@ -24407,7 +24392,6 @@ Condition to check
 Condition to check before each execution of the loop body
 Conditional
 Conditional Branch
-ConditionallyAllowTransition
 Config
 ConfigCommand
 ConfigElement
@@ -24617,7 +24601,6 @@ Count of child cursors to spawn.
 CounterStrike
 Counteract Animation
 Counteract motion in the joint
-Create
 Create In Hierarchy
 Create Left
 Create Prefab Runtime Entity
@@ -24631,7 +24614,6 @@ CreateIndexBufferFromIndexArray(61):
 CreateMovableNavMesh
 CreateProjectedNavMesh
 CreateSemaphoreW
-Create_CFG
 Created %i+%i overlay sceneobjects for %i meshes in %i groups, %i materials\n
 Creates a new temporary variable that is scoped to this flow of execution. Any node after this one should be able to access this variable.
 Creates an animation from the model's bind pose
@@ -24643,7 +24625,6 @@ Critical
 CrlID
 Cross Product Vector
 Cross Product of Vector a x Vector b
-Crossfade
 Crosshairs
 Crossover Amount
 CryptAcquireContextW
@@ -24737,7 +24718,6 @@ DBDc
 DBF-
 DBITSLC
 DBM&(
-DEFAULT
 DEF_ADD_INDEX
 DEF_GET_CLASS
 DEF_LOAD
@@ -25007,13 +24987,7 @@ Deactivate all instances
 Debug Band
 Debug Draw Color
 Debug Geo Data\n
-Debug Hold Forward
-Debug Hold Left
-Debug Hold Up
 Debug Log
-Debug X Axis Circle
-Debug Y Axis Circle
-Debug Z Axis Circle
 Debug log message
 DebugVisGeometry
 Debugger Breakpoint Disabled Img
@@ -27710,7 +27684,6 @@ Graph Events
 Graph Instance Img
 Graph Parameter Name
 Graph doc version isn't up to date, this should not occur as we upgrade it on load
-GraphIDs
 GraphNodes
 Graphs
 Grass
@@ -29900,11 +29873,9 @@ NextPath
 Nice
 NmDocEvent_PostModify_t
 NmDocEvent_PreModify_t
-NmFollowBoneMode_t
 NmSkeletonList
 NmSkeletonReference
 NmSkeletonReference contains an empty file name!. This is illegal!
-NmTransitionRule_t
 No %s named '%s'
 No %s named '%s' (failed to find parent asset)
 No %s specified. Expected '=' '[' <%s> ']'
@@ -31381,20 +31352,6 @@ RE!r
 RE4\t
 READ_N
 REAL
-RENDER_PRIM_COMPUTE_SHADER
-RENDER_PRIM_HETEROGENOUS
-RENDER_PRIM_INSTANCED_QUADS
-RENDER_PRIM_LINES
-RENDER_PRIM_LINES_WITH_ADJACENCY
-RENDER_PRIM_LINE_STRIP
-RENDER_PRIM_LINE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_MESH_SHADER
-RENDER_PRIM_POINTS
-RENDER_PRIM_TRIANGLES
-RENDER_PRIM_TRIANGLES_WITH_ADJACENCY
-RENDER_PRIM_TRIANGLE_STRIP
-RENDER_PRIM_TRIANGLE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_TYPE_COUNT
 REQUEST_CERTIFICATE
 REQUEST_VERIFY
 RESOURCECOMPILER_PERMISSIVE_PANORAMA_COMPILES
@@ -31726,7 +31683,6 @@ RenderMeshMarkup
 RenderOrder
 RenderPrimitiveBox
 RenderPrimitiveSphere
-RenderPrimitiveType_t
 RenderSystem/VulkanRequireDescriptorIndexing
 RenderWorldFromView(7842): 
 RenderWorldView
@@ -31961,7 +31917,6 @@ Rotation Spin Yaw
 Rotation Weight
 Rotation Yaw Flip Random
 Rotation Yaw Random
-RotationAndTranslation
 RotationSnapAngle
 RotationSnappingEnabled
 Rotator: %s
@@ -32069,13 +32024,6 @@ SMinSampleValue
 SNAP Compiler Version
 SNMPv2
 SNtu
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Forward
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Left
-SOLVEIKCHAINANIMNODEDEBUGSETTING_None
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Up
-SOLVEIKCHAINANIMNODEDEBUGSETTING_X_Axis_Circle
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Y_Axis_Circle
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Z_Axis_Circle
 SO~c
 SPEAK
 SPV_KHR_storage_buffer_storage_class
@@ -32401,24 +32349,6 @@ Send:
 SendNone
 SendVoiceInverseTotalSend
 SendVoiceWithNamedSend
-SeqCmd_Add
-SeqCmd_Blend
-SeqCmd_Copy
-SeqCmd_FetchCycle
-SeqCmd_FetchFrame
-SeqCmd_FetchFrameRange
-SeqCmd_IKLockInPlace
-SeqCmd_IKRestoreAll
-SeqCmd_LinearDelta
-SeqCmd_Nop
-SeqCmd_ReverseSequence
-SeqCmd_Scale
-SeqCmd_Sequence
-SeqCmd_Slerp
-SeqCmd_Subtract
-SeqCmd_Transform
-SeqCmd_Worldspace
-SeqCmd_t
 SeqPoint{%p} %s%s%s
 Sequence %d out of order (@position %d).\n
 Sequence %s already referenced by AnimOrder node
@@ -32446,7 +32376,6 @@ SerializeInputDependencies took %.3f msec for %d items\n
 SerializeLightMap
 Server LOD
 Server LOD %i does not have any bones
-ServerOnly
 Set 
 Set %s
 Set & Notify
@@ -32734,7 +32663,6 @@ Soft Link
 Softbody
 Software
 Solid Collision at Zero Weight
-SolveIKChainAnimNodeDebugSetting
 Solved
 Solved Foot 
 Solved Knee
@@ -33103,9 +33031,7 @@ Sync Event Index Condition
 Sync Exit tag to next gesture Entry tag
 Sync Group
 Sync Offset: %.2f
-SyncChildren
 SyncToFollowingGesture
-Synchronize Children
 SystemAttributes
 SystemFunction036
 T -> x: %.3f, y: %.3f, z: %.3f
@@ -33323,7 +33249,6 @@ TexCoordUV2FromUV1
 TexCoordUV2FromUV1_Center
 TexCoordUV2FromUV1_Rotation
 Texcoord0: %s\n
-Text
 Text content inside of element is not permitted.
 Texture %s doesn't have mipmaps down to %i, loaded %ix%i \n
 Texture Alignment
@@ -33726,7 +33651,6 @@ Translation Ignore Threshold
 Translation Offset
 Translation Only
 Translation Weight
-TranslationOnly
 Translucent
 Treat Warnings as Errors
 Treating Warnings as Errors. (see Gameinfo.gi, path substring: %s)\n
@@ -34070,8 +33994,6 @@ Use Actual Elapsed Time In State For Timed Events
 Use Best Size Match
 Use Block Solver
 Use Child Offset Attachment
-Use Child1
-Use Child2
 Use Curvature Drop
 Use Expensive Tangents
 Use Flat Color
@@ -34094,8 +34016,6 @@ Use UV2 for Lightmap Charting
 Use VPhysics
 Use a higher quality solver for this joint. Improves accuracy / stiffness but increases CPU cost.
 UseBaseVertex
-UseChild1
-UseChild2
 UseCustom
 UseFirstAnimationAsDefault
 UseRenderFarm

@@ -1910,7 +1910,6 @@ Before triggering a resource reload, wait for input dependencies to stop being w
 BestQualityScale
 Bh;+j
 Big Number part of OpenSSL 1.0.2j  26 Sep 2016
-Binary
 Binary (deterministic sequential ids)
 Binary: Element uses unknown element type %s\n
 Biometric Info
@@ -2458,7 +2457,6 @@ DBF-
 DBM&(
 DEBUG: CAsset::UpdateDependencyInformationAndCompileState - %s\n
 DEBUG: CAssetSystem::HandleNewPossibleAssetFile - '%s'\n
-DEFAULT
 DEF_ADD_INDEX
 DEF_GET_CLASS
 DEF_LOAD

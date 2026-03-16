@@ -74,7 +74,6 @@ Alignment: %d bytes%s\n
 AnimResourceFrameSegment_t
 AnimationResourceData_t
 BAD BINDING\n
-Binary
 Binding for '%s' is not a class\n
 C:\buildworker\csgo_rel_win64\build\_build_\schemasystem\_vpc_schemasystem\default\win64\_msvc_\Retail\schemasystem.pdb
 C:\buildworker\csgo_rel_win64\build\src\schemasystem\schemamismatchreport.cpp

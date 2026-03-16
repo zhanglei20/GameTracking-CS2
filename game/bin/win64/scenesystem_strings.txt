@@ -5155,7 +5155,6 @@ Testing how various types of items are interacting with the IsItemXXX functions.
 Tex Mem
 Tex: %dx%d
 TexID = %s, BackendUserData = %p
-Text
 Text Baseline Alignment
 Text Clipping
 Text Filter

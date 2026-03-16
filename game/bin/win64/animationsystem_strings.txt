@@ -2148,11 +2148,6 @@ AE_WPN_EMPTYSHOTS_TO_POSEPARAM
 AE_WPN_NEXTCLIP_TO_POSEPARAM
 AE_WPN_PLAYWPNSOUND
 AE_ZOMBIE_POPHEADCRAB event format missing velocity parameter! Usage: event AE_ZOMBIE_POPHEADCRAB "<BoneName> <Speed>" \n
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Axis
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Line
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Pie
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Sphere
-ANIMATIONGRAPHVISUALIZERPRIMITIVETYPE_Text
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 Abs Float
 Abs Int
@@ -2175,7 +2170,6 @@ Additive Blend: %.2f%%
 Adjusted foot position; offset: %.2f
 AllocateAndLoad failed for '%s' (%s)\n
 AllocateAndLoad failed for '%s'\n
-AllowTransition
 And R%d <- R%d && R%d
 Anim Clip
 AnimGraph
@@ -2239,12 +2233,10 @@ Base-10 logarithm
 Base-2 logarithm
 Begin testing a condition composed of Observable values. Continues checking until canceled.
 Begin testing a condition composed of Observable variable references. Continues checking until true.
-BinaryNodeTiming
 Blend (Masked): %.2f%%
 Blend: %.2f%%
 BlendNode
 Block Selection
-BlockTransition
 Bm_Plane
 BodyGroup: %s => %d
 Bone %d to %d
@@ -2256,11 +2248,6 @@ BoneConstraintRbf :: Cannot find output bone "%s" :: %s\n
 BoneConstraintRbf :: Invalid input %d or output %d bone count :: %s\n
 BoneConstraintRbf :: input bone count %d != input pose count %d :: %s\n
 BoneConstraintRbf :: output bone count %d != output pose count %d :: %s\n
-BoneTransformSpace_Invalid
-BoneTransformSpace_Model
-BoneTransformSpace_Parent
-BoneTransformSpace_World
-BoneTransformSpace_t
 C:\buildworker\csgo_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_msvc_\Retail\animationsystem.pdb
 C:\buildworker\csgo_rel_win64\build\src\animationsystem\animationsystem.cpp
 C:\buildworker\csgo_rel_win64\build\src\animlib\graph\animgraph_instance.cpp
@@ -2272,7 +2259,6 @@ CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (1)\
 CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (2)\n
 CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (3)\n
 CAnimationGraphInstance
-CAnimationGraphVisualizerPrimitiveType
 CAnimationLayer
 CAnimationSystem: %s, definition invalid. It's loaded but dependencies may have failed to load.\n
 CAnimationSystem: %s, definition is not loaded or has bad data.\n
@@ -2337,12 +2323,10 @@ CModelMaterialGroupName
 CMoverInstanceData
 CNetworkedCycle
 CNmAdditiveBlendTask - Trying to blend additively, using a non-additive pose\n
-CNmEventRelevance_t
 CNmGraphDefinition::KV3TransferPostLoadFn failed to FindDeclaredClass( '%s' )
 CNmGraphInstance::CNmGraphInstance
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::GetCurrentGraphTimingInfo
-CNmParticleEvent::Type_t
 CPPScript Component
 CPairedSequenceInstanceData
 CParentAttachmentName
@@ -2558,14 +2542,11 @@ Clamp value to range (float)
 Clamp value to range (int)
 Class does not allow allocation from its schema binding
 Class does not allow construction from its schema binding
-ClientAndServer
-ClientOnly
 Commit Step
 Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
 Completed
 Computes 2 ( 2.71...) raised to a power
 Computes e ( 2.71...) raised to a power
-ConditionallyAllowTransition
 Considered Option
 Control Point1
 Control Point2
@@ -2581,8 +2562,6 @@ Copy R%d <- R%d
 Cosine of angle. Input in radians, output in radians
 Couldn't find bone mask with ID: %s
 Couldn't load KV3 for resource: %s
-Create
-Create_CFG
 Creating Bone Masks for Skeleton: Could find secondary skeleton for bone mask: %s\n
 Cross Product Vector
 Cross Product of Vector a x Vector b
@@ -2604,12 +2583,6 @@ DampedPathMotorInstanceData_t
 Data_Branch1xy
 Data_Branch1zBranch2x
 Data_Branch2yz
-Debug Hold Forward
-Debug Hold Left
-Debug Hold Up
-Debug X Axis Circle
-Debug Y Axis Circle
-Debug Z Axis Circle
 Deg2 Rad
 Demo Settings Component
 Desired Kill Priority
@@ -2950,8 +2923,6 @@ NetVarConfigIndex
 NetworkedCycle
 Newly tilted bone.
 Next step normal
-NmFollowBoneMode_t
-NmTransitionRule_t
 No DATA block for resource '%s'\n
 No DATA block for resource\n
 No ID Set
@@ -3037,20 +3008,6 @@ Q\tV_powd
 Quaternion
 QuaternionStorage
 R Sqrt
-RENDER_PRIM_COMPUTE_SHADER
-RENDER_PRIM_HETEROGENOUS
-RENDER_PRIM_INSTANCED_QUADS
-RENDER_PRIM_LINES
-RENDER_PRIM_LINES_WITH_ADJACENCY
-RENDER_PRIM_LINE_STRIP
-RENDER_PRIM_LINE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_MESH_SHADER
-RENDER_PRIM_POINTS
-RENDER_PRIM_TRIANGLES
-RENDER_PRIM_TRIANGLES_WITH_ADJACENCY
-RENDER_PRIM_TRIANGLE_STRIP
-RENDER_PRIM_TRIANGLE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_TYPE_COUNT
 RESOURCE_TYPE_ANIMATION_GROUP_INTERNAL
 RESOURCE_TYPE_ANIMATION_INTERNAL
 RESOURCE_TYPE_NM_CLIP
@@ -3081,7 +3038,6 @@ Remove all elements from 'a' which are invalid instances.
 Remove all elements from 'a' which compare equal to 'element'.
 Remove the element at the given index in 'a', decreasing its count by one and moving the elements after index.
 Remove the given tag from this cursor. If other cursors are waiting on us, they will resume.
-RenderPrimitiveType_t
 Requested Target
 Requested next step
 Requesting a negative velocity is not supported!
@@ -3100,16 +3056,8 @@ Returns up to the maximum requested elements. Never grows the array (unlike SetC
 Root to newly tilted bone
 Root to tilt bone original
 Rotation Only
-RotationAndTranslation
 Round - round float up or down to integer
 Round Float
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Forward
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Left
-SOLVEIKCHAINANIMNODEDEBUGSETTING_None
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Up
-SOLVEIKCHAINANIMNODEDEBUGSETTING_X_Axis_Circle
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Y_Axis_Circle
-SOLVEIKCHAINANIMNODEDEBUGSETTING_Z_Axis_Circle
 Sample
 Saturate
 Saturate (clamps float between 0 and 1)
@@ -3120,28 +3068,9 @@ Script Component
 Selected Option
 SelectorInstanceData_t
 SelectorNode
-SeqCmd_Add
-SeqCmd_Blend
-SeqCmd_Copy
-SeqCmd_FetchCycle
-SeqCmd_FetchFrame
-SeqCmd_FetchFrameRange
-SeqCmd_IKLockInPlace
-SeqCmd_IKRestoreAll
-SeqCmd_LinearDelta
-SeqCmd_Nop
-SeqCmd_ReverseSequence
-SeqCmd_Scale
-SeqCmd_Sequence
-SeqCmd_Slerp
-SeqCmd_Subtract
-SeqCmd_Transform
-SeqCmd_Worldspace
-SeqCmd_t
 Sequence out of range: %d
 Sequence( %s, %.3f ) : %.3f
 SequenceData
-ServerOnly
 Set the number of elements in the array.
 SetBlackboardReference BR%d (%s) <- R%d 
 SetVar V%d (%s) <- R%d
@@ -3156,7 +3085,6 @@ Slope Direction (World)
 SlopeData
 Snap Frame (%s)
 Solid Collision at Zero Weight
-SolveIKChainAnimNodeDebugSetting
 Solved
 Solved Foot 
 Solved Knee
@@ -3195,8 +3123,6 @@ Strings Are Equal Case Sensitive
 Sub Graph
 Sub R%d <- R%d - R%d
 Symbol
-SyncChildren
-Synchronize Children
 TAG_
 THEM
 TILT_TWIST
@@ -3225,7 +3151,6 @@ Tilt delta from up offset
 Time Remaining
 Time since the start of the timer
 ToPivot
-TranslationOnly
 Tried to load a polymorphic pointer with no '%s' key
 Tried to load resource reference '%s' from a value without a resource reference specific type.
 Trying to set an offset on an unset node!
@@ -3244,10 +3169,6 @@ Unnamed Tag
 Unsupported use of property accessor "%s.%s", property accessors can only be used variables
 Unsupported version %d for resource '%s' (Expected %d)\n
 UpdateContext
-Use Child1
-Use Child2
-UseChild1
-UseChild2
 Used to flag a test as having failed.
 VPK^
 Value 0-1 how far along duration (always 0 if duration is -1)

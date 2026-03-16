@@ -308,28 +308,32 @@ $\n\tword_list
 '\n\fglobal_stats
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
-(1FY
-(1aY
-(1eY
-(1kY
-(5KY
-(5OY
-(5lY
-(5wY
-(A2Y
-(A6Y
+(11Y
+(1LY
+(1nY
+(5RY
+(5eY
+(5oY
+(92Y
+(9bY
+(AGY
+(AVY
+(AYY
+(AaY
 (Documents Filter - Use | for OR, space for AND)
-(ErY
+(EdY
+(EmY
 (Filter)
-(MGY
-(MXY
-(MZY
-(MmY
-(MyY
+(IfY
+(MsY
 (No Active Session)
 (Outliner Filter)
-(QLY
-(UNY
+(QQY
+(QkY
+(QvY
+(U3Y
+(UcY
+(YiY
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -454,22 +458,17 @@ $\n\tword_list
 (\v2\f.CSOEconItem
 (\v2\r.CVDiagnostic"
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(aUY
-(avY
+(aZY
 (default)
-(ecY
-(i4Y
-(itY
-(m0Y
-(m1Y
-(mQY
-(mnY
-(mpY
-(mxY
-(u3Y
-(uVY
-(y2Y
-(yFY
+(i2Y
+(iLY
+(iMY
+(qGY
+(qnY
+(qwY
+(udY
+(uzY
+(yDY
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n!penalty_account_id_sessions_green
@@ -2898,6 +2897,7 @@ $\n\tword_list
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
 8@J0k
 8B0k
+8Q'Y
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n0k
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
@@ -4397,6 +4397,7 @@ $\n\tword_list
 @20k
 @6PK@
 @HPX`hv@p@
+@HkS
 @NPq@
 @\n\fSingleObject
 @\n\vserver_type
@@ -4981,7 +4982,6 @@ Could not resolve item type to root folder.
 Coupon Index
 Coupons
 Courier
-Create
 Create %1
 Create Copy
 Create Copy From '%1'
@@ -7011,9 +7011,14 @@ _toolsautosave
 `20k
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
+`ADY
+`QCY
+`QEY
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 `b0k
 `d0k
+`qJY
+`yQY
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
@@ -7624,6 +7629,7 @@ gungameprogressive
 gungametrbomb
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?event@QTabWidget@@MEAA_NPEAVQEvent@@@Z
+h]9Y
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
 halfgridsnap
 handle
@@ -7653,7 +7659,6 @@ horizontal_header
 horizontal_header_labels
 hours
 hpz0
-hq7Y
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
 iValueIn
 i\f?forward@QTextBrowser@@UEAAXXZ

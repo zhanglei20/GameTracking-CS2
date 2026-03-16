@@ -1588,7 +1588,6 @@ Techno
 Techno-Industrial
 Temporary failure in name resolution
 Terror
-Text
 The 'keys' atom with the invalid key count: %u\n
 The AVFormatContext is not in set to bitexact mode, only the AVCodecContext. If this is not intended, set AVFormatContext.flags |= AVFMT_FLAG_BITEXACT.\n
 The Matroska muxer does not yet support muxing %s\n

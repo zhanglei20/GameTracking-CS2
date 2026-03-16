@@ -6465,7 +6465,6 @@ Less R%d <- R%d < R%d
 Less Than <
 LessEq R%d <- R%d <= R%d
 Lifetime Random (Init Float)
-LightRigType_t
 Lighting Preview
 LightingControl
 LightmapUV
@@ -6526,7 +6525,6 @@ Lucida Sans,72,-1,5,50,0,0,0,0,0,Regular
 M?globalPos@QMouseEvent@@QEBA?AVQPoint@@XZ
 M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
-MATERIAL_THUMBNAIL
 MAlternateSemanticName
 MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
@@ -6761,7 +6759,6 @@ NO_UI
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
 NULL CELL 
 NULL VP8Io parameter in VP8Decode().
-NUM_TYPES
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 N_U9203
 Name Remapping
@@ -7268,7 +7265,6 @@ POINT
 POISONED 
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
-PREVIEW
 PURH
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 PackBits
@@ -7570,20 +7566,6 @@ R?mimeData@QClipboard@@QEBAPEBVQMimeData@@W4Mode@1@@Z
 R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
-RENDER_PRIM_COMPUTE_SHADER
-RENDER_PRIM_HETEROGENOUS
-RENDER_PRIM_INSTANCED_QUADS
-RENDER_PRIM_LINES
-RENDER_PRIM_LINES_WITH_ADJACENCY
-RENDER_PRIM_LINE_STRIP
-RENDER_PRIM_LINE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_MESH_SHADER
-RENDER_PRIM_POINTS
-RENDER_PRIM_TRIANGLES
-RENDER_PRIM_TRIANGLES_WITH_ADJACENCY
-RENDER_PRIM_TRIANGLE_STRIP
-RENDER_PRIM_TRIANGLE_STRIP_WITH_ADJACENCY
-RENDER_PRIM_TYPE_COUNT
 RGBA\t
 RGBA\t%1\t%2\t%3\t%4
 RIGHT
@@ -7684,7 +7666,6 @@ Render UI material to RT
 Render Wireframe
 Render fog sprites
 RenderDebugOverlays
-RenderPrimitiveType_t
 Renderer
 Repeat Operation
 Replace:
@@ -8097,7 +8078,6 @@ T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
 TA?uw
-THUMBNAIL
 TIFFAppendToStrip
 TIFFClientOpen
 TIFFFetchDirectory
@@ -8151,7 +8131,6 @@ Ternary Conditional
 Test Mode Assert True
 Test if an object is of the required type. If so, use that result as an object of the required type. Keywords: coerce, reinterpret.
 TestCheckpoint: %s
-Text
 TextProgramaticallyChanged
 TextureFormat
 TextureHeight

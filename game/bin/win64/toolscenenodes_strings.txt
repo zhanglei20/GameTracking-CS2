@@ -5503,7 +5503,6 @@ BestQualityScale
 Between the attribute label and editor
 Bh;+j
 Big Number part of OpenSSL 1.0.2j  26 Sep 2016
-Binary
 Binary (deterministic sequential ids)
 Binary: Element uses unknown element type %s\n
 BindIdentityInstanceIDBufferAndSetRenderState: GetMode == NULL? Can't Render\n
@@ -6749,7 +6748,6 @@ DAL\fL@
 DBDc
 DBF-
 DBM&(
-DEFAULT
 DEF_ADD_INDEX
 DEF_GET_CLASS
 DEF_LOAD
