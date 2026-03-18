@@ -59,12 +59,32 @@ jobs:
 
           git push -f origin "$BRANCH"
 
-      - name: Create PR for upstream sync
-        uses: repo-sync/pull-request@v2
-        with:
-          source_branch: upstream-sync
-          destination_branch: master
-          pr_title: "Upstream Sync: SteamTracking/GameTracking-CS2"
-          pr_body: "自动同步上游仓库变更"
-          # 403 Resource not accessible by integration 时，必须使用 PAT（推荐：SYNC_TOKEN）
-          github_token: ${{ secrets.SYNC_TOKEN || secrets.GITHUB_TOKEN }}
+      - name: Ensure SYNC_TOKEN exists
+        shell: bash
+        run: |
+          if [ -z "${SYNC_TOKEN:-}" ]; then
+            echo "Missing SYNC_TOKEN secret. Create a PAT and save it as SYNC_TOKEN." >&2
+            exit 1
+          fi
+        env:
+          SYNC_TOKEN: ${{ secrets.SYNC_TOKEN }}
+
+      - name: Create or reuse PR for upstream sync
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          # If a PR already exists, do nothing.
+          existing_number="$(gh pr list --base master --head upstream-sync --json number -q '.[0].number' || true)"
+          if [ -n "${existing_number:-}" ]; then
+            echo "PR already exists: #${existing_number}"
+            exit 0
+          fi
+
+          gh pr create \
+            --base master \
+            --head upstream-sync \
+            --title "Upstream Sync: SteamTracking/GameTracking-CS2" \
+            --body "自动同步上游仓库变更（已忽略 .github/workflows/* 的变更，保留本 fork 的 workflow 配置）"
