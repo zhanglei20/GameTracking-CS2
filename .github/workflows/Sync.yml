@@ -1,17 +1,17 @@
-# .github/workflows/sync.yml
 name: Sync Fork with Upstream
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'  # 每30分钟
+    - cron: '*/30 * * * *' # 每30分钟
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    
+      pull-requests: write
+
     steps:
       - name: Checkout fork
         uses: actions/checkout@v4
@@ -29,18 +29,34 @@ jobs:
           git remote add upstream https://github.com/SteamTracking/GameTracking-CS2.git
           git fetch upstream
 
-      - name: Sync upstream to local
+      - name: Create sync branch (ignore .github/workflows changes)
+        id: sync
+        shell: bash
         run: |
-          git checkout master
-          git merge upstream/master --no-edit
-          git push origin master
-        continue-on-error: true  # 如果没有变更会失败，忽略错误
+          set -euo pipefail
 
-      - name: Create PR if merge fails
-        if: failure()
+          git checkout master
+          git pull --ff-only origin master
+
+          BRANCH="upstream-sync"
+          git checkout -B "$BRANCH"
+          git merge upstream/master --no-edit
+
+          # 忽略上游对 workflow 的变更，恢复为 fork 当前 master 的 .github/workflows/*
+          git checkout origin/master -- .github/workflows/ 2>/dev/null || true
+          if git diff --staged --quiet && git diff --quiet -- .github/workflows/; then
+            : # 无变更，无需提交
+          else
+            git add .github/workflows/
+            git commit -m "chore(sync): keep fork workflows, ignore upstream workflow changes" || true
+          fi
+
+          git push -f origin "$BRANCH"
+
+      - name: Create PR for upstream sync
         uses: repo-sync/pull-request@v2
         with:
-          source_branch: upstream/master
+          source_branch: upstream-sync
           destination_branch: master
           pr_title: "Upstream Sync: SteamTracking/GameTracking-CS2"
           pr_body: "自动同步上游仓库变更"
