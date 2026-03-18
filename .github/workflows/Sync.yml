@@ -1,130 +1,51 @@
-name: Sync Fork with Upstream
+name: Sync upstream and open PR
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *' # 每30分钟
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-
     steps:
-      - name: Checkout fork
+      - name: Checkout fork (master)
         uses: actions/checkout@v4
         with:
+          ref: master
           fetch-depth: 0
-          # 推送含 .github/workflows 的提交需要 workflows 权限，请在此仓库 Settings → Secrets 中配置 SYNC_TOKEN（PAT 勾选 workflows）
-          token: ${{ secrets.SYNC_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.SYNC_TOKEN || github.token }}
 
-      - name: Configure Git
+      - name: Add upstream and merge
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Add upstream remote
-        run: |
           git remote add upstream https://github.com/SteamTracking/GameTracking-CS2.git
           git fetch upstream
 
-      - name: Create sync branch (ignore .github/workflows changes)
-        id: sync
-        shell: bash
-        run: |
-          set -euo pipefail
+          # 在当前工作区把 upstream/master 合并进来（用于生成 PR 的内容）
+          git merge upstream/master --no-edit || {
+            echo "Merge conflict. Keeping merge result for PR resolution."
+            exit 0
+          }
 
-          git checkout master
-          git pull --ff-only origin master
-
-          BRANCH="upstream-sync"
-          git checkout -B "$BRANCH"
-          git merge upstream/master --no-edit
-
-          # 忽略上游对 .github/workflows/* 的变更：先删掉上游有而 fork master 没有的文件，再恢复 fork 的 workflow 文件
-          for f in $(git ls-tree -r --name-only HEAD -- .github/workflows/ 2>/dev/null); do
-            if ! git show origin/master:"$f" &>/dev/null; then
-              git rm -f "$f" 2>/dev/null || true
-            fi
-          done
+          # 可选：忽略上游对 workflow 的变更（保留你自己的）
           git checkout origin/master -- .github/workflows/ 2>/dev/null || true
-          if [ -d .github/workflows ]; then
-            git add -f .github/workflows/
-          fi
-          if ! git diff --cached --quiet; then
-            git commit -m "chore(sync): keep fork workflows, ignore upstream workflow changes"
-          fi
 
-          git push -f origin "$BRANCH"
-
-      - name: Ensure SYNC_TOKEN exists
-        shell: bash
-        run: |
-          if [ -z "${SYNC_TOKEN:-}" ]; then
-            echo "Missing SYNC_TOKEN secret. Create a PAT and save it as SYNC_TOKEN." >&2
-            exit 1
-          fi
-        env:
-          SYNC_TOKEN: ${{ secrets.SYNC_TOKEN }}
-
-      - name: Create or reuse PR for upstream sync
-        shell: bash
-        env:
-          GH_TOKEN: ${{ secrets.SYNC_TOKEN }}
-        run: |
-          set -euo pipefail
-
-          echo "Repo: $GITHUB_REPOSITORY"
-          echo "Actor: $GITHUB_ACTOR"
-
-          # If a PR already exists, do nothing.
-          existing_number="$(gh pr list --base master --head upstream-sync --json number -q '.[0].number' || true)"
-          if [ -n "${existing_number:-}" ]; then
-            echo "PR already exists: #${existing_number}"
-            exit 0
-          fi
-
-          title="Upstream Sync: SteamTracking/GameTracking-CS2"
-          body="自动同步上游仓库变更（已忽略 .github/workflows/* 的变更，保留本 fork 的 workflow 配置）"
-
-          # Prefer gh; if GraphQL is blocked for this token, fall back to REST API.
-          if gh pr create --base master --head upstream-sync --title "$title" --body "$body"; then
-            exit 0
-          fi
-
-          echo "gh pr create failed; trying REST API fallback..." >&2
-          owner="$(echo "$GITHUB_REPOSITORY" | cut -d/ -f1)"
-          repo="$(echo "$GITHUB_REPOSITORY" | cut -d/ -f2)"
-
-          response="$(curl -sS -X POST \
-            -H "Authorization: Bearer $GH_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${owner}/${repo}/pulls" \
-            -d "$(python - <<'PY'
-import json
-print(json.dumps({
-  "title": "Upstream Sync: SteamTracking/GameTracking-CS2",
-  "head": "upstream-sync",
-  "base": "master",
-  "body": "自动同步上游仓库变更（已忽略 .github/workflows/* 的变更，保留本 fork 的 workflow 配置）",
-}))
-PY
-)" )"
-
-          # Print a minimal, non-sensitive summary.
-          python - <<'PY'
-import json, sys
-try:
-  data=json.loads(sys.stdin.read())
-except Exception:
-  print("Failed to parse REST response as JSON", file=sys.stderr)
-  sys.exit(1)
-if "html_url" in data:
-  print("PR created:", data["html_url"])
-  sys.exit(0)
-print("REST API create PR failed:", data.get("message", data), file=sys.stderr)
-sys.exit(1)
-PY
-          <<<"$response"
+      - name: Create PR to master
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.SYNC_TOKEN || github.token }}
+          branch: upstream-sync
+          base: master
+          title: "Upstream Sync: SteamTracking/GameTracking-CS2"
+          body: "自动同步上游仓库变更（PR 模式）"
+          commit-message: "chore(sync): merge upstream into upstream-sync"
+          delete-branch: false
