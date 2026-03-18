@@ -76,6 +76,9 @@ jobs:
         run: |
           set -euo pipefail
 
+          echo "Repo: $GITHUB_REPOSITORY"
+          echo "Actor: $GITHUB_ACTOR"
+
           # If a PR already exists, do nothing.
           existing_number="$(gh pr list --base master --head upstream-sync --json number -q '.[0].number' || true)"
           if [ -n "${existing_number:-}" ]; then
@@ -83,8 +86,45 @@ jobs:
             exit 0
           fi
 
-          gh pr create \
-            --base master \
-            --head upstream-sync \
-            --title "Upstream Sync: SteamTracking/GameTracking-CS2" \
-            --body "自动同步上游仓库变更（已忽略 .github/workflows/* 的变更，保留本 fork 的 workflow 配置）"
+          title="Upstream Sync: SteamTracking/GameTracking-CS2"
+          body="自动同步上游仓库变更（已忽略 .github/workflows/* 的变更，保留本 fork 的 workflow 配置）"
+
+          # Prefer gh; if GraphQL is blocked for this token, fall back to REST API.
+          if gh pr create --base master --head upstream-sync --title "$title" --body "$body"; then
+            exit 0
+          fi
+
+          echo "gh pr create failed; trying REST API fallback..." >&2
+          owner="$(echo "$GITHUB_REPOSITORY" | cut -d/ -f1)"
+          repo="$(echo "$GITHUB_REPOSITORY" | cut -d/ -f2)"
+
+          response="$(curl -sS -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${owner}/${repo}/pulls" \
+            -d "$(python - <<'PY'
+import json
+print(json.dumps({
+  "title": "Upstream Sync: SteamTracking/GameTracking-CS2",
+  "head": "upstream-sync",
+  "base": "master",
+  "body": "自动同步上游仓库变更（已忽略 .github/workflows/* 的变更，保留本 fork 的 workflow 配置）",
+}))
+PY
+)" )"
+
+          # Print a minimal, non-sensitive summary.
+          python - <<'PY'
+import json, sys
+try:
+  data=json.loads(sys.stdin.read())
+except Exception:
+  print("Failed to parse REST response as JSON", file=sys.stderr)
+  sys.exit(1)
+if "html_url" in data:
+  print("PR created:", data["html_url"])
+  sys.exit(0)
+print("REST API create PR failed:", data.get("message", data), file=sys.stderr)
+sys.exit(1)
+PY
+          <<<"$response"
