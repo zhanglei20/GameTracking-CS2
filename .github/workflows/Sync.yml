@@ -95,33 +95,16 @@ jobs:
           owner="$(echo "$GITHUB_REPOSITORY" | cut -d/ -f1)"
           repo="$(echo "$GITHUB_REPOSITORY" | cut -d/ -f2)"
 
+          payload="$(python -c 'import json; import os; print(json.dumps({\"title\": os.environ[\"PR_TITLE\"], \"head\": \"upstream-sync\", \"base\": \"master\", \"body\": os.environ[\"PR_BODY\"]}))' \
+            PR_TITLE="$title" PR_BODY="$body")"
+
           response="$(curl -sS -X POST \
             -H "Authorization: Bearer $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${owner}/${repo}/pulls" \
-            -d "$(python - <<'PY'
-import json
-print(json.dumps({
-  "title": "Upstream Sync: SteamTracking/GameTracking-CS2",
-  "head": "upstream-sync",
-  "base": "master",
-  "body": "自动同步上游仓库变更（已忽略 .github/workflows/* 的变更，保留本 fork 的 workflow 配置）",
-}))
-PY
-)" )"
+            -d "$payload")"
 
           # Print a minimal, non-sensitive summary.
-          python - <<'PY'
-import json, sys
-try:
-  data=json.loads(sys.stdin.read())
-except Exception:
-  print("Failed to parse REST response as JSON", file=sys.stderr)
-  sys.exit(1)
-if "html_url" in data:
-  print("PR created:", data["html_url"])
-  sys.exit(0)
-print("REST API create PR failed:", data.get("message", data), file=sys.stderr)
-sys.exit(1)
-PY
-          <<<"$response"
+          python -c 'import json,sys; data=json.loads(sys.stdin.read()); \
+            (print(\"PR created:\", data[\"html_url\"]) if \"html_url\" in data else (print(\"REST API create PR failed:\", data.get(\"message\", data), file=sys.stderr), exit(1)))' \
+            <<<"$response"
