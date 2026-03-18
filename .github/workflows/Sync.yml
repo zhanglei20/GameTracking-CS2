@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      workflows: write
       pull-requests: write
 
     steps:
@@ -17,7 +18,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # 推送含 .github/workflows 的提交需要 workflows 权限，请在此仓库 Settings → Secrets 中配置 SYNC_TOKEN（PAT 勾选 workflows）
+          token: ${{ secrets.SYNC_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Configure Git
         run: |
@@ -42,13 +44,18 @@ jobs:
           git checkout -B "$BRANCH"
           git merge upstream/master --no-edit
 
-          # 忽略上游对 workflow 的变更，恢复为 fork 当前 master 的 .github/workflows/*
+          # 忽略上游对 .github/workflows/* 的变更：先删掉上游有而 fork master 没有的文件，再恢复 fork 的 workflow 文件
+          for f in $(git ls-tree -r --name-only HEAD -- .github/workflows/ 2>/dev/null); do
+            if ! git show origin/master:"$f" &>/dev/null; then
+              git rm -f "$f" 2>/dev/null || true
+            fi
+          done
           git checkout origin/master -- .github/workflows/ 2>/dev/null || true
-          if git diff --staged --quiet && git diff --quiet -- .github/workflows/; then
-            : # 无变更，无需提交
-          else
-            git add .github/workflows/
-            git commit -m "chore(sync): keep fork workflows, ignore upstream workflow changes" || true
+          if [ -d .github/workflows ]; then
+            git add -f .github/workflows/
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(sync): keep fork workflows, ignore upstream workflow changes"
           fi
 
           git push -f origin "$BRANCH"
