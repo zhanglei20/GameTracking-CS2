@@ -3122,6 +3122,7 @@ $tI(knN
 ?WriteZeroed@CCircularBuffer@@QEAAHH@Z
 ?ati_compress_wrapper.dll
 ?f`Y4
+?hCW
 ?qBJ
 ?rAj
 ?rJRTS\Rg>`H`CeIkHq7v4}4v4u7

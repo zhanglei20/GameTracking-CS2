@@ -111,9 +111,7 @@
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
  (08@HPX`j
- (08@HPXb`
  (08@HPZ
- (0X`hpz`
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -221,7 +219,6 @@
 !(meth->ext_flags & SSL_EXT_FLAG_SENT)
 !.CPlayer_GetNicknameList_Response"<
 !.CPublishedFile_Subscribe_Request
-!3Pq
 !3mmXs
 !5!A!I!O!Y![!_!s!}!
 !9iV
@@ -2004,9 +2001,9 @@ $g#8lu#
 $hRh 
 $keychain_clutch
 $keychain_headshot
+$ne2
 $sticker_rarity_color
 $taser_charge
-$ze2
 %%%d.%ds %%%d.%ds
 %%%d.%ds [%%3.3s] (%%5d) %%%d.%ds:
 %%%d.%ds [%%s::%%s] 
@@ -2239,7 +2236,7 @@ $ze2
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
-%n48v
+%n48
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -2693,7 +2690,6 @@ $ze2
 (.CPlayer_SetPerFriendPreferences_Request
 (0'yX
 (0x%08X)'??'
-(4Hu
 (5Me
 (5jP
 (ACTIVE)
@@ -2988,7 +2984,7 @@ $ze2
 ).CPlayer_GetPerFriendPreferences_Response"M
 ).CPlayer_SetCommunityPreferences_Response"+
 ).CPlayer_SetPerFriendPreferences_Response"G
-)24hu
+)24h
 )4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )A service for accessing Steam player dataB
 )App Id this file is being published FROM.
@@ -3118,6 +3114,7 @@ $ze2
 +gcconnect
 +gcconnect%08X%08X%08X
 +gcconnectG%08X
++gcconnectL%08X%08X%08X
 +iv_attack
 +iv_attack2
 +iv_duck
@@ -3205,7 +3202,6 @@ $ze2
 --forward-all-args--
 --single-literal--
 -.CPlayer_GetNewSteamAnnouncementState_Request
--4Xu
 -5X5
 -;-C-I-M-a-e-q-
 -> Success (%d attempts)\n
@@ -10924,7 +10920,6 @@ $ze2
 02V8[
 05=k
 08@HR
-08@J`
 08bX
 09,h
 0;Q5[
@@ -11271,7 +11266,6 @@ $ze2
 4Ch;
 4F0I
 4Mv8
-4QL2
 4Redirection URI provided during client registration.2
 4Zis
 4\fPl
@@ -11286,6 +11280,7 @@ $ze2
 4\n0GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW
 4\tV_isvalidhex
 4\vU44
+4aL2
 4f h
 4tpD
 4zj@1;IJ
@@ -11339,7 +11334,6 @@ $ze2
 6144
 62$|S)6f
 64CK\vH
-64xu
 6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 67-s
@@ -11708,12 +11702,11 @@ $ze2
 @!@%@+@1@?@C@E@]@a@g@m@
 @08N
 @0pp
-@6PW
+@6pj
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
 @Global Blend - Attempting a global blend with an additive pose! This is undefined behavior!\n
-@HVp
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11726,8 +11719,8 @@ $ze2
 @\n\tPlacement
 @\n\vserver_type
 @cl_aggregate_particles
+@clothing
 @dKb]
-@equipment4
 @fff>fff>fff>fff>
 @ffffff
 @i1V
@@ -12014,7 +12007,6 @@ AcknowledgeNewItembyItemID
 AcknowledgeRentalExpiration
 Acknowledged_HasInsufficientPagefile
 Acknowledged_HasLowAvailableVirtualMemory
-Acs_pet_placement
 Action
 ActionAbandonOngoingMatch
 ActionAcknowledgeNotifications
@@ -12158,6 +12150,7 @@ Alternate icon definition index %d must be greater than or equal to zero
 Alternate icon definition index '%s' (%llu) must be greater than zero
 AltitudeMax
 AltitudeMin
+Am_nVariant
 Ambient %s:Unknown command %s\n
 Ambient Occlusion Proxies
 Ambient Occlusion Proxies Downsample Depth
@@ -12168,6 +12161,7 @@ AmbientOcclusionProxyLightPosition_0
 AmbientOcclusionProxyLightPosition_1
 AmbientOcclusionProxyLightPosition_2
 AmbientOcclusionProxyLightPosition_3
+AmmoClipBar
 AnalogueCursor
 Anchor
 Anchor Actor
@@ -12548,6 +12542,7 @@ BITSTRING
 BITSTR_CB
 BITWRAP
 BIsHost
+BIsLocalServerHost
 BIsPlayerInParty
 BIsSteamInputActiveAndControllersConnected
 BIsTransparent
@@ -12619,7 +12614,6 @@ BRouteMsgToJob
 BScrollParentToFitWhenFocused
 BSecureAllowed
 BSetProperty
-BShows extra data when bullets penetrate. (use sv_showimpacts_time to increase time shown)
 BSignedInToFriends
 BT5f
 BUCKSHOT
@@ -12778,6 +12772,7 @@ BlurHorz
 BlurOperationPanel
 BlurPopupPanel
 BlurVert
+Bm_totalHitsOnServer
 BoX5
 Body Component Scriptdesc
 BodyGameSystem
@@ -16315,7 +16310,7 @@ CreateTempCombinedItemWithTool
 CreateUniformRandomStream
 CreateVideoPlayer
 Created Composite Material Render Target: %s [%s]\n
-Created Map Annotation %d/%d\n
+Created Map Annotation %d (of possible %d offline or %d online)\n
 Created physics for %s\n
 Creates a new particle effect
 Creates a new particle effect that only plays for the specified player
@@ -16422,7 +16417,6 @@ DAE!
 DAL\fL@
 DBDc
 DBF-
-DCPathQueryComponent
 DEAD
 DEBRIS
 DECALS_SAVE_RESTORE_VERSION
@@ -18084,6 +18078,7 @@ Failed to allocate an instance of class '%s'
 Failed to apply FLC data to resource '%s': %s\n
 Failed to compile cubemaps\n
 Failed to compute mesh tangents for mesh using material %s -- %s\n
+Failed to connect to friend: %s\n
 Failed to create any instances from %s point_template!
 Failed to create camera of type '%u'\n
 Failed to create reference econ item for preview model (id %llu)
@@ -18111,6 +18106,8 @@ Failed to initialize sticker kit ID %d '%s'
 Failed to initiate query for UGC annotations\n
 Failed to initiate query for UGC items\n
 Failed to intitiate match download based on full match info!\n
+Failed to join friend -- last client action changed\n
+Failed to join friend -- last joined friend id mismatch\n
 Failed to join the team we requested.
 Failed to load %s - KV3 error: %s\n
 Failed to load %s: %s
@@ -18751,6 +18748,7 @@ GetAllSeasonPremierLeaderboardRegions
 GetAllSeasonPremierLeaderboards
 GetAmmoType
 GetAnimGraph2TimeDeltaAndUpdatePrevTick
+GetAnnotationsViewingLevel
 GetAntiAddictionTimeRemaining
 GetAppID
 GetArrayElement R%d <- R%d[ R%d ]
@@ -18908,6 +18906,7 @@ GetFloat(name) : returns the convar as a float. May return null if no such conva
 GetFocusChild
 GetFocusIndex
 GetFrameCount
+GetFriendAddon
 GetFriendClanId
 GetFriendClanName
 GetFriendClanTag
@@ -20675,7 +20674,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
-JY30r
+JY30
 JZIX
 J\nHBF
 J`KL
@@ -20696,6 +20695,7 @@ JoinPanel--Animate-FadeOut
 JoinPanelParent
 JoinTextBot
 JoinedSigma
+Joinfriend: connecting to %s\n
 JoiningPopupPanelID
 Jq;v
 Jq?a
@@ -20816,7 +20816,7 @@ LOG_MESSAGE
 LONG
 LONG_C2I
 LPVIndex
-LS&\nKH
+LS&\nK
 LT[N
 LT_txt
 LXKQ
@@ -20931,6 +20931,8 @@ Lily
 Limited
 Lin_Acc
 Line
+Line nodes are restricted in live matches. This node will only appear during practice\n
+Line nodes are restricted in live matches.\n
 Line2D
 LineGraph
 LineGraphOuter
@@ -20957,6 +20959,8 @@ ListenForScrollIntoView
 ListenToGameEvent
 Listing %d secondary scene worlds:\n
 Lite
+Live Map Annotation limit of %d reached. This node will only appear during practice\n
+Live Map Annotation limit of %d reached.\n
 Load Skel %s 0x%llx\n
 Load certs from files in a directory
 Load file into cache
@@ -21233,7 +21237,7 @@ Manatee
 ManhackCut
 ManuallyTriggerSpawnGroupCompletion
 Map "%s" is using the obsolete HoldAnimation key on a prop_dynamic with model %s\n
-Map Annotation limit of %d reached.\n
+Map Annotation hard limit of %d reached.\n
 Map Name
 Map Token 
 Map group: %s\n
@@ -22151,14 +22155,13 @@ P-224
 P-256
 P-384
 P-521
-P08@J`
 P08J
 P08N
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
 P5[1
-P6PQ
+P6@e
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -22671,7 +22674,7 @@ Permission denied
 Permit Responses
 Permitted
 PersonalStore
-PfP>
+Pf@R
 Phoenix Compound
 PhysBlockHeader_t
 PhysDisableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
@@ -22829,7 +22832,7 @@ Playsoundscape %s:Unknown command %s\n
 Please specify 0 or 1 with the -stream Parameter\n
 Pm8A?
 PmR"H?
-PnP?
+Pn@S
 Point entity.
 PointsAnim
 Pole vector (raw dir: {%.2f, %.2f, %.2f})
@@ -23063,7 +23066,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
-Q$48u
+Q$48
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -25498,7 +25501,6 @@ SystemInputLanguageChanged
 SystemMemoryMB
 T*8U
 T0.S
-T3 r
 T61STRING
 T72[t
 TASK=%llu\n
@@ -25973,7 +25975,7 @@ Tournaments: RequestManagementMatchList( %d )...\n
 TournamentsAPI
 Tournaments_EventsReceived
 Tournaments_FavoritesReceived
-Tournaments_RequestMatch
+Tournaments_RequestMatch_Response
 Trace using: %s\n
 TraceCollideable
 TraceHull
@@ -28043,7 +28045,6 @@ Z~wl
 \r^mX
 \ri1I
 \rjwB\t
-\rmain
 \roKK
 \rrCj
 \rusercmd.proto"V\n
@@ -28336,7 +28337,7 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`6pX
+`6pk
 `:zQF
 `D$daM-l
 `DZG
@@ -28769,15 +28770,14 @@ annotation_create text "title" "text" float|surface [faceplayer]
 annotations/local
 annotations/local/%s
 annotations/local/%s/%s
-annotations/local/%s/%s%s
 annotations/local/%s/%s.png
 annotations/local/%s/%s.txt
 annotations/local/%s/*.txt
 annotations/local/*
 annotations/official/%s/%s
-annotations/official/%s/%s%s
 annotations/official/%s/*.txt
 annotations/official/*
+annotations_file_at_freezetime
 annotations_local
 annotations_none
 annotations_official
@@ -29021,7 +29021,6 @@ b <= sizeof ctx->buf
 b <= sizeof ctx->final
 b0M%
 b2i_PVK_bio
-b3Pr
 b5o-
 b=G3
 bB"`3
@@ -29968,7 +29967,6 @@ cloth_collision
 cloth_ground_plane
 cloth_sleep_enabled
 cloth_stiffness_on_ragdoll
-clothing
 clothing1
 clothing2
 clothing4
@@ -30472,6 +30470,7 @@ cs_minimap_boundary
 cs_motel
 cs_museum
 cs_office
+cs_pet_placement
 cs_player_controller
 cs_player_manager
 cs_portrait_world_callback_handler
@@ -31708,6 +31707,7 @@ equipment0
 equipment1
 equipment2
 equipment3
+equipment4
 equipment5
 equipped
 equipped_class_t
@@ -33138,7 +33138,6 @@ hour
 hours
 houseIdentifier
 hover
-hpz`
 hr_H
 href="
 hscroll
@@ -33238,7 +33237,6 @@ i%YR
 i%|kB
 i(ERemoteStoragePublishedFileVisibility) Visibility of the published file (private, friends, public, etc.)
 i(Optional) Maximum number of results to return on this call. Defaults to a maximum of 500 files returned.
-i0K2
 i2b_PVK_bio
 i2d ecpkparameters failure
 i2d_ASN1_SET
@@ -33258,9 +33256,9 @@ i2d_SSL_SESSION
 i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
-i4(v
 i4a."
 i5BH
+i@K2
 iA5StringSyntax
 iAmmoType
 iC!l
@@ -34009,6 +34007,7 @@ is_event_quest
 is_hidden_set
 is_identifying
 is_kill
+is_local_server
 is_pack_bundle
 is_pack_item
 is_predicting_body_shot_fx
@@ -34630,7 +34629,7 @@ kvtags
 kw.6#
 k~Rz
 l <= sizeof(c->iv)
-l&+3pq
+l&+3p
 l&rB6
 l4Ot
 l7@J
@@ -34638,7 +34637,7 @@ lC57
 lDcW
 lM2p
 l\n\fexcludedtags
-l`w4Xv
+l`w4X
 label_token
 ladder
 ladder_cycle
@@ -35385,6 +35384,7 @@ magnifier_resolve_rt
 magpie
 mail
 mailPreferenceOption
+main
 main-menu
 main_view
 major_highlight_charm
@@ -36979,7 +36979,7 @@ p.ppBasis
 p.prime
 p.tpBasis
 p08@H^
-p0j0)
+p0j =
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -36999,13 +36999,12 @@ p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pAC_PhysicsProp
-pBGame skill level.
 pCheckpointName
 pD4t
 pData->GetDataDescMap() == pTemplateDataMap
 pDescription
 pDest
-pF@B
+pF0V
 pField
 pFilter
 pG_*h
@@ -37024,7 +37023,7 @@ pSourceFunc
 pSpawnedEntityName
 pSpecified
 pTagName
-pTournaments_RequestMatch_Response
+pTournaments_RequestMatch
 pU>\AL
 pWeapon
 pWorldObject
@@ -38111,7 +38110,6 @@ r$0I
 r-IE
 r184
 r3A~
-r4Hv
 r<\rND
 rAGW
 rB2pBB
@@ -41994,7 +41992,6 @@ zoomwithuiscale
 zxNIjo
 zz2K
 { "limit": %d, "selected": %s, "choices": [  %s  { "limit": 0, "label": "#SFUI_Settings_Volatile_Limit_Unlimited" }  ] }
-{4hv
 {5`q@roz?
 {8w1
 {9d:c

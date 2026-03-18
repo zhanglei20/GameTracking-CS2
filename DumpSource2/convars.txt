@@ -1531,9 +1531,6 @@ cl_itemimages_dynamically_generated 2 (clientdll archive release)
 cl_jitter_bad_threshold_up 20 (min: 1, max: 100, userinfo)
 	When upstream packet jitter in a frame exceeds this threshold (ms), the frame is considered to have 'irregular delivery'.  This is a derived value and should not be modified manually
 
-cl_join_advertise 1 (clientdll archive)
-	Advertise joinable game in progress to Steam friends, otherwise need a Steam invite (2: all servers, 1: official servers, 0: none)
-
 cl_lagcompensation_test_auto_target false (developmentonly clientdll)
 	Auto-pick value of cl_lagcompensation_test_target.
 
@@ -9527,6 +9524,9 @@ sv_allow_votes true (gamedll release commandline_enforced)
 
 sv_alltalk false (gamedll notify release commandline_enforced)
 	Players can hear all other players' voice communication, no team restrictions
+
+sv_annotation_limits_max_rounds_per_half 5 (min: -1, gamedll clientdll replicated release)
+	Hard limit on maximum number of rounds (per half) that annotations can be seen in a live match
 
 sv_auto_adjust_bot_difficulty true (gamedll release commandline_enforced)
 	Adjust the difficulty of bots each round based on contribution score.

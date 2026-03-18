@@ -600,7 +600,6 @@ Adjusts bone transforms so that physics joints don't appear violated (limits)
 Adjusts bone transforms so that physics joints don't appear violated (orientation)
 Adjusts bone transforms so that physics joints don't appear violated (translation)
 Advanced
-Advertise joinable game in progress to Steam friends, otherwise need a Steam invite (2: all servers, 1: official servers, 0: none)
 After a competitive match finishes rematch voting extra time is given for rankings.
 After hitting throttling limits for streamout, allow it to continue up to this number of milliseconds.
 After this many seconds of being basically stationary, the ragdoll will go to sleep.
@@ -4638,7 +4637,7 @@ DOOR_CLOSED
 DOOR_CLOSING
 DOOR_OPEN
 DOOR_OPENING
-DOOR_ROTATING_OPEN_BOT
+DOOR_ROT
 DOOR_SPAWN_AJAR
 DOOR_SPAWN_CLOSED
 DOOR_SPAWN_OPEN_BACK
@@ -6342,6 +6341,7 @@ Half Blend Add
 Handle Settings
 HandshakeTagState_t
 HandshakeTagType_t
+Hard limit on maximum number of rounds (per half) that annotations can be seen in a live match
 HardCancel
 Harmonics
 HaticsType_Default
@@ -13597,7 +13597,6 @@ cl_ironsight_min_channel_color
 cl_ironsight_usecrosshaircolor
 cl_itemimages_dynamically_generated
 cl_jitter_bad_threshold_up
-cl_join_advertise
 cl_lagcompensation_test_auto_target
 cl_lagcompensation_test_target
 cl_language
@@ -25211,6 +25210,7 @@ m_step
 m_stillTimer
 m_stopTime
 m_strAlias
+m_strAnnotationsWorkshopId
 m_strAttachmentName
 m_strAttrName
 m_strAttrNameForVar
@@ -29309,6 +29309,7 @@ sv_allow_switching_weapon_handedness
 sv_allow_votes
 sv_alltalk
 sv_annotation_give_weapon
+sv_annotation_limits_max_rounds_per_half
 sv_annotation_remove_weapon
 sv_auto_adjust_bot_difficulty
 sv_auto_cstrafe_attempt_window

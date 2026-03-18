@@ -131,7 +131,10 @@
 				<CSGOBlurTarget id="PauseMenuBtns" class="pausemenu-navbar-container" blurrects="CSGOLoadingScreen">
 					<Panel id="JsMainMenuNavBar" class="pausemenu-navbar">
 						<Panel id="id-play-menu-pausemenu-annotations" class="PauseMenuModeOnly">
-							<CSGOSettingsAnnotationsDropDown id="id-play-menu-pausemenu-annotations-dropdown" class="PopupButton White" />
+							<Panel id="id-play-menu-pausemenu-annotations__internal">
+								<Label id="id-play-menu-pausemenu-annotations-roundrestricted" text="#annotations_exceed_round_limit" class="stratum-regular-condensed" />
+								<CSGOSettingsAnnotationsDropDown id="id-play-menu-pausemenu-annotations-dropdown" class="PopupButton White" />
+							</Panel>
 						</Panel>
 						<RadioButton id="MainMenuNavBarResumeGame" class="pausemenu-navbar__btn-small PauseMenuModeOnly" group="NavBar" onactivate="$.DispatchEvent( &apos;CSGOMainMenuResumeGame&apos; );">
 							<Image textureheight="32" texturewidth="-1" src="s2r://panorama/images/icons/ui/resumegame.vsvg" />

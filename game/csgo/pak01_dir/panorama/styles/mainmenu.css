@@ -1683,13 +1683,37 @@ RadioButton.content-navbar__tabs__btn--small Label
 
 #id-play-menu-pausemenu-annotations
 {
-	width: 200px;
 	vertical-align:center;
 }
 
-#id-play-menu-pausemenu-annotations.no-guides
+#id-play-menu-pausemenu-annotations:disabled
+{
+	opacity: 0.5;
+}
+
+#id-play-menu-pausemenu-annotations:disabled .PopupButton:hover
+{
+	background-color: #ffffff00;
+}
+
+#id-play-menu-pausemenu-annotations #id-play-menu-pausemenu-annotations__internal
+{
+	width: 200px;
+}
+
+#id-play-menu-pausemenu-annotations #id-play-menu-pausemenu-annotations-roundrestricted
 {
 	visibility: collapse;
+	width: 100%;
+	font-size: 26px;
+	vertical-align: center;
+	text-align: center;
+	margin: 10px;
+}
+
+#id-play-menu-pausemenu-annotations #id-play-menu-pausemenu-annotations-roundrestricted.unhide
+{
+	visibility: visible;
 }
 
 #id-play-menu-pausemenu-annotations #id-play-menu-pausemenu-annotations-dropdown

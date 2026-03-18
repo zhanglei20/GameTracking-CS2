@@ -11,4 +11,5 @@ class CSAdditionalPerRoundStats_t
 	int32 m_nDefuseStarts;
 	int32 m_nHostagePickUps;
 	int32 m_numTeammatesFlashed;
+	CUtlString m_strAnnotationsWorkshopId;
 };

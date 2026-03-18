@@ -1,11 +1,10 @@
  (%d remaining)...
  (08@HPX`j0k
- (08@HPXb0
+ (08@HPXb
  (08@HPZ0k
- (08@HR0
- (08@J0
+ (08@HR
  (08@J0k
- (0X`hpz0
+ (0X`hpz
  (Boosted +1)
  (repeat)
  - IsCheckedOut: %s\n
@@ -308,32 +307,27 @@ $\n\tword_list
 '\n\fglobal_stats
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
-(11Y
-(1LY
-(1nY
-(5RY
-(5eY
-(5oY
-(92Y
+(54Y
+(9GY
 (9bY
-(AGY
-(AVY
-(AYY
-(AaY
+(AJY
+(AoY
+(AsY
 (Documents Filter - Use | for OR, space for AND)
-(EdY
-(EmY
+(EQY
 (Filter)
-(IfY
-(MsY
+(IYY
+(MhY
 (No Active Session)
 (Outliner Filter)
-(QQY
+(QFY
+(QaY
+(QeY
 (QkY
-(QvY
-(U3Y
-(UcY
-(YiY
+(UKY
+(UOY
+(UlY
+(UwY
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -458,17 +452,17 @@ $\n\tword_list
 (\v2\f.CSOEconItem
 (\v2\r.CVDiagnostic"
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(aZY
+(a2Y
+(a6Y
 (default)
-(i2Y
-(iLY
-(iMY
-(qGY
-(qnY
-(qwY
-(udY
-(uzY
-(yDY
+(erY
+(mGY
+(mXY
+(mZY
+(mmY
+(myY
+(qLY
+(uNY
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n!penalty_account_id_sessions_green
@@ -2645,7 +2639,7 @@ $\n\tword_list
 /stickers
 /weapons/customization/paints_gloves/
 08@HR0k
-08@J0
+08@J
 08B0k
 0\n+k_EGCItemCustomizationNotification_NameItem
 0\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings
@@ -2806,7 +2800,6 @@ $\n\tword_list
 2\n\nline_items
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp4
 2aboutToShow()
 2activated( int )
 2changed()
@@ -2873,8 +2866,6 @@ $\n\tword_list
 5\n\tkeychains
 5\n\vtype_caches
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
-60P@
-60d@
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -2890,6 +2881,7 @@ $\n\tword_list
 6\n\nvariations
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
+6py@
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
 7\n2k_EGCItemCustomizationNotification_XpShopAckTracks
 7\n2k_EGCItemCustomizationNotification_XpShopUseTicket
@@ -2897,7 +2889,6 @@ $\n\tword_list
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
 8@J0k
 8B0k
-8Q'Y
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n0k
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
@@ -4395,10 +4386,9 @@ $\n\tword_list
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @08N
 @20k
-@6PK@
-@HPX`hv@p@
-@HkS
-@NPq@
+@60L@
+@HPX`hv q@
+@N0r@
 @\n\fSingleObject
 @\n\vserver_type
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
@@ -5740,10 +5730,11 @@ OrigMat
 Other Tools
 Outliner
 OverlayProjectionDirection
-P08@J0
+P08@J
 P08J
 P08N
 P20k
+P6`k@
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
@@ -5794,7 +5785,6 @@ Patina
 Patina Extended
 Pedestal Model
 PerVertexLighting
-Pf0R@
 PgDn
 PgUp
 Physics
@@ -6471,7 +6461,7 @@ Zip system failure.\n
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n EGCItemCustomizationNotification
 \f\n?deselect@QLineEdit@@QEAAXXZ
-\fp\vPh
+\fp\vPH
 \n CMsgItemAcknowledged__DEPRECATED
 \n!CMsgGCCStrike15_v2_Party_Register
 \n!CMsgGCCStrike15_v2_PlayersProfile
@@ -7009,16 +6999,13 @@ _sm.png
 _sticker_capsule
 _toolsautosave
 `20k
+`60a@
+`6pa@
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
-`ADY
-`QCY
-`QEY
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 `b0k
 `d0k
-`qJY
-`yQY
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
@@ -7446,6 +7433,7 @@ externalFileAttribs
 extraFieldLength
 extra_wearable
 eyes_follow
+fPu@
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f\r?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
 failping_account_id_sessions
@@ -7510,7 +7498,6 @@ force_gc_to_generate
 force_output_description
 foreground
 forever
-fpt@
 fractionrounds
 free_trial_account
 frozen
@@ -7629,7 +7616,6 @@ gungameprogressive
 gungametrbomb
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?event@QTabWidget@@MEAA_NPEAVQEvent@@@Z
-h]9Y
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
 halfgridsnap
 handle
@@ -7658,7 +7644,6 @@ horizontalStretch
 horizontal_header
 horizontal_header_labels
 hours
-hpz0
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
 iValueIn
 i\f?forward@QTextBrowser@@UEAAXXZ
@@ -7714,6 +7699,7 @@ is commodity
 is_collection
 is_hidden_set
 is_identifying
+is_local_server
 is_optional
 is_pack_bundle
 is_polymorphic
@@ -8391,12 +8377,14 @@ owcaseid
 owner_only
 owns_polymorphic_data
 p08@H^
+p0j`
 p20k
-p6pQ@
+p6PR@
 pButton
 pCurrentFocusWidget
 pData
 pEvent
+pF`U@
 pFilter
 pPrevFocusWidget
 pResultKV
@@ -8550,6 +8538,7 @@ quester_account_id
 questid
 queue_position
 quiet
+r\vpl
 random_attribute_templates
 random_attributes
 randomizable
@@ -8641,6 +8630,7 @@ rounds
 roundstats_legacy
 roundtenseccount
 rowspan
+rpV'
 rpt_abusivemodels
 rpt_inventoryabuse
 rpt_listingabuse
