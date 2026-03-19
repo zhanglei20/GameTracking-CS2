@@ -32,18 +32,20 @@ jobs:
           git fetch upstream
           git fetch origin master
 
-          # 将 upstream/master 的变更 squash 到当前 master（不会产生 merge commit，避免 create-pull-request 的 cherry-pick merge-commit 问题）
+          # 将 upstream/master 的变更 squash 到当前 master（不会产生 merge commit）
           git merge --squash upstream/master
 
-          # 忽略上游对 .github/workflows/* 的任何变更：恢复为 fork master 的目录（可能为空）
+          # 忽略上游对 .github/workflows/* 的变更：暂存区和工作区都恢复为 fork master 的状态
+          git reset origin/master -- .github/workflows 2>/dev/null || true
           rm -rf .github/workflows
           git checkout origin/master -- .github/workflows 2>/dev/null || true
           git clean -fd -- .github/workflows 2>/dev/null || true
 
-          # 防呆：如果还有 workflows diff，直接失败，避免 push 被 workflow scope 拦截
-          if ! git diff --quiet -- .github/workflows; then
+          # 防呆：暂存区和工作区里 workflows 都不能有 diff，避免 push 被 workflow scope 拦截
+          if ! (git diff --quiet -- .github/workflows && git diff --cached --quiet -- .github/workflows); then
             echo "Refusing: .github/workflows diff still exists after restore." >&2
-            git diff --name-only -- .github/workflows >&2 || true
+            git diff --name-only -- .github/workflows 2>/dev/null || true
+            git diff --cached --name-only -- .github/workflows 2>/dev/null || true
             exit 1
           fi
 
