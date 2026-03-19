@@ -325,8 +325,7 @@ var ContextmenuPlayerCard;
                 return GameStateAPI.BIsLocalServerHost() && !_IsSelf(id);
             },
             OnSelected: (xuid) => {
-                const name = FriendsListAPI.GetFriendName(xuid);
-                GameInterfaceAPI.ConsoleCommand("kick " + name);
+                FriendsListAPI.Kick(xuid);
                 $.DispatchEvent('ContextMenuEvent', '');
             },
         }

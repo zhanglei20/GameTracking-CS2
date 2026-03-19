@@ -110,8 +110,11 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j
- (08@HPZ
+ (08@HPX`jpn
+ (08@HPXb@
+ (08@HPZpn
+ (08@Jpn
+ (0X`hpz@
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -2236,7 +2239,7 @@ $taser_charge
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
-%n48
+%n4H
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -2984,7 +2987,7 @@ $taser_charge
 ).CPlayer_GetPerFriendPreferences_Response"M
 ).CPlayer_SetCommunityPreferences_Response"+
 ).CPlayer_SetPerFriendPreferences_Response"G
-)24h
+)24x
 )4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )A service for accessing Steam player dataB
 )App Id this file is being published FROM.
@@ -10919,7 +10922,9 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR
+08@HRpn
+08@J@
+08Bpn
 08bX
 09,h
 0;Q5[
@@ -11192,6 +11197,7 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
+2\vpt
 2^pV
 2a"l
 2bT~
@@ -11412,7 +11418,9 @@ $taser_charge
 8835-KLXV-0292
 8<pl
 8= zp
+8@Jpn
 8A6j
+8Bpn
 8Client ID for which to count the number of issued tokens"
 8GZS
 8Gets the list of nicknames this user has for other users
@@ -11428,6 +11436,7 @@ $taser_charge
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\n4GAME_PARTICLE_MANAGER_EVENT_CLEAR_MODELLIST_OVERRIDE
 8\n\nPlayerMask
+8\npn
 8\tV_iswdigit
 8\v8!83858A8G8K8S8W8_8e8o8q8}8
 8]Vc2
@@ -11702,11 +11711,13 @@ $taser_charge
 @!@%@+@1@?@C@E@]@a@g@m@
 @08N
 @0pp
-@6pj
+@2pn
+@60l
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
 @Global Blend - Attempting a global blend with an additive pose! This is undefined behavior!\n
+@HVP
 @MfKZ
 @Pgl
 @Pu\rm
@@ -18043,6 +18054,7 @@ F\n ParticleFreezeTransitionOverride
 F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
+F\npn
 F\rH'4
 Facade
 Face %s
@@ -20674,7 +20686,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
-JY30
+JY3@
 JZIX
 J\nHBF
 J`KL
@@ -22155,13 +22167,15 @@ P-224
 P-256
 P-384
 P-521
+P08@J@
 P08J
 P08N
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
+P2pn
 P5[1
-P6@e
+P60f
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -22674,7 +22688,7 @@ Permission denied
 Permit Responses
 Permitted
 PersonalStore
-Pf@R
+Pf0S
 Phoenix Compound
 PhysBlockHeader_t
 PhysDisableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
@@ -22704,6 +22718,7 @@ Pitch: %6.1f   Yaw: %6.1f   Dist: %6.1f %19s
 Pitch: %6.1f   Yaw: %6.1f %38s
 Pitstop
 PivotPaint
+Pjpn
 PlaceDecalEvent_t
 PlaceholderText
 PlantedBomb
@@ -22832,7 +22847,7 @@ Playsoundscape %s:Unknown command %s\n
 Please specify 0 or 1 with the -stream Parameter\n
 Pm8A?
 PmR"H?
-Pn@S
+Pn0T
 Point entity.
 PointsAnim
 Pole vector (raw dir: {%.2f, %.2f, %.2f})
@@ -23066,7 +23081,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
-Q$48
+Q$4H
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23309,6 +23324,7 @@ RULESHERE
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
+R\vpt
 R]Di
 Rad2 Deg
 Radar
@@ -27070,7 +27086,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr
+X`hrpn
 Xd3h
 XfJ7
 XjfR
@@ -28336,8 +28352,10 @@ _var
 _xU`u
 _}eOk
 `28)fk
+`2pn
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`6pk
+`6Pm
+`6pn
 `:zQF
 `D$daM-l
 `DZG
@@ -28348,6 +28366,8 @@ _}eOk
 `\n\rvector_values
 `anonymous-namespace'::DynamicLockHelper<struct `anonymous namespace'::SmokeConstantBuffer_t>::Lock
 `anonymous-namespace'::DynamicLockHelper<struct `anonymous namespace'::SmokeLightProbeVolumeData_t>::Lock
+`bpn
+`dpn
 `fPw.\vM
 `h9T~
 `o_je
@@ -33138,6 +33158,7 @@ hour
 hours
 houseIdentifier
 hover
+hpz@
 hr_H
 href="
 hscroll
@@ -34577,6 +34598,7 @@ keylength
 keys not set
 khaki
 kicked
+kickid %d
 kill eater
 kill eater score type
 kill--%d
@@ -34629,7 +34651,6 @@ kvtags
 kw.6#
 k~Rz
 l <= sizeof(c->iv)
-l&+3p
 l&rB6
 l4Ot
 l7@J
@@ -34637,7 +34658,7 @@ lC57
 lDcW
 lM2p
 l\n\fexcludedtags
-l`w4X
+l`w4h
 label_token
 ladder
 ladder_cycle
@@ -36979,7 +37000,6 @@ p.ppBasis
 p.prime
 p.tpBasis
 p08@H^
-p0j =
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -36991,6 +37011,7 @@ p2p_ping could not convert "%s" to a CPeerToPeerAddress\n
 p2p_ping could not ping "%s" because they are an unknown peer\n
 p2p_ping requires a destination address\n
 p2p_ping sending to "%s"\n
+p2pn
 p2{l
 p4Z3
 p5Z3
@@ -37004,7 +37025,7 @@ pD4t
 pData->GetDataDescMap() == pTemplateDataMap
 pDescription
 pDest
-pF0V
+pF W
 pField
 pFilter
 pG_*h
@@ -37363,6 +37384,7 @@ pbeWithSHA1And40BitRC2-CBC
 pbeWithSHA1And40BitRC4
 pbeWithSHA1AndDES-CBC
 pbeWithSHA1AndRC2-CBC
+pbpn
 pcPathLengthConstraint
 peachpuff
 pearlescent

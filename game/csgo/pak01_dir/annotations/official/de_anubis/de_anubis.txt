@@ -469,7 +469,7 @@
 		Type = "grenade"
 		Id = "6ca5b675-d7f2-44bd-b2db-5a3d12122240"
 		SubType = "destination"
-		Position = [ 76.692711, -1480.657471, -9.96875 ]
+		Position = [ 155.466827, 520.862854, -29.96875 ]
 		Angles = [ -30.253454, 86.278053, 0.0 ]
 		VisiblePfx = true
 		TextPositionOffset = [ 0.0, 0.0, 0.0 ]
