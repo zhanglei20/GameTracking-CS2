@@ -60,3 +60,17 @@ jobs:
           body: "自动同步上游仓库变更；已忽略上游 .github/workflows/* 的变更。"
           commit-message: "chore(sync): sync upstream changes"
           delete-branch: false
+
+      - name: Merge PR into master
+        if: ${{ steps.cpr.outputs.pull-request-number != '' }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.SYNC_TOKEN || github.token }}
+        run: |
+          set -euo pipefail
+          pr="${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Merging PR #$pr into master"
+          # 尝试自动合并并删除分支；--admin 用于绕过部分限制（如果你有权限）
+          gh pr merge "$pr" --merge --delete-branch --admin || \
+          gh pr merge "$pr" --merge --delete-branch
+
