@@ -1,4 +1,4 @@
-name: Sync upstream and auto-merge
+name: Sync upstream PR + auto-merge
 
 on:
   workflow_dispatch:
@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.SYNC_TOKEN || github.token }}
 
-      - name: Merge upstream into branch (ignore upstream workflows changes)
+      - name: Sync upstream and prepare PR branch
         shell: bash
         run: |
           set -euo pipefail
@@ -28,17 +28,25 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # upstream 可能已存在，允许失败
           git remote add upstream https://github.com/SteamTracking/GameTracking-CS2.git || true
           git fetch upstream
 
-          git checkout -B upstream-sync
+          # 确保 origin/master 存在（用于恢复 workflows）
+          git fetch origin master
 
-          # 合并上游
+          git checkout -B upstream-sync
           git merge upstream/master --no-edit
 
-          # 忽略上游对 workflows 的改动：把它们恢复成你 fork(master) 当前版本
-          git checkout origin/master -- .github/workflows 2>/dev/null || true
+          # 忽略上游对 .github/workflows/* 的变更：恢复为 fork(master) 的目录
+          git restore --source=origin/master --staged --worktree -- .github/workflows 2>/dev/null || true
+          git clean -fd -- .github/workflows 2>/dev/null || true
+
+          # 强校验：确保 workflows 目录没有 diff（否则后续 push/PR 可能触发 workflow 权限拦截）
+          if ! git diff --quiet -- .github/workflows; then
+            echo "Refusing: .github/workflows diff still exists after restore."
+            git diff --name-only -- .github/workflows
+            exit 1
+          fi
 
       - name: Create or update PR
         id: cpr
@@ -48,13 +56,13 @@ jobs:
           branch: upstream-sync
           base: master
           title: "Upstream Sync: SteamTracking/GameTracking-CS2"
-          body: "自动同步上游仓库变更；已忽略上游 .github/workflows/* 的变更。"
+          body: "自动同步上游变更；已忽略上游 .github/workflows/* 的变更。"
           commit-message: "chore(sync): merge upstream into upstream-sync"
           delete-branch: false
 
-      - name: Auto-merge PR
+      - name: Enable auto-merge for the PR
         if: steps.cpr.outputs.pull-request-number != ''
-        uses: peter-evans/merge-pull-request@v2
+        uses: peter-evans/enable-pull-request-automerge@v3
         with:
           token: ${{ secrets.SYNC_TOKEN || github.token }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
