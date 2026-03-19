@@ -1,14 +1,7 @@
-                          
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  ?timerEvent@QAbstractSlider@@MEAAXPEAVQTimerEvent@@@Z
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
  Cursor: %1 
  FPS: 888.88 
  Frame: 888.88 
- Type Descriptor'
  avg %5.2f stddev %6.3f [%6.3f->%6.3f]
  fps
 !?type@QGraphicsItem@@UEBAHXZ
@@ -50,22 +43,15 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\v?createData@QMapDataBase@@SAPEAU1@XZ
 )\v?enterEvent@QWidget@@MEAAXPEAVQEvent@@@Z
-*StO9>T
 , %d frames recovered. Continue?
 , ?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 ,\f?focusOutEvent@QGraphicsItem@@MEAAXPEAVQFocusEvent@@@Z
 -"?updateGeometries@QTreeView@@MEAAXXZ
-.00cfg
 .?AV?$CBaseAppSystem@VIExternalSubTool@@@@
-.?AV?$CRefCountServiceBase@VCRefMT@@@@
-.?AV?$CRefCounted@V?$CRefCountServiceBase@VCRefMT@@@@@@
 .?AV?$CTier0AppSystem@VIExternalSubTool@@$0A@@@
 .?AV?$CTier1AppSystem@VIExternalSubTool@@$0A@@@
 .?AV?$CTier2AppSystem@VIExternalSubTool@@$0A@@@
 .?AV?$CTier3AppSystem@VIExternalSubTool@@$0A@@@
-.?AVCBaseVModuleMetadataProvider@@
-.?AVCModuleMetadataProvider_ResourceManifests@@
-.?AVCPostConnectCallback@@
 .?AVCQBudgetBarsWidget@@
 .?AVCQBudgetHistoryBarsWidget@@
 .?AVCQBudgetHistoryWidget@@
@@ -80,11 +66,9 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCQVprofFileReader@@
 .?AVCQVprofPlayerWidget@@
 .?AVCReader@CVProfFile@@
-.?AVCSchemaInstallCallback@@
 .?AVCShowBudgetTool@@
 .?AVCTickTimings@CVProfFile@@
 .?AVCVProfFile@@
-.?AVIAppSystem@@
 .?AVIExternalSubTool@@
 .?AVIExternalVConsoleSubTool@@
 .?AVIVConsoleDataReceived@@
@@ -120,66 +104,13 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVQTreeWidgetItem@@
 .?AVQVBoxLayout@@
 .?AVQWidget@@
-.?AVbad_exception@std@@
-.?AVexception@std@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCC
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XLA
-.CRT$XLZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
 .\f?focusOutEvent@QGraphicsScene@@MEAAXPEAVQFocusEvent@@@Z
 .\r?hideEvent@QMenu@@MEAAXPEAVQHideEvent@@@Z
-.bss
-.data
-.data$r
-.data$rs
-.edata
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.pdata
-.rdata
-.rdata$00
-.rdata$T
-.rdata$r
-.rdata$voltmd
-.rdata$zzzdbg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$mn$00
-.text$mn$21
-.text$x
-.text$yd
-.tls
-.tls$
-.tls$ZZZ
 .vprof Recordings (*.vprof);;All Files (*.*)
-.xJ>Hf
-.xdata
-.xdata$x
 /\r?hideEvent@QScrollBar@@MEAAXPEAVQHideEvent@@@Z
 00.00 fps
 0\f?focusOutEvent@QGraphicsView@@MEAAXPEAVQFocusEvent@@@Z
-0iN>/
 1000%s
-11Y@
 1OnClearSamples()
 1OnFPSAveragesToggled()
 1OnFPSLabels()
@@ -209,21 +140,12 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2toggled( bool )
 2triggered( bool )
 2valueChanged( int )
-37>k
-3>N;kU
-3>fvw
 3\f?focusOutEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 9\r?hideText@QToolTip@@SAXXZ
 :\f?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
 <\v?event@QDockWidget@@MEAA_NPEAVQEvent@@@Z
-=cQ6
-=imb;D
->cQ6
->jtm}S
-?7zQ6$
-??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
 ??0QAction@@QEAA@AEBVQIcon@@AEBVQString@@PEAVQObject@@@Z
 ??0QAction@@QEAA@AEBVQString@@PEAVQObject@@@Z
 ??0QBrush@@QEAA@AEBVQColor@@W4BrushStyle@Qt@@@Z
@@ -275,7 +197,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??0QVariant@@QEAA@H@Z
 ??0QWidget@@QEAA@PEAV0@V?$QFlags@W4WindowType@Qt@@@@@Z
 ??1Connection@QMetaObject@@QEAA@XZ
-??1KeyValues@@QEAA@XZ
 ??1QAction@@UEAA@XZ
 ??1QBrush@@QEAA@XZ
 ??1QByteArray@@QEAA@XZ
@@ -310,8 +231,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??1QVBoxLayout@@UEAA@XZ
 ??1QVariant@@QEAA@XZ
 ??1QWidget@@UEAA@XZ
-??2KeyValues@@SAPEAX_K@Z
-??3KeyValues@@SAXPEAX@Z
 ??4QByteArray@@QEAAAEAV0@$$QEAV0@@Z
 ??4QColor@@QEAAAEAV0@AEBV0@@Z
 ??4QColor@@QEAAAEAV0@W4GlobalColor@Qt@@@Z
@@ -319,26 +238,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??4QString@@QEAAAEAV0@$$QEAV0@@Z
 ??BQByteArray@@QEBAPEBDXZ
 ??MQTreeWidgetItem@@UEBA_NAEBV0@@Z
-??YCUtlString@@QEAAAEAV0@D@Z
-??YCUtlString@@QEAAAEAV0@PEBD@Z
 ??YQString@@QEAAAEAV0@AEBV0@@Z
-?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
-?FindKey@KeyValues@@QEBAPEBV1@PEBD@Z
-?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FreeMemoryBlock@CUtlString@@AEAAXXZ
-?GetFloat@KeyValues@@QEBAMPEBDM@Z
-?GetInt@KeyValues@@QEBAHPEBDH@Z
-?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
-?Internal_GetString@CKeyValues_Data@@IEAAPEBDPEBDPEAD_K@Z
-?MakeCopy@KeyValues@@QEBAPEAV1@XZ
-?Purge@CBufferString@@QEAAXH@Z
-?Set@CUtlString@@QEAAXPEBD@Z
-?SetDirect@CUtlString@@QEAAXPEBDH@Z
-?SetFloat@KeyValues@@QEAAXPEBDM@Z
-?SetInt@KeyValues@@QEAAXPEBDH@Z
-?SetString@KeyValues@@QEAAXPEBD0@Z
-?UUUUUU
 ?accept@QDialog@@UEAAXXZ
 ?actionEvent@QMenu@@MEAAXPEAVQActionEvent@@@Z
 ?actionEvent@QToolBar@@MEAAXPEAVQActionEvent@@@Z
@@ -419,7 +319,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?drawText@QPainter@@QEAAXAEBVQRect@@HAEBVQString@@PEAV2@@Z
 ?drawText@QPainter@@QEAAXAEBVQRectF@@HAEBVQString@@PEAV2@@Z
 ?drawText@QPainter@@QEAAXHHAEBVQString@@@Z
-?f`Y4
 ?fillRect@QPainter@@QEAAXAEBVQRect@@AEBVQBrush@@@Z
 ?fillRect@QPainter@@QEAAXAEBVQRect@@AEBVQColor@@@Z
 ?freeData@QMapDataBase@@SAXPEAU1@@Z
@@ -567,7 +466,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?paintEvent@QTreeView@@MEAAXPEAVQPaintEvent@@@Z
 ?paintEvent@QWidget@@MEAAXPEAVQPaintEvent@@@Z
 ?prepareGeometryChange@QGraphicsItem@@IEAAXXZ
-?qBJ
 ?qt_metacall@QAction@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QDockWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QFrame@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -749,24 +647,12 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?toInt@QVariant@@QEBAHPEA_N@Z
 ?toPoint@QPointF@@QEBA?AVQPoint@@XZ
 ?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z
-?ysB
 @\tV_log10d
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
-A>pP&
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-AcquireSRWLockExclusive
-AppPolicyGetProcessTerminationMethod
-AreFileApisANSI
-BC?>6t9^\tc:>
-BF>^G
 Budget History
 Budget Nodes
 C:\buildworker\csgo_rel_win64\build\_build_\utils\vconsole2\subtools\vprof\_vpc_vprof_subtool\default\win64\_msvc_\Retail\vprof_subtool.pdb
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
-CKeyValues3Array::EnsureElementCapacity
-CKeyValues3Array::InsertMultipleBefore
-CKeyValues3Table::EnsureMemberCapacity
 CQBudgetBarsWidget
 CQBudgetHistoryBarsWidget
 CQBudgetHistoryWidget
@@ -776,27 +662,16 @@ CQBudgetWidget
 CQFPSGraphWidget
 CQFlamegraphWidget
 CQVprofPlayerWidget
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
-CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::AddPage
-CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::Alloc
 CUtlRBTree<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQBudgetWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,class CUtlOrderedMapBase<class IVConsoleDevice *,class CQBudgetWidget *,class CDefLess<class IVConsoleDevice *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQBudgetWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 C\v?event@QGraphicsScene@@MEAA_NPEAVQEvent@@@Z
 Calls
 Clear Samples
-CloseHandle
-CorExitProcess
 Courier New
-CreateFileW
 D\tV_log2f
 D\v?event@QGraphicsView@@MEAA_NPEAVQEvent@@@Z
 Decoding 
 Decoding cancelled
-DeleteCriticalSection
-ET5>
-EncodePointer
-EnterCriticalSection
 Exclusive
-ExitProcess
 FPS Averages
 FPS Thresholds
 FPS Units
@@ -804,79 +679,24 @@ FPS:
 FPS: %1
 F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 File Error
-FindClose
-FindFirstFileExW
-FindNextFileW
 Flamegraph
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 Frame header: unexpected token %d
 Frame:
 Frame: %1
-FreeEnvironmentStringsW
-FreeLibrary
-GCTL
-GetACP
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
-GetConsoleMode
-GetConsoleOutputCP
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetEnvironmentStringsW
-GetFileType
-GetLastError
-GetModuleFileNameW
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemTimeAsFileTime
-HH:mm:ss
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
 IVConsoleDataReceived
 Inclusive
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
-InterlockedFlushSList
 Invalid token %d
-IsDebuggerPresent
-IsProcessorFeaturePresent
-IsValidCodePage
 J\v?event@QLabel@@MEAA_NPEAVQEvent@@@Z
-KERNEL32.dll
 K\v?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
-KeyValues3: pre-allocated array memory is too small for %u elements (%u bytes available, %u bytes needed)\n
-KeyValues3: pre-allocated table memory is too small for %u members (%u bytes available, %u bytes needed)\n
-L>ev
-LCMapStringEx
-LCMapStringW
-LeaveCriticalSection
-LoadLibraryExW
-LocaleNameToLCID
-MM/dd/yy
 M\n?done@QDialog@@UEAAXH@Z
 Max frame %d (%f ms)
-MbP?
-MultiByteToWideChar
 N?height@QFontMetrics@@QEBAHXZ
 N?horizontalAdvance@QFontMetrics@@QEBAHAEBVQString@@H@Z
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
-NavSystem001
 Next frame %d (%f ms)
 No Samples.
 No String terminator past end of file
-OZQ%
 OnClearSamples
 OnFPSAveragesToggled
 OnFPSLabels
@@ -896,30 +716,14 @@ OnTreeSelectionChanged
 OnValueChanged
 Open vprof recording
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
-Qt5Core.dll
-Qt5Gui.dll
 Qt5Widgets.dll
-QueryPerformanceCounter
 RSDS?$l
-R\vpX
-ReleaseSRWLockExclusive
-RtlCaptureContext
-RtlLookupFunctionEntry
-RtlPcToFileHeader
-RtlUnwindEx
-RtlVirtualUnwind
 Running.
-S9>H
 Samples: %1
-SetFilePointerEx
-SetLastError
-SetStdHandle
-SetUnhandledExceptionFilter
 Show Budget - %1
 Show Budget Averages
 ShowBudget
 ShowBudget_History
-SleepConditionVariableSRW
 Start Sampling
 StartSampling
 Stop Capture
@@ -928,29 +732,15 @@ StopSampling
 Stopped.
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
-TUUUU
-T\tV_qsort_s
-TerminateProcess
 Timings truncated
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 Totals
 Truncated file
-UUUUUU
-UnhandledExceptionFilter
-Unknown exception
 Unsupported file version
 VConsole_SubTool_001_ShowBudgetTool
 VProf Nodes
 VProf Player
 VProf_Player
 Verdana
-WakeAllConditionVariable
-WideCharToMultiByte
-WriteConsoleW
-WriteFile
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setColor@QBrush@@QEAAXAEBVQColor@@@Z
@@ -1020,17 +810,11 @@ Z?setPen@QPainter@@QEAAXW4PenStyle@Qt@@@Z
 \r?indexOf@QLayout@@UEBAHPEAVQWidget@@@Z
 \r?initPainter@QWidget@@MEBAXPEAVQPainter@@@Z
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
-\r\tV_expf
 \t?center@QRect@@QEBA?AVQPoint@@XZ
 \t?childEvent@QObject@@MEAAXPEAVQChildEvent@@@Z
 \t?data@QTreeWidgetItem@@UEBA?AVQVariant@@HH@Z
 \t?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
-\tV_vsnprintf
-\tWarning
 \t\f?focusInEvent@QGraphicsView@@MEAAXPEAVQFocusEvent@@@Z
-\t_V_strncpy
-\tg_pMemAlloc
-\tkE>fvw
 \v?color@QPen@@QEBA?AVQColor@@XZ
 \v?data@QByteArray@@QEAAPEADXZ
 \v?exec@QDialog@@UEAAHXZ
@@ -1040,66 +824,12 @@ Z?setPen@QPainter@@QEAAXW4PenStyle@Qt@@@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
 _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__stdcall
-__swift_1
-__swift_2
-__swift_3
-__thiscall
-__unaligned
-__vectorcall
-`RTTI
-`anonymous namespace'
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
-abcdefghijklmnopqrstuvwxyz
 ave: %f/call\nmax: %f\nid: %d
 avg %5.2f stddev %6.3f [%6.3f->%6.3f]
 bSelected
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
-bad exception
 budget_history_splitter_sizes
 c\r?horizontalScrollBar@QAbstractScrollArea@@QEBAPEAVQScrollBar@@XZ
-dddd, MMMM dd, yyyy
-eF>t
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
 fps_averages
 fps_graph_scale
@@ -1120,40 +850,26 @@ h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 history_scale
 i\n?dragEnterEvent@QGraphicsScene@@MEAAXPEAVQGraphicsSceneDragDropEvent@@@Z
 i\r?horizontalScrollbarValueChanged@QAbstractItemView@@MEAAXH@Z
-invalid_parameter
 k"?value@QAbstractSlider@@QEBAHXZ
 k\n?dragEnterEvent@QGraphicsView@@MEAAXPEAVQDragEnterEvent@@@Z
 l\n?dragEnterEvent@QLineEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 l\v?event@QToolBar@@MEAA_NPEAVQEvent@@@Z
-mG4>
-n03>Pu
 nItem
 nNodeId
 nValue
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
-operator "" 
-operator co_await
-operator<=>
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 ptGlobal
-purecall
 r\n?dragLeaveEvent@QGraphicsItem@@MEAAXPEAVQGraphicsSceneDragDropEvent@@@Z
-r\tVr.>T
-r\vpX
-range check failure
-restrict(
 s\r?hoverEnterEvent@QGraphicsItem@@MEAAXPEAVQGraphicsSceneHoverEvent@@@Z
 samples_scale
 show_averages
-stack buffer overrun (/GS failure)
 t\n?dragLeaveEvent@QGraphicsScene@@MEAAXPEAVQGraphicsSceneDragDropEvent@@@Z
-tier0.dll
 too many (%d) items matched
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
 u\v?eventFilter@QAbstractItemView@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
-uzKs@>
 v\n?dragLeaveEvent@QGraphicsView@@MEAAXPEAVQDragLeaveEvent@@@Z
 v\r?hoverLeaveEvent@QGraphicsItem@@MEAAXPEAVQGraphicsSceneHoverEvent@@@Z
 v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z

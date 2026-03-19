@@ -335,10 +335,6 @@
 											<CSGOSettingsAnnotationsDropDown id="id-play-menu-practicesettings-annotations-dropdown" class="PopupButton White" />
 										</TooltipPanel>
 									</Panel>
-									<Button class="gamemode-setting-radiobutton" onactivate="$.DispatchEvent( &apos;CSGOOpenSteamWorkshop&apos;, &apos;Guide&apos; );">
-										<Image texturewidth="20" textureheight="20" src="s2r://panorama/images/icons/ui/link.vsvg" />
-										<Label class="annotation-workshop-link" text="#CSGO_Workshop_Visit" />
-									</Button>
 								</Panel>
 							</Panel>
 							<Button id="PlayMenuReplayNewUserTrainingButton">

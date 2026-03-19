@@ -4,45 +4,7 @@
 '<FP4LFQ4\FR.lFS(|F
 )DT$)EO4)FKD)GHT)
 *9wQ4IwR4YwS4iwT4ywU4
-.00cfg
-.?AVbad_alloc@std@@
-.?AVbad_array_new_length@std@@
-.?AVexception@std@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCZ
-.CRT$XIA
-.CRT$XIZ
-.CRT$XPA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.data
-.data$r
-.edata
 .gfids$y
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.pdata
-.rdata
-.rdata$r
-.rdata$zzzdbg
-.rsrc$01
-.rsrc$02
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text
-.text$mn
-.text$mn$00
-.text$x
-.xdata
-.xdata$x
 0033
 1DT#1ET31FRC1GOS1HKc1IHs1JE
 295<295<
@@ -72,10 +34,6 @@ CF4$CG34CH/DCI,TCJ*dCK&tC
 CUUUUUUUUUUUUUUUU
 CUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
 CompressBlocksASTC
-CompressBlocksBC1
-CompressBlocksBC3
-CompressBlocksBC6H
-CompressBlocksBC7
 CompressBlocksETC1
 D:\dev\source2\main\src\thirdparty\ispctexturecompressor\ISPC Texture Compressor\x64\Release\ispc_texcomp.pdb
 DDDD
@@ -86,67 +44,37 @@ E:?PTJ?QTZ?RRj?SMz?TH
 EImPTYmQTimRTymST
 F 4\fG!4
 G"4,G#.<G$'LG`4\Ga4lGb.|Gc(
-GCTL
 G[4 Tk4!T{4"Q
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetProfile_alpha_basic
-GetProfile_alpha_fast
-GetProfile_alpha_slow
-GetProfile_alpha_ultrafast
-GetProfile_alpha_veryfast
 GetProfile_astc_alpha_fast
 GetProfile_astc_alpha_slow
 GetProfile_astc_fast
-GetProfile_basic
-GetProfile_bc6h_basic
-GetProfile_bc6h_fast
-GetProfile_bc6h_slow
-GetProfile_bc6h_veryfast
-GetProfile_bc6h_veryslow
 GetProfile_etc_slow
-GetProfile_fast
-GetProfile_slow
 GetProfile_ultrafast
-GetProfile_veryfast
-GetSystemTimeAsFileTime
-InitializeSListHead
-IsDebuggerPresent
-IsProcessorFeaturePresent
-KERNEL32.dll
 MSVCP140.dll
 OyL?
 P(i(iD
 PH4#PI33PJ1CPK.SP
 PPAT
 PPPP@@@@TTTT@PPT
-QueryPerformanceCounter
 R@4+RA4;RB4KRC/[RD+kRE%{R
 RSDSu
 ReplicateBorders
-RtlCaptureContext
-RtlLookupFunctionEntry
-RtlVirtualUnwind
-SetUnhandledExceptionFilter
 TB;\tTR;\nTb;\vSr;AT
 TPB\n
 TPP@P@@
 TRJ*33
 TTPPh
 T`4\vUa4
-TerminateProcess
 UPPPPU
 UUPPZZ
 Ub4+Uc/;Ud+KUe%[U
-UnhandledExceptionFilter
-Unknown exception
 VCRUNTIME140.dll
 YBt\tZCo
 ZDk)ZEe9Z
 \dk\t]ee
 \nPDD
 _B4"_C42_D4B_E4R_F4b_G4r_H4
+_CxxThrowException
 __C_specific_handler
 __std_exception_copy
 __std_exception_destroy
@@ -165,11 +93,10 @@ _register_onexit_function
 _seh_filter_dll
 _wassert
 aG'\nb
+abort
 api-ms-win-crt-heap-l1-1-0.dll
 api-ms-win-crt-runtime-l1-1-0.dll
 api-ms-win-crt-stdio-l1-1-0.dll
-bad allocation
-bad array new length
 cV*\ndW'
 dfFUUU?UUU?UUU?UUU?UUU?UUU?UUU?UUU?
 e 4*e!4:e"4Je#4Ze$4je%4ze&1
@@ -181,7 +108,6 @@ g:8@tJ8ArZ8Bjj8
 gY\ ti\!ty\"t
 g\n9Pt
 iGT!iHT1iITAiJTQiKTai
-ispc_texcomp.dll
 jI[PtY[Qti[Rty[So
 kernel.ispc:1068:2: Assertion failed: mode <= 7
 kernel.ispc:1088:3: Assertion failed: false
@@ -221,15 +147,18 @@ kernel_astc.ispc:1969:5: Assertion failed: pitch <= 64
 kernel_astc.ispc:556:5: Assertion failed: n <= 16
 kernel_astc.ispc:577:13: Assertion failed: e <= n
 kernel_astc.ispc:595:9: Assertion failed: false
+malloc
+memcpy
+memset
 n#T\to$T
 o%T)o&Q9o'LIo(EYo`TioaTyobT
+puts
 q+'Pt;'QjK'
 qo=UM0
 s=Q/x
 t1W\ttAW\ntQW\vtaWAtqWBt
 tH.\tuI+
 uJ))uK%9u
-vector<T> too long
 yb4\tzc4
 zDVU
 zd4)ze49zf4Izg2Yzh.izi+yzj)

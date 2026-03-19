@@ -1,0 +1,23 @@
+{
+    "2347770": // cs2 content
+	[
+		"vpk:txt,lua,kv3,db,gameevents,vcss_c,vjs_c,vts_c,vxml_c,vsndevts_c,vsndstck_c,vpulse_c,vdata_c",
+		"regex:.+?\\.(kv3|txt|jpg|png|gif|inf|gi|fgd|dll|cfg|vcfg)",
+		"regex:.+?_dir\\.vpk",
+		"regex:.+?shaders_vulkan_[0-9]+\\.vpk",
+	],
+	"2347771": // cs2 windows
+	[
+		"regex:.+?_dir\\.vpk",
+		"regex:.+?\\.(dll|exe)",
+	],
+	"2347773": // cs2 linux
+	[
+		"regex:.+?\\.sh",
+	],
+	"2347779": // cs2 workshop
+	[
+		"regex:.+?\\.(vdf|kv3|txt|cfg|lst|db|jpg|png|gif|inf|gi|fgd|lua|json|js|ts|html|dll|exe)",
+		"regex:.+?asset_info\\.bin",
+	],
+}

@@ -399,6 +399,7 @@
 		_class = "weapon_cs_base"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 	}
 	secondary = 
 	{
@@ -538,6 +539,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 	}
 	explosive_grenade = 
 	{
@@ -967,6 +969,7 @@
 		_class = "weapon_cs_base"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 	}
 	weapon_fire_grenade_prefab = 
@@ -1250,6 +1253,7 @@
 		_class = "weapon_cs_base"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 	}
 	equipment = 
@@ -1525,6 +1529,7 @@
 		_class = "weapon_cs_base"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 	}
 	sniper_rifle = 
@@ -1664,6 +1669,7 @@
 		_class = "weapon_cs_base"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 	}
 	machinegun = 
@@ -1803,6 +1809,7 @@
 		_class = "weapon_cs_base"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_MACHINEGUN"
 	}
 	weapon_g3sg1_prefab = 
@@ -1820,7 +1827,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 20
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.107690
 		m_flInaccuracyJumpApex = 0.000000
@@ -1938,6 +1945,7 @@
 		_class = "weapon_g3sg1"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_g3sg1"
 		m_szWorldModel = resource_name:"weapons/models/g3sg1/weapon_snip_g3sg1.vmdl"
@@ -1975,7 +1983,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.105390
 		m_flInaccuracyJumpApex = 0.000000
@@ -2093,6 +2101,7 @@
 		_class = "weapon_galilar"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_galilar"
 		m_szWorldModel = resource_name:"weapons/models/galilar/weapon_rif_galilar.vmdl"
@@ -2128,7 +2137,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 200
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.118270
 		m_flInaccuracyJumpApex = 0.000000
@@ -2246,6 +2255,7 @@
 		_class = "weapon_m249"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_MACHINEGUN"
 		m_szName = "weapon_m249"
 		m_szWorldModel = resource_name:"weapons/models/m249/weapon_mach_m249.vmdl"
@@ -2281,7 +2291,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 75
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.094770
 		m_flInaccuracyJumpApex = 0.000000
@@ -2403,6 +2413,7 @@
 		_class = "weapon_famas"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_famas"
 		m_szWorldModel = resource_name:"weapons/models/famas/weapon_rif_famas.vmdl"
@@ -2438,7 +2449,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.094410
 		m_flInaccuracyJumpApex = 0.000000
@@ -2556,6 +2567,7 @@
 		_class = "weapon_m4a1"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_m4a1"
 		m_szWorldModel = resource_name:"weapons/models/m4a4/weapon_rif_m4a4.vmdl"
@@ -2592,7 +2604,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.034990
 		m_flInaccuracyJumpApex = 0.000000
@@ -2710,6 +2722,7 @@
 		_class = "weapon_mac10"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_mac10"
 		m_szWorldModel = resource_name:"weapons/models/mac10/weapon_smg_mac10.vmdl"
@@ -2745,7 +2758,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 30
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 30
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.172860
 		m_flInaccuracyJumpApex = 0.000000
@@ -2863,6 +2876,7 @@
 		_class = "weapon_awp"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_awp"
 		m_szWorldModel = resource_name:"weapons/models/awp/weapon_snip_awp.vmdl"
@@ -2900,7 +2914,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 26
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.104600
 		m_flInaccuracyJumpApex = 0.000000
@@ -3018,6 +3032,7 @@
 		_class = "weapon_p90"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_p90"
 		m_szWorldModel = resource_name:"weapons/models/p90/weapon_smg_p90.vmdl"
@@ -3053,7 +3068,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.101560
 		m_flInaccuracyJumpApex = 0.000000
@@ -3176,6 +3191,7 @@
 		_class = "weapon_aug"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_aug"
 		m_szWorldModel = resource_name:"weapons/models/aug/weapon_rif_aug.vmdl"
@@ -3218,7 +3234,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.055410
 		m_flInaccuracyJumpApex = 0.000000
@@ -3336,6 +3352,7 @@
 		_class = "weapon_mp7"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szAnimClass = "weapon_mp5sd"
 		m_szName = "weapon_mp5sd"
@@ -3374,7 +3391,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.100940
 		m_flInaccuracyJumpApex = 0.000000
@@ -3492,6 +3509,7 @@
 		_class = "weapon_ak47"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_ak47"
 		m_szWorldModel = resource_name:"weapons/models/ak47/weapon_rif_ak47.vmdl"
@@ -3646,6 +3664,7 @@
 		_class = "weapon_xm1014"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_xm1014"
 		m_szAnimClass = "weapon_xm1014"
@@ -3683,7 +3702,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096620
 		m_flInaccuracyJumpApex = 0.000000
@@ -3810,6 +3829,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_glock"
 		m_szWorldModel = resource_name:"weapons/models/glock18/weapon_pist_glock18.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -3844,7 +3864,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 26
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.045900
 		m_flInaccuracyJumpApex = 0.000000
@@ -3962,6 +3982,7 @@
 		_class = "weapon_bizon"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_bizon"
 		m_szWorldModel = resource_name:"weapons/models/bizon/weapon_smg_bizon.vmdl"
@@ -3997,7 +4018,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 20
 		m_iRumbleEffect = 5
-		m_nPrimaryReserveAmmoMax = 32
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.052640
 		m_flInaccuracyJumpApex = 0.000000
@@ -4117,6 +4138,7 @@
 		_class = "weapon_mag7"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_mag7"
 		m_szWorldModel = resource_name:"weapons/models/mag7/weapon_shot_mag7.vmdl"
@@ -4152,7 +4174,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 300
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.116290
 		m_flInaccuracyJumpApex = 0.000000
@@ -4270,6 +4292,7 @@
 		_class = "weapon_negev"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_MACHINEGUN"
 		m_szName = "weapon_negev"
 		m_szWorldModel = resource_name:"weapons/models/negev/weapon_mach_negev.vmdl"
@@ -4425,6 +4448,7 @@
 		_class = "weapon_sawedoff"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_sawedoff"
 		m_szAnimClass = "weapon_sawedoff"
@@ -4462,7 +4486,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 6
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.071170
 		m_flInaccuracyJumpApex = 0.000000
@@ -4581,6 +4605,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_tec9"
 		m_szWorldModel = resource_name:"weapons/models/tec9/weapon_pist_tec9.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -4721,7 +4746,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 52
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096600
 		m_flInaccuracyJumpApex = 0.000000
@@ -4840,6 +4865,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_hkp2000"
 		m_szWorldModel = resource_name:"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -4874,7 +4900,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.055410
 		m_flInaccuracyJumpApex = 0.000000
@@ -4992,6 +5018,7 @@
 		_class = "weapon_mp7"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_mp7"
 		m_szWorldModel = resource_name:"weapons/models/mp7/weapon_smg_mp7.vmdl"
@@ -5028,7 +5055,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.037280
 		m_flInaccuracyJumpApex = 0.000000
@@ -5146,6 +5173,7 @@
 		_class = "weapon_mp9"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_mp9"
 		m_szWorldModel = resource_name:"weapons/models/mp9/weapon_smg_mp9.vmdl"
@@ -5300,6 +5328,7 @@
 		_class = "weapon_nova"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_nova"
 		m_szWorldModel = resource_name:"weapons/models/nova/weapon_shot_nova.vmdl"
@@ -5336,7 +5365,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 26
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096620
 		m_flInaccuracyJumpApex = 0.000000
@@ -5459,6 +5488,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_p250"
 		m_szWorldModel = resource_name:"weapons/models/p250/weapon_pist_p250.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -5493,7 +5523,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 20
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.107690
 		m_flInaccuracyJumpApex = 0.000000
@@ -5611,6 +5641,7 @@
 		_class = "weapon_scar20"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_scar20"
 		m_szWorldModel = resource_name:"weapons/models/scar20/weapon_snip_scar20.vmdl"
@@ -5648,7 +5679,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.078790
 		m_flInaccuracyJumpApex = 0.000000
@@ -5771,6 +5802,7 @@
 		_class = "weapon_sg556"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_sg556"
 		m_szWorldModel = resource_name:"weapons/models/sg556/weapon_rif_sg556.vmdl"
@@ -5813,7 +5845,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 30
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.208720
 		m_flInaccuracyJumpApex = 0.000000
@@ -5931,6 +5963,7 @@
 		_class = "weapon_ssg08"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_ssg08"
 		m_szWorldModel = resource_name:"weapons/models/ssg08/weapon_snip_ssg08.vmdl"
@@ -6269,7 +6302,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.099880
 		m_flInaccuracyJumpApex = 0.000000
@@ -6392,6 +6425,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_fiveseven"
 		m_szWorldModel = resource_name:"weapons/models/fiveseven/weapon_pist_fiveseven.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -6577,7 +6611,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.095860
 		m_flInaccuracyJumpApex = 0.000000
@@ -6696,6 +6730,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_elite"
 		m_szWorldModel = resource_name:"weapons/models/elite/weapon_pist_elite.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -7044,7 +7079,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.047210
 		m_flInaccuracyJumpApex = 0.000000
@@ -7162,6 +7197,7 @@
 		_class = "weapon_ump45"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_ump45"
 		m_szWorldModel = resource_name:"weapons/models/ump45/weapon_smg_ump45.vmdl"
@@ -7806,7 +7842,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 80
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096770
 		m_flInaccuracyJumpApex = 0.000000
@@ -7928,6 +7964,7 @@
 		_class = "weapon_m4a1"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szAnimClass = "weapon_m4a1_silencer"
 		m_szName = "weapon_m4a1_silencer"
@@ -7971,7 +8008,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 24
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096600
 		m_flInaccuracyJumpApex = 0.000000
@@ -8094,6 +8131,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szAnimClass = "weapon_usp_silencer"
 		m_szName = "weapon_usp_silencer"
 		m_szWorldModel = resource_name:"weapons/models/usp_silencer/weapon_pist_usp_silencer.vmdl"
@@ -8136,7 +8174,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 12
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096620
 		m_flInaccuracyJumpApex = 0.000000
@@ -8255,6 +8293,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szAnimClass = "weapon_cz75a"
 		m_szName = "weapon_cz75a"
 		m_szWorldModel = resource_name:"weapons/models/cz75a/weapon_pist_cz75a.vmdl"
@@ -8290,7 +8329,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 7
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 8
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.018650
 		m_flInaccuracyJumpApex = 0.000000
@@ -8417,6 +8456,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szAnimClass = "weapon_revolver"
 		m_szName = "weapon_revolver"
 		m_szWorldModel = resource_name:"weapons/models/revolver/weapon_pist_revolver.vmdl"
@@ -8452,7 +8492,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 7
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 35
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.548820
 		m_flInaccuracyJumpApex = 0.331550
@@ -8567,6 +8607,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_deagle"
 		m_szWorldModel = resource_name:"weapons/models/deagle/weapon_pist_deagle.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -8756,7 +8797,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 7
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 35
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.548820
 		m_flInaccuracyJumpApex = 0.331550
@@ -8871,6 +8912,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_deagle"
 		m_szWorldModel = resource_name:"weapons/models/deagle/weapon_pist_deagle.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -8906,7 +8948,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.095860
 		m_flInaccuracyJumpApex = 0.000000
@@ -9025,6 +9067,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_elite"
 		m_szWorldModel = resource_name:"weapons/models/elite/weapon_pist_elite.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -9066,7 +9109,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.099880
 		m_flInaccuracyJumpApex = 0.000000
@@ -9189,6 +9232,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_fiveseven"
 		m_szWorldModel = resource_name:"weapons/models/fiveseven/weapon_pist_fiveseven.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -9224,7 +9268,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096620
 		m_flInaccuracyJumpApex = 0.000000
@@ -9351,6 +9395,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_glock"
 		m_szWorldModel = resource_name:"weapons/models/glock18/weapon_pist_glock18.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -9386,7 +9431,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.100940
 		m_flInaccuracyJumpApex = 0.000000
@@ -9504,6 +9549,7 @@
 		_class = "weapon_ak47"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_ak47"
 		m_szWorldModel = resource_name:"weapons/models/ak47/weapon_rif_ak47.vmdl"
@@ -9540,7 +9586,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.101560
 		m_flInaccuracyJumpApex = 0.000000
@@ -9663,6 +9709,7 @@
 		_class = "weapon_aug"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_aug"
 		m_szWorldModel = resource_name:"weapons/models/aug/weapon_rif_aug.vmdl"
@@ -9706,7 +9753,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 30
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 30
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.172860
 		m_flInaccuracyJumpApex = 0.000000
@@ -9824,6 +9871,7 @@
 		_class = "weapon_awp"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_awp"
 		m_szWorldModel = resource_name:"weapons/models/awp/weapon_snip_awp.vmdl"
@@ -9862,7 +9910,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 75
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.094770
 		m_flInaccuracyJumpApex = 0.000000
@@ -9984,6 +10032,7 @@
 		_class = "weapon_famas"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_famas"
 		m_szWorldModel = resource_name:"weapons/models/famas/weapon_rif_famas.vmdl"
@@ -10020,7 +10069,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 20
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.107690
 		m_flInaccuracyJumpApex = 0.000000
@@ -10138,6 +10187,7 @@
 		_class = "weapon_g3sg1"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_g3sg1"
 		m_szWorldModel = resource_name:"weapons/models/g3sg1/weapon_snip_g3sg1.vmdl"
@@ -10176,7 +10226,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.105390
 		m_flInaccuracyJumpApex = 0.000000
@@ -10294,6 +10344,7 @@
 		_class = "weapon_galilar"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_galilar"
 		m_szWorldModel = resource_name:"weapons/models/galilar/weapon_rif_galilar.vmdl"
@@ -10330,7 +10381,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 200
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.118270
 		m_flInaccuracyJumpApex = 0.000000
@@ -10448,6 +10499,7 @@
 		_class = "weapon_m249"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_MACHINEGUN"
 		m_szName = "weapon_m249"
 		m_szWorldModel = resource_name:"weapons/models/m249/weapon_mach_m249.vmdl"
@@ -10484,7 +10536,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.094410
 		m_flInaccuracyJumpApex = 0.000000
@@ -10602,6 +10654,7 @@
 		_class = "weapon_m4a1"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_m4a1"
 		m_szWorldModel = resource_name:"weapons/models/m4a4/weapon_rif_m4a4.vmdl"
@@ -10639,7 +10692,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.034990
 		m_flInaccuracyJumpApex = 0.000000
@@ -10757,6 +10810,7 @@
 		_class = "weapon_mac10"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_mac10"
 		m_szWorldModel = resource_name:"weapons/models/mac10/weapon_smg_mac10.vmdl"
@@ -10793,7 +10847,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 26
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.104600
 		m_flInaccuracyJumpApex = 0.000000
@@ -10911,6 +10965,7 @@
 		_class = "weapon_p90"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_p90"
 		m_szWorldModel = resource_name:"weapons/models/p90/weapon_smg_p90.vmdl"
@@ -10947,7 +11002,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.055410
 		m_flInaccuracyJumpApex = 0.000000
@@ -11065,6 +11120,7 @@
 		_class = "weapon_mp7"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szAnimClass = "weapon_mp5sd"
 		m_szName = "weapon_mp5sd"
@@ -11104,7 +11160,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.047210
 		m_flInaccuracyJumpApex = 0.000000
@@ -11222,6 +11278,7 @@
 		_class = "weapon_ump45"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_ump45"
 		m_szWorldModel = resource_name:"weapons/models/ump45/weapon_smg_ump45.vmdl"
@@ -11377,6 +11434,7 @@
 		_class = "weapon_xm1014"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_xm1014"
 		m_szAnimClass = "weapon_xm1014"
@@ -11415,7 +11473,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 26
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.045900
 		m_flInaccuracyJumpApex = 0.000000
@@ -11533,6 +11591,7 @@
 		_class = "weapon_bizon"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_bizon"
 		m_szWorldModel = resource_name:"weapons/models/bizon/weapon_smg_bizon.vmdl"
@@ -11569,7 +11628,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 20
 		m_iRumbleEffect = 5
-		m_nPrimaryReserveAmmoMax = 32
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.052640
 		m_flInaccuracyJumpApex = 0.000000
@@ -11689,6 +11748,7 @@
 		_class = "weapon_mag7"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_mag7"
 		m_szWorldModel = resource_name:"weapons/models/mag7/weapon_shot_mag7.vmdl"
@@ -11725,7 +11785,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 300
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.116290
 		m_flInaccuracyJumpApex = 0.000000
@@ -11843,6 +11903,7 @@
 		_class = "weapon_negev"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_MACHINEGUN"
 		m_szName = "weapon_negev"
 		m_szWorldModel = resource_name:"weapons/models/negev/weapon_mach_negev.vmdl"
@@ -11999,6 +12060,7 @@
 		_class = "weapon_sawedoff"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_sawedoff"
 		m_szAnimClass = "weapon_sawedoff"
@@ -12037,7 +12099,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 6
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.071170
 		m_flInaccuracyJumpApex = 0.000000
@@ -12156,6 +12218,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_tec9"
 		m_szWorldModel = resource_name:"weapons/models/tec9/weapon_pist_tec9.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -12298,7 +12361,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 52
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096600
 		m_flInaccuracyJumpApex = 0.000000
@@ -12417,6 +12480,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_hkp2000"
 		m_szWorldModel = resource_name:"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -12452,7 +12516,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.055410
 		m_flInaccuracyJumpApex = 0.000000
@@ -12570,6 +12634,7 @@
 		_class = "weapon_mp7"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_mp7"
 		m_szWorldModel = resource_name:"weapons/models/mp7/weapon_smg_mp7.vmdl"
@@ -12607,7 +12672,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.037280
 		m_flInaccuracyJumpApex = 0.000000
@@ -12725,6 +12790,7 @@
 		_class = "weapon_mp9"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_mp9"
 		m_szWorldModel = resource_name:"weapons/models/mp9/weapon_smg_mp9.vmdl"
@@ -12880,6 +12946,7 @@
 		_class = "weapon_nova"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_nova"
 		m_szWorldModel = resource_name:"weapons/models/nova/weapon_shot_nova.vmdl"
@@ -12917,7 +12984,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 26
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096620
 		m_flInaccuracyJumpApex = 0.000000
@@ -13040,6 +13107,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_p250"
 		m_szWorldModel = resource_name:"weapons/models/p250/weapon_pist_p250.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -13075,7 +13143,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 20
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.107690
 		m_flInaccuracyJumpApex = 0.000000
@@ -13193,6 +13261,7 @@
 		_class = "weapon_scar20"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_scar20"
 		m_szWorldModel = resource_name:"weapons/models/scar20/weapon_snip_scar20.vmdl"
@@ -13231,7 +13300,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.078790
 		m_flInaccuracyJumpApex = 0.000000
@@ -13354,6 +13423,7 @@
 		_class = "weapon_sg556"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_sg556"
 		m_szWorldModel = resource_name:"weapons/models/sg556/weapon_rif_sg556.vmdl"
@@ -13397,7 +13467,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 30
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.208720
 		m_flInaccuracyJumpApex = 0.000000
@@ -13515,6 +13585,7 @@
 		_class = "weapon_ssg08"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_ssg08"
 		m_szWorldModel = resource_name:"weapons/models/ssg08/weapon_snip_ssg08.vmdl"
@@ -15930,7 +16001,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 80
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096770
 		m_flInaccuracyJumpApex = 0.000000
@@ -16052,6 +16123,7 @@
 		_class = "weapon_m4a1"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szAnimClass = "weapon_m4a1_silencer"
 		m_szName = "weapon_m4a1_silencer"
@@ -16096,7 +16168,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 24
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096600
 		m_flInaccuracyJumpApex = 0.000000
@@ -16219,6 +16291,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szAnimClass = "weapon_usp_silencer"
 		m_szName = "weapon_usp_silencer"
 		m_szWorldModel = resource_name:"weapons/models/usp_silencer/weapon_pist_usp_silencer.vmdl"
@@ -16262,7 +16335,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 12
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096620
 		m_flInaccuracyJumpApex = 0.000000
@@ -16381,6 +16454,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szAnimClass = "weapon_cz75a"
 		m_szName = "weapon_cz75a"
 		m_szWorldModel = resource_name:"weapons/models/cz75a/weapon_pist_cz75a.vmdl"
@@ -16417,7 +16491,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 7
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 8
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.018650
 		m_flInaccuracyJumpApex = 0.000000
@@ -16544,6 +16618,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szAnimClass = "weapon_revolver"
 		m_szName = "weapon_revolver"
 		m_szWorldModel = resource_name:"weapons/models/revolver/weapon_pist_revolver.vmdl"
@@ -19751,7 +19826,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 7
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 35
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.548820
 		m_flInaccuracyJumpApex = 0.331550
@@ -19866,6 +19941,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_deagle"
 		m_szWorldModel = resource_name:"weapons/models/deagle/weapon_pist_deagle.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -19901,7 +19977,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 7
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 8
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.018650
 		m_flInaccuracyJumpApex = 0.000000
@@ -20028,6 +20104,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szAnimClass = "weapon_revolver"
 		m_szName = "weapon_revolver"
 		m_szWorldModel = resource_name:"weapons/models/revolver/weapon_pist_revolver.vmdl"
@@ -20064,7 +20141,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.095860
 		m_flInaccuracyJumpApex = 0.000000
@@ -20183,6 +20260,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_elite"
 		m_szWorldModel = resource_name:"weapons/models/elite/weapon_pist_elite.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -20224,7 +20302,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.099880
 		m_flInaccuracyJumpApex = 0.000000
@@ -20347,6 +20425,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_fiveseven"
 		m_szWorldModel = resource_name:"weapons/models/fiveseven/weapon_pist_fiveseven.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -20382,7 +20461,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 12
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096620
 		m_flInaccuracyJumpApex = 0.000000
@@ -20501,6 +20580,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szAnimClass = "weapon_cz75a"
 		m_szName = "weapon_cz75a"
 		m_szWorldModel = resource_name:"weapons/models/cz75a/weapon_pist_cz75a.vmdl"
@@ -20537,7 +20617,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096620
 		m_flInaccuracyJumpApex = 0.000000
@@ -20664,6 +20744,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_glock"
 		m_szWorldModel = resource_name:"weapons/models/glock18/weapon_pist_glock18.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -20699,7 +20780,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.100940
 		m_flInaccuracyJumpApex = 0.000000
@@ -20817,6 +20898,7 @@
 		_class = "weapon_ak47"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_ak47"
 		m_szWorldModel = resource_name:"weapons/models/ak47/weapon_rif_ak47.vmdl"
@@ -20853,7 +20935,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.101560
 		m_flInaccuracyJumpApex = 0.000000
@@ -20976,6 +21058,7 @@
 		_class = "weapon_aug"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_aug"
 		m_szWorldModel = resource_name:"weapons/models/aug/weapon_rif_aug.vmdl"
@@ -21019,7 +21102,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 30
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 30
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.172860
 		m_flInaccuracyJumpApex = 0.000000
@@ -21137,6 +21220,7 @@
 		_class = "weapon_awp"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_awp"
 		m_szWorldModel = resource_name:"weapons/models/awp/weapon_snip_awp.vmdl"
@@ -21175,7 +21259,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 75
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.094770
 		m_flInaccuracyJumpApex = 0.000000
@@ -21297,6 +21381,7 @@
 		_class = "weapon_famas"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_famas"
 		m_szWorldModel = resource_name:"weapons/models/famas/weapon_rif_famas.vmdl"
@@ -21333,7 +21418,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 20
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.107690
 		m_flInaccuracyJumpApex = 0.000000
@@ -21451,6 +21536,7 @@
 		_class = "weapon_g3sg1"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_g3sg1"
 		m_szWorldModel = resource_name:"weapons/models/g3sg1/weapon_snip_g3sg1.vmdl"
@@ -21489,7 +21575,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.105390
 		m_flInaccuracyJumpApex = 0.000000
@@ -21607,6 +21693,7 @@
 		_class = "weapon_galilar"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_galilar"
 		m_szWorldModel = resource_name:"weapons/models/galilar/weapon_rif_galilar.vmdl"
@@ -21643,7 +21730,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 200
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.118270
 		m_flInaccuracyJumpApex = 0.000000
@@ -21761,6 +21848,7 @@
 		_class = "weapon_m249"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_MACHINEGUN"
 		m_szName = "weapon_m249"
 		m_szWorldModel = resource_name:"weapons/models/m249/weapon_mach_m249.vmdl"
@@ -21797,7 +21885,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.094410
 		m_flInaccuracyJumpApex = 0.000000
@@ -21915,6 +22003,7 @@
 		_class = "weapon_m4a1"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_m4a1"
 		m_szWorldModel = resource_name:"weapons/models/m4a4/weapon_rif_m4a4.vmdl"
@@ -21952,7 +22041,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 80
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096770
 		m_flInaccuracyJumpApex = 0.000000
@@ -22074,6 +22163,7 @@
 		_class = "weapon_m4a1"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szAnimClass = "weapon_m4a1_silencer"
 		m_szName = "weapon_m4a1_silencer"
@@ -22118,7 +22208,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.034990
 		m_flInaccuracyJumpApex = 0.000000
@@ -22236,6 +22326,7 @@
 		_class = "weapon_mac10"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_mac10"
 		m_szWorldModel = resource_name:"weapons/models/mac10/weapon_smg_mac10.vmdl"
@@ -22272,7 +22363,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 26
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.104600
 		m_flInaccuracyJumpApex = 0.000000
@@ -22390,6 +22481,7 @@
 		_class = "weapon_p90"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_p90"
 		m_szWorldModel = resource_name:"weapons/models/p90/weapon_smg_p90.vmdl"
@@ -22426,7 +22518,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 100
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.047210
 		m_flInaccuracyJumpApex = 0.000000
@@ -22544,6 +22636,7 @@
 		_class = "weapon_ump45"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_ump45"
 		m_szWorldModel = resource_name:"weapons/models/ump45/weapon_smg_ump45.vmdl"
@@ -22699,6 +22792,7 @@
 		_class = "weapon_xm1014"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_xm1014"
 		m_szAnimClass = "weapon_xm1014"
@@ -22737,7 +22831,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 26
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.045900
 		m_flInaccuracyJumpApex = 0.000000
@@ -22855,6 +22949,7 @@
 		_class = "weapon_bizon"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_bizon"
 		m_szWorldModel = resource_name:"weapons/models/bizon/weapon_smg_bizon.vmdl"
@@ -22891,7 +22986,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 20
 		m_iRumbleEffect = 5
-		m_nPrimaryReserveAmmoMax = 32
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.052640
 		m_flInaccuracyJumpApex = 0.000000
@@ -23011,6 +23106,7 @@
 		_class = "weapon_mag7"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_mag7"
 		m_szWorldModel = resource_name:"weapons/models/mag7/weapon_shot_mag7.vmdl"
@@ -23047,7 +23143,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 2
-		m_nPrimaryReserveAmmoMax = 300
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.116290
 		m_flInaccuracyJumpApex = 0.000000
@@ -23165,6 +23261,7 @@
 		_class = "weapon_negev"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_MACHINEGUN"
 		m_szName = "weapon_negev"
 		m_szWorldModel = resource_name:"weapons/models/negev/weapon_mach_negev.vmdl"
@@ -23321,6 +23418,7 @@
 		_class = "weapon_sawedoff"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_sawedoff"
 		m_szAnimClass = "weapon_sawedoff"
@@ -23359,7 +23457,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 6
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.071170
 		m_flInaccuracyJumpApex = 0.000000
@@ -23478,6 +23576,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_tec9"
 		m_szWorldModel = resource_name:"weapons/models/tec9/weapon_pist_tec9.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -23620,7 +23719,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 52
+		m_nPrimaryReserveAmmoMax = 4
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096600
 		m_flInaccuracyJumpApex = 0.000000
@@ -23739,6 +23838,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_hkp2000"
 		m_szWorldModel = resource_name:"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -23774,7 +23874,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 24
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096600
 		m_flInaccuracyJumpApex = 0.000000
@@ -23897,6 +23997,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szAnimClass = "weapon_usp_silencer"
 		m_szName = "weapon_usp_silencer"
 		m_szWorldModel = resource_name:"weapons/models/usp_silencer/weapon_pist_usp_silencer.vmdl"
@@ -23940,7 +24041,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.055410
 		m_flInaccuracyJumpApex = 0.000000
@@ -24058,6 +24159,7 @@
 		_class = "weapon_mp7"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_mp7"
 		m_szWorldModel = resource_name:"weapons/models/mp7/weapon_smg_mp7.vmdl"
@@ -24095,7 +24197,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.055410
 		m_flInaccuracyJumpApex = 0.000000
@@ -24213,6 +24315,7 @@
 		_class = "weapon_mp7"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szAnimClass = "weapon_mp5sd"
 		m_szName = "weapon_mp5sd"
@@ -24252,7 +24355,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 3
-		m_nPrimaryReserveAmmoMax = 120
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.037280
 		m_flInaccuracyJumpApex = 0.000000
@@ -24370,6 +24473,7 @@
 		_class = "weapon_mp9"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SUBMACHINEGUN"
 		m_szName = "weapon_mp9"
 		m_szWorldModel = resource_name:"weapons/models/mp9/weapon_smg_mp9.vmdl"
@@ -24525,6 +24629,7 @@
 		_class = "weapon_nova"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = false
 		m_WeaponType = "WEAPONTYPE_SHOTGUN"
 		m_szName = "weapon_nova"
 		m_szWorldModel = resource_name:"weapons/models/nova/weapon_shot_nova.vmdl"
@@ -24562,7 +24667,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 5
 		m_iRumbleEffect = 1
-		m_nPrimaryReserveAmmoMax = 26
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.096620
 		m_flInaccuracyJumpApex = 0.000000
@@ -24685,6 +24790,7 @@
 		m_GearSlot = "GEAR_SLOT_PISTOL"
 		m_GearSlotPosition = 0
 		m_WeaponType = "WEAPONTYPE_PISTOL"
+		m_bReserveAmmoAsClips = true
 		m_szName = "weapon_p250"
 		m_szWorldModel = resource_name:"weapons/models/p250/weapon_pist_p250.vmdl"
 		m_szTracerParticle = resource_name:"particles/weapons/cs_weapon_fx/weapon_tracers_pistol.vpcf"
@@ -24720,7 +24826,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 20
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.107690
 		m_flInaccuracyJumpApex = 0.000000
@@ -24838,6 +24944,7 @@
 		_class = "weapon_scar20"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_scar20"
 		m_szWorldModel = resource_name:"weapons/models/scar20/weapon_snip_scar20.vmdl"
@@ -24876,7 +24983,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 25
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 3
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.078790
 		m_flInaccuracyJumpApex = 0.000000
@@ -24999,6 +25106,7 @@
 		_class = "weapon_sg556"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_RIFLE"
 		m_szName = "weapon_sg556"
 		m_szWorldModel = resource_name:"weapons/models/sg556/weapon_rif_sg556.vmdl"
@@ -25042,7 +25150,7 @@
 		m_bMeleeWeapon = false
 		m_iWeight = 30
 		m_iRumbleEffect = 4
-		m_nPrimaryReserveAmmoMax = 90
+		m_nPrimaryReserveAmmoMax = 2
 		m_nSecondaryReserveAmmoMax = 0
 		m_flInaccuracyJumpInitial = 0.208720
 		m_flInaccuracyJumpApex = 0.000000
@@ -25160,6 +25268,7 @@
 		_class = "weapon_ssg08"
 		m_GearSlot = "GEAR_SLOT_RIFLE"
 		m_GearSlotPosition = 0
+		m_bReserveAmmoAsClips = true
 		m_WeaponType = "WEAPONTYPE_SNIPER_RIFLE"
 		m_szName = "weapon_ssg08"
 		m_szWorldModel = resource_name:"weapons/models/ssg08/weapon_snip_ssg08.vmdl"

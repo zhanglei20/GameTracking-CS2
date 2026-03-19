@@ -1353,7 +1353,7 @@ var PlayMenu;
         let elPracticeSettingsContainer = $('#id-play-menu-practicesettings-container');
         let sessionSettings = LobbyAPI.GetSessionSettings();
         let bForceHidden = (m_serverSetting !== 'listen') || m_isWorkshop || !LobbyAPI.IsSessionActive() || !sessionSettings;
-        let bAnnotationAvailable = GameInterfaceAPI.IsMapAnnotationAvailable(m_selectedPracticeMap);
+        let bAnnotationAvailable = true;
         let bAnnotationSelected = GameInterfaceAPI.GetSettingString('ui_playsettings_listen_annotations') === '1';
         let elAnnotationDropDown = $('#id-play-menu-practicesettings-annotations-dropdown');
         elAnnotationDropDown.RebuildOptions(m_selectedPracticeMap, false);
