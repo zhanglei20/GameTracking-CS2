@@ -143,7 +143,7 @@ class CInventoryImageData
 	InventoryNodeType_t m_nNodeType;
 	// MPropertyFriendlyName = "Item Name"
 	// MPropertyReadOnly
-	// MPropertyReadonlyExpr (UNKNOWN FOR PARSER)
+	// MPropertyReadonlyExpr = "1"
 	// MPropertySuppressExpr = "name == """
 	CUtlString name;
 	// MPropertyFriendlyName = "Inventory Image Data"

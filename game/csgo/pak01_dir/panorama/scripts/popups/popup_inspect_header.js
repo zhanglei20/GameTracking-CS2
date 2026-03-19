@@ -11,7 +11,7 @@ var InspectHeader;
         const isInspectOnly = InspectShared.GetPopupSetting('inspect_only');
         if (isInspectOnly === false && !showXRayMachineUi)
             return;
-        const itemId = InspectShared.GetPopupSetting('item_id');
+        const itemId = showXRayMachineUi ? $.GetContextPanel().Data().existingRewardFromXrayId : InspectShared.GetPopupSetting('item_id');
         elHeaderPanel.RemoveClass('hidden');
         _SetName(elHeaderPanel, itemId);
         _SetRarity(elHeaderPanel, itemId);

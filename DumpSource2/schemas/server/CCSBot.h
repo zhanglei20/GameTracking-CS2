@@ -60,6 +60,7 @@ class CCSBot : public CBot
 	bool m_bendNoisePositionValid;
 	float32 m_lookAroundStateTimestamp;
 	float32 m_lookAheadAngle;
+	float32 m_lookUpAngle;
 	float32 m_forwardAngle;
 	float32 m_inhibitLookAroundTimestamp;
 	Vector m_lookAtSpot;

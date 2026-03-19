@@ -13,8 +13,10 @@ Protobufs/google/
 *.bsp
 *.bin
 *.tmp
+*.mdmp
 exceptions.txt
-DumpSource2/.stringsignore
+steam_buildid.txt
+DumpSource2/schemas.json
 
 # Ignore all translations
 **/*_arabic*.txt

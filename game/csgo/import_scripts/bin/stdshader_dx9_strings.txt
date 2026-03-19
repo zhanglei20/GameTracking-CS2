@@ -1,10 +1,3 @@
-                          
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
- Type Descriptor'
 !GnA
 !IsX360() && bFog && ( g_pHardwareConfig->GetDXSupportLevel() <= 90 )
 !bAlphaClip && IsX360() && !nColorDepth
@@ -987,7 +980,6 @@ $srgbtint
 $texture2 texcoord transform
 %i %i %i %i
 &2@UUUUUU
-&Sgw
 ( 8PX
 ( IsGameConsole() ) ? ( bCSMEnabled ? 1 : 0 ) : 0
 ( IsPS3() ) ? MIN( 2, lightState.m_nNumLights ) : lightState.m_nNumLights
@@ -1014,7 +1006,6 @@ $texture2 texcoord transform
 (g_pHardwareConfig->GetHDRType() == HDR_TYPE_FLOAT) ? true : false
 (int)vertexCompression
 (int)vertexCompression && ( nTessellationMode == TESSELLATION_MODE_DISABLED )
-(null)
 (params[USEALTERNATEVIEWMATRIX]->GetIntValue() != 0)
 )2STud>
 ***need to set $abovewater for material %s\n
@@ -1024,7 +1015,6 @@ $texture2 texcoord transform
 -nodepthtexture
 -softparticlesdefaultoff
 -tools
-.00cfg
 .?AVCBasePerInstanceContextData@@
 .?AVCBasePerMaterialContextData@@
 .?AVCBaseShader@@
@@ -1207,9 +1197,6 @@ $texture2 texcoord transform
 .?AVCShaderDLLVerification@@
 .?AVCShaderLibConVarAccessor@@
 .?AVCSolidEnergy_DX9_Context@@
-.?AVCUtlCStringConversion@@
-.?AVCUtlCharConversion@@
-.?AVCUtlNoEscConversion@@
 .?AVCVertexLitGeneric_DX9_Context@@
 .?AVCWeaponDecal_DX9_Context@@
 .?AVConCommandBase@@
@@ -1220,42 +1207,9 @@ $texture2 texcoord transform
 .?AVIShaderDLL@@
 .?AVIShaderDLLInternal@@
 .?AVIShaderDLLVerification@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.data
-.data$r
 .eBSSE and SSE2 are required.
-.edata
 .gfids$x
 .gfids$y
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.rdata
-.rdata$r
-.rdata$zzzdbg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$yd
-.xdata$x
 0 - support three color streams, 1 - use avg of three streams, 2 - single color stream
 0 = always face camera, 1 = rotate around z, 2= parallel to ground 3=use normal 4=face camera POS
 0 = disable, 1 = default, 2 = visualize phong component only (no diffuse)
@@ -1285,10 +1239,6 @@ $texture2 texcoord transform
 0x?9
 1 1 1
 1 = use shader srgb texture reads, 0 = use HW
-1#IND
-1#INF
-1#QNAN
-1#SNAN
 1.0 == mirror, 0.0 == water
 1.0f
 10.0
@@ -1329,7 +1279,6 @@ $texture2 texcoord transform
 <8bunz8
 <@En[vP
 =3CL4`h
-=87M
 ========================================================================\n
 =FA\4
 =Y?DepthOfField
@@ -1352,9 +1301,7 @@ $texture2 texcoord transform
 ?5Wg4p
 ?5a1
 ?7Tf(
-?8bunz8
 ?93l
-?@En[vP
 ?AFxD
 ?ColorCorrection
 ?CustomClothing
@@ -1368,7 +1315,6 @@ $texture2 texcoord transform
 ?T5cd'j
 ?Texture 1
 ?Tu7R
-?UUUUUU
 ?X&eB
 ?X1U
 ?c3y
@@ -1387,7 +1333,6 @@ $texture2 texcoord transform
 @Amount of the static blend texture to blend into the base texture
 @VNQ
 AA_ENABLE
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABOVEWATER
 ADDBASETEXTURE2
 ADDBUMPMAPS
@@ -1514,7 +1459,6 @@ Cheap mode for low-spec hardware. Disables certain nice-but-not-fundamentally-vi
 Cloak
 Cloak color tint
 Cloak_DX90
-CloseHandle
 Color and alpha
 Color texture
 Color tint
@@ -1526,11 +1470,9 @@ Contrast and Brightness for Phong Mask generation using $basetexture2
 Control drawing of non-ambient light ()
 Cookie Frame number for animated cookies
 Cookie Texture
-CorExitProcess
 Cornea strength
 CqTR;
 Cr Bink Texture
-CreateFileW
 Crosshair mode
 Culling control - 0 = nocull, 1 = do cull
 CustomCharacter
@@ -1597,9 +1539,7 @@ Decal texture
 DecalModulate
 DecalModulate_DX9
 DecalModulate_dx9
-DecodePointer
 Degree to which Fresnel should be applied to env map
-DeleteCriticalSection
 Depth is stored in alpha channel
 DepthOfField_dx9
 DepthWrite
@@ -1693,12 +1633,10 @@ Engine_Post_dx9
 Engine_Post_ps20
 Engine_Post_ps20b
 Engine_Post_ps30
-EnterCriticalSection
 Environment cubemap
 Envmap mask is stored in ting mask texture (instead of normal map alpha)
 Envmap tint
 EventSystem001
-ExitProcess
 Exponent for rim lights
 Extra boost for rim lights in shadow
 EyeGlint
@@ -1719,7 +1657,6 @@ FAKERIM
 FANCY_BLENDING
 FASTPATH
 FASTPATHENVMAPCONTRAST
-FEMh\f
 FLASHLIGHT
 FLASHLIGHTDEPTHFILTERMODE
 FLASHLIGHTSHADOWS
@@ -1742,7 +1679,6 @@ Film dust texture
 Film grain texture
 FilmDust
 FilmGrain
-FindClose
 FindFirstFileExA
 FindNextFileA
 First gradient stop and position
@@ -1765,11 +1701,6 @@ Flesh normal texture
 Flesh scroll speed
 Flesh subsurface texture
 Flip decal horizontally
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 Force envmap lookup to always use the top-level mip map
 Force low quality flashlight shadows (faster)
 Force no CSM lookup/filter (faster)
@@ -1777,8 +1708,6 @@ Forces this material to receive flashlights.
 Forces z to be written if set
 Forward direction vector for teeth lighting
 Frame number for $bumpmap
-FreeEnvironmentStringsW
-FreeLibrary
 Full framebuffer texture
 Full-screen blur factor
 Full-screen framebuffer to sample from.
@@ -1792,29 +1721,7 @@ GENERATENORMAL
 GYM=
 GameUISystemMgr001
 Gamma for posterization
-GetACP
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetEnvironmentStringsW
-GetFileType
-GetLastError
-GetModuleFileNameA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemTimeAsFileTime
 Gin>
 Glass/glasswindowbreak070b
 Glitter Mask
@@ -1837,7 +1744,6 @@ HDRSelectRange_ps20
 HDRSelectRange_ps20b
 HDRSelectRange_vs20
 HDRTYPE
-HH:mm:ss
 HIGHLIGHT
 HIGH_PRECISION_DEPTH
 Highlight size opposite drop shadow effect
@@ -1847,8 +1753,6 @@ How much the lightmap effects environment map reflection, 0.0 is off, 1.0 will a
 Ht=c
 I@VortWarp_DX9
 IMEManager001
-IND)ind)
-INITY
 INTERIOR_LAYER
 INVERSEDEPTHBLEND
 ISCUBEMAP
@@ -1866,12 +1770,8 @@ If we bind a texture here, it overrides base alpha (if any) for self illum
 Indicates a specific customization style: 0 = none, 1 = solid, 2 = hydrographic, 3 = spray, 4 = anodized, 5 = anodized multicolored, 6 = anodized airbrushed, 7 = custom texture, 8 = patina/antiqued
 Indicates whether or not to use alpha channel of exponent texture to mask the rim term
 Inexpensive depth-of-field substitute
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
 Input texture
 Intensity of volumetrics
-InterlockedFlushSList
 Internal anti-aliasing values set via material proxy
 Internal fxaa Console values set via material proxy
 Internal fxaa Quality values set via material proxy
@@ -1885,20 +1785,14 @@ Invalid mat_dof_quality value. Resetting to 0.\n
 Invert normals on layer edge
 Is this an uberlight?
 IsBoolSet( info.m_nSeparateDetailUVs, params )
-IsDebuggerPresent
 IsGameConsole() ? ( bCSMEnabled ? 1 : 0 ) : 0
 IsHDREnabled()
 IsPC() ? g_pHardwareConfig->GetShadowFilterMode( false , true ) : SHADOWFILTERMODE_DEFAULT
 IsPlatformOSX() ? Min( 2, lightState.m_nNumLights ) : lightState.m_nNumLights
-IsProcessorFeaturePresent
-IsValidCodePage
 J\;5yTb
 Jl?P
 KERNEL
-KERNEL32.dll
 Kernel type
-LCMapStringEx
-LCMapStringW
 LIGHTING_PREVIEW
 LIGHTMAPWATERFOG
 LIGHTWARPTEXTURE
@@ -1917,7 +1811,6 @@ Layer edge normal blend offset
 Layer edge normal blend softness
 Layer edge normal strength
 Le?2
-LeaveCriticalSection
 Lerp color 1
 Lerp color 2
 Light orientation (quaternion)
@@ -1929,10 +1822,8 @@ LightmappedReflective
 LightmappedReflective_DX90
 Lightmapped_4WayBlend
 Lightmapped_terrain
-LoadLibraryExW
 Local contrast midtone mask
 Local contrast scale
-LocaleNameToLCID
 MAGNIFY
 MASKED
 MAXLUMFRAMEBLEND1
@@ -1940,7 +1831,6 @@ MAXLUMFRAMEBLEND2
 MDLCache004
 MIRROR
 MIRRORABOUTVIEWPORTEDGES
-MM/dd/yy
 MOD2X
 MODE
 MODEL
@@ -1976,15 +1866,12 @@ MorphWeight_DX9
 MotionBlur
 MotionBlur_dx9
 Mpm<
-MultiByteToWideChar
 Multiblend
 Multiblend_DX90
 Multiple textures need to be generated for end-use render. Mode determines which one we're working on.
 Multiply output RGB by intensity factor
 Multiply output RGB by output alpha to avoid precision problems
 N4`U
-NAN(IND)
-NAN(SNAN)
 NEARBYPLAYERS
 NOISE_ENABLE
 NORMALMAP
@@ -2038,7 +1925,6 @@ PHONG_HALFLAMBERT
 PIXELFOGTYPE
 PORTALGHOSTOVERLAY
 POWERUP
-PREVIEW
 PREVIEWPHONGALBEDOTINT
 PRE_PASS
 PS3REGCOUNT48
@@ -2099,7 +1985,6 @@ Pupil dilation (0 is none, 1 is maximal)
 QUALITY
 QUALITY_MODE
 Quality level. Selects different algorithms.
-QueryPerformanceCounter
 QueuedLoaderVersion001
 R: Anodized, G: Camo2, B: Camo3, A: Black is paintable, White reveals original basetexture
 R: cavity, G: AO, B: mig shading
@@ -2130,7 +2015,6 @@ RenderDevice001
 RenderHardwareConfig001
 RenderSystemSurface001
 ResourceSystem004
-RtlUnwind
 SEAMLESS
 SEAMLESS_BASE
 SEAMLESS_DETAIL
@@ -2149,7 +2033,6 @@ SHOWALPHA
 SIMPLEOVERLAY
 SKINNING
 SMOKEGRENADEBLEND
-SNAN)
 SOFTEDGES
 SOFT_MASK
 SPECULAR
@@ -2183,10 +2066,6 @@ Self-illumination tint
 Separate tint mask texture (as opposed to using basetexture alpha)
 Set if this customization style needs a different (non-default) underlying diffuse map for this weapon
 Set to 1 to an exponent texture for the given style rather than a base diffuse
-SetFilePointerEx
-SetLastError
-SetStdHandle
-SetUnhandledExceptionFilter
 ShaderApiFast( pShaderAPI )->GetCurrentNumBones() > 0
 ShaderDLL004
 ShaderSystem002
@@ -2244,7 +2123,6 @@ Take the distance-coded alpha mask from the detail texture.
 Teeth
 Teeth_DX9
 Tells to client code whether the shader is using DX8 vertex/pixel shaders or not
-TerminateProcess
 Texcoord transform
 Texture 2
 Texture 3
@@ -2258,10 +2136,6 @@ This is the directional light position.
 This is the distance from the eye in inches that the shader should finish transitioning to a cheaper water shader.
 This is the distance from the eye in inches that the shader should start transitioning to a cheaper water shader.
 Thresholds for the lightmap envmap effect.  Setting the min higher increases the minimum light amount at which the envmap gets nerfed to nothing.
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 TreeLeaf
 TreeLeaf_ps20
 TreeLeaf_ps20b
@@ -2287,11 +2161,9 @@ USE_PATTERN1
 USE_PATTERN2
 USE_PATTERN_OFFSET
 USE_WITH_2B
-UUUUUU
 Uberlight roundness
 UcKc
 UnLitWorld_ScreenSample
-UnhandledExceptionFilter
 UnlitGeneric
 UnlitTwoTexture
 UnlitTwoTexture_DX9
@@ -2376,7 +2248,6 @@ Weight for Samples
 When adding static, this is the texture that gets blended in
 When enabled, blend mode 4 turns into a special blend mode for layering damage, with the detail texture being the lower strata with no spec or env, and the base texture being the upper strata which casts a drop shadow.  The blend is a thresholded value based on the detail alpha, allowing for what looks like chipped off paint or cracks.
 When using the anodizing mode, some specular values already affected by phongalbedo in the source need to be reduced to compensate for increase in phongalbedoboost
-WideCharToMultiByte
 WindowImposter
 WindowImposter_DX90
 Wireframe_DX9
@@ -2386,14 +2257,11 @@ WorldTwoTextureBlend
 WorldVertexTransition
 WorldVertexTransition_DX9
 Write depth as color
-WriteConsoleW
-WriteFile
 WriteMiniDump
 WriteStencil
 WriteStencil_DX9
 WriteZ
 WriteZ_DX9
-X/4B
 X2CQ
 X4I+
 XL3Z
@@ -2416,7 +2284,6 @@ ZxnI
 [1.0 0.0 1.0]
 [1.0 1.0 1.0 1.0]
 [1.0 1.0 1.0]
-[aOni*{
 \n   PS dyn  var %s = %d (%s)
 \n   PS stat var %s = %d (%s)
 \n   VS dyn  var %s = %d (%s)
@@ -2424,27 +2291,9 @@ ZxnI
 \n7AP
 \nwX4C
 \tJqAl
-\tcQr
 ]~?|V~? O~?
-^<V7w
-_RDATA
 _W4~w
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__stdcall
-__thiscall
-__unaligned
-__vectorcall
-_cabs
 _ftol3
-_hypot
-_logb
-_nextafter
 _ps20
 _ps30
 _rt_FullFrameDepth
@@ -2456,45 +2305,9 @@ _rt_character_ssao
 _vs20
 `*Hhq
 `7bu
-`RTTI
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
 aDJ=
 aFN,
 aaEnabled
-abcdefghijklmnopqrstuvwxyz
 accumbuff4sample
 accumbuff4sample_ps20
 accumbuff4sample_ps20b
@@ -2798,7 +2611,6 @@ cable_ps20
 cable_ps20b
 cable_vs20
 calculate 1-depthblendalpha so that sprites appear when they are near geometry
-ceil
 center .5 .5 scale 1 1 rotate 0 translate 0 0
 center if the model in world space
 character_ps30
@@ -2862,8 +2674,6 @@ customweapon_ps20b
 customweapon_ps30
 customweapon_vs20
 customweapon_vs30
-d8L2
-dddd, MMMM dd, yyyy
 debugmorphaccumulator_ps30
 debugmorphaccumulator_vs30
 debugmrttexture_ps20
@@ -2914,9 +2724,7 @@ downsample_nohdr_ps20b
 downsample_ps20
 downsample_ps20b
 downsample_vs20
-e+000
 e-CS
-eLK(w
 effects/flashlight001
 effects/flashlight_border
 effects/sparkle_color_cube_hdr
@@ -2977,7 +2785,6 @@ f6\tn
 f?Hqf?
 f@)rM
 fE?b
-fabs
 fabs(Scroll1.x) > 0.0
 facing_upright
 fade at intersection boundaries
@@ -3019,7 +2826,6 @@ floattoscreen_vanilla_ps20b
 flow map
 flow noise texture
 flowmap
-fmod
 fog amount at which to end fading decal
 fog amount at which to start fading decal
 fog opacity beyond the range of destination alpha depth (in low-precision depth mode)
@@ -3056,7 +2862,6 @@ gl_nvidia_occlusion_workaround
 glass/glasswindowbreak070b_mask
 glint texture
 grayscale data sitting in green/alpha channels
-h0'D
 h2yv
 hI{L[
 hasBaseAlphaEnvmapMask
@@ -3103,7 +2908,6 @@ ignore vertex colors
 ij?P
 indicates that the base luminance should be used to mask phong
 indicates that there is no normal map and that the phong mask is in base alpha
-inity
 inner end value for outline
 inner start value for outline
 instead of blending between animation frames for the 2nd sequence, select pixels based upon max luminance
@@ -3116,7 +2920,6 @@ iris texture
 j,4c
 jVa?
 k:UG
-k=yI
 kBk>
 kU!W>
 kWt>
@@ -3151,7 +2954,6 @@ lightshafts_vs30
 ls1=
 lzZ?
 m1WY$
-m\nXo
 mask using dest alpha
 mat_ambient_light_b
 mat_ambient_light_g
@@ -3278,8 +3080,6 @@ nTexture3BlendMode
 nTexture4BlendMode
 nTinted
 nTreeSwayMode
-nan(ind)
-nan(snan)
 normal map
 np?z 
 numBones > 0
@@ -3289,16 +3089,13 @@ o3fW
 object_motion_blur_ps20
 object_motion_blur_ps20b
 object_motion_blur_vs20
-obwQ4
 ofn}>
-operator "" 
 oriented
 origin for the eyes
 outer end value for outline
 outer start value for outline
 overbright factor for texture. For HDR effects.
 override
-owM&
 p?O7p?c
 p?RGB: Object-space normal, A: Cavity
 pAttr->GetValue( ATTR_D_COLORCORRECTION )
@@ -3416,7 +3213,6 @@ refract_ps20
 refract_ps20b
 refract_vs20
 refraction tint
-restrict(
 rim light boost
 rim light exponent
 rope_min_pixel_diameter
@@ -3498,7 +3294,6 @@ sky_hdr_compressed_rgbs_ps20b
 sky_ps20
 sky_ps20b
 sky_vs20
-snan)
 solidenergy_ps20b
 solidenergy_ps30
 solidenergy_vs20
@@ -3570,7 +3365,6 @@ texture offset x for glow mask.
 texture offset y for glow mask.
 texture to use r/g channels for blend range for
 the scale for the seamless mapping. # of repetions of texture per inch.
-tier0.dll
 tint value to be applied when running on new-style srgb parts
 tints light in the interior volume
 tints the environment reflection
@@ -3601,7 +3395,6 @@ up vector for the eyes
 use ONE:INVSRCALPHA blending
 used for paint or vomit screen effect
 uv projection scale
-v2!L.2
 vECd
 va1+
 vars.m_bBump

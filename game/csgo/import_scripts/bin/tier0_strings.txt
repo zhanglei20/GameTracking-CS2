@@ -1,17 +1,9 @@
-                          
        Sum (ms)            Avg Time/Frame (ms)     Avg Time/Call (ms)\n
   %10.3f %9.2f      %10.3f %6.2f      %10.3f %6.2f   %8d %6.2f
   %10.3f %9.2f      %8d
   ---------- ---------      ---------- ------      ---------- ------   -------- ------\n
   ---------- ---------      --------\n
-  HEAP_ZERO_MEMORY is specified.\n
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  Avg Time/Frame (ms)\n
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
- Type Descriptor'
 %-40s: %4.1f MB allocated (%4.1f MB peak), %4.1f MB committed, %4.1f MB reserved\n
 %8.4f / %8.4f:  %s\n
 %s (%d) : Assertion callstack...(NOT IMPLEMENTED IN NEW LOGGING SYSTEM.)\n
@@ -24,17 +16,10 @@
 %s test: single thread push, multithread pop, %s
 %s.txt
 %s_%d%02d%02d_%02d%02d%02d_%d_x%p%hs%hs.mdmp
-%u MB address space used assuming maximum PageHeap overhead.\n
-%u MB allocated.\n
-%u MB memory used assuming maximum PageHeap overhead.\n
-%u lifetime allocations (%u delta).\n
-%u outstanding allocations (%d delta).\n
-&Sgw
 ( 8PX
 (%d) + %d bytes
 ('8PW
 (failed)%s
-(null)
 ***** HEAP IS CORRUPT (free compromised for block size %d,in %s heap, possible write after free *****)\n
 ***** OUT OF MEMORY! attempted allocation size: %u ****\n
 *******************************************************************\n                      ***  ERROR  ***                              \nVATOM index %d out of range, recompile tier0 with larger atom table\n*******************************************************************\n
@@ -58,92 +43,23 @@
 -profile
 -sbhcompactdisabled 
 -steam
-.00cfg
 .?AVBasicStatStructFieldDesc@@
-.?AVCCommandLine@@
-.?AVCDefaultLoggingResponsePolicy@@
 .?AVCHeapDefault@@
-.?AVCHeapMemAlloc@@
-.?AVCListOps@TSListTests@@
-.?AVCQueueOps@TSListTests@@
-.?AVCSimpleLoggingListener@@
 .?AVCStdMemAlloc@@
 .?AVCTestCase@@
-.?AVCTestOps@TSListTests@@
 .?AVCTestSuite@@
-.?AVCThread@@
 .?AVCValidatableThread@@
 .?AVCWorkerThread@@
 .?AVCallStackStatStructDescFuncs@@
 .?AVCpuidImpl@?A0xb2a96819@@
 .?AVDefaultImpl@?A0xb2a96819@@
 .?AVGlpiImpl@?A0xb2a96819@@
-.?AVICommandLine@@
-.?AVICpuTopology@@
-.?AVILoggingListener@@
-.?AVILoggingResponsePolicy@@
-.?AVIMemAlloc@@
 .?AVITestCase@@
 .?AVITestSuite@@
-.?AVbad_alloc@std@@
-.?AVbad_array_new_length@std@@
-.?AVbad_exception@std@@
-.?AVexception@std@@
-.?AVlength_error@std@@
-.?AVlogic_error@std@@
-.?AVout_of_range@std@@
-.?AVtype_info@@
 .AGeneral
-.CRT$XCA
-.CRT$XCC
-.CRT$XCL
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XLA
-.CRT$XLZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.data
-.data$r
-.edata
 .gfids$x
 .gfids$y
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.rdata
-.rdata$T
-.rdata$r
-.rdata$zzzdbg
-.rsrc$01
-.rsrc$02
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$x
-.text$yd
-.tls
-.tls$
-.tls$ZZZ
-.xdata$x
 /Tw\n4
-1#IND
-1#INF
-1#QNAN
-1#SNAN
 700PP
 700WP
 </tbody></table></div><script>$(document).ready(function(){$(".sbhTable").accordion( { collapsible:true, active:false } );});</script>
@@ -152,7 +68,6 @@
 <table class="dataTable" style="border:1px solid grey;text-align:right;margin:1px;width:auto;"><tbody><tr style="color:white;border:1px solid grey;margin:2px"><th>Pool&nbsp;</th><th>Size&nbsp;</th><th>Used#&nbsp;</th><th>(%%)&nbsp;</th><th>Free#&nbsp;</th><th>(%%)&nbsp;</th><th>Commit#&nbsp;</th><th>Commit mem&nbsp;</th></tr>
 <tr style="color:#444444"><td>%d</td><td>%d</td><td colspan=6>Not Used</td></tr>\n
 <tr><td>%d</td><td>%d</td><td>%s</td><td><i>%d%%</i></td><td>%s</td><td><i>%d%%</i></td><td>%s</td><td>%s</td></tr>\n
-=87M
 >Utb
 ?5Wg4p
 ??0BasicStatStructFieldDesc@@QAE@$$QAV0@@Z
@@ -223,7 +138,6 @@
 ??_7BasicStatStructFieldDesc@@6B@
 ??_7CTestCase@@6B@
 ??_7CTestSuite@@6B@
-??_7CThread@@6B@
 ??_7CValidatableThread@@6B@
 ??_7CWorkerThread@@6B@
 ??_7CallStackStatStructDescFuncs@@6B@
@@ -385,7 +299,6 @@
 ?SetTrace@CThreadFullMutex@@QAEX_N@Z
 ?SetTrace@CThreadMutex@@QAEX_N@Z
 ?SetUniqueNodeID@CVProfNode@@AAEXH@Z
-?Sleep@CThread@@SAXI@Z
 ?SpinLockForRead@CThreadSpinRWLock@@QAEXXZ
 ?SpinLockForWrite@CThreadSpinRWLock@@QAEXXZ
 ?Start@CThread@@UAE_NIW4ThreadPriorityEnum_t@@@Z
@@ -435,24 +348,18 @@
 ?WaitForRead@CThreadRWLock@@AAEXXZ
 ?WaitForReply@CWorkerThread@@IAEHIP6AIIPAPAVCThreadEvent@@HI@Z@Z
 ?WaitForReply@CWorkerThread@@QAEHI@Z
-?Yield@CThread@@SAXXZ
 ?g_bInException@@3_NA
 ?g_nThreadID@@3V?$CThreadLocalInt@H@GenericThreadLocals@@A
 ?s_iCurrentUniqueNodeID@CVProfNode@@0HA
 @Fv^k
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-ADVAPI32.dll
-AcquireSRWLockExclusive
 AddMemoryInfoCallback
 AdjustWindowRectEx
-AllocConsole
 AllocateThreadID
 AppendMiniProfilerToList
 AreAllAssertsDisabled
-AreFileApisANSI
+Assert
 AssertValidWStringPtr
 Assertion Failed: bRtlGenRandomOK
-AttachConsole
 BGetMiniDumpLock
 BSQ_cache_reference
 Brush_Model_Rendering
@@ -464,57 +371,24 @@ CPUMonitoringHeartbeatThread
 CPUMonitoringMeasureThread
 CallAssertFailedNotifyFunc
 CallNtPowerInformation
-CatchAndWriteContext_t::Invoke with bogus argc/argv
-CatchAndWriteContext_t::Invoke with bogus void *ptr
-CatchAndWriteContext_t::Set w/o a function pointer!
 ClearHardwareBreakpoint
 ClientToScreen
-CloseHandle
 CloseThreadpoolTimer
 CloseThreadpoolWait
-CloseThreadpoolWork
-CoCreateInstance
-CoInitializeEx
-CoTaskMemAlloc
-CoTaskMemFree
-CoTaskMemRealloc
-CoUninitialize
-CompareStringEx
-CompareStringW
 CopyFileUTF8
-CopyFileW
-CorExitProcess
 CrackSmokingCompiler
-CreateDirectoryA
 CreateDirectoryUTF8
-CreateDirectoryW
-CreateEventA
 CreateEventExW
-CreateFileA
 CreateFileUTF8
-CreateFileW
-CreateMutexA
 CreateProcessUTF8
-CreateProcessW
-CreateSemaphoreA
 CreateSemaphoreExW
 CreateSemaphoreW
-CreateSymbolicLinkW
-CreateThread
 CreateThreadpoolTimer
 CreateThreadpoolWait
-CreateThreadpoolWork
-CreateWindowExA
 DbgHelp.dll
 DecodeBinaryFromString
-DecodePointer
-DefWindowProcA
-DeleteCriticalSection
 DeleteFileUTF8
-DeleteFileW
 Detail_Prop_Rendering
-DeviceIoControl
-DialogBoxParamA
 Displacement_Rendering
 DoNewAssertDialog
 DumpMemoryInfoStats
@@ -547,164 +421,71 @@ ETWSimFrameMark
 ETWThrottled
 EnableCrashingOnCrashes
 EncodeBinaryToString
-EncodePointer
-EndDialog
-EnterCriticalSection
 EnumWindows
 EnumerateLoadedModules64
 Error_SpewCallStack
-EventRegister
-EventUnregister
 EventWrite
-ExitProcess
 Extra memory totals
-FEMh\f
 Fast Path Model Rendering
 Fatal assert failed: %s, line %d.  Application exiting.\n
-FindClose
 FindFirstFileExA
 FindNextFileA
 Fixed Page SBH
 Fixed Page SBH:\n
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 FlushProcessWriteBuffers
-FreeEnvironmentStringsW
-FreeLibrary
-FreeLibraryWhenCallbackReturns
 FreeThreadID
-Generic_x86
-GetACP
 GetBinaryTypeUTF8
 GetBinaryTypeW
-GetCPInfo
 GetCPUFrequencyResults
 GetCallStack
 GetCallStack_Fast
-GetClientRect
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetConsoleScreenBufferInfo
 GetCurrentDate
 GetCurrentDayOfTheWeek
 GetCurrentDayOfTheYear
 GetCurrentDirectoryUTF8
-GetCurrentDirectoryW
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentProcessorNumber
-GetCurrentThread
-GetCurrentThreadId
-GetDesktopWindow
-GetDiskFreeSpaceExA
-GetDlgItemInt
-GetDriveTypeW
-GetEnvironmentStringsW
-GetExitCodeThread
 GetFileAttributesA
 GetFileAttributesExA
 GetFileAttributesExUTF8
-GetFileAttributesExW
 GetFileAttributesUTF8
-GetFileAttributesW
 GetFileInformationByHandleEx
-GetFileType
 GetFullPathNameA
 GetFullPathNameUTF8
-GetFullPathNameW
 GetHardwareClockReliably
-GetLastError
-GetLocaleInfoEx
-GetLogicalProcessorInformation
-GetModuleFileNameA
 GetModuleFileNameUTF8
-GetModuleFileNameW
-GetModuleHandleA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessAffinityMask
-GetProcessHeap
-GetProcessUserModeExceptionPolicy
 GetShellWindow
 GetShortPathNameUTF8
 GetShortPathNameW
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemInfo
-GetSystemMetrics
-GetSystemTimeAsFileTime
-GetSystemTimePreciseAsFileTime
 GetTempFileNameUTF8
 GetTempFileNameW
 GetTempPathUTF8
-GetTempPathW
 GetTempValue
 GetThreadContext
-GetThreadPriority
 GetTickCount64
-GetTimeZoneInformation
 GetUnitTest
 GetVAtom
 GetVersionExA
-GetWindowRect
-GetWindowThreadProcessId
 GlobPool1
 GlobPool2
-HH:mm:ss
-HeapAlloc
-HeapFree
-HeapReAlloc
-HeapSetInformation
-HeapSize
 HeapValidate
 HeapWalk
-IND)ind)
-INITY
 Illegal termination of worker thread! Threads must negotiate an end to the thread before the CThread object is destroyed.\n
 InitOnceExecuteOnce
 InitPME
-InitializeConditionVariable
-InitializeCriticalSection
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
-InitializeSRWLock
 InterlockedDecrement
 InterlockedExchangeAdd
-InterlockedFlushSList
 InterlockedIncrement
 IsAssertDialogDisabled
-IsDebuggerPresent
 IsIconic
-IsProcessorFeaturePresent
-IsValidCodePage
 IsWindowVisible
 IsWow64Process
-JanFebMarAprMayJunJulAugSepOctNovDec
-KERNEL32.dll
-Kernel32.dll
 LBH_arena
 LBH_cur
 LBH_free
 LBH_max
-LCMapStringEx
-LCMapStringW
-LeaveCriticalSection
 Light_Cache
-LoadLibraryA
-LoadLibraryExW
 LoadLibraryUTF8
 LoadLibraryW
-LocaleNameToLCID
 LoggingSystem_AddTagToCurrentChannel
 LoggingSystem_SetChannelSpewLevel
 LoggingSystem_SetChannelSpewLevelByName
@@ -713,9 +494,7 @@ LoggingSystem_SetGlobalSpewLevel
 LookupThreadIDFromHandle couldn't find thread ID for handle.
 MBH_cur
 MBH_max
-MM/dd/yy
 Main thread
-MainThrd
 MainThread
 MainThreadNoWait
 May  5 202215:52:30
@@ -723,42 +502,25 @@ MbP?GlobPool0
 MemAllocScratch
 MemFreeScratch
 MemOutOfMemory
-MessageBoxA
 MessageBoxUTF8
-MessageBoxW
 MicroProfilerAddTS
 MiniDumpUnlock
-MiniDumpWriteDump
 MinidumpSetUnhandledExceptionFunction
 MoveFileExUTF8
 MoveFileExW
 MoveFileUTF8
-MoveFileW
-MultiByteToWideChar
-NAN(IND)
-NAN(SNAN)
-NtQuerySystemInformation
-OpenEventA
-OpenThread
 Other_Model_Rendering
 Out of thread ids. Decrease the number of threads or increase MAX_THREAD_IDS\n
 Out of thread local storage!\n
-OutputDebugStringA
 OutputDebugStringUTF8
-OutputDebugStringW
 Overlays
 PME Initialized.\n
 PME Uninitialized.\n
 POWRPROF.dll
-PageHeap is off. Memory use will be normal.\n
-PageHeap is on. Memory use will be larger than normal.\n
-PageHeapFlags
 PanoramaTextureDecode0
 Parameter file '%s' not found, skipping...
 Physics
 Plat_Alloc
-Plat_CheckCOM
-Plat_CheckOleAut
 Plat_ExitProcessWithError
 Plat_FastVerifyHardwareKey
 Plat_Free
@@ -769,17 +531,11 @@ Plat_GetModuleFilename: The buffer given is too small (%d bytes).
 Plat_GetOSVersion
 Plat_GetPagedPoolInfo
 Plat_IsInBenchmarkMode
-Plat_LoadCOM
-Plat_LoadOleAut
 Plat_Realloc
-Plat_RequireCOM
-Plat_RequireOleAut
 Plat_SetAllocErrorFn
 Plat_SetBenchmarkMode
 Plat_SetExitProcessWithErrorCB
 Plat_SimpleLog
-Plat_UnloadCOM
-Plat_UnloadOleAut
 Plat_VerifyHardwareKey
 Plat_VerifyHardwareKeyDriver
 Plat_VerifyHardwareKeyPrompt
@@ -798,29 +554,14 @@ PreloadStackInformation
 PublishAll
 PublishAllMiniProfilers
 PushMiniProfilerTS
-QueryPerformanceCounter
-QueryPerformanceFrequency
 RSDSH;U
-ReadConsoleW
-ReadFile
-RegCloseKey
-RegOpenKeyA
-RegQueryValueExA
-RegisterClassExA
-ReleaseMutex
-ReleaseSRWLockExclusive
-ReleaseSemaphore
 RemoveDirectoryUTF8
-RemoveDirectoryW
 RemoveMemoryInfoCallback
 RemoveMiniProfilerFromList
 ReplaceFileUTF8
 ReplaceFileW
 Replay
-ResetEvent
-ResumeThread
 Ropes
-RtlUnwind
 SBH Configuration Error! (%u < %u)
 SBH compact disabled\n
 SBH configuration error: %d/%d pools initialized\n
@@ -830,82 +571,42 @@ SBH_max
 SHELL32.dll
 SHGetFolderPathUTF8
 SHGetFolderPathW
-SNAN)
 ScreenToClient
 SecureRandomBytes
 SetAllAssertsDisabled
 SetAssertDialogDisabled
 SetAssertFailedNotifyFunc
 SetCPUMonitoringInterval
-SetConsoleTextAttribute
 SetCurrentDirectoryUTF8
-SetCurrentDirectoryW
-SetDlgItemInt
-SetDlgItemTextA
-SetEndOfFile
 SetEnvironmentVariableA
 SetEnvironmentVariableUTF8
-SetEnvironmentVariableW
-SetEvent
 SetFileAttributesUTF8
-SetFileAttributesW
 SetFileInformationByHandle
-SetFilePointerEx
 SetHardwareBreakpoint
-SetLastError
 SetMiniDumpFunction
 SetMinidumpComment
 SetMinidumpFilenamePrefix
-SetPriorityClass
-SetProcessAffinityMask
-SetProcessUserModeExceptionPolicy
 SetStackTranslationSymbolSearchPath
-SetStdHandle
-SetThreadAffinityMask
 SetThreadContext
-SetThreadPriority
 SetThreadpoolTimer
 SetThreadpoolWait
-SetUnhandledExceptionFilter
-SetWindowPos
-SetWindowTextA
 Shadow_Rendering
 ShouldUseNewAssertDialog
 ShutdownPME
 Shutting down telemetry.\n
-SleepConditionVariableCS
-SleepConditionVariableSRW
 Small block heap is corrupt (primary)\n 
-Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%s
-Sorry -- no stats saved to file memstats.txt when the heap allocator is enabled.\n
 StackToolsNotify_LoadedLibrary
 StackTraceDatabaseSizeInMB
-StackWalk64
 Static_Prop_Rendering
 StoreTempValue
-SubmitThreadpoolWork
-SunMonTueWedThuFriSat
-SuspendThread
 Swap_Buffers
-SymCleanup
 SymEnumerateModules64
 SymFromAddr
 SymGetLineFromAddr64
 SymGetModuleInfo64
-SymGetOptions
 SymInitialize
 SymLoadModule64
-SymSetOptions
 SymSetSearchPath
-SymUnloadModule64
-SysAllocString
-SysAllocStringByteLen
-SysAllocStringLen
-SysFreeString
-SysReAllocString
-SysReAllocStringLen
-SysStringByteLen
-SysStringLen
 SystemFunction036
 TELEMETRY: Calling tmOpen( %s )...\n
 Telemetry initialized at level %u.\n
@@ -915,8 +616,6 @@ TelemetrySetLevel
 TelemetrySetLevel changed from 0x%x to 0x%x (ZoneFilterVal:%d)\n
 TelemetryShutdown
 TelemetryTick
-TerminateProcess
-TerminateThread
 Texture_Cache
 Thread %u about to try-wait for lock %p owned by %u\n
 Thread %u about to wait for lock %p owned by %u\n
@@ -926,9 +625,7 @@ Thread %u releasing lock 0x%p\n
 Thread exited immediately\n
 Thread failed to initialize\n
 Thread failed to respond, probably exited\n
-Thread(%p/%p)
 ThreadFinishInitOnce
-ThreadGetPriority
 ThreadHandleToIDMap overflow.
 ThreadHandleToIDMap underflow.
 ThreadInitOnce
@@ -944,29 +641,12 @@ ThreadInterlockedIncrement64
 ThreadInterlockedOr64
 ThreadSetAffinity
 ThreadSetDebugName
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 Totals (%s): Committed:%16s Allocated:%16s\n
-TracingFlags
-Trailing space on executable name! This will cause Application Verifier and ETW Heap tracing to fail!\n
-TryAcquireSRWLockExclusive
 TryEnterCriticalSection
-USER32.dll
-UTF-16LEUNICODE
-Unable to load COM\n
-Unable to load oleaut32\n
-Unhandled WAIT_ABANDONED in WaitForMultipleObjects
-UnhandledExceptionFilter
 UnitTestCount
 UnitTestInstallTestCase
-Unknown exception
 Unknown memory
-Unknown return value (%lu) from WaitForMultipleObjects
 VGUI
-VTPause
-VTResume
 V_tier0_snprintf
 V_tier0_stricmp
 V_tier0_strncat
@@ -974,33 +654,15 @@ V_tier0_strncpy
 V_tier0_vsnprintf
 Valve input provider initialized.
 Valve001
-VariantClear
-VariantCopy
-VariantInit
-VerSetConditionMask
-VerifyVersionInfoA
-VirtualAlloc
-VirtualFree
-VirtualQuery
-WINMM.dll
-WaitForMultipleObjects
-WaitForSingleObject
 WaitForThreadpoolTimerCallbacks
-WakeAllConditionVariable
-WakeConditionVariable
 Warning_SpewCallStack
-WideCharToMultiByte
 World Rendering
-WriteConsoleW
-WriteFile
 WriteMiniDump
 WriteMiniDumpUsingExceptionInfo
-X/4B
 Y@tier0_s.dll
 [ func+child      func ]       Count\n
 [ func+child      func ]  [ func+child   func ]  [ func+child   func ]    Count   Peak\n
 [9x)bw
-[aOni*{
 \\.\GDPERF
 \\.\GDPERF.VXD
 \n<div class="sbhTable"><legend>dlmalloc mspace #%d: %u MiB allocated of %u MiB footprint</legend><pre>\n     %d:footprint     ~ %5u MiB (total space used by the mspace)\n     %d:footprint_max ~ %5u MiB (maximum total space used by the mspace)\n     %d:arena         ~ %5u MiB (non-mmapped space allocated from system)\n     %d:ordblks       ~ %5u MiB (number of free chunks)\n     %d:hblkhd        ~ %5u MiB (space in mmapped regions)\n     %d:usmblks       ~ %5u MiB (maximum total allocated space)\n     %d:uordblks      ~ %5u MiB (total allocated space)\n     %d:fordblks      ~ %5u MiB (total free space)\n     %d:keepcost      ~ %5u MiB (releasable (via malloc_trim) space)\n</pre></div>
@@ -1008,8 +670,6 @@ Y@tier0_s.dll
 \nTesting %d threads:\n
 \n\nDRASTIC MEMORY OVERFLOW: Fell out of small block heap!\n\n\n
 \ndlmalloc mspace #%d. 1 MiB=2^20 bytes\n     %d:footprint     ~ %5u MiB (total space used by the mspace)\n     %d:footprint_max ~ %5u MiB (maximum total space used by the mspace)\n     %d:arena         ~ %5u MiB (non-mmapped space allocated from system)\n     %d:ordblks       ~ %5u MiB (number of free chunks)\n     %d:hblkhd        ~ %5u MiB (space in mmapped regions)\n     %d:usmblks       ~ %5u MiB (maximum total allocated space)\n     %d:uordblks      ~ %5u MiB (total allocated space)\n     %d:fordblks      ~ %5u MiB (total free space)\n     %d:keepcost      ~ %5u MiB (releasable (via malloc_trim) space)\n
-\tcQr
-^<V7w
 _AssertValidReadPtr
 _AssertValidReadWritePtr
 _AssertValidStringPtr
@@ -1018,85 +678,12 @@ _CCallStackStatsGatherer_Write_FieldDescriptions
 _ExitOnFatalAssert
 _ExitOnFatalAssert\n
 _NT_SYMBOL_PATH=
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__stdcall
-__thiscall
-__unaligned
-__vectorcall
-_cabs
-_hypot
-_logb
-_nextafter
-`RTTI
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
 `h`hhh
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
-abcdefghijklmnopqrstuvwxyz
-accessviolation
-advapi32.dll
-arrayboundsexceeded
-bad allocation
-bad array new length
-bad exception
-breakpoint
 c:\buildslave\csgo_trunk_win32\build\src\public\tier0/tslist.h
 c:\buildslave\csgo_trunk_win32\build\src\tier0\../public/tier0/threadtools.inl
 c:\buildslave\csgo_trunk_win32\build\src\tier0\Release\tier0.pdb
-ceil
 chdir_utf8
-d8L2
-datatypemisalignment
-dddd, MMMM dd, yyyy
 distributed...
-e+000
-eLK(w
-fabs
-fltdenormaloperand
-fltdividebyzero
-fltinexactresult
-fltinvalidoperation
-fltoverflow
-fltstackcheck
-fltunderflow
-fmod
 fopen_utf8_internal
 freopen_utf8_internal
 g_ClockSpeed
@@ -1112,49 +699,22 @@ g_pGlobalMiniProfilers
 g_pLastMiniProfiler
 g_pRootMiniProfiler
 g_tm_api
-gc.dll
 gc.exe
 getcwd_utf8
-h0'D
-inity
-intdividebyzero
-intoverflow
-invalid string position
-k=yI
-kernel32
-kernel32.dll
 lzZ?
-m\nXo
 map/set<T> too long
 memprocessheap.cpp(321):***** OUT OF MEMORY! attempted allocation size: %I64d ****\n
 memstats
 mkdir_utf8
-nan(ind)
-nan(snan)
 no affinity...
-noncontinuableexception
-ntdll.dll
-obwQ4
-ole32.dll
-oleaut32.dll
-operator "" 
-owM&
 physical
-privinstruction
+platform.cpp
 remove_utf8
 rename_utf8
-restrict(
 rmdir_utf8
 simple.log
-singlestep
-snan)
-string too long
-tier0.dll
-timeBeginPeriod
 tmGetApi
 unknown_module
-v2!L.2
-vector<T> too long
 vtuneapi.dll
 xpxxxx
 xwpwpp

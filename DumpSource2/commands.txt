@@ -245,6 +245,9 @@ bot_kill (gamedll cheat)
 bot_knives_only (gamedll release)
 	Restricts the bots to only using knives
 
+bot_path (gamedll cheat)
+	bot_path <all> <t|ct> <type> <difficulty> <name> - Tells a specific bot to follow a human path, matching the given criteria.
+
 bot_pistols_only (gamedll release)
 	Restricts the bots to only using pistols
 
@@ -1508,6 +1511,9 @@ force_assert (developmentonly)
 force_fatal_error (developmentonly)
 	Fire a fatal error
 
+force_floating_point_exceptions (developmentonly)
+	Enable floating point exceptions to find bugs
+
 force_hibernate (developmentonly)
 	Force toggle hibernation state
 
@@ -1863,9 +1869,6 @@ lrucache_set_size (developmentonly defensive)
 
 lrucache_stats (developmentonly defensive)
 	Spews information about all CUtlLRUCaches
-
-malloc_stats_dump (developmentonly defensive)
-	Dump malloc stats to stderr.
 
 map (release vconsole_fuzzy_matching vconsole_set_focus)
 	map <mapname> :Load a new map.
@@ -2387,6 +2390,9 @@ push_var_values (developmentonly defensive)
 quit (release vconsole_set_focus)
 	Quit the game
 
+r_dx11_report_live_objects (developmentonly defensive)
+	Prints out live D3D11 objects (requires -dx11debug)
+
 r_force_engine_render_frame (developmentonly defensive)
 	Force a single render of the engine viewport.
 
@@ -2396,14 +2402,20 @@ r_gpu_mem_stats (linked_concommand developmentonly defensive)
 r_print_buffers (linked_concommand developmentonly defensive)
 	Print Vertex/Index/GPU buffers.
 
+r_print_texture_stats (developmentonly defensive)
+	Texture stats
+
 r_render_coordination_state (developmentonly defensive)
 	Prints out the current render coordination state.
 
 r_renderdoc_capture_frame (linked_concommand developmentonly defensive)
 	Triggers a RenderDoc capture
 
-r_renderdoc_capture_window_vulkan (developmentonly)
+r_renderdoc_capture_window_dx11 (developmentonly)
 	Triggers a RenderDoc capture of a specific Window
+
+r_textures_evict_all (linked_concommand developmentonly defensive)
+	Evict all resident texture.
 
 r_toggleviewportsize (developmentonly defensive)
 	Toggles viewport size between small + full window.
@@ -2501,6 +2513,9 @@ resource_list (developmentonly defensive)
 
 resource_log_allocate_timing (developmentonly defensive)
 	Log time spent in Allocate for all resource types
+
+resource_manifest_validate_modules (developmentonly defensive)
+	Scan all of the loaded modules and validate any resource manifests found
 
 resource_repeated_reload (developmentonly defensive)
 	resource_repeated_reload <count> <resource_name> (<resource name> ...): Load and unload the specified resource(s)
@@ -3464,6 +3479,9 @@ voice_reset_mutelist (developmentonly defensive)
 voice_show_mute (developmentonly defensive)
 	Show whether current players are muted.
 
+voice_status_test_toggle (developmentonly clientdll)
+	Test voice and status notices
+
 voice_toggle_open_mic (clientdll release)
 	Toggles between open-mic and push-to-talk
 
@@ -3508,27 +3526,6 @@ vprof_time_scale (developmentonly hidden)
 
 vtune (developmentonly defensive)
 	Controls VTune's sampling.
-
-vulkan_framebuffermgr_print (developmentonly defensive)
-	Prints out stats for the Vulkan Framebuffer manager
-
-vulkan_memgr_fragmentation_print (developmentonly defensive)
-	Prints out detailed memory fragmentation stats for the Vulkan memory manager
-
-vulkan_memgr_print (developmentonly defensive)
-	Prints out stats for the Vulkan memory manager
-
-vulkan_pipelinemgr_print (developmentonly defensive)
-	Prints out stats for the Vulkan Pipeline manager
-
-vulkan_shader_table_print (developmentonly defensive)
-	Prints out stats for the Vulkan shader table
-
-vulkan_vma_defrag (developmentonly defensive)
-	Force defragmenting memory with VMA
-
-vulkan_vma_gpu_mem_dump (developmentonly defensive)
-	Dump .json file for use by GpuMemDumpVis.py
 
 weapon_switch (developmentonly gamedll)
 	Use a particular weapon	

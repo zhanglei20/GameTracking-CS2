@@ -1,10 +1,3 @@
-                          
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
- Type Descriptor'
 !GnA
 #D5p
 $BUMPFRAME
@@ -28,14 +21,11 @@ $frame
 $srgbtint
 %i %i %i %i
 &2@UUUUUU
-&Sgw
 ( 8PX
 (int)vertexCompression
-(null)
 )2STud>
 *VVw
 +*tsJ
-.00cfg
 .?AVCBasePerInstanceContextData@@
 .?AVCBaseShader@@
 .?AVCBaseVSShader@@
@@ -51,9 +41,6 @@ $srgbtint
 .?AVCShaderDLL@@
 .?AVCShaderDLLVerification@@
 .?AVCShaderLibConVarAccessor@@
-.?AVCUtlCStringConversion@@
-.?AVCUtlCharConversion@@
-.?AVCUtlNoEscConversion@@
 .?AVConCommandBase@@
 .?AVConVar@@
 .?AVIConCommandBaseAccessor@@
@@ -62,47 +49,10 @@ $srgbtint
 .?AVIShaderDLL@@
 .?AVIShaderDLLInternal@@
 .?AVIShaderDLLVerification@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.data
-.data$r
-.edata
 .gfids$x
 .gfids$y
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.rdata
-.rdata$r
-.rdata$zzzdbg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$yd
-.xdata$x
 0.25
 0vB-
-1#IND
-1#INF
-1#QNAN
-1#SNAN
 128.0f
 256.0f
 2ieO=
@@ -115,7 +65,6 @@ $srgbtint
 :s6X
 <8bunz8
 <@En[vP
-=87M
 >$flags
 >Xzv
 >o3fW
@@ -127,9 +76,7 @@ $srgbtint
 ?5Wg4p
 ?5a1
 ?7Tf(
-?8bunz8
 ?93l
-?@En[vP
 ?AFxD
 ?G2Q
 ?IT$7
@@ -138,7 +85,6 @@ $srgbtint
 ?PiB
 ?T5cd'j
 ?Tu7R
-?UUUUUU
 ?VEngineCvar007
 ?X&eB
 ?X1U
@@ -153,7 +99,6 @@ $srgbtint
 ?u1P
 ?uZEeu
 @VNQ
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
 AYl=
 A]?VJ
 Ai0T
@@ -165,11 +110,8 @@ Bfe9
 COLORCORRECTION_VERSION_1
 COMPRESSED_VERTS
 CUtlLinkedList overflow! (exhausted memory allocator)\n
-CloseHandle
 ConVar(%s) defined with infinite float value (%s)\n
-CorExitProcess
 CqTR;
-CreateFileW
 DETAIL
 DETAILTEXTURE
 DETAIL_BLEND_MODE
@@ -187,89 +129,34 @@ DebugLuxels
 DebugNormalMap
 DebugTangentSpace
 DebugTextureInfo001
-DecodePointer
-DeleteCriticalSection
 Eb2]A=
-EnterCriticalSection
 EventSystem001
-ExitProcess
 F0$?3=1
 F=J4
 F?cf
-FEMh\f
 FLASHLIGHTDEPTHFILTERMODE
 FLASHLIGHTSHADOWS
 Fillrate
-FindClose
 FindFirstFileExA
 FindNextFileA
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
-FreeEnvironmentStringsW
-FreeLibrary
 G&iC
 G8D>
 GYM=
 GameUISystemMgr001
-GetACP
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetEnvironmentStringsW
-GetFileType
-GetLastError
-GetModuleFileNameA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemTimeAsFileTime
 Gin>
 HARDWAREFOGBLEND
-HH:mm:ss
 Ht=c
 IMEManager001
-IND)ind)
-INITY
 IT=_9
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
-InterlockedFlushSList
-IsDebuggerPresent
-IsProcessorFeaturePresent
-IsValidCodePage
 J\;5yTb
-KERNEL32.dll
-LCMapStringEx
-LCMapStringW
 La8i
 Le?2
-LeaveCriticalSection
-LoadLibraryExW
-LocaleNameToLCID
 MDLCache004
-MM/dd/yy
 MatSystemSurface006
 MaterialSystemHardwareConfig013
 MkK?
 Mpm<
-MultiByteToWideChar
-NAN(IND)
-NAN(SNAN)
 NORMALMAP
 NORMALMAP2
 Nu?-HF
@@ -280,46 +167,31 @@ Pex?0
 Physics2 Interface ActorMgr v0.1
 Physics2 Interface ResourceMgr v0.1
 Physics2 Interface v0.3
-QueryPerformanceCounter
 QueuedLoaderVersion001
-RSDS
 R\vn>
 Rd.F
 RenderDevice001
 RenderHardwareConfig001
 RenderSystemSurface001
 ResourceSystem004
-RtlUnwind
 SEAMLESS
 SHOWALPHA
 SKINNING
-SNAN)
 STAR_System001
 S\rYkv
 SceneSystem_001
-SetFilePointerEx
-SetLastError
-SetStdHandle
-SetUnhandledExceptionFilter
 ShaderDLL004
 ShaderSystem002
 Svj>
 TEETH
 TESSELLATION
 T\t5K
-TerminateProcess
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 T~OXu
 U?1g
 U?wN
 UBERLIGHT
 UEj)
-UUUUUU
 UcKc
-UnhandledExceptionFilter
 Uo\vv
 VBAllocTracker001
 VDataCache003
@@ -345,94 +217,32 @@ WORLDVERTEXTRANSITION
 WR_l%2>
 WY'N
 Warning:  %s = '%s' is infinite, clamping value.\n
-WideCharToMultiByte
 WmS|
-WriteConsoleW
-WriteFile
 WriteMiniDump
-X/4B
 X2CQ
 X4I+
 XL3Z
 Xl=hs>
 Z_JmLd
 ZxnI
-[aOni*{
 \n   PS dyn  var %s = %d (%s)
 \n   VS dyn  var %s = %d (%s)
 \n   VS stat var %s = %d (%s)
 \nwX4C
 \tJqAl
-\tcQr
-^<V7w
-_RDATA
 _W4~w
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__stdcall
-__thiscall
-__unaligned
-__vectorcall
-_cabs
 _ftol3
-_hypot
-_logb
-_nextafter
 `*Hhq
 `7bu
-`RTTI
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
 aDJ=
 aFN,
-abcdefghijklmnopqrstuvwxyz
 bFbx
 bShowAlpha
 bump map
 c:\buildslave\csgo_trunk_win32\build\src\materialsystem\stdshaders\Release_dbg\stdshader_dbg.pdb
 c?e2
-ceil
 center .5 .5 scale 1 1 rotate 0 translate 0 0
 cu\fq7
-d8L2
-dddd, MMMM dd, yyyy
 debugdrawdepth_ps20
 debugdrawdepth_ps20b
 debugdrawdepth_vs20
@@ -443,13 +253,10 @@ debugluxel_ps20
 debugluxel_ps20b
 debugluxel_vs20
 debugtangentspace_vs20
-e+000
 e-CS
-eLK(w
 effects/flashlight001
 f6\tn
 f@)rM
-fabs
 fillrate_ps20
 fillrate_ps20b
 fillrate_vs20
@@ -461,18 +268,14 @@ flashlight spotlight shape texture
 flashlight_ps20
 flashlight_ps20b
 flashlight_ps30
-fmod
 frame number for $bumpmap
-h0'D
 h2yv
 hI{L[
 hb?O2
 id@j>
-inity
 j,4c
 jVa?
 k:UG
-k=yI
 kBk>
 kU!W>
 kWt>
@@ -481,39 +284,30 @@ lightmappedgeneric_flashlight_vs30
 ls1=
 lzZ?
 m1WY$
-m\nXo
 mat_debugdepthmode
 mat_debugdepthval
 mat_debugdepthvalmax
 mat_displacementmap
 nTessellationMode
-nan(ind)
-nan(snan)
 np?z 
 numBones > 0
 n}in
 o3fW
-obwQ4
 ofn}>
-operator "" 
 override
-owM&
 pShaderAPI->GetCurrentNumBones() > 0
 pnJ=
 qo-W>
 r7Yr7=
-restrict(
 sU0&?W
 s_pShaderAPI->GetCurrentNumBones() > 0
 shadertest/BaseTexture
 shadertest/WorldDiffuseBumpMap_bump
 shadertest/basetexture
-snan)
 stdshader_dbg.dll
 s{c|H
 t14x
 tLVv
-tier0.dll
 tint value to be applied when running on new-style srgb parts
 u+E6
 u?^p?o4
@@ -526,7 +320,6 @@ unlitgeneric_ps20b
 unlitgeneric_ps30
 unlitgeneric_vs20
 unlitgeneric_vs30
-v2!L.2
 vECd
 va1+
 vertexlitgeneric_flashlight_vs20

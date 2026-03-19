@@ -1,17 +1,10 @@
-                          
   Total Anonymous Claimed: %d\n
   Total Anonymous Unclaimed: %d\n
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  %f elapsed w/o i/o\n
- Base Class Array'
- Base Class Descriptor at (
  CAsyncRequestQueue destructor called while queue was not empty
- Class Hierarchy Descriptor'
- Complete Object Locator'
  Couldn't Find Async Request to Remove
  File is compressed
  ReadToken overflow
- Type Descriptor'
  fnumber=%d ofs=0x%x sz=%d
 #D5p
 $$$$$$$HighlyUnlikelyPathForInitializationPurposes#######
@@ -33,11 +26,9 @@ $$$$$$$HighlyUnlikelyPathForInitializationPurposes#######
 %s_dir.vpk
 %s_dlc%d
 %s_dlc%d/dlc_disabled.txt
-&Sgw
 ( 8PX
 (Late) 
 (map)
-(null)
 (pack) 
 ---- FINISH ANYTIME ( NORMAL PRIORITY )----\n
 ---- FINISH BEFORE GAMEPLAY ( NORMAL PRIORITY )----\n
@@ -58,7 +49,6 @@ $$$$$$$HighlyUnlikelyPathForInitializationPurposes#######
 -unbuffered_io
 -usebanlist
 -xlsp
-.00cfg
 .?AUAsyncOpenedFile_t@@
 .?AUFileAsyncRequest_t@@
 .?AV?$CBaseAppSystem@VIAsyncFileSystem@@@@
@@ -113,17 +103,11 @@ $$$$$$$HighlyUnlikelyPathForInitializationPurposes#######
 .?AVCResourcePreloadAnonymous@@
 .?AVCStdFilesystemFile@@
 .?AVCStdioFile@@
-.?AVCThread@@
-.?AVCUtlCStringConversion@@
-.?AVCUtlCharConversion@@
-.?AVCUtlNoEscConversion@@
 .?AVCWin32ReadOnlyFile@@
 .?AVCZip@@
 .?AVCZipPackFile@@
-.?AVConCommand@@
 .?AVConCommandBase@@
 .?AVConVar@@
-.?AVIAppSystem@@
 .?AVIAsyncFileRequest@@
 .?AVIAsyncFileSystem@@
 .?AVIAsyncGroupRequest@@
@@ -136,50 +120,12 @@ $$$$$$$HighlyUnlikelyPathForInitializationPurposes#######
 .?AVIIoStats@@
 .?AVILoaderProgress@@
 .?AVIQueuedLoader@@
-.?AVIRefCounted@@
 .?AVIResourcePreload@@
 .?AVIThreadedFileMD5Processor@@
 .?AVIZip@@
 .?AVIZipWriteStream@@
-.?AV__non_rtti_object@std@@
-.?AVbad_cast@std@@
-.?AVbad_typeid@std@@
-.?AVexception@std@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.data
-.data$r
-.edata
 .gfids$x
 .gfids$y
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.rdata
-.rdata$r
-.rdata$zzzdbg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$yd
-.xdata$x
 /csgo/compatibility/%s/
 0 to not display the call-stack when we hit a fs_report_sync_opens warning. Set to 1 to display the call-stack.
 0: Disallow writes to filesystem locations we don't own. 1: Allow such writes (potentially unsafe).
@@ -188,10 +134,6 @@ $$$$$$$HighlyUnlikelyPathForInitializationPurposes#######
 0:Off, 1:Any, 2:Sync only
 0:Off, 1:On
 0:Off, 1:Timing, 2:Completions, 3:Late Completions, 4:Creations/Purges, -1:All
-1#IND
-1#INF
-1#QNAN
-1#SNAN
 125432575
 125436057
 125438072
@@ -225,7 +167,6 @@ $$$$$$$HighlyUnlikelyPathForInitializationPurposes#######
 :error\n
 <8bunz8
 <@En[vP
-=87M
 ?3xj
 ?5Wg4p
 ?5a1
@@ -257,7 +198,6 @@ $$$$$$$HighlyUnlikelyPathForInitializationPurposes#######
 ?Reset@CThreadEvent@@QAE_NXZ
 ?Set@CThreadEvent@@QAE_NXZ
 ?Set@CThreadLocalBase@GenericThreadLocals@@QAEXPAX@Z
-?Sleep@CThread@@SAXI@Z
 ?SpinLockForRead@CThreadSpinRWLock@@QAEXXZ
 ?SpinLockForWrite@CThreadSpinRWLock@@QAEXXZ
 ?Start@CThread@@UAE_NIW4ThreadPriorityEnum_t@@@Z
@@ -269,14 +209,11 @@ $$$$$$$HighlyUnlikelyPathForInitializationPurposes#######
 @VNQ
 @echo off\n
 @echo on\n
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Access violation - no RTTI data!
 AddedToCache
 Ai0T
 AiFC.
 Alignment
 Allow AsyncBegin/EndRead()
-AreFileApisANSI
 Assertion Failed: !m_bNeedsSort
 Async I/O disabled from command line\n
 Async Request has not finished, unable to release
@@ -286,7 +223,6 @@ Bad Outer in CAsyncRequestBase::DeleteOuter
 Bad Outer in CAsyncRequestBase::UpdateAfterServicing
 Bad Outer in CAsyncRequestBase::ValidateSubmittedRequest
 Bad Release Request
-Bad dynamic_cast!
 Bad expression operator: '%c%c', expected C style operator
 Bad expression token: %c
 Bad or missing zip file, failed to open '%s'\n
@@ -332,25 +268,14 @@ ChunkMd5Master
 ChunkMd5Second
 CkeyValuesTokenReader::SeekBackOneToken: No tokens read yet
 Claimed
-CloseHandle
 Closing pack file with %d open files!\n
-CompareStringEx
-CompareStringW
 ConVar(%s) defined with infinite float value (%s)\n
-CorExitProcess
 Couldn't open .bsp %s for embedded pack file check\n
 Couldn't parse corrupted VPK.
 CqTR;
-CreateDirectoryW
-CreateFileA
-CreateFileMappingA
-CreateFileW
 DataOffset
 DebugTextureInfo001
-DecodePointer
-DeleteCriticalSection
 DeleteFileA
-DeleteFileW
 DirectoryEntries
 DiscardsFromCache
 Display current filesystem whitelist state
@@ -358,14 +283,11 @@ Displays all the prefetches currently in progress.
 DoNewAssertDialog
 ERROR_NO_SYSTEM_RESOURCES: Reducing max read to %d bytes\n
 Eb2]A=
-EnterCriticalSection
 Errors occured loading files.\n
 EventSystem001
 Exceeded limit of number of vpk files supported (%d)!\n
-ExitProcess
 Extensionless VPK file '%s' specified. Ignoring.\n
 F0$?3=1
-FEMh\f
 FS:  Tried to Close NULL file handle!\n
 FS:  Tried to EndOfFile NULL file handle!\n
 FS:  Tried to FPrintf NULL file handle!\n
@@ -401,99 +323,40 @@ FileErrorCount
 FileErrorsCorrected
 FileFraction
 FileResultsDifferent
-FileTimeToSystemTime
-FindClose
 FindFirstFileA
 FindFirstFileExA
 FindNextFileA
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 Flushes the FIOS HDD cache.
 FmtStrVSNPrintf truncated to %d without QUIET_TRUNCATION specified!\n
 ForceVpkOnlyExtensions
-FreeEnvironmentStringsW
-FreeLibrary
 FsAsyncIO
 GYM=
 GameUISystemMgr001
-GetACP
-GetCPInfo
 GetCallStack
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetCurrentDirectoryA
-GetCurrentDirectoryW
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetDiskFreeSpaceA
-GetDriveTypeW
-GetEnvironmentStringsW
 GetFileAttributesExA
-GetFileAttributesExW
 GetFileInformationByHandleEx
 GetFileSize
-GetFileSizeEx
-GetFileType
 GetFullPathNameA
-GetFullPathNameW
-GetLastError
-GetLocalTime
-GetModuleFileNameA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
 GetOverlappedResult
-GetProcAddress
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemTimeAsFileTime
-GetTempPathW
-GetTimeZoneInformation
 GetVersionExA
 GetWaitForResourcesProgress (stdio)
-HH:mm:ss
 Ht=c
 IMEManager001
-IND)ind)
 IND)ind)INF
-INITY
 Incompatible pack file detected! %s\n
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
-InterlockedFlushSList
 Invalid async read of %s\n
-IsDebuggerPresent
-IsProcessorFeaturePresent
-IsValidCodePage
 ItemsReadFromCache
-JanFebMarAprMayJunJulAugSepOctNovDec
-KERNEL32.dll
 KeyValues Error: %s in file %s line %d\n
-LCMapStringEx
-LCMapStringW
 LOCAL
 LOWVIOLENCE
 La8i
 Last Md5 Value %s Should be %s \n
 Le?2
-LeaveCriticalSection
 LoadFromBuffer: missing {
 LoadLibraryExA
-LoadLibraryExW
 Loading VPK file hashes for pure server operation.\n
-LocaleNameToLCID
 MDLCache004
-MM/dd/yy
 MSG_FILEWRITE - Filesystem was asked to write to '%s', but we don't own that location. Allowing because fs_allow_unsafe_writes is set.\n
 MSG_FILEWRITE - Filesystem was asked to write to '%s', but we don't own that location. Allowing...\n
 MSG_FILEWRITE - Filesystem was asked to write to '%s', but we don't own that location. Disallowing because fs_allow_unsafe_writes is set.\n
@@ -501,9 +364,6 @@ MatSystemSurface006
 MaterialSystemHardwareConfig013
 MkK?
 MoveFileExW
-MultiByteToWideChar
-NAN(IND)
-NAN(SNAN)
 No VPK Errors occured loading files.\n
 Opens a file for write, testing for exploits in the low level filesystem. This is dev only.
 Pack File %s at offset %x length %x errorcount = %d \n
@@ -512,7 +372,6 @@ PackFileNumber
 Path ID:
 Peak Anonymous IO Memory: %.2f MB\n
 Peak IO Memory: %.2f MB\n
-PeekNamedPipe
 Pex?0
 Physics2 Interface ActorMgr v0.1
 Physics2 Interface ResourceMgr v0.1
@@ -522,7 +381,6 @@ Prefetches a file in a pack: <portal2/models/container_ride/fineDebris_part5.ani
 Prefetches a file: </PS3_GAME/USRDIR/filename.bin>.\nThe preftech is medium priority and persistent.
 PreloadDirectoryEntries
 Pretends that the vpk filename pak01_003.vpk is corrupt so we can test that code.
-QueryPerformanceCounter
 Queued Loader:\n\n
 QueuedLoader: Anonymous Job '%s' not found\n
 QueuedLoader: Computation:%8.8llx, Size:%7d %s%s\n
@@ -541,8 +399,6 @@ RSDSoO
 Read From Pack: Sync I/O: Requested:%7d, Offset:0x%16.16llx, %s\n
 Read From Pack: [Preload] Requested:%d, Compressed:%d, %s\n
 Read From Pack: [Preload] Requested:%d, Total:%d, %s\n
-ReadConsoleW
-ReadFile
 Reading file: %s
 Recomputing all VPK file hashes.\n
 RenderDevice001
@@ -550,54 +406,32 @@ RenderHardwareConfig001
 RenderSystemSurface001
 Requested non-existent write path %s!\n
 ResourceSystem004
-RtlUnwind
 SHELL32.dll
-SHGetFileInfoW
-SNAN)
 STAR_System001
 SceneSystem_001
 Set the async filesystem mode (0 = async, 1 = synchronous)
-SetEndOfFile
 SetEnvironmentVariableA
-SetFileAttributesW
-SetFilePointer
-SetFilePointerEx
-SetLastError
-SetStdHandle
-SetUnhandledExceptionFilter
 ShouldUseNewAssertDialog
 Simulate a delay of up to a set msec per file operation
 Size mismatch determining size of signed data block (%d vs %d)
 StackToolsNotify_LoadedLibrary
 String: "%s"; RemoveDotSlashes: "%s"\n
 Submit:%5dms AsyncDuration:%5dms Tag:%d Thread:%8.8x Size:%7d %s%s
-SunMonTueWedThuFriSat
-SystemTimeToTzSpecificLocalTime
-TerminateProcess
-ThreadGetPriority
 ThreadInterlockedAssignIf64
 ThreadProcessMD5Requests
 Times Opened: %3i\t\tAccumulated Time: %10.5fms\t\tAverage Time per Open: %13.8fms\t\tFile: %s\n
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 Total Seconds: %.5f\n
 Tried to Seek NULL file handle!\n
 Tried to close unknown file pointer %p\n
 Tried to read %i bytes from unknown file pointer %p\n
 Tried to write %i bytes from unknown file pointer %p\n
 T~OXu
-UTF-16LEUNICODE
 Unable to determing async job type
 Unable to remove %s! (errno %x)\n
 Unable to rename %s to %s!\n
 Unclaimed
-UnhandledExceptionFilter
-Unknown exception
 Unknown read error %d\n
 Unknown version %d for vpk %s
-VALVE-MODULE-DEBUG-%08X
 VBAllocTracker001
 VBaseFileSystem011
 VDataCache003
@@ -625,13 +459,9 @@ VStudioRender026
 V_AppendSlash: ran out of space on %s.
 V_MakeAbsolutePath: _getcwd failed.
 Verify integrity of your game files, perform memory and disk diagnostics on your system.\n
-WaitForSingleObject
+Version
 Warning:  %s = '%s' is infinite, clamping value.\n
-WideCharToMultiByte
-WriteConsoleW
-WriteFile
 WriteMiniDump
-X/4B
 X4I+
 XZP%c %d
 Y@.dll
@@ -641,68 +471,14 @@ ZIP_PreloadDirectoryEntry
 ZIP_PreloadHeader
 [ Main thread ] 
 [DIRTY LOAD] Loading untrusted loose file from a pure directory: [%s]%s\n
-[aOni*{
 \nExcludes:\n
 \nLayout Order:\n
-\tcQr
-^<V7w
 _%s.tmp
 _ExitOnFatalAssert
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
 __preload_section.pre
-__ptr64
-__stdcall
-__thiscall
-__unaligned
-__vectorcall
-_cabs
 _dir
-_hypot
-_logb
-_nextafter
 _xlsp
-`RTTI
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
 aDJ=
-abcdefghijklmnopqrstuvwxyz
 ar_monastery
 async
 async_allow_held_files
@@ -717,7 +493,6 @@ c:\buildslave\csgo_trunk_win32\build\src\filesystem\Release_Stdio\filesystem_std
 c:\buildslave\csgo_trunk_win32\build\src\public\tier0/tslist.h
 c:\buildslave\csgo_trunk_win32\build\src\public\tier1/utlsortvector.h
 c?e2
-ceil
 centralDirectorySize
 commentLength
 compressedSize
@@ -747,8 +522,6 @@ copy "%%binsrc%%\hl2\resource\*.ttf" "%%fs_target%%\hl2\resource"\n
 copy "%s" "%s"\n
 crc32
 csgo/compatibility/%s/
-d8L2
-dddd, MMMM dd, yyyy
 de_cache
 de_cache_scrimmagemap
 de_mirage
@@ -756,13 +529,10 @@ de_mirage_scrimmagemap
 dev_force_vpk_failure
 dev_test_remove_dot_slashes
 diskNumberStart
-e+000
-eLK(w
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"\n
 echo ERROR: must set fs_target=targetpath (ie. "set fs_target=u:\destdir")!\n
 externalFileAttribs
 extraFieldLength
-fabs
 failed to read %d bytes\n
 fileCommentLength
 fileNameLength
@@ -771,7 +541,6 @@ filesystem_stdio.dll
 filesystem_use_overlapped_io
 filetime
 filetracker.cpp
-fmod
 fs_allow_unsafe_writes
 fs_debug
 fs_debug: 
@@ -789,14 +558,11 @@ g_ClockSpeed
 g_ClockSpeedMicrosecondsMultiplier
 g_tm_api
 goto done\n
-h0'D
 hI{L[
 hb?O2
 if "%%fs_target%%" == "" goto error\n
-inity
 internalFileAttribs
 k:UG
-k=yI
 k>ZIP_EndOfCentralDirRecord
 lastModifiedDate
 lastModifiedTime
@@ -807,7 +573,6 @@ loader_throttle_io
 ls1=
 lzZ?
 m1WY$
-m\nXo
 maps%c%s
 maps%car_shoots%s
 maps\
@@ -816,14 +581,10 @@ mkdir "%%fs_target%%\bin"\n
 mkdir "%s"\n
 nCentralDirectoryEntries_ThisDisk
 nCentralDirectoryEntries_Total
-nan(ind)
-nan(snan)
 np?z 
 numberOfTheDiskWithStartOfCentralDirectory
 numberOfThisDisk
-obwQ4
-operator "" 
-owM&
+open
 pak01_003.vpk
 pakxv_%s
 platform
@@ -831,21 +592,17 @@ platform_
 pnJ=
 r7Yr7=
 relativeOffsetOfLocalHeader
-restrict(
 sU0&?W
 set binsrc="%s"\n
 set fs_target="%s"\n
 setlocal\n
 signature
-snan)
 startOfCentralDirOffset
 stat
 tLVv
-tier0.dll
 u?^p?o4
 uXO=
 uncompressedSize
-v2!L.2
 versionMadeBy
 versionNeededToExtract
 vstdlib.dll

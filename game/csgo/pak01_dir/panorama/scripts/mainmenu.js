@@ -379,21 +379,55 @@ var MainMenu;
     function _ResetAnnotationsDropDown() {
         let elAnnotationDropDown = $('#id-play-menu-pausemenu-annotations-dropdown');
         elAnnotationDropDown.SetSelectedIndex(0);
+        elAnnotationDropDown.Data().m_mapBspName = "";
+    }
+    function _EnableGuidesDropdown() {
+        let elAnnotationsInternal = $("#id-play-menu-pausemenu-annotations__internal");
+        let elAnnotationDropDown = $('#id-play-menu-pausemenu-annotations-dropdown');
+        let elAnnotationsRoundRestrictionLabel = $('#id-play-menu-pausemenu-annotations-roundrestricted');
+        elAnnotationsInternal.enabled = true;
+        elAnnotationsInternal.visible = true;
+        elAnnotationDropDown.visible = true;
+        elAnnotationsRoundRestrictionLabel.visible = false;
+    }
+    function _DisableGuidesDropdown() {
+        let elAnnotationsInternal = $("#id-play-menu-pausemenu-annotations__internal");
+        let elAnnotationDropDown = $('#id-play-menu-pausemenu-annotations-dropdown');
+        let elAnnotationsRoundRestrictionLabel = $('#id-play-menu-pausemenu-annotations-roundrestricted');
+        elAnnotationsInternal.enabled = false;
+        elAnnotationsInternal.visible = false;
+        elAnnotationDropDown.visible = false;
+        elAnnotationsRoundRestrictionLabel.visible = false;
+    }
+    function _RoundRestrictedGuidesDropdown() {
+        let elAnnotationsInternal = $("#id-play-menu-pausemenu-annotations__internal");
+        let elAnnotationDropDown = $('#id-play-menu-pausemenu-annotations-dropdown');
+        let elAnnotationsRoundRestrictionLabel = $('#id-play-menu-pausemenu-annotations-roundrestricted');
+        elAnnotationsInternal.enabled = false;
+        elAnnotationsInternal.visible = true;
+        elAnnotationDropDown.visible = false;
+        elAnnotationsRoundRestrictionLabel.visible = true;
+        let nMaxRound = GameInterfaceAPI.GetSettingString('sv_annotation_limits_max_rounds_per_half');
+        elAnnotationsRoundRestrictionLabel.SetDialogVariable('rounds', nMaxRound);
     }
     function _SetupAnnotationOptions(bForce) {
-        let elAnnotationParent = $("#id-play-menu-pausemenu-annotations");
-        if (GameInterfaceAPI.GetSettingString('sv_allow_annotations_access_level') !== '1') {
-            elAnnotationParent.AddClass('no-guides');
-            elAnnotationParent.Data().sv_allow_annotations_access_level = 0;
-            return;
+        switch (GameStateAPI.GetAnnotationsViewingLevel()) {
+            case 3:
+            case 2:
+                _EnableGuidesDropdown();
+                break;
+            case 1:
+                _RoundRestrictedGuidesDropdown();
+                break;
+            case 0:
+                _DisableGuidesDropdown();
+                break;
         }
-        elAnnotationParent.RemoveClass('no-guides');
         let elAnnotationDropDown = $('#id-play-menu-pausemenu-annotations-dropdown');
         if (elAnnotationDropDown.Data().m_mapBspName !== GameStateAPI.GetMapBSPName() ||
             bForce) {
             elAnnotationDropDown.RebuildOptions(GameStateAPI.GetMapBSPName(), true);
             elAnnotationDropDown.Data().m_mapBspName = GameStateAPI.GetMapBSPName();
-            elAnnotationParent.Data().sv_allow_annotations_access_level = 1;
         }
     }
     function _OnHidePauseMenu() {
@@ -1022,7 +1056,6 @@ var MainMenu;
         elPanel.Data().oSettings = oSettings;
     }
     function _OnShowXrayCasePopup(toolid, caseId, bShowPopupWarning = false) {
-        const showpopup = bShowPopupWarning ? 'yes' : 'no';
         const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('popup-inspect-' + caseId, 'file://{resources}/layout/popups/popup_capability_decodable.xml');
         let oSettings = {
             item_id: caseId,

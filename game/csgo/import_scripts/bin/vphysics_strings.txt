@@ -1,4 +1,3 @@
-                          
            between f%d and f%d\n
            vertices:
       furthest distance= %2.2g\n
@@ -103,7 +102,6 @@
   number of trials
   same cycle:
   standard deviation
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  # p%d (v%d)\n
  # p%d is coplanar or isolated\n
  %6.2g max. cosine for post-merge angle\n
@@ -113,16 +111,11 @@
  %6.2g radius of post-merge centrum\n
  %6.2g radius of pre-merge centrum\n
  0 # infinity not used\n
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
  DUP
  DUPLICATEridge\n
  MERGE
  MERGEridge\n
  NULLfacet\n
- Type Descriptor'
  XZB
  and at-infinity
  and distance: 
@@ -186,11 +179,9 @@ $MATERIAL_INDEX_SHADOW
 %s | %s\nbegin\n    %d %d real\n
 %s | %s\nbegin\n%d %d real\n
 &2@UUUUUU
-&Sgw
 ( 8PX
 (%.2f, %.2f, %.2f), 
 (%.2f, %.2f, %.2f)\n
-(null)
 )2STud>
 )fLL#
 *** Done with convex pointsoup.\n\n
@@ -216,7 +207,6 @@ $MATERIAL_INDEX_SHADOW
 ..\ivp_intern\ivp_object.cxx
 ..\ivp_intern\ivp_physic_private.cxx
 ..\ivp_utility\ivu_vhash.cxx
-.00cfg
 .?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AVCDataManagerBase@@
 .?AVCDefaultAccessor@@
@@ -224,58 +214,17 @@ $MATERIAL_INDEX_SHADOW
 .?AVCPolyhedron@@
 .?AVCPolyhedron_AllocByNew@@
 .?AVCPolyhedron_TempMemory@@
-.?AVCUtlCStringConversion@@
-.?AVCUtlCharConversion@@
-.?AVCUtlNoEscConversion@@
-.?AVConCommand@@
 .?AVConCommandBase@@
 .?AVConVar@@
 .?AVIConCommandBaseAccessor@@
 .?AVIConVar@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.data
-.data$r
-.edata
 .gfids$x
 .gfids$y
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.rdata
-.rdata$r
-.rdata$zzzdbg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$yd
-.xdata$x
 0 1 1 1  # color of points\n
 04pi\t>z'
 0?Zk
 0vB-
 0x?9
-1#IND
-1#INF
-1#QNAN
-1#SNAN
 20n\v>sAC4
 2ieO=
 3 %d %d %d %8.4g %8.4g %8.4g 1 # f%d f%d\n
@@ -308,7 +257,6 @@ $MATERIAL_INDEX_SHADOW
 <8bunz8
 <@En[vP
 =3CL4`h
-=87M
 =FA\4
 =btz1@1
 =v1f4
@@ -322,19 +270,16 @@ $MATERIAL_INDEX_SHADOW
 ?*hiR
 ?/4Qi
 ?1mm
-?333333
 ?3ScR.>
 ?3xj
 ?40V
 ?5Wg4p
 ?5a1
 ?7Tf(
-?8bunz8
 ?93l
 ??0CThreadLocalBase@GenericThreadLocals@@QAE@XZ
 ??0CThreadSpinRWLock@@QAE@XZ
 ??1CThreadLocalBase@GenericThreadLocals@@QAE@XZ
-?@En[vP
 ?AFxD
 ?CYO[Y
 ?DevMsg@@YAXPBDZZ
@@ -353,7 +298,6 @@ $MATERIAL_INDEX_SHADOW
 ?SpinLockForWrite@CThreadSpinRWLock@@QAEXXZ
 ?T5cd'j
 ?Tu7R
-?UUUUUU
 ?VEngineCvar007
 ?X&eB
 ?X1U
@@ -380,7 +324,6 @@ $MATERIAL_INDEX_SHADOW
 @k\v^]vphysics_save_cshadowcontroller_t
 @no valid pierce index!? Probably a backside triangle...\n
 A333
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
 AYl=
 AZEl
 A]?VJ
@@ -393,7 +336,6 @@ Angle-premerge-
 Angle-premerge-with-random
 Angular Drag: %.2f, %.2f, %.2f (factor %.2f)\n
 Approximate
-AreFileApisANSI
 Attached core twice!!!\n
 AutoTransmission
 Awake
@@ -417,25 +359,18 @@ Centrum-postmerge-with-random
 Centrum-premerge-
 Centrum-premerge-with-random
 Changed collision rules for %s vs. %s without calling recheck!\n
-CloseHandle
 CollisionModel: Compact Surface: %d convex pieces %s outer hull\n
-CompareStringEx
-CompareStringW
 ConVar(%s) defined with infinite float value (%s)\n
 ConVarRef %s doesn't point to an existing ConVar\n
-CorExitProcess
 Couldn't find a matching point to baseline!\n
 CqTR;
-CreateFileW
 DISTANT
 DUPLICATED/MATCH
 Damping %.2f linear, %.2f angular\n
 Data manager 'used' memory incorrect\n
 Debug! 
 DebugTextureInfo001
-DecodePointer
 Degenerate Triangle\n
-DeleteCriticalSection
 Deleted NULL vphysics object\n
 Distance-roundoff
 DoubleVal
@@ -443,17 +378,14 @@ ERRONEOUS
 ERRONEOUS and NEIGHBORING FACETS to output\n
 ERROR: 
 Eb2]A=
-EnterCriticalSection
 Error-roundoff
 EventSystem001
-ExitProcess
 F0$?3=1
 F=J4
 F?cf
 FArea-total
 FCentrums
 FD-cdd-out
-FEMh\f
 FFacets-xridge
 FIds
 FNeighbors-vertex
@@ -466,16 +398,10 @@ Failed to restore spring enpoints\n
 Farea
 Fcoplanars
 Fd-cdd-in
-FindClose
 FindFirstFileExA
 FindNextFileA
 Finner
 First post-merge
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 Fmerges
 FmtStrVSNPrintf truncated to %d without QUIET_TRUNCATION specified!\n
 Fneighbors
@@ -483,8 +409,6 @@ For post-merging
 For testing vertex neighbors
 Fouter
 Fpoint-intersect
-FreeEnvironmentStringsW
-FreeLibrary
 Fsummary
 Ftriangles
 Fvertices
@@ -498,31 +422,7 @@ GYM=
 Gall-points
 GameUISystemMgr001
 Gcentrums
-GetACP
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetEnvironmentStringsW
-GetFileType
-GetLastError
-GetModuleFileNameA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemTimeAsFileTime
-GetSystemTimePreciseAsFileTime
-GetTimeZoneInformation
 Gh40y
 Gin>
 Ginner
@@ -534,59 +434,38 @@ Gridges
 Gtransparent
 Gvertices
 HCpn
-HH:mm:ss
 Halfspace
 Halfspace-about
 HavokConsole
 Hinged on %s axis\n
 Ht=c
 IMEManager001
-IND)ind)
 IND)ind)m
-INITY
 IT=_9
 Inertia: %.2f, %.2f, %.2f (inv %.3f, %.3f, %.3f)\n
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
 IntVal
-InterlockedFlushSList
 Invalid initial position on %s\n
-IsDebuggerPresent
-IsProcessorFeaturePresent
-IsValidCodePage
 J\;5yTb
 Jl?P
-KERNEL32.dll
-LCMapStringEx
-LCMapStringW
 LIST # %s | %s\n
 La8i
 Last point added to hull was p%d.
 Le?2
-LeaveCriticalSection
 Line[{{%16.8f, %16.8f}, {%16.8f, %16.8f}}]\n
 Linear Drag: %.2f, %.2f, %.2f (factor %.2f)\n
-LoadLibraryExW
-LocaleNameToLCID
 M40FH>
 MDLCache004
 MERGED
 MERGING
 MERGING CYCLE
-MM/dd/yy
 Mass: %.1f (inv %.3f)\n
 MatSystemSurface006
 Material: %s : density(%.1f), thickness(%.2f), friction(%.2f), elasticity(%.2f)\n
 MaterialSystemHardwareConfig013
 Matrix:
-MbP?
 MkK?
 Mpm<
-MultiByteToWideChar
 N4`U
-NAN(IND)
-NAN(SNAN)
 No 2d representation
 Nu?-HF
 Null physics model\n
@@ -651,35 +530,23 @@ Qinterior-keep
 Qmax-outside-only
 Qrandom-outside
 Qsearch-initial-simplex
-QueryPerformanceCounter
-QueryPerformanceFrequency
 QueuedLoaderVersion001
 QupperDelaunay
 Qvertex-neighbors-convex
 Qxact-merge
 Qz-infinity-point
-RSDS
 R\vn>
 Random_perturb
 Rd.F
-ReadConsoleW
-ReadFile
 RenderDevice001
 RenderHardwareConfig001
 RenderSystemSurface001
 ResourceSystem004
-RtlUnwind
-SNAN)
 STAR_System001
 S\rYkv
 SceneSystem_001
 Set Gravity %.1f (%.3f tolerance)\n
-SetEndOfFile
 SetEnvironmentVariableA
-SetFilePointerEx
-SetLastError
-SetStdHandle
-SetUnhandledExceptionFilter
 Simple material
 State: %s, Collision %s, Motion %s, %sFlags %04X (game %04x, index %d)\n
 Svj>
@@ -695,13 +562,8 @@ TV-stop-before-point
 TWide-trace
 T\t5K
 Tcheck-frequently
-TerminateProcess
 The halfspace was at index %d\n
 ThreadInterlockedAssignIf64
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 Total
 Trace-merge
 Trace-point
@@ -716,10 +578,7 @@ U?EVT?
 U?Xzv
 U?wN
 UEj)
-UTF-16LEUNICODE
-UUUUUU
 UcKc
-UnhandledExceptionFilter
 Uo\vv
 V,4@PJ>
 VBAllocTracker001
@@ -760,13 +619,9 @@ WR_l%2>
 WY'N
 Warning:  %s = '%s' is infinite, clamping value.\n
 When computing the Delaunay triangulation:\n  - use 'Qz' to add a point at-infinity.  This reduces precision problems.\n
-WideCharToMultiByte
 Width-outside
 WmS|
-WriteConsoleW
-WriteFile
 WriteMiniDump
-X/4B
 X2CQ
 X4I+
 XL3Z
@@ -788,7 +643,6 @@ You define specify the base material %s before it can be used in %s.\n
 ZL>K]
 Z_JmLd
 ZxnI
-[aOni*{
 \n     at offset: 
 \n     halfspace: 
 \n  new facets %d visible facets %d next facet for addpoint %d\n  vertices (new %d):
@@ -837,33 +691,15 @@ ZxnI
 \nwX4C
 \tConstraint %d) %s\n
 \tJqAl
-\tcQr
 ]XIN[
 ]~?|V~? O~?
-^<V7w
-_RDATA
 _W4~w
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__stdcall
-__thiscall
-__unaligned
-__vectorcall
 _cXpn
-_cabs
-_hypot
 _joggle-seed
-_logb
 _max-width
 _merge-exact
 _narrow-hull
 _near-inside
-_nextafter
 _one-merge
 _pre-merge
 _run
@@ -872,46 +708,10 @@ _zero-centrum
 `*Hhq
 `7bu
 `PhysPMC
-`RTTI
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
 a ridge with more than two neighbors
 aDJ=
 aFN,
 aXE/[
-abcdefghijklmnopqrstuvwxyz
 addGravity
 addgravity
 additionalIterations
@@ -963,6 +763,7 @@ axleratio
 axles
 bFbx
 ball_socket
+base
 best merges used centrum instead of vertices
 boost
 boostDelay
@@ -988,7 +789,6 @@ c?e2
 c?gS
 calc_line_representation: no orig_surface specified!\n
 callbacks
-ceil
 center point
 center:
 centrums frozen due to a wide merge
@@ -1031,12 +831,10 @@ currentSpeed.k
 current_time
 currentvelocity
 cycles of facets merged into coplanar horizon
-d8L2
 damageLossPercentPerPenetration
 damagemodifier
 dampFactor
 damping
-dddd, MMMM dd, yyyy
 degenerate facets due to dropped neighbors
 degenerate hyperplanes recomputed with gaussian elimination
 degreesBoost
@@ -1070,9 +868,7 @@ duplicated ridges in same merge cycle
 duplicated ridges with flipped facets
 dustCloud
 dustcloud
-e+000
 e-CS
-eLK(w
 empty horizon
 enable PIX counters
 enable some additional SIMD/VMX128 optimizations in physics and collision
@@ -1086,7 +882,6 @@ f6\tn
 f?Hqf?
 f@)rM
 fE?b
-fabs
 facet
 facets
 facets before post merge
@@ -1099,7 +894,6 @@ fixed
 flipped facet
 flipped facets
 fluid
-fmod
 for facets and their normals, neighbor and vertex sets
 for input points and outside and coplanar sets
 for ridges and their vertex sets
@@ -1117,7 +911,6 @@ gearCount
 gearRatio
 good facets found
 gravityEnabled
-h0'D
 h2yv
 hI{L[
 hasShadowController
@@ -1137,7 +930,6 @@ index
 inertia
 initial facet is coplanar with interior point
 initial non-convex ridges for post merging
-inity
 input has same x coordinate
 insert_active_float: name '%s' already exists in name_hash!\n
 insert_active_float: tried to insert active_IVP_FLOAT without name!\n
@@ -1161,20 +953,17 @@ j,4c
 jVa?
 jumpfactor
 k:UG
-k=yI
 kBk>
 kU!W>
 kWt>
 keepUprightTorque
 keepuprighttorque
-lWi]
 limitMax
 limitMin
 lowPitchOcclusion
 ls1=
 lzZ?
 m1WY$
-m\nXo
 m_bEngineDisable
 m_bOccupied
 m_bTraceData
@@ -1243,8 +1032,6 @@ minRotation
 modelType
 motionEnabled
 n?|Pn?m
-nan(ind)
-nan(snan)
 naturalLength
 nearly incident point
 nearly incident point (narrow hull)
@@ -1265,14 +1052,11 @@ number of vertices in output
 n}in
 o3fW
 objectPosition
-obwQ4
 offFile
 ofn}>
 onlyAngularLimits
 onlyStretch
-operator "" 
 outsideset for f
-owM&
 p%d (coplanar facets)\n
 p%d dist %.2g, 
 p?O7p?c
@@ -1753,7 +1537,6 @@ renamed vertex statistics
 renamed vertices in a pinched facet
 renamed vertices shared by multiple facets
 renamed vertices shared by two facets
-restrict(
 retries due to precision problems
 ridge with multiple neighbors
 ridges created altogether
@@ -1791,7 +1574,6 @@ skidmaterial
 slideAxisRef
 slowcarspeed
 slowsteeringrate
-snan)
 solid
 speedDamping
 speedFast
@@ -1847,7 +1629,6 @@ targetRotation
 teleportDistance
 throttleSteeringRestRateFactor
 throttleTime
-tier0.dll
 tiltForce
 tiltForceHeight
 tiltforce
@@ -1872,7 +1653,6 @@ uXO=
 uZEeu
 useClockwiseRotations
 useLocalPositions
-v2!L.2
 vECd
 va1+
 ve?z

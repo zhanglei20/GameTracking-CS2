@@ -52,7 +52,7 @@ class CBasePlayerWeaponVData : public CEntitySubclassVDataBase
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szMuzzleFlashParticle;
 	// MPropertyDescription = "Effect Config for Muzzle Flash - if set, will use this config specified in the particle effect, using whatever CP configuration is specified there, vdata muzzleflash attachment will be ignored"
 	// MPropertyAttributeEditor = "ParticleConfigName()"
-	// MPropertyEditContextOverrideKey (UNKNOWN FOR PARSER)
+	// MPropertyEditContextOverrideKey = "ToolEditContext_ID_VPCF"
 	CUtlString m_szMuzzleFlashParticleConfig;
 	// MPropertyDescription = "Barrel smoke after firing this weapon"
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szBarrelSmokeParticle;

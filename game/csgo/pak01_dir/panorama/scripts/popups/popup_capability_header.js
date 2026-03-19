@@ -32,7 +32,15 @@ var CapabilityHeader;
     }
     CapabilityHeader.Init = Init;
     function _SetDialogVariables(elPanel, itemId) {
-        elPanel.SetDialogVariable("itemname", InventoryAPI.GetItemNameUncustomized(itemId));
+        const showXrayMachineUi = InspectShared.GetPopupSetting('is_xray_machine');
+        let displayItemId = '';
+        if (showXrayMachineUi && InventoryAPI.IsFauxItemID($.GetContextPanel().Data().existingRewardFromXrayId)) {
+            displayItemId = $.GetContextPanel().Data().existingRewardFromXrayId;
+        }
+        else {
+            displayItemId = itemId;
+        }
+        elPanel.SetDialogVariable("itemname", InventoryAPI.GetItemNameUncustomized(displayItemId));
     }
     function _SetUpHeaders(elPanel, itemType) {
         _SetUpTitle(elPanel, itemType);
