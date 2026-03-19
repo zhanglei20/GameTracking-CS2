@@ -1,17 +1,17 @@
-name: Sync upstream PR + auto-merge
+name: Sync Fork with Upstream
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
-
-permissions:
-  contents: write
-  pull-requests: write
+    - cron: '*/30 * * * *' # 每30分钟
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
       - name: Checkout fork master
         uses: actions/checkout@v4
@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.SYNC_TOKEN || github.token }}
 
-      - name: Sync upstream and prepare PR branch
+      - name: Prepare changes from upstream (squash, no merge commits)
         shell: bash
         run: |
           set -euo pipefail
@@ -30,40 +30,31 @@ jobs:
 
           git remote add upstream https://github.com/SteamTracking/GameTracking-CS2.git || true
           git fetch upstream
-
-          # 确保 origin/master 存在（用于恢复 workflows）
           git fetch origin master
 
-          git checkout -B upstream-sync
-          git merge upstream/master --no-edit
+          # 将 upstream/master 的变更 squash 到当前 master（不会产生 merge commit，避免 create-pull-request 的 cherry-pick merge-commit 问题）
+          git merge --squash upstream/master
 
-          # 忽略上游对 .github/workflows/* 的变更：恢复为 fork(master) 的目录
-          git restore --source=origin/master --staged --worktree -- .github/workflows 2>/dev/null || true
+          # 忽略上游对 .github/workflows/* 的任何变更：恢复为 fork master 的目录（可能为空）
+          rm -rf .github/workflows
+          git checkout origin/master -- .github/workflows 2>/dev/null || true
           git clean -fd -- .github/workflows 2>/dev/null || true
 
-          # 强校验：确保 workflows 目录没有 diff（否则后续 push/PR 可能触发 workflow 权限拦截）
+          # 防呆：如果还有 workflows diff，直接失败，避免 push 被 workflow scope 拦截
           if ! git diff --quiet -- .github/workflows; then
-            echo "Refusing: .github/workflows diff still exists after restore."
-            git diff --name-only -- .github/workflows
+            echo "Refusing: .github/workflows diff still exists after restore." >&2
+            git diff --name-only -- .github/workflows >&2 || true
             exit 1
           fi
 
-      - name: Create or update PR
+      - name: Create or update PR (open-source)
         id: cpr
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.SYNC_TOKEN || github.token }}
           branch: upstream-sync
           base: master
           title: "Upstream Sync: SteamTracking/GameTracking-CS2"
-          body: "自动同步上游变更；已忽略上游 .github/workflows/* 的变更。"
-          commit-message: "chore(sync): merge upstream into upstream-sync"
+          body: "自动同步上游仓库变更；已忽略上游 .github/workflows/* 的变更。"
+          commit-message: "chore(sync): sync upstream changes"
           delete-branch: false
-
-      - name: Enable auto-merge for the PR
-        if: steps.cpr.outputs.pull-request-number != ''
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          token: ${{ secrets.SYNC_TOKEN || github.token }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: merge
