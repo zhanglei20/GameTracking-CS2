@@ -1,0 +1,47 @@
+# .github/workflows/sync.yml
+name: Sync Fork with Upstream
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'  # 每30分钟
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/SteamTracking/GameTracking-CS2.git
+          git fetch upstream
+
+      - name: Sync upstream to local
+        run: |
+          git checkout master
+          git merge upstream/master --no-edit
+          git push origin master
+        continue-on-error: true  # 如果没有变更会失败，忽略错误
+
+      - name: Create PR if merge fails
+        if: failure()
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: upstream/master
+          destination_branch: master
+          pr_title: "Upstream Sync: SteamDatabase/SteamTracking"
+          pr_body: "自动同步上游仓库变更"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
