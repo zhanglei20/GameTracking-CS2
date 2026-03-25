@@ -27,10 +27,7 @@
  %s : animtable hash too small: %d elements / %d buckets\n
  %s : seqtable hash too small: %d elements / %d buckets\n
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  * %d WeightLists\n
  * ScaleSet[%d] :: %s\n
  * WeightList[%d] :: %s\n
@@ -2052,7 +2049,6 @@
 .?AVUsesCustomSampleInterpolation@MotionMatching@Attribute@@
 .vagrp_c/.vanim_c mismatch :: %s :: %s\n
 08@HR
-08@J
 180_recovery
 20S\v
 2_BONE_IK
@@ -2097,7 +2093,6 @@
 ?SkeletonAnimCapture_t::Frame_t
 ?expf
 ?m_flPosition
-@08N
 @HPX`hv02^
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
 ACT_NEUTRAL_REF_POSE
@@ -2957,9 +2952,7 @@ Overlay Blend
 Overlay Blend (Masked): %.2f%%
 Overlay Blend: %.2f%%
 OverlayProjectionDirection
-P08@J
 P08J T\v
-P08N
 P6p,^
 P6pL^
 PARENT
@@ -3818,7 +3811,6 @@ numframes
 offBeforeFinished
 offWhenFinished
 optionallycompressedtangentframe
-p08@H^
 p0j 
 pCheckpointName
 pDescription

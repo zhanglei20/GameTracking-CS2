@@ -91,10 +91,7 @@
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  (Driven by choice group '%1')
  (INVALID PSS PARAMETERS)\n
  (Negative)
@@ -14382,7 +14379,6 @@ $worldspacetype
 02V8[
 05=k
 08@HR
-08@J
 08bX
 09,h
 0: WE
@@ -28526,7 +28522,6 @@ P-224
 P-256
 P-384
 P-521
-P08@J
 P08J 
 P08NLW<
 P1\t98"
@@ -29635,7 +29630,6 @@ RGB blend weight for sequence 1
 RGBA\t
 RGBA\t%1\t%2\t%3\t%4
 RH/Y
-RIGHT
 RIGID
 RIPEMD160
 RMouse
@@ -30150,7 +30144,6 @@ Reparent
 Reparent From Cordon Editor
 Reparent selection sets
 ReparentSelection
-Repeat
 Repeat Background
 Repeat Command
 Repeat Commands %1 Times
@@ -33412,7 +33405,6 @@ VDmSerializers001
 VF+c
 VGG@
 VIDEOTEXSTRING
-VISIBLE
 VISIBLESTRING
 VISUALIZATION
 VIgq qC:

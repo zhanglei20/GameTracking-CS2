@@ -1,9 +1,6 @@
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Xt&
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  <b>@import</b> 
  cubic-bezier( %1.3f, %1.3f, %1.3f, %1.3f ) 
  ellipsis
@@ -442,7 +439,6 @@
 .PEBVILocalizationString@panorama@@
 .\tV_isbreakablewspace32
 08@HR
-08@J
 0x%4.4x 
 2\vp4
 2\vpt0
@@ -490,7 +486,6 @@
 ?GetName@Function@v8@@QEBA?AV?$Local@VValue@v8@@@2@XZ
 ?GlobalizeReference@api_internal@v8@@YAPEA_KPEAVIsolate@internal@2@_K@Z
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
-@08N
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @keyframes 
 @keyframes '%s'\r\n{\r\n
@@ -1110,9 +1105,6 @@ OpenStyleFileForEditAtByteIndex
 OpenText
 Option_%d
 OverMaxPips
-P08@J
-P08J
-P08N
 PageDown
 PageLeft
 PagePanelDown
@@ -2110,7 +2102,6 @@ orange
 orangered
 orchid
 otherPanelID, eventToFire
-p08@H^
 p0jp8\t
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p\r`\fPt0

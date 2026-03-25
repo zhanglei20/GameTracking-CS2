@@ -30630,7 +30630,6 @@ RenderBuffer: UsedWithSwapChainOnly is meaningless in combination with Color
 RenderHint
 RenderHints
 RenderableType
-Repeat
 RepeatSpread
 Reply
 Requires a valid current OpenGL context.\nTexture has not been created

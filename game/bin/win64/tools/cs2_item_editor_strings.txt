@@ -1,10 +1,7 @@
  (%d remaining)...
  (08@HPX`j0k
- (08@HPXb
  (08@HPZ0k
- (08@HR
  (08@J0k
- (0X`hpz
  (Boosted +1)
  (repeat)
  - IsCheckedOut: %s\n
@@ -2639,7 +2636,6 @@ $\n\tword_list
 /stickers
 /weapons/customization/paints_gloves/
 08@HR0k
-08@J
 08B0k
 0\n+k_EGCItemCustomizationNotification_NameItem
 0\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings
@@ -4384,7 +4380,6 @@ $\n\tword_list
 ?userType@QVariant@@QEBAHXZ
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
-@08N
 @20k
 @60L@
 @HPX`hv q@
@@ -5730,9 +5725,6 @@ OrigMat
 Other Tools
 Outliner
 OverlayProjectionDirection
-P08@J
-P08J
-P08N
 P20k
 P6`k@
 P?isValid@QColor@@QEBA_NXZ
@@ -5889,7 +5881,6 @@ R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RDO_AB
-RIGHT
 RMouse
 RMouseDoubleClick
 RW?restore@QPainter@@QEAAXXZ
@@ -8376,7 +8367,6 @@ overrideclass
 owcaseid
 owner_only
 owns_polymorphic_data
-p08@H^
 p0j`
 p20k
 p6PR@
