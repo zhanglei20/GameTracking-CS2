@@ -2478,7 +2478,6 @@ FocusChanged
 FocusLeft
 Follow user preference
 Free
-GROUP
 G[?setRgb@QColor@@QEAAXHHHH@Z
 G\v?event@QHeaderView@@MEAA_NPEAVQEvent@@@Z
 GetAsyncKeyState

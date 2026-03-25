@@ -26,11 +26,8 @@
  %i fog-only.
  %s [%.2f ms]
  (08@HPX`j0
- (08@HPXb
  (08@HPZ0
- (08@HR
  (08@J0
- (0X`hpz
  (EXTERN)
  (Frozen)
  (MAYBE DISABLED?!)
@@ -847,7 +844,6 @@ $tIP
 001.003
 050s0
 08@HR0
-08@J
 08B0
 0>0:U
 0?333?333?333?333?
@@ -1051,7 +1047,6 @@ $tIP
 ?fff?fff?fff?
 ?ffffff
 ?sqrt
-@08N
 @33333
 @33333#
 @33333'
@@ -1473,7 +1468,6 @@ Borders
 Borders, background
 Both
 Both types:
-Bottom
 Bottom-left
 Bottom-right
 Bound Last Frame
@@ -4030,7 +4024,6 @@ OutputToTestEngine
 OutputVB
 Outputdepth
 Outputs
-Outside
 Overlap Mode
 Overlapping
 OverlayProjectionDirection
@@ -4039,9 +4032,6 @@ Override ChildBg color
 Override Streaming GPU Memory
 P+\fGj
 P.P5
-P08@J
-P08J
-P08N
 P3\rA
 P6 ;U
 P60pU
@@ -6778,7 +6768,6 @@ overlaps
 p q g j y
 p#p7pP
 p$yK
-p08@H^
 pCRF
 pLwK
 p\r`\fPLwK

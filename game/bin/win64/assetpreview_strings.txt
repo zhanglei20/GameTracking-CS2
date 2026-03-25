@@ -13807,7 +13807,6 @@ R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RBF Based Anim Constraint
 RGBA\t
 RGBA\t%1\t%2\t%3\t%4
-RIGHT
 RMouse
 RMouseDoubleClick
 ROTATION

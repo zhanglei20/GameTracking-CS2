@@ -9818,7 +9818,6 @@ RFC 5639 curve over a 384 bit prime field
 RFC 5639 curve over a 512 bit prime field
 RFCY
 RH/Y
-RIGHT
 RIGID
 RIPEMD160
 RMouse
@@ -11007,7 +11006,6 @@ VDmSerializers001
 VF+c
 VGG@
 VIDEOTEXSTRING
-VISIBLE
 VISIBLESTRING
 VIgq qC:
 VM%G]f

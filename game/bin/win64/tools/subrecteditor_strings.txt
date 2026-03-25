@@ -1924,7 +1924,6 @@ BaseEditor
 Begin mouse capture [%i]: %s\n
 BiggerGrid
 Binding removed due to active drag: %s
-Bottom
 BuildWatch
 BuildWindowMenu
 C:\buildworker\csgo_rel_win64\build\_build_\tools\subrecteditor\_vpc_subrecteditor\default\win64\_msvc_\Retail\subrecteditor.pdb

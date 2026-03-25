@@ -8502,7 +8502,6 @@ $modelname$_surface
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
-@08N
 @Integer overflow in %s
 @baseclass
 @m_vCenter
@@ -9407,7 +9406,6 @@ CNmClipDocEvent_Particle::PerformValidation
 CNmClipDocEvent_RootMotion::PerformValidation
 CNmClipDocEvent_Sound::PerformValidation
 CNmClipDocEvent_TargetWarp::PerformValidation
-CNmGraphDocAimCSNode
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::GetCurrentGraphTimingInfo
 CParentAttachmentName
@@ -9689,7 +9687,6 @@ ClothSpring
 ClothStiffHinge
 ClothTri
 ClothVertexMap
-CnmGraphDocSnapWeaponNode
 Col Fixed Blend Val
 Collapse Edges
 Collapse selected edges.
@@ -11496,7 +11493,6 @@ Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P08@J I
 P08JpI
-P08N
 P2 I
 PARENT
 PF\n%d %d\n-1.000000\n
@@ -11790,7 +11786,6 @@ R8_TYPELESS
 R8_UNORM
 R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
-RIGHT
 ROTATION
 RSDS2
 R\v0!F
@@ -14012,7 +14007,6 @@ overrideclass
 overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
-p08@H^
 p0jp\n
 p2 I
 pEvent != nullptr

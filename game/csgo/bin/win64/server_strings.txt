@@ -101,11 +101,10 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`j`0
- (08@HPXb
- (08@HPZ`0
- (08@HR
- (0X`hpz
+ (08@HPX`j
+ (08@HPXb 
+ (08@HPZ
+ (0X`hpz 
  (Dirty Animation)
  (Disabled on Server)
  (INVALID PSS PARAMETERS)\n
@@ -132,7 +131,7 @@
  <-- Arg '%s'
  <-- Retval '%s'
  ACTIVE GROUP
- Aspawnpoint
+ AScramble the teams and restart the game
  CCSGameRules::Think bHalftime SwitchTeamsAtRoundReset() CTMDBG, %.2f \n
  FLK
  FWa
@@ -393,7 +392,7 @@
 #4ERb\f
 #5Lc
 #6Jb
-#<g_debug_angularsensor
+#<point_anglesensor
 #Accept_All_Messages
 #CSGO_
 #CSGO_MatchInfoTeam_LossElim
@@ -1674,6 +1673,7 @@ $tH@T\tI
 (0'yX
 (0x%08X)'??'
 (3@Mb
+(40k
 (4?NewFromUnsigned@Integer@v8@@SA?AV?$Local@VInteger@v8@@@2@PEAVIsolate@2@I@Z
 (5Me
 (5jP
@@ -2251,7 +2251,7 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
-.01N
+.02N
 .4bb
 .97yY
 .?AU?$DemoTrackBase_t@M@@
@@ -8395,11 +8395,11 @@ $tH@T\tI
 .MatchEndItemUpdates
 .OperationalStatisticElement"S\n
 .OperationalVarValue
+.P0N
 .P6AXAEBUSoundOpvarManagerSettableData_t@@PEAVCSoundOpvarSetPointStackCollection@@@Z
 .P6AXPEAVCPulseAPIExtensionRegistrationContext_t@@@Z
 .P6A_NAEBUCharacterDefn_t@CCStrike15ItemSchema@@@Z
 .PARTICLE_MESSAGE
-.PCN
 .PEAVCBodyComponent@@
 .PEAVCCSGameModeRules@@
 .PEAVCCSGameRules@@
@@ -8423,6 +8423,7 @@ $tH@T\tI
 .PEAVCPlayer_UseServices@@
 .PEAVCPlayer_WaterServices@@
 .PEAVCPlayer_WeaponServices@@
+.PJN
 .PlayerCommendationInfo
 .PlayerDecalDigitalSignature
 .PlayerDecalDigitalSignature":\n
@@ -8721,8 +8722,7 @@ $tH@T\tI
 .dx_LV9
 .fatdem
 .lbN
-.p3N
-.pCN
+.pBN
 .pp@0
 .text$
 .vjs_c
@@ -8763,14 +8763,12 @@ $tH@T\tI
 0123456789
 02V8[
 05=k
-08@HR`0
-08@J
-08B`0
+08@HR
+08@J 
 08bX
 09,h
 0;Q5[
 0<cz
-0>p!N
 0@NX^b!/@P\b
 0AOY_c"2CQ[c
 0M2~@p
@@ -8798,11 +8796,10 @@ $tH@T\tI
 0\r0#0)070;0U0Y0[0g0q0y0}0
 0\tV_isfinited
 0e\r8
-0h}H
-0leH
 0pp@5tqE?|sO541
 0tU+xc:
 0x%s
+0xqH
 0|2;#GameUI_Retake_Card_BackInAFlash,1,1,weapon_ump45,grenade0|2;#GameUI_Retake_Card_AllIn,1,1,weapon_galilar|1;#GameUI_Retake_Card_BoomBox,1,1,weapon_mac10,grenade2,grenade1|1;#GameUI_Retake_Card_SetThemFree,1,1,weapon_ssg08,grenade0
 0|2;#GameUI_Retake_Card_BlindFire,1,0,weapon_elite,grenade0|2;#GameUI_Retake_Card_QueOta,0,0,weapon_deagle|1;#GameUI_Retake_Card_SmokeScreen,0,0,weapon_p250,grenade1|1;#GameUI_Retake_Card_TecTecBoom,0,0,weapon_tec9,grenade2
 0|2;#GameUI_Retake_Card_OlReliable,1,1,rifle1,grenade0|1;#GameUI_Retake_Card_SmokeShow,1,1,rifle1,grenade1|1;#GameUI_Retake_Card_HotShot,1,1,rifle1,grenade3|1;#GameUI_Retake_Card_EyeSpy,1,1,weapon_sg556,grenade2
@@ -8850,7 +8847,6 @@ $tH@T\tI
 1|3;#GameUI_Retake_Card_4v3,1,0,secondary0|1;#GameUI_Retake_Card_FlashOut,0,0,secondary0,grenade0;#GameUI_Retake_Card_HideAndPeek,0,0,secondary0,grenade1
 1|5;0,0,secondary0
 1}oP
-2(3H
 2)252Y2]2c2k2o2u2w2{2
 2)Ab`
 2+~,@\r;Zj09
@@ -8884,7 +8880,6 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
-2\vpt
 2^pV
 2a"l
 2bT~
@@ -9009,15 +9004,20 @@ $tH@T\tI
 6%vi
 6,2K
 6-zeZ
-60\nN
+60)N
+60;N
+60EN
+60IN
 62$|S)6f
 64CK\vH
+6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
-6666666666666666CAttributeManager
 67-s
-6@CN
 6H,N
 6O|T%
+6P#N
+6P7N
+6P\vN
 6Qd=
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -9085,11 +9085,9 @@ $tH@T\tI
 8<pl
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
-8@J`0
 8A6j
-8B k
-8B`0
 8Blend (Masked): %.2f%%
+8F +N
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9299,7 +9297,6 @@ $tH@T\tI
 ??SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
 ?BooleanValue@Value@v8@@QEBA_NPEAVIsolate@2@@Z
 ?CEntityIOOutput
-?CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,class CUtlString,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<int,class CUtlString,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int>::AddMultipleToTail
 ?Call@Function@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@HQEAV52@@Z
 ?CompileModule@ScriptCompiler@v8@@SA?AV?$MaybeLocal@VModule@v8@@@2@PEAVIsolate@2@PEAVSource@12@W4CompileOptions@12@W4NoCacheReason@12@@Z
 ?Convex hull building with 2D data, will fail!\n
@@ -9338,24 +9335,29 @@ $tH@T\tI
 ?gwL
 ?jOb
 ?m_Stops
+?m_bAtMinLimit
 ?srJO
 ?tya
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N
+@08NT
 @0pp
 @33s@
+@60=N
+@6p<N
 @?SlowGetAlignedPointerFromInternalField@Object@v8@@AEAAPEAXH@Z
 @Aff
 @BH]f
 @BoneSetup
 @CSPlayerState
 @Global Blend - Attempting a global blend with an additive pose! This is undefined behavior!\n
+@HPX`hv`
 @MfKZ
 @Pgl
 @Pu\rm
 @Release
+@Source2GameDirector001
 @WE]X
 @X!pf
 @Zs3
@@ -9366,8 +9368,9 @@ $tH@T\tI
 @\n\vserver_type
 @dKb]
 @fff>fff>fff>fff>
+@ht0k
 @i1V
-@m_pObserverServices
+@m_bPlayerAmmoStockOnPickup
 @n2w
 @player_start_teleport_destination
 @workshop
@@ -9392,7 +9395,6 @@ AACompromise
 AC2,h
 ACCESS_DESCRIPTION
 ACCOLADE, FINAL: {%s},\t%s<%i>,\tVALUE: %f,\tPOS: %i,\tSCORE: %f\n
-ACCSMinimapBoundary
 ACHIEVEMENT_EVENT_
 ACID
 ACPT_STATE
@@ -9505,6 +9507,7 @@ AMMO_TYPE_HEGRENADE
 AMMO_TYPE_MOLOTOV
 AMMO_TYPE_SMOKEGRENADE
 AMMO_TYPE_TASERCHARGE
+AMoveMountingAmount_t
 ANSI X9.62
 ANY PRIVATE KEY
 APPEND_EXP
@@ -9610,6 +9613,7 @@ ATTACK
 ATTACK END\n
 ATTACK2
 ATTACKING: %s
+AToolEditContext_ID_VPCF
 AUTHORITY_INFO_ACCESS
 AUTHORITY_KEYID
 AVOID
@@ -9622,7 +9626,7 @@ A\n\tweapon_id
 A\n\vdescriptors
 A\n\vdiagnostics
 A\rjW
-A\v:Pi
+A\v'vP
 AbW_
 Abs Float
 Abs Int
@@ -9938,7 +9942,6 @@ B64_READ_PKCS7
 B64_WRITE_ASN1
 B64_WRITE_PKCS7
 B8Z"h
-B8^T
 B>J7I
 BACK
 BAD ENUMERATED
@@ -9951,10 +9954,9 @@ BASIC_CONSTRAINTS
 BAddToMessage
 BAsyncSend
 BAsyncSendProto
-BBuy random primary and secondary. Primarily for deathmatch where cost is not an issue.
 BC (default)
 BCBtActionMoveTo
-BCPulseCell_Outflow_PlaySequence::Cancel
+BCCS2ChickenGraphController
 BEOS_BIND_FUNC
 BEOS_BIND_VAR
 BEOS_LOAD
@@ -10064,6 +10066,7 @@ BPE_Diagnostic
 BPE_StringCommand
 BREAKABLE
 BRouteMsgToJob
+BShows extra data when bullets penetrate. (use sv_showimpacts_time to increase time shown)
 BT5f
 BT_ACTION_MOVETO_FASTEST_ROUTE
 BT_ACTION_MOVETO_RUN
@@ -10225,6 +10228,7 @@ BotService
 Both Entity Type and Entity Name were empty. Please specify either type, name, or both to search\n
 BounceTouch
 BoxAngles
+Bragdoll_lru_min_age
 Branch (%s): %s
 Branch value: %s
 Branch%02d
@@ -11638,6 +11642,7 @@ CPulseCell_Outflow_ListenForAnimgraphTag::Run
 CPulseCell_Outflow_ListenForEntityOutput::Cancel
 CPulseCell_Outflow_ListenForEntityOutput::OnFired
 CPulseCell_Outflow_ListenForEntityOutput::Run
+CPulseCell_Outflow_PlaySequence::Cancel
 CPulseCell_Outflow_PlaySequence::CancelAtInterrupt
 CPulseCell_Outflow_PlaySequence::Run
 CPulseCell_Outflow_PlayVCD::Cancel
@@ -12302,6 +12307,7 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CHandle<cla
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CHandle<class CBaseEntity>,struct CSPerGrenadeStats_t *,class CDefEquals<class CHandle<class CBaseEntity> >,struct HashMapFunctor_t<class CHandle<class CBaseEntity> >,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CHandle<class CBaseEntity>,struct CSPerGrenadeStats_t *,class CDefEquals<class CHandle<class CBaseEntity> >,struct HashMapFunctor_t<class CHandle<class CBaseEntity> >,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CHandle<class CBaseEntity>,struct CSPerWeaponStats_t *,class CDefEquals<class CHandle<class CBaseEntity> >,struct HashMapFunctor_t<class CHandle<class CBaseEntity> >,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CHandle<class CBaseEntity>,struct CSPerWeaponStats_t *,class CDefEquals<class CHandle<class CBaseEntity> >,struct HashMapFunctor_t<class CHandle<class CBaseEntity> >,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CHandle<class CBaseEntity>,struct empty_t,class CDefEquals<class CHandle<class CBaseEntity> >,struct HashMapFunctor_t<class CHandle<class CBaseEntity> >,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CHandle<class CBaseEntity>,struct empty_t,class CDefEquals<class CHandle<class CBaseEntity> >,struct HashMapFunctor_t<class CHandle<class CBaseEntity> >,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,class CUtlString,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<int,class CUtlString,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,struct GCSDK::CSharedObjectTypeCache::SharedObjectAndIndex_t,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<int,struct GCSDK::CSharedObjectTypeCache::SharedObjectAndIndex_t,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,bool,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,bool,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,class CUtlIntString<int,6>,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,class CUtlIntString<int,6>,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
@@ -12756,7 +12762,7 @@ Close the group automatically when the associated parent process exits (good for
 CloseAreaPortalsThink
 CloseCaptionNoAttenuate
 CloseToolhelp32Snapshot
-Cnav_bfs_debug
+Cnavspace_debug_trace
 Co-dependent physics tasks detected!
 Coaches/%u
 Code Signing
@@ -14283,7 +14289,6 @@ F'pY
 F+Zb
 F,mZq
 F/o4
-F0\tN
 F2M+
 F6tr
 F7!z
@@ -14640,7 +14645,6 @@ Found no entity at %d.\n
 Found soundscape entity "%s" with no soundscape name.\n
 Found source soundscape %u after marching backwards.\n
 FourVectors
-Fp'N
 Frac
 Fractional component (ie. returns 0.34 for 12.34)
 FrameTime
@@ -17856,12 +17860,11 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08J
-P08N
+P08@J 
+P08NT
 P1\t98"
-P2`0
 P5[1
+P6 EN
 PAGN_4
 PARALYZE
 PARAMETER NAME: %s | OPTIONAL: %s, TYPE: %s, BOUND: %s\n
@@ -18183,7 +18186,6 @@ PhysicsGameSystem
 PhysicsGameSystemManifest_server
 PhysicsSimulate
 PhysicsThink
-Ph}H
 PickRandom
 PickRandomShuffle
 Picker %i/%s - ent %s model %s\n
@@ -18202,7 +18204,6 @@ PinnedDown
 Pistol
 PitchShift
 PivotPaint
-Pj`0
 Place
 PlaceDecalEvent_t
 Plant bomb on floor
@@ -18317,7 +18318,6 @@ Playing sound event with no duration: '%s'\nThe vsndevts file may have disabled 
 Playing sound on non-networked entity %s
 Plays a sound from this entity.
 Plays/modifies a sound from this entity. changes sound if nPitch and/or flVol or flSoundTime is > 0.
-PleH
 Please move your current gameinfo.gi agent settings to a %s file and create a %s file with a 'default' entry containing all the nav nulls. Then add "NavHullsPreset" "default" to your gameinfo.gi file. For now we'll continue to load the agent settings but this path is deprecated ( antonioc@ ).
 Please specify 0 or 1 with the -stream Parameter\n
 Please wait for broadcast to start ...
@@ -18456,6 +18456,7 @@ Pushing linear hard!\n
 Pushing rotation hard!\n
 PutClientInServer: no info_player_logo on level\n
 PutClientInServer: no info_player_start on level\n
+PxqH
 P|iC\r
 Q*hd
 Q/xtJ2
@@ -18570,7 +18571,6 @@ RIFLE1
 RIFLE2
 RIFLE3
 RIFLE4
-RIGHT
 RIGHTARM
 RIGHTLEG
 RIPEMD160
@@ -18661,7 +18661,6 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDSE;2M
 RTime32
-R\fpt
 R\r1>Vp
 R\vp!y
 R]Di
@@ -18814,7 +18813,6 @@ Removing relationship for lost entity\n
 RenderGameSystem
 RenderOrder
 ReorientThink
-Repeat
 Replaying from %s (%d) pov\n
 ReportEventW
 Reports all extant entities. Optional 2nd arg is a substring of a classname that the list will be filtered by.
@@ -20235,7 +20233,6 @@ Source1LegacyGameEvent_t
 Source1LegacyListenEvents_t
 Source2EntitySystem
 Source2EntitySystemDeallocator
-Source2GameDirector001
 SourceAppID
 SourceEntityName
 SourceTV camera is now controlled by %s.
@@ -21172,7 +21169,6 @@ VF+c
 VGG@
 VIDEOTEXSTRING
 VIP_ESCAPE
-VISIBLE
 VISIBLESTRING
 VIgq qC:
 VM Did not start!\n
@@ -21651,9 +21647,10 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr`0
+X`hr
 Xd3h
-Xf #N
+Xf .N
+Xf@/N
 XfJ7
 XjfR
 XpProgressData
@@ -22015,7 +22012,8 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\v`leH
+\fp\vPxqH
+\fp\v`xqH
 \ful2
 \fy&3Gl
 \l:ArR
@@ -22101,7 +22099,6 @@ Z~wl
 \n========================================\n
 \nDictionary: %s\n
 \nGameTick_t
-\nPh}H
 \nSimulating Entities:\n\n
 \nVisMon: Polling now. (Frequency: %f)\n
 \n\fBPE_Teleport
@@ -22716,7 +22713,6 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNone\n
-\tPleH
 \tPrivate script scope:
 \tPublic script scope:
 \tRead %s\t%s%s%s,\tOffs 0x%04x\n
@@ -22761,14 +22757,13 @@ Z~wl
 \vGt5
 \vHCK/
 \vNCE\v
-\vPleH
 \vUY6[E
 \v\n\tRemoveFan
 \v\tV_exp2f
 \v\vTSG
-\v`leH
 \vj0k
 \vjC7
+\vpxqH
 ] Done (%.2f seconds)
 ]1h=bfz
 ]FhSD}
@@ -22844,6 +22839,8 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
+`60>N
+`6P@N
 `:zQF
 `D$daM-l
 `DZG
@@ -22854,8 +22851,9 @@ _}eOk
 `\n\rvector_values
 `fPw.\vM
 `h9T~
-`leH
+`htP
 `o_je
+`xqH
 `yNT
 a null shared library handle was used
 a trigger_changelevel doesn't have a map
@@ -22873,6 +22871,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
+aBvT
 aD/x
 aDSS
 aECDH
@@ -26568,6 +26567,7 @@ houseIdentifier
 hoverposeangles
 hoverposeflags
 hoverposeposition
+hpz 
 hr_H
 http request
 http$
@@ -28813,6 +28813,7 @@ nMode
 nNumerator
 nObjects
 nOutValue
+nP+N
 nPitch
 nPrevDamageLevel
 nPriority != NETWORK_FIELD_CHANGE_DEFAULT_PRIORITY
@@ -29107,7 +29108,6 @@ notifyforcemintime_z
 notmostrecent
 notsolid
 nova
-np&N
 npc_ability_name
 npc_select %i
 npc_vehicle
@@ -29368,16 +29368,14 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
-p0j 
-p2 k
+p08@H^T
 p250
-p2`0
 p2{l
 p4Z3
 p5Z3
 p5\nL,
 p618
+p6p"N
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pActivator
@@ -29629,7 +29627,6 @@ payload + padding <= 16381
 payment gateway capabilities
 payment_row_usd
 payment_us_usd
-pb`0
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -29873,12 +29870,10 @@ playervisibilitystrength
 playerweapon
 playing_commentary
 playoverscript
-pleH
 point
 point arithmetic failure
 point at infinity
 point is not on curve
-point_anglesensor
 point_angularvelocitysensor
 point_broadcastclientcommand
 point_camera
@@ -30187,6 +30182,7 @@ pvk data too short
 pvk too short
 pvs_modify_entity
 pvsplayer
+pxqH
 pzKD)
 q not prime
 q&A\nn
@@ -30246,7 +30242,6 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
-r\vpt
 rad2deg
 radio.go
 radio.letsgo
@@ -31363,6 +31358,7 @@ spawn_script_func
 spawn_sound
 spawnflags
 spawnobject
+spawnpoint
 spawnpoints.2v2
 spawnpos
 speak

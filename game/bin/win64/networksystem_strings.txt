@@ -16,13 +16,10 @@
   system status: %s\n
   version max  : %u.%u\n
   version used : %u.%u\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$p
  %dms faster than direct ping of %dms
  (08@HPX`j
- (08@HPXbp\v
  (08@HPZ
- (08@HRp\v
- (0X`hpzp\v
  - keeping around as cacheable shared connection
  [+add recip %d]
  [COMPLEX]
@@ -283,16 +280,13 @@
 0 bit issue, spot 3
 0 bit issue, spot 4
 08@HR
-08@Jp\v
-2\vpL
-2\vpT
-604 
-8B`B
+2\vpH\f
+6P4 
+6PI 
+6pF 
+8F 7 
 ::Storage_t
-@08Nh
-@HPX`hvp
-@htp
-A\v:P9
+AA:p
 Accepting Steam Net connection %s\n
 AckSeqNum
 Activates/deactivates net message validation
@@ -742,11 +736,7 @@ Opened Steam Net Connection on socket '%s' to %s, connection %s\n
 Order,'From','To',Bits\n
 OutSeqNumAck
 Overrides IP for multihomed hosts
-P08@Jp\v
-P08J
-P08Nh
-P2p\v
-P60> 
+P6`F 
 PACKET_STATUS_DROPPED
 PACKET_STATUS_INVALID
 PACKET_STATUS_NORMAL
@@ -807,7 +797,7 @@ QueueCallback( %s ) '%s' using value type (%s) on struct field, ignoring!\n
 QueueChange
 QueueReplayCompatFieldChange( %s ): can't place MNetworkReplayCompatField callback on a fully fake struct (e.g., a pointed to component or object), game code should move callback on entity %d to a C_BaseEntity derived class!\n
 QueueTimeMS
-R\vpL
+R\fpH\f
 RadianEuler
 ReadFields
 Recv
@@ -963,8 +953,6 @@ YWB:  remember to remove this code, once we combine networking startup procedure
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 \vInSeqNum
 \vMsgTick
-`htp
-aBvh
 activated
 added
 aggegated
@@ -1051,7 +1039,6 @@ groupindex
 groupnames
 has_network_encoding_data
 hostip
-hpzp\v
 huge
 identified %d entity related c++ field shadowing issues:\n
 ignore field differs for %s::%s\n
@@ -1144,8 +1131,8 @@ mismatch:  schema '%s' %d chains codegen '%s' %d chains\n
 mismatch:  schema '%s' %d fields codegen '%s' %d fields\n
 mismatch:  schema '%s' codegen '%s'\n
 missing DECLARE_NETWORK_SERIALIZER_CODEGEN( %s ) for type.\n
-n01 
 nIndex != m_priorityToOrderMap.InvalidIndex()
+nP7 
 nPriority != NETWORK_FIELD_CHANGE_DEFAULT_PRIORITY
 net_captureculldata
 net_channels
@@ -1216,12 +1203,8 @@ out-of-order
 outgoing_data_bytespersecond
 outgoing_sequence
 outgoing_sequence_start
-p08@H^h
-p0j@}
-p2`B
-p2p\v
-p60) 
-p6P9 
+p0jp
+p6`1 
 pFSField
 p\rP\f0!h
 packet_status
@@ -1242,6 +1225,7 @@ previous only
 pri(%u)
 problem detected locally
 qangle_pitch_yaw
+r\vpH\f
 records
 regex
 regex_error
@@ -1283,6 +1267,7 @@ usage: %s <client|server>\n
 usage: %s <name> <server>\n
 usage: fs_spew_readfieldlist entindex <optional min change bytes>\n
 utlvector
+v0J 
 v@vector2
 valid
 valid poly %s [%u]

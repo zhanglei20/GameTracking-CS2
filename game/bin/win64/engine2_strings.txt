@@ -150,12 +150,10 @@
  %4u stashed frames = %12s bytes
  %i refs\n
  (08@HPX`hpx
- (08@HPX`jP|
- (08@HPXbP
- (08@HPZP|
- (08@HRP
- (08@JP
- (0X`hpzP
+ (08@HPX`j`|
+ (08@HPXb
+ (08@HR
+ (0X`hpz
  (Start: 
  (Texture)
  (default = .tga + .wav file)\n
@@ -378,6 +376,7 @@
 "MutableRawRepeatedField"
 "O7v
 "S\n\nCEntityMsg
+"\n\vSteamIDList
 "\nis running without a known mod!\n\nSet the VMOD environment variable or run with -game to set the mod name.\n
 "\v\n\tCDemoStop"0\n\fCDemoUserCmd
 "^\n\fOneofOptions
@@ -387,6 +386,7 @@
 "k\n"CNETMsg_SpawnGroup_SetCreationTick
 "u\n!CNETMsg_SpawnGroup_ManifestUpdate
 "v\n\rCDemoFileInfo
+"z\n,CSource2Metrics_RecordPlayStats_Notification
 # of seconds to wait after final client leaves before hibernating.
 # userid name uniqueid connected ping loss state rate
 ##GameUI_Disconnect_BadRelayPassword
@@ -900,6 +900,7 @@ $tI(knN
 (\v2..CSource2Metrics_FetchMapData_Response.MapData
 (\v2..google.protobuf.DescriptorProto.ReservedRange
 (\v2/.google.protobuf.DescriptorProto.ExtensionRange
+(\v21.CMsgSource2PlayStatsPackedRecordList.SteamIDList
 (\v21.CSVCMsg_PacketEntities.outofpvs_entity_updates_t
 (\v22.CSVCMsg_PacketEntities.non_transmitted_entities_t
 (\v24.ProtoFlattenedSerializerField_t.polymorphic_field_t
@@ -964,6 +965,7 @@ $tI(knN
 *StO9>T
 *\f*\f*\f*\f*\f*\f*\f*\f*\f*\f*\f*\f*\f*\f*\f*\f
 *\n"host_computationtime_std_deviation
+*\n&Source2PlayStats_SteamIDTrustBucketMin
 *h\n\vDIALOG_TYPE
 *zvC
 ++CBaseSpawnGroup
@@ -1061,7 +1063,7 @@ $tI(knN
 ../src/shaders
 ..\content
 .00cfg
-.08G
+.0BG
 .9GXdx
 .>\rfJBGo
 .?AU?$Container@VUnknownFieldSet@protobuf@google@@@InternalMetadata@internal@protobuf@google@@
@@ -1833,6 +1835,7 @@ $tI(knN
 .?AVCMsgSource2PerfIntervalSample_Tag@@
 .?AVCMsgSource2PlayStatsPackedRecordList@@
 .?AVCMsgSource2PlayStatsPackedRecordList_FieldDef@@
+.?AVCMsgSource2PlayStatsPackedRecordList_SteamIDList@@
 .?AVCMsgSource2SystemSpecs@@
 .?AVCMsgSource2VProfLiteReport@@
 .?AVCMsgSource2VProfLiteReportItem@@
@@ -2431,10 +2434,9 @@ $tI(knN
 .CSVCMsg_Sounds.sounddata_t
 .EProtoDebugVisiblity:
 .ERQLC*
-.ESource2PlayStatsFieldType"z\n,CSource2Metrics_RecordPlayStats_Notification
+.ESource2PlayStatsFieldType
 .ESplitScreenMessageType
-.P1G
-.P5G
+.P3G
 .P6AXPEBD@Z
 .PEAVCEntityIdentity@@
 .PLACEHOLDER_VALUE
@@ -2451,7 +2453,6 @@ $tI(knN
 .bss
 .cfg
 .csv
-.dIB
 .data
 .data$r
 .data$rs
@@ -2477,7 +2478,8 @@ $tI(knN
 .log
 .los
 .lzh
-.p1G
+.p3G
+.p8G
 .pdata
 .placeholder.proto
 .rdata
@@ -2549,9 +2551,9 @@ $tI(knN
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
-08@HRP|
-08@JP
-08BP|
+08@HR`|
+08@J
+08B`|
 08\fj
 0: Force z prepass off. 1: Force on. -1: Don't force
 0: Use normals reconstructed from depth. 1: Output correct normals in z prepass.
@@ -2562,14 +2564,12 @@ $tI(knN
 0B_u
 0C&C
 0E>X
-0LGB
 0T.Q
 0X8b?~
 0\n\vserializers
-0d-B
 0iN>/
-0vdIB
 0x%x,
+0|OB
 0|t?L
 0|t?uj
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
@@ -2616,16 +2616,15 @@ $tI(knN
 2Hax
 2NK?
 2Ogx
-2Pw%
 2Z4\nf
 2\f8Kf
 2\r%2t
 2\r.PrefetchType"h\n
 2\rU2t
 2\tV_isnand
-2\vpLGB
+2\vp|OB
 2i0/
-2po%
+2pI(
 3$EE\f
 3'F^7
 30000
@@ -2664,12 +2663,13 @@ $tI(knN
 5\n\vnested_type
 5c;3E
 5y?4
+60(G
 64-bit
 6?k 6?t
 6GQ^h~
 6KT3c7
 6NK>
-6P!G
+6P0G
 6\fXO>\ntA
 6\n\fmessage_type
 6\r56t
@@ -2691,10 +2691,7 @@ $tI(knN
 87g}
 8>0RF>
 8@HP:
-8@JP|
 8A3b
-8BP|
-8Bp;%
 8Csinf
 8Smt
 8W?i
@@ -3122,22 +3119,21 @@ $tI(knN
 ?WriteZeroed@CCircularBuffer@@QEAAHH@Z
 ?ati_compress_wrapper.dll
 ?f`Y4
-?hCW
 ?qBJ
 ?rAj
 ?rJRTS\Rg>`H`CeIkHq7v4}4v4u7
 ?ysB
 @ Current  :  %s\n
 @08@HPX`hpx
-@08NdIB
+@08N
+@608G
+@60:G
 @GetProfile_ultrafast
 @HPX
 @HPX&I
 @HPX`hv
 @^8U)zj
-@fdIB
 @i-kuX
-@ndIB
 A command with the specified name already exists. Cannot create an alias with the same name.\n
 A dB floor of when to stop transmitting packets, the volume between this and voice_threshold will still transmit packets to allow for volume ramping.
 A file with this name is already in the pool.
@@ -3345,6 +3341,7 @@ BGRA8888_LINEAR
 BGRX8888
 BGRX8888_LINEAR
 BKbhTb~XBK!;
+BPH(
 BROADCAST
 BSR_ANYCRLF)
 BSR_UNICODE)
@@ -5078,6 +5075,7 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 Extra arguments given after name\n
 ExtractModuleMetadata
 Extraneous token
+F0.G
 F>qUxv
 FAIL
 FALSE
@@ -5503,7 +5501,6 @@ G|u0J\n
 H$6t
 H*0"ZOW
 H.FM
-H9P_
 HD?0
 HGR9\f
 HH:mm:ss
@@ -5518,8 +5515,8 @@ HLTV send full frame %d: %d bytes\n
 HLTV:  SetSignonState( %s )\n
 HLTV:maxplayers set to %i\n
 HLTV_CopyNewEntity: GetDynamicBaseline(%d) failed.
-HMQ_
 HSR_GAME_REMOTE_CHANGELEVEL_RECONNECT
+HYc_
 HammerMapLoader001
 Hangul
 Hanunoo
@@ -5547,6 +5544,7 @@ Hltv Replay failure: already in replay\n
 Hltv Replay failure: inconsistent parameters scheduling stashed replay in the future, ignoring\n
 Hltv Replay failure: requests are rate limited to no more than 1 per %g seconds\n
 Hltv replay delay %u cannot match the requested delay %u\n
+Hmd_
 Host SourceTV[0] port
 Host SourceTV[1] port
 Host activate: %s\n
@@ -5565,11 +5563,10 @@ How often to flash demo recording/playback overlay (0 - disable overlay, -1 - sh
 HudUpdate
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-HyO_
-HyQ_
 I could not work out what I was expecting, like so many of us these days!\n
 I<OXb<^
 IA88
+IBd_
 ID filter list has %i entries\n
 ID: %i, "%s" %s, Time %s, %s, In %.1f, Out %.1f.\n
 IDEMPOTENCY_UNKNOWN
@@ -5765,6 +5762,7 @@ JwMW
 K32EnumPageFilesA
 K32GetModuleFileNameExA
 KERNEL32.dll
+KH%I
 KNQ\rMO
 KW<S
 K\n!NETWORK_DISCONNECT_INTERNAL_ERROR
@@ -5824,7 +5822,6 @@ LOG_GENERAL
 LOG_VPROF
 LWG>
 LWW>
-L\fpo%
 L\n!NETWORK_DISCONNECT_HLTVRESTRICTED
 L\n!NETWORK_DISCONNECT_KICKED_SUICIDE
 L\n!NETWORK_DISCONNECT_LOOPDEACTIVATE
@@ -6444,12 +6441,11 @@ Override Fog color: %f %f %f\n
 Overrides the SourceTV master root address.
 Overrides the max players reported to prospective clients
 Overriding minidump handler with Engine2MinidumpFunction\n
-P08@JP
-P08J`p%
-P08NdIB
-P2P|
+P08@J
+P08J
+P08N
 P4File
-P600G
+P6`8G
 P:S;A
 P?fff?33s?{
 P@HPX`hpx\f
@@ -6458,13 +6454,11 @@ PCRE does not support \L, \l, \N{name}, \U, or \u
 PHrk
 PInstruction_t<41>::Run
 PInstruction_t<42>::Run
-PL0B
 PLACEHOLDER_VALUE
 PLATFORM
 PLAYBACK: At end of data\n
 PLAYBACK: ReadReplayMessage returning deltaFrame clientTick=%d tick=%d delta=%d\n
 PLAYBACK: ReadReplayMessage waiting for next tick at clientTick=%d\n
-PLGB
 PNG\r\n
 POSIX collating elements are not supported
 POSIX named classes are supported only within a class
@@ -6565,7 +6559,6 @@ Paused: %s
 Pauses demo playback.
 Pauses instant replay.
 Pauses when the 'render time' reaches the specified tick.
-Pd-B
 Pe6^
 Peak commit charge: %.2f MiB\n
 Peak resident memory:    %s\n
@@ -6579,7 +6572,6 @@ Phoenician
 Physics interface checksum is 0x%08X, expected 0x%08X. One of the binaries is out of date, please rebuild %s.\n
 PhysicsBuilderMgr001
 Ping
-PjP|
 Plain assert text (has prefix)\n
 Plain general text (no prefix)\n
 Plat_AlertUser
@@ -6727,7 +6719,7 @@ Playing Broadcast (%s)
 Playing Demo (%s)
 Playing back demo: '%s' at tick %u\n
 PmNk
-PndIB
+PnP\tG
 Pointers cannot be used as numeric values
 PollAndProcessInput
 Poor man's restart: reload the current map from disk.
@@ -6825,6 +6817,8 @@ PulseRuntimeChunkIndex_t
 PulseSymbol_t
 PulseValueType_t
 Puts the server into extremely low CPU usage mode when no clients connected
+P|8B
+P|OB
 Q%llx,
 Q2XXR
 Q5rHg,>
@@ -6908,7 +6902,7 @@ RP_TOGGLEPAUSE
 RSDS
 RST%d
 R\tV_powf
-R\vpLGB
+R\vp|OB
 RaiseException
 Random Float
 Random Integer
@@ -8188,7 +8182,6 @@ UtlVectorMemory_FailedAllocation
 U}JK
 U}g7x~
 V/?[w8rV
-V0*G
 V<@ss
 V?wm\v
 VApplication001
@@ -8290,6 +8283,7 @@ V_atan2f
 V_atof
 V_atofloat32
 V_atoi
+V`2G
 Validate each StateChanged against known offsets.
 Validation stalled\n
 Value must be "true" or "false" for boolean option "
@@ -8329,7 +8323,6 @@ Visibility %s.\n
 Voice
 VoiceDataFormat_t
 Void
-Vp4G
 Vrad3_001
 Vu?N\t?8Ws?vGr?
 Vv.q
@@ -8508,9 +8501,7 @@ X\n'NETWORK_DISCONNECT_DIFFERENTCLASSTABLES
 X\n'NETWORK_DISCONNECT_KICKED_NOSTEAMTICKET
 X\n(NETWORK_DISCONNECT_INVALID_MESSAGE_ERROR
 X\tV_roundd
-X`hrP|
 Xn1G
-XqP_
 Xr?9
 XsBI
 Y8a:
@@ -8604,8 +8595,7 @@ Zq",9\fB
 \fV0U
 \fV4U
 \fX\fm\vH\vH\vm\v
-\fpLGB
-\fp\v`LGB
+\fp|OB
 \g is not followed by a braced, angle-bracketed, or quoted name/number or by a plain number
 \n    Actual    : 
 \n    Field type: 
@@ -8934,8 +8924,6 @@ Zq",9\fB
 \r\r\f\f\f\f\v\v\v\n\n\n\t\t\t\t\t\t
 \r\tV_expf
 \rmj>zjZ
-\rp\f`\v0LGB
-\rp\f`\vPLGB
 \t The lexer was matching from line %d, offset %d, which\n\t 
 \t"%s" has %d known peers:\n
 \t"%s" has no known peers.\n
@@ -8947,6 +8935,7 @@ Zq",9\fB
 \t?\tZ\tZ\tZ\tZ\t?\tg\t\n\t
 \t?\tZ\tt\tt\tt\t
 \tN1a
+\tT@LJ
 \tV_atoi64
 \tV_atoui64
 \tV_cosf
@@ -9006,7 +8995,6 @@ Zq",9\fB
 \vH\vm\vm\vm\vm\vH\vH\vH\vH\vH\v
 \vIG]h
 \vInterp
-\vPd-B
 \vSimulationTicks
 \vSource
 \vVyC
@@ -9014,7 +9002,7 @@ Zq",9\fB
 \vm\vm\vm\vH\vm\vm\v
 \vm\vm\vm\vm\vH\v
 \vnJH
-\vpLGB
+\vp|OB
 \vxYT
 ] is an invalid data character in JavaScript compatibility mode
 ]\n,NETWORK_DISCONNECT_REJECT_INVALIDRESERVATION
@@ -9080,13 +9068,9 @@ _spawngroup_logging/log_%s_group_%s.txt
 _temp_mapcycle.txt
 `-uRQg
 `3Q"X
-`6 2G
-`6 3G
-`6P)G
-`6`3G
-`6p3G
+`6P:G
+`6P;G
 `?m'_?&~]?(
-`LGB
 `RTTI
 `\tV_sinf
 `adjustor{
@@ -9100,7 +9084,6 @@ _temp_mapcycle.txt
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
-`fdIB
 `generic-class-parameter-
 `generic-method-parameter-
 `generic-type-
@@ -9114,7 +9097,6 @@ _temp_mapcycle.txt
 `managed vector constructor iterator'
 `managed vector copy constructor iterator'
 `managed vector destructor iterator'
-`ndIB
 `non-type-template-parameter
 `omni callsig'
 `placement delete closure'
@@ -9146,7 +9128,6 @@ a numbered reference must not be zero
 a&M-=Z]<i*k)n-t&q&p&|
 a6>r
 a?wSa?\
-aBvdIB
 a\v4+Wk
 abcdefghijklmnopqrstuvwxyz
 abortflag
@@ -9876,10 +9857,8 @@ extendee
 extension_range
 extern "C" 
 f#kI3\t
-f2IG
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
 f9U\n
-f>IG
 f?3Jf?6
 fD""B
 fD>b
@@ -9899,7 +9878,7 @@ false:<\n
 false:=\n
 false:=\n\rvalve_map_key
 false:?\n
-fdIB
+fbQG
 field
 field_serializer_name_sym
 field_serializer_version
@@ -9931,6 +9910,7 @@ float32
 float64
 floor
 fmod
+fnQG
 fog_enable
 fog_override_color
 fog_override_enable
@@ -10082,6 +10062,7 @@ hPU3
 hTarget
 h\n,NETWORK_DISCONNECT_REMOTE_TIMEOUT_CONNECTING
 has_pvs_vis_bits_deprecated
+he7^
 header crc mismatch
 header_icon
 heartbeat\n
@@ -10131,7 +10112,6 @@ hostname
 hostname : %s\n
 hostname_in_client_status
 hostport
-hpzP
 hscript
 hscript_lightbinding
 http Send %.3f ms ave, %.3f ms max\n
@@ -10637,6 +10617,7 @@ multvar
 multvar: cvar "%s" not found\n
 multvar: no varname specified!\n
 mx=E
+n0+G
 n03>Pu
 n>sak><
 n?A6
@@ -10654,7 +10635,6 @@ n`xBF|7T
 name
 nan(ind)
 nan(snan)
-ndIB
 ndZTNGA:3-' 
 near '%c' :\n
 near char(%#02X) :\n
@@ -10750,6 +10730,7 @@ not started
 not supported
 notes
 nothing to repeat
+np-G
 null
 nullptr
 num_bits
@@ -10857,29 +10838,24 @@ overwatch
 owM&
 owner dead
 oz>!km>
-p08@H^dIB
+p08@H^
 p0p@
-p2P|
-p2p;%
 p2p_listpeers
 p2p_ping "%s"
 p4edit
-p>dIB
+p6@%G
+p>7QG
 p?ff
 p@HPX`h\f
 pClass
 pClass->m_ClassID(%i) >= %i\n
 pClient
 pCm)
-pF`+G
 pH\fy
-pL0B
-pLGB
 pMessage
 pServerClass
 pYa(bu
 p\r0\fP
-p\r`\fPLGB
 p\tV_strlower_fast
 package
 packed
@@ -10905,9 +10881,7 @@ password
 path
 pause
 paused
-pbP|
 pc64
-pd-B
 peer
 pending
 pending_full_frame
@@ -10949,7 +10923,6 @@ playing %s from '%s'\n
 playsound
 playsound 
 playsound <soundname>
-pndIB
 png 
 png_screenshot
 pointer, 
@@ -11011,6 +10984,8 @@ punct
 purecall
 push_var_values
 py_generic_services
+p|8B
+p|OB
 qIU<
 qM1H
 qS>g?h3
@@ -11207,7 +11182,6 @@ retval
 rnd_down
 rnd_up
 round_start_ticks
-rpo%
 rpt/%04d_%02d_%02d
 rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 rtdelay
@@ -11700,6 +11674,7 @@ total_packets_out
 trailing_comments
 tried to sprint to a non-client\n
 true
+trustbucket_vals
 turn on sse4.2 optimizations in the engine
 tv_advertise_watchable
 tv_autorecord
@@ -11892,6 +11867,7 @@ utcdatetime_vals
 utl_vector, 
 utlstringtoken
 uzKs@>
+v0?G
 v2!L.2
 vE-2
 vQO+t
@@ -11917,7 +11893,6 @@ vaudio_speex
 vconcomm
 vconsole_rcon_server_details
 vcss
-vdIB
 vecSave
 vector
 vector too long

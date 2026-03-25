@@ -44,10 +44,7 @@
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  (repeat)
  (x2 - stereoscopic)
  * Animation Stack %s Layer %s - %s\n
@@ -3479,7 +3476,6 @@ $prefix_element$
 000000000
 0123456789
 08@HR
-08@J
 0L6?
 0\fE04_
 0lZt
@@ -10387,8 +10383,6 @@ OverridingFrameRate
 Overwrite
 Overwrite With Current
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
-P08@J
-P08J
 P08NDNt
 P4 Operation failed
 P4InteractionDialog

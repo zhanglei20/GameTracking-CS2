@@ -1,9 +1,6 @@
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
 !m_hParam.IsValid()
 %%s%%s%%d:  sv[%%%d.%ds] cl[%%%d.%ds]\n
 %s:  IGameSystem::LoopActivateAllSystems {\n
@@ -96,10 +93,8 @@
 .?AVISinglePlayerSharedMemory@@
 .?AVISource2Host@@
 08@HR
-08@J
 2\vp4
 ?expf
-@08N
 @HPX`hv0)
 @HV@7
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
@@ -136,9 +131,7 @@ IND)ind)"
 LightmapUV
 LightmapUVW
 OverlayProjectionDirection
-P08@J
 P08J0
-P08N
 P60D
 P6PI
 PackedBlobNormal
@@ -194,7 +187,6 @@ m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 medium
 optionallycompressedtangentframe
-p08@H^
 p0j0s
 posxyz
 prev

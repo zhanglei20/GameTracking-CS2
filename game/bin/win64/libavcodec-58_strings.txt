@@ -604,7 +604,6 @@ Bitrate %lld is extremely low, maybe you mean %lldk\n
 Bitstream not supported by this decoder
 Bitstream required feature not supported by this decoder
 Blending with pixel format %s
-Bottom
 Bottom-left
 Broken frame packetizing\n
 Broken tEXt chunk\n

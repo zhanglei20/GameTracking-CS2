@@ -38,10 +38,7 @@
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  (Crouch)
  (Pitch)
  (Roll)
@@ -11752,7 +11749,6 @@ $prefix_element$
 0.000
 0000``
 08@HR
-08@J
 0\r%0h
 0\r%0t
 0x%1
@@ -14468,7 +14464,6 @@ $prefix_element$
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
-@08N
 @AuthPhysCollisionAttributesModeEnum_t
 @C:\buildworker\csgo_rel_win64\build\src\mathlib\extended\generic_expr.g
 @Integer overflow in %s
@@ -15295,7 +15290,6 @@ Bone Name Filter
 Bone Name Filter:
 Bone Name Prefix 
 Bone Names
-Bone Relative
 Bone Rename failed, results in duplicate bone '%s' in this animation
 Bone Rename failed, results in duplicate bones in this animation
 Bone Space
@@ -15333,7 +15327,6 @@ Bones: %d\n
 Bools
 Both
 Both rotation and translation are not allowed to be zero!
-Bottom
 Bounciness
 Bounding Dimensions
 Bounding Volumes
@@ -15891,8 +15884,6 @@ CModelPreviewPhysicsShape_Sphere
 CModelPreviewPoseParameter
 CModelPreviewSequence
 CMorphUIController
-CMotionAnalysisSettings
-CMotionAnalysisSettings_Foot
 CNewParticleEffect::DetectChanges
 CNmAdditiveBlendTask - Trying to blend additively, using a non-additive pose\n
 CNmClipDocEvent_EntityAttribute::PerformValidation
@@ -17497,7 +17488,6 @@ Duplicate model key: %s
 Duplicate or Reference selected soundevent
 Duplicate target body (%s) specified in body markup.  Please fix.
 Duplicate the specified attachments and mirror them in the specified axes
-DuplicateAndMirrorAttachmentOpts_t
 DuplicateSelectedNodes
 Duration (Seconds)
 Duration = %.2f
@@ -19319,8 +19309,6 @@ MENU
 MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
-MIRROR_SPACE_BONE_RELATIVE
-MIRROR_SPACE_MODEL_RELATIVE
 MISMATCHED BUFFERS\n
 MISMATCHED SIZE\n
 MIsStringAndTokenType
@@ -19620,23 +19608,13 @@ MinimumExpanding
 Mirror
 Mirror Left -> Right:
 Mirror Position Vectors
-Mirror Relative To The Bone
-Mirror Relative To The Model
 Mirror Right -> Left:
-Mirror Space
 Mirror X
-Mirror X Axis / Across YZ Plane / Front/Back
-Mirror X Axis / YZ Plane
 Mirror Y
-Mirror Y Axis / Across XZ Plane / Left/Right
-Mirror Y Axis / XZ Plane
 Mirror Z
-Mirror Z Axis / Across XY Plane / Up/Down
-Mirror Z Axis / XY Plane
 Mirror the model across the x-axis
 Mirror the model across the y-axis
 Mirror the model across the z-axis
-MirrorSpace_t
 Mirrored Duplicate
 Mirrored Duplicate Nodes
 Mismatch parameter type for referenced graph '%s', parent type: '%s', referenced type: '%s'
@@ -19663,7 +19641,6 @@ Model Doc is read only!
 Model File (*.vmdl)
 Model Files ( *.fbx *.obj )
 Model KeyValues
-Model Relative
 Model Rotation
 Model Rotation: %0.1f
 Model Space Target
@@ -20806,7 +20783,6 @@ Optional properties not fully supported in property editor (text editor required
 Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
 Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
-Options for duplicating and mirroring attachments.
 Or R%d <- R%d || R%d
 Order of animation sequences in compiled model.  Specified entries will be ordered first, unspecified entries will be added after ordered entries in an unspecified order.
 Orient
@@ -20883,9 +20859,7 @@ Overwrite With Current
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P08@J
 P08JP|.
-P08N
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?item@QStandardItemModel@@QEBAPEAVQStandardItem@@HH@Z
@@ -21451,7 +21425,6 @@ R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RBF Based Anim Constraint
 RGBA\t
 RGBA\t%1\t%2\t%3\t%4
-RIGHT
 RMouse
 RMouseDoubleClick
 ROTATION
@@ -22582,9 +22555,7 @@ SurfacePropPicker
 SurfacePropPicker()
 Suspender Spring
 Swap Left And Right Bones
-Swap Left/Right Parent Bones
 Swap left and right bone names
-Swap parent bones if a bone ends in a known left/right suffix, i.e. _L, _left, etc... and there's a correspondingly named bones.  Works best for bone relative mirroring in Y, i.e. across the XZ plane, left/right.
 Swing Limit
 Swing Offset Angle
 Swing Relax
@@ -22827,10 +22798,6 @@ This value is overriding a base node.
 This value is set when the morph control is created via mesh loading and not explictly created by the user
 This will create a new node of every type for testing purposes, only recommended for use on empty documents. Are you sure?
 Threshholding
-Threshold for 'fully stopped' angular velocity (degrees/second)
-Threshold for 'fully stopped' linear velocity (inches/second)
-Threshold for 'nearly stopped' angular velocity (degrees/second)
-Threshold for 'nearly stopped' linear velocity (inches/second)
 Threshold value to use when detecting if translation tracks are constant or default. In game units, i.e. inches
 Thumbnail
 ThunderDecode: %s data at scanline %ld (%lu != %lu)
@@ -23026,7 +22993,6 @@ Two Sided (Foliage)
 Two morph controls which should be grouped into a single control
 Two-Sided
 Type note...
-Type of anim event
 Type of data to export.  Bones can only be excluded on Skeleton Only exports.
 Type of data to export.  Note that skeleton can only be filtered if type is skeleton only
 Type of faceposer keys, Gesture or Posture
@@ -23260,7 +23226,6 @@ Value B
 Value One
 Value Zero
 Value to search for in string attributes, can be a regular expression if specified below.
-Value to set the 'foot' key (if nonempty)
 ValueChanged
 ValueEdited
 ValuePos_t
@@ -23451,7 +23416,6 @@ Whether the to use the curve or just a set value for the entire frame range
 Whether this distance field contributes to AO.
 Whether this distance field is a collider for certain effects such as hair simulation.
 Whether to draw a 3d debug visualization of analysis (debug draw persists until next invocation of this wizard)
-Whether to mirror relative to the parent bone or to the model.
 Which solver to use for positioning the IK chain.  Required.
 WhiteLevel
 WhitePoint
@@ -25682,28 +25646,22 @@ m_AdditionalInputDependencies
 m_AdditionalRelatedFiles
 m_Anchor
 m_AngularLimits
-m_AnkleBoneNames
 m_AntiTunnelGroups
 m_ArgumentDependencies
-m_AttachmentNames
 m_Bindings
 m_Bodies
 m_ChildResourceList
 m_CollisionAttributes
 m_Context
-m_CreatedEventFootValue
-m_CreatedEventType
 m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNameOrientation
 m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition
 m_Data.m_EndEffectorFixedOffsetAttachment
 m_Data.m_bParentJointRequiresAlignment
-m_DebugColor
 m_DefaultSolverSettings.m_nNumIterations
 m_DefaultTargetSettings.m_Bone
 m_DefaultTargetSettings.m_TargetSource
 m_EndEffectorFixedOffsetAttachment
 m_EnumArray
-m_Feet
 m_FitInfluences
 m_Fx
 m_HingeAxis
@@ -25793,9 +25751,6 @@ m_bIsTwistLimitEnabled
 m_bKeepAsQuad
 m_bKeychainMotion
 m_bMadeInModelDoc
-m_bMirrorX
-m_bMirrorY
-m_bMirrorZ
 m_bNeedNodeBase
 m_bNeedsWorldCollision
 m_bNewStyle
@@ -25812,7 +25767,6 @@ m_bShutdown
 m_bSimulated
 m_bStraightBendRods
 m_bSuspenders
-m_bSwapLeftRightParentBones
 m_bTwistPriority
 m_bUninertialRods
 m_bUnitlessDamping
@@ -25828,14 +25782,11 @@ m_bodyLocationDef
 m_capabilities
 m_eColorFormat
 m_eMaxBlendWeightsPerVertex
-m_eMirrorSpace
 m_eRbfType
 m_eRenderPrimitiveType
 m_externalMethodTargetGraph
 m_flAddCurvature
 m_flAdditionalShearStretch
-m_flAngularThresholdSlow
-m_flAngularThresholdStopped
 m_flAntiShrink
 m_flBendStiffness
 m_flCollisionRadius
@@ -25849,8 +25800,6 @@ m_flGroundFriction
 m_flInbaSwing
 m_flInbaTwist
 m_flLegacyStretchForce
-m_flLinearThresholdSlow
-m_flLinearThresholdStopped
 m_flMakeRods
 m_flMassBias
 m_flMaxRadians
@@ -26289,7 +26238,6 @@ overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
 p"?value@QSpinBox@@QEBAHXZ
-p08@H^
 p0jP=-
 pAction
 pActionObject
