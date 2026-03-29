@@ -2,7 +2,7 @@
 // MVDataRoot
 // MVDataNodeType = 1
 // MVDataAnonymousNode
-// MVDataOutlinerNameExpr (UNKNOWN FOR PARSER)
+// MVDataOutlinerNameExpr = "m_VariableName"
 class CSmartPropVariable : public CSmartPropParameter
 {
 	CUtlString m_VariableName;

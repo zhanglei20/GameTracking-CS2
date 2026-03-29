@@ -11,7 +11,7 @@
 //}
 // MPropertyFriendlyName = "Normalize Vector"
 // MPropertyDescription = "Normalize the value of a 3d vector."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Compute"
 class CSmartPropOperation_ComputeNormalizedVector3D : public CSmartPropOperation
 {
 	// MPropertyFriendlyName = "Output Variable"

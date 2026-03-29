@@ -11226,7 +11226,6 @@ Compression Level
 Compression algorithm does not support random access
 Compression scheme %u %s decoding is not implemented
 Compression scheme %u %s encoding is not implemented
-Compute
 Compute AO
 Compute Dynamic Mesh Tension
 Compute Dynamic Smooth Normals
@@ -11752,7 +11751,6 @@ Entity Attribute Int
 Entity Class Override
 EntityName
 EnumArray
-Enumerator Types
 Envelope in inches
 Eq R%d <- R%d == R%d
 Equal to
@@ -12797,7 +12795,6 @@ Make an Angle from a Forward Vector
 Make an Angle from component parts
 Make sheet file
 MakerNoteSafety
-Manipulators
 Manual Mode (Suppress smart-creation)
 Map Name
 MapClass
@@ -14478,7 +14475,6 @@ Start frame :: %d > End frame :: %d, will result in an empty animation
 Start/Continue simulation
 StartSendingCameraTo
 StartStop
-State
 Static Only
 Static Only Tolerance
 Status Effect Params CP ( Status Effect Flags / None / None )
@@ -16913,7 +16909,6 @@ m_SubassetReferences
 m_TagValue
 m_TestEnum
 m_UserData
-m_VariableValue.m_TargetName
 m_WeakReferenceList
 m_attachments
 m_bBakedTwoSided
@@ -17777,7 +17772,6 @@ slow
 slow_pulse_nofade
 slow_strobe
 slow_strong_pulse
-smart_prop
 smartprop_print_timings
 smartprops
 smooth_by_distance

@@ -21,7 +21,7 @@
 //}
 // MPropertyFriendlyName = "Project Vector"
 // MPropertyDescription = "Project Vector A onto Vector B"
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Compute"
 class CSmartPropOperation_ComputeProjectVector3D : public CSmartPropOperation
 {
 	// MPropertyFriendlyName = "Output Variable"

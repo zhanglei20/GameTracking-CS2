@@ -5,7 +5,7 @@
 //}
 // MPropertyFriendlyName = "Transform: Scale"
 // MPropertyDescription = "Apply a scale to the current transform."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Transform"
 class CSmartPropOperation_Scale : public CSmartPropTransformOperation
 {
 	// MPropertyDescription = "Scale to apply to the current transform"

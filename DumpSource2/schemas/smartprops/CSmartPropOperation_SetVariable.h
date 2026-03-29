@@ -10,8 +10,8 @@
 //}
 // MPropertyFriendlyName = "Set Variable"
 // MPropertyDescription = "Set the value of a variable."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
-// MVDataOutlinerNameExpr (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "State"
+// MVDataOutlinerNameExpr = "m_VariableValue.m_TargetName"
 class CSmartPropOperation_SetVariable : public CSmartPropOperation
 {
 	CSmartPropAttributeVariableValue m_VariableValue;

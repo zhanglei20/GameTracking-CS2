@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Filter: Surface Properties"
 // MPropertyDescription = "Allows the parent element to be conditionally evaluated based on surface properties."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Filter"
 class CSmartPropFilter_SurfaceProperties : public CSmartPropFilter
 {
 	// MPropertyDescription = "List of surface properties on which this element is valid. If empty element is not restricted to any specific surfaces."

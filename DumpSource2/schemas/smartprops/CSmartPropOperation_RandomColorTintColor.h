@@ -13,7 +13,7 @@
 //}
 // MPropertyFriendlyName = "Tint Color Gradient"
 // MPropertyDescription = "Set the color tint to a selection from within the defined gradient."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Color"
 class CSmartPropOperation_RandomColorTintColor : public CSmartPropOperation
 {
 	// MPropertyFriendlyName = "Selection Mode"

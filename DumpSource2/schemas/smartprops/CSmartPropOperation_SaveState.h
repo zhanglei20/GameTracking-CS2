@@ -6,7 +6,7 @@
 // MPropertyFriendlyName = "Save State"
 // MPropertyDescription = "Save the current state, allowing it to be restored at a later state."
 // MVDataNodeTintColor (UNKNOWN FOR PARSER)
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "State"
 class CSmartPropOperation_SaveState : public CSmartPropOperation
 {
 	// MPropertyAttributeEditor = "SmartPropItemNameEditor( SavedState )"

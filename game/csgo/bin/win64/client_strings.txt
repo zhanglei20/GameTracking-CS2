@@ -30521,7 +30521,6 @@ csgo_hud
 csgo_hudalerts
 csgo_hudradar
 csgo_hudvoicestatus
-csgo_inv_image_preview
 csgo_item_previewmodel
 csgo_key
 csgo_loadingscreen

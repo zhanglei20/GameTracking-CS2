@@ -26,7 +26,7 @@
 //}
 // MPropertyFriendlyName = "Transform: Rotate Towards"
 // MPropertyDescription = "Apply a rotation to the current transform according to the alignment of two points."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Transform"
 // MVDataExperimentalNodeSet (UNKNOWN FOR PARSER)
 class CSmartPropOperation_RotateTowards : public CSmartPropTransformOperation
 {

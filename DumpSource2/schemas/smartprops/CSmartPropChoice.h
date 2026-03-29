@@ -9,7 +9,7 @@
 //}
 // MPropertyFriendlyName = "Choice"
 // MVDataAnonymousNode
-// MVDataOutlinerNameExpr (UNKNOWN FOR PARSER)
+// MVDataOutlinerNameExpr = "m_Name"
 class CSmartPropChoice : public CSmartPropParameter
 {
 	// MPropertyFriendlyName = "Choice Name"

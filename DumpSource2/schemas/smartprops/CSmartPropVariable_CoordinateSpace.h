@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Coordinate Space"
 // MPropertyDescription = "Specifies a coordinate space in which a point or vector value is defined."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Enumerator Types"
 class CSmartPropVariable_CoordinateSpace : public CSmartPropVariable
 {
 	SmartPropSpace_t m_DefaultValue;

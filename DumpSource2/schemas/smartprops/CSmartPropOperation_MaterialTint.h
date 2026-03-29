@@ -19,7 +19,7 @@
 //}
 // MPropertyFriendlyName = "Material Color Tint"
 // MPropertyDescription = "Set a color tint to apply to a specific material."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Color"
 class CSmartPropOperation_MaterialTint : public CSmartPropOperation
 {
 	// MPropertyAttributeEditor = "SmartPropAttributeEditor(MaterialInSmartProp)"

@@ -24,7 +24,7 @@
 //}
 // MPropertyFriendlyName = "Create Sizer"
 // MPropertyDescription = "Create a sizer that will be displayed at the current location, allowing the user to manipulate the specified set of size values."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Manipulators"
 class CSmartPropOperation_CreateSizer : public CSmartPropTransformOperation
 {
 	// MPropertyFriendlyName = "Name"

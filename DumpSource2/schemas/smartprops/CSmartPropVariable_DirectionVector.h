@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Direction Vector"
 // MPropertyDescription = "Specifies a basis direction vector ( Forward, Left, or UP)."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Enumerator Types"
 class CSmartPropVariable_DirectionVector : public CSmartPropVariable
 {
 	SmartPropDirection_t m_DefaultValue;

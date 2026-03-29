@@ -127,9 +127,9 @@
 //	}
 //}
 // MVDataRoot
-// MVDataOutlinerDetailExpr (UNKNOWN FOR PARSER)
+// MVDataOutlinerDetailExpr = "name"
 // MVDataOverlayType = 1
-// MVDataPreviewWidget (UNKNOWN FOR PARSER)
+// MVDataPreviewWidget = "csgo_inv_image_preview"
 // MVDataHideNodeClass
 // MVDataOutlinerLeafNameFn (UNKNOWN FOR PARSER)
 // MVDataOutlinerLeafColorFn (UNKNOWN FOR PARSER)

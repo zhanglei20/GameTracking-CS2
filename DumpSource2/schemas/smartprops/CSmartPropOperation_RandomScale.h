@@ -7,7 +7,7 @@
 //}
 // MPropertyFriendlyName = "Transform: Random Scale"
 // MPropertyDescription = "Apply a random scale to the current transform."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Transform"
 class CSmartPropOperation_RandomScale : public CSmartPropTransformOperation
 {
 	// MPropertyDescription = "Minimum scale range"

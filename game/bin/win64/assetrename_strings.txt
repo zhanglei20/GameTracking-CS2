@@ -17156,7 +17156,6 @@ Compression Level
 Compression algorithm does not support random access
 Compression scheme %u %s decoding is not implemented
 Compression scheme %u %s encoding is not implemented
-Compute
 Compute AO
 Compute Dynamic Mesh Tension
 Compute Dynamic Smooth Normals
@@ -18031,7 +18030,6 @@ Entity: Unknown
 EntityName
 Entity_Facing_Mode_Use_Path
 EnumArray
-Enumerator Types
 Envelope in inches
 Eq R%d <- R%d == R%d
 Equal to
@@ -19568,7 +19566,6 @@ MakerNoteSafety
 Malformed fieldName in mesh: %s, bad semantic index %i\n
 Malformed fieldName in mesh: %s\n
 Managers
-Manipulators
 Manual
 Manual Facing Direction
 Manual Mode (Suppress smart-creation)
@@ -21597,7 +21594,6 @@ Start Target
 Start a timer with the specified duration, fire the OnInterval output 
 Start frame :: %d > End frame :: %d, will result in an empty animation
 StartDisabled
-State
 State Action
 State Machine Component
 State Machine has more than one start state
@@ -25483,7 +25479,6 @@ m_TestEnum
 m_Texcoords
 m_TintTable
 m_UserData
-m_VariableValue.m_TargetName
 m_WeakReferenceList
 m_allVars
 m_argIndexArray
@@ -26979,7 +26974,6 @@ small_terrain_vmap_3
 smartPropConfigurationHelper
 smartPropFilename
 smartPropPartSet
-smart_prop
 smartprop_print_timings
 smartprops
 smooth_by_distance

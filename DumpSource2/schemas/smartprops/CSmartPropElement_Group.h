@@ -19,6 +19,6 @@ class CSmartPropElement_Group : public CSmartPropElement
 {
 	// MPropertyFriendlyName = "Children"
 	// MPropertyDescription = "List of child elements which will appear if this element appears"
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 1
 	CUtlVector< CSmartPropElement* > m_Children;
 };

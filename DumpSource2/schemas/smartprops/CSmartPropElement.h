@@ -14,7 +14,7 @@
 // MVDataNodeType = 1
 // MVDataAnonymousNode
 // MPropertyFriendlyName = "Smart Prop Element"
-// MVDataOutlinerLabelExpr (UNKNOWN FOR PARSER)
+// MVDataOutlinerLabelExpr = "m_sLabel"
 class CSmartPropElement
 {
 	// MPropertySuppressField
@@ -28,9 +28,9 @@ class CSmartPropElement
 	// MPropertyDescription = "Optional text that will appear in the outliner to help organize Smart Prop elements and communicate their purpose to other users."
 	CUtlString m_sLabel;
 	// MPropertyFriendlyName = "Selection Criteria"
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 2
 	CUtlVector< CSmartPropSelectionCriteria* > m_SelectionCriteria;
 	// MPropertyFriendlyName = "Modifiers"
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 2
 	CUtlVector< CSmartPropModifier* > m_Modifiers;
 };

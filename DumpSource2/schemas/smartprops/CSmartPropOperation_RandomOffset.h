@@ -22,7 +22,7 @@
 //}
 // MPropertyFriendlyName = "Transform: Random Offset"
 // MPropertyDescription = "Apply a random position offset to the current transform."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Transform"
 class CSmartPropOperation_RandomOffset : public CSmartPropTransformOperation
 {
 	// MPropertyDescription = "Minimum random position offset"

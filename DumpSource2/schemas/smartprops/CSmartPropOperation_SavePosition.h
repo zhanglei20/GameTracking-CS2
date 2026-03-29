@@ -6,7 +6,7 @@
 //}
 // MPropertyFriendlyName = "Save Current Position"
 // MPropertyDescription = "Save the current position to a specified variable in the requested coordinate space"
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "State"
 class CSmartPropOperation_SavePosition : public CSmartPropOperation
 {
 	// MPropertyDescription = "Specifies the coordinate space of the saved position value."

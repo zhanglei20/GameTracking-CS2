@@ -5,7 +5,7 @@
 //}
 // MPropertyFriendlyName = "Save Current Scale"
 // MPropertyDescription = "Save the current scale factor to a specified variable."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "State"
 class CSmartPropOperation_SaveScale : public CSmartPropOperation
 {
 	// MPropertyAttributeEditor = "SmartPropItemNameEditor( Variable:Float )"

@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Tint Color Choice"
 // MPropertyDescription = "Set the color tint to one color out of a pre-selected set of colors."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Color"
 class CSmartPropOperation_SetTintColor : public CSmartPropOperation
 {
 	// MPropertyFriendlyName = "Selection Mode"

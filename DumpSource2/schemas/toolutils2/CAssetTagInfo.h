@@ -25,7 +25,7 @@
 //	}
 //}
 // MVDataRoot
-// MVDataOutlinerDetailExpr (UNKNOWN FOR PARSER)
+// MVDataOutlinerDetailExpr = "m_TagName"
 // MVDataOutlinerIconExpr = "m_TagIcon"
 class CAssetTagInfo
 {

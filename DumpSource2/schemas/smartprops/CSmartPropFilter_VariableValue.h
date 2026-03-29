@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Filter: Variable Value"
 // MPropertyDescription = "Compares the current value of a variable to the specified value. If the comparison is false the element evaluation is stopped."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Filter"
 class CSmartPropFilter_VariableValue : public CSmartPropFilter
 {
 	CSmartPropVariableComparison m_VariableComparison;
