@@ -10,7 +10,7 @@
 //}
 // MVDataRoot
 // MVDataSingleton
-// MVDataPreviewWidget (UNKNOWN FOR PARSER)
+// MVDataPreviewWidget = "sheet_file_preview"
 // MVDataFileExtension = "mks"
 class CTextureSheetDoc
 {
@@ -20,6 +20,6 @@ class CTextureSheetDoc
 	bool m_bHasDecalParams;
 	// MPropertyAttributeEditor = "AssetBrowse( mks )"
 	CUtlString m_sLayoutOwnerSheet;
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 1
 	CUtlStringMap< CTextureSheetDoc_Sequence* > m_Sequences;
 };

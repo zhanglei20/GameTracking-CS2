@@ -12,6 +12,6 @@ class CDetailPropType
 {
 	// MPropertyDescription = "Specifies the number of props placed per square foot."
 	float32 m_flDensity;
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 1
 	CUtlVector< CDetailPropModel > m_Models;
 };

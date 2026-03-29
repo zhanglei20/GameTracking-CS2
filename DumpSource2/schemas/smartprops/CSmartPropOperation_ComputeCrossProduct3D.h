@@ -17,7 +17,7 @@
 //}
 // MPropertyFriendlyName = "Cross Product"
 // MPropertyDescription = "Compute a dot or cross product between two 3D vectors"
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Compute"
 class CSmartPropOperation_ComputeCrossProduct3D : public CSmartPropOperation
 {
 	// MPropertyFriendlyName = "Output Variable"

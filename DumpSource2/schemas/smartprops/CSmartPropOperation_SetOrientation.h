@@ -19,7 +19,7 @@
 //}
 // MPropertyFriendlyName = "Transform: Set Orientation"
 // MPropertyDescription = "Set the current orientation from a specified forward and up vector."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Transform"
 class CSmartPropOperation_SetOrientation : public CSmartPropTransformOperation
 {
 	// MPropertyGroupName = "+Forward"

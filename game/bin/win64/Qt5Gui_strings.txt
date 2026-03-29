@@ -28381,7 +28381,6 @@ ComplementaryContent
 Composing and flushing
 Compressed format %d not mappable to GL compressed format
 Compressed texture cannot be used with image load/store
-Compute
 Condensed
 ConfidentCloud
 ConicalGradient
@@ -30884,7 +30883,6 @@ StandardKey
 StandardNotation
 Standby
 StarWine
-State
 State changed:
 Statement
 StaticText

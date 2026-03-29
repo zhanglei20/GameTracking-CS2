@@ -4,7 +4,7 @@
 //}
 // MPropertyFriendlyName = "Transform: Rigid Deformation"
 // MPropertyDescription = "Apply the active deformer to the current transform as a rigid deformation and disable the deformer."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Transform"
 // MVDataComponentRequiresAncestor (UNKNOWN FOR PARSER)
 class CSmartPropOperation_RigidDeformation : public CSmartPropTransformOperation
 {

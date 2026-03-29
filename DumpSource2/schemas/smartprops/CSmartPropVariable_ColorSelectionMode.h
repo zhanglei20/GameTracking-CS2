@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Color Selection mode"
 // MPropertyDescription = "Specifies the method by which a color selection is to be made."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Enumerator Types"
 class CSmartPropVariable_ColorSelectionMode : public CSmartPropVariable
 {
 	SmartPropColorSelectionMode_t m_DefaultValue;

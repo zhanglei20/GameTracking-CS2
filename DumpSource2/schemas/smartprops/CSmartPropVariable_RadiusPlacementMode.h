@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Placement Shape"
 // MPropertyDescription = "Specifies the shape (circle, or sphere) to use with elements that place children within a radius."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Enumerator Types"
 class CSmartPropVariable_RadiusPlacementMode : public CSmartPropVariable
 {
 	SmartPropRadiusPlacementMode_t m_DefaultValue;

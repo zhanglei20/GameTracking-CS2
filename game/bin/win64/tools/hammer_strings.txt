@@ -22090,7 +22090,6 @@ Compression Level
 Compression algorithm does not support random access
 Compression scheme %u %s decoding is not implemented
 Compression scheme %u %s encoding is not implemented
-Compute
 Compute AO
 Compute Baked Shadow Slots
 Compute Dynamic Mesh Tension
@@ -23982,7 +23981,6 @@ EntityOutputWidget
 EntityReportDialog
 EnumArray
 EnumWindows
-Enumerator Types
 Envelope in inches
 EnvironmentMaps
 EovVY
@@ -26708,7 +26706,6 @@ ManipulationModeScale
 ManipulationModeSelection
 ManipulationModeTranslate
 Manipulator
-Manipulators
 Manual
 Manual Mode (Suppress smart-creation)
 Map "%s" contains stale vertex paint data, open Blending Painting Tool [%s] to see issues
@@ -31928,7 +31925,6 @@ StartSendingCameraTo
 StartU
 StartV
 Starting Control Point
-State
 Static Only
 Static Only Tolerance
 Static Overlay
@@ -39851,7 +39847,6 @@ m_TestEnum
 m_Texcoords
 m_TintTable
 m_UserData
-m_VariableValue.m_TargetName
 m_WeakReferenceList
 m_attachments
 m_bAlpha
@@ -42743,7 +42738,6 @@ small
 smartPropConfigurationHelper
 smartPropFilename
 smartPropPartSet
-smart_prop
 smartprop_print_timings
 smartprops
 smime text error

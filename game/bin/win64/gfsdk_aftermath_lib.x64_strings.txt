@@ -1438,7 +1438,6 @@ CompositeConstructContinuedINTEL
 CompositeConstructReplicateEXT
 CompositeExtract
 CompositeInsert
-Compute
 ComputeAssembler
 ComputeDerivativeGroupLinearKHR
 ComputeDerivativeGroupLinearNV

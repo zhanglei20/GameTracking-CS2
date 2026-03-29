@@ -15,11 +15,11 @@
 //	],
 //	"m_hPulseGraph": ""
 //}
-// MSmartPropClassVersion (UNKNOWN FOR PARSER)
+// MSmartPropClassVersion = 0
 // MVDataRoot
 // MVDataSingleton
 // MVDataFileExtension = "vsmart"
-// MVDataPreviewWidget (UNKNOWN FOR PARSER)
+// MVDataPreviewWidget = "smart_prop"
 // MVDataGroupNodeClass (UNKNOWN FOR PARSER)
 // MVDataUsesComponentEditor
 // MPropertyFriendlyName = "Smart Prop Root"
@@ -31,16 +31,16 @@ class CSmartPropRoot
 	// MPropertyDescription = "Maximum depth of smart prop evaluation stack during evaluation."
 	CSmartPropAttributeInt m_nMaxDepth;
 	// MPropertyFriendlyName = "Variables"
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 2
 	CUtlVector< CSmartPropVariable* > m_Variables;
 	// MPropertyFriendlyName = "Choices"
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 2
 	CUtlVector< CSmartPropChoice* > m_Choices;
 	// MPropertyDescription = "List of the root level elements making up the smart prop definition, each element may be an entire tree."
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 1
 	CUtlVector< CSmartPropElement* > m_Children;
 	// MPropertyFriendlyName = "Modifiers"
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 2
 	CUtlVector< CSmartPropModifier* > m_Modifiers;
 	// MPropertySuppressExpr = "!__IsSmartPropPulseActive"
 	CStrongHandle< InfoForResourceTypeIPulseGraphDef > m_hPulseGraph;

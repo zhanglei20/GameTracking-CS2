@@ -3106,7 +3106,6 @@ Sqr Int
 Sqrt
 Square root
 Start a timer with the specified duration, fire the OnInterval output 
-State
 State Machine Component
 StateMachineNode
 Steps Remaining

@@ -22,7 +22,7 @@
 //}
 // MPropertyFriendlyName = "Transform: Random Rotation"
 // MPropertyDescription = "Apply a random rotation to the current transform."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Transform"
 class CSmartPropOperation_RandomRotation : public CSmartPropTransformOperation
 {
 	// MPropertyDescription = "Minimum rotation range"

@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Grid Placement"
 // MPropertyDescription = "Specifies how to place elements within a grid."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Enumerator Types"
 class CSmartPropVariable_GridPlacementMode : public CSmartPropVariable
 {
 	SmartPropGridPlacementMode_t m_DefaultValue;

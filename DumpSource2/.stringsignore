@@ -4424,6 +4424,7 @@ Compress the dynamic range of both ends of a signal.
 Compression Format
 Compression Ratio
 Compression Threshold(dB)
+Compute
 Compute LOD mask internally like since 2016, i.e. force all LOD groups' bones to compute
 Compute a dot or cross product between two 3D vectors
 Compute the distance between two 3D points
@@ -5446,6 +5447,7 @@ EntryOverrideTree
 Enum
 Enum Parameter
 EnumParameter
+Enumerator Types
 Envelope
 Envelope (Relative to Tone Envelope)
 Envelope Analyzer
@@ -7607,6 +7609,7 @@ Makes ropes use average of cubemap lighting instead of max intensity.
 Makes the debug overlay dashboard visible.
 Makes the server always play footstep sounds. Clients never calculate footstep sounds locally, instead relying on the server.
 ManifestTestResource_t
+Manipulators
 Manual Direction
 Manual Position
 Manual Snapshot Index
@@ -11263,6 +11266,7 @@ Starts live debugging & recording the AG2 graph for a given entity\n\tArguments:
 Starts the specified arrangement.
 Starts timedemo on given tick.
 Starts/stops a timespan with an ever increasing name.
+State
 State Machine
 State Status Condition
 StateActionBehavior
@@ -14311,6 +14315,7 @@ csgo_download_match
 csgo_econ_action_preview
 csgo_fatdemo_enable
 csgo_fatdemo_output
+csgo_inv_image_preview
 csgo_map_preview_scale
 csgo_nav_jump_link_detour_threshold
 csgo_use_fullsort_for_opaque
@@ -17171,6 +17176,7 @@ m_VariableComparison
 m_VariableName
 m_VariableNames
 m_VariableValue
+m_VariableValue.m_TargetName
 m_VariableValues
 m_Variables
 m_Vars
@@ -28897,6 +28903,7 @@ shatterglass_hit_tolerance
 shatterglass_restore
 shatterglass_shard_lifetime
 sheet animation time scale
+sheet_file_preview
 should bots ignore their prefered weapons and just buy weapons at random?
 show NPC's current conditions
 show abs bounding box overlay
@@ -28984,6 +28991,7 @@ slot6
 slot7
 slot8
 slot9
+smart_prop
 smartprop_choice_options
 smoke_grenade_ct_color
 smoke_grenade_t_color

@@ -11,7 +11,7 @@
 //}
 // MPropertyFriendlyName = "Transform: Translate"
 // MPropertyDescription = "Apply a position offset to the current transform."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Transform"
 class CSmartPropOperation_Translate : public CSmartPropTransformOperation
 {
 	// MPropertyDescription = "Local space position translation to apply to the current transform"

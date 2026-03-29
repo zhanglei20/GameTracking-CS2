@@ -20384,7 +20384,6 @@ Starting Freeze period\n
 StartingAnim
 StartingAnimationLoopMode
 Stat
-State
 State: %s
 Statement obsolete - removing.\n
 Steady view = %s

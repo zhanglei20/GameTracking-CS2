@@ -5,7 +5,7 @@
 //}
 // MPropertyFriendlyName = "Save Current Color"
 // MPropertyDescription = "Save the current color tint value to a specified variable"
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "State"
 class CSmartPropOperation_SaveColor : public CSmartPropOperation
 {
 	// MPropertyAttributeEditor = "SmartPropItemNameEditor( Variable:Color )"

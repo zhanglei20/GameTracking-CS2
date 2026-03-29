@@ -15820,7 +15820,6 @@ StackingOrder
 StandardButton
 StandardButtons
 StandardPixmap
-State
 StateFlag
 State_Active
 State_AutoRaise

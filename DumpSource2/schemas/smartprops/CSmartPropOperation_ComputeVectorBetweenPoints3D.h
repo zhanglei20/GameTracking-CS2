@@ -21,7 +21,7 @@
 //}
 // MPropertyFriendlyName = "Vector Between Points"
 // MPropertyDescription = "Compute the vector between two 3D points"
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Compute"
 class CSmartPropOperation_ComputeVectorBetweenPoints3D : public CSmartPropOperation
 {
 	// MPropertyFriendlyName = "Output Variable"

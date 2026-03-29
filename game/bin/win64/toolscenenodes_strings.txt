@@ -6619,7 +6619,6 @@ Compression
 Compression algorithm does not support random access
 Compression scheme %u %s decoding is not implemented
 Compression scheme %u %s encoding is not implemented
-Compute
 ComputeShaderSkinning
 ComputeTilesForModelInstances
 Computes 2 ( 2.71...) raised to a power
@@ -7596,7 +7595,6 @@ Entity: %s
 Entity: Unknown
 EntityName
 EnumArray
-Enumerator Types
 EovVY
 Ep0u
 Eq R%d <- R%d == R%d
@@ -8721,7 +8719,6 @@ MakerNoteSafety
 Malformed fieldName in mesh: %s, bad semantic index %i\n
 Malformed fieldName in mesh: %s\n
 Management
-Manipulators
 Map File
 Map Type
 MapAtom
@@ -10509,7 +10506,6 @@ Start Fade Dist
 Start Target
 Start a timer with the specified duration, fire the OnInterval output 
 StartDisabled
-State
 Static Overlay
 Static Overlay %s
 Steam Audio Data
@@ -14664,7 +14660,6 @@ m_Streams
 m_TagValue
 m_Texcoords
 m_TintTable
-m_VariableValue.m_TargetName
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
 m_bChildCursorsShouldInherit
@@ -16509,7 +16504,6 @@ small
 smartPropConfigurationHelper
 smartPropFilename
 smartPropPartSet
-smart_prop
 smartprop_print_timings
 smartprops
 smime text error

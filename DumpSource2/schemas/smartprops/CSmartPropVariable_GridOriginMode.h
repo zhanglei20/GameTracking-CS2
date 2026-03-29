@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Grid Origin"
 // MPropertyDescription = "Specifies where the origin of a child element is placed realative to each grid cell."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Enumerator Types"
 class CSmartPropVariable_GridOriginMode : public CSmartPropVariable
 {
 	SmartPropGridOriginBasis_t m_DefaultValue;

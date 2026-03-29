@@ -37,7 +37,7 @@
 //}
 // MPropertyFriendlyName = "Transform: Trace To Line"
 // MPropertyDescription = "Perform a trace from a specified origin point to a the closest point on a line."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Transform"
 // MVDataExperimentalNodeSet (UNKNOWN FOR PARSER)
 class CSmartPropOperation_TraceToLine : public CSmartPropOperation_Trace
 {

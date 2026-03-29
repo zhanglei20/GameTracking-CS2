@@ -20,7 +20,7 @@
 //}
 // MPropertyFriendlyName = "Distance"
 // MPropertyDescription = "Compute the distance between two 3D points"
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Compute"
 class CSmartPropOperation_ComputeDistance3D : public CSmartPropOperation
 {
 	// MPropertyFriendlyName = "Output Variable"

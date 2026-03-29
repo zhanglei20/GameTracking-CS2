@@ -6,7 +6,7 @@
 //}
 // MPropertyFriendlyName = "Save Current Surface Normal"
 // MPropertyDescription = "Save the current surface normal to a specified variable in the requested coordinate space"
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "State"
 class CSmartPropOperation_SaveSurfaceNormal : public CSmartPropOperation
 {
 	// MPropertyDescription = "Specifies the coordinate space of the saved position value."

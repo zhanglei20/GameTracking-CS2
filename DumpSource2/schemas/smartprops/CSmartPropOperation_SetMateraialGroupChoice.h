@@ -10,7 +10,7 @@
 //}
 // MPropertyFriendlyName = "Set Material Group Choice"
 // MPropertyDescription = "Picks a material group from a set of choices and assigns that material group to a specified variable."
-// MVDataClassGroup (UNKNOWN FOR PARSER)
+// MVDataClassGroup = "Material"
 class CSmartPropOperation_SetMateraialGroupChoice : public CSmartPropOperation
 {
 	// MPropertyDescription = "Material group variable to set to the selected choice."
