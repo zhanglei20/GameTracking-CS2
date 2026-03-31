@@ -10488,7 +10488,7 @@ sv_sniper_tracer_mode 1 (developmentonly gamedll clientdll replicated defensive)
 sv_spawn_afk_bomb_drop_time 15 (gamedll replicated release)
 	Players that have never moved since they spawned will drop the bomb after this amount of time.
 
-sv_spec_hear 1 (gamedll clientdll notify replicated release)
+sv_spec_hear 3 (gamedll clientdll notify replicated release)
 	Determines who spectators can hear: 0: only spectators; 1: all players; 2: spectated team; 3: self only; 4: nobody
 
 sv_spec_use_tournament_content_standards false (gamedll clientdll replicated release)

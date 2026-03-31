@@ -105,6 +105,12 @@
 "lbN.
 "qVS
 "zbe
+#CSGO_Workshop_EventTags
+#CSGO_Workshop_Event_arabesque
+#CSGO_Workshop_Event_auto_racing
+#CSGO_Workshop_Event_fruit_veg
+#CSGO_Workshop_Event_none
+#CSGO_Workshop_Event_spy_tech
 #CSGO_Workshop_GameModeTags
 #CSGO_Workshop_Mode_armsrace
 #CSGO_Workshop_Mode_classic
@@ -1622,6 +1628,7 @@ $hRh
 ?setGeometry@QBoxLayout@@UEAAXAEBVQRect@@@Z
 ?setGeometry@QFormLayout@@UEAAXAEBVQRect@@@Z
 ?setHeaderData@QAbstractItemModel@@UEAA_NHW4Orientation@Qt@@AEBVQVariant@@H@Z
+?setHidden@QWidget@@QEAAX_N@Z
 ?setHorizontalHeaderLabels@QTableWidget@@QEAAXAEBVQStringList@@@Z
 ?setIcon@QAbstractButton@@QEAAXAEBVQIcon@@@Z
 ?setIconText@QAction@@QEAAXAEBVQString@@@Z
@@ -1988,6 +1995,7 @@ An error occurred while retrieving file information.\nSome files will not be sho
 Any Extended Key Usage
 Any Purpose
 Any language
+Arabesque Art & Arabian Mythology
 Arg list too long
 Armsrace
 AssertFatalCast
@@ -1996,6 +2004,7 @@ Asset Pack
 Assets
 Attempting to load signing keys.\n
 Authority Information Access
+Auto Racing
 Av $1
 B!rA
 B#B)B/BCBSBUB[BaBsB}B
@@ -2397,6 +2406,7 @@ Certificate:\n
 Cessation Of Operation
 ChGg
 Char=
+Charm
 Chunk hash not found.
 ChunkHashFraction_t
 ChunkHashFraction_t::GetPackFileNumber
@@ -3041,6 +3051,7 @@ Five-SeveN
 FlushConsoleInputBuffer
 Fm{#t
 Fop]
+Fruits & Vegetables
 Function not implemented
 F|w)a]c
 G0Tv~:
@@ -4255,9 +4266,11 @@ Signed.\n
 Signing keys are set, will attempt to sign vpk.\n
 Sn^G
 SortKey_t
+Spy Tech
 Sr89[
 Stack part of OpenSSL 1.0.2j  26 Sep 2016
 Start item update (AppID: %u UpdateHandle: %llx PublishFileID: %llu).\n
+Sticker
 Strong Extranet ID
 Subject Information Access
 Suite B: cannot sign P-384 with P-256
