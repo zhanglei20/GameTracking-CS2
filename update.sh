@@ -11,10 +11,8 @@ set +e
 DUMPER_EXIT_CODE=$?
 set -e
 
-ProcessDepot ".dll"
-ProcessDepot ".exe"
-DeduplicateStringsFrom ".dll" "game/bin/win64/engine2_strings.txt" "game/bin/win64/tier0_strings.txt" "DumpSource2/.stringsignore"
-DeduplicateStringsFrom ".exe" "game/bin/win64/engine2_strings.txt" "game/bin/win64/tier0_strings.txt" "DumpSource2/.stringsignore"
+ProcessDepot ".dll" ".exe"
+DeduplicateStringsFrom ".dll" ".exe" -- "game/bin/win64/engine2_strings.txt" "game/bin/win64/tier0_strings.txt" "DumpSource2/.stringsignore"
 ProcessVPK
 
 echo "::group::Extracting VPKs"
