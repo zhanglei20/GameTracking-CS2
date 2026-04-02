@@ -11136,6 +11136,9 @@ ui_nearbylobbies_filter3 "competitive" (clientdll archive release)
 ui_news_last_read_link "" (clientdll archive release)
 	<no description>
 
+ui_news_last_read_link2 "" (clientdll archive release)
+	<no description>
+
 ui_notification_tb_snooze "" (clientdll archive release)
 	<no description>
 

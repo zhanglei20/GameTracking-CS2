@@ -1,22 +1,11 @@
-                          
    %c=%d ~%d%%
    - too many errors; aborting.
   -leaktest    : Stop processing the map if a leak is detected. Whether or not\n                 this flag is set, a leak file will be written out at\n                 <vmf filename>.lin, and it can be imported into Hammer.\n  -bumpall     : Force all surfaces to be bump mapped.\n  -snapaxial   : Snap axial planes to integer coordinates.\n  -block # #      : Control the grid size mins that vbsp chops the level on.\n  -blocks # # # # : Enter the mins and maxs for the grid size vbsp uses.\n  -blocksize #    : Control the size of each grid square that vbsp chops the level on.  Default is 1024.  -dumpstaticprops: Dump static props to staticprop*.txt\n  -dumpcollide    : Write files with collision info.\n  -forceskyvis\t   : Enable vis calculations in 3d skybox leaves\n  -luxelscale #   : Scale all lightmaps by this amount (default: 1.0).\n  -minluxelscale #: No luxel scale will be lower than this amount (default: 1.0).\n  -maxluxelscale #: No luxel scale will be higher than this amount (default: 999999.0).\n  -lightifmissing : Force lightmaps to be generated for all surfaces even if\n                    they don't need lightmaps.\n  -keepstalezip   : Keep the BSP's zip files intact but regenerate everything\n                    else.\n  -virtualdispphysics : Use virtual (not precomputed) displacement collision\n\t\t\t\t\t\t models\n  -visgranularity # # # : Force visibility splits # of units along X, Y, Z\n  -xbox\t\t: Enable mandatory xbox options\n  -x360\t\t: Generate Xbox360 version of vsp\n  -nox360\t\t: Disable generation Xbox360 version of vsp (default)\n  -replacematerials : Substitute materials according to materialsub.txt in\n\t\t\t\t\t   content\maps\n  -FullMinidumps\t: Write large minidumps on crash.\n
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
- !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  BFreeWinding: freed a freed winding
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
  ReadToken overflow
- Type Descriptor'
  ] angle[
  ] scale[
  concave 
- delete
- delete[]
- new
 !!! WARNING: Can't build collision data!\n
 !!! WARNING: Can't swap the physcollide lump!\n
 !GnA
@@ -25,10 +14,6 @@
 ############### block %2i,%2i ###############\n
 ############### model %i ###############\n
 #D5p
-#base
-#base is NULL 
-#include
-#include is NULL 
 $BASETEXTURENOENVMAP
 $appendsource "%s" 
 $basetexture2
@@ -124,7 +109,6 @@ $waterdepth
 %compileWater
 %compiledroneclip
 %compilegrenadeclip
-%d %d %d %d
 %d clusters of group "%s",\taverage %.1f models\n
 %d hour%s, %d minute%s, %d second%s
 %d minute%s, %d second%s
@@ -132,7 +116,6 @@ $waterdepth
 %d unique static props used in map\n
 %d_%d_%d_%d_%d.tmp
 %detailtype
-%f %f %f %f
 %f %f %f %f %f
 %hotSurface
 %i %i %i %i
@@ -140,7 +123,6 @@ $waterdepth
 %i unique from %i\n
 %lf %lf
 %lf %lf %lf
-%lld
 %noPaint
 %noPortal
 %playerClip
@@ -171,12 +153,10 @@ $waterdepth
 %smaterials
 %stemp%d
 &2@UUUUUU
-&Sgw
 '%s' is not a valid variable type
 ( 8PX
 (%f %f %f) (%f %f %f) (%f %f %f)
 (%f, %f, %f)
-(null)
 )2STud>
 ** Encountered stale cubemap! Please rebuild the following vtf:\n
 *** Encountered VTF file with an invalid full header!\n
@@ -283,7 +263,6 @@ $waterdepth
 -xbox
 -xlsp
 ../platform
-.00cfg
 .?AUbase_vector_t@@
 .?AV?$CCopyableUtlVector@G@@
 .?AV?$CCopyableUtlVector@H@@
@@ -320,93 +299,38 @@ $waterdepth
 .?AVCPhysCollisionEntryStaticMesh@@
 .?AVCPhysCollisionEntryStaticSolid@@
 .?AVCSyncMesh_SaveLoadHandler@@
-.?AVCUtlCStringConversion@@
-.?AVCUtlCharConversion@@
-.?AVCUtlNoEscConversion@@
 .?AVCVTFTexture@@
 .?AVCVmfMeshDataSupport_SaveLoadHandler@@
 .?AVCZip@@
 .?AVConCommandBase@@
 .?AVConVar@@
 .?AVIConVar@@
-.?AVILoggingListener@@
 .?AVIMapDataFilesMgr@@
 .?AVIMapEntitySaveLoadHandler@@
-.?AVIRefCounted@@
 .?AVIVTFTexture@@
 .?AVIVirtualMeshEvent@@
 .?AVIZip@@
 .?AVIZipWriteStream@@
-.?AVtype_info@@
-.CRT$XCA
 .CRT$XCAA
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
 .CRT$XIAA
 .CRT$XIAC
-.CRT$XIC
-.CRT$XIZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bat
-.bsp
-.bss
-.cmd
-.com
-.data
-.data$r
-.dll
 .dmx
 .dx90.vtx
-.edata
-.exe
 .fbx
 .gfids$x
 .gfids$y
 .hdr.vtf
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
 .mdl
 .phy
-.rdata
-.rdata$r
-.rdata$zzzdbg
-.rsrc$01
-.rsrc$02
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
 .smd
 .ss2
-.text
-.text$di
-.text$mn
-.text$yd
 .vmf
 .vmm
 .vtf
 .vvd
-.xdata$x
 /../platform
-/content/
-/game/
 /tmp
-0 0 0
 0vB-
-0x%016llX
-1#IND
-1#INF
-1#QNAN
-1#SNAN
 1000
 2000
 2ieO=
@@ -415,7 +339,6 @@ $waterdepth
 5DKB
 5xT~
 700WP
-9a&g
 :Esp
 :s6X
 ;symsrv*symsrv.dll*\\perforce\symbols
@@ -423,22 +346,18 @@ $waterdepth
 <@En[vP
 <NO BRUSH>
 <no name>
-=87M
 >Xzv
 >o3fW
 ?*hiR
 ?1mm
-?333333
 ?3ScR.>
 ?3xj
 ?40V
 ?5Wg4p
 ?5a1
 ?7Tf(
-?8bunz8
 ?93l
 ??0CUniformRandomStream@@QAE@XZ
-?@En[vP
 ?AFxD
 ?DevMsg@@YAXPBDZZ
 ?DevWarning@@YAXPBDZZ
@@ -459,7 +378,6 @@ $waterdepth
 ?SpinLockForWrite@CThreadSpinRWLock@@QAEXXZ
 ?T5cd'j
 ?Tu7R
-?UUUUUU
 ?X&eB
 ?X1U
 ?c3y
@@ -474,12 +392,6 @@ $waterdepth
 ?u1P
 ?uZEeu
 @VNQ
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-ABGR8888
-ADVAPI32.dll
-ARGB8888
-ATI1N
-ATI2N
 AYl=
 A]?VJ
 AddPortalToNode: allready included
@@ -487,25 +399,15 @@ Ai0T
 AiFC.
 Alignment
 AllMaps
-Angles
-April
-AreFileApisANSI
 Areaportal leak ! File: %s 
 Arg list too long
-August
 Auto-created %d static prop combine rules (covering %d static prop instances) based on static prop and material usage.\n
 AutoLoginUser
 AutoVisClustering (threshold=%d) matched %d leafs.\n
 B(knNunexpected end of file
-BGR565
-BGR888
 BGR888_BLUESCREEN
-BGRA1010102
-BGRA4444
 BGRA5551
-BGRA8888
 BGRX5551
-BGRX8888
 BGenerateRepresentativePalette: not implemented
 BSPHeader_t
 BackgroundBModel
@@ -538,7 +440,6 @@ Brush %i: origin brushes not allowed in world
 Building Faces...
 Building Physics collision data...\n
 Building visibility clusters...\n
-BuiltDebug
 CCUtlBlockMemory overflow!\n
 CDispCornerNeighbors
 CDispMultiBlend
@@ -548,7 +449,6 @@ CDispTri
 CDispVert
 CFaceMacroTextureInfo
 CKeyValuesTokenReader::SeekBackOneToken: It is only possible to seek back one token at a time
-CONTENT
 CONTENTS_AREAPORTAL 
 CONTENTS_AUX 
 CONTENTS_BLOCKLIGHT 
@@ -572,11 +472,7 @@ CONTENTS_TESTFOGVOLUME
 CONTENTS_TRANSLUCENT 
 CONTENTS_WATER 
 CONTENTS_WINDOW 
-CSOAContainer::SetAttributeType - ERROR, trying to change type of previously-defined attribute %d!\n
-CTSListBase: Misaligned list\n
-CTSQueue: Misaligned queue\n
 CUtlBuffer::VaPrintf: String overflowed buffer [%d]\n
-CUtlLinkedList overflow! (exhausted index range)\n
 CUtlLinkedList overflow! (exhausted memory allocator)\n
 CUtlRBTree overflow!\n
 Can't compile displacement physics, exiting.  Texture is %s\n
@@ -596,7 +492,6 @@ Chop Details...
 CkeyValuesTokenReader::SeekBackOneToken: No tokens read yet
 ClipWinding: MAX_POINTS_ON_WINDING
 ClipWinding: points exceeded estimate
-CloseHandle
 Cluster models built: %i\n\n
 CmdLib_FPrintf: can't allocate space for text.
 CmdLib_InitFileSystem failed.
@@ -604,14 +499,9 @@ Cnode->faces seperating CONTENTS_SOLID
 Combine group has zero members!\n
 Command Line found: %s\n
 Command line: 
-CommandLine
 Compacting texture/material tables...\n
-CompareStringEx
-CompareStringW
 CompressedLightCube
 ConVar(%s) defined with infinite float value (%s)\n
-Conditional Error: %s\n
-CorExitProcess
 Could not find factory interface in library MaterialSystem.dll
 Could not get the material system interface from materialsystem.dll (..\common\utilmatlib.cpp)
 Could not locate 'GameData' key in %s\n
@@ -622,45 +512,21 @@ Could not start the empty shader (shaderapiempty.dll)!
 Couldn't allocate KeyValues for %s!!!
 Couldn't load the temp qc from: %s!\n
 Couldn't open %s
-Couldn't open %s\n
 Couldn't write a temp qc to: %s!\n
 CqTR;
-CreateFileA
-CreateFileMappingA
-CreateFileW
-CreateInterface
-CreateProcessA
-CreateSimpleThread
-CreateThread
 CutNodePortals_r: mislinked portal
 D15S1
-D16_SHADOW
-D24FS8
-D24S8
 D24X4S4
-D24X8
-D24X8_SHADOW
-DEFAULT_WRITE_PATH
-DEMO
-DXT1
-DXT1_ONEBITALPHA
 DXT1_RUNTIME
-DXT3
 DXT3_RUNTIME
-DXT5
 DXT5_RUNTIME
 DataOffset
-December
-DecodePointer
-DeleteCriticalSection
 DeleteFileA
-DeleteFileW
 Depth must be 1 for cubemaps!\n
 DetailObjectDictLump_t
 DetailObjectLump_t
 DetailPropLightstylesLump_t
 DetailSpriteDictLump_t
-Developer
 Directory not empty
 DirectoryEntries
 DiskPhysics2LevelMesh_t
@@ -671,18 +537,15 @@ Domain error
 Don't know how to combine model: %s!\n
 Dumping collision models to collideXXX.txt\n
 Dumping static props to staticpropXXX.txt\n
-EXECUTABLE_PATH
 Eb2]A=
 Edge with too many vertices due to t-junctions.  Max %d verts along an edge!\n
 Enabled vis in 3d skybox\n
 Encountered obsolete static prop option to do its fade in screen space @ %.2f %.2f %.2f\n
 EndU
 EndV
-EnterCriticalSection
 Entities accounting error while enforcing visibility granularity!\n
 Entity %i: func_areaportal can only be a single brush
 Entity %s (%.2f %.2f %.2f) leaked!\n
-Error
 Error Vertex File %s checksum %d should be %d\n
 Error Vertex File %s id %d should be %d\n
 Error Vertex File %s version %d should be %d\n
@@ -701,19 +564,15 @@ Error! Too many detail props emitted on this map!\n
 Error! Too many detail props on this map. %d were not emitted!\n
 Error: displacement found on a(n) %s entity - not supported (entity %d, brush %d)\n
 Exec format error
-ExitProcess
 F0$?3=1
 F:\p4\csgo\trunk\src\public\tier0/tslist.h
 F:\p4\csgo\trunk\src\utils\vbsp\Release\vbsp.pdb
 F=J4
 F?cf
-FEMh\f
 Failed to bspzip autogenerated model into the map: %s!\n
 Failed to load KeyValues file!\n
 Failed to parse static prop combine rule group: "%s"\n
 Failed while compiling: %s!\n
-February
-File
 File %s, line %d: 
 File exists
 File path: %s
@@ -721,14 +580,12 @@ File read failure
 File too large
 File write failure
 FileHeader_t
-FileSystem
 FileSystem_AddLoadedSearchPath - Can't resolve pathname for '%s'
 FileSystem_GetBaseDir failed.
 FileSystem_GetExecutableDir failed.
 FileSystem_LoadSearchPaths: Invalid parameters specified.
 Filename too long
 Find Visible Detail Sides...
-FindClose
 FindFirstFileExA
 FindNextFileA
 FindOrCreateTexInfo:  Tried to create new texinfo during -onlyents compile!\nMust compile without -onlyents
@@ -737,78 +594,27 @@ Finding displacement neighbors...\n
 Finding lightmap sample positions...\n
 FixTjuncs...\n
 FloatPlane: bad normal
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 FmtStrVSNPrintf truncated to %d without QUIET_TRUNCATION specified!\n
 Found a displacement edge abutting multiple other edges.\n
 Found no matching plane for %s\n
-FreeEnvironmentStringsW
-FreeLibrary
-Friday
 Function not implemented
 G&iC
 G8D>
-GAME
-GAMEBIN
-GAMECONSOLE
 GFile has not been opened!\n
 GYM=
 GameData
-General
 Generated env_cubemap patch name : %s too long! (max = %d)\n
 Generated worldvertextransition patch name : %s too long! (max = %d)\n
-GetACP
-GetCPInfo
-GetCPUInformation
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetConsoleScreenBufferInfo
-GetCurrentDirectoryA
-GetCurrentDirectoryW
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetDriveTypeW
-GetEnvironmentStringsW
-GetEnvironmentVariableA
-GetExitCodeProcess
 GetFileAttributesA
-GetFileAttributesExW
-GetFileType
 GetFullPathNameA
-GetLastError
-GetLocalTime
-GetModuleFileNameA
-GetModuleHandleA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemInfo
-GetSystemTimeAsFileTime
-GetTempPathW
-GetThreadedLoadLibraryFunc
-GetUserNameA
 Gin>
-HH:mm:ss
 Height and width must be equal for cubemaps!\n
 Ht=c
-IA88
 IDAG
 IDST
 IND)ind)S
 IND)ind)UUUUUU
-INITY
 INTZ
 IT=_9
 Illegal byte sequence
@@ -816,10 +622,6 @@ Image dimensions must be multiple of 4!\n
 Improper link
 Inappropriate I/O control operation
 Infinite recursion in patch file?\n
-InitializeCriticalSection
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
 Input/output error
 InstanceAuto%d
 InstancePath
@@ -829,24 +631,12 @@ Invalid arguments to "sprite" in detail.vbsp (model %s)!\n
 Invalid qc template path for group: %s!\n
 Invalid seek
 Is a directory
-IsDebuggerPresent
 IsPrimary
-IsProcessorFeaturePresent
 IsProtected
-IsValidCodePage
 J\;5yTb
-January
-July
 Jun 13 2023
-June
-KERNEL32.dll
-KV Conditional Evaluation Error
 KeyValues Error: %s in file %s line %d\n
-KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s\n
 KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.\n
-KeyValuesSystem
-LCMapStringEx
-LCMapStringW
 LE_BGRA8888
 LE_BGRX8888
 LINEAR_A8
@@ -856,7 +646,6 @@ LINEAR_BGR888
 LINEAR_BGRA8888
 LINEAR_BGRX5551
 LINEAR_BGRX8888
-LINEAR_D24S8
 LINEAR_DXT1
 LINEAR_DXT3
 LINEAR_DXT5
@@ -864,45 +653,29 @@ LINEAR_I8
 LINEAR_RGB888
 LINEAR_RGBA16161616
 LINEAR_RGBA8888
-LINUX
-LOG_GENERAL
 LOWVIOLENCE
 La8i
 Le?2
 Leaf 0 contents: %s\n
 Leaf 1 contents: %s\n
-LeaveCriticalSection
-Length
 LightmappedGeneric
 LoadFromBuffer: missing {
 LoadLibraryExA
-LoadLibraryExW
 Loading %s\n
 Loading Replacement Keys\n
-LocaleNameToLCID
-LoggingSystem_IsChannelEnabled
-LoggingSystem_Log
-LoggingSystem_PopLoggingState
-LoggingSystem_PushLoggingState
-LoggingSystem_RegisterLoggingChannel
-LoggingSystem_RegisterLoggingListener
 LoggingSystem_SetChannelSpewLevelByTag
 MAX_MAP_BRUSHSIDES
 MAX_MAP_NODES
 MAX_MAP_PLANES
 MAX_MAP_PORTALVERTS (probably a broken areaportal near %.1f %.1f %.1f 
-MGiI
-MM/dd/yy
 Map has too many texinfos (has %d, can have at most %d)\n
 Map is split into %d unique areas which is too many (max = %d)\nProbably too many areaportals
 Map revision %d\n
 Maps
-March
 Material %s is depending on itself through materialvar %s! Ignoring...\n
 Material %s uses unknown detail object type %s!\n
 Material not found!: %s\n
 MaterialReplacements
-MbP?
 MemAllocScratch
 MemFreeScratch
 Merging details...
@@ -912,17 +685,9 @@ Missing SteamAppId in %s\%s.
 MkK?
 Model %s claims to come from %s, but that qc actually produces %s\n
 Model %s in group %s cannot be defined twice!\n
-Module %s is a debug build\n
-Monday
 Mpm<
-MultiByteToWideChar
 Multiple references for cubemap on texture %s!!!\n
-NAN(IND)
-NAN(SNAN)
 NODRAW on terrain surface!\n
-NULL
-NV_NULL
-Name
 No child processes
 No error
 No locks available
@@ -934,23 +699,17 @@ No such process
 Not a Parse error!
 Not a directory
 Not enough space
-November
 Nu?-HF
 Occluder "%s" straddles multiple areas. This is invalid!\n
-October
 OnProxyRelay
 Operation not permitted
-Origin
 Other options  :\n  -novconfig   : Don't bring up graphical UI on vproject errors.\n  -threads     : Control the number of threads vbsp uses (defaults to the # of\n                 processors on your machine).\n  -verboseentities: If -v is on, this disables verbose output for submodels.\n  -noweld      : Don't join face vertices together.\n  -nocsg       : Don't chop out intersecting brush areas.\n  -noshare     : Emit unique face edges instead of sharing them.\n  -notjunc     : Don't fixup t-junctions.\n  -noopt       : By default, vbsp removes the 'outer shell' of the map, which\n                 are all the faces you can't see because you can never get\n                 outside the map. -noopt disables this behaviour.\n  -noprune     : Don't prune neighboring solid nodes.\n  -nomerge     : Don't merge together chopped faces on nodes.\n  -nomergewater: Don't merge together chopped faces on water.\n  -nosubdiv    : Don't subdivide faces for lightmapping.\n  -micro <#>   : vbsp will warn when brushes are output with a volume less\n                 than this number (default: 1.0).\n  -fulldetail  : Mark all detail geometry as normal geometry (so all detail\n                 geometry will affect visibility).\n  -alldetail   : Convert all structural brushes to detail brushes, except\n                 func_brush entities whose names begin with structure_.\n
 Other textures
-OutputDebugStringA
 Overlay (%s) at %f %f %f has invalid render order (%d).\n
 Overlay Material Name (%s) > OVERLAY_MAP_STRLEN (%d)
 Overlay Material Name (%s) too long! > OVERLAY_MAP_STRLEN (%d)
 Overlay touching too many faces (touching %d, max %d)\nOverlay %s at %.1f %.1f %.1f
 OverlayID
-PLATFORM
-POSIX
 PRT1
 PSIDE_FACING with splits
 ParseDispInfoChunk: nummapdispinfo > MAX_MAP_DISPINFO
@@ -961,9 +720,6 @@ Picked prop2\n
 Picked prop3\n
 Picked prop4\n
 Placing detail props : 
-Plat_ExitProcess
-Plat_FloatTime
-Plat_IsInDebugSession
 Portal_EntityFlood: not a leaf
 PreloadDirectoryEntries
 Prepping bsp for s2 import!\n
@@ -974,46 +730,15 @@ Props combined away: %i\n
 PruneNodes...\n
 PruneNodes: node->brushlist
 QC path read failure: %s\n
-Qkkbal
-QueryPerformanceCounter
-R16F
-R32F
-RG1616F
-RG3232F
-RGB323232F
-RGB565
-RGB888
 RGB888_BLUESCREEN
-RGBA1010102
-RGBA16161616
-RGBA16161616F
-RGBA32323232F
-RGBX8888
 RSDS+
 R\vn>
-RaiseException
-RandomFloat
-RandomGaussianFloat
-RandomSeed
 Rd.F
 Read-only file system
-ReadConsoleInputA
-ReadConsoleW
-ReadFile
 Reading unknown lump #%d (%d bytes)\n
 Recursive ThreadLock\n
-RecursiveLoadFromBuffer:  got EOF instead of keyname
-RecursiveLoadFromBuffer:  got NULL key
-RecursiveLoadFromBuffer:  got conditional between key and value
-RecursiveLoadFromBuffer:  got empty keyname
-RecursiveLoadFromBuffer:  got } in key
-RecursiveLoadFromBuffer:  recursion overflow
 Reduced %d texdatas to %d (%d bytes to %d)\n
 Reduced %d texinfos to %d\n
-RegCloseKey
-RegOpenKeyExA
-RegQueryValueExA
-ReleaseThreadHandle
 RemovePortalFromNode: portal not bounding leaf
 RemovePortalFromNode: portal not in leaf
 RenderOrder
@@ -1021,28 +746,12 @@ Resource deadlock avoided
 Resource device
 Resource temporarily unavailable
 Result too large
-RtlUnwind
-SNAN)
-SSE and SSE2 are required.
 S\rYkv
-Saturday
-SearchPaths
-September
 SetConsoleMode
-SetConsoleTextAttribute
 SetCurrentDirectoryA
-SetEndOfFile
 SetEnvironmentVariableA
-SetEnvironmentVariableW
-SetFilePointer
-SetFilePointerEx
-SetLastError
-SetPriorityClass
 SetStackTranslationSymbolSearchPath
-SetStdHandle
 SetSteamInstallPath: FileSystem_GetExecutableDir failed.\n
-SetThreadPriority
-SetUnhandledExceptionFilter
 Setup file '%s' doesn't exist in subdirectory '%s'.\nCheck your -game parameter or VCONFIG setting.
 Skipping all func_instance entities (top level vmf only)!\n
 Skipping func_instance: %s\n
@@ -1063,25 +772,17 @@ StaticPropLumpV7_t
 StaticPropLumpV8_t
 StaticPropLumpV9_t
 StaticPropLump_t
-SteamAppId
 SteamAppUser
 SteamUserPassphrase
 SubdivideFace: didn't split the polygon
-Sunday
 Svj>
 TOOLS/TOOLSHINT
 TOOLS/TOOLSSKIP
 T\t5K
-TerminateProcess
 This is a func_instance map.\n
 This means that none of the brushes in leaf 0 or 1 that touches the portal has %s\n
 ThreadInterlockedAssignIf64
 ThreadUnlock without lock\n
-Thursday
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 Too Many Overlays!\nMAX_MAP_OVERLAYS = %d
 Too many BSP leaves, max = %d
 Too many brush models in map, max = %d
@@ -1103,18 +804,11 @@ ToolsAppId
 TopLevel
 Tried parent
 Trying to create a non-quad displacement! (entity %d, brush %d)\n
-Tuesday
 T~OXu
 U?1g
 U?wN
 UEj)
-UNKNOWN
-UTF-16LEUNICODE
-UTF-8
-UUUUUU
-UV88
 UVLX8888
-UVWQ8888
 UcKc
 Unable to find %s. Solutions:\n\n1. Read http://www.valve-erc.com/srcsdk/faq.html#NoGameDir\n2. Run vconfig to specify which game you're working on.\n3. Add -game <path> on the command line where <path> is the directory that %s is in.\n
 Unable to load corrupted map.
@@ -1123,7 +817,6 @@ Unable to mount Steam content in the file system
 Unable to read file %s!\n
 Unexpected worldlight lumpnum %d\n
 Unexpected worldlights lump version %d\n
-UnhandledExceptionFilter
 Unknown LUMP_LEAFS version\n
 Unknown Static Prop Lump version %d didn't get swapped!\n
 Unknown error
@@ -1133,9 +826,7 @@ UnlitGeneric
 Uo\vv
 User Token 2
 User Token 3
-VALVE-MODULE-DEBUG-%08X
 VBSP: Unknown option "%s"\n\n
-VFileSystem017
 VMaterialSystem080
 VPHYSICS.DLL
 VPhysicsCollision007
@@ -1165,12 +856,8 @@ WARNING: huge winding\n
 WARNING: material not found: "%s"\n
 WARNING: node without a volume\n
 WARNING: side not found for portal\n
-WINDOWS
 WR_l%2>
 WY'N
-WaitForMultipleObjects
-WaitForSingleObject
-Warning
 Warning! Encountered old format VTF file; please rebuild it!\n
 Warning:  %s = '%s' is infinite, clamping value.\n
 Warning: area portal has %d verts. Could be a vbsp bug.\n
@@ -1180,22 +867,16 @@ Warning: overflowed %d displacement corner-neighbor lists.
 Water Overlay touching too many faces (touching %d, max %d)\nOverlay %s at %.1f %.1f %.1f
 Water found with no water_lod_control entity, creating a default one.\n
 WebDavRedirector
-Wednesday
-WideCharToMultiByte
 WmS|
 WriteBSP...\n
-WriteConsoleW
 WriteDrawNodes_r: odd planenum
-WriteFile
 WriteMiniDump
 WriteMiniDumpUsingExceptionInfo
 Writing %s...\n
 Writing %s\n
 Writing unknown lump #%d (%d bytes)\n
 Wrote %s\n
-X/4B
 X2CQ
-X360
 X4I+
 XL3Z
 XZP%c %d
@@ -1207,10 +888,8 @@ ZIP_PreloadDirectoryEntry
 ZIP_PreloadHeader
 Z_JmLd
 Zero scale error!\n
-Zjz\v
 ZxnI
 [%f %f %f %f] %f
-[aOni*{
 \%s.vmm_prefs
 \cfg\commandline.cfg
 \content
@@ -1231,89 +910,24 @@ ZxnI
 \t$maxconvexpieces 64\n
 \t$remove2d\n
 \tJqAl
-\tcQr
-^<V7w
 _%s.tmp
-_RDATA
 _W4~w
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__restrict
-__stdcall
-__thiscall
-__unaligned
-__vectorcall
 _autocombine_
-_cabs
-_hypot
-_logb
-_nextafter
 _wvt_patch
 _xlsp
 `*Hhq
 `7bu
-`RTTI
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
 aDJ=
 aFN,
 aFaces
-abcdefghijklmnopqrstuvwxyz
-acos
-active
-allowstatic
-alpha
 alphablend
 alphas
 ambientSampleCount
 amount
-angle
 angle_negative_pitch
-angles
 area
-asin
-atan
-atan2
 autoviscluster = %d\n
 autovisgroup
-axis
 axisMapSize
 bFbx
 bOnlyUseDirectoryName=1 and pDirectoryName=NULL.
@@ -1328,24 +942,17 @@ block: %i,%i\n
 blocks: %i,%i to %i,%i\n
 bmodel %d has no head node (class '%s', targetname '%s')
 bogus brush after clip\n
-bool
-boolean
 boolean type specified with nonsensical default value: %s
 buildTime
 bumpScale
 c?e2
-ceil
 centralDirectorySize
 cheapwaterenddistance
 cheapwaterstartdistance
-children
 choices
-classname
 cluster
 cluster_limit
 collide
-color
-color1
 color255
 combineignore_disableshadowdepth = true\n
 combineignore_fastreflection = true\n
@@ -1365,14 +972,12 @@ contents
 cordon
 cordoning
 cordons
-cosh
 crc32
 cross
 cu\fq7
 cube
 cubemapsize
 currentvelocity
-d8L2
 damping
 darea_t
 dareaportal_t
@@ -1381,13 +986,9 @@ dataVersion
 dbrush_t
 dbrushside_t
 dcubemapsample_t
-dddd, MMMM dd, yyyy
 ddispinfo_t
-decal
 dedge_t
-default
 defaultstyle
-density
 depth
 detail.vbsp
 detailOrientation
@@ -1442,13 +1043,9 @@ dvertex_t
 dwateroverlay_t
 dworldlight_t
 dworldlight_version0_t
-e+000
 e-CS
-eLK(w
 ebytes
-ehandle
 enablelightbounce
-entity
 entity reached from outside -- no filling\n
 env_cubemap
 env_cubemap pointing at deleted brushside near (%d, %d, %d)\n
@@ -1461,16 +1058,13 @@ expected identifier after @
 expecting %s
 expecting '%s', but found '%s'
 expecting ',' or ')', but found %s
-exponent
 externalFileAttribs
 extraFieldLength
 f6\tn
 f@)rM
-fabs
 fademaxdist
 fademindist
 fadescale
-file
 fileCommentLength
 fileNameLength
 fileTypeString
@@ -1495,13 +1089,8 @@ fixup_style
 flFadeDistMaxSq
 flFadeDistMinSq
 flag sets do not have long names
-flags
-float
-floor
 fluid {\n
-fmod
 fourCC
-frexp
 fulldetail = true\n
 func_areaportal
 func_brush
@@ -1517,13 +1106,9 @@ func_viscluster
 func_water
 g_numvertnormalindices == MAX_MAP_VERTNORMALINDICES (%d)
 g_numvertnormals == MAX_MAP_VERTNORMALS (%d)
-g_pMemAlloc
-g_pThreadPool
-game
 gamebin
 gameinfo.txt
 gridnav
-h0'D
 h2yv
 hI{L[
 halfgridsnap
@@ -1533,8 +1118,6 @@ hash
 hb?O2
 headerSize
 headnode
-height
-i]Wb
 id@j>
 ident
 identifier
@@ -1548,21 +1131,15 @@ info_no_dynamic_shadow
 info_overlay
 info_overlay_accessor
 info_overlay_transition
-info_player_start
-inity
-input
 insert
 instance:
 instance_file
 instance_parm
 instance_variable
-integer
-intensity
 internalFileAttribs
 j,4c
 jVa?
 k:UG
-k=yI
 kBk>
 kU!W>
 kWt>
@@ -1571,7 +1148,6 @@ keydataSize
 keyframeclass
 lastModifiedDate
 lastModifiedTime
-ldexp
 leafWaterDataID
 leaktest = true\n
 legacy
@@ -1588,7 +1164,6 @@ lightmapscale
 lightofs
 linear_attn
 lines
-log10
 lowResImageFormat
 lowResImageHeight
 lowResImageSample
@@ -1600,11 +1175,8 @@ lumps
 luxel size of 0
 lzZ?
 m1WY$
-m\nXo
 m_AllowedVerts
 m_AmbientLighting
-m_Angles
-m_Color
 m_CornerNeighbors
 m_DetailModel
 m_DiffuseModulation
@@ -1613,7 +1185,6 @@ m_FadeMaxDist
 m_FadeMinDist
 m_FirstClipPortalVert
 m_FirstLeaf
-m_Flags
 m_FlagsEx
 m_LR
 m_Leaf
@@ -1626,13 +1197,11 @@ m_LightingOrigin
 m_LightmapTextureMinsInLuxels
 m_LightmapTextureSizeInLuxels
 m_MacroTextureNameID
-m_Name
 m_NeighborOrientation
 m_NeighborSpan
 m_Neighbors
 m_NumPrims
 m_Orientation
-m_Origin
 m_Padding2
 m_Padding3
 m_PortalKey
@@ -1647,13 +1216,10 @@ m_SubNeighbors
 m_SwayAmount
 m_TexLR
 m_TexUL
-m_Type
 m_UL
 m_bDisableX360
-m_flAlpha
 m_flDist
 m_flForcedFadeScale
-m_flScale
 m_iDispTriStart
 m_iDispVertStart
 m_iLightmapAlphaStart
@@ -1668,19 +1234,13 @@ m_nFaceBrushStart
 m_nFaceCountAndRenderOrder
 m_nHullCount
 m_nHullStart
-m_nIndexCount
 m_nIndexStart
 m_nLod
 m_nMaxDXLevel
 m_nMeshes
-m_nMinCPULevel
 m_nMinDXLevel
-m_nMinGPULevel
 m_nNeighbors
-m_nOffset
-m_nSurfaceProp
 m_nUnused
-m_nVersion
 m_nVertCount
 m_nVertStart
 m_nVertexFlags
@@ -1698,7 +1258,6 @@ maps\
 mapsize
 mapversion
 mass
-material
 materialPath: %s\n
 materialexclusion
 materials/%s.vmt
@@ -1724,7 +1283,6 @@ mins
 mintess
 mipSkipCount
 mirrored plane
-model
 modelIndex
 modelType
 models/
@@ -1732,7 +1290,6 @@ models/%s
 models/.hammer.mdlcache/%s%s
 models/props/autocombine/%s/
 models/props/autocombine/%s/autocombine_%s_%i.qc
-modf
 mopp.offset
 moppSize
 moveclass
@@ -1750,10 +1307,7 @@ nMinGPULevel
 nReserved2[0]
 nReserved2[1]
 nTexInfo
-name
 nameStringTableID
-nan(ind)
-nan(snan)
 no %s specified
 no entities in open -- no filling\n
 nocsg = true\n
@@ -1765,7 +1319,6 @@ nomerge = true\n
 nomergewater = true\n
 noopt = true\n
 noprune = true\n
-normal
 normal.x
 normal.y
 normal.z
@@ -1796,7 +1349,6 @@ nummapbrushsides == MAX_MAP_BRUSHSIDES when inserting visibility split hint brus
 numsides
 n}in
 o3fW
-obwQ4
 occludernumber
 odd size for LUMP_LEAFS\n
 offsetInertia
@@ -1806,28 +1358,20 @@ ofn}>
 onNode
 onlyents = true\n
 onlyprops = true\n
-operator
-operator "" 
 orangebox
 origFace
-origin
 original brushes: %i\n
 otherarea
-output
 output brushes: %i\n
 overlaydata
 overlaytransition
-owM&
 owner
 parm
 parsing U axis definition
 parsing V axis definition
 parsing plane definition
-particlesystem
 patch
-path
 peers
-pitch
 plane
 plane with no normal
 planenum
@@ -1845,7 +1389,6 @@ position_ul
 power
 preloadDataSize
 preventpropcombine
-prop_data
 prop_detail
 prop_detail_sprite
 prop_static
@@ -1855,7 +1398,6 @@ qc_template_path
 qo-W>
 quadratic_attn
 r7Yr7=
-radius
 rbytes
 readonly
 reflectivity
@@ -1866,11 +1408,9 @@ replace
 report
 reslists
 reslists_xbox
-restrict(
 sU0&?W
 scene
 screenspacefade
-script
 scriptlist
 scripts/hammer/spcombinerules/spcombinerules.txt
 scripts/surfaceproperties_manifest.txt
@@ -1883,8 +1423,6 @@ side
 sidelist
 sides
 signature
-sinh
-size
 size: %5.0f,%5.0f,%5.0f to %5.0f,%5.0f,%5.0f\n
 sizeofDiskPhysics2LevelMesh
 skin
@@ -1893,20 +1431,16 @@ smooth
 smoothingAngle
 smoothingGroups
 smoothing_groups
-snan)
 snap axial = true\n
 solid
 solid {\n
 solidCount
 solidclass
-sound
 split not on both sides\n
 split removed brush\n
-sprite
 sprite_shape
 spriterandomscale
 spritesize
-sqrt
 stale
 stale.txt
 startFrame
@@ -1928,12 +1462,10 @@ steamapp.cfg
 steaminfo.txt
 stopdot
 stopdot2
-string
 string_instanced
 stringtable_dictionary_fallback.dct
 stringtable_dictionary_fallback_xbox.dct
 structure_
-studio
 studiomdl.exe -nop4 -quiet "%s"
 style
 styles
@@ -1942,7 +1474,6 @@ surfaceSize
 surfaceTexInfoID
 surfaceZ
 surfaceplane
-surfaceprop
 surfaceprop2
 surfaceprop3
 surfaceprop4
@@ -1950,17 +1481,13 @@ swapcollideheader_t
 swapcompactsurfaceheader_t
 swapmoppsurfaceheader_t
 sway
-symbol
 s{c|H
 t14x
 tLVv
-tanh
-target
 target_destination
 target_name_or_class
 target_source
 targetname
-team
 test_sidelist
 tex_size
 tex_total_size
@@ -1970,14 +1497,11 @@ texinfo
 texinfo_t
 textureVecsTexelsPerWorldUnits
 thin
-tier0.dll
 toolVersion
 tools/tools
 toolsskip
 toplevel
 triangle_tags
-true
-type
 u+E6
 u?^p?o4
 uXO=
@@ -1987,12 +1511,10 @@ uncompressedSize
 undefined base class '%s
 unexpected symbol '%s'
 uniformscale
-unknown
 unrecognized section name %s
 unterminated string or string too long
 upright
 usage  : vbsp [options...] mapfile\nexample: vbsp -onlyents c:\hl2\hl2\maps\test\n\nCommon options (use -v to see all options):\n\n  -v (or -verbose): Turn on verbose output (also shows more command\n                    line options).\n\n  -onlyents   : This option causes vbsp only import the entities from the .vmf\n                file. -onlyents won't reimport brush models.\n  -onlyprops  : Only update the static props and detail props.\n  -glview     : Writes .gl files in the current directory that can be viewed\n                with glview.exe. If you use -tmpout, it will write the files\n                into the \tmp folder.\n  -nodetail   : Get rid of all detail geometry. The geometry left over is\n                what affects visibility.\n  -nowater    : Get rid of water brushes.\n  -staticpropcombine    : Cluster specially supported static prop models.\n  -keepsources    : Don't clean up cluster models after bspzip.\n  -staticpropcombine_considervis : Cluster static prop models only within\n                                   vis clusters.\n  -staticpropcombine_autocombine : Automatically combine simple static props\n                                   without an explicit combine rule.\n  -staticpropcombine_suggestrules: Suggest rules to add to spcombinerules.txt\n  -prepfors2 : Prep bsp geo for import to S2 (import workflow improvement).\n  -nofuncinstance : Only valid if prepping for s2, skip all func_instance entities (top level map only).\n  -isfuncinstance : Only valid when using -nofuncinstance, describes if vmf is itself a func_instance map.\n  -low        : Run as an idle-priority process.\n\n  -vproject <directory> : Override the VPROJECT environment variable.\n  -game <directory>     : Same as -vproject.\n\n
-v2!L.2
 vECd
 va1+
 vaxis
@@ -2003,10 +1525,8 @@ vecBasisNormal
 vecOrigin
 vecUVPoints
 vecline
-vector
 verbose = true\n
 verboseentities = true\n
-version
 versionMadeBy
 versionNeededToExtract
 vertCount
@@ -2016,8 +1536,6 @@ view_width
 virtualterrain {}\n
 viscontents (node 0 contents ^ node 1 contents): %s\n
 visgranularity: %i,%i,%i\n
-void
-volume
 vphysics.dll
 vphysicsID
 vstdlib.dll
@@ -2026,8 +1544,6 @@ warmup
 water
 water%02d
 water_lod_control
-width
-wn>Jj
 world
 world_maxs
 world_mins

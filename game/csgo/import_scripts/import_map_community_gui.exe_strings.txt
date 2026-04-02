@@ -1,116 +1,34 @@
-                          
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
- !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
- Type Descriptor'
- delete
- delete[]
  inflate 1.2.13 Copyright 1995-2022 Mark Adler 
- new
 %U?%llu
 %s%c%s%c%s%c%s
 %s%c%s%c%s%c%s%c%s
 %s%c%s.exe
 %s%c%s.pkg
 %s%c%s.py
-&Sgw
-(null)
-*StO9>T
-.00cfg
 .3Mx
-.?AVbad_exception@std@@
-.?AVexception@std@@
-.?AVtype_info@@
-.CRT$XCA
 .CRT$XCAA
-.CRT$XCZ
-.CRT$XIA
 .CRT$XIAA
 .CRT$XIAC
-.CRT$XIC
-.CRT$XIZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.data
-.data$r
-.data$rs
 .gfids
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.pdata
-.rdata
-.rdata$r
-.rdata$voltmd
-.rdata$zzzdbg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$mn
-.text$mn$00
-.text$x
-.xJ>Hf
-.xdata
-.xdata$x
 0LtER
-0iN>/
-1#IND
-1#INF
-1#QNAN
-1#SNAN
 1.2.13
-11Y@
 1vJ9c
 2*iZ
-37>k
-3>N;kU
-3>fvw
 49v|
 6gcD
 7Q;P
 7aw=
 7w+z
 9:D1k
-9a&g
 9tcN
 :oVua
 ;BN.x
-=87M
-=cQ6
-=imb;D
->cQ6
->jtm}S
-?7zQ6$
-?UUUUUU
-?f`Y4
-?qBJ
-?ysB
 A9P`
-A>pP&
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-ADVAPI32.dll
 Absolute path to script exceeds PATH_MAX\n
-AppPolicyGetProcessTerminationMethod
-April
 Archive not found: %s\n
 Archive path exceeds PATH_MAX\n
-AreFileApisANSI
 Arg list too long
-August
 B6OZ
-BC?>6t9^\tc:>
-BF>^G
 Bad address
 Bad file descriptor
 Broken pipe
@@ -120,44 +38,29 @@ Cannot allocate memory for necessary files.\n
 Cannot open PyInstaller archive from executable (%s) or external archive (%s)\n
 Cannot read Table of Contents.\n
 Cannot side-load external archive %s (code %d)!\n
-CloseHandle
-CompareStringEx
-CompareStringW
 ConvertSidToStringSidW
 ConvertStringSecurityDescriptorToSecurityDescriptorW
-CorExitProcess
 Could not allocate buffer for TOC!\n
 Could not get __main__ module's dict.\n
 Could not get __main__ module.\n
 Could not read full TOC!\n
-CreateDirectoryW
-CreateFileW
-CreateProcessW
-December
-DeleteCriticalSection
-DeleteFileW
 Directory not empty
 Dkw.
 Domain error
 E+wS
 ERD$
 ERROR: file already exists but should not: %s\n
-ET5>
 EiaG
-EncodePointer
-EnterCriticalSection
 EpqX
 Error creating child process!\n
 Error detected starting Python VM.\n
 Error loading Python DLL '%s'.\n
 Error on file.\n
 Exec format error
-ExitProcess
 ExpandEnvironmentStringsW
 F(D:9
 F;ge
 FArK
-FEMh\f
 Failed to append to sys.path\n
 Failed to convert DLL search path!\n
 Failed to convert Wflag %s using mbstowcs (invalid multibyte string)\n
@@ -278,73 +181,19 @@ Failed to open archive %s!\n
 Failed to read cookie!\n
 Failed to seek to cookie position!\n
 Failed to unmarshal code object for %s\n
-February
 File exists
 File too large
-FileTimeToSystemTime
 Filename too long
-FindClose
-FindFirstFileExW
-FindNextFileW
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 FormatMessageW
-FreeEnvironmentStringsW
-FreeLibrary
-Friday
 Function not implemented
 GCd"
-GetACP
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
-GetConsoleMode
-GetConsoleOutputCP
-GetCurrentDirectoryW
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetDriveTypeW
-GetEnvironmentStringsW
-GetEnvironmentVariableW
-GetExitCodeProcess
-GetFileAttributesExW
-GetFileInformationByHandle
-GetFileSizeEx
-GetFileType
-GetFullPathNameW
-GetLastError
-GetModuleFileNameW
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemTimeAsFileTime
-GetTempPathW
-GetTimeZoneInformation
 GetTokenInformation
 H!a7
-HH:mm:ss
-HeapAlloc
-HeapFree
-HeapReAlloc
-HeapSize
 IAl'
 INTERNAL ERROR: cannot create temporary directory!\n
-IiGM>nw
 Illegal byte sequence
 Improper link
 Inappropriate I/O control operation
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
 Input/output error
 Installing PYZ: Could not get sys.path\n
 Interrupted function call
@@ -352,38 +201,17 @@ Invalid argument
 Invalid seek
 Invalid value for PYTHONUTF8=%s; disabling utf-8 mode!\n
 Is a directory
-IsDebuggerPresent
-IsProcessorFeaturePresent
-IsValidCodePage
 J(8F
 J^zW
-January
-July
-June
-KERNEL32.dll
 K\v\tr\r0n
-L>ev
-LCMapStringEx
-LCMapStringW
 LOADER: Failed to convert runtime-tmpdir to a wide string.\n
 LOADER: Failed to expand environment variables in the runtime-tmpdir.\n
 LOADER: Failed to load tcl/tk libraries\n
 LOADER: Failed to obtain the absolute path of the runtime-tmpdir.\n
 LOADER: Failed to set the TMP environment variable.\n
 LR0p
-LeaveCriticalSection
 LoadLibrary
-LoadLibraryExW
-LocalFree
-LocaleNameToLCID
-MGiI
-MM/dd/yy
-March
 Module object for %s is NULL!\n
-Monday
-MultiByteToWideChar
-NAN(IND)
-NAN(SNAN)
 Nct9,
 No child processes
 No error
@@ -396,17 +224,12 @@ No such file or directory
 No such process
 Not a directory
 Not enough space
-November
-OZQ%
-October
-OpenProcessToken
 Operation not permitted
 Out of memory.\n
 PYINSTALLER_STRICT_UNPACK_MODE
 PYTHONUTF8
 Path of DLL (%s) length exceeds buffer[%d] space\n
 Path of ucrtbase.dll (%s) length exceeds buffer[%d] space\n
-PeekNamedPipe
 Permission denied
 PyDict_GetItemString
 PyErr_Clear
@@ -465,46 +288,21 @@ Py_SetPythonHome
 Py_UTF8Mode
 Py_UnbufferedStdioFlag
 Py_VerboseFlag
-Qkkbal
-QueryPerformanceCounter
 REtL
 R]Fe
-RaiseException
 Read-only file system
-ReadConsoleW
-ReadFile
-RemoveDirectoryW
 Reported length (%d) of DLL name (%s) length exceeds buffer[%d] space\n
 Resource deadlock avoided
 Resource device
 Resource temporarily unavailable
 Result too large
 Rp$j
-RtlCaptureContext
-RtlLookupFunctionEntry
-RtlPcToFileHeader
-RtlUnwindEx
-RtlVirtualUnwind
-S9>H
 SPLASH: Cannot extract requirement %s.\n
 SPLASH: Cannot find requirement %s in archive.\n
 SPLASH: Tcl is not threaded. Only threaded tcl is supported.\n
-Saturday
-September
-SetConsoleCtrlHandler
 SetDllDirectoryW
-SetEndOfFile
-SetEnvironmentVariableW
-SetFilePointerEx
-SetLastError
-SetStdHandle
-SetUnhandledExceptionFilter
-Sleep
-Sunday
 Sw+E
-SystemTimeToTzSpecificLocalTime
 T Rn
-TUUUU
 Tcl_Alloc
 Tcl_ConditionFinalize
 Tcl_ConditionNotify
@@ -534,221 +332,62 @@ Tcl_SetVar2
 Tcl_SetVar2Ex
 Tcl_ThreadAlert
 Tcl_ThreadQueueEvent
-TerminateProcess
-Thursday
 Tk_GetNumMainWindows
 Tk_Init
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 Too many links
 Too many open files
 Too many open files in system
-Tuesday
 U<gP
-UUUUUU
-UnhandledExceptionFilter
 Unknown error
-Unknown exception
 Vwi<
 WARNING: file already exists but should not: %s\n
 WYU:
-WaitForSingleObject
-Wednesday
-WideCharToMultiByte
-WriteConsoleW
-WriteFile
-X/4B
 XD/Z\v
 Z/DX
 ZGj\tt
 ZO6G
 Zi*7
-Zjz\v
-[aOni*{
 \fp\vPt
-\rmj>zjZ
 \rocT@
 \rqa+j
-\tcQr
-\tkE>fvw
-^<V7w
 _MEIPASS
 _MEIPASS2
 _PYI_ONEDIR_MODE
-_RDATA
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__restrict
-__stdcall
-__swift_1
-__swift_2
-__swift_3
-__thiscall
-__unaligned
-__vectorcall
 _image_data
 _pyi_main_co
 _source
 `P9A
-`RTTI
-`anonymous namespace'
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
 `le_3
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
-abcdefghijklmnopqrstuvwxyz
-address family not supported
-address in use
-address not available
-already connected
 am\nv
 b5h\\
-bad exception
-bad message
 base_library.zip
-buffer error
 c9JxM3.
 calloc
-connection aborted
-connection already in progress
-connection refused
-connection reset
-d8L2
-data error
-dddd, MMMM dd, yyyy
-destination address required
-e+000
 e.u7
-eF>t
-eLK(w
 eg;F
 exit
-file error
 fopen
 fread
 fseek
 fwrite
 gI3\v>
-gqr<
-h0'D
-header crc mismatch
-host unreachable
-i]Wb
-identifier removed
 iesx
 import sys; sys.stderr.flush();                 (sys.__stderr__.flush if sys.__stderr__                 is not sys.stderr else (lambda: None))()
 import sys; sys.stdout.flush();                 (sys.__stdout__.flush if sys.__stdout__                 is not sys.stdout else (lambda: None))()
-incompatible version
-incorrect data check
-incorrect header check
-incorrect length check
-insufficient memory
-invalid bit length repeat
-invalid block type
-invalid code -- missing end-of-block
-invalid code lengths set
-invalid distance code
-invalid distance too far back
-invalid distances set
-invalid literal/length code
-invalid literal/lengths set
-invalid stored block lengths
-invalid window size
 j[\vRT
-k=yI
-l6qnk
 lfc *
 lib-dynload
-log10
-mG4>
-m\nXo
 malloc
-message size
-n03>Pu
-nan(ind)
-nan(snan)
-need dictionary
-network down
-network reset
-network unreachable
-no buffer space
-no link
-no message
-no message available
-no protocol option
-no stream resources
-not a socket
-not a stream
-not connected
-not supported
-obwQ4
-operation canceled
-operation in progress
-operation not supported
-operation would block
-operator
-operator "" 
-operator co_await
-operator<=>
-owM&
-owner dead
-path
 pjn]+
-protocol error
-protocol not supported
 pyi-
 pyi-runtime-tmpdir
 qER@
-r\tVr.>T
 rename ::source ::_source
-restrict(
 rucs
 s7K"
 scur
 source
-state not recoverable
 status_text
-stream end
-stream error
-stream timeout
 strict
 sys.path (based on %s) exceeds buffer[%d] space\n
 t/v2Z%
@@ -757,27 +396,16 @@ t\tjI&
 tclInit
 tcl_findLibrary
 tcl_patchLevel
-text file busy
-timed out
 tk.tcl
 tk_library
 tk_patchLevel
 tl-4
-too many length or distance symbols
-too many symbolic link levels
 uZYs
 ucrtbase.dll
-unknown compression method
-unknown header flags set
 utf-8
-uzKs@>
-v2!L.2
-value too large
 win32_utils_from_utf8
 win32_utils_to_utf8
 win32_wcs_to_mbs
-wn>Jj
-wrong protocol type
 xTx;#
 xekv
 yf5=

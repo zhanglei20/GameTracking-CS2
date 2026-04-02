@@ -55,7 +55,6 @@ var NewsPanel;
             elEntry.SetPanelEvent("onactivate", () => {
                 SteamOverlayAPI.OpenURL(link);
                 if (clearNew) {
-                    GameInterfaceAPI.SetSettingString('ui_news_last_read_link', link);
                     elEntry.RemoveClass('new');
                 }
             });

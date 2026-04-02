@@ -110,12 +110,9 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j
- (08@HPXbP
- (08@HPZ
- (08@HRP
- (08@JP
- (0X`hpzP
+ (08@HPX`j0
+ (08@HPZ0
+ (08@J0
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -319,7 +316,6 @@
 "d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo
 "e\n CCSUsrMsg_EntityOutlineHighlight
 "f\n\nCMsgTEDust
-"g3Pw
 "h\n CUserMessageHapticsManagerEffect
 "h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 "l7ql`R2lWf
@@ -2009,6 +2005,7 @@ $keychain_clutch
 $keychain_headshot
 $sticker_rarity_color
 $taser_charge
+$zf2
 %%%d.%ds %%%d.%ds
 %%%d.%ds [%%3.3s] (%%5d) %%%d.%ds:
 %%%d.%ds [%%s::%%s] 
@@ -2241,6 +2238,7 @@ $taser_charge
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
+%n4h
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -2988,7 +2986,7 @@ $taser_charge
 ).CPlayer_GetPerFriendPreferences_Response"M
 ).CPlayer_SetCommunityPreferences_Response"+
 ).CPlayer_SetPerFriendPreferences_Response"G
-)240z
+)24h
 )4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )A service for accessing Steam player dataB
 )App Id this file is being published FROM.
@@ -3166,9 +3164,7 @@ $taser_charge
 ,\n\nsv_interp0
 ,\n\nsv_interp1
 ,\n\vvictim_slot
-,]p3pw
 ,ar_monastery
-,d;4Pz
 ,fQM(
 ,h11]
 ,hmQ#
@@ -3176,7 +3172,7 @@ $taser_charge
 ,kj8\te
 ,name:
 ,oYR
-,sK3
+,sK3(
 ,section=
 ,value:
 - "%s" = "%.2f"\n
@@ -10868,7 +10864,6 @@ $taser_charge
 .yAu[7
 /'/)/A/E/K/M/Q/W/o/u/}/
 /2x1
-/3Hv
 /5dJ
 /?appid=%u
 /Published file id of the file we'd like update.
@@ -10926,8 +10921,8 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR
-08@JP
+08@HR0
+08B0
 08bX
 09,h
 0;Q5[
@@ -11262,7 +11257,6 @@ $taser_charge
 3wQ]
 3|2;#GameUI_Retake_Card_UmpInSmoke,1,1,weapon_ump45,grenade1|2;#GameUI_Retake_Card_FunNGun,1,1,weapon_mp9,grenade2|2;#GameUI_Retake_Card_Sharpshooter,1,1,weapon_ssg08,grenade0|2;#GameUI_Retake_Card_BurstBullpup,1,1,weapon_famas
 3|rN>
-4!$Pe2
 4(Optional) Sorting method to use on returned values.
 4)#bH
 4)m1
@@ -11275,6 +11269,7 @@ $taser_charge
 4Ch;
 4F0I
 4Mv8
+4QM2
 4Redirection URI provided during client registration.2
 4Zis
 4\fPl
@@ -11341,7 +11336,6 @@ $taser_charge
 6-zeZ
 6144
 62$|S)6f
-64@z
 64CK\vH
 6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
@@ -11417,11 +11411,11 @@ $taser_charge
 8192
 8285-YOAZ-6049
 82\n:XPH
-83hv
 851Pe
 8835-KLXV-0292
 8<pl
 8= zp
+8@J0
 8A6j
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11712,11 +11706,11 @@ $taser_charge
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
 @0pp
-@6pu
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
 @Global Blend - Attempting a global blend with an additive pose! This is undefined behavior!\n
+@HPX`hv 
 @MfKZ
 @Pgl
 @Pu\rm
@@ -14592,6 +14586,7 @@ CRenderGameSystem
 CRenderGameSystem::OnClientPreOutput
 CRenderGameSystem::OnClientPreOutputParallelWithServer
 CRenderGameSystem::OnClientPreOutputParallelWithServer(), C:\buildworker\csgo_rel_win64\build\src\game\shared\rendergamesystem.cpp:1223
+CRenderingPipelineCsgo::AddLayersToView(10655): 
 CResourceName
 CResourceNameTyped
 CResourcePrecacherGameSystem
@@ -16417,7 +16412,6 @@ D2I_RSA_NET_2
 D2I_X509
 D2I_X509_CINF
 D2Lb!
-D4pz
 D4tp
 D514p
 D@D/lcO+hcK
@@ -20680,6 +20674,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
+JY3X
 JZIX
 J\nHBF
 J`KL
@@ -22160,12 +22155,11 @@ P-224
 P-256
 P-384
 P-521
-P08@JP
+P08JP
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
 P5[1
-P6@p
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -23068,6 +23062,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
+Q$48
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23606,7 +23601,7 @@ RequestRSSFeed
 RequestStoreLayout
 RequestTournaments
 Requested Target
-Requesting Blog RSS Feed - %s.\n
+Requesting Blog RSS Feed[%d] - %s.\n
 Requesting a negative velocity is not supported!
 Requesting fallback networking config...\n
 Requesting subscribed files...\n
@@ -27072,7 +27067,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr
+X`hr0
 Xd3h
 XfJ7
 XjfR
@@ -28339,8 +28334,6 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`43Xv
-`6pv
 `:zQF
 `D$daM-l
 `DZG
@@ -33141,7 +33134,6 @@ hour
 hours
 houseIdentifier
 hover
-hpzP
 hr_H
 href="
 hscroll
@@ -33170,11 +33162,9 @@ https proxy request
 https://
 https://%s/apps/csgo/videos/highlightreels%s/%03d/%03dv%03d_%03d/%03d_%03dv%03d_%03d_%s_%s_%s
 https://%s/linkfilter/?url=%s
-https://%s/newsentry/%s
+https://%s/newsentry%s/%s
 https://api%s.steampowered.com/ICSGOServers_%d/GetLeaderboardEntries/v1?format=json&lbname=%s
 https://api.twitch.tv/helix/streams?game_id=32399&first=12
-https://blog.counter-strike.net/%s%sindex.php/feed/?gameversion=%s
-https://blog.counter-strike.net/zh-hans/index.php/category/home-zh-hans-2/feed/?perfectworld&gameversion=%s
 https://cdn.beta.steampowered.com/apps/%d/resource/hltv/event_feed
 https://cdn.steamstatic.com/apps/%d/resource/hltv/event_feed.json
 https://clan.cloudflare.steamstatic.com/images
@@ -33184,6 +33174,7 @@ https://help.steamchina.com/zh/kb/%s
 https://media.st.dl.pinyuncloud.com/apps/730/resource/hltv/event_feed.json
 https://store.steamchina.com/steamaccount/addfunds
 https://store.steampowered.com/events/ajaxgetpartnereventspageable/?clan_accountid=0&appid=730&offset=0&count=50&exclude_tags=hide_library_detail,mod_hide_library_detail&origin=https:%2F%2F
+https://store.steampowered.com/events/ajaxgetpartnereventspageable/?clan_accountid=46056098&appid=0&offset=0&count=50&exclude_tags=hide_library_detail,mod_hide_library_detail&origin=https:%2F%2F
 https://store.steampowered.com/sub/54029
 https://support.steampowered.com/kb_article.php?ref=%s
 https://www.twitch.tv/%s
@@ -33241,6 +33232,7 @@ i%YR
 i%|kB
 i(ERemoteStoragePublishedFileVisibility) Visibility of the published file (private, friends, public, etc.)
 i(Optional) Maximum number of results to return on this call. Defaults to a maximum of 500 files returned.
+i0L2
 i2b_PVK_bio
 i2d ecpkparameters failure
 i2d_ASN1_SET
@@ -33979,7 +33971,6 @@ invertminscalecalc
 invited
 invnextgun
 ioctlsocket
-ipK2
 ipsec3
 ipsec4
 ipsecEndSystem
@@ -34225,7 +34216,6 @@ k+Aq
 k/sn
 k0>Z,
 k26C*
-k3`w
 k8\vD
 k8fo
 k8xA
@@ -34635,7 +34625,6 @@ kvtags
 kw.6#
 k~Rz
 l <= sizeof(c->iv)
-l&+38v
 l&rB6
 l4Ot
 l7@J
@@ -34643,6 +34632,7 @@ lC57
 lDcW
 lM2p
 l\n\fexcludedtags
+l`w4
 label_token
 ladder
 ladder_cycle
@@ -36982,7 +36972,6 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0j H
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37001,14 +36990,13 @@ p5\nL,
 p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
-pAOnUpdateSolidFlags
+pBSaves all active animgraph recordings to disk\n\tArguments: automaticallyOpenInAnimgraphEditor
 pCheckpointName
 pD4t
 pData->GetDataDescMap() == pTemplateDataMap
 pDescription
 pDest
 pEndOfMatch_Test_Show
-pF0a
 pField
 pFilter
 pG_*h
@@ -37997,8 +37985,6 @@ psk identity not found
 psk no client cb
 psk no server cb
 pszContextName
-pt-br
-pt-pt
 pt_BR
 pt_PT
 pub: 
@@ -41979,7 +41965,6 @@ z\tV_tand
 zebra
 zero_value
 zeroth_moment
-zh-hans
 zh_CN
 zh_TW
 zlVO
