@@ -1,38 +1,21 @@
-                          
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
- !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
- Type Descriptor'
  byte digest to 
- bytes
- delete
- delete[]
  doesn't match the required length of 
  exceeds the maximum of 
  for this key
  for this public key
  is not a valid key length
- new
  operation failed with error 
  throw(
- volatile
 !jWW
 " not used
 #D5p
-%02X
 %d,%d,%d,0x%x,0x%x\n
-&Sgw
 &\r8q6
 ', stored '
 ', trying to retrieve '
 ( 8PX
 ('8PW
-(null)
 (u1Y%
-,<ellipsis>
 ,CERT:
 ,CRC:
 ,ERR:
@@ -47,11 +30,9 @@
 -csgo_signature_file 
 -csgo_write_system_signatures 
 -insecure
--perfectworld
 -steampath 
 -trusted
 -validate
-.00cfg
 .?AUEncryptionStandard@CryptoPP@@
 .?AUFilterPutSpaceHelper@CryptoPP@@
 .?AUInitializeInteger@CryptoPP@@
@@ -124,7 +105,6 @@
 .?AV?$TwoBases@VBlockCipher@CryptoPP@@URijndael_Info@2@@CryptoPP@@
 .?AV?$Unflushable@VFilter@CryptoPP@@@CryptoPP@@
 .?AV?$VariableKeyLength@$0BA@$0BA@$0CA@$07$03$0A@@CryptoPP@@
-.?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@
 .?AVASN1Object@CryptoPP@@
 .?AVAlgorithm@CryptoPP@@
 .?AVAlgorithmParameters@CryptoPP@@
@@ -150,8 +130,6 @@
 .?AVCryptoMaterial@CryptoPP@@
 .?AVDERGeneralEncoder@CryptoPP@@
 .?AVDERSequenceEncoder@CryptoPP@@
-.?AVDNameNode@@
-.?AVDNameStatusNode@@
 .?AVDivideByZero@Integer@CryptoPP@@
 .?AVEnc@Rijndael@CryptoPP@@
 .?AVException@CryptoPP@@
@@ -231,78 +209,16 @@
 .?AVWalker@ByteQueue@CryptoPP@@
 .?AVX509PublicKey@CryptoPP@@
 .?AVX917RNG@CryptoPP@@
-.?AVbad_alloc@std@@
-.?AVbad_array_new_length@std@@
-.?AVbad_exception@std@@
-.?AVcharNode@@
-.?AVexception@std@@
-.?AVlength_error@std@@
-.?AVlogic_error@std@@
-.?AVout_of_range@std@@
-.?AVpDNameNode@@
-.?AVpairNode@@
-.?AVpcharNode@@
-.?AVtype_info@@
 .?AW4RandomNumberType@Integer@CryptoPP@@
-.CRT$XCA
 .CRT$XCAA
-.CRT$XCC
-.CRT$XCL
-.CRT$XCU
-.CRT$XCZ
-.CRT$XIA
 .CRT$XIAA
 .CRT$XIAC
-.CRT$XIC
-.CRT$XIZ
-.CRT$XLA
-.CRT$XLZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
 .PAVInvertibleRSAFunction@CryptoPP@@
 .PAVRSAFunction@CryptoPP@@
 .PBVPrimeSelector@CryptoPP@@
-.bss
-.data
-.data$r
-.edata
 .gfids$x
 .gfids$y
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.rdata
-.rdata$T
-.rdata$r
-.rdata$zzzdbg
-.rsrc$01
-.rsrc$02
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$x
-.text$yd
-.tls
-.tls$
-.tls$ZZZ
-.xdata$x
 0 Xy
-0123456789ABCDEF
-0123456789abcdef
-0123456789abcdefghijklmnopqrstuvwxyz
-1#IND
-1#INF
-1#QNAN
-1#SNAN
 2ieO=
 4g%6
 5M[g
@@ -312,7 +228,6 @@
 700WP
 8f\tC
 9JLX
-9a&g
 : Missing required parameter '
 : ciphertext length of 
 : invalid ciphertext
@@ -332,9 +247,6 @@
 ;TFL:
 <8bunz8
 <@En[vP
-<ellipsis>
-<unknown>
-=87M
 ?3xj
 ?5Wg4p
 ?5a1
@@ -347,19 +259,12 @@
 ?tanh
 ?{fHn
 @VNQ
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-ADVAPI32.dll
 AUTH:
-AcquireSRWLockExclusive
-AddVectoredExceptionHandler
 Ai0T
 AiFC.
 AlgorithmParametersBase: parameter "
 AllocatorBase: requested size would cause integer overflow
-AmdPowerXpressRequestHighPerformance
-April
 ArraySink: missing OutputBuffer argument
-August
 BER decode error
 BE\vR
 BSecureAllowed
@@ -374,31 +279,19 @@ CertFindCertificateInStore
 CertFreeCertificateContext
 CertGetNameStringW
 Clone() is not implemented yet.
-CloseHandle
 CloseThreadpoolTimer
 CloseThreadpoolWait
-CloseThreadpoolWork
-CompareStringEx
 Copyright (c) by P.J. Plauger, licensed by Dinkumware, Ltd. ALL RIGHTS RESERVED.
-CorExitProcess
 CountFilesCompletedTrustCheck
 CountFilesNeedTrustCheck
 CqTR;
 CreateEventExW
 CreateEventW
-CreateFileA
-CreateFileMappingA
 CreateFileMappingW
-CreateFileW
-CreateMutexA
-CreateProcessW
 CreateSemaphoreExW
 CreateSemaphoreW
-CreateSymbolicLinkW
-CreateThread
 CreateThreadpoolTimer
 CreateThreadpoolWait
-CreateThreadpoolWork
 CryptAcquireContextW
 CryptCATAdminAcquireContext
 CryptCATAdminAcquireContext2
@@ -421,95 +314,28 @@ Cryptographic algorithms are disabled after a power-up self test failed.
 Cryptographic algorithms are disabled before the power-up self tests are performed.
 D7q/;M
 DIGEST:
-December
-DecodePointer
-DeleteCriticalSection
 EMSA-PKCS1-v1_5
 Eb2]A=
-EncodePointer
 EncodingParameters
-EnterCriticalSection
 EquivalentTo
-ExitProcess
 F0$?3=1
-FEMh\f
-February
-FindClose
 FindFirstFileExA
-FindFirstFileW
 FindNextFileA
-FindNextFileW
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 FlushInstructionCache
 FlushProcessWriteBuffers
 FormatMessageW
-FreeEnvironmentStringsW
-FreeLibrary
-FreeLibraryWhenCallbackReturns
-Friday
-GCTL
 GXS:
 GYM=
 GeneratableCryptoMaterial: this object does not support key/parameter generation
-GetACP
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
 GetConsoleCP
-GetConsoleMode
-GetCurrentDirectoryW
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentProcessorNumber
-GetCurrentThreadId
-GetEnvironmentStringsW
-GetEnvironmentVariableA
-GetEnvironmentVariableW
-GetExitCodeProcess
-GetExitCodeThread
-GetFileInformationByHandle
 GetFileInformationByHandleEx
-GetFileSizeEx
-GetFileType
-GetLastError
-GetLocaleInfoEx
-GetModuleFileNameA
-GetModuleFileNameW
-GetModuleHandleA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
 GetSystemDirectoryW
-GetSystemInfo
-GetSystemTimeAsFileTime
-GetSystemTimePreciseAsFileTime
 GetTickCount64
 GetTotalFilesLoaded
 GetWindowsDirectoryW
-HH:mm:ss
 HashTransformation: can't truncate a 
-HeapAlloc
-HeapFree
-HeapReAlloc
-HeapSize
 Ht=c
 InitOnceExecuteOnce
-InitializeConditionVariable
-InitializeCriticalSection
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
-InitializeSRWLock
 InputBuffer
 Integer: Min must be no greater than Max
 Integer: division by zero
@@ -517,67 +343,39 @@ Integer: invalid EquivalentTo and/or Mod argument
 Integer: invalid RandomNumberType argument
 Integer: missing Max argument
 Integer: no integer satisfies the given parameters
-InterlockedPushEntrySList
 InvertibleRSAFunction: computational error during private key operation
 InvertibleRSAFunction: invalid public exponent
 InvertibleRSAFunction: specified modulus size is too small
-IsDebuggerPresent
-IsProcessorFeaturePresent
-IsValidCodePage
 IteratedHashBase: input data exceeds maximum allowed by hash function 
-January
-July
-June
 K)b c
-KERNEL32.dll
 KeySize
-LCMapStringEx
-LCMapStringW
 L[pB
 La8i
 LauncherMain
 Le?2
-LeaveCriticalSection
-LoadLibraryA
-LoadLibraryExW
 LocalAlloc
-LocalFree
-LocaleNameToLCID
 LwH'
 Lyc>=
 MGF1
-MGiI
-MM/dd/yy
 MVj*
-MapViewOfFile
-March
-MessageBoxW
 MkK?
 ModPrime1PrivateExponent
 ModPrime2PrivateExponent
 Modulus
 ModulusSize
-Monday
 MontgomeryRepresentation: Montgomery representation requires an odd modulus
-MultiByteToWideChar
 MultiplicativeInverseOfPrime2ModPrime1
 N,g0WC
-NAN(IND)
-NAN(SNAN)
-NULL
 N\vN8n
 NameValuePairs: type mismatch for '
 NodeSize
-November
 Nr^pb
 NtOpenFile
 NullRNG
 NullRNG: NullRNG should only be passed to functions that don't need to generate random bytes
-NvOptimusEnablement
 O(uC
 OAEP-
 OS_Rng: 
-October
 OutputBuffer
 PK_DefaultDecryptionFilter: ciphertext too long
 PK_DefaultEncryptionFilter: plaintext too long
@@ -593,368 +391,86 @@ Prime2
 PrivateExponent
 PublicExponent
 PutMessage
-Qkkbal
-QueryPerformanceCounter
-QueryPerformanceFrequency
 RADD
-RSDS
-RaiseException
 RandomNumberGenerator: IncorporateEntropy not implemented
 RandomNumberType
 RegGetValueW
 RegOpenKeyExW
-ReleaseMutex
-ReleaseSRWLockExclusive
-ResetEvent
 RhV 
 RhVS
 RoundUpToMultipleOf: integer overflow
 RtlGenRandom
-RtlUnwind
 RuntimeCheck
 SHA-1
 SHA-256
 SHA1:
 SIGN:
 SXS:
-Saturday
 Seed
-September
-SetCurrentDirectoryW
-SetEnvironmentVariableW
-SetEvent
 SetFileInformationByHandle
-SetFilePointer
-SetFilePointerEx
-SetLastError
-SetStdHandle
 SetThreadpoolTimer
 SetThreadpoolWait
-SetUnhandledExceptionFilter
-SleepConditionVariableCS
-SleepConditionVariableSRW
 Steamid
 StringStore: missing InputBuffer argument
-SubmitThreadpoolWork
-Sunday
 SystemFunction036
 TF_SignerBase: the recoverable message part is too long for the given key and algorithm
 TF_SignerBase: this algorithm does not support messsage recovery or the key is too short
-TerminateProcess
 ThisObject:
 ThisPointer:
-Thursday
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 TruncatedDigestSize
-TryAcquireSRWLockExclusive
 Ts\ne
-Tuesday
 T~OXu
-UNKNOWN
-USER32.dll
 USeg
-UUUUU
 Unflushable<T>: this object has buffered input that cannot be flushed
-UnhandledExceptionFilter
-UnmapViewOfFile
 ValueNames
-VirtualAlloc
 VirtualAllocEx
-VirtualProtect
-VirtualQuery
 WDgP/
 WTHelperProvDataFromStateData
-WaitForSingleObject
-WaitForSingleObjectEx
 WaitForThreadpoolTimerCallbacks
-WakeAllConditionVariable
-WakeConditionVariable
-Wednesday
-WideCharToMultiByte
 WinVerifyTrust
-WriteConsoleW
-WriteFile
 WriteProcessMemory
-X/4B
 X4I+
 X917RNG: Continuous random number generator test failed.
-Zjz\v
-[aOni*{
-[thunk]:
 \fO4W
 \r8STs\ne
-\r\f\v\v\n\n\t\t\t\t\t
-\tcQr
 ]_cOW
-^<V7w
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__int128
-__int16
-__int32
-__int64
-__int8
-__pascal
-__ptr64
-__restrict
-__stdcall
-__thiscall
-__unaligned
-__vectorcall
-_cabs
-_hypot
-_logb
-_nextafter
-`RTTI
-`adjustor{
-`anonymous namespace'
 `ck(W
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`generic-class-parameter-
-`generic-method-parameter-
 `h`hhh
-`local static destructor helper'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`non-type-template-parameter
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`template static data member constructor helper'
-`template static data member destructor helper'
-`template-parameter
-`template-type-parameter-
-`typeof'
-`udt returning'
-`unknown ecsu'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
-`vtordispex{
-`vtordisp{
 aDJ=
 aXG1
-abcdefghijklmnopqrstuvwxyz
-acos
-address family not supported
-address in use
-address not available
-advapi32.dll
-already connected
-argument list too long
-argument out of domain
-asin
-atan
-atan2
 b>AO=
-bad address
-bad allocation
-bad array new length
-bad exception
-bad file descriptor
-bad message
-bool
-broken pipe
 c1Y%
 c:\buildslave\csgo_pcbeta_win32\build\src\launcher_main\Release\csgo.pdb
 c?e2
-ceil
-char
-char 
-char16_t
-char32_t
-class 
-cli::array<
-cli::pin_ptr<
-coclass 
-cointerface 
-connection aborted
-connection already in progress
-connection refused
-connection reset
-const
-const 
-cosh
-cross device link
 crypt32.dll
 csgo.exe
-d8L2
-dddd, MMMM dd, yyyy
 deque<T> too long
-destination address required
-device or resource busy
-directory not empty
-double
-e+000
 eHr,g
-eLK(w
-enum 
-executable format error
-extern "C" 
-fabs
-file exists
-file too large
-filename too long
-float
-floor
-fmod
-frexp
-function not supported
 g!jWW
-generic-type-
-h0'D
 hI{L[
 hb?O2
-host unreachable
-i]Wb
 ilg?
-illegal byte sequence
-inappropriate io control operation
-int 
-interrupted
-invalid argument
 invalid bit length
-invalid seek
-invalid string position
-io error
-is a directory
 k:UG
-k=yI
-kernelbase.dll
-ldexp
 lh^jH
-log10
-long
-long 
 lpHP
 ls1=
 lzZ?
 m1WY$
-m\nXo
 map/set<T> too long
-message size
-modf
-nan(ind)
-nan(snan)
-network down
-network reset
-network unreachable
-no buffer space
-no child process
-no link
-no lock available
-no message
-no message available
-no protocol option
-no space on device
-no stream resources
-no such device
-no such device or address
-no such file or directory
-no such process
-not a directory
-not a socket
-not a stream
-not connected
-not enough memory
-not supported
 np?z 
-ntdll.dll
-obwQ4
-operation canceled
-operation in progress
-operation not permitted
-operation not supported
-operation would block
-operator
-operator "" 
-owM&
-owner dead
-permission denied
 pnJ=
-private: 
-protected: 
-protocol error
-protocol not supported
-public: 
 r7Yr7=
-read only file system
-resource deadlock would occur
-resource unavailable try again
-restrict(
-result out of range
 sU0&?W
-short
-short 
-signed 
-sinh
-sqrt
-state not recoverable
-static 
-std::nullptr_t
-std::nullptr_t 
-stream timeout
-string too long
-struct 
 tLVv
-template-parameter-
-text file busy
-timed out
-too many files open
-too many files open in system
-too many links
-too many symbolic link levels
 u?^p?o4
 uXO=
-union 
-unknown
-unsigned 
 user32.dll
-v2!L.2
 vRQ>
 vU_-N
 v^nx
-value too large
-vector<T> too long
 vector<bool> too long
-virtual 
-void
-void 
-volatile
-volatile 
-wchar_t
 wintrust.dll
-wn>Jj
-wrong protocol type
 wsprintfA
 wsprintfW
 xpxxxx
@@ -962,8 +478,6 @@ xwpwpp
 z1}B
 zyC7
 {4Wf
-{flat}
-{for 
 |W8A=
 }1ClS@t
 ~b0R

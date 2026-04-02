@@ -1,49 +1,20 @@
-                          
- !"#$%&'()*+,-./
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
- !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- (Start: 
  -asset maps/%s.vmap
  -gpuraytracing -vulkan
  -retail
  -tools
  -tools -tool cs2_item_editor
  255
- : Extraneous input - expected %s ...\n
- : Extraneous input - expected <EOF>\n
- : Extraneous input...
- : Missing %s \n
- : Missing <EOF>\n
- : Missing token (%d)...\n
- : cannot match to any predicted input...\n
- : error %d : %s
- : expected %s ...\n
- : expected <EOF>\n
- : missing elements...\n
- : syntax error...\n
- : syntax not recognized...\n
- : unexpected input...\n  expected one of : 
  ?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
  ?tr@QLabel@@SA?AVQString@@PEBD0H@Z
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
  Click to inherit.
  Click to override.
- Complete Object Locator'
- LinePos:
- Type Descriptor'
  Y?setDefaultTextOption@QTextDocument@@QEAAXAEBVQTextOption@@@Z
  \f?focusNextPrevChild@QPlainTextEdit@@MEAA_N_N@Z
  \t\n\r@()[]{}=&,:*|;'!
- delete
- delete[]
  near '%s' -
- new
 !?unpolish@QCommonStyle@@UEAAXPEAVQApplication@@@Z
 !?unpolish@QCommonStyle@@UEAAXPEAVQWidget@@@Z
 !?unpolish@QProxyStyle@@UEAAXPEAVQApplication@@@Z
-!link
 ""?updateEditorGeometry@QStyledItemDelegate@@UEBAXPEAVQWidget@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 "%s" -addon %s
 "?updateEditorData@QAbstractItemView@@MEAAXXZ
@@ -73,17 +44,13 @@
 "?wheelEvent@QWidget@@MEAAXPEAVQWheelEvent@@@Z
 "?widget@QLayoutItem@@UEAAPEAVQWidget@@XZ
 "Test"\n{\n"TestKeyForAddon" "%s"\n}\n
-"\nis running without a known mod!\n\nSet the VMOD environment variable or run with -game to set the mod name.\n
 #?widgetAt@QApplication@@SAPEAVQWidget@@AEBVQPoint@@@Z
-#AppFramework_InvalidLocalFiles
-#AppFramework_OutOfMemory
 #CSGO_Cfg_CreateAddon
 #CSGO_Cfg_CreateAddonFileFailed
 #CSGO_Cfg_Edit_Items
 #CSGO_Cfg_Items
 #CSGO_Cfg_Items_Description
 #CSGO_Cfg_Maps
-#General_UnableToStartGame
 #WorkshopCfg_AddonListHeader
 #WorkshopCfg_AddonNotEditable
 #WorkshopCfg_Cancel
@@ -137,112 +104,47 @@
 #WorkshopCfg_WindowTitle
 #\r?hide@QWidget@@QEAAXXZ
 $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
-%02i/%02i %02i:%02i:%02i 
 %\?setUnderline@QFont@@QEAAX_N@Z
-%\tV_ftell
-%lld
-%llu
 %s %s.lnk
-%s allocation count overflow
-%s allocation count overflow( %llu + %llu > %llu )\n
-%s called on a pool arena (no root available)\n
 %s%s: FGD Parse error: %s %s\n
-%s.piw
-%s.vpk
 %s: Variable '%s' is multiply defined with different types.
-%s: allocation of %u too large, max %u\n
-%s: element count overflow (%u)\n
-%s: invalid array remove count %u (current count %u)\n
-%s: invalid array remove point %u (current count %u)\n
-%s: invalid insert point %u (current count %u)\n
-%s: max element overflow, cur count %u + %u\n
-%s: member count overflow (%u)\n
-%s: nLoadError: %d, RequestModule: %s, RequestInterface: %s, Module: %s, Interface: %s
-%s: no space for allocation of %u\n
 %systemdrive%\users\%username%\Desktop
 &\r?hideColumn@QTreeView@@QEAAXH@Z
 ' ?timerEvent@QPlainTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 '%s' is not a valid variable type
 'OverrideClass' was specified but class '%s' has not been previously defined.\n
-'\tV_fwrite
-(Expecting %s)
-(Expecting EOF)
-(None)
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(channel = 
-(end of input).\n\t This indicates a poorly specified lexer RULE\n\t or unterminated input element such as: "STRING["]\n
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n?displayText@QStyledItemDelegate@@UEBA?AVQString@@AEBVQVariant@@AEBVQLocale@@@Z
 )\v?enterEvent@QWidget@@MEAAXPEAVQEvent@@@Z
-*****************: Cannot call CAppSystemDict::AddSystems without initializing first!\n
 *.jpg
 *.psd
 *.tga
-*LANGUAGE*
-*StO9>T
 *^?style@QBrush@@QEBA?AW4BrushStyle@Qt@@XZ
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
-+inf
 , ?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
-, at offset %d
-, near %s
 ,"?updateGeometries@QTableView@@MEAAXXZ
 ,\n?atEnd@QTextCursor@@QEBA_NXZ
 -"?updateGeometries@QTreeView@@MEAAXXZ
--Stop: 
 -addon %s
--con_logfile
--consolelog
 -deprecated_dx9
--dx11
--end of input-(
 -fulllog
--inf
 -mantle
--memory-
 -rename
 -retail
 -skip
--unknown source-
--unknown source-(
--vulkan
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
-../src/shaders
-..\content
 ..\csgo_addons\addon_template
-.00cfg
-.?AV?$CBaseAppSystem@VIApplication@@@@
-.?AV?$CTier0AppSystem@VIApplication@@$0A@@@
-.?AV?$CTier1AppSystem@VIApplication@@$0A@@@
 .?AV?$CToolAttrKV3FGDProvider@VCBaseKV3DataWithFGDClass@@@@
 .?AV?$ITypedPropertyEditDomain@VHToolAttrTableInstance@@PEAVIBaseToolAttr@@@@
-.?AVCAppSystemDict@@
 .?AVCBaseKV3DataWithFGDClass@@
-.?AVCBaseVModuleMetadataProvider@@
 .?AVCClassInput@@
 .?AVCClassInputOutputBase@@
 .?AVCClassOutput@@
-.?AVCColorizedLoggingListener@@
-.?AVCFileLoggingListener@@
-.?AVCGenericExprPart@@
-.?AVCGenericExpr_Binary@@
-.?AVCGenericExpr_BoolLiteral@@
-.?AVCGenericExpr_FloatLiteral@@
-.?AVCGenericExpr_FunctionCall@@
-.?AVCGenericExpr_IntLiteral@@
-.?AVCGenericExpr_Property@@
-.?AVCGenericExpr_StringLiteral@@
-.?AVCGenericExpr_TernaryConditional@@
-.?AVCGenericExpr_Unary@@
-.?AVCGenericExpr_VariableReference@@
 .?AVCKV3FGDToolAttr@@
-.?AVCKV3TransferContextBase@@
-.?AVCKV3TransferLoadContext@@
-.?AVCModuleMetadataProvider_ResourceManifests@@
 .?AVCOwnedKV3DataWithFGDClass@@
-.?AVCPostConnectCallback@@
 .?AVCQChooserMainWindow@@
 .?AVCQChooserWidget@@
 .?AVCQConnectHelper_bool@@
@@ -257,26 +159,12 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCQTabbedStyle@@
 .?AVCQTreeWidgetWithArrowEvents@@
 .?AVCQValveLocalizationToQtTranslator@@
-.?AVCSchemaInstallCallback@@
-.?AVCSimpleLoggingListener@@
-.?AVCSimpleWindowsLoggingListener@@
-.?AVCThreadedFileLogger@@
-.?AVCThreadedLogger@@
-.?AVCTier1AppSystemDict@@
-.?AVCTier1Application@@
-.?AVCTier2AppSystemDict@@
-.?AVCTier2Application@@
 .?AVCToolAttrHost@@
 .?AVCToolAttrPropertyDomain@@
 .?AVCToolEditContextQuery_Base@@
 .?AVCToolEditContextQuery_String@@
-.?AVIAppSystem@@
-.?AVIApplication@@
 .?AVIBaseToolAttr@@
-.?AVIErrorListener@@
-.?AVIFileLoggingListener@@
 .?AVIKV3FGDTargetResolver@@
-.?AVILoggingListener@@
 .?AVIPropertyEditDomain@@
 .?AVIToolAttrExpressionGlobals@@
 .?AVIToolAttrHost@@
@@ -327,91 +215,12 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVQVBoxLayout@@
 .?AVQValidator@@
 .?AVQWidget@@
-.?AV_Generic_error_category@std@@
-.?AV_System_error@std@@
-.?AV__non_rtti_object@std@@
-.?AVbad_alloc@std@@
-.?AVbad_array_new_length@std@@
-.?AVbad_cast@std@@
-.?AVbad_exception@std@@
-.?AVbad_function_call@std@@
-.?AVbad_typeid@std@@
-.?AVerror_category@std@@
-.?AVexception@std@@
-.?AVlength_error@std@@
-.?AVlogic_error@std@@
-.?AVruntime_error@std@@
-.?AVsystem_error@std@@
-.?AVtype_info@@
-.CRT$XCA
 .CRT$XCAA
-.CRT$XCC
-.CRT$XCU
-.CRT$XCZ
-.CRT$XDA
-.CRT$XDZ
-.CRT$XIA
 .CRT$XIAA
 .CRT$XIAC
-.CRT$XIC
-.CRT$XIZ
-.CRT$XLA
-.CRT$XLC
-.CRT$XLZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
-.bss
-.cfg
-.data
-.data$r
-.data$rs
-.dll
-.edata
-.exe
 .fgd
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.pdata
-.rdata
-.rdata$00
-.rdata$T
-.rdata$r
-.rdata$voltmd
-.rdata$zzzdbg
-.rsrc$01
-.rsrc$02
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
-.text$di
-.text$mn
-.text$mn$00
-.text$mn$21
-.text$x
-.text$yd
-.tls
-.tls$
-.tls$ZZZ
-.vpk
-.xJ>Hf
-.xdata
-.xdata$x
-/content/
 /e,/select,"
-/game/
-/src/
-0iN>/
-11Y@
 13:41:54
-1:1: Tokens : ( T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
 1AcceptIfItemPicked()
 1OnAccept()
 1OnAddonDoubleClicked()
@@ -446,7 +255,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2UpArrowPressed()
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
-2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
 2\vppV
 2accepted()
@@ -461,56 +269,22 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2textChanged(QString)
 2timeout()
 2triggered()
-37>k
-3>N;kU
-3>fvw
 3T?pen@QPainter@@QEBAAEBVQPen@@XZ
 3\f?focusOutEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 3\n?doItemsLayout@QTableView@@UEAAXXZ
-488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 6\f?focusOutEvent@QPlainTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-: lexer error %d :\n\t%s at offset %d, 
 :/images/lock.png
 :\f?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
 :\n?doSetTextCursor@QPlainTextEdit@@MEAAXAEBVQTextCursor@@@Z
-;?0123456789:;<=>?
 ;\v?event@QDialogButtonBox@@MEAA_NPEAVQEvent@@@Z
-<DOWN>
-<EOF>
-<EOR>
 <UNKNOWN>
-<Unknown>
 <\f?deallocate@QArrayData@@SAXPEAU1@_K1@Z
-<array: %u elements>
-<binary blob: %u bytes>
-<empty member name>
-<invalid>
 <map_key>
 <map_value>
-<missing 
-<no failure reason set>
-<no text for the token>
-<pointer>
-<table: %u members>
-<unknown KV3 basic type '%s' (%d)>
-<unknown>
 <unnamed>
-=cQ6
-=imb;D
->cQ6
->jtm}S
-?7zQ6$
-??0CSingleAppInstance@@QEAA@PEBD_N1@Z
-??0CTSListBase@@QEAA@XZ
-??0CThreadEvent@@QEAA@_N@Z
-??0CThreadLocalScope@@QEAA@PEAUThreadHandle_t__@@_N@Z
-??0CUtlBuffer@@QEAA@HHW4BufferFlags_t@0@@Z
-??0CUtlString@@QEAA@AEBVCBufferString@@@Z
-??0CUtlSymbolTable@@QEAA@HH_N@Z
-??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
 ??0QAction@@QEAA@AEBVQIcon@@AEBVQString@@PEAVQObject@@@Z
 ??0QAction@@QEAA@AEBVQString@@PEAVQObject@@@Z
 ??0QAction@@QEAA@PEAVQObject@@@Z
@@ -602,12 +376,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??0QVariant@@QEAA@XZ
 ??0QVariant@@QEAA@_N@Z
 ??0QWidget@@QEAA@PEAV0@V?$QFlags@W4WindowType@Qt@@@@@Z
-??1CSingleAppInstance@@QEAA@XZ
-??1CThreadLocalScope@@QEAA@XZ
-??1CThreadSyncObject@@QEAA@XZ
-??1CUtlSymbolTable@@QEAA@XZ
 ??1Connection@QMetaObject@@QEAA@XZ
-??1KeyValues@@QEAA@XZ
 ??1QAction@@UEAA@XZ
 ??1QApplication@@UEAA@XZ
 ??1QBrush@@QEAA@XZ
@@ -664,9 +433,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??1QVBoxLayout@@UEAA@XZ
 ??1QVariant@@QEAA@XZ
 ??1QWidget@@UEAA@XZ
-??2KeyValues@@SAPEAX_K@Z
-??3KeyValues@@SAXPEAX@Z
-??4CUtlString@@QEAAAEAV0@AEBVCBufferString@@@Z
 ??4QBrush@@QEAAAEAV0@$$QEAV0@@Z
 ??4QColor@@QEAAAEAV0@AEBV0@@Z
 ??4QColor@@QEAAAEAV0@W4GlobalColor@Qt@@@Z
@@ -676,113 +442,10 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??4QStyleOption@@QEAAAEAV0@AEBV0@@Z
 ??4QTextCursor@@QEAAAEAV0@$$QEAV0@@Z
 ??4QVariant@@QEAAAEAV0@AEBV0@@Z
-??8CUtlString@@QEBA_NAEBV0@@Z
-??8CUtlString@@QEBA_NAEBVCBufferString@@@Z
 ??A?$QVector@VQPoint@@@@QEAAAEAVQPoint@@H@Z
-??ACUtlString@@QEBADH@Z
 ??MQTableWidgetItem@@UEBA_NAEBV0@@Z
 ??MQTreeWidgetItem@@UEBA_NAEBV0@@Z
-??YCUtlString@@QEAAAEAV0@PEBD@Z
 ??YQString@@QEAAAEAV0@AEBV0@@Z
-?AbsPath@CUtlString@@QEBA?AV1@PEBD@Z
-?Acquire@CUtlString@@QEAAXPEAVCBufferString@@_N@Z
-?AcquireLock@CAtomicMutex@@AEAAXI@Z
-?AddString@CUtlSymbolTable@@QEAA?AVCUtlSymbol@@PEBDPEA_N@Z
-?Append@CUtlString@@QEAAXPEBD@Z
-?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
-?AppendFormat@CBufferString@@QEAAHPEBDZZ
-?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
-?CheckArbitraryPeekGet@CUtlBuffer@@QEAA_NHAEAH@Z
-?CheckForOtherRunningInstances@CSingleAppInstance@@QEAA_N_N0@Z
-?CheckGet@CUtlBuffer@@IEAA_NH@Z
-?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
-?DefaultExtension@CBufferString@@QEAAPEBDPEBD@Z
-?Detach@CTSListBase@@QEAAPEAUTSLNodeBase_t@@XZ
-?EndsWith@CBufferString@@QEBA_NPEBD@Z
-?EnsureTrailingSlash@CBufferString@@QEAAPEBDD_N@Z
-?ExtendPath@CBufferString@@QEAAPEBDPEBDD_N@Z
-?ExtractFileBase@CBufferString@@QEAAPEBDPEBD_N@Z
-?ExtractFilePath@CBufferString@@QEAAPEBDPEBD_N@Z
-?Find@CUtlSymbolTable@@QEBA?AVCUtlSymbol@@PEBD@Z
-?FindAndDeleteSubKey@KeyValues@@QEAA_NPEBD@Z
-?FindKey@KeyValues@@QEAAPEAV1@PEBD_N@Z
-?FindKey@KeyValues@@QEBAPEBV1@PEBD@Z
-?FioReadFileToBuffer@@YAHPEBDPEAVCUtlBuffer@@H@Z
-?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixSlashes@CUtlString@@QEAAXD@Z
-?FixupPathName@CBufferString@@QEAAPEBDD@Z
-?Format@CBufferString@@QEAAHPEBDZZ
-?Format@CUtlString@@QEAAHPEBDZZ
-?FreeMemoryBlock@CUtlString@@AEAAXXZ
-?GetDataType@KeyValues@@QEBA?AW4types_t@CKeyValues_Data@@PEBD@Z
-?GetExtensionAlloc@CUtlString@@QEBA?AV1@XZ
-?GetFirstSubKey@KeyValues@@QEAAPEAV1@XZ
-?GetFirstValue@KeyValues@@QEAAPEAV1@XZ
-?GetForModify@CUtlString@@QEAAPEADXZ
-?GetInt@KeyValues@@QEBAHPEBDH@Z
-?GetName@KeyValues@@QEBAPEBDXZ
-?GetNextKey@KeyValues@@QEAAPEAV1@XZ
-?GetNextValue@KeyValues@@QEAAPEAV1@XZ
-?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
-?InternalPop@CTSListBase@@AEAAPEAUTSLNodeBase_t@@XZ
-?InternalPush@CTSListBase@@AEAAXPEAUTSLNodeBase_t@@@Z
-?Internal_GetString@CKeyValues_Data@@IEAAPEBDPEBDPEAD_K@Z
-?IsEqual_CaseSensitive@CUtlString@@QEBA_NPEBD@Z
-?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
-?LoadFromBuffer@KeyValues@@QEAA_NPEBDAEAVCUtlBuffer@@PEAVIFileSystem@@0P6A_N0PEAX@ZPEAVIKeyValuesErrorSpew@@30@Z
-?LoadFromFile@KeyValues@@QEAA_NPEAVIFileSystem@@PEBD1P6A_N1PEAX@Z21@Z
-?LoadKV3@@YA_NPEAVCKV3Arena@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z
-?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBDAEBUKV3ID_t@@2I@Z
-?LoadKV3FromKV1Text_Translated@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBDW4KV1TextEscapeBehavior_t@@PEBUKV1ToKV3Translation_t@@H2_NI@Z
-?LoadKV3Text_NoHeader@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBDAEBUKV3ID_t@@2I@Z
-?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULoggingRareOptions_t@@PEBDZZ
-?LooksLikeKV3TextData@@YA_NPEBXHPEAUKV3ID_t@@PEADH@Z
-?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
-?MakeRelativePath@CBufferString@@QEAAPEBDPEBD0_N@Z
-?MergeFrom@KeyValues@@QEAAXPEBV1@W4MergeKeyValuesOp_t@1@@Z
-?MoveFrom@CBufferString@@QEAAXAEAV1@@Z
-?PathJoin@CUtlString@@SA?AV1@PEBD0@Z
-?Plat_RedirectThisProcessStdioToFile@@YA_NHI@Z
-?Printf@CUtlBuffer@@QEAAXPEBDZZ
-?Purge@CBufferString@@QEAAXH@Z
-?Purge@CUtlString@@QEAAXXZ
-?RemoveAll@CUtlSymbolTable@@QEAAXXZ
-?RemoveAt@CBufferString@@QEAAPEBDHH@Z
-?RemoveDotSlashes@CBufferString@@QEAAPEBDD@Z
-?RemoveDotSlashes@CUtlString@@QEAAXD@Z
-?RemoveFirstDir@CBufferString@@QEAAPEBDPEAV1@@Z
-?Replace@CBufferString@@QEAAHPEBD0_N@Z
-?Replace@CUtlString@@QEBA?AV1@PEBD0_N@Z
-?SaveKV3ToFile@@YA_NAEBUKV3ID_t@@0PEBVKeyValues3@@PEAVCUtlString@@PEBD3I@Z
-?SaveToFile@KeyValues@@QEAA_NPEAVIFileSystem@@PEBD1_N2@Z
-?Set@CThreadEvent@@QEAA_NXZ
-?Set@CUtlString@@QEAAXPEBD@Z
-?SetDirect@CUtlString@@QEAAXPEBDH@Z
-?SetExtension@CBufferString@@QEAAPEBDPEBD_N@Z
-?SetExternalBuffer@CUtlBuffer@@QEAAXPEAXHHW4BufferFlags_t@1@@Z
-?SetInt@KeyValues@@QEAAXPEBDH@Z
-?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
-?SetString@KeyValues@@QEAAXPEBD0@Z
-?ShortenPath@CBufferString@@QEAAPEBD_N@Z
-?Split@CSplitString@@AEAAXPEBDHPEAPEBDH_N@Z
-?String@CUtlSymbolTable@@QEBAPEBDVCUtlSymbol@@@Z
-?StripExtension@CBufferString@@QEAAPEBD_N@Z
-?StripExtension@CUtlString@@QEBA?AV1@XZ
-?StripFilename@CUtlString@@QEBA?AV1@XZ
-?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
-?ThreadAtomicNotifyOne@@YAXPEAI@Z
-?ToLowerFast@CBufferString@@QEAAXH@Z
-?ToLowerFast@CUtlString@@QEAAXXZ
-?ToUpperFast@CUtlString@@QEAAXXZ
-?Trim@CBufferString@@QEAAPEBDPEBD@Z
-?TrimTail@CBufferString@@QEAAPEBDPEBD@Z
-?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
-?UUUUUU
-?V_stristr_fast@@YAPEBDPEBD0@Z
-?V_strnlen@@YAHPEBDH@Z
-?Wait@CThreadSyncObject@@QEAA_NI@Z
 ?absoluteFilePath@QFileInfo@@QEBA?AVQString@@XZ
 ?accept@QDialog@@UEAAXXZ
 ?accepted@QDialogButtonBox@@QEAAXXZ
@@ -861,7 +524,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?drawRects@QPainter@@QEAAXPEBVQRect@@H@Z
 ?drawRoundedRect@QPainter@@QEAAXAEBVQRectF@@NNW4SizeMode@Qt@@@Z
 ?endEditBlock@QTextCursor@@QEAAXXZ
-?f`Y4
 ?fillRect@QPainter@@QEAAXAEBVQRect@@AEBVQBrush@@@Z
 ?fillRect@QPainter@@QEAAXAEBVQRect@@AEBVQColor@@@Z
 ?find@QTextDocument@@QEBA?AVQTextCursor@@AEBVQString@@AEBV2@V?$QFlags@W4FindFlag@QTextDocument@@@@@Z
@@ -1023,7 +685,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?polish@QProxyStyle@@UEAAXPEAVQApplication@@@Z
 ?property@QObject@@QEBA?AVQVariant@@PEBD@Z
 ?proxy@QStyle@@QEBAPEBV1@XZ
-?qBJ
 ?qBadAlloc@@YAXXZ
 ?qRegisterResourceData@@YA_NHPEBE00@Z
 ?qUnregisterResourceData@@YA_NHPEBE00@Z
@@ -1281,110 +942,30 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?trimmed@QString@@QEGBA?AV1@XZ
 ?typeFlags@QMetaType@@SA?AV?$QFlags@W4TypeFlag@QMetaType@@@@H@Z
 ?userType@QVariant@@QEBAHXZ
-?ysB
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
-A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
-A>pP&
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-ADDONROOT
-ADDONS
-ANTLR3_EXCEPTION number %d (%08X).\n
-ANTLR3_EXCEPTION: %s\n
-APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!\n
 ARRAY_MEMBERS_VIA_PARENT
 ARRAY_PARENT_ONLY
 AcceptIfItemPicked
-Access violation - no RTTI data!
-AcquireSRWLockExclusive
 Active
-Actually dude, we didn't seem to be expecting anything here, or at least\n
-AddonConfig/RestrictFlatFileAddonsToTools
-AddonConfig/UseOfficialAddons
-AddonsChangeDefaultWritePath
-Alert
-AlignedByteArray not properly aligned\n
-AllowAddonDependencies
 Already running on this machine. Only one instance at a time is allowed.
 AlternateBase
 AnimGraph2Clip()
-AnimGraphEditorUtils001
-AnimationSystemUtils_001
-AnimationSystem_001
 AnimgraphPicker()
-AppPolicyGetProcessTerminationMethod
-AppPolicyGetThreadInitializationType
-AppSystemDict: Attempted to add two different systems with the same interface name %s!\n(Addresses differ: existing '%s' @ '%p' != requested '%s' @ '%p')\n
-AppSystemDict: Attempted to add two different systems with the same interface name %s!\n(Module names differ: existing '%s' != requested '%s')\n
-AppSystemDict: Attempted to add two different systems with the same interface name %s!\n(Modules differ: existing '%p' != requested '%p')\n
-AppSystemDict: Error in Connect() of interface '%s'!\n
-AppSystemDict: Error in Init() of interface '%s'!\n
-AppSystemDict: Interface '%s' (tier %d) depends on interface '%s' (tier %d) but is in a lower tier!\n
-Application
-Application "
-Application unable to load gameinfo.gi file from directory "%s"\n%s
-ApplicationInfo
 Applies ONLY if the item is a member of an array
 Applies ONLY if the item is the parent of an array
 Applies to any attributes
 Applies to array parents or non-array items (just not array members)
-April
-AreFileApisANSI
 AssetBrowse( %s )
-AssetBrowserSystem_001
-AssetPreviewSystem_001
-AssetRenameSystem_001
-AssetSystem001
-AssetSystemTest001
 Attribute.%s.%s
-Audio
-August
-BACKSLASH_CHAR
-BC?>6t9^\tc:>
-BF>^G
 B`?translate@QPainter@@QEAAXAEBVQPointF@@@Z
 Bad class description
-Bad dynamic_cast!
 Bad input/output type '%s'
 Bad metadata for %s
 Bad variable description
 Bad variable long name
-BakedLODBuilderMgr001
 Base
-Base recognizer function 'alreadyParsedRule' called by unknown parser type - provide override for this function\n
-Base recognizer function 'consumeUntil' called by unknown parser type - provide override for this function\n
-Base recognizer function 'consumeUntilSet' called by unknown parser type - provide override for this function\n
-Base recognizer function 'match' called by unknown parser type - provide override for this function\n
-Base recognizer function 'matchAny' called by unknown parser type - provide override for this function\n
-Base recognizer function 'mismatch' called by unknown parser type - provide override for this function\n
-Base recognizer function 'synPred' called by unknown parser type - provide override for this function\n
-Base recognizer function antlr3RecognitionExceptionNew called by unknown parser type - provide override for this function\n
-Base recognizer function consumeUntilSet called by unknown parser type - provide override for this function\n
-Base recognizer function displayRecognitionError called by unknown parser type - provide override for this function\n
-Base recognizer function recover called by unknown parser type - provide override for this function\n
-Base recognizer function recoverFromMismatchedSet called by unknown parser type - provide override for this function\n
-Base recognizer function recoverFromMismatchedToken called by unknown parser type - provide override for this function\n
-BenchmarkService001
 Between the attribute label and editor
-BinAdd
-BinDiv
-BinEq
-BinGt
-BinGtE
-BinInvalid
-BinLogAnd
-BinLogOr
-BinLt
-BinLtE
-BinMod
-BinMul
-BinNe
-BinSub
-BinaryProperties_GetValue
-Black
-Blue
-BreakpadAppId
-BreakpadAppId_Tools
 BrightText
 Button
 ButtonBackground
@@ -1393,34 +974,8 @@ ButtonHighlight
 ButtonPressed
 ButtonText
 C:\buildworker\csgo_rel_win64\build\_build_\utils\workshopcfg\_vpc_csgocfg\default\win64\_msvc_\Retail\csgocfg.pdb
-C:\buildworker\csgo_rel_win64\build\src\mathlib\extended\generic_expr.g
-C:\buildworker\csgo_rel_win64\build\src\public\appframework\tier2app.h
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\tslist.h
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
 C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\toolattr_propertydomain.cpp
-CAppSystemDict::Connect( %-32s ) %8.3f msec
-CAppSystemDict::Init   ( %-32s ) %8.3f msec
-CAppSystemDict::LoadModuleInPath( %-23s ) %8.3f msec
-CAppSystemDict::LoadSystemAndDependencies
-CAppSystemDict:Unable to create interface %s from %s (Dependency of %s)\n
-CAppSystemDict:Unable to load interface factory %s from %s (Dependency of %s), error %d\n
-CAppSystemDict:Unable to load module %s (Dependency of %s), error %d\n
 CBaseKV3DataWithFGDClass
-CKV3Arena::Root
-CKeyValues3Array::EnsureElementCapacity
-CKeyValues3Array::InsertMultipleBefore
-CKeyValues3Array::RemoveMultiple
-CKeyValues3Table::EnsureMemberCapacity
-CLOSE_BRACE
-CLOSE_BRACKET
-CLOSE_PAREN
-CMemAllocSystemInitialize
-COMMA
-COM_TimestampedLog
-CONTENT
-CONTENTADDONS
-CONTENTROOT
-CPU_EMULATED
 CQChooserMainWindow
 CQChooserWidget
 CQClickableLabel
@@ -1465,95 +1020,30 @@ CQTabbedStyle
 CQTabbedStyle_ToolButton_Stealthy
 CQTabbedToolButton
 CQTreeWidgetWithArrowEvents
-CTSQueue corruption
-CTSQueue: Misaligned queue\n
-CTSQueue<struct CThreadedLogger::Buffer_t *,0>::Push
-CThreadedFileLogger
-CTier2AppSystemDict::Init
-CTier2AppSystemDict::LoadStartupManifestGroup
 CToolAttrPropertyDomain::GetVDataChoiceFriendlyNameForValue
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
-CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::AddPage
-CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::Alloc
 CUtlRBTree<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,class CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlSymbolTableLarge element limit of %u exceeded\n
-Can't find '%s'
-Cannot run executable from '_build_' intermediate dir: %s
-Cast of %s loses value information (returning %s)\n
-CharacterSetBuild
 CheckmarkPossible
-Class data is a '%s', not a table\n
-ClientToolsInfo_001
-CloseHandle
-CoCreateInstance
-CommandLine
-ConVars
-ConsoleStartup
-CorExitProcess
 Could not load color map %s: %s\n
 Counter-Strike 2 Workshop Submission
 Courier
-CreateFileA
-CreateFileW
-CreateThread
 CurveEditor
-DEFAULT_WRITE_PATH
-DEV_BUILD
-DIGIT
-DOUBLE_AND
-DOUBLE_OR
-DOUBLE_QUOTED_STRING
-DOUBLE_QUOTE_CHAR
 Dark
 DarkSplitter
 DarkSplitterHandle
-December
-DeclareCurrentThreadIsMainThread
 DefaultButtonBackground
 DefaultButtonInnerBorder
 DefaultButtonOuterBorder
-Default_Keys
-DeleteCriticalSection
-DemoUpconverterVersion001
-Dependencies
 Didn't expect '=' for non-flags non-choices variable %s
-Disabled
-Disallowed variable name: %s
 Do not show in the row (but maybe show in context menu)
 DockWidgetTitleBackground
 DownArrowPressed
-ERROR: CUtlSymbolTableLarge element limit of %u exceeded\n
-ERROR: Detected mismatched logging state. Expected matching LoggingSystem_PushLoggingState/LoggingSystem_PopLoggingState.\n
-ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!\n
-ESCAPE_CHAR
-ESCAPE_CODE
-ET5>
-EXECUTABLE_PATH
-EXPONENT
-EXPORTSYSTEM_INTERFACE_VERSION_001
-Early exit
-EarlyInit_Tier0
-EconItemToolModel_001
 Element.%s
-EncodePointer
-Encountered a circular dependency with library %s!\n
-EngineServiceMgr001
-EnsureCapacity
-EnterCriticalSection
-Error
 Error including file: %s
 Error parsing class '%s'
-Error reading file "%s\gameinfo.gi"!\n\tThis is necessary to run!
 Error, duplicate class '%s'. Use @OverrideClass to add keys to an existing class.\n
 Error: missing 'filter_type' key in @VisGroupFilter specification
 Error: missing 'group' key in @VisGroupFilter specification
 Error: unknown vis group filter type: '%s' in @VisGroupFilter specification
-Executable Location
-Executable Location: %s
-ExitProcess
-ExitThread
-ExpandEnvironmentStringsA
 Expected '@'
 Expected a default value
 Expected a string literal for description
@@ -1588,274 +1078,71 @@ Expecting integers 'r' 'g' 'b'
 Expecting numbers 'max_x' 'max_y' 'max_z'
 Expecting numbers 'min_x' 'min_y' 'min_z'
 Expecting tag name
-ExtractModuleMetadata
-Extraneous token
 FGD Variable %s has bad default value %d (has bits set that are not valid choices)
 F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
-Failed To Load '%s'! VConsole Communication Disabled!\n
-Failed to allocate a lexer for '%s'. (Out of memory?)
-Failed to allocate a parser for '%s'. (Out of memory?)
-Failed to allocate a token stream for '%s'. (Out of memory?)
 Failed to allocate an instance of a class
-Failed to determine base game directory from %s
-Failed to load branch info '%s'
-Failed to load layered mod '%s'.  %s
-Failed to map from %s to content-path\n
 Failed to map from %s to game-path\n
-Failed to parse KeyValues
-February
-FileSystem
-FileSystem/SearchPaths
 Filter name/description:
-FindClose
-FindFirstFileExW
-FindNextFileW
-FixupResourceName: Illegal full path passed in ("%s")!\n
-FixupResourceName: Illegal path, missing extension passed in ("%s")!\n
 Flag sets do not have long names
 FlatSelection
-FlattenedSerializersVersion001
-Float( %f )
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
-FontManager_001
-Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
-FreeEnvironmentStringsW
-FreeLibrary
-FreeLibraryAndExitThread
-Friday
-Functions not supported in this evaluator (%s)
-GAME
-GAMEBIN
-GAMEROOT
-GCTL
-Game info file does not specify a steam app id!\n
-GameResourceServiceClientV001
-GameResourceServiceServerV001
-GameStartup
-GameStartup_RayTracing
-GameStartup_SM40
-GameStartup_SM50
-GameUIService_001
-GetACP
-GetAddonsContentDirectory: Failed to find CONTENTADDONS search path.\n
-GetAddonsDirectory: Failed to find ADDONS search path.\n
-GetAvailableAddonMaps failed to find any maps in the '%s' addon - trying fallback maps:
-GetCPInfo
-GetCPUInformation
-GetCommandLineA
-GetCommandLineW
-GetConsoleMode
-GetConsoleOutputCP
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
-GetDefaultMiniDumpTypeFlags
-GetEnvironmentStringsW
-GetExitCodeThread
-GetFileType
-GetLastError
-GetModuleFileNameA
-GetModuleFileNameW
-GetModuleHandleA
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetResourceManifestCount
-GetResourceManifests
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemTimeAsFileTime
-GetSystemTimePreciseAsFileTime
-GetTempPath2W
-GetThreadLocalStackAllocator
 GetVDataChoiceFriendlyNameForValue
-GetWin32ConsoleCursorColumnIndex
 Gradient()
-Green
 Grid
-HH:mm:ss
 HammerEntityPicker()
-HammerMapLoader001
 HeaderSectionBackground
 HeaderSectionLine
-HelpSystem_001
 HideInTools
 Highlight
 HighlightedText
-HostStateMgr001
-I could not work out what I was expecting, like so many of us these days!\n
 IDAT8
-ID_CHAR
 IEND
 INLINE
-IPulseSystem_001
 I\n?compare@QString@@QEBAHAEBV1@W4CaseSensitivity@Qt@@@Z
-Inactive
 Inert VModuleMetadata
-InitWin32ConsoleColorContext
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
 InnerHighlight
-Input
-InputService_001
-InputStackSystemVersion001
-InputSystemVersion001
-InstallSchemaBindings
-Invalid search path specified for '%s'. Search path '%s' does not contain '%s'\n
-InvokeMiniDumpHandler
-IsDebuggerPresent
 IsEmbeddedSubClass
 IsPlayable
-IsProcessorFeaturePresent
 IsTemplate
-IsValidCodePage
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
 J\v?event@QLabel@@MEAA_NPEAVQEvent@@@Z
-January
-July
-June
-KERNEL32.dll
 KV3 syntax error: %s
 KV3 syntax error: %s while parsing @entitygroup %s
 KV3DefaultTestFnName
 K\v?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
-KeyValueCache001
-KeyValues3: pre-allocated array memory is too small for %u elements (%u bytes available, %u bytes needed)\n
-KeyValues3: pre-allocated table memory is too small for %u members (%u bytes available, %u bytes needed)\n
-KeyValuesSystem
-L>ev
-LAYEREDGAMEROOT
-LCMapStringEx
-LCMapStringW
-LEFT
-LINE_CONTINUATION
-LITERAL_FALSE
-LITERAL_TRUE
-LOG_DEVELOPER
-LOG_DEVELOPER_CONSOLE
-LOG_GENERAL
 L\r?hitButton@QToolButton@@MEBA_NAEBVQPoint@@@Z
-LayeredGameRoot
-LayeredOnMod
 Layout Side To Side
 Layout Top To Bottom
-LeaveCriticalSection
-Lexer encountered %d error(s)
 Light
 LightSplitterHandle
 LighterLine
 LighterToolbar
-Line: 
 Link
 LinkVisited
 LinkedEntityClass
 LoadKV3Object error: %s\n
-LoadLibraryExW
-LocaleNameToLCID
-Localize_001
-LoggingSystem_CurrentStateIndex
-LoggingSystem_GetChannel
-LoggingSystem_IsChannelEnabled
-LoggingSystem_Log
-LoggingSystem_PopLoggingState
-LoggingSystem_PushLoggingState
-LoggingSystem_RegisterBackdoorLoggingListener
-LoggingSystem_RegisterLoggingChannel
-LoggingSystem_RegisterLoggingListener
-LoggingSystem_ResetBackdoorLoggingState
-LoggingSystem_ResetCurrentLoggingState
-LoggingSystem_SetChannelVerbosity
-LoggingSystem_UnregisterLoggingListener
 LowerLine
-MATCHFRAMEWORK_001
-MINIDUMP_WRAP_CODE: In __except block\n
 MINIDUMP_WRAP_MAIN: In __except block\n
-ML_COMMENT
-MM/dd/yy
-MODEL_PROCESSING_SERVICES_INTERFACE_001
-MPropertyProvidesEditContextString
 MVDataOutlinerLeafNameFn
 M\n?done@QDialog@@UEAAXH@Z
-MapListService_001
 Maps
-Mar 11 2026
-March
-MaterialUtils_001
-MemAlloc_AllocFunc
-MemAlloc_CallocFunc
-MemAlloc_FreeFunc
-MemAlloc_ReallocFunc
-MemAlloc_StrDupFunc
-MemAlloc_StrDupWrapperFunc
 MenuBackground
 MenuBarGradientEnd
 MenuBarGradientStart
 MenuGradientEnd
 MenuGradientStart
-MeshSystem001
-MeshUtils001
 Midlight
-MiniDumpExceptionHandler
-MinidumpAgeLogs
-MinidumpLog
-Mismatched CTier2AppSystemDict::SetAllowAddonChanges!!!\n
-Mismatched Token Exception
-Mismatched set
-Missing file '%s'
-Missing token
-Missing token %s
 ModelAnimGraph2Identifier()
-ModelDocUtils001
 ModelMaterialGroupName()
-Monday
-MountAddon: Failed to find ADDONS search path.\n
-MountAddonSearchPaths: Failed to find CONTENTADDONS search path.\n
-MultiByteToWideChar
 N020
 N?highlight@QPalette@@QEBAAEBVQBrush@@XZ
 NColorRoles_Qt
-NEGATIVE_TOK
-NEWLINE
-NONE
 NOT_ARRAY_MEMBERS
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
-NavGameTest001
-NavSystem001
-NetworkClientService_001
-NetworkMessagesVersion001
-NetworkP2PService_001
-NetworkServerService_001
-NetworkService_001
-NetworkSystemVersion001
 New Item Type
-Newline in string literal
 No %s specified. Expected '=' '[' <%s> ']'
-No closing */ before end of file
-No data
-No expression!
-No input data for '%s'. (Empty buffer.)
-No know mod!
-NoDefaultModPath
 NoRole
-November
-OFFICIAL_ADDONS
 OP?isNull@QIcon@@QEBA_NXZ
-OPEN_BRACE
-OPEN_BRACKET
-OPEN_PAREN
-OP_EQUAL
-OZQ%
 O\r?hitTestComplexControl@QCommonStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
-October
 OnAccept
 OnAddonDoubleClicked
 OnAddonSelectionChanged
@@ -1890,66 +1177,13 @@ Optional properties not fully supported in property editor (text editor required
 P2`A
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
-PLATFORM
-PNG\r\n
-POS_FLOATLITERAL
-POS_INTLITERAL
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
-PanoramaCoreStartup
 PanoramaImage()
 PanoramaLayout()
 PanoramaStyle()
-PanoramaTextServices001
-PanoramaUIClient001
-PanoramaUIEngine001
 PanoramaVideo()
-Parser encountered %d error(s)
 ParticleCompileBinaryIdenticalHack_underlying_struct
-ParticleSystemMgr003
-PhysicsBuilderMgr001
 PlaceholderText
-Plat_AttachDebuggerToProcess
-Plat_CheckSDL
-Plat_DebugString
-Plat_DisableIOBuffering
-Plat_ExitProcess
-Plat_FatalError
-Plat_FileExists
-Plat_FileIsReadOnly
-Plat_GetCurrentDirectory
-Plat_GetEnv
-Plat_GetExecutablePathUTF8
-Plat_GetGameDirectory
-Plat_GetLocalTime
-Plat_GetModuleFilename
-Plat_GetModuleInterfaceFactory
-Plat_GetTime
-Plat_IgnoreContentAsserts
-Plat_InitializeCOM
-Plat_IsCPUEmulated
-Plat_IsDirectory
-Plat_IsInDebugSession
-Plat_IsInTestMode
-Plat_IsRunningOnCustomerMachine
-Plat_LoadModule
-Plat_LoadModuleRaw
-Plat_LoadSDL
-Plat_MessageBox
-Plat_NonFatalErrorFunc
-Plat_NotifyOSAppIsNotHung
-Plat_OnExecutableExitingMain
-Plat_RegisterModule
-Plat_RelativeTicks
-Plat_RemoveFile
-Plat_SafeRemoveFile
-Plat_SetGameDirectories
-Plat_ShutdownCOM
-Plat_TickDiffMilliSecF
-Plat_UnloadModule
-Plat_UnloadSDL
-Pointers cannot be used as numeric values
-PostProcessingSystem_001
-PropertyEditorSystem_001
 Q?loadResource@QTextDocument@@MEAA?AVQVariant@@HAEBVQUrl@@@Z
 QAbstractButton*
 QAbstractScrollArea
@@ -1959,177 +1193,33 @@ QPlainTextEdit
 QTextDocument*
 QTreeWidgetItem*
 QWidget*
-Qt5Core.dll
-Qt5Gui.dll
 Qt5Widgets.dll
-QueryPerformanceCounter
 R?metaObject@QRegExpValidator@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QTextDocument@@UEBAPEBUQMetaObject@@XZ
-RIGHT
 RSDSb
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\fppV
 R\r?hitTestComplexControl@QProxyStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
-RaiseException
-Recognition Exception
-Recognition exception
-RegisterConCommand: Unknown error registering con command "%s"!\n
-RegisterConVar: Unknown error registering convar "%s"!\n
-Release
-ReleaseSRWLockExclusive
-Render
-RenderDevice003
-RenderDeviceMgr001
-RenderHardwareConfig002
-RenderService_001
-RenderUtils_001
 Reset to Default
-ResourceCompilerSystem001
-ResourceHandleUtils001
-ResourceManifestRegistry001
-ResourceSystem013
-RestoreWin32ConsoleColor
 RichItemList_Accept
 RichItemList_Reject
-RoInitialize
-RoUninitialize
-RtlCaptureContext
-RtlLookupFunctionEntry
-RtlPcToFileHeader
-RtlUnwindEx
-RtlVirtualUnwind
-S9>H
 S?movePosition@QTextCursor@@QEAA_NW4MoveOperation@1@W4MoveMode@1@H@Z
 S?openUrl@QDesktopServices@@SA_NAEBVQUrl@@@Z
 S?paint@QIcon@@QEBAXPEAVQPainter@@AEBVQRect@@V?$QFlags@W4AlignmentFlag@Qt@@@@W4Mode@1@W4State@1@@Z
-SDL [%s]: %s\n
-SDL_Init( 0x%X ) failed: %s\n
-SDL_VIDEO_ALLOW_SCREENSAVER
-SDL_VIDEO_DRIVER
-SDL_WINDOWS_GAMEINPUT
-SDL_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN
-SEMICOLON
-SHADER_SOURCE
-SHADER_SOURCE_MOD
-SHADER_SOURCE_ROOT
-SINGLE_LINE_COMMENT
-SINGLE_QUOTED_STRING
-SINGLE_QUOTE_CHAR
 SP?isNull@QPixmap@@QEBA_NXZ
-SSE and SSE2 are required.
-STEAMAPPS_INTERFACE_VERSION008
-STEAMHTMLSURFACE_INTERFACE_VERSION_005
-STEAMHTTP_INTERFACE_VERSION003
-STEAMINVENTORY_INTERFACE_V003
-STEAMMUSIC_INTERFACE_VERSION001
-STEAMPARENTALSETTINGS_INTERFACE_VERSION001
-STEAMREMOTEPLAY_INTERFACE_VERSION003
-STEAMREMOTESTORAGE_INTERFACE_VERSION016
-STEAMSCREENSHOTS_INTERFACE_VERSION003
-STEAMUGC_INTERFACE_VERSION019
-STEAMUSERSTATS_INTERFACE_VERSION013
-STEAMVIDEO_INTERFACE_V002
-STRING_CHAR
-S\tV_qsort
-Saturday
-SceneSystem_002
-SceneUtils_001
-SchemaSystem_001
-SchemaTestExternal_One_001
-SchemaTestExternal_Two_001
 ScrollbarBackground
-Search paths for GAMEROOT and CONTENTROOT are expected to be sibling directories\n\tGAMEROOT: "%s"\n\tCONTENTROOT: "%s"\n
-SearchPaths
-September
-SerializedEntitiesVersion001
-ServerToolsInfo_001
-SetAssertionPrompt
-SetDefaultMiniDumpHandler
-SetFilePointerEx
-SetLastError
-SetStdHandle
-SetUnhandledExceptionFilter
-SetWin32ConsoleColor
 Shadow
 ShouldPunchThroughPolymorphism
-SleepConditionVariableSRW
-SoundOpSystem001
-SoundOpSystemEdit001
-SoundPicker()
-SoundService_001
-SoundSystem001
-Source2Client002
-Source2ClientPrediction001
-Source2ClientUI001
-Source2EngineToClient001
-Source2EngineToClientStringTable001
-Source2EngineToServer001
-Source2EngineToServerStringTable001
-Source2GameClients001
-Source2GameEntities001
-Source2Host001
-Source2ModTools001
-Source2Server001
-Source2V8System001
 Specified class '%s' is a base class, @exclude cannot be used for base classes
 Spurious value not expected in this class. Click to remove.
-Stack depth limit hit (%d)
-StatsService_001
-SteamAPI_GetHSteamUser
-SteamAPI_RunCallbacks
-SteamAPI_SetBreakpadAppID
-SteamAPI_Shutdown
-SteamAPI_UseBreakpadCrashHandler
-SteamAPI_WriteMiniDump
-SteamAppId
-SteamAudio001
-SteamController008
-SteamFriends017
-SteamInput006
-SteamInternal_ContextInit
-SteamInternal_FindOrCreateUserInterface
-SteamInternal_SteamAPI_Init
-SteamMatchMaking009
-SteamMatchMakingServers002
-SteamNetworking006
-SteamNetworkingMessages002
-SteamNetworkingSockets012
-SteamNetworkingUtils004
-SteamParties002
-SteamUser023
-SteamUtils010
-String( %s )
-Sunday
 SurfacePropPicker()
-System
 T?pos@QCursor@@SA?AVQPoint@@XZ
-TOK_COLON
-TUUUU
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
-T\tV_qsort_s
 TabBarBackgroundNotSelected
 TabTextInactive
-TerminateProcess
-TernaryConditional
-Test
 TestKeyForAddon
-TestScriptMgr001
-Text
-TextBlock()
-TextLayout_001
-The system ran out of memory while loading the game.
 This value is currently inherited from a base node.
 This value is overriding a base node.
-ThreadShellExecuteEx
-Thursday
-Tier0GenericMiniDumpHandler
-Tier0GenericMiniDumpHandler_SetOptions
-TimestampedEvent
-TimestampedEventMsgV
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
 To the left of the attribute label
 To the right of the attribute editor
 ToolAttr command '%s' failed.
@@ -2140,130 +1230,41 @@ ToolButtonActiveBackground
 ToolButtonActiveBorder
 ToolButtonBackground
 ToolButtonBorder
-ToolFramework2_002
-ToolSceneNodeFactory_001
-ToolService_001
 ToolTipBase
 ToolTipShortcut
 ToolTipText
 ToolsAppId
-ToolsStartup
-ToolsStartupPreGame
-ToolsStartup_RayTracing
-ToolsStartup_SM50
-TryAcquireSRWLockExclusive
-Tuesday
 U?qt_metacall@QRegExpValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QTextDocument@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacast@QRegExpValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QTextDocument@@UEAAPEAXPEBD@Z
-UNRECOGNIZED
-UUUUUU
 U\v?event@QPlainTextEdit@@MEAA_NPEAVQEvent@@@Z
-UnInvalid
-UnNegate
-UnNot
-Unable to Start Game
 Unable to find fgd file %s!\n
 Unable to make fgd relative path %s! Helpsystem will not have a valid context.\n
 Unable to read fgd file %s!\n
 Undefined base class '%s
-Unexpected character
-Unexpected character '%c' (0x%02X)
-Unexpected end of file
 Unexpected end of input
-Unexpected node
-Unexpected token
-Unexpected token '%s' %s
-UnhandledExceptionFilter
-Unknown
 Unknown class '%s' specified by @exclude
-Unknown exception
-Unknown property %s
-Unknown variable %s
-UnmountAddon: Failed to find %s search path.\n
 Unrecognized meta key: %s
 Unrecognized section name %s
-Unsupported KV3 basic type '%s' (%d)!
-Unwanted token '%s' %s
 UpArrowPressed
 UpdateSteamCallbacks
 UpdateUIForSelectedAddon
 UpperLine
 Using deprecated 'base=prefix' syntax for adding a prefix to a base class
-UtlVectorMemory_Alloc
-UtlVectorMemory_CalcNewAllocationCount
-UtlVectorMemory_FailedAllocation
-VApplication001
-VAsyncFileSystem2_001
-VAvi001
-VBik001
-VConComm001
 VDataChoice( %s )
-VEngineCvar007
-VFileSystem017
-VMOD
-VMaterialSystem2_001
-VMediaFoundation001
-VP4003
-VPhysics2_Handle_Interface_001
-VPhysics2_Interface_001
-VProcessUtils002
-VProfService_001
-VRenderDeviceSetupV001
-VScript
-VScriptDbg
-VScriptManager010
-VStringTokenSystem001
-VWebm001
-V_AreSlashesCorrect
-V_DoubleToString_Unsafe
-V_GetFileExtension
-V_GetFileExtensionSafe
-V_Get_stderr
-V_Get_stdout
-V_Int32ToString_Unsafe
-V_Int64ToString_Unsafe
-V_IsAbsolutePath
-V_PathContainsPath
-V_RemoveDotSlashes
-V_StringParseError
-V_StringToBool
-V_StringToFloat32
-V_StringToFloat64
-V_StringToInt32
-V_StringToInt64
-V_StringToUint64
-V_StripFilename
-V_UInt64ToString_Unsafe
-V_UnqualifiedFileName
-V_atof
-V_atoi
 Va?width@QPixmap@@QEBAHXZ
 Variable %s has bad default value %s (no choices with that name or value)
-Video
 ViewportBackground
 ViewportText
 ViewportToolBarBorderDark
 ViewportToolBarBorderLight
-VisBuilder_001
-Vrad3_001
 W?resetTransform@QPainter@@QEAAXXZ
 WARNING: Failed to parse class '%s'.\n
-WARNING: You are trying to mount an addon (%s) in tools mode that is different from the addon tools mode was launched with (%s).\n
-WIN32
-WINDOWS
 WP?isNull@QTextCursor@@QEBA_NXZ
 W\v?event@QProxyStyle@@MEAA_NPEAVQEvent@@@Z
-WaitForSingleObjectEx
-WakeAllConditionVariable
-Wednesday
-WideCharToMultiByte
 Window
 WindowText
-WorldRendererMgr001
-WriteConsoleW
-WriteFile
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrush@QPalette@@QEAAXW4ColorGroup@1@W4ColorRole@1@AEBVQBrush@@@Z
@@ -2281,8 +1282,6 @@ Y?setFont@QPainter@@QEAAXAEBVQFont@@@Z
 Y?setFont@QTextCharFormat@@QEAAXAEBVQFont@@@Z
 Y?setForeground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 YW?rgb@QColor@@QEBAIXZ
-You are trying to mount addon '%s' but SetAllowAddonChanges is false which probably means you shouldn't be calling this directly.\n
-You are trying to unmount addon '%s', but SetAllowAddonChanges is false which probably means you should be using calling this directly.\n
 Z?setItalic@QFont@@QEAAX_N@Z
 Z?setOverrideCursor@QGuiApplication@@SAXAEBVQCursor@@@Z
 Z?setPen@QPainter@@QEAAXAEBVQColor@@@Z
@@ -2295,7 +1294,6 @@ ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 [?setStrikeOut@QFont@@QEAAX_N@Z
 [?setStyle@QBrush@@QEAAXW4BrushStyle@Qt@@@Z
 [?setTextWidth@QTextDocument@@QEAAXN@Z
-[Index: 
 [a-zA-Z0-9][a-zA-Z0-9_]*
 \f"?update@QWidget@@QEAAXXZ
 \f?createObject@QTextDocument@@MEAAPEAVQTextObject@@AEBVQTextFormat@@@Z
@@ -2319,7 +1317,6 @@ ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 \f?hasHeightForWidth@QBoxLayout@@UEBA_NXZ
 \f?hasHeightForWidth@QWidget@@UEBA_NXZ
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
-\n    near %s\n    
 \n?constData@QByteArray@@QEBAPEBDXZ
 \n?constData@QVariant@@QEBAPEBXXZ
 \n?convert@QVariant@@QEBA_NHPEAX@Z
@@ -2371,7 +1368,6 @@ ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 \r?initStyleOption@QStyledItemDelegate@@MEBAXPEAVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \rIHDR
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
-\t The lexer was matching from line %d, offset %d, which\n\t 
 \t?cast@QMetaObject@@QEBAPEAVQObject@@PEAV2@@Z
 \t?cast@QMetaObject@@QEBAPEBVQObject@@PEBV2@@Z
 \t?childEvent@QObject@@MEAAXPEAVQChildEvent@@@Z
@@ -2379,28 +1375,9 @@ ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 \t?data@QTreeWidgetItem@@UEBA?AVQVariant@@HH@Z
 \t?dataChanged@QAbstractItemView@@MEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
-\tV_fclose
-\tV_fflush
-\tV_fileno
-\tV_fmodd
-\tV_fopenUTF8
-\tV_fpclassifyd
-\tV_fprintf
-\tV_vsnprintf
-\tWarning
-\tWorldsize_Init
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\v?brushOrigin@QPainter@@QEBA?AVQPoint@@XZ
-\t_MakeGlobalSymbol
-\t_V_ComposeFileName
-\t_V_StringAfterPrefix
 \t_V_StringAfterPrefixCaseSensitive
-\t_V_strEndsWith
-\t_V_strncmp
-\t_V_strncpy
-\t_V_strnicmp_fast
-\tg_pMemAlloc
-\tkE>fvw
 \v?brush@QPalette@@QEBAAEBVQBrush@@W4ColorRole@1@@Z
 \v?button@QPalette@@QEBAAEBVQBrush@@XZ
 \v?clear@QTextDocument@@UEAAXXZ
@@ -2424,225 +1401,60 @@ _?texture@QBrush@@QEBA?AVQPixmap@@XZ
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
 __CACHED_editcontext_provider_lookup
 __IsValveCQTabbedStyle
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__pascal
-__ptr64
-__restrict
-__stdcall
-__swift_1
-__swift_2
-__swift_3
-__thiscall
-__unaligned
-__vectorcall
-_addons
-_build_
-_class
-_dir.vpk
 _fgd
-_root_keyname
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
-`RTTI
 `T?pixmap@QIcon@@QEBA?AVQPixmap@@HW4Mode@1@W4State@1@@Z
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
-`anonymous namespace'
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`typeof'
-`udt returning'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
-abcdefghijklmnopqrstuvwxyz
 addoninfo
-addoninfo.txt
-addonroot
-addonroot_language
-address family not supported
-address in use
-address not available
 alert_attr
 alert_func
-already connected
-angle
 animgraph
 animgraph2_clip
 animgraph2_identifier
 animgraph_enum
-antlr3BaseRecognizerNew
-antlr3BitsetCopy
-antlr3BitsetList
-antlr3BitsetLoad
-antlr3BitsetNew
-antlr3BitsetOf
-antlr3BitsetSetAPI
-antlr3CommonTokenDebugStreamSourceNew
-antlr3CommonTokenNew
-antlr3CommonTokenStreamNew
-antlr3CommonTokenStreamSourceNew
-antlr3EnumNew
-antlr3ExceptionNew
-antlr3Hash
-antlr3HashTableNew
-antlr3IntStreamNew
-antlr3IntTrieNew
-antlr3LexerNew
-antlr3LexerNewStream
-antlr3ListNew
-antlr3MTExceptionNew
-antlr3NewAsciiStringCopyStream
-antlr3NewAsciiStringInPlaceStream
-antlr3NewUCS2StringInPlaceStream
-antlr3ParserNew
-antlr3ParserNewStream
-antlr3ParserNewStreamDbg
-antlr3RecognitionExceptionNew
-antlr3SetTokenAPI
-antlr3SetVectorApi
-antlr3StackNew
-antlr3StringFactoryNew
-antlr3TokenFactoryNew
-antlr3TokenStreamNew
-antlr3UCS2StringFactoryNew
-antlr3VectorFactoryNew
-antlr3VectorNew
-antlr3dfapredict
-antlr3dfaspecialStateTransition
-antlr3dfaspecialTransition
 applicable_to
-application
-argument list too long
-argument out of domain
-array
 assetTag
 associated_key
 autoexpand_self
 autoexpand_self_class
-axis
 bGame
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
 backgroundColor
-bad address
-bad array new length
-bad exception
-bad file descriptor
-bad function call
-bad message
 base
 baseclass
-bin\
-bin\win64
-binary_blob
 bindable_command_buttons
 bodygroupchoices
-bool
-boolean
-branch gameinfo
-broken pipe
 button_zone
-c\tV_snprintf
 c\v?event@QSplitterHandle@@MEAA_NPEAVQEvent@@@Z
-cable
 cableclass
-choice_name
 choices
 clicked
 clip
-code
 collision_property
 collisionmesh
-color
 color255
 color255alpha
-command
-connection aborted
-connection already in progress
-connection refused
-connection reset
-console.log
-core
-cross device link
 cs2.exe
-csgo
 csgocfg
 csgocfg.exe
-curve
-dddd, MMMM dd, yyyy
-decal
-default
 default_color
 desc
-description
-destination address required
-device or resource busy
-directory not empty
 disable_reset_to_default
-double
-eF>t
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
-edit_context_override
-editor
-ehandle
 element_name_key
 element_name_key_friendly_name_map
-english
 entityTag
 entitygroup
 exclude
-executable format error
 expects_cpp_declaration
 explorer.exe
-expr
-false
-file exists
-file too large
 file://{images}/%s
-filename too long
-filesystem_stdio
-fillBufferExt
 filter
 filterText
-filter_type
 filterclass
 flagchoices
-flags
-float
 frameColor
-friendly_name
-function not supported
 g\r?horizontalScrollbarAction@QTableView@@MEAAXH@Z
-game
 game:tools/cs2_item_editor/appicon.png
 game:tools/images/assetbrowser/appicon.ico
 game:tools/images/common/add.png
@@ -2687,61 +1499,32 @@ game:tools/images/valve_style/tab-closebutton-selected.png
 game:tools/images/valve_style/tab-closebutton.png
 game:tools/images/valve_style/toolbar_extension_h.png
 game:tools/images/valve_style/toolbar_extension_v.png
-game_language
-game_lowviolence
-game_nontools
-gameinfo
-gameinfo.gi
-gameinfo_branchspecific.gi
 gameitemclass
 gameunitclass
-generic
 generic_data_type
-generic_exprLexerNew
-generic_exprLexerNewSSD
-generic_exprParserNew
-generic_exprParserNewSSD
 global
 gridnav
-group
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
 halfgridsnap
 handleDelta
 helpsystem
-hidden
-host unreachable
 https://www.counter-strike.net/workshop/workshop
 i\r?horizontalScrollbarValueChanged@QAbstractItemView@@MEAAXH@Z
-i\tV_sscanf
 i\v?event@QTableWidget@@MEAA_NPEAVQEvent@@@Z
 icon
-identifier removed
-illegal byte sequence
 image_list
 important
-inappropriate io control operation
 include
 inherit_attr
-input
 instance_file
 instance_parm
 instance_variable
 intchoices
-integer
-interrupted
 intmap
-invalid
-invalid argument
-invalid seek
-invalid_parameter
 invisible_func
-io error
-is a directory
-is also the end of the line, so you must check your lexer rules\n
 is_optional
 is_polymorphic
-isgame
 items/assets/keychains/workshop
 items/assets/paintkits/workshop
 items/assets/sprays/workshop
@@ -2749,31 +1532,18 @@ items/assets/stickers/workshop
 keyframe
 keyframeclass
 l\n?dragEnterEvent@QLineEdit@@MEAAXPEAVQDragEnterEvent@@@Z
-lexer->mTokens(): Error: No lexer rules were added to the lexer yet!\n
 local_point
 localaxis
 localization_required
-localize
 lod_level
-log10
-looks like this:\n\t\t%.*s\n
-mG4>
 m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 m_Items
-map_options
 mapkeys
 mapkeys_choice_name
 mapkeys_is_suggestion
 mapkeys_suggestion_name
 mapped
-maps
-maps/
-material
 materialgroup
-mesh
-message size
-metadata
-model
 model_attachment
 model_bodygroup
 model_bone
@@ -2790,72 +1560,28 @@ modelgamedata
 modelstatechoices
 move
 moveclass
-n03>Pu
-nTries < 10000000
 nX?setBold@QFont@@QEAAX_N@Z
-n\tV_stricmp_fast
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
-name
 navlink
 navlinkclass
-near '%c' :\n
-near char(%#02X) :\n
-network down
-network reset
-network unreachable
-no buffer space
-no child process
-no link
-no lock available
-no message
-no message available
-no protocol option
-no space on device
-no stream resources
-no such device
-no such device or address
-no such file or directory
-no such process
 no_help_info
 node_dest
 node_id
 node_id_List
-not a directory
-not a socket
-not a stream
-not connected
-not enough memory
-not supported
 npc_ability_name
 npcclass
-null
-nullptr
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
-officialaddonroot
-ole32.dll
 open
-operation canceled
-operation in progress
-operation not permitted
-operation not supported
-operation would block
-operator
-operator "" 
-operator co_await
-operator<=>
-output
 override_attr
 override_description
 override_help_context_name
 override_help_id
 overrideclass
-owner dead
 owns_polymorphic_data
 p4lib
 pButton
 pData
-pItem
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 panorama/%s_image_list.vdata
@@ -2868,14 +1594,10 @@ panorama_layout
 panorama_style
 panorama_video
 parentAttachment
-particle
 particle_cfg
-particlesystem
-path
 pathclass
 pathnode
 pathnodeclass
-permission denied
 point
 pointclass
 pointentityclass
@@ -2887,149 +1609,74 @@ propattr_flatten_stretch_factor
 propattr_force_readonly
 propdataname
 propertyeditor
-protocol error
-protocol not supported
-publiccontent
-publish_data
-publish_data.txt
-purecall
 qt5_plugins
 qt5core.dll
 qt5cored.dll
 qt_dockwidget_closebutton
 qt_dockwidget_floatbutton
-r\tVr.>T
 r\vppV
 randomizable
-range check failure
-read only file system
 readonly
-readonly_expr
 readonly_tools_asset_info.bin
-rebuild_propertyeditor_on_change
 remove_attr
 remove_key
 report
-required
 reset_attr
 reset_to_default_icon
-resource
-resource deadlock would occur
-resource unavailable try again
 resource/csgo_%language%.txt
 resource/localization/csgo_%language%.txt
-resource_manifests
-resource_name
 resourcecopy.exe
 resourcecopy.log
-resources
-restrict(
-result out of range
 scale_bone_relative
 scale_world
 schemasystem
-script
 scriptlist
-sequence
 side
 sidelist
-size
 snapshot
 solid
 solidclass
 sort_priority
-sound
-source_file
-source_folder
-source_line
-sprite
-stack buffer overrun (/GS failure)
 start_expanded
-state not recoverable
-steam_api64.dll
-steam_appid.txt
-stream timeout
-string
-string too long
 string_instanced
 stringmap
 struct
-studio
 subclass_choice
-success
-suggestion_name
 suggestions
-suppress_expr
 suppressed_field
-surface_properties
 t\n?beginEditBlock@QTextCursor@@QEAAXXZ
 t\t?addFile@QIcon@@QEAAXAEBVQString@@AEBVQSize@@W4Mode@1@W4State@1@@Z
-table
 tag_list
 tag_list_dynamic
-tags
-target
 target_destination
 target_name_or_class
 target_source
-text
-text file busy
 text_block
-texture
-tier0
-tier0.dll
-timed out
-too many files open
-too many files open in system
-too many links
-too many symbolic link levels
 tools/stylesheets/qtabbedstyle_colors.vsc
 tools/workshop_addoninfo.fgd
 toolsMaterial
-true
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
 u\v?eventFilter@QAbstractItemView@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
-uint
-unable to register all schema data: %s\n
-unknown error
-uzKs@>
 v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
-value
-value too large
-value_is_key_name
-vconcomm
 vdata
 vdata_choice
 vdata_editor
 vdata_outliner_name_expr
 vdataderived
 vecline
-vector
-vector2d
-vector4d
 visgroupfilter
 vmap
-vmat
-vmdl
 vmesh
 vnmclip
-void
-vpcf
 vphzc
-vpks
-vpks/
 vpost
 vsky
-vsnap
 vtex
 w\n?connectImpl@QObject@@CA?AVConnection@QMetaObject@@PEBV1@PEAPEAX01PEAVQSlotObjectBase@QtPrivate@@W4ConnectionType@Qt@@PEBHPEBU3@@Z
 w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
-windows
 workshop_items
 world_point
 writable_func
-write
-wrong protocol type
 xT?pointSizeF@QFont@@QEBANXZ
 x\f?generatedIconPixmap@QCommonStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 xxx_mapname_xxx

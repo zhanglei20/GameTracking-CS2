@@ -162,11 +162,12 @@
 ( result == VK_SUCCESS )
 (%s): ADD %s = %s\n
 (%s): Setting %s to %s\n
-(90Z
-(A1Z
+(92Z
+(I0Z
+(I1Z
 (On the line reading %s):\n
-(Y2Z
-(Y3Z
+(Y5Z
+(i3Z
 *** CVfx::StartupSanityCheck(7060): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!\n
 *** Error masking unused parts! Equal sign not found after token "%s"! (line %d)\n
 *** IL "%s": Unable to create input layout; layout has %d fields, which is more than %d!\n
@@ -322,6 +323,7 @@
 .?AVCCompileTargetExprStackMachineBuilder@@
 .?AVCConstantBufferVulkan@@
 .?AVCDepthStencilStateCreator@@
+.?AVCDescriptorCountTracker@@
 .?AVCDescriptorSetReferenced@@
 .?AVCDescriptorSetVulkan@@
 .?AVCDeviceFence@@
@@ -429,19 +431,18 @@
 .vfx_
 .vpk:
 .wN\f9
-00g(
 0123456789)"
 0123456789-
 0123456789ABCDEFabcdef-+Xx
 0123456789ABCDEFabcdef-+XxPp
-0Hd(
+0>fi,
 0x%x
+0xm(
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
 2\f%24
 2\fu24*
 2\nP!E
-2\vp0g(
-2\vpHd(
+2\vpxm(
 58x\t
 5;FJ$,XEK4<
 6\fE647
@@ -449,7 +450,7 @@
 7T2,
 8"3hrf
 8&Kx
-8FHh,
+8Fxq,
 969p
 :AM:am:PM:pm
 :Jan:January:Feb:February:Mar:March:Apr:April:May:May:Jun:June:Jul:July:Aug:August:Sep:September:Oct:October:Nov:November:Dec:December
@@ -623,9 +624,9 @@ CInputLayoutDict<class CInputLayoutVulkan>::ConcatentateInputLayouts
 CLargeCommandBufferChunk CUtlMemoryPool
 CMediumCommandBufferChunk CUtlMemoryPool
 CMemoryManagerVulkan::Allocate
-CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup(1594): vmaCreatePool failed with error: %d\n
-CMemoryManagerVulkan::AllocateImageInCustomPoolGroup(1523): vmaCreatePool failed with error: %d\n
-CMemoryManagerVulkan::VmaDefragProcessDeletionQueueInternal(), C:\buildworker\csgo_rel_win64\build\src\rendersystem\vulkan\memorymgrvulkan.cpp:756
+CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup(1591): vmaCreatePool failed with error: %d\n
+CMemoryManagerVulkan::AllocateImageInCustomPoolGroup(1520): vmaCreatePool failed with error: %d\n
+CMemoryManagerVulkan::VmaDefragProcessDeletionQueueInternal(), C:\buildworker\csgo_rel_win64\build\src\rendersystem\vulkan\memorymgrvulkan.cpp:753
 CNVReflexVulkan::LateWarpUpdateResolution(425): 
 COLOR0
 COMMENT
@@ -648,11 +649,11 @@ CRenderContextVulkan::CopyTexture failed to get resource.\n
 CRenderContextVulkan::EndQuery - BeginQuery failed, aborting!\n
 CRenderContextVulkan::EndQuery - Issued on an in-progress query!\n
 CRenderContextVulkan::ExecuteGeneratedCommands requires VK_EXT_device_generated_commands.\n
-CRenderContextVulkan::MarkIssuesCommands(465): 
+CRenderContextVulkan::MarkIssuesCommands(450): 
 CRenderContextVulkan::PreprocessGeneratedCommands requires VK_EXT_device_generated_commands.\n
 CRenderContextVulkan::ReadBuffer - attempted to read invalid handle.\n
 CRenderContextVulkan::SemaphoreWaitAtBegin - already set semaphore to wait on, can't set another one.\n
-CRenderContextVulkan::WriteDataIntoTexture(6239):  - invalid offset, aborting texture update to avoid hanging the GPU [texture: %s].\n
+CRenderContextVulkan::WriteDataIntoTexture(6214):  - invalid offset, aborting texture update to avoid hanging the GPU [texture: %s].\n
 CRenderContextVulkan_SoftwareCommandLists::CopyFromVolumeTexture failed to get resource.\n
 CRenderContextVulkan_SoftwareCommandLists::CopyTexture failed to get resource.\n
 CRenderContextVulkan_SoftwareCommandLists::SemaphoreWaitAtBegin - already set semaphore to wait on, can't set another one.\n
@@ -675,40 +676,40 @@ CRenderDeviceBase::InitPerFrameMemoryStack
 CRenderDeviceBase::Present(598): 
 CRenderDeviceBase::StartRenderDocCapture(3483): 
 CRenderDeviceVulkan::AllocateBufferInPool - invalid memory pool handle.\n
-CRenderDeviceVulkan::AllocateBufferInPool(10032): vmaBindImageMemory failed for buffer %s with error %d.\n
-CRenderDeviceVulkan::AllocateBufferInPool(9977): failed to allocate GPU memory in custom pool for %s.\n
+CRenderDeviceVulkan::AllocateBufferInPool(10013): vmaBindImageMemory failed for buffer %s with error %d.\n
+CRenderDeviceVulkan::AllocateBufferInPool(9958): failed to allocate GPU memory in custom pool for %s.\n
 CRenderDeviceVulkan::AllocateStaticDescriptorSet: Failed to allocate descriptor set.\n
 CRenderDeviceVulkan::AllocateTextureInPool - invalid memory pool handle.\n
-CRenderDeviceVulkan::AllocateTextureInPool(9659): Allocation already set for %s, it is not valid to assign a new allocation.\n
-CRenderDeviceVulkan::AllocateTextureInPool(9734): failed to allocate GPU memory in custom pool for %s.\n
-CRenderDeviceVulkan::AllocateTextureInPool(9800): vmaBindImageMemory failed for image %s with error %d.\n
+CRenderDeviceVulkan::AllocateTextureInPool(9640): Allocation already set for %s, it is not valid to assign a new allocation.\n
+CRenderDeviceVulkan::AllocateTextureInPool(9715): failed to allocate GPU memory in custom pool for %s.\n
+CRenderDeviceVulkan::AllocateTextureInPool(9781): vmaBindImageMemory failed for image %s with error %d.\n
 CRenderDeviceVulkan::AllocateUpdateAfterBindDescriptorSet: Failed to allocate descriptor set.\n
-CRenderDeviceVulkan::BeginSubmittingDisplayLists(4438): 
-CRenderDeviceVulkan::CreateDefaultBuffers(2516): 
+CRenderDeviceVulkan::BeginSubmittingDisplayLists(4439): 
+CRenderDeviceVulkan::CreateDefaultBuffers(2517): 
 CRenderDeviceVulkan::CreateDefaultShaders
 CRenderDeviceVulkan::CreateDescriptorSet: Failed to create descriptor set.\n
 CRenderDeviceVulkan::CreateIndirectCommandsPreprocessBuffer- invalid layout handle.\n
 CRenderDeviceVulkan::CreateIndirectExecutionSet
-CRenderDeviceVulkan::CreateTLAS(7762): 
-CRenderDeviceVulkan::DeleteQueryObject(4652): 
+CRenderDeviceVulkan::CreateTLAS(7740): 
+CRenderDeviceVulkan::DeleteQueryObject(4653): 
 CRenderDeviceVulkan::DestroyDeviceMemoryPool - invalid memory pool handle.\n
 CRenderDeviceVulkan::DestroyIndirectCommandsLayout - invalid layout handle.\n
-CRenderDeviceVulkan::FreeBufferFromPool(10071): Unable to get Vulkan buffer.\n
-CRenderDeviceVulkan::FreeBufferFromPool(10077): no allocation for buffer %s.\n
+CRenderDeviceVulkan::FreeBufferFromPool(10052): Unable to get Vulkan buffer.\n
+CRenderDeviceVulkan::FreeBufferFromPool(10058): no allocation for buffer %s.\n
 CRenderDeviceVulkan::FreeTextureFromPool - invalid memory pool handle.\n
-CRenderDeviceVulkan::FreeTextureFromPool(9832): Unable to get Vulkan image for %s.\n
-CRenderDeviceVulkan::FreeTextureFromPool(9838): no allocation for image %s.\n
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(10173): Unable to get Vulkan buffer.\n
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(10179): no allocation for buffer %s.\n
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(10148): Unable to get Vulkan image for %s.\n
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(10154): no allocation for image %s.\n
+CRenderDeviceVulkan::FreeTextureFromPool(9813): Unable to get Vulkan image for %s.\n
+CRenderDeviceVulkan::FreeTextureFromPool(9819): no allocation for image %s.\n
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(10154): Unable to get Vulkan buffer.\n
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(10160): no allocation for buffer %s.\n
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(10129): Unable to get Vulkan image for %s.\n
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(10135): no allocation for image %s.\n
 CRenderDeviceVulkan::GetDeviceSpecificTexture
 CRenderDeviceVulkan::GetDeviceSpecificTexture() failed to get texture data.\n
 CRenderDeviceVulkan::InitDevice: failed to get queue properties\n
 CRenderDeviceVulkan::InitDevice: no graphics queue found\n
 CRenderDeviceVulkan::InitDevice: vkEnumerateDeviceExtensionProperties( ... ) failed.\n
 CRenderDeviceVulkan::OnLowMemoryNotification - evicting all textures to reduce memory pressure.\n
-CRenderDeviceVulkan::ReadTexturePixels(4235): 
+CRenderDeviceVulkan::ReadTexturePixels(4236): 
 CRenderDeviceVulkan::RebakeDescriptorSetsReferencing - could not allocate descriptor in new pool.\n
 CRenderDeviceVulkan::SetHardwareGammaRamp failed to get swap chain.\n
 CRenderDeviceVulkan::UpdateDescriptorSet: Failed to update descriptor set.\n
@@ -721,7 +722,7 @@ CRenderThreadVulkan::OnReadPixels(233): Error! NULL texture pointer sent to OnRe
 CSheetDataTextureCache::AllocateAndUploadSequenceData(582): 
 CSwapChainBase::QueuePresentAndWait() looped for %d iterations without a present event.\n
 CSwapChainVulkan::CreateSwapChain
-CSwapChainVulkan::CreateSwapChain(3286): 
+CSwapChainVulkan::CreateSwapChain(3287): 
 CSwapChainVulkan::CreateSwapChain::<lambda_2>::operator ()
 CSwapChainVulkan::SwapBuffers
 CSwapChainVulkan::SwapBuffers vkAcquireNextImageKHR - completed result = %s\n
@@ -750,7 +751,7 @@ CTextureManagerBase::MN_OnResourceLoadFailed
 CTextureManagerBase::MarkAsyncUpdatedThisFrame - Invalid texture handle.\n
 CTextureManagerBase::RemoveTextureFromAnyQueues
 CTextureManagerBase::WasAsyncUpdatedThisFrame - Invalid texture handle.\n
-CTextureManagerVulkan::ComputeTextureObject(1439): 
+CTextureManagerVulkan::ComputeTextureObject(1436): 
 CTextureManagerVulkan::ComputeTextureObject: Tried to create a depth-stencil texture which is *not* a render target!\n
 CTextureStreamingHelper::LoadExplicitlyRequestedTextures
 CTextureStreamingHelper::RemoveMipLevelsForTextures
@@ -1173,10 +1174,11 @@ HLSL SM6.0 level subgroup wave ops supported, subgroup size = %d\n
 HOST_CACHED
 HOST_COHERENT
 HOST_VISIBLE
+HY"Z
+HY$Z
 HalftoneHints
 Header size does not contain enough data in pipeline cache file %s.  Deleting.\n
 Heap 
-Hi!Z
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.\n
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HostComputer
@@ -1192,7 +1194,6 @@ IOS_VULKAN
 IOS_VULKAN_4_0
 IOS_VULKAN_4_1
 IOS_VULKAN_5_0
-IR"Z
 ISO JBIG
 IS_DIRECTX
 IS_MOBILE
@@ -1510,7 +1511,6 @@ PC_SM_5_0_VULKAN
 PC_SM_6_0_VULKAN
 PERF WARNING: Texture pool size set to more than 80%% of total GPU memory.\n
 PERFORMANCE
-PHd(
 PLAT_
 POSITION
 POSITION0
@@ -1562,6 +1562,7 @@ Prints out stats for the Vulkan Framebuffer manager
 Prints out stats for the Vulkan Pipeline manager
 Prints out stats for the Vulkan memory manager
 Prints out stats for the Vulkan shader table
+Pxm(
 Q\tV_powd
 Query
 QueryServiceStatus
@@ -1570,7 +1571,6 @@ RESOURCE_TYPE_TEXTURE
 RJqn
 RSDS@d
 RTX\n
-R\fp0g(
 R_T5Y
 Ran out of query slots.\n
 Rasterizer state is VK_POLYGON_MODE_LINE but VkPhysicalDeviceFeatures.fillModeNonSolid is not supported.  Forcing to VK_POLYGON_MODE_FILL.  May result in incorrect rendering.\n
@@ -1859,6 +1859,7 @@ Total VMA ( %llu MB ) ( Free %llu MB )\n
 TotalBytes
 TransferFunction
 TransparencyMask
+Trim descriptor pools when not in use for a number of frames.
 Truncated header.
 Trying registry key %ls in %ls
 Trying to create a render target with invalid image format %s\n
@@ -2185,6 +2186,7 @@ XClipPathUnits
 XESS: %s\n
 XMLPacket
 XPosition
+XQ#Z
 XResolution
 XYZ, Luv
 X\fEXd$
@@ -2300,7 +2302,6 @@ ZIPVSetField
 \t_V_StringAfterPrefixCaseSensitive
 \t_V_strcspn
 \tg_TSPointerListNodes
-\vp0g(
 \ysK
 ]rHa
 _DOVK
@@ -2332,6 +2333,7 @@ _psrs
 _rtx
 _tools.txt
 _wjb
+`e6Z
 addressModeU
 addressModeV
 addressModeW
@@ -2723,9 +2725,7 @@ out.var.SV_TARGET0
 out.var.TEXCOORD0
 outReactiveMask
 outputpatch
-p0g(
 pH_r
-pHd(
 pNext
 panorama_
 panorama_rt_
@@ -2754,9 +2754,9 @@ pseudo-
 psize
 psrs
 pushConstantRanges
+pxm(
 quAt
 r\tV_strspn
-r\vp0g(
 r_allow_low_gpu_memory_mode
 r_cache_pool_allocations
 r_dilatedDepth
@@ -2794,6 +2794,7 @@ r_vma_defrag_moves_per_frame
 r_vma_defrag_threshold_mb
 r_vulkan_force_sync1
 r_vulkan_sw_cmd_lists
+r_vulkan_trim_descriptor_pools
 r_vulkan_validation_filter_in
 r_vulkan_validation_filter_out
 raB3G
