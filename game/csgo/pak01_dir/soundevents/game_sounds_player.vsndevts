@@ -4,68 +4,43 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.000000
-		pitch = 1.300000
+		volume = 0.0
+		pitch = 1.3
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
-		pitch_random_min = -0.060000
-		pitch_random_max = 0.060000
+		block_duration = 0.1
+		block_distance = 69.0
+		pitch_random_min = -0.06
+		pitch_random_max = 0.06
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		occlusion_intensity = 0.800000
+		occlusion_intensity = 0.8
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002212,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002212,
+				2.0, 1.0,
 			],
-			
 			[
-				333.142853,
-				0.319853,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				333.142853, 0.319853, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000417,
-				-0.000417,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000417, -0.000417,
+				1.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -77,55 +52,35 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.550000
-		pitch = 1.000000
+		volume = 0.55
+		pitch = 1.0
 		mixgroup = "World"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001613,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.001613,
+				0.0, 0.0,
 			],
-			
 			[
-				620.000000,
-				0.000000,
-				-0.000187,
-				-0.000187,
-				2.000000,
-				3.000000,
+				620.0, 0.0, -0.000187, -0.000187,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -142,102 +97,57 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
-		block_distance = 10.000000
+		volume = 0.5
+		pitch = 1.0
+		block_distance = 10.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		mixgroup = "PlayerDamage"
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.500000
-		occlusion_intensity = 0.900000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.5
+		occlusion_intensity = 0.9
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.003572,
-				-0.003572,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.003572, -0.003572,
+				2.0, 3.0,
 			],
-			
 			[
-				113.910767,
-				0.593074,
-				-0.001020,
-				-0.001020,
-				2.000000,
-				3.000000,
+				113.910767, 0.593074, -0.00102, -0.00102,
+				2.0, 3.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				179.133850,
-				0.000000,
-				0.000000,
-				0.000000,
-				3.000000,
-				1.000000,
+				179.13385, 0.0, 0.0, 0.0,
+				3.0, 1.0,
 			],
-			
 			[
-				300.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				300.0, 0.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -254,39 +164,29 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.700000
-		pitch = 1.000000
-		pitch_random_min = -0.100000
-		pitch_random_max = 0.100000
+		volume = 0.7
+		pitch = 1.0
+		pitch_random_min = -0.1
+		pitch_random_max = 0.1
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.200000
+		reverb_wet = 0.2
 		display_broadcast = false
-		reverb_source_wet = 0.200000
-		occlusion_intensity = 0.750000
+		reverb_source_wet = 0.2
+		occlusion_intensity = 0.75
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.003545,
-				2.000000,
-				2.000000,
+				25.714287, 1.0, 0.0, -0.003545,
+				2.0, 2.0,
 			],
-			
 			[
-				1000.000000,
-				0.000000,
-				-0.000507,
-				-0.000507,
-				2.000000,
-				3.000000,
+				1000.0, 0.0, -0.000507, -0.000507,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -295,23 +195,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -324,34 +214,24 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.000000
+		volume = 0.3
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.200000
+		reverb_wet = 0.2
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -360,23 +240,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -389,36 +259,26 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.050000
-		pitch = 1.000000
+		volume = 0.05
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		occlusion_intensity = 1.000000
+		occlusion_intensity = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001111,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.001111,
+				0.0, 0.0,
 			],
-			
 			[
-				900.000000,
-				0.000000,
-				-0.000380,
-				-0.000380,
-				2.000000,
-				3.000000,
+				900.0, 0.0, -0.00038, -0.00038,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -436,53 +296,28 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				67.714287,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				67.714287, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				74.571434,
-				0.000000,
-				-0.145833,
-				-0.145833,
-				3.000000,
-				1.000000,
+				74.571434, 0.0, -0.145833, -0.145833,
+				3.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -495,36 +330,26 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.050000
-		pitch = 1.000000
+		volume = 0.05
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		occlusion_intensity = 1.000000
+		occlusion_intensity = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001111,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.001111,
+				0.0, 0.0,
 			],
-			
 			[
-				900.000000,
-				0.000000,
-				-0.000380,
-				-0.000380,
-				2.000000,
-				3.000000,
+				900.0, 0.0, -0.00038, -0.00038,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -544,53 +369,28 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				67.714287,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				67.714287, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				74.571434,
-				0.000000,
-				-0.145833,
-				-0.145833,
-				3.000000,
-				1.000000,
+				74.571434, 0.0, -0.145833, -0.145833,
+				3.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -603,67 +403,42 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.100000
-		pitch = 1.000000
+		volume = 0.1
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.500000
-		pitch_random_min = -0.060000
-		pitch_random_max = 0.060000
-		block_duration = 1.000000
+		reverb_wet = 0.5
+		pitch_random_min = -0.06
+		pitch_random_max = 0.06
+		block_duration = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				14.857142,
-				1.000000,
-				-0.005079,
-				-0.005079,
-				1.000000,
-				1.000000,
+				14.857142, 1.0, -0.005079, -0.005079,
+				1.0, 1.0,
 			],
-			
 			[
-				134.857147,
-				0.390558,
-				-0.001015,
-				-0.001015,
-				3.000000,
-				1.000000,
+				134.857147, 0.390558, -0.001015, -0.001015,
+				3.0, 1.0,
 			],
-			
 			[
-				1000.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1000.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -684,67 +459,42 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.000000
+		volume = 0.3
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.500000
-		pitch_random_min = -0.100000
-		pitch_random_max = 0.100000
-		block_duration = 1.000000
+		reverb_wet = 0.5
+		pitch_random_min = -0.1
+		pitch_random_max = 0.1
+		block_duration = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				14.857142,
-				1.000000,
-				-0.005079,
-				-0.005079,
-				1.000000,
-				1.000000,
+				14.857142, 1.0, -0.005079, -0.005079,
+				1.0, 1.0,
 			],
-			
 			[
-				134.857147,
-				0.390558,
-				-0.001015,
-				-0.001015,
-				3.000000,
-				1.000000,
+				134.857147, 0.390558, -0.001015, -0.001015,
+				3.0, 1.0,
 			],
-			
 			[
-				1000.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1000.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -767,36 +517,26 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.050000
-		pitch = 1.000000
+		volume = 0.05
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		occlusion_intensity = 1.000000
+		occlusion_intensity = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001111,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.001111,
+				0.0, 0.0,
 			],
-			
 			[
-				900.000000,
-				0.000000,
-				-0.000380,
-				-0.000380,
-				2.000000,
-				3.000000,
+				900.0, 0.0, -0.00038, -0.00038,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -814,53 +554,28 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				67.483452,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				67.483452, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				74.571434,
-				0.000000,
-				-0.141084,
-				-0.141084,
-				3.000000,
-				1.000000,
+				74.571434, 0.0, -0.141084, -0.141084,
+				3.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -873,36 +588,26 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.050000
-		pitch = 1.000000
+		volume = 0.05
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		occlusion_intensity = 1.000000
+		occlusion_intensity = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001111,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.001111,
+				0.0, 0.0,
 			],
-			
 			[
-				900.000000,
-				0.000000,
-				-0.000380,
-				-0.000380,
-				2.000000,
-				3.000000,
+				900.0, 0.0, -0.00038, -0.00038,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -922,53 +627,28 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				67.714287,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				67.714287, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				74.571434,
-				0.000000,
-				-0.145833,
-				-0.145833,
-				3.000000,
-				1.000000,
+				74.571434, 0.0, -0.145833, -0.145833,
+				3.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -981,36 +661,26 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.050000
-		pitch = 1.000000
+		volume = 0.05
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		occlusion_intensity = 1.000000
+		occlusion_intensity = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001111,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.001111,
+				0.0, 0.0,
 			],
-			
 			[
-				900.000000,
-				0.000000,
-				-0.000380,
-				-0.000380,
-				2.000000,
-				3.000000,
+				900.0, 0.0, -0.00038, -0.00038,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1030,53 +700,28 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				67.714287,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				67.714287, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				74.571434,
-				0.000000,
-				-0.145833,
-				-0.145833,
-				3.000000,
-				1.000000,
+				74.571434, 0.0, -0.145833, -0.145833,
+				3.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -1089,36 +734,26 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.050000
-		pitch = 1.000000
+		volume = 0.05
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		occlusion_intensity = 1.000000
+		occlusion_intensity = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001111,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.001111,
+				0.0, 0.0,
 			],
-			
 			[
-				900.000000,
-				0.000000,
-				-0.000380,
-				-0.000380,
-				2.000000,
-				3.000000,
+				900.0, 0.0, -0.00038, -0.00038,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1136,53 +771,28 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				67.714287,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				67.714287, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				74.571434,
-				0.000000,
-				-0.145833,
-				-0.145833,
-				3.000000,
-				1.000000,
+				74.571434, 0.0, -0.145833, -0.145833,
+				3.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -1195,74 +805,44 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
-		block_distance = 69.000000
+		volume = 0.5
+		pitch = 1.0
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		mixgroup = "PlayerDamage"
 		display_broadcast = true
-		occlusion_intensity = 1.000000
+		occlusion_intensity = 1.0
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 0.500000
+		reverb_source_wet = 0.5
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				76.000000,
-				1.000000,
-				-0.000714,
-				-0.003080,
-				2.000000,
-				2.000000,
+				76.0, 1.0, -0.000714, -0.00308,
+				2.0, 2.0,
 			],
-			
 			[
-				452.000000,
-				0.312500,
-				-0.001082,
-				-0.001082,
-				1.000000,
-				1.000000,
+				452.0, 0.3125, -0.001082, -0.001082,
+				1.0, 1.0,
 			],
-			
 			[
-				1000.000000,
-				0.000000,
-				-0.000570,
-				-0.000570,
-				1.000000,
-				1.000000,
+				1000.0, 0.0, -0.00057, -0.00057,
+				1.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1279,34 +859,24 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.000000
+		volume = 0.3
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1315,23 +885,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -1344,50 +904,30 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_fadetime_volume_mapping_curve = false
 		restrict_source_reverb = true
-		occlusion_intensity = 0.600000
+		occlusion_intensity = 0.6
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				35.314026,
-				1.000000,
-				-0.000714,
-				-0.003080,
-				2.000000,
-				2.000000,
+				35.314026, 1.0, -0.000714, -0.00308,
+				2.0, 2.0,
 			],
-			
 			[
-				594.000000,
-				0.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				594.0, 0.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1400,23 +940,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -1428,93 +958,53 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
+		volume = 1.0
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 300.000000
+		block_distance = 300.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
-		block_duration = 0.600000
+		reverb_wet = 1.0
+		block_duration = 0.6
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		occlusion_intensity = 0.800000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		occlusion_intensity = 0.8
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				72.285713,
-				1.000000,
-				-0.000714,
-				-0.003080,
-				2.000000,
-				2.000000,
+				72.285713, 1.0, -0.000714, -0.00308,
+				2.0, 2.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				1100.0, 0.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				40.285717,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				40.285717, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				78.857147,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				78.857147, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1530,88 +1020,53 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
+		volume = 1.0
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 300.000000
+		block_distance = 300.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
-		block_duration = 0.600000
-		pitch_random_min = -0.010000
+		reverb_wet = 1.0
+		block_duration = 0.6
+		pitch_random_min = -0.01
 		display_broadcast = true
-		occlusion_intensity = 0.700000
+		occlusion_intensity = 0.7
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				62.857143,
-				1.000000,
-				-0.000714,
-				-0.003080,
-				2.000000,
-				2.000000,
+				62.857143, 1.0, -0.000714, -0.00308,
+				2.0, 2.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				1100.0, 0.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				40.285717,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				40.285717, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				78.857147,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				78.857147, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1627,44 +1082,29 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.000000
+		volume = 0.3
+		pitch = 1.0
 		mixgroup = "UI"
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				164.571442,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				164.571442, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1673,23 +1113,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -1702,55 +1132,35 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.750000
-		pitch = 0.950000
+		volume = 0.75
+		pitch = 0.95
 		mixgroup = "World"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001111,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.001111,
+				0.0, 0.0,
 			],
-			
 			[
-				900.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				900.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1764,54 +1174,34 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
-		block_distance = 69.000000
+		volume = 0.5
+		pitch = 1.0
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		mixgroup = "World"
 		display_broadcast = true
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1823,54 +1213,34 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.000000
-		pitch = 1.000000
+		volume = 0.0
+		pitch = 1.0
 		mixgroup = "World"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1882,97 +1252,57 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
+		volume = 1.0
+		pitch = 1.0
 		mixgroup = "World"
-		block_distance = 10000.000000
+		block_distance = 10000.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
+		reverb_wet = 0.0
 		display_broadcast = true
-		reverb_source_wet = 0.000000
-		distance_multiplier = 1.500000
-		occlusion_intensity = 0.200000
+		reverb_source_wet = 0.0
+		distance_multiplier = 1.5
+		occlusion_intensity = 0.2
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		instance_limit = 0.000000
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		instance_limit = 0.0
 		block_match_entity = false
-		block_duration = 0.200000
+		block_duration = 0.2
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.797794,
-				0.000000,
-				-0.000381,
-				0.000000,
-				0.000000,
+				0.0, 0.797794, 0.0, -0.000381,
+				0.0, 0.0,
 			],
-			
 			[
-				1476.571411,
-				0.235294,
-				-0.000184,
-				-0.000082,
-				1.000000,
-				0.000000,
+				1476.571411, 0.235294, -0.000184, -0.000082,
+				1.0, 0.0,
 			],
-			
 			[
-				4342.857422,
-				0.000000,
-				-0.000082,
-				0.000000,
-				1.000000,
-				0.000000,
+				4342.857422, 0.0, -0.000082, 0.0,
+				1.0, 0.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				70.315102,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				70.315102, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				76.476738,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				76.476738, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -1983,55 +1313,35 @@
 	SprayCan.Shake = 
 	{
 		type = "csgo_mega"
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2042,55 +1352,35 @@
 	SprayCan.Paint = 
 	{
 		type = "csgo_mega"
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2101,55 +1391,35 @@
 	SprayCan.ShakeGhost = 
 	{
 		type = "csgo_mega"
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2164,54 +1434,34 @@
 	{
 		type = "csgo_mega"
 		volume = 0.899902
-		pitch = 1.000000
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2226,54 +1476,34 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
+		volume = 1.0
+		pitch = 1.0
 		mixgroup = "World"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				-0.000644,
-				-0.000644,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, -0.000644, -0.000644,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2285,55 +1515,35 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.100000
-		pitch = 1.000000
+		volume = 0.1
+		pitch = 1.0
 		mixgroup = "World"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2346,54 +1556,34 @@
 		type = "csgo_mega"
 		preload_vsnds = true
 		volume = 0.249878
-		pitch = 1.000000
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2407,54 +1597,34 @@
 		type = "csgo_mega"
 		preload_vsnds = true
 		volume = 0.099976
-		pitch = 1.000000
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2469,55 +1639,35 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.699890
-		pitch = 1.000000
+		volume = 0.69989
+		pitch = 1.0
 		mixgroup = "Weapons"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2533,54 +1683,34 @@
 		type = "csgo_mega"
 		preload_vsnds = true
 		volume = 0.199951
-		pitch = 1.000000
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2595,54 +1725,34 @@
 		type = "csgo_mega"
 		preload_vsnds = true
 		volume = 0.199951
-		pitch = 1.000000
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2657,64 +1767,39 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.750000
-		pitch = 1.025000
+		volume = 0.75
+		pitch = 1.025
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002212,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002212,
+				2.0, 1.0,
 			],
-			
 			[
-				333.142853,
-				0.319853,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				333.142853, 0.319853, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000417,
-				-0.000417,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000417, -0.000417,
+				1.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2728,55 +1813,35 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000714,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.000714,
+				0.0, 0.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2790,70 +1855,45 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
-		pitch_random_min = -0.060000
-		pitch_random_max = 0.060000
+		volume = 1.0
+		pitch = 1.0
+		pitch_random_min = -0.06
+		pitch_random_max = 0.06
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.100000
+		reverb_wet = 0.1
 		display_broadcast = true
-		reverb_source_wet = 0.100000
-		occlusion_intensity = 0.750000
+		reverb_source_wet = 0.1
+		occlusion_intensity = 0.75
 		use_fadetime_volume_mapping_curve = false
 		restrict_source_reverb = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2865,66 +1905,41 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.100000
-		pitch_random_max = 0.060000
+		reverb_wet = 0.1
+		pitch_random_max = 0.06
 		display_broadcast = true
-		reverb_source_wet = 0.100000
-		occlusion_intensity = 0.800000
+		reverb_source_wet = 0.1
+		occlusion_intensity = 0.8
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -2936,71 +1951,41 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
-		block_distance = 10.000000
+		volume = 0.5
+		pitch = 1.0
+		block_distance = 10.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		mixgroup = "PlayerDamage"
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.500000
-		occlusion_intensity = 0.900000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.5
+		occlusion_intensity = 0.9
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.003572,
-				-0.003572,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.003572, -0.003572,
+				2.0, 3.0,
 			],
-			
 			[
-				113.910767,
-				0.593074,
-				-0.001020,
-				-0.001020,
-				2.000000,
-				3.000000,
+				113.910767, 0.593074, -0.00102, -0.00102,
+				2.0, 3.0,
 			],
-			
 			[
-				1400.000000,
-				0.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				1400.0, 0.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3018,68 +2003,43 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.400000
-		pitch = 1.000000
-		pitch_random_min = -0.060000
-		pitch_random_max = 0.060000
+		volume = 0.4
+		pitch = 1.0
+		pitch_random_min = -0.06
+		pitch_random_max = 0.06
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3091,47 +2051,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.000000
-		pitch_random_min = -0.100000
-		pitch_random_max = 0.100000
+		volume = 0.3
+		pitch = 1.0
+		pitch_random_min = -0.1
+		pitch_random_max = 0.1
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3140,23 +2085,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -3169,47 +2104,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.000000
-		pitch_random_min = -0.100000
-		pitch_random_max = 0.100000
+		volume = 0.3
+		pitch = 1.0
+		pitch_random_min = -0.1
+		pitch_random_max = 0.1
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3218,23 +2138,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -3247,47 +2157,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 0.800000
-		pitch_random_min = -0.100000
-		pitch_random_max = 0.100000
+		volume = 0.3
+		pitch = 0.8
+		pitch_random_min = -0.1
+		pitch_random_max = 0.1
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3296,23 +2191,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -3325,47 +2210,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.000000
-		pitch_random_min = -0.100000
-		pitch_random_max = 0.100000
+		volume = 0.3
+		pitch = 1.0
+		pitch_random_min = -0.1
+		pitch_random_max = 0.1
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3374,23 +2244,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -3403,47 +2263,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.000000
-		pitch_random_min = -0.100000
-		pitch_random_max = 0.100000
+		volume = 0.3
+		pitch = 1.0
+		pitch_random_min = -0.1
+		pitch_random_max = 0.1
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3452,23 +2297,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -3481,69 +2316,39 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
+		volume = 1.0
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				35.314026,
-				1.000000,
-				-0.000714,
-				-0.003080,
-				2.000000,
-				2.000000,
+				35.314026, 1.0, -0.000714, -0.00308,
+				2.0, 2.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				1100.0, 0.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3559,70 +2364,45 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
-		pitch_random_min = -0.060000
-		pitch_random_max = 0.060000
+		volume = 1.0
+		pitch = 1.0
+		pitch_random_min = -0.06
+		pitch_random_max = 0.06
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.100000
+		reverb_wet = 0.1
 		display_broadcast = true
-		reverb_source_wet = 0.000000
+		reverb_source_wet = 0.0
 		enable_child_events = true
-		occlusion_intensity = 0.700000
+		occlusion_intensity = 0.7
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -3638,70 +2418,45 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.030000
-		pitch = 1.000000
-		pitch_random_min = 0.000000
-		pitch_random_max = 0.000000
+		volume = 0.03
+		pitch = 1.0
+		pitch_random_min = 0.0
+		pitch_random_max = 0.0
 		mixgroup = "Foley"
 		block_match_entity = false
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.100000
+		reverb_wet = 0.1
 		display_broadcast = true
-		reverb_source_wet = 0.000000
+		reverb_source_wet = 0.0
 		enable_child_events = false
-		occlusion_intensity = 0.700000
+		occlusion_intensity = 0.7
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				25.714287,
-				1.000000,
-				0.000000,
-				-0.002443,
-				2.000000,
-				1.000000,
+				25.714287, 1.0, 0.0, -0.002443,
+				2.0, 1.0,
 			],
-			
 			[
-				317.428589,
-				0.287234,
-				-0.000931,
-				-0.000931,
-				1.000000,
-				1.000000,
+				317.428589, 0.287234, -0.000931, -0.000931,
+				1.0, 1.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000367,
-				-0.000367,
-				1.000000,
-				3.000000,
+				1100.0, 0.0, -0.000367, -0.000367,
+				1.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3714,41 +2469,26 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.011000
+		volume = 0.011
 		mixgroup = "Foley"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		occlusion_intensity = 1.000000
+		occlusion_intensity = 1.0
 		display_broadcast = false
-		reverb_source_wet = 1.000000
+		reverb_source_wet = 1.0
 		use_fadetime_volume_mapping_curve = false
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001111,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, -0.001111,
+				0.0, 0.0,
 			],
-			
 			[
-				900.000000,
-				0.000000,
-				-0.000380,
-				-0.000380,
-				2.000000,
-				3.000000,
+				900.0, 0.0, -0.00038, -0.00038,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3789,44 +2529,24 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				15.994326,
-				1.000000,
-				0.000000,
-				-0.112345,
-				0.000000,
-				0.000000,
+				15.994326, 1.0, 0.0, -0.112345,
+				0.0, 0.0,
 			],
-			
 			[
-				24.895515,
-				0.000000,
-				-0.112345,
-				-0.112345,
-				3.000000,
-				1.000000,
+				24.895515, 0.0, -0.112345, -0.112345,
+				3.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -3834,111 +2554,66 @@
 			"meta",
 			"localplayeronly",
 		]
-		instance_limit = 1.000000
-		block_duration = 0.100000
+		instance_limit = 1.0
+		block_duration = 0.1
 	}
 	Default.WalkJump = 
 	{
 		type = "csgo_mega"
-		volume = 0.100000
-		pitch = 1.100000
+		volume = 0.1
+		pitch = 1.1
 		mixgroup = "Footsteps"
-		block_duration = 0.400000
+		block_duration = 0.4
 		use_distance_volume_mapping_curve = true
-		pitch_random_min = -0.010000
-		pitch_random_max = 0.010000
+		pitch_random_min = -0.01
+		pitch_random_max = 0.01
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 0.500000
-		instance_limit = 3.000000
+		reverb_wet = 0.5
+		instance_limit = 3.0
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			30.000000,
-		]
-		occlusion_intensity = 0.000000
+		position_offset = [ 0.0, 0.0, 30.0 ]
+		occlusion_intensity = 0.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		broadcast_distance_override = 98.000000
+		broadcast_distance_override = 98.0
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				40.000000,
-				1.000000,
-				0.000000,
-				-0.006361,
-				0.000000,
-				0.000000,
+				40.0, 1.0, 0.0, -0.006361,
+				0.0, 0.0,
 			],
-			
 			[
-				155.714294,
-				0.263889,
-				-0.002204,
-				-0.002204,
-				1.000000,
-				1.000000,
+				155.714294, 0.263889, -0.002204, -0.002204,
+				1.0, 1.0,
 			],
-			
 			[
-				493.714294,
-				0.000000,
-				-0.000781,
-				0.000000,
-				0.000000,
-				0.000000,
+				493.714294, 0.0, -0.000781, 0.0,
+				0.0, 0.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				49.823318,
-				1.003497,
-				-0.010143,
-				-0.010143,
-				3.000000,
-				1.000000,
+				49.823318, 1.003497, -0.010143, -0.010143,
+				3.0, 1.0,
 			],
-			
 			[
-				98.586571,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				98.586571, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -3950,74 +2625,44 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
-		block_distance = 69.000000
+		volume = 0.5
+		pitch = 1.0
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.000000
+		reverb_wet = 1.0
 		mixgroup = "PlayerDamage"
 		display_broadcast = true
-		occlusion_intensity = 1.000000
+		occlusion_intensity = 1.0
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 0.500000
+		reverb_source_wet = 0.5
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				76.000000,
-				1.000000,
-				-0.000714,
-				-0.003080,
-				2.000000,
-				2.000000,
+				76.0, 1.0, -0.000714, -0.00308,
+				2.0, 2.0,
 			],
-			
 			[
-				452.000000,
-				0.312500,
-				-0.001082,
-				-0.001082,
-				1.000000,
-				1.000000,
+				452.0, 0.3125, -0.001082, -0.001082,
+				1.0, 1.0,
 			],
-			
 			[
-				1000.000000,
-				0.000000,
-				-0.000570,
-				-0.000570,
-				1.000000,
-				1.000000,
+				1000.0, 0.0, -0.00057, -0.00057,
+				1.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.790098,
-				-1.790098,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.790098, -1.790098,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -4032,79 +2677,49 @@
 	Player.DamageBody.AttackerFeedback = 
 	{
 		type = "csgo_mega"
-		volume = 1.000000
-		pitch = 1.300000
+		volume = 1.0
+		pitch = 1.3
 		mixgroup = "PlayerAttackerFeedback"
-		block_duration = 0.050000
+		block_duration = 0.05
 		use_distance_volume_mapping_curve = true
-		pitch_random_min = -0.010000
-		pitch_random_max = 0.010000
+		pitch_random_min = -0.01
+		pitch_random_max = 0.01
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 0.500000
-		block_distance = 20.000000
-		delay = 0.000000
-		instance_limit = 3.000000
-		reverb_source_wet = 0.500000
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		reverb_wet = 0.5
+		block_distance = 20.0
+		delay = 0.0
+		instance_limit = 3.0
+		reverb_source_wet = 0.5
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		block_matching_events = false
 		block_match_entity = false
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				21.400000,
-				1.000000,
-				-0.001390,
-				-0.001390,
-				2.000000,
-				3.000000,
+				21.4, 1.0, -0.00139, -0.00139,
+				2.0, 3.0,
 			],
-			
 			[
-				1065.895142,
-				0.214765,
-				-0.000098,
-				-0.000752,
-				2.000000,
-				1.000000,
+				1065.895142, 0.214765, -0.000098, -0.000752,
+				2.0, 1.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.137795,
-				1.000000,
-				-3.242553,
-				-3.242553,
-				3.000000,
-				1.000000,
+				0.137795, 1.0, -3.242553, -3.242553,
+				3.0, 1.0,
 			],
-			
 			[
-				0.308399,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.308399, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -4116,23 +2731,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -4144,27 +2749,22 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
+		volume = 1.0
+		pitch = 1.0
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.200000
-		occlusion_intensity = 0.000000
+		reverb_wet = 0.2
+		occlusion_intensity = 0.0
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_distance_unfiltered_stereo_mapping_curve = false
 		enable_child_events = false
-		delay = 0.000000
+		delay = 0.0
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 1.000000
-		distance_effect_mix = 0.000000
-		block_duration = 0.100000
+		reverb_source_wet = 1.0
+		distance_effect_mix = 0.0
+		block_duration = 0.1
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		metadata = 
@@ -4173,95 +2773,50 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				21.400000,
-				1.000000,
-				-0.001390,
-				-0.001390,
-				2.000000,
-				3.000000,
+				21.4, 1.0, -0.00139, -0.00139,
+				2.0, 3.0,
 			],
-			
 			[
-				1065.895142,
-				0.577181,
-				-0.000098,
-				-0.000405,
-				2.000000,
-				1.000000,
+				1065.895142, 0.577181, -0.000098, -0.000405,
+				2.0, 1.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.103675,
-				1.000000,
-				-5.602931,
-				-5.602931,
-				3.000000,
-				1.000000,
+				0.103675, 1.0, -5.602931, -5.602931,
+				3.0, 1.0,
 			],
-			
 			[
-				0.178478,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.178478, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -4280,27 +2835,22 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
+		volume = 1.0
+		pitch = 1.0
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.200000
-		occlusion_intensity = 0.000000
+		reverb_wet = 0.2
+		occlusion_intensity = 0.0
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_distance_unfiltered_stereo_mapping_curve = false
 		enable_child_events = true
-		delay = 0.000000
+		delay = 0.0
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 1.000000
-		distance_effect_mix = 0.000000
-		block_duration = 0.100000
+		reverb_source_wet = 1.0
+		distance_effect_mix = 0.0
+		block_duration = 0.1
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		metadata = 
@@ -4309,95 +2859,50 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				21.400000,
-				1.000000,
-				-0.001390,
-				-0.001390,
-				2.000000,
-				3.000000,
+				21.4, 1.0, -0.00139, -0.00139,
+				2.0, 3.0,
 			],
-			
 			[
-				1065.895142,
-				0.577181,
-				-0.000098,
-				-0.000405,
-				2.000000,
-				1.000000,
+				1065.895142, 0.577181, -0.000098, -0.000405,
+				2.0, 1.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.103675,
-				1.000000,
-				-5.602931,
-				-5.602931,
-				3.000000,
-				1.000000,
+				0.103675, 1.0, -5.602931, -5.602931,
+				3.0, 1.0,
 			],
-			
 			[
-				0.178478,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.178478, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -4419,80 +2924,50 @@
 	Player.DamageBodyArmor.AttackerFeedback = 
 	{
 		type = "csgo_mega"
-		volume = 1.200000
-		pitch = 1.300000
+		volume = 1.2
+		pitch = 1.3
 		mixgroup = "PlayerAttackerFeedback"
-		block_duration = 0.050000
+		block_duration = 0.05
 		use_distance_volume_mapping_curve = true
-		pitch_random_min = 0.000000
-		pitch_random_max = 0.000000
+		pitch_random_min = 0.0
+		pitch_random_max = 0.0
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 0.500000
-		block_distance = 20.000000
-		delay = 0.000000
-		instance_limit = 3.000000
-		reverb_source_wet = 0.500000
+		reverb_wet = 0.5
+		block_distance = 20.0
+		delay = 0.0
+		instance_limit = 3.0
+		reverb_source_wet = 0.5
 		enable_child_events = true
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		block_matching_events = false
 		block_match_entity = false
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				21.400000,
-				1.000000,
-				-0.001390,
-				-0.001390,
-				2.000000,
-				3.000000,
+				21.4, 1.0, -0.00139, -0.00139,
+				2.0, 3.0,
 			],
-			
 			[
-				1065.895142,
-				0.214765,
-				-0.000098,
-				-0.000752,
-				2.000000,
-				1.000000,
+				1065.895142, 0.214765, -0.000098, -0.000752,
+				2.0, 1.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.103675,
-				1.000000,
-				-5.602931,
-				-5.602931,
-				3.000000,
-				1.000000,
+				0.103675, 1.0, -5.602931, -5.602931,
+				3.0, 1.0,
 			],
-			
 			[
-				0.178478,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.178478, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -4512,23 +2987,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -4540,90 +3005,55 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.900000
-		pitch = 1.000000
-		block_distance = 69.000000
+		volume = 0.9
+		pitch = 1.0
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.200000
+		reverb_wet = 0.2
 		mixgroup = "PlayerDamage"
 		display_broadcast = true
-		volume_random_min = 0.000000
-		volume_random_max = 0.000000
-		pitch_random_max = 0.000000
-		pitch_random_min = 0.000000
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_max = 0.0
+		pitch_random_min = 0.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		reverb_source_wet = 0.300000
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.002969,
-				-0.002969,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.002969, -0.002969,
+				2.0, 3.0,
 			],
-			
 			[
-				800.000000,
-				0.000000,
-				-0.000397,
-				-0.000397,
-				2.000000,
-				3.000000,
+				800.0, 0.0, -0.000397, -0.000397,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				55.714287,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				55.714287, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -4645,90 +3075,55 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.900000
-		pitch = 1.000000
-		block_distance = 69.000000
+		volume = 0.9
+		pitch = 1.0
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.200000
+		reverb_wet = 0.2
 		mixgroup = "PlayerDamage"
 		display_broadcast = true
-		volume_random_min = 0.000000
-		volume_random_max = 0.000000
-		pitch_random_max = 0.000000
-		pitch_random_min = 0.000000
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_max = 0.0
+		pitch_random_min = 0.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		reverb_source_wet = 0.300000
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.002969,
-				-0.002969,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.002969, -0.002969,
+				2.0, 3.0,
 			],
-			
 			[
-				800.000000,
-				0.000000,
-				-0.000397,
-				-0.000397,
-				2.000000,
-				3.000000,
+				800.0, 0.0, -0.000397, -0.000397,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				55.714287,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				55.714287, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -4743,76 +3138,46 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.400000
-		pitch = 1.000000
+		volume = 0.4
+		pitch = 1.0
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.500000
-		occlusion_intensity = 0.000000
+		reverb_wet = 0.5
+		occlusion_intensity = 0.0
 		display_broadcast = true
 		enable_child_events = false
-		reverb_source_wet = 0.500000
+		reverb_source_wet = 0.5
 		use_fadetime_volume_mapping_curve = false
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		block_duration = 0.100000
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		block_duration = 0.1
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				104.432915,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				104.432915, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				738.571411,
-				0.805147,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				738.571411, 0.805147, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.103675,
-				1.000000,
-				-5.602931,
-				-5.602931,
-				3.000000,
-				1.000000,
+				0.103675, 1.0, -5.602931, -5.602931,
+				3.0, 1.0,
 			],
-			
 			[
-				0.178478,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.178478, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -4829,23 +3194,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -4857,76 +3212,46 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.000000
-		pitch = 1.000000
+		volume = 0.0
+		pitch = 1.0
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
-		occlusion_intensity = 0.000000
+		reverb_wet = 0.3
+		occlusion_intensity = 0.0
 		display_broadcast = true
 		enable_child_events = true
-		reverb_source_wet = 0.300000
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		block_duration = 0.100000
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		block_duration = 0.1
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				104.432915,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				104.432915, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1100.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1100.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.103675,
-				1.000000,
-				-5.602931,
-				-5.602931,
-				3.000000,
-				1.000000,
+				0.103675, 1.0, -5.602931, -5.602931,
+				3.0, 1.0,
 			],
-			
 			[
-				0.178478,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.178478, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -4940,23 +3265,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -4968,103 +3283,63 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
-		occlusion_intensity = 0.000000
-		pitch_random_min = 0.000000
-		pitch_random_max = 0.000000
+		reverb_wet = 0.0
+		occlusion_intensity = 0.0
+		pitch_random_min = 0.0
+		pitch_random_max = 0.0
 		display_broadcast = true
 		enable_child_events = false
-		reverb_source_wet = 0.200000
+		reverb_source_wet = 0.2
 		use_fadetime_volume_mapping_curve = false
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		block_duration = 0.100000
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		block_duration = 0.1
 		block_other = true
 		block_other_name = "DeathHeadShotArmor"
-		block_other_duration = 0.300000
-		block_other_distance = 30.000000
+		block_other_duration = 0.3
+		block_other_distance = 30.0
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				104.432915,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				104.432915, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1100.000000,
-				0.768382,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1100.0, 0.768382, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.103675,
-				1.000000,
-				-5.602931,
-				-5.602931,
-				3.000000,
-				1.000000,
+				0.103675, 1.0, -5.602931, -5.602931,
+				3.0, 1.0,
 			],
-			
 			[
-				0.178478,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.178478, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -5080,52 +3355,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.700000
-		pitch = 1.300000
+		volume = 0.7
+		pitch = 1.3
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.500000
+		reverb_wet = 0.5
 		display_broadcast = false
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_fadetime_volume_mapping_curve = false
-		delay = 0.050000
-		reverb_source_wet = 0.500000
+		delay = 0.05
+		reverb_source_wet = 0.5
 		enable_child_events = true
-		occlusion_intensity = 0.700000
+		occlusion_intensity = 0.7
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				35.314026,
-				1.000000,
-				-0.000714,
-				-0.003080,
-				2.000000,
-				2.000000,
+				35.314026, 1.0, -0.000714, -0.00308,
+				2.0, 2.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				1100.0, 0.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5141,23 +3396,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -5172,48 +3417,33 @@
 	Player.DamageBody.Onlooker = 
 	{
 		type = "csgo_mega"
-		volume = 1.000000
-		pitch = 1.300000
+		volume = 1.0
+		pitch = 1.3
 		mixgroup = "PlayerDamage"
-		block_duration = 0.050000
+		block_duration = 0.05
 		use_distance_volume_mapping_curve = true
-		pitch_random_min = -0.010000
-		pitch_random_max = 0.010000
+		pitch_random_min = -0.01
+		pitch_random_max = 0.01
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 1.000000
-		block_distance = 20.000000
-		delay = 0.000000
-		instance_limit = 3.000000
-		reverb_source_wet = 1.000000
-		occlusion_intensity = 0.700000
+		reverb_wet = 1.0
+		block_distance = 20.0
+		delay = 0.0
+		instance_limit = 3.0
+		reverb_source_wet = 1.0
+		occlusion_intensity = 0.7
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				35.314026,
-				1.000000,
-				-0.000714,
-				-0.003080,
-				2.000000,
-				2.000000,
+				35.314026, 1.0, -0.000714, -0.00308,
+				2.0, 2.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				1100.0, 0.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5225,23 +3455,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -5253,45 +3473,30 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.500000
-		pitch = 1.000000
+		volume = 1.5
+		pitch = 1.0
 		mixgroup = "PlayerVictim"
-		block_distance = 20.000000
+		block_distance = 20.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
+		reverb_wet = 0.0
 		display_broadcast = false
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
+		position_offset = [ 0.0, 0.0, 0.0 ]
 		use_fadetime_volume_mapping_curve = false
-		delay = 0.050000
-		occlusion_intensity = 0.000000
-		reverb_source_wet = 0.000000
+		delay = 0.05
+		occlusion_intensity = 0.0
+		reverb_source_wet = 0.0
 		restrict_source_reverb = true
 		use_distance_unfiltered_stereo_mapping_curve = true
-		block_duration = 0.100000
+		block_duration = 0.1
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				600.000000,
-				1.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				600.0, 1.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5307,44 +3512,24 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.838462,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.838462, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.830769,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.830769, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -5355,48 +3540,33 @@
 	Player.DamageBody.Victim = 
 	{
 		type = "csgo_mega"
-		volume = 1.500000
-		pitch = 1.000000
+		volume = 1.5
+		pitch = 1.0
 		mixgroup = "PlayerVictim"
-		block_duration = 0.100000
+		block_duration = 0.1
 		use_distance_volume_mapping_curve = true
-		pitch_random_min = -0.010000
-		pitch_random_max = 0.010000
+		pitch_random_min = -0.01
+		pitch_random_max = 0.01
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 0.000000
-		block_distance = 20.000000
-		delay = 0.050000
-		instance_limit = 3.000000
-		reverb_source_wet = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		occlusion_intensity = 0.000000
+		reverb_wet = 0.0
+		block_distance = 20.0
+		delay = 0.05
+		instance_limit = 3.0
+		reverb_source_wet = 0.0
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		occlusion_intensity = 0.0
 		enable_child_events = true
 		use_distance_unfiltered_stereo_mapping_curve = true
 		restrict_source_reverb = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				600.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				600.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5409,23 +3579,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -5434,23 +3594,13 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.900000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.9, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.900000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.9, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -5461,46 +3611,31 @@
 	Player.DamageBody.VictimFlesh = 
 	{
 		type = "csgo_mega"
-		volume = 1.000000
-		pitch = 1.300000
+		volume = 1.0
+		pitch = 1.3
 		mixgroup = "PlayerDamage"
-		block_duration = 0.100000
+		block_duration = 0.1
 		use_distance_volume_mapping_curve = true
-		pitch_random_min = -0.010000
-		pitch_random_max = 0.010000
+		pitch_random_min = -0.01
+		pitch_random_max = 0.01
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 0.000000
-		block_distance = 20.000000
-		delay = 0.050000
-		instance_limit = 3.000000
-		reverb_source_wet = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		occlusion_intensity = 0.000000
+		reverb_wet = 0.0
+		block_distance = 20.0
+		delay = 0.05
+		instance_limit = 3.0
+		reverb_source_wet = 0.0
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		occlusion_intensity = 0.0
 		restrict_source_reverb = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				600.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				600.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5512,23 +3647,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -5540,52 +3665,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.100000
+		volume = 0.3
+		pitch = 1.1
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.500000
+		reverb_wet = 0.5
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_fadetime_volume_mapping_curve = false
-		delay = 0.050000
-		reverb_source_wet = 0.500000
+		delay = 0.05
+		reverb_source_wet = 0.5
 		enable_child_events = false
-		occlusion_intensity = 0.700000
+		occlusion_intensity = 0.7
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				35.314026,
-				1.000000,
-				-0.000714,
-				-0.003080,
-				2.000000,
-				2.000000,
+				35.314026, 1.0, -0.000714, -0.00308,
+				2.0, 2.0,
 			],
-			
 			[
-				1100.000000,
-				0.000000,
-				-0.000364,
-				-0.000364,
-				2.000000,
-				3.000000,
+				1100.0, 0.0, -0.000364, -0.000364,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5597,23 +3702,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -5629,43 +3724,28 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.000000
+		volume = 0.3
+		pitch = 1.0
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.500000
-		occlusion_intensity = 0.000000
+		reverb_wet = 0.5
+		occlusion_intensity = 0.0
 		display_broadcast = true
 		enable_child_events = false
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 0.500000
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		reverb_source_wet = 0.5
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				15.714286,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				15.714286, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1100.000000,
-				0.763889,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1100.0, 0.763889, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5678,23 +3758,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -5706,43 +3776,28 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.600000
-		pitch = 1.100000
+		volume = 0.6
+		pitch = 1.1
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.500000
-		occlusion_intensity = 0.000000
+		reverb_wet = 0.5
+		occlusion_intensity = 0.0
 		display_broadcast = true
 		enable_child_events = false
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 0.500000
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		reverb_source_wet = 0.5
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				104.432915,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				104.432915, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1100.000000,
-				0.774306,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1100.0, 0.774306, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5755,23 +3810,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -5782,97 +3827,57 @@
 	Player.DeathBody.Flesh = 
 	{
 		type = "csgo_mega"
-		volume = 2.000000
-		pitch = 1.300000
+		volume = 2.0
+		pitch = 1.3
 		mixgroup = "PlayerDamage"
-		block_duration = 0.050000
+		block_duration = 0.05
 		use_distance_volume_mapping_curve = true
-		pitch_random_min = -0.010000
-		pitch_random_max = 0.010000
+		pitch_random_min = -0.01
+		pitch_random_max = 0.01
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 0.500000
-		block_distance = 20.000000
-		delay = 0.100000
-		instance_limit = 3.000000
-		reverb_source_wet = 0.500000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.5
+		block_distance = 20.0
+		delay = 0.1
+		instance_limit = 3.0
+		reverb_source_wet = 0.5
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		occlusion_intensity = 0.7
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				45.985714,
-				1.000000,
-				0.000000,
-				-0.004924,
-				0.000000,
-				0.000000,
+				45.985714, 1.0, 0.0, -0.004924,
+				0.0, 0.0,
 			],
-			
 			[
-				187.008560,
-				0.305556,
-				-0.004924,
-				-0.000974,
-				0.000000,
-				1.000000,
+				187.00856, 0.305556, -0.004924, -0.000974,
+				0.0, 1.0,
 			],
-			
 			[
-				1073.000000,
-				0.000000,
-				-0.000345,
-				0.000000,
-				0.000000,
-				0.000000,
+				1073.0, 0.0, -0.000345, 0.0,
+				0.0, 0.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				27.428572,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				27.428572, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				50.571430,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				50.57143, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5887,93 +3892,53 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.200000
-		pitch = 1.000000
+		volume = 0.2
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.3
+		occlusion_intensity = 0.7
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.300000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				-0.002066,
-				-0.002066,
-				1.000000,
-				1.000000,
+				22.0, 1.0, -0.002066, -0.002066,
+				1.0, 1.0,
 			],
-			
 			[
-				298.285736,
-				0.429185,
-				-0.000849,
-				-0.000849,
-				1.000000,
-				1.000000,
+				298.285736, 0.429185, -0.000849, -0.000849,
+				1.0, 1.0,
 			],
-			
 			[
-				1200.000000,
-				0.000000,
-				-0.000476,
-				-0.000476,
-				1.000000,
-				1.000000,
+				1200.0, 0.0, -0.000476, -0.000476,
+				1.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				39.428574,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				39.428574, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				66.857147,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				66.857147, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -5985,93 +3950,53 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.700000
-		pitch = 1.000000
+		volume = 0.7
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.3
+		occlusion_intensity = 0.7
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.300000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				-0.002066,
-				-0.002066,
-				1.000000,
-				1.000000,
+				22.0, 1.0, -0.002066, -0.002066,
+				1.0, 1.0,
 			],
-			
 			[
-				298.285736,
-				0.429185,
-				-0.000849,
-				-0.000849,
-				1.000000,
-				1.000000,
+				298.285736, 0.429185, -0.000849, -0.000849,
+				1.0, 1.0,
 			],
-			
 			[
-				1200.000000,
-				0.000000,
-				-0.000476,
-				-0.000476,
-				1.000000,
-				1.000000,
+				1200.0, 0.0, -0.000476, -0.000476,
+				1.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				45.428574,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				45.428574, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				72.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				72.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6083,45 +4008,30 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.300000
-		pitch = 1.300000
+		volume = 0.3
+		pitch = 1.3
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.500000
+		reverb_wet = 0.5
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_fadetime_volume_mapping_curve = false
-		delay = 0.100000
-		reverb_source_wet = 0.500000
+		delay = 0.1
+		reverb_source_wet = 0.5
 		enable_child_events = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		block_matching_events = false
 		block_match_entity = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				21.400000,
-				1.000000,
-				-0.001390,
-				-0.001390,
-				2.000000,
-				3.000000,
+				21.4, 1.0, -0.00139, -0.00139,
+				2.0, 3.0,
 			],
-			
 			[
-				1065.895142,
-				0.214765,
-				-0.000098,
-				-0.000752,
-				2.000000,
-				1.000000,
+				1065.895142, 0.214765, -0.000098, -0.000752,
+				2.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6132,23 +4042,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -6164,120 +4064,70 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
-		occlusion_intensity = 0.000000
-		pitch_random_min = 0.000000
-		pitch_random_max = 0.000000
+		reverb_wet = 0.0
+		occlusion_intensity = 0.0
+		pitch_random_min = 0.0
+		pitch_random_max = 0.0
 		display_broadcast = true
-		reverb_source_wet = 0.100000
+		reverb_source_wet = 0.1
 		use_distance_unfiltered_stereo_mapping_curve = true
 		use_fadetime_volume_mapping_curve = false
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		block_duration = 0.100000
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		block_duration = 0.1
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				104.432915,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				104.432915, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1100.000000,
-				0.768382,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1100.0, 0.768382, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.103675,
-				1.000000,
-				-5.602931,
-				-5.602931,
-				3.000000,
-				1.000000,
+				0.103675, 1.0, -5.602931, -5.602931,
+				3.0, 1.0,
 			],
-			
 			[
-				0.178478,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.178478, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6293,97 +4143,57 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
-		block_distance = 69.000000
+		volume = 1.0
+		pitch = 1.0
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
+		reverb_wet = 0.3
 		mixgroup = "PlayerDamage"
 		display_broadcast = true
-		volume_random_min = 0.000000
-		volume_random_max = 0.000000
-		pitch_random_max = 0.000000
-		pitch_random_min = 0.000000
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_max = 0.0
+		pitch_random_min = 0.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		reverb_source_wet = 0.700000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		reverb_source_wet = 0.7
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_fadetime_volume_mapping_curve = false
-		occlusion_intensity = 0.700000
+		occlusion_intensity = 0.7
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.002969,
-				-0.002969,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.002969, -0.002969,
+				2.0, 3.0,
 			],
-			
 			[
-				800.000000,
-				0.000000,
-				-0.000397,
-				-0.000397,
-				2.000000,
-				3.000000,
+				800.0, 0.0, -0.000397, -0.000397,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				17.142859,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				17.142859, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				28.285715,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				28.285715, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6397,97 +4207,57 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 1.000000
-		pitch = 1.000000
-		block_distance = 69.000000
+		volume = 1.0
+		pitch = 1.0
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
+		reverb_wet = 0.3
 		mixgroup = "PlayerDamage"
 		display_broadcast = true
-		volume_random_min = 0.000000
-		volume_random_max = 0.000000
-		pitch_random_max = 0.000000
-		pitch_random_min = 0.000000
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_max = 0.0
+		pitch_random_min = 0.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		reverb_source_wet = 0.700000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		reverb_source_wet = 0.7
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_fadetime_volume_mapping_curve = false
-		occlusion_intensity = 0.700000
+		occlusion_intensity = 0.7
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.002969,
-				-0.002969,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.002969, -0.002969,
+				2.0, 3.0,
 			],
-			
 			[
-				800.000000,
-				0.000000,
-				-0.000397,
-				-0.000397,
-				2.000000,
-				3.000000,
+				800.0, 0.0, -0.000397, -0.000397,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				17.142859,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				17.142859, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				28.285715,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				28.285715, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6504,50 +4274,30 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
-		occlusion_intensity = 0.500000
+		reverb_wet = 0.3
+		occlusion_intensity = 0.5
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.300000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				-0.002066,
-				-0.002066,
-				1.000000,
-				1.000000,
+				22.0, 1.0, -0.002066, -0.002066,
+				1.0, 1.0,
 			],
-			
 			[
-				298.285736,
-				0.429185,
-				-0.000954,
-				-0.000954,
-				1.000000,
-				1.000000,
+				298.285736, 0.429185, -0.000954, -0.000954,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				0.000000,
-				-0.000556,
-				-0.000556,
-				1.000000,
-				1.000000,
+				1070.0, 0.0, -0.000556, -0.000556,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6560,23 +4310,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -6588,43 +4328,28 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.490000
-		pitch = 1.000000
+		volume = 0.49
+		pitch = 1.0
 		mixgroup = "PlayerVictim"
-		block_distance = 70.000000
+		block_distance = 70.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
-		occlusion_intensity = 0.500000
+		reverb_wet = 0.0
+		occlusion_intensity = 0.5
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.000000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.0
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
-		block_duration = 0.100000
+		block_duration = 0.1
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				22.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				1070.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6637,44 +4362,24 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -6686,52 +4391,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_duration = 0.100000
-		block_distance = 69.000000
+		block_duration = 0.1
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
+		reverb_wet = 0.3
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		enable_child_events = false
-		reverb_source_wet = 1.000000
-		occlusion_intensity = 0.500000
+		reverb_source_wet = 1.0
+		occlusion_intensity = 0.5
 		use_fadetime_volume_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				-0.002066,
-				-0.002066,
-				1.000000,
-				1.000000,
+				22.0, 1.0, -0.002066, -0.002066,
+				1.0, 1.0,
 			],
-			
 			[
-				298.285736,
-				0.429185,
-				-0.000944,
-				-0.000944,
-				1.000000,
-				1.000000,
+				298.285736, 0.429185, -0.000944, -0.000944,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				0.000000,
-				-0.000548,
-				-0.000548,
-				1.000000,
-				1.000000,
+				1070.0, 0.0, -0.000548, -0.000548,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6740,23 +4425,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -6772,44 +4447,29 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.750000
-		pitch = 1.000000
+		volume = 0.75
+		pitch = 1.0
 		mixgroup = "PlayerVictim"
-		block_duration = 0.100000
-		block_distance = 100.000000
+		block_duration = 0.1
+		block_distance = 100.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
+		reverb_wet = 0.0
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		enable_child_events = false
-		reverb_source_wet = 0.000000
-		occlusion_intensity = 0.500000
+		reverb_source_wet = 0.0
+		occlusion_intensity = 0.5
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				22.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
-			
 			[
-				1300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				1300.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6818,44 +4478,24 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -6871,44 +4511,29 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 2.000000
-		pitch = 0.800000
+		volume = 2.0
+		pitch = 0.8
 		mixgroup = "PlayerVictim"
-		block_distance = 70.000000
+		block_distance = 70.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.0
+		occlusion_intensity = 0.7
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_distance_unfiltered_stereo_mapping_curve = true
 		enable_child_events = true
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 0.000000
-		block_duration = 1.000000
+		reverb_source_wet = 0.0
+		block_duration = 1.0
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				51.971428,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				51.971428, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				1070.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
 		]
 		soundevent_01 = 
@@ -6917,44 +4542,24 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				74.285713,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				74.285713, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				100.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				100.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -6970,52 +4575,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 2.000000
-		pitch = 0.800000
+		volume = 2.0
+		pitch = 0.8
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.3
+		occlusion_intensity = 0.7
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_distance_unfiltered_stereo_mapping_curve = true
 		enable_child_events = true
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 0.300000
+		reverb_source_wet = 0.3
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				51.971428,
-				1.000000,
-				-0.001582,
-				-0.001582,
-				1.000000,
-				1.000000,
+				51.971428, 1.0, -0.001582, -0.001582,
+				1.0, 1.0,
 			],
-			
 			[
-				400.485718,
-				0.448529,
-				-0.000982,
-				-0.000982,
-				1.000000,
-				1.000000,
+				400.485718, 0.448529, -0.000982, -0.000982,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				0.000000,
-				-0.000670,
-				-0.000670,
-				1.000000,
-				1.000000,
+				1070.0, 0.0, -0.00067, -0.00067,
+				1.0, 1.0,
 			],
 		]
 		soundevent_01 = 
@@ -7024,44 +4609,24 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				74.285713,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				74.285713, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				100.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				100.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -7077,52 +4642,32 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 2.000000
-		pitch = 0.800000
+		volume = 2.0
+		pitch = 0.8
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.3
+		occlusion_intensity = 0.7
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_distance_unfiltered_stereo_mapping_curve = true
 		enable_child_events = true
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 0.300000
+		reverb_source_wet = 0.3
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				51.971428,
-				1.000000,
-				-0.001582,
-				-0.001582,
-				1.000000,
-				1.000000,
+				51.971428, 1.0, -0.001582, -0.001582,
+				1.0, 1.0,
 			],
-			
 			[
-				400.485718,
-				0.448529,
-				-0.000982,
-				-0.000982,
-				1.000000,
-				1.000000,
+				400.485718, 0.448529, -0.000982, -0.000982,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				0.000000,
-				-0.000670,
-				-0.000670,
-				1.000000,
-				1.000000,
+				1070.0, 0.0, -0.00067, -0.00067,
+				1.0, 1.0,
 			],
 		]
 		soundevent_01 = 
@@ -7131,44 +4676,24 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				74.285713,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				74.285713, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				100.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				100.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -7184,44 +4709,29 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 2.000000
-		pitch = 0.800000
+		volume = 2.0
+		pitch = 0.8
 		mixgroup = "PlayerVictim"
-		block_distance = 70.000000
+		block_distance = 70.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.0
+		occlusion_intensity = 0.7
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_distance_unfiltered_stereo_mapping_curve = true
 		enable_child_events = true
 		use_fadetime_volume_mapping_curve = false
-		reverb_source_wet = 0.000000
-		block_duration = 1.000000
+		reverb_source_wet = 0.0
+		block_duration = 1.0
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				51.971428,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				51.971428, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				1070.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
 		]
 		soundevent_01 = 
@@ -7230,44 +4740,24 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				74.285713,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				74.285713, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				100.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				100.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -7283,43 +4773,28 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.550000
-		pitch = 1.000000
+		volume = 0.55
+		pitch = 1.0
 		mixgroup = "PlayerVictim"
-		block_distance = 70.000000
+		block_distance = 70.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
-		occlusion_intensity = 0.500000
+		reverb_wet = 0.0
+		occlusion_intensity = 0.5
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.000000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.0
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
-		block_duration = 1.000000
+		block_duration = 1.0
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				22.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				1070.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -7330,44 +4805,24 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				40.359188,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				40.359188, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				61.126537,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				61.126537, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -7379,51 +4834,31 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.100000
-		occlusion_intensity = 0.500000
+		reverb_wet = 0.1
+		occlusion_intensity = 0.5
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.300000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				-0.002066,
-				-0.002066,
-				1.000000,
-				1.000000,
+				22.0, 1.0, -0.002066, -0.002066,
+				1.0, 1.0,
 			],
-			
 			[
-				298.285736,
-				0.429185,
-				-0.000954,
-				-0.000954,
-				1.000000,
-				1.000000,
+				298.285736, 0.429185, -0.000954, -0.000954,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				0.000000,
-				-0.000556,
-				-0.000556,
-				1.000000,
-				1.000000,
+				1070.0, 0.0, -0.000556, -0.000556,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -7436,44 +4871,24 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				40.359188,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				40.359188, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				61.126537,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				61.126537, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -7485,53 +4900,33 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.3
+		occlusion_intensity = 0.7
 		display_broadcast = true
 		enable_child_events = true
-		pitch_random_min = -0.030000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.300000
+		pitch_random_min = -0.03
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				-0.002066,
-				-0.002066,
-				1.000000,
-				1.000000,
+				22.0, 1.0, -0.002066, -0.002066,
+				1.0, 1.0,
 			],
-			
 			[
-				298.285736,
-				0.429185,
-				-0.000954,
-				-0.000954,
-				1.000000,
-				1.000000,
+				298.285736, 0.429185, -0.000954, -0.000954,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				0.000000,
-				-0.000556,
-				-0.000556,
-				1.000000,
-				1.000000,
+				1070.0, 0.0, -0.000556, -0.000556,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -7542,23 +4937,13 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				48.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				48.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				67.714287,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				67.714287, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -7568,23 +4953,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -7596,45 +4971,30 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.700000
-		pitch = 1.000000
+		volume = 0.7
+		pitch = 1.0
 		mixgroup = "PlayerVictim"
-		block_distance = 70.000000
+		block_distance = 70.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.0
+		occlusion_intensity = 0.7
 		display_broadcast = true
 		enable_child_events = true
-		pitch_random_min = -0.030000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.000000
+		pitch_random_min = -0.03
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.0
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
-		block_duration = 1.000000
+		block_duration = 1.0
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				22.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				1070.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -7645,23 +5005,13 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				48.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				48.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				67.714287,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				67.714287, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -7671,23 +5021,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -7699,53 +5039,33 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.300000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.3
+		occlusion_intensity = 0.7
 		display_broadcast = true
 		enable_child_events = true
-		pitch_random_min = -0.030000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.300000
+		pitch_random_min = -0.03
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				-0.002066,
-				-0.002066,
-				1.000000,
-				1.000000,
+				22.0, 1.0, -0.002066, -0.002066,
+				1.0, 1.0,
 			],
-			
 			[
-				298.285736,
-				0.429185,
-				-0.000954,
-				-0.000954,
-				1.000000,
-				1.000000,
+				298.285736, 0.429185, -0.000954, -0.000954,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				0.000000,
-				-0.000556,
-				-0.000556,
-				1.000000,
-				1.000000,
+				1070.0, 0.0, -0.000556, -0.000556,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -7756,23 +5076,13 @@
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				48.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				48.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				67.714287,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				67.714287, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -7782,23 +5092,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -7810,51 +5110,31 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.000000
+		volume = 0.5
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.100000
-		occlusion_intensity = 0.500000
+		reverb_wet = 0.1
+		occlusion_intensity = 0.5
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.300000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.3
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				-0.002066,
-				-0.002066,
-				1.000000,
-				1.000000,
+				22.0, 1.0, -0.002066, -0.002066,
+				1.0, 1.0,
 			],
-			
 			[
-				298.285736,
-				0.429185,
-				-0.000954,
-				-0.000954,
-				1.000000,
-				1.000000,
+				298.285736, 0.429185, -0.000954, -0.000954,
+				1.0, 1.0,
 			],
-			
 			[
-				1070.000000,
-				0.000000,
-				-0.000556,
-				-0.000556,
-				1.000000,
-				1.000000,
+				1070.0, 0.0, -0.000556, -0.000556,
+				1.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -7867,44 +5147,24 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				40.359188,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				40.359188, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				61.126537,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				61.126537, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -7916,85 +5176,50 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.700000
-		pitch = 1.000000
+		volume = 0.7
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 70.000000
+		block_distance = 70.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.0
+		occlusion_intensity = 0.7
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.000000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.0
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
-		block_duration = 1.000000
+		block_duration = 1.0
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				22.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
-			
 			[
-				1200.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				1200.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				45.428574,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				45.428574, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				72.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				72.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -8006,85 +5231,50 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.200000
-		pitch = 1.000000
+		volume = 0.2
+		pitch = 1.0
 		mixgroup = "PlayerDamage"
-		block_distance = 70.000000
+		block_distance = 70.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.000000
-		occlusion_intensity = 0.700000
+		reverb_wet = 0.0
+		occlusion_intensity = 0.7
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
-		reverb_source_wet = 0.000000
+		position_offset = [ 0.0, 0.0, 60.0 ]
+		reverb_source_wet = 0.0
 		use_fadetime_volume_mapping_curve = false
 		use_distance_unfiltered_stereo_mapping_curve = true
-		block_duration = 1.000000
+		block_duration = 1.0
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				22.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				22.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
-			
 			[
-				1200.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
+				1200.0, 1.0, 0.0, 0.0,
+				1.0, 1.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-1.996704,
-				-1.996704,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -1.996704, -1.996704,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				39.428574,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				39.428574, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				66.857147,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				66.857147, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -8096,45 +5286,30 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.500000
-		pitch = 1.300000
+		volume = 0.5
+		pitch = 1.3
 		mixgroup = "PlayerAttackerFeedback"
-		block_distance = 69.000000
+		block_distance = 69.0
 		use_distance_volume_mapping_curve = true
-		reverb_wet = 0.500000
+		reverb_wet = 0.5
 		display_broadcast = true
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		use_fadetime_volume_mapping_curve = false
-		delay = 0.000000
-		reverb_source_wet = 0.500000
-		distance_effect_mix = 0.000000
+		delay = 0.0
+		reverb_source_wet = 0.5
+		distance_effect_mix = 0.0
 		block_matching_events = false
 		block_match_entity = false
 		use_distance_unfiltered_stereo_mapping_curve = false
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				21.400000,
-				1.000000,
-				-0.001390,
-				-0.001390,
-				2.000000,
-				3.000000,
+				21.4, 1.0, -0.00139, -0.00139,
+				2.0, 3.0,
 			],
-			
 			[
-				1065.895142,
-				0.577181,
-				-0.000098,
-				-0.000405,
-				2.000000,
-				1.000000,
+				1065.895142, 0.577181, -0.000098, -0.000405,
+				2.0, 1.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -8145,23 +5320,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -8177,188 +5342,98 @@
 	{
 		type = "csgo_surf"
 		mixgroup = "Surf"
-		volume = 0.140000
-		pitch = 1.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		reverb_wet = 1.000000
+		volume = 0.14
+		pitch = 1.0
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
 		use_time_volume_mapping_curve = true
 		use_velocity_volume_curve = true
-		velocity_volume_seek_speed = 700.000000
+		velocity_volume_seek_speed = 700.0
 		use_velocity_eq = true
 		use_volume_convar = true
 		volume_convar = "snd_surf_volume_slide"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				90.157478,
-				1.000000,
-				-0.010099,
-				-0.010099,
-				3.000000,
-				1.000000,
+				90.157478, 1.0, -0.010099, -0.010099,
+				3.0, 1.0,
 			],
-			
 			[
-				99.015747,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				99.015747, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				0.104096,
-				0.428571,
-				6.234025,
-				6.234025,
-				3.000000,
-				1.000000,
+				0.104096, 0.428571, 6.234025, 6.234025,
+				3.0, 1.0,
 			],
-			
 			[
-				0.160410,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.16041, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-6.283241,
-				-6.283241,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -6.283241, -6.283241,
+				2.0, 3.0,
 			],
-			
 			[
-				0.007053,
-				0.202424,
-				-1.400818,
-				-1.400818,
-				2.000000,
-				3.000000,
+				0.007053, 0.202424, -1.400818, -1.400818,
+				2.0, 3.0,
 			],
-			
 			[
-				0.011541,
-				0.093333,
-				-11.817167,
-				-11.817167,
-				3.000000,
-				1.000000,
+				0.011541, 0.093333, -11.817167, -11.817167,
+				3.0, 1.0,
 			],
-			
 			[
-				0.021208,
-				0.035152,
-				-3.379060,
-				-3.379060,
-				1.000000,
-				1.000000,
+				0.021208, 0.035152, -3.37906, -3.37906,
+				1.0, 1.0,
 			],
-			
 			[
-				0.039162,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.039162, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		velocity_volume_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				2300.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				2300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				2600.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				2600.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.707596,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.707596, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				20.212038,
-				0.707596,
-				-0.028233,
-				-0.028233,
-				3.000000,
-				1.000000,
+				20.212038, 0.707596, -0.028233, -0.028233,
+				3.0, 1.0,
 			],
-			
 			[
-				25.062927,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				25.062927, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -8372,110 +5447,60 @@
 		mixgroup = "Surf"
 		use_distance_unfiltered_stereo_mapping_curve = true
 		use_time_volume_mapping_curve = true
-		volume = 0.200000
-		reverb_wet = 1.000000
+		volume = 0.2
+		reverb_wet = 1.0
 		override_dsp_preset = true
 		dsp_preset = "reverb_24_largeBathroom"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				0.045932,
-				0.471861,
-				5.955990,
-				5.955990,
-				2.000000,
-				3.000000,
+				0.045932, 0.471861, 5.95599, 5.95599,
+				2.0, 3.0,
 			],
-			
 			[
-				0.107612,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.107612, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-6.283241,
-				-6.283241,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -6.283241, -6.283241,
+				2.0, 3.0,
 			],
-			
 			[
-				0.045932,
-				0.199134,
-				-1.400818,
-				-1.400818,
-				2.000000,
-				3.000000,
+				0.045932, 0.199134, -1.400818, -1.400818,
+				2.0, 3.0,
 			],
-			
 			[
-				0.145669,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.145669, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.787879,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.787879, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.805195,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.805195, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -8487,214 +5512,109 @@
 	{
 		type = "csgo_surf"
 		mixgroup = "Surf"
-		volume = 0.140000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		reverb_wet = 1.000000
+		volume = 0.14
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
 		use_time_volume_mapping_curve = true
 		use_velocity_volume_curve = true
-		velocity_volume_seek_speed = 700.000000
+		velocity_volume_seek_speed = 700.0
 		use_velocity_eq = true
 		use_volume_convar = true
 		volume_convar = "snd_surf_volume_slide"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				90.157478,
-				1.000000,
-				-0.010099,
-				-0.010099,
-				3.000000,
-				1.000000,
+				90.157478, 1.0, -0.010099, -0.010099,
+				3.0, 1.0,
 			],
-			
 			[
-				99.015747,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				99.015747, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				0.104096,
-				0.428571,
-				6.234025,
-				6.234025,
-				3.000000,
-				1.000000,
+				0.104096, 0.428571, 6.234025, 6.234025,
+				3.0, 1.0,
 			],
-			
 			[
-				0.160410,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.16041, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-6.283241,
-				-6.283241,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -6.283241, -6.283241,
+				2.0, 3.0,
 			],
-			
 			[
-				0.007053,
-				0.202424,
-				-1.400818,
-				-1.400818,
-				2.000000,
-				3.000000,
+				0.007053, 0.202424, -1.400818, -1.400818,
+				2.0, 3.0,
 			],
-			
 			[
-				0.011541,
-				0.093333,
-				-11.817167,
-				-11.817167,
-				3.000000,
-				1.000000,
+				0.011541, 0.093333, -11.817167, -11.817167,
+				3.0, 1.0,
 			],
-			
 			[
-				0.021208,
-				0.035152,
-				-3.379060,
-				-3.379060,
-				1.000000,
-				1.000000,
+				0.021208, 0.035152, -3.37906, -3.37906,
+				1.0, 1.0,
 			],
-			
 			[
-				0.039162,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.039162, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		velocity_volume_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1500.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1500.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1760.049316,
-				0.859060,
-				0.002500,
-				0.002500,
-				3.000000,
-				1.000000,
+				1760.049316, 0.85906, 0.0025, 0.0025,
+				3.0, 1.0,
 			],
-			
 			[
-				1900.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1900.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				2300.000000,
-				1.000000,
-				-0.001429,
-				-0.001429,
-				3.000000,
-				1.000000,
+				2300.0, 1.0, -0.001429, -0.001429,
+				3.0, 1.0,
 			],
-			
 			[
-				2600.000000,
-				0.000000,
-				-0.003333,
-				-0.003333,
-				1.000000,
-				1.000000,
+				2600.0, 0.0, -0.003333, -0.003333,
+				1.0, 1.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.707596,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.707596, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				20.212038,
-				0.707596,
-				-0.028233,
-				-0.028233,
-				3.000000,
-				1.000000,
+				20.212038, 0.707596, -0.028233, -0.028233,
+				3.0, 1.0,
 			],
-			
 			[
-				25.062927,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				25.062927, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -8706,224 +5626,114 @@
 	{
 		type = "csgo_surf"
 		mixgroup = "Surf"
-		volume = 0.140000
-		pitch = 0.900000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		reverb_wet = 1.000000
+		volume = 0.14
+		pitch = 0.9
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
 		use_time_volume_mapping_curve = true
 		use_velocity_volume_curve = true
-		velocity_volume_seek_speed = 700.000000
+		velocity_volume_seek_speed = 700.0
 		use_velocity_eq = true
 		use_volume_convar = true
 		volume_convar = "snd_surf_volume_slide"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				90.157478,
-				1.000000,
-				-0.010099,
-				-0.010099,
-				3.000000,
-				1.000000,
+				90.157478, 1.0, -0.010099, -0.010099,
+				3.0, 1.0,
 			],
-			
 			[
-				99.015747,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				99.015747, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				0.104096,
-				0.428571,
-				6.234025,
-				6.234025,
-				3.000000,
-				1.000000,
+				0.104096, 0.428571, 6.234025, 6.234025,
+				3.0, 1.0,
 			],
-			
 			[
-				0.160410,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.16041, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-6.283241,
-				-6.283241,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -6.283241, -6.283241,
+				2.0, 3.0,
 			],
-			
 			[
-				0.007053,
-				0.202424,
-				-1.400818,
-				-1.400818,
-				2.000000,
-				3.000000,
+				0.007053, 0.202424, -1.400818, -1.400818,
+				2.0, 3.0,
 			],
-			
 			[
-				0.011541,
-				0.093333,
-				-11.817167,
-				-11.817167,
-				3.000000,
-				1.000000,
+				0.011541, 0.093333, -11.817167, -11.817167,
+				3.0, 1.0,
 			],
-			
 			[
-				0.021208,
-				0.035152,
-				-3.379060,
-				-3.379060,
-				1.000000,
-				1.000000,
+				0.021208, 0.035152, -3.37906, -3.37906,
+				1.0, 1.0,
 			],
-			
 			[
-				0.039162,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.039162, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		velocity_volume_curve = 
 		[
-			
 			[
-				45.000000,
-				0.000000,
-				0.000000,
-				0.000990,
-				0.000000,
-				0.000000,
+				45.0, 0.0, 0.0, 0.00099,
+				0.0, 0.0,
 			],
-			
 			[
-				272.354950,
-				0.225108,
-				0.000990,
-				0.001372,
-				0.000000,
-				1.000000,
+				272.35495, 0.225108, 0.00099, 0.001372,
+				0.0, 1.0,
 			],
-			
 			[
-				496.075073,
-				0.619048,
-				0.002132,
-				0.002132,
-				1.000000,
-				1.000000,
+				496.075073, 0.619048, 0.002132, 0.002132,
+				1.0, 1.0,
 			],
-			
 			[
-				635.826843,
-				1.000000,
-				0.002726,
-				0.000000,
-				0.000000,
-				0.000000,
+				635.826843, 1.0, 0.002726, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				1500.000000,
-				1.000000,
-				0.000000,
-				-0.001205,
-				0.000000,
-				0.000000,
+				1500.0, 1.0, 0.0, -0.001205,
+				0.0, 0.0,
 			],
-			
 			[
-				1667.077637,
-				0.798658,
-				-0.001205,
-				-0.002500,
-				0.000000,
-				1.000000,
+				1667.077637, 0.798658, -0.001205, -0.0025,
+				0.0, 1.0,
 			],
-			
 			[
-				1900.000000,
-				0.000000,
-				0.000078,
-				0.000078,
-				2.000000,
-				3.000000,
+				1900.0, 0.0, 0.000078, 0.000078,
+				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.707596,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.707596, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				20.212038,
-				0.707596,
-				-0.028233,
-				-0.028233,
-				3.000000,
-				1.000000,
+				20.212038, 0.707596, -0.028233, -0.028233,
+				3.0, 1.0,
 			],
-			
 			[
-				25.062927,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				25.062927, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -8935,188 +5745,98 @@
 	{
 		type = "csgo_surf"
 		mixgroup = "Surf"
-		volume = 1.000000
-		pitch = 1.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		reverb_wet = 1.000000
+		volume = 1.0
+		pitch = 1.0
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
 		use_time_volume_mapping_curve = true
 		use_velocity_volume_curve = true
-		velocity_volume_seek_speed = 3000.000000
+		velocity_volume_seek_speed = 3000.0
 		use_velocity_eq = false
 		use_volume_convar = true
 		volume_convar = "snd_surf_volume_inair"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				90.157478,
-				1.000000,
-				-0.010099,
-				-0.010099,
-				3.000000,
-				1.000000,
+				90.157478, 1.0, -0.010099, -0.010099,
+				3.0, 1.0,
 			],
-			
 			[
-				99.015747,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				99.015747, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				0.191126,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.191126, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-6.283241,
-				-6.283241,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -6.283241, -6.283241,
+				2.0, 3.0,
 			],
-			
 			[
-				0.007053,
-				0.202424,
-				-1.400818,
-				-1.400818,
-				2.000000,
-				3.000000,
+				0.007053, 0.202424, -1.400818, -1.400818,
+				2.0, 3.0,
 			],
-			
 			[
-				0.011541,
-				0.093333,
-				-11.817167,
-				-11.817167,
-				3.000000,
-				1.000000,
+				0.011541, 0.093333, -11.817167, -11.817167,
+				3.0, 1.0,
 			],
-			
 			[
-				0.021208,
-				0.035152,
-				-3.379060,
-				-3.379060,
-				1.000000,
-				1.000000,
+				0.021208, 0.035152, -3.37906, -3.37906,
+				1.0, 1.0,
 			],
-			
 			[
-				0.039162,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.039162, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		velocity_volume_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				2283.276367,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				2283.276367, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				3000.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				3000.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				4000.000000,
-				0.835498,
-				-0.000165,
-				-0.000165,
-				1.000000,
-				1.000000,
+				4000.0, 0.835498, -0.000165, -0.000165,
+				1.0, 1.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				95.051193,
-				1.000000,
-				0.000000,
-				-0.202069,
-				0.000000,
-				0.000000,
+				95.051193, 1.0, 0.0, -0.202069,
+				0.0, 0.0,
 			],
-			
 			[
-				100.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				100.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -9128,205 +5848,105 @@
 	{
 		type = "csgo_surf"
 		mixgroup = "Surf"
-		volume = 0.150000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		reverb_wet = 1.000000
+		volume = 0.15
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		reverb_wet = 1.0
 		use_distance_unfiltered_stereo_mapping_curve = true
 		use_time_volume_mapping_curve = true
 		use_velocity_volume_curve = true
-		velocity_volume_seek_speed = 3000.000000
+		velocity_volume_seek_speed = 3000.0
 		use_velocity_eq = false
 		use_volume_convar = true
 		volume_convar = "snd_surf_volume_inair"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				90.157478,
-				1.000000,
-				-0.010099,
-				-0.010099,
-				3.000000,
-				1.000000,
+				90.157478, 1.0, -0.010099, -0.010099,
+				3.0, 1.0,
 			],
-			
 			[
-				99.015747,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				99.015747, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				0.191126,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.191126, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-6.283241,
-				-6.283241,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -6.283241, -6.283241,
+				2.0, 3.0,
 			],
-			
 			[
-				0.007053,
-				0.202424,
-				-1.400818,
-				-1.400818,
-				2.000000,
-				3.000000,
+				0.007053, 0.202424, -1.400818, -1.400818,
+				2.0, 3.0,
 			],
-			
 			[
-				0.011541,
-				0.093333,
-				-11.817167,
-				-11.817167,
-				3.000000,
-				1.000000,
+				0.011541, 0.093333, -11.817167, -11.817167,
+				3.0, 1.0,
 			],
-			
 			[
-				0.021208,
-				0.035152,
-				-3.379060,
-				-3.379060,
-				1.000000,
-				1.000000,
+				0.021208, 0.035152, -3.37906, -3.37906,
+				1.0, 1.0,
 			],
-			
 			[
-				0.039162,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.039162, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		velocity_volume_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1419.547363,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1419.547363, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1944.779785,
-				0.415584,
-				0.001181,
-				0.001181,
-				3.000000,
-				1.000000,
+				1944.779785, 0.415584, 0.001181, 0.001181,
+				3.0, 1.0,
 			],
-			
 			[
-				2266.543945,
-				1.000000,
-				0.001816,
-				-0.003314,
-				0.000000,
-				0.000000,
+				2266.543945, 1.0, 0.001816, -0.003314,
+				0.0, 0.0,
 			],
-			
 			[
-				2479.476074,
-				0.294372,
-				-0.001975,
-				-0.001975,
-				1.000000,
-				1.000000,
+				2479.476074, 0.294372, -0.001975, -0.001975,
+				1.0, 1.0,
 			],
-			
 			[
-				2772.849121,
-				0.000000,
-				-0.001003,
-				-0.001003,
-				1.000000,
-				1.000000,
+				2772.849121, 0.0, -0.001003, -0.001003,
+				1.0, 1.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				95.051193,
-				1.000000,
-				0.000000,
-				-0.202069,
-				0.000000,
-				0.000000,
+				95.051193, 1.0, 0.0, -0.202069,
+				0.0, 0.0,
 			],
-			
 			[
-				100.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				100.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -9338,207 +5958,107 @@
 	{
 		type = "csgo_surf"
 		mixgroup = "Surf"
-		volume = 0.400000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			0.000000,
-		]
-		reverb_wet = 0.000000
+		volume = 0.4
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		reverb_wet = 0.0
 		use_distance_unfiltered_stereo_mapping_curve = true
 		use_time_volume_mapping_curve = true
 		use_velocity_volume_curve = true
-		velocity_volume_seek_speed = 3000.000000
+		velocity_volume_seek_speed = 3000.0
 		use_velocity_eq = false
-		reverb_source_wet = 0.000000
-		pitch = 1.000000
+		reverb_source_wet = 0.0
+		pitch = 1.0
 		use_volume_convar = true
 		volume_convar = "snd_surf_volume_inair"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				90.157478,
-				1.000000,
-				-0.010099,
-				-0.010099,
-				3.000000,
-				1.000000,
+				90.157478, 1.0, -0.010099, -0.010099,
+				3.0, 1.0,
 			],
-			
 			[
-				99.015747,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				99.015747, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				0.191126,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.191126, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-6.283241,
-				-6.283241,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -6.283241, -6.283241,
+				2.0, 3.0,
 			],
-			
 			[
-				0.007053,
-				0.202424,
-				-1.400818,
-				-1.400818,
-				2.000000,
-				3.000000,
+				0.007053, 0.202424, -1.400818, -1.400818,
+				2.0, 3.0,
 			],
-			
 			[
-				0.011541,
-				0.093333,
-				-11.817167,
-				-11.817167,
-				3.000000,
-				1.000000,
+				0.011541, 0.093333, -11.817167, -11.817167,
+				3.0, 1.0,
 			],
-			
 			[
-				0.021208,
-				0.035152,
-				-3.379060,
-				-3.379060,
-				1.000000,
-				1.000000,
+				0.021208, 0.035152, -3.37906, -3.37906,
+				1.0, 1.0,
 			],
-			
 			[
-				0.039162,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.039162, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		velocity_volume_curve = 
 		[
-			
 			[
-				45.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				45.0, 0.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				669.795227,
-				0.000000,
-				0.000000,
-				0.000146,
-				0.000000,
-				1.000000,
+				669.795227, 0.0, 0.0, 0.000146,
+				0.0, 1.0,
 			],
-			
 			[
-				1021.331055,
-				0.142857,
-				0.000407,
-				0.000407,
-				1.000000,
-				1.000000,
+				1021.331055, 0.142857, 0.000407, 0.000407,
+				1.0, 1.0,
 			],
-			
 			[
-				1559.077637,
-				0.362062,
-				0.000408,
-				-0.000480,
-				0.000000,
-				0.000000,
+				1559.077637, 0.362062, 0.000408, -0.00048,
+				0.0, 0.0,
 			],
-			
 			[
-				1970.989746,
-				0.164502,
-				-0.000227,
-				-0.000227,
-				2.000000,
-				3.000000,
+				1970.989746, 0.164502, -0.000227, -0.000227,
+				2.0, 3.0,
 			],
-			
 			[
-				2442.832764,
-				0.000000,
-				-0.000349,
-				-0.000349,
-				3.000000,
-				1.000000,
+				2442.832764, 0.0, -0.000349, -0.000349,
+				3.0, 1.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
 			],
-			
 			[
-				95.051193,
-				1.000000,
-				0.000000,
-				-0.202069,
-				0.000000,
-				0.000000,
+				95.051193, 1.0, 0.0, -0.202069,
+				0.0, 0.0,
 			],
-			
 			[
-				100.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				100.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -9549,79 +6069,49 @@
 	Player.DamageBody.Knife.AttackerFeedback = 
 	{
 		type = "csgo_mega"
-		volume = 1.000000
-		pitch = 1.300000
+		volume = 1.0
+		pitch = 1.3
 		mixgroup = "PlayerAttackerFeedback"
-		block_duration = 0.050000
+		block_duration = 0.05
 		use_distance_volume_mapping_curve = true
-		pitch_random_min = -0.010000
-		pitch_random_max = 0.010000
+		pitch_random_min = -0.01
+		pitch_random_max = 0.01
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 0.500000
-		block_distance = 20.000000
-		delay = 0.000000
-		instance_limit = 3.000000
-		reverb_source_wet = 0.500000
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		reverb_wet = 0.5
+		block_distance = 20.0
+		delay = 0.0
+		instance_limit = 3.0
+		reverb_source_wet = 0.5
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		block_matching_events = false
 		block_match_entity = false
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				21.400000,
-				1.000000,
-				-0.001390,
-				-0.001390,
-				2.000000,
-				3.000000,
+				21.4, 1.0, -0.00139, -0.00139,
+				2.0, 3.0,
 			],
-			
 			[
-				1065.895142,
-				0.214765,
-				-0.000098,
-				-0.000752,
-				2.000000,
-				1.000000,
+				1065.895142, 0.214765, -0.000098, -0.000752,
+				2.0, 1.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.137795,
-				1.000000,
-				-3.242553,
-				-3.242553,
-				3.000000,
-				1.000000,
+				0.137795, 1.0, -3.242553, -3.242553,
+				3.0, 1.0,
 			],
-			
 			[
-				0.308399,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.308399, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -9630,23 +6120,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = 
@@ -9657,80 +6137,50 @@
 	Player.DamageBodyArmor.Knife.AttackerFeedback = 
 	{
 		type = "csgo_mega"
-		volume = 1.200000
-		pitch = 1.300000
+		volume = 1.2
+		pitch = 1.3
 		mixgroup = "PlayerAttackerFeedback"
-		block_duration = 0.050000
+		block_duration = 0.05
 		use_distance_volume_mapping_curve = true
-		pitch_random_min = 0.000000
-		pitch_random_max = 0.000000
+		pitch_random_min = 0.0
+		pitch_random_max = 0.0
 		use_fadetime_volume_mapping_curve = false
-		reverb_wet = 0.500000
-		block_distance = 20.000000
-		delay = 0.000000
-		instance_limit = 3.000000
-		reverb_source_wet = 0.500000
+		reverb_wet = 0.5
+		block_distance = 20.0
+		delay = 0.0
+		instance_limit = 3.0
+		reverb_source_wet = 0.5
 		enable_child_events = false
-		distance_effect_mix = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			60.000000,
-		]
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 60.0 ]
 		block_matching_events = false
 		block_match_entity = false
 		set_mixlayer_amount_enable = true
 		set_mixlayer_layer = "PlayerAttackerFeedbackLayer"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				21.400000,
-				1.000000,
-				-0.001390,
-				-0.001390,
-				2.000000,
-				3.000000,
+				21.4, 1.0, -0.00139, -0.00139,
+				2.0, 3.0,
 			],
-			
 			[
-				1065.895142,
-				0.214765,
-				-0.000098,
-				-0.000752,
-				2.000000,
-				1.000000,
+				1065.895142, 0.214765, -0.000098, -0.000752,
+				2.0, 1.0,
 			],
 		]
 		time_mixlayer_amount_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-0.045188,
-				-0.045188,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -0.045188, -0.045188,
+				2.0, 3.0,
 			],
-			
 			[
-				0.103675,
-				1.000000,
-				-5.602931,
-				-5.602931,
-				3.000000,
-				1.000000,
+				0.103675, 1.0, -5.602931, -5.602931,
+				3.0, 1.0,
 			],
-			
 			[
-				0.178478,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.178478, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		vsnd_files_track_01 = 
@@ -9739,23 +6189,13 @@
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				-2.108865,
-				-2.108865,
-				2.000000,
-				3.000000,
+				0.0, 1.0, -2.108865, -2.108865,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 

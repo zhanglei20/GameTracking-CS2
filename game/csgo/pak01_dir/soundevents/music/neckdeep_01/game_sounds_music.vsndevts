@@ -3,7 +3,7 @@
 	Music.Background.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/neckdeep_01/mainmenu.vsnd"
@@ -11,7 +11,7 @@
 	Music.MVPPreview.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/neckdeep_01/roundmvpanthem_01.vsnd"
@@ -19,10 +19,10 @@
 	Music.Selection.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		mixgroup = "SelectedMusic"
 		volume_convar = "snd_menumusic_volume"
-		volume_fade_out_input_max = 1.000000
+		volume_fade_out_input_max = 1.0
 		stop_match_end = "true"
 		stop_loading = "true"
 		vsnd_files = "sounds/music/neckdeep_01/chooseteam.vsnd"
@@ -31,26 +31,26 @@
 	Music.MatchFound.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		mixgroup = "BuyMusic"
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.500000
-		volume_fade_out_input_max = 1.500000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.5
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
 		should_queue_track = "true"
 		update_track_syncpoint_index = "true"
-		startpoint_01 = 0.353000
-		startpoint_02 = 0.423000
-		startpoint_03 = 0.612000
-		endpoint_01 = 10.735000
-		endpoint_02 = 17.126000
-		endpoint_03 = 11.051000
+		startpoint_01 = 0.353
+		startpoint_02 = 0.423
+		startpoint_03 = 0.612
+		endpoint_01 = 10.735
+		endpoint_02 = 17.126
+		endpoint_03 = 11.051
 		vsnd_files = 
 		[
 			"sounds/music/neckdeep_01/startround_01.vsnd",
@@ -59,57 +59,43 @@
 		]
 		syncpoints_01 = 
 		[
-			2.292000,
-			3.110000,
-			5.535000,
-			7.488000,
-			8.292000,
-			9.345000,
-			10.735000,
+			2.292, 3.11, 5.535, 7.488,
+			8.292, 9.345, 10.735,
 		]
 		syncpoints_02 = 
 		[
-			2.495000,
-			4.588000,
-			6.679000,
-			8.761000,
-			10.854000,
-			12.935000,
-			15.031000,
-			15.685000,
-			17.126000,
+			2.495, 4.588, 6.679, 8.761,
+			10.854, 12.935, 15.031, 15.685,
+			17.126,
 		]
 		syncpoints_03 = 
 		[
-			1.662000,
-			3.260000,
-			5.854000,
-			8.448000,
-			11.051000,
+			1.662, 3.26, 5.854, 8.448,
+			11.051,
 		]
 	}
 	Music.LoadingScreen.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_menumusic_volume"
 		sync_action_to_startround = 1
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.500000
-		volume_fade_out_input_max = 1.500000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.5
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
 		should_queue_track = "true"
 		stop_start_round = "true"
-		startpoint_01 = 0.467000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.204000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.467
+		startpoint_02 = 0.0
+		startpoint_03 = 0.204
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 		vsnd_files = 
 		[
 			"sounds/music/neckdeep_01/startaction_01.vsnd",
@@ -120,27 +106,27 @@
 	Music.StartRound.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		mixgroup = "BuyMusic"
 		volume_convar = "snd_roundstart_volume"
 		stop_music = "true"
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.500000
-		volume_fade_out_input_max = 1.500000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.5
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
 		should_queue_track = "true"
 		update_track_syncpoint_index = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.353000
-		startpoint_02 = 0.423000
-		startpoint_03 = 0.612000
-		endpoint_01 = 10.735000
-		endpoint_02 = 17.126000
-		endpoint_03 = 11.051000
+		startpoint_01 = 0.353
+		startpoint_02 = 0.423
+		startpoint_03 = 0.612
+		endpoint_01 = 10.735
+		endpoint_02 = 17.126
+		endpoint_03 = 11.051
 		vsnd_files = 
 		[
 			"sounds/music/neckdeep_01/startround_01.vsnd",
@@ -149,59 +135,45 @@
 		]
 		syncpoints_01 = 
 		[
-			2.292000,
-			3.110000,
-			5.535000,
-			7.488000,
-			8.292000,
-			9.345000,
-			10.735000,
+			2.292, 3.11, 5.535, 7.488,
+			8.292, 9.345, 10.735,
 		]
 		syncpoints_02 = 
 		[
-			2.495000,
-			4.588000,
-			6.679000,
-			8.761000,
-			10.854000,
-			12.935000,
-			15.031000,
-			15.685000,
-			17.126000,
+			2.495, 4.588, 6.679, 8.761,
+			10.854, 12.935, 15.031, 15.685,
+			17.126,
 		]
 		syncpoints_03 = 
 		[
-			1.662000,
-			3.260000,
-			5.854000,
-			8.448000,
-			11.051000,
+			1.662, 3.26, 5.854, 8.448,
+			11.051,
 		]
 	}
 	Music.StartAction.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_roundaction_volume"
 		sync_action_to_startround = 1
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.200000
-		volume_fade_out_input_max = 3.000000
-		stop_at_time = 10.000000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.2
+		volume_fade_out_input_max = 3.0
+		stop_at_time = 10.0
 		loop_track = "true"
 		should_queue_track = "true"
 		stop_start_round = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.467000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.204000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.467
+		startpoint_02 = 0.0
+		startpoint_03 = 0.204
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 		vsnd_files = 
 		[
 			"sounds/music/neckdeep_01/startaction_01.vsnd",
@@ -212,28 +184,28 @@
 	Music.StartRound_GG.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		mixgroup = "BuyMusic"
 		volume_convar = "snd_roundstart_volume"
 		stop_music = "true"
-		priority = 1.000000
+		priority = 1.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 6.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.300000
-		volume_fade_out_input_max = 3.000000
-		stop_at_time = 6.000000
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 6.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.3
+		volume_fade_out_input_max = 3.0
+		stop_at_time = 6.0
 		loop_track = "true"
 		should_queue_track = "true"
 		update_track_syncpoint_index = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.353000
-		startpoint_02 = 0.423000
-		startpoint_03 = 0.612000
-		endpoint_01 = 10.735000
-		endpoint_02 = 17.126000
-		endpoint_03 = 11.051000
+		startpoint_01 = 0.353
+		startpoint_02 = 0.423
+		startpoint_03 = 0.612
+		endpoint_01 = 10.735
+		endpoint_02 = 17.126
+		endpoint_03 = 11.051
 		vsnd_files = 
 		[
 			"sounds/music/neckdeep_01/startround_01.vsnd",
@@ -242,221 +214,180 @@
 		]
 		syncpoints_01 = 
 		[
-			2.292000,
-			3.110000,
-			5.535000,
-			7.488000,
-			8.292000,
-			9.345000,
-			10.735000,
+			2.292, 3.11, 5.535, 7.488,
+			8.292, 9.345, 10.735,
 		]
 		syncpoints_02 = 
 		[
-			2.495000,
-			4.588000,
-			6.679000,
-			8.761000,
-			10.854000,
-			12.935000,
-			15.031000,
-			15.685000,
-			17.126000,
+			2.495, 4.588, 6.679, 8.761,
+			10.854, 12.935, 15.031, 15.685,
+			17.126,
 		]
 		syncpoints_03 = 
 		[
-			1.662000,
-			3.260000,
-			5.854000,
-			8.448000,
-			11.051000,
+			1.662, 3.26, 5.854, 8.448,
+			11.051,
 		]
 	}
 	Music.BombPlanted.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_mapobjective_volume"
 		vsnd_files = "sounds/music/neckdeep_01/bombplanted.vsnd"
-		priority = 3.000000
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 6.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.300000
+		priority = 3.0
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 6.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.3
 		loop_track = "true"
 		join_non_mvp_group = "true"
 		stop_start_round = "true"
 		stop_tensec_count = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.BombTenSecCount.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_tensecondwarning_volume"
 		vsnd_files = "sounds/music/neckdeep_01/bombtenseccount.vsnd"
-		priority = 3.000000
-		volume_fade_out_input_max = 0.500000
+		priority = 3.0
+		volume_fade_out_input_max = 0.5
 		should_queue_track = "true"
 		stop_bomb_planted = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.072000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.072
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.GotHostage.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_mapobjective_volume"
 		vsnd_files = "sounds/music/neckdeep_01/bombplanted.vsnd"
-		priority = 3.000000
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 7.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.200000
-		volume_fade_out_input_max = 1.500000
+		priority = 3.0
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 7.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.2
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
-		stop_at_time = 9.000000
+		stop_at_time = 9.0
 		stop_start_round = "true"
 		stop_tensec_count = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.HostageNearRescue.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_tensecondwarning_volume"
 		vsnd_files = "sounds/music/neckdeep_01/bombtenseccount.vsnd"
-		priority = 3.000000
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 7.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.200000
-		volume_fade_out_input_max = 1.500000
-		stop_at_time = 4.000000
+		priority = 3.0
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 7.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.2
+		volume_fade_out_input_max = 1.5
+		stop_at_time = 4.0
 		stop_got_hostage = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.072000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.072
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.TenSecCount.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_tensecondwarning_volume"
 		vsnd_files = "sounds/music/neckdeep_01/roundtenseccount.vsnd"
-		priority = 3.000000
-		volume_fade_out_input_max = 0.500000
+		priority = 3.0
+		volume_fade_out_input_max = 0.5
 		should_queue_track = "true"
 		stop_start_round = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.072000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.072
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	Music.WonRound.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 1.000000
+		volume = 1.0
 		volume_convar = "snd_roundend_volume"
 		vsnd_files = "sounds/music/neckdeep_01/wonround.vsnd"
-		priority = 4.000000
+		priority = 4.0
 		stop_music_except_mvp = "true"
-		volume_fade_out_input_max = 1.600000
+		volume_fade_out_input_max = 1.6
 		loop_track = "true"
 		should_queue_track = "true"
 		skip_if_muted = "true"
 		test_mvp_block = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	Music.LostRound.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 1.000000
+		volume = 1.0
 		volume_convar = "snd_roundend_volume"
 		vsnd_files = "sounds/music/neckdeep_01/lostround.vsnd"
-		priority = 4.000000
+		priority = 4.0
 		stop_music_except_mvp = "true"
-		volume_fade_out_input_max = 1.600000
+		volume_fade_out_input_max = 1.6
 		loop_track = "true"
 		should_queue_track = "true"
 		skip_if_muted = "true"
 		test_mvp_block = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	Music.DeathCam.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 1.000000
+		volume = 1.0
 		mixgroup = "DuckingMusic"
 		volume_convar = "snd_deathcamera_volume"
 		vsnd_files = "sounds/music/neckdeep_01/deathcam.vsnd"
@@ -468,33 +399,24 @@
 	Music.MVPAnthem.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_mvp_volume"
-		priority = 5.000000
+		priority = 5.0
 		stop_music = "true"
-		volume_fade_out_input_max = 1.600000
+		volume_fade_out_input_max = 1.6
 		loop_track = "true"
 		should_queue_track = "true"
 		skip_if_muted = "true"
 		block_won_lost = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 		vsnd_files = 
 		[
 			"sounds/music/neckdeep_01/roundmvpanthem_01.vsnd",
@@ -503,14 +425,14 @@
 	Music.MatchStart.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		mixgroup = "SelectedMusic"
 		volume_convar = "snd_menumusic_volume"
-		volume_fade_out_input_max = 1.000000
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 8.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.100000
+		volume_fade_out_input_max = 1.0
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 8.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.1
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/neckdeep_01/startofmatch.vsnd"
@@ -518,32 +440,23 @@
 	Music.MatchEnd.neckdeep_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		mixgroup = "SelectedMusic"
 		volume_convar = "snd_menumusic_volume"
-		volume_fade_out_input_max = 1.000000
+		volume_fade_out_input_max = 1.0
 		stop_won_mvp = "true"
 		should_queue_track = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/neckdeep_01/endofmatch.vsnd"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	_auto_calc_vnsd_duration_ = "false"
 }

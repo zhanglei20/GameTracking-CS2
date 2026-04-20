@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "opvars"
 				operator = "util_null"
@@ -24,7 +23,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -271,7 +269,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "test_soundevent_block"
 				operator = "soundevent_block_test"
@@ -279,7 +276,6 @@
 				input_execute = "@public.test_mvp_block"
 				match_this_event = "1"
 			},
-			
 			{
 				name = "set_soundevent_won_block"
 				operator = "soundevent_block"
@@ -289,7 +285,6 @@
 				match_substring = "true"
 				is_untimed = "1"
 			},
-			
 			{
 				name = "set_soundevent_lost_block"
 				operator = "soundevent_block"
@@ -299,37 +294,31 @@
 				match_substring = "true"
 				is_untimed = "1"
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "system_globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
 				mixgroup = "@public.mixgroup"
 			},
-			
 			{
 				name = "set_builtins"
 				operator = "sos_set_builtins"
 				input_voicegraph = "csgo.music"
 			},
-			
 			{
 				name = "snd_volume_convar"
 				operator = "convar_get"
 				convar = "@public.volume_convar"
 			},
-			
 			{
 				name = "volume_equals_zero"
 				operator = "math_float"
@@ -337,7 +326,6 @@
 				input1 = "@snd_volume_convar.output"
 				input2 = "0"
 			},
-			
 			{
 				name = "skip_if_muted"
 				operator = "math_float"
@@ -345,14 +333,12 @@
 				input1 = "@public.skip_if_muted"
 				input2 = "@volume_equals_zero.output"
 			},
-			
 			{
 				name = "skip_stack_execution"
 				operator = "sos_goto"
 				input_goto_end = "1.0"
 				input_execute = "@skip_if_muted.output"
 			},
-			
 			{
 				name = "get_array_index"
 				operator = "opvar_get_random_array_index"
@@ -363,7 +349,6 @@
 				input_use_namespace = "false"
 				array_selection_type = "random_exclusive"
 			},
-			
 			{
 				name = "get_last_track_startpoint_index"
 				operator = "opvar_get_float"
@@ -374,7 +359,6 @@
 				input_field_name = "current_track_syncpoint_index"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_vsnd_index"
 				operator = "ctrl_switch_float"
@@ -382,7 +366,6 @@
 				input2 = "@get_last_track_startpoint_index.output"
 				input_switch = "@public.sync_action_to_startround"
 			},
-			
 			{
 				name = "get_vsnd_track"
 				operator = "opvar_get_vsnd"
@@ -394,13 +377,11 @@
 				array_selection_type = "index"
 				input_index = "@get_vsnd_index.output"
 			},
-			
 			{
 				name = "vsnd_info"
 				operator = "vmix_vsnd_info"
 				input_vsnd = "@get_vsnd_track.output"
 			},
-			
 			{
 				name = "stop_music"
 				operator = "soundevent_limiter"
@@ -412,7 +393,6 @@
 				match_this_event = "false"
 				match_event_name = "Music."
 			},
-			
 			{
 				name = "stop_all_non_music"
 				operator = "soundevent_limiter"
@@ -427,7 +407,6 @@
 				match_duration_type = "less_than_or_equal"
 				match_event_duration = "0.01"
 			},
-			
 			{
 				name = "stop_all_music_except_mvp"
 				operator = "soundevent_group_stop"
@@ -435,14 +414,12 @@
 				execute_once = "true"
 				input_group_name = "non_mvp_music_group"
 			},
-			
 			{
 				name = "join_non_mvp_soundevent_group"
 				operator = "soundevent_group_join"
 				execute_once = "true"
 				input_group_name = "non_mvp_music_group"
 			},
-			
 			{
 				name = "stop_selection_music"
 				operator = "soundevent_limiter"
@@ -454,7 +431,6 @@
 				match_this_event = "false"
 				match_event_name = "Music.Selection"
 			},
-			
 			{
 				name = "stop_tensec_count"
 				operator = "soundevent_limiter"
@@ -464,7 +440,6 @@
 				match_substring = "true"
 				match_event_name = "Music.TenSecCount"
 			},
-			
 			{
 				name = "stop_got_hostage"
 				operator = "soundevent_limiter"
@@ -474,7 +449,6 @@
 				match_substring = "true"
 				match_event_name = "Music.GotHostage"
 			},
-			
 			{
 				name = "stop_bomb_planted"
 				operator = "soundevent_limiter"
@@ -484,7 +458,6 @@
 				match_substring = "true"
 				match_event_name = "Music.BombPlanted"
 			},
-			
 			{
 				name = "stop_start_round"
 				operator = "soundevent_limiter"
@@ -494,7 +467,6 @@
 				match_substring = "true"
 				match_event_name = "Music.StartRound"
 			},
-			
 			{
 				name = "stop_won_round"
 				operator = "soundevent_limiter"
@@ -504,7 +476,6 @@
 				match_substring = "true"
 				match_event_name = "Music.WonRound"
 			},
-			
 			{
 				name = "stop_lost_round"
 				operator = "soundevent_limiter"
@@ -514,7 +485,6 @@
 				match_substring = "true"
 				match_event_name = "Music.LostRound"
 			},
-			
 			{
 				name = "stop_mvp_anthem"
 				operator = "soundevent_limiter"
@@ -524,7 +494,6 @@
 				match_substring = "true"
 				match_event_name = "Music.MVPAnthem"
 			},
-			
 			{
 				name = "stop_match_end"
 				operator = "soundevent_limiter"
@@ -534,7 +503,6 @@
 				match_substring = "true"
 				match_event_name = "Music.MatchEnd"
 			},
-			
 			{
 				name = "stop_loading"
 				operator = "soundevent_limiter"
@@ -544,7 +512,6 @@
 				match_substring = "true"
 				match_event_name = "Music.LoadingScreen"
 			},
-			
 			{
 				name = "select_syncpoint"
 				input_execute = "@public.should_queue_track"
@@ -554,7 +521,6 @@
 				input3 = "public.syncpoints_03"
 				input_index = "@get_vsnd_index.output"
 			},
-			
 			{
 				name = "syncpoint_field_name_enable"
 				input_execute = "@public.should_queue_track"
@@ -563,7 +529,6 @@
 				input2 = "@select_syncpoint.output"
 				input_switch = "@public.update_track_syncpoint_index"
 			},
-			
 			{
 				name = "select_sync_startpoint"
 				operator = "ctrl_switch3_string"
@@ -573,7 +538,6 @@
 				input3 = "public.startpoint_03"
 				input_index = "@get_vsnd_index.output"
 			},
-			
 			{
 				name = "select_sync_endpoint"
 				operator = "ctrl_switch3_string"
@@ -583,7 +547,6 @@
 				input3 = "public.endpoint_03"
 				input_index = "@get_vsnd_index.output"
 			},
-			
 			{
 				name = "sync_track_syncpoints"
 				operator = "track_queue"
@@ -597,7 +560,6 @@
 				priority_override = "@public.priority_override"
 				input_priority = "@public.priority"
 			},
-			
 			{
 				name = "set_last_track_syncpoint_index"
 				operator = "opvar_set_float"
@@ -609,7 +571,6 @@
 				input_field_name = "current_track_syncpoint_index"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "snd_musicvolume_off"
 				operator = "math_float"
@@ -619,7 +580,6 @@
 				input1 = "@system_globals.output_snd_musicvolume_convar"
 				input2 = "0.01"
 			},
-			
 			{
 				name = "snd_deathcamera_volume_off"
 				operator = "math_float"
@@ -629,7 +589,6 @@
 				input1 = "@snd_volume_convar.output"
 				input2 = "0.01"
 			},
-			
 			{
 				name = "snd_deathcamera_or_music_volume_off"
 				operator = "math_float"
@@ -639,7 +598,6 @@
 				input1 = "@snd_musicvolume_off.output"
 				input2 = "@snd_deathcamera_volume_off.output"
 			},
-			
 			{
 				name = "play_classic_deathcam"
 				operator = "soundevent_start"
@@ -648,7 +606,6 @@
 				input_start = "1"
 				soundevent_name = "Player.FreezeCam"
 			},
-			
 			{
 				name = "music_total"
 				operator = "math_float"
@@ -656,7 +613,6 @@
 				input1 = "@system_globals.output_snd_musicvolume_convar"
 				input2 = "@snd_volume_convar.output"
 			},
-			
 			{
 				name = "convar_total"
 				operator = "math_float"
@@ -664,7 +620,6 @@
 				input1 = "@music_total.output"
 				input2 = "@system_globals.output_snd_gain_convar"
 			},
-			
 			{
 				name = "volume_fade_in"
 				operator = "math_remap_float"
@@ -675,7 +630,6 @@
 				input_map_max = "1.0"
 				default_to_max = "true"
 			},
-			
 			{
 				name = "volume_fade_initial"
 				input_execute = "1"
@@ -687,7 +641,6 @@
 				input_map_max = "@public.volume_fade_initial_input_map_max"
 				default_to_max = "false"
 			},
-			
 			{
 				name = "stop_elapsed_sub_elapsed_time"
 				operator = "math_float"
@@ -695,7 +648,6 @@
 				input1 = "@get_event_info.output_stop_elapsed_time"
 				input2 = "@get_event_info.output_elapsed_time"
 			},
-			
 			{
 				name = "stopped_immediately"
 				operator = "math_float"
@@ -703,7 +655,6 @@
 				input1 = "@stop_elapsed_sub_elapsed_time.output"
 				input2 = "0.00"
 			},
-			
 			{
 				name = "select_fade_time"
 				operator = "ctrl_switch_float"
@@ -711,7 +662,6 @@
 				input2 = "0.0"
 				input_switch = "@stopped_immediately.output"
 			},
-			
 			{
 				name = "volume_fade_out"
 				operator = "math_remap_float"
@@ -722,7 +672,6 @@
 				input_map_max = "1.0"
 				default_to_max = "false"
 			},
-			
 			{
 				name = "volume_invert_fadeout"
 				operator = "math_float"
@@ -730,7 +679,6 @@
 				input1 = "1.0"
 				input2 = "@volume_fade_out.output"
 			},
-			
 			{
 				name = "volume_apply_fade_in"
 				operator = "math_float"
@@ -738,7 +686,6 @@
 				input1 = "@volume_fade_in.output"
 				input2 = "@convar_total.output"
 			},
-			
 			{
 				name = "volume_apply_fade_initial"
 				operator = "math_float"
@@ -746,7 +693,6 @@
 				input1 = "@volume_fade_initial.output"
 				input2 = "@volume_apply_fade_in.output"
 			},
-			
 			{
 				name = "volume_apply_fade_out"
 				operator = "math_float"
@@ -754,7 +700,6 @@
 				input1 = "@volume_apply_fade_initial.output"
 				input2 = "@volume_invert_fadeout.output"
 			},
-			
 			{
 				name = "speaker_volume"
 				operator = "math_float"
@@ -762,7 +707,6 @@
 				input1 = "@mixer.output_volume"
 				input2 = "@volume_apply_fade_out.output"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_float"
@@ -770,20 +714,17 @@
 				input1 = "@speaker_volume.output"
 				input2 = "@public.volume"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@volume_accumulate.output"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@get_event_info.output_unstopped"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "volume_non_zero_or_unstopped"
 				operator = "math_float"
@@ -791,7 +732,6 @@
 				input1 = "@volume_accumulate.output"
 				input2 = "@get_event_info.output_unstopped"
 			},
-			
 			{
 				name = "should_keep_playing"
 				operator = "math_float"
@@ -799,7 +739,6 @@
 				input1 = "@volume_non_zero_or_unstopped.output"
 				input2 = "0.0"
 			},
-			
 			{
 				name = "submix_send"
 				operator = "vmix_mixgraph_send"
@@ -808,7 +747,6 @@
 				input = "1.0"
 				send_type = "named"
 			},
-			
 			{
 				name = "select_endpoint"
 				operator = "ctrl_switch3_string"
@@ -817,7 +755,6 @@
 				input3 = "endpoint_03"
 				input_index = "@get_array_index.output"
 			},
-			
 			{
 				name = "select_endpoint_opvar"
 				operator = "opvar_get_float"
@@ -825,7 +762,6 @@
 				input_operator_name = "public"
 				input_field_name = "@select_endpoint.output"
 			},
-			
 			{
 				name = "should_use_endpoint_for_restart"
 				operator = "math_float"
@@ -833,7 +769,6 @@
 				input1 = "@select_endpoint_opvar.output"
 				input2 = "0.0"
 			},
-			
 			{
 				name = "select_restart_time"
 				operator = "ctrl_switch_float"
@@ -841,7 +776,6 @@
 				input2 = "@select_endpoint_opvar.output"
 				input_switch = "@should_use_endpoint_for_restart.output"
 			},
-			
 			{
 				name = "should_restart"
 				operator = "ctrl_switch_float"
@@ -849,7 +783,6 @@
 				input2 = "@select_restart_time.output"
 				input_switch = "@public.loop_track"
 			},
-			
 			{
 				name = "select_startpoint"
 				operator = "ctrl_switch3_string"
@@ -858,7 +791,6 @@
 				input3 = "startpoint_03"
 				input_index = "@get_array_index.output"
 			},
-			
 			{
 				name = "select_startpoint_opvar"
 				operator = "opvar_get_float"
@@ -866,7 +798,6 @@
 				input_operator_name = "public"
 				input_field_name = "@select_startpoint.output"
 			},
-			
 			{
 				name = "select_restart_startpoint"
 				operator = "ctrl_switch3_string"
@@ -875,7 +806,6 @@
 				input3 = "restart_startpoint_03"
 				input_index = "@get_array_index.output"
 			},
-			
 			{
 				name = "select_restart_startpoint_opvar"
 				operator = "opvar_get_float"
@@ -883,7 +813,6 @@
 				input_operator_name = "public"
 				input_field_name = "@select_restart_startpoint.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -908,7 +837,6 @@
 				input_track1 = "track_01"
 				input_vsnd1 = "@get_vsnd_track.output"
 			},
-			
 			{
 				name = "stop_at_time"
 				operator = "soundevent_control"

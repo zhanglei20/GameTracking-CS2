@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -32,7 +31,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "set_opvar_value"
 				operator = "opvar_set_float"
@@ -50,7 +48,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -68,7 +65,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "set_mixlayer_amount"
 				operator = "soundmixer_set_mixlayer_amount"
@@ -81,7 +77,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -99,7 +94,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "set_mixgraph_input"
 				operator = "vmix_mixgraph_input"
@@ -112,7 +106,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -155,12 +148,10 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "total_hold_time"
 				operator = "math_float"
@@ -169,14 +160,12 @@
 				input2 = "@public.hold_time"
 				input1 = "@public.fade_in"
 			},
-			
 			{
 				name = "stop_at_time"
 				input_execute = "@public.stop_after_hold"
 				operator = "soundevent_control"
 				input_stop_at_time = "@total_hold_time.output"
 			},
-			
 			{
 				name = "switch_start_value"
 				operator = "ctrl_switch_float"
@@ -184,7 +173,6 @@
 				input1 = "@public.start_value"
 				input2 = "1.0"
 			},
-			
 			{
 				name = "fade_in"
 				operator = "math_remap_float"
@@ -195,7 +183,6 @@
 				input_map_max = "@public.value"
 				default_to_max = "false"
 			},
-			
 			{
 				name = "fade_out"
 				operator = "math_remap_float"
@@ -206,7 +193,6 @@
 				input_map_max = "@switch_start_value.output"
 				default_to_max = "false"
 			},
-			
 			{
 				name = "switch_mult_value"
 				operator = "ctrl_switch_float"
@@ -214,7 +200,6 @@
 				input1 = "1.0"
 				input2 = "@public.start_value"
 			},
-			
 			{
 				name = "fade_in_mult"
 				operator = "math_float"
@@ -222,7 +207,6 @@
 				input1 = "@fade_in.output"
 				input2 = "@switch_mult_value.output"
 			},
-			
 			{
 				name = "fade_out_mult"
 				operator = "math_float"
@@ -230,7 +214,6 @@
 				input1 = "@fade_out.output"
 				input2 = "@switch_mult_value.output"
 			},
-			
 			{
 				name = "unfinished"
 				operator = "math_float"
@@ -239,7 +222,6 @@
 				input1 = "@get_event_info.output_stop_elapsed_time"
 				input2 = "@public.fade_out"
 			},
-			
 			{
 				name = "prevent_stop"
 				operator = "soundevent_control"
@@ -252,7 +234,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -276,7 +257,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_start_opvar"
 				operator = "opvar_get_float"
@@ -286,7 +266,6 @@
 				input_field_name = "@public.opvar_name"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "import_core_setter_AHR_base"
 				operator = "sos_import_stack"
@@ -300,7 +279,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "set_if_stopped"
 				operator = "opvar_set_float"
@@ -311,7 +289,6 @@
 				input_operator_name = "@public.operator_name"
 				input_field_name = "@public.opvar_name"
 			},
-			
 			{
 				name = "set_if_unstopped"
 				operator = "opvar_set_float"
@@ -328,7 +305,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -342,14 +318,12 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_mixlayer_amount"
 				operator = "soundmixer_get_mixlayer_amount"
 				execute_once = true
 				mixlayer = "@public.mixlayer_name"
 			},
-			
 			{
 				name = "import_core_setter_AHR_base"
 				operator = "sos_import_stack"
@@ -363,7 +337,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "set_if_stopped"
 				operator = "soundmixer_set_mixlayer_amount"
@@ -371,7 +344,6 @@
 				input = "@import_core_setter_AHR_base::fade_out_mult.output"
 				mixlayer = "@public.mixlayer_name"
 			},
-			
 			{
 				name = "set_if_unstopped"
 				operator = "soundmixer_set_mixlayer_amount"
@@ -385,7 +357,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -394,14 +365,12 @@
 					import_public_opvars = "core_setter_AHR_base"
 				}
 			},
-			
 			{
 				name = "get_game_volume"
 				operator = "convar_get"
 				execute_once = "true"
 				convar = "snd_gain"
 			},
-			
 			{
 				name = "import_core_setter_AHR_base"
 				operator = "sos_import_stack"
@@ -415,7 +384,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "set_if_stopped"
 				operator = "convar_set"
@@ -423,7 +391,6 @@
 				convar = "snd_gain"
 				input = "@import_core_setter_AHR_base::fade_out_mult.output"
 			},
-			
 			{
 				name = "set_if_unstopped"
 				operator = "convar_set"
@@ -437,7 +404,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -451,14 +417,12 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_mixgraph_input"
 				operator = "vmix_mixgraph_input_get_float"
 				execute_once = "true"
 				input_name = "@public.mixgraph_input"
 			},
-			
 			{
 				name = "import_core_setter_AHR_base"
 				operator = "sos_import_stack"
@@ -472,7 +436,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "set_if_stopped"
 				operator = "vmix_mixgraph_input"
@@ -480,7 +443,6 @@
 				input = "@import_core_setter_AHR_base::fade_out_mult.output"
 				input_name = "@public.mixgraph_input"
 			},
-			
 			{
 				name = "set_if_unstopped"
 				operator = "vmix_mixgraph_input"
@@ -494,7 +456,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -527,12 +488,10 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "time_not_elapsed"
 				operator = "math_float"
@@ -541,7 +500,6 @@
 				input1 = "@get_event_info.output_elapsed_time"
 				input2 = "@public.time"
 			},
-			
 			{
 				name = "time_not_elapsed_and_unstopped"
 				operator = "math_float"
@@ -550,7 +508,6 @@
 				input1 = "@time_not_elapsed.output"
 				input2 = "@get_event_info.output_unstopped"
 			},
-			
 			{
 				name = "time_elapsed_or_stopped"
 				operator = "math_float"
@@ -559,14 +516,12 @@
 				input2 = "@time_not_elapsed_and_unstopped.output"
 				input1 = "1"
 			},
-			
 			{
 				name = "value_curve"
 				operator = "math_curve_2d"
 				input = "@get_event_info.output_elapsed_time"
 				public_field_name = "public.value_curve"
 			},
-			
 			{
 				name = "prevent_stop"
 				operator = "soundevent_control"
@@ -579,7 +534,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -603,14 +557,12 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_core_setter_curve_base"
 				operator = "sos_import_stack"
 				import_stack = "core_setter_curve_base"
 				auto_connect_public_fields = "true"
 			},
-			
 			{
 				name = "set_if_stopped"
 				operator = "opvar_set_float"
@@ -621,7 +573,6 @@
 				input_operator_name = "@public.operator_name"
 				input_field_name = "@public.opvar_name"
 			},
-			
 			{
 				name = "set_if_unstopped"
 				operator = "opvar_set_float"
@@ -638,7 +589,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -652,14 +602,12 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_core_setter_curve_base"
 				operator = "sos_import_stack"
 				import_stack = "core_setter_curve_base"
 				auto_connect_public_fields = "true"
 			},
-			
 			{
 				name = "set_mixlayer_amount_unstopped"
 				operator = "soundmixer_set_mixlayer_amount"
@@ -667,7 +615,6 @@
 				mixlayer = "@public.mixlayer_name"
 				input = "@import_core_setter_curve_base::value_curve.output"
 			},
-			
 			{
 				name = "set_mixlayer_amount_stopped"
 				operator = "soundmixer_set_mixlayer_amount"
@@ -681,7 +628,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -695,20 +641,17 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_core_setter_curve_base"
 				operator = "sos_import_stack"
 				import_stack = "core_setter_curve_base"
 				auto_connect_public_fields = "true"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
 				mixgroup = "@public.mixer_mixgroup"
 			},
-			
 			{
 				name = "set_trigger_amount_unstopped"
 				operator = "soundmixer_set_trigger"
@@ -716,7 +659,6 @@
 				input_trigger = "@import_core_setter_curve_base::value_curve.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "set_trigger_amount_stopped"
 				operator = "soundmixer_set_trigger"
@@ -730,7 +672,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -744,14 +685,12 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_core_setter_curve_base"
 				operator = "sos_import_stack"
 				import_stack = "core_setter_curve_base"
 				auto_connect_public_fields = "true"
 			},
-			
 			{
 				name = "set_if_unstopped"
 				operator = "vmix_mixgraph_input"
@@ -759,7 +698,6 @@
 				input = "@import_core_setter_curve_base::value_curve.output"
 				input_name = "@public.mixgraph_input"
 			},
-			
 			{
 				name = "set_if_stopped"
 				operator = "vmix_mixgraph_input"

@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -15,7 +14,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -33,7 +31,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "dist_limit_on"
 				operator = "math_float"
@@ -42,7 +39,6 @@
 				input1 = "@public.distance_max"
 				input2 = "-1.000000"
 			},
-			
 			{
 				name = "dist_limit_test"
 				operator = "math_float"
@@ -52,7 +48,6 @@
 				input1 = "@public.distance"
 				input2 = "@public.distance_max"
 			},
-			
 			{
 				name = "dist_limit_and"
 				operator = "math_float"
@@ -62,7 +57,6 @@
 				input1 = "@dist_limit_on.output"
 				input2 = "@dist_limit_test.output"
 			},
-			
 			{
 				name = "exit"
 				operator = "sos_goto"
@@ -81,7 +75,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -99,7 +92,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "volume_limit_on"
 				operator = "math_float"
@@ -108,7 +100,6 @@
 				input1 = "@public.volume_block_min_threshold"
 				input2 = "-1.000000"
 			},
-			
 			{
 				name = "volume_limit_test"
 				operator = "math_float"
@@ -118,7 +109,6 @@
 				input1 = "@public.volume_input"
 				input2 = "@public.volume_block_min_threshold"
 			},
-			
 			{
 				name = "volume_limit_and"
 				operator = "math_float"
@@ -128,7 +118,6 @@
 				input1 = "@volume_limit_on.output"
 				input2 = "@volume_limit_test.output"
 			},
-			
 			{
 				name = "exit"
 				operator = "sos_goto"
@@ -147,7 +136,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -185,12 +173,10 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "get_rand_time"
 				operator = "math_random_float"
@@ -199,7 +185,6 @@
 				input_min = "@public.min_time"
 				input_max = "@public.max_time"
 			},
-			
 			{
 				name = "block_entries"
 				operator = "soundevent_block"
@@ -209,9 +194,8 @@
 				match_substring = "@public.match_substring"
 				input_event_type = "@public.match_event_type"
 				is_untimed = 1
-				allow_empty_match = 1.000000
+				allow_empty_match = 1.0
 			},
-			
 			{
 				name = "stop_time"
 				operator = "math_float"
@@ -219,7 +203,6 @@
 				input2 = "@get_event_info.output_elapsed_time"
 				input1 = "@get_rand_time.output"
 			},
-			
 			{
 				name = "prevent_stop"
 				operator = "soundevent_control"
@@ -237,7 +220,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -250,12 +232,10 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "stop_time"
 				operator = "math_float"
@@ -263,7 +243,6 @@
 				input1 = "@get_event_info.output_elapsed_time"
 				input2 = "@public.time"
 			},
-			
 			{
 				name = "stop_this_event"
 				input_execute = "@stop_time.output"
@@ -281,14 +260,13 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
 				input_vsnd1 = "sounds/ambient/abstract/amb_gen_low_metallic_05.vsnd"
 				input_speaker_volumes = "[ 1, 1,1,1,1,1,1,1]"
 				execute_once = true
-				input_start = 1.000000
+				input_start = 1.0
 			},
 		]
 		_system_properties = 
@@ -300,7 +278,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -353,13 +330,11 @@
 					}
 				}
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@public.volume"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -381,7 +356,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -424,7 +398,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "pitch_random"
 				operator = "math_random_float"
@@ -432,7 +405,6 @@
 				input_min = "@public.pitch_min"
 				input_max = "@public.pitch_max"
 			},
-			
 			{
 				name = "volume_random"
 				operator = "math_random_float"
@@ -440,14 +412,12 @@
 				input_min = "@public.volume_min"
 				input_max = "@public.volume_max"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				execute_once = "true"
 				input = "@volume_random.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -469,7 +439,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -522,7 +491,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "volume_random"
 				operator = "math_randomize_float"
@@ -531,7 +499,6 @@
 				input_rand_min = "@public.volume_rand_min"
 				input_rand_max = "@public.volume_rand_max"
 			},
-			
 			{
 				name = "pitch_random"
 				operator = "math_randomize_float"
@@ -540,7 +507,6 @@
 				input_rand_min = "@public.pitch_rand_min"
 				input_rand_max = "@public.pitch_rand_max"
 			},
-			
 			{
 				name = "volume_mult"
 				operator = "math_float"
@@ -548,14 +514,12 @@
 				input1 = "@public.volume"
 				input2 = "@volume_random.output"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				execute_once = "true"
 				input = "@volume_mult.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -577,7 +541,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -629,24 +592,20 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "source_info"
 				operator = "game_get_source_info"
 			},
-			
 			{
 				name = "get_entity_info"
 				operator = "game_entity_info"
@@ -654,14 +613,12 @@
 				input_default_world_position = "@public.position"
 				input_default_local_position = "@globals.output_listener_front"
 			},
-			
 			{
 				name = "distance_to_source"
 				operator = "calc_distance"
 				input_position1 = "@get_entity_info.output_position"
 				input_position2 = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "get_vsnd"
 				operator = "opvar_get_vsnd"
@@ -672,7 +629,6 @@
 				input_use_namespace = "false"
 				array_selection_type = "random"
 			},
-			
 			{
 				name = "volume_linear_falloff"
 				operator = "math_remap_float"
@@ -682,7 +638,6 @@
 				input_map_min = "1.000000"
 				input_map_max = "0.000000"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -700,7 +655,6 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "speakers_spatialize"
 				operator = "calc_spatialize_speakers"
@@ -712,7 +666,6 @@
 				input_listener_left = "@globals.output_listener_left"
 				input_rear_stereo_scale = "1.000000"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -735,7 +688,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -778,7 +730,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "minmax_01"
 				operator = "math_float"
@@ -786,7 +737,6 @@
 				input1 = "@public.input1"
 				input2 = "@public.input2"
 			},
-			
 			{
 				name = "minmax_02"
 				operator = "math_float"
@@ -794,7 +744,6 @@
 				input1 = "@minmax_01.output"
 				input2 = "@public.input3"
 			},
-			
 			{
 				name = "minmax_03"
 				operator = "math_float"
@@ -802,7 +751,6 @@
 				input1 = "@minmax_02.output"
 				input2 = "@public.input4"
 			},
-			
 			{
 				name = "minmax_04"
 				operator = "math_float"
@@ -810,7 +758,6 @@
 				input1 = "@minmax_03.output"
 				input2 = "@public.input5"
 			},
-			
 			{
 				name = "minmax_05"
 				operator = "math_float"
@@ -818,7 +765,6 @@
 				input1 = "@minmax_04.output"
 				input2 = "@public.input6"
 			},
-			
 			{
 				name = "set_output_opvar"
 				operator = "opvar_set_float"
@@ -838,7 +784,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -865,18 +810,15 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@public.volume"
 			},
-			
 			{
 				name = "get_vsnd"
 				operator = "opvar_get_vsnd"
@@ -887,7 +829,6 @@
 				input_use_namespace = "false"
 				array_selection_type = "random_exclusive"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -909,7 +850,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -932,7 +872,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "submix_send"
 				operator = "vmix_mixgraph_send"
@@ -941,18 +880,15 @@
 				input = "1.000000"
 				send_type = "named"
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@public.volume"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -974,7 +910,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1003,7 +938,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "stop"
 				operator = "soundevent_stop_all"
@@ -1012,7 +946,6 @@
 				exclude_group_name = "@public.exclude_group"
 				voice_layer = "@public.voice_layer"
 			},
-			
 			{
 				name = "prevent_stop"
 				operator = "soundevent_control"
@@ -1029,7 +962,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1072,7 +1004,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "pause"
 				operator = "soundevent_pause"
@@ -1094,7 +1025,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1127,7 +1057,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "stop"
 				operator = "soundevent_limiter"
@@ -1148,7 +1077,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1181,7 +1109,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "private"
 				operator = "util_null"
@@ -1194,19 +1121,16 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_source_vel"
 				operator = "math_velocity"
 				input_position = "@public.sound_pos"
 			},
-			
 			{
 				name = "get_observer_vel"
 				operator = "math_velocity"
 				input_position = "@public.player_pos"
 			},
-			
 			{
 				name = "get_source_observer_distance"
 				execute_once = "false"
@@ -1214,13 +1138,11 @@
 				input_position1 = "@public.sound_pos"
 				input_position2 = "@public.player_pos"
 			},
-			
 			{
 				name = "distance_delta"
 				operator = "math_delta"
 				input = "@get_source_observer_distance.output"
 			},
-			
 			{
 				name = "compare_distance_delta"
 				operator = "math_float"
@@ -1228,7 +1150,6 @@
 				input1 = "@distance_delta.output"
 				input2 = "0.000000"
 			},
-			
 			{
 				name = "add_constant_and_source"
 				operator = "math_float"
@@ -1236,7 +1157,6 @@
 				input1 = "@private.speed_of_sound"
 				input2 = "@get_source_vel.output_velocity"
 			},
-			
 			{
 				name = "sub_constant_and_source"
 				operator = "math_float"
@@ -1244,7 +1164,6 @@
 				input1 = "@private.speed_of_sound"
 				input2 = "@get_source_vel.output_velocity"
 			},
-			
 			{
 				name = "switch_incoming_or_outgoing_source"
 				operator = "ctrl_switch_float"
@@ -1252,7 +1171,6 @@
 				input1 = "@add_constant_and_source.output"
 				input2 = "@sub_constant_and_source.output"
 			},
-			
 			{
 				name = "add_constant_and_observer"
 				operator = "math_float"
@@ -1260,7 +1178,6 @@
 				input1 = "@private.speed_of_sound"
 				input2 = "@get_observer_vel.output_velocity"
 			},
-			
 			{
 				name = "sub_constant_and_observer"
 				operator = "math_float"
@@ -1268,7 +1185,6 @@
 				input1 = "@private.speed_of_sound"
 				input2 = "@get_observer_vel.output_velocity"
 			},
-			
 			{
 				name = "switch_incoming_or_outgoing_observer"
 				operator = "ctrl_switch_float"
@@ -1276,7 +1192,6 @@
 				input1 = "@sub_constant_and_observer.output"
 				input2 = "@add_constant_and_observer.output"
 			},
-			
 			{
 				name = "calc_multiplier"
 				operator = "math_float"
@@ -1284,7 +1199,6 @@
 				input1 = "@switch_incoming_or_outgoing_observer.output"
 				input2 = "@switch_incoming_or_outgoing_source.output"
 			},
-			
 			{
 				name = "apply_scalar"
 				operator = "math_float"
@@ -1292,13 +1206,11 @@
 				input1 = "@calc_multiplier.output"
 				input2 = "@public.doppler_scalar"
 			},
-			
 			{
 				name = "obs_vel_delta"
 				operator = "math_delta"
 				input = "@apply_scalar.output"
 			},
-			
 			{
 				name = "delta_compare"
 				input_execute = "@public.enable_spew"
@@ -1307,14 +1219,12 @@
 				input1 = "@obs_vel_delta.output"
 				input2 = "0.000000"
 			},
-			
 			{
 				name = "****PRINT_PITCH****"
 				input_execute = "@delta_compare.output"
 				operator = "util_print_float"
 				input = "@apply_scalar.output"
 			},
-			
 			{
 				name = "set_doppler_output"
 				operator = "opvar_set_float"
@@ -1334,7 +1244,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "prevent_stop"
 				operator = "soundevent_control"
@@ -1347,7 +1256,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1533,19 +1441,16 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "pitch_random"
 				operator = "math_randomize_float"
@@ -1554,7 +1459,6 @@
 				input_rand_min = "@public.pitch_rand_min"
 				input_rand_max = "@public.pitch_rand_max"
 			},
-			
 			{
 				name = "source_index_switch"
 				operator = "ctrl_switch_float"
@@ -1562,7 +1466,6 @@
 				input1 = "@get_event_info.output_entity_index"
 				input2 = "-1"
 			},
-			
 			{
 				name = "get_entity_info"
 				operator = "game_entity_info"
@@ -1570,14 +1473,12 @@
 				input_default_world_position = "@public.position"
 				input_default_local_position = "@globals.output_listener_front"
 			},
-			
 			{
 				name = "distance_to_source"
 				operator = "calc_distance"
 				input_position1 = "@get_entity_info.output_position"
 				input_position2 = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "falloff_min_dist_mult"
 				operator = "math_float"
@@ -1585,7 +1486,6 @@
 				input1 = "@public.falloff_min_dist"
 				input2 = "@public.falloff_dist_mult"
 			},
-			
 			{
 				name = "falloff_max_dist_mult"
 				operator = "math_float"
@@ -1593,7 +1493,6 @@
 				input1 = "@public.falloff_max_dist"
 				input2 = "@public.falloff_dist_mult"
 			},
-			
 			{
 				name = "spread_min_dist_mult"
 				operator = "math_float"
@@ -1601,7 +1500,6 @@
 				input1 = "@public.spread_min_dist"
 				input2 = "@public.falloff_dist_mult"
 			},
-			
 			{
 				name = "spread_max_dist_mult"
 				operator = "math_float"
@@ -1609,7 +1507,6 @@
 				input1 = "@public.spread_max_dist"
 				input2 = "@public.falloff_dist_mult"
 			},
-			
 			{
 				name = "import_dist_limit"
 				input_execute = "@public.distance_limiter_on"
@@ -1627,7 +1524,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "test_soundevent_block"
 				operator = "soundevent_block_test"
@@ -1635,7 +1531,6 @@
 				input_event_type = "@public.event_type"
 				input_entity_index = "@get_event_info.output_entity_index"
 			},
-			
 			{
 				name = "soundevent_limit_type_switch"
 				operator = "ctrl_switch_float"
@@ -1643,7 +1538,6 @@
 				input1 = "-1"
 				input2 = "@public.event_type"
 			},
-			
 			{
 				name = "limiter_max_adjust"
 				operator = "math_float"
@@ -1651,7 +1545,6 @@
 				input1 = "@public.limiter_max"
 				input2 = "1.000000"
 			},
-			
 			{
 				name = "soundevent_limit"
 				execute_once = "true"
@@ -1663,7 +1556,6 @@
 				match_substring = "0.000000"
 				match_this_event = "@public.limiter_match_this"
 			},
-			
 			{
 				name = "set_soundevent_block"
 				operator = "soundevent_block"
@@ -1674,13 +1566,11 @@
 				input_event_type = "@public.event_type"
 				input_entity_index = "0"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
 				mixgroup = "@public.mixgroup"
 			},
-			
 			{
 				name = "occlusion"
 				operator = "calc_occlusion_src1"
@@ -1689,14 +1579,12 @@
 				input_source_position = "@get_entity_info.output_position"
 				input_listener_position = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "occlusion_filter"
 				operator = "math_filter_float"
 				input = "@occlusion.output"
 				input_max_velocity = "1.000000"
 			},
-			
 			{
 				name = "occlusion_submix_math_invert"
 				operator = "math_float"
@@ -1704,7 +1592,6 @@
 				input1 = "1.000000"
 				input2 = "@occlusion_filter.output"
 			},
-			
 			{
 				name = "occlusion_submix_send"
 				operator = "vmix_mixgraph_send"
@@ -1713,7 +1600,6 @@
 				input = "@occlusion_submix_math_invert.output"
 				send_type = "named"
 			},
-			
 			{
 				name = "volume_rand_range_half"
 				operator = "math_float"
@@ -1722,7 +1608,6 @@
 				input1 = "@public.volume_rand_range"
 				input2 = "0.500000"
 			},
-			
 			{
 				name = "volume_rand_range_min"
 				operator = "math_float"
@@ -1731,7 +1616,6 @@
 				input1 = "@volume_rand_range_half.output"
 				input2 = "-1.000000"
 			},
-			
 			{
 				name = "volume_random"
 				operator = "math_randomize_float"
@@ -1740,7 +1624,6 @@
 				input_rand_min = "@volume_rand_range_min.output"
 				input_rand_max = "@volume_rand_range_half.output"
 			},
-			
 			{
 				name = "volume_noise_time_scale"
 				operator = "math_float"
@@ -1749,7 +1632,6 @@
 				input1 = "@public.volume_noise_freq"
 				input2 = "@get_event_info.output_host_elapsed_time"
 			},
-			
 			{
 				name = "volume_noise"
 				operator = "math_perlin_noise"
@@ -1758,7 +1640,6 @@
 				input_x = "@volume_noise_time_scale.output"
 				input_z = "@volume_noise_time_scale.output"
 			},
-			
 			{
 				name = "volume_noise_scale"
 				operator = "math_float"
@@ -1767,7 +1648,6 @@
 				input1 = "@public.volume_noise_range"
 				input2 = "@volume_noise.output"
 			},
-			
 			{
 				name = "volume_noise_add"
 				operator = "math_float"
@@ -1776,7 +1656,6 @@
 				input1 = "@volume_random.output"
 				input2 = "@volume_noise_scale.output"
 			},
-			
 			{
 				name = "volume_fade_in"
 				operator = "math_remap_float"
@@ -1787,7 +1666,6 @@
 				input_map_max = "1.000000"
 				default_to_max = "true"
 			},
-			
 			{
 				name = "volume_falloff"
 				operator = "calc_falloff_curve"
@@ -1797,7 +1675,6 @@
 				input_max = "@falloff_max_dist_mult.output"
 				input_atten = "1.000000"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -1815,14 +1692,12 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@volume_accumulate.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "dsp_apply_mixer"
 				operator = "math_float"
@@ -1830,7 +1705,6 @@
 				input1 = "@mixer.output_dsp"
 				input2 = "@public.reverb_send"
 			},
-			
 			{
 				name = "dsp_distantDSP"
 				operator = "math_remap_float"
@@ -1840,7 +1714,6 @@
 				input_map_min = "0.350000"
 				input_map_max = "0.700000"
 			},
-			
 			{
 				name = "dsp_apply_distant"
 				operator = "math_float"
@@ -1848,7 +1721,6 @@
 				input1 = "@dsp_distantDSP.output"
 				input2 = "@dsp_apply_mixer.output"
 			},
-			
 			{
 				name = "submix_send_reverb"
 				operator = "vmix_mixgraph_send"
@@ -1857,7 +1729,6 @@
 				input = "@dsp_apply_distant.output"
 				send_type = "named"
 			},
-			
 			{
 				name = "speakers_spatialize"
 				operator = "calc_spatialize_vr"
@@ -1871,13 +1742,11 @@
 				input_spread_min = "@spread_min_dist_mult.output"
 				input_spread_max = "@spread_max_dist_mult.output"
 			},
-			
 			{
 				name = "entity_id_stop"
 				operator = "soundevent_control"
 				input_stop = "@get_entity_info.output_id_deleted"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -1890,7 +1759,6 @@
 				input_delay = "@public.delay"
 				input_fade_out = "@public.release"
 			},
-			
 			{
 				name = "start_layer2"
 				operator = "soundevent_start"
@@ -1921,7 +1789,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1949,7 +1816,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "sampler"
 				operator = "sampler_event"
@@ -1966,7 +1832,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1984,12 +1849,10 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "arrangements"
 				operator = "arrangement_start"
@@ -2004,7 +1867,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -2027,12 +1889,10 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "set_preset"
 				operator = "vmix_mixgraph_input_dsp_preset"
@@ -2041,7 +1901,6 @@
 				input_name = "PlayerDSP"
 				input_dsp_preset_name = "@public.dsp_preset"
 			},
-			
 			{
 				name = "set_mix"
 				operator = "vmix_mixgraph_input"
@@ -2056,7 +1915,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -2069,12 +1927,10 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "stop_time"
 				operator = "math_float"
@@ -2082,7 +1938,6 @@
 				input2 = "@get_event_info.output_elapsed_time"
 				input1 = "@public.time"
 			},
-			
 			{
 				name = "prevent_stop"
 				operator = "soundevent_control"
@@ -2100,7 +1955,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -2119,7 +1973,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_soundevent_data_length"
 				operator = "opvar_get_info"
@@ -2129,7 +1982,6 @@
 				input_field_name = "soundevents"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_soundevent"
 				operator = "opvar_get_string"
@@ -2141,7 +1993,6 @@
 				array_selection_type = "index"
 				input_index = "@goto_head.output_goto_count"
 			},
-			
 			{
 				name = "preload_soundevent"
 				operator = "vmix_preload_soundevent"
@@ -2149,7 +2000,6 @@
 				input_soundevent_name = "@get_soundevent.output"
 				input_memory_priority = "@public.priority"
 			},
-			
 			{
 				name = "goto_head"
 				operator = "sos_goto"

@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -941,25 +940,21 @@
 					}
 				}
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
 				mixgroup = "@public.mixgroup"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "source_info"
 				operator = "game_get_source_info"
 			},
-			
 			{
 				name = "use_entity_for_block"
 				operator = "ctrl_switch_float"
@@ -967,7 +962,6 @@
 				input1 = "-1"
 				input2 = "@source_info.output_entity_index"
 			},
-			
 			{
 				name = "get_entity_info"
 				operator = "game_entity_info"
@@ -981,7 +975,6 @@
 				input_hold_position_on_deleted_entity = "true"
 				input_add_velocity_on_deleted_entity = "false"
 			},
-			
 			{
 				name = "soundevent_limit"
 				operator = "soundevent_limiter"
@@ -992,7 +985,6 @@
 				input_max_events = "@public.instance_limit"
 				stop_oldest = "1"
 			},
-			
 			{
 				name = "entity_is_player_add"
 				operator = "math_float"
@@ -1000,7 +992,6 @@
 				input1 = "@get_entity_info.output_entity_is_actual_player_entity"
 				input2 = "@get_entity_info.output_entity_is_player"
 			},
-			
 			{
 				name = "entity_is_player"
 				operator = "math_float"
@@ -1008,7 +999,6 @@
 				input1 = "@entity_is_player_add.output"
 				input2 = "1"
 			},
-			
 			{
 				name = "position_base"
 				operator = "ctrl_switch_float3"
@@ -1016,7 +1006,6 @@
 				input1 = "@get_entity_info.output_position"
 				input2 = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "position_offset_relative"
 				operator = "orient_vector_to_entity"
@@ -1024,7 +1013,6 @@
 				input_entity_index = "@source_info.output_entity_index"
 				input_vector = "@public.position_offset"
 			},
-			
 			{
 				name = "position_offset"
 				operator = "math_float3"
@@ -1032,7 +1020,6 @@
 				input1 = "@position_base.output"
 				input2 = "@position_offset_relative.output"
 			},
-			
 			{
 				name = "randomize_position_input"
 				input_execute = "@first_frame.output"
@@ -1041,7 +1028,6 @@
 				input_radius_min = "@public.randomize_position_min_radius"
 				input_radius_max = "@public.randomize_position_max_radius"
 			},
-			
 			{
 				name = "randomize_position"
 				operator = "math_float3"
@@ -1049,14 +1035,12 @@
 				input1 = "@position_offset.output"
 				input2 = "@randomize_position_input.output"
 			},
-			
 			{
 				name = "uiposition_elements"
 				input_execute = "@public.use_uiposition"
 				operator = "util_elements_float3"
 				input = "@public.uiposition"
 			},
-			
 			{
 				name = "uiposition_left"
 				input_execute = "@public.use_uiposition"
@@ -1064,7 +1048,6 @@
 				input1 = "@globals.output_listener_left"
 				input2 = "@uiposition_elements.output_0"
 			},
-			
 			{
 				name = "uiposition_forward"
 				input_execute = "@public.use_uiposition"
@@ -1072,7 +1055,6 @@
 				input1 = "@globals.output_listener_forward"
 				input2 = "@uiposition_elements.output_1"
 			},
-			
 			{
 				name = "uiposition_up"
 				input_execute = "@public.use_uiposition"
@@ -1080,7 +1062,6 @@
 				input1 = "@globals.output_listener_up"
 				input2 = "@uiposition_elements.output_2"
 			},
-			
 			{
 				name = "uiposition_calc_step"
 				input_execute = "@public.use_uiposition"
@@ -1089,7 +1070,6 @@
 				input1 = "@uiposition_left.output"
 				input2 = "@uiposition_forward.output"
 			},
-			
 			{
 				name = "uiposition_calc"
 				input_execute = "@public.use_uiposition"
@@ -1098,7 +1078,6 @@
 				input1 = "@uiposition_calc_step.output"
 				input2 = "@uiposition_up.output"
 			},
-			
 			{
 				name = "final_position"
 				operator = "math_float3"
@@ -1106,14 +1085,12 @@
 				input1 = "@randomize_position.output"
 				input2 = "@uiposition_calc.output"
 			},
-			
 			{
 				name = "distance_to_source"
 				operator = "calc_distance"
 				input_position1 = "@final_position.output"
 				input_position2 = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "multiplied_distance"
 				operator = "math_float"
@@ -1121,7 +1098,6 @@
 				input1 = "@distance_to_source.output"
 				input2 = "@public.distance_multiplier"
 			},
-			
 			{
 				name = "soundevent_block_other"
 				operator = "soundevent_block"
@@ -1132,7 +1108,6 @@
 				match_substring = "true"
 				match_event_name = "@public.block_other_name"
 			},
-			
 			{
 				name = "test_soundevent_block"
 				operator = "soundevent_block_test"
@@ -1142,7 +1117,6 @@
 				input_position = "@final_position.output"
 				match_this_event = "1"
 			},
-			
 			{
 				name = "set_soundevent_block"
 				operator = "soundevent_block"
@@ -1155,12 +1129,10 @@
 				match_this_event = "1"
 				is_untimed = "0"
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "expired_time_raw"
 				operator = "math_float"
@@ -1168,7 +1140,6 @@
 				input1 = "@get_event_info.output_elapsed_time"
 				input2 = "@public.self_destruct_time"
 			},
-			
 			{
 				name = "use_expired_time"
 				operator = "math_float"
@@ -1176,7 +1147,6 @@
 				input1 = "@public.self_destruct_time"
 				input2 = "0"
 			},
-			
 			{
 				name = "velocity_volume_curve"
 				operator = "math_curve_2d"
@@ -1185,7 +1155,6 @@
 				output = "1"
 				input = "@velocity_seek.output"
 			},
-			
 			{
 				name = "expired_time"
 				operator = "ctrl_switch_float"
@@ -1193,7 +1162,6 @@
 				input1 = "-1"
 				input2 = "@expired_time_raw.output"
 			},
-			
 			{
 				name = "fade_time"
 				operator = "math_float"
@@ -1201,7 +1169,6 @@
 				input1 = "@expired_time.output"
 				input2 = "@get_event_info.output_stop_elapsed_time"
 			},
-			
 			{
 				name = "frame_count"
 				operator = "math_float"
@@ -1210,7 +1177,6 @@
 				input2 = "1"
 				output = "0"
 			},
-			
 			{
 				name = "first_frame"
 				operator = "math_float"
@@ -1218,13 +1184,11 @@
 				input1 = "@frame_count.output"
 				input2 = "1"
 			},
-			
 			{
 				name = "is_tagged_1p_sound"
 				operator = "is_local_player_slot"
 				input = "@public.relevant_player"
 			},
-			
 			{
 				name = "should_start_soundevent_list"
 				operator = "math_float"
@@ -1232,7 +1196,6 @@
 				input1 = "@public.enable_child_events"
 				input2 = "@is_tagged_1p_sound.output"
 			},
-			
 			{
 				name = "start_soundevent_list"
 				operator = "soundeventdata_start"
@@ -1258,7 +1221,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "calc_doppler"
 				input_execute = "@public.use_doppler"
@@ -1269,41 +1231,35 @@
 				input_doppler_factor_receding = "@public.doppler_factor_receding"
 				input_doppler_observer_scale = "0.050000"
 			},
-			
 			{
 				name = "doppler_filter"
 				operator = "math_filter_float"
 				input = "@calc_doppler.output"
 				input_max_velocity = "1.000000"
 			},
-			
 			{
 				name = "dsp_bypass_off"
 				operator = "math_float"
 				apply = "invert"
 				input1 = "@public.dsp_bypass"
 			},
-			
 			{
 				name = "set_builtins"
 				operator = "sos_set_builtins"
 				input_execute = "@dsp_bypass_off.output"
 				input_voicegraph = "csgo.voice_main"
 			},
-			
 			{
 				name = "set_builtins_dsp_bypass"
 				operator = "sos_set_builtins"
 				input_execute = "@public.dsp_bypass"
 				input_voicegraph = "csgo.dsp_bypass"
 			},
-			
 			{
 				name = "convar_use_baked_occlusion"
 				operator = "convar_get"
 				convar = "snd_use_baked_occlusion"
 			},
-			
 			{
 				name = "use_baked_occlusion"
 				operator = "math_float"
@@ -1311,7 +1267,6 @@
 				input1 = "@public.use_baked_occlusion"
 				input2 = "@convar_use_baked_occlusion.output"
 			},
-			
 			{
 				name = "should_recalculate_baked_occlusion"
 				operator = "math_float"
@@ -1319,7 +1274,6 @@
 				input1 = "@use_baked_occlusion.output"
 				input2 = "@occlusion_interval_timer.output_interval_elapsed"
 			},
-			
 			{
 				name = "params_steamaudio_source"
 				operator = "steamaudio_compute_customdata"
@@ -1329,7 +1283,6 @@
 				input_listener_position = "@globals.output_listener_position"
 				input_compute_occlusion = "true"
 			},
-			
 			{
 				name = "occlusion_path_ratio"
 				operator = "math_float"
@@ -1338,7 +1291,6 @@
 				input2 = "@params_steamaudio_source.output_occlusion_value"
 				output = "100"
 			},
-			
 			{
 				name = "occlusion_path_curve"
 				operator = "math_curve_2d"
@@ -1349,7 +1301,6 @@
 				public_field_name = "public.occlusion_path_curve"
 				output = "-1.000000"
 			},
-			
 			{
 				name = "occlusion_execute"
 				operator = "math_float"
@@ -1357,7 +1308,6 @@
 				input1 = "@public.occlusion_intensity"
 				input2 = "1"
 			},
-			
 			{
 				name = "calculate_occlusion"
 				operator = "calc_occlusion_info"
@@ -1367,20 +1317,17 @@
 				input_listener_position = "@globals.output_listener_position"
 				input_indirect_override = "@occlusion_path_curve.output"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@mult_mixer_volume.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "speakers_spatialize_rear_scale"
 				operator = "convar_get"
 				convar = "snd_rear_stereo_scale"
 			},
-			
 			{
 				name = "speakers_spatialize"
 				operator = "calc_spatialize_speakers"
@@ -1393,7 +1340,6 @@
 				input_listener_position = "@globals.output_listener_position"
 				input_listener_left = "@globals.output_listener_left"
 			},
-			
 			{
 				name = "is_retrigger_enabled"
 				operator = "math_float"
@@ -1401,7 +1347,6 @@
 				input1 = "@public.enable_retrigger"
 				input2 = "0.500000"
 			},
-			
 			{
 				name = "should_start_vsnd"
 				operator = "math_float"
@@ -1409,14 +1354,12 @@
 				input1 = "@is_retrigger_enabled.output"
 				input2 = "@is_tagged_1p_sound.output"
 			},
-			
 			{
 				name = "get_current_roomdsp_effect"
 				input_execute = "1"
 				operator = "soundmixer_get_current_dsp_effect"
 				input_effect = "RoomDSP"
 			},
-			
 			{
 				name = "get_source_dsp_effect"
 				input_execute = "1"
@@ -1426,7 +1369,6 @@
 				blend_ratio = "@public.dsp_blend"
 				input_listener_effect_name = "@get_current_roomdsp_effect.output_effect_name"
 			},
-			
 			{
 				name = "mult_source_event_wet"
 				input_execute = "1"
@@ -1435,7 +1377,6 @@
 				input1 = "@get_source_dsp_effect.output_mix"
 				input2 = "@public.reverb_source_wet"
 			},
-			
 			{
 				name = "mult_source_wet"
 				input_execute = "1"
@@ -1444,7 +1385,6 @@
 				input1 = "@mult_source_event_wet.output"
 				input2 = "@mixer.output_level"
 			},
-			
 			{
 				name = "check_restrict_source_reverb"
 				input_execute = "1"
@@ -1453,7 +1393,6 @@
 				input2 = "reverb_0_null"
 				input_switch = "@public.restrict_source_reverb"
 			},
-			
 			{
 				name = "get_dsp_mix_override"
 				input_execute = "1"
@@ -1462,7 +1401,6 @@
 				input_mixgroup = "@public.mixgroup"
 				input_distance = "@multiplied_distance.output"
 			},
-			
 			{
 				name = "mult_dsp_mod"
 				input_execute = "1"
@@ -1471,7 +1409,6 @@
 				input1 = "@public.reverb_wet"
 				input2 = "@get_dsp_mix_override.output"
 			},
-			
 			{
 				name = "mult_wet"
 				input_execute = "1"
@@ -1480,7 +1417,6 @@
 				input1 = "@mult_dsp_mod.output"
 				input2 = "@mixer.output_dsp"
 			},
-			
 			{
 				name = "mult_occlusion_frequency_scale"
 				input_execute = "1"
@@ -1489,7 +1425,6 @@
 				input1 = "@public.occlusion_frequency_scale"
 				input2 = "@calculate_occlusion.output"
 			},
-			
 			{
 				name = "if_occlusion_is_greater_than_one"
 				input_execute = "1"
@@ -1498,7 +1433,6 @@
 				input1 = "@mult_occlusion_frequency_scale.output"
 				input2 = "1.000000"
 			},
-			
 			{
 				name = "get_occlusion_intensity_value"
 				input_execute = "1"
@@ -1507,7 +1441,6 @@
 				input2 = "1.000000"
 				input_switch = "@if_occlusion_is_greater_than_one.output"
 			},
-			
 			{
 				name = "wet_crossfade"
 				operator = "math_crossfade_float"
@@ -1515,7 +1448,6 @@
 				input = "@calculate_wet.output"
 				equal_power_amount = "1"
 			},
-			
 			{
 				name = "ducking_crossfade"
 				operator = "math_crossfade_float"
@@ -1523,7 +1455,6 @@
 				input = "@public.ducking_bypass"
 				equal_power_amount = "1"
 			},
-			
 			{
 				name = "allvoices_input_level"
 				operator = "math_float"
@@ -1531,7 +1462,6 @@
 				input1 = "@wet_crossfade.output1"
 				input2 = "@ducking_crossfade.output1"
 			},
-			
 			{
 				name = "submix_allvoices_send"
 				operator = "vmix_mixgraph_send"
@@ -1540,7 +1470,6 @@
 				submix_name = "AllVoices"
 				send_type = "named"
 			},
-			
 			{
 				name = "reverb_input_level"
 				operator = "math_float"
@@ -1548,7 +1477,6 @@
 				input1 = "@wet_crossfade.output2"
 				input2 = "@ducking_crossfade.output1"
 			},
-			
 			{
 				name = "submix_reverb_send"
 				operator = "vmix_mixgraph_send"
@@ -1557,7 +1485,6 @@
 				submix_name = "reverb"
 				send_type = "named"
 			},
-			
 			{
 				name = "ducking_input_level"
 				operator = "math_float"
@@ -1565,7 +1492,6 @@
 				input1 = "@wet_crossfade.output1"
 				input2 = "@ducking_crossfade.output2"
 			},
-			
 			{
 				name = "submix_ducking_bypass_voices_send"
 				operator = "vmix_mixgraph_send"
@@ -1574,7 +1500,6 @@
 				submix_name = "ducking_bypass_voices"
 				send_type = "named"
 			},
-			
 			{
 				name = "ducking_reverb_input_level"
 				operator = "math_float"
@@ -1582,7 +1507,6 @@
 				input1 = "@wet_crossfade.output2"
 				input2 = "@ducking_crossfade.output2"
 			},
-			
 			{
 				name = "submix_ducking_bypass_reverb_send"
 				operator = "vmix_mixgraph_send"
@@ -1591,7 +1515,6 @@
 				submix_name = "ducking_bypass_reverb"
 				send_type = "named"
 			},
-			
 			{
 				name = "submix_dsp_bypass_send"
 				operator = "vmix_mixgraph_send"
@@ -1600,7 +1523,6 @@
 				submix_name = "dsp_bypass"
 				send_type = "named"
 			},
-			
 			{
 				name = "in_retrigger_radius"
 				input_execute = "@public.enable_retrigger"
@@ -1609,7 +1531,6 @@
 				input1 = "@distance_to_source.output"
 				input2 = "@public.retrigger_radius"
 			},
-			
 			{
 				name = "retrigger_finite"
 				operator = "math_float"
@@ -1618,7 +1539,6 @@
 				input1 = "@public.retrigger_count"
 				input2 = "0"
 			},
-			
 			{
 				name = "out_of_retrigger_radius"
 				input_execute = "@public.enable_retrigger"
@@ -1627,7 +1547,6 @@
 				input1 = "@public.retrigger_radius"
 				input2 = "0.000000"
 			},
-			
 			{
 				name = "volume_random_variance"
 				execute_once = "true"
@@ -1635,7 +1554,6 @@
 				input_min = "@public.volume_random_min"
 				input_max = "@public.volume_random_max"
 			},
-			
 			{
 				name = "volume_random_add"
 				operator = "math_float"
@@ -1643,7 +1561,6 @@
 				input1 = "@public.volume"
 				input2 = "@volume_random_variance.output"
 			},
-			
 			{
 				name = "pitch_random_variance"
 				execute_once = "true"
@@ -1651,7 +1568,6 @@
 				input_min = "@public.pitch_random_min"
 				input_max = "@public.pitch_random_max"
 			},
-			
 			{
 				name = "pitch_random_add"
 				operator = "math_float"
@@ -1659,7 +1575,6 @@
 				input1 = "@public.pitch"
 				input2 = "@pitch_random_variance.output"
 			},
-			
 			{
 				name = "volume_volume_linear_mult"
 				operator = "math_float"
@@ -1667,7 +1582,6 @@
 				input1 = "@volume_random_add.output"
 				input2 = "1.000000"
 			},
-			
 			{
 				name = "pitch_pitch_linear_mult"
 				operator = "math_float"
@@ -1675,7 +1589,6 @@
 				input1 = "@pitch_random_add.output"
 				input2 = "1.000000"
 			},
-			
 			{
 				name = "get_vsnd_track_01"
 				operator = "opvar_get_vsnd"
@@ -1686,7 +1599,6 @@
 				input_use_namespace = "false"
 				array_selection_type = "random_exclusive"
 			},
-			
 			{
 				name = "distance_volume_mapping_curve"
 				operator = "math_curve_2d"
@@ -1697,7 +1609,6 @@
 				public_field_name = "public.distance_volume_mapping_curve"
 				output = "1.0"
 			},
-			
 			{
 				name = "distance_volume_mapping_curve_mult"
 				operator = "math_float"
@@ -1705,7 +1616,6 @@
 				input1 = "@distance_volume_mapping_curve.output"
 				input2 = "@volume_volume_linear_mult.output"
 			},
-			
 			{
 				name = "distance_unfiltered_stereo_mapping_curve"
 				operator = "math_curve_2d"
@@ -1716,7 +1626,6 @@
 				public_field_name = "public.distance_unfiltered_stereo_mapping_curve"
 				output = "0.000000"
 			},
-			
 			{
 				name = "distance_unfiltered_stereo_mapping_curve_mult"
 				operator = "math_float"
@@ -1724,7 +1633,6 @@
 				input1 = "@distance_unfiltered_stereo_mapping_curve.output"
 				input2 = "0"
 			},
-			
 			{
 				name = "fadetime_volume_mapping_curve"
 				operator = "math_curve_2d"
@@ -1735,7 +1643,6 @@
 				public_field_name = "public.fadetime_volume_mapping_curve"
 				output = "1.0"
 			},
-			
 			{
 				name = "fadetime_volume_mapping_curve_mult"
 				operator = "math_float"
@@ -1743,7 +1650,6 @@
 				input1 = "@fadetime_volume_mapping_curve.output"
 				input2 = "@distance_volume_mapping_curve_mult.output"
 			},
-			
 			{
 				name = "time_volume_mapping_curve"
 				operator = "math_curve_2d"
@@ -1754,7 +1660,6 @@
 				public_field_name = "public.time_volume_mapping_curve"
 				output = "1"
 			},
-			
 			{
 				name = "time_volume_mapping_curve_mult"
 				operator = "math_float"
@@ -1762,7 +1667,6 @@
 				input1 = "@time_volume_mapping_curve.output"
 				input2 = "@fadetime_volume_mapping_curve_mult.output"
 			},
-			
 			{
 				name = "impact_speed_input_volume_mapping_curve"
 				operator = "math_curve_2d"
@@ -1773,7 +1677,6 @@
 				public_field_name = "public.impact_speed_input_volume_mapping_curve"
 				output = "1.0"
 			},
-			
 			{
 				name = "impact_speed_input_volume_mapping_curve_mult"
 				operator = "math_float"
@@ -1781,7 +1684,6 @@
 				input1 = "@impact_speed_input_volume_mapping_curve.output"
 				input2 = "@time_volume_mapping_curve_mult.output"
 			},
-			
 			{
 				name = "distance_pitch_mapping_curve"
 				operator = "math_curve_2d"
@@ -1792,7 +1694,6 @@
 				public_field_name = "public.distance_pitch_mapping_curve"
 				output = "1.0"
 			},
-			
 			{
 				name = "distance_pitch_mapping_curve_mult"
 				operator = "math_float"
@@ -1800,7 +1701,6 @@
 				input1 = "@distance_pitch_mapping_curve.output"
 				input2 = "@pitch_pitch_linear_mult.output"
 			},
-			
 			{
 				name = "time_unfiltered_stereo_mapping_curve"
 				operator = "math_curve_2d"
@@ -1811,7 +1711,6 @@
 				public_field_name = "public.time_unfiltered_stereo_mapping_curve"
 				output = "0.0"
 			},
-			
 			{
 				name = "time_unfiltered_stereo_mapping_curve_mult"
 				operator = "math_float"
@@ -1819,7 +1718,6 @@
 				input1 = "@time_unfiltered_stereo_mapping_curve.output"
 				input2 = "@distance_unfiltered_stereo_mapping_curve_mult.output"
 			},
-			
 			{
 				name = "mult_pitch_doppler"
 				operator = "math_float"
@@ -1827,7 +1725,6 @@
 				input1 = "@distance_pitch_mapping_curve_mult.output"
 				input2 = "@doppler_filter.output"
 			},
-			
 			{
 				name = "get_volume_convar"
 				operator = "convar_get"
@@ -1836,7 +1733,6 @@
 				input_execute = "@public.use_volume_convar"
 				execute_once = "false"
 			},
-			
 			{
 				name = "mult_mixer_volume"
 				operator = "math_accumulate12_float"
@@ -1846,14 +1742,12 @@
 				input3 = "@get_volume_convar.output"
 				input4 = "@velocity_volume_curve.output"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				execute_once = "false"
 				input = "@mult_mixer_volume.output"
 			},
-			
 			{
 				name = "volume_fan_mult"
 				operator = "math_speakers"
@@ -1862,7 +1756,6 @@
 				input1 = "@speakers_spatialize.output"
 				input2 = "@volume_fan.output"
 			},
-			
 			{
 				name = "volume_fan_scale"
 				operator = "math_speakers"
@@ -1878,13 +1771,11 @@
 				center = "1.500000"
 				lfe = "1.500000"
 			},
-			
 			{
 				name = "speaker_spatialize_lerp"
 				operator = "convar_get"
 				convar = "snd_spatialize_lerp"
 			},
-			
 			{
 				name = "speaker_spatialize_mult"
 				operator = "math_float"
@@ -1892,7 +1783,6 @@
 				input1 = "@speaker_spatialize_lerp.output"
 				input2 = "@public.distance_effect_mix"
 			},
-			
 			{
 				name = "volume_fan_mix"
 				operator = "math_lerp_speakers"
@@ -1900,13 +1790,11 @@
 				input2 = "@volume_fan_scale.output"
 				input = "@speaker_spatialize_mult.output"
 			},
-			
 			{
 				name = "get_vsnd_info"
 				operator = "vmix_vsnd_info"
 				input_vsnd = "@get_vsnd_track_01.output"
 			},
-			
 			{
 				name = "vsnd_not_ready"
 				operator = "math_float"
@@ -1914,7 +1802,6 @@
 				input1 = "1.000000"
 				input2 = "@get_vsnd_info.output_is_valid"
 			},
-			
 			{
 				name = "stop_elapsed_time_less_than_fade_curve"
 				operator = "math_float"
@@ -1922,7 +1809,6 @@
 				input1 = "@fade_time.output"
 				input2 = "@fadetime_volume_mapping_curve.output_x_max"
 			},
-			
 			{
 				name = "should_continue_playing"
 				operator = "ctrl_switch_float"
@@ -1930,7 +1816,6 @@
 				input1 = "@get_event_info.output_unstopped"
 				input2 = "@stop_elapsed_time_less_than_fade_curve.output"
 			},
-			
 			{
 				name = "distance_volume_less_than_zero"
 				operator = "math_float"
@@ -1938,7 +1823,6 @@
 				input1 = "@distance_volume_mapping_curve.output"
 				input2 = "@public.voice_culling_threshold"
 			},
-			
 			{
 				name = "distance_volume_greater_than_zero"
 				operator = "math_float"
@@ -1946,7 +1830,6 @@
 				input1 = "@distance_volume_mapping_curve.output"
 				input2 = "@public.voice_culling_threshold"
 			},
-			
 			{
 				name = "should_continue_playing_with_volume_on"
 				operator = "math_float"
@@ -1954,7 +1837,6 @@
 				input1 = "@should_continue_playing.output"
 				input2 = "@distance_volume_greater_than_zero.output"
 			},
-			
 			{
 				name = "not_culling_and_unstopped"
 				operator = "math_float"
@@ -1963,7 +1845,6 @@
 				input1 = "@distance_volume_greater_than_zero.output"
 				input2 = "@should_continue_playing.output"
 			},
-			
 			{
 				name = "switch_start_mode"
 				operator = "ctrl_switch_float"
@@ -1971,7 +1852,6 @@
 				input1 = "@should_continue_playing_with_volume_on.output"
 				input2 = "@not_culling_and_unstopped.output"
 			},
-			
 			{
 				name = "loading_override_start"
 				operator = "ctrl_switch_float"
@@ -1979,7 +1859,6 @@
 				input1 = "@switch_start_mode.output"
 				input2 = "@get_event_info.output_unstopped"
 			},
-			
 			{
 				name = "switch_fade_time"
 				operator = "ctrl_switch_float"
@@ -1987,7 +1866,6 @@
 				input1 = "@public.voice_fade_out_time"
 				input2 = "0"
 			},
-			
 			{
 				name = "random_delay"
 				operator = "math_random_float"
@@ -1995,7 +1873,6 @@
 				input_max = "0"
 				execute_once = "1"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -2018,7 +1895,6 @@
 				input_should_pause = "0"
 				input_start = "@keepalive_play.output"
 			},
-			
 			{
 				name = "send_voicegraph_source_dsp"
 				input_execute = "1"
@@ -2026,7 +1902,6 @@
 				input_name = "source_effect"
 				input_dsp_preset_name = "@check_restrict_source_reverb.output"
 			},
-			
 			{
 				name = "calculate_wet"
 				input_execute = "1"
@@ -2035,7 +1910,6 @@
 				input1 = "@mult_wet.output"
 				input2 = "1"
 			},
-			
 			{
 				name = "send_voicegraph_source_reverb_wet"
 				input_execute = "1"
@@ -2043,7 +1917,6 @@
 				input_name = "source_wet"
 				input = "@mult_source_wet.output"
 			},
-			
 			{
 				name = "send_voicegraph_dsp_preset"
 				input_execute = "@public.override_dsp_preset"
@@ -2051,7 +1924,6 @@
 				input_name = "RoomDSP"
 				input_dsp_preset_name = "@public.dsp_preset"
 			},
-			
 			{
 				name = "send_eq_occlusion"
 				input_execute = "1"
@@ -2059,7 +1931,6 @@
 				input_name = "eq_occlusion"
 				input = "@mult_occlusion_frequency_scale.output"
 			},
-			
 			{
 				name = "send_eq_occlusion_mix"
 				input_execute = "1"
@@ -2067,7 +1938,6 @@
 				input_name = "eq_occlusion_mix"
 				input = "@get_occlusion_intensity_value.output"
 			},
-			
 			{
 				name = "send_distance_effect_mix"
 				input_execute = "1"
@@ -2075,7 +1945,6 @@
 				input_name = "distance_effect_mix"
 				input = "@public.distance_effect_mix"
 			},
-			
 			{
 				name = "calculate_source_listener_angle"
 				operator = "math_calc_angle_from_3_vec3"
@@ -2084,7 +1953,6 @@
 				input_position_01 = "@globals.output_listener_front"
 				input_position_02 = "@final_position.output"
 			},
-			
 			{
 				name = "send_voicegraph_ang_y"
 				input_execute = "1"
@@ -2092,21 +1960,18 @@
 				input_name = "ang_y"
 				input = "@calculate_source_listener_angle.output"
 			},
-			
 			{
 				name = "set_voice_position"
 				input_execute = "1"
 				operator = "sos_set_voice_position"
 				input_position = "@final_position.output"
 			},
-			
 			{
 				name = "send_voicegraph_unfiltered_stereo"
 				operator = "vmix_voicegraph_input"
 				input_name = "unfiltered_stereo"
 				input = "@time_unfiltered_stereo_mapping_curve_mult.output"
 			},
-			
 			{
 				name = "send_voicegraph_steamaudio_relative_position"
 				operator = "vmix_voicegraph_input"
@@ -2114,7 +1979,6 @@
 				input_name = "steamaudio_relative_position"
 				input = "0"
 			},
-			
 			{
 				name = "occlusion_interval_timer"
 				operator = "util_interval_timer"
@@ -2122,7 +1986,6 @@
 				input_start = "1.000000"
 				output_interval_elapsed = "1.000000"
 			},
-			
 			{
 				name = "time_mixlayer_amount_curve"
 				operator = "math_curve_2d"
@@ -2133,7 +1996,6 @@
 				public_field_name = "public.time_mixlayer_amount_curve"
 				output = "0.0"
 			},
-			
 			{
 				name = "soundmixer_set_mixlayer_amount"
 				operator = "soundmixer_set_mixlayer_amount"
@@ -2141,7 +2003,6 @@
 				input = "@time_mixlayer_amount_curve.output"
 				mixlayer = "@public.set_mixlayer_layer"
 			},
-			
 			{
 				name = "calc_keepalive_terminate"
 				operator = "math_float"
@@ -2149,7 +2010,6 @@
 				input2 = "@keepalive.output"
 				input1 = "@public.keepalive"
 			},
-			
 			{
 				name = "velocity_seek"
 				operator = "math_filter_float"
@@ -2158,7 +2018,6 @@
 				input_reset = "1"
 				input = "@public.velocity_magnitude"
 			},
-			
 			{
 				name = "send_use_velocity_eq"
 				input_execute = "1"
@@ -2166,28 +2025,24 @@
 				input_name = "velocity_eq_enable.Input"
 				input = "@public.use_velocity_eq"
 			},
-			
 			{
 				name = "send_velocity_to_vmix"
 				operator = "vmix_voicegraph_input"
 				input_name = "velocity.Input"
 				input = "@velocity_seek.output"
 			},
-			
 			{
 				name = "keepalive"
 				operator = "math_float"
 				apply = "add"
 				input1 = "@public.keepalive"
 			},
-			
 			{
 				name = "keepalive_count"
 				operator = "ctrl_switch_float"
 				input_switch = "@calc_keepalive_terminate.output"
 				input2 = "@keepalive_accumulate.output"
 			},
-			
 			{
 				name = "keepalive_accumulate"
 				operator = "math_float"
@@ -2195,7 +2050,6 @@
 				input2 = "1"
 				input1 = "@keepalive_count.output"
 			},
-			
 			{
 				name = "keepalive_calculate_die"
 				operator = "math_float"
@@ -2203,7 +2057,6 @@
 				input2 = "10"
 				input1 = "@keepalive_accumulate.output"
 			},
-			
 			{
 				name = "keepalive_play"
 				operator = "math_float"
@@ -2220,863 +2073,863 @@
 		{
 			soundmixer_set_mixlayer_amount = 
 			{
-				x = 2070.000000
-				y = 3170.000000
+				x = 2070.0
+				y = 3170.0
 			}
 			_builtins = 
 			{
-				x = 0.000000
-				y = 158.000000
+				x = 0.0
+				y = 158.0
 			}
 			public = 
 			{
-				x = -1070.000000
-				y = 1470.000000
+				x = -1070.0
+				y = 1470.0
 			}
 			mixer = 
 			{
-				x = 1134.000000
-				y = 334.000000
+				x = 1134.0
+				y = 334.0
 			}
 			globals = 
 			{
-				x = 0.000000
-				y = 1114.000000
+				x = 0.0
+				y = 1114.0
 			}
 			source_info = 
 			{
-				x = 0.000000
-				y = 1506.000000
+				x = 0.0
+				y = 1506.0
 			}
 			use_entity_for_block = 
 			{
-				x = 1134.000000
-				y = 3548.000000
+				x = 1134.0
+				y = 3548.0
 			}
 			get_entity_info = 
 			{
-				x = 1010.000000
-				y = 3460.000000
+				x = 1010.0
+				y = 3460.0
 			}
 			soundevent_limit = 
 			{
-				x = 1134.000000
-				y = 7838.000000
+				x = 1134.0
+				y = 7838.0
 			}
 			entity_is_player_add = 
 			{
-				x = 2268.000000
-				y = 158.000000
+				x = 2268.0
+				y = 158.0
 			}
 			entity_is_player = 
 			{
-				x = 2954.000000
-				y = 158.000000
+				x = 2954.0
+				y = 158.0
 			}
 			position_base = 
 			{
-				x = 2268.000000
-				y = 1506.000000
+				x = 2268.0
+				y = 1506.0
 			}
 			position_offset_relative = 
 			{
-				x = 1134.000000
-				y = 1506.000000
+				x = 1134.0
+				y = 1506.0
 			}
 			position_offset = 
 			{
-				x = 2954.000000
-				y = 1506.000000
+				x = 2954.0
+				y = 1506.0
 			}
 			randomize_position_input = 
 			{
-				x = 6090.000000
-				y = 5980.000000
+				x = 6090.0
+				y = 5980.0
 			}
 			randomize_position = 
 			{
-				x = 6692.000000
-				y = 3548.000000
+				x = 6692.0
+				y = 3548.0
 			}
 			uiposition_elements = 
 			{
-				x = 1134.000000
-				y = 724.000000
+				x = 1134.0
+				y = 724.0
 			}
 			uiposition_left = 
 			{
-				x = 2268.000000
-				y = 334.000000
+				x = 2268.0
+				y = 334.0
 			}
 			uiposition_forward = 
 			{
-				x = 2268.000000
-				y = 724.000000
+				x = 2268.0
+				y = 724.0
 			}
 			uiposition_up = 
 			{
-				x = 2268.000000
-				y = 1114.000000
+				x = 2268.0
+				y = 1114.0
 			}
 			uiposition_calc_step = 
 			{
-				x = 2954.000000
-				y = 1114.000000
+				x = 2954.0
+				y = 1114.0
 			}
 			uiposition_calc = 
 			{
-				x = 3682.000000
-				y = 1506.000000
+				x = 3682.0
+				y = 1506.0
 			}
 			final_position = 
 			{
-				x = 7182.000000
-				y = 1506.000000
+				x = 7182.0
+				y = 1506.0
 			}
 			distance_to_source = 
 			{
-				x = 7672.000000
-				y = 1114.000000
+				x = 7672.0
+				y = 1114.0
 			}
 			multiplied_distance = 
 			{
-				x = 8400.000000
-				y = 724.000000
+				x = 8400.0
+				y = 724.0
 			}
 			soundevent_block_other = 
 			{
-				x = 1134.000000
-				y = 4084.000000
+				x = 1134.0
+				y = 4084.0
 			}
 			test_soundevent_block = 
 			{
-				x = 7672.000000
-				y = 3548.000000
+				x = 7672.0
+				y = 3548.0
 			}
 			set_soundevent_block = 
 			{
-				x = 7672.000000
-				y = 1896.000000
+				x = 7672.0
+				y = 1896.0
 			}
 			get_event_info = 
 			{
-				x = 620.000000
-				y = 3710.000000
+				x = 620.0
+				y = 3710.0
 			}
 			expired_time_raw = 
 			{
-				x = 1134.000000
-				y = 8158.000000
+				x = 1134.0
+				y = 8158.0
 			}
 			use_expired_time = 
 			{
-				x = 1134.000000
-				y = 9070.000000
+				x = 1134.0
+				y = 9070.0
 			}
 			expired_time = 
 			{
-				x = 2268.000000
-				y = 7308.000000
+				x = 2268.0
+				y = 7308.0
 			}
 			event_stopped = 
 			{
-				x = 2954.000000
-				y = 5980.000000
+				x = 2954.0
+				y = 5980.0
 			}
 			fade_time = 
 			{
-				x = 2954.000000
-				y = 4386.000000
+				x = 2954.0
+				y = 4386.0
 			}
 			frame_count = 
 			{
-				x = 0.000000
-				y = 10000.000000
+				x = 0.0
+				y = 10000.0
 			}
 			first_frame = 
 			{
-				x = 1134.000000
-				y = 10000.000000
+				x = 1134.0
+				y = 10000.0
 			}
 			is_tagged_1p_sound = 
 			{
-				x = 1134.000000
-				y = 8316.000000
+				x = 1134.0
+				y = 8316.0
 			}
 			should_start_soundevent_list = 
 			{
-				x = 2268.000000
-				y = 5980.000000
+				x = 2268.0
+				y = 5980.0
 			}
 			start_soundevent_list = 
 			{
-				x = 2954.000000
-				y = 3548.000000
+				x = 2954.0
+				y = 3548.0
 			}
 			calc_doppler = 
 			{
-				x = 7672.000000
-				y = 1506.000000
+				x = 7672.0
+				y = 1506.0
 			}
 			doppler_filter = 
 			{
-				x = 8400.000000
-				y = 1896.000000
+				x = 8400.0
+				y = 1896.0
 			}
 			dsp_bypass_off = 
 			{
-				x = 1134.000000
-				y = 0.000000
+				x = 1134.0
+				y = 0.0
 			}
 			set_builtins = 
 			{
-				x = 2268.000000
-				y = 0.000000
+				x = 2268.0
+				y = 0.0
 			}
 			set_builtins_dsp_bypass = 
 			{
-				x = 1134.000000
-				y = 9580.000000
+				x = 1134.0
+				y = 9580.0
 			}
 			convar_use_baked_occlusion = 
 			{
-				x = 0.000000
-				y = 8438.000000
+				x = 0.0
+				y = 8438.0
 			}
 			use_baked_occlusion = 
 			{
-				x = 1134.000000
-				y = 8438.000000
+				x = 1134.0
+				y = 8438.0
 			}
 			should_recalculate_baked_occlusion = 
 			{
-				x = 2268.000000
-				y = 7838.000000
+				x = 2268.0
+				y = 7838.0
 			}
 			params_steamaudio_source = 
 			{
-				x = 2954.000000
-				y = 4084.000000
+				x = 2954.0
+				y = 4084.0
 			}
 			occlusion_path_ratio = 
 			{
-				x = 3682.000000
-				y = 5714.000000
+				x = 3682.0
+				y = 5714.0
 			}
 			occlusion_path_curve = 
 			{
-				x = 4676.000000
-				y = 6528.000000
+				x = 4676.0
+				y = 6528.0
 			}
 			occlusion_execute = 
 			{
-				x = 1134.000000
-				y = 8596.000000
+				x = 1134.0
+				y = 8596.0
 			}
 			calculate_occlusion = 
 			{
-				x = 7672.000000
-				y = 5714.000000
+				x = 7672.0
+				y = 5714.0
 			}
 			mixer_trigger = 
 			{
-				x = 18242.000000
-				y = 1114.000000
+				x = 18242.0
+				y = 1114.0
 			}
 			speakers_spatialize_rear_scale = 
 			{
-				x = 0.000000
-				y = 724.000000
+				x = 0.0
+				y = 724.0
 			}
 			speakers_spatialize = 
 			{
-				x = 8400.000000
-				y = 1114.000000
+				x = 8400.0
+				y = 1114.0
 			}
 			is_retrigger_enabled = 
 			{
-				x = 1134.000000
-				y = 9422.000000
+				x = 1134.0
+				y = 9422.0
 			}
 			should_start_vsnd = 
 			{
-				x = 2268.000000
-				y = 8158.000000
+				x = 2268.0
+				y = 8158.0
 			}
 			get_current_roomdsp_effect = 
 			{
-				x = 0.000000
-				y = 334.000000
+				x = 0.0
+				y = 334.0
 			}
 			get_source_dsp_effect = 
 			{
-				x = 9310.000000
-				y = 1114.000000
+				x = 9310.0
+				y = 1114.0
 			}
 			mult_source_event_wet = 
 			{
-				x = 10458.000000
-				y = 334.000000
+				x = 10458.0
+				y = 334.0
 			}
 			mult_source_wet = 
 			{
-				x = 11046.000000
-				y = 158.000000
+				x = 11046.0
+				y = 158.0
 			}
 			check_restrict_source_reverb = 
 			{
-				x = 10458.000000
-				y = 1896.000000
+				x = 10458.0
+				y = 1896.0
 			}
 			get_dsp_mix_override = 
 			{
-				x = 9310.000000
-				y = 158.000000
+				x = 9310.0
+				y = 158.0
 			}
 			mult_dsp_mod = 
 			{
-				x = 10458.000000
-				y = 158.000000
+				x = 10458.0
+				y = 158.0
 			}
 			mult_wet = 
 			{
-				x = 11046.000000
-				y = 0.000000
+				x = 11046.0
+				y = 0.0
 			}
 			mult_occlusion_frequency_scale = 
 			{
-				x = 8400.000000
-				y = 3548.000000
+				x = 8400.0
+				y = 3548.0
 			}
 			if_occlusion_is_greater_than_one = 
 			{
-				x = 9310.000000
-				y = 3548.000000
+				x = 9310.0
+				y = 3548.0
 			}
 			get_occlusion_intensity_value = 
 			{
-				x = 10458.000000
-				y = 3548.000000
+				x = 10458.0
+				y = 3548.0
 			}
 			wet_crossfade = 
 			{
-				x = 12292.000000
-				y = 158.000000
+				x = 12292.0
+				y = 158.0
 			}
 			ducking_crossfade = 
 			{
-				x = 1134.000000
-				y = 158.000000
+				x = 1134.0
+				y = 158.0
 			}
 			allvoices_input_level = 
 			{
-				x = 12908.000000
-				y = 724.000000
+				x = 12908.0
+				y = 724.0
 			}
 			submix_allvoices_send = 
 			{
-				x = 13370.000000
-				y = 724.000000
+				x = 13370.0
+				y = 724.0
 			}
 			reverb_input_level = 
 			{
-				x = 12908.000000
-				y = 0.000000
+				x = 12908.0
+				y = 0.0
 			}
 			submix_reverb_send = 
 			{
-				x = 13370.000000
-				y = 0.000000
+				x = 13370.0
+				y = 0.0
 			}
 			ducking_input_level = 
 			{
-				x = 12908.000000
-				y = 158.000000
+				x = 12908.0
+				y = 158.0
 			}
 			submix_ducking_bypass_voices_send = 
 			{
-				x = 13370.000000
-				y = 158.000000
+				x = 13370.0
+				y = 158.0
 			}
 			ducking_reverb_input_level = 
 			{
-				x = 12908.000000
-				y = 334.000000
+				x = 12908.0
+				y = 334.0
 			}
 			submix_ducking_bypass_reverb_send = 
 			{
-				x = 13370.000000
-				y = 334.000000
+				x = 13370.0
+				y = 334.0
 			}
 			submix_dsp_bypass_send = 
 			{
-				x = 1134.000000
-				y = 9702.000000
+				x = 1134.0
+				y = 9702.0
 			}
 			in_retrigger_radius = 
 			{
-				x = 8400.000000
-				y = 1506.000000
+				x = 8400.0
+				y = 1506.0
 			}
 			retrigger_finite = 
 			{
-				x = 1134.000000
-				y = 8912.000000
+				x = 1134.0
+				y = 8912.0
 			}
 			retrigger_count_reached = 
 			{
-				x = 19250.000000
-				y = 4386.000000
+				x = 19250.0
+				y = 4386.0
 			}
 			retrigger_count_stop = 
 			{
-				x = 19838.000000
-				y = 6918.000000
+				x = 19838.0
+				y = 6918.0
 			}
 			out_of_retrigger_radius = 
 			{
-				x = 1134.000000
-				y = 6528.000000
+				x = 1134.0
+				y = 6528.0
 			}
 			does_not_retrigger_sound = 
 			{
-				x = 20300.000000
-				y = 5714.000000
+				x = 20300.0
+				y = 5714.0
 			}
 			time_since_last_trigger = 
 			{
-				x = 22302.000000
-				y = 4084.000000
+				x = 22302.0
+				y = 4084.0
 			}
 			retrigger_interval_execute = 
 			{
-				x = 22764.000000
-				y = 1896.000000
+				x = 22764.0
+				y = 1896.0
 			}
 			retrigger_interval_random = 
 			{
-				x = 23226.000000
-				y = 1896.000000
+				x = 23226.0
+				y = 1896.0
 			}
 			retrigger_interval_calc = 
 			{
-				x = 23710.000000
-				y = 1780.000000
+				x = 23710.0
+				y = 1780.0
 			}
 			retrigger_interval_is_zero = 
 			{
-				x = 23688.000000
-				y = 1506.000000
+				x = 23688.0
+				y = 1506.0
 			}
 			retrigger_sound = 
 			{
-				x = 24150.000000
-				y = 3548.000000
+				x = 24150.0
+				y = 3548.0
 			}
 			retrigger_count = 
 			{
-				x = 24612.000000
-				y = 3548.000000
+				x = 24612.0
+				y = 3548.0
 			}
 			last_trigger_time = 
 			{
-				x = 24612.000000
-				y = 4084.000000
+				x = 24612.0
+				y = 4084.0
 			}
 			start_retrigger = 
 			{
-				x = 24612.000000
-				y = 1896.000000
+				x = 24612.0
+				y = 1896.0
 			}
 			calc_event_finished = 
 			{
-				x = 20700.000000
-				y = 4000.000000
+				x = 20700.0
+				y = 4000.0
 			}
 			calc_event_finished_or_stopped = 
 			{
-				x = 21240.000000
-				y = 3500.000000
+				x = 21240.0
+				y = 3500.0
 			}
 			event_terminator = 
 			{
-				x = 21790.000000
-				y = 2100.000000
+				x = 21790.0
+				y = 2100.0
 			}
 			volume_random_variance = 
 			{
-				x = 1134.000000
-				y = 5714.000000
+				x = 1134.0
+				y = 5714.0
 			}
 			volume_random_add = 
 			{
-				x = 2268.000000
-				y = 1896.000000
+				x = 2268.0
+				y = 1896.0
 			}
 			pitch_random_variance = 
 			{
-				x = 1134.000000
-				y = 6370.000000
+				x = 1134.0
+				y = 6370.0
 			}
 			pitch_random_add = 
 			{
-				x = 2268.000000
-				y = 4084.000000
+				x = 2268.0
+				y = 4084.0
 			}
 			volume_volume_linear_mult = 
 			{
-				x = 2954.000000
-				y = 724.000000
+				x = 2954.0
+				y = 724.0
 			}
 			pitch_pitch_linear_mult = 
 			{
-				x = 2954.000000
-				y = 1896.000000
+				x = 2954.0
+				y = 1896.0
 			}
 			get_vsnd_track_01 = 
 			{
-				x = -170.000000
-				y = 3340.000000
+				x = -170.0
+				y = 3340.0
 			}
 			distance_volume_mapping_curve = 
 			{
-				x = 9310.000000
-				y = 334.000000
+				x = 9310.0
+				y = 334.0
 			}
 			distance_volume_mapping_curve_mult = 
 			{
-				x = 10458.000000
-				y = 0.000000
+				x = 10458.0
+				y = 0.0
 			}
 			distance_unfiltered_stereo_mapping_curve = 
 			{
-				x = 9310.000000
-				y = 1506.000000
+				x = 9310.0
+				y = 1506.0
 			}
 			distance_unfiltered_stereo_mapping_curve_mult = 
 			{
-				x = 10458.000000
-				y = 4084.000000
+				x = 10458.0
+				y = 4084.0
 			}
 			fadetime_volume_mapping_curve = 
 			{
-				x = 3682.000000
-				y = 1896.000000
+				x = 3682.0
+				y = 1896.0
 			}
 			fadetime_volume_mapping_curve_mult = 
 			{
-				x = 11046.000000
-				y = 334.000000
+				x = 11046.0
+				y = 334.0
 			}
 			time_volume_mapping_curve = 
 			{
-				x = 480.000000
-				y = 6790.000000
+				x = 480.0
+				y = 6790.0
 			}
 			time_volume_mapping_curve_mult = 
 			{
-				x = 11662.000000
-				y = 4084.000000
+				x = 11662.0
+				y = 4084.0
 			}
 			impact_speed_input_volume_mapping_curve = 
 			{
-				x = 1170.000000
-				y = 5940.000000
+				x = 1170.0
+				y = 5940.0
 			}
 			impact_speed_input_volume_mapping_curve_mult = 
 			{
-				x = 12292.000000
-				y = 4084.000000
+				x = 12292.0
+				y = 4084.0
 			}
 			distance_pitch_mapping_curve = 
 			{
-				x = 9310.000000
-				y = 724.000000
+				x = 9310.0
+				y = 724.0
 			}
 			distance_pitch_mapping_curve_mult = 
 			{
-				x = 10458.000000
-				y = 1506.000000
+				x = 10458.0
+				y = 1506.0
 			}
 			time_unfiltered_stereo_mapping_curve = 
 			{
-				x = 1134.000000
-				y = 7308.000000
+				x = 1134.0
+				y = 7308.0
 			}
 			time_unfiltered_stereo_mapping_curve_mult = 
 			{
-				x = 11046.000000
-				y = 5980.000000
+				x = 11046.0
+				y = 5980.0
 			}
 			mult_pitch_doppler = 
 			{
-				x = 11046.000000
-				y = 3548.000000
+				x = 11046.0
+				y = 3548.0
 			}
 			get_volume_convar = 
 			{
-				x = 1750.000000
-				y = 4430.000000
+				x = 1750.0
+				y = 4430.0
 			}
 			mult_mixer_volume = 
 			{
-				x = 4470.000000
-				y = 2410.000000
+				x = 4470.0
+				y = 2410.0
 			}
 			volume_fan = 
 			{
-				x = 13370.000000
-				y = 4084.000000
+				x = 13370.0
+				y = 4084.0
 			}
 			volume_fan_mult = 
 			{
-				x = 14280.000000
-				y = 3548.000000
+				x = 14280.0
+				y = 3548.0
 			}
 			volume_fan_scale = 
 			{
-				x = 15190.000000
-				y = 4386.000000
+				x = 15190.0
+				y = 4386.0
 			}
 			speaker_spatialize_lerp = 
 			{
-				x = 0.000000
-				y = 8754.000000
+				x = 0.0
+				y = 8754.0
 			}
 			speaker_spatialize_mult = 
 			{
-				x = 1134.000000
-				y = 8754.000000
+				x = 1134.0
+				y = 8754.0
 			}
 			volume_fan_mix = 
 			{
-				x = 16212.000000
-				y = 6370.000000
+				x = 16212.0
+				y = 6370.0
 			}
 			get_vsnd_info = 
 			{
-				x = 1134.000000
-				y = 1896.000000
+				x = 1134.0
+				y = 1896.0
 			}
 			vsnd_not_ready = 
 			{
-				x = 2268.000000
-				y = 3548.000000
+				x = 2268.0
+				y = 3548.0
 			}
 			looped_event_terminator = 
 			{
-				x = 3980.000000
-				y = 4140.000000
+				x = 3980.0
+				y = 4140.0
 			}
 			stop_elapsed_time_less_than_fade_curve = 
 			{
-				x = 4676.000000
-				y = 3548.000000
+				x = 4676.0
+				y = 3548.0
 			}
 			should_continue_playing = 
 			{
-				x = 5544.000000
-				y = 1896.000000
+				x = 5544.0
+				y = 1896.0
 			}
 			distance_volume_less_than_zero = 
 			{
-				x = 10458.000000
-				y = 724.000000
+				x = 10458.0
+				y = 724.0
 			}
 			distance_volume_greater_than_zero = 
 			{
-				x = 10458.000000
-				y = 1114.000000
+				x = 10458.0
+				y = 1114.0
 			}
 			should_continue_playing_with_volume_on = 
 			{
-				x = 11046.000000
-				y = 1114.000000
+				x = 11046.0
+				y = 1114.0
 			}
 			culling_and_unstopped = 
 			{
-				x = 11120.000000
-				y = 620.000000
+				x = 11120.0
+				y = 620.0
 			}
 			not_culling_and_unstopped = 
 			{
-				x = 11130.000000
-				y = 1450.000000
+				x = 11130.0
+				y = 1450.0
 			}
 			culling_think_time_switch = 
 			{
-				x = 11662.000000
-				y = 1114.000000
+				x = 11662.0
+				y = 1114.0
 			}
 			set_culling_dependency = 
 			{
-				x = 12420.000000
-				y = 820.000000
+				x = 12420.0
+				y = 820.0
 			}
 			switch_start_mode = 
 			{
-				x = 11662.000000
-				y = 1506.000000
+				x = 11662.0
+				y = 1506.0
 			}
 			loading_override_start = 
 			{
-				x = 12360.000000
-				y = 3440.000000
+				x = 12360.0
+				y = 3440.0
 			}
 			switch_fade_time = 
 			{
-				x = 11046.000000
-				y = 1896.000000
+				x = 11046.0
+				y = 1896.0
 			}
 			start_vsnd = 
 			{
-				x = 14940.000000
-				y = 4810.000000
+				x = 14940.0
+				y = 4810.0
 			}
 			send_voicegraph_source_dsp = 
 			{
-				x = 11046.000000
-				y = 4084.000000
+				x = 11046.0
+				y = 4084.0
 			}
 			calculate_wet = 
 			{
-				x = 11662.000000
-				y = 0.000000
+				x = 11662.0
+				y = 0.0
 			}
 			send_voicegraph_source_reverb_wet = 
 			{
-				x = 11662.000000
-				y = 158.000000
+				x = 11662.0
+				y = 158.0
 			}
 			send_voicegraph_dsp_preset = 
 			{
-				x = 1134.000000
-				y = 7698.000000
+				x = 1134.0
+				y = 7698.0
 			}
 			send_eq_occlusion = 
 			{
-				x = 9310.000000
-				y = 1896.000000
+				x = 9310.0
+				y = 1896.0
 			}
 			send_eq_occlusion_mix = 
 			{
-				x = 11046.000000
-				y = 4386.000000
+				x = 11046.0
+				y = 4386.0
 			}
 			send_distance_effect_mix = 
 			{
-				x = 1134.000000
-				y = 9860.000000
+				x = 1134.0
+				y = 9860.0
 			}
 			calculate_source_listener_angle = 
 			{
-				x = 7672.000000
-				y = 724.000000
+				x = 7672.0
+				y = 724.0
 			}
 			send_voicegraph_ang_y = 
 			{
-				x = 8400.000000
-				y = 334.000000
+				x = 8400.0
+				y = 334.0
 			}
 			set_voice_position = 
 			{
-				x = 7672.000000
-				y = 334.000000
+				x = 7672.0
+				y = 334.0
 			}
 			send_voicegraph_unfiltered_stereo = 
 			{
-				x = 11662.000000
-				y = 5980.000000
+				x = 11662.0
+				y = 5980.0
 			}
 			send_voicegraph_steamaudio_relative_position = 
 			{
-				x = 0.000000
-				y = 0.000000
+				x = 0.0
+				y = 0.0
 			}
 			occlusion_interval_timer = 
 			{
-				x = 1134.000000
-				y = 9228.000000
+				x = 1134.0
+				y = 9228.0
 			}
 			time_mixlayer_amount_curve = 
 			{
-				x = 980.000000
-				y = 3010.000000
+				x = 980.0
+				y = 3010.0
 			}
 			mixlayer_keepalive = 
 			{
-				x = 2110.000000
-				y = 2340.000000
+				x = 2110.0
+				y = 2340.0
 			}
 			calc_mixlayer_terminate = 
 			{
-				x = 1540.000000
-				y = 2580.000000
+				x = 1540.0
+				y = 2580.0
 			}
 			math_float_eval = 
 			{
-				x = 1480.000000
-				y = 2440.000000
+				x = 1480.0
+				y = 2440.0
 			}
 			velocity_volume_curve = 
 			{
-				x = 2390.000000
-				y = 2050.000000
+				x = 2390.0
+				y = 2050.0
 			}
 			velocity_seek = 
 			{
-				x = 1370.000000
-				y = 2140.000000
+				x = 1370.0
+				y = 2140.0
 			}
 			velocity_seek_first_frame_filter = 
 			{
-				x = 1570.000000
-				y = 2390.000000
+				x = 1570.0
+				y = 2390.0
 			}
 			random_delay = 
 			{
-				x = 16720.000000
-				y = 4650.000000
+				x = 16720.0
+				y = 4650.0
 			}
 			keepalive = 
 			{
-				x = -200.000000
-				y = 3080.000000
+				x = -200.0
+				y = 3080.0
 			}
 			send_use_velocity_eq = 
 			{
-				x = 1134.000000
-				y = 10208.000000
+				x = 1134.0
+				y = 10208.0
 			}
 			send_velocity_to_vmix = 
 			{
-				x = 2268.000000
-				y = 5798.000000
+				x = 2268.0
+				y = 5798.0
 			}
 			keepalive_control = 
 			{
-				x = 1030.000000
-				y = 2500.000000
+				x = 1030.0
+				y = 2500.0
 			}
 			calc_keepalive_terminate = 
 			{
-				x = -70.000000
-				y = 2820.000000
+				x = -70.0
+				y = 2820.0
 			}
 			keepalive_accumulate = 
 			{
-				x = 260.000000
-				y = 2910.000000
+				x = 260.0
+				y = 2910.0
 			}
 			keepalive_count = 
 			{
-				x = 50.000000
-				y = 2580.000000
+				x = 50.0
+				y = 2580.0
 			}
 			keepalive_calculate_die = 
 			{
-				x = 13950.000000
-				y = 5150.000000
+				x = 13950.0
+				y = 5150.0
 			}
 			keepalive_play = 
 			{

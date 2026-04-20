@@ -4,7 +4,7 @@
 	{
 		type = "container_oneshot_test"
 		vsnd_files = "sounds/containers/test_fm.vsnd"
-		volume = 0.200000
+		volume = 0.2
 	}
 	containers.test.constant = 
 	{
@@ -26,6 +26,6 @@
 		type = "container_env_test"
 		vsnd_files = "sounds/common/noise.vsnd"
 		vsnd_env = "sounds/containers/counting.vsnd"
-		vsnd_duration = 8.000000
+		vsnd_duration = 8.0
 	}
 }

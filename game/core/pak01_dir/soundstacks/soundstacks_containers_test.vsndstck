@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -27,25 +26,21 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "sample_env_curve"
 				operator = "container_sample_curve"
 				input_time = "@get_event_info.output_elapsed_time"
 				input_container = "@public.vsnd_env"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@sample_env_curve.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -62,7 +57,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -85,18 +79,15 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@public.volume"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -113,7 +104,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -137,22 +127,19 @@
 					index_override = 
 					{
 						data_type = "float"
-						value = -1.000000
+						value = -1.0
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@public.volume"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"

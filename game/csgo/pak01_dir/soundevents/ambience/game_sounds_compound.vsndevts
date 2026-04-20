@@ -5,92 +5,52 @@
 		type = "csgo_mega"
 		mixgroup = "Ambient"
 		use_distance_unfiltered_stereo_mapping_curve = true
-		volume = 0.200000
+		volume = 0.2
 		use_time_volume_mapping_curve = true
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = "sounds/ambient/common/wind/wind_tunnel1.vsnd"
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -98,17 +58,17 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Ambient"
-		volume = 0.300000
-		volume_random_min = -0.100000
-		volume_random_max = 0.150000
-		pitch_random_min = -0.200000
+		volume = 0.3
+		volume_random_min = -0.1
+		volume_random_max = 0.15
+		pitch_random_min = -0.2
 		enable_retrigger = true
-		retrigger_interval_min = 6.000000
-		retrigger_interval_max = 12.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 6.0
+		retrigger_interval_max = 12.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = 
 		[
 			"sounds/ambient/common/materials/rock1.vsnd",
@@ -117,65 +77,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -183,17 +113,17 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Ambient"
-		volume = 0.300000
-		volume_random_min = -0.100000
-		volume_random_max = 0.150000
-		pitch_random_min = -0.200000
+		volume = 0.3
+		volume_random_min = -0.1
+		volume_random_max = 0.15
+		pitch_random_min = -0.2
 		enable_retrigger = false
-		retrigger_interval_min = 0.000000
-		retrigger_interval_max = 0.000000
-		randomize_position_min_radius = 0.000000
-		randomize_position_max_radius = 0.000000
+		retrigger_interval_min = 0.0
+		retrigger_interval_max = 0.0
+		randomize_position_min_radius = 0.0
+		randomize_position_max_radius = 0.0
 		use_time_volume_mapping_curve = true
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = 
 		[
 			"sounds/ambient/common/materials/rock1.vsnd",
@@ -202,65 +132,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -268,83 +168,53 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = 0.000000
-		volume_random_max = 0.000000
-		pitch_random_min = 0.000000
+		volume = 1.0
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_min = 0.0
 		enable_retrigger = false
-		retrigger_interval_min = 0.000000
-		retrigger_interval_max = 0.000000
-		randomize_position_min_radius = 0.000000
-		randomize_position_max_radius = 0.000000
+		retrigger_interval_min = 0.0
+		retrigger_interval_max = 0.0
+		randomize_position_min_radius = 0.0
+		randomize_position_max_radius = 0.0
 		use_time_volume_mapping_curve = true
 		enable_child_events = true
 		dsp_preset = "reverb_21_outsideStreet"
 		set_child_position = false
 		override_dsp_preset = true
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = "sounds/common/null.vsnd"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -359,38 +229,28 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = -0.950000
-		volume_random_max = -0.900000
-		pitch_random_min = -0.200000
+		volume = 1.0
+		volume_random_min = -0.95
+		volume_random_max = -0.9
+		pitch_random_min = -0.2
 		enable_retrigger = true
-		retrigger_interval_min = 11.000000
-		retrigger_interval_max = 25.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
-		pitch_random_max = 0.100000
+		retrigger_interval_min = 11.0
+		retrigger_interval_max = 25.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
+		pitch_random_max = 0.1
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = "sounds/ambient/common/wind/smallgust2.vsnd"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -398,17 +258,17 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = -0.960000
-		volume_random_max = -0.930000
-		pitch_random_min = -0.200000
+		volume = 1.0
+		volume_random_min = -0.96
+		volume_random_max = -0.93
+		pitch_random_min = -0.2
 		enable_retrigger = true
-		retrigger_interval_min = 15.000000
-		retrigger_interval_max = 28.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 15.0
+		retrigger_interval_max = 28.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = 
 		[
 			"sounds/ambient/common/materials/metal_rattle1.vsnd",
@@ -418,23 +278,13 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -442,18 +292,18 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = -0.920000
-		volume_random_max = -0.800000
-		pitch_random_min = -0.400000
+		volume = 1.0
+		volume_random_min = -0.92
+		volume_random_max = -0.8
+		pitch_random_min = -0.4
 		enable_retrigger = true
-		retrigger_interval_min = 15.000000
-		retrigger_interval_max = 35.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 15.0
+		retrigger_interval_max = 35.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = 
 		[
 			"sounds/ambient/common/vehicles/plane1.vsnd",
@@ -462,65 +312,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -528,17 +348,17 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = -0.900000
-		volume_random_max = -0.800000
-		pitch_random_min = -0.400000
+		volume = 1.0
+		volume_random_min = -0.9
+		volume_random_max = -0.8
+		pitch_random_min = -0.4
 		enable_retrigger = true
-		retrigger_interval_min = 15.000000
-		retrigger_interval_max = 25.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 15.0
+		retrigger_interval_max = 25.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = 
 		[
 			"sounds/ambient/common/vehicles/car1.vsnd",
@@ -546,23 +366,13 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -570,83 +380,53 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = 0.000000
-		volume_random_max = 0.000000
-		pitch_random_min = 0.000000
+		volume = 1.0
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_min = 0.0
 		enable_retrigger = false
-		retrigger_interval_min = 0.000000
-		retrigger_interval_max = 0.000000
-		randomize_position_min_radius = 0.000000
-		randomize_position_max_radius = 0.000000
+		retrigger_interval_min = 0.0
+		retrigger_interval_max = 0.0
+		randomize_position_min_radius = 0.0
+		randomize_position_max_radius = 0.0
 		use_time_volume_mapping_curve = true
 		enable_child_events = true
 		dsp_preset = "reverb_6_largeRoom"
 		set_child_position = false
 		override_dsp_preset = true
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = "sounds/common/null.vsnd"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -665,50 +445,30 @@
 		type = "csgo_mega"
 		mixgroup = "Compound"
 		use_distance_unfiltered_stereo_mapping_curve = true
-		volume = 0.800000
+		volume = 0.8
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = "sounds/ambient/common/tones/garage.vsnd"
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -717,50 +477,30 @@
 		type = "csgo_mega"
 		mixgroup = "Compound"
 		use_distance_unfiltered_stereo_mapping_curve = true
-		volume = 0.200000
+		volume = 0.2
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = "sounds/ambient/common/wind/wind1.vsnd"
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -769,50 +509,30 @@
 		type = "csgo_mega"
 		mixgroup = "Compound"
 		use_distance_unfiltered_stereo_mapping_curve = true
-		volume = 0.300000
+		volume = 0.3
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = "sounds/ambient/common/wind/wind_bass.vsnd"
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -820,17 +540,17 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = -0.900000
-		volume_random_max = -0.800000
-		pitch_random_min = -0.200000
+		volume = 1.0
+		volume_random_min = -0.9
+		volume_random_max = -0.8
+		pitch_random_min = -0.2
 		enable_retrigger = true
-		retrigger_interval_min = 22.000000
-		retrigger_interval_max = 40.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 22.0
+		retrigger_interval_max = 40.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = 
 		[
 			"sounds/ambient/common/water/pipes.vsnd",
@@ -838,23 +558,13 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -862,18 +572,18 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = -0.920000
-		volume_random_max = -0.800000
-		pitch_random_min = -0.100000
+		volume = 1.0
+		volume_random_min = -0.92
+		volume_random_max = -0.8
+		pitch_random_min = -0.1
 		enable_retrigger = true
-		retrigger_interval_min = 1.000000
-		retrigger_interval_max = 4.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
-		pitch_random_max = 0.100000
+		retrigger_interval_min = 1.0
+		retrigger_interval_max = 4.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
+		pitch_random_max = 0.1
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = 
 		[
 			"sounds/ambient/common/animal/flies1.vsnd",
@@ -884,23 +594,13 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = "position_0 dumpster @ ct spawn"
@@ -909,18 +609,18 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = -0.920000
-		volume_random_max = -0.800000
-		pitch_random_min = -0.100000
+		volume = 1.0
+		volume_random_min = -0.92
+		volume_random_max = -0.8
+		pitch_random_min = -0.1
 		enable_retrigger = true
-		retrigger_interval_min = 1.000000
-		retrigger_interval_max = 4.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
-		pitch_random_max = 0.100000
+		retrigger_interval_min = 1.0
+		retrigger_interval_max = 4.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
+		pitch_random_max = 0.1
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = 
 		[
 			"sounds/ambient/common/animal/flies1.vsnd",
@@ -931,23 +631,13 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = "position_1 dumpster @ ct spawn"
@@ -956,18 +646,18 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Compound"
-		volume = 1.000000
-		volume_random_min = -0.900000
-		volume_random_max = -0.700000
-		pitch_random_min = -0.100000
+		volume = 1.0
+		volume_random_min = -0.9
+		volume_random_max = -0.7
+		pitch_random_min = -0.1
 		enable_retrigger = true
-		retrigger_interval_min = 1.000000
-		retrigger_interval_max = 4.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
-		pitch_random_max = 0.100000
+		retrigger_interval_min = 1.0
+		retrigger_interval_max = 4.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
+		pitch_random_max = 0.1
 		set_child_position = false
-		distance_effect_mix = 0.000000
+		distance_effect_mix = 0.0
 		vsnd_files_track_01 = 
 		[
 			"sounds/ambient/common/animal/flies1.vsnd",
@@ -978,23 +668,13 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		metadata = "position_2 dumpster under compound"

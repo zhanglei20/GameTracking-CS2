@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -111,12 +110,10 @@
 					}
 				}
 			},
-			
 			{
 				name = "source_info"
 				operator = "game_get_source_info"
 			},
-			
 			{
 				name = "soundevent_limit_type_switch"
 				operator = "ctrl_switch_float"
@@ -124,7 +121,6 @@
 				input1 = "-1"
 				input2 = "@public.event_type"
 			},
-			
 			{
 				name = "soundevent_limit"
 				execute_once = "true"
@@ -136,7 +132,6 @@
 				match_substring = "0.000000"
 				match_this_event = "@public.limiter_match_this"
 			},
-			
 			{
 				name = "get_vsnd"
 				operator = "opvar_get_vsnd"
@@ -146,12 +141,10 @@
 				input_use_namespace = "false"
 				array_selection_type = "random_exclusive"
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "pitch_random"
 				operator = "math_randomize_float"
@@ -160,7 +153,6 @@
 				input_rand_min = "@public.pitch_rand_min"
 				input_rand_max = "@public.pitch_rand_max"
 			},
-			
 			{
 				name = "volume_random"
 				operator = "math_randomize_float"
@@ -169,14 +161,12 @@
 				input_rand_min = "@public.volume_rand_min"
 				input_rand_max = "@public.volume_rand_max"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
@@ -187,7 +177,6 @@
 				input_soundlevel = "65.000000"
 				input_event_type = "@public.event_type"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -205,21 +194,18 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@volume_accumulate.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				execute_once = "false"
 				input = "@volume_accumulate.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -243,7 +229,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -349,12 +334,10 @@
 					}
 				}
 			},
-			
 			{
 				name = "source_info"
 				operator = "game_get_source_info"
 			},
-			
 			{
 				name = "soundevent_limit_type_switch"
 				operator = "ctrl_switch_float"
@@ -362,7 +345,6 @@
 				input1 = "-1"
 				input2 = "@public.event_type"
 			},
-			
 			{
 				name = "soundevent_limit"
 				execute_once = "true"
@@ -374,7 +356,6 @@
 				match_substring = "0.000000"
 				match_this_event = "@public.limiter_match_this"
 			},
-			
 			{
 				name = "get_vsnd"
 				operator = "opvar_get_vsnd"
@@ -385,12 +366,10 @@
 				input_use_namespace = "false"
 				array_selection_type = "random_exclusive"
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "pitch_random"
 				operator = "math_randomize_float"
@@ -399,7 +378,6 @@
 				input_rand_min = "@public.pitch_rand_min"
 				input_rand_max = "@public.pitch_rand_max"
 			},
-			
 			{
 				name = "volume_random"
 				operator = "math_randomize_float"
@@ -408,14 +386,12 @@
 				input_rand_min = "@public.volume_rand_min"
 				input_rand_max = "@public.volume_rand_max"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
@@ -426,7 +402,6 @@
 				input_soundlevel = "65.000000"
 				input_event_type = "@public.event_type"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -444,21 +419,18 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@volume_accumulate.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				execute_once = "false"
 				input = "@volume_accumulate.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -482,7 +454,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -635,19 +606,16 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "volume_random"
 				operator = "math_randomize_float"
@@ -656,7 +624,6 @@
 				input_rand_min = "@public.volume_rand_min"
 				input_rand_max = "@public.volume_rand_max"
 			},
-			
 			{
 				name = "soundlevel_random"
 				operator = "math_randomize_float"
@@ -665,7 +632,6 @@
 				input_rand_min = "@public.soundlevel_rand_min"
 				input_rand_max = "@public.soundlevel_rand_max"
 			},
-			
 			{
 				name = "pitch_random"
 				operator = "math_randomize_float"
@@ -674,12 +640,10 @@
 				input_rand_min = "@public.pitch_rand_min"
 				input_rand_max = "@public.pitch_rand_max"
 			},
-			
 			{
 				name = "source_info"
 				operator = "game_get_source_info"
 			},
-			
 			{
 				name = "get_entity_info"
 				operator = "game_entity_info"
@@ -687,14 +651,12 @@
 				input_default_world_position = "@public.position"
 				input_default_local_position = "@globals.output_listener_front"
 			},
-			
 			{
 				name = "distance_to_source"
 				operator = "calc_distance"
 				input_position1 = "@get_entity_info.output_position"
 				input_position2 = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "import_dist_limit"
 				operator = "sos_import_stack"
@@ -711,7 +673,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "soundevent_limit_type_switch"
 				operator = "ctrl_switch_float"
@@ -719,7 +680,6 @@
 				input1 = "-1"
 				input2 = "@public.event_type"
 			},
-			
 			{
 				name = "soundevent_limit"
 				execute_once = "true"
@@ -731,7 +691,6 @@
 				match_substring = "0.000000"
 				match_this_event = "@public.limiter_match_this"
 			},
-			
 			{
 				name = "get_vsnd"
 				operator = "opvar_get_vsnd"
@@ -742,7 +701,6 @@
 				array_selection_type = "random_exclusive"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
@@ -753,7 +711,6 @@
 				input_soundlevel = "@soundlevel_random.output"
 				input_event_type = "@public.event_type"
 			},
-			
 			{
 				name = "occlusion"
 				operator = "calc_occlusion_src1"
@@ -761,7 +718,6 @@
 				input_source_position = "@get_entity_info.output_position"
 				input_listener_position = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "level_apply_mixer"
 				operator = "math_float"
@@ -769,14 +725,12 @@
 				input1 = "@mixer.output_level"
 				input2 = "@soundlevel_random.output"
 			},
-			
 			{
 				name = "volume_falloff"
 				operator = "calc_falloff"
 				input_distance = "@distance_to_source.output"
 				input_level = "@level_apply_mixer.output"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -794,21 +748,18 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@volume_accumulate.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "dsp_emitter"
 				operator = "math_float"
 				apply = "set"
 				input1 = "1.000000"
 			},
-			
 			{
 				name = "dsp_apply_mixer"
 				operator = "math_float"
@@ -816,7 +767,6 @@
 				input1 = "@mixer.output_dsp"
 				input2 = "@dsp_emitter.output"
 			},
-			
 			{
 				name = "dsp_distantDSP"
 				operator = "math_float"
@@ -824,7 +774,6 @@
 				input1 = "1.000000"
 				input2 = "1.000000"
 			},
-			
 			{
 				name = "dsp_apply_distant"
 				operator = "math_float"
@@ -832,7 +781,6 @@
 				input1 = "@dsp_distantDSP.output"
 				input2 = "@dsp_apply_mixer.output"
 			},
-			
 			{
 				name = "speakers_spatialize"
 				operator = "calc_spatialize_speakers"
@@ -843,13 +791,11 @@
 				input_listener_left = "@globals.output_listener_left"
 				input_rear_stereo_scale = "1.000000"
 			},
-			
 			{
 				name = "speaker_volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@volume_accumulate.output"
 			},
-			
 			{
 				name = "speakers_apply_volume"
 				operator = "math_speakers"
@@ -857,7 +803,6 @@
 				input1 = "@speakers_spatialize.output"
 				input2 = "@speaker_volume_fan.output"
 			},
-			
 			{
 				name = "speakers_limit"
 				operator = "math_speakers"
@@ -870,7 +815,6 @@
 				right_rear = "1.000000"
 				input2 = "@speakers_apply_volume.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -894,7 +838,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1015,19 +958,16 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "volume_random"
 				operator = "math_randomize_float"
@@ -1036,7 +976,6 @@
 				input_rand_min = "@public.volume_rand_min"
 				input_rand_max = "@public.volume_rand_max"
 			},
-			
 			{
 				name = "soundlevel_random"
 				operator = "math_randomize_float"
@@ -1045,7 +984,6 @@
 				input_rand_min = "@public.soundlevel_rand_min"
 				input_rand_max = "@public.soundlevel_rand_max"
 			},
-			
 			{
 				name = "pitch_random"
 				operator = "math_randomize_float"
@@ -1054,12 +992,10 @@
 				input_rand_min = "@public.pitch_rand_min"
 				input_rand_max = "@public.pitch_rand_max"
 			},
-			
 			{
 				name = "source_info"
 				operator = "game_get_source_info"
 			},
-			
 			{
 				name = "get_entity_info"
 				operator = "game_entity_info"
@@ -1067,14 +1003,12 @@
 				input_default_world_position = "@public.position"
 				input_default_local_position = "@globals.output_listener_front"
 			},
-			
 			{
 				name = "distance_to_source"
 				operator = "calc_distance"
 				input_position1 = "@get_entity_info.output_position"
 				input_position2 = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "import_dist_limit"
 				operator = "sos_import_stack"
@@ -1091,7 +1025,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "soundevent_limit_type_switch"
 				operator = "ctrl_switch_float"
@@ -1099,7 +1032,6 @@
 				input1 = "-1"
 				input2 = "@public.event_type"
 			},
-			
 			{
 				name = "soundevent_limit"
 				execute_once = "true"
@@ -1111,7 +1043,6 @@
 				match_substring = "0.000000"
 				match_this_event = "@public.limiter_match_this"
 			},
-			
 			{
 				name = "get_vsnd"
 				operator = "opvar_get_vsnd"
@@ -1122,7 +1053,6 @@
 				array_selection_type = "random_exclusive"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
@@ -1133,7 +1063,6 @@
 				input_soundlevel = "@soundlevel_random.output"
 				input_event_type = "@public.event_type"
 			},
-			
 			{
 				name = "occlusion"
 				operator = "math_float"
@@ -1141,7 +1070,6 @@
 				input1 = "1.000000"
 				input2 = "1.000000"
 			},
-			
 			{
 				name = "level_apply_mixer"
 				operator = "math_float"
@@ -1149,14 +1077,12 @@
 				input1 = "@mixer.output_level"
 				input2 = "@soundlevel_random.output"
 			},
-			
 			{
 				name = "volume_falloff"
 				operator = "calc_falloff"
 				input_distance = "@distance_to_source.output"
 				input_level = "@level_apply_mixer.output"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -1174,21 +1100,18 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@volume_accumulate.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "dsp_emitter"
 				operator = "math_float"
 				apply = "set"
 				input1 = "1.000000"
 			},
-			
 			{
 				name = "dsp_apply_mixer"
 				operator = "math_float"
@@ -1196,7 +1119,6 @@
 				input1 = "@mixer.output_dsp"
 				input2 = "@dsp_emitter.output"
 			},
-			
 			{
 				name = "dsp_distantDSP"
 				operator = "math_float"
@@ -1204,7 +1126,6 @@
 				input1 = "1.000000"
 				input2 = "1.000000"
 			},
-			
 			{
 				name = "dsp_apply_distant"
 				operator = "math_float"
@@ -1212,7 +1133,6 @@
 				input1 = "@dsp_distantDSP.output"
 				input2 = "@dsp_apply_mixer.output"
 			},
-			
 			{
 				name = "speakers_spatialize"
 				operator = "calc_spatialize_speakers"
@@ -1223,13 +1143,11 @@
 				input_listener_left = "@globals.output_listener_left"
 				input_rear_stereo_scale = "1.000000"
 			},
-			
 			{
 				name = "speaker_volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@volume_accumulate.output"
 			},
-			
 			{
 				name = "speakers_apply_volume"
 				operator = "math_speakers"
@@ -1237,7 +1155,6 @@
 				input1 = "@speakers_spatialize.output"
 				input2 = "@speaker_volume_fan.output"
 			},
-			
 			{
 				name = "speakers_limit"
 				operator = "math_speakers"
@@ -1250,7 +1167,6 @@
 				right_rear = "1.000000"
 				input2 = "@speakers_apply_volume.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"

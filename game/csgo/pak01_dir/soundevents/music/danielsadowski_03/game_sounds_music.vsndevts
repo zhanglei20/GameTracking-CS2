@@ -3,7 +3,7 @@
 	Music.Background.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/danielsadowski_03/mainmenu.vsnd"
@@ -11,7 +11,7 @@
 	Music.MVPPreview.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/danielsadowski_03/roundmvpanthem_01.vsnd"
@@ -19,10 +19,10 @@
 	Music.Selection.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		mixgroup = "SelectedMusic"
 		volume_convar = "snd_menumusic_volume"
-		volume_fade_out_input_max = 1.000000
+		volume_fade_out_input_max = 1.0
 		stop_match_end = "true"
 		stop_loading = "true"
 		vsnd_files = "sounds/music/danielsadowski_03/chooseteam.vsnd"
@@ -31,66 +31,54 @@
 	Music.MatchFound.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		mixgroup = "BuyMusic"
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.500000
-		volume_fade_out_input_max = 1.500000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.5
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
 		should_queue_track = "true"
 		update_track_syncpoint_index = "true"
-		startpoint_01 = 0.000000
-		endpoint_01 = 20.893000
+		startpoint_01 = 0.0
+		endpoint_01 = 20.893
 		vsnd_files = 
 		[
 			"sounds/music/danielsadowski_03/startround_01.vsnd",
 		]
 		syncpoints_01 = 
 		[
-			1.303000,
-			2.602000,
-			3.912000,
-			5.222000,
-			6.522000,
-			7.832000,
-			9.131000,
-			10.448000,
-			11.747000,
-			13.050000,
-			14.353000,
-			15.663000,
-			16.973000,
-			18.280000,
-			19.583000,
-			20.893000,
+			1.303, 2.602, 3.912, 5.222,
+			6.522, 7.832, 9.131, 10.448,
+			11.747, 13.05, 14.353, 15.663,
+			16.973, 18.28, 19.583, 20.893,
 		]
 	}
 	Music.LoadingScreen.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_menumusic_volume"
 		sync_action_to_startround = 1
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.500000
-		volume_fade_out_input_max = 1.500000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.5
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
 		should_queue_track = "true"
 		stop_start_round = "true"
-		startpoint_01 = 0.252000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.252
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 		vsnd_files = 
 		[
 			"sounds/music/danielsadowski_03/startaction_01.vsnd",
@@ -99,69 +87,57 @@
 	Music.StartRound.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		mixgroup = "BuyMusic"
 		volume_convar = "snd_roundstart_volume"
 		stop_music = "true"
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.500000
-		volume_fade_out_input_max = 1.500000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.5
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
 		should_queue_track = "true"
 		update_track_syncpoint_index = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		endpoint_01 = 20.893000
+		startpoint_01 = 0.0
+		endpoint_01 = 20.893
 		vsnd_files = 
 		[
 			"sounds/music/danielsadowski_03/startround_01.vsnd",
 		]
 		syncpoints_01 = 
 		[
-			1.303000,
-			2.602000,
-			3.912000,
-			5.222000,
-			6.522000,
-			7.832000,
-			9.131000,
-			10.448000,
-			11.747000,
-			13.050000,
-			14.353000,
-			15.663000,
-			16.973000,
-			18.280000,
-			19.583000,
-			20.893000,
+			1.303, 2.602, 3.912, 5.222,
+			6.522, 7.832, 9.131, 10.448,
+			11.747, 13.05, 14.353, 15.663,
+			16.973, 18.28, 19.583, 20.893,
 		]
 	}
 	Music.StartAction.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_roundaction_volume"
 		sync_action_to_startround = 1
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.200000
-		volume_fade_out_input_max = 3.000000
-		stop_at_time = 10.000000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.2
+		volume_fade_out_input_max = 3.0
+		stop_at_time = 10.0
 		loop_track = "true"
 		should_queue_track = "true"
 		stop_start_round = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.252000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.252
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 		vsnd_files = 
 		[
 			"sounds/music/danielsadowski_03/startaction_01.vsnd",
@@ -170,234 +146,195 @@
 	Music.StartRound_GG.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		mixgroup = "BuyMusic"
 		volume_convar = "snd_roundstart_volume"
 		stop_music = "true"
-		priority = 1.000000
+		priority = 1.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 6.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.300000
-		volume_fade_out_input_max = 3.000000
-		stop_at_time = 6.000000
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 6.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.3
+		volume_fade_out_input_max = 3.0
+		stop_at_time = 6.0
 		loop_track = "true"
 		should_queue_track = "true"
 		update_track_syncpoint_index = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		endpoint_01 = 20.893000
+		startpoint_01 = 0.0
+		endpoint_01 = 20.893
 		vsnd_files = 
 		[
 			"sounds/music/danielsadowski_03/startround_01.vsnd",
 		]
 		syncpoints_01 = 
 		[
-			1.303000,
-			2.602000,
-			3.912000,
-			5.222000,
-			6.522000,
-			7.832000,
-			9.131000,
-			10.448000,
-			11.747000,
-			13.050000,
-			14.353000,
-			15.663000,
-			16.973000,
-			18.280000,
-			19.583000,
-			20.893000,
+			1.303, 2.602, 3.912, 5.222,
+			6.522, 7.832, 9.131, 10.448,
+			11.747, 13.05, 14.353, 15.663,
+			16.973, 18.28, 19.583, 20.893,
 		]
 	}
 	Music.BombPlanted.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_mapobjective_volume"
 		vsnd_files = "sounds/music/danielsadowski_03/bombplanted.vsnd"
-		priority = 3.000000
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 6.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.300000
+		priority = 3.0
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 6.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.3
 		loop_track = "true"
 		join_non_mvp_group = "true"
 		stop_start_round = "true"
 		stop_tensec_count = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.BombTenSecCount.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_tensecondwarning_volume"
 		vsnd_files = "sounds/music/danielsadowski_03/bombtenseccount.vsnd"
-		priority = 3.000000
-		volume_fade_out_input_max = 0.500000
+		priority = 3.0
+		volume_fade_out_input_max = 0.5
 		should_queue_track = "true"
 		stop_bomb_planted = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.441000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.441
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.GotHostage.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_mapobjective_volume"
 		vsnd_files = "sounds/music/danielsadowski_03/bombplanted.vsnd"
-		priority = 3.000000
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 7.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.200000
-		volume_fade_out_input_max = 1.500000
+		priority = 3.0
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 7.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.2
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
-		stop_at_time = 9.000000
+		stop_at_time = 9.0
 		stop_start_round = "true"
 		stop_tensec_count = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.HostageNearRescue.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_tensecondwarning_volume"
 		vsnd_files = "sounds/music/danielsadowski_03/bombtenseccount.vsnd"
-		priority = 3.000000
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 7.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.200000
-		volume_fade_out_input_max = 1.500000
-		stop_at_time = 4.000000
+		priority = 3.0
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 7.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.2
+		volume_fade_out_input_max = 1.5
+		stop_at_time = 4.0
 		stop_got_hostage = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.441000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.441
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.TenSecCount.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_tensecondwarning_volume"
 		vsnd_files = "sounds/music/danielsadowski_03/roundtenseccount.vsnd"
-		priority = 3.000000
-		volume_fade_out_input_max = 0.500000
+		priority = 3.0
+		volume_fade_out_input_max = 0.5
 		should_queue_track = "true"
 		stop_start_round = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.441000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.441
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	Music.WonRound.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 1.000000
+		volume = 1.0
 		volume_convar = "snd_roundend_volume"
 		vsnd_files = "sounds/music/danielsadowski_03/wonround.vsnd"
-		priority = 4.000000
+		priority = 4.0
 		stop_music_except_mvp = "true"
-		volume_fade_out_input_max = 1.600000
+		volume_fade_out_input_max = 1.6
 		loop_track = "true"
 		should_queue_track = "true"
 		skip_if_muted = "true"
 		test_mvp_block = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	Music.LostRound.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 1.000000
+		volume = 1.0
 		volume_convar = "snd_roundend_volume"
 		vsnd_files = "sounds/music/danielsadowski_03/lostround.vsnd"
-		priority = 4.000000
+		priority = 4.0
 		stop_music_except_mvp = "true"
-		volume_fade_out_input_max = 1.600000
+		volume_fade_out_input_max = 1.6
 		loop_track = "true"
 		should_queue_track = "true"
 		skip_if_muted = "true"
 		test_mvp_block = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	Music.DeathCam.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 1.000000
+		volume = 1.0
 		mixgroup = "DuckingMusic"
 		volume_convar = "snd_deathcamera_volume"
 		vsnd_files = "sounds/music/danielsadowski_03/deathcam.vsnd"
@@ -409,33 +346,24 @@
 	Music.MVPAnthem.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_mvp_volume"
-		priority = 5.000000
+		priority = 5.0
 		stop_music = "true"
-		volume_fade_out_input_max = 1.600000
+		volume_fade_out_input_max = 1.6
 		loop_track = "true"
 		should_queue_track = "true"
 		skip_if_muted = "true"
 		block_won_lost = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 		vsnd_files = 
 		[
 			"sounds/music/danielsadowski_03/roundmvpanthem_01.vsnd",
@@ -444,14 +372,14 @@
 	Music.MatchStart.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		mixgroup = "SelectedMusic"
 		volume_convar = "snd_menumusic_volume"
-		volume_fade_out_input_max = 1.000000
-		volume_fade_initial_input_min = 5.000000
-		volume_fade_initial_input_max = 8.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.100000
+		volume_fade_out_input_max = 1.0
+		volume_fade_initial_input_min = 5.0
+		volume_fade_initial_input_max = 8.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.1
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/danielsadowski_03/startofmatch.vsnd"
@@ -459,32 +387,23 @@
 	Music.MatchEnd.danielsadowski_03 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		mixgroup = "SelectedMusic"
 		volume_convar = "snd_menumusic_volume"
-		volume_fade_out_input_max = 1.000000
+		volume_fade_out_input_max = 1.0
 		stop_won_mvp = "true"
 		should_queue_track = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/danielsadowski_03/endofmatch.vsnd"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	_auto_calc_vnsd_duration_ = "false"
 }

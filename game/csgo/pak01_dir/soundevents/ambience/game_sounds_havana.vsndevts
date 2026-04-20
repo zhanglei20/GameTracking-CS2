@@ -4,15 +4,15 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = 0.000000
-		volume_random_max = 0.000000
-		pitch_random_min = 0.000000
+		volume = 1.0
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_min = 0.0
 		enable_retrigger = false
-		retrigger_interval_min = 0.000000
-		retrigger_interval_max = 0.000000
-		randomize_position_min_radius = 0.000000
-		randomize_position_max_radius = 0.000000
+		retrigger_interval_min = 0.0
+		retrigger_interval_max = 0.0
+		randomize_position_min_radius = 0.0
+		randomize_position_max_radius = 0.0
 		use_time_volume_mapping_curve = true
 		dsp_preset = "reverb_4_smallCarpetRoom"
 		set_child_position = false
@@ -20,65 +20,35 @@
 		vsnd_files_track_01 = "sounds/common/null.vsnd"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -95,92 +65,52 @@
 		type = "csgo_mega"
 		mixgroup = "Havana"
 		use_distance_unfiltered_stereo_mapping_curve = true
-		volume = 0.300000
+		volume = 0.3
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		vsnd_files_track_01 = "sounds/ambient/common/backgrounds/roomtone1.vsnd"
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -189,92 +119,52 @@
 		type = "csgo_mega"
 		mixgroup = "Havana"
 		use_distance_unfiltered_stereo_mapping_curve = true
-		volume = 0.200000
+		volume = 0.2
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		vsnd_files_track_01 = "sounds/ambient/common/wind/wind1.vsnd"
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -282,17 +172,17 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = -0.930000
-		volume_random_max = -0.700000
-		pitch_random_min = -0.300000
+		volume = 1.0
+		volume_random_min = -0.93
+		volume_random_max = -0.7
+		pitch_random_min = -0.3
 		enable_retrigger = true
-		retrigger_interval_min = 6.000000
-		retrigger_interval_max = 10.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 6.0
+		retrigger_interval_max = 10.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
-		pitch_random_max = 0.100000
+		pitch_random_max = 0.1
 		set_child_position = false
 		vsnd_files_track_01 = 
 		[
@@ -305,65 +195,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -371,18 +231,18 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = -0.950000
-		volume_random_max = -0.880000
-		pitch_random_min = -0.100000
+		volume = 1.0
+		volume_random_min = -0.95
+		volume_random_max = -0.88
+		pitch_random_min = -0.1
 		enable_retrigger = true
-		retrigger_interval_min = 10.000000
-		retrigger_interval_max = 23.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 10.0
+		retrigger_interval_max = 23.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
-		pitch_random_max = 0.000000
-		pitch = 0.900000
+		pitch_random_max = 0.0
+		pitch = 0.9
 		set_child_position = false
 		vsnd_files_track_01 = 
 		[
@@ -394,65 +254,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -460,17 +290,17 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = -0.950000
-		volume_random_max = -0.800000
-		pitch_random_min = -0.200000
+		volume = 1.0
+		volume_random_min = -0.95
+		volume_random_max = -0.8
+		pitch_random_min = -0.2
 		enable_retrigger = true
-		retrigger_interval_min = 16.000000
-		retrigger_interval_max = 33.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 16.0
+		retrigger_interval_max = 33.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
-		pitch = 0.900000
+		pitch = 0.9
 		set_child_position = false
 		vsnd_files_track_01 = 
 		[
@@ -484,65 +314,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -550,15 +350,15 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = 0.000000
-		volume_random_max = 0.000000
-		pitch_random_min = 0.000000
+		volume = 1.0
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_min = 0.0
 		enable_retrigger = false
-		retrigger_interval_min = 0.000000
-		retrigger_interval_max = 0.000000
-		randomize_position_min_radius = 0.000000
-		randomize_position_max_radius = 0.000000
+		retrigger_interval_min = 0.0
+		retrigger_interval_max = 0.0
+		randomize_position_min_radius = 0.0
+		randomize_position_max_radius = 0.0
 		use_time_volume_mapping_curve = true
 		enable_child_events = true
 		set_child_position = false
@@ -566,65 +366,35 @@
 		vsnd_files_track_01 = "sounds/common/null.vsnd"
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		soundevent_01 = 
@@ -644,92 +414,52 @@
 		type = "csgo_mega"
 		mixgroup = "Havana"
 		use_distance_unfiltered_stereo_mapping_curve = true
-		volume = 0.600000
+		volume = 0.6
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		vsnd_files_track_01 = "sounds/ambient/common/wind/wind1.vsnd"
 		distance_unfiltered_stereo_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -737,15 +467,15 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = -0.940000
-		volume_random_max = -0.900000
-		pitch_random_min = -0.200000
+		volume = 1.0
+		volume_random_min = -0.94
+		volume_random_max = -0.9
+		pitch_random_min = -0.2
 		enable_retrigger = true
-		retrigger_interval_min = 18.000000
-		retrigger_interval_max = 35.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 18.0
+		retrigger_interval_max = 35.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		vsnd_files_track_01 = 
@@ -756,65 +486,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -822,15 +522,15 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = -0.700000
-		volume_random_max = -0.600000
-		pitch_random_min = -0.200000
+		volume = 1.0
+		volume_random_min = -0.7
+		volume_random_max = -0.6
+		pitch_random_min = -0.2
 		enable_retrigger = true
-		retrigger_interval_min = 21.000000
-		retrigger_interval_max = 44.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 21.0
+		retrigger_interval_max = 44.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		vsnd_files_track_01 = 
@@ -842,65 +542,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -908,15 +578,15 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = -0.920000
-		volume_random_max = -0.800000
-		pitch_random_min = -0.400000
+		volume = 1.0
+		volume_random_min = -0.92
+		volume_random_max = -0.8
+		pitch_random_min = -0.4
 		enable_retrigger = true
-		retrigger_interval_min = 15.000000
-		retrigger_interval_max = 35.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 15.0
+		retrigger_interval_max = 35.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		vsnd_files_track_01 = 
@@ -927,65 +597,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -993,18 +633,18 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = -0.950000
-		volume_random_max = -0.700000
-		pitch_random_min = -0.300000
+		volume = 1.0
+		volume_random_min = -0.95
+		volume_random_max = -0.7
+		pitch_random_min = -0.3
 		enable_retrigger = true
-		retrigger_interval_min = 16.000000
-		retrigger_interval_max = 50.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 16.0
+		retrigger_interval_max = 50.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
-		pitch = 0.900000
-		pitch_random_max = 0.100000
+		pitch = 0.9
+		pitch_random_max = 0.1
 		set_child_position = false
 		vsnd_files_track_01 = 
 		[
@@ -1018,65 +658,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -1084,17 +694,17 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = -0.930000
-		volume_random_max = -0.700000
-		pitch_random_min = -0.300000
+		volume = 1.0
+		volume_random_min = -0.93
+		volume_random_max = -0.7
+		pitch_random_min = -0.3
 		enable_retrigger = true
-		retrigger_interval_min = 9.000000
-		retrigger_interval_max = 21.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 9.0
+		retrigger_interval_max = 21.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
-		pitch_random_max = 0.100000
+		pitch_random_max = 0.1
 		set_child_position = false
 		vsnd_files_track_01 = 
 		[
@@ -1109,65 +719,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}
@@ -1175,17 +755,17 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Havana"
-		volume = 1.000000
-		volume_random_min = -0.930000
-		volume_random_max = -0.700000
-		pitch_random_min = -0.300000
+		volume = 1.0
+		volume_random_min = -0.93
+		volume_random_max = -0.7
+		pitch_random_min = -0.3
 		enable_retrigger = true
-		retrigger_interval_min = 7.000000
-		retrigger_interval_max = 20.000000
-		randomize_position_min_radius = 300.000000
-		randomize_position_max_radius = 300.000000
+		retrigger_interval_min = 7.0
+		retrigger_interval_max = 20.0
+		randomize_position_min_radius = 300.0
+		randomize_position_max_radius = 300.0
 		use_time_volume_mapping_curve = true
-		pitch_random_max = 0.100000
+		pitch_random_max = 0.1
 		set_child_position = false
 		vsnd_files_track_01 = 
 		[
@@ -1198,65 +778,35 @@
 		]
 		distance_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				300.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		time_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
-			
 			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
-			
 			[
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				2.000000,
-				3.000000,
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
 			],
 		]
 	}

@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -43,7 +42,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "core_start_oneshot_import_test_op"
 				operator = "sos_import_stack"
@@ -87,7 +85,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -121,7 +118,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "time_greater_than_position"
 				operator = "math_float"
@@ -129,7 +125,6 @@
 				input1 = "@public.time"
 				input2 = "@public.start_time"
 			},
-			
 			{
 				name = "start"
 				operator = "math_float"
@@ -137,7 +132,6 @@
 				input1 = "@public.unstopped"
 				input2 = "@time_greater_than_position.output"
 			},
-			
 			{
 				name = "core_simple_oneshot"
 				operator = "sos_import_stack"

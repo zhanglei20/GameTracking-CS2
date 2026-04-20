@@ -11,14 +11,14 @@
 	core.soundscape_2d = 
 	{
 		type = "src1_soundscape_2d"
-		limiter_on = 0.000000
+		limiter_on = 0.0
 		vsnd_files = "sounds/diagnostics/bell.vsnd"
 		vsnd_duration = 1.241587
 	}
 	core.soundscape_3d = 
 	{
 		type = "src1_soundscape_3d"
-		limiter_on = 0.000000
+		limiter_on = 0.0
 		vsnd_files = "sounds/diagnostics/bell.vsnd"
 		vsnd_duration = 1.241587
 	}
@@ -79,17 +79,17 @@
 	{
 		type = "core_soundevent_blocker"
 		match_soundevent = ""
-		match_substring = 0.000000
-		match_event_type = -1.000000
-		min_time = 5.000000
-		max_time = 5.000000
+		match_substring = 0.0
+		match_event_type = -1.0
+		min_time = 5.0
+		max_time = 5.0
 	}
 	core.set_game_volume_timed = 
 	{
 		type = "core_setter_AHR_game_volume"
-		hold_time = 1.000000
-		fade_in = 1.000000
-		fade_out = 1.000000
+		hold_time = 1.0
+		fade_in = 1.0
+		fade_out = 1.0
 		mult_value = true
 	}
 	core.global_stack = 
@@ -104,14 +104,14 @@
 	{
 		type = "core_set_playerdsp"
 		dsp_preset = "core.null"
-		mix = 0.000000
+		mix = 0.0
 	}
 	core.set_playerdsp_muffled = 
 	{
 		type = "core_set_playerdsp"
 		dsp_preset = "core.explosion.ring2"
-		mix = 1.000000
-		enable = 1.000000
+		mix = 1.0
+		enable = 1.0
 	}
 	BaseExplosionEffect.Sound = 
 	{
@@ -130,14 +130,14 @@
 		[
 			"static_branch_entity_block",
 		]
-		time = 0.100000
+		time = 0.1
 	}
 	simple_onsehot = 
 	{
 		type = "core_start_oneshot"
 		vsnd_files = "sounds/common/explosions/explo_gas_can_01.vsnd"
-		volume_min = 0.200000
-		volume_max = 0.200000
+		volume_min = 0.2
+		volume_max = 0.2
 		vsnd_duration = 3.858549
 	}
 	core_test_sound = 

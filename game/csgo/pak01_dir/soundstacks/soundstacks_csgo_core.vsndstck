@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -27,18 +26,15 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "set_builtins"
 				operator = "sos_set_builtins"
 				input_voicegraph = "csgo.movie"
 			},
-			
 			{
 				name = "submix_send"
 				operator = "vmix_mixgraph_send"
@@ -47,13 +43,11 @@
 				input = "1.0"
 				send_type = "named"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				input = "1.0"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -71,7 +65,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -94,37 +87,31 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
 				mixgroup = "voip"
 			},
-			
 			{
 				name = "set_builtins"
 				operator = "sos_set_builtins"
 				input_voicegraph = "csgo.voip"
 			},
-			
 			{
 				name = "mixer_mixgraph"
 				operator = "soundmixer_set_vmix"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -132,14 +119,12 @@
 				input1 = "@mixer.output_volume"
 				input2 = "@public.volume"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@volume_accumulate.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "send_voicegraph_volume"
 				input_execute = "1"
@@ -147,7 +132,6 @@
 				input_name = "player_voip_volume"
 				input = "@volume_accumulate.output"
 			},
-			
 			{
 				name = "submix_send"
 				operator = "vmix_mixgraph_send"
@@ -156,13 +140,11 @@
 				input = "1.0"
 				send_type = "named"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				input = "1.0"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"

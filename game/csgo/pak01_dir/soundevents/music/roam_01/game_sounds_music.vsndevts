@@ -3,7 +3,7 @@
 	Music.Background.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/roam_01/mainmenu.vsnd"
@@ -11,7 +11,7 @@
 	Music.MVPPreview.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/roam_01/roundmvpanthem_01.vsnd"
@@ -19,10 +19,10 @@
 	Music.Selection.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		mixgroup = "SelectedMusic"
 		volume_convar = "snd_menumusic_volume"
-		volume_fade_out_input_max = 1.000000
+		volume_fade_out_input_max = 1.0
 		stop_match_end = "true"
 		stop_loading = "true"
 		vsnd_files = "sounds/music/roam_01/chooseteam.vsnd"
@@ -31,26 +31,26 @@
 	Music.MatchFound.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		mixgroup = "BuyMusic"
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.500000
-		volume_fade_out_input_max = 1.500000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.5
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
 		should_queue_track = "true"
 		update_track_syncpoint_index = "true"
-		startpoint_01 = 0.192000
-		startpoint_02 = 0.163000
-		startpoint_03 = 0.010000
-		endpoint_01 = 20.947000
-		endpoint_02 = 19.574000
-		endpoint_03 = 9.860000
+		startpoint_01 = 0.192
+		startpoint_02 = 0.163
+		startpoint_03 = 0.01
+		endpoint_01 = 20.947
+		endpoint_02 = 19.574
+		endpoint_03 = 9.86
 		vsnd_files = 
 		[
 			"sounds/music/roam_01/startround_01.vsnd",
@@ -59,59 +59,44 @@
 		]
 		syncpoints_01 = 
 		[
-			0.192000,
-			2.783000,
-			5.380000,
-			7.965000,
-			10.564000,
-			13.149000,
-			15.740000,
-			18.339000,
-			20.947000,
+			0.192, 2.783, 5.38, 7.965,
+			10.564, 13.149, 15.74, 18.339,
+			20.947,
 		]
 		syncpoints_02 = 
 		[
-			0.163000,
-			2.628000,
-			5.019000,
-			7.450000,
-			9.858000,
-			12.314000,
-			14.715000,
-			17.139000,
-			19.574000,
+			0.163, 2.628, 5.019, 7.45,
+			9.858, 12.314, 14.715, 17.139,
+			19.574,
 		]
 		syncpoints_03 = 
 		[
-			0.000000,
-			2.477000,
-			4.947000,
-			7.353000,
-			9.860000,
+			0.0, 2.477, 4.947, 7.353,
+			9.86,
 		]
 	}
 	Music.LoadingScreen.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_menumusic_volume"
 		sync_action_to_startround = 1
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.500000
-		volume_fade_out_input_max = 1.500000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.5
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
 		should_queue_track = "true"
 		stop_start_round = "true"
-		startpoint_01 = 0.737000
-		startpoint_02 = 0.025000
-		startpoint_03 = 0.010000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.737
+		startpoint_02 = 0.025
+		startpoint_03 = 0.01
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 		vsnd_files = 
 		[
 			"sounds/music/roam_01/startaction_01.vsnd",
@@ -122,27 +107,27 @@
 	Music.StartRound.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		mixgroup = "BuyMusic"
 		volume_convar = "snd_roundstart_volume"
 		stop_music = "true"
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.500000
-		volume_fade_out_input_max = 1.500000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.5
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
 		should_queue_track = "true"
 		update_track_syncpoint_index = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.192000
-		startpoint_02 = 0.163000
-		startpoint_03 = 0.010000
-		endpoint_01 = 20.947000
-		endpoint_02 = 19.574000
-		endpoint_03 = 9.860000
+		startpoint_01 = 0.192
+		startpoint_02 = 0.163
+		startpoint_03 = 0.01
+		endpoint_01 = 20.947
+		endpoint_02 = 19.574
+		endpoint_03 = 9.86
 		vsnd_files = 
 		[
 			"sounds/music/roam_01/startround_01.vsnd",
@@ -151,61 +136,46 @@
 		]
 		syncpoints_01 = 
 		[
-			0.192000,
-			2.783000,
-			5.380000,
-			7.965000,
-			10.564000,
-			13.149000,
-			15.740000,
-			18.339000,
-			20.947000,
+			0.192, 2.783, 5.38, 7.965,
+			10.564, 13.149, 15.74, 18.339,
+			20.947,
 		]
 		syncpoints_02 = 
 		[
-			0.163000,
-			2.628000,
-			5.019000,
-			7.450000,
-			9.858000,
-			12.314000,
-			14.715000,
-			17.139000,
-			19.574000,
+			0.163, 2.628, 5.019, 7.45,
+			9.858, 12.314, 14.715, 17.139,
+			19.574,
 		]
 		syncpoints_03 = 
 		[
-			0.000000,
-			2.477000,
-			4.947000,
-			7.353000,
-			9.860000,
+			0.0, 2.477, 4.947, 7.353,
+			9.86,
 		]
 	}
 	Music.StartAction.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_roundaction_volume"
 		sync_action_to_startround = 1
-		priority = 2.000000
+		priority = 2.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 4.000000
-		volume_fade_initial_input_max = 12.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.200000
-		volume_fade_out_input_max = 3.000000
-		stop_at_time = 10.000000
+		volume_fade_initial_input_min = 4.0
+		volume_fade_initial_input_max = 12.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.2
+		volume_fade_out_input_max = 3.0
+		stop_at_time = 10.0
 		loop_track = "true"
 		should_queue_track = "true"
 		stop_start_round = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.737000
-		startpoint_02 = 0.025000
-		startpoint_03 = 0.010000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.737
+		startpoint_02 = 0.025
+		startpoint_03 = 0.01
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 		vsnd_files = 
 		[
 			"sounds/music/roam_01/startaction_01.vsnd",
@@ -216,28 +186,28 @@
 	Music.StartRound_GG.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		mixgroup = "BuyMusic"
 		volume_convar = "snd_roundstart_volume"
 		stop_music = "true"
-		priority = 1.000000
+		priority = 1.0
 		priority_override = "true"
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 6.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.300000
-		volume_fade_out_input_max = 3.000000
-		stop_at_time = 6.000000
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 6.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.3
+		volume_fade_out_input_max = 3.0
+		stop_at_time = 6.0
 		loop_track = "true"
 		should_queue_track = "true"
 		update_track_syncpoint_index = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.192000
-		startpoint_02 = 0.163000
-		startpoint_03 = 0.010000
-		endpoint_01 = 20.947000
-		endpoint_02 = 19.574000
-		endpoint_03 = 9.860000
+		startpoint_01 = 0.192
+		startpoint_02 = 0.163
+		startpoint_03 = 0.01
+		endpoint_01 = 20.947
+		endpoint_02 = 19.574
+		endpoint_03 = 9.86
 		vsnd_files = 
 		[
 			"sounds/music/roam_01/startround_01.vsnd",
@@ -246,223 +216,181 @@
 		]
 		syncpoints_01 = 
 		[
-			0.192000,
-			2.783000,
-			5.380000,
-			7.965000,
-			10.564000,
-			13.149000,
-			15.740000,
-			18.339000,
-			20.947000,
+			0.192, 2.783, 5.38, 7.965,
+			10.564, 13.149, 15.74, 18.339,
+			20.947,
 		]
 		syncpoints_02 = 
 		[
-			0.163000,
-			2.628000,
-			5.019000,
-			7.450000,
-			9.858000,
-			12.314000,
-			14.715000,
-			17.139000,
-			19.574000,
+			0.163, 2.628, 5.019, 7.45,
+			9.858, 12.314, 14.715, 17.139,
+			19.574,
 		]
 		syncpoints_03 = 
 		[
-			0.000000,
-			2.477000,
-			4.947000,
-			7.353000,
-			9.860000,
+			0.0, 2.477, 4.947, 7.353,
+			9.86,
 		]
 	}
 	Music.BombPlanted.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_mapobjective_volume"
 		vsnd_files = "sounds/music/roam_01/bombplanted.vsnd"
-		priority = 3.000000
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 6.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.300000
+		priority = 3.0
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 6.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.3
 		loop_track = "true"
 		join_non_mvp_group = "true"
 		stop_start_round = "true"
 		stop_tensec_count = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.BombTenSecCount.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_tensecondwarning_volume"
 		vsnd_files = "sounds/music/roam_01/bombtenseccount.vsnd"
-		priority = 3.000000
-		volume_fade_out_input_max = 0.500000
+		priority = 3.0
+		volume_fade_out_input_max = 0.5
 		should_queue_track = "true"
 		stop_bomb_planted = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.449000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.449
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.GotHostage.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_mapobjective_volume"
 		vsnd_files = "sounds/music/roam_01/bombplanted.vsnd"
-		priority = 3.000000
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 7.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.200000
-		volume_fade_out_input_max = 1.500000
+		priority = 3.0
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 7.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.2
+		volume_fade_out_input_max = 1.5
 		loop_track = "true"
-		stop_at_time = 9.000000
+		stop_at_time = 9.0
 		stop_start_round = "true"
 		stop_tensec_count = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.HostageNearRescue.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		volume_convar = "snd_tensecondwarning_volume"
 		vsnd_files = "sounds/music/roam_01/bombtenseccount.vsnd"
-		priority = 3.000000
-		volume_fade_initial_input_min = 1.000000
-		volume_fade_initial_input_max = 7.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.200000
-		volume_fade_out_input_max = 1.500000
-		stop_at_time = 4.000000
+		priority = 3.0
+		volume_fade_initial_input_min = 1.0
+		volume_fade_initial_input_max = 7.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.2
+		volume_fade_out_input_max = 1.5
+		stop_at_time = 4.0
 		stop_got_hostage = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.449000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
+		startpoint_01 = 0.449
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
 	}
 	Music.TenSecCount.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_tensecondwarning_volume"
 		vsnd_files = "sounds/music/roam_01/roundtenseccount.vsnd"
-		priority = 3.000000
-		volume_fade_out_input_max = 0.500000
+		priority = 3.0
+		volume_fade_out_input_max = 0.5
 		should_queue_track = "true"
 		stop_start_round = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.449000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.449
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	Music.WonRound.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 1.000000
+		volume = 1.0
 		volume_convar = "snd_roundend_volume"
 		vsnd_files = "sounds/music/roam_01/wonround.vsnd"
-		priority = 4.000000
+		priority = 4.0
 		stop_music_except_mvp = "true"
-		volume_fade_out_input_max = 1.600000
+		volume_fade_out_input_max = 1.6
 		loop_track = "true"
 		should_queue_track = "true"
 		skip_if_muted = "true"
 		test_mvp_block = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	Music.LostRound.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 1.000000
+		volume = 1.0
 		volume_convar = "snd_roundend_volume"
 		vsnd_files = "sounds/music/roam_01/lostround.vsnd"
-		priority = 4.000000
+		priority = 4.0
 		stop_music_except_mvp = "true"
-		volume_fade_out_input_max = 1.600000
+		volume_fade_out_input_max = 1.6
 		loop_track = "true"
 		should_queue_track = "true"
 		skip_if_muted = "true"
 		test_mvp_block = "true"
 		join_non_mvp_group = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	Music.DeathCam.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 1.000000
+		volume = 1.0
 		mixgroup = "DuckingMusic"
 		volume_convar = "snd_deathcamera_volume"
 		vsnd_files = "sounds/music/roam_01/deathcam.vsnd"
@@ -474,33 +402,24 @@
 	Music.MVPAnthem.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.900000
+		volume = 0.9
 		volume_convar = "snd_mvp_volume"
-		priority = 5.000000
+		priority = 5.0
 		stop_music = "true"
-		volume_fade_out_input_max = 1.600000
+		volume_fade_out_input_max = 1.6
 		loop_track = "true"
 		should_queue_track = "true"
 		skip_if_muted = "true"
 		block_won_lost = "true"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 		vsnd_files = 
 		[
 			"sounds/music/roam_01/roundmvpanthem_01.vsnd",
@@ -509,14 +428,14 @@
 	Music.MatchStart.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		mixgroup = "SelectedMusic"
 		volume_convar = "snd_menumusic_volume"
-		volume_fade_out_input_max = 1.000000
-		volume_fade_initial_input_min = 6.000000
-		volume_fade_initial_input_max = 7.000000
-		volume_fade_initial_input_map_min = 1.000000
-		volume_fade_initial_input_map_max = 0.100000
+		volume_fade_out_input_max = 1.0
+		volume_fade_initial_input_min = 6.0
+		volume_fade_initial_input_max = 7.0
+		volume_fade_initial_input_map_min = 1.0
+		volume_fade_initial_input_map_max = 0.1
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/roam_01/startofmatch.vsnd"
@@ -524,32 +443,23 @@
 	Music.MatchEnd.roam_01 = 
 	{
 		type = "csgo_music"
-		volume = 0.800000
+		volume = 0.8
 		mixgroup = "SelectedMusic"
 		volume_convar = "snd_menumusic_volume"
-		volume_fade_out_input_max = 1.000000
+		volume_fade_out_input_max = 1.0
 		stop_won_mvp = "true"
 		should_queue_track = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/roam_01/endofmatch.vsnd"
-		startpoint_01 = 0.000000
-		startpoint_02 = 0.000000
-		startpoint_03 = 0.000000
-		endpoint_01 = 0.000000
-		endpoint_02 = 0.000000
-		endpoint_03 = 0.000000
-		syncpoints_01 = 
-		[
-			0.000000,
-		]
-		syncpoints_02 = 
-		[
-			0.000000,
-		]
-		syncpoints_03 = 
-		[
-			0.000000,
-		]
+		startpoint_01 = 0.0
+		startpoint_02 = 0.0
+		startpoint_03 = 0.0
+		endpoint_01 = 0.0
+		endpoint_02 = 0.0
+		endpoint_03 = 0.0
+		syncpoints_01 = [ 0.0 ]
+		syncpoints_02 = [ 0.0 ]
+		syncpoints_03 = [ 0.0 ]
 	}
 	_auto_calc_vnsd_duration_ = "false"
 }

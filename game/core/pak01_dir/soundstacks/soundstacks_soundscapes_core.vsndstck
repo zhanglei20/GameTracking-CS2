@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "daves_test_opvars"
 				operator = "util_null"
@@ -78,7 +77,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -149,7 +147,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "math_float3_b_minus_a"
 				operator = "math_float3"
@@ -161,7 +158,6 @@
 				execute_once = "0"
 				apply = "sub"
 			},
-			
 			{
 				name = "math_curve_2d_4knot"
 				operator = "math_curve_2d_4knot"
@@ -180,7 +176,6 @@
 				execute_once = "0"
 				curve_type = "linear"
 			},
-			
 			{
 				name = "pack_multiplier"
 				operator = "util_pack_float3"
@@ -189,7 +184,6 @@
 				input_1 = "@math_curve_2d_4knot.output"
 				input_2 = "@math_curve_2d_4knot.output"
 			},
-			
 			{
 				name = "math_float3_mult"
 				operator = "math_float3"
@@ -201,7 +195,6 @@
 				execute_once = "0"
 				apply = "mult"
 			},
-			
 			{
 				name = "math_float3_a_minus_result"
 				operator = "math_float3"
@@ -213,7 +206,6 @@
 				execute_once = "0"
 				apply = "add"
 			},
-			
 			{
 				name = "print_lerp_pos"
 				operator = "util_print_float3"
@@ -231,7 +223,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -257,7 +248,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "private_stack_opvars"
 				operator = "util_null"
@@ -278,7 +268,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "soundevent_get_info"
 				operator = "soundevent_get_info"
@@ -286,7 +275,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "opvar_set_float_2"
 				operator = "opvar_set_float"
@@ -300,7 +288,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "opvar_set_float_3"
 				operator = "opvar_set_float"
@@ -314,7 +301,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "opvar_set_float_4"
 				operator = "opvar_set_float"
@@ -328,7 +314,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "math_delta"
 				operator = "math_delta"
@@ -337,7 +322,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "opvar_set_float"
 				operator = "opvar_set_float"
@@ -350,7 +334,6 @@
 				input_use_namespace = "true"
 				error = "0"
 			},
-			
 			{
 				name = "opvar_set_float_cur_time"
 				operator = "opvar_set_float"
@@ -363,7 +346,6 @@
 				input_use_namespace = "true"
 				error = "0"
 			},
-			
 			{
 				name = "math_float"
 				operator = "math_float"
@@ -377,7 +359,6 @@
 				input2 = "@private_stack_opvars.stored_time"
 				apply = "sub"
 			},
-			
 			{
 				name = "math_float_1"
 				operator = "math_float"
@@ -387,7 +368,6 @@
 				execute_once = "0"
 				apply = "add"
 			},
-			
 			{
 				name = "opvar_set_float_5"
 				operator = "opvar_set_float"
@@ -412,7 +392,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -483,7 +462,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "has_opvar"
 				operator = "math_string"
@@ -492,7 +470,6 @@
 				input1 = "@public.opvar_name"
 				input2 = "foo"
 			},
-			
 			{
 				name = "get_opvar"
 				operator = "opvar_get_float"
@@ -502,7 +479,6 @@
 				input_field_name = "@public.opvar_name"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "filter_vol_opvar"
 				operator = "math_filter_float"
@@ -510,7 +486,6 @@
 				input_max_velocity = "@public.filter_speed"
 				input = "@get_opvar.output"
 			},
-			
 			{
 				name = "remap_opvar"
 				operator = "math_curve_2d_4knot"
@@ -529,7 +504,6 @@
 				execute_once = "0"
 				curve_type = "linear"
 			},
-			
 			{
 				name = "opvar_switch"
 				operator = "ctrl_switch_float"
@@ -541,7 +515,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "set_output_float"
 				operator = "opvar_set_float"
@@ -566,7 +539,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -637,7 +609,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "has_opvar"
 				operator = "math_string"
@@ -646,7 +617,6 @@
 				input1 = "@public.opvar_name"
 				input2 = "foo"
 			},
-			
 			{
 				name = "get_opvar"
 				operator = "opvar_get_float"
@@ -656,7 +626,6 @@
 				input_field_name = "@public.opvar_name"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "filter_opvar"
 				operator = "math_filter_float"
@@ -664,7 +633,6 @@
 				input_max_velocity = "@public.filter_speed"
 				input = "@get_opvar.output"
 			},
-			
 			{
 				name = "remap_opvar"
 				operator = "math_curve_2d_4knot"
@@ -683,7 +651,6 @@
 				execute_once = "0"
 				curve_type = "linear"
 			},
-			
 			{
 				name = "random_perc"
 				operator = "math_random_float"
@@ -693,7 +660,6 @@
 				execute_once = "false"
 				round_to_int = "0"
 			},
-			
 			{
 				name = "random_compare"
 				operator = "math_float"
@@ -704,7 +670,6 @@
 				execute_once = "0"
 				apply = "less_than"
 			},
-			
 			{
 				name = "output_switch"
 				operator = "ctrl_switch_float"
@@ -715,7 +680,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "set_output_float"
 				operator = "opvar_set_float"
@@ -738,7 +702,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -804,7 +767,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "private_stack_opvars"
 				operator = "util_null"
@@ -825,7 +787,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "sos_import_stack_burst_length"
 				operator = "sos_import_stack"
@@ -849,7 +810,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "sos_import_stack_random_delay"
 				operator = "sos_import_stack"
@@ -873,7 +833,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "random_delay"
 				operator = "math_random_float"
@@ -884,7 +843,6 @@
 				execute_once = "0"
 				round_to_int = "0"
 			},
-			
 			{
 				name = "remap_time_to_delay"
 				operator = "math_curve_2d_4knot"
@@ -902,7 +860,6 @@
 				execute_once = "0"
 				curve_type = "linear"
 			},
-			
 			{
 				name = "mult_delay_time"
 				operator = "math_float"
@@ -913,7 +870,6 @@
 				execute_once = "0"
 				apply = "mult"
 			},
-			
 			{
 				name = "opvar_set_float_random_reset"
 				operator = "opvar_set_float"
@@ -927,7 +883,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "compare_delay_time"
 				operator = "math_float"
@@ -938,7 +893,6 @@
 				execute_once = "0"
 				apply = "greater_than_or_equal"
 			},
-			
 			{
 				name = "compare_burst_time"
 				operator = "math_float"
@@ -949,7 +903,6 @@
 				execute_once = "0"
 				apply = "greater_than_or_equal"
 			},
-			
 			{
 				name = "opvar_set_float"
 				operator = "opvar_set_float"
@@ -963,7 +916,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "opvar_set_float_01"
 				operator = "opvar_set_float"
@@ -977,7 +929,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "remap_time_to_volume"
 				operator = "math_curve_2d_4knot"
@@ -995,21 +946,18 @@
 				execute_once = "0"
 				curve_type = "linear"
 			},
-			
 			{
 				name = "print_play_sound_time"
 				operator = "util_print_float"
 				input_execute = "@compare_delay_time.output"
 				input = "@sos_import_stack_burst_length.output_time"
 			},
-			
 			{
 				name = "print_play_sound_volume"
 				operator = "util_print_float"
 				input_execute = "@compare_delay_time.output"
 				input = "@sos_import_stack_burst_length.output_time"
 			},
-			
 			{
 				name = "play_sound_placeholder"
 				execute_once = "true"
@@ -1032,7 +980,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "soundevent_control"
 				operator = "soundevent_control"
@@ -1049,7 +996,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1150,7 +1096,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "soundevent_get_info"
 				operator = "soundevent_get_info"
@@ -1158,7 +1103,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "random_pitch"
 				operator = "math_random_float"
@@ -1169,7 +1113,6 @@
 				execute_once = "1"
 				round_to_int = "0"
 			},
-			
 			{
 				name = "random_volume"
 				operator = "math_random_float"
@@ -1180,7 +1123,6 @@
 				execute_once = "1"
 				round_to_int = "0"
 			},
-			
 			{
 				name = "import_vol_opvar_switch"
 				operator = "sos_import_stack"
@@ -1232,7 +1174,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -1250,7 +1191,6 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "loop_print"
 				execute_once = "true"
@@ -1258,7 +1198,6 @@
 				operator = "util_print_string"
 				input = "@public.soundevent_name"
 			},
-			
 			{
 				name = "looping_soundevent_info"
 				operator = "util_null"
@@ -1286,7 +1225,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "math_float_1"
 				operator = "math_float"
@@ -1297,13 +1235,11 @@
 				execute_once = "0"
 				apply = "less_than"
 			},
-			
 			{
 				name = "soundevent_control"
 				operator = "soundevent_control"
 				input_add_dependent = "@math_float_1.output"
 			},
-			
 			{
 				name = "start_looping_soundevent"
 				operator = "soundevent_start"
@@ -1321,7 +1257,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1492,7 +1427,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "private_stack_opvars"
 				operator = "util_null"
@@ -1513,7 +1447,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "soundevent_get_info"
 				operator = "soundevent_get_info"
@@ -1521,7 +1454,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "random_seeder"
 				operator = "math_float"
@@ -1533,13 +1465,11 @@
 				execute_once = "0"
 				apply = "add"
 			},
-			
 			{
 				name = "soundevent_control"
 				operator = "soundevent_control"
 				input_add_dependent = "@soundevent_get_info.output_unstopped"
 			},
-			
 			{
 				name = "random_pitch"
 				operator = "math_random_float"
@@ -1551,14 +1481,12 @@
 				execute_once = "0"
 				round_to_int = "0"
 			},
-			
 			{
 				name = "print_rand_pitch"
 				operator = "util_print_float"
 				input_execute = "@private_stack_opvars.random_delay_toggle"
 				input = "@random_pitch.output"
 			},
-			
 			{
 				name = "random_volume"
 				operator = "math_random_float"
@@ -1570,7 +1498,6 @@
 				execute_once = "0"
 				round_to_int = "0"
 			},
-			
 			{
 				name = "import_vol_opvar_switch"
 				operator = "sos_import_stack"
@@ -1622,7 +1549,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -1640,14 +1566,12 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "print_rand_vol"
 				operator = "util_print_float"
 				input_execute = "@private_stack_opvars.random_delay_toggle"
 				input = "@volume_accumulate.output"
 			},
-			
 			{
 				name = "random_delay"
 				operator = "math_random_float"
@@ -1659,14 +1583,12 @@
 				execute_once = "0"
 				round_to_int = "0"
 			},
-			
 			{
 				name = "print_rand_delay"
 				operator = "util_print_float"
 				input_execute = "@private_stack_opvars.random_delay_toggle"
 				input = "@random_delay.output"
 			},
-			
 			{
 				name = "opvar_set_float_1"
 				operator = "opvar_set_float"
@@ -1680,7 +1602,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "opvar_set_float"
 				operator = "opvar_set_float"
@@ -1694,7 +1615,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "math_float"
 				operator = "math_float"
@@ -1706,7 +1626,6 @@
 				execute_once = "0"
 				apply = "sub"
 			},
-			
 			{
 				name = "math_float_1"
 				operator = "math_float"
@@ -1718,7 +1637,6 @@
 				execute_once = "0"
 				apply = "greater_than_or_equal"
 			},
-			
 			{
 				name = "opvar_set_float_2"
 				operator = "opvar_set_float"
@@ -1732,14 +1650,12 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "position_random"
 				input_execute = "@math_float_1.output"
@@ -1748,7 +1664,6 @@
 				input_radius_max = "@public.position_random_max_radius"
 				input_position = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "ctrl_switch_float3"
 				operator = "ctrl_switch_float3"
@@ -1759,28 +1674,24 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "print_play_sound"
 				operator = "util_print_float"
 				input_execute = "@math_float_1.output"
 				input = "@soundevent_get_info.output_elapsed_time"
 			},
-			
 			{
 				name = "print_position"
 				input_execute = "@math_float_1.output"
 				operator = "util_print_float3"
 				input = "@ctrl_switch_float3.output"
 			},
-			
 			{
 				name = "print_play_sound_name"
 				operator = "util_print_string"
 				input_execute = "@math_float_1.output"
 				input = "@public.soundevent_name"
 			},
-			
 			{
 				name = "oneshot_soundevent_info"
 				operator = "util_null"
@@ -1803,7 +1714,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_opvar_perc"
 				operator = "sos_import_stack"
@@ -1855,7 +1765,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "start_oneshot_soundevent"
 				operator = "soundevent_start"
@@ -1874,7 +1783,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1900,7 +1808,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "soundevent_get_info"
 				operator = "soundevent_get_info"
@@ -1908,13 +1815,11 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "soundevent_control"
 				operator = "soundevent_control"
 				input_add_dependent = "@soundevent_get_info.output_unstopped"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -1932,7 +1837,6 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "soundscape_soundevent_info"
 				operator = "util_null"
@@ -1945,7 +1849,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "start_soundscape_soundevent"
 				operator = "soundevent_start"
@@ -1963,7 +1866,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1999,7 +1901,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "private_stack_opvars"
 				operator = "util_null"
@@ -2020,7 +1921,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "math_delta"
 				operator = "math_delta"
@@ -2030,7 +1930,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "opvar_set_float"
 				operator = "opvar_set_float"
@@ -2044,7 +1943,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "sos_import_stack_delay"
 				operator = "sos_import_stack"
@@ -2068,7 +1966,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "math_float"
 				operator = "math_float"
@@ -2080,7 +1977,6 @@
 				execute_once = "0"
 				apply = "greater_than_or_equal"
 			},
-			
 			{
 				name = "opvar_set_float_1"
 				operator = "opvar_set_float"
@@ -2094,7 +1990,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "math_delta_1"
 				operator = "math_delta"
@@ -2104,7 +1999,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "sos_import_stack_ramp"
 				operator = "sos_import_stack"
@@ -2128,7 +2022,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "ctrl_switch_float"
 				operator = "ctrl_switch_float"
@@ -2140,7 +2033,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "math_curve_2d_4knot"
 				operator = "math_curve_2d_4knot"
@@ -2159,7 +2051,6 @@
 				execute_once = "0"
 				curve_type = "linear"
 			},
-			
 			{
 				name = "math_float_1"
 				operator = "math_float"
@@ -2171,7 +2062,6 @@
 				execute_once = "0"
 				apply = "greater_than_or_equal"
 			},
-			
 			{
 				name = "opvar_set_float_2"
 				operator = "opvar_set_float"
@@ -2185,7 +2075,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "opvar_set_float_3"
 				operator = "opvar_set_float"
@@ -2199,7 +2088,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "opvar_set_float_4"
 				operator = "opvar_set_float"
@@ -2213,13 +2101,11 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "print_output_ramp"
 				operator = "util_print_float"
 				input = "@math_curve_2d_4knot.output"
 			},
-			
 			{
 				name = "soundevent_get_info"
 				operator = "soundevent_get_info"
@@ -2227,7 +2113,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "math_float_stop_time"
 				operator = "math_float"
@@ -2239,7 +2124,6 @@
 				execute_once = "0"
 				apply = "less_than_or_equal"
 			},
-			
 			{
 				name = "update_prevent_stop"
 				operator = "soundevent_control"
@@ -2256,7 +2140,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -2325,19 +2208,16 @@
 					}
 				}
 			},
-			
 			{
 				name = "source_info"
 				operator = "game_get_source_info"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "get_vsnd"
 				operator = "opvar_get_vsnd"
@@ -2348,12 +2228,10 @@
 				input_use_namespace = "false"
 				array_selection_type = "random_exclusive"
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "pitch_random"
 				operator = "math_random_float"
@@ -2361,7 +2239,6 @@
 				input_min = "@public.pitch_min"
 				input_max = "@public.pitch_max"
 			},
-			
 			{
 				name = "volume_random"
 				operator = "math_random_float"
@@ -2369,7 +2246,6 @@
 				input_min = "@public.volume_min"
 				input_max = "@public.volume_max"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
@@ -2380,7 +2256,6 @@
 				input_soundlevel = "65.000000"
 				input_event_type = "@public.event_type"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -2398,21 +2273,18 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@volume_accumulate.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "volume_fan"
 				operator = "util_float_to_speakers"
 				execute_once = "false"
 				input = "@volume_accumulate.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -2436,7 +2308,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -2515,24 +2386,20 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_event_info"
 				operator = "soundevent_get_info"
 			},
-			
 			{
 				name = "globals"
 				operator = "get_system_globals"
 				input_execute = "1"
 				input_listener_index = "0"
 			},
-			
 			{
 				name = "source_info"
 				operator = "game_get_source_info"
 			},
-			
 			{
 				name = "get_entity_info"
 				input_execute = "1"
@@ -2541,14 +2408,12 @@
 				input_default_world_position = "@public.position"
 				input_default_local_position = "@globals.output_listener_front"
 			},
-			
 			{
 				name = "distance_to_source"
 				operator = "calc_distance"
 				input_position1 = "@get_entity_info.output_position"
 				input_position2 = "@globals.output_listener_position"
 			},
-			
 			{
 				name = "import_dist_limit"
 				operator = "sos_import_stack"
@@ -2567,7 +2432,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "volume_random"
 				operator = "math_random_float"
@@ -2575,7 +2439,6 @@
 				input_min = "@public.volume_min"
 				input_max = "@public.volume_max"
 			},
-			
 			{
 				name = "level_random"
 				operator = "math_random_float"
@@ -2583,7 +2446,6 @@
 				input_min = "@public.level_min"
 				input_max = "@public.level_max"
 			},
-			
 			{
 				name = "pitch_random"
 				operator = "math_random_float"
@@ -2591,7 +2453,6 @@
 				input_min = "@public.pitch_min"
 				input_max = "@public.pitch_max"
 			},
-			
 			{
 				name = "get_vsnd"
 				operator = "opvar_get_vsnd"
@@ -2602,7 +2463,6 @@
 				input_use_namespace = "false"
 				array_selection_type = "random_exclusive"
 			},
-			
 			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
@@ -2613,7 +2473,6 @@
 				input_soundlevel = "@level_random.output"
 				input_event_type = "@public.event_type"
 			},
-			
 			{
 				name = "occlusion"
 				operator = "math_float"
@@ -2621,7 +2480,6 @@
 				input1 = "1.000000"
 				input2 = "1.000000"
 			},
-			
 			{
 				name = "level_apply_mixer"
 				operator = "math_float"
@@ -2629,14 +2487,12 @@
 				input1 = "@mixer.output_level"
 				input2 = "@public.level_max"
 			},
-			
 			{
 				name = "volume_falloff"
 				operator = "calc_falloff"
 				input_distance = "@distance_to_source.output"
 				input_level = "@level_apply_mixer.output"
 			},
-			
 			{
 				name = "volume_accumulate"
 				operator = "math_accumulate12_float"
@@ -2654,21 +2510,18 @@
 				input11 = "1.000000"
 				input12 = "1.000000"
 			},
-			
 			{
 				name = "mixer_trigger"
 				operator = "soundmixer_set_trigger"
 				input_trigger = "@volume_accumulate.output"
 				input_mixgroups = "@mixer.output_mixgroups"
 			},
-			
 			{
 				name = "dsp_emitter"
 				operator = "math_float"
 				apply = "set"
 				input1 = "1.000000"
 			},
-			
 			{
 				name = "dsp_apply_mixer"
 				operator = "math_float"
@@ -2676,7 +2529,6 @@
 				input1 = "@mixer.output_dsp"
 				input2 = "@dsp_emitter.output"
 			},
-			
 			{
 				name = "dsp_distantDSP"
 				operator = "math_float"
@@ -2684,7 +2536,6 @@
 				input1 = "1.000000"
 				input2 = "1.000000"
 			},
-			
 			{
 				name = "dsp_apply_distant"
 				operator = "math_float"
@@ -2692,7 +2543,6 @@
 				input1 = "@dsp_distantDSP.output"
 				input2 = "@dsp_apply_mixer.output"
 			},
-			
 			{
 				name = "speakers_spatialize"
 				operator = "calc_spatialize_speakers"
@@ -2703,13 +2553,11 @@
 				input_listener_left = "@globals.output_listener_left"
 				input_rear_stereo_scale = "1.000000"
 			},
-			
 			{
 				name = "speaker_volume_fan"
 				operator = "util_float_to_speakers"
 				input = "@volume_accumulate.output"
 			},
-			
 			{
 				name = "speakers_apply_volume"
 				operator = "math_speakers"
@@ -2717,7 +2565,6 @@
 				input1 = "@speakers_spatialize.output"
 				input2 = "@speaker_volume_fan.output"
 			},
-			
 			{
 				name = "speakers_limit"
 				operator = "math_speakers"
@@ -2730,7 +2577,6 @@
 				right_rear = "1.000000"
 				input2 = "@speakers_apply_volume.output"
 			},
-			
 			{
 				name = "start_vsnd"
 				operator = "vmix_voice_start"
@@ -2754,7 +2600,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -2776,7 +2621,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_volume_opvar"
 				operator = "opvar_get_float"
@@ -2786,7 +2630,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "get_pitch_opvar"
 				operator = "opvar_get_float"
@@ -2796,7 +2639,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "get_position_opvar"
 				operator = "opvar_get_float3"
@@ -2806,7 +2648,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "import_3d_stack"
 				operator = "sos_import_stack"
@@ -2869,7 +2710,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -2886,7 +2726,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_volume_opvar"
 				operator = "opvar_get_float"
@@ -2896,7 +2735,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "get_soundlevel_opvar"
 				operator = "opvar_get_float"
@@ -2906,7 +2744,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "get_pitch_opvar"
 				operator = "opvar_get_float"
@@ -2916,7 +2753,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "get_position_opvar"
 				operator = "opvar_get_float3"
@@ -2926,7 +2762,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "import_3d_looping_stack"
 				operator = "sos_import_stack"
@@ -2993,7 +2828,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -3010,7 +2844,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_volume_opvar"
 				operator = "opvar_get_float"
@@ -3020,7 +2853,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "get_soundlevel_opvar"
 				operator = "opvar_get_float"
@@ -3030,7 +2862,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "get_pitch_opvar"
 				operator = "opvar_get_float"
@@ -3040,7 +2871,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "import_2d_looping_stack"
 				operator = "sos_import_stack"
@@ -3095,7 +2925,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -3103,7 +2932,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "get_bang_opvar"
 				operator = "opvar_get_float"
@@ -3112,7 +2940,6 @@
 				input_field_name = "sb_bang"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "sos_import_stack_scalebang"
 				operator = "sos_import_stack"
@@ -3155,7 +2982,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -3163,7 +2989,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "set_bang_opvar"
 				operator = "opvar_set_float"
@@ -3173,7 +2998,6 @@
 				input_field_name = "sb_bang"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "soundevent_get_info"
 				operator = "soundevent_get_info"
@@ -3181,7 +3005,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "math_float_stop_time"
 				operator = "math_float"
@@ -3193,7 +3016,6 @@
 				execute_once = "0"
 				apply = "less_than_or_equal"
 			},
-			
 			{
 				name = "math_float_reset_time"
 				operator = "math_float"
@@ -3205,7 +3027,6 @@
 				execute_once = "0"
 				apply = "greater_than"
 			},
-			
 			{
 				name = "reset_bang_opvar"
 				operator = "opvar_set_float"
@@ -3216,7 +3037,6 @@
 				input_field_name = "sb_bang"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "update_prevent_stop"
 				operator = "soundevent_control"
@@ -3233,7 +3053,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -3241,7 +3060,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "soundevent_get_info"
 				operator = "soundevent_get_info"
@@ -3249,7 +3067,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "math_float_stop_time"
 				operator = "math_float"
@@ -3261,13 +3078,11 @@
 				execute_once = "0"
 				apply = "less_than_or_equal"
 			},
-			
 			{
 				name = "update_prevent_stop"
 				operator = "soundevent_control"
 				input_add_dependent = "@math_float_stop_time.output"
 			},
-			
 			{
 				name = "get_running_opvar"
 				operator = "opvar_get_float"
@@ -3276,7 +3091,6 @@
 				input_field_name = "timer_run"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_reset_opvar"
 				operator = "opvar_get_float"
@@ -3285,7 +3099,6 @@
 				input_field_name = "timer_reset"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "import_timer"
 				operator = "sos_import_stack"
@@ -3313,7 +3126,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -3321,7 +3133,6 @@
 				error = "0"
 				execute_once = "1.000000"
 			},
-			
 			{
 				name = "set_running_opvar"
 				input = "1.000000"
@@ -3342,7 +3153,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -3350,7 +3160,6 @@
 				error = "0"
 				execute_once = "1.000000"
 			},
-			
 			{
 				name = "set_running_opvar"
 				input = "0.000000"
@@ -3371,7 +3180,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -3379,7 +3187,6 @@
 				error = "0"
 				execute_once = "1.000000"
 			},
-			
 			{
 				name = "set_reset_opvar"
 				input = "1.000000"
@@ -3400,7 +3207,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -3408,7 +3214,6 @@
 				error = "0"
 				execute_once = "1.000000"
 			},
-			
 			{
 				name = "set_reset_opvar"
 				input = "0.000000"
@@ -3429,7 +3234,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -3550,7 +3354,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "sos_import_stack_play_random"
 				operator = "sos_import_stack"
@@ -3612,7 +3415,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "sos_import_stack_play_random_2"
 				operator = "sos_import_stack"
@@ -3661,7 +3463,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "sos_import_stack_play_looping"
 				operator = "sos_import_stack"
@@ -3708,7 +3509,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				error = "0"
@@ -4149,7 +3949,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_parent_soundscape_vol"
 				operator = "opvar_get_float"
@@ -4159,7 +3958,6 @@
 				input_use_namespace = "true"
 				input_get_parent = "true"
 			},
-			
 			{
 				name = "parent_soundscape_volume_switch"
 				operator = "ctrl_switch_float"
@@ -4170,7 +3968,6 @@
 				error = "0"
 				execute_once = "0"
 			},
-			
 			{
 				name = "heavy_rain_lp_sos_import_soundscape_play_looping"
 				error = "0"
@@ -4250,7 +4047,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "light_rain_lp_sos_import_soundscape_play_looping"
 				error = "0"
@@ -4330,7 +4126,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "light_wind_lp_sos_import_soundscape_play_looping"
 				error = "0"
@@ -4410,7 +4205,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "med_wind_lp_sos_import_soundscape_play_looping"
 				error = "0"
@@ -4490,7 +4284,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "thunder_far_sos_import_soundscape_play_random"
 				error = "0"
@@ -4622,7 +4415,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "thunder_near_sos_import_soundscape_play_random"
 				error = "0"
@@ -4765,7 +4557,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -4791,7 +4582,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "soundscape_test_import"
 				error = "0"
@@ -4826,7 +4616,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -4852,7 +4641,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "random_pos"
 				operator = "math_random_float3"
@@ -4860,14 +4648,12 @@
 				input_radius_max = "@public.radius_max"
 				input_position = "@public.position"
 			},
-			
 			{
 				name = "print_random_pos"
 				operator = "util_print_float3"
 				input_execute = "1.000000"
 				input = "@random_pos.output"
 			},
-			
 			{
 				name = "math_distance"
 				operator = "math_float3"
@@ -4875,7 +4661,6 @@
 				input1 = "@public.position"
 				input2 = "@random_pos.output"
 			},
-			
 			{
 				name = "print_distance"
 				operator = "util_print_float"
@@ -4893,7 +4678,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -4924,14 +4708,12 @@
 					}
 				}
 			},
-			
 			{
 				name = "unpack"
 				operator = "util_elements_float3"
 				input_execute = "1.000000"
 				input = "@public.float3_1"
 			},
-			
 			{
 				name = "pack"
 				operator = "util_pack_float3"
@@ -4951,7 +4733,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				error = "0"
@@ -5462,7 +5243,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "loop_01_sos_import_soundscape_play_looping"
 				error = "0"
@@ -5506,7 +5286,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "random_01_sos_import_soundscape_play_random"
 				error = "0"
@@ -5566,7 +5345,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "random_02_sos_import_soundscape_play_random"
 				error = "0"

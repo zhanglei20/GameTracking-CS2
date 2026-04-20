@@ -3,15 +3,12 @@
 	generic_data_type = "CSosSoundEventGroupSchema"
 	match_all = 
 	{
-		m_vActions = 
-		[
-		]
+		m_vActions = [  ]
 	}
 	match_all_limiter = 
 	{
 		m_vActions = 
 		[
-			
 			{
 				_class = "CSosGroupActionLimitSchema"
 				m_nMaxCount = 3
@@ -24,7 +21,6 @@
 	{
 		m_vActions = 
 		[
-			
 			{
 				_class = "CSosGroupActionSetSoundeventParameterSchema"
 				m_nMaxCount = 3
@@ -35,7 +31,7 @@
 	match_eventtype = 
 	{
 		m_Behavior_Opvar = "kMatch"
-		m_flOpvar = 666.000000
+		m_flOpvar = 666.0
 	}
 	branch_eventtype = 
 	{
@@ -44,7 +40,7 @@
 	match_entityindex = 
 	{
 		m_Behavior_EntIndex = "kMatch"
-		m_flEntIndex = 777.000000
+		m_flEntIndex = 777.0
 	}
 	branch_entityindex = 
 	{
@@ -65,7 +61,6 @@
 		m_nBlockMaxCount = 3
 		m_vActions = 
 		[
-			
 			{
 				_class = "CSosGroupActionLimitSchema"
 				m_nMaxCount = 4
@@ -108,7 +103,7 @@
 	{
 		m_bInvertMatch = true
 		m_Behavior_Opvar = "kMatch"
-		m_flOpvar = 666.000000
+		m_flOpvar = 666.0
 	}
 	branch_opvar_string = 
 	{
@@ -118,15 +113,14 @@
 	{
 		m_vActions = 
 		[
-			
 			{
 				_class = "CSosGroupActionMemberCountEnvelopeSchema"
 				m_nBaseCount = 1
 				m_nTargetCount = 3
-				m_flBaseValue = 1.000000
-				m_flTargetValue = 0.400000
-				m_flAttack = 4.000000
-				m_flDecay = 4.000000
+				m_flBaseValue = 1.0
+				m_flTargetValue = 0.4
+				m_flAttack = 4.0
+				m_flDecay = 4.0
 				m_resultVarName = "envelope_result"
 				m_bSaveToGroup = false
 			},

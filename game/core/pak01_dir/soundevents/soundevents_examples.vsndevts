@@ -3,27 +3,27 @@
 	Example.start_oneshot_import_test = 
 	{
 		type = "example_start_oneshot_import_test"
-		volume_min = 0.100000
-		volume_max = 1.000000
-		pitch_min = 1.500000
-		pitch_max = 2.000000
+		volume_min = 0.1
+		volume_max = 1.0
+		pitch_min = 1.5
+		pitch_max = 2.0
 		vsnd_files = "sounds/diagnostics/bell.vsnd"
 		vsnd_duration = 1.241587
 	}
 	Example.core_start_simple_oneshot = 
 	{
 		type = "core_start_simple_oneshot"
-		volume = 0.500000
+		volume = 0.5
 		vsnd_files = "sounds/diagnostics/bell.vsnd"
 		vsnd_duration = 1.241587
 	}
 	Example.core_start_oneshot = 
 	{
 		type = "core_start_oneshot"
-		volume_min = 0.100000
-		volume_max = 1.000000
-		pitch_min = 0.500000
-		pitch_max = 1.500000
+		volume_min = 0.1
+		volume_max = 1.0
+		pitch_min = 0.5
+		pitch_max = 1.5
 		vsnd_files = "sounds/diagnostics/bell.vsnd"
 		vsnd_duration = 1.241587
 	}

@@ -233,12 +233,7 @@
 	}
 	.BaseFlow.Unreachable = 
 	{
-		Border_Color = 
-		[
-			128,
-			0,
-			0,
-		]
+		Border_Color = [ 128, 0, 0 ]
 		Border_Width = "3px"
 		BorderRadius = "2px"
 		Background_Style = "BDiagPattern"
@@ -1251,12 +1246,7 @@
 				PaintLayer = "NODES"
 				"&:hover" = 
 				{
-					Background_Color = 
-					[
-						255,
-						255,
-						255,
-					]
+					Background_Color = [ 255, 255, 255 ]
 				}
 			}
 			"&:nth-child(n+2)" = 
@@ -1298,12 +1288,7 @@
 				Border = "3px Outside"
 				"&:hover" = 
 				{
-					Background_Color = 
-					[
-						255,
-						255,
-						255,
-					]
+					Background_Color = [ 255, 255, 255 ]
 				}
 			}
 			.PortlabelContainer = 
@@ -1357,12 +1342,7 @@
 				FixedSizeY = 12
 				Margin = "2px"
 				Padding = "4px"
-				Background_Color = 
-				[
-					0,
-					0,
-					0,
-				]
+				Background_Color = [ 0, 0, 0 ]
 				BackgroundImage = "tools/images/pulse_editor/port_param.png"
 			}
 			"&.PortHasError .PortPlug" = 
@@ -1402,12 +1382,7 @@
 				FixedSizeY = 12
 				Margin = "2px"
 				Padding = "4px"
-				Background_Color = 
-				[
-					0,
-					0,
-					0,
-				]
+				Background_Color = [ 0, 0, 0 ]
 				BackgroundImage = "tools/images/pulse_editor/port_result.png"
 			}
 			"&.ValueCategory_Array .PortPlug" = 
@@ -1467,12 +1442,7 @@
 		{
 			.PortPlug = 
 			{
-				ImageTint = 
-				[
-					255,
-					255,
-					255,
-				]
+				ImageTint = [ 255, 255, 255 ]
 			}
 		}
 	}
@@ -1667,14 +1637,14 @@
 		HAlign = "LEFT"
 		TextVAlign = "CENTER"
 		TextHAlign = "RIGHT"
-		Margin_Right = 22.000000
+		Margin_Right = 22.0
 	}
 	.ValueNodeComment = 
 	{
 		HAlign = "RIGHT"
 		TextVAlign = "CENTER"
 		TextHAlign = "LEFT"
-		Margin_Left = 8.000000
+		Margin_Left = 8.0
 	}
 	.RemoteFlowIndicator = 
 	{
@@ -1922,7 +1892,7 @@
 				{
 					FixedSizeX = 5
 					FixedSizeY = 5
-					Margin_Left = -7.500000
+					Margin_Left = -7.5
 					PaintLayer = "NODES"
 					Positioning = "OUTSIDE_PARENT"
 					HAlign = "RIGHT"
@@ -2037,12 +2007,7 @@
 				InteractionPriority = "BASE"
 				MinSizeY = 15
 				Font = "$BaseFontSmall"
-				Foreground_Color = 
-				[
-					196,
-					196,
-					196,
-				]
+				Foreground_Color = [ 196, 196, 196 ]
 				TextHAlign = "CENTER"
 				PaintLayer = "NODES"
 				HAlign = "RIGHT"
@@ -2058,7 +2023,7 @@
 				{
 					FixedSizeX = 5
 					FixedSizeY = 5
-					Margin_Left = -7.500000
+					Margin_Left = -7.5
 					Background_Color = "$Tan"
 					PaintLayer = "NODES"
 					Positioning = "OUTSIDE_PARENT"
@@ -2080,13 +2045,13 @@
 			BorderRadius_BottomRight = 3
 			.TimelineEventSpacer = 
 			{
-				Margin_Left = -12.500000
+				Margin_Left = -12.5
 			}
 		}
 		"&.EditTimeFromPrevious .TimelineEventBar" = 
 		{
 			Margin_Left = 5
-			Margin_Right = 2.500000
+			Margin_Right = 2.5
 			.TimelineEventSpacer = 
 			{
 				Margin_Left = -5

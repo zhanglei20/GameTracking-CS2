@@ -3,11 +3,11 @@
 	generic_data_type = "CNavHullVData"
 	player = 
 	{
-		m_agentRadius = 16.000000
+		m_agentRadius = 16.0
 		m_agentShortHeightEnabled = true
-		m_agentMaxClimb = 16.000000
-		m_agentMaxJumpUpDist = 68.000000
+		m_agentMaxClimb = 16.0
+		m_agentMaxJumpUpDist = 68.0
 		m_agentBorderErosion = 0
-		m_agentMaxJumpDownDist = 157.000000
+		m_agentMaxJumpDownDist = 157.0
 	}
 }

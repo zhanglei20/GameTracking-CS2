@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -22,14 +21,12 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_val1"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value1"
 			},
-			
 			{
 				name = "print_val2"
 				operator = "util_print_float"
@@ -47,7 +44,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -65,14 +61,12 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_val3"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value3"
 			},
-			
 			{
 				name = "print_val4"
 				operator = "util_print_float"
@@ -90,7 +84,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -108,14 +101,12 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_val5"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value5"
 			},
-			
 			{
 				name = "print_val6"
 				operator = "util_print_float"
@@ -133,7 +124,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -167,35 +157,30 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_val1"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value1"
 			},
-			
 			{
 				name = "print_val2"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value2"
 			},
-			
 			{
 				name = "print_val3"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value3"
 			},
-			
 			{
 				name = "print_val4"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value4"
 			},
-			
 			{
 				name = "print_val8"
 				operator = "util_print_float"
@@ -213,7 +198,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -249,42 +233,36 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_val1"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.core_import_test_parent.value1"
 			},
-			
 			{
 				name = "print_val2"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.core_import_test_parent.value2"
 			},
-			
 			{
 				name = "print_val3"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.core_import_test_parent2.value3"
 			},
-			
 			{
 				name = "print_val4"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.core_import_test_parent2.value4"
 			},
-			
 			{
 				name = "print_val8"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value8"
 			},
-			
 			{
 				name = "exec_core_import_test_parent"
 				operator = "sos_import_stack"
@@ -303,7 +281,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -321,28 +298,24 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_val1"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value1"
 			},
-			
 			{
 				name = "print_val2"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value2"
 			},
-			
 			{
 				name = "print_val3"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value3"
 			},
-			
 			{
 				name = "print_val4"
 				operator = "util_print_float"
@@ -360,7 +333,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -379,28 +351,24 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_val1"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.core_import_test_import_scope.core_import_test_parent.value1"
 			},
-			
 			{
 				name = "print_val2"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.core_import_test_import_scope.core_import_test_parent.value2"
 			},
-			
 			{
 				name = "print_val3"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.core_import_test_import_scope.core_import_test_parent2.value3"
 			},
-			
 			{
 				name = "print_val4"
 				operator = "util_print_float"
@@ -418,7 +386,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -447,7 +414,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_vsnd"
 				operator = "opvar_get_vsnd"
@@ -457,28 +423,24 @@
 				input_field_name = "vsnd_files"
 				array_selection_type = "forward"
 			},
-			
 			{
 				name = "print_vsnd_element"
 				operator = "util_print_vsnd"
 				execute_once = "false"
 				input = "@get_vsnd.output"
 			},
-			
 			{
 				name = "print_val1"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value1"
 			},
-			
 			{
 				name = "print_val2"
 				operator = "util_print_float"
 				execute_once = "false"
 				input = "@public.value2"
 			},
-			
 			{
 				name = "print_val3"
 				operator = "util_print_float"
@@ -491,7 +453,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -504,7 +465,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_val1"
 				operator = "util_print_float"
@@ -516,7 +476,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -529,7 +488,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_val2"
 				operator = "util_print_float"
@@ -541,7 +499,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -571,7 +528,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "exec_parent_stack"
 				operator = "sos_import_stack"
@@ -579,7 +535,6 @@
 				auto_connect_public_fields = "true"
 				auto_connect_field_scope = "import_parent_field"
 			},
-			
 			{
 				name = "exec_parent_stack_2"
 				operator = "sos_import_stack"
@@ -593,7 +548,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -640,7 +594,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -660,7 +613,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_01"
 				operator = "sos_import_stack"
@@ -668,7 +620,6 @@
 				auto_connect_public_fields = "true"
 				auto_connect_field_scope = "import_curve_test_01_01"
 			},
-			
 			{
 				name = "import_02"
 				operator = "sos_import_stack"
@@ -682,7 +633,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -722,7 +672,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_parent_string"
 				operator = "opvar_get_string"
@@ -732,7 +681,6 @@
 				input_field_name = "@public.opvar_parent_field"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_parent_curve"
 				operator = "math_opvar_curve_2d"
@@ -741,7 +689,6 @@
 				input_field_name = "@public.opvar_parent_curve"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_parent_string_2"
 				operator = "opvar_get_string"
@@ -751,7 +698,6 @@
 				input_field_name = "parent_string_lookup_2"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_parent_curve_2"
 				operator = "math_opvar_curve_2d"
@@ -760,7 +706,6 @@
 				input_field_name = "parent_curve_lookup_2"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_local_string_namspaced"
 				operator = "opvar_get_string"
@@ -770,7 +715,6 @@
 				input_field_name = "local_field"
 				input_use_namespace = "true"
 			},
-			
 			{
 				name = "get_local_curve_namspaced"
 				operator = "math_opvar_curve_2d"
@@ -779,7 +723,6 @@
 				input_field_name = "local_curve"
 				input_use_namespace = "true"
 			},
-			
 			{
 				name = "get_local_string"
 				operator = "opvar_get_string"
@@ -789,7 +732,6 @@
 				input_field_name = "local_field"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_local_curve"
 				operator = "math_opvar_curve_2d"
@@ -798,7 +740,6 @@
 				input_field_name = "local_curve"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "output"
 				operator = "util_null"
@@ -817,7 +758,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -849,7 +789,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_1_layer_4"
 				operator = "sos_import_stack"
@@ -869,7 +808,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_output_string"
 				operator = "util_print_string"
@@ -881,7 +819,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -913,7 +850,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_1_layer_3"
 				operator = "sos_import_stack"
@@ -926,7 +862,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -939,7 +874,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_1_layer_2"
 				operator = "sos_import_stack"
@@ -952,7 +886,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -992,7 +925,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_parent_string"
 				operator = "opvar_get_string"
@@ -1002,7 +934,6 @@
 				input_field_name = "@public.opvar_parent_field"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_parent_curve"
 				operator = "math_opvar_curve_2d"
@@ -1011,7 +942,6 @@
 				input_field_name = "@public.opvar_parent_curve"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_parent_string_2"
 				operator = "opvar_get_string"
@@ -1021,7 +951,6 @@
 				input_field_name = "parent_string_lookup_2"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_parent_curve_2"
 				operator = "math_opvar_curve_2d"
@@ -1030,7 +959,6 @@
 				input_field_name = "parent_curve_lookup_2"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_local_string_namspaced"
 				operator = "opvar_get_string"
@@ -1040,7 +968,6 @@
 				input_field_name = "local_field"
 				input_use_namespace = "true"
 			},
-			
 			{
 				name = "get_local_curve_namspaced"
 				operator = "math_opvar_curve_2d"
@@ -1049,7 +976,6 @@
 				input_field_name = "local_curve"
 				input_use_namespace = "true"
 			},
-			
 			{
 				name = "get_local_string"
 				operator = "opvar_get_string"
@@ -1059,7 +985,6 @@
 				input_field_name = "local_field"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "get_local_curve"
 				operator = "math_opvar_curve_2d"
@@ -1068,7 +993,6 @@
 				input_field_name = "local_curve"
 				input_use_namespace = "false"
 			},
-			
 			{
 				name = "output"
 				operator = "util_null"
@@ -1087,7 +1011,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1120,7 +1043,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_2_layer_4"
 				operator = "sos_import_stack"
@@ -1141,7 +1063,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_output_string"
 				operator = "util_print_string"
@@ -1153,7 +1074,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1186,7 +1106,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_2_layer_3"
 				operator = "sos_import_stack"
@@ -1200,7 +1119,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1214,7 +1132,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "import_2_layer_2"
 				operator = "sos_import_stack"
@@ -1228,7 +1145,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1241,7 +1157,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "print_output_string"
 				operator = "util_print_string"
@@ -1253,7 +1168,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1278,7 +1192,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "test_3_layer_4"
 				operator = "sos_import_stack"
@@ -1300,7 +1213,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1313,7 +1225,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "test_3_layer_3"
 				operator = "sos_import_stack"
@@ -1326,7 +1237,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1345,7 +1255,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "test_3_layer_2"
 				operator = "sos_import_stack"
@@ -1366,7 +1275,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "public"
 				operator = "util_null"
@@ -1398,7 +1306,6 @@
 					}
 				}
 			},
-			
 			{
 				name = "get_vsnd_1"
 				operator = "opvar_get_vsnd"
@@ -1408,14 +1315,12 @@
 				input_field_name = "vsnd_files_1"
 				array_selection_type = "forward"
 			},
-			
 			{
 				name = "print_vsnd_element_1"
 				operator = "util_print_vsnd"
 				execute_once = "false"
 				input = "@get_vsnd_1.output"
 			},
-			
 			{
 				name = "get_vsnd_2"
 				operator = "opvar_get_vsnd"
@@ -1425,14 +1330,12 @@
 				input_field_name = "vsnd_files_2"
 				array_selection_type = "forward"
 			},
-			
 			{
 				name = "print_vsnd_element_2"
 				operator = "util_print_vsnd"
 				execute_once = "false"
 				input = "@get_vsnd_2.output"
 			},
-			
 			{
 				name = "get_vsnd_3"
 				operator = "opvar_get_vsnd"
@@ -1442,14 +1345,12 @@
 				input_field_name = "vsnd_files_3"
 				array_selection_type = "forward"
 			},
-			
 			{
 				name = "print_vsnd_element_3"
 				operator = "util_print_vsnd"
 				execute_once = "false"
 				input = "@get_vsnd_3.output"
 			},
-			
 			{
 				name = "get_vsnd_4"
 				operator = "opvar_get_vsnd"
@@ -1459,7 +1360,6 @@
 				input_field_name = "vsnd_files_4"
 				array_selection_type = "forward"
 			},
-			
 			{
 				name = "print_vsnd_element_4"
 				operator = "util_print_vsnd"

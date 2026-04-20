@@ -4,7 +4,6 @@
 	{
 		operators = 
 		[
-			
 			{
 				name = "start_vmix"
 				operator = "vmix_voice_start"
