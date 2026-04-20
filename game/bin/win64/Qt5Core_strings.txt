@@ -9981,7 +9981,6 @@ ActionChanged
 ActionMask
 ActionRemoved
 ActionsContextMenu
-Activate
 Activate by mouseclick
 ActivateControl
 ActivationChange
@@ -10925,7 +10924,6 @@ Desktop
 DesktopLocation
 Destination file exists
 Destination file is the same file.
-Destroy
 Destroy hwnd 
 DevanagariScript
 DevicePaths
@@ -18511,7 +18509,6 @@ dingen.no
 dinosaur.museum
 direct
 direct.quickconnect.to
-direction
 directionChanged
 directory changed
 directoryChanged
@@ -22844,7 +22841,6 @@ news
 news.hu
 newspaper.museum
 newyork.museum
-next
 nextdirect
 nexus
 neyagawa.osaka.jp

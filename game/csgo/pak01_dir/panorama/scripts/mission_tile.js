@@ -267,6 +267,7 @@ var MissionTile;
     }
     function PlayMission() {
         $.DispatchEvent('PlayMenu_SwitchGameModeTab', $.GetContextPanel().Data().m_oMissionData.gamemode);
+        $.DispatchEvent('CSGOPlaySoundEffect', 'mainmenu_mission_start', 'MOUSE');
         LobbyAPI.CreateSession();
         const gameMode = $.GetContextPanel().Data().m_oMissionData.gamemode;
         let gameType = "classic";

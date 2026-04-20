@@ -7,7 +7,7 @@
 var CapabilityCanPatch;
 (function (CapabilityCanPatch) {
     function ResetPos() {
-        $.GetContextPanel().Data().patchCharPos = 0;
+        $.GetContextPanel().Data().charCardinal = 'e';
         $.GetContextPanel().Data().bFirstCameraAnim = false;
         $.GetContextPanel().Data().prevCameraSlot = 0;
     }
@@ -39,59 +39,34 @@ var CapabilityCanPatch;
     CapabilityCanPatch.CameraAnim = CameraAnim;
     ;
     let m_positionData = [
-        { type: 'chest', loadoutSlot: 'melee', pos: 0 },
-        { type: 'rightarm', loadoutSlot: 'rifle1', pos: 1 },
-        { type: 'rightleg', loadoutSlot: 'rifle1', pos: 1 },
-        { type: 'rightside', loadoutSlot: 'rifle1', pos: 1 },
-        { type: 'back', loadoutSlot: 'rifle1', pos: 2 },
-        { type: 'leftarm', loadoutSlot: 'rifle1', pos: -1 },
-        { type: 'leftside', loadoutSlot: 'rifle1', pos: -1 },
-        { type: 'leftleg', loadoutSlot: 'rifle1', pos: -1 },
+        { type: 'chest', loadoutSlot: 'melee', direction: 'e' },
+        { type: 'rightarm', loadoutSlot: 'rifle1', direction: 'n' },
+        { type: 'rightleg', loadoutSlot: 'rifle1', direction: 'n' },
+        { type: 'rightside', loadoutSlot: 'rifle1', direction: 'n' },
+        { type: 'back', loadoutSlot: 'rifle1', direction: 'w' },
+        { type: 'leftarm', loadoutSlot: 'rifle1', direction: 's' },
+        { type: 'leftside', loadoutSlot: 'rifle1', direction: 's' },
+        { type: 'leftleg', loadoutSlot: 'rifle1', direction: 's' },
     ];
     function _UpdatePreviewPanelSettingsForPatchPosition(charItemId, activeIndex = 0, contextPanel) {
-        let elPreviewPanel = contextPanel.FindChildInLayoutFile('CanApplyItemModel');
+        const elPreviewPanel = contextPanel.FindChildInLayoutFile('CanApplyItemModel');
         const charTeam = InventoryAPI.GetItemTeam(elPreviewPanel.Data().id);
-        let setting_team = charTeam.search('Team_CT') !== -1 ? 'ct' : 't';
-        let patchPosition = InventoryAPI.GetCharacterPatchPosition(charItemId, activeIndex.toString());
-        let oPositionData = m_positionData.filter(entry => entry.type === patchPosition)[0];
+        const setting_team = charTeam.search('Team_CT') !== -1 ? 'ct' : 't';
+        const patchPosition = InventoryAPI.GetCharacterPatchPosition(charItemId, activeIndex.toString());
+        const oPositionData = m_positionData.filter(entry => entry.type === patchPosition)[0];
         if (!oPositionData) {
             contextPanel.Data().bFirstCameraAnim = false;
             return;
         }
-        InspectModelImage.SetCharScene(elPreviewPanel.Data().id, LoadoutAPI.GetItemID(setting_team, oPositionData.loadoutSlot));
-        let numTurns = 0;
-        let CharPos = contextPanel.Data().patchCharPos;
-        if (CharPos !== oPositionData.pos) {
-            if (CharPos === 0 && oPositionData.pos === 1 ||
-                CharPos === 1 && oPositionData.pos === 2 ||
-                CharPos === 2 && oPositionData.pos === -1 ||
-                CharPos === -1 && oPositionData.pos === 0) {
-                numTurns = 1;
-            }
-            else if (CharPos === 2 && oPositionData.pos === 1 ||
-                CharPos === 1 && oPositionData.pos === 0 ||
-                CharPos === 0 && oPositionData.pos === -1 ||
-                CharPos === -1 && oPositionData.pos === 2) {
-                numTurns = -1;
-            }
-            else if (CharPos === 2 && oPositionData.pos === 0 ||
-                CharPos === 1 && oPositionData.pos === -1 ||
-                CharPos === -1 && oPositionData.pos === 1 ||
-                CharPos === 0 && oPositionData.pos === 2) {
-                numTurns = 2;
-            }
+        InspectModelImage.SetCharScene(elPreviewPanel.Data().id, LoadoutAPI.GetItemID(setting_team, oPositionData.loadoutSlot), contextPanel);
+        if (contextPanel.Data().charCardinal !== oPositionData.direction) {
+            contextPanel.Data().charCardinal = oPositionData.direction;
         }
-        contextPanel.Data().patchCharPos = oPositionData.pos;
-        let elModelPanel = elPreviewPanel.FindChildInLayoutFile("CharPreviewPanel");
-        if (numTurns < 0) {
-            elModelPanel.TurnLeftCount(numTurns * -1);
-        }
-        else {
-            elModelPanel.TurnRightCount(numTurns);
-        }
-        patchPosition = !patchPosition ? 'wide_intro' : patchPosition + _CameraForModel(charItemId, activeIndex);
-        elModelPanel.Data().camera = 'char_inspect_' + patchPosition;
-        elModelPanel.TransitionToCamera('cam_char_inspect_' + patchPosition, 1.25);
+        const elModelPanel = elPreviewPanel.FindChildInLayoutFile("CharPreviewPanel");
+        $.Schedule(.1, () => { elModelPanel.SetCardinalFacing(contextPanel.Data().charCardinal); });
+        const camSuffix = !patchPosition ? 'wide_intro' : patchPosition + _CameraForModel(charItemId, activeIndex);
+        elModelPanel.Data().camera = 'char_inspect_' + camSuffix;
+        elModelPanel.TransitionToCamera('cam_char_inspect_' + camSuffix, 1.2);
     }
     function _CameraForModel(charItemId, activeIndex) {
         const modelplayer = ItemInfo.GetModelPlayer(charItemId);

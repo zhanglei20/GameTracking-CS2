@@ -87,7 +87,6 @@ VS
 	DynamicCombo( D_BAKED_LIGHTING_FROM_LIGHTMAP, 0..1 );
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
@@ -328,13 +327,17 @@ VS
 		BoolAttribute(environmentmapped, true);
 		BoolAttribute(environmentmappeddynamic, true);
 	#endif
+	#if (S_PAINT_VERTEX_COLORS == 0)
+		BoolAttribute(environmentmapped, true);
+		BoolAttribute(environmentmappeddynamic, true);
+	#endif
 	#if (S_PAINT_VERTEX_COLORS == 1)
 		BoolAttribute(VertexPaintUIPickColorAlpha, F_BLEND_MODE>0);
 		BoolAttribute(VertexPaintUIPickColor, true);
 	#endif
-	#if (S_PAINT_VERTEX_COLORS == 0)
-		BoolAttribute(environmentmapped, true);
-		BoolAttribute(environmentmappeddynamic, true);
+	#if (S_MODE_TOOLS_VIS == 0)
+		BoolAttribute(VertexPaintUIPickColorAlpha, F_BLEND_MODE>0);
+		BoolAttribute(VertexPaintUIPickColor, true);
 	#endif
 	#if (S_LIT == 1)
 		BoolAttribute(environmentmapped, true);
@@ -344,10 +347,6 @@ VS
 		IntAttribute(MaterialLayerCount, 1);
 		BoolAttribute(environmentmapped, true);
 		BoolAttribute(environmentmappeddynamic, true);
-	#endif
-	#if (S_MODE_TOOLS_VIS == 0)
-		BoolAttribute(VertexPaintUIPickColorAlpha, F_BLEND_MODE>0);
-		BoolAttribute(VertexPaintUIPickColor, true);
 	#endif
 	
 	// Variant Attributes
@@ -390,7 +389,6 @@ PS
 	bool g_bDisableNormalMapping < Attribute("g_bDisableNormalMapping"); UiType(CheckBox); >;
 	bool g_bHighlightDeprecated < Attribute("g_bHighlightDeprecated"); UiType(CheckBox); >;
 	bool g_bIsDeprecated < Attribute("bIsDeprecated"); UiType(CheckBox); >;
-	bool g_bMaskVertexColor1 < UiType(CheckBox); Expression(g_nVertexColorMode1==0); >;
 	bool g_bRenderingToCubemaps < Attribute("g_bRenderingToCubemaps"); UiType(CheckBox); >;
 	bool g_bShowLPVVoxels < Attribute("g_bShowLPVVoxels"); UiType(CheckBox); >;
 	bool g_bShowLightmapTexels < Attribute("g_bShowLightmapTexels"); UiType(CheckBox); >;
@@ -441,6 +439,7 @@ PS
 	float g_fTextureRoughnessBrightness1 < Default(1); Range(0, 4); UiType(Slider); UiGroup("Material1/Lighting/12"); >;
 	float g_fTextureNormalContrast1 < Default(1); Range(-2, 2); UiType(Slider); UiGroup("Material1/Lighting/13"); >;
 	float g_flTexCoordRotation1 < Range(-360, 360); UiType(Slider); UiGroup("Material1/Texture Transform,35/13"); UiVisibility(1); >;
+	bool g_bMetalness1 < Default(1); UiType(CheckBox); UiGroup("Material1/Lighting/14"); >;
 	CreateInputTexture2D(TextureAmbientOcclusion1, Linear, 8, "", "_ao", "Material1/Lighting,20/20", Default4(1, 1, 1, 0));
 	float g_fTextureColorContrast1 < Default(1); Range(0, 4); UiType(Slider); UiGroup("Material1/Color Correction/20"); >;
 	float g_flHeightMapScale1 < Default(1); Range(-4, 4); UiType(Slider); UiGroup("Material1/Height/20"); >;
@@ -451,7 +450,6 @@ PS
 	float g_fTextureColorBrightness1 < Default(1); Range(-8, 8); UiType(Slider); UiGroup("Material1/Color Correction/40"); >;
 	int g_nColorCorrectionMode1 < UiOptions("0=Mask All,1=Mask only Tint"); UiType(Enum); UiGroup("Material1/Color Correction/45"); >;
 	bool g_bModelTint1 < Default(1); UiType(CheckBox); UiGroup("Material1/Color Correction/60"); >;
-	int g_nVertexColorMode1 < Range4(0, 0, 0, 0, 2, 2, 2, 2); UiOptions("0=Masked,1=Unmasked,2=Disabled"); UiType(Enum); UiGroup("Material1/Color Correction/60"); >;
 	bool g_bSnowLayer1 < UiType(CheckBox); UiGroup("Material1/Snow,100"); >;
 	
 	// Color
@@ -461,6 +459,7 @@ PS
 	float g_fTextureColorContrast < Default(1); Range(0, 4); UiType(Slider); UiGroup("Color/Color Correction/20"); >;
 	float g_fTextureColorSaturation < Default(1); Range(0, 4); UiType(Slider); UiGroup("Color/Color Correction/30"); >;
 	float g_fTextureColorBrightness < Default(1); Range(-8, 8); UiType(Slider); UiGroup("Color/Color Correction/40"); >;
+	float g_flBlendSoftnessDistanceModifierStrength < Default(1); UiType(Slider); UiGroup("Color/120"); >;
 	
 	// Lighting
 	CreateInputTexture2D(TextureMetalness, Linear, 8, "", "_metal", "Lighting,30/Metalness,30/10", Default4(0, 0, 0, 0));

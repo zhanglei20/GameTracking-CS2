@@ -220,7 +220,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .CRT$XIAC
 .fgd
 /e,/select,"
-13:41:54
+11:29:41
 1AcceptIfItemPicked()
 1OnAccept()
 1OnAddonDoubleClicked()
@@ -256,7 +256,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vppV
+2\vp$9
+2\vpDp
 2accepted()
 2clicked()
 2customContextMenuRequested( const QPoint & )
@@ -950,13 +951,14 @@ AcceptIfItemPicked
 Active
 Already running on this machine. Only one instance at a time is allowed.
 AlternateBase
-AnimGraph2Clip()
 AnimgraphPicker()
 Applies ONLY if the item is a member of an array
 Applies ONLY if the item is the parent of an array
 Applies to any attributes
 Applies to array parents or non-array items (just not array members)
 AssetBrowse( %s )
+AssetBrowse( vnmclip )
+AssetBrowse( vnmgraph )
 Attribute.%s.%s
 B`?translate@QPainter@@QEAAXAEBVQPointF@@@Z
 Bad class description
@@ -1049,6 +1051,7 @@ Expected a default value
 Expected a string literal for description
 Expected a string or integer as default value
 Expected an integer default value after <description> ':'
+Expected an integer default value after <friendlyName> ':'
 Expected identifier after '@'
 Expected matching '{' '}'
 Expected matching '{' '}' (started on line %d)
@@ -1174,7 +1177,6 @@ OnTextDownArrow
 OnTextUpArrow
 OnToggleOrientationAction
 Optional properties not fully supported in property editor (text editor required)
-P2`A
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
@@ -1198,8 +1200,8 @@ R?metaObject@QRegExpValidator@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QTextDocument@@UEBAPEBUQMetaObject@@XZ
 RSDSb
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fppV
 R\r?hitTestComplexControl@QProxyStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
+R\vpDp
 Reset to Default
 RichItemList_Accept
 RichItemList_Reject
@@ -1348,7 +1350,6 @@ ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 \n?edit@QAbstractItemView@@MEAA_NAEBVQModelIndex@@W4EditTrigger@1@PEAVQEvent@@@Z
 \n?editorDestroyed@QAbstractItemView@@MEAAXPEAVQObject@@@Z
 \n?editorEvent@QStyledItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
-\nPLg
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \n\t\t\tQPushButton {\n\t\t\t\tbackground-color : rgb( 49, 69, 80 );\n\t\t\t\tborder: 2px solid rgb( 143, 171, 187 );\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tmin-height : 18px;\n\t\t\t\tfont: bold 12pt;\n\t\t\t}\n\t\t\tQPushButton:hover:!pressed {\n\t\t\t\tbackground-color : rgb( 100, 140, 160 );\n\t\t\t}\n\t\t\tQPushButton:disabled {\n\t\t\t\tbackground-color : rgb( 40, 44, 46 );\n\t\t\t\tborder: 2px solid rgb( 106, 111, 114 );\n\t\t\t}\n\t\t
 \n\t\t\t\tQPushButton {\n\t\t\t\t\tbackground-color : rgb( 49, 69, 80 );\n\t\t\t\t\tborder: 2px solid rgb( 143, 171, 187 );\n\t\t\t\t\tborder-radius: 5px;\n\t\t\t\t\tfont: bold 10pt;\n\t\t\t\t}\n\t\t\t\tQPushButton:hover:!pressed {\n\t\t\t\t\tbackground-color : rgb( 100, 140, 160 );\n\t\t\t\t}\n\t\t\t\tQPushButton:disabled {\n\t\t\t\t\tbackground-color : rgb( 40, 44, 46 );\n\t\t\t\t\tborder: 2px solid rgb( 106, 111, 114 );\n\t\t\t\t}\n\t\t\t
@@ -1390,7 +1391,6 @@ ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 \v?exec@QMenu@@QEAAPEAVQAction@@AEBVQPoint@@PEAV2@@Z
 \v?expandingDirections@QBoxLayout@@UEBA?AV?$QFlags@W4Orientation@Qt@@@@XZ
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
-\vppV
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
 ]Q?light@QPalette@@QEBAAEBVQBrush@@XZ
 ^?text@QPalette@@QEBAAEBVQBrush@@XZ
@@ -1410,6 +1410,7 @@ alert_attr
 alert_func
 animgraph
 animgraph2_clip
+animgraph2_graph
 animgraph2_identifier
 animgraph_enum
 applicable_to
@@ -1427,9 +1428,10 @@ bodygroupchoices
 button_zone
 c\v?event@QSplitterHandle@@MEAA_NPEAVQEvent@@@Z
 cableclass
+choice_group
 choices
+choreoanchorclass
 clicked
-clip
 collision_property
 collisionmesh
 color255
@@ -1448,6 +1450,7 @@ entitygroup
 exclude
 expects_cpp_declaration
 explorer.exe
+fgd_metadata_merge
 file://{images}/%s
 filter
 filterText
@@ -1614,7 +1617,6 @@ qt5core.dll
 qt5cored.dll
 qt_dockwidget_closebutton
 qt_dockwidget_floatbutton
-r\vppV
 randomizable
 readonly
 readonly_tools_asset_info.bin
@@ -1667,7 +1669,6 @@ vecline
 visgroupfilter
 vmap
 vmesh
-vnmclip
 vphzc
 vpost
 vsky
@@ -1675,7 +1676,9 @@ vtex
 w\n?connectImpl@QObject@@CA?AVConnection@QMetaObject@@PEBV1@PEAPEAX01PEAVQSlotObjectBase@QtPrivate@@W4ConnectionType@Qt@@PEBHPEBU3@@Z
 w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 workshop_items
+world_angle
 world_point
+world_transform
 writable_func
 xT?pointSizeF@QFont@@QEBANXZ
 x\f?generatedIconPixmap@QCommonStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z

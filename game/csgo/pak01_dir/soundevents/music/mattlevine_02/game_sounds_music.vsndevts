@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/mattlevine_02/mainmenu.vsnd"
+		vsnd_duration = 240.92308
 	}
 	Music.MVPPreview.mattlevine_02 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/mattlevine_02/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/mattlevine_02/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 10.637687
 	}
 	Music.Selection.mattlevine_02 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/mattlevine_02/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 30.924036
 	}
 	Music.MatchFound.mattlevine_02 = 
 	{
@@ -72,6 +78,7 @@
 			4.411, 7.941, 11.47, 15.0,
 			18.529, 22.058, 25.588, 29.117,
 		]
+		vsnd_duration = 29.117641
 	}
 	Music.LoadingScreen.mattlevine_02 = 
 	{
@@ -101,6 +108,7 @@
 			"sounds/music/mattlevine_02/startaction_02.vsnd",
 			"sounds/music/mattlevine_02/startaction_03.vsnd",
 		]
+		vsnd_duration = 19.852947
 	}
 	Music.StartRound.mattlevine_02 = 
 	{
@@ -147,6 +155,7 @@
 			4.411, 7.941, 11.47, 15.0,
 			18.529, 22.058, 25.588, 29.117,
 		]
+		vsnd_duration = 29.117641
 	}
 	Music.StartAction.mattlevine_02 = 
 	{
@@ -178,6 +187,7 @@
 			"sounds/music/mattlevine_02/startaction_02.vsnd",
 			"sounds/music/mattlevine_02/startaction_03.vsnd",
 		]
+		vsnd_duration = 19.852947
 	}
 	Music.StartRound_GG.mattlevine_02 = 
 	{
@@ -225,6 +235,7 @@
 			4.411, 7.941, 11.47, 15.0,
 			18.529, 22.058, 25.588, 29.117,
 		]
+		vsnd_duration = 29.117641
 	}
 	Music.BombPlanted.mattlevine_02 = 
 	{
@@ -247,6 +258,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 51.958141
 	}
 	Music.BombTenSecCount.mattlevine_02 = 
 	{
@@ -265,6 +277,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 15.642675
 	}
 	Music.GotHostage.mattlevine_02 = 
 	{
@@ -289,6 +302,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 51.958141
 	}
 	Music.HostageNearRescue.mattlevine_02 = 
 	{
@@ -311,6 +325,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 15.642675
 	}
 	Music.TenSecCount.mattlevine_02 = 
 	{
@@ -332,6 +347,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 14.788731
 	}
 	Music.WonRound.mattlevine_02 = 
 	{
@@ -356,6 +372,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 12.352948
 	}
 	Music.LostRound.mattlevine_02 = 
 	{
@@ -380,6 +397,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.384604
 	}
 	Music.DeathCam.mattlevine_02 = 
 	{
@@ -392,6 +410,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 10.726009
 	}
 	Music.MVPAnthem.mattlevine_02 = 
 	{
@@ -418,6 +449,7 @@
 		[
 			"sounds/music/mattlevine_02/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 10.637687
 	}
 	Music.MatchStart.mattlevine_02 = 
 	{
@@ -433,6 +465,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/mattlevine_02/startofmatch.vsnd"
+		vsnd_duration = 18.461542
 	}
 	Music.MatchEnd.mattlevine_02 = 
 	{
@@ -454,6 +487,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 63.692314
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

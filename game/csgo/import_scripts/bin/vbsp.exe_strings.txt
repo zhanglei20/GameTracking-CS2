@@ -965,7 +965,6 @@ commentLength
 compressedSize
 compressionMethod
 config\SteamAppData.vdf
-connections
 constant_attn
 content
 contents

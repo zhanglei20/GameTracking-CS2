@@ -357,7 +357,6 @@ AdjustWindowRectEx
 AllocateThreadID
 AppendMiniProfilerToList
 AreAllAssertsDisabled
-Assert
 AssertValidWStringPtr
 Assertion Failed: bRtlGenRandomOK
 BGetMiniDumpLock
@@ -571,7 +570,6 @@ SBH_max
 SHELL32.dll
 SHGetFolderPathUTF8
 SHGetFolderPathW
-ScreenToClient
 SecureRandomBytes
 SetAllAssertsDisabled
 SetAssertDialogDisabled

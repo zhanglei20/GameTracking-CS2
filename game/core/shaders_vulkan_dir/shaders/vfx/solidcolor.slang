@@ -55,7 +55,6 @@ VS
 	DynamicCombo( D_MORPH, 0..1 );
 	DynamicComboRule( Requires( D_MORPH, S_MORPH_SUPPORTED ) );
 	
-	cbuffer PerLayerConstantBuffer_t < Attribute("PerLayerConstantBuffer_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
 	Texture2D g_tCompositeMorphTextureAtlas < Attribute("CompositeMorphTextureAtlas"); SrgbRead(false); >;

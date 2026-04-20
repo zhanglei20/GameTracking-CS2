@@ -57,7 +57,6 @@ VS
 	DynamicCombo( D_BAKED_LIGHTING_FROM_LIGHTMAP, 0..1 );
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
 	bool g_bTexCoordScaleByModel < UiType(CheckBox); Expression((g_nScaleTexCoordUByModelScaleAxis!=0) || (g_nScaleTexCoordVByModelScaleAxis!=0)); >;
@@ -273,7 +272,7 @@ PS
 	    float _Globals_1_g_flCubeParallax : packoffset(c5.z);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    float4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c23);
 	    float4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c24);

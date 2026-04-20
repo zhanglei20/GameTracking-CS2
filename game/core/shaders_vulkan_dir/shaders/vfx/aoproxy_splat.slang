@@ -55,7 +55,7 @@ VS
 	    float4 _m0[4];
 	};
 	
-	cbuffer AoProxyConstantBuffer_t : register(b2, space0)
+	cbuffer AoProxyConstantBuffer_t : register(b1, space0)
 	{
 	    _2817 AoProxyConstantBuffer_t_1_m0 : packoffset(c5);
 	    _2817 AoProxyConstantBuffer_t_1_m1 : packoffset(c25);
@@ -183,7 +183,7 @@ PS
 	    float3 _Globals_1_m4 : packoffset(c28);
 	};
 	
-	cbuffer AoProxyConstantBuffer_t : register(b2, space1)
+	cbuffer AoProxyConstantBuffer_t : register(b1, space1)
 	{
 	    _1276 AoProxyConstantBuffer_t_1_m0 : packoffset(c0);
 	    float4 AoProxyConstantBuffer_t_1_m1 : packoffset(c4);

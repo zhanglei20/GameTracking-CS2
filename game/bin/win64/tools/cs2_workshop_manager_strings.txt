@@ -889,6 +889,7 @@ $hRh
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\rlhp
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpTD
 2^pV
 2a"l
 2accepted()
@@ -1998,7 +1999,6 @@ Any language
 Arabesque Art & Arabian Mythology
 Arg list too long
 Armsrace
-AssertFatalCast
 Asset &Browser
 Asset Pack
 Assets
@@ -2408,7 +2408,6 @@ ChGg
 Char=
 Charm
 Chunk hash not found.
-ChunkHashFraction_t
 ChunkHashFraction_t::GetPackFileNumber
 ClQ(|
 Classic
@@ -3238,6 +3237,7 @@ I\tHA\t981G'dc
 Ij)s
 Ik\f`dub`D
 Illegal byte sequence
+Impl::AssertCastImpl
 Improper link
 Inappropriate I/O control operation
 Independent
@@ -4034,6 +4034,7 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 R\r1>Vp
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
+R\vpTD
 R]Di
 Rbg.E
 Re-Upload
@@ -4265,7 +4266,6 @@ Signature verification failed.
 Signed.\n
 Signing keys are set, will attempt to sign vpk.\n
 Sn^G
-SortKey_t
 Spy Tech
 Sr89[
 Stack part of OpenSSL 1.0.2j  26 Sep 2016
@@ -5433,7 +5433,6 @@ could not obtain hardware handle
 could not set engine
 could not set time
 could not unload the shared library
-counter
 counter:
 countersignature
 countryName
@@ -7043,6 +7042,7 @@ operation not defined
 operation not supported for this keytype
 operation not supported on this type
 operaton not initialized
+operator short
 optionalSignature
 orOF
 order

@@ -3,6 +3,16 @@
 	resource_manifests = 
 	[
 		{
+			name = "ToolLocatorGroup"
+			group = "ToolsStartup"
+			source_file = "src/tools/hammer/toollocator.cpp"
+			source_line = 23
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+			]
+		},
+		{
 			name = ""
 			group = "ToolsStartup"
 			source_file = "src/tools/hammer/smartpropconfigurationhelper.cpp"
@@ -28,7 +38,7 @@
 			name = ""
 			group = "ToolsStartup_RayTracing"
 			source_file = "src/tools/hammer/qhammerpanecontainer.cpp"
-			source_line = 205
+			source_line = 206
 			resources = 
 			[
 				resource_name:"materials/dev/rtx/pathtracer.vmat",
@@ -39,7 +49,7 @@
 			name = "MapViewGroup"
 			group = "ToolsStartup"
 			source_file = "src/tools/hammer/mapview.cpp"
-			source_line = 92
+			source_line = 85
 			resources = 
 			[
 				resource_name:"materials/tools/selection_stencil_copy.vmat",
@@ -50,7 +60,7 @@
 			name = ""
 			group = "ToolsStartup"
 			source_file = "src/tools/toolutils2/detailprops.cpp"
-			source_line = 26
+			source_line = 27
 			resources = 
 			[
 				resource_name:"scripts/detail_prop_types.vdata",
@@ -84,7 +94,7 @@
 			name = ""
 			group = "GameStartup"
 			source_file = "src/tools/toolscene/toolscene_sky.cpp"
-			source_line = 17
+			source_line = 16
 			resources = 
 			[
 				resource_name:"materials/tools/light_probe.vmat",
@@ -109,6 +119,17 @@
 			resources = 
 			[
 				resource_name:"materials/tools/draw_points_sizefromcode.vmat",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/toolrenderutils/toolstandardmodels.cpp"
+			source_line = 18
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+				resource_name:"models/editor/camera.vmdl",
 			]
 		},
 		{
@@ -169,6 +190,26 @@
 		{
 			name = ""
 			group = "ToolsStartup"
+			source_file = "src/mapdoclib/mappathlocator.cpp"
+			source_line = 17
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/mapdoclib/mapmeshlocator.cpp"
+			source_line = 21
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
 			source_file = "src/mapdoclib/imageplanenode.cpp"
 			source_line = 29
 			resources = 
@@ -201,7 +242,7 @@
 			name = ""
 			group = "ToolsStartup"
 			source_file = "src/mapdoclib/mapstaticoverlay.cpp"
-			source_line = 225
+			source_line = 230
 			resources = 
 			[
 				resource_name:"materials/tools/static_overlay_base.vmat",

@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/austinwintory_02/mainmenu.vsnd"
+		vsnd_duration = 181.315918
 	}
 	Music.MVPPreview.austinwintory_02 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/austinwintory_02/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/austinwintory_02/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 12.48653
 	}
 	Music.Selection.austinwintory_02 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/austinwintory_02/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 27.742041
 	}
 	Music.MatchFound.austinwintory_02 = 
 	{
@@ -66,6 +72,7 @@
 			7.846, 9.692, 11.538, 13.384,
 			15.23, 17.076, 18.923,
 		]
+		vsnd_duration = 21.76
 	}
 	Music.LoadingScreen.austinwintory_02 = 
 	{
@@ -93,6 +100,7 @@
 			"sounds/music/austinwintory_02/startaction_01.vsnd",
 			"sounds/music/austinwintory_02/startaction_02.vsnd",
 		]
+		vsnd_duration = 17.057959
 	}
 	Music.StartRound.austinwintory_02 = 
 	{
@@ -133,6 +141,7 @@
 			7.846, 9.692, 11.538, 13.384,
 			15.23, 17.076, 18.923,
 		]
+		vsnd_duration = 21.76
 	}
 	Music.StartAction.austinwintory_02 = 
 	{
@@ -162,6 +171,7 @@
 			"sounds/music/austinwintory_02/startaction_01.vsnd",
 			"sounds/music/austinwintory_02/startaction_02.vsnd",
 		]
+		vsnd_duration = 17.057959
 	}
 	Music.StartRound_GG.austinwintory_02 = 
 	{
@@ -203,6 +213,7 @@
 			7.846, 9.692, 11.538, 13.384,
 			15.23, 17.076, 18.923,
 		]
+		vsnd_duration = 21.76
 	}
 	Music.BombPlanted.austinwintory_02 = 
 	{
@@ -225,6 +236,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 40.280815
 	}
 	Music.BombTenSecCount.austinwintory_02 = 
 	{
@@ -243,6 +255,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 16.639999
 	}
 	Music.GotHostage.austinwintory_02 = 
 	{
@@ -267,6 +280,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 40.280815
 	}
 	Music.HostageNearRescue.austinwintory_02 = 
 	{
@@ -289,6 +303,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 16.639999
 	}
 	Music.TenSecCount.austinwintory_02 = 
 	{
@@ -310,6 +325,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 17.057959
 	}
 	Music.WonRound.austinwintory_02 = 
 	{
@@ -334,6 +350,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.579592
 	}
 	Music.LostRound.austinwintory_02 = 
 	{
@@ -358,6 +375,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.13551
 	}
 	Music.DeathCam.austinwintory_02 = 
 	{
@@ -370,6 +388,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 8.333061
 	}
 	Music.MVPAnthem.austinwintory_02 = 
 	{
@@ -396,6 +427,7 @@
 		[
 			"sounds/music/austinwintory_02/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 12.48653
 	}
 	Music.MatchStart.austinwintory_02 = 
 	{
@@ -411,6 +443,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/austinwintory_02/startofmatch.vsnd"
+		vsnd_duration = 7.372676
 	}
 	Music.MatchEnd.austinwintory_02 = 
 	{
@@ -432,6 +465,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 47.260658
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

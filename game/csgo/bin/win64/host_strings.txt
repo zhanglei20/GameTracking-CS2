@@ -1,6 +1,10 @@
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
- (08@HPX`j
- (08@HPZ
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+ (08@HPX`j0y
+ (08@HPXb
+ (08@HPZ0y
+ (08@HR
+ (08@J0y
+ (0X`hpz
 !m_hParam.IsValid()
 %%s%%s%%d:  sv[%%%d.%ds] cl[%%%d.%ds]\n
 %s:  IGameSystem::LoopActivateAllSystems {\n
@@ -92,11 +96,18 @@
 .?AVISequence@@
 .?AVISinglePlayerSharedMemory@@
 .?AVISource2Host@@
-08@HR
-2\vp4
+08@HR0y
+08@J
+08B0y
+2\vpT
+2\vpt
+8@J0y
+8B0y
+8\n0y
 ?expf
-@HPX`hv0)
-@HV@7
+@20y
+@HPX`hvP.
+@ht0|
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
 APPSYSTEM: In ConnectGameInterfaces(), tried to use different connection modes!\n
 APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!\n
@@ -107,16 +118,17 @@ CAnimScriptParam<float>::Bind
 CGameModelInfo::GetModelIndex() Lazy loading mode
 CUtlRBTree<class CDiffInfo,class CLessFunc<&public: static bool __cdecl CDiffInfo::Less(class CDiffInfo const &,class CDiffInfo const &)>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDiffInfo,int>,int,class CMemAllocAllocator> >::Insert
 CUtlSortVector<struct CAnimScriptRegistry::ScriptInfo_t,struct CAnimScriptRegistry::ScriptInfo_t,class CUtlVector<struct CAnimScriptRegistry::ScriptInfo_t,int,class CUtlVectorMemory_Growable<struct CAnimScriptRegistry::ScriptInfo_t,int,0> > >::Find
-CUtlSortVector<struct CAnimScriptRegistry::ScriptInfo_t,struct CAnimScriptRegistry::ScriptInfo_t,class CUtlVector<struct CAnimScriptRegistry::ScriptInfo_t,int,class CUtlVectorMemory_Growable<struct CAnimScriptRegistry::ScriptInfo_t,int,0> > >::FindLessOrEqual
 CUtlSortVector<struct CAnimScriptRegistry::ScriptInfo_t,struct CAnimScriptRegistry::ScriptInfo_t,class CUtlVector<struct CAnimScriptRegistry::ScriptInfo_t,int,class CUtlVectorMemory_Growable<struct CAnimScriptRegistry::ScriptInfo_t,int,0> > >::Insert
 Data_Branch1xy
 Data_Branch1zBranch2x
 Data_Branch2yz
 DebugDrawQueueManager001
 DotaMapUtils001
+EconVData001
 EntitySubclassUtilsV001
 Entry %s was not found in surfaceproperties_footsteps.txt\n
 Error loading %s: %s\n
+F\n0y
 Failed to open file: %s\n
 FoliageAnimation
 Game System %s is defined twice!\n
@@ -131,18 +143,22 @@ IND)ind)"
 LightmapUV
 LightmapUVW
 OverlayProjectionDirection
-P08J0
-P60D
+P08@J
+P08J
+P20y
 P6PI
+P6pN
 PackedBlobNormal
 Parameter %s is an incorrect type (needs to be %s)
 PerVertexLighting
-Pf E
+Pf@J
 Physics
 PivotPaint
+Pj0y
 PredictionDiffManager001
 PropWorldOrigin
 RSDS,
+R\vpt
 ResponseRulesCache001
 SaveRestoreDataVersion001
 Shared memory space %s (%i) still has %i references.\n
@@ -156,10 +172,13 @@ VertexGenericIntegerData
 VertexPaintBlendParams
 VertexPaintBlendParams1
 VertexPaintTintColor
-X`hr
-Xfp;
+X`hr0y
 Yk`o
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+`20y
+`b0y
+`d0y
+`ht0|
 bad 
 bentnormal
 blendindices
@@ -187,9 +206,9 @@ m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 medium
 optionallycompressedtangentframe
-p0j0s
+p20y
+pb0y
 posxyz
-prev
 runleft
 runright
 scripts/surfaceproperties_footsteps.txt

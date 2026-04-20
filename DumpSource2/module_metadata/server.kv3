@@ -52,16 +52,6 @@
 			resources = null
 		},
 		{
-			name = "ScenePayloadTypesManifest_global_server"
-			group = "GameStartup"
-			source_file = "src/game/server/scenepayload.cpp"
-			source_line = 18
-			resources = 
-			[
-				resource_name:"scripts/scenes.vdata",
-			]
-		},
-		{
 			name = "PrecacheTest"
 			group = "PrecacheTest_server"
 			source_file = "src/game/shared/precache_register.cpp"
@@ -108,7 +98,7 @@
 			name = "entityflame_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/server/entityflame.cpp"
-			source_line = 47
+			source_line = 46
 			resources = 
 			[
 				resource_name:"entityflame.ventr",
@@ -125,7 +115,7 @@
 			name = "BaseEntity"
 			group = "GameStartup"
 			source_file = "src/game/server/baseentity.cpp"
-			source_line = 126
+			source_line = 127
 			resources = 
 			[
 				resource_name:"materials/tools/show_collision_geometry_wire.vmat",
@@ -139,6 +129,16 @@
 			source_file = "src/game/shared/loopmodegame.cpp"
 			source_line = 276
 			resources = null
+		},
+		{
+			name = "ExplosionTypesManifest_global_server"
+			group = "GameStartup"
+			source_file = "src/game/shared/explosiontypes.cpp"
+			source_line = 110
+			resources = 
+			[
+				resource_name:"scripts/explosion_types.vdata",
+			]
 		},
 		{
 			name = "ResponseRulesManifest_global_server"
@@ -184,7 +184,7 @@
 			name = "weapon_incgrenade_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/shared/cstrike15/weapon_molotov.cpp"
-			source_line = 123
+			source_line = 124
 			resources = 
 			[
 				resource_name:"weapon_incgrenade.ventr",
@@ -544,7 +544,7 @@
 			name = "weapon_c4_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/shared/cstrike15/weapon_c4.cpp"
-			source_line = 253
+			source_line = 447
 			resources = 
 			[
 				resource_name:"weapon_c4.ventr",
@@ -554,7 +554,7 @@
 			name = "planted_c4_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/shared/cstrike15/weapon_c4.cpp"
-			source_line = 242
+			source_line = 437
 			resources = 
 			[
 				resource_name:"planted_c4.ventr",
@@ -631,7 +631,7 @@
 			name = "GrenadeProjectiles_global_server"
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/basecsgrenade_projectile.cpp"
-			source_line = 71
+			source_line = 75
 			resources = 
 			[
 				resource_name:"weapons/models/grenade/decoy/weapon_decoy.vmdl",
@@ -664,10 +664,132 @@
 			]
 		},
 		{
+			name = ""
+			group = "GameStartup"
+			source_file = "src/game/shared/cstrike15/cs_shareddefs.cpp"
+			source_line = 1607
+			resources = 
+			[
+				resource_name:"agents/models/shared/arms/glove_cloth_collision/glove_cloth_collision.vmdl",
+				resource_name:"agents/models/shared/arms/glove_bloodhound/glove_bloodhound.vmdl",
+				resource_name:"agents/models/shared/arms/glove_brokenfang/glove_brokenfang.vmdl",
+				resource_name:"agents/models/shared/arms/glove_fingerless/glove_fingerless.vmdl",
+				resource_name:"agents/models/shared/arms/glove_fullfinger/glove_fullfinger.vmdl",
+				resource_name:"agents/models/shared/arms/glove_handwrap/glove_handwrap.vmdl",
+				resource_name:"agents/models/shared/arms/glove_hardknuckle/glove_hardknuckle.vmdl",
+				resource_name:"agents/models/shared/arms/glove_hydra/glove_hydra.vmdl",
+				resource_name:"agents/models/shared/arms/glove_motorcycle/glove_motorcycle.vmdl",
+				resource_name:"agents/models/shared/arms/glove_slick/glove_slick.vmdl",
+				resource_name:"agents/models/shared/arms/glove_specialist/glove_specialist.vmdl",
+				resource_name:"agents/models/shared/arms/glove_sporty/glove_sporty.vmdl",
+				resource_name:"agents/models/ctm_diver/ctm_diver_varianta.vmdl",
+				resource_name:"agents/models/ctm_diver/ctm_diver_variantb.vmdl",
+				resource_name:"agents/models/ctm_diver/ctm_diver_variantc.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_varianta.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantb.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantc.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantd.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variante.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantf.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantg.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_varianth.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_varianta.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_variantb.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_variantc.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_variantd.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_variante.vmdl",
+				resource_name:"agents/models/ctm_sas/ctm_sas.vmdl",
+				resource_name:"agents/models/ctm_sas/ctm_sas_variantf.vmdl",
+				resource_name:"agents/models/ctm_sas/ctm_sas_variantg.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variante.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantg.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_varianti.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantj.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantk.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantl.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantm.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantn.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variante.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variantf.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variantg.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_varianth.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_varianti.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variantj.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variantk.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantf.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantg.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_varianth.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_varianti.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantj.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantk.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantl.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_varianta.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantb2.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantb.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantc.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantd.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variante.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantf2.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantf.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_varianta.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantb.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantc.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantd.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variante.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantf.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantg.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_varianth.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_varianti.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantj.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantk.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_varianta.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantb.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantc.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantd.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantf.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantg.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_varianth.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_varianti.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf1.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf2.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf3.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf4.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf5.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varg.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varh.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_vari.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varj.vmdl",
+			]
+		},
+		{
+			name = ""
+			group = "GameStartup"
+			source_file = "src/game/shared/cstrike15/cash_stack.cpp"
+			source_line = 14
+			resources = 
+			[
+				resource_name:"models/gameplay/cash_stack/cash_stack.vmdl",
+				resource_name:"models/gameplay/cash_stack/cash_stack_pickup.vpcf",
+			]
+		},
+		{
+			name = "ScenePayloadTypesManifest_global_server"
+			group = "GameStartup"
+			source_file = "src/game/shared/scenepayload.cpp"
+			source_line = 18
+			resources = 
+			[
+				resource_name:"scripts/scenes.vdata",
+			]
+		},
+		{
 			name = "PhysicsGameSystemManifest_server"
 			group = ""
 			source_file = "src/game/shared/physicsgamesystem.cpp"
-			source_line = 151
+			source_line = 152
 			resources = 
 			[
 				resource_name:"materials/tools/show_collision_geometry_wire_nodepth.vmat",
@@ -720,7 +842,7 @@
 			name = "hostage_carriable_prop_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/server/cstrike15/hostage/cs_simple_hostage.cpp"
-			source_line = 84
+			source_line = 82
 			resources = 
 			[
 				resource_name:"hostage_carriable_prop.ventr",
@@ -730,7 +852,7 @@
 			name = "fire_cracker_blast_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/server/cstrike15/effects/inferno.cpp"
-			source_line = 40
+			source_line = 39
 			resources = 
 			[
 				resource_name:"fire_cracker_blast.ventr",
@@ -750,7 +872,7 @@
 			name = "chicken_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/server/cstrike15/effects/chicken.cpp"
-			source_line = 31
+			source_line = 28
 			resources = 
 			[
 				resource_name:"chicken.ventr",
@@ -760,10 +882,10 @@
 			name = "CCSPlayerPawn_Minimal_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/server/cstrike15/cs_player_pawn.cpp"
-			source_line = 1189
+			source_line = 1140
 			resources = 
 			[
-				resource_name:"characters/models/ctm_sas/ctm_sas.vmdl",
+				resource_name:"agents/models/ctm_sas/ctm_sas.vmdl",
 			]
 		},
 		{
@@ -820,25 +942,26 @@
 	]
 	pulse_fingerprints = 
 	{
-		"@lib:server.dll!CBaseEntityAPI" = 813637391
-		"@lib:server.dll!CBaseModelEntityAPI" = 3968745357
+		"@lib:server.dll!CBaseEntityAPI" = 4109109295
+		"@lib:server.dll!CBaseModelEntityAPI" = 3795104230
 		"@lib:server.dll!CBasePlayerControllerAPI" = 553202478
 		"@lib:server.dll!CBaseTriggerAPI" = 2728627856
 		"@lib:server.dll!CCSPointPulseAPI" = 1810947900
 		"@lib:server.dll!CFilterMultipleAPI" = 988869233
-		"@lib:server.dll!CFuncMoverAPI" = 676518472
+		"@lib:server.dll!CFuncMoverAPI" = 3586999345
 		"@lib:server.dll!CLogicRelayAPI" = 555225203
 		"@lib:server.dll!CParticleBindingRealPulse" = 0
 		"@lib:server.dll!CParticleCollectionBindingInstance" = 11256737
 		"@lib:server.dll!CPathSimpleAPI" = 1312450825
 		"@lib:server.dll!CPhysMotorAPI" = 2935667806
+		"@lib:server.dll!CPointPrefabAPI" = 2019364026
 		"@lib:server.dll!CPointTeleportAPI" = 773057266
-		"@lib:server.dll!CPointTemplateAPI" = 3337333123
+		"@lib:server.dll!CPointTemplateAPI" = 318676870
 		"@lib:server.dll!CPulseAnimFuncs" = 952282792
-		"@lib:server.dll!CPulseArraylib" = 1970002260
+		"@lib:server.dll!CPulseArraylib" = 3172841818
 		"@lib:server.dll!CPulseCell_BooleanSwitchState" = 1295793995
 		"@lib:server.dll!CPulseCell_CursorQueue" = 717294393
-		"@lib:server.dll!CPulseCell_FireCursors" = 18454619
+		"@lib:server.dll!CPulseCell_FireCursors" = 3525151428
 		"@lib:server.dll!CPulseCell_Inflow_EntOutputHandler" = 0
 		"@lib:server.dll!CPulseCell_Inflow_EventHandler" = 0
 		"@lib:server.dll!CPulseCell_Inflow_GraphHook" = 0
@@ -858,6 +981,7 @@
 		"@lib:server.dll!CPulseCell_Outflow_ListenForEntityOutput" = 4196051604
 		"@lib:server.dll!CPulseCell_Outflow_PlaySequence" = 3529189512
 		"@lib:server.dll!CPulseCell_Outflow_PlayVCD" = 552580629
+		"@lib:server.dll!CPulseCell_Outflow_PlayVOLine" = 3931728171
 		"@lib:server.dll!CPulseCell_Outflow_ScriptedSequence" = 1185197128
 		"@lib:server.dll!CPulseCell_PickBestOutflowSelector" = 252227061
 		"@lib:server.dll!CPulseCell_PlaySequence" = 2666966817
@@ -875,19 +999,21 @@
 		"@lib:server.dll!CPulseCell_Value_RandomInt" = 393431413
 		"@lib:server.dll!CPulseCell_WaitForCursorsWithTag" = 860342186
 		"@lib:server.dll!CPulseCell_WaitForObservable" = 2210056048
-		"@lib:server.dll!CPulseCursorFuncs" = 4272227935
+		"@lib:server.dll!CPulseCursorFuncs" = 109602028
 		"@lib:server.dll!CPulseFuncs_GameParticleManager" = 2774931254
 		"@lib:server.dll!CPulseGraphInstance_GameBlackboard" = 0
 		"@lib:server.dll!CPulseGraphInstance_ServerEntity" = 1680306429
-		"@lib:server.dll!CPulseMathlib" = 4024109508
+		"@lib:server.dll!CPulseMathlib" = 1084168616
 		"@lib:server.dll!CPulsePhysicsConstraintsFuncs" = 651858802
 		"@lib:server.dll!CPulseServerCursor" = 0
-		"@lib:server.dll!CPulseServerFuncs" = 425965155
+		"@lib:server.dll!CPulseServerFuncs" = 4211777760
 		"@lib:server.dll!CPulseServerFuncs_Sounds" = 2057943293
 		"@lib:server.dll!CPulseTestScriptLib" = 1396807546
-		"@lib:server.dll!CTakeDamageInfoAPI" = 1604327879
-		"@lib:server.dll!CTestPulseIOAPI" = 3257551776
-		"@type:server.dll!PVAL_SCHEMA_ENUM:BaseExplosionTypes_t" = 479486514
+		"@lib:server.dll!CTakeDamageResultAPI" = 2409610034
+		"@lib:server.dll!CTestPulseIOAPI" = 3648854495
+		"@lib:server.dll!CTestPulseIOComponent_API" = 2647014926
+		"@lib:server.dll!CTestPulseIOComponent_DerivedAPI" = 0
+		"@lib:server.dll!DestructiblePartDamageRequestAPI" = 2028735734
 		"@type:server.dll!PVAL_SCHEMA_ENUM:ChoreoLookAtMode_t" = 1855753749
 		"@type:server.dll!PVAL_SCHEMA_ENUM:ChoreoLookAtSpeed_t" = 4241769962
 		"@type:server.dll!PVAL_SCHEMA_ENUM:DamageTypes_t" = 4011304154
@@ -999,6 +1125,89 @@
 								allow_direct_return = true
 							},
 						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CBaseEntityAPI::ClassMatches" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Class Matches (Entity Handle)"
+					m_Description = "Check the type of an entity. Includes base classes."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CBaseEntityAPI"
+						}
+						header_expr = "\"Class Matches \" + entityType + \""
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CBaseEntityAPI::ClassMatches"
+							}
+							entityType = 
+							{
+								friendly_name = "Entity Type"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									choice_name = "entityclass_choices"
+									port_restrict_to_literal = true
+								}
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CBaseEntityAPI::ClassMatches"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_BOOL"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CBaseEntityAPI::ClassMatches"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Class Matches"
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -2860,6 +3069,84 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
+				"CBaseModelEntityAPI::BreakJointByName" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Break Joint By Name (basemodelentity)"
+					m_Description = "Destroy this joint by Name"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CBaseModelEntityAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE:basemodelentity"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "InDefault"
+							}
+							pJointName = 
+							{
+								friendly_name = "Joint Name"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "InDefault"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 5
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Break Joint By Name"
+						pulse_inflows = 
+						[
+							{
+								name = "InDefault"
+								friendly_name = "Default In"
+								is_default_inflow = true
+							},
+						]
+						pulse_outflows = 
+						[
+							{
+								name = "OutDefault"
+								friendly_name = "Default Out"
+								is_default_outflow = true
+								allow_direct_return = true
+							},
+						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
 				"CBaseModelEntityAPI::ClearRenderAttribute" = 
 				{
 					m_BaseClasses = [  ]
@@ -2938,11 +3225,11 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CBaseModelEntityAPI::DestructibleHitGroupDestroyUpToDamageLevel" = 
+				"CBaseModelEntityAPI::DestructibleHitGroupDestroy" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Destructible Hit Group Destroy Up To Damage Level (basemodelentity)"
-					m_Description = "Destroy a destructible hit group up to a certain damage level."
+					m_FriendlyName = "Destructible Hit Group Destroy (basemodelentity)"
+					m_Description = "Destroy a destructible hit group. Damage level of -1 means all damage levels, otherwise specify the last one you want to blow up."
 					m_MetaData = 
 					{
 						supported_domains = 
@@ -2999,7 +3286,7 @@
 						generic_node_category = 5
 						is_pulse_target_method = true
 						target_arg_name = "_Target"
-						friendly_name_without_target = "Destructible Hit Group Destroy Up To Damage Level"
+						friendly_name_without_target = "Destructible Hit Group Destroy"
 						pulse_inflows = 
 						[
 							{
@@ -3302,7 +3589,7 @@
 				"CBaseModelEntityAPI::OnDestructibleHitGroupDamageLevelChanged" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnDestructibleHitGroupDamageLevelChanged"
+					m_FriendlyName = "On Destructible Hit Group Damage Level Changed"
 					m_Description = "Called when the damage level of destructible part for a particular hit group has been changed."
 					m_MetaData = 
 					{
@@ -4493,8 +4780,7 @@
 								advanced_view = false
 								metadata = 
 								{
-									choice_name = "pulse_subtype_choices"
-									pulse_subtype_choices = "PVAL_EHANDLE"
+									choice_name = "entityclass_choices"
 									port_restrict_to_literal = true
 								}
 								type = "PVAL_STRING"
@@ -5250,6 +5536,149 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
+				"CFuncMoverAPI::GetMoverT" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Mover T (func_mover)"
+					m_Description = "Get the provided movers current T value on the spline"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CFuncMoverAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE:func_mover"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CFuncMoverAPI::GetMoverT"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CFuncMoverAPI::GetMoverT"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Mover T"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CFuncMoverAPI::SetMoverFaceEntity" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Set Mover Face Entity (func_mover)"
+					m_Description = "Set the movers face entity"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CFuncMoverAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE:func_mover"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "InDefault"
+							}
+							hFaceEntity = 
+							{
+								friendly_name = "Face Entity"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "InDefault"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 5
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Set Mover Face Entity"
+						pulse_inflows = 
+						[
+							{
+								name = "InDefault"
+								friendly_name = "Default In"
+								is_default_inflow = true
+							},
+						]
+						pulse_outflows = 
+						[
+							{
+								name = "OutDefault"
+								friendly_name = "Default Out"
+								is_default_outflow = true
+								allow_direct_return = true
+							},
+						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
 				"CLogicRelayAPI::CancelPending" = 
 				{
 					m_BaseClasses = [  ]
@@ -5514,7 +5943,7 @@
 				"CLogicRelayAPI::OnSpawn" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnSpawn"
+					m_FriendlyName = "On Spawn"
 					m_Description = "Fired when the relay is spawned. If the relay is set to only trigger once, it will delete itself after firing this output."
 					m_MetaData = 
 					{
@@ -5570,7 +5999,7 @@
 				"CLogicRelayAPI::OnTrigger" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnTrigger"
+					m_FriendlyName = "On Trigger"
 					m_Description = "Fired when the relay is triggered. If the relay is set to only trigger once, it will delete itself after firing this output."
 					m_MetaData = 
 					{
@@ -5724,6 +6153,155 @@
 						is_pulse_target_method = true
 						target_arg_name = "_Target"
 						friendly_name_without_target = "Trigger"
+						pulse_inflows = 
+						[
+							{
+								name = "InDefault"
+								friendly_name = "Default In"
+								is_default_inflow = true
+							},
+						]
+						pulse_outflows = 
+						[
+							{
+								name = "OutDefault"
+								friendly_name = "Default Out"
+								is_default_outflow = true
+								allow_direct_return = true
+							},
+						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"COMPONENT(PVAL_EHANDLE:test_io_combinations)+CTestPulseIOComponent_API::OnComponentTestFunc" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "On Component Test Func"
+					m_Description = ""
+					m_MetaData = 
+					{
+						compiled_binding_name = "CTestPulseIOComponent_API::OnComponentTestFunc"
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CTestPulseIOComponent_API"
+						}
+						pulse_outparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE:test_io_combinations"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTestPulseIOComponent_API::OnComponentTestFunc"
+							}
+							param = 
+							{
+								friendly_name = "param"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTestPulseIOComponent_API::OnComponentTestFunc"
+							}
+						}
+						is_pulse_target_output = true
+						pulse_feature_tag = 1
+						target_arg_name = "_Target"
+						is_spontaneous = true
+						generic_node_category = 5
+						pulse_outflows = 
+						[
+							{
+								name = "OutDefault"
+								friendly_name = "Default Out"
+								is_default_outflow = true
+							},
+						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"COMPONENT(PVAL_EHANDLE:test_io_combinations)+CTestPulseIOComponent_API::TestComponentFunc" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Test Component Func (test_io_combinations)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						compiled_binding_name = "CTestPulseIOComponent_API::TestComponentFunc"
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CTestPulseIOComponent_API"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE:test_io_combinations"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "InDefault"
+							}
+							pString = 
+							{
+								friendly_name = "String"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "InDefault"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 5
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Test Component Func"
 						pulse_inflows = 
 						[
 							{
@@ -6731,6 +7309,74 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
+				"CPointPrefabAPI::GetRelayInterfaceSources" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Relay Interface Sources (point_prefab)"
+					m_Description = "Get all of the point_pulse entities which compose our procedural relay interface"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CPointPrefabAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE:point_prefab"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPointPrefabAPI::GetRelayInterfaceSources"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_ARRAY:PVAL_EHANDLE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPointPrefabAPI::GetRelayInterfaceSources"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Relay Interface Sources"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
 				"CPointTeleportAPI::Teleport" = 
 				{
 					m_BaseClasses = [  ]
@@ -7359,7 +8005,7 @@
 				"CPointTemplateAPI::OnEntitySpawned" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnEntitySpawned"
+					m_FriendlyName = "On Entity Spawned"
 					m_Description = "Fired after spawning an instance of this template."
 					m_MetaData = 
 					{
@@ -7386,9 +8032,9 @@
 								]
 								associated_inflow_name = "CPointTemplateAPI::OnEntitySpawned"
 							}
-							entities = 
+							param = 
 							{
-								friendly_name = "entities"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = 
@@ -7729,6 +8375,87 @@
 								]
 								associated_outflow_name = "OutDefault"
 								direct_return_value_for = "CPulseArraylib::ArrayCount"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseArraylib::ArrayFindElementMatching" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Array Find Element Matching"
+					m_Description = "Find first element 'a' which compare equal to 'element' and return its index."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CPulseArraylib"
+						}
+						pulse_inparams = 
+						{
+							a = 
+							{
+								friendly_name = "a"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_ARRAY:PVAL_UNKNOWN"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseArraylib::ArrayFindElementMatching"
+							}
+							element = 
+							{
+								friendly_name = "element"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_dependent_arg = "a:typeparam"
+								}
+								type = "PVAL_VARIANT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseArraylib::ArrayFindElementMatching"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseArraylib::ArrayFindElementMatching"
 							}
 						}
 						generic_node_category = 4
@@ -8606,8 +9333,8 @@
 					[
 						"CPulseCell_BaseState",
 					]
-					m_FriendlyName = "Boolean Switch State"
-					m_Description = "While active, activate a child state based on the results of a boolean condition. Any referenced variables must be marked as observable."
+					m_FriendlyName = "Monitor Observable"
+					m_Description = "While active, manage child cursors based on the results of a boolean condition. When the observable result changes, the prior cursor will be canceled and the appropriate outflow will fire a new child cursor. Will monitor continuously until externally canceled."
 					m_MetaData = 
 					{
 						MVDataNodeType = 0
@@ -8652,32 +9379,32 @@
 							{
 								field_name = "m_Condition"
 								attr_factory = "PulseObservableBoolExpression_t"
-								friendly_name = "Condition"
+								friendly_name = "Observable"
 								description = "Condition to evaluate when any of its dependent values change."
 							},
 						]
 						pulse_outflows = 
 						[
 							{
-								name = "m_SubGraph"
+								name = "m_Always"
 								is_default_outflow = false
 								backed_by_variable = true
-								friendly_name = "Sub Graph"
-								description = ""
+								friendly_name = "Always"
+								description = "Fired immediately when this node begins for chaining purposes."
 							},
 							{
 								name = "m_WhenTrue"
 								is_default_outflow = false
 								backed_by_variable = true
 								friendly_name = "When True"
-								description = ""
+								description = "Fired when the observable boolean is true, and killed when false."
 							},
 							{
 								name = "m_WhenFalse"
 								is_default_outflow = false
 								backed_by_variable = true
 								friendly_name = "When False"
-								description = ""
+								description = "Fired when the observable boolean is false, and killed when true."
 							},
 						]
 					}
@@ -8864,6 +9591,7 @@
 						editor_canvas_item_spec = 
 						{
 							className = "IsWaitNode IsControlFlowNode"
+							item_factory = "InflowWait"
 						}
 						pulse_outflows = 
 						[
@@ -9627,6 +10355,115 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
+				CPulseCell_Outflow_PlayVOLine = 
+				{
+					m_BaseClasses = 
+					[
+						"CPulseCell_BaseYieldingInflow",
+					]
+					m_FriendlyName = "Play VO Line"
+					m_Description = "Starts a sound event on a speaker, and waits for its completion. Keywords: Voice Over, Choreo"
+					m_MetaData = 
+					{
+						MVDataNodeType = 0
+						MVDataOverlayType = 0
+						__populated_from_schema_modules = 
+						[
+							"server.dll",
+						]
+						hidden_in_tool = false
+						selector_has_specificity = false
+						expect_default_outflow = true
+						generic_node_category = 5
+						is_state_cell = false
+						supported_domains = 
+						{
+							ServerEntity = true
+						}
+						pulse_inparams = 
+						{
+							strSoundEventName = 
+							{
+								friendly_name = "Sound Event Name"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									edit_context_override = 
+									{
+										ToolEditContext_ID_AttributeEditorOptions = 
+										{
+											value = "{ bFocusEvents=true }"
+										}
+									}
+								}
+								type = "PVAL_SNDEVT_NAME"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "Run"
+							}
+							pSpeaker = 
+							{
+								friendly_name = "Speaker"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE:basemodelentity"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "Run"
+							}
+						}
+						pulse_inflows = 
+						[
+							{
+								name = "Run"
+								friendly_name = "Run"
+								description = "Play a VO line on the speaker and wait for completion."
+								yields = true
+								terminates = false
+								is_default_inflow = true
+							},
+							{
+								name = "Cancel"
+								friendly_name = "Cancel"
+								description = "Stop any current VO line and proceed."
+								yields = false
+								terminates = false
+								is_default_inflow = false
+							},
+						]
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CPulseCell_Outflow_PlayVOLine"
+						}
+						header_icon = "tools/images/pulse_editor/sequence.png"
+						pulse_outflows = 
+						[
+							{
+								name = "m_OnFinished"
+								is_default_outflow = true
+								backed_by_variable = true
+								friendly_name = "On Finished"
+								description = ""
+							},
+						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
 				CPulseCell_PickBestOutflowSelector = 
 				{
 					m_BaseClasses = 
@@ -9720,6 +10557,7 @@
 										m_FriendlyName = "Choose Best"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Choose the best outflow with all rules passing, as determined by number of passing rules (specificity)."
 									},
 									{
 										m_iValue = 0
@@ -9727,6 +10565,7 @@
 										m_FriendlyName = "Choose First"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Choose the first outflow with all rules passing, from left to right"
 									},
 								]
 							}
@@ -9993,6 +10832,7 @@
 										m_FriendlyName = "From Player"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 									{
 										m_iValue = 0
@@ -10000,6 +10840,7 @@
 										m_FriendlyName = "From World"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 									{
 										m_iValue = 0
@@ -10007,6 +10848,7 @@
 										m_FriendlyName = "From Entity"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 								]
 							}
@@ -10564,6 +11406,7 @@
 										m_FriendlyName = "Keep running normally."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 									{
 										m_iValue = 0
@@ -10571,6 +11414,7 @@
 										m_FriendlyName = "Kill after current node."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Do not stop the current yielding node, but do not continue to the next node afterwards."
 									},
 									{
 										m_iValue = 0
@@ -10578,6 +11422,7 @@
 										m_FriendlyName = "Kill elegantly."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Request elegant wind-down of any associated work (e.g. vcd interrupt)."
 									},
 									{
 										m_iValue = 0
@@ -10585,6 +11430,7 @@
 										m_FriendlyName = "Kill immediately."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Stop without any wind-down."
 									},
 								]
 							}
@@ -10670,8 +11516,8 @@
 					[
 						"CPulseCell_BaseYieldingInflow",
 					]
-					m_FriendlyName = "Wait For Observable Condition"
-					m_Description = ""
+					m_FriendlyName = "Wait Until"
+					m_Description = "All values connected to this node must be 'observable'. Variables on this graph will be automatically promoted to observable. Other value nodes must take an explicit context, look for those nodes with a corresponding icon."
 					m_MetaData = 
 					{
 						MVDataNodeType = 0
@@ -10719,7 +11565,7 @@
 							{
 								field_name = "m_Condition"
 								attr_factory = "PulseObservableBoolExpression_t"
-								friendly_name = "Condition"
+								friendly_name = "Observable"
 								description = "Condition to evaluate when any of its dependent values change."
 							},
 						]
@@ -11102,54 +11948,6 @@
 					m_BaseClasses = [  ]
 					m_FriendlyName = "Kill This Cursor And Cancel"
 					m_Description = "Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success."
-					m_MetaData = 
-					{
-						supported_domains = 
-						{
-							BaseDomain = true
-						}
-						scope_to_dependency_name = 
-						{
-							server.dll = "@lib:server.dll!CPulseCursorFuncs"
-						}
-						header_icon = "tools/images/pulse_editor/cursor_kill.png"
-						pulse_inparams = null
-						generic_node_category = 5
-						is_pulse_library_method = true
-						pulse_inflows = 
-						[
-							{
-								name = "InDefault"
-								friendly_name = "Default In"
-								is_default_inflow = true
-							},
-						]
-						pulse_outflows = 
-						[
-							{
-								name = "OutDefault"
-								friendly_name = "Default Out"
-								is_default_outflow = true
-								allow_direct_return = true
-							},
-						]
-					}
-					m_HelpContextName = ""
-					m_nClassType = "vdata"
-					m_rgbColor = [ 220, 30, 220 ]
-					m_bmins = [ -8.0, -8.0, -8.0 ]
-					m_bmaxs = [ 8.0, 8.0, 8.0 ]
-					m_Tags = [  ]
-					m_Variables = [  ]
-					m_Inputs = [  ]
-					m_Outputs = [  ]
-					m_Helpers = [  ]
-				}
-				"CPulseCursorFuncs::KillThisCursorAndFail" = 
-				{
-					m_BaseClasses = [  ]
-					m_FriendlyName = "Kill This Cursor And Fail"
-					m_Description = "Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success."
 					m_MetaData = 
 					{
 						supported_domains = 
@@ -12222,6 +13020,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12285,6 +13085,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12348,6 +13150,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12411,6 +13215,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12474,6 +13280,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12537,6 +13345,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12626,6 +13436,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12715,6 +13527,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12778,6 +13592,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12853,6 +13669,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12916,6 +13734,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12991,6 +13811,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13054,6 +13876,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13117,6 +13941,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13179,6 +14005,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13242,6 +14070,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13305,6 +14135,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13367,6 +14199,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13443,6 +14277,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13505,6 +14341,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13567,6 +14405,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13630,6 +14470,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13693,6 +14535,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13782,6 +14626,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13871,6 +14717,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -13960,6 +14808,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14023,6 +14873,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14086,6 +14938,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14149,6 +15003,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14237,6 +15093,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14299,6 +15157,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14387,6 +15247,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14476,6 +15338,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14564,6 +15428,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14639,6 +15505,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14740,6 +15608,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14829,6 +15699,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14917,6 +15789,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -14993,6 +15867,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15069,6 +15945,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15145,6 +16023,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15221,6 +16101,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15283,6 +16165,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15331,6 +16215,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15407,6 +16293,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15466,6 +16354,97 @@
 								]
 								associated_outflow_name = "OutDefault"
 								direct_return_value_for = "CPulseMathlib::Rad2Deg"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseMathlib::RandomWorldPosition" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Random World Position"
+					m_Description = "Returns a random position centered on vCenter with random min and max radius"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CPulseMathlib"
+						}
+						expr_alias = "random_position"
+						pulse_inparams = 
+						{
+							vCenter = 
+							{
+								friendly_name = "Center"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3_WORLDSPACE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::RandomWorldPosition"
+							}
+							flMinRadius = 
+							{
+								friendly_name = "Min Radius"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::RandomWorldPosition"
+							}
+							flMaxRadius = 
+							{
+								friendly_name = "Max Radius"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::RandomWorldPosition"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3_WORLDSPACE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseMathlib::RandomWorldPosition"
 							}
 						}
 						generic_node_category = 4
@@ -15585,6 +16564,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15648,6 +16629,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15711,6 +16694,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15774,6 +16759,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15837,6 +16824,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15900,6 +16889,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -15963,6 +16954,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16053,6 +17046,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16143,6 +17138,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16233,6 +17230,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16323,6 +17322,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16399,6 +17400,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16503,6 +17506,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16593,6 +17598,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16683,6 +17690,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16746,6 +17755,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16809,6 +17820,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16872,6 +17885,72 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseMathlib::StringLength" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "String Length"
+					m_Description = "Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CPulseMathlib"
+						}
+						pulse_inparams = 
+						{
+							strValue = 
+							{
+								friendly_name = "Value"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::StringLength"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseMathlib::StringLength"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -16947,6 +18026,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -17010,6 +18091,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -17072,6 +18155,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -17134,6 +18219,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -18241,6 +19328,89 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
+				"CPulseServerFuncs::CountEntitiesOfTypeInArray" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Count Entities Of Type In Array"
+					m_Description = "Count the number of entities of a given type in an array."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							ServerEntity = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CPulseServerFuncs"
+						}
+						header_expr = "\"Count \" + entityType + \" Entities in Array"
+						pulse_inparams = 
+						{
+							entityType = 
+							{
+								friendly_name = "Entity Type"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									choice_name = "entityclass_choices"
+									port_restrict_to_literal = true
+								}
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseServerFuncs::CountEntitiesOfTypeInArray"
+							}
+							entityArray = 
+							{
+								friendly_name = "Entity Array"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_ARRAY:PVAL_EHANDLE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseServerFuncs::CountEntitiesOfTypeInArray"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseServerFuncs::CountEntitiesOfTypeInArray"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
 				"CPulseServerFuncs::CountEntitiesWithName" = 
 				{
 					m_BaseClasses = [  ]
@@ -18372,17 +19542,20 @@
 								]
 								associated_inflow_name = "InDefault"
 							}
-							explosionType = 
+							pszExplosionType = 
 							{
-								friendly_name = "Explosion Type"
+								friendly_name = "Psz Explosion Type"
 								description = ""
 								advanced_view = false
-								metadata = null
-								type = "PVAL_SCHEMA_ENUM:BaseExplosionTypes_t"
+								metadata = 
+								{
+									editor = "VDataChoice( scripts/explosion_types.vdata )"
+								}
+								type = "PVAL_STRING"
 								default_value = 
 								[
-									"PVAL_SCHEMA_ENUM:BaseExplosionTypes_t",
-									"EXPLOSION_TYPE_DEFAULT",
+									"PVAL_STRING",
+									"default",
 								]
 								associated_inflow_name = "InDefault"
 							}
@@ -19938,8 +21111,7 @@
 								advanced_view = false
 								metadata = 
 								{
-									choice_name = "pulse_subtype_choices"
-									pulse_subtype_choices = "PVAL_EHANDLE"
+									choice_name = "entityclass_choices"
 									port_restrict_to_literal = true
 								}
 								type = "PVAL_STRING"
@@ -20023,8 +21195,7 @@
 								advanced_view = false
 								metadata = 
 								{
-									choice_name = "pulse_subtype_choices"
-									pulse_subtype_choices = "PVAL_EHANDLE"
+									choice_name = "entityclass_choices"
 									port_restrict_to_literal = true
 								}
 								type = "PVAL_STRING"
@@ -20163,8 +21334,7 @@
 								advanced_view = false
 								metadata = 
 								{
-									choice_name = "pulse_subtype_choices"
-									pulse_subtype_choices = "PVAL_EHANDLE"
+									choice_name = "entityclass_choices"
 									port_restrict_to_literal = true
 								}
 								type = "PVAL_STRING"
@@ -20247,8 +21417,7 @@
 								advanced_view = false
 								metadata = 
 								{
-									choice_name = "pulse_subtype_choices"
-									pulse_subtype_choices = "PVAL_EHANDLE"
+									choice_name = "entityclass_choices"
 									port_restrict_to_literal = true
 								}
 								type = "PVAL_STRING"
@@ -20833,6 +22002,68 @@
 								]
 								associated_outflow_name = "OutDefault"
 								direct_return_value_for = "CPulseServerFuncs::GetEntityDebugString"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseServerFuncs::GetEntityEyePosition" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Entity Eye Position"
+					m_Description = "Get the eye position of an entity."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							ServerEntity = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CPulseServerFuncs"
+						}
+						pulse_inparams = 
+						{
+							hEnt = 
+							{
+								friendly_name = "Ent"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseServerFuncs::GetEntityEyePosition"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3_WORLDSPACE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseServerFuncs::GetEntityEyePosition"
 							}
 						}
 						generic_node_category = 4
@@ -23656,10 +24887,10 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CTakeDamageInfoAPI::GetDamageAmount" = 
+				"CTakeDamageResultAPI::GetDamageDealt" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Get Damage Amount (CTakeDamageInfo)"
+					m_FriendlyName = "Get Damage Dealt (CTakeDamageResult)"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -23669,7 +24900,7 @@
 						}
 						scope_to_dependency_name = 
 						{
-							server.dll = "@lib:server.dll!CTakeDamageInfoAPI"
+							server.dll = "@lib:server.dll!CTakeDamageResultAPI"
 						}
 						pulse_inparams = 
 						{
@@ -23679,12 +24910,12 @@
 								description = ""
 								advanced_view = false
 								metadata = null
-								type = "PVAL_OPAQUE_HANDLE:CTakeDamageInfo"
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
 								default_value = 
 								[
 									"PVAL_VOID",
 								]
-								associated_inflow_name = "CTakeDamageInfoAPI::GetDamageAmount"
+								associated_inflow_name = "CTakeDamageResultAPI::GetDamageDealt"
 							}
 						}
 						pulse_outparams = 
@@ -23701,14 +24932,14 @@
 									"PVAL_VOID",
 								]
 								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CTakeDamageInfoAPI::GetDamageAmount"
+								direct_return_value_for = "CTakeDamageResultAPI::GetDamageDealt"
 							}
 						}
 						pulse_feature_tag = 1
 						generic_node_category = 4
 						is_pulse_target_method = true
 						target_arg_name = "_Target"
-						friendly_name_without_target = "Get Damage Amount"
+						friendly_name_without_target = "Get Damage Dealt"
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -23721,11 +24952,11 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CTakeDamageInfoAPI::GetHitGroupID" = 
+				"CTakeDamageResultAPI::GetDamageDirection" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Get Hit Group ID (CTakeDamageInfo)"
-					m_Description = ""
+					m_FriendlyName = "Get Damage Direction (CTakeDamageResult)"
+					m_Description = "Get the direction vector of the incoming damage came"
 					m_MetaData = 
 					{
 						supported_domains = 
@@ -23734,7 +24965,7 @@
 						}
 						scope_to_dependency_name = 
 						{
-							server.dll = "@lib:server.dll!CTakeDamageInfoAPI"
+							server.dll = "@lib:server.dll!CTakeDamageResultAPI"
 						}
 						pulse_inparams = 
 						{
@@ -23744,12 +24975,145 @@
 								description = ""
 								advanced_view = false
 								metadata = null
-								type = "PVAL_OPAQUE_HANDLE:CTakeDamageInfo"
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
 								default_value = 
 								[
 									"PVAL_VOID",
 								]
-								associated_inflow_name = "CTakeDamageInfoAPI::GetHitGroupID"
+								associated_inflow_name = "CTakeDamageResultAPI::GetDamageDirection"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CTakeDamageResultAPI::GetDamageDirection"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Damage Direction"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CTakeDamageResultAPI::GetDestructibleHitGroupRequests" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Destructible Hit Group Requests (CTakeDamageResult)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CTakeDamageResultAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTakeDamageResultAPI::GetDestructibleHitGroupRequests"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_ARRAY:PVAL_OPAQUE_HANDLE:DestructiblePartDamageRequest_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CTakeDamageResultAPI::GetDestructibleHitGroupRequests"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Destructible Hit Group Requests"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CTakeDamageResultAPI::GetHitGroupID" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Hit Group ID (CTakeDamageResult)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CTakeDamageResultAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTakeDamageResultAPI::GetHitGroupID"
 							}
 						}
 						pulse_outparams = 
@@ -23766,7 +25130,7 @@
 									"PVAL_VOID",
 								]
 								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CTakeDamageInfoAPI::GetHitGroupID"
+								direct_return_value_for = "CTakeDamageResultAPI::GetHitGroupID"
 							}
 						}
 						pulse_feature_tag = 1
@@ -23786,10 +25150,10 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CTakeDamageInfoAPI::GetInflictor" = 
+				"CTakeDamageResultAPI::GetInflictor" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Get Inflictor (CTakeDamageInfo)"
+					m_FriendlyName = "Get Inflictor (CTakeDamageResult)"
 					m_Description = "Inflictor is the entity that is dealing the damage.\nIt can be the attacker itself or a summoned unit, a projectile entity of some sort.\nIt is *MOST DEFINITELY NOT* the weapon or ability. Use Set/GetAbility for that."
 					m_MetaData = 
 					{
@@ -23799,7 +25163,7 @@
 						}
 						scope_to_dependency_name = 
 						{
-							server.dll = "@lib:server.dll!CTakeDamageInfoAPI"
+							server.dll = "@lib:server.dll!CTakeDamageResultAPI"
 						}
 						pulse_inparams = 
 						{
@@ -23809,12 +25173,12 @@
 								description = ""
 								advanced_view = false
 								metadata = null
-								type = "PVAL_OPAQUE_HANDLE:CTakeDamageInfo"
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
 								default_value = 
 								[
 									"PVAL_VOID",
 								]
-								associated_inflow_name = "CTakeDamageInfoAPI::GetInflictor"
+								associated_inflow_name = "CTakeDamageResultAPI::GetInflictor"
 							}
 						}
 						pulse_outparams = 
@@ -23831,7 +25195,7 @@
 									"PVAL_VOID",
 								]
 								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CTakeDamageInfoAPI::GetInflictor"
+								direct_return_value_for = "CTakeDamageResultAPI::GetInflictor"
 							}
 						}
 						pulse_feature_tag = 1
@@ -23851,10 +25215,10 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CTakeDamageInfoAPI::HasDamageTypeBurn" = 
+				"CTakeDamageResultAPI::GetPreModifiedDamage" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Has Damage Type Burn (CTakeDamageInfo)"
+					m_FriendlyName = "Get Pre Modified Damage (CTakeDamageResult)"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -23864,7 +25228,7 @@
 						}
 						scope_to_dependency_name = 
 						{
-							server.dll = "@lib:server.dll!CTakeDamageInfoAPI"
+							server.dll = "@lib:server.dll!CTakeDamageResultAPI"
 						}
 						pulse_inparams = 
 						{
@@ -23874,12 +25238,77 @@
 								description = ""
 								advanced_view = false
 								metadata = null
-								type = "PVAL_OPAQUE_HANDLE:CTakeDamageInfo"
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
 								default_value = 
 								[
 									"PVAL_VOID",
 								]
-								associated_inflow_name = "CTakeDamageInfoAPI::HasDamageTypeBurn"
+								associated_inflow_name = "CTakeDamageResultAPI::GetPreModifiedDamage"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CTakeDamageResultAPI::GetPreModifiedDamage"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Pre Modified Damage"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CTakeDamageResultAPI::HasDamageTypeBlast" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Has Damage Type Blast (CTakeDamageResult)"
+					m_Description = "Returns True if damage type is from a Blast"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CTakeDamageResultAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTakeDamageResultAPI::HasDamageTypeBlast"
 							}
 						}
 						pulse_outparams = 
@@ -23896,7 +25325,72 @@
 									"PVAL_VOID",
 								]
 								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CTakeDamageInfoAPI::HasDamageTypeBurn"
+								direct_return_value_for = "CTakeDamageResultAPI::HasDamageTypeBlast"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Has Damage Type Blast"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CTakeDamageResultAPI::HasDamageTypeBurn" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Has Damage Type Burn (CTakeDamageResult)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CTakeDamageResultAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTakeDamageResultAPI::HasDamageTypeBurn"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_BOOL"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CTakeDamageResultAPI::HasDamageTypeBurn"
 							}
 						}
 						pulse_feature_tag = 1
@@ -23904,6 +25398,72 @@
 						is_pulse_target_method = true
 						target_arg_name = "_Target"
 						friendly_name_without_target = "Has Damage Type Burn"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CTestPulseIOAPI::GetTestIntValue" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Test Int Value (test_io_combinations)"
+					m_Description = "<br><br>This node can appear in Observable contexts."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!CTestPulseIOAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_EHANDLE:test_io_combinations"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTestPulseIOAPI::GetTestIntValue"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CTestPulseIOAPI::GetTestIntValue"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Test Int Value"
+						has_observable_context = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -25063,7 +26623,7 @@
 				"CTestPulseIOAPI::OnInternalTestBool" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestBool"
+					m_FriendlyName = "On Internal Test Bool"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25090,9 +26650,9 @@
 								]
 								associated_inflow_name = "CTestPulseIOAPI::OnInternalTestBool"
 							}
-							bOutValue = 
+							param = 
 							{
-								friendly_name = "Out Value"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = null
@@ -25132,7 +26692,7 @@
 				"CTestPulseIOAPI::OnInternalTestColor" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestColor"
+					m_FriendlyName = "On Internal Test Color"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25159,9 +26719,9 @@
 								]
 								associated_inflow_name = "CTestPulseIOAPI::OnInternalTestColor"
 							}
-							colOutValue = 
+							param = 
 							{
-								friendly_name = "Col Out Value"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = null
@@ -25201,7 +26761,7 @@
 				"CTestPulseIOAPI::OnInternalTestEntityHandle" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestEntityHandle"
+					m_FriendlyName = "On Internal Test Entity Handle"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25228,9 +26788,9 @@
 								]
 								associated_inflow_name = "CTestPulseIOAPI::OnInternalTestEntityHandle"
 							}
-							outHandle = 
+							param = 
 							{
-								friendly_name = "Out Handle"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = null
@@ -25270,7 +26830,7 @@
 				"CTestPulseIOAPI::OnInternalTestEntityHandleInt" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestEntityHandleInt"
+					m_FriendlyName = "On Internal Test Entity Handle Int"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25352,7 +26912,7 @@
 				"CTestPulseIOAPI::OnInternalTestEntityName" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestEntityName"
+					m_FriendlyName = "On Internal Test Entity Name"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25379,9 +26939,9 @@
 								]
 								associated_inflow_name = "CTestPulseIOAPI::OnInternalTestEntityName"
 							}
-							outName = 
+							param = 
 							{
-								friendly_name = "Out Name"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = null
@@ -25421,7 +26981,7 @@
 				"CTestPulseIOAPI::OnInternalTestEntityNameString" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestEntityNameString"
+					m_FriendlyName = "On Internal Test Entity Name String"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25503,7 +27063,7 @@
 				"CTestPulseIOAPI::OnInternalTestFloat" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestFloat"
+					m_FriendlyName = "On Internal Test Float"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25530,9 +27090,9 @@
 								]
 								associated_inflow_name = "CTestPulseIOAPI::OnInternalTestFloat"
 							}
-							flOutValue = 
+							param = 
 							{
-								friendly_name = "Out Value"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = null
@@ -25572,7 +27132,7 @@
 				"CTestPulseIOAPI::OnInternalTestFloatString" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestFloatString"
+					m_FriendlyName = "On Internal Test Float String"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25654,7 +27214,7 @@
 				"CTestPulseIOAPI::OnInternalTestInt" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestInt"
+					m_FriendlyName = "On Internal Test Int"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25681,9 +27241,9 @@
 								]
 								associated_inflow_name = "CTestPulseIOAPI::OnInternalTestInt"
 							}
-							nOutValue = 
+							param = 
 							{
-								friendly_name = "Out Value"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = null
@@ -25723,7 +27283,7 @@
 				"CTestPulseIOAPI::OnInternalTestSchemaEnum" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestSchemaEnum"
+					m_FriendlyName = "On Internal Test Schema Enum"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25750,9 +27310,9 @@
 								]
 								associated_inflow_name = "CTestPulseIOAPI::OnInternalTestSchemaEnum"
 							}
-							outValue = 
+							param = 
 							{
-								friendly_name = "Out Value"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = null
@@ -25792,7 +27352,7 @@
 				"CTestPulseIOAPI::OnInternalTestString" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestString"
+					m_FriendlyName = "On Internal Test String"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25819,9 +27379,9 @@
 								]
 								associated_inflow_name = "CTestPulseIOAPI::OnInternalTestString"
 							}
-							strOutValue = 
+							param = 
 							{
-								friendly_name = "Out Value"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = null
@@ -25861,7 +27421,7 @@
 				"CTestPulseIOAPI::OnInternalTestStringStringString" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestStringStringString"
+					m_FriendlyName = "On Internal Test String String String"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25956,7 +27516,7 @@
 				"CTestPulseIOAPI::OnInternalTestVector" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestVector"
+					m_FriendlyName = "On Internal Test Vector"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -25983,9 +27543,9 @@
 								]
 								associated_inflow_name = "CTestPulseIOAPI::OnInternalTestVector"
 							}
-							vecOutValue = 
+							param = 
 							{
-								friendly_name = "Out Value"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = null
@@ -26025,7 +27585,7 @@
 				"CTestPulseIOAPI::OnInternalTestVoid" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnInternalTestVoid"
+					m_FriendlyName = "On Internal Test Void"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -26066,6 +27626,201 @@
 								is_default_outflow = true
 							},
 						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"DestructiblePartDamageRequestAPI::GetDamageLevel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Damage Level (DestructiblePartDamageRequest_t)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!DestructiblePartDamageRequestAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:DestructiblePartDamageRequest_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "DestructiblePartDamageRequestAPI::GetDamageLevel"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "DestructiblePartDamageRequestAPI::GetDamageLevel"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Damage Level"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"DestructiblePartDamageRequestAPI::GetDesiredHealth" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Desired Health (DestructiblePartDamageRequest_t)"
+					m_Description = "Desired health if this is a request, otherwise the health it's at at this point."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!DestructiblePartDamageRequestAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:DestructiblePartDamageRequest_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "DestructiblePartDamageRequestAPI::GetDesiredHealth"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "DestructiblePartDamageRequestAPI::GetDesiredHealth"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Desired Health"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"DestructiblePartDamageRequestAPI::GetHitGroup" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Hit Group (DestructiblePartDamageRequest_t)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							server.dll = "@lib:server.dll!DestructiblePartDamageRequestAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:DestructiblePartDamageRequest_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "DestructiblePartDamageRequestAPI::GetHitGroup"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_SCHEMA_ENUM:HitGroup_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "DestructiblePartDamageRequestAPI::GetHitGroup"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Hit Group"
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"

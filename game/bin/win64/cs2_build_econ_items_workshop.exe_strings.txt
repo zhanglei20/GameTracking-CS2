@@ -4,6 +4,7 @@
 .CRT$XCAA
 .CRT$XIAA
 .CRT$XIAC
+2\vpt
 <<ECONITEM_INSERT_COUPON_LOOTLIST>>
 <<ECONITEM_INSERT_EVERYTHING_SOURCE2_BUILD_HERE>>
 AppSystemInitFailed\n
@@ -22,7 +23,6 @@ CCS2EconNode_SprayKit
 CCS2EconNode_StickerCapsule
 CCS2EconNode_StickerKit
 CCS2EconNode_UnusualLootList
-CUtlSortVector<class CUtlString,class CUtlSortVectorDefaultLess<class CUtlString>,class CUtlVector<class CUtlString,int,class CUtlVectorMemory_Growable<class CUtlString,int,0> > >::FindLessOrEqual
 CUtlSortVector<class CUtlString,class CUtlSortVectorDefaultLess<class CUtlString>,class CUtlVector<class CUtlString,int,class CUtlVectorMemory_Growable<class CUtlString,int,0> > >::InsertIfNotFound
 EDITOR_ONLY
 Failed to read: %s\n

@@ -420,8 +420,8 @@ CUtlDict<class CDmElement *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CDmElementFactoryHelper *,class CDefFastCaselessStringLess>::Insert
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
 CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
@@ -463,7 +463,6 @@ DMX Model Pipeline Physics Script File
 DMX Model Pipeline Preprocess File
 DMX Model Pipeline Root Script File
 DMX_MODEL_SOURCE_UNKNOWN
-D\tV_log2f
 Dampen Movement Relative to Control Point
 DataModel needs the file system to function
 Dest addon         : '%s'\n
@@ -691,7 +690,6 @@ Remap Distance Between Two Control Points to Scalar
 Remap Distance to Control Point to Scalar
 Remap Noise to Scalar
 Remap Scalar
-Reset
 Resource references not allowed in EditInfo data: "%s"
 ResourceCopy
 ResourceCopyError
@@ -729,6 +727,7 @@ Source mod         : '%s'\n
 Source search path : '%s'\n
 StereoFlip
 Symbol table:  %d entries %llu bytes\n
+T\tV_log2f
 Texture Configuration File
 The filename may only contain lower case alphanumeric characters, dashes, and underscores.
 This expression determines whether the tag should actually be applied to an asset\nIt will be evaluated against vdata entries where the key matches the asset - if any of them evaluate to true the tag will be applied.\nMost simple expressions involving the VData keys are supported. Use 'true' to tag unconditionally.
@@ -902,7 +901,6 @@ color_tint
 colorsIndices
 combo
 compileAsOverride
-connections
 connectionsData
 constrainVelocity
 constrain_velocity
@@ -929,7 +927,6 @@ defaultRightValue
 defaultValue
 defaultcurvetype
 defaultedgezerovalue
-direction
 directlight
 disableShadows
 disableShadows2
@@ -1022,7 +1019,6 @@ isGroup
 isOrientation
 isPosition
 item_item_crate
-j\tV_sscanf_s
 jointIndices
 jointIndicesIndices
 jointList
@@ -1408,4 +1404,5 @@ wrinkle
 wrinkle$0
 wrinkle$0Indices
 wrinkleIndices
+z\tV_sscanf_s
 ~CGenericFilter

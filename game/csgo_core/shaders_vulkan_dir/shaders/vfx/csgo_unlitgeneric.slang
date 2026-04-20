@@ -68,7 +68,6 @@ VS
 	DynamicCombo( D_SCREEN_SPACE, 0..1 );
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
@@ -382,7 +381,7 @@ PS
 	    int _Globals_1_g_bFogEnabled : packoffset(c0.z);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    float4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c23);
 	    float4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c24);

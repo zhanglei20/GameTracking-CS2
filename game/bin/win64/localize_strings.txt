@@ -19,6 +19,13 @@
 !plural: unknown handler %s for %s
 !plural: variable %s is non-numeric
 !plural: variable %s not found
+!vars.GetLocVariable( "str" )->HasExternalValue()
+!vars.SetVariable( "extstr", "external string val" )
+!vars.SetVariable( "f64", 12.3456 )
+!vars.SetVariable( "i64", -1234ll )
+!vars.SetVariable( "str", "string val" )
+!vars.SetVariable( "u64", 12345ull )
+!vars2.GetLocVariable( "str" )->HasExternalValue()
 "lang"\r\n{\r\n"Language" "English"\r\n"Tokens"\r\n{\r\n
 #GameUI_Language_Brazilian
 #GameUI_Language_Bulgarian
@@ -101,6 +108,8 @@
 #LOC_Duration_m_s
 #LOC_Duration_mmss
 #LOC_Duration_s
+#NotFound:p
+#Valve_Close
 #Valve_SelectLanguage_Brazilian
 #Valve_SelectLanguage_Bulgarian
 #Valve_SelectLanguage_Czech
@@ -130,18 +139,32 @@
 #Valve_SelectLanguage_Turkish
 #Valve_SelectLanguage_Ukrainian
 #Valve_SelectLanguage_Vietnamese
+#Valve_TestDecimalPlurals:p
+#Valve_TestExplicitPlurals_Noun0
+#Valve_TestExplicitPlurals_Noun1
+#Valve_TestExplicitPlurals_Noun321
+#Valve_TestGenders_Adjective1:g
+#Valve_TestGenders_Noun1
+#Valve_TestGenders_Noun2
+#Valve_TestPluralGenders_Noun1:p
+#Valve_TestPlurals:p
+#Valve_TestPluralsEnglishOnly:p
+$1.23
 %04d
 %language%
 %llu 
-%s failed to localize: %s\n
+%s failed to localize: '%s'\n
 %s(%u): Localization key '%s' has a conditional that is too long. Truncating.\n
 %s(%u): Localization key '%s' has a value that is too long. Truncating.\n
 %s(%u): Localization key '%s' is too long. Truncating.\n
+%s: :g loc tokens are no longer supported, use a MessageFormat string instead (token '%s')\n
+%s: :p loc tokens are no longer supported, use a MessageFormat string instead (token '%s')\n
+%s: unexpected language '%s'\n
 %s_pw
-' is non-numeric for plural :>
 (%s from %u files; %s not file-based)\n
 *.txt
 +Inf
+-1,234
 -Inf
 .?AV?$CBaseAppSystem@VILocalize@@@@
 .?AV?$CRefCounted1@VILocalizeCompiledString@@V?$CRefCountServiceBase@VCRefMT@@@@@@
@@ -149,22 +172,36 @@
 .?AV?$CTier1AppSystem@VILocalize@@$0A@@@
 .?AV?$CTier2AppSystem@VILocalize@@$0A@@@
 .?AVCAssertErrorListener@@
+.?AVCLocVariableSet@@
+.?AVCLocVariableSetBase@@
+.?AVCLocalizationEngineParseNode@@
+.?AVCLocalizationEngineParseNode_GenderSelector@@
+.?AVCLocalizationEngineParseNode_PluralSelector@@
+.?AVCLocalizationEngineParseNode_SelectorBase@@
+.?AVCLocalizationEngineParseNode_StringSelector@@
+.?AVCLocalizationEngineParseNode_TextFragment@@
+.?AVCLocalizationEngineParseNode_VariableSubstitution@@
 .?AVCLocalize@@
 .?AVCLocalizeCompiledStringBase@@
 .?AVCLocalizeCompiledStringLocVariables@@
 .?AVCLocalizeCompiledStringMessageFormat@@
 .?AVCLocalizeCompiledStringSinglePlain@@
 .?AVCSimpleErrorListener@@
+.?AVILocVariableSource@@
 .?AVILocalize@@
 .?AVILocalizeCompiledString@@
+.?AVILocalize_EconProvider@@
+.?AVbad_optional_access@std@@
 /resource/valve_
+12.3456
+12.35
+12345
+:foo
 :help
 :name_ref
 :shorthelp
-<: value of '
 <all localization info removed>
 <compatibility token '%s' does not have gender information>
-<compatibility token '%s' has invalid gender information>
 <compile request with a different syntax>
 <file-based localization reloaded>
 <floating-point value out of range>
@@ -181,11 +218,14 @@
 <unable to resolve compatibility token>
 ARS$
 AllowOverrideFiles
+Bad optional access
 Badly formed loc var, format is {g:type:name} '%.*s'\n
 Brazilian
 Bulgarian
 C:\buildworker\csgo_rel_win64\build\_build_\localize\_vpc_localize\default\win64\_msvc_\Retail\localize.pdb
 C:\buildworker\csgo_rel_win64\build\src\localize\loc_add.cpp
+C:\buildworker\csgo_rel_win64\build\src\localize\loc_variables.cpp
+C:\buildworker\csgo_rel_win64\build\src\localize\loc_variants.cpp
 C:\buildworker\csgo_rel_win64\build\src\localize\localize_imp.cpp
 CLP$
 CLocalize::AddFileImpl
@@ -193,24 +233,36 @@ CLocalize::AddTokenMiss
 CLocalize::CompileString
 CLocalize::ConstructMFString
 CLocalize::ConstructString
-CLocalize::FindPluralImpl
 CLocalize::FindSafe
 CLocalize::InstallChangeCallback: Attempted to add the same callback twice!\n
-CLocalize::ResolvePluralCompatibleImpl
-CLocalize::ResolvePluralImpl
-CLocalize::ResolveToken
+CLocalize::RunInternalTest_LocVariableResolve
+CLocalize::RunInternalTest_PluralGender
+CLocalize::RunInternalTest_PluralGender_Dutch
+CLocalize::RunInternalTest_PluralGender_English
+CLocalize::RunInternalTest_PluralGender_French
+CLocalize::RunInternalTest_PluralGender_Japanese
+CLocalize::RunInternalTest_PluralGender_Russian
+CLocalize::Test_FindPluralSafeImpl
 COL$
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<char const *,class LocalizeStringID_t,struct StringEqualFunctor,struct StringHashFunctor,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<char const *,class LocalizeStringID_t,struct StringEqualFunctor,struct StringHashFunctor,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<char const *,struct CLocalize::LocTokenInfo_t,struct FastCaselessStringEqualFunctor,struct FastCaselessStringHashFunctor,class LocalizeStringIndex_t>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<char const *,struct CLocalize::LocTokenInfo_t,struct FastCaselessStringEqualFunctor,struct FastCaselessStringHashFunctor,class LocalizeStringIndex_t>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlStringToken,struct CLocalize::LocVariableHandler_t,class CDefEquals<class CUtlStringToken>,struct HashMapFunctor_t<class CUtlStringToken>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlStringToken,struct CLocalize::LocVariableHandler_t,class CDefEquals<class CUtlStringToken>,struct HashMapFunctor_t<class CUtlStringToken>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlStringToken,struct CLocalize::LocVariableHandler_t,class CDefEquals<class CUtlStringToken>,struct DefaultHashFunctor<class CUtlStringToken>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlStringToken,struct CLocalize::LocVariableHandler_t,class CDefEquals<class CUtlStringToken>,struct DefaultHashFunctor<class CUtlStringToken>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<unsigned char,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<unsigned char,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<unsigned char,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<unsigned char,class CMemAllocAllocator>::Alloc
+CheckFindLocVar
+CheckInvalidParseLocVar
+CheckLocVarConstruct
+CheckLocVarResolve
+CheckParseLocVars
+CheckValidParseLocVar
+Close
 Compatibility context: %s\n
-Compatibility contexts on loc tokens are no longer supported, use a MessageFormat string instead (token '%s')\n
+CompileAndConstructMFString
 CompiledMFString
 Czech
 Danish
+DisallowPgTokens
 DisallowTokenContexts
 Duplicate load of loc file '%s'\n
 DuplicateFileLoadFail
@@ -221,13 +273,21 @@ Dutch
 ERROR: Duplicate load of loc file '%s'\n
 ERROR: Duplicate string token '%s' found in %s (original in %s) - new value '%s', original value '%s'\n
 English
+Expected loc var ref %u of '%s' to be '%s', found '%s'\n
+Expecting %u loc var ref(s) in '%s', found %u\n
+Expecting to fail loc var ref parse of text '%.*s'\n
+Expecting to find %u loc var ref(s) in '%s'\n
+Expecting to find a loc variable reference in '%s'\n
+Expecting to parse loc var ref text '%s'\n
 Failed to read localization file %s\n
 Finnish
 French
 Full paths not allowed in localization file specification '%s'\n
+Gemme
 Generic loc var missing a type in '%.*s'\n
 Generic loc var reference missing a name in '%.*s'\n
 Generic loc var reference modifiers '%s' ignored\n
+Genuine
 German
 Hungarian
 ILocalize::AddFile() failed to load file "%s".\n
@@ -235,8 +295,8 @@ Improper termination of loc variable reference\n
 Indonesian
 Invalid loc variable reference pointer\n
 Invalid loc variable type for '%.*s' (%c)
+Invalid usage char in '%s'\n
 Italian
-J\tV_modfd
 Japanese
 Korean
 LOCFAIL %s: '%s' combines :f with other flags\n
@@ -284,7 +344,9 @@ List information on the given token
 Loaded localization files:\n
 Loc token '%s' not found\n
 Loc token '%s': index %d\n
+Loc var ConstructString with '%s' produced '%s' but expecting '%s'\n
 Loc var reference missing a name in '%.*s'\n
+Loc var resolve of '%s' produced '%s' but expecting '%s'\n
 Loc variable reference doesn't end with a brace\n
 Loc variable reference doesn't start with a brace\n
 Loc variable reference incomplete\n
@@ -295,14 +357,19 @@ Localization stats for %s data:\n
 Localization watching these dirs for changes:\n
 Localize
 Localize_Create
+Localize_EconProvider_Create
+MFTest of '%s' failed: got '%s', expected '%s'\n
 MessageFormat %s
 Mex$
 Norwegian
+Not expecting to find a loc variable reference in '%s'\n
+Not expecting to find any loc var refs in '%s'\n
+Original
+Originale
 PERF WARNING: '%s' is in UTF-16 format, converting to UTF-8 will allow faster loading of it\n
 Plural context: %s\n
 Polish
 Portuguese
-Q\tV_powd
 Romanian
 Russian
 Simplified_Chinese
@@ -310,24 +377,81 @@ Spanish
 Swedish
 Tokens
 Traditional_Chinese
+Treasure
+Treasures
 Turkish
 Ukrainian
 Unable to find localization token '%s'\n
+Unable to parse loc var reference '%s'\n
 Unknown loc variable number modifier '%c'\n
 Unknown loc variable string modifier '%c'\n
 Unknown loc variable time modifier '%c'\n
 Unlocalized token '%s'\n
 Usage: %s <token>\n
+V_strStartsWith( pFound, pExpected )
+V_strcmp( pLocalize->FindLongestInstance( "#Valve_TestPlurals:p", nullptr ), "singular" ) == 0
+V_strcmp( pLocalize->FindSafe( "#Valve_TestExplicitPlurals_Noun0" ), "none" ) == 0
+V_strcmp( pLocalize->FindSafe( "#Valve_TestExplicitPlurals_Noun1" ), "one" ) == 0
+V_strcmp( pLocalize->FindSafe( "#Valve_TestExplicitPlurals_Noun321" ), "many" ) == 0
+V_strcmp( pLocalize->FindSafe( "#Valve_TestGenders_Adjective1:g" ), "Genuine" ) == 0
+V_strcmp( pLocalize->FindSafe( "#Valve_TestGenders_Noun1" ), "Treasure" ) == 0
+V_strcmp( pLocalize->FindSafe( "#Valve_TestGenders_Noun2" ), "Gemme" ) == 0
+V_strcmp( pLocalize->FindSafe( "#Valve_TestPlurals:p" ), "singular" ) == 0
+V_strcmp( pLocalize->FindUnsafe( "#Valve_Close" ), "Close" ) == 0
+V_strcmp( pLocalize->FindUnsafe( "#Valve_Close" ), "\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD1\x8C" ) == 0
+V_strcmp( pLocalize->FindUnsafe( "#Valve_Close" ), "\xE9\x96\x89\xE3\x81\x98\xE3\x82\x8B" ) == 0
+V_strcmp( pLocalize->GetValueByInstanceIndex( nInstance ), "Original" ) == 0
+V_strcmp( pLocalize->GetValueByInstanceIndex( nInstance ), "Originale" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, 0, LOC_GET_VARIANT_FOR_PLURAL ), "JP0" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, 0, LOC_GET_VARIANT_FOR_PLURAL ), "RU0" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, 0, LOC_GET_VARIANT_FOR_PLURAL ), "singular" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, 1, LOC_GET_VARIANT_FOR_PLURAL ), "RU1" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, 1, LOC_GET_VARIANT_FOR_PLURAL ), "plural" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, 2, LOC_GET_VARIANT_FOR_PLURAL ), "RU2" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, 3, LOC_GET_VARIANT_FOR_PLURAL ), "RU3" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, 4, LOC_GET_VARIANT_FOR_PLURAL ), "RU4" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, LOC_GENDER_FEMININE, LOC_GET_VARIANT_FOR_GENDER ), "Originale" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, LOC_GENDER_MASCULINE, LOC_GET_VARIANT_FOR_GENDER ), "Original" ) == 0
+V_strcmp( pLocalize->GetVariantValueByIndex( nString, LOC_GENDER_NONE, LOC_GET_VARIANT_FOR_GENDER ), "Genuine" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#NotFound:p", 1 ), "#NotFound:p" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestDecimalPlurals:p", 0.1, 1 ), "seconde" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestDecimalPlurals:p", 1.0, 1 ), "seconden" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestDecimalPlurals:p", 1.0, 1 ), "seconds" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestDecimalPlurals:p", 1.001, 3 ), "seconde" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestDecimalPlurals:p", 1.0011, 4 ), "seconden" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestDecimalPlurals:p", 1.5, 1 ), "seconds" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestDecimalPlurals:p", 2.0, 1 ), "seconds" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestDecimalPlurals:p", 2.01, 2 ), "seconden" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPluralGenders_Noun1:p", 1 ), "Tr\xc3\xa9sor" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPluralGenders_Noun1:p", 1 ), "Treasure" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPluralGenders_Noun1:p", 2 ), "Tr\xc3\xa9sors" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPluralGenders_Noun1:p", 2 ), "Treasures" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", -2 ), "plural" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", 1 ), "JP0" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", 1 ), "RU0" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", 1 ), "singular" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", 1.0, 0 ), "RU0" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", 1.0, 1 ), "RU4" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", 11 ), "RU2" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", 11000 ), "RU3" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", 2 ), "plural" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPlurals:p", 22 ), "RU1" ) == 0
+V_strcmp( pLocalize->Test_FindPluralSafe( "#Valve_TestPluralsEnglishOnly:p", 11 ), "localize" ) == 0
 Valve_Test
 Valve_TestGendersEnglishOnly_A:g
 Valve_TestGendersEnglishOnly_N:n
 Valve_TestPluralsEnglishOnly:p
 Vietnamese
 WARNING: Duplicate string token '%s' found in %s (original in %s) - new value '%s', original value '%s'\n
+Z\tV_modfd
+[!s:notavar]
+[!s:notpresent]
 [END]
-[unknown string]
 \resource\valve_
 \t_V_StringAfterPrefixCaseSensitive
+\{s:foo} {s:bar}
+\{s:foo} {} {,:} {s:} {s:bar} extra
+a\tV_powd
 bg_BG
 brazilian
 bulgarian
@@ -338,19 +462,26 @@ danish
 de_DE
 dump_loc_token
 dump_localization_files
+duplicate selector case
 dutch
-dx\fP
 el_GR
 en_US
 english]
 es-419
 es_419
 es_ES
+external string val
+extstr
 fi_FI
 file://
 finnish
+foo}
 fr_FR
 french
+gen test
+gen test mod A
+gen test mod AB
+gen test mod B
 gender
 german
 greek
@@ -383,11 +514,80 @@ missing required gender category
 missing required integer after '='
 missing required selection type (ie., 'plural') after comma
 missing required substitution variable name
-mission-points
+money
+nInstance != LOCALIZE_INVALID_INSTANCE_INDEX
+nInstance == LOCALIZE_INVALID_INSTANCE_INDEX
+nString != LOCALIZE_INVALID_STRING_INDEX
 nl_NL
+no vars
+no vars at all
 no_NO
 norwegian
+not used
 other
+pAfter != nullptr && pAfter > pFound && pAfter[-1] == '}'
+pCompiled->IsValid()
+pExpected == nullptr
+pLocalize->FindLocVariableReferenceText( pString ) == pFound
+pLocalize->FindUnsafe( "#Valve_Close" ) != nullptr
+pLocalize->GetCurrentELanguage() == k_Lang_Dutch
+pLocalize->GetCurrentELanguage() == k_Lang_English
+pLocalize->GetCurrentELanguage() == k_Lang_French
+pLocalize->GetCurrentELanguage() == k_Lang_Japanese
+pLocalize->GetCurrentELanguage() == k_Lang_Russian
+pLocalize->GetNumGenderVariants() == 0
+pLocalize->GetNumGenderVariants() == 2
+pLocalize->GetNumPluralGenderVariants() == 0
+pLocalize->GetNumPluralGenderVariants() == 4
+pLocalize->GetNumPluralVariants() == 1
+pLocalize->GetNumPluralVariants() == 2
+pLocalize->GetNumPluralVariants() == 5
+pLocalize->GetPluralVariant( 0 ) == 0
+pLocalize->GetPluralVariant( 0 ) == 1
+pLocalize->GetPluralVariant( 0 ) == 3
+pLocalize->GetPluralVariant( 0.0, 1 ) == 0
+pLocalize->GetPluralVariant( 0.1, 1 ) == 0
+pLocalize->GetPluralVariant( 0.11, 2 ) == 1
+pLocalize->GetPluralVariant( 0.5, 1 ) == 0
+pLocalize->GetPluralVariant( 0.5, 1 ) == 1
+pLocalize->GetPluralVariant( 1.0, 1 ) == 0
+pLocalize->GetPluralVariant( 1.0, 1 ) == 1
+pLocalize->GetPluralVariant( 1.0, 1 ) == 4
+pLocalize->GetPluralVariant( 1.001, 3 ) == 0
+pLocalize->GetPluralVariant( 1.0011, 4 ) == 1
+pLocalize->GetPluralVariant( 1.5, 1 ) == 0
+pLocalize->GetPluralVariant( 1.5, 1 ) == 1
+pLocalize->GetPluralVariant( 10 ) == 2
+pLocalize->GetPluralVariant( 100 ) == 2
+pLocalize->GetPluralVariant( 1000 ) == 3
+pLocalize->GetPluralVariant( 10000 ) == 3
+pLocalize->GetPluralVariant( 101 ) == 0
+pLocalize->GetPluralVariant( 11 ) == 2
+pLocalize->GetPluralVariant( 12 ) == 2
+pLocalize->GetPluralVariant( 13 ) == 2
+pLocalize->GetPluralVariant( 14 ) == 2
+pLocalize->GetPluralVariant( 2 ) == 0
+pLocalize->GetPluralVariant( 2 ) == 1
+pLocalize->GetPluralVariant( 2.0, 1 ) == 1
+pLocalize->GetPluralVariant( 2.01, 2 ) == 1
+pLocalize->GetPluralVariant( 2.5, 1 ) == 1
+pLocalize->GetPluralVariant( 21 ) == 0
+pLocalize->GetPluralVariant( 22 ) == 0
+pLocalize->GetPluralVariant( 22 ) == 1
+pLocalize->GetPluralVariant( 23 ) == 1
+pLocalize->GetPluralVariant( 24 ) == 1
+pLocalize->GetValueVariantByInstanceIndex( nInstance ) == 0
+pLocalize->GetValueVariantByInstanceIndex( nInstance ) == 1
+pLocalize->GetValueVariantByInstanceIndex( nInstance ) == 2
+pLocalize->GetValueVariantByInstanceIndex( nInstance ) == 3
+pLocalize->GetValueVariantByInstanceIndex( nInstance ) == 4
+pLocalize->GetValueVariantByInstanceIndex( nInstance ) == LOC_VALUE_ALL_VARIANTS
+pLocalize->GetValueVariantByInstanceIndex( nInstance ) == LOC_VALUE_NO_VARIANTS
+pLocalize->GetVariantValueByIndex( nString, 1, LOC_GET_VARIANT_FOR_PLURAL ) == nullptr
+pLocalize->GetVariantValueByIndex( nString, 2, LOC_GET_VARIANT_FOR_PLURAL ) == nullptr
+pLocalize->GetVariantValueByIndex( nString, 5, LOC_GET_VARIANT_FOR_PLURAL ) == nullptr
+pLocalize->GetVariantValueByIndex( nString, LOC_GENDER_MASCULINE, LOC_GET_VARIANT_FOR_GENDER ) == nullptr
+pLocalize->GetVariantValueByIndex( nString, LOC_GENDER_MASCULINE_INANIMATE, LOC_GET_VARIANT_FOR_GENDER ) == nullptr
 parse error: %s at position %lld (context: "%s>>>%s<<<%s")
 pl_PL
 plural
@@ -405,14 +605,20 @@ ro_RO
 romanian
 ru_RU
 russian
+seconde
+seconden
+seconds
 select
-select "other" must be the last comparison value
+singular
+sors
 spanish
+string val
 sv_SE
 swedish
 tchinese
 th_TH
 thai
+three
 tr_TR
 turkish
 uk_UA
@@ -421,7 +627,77 @@ unknown/unimplemented selection type
 unknown/unsupported gender category
 unknown/unsupported plural category
 unmatched '}'
+var.m_nModifiers == nModifiers
+var.m_type == varType
+var.m_variableName == pName
+var.m_variableParams == pParams
+vars.Count() == expectedNames.Count()
+vars.GetLocVariable( "extstr" )->HasExternalValue()
+vars.SetTimeVariable( "time", nCurTime )
+vars.SetVariable( "f64", 12.3456 )
+vars.SetVariable( "gen", "not used" )
+vars.SetVariable( "i64", -1234ll )
+vars.SetVariable( "money", CCurrencyAmount( 123, k_ECurrencyUSD ) )
+vars.SetVariable( "str", "string val" )
+vars.SetVariable( "str", "string val", true )
+vars.SetVariable( "u64", 12345ull )
+vars.SetVariableExternal( "extstr", "external string val" )
+vars2.GetLocVariable( "extstr" )->HasExternalValue()
+vars[i].m_variableName == expectedNames[i]
 vi_VN
 vietnamese
+x !{q:badtype} x
+x STRING VAL external string val -1234 12345 12.346 $1.23 gen test mod AB x
+x STRING VAL external string val -1234 12345 12.346 $1.23 gen test x
+x \{s:not} {s:one}
+x string val x
+x {q:badtype} x
+x {s:one}  {t:s:two}   {g:test:abc:three} x
+x {s:str} x
+x {s:u:str} {s:extstr} {d:r:i64} {u:u64} {f:3:f64} {m:money} {g:test:ab:gen} x
+x {s:u:str} {s:extstr} {d:r:i64} {u:u64} {f:3:f64} {m:money} {g:test:gen} x
+x {{s:one} x
 zh_CN
 zh_TW
+{D:o:r:foo}
+{M:foo}
+{d:i64}
+{d:o:r:9:foo}
+{f:0:1:9:foo}
+{f:4:f64}
+{f:f64}
+{f:foo}
+{f:r:1:2:3:foo}
+{g:foo}
+{g:test::foo}
+{g:test:a:foo}
+{g:test:ab:foo}
+{g:test:abc:foo}
+{g:test:b:a:foo}
+{g:test:b:foo}
+{g:test:b:gen}
+{g:test:ba:foo}
+{g:test:foo}
+{g:test:gen}
+{i:foo}
+{m:money}
+{s:9:foo}
+{s:bar}
+{s:extstr}
+{s:foo}
+{s:notavar}
+{s:notpresent}
+{s:one} \"x
+{s:one} x
+{s:str}
+{s:u:foo}
+{t:9:foo}
+{t:foo}
+{t:l:time}
+{t:s:foo}
+{t:s:l:9:foo}
+{t:s:l:foo}
+{t:str}
+{u:foo}
+{u:u64}
+{zzz}

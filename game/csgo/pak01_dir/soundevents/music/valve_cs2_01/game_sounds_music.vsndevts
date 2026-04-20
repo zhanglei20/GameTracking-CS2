@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/valve_cs2_01/mainmenu.vsnd"
+		vsnd_duration = 207.179916
 	}
 	Music.MVPPreview.valve_cs2_01 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/valve_cs2_01/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/valve_cs2_01/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 10.862063
 	}
 	Music.Selection.valve_cs2_01 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/valve_cs2_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 46.799999
 	}
 	Music.MatchFound.valve_cs2_01 = 
 	{
@@ -58,6 +64,7 @@
 			17.069, 19.138, 21.207, 23.276,
 			25.345, 27.414, 29.483, 31.552,
 		]
+		vsnd_duration = 35.689659
 	}
 	Music.LoadingScreen.valve_cs2_01 = 
 	{
@@ -85,6 +92,7 @@
 			"sounds/music/valve_cs2_01/startaction_01.vsnd",
 			"sounds/music/valve_cs2_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 25.34483
 	}
 	Music.StartRound.valve_cs2_01 = 
 	{
@@ -117,6 +125,7 @@
 			17.069, 19.138, 21.207, 23.276,
 			25.345, 27.414, 29.483, 31.552,
 		]
+		vsnd_duration = 35.689659
 	}
 	Music.StartAction.valve_cs2_01 = 
 	{
@@ -146,6 +155,7 @@
 			"sounds/music/valve_cs2_01/startaction_01.vsnd",
 			"sounds/music/valve_cs2_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 25.34483
 	}
 	Music.StartRound_GG.valve_cs2_01 = 
 	{
@@ -179,6 +189,7 @@
 			17.069, 19.138, 21.207, 23.276,
 			25.345, 27.414, 29.483, 31.552,
 		]
+		vsnd_duration = 35.689659
 	}
 	Music.BombPlanted.valve_cs2_01 = 
 	{
@@ -201,6 +212,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 39.146915
 	}
 	Music.BombTenSecCount.valve_cs2_01 = 
 	{
@@ -219,6 +231,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 12.0
 	}
 	Music.GotHostage.valve_cs2_01 = 
 	{
@@ -243,6 +256,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 39.146915
 	}
 	Music.HostageNearRescue.valve_cs2_01 = 
 	{
@@ -265,6 +279,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 12.0
 	}
 	Music.TenSecCount.valve_cs2_01 = 
 	{
@@ -286,6 +301,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 12.0
 	}
 	Music.WonRound.valve_cs2_01 = 
 	{
@@ -310,6 +326,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 6.206916
 	}
 	Music.LostRound.valve_cs2_01 = 
 	{
@@ -334,6 +351,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 7.304354
 	}
 	Music.DeathCam.valve_cs2_01 = 
 	{
@@ -346,6 +364,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 7.304354
 	}
 	Music.MVPAnthem.valve_cs2_01 = 
 	{
@@ -372,6 +403,7 @@
 		[
 			"sounds/music/valve_cs2_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 10.862063
 	}
 	Music.MatchStart.valve_cs2_01 = 
 	{
@@ -387,6 +419,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/valve_cs2_01/startofmatch.vsnd"
+		vsnd_duration = 14.4
 	}
 	Music.MatchEnd.valve_cs2_01 = 
 	{
@@ -408,6 +441,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 44.400002
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

@@ -103,7 +103,7 @@ PS
 	    float4 _m0[256];
 	};
 	
-	cbuffer Dof2CBParams_t : register(b2, space1)
+	cbuffer Dof2CBParams_t : register(b1, space1)
 	{
 	    float Dof2CBParams_t_1_m0 : packoffset(c1.y);
 	    _2998 Dof2CBParams_t_1_m1 : packoffset(c3);

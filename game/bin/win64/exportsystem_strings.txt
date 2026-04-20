@@ -82,6 +82,7 @@ $prefix_element$
 '?SetCount@FbxLayerElementArray@fbxsdk@@QEAA_NHW4EFbxMemoryClearMode@2@@Z
 '?SetCurrentAnimationStack@FbxScene@fbxsdk@@QEAAXPEAVFbxAnimStack@2@@Z
 '?SetFileName@FbxFileTexture@fbxsdk@@QEAA_NPEBD@Z
+(1p2
 (?SetLegacyStyle@FbxShape@fbxsdk@@QEAAX_N@Z
 (?SetLink@FbxCluster@fbxsdk@@QEAAXPEBVFbxNode@2@@Z
 (?SetLinkMode@FbxCluster@fbxsdk@@QEAAXW4ELinkMode@12@@Z
@@ -93,7 +94,7 @@ $prefix_element$
 (?SetNodeAttribute@FbxNode@fbxsdk@@QEAAPEAVFbxNodeAttribute@2@PEAV32@@Z
 (?SetNormals@FbxLayer@fbxsdk@@QEAAXPEAVFbxLayerElementNormal@2@@Z
 (?SetOriginalUpAxis@FbxGlobalSettings@fbxsdk@@QEAAXAEBVFbxAxisSystem@2@@Z
-(Yd2
+(eo2
 )?SetSecondDouble@FbxTime@fbxsdk@@QEAAXN@Z
 )?SetShadingMode@FbxNode@fbxsdk@@QEAAXW4EShadingMode@12@@Z
 )?SetSkeletonType@FbxSkeleton@fbxsdk@@QEAAXW4EType@12@@Z
@@ -801,15 +802,15 @@ $prefix_element$
 .png
 .tga
 .vmat
-082'
+0>XL)
 0x%llx
 16-byte data pool
 2(?SetFrame@FbxTime@fbxsdk@@QEAAX_JW4EMode@12@@Z
 2\nP!E
-2\vp82'
 4-byte data pool
 4C~CGenericFilter
 5sfm_v8
+62L)
 64 283 0
 7'?SetAt@FbxLayerElementArray@fbxsdk@@QEAAXHPEBXW4EFbxType@2@@Z
 8-byte data pool
@@ -996,6 +997,7 @@ BlendLayersUsingTimeSelection
 BrowInV
 Bump
 C:\buildworker\csgo_rel_win64\build\_build_\utils\exportsystem\_vpc_exportsystem\default\win64\_msvc_\Retail\exportsystem.pdb
+C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\csgo_rel_win64\build\src\bitmap\tinyexr_impl.cpp
 C:\buildworker\csgo_rel_win64\build\src\datamodel\dependencygraph.cpp
 C:\buildworker\csgo_rel_win64\build\src\movieobjects\dmelog.cpp
@@ -1148,8 +1150,8 @@ CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<float>,unsigned sh
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<int>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned __int64>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned char>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
 CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
@@ -1230,7 +1232,6 @@ DMX Model Pipeline Root Script File
 DMX anim export can only do a single conversion
 DMX save failed
 DMX_MODEL_SOURCE_UNKNOWN
-D\tV_log2f
 Dampen Movement Relative to Control Point
 DataModel needs the file system to function
 Data_Branch1xy
@@ -1483,13 +1484,14 @@ GenericType
 GetClipboardData
 GetProfile_ultrafast
 GlobalSize
-H1c2
-H]a2
-H]c2
+H)m2
+H=n2
 Hammer temp export
 HemiOctAnisoRoughness_RG_BA
 HemiOctIsoRoughness_RG_B
 HemiOctNormal
+Hil2
+Hin2
 Hold
 I(?SetGlobalTimeMode@FbxTime@fbxsdk@@SAXW4EMode@12@N@Z
 IExportSystem
@@ -1631,7 +1633,6 @@ Preset File
 Procedural
 PropWorldOrigin
 QAngle
-R\fp82'
 Radius Random
 Random Cull
 Randomly Flip Yaw
@@ -1642,7 +1643,6 @@ Remap Noise to Scalar
 Remap Scalar
 Render Bone "%s" Not Found In Fbx Skeleton, Call Convert( CSkeletonPose ) first
 Render Bone "%s" Not Found In Specified CSkeletonPose
-Reset
 Resource "%s" requested out of bounds animation decompressor "%d"\n
 Resource "%s" requested unknown animation decompressor "%s"\n
 RigArms
@@ -1686,6 +1686,7 @@ Solved Knee
 Solved Thigh
 StereoFlip
 Symbol table:  %d entries %llu bytes\n
+T\tV_log2f
 Take 001
 TanFrameQuat
 Texture  :: %s\n
@@ -1747,7 +1748,7 @@ WipeUndo '%s'\n
 World Files
 World Node Files
 X)?SetRotationActive@FbxNode@fbxsdk@@QEAAX_N@Z
-XUb2
+Xam2
 Z%?RemoveElementUV@FbxGeometryBase@fbxsdk@@QEAA_NPEAVFbxLayerElementUV@2@@Z
 ZFP compression is not supported in this build
 [%d] Aborting undo '%s'\n
@@ -1771,6 +1772,7 @@ ZFP compression is not supported in this build
 \t??8FbxVector4@fbxsdk@@QEBA_NAEBV01@@Z
 \tError\n
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
+\tV_strnchr
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\t\t\t\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_StringAfterPrefixCaseSensitive
@@ -1793,7 +1795,8 @@ _selfillummask_
 _specexp_
 _specmask_
 _texcoordNames
-`Ee2
+`9o2
+`Qp2
 activeBookmarkSet
 adding layer %d to stack\n
 addlayer: log %p lc[%d], layer %p
@@ -1939,7 +1942,6 @@ compressedtangentframe
 compression
 compression error would be too large %f [%f %f]\n
 concommands
-connections
 connectionsData
 constantAttenuation
 constrainVelocity
@@ -1982,7 +1984,6 @@ deltaStateWeights
 deltaStateWeightsLagged
 deltaStates
 depthOfFieldSamples
-direction
 directlight
 disableOverride
 disableShadows
@@ -2127,7 +2128,6 @@ isRigid
 isVisible
 isWorldAligned
 item_item_crate
-j\tV_sscanf_s
 j\v??HFbxVector4@fbxsdk@@QEBA?AV01@AEBV01@@Z
 jitteriterations
 jitterscale
@@ -2337,7 +2337,6 @@ overrideParent
 overridePos
 overrideRot
 ownerlog
-p82'
 parentBindRotation
 parentConstraint
 pathNodeName
@@ -2387,14 +2386,12 @@ prop_physics_respawnable
 propdataname
 pvTarget
 q)?SetRow@FbxAMatrix@fbxsdk@@QEAAXHAEBVFbxVector4@2@@Z
-q\tV_strnchr
 q\v??Hfbxsdk@@YA?AVFbxString@0@AEBV10@PEBD@Z
 qangle log
 qangle_array
 quadraticAttenuation
 quaternion log
 quaternion_array
-r\vp82'
 radiusScale
 radius_random
 radius_scale
@@ -2682,5 +2679,6 @@ wrinkle$0Indices
 wrinkleIndices
 wrinkleScales
 z)?SetScale@FbxTexture@fbxsdk@@QEAAXNN@Z
+z\tV_sscanf_s
 {+?currentDateTimeGMT@FbxDateTime@fbxsdk@@SA?AV12@XZ
 |BBoneSetup

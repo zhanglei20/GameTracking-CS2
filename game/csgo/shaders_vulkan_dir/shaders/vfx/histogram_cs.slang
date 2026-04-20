@@ -45,18 +45,19 @@ CS
 	float4 g_vBlueNoiseDitherParams < UiType(VectorText); Expression(ATTRIBUTE[c6be84fa]); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2972 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (3144 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	cbuffer Histogram_t : register(b3, space0)
+	cbuffer Histogram_t : register(b2, space0)
 	{
 	    uint2 Histogram_t_1_m0 : packoffset(c0);
 	    float Histogram_t_1_m1 : packoffset(c0.z);
 	    float Histogram_t_1_m2 : packoffset(c1);
+	    uint Histogram_t_1_m3 : packoffset(c1.y);
 	};
 	
-	RWTexture2D<float4> _5853 : register(u158, space0);
 	RWBuffer<uint> _3900 : register(u159, space0);
 	Texture2D<float4> g_tInput : register(t31, space0);
+	RWTexture2D<float4> _5853 : register(u158, space0);
 	
 	static uint3 gl_GlobalInvocationID;
 	static uint gl_LocalInvocationIndex;
@@ -72,47 +73,60 @@ CS
 	{
 	    _5922[gl_LocalInvocationIndex] = 0u;
 	    GroupMemoryBarrierWithGroupSync();
-	    float4 _13136;
-	    float3 _16324;
-	    _13136 = 0.0f.xxxx;
-	    _16324 = 0.0f.xxx;
-	    float3 _4730;
-	    int _9913;
-	    float4 _10794;
-	    int _17017 = 0;
+	    uint2 _15770 = gl_GlobalInvocationID.xy * Histogram_t_1_m3.xx;
+	    uint _21567;
+	    uint _13039 = 0u;
 	    for (;;)
 	    {
-	        if (!(_17017 < 1))
+	        if (!(_13039 < Histogram_t_1_m3))
 	        {
 	            break;
 	        }
-	        float4 _3401 = g_tInput.Load(int3(int3(int2(gl_GlobalInvocationID.xy), 0).xy, 0), int2(0, 0));
-	        float3 _22047 = _3401.xyz;
-	        _4730 = _16324 + _22047;
-	        float3 _23908 = clamp(_22047, 0.0f.xxx, 65504.0f.xxx);
-	        float4 _13888 = _3401;
-	        _13888.x = _23908.x;
-	        _13888.y = _23908.y;
-	        _13888.z = _23908.z;
-	        _10794 = _13136.xyzw + _13888.xyzw;
-	        _9913 = _17017 + 1;
-	        _13136 = _10794;
-	        _16324 = _4730;
-	        _17017 = _9913;
+	        uint _23989;
+	        uint _13040 = 0u;
+	        for (;;)
+	        {
+	            bool _7956_ladder_break = false;
+	            do
+	            {
+	                if (!(_13040 < Histogram_t_1_m3))
+	                {
+	                    _7956_ladder_break = true;
+	                    break;
+	                }
+	                uint2 _4370 = _15770 + uint2(_13040, _13039);
+	                bool _12885;
+	                if (_4370.x >= Histogram_t_1_m0.x)
+	                {
+	                    _12885 = true;
+	                }
+	                else
+	                {
+	                    _12885 = _4370.y >= Histogram_t_1_m0.y;
+	                }
+	                if (_12885)
+	                {
+	                    break;
+	                }
+	                float4 _3401 = g_tInput.Load(int3(int3(int2(_4370), 0).xy, 0), int2(0, 0));
+	                float3 _22086 = _3401.xyz;
+	                uint _19618;
+	                InterlockedAdd(_5922[uint(clamp((log2(max(dot(_22086, float3(0.2125000059604644775390625f, 0.7153999805450439453125f, 0.07209999859333038330078125f)), 0.004999999888241291046142578125f)) - Histogram_t_1_m1) * Histogram_t_1_m2, 0.0f, 1.0f) * 255.0f)], 1u, _19618);
+	                _5853[_4370] = float4(clamp(_22086, 0.0f.xxx, 65504.0f.xxx), _3401.w);
+	                break;
+	            } while(false);
+	            if (_7956_ladder_break)
+	            {
+	                break;
+	            }
+	            _23989 = _13040 + 1u;
+	            _13040 = _23989;
+	            continue;
+	        }
+	        _21567 = _13039 + 1u;
+	        _13039 = _21567;
 	        continue;
 	    }
-	    bool _6459;
-	    if (gl_GlobalInvocationID.x < Histogram_t_1_m0.x)
-	    {
-	        _6459 = gl_GlobalInvocationID.y < Histogram_t_1_m0.y;
-	    }
-	    else
-	    {
-	        _6459 = false;
-	    }
-	    uint _6918;
-	    InterlockedAdd(_5922[uint(clamp((log2(max(dot(_16324, float3(0.2125000059604644775390625f, 0.7153999805450439453125f, 0.07209999859333038330078125f)), 0.004999999888241291046142578125f)) - Histogram_t_1_m1) * Histogram_t_1_m2, 0.0f, 1.0f) * 255.0f)], uint(int(_6459)), _6918);
-	    _5853[gl_GlobalInvocationID.xy] = _13136;
 	    GroupMemoryBarrierWithGroupSync();
 	    if (_5922[gl_LocalInvocationIndex] > 0u)
 	    {

@@ -639,7 +639,6 @@ Font glyphs corrupted or missing fields
 Font header corrupted or missing fields
 GRANTED
 GetConsoleCP
-GetDC
 GetFileInformationByHandleExW
 GetTickCount64
 HB_OPTIONS
@@ -673,7 +672,6 @@ Pattern
 PostScript (post) table missing
 RAN OUT OF ROOM
 RSDSC
-ReleaseDC
 RemoveFontMemResourceEx
 SANITIZE
 SERIALIZE

@@ -51,7 +51,7 @@ CS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (23996 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (24020 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#if defined(GL_EXT_control_flow_attributes)
@@ -112,7 +112,7 @@ CS
 	    vec4 _m0[4];
 	};
 	
-	struct _253
+	struct _1889
 	{
 	    _1037 _m0;
 	    _1037 _m1;
@@ -137,6 +137,7 @@ CS
 	    vec4 _m20;
 	    vec3 _m21;
 	    float _m22;
+	    _1037 _m23;
 	};
 	
 	vec4 _3;
@@ -185,7 +186,7 @@ CS
 	
 	layout(set = 3, binding = 31, std430) readonly buffer g_BarnLights
 	{
-	    _253 _m0[];
+	    _1889 _m0[];
 	} g_BarnLights_1;
 	
 	struct _1011

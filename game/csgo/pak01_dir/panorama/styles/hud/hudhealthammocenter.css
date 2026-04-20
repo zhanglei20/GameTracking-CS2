@@ -1287,11 +1287,6 @@ Label.hud-HA__kills__count
 	visibility: visible;
 }
 
-.HudSpecplayer__Stats
-{
-	visibility:collapse;
-}
-
 .HudSpecplayerRoot--visible
 {
 	visibility: visible;
@@ -1378,94 +1373,6 @@ Label.hud-HA__kills__count
 	color: rgba(255, 255, 255, 0.753);
 	text-overflow: ellipsis;
 	white-space: nowrap;
-}
-
-.HudSpecplayer__Stats_DamageTaken
-{
-	width: HudSpecplayer_PanelWidth;
-	height: 22px;
-	horizontal-align: center;
-	background-color: gradient( linear, 50% 0%, 100% 0%, from( #000000EE ), to( #00000000 ) );
-	font-size: 16px;
-	padding-top: 1px;
-	padding-left: 6px;
-	text-align: left;
-	font-family: Stratum2, 'Arial Unicode MS';
-	text-shadow: 1px 1px 1px 1.0 black;
-	color: #DDDDDDFF;
-	text-overflow: shrink;
-	visibility: collapse;
-}
-
-.Language_vietnamese .HudSpecplayer__player-name,.Language_vietnamese .HudSpecplayer__Stats_DamageTaken
-{
-	font-family: ForceStratum2, 'Arial Unicode MS';
-}
-
-.HudSpecplayer__Stats_DamageTaken--Hidden
-{
-	visibility: collapse;
-}
-
-#HudSpecplayer__Stats
-{
-	width: HudSpecplayer_PanelWidth;
-	height: 28px;
-	horizontal-align: center;
-	background-color: gradient( linear, 50% 0%, 100% 0%, from( #000000EE ), to( #00000000 ) );
-	visibility: collapse;
-}
-
-.HudSpecplayer__Stats_Header
-{
-	flow-children: right;
-	vertical-align: top;
-	width: 100%;
-	height: 10px;
-	margin-top: 1px;
-	margin-left: 8px;
-}
-
-.HudSpecplayer__Stats_Numbers
-{
-	flow-children: right;
-	vertical-align: bottom;
-	width: 100%;
-	height: 20px;
-	margin-left: 8px;
-}
-
-.HudSpecplayer__Stats_HeaderText
-{
-	width: 54px;
-	vertical-align: top;
-	font-size: 10px;
-	text-align: center;
-	font-family: Stratum2, 'Arial Unicode MS';
-	font-weight: medium;
-	text-shadow: 1px 1px 1px 2.0 black;
-	color: #888888FF;
-}
-
-.HudSpecplayer__Stats_NumberText
-{
-	width: 54px;
-	vertical-align: bottom;
-	font-size: 16px;
-	text-align: center;
-	font-family: Stratum2, 'Arial Unicode MS';
-	text-shadow: 1px 1px 1px 2.0 black;
-	color: #FFFFFFFF;
-}
-
-.HudSpecplayer__Stats-Text
-{
-	font-size: 16px;
-	font-family: Stratum2, 'Arial Unicode MS';
-	font-weight: medium;
-	margin-left: 6px;
-	text-shadow: 1px 1px 1px 2.0 black;
-	color: #AAAAAAFF;
 }
 
 .HudSpecplayer__key-hints

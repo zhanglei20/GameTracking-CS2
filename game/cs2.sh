@@ -58,7 +58,7 @@ fi
 ulimit -n 65535
 
 # Set default thread size.
-ulimit -Ss 1024
+ulimit -Ss 2048
 
 # and launch the game
 cd "$GAMEROOT"

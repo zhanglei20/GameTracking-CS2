@@ -1,14 +1,3 @@
-// MNetworkExcludeByName = "m_flexWeight"
-// MNetworkExcludeByUserGroup = "m_flPoseParameter"
-// MNetworkExcludeByName = "m_animationController.m_flPlaybackRate"
-// MNetworkExcludeByUserGroup = "overlay_vars"
-// MNetworkIncludeByName = "m_spawnflags"
-// MNetworkVarNames = "DoorState_t m_eDoorState"
-// MNetworkVarNames = "bool m_bLocked"
-// MNetworkVarNames = "bool m_bNoNPCs"
-// MNetworkVarNames = "Vector m_closedPosition"
-// MNetworkVarNames = "QAngle m_closedAngles"
-// MNetworkVarNames = "CHandle< CBasePropDoor> m_hMaster"
 class CBasePropDoor : public CDynamicProp
 {
 	float32 m_flAutoReturnDelay;
@@ -16,15 +5,10 @@ class CBasePropDoor : public CDynamicProp
 	CUtlVector< CHandle< CBasePropDoor > > m_hDoorList;
 	int32 m_nHardwareType;
 	bool m_bNeedsHardware;
-	// MNetworkEnable
 	DoorState_t m_eDoorState;
-	// MNetworkEnable
 	bool m_bLocked;
-	// MNetworkEnable
 	bool m_bNoNPCs;
-	// MNetworkEnable
 	Vector m_closedPosition;
-	// MNetworkEnable
 	QAngle m_closedAngles;
 	CHandle< CBaseEntity > m_hBlocker;
 	bool m_bFirstBlocked;
@@ -47,7 +31,6 @@ class CBasePropDoor : public CDynamicProp
 	// MNotSaved
 	CUtlStringToken m_nPhysicsMaterial;
 	CUtlSymbolLarge m_SlaveName;
-	// MNetworkEnable
 	CHandle< CBasePropDoor > m_hMaster;
 	CEntityIOOutput m_OnBlockedClosing;
 	CEntityIOOutput m_OnBlockedOpening;

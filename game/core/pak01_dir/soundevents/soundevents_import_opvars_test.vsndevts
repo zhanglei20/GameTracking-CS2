@@ -218,5 +218,29 @@
 			},
 		]
 	}
+	fields_test_5 = 
+	{
+		type = "test_5_layer_0"
+		vsnd_files_base_field = 
+		[
+			"sounds/diagnostics/wind_med_foliage_lp_01.vsnd",
+			"sounds/diagnostics/ambient/pink_quad_-10_rs.vsnd",
+		]
+		vsnd_duration = 37.538162
+	}
+	fields_test_6 = 
+	{
+		type = "test_5_layer_1"
+		vsnd_files_base_field = 
+		[
+			"sounds/diagnostics/wind_med_foliage_lp_01.vsnd",
+			"sounds/diagnostics/ambient/pink_quad_-10_rs.vsnd",
+		]
+		vsnd_duration = 37.538162
+	}
+	newSoundEvent = 
+	{
+		type = "test_5_layer_2"
+	}
 	_auto_calc_vnsd_duration_ = true
 }

@@ -3011,7 +3011,6 @@ Indic_Siyaq_Numbers
 Indic_Syllabic_Category
 Inds
 Infix_Numeric
-Init
 Initial
 Initial_Punctuation
 Inseparable

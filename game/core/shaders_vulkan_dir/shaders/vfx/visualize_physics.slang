@@ -285,7 +285,7 @@ PS
 	
 	static float4 _3;
 	
-	cbuffer RoughnessLightingGlobalsCB_t : register(b3, space1)
+	cbuffer RoughnessLightingGlobalsCB_t : register(b2, space1)
 	{
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
@@ -301,7 +301,7 @@ PS
 	    float PerViewConstantBuffer_t_1_m6 : packoffset(c32.z);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b4, space1)
+	cbuffer SunLightShaderParamsCB : register(b3, space1)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
 	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);

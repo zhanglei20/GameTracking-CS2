@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/freakydna_01/mainmenu.vsnd"
+		vsnd_duration = 260.075104
 	}
 	Music.MVPPreview.freakydna_01 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/freakydna_01/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/freakydna_01/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 8.071836
 	}
 	Music.Selection.freakydna_01 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/freakydna_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 22.465305
 	}
 	Music.MatchFound.freakydna_01 = 
 	{
@@ -76,6 +82,7 @@
 			14.4, 16.0, 17.6, 19.2,
 			20.8, 22.4, 24.0,
 		]
+		vsnd_duration = 25.652245
 	}
 	Music.LoadingScreen.freakydna_01 = 
 	{
@@ -105,6 +112,7 @@
 			"sounds/music/freakydna_01/startaction_02.vsnd",
 			"sounds/music/freakydna_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 14.471837
 	}
 	Music.StartRound.freakydna_01 = 
 	{
@@ -155,6 +163,7 @@
 			14.4, 16.0, 17.6, 19.2,
 			20.8, 22.4, 24.0,
 		]
+		vsnd_duration = 25.652245
 	}
 	Music.StartAction.freakydna_01 = 
 	{
@@ -186,6 +195,7 @@
 			"sounds/music/freakydna_01/startaction_02.vsnd",
 			"sounds/music/freakydna_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 14.471837
 	}
 	Music.StartRound_GG.freakydna_01 = 
 	{
@@ -237,6 +247,7 @@
 			14.4, 16.0, 17.6, 19.2,
 			20.8, 22.4, 24.0,
 		]
+		vsnd_duration = 25.652245
 	}
 	Music.BombPlanted.freakydna_01 = 
 	{
@@ -259,6 +270,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 36.466938
 	}
 	Music.BombTenSecCount.freakydna_01 = 
 	{
@@ -277,6 +289,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.057143
 	}
 	Music.GotHostage.freakydna_01 = 
 	{
@@ -301,6 +314,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 36.466938
 	}
 	Music.HostageNearRescue.freakydna_01 = 
 	{
@@ -323,6 +337,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.057143
 	}
 	Music.TenSecCount.freakydna_01 = 
 	{
@@ -344,6 +359,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.057143
 	}
 	Music.WonRound.freakydna_01 = 
 	{
@@ -368,6 +384,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 8.071836
 	}
 	Music.LostRound.freakydna_01 = 
 	{
@@ -392,6 +409,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 7.653878
 	}
 	Music.DeathCam.freakydna_01 = 
 	{
@@ -404,6 +422,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 5.276735
 	}
 	Music.MVPAnthem.freakydna_01 = 
 	{
@@ -430,6 +461,7 @@
 		[
 			"sounds/music/freakydna_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 8.071836
 	}
 	Music.MatchStart.freakydna_01 = 
 	{
@@ -445,6 +477,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/freakydna_01/startofmatch.vsnd"
+		vsnd_duration = 55.297527
 	}
 	Music.MatchEnd.freakydna_01 = 
 	{
@@ -466,6 +499,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 55.297527
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

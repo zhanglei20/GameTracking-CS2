@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/pvris_01/mainmenu.vsnd"
+		vsnd_duration = 152.133331
 	}
 	Music.MVPPreview.pvris_01 = 
 	{
@@ -18,6 +19,7 @@
 		[
 			"sounds/music/pvris_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 6.575284
 	}
 	Music.Selection.pvris_01 = 
 	{
@@ -30,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/pvris_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 29.175238
 	}
 	Music.MatchFound.pvris_01 = 
 	{
@@ -81,6 +84,7 @@
 			16.25, 16.959, 17.654, 18.19,
 			19.068, 19.78, 21.017, 21.54,
 		]
+		vsnd_duration = 22.0
 	}
 	Music.LoadingScreen.pvris_01 = 
 	{
@@ -110,6 +114,7 @@
 			"sounds/music/pvris_01/startaction_02.vsnd",
 			"sounds/music/pvris_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 13.745805
 	}
 	Music.StartRound.pvris_01 = 
 	{
@@ -162,6 +167,7 @@
 			16.25, 16.959, 17.654, 18.19,
 			19.068, 19.78, 21.017, 21.54,
 		]
+		vsnd_duration = 22.0
 	}
 	Music.StartAction.pvris_01 = 
 	{
@@ -193,6 +199,7 @@
 			"sounds/music/pvris_01/startaction_02.vsnd",
 			"sounds/music/pvris_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 13.745805
 	}
 	Music.StartRound_GG.pvris_01 = 
 	{
@@ -246,6 +253,7 @@
 			16.25, 16.959, 17.654, 18.19,
 			19.068, 19.78, 21.017, 21.54,
 		]
+		vsnd_duration = 22.0
 	}
 	Music.BombPlanted.pvris_01 = 
 	{
@@ -268,6 +276,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.0
 	}
 	Music.BombTenSecCount.pvris_01 = 
 	{
@@ -286,6 +295,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.0
 	}
 	Music.GotHostage.pvris_01 = 
 	{
@@ -310,6 +320,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.0
 	}
 	Music.HostageNearRescue.pvris_01 = 
 	{
@@ -332,6 +343,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.0
 	}
 	Music.TenSecCount.pvris_01 = 
 	{
@@ -353,6 +365,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 9.941156
 	}
 	Music.WonRound.pvris_01 = 
 	{
@@ -377,6 +390,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 7.584376
 	}
 	Music.LostRound.pvris_01 = 
 	{
@@ -401,6 +415,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 7.929365
 	}
 	Music.DeathCam.pvris_01 = 
 	{
@@ -413,6 +428,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 6.172018
 	}
 	Music.MVPAnthem.pvris_01 = 
 	{
@@ -439,6 +467,7 @@
 		[
 			"sounds/music/pvris_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 6.575284
 	}
 	Music.MatchStart.pvris_01 = 
 	{
@@ -454,6 +483,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/pvris_01/startofmatch.vsnd"
+		vsnd_duration = 12.0
 	}
 	Music.MatchEnd.pvris_01 = 
 	{
@@ -475,6 +505,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 57.215557
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

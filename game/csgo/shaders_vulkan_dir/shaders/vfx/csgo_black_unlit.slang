@@ -97,7 +97,7 @@ VS
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space0)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space0)
 	{
 	    float4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c35);
 	};
@@ -265,7 +265,7 @@ PS
 	    float4 _m0[4];
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    float4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c23);
 	    float4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c24);

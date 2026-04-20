@@ -1,6 +1,9 @@
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
- (08@HPX`j`p
- (08@HPZ`p
+ (08@HPX`j
+ (08@HPXb
+ (08@HPZ
+ (08@HR
+ (0X`hpz
 %.1fs total merge time\n
 %.3f cpu s cast, %.3f cpu s rasterize\n
 %08dx.geo
@@ -22,7 +25,8 @@
 %s/%s/%s.los
 %s/%s/%s.rte
 %s/%s/%s.viscfg
-&\nNx+\nCh,\n'
+)\nNx*\nCh+\n'
+*\nNx+\nCh,\n'
 .?AV<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@
 .?AV<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
 .?AV<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
@@ -78,18 +82,18 @@
 .?AVIResourceTypeCompilerDynamicLoad@@
 .?AVISequence@@
 .?AVIVertColorBase@@
-08@HR`p
-08B`p
-0:Pw
+08@HR
+08@J
 0\rP!4
-2\vp4
 2\vpP
-8@J`p
-8B`p
+2\vpd
+8F0#
 =fff?
 ?expf
-@ht`s
+@08N`
+@HPX`hv
 Adaptive border clusters (%.fs)\n
+Aslow
 Assigned %d clusters in %.2f seconds\n
 AxialRays
 Build
@@ -179,18 +183,16 @@ No triangles found to compute visibility\n
 Note, removing %u lines of sight, too much memory! (was %s, use -debuglos to preserve more of these for debugging)\n
 Outside detection took %.2f seconds\n
 OverlayProjectionDirection
-P08JP\t\n
-P2`p
+P08@J
+P08J`\t\n
+P08N`
 PackedBlobNormal
 PerVertexLighting
-Pfp(
 Physics
 PivotPaint
-Pj`p
-Pn0*
 Pre-merged nodes %.2f seconds\n
 PropWorldOrigin
-R\vpP
+R\fpP
 RandomRays
 RayProcessJob
 RayTracingEnvironment::RefineNode
@@ -233,12 +235,13 @@ Voxelize (%.f units) took %.2f seconds (%s nodes)\n
 Wrote %d LOS hints for next time %s!\n
 Wrote vis hints to %s\n
 Wrote vis resource %s bytes\n
-X`hr`p
+X`hr
 You must build with -world before you can build with -vis!  Couldn't find raytrace.rte\n
+\fp\vPl
 \nLoading kd-trees\n
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \tg_flConfigMaxCoord
-`ht`s
+aBv`
 bentnormal
 blendindices
 blendweight
@@ -276,15 +279,14 @@ matrix3x4_t
 medium
 oldvis
 optionallycompressedtangentframe
-p0jP
-p2`p
-pb`p
+p08@H^`
+p0j`
 posxyz
 pre-merged to %d clusters\n
 preMergeDist.gl
 pvstype
+r\vpP
 resourcesystem
-slow
 tangent
 tangentu_signv
 texcoord

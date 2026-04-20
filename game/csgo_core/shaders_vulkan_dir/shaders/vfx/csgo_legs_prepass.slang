@@ -63,7 +63,6 @@ VS
 	DynamicCombo( D_BAKED_LIGHTING_FROM_LIGHTMAP, 0..1 );
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
@@ -319,7 +318,7 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (2176 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    int2 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c11);
 	    float4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c35);

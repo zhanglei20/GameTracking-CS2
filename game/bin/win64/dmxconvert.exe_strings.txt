@@ -388,8 +388,8 @@ CUtlDict<class CDmElement *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CDmElementFactoryHelper *,class CDefFastCaselessStringLess>::Insert
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
 CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
@@ -426,7 +426,6 @@ DMX Model Pipeline Preprocess File
 DMX Model Pipeline Root Script File
 DMXConvert is missing a required interface!\n
 DMX_MODEL_SOURCE_UNKNOWN
-D\tV_log2f
 Dampen Movement Relative to Control Point
 DataModel needs the file system to function
 Distance Between Control Points Scale
@@ -604,6 +603,7 @@ Operator cycle found during dependency graph traversal!\n
 Orient Rotation to 2D Direction
 Oscillate Scalar
 Oscillate Vector
+P2p}\v
 Particle Configuration File
 Position Along Path Random
 Position Along Path Sequential
@@ -628,7 +628,6 @@ Remap Distance Between Two Control Points to Scalar
 Remap Distance to Control Point to Scalar
 Remap Noise to Scalar
 Remap Scalar
-Reset
 RigArms
 RigBody
 RigConstraints
@@ -657,6 +656,7 @@ Serialize: File encoding '%s' is undefined!\n
 Serialize: Format %s expects to be written to a binary format, but the buffer is a text-format buffer\n
 StereoFlip
 Symbol table:  %d entries %llu bytes\n
+T\tV_log2f
 Texture Configuration File
 TongueCurl
 TongueD
@@ -809,7 +809,6 @@ color_tint
 colorsIndices
 combo
 compileAsOverride
-connections
 connectionsData
 constrainVelocity
 constrain_velocity
@@ -835,7 +834,6 @@ defaultRightValue
 defaultValue
 defaultcurvetype
 defaultedgezerovalue
-direction
 directlight
 disableShadows
 disableShadows2
@@ -937,7 +935,6 @@ isGroup
 isOrientation
 isPosition
 item_item_crate
-j\tV_sscanf_s
 je Z
 jointIndices
 jointIndicesIndices
@@ -1295,3 +1292,4 @@ wrinkle
 wrinkle$0
 wrinkle$0Indices
 wrinkleIndices
+z\tV_sscanf_s

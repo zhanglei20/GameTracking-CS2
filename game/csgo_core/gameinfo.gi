@@ -339,6 +339,7 @@
 			UseAggregateInstances			"1"
 			AggregateInstancingMeshlets			"1"
 			UseStaticEnvMapForObjectsWithLightingOrigin	"1"
+			BakePropsWithNonUniformScale "1"
 		}
 
 // Optimisation for Hammer Mesh Physics
@@ -354,6 +355,8 @@
 			DeterministicBuild 1
 			DisableCullingForShadows 1
 			MinSpecLightmapSize 4096
+			LightmapGutterSize 1 // MinSpecLightmapSize is 4k, at 8k this inflates to 2, enough for bicubic filtering
+			
             ImportanceVolumeTransitionRegion 120            // distance we transition from high to low resolution charts 
                                                             // when a triangle is outside an importance volume
 			LPVAtlas 1
@@ -508,8 +511,8 @@
 		}
 		"content_consider_warnings_as_errors"
 		{
-			"substr" "phase2/characters/models/"
-			"substr" "phase2/weapons/models/"
+			"substr" "agents/models/"
+			"substr" "weapons/models/"
 		}
 	}
 

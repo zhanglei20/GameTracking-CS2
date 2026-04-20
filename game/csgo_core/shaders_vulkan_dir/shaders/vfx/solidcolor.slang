@@ -53,7 +53,6 @@ VS
 	DynamicCombo( D_COMPRESSED_NORMALS_AND_TANGENTS, 0..1 );
 	DynamicCombo( D_CS_VERTEX_ANIMATION, 0..1 );
 	
-	cbuffer PerLayerConstantBuffer_t < Attribute("PerLayerConstantBuffer_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;

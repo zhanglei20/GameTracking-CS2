@@ -74,7 +74,7 @@ CS
 	
 	static bool _5;
 	
-	cbuffer CullParams_t : register(b2, space0)
+	cbuffer CullParams_t : register(b1, space0)
 	{
 	    uint CullParams_t_1_m0 : packoffset(c0.y);
 	    uint CullParams_t_1_m1 : packoffset(c0.z);

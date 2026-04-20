@@ -273,7 +273,6 @@
 !XC<u
 !Yp8
 !Z<l1
-!\t@REF%08lX
 !\tp;GJl
 !au9
 !avx::BVH4Quad4vIntersector8HybridMoellerNoFilter
@@ -512,6 +511,8 @@ $|9tJ
 %s single precision computation is turned ON
 %s9&3
 %s: HRTF data contains Ambisonic HRIRs of unsupported order: %d.
+%s: Invalid baked data type in identifier: %d
+%s: Invalid baked data variation in identifier: %d
 %s: Unsupported HRTF data format version: %d.
 %s: invalid %s: %s = %s
 %sy:S
@@ -676,6 +677,8 @@ $|9tJ
 (1d=l
 (57;M
 (5F=4u
+(6pBn
+(6pCn
 (6w;S
 (76;6
 (7gcA;
@@ -700,6 +703,7 @@ $|9tJ
 (debug) 
 (e3:gN
 (e;oAV
+(f0.n
 (f;k2
 (inputs->deviationModel)->callback
 (inputs->deviationModel)->type
@@ -952,7 +956,6 @@ $|9tJ
 *hE:o
 *iu<K
 *oD<0
-*p5a
 *qD;d
 *t%\v*d$\v*4#\v*
 *t(\t*d'\t*4&\t*
@@ -1139,9 +1142,8 @@ $|9tJ
 -rR9
 -tG<zmZ<
 -ti;x
-.01n
-.08n
-.0An
+.0In
+.0Zn
 .2;Ue
 .2Y<V
 .3Mx
@@ -2065,23 +2067,24 @@ $|9tJ
 .?AUmoney_base@std@@
 .?AUrtcore_error@embree@@
 .?AUtime_base@std@@
-.?AV<lambda_081ca0496a4617227558c690037022b7>@@
-.?AV<lambda_0b237fb88318a2c5a2569350bfa1edb5>@@
+.?AV<lambda_05ffe5ad56ac87b1b8ce075967e53975>@@
+.?AV<lambda_069ae5a2c35f071c19cd2045d8645005>@@
 .?AV<lambda_16a417d8c3211c82b73ad281e49f34a4>@@
-.?AV<lambda_258caa2aa93fdeed38b7932ab14ce555>@@
-.?AV<lambda_30de3bd9a3ce565ac26fd77441ed6832>@@
 .?AV<lambda_498b6f04f2beccab8c714618b3ad669c>@@
 .?AV<lambda_4acdd552fa00f8360f140c7dad89c38a>@@
-.?AV<lambda_6104b7ca2708afbe8af572a06ac43b8b>@@
+.?AV<lambda_5ca21cfac8b38383b5cea314e4c1b7ef>@@
 .?AV<lambda_62a9d32afc8d6b63df56e96e440ec261>@@
 .?AV<lambda_7d33e43c76b93b2e3d40dfe3f5c9930f>@@
-.?AV<lambda_90b2f831e88a1dda59a2d8ca8fb59dca>@@
+.?AV<lambda_7f06ec47ebe640dff2f862a15831482c>@@
+.?AV<lambda_90c74555018a225216f5042114b60011>@@
 .?AV<lambda_a38cb66fac85a719ba71f2c8faa44676>@@
-.?AV<lambda_d9cc229929455c8f29444ad9f7024193>@@
+.?AV<lambda_ac064580a825247a4a9c24b873347da9>@@
+.?AV<lambda_b117e97bc07895306e7817b16b0c7c34>@@
+.?AV<lambda_d4fe3fbd605dcdd7d8ec8e8de665fb0c>@@
+.?AV<lambda_d6b4e5f1eca5fb7ce0f82cc9652739ce>@@
 .?AV<lambda_dff3c1b6999eee227e24249907461f6e>@@
 .?AV<lambda_ebca2bed2060f73eddbe93f8e885849c>@@
 .?AV<lambda_f176cb1a7d49f80dbcb3c66f802c9e0b>@@
-.?AV<lambda_fe89cc8dd20d17b87ff8094e4c964cc6>@@
 .?AV?$BVHN@$03@embree@@
 .?AV?$BVHN@$07@embree@@
 .?AV?$BVHNBuilderTwoLevel@$03UInstance@embree@@UInstancePrimitive@2@@avx@embree@@
@@ -2180,6 +2183,7 @@ $|9tJ
 .?AV?$_Ebco_base@V?$allocator@VHRTFDatabase@ipl@@@ipl@@$00@std@@
 .?AV?$_Ebco_base@V?$allocator@VHybridReverbEffect@ipl@@@ipl@@$00@std@@
 .?AV?$_Ebco_base@V?$allocator@VHybridReverbEstimator@ipl@@@ipl@@$00@std@@
+.?AV?$_Ebco_base@V?$allocator@VImageSourceSimulator@ipl@@@ipl@@$00@std@@
 .?AV?$_Ebco_base@V?$allocator@VImpulseResponse@ipl@@@ipl@@$00@std@@
 .?AV?$_Ebco_base@V?$allocator@VIndirectEffect@ipl@@@ipl@@$00@std@@
 .?AV?$_Ebco_base@V?$allocator@VIndirectMixer@ipl@@@ipl@@$00@std@@
@@ -2213,6 +2217,7 @@ $|9tJ
 .?AV?$_Ebco_base@V?$allocator@VThreadPool@ipl@@@ipl@@$00@std@@
 .?AV?$_Ebco_base@V?$allocator@VVirtualSurroundEffect@ipl@@@ipl@@$00@std@@
 .?AV?$_Ebco_base@V?$allocator@VVoxelPathData@ipl@@@ipl@@$00@std@@
+.?AV?$_Ebco_base@V?$allocator@VVoxelPathFinder@ipl@@@ipl@@$00@std@@
 .?AV?$_ExceptionPtr_static@Vbad_alloc@std@@@?A0xad5a25bc@@
 .?AV?$_ExceptionPtr_static@Vbad_exception@std@@@?A0xad5a25bc@@
 .?AV?$_Func_base@XHAEAU?$atomic@_N@std@@@std@@
@@ -2224,20 +2229,21 @@ $|9tJ
 .?AV?$_Func_impl@V<lambda_498b6f04f2beccab8c714618b3ad669c>@@V?$allocator@H@std@@XPEAVBuffer@Calc@@@std@@
 .?AV?$_Func_impl@V<lambda_62a9d32afc8d6b63df56e96e440ec261>@@V?$allocator@H@std@@XPEAVDevice@Calc@@@std@@
 .?AV?$_Func_impl@V<lambda_dff3c1b6999eee227e24249907461f6e>@@V?$allocator@H@std@@XPEAVEvent@Calc@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_081ca0496a4617227558c690037022b7>@@XHAEAU?$atomic@_N@std@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_0b237fb88318a2c5a2569350bfa1edb5>@@XHAEAU?$atomic@_N@std@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_05ffe5ad56ac87b1b8ce075967e53975>@@XHAEAU?$atomic@_N@std@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_069ae5a2c35f071c19cd2045d8645005>@@XHAEAU?$atomic@_N@std@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_16a417d8c3211c82b73ad281e49f34a4>@@XM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_258caa2aa93fdeed38b7932ab14ce555>@@XHAEAU?$atomic@_N@std@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_30de3bd9a3ce565ac26fd77441ed6832>@@XM@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4acdd552fa00f8360f140c7dad89c38a>@@XHAEAU?$atomic@_N@std@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_6104b7ca2708afbe8af572a06ac43b8b>@@XHAEAU?$atomic@_N@std@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_5ca21cfac8b38383b5cea314e4c1b7ef>@@XHAEAU?$atomic@_N@std@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_7d33e43c76b93b2e3d40dfe3f5c9930f>@@_NAEBVBox@ipl@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_90b2f831e88a1dda59a2d8ca8fb59dca>@@XM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_7f06ec47ebe640dff2f862a15831482c>@@XM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_90c74555018a225216f5042114b60011>@@XM@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_a38cb66fac85a719ba71f2c8faa44676>@@XHAEAU?$atomic@_N@std@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_d9cc229929455c8f29444ad9f7024193>@@XHAEAU?$atomic@_N@std@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_ac064580a825247a4a9c24b873347da9>@@XHAEAU?$atomic@_N@std@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_b117e97bc07895306e7817b16b0c7c34>@@XHAEAU?$atomic@_N@std@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_d4fe3fbd605dcdd7d8ec8e8de665fb0c>@@XHAEAU?$atomic@_N@std@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_d6b4e5f1eca5fb7ce0f82cc9652739ce>@@XHAEAU?$atomic@_N@std@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_ebca2bed2060f73eddbe93f8e885849c>@@XHAEAU?$atomic@_N@std@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_f176cb1a7d49f80dbcb3c66f802c9e0b>@@XHAEAU?$atomic@_N@std@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_fe89cc8dd20d17b87ff8094e4c964cc6>@@XHAEAU?$atomic@_N@std@@@std@@
 .?AV?$_Mpunct@D@std@@
 .?AV?$_Mpunct@G@std@@
 .?AV?$_Mpunct@_W@std@@
@@ -2262,6 +2268,7 @@ $|9tJ
 .?AV?$_Ref_count_obj_alloc3@VHRTFDatabase@ipl@@V?$allocator@VHRTFDatabase@ipl@@@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@VHybridReverbEffect@ipl@@V?$allocator@VHybridReverbEffect@ipl@@@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@VHybridReverbEstimator@ipl@@V?$allocator@VHybridReverbEstimator@ipl@@@2@@std@@
+.?AV?$_Ref_count_obj_alloc3@VImageSourceSimulator@ipl@@V?$allocator@VImageSourceSimulator@ipl@@@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@VImpulseResponse@ipl@@V?$allocator@VImpulseResponse@ipl@@@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@VIndirectEffect@ipl@@V?$allocator@VIndirectEffect@ipl@@@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@VIndirectMixer@ipl@@V?$allocator@VIndirectMixer@ipl@@@2@@std@@
@@ -2295,6 +2302,7 @@ $|9tJ
 .?AV?$_Ref_count_obj_alloc3@VThreadPool@ipl@@V?$allocator@VThreadPool@ipl@@@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@VVirtualSurroundEffect@ipl@@V?$allocator@VVirtualSurroundEffect@ipl@@@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@VVoxelPathData@ipl@@V?$allocator@VVoxelPathData@ipl@@@2@@std@@
+.?AV?$_Ref_count_obj_alloc3@VVoxelPathFinder@ipl@@V?$allocator@VVoxelPathFinder@ipl@@@2@@std@@
 .?AV?$_Ref_count_resource@PEAVIScene@ipl@@U?$deleter@VIScene@ipl@@@2@@std@@
 .?AV?$allocator@UImpulseResponse2@@@ipl@@
 .?AV?$allocator@UPathQueryResult@ipl@@@ipl@@
@@ -2317,6 +2325,7 @@ $|9tJ
 .?AV?$allocator@VHRTFDatabase@ipl@@@ipl@@
 .?AV?$allocator@VHybridReverbEffect@ipl@@@ipl@@
 .?AV?$allocator@VHybridReverbEstimator@ipl@@@ipl@@
+.?AV?$allocator@VImageSourceSimulator@ipl@@@ipl@@
 .?AV?$allocator@VImpulseResponse@ipl@@@ipl@@
 .?AV?$allocator@VIndirectEffect@ipl@@@ipl@@
 .?AV?$allocator@VIndirectMixer@ipl@@@ipl@@
@@ -2350,6 +2359,7 @@ $|9tJ
 .?AV?$allocator@VThreadPool@ipl@@@ipl@@
 .?AV?$allocator@VVirtualSurroundEffect@ipl@@@ipl@@
 .?AV?$allocator@VVoxelPathData@ipl@@@ipl@@
+.?AV?$allocator@VVoxelPathFinder@ipl@@@ipl@@
 .?AV?$basic_filebuf@DU?$char_traits@D@std@@@std@@
 .?AV?$basic_ifstream@DU?$char_traits@D@std@@@std@@
 .?AV?$basic_ostringstream@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@
@@ -2655,6 +2665,8 @@ $|9tJ
 .M8r
 .P$;5vc
 .P9mC
+.PEn
+.PSn
 .U17n
 .Z2:Bm
 .\N7CO:
@@ -2672,7 +2684,12 @@ $|9tJ
 .lt;5
 .mtl
 .nh<Spz
-.p0n
+.pHn
+.pKn
+.pQn
+.pVn
+.pan
+.pfn
 .pt;e
 .q6j_
 .|8ks
@@ -2683,6 +2700,7 @@ $|9tJ
 /********************************************************************** \nCopyright (c) 2016 Advanced Micro Devices, Inc. All rights reserved. \n \nPermission is hereby granted, free of charge, to any person obtaining a copy \nof this software and associated documentation files (the "Software"), to deal \nin the Software without restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell \ncopies of the Software, and to permit persons to whom the Software is \nfurnished to do so, subject to the following conditions: \n \nThe above copyright notice and this permission notice shall be included in \nall copies or substantial portions of the Software. \n \nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE \nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN \nTHE SOFTWARE. \n********************************************************************/ \n \n/************************************************************************* \nINCLUDES \n**************************************************************************/ \n/********************************************************************** \nCopyright (c) 2016 Advanced Micro Devices, Inc. All rights reserved. \n \nPermission is hereby granted, free of charge, to any person obtaining a copy \nof this software and associated documentation files (the "Software"), to deal \nin the Software without restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell \ncopies of the Software, and to permit persons to whom the Software is \nfurnished to do so, subject to the following conditions: \n \nThe above copyright notice and this permission notice shall be included in \nall copies or substantial portions of the Software. \n \nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE \nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN \nTHE SOFTWARE. \n********************************************************************/ \n \n/************************************************************************* \nDEFINES \n**************************************************************************/ \n#define PI 3.14159265358979323846f \n \ntypedef struct _bbox \n{ \n    float4 pmin; \n    float4 pmax; \n} bbox; \n \ntypedef struct _ray \n{ \n    float4 o; \n    float4 d; \n    int2 extra; \n    int2 padding; \n} ray; \n \ntypedef struct _Intersection \n{ \n    int shapeid; \n    int primid; \n    int padding0; \n    int padding1; \n \n    float4 uvwt; \n} Intersection; \n \ntypedef struct _ShapeData \n{ \n    int id; \n    int bvhidx; \n    int mask; \n    int padding1; \n    float4 m0; \n    float4 m1; \n    float4 m2; \n    float4 m3; \n    float4  linearvelocity; \n    float4  angularvelocity; \n} ShapeData; \n \ntypedef bbox BvhNode; \n \ntypedef struct _Face \n{ \n    // Vertex indices \n    int idx[3]; \n    int shapeidx; \n    // Primitive ID \n    int id; \n    // Idx count \n    int cnt; \n \n    int2 padding; \n} Face; \n \n#ifndef APPLE \n \nfloat4 make_float4(float x, float y, float z, float w) \n{ \n    float4 res; \n    res.x = x; \n    res.y = y; \n    res.z = z; \n    res.w = w; \n    return res; \n} \n \nfloat3 make_float3(float x, float y, float z) \n{ \n    float3 res; \n    res.x = x; \n    res.y = y; \n    res.z = z; \n    return res; \n} \n \nfloat2 make_float2(float x, float y) \n{ \n    float2 res; \n    res.x = x; \n    res.y = y; \n    return res; \n} \n \nint2 make_int2(int x, int y) \n{ \n    int2 res; \n    res.x = x; \n    res.y = y; \n    return res; \n} \n \nint3 make_int3(int x, int y, int z) \n{ \n    int3 res; \n    res.x = x; \n    res.y = y; \n    res.z = z; \n    return res; \n} \n \n#endif \n \nfloat3 transform_point(float3 p, float4 m0, float4 m1, float4 m2, float4 m3) \n{ \n    float3 res; \n    res.x = m0.s0 * p.x + m0.s1 * p.y + m0.s2 * p.z + m0.s3; \n    res.y = m1.s0 * p.x + m1.s1 * p.y + m1.s2 * p.z + m1.s3; \n    res.z = m2.s0 * p.x + m2.s1 * p.y + m2.s2 * p.z + m2.s3; \n    return res; \n} \n \nfloat3 transform_vector(float3 p, float4 m0, float4 m1, float4 m2, float4 m3) \n{ \n    float3 res; \n    res.x = m0.s0 * p.x + m0.s1 * p.y + m0.s2 * p.z; \n    res.y = m1.s0 * p.x + m1.s1 * p.y + m1.s2 * p.z; \n    res.z = m2.s0 * p.x + m2.s1 * p.y + m2.s2 * p.z; \n    return res; \n} \n \nray transform_ray(ray r, float4 m0, float4 m1, float4 m2, float4 m3) \n{ \n    ray res; \n    res.o.xyz = transform_point(r.o.xyz, m0, m1, m2, m3); \n    res.d.xyz = transform_vector(r.d.xyz, m0, m1, m2, m3); \n    res.o.w = r.o.w; \n    res.d.w = r.d.w; \n    return res; \n} \n \nfloat4 quaternion_mul(float4 q1, float4 q2) \n{ \n    float4 res; \n    res.x = q1.y*q2.z - q1.z*q2.y + q2.w*q1.x + q1.w*q2.x; \n    res.y = q1.z*q2.x - q1.x*q2.z + q2.w*q1.y + q1.w*q2.y; \n    res.z = q1.x*q2.y - q2.x*q1.y + q2.w*q1.z + q1.w*q2.z; \n    res.w = q1.w*q2.w - q1.x*q2.x - q1.y*q2.y - q1.z*q2.z; \n    return res; \n} \n \nfloat4 quaternion_conjugate(float4 q) \n{ \n    return make_float4(-q.x, -q.y, -q.z, q.w); \n} \n \nfloat4 quaternion_inverse(float4 q) \n{ \n    float sqnorm = q.x*q.x + q.y*q.y + q.z*q.z + q.w*q.w; \n     \n    if (sqnorm != 0.f) \n    { \n        return quaternion_conjugate(q) / sqnorm; \n    } \n    else \n    { \n        return make_float4(0.f, 0.f, 0.f, 1.f); \n    } \n} \n \nvoid rotate_ray(ray* r, float4 q) \n{ \n    float4 qinv = quaternion_inverse(q); \n    float4 v = make_float4(r->o.x, r->o.y, r->o.z, 0); \n    v = quaternion_mul(qinv, quaternion_mul(v, q)); \n    r->o.xyz = v.xyz; \n    v = make_float4(r->d.x, r->d.y, r->d.z, 0); \n    v = quaternion_mul(qinv, quaternion_mul(v, q)); \n    r->d.xyz = v.xyz; \n} \n \n// Intersect Ray against triangle \nint IntersectTriangle(ray const* r, float3 v1, float3 v2, float3 v3, Intersection* isect) \n{ \n    const float3 e1 = v2 - v1; \n    const float3 e2 = v3 - v1; \n    const float3 s1 = cross(r->d.xyz, e2); \n    const float  invd = native_recip(dot(s1, e1)); \n    const float3 d = r->o.xyz - v1; \n    const float  b1 = dot(d, s1) * invd; \n    const float3 s2 = cross(d, e1); \n    const float  b2 = dot(r->d.xyz, s2) * invd; \n    const float temp = dot(e2, s2) * invd; \n     \n    if (b1 < 0.f || b1 > 1.f || b2 < 0.f || b1 + b2 > 1.f \n        || temp < 0.f || temp > isect->uvwt.w) \n    { \n        return 0; \n    } \n    else \n    { \n        isect->uvwt = make_float4(b1, b2, 0.f, temp); \n        return 1; \n    } \n} \n \nint IntersectTriangleP(ray const* r, float3 v1, float3 v2, float3 v3) \n{ \n    const float3 e1 = v2 - v1; \n    const float3 e2 = v3 - v1; \n    const float3 s1 = cross(r->d.xyz, e2); \n    const float  invd = native_recip(dot(s1, e1)); \n    const float3 d = r->o.xyz - v1; \n    const float  b1 = dot(d, s1) * invd; \n    const float3 s2 = cross(d, e1); \n    const float  b2 = dot(r->d.xyz, s2) * invd; \n    const float temp = dot(e2, s2) * invd; \n     \n    if (b1 < 0.f || b1 > 1.f || b2 < 0.f || b1 + b2 > 1.f \n        || temp < 0.f || temp > r->o.w) \n    { \n        return 0; \n    } \n     \n    return 1; \n} \n \n#ifdef AMD_MEDIA_OPS \n#pragma OPENCL EXTENSION cl_amd_media_ops2 : enable \n#endif \n \n// Intersect ray with the axis-aligned box \nint IntersectBox(ray const* r, float3 invdir, bbox box, float maxt) \n{ \n    const float3 f = (box.pmax.xyz - r->o.xyz) * invdir; \n    const float3 n = (box.pmin.xyz - r->o.xyz) * invdir; \n \n    const float3 tmax = max(f, n); \n    const float3 tmin = min(f, n); \n \n#ifndef AMD_MEDIA_OPS \n    const float t1 = min(min(tmax.x, min(tmax.y, tmax.z)), maxt); \n    const float t0 = max(max(tmin.x, max(tmin.y, tmin.z)), 0.f); \n#else \n    const float t1 = min(amd_min3(tmax.x, tmax.y, tmax.z), maxt); \n    const float t0 = max(amd_max3(tmin.x, tmin.y, tmin.z), 0.f); \n#endif \n \n    return (t1 >= t0) ? 1 : 0; \n} \n \nfloat IntersectBoxF(ray const* r, float3 invdir, bbox box, float maxt) \n{ \n    const float3 f = (box.pmax.xyz - r->o.xyz) * invdir; \n    const float3 n = (box.pmin.xyz - r->o.xyz) * invdir; \n \n    const float3 tmax = max(f, n); \n    const float3 tmin = min(f, n); \n \n \n#ifndef AMD_MEDIA_OPS \n    const float t1 = min(min(tmax.x, min(tmax.y, tmax.z)), maxt); \n    const float t0 = max(max(tmin.x, max(tmin.y, tmin.z)), 0.f); \n#else \n    const float t1 = min(amd_min3(tmax.x, tmax.y, tmax.z), maxt); \n    const float t0 = max(amd_max3(tmin.x, tmin.y, tmin.z), 0.f); \n#endif \n \n    return (t1 >= t0) ? (t0 > 0.f ? t0 : t1) : -1.f; \n} \n \nint Ray_GetMask(ray const* r) \n{ \n    return r->extra.x; \n} \n \nint Ray_IsActive(ray const* r) \n{ \n    return r->extra.y; \n} \n \nfloat Ray_GetMaxT(ray const* r) \n{ \n    return r->o.w; \n} \n \nfloat Ray_GetTime(ray const* r) \n{ \n    return r->d.w; \n} \n/************************************************************************* \nEXTENSIONS \n**************************************************************************/ \n \n \n \n/************************************************************************* \nTYPE DEFINITIONS \n**************************************************************************/ \n#define STARTIDX(x)     (((int)((x).pmin.w))) \n#define LEAFNODE(x)     (((x).pmin.w) != -1.f) \n#define SHORT_STACK_SIZE 16 \n \n \ntypedef struct \n{ \n    bbox lbound; \n    bbox rbound; \n} FatBvhNode; \n \ntypedef struct \n{ \n    // BVH structure \n    __global FatBvhNode const*     nodes; \n    // Scene positional data \n    __global float3 const*         vertices; \n    // Scene indices \n    __global Face const*         faces; \n    // Shape IDs \n    __global ShapeData const*     shapes; \n    // Extra data \n    __global int const*             extra; \n} SceneData; \n \n/************************************************************************* \nHELPER FUNCTIONS \n**************************************************************************/ \n \n \n \n/************************************************************************* \nBVH FUNCTIONS \n**************************************************************************/ \n//  intersect a ray with leaf BVH node \nvoid IntersectLeafClosest( \n    SceneData const* scenedata, \n    int faceidx, \n    ray const* r,                // ray to instersect \n    Intersection* isect          // Intersection structure \n    ) \n{ \n    float3 v1, v2, v3; \n    Face face; \n \n    face = scenedata->faces[faceidx]; \n    v1 = scenedata->vertices[face.idx[0]]; \n    v2 = scenedata->vertices[face.idx[1]]; \n    v3 = scenedata->vertices[face.idx[2]]; \n \n#ifdef RR_RAY_MASK \n    int shapemask = scenedata->shapes[face.shapeidx].mask; \n \n    if (Ray_GetMask(r) & shapemask) \n#endif \n    { \n        if (IntersectTriangle(r, v1, v2, v3, isect)) \n        { \n            isect->primid = face.id; \n            isect->shapeid = scenedata->shapes[face.shapeidx].id; \n        } \n    } \n} \n \n//  intersect a ray with leaf BVH node \nbool IntersectLeafAny( \n    SceneData const* scenedata, \n    int faceidx, \n    ray const* r                      // ray to instersect \n    ) \n{ \n    float3 v1, v2, v3; \n    Face face; \n \n    face = scenedata->faces[faceidx]; \n    v1 = scenedata->vertices[face.idx[0]]; \n    v2 = scenedata->vertices[face.idx[1]]; \n    v3 = scenedata->vertices[face.idx[2]]; \n \n#ifdef RR_RAY_MASK \n    int shapemask = scenedata->shapes[face.shapeidx].mask; \n \n    if (Ray_GetMask(r) & shapemask) \n#endif \n    { \n        if (IntersectTriangleP(r, v1, v2, v3)) \n        { \n            return true; \n        } \n    } \n \n    return false; \n} \n \n#ifndef GLOBAL_STACK \n// intersect Ray against the whole BVH structure \nbool IntersectSceneClosest(SceneData const* scenedata, ray const* r, Intersection* isect, __global int* stack, __local int* ldsstack) \n{ \n    const float3 invdir = native_recip(r->d.xyz); \n \n    isect->uvwt = make_float4(0.f, 0.f, 0.f, r->o.w); \n    isect->shapeid = -1; \n    isect->primid = -1; \n \n    if (r->o.w < 0.f) \n        return false; \n \n    __global int* gsptr = stack; \n    __local  int* lsptr = ldsstack; \n \n    *lsptr = -1; \n    lsptr += 64; \n \n    int idx = 0; \n    FatBvhNode node; \n \n    bool leftleaf = false; \n    bool rightleaf = false; \n    float lefthit = 0.f; \n    float righthit = 0.f; \n    int step = 0; \n \n    while (idx > -1) \n    { \n        while (idx > -1) \n        { \n            node = scenedata->nodes[idx]; \n \n            leftleaf = LEAFNODE(node.lbound); \n            rightleaf = LEAFNODE(node.rbound); \n \n            lefthit = leftleaf ? -1.f : IntersectBoxF(r, invdir, node.lbound, isect->uvwt.w); \n            righthit = rightleaf ? -1.f : IntersectBoxF(r, invdir, node.rbound, isect->uvwt.w); \n \n            if (leftleaf) \n            { \n                IntersectLeafClosest(scenedata, STARTIDX(node.lbound), r, isect); \n            } \n \n            if (rightleaf) \n            { \n                IntersectLeafClosest(scenedata, STARTIDX(node.rbound), r, isect); \n            } \n \n            if (lefthit > 0.f && righthit > 0.f) \n            { \n                int deferred = -1; \n                if (lefthit > righthit) \n                { \n                    idx = (int)node.rbound.pmax.w; \n                    deferred = (int)node.lbound.pmax.w;; \n                } \n                else \n                { \n                    idx = (int)node.lbound.pmax.w; \n                    deferred = (int)node.rbound.pmax.w; \n                } \n \n                if (lsptr - ldsstack >= SHORT_STACK_SIZE * 64) \n                { \n                    for (int i = 1; i < SHORT_STACK_SIZE; ++i) \n                    { \n                        gsptr[i] = ldsstack[i * 64]; \n                    } \n \n                    gsptr += SHORT_STACK_SIZE; \n                    lsptr = ldsstack + 64; \n                } \n \n                *lsptr = deferred; \n                lsptr += 64; \n \n                continue; \n            } \n            else if (lefthit > 0) \n            { \n                idx = (int)node.lbound.pmax.w; \n                continue; \n            } \n            else if (righthit > 0) \n            { \n                idx = (int)node.rbound.pmax.w; \n                continue; \n            } \n \n            lsptr -= 64; \n            idx = *(lsptr); \n        } \n \n        if (gsptr > stack) \n        { \n            gsptr -= SHORT_STACK_SIZE; \n \n            for (int i = 1; i < SHORT_STACK_SIZE; ++i) \n            { \n                ldsstack[i * 64] = gsptr[i]; \n            } \n \n            lsptr = ldsstack + (SHORT_STACK_SIZE - 1) * 64; \n            idx = ldsstack[64 * (SHORT_STACK_SIZE - 1)]; \n        } \n    } \n \n    return isect->shapeid >= 0; \n} \n#else \n// intersect Ray against the whole BVH structure \nbool IntersectSceneClosest(SceneData const* scenedata, ray const* r, Intersection* isect) \n{ \n    const float3 invdir = native_recip(r->d.xyz); \n \n    isect->uvwt = make_float4(0.f, 0.f, 0.f, r->o.w); \n    isect->shapeid = -1; \n    isect->primid = -1; \n \n    if (r->o.w < 0.f) \n        return false; \n     \n    int stack[32]; \n \n    int* sptr = stack; \n    *sptr++ = -1; \n \n    int idx = 0; \n    FatBvhNode node; \n \n    bool leftleaf = false; \n    bool rightleaf = false; \n    float lefthit = 0.f; \n    float righthit = 0.f; \n    int step = 0; \n \n    while (idx > -1) \n    { \n        node = scenedata->nodes[idx]; \n \n        leftleaf = LEAFNODE(node.lbound); \n        rightleaf = LEAFNODE(node.rbound); \n \n        lefthit = leftleaf ? -1.f : IntersectBoxF(r, invdir, node.lbound, isect->uvwt.w); \n        righthit = rightleaf ? -1.f : IntersectBoxF(r, invdir, node.rbound, isect->uvwt.w); \n \n        if (leftleaf) \n        { \n            IntersectLeafClosest(scenedata, STARTIDX(node.lbound), r, isect); \n        } \n \n        if (rightleaf) \n        { \n            IntersectLeafClosest(scenedata, STARTIDX(node.rbound), r, isect); \n        } \n \n        if (lefthit > 0.f && righthit > 0.f) \n        { \n            int deferred = -1; \n            if (lefthit > righthit) \n            { \n                idx = (int)node.rbound.pmax.w; \n                deferred = (int)node.lbound.pmax.w;; \n            } \n            else \n            { \n                idx = (int)node.lbound.pmax.w; \n                deferred = (int)node.rbound.pmax.w; \n            } \n \n                    *sptr++ = deferred; \n            continue; \n        } \n        else if (lefthit > 0) \n        { \n            idx = (int)node.lbound.pmax.w; \n            continue; \n        } \n        else if (righthit > 0) \n        { \n            idx = (int)node.rbound.pmax.w; \n            continue; \n        } \n \n                idx = *--sptr; \n    } \n \n    return isect->shapeid >= 0; \n} \n#endif \n \n#ifndef GLOBAL_STACK \n// intersect Ray against the whole BVH structure \nbool IntersectSceneAny(SceneData const* scenedata, ray const* r, __global int* stack, __local int* ldsstack) \n{ \n    const float3 invdir = native_recip(r->d.xyz); \n \n    __global int* gsptr = stack; \n    __local  int* lsptr = ldsstack; \n \n    if (r->o.w < 0.f) \n        return false; \n \n    *lsptr = -1; \n    lsptr += 64; \n \n    int idx = 0; \n    FatBvhNode node; \n \n    bool leftleaf = false; \n    bool rightleaf = false; \n    float lefthit = 0.f; \n    float righthit = 0.f; \n \n    while (idx > -1) \n    { \n        while (idx > -1) \n        { \n            node = scenedata->nodes[idx]; \n \n            leftleaf = LEAFNODE(node.lbound); \n            rightleaf = LEAFNODE(node.rbound); \n \n            lefthit = leftleaf ? -1.f : IntersectBoxF(r, invdir, node.lbound, r->o.w); \n            righthit = rightleaf ? -1.f : IntersectBoxF(r, invdir, node.rbound, r->o.w); \n \n            if (leftleaf) \n            { \n                if (IntersectLeafAny(scenedata, STARTIDX(node.lbound), r)) \n                                    return true; \n            } \n \n            if (rightleaf) \n            { \n                if (IntersectLeafAny(scenedata, STARTIDX(node.rbound), r)) \n                                return true; \n            } \n \n            if (lefthit > 0.f && righthit > 0.f) \n            { \n                int deferred = -1; \n                if (lefthit > righthit) \n                { \n                    idx = (int)node.rbound.pmax.w; \n                    deferred = (int)node.lbound.pmax.w;; \n \n                } \n                else \n                { \n                    idx = (int)node.lbound.pmax.w; \n                    deferred = (int)node.rbound.pmax.w; \n                } \n \n                if (lsptr - ldsstack >= SHORT_STACK_SIZE * 64) \n                { \n                    for (int i = 1; i < SHORT_STACK_SIZE; ++i) \n                    { \n                        gsptr[i] = ldsstack[i * 64]; \n                    } \n \n                    gsptr += SHORT_STACK_SIZE; \n                    lsptr = ldsstack + 64; \n                } \n \n                *lsptr = deferred; \n                lsptr += 64; \n                continue; \n            } \n            else if (lefthit > 0) \n            { \n                idx = (int)node.lbound.pmax.w; \n                continue; \n            } \n            else if (righthit > 0) \n            { \n                idx = (int)node.rbound.pmax.w; \n                continue; \n            } \n \n            lsptr -= 64; \n            idx = *(lsptr); \n        } \n \n        if (gsptr > stack) \n        { \n            gsptr -= SHORT_STACK_SIZE; \n \n            for (int i = 1; i < SHORT_STACK_SIZE; ++i) \n            { \n                ldsstack[i * 64] = gsptr[i]; \n            } \n \n            lsptr = ldsstack + (SHORT_STACK_SIZE - 1) * 64; \n            idx = ldsstack[64 * (SHORT_STACK_SIZE - 1)]; \n        } \n    } \n \n    return false; \n} \n#else \n// intersect Ray against the whole BVH structure \nbool IntersectSceneAny(SceneData const* scenedata, ray const* r) \n{ \n    const float3 invdir = native_recip(r->d.xyz); \n \n    if (r->o.w < 0.f) \n        return false; \n     \n    int stack[32]; \n \n    int* sptr = stack; \n    *sptr++ = -1; \n \n    int idx = 0; \n    FatBvhNode node; \n \n    bool leftleaf = false; \n    bool rightleaf = false; \n    float lefthit = 0.f; \n    float righthit = 0.f; \n    int step = 0; \n \n    bool found = false; \n \n    while (idx > -1) \n    { \n        node = scenedata->nodes[idx]; \n \n        leftleaf = LEAFNODE(node.lbound); \n        rightleaf = LEAFNODE(node.rbound); \n \n        lefthit = leftleaf ? -1.f : IntersectBoxF(r, invdir, node.lbound, r->o.w); \n        righthit = rightleaf ? -1.f : IntersectBoxF(r, invdir, node.rbound, r->o.w); \n \n        if (leftleaf) \n        { \n            if (IntersectLeafAny(scenedata, STARTIDX(node.lbound), r)) \n            { \n                found = true; \n                break; \n            } \n        } \n         \n        if (rightleaf) \n        { \n            if (IntersectLeafAny(scenedata, STARTIDX(node.rbound), r)) \n                    { \n                        found = true; \n                        break; \n                    } \n        } \n \n        if (lefthit > 0.f && righthit > 0.f) \n        { \n            int deferred = -1; \n            if (lefthit > righthit) \n            { \n                idx = (int)node.rbound.pmax.w; \n                deferred = (int)node.lbound.pmax.w;; \n            } \n            else \n            { \n                idx = (int)node.lbound.pmax.w; \n                deferred = (int)node.rbound.pmax.w; \n            } \n \n                    *sptr++ = deferred; \n        } \n        else if (lefthit > 0) \n        { \n            idx = (int)node.lbound.pmax.w; \n        } \n        else if (righthit > 0) \n        { \n            idx = (int)node.rbound.pmax.w; \n        } \n \n        if (lefthit <= 0.f && righthit <= 0.f) \n            idx = *--sptr; \n    } \n \n    return found; \n} \n \n#endif \n \n__attribute__((reqd_work_group_size(64, 1, 1))) \n__kernel void IntersectClosest( \n    // Input \n    __global FatBvhNode const* nodes,   // BVH nodes \n    __global float3 const* vertices, // Scene positional data \n    __global Face const* faces,    // Scene indices \n    __global ShapeData const* shapes, // Shape data \n    __global ray const* rays,        // Ray workload \n    int offset,                // Offset in rays array \n    int numrays,               // Number of rays to process \n    __global Intersection* hits // Hit datas \n    , __global int* stack \n    ) \n{ \n    __local int ldsstack[SHORT_STACK_SIZE * 64]; \n \n    int global_id = get_global_id(0); \n    int local_id = get_local_id(0); \n    int group_id = get_group_id(0); \n \n    // Fill scene data  \n    SceneData scenedata = \n    { \n        nodes, \n        vertices, \n        faces, \n        shapes, \n        0 \n    }; \n \n    if (global_id < numrays) \n    { \n        // Fetch ray \n        ray r = rays[global_id]; \n         \n        if (Ray_IsActive(&r)) \n        { \n            // Calculate closest hit \n            Intersection isect; \n#ifndef GLOBAL_STACK  \n            IntersectSceneClosest(&scenedata, &r, &isect, stack + group_id * 64 * 32 + local_id * 32, ldsstack + local_id); \n#else \n            IntersectSceneClosest(&scenedata, &r, &isect); \n#endif \n \n            // Write data back in case of a hit \n            hits[global_id] = isect; \n        } \n    } \n} \n \n__attribute__((reqd_work_group_size(64, 1, 1))) \n__kernel void IntersectAny( \n    // Input \n    __global FatBvhNode const* nodes,   // BVH nodes \n    __global float3 const* vertices, // Scene positional data \n    __global Face const* faces,    // Scene indices \n    __global ShapeData const* shapes,     // Shape data \n    __global ray const* rays,        // Ray workload \n    int offset,                // Offset in rays array \n    int numrays,               // Number of rays to process                     \n    __global int* hitresults  // Hit results \n    , __global int* stack \n    ) \n{ \n \n    __local int ldsstack[SHORT_STACK_SIZE * 64]; \n    int global_id = get_global_id(0); \n    int local_id = get_local_id(0); \n    int group_id = get_group_id(0); \n \n    // Fill scene data  \n    SceneData scenedata = \n    { \n        nodes, \n        vertices, \n        faces, \n        shapes, \n        0 \n    }; \n \n    if (global_id < numrays) \n    { \n        // Fetch ray \n        ray r = rays[global_id]; \n \n        if (Ray_IsActive(&r)) \n        { \n            // Calculate any intersection \n#ifndef GLOBAL_STACK  \n            hitresults[global_id] = IntersectSceneAny(&scenedata, &r, stack + group_id * 64 * 32 + local_id * 32, ldsstack + local_id) ? 1 : -1; \n#else \n            hitresults[global_id] = IntersectSceneAny(&scenedata, &r) ? 1 : -1; \n#endif \n        } \n    } \n} \n \n__attribute__((reqd_work_group_size(64, 1, 1))) \n// Version with range check \n__kernel void IntersectClosestRC( \n    __global FatBvhNode const* nodes,   // BVH nodes \n    __global float3 const* vertices, // Scene positional data \n    __global Face const* faces,      // Scene indices \n    __global ShapeData const* shapes,     // Shape data \n    __global ray const* rays,        // Ray workload \n    int offset,                // Offset in rays array \n    __global int const* numrays,     // Number of rays in the workload \n    __global Intersection* hits // Hit datas \n    , __global int* stack \n    ) \n{ \n    __local int ldsstack[SHORT_STACK_SIZE * 64]; \n \n    int global_id = get_global_id(0); \n    int local_id = get_local_id(0); \n    int group_id = get_group_id(0); \n \n    // Fill scene data  \n    SceneData scenedata = \n    { \n        nodes, \n        vertices, \n        faces, \n        shapes, \n        0 \n    }; \n \n    // Handle only working subset \n    if (global_id < *numrays) \n    { \n        // Fetch ray \n        ray r = rays[global_id]; \n \n        if (Ray_IsActive(&r)) \n        { \n            // Calculate closest hit \n            Intersection isect; \n#ifndef GLOBAL_STACK  \n            IntersectSceneClosest(&scenedata, &r, &isect, stack + group_id * 64 * 32 + local_id * 32, ldsstack + local_id); \n#else \n            IntersectSceneClosest(&scenedata, &r, &isect); \n#endif \n            // Write data back in case of a hit \n            hits[global_id] = isect; \n        } \n    } \n} \n \n__attribute__((reqd_work_group_size(64, 1, 1))) \n// Version with range check \n__kernel void IntersectAnyRC( \n    // Input \n    __global FatBvhNode const* nodes,   // BVH nodes \n    __global float3 const* vertices, // Scene positional data \n    __global Face const* faces,    // Scene indices \n    __global ShapeData const* shapes,     // Shape data \n    __global ray const* rays,        // Ray workload \n    int offset,                // Offset in rays array \n    __global int const* numrays,     // Number of rays in the workload \n    __global int* hitresults   // Hit results \n    , __global int* stack \n    ) \n{ \n    __local int ldsstack[SHORT_STACK_SIZE * 64]; \n    int global_id = get_global_id(0); \n    int local_id = get_local_id(0); \n    int group_id = get_group_id(0); \n \n    // Fill scene data  \n    SceneData scenedata = \n    { \n        nodes, \n        vertices, \n        faces, \n        shapes, \n        0 \n    }; \n \n    // Handle only working subset \n    if (global_id < *numrays) \n    { \n        // Fetch ray \n        ray r = rays[global_id]; \n \n        if (Ray_IsActive(&r)) \n        { \n            // Calculate any intersection \n#ifndef GLOBAL_STACK  \n            hitresults[global_id] = IntersectSceneAny(&scenedata, &r, stack + group_id * 64 * 32 + local_id * 32, ldsstack + local_id) ? 1 : -1; \n#else \n            hitresults[global_id] = IntersectSceneAny(&scenedata, &r) ? 1 : -1; \n#endif \n        } \n    } \n} \n
 /********************************************************************** \nCopyright (c) 2016 Advanced Micro Devices, Inc. All rights reserved. \n \nPermission is hereby granted, free of charge, to any person obtaining a copy \nof this software and associated documentation files (the "Software"), to deal \nin the Software without restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell \ncopies of the Software, and to permit persons to whom the Software is \nfurnished to do so, subject to the following conditions: \n \nThe above copyright notice and this permission notice shall be included in \nall copies or substantial portions of the Software. \n \nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE \nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN \nTHE SOFTWARE. \n********************************************************************/ \n \ntypedef struct \n{ \n    float3 pmin; \n    float3 pmax; \n} bbox; \n \n// The following two functions are from \n// http://devblogs.nvidia.com/parallelforall/thinking-parallel-part-iii-tree-construction-gpu/ \n// Expands a 10-bit integer into 30 bits \n// by inserting 2 zeros after each bit. \nstatic unsigned int ExpandBits(unsigned int v) \n{ \n    v = (v * 0x00010001u) & 0xFF0000FFu; \n    v = (v * 0x00000101u) & 0x0F00F00Fu; \n    v = (v * 0x00000011u) & 0xC30C30C3u; \n    v = (v * 0x00000005u) & 0x49249249u; \n    return v; \n} \n \n// Calculates a 30-bit Morton code for the \n// given 3D point located within the unit cube [0,1]. \nunsigned int CalculateMortonCode(float3 p) \n{ \n    float x = min(max(p.x * 1024.0f, 0.0f), 1023.0f); \n    float y = min(max(p.y * 1024.0f, 0.0f), 1023.0f); \n    float z = min(max(p.z * 1024.0f, 0.0f), 1023.0f); \n    unsigned int xx = ExpandBits((unsigned int)x); \n    unsigned int yy = ExpandBits((unsigned int)y); \n    unsigned int zz = ExpandBits((unsigned int)z); \n    return xx * 4 + yy * 2 + zz; \n} \n \n// Assign Morton codes to each of positions \n__kernel void CalcMortonCode( \n    // Centers of primitive bounding boxes \n    __global bbox const* bounds, \n    // Number of primitives \n    int numpositions, \n    // Morton codes \n    __global int* mortoncodes \n    ) \n{ \n    int globalid = get_global_id(0); \n \n    if (globalid < numpositions) \n    { \n        bbox bound = bounds[globalid]; \n        float3 center = 0.5f * (bound.pmax + bound.pmin); \n        mortoncodes[globalid] = CalculateMortonCode(center); \n    } \n} \n \n \nbbox bboxunion(bbox b1, bbox b2) \n{ \n    bbox res; \n    res.pmin = min(b1.pmin, b2.pmin); \n    res.pmax = max(b1.pmax, b2.pmax); \n    return res; \n} \n \ntypedef struct \n{ \n        int parent; \n        int left; \n        int right; \n        int next; \n} HlbvhNode; \n \n#define LEAFIDX(i) ((numprims-1) + i) \n#define NODEIDX(i) (i) \n \n// Calculates longest common prefix length of bit representations \n// if  representations are equal we consider sucessive indices \nint delta(__global int* mortoncodes, int numprims, int i1, int i2) \n{ \n    // Select left end \n    int left = min(i1, i2); \n    // Select right end \n    int right = max(i1, i2); \n    // This is to ensure the node breaks if the index is out of bounds \n    if (left < 0 || right >= numprims)  \n    { \n        return -1; \n    } \n    // Fetch Morton codes for both ends \n    int leftcode = mortoncodes[left]; \n    int rightcode = mortoncodes[right]; \n \n    // Special handling of duplicated codes: use their indices as a fallback \n    return leftcode != rightcode ? clz(leftcode ^ rightcode) : (32 + clz(left ^ right)); \n} \n \n// Shortcut for delta evaluation \n#define DELTA(i,j) delta(mortoncodes,numprims,i,j) \n \n// Find span occupied by internal node with index idx \nint2 FindSpan(__global int* mortoncodes, int numprims, int idx) \n{ \n    // Find the direction of the range \n    int d = sign((float)(DELTA(idx, idx+1) - DELTA(idx, idx-1))); \n \n    // Find minimum number of bits for the break on the other side \n    int deltamin = DELTA(idx, idx-d); \n \n    // Search conservative far end \n    int lmax = 2; \n    while (DELTA(idx,idx + lmax * d) > deltamin) \n        lmax *= 2; \n \n    // Search back to find exact bound \n    // with binary search \n    int l = 0; \n    int t = lmax; \n    do \n    { \n        t /= 2; \n        if(DELTA(idx, idx + (l + t)*d) > deltamin) \n        { \n            l = l + t; \n        } \n    } \n    while (t > 1); \n \n    // Pack span  \n    int2 span; \n    span.x = min(idx, idx + l*d); \n    span.y = max(idx, idx + l*d); \n    return span; \n} \n \n// Find split idx within the span \nint FindSplit(__global int* mortoncodes, int numprims, int2 span) \n{ \n    // Fetch codes for both ends \n    int left = span.x; \n    int right = span.y; \n \n    // Calculate the number of identical bits from higher end \n    int numidentical = DELTA(left, right); \n \n    do \n    { \n        // Proposed split \n        int newsplit = (right + left) / 2; \n \n        // If it has more equal leading bits than left and right accept it \n        if (DELTA(left, newsplit) > numidentical) \n        { \n            left = newsplit; \n        } \n        else \n        { \n            right = newsplit; \n        } \n    } \n    while (right > left + 1); \n \n    return left; \n} \n \n// Set parent-child relationship \n__kernel void BuildHierarchy( \n    // Sorted Morton codes of the primitives \n    __global int* mortoncodes, \n    // Bounds \n    __global bbox* bounds, \n    // Primitive indices \n    __global int* indices, \n    // Number of primitives \n    int numprims, \n    // Nodes \n    __global HlbvhNode* nodes, \n    // Leaf bounds \n    __global bbox* boundssorted \n    ) \n{ \n    int globalid = get_global_id(0); \n \n    // Set child \n    if (globalid < numprims) \n    { \n        nodes[LEAFIDX(globalid)].left = nodes[LEAFIDX(globalid)].right = indices[globalid]; \n        boundssorted[LEAFIDX(globalid)] = bounds[indices[globalid]]; \n    } \n     \n    // Set internal nodes \n    if (globalid < numprims - 1) \n    { \n        // Find span occupied by the current node \n        int2 range = FindSpan(mortoncodes, numprims, globalid); \n \n        // Find split position inside the range \n        int  split = FindSplit(mortoncodes, numprims, range); \n \n        // Create child nodes if needed \n        int c1idx = (split == range.x) ? LEAFIDX(split) : NODEIDX(split); \n        int c2idx = (split + 1 == range.y) ? LEAFIDX(split + 1) : NODEIDX(split + 1); \n \n        nodes[NODEIDX(globalid)].left = c1idx; \n        nodes[NODEIDX(globalid)].right = c2idx; \n        //nodes[NODEIDX(globalid)].next = (range.y + 1 < numprims) ? range.y + 1 : -1; \n        nodes[c1idx].parent = NODEIDX(globalid); \n        //nodes[c1idx].next = c2idx; \n        nodes[c2idx].parent = NODEIDX(globalid); \n        //nodes[c2idx].next = nodes[NODEIDX(globalid)].next; \n    } \n} \n \n// Propagate bounds up to the root \n__kernel void RefitBounds(__global bbox* bounds, \n                          int numprims, \n                          __global HlbvhNode* nodes, \n                          __global int* flags \n                          ) \n{ \n    int globalid = get_global_id(0); \n \n    // Start from leaf nodes \n    if (globalid < numprims) \n    { \n        // Get my leaf index \n        int idx = LEAFIDX(globalid); \n \n        do \n        { \n            // Move to parent node \n            idx = nodes[idx].parent; \n \n            // Check node's flag \n            if (atomic_cmpxchg(flags + idx, 0, 1) == 1) \n            { \n                // If the flag was 1 the second child is ready and  \n                // this thread calculates bbox for the node \n \n                // Fetch kids \n                int lc = nodes[idx].left; \n                int rc = nodes[idx].right; \n \n                // Calculate bounds \n                bbox b = bboxunion(bounds[lc], bounds[rc]); \n \n                // Write bounds \n                bounds[idx] = b; \n            } \n            else \n            { \n                // If the flag was 0 set it to 1 and bail out. \n                // The thread handling the second child will \n                // handle this node. \n                break; \n            } \n        } \n        while (idx != 0); \n    } \n} \n
 /-K=o64=y
+//\n// Copyright 2017-2023 Valve Corporation.\n//\n// Licensed under the Apache License, Version 2.0 (the "License");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an "AS IS" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.\n//\n\n#pragma OPENCL EXTENSION cl_khr_int64_extended_atomics : enable\n#pragma OPENCL EXTENSION cl_khr_byte_addressable_store : enable\n\n// --------------------------------------------------------------------------------------------------------------------\n// Constants\n// --------------------------------------------------------------------------------------------------------------------\n\n#define PI                          3.14159f              // Mathematical constant Pi\n#define SOURCE_RADIUS               0.1f                  // Radius of the sound source sphere (in meters)\n#define LISTENER_RADIUS             0.1f                  // Radius of the listener sphere (in meters)\n#define SPEED_OF_SOUND              340.0f                // Speed of sound in air (in meters per second)\n#define RAY_SURFACE_OFFSET          1e-2f                 // Small offset to prevent ray self-intersection (meters)\n#define SPECULAR_EXPONENT           1e+2f                 // Exponent for specular reflection in Phong shading model (unitless, higher value = more specular)\n#define NUM_BANDS                   3                     // Number of frequency bands (e.g., Low, Mid, High)\n#define NUM_BINS                    256                   // Number of time bins used for energy histograms\n#define NUM_LOCAL_HISTOGRAMS        2                     // Number of local histograms per workgroup (for atomic contention reduction, tunable)\n\n// --------------------------------------------------------------------------------------------------------------------\n// CoordinateSpace\n// --------------------------------------------------------------------------------------------------------------------\n\ntypedef struct __attribute__((packed)) CoordinateSpace_t\n{\n    float3 right;\n    float3 up;\n    float3 ahead;\n    float3 origin;\n} CoordinateSpace;\n\nCoordinateSpace createCoordinateSpace(float3 normal)\n{\n    CoordinateSpace space;\n    space.ahead = normal;\n\n    if (fabs(normal.x) > fabs(normal.z))\n    {\n        float3 right = (float3) (-normal.y, normal.x, 0.0f);\n        space.right = normalize(right);\n    }\n    else\n    {\n        float3 right = (float3) (0.0f, -normal.z, normal.y);\n        space.right = normalize(right);\n    }\n\n    space.up = cross(space.right, space.ahead);\n\n    return space;\n}\n\nfloat3 transformLocalToWorld(CoordinateSpace space,\n                             float3 direction)\n{\n    return direction.x * space.right + direction.y * space.up - direction.z * space.ahead;\n}\n\nfloat3 transformWorldToLocal(CoordinateSpace space,\n                             float3 direction)\n{\n    float3 transformedDirection;\n    transformedDirection.x = dot(direction, space.right);\n    transformedDirection.y = dot(direction, space.up);\n    transformedDirection.z = -dot(direction, space.ahead);\n    return transformedDirection;\n}\n\nfloat3 transformHemisphereSample(float3 direction,\n                                 float3 normal)\n{\n    CoordinateSpace tangentSpace = createCoordinateSpace(normal);\n    return normalize(transformLocalToWorld(tangentSpace, direction));\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Random Sampling\n// --------------------------------------------------------------------------------------------------------------------\n\n// The following code is from the Radeon Rays / Baikal GitHub repository. It can be found at:\n//      https://github.com/GPUOpen-LibrariesAndSDKs/RadeonProRender-Baikal/blob/master/Baikal/Kernels/CL/sampling.cl\n\ntypedef struct RNG_t\n{\n    uint    value;\n} RNG;\n\nuint wangHash(uint seed)\n{\n    seed = (seed ^ 61) ^ (seed >> 16);\n    seed *= 9;\n    seed = seed ^ (seed >> 4);\n    seed *= 0x27d4eb2d;\n    seed = seed ^ (seed >> 15);\n    return seed;\n}\n\nuint randUint(local RNG* rng)\n{\n    rng->value = wangHash(1664525U * rng->value + 1013904223U);\n    return rng->value;\n}\n\nfloat randFloat(local RNG* rng)\n{\n    return ((float)randUint(rng)) / 0xffffffffU;\n}\n\nvoid initRNG(uint seed, local RNG* rng)\n{\n    rng->value = wangHash(seed);\n}\n\nfloat2 uniformRandom2d(local RNG* rng)\n{\n    return (float2) (randFloat(rng), randFloat(rng));\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Directivity\n// --------------------------------------------------------------------------------------------------------------------\n\n// NOTE: Custom directivity callbacks are not supported at this time.\ntypedef struct __attribute__((packed)) Directivity_t\n{\n    float dipoleWeight;\n    float dipolePower;\n} Directivity;\n\nfloat evaluateDirectivity(float3 point,\n                          CoordinateSpace coordinates,\n                          Directivity directivity)\n{\n    float3 worldSpaceDirection = normalize(point - coordinates.origin);\n    float3 localSpaceDirection = transformWorldToLocal(coordinates, worldSpaceDirection);\n\n    float cosine = -localSpaceDirection.z;\n    return pow(fabs((1.0f - directivity.dipoleWeight) + directivity.dipoleWeight * cosine), directivity.dipolePower);\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Material\n// --------------------------------------------------------------------------------------------------------------------\n\ntypedef struct __attribute__((packed)) Material_t\n{\n    float  absorptionLow;\n    float  absorptionMid;\n    float  absorptionHigh;\n    float  scattering;\n    float  transmissionLow;\n    float  transmissionMid;\n    float  transmissionHigh;\n} Material;\n\n// --------------------------------------------------------------------------------------------------------------------\n// Radeon Rays Helpers\n// --------------------------------------------------------------------------------------------------------------------\n\n// This must exactly match the ray data structure (struct ray) used by Radeon Rays.\ntypedef struct Ray_t\n{\n    float4  o;\n    float4  d;\n    int2    extra;\n    int2    padding;\n} Ray;\n\n// This must exactly match the hit data structure (struct Intersection) used by Radeon Rays.\ntypedef struct Hit_t\n{\n    int       shapeid;\n    int       primid;\n    int       padding0;\n    int       padding1;\n    float4    uvwt;\n} Hit;\n\n// --------------------------------------------------------------------------------------------------------------------\n// IIR Filtering\n// --------------------------------------------------------------------------------------------------------------------\n\ntypedef struct IIR_t\n{\n    float a1, a2;\n    float b0, b1, b2;\n} IIR;\n\n// --------------------------------------------------------------------------------------------------------------------\n// Ray Generation Kernels\n// --------------------------------------------------------------------------------------------------------------------\n\nkernel void generateCameraRays(global CoordinateSpace* camera,\n                               global Ray* rays)\n{\n    uint width = get_global_size(0);\n    uint height = get_global_size(1);\n    uint u = get_global_id(0);\n    uint v = get_global_id(1);\n    uint index = v * width + u;\n\n    float du = ((u / (float) width) - 0.5f) * 2.0f;\n    float dv = ((v / (float) height) - 0.5f) * 2.0f;\n\n    rays[index].o = (float4) (camera->origin, FLT_MAX);\n    rays[index].d = (float4) (normalize(du * camera->right + dv * camera->up - camera->ahead), 0.0f);\n    rays[index].extra = (int2) (0xffffffff, 1);\n}\n\nkernel void generateListenerRays(global CoordinateSpace* listeners,\n                                 global float4* sphereSamples,\n                                 global Ray* rays)\n{\n    size_t rayIndex = get_global_id(0);\n    size_t listenerIndex = get_global_id(1);\n    size_t index = listenerIndex * get_global_size(0) + rayIndex;\n\n    rays[index].o = (float4) (listeners[listenerIndex].origin, FLT_MAX);\n    rays[index].d = (float4) (sphereSamples[rayIndex].xyz, 0.0f);\n    rays[index].extra = (int2) (0xffffffff, 1);\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Sphere Occlusion Kernel\n// --------------------------------------------------------------------------------------------------------------------\n\nfloat raySphereIntersect(global const Ray* ray,\n                         float3 center,\n                         float radius)\n{\n    float3 origin = ray->o.xyz;\n    float3 direction = ray->d.xyz;\n\n    float3 v = origin - center;\n    float r = radius;\n\n    float B = 2.0f * dot(v, direction);\n    float C = dot(v, v) - (r * r);\n    float D = (B * B) - (4.0f * C);\n\n    if (D < 0.0f)\n        return FLT_MAX;\n\n    float t = -0.5f * (B + sqrt(D));\n    return t;\n}\n\nkernel void sphereOcclusion(uint numSources,\n                            global const CoordinateSpace* sources,\n                            uint numListeners,\n                            global const CoordinateSpace* listeners,\n                            global Ray* rays,\n                            global Hit* hits)\n{\n    uint numRays = get_global_size(0);\n    uint rayIndex = get_global_id(0);\n\n    for (int i = 0; i < numListeners; ++i)\n    {\n        uint index = i * numRays + rayIndex;\n\n        float listenerSphereHitDistance = raySphereIntersect(&rays[index], listeners[i].origin, LISTENER_RADIUS);\n        if (0.0f <= listenerSphereHitDistance && listenerSphereHitDistance < hits[index].uvwt.s3)\n        {\n            rays[index].extra.y = 0;\n            hits[index].primid = -1;\n            return;\n        }\n\n        for (int j = 0; j < numSources; ++j)\n        {\n            float sourceSphereHitDistance = raySphereIntersect(&rays[index], sources[j].origin, SOURCE_RADIUS);\n            if (0.0f <= sourceSphereHitDistance && sourceSphereHitDistance < hits[index].uvwt.s3)\n            {\n                rays[index].extra.y = 0;\n                hits[index].primid = -1;\n                return;\n            }\n        }\n    }\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Shading + Shadow/Bounced Ray Generation Kernels\n// --------------------------------------------------------------------------------------------------------------------\n\nfloat3 calculateHitPoint(Ray ray,\n                         Hit hit)\n{\n    return ray.o.xyz + hit.uvwt.s3 * ray.d.xyz;\n}\n\nfloat3 calculateHitNormal(Ray ray,\n                          Hit hit,\n                          global float4* normals)\n{\n    float3 hitNormal = normals[hit.primid].xyz;\n    if (dot(hitNormal, ray.d.xyz) > 0.0f)\n    {\n        hitNormal = -hitNormal;\n    }\n\n    return hitNormal;\n}\n\nfloat pointSourceIrradiance(float distance,\n                            float minDistance)\n{\n    float attenuation = 1.0f / max(distance, minDistance);\n    float irradiance = (1.0f / (4.0f * PI)) * (attenuation * attenuation);\n    return irradiance;\n}\n\nfloat3 reflect(float3 incident,\n               float3 normal)\n{\n    return normalize(incident - (2.0f * dot(incident, normal) * normal));\n}\n\nkernel void shadeAndBounce(uint numSources,\n                           global const CoordinateSpace* sources,\n                           uint numListeners,\n                           global const CoordinateSpace* listeners,\n                           global const Directivity* directivities,\n                           uint numRays,\n                           uint numBounces,\n                           float irradianceMinDistance,\n                           global const Ray* rays,\n                           global const Hit* hits,\n                           global const float3* normals,\n                           global const int* materialIndices,\n                           global const Material* materials,\n                           uint numDiffuseSamples,\n                           global const float4* diffuseSamples,\n                           uint randomNumber,\n                           float scalar,\n                           global Ray* shadowRays,\n                           global Ray* reflectedRays,\n                           global float4* energyDelay,\n                           global float4* accumEnergyDelay)\n{\n    size_t numChunks = max(numListeners, numSources);\n    size_t numPrimaryRays = get_global_size(0) / numChunks;\n    size_t numShadowRays = get_global_size(0);\n\n    uint rayIndex = (numListeners > 1) ? get_global_id(0) : (get_global_id(0) % numPrimaryRays);\n    uint chunkIndex = get_global_id(0) / numPrimaryRays;\n    uint listenerIndex = (numListeners > 1) ? chunkIndex : 0;\n    uint sourceIndex = (numSources > 1) ? chunkIndex : 0;\n    uint shadowRayIndex = get_global_id(0);\n\n    // If this ray is disabled, don't do anything.\n    if (rays[rayIndex].extra.y == 0 || hits[rayIndex].primid < 0)\n    {\n        shadowRays[shadowRayIndex].extra = 0;\n        reflectedRays[rayIndex].extra = 0;\n        energyDelay[shadowRayIndex] = (float4) 0.0f;\n        return;\n    }\n\n    // Random number generation for work group.\n    local RNG rng;\n    local float randomFloat;\n    local uint randomUint;\n    if (get_local_id(0) == 0)\n    {\n        initRNG(randomNumber + rayIndex, &rng);\n        randomFloat = randFloat(&rng);\n        randomUint = randUint(&rng);\n    }\n\n    barrier(CLK_LOCAL_MEM_FENCE);\n\n    // Calculate hit point.\n    float3 rayDirection = rays[rayIndex].d.xyz;\n    int triangleIndex = hits[rayIndex].primid;\n    float hitDistance = hits[rayIndex].uvwt.s3;\n    float3 hitPoint = rays[rayIndex].o.xyz + hitDistance * rayDirection;\n\n    // Calculate hit normal.\n    float3 hitNormal = normals[triangleIndex].xyz;\n    if (dot(hitNormal, rayDirection) > 0.0f)\n    {\n        hitNormal = -hitNormal;\n    }\n\n    // Calculate hit material.\n    Material hitMaterial = materials[materialIndices[triangleIndex]];\n    float3 hitMaterialAbsorption = (float3) (hitMaterial.absorptionLow, hitMaterial.absorptionMid, hitMaterial.absorptionHigh);\n\n    // Calculate shadow ray direction.\n    float3 source = sources[sourceIndex].origin;\n    float hitToSourceDistance = distance(hitPoint, source);\n    float4 hitToSource = (float4) (normalize(source - hitPoint), 0.0f);\n\n    // Skip the ray if:\n    //  a) the hit point is inside the listener, or\n    //  b) the hit point is too close to the source, or\n    //  c) the ray hit a backfacing triangle.\n    if (hitDistance <= LISTENER_RADIUS ||\n        hitToSourceDistance <= irradianceMinDistance ||\n        dot(hitToSource.xyz, hitNormal) < 0.0f)\n    {\n        shadowRays[shadowRayIndex].extra = 0;\n        energyDelay[shadowRayIndex] = (float4) 0.0f;\n    }\n    else\n    {\n        // Generate the shadow ray.\n        shadowRays[shadowRayIndex].o = (float4) (hitPoint + RAY_SURFACE_OFFSET * hitToSource.xyz, hitToSourceDistance);\n        shadowRays[shadowRayIndex].d = hitToSource;\n        shadowRays[shadowRayIndex].extra = (int2) (0xffffffff, 1);\n\n        // Calculate shading values.\n        float3 energy = (1.0f / PI) * hitMaterial.scattering * max(0.0f, dot(hitNormal, hitToSource.xyz));\n        energy += ((SPECULAR_EXPONENT + 2.0f) / (8.0f * PI)) * (1.0f - hitMaterial.scattering) * pow(fabs(dot(normalize(hitToSource.xyz - rayDirection), hitNormal)), SPECULAR_EXPONENT);\n        energy *= scalar;\n        energy *= evaluateDirectivity(hitPoint, sources[sourceIndex], directivities[sourceIndex]);\n        energy *= pointSourceIrradiance(hitToSourceDistance, irradianceMinDistance);\n        energy *= accumEnergyDelay[rayIndex].xyz * ((float3) 1.0f - hitMaterialAbsorption);\n\n        float delay = (hitDistance + hitToSourceDistance) / SPEED_OF_SOUND;\n        delay += accumEnergyDelay[rayIndex].w - (distance(source, listeners[listenerIndex].origin) / SPEED_OF_SOUND);\n\n        energyDelay[shadowRayIndex] = (float4) (energy, delay);\n    }\n\n    barrier(CLK_GLOBAL_MEM_FENCE);\n\n    // Generate the bounced ray.\n    if (numListeners > 1 || sourceIndex == 0)\n    {\n        accumEnergyDelay[rayIndex].xyz *= ((float3) 1.0f - hitMaterialAbsorption);\n        accumEnergyDelay[rayIndex].w += hitDistance / SPEED_OF_SOUND;\n\n        float4 reflectedDirection = (float4) 0.0f;\n        if (randomFloat < hitMaterial.scattering)\n        {\n            uint sampleIndex = randomUint % numDiffuseSamples;\n            float3 transformedDiffuseSample = transformHemisphereSample(diffuseSamples[sampleIndex].xyz, hitNormal);\n            reflectedDirection = (float4) (transformedDiffuseSample, 0.0f);\n        }\n        else\n        {\n            reflectedDirection = (float4) (reflect(rayDirection, hitNormal), 0.0f);\n        }\n\n        reflectedRays[rayIndex].o = (float4) (hitPoint + RAY_SURFACE_OFFSET * reflectedDirection.xyz, FLT_MAX);\n        reflectedRays[rayIndex].d = reflectedDirection;\n        reflectedRays[rayIndex].extra = (int2) (0xffffffff, 1);\n    }\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Image Gather Kernel\n// --------------------------------------------------------------------------------------------------------------------\n\nkernel void gatherImage(uint numSources,\n                        global const int* occluded,\n                        global const float4* totalEnergy,\n                        global float4* image)\n{\n    size_t rayIndex = get_global_id(0);\n    size_t numRays = get_global_size(0);\n\n    for (uint i = 0; i < numSources; ++i)\n    {\n        if (occluded[i * numRays + rayIndex] < 0)\n        {\n            image[rayIndex] += totalEnergy[i * numRays + rayIndex];\n        }\n    }\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Energy Field Gather Kernel\n// --------------------------------------------------------------------------------------------------------------------\n\nkernel void gatherEnergyField(float scale,\n                              global const float4* totalEnergy,\n                              uint offset,\n                              global const int* occluded,\n                              global const float* shCoefficients,\n                              global int* energy,\n                              float binDuration)\n{\n\t// The number of global work-items for this kernel is #rays * #bands * #channels.\n\t// The number of local work-items for this kernel is #bins * 1 * 1. Here, #bins is a compile-time constant.\n\t// This kernel runs in three stages:\n\t//\t1.\tEach work-group operates on a subset of rays, and accumulates their energy into one of multiple\n\t//\t\tlocal-memory histograms.\n\t//\t2.\tEach work-group adds all of its local-memory histograms together.\n\t//\t3.\tThe work-groups cooperate and combine their local-memory histograms into a global-memory histogram.\n\n    uint rayIndex = get_global_id(0);\n    uint band = get_global_id(1);\n    uint channel = get_global_id(2);\n\n    size_t numRays = get_global_size(0);\n\n    bool isOccluded = (occluded[offset + rayIndex] >= 0);\n\n\t// FIXME: shouldn't this be just get_local_id(0)?\n    const int localIndex = get_local_id(1) * get_local_size(0) + get_local_id(0);\n\n\t// Each work-group stores NUM_LOCAL_HISTOGRAMS histograms in local memory. These are interleaved, i.e.,\n\t// bin i of histogram j is at index (NUM_LOCAL_HISTOGRAMS * i + j) in the buffer. We use multiple local-memory\n\t// histograms to reduce the chance that an atomic_add leads to contention (see below for details).\n    local int localEnergy[NUM_BINS * NUM_LOCAL_HISTOGRAMS];\n\n\t// These base pointers are used in stage 2 of the kernel. See below for details.\n    local int* workItemEnergy = localEnergy + mul24(localIndex, NUM_LOCAL_HISTOGRAMS);\n\n\t// Initialize all local-memory histograms to zero.\n    for (int i = 0; i < NUM_LOCAL_HISTOGRAMS; i++)\n    {\n        workItemEnergy[i] = 0.0f;\n    }\n\n    barrier(CLK_LOCAL_MEM_FENCE);\n\n\t// Stage 1\n\t// Each work-item processes one ray. If it is not occluded (i.e., it carries non-zero energy), the energy is added\n\t// to one of the local-memory histograms for the work-group. These adds need to be atomic, since multiple rays\n\t// being processed in the same work-group may write to the same bin of the same histogram. The contention\n\t// due to atomic_adds can be reduced by increasing NUM_LOCAL_HISTOGRAMS, at the cost of increased local memory\n\t// usage.\n    if (!isOccluded)\n    {\n\t\t// Adjacent work-items in a work-group do not use the same local-memory histogram. A work-item with local\n\t\t// index i writes to local-memory histogram (i % NUM_LOCAL_HISTOGRAMS).\n\t\t// When calculating the bin index, bin index i is mapped to index  NUM_LOCAL_HISTOGRAMS * i in the\n\t\t// local-memory buffer. This is because the histograms are interleaved.\n        local int* shiftedLocalEnergy = localEnergy + localIndex % NUM_LOCAL_HISTOGRAMS;\n\n        global float* rayEnergy = (global float*) (&totalEnergy[offset + rayIndex]);\n\n        float time = totalEnergy[offset + rayIndex].w;\n        uint bin = convert_uint_sat(floor(time / binDuration)) * NUM_LOCAL_HISTOGRAMS;\n\n        if (bin < NUM_BINS)\n        {\n            float energyValue = scale * rayEnergy[band] * shCoefficients[channel * numRays + rayIndex];\n            int quantizedEnergyValue = convert_int_sat(floor(energyValue));\n            atomic_add(shiftedLocalEnergy + bin, quantizedEnergyValue);\n        }\n    }\n\n    barrier(CLK_LOCAL_MEM_FENCE);\n\n\t// Stage 2\n\t// Each work-item processes one bin. The corresponding bins for all local-memory histograms are added, and the\n\t// result is stored in a private variable. No atomic operations or barriers are required here, since each work-item\n\t// operates on independent data.\n    int accumulatedEnergy = 0;\n    for (int i = 0; i < NUM_LOCAL_HISTOGRAMS; i++)\n    {\n        accumulatedEnergy += workItemEnergy[i];\n    }\n\n\t// Stage 3\n\t// Each work-item processes one bin. The summed values from the local-memory histograms are added to the corresponding\n\t// bin in a global-memory histogram. Here, atomic_adds must be used, because multiple work-groups may be trying to\n\t// write to the same global-memory bin at the same time.\n    atomic_add(energy + channel * NUM_BANDS * NUM_BINS + band * NUM_BINS + localIndex, accumulatedEnergy);\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Reconstruction Kernels\n// --------------------------------------------------------------------------------------------------------------------\n\n#define ENERGY_THRESHOLD            1e-7f\n#define MIN_VARIANCE                1e-5f\n#define NUM_WORK_ITEM_SAMPLES       32\n#define WORK_GROUP_SIZE\t\t\t\t64\n\nkernel void applyIIRFilter(global IIR* filters,\n                           global float* impulseResponse,\n\t\t\t\t\t\t   uint numBins,\n\t\t\t\t\t\t   uint samplesPerBin,\n\t\t\t\t\t\t   uint numSamples)\n{\n    size_t band = get_global_id(0);\n    size_t channel = get_global_id(1);\n    size_t numBands = get_global_size(0);\n    size_t numChannels = get_global_size(1);\n    size_t batch = get_global_id(2);\n\n\tlocal float localSamples[(NUM_WORK_ITEM_SAMPLES * WORK_GROUP_SIZE) + NUM_WORK_ITEM_SAMPLES];\n\n\tconst int localIndex = get_local_id(1) * get_local_size(0) + get_local_id(0);\n\tlocal float* workItemSamples = &localSamples[localIndex * NUM_WORK_ITEM_SAMPLES];\n\n    global float* signal = &impulseResponse[(batch * numChannels * numBands * numSamples) + (channel * numBands * numSamples) + (band * numSamples)];\n\n\tfloat xm1 = 0.0f;\n\tfloat xm2 = 0.0f;\n\tfloat ym1 = 0.0f;\n\tfloat ym2 = 0.0f;\n\n    global IIR* filter = &filters[band];\n\n    float a1 = filter->a1;\n    float a2 = filter->a2;\n    float b0 = filter->b0;\n    float b1 = filter->b1;\n    float b2 = filter->b2;\n\n\tfor (uint i = 0; i < (numBins * samplesPerBin); i += NUM_WORK_ITEM_SAMPLES)\n    {\n\t\tfor (uint j = 0; j < NUM_WORK_ITEM_SAMPLES; ++j)\n\t\t{\n\t\t\tworkItemSamples[j] = signal[i + j];\n\t\t}\n\n\t\tfor (uint j = 0; j < NUM_WORK_ITEM_SAMPLES; ++j)\n\t\t{\n\t\t\tfloat x = workItemSamples[j];\n\t\t\tfloat y = (b0 * x) + (b1 * xm1) + (b2 * xm2) - (a1 * ym1) - (a2 * ym2);\n\n\t\t\txm2 = xm1;\n\t\t\txm1 = x;\n\t\t\tym2 = ym1;\n\t\t\tym1 = y;\n\n\t\t\tworkItemSamples[j] = y;\n\t\t}\n\n\t\tfor (uint j = 0; j < NUM_WORK_ITEM_SAMPLES; ++j)\n\t\t{\n\t\t\tsignal[i + j] = workItemSamples[j];\n\t\t}\n    }\n}\n\n// todo: linear reconstruction?\nkernel void reconstructImpulseResponse(global int* energy,\n\t\t\t\t\t\t\t\t\t   uint samplingRate,\n                                       uint samplesPerBin,\n\t\t\t\t\t\t\t\t\t   uint numSamples,\n\t\t\t\t\t\t\t\t\t   global float* airAbsorption,\n\t\t\t\t\t\t\t\t\t   global IIR* filters,\n                                       global float* whiteNoise,\n                                       global float* impulseResponse,\n                                       uint offset,\n\t\t\t\t\t\t\t\t\t   float scale)\n{\n    size_t bin = get_global_id(0);\n    size_t band = get_global_id(1);\n    size_t channel = get_global_id(2);\n\tsize_t numBins = get_global_size(0);\n    size_t numBands = get_global_size(1);\n    size_t numChannels = get_global_size(2);\n\n    global float* impulseResponseBin = &impulseResponse[offset + (channel * numBands * numSamples) + (band * numSamples) + (bin * samplesPerBin)];\n    global float* whiteNoiseBin = &whiteNoise[(channel * numBands * numSamples) + (band * numSamples) + (bin * samplesPerBin)];\n\n    float e0 = (float)energy[0*numBands*NUM_BINS + band*NUM_BINS + bin] / scale;\n    float e = (float)energy[channel*numBands*NUM_BINS + band*NUM_BINS + bin] / scale;\n\n    if (fabs(e) < ENERGY_THRESHOLD || fabs(e0) < ENERGY_THRESHOLD)\n    {\n        for (int i = 0; i < samplesPerBin; ++i)\n        {\n            impulseResponseBin[i] = 0.0f;\n        }\n    }\n    else\n    {\n        float tMean = ((bin + 0.5f) * samplesPerBin) / samplingRate;\n        float tVariance = MIN_VARIANCE;\n\n        int sample = bin * samplesPerBin;\n        float binEnergy = 0.0f;\n\n        float t = sample / (float) samplingRate;\n        float dt = 1.0f / (float) samplingRate;\n\n        float g = exp(-((t - tMean) * (t - tMean)) / (2.0f * tVariance));\n        float dg = exp(-(dt * ((2.0f * (t - tMean)) + dt)) / (2.0f * tVariance));\n        float ddg = exp(-(dt * dt) / tVariance);\n\n        for (int i = 0; i < samplesPerBin; ++i)\n        {\n            impulseResponseBin[i] = g * whiteNoiseBin[i];\n            binEnergy += impulseResponseBin[i] * impulseResponseBin[i];\n            g *= dg;\n            dg *= ddg;\n        }\n\n        float normalization = e / sqrt(e0 * sqrt(4.0f * PI));\n\n        normalization *= exp(-0.5f * airAbsorption[band] * SPEED_OF_SOUND * ((bin + 0.5f) * samplesPerBin * (1.0f / samplingRate)));\n\n        for (int i = 0; i < samplesPerBin; ++i)\n        {\n            impulseResponseBin[i] *= normalization;\n        }\n    }\n}\n\nkernel void combineBandpassedImpulseResponse(uint numSamples,\n                                             global float* bandImpulseResponses,\n\t\t\t\t\t\t\t\t\t\t\t global float* impulseResponse)\n{\n    size_t sample = get_global_id(0);\n    size_t channel = get_global_id(1);\n    size_t batch = get_global_id(2);\n\tsize_t numChannels = get_global_size(1);\n\n\tfloat value = 0.0f;\n\n    for (int i = 0; i < NUM_BANDS; ++i)\n    {\n        value += bandImpulseResponses[(batch * numChannels * NUM_BANDS * numSamples) + (channel * NUM_BANDS * numSamples) + (i * numSamples) + sample];\n    }\n\n\timpulseResponse[(batch * numChannels * numSamples) + (channel * numSamples) + sample] = value;\n}\n
 /3W<HF
 /49J
 /6;eg
@@ -2726,6 +2744,7 @@ $|9tJ
 0"q8
 0#;M9
 0'7W
+0(lh
 0+<5o
 0-based array is turned ON
 0/8;&jt
@@ -2823,12 +2842,12 @@ $|9tJ
 0=sd
 0=ue
 0=wC
-0>&Vn
 0>.I5
 0>H8B=!
 0>L8
 0>RE
 0>VM\>D
+0>f{n
 0>iv
 0>x;D
 0?K;1F
@@ -3049,6 +3068,7 @@ $|9tJ
 1=z9
 1>Ha
 1>P8
+1>P^n
 1>c\v8>gp
 1>lK
 1>vER=
@@ -3172,6 +3192,7 @@ $|9tJ
 1{S;c
 1{q;kq
 1|U;eG
+2 Pa
 2!:Xs
 2"A:j
 2"y;a
@@ -3355,7 +3376,8 @@ $|9tJ
 2\nx:s
 2\r;pQ
 2\v<ae
-2\vpx
+2\vp(lh
+2\vp8
 2^i<0
 2`X9
 2a;mV
@@ -3383,7 +3405,6 @@ $|9tJ
 2n;1
 2o2;
 2oj;/
-2p5a
 2p;V+n
 2p</MT<
 2pU;
@@ -3982,6 +4003,7 @@ $|9tJ
 5>Hq
 5>Wy
 5>cQW>
+5?_hypot
 5A<w
 5Ai<
 5B9!
@@ -4120,9 +4142,10 @@ $|9tJ
 6+nK
 6,;vV
 6/do;
-601n
-60=n
+602n
+607n
 60N;
+60cn
 61f;\tMK
 62u=
 64);Y
@@ -4214,7 +4237,6 @@ $|9tJ
 6>bH
 6>pl
 6?<Vj
-6@0n
 6@1<8
 6@9h^
 6@;dV
@@ -4222,7 +4244,6 @@ $|9tJ
 6AB+
 6AP:
 6AV9
-6A\n
 6B;Q
 6B<r
 6C4<
@@ -4262,9 +4283,10 @@ $|9tJ
 6N;\nx
 6No;
 6O;o
-6P/n
+6P)n
 6P9<
 6P;&t
+6Pen
 6Q:@Y
 6S7=
 6S~D
@@ -4330,9 +4352,18 @@ $|9tJ
 6o:B
 6o;K
 6oh;\f
+6p"n
+6p#n
+6p$n
+6p%n
+6p&n
+6p'n
+6p(n
 6p7MOf
+6pAn
 6pR;0
-6pkn
+6pVn
+6pbn
 6q;fUR
 6q=*s
 6r9 5
@@ -4821,8 +4852,10 @@ $|9tJ
 8ED2
 8EoW9
 8F k
+8F$zn
 8F=a
 8F]R
+8F`Dn
 8FnO:
 8G0;
 8G;xT
@@ -4946,6 +4979,7 @@ $|9tJ
 8\f8<D
 8\f9u
 8\fu0
+8\nPG
 8\nWT
 8\tnL
 8\tpw9q
@@ -9024,6 +9058,7 @@ $|9tJ
 <nhk=
 <nkB;z
 <nkZ
+<nqE
 <nwg
 <o7Z
 <oB2
@@ -9260,7 +9295,6 @@ $|9tJ
 =F(9=lt
 =FGO
 =FHs>
-=FP7n
 =FbK=
 =FiR=
 =Fl7
@@ -9491,7 +9525,9 @@ $|9tJ
 > using 
 >%H5<mN
 >-:MAh9k
+>07n
 >0J4
+>0Wn
 >0m;YG
 >0r9
 >1y8
@@ -9538,9 +9574,7 @@ $|9tJ
 >CfC=&p
 >EDw>P
 >EPj
->F 7n
 >F8N
->FP8n
 >G0Y>
 >G4B?
 >HL;h
@@ -9636,7 +9670,7 @@ $|9tJ
 >oND
 >olD
 >p1X>{C
->pln
+>p3n
 >puN
 >qry=
 >qxs?qxs
@@ -9735,6 +9769,7 @@ $|9tJ
 ?P]DSH
 ?Precision
 ?Q6:jkf
+?REF%08lX
 ?SGEBD2
 ?SGEBRD
 ?SGELQ2
@@ -9746,6 +9781,7 @@ $|9tJ
 ?SORGLQ
 ?SORGQR
 ?SSTEQR
+?Units
 ?Va3
 ?W1a>C
 ?Wnl
@@ -9806,17 +9842,18 @@ $|9tJ
 ?zhW
 ?|hO8
 @06;r
+@2PG
 @2h=9
-@2pz
+@4PG
 @4\r<0Li
 @5:yB
+@60An
 @8iy(
 @9'yr
 @9F\tG
 @9TL
 @9_ns:i3
 @:AE1
-@:p5a
 @:}47;0^68r
 @;2Ky;Un
 @<0Z0
@@ -9871,7 +9908,6 @@ A0?^C
 A18E
 A19/N
 A1:HYS;
-A1>p9n
 A2a<\w
 A32;
 A4;l
@@ -9957,7 +9993,7 @@ A=x9
 A>93
 A>J_S
 A?:xP
-A?F06n
+A?Fp[n
 A?cY
 A?qZ
 A@D9V
@@ -10978,6 +11014,7 @@ DyH<B
 DyR=
 Dz5;
 Dz>a
+Dz@P
 DzI;\f
 DzJ;
 D{6g
@@ -12977,6 +13014,7 @@ L{;JlA
 L}7;R
 L}:NS
 L~Z<9
+M 0$n
 M Z7
 M$9f
 M$P8
@@ -12987,6 +13025,7 @@ M'9m
 M)<2H
 M)f=8
 M*9r
+M+0$n
 M+2;5V
 M,b<c
 M.u;Z
@@ -13386,7 +13425,6 @@ NZ<3
 N\;n4
 N\f<J8
 N\ty<J
-N\vPv
 N\vk;d5
 N^9Y
 N`;qE
@@ -13598,6 +13636,7 @@ OE:;Cm
 OF(<O
 OF:b
 OF>8
+OF@=n
 OFL<u
 OFM;
 OG:MW
@@ -13725,7 +13764,6 @@ P*;0pz;
 P+<TN
 P,9E5#:
 P.T:X
-P//\n// Copyright 2017-2023 Valve Corporation.\n//\n// Licensed under the Apache License, Version 2.0 (the "License");\n// you may not use this file except in compliance with the License.\n// You may obtain a copy of the License at\n//\n//     http://www.apache.org/licenses/LICENSE-2.0\n//\n// Unless required by applicable law or agreed to in writing, software\n// distributed under the License is distributed on an "AS IS" BASIS,\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n// See the License for the specific language governing permissions and\n// limitations under the License.\n//\n\n#pragma OPENCL EXTENSION cl_khr_int64_extended_atomics : enable\n#pragma OPENCL EXTENSION cl_khr_byte_addressable_store : enable\n\n// --------------------------------------------------------------------------------------------------------------------\n// Constants\n// --------------------------------------------------------------------------------------------------------------------\n\n#define PI                          3.14159f              // Mathematical constant Pi\n#define SOURCE_RADIUS               0.1f                  // Radius of the sound source sphere (in meters)\n#define LISTENER_RADIUS             0.1f                  // Radius of the listener sphere (in meters)\n#define SPEED_OF_SOUND              340.0f                // Speed of sound in air (in meters per second)\n#define RAY_SURFACE_OFFSET          1e-2f                 // Small offset to prevent ray self-intersection (meters)\n#define SPECULAR_EXPONENT           1e+2f                 // Exponent for specular reflection in Phong shading model (unitless, higher value = more specular)\n#define NUM_BANDS                   3                     // Number of frequency bands (e.g., Low, Mid, High)\n#define NUM_BINS                    256                   // Number of time bins used for energy histograms\n#define BIN_DURATION                0.01f                 // Duration of each time bin (in seconds)\n#define NUM_LOCAL_HISTOGRAMS        2                     // Number of local histograms per workgroup (for atomic contention reduction, tunable)\n\n// --------------------------------------------------------------------------------------------------------------------\n// CoordinateSpace\n// --------------------------------------------------------------------------------------------------------------------\n\ntypedef struct __attribute__((packed)) CoordinateSpace_t\n{\n    float3 right;\n    float3 up;\n    float3 ahead;\n    float3 origin;\n} CoordinateSpace;\n\nCoordinateSpace createCoordinateSpace(float3 normal)\n{\n    CoordinateSpace space;\n    space.ahead = normal;\n\n    if (fabs(normal.x) > fabs(normal.z))\n    {\n        float3 right = (float3) (-normal.y, normal.x, 0.0f);\n        space.right = normalize(right);\n    }\n    else\n    {\n        float3 right = (float3) (0.0f, -normal.z, normal.y);\n        space.right = normalize(right);\n    }\n\n    space.up = cross(space.right, space.ahead);\n\n    return space;\n}\n\nfloat3 transformLocalToWorld(CoordinateSpace space,\n                             float3 direction)\n{\n    return direction.x * space.right + direction.y * space.up - direction.z * space.ahead;\n}\n\nfloat3 transformWorldToLocal(CoordinateSpace space,\n                             float3 direction)\n{\n    float3 transformedDirection;\n    transformedDirection.x = dot(direction, space.right);\n    transformedDirection.y = dot(direction, space.up);\n    transformedDirection.z = -dot(direction, space.ahead);\n    return transformedDirection;\n}\n\nfloat3 transformHemisphereSample(float3 direction,\n                                 float3 normal)\n{\n    CoordinateSpace tangentSpace = createCoordinateSpace(normal);\n    return normalize(transformLocalToWorld(tangentSpace, direction));\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Random Sampling\n// --------------------------------------------------------------------------------------------------------------------\n\n// The following code is from the Radeon Rays / Baikal GitHub repository. It can be found at:\n//      https://github.com/GPUOpen-LibrariesAndSDKs/RadeonProRender-Baikal/blob/master/Baikal/Kernels/CL/sampling.cl\n\ntypedef struct RNG_t\n{\n    uint    value;\n} RNG;\n\nuint wangHash(uint seed)\n{\n    seed = (seed ^ 61) ^ (seed >> 16);\n    seed *= 9;\n    seed = seed ^ (seed >> 4);\n    seed *= 0x27d4eb2d;\n    seed = seed ^ (seed >> 15);\n    return seed;\n}\n\nuint randUint(local RNG* rng)\n{\n    rng->value = wangHash(1664525U * rng->value + 1013904223U);\n    return rng->value;\n}\n\nfloat randFloat(local RNG* rng)\n{\n    return ((float)randUint(rng)) / 0xffffffffU;\n}\n\nvoid initRNG(uint seed, local RNG* rng)\n{\n    rng->value = wangHash(seed);\n}\n\nfloat2 uniformRandom2d(local RNG* rng)\n{\n    return (float2) (randFloat(rng), randFloat(rng));\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Directivity\n// --------------------------------------------------------------------------------------------------------------------\n\n// NOTE: Custom directivity callbacks are not supported at this time.\ntypedef struct __attribute__((packed)) Directivity_t\n{\n    float dipoleWeight;\n    float dipolePower;\n} Directivity;\n\nfloat evaluateDirectivity(float3 point,\n                          CoordinateSpace coordinates,\n                          Directivity directivity)\n{\n    float3 worldSpaceDirection = normalize(point - coordinates.origin);\n    float3 localSpaceDirection = transformWorldToLocal(coordinates, worldSpaceDirection);\n\n    float cosine = -localSpaceDirection.z;\n    return pow(fabs((1.0f - directivity.dipoleWeight) + directivity.dipoleWeight * cosine), directivity.dipolePower);\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Material\n// --------------------------------------------------------------------------------------------------------------------\n\ntypedef struct __attribute__((packed)) Material_t\n{\n    float  absorptionLow;\n    float  absorptionMid;\n    float  absorptionHigh;\n    float  scattering;\n    float  transmissionLow;\n    float  transmissionMid;\n    float  transmissionHigh;\n} Material;\n\n// --------------------------------------------------------------------------------------------------------------------\n// Radeon Rays Helpers\n// --------------------------------------------------------------------------------------------------------------------\n\n// This must exactly match the ray data structure (struct ray) used by Radeon Rays.\ntypedef struct Ray_t\n{\n    float4  o;\n    float4  d;\n    int2    extra;\n    int2    padding;\n} Ray;\n\n// This must exactly match the hit data structure (struct Intersection) used by Radeon Rays.\ntypedef struct Hit_t\n{\n    int       shapeid;\n    int       primid;\n    int       padding0;\n    int       padding1;\n    float4    uvwt;\n} Hit;\n\n// --------------------------------------------------------------------------------------------------------------------\n// IIR Filtering\n// --------------------------------------------------------------------------------------------------------------------\n\ntypedef struct IIR_t\n{\n    float a1, a2;\n    float b0, b1, b2;\n} IIR;\n\n// --------------------------------------------------------------------------------------------------------------------\n// Ray Generation Kernels\n// --------------------------------------------------------------------------------------------------------------------\n\nkernel void generateCameraRays(global CoordinateSpace* camera,\n                               global Ray* rays)\n{\n    uint width = get_global_size(0);\n    uint height = get_global_size(1);\n    uint u = get_global_id(0);\n    uint v = get_global_id(1);\n    uint index = v * width + u;\n\n    float du = ((u / (float) width) - 0.5f) * 2.0f;\n    float dv = ((v / (float) height) - 0.5f) * 2.0f;\n\n    rays[index].o = (float4) (camera->origin, FLT_MAX);\n    rays[index].d = (float4) (normalize(du * camera->right + dv * camera->up - camera->ahead), 0.0f);\n    rays[index].extra = (int2) (0xffffffff, 1);\n}\n\nkernel void generateListenerRays(global CoordinateSpace* listeners,\n                                 global float4* sphereSamples,\n                                 global Ray* rays)\n{\n    size_t rayIndex = get_global_id(0);\n    size_t listenerIndex = get_global_id(1);\n    size_t index = listenerIndex * get_global_size(0) + rayIndex;\n\n    rays[index].o = (float4) (listeners[listenerIndex].origin, FLT_MAX);\n    rays[index].d = (float4) (sphereSamples[rayIndex].xyz, 0.0f);\n    rays[index].extra = (int2) (0xffffffff, 1);\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Sphere Occlusion Kernel\n// --------------------------------------------------------------------------------------------------------------------\n\nfloat raySphereIntersect(global const Ray* ray,\n                         float3 center,\n                         float radius)\n{\n    float3 origin = ray->o.xyz;\n    float3 direction = ray->d.xyz;\n\n    float3 v = origin - center;\n    float r = radius;\n\n    float B = 2.0f * dot(v, direction);\n    float C = dot(v, v) - (r * r);\n    float D = (B * B) - (4.0f * C);\n\n    if (D < 0.0f)\n        return FLT_MAX;\n\n    float t = -0.5f * (B + sqrt(D));\n    return t;\n}\n\nkernel void sphereOcclusion(uint numSources,\n                            global const CoordinateSpace* sources,\n                            uint numListeners,\n                            global const CoordinateSpace* listeners,\n                            global Ray* rays,\n                            global Hit* hits)\n{\n    uint numRays = get_global_size(0);\n    uint rayIndex = get_global_id(0);\n\n    for (int i = 0; i < numListeners; ++i)\n    {\n        uint index = i * numRays + rayIndex;\n\n        float listenerSphereHitDistance = raySphereIntersect(&rays[index], listeners[i].origin, LISTENER_RADIUS);\n        if (0.0f <= listenerSphereHitDistance && listenerSphereHitDistance < hits[index].uvwt.s3)\n        {\n            rays[index].extra.y = 0;\n            hits[index].primid = -1;\n            return;\n        }\n\n        for (int j = 0; j < numSources; ++j)\n        {\n            float sourceSphereHitDistance = raySphereIntersect(&rays[index], sources[j].origin, SOURCE_RADIUS);\n            if (0.0f <= sourceSphereHitDistance && sourceSphereHitDistance < hits[index].uvwt.s3)\n            {\n                rays[index].extra.y = 0;\n                hits[index].primid = -1;\n                return;\n            }\n        }\n    }\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Shading + Shadow/Bounced Ray Generation Kernels\n// --------------------------------------------------------------------------------------------------------------------\n\nfloat3 calculateHitPoint(Ray ray,\n                         Hit hit)\n{\n    return ray.o.xyz + hit.uvwt.s3 * ray.d.xyz;\n}\n\nfloat3 calculateHitNormal(Ray ray,\n                          Hit hit,\n                          global float4* normals)\n{\n    float3 hitNormal = normals[hit.primid].xyz;\n    if (dot(hitNormal, ray.d.xyz) > 0.0f)\n    {\n        hitNormal = -hitNormal;\n    }\n\n    return hitNormal;\n}\n\nfloat pointSourceIrradiance(float distance,\n                            float minDistance)\n{\n    float attenuation = 1.0f / max(distance, minDistance);\n    float irradiance = (1.0f / (4.0f * PI)) * (attenuation * attenuation);\n    return irradiance;\n}\n\nfloat3 reflect(float3 incident,\n               float3 normal)\n{\n    return normalize(incident - (2.0f * dot(incident, normal) * normal));\n}\n\nkernel void shadeAndBounce(uint numSources,\n                           global const CoordinateSpace* sources,\n                           uint numListeners,\n                           global const CoordinateSpace* listeners,\n                           global const Directivity* directivities,\n                           uint numRays,\n                           uint numBounces,\n                           float irradianceMinDistance,\n                           global const Ray* rays,\n                           global const Hit* hits,\n                           global const float3* normals,\n                           global const int* materialIndices,\n                           global const Material* materials,\n                           uint numDiffuseSamples,\n                           global const float4* diffuseSamples,\n                           uint randomNumber,\n                           float scalar,\n                           global Ray* shadowRays,\n                           global Ray* reflectedRays,\n                           global float4* energyDelay,\n                           global float4* accumEnergyDelay)\n{\n    size_t numChunks = max(numListeners, numSources);\n    size_t numPrimaryRays = get_global_size(0) / numChunks;\n    size_t numShadowRays = get_global_size(0);\n\n    uint rayIndex = (numListeners > 1) ? get_global_id(0) : (get_global_id(0) % numPrimaryRays);\n    uint chunkIndex = get_global_id(0) / numPrimaryRays;\n    uint listenerIndex = (numListeners > 1) ? chunkIndex : 0;\n    uint sourceIndex = (numSources > 1) ? chunkIndex : 0;\n    uint shadowRayIndex = get_global_id(0);\n\n    // If this ray is disabled, don't do anything.\n    if (rays[rayIndex].extra.y == 0 || hits[rayIndex].primid < 0)\n    {\n        shadowRays[shadowRayIndex].extra = 0;\n        reflectedRays[rayIndex].extra = 0;\n        energyDelay[shadowRayIndex] = (float4) 0.0f;\n        return;\n    }\n\n    // Random number generation for work group.\n    local RNG rng;\n    local float randomFloat;\n    local uint randomUint;\n    if (get_local_id(0) == 0)\n    {\n        initRNG(randomNumber + rayIndex, &rng);\n        randomFloat = randFloat(&rng);\n        randomUint = randUint(&rng);\n    }\n\n    barrier(CLK_LOCAL_MEM_FENCE);\n\n    // Calculate hit point.\n    float3 rayDirection = rays[rayIndex].d.xyz;\n    int triangleIndex = hits[rayIndex].primid;\n    float hitDistance = hits[rayIndex].uvwt.s3;\n    float3 hitPoint = rays[rayIndex].o.xyz + hitDistance * rayDirection;\n\n    // Calculate hit normal.\n    float3 hitNormal = normals[triangleIndex].xyz;\n    if (dot(hitNormal, rayDirection) > 0.0f)\n    {\n        hitNormal = -hitNormal;\n    }\n\n    // Calculate hit material.\n    Material hitMaterial = materials[materialIndices[triangleIndex]];\n    float3 hitMaterialAbsorption = (float3) (hitMaterial.absorptionLow, hitMaterial.absorptionMid, hitMaterial.absorptionHigh);\n\n    // Calculate shadow ray direction.\n    float3 source = sources[sourceIndex].origin;\n    float hitToSourceDistance = distance(hitPoint, source);\n    float4 hitToSource = (float4) (normalize(source - hitPoint), 0.0f);\n\n    // Skip the ray if:\n    //  a) the hit point is inside the listener, or\n    //  b) the hit point is too close to the source, or\n    //  c) the ray hit a backfacing triangle.\n    if (hitDistance <= LISTENER_RADIUS ||\n        hitToSourceDistance <= irradianceMinDistance ||\n        dot(hitToSource.xyz, hitNormal) < 0.0f)\n    {\n        shadowRays[shadowRayIndex].extra = 0;\n        energyDelay[shadowRayIndex] = (float4) 0.0f;\n    }\n    else\n    {\n        // Generate the shadow ray.\n        shadowRays[shadowRayIndex].o = (float4) (hitPoint + RAY_SURFACE_OFFSET * hitToSource.xyz, hitToSourceDistance);\n        shadowRays[shadowRayIndex].d = hitToSource;\n        shadowRays[shadowRayIndex].extra = (int2) (0xffffffff, 1);\n\n        // Calculate shading values.\n        float3 energy = (1.0f / PI) * hitMaterial.scattering * max(0.0f, dot(hitNormal, hitToSource.xyz));\n        energy += ((SPECULAR_EXPONENT + 2.0f) / (8.0f * PI)) * (1.0f - hitMaterial.scattering) * pow(fabs(dot(normalize(hitToSource.xyz - rayDirection), hitNormal)), SPECULAR_EXPONENT);\n        energy *= scalar;\n        energy *= evaluateDirectivity(hitPoint, sources[sourceIndex], directivities[sourceIndex]);\n        energy *= pointSourceIrradiance(hitToSourceDistance, irradianceMinDistance);\n        energy *= accumEnergyDelay[rayIndex].xyz * ((float3) 1.0f - hitMaterialAbsorption);\n\n        float delay = (hitDistance + hitToSourceDistance) / SPEED_OF_SOUND;\n        delay += accumEnergyDelay[rayIndex].w - (distance(source, listeners[listenerIndex].origin) / SPEED_OF_SOUND);\n\n        energyDelay[shadowRayIndex] = (float4) (energy, delay);\n    }\n\n    barrier(CLK_GLOBAL_MEM_FENCE);\n\n    // Generate the bounced ray.\n    if (numListeners > 1 || sourceIndex == 0)\n    {\n        accumEnergyDelay[rayIndex].xyz *= ((float3) 1.0f - hitMaterialAbsorption);\n        accumEnergyDelay[rayIndex].w += hitDistance / SPEED_OF_SOUND;\n\n        float4 reflectedDirection = (float4) 0.0f;\n        if (randomFloat < hitMaterial.scattering)\n        {\n            uint sampleIndex = randomUint % numDiffuseSamples;\n            float3 transformedDiffuseSample = transformHemisphereSample(diffuseSamples[sampleIndex].xyz, hitNormal);\n            reflectedDirection = (float4) (transformedDiffuseSample, 0.0f);\n        }\n        else\n        {\n            reflectedDirection = (float4) (reflect(rayDirection, hitNormal), 0.0f);\n        }\n\n        reflectedRays[rayIndex].o = (float4) (hitPoint + RAY_SURFACE_OFFSET * reflectedDirection.xyz, FLT_MAX);\n        reflectedRays[rayIndex].d = reflectedDirection;\n        reflectedRays[rayIndex].extra = (int2) (0xffffffff, 1);\n    }\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Image Gather Kernel\n// --------------------------------------------------------------------------------------------------------------------\n\nkernel void gatherImage(uint numSources,\n                        global const int* occluded,\n                        global const float4* totalEnergy,\n                        global float4* image)\n{\n    size_t rayIndex = get_global_id(0);\n    size_t numRays = get_global_size(0);\n\n    for (uint i = 0; i < numSources; ++i)\n    {\n        if (occluded[i * numRays + rayIndex] < 0)\n        {\n            image[rayIndex] += totalEnergy[i * numRays + rayIndex];\n        }\n    }\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Energy Field Gather Kernel\n// --------------------------------------------------------------------------------------------------------------------\n\nkernel void gatherEnergyField(float scale,\n                              global const float4* totalEnergy,\n                              uint offset,\n                              global const int* occluded,\n                              global const float* shCoefficients,\n                              global int* energy)\n{\n\t// The number of global work-items for this kernel is #rays * #bands * #channels.\n\t// The number of local work-items for this kernel is #bins * 1 * 1. Here, #bins is a compile-time constant.\n\t// This kernel runs in three stages:\n\t//\t1.\tEach work-group operates on a subset of rays, and accumulates their energy into one of multiple\n\t//\t\tlocal-memory histograms.\n\t//\t2.\tEach work-group adds all of its local-memory histograms together.\n\t//\t3.\tThe work-groups cooperate and combine their local-memory histograms into a global-memory histogram.\n\n    uint rayIndex = get_global_id(0);\n    uint band = get_global_id(1);\n    uint channel = get_global_id(2);\n\n    size_t numRays = get_global_size(0);\n\n    bool isOccluded = (occluded[offset + rayIndex] >= 0);\n\n\t// FIXME: shouldn't this be just get_local_id(0)?\n    const int localIndex = get_local_id(1) * get_local_size(0) + get_local_id(0);\n\n\t// Each work-group stores NUM_LOCAL_HISTOGRAMS histograms in local memory. These are interleaved, i.e.,\n\t// bin i of histogram j is at index (NUM_LOCAL_HISTOGRAMS * i + j) in the buffer. We use multiple local-memory\n\t// histograms to reduce the chance that an atomic_add leads to contention (see below for details).\n    local int localEnergy[NUM_BINS * NUM_LOCAL_HISTOGRAMS];\n\n\t// These base pointers are used in stage 2 of the kernel. See below for details.\n    local int* workItemEnergy = localEnergy + mul24(localIndex, NUM_LOCAL_HISTOGRAMS);\n\n\t// Initialize all local-memory histograms to zero.\n    for (int i = 0; i < NUM_LOCAL_HISTOGRAMS; i++)\n    {\n        workItemEnergy[i] = 0.0f;\n    }\n\n    barrier(CLK_LOCAL_MEM_FENCE);\n\n\t// Stage 1\n\t// Each work-item processes one ray. If it is not occluded (i.e., it carries non-zero energy), the energy is added\n\t// to one of the local-memory histograms for the work-group. These adds need to be atomic, since multiple rays\n\t// being processed in the same work-group may write to the same bin of the same histogram. The contention\n\t// due to atomic_adds can be reduced by increasing NUM_LOCAL_HISTOGRAMS, at the cost of increased local memory\n\t// usage.\n    if (!isOccluded)\n    {\n\t\t// Adjacent work-items in a work-group do not use the same local-memory histogram. A work-item with local\n\t\t// index i writes to local-memory histogram (i % NUM_LOCAL_HISTOGRAMS).\n\t\t// When calculating the bin index, bin index i is mapped to index  NUM_LOCAL_HISTOGRAMS * i in the\n\t\t// local-memory buffer. This is because the histograms are interleaved.\n        local int* shiftedLocalEnergy = localEnergy + localIndex % NUM_LOCAL_HISTOGRAMS;\n\n        global float* rayEnergy = (global float*) (&totalEnergy[offset + rayIndex]);\n\n        float time = totalEnergy[offset + rayIndex].w;\n        uint bin = convert_uint_sat(floor(time / BIN_DURATION)) * NUM_LOCAL_HISTOGRAMS;\n\n        if (bin < NUM_BINS)\n        {\n            float energyValue = scale * rayEnergy[band] * shCoefficients[channel * numRays + rayIndex];\n            int quantizedEnergyValue = convert_int_sat(floor(energyValue));\n            atomic_add(shiftedLocalEnergy + bin, quantizedEnergyValue);\n        }\n    }\n\n    barrier(CLK_LOCAL_MEM_FENCE);\n\n\t// Stage 2\n\t// Each work-item processes one bin. The corresponding bins for all local-memory histograms are added, and the\n\t// result is stored in a private variable. No atomic operations or barriers are required here, since each work-item\n\t// operates on independent data.\n    int accumulatedEnergy = 0;\n    for (int i = 0; i < NUM_LOCAL_HISTOGRAMS; i++)\n    {\n        accumulatedEnergy += workItemEnergy[i];\n    }\n\n\t// Stage 3\n\t// Each work-item processes one bin. The summed values from the local-memory histograms are added to the corresponding\n\t// bin in a global-memory histogram. Here, atomic_adds must be used, because multiple work-groups may be trying to\n\t// write to the same global-memory bin at the same time.\n    atomic_add(energy + channel * NUM_BANDS * NUM_BINS + band * NUM_BINS + localIndex, accumulatedEnergy);\n}\n\n// --------------------------------------------------------------------------------------------------------------------\n// Reconstruction Kernels\n// --------------------------------------------------------------------------------------------------------------------\n\n#define ENERGY_THRESHOLD            1e-7f\n#define MIN_VARIANCE                1e-5f\n#define NUM_WORK_ITEM_SAMPLES       32\n#define WORK_GROUP_SIZE\t\t\t\t64\n\nkernel void applyIIRFilter(global IIR* filters,\n                           global float* impulseResponse,\n\t\t\t\t\t\t   uint numBins,\n\t\t\t\t\t\t   uint samplesPerBin,\n\t\t\t\t\t\t   uint numSamples)\n{\n    size_t band = get_global_id(0);\n    size_t channel = get_global_id(1);\n    size_t numBands = get_global_size(0);\n    size_t numChannels = get_global_size(1);\n    size_t batch = get_global_id(2);\n\n\tlocal float localSamples[(NUM_WORK_ITEM_SAMPLES * WORK_GROUP_SIZE) + NUM_WORK_ITEM_SAMPLES];\n\n\tconst int localIndex = get_local_id(1) * get_local_size(0) + get_local_id(0);\n\tlocal float* workItemSamples = &localSamples[localIndex * NUM_WORK_ITEM_SAMPLES];\n\n    global float* signal = &impulseResponse[(batch * numChannels * numBands * numSamples) + (channel * numBands * numSamples) + (band * numSamples)];\n\n\tfloat xm1 = 0.0f;\n\tfloat xm2 = 0.0f;\n\tfloat ym1 = 0.0f;\n\tfloat ym2 = 0.0f;\n\n    global IIR* filter = &filters[band];\n\n    float a1 = filter->a1;\n    float a2 = filter->a2;\n    float b0 = filter->b0;\n    float b1 = filter->b1;\n    float b2 = filter->b2;\n\n\tfor (uint i = 0; i < (numBins * samplesPerBin); i += NUM_WORK_ITEM_SAMPLES)\n    {\n\t\tfor (uint j = 0; j < NUM_WORK_ITEM_SAMPLES; ++j)\n\t\t{\n\t\t\tworkItemSamples[j] = signal[i + j];\n\t\t}\n\n\t\tfor (uint j = 0; j < NUM_WORK_ITEM_SAMPLES; ++j)\n\t\t{\n\t\t\tfloat x = workItemSamples[j];\n\t\t\tfloat y = (b0 * x) + (b1 * xm1) + (b2 * xm2) - (a1 * ym1) - (a2 * ym2);\n\n\t\t\txm2 = xm1;\n\t\t\txm1 = x;\n\t\t\tym2 = ym1;\n\t\t\tym1 = y;\n\n\t\t\tworkItemSamples[j] = y;\n\t\t}\n\n\t\tfor (uint j = 0; j < NUM_WORK_ITEM_SAMPLES; ++j)\n\t\t{\n\t\t\tsignal[i + j] = workItemSamples[j];\n\t\t}\n    }\n}\n\n// todo: linear reconstruction?\nkernel void reconstructImpulseResponse(global int* energy,\n\t\t\t\t\t\t\t\t\t   uint samplingRate,\n                                       uint samplesPerBin,\n\t\t\t\t\t\t\t\t\t   uint numSamples,\n\t\t\t\t\t\t\t\t\t   global float* airAbsorption,\n\t\t\t\t\t\t\t\t\t   global IIR* filters,\n                                       global float* whiteNoise,\n                                       global float* impulseResponse,\n                                       uint offset,\n\t\t\t\t\t\t\t\t\t   float scale)\n{\n    size_t bin = get_global_id(0);\n    size_t band = get_global_id(1);\n    size_t channel = get_global_id(2);\n\tsize_t numBins = get_global_size(0);\n    size_t numBands = get_global_size(1);\n    size_t numChannels = get_global_size(2);\n\n    global float* impulseResponseBin = &impulseResponse[offset + (channel * numBands * numSamples) + (band * numSamples) + (bin * samplesPerBin)];\n    global float* whiteNoiseBin = &whiteNoise[(channel * numBands * numSamples) + (band * numSamples) + (bin * samplesPerBin)];\n\n    float e0 = (float)energy[0*numBands*NUM_BINS + band*NUM_BINS + bin] / scale;\n    float e = (float)energy[channel*numBands*NUM_BINS + band*NUM_BINS + bin] / scale;\n\n    if (fabs(e) < ENERGY_THRESHOLD || fabs(e0) < ENERGY_THRESHOLD)\n    {\n        for (int i = 0; i < samplesPerBin; ++i)\n        {\n            impulseResponseBin[i] = 0.0f;\n        }\n    }\n    else\n    {\n        float tMean = ((bin + 0.5f) * samplesPerBin) / samplingRate;\n        float tVariance = MIN_VARIANCE;\n\n        int sample = bin * samplesPerBin;\n        float binEnergy = 0.0f;\n\n        float t = sample / (float) samplingRate;\n        float dt = 1.0f / (float) samplingRate;\n\n        float g = exp(-((t - tMean) * (t - tMean)) / (2.0f * tVariance));\n        float dg = exp(-(dt * ((2.0f * (t - tMean)) + dt)) / (2.0f * tVariance));\n        float ddg = exp(-(dt * dt) / tVariance);\n\n        for (int i = 0; i < samplesPerBin; ++i)\n        {\n            impulseResponseBin[i] = g * whiteNoiseBin[i];\n            binEnergy += impulseResponseBin[i] * impulseResponseBin[i];\n            g *= dg;\n            dg *= ddg;\n        }\n\n        float normalization = e / sqrt(e0 * sqrt(4.0f * PI));\n\n        normalization *= exp(-0.5f * airAbsorption[band] * SPEED_OF_SOUND * ((bin + 0.5f) * samplesPerBin * (1.0f / samplingRate)));\n\n        for (int i = 0; i < samplesPerBin; ++i)\n        {\n            impulseResponseBin[i] *= normalization;\n        }\n    }\n}\n\nkernel void combineBandpassedImpulseResponse(uint numSamples,\n                                             global float* bandImpulseResponses,\n\t\t\t\t\t\t\t\t\t\t\t global float* impulseResponse)\n{\n    size_t sample = get_global_id(0);\n    size_t channel = get_global_id(1);\n    size_t batch = get_global_id(2);\n\tsize_t numChannels = get_global_size(1);\n\n\tfloat value = 0.0f;\n\n    for (int i = 0; i < NUM_BANDS; ++i)\n    {\n        value += bandImpulseResponses[(batch * numChannels * NUM_BANDS * numSamples) + (channel * NUM_BANDS * numSamples) + (i * numSamples) + sample];\n    }\n\n\timpulseResponse[(batch * numChannels * numSamples) + (channel * numSamples) + sample] = value;\n}\n
 P08~
 P0X=p
 P0o;
@@ -13743,6 +13781,7 @@ P5?V
 P5?e^
 P5q9
 P5t;
+P6 Dn
 P6<dx
 P6>D
 P78;
@@ -14447,7 +14486,6 @@ RP<h
 RRG<F0
 RRX8Cv
 RS:T/
-RSDS&,k
 RT;l
 RTC_GEOMETRY_TYPE_GRID is not supported
 RTC_GEOMETRY_TYPE_POINT is not supported
@@ -14466,11 +14504,13 @@ RZ9)
 RZ;5
 RZT;
 R[<bRl<v`p=4
+R\fp(lh
 R\n0\f0
 R\nK9r#M
 R\r4:BF:
 R\t:f3
-R\vpx
+R\vp(lh
+R\vp8
 R^P9
 Rb)9
 Rb;N
@@ -14645,6 +14685,7 @@ S=te
 S=zC
 S>E8
 S>eK9
+S>p>n
 SA2:
 SA:V
 SAH: 
@@ -14939,6 +14980,7 @@ T==gM
 T=Pms
 T=X0:
 T=zA
+T>0_n
 T>Lu(
 T>tZ
 T?:Pq
@@ -15341,7 +15383,6 @@ Unable to load SOFA data. [%d]
 Unable to load SOFA file: %s. [%d]
 Unable to open verbose output file.
 Unit
-Units
 Unknown CPU
 Unknown CPU (error)
 Unknown error
@@ -15531,6 +15572,7 @@ VOD;Q
 VOs;
 VP<A
 VPCLMULQDQ
+VP\fn
 VQ8vg
 VQ;f
 VQ[;Ba
@@ -16582,6 +16624,7 @@ Z~@f#aCW
 \f>JfJ>MM
 \fAj;i
 \fB58
+\fBPG
 \fF<Muq
 \fGU;1
 \fI;tJ
@@ -16604,8 +16647,8 @@ Z~@f#aCW
 \fgY;U
 \fj:mgA
 \flr9
-\fp\v0\nPx
-\fp\vPx
+\fp\v0\nP8
+\fp\vP8
 \fq<dm
 \fu:xe
 \fvCsk
@@ -16672,7 +16715,6 @@ Z~@f#aCW
 \ngf>ZL
 \nj;\rIe9
 \nlG=a
-\np5a
 \nq:bk
 \nr48
 \nr93@
@@ -16723,7 +16765,7 @@ Z~@f#aCW
 \ro:xPG:
 \ro=KW
 \rocT@
-\rp\f0\vPx
+\rp\f0\vP8
 \rpvs: %3.0f%%
 \rqa+j
 \rsM7
@@ -16991,9 +17033,10 @@ _xB;d
 `0_tL
 `1<Egd;"m
 `2>cx
+`2PG
 `5L9S
 `5u=K
-`6(Tn
+`6hyn
 `7;XZ
 `7<RLK
 `7xz
@@ -17023,10 +17066,13 @@ _xB;d
 `UV;ab
 `XG;r
 `Y9<r
+`bPG
 `d:Cva;z
 `f<Ol4
 `g5<u
+`hrPG
 `j:QW
+`jPG
 `k;ZM
 `kD;f
 `n;b92
@@ -17182,8 +17228,10 @@ aZ;y
 a[;R8
 a\9y
 a\P<3
+a\fBPG
 a\n<ps
 a\r9l}M:
+a\rBPG
 a^9m:
 a_=pT
 a`h;ziV
@@ -18377,7 +18425,6 @@ dC<wz
 dD&;r
 dD:Ckl
 dE;iyn;
-dF\vhL
 dG%9
 dG;t
 dH:U
@@ -18385,7 +18432,7 @@ dI:*b
 dI;So
 dI=s.
 dJ9v
-dJ\vL
+dJ\vR
 dK:d\f
 dK=D
 dKY;
@@ -18479,6 +18526,7 @@ dgx='
 dh4<
 di.<GZ
 diagonal matrix problem
+disable_specular_shadow_rays
 disabled\n
 disc
 distribute_part_sum_int4
@@ -18919,6 +18967,7 @@ fn@;Q
 fnp<
 format or the matrix is degenerate with zero row.
 found %d diffracting edges\n
+fp*n
 fp09*$u:\tS
 fp;M
 fq1<&JF
@@ -19144,6 +19193,7 @@ generateListenerRays
 generateProbes
 geomID does not return correct type
 geometry not committed
+getBinDuration
 getDataSize
 getDeviceDesc
 getEnergyField
@@ -19182,6 +19232,7 @@ grid
 grid_accel
 grid_accel_mb
 grids:
+ground_reflection_min_angle
 gsS:&
 gsm;
 gt9rm
@@ -19991,6 +20042,7 @@ ioX>L
 ipU|
 ipl::HRTFMap::loadAmbisonicsHRIRs
 ipl::HRTFMap::verifyDataHeader
+ipl::ImageSourceBaker::bake
 iplAirAbsorptionCalculate
 iplAmbisonicsBinauralEffectApply
 iplAmbisonicsBinauralEffectCreate
@@ -20086,6 +20138,7 @@ iplEnergyFieldAdd
 iplEnergyFieldCopy
 iplEnergyFieldCreate
 iplEnergyFieldGetBand
+iplEnergyFieldGetBinDuration
 iplEnergyFieldGetChannel
 iplEnergyFieldGetData
 iplEnergyFieldGetNumBins
@@ -20110,6 +20163,12 @@ iplHybridReverbEstimatorCreate
 iplHybridReverbEstimatorEstimate
 iplHybridReverbEstimatorRelease
 iplHybridReverbEstimatorRetain
+iplImageSourceBakerBake
+iplImageSourceBakerCancel
+iplImageSourceSimulatorCreate
+iplImageSourceSimulatorRelease
+iplImageSourceSimulatorRetain
+iplImageSourceSimulatorSimulate
 iplImpulseResponse2AddChannel
 iplImpulseResponse2AddSample
 iplImpulseResponse2Create
@@ -20357,6 +20416,7 @@ iplSourceRetain
 iplSourceSetInputs
 iplStaticMeshAdd
 iplStaticMeshCreate
+iplStaticMeshGetMaterial
 iplStaticMeshLoad
 iplStaticMeshRelease
 iplStaticMeshRemove
@@ -20378,6 +20438,10 @@ iplVoxelPathDataLoad
 iplVoxelPathDataRelease
 iplVoxelPathDataRetain
 iplVoxelPathDataSave
+iplVoxelPathFinderCreate
+iplVoxelPathFinderFindShortestPath
+iplVoxelPathFinderRelease
+iplVoxelPathFinderRetain
 ir":r
 ir4;D\?
 ir:I
@@ -21033,6 +21097,7 @@ lzcnt
 l~;n25<
 m 9e
 m#<FI
+m$0'n
 m$:wS
 m'=YYY
 m(8?TT
@@ -21486,7 +21551,6 @@ not stopped when it found the solution. The solution may be wrong.
 not supported node type in bvh_statistics
 np:C(
 npJ:4#
-npln
 nq<l
 nqX:
 nr<UV'
@@ -21778,6 +21842,7 @@ p!u;w;K
 p&U9
 p'<9T
 p(8E
+p(lh
 p):IT
 p+p;V
 p,:7U
@@ -21787,6 +21852,7 @@ p/C<Dn
 p0m;
 p1'9
 p2F:5
+p2PG
 p2\9U
 p2f<
 p32;
@@ -21798,9 +21864,9 @@ p4;U
 p4<RS
 p4f>7
 p5U;
+p60/n
 p6B=
 p6N$i
-p6P;n
 p7=Pi
 p7M}
 p7M}f
@@ -21873,9 +21939,7 @@ p=qN
 p>8MdF
 p>9p
 p>BQ\f
-p>RUn
 p>jN
-p>qUn
 p?:iw
 p?D9
 p@6:U
@@ -22474,7 +22538,7 @@ r\n0\tP
 r\t9,g0
 r\t;rL
 r\ta<1G:
-r\vpx
+r\vp8
 r\vw<?hG
 raB3G
 rae:m2R;B
@@ -22873,7 +22937,6 @@ sourcePosition.z
 soy<1
 sp8>d
 sp;3
-sphere
 sphereOcclusion
 spherical
 sq:K

@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/selectiveresponse_01/mainmenu.vsnd"
+		vsnd_duration = 361.600006
 	}
 	Music.MVPPreview.selectiveresponse_01 = 
 	{
@@ -18,6 +19,7 @@
 		[
 			"sounds/music/selectiveresponse_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 10.0
 	}
 	Music.Selection.selectiveresponse_01 = 
 	{
@@ -30,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/selectiveresponse_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 25.6
 	}
 	Music.MatchFound.selectiveresponse_01 = 
 	{
@@ -69,6 +72,7 @@
 			8.0, 9.6, 11.2, 12.8,
 			14.4, 16.0, 17.6,
 		]
+		vsnd_duration = 19.200001
 	}
 	Music.LoadingScreen.selectiveresponse_01 = 
 	{
@@ -96,6 +100,7 @@
 			"sounds/music/selectiveresponse_01/startaction_01.vsnd",
 			"sounds/music/selectiveresponse_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 12.8
 	}
 	Music.StartRound.selectiveresponse_01 = 
 	{
@@ -136,6 +141,7 @@
 			8.0, 9.6, 11.2, 12.8,
 			14.4, 16.0, 17.6,
 		]
+		vsnd_duration = 19.200001
 	}
 	Music.StartAction.selectiveresponse_01 = 
 	{
@@ -165,6 +171,7 @@
 			"sounds/music/selectiveresponse_01/startaction_01.vsnd",
 			"sounds/music/selectiveresponse_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 12.8
 	}
 	Music.StartRound_GG.selectiveresponse_01 = 
 	{
@@ -206,6 +213,7 @@
 			8.0, 9.6, 11.2, 12.8,
 			14.4, 16.0, 17.6,
 		]
+		vsnd_duration = 19.200001
 	}
 	Music.BombPlanted.selectiveresponse_01 = 
 	{
@@ -228,6 +236,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 38.400002
 	}
 	Music.BombTenSecCount.selectiveresponse_01 = 
 	{
@@ -246,6 +255,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.4
 	}
 	Music.GotHostage.selectiveresponse_01 = 
 	{
@@ -270,6 +280,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 38.400002
 	}
 	Music.HostageNearRescue.selectiveresponse_01 = 
 	{
@@ -292,6 +303,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.4
 	}
 	Music.TenSecCount.selectiveresponse_01 = 
 	{
@@ -313,6 +325,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.4
 	}
 	Music.WonRound.selectiveresponse_01 = 
 	{
@@ -337,6 +350,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 8.0
 	}
 	Music.LostRound.selectiveresponse_01 = 
 	{
@@ -361,6 +375,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 6.4
 	}
 	Music.DeathCam.selectiveresponse_01 = 
 	{
@@ -373,6 +388,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 6.4
 	}
 	Music.MVPAnthem.selectiveresponse_01 = 
 	{
@@ -399,6 +427,7 @@
 		[
 			"sounds/music/selectiveresponse_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 10.0
 	}
 	Music.MatchStart.selectiveresponse_01 = 
 	{
@@ -414,6 +443,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/selectiveresponse_01/startofmatch.vsnd"
+		vsnd_duration = 12.8
 	}
 	Music.MatchEnd.selectiveresponse_01 = 
 	{
@@ -435,6 +465,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 54.400002
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

@@ -251,12 +251,12 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (2736 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	cbuffer RoughnessLightingGlobalsCB_t : register(b4, space1)
+	cbuffer RoughnessLightingGlobalsCB_t : register(b3, space1)
 	{
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b5, space1)
+	cbuffer SunLightShaderParamsCB : register(b4, space1)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
 	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);

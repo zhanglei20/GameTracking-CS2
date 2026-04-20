@@ -2143,6 +2143,7 @@
 					mixamount = 1.0
 					attack = 0.0
 					release = 0.0
+					max_trigger_amounts = true
 				},
 			]
 		}
@@ -2182,7 +2183,7 @@
 					threshold = 0.0
 					mixamount = 1.0
 					attack = 0.0
-					release = 1.0
+					release = 0.0
 					max_trigger_amounts = true
 				},
 			]

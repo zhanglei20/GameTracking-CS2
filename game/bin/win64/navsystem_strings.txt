@@ -44,8 +44,7 @@
 .?AV?$CBaseTypesafeVDataFileManager@VCNavHullPresetVData@@@@
 .?AV?$CBaseTypesafeVDataFileManager@VCNavHullVData@@@@
 .?AV?$CErrorContextValue@PEBVKeyValues3@@@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@@@YAXHHPEBD$$QEAV1?8??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_2>@?BH@??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@@@YAXHHPEBD$$QEAV<lambda_2>@?BH@??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@@@YAXHHPEBD$$QEAV1?1??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CTier0AppSystem@VINavSystem@@$0A@@@
 .?AV?$CTier1AppSystem@VINavSystem@@$0A@@@
 .?AV?$CTier2AppSystem@VINavSystem@@$0A@@@
@@ -180,13 +179,11 @@
 .?AVISequence@@
 .?AVIVDataResourceListener@@
 .?AVrcContext@@
-0=astar, 1=allpaths, -1=test mode (runs both and compares)
 1\r51h
 ;1#INF
-=MovementGaitId_t
+=slow
 >0 = watershed, 1 = monotone, 2 = layers
 >>FLOWMAP: %d super nodes (%.0f%%)\n
->>FLOWMAP: Calc All Paths %d%%\n
 >>FLOWMAP: Calculating Adjacency Graph\n
 >>FLOWMAP: Merge Complete %d nodes\n
 >>FLOWMAP: Merging %d nodes\n
@@ -210,28 +207,22 @@
 >nav_pathfind_multithread
 ?expf
 ?ffffff
-AVOID
 AddJumps
 Already in the goal area
 Area too far
 Blocked area %d\n
 C:\buildworker\csgo_rel_win64\build\_build_\navsystem\_vpc_navsystem\default\win64\_msvc_\Retail\navsystem.pdb
-C:\buildworker\csgo_rel_win64\build\src\navlib\nav_gen_flow_map.cpp
 C:\buildworker\csgo_rel_win64\build\src\navlib\nav_mesh.cpp
 C:\buildworker\csgo_rel_win64\build\src\navlib\nav_pathfind.cpp
-CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar
 CNavMesh::GetGroundHeight
-CNavMesh::GetNearestNavArea
 CNavSpaceBuilder
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct FlowMapNode_t *,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct FlowMapNode_t *,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::SearchNode_t *,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::SearchNode_t *,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct empty_t,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct empty_t,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::OpenSearch_t,class CDefLess<struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::OpenSearch_t>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::OpenSearch_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct `public: void __cdecl CNavFlowMapGenerator::Generate(void)'::`2'::Scan_t,class CDefLess<struct `public: void __cdecl CNavFlowMapGenerator::Generate(void)'::`2'::Scan_t>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct `public: void __cdecl CNavFlowMapGenerator::Generate(void)'::`2'::Scan_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct FlowMapNode_t *,class CDefEquals<void *>,struct DefaultHashFunctor<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct FlowMapNode_t *,class CDefEquals<void *>,struct DefaultHashFunctor<void *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct empty_t,class CDefEquals<void *>,struct DefaultHashFunctor<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct empty_t,class CDefEquals<void *>,struct DefaultHashFunctor<void *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct `public: void __cdecl CNavFlowMapGenerator::Generate(struct NavHull_t,float)'::`2'::Scan_t,class CDefLess<struct `public: void __cdecl CNavFlowMapGenerator::Generate(struct NavHull_t,float)'::`2'::Scan_t>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct `public: void __cdecl CNavFlowMapGenerator::Generate(struct NavHull_t,float)'::`2'::Scan_t,int>,int,class CMemAllocAllocator> >::Insert
 CalcBlocks_IntercellConnections %d/%d\n
 CalcBlocks_IntracellConnections v0 %d/%d\n
 CalcBlocks_IntracellConnections v1 %d/%d\n
@@ -256,7 +247,6 @@ ERROR: Unconnected ladder bottom at ( %g, %g, %g )\n
 ERROR: Unconnected ladder top at ( %g, %g, %g )\n
 Error (problem that prevents task success)
 FLOWMAP path find ALLPATHS duration: %llums\n
-FLOWMAP path find ASTAR duration: %llums\n
 Failed to allocate an instance of a class
 Failed with no pGoalArea and no pGoalPos
 Failed with no pStartArea
@@ -296,6 +286,7 @@ GetNearestNav: [%d] Areas that failed poly test
 Hide unless error/warning occurs
 IslandRemoval
 IslandRemoval - unable to find a poly near navlink location %g %g %g\n
+L=AVOID
 LadderConnect
 Level of validation for nav system.  Higher will be slower.
 LightmapUV
@@ -437,7 +428,6 @@ buildPolyDetail: Could not triangulate polygon (%d verts).
 canRemoveVertex: Out of memory 'edges' (%d).
 clear_group
 compressedtangentframe
-connections
 content/
 cost
 curvature
@@ -467,7 +457,6 @@ m_bNoShadow
 m_bOnlyShadow
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
-mapOpenSearches.Remove( OpenSearch_t { pSearch->pNode, pSearch } )
 medianFilterWalkableArea: Out of memory 'areas' (%d).
 medium
 mergeAndFilterLayerRegions: Out of memory 'regions' (%d).
@@ -477,7 +466,6 @@ mergeHoles: Failed to merge contours %p and %p.
 mergeRegionHoles: Failed to allocated diags %d.
 monitor_pid
 nav_corner_adjust_adjacent
-nav_gen_flow_map_all_pairs_mode
 nav_id
 nav_ids
 nav_max_vis_delta_list_length
@@ -556,7 +544,6 @@ removeVertex: Too many polygons %d (max:%d).
 removeVertex: triangulate() returned bad results.
 scripts/nav_hulls.vdata
 scripts/nav_hulls_presets.vdata
-slow
 source_column
 source_file_searchpath
 tangent

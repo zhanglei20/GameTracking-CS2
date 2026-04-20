@@ -39283,7 +39283,6 @@ JsonIsRawJson
 JsonParse
 JsonRawJson
 JsonStringify
-Jump
 JumpConstant
 JumpConstantExtraWideHandler
 JumpConstantHandler
@@ -46349,7 +46348,6 @@ dirXml
 direct recursion
 direct_handle
 direct_local
-direction
 direction_string
 directly tier up to Sparkplug code
 directory to dump generated TurboFan IR to
@@ -47923,7 +47921,6 @@ invalid stod argument
 invalid stof argument
 invalid stoul argument
 invalid stoull argument
-invalid string_view position
 invalid suspender object for suspend
 invalid table size
 invalid uniqueContextId
@@ -48839,7 +48836,6 @@ new_space_bytes_used
 new_space_commited_bytes
 new_space_live_bytes
 new_target_string
-next
 nextWasmDisassemblyChunk
 next_context_offset < data->raw_size
 next_page.Address() == jit_page.End()

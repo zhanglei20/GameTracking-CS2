@@ -6,7 +6,7 @@
 			name = ""
 			group = "GameStartup"
 			source_file = "src/soundsystem/snd_op_sys/sos_system.cpp"
-			source_line = 9953
+			source_line = 10065
 			resources = 
 			[
 				resource_name:"soundstacks/soundstacks_manifest.vrman",
@@ -17,7 +17,7 @@
 			name = ""
 			group = "ToolsStartupPreGame"
 			source_file = "src/soundsystem/snd_op_sys/sos_system.cpp"
-			source_line = 9947
+			source_line = 10059
 			resources = 
 			[
 				resource_name:"soundstacks/soundstacks_manifest_tools.vrman",

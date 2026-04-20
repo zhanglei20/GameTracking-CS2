@@ -1,7 +1,10 @@
  (%d remaining)...
- (08@HPX`j0k
- (08@HPZ0k
- (08@J0k
+ (08@HPX`j
+ (08@HPXb0
+ (08@HPZ
+ (08@HR0
+ (08@J0
+ (0X`hpz0
  (Boosted +1)
  (repeat)
  - IsCheckedOut: %s\n
@@ -51,6 +54,7 @@
  color=[%d,%d,%d]
  friendlyname='%s'
  near '%s' -
+!#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 !?trigger@QAction@@QEAAXXZ
 !?triggered@QAction@@QEAAX_N@Z
 !\f?focusNextPrevChild@QScrollArea@@UEAA_N_N@Z
@@ -136,7 +140,6 @@
 "P\n/CMsgGCCStrike15_v2_SetPlayerLeaderboardSafeName
 "\f?focusNextPrevChild@QTextBrowser@@MEAA_N_N@Z
 "\n\nowner_soid
-"\n\vdiagnostics
 "b\n2CQuest_PublisherAddCommunityItemsToPlayer_Response
 "d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo
 "h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
@@ -192,7 +195,6 @@
 #\n?columnCount@QSortFilterProxyModel@@UEBAHAEBVQModelIndex@@@Z
 #\n\rinterior_item
 #\r?hide@QWidget@@QEAAXXZ
-#\tV_fseek
 #ebe2ca
 $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 $[?setRange@QDoubleValidator@@UEAAXNNH@Z
@@ -304,27 +306,22 @@ $\n\tword_list
 '\n\fglobal_stats
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
-(54Y
-(9GY
-(9bY
-(AJY
-(AoY
-(AsY
+(1XY
+(1cY
+(A9Y
 (Documents Filter - Use | for OR, space for AND)
-(EQY
+(E7Y
 (Filter)
-(IYY
-(MhY
+(IFY
+(IJY
+(IhY
+(IyY
+(MkY
 (No Active Session)
 (Outliner Filter)
-(QFY
-(QaY
-(QeY
-(QkY
-(UKY
-(UOY
-(UlY
-(UwY
+(Q0Y
+(Y8Y
+(YBY
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -447,19 +444,21 @@ $\n\tword_list
 (\v2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F\n!CWorkshop_GetContributors_Request
 (\v2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 (\v2\f.CSOEconItem
-(\v2\r.CVDiagnostic"
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(a2Y
-(a6Y
+(a5Y
+(aaY
+(amY
+(axY
 (default)
-(erY
-(mGY
-(mXY
-(mZY
-(mmY
-(myY
-(qLY
-(uNY
+(e3Y
+(iUY
+(ioY
+(mIY
+(mbY
+(u1Y
+(uDY
+(uPY
+(uqY
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n!penalty_account_id_sessions_green
@@ -558,6 +557,7 @@ $\n\tword_list
 -\n\fcommendation
 -\n\nconditions
 -\n\tAttribute
+-\tV_fread
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 .?AUCAttr_m_AlbumImage@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_AssociatedSet@?1??GetAttributeTable_CCS2EconNode_Collection@CCS2EconNode_Collection@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -2065,7 +2065,6 @@ $\n\tword_list
 .?AVCMsgGCCStrike15_v2_ClientReportPlayer@@
 .?AVCMsgGCCStrike15_v2_ClientReportResponse@@
 .?AVCMsgGCCStrike15_v2_ClientReportServer@@
-.?AVCMsgGCCStrike15_v2_ClientReportValidation@@
 .?AVCMsgGCCStrike15_v2_ClientRequestJoinFriendData@@
 .?AVCMsgGCCStrike15_v2_ClientRequestJoinServerData@@
 .?AVCMsgGCCStrike15_v2_ClientRequestOffers@@
@@ -2635,13 +2634,12 @@ $\n\tword_list
 /sprays
 /stickers
 /weapons/customization/paints_gloves/
-08@HR0k
-08B0k
+08@HR
+08@J0
 0\n+k_EGCItemCustomizationNotification_NameItem
 0\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings
 0\n+k_EMsgGCCStrike15_v2_Account_RequestCoPlays
 0\n+k_EMsgGCCStrike15_v2_ClientRedeemFreeReward
-0\n+k_EMsgGCCStrike15_v2_ClientReportValidation
 0\n+k_EMsgGCCStrike15_v2_ClientSubmitSurveyVote
 0\n+k_EMsgGCCStrike15_v2_GlobalChat_Unsubscribe
 0\n+k_EMsgGCCStrike15_v2_MatchEndRunRewardDrops
@@ -2733,7 +2731,6 @@ $\n\tword_list
 1OnToggleOrientationAction()
 1OnToggleSelected()
 1OnTopLevelChanged()
-1OnTreeItemDoubleClicked( QTreeWidgetItem* )
 1OnTreeMenuRequested( const QPoint& )
 1OnTreeSelectionChanged()
 1OnValueEditingFinished()
@@ -2795,7 +2792,9 @@ $\n\tword_list
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\n\nline_items
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
+2\tV_fseek
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpt
 2aboutToShow()
 2activated( int )
 2changed()
@@ -2807,7 +2806,6 @@ $\n\tword_list
 2focusChanged( QWidget *, QWidget * )
 2itemDoubleClicked( QTableWidgetItem * )
 2itemDoubleClicked( QTableWidgetItem* )
-2itemDoubleClicked( QTreeWidgetItem*, int )
 2itemSelectionChanged()
 2linkActivated( const QString & )
 2mapped(QWidget*)
@@ -2862,6 +2860,7 @@ $\n\tword_list
 5\n\tkeychains
 5\n\vtype_caches
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
+6Pk@
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -2877,16 +2876,16 @@ $\n\tword_list
 6\n\nvariations
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
-6py@
+6pc@
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
 7\n2k_EGCItemCustomizationNotification_XpShopAckTracks
 7\n2k_EGCItemCustomizationNotification_XpShopUseTicket
 7\n2k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
-8@J0k
-8B0k
+8)gY
+8F@f@
+8UrY
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
-8\n0k
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
 8\n3k_EGCItemCustomizationNotification_GenerateSouvenir
 8\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2
@@ -2894,6 +2893,7 @@ $\n\tword_list
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
+8efY
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 9\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
@@ -2914,6 +2914,7 @@ $\n\tword_list
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
 ;\n\nPerMapRank
 ;\v?event@QDialogButtonBox@@MEAA_NPEAVQEvent@@@Z
+;`?transientParent@QWindow@@QEBAPEAV1@XZ
 <!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TextureAmbientOcclusion"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "ao"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI1N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "r"\n\t\t\t"m_dstChannels" "string" "r"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TextureAmbientOcclusion"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
 <!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TextureMasks1"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "BC7"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TextureMasks1"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
 <!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TextureNormal"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "normal"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "NormalizeNormals"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI2N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rg"\n\t\t\t"m_dstChannels" "string" "rg"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "HemiOctIsoRoughness_RG_B"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TextureNormal"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
@@ -4380,10 +4381,8 @@ $\n\tword_list
 ?userType@QVariant@@QEBAHXZ
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
-@20k
-@60L@
-@HPX`hv q@
-@N0r@
+@08N,
+@HPX`hv
 @\n\fSingleObject
 @\n\vserver_type
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
@@ -4400,7 +4399,6 @@ Account ID
 AccountActivity
 AccountEntries
 Achievement reward %s has no items!
-Activate
 ActivateAndClose
 ActivateSelectedAndClose
 ActivateSubWindow
@@ -4421,7 +4419,6 @@ All lootlists must have names.
 Alternate icon '%s' > '%s' must define '%s'
 Alternate icon definition index %d must be greater than or equal to zero
 Alternate icon definition index '%s' (%llu) must be greater than zero
-AnimGraph2Clip()
 AnimgraphPicker()
 Anodized
 Anodized Airbrushed
@@ -4454,6 +4451,8 @@ AssetBrowse( png )
 AssetBrowse( txt )
 AssetBrowse( vmat, *filterProcedural:location=content )
 AssetBrowse( vmdl )
+AssetBrowse( vnmclip )
+AssetBrowse( vnmgraph )
 AssetBrowse( vtex )
 AssetBrowse( wav )
 Associated Discrete Set
@@ -4512,7 +4511,7 @@ BuildWindowMenu
 Building Items...
 Building Package For Publishing...
 Bundle %s: Item definition "%s" failed to initialize\n
-C:\buildworker\csgo_rel_win64\build\_build_\tools\cs2_item_editor\_vpc_cs2_item_editor\default\win64\_msvc_\Retail\cs2_item_editor.pdb
+C:\buildworker\csgo_rel_win64\build\_build_\tools\cs2_item_editor\_vpc_cs2_item_editor_csgo\default\win64\_msvc_\Retail\cs2_item_editor.pdb
 C:\buildworker\csgo_rel_win64\build\src\game\shared\econ_csgo_legacy\econ_item_schema.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\toolattr_propertydomain.cpp
 CAttribute_String
@@ -4948,6 +4947,8 @@ Command.%s.%s
 Community Case
 Community Case ID
 Compiled %s
+CompleterClosed
+CompleterOpened
 Complex achievement %s must have an Items key or a DefIndex field
 Composite Material
 CompositeTime
@@ -4975,6 +4976,7 @@ Create New %1
 Create Paint Kit
 Create an explicit set for this collection.
 Creating Icons...
+Cslow
 Ctrl
 CurveEditor
 Custom Paint Job
@@ -5122,6 +5124,7 @@ Expected a default value
 Expected a string literal for description
 Expected a string or integer as default value
 Expected an integer default value after <description> ':'
+Expected an integer default value after <friendlyName> ':'
 Expected eg. [10,20] or 30
 Expected identifier after '@'
 Expected matching '{' '}'
@@ -5155,10 +5158,10 @@ Expecting tag name
 ExploreWClass
 Expression syntax error %s found in '%s'.\n
 External Modification - %1
+F0i@
 FGD Variable %s has bad default value %d (has bits set that are not valid choices)
 FOLDER
 FORCE_NOT_USED
-F\n0k
 F\n\rroundstatsall
 F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 Failed Schema resevervation!\n\nSchema Type="%1" Schema Instance="%2".
@@ -5725,8 +5728,11 @@ OrigMat
 Other Tools
 Outliner
 OverlayProjectionDirection
-P20k
-P6`k@
+P08@J0
+P08J
+P08N,
+P6 B@
+P6@O@
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
@@ -5782,7 +5788,6 @@ PgUp
 Physics
 Picks
 PivotPaint
-Pj0k
 PlayerCommendationInfo
 PlayerDecalDigitalSignature
 PlayerMedalsInfo
@@ -5790,6 +5795,7 @@ PlayerQuestData
 PlayerRankingInfo
 Policy
 PopupClosed
+PopupOpened
 Pre Generation K Vs
 Preferred
 PreloadDirectoryEntries
@@ -5883,6 +5889,7 @@ R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RDO_AB
 RMouse
 RMouseDoubleClick
+RSDS9?
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
@@ -6319,7 +6326,6 @@ WarnTrailingWhitespace
 Warning (problem that doesn't prevent forward progress)
 Warning: This text ends with whitespace
 WatchableMatchInfo
-Weapon
 Weapon Finish
 Weapon Name
 WeaponLength
@@ -6352,7 +6358,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
-X`hr0k
+X`hr
 XpProgressData
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -6452,7 +6458,6 @@ Zip system failure.\n
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n EGCItemCustomizationNotification
 \f\n?deselect@QLineEdit@@QEAAXXZ
-\fp\vPH
 \n CMsgItemAcknowledged__DEPRECATED
 \n!CMsgGCCStrike15_v2_Party_Register
 \n!CMsgGCCStrike15_v2_PlayersProfile
@@ -6483,7 +6488,6 @@ Zip system failure.\n
 \n(CMsgGCCStrike15_v2_GC2ClientNotifyXPShop
 \n)CMsgGCCStrike15_v2_AccountPrivacySettings
 \n)CMsgGCCStrike15_v2_Account_RequestCoPlays
-\n)CMsgGCCStrike15_v2_ClientReportValidation
 \n)CMsgGCCStrike15_v2_MatchEndRunRewardDrops
 \n*CMsgGCCStrike15_v2_ClientToGCRequestTicket
 \n*CWorkshop_PopulateItemDescriptions_Request
@@ -6566,7 +6570,6 @@ Zip system failure.\n
 \n\fbonus_points
 \n\fcmd_friendly
 \n\fcmd_teaching
-\n\fcommand_line
 \n\fcontent_type
 \n\fcontributors
 \n\fcreationtime
@@ -6593,7 +6596,6 @@ Zip system failure.\n
 \n\fquest_period
 \n\frank_if_lose
 \n\frank_type_id
-\n\freport_count
 \n\fround_result
 \n\frpt_poorperf
 \n\frpt_teamharm
@@ -6670,7 +6672,6 @@ Zip system failure.\n
 \n\nsubscribed
 \n\nteam_id_ct
 \n\ntest_token
-\n\ntrust_time
 \n\ntv_clients
 \n\ntv_control
 \n\ntv_proxies
@@ -6689,7 +6690,6 @@ Zip system failure.\n
 \n\rb_starting_ct
 \n\rchoked_blocks
 \n\rcontinue_text
-\n\rcount_pending
 \n\rcrate_item_id
 \n\rcurrent_level
 \n\rdebug_message
@@ -6763,7 +6763,6 @@ Zip system failure.\n
 \n\tnextmatch
 \n\tnum_kills
 \n\tnumrounds
-\n\tosversion
 \n\toutcomeid
 \n\tpaintseed
 \n\tpaintwear
@@ -6784,7 +6783,6 @@ Zip system failure.\n
 \n\tsort_type
 \n\tstage_ids
 \n\tstat_mvps
-\n\tstatus_id
 \n\tsurvey_id
 \n\tsuspectid
 \n\tteam_flag
@@ -6812,7 +6810,6 @@ Zip system failure.\n
 \n\vbinary_data
 \n\vbonus_count
 \n\vcampaign_id
-\n\vclient_time
 \n\vcon_command
 \n\vcorrectpick
 \n\vcpus_online
@@ -6820,11 +6817,6 @@ Zip system failure.\n
 \n\vcustom_name
 \n\vdesc_inputs
 \n\vdescription
-\n\vdiagnostic1
-\n\vdiagnostic2
-\n\vdiagnostic3
-\n\vdiagnostic4
-\n\vdiagnostic5
 \n\vegg_item_id
 \n\venemy_kills
 \n\verror_code1
@@ -6873,7 +6865,6 @@ Zip system failure.\n
 \n\vticket_data
 \n\vtime_cached
 \n\vtime_played
-\n\vtotal_files
 \n\vtv_udp_port
 \n\vuser_defidx
 \n\vvalue_bytes
@@ -6907,6 +6898,7 @@ Zip system failure.\n
 \r?initStyleOption@QStyledItemDelegate@@MEBAXPEAVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
+\rtext
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?alpha@QColor@@QEBAHXZ
 \t?alphaF@QColor@@QEBANXZ
@@ -6926,7 +6918,7 @@ Zip system failure.\n
 \t?dataChanged@QListView@@MEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
-\tV_fread
+\tT?parent@QWindow@@QEBAPEAV1@XZ
 \tV_tier0_strchr
 \tV_tmpnam
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
@@ -6958,6 +6950,7 @@ Zip system failure.\n
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
+]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]\r?horizontalOffset@QListView@@MEBAHXZ
 ^Q?lighter@QColor@@QEBA?AV1@H@Z
 ^\r?horizontalOffset@QTableView@@MEBAHXZ
@@ -6989,17 +6982,16 @@ _nodrips
 _sm.png
 _sticker_capsule
 _toolsautosave
-`20k
-`60a@
-`6pa@
+`6PA@
+`6PE@
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`b0k
-`d0k
+`eyZ
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
+aBv,
 abandon
 abandoned_match
 absolute
@@ -7047,6 +7039,7 @@ anim_class
 anim_slot
 animgraph
 animgraph2_clip
+animgraph2_graph
 animgraph2_identifier
 animgraph_enum
 announcement_title
@@ -7159,9 +7152,11 @@ central_widget
 chance
 charges
 checkstate
+choice_group
 choices
 choose_team
 chooseteam
+choreoanchorclass
 cl_decryptdata_key
 cl_decryptdata_key_pub
 class_token_id
@@ -7176,8 +7171,6 @@ client_session_id
 client_session_need
 client_steam_id
 client_version
-clientreportversion
-clip
 clothing
 clothing1
 clothing2
@@ -7210,10 +7203,8 @@ compositematerialslib
 compressedSize
 compressedtangentframe
 compressionMethod
-conditions
 confirm
 confirmation_id
-connections
 const char*
 contains_patches_representing_organizations
 contains_stickers_autographed_by_proplayers
@@ -7228,7 +7219,6 @@ continue_token
 control_point_index
 control_points
 cost_in_local_currency
-count_completed
 counter-terrorists
 country
 country_deprecated
@@ -7424,7 +7414,7 @@ externalFileAttribs
 extraFieldLength
 extra_wearable
 eyes_follow
-fPu@
+f0Y@
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f\r?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
 failping_account_id_sessions
@@ -7434,6 +7424,7 @@ fan_shield
 fast
 featured_display_item_defidx
 ffValueIn
+fgd_metadata_merge
 file://{images}/
 file://{images}/%s
 file://{images}/econ/keychains/%s.png
@@ -7635,6 +7626,7 @@ horizontalStretch
 horizontal_header
 horizontal_header_labels
 hours
+hpz0
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
 iValueIn
 i\f?forward@QTextBrowser@@UEAAXXZ
@@ -7681,7 +7673,6 @@ instance_variable
 insufficientlevel_sessions
 intchoices
 internalFileAttribs
-internal_error
 intmap
 inv_container_and_tools
 inventoryPos
@@ -8020,7 +8011,6 @@ language
 lastModifiedDate
 lastModifiedTime
 last_ip_address
-last_launch_data
 last_time_played
 last_valid_class
 last_valid_item_slot
@@ -8326,6 +8316,8 @@ note
 noteam
 npc_ability_name
 npcclass
+npf@
+nph@
 num_eligible_recipients
 num_found_nearby
 num_item_presets
@@ -8367,14 +8359,13 @@ overrideclass
 owcaseid
 owner_only
 owns_polymorphic_data
-p0j`
-p20k
-p6PR@
+p08@H^,
+p606@
 pButton
 pCurrentFocusWidget
 pData
 pEvent
-pF`U@
+pF@9@
 pFilter
 pPrevFocusWidget
 pResultKV
@@ -8434,7 +8425,6 @@ payload
 payment_row_usd
 payment_rules/0/workshop_revenue_share
 payment_us_usd
-pb0k
 pearlescent
 pedestal display model
 pedestal_display_model
@@ -8528,7 +8518,6 @@ quester_account_id
 questid
 queue_position
 quiet
-r\vpl
 random_attribute_templates
 random_attributes
 randomizable
@@ -8570,6 +8559,7 @@ report_from_demo
 request_id__deprecated
 required_appid_version
 required_appid_version2
+required_attr_prereq
 required_internal_addr
 requires_all_same_class
 requires_all_same_slot
@@ -8620,7 +8610,6 @@ rounds
 roundstats_legacy
 roundtenseccount
 rowspan
-rpV'
 rpt_abusivemodels
 rpt_inventoryabuse
 rpt_listingabuse
@@ -8712,7 +8701,6 @@ sliderReleased
 slot_id
 slot_token_id
 slot_usage_for_output
-slow
 smg0
 smg1
 smg2
@@ -9050,7 +9038,6 @@ vmap
 vmesh
 vmt_overrides
 vmt_path
-vnmclip
 vnotify_ui
 volatile_limit
 vote
@@ -9058,6 +9045,7 @@ vote_phase_length
 vote_phase_start
 vote_starting_side
 vphzc
+vpn@
 vpost
 vsky
 vsncheck_account_id_sessions
@@ -9101,7 +9089,9 @@ workshop_preview_dust2
 workshop_published_id
 workshop_submit_%llx.zip
 workshop_url
+world_angle
 world_point
+world_transform
 worldorigin
 wrapped_sticker
 wrapping

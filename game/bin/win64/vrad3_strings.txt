@@ -1,12 +1,14 @@
+  %d search groups (%llu total ops)\n
   %d/%d Placements Approved (%.02f%%)\n
+  Enumerate Placement Opportunities
   Execute Approved Placements
+  Free Line Cleanup
   Partition Free Lines
-  Performance: %.2f approvals/msec\n
+  Performance: %.2fk approvals/sec\n
   Placement Request Sort
   Placement Review
   Placement Search
   Round %d cumulative runtime: %dm %ds\n
-  Sort Free Lines
   Update Block Endpoints
   [GPU memory usage (WDDM): %s / %s (rendersystem: %s)]\n
  %2.1fm rays
@@ -15,7 +17,6 @@
  -testmode
  Done.  Removed %i fireflies in %2.1fs\n
  [avg spp %llu]\n
-!\tV_frexpf
 "channels" attribute not found in the header.
 "compression" attribute not found in the header.
 "dataWindow" attribute not found in the header or invalid.
@@ -35,25 +36,28 @@ $timer
 %.10f
 %6.2f %6.2f %6.2f %.3f %.3f %.3f\n
 %d Known commands:\n
-%d/%d (%.2f%%) Pixel charts aliased to other luxels\n
+%d/%d (%.2f%%) Pixel charts aliased to other luxels.\n
 %d_%lld_%x.dmx
 %d_%lld_%x_in.dmx
 %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f
 %llx
+%s %lld bytes of determinism checks.\n
 %s (%s -> %s)
 %s (%s) = remove( pos %i, count %i )
+%s - chart count is wrong (%u) - expected %u\n
+%s - could not read entire chart remapping (%zu bytes)\n
+%s - could not read original chart IDs (%zu bytes)\n
+%s - unexpected code %08x\n
 %s HDR Image Error: Avg: [%.04f] 99th: [%.04f] 99.9th: [%.04f] 99.99th: [%.04f] Max: [%.04f]\n
 %s channel
 %s encoding %s %d format %s %d %s\n
 %s(%d) : %s\n
 %s(%s) = %s
-%s.exr
-%s/%s.mtl
 %s/%s.obj
 %s/channel%02d.exr
 %s/lightmap_data.dat
+%s: failed to open %s in %s.\n
 %s: invalid add count %d\n
-%s\%s.exr
 *** Converter error - element "%s" already has a non-int attribute "%s"!\n
 *** Element "%s" has attribute "%s" with an unexpected type!\n
 *** Log "%s" has attribute "%s" with an unexpected type (expected int array)!\n
@@ -71,7 +75,9 @@ $timer
 ---------------------------\n
 -gamma20
 -indexlights
+-mips
 -noinvert
+-repack
 .0-G/0]T30
 .?AV<lambda_1>@?1???$AddMatrixToMatrix@$00VCVariableMatrix@@V1@@MatrixMath@@YAXAEBVCVariableMatrix@@PEAV2@@Z@
 .?AV<lambda_1>@?1???$AddMatrixToMatrix@$0A@VCVariableMatrix@@V1@@MatrixMath@@YAXAEBVCVariableMatrix@@PEAV2@@Z@
@@ -146,16 +152,15 @@ $timer
 .?AV?$CDmAttributeOp@_N@@
 .?AV?$CDmElementFactory@VCDmElement@@@@
 .?AV?$CDmMaterial2App@VCMaterialSystem2AppSystemDict@@@@
-.?AV?$CParallelLambdaJob@V<lambda_13>@?CB@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_14>@?DN@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_15>@?EA@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_16>@?GF@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_17>@?GF@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_18>@?GF@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_13>@?DF@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_14>@?FH@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_15>@?GA@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_16>@?JK@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_17>@?JK@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_18>@?JK@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_write_ahd@@UEAAXHPEAPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V1?1??Run@CVrad3Command_lightmap_image_write_ahd@@UEAAXHPEAPEBD@Z@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_write_ao@@UEAAXHPEAPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V1?1??Run@CVrad3Command_lightmap_image_write_ao@@UEAAXHPEAPEBD@Z@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_write_chart_color@@UEAAXHPEAPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V1?1??Run@CVrad3Command_lightmap_image_write_chart_color@@UEAAXHPEAPEBD@Z@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_write_confidence@@UEAAXHPEAPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V1?1??Run@CVrad3Command_lightmap_image_write_confidence@@UEAAXHPEAPEBD@Z@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_write_direct_light_shadows@@UEAAXHPEAPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V1?1??Run@CVrad3Command_lightmap_image_write_direct_light_shadows@@UEAAXHPEAPEBD@Z@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_write_mean@@UEAAXHPEAPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V1?1??Run@CVrad3Command_lightmap_image_write_mean@@UEAAXHPEAPEBD@Z@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_write_normal@@UEAAXHPEAPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V1?1??Run@CVrad3Command_lightmap_image_write_normal@@UEAAXHPEAPEBD@Z@@Z@@CParallelProcessLauncher@@
@@ -163,9 +168,11 @@ $timer
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_write_sh_irradiance@@UEAAXHPEAPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V1?1??Run@CVrad3Command_lightmap_image_write_sh_irradiance@@UEAAXHPEAPEBD@Z@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_write_tangent@@UEAAXHPEAPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V1?1??Run@CVrad3Command_lightmap_image_write_tangent@@UEAAXHPEAPEBD@Z@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1???$WriteLightmapImage@V<lambda_3>@?6??Serialize@CVrad3LightmapImage@@QEAAXPEBD@Z@@@YAXPEBDAEBVCVrad3LightmapImage@@W4FBMAttributeMask_t@@V<lambda_3>@?6??Serialize@2@QEAAX0@Z@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?1???R<lambda_24>@?1??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@QEBA@AEAV?$CUtlVector@UBCEndpoints_t@@HV?$CUtlVectorMemory_Growable@UBCEndpoints_t@@H$0A@@@@@AEAVCVarBitVec@@2AEBV6@AEBV?$CUtlVectorFixed@W4Vrad3LightmapChannel_t@@$0BE@H@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?1??AmeliorateBlockCompressionArtefacts_FillBlocks@@YAXXZ@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?1???R<lambda_24>@?1??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@QEBA@AEAV?$CUtlVector@UBCEndpoints_t@@HV?$CUtlVectorMemory_Growable@UBCEndpoints_t@@H$0A@@@@@AEAVCVarBitVec@@2AEBV6@AEBV?$CUtlVectorFixed@W4Vrad3LightmapChannel_t@@$0BE@H@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?1??AmeliorateBlockCompressionArtefacts_FillBlocks@@YAXH@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?1??AmeliorateBlockCompressionArtefacts_SanitizeLineCharts@@YAXXZ@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1??BakeLightProbeImage_Dilate@@YAXXZ@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?1??InitMip@CVrad3LightmapImage@@QEAAXAEBV3@H@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_dilate_over_invalid_jfa@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_encode_sh2@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1??Run@CVrad3Command_lightmap_image_fill_gutters@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
@@ -182,26 +189,30 @@ $timer
 .?AV?$CParallelLambdaJob@V<lambda_1>@?CB@??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?1???$?R$$A6A?AV?$Vec3D@M@@AEBV0@@Z@<lambda_2>@?1??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@QEBA?A_PW4Vrad3LightmapChannel_t@@A6A?AV?$Vec3D@M@@AEBV6@@Z@Z@@FloatBitMap_t@@QEAAX$$QEAV1?1???$?R$$A6A?AV?$Vec3D@M@@AEBV0@@Z@<lambda_2>@?1??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@QEBA?A_PW4Vrad3LightmapChannel_t@@A6A?AV?$Vec3D@M@@AEBV7@@Z@Z@@Z@@CSOAContainer@@QEAAX$$QEAV1?1???$TransformRGB@V<lambda_1>@?1???$?R$$A6A?AV?$Vec3D@M@@AEBV0@@Z@<lambda_2>@?1??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@QEBA?A_PW4Vrad3LightmapChannel_t@@A6A?AV?$Vec3D@M@@AEBV6@@Z@Z@@FloatBitMap_t@@QEAAX$$QEAV1?1???$?R$$A6A?AV?$Vec3D@M@@AEBV0@@Z@<lambda_2>@?1??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@QEBA?A_PW4Vrad3LightmapChannel_t@@A6A?AV?$Vec3D@M@@AEBV8@@Z@Z@@Z@_N@Z@@@YAXHHPEBD$$QEAV1?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?1???$?R$$A6A?AV?$Vec3D@M@@AEBV0@@Z@<lambda_2>@?1??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@QEBA?A_PW4Vrad3LightmapChannel_t@@A6A?AV?$Vec3D@M@@AEBV6@@Z@Z@@FloatBitMap_t@@QEAAX$$QEAV1?1???$?R$$A6A?AV?$Vec3D@M@@AEBV0@@Z@<lambda_2>@?1??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@QEBA?A_PW4Vrad3LightmapChannel_t@@A6A?AV?$Vec3D@M@@AEBV7@@Z@Z@@Z@@CSOAContainer@@QEAAX$$QEAV1?1???$TransformRGB@V<lambda_1>@?1???$?R$$A6A?AV?$Vec3D@M@@AEBV0@@Z@<lambda_2>@?1??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@QEBA?A_PW4Vrad3LightmapChannel_t@@A6A?AV?$Vec3D@M@@AEBV6@@Z@Z@@FloatBitMap_t@@QEAAX$$QEAV1?1???$?R$$A6A?AV?$Vec3D@M@@AEBV0@@Z@<lambda_2>@?1??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@QEBA?A_PW4Vrad3LightmapChannel_t@@A6A?AV?$Vec3D@M@@AEBV8@@Z@Z@@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?1??AnalyzeImageError@@YAXPEBDAEAVFloatBitMap_t@@1@Z@@FloatBitMap_t@@QEAAX$$QEAV1?1??AnalyzeImageError@@YAXPEBDAEAV2@1@Z@@Z@@CSOAContainer@@QEAAX$$QEAV1?1???$TransformRGB@V<lambda_1>@?1??AnalyzeImageError@@YAXPEBDAEAVFloatBitMap_t@@1@Z@@FloatBitMap_t@@QEAAX$$QEAV1?1??AnalyzeImageError@@YAXPEBDAEAV3@1@Z@@Z@_N@Z@@@YAXHHPEBD$$QEAV1?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?1??AnalyzeImageError@@YAXPEBDAEAVFloatBitMap_t@@1@Z@@FloatBitMap_t@@QEAAX$$QEAV1?1??AnalyzeImageError@@YAXPEBDAEAV2@1@Z@@Z@@CSOAContainer@@QEAAX$$QEAV1?1???$TransformRGB@V<lambda_1>@?1??AnalyzeImageError@@YAXPEBDAEAVFloatBitMap_t@@1@Z@@FloatBitMap_t@@QEAAX$$QEAV1?1??AnalyzeImageError@@YAX0AEAV3@1@Z@@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_22>@?IF@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_22>@?MD@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_29>@?BEP@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_2>@?1??LpvIndirect@@YAXHPEAPEBD_N@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_2>@?1??Run@CVrad3Command_lpv_image_ambient_occlusion@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_2>@?BG@??Run@CVrad3Command_path_trace_triangles@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_2>@?BI@??Run@CVrad3Command_lpv_direct@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_30>@?NA@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_33>@?BBA@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_34>@?BBH@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_30>@?BEP@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_32>@?BIK@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_36>@?BNB@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_37>@?BOG@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_38>@?BOG@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_39>@?BOG@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_3>@?1??Run@CVrad3Command_lightmap_image_encode_ahd@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_3>@?3??Run@CVrad3Command_lightmap_image_dilate_over_invalid_jfa@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_3>@?BN@??Run@CVrad3Command_path_trace_triangles_gpu@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_40>@?BPI@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_4>@?1??Run@CVrad3Command_lightmap_image_dilate_over_invalid_jfa@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_6>@?5??FindLongestLinesCoveringCells@@YAHAEAV?$CUtlBlockVector@ULineCoveringCells_t@@HVCMemAllocAllocator@@@@AEAVCVarBitVec@@HHH@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_6>@?5??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_6>@?8??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_7>@?1??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_7>@?5??FindLongestLinesCoveringCells@@YAHAEAV?$CUtlBlockVector@ULineCoveringCells_t@@HVCMemAllocAllocator@@@@AEAVCVarBitVec@@HHH@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_7>@?O@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_7>@?8??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_8>@?5??FindLongestLinesCoveringCells@@YAHAEAV?$CUtlBlockVector@ULineCoveringCells_t@@HVCMemAllocAllocator@@@@AEAVCVarBitVec@@HHH@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_8>@?CE@??Run@CVrad3Command_uber_weld@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_8>@?O@??Run@CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@UEAAXHPEAPEBD@Z@@CParallelProcessLauncher@@
 .?AV?$CStreamingRandomWalkBase@VCPathTraceSceneInfoEmbree@@VCEmbreeRayStream@@V?$CAmbientCubeEstimate@VCScrambledHaltonSequenceSampler@@@@@@
 .?AV?$CStreamingRandomWalkBase@VCPathTraceSceneInfoEmbree@@VCEmbreeRayStream@@V?$CIrradianceEstimate@VCScrambledHaltonSequenceSampler@@$00@@@@
 .?AV?$CStreamingVisibilityTesterBase@VCPathTraceSceneInfoEmbree@@VCEmbreeRayStream@@V?$CAmbientCubeEstimate@VCScrambledHaltonSequenceSampler@@@@@@
@@ -435,9 +446,12 @@ $timer
 .?AVCVrad3Command_cordon@@
 .?AVCVrad3Command_create_dir_hierarchy@@
 .?AVCVrad3Command_delete_directory_and_contents_r@@
+.?AVCVrad3Command_determinism_check_done@@
+.?AVCVrad3Command_determinism_check_record@@
+.?AVCVrad3Command_determinism_check_replay@@
 .?AVCVrad3Command_exit@@
 .?AVCVrad3Command_gpu_init@@
-.?AVCVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip@@
+.?AVCVrad3Command_lightmap_ameliorate_block_compression_artefacts@@
 .?AVCVrad3Command_lightmap_analyze_image_error@@
 .?AVCVrad3Command_lightmap_compute_block_gpu@@
 .?AVCVrad3Command_lightmap_export_packing_geometry_to_obj@@
@@ -456,8 +470,6 @@ $timer
 .?AVCVrad3Command_lightmap_image_write_ahd@@
 .?AVCVrad3Command_lightmap_image_write_ao@@
 .?AVCVrad3Command_lightmap_image_write_chart_color@@
-.?AVCVrad3Command_lightmap_image_write_chart_ids@@
-.?AVCVrad3Command_lightmap_image_write_confidence@@
 .?AVCVrad3Command_lightmap_image_write_convergence@@
 .?AVCVrad3Command_lightmap_image_write_debug_oidn_mask@@
 .?AVCVrad3Command_lightmap_image_write_direct_light_shadows@@
@@ -541,10 +553,12 @@ $timer
 .?AVIUndoElement@@
 .?AVIVrad3@@
 .vmat
+0\tV_frexpf
 0x%llx
 16-byte data pool
 1Pl\v1
 2RD\n2
+2\vpT/
 4-byte data pool
 4CReport RTX perf stats at N bounces. -1 means no report
 4F=3
@@ -562,7 +576,6 @@ $timer
 >333?333?
 >5UP?X
 >AYK?
->\tV_ldexpf
 >nkY?
 ?CSOAContainer::SetAttributeType - ERROR, trying to change type of previously-defined attribute %d!\n
 ?DmeChannelsClip
@@ -577,8 +590,9 @@ Alpha Fade Out Random
 Alpha Fade and Decay
 Alpha Random
 AmbientCubes
-Ameliorate Block Compression Artifacts: WIP version 2\n
-AmeliorateBlockCompressionArtefacts_FillBlocks(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:421
+Ameliorate Block Compression Artifacts\n
+AmeliorateBlockCompressionArtefacts_FillBlocks(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:432
+AmeliorateBlockCompressionArtefacts_SanitizeLineCharts(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:523
 Animation Bone Flags
 Animation Configuration File
 Arms
@@ -601,11 +615,13 @@ Binary: Element uses unknown element type %s\n
 BrowInV
 Build: %s (SIMD: %dx fp32)\n
 C:\buildworker\csgo_rel_win64\build\_build_\utils\vrad3\_vpc_vrad3\default\win64\_msvc_\Retail\vrad3.pdb
+C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\csgo_rel_win64\build\src\bitmap\tinyexr_impl.cpp
 C:\buildworker\csgo_rel_win64\build\src\datamodel\dependencygraph.cpp
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlblockvector.h
 C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3.h
 C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_gpu.cpp
+C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp
 C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightprobevolume.cpp
 CDataModel:  %i elements left in memory!!!\n
 CDataModel: Failed to open file "%s"\n
@@ -688,14 +704,14 @@ CUtlBlockVector<struct LineCoveringCells_t,int,class CMemAllocAllocator>::GrowCo
 CUtlBlockVector<struct TexelCoord_t,int,class CMemAllocAllocator>::GrowCount
 CUtlBlockVector<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,int,class CMemAllocAllocator>::GrowCount
 CUtlBlockVector<struct VertexAndFace_t,int,class CMemAllocAllocator>::GrowCount
-CUtlBlockVector<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(int,char const * *)'::`2'::PlacementRequest_t,int,class CMemAllocAllocator>::AddMultipleToTail
-CUtlBlockVector<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(int,char const * *)'::`2'::PlacementRequest_t,int,class CMemAllocAllocator>::GrowCount
+CUtlBlockVector<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(int,char const * *)'::`2'::PlacementRequest_t,int,class CMemAllocAllocator>::AddMultipleToTail
+CUtlBlockVector<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(int,char const * *)'::`2'::PlacementRequest_t,int,class CMemAllocAllocator>::GrowCount
 CUtlDict<class CDmElement *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CDmElementFactoryHelper *,class CDefFastCaselessStringLess>::Insert
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<float,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<float,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<int,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<int,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct CStreamingRandomWalkBase<class CPathTraceSceneInfoEmbree,class CEmbreeRayStream,class CAmbientCubeEstimate<class CScrambledHaltonSequenceSampler> >::Record_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct CStreamingRandomWalkBase<class CPathTraceSceneInfoEmbree,class CEmbreeRayStream,class CAmbientCubeEstimate<class CScrambledHaltonSequenceSampler> >::Record_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
@@ -704,7 +720,7 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<stru
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct TexelCoord_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct TexelCoord_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct VertexAndFace_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct VertexAndFace_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(int,char const * *)'::`2'::PlacementRequest_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(int,char const * *)'::`2'::PlacementRequest_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(int,char const * *)'::`2'::PlacementRequest_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(int,char const * *)'::`2'::PlacementRequest_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<float,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<int,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct CStreamingRandomWalkBase<class CPathTraceSceneInfoEmbree,class CEmbreeRayStream,class CAmbientCubeEstimate<class CScrambledHaltonSequenceSampler> >::Record_t,class CMemAllocAllocator>::AddPage
@@ -713,7 +729,7 @@ CUtlMemoryBlockAllocator<struct LineCoveringCells_t,class CMemAllocAllocator>::A
 CUtlMemoryBlockAllocator<struct TexelCoord_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct VertexAndFace_t,class CMemAllocAllocator>::AddPage
-CUtlMemoryBlockAllocator<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(int,char const * *)'::`2'::PlacementRequest_t,class CMemAllocAllocator>::AddPage
+CUtlMemoryBlockAllocator<struct `public: virtual void __cdecl CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(int,char const * *)'::`2'::PlacementRequest_t,class CMemAllocAllocator>::AddPage
 CUtlOctree
 CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<class CDmElement *,class CDefLess<class CDmElement *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmElement *,int>,int,class CMemAllocAllocator> >::Insert
@@ -726,28 +742,32 @@ CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<in
 CUtlRBTree<struct CUtlOrderedMapBase<int,class FloatBitMap_t *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class FloatBitMap_t *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class FloatBitMap_t *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CVisibilityMgr
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1028
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1119
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1221
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1435
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1477
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1502
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1695
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:2208
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:2721
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:2802
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:719
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:813
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:839
-CVrad3Command_lightmap_ameliorate_block_compression_artefacts2_wip::Run::<lambda_24>::operator ()(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1836
-CVrad3Command_lightmap_image_dilate_over_invalid_jfa::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:550
-CVrad3Command_lightmap_image_dilate_over_invalid_jfa::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:626
-CVrad3Command_lightmap_image_dilate_over_invalid_jfa::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:652
-CVrad3Command_lightmap_image_encode_ahd::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:1771
-CVrad3Command_lightmap_image_encode_sh2::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:1967
-CVrad3Command_lightmap_image_fill_gutters::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:705
-CVrad3Command_lightmap_image_filter_median::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:887
-CVrad3Command_lightmap_image_remove_fireflies::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:1036
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1085
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1177
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1277
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1521
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1567
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1592
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1794
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:2289
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:2348
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:2497
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:3019
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:3108
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:3164
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:3192
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:3246
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:813
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:840
+CVrad3Command_lightmap_ameliorate_block_compression_artefacts::Run::<lambda_24>::operator ()(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap_ameliorate_bc_artefacts.cpp:1943
+CVrad3Command_lightmap_image_dilate_over_invalid_jfa::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:624
+CVrad3Command_lightmap_image_dilate_over_invalid_jfa::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:700
+CVrad3Command_lightmap_image_dilate_over_invalid_jfa::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:726
+CVrad3Command_lightmap_image_encode_ahd::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:1961
+CVrad3Command_lightmap_image_encode_sh2::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:2157
+CVrad3Command_lightmap_image_fill_gutters::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:779
+CVrad3Command_lightmap_image_filter_median::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:961
+CVrad3Command_lightmap_image_remove_fireflies::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:1110
 CVrad3Command_lpv_direct::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightprobevolume.cpp:1320
 CVrad3Command_lpv_direct::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightprobevolume.cpp:1384
 CVrad3Command_lpv_image_ambient_occlusion::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightprobevolume.cpp:1907
@@ -759,10 +779,11 @@ CVrad3Command_path_trace_triangles::Run(), C:\buildworker\csgo_rel_win64\build\s
 CVrad3Command_path_trace_triangles::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_vertexlight.cpp:348
 CVrad3Command_path_trace_triangles_gpu::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_gpu.cpp:3378
 CVrad3Command_sceneinfo_gpu::Run
-CVrad3Command_uber_weld::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:2355
-CVrad3Command_uber_weld::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:2430
-CVrad3Command_uber_weld::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:2447
-CVrad3Command_uber_weld::Run::<lambda_3>::operator ()(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:2394
+CVrad3Command_uber_weld::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:2545
+CVrad3Command_uber_weld::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:2620
+CVrad3Command_uber_weld::Run(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:2637
+CVrad3Command_uber_weld::Run::<lambda_3>::operator ()(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:2584
+CVrad3LightmapImage::InitMip(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightmap.cpp:215
 Calculating hash for each luxel
 Cannot flood fill light probe volume %d - no empty space near center\n
 Cannot flood fill light probe volume - invalid center\n
@@ -788,10 +809,12 @@ Computing single-pixel chart aliases
 Convergence Testing
 Copy block chart IDs to lightmap image... 
 Copyright (c) Valve Corporation, All rights reserved.\n
+Could not write %s - no irradiance channel.\n
 Couldn't find routine '%s'\n
 Counting luxels sharing hash value
 Create In Hierarchy
 Created OIDN device of type: %s\n
+Creating %dx%d mip
 Creating RayTracing Pipeline...
 Creating ray trace scene world.. 
 Cull Random
@@ -808,12 +831,12 @@ DMX Model Pipeline Physics Script File
 DMX Model Pipeline Preprocess File
 DMX Model Pipeline Root Script File
 DMX_MODEL_SOURCE_UNKNOWN
-D\tV_log2f
 D_DEBUG_MODE
 D_INDIRECT_LIGHT
 D_REVERSE_DEPTH
 Dampen Movement Relative to Control Point
 DataModel needs the file system to function
+Did not find %s in VRAD3_PATH. Will not repack.\n
 Dilate Over Invalid Using JFA... 
 Direct Light (%i subsamples, %i spp)... 
 Distance Between Control Points Scale
@@ -929,6 +952,7 @@ Error: %s has too few argments, should be %s start_x start_y start_z end_x end_y
 Error: %s has too few arguments, should be %s <ahdColorFilename> <ahdDirectionFilename>\n
 Error: %s has too few arguments, should be %s <filename>\n
 Error: %s has too few arguments, should be %s <width> <height> <blocksize>\n
+Error: %s has too few arguments, should be lightmap_image_write_convergence <filename>\n
 Error: %s has too many arguments, should be %s <dcFilename> [rFilename] [gFilename] [bFilename]\n
 Error: %s\n
 Error: Failed to get absolute path for output directory.\n
@@ -945,8 +969,6 @@ Error: lightmap_analyze_image_error failed to unserialize %s\n
 Error: lightmap_analyze_image_error has too few arguments, should be lightmap_analyze_image_error <reference_lightmap>\n
 Error: lightmap_image_write_ao has too few arguments, should be lightmap_image_write_ao <filename>\n
 Error: lightmap_image_write_chart_color has too few arguments, should be lightmap_image_write_chart_color <filename> <minspp> <maxspp>\n
-Error: lightmap_image_write_confidence has too few arguments, should be lightmap_image_write_confidence <filename>\n
-Error: lightmap_image_write_convergence has too few arguments, should be lightmap_image_write_convergence <filename>\n
 Error: lightmap_image_write_debug_oidn_mask has too few arguments, should be lightmap_image_write_debug_oidn_mask <filename>\n
 Error: lightmap_image_write_direct_light_shadows has too few arguments, should be lightmap_image_write_direct_light_shadows <filename>\n
 Error: lightmap_image_write_normal has too few arguments, should be lightmap_image_write_normal <filename>\n
@@ -999,7 +1021,6 @@ F?8I
 Facial Animation File
 Factory for element type '%s' already exists (Check your IMPLEMENT_ELEMENT_FACTORY macros for duplicate lookupNames)\n
 Failed to compute channel layout.\n
-Failed to copy %s.exr to %s\n
 Failed to create ray trace pipeline; skipping rendering\n
 Failed to get current directory!\n
 Failed to open for write in VRAD3_OUT_PATH: %s\n
@@ -1050,6 +1071,7 @@ Insufficient data size in offset table.
 Insufficient data size.\n
 Insufficient header/data size.\n
 Integer overflow writing large exr: %ix%i %ibpp\n
+Internal Error: no chart placements were approved. Bring the offending map/content to a programmer for debugging.\n
 Invalid argument for DecodeEXRImage().
 Invalid argument for LoadEXRImageFromMemory
 Invalid argument for SaveEXRImageToMemory
@@ -1067,8 +1089,6 @@ IterateRows
 JawD
 JawH
 JawV
-Ka 1.0 1.0 1.0\n
-Kd 1.0 1.0 1.0\n
 KeyValues
 KeyValues2
 KeyValues2 (flat)
@@ -1076,7 +1096,6 @@ KeyValues2 (no ids)
 KeyValues: Can't serialize attribute of type %s into KeyValues files!\n
 KeyValues: Element uses unknown element type %s\n
 Keys
-Ks 0.0 0.0 0.0\n
 LPV Ambient Occlude... 
 LPV Median Filter Fog Indirect (%dx%d)... 
 LPV Median Filter Indirect (%dx%d)... 
@@ -1093,6 +1112,8 @@ Lifetime Pre-Age Noise
 Lifetime Random
 Lifetime from Time to Impact
 LightMapper
+Lightmap does not have line charts.\n
+Lightmap does not have pixel charts.\n
 Lightmap: %dx%d in %d %dx%d blocks\n
 LightmapSamples
 LipLoV
@@ -1107,7 +1128,9 @@ Loading meshes from %s...
 Loading scene info from %s... 
 LpvIndirect(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3_lightprobevolume.cpp:783
 LuxelChartIDs.vtex
+Made
 Make sheet file
+Making determinism checks against %s.\n
 MapBuilder
 MapClass
 MapNode
@@ -1124,6 +1147,7 @@ Movement Match Particle Velocities
 Movement Max Velocity
 MovieSettings
 NOEXECHECK
+N\tV_ldexpf
 Noise Scalar
 Noise Vector
 NoseV
@@ -1185,6 +1209,8 @@ Ray trace world build failed; skipping rendering\n
 Read %s
 Read results... 
 Reading %s block %d (%dx%d)... 
+Recorded
+Recording determinism checks into %s.\n
 Redo\n======\n
 Remap Distance Between Two Control Points to Scalar
 Remap Distance to Control Point to Scalar
@@ -1195,7 +1221,6 @@ Removing fireflies...
 Repack %d/%d remaining line charts (up to length %d) into %d remaining free lines\n
 Repack %d/%d remaining single pixel charts\n
 Resampling lighting... 
-Reset
 ResetSampleCount: hash scene[%08x %08x], instances[%08x, %08x], instancedata[%08x, %08x], globals[%08x %08x], lights[%08x %08x], shaders[%08x %08x]\n
 ResetSampleCount: materialGeneration %i, %i\n
 ResourceCompiler/BakedLighting/LightmapGutterSize
@@ -1235,9 +1260,11 @@ Serialize: Format %s expects to be written to a binary format, but the buffer is
 SetGrowSize
 Skip writing %s - no data.\n
 Solving Equations... 
+Start Repack Iteration
 Stats at %d samples:\n
 StereoFlip
 Symbol table:  %d entries %llu bytes\n
+T\tV_log2f
 Texture Configuration File
 Time taken: % f seconds\n
 TongueCurl
@@ -1272,11 +1299,11 @@ Unserialize: Unexpected encoding name '%s' reading file '%s' - expected encoding
 Unserialize: Unexpected format '%s' reading file '%s' - expected format '%s'\n
 Unserializing %s... 
 Usage: %s <dirname> [texture]\n
+Usage: %s <file> [pathid] [bforce 0|1]\n
+Usage: %s <file> [pathid]\n
 Usage: %s <filebase>\n
 Usage: %s <minx> <miny> <minz> <maxx> <maxy> <maxz>\n
 Usage: %s <mipcount>\n
-Usage: create_dir_hierarchy <file> [pathid]\n
-Usage: remove_file <file> [pathid] [bforce 0|1]\n
 V2t<f2
 VDataModelVersion001
 VDmElementFrameworkVersion001
@@ -1309,9 +1336,8 @@ World Files
 World Node Files
 Write chart IDs to GPU memory... 
 Write results to lightmap image... 
-WriteLightmapImage(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3.h:811
+WriteLightmapImage(), C:\buildworker\csgo_rel_win64\build\src\utils\vrad3\vrad3.h:815
 Writing %s
-Writing %s... 
 Writing %s... \n
 Wrote %s (%dx%dx%d).\n
 Wrote %s (%i fireflies)\n
@@ -1334,9 +1360,6 @@ ZFP compression is not supported.
 \n# Vertices\n
 \nFailed to read %s - %s\n
 \nFailed to read %s\n
-\nmtllib %s.mtl\n
-\nnewmtl %s\n
-\nusmtl %s\n
 \t%s: %.2fs\n
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
@@ -1457,7 +1480,6 @@ colorsIndices
 combo
 compileAsOverride
 compression
-connections
 connectionsData
 constrainVelocity
 constrain_velocity
@@ -1473,6 +1495,7 @@ cordon
 create from parent particles
 create_dir_hierarchy
 create_raytrace_pipeline
+current directory
 curve info
 curvetypes
 custom
@@ -1495,7 +1518,9 @@ defaultValue
 defaultcurvetype
 defaultedgezerovalue
 delete_directory_and_contents_r
-direction
+determinism_check_done
+determinism_check_record
+determinism_check_replay
 directional
 directlight
 disableShadows
@@ -1615,7 +1640,6 @@ hitbox
 hold_left
 hold_right
 houdini
-illum 1\n
 index_count
 indices
 indirectlight
@@ -1628,7 +1652,6 @@ instance_file
 instance_parm
 instance_variable
 int_array
-invalid string_view position
 invalid vector subscript
 irradiance
 isGroup
@@ -1636,7 +1659,6 @@ isOrientation
 isPosition
 is_line_mesh
 item_item_crate
-j\tV_sscanf_s
 jointIndices
 jointIndicesIndices
 jointList
@@ -1676,13 +1698,11 @@ light_spot
 light_style
 light_sun
 lightgroup
-lightmap_ameliorate_block_compression_artefacts2_wip
+lightmap_ameliorate_block_compression_artefacts
 lightmap_analyze_image_error
 lightmap_block_converged.vtex
 lightmap_compute_block_gpu
 lightmap_export_packing_geometry_to_obj
-lightmap_image_algo_results
-lightmap_image_algo_results_compressed
 lightmap_image_consolidate_small_charts
 lightmap_image_dilate_over_invalid_jfa
 lightmap_image_encode_ahd
@@ -1698,8 +1718,6 @@ lightmap_image_save
 lightmap_image_write_ahd
 lightmap_image_write_ao
 lightmap_image_write_chart_color
-lightmap_image_write_chart_ids
-lightmap_image_write_confidence
 lightmap_image_write_convergence
 lightmap_image_write_debug_oidn_mask
 lightmap_image_write_direct_light_shadows
@@ -1764,7 +1782,6 @@ makefile
 manipulatorSettings
 mapNodeName
 mapUsageType
-map_Kd %s.exr\n
 material_name
 materialgroup
 materials/dev/rtx/debug_visualization.vmat
@@ -1891,14 +1908,13 @@ path_trace_triangles_gpu_init
 path_trace_triangles_gpu_shutdown
 path_trajectory
 pattern
-pc64 Mar 11 2026 13:43:32
+pc64 Apr 20 2026 11:30:34
 physicsSimplificationError
 physicsSimplificationOverride
 pinEnabled
 pin_enabled
 pivotOffset
 pixelAspectRatio
-pixel_aliasing_test_%d.exr
 pointentityclass
 posTolerance
 position$0
@@ -2197,6 +2213,7 @@ wrinkleIndices
 write_test_image
 write_test_image failed to write %s\n
 x=%? y=%? vTruth=%? vTest=%?
+z\tV_sscanf_s
 {2R7
 |BDmeElement
 }G1rGP1

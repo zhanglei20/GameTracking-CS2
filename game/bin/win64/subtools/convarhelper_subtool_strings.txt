@@ -97,6 +97,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vp0
 2buttonClicked( QAbstractButton * )
 2clicked()
 2currentIndexChanged( int )
@@ -742,6 +743,7 @@ QPushButton {
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
 RSDSm"
+R\fp0
 Replace?\n
 RightClicked
 S?name@QColor@@QEBA?AVQString@@XZ
@@ -906,6 +908,7 @@ phys_debug_draw
 point
 popup
 preimport
+r\vp0
 text-align:center
 text-align:left
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z

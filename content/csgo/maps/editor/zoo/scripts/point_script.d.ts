@@ -188,6 +188,8 @@ declare module "cs_script/point_script"
         GetMapName(): string;
         /** Get the number of rounds played in the current game. */
         GetRoundsPlayed(): number;
+        /** Get the time remaining in the current round in seconds. */
+        GetRoundRemainingTime(): number;
 
         /** Issue the specified command to the specified client. */
         ClientCommand(playerSlot: number, command: string): void;

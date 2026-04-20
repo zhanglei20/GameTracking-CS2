@@ -3,6 +3,62 @@
 	resource_manifests = 
 	[
 		{
+			name = "PrecacheTESmoke_client"
+			group = "GameSessionManifest_client"
+			source_file = "src/game/shared/te/te_smoke.cpp"
+			source_line = 34
+			resources = null
+		},
+		{
+			name = "TE_MuzzleFlash_client"
+			group = "GameSessionManifest_client"
+			source_file = "src/game/shared/te/te_muzzleflash.cpp"
+			source_line = 36
+			resources = null
+		},
+		{
+			name = "CTELargeFunnel_client"
+			group = "GameSessionManifest_client"
+			source_file = "src/game/shared/te/te_largefunnel.cpp"
+			source_line = 31
+			resources = null
+		},
+		{
+			name = "CTEGlowSprite_client"
+			group = "GameSessionManifest_client"
+			source_file = "src/game/shared/te/te_glowsprite.cpp"
+			source_line = 40
+			resources = null
+		},
+		{
+			name = "CTEFizz_client"
+			group = "GameSessionManifest_client"
+			source_file = "src/game/shared/te/te_fizz.cpp"
+			source_line = 38
+			resources = null
+		},
+		{
+			name = "PrecacheEffectEnergySplash_client"
+			group = "GameSessionManifest_client"
+			source_file = "src/game/shared/te/te_energysplash.cpp"
+			source_line = 36
+			resources = null
+		},
+		{
+			name = "PrecacheEffectBubbleTrail_client"
+			group = "GameSessionManifest_client"
+			source_file = "src/game/shared/te/te_bubbletrail.cpp"
+			source_line = 36
+			resources = null
+		},
+		{
+			name = "PrecacheEffectBubbles_client"
+			group = "GameSessionManifest_client"
+			source_file = "src/game/shared/te/te_bubbles.cpp"
+			source_line = 32
+			resources = null
+		},
+		{
 			name = "CS2RenderingPipelineShadowsManifest"
 			group = ""
 			source_file = "src/game/client/cstrike15/renderingpipeline/renderingpipeline_csgo_shadows.cpp"
@@ -36,7 +92,7 @@
 			name = "RenderingPipelineCsgoManifestDeveloperModeOnly"
 			group = "RenderingPipelineCsgoDeveloperMode"
 			source_file = "src/game/client/cstrike15/renderingpipeline/renderingpipeline_csgo.cpp"
-			source_line = 167
+			source_line = 168
 			resources = 
 			[
 				resource_name:"materials/dev/visualize_quad_overdraw.vmat",
@@ -50,7 +106,7 @@
 			name = "RenderingPipelineCsgoManifest"
 			group = "GameStartup"
 			source_file = "src/game/client/cstrike15/renderingpipeline/renderingpipeline_csgo.cpp"
-			source_line = 119
+			source_line = 120
 			resources = 
 			[
 				resource_name:"materials/dev/visualize_depth.vmat",
@@ -141,107 +197,6 @@
 			]
 		},
 		{
-			name = ""
-			group = "GameStartup"
-			source_file = "src/game/client/cstrike15/hudmodel.cpp"
-			source_line = 43
-			resources = 
-			[
-				resource_name:"characters/models/shared/arms/glove_cloth_collision/glove_cloth_collision.vmdl",
-				resource_name:"characters/models/shared/arms/glove_bloodhound/glove_bloodhound_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_brokenfang/glove_brokenfang_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_fingerless/glove_fingerless_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_fullfinger/glove_fullfinger_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_handwrap/glove_handwrap_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_hardknuckle/glove_hardknuckle_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_hydra/glove_hydra_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_motorcycle/glove_motorcycle_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_slick/glove_slick_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_specialist/glove_specialist_ag2.vmdl",
-				resource_name:"characters/models/shared/arms/glove_sporty/glove_sporty_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_diver/ctm_diver_varianta_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_diver/ctm_diver_variantb_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_diver/ctm_diver_variantc_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_fbi/ctm_fbi_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_fbi/ctm_fbi_varianta_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_fbi/ctm_fbi_variantb_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_fbi/ctm_fbi_variantc_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_fbi/ctm_fbi_variantd_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_fbi/ctm_fbi_variante_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_fbi/ctm_fbi_variantf_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_fbi/ctm_fbi_variantg_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_fbi/ctm_fbi_varianth_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_gendarmerie/ctm_gendarmerie_varianta_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_gendarmerie/ctm_gendarmerie_variantb_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_gendarmerie/ctm_gendarmerie_variantc_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_gendarmerie/ctm_gendarmerie_variantd_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_gendarmerie/ctm_gendarmerie_variante_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_sas/ctm_sas_variantf_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_sas/ctm_sas_variantg_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_st6/ctm_st6_variante_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_st6/ctm_st6_variantg_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_st6/ctm_st6_varianti_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_st6/ctm_st6_variantj_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_st6/ctm_st6_variantk_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_st6/ctm_st6_variantl_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_st6/ctm_st6_variantm_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_st6/ctm_st6_variantn_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_swat/ctm_swat_variante_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_swat/ctm_swat_variantf_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_swat/ctm_swat_variantg_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_swat/ctm_swat_varianth_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_swat/ctm_swat_varianti_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_swat/ctm_swat_variantj_ag2.vmdl",
-				resource_name:"phase2/characters/models/ctm_swat/ctm_swat_variantk_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_balkan/tm_balkan_variantf_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_balkan/tm_balkan_variantg_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_balkan/tm_balkan_varianth_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_balkan/tm_balkan_varianti_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_balkan/tm_balkan_variantj_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_balkan/tm_balkan_variantk_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_balkan/tm_balkan_variantl_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_jungle_raider/tm_jungle_raider_varianta_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_jungle_raider/tm_jungle_raider_variantb2_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_jungle_raider/tm_jungle_raider_variantb_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_jungle_raider/tm_jungle_raider_variantc_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_jungle_raider/tm_jungle_raider_variantd_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_jungle_raider/tm_jungle_raider_variante_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_jungle_raider/tm_jungle_raider_variantf2_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_jungle_raider/tm_jungle_raider_variantf_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_varianta_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_variantb_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_variantc_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_variantd_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_variante_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_variantf_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_variantg_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_varianth_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_varianti_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_variantj_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_leet/tm_leet_variantk_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_phoenix/tm_phoenix_varianta_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_phoenix/tm_phoenix_variantb_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_phoenix/tm_phoenix_variantc_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_phoenix/tm_phoenix_variantd_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_phoenix/tm_phoenix_variantf_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_phoenix/tm_phoenix_variantg_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_phoenix/tm_phoenix_varianth_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_phoenix/tm_phoenix_varianti_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_varf1_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_varf2_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_varf3_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_varf4_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_varf5_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_varf_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_varg_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_varh_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl",
-				resource_name:"phase2/characters/models/tm_professional/tm_professional_varj_ag2.vmdl",
-			]
-		},
-		{
 			name = "hegrenade_projectile_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/shared/cstrike15/hegrenade_projectile.cpp"
@@ -293,13 +248,14 @@
 				resource_name:"particles/ui/ammohealthcenter/ui_hud_kill_sc_blast.vpcf",
 				resource_name:"particles/ui/ammohealthcenter/ui_hud_kill_sc_burn.vpcf",
 				resource_name:"particles/ui/ammohealthcenter/ui_hud_kill_sc_shock.vpcf",
+				resource_name:"particles/dev/empty.vpcf",
 			]
 		},
 		{
 			name = "CSGOVanityPanels"
 			group = "GameStartup"
 			source_file = "src/game/client/cstrike15/panorama/3dpanels/csgo_vanity_3dpanel.cpp"
-			source_line = 257
+			source_line = 254
 			resources = 
 			[
 				resource_name:"materials/loading_logo.vmat",
@@ -310,7 +266,7 @@
 			name = "CSGOItemPreview_Stattrack_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/cstrike15/panorama/3dpanels/csgo_item_3dpanel.cpp"
-			source_line = 75
+			source_line = 69
 			resources = 
 			[
 				resource_name:"weapons/models/shared/stattrak/stattrak_module_knife.vmdl",
@@ -321,7 +277,7 @@
 			name = "CCSGraphicsSettings_Minimal_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/cstrike15/panorama/3dpanels/csgo_graphicssettings_3dpanel.cpp"
-			source_line = 367
+			source_line = 355
 			resources = 
 			[
 				resource_name:"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl",
@@ -330,17 +286,7 @@
 				resource_name:"weapons/models/ak47/weapon_rif_ak47.vmdl",
 				resource_name:"weapons/models/deagle/weapon_pist_deagle.vmdl",
 				resource_name:"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl",
-				resource_name:"characters/models/shared/arms/glove_hardknuckle/v_glove_hardknuckle.vmdl",
-			]
-		},
-		{
-			name = "CSGOGraphicsSettings"
-			group = "GameStartup"
-			source_file = "src/game/client/cstrike15/panorama/3dpanels/csgo_graphicssettings_3dpanel.cpp"
-			source_line = 359
-			resources = 
-			[
-				resource_name:"weapons/models/hkp2000/animgraph/weapon_pist_hkp2000_ui.vanmgrph",
+				resource_name:"agents/models/shared/arms/glove_hardknuckle/glove_hardknuckle.vmdl",
 			]
 		},
 		{
@@ -529,7 +475,7 @@
 			name = "ClientModeCSNormalPostProcessing"
 			group = "GameStartup"
 			source_file = "src/game/client/cstrike15/clientmode_csnormal.cpp"
-			source_line = 147
+			source_line = 148
 			resources = 
 			[
 				resource_name:"lighting/postprocessing/correction/cc_death.vpost",
@@ -577,32 +523,19 @@
 			]
 		},
 		{
-			name = "CSGOPreviewPlayer"
-			group = "GameStartup"
-			source_file = "src/game/client/cstrike15/c_cs_previewplayer.cpp"
-			source_line = 32
-			resources = 
-			[
-				resource_name:"characters/models/shared/animgraphs/ui_player_t.vanmgrph",
-				resource_name:"characters/models/shared/animgraphs/ui_player_ct.vanmgrph",
-			]
-		},
-		{
 			name = "CSGOPreviewModel"
 			group = "GameStartup"
 			source_file = "src/game/client/cstrike15/c_cs_previewmodel.cpp"
-			source_line = 19
+			source_line = 16
 			resources = 
 			[
-				resource_name:"characters/models/ctm_sas/ctm_sas.vmdl",
-				resource_name:"characters/models/tm_phoenix/tm_phoenix.vmdl",
+				resource_name:"agents/models/ctm_sas/ctm_sas.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix.vmdl",
 				resource_name:"models/editor/axis_helper.vmdl",
 				resource_name:"models/editor/axis_helper_thick.vmdl",
 				resource_name:"models/tools/green_plane/green_plane.vmdl",
 				resource_name:"models/editor/arrow.vmdl",
 				resource_name:"models/editor/spot.vmdl",
-				resource_name:"characters/models/shared/animgraphs/ui_player_t.vanmgrph",
-				resource_name:"characters/models/shared/animgraphs/ui_player_ct.vanmgrph",
 				resource_name:"materials/models/sprays/spray_plane.vmat",
 			]
 		},
@@ -620,7 +553,7 @@
 			name = "c_cs_player_for_precache_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/cstrike15/c_cs_player_pawn.cpp"
-			source_line = 77
+			source_line = 74
 			resources = 
 			[
 				resource_name:"c_cs_player_for_precache.ventr",
@@ -640,7 +573,7 @@
 			name = ""
 			group = "GameStartup"
 			source_file = "src/game/client/cstrike15/c_cs_map_annotations.cpp"
-			source_line = 61
+			source_line = 69
 			resources = 
 			[
 				resource_name:"materials/dev/annotation_worldtext_background.vmat",
@@ -650,7 +583,7 @@
 			name = "AnnotationsEffects_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/cstrike15/c_cs_map_annotations.cpp"
-			source_line = 47
+			source_line = 55
 			resources = 
 			[
 				resource_name:"particles/ui/annotation/ui_annotation_ground.vpcf",
@@ -674,70 +607,7 @@
 				resource_name:"materials/dev/compositematerials_prewarm/composite_generic_prewarm.vmat",
 				resource_name:"materials/dev/compositematerials_prewarm/composite_height_to_normal_prewarm.vmat",
 				resource_name:"compmatcache/composite_inputs.vrman",
-				resource_name:"weapons/paints/legacy/missing_paintkit.vcompmat",
-				resource_name:"weapons/paints/legacy/_shared_paint_generic.vcompmat",
-				resource_name:"gloves/paints/_shared_paint_generic.vcompmat",
-				resource_name:"patches/shared/_shared_patch_generic.vcompmat",
-				resource_name:"compmatdata/kc_template_material.vcompmat",
-				resource_name:"compmatdata/kc_ghost_hands.vcompmat",
-				resource_name:"compmatcache/composite_cache.vrman",
 			]
-		},
-		{
-			name = "PrecacheTESmoke_client"
-			group = "GameSessionManifest_client"
-			source_file = "src/game/shared/te/te_smoke.cpp"
-			source_line = 34
-			resources = null
-		},
-		{
-			name = "TE_MuzzleFlash_client"
-			group = "GameSessionManifest_client"
-			source_file = "src/game/shared/te/te_muzzleflash.cpp"
-			source_line = 36
-			resources = null
-		},
-		{
-			name = "CTELargeFunnel_client"
-			group = "GameSessionManifest_client"
-			source_file = "src/game/shared/te/te_largefunnel.cpp"
-			source_line = 31
-			resources = null
-		},
-		{
-			name = "CTEGlowSprite_client"
-			group = "GameSessionManifest_client"
-			source_file = "src/game/shared/te/te_glowsprite.cpp"
-			source_line = 40
-			resources = null
-		},
-		{
-			name = "CTEFizz_client"
-			group = "GameSessionManifest_client"
-			source_file = "src/game/shared/te/te_fizz.cpp"
-			source_line = 38
-			resources = null
-		},
-		{
-			name = "PrecacheEffectEnergySplash_client"
-			group = "GameSessionManifest_client"
-			source_file = "src/game/shared/te/te_energysplash.cpp"
-			source_line = 36
-			resources = null
-		},
-		{
-			name = "PrecacheEffectBubbleTrail_client"
-			group = "GameSessionManifest_client"
-			source_file = "src/game/shared/te/te_bubbletrail.cpp"
-			source_line = 36
-			resources = null
-		},
-		{
-			name = "PrecacheEffectBubbles_client"
-			group = "GameSessionManifest_client"
-			source_file = "src/game/shared/te/te_bubbles.cpp"
-			source_line = 32
-			resources = null
 		},
 		{
 			name = "MuzzleFlash_global_client"
@@ -768,16 +638,6 @@
 			]
 		},
 		{
-			name = "Error_global_client"
-			group = "LoopModeGameStartup"
-			source_file = "src/game/client/c_te_effect_dispatch.cpp"
-			source_line = 100
-			resources = 
-			[
-				resource_name:"particles/error/error.vpcf",
-			]
-		},
-		{
 			name = "GlassImpact_global_client"
 			group = "LoopModeGameStartup"
 			source_file = "src/game/client/c_impact_effects.cpp"
@@ -795,7 +655,7 @@
 			name = "VoiceStatusManifest_global_client"
 			group = "GameStartup"
 			source_file = "src/game/shared/voice_status.cpp"
-			source_line = 44
+			source_line = 47
 			resources = null
 		},
 		{
@@ -873,25 +733,16 @@
 			name = "Explosion_global_client"
 			group = "LoopModeGameStartup"
 			source_file = "src/game/client/fx_explosion.cpp"
-			source_line = 444
+			source_line = 437
 			resources = null
 		},
 		{
 			name = "PrecacheEffectExplosion_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/fx_explosion.cpp"
-			source_line = 31
+			source_line = 32
 			resources = 
 			[
-				resource_name:"materials/effects/fire_cloud1.vmat",
-				resource_name:"materials/effects/fire_cloud2.vmat",
-				resource_name:"materials/effects/fire_embers1.vmat",
-				resource_name:"materials/effects/fire_embers2.vmat",
-				resource_name:"materials/effects/fire_embers3.vmat",
-				resource_name:"materials/effects/splash3.vmat",
-				resource_name:"materials/effects/splashwake1.vmat",
-				resource_name:"materials/particle/particle_smokegrenade.vmat",
-				resource_name:"materials/particle/particle_smokegrenade1.vmat",
 				resource_name:"particles/entity/env_explosion/explosion_default.vpcf",
 			]
 		},
@@ -937,6 +788,16 @@
 			]
 		},
 		{
+			name = "Error_global_client"
+			group = "LoopModeGameStartup"
+			source_file = "src/game/client/c_te_effect_dispatch.cpp"
+			source_line = 100
+			resources = 
+			[
+				resource_name:"particles/error/error.vpcf",
+			]
+		},
+		{
 			name = "ShakeRopes_global_client"
 			group = "LoopModeGameStartup"
 			source_file = "src/game/client/c_rope.cpp"
@@ -966,20 +827,10 @@
 			]
 		},
 		{
-			name = "BaseFlexManifest"
-			group = "GameStartup"
-			source_file = "src/game/client/c_baseflex.cpp"
-			source_line = 57
-			resources = 
-			[
-				resource_name:"materials/dev/blur.vmat",
-			]
-		},
-		{
 			name = "_BaseEntity"
 			group = "GameStartup"
 			source_file = "src/game/client/c_baseentity.cpp"
-			source_line = 135
+			source_line = 136
 			resources = 
 			[
 				resource_name:"materials/tools/show_collision_geometry_wire.vmat",
@@ -1007,14 +858,14 @@
 			name = "ParticleEffectStop_global_client"
 			group = "LoopModeGameStartup"
 			source_file = "src/game/shared/particle_system.cpp"
-			source_line = 973
+			source_line = 972
 			resources = null
 		},
 		{
 			name = "ParticleEffect_global_client"
 			group = "LoopModeGameStartup"
 			source_file = "src/game/shared/particle_system.cpp"
-			source_line = 938
+			source_line = 937
 			resources = null
 		},
 		{
@@ -1023,6 +874,16 @@
 			source_file = "src/game/shared/loopmodegame.cpp"
 			source_line = 276
 			resources = null
+		},
+		{
+			name = "ExplosionTypesManifest_global_client"
+			group = "GameStartup"
+			source_file = "src/game/shared/explosiontypes.cpp"
+			source_line = 110
+			resources = 
+			[
+				resource_name:"scripts/explosion_types.vdata",
+			]
 		},
 		{
 			name = "ResponseRulesManifest_global_client"
@@ -1068,7 +929,7 @@
 			name = "weapon_incgrenade_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/shared/cstrike15/weapon_molotov.cpp"
-			source_line = 123
+			source_line = 124
 			resources = 
 			[
 				resource_name:"weapon_incgrenade.ventr",
@@ -1449,7 +1310,7 @@
 			name = "NametagModule"
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/weapon_csbase.cpp"
-			source_line = 1103
+			source_line = 1131
 			resources = 
 			[
 				resource_name:"weapons/models/shared/nametag/nametag_module.vmdl",
@@ -1459,7 +1320,7 @@
 			name = "StattrakModule"
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/weapon_csbase.cpp"
-			source_line = 1042
+			source_line = 1070
 			resources = 
 			[
 				resource_name:"weapons/models/shared/stattrak/stattrak_module.vmdl",
@@ -1517,7 +1378,7 @@
 			name = "GrenadeProjectiles_global_client"
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/basecsgrenade_projectile.cpp"
-			source_line = 71
+			source_line = 75
 			resources = 
 			[
 				resource_name:"weapons/models/grenade/decoy/weapon_decoy.vmdl",
@@ -1550,20 +1411,132 @@
 			]
 		},
 		{
-			name = "CSGOTeamPreviewCharacterPosition"
+			name = ""
 			group = "GameStartup"
-			source_file = "src/game/shared/cstrike15/cs_teampreview_entities.cpp"
-			source_line = 24
+			source_file = "src/game/shared/cstrike15/cs_shareddefs.cpp"
+			source_line = 1607
 			resources = 
 			[
-				resource_name:"characters/models/shared/animgraphs/ui_player_t.vanmgrph",
+				resource_name:"agents/models/shared/arms/glove_cloth_collision/glove_cloth_collision.vmdl",
+				resource_name:"agents/models/shared/arms/glove_bloodhound/glove_bloodhound.vmdl",
+				resource_name:"agents/models/shared/arms/glove_brokenfang/glove_brokenfang.vmdl",
+				resource_name:"agents/models/shared/arms/glove_fingerless/glove_fingerless.vmdl",
+				resource_name:"agents/models/shared/arms/glove_fullfinger/glove_fullfinger.vmdl",
+				resource_name:"agents/models/shared/arms/glove_handwrap/glove_handwrap.vmdl",
+				resource_name:"agents/models/shared/arms/glove_hardknuckle/glove_hardknuckle.vmdl",
+				resource_name:"agents/models/shared/arms/glove_hydra/glove_hydra.vmdl",
+				resource_name:"agents/models/shared/arms/glove_motorcycle/glove_motorcycle.vmdl",
+				resource_name:"agents/models/shared/arms/glove_slick/glove_slick.vmdl",
+				resource_name:"agents/models/shared/arms/glove_specialist/glove_specialist.vmdl",
+				resource_name:"agents/models/shared/arms/glove_sporty/glove_sporty.vmdl",
+				resource_name:"agents/models/ctm_diver/ctm_diver_varianta.vmdl",
+				resource_name:"agents/models/ctm_diver/ctm_diver_variantb.vmdl",
+				resource_name:"agents/models/ctm_diver/ctm_diver_variantc.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_varianta.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantb.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantc.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantd.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variante.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantf.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_variantg.vmdl",
+				resource_name:"agents/models/ctm_fbi/ctm_fbi_varianth.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_varianta.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_variantb.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_variantc.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_variantd.vmdl",
+				resource_name:"agents/models/ctm_gendarmerie/ctm_gendarmerie_variante.vmdl",
+				resource_name:"agents/models/ctm_sas/ctm_sas.vmdl",
+				resource_name:"agents/models/ctm_sas/ctm_sas_variantf.vmdl",
+				resource_name:"agents/models/ctm_sas/ctm_sas_variantg.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variante.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantg.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_varianti.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantj.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantk.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantl.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantm.vmdl",
+				resource_name:"agents/models/ctm_st6/ctm_st6_variantn.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variante.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variantf.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variantg.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_varianth.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_varianti.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variantj.vmdl",
+				resource_name:"agents/models/ctm_swat/ctm_swat_variantk.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantf.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantg.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_varianth.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_varianti.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantj.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantk.vmdl",
+				resource_name:"agents/models/tm_balkan/tm_balkan_variantl.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_varianta.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantb2.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantb.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantc.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantd.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variante.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantf2.vmdl",
+				resource_name:"agents/models/tm_jungle_raider/tm_jungle_raider_variantf.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_varianta.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantb.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantc.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantd.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variante.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantf.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantg.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_varianth.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_varianti.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantj.vmdl",
+				resource_name:"agents/models/tm_leet/tm_leet_variantk.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_varianta.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantb.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantc.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantd.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantf.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_variantg.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_varianth.vmdl",
+				resource_name:"agents/models/tm_phoenix/tm_phoenix_varianti.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf1.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf2.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf3.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf4.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf5.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varf.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varg.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varh.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_vari.vmdl",
+				resource_name:"agents/models/tm_professional/tm_professional_varj.vmdl",
+			]
+		},
+		{
+			name = ""
+			group = "GameStartup"
+			source_file = "src/game/shared/cstrike15/cash_stack.cpp"
+			source_line = 14
+			resources = 
+			[
+				resource_name:"models/gameplay/cash_stack/cash_stack.vmdl",
+				resource_name:"models/gameplay/cash_stack/cash_stack_pickup.vpcf",
+			]
+		},
+		{
+			name = "ScenePayloadTypesManifest_global_client"
+			group = "GameStartup"
+			source_file = "src/game/shared/scenepayload.cpp"
+			source_line = 18
+			resources = 
+			[
+				resource_name:"scripts/scenes.vdata",
 			]
 		},
 		{
 			name = "PhysicsGameSystemManifest_client"
 			group = ""
 			source_file = "src/game/shared/physicsgamesystem.cpp"
-			source_line = 151
+			source_line = 152
 			resources = 
 			[
 				resource_name:"materials/tools/show_collision_geometry_wire_nodepth.vmat",
@@ -1632,12 +1605,12 @@
 		"@lib:client.dll!CParticleBindingRealPulse" = 0
 		"@lib:client.dll!CParticleCollectionBindingInstance" = 11256737
 		"@lib:client.dll!CPathSimpleAPI" = 1312450825
-		"@lib:client.dll!CPointTemplateAPI" = 3337333123
+		"@lib:client.dll!CPointTemplateAPI" = 318676870
 		"@lib:client.dll!CPulseAnimFuncs" = 952282792
-		"@lib:client.dll!CPulseArraylib" = 1970002260
+		"@lib:client.dll!CPulseArraylib" = 3172841818
 		"@lib:client.dll!CPulseCell_BooleanSwitchState" = 1295793995
 		"@lib:client.dll!CPulseCell_CursorQueue" = 717294393
-		"@lib:client.dll!CPulseCell_FireCursors" = 18454619
+		"@lib:client.dll!CPulseCell_FireCursors" = 3525151428
 		"@lib:client.dll!CPulseCell_Inflow_EntOutputHandler" = 0
 		"@lib:client.dll!CPulseCell_Inflow_EventHandler" = 0
 		"@lib:client.dll!CPulseCell_Inflow_GraphHook" = 0
@@ -1666,10 +1639,11 @@
 		"@lib:client.dll!CPulseCell_Value_RandomInt" = 393431413
 		"@lib:client.dll!CPulseCell_WaitForCursorsWithTag" = 860342186
 		"@lib:client.dll!CPulseCell_WaitForObservable" = 2210056048
-		"@lib:client.dll!CPulseCursorFuncs" = 4272227935
-		"@lib:client.dll!CPulseMathlib" = 4024109508
+		"@lib:client.dll!CPulseCursorFuncs" = 109602028
+		"@lib:client.dll!CPulseMathlib" = 1084168616
 		"@lib:client.dll!CPulseTestScriptLib" = 1396807546
-		"@lib:client.dll!CTakeDamageInfoAPI" = 1604327879
+		"@lib:client.dll!CTakeDamageResultAPI" = 2409610034
+		"@lib:client.dll!DestructiblePartDamageRequestAPI" = 2028735734
 		"@type:client.dll!PVAL_SCHEMA_ENUM:DamageTypes_t" = 4011304154
 		"@type:client.dll!PVAL_SCHEMA_ENUM:HitGroup_t" = 2686637593
 		"@type:client.dll!PVAL_SCHEMA_ENUM:PulseCursorCancelPriority_t" = 627611872
@@ -2067,8 +2041,7 @@
 								advanced_view = false
 								metadata = 
 								{
-									choice_name = "pulse_subtype_choices"
-									pulse_subtype_choices = "PVAL_EHANDLE"
+									choice_name = "entityclass_choices"
 									port_restrict_to_literal = true
 								}
 								type = "PVAL_STRING"
@@ -2628,7 +2601,7 @@
 				"CLogicRelayAPI::OnSpawn" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnSpawn"
+					m_FriendlyName = "On Spawn"
 					m_Description = "Fired when the relay is spawned. If the relay is set to only trigger once, it will delete itself after firing this output."
 					m_MetaData = 
 					{
@@ -2684,7 +2657,7 @@
 				"CLogicRelayAPI::OnTrigger" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnTrigger"
+					m_FriendlyName = "On Trigger"
 					m_Description = "Fired when the relay is triggered. If the relay is set to only trigger once, it will delete itself after firing this output."
 					m_MetaData = 
 					{
@@ -3885,7 +3858,7 @@
 				"CPointTemplateAPI::OnEntitySpawned" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "OnEntitySpawned"
+					m_FriendlyName = "On Entity Spawned"
 					m_Description = "Fired after spawning an instance of this template."
 					m_MetaData = 
 					{
@@ -3912,9 +3885,9 @@
 								]
 								associated_inflow_name = "CPointTemplateAPI::OnEntitySpawned"
 							}
-							entities = 
+							param = 
 							{
-								friendly_name = "entities"
+								friendly_name = "param"
 								description = ""
 								advanced_view = false
 								metadata = 
@@ -4255,6 +4228,87 @@
 								]
 								associated_outflow_name = "OutDefault"
 								direct_return_value_for = "CPulseArraylib::ArrayCount"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseArraylib::ArrayFindElementMatching" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Array Find Element Matching"
+					m_Description = "Find first element 'a' which compare equal to 'element' and return its index."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!CPulseArraylib"
+						}
+						pulse_inparams = 
+						{
+							a = 
+							{
+								friendly_name = "a"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_ARRAY:PVAL_UNKNOWN"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseArraylib::ArrayFindElementMatching"
+							}
+							element = 
+							{
+								friendly_name = "element"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_dependent_arg = "a:typeparam"
+								}
+								type = "PVAL_VARIANT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseArraylib::ArrayFindElementMatching"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseArraylib::ArrayFindElementMatching"
 							}
 						}
 						generic_node_category = 4
@@ -5132,8 +5186,8 @@
 					[
 						"CPulseCell_BaseState",
 					]
-					m_FriendlyName = "Boolean Switch State"
-					m_Description = "While active, activate a child state based on the results of a boolean condition. Any referenced variables must be marked as observable."
+					m_FriendlyName = "Monitor Observable"
+					m_Description = "While active, manage child cursors based on the results of a boolean condition. When the observable result changes, the prior cursor will be canceled and the appropriate outflow will fire a new child cursor. Will monitor continuously until externally canceled."
 					m_MetaData = 
 					{
 						MVDataNodeType = 0
@@ -5178,32 +5232,32 @@
 							{
 								field_name = "m_Condition"
 								attr_factory = "PulseObservableBoolExpression_t"
-								friendly_name = "Condition"
+								friendly_name = "Observable"
 								description = "Condition to evaluate when any of its dependent values change."
 							},
 						]
 						pulse_outflows = 
 						[
 							{
-								name = "m_SubGraph"
+								name = "m_Always"
 								is_default_outflow = false
 								backed_by_variable = true
-								friendly_name = "Sub Graph"
-								description = ""
+								friendly_name = "Always"
+								description = "Fired immediately when this node begins for chaining purposes."
 							},
 							{
 								name = "m_WhenTrue"
 								is_default_outflow = false
 								backed_by_variable = true
 								friendly_name = "When True"
-								description = ""
+								description = "Fired when the observable boolean is true, and killed when false."
 							},
 							{
 								name = "m_WhenFalse"
 								is_default_outflow = false
 								backed_by_variable = true
 								friendly_name = "When False"
-								description = ""
+								description = "Fired when the observable boolean is false, and killed when true."
 							},
 						]
 					}
@@ -5390,6 +5444,7 @@
 						editor_canvas_item_spec = 
 						{
 							className = "IsWaitNode IsControlFlowNode"
+							item_factory = "InflowWait"
 						}
 						pulse_outflows = 
 						[
@@ -5977,6 +6032,7 @@
 										m_FriendlyName = "Choose Best"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Choose the best outflow with all rules passing, as determined by number of passing rules (specificity)."
 									},
 									{
 										m_iValue = 0
@@ -5984,6 +6040,7 @@
 										m_FriendlyName = "Choose First"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Choose the first outflow with all rules passing, from left to right"
 									},
 								]
 							}
@@ -6672,6 +6729,7 @@
 										m_FriendlyName = "Keep running normally."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 									{
 										m_iValue = 0
@@ -6679,6 +6737,7 @@
 										m_FriendlyName = "Kill after current node."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Do not stop the current yielding node, but do not continue to the next node afterwards."
 									},
 									{
 										m_iValue = 0
@@ -6686,6 +6745,7 @@
 										m_FriendlyName = "Kill elegantly."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Request elegant wind-down of any associated work (e.g. vcd interrupt)."
 									},
 									{
 										m_iValue = 0
@@ -6693,6 +6753,7 @@
 										m_FriendlyName = "Kill immediately."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Stop without any wind-down."
 									},
 								]
 							}
@@ -6778,8 +6839,8 @@
 					[
 						"CPulseCell_BaseYieldingInflow",
 					]
-					m_FriendlyName = "Wait For Observable Condition"
-					m_Description = ""
+					m_FriendlyName = "Wait Until"
+					m_Description = "All values connected to this node must be 'observable'. Variables on this graph will be automatically promoted to observable. Other value nodes must take an explicit context, look for those nodes with a corresponding icon."
 					m_MetaData = 
 					{
 						MVDataNodeType = 0
@@ -6827,7 +6888,7 @@
 							{
 								field_name = "m_Condition"
 								attr_factory = "PulseObservableBoolExpression_t"
-								friendly_name = "Condition"
+								friendly_name = "Observable"
 								description = "Condition to evaluate when any of its dependent values change."
 							},
 						]
@@ -7253,54 +7314,6 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CPulseCursorFuncs::KillThisCursorAndFail" = 
-				{
-					m_BaseClasses = [  ]
-					m_FriendlyName = "Kill This Cursor And Fail"
-					m_Description = "Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success."
-					m_MetaData = 
-					{
-						supported_domains = 
-						{
-							BaseDomain = true
-						}
-						scope_to_dependency_name = 
-						{
-							client.dll = "@lib:client.dll!CPulseCursorFuncs"
-						}
-						header_icon = "tools/images/pulse_editor/cursor_kill.png"
-						pulse_inparams = null
-						generic_node_category = 5
-						is_pulse_library_method = true
-						pulse_inflows = 
-						[
-							{
-								name = "InDefault"
-								friendly_name = "Default In"
-								is_default_inflow = true
-							},
-						]
-						pulse_outflows = 
-						[
-							{
-								name = "OutDefault"
-								friendly_name = "Default Out"
-								is_default_outflow = true
-								allow_direct_return = true
-							},
-						]
-					}
-					m_HelpContextName = ""
-					m_nClassType = "vdata"
-					m_rgbColor = [ 220, 30, 220 ]
-					m_bmins = [ -8.0, -8.0, -8.0 ]
-					m_bmaxs = [ 8.0, 8.0, 8.0 ]
-					m_Tags = [  ]
-					m_Variables = [  ]
-					m_Inputs = [  ]
-					m_Outputs = [  ]
-					m_Helpers = [  ]
-				}
 				"CPulseCursorFuncs::RemoveTagFromCursor" = 
 				{
 					m_BaseClasses = [  ]
@@ -7534,6 +7547,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7597,6 +7612,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7660,6 +7677,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7723,6 +7742,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7786,6 +7807,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7849,6 +7872,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7938,6 +7963,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8027,6 +8054,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8090,6 +8119,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8165,6 +8196,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8228,6 +8261,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8303,6 +8338,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8366,6 +8403,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8429,6 +8468,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8491,6 +8532,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8554,6 +8597,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8617,6 +8662,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8679,6 +8726,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8755,6 +8804,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8817,6 +8868,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8879,6 +8932,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8942,6 +8997,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9005,6 +9062,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9094,6 +9153,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9183,6 +9244,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9272,6 +9335,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9335,6 +9400,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9398,6 +9465,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9461,6 +9530,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9549,6 +9620,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9611,6 +9684,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9699,6 +9774,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9788,6 +9865,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9876,6 +9955,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -9951,6 +10032,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10052,6 +10135,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10141,6 +10226,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10229,6 +10316,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10305,6 +10394,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10381,6 +10472,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10457,6 +10550,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10533,6 +10628,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10595,6 +10692,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10643,6 +10742,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10719,6 +10820,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10778,6 +10881,97 @@
 								]
 								associated_outflow_name = "OutDefault"
 								direct_return_value_for = "CPulseMathlib::Rad2Deg"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseMathlib::RandomWorldPosition" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Random World Position"
+					m_Description = "Returns a random position centered on vCenter with random min and max radius"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!CPulseMathlib"
+						}
+						expr_alias = "random_position"
+						pulse_inparams = 
+						{
+							vCenter = 
+							{
+								friendly_name = "Center"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3_WORLDSPACE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::RandomWorldPosition"
+							}
+							flMinRadius = 
+							{
+								friendly_name = "Min Radius"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::RandomWorldPosition"
+							}
+							flMaxRadius = 
+							{
+								friendly_name = "Max Radius"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::RandomWorldPosition"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3_WORLDSPACE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseMathlib::RandomWorldPosition"
 							}
 						}
 						generic_node_category = 4
@@ -10897,6 +11091,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -10960,6 +11156,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11023,6 +11221,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11086,6 +11286,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11149,6 +11351,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11212,6 +11416,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11275,6 +11481,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11365,6 +11573,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11455,6 +11665,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11545,6 +11757,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11635,6 +11849,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11711,6 +11927,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11815,6 +12033,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11905,6 +12125,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -11995,6 +12217,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12058,6 +12282,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12121,6 +12347,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12184,6 +12412,72 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseMathlib::StringLength" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "String Length"
+					m_Description = "Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!CPulseMathlib"
+						}
+						pulse_inparams = 
+						{
+							strValue = 
+							{
+								friendly_name = "Value"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::StringLength"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseMathlib::StringLength"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12259,6 +12553,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12322,6 +12618,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12384,6 +12682,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12446,6 +12746,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12779,10 +13081,10 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CTakeDamageInfoAPI::GetDamageAmount" = 
+				"CTakeDamageResultAPI::GetDamageDealt" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Get Damage Amount (CTakeDamageInfo)"
+					m_FriendlyName = "Get Damage Dealt (CTakeDamageResult)"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -12792,7 +13094,7 @@
 						}
 						scope_to_dependency_name = 
 						{
-							client.dll = "@lib:client.dll!CTakeDamageInfoAPI"
+							client.dll = "@lib:client.dll!CTakeDamageResultAPI"
 						}
 						pulse_inparams = 
 						{
@@ -12802,12 +13104,12 @@
 								description = ""
 								advanced_view = false
 								metadata = null
-								type = "PVAL_OPAQUE_HANDLE:CTakeDamageInfo"
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
 								default_value = 
 								[
 									"PVAL_VOID",
 								]
-								associated_inflow_name = "CTakeDamageInfoAPI::GetDamageAmount"
+								associated_inflow_name = "CTakeDamageResultAPI::GetDamageDealt"
 							}
 						}
 						pulse_outparams = 
@@ -12824,14 +13126,14 @@
 									"PVAL_VOID",
 								]
 								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CTakeDamageInfoAPI::GetDamageAmount"
+								direct_return_value_for = "CTakeDamageResultAPI::GetDamageDealt"
 							}
 						}
 						pulse_feature_tag = 1
 						generic_node_category = 4
 						is_pulse_target_method = true
 						target_arg_name = "_Target"
-						friendly_name_without_target = "Get Damage Amount"
+						friendly_name_without_target = "Get Damage Dealt"
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12844,11 +13146,11 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CTakeDamageInfoAPI::GetHitGroupID" = 
+				"CTakeDamageResultAPI::GetDamageDirection" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Get Hit Group ID (CTakeDamageInfo)"
-					m_Description = ""
+					m_FriendlyName = "Get Damage Direction (CTakeDamageResult)"
+					m_Description = "Get the direction vector of the incoming damage came"
 					m_MetaData = 
 					{
 						supported_domains = 
@@ -12857,7 +13159,7 @@
 						}
 						scope_to_dependency_name = 
 						{
-							client.dll = "@lib:client.dll!CTakeDamageInfoAPI"
+							client.dll = "@lib:client.dll!CTakeDamageResultAPI"
 						}
 						pulse_inparams = 
 						{
@@ -12867,12 +13169,145 @@
 								description = ""
 								advanced_view = false
 								metadata = null
-								type = "PVAL_OPAQUE_HANDLE:CTakeDamageInfo"
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
 								default_value = 
 								[
 									"PVAL_VOID",
 								]
-								associated_inflow_name = "CTakeDamageInfoAPI::GetHitGroupID"
+								associated_inflow_name = "CTakeDamageResultAPI::GetDamageDirection"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CTakeDamageResultAPI::GetDamageDirection"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Damage Direction"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CTakeDamageResultAPI::GetDestructibleHitGroupRequests" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Destructible Hit Group Requests (CTakeDamageResult)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!CTakeDamageResultAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTakeDamageResultAPI::GetDestructibleHitGroupRequests"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_ARRAY:PVAL_OPAQUE_HANDLE:DestructiblePartDamageRequest_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CTakeDamageResultAPI::GetDestructibleHitGroupRequests"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Destructible Hit Group Requests"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CTakeDamageResultAPI::GetHitGroupID" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Hit Group ID (CTakeDamageResult)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!CTakeDamageResultAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTakeDamageResultAPI::GetHitGroupID"
 							}
 						}
 						pulse_outparams = 
@@ -12889,7 +13324,7 @@
 									"PVAL_VOID",
 								]
 								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CTakeDamageInfoAPI::GetHitGroupID"
+								direct_return_value_for = "CTakeDamageResultAPI::GetHitGroupID"
 							}
 						}
 						pulse_feature_tag = 1
@@ -12909,10 +13344,10 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CTakeDamageInfoAPI::GetInflictor" = 
+				"CTakeDamageResultAPI::GetInflictor" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Get Inflictor (CTakeDamageInfo)"
+					m_FriendlyName = "Get Inflictor (CTakeDamageResult)"
 					m_Description = "Inflictor is the entity that is dealing the damage.\nIt can be the attacker itself or a summoned unit, a projectile entity of some sort.\nIt is *MOST DEFINITELY NOT* the weapon or ability. Use Set/GetAbility for that."
 					m_MetaData = 
 					{
@@ -12922,7 +13357,7 @@
 						}
 						scope_to_dependency_name = 
 						{
-							client.dll = "@lib:client.dll!CTakeDamageInfoAPI"
+							client.dll = "@lib:client.dll!CTakeDamageResultAPI"
 						}
 						pulse_inparams = 
 						{
@@ -12932,12 +13367,12 @@
 								description = ""
 								advanced_view = false
 								metadata = null
-								type = "PVAL_OPAQUE_HANDLE:CTakeDamageInfo"
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
 								default_value = 
 								[
 									"PVAL_VOID",
 								]
-								associated_inflow_name = "CTakeDamageInfoAPI::GetInflictor"
+								associated_inflow_name = "CTakeDamageResultAPI::GetInflictor"
 							}
 						}
 						pulse_outparams = 
@@ -12954,7 +13389,7 @@
 									"PVAL_VOID",
 								]
 								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CTakeDamageInfoAPI::GetInflictor"
+								direct_return_value_for = "CTakeDamageResultAPI::GetInflictor"
 							}
 						}
 						pulse_feature_tag = 1
@@ -12974,10 +13409,10 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CTakeDamageInfoAPI::HasDamageTypeBurn" = 
+				"CTakeDamageResultAPI::GetPreModifiedDamage" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Has Damage Type Burn (CTakeDamageInfo)"
+					m_FriendlyName = "Get Pre Modified Damage (CTakeDamageResult)"
 					m_Description = ""
 					m_MetaData = 
 					{
@@ -12987,7 +13422,7 @@
 						}
 						scope_to_dependency_name = 
 						{
-							client.dll = "@lib:client.dll!CTakeDamageInfoAPI"
+							client.dll = "@lib:client.dll!CTakeDamageResultAPI"
 						}
 						pulse_inparams = 
 						{
@@ -12997,12 +13432,77 @@
 								description = ""
 								advanced_view = false
 								metadata = null
-								type = "PVAL_OPAQUE_HANDLE:CTakeDamageInfo"
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
 								default_value = 
 								[
 									"PVAL_VOID",
 								]
-								associated_inflow_name = "CTakeDamageInfoAPI::HasDamageTypeBurn"
+								associated_inflow_name = "CTakeDamageResultAPI::GetPreModifiedDamage"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CTakeDamageResultAPI::GetPreModifiedDamage"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Pre Modified Damage"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CTakeDamageResultAPI::HasDamageTypeBlast" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Has Damage Type Blast (CTakeDamageResult)"
+					m_Description = "Returns True if damage type is from a Blast"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!CTakeDamageResultAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTakeDamageResultAPI::HasDamageTypeBlast"
 							}
 						}
 						pulse_outparams = 
@@ -13019,7 +13519,72 @@
 									"PVAL_VOID",
 								]
 								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CTakeDamageInfoAPI::HasDamageTypeBurn"
+								direct_return_value_for = "CTakeDamageResultAPI::HasDamageTypeBlast"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Has Damage Type Blast"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CTakeDamageResultAPI::HasDamageTypeBurn" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Has Damage Type Burn (CTakeDamageResult)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!CTakeDamageResultAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:CTakeDamageResult"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CTakeDamageResultAPI::HasDamageTypeBurn"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_BOOL"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CTakeDamageResultAPI::HasDamageTypeBurn"
 							}
 						}
 						pulse_feature_tag = 1
@@ -13027,6 +13592,201 @@
 						is_pulse_target_method = true
 						target_arg_name = "_Target"
 						friendly_name_without_target = "Has Damage Type Burn"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"DestructiblePartDamageRequestAPI::GetDamageLevel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Damage Level (DestructiblePartDamageRequest_t)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!DestructiblePartDamageRequestAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:DestructiblePartDamageRequest_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "DestructiblePartDamageRequestAPI::GetDamageLevel"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "DestructiblePartDamageRequestAPI::GetDamageLevel"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Damage Level"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"DestructiblePartDamageRequestAPI::GetDesiredHealth" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Desired Health (DestructiblePartDamageRequest_t)"
+					m_Description = "Desired health if this is a request, otherwise the health it's at at this point."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!DestructiblePartDamageRequestAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:DestructiblePartDamageRequest_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "DestructiblePartDamageRequestAPI::GetDesiredHealth"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "DestructiblePartDamageRequestAPI::GetDesiredHealth"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Desired Health"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"DestructiblePartDamageRequestAPI::GetHitGroup" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Get Hit Group (DestructiblePartDamageRequest_t)"
+					m_Description = ""
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							client.dll = "@lib:client.dll!DestructiblePartDamageRequestAPI"
+						}
+						pulse_inparams = 
+						{
+							_Target = 
+							{
+								friendly_name = "Target"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_OPAQUE_HANDLE:DestructiblePartDamageRequest_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "DestructiblePartDamageRequestAPI::GetHitGroup"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_SCHEMA_ENUM:HitGroup_t"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "DestructiblePartDamageRequestAPI::GetHitGroup"
+							}
+						}
+						pulse_feature_tag = 1
+						generic_node_category = 4
+						is_pulse_target_method = true
+						target_arg_name = "_Target"
+						friendly_name_without_target = "Get Hit Group"
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"

@@ -11,5 +11,5 @@ class CAI_Expresser
 	bool m_bSceneEntityDisabled;
 	int32 m_nLastSpokenPriority;
 	// MNotSaved
-	CBaseFlex* m_pOuter;
+	CBaseModelEntity* m_pOuter;
 };

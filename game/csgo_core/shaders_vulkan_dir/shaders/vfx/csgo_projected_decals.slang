@@ -133,7 +133,7 @@ VS
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
 	};
 	
-	cbuffer BakedLightingConstantBuffer_t : register(b4, space0)
+	cbuffer BakedLightingConstantBuffer_t : register(b3, space0)
 	{
 	    float4 BakedLightingConstantBuffer_t_1_m0 : packoffset(c0);
 	};
@@ -414,7 +414,7 @@ PS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (36592 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (36616 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_EXT_samplerless_texture_functions : require
@@ -468,7 +468,7 @@ PS
 	    _2032 _m0[4];
 	};
 	
-	struct _2338
+	struct _1751
 	{
 	    _2032 _m0;
 	    _2032 _m1;
@@ -493,6 +493,7 @@ PS
 	    vec4 _m20;
 	    vec3 _m21;
 	    float _m22;
+	    _2032 _m23;
 	};
 	
 	float _3;
@@ -583,7 +584,7 @@ PS
 	
 	layout(set = 3, binding = 31, std430) readonly buffer g_BarnLights
 	{
-	    _2338 _m0[];
+	    _1751 _m0[];
 	} g_BarnLights_1;
 	
 	layout(set = 1, binding = 46) uniform texture2D g_tSceneDepth;

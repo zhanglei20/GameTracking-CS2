@@ -6,7 +6,7 @@
 			name = "MaterialUtilsInit"
 			group = "GameStartup"
 			source_file = "src/materialsystem2/utils/materialsystem2utils.cpp"
-			source_line = 636
+			source_line = 641
 			resources = 
 			[
 				resource_name:"dev/vgui/materials/renderui.vmat",

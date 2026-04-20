@@ -21,15 +21,22 @@
 //		},
 //		{
 //			"m_ID": <HIDDEN FOR DIFF>,
-//			"m_name": "Enabled",
-//			"m_type": "Bool",
+//			"m_name": "Flashed Amount",
+//			"m_type": "Float",
 //			"m_bIsDynamicPin": false,
 //			"m_bAllowMultipleOutConnections": false
 //		},
 //		{
 //			"m_ID": <HIDDEN FOR DIFF>,
-//			"m_name": "Lock Left Hand",
-//			"m_type": "Bool",
+//			"m_name": "Weapon Category",
+//			"m_type": "ID",
+//			"m_bIsDynamicPin": false,
+//			"m_bAllowMultipleOutConnections": false
+//		},
+//		{
+//			"m_ID": <HIDDEN FOR DIFF>,
+//			"m_name": "Weapon Type",
+//			"m_type": "ID",
 //			"m_bIsDynamicPin": false,
 //			"m_bAllowMultipleOutConnections": false
 //		}
@@ -43,10 +50,8 @@
 //			"m_bIsDynamicPin": false,
 //			"m_bAllowMultipleOutConnections": true
 //		}
-//	],
-//	"m_flBlendTimeSeconds": 0.000000
+//	]
 //}
 class CnmGraphDocSnapWeaponNode : public CNmGraphDocFlowNode
 {
-	float32 m_flBlendTimeSeconds;
 };

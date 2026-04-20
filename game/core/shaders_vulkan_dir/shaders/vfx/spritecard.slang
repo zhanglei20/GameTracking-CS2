@@ -92,7 +92,7 @@ VS
 	    float _Globals_1_m10 : packoffset(c32.z);
 	};
 	
-	cbuffer SpritecardVertexControls_t : register(b5, space0)
+	cbuffer SpritecardVertexControls_t : register(b4, space0)
 	{
 	    float4 SpritecardVertexControls_t_1_m0 : packoffset(c0);
 	    float4 SpritecardVertexControls_t_1_m1 : packoffset(c1);
@@ -102,18 +102,18 @@ VS
 	    uint3 SpritecardVertexControls_t_1_m5 : packoffset(c16);
 	};
 	
-	cbuffer SpriteCardPixelControls_t : register(b4, space0)
+	cbuffer SpriteCardPixelControls_t : register(b3, space0)
 	{
 	    float4 SpriteCardPixelControls_t_1_m0 : packoffset(c3);
 	    uint2 SpriteCardPixelControls_t_1_m1 : packoffset(c19);
 	};
 	
-	cbuffer RoughnessLightingGlobalsCB_t : register(b2, space0)
+	cbuffer RoughnessLightingGlobalsCB_t : register(b1, space0)
 	{
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b3, space0)
+	cbuffer SunLightShaderParamsCB : register(b2, space0)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
 	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);
@@ -1728,7 +1728,7 @@ PS
 	static const float2 _2136[15] = { float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, 0.0f.xx, 0.0f.xx };
 	static const float3 _797[15] = { 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), float3(1.0f, 0.0f, 0.0f), float3(1.0f, 0.0f, 1.0f), 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx };
 	
-	cbuffer SpriteCardPixelControls_t : register(b4, space1)
+	cbuffer SpriteCardPixelControls_t : register(b3, space1)
 	{
 	    float4 SpriteCardPixelControls_t_1_m0 : packoffset(c0);
 	    float4 SpriteCardPixelControls_t_1_m1 : packoffset(c1);
@@ -1741,7 +1741,7 @@ PS
 	    uint2 SpriteCardPixelControls_t_1_m8 : packoffset(c19);
 	};
 	
-	cbuffer RoughnessLightingGlobalsCB_t : register(b2, space1)
+	cbuffer RoughnessLightingGlobalsCB_t : register(b1, space1)
 	{
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
@@ -1757,7 +1757,7 @@ PS
 	    float _Globals_1_m6 : packoffset(c32.z);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b3, space1)
+	cbuffer SunLightShaderParamsCB : register(b2, space1)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
 	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);

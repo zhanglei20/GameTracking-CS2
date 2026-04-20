@@ -38,6 +38,8 @@
 . Retired
 . Tag Added: '%s'
 . Tag Removed: '%s'
+.?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AUFakeEntityDerivedA_t@@
 .?AUFakeEntityDerivedB_t@@
 .?AUFakeEntity_t@@
@@ -46,6 +48,7 @@
 .?AUPulseSystemEventObservableVariableListenerNotify_t@@
 .?AUPulseSystemEventObservableVariableSourceChanged_t@@
 .?AUPulseSystemEventYieldResume_t@@
+.?AUTestComponent_t@@
 .?AV<lambda_3>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@
 .?AV<lambda_4>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@
 .?AV<lambda_5>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumShape_t@@@@
@@ -64,6 +67,7 @@
 .?AVCBasePulseGraphInstance@@
 .?AVCKV3ResourceBlockHelper@@
 .?AVCKV3Transfer_ResourceLoadInterface@@
+.?AVCPulseAPIExtensionRegistrationContext_t@@
 .?AVCPulseBlackboardViewFromGraphInstance@@
 .?AVCPulseCell_BaseState@@
 .?AVCPulseCell_BooleanSwitchState@@
@@ -109,6 +113,8 @@
 .?AVCPulseCell_WaitForCursorsWithTag@@
 .?AVCPulseCell_WaitForCursorsWithTagBase@@
 .?AVCPulseCell_WaitForObservable@@
+.?AVCPulseCursorBaseObservableScope@@
+.?AVCPulseCursorTestObservableScope@@
 .?AVCPulseDomainScopeLoader@@
 .?AVCPulseExecCursor@@
 .?AVCPulseGraphDef@@
@@ -116,7 +122,9 @@
 .?AVCPulseGraphInstance_TestDomain_Derived@@
 .?AVCPulseGraphInstance_TestDomain_UseReadOnlyBlackboardView@@
 .?AVCPulseGraphInstance_TurtleGraphics@@
+.?AVCPulseGraphLoadContext@@
 .?AVCPulseSystem@@
+.?AVCPulseTargetVisitForVMMD_t@@
 .?AVCPulseTestHandleService@@
 .?AVCPulseTurtleGraphicsCursor@@
 .?AVCPulseTypeManager@@
@@ -131,6 +139,8 @@
 .?AVIPulseGraphDef@@
 .?AVIPulseGraphInstance_TestDomain@@
 .?AVIPulseGraphInstance_TurtleGraphics@@
+.?AVIPulseGraphLoadErrorReporter@@
+.?AVIPulseHost_BaseObservable@@
 .?AVIPulseHost_Cursor@@
 .?AVIPulseHost_Unknown@@
 .?AVIPulseHost_YieldingCursor@@
@@ -141,6 +151,7 @@
 <map_value>
 <none>\n
 == PulseGraphDef ==\n
+@fff>fff>fff>fff>
 A default string (set)
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
 A testing-only domain for target-owned graphs.
@@ -153,10 +164,10 @@ Abs Float
 Abs Int
 Absolute value (float)
 Absolute value (int)
-Activate
 Add R%d <- R%d + R%d
 Add the array 'b' to the end of 'a'.
 Adjust heading (positive = right, negative = left)
+Always
 And R%d <- R%d && R%d
 Any Other Cursors Have Tag
 Arc Cos
@@ -171,6 +182,7 @@ Are we currently running unit tests?
 Array Append
 Array Concatenate
 Array Count
+Array Find Element Matching
 Array First N Elements
 Array Insert
 Array Remove Element Matching
@@ -179,7 +191,6 @@ Array Remove Invalid Elements
 Array Set Count
 Array Shuffle
 Assert True
-AssertFatalCast
 Async Child1
 Async Child2
 Async Fire C%d:I%d
@@ -197,7 +208,6 @@ Begin testing a condition composed of Observable values. Continues checking unti
 Begin testing a condition composed of Observable variable references. Continues checking until true.
 C:\buildworker\csgo_rel_win64\build\_build_\pulse_system\_vpc_pulse_system\default\win64\_msvc_\Retail\pulse_system.pdb
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\csgo_rel_win64\build\src\pulse_runtime_lib\pulse_graph_def.cpp
 C:\buildworker\csgo_rel_win64\build\src\pulse_system\pulse_test_domain.cpp
 CBasePulseGraphInstance::CBasePulseGraphInstance( %p )\n
 CBasePulseGraphInstance::EndGraphReload( %p ) %s\n
@@ -212,10 +222,13 @@ CGlobalSymbol
 CGlobalSymbolCaseSensitive
 CKV3MemberNameSet
 CKV3MemberNameWithStorage
+COMPONENT(
+COMPONENT(%s)+%s
 CPiecewiseCurve
 CPulseArraylib::ArrayAppend
 CPulseArraylib::ArrayConcatenate
 CPulseArraylib::ArrayCount
+CPulseArraylib::ArrayFindElementMatching
 CPulseArraylib::ArrayFirstNElements
 CPulseArraylib::ArrayInsert
 CPulseArraylib::ArrayRemoveElementMatching
@@ -229,6 +242,7 @@ CPulseCell_ExampleCriteria::CheckRequirement
 CPulseCell_ExampleSelector::ProcessSelector
 CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
+CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
 CPulseCell_Inflow_EventHandler '%s' --> Chunk%d: %s
 CPulseCell_Inflow_GraphHook '%s' --> Chunk%d: %s
@@ -280,7 +294,6 @@ CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::KillThisCursorAndCancel
-CPulseCursorFuncs::KillThisCursorAndFail
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseFakeEntityList::CreateFakeEntity
@@ -341,6 +354,7 @@ CPulseMathlib::Pi
 CPulseMathlib::Pow
 CPulseMathlib::RSqrt
 CPulseMathlib::Rad2Deg
+CPulseMathlib::RandomWorldPosition
 CPulseMathlib::RemapClampedFloat
 CPulseMathlib::RoundFloat
 CPulseMathlib::Saturate
@@ -358,6 +372,7 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
+CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
@@ -398,6 +413,8 @@ CPulseTestFuncs_LibraryA::TestFunctionRenamed_Old_Internal
 CPulseTestFuncs_LibraryA::TestFunctionRenamed_WithArgs_Old
 CPulseTestFuncs_LibraryA::TestFunctionRenamed_WithArgs_Old_Internal
 CPulseTestFuncs_LibraryA::TestFunctionRenamed__WithArgs_New
+CPulseTestFuncs_LibraryA::TestObservableFalse
+CPulseTestFuncs_LibraryA::TestObservableTrue
 CPulseTestFuncs_LibraryA::TestOptionalParameters_AfterDefaultsAdded
 CPulseTestFuncs_LibraryA::TestOptionalParameters_AfterReorderSparseDefaults
 CPulseTestFuncs_LibraryA::TestOptionalParameters_BeforeDefaultsAdded
@@ -453,6 +470,7 @@ Class does not allow allocation from its schema binding
 Commit Step
 Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
 Completed
+Component Func
 Computes 2 ( 2.71...) raised to a power
 Computes e ( 2.71...) raised to a power
 Convert %s R%d <- %s R%d
@@ -467,6 +485,7 @@ Copy R%d <- R%d
 Cosine of angle. Input in radians, output in radians
 Could not find enumeration '%s'
 Couldn't load KV3 for resource: %s
+Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama.
 CreateFakeEntity( "%s", "%s" ) -> idx %d (handle %d)\n
 Cross Product Vector
 Cross Product of Vector a x Vector b
@@ -480,10 +499,10 @@ Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: ~CPulseExecCursor()\n
 Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
-D\tV_log2f
 Default In
 Default Out
 Default echo string.
+DefaultComponentString
 Deg2 Rad
 Derived
 Derived Func A
@@ -537,6 +556,7 @@ FakeEntity_t_DomainSubType
 Find a spawned entity by name.
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find first element 'a' which compare equal to 'element' and return its index.
 Fired when A becomes 0 from any other number.
 Fired when A exceeds 5.
 Fired whenever the global A value changes.
@@ -587,12 +607,14 @@ Gradient()
 HandleInt
 HandleIntDerived
 IKV3TransferInterface_ResourceSave
+IPulseGraphLoadErrorReporter
 IPulseReloadListener
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
 If -1 timer will continue forever
 If specified, each wait interval will vary randomly between WaitInterval this value
 If this cursor spawns other work via Fire And Forget, should this Tag be inherited?
+Impl::AssertCastImpl
 Indicate Test Failure
 Indicate that a checkpoint has been reached.
 Indicates a test failure if Value is false.
@@ -611,13 +633,10 @@ Is In Test Mode
 Is Valid Vector
 Is Valid World Vector
 Jump to Instr I%d
-KV3 save transfer failed: %s
 KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
 Kill This Cursor And Cancel
-Kill This Cursor And Fail
-LayoutAndAllocateConstantStorage
 Leap to Chunk C%d
 Length (magnitude) of Vector
 Length (magnitude) of Vector2D
@@ -631,7 +650,6 @@ LessEq R%d <- R%d <= R%d
 Library Destroy Fake Entity
 Library Find Fake Entity By Name
 Library Spawn Fake Entity
-LoadKV3ObjectInPlace error: %s\n
 Log10
 Log2
 Lower pen.
@@ -697,7 +715,6 @@ OnYieldResume1
 OnYieldResume2
 Only wrote %d (of %d) values when saving map!
 Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
-Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Or R%d <- R%d || R%d
 Out1
@@ -711,6 +728,7 @@ PLUG_TYPE_RELAY_PREFAB_LOCAL
 PLUG_TYPE_RELAY_PREFAB_OUTBOUND
 PLUG_TYPE_UNKNOWN
 POISONED 
+PULSE_VMMD
 PanelID
 Parameters
 ParametersKV3
@@ -738,6 +756,7 @@ RESOURCE_TYPE_PULSE_GRAPH_DEF
 RSDSEAV;
 Rad2 Deg
 Raise pen.
+Random World Position
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
 Reciprocoal square root (1/sqrt)
 Record that the function was called
@@ -756,6 +775,7 @@ Return the input string, use the code default if none was supplied.
 Return the number of elements in the array.
 Returns -1 or 0 or 1 based on the sign of the argument
 Returns -1.0 or 0.0 or 1.0 based on the sign of the argument
+Returns a random position centered on vCenter with random min and max radius
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (float)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (vector)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (world vector)
@@ -830,9 +850,10 @@ Square root
 Start a timer with the specified duration, fire the OnInterval output 
 Stop Timer
 Stop any active timers - the completed outflow will still fire
+String Length
 Strings Are Equal Case Sensitive
-Sub Graph
 Sub R%d <- R%d - R%d
+T\tV_log2f
 Tag Cursor
 Tag Self When Complete
 Tangent of angle. Input in radians, output in radians
@@ -848,6 +869,8 @@ Test Function Renamed  New
 Test Function Renamed  Old
 Test Function Renamed  With Args  Old
 Test Mode Assert True
+Test Observable False
+Test Observable True
 Test Optional Parameters  After Defaults Added
 Test Optional Parameters  After Reorder Sparse Defaults
 Test Optional Parameters  Before Defaults Added
@@ -856,6 +879,7 @@ Test step with return value
 TestCheckpoint: %s
 TestClock_AutoRun
 TestClock_ExplicitStepped
+TestComponent_tAPI::ComponentFunc
 TestDomain
 TestDomain Tracepoint: %s\n
 TestDomainEntity
@@ -899,10 +923,14 @@ Yield, Resume=%s
 [NOP]
 [RETURN R%d]
 [RETURN]
+\tV_acosd
+\tV_asind
 \tV_cosd
+\tV_exp2f
+\tV_tand
+\t\tV_atand
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\v\tV_exp2f
-_\tV_sind
+\t_V_StringAfterPrefixCaseSensitive
 __CursorQueue__
 __FireCursorsParent__
 __State_Child_Condition__
@@ -919,6 +947,7 @@ allowed_requirements
 allowed_variable_keys_types
 animgraph
 animgraph2_clip
+animgraph2_graph
 animgraph2_identifier
 animgraph_enum
 arg1
@@ -933,11 +962,14 @@ baseclass
 bodygroupchoices
 cableclass
 cell_info
+choice_group
 choices
+choreoanchorclass
 clamp
 collision_property
 color255
 color255alpha
+compiled_binding_name
 control_storage
 current_value
 cursor_id
@@ -965,6 +997,8 @@ flFloat
 flFrac
 flInputA
 flInputB
+flMaxRadius
+flMinRadius
 flOutputA
 flOutputB
 flPercentage
@@ -1045,7 +1079,6 @@ m_MissingRetvalDefault
 m_ParamType
 m_PlugType
 m_PreparedHook
-m_Results
 m_ResumePoint
 m_Stops
 m_TagValue
@@ -1078,7 +1111,6 @@ m_nLegacyDefaultInt
 m_nResult
 m_nStackDepthWhenAdded
 m_nSubject
-m_nSubjectID
 m_nVarDocNodeID
 m_nYieldToken
 m_pItemSet
@@ -1121,10 +1153,15 @@ node_id
 node_id_List
 npc_ability_name
 npcclass
+o\tV_sind
+observable_false
 observable_listeners
+observable_scope
+observable_true
 observer_cursors
 omni
 open_asset %s
+operator int
 outbound
 overrideclass
 pAsyncRet2
@@ -1169,13 +1206,13 @@ pulse_open_graph_id %u %u
 pulse_runtime_lib
 pulse_test_example_suggestion
 rad2deg
+random_position
 registers
 remap
 remove_key
 requested_cancel
 required_domain_subtype
 resourcesystem
-result_set
 round
 rsqrt
 saturate
@@ -1193,6 +1230,7 @@ sidelist
 sign
 solidclass
 stack
+strValue
 string_instanced
 stringmap
 struct
@@ -1220,6 +1258,7 @@ vecValue
 vecValueA
 vecValueB
 vecline
+world_angle
 world_point
+world_transform
 yield_token
-z\tV_tand

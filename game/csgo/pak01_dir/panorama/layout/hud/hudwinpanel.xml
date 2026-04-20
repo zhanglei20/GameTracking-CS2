@@ -36,7 +36,7 @@
 			</Panel>
 			<Panel class="MVP_section">
 				<Panel id="id-match-mvp-map-container" class="mvp_map_container">
-					<MapPlayerPreviewPanel id="id-match-mvp-map" class="mvp_map" camera="camera" require-composition-layer="true" playermodel="characters/models/ctm_fbi/ctm_fbi.vmdl" item="models/inventory_items/skillgroups/skillgroup12.vmdl" playername="mvp_char" animgraphcharactermode="mvp-banner" mouse_rotate="false" transparent-background="false" map="ui/match_mvp" pin-fov="vertical" />
+					<MapPlayerPreviewPanel id="id-match-mvp-map" class="mvp_map" camera="camera" require-composition-layer="true" playermodel="agents/models/ctm_fbi/ctm_fbi.vmdl" item="models/inventory_items/skillgroups/skillgroup12.vmdl" playername="mvp_char" animgraphcharactermode="mvp-banner" mouse_rotate="false" transparent-background="false" map="ui/match_mvp" pin-fov="vertical" />
 				</Panel>
 				<Panel class="MVP_content">
 					<Panel id="MVP" class="MVP">

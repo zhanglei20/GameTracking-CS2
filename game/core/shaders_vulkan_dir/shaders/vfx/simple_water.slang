@@ -293,7 +293,7 @@ PS
 	    float _Globals_1_g_flNormalMapStrength : packoffset(c0.y);
 	};
 	
-	cbuffer ReflectionMapDescriptor_t : register(b5, space1)
+	cbuffer ReflectionMapDescriptor_t : register(b4, space1)
 	{
 	    _226 ReflectionMapDescriptor_t_1_m0 : packoffset(c0);
 	    float4 ReflectionMapDescriptor_t_1_m1 : packoffset(c4);

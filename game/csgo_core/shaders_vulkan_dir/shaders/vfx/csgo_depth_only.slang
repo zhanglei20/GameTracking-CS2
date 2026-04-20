@@ -256,7 +256,7 @@ PS
 	// SPIR-V source (1332 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	// Dynamic combos: D_ALPHA_TEST_PREPASS
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    uint PerViewConstantBufferCsgo_t_1_m0 : packoffset(c4);
 	    int2 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c11);

@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/danielsadowski_04/mainmenu.vsnd"
+		vsnd_duration = 161.93306
 	}
 	Music.MVPPreview.danielsadowski_04 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/danielsadowski_04/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/danielsadowski_04/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 7.026939
 	}
 	Music.Selection.danielsadowski_04 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/danielsadowski_04/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 22.883265
 	}
 	Music.MatchFound.danielsadowski_04 = 
 	{
@@ -57,6 +63,7 @@
 			11.217, 13.473, 15.716, 17.967,
 			20.203,
 		]
+		vsnd_duration = 20.271021
 	}
 	Music.LoadingScreen.danielsadowski_04 = 
 	{
@@ -82,6 +89,7 @@
 		[
 			"sounds/music/danielsadowski_04/startaction_01.vsnd",
 		]
+		vsnd_duration = 10.971429
 	}
 	Music.StartRound.danielsadowski_04 = 
 	{
@@ -113,6 +121,7 @@
 			11.217, 13.473, 15.716, 17.967,
 			20.203,
 		]
+		vsnd_duration = 20.271021
 	}
 	Music.StartAction.danielsadowski_04 = 
 	{
@@ -140,6 +149,7 @@
 		[
 			"sounds/music/danielsadowski_04/startaction_01.vsnd",
 		]
+		vsnd_duration = 10.971429
 	}
 	Music.StartRound_GG.danielsadowski_04 = 
 	{
@@ -172,6 +182,7 @@
 			11.217, 13.473, 15.716, 17.967,
 			20.203,
 		]
+		vsnd_duration = 20.271021
 	}
 	Music.BombPlanted.danielsadowski_04 = 
 	{
@@ -194,6 +205,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.015511
 	}
 	Music.BombTenSecCount.danielsadowski_04 = 
 	{
@@ -212,6 +224,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.318367
 	}
 	Music.GotHostage.danielsadowski_04 = 
 	{
@@ -236,6 +249,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.015511
 	}
 	Music.HostageNearRescue.danielsadowski_04 = 
 	{
@@ -258,6 +272,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.318367
 	}
 	Music.TenSecCount.danielsadowski_04 = 
 	{
@@ -279,6 +294,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.292245
 	}
 	Music.WonRound.danielsadowski_04 = 
 	{
@@ -303,6 +319,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 7.288163
 	}
 	Music.LostRound.danielsadowski_04 = 
 	{
@@ -327,6 +344,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 7.758368
 	}
 	Music.DeathCam.danielsadowski_04 = 
 	{
@@ -339,6 +357,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 4.989388
 	}
 	Music.MVPAnthem.danielsadowski_04 = 
 	{
@@ -365,6 +396,7 @@
 		[
 			"sounds/music/danielsadowski_04/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 7.026939
 	}
 	Music.MatchStart.danielsadowski_04 = 
 	{
@@ -380,6 +412,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/danielsadowski_04/startofmatch.vsnd"
+		vsnd_duration = 62.722267
 	}
 	Music.MatchEnd.danielsadowski_04 = 
 	{
@@ -401,6 +434,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 62.722267
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

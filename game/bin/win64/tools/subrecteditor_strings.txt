@@ -24,6 +24,7 @@
  [ OPENED FOR INTEGRATE ]
  [ READ ONLY ]
 !"Calling CBaseEditorApp::SetActiveSession on an unknown session"
+!#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 !?triggered@QAction@@QEAAX_N@Z
 !\f?focusNextPrevChild@QScrollArea@@UEAA_N_N@Z
 !root
@@ -611,7 +612,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpT
+2\vpD
 2aboutToShow()
 2activated( int )
 2changed()
@@ -647,6 +648,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 :\f?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
 :\v?canRead@QImageReader@@QEBA_NXZ
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
+;`?transientParent@QWindow@@QEBAPEAV1@XZ
 < %i, %i > -> < %i, %i > [ %i, %i ]
 <NONE>
 <No recent files>
@@ -1875,7 +1877,6 @@ A resource error occurred.
 A timeout occurred.
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 About...
-Activate
 ActivateAndClose
 ActivateNextEditorSession
 ActivatePreviousEditorSession
@@ -1927,6 +1928,7 @@ Binding removed due to active drag: %s
 BuildWatch
 BuildWindowMenu
 C:\buildworker\csgo_rel_win64\build\_build_\tools\subrecteditor\_vpc_subrecteditor\default\win64\_msvc_\Retail\subrecteditor.pdb
+C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\baseeditorapp.cpp
 CBaseEditorApp::SetActiveEditorSession
 CBaseEditorApp::~CBaseEditorApp
@@ -2075,6 +2077,8 @@ ClosedCorrectly %i
 Command Filter
 Command Name
 Command.%s.%s
+CompleterClosed
+CompleterOpened
 Context
 Copy
 CornerWidget:%s
@@ -2229,6 +2233,7 @@ Increase Grid Size
 Input Binding Error
 Input Debugger [%1]
 Input Sequence
+InputBindSystem
 Inset X
 Inset Y
 Invalid 'dockWidgetArea (%s)
@@ -2250,7 +2255,6 @@ KeepActive
 Key Bindings
 KeyState
 KeyState[%1]
-L>InputBindSystem
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -2404,6 +2408,7 @@ PgDn
 PgUp
 Policy
 PopupClosed
+PopupOpened
 Preferred
 Preview Texture:
 PreviousSession
@@ -2464,7 +2469,6 @@ R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RMouse
 RMouseDoubleClick
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpT
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
@@ -2844,6 +2848,7 @@ Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 \t?dataChanged@QListView@@MEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
+\tT?parent@QWindow@@QEBAPEAV1@XZ
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_FixupPathName
 \v?clear@QStandardItemModel@@QEAAXXZ
@@ -2864,6 +2869,7 @@ Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
+]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]\r?horizontalOffset@QListView@@MEBAHXZ
 ^\r?horizontalOffset@QTableView@@MEBAHXZ
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
@@ -2894,7 +2900,6 @@ checkstate
 clear_group
 clicked
 colspan
-connections
 const char*
 content/
 contentsMargins
@@ -3028,7 +3033,6 @@ primary
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quiet
-r\vpT
 recovered_autosave
 rectangles
 right

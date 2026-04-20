@@ -725,7 +725,7 @@ PS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (143812 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (144760 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_KHR_shader_subgroup_arithmetic : require
@@ -761,7 +761,7 @@ PS
 	    vec4 _m6;
 	};
 	
-	struct _1416
+	struct _1846
 	{
 	    _51 _m0[128];
 	};
@@ -771,7 +771,7 @@ PS
 	    anon_g_mSurfaceColorAdjust1 _m0[4];
 	};
 	
-	struct _2041
+	struct _960
 	{
 	    anon_g_mSurfaceColorAdjust1 _m0;
 	    anon_g_mSurfaceColorAdjust1 _m1;
@@ -796,6 +796,7 @@ PS
 	    vec4 _m20;
 	    vec3 _m21;
 	    float _m22;
+	    anon_g_mSurfaceColorAdjust1 _m23;
 	};
 	
 	float _3;
@@ -963,7 +964,7 @@ PS
 	
 	layout(set = 1) uniform _1872 PerViewConstantBufferCsgo_t;
 	
-	struct _2711
+	struct _988
 	{
 	    vec4 _m0;
 	    vec4 _m1;
@@ -980,7 +981,7 @@ PS
 	    uvec4 _m12;
 	    vec4 _m13;
 	    vec4 _m14;
-	    _1416 _m15;
+	    _1846 _m15;
 	    vec4 _m16;
 	    vec4 _m17;
 	    int _m18;
@@ -994,7 +995,7 @@ PS
 	    _2495 _m26;
 	};
 	
-	layout(set = 3) uniform _2711 PerViewLightingConstantBufferGpu_t;
+	layout(set = 3) uniform _988 PerViewLightingConstantBufferGpu_t;
 	
 	struct _1194
 	{
@@ -1013,7 +1014,7 @@ PS
 	
 	layout(set = 3, binding = 31, std430) readonly buffer g_BarnLights
 	{
-	    _2041 _m0[];
+	    _960 _m0[];
 	} g_BarnLights_1;
 	
 	layout(set = 1, binding = 87) uniform texture2D g_tLayerId;
@@ -2598,6 +2599,10 @@ PS
 	    vec3 _10347 = _20136.xyz;
 	    vec3 _12422 = _9175.xyz;
 	    vec2 _11004 = max(_15248.xy, vec2(pow(clamp(max(dot(_10347, _10347), dot(_12422, _12422)), 0.0, 1.0), 0.333000004291534423828125)));
+	    vec3 _10170 = -_20700;
+	    vec3 _24735 = _24283.xyz;
+	    vec4 _23875 = vec4(_24735, 1.0);
+	    vec3 _18708 = vec3(dot(PerViewLightingConstantBufferGpu_t._m5._m0[0].xyzw, _23875), dot(PerViewLightingConstantBufferGpu_t._m5._m0[1].xyzw, _23875), dot(PerViewLightingConstantBufferGpu_t._m5._m0[2].xyzw, _23875));
 	    bvec4 _24465 = notEqual(PerViewConstantBufferCsgo_t._m1, ivec4(0));
 	    float _21720;
 	    if (_24465.x)
@@ -2628,26 +2633,24 @@ PS
 	        {
 	            _23169 = _23168;
 	        }
-	        vec4 _17422 = (max(vec4(dot(PerViewLightingConstantBufferGpu_t._m6._m0[0].xyz, _12052), dot(PerViewLightingConstantBufferGpu_t._m6._m0[1].xyz, _12052), dot(PerViewLightingConstantBufferGpu_t._m6._m0[2].xyz, _12052), dot(PerViewLightingConstantBufferGpu_t._m6._m0[3].xyz, _12052)).xyzw, vec4(0.0)).xyzw * PerViewLightingConstantBufferGpu_t._m7.xyzw).xyzw;
-	        _21720 = (1.0 / (dot(_17422, vec4(1.0)) + PerViewLightingConstantBufferGpu_t._m8.x)) * (PerViewLightingConstantBufferGpu_t._m8.x + dot(_17422, textureLod(sampler2D(g_tDynamicAmbientOcclusion, g_sPointClamp), (_10570 + mix(_23169, PerViewConstantBufferCsgo_t._m5.xy, bvec2(abs(_18418.y) < (_12289 ? _15400 : _21008))).xy).xy, 0.0).xyzw));
+	        vec4 _10017 = normalize(vec4(PerViewLightingConstantBufferGpu_t._m7.x * fma(dot(_10170, normalize(vec3(PerViewLightingConstantBufferGpu_t._m6._m0[0].xy, 0.25))), 0.5, 0.5), PerViewLightingConstantBufferGpu_t._m7.y * fma(dot(_10170, normalize(vec3(PerViewLightingConstantBufferGpu_t._m6._m0[1].xy, 0.25))), 0.5, 0.5), PerViewLightingConstantBufferGpu_t._m7.z * fma(dot(_10170, normalize(vec3(PerViewLightingConstantBufferGpu_t._m6._m0[2].xy, 0.25))), 0.5, 0.5), PerViewLightingConstantBufferGpu_t._m7.w * fma(dot(_10170, normalize(vec3(PerViewLightingConstantBufferGpu_t._m6._m0[3].xy, 0.25))), 0.5, 0.5)));
+	        vec4 _13232 = max(vec4(dot(PerViewLightingConstantBufferGpu_t._m6._m0[0].xyz, _12052), dot(PerViewLightingConstantBufferGpu_t._m6._m0[1].xyz, _12052), dot(PerViewLightingConstantBufferGpu_t._m6._m0[2].xyz, _12052), dot(PerViewLightingConstantBufferGpu_t._m6._m0[3].xyz, _12052)).xyzw, vec4(0.0)) * normalize(clamp(((_10017 - vec4(max(max(_10017.x, _10017.y), max(_10017.z, _10017.w)))) + vec4(0.20000000298023223876953125)) * vec4(5.0), vec4(0.0), vec4(1.0)));
+	        _21720 = (1.0 / (dot(_13232, vec4(1.0)) + PerViewLightingConstantBufferGpu_t._m8.x)) * (PerViewLightingConstantBufferGpu_t._m8.x + dot(_13232, textureLod(sampler2D(g_tDynamicAmbientOcclusion, g_sPointClamp), (_10570 + mix(_23169, PerViewConstantBufferCsgo_t._m5.xy, bvec2(abs(_18418.y) < (_12289 ? _15400 : _21008))).xy).xy, 0.0)));
 	    }
 	    else
 	    {
 	        _21720 = 1.0;
 	    }
-	    float _21785;
+	    float _21721;
 	    if (notEqual(PerViewConstantBufferCsgo_t._m0, ivec4(0)).w)
 	    {
-	        _21785 = _21720 * textureLod(sampler2D(g_tSsao, g_sUserConfig), (_21298.xy * PerViewConstantBuffer_t._m2.xy).xy, 0.0).x;
+	        _21721 = _21720 * textureLod(sampler2D(g_tSsao, g_sUserConfig), (_21298.xy * PerViewConstantBuffer_t._m2.xy).xy, 0.0).x;
 	    }
 	    else
 	    {
-	        _21785 = _21720;
+	        _21721 = _21720;
 	    }
-	    vec3 _24735 = _24283.xyz;
-	    vec4 _23875 = vec4(_24735, 1.0);
-	    vec3 _18708 = vec3(dot(PerViewLightingConstantBufferGpu_t._m5._m0[0].xyzw, _23875), dot(PerViewLightingConstantBufferGpu_t._m5._m0[1].xyzw, _23875), dot(PerViewLightingConstantBufferGpu_t._m5._m0[2].xyzw, _23875));
-	    float _21721;
+	    float _21722;
 	    if (PerViewLightingConstantBufferGpu_t._m18 != 0)
 	    {
 	        int _23989;
@@ -2693,7 +2696,7 @@ PS
 	            float _8969;
 	            float _8970;
 	            float _15997;
-	            float _17368;
+	            float _17367;
 	            vec2 _18870;
 	            vec4 _20581;
 	            vec4 _22023;
@@ -2703,13 +2706,13 @@ PS
 	                float _21472 = saturate(_14975.z + PerViewLightingConstantBufferGpu_t._m19);
 	                _20581 = PerViewLightingConstantBufferGpu_t._m0;
 	                _22023 = PerViewLightingConstantBufferGpu_t._m1;
-	                _17368 = PerViewLightingConstantBufferGpu_t._m2.z;
+	                _17367 = PerViewLightingConstantBufferGpu_t._m2.z;
 	                _15997 = PerViewLightingConstantBufferGpu_t._m3.z;
-	                _18870 = vec2(_17368, _15997);
+	                _18870 = vec2(_17367, _15997);
 	                _8969 = PerViewLightingConstantBufferGpu_t._m2.y;
 	                _7045 = vec2(_8969, _15997);
 	                _8970 = PerViewLightingConstantBufferGpu_t._m3.y;
-	                _7046 = vec2(_17368, _8970);
+	                _7046 = vec2(_17367, _8970);
 	                _7735 = vec2(_8969, _8970);
 	                float _15310 = dot(vec4(textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + _18870).xy, _21472), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + _7045).xy, _21472), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + _7046).xy, _21472), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + _7735).xy, _21472), 0.0)).xyzw, vec4(0.25));
 	                bool _12915;
@@ -2726,7 +2729,7 @@ PS
 	                    _23747 = _15310;
 	                    break;
 	                }
-	                _23747 = ((_15310 * (_20581.w * 4.0)) + dot(vec4(textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + vec2(_17368, 0.0)).xy, _21472), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + vec2(_8969, 0.0)).xy, _21472), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + vec2(0.0, _8970)).xy, _21472), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + vec2(0.0, _15997)).xy, _21472), 0.0)).xyzw, _22023.xxxx)) + (textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3(_14975.xy, _21472), 0.0) * _22023.y);
+	                _23747 = ((_15310 * (_20581.w * 4.0)) + dot(vec4(textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + vec2(_17367, 0.0)).xy, _21472), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + vec2(_8969, 0.0)).xy, _21472), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + vec2(0.0, _8970)).xy, _21472), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_14975.xy + vec2(0.0, _15997)).xy, _21472), 0.0)).xyzw, _22023.xxxx)) + (textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3(_14975.xy, _21472), 0.0) * _22023.y);
 	                break;
 	            } while(false);
 	            float _12502;
@@ -2760,7 +2763,7 @@ PS
 	                            _12501 = _15311;
 	                            break;
 	                        }
-	                        _12501 = ((_15311 * (_20581.w * 4.0)) + dot(vec4(textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_20490.xy + vec2(_17368, 0.0)).xy, _20322), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_20490.xy + vec2(_8969, 0.0)).xy, _20322), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_20490.xy + vec2(0.0, _8970)).xy, _20322), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_20490.xy + vec2(0.0, _15997)).xy, _20322), 0.0)).xyzw, _22023.xxxx)) + (textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3(_20490.xy, _20322), 0.0) * _22023.y);
+	                        _12501 = ((_15311 * (_20581.w * 4.0)) + dot(vec4(textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_20490.xy + vec2(_17367, 0.0)).xy, _20322), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_20490.xy + vec2(_8969, 0.0)).xy, _20322), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_20490.xy + vec2(0.0, _8970)).xy, _20322), 0.0), textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3((_20490.xy + vec2(0.0, _15997)).xy, _20322), 0.0)).xyzw, _22023.xxxx)) + (textureLod(sampler2DShadow(g_tShadowDepthBufferDepth, g_tShadowDepthBufferCmpSampler), vec3(_20490.xy, _20322), 0.0) * _22023.y);
 	                        break;
 	                    } while(false);
 	                    _7934 = _12501;
@@ -2791,15 +2794,15 @@ PS
 	        {
 	            _12503 = _13279;
 	        }
-	        _21721 = _12503;
+	        _21722 = _12503;
 	    }
 	    else
 	    {
-	        _21721 = 1.0;
+	        _21722 = 1.0;
 	    }
 	    vec3 _9717;
 	    vec3 _24891;
-	    if ((dot(PerViewLightingConstantBufferGpu_t._m16.xyz, _24735) * _21721) > 0.0)
+	    if ((dot(PerViewLightingConstantBufferGpu_t._m16.xyz, _24735) * _21722) > 0.0)
 	    {
 	        float _11797 = max(0.0, dot(_24283.xyz, PerViewLightingConstantBufferGpu_t._m16.xyz));
 	        vec2 _9842 = max(_11004, vec2(PerViewLightingConstantBufferGpu_t._m16.w));
@@ -2808,7 +2811,7 @@ PS
 	        vec3 _17701 = mix(_15460, _24735, bvec3(all(equal(_15460, vec3(1.0))))).xyz;
 	        float _7800 = dot(_12281, _17701);
 	        float _25073 = max(0.0, dot(_17701, _21889));
-	        vec3 _23102 = _12351.xyz;
+	        vec3 _23105 = _12351.xyz;
 	        vec2 _15877 = _9842.xy;
 	        vec2 _21239 = _15877 * _15877;
 	        vec3 _14557 = (vec3(dot(_12281, _10949.xyz), dot(_12281, _20096.xyz), _7800) / vec3(_21239.xy, 1.0)).xyz;
@@ -2817,21 +2820,21 @@ PS
 	        float _6835 = _11847 * (_11847 * 0.125);
 	        float _19568 = 1.0 - _6835;
 	        float _18393 = 1.0 / ((_17622 * ((_17622 * _21239.x) * _21239.y)) * ((4.0 * ((_11797 * _19568) + _6835)) * ((_25073 * _19568) + _6835)));
-	        float _11626;
+	        float _11627;
 	        if (_14878)
 	        {
 	            float _9251 = dot(_9842.xy, vec2(0.5));
 	            float _20829 = max(_9251 * _9251, 9.9999997473787516355514526367188e-06);
 	            float _21401 = saturate(_25073 + 0.001000000047497451305389404296875);
-	            _11626 = mix(_18393, (((((2.0 + (1.0 / _20829)) * pow(1.0 - (_7800 * _7800), 0.5 / _20829)) * 0.159154832363128662109375) * (0.25 / ((_11797 + _21401) - (_11797 * _21401)))) * 3.1415927410125732421875) * _11797, _7397);
+	            _11627 = mix(_18393, (((((2.0 + (1.0 / _20829)) * pow(1.0 - (_7800 * _7800), 0.5 / _20829)) * 0.159154832363128662109375) * (0.25 / ((_11797 + _21401) - (_11797 * _21401)))) * 3.1415927410125732421875) * _11797, _7397);
 	        }
 	        else
 	        {
-	            _11626 = _18393;
+	            _11627 = _18393;
 	        }
-	        vec3 _16808 = (PerViewLightingConstantBufferGpu_t._m17.xyz * _21721).xyz;
+	        vec3 _16808 = (PerViewLightingConstantBufferGpu_t._m17.xyz * _21722).xyz;
 	        _9717 = PerViewLightingConstantBufferGpu_t._m9.xyz + (vec3(_11797).xyz * _16808);
-	        _24891 = (((_23102 + ((vec3(1.0) - _23102) * pow(max(9.9999999747524270787835121154785e-07, 1.0 - max(0.0, dot(PerViewLightingConstantBufferGpu_t._m16.xyz, _12281))), 5.0))) * _11626).xyz * _11797).xyz * _16808;
+	        _24891 = (((_23105 + ((vec3(1.0) - _23105) * pow(max(9.9999999747524270787835121154785e-07, 1.0 - max(0.0, dot(PerViewLightingConstantBufferGpu_t._m16.xyz, _12281))), 5.0))) * _11627).xyz * _11797).xyz * _16808;
 	    }
 	    else
 	    {
@@ -2844,12 +2847,12 @@ PS
 	    if (_20061)
 	    {
 	        vec4 _24260 = vec4(_16191.xyz, 1.0).xyzw * mat4(vec4(PerViewConstantBufferCsgo_t._m4._m0[0].x, PerViewConstantBufferCsgo_t._m4._m0[1].x, PerViewConstantBufferCsgo_t._m4._m0[2].x, PerViewConstantBufferCsgo_t._m4._m0[3].x), vec4(PerViewConstantBufferCsgo_t._m4._m0[0].y, PerViewConstantBufferCsgo_t._m4._m0[1].y, PerViewConstantBufferCsgo_t._m4._m0[2].y, PerViewConstantBufferCsgo_t._m4._m0[3].y), vec4(PerViewConstantBufferCsgo_t._m4._m0[0].z, PerViewConstantBufferCsgo_t._m4._m0[1].z, PerViewConstantBufferCsgo_t._m4._m0[2].z, PerViewConstantBufferCsgo_t._m4._m0[3].z), vec4(PerViewConstantBufferCsgo_t._m4._m0[0].w, PerViewConstantBufferCsgo_t._m4._m0[1].w, PerViewConstantBufferCsgo_t._m4._m0[2].w, PerViewConstantBufferCsgo_t._m4._m0[3].w));
-	        float _20218 = _24260.w;
-	        vec2 _11414 = _24260.xy / vec2(_20218);
+	        float _20219 = _24260.w;
+	        vec2 _11414 = _24260.xy / vec2(_20219);
 	        vec4 _6652;
 	        _6652.x = clamp(((_11414.x + 1.0) * PerViewConstantBuffer_t._m1.x) * 0.5, 0.0, PerViewConstantBuffer_t._m1.x - 1.0);
 	        _6652.y = clamp(((1.0 - _11414.y) * PerViewConstantBuffer_t._m1.y) * 0.5, 0.0, PerViewConstantBuffer_t._m1.y - 1.0);
-	        _6652.w = _20218;
+	        _6652.w = _20219;
 	        _19364 = _6652;
 	    }
 	    else
@@ -2893,16 +2896,16 @@ PS
 	            {
 	                vec4 _15817 = mat4(vec4(g_BarnLights_1._m0[_12608]._m0._m0[0].x, g_BarnLights_1._m0[_12608]._m0._m0[1].x, g_BarnLights_1._m0[_12608]._m0._m0[2].x, g_BarnLights_1._m0[_12608]._m0._m0[3].x), vec4(g_BarnLights_1._m0[_12608]._m0._m0[0].y, g_BarnLights_1._m0[_12608]._m0._m0[1].y, g_BarnLights_1._m0[_12608]._m0._m0[2].y, g_BarnLights_1._m0[_12608]._m0._m0[3].y), vec4(g_BarnLights_1._m0[_12608]._m0._m0[0].z, g_BarnLights_1._m0[_12608]._m0._m0[1].z, g_BarnLights_1._m0[_12608]._m0._m0[2].z, g_BarnLights_1._m0[_12608]._m0._m0[3].z), vec4(g_BarnLights_1._m0[_12608]._m0._m0[0].w, g_BarnLights_1._m0[_12608]._m0._m0[1].w, g_BarnLights_1._m0[_12608]._m0._m0[2].w, g_BarnLights_1._m0[_12608]._m0._m0[3].w)) * vec4(input_0.xyz, 1.0);
 	                vec3 _10521 = _15817.xyz / vec3(_15817.w);
-	                vec4 _23180;
-	                _23180.x = _10521.x;
-	                _23180.y = _10521.y;
+	                vec4 _23183;
+	                _23183.x = _10521.x;
+	                _23183.y = _10521.y;
 	                float _21775 = _10521.z;
-	                _23180.z = _21775;
-	                vec3 _21642 = _23180.xyz;
+	                _23183.z = _21775;
+	                vec3 _21642 = _23183.xyz;
 	                bool _7424;
-	                if (all(greaterThan(_23180.xyz, vec3(-1.0, -1.0, 0.0))))
+	                if (all(greaterThan(_23183.xyz, vec3(-1.0, -1.0, 0.0))))
 	                {
-	                    _7424 = all(lessThan(_23180.xyz, vec3(1.0)));
+	                    _7424 = all(lessThan(_23183.xyz, vec3(1.0)));
 	                }
 	                else
 	                {
@@ -2927,9 +2930,9 @@ PS
 	                float _18492 = (2.0 * g_BarnLights_1._m0[_12608]._m5.z) * g_BarnLights_1._m0[_12608]._m5.z;
 	                float _14805 = 2.0 * g_BarnLights_1._m0[_12608]._m5.x;
 	                float _9058 = _14805 * g_BarnLights_1._m0[_12608]._m5.y;
-	                float _17374 = 2.0 * g_BarnLights_1._m0[_12608]._m5.w;
-	                float _19825 = _17374 * g_BarnLights_1._m0[_12608]._m5.z;
-	                vec3 _16268 = vec3(_9058 - _19825, (1.0 - (_14805 * g_BarnLights_1._m0[_12608]._m5.x)) - _18492, (_23607 * g_BarnLights_1._m0[_12608]._m5.z) + (_17374 * g_BarnLights_1._m0[_12608]._m5.x)) * g_BarnLights_1._m0[_12608]._m6.z;
+	                float _17373 = 2.0 * g_BarnLights_1._m0[_12608]._m5.w;
+	                float _19825 = _17373 * g_BarnLights_1._m0[_12608]._m5.z;
+	                vec3 _16268 = vec3(_9058 - _19825, (1.0 - (_14805 * g_BarnLights_1._m0[_12608]._m5.x)) - _18492, (_23607 * g_BarnLights_1._m0[_12608]._m5.z) + (_17373 * g_BarnLights_1._m0[_12608]._m5.x)) * g_BarnLights_1._m0[_12608]._m6.z;
 	                float _21316;
 	                if (g_BarnLights_1._m0[_12608]._m3.z > 0.0)
 	                {
@@ -2952,14 +2955,14 @@ PS
 	                float _11633;
 	                if (g_BarnLights_1._m0[_12608]._m2.w != 0.0)
 	                {
-	                    vec3 _10018 = g_BarnLights_1._m0[_12608]._m2.xyz - input_0.xyz;
-	                    float _18347 = dot(_10018, _10018);
+	                    vec3 _10019 = g_BarnLights_1._m0[_12608]._m2.xyz - input_0.xyz;
+	                    float _18347 = dot(_10019, _10019);
 	                    float _17647 = sqrt(_18347);
-	                    vec3 _21011 = _10018 - _16268;
+	                    vec3 _21011 = _10019 - _16268;
 	                    vec3 _10210;
 	                    do
 	                    {
-	                        vec3 _20229 = (_10018 + _16268) - _21011;
+	                        vec3 _20229 = (_10019 + _16268) - _21011;
 	                        float _25105 = dot(-_21011, _20229);
 	                        if (_25105 <= 0.0)
 	                        {
@@ -2973,8 +2976,8 @@ PS
 	                        }
 	                        break; // unreachable workaround
 	                    } while(false);
-	                    _11180 = _10018 / vec3(_17647);
-	                    _11633 = ((_19667 * (g_BarnLights_1._m0[_12608]._m2.w / max(_18347, g_BarnLights_1._m0[_12608]._m2.w))) * smoothstep(0.0, 1.0, g_BarnLights_1._m0[_12608]._m3.x + (g_BarnLights_1._m0[_12608]._m3.y * _17647))) * clamp(g_BarnLights_1._m0[_12608]._m6.x + (g_BarnLights_1._m0[_12608]._m6.y * dot(vec3((1.0 - (_23607 * g_BarnLights_1._m0[_12608]._m5.y)) - _18492, _9058 + _19825, (_14805 * g_BarnLights_1._m0[_12608]._m5.z) - (_17374 * g_BarnLights_1._m0[_12608]._m5.y)), normalize(_10210))), 0.0, 1.0);
+	                    _11180 = _10019 / vec3(_17647);
+	                    _11633 = ((_19667 * (g_BarnLights_1._m0[_12608]._m2.w / max(_18347, g_BarnLights_1._m0[_12608]._m2.w))) * smoothstep(0.0, 1.0, g_BarnLights_1._m0[_12608]._m3.x + (g_BarnLights_1._m0[_12608]._m3.y * _17647))) * clamp(g_BarnLights_1._m0[_12608]._m6.x + (g_BarnLights_1._m0[_12608]._m6.y * dot(vec3((1.0 - (_23607 * g_BarnLights_1._m0[_12608]._m5.y)) - _18492, _9058 + _19825, (_14805 * g_BarnLights_1._m0[_12608]._m5.z) - (_17373 * g_BarnLights_1._m0[_12608]._m5.y)), normalize(_10210))), 0.0, 1.0);
 	                }
 	                else
 	                {
@@ -2997,7 +3000,7 @@ PS
 	                    float _10342;
 	                    do
 	                    {
-	                        vec2 _22154 = abs(_23180.xy);
+	                        vec2 _22154 = abs(_23183.xy);
 	                        if (g_BarnLights_1._m0[_12608]._m9.z == 0.0)
 	                        {
 	                            _10342 = smoothstep(1.0, g_BarnLights_1._m0[_12608]._m9.x, _22154.x) * smoothstep(1.0, g_BarnLights_1._m0[_12608]._m9.y, _22154.y);
@@ -3008,9 +3011,9 @@ PS
 	                            float _11473 = _22154.x;
 	                            float _15266 = 2.0 / g_BarnLights_1._m0[_12608]._m9.z;
 	                            float _15017 = _22154.y;
-	                            float _23210 = (-0.5) * g_BarnLights_1._m0[_12608]._m9.z;
-	                            float _11981 = (g_BarnLights_1._m0[_12608]._m9.x * g_BarnLights_1._m0[_12608]._m9.y) * pow(max(pow(g_BarnLights_1._m0[_12608]._m9.y * _11473, _15266) + pow(g_BarnLights_1._m0[_12608]._m9.x * _15017, _15266), 1.1754943508222875079687365372222e-38), _23210);
-	                            float _16524 = pow(max(pow(_11473, _15266) + pow(_15017, _15266), 1.1754943508222875079687365372222e-38), _23210);
+	                            float _23213 = (-0.5) * g_BarnLights_1._m0[_12608]._m9.z;
+	                            float _11981 = (g_BarnLights_1._m0[_12608]._m9.x * g_BarnLights_1._m0[_12608]._m9.y) * pow(max(pow(g_BarnLights_1._m0[_12608]._m9.y * _11473, _15266) + pow(g_BarnLights_1._m0[_12608]._m9.x * _15017, _15266), 1.1754943508222875079687365372222e-38), _23213);
+	                            float _16524 = pow(max(pow(_11473, _15266) + pow(_15017, _15266), 1.1754943508222875079687365372222e-38), _23213);
 	                            if (_11981 < _16524)
 	                            {
 	                                _10342 = smoothstep(_16524, _11981, 1.0);
@@ -3040,16 +3043,16 @@ PS
 	                        vec3 _20479 = vec4((_23629 * _19008.w) + cross(_23629, _24989), _15156).xyz;
 	                        vec3 _23608 = _17795.xyz;
 	                        vec3 _12176 = ((_20479 * g_BarnLights_1._m0[_12608]._m5.w) + (_23608 * _15156)) + cross(_23608, _20479);
-	                        vec3 _14157 = vec3(vec2(atan(_12176.y, -_12176.x) * 0.15915493667125701904296875, acos(_12176.z) * 0.3183098733425140380859375), -g_BarnLights_1._m0[_12608]._m4.w);
-	                        vec2 _20564 = (_14157.xy * g_BarnLights_1._m0[_12608]._m9.zw) + g_BarnLights_1._m0[_12608]._m9.xy;
-	                        vec3 _20492 = _14157;
+	                        vec3 _14156 = vec3(vec2(atan(_12176.y, -_12176.x) * 0.15915493667125701904296875, acos(_12176.z) * 0.3183098733425140380859375), -g_BarnLights_1._m0[_12608]._m4.w);
+	                        vec2 _20564 = (_14156.xy * g_BarnLights_1._m0[_12608]._m9.zw) + g_BarnLights_1._m0[_12608]._m9.xy;
+	                        vec3 _20492 = _14156;
 	                        _20492.x = _20564.x;
 	                        _20492.y = _20564.y;
 	                        _12505 = _17828.xyz * textureLod(sampler3D(g_tLightCookieTexture, g_sTrilinearWrap), _20492.xyz, 0.0).xyz;
 	                    }
 	                    else
 	                    {
-	                        vec3 _13791 = vec3(fma(_23180.xy, vec2(0.5, -0.5), vec2(0.5)), g_BarnLights_1._m0[_12608]._m4.w);
+	                        vec3 _13791 = vec3(fma(_23183.xy, vec2(0.5, -0.5), vec2(0.5)), g_BarnLights_1._m0[_12608]._m4.w);
 	                        vec2 _20563 = (_13791.xy * g_BarnLights_1._m0[_12608]._m9.zw) + g_BarnLights_1._m0[_12608]._m9.xy;
 	                        vec3 _20491 = _13791;
 	                        _20491.x = _20563.x;
@@ -3064,13 +3067,13 @@ PS
 	                    _15674 = _16325;
 	                    break;
 	                }
-	                vec3 _23218;
+	                vec3 _23221;
 	                if (_24419)
 	                {
 	                    vec3 _19629;
 	                    if ((g_BarnLights_1._m0[_12608]._m13 & 4u) != 0u)
 	                    {
-	                        vec2 _6281 = _23180.yx * vec2(1.0, -1.0);
+	                        vec2 _6281 = _23183.yx * vec2(1.0, -1.0);
 	                        vec3 _23748 = _21642;
 	                        _23748.x = _6281.x;
 	                        _23748.y = _6281.y;
@@ -3110,11 +3113,11 @@ PS
 	                        _15674 = _16325;
 	                        break;
 	                    }
-	                    _23218 = _19878;
+	                    _23221 = _19878;
 	                }
 	                else
 	                {
-	                    _23218 = _21548;
+	                    _23221 = _21548;
 	                }
 	                float _11798 = max(0.0, dot(_24283.xyz, _11180.xyz));
 	                vec2 _9843 = max(_11004, vec2(g_BarnLights_1._m0[_12608]._m11));
@@ -3123,7 +3126,7 @@ PS
 	                vec3 _17702 = mix(_15460, _24735, bvec3(all(equal(_15460, vec3(1.0))))).xyz;
 	                float _7801 = dot(_12290, _17702);
 	                float _25074 = max(0.0, dot(_17702, _21890));
-	                vec3 _23220 = _12351.xyz;
+	                vec3 _23223 = _12351.xyz;
 	                vec2 _15878 = _9843.xy;
 	                vec2 _21240 = _15878 * _15878;
 	                vec3 _14559 = (vec3(dot(_12290, _10949.xyz), dot(_12290, _20096.xyz), _7801) / vec3(_21240.xy, 1.0)).xyz;
@@ -3132,20 +3135,20 @@ PS
 	                float _6836 = _11848 * (_11848 * 0.125);
 	                float _19569 = 1.0 - _6836;
 	                float _18395 = 1.0 / ((_17623 * ((_17623 * _21240.x) * _21240.y)) * ((4.0 * ((_11798 * _19569) + _6836)) * ((_25074 * _19569) + _6836)));
-	                float _11629;
+	                float _11630;
 	                if (_14878)
 	                {
 	                    float _9252 = dot(_9843.xy, vec2(0.5));
 	                    float _20830 = max(_9252 * _9252, 9.9999997473787516355514526367188e-06);
 	                    float _21402 = saturate(_25074 + 0.001000000047497451305389404296875);
-	                    _11629 = mix(_18395, (((((2.0 + (1.0 / _20830)) * pow(1.0 - (_7801 * _7801), 0.5 / _20830)) * 0.159154832363128662109375) * (0.25 / ((_11798 + _21402) - (_11798 * _21402)))) * 3.1415927410125732421875) * _11798, _7397);
+	                    _11630 = mix(_18395, (((((2.0 + (1.0 / _20830)) * pow(1.0 - (_7801 * _7801), 0.5 / _20830)) * 0.159154832363128662109375) * (0.25 / ((_11798 + _21402) - (_11798 * _21402)))) * 3.1415927410125732421875) * _11798, _7397);
 	                }
 	                else
 	                {
-	                    _11629 = _18395;
+	                    _11630 = _18395;
 	                }
-	                _13212 = _13153.xyz + ((((_23220 + ((vec3(1.0) - _23220) * pow(max(9.9999999747524270787835121154785e-07, 1.0 - max(0.0, dot(_11180.xyz, _12290))), 5.0))) * _11629).xyz * _11798).xyz * _23218.xyz);
-	                _15674 = _16325.xyz + (vec3(_11798).xyz * _23218.xyz);
+	                _13212 = _13153.xyz + ((((_23223 + ((vec3(1.0) - _23223) * pow(max(9.9999999747524270787835121154785e-07, 1.0 - max(0.0, dot(_11180.xyz, _12290))), 5.0))) * _11630).xyz * _11798).xyz * _23221.xyz);
+	                _15674 = _16325.xyz + (vec3(_11798).xyz * _23221.xyz);
 	                break;
 	            } while(false);
 	            _13153 = _13212;
@@ -3164,20 +3167,20 @@ PS
 	    vec3 _19257 = -_10145;
 	    float _19582 = (_11004.x + _11004.y) * 0.5;
 	    float _6522 = _19582 * _19582;
-	    vec3 _23132 = vec3(1.0) + (_12351 * (((2.0 * _6522) * _6522) * clamp(dot(_15460, _19257), 0.0, 1.0)));
+	    vec3 _23135 = vec3(1.0) + (_12351 * (((2.0 * _6522) * _6522) * clamp(dot(_15460, _19257), 0.0, 1.0)));
 	    vec3 _10288;
 	    if (_14878)
 	    {
-	        _10288 = mix(_23132, vec3(1.0), vec3(_7397));
+	        _10288 = mix(_23135, vec3(1.0), vec3(_7397));
 	    }
 	    else
 	    {
-	        _10288 = _23132;
+	        _10288 = _23135;
 	    }
 	    float _17751 = dot(_11004.xy, vec2(0.5));
 	    vec3 _16992 = _19257.xyz;
-	    vec3 _23231 = mix(_10949.xyz, _20096.xyz, vec3(step(_10921, _18262))).xyz;
-	    vec3 _11082 = normalize(mix(_15460.xyz, normalize(cross(cross(_16992, _23231).xyz, _23231)).xyz, vec3((1.0 - min(_18262, _10921)) * 0.5)));
+	    vec3 _23234 = mix(_10949.xyz, _20096.xyz, vec3(step(_10921, _18262))).xyz;
+	    vec3 _11082 = normalize(mix(_15460.xyz, normalize(cross(cross(_16992, _23234).xyz, _23234)).xyz, vec3((1.0 - min(_18262, _10921)) * 0.5)));
 	    vec3 _19630;
 	    if (_14878)
 	    {
@@ -3188,31 +3191,31 @@ PS
 	        _19630 = _11082;
 	    }
 	    float _23609 = PerViewLightingConstantBufferGpu_t._m14.y * sqrt(_17751);
-	    float _17383 = _17751 * _17751;
-	    float _20711 = saturate(1.0 - _17383);
-	    vec3 _25271 = normalize(mix(_19630, reflect(_10145.xyz, _19630.xyz).xyz, vec3(_20711 * (sqrt(_20711) + _17383))));
+	    float _17382 = _17751 * _17751;
+	    float _20712 = saturate(1.0 - _17382);
+	    vec3 _25271 = normalize(mix(_19630, reflect(_10145.xyz, _19630.xyz).xyz, vec3(_20712 * (sqrt(_20712) + _17382))));
 	    uvec2 _6815 = uvec2(_21298.xy - PerViewConstantBuffer_t._m0.xy) >> _7663;
 	    uint _19949 = PerViewLightingConstantBufferGpu_t._m11.y + (((_6815.y * PerViewLightingConstantBufferGpu_t._m12.y) + _6815.x) * PerViewLightingConstantBufferGpu_t._m11.z);
 	    uint _23394 = PerViewLightingConstantBufferGpu_t._m11.x + (uint(clamp(_6484 * PerViewLightingConstantBufferGpu_t._m13.x, 0.0, PerViewLightingConstantBufferGpu_t._m13.y)) * PerViewLightingConstantBufferGpu_t._m11.z);
 	    vec4 _13154;
 	    float _16320;
-	    vec3 _17384;
+	    vec3 _17383;
 	    _13154 = vec4(0.0);
 	    _16320 = 0.00999999977648258209228515625;
-	    _17384 = vec3(0.0);
+	    _17383 = vec3(0.0);
 	    uint _8896;
 	    vec4 _13157;
 	    vec3 _14891;
 	    float _16322;
 	    bool _18379;
 	    uint _17019 = 0u;
-	    bool _17385 = false;
+	    bool _17384 = false;
 	    for (;;)
 	    {
 	        bool _12926;
 	        if (_17019 < PerViewLightingConstantBufferGpu_t._m11.z)
 	        {
-	            _12926 = !_17385;
+	            _12926 = !_17384;
 	        }
 	        else
 	        {
@@ -3225,14 +3228,14 @@ PS
 	        uint _14476 = subgroupOr(g_CullBits_1._m0[_19949 + _17019] & g_CullBits_1._m0[_23394 + _17019]);
 	        vec3 _13155;
 	        vec4 _16321;
-	        _13155 = _17384;
+	        _13155 = _17383;
 	        _16321 = _13154;
 	        uint _10159;
 	        vec3 _13156;
 	        vec4 _16382;
 	        float _16481;
 	        uint _17020 = _14476;
-	        float _17386 = _16320;
+	        float _17385 = _16320;
 	        for (;;)
 	        {
 	            bool _7956_ladder_break = false;
@@ -3241,9 +3244,9 @@ PS
 	                if (!(_17020 != 0u))
 	                {
 	                    _13157 = _16321;
-	                    _16322 = _17386;
+	                    _16322 = _17385;
 	                    _14891 = _13155;
-	                    _18379 = _17385;
+	                    _18379 = _17384;
 	                    _7956_ladder_break = true;
 	                    break;
 	                }
@@ -3254,31 +3257,31 @@ PS
 	                vec3 _21376 = _11129.xyz;
 	                vec3 _8793 = clamp((_21376 - PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m1) * PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m4.xyz, vec3(0.0), vec3(1.0));
 	                vec3 _19651 = clamp((PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m3 - _21376) * PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m4.xyz, vec3(0.0), vec3(1.0));
-	                float _17387 = min(min(_8793.x, min(_8793.y, _8793.z)), min(_19651.x, min(_19651.y, _19651.z)));
-	                if (_17387 == 0.0)
+	                float _17386 = min(min(_8793.x, min(_8793.y, _8793.z)), min(_19651.x, min(_19651.y, _19651.z)));
+	                if (_17386 == 0.0)
 	                {
 	                    _13156 = _13155;
 	                    _16382 = _16321;
-	                    _16481 = _17386;
+	                    _16481 = _17385;
 	                    break;
 	                }
 	                vec3 _24234 = _11129.xyz;
 	                vec3 _7648 = (_16416 * vec4(_25271.xyz, 0.0)).xyz;
 	                vec3 _11302 = max(((PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m3.xyz - _24234) / _7648).xyz, ((PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m1.xyz - _24234) / _7648).xyz);
-	                float _11076 = ((_17387 * _17387) * (((-2.0) * _17387) + 3.0)) * (1.0 - _17386);
-	                float _13713 = _17386 + _11076;
-	                vec3 _23259 = _13155 + ((textureLod(samplerCubeArray(g_tEnvironmentMap, g_sTrilinearWrap), vec4(mix(_24234 + (_7648 * abs(min(_11302.x, min(_11302.y, _11302.z)))), _7648, vec3(_17751)).xyz, float(PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m2)), _23609).xyz * PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m5) * _11076);
+	                float _11076 = ((_17386 * _17386) * (((-2.0) * _17386) + 3.0)) * (1.0 - _17385);
+	                float _13713 = _17385 + _11076;
+	                vec3 _23262 = _13155 + ((textureLod(samplerCubeArray(g_tEnvironmentMap, g_sTrilinearWrap), vec4(mix(_24234 + (_7648 * abs(min(_11302.x, min(_11302.y, _11302.z)))), _7648, vec3(_17751)).xyz, float(PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m2)), _23609).xyz * PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m5) * _11076);
 	                vec4 _17103 = _16321 + (PerViewLightingConstantBufferGpu_t._m15._m0[_12609]._m6 * _11076);
 	                if (_13713 > 0.9900000095367431640625)
 	                {
 	                    _13157 = _17103;
 	                    _16322 = _13713;
-	                    _14891 = _23259;
+	                    _14891 = _23262;
 	                    _18379 = true;
 	                    _7956_ladder_break = true;
 	                    break;
 	                }
-	                _13156 = _23259;
+	                _13156 = _23262;
 	                _16382 = _17103;
 	                _16481 = _13713;
 	                break;
@@ -3289,15 +3292,15 @@ PS
 	            }
 	            _13155 = _13156;
 	            _16321 = _16382;
-	            _17386 = _16481;
+	            _17385 = _16481;
 	            _17020 = _10159;
 	            continue;
 	        }
 	        _8896 = _17019 + 1u;
 	        _13154 = _13157;
 	        _16320 = _16322;
-	        _17384 = _14891;
-	        _17385 = _18379;
+	        _17383 = _14891;
+	        _17384 = _18379;
 	        _17019 = _8896;
 	        continue;
 	    }
@@ -3309,7 +3312,7 @@ PS
 	    if (_14878)
 	    {
 	        float _7173 = dot(normalize(_13505 + _16992).xyz, _13505);
-	        float _22187 = max(_17383, 9.9999997473787516355514526367188e-06);
+	        float _22187 = max(_17382, 9.9999997473787516355514526367188e-06);
 	        float _21363 = saturate(_20784 + 0.001000000047497451305389404296875);
 	        _10020 = 1.0 - _7397;
 	        _23440 = mix(_18995, _12351 * (((((2.0 + (1.0 / _22187)) * pow(1.0 - (_7173 * _7173), 0.5 / _22187)) * 0.159154832363128662109375) * (0.25 / ((1.0 + _21363) - _21363))) * 3.1415927410125732421875), vec3(_7397));
@@ -3322,19 +3325,19 @@ PS
 	    float _8840 = 1.0 - _11487.y;
 	    vec3 _15517 = _12351 + ((vec3(1.0) - _12351) * vec3(0.0476190485060214996337890625));
 	    vec3 _20883 = ((_23440 * _15517) / (vec3(1.0) - (_15517 * _8840))) * _8840;
-	    vec3 _13442 = vec3(_20239 * _21785).xyz;
-	    vec3 _23269 = ((_13152.xyz * vec3(_21785)).xyz + ((_18708 * mix(vec3(1.0), vec3(1.0) - (_23440 + _20883), vec3(_10020))).xyz * vec3(_21785 * _20239).xyz).xyz) * (_9327 * _23038).xyz;
-	    float _12931 = _23269.x;
-	    vec4 _11203 = vec4(_12931, _23269.yz, input_3.w);
+	    vec3 _13440 = vec3(_20239 * _21721).xyz;
+	    vec3 _23272 = (_13152.xyz + ((_18708 * mix(vec3(1.0), vec3(1.0) - (_23440 + _20883), vec3(_10020))).xyz * vec3(_21721 * _20239).xyz).xyz) * (_9327 * _23038).xyz;
+	    float _12931 = _23272.x;
+	    vec4 _11203 = vec4(_12931, _23272.yz, input_3.w);
 	    _11203.x = _12931;
-	    _11203.y = _23269.y;
-	    _11203.z = _23269.z;
-	    vec3 _15753 = _11203.xyz + ((_16324 * _10288).xyz * _13442).xyz;
+	    _11203.y = _23272.y;
+	    _11203.z = _23272.z;
+	    vec3 _15753 = _11203.xyz + ((_16324 * _10288).xyz * _13440).xyz;
 	    vec4 _20493 = _11203;
 	    _20493.x = _15753.x;
 	    _20493.y = _15753.y;
 	    _20493.z = _15753.z;
-	    vec3 _15733 = _20493.xyz + ((((_17384 / vec3(_16320)).xyz * min(dot(_18708.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)) / dot(vec4(_19630.xyz, 1.0), (_13154 / vec4(_16320)).xyzw), max((_17751 * PerViewLightingConstantBufferGpu_t._m4.x) + PerViewLightingConstantBufferGpu_t._m4.y, 1.0))).xyz * (_23440 + (_20883 * _10020))).xyz * _13442).xyz;
+	    vec3 _15733 = _20493.xyz + ((((_17383 / vec3(_16320)).xyz * min(dot(_18708.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)) / dot(vec4(_19630.xyz, 1.0), (_13154 / vec4(_16320)).xyzw), max((_17751 * PerViewLightingConstantBufferGpu_t._m4.x) + PerViewLightingConstantBufferGpu_t._m4.y, 1.0))).xyz * (_23440 + (_20883 * _10020))).xyz * _13440).xyz;
 	    vec4 _13888 = _20493;
 	    _13888.x = _15733.x;
 	    _13888.y = _15733.y;
@@ -3343,12 +3346,12 @@ PS
 	    if (_Globals_.g_bFogEnabled != 0)
 	    {
 	        vec3 _21493;
-	        vec3 _23272 = _16191.xyz - PerViewConstantBuffer_t._m3.xyz;
-	        vec3 _9057 = _23272.xyz;
+	        vec3 _23274 = _16191.xyz - PerViewConstantBuffer_t._m3.xyz;
+	        vec3 _9057 = _23274.xyz;
 	        vec3 _19340;
 	        do
 	        {
-	            _21493 = _23272.xyz;
+	            _21493 = _23274.xyz;
 	            bool _12928;
 	            if (dot(_21493, _21493) > PerViewConstantBufferCsgo_t._m10.x)
 	            {

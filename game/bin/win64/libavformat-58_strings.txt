@@ -2257,7 +2257,6 @@ bitstream
 block_lr
 block_rl
 blocksize
-both
 bottom_top
 brand
 buf_size >= 0

@@ -42,9 +42,9 @@ VS
 	StaticCombo( S_LIGHTING_ONLY, F_LIGHTING_ONLY );
 	
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
-	cbuffer SkyConstantBuffer_t < Attribute("SkyConstantBuffer_t"); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
+	float4x4 g_matSkyWsToOs < Attribute("SkyWsToOs"); >;
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 4459 (name: PerViewConstantBuffer_t), member index 1 (name: _m1) cannot be expressed with either HLSL packing layout or packoffset.
@@ -52,37 +52,32 @@ VS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2872 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2860 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
-	struct _604
-	{
-	    vec4 _m0[3];
-	};
-	
-	struct _2662
+	struct anon_g_matSkyWsToOs
 	{
 	    vec4 _m0[4];
 	};
 	
 	struct _2167
 	{
-	    _604 _m0;
+	    anon_g_matSkyWsToOs g_matSkyWsToOs;
 	};
 	
-	layout(set = 0) uniform _2167 SkyConstantBuffer_t;
+	layout(set = 0) uniform _2167 _Globals_;
 	
-	struct _497
+	struct _2403
 	{
-	    _2662 _m0;
+	    anon_g_matSkyWsToOs _m0;
 	    float _m1;
 	    float _m2;
 	    vec4 _m3;
 	    vec3 _m4;
 	};
 	
-	layout(set = 0) uniform _497 PerViewConstantBuffer_t;
+	layout(set = 0) uniform _2403 PerViewConstantBuffer_t;
 	
 	layout(location = 0) in vec4 vPositionOs;
 	layout(location = 0) out vec3 output_0;
@@ -92,7 +87,7 @@ VS
 	{
 	    vec3 _5578 = PerViewConstantBuffer_t._m4.xyz + (vPositionOs.xyz * (PerViewConstantBuffer_t._m1 + PerViewConstantBuffer_t._m2));
 	    vec4 _23552 = (vec4(_5578.xyz, 1.0) + (PerViewConstantBuffer_t._m3 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	    output_0 = normalize((mat4x3(vec3(SkyConstantBuffer_t._m0._m0[0].x, SkyConstantBuffer_t._m0._m0[1].x, SkyConstantBuffer_t._m0._m0[2].x), vec3(SkyConstantBuffer_t._m0._m0[0].y, SkyConstantBuffer_t._m0._m0[1].y, SkyConstantBuffer_t._m0._m0[2].y), vec3(SkyConstantBuffer_t._m0._m0[0].z, SkyConstantBuffer_t._m0._m0[1].z, SkyConstantBuffer_t._m0._m0[2].z), vec3(SkyConstantBuffer_t._m0._m0[0].w, SkyConstantBuffer_t._m0._m0[1].w, SkyConstantBuffer_t._m0._m0[2].w)) * vec4(vPositionOs.xyz, 0.0)).xyz);
+	    output_0 = normalize((mat4(vec4(_Globals_.g_matSkyWsToOs._m0[0].x, _Globals_.g_matSkyWsToOs._m0[1].x, _Globals_.g_matSkyWsToOs._m0[2].x, _Globals_.g_matSkyWsToOs._m0[3].x), vec4(_Globals_.g_matSkyWsToOs._m0[0].y, _Globals_.g_matSkyWsToOs._m0[1].y, _Globals_.g_matSkyWsToOs._m0[2].y, _Globals_.g_matSkyWsToOs._m0[3].y), vec4(_Globals_.g_matSkyWsToOs._m0[0].z, _Globals_.g_matSkyWsToOs._m0[1].z, _Globals_.g_matSkyWsToOs._m0[2].z, _Globals_.g_matSkyWsToOs._m0[3].z), vec4(_Globals_.g_matSkyWsToOs._m0[0].w, _Globals_.g_matSkyWsToOs._m0[1].w, _Globals_.g_matSkyWsToOs._m0[2].w, _Globals_.g_matSkyWsToOs._m0[3].w)) * vec4(vPositionOs.xyz, 0.0)).xyz);
 	    output_1 = _5578;
 	    _23552.y = -_23552.y;
 	    gl_Position = _23552;
@@ -148,9 +143,9 @@ PS
 	
 	cbuffer _Globals_ : register(b0, space1)
 	{
-	    float _Globals_1_g_flBrightnessExposureBias : packoffset(c0.z);
-	    float _Globals_1_g_flRenderOnlyExposureBias : packoffset(c0.w);
-	    float3 _Globals_1_g_vTint : packoffset(c1);
+	    float _Globals_1_g_flBrightnessExposureBias : packoffset(c4.z);
+	    float _Globals_1_g_flRenderOnlyExposureBias : packoffset(c4.w);
+	    float3 _Globals_1_g_vTint : packoffset(c5);
 	};
 	
 	TextureCube<float4> g_tSkyTexture : register(t52, space1);

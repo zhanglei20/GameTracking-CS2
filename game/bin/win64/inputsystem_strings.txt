@@ -19,7 +19,8 @@
 .bmp
 /cursor.res
 00000409
-=Ceq
+2\vpP
+=Cer
 ACUTE_ACCENT
 AC_BACK
 AC_BOOKMARKS

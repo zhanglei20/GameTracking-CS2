@@ -56,6 +56,7 @@
  with base 
 !AxU
 !TdM
+!V_isempty( pSecretKey )
 !link
 "%s","%s",%s,"%s"\n
 "0x%llX"
@@ -76,7 +77,6 @@
 #include is NULL 
 #int#
 #nyf
-#vpcf1
 $Ib?s
 $eax
 $ebp
@@ -224,7 +224,6 @@ $xmm9
 %s bytes used out of %s bytes available (%.2f%%)
 %s called on a pool arena (no root available)\n
 %s is out of range for KeyValues, which doesn't support signed 64-bit numbers
-%s not expected here.  A valid JSON document should be a single object, which begins with '{' and ends with '}'
 %s not expected here.  Missing ',' or ']'?
 %s not expected here.  Missing ',' or '}'?
 %s not expected here.  Missing ':'?
@@ -247,6 +246,9 @@ $xmm9
 %s: In debug session, letting debugger have a crack at it.\n
 %s: Invalid lock state %d\n
 %s: Start\n
+%s: ThreadPoolTest: YieldWaitPerFrameJobs - Basic test (%d jobs executed)\n
+%s: ThreadPoolTest: YieldWaitPerFrameJobs - Dynamic spawn test (%d initial + %d spawned = %d total)\n
+%s: ThreadPoolTest: YieldWaitPerFrameJobs - Only per-frame jobs executed by main thread test\n
 %s: Unable to get executable filename (%d byte buffer).
 %s: Unable to load SDL\n
 %s: added string size %d overflows (added to %d)\n
@@ -291,7 +293,6 @@ $xmm9
 %u MB memory used assuming maximum PageHeap overhead.\n
 %u lifetime allocations (%u delta).\n
 %u outstanding allocations (%d delta).\n
-%vmdlkeys0
 &?PPPPPPP?
 &AElig;
 &Aacute;
@@ -528,13 +529,7 @@ $xmm9
 .?AV?$_Func_base@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??StopThreads@CThreadPool@@AEAAX_N@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?8??FiberPoolDefaultWorker@@YA_KPEAX@Z@X$$V@std@@
-.?AV?$basic_memory_buffer@D$0BPE@V?$allocator@D@std@@@v9@fmt@@
-.?AV?$basic_memory_buffer@H$0BPE@V?$allocator@H@std@@@v9@fmt@@
-.?AV?$basic_memory_buffer@I$0CA@V?$allocator@I@std@@@v9@fmt@@
-.?AV?$buffer@D@detail@v9@fmt@@
-.?AV?$buffer@H@detail@v9@fmt@@
-.?AV?$buffer@I@detail@v9@fmt@@
-.?AV?$iterator_buffer@PEADDUbuffer_traits@detail@v9@fmt@@@detail@v9@fmt@@
+.?AV?$format_facet@Vlocale@std@@@v12@fmt@@
 .?AV?$numpunct@D@std@@
 .?AVCAsyncScheduledFunctionManager@@
 .?AVCBufferStringFormatOutputStream@@
@@ -565,6 +560,7 @@ $xmm9
 .?AVCMiniDumpCommentBuilderBase@@
 .?AVCOneTimeEvent@@
 .?AVCParallelProcessorAbstract_Base@@
+.?AVCPerFrameTestJob@ThreadPoolTest@@
 .?AVCPooledStdFunctionJob@@
 .?AVCProcess@@
 .?AVCProcessPipeRead@@
@@ -572,6 +568,7 @@ $xmm9
 .?AVCQueueOps@TSListTests@@
 .?AVCReportOutput_Lambda@?1???$PrintReportLambda@V<lambda_1>@?1??PrintReport@CUtlReportPrinter@@QEBAXHW4LoggingSeverity_t@@AEBVReportOpt@@@Z@@CUtlReportPrinter@@QEBAX$$QEAV<lambda_1>@?1??PrintReport@1@QEBAXHW4LoggingSeverity_t@@AEBVReportOpt@@@Z@1@Z@
 .?AVCSimpleLoggingListener@@
+.?AVCSpawningPerFrameTestJob@ThreadPoolTest@@
 .?AVCStdFunctionJob@@
 .?AVCStdIOFormatOutputStream@@
 .?AVCStringConstructor@CUtlStringTokenSystem@@
@@ -651,8 +648,10 @@ $xmm9
 .?AVerror_category@std@@
 .?AVexception@std@@
 .?AVfacet@locale@std@@
+.?AVformat_error@v12@fmt@@
 .?AVlength_error@std@@
 .?AVlogic_error@std@@
+.?AVout_of_range@std@@
 .?AVruntime_error@std@@
 .?AVsystem_error@std@@
 .?AVtype_info@@
@@ -770,11 +769,11 @@ $xmm9
 1#QNAN
 1#SNAN
 1.2.11
+11:22:02
 11UT
 11Y@
 11eU%
 127.0.0.1
-17:07:20
 1;TRUE;YES;ON
 1A26b
 1DBlend
@@ -782,8 +781,6 @@ $xmm9
 1wsHp
 2,THh
 28~v
-2\vpX
-2\vpl
 2aNuE
 3 FB
 3+5<t
@@ -796,6 +793,7 @@ $xmm9
 3\r53h&
 3o=q
 3wl'
+420p
 4JpI?=
 4\tgA
 4^K\fOI
@@ -810,7 +808,6 @@ $xmm9
 5\fE5d
 5m8>8=t
 5nsfZ
-5tX&1
 64-bit DWARF format is not supported\n
 67VW
 6A_p
@@ -890,7 +887,6 @@ $xmm9
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 =1cb
-=3H|1
 =87M
 =9tau
 =cQ6
@@ -1251,14 +1247,15 @@ $xmm9
 ?AssertValid@CCircularBuffer@@IEAAXXZ
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
-?Assert_ConditionFailed@@YA_NPEBDI00W4AssertionType_t@@I0ZZ
-?Assert_ConditionFailed@@YA_NPEBDI00W4AssertionType_t@@I@Z
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@@Z
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?AssignNextTimespanId@CVProfile@@QEAAHXZ
 ?AssumeMemory@CUtlBuffer@@QEAAXPEAXHHW4BufferFlags_t@1@@Z
 ?AtRoot@CVProfile@@QEBA_NXZ
 ?AttemptToLoad@CDbgHelpFunctionsLoader@@AEAAXXZ
 ?AttemptToLoad@CImageHlpFunctionsLoader@@AEAAXXZ
 ?AttemptToLoad@CPSApiFunctionsLoader@@AEAAXXZ
+?Authenticate@Blake3SignedHash_t@@QEBA_NPEBD@Z
 ?BaseSymCleanup@CDbgHelpFunctionsLoader@@QEAAXPEAX@Z
 ?BaseSymInitialize@CDbgHelpFunctionsLoader@@QEAAXPEAXPEBD_N@Z
 ?BeginItem@IFormatOutputStream@@UEAAXXZ
@@ -1322,6 +1319,7 @@ $xmm9
 ?CreateKeyUsingKnownLastChild@KeyValues@@QEAAPEAV1@PEBDPEAV1@@Z
 ?CreateNewKey@KeyValues@@QEAAPEAV1@XZ
 ?CreatePeerKey@KeyValues@@QEAAPEAV1@PEBD@Z
+?CreateUnsignedHash@Blake3SignedHash_t@@SA?AU1@PEBX_K@Z
 ?CurrentFileFullPath@CDirIterator@@QEAAPEBDXZ
 ?DebugPrintKV3@@YAXPEBVKeyValues3@@@Z
 ?Debug_GetAllocationsSnapshot@CPoolAllocator@@QEBAXPEAV?$CUtlVector@UHandle_t@CPoolAllocator@@HV?$CUtlVectorMemory_Growable@UHandle_t@CPoolAllocator@@H$0A@@@@@@Z
@@ -1330,6 +1328,9 @@ $xmm9
 ?DelayAllQueuedCommands@CCommandBuffer@@QEAAXH@Z
 ?DeletePathStringBuffer@CPathString@@SAXPEAUBuffer_t@1@@Z
 ?DeleteWCharPath@CPathString@@IEAAXXZ
+?DelimitedHeader@CGridStringPrinter@@QEAAXDPEBDZZ
+?DelimitedPrint@CGridStringPrinter@@QEAAXDPEBDZZ
+?DelimitedPrint_SetTrimValues@CGridStringPrinter@@QEAAX_N@Z
 ?DequeueNextCommand@CCommandBuffer@@QEAAHAEAPEAPEBD@Z
 ?DequeueNextCommand@CCommandBuffer@@QEAA_NXZ
 ?DereferenceString@CCountedStringPool_CI@@QEAAXPEBD@Z
@@ -1363,6 +1364,7 @@ $xmm9
 ?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
 ?EndItem@IFormatOutputStream@@UEAAXXZ
 ?EndProcessingCommands@CCommandBuffer@@QEAAXXZ
+?EndsWith@CBufferString@@QEBA_NAEBV1@@Z
 ?EndsWith@CBufferString@@QEBA_NPEBD@Z
 ?EndsWith_FastCaseInsensitive@CBufferString@@QEBA_NPEBD@Z
 ?EnforceTypeAndSize@CFormatStringElement@@QEAAXPEBD0@Z
@@ -1529,7 +1531,7 @@ $xmm9
 ?FormatV@CUtlString@@QEAAHPEBDPEAD@Z
 ?Formatting_AdjustIndentation@@YAXH@Z
 ?Free3D@CUtl3DAllocator2@@QEAAXAEBURect3D_t@@@Z
-?Free@CPoolAllocator@@QEAAXUHandle_t@1@@Z
+?Free@CPoolAllocator@@QEAA_NUHandle_t@1@@Z
 ?Free@CUtlMemoryArena@@QEAAIPEAE@Z
 ?Free@CUtlMemoryPoolBase@@QEAAXPEAX@Z
 ?FreeInts@CVariableBitStringBase@@AEAAXXZ
@@ -1604,6 +1606,7 @@ $xmm9
 ?GetGameInfoFloat@@YAMPEBDM@Z
 ?GetGameInfoInt@@YAHPEBDH@Z
 ?GetGameInfoKey@@YAPEAVKeyValues@@PEBD@Z
+?GetGameInfoPlatformSpecificBool@@YA_NPEBD_N@Z
 ?GetGameInfoString@@YAPEBDPEBD0PEAD_K@Z
 ?GetGameInfoUint64@@YA_KPEBD_K@Z
 ?GetHandle@CThreadSyncObject@@QEBAPEAXXZ
@@ -2192,11 +2195,13 @@ $xmm9
 ?SetWordWrapColumn@CGridStringPrinter@@QEAAXH_N0@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?ShutdownInstance@CSingleAppInstance@@QEAAXXZ
+?SignHash@Blake3SignedHash_t@@QEAAXPEBD@Z
 ?Signal@CThreadMultiWaitObject@@QEAAXXZ
 ?SimpleSpew@CGridStringPrinter@@QEBAXHPEBD@Z
 ?SimpleSpewColor@CGridStringPrinter@@QEBAXHAEBVColor@@PEBD@Z
 ?Sleep@CThread@@SAXI@Z
 ?Slice@CUtlString@@QEBA?AV1@HH@Z
+?Spew@CGridStringPrinter@@QEBAXHPEBD@Z
 ?SpewStats@CUtlLRUCacheBase@@SAXXZ
 ?SpewStrings@CCountedStringPool_CI@@QEBAXXZ
 ?SpewStrings@CUtlFilenameSymbolTable@@QEAAXXZ
@@ -2208,6 +2213,7 @@ $xmm9
 ?StackWalkEx_@CDbgHelpFunctionsLoader@@QEAAHKPEAX0PEAU_tagSTACKFRAME_EX@@0P6AH0_K0KPEAK@ZP6APEAX02@ZP6A_K02@ZP6A_K00PEAU_tagADDRESS64@@@ZK@Z
 ?Start@CThread@@UEAA_NIW4ThreadPriorityEnum_t@@@Z
 ?Start@CVProfile@@QEAAXXZ
+?StartsWith@CBufferString@@QEBA_NAEBV1@@Z
 ?StartsWith@CBufferString@@QEBA_NPEBD@Z
 ?StartsWith_FastCaseInsensitive@CBufferString@@QEBA_NPEBD@Z
 ?Stop@CDirIterator@@QEAAXXZ
@@ -2274,10 +2280,10 @@ $xmm9
 ?Terminate@CThread@@QEAA_NH@Z
 ?Terminate@IFormatOutputStream@@UEAAXXZ
 ?TestMarkerAgainstCapturedStackIndex@CCallStackMarkerBase@@QEBA_NPEBQEBXHH@Z
-?ThreadAtomicNotifyAll@@YAXPEAI@Z
-?ThreadAtomicNotifyN@@YAXPEAII@Z
-?ThreadAtomicNotifyOne@@YAXPEAI@Z
-?ThreadAtomicWait@@YAXPEAII@Z
+?ThreadAtomicNotifyAll@@YAXPEBI@Z
+?ThreadAtomicNotifyN@@YAXPEBII@Z
+?ThreadAtomicNotifyOne@@YAXPEBI@Z
+?ThreadAtomicWait@@YAXPECII@Z
 ?ThreadMultiWaitObjectSetCreate@@YAPEAUThreadMultiWaitObjectSet_t@@PEBQEAXPEBUThreadMultiWaitExtra_t@@H@Z
 ?ThreadProc@CThread@@KA_KPEAX@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
@@ -2551,8 +2557,10 @@ AppCaptureEnabled
 AppPolicyGetProcessTerminationMethod
 AppPolicyGetThreadInitializationType
 ApplyDiffs
+Apr 20 2026
 April
 AreFileApisANSI
+Assert
 AssertDlgThread
 Assertion Dialog could not be created. Breaking in debugger.\n
 Assertion Dialog could not be created. Ignoring assertion. Run under the debugger to break instead.\n
@@ -2638,6 +2646,8 @@ BeginPaint
 BenchmarkService001
 BentNormalData
 BinaryProperties_GetValue
+Blake3SignedHash_t::Authenticate
+Blake3SignedHash_t::SignHash
 BlendLayer
 BlendLayerBase
 BlendLayerPoseParam
@@ -2668,6 +2678,7 @@ C:\buildworker\csgo_rel_win64\build\src\public\tier0\threadmutex.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\tslist.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utldict.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\csgo_rel_win64\build\src\tier0\checksum_blake3.cpp
 C:\buildworker\csgo_rel_win64\build\src\tier0\coroutine.cpp
 C:\buildworker\csgo_rel_win64\build\src\tier0\fileio.cpp
 C:\buildworker\csgo_rel_win64\build\src\tier0\keyvalues3_kv1textwriter.cpp
@@ -3289,8 +3300,8 @@ CUtlLeanVectorBase<struct UtlLinkedListElem_t<struct CCvar::SharedCommandData_t,
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<struct ConVarInfo_t *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<char const *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct ConVarOrConCommand,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<struct CallRecordKey_t,struct CallRecordParam_t,class CDefEquals<struct CallRecordKey_t>,struct HashMapFunctor_t<struct CallRecordKey_t>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<struct CallRecordKey_t,struct CallRecordParam_t,class CDefEquals<struct CallRecordKey_t>,struct HashMapFunctor_t<struct CallRecordKey_t>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct CThreadMonitorData::ThreadRecord_t,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct CThreadMonitorData::ThreadRecord_t,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<struct CallRecordKey_t,struct CallRecordParam_t,class CDefEquals<struct CallRecordKey_t>,struct DefaultHashFunctor<struct CallRecordKey_t>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<struct CallRecordKey_t,struct CallRecordParam_t,class CDefEquals<struct CallRecordKey_t>,struct DefaultHashFunctor<struct CallRecordKey_t>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct CThreadMonitorData::ThreadRecord_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct CThreadMonitorData::ThreadRecord_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<float const *,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<float const *,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLinkedList overflow! (exhausted index range)\n
@@ -3329,6 +3340,7 @@ C_INIT_CreateInEpitrochoid
 C_INIT_CreateOnModel
 C_INIT_CreateOnModelAtHeight
 C_INIT_CreateSequentialPath
+C_INIT_CreateSpiralSphere
 C_INIT_CreateWithinBox
 C_INIT_CreateWithinSphere
 C_INIT_CreateWithinSphereTransform
@@ -3503,6 +3515,7 @@ Client Input/Output
 Client Physics
 Client Rendering
 Client Simulation
+ClientServerSharedHandleSystem001
 ClientToolsInfo_001
 Client_Animation
 ClipIndex
@@ -3772,6 +3785,7 @@ EnsureChildProcessKillOnParentEnd() - Failed to create shared job object. OS err
 EnsureChildProcessKillOnParentEnd() - Failed to set flags on shared job object. OS error message:\n\t"%s"\n
 EnterCriticalSection
 Entry '%s' already has a name (ignoring update to '%s')\n
+EnumChildWindows
 EnumProcessModules
 EnumSystemLocalesEx
 EnumSystemLocalesW
@@ -3830,6 +3844,7 @@ F>qUxv
 FAIL: !IsEmpty()\n
 FAIL: !Validate()\n
 FAIL: Not all items popped\n
+FAILED
 FATAL
 FATAL ERROR: 
 FAYz
@@ -3952,7 +3967,6 @@ GameDVR_Enabled
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
-General
 GenerateHashFromUniqueId
 GenericGameData
 Generic_x86
@@ -3983,6 +3997,7 @@ GetCurrentProcessorNumberEx
 GetCurrentThread
 GetCurrentThreadId
 GetCurrentThreadStackLimits
+GetDC
 GetDateFormatEx
 GetDefaultMiniDumpHandler
 GetDefaultMiniDumpTypeFlags
@@ -4040,6 +4055,7 @@ GetNumaProcessorNode
 GetNumaProcessorNodeEx
 GetOEMCP
 GetObjectA
+GetParent
 GetPerfSortedLogicalProcessors
 GetPhysicallyInstalledSystemMemory
 GetPlatformName
@@ -4066,6 +4082,7 @@ GetSystemTimePreciseAsFileTime
 GetSystemTimes
 GetTempPath2W
 GetTempPathW
+GetTextMetricsA
 GetThreadDescription
 GetThreadInformationBlock
 GetThreadLocalStackAllocator
@@ -4131,7 +4148,6 @@ Hit end of line before closing quote (%c)
 Hits/Min
 Hj`F
 HostStateMgr001
-I7p(1
 I;u>A
 IAnimAction
 IAnimClipData
@@ -4335,6 +4351,7 @@ InitializeSListHead
 InitializeSRWLock
 InitializeSecurityDescriptor
 Inline attr without expected value\n
+Input contains no data
 InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
@@ -4439,7 +4456,6 @@ JAPANESE
 JIxX
 JJK1
 JSON error, unterminated element: 
-Jan 19 2026
 JanFebMarAprMayJunJulAugSepOctNovDec
 January
 Jjw[Sc
@@ -4861,8 +4877,10 @@ PARTICLE_VRHAND_CP
 PARTICLE_VRHAND_CP_OBJECT
 PARTICLE_VRHAND_LEFT
 PARTICLE_VRHAND_RIGHT
+PASSED
 PCLMULQDQ 
 PER_USER
+PFTest
 PF_BIAS_TYPE_EXPONENTIAL
 PF_BIAS_TYPE_STANDARD
 PF_MAP_TYPE_CURVE
@@ -4938,6 +4956,8 @@ Peak total virtual bytes: %s\n
 Peak working set: %s\n
 PeekMessageA
 PeekNamedPipe
+PerFrameTest_Basic
+PerFrameTest_OnlyPerFrameExecuted
 PhysicsBodyMarkup
 PhysicsBoneMarkup
 PhysicsBuilderMgr001
@@ -5277,11 +5297,6 @@ RPCRT4.dll
 RSDS
 RUSSIAN
 RVfQp
-R\fpX
-R\fpl
-R\vp!N
-R\vpX
-R\vpl
 RaiseException
 RandomFloat
 RandomFloatExp
@@ -5360,6 +5375,7 @@ RegisterMobileEventListener
 RegisterStringToken
 Regular entry table is not sorted\n
 Release
+ReleaseDC
 ReleaseMutex
 ReleaseSRWLockExclusive
 ReleaseSRWLockShared
@@ -5412,6 +5428,7 @@ RtlUnwindEx
 RtlVirtualUnwind
 RunTSListTests
 RunTSQueueTests
+RunThreadPoolPerFrameTests
 RunThreadPoolTests
 RunWithAlternateStack
 Running %s...\n
@@ -5649,6 +5666,7 @@ SceneUtils_001
 SchemaSystem_001
 SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
+ScreenToClient
 Scrub system off - not a dev build
 Scrubber: not a dev build\n
 SeLockMemoryPrivilege
@@ -5732,6 +5750,7 @@ Setting channel '%s' verbosity to '%s'.\n
 SetupWin32ConsoleIO
 Severity
 ShellExecuteExW
+Short read of args file %d < %lld\n
 ShouldAllowRestart
 Show all convars which are not at their default values (optional restricted to specific flags).
 Show the list of convars/concommands.
@@ -5997,9 +6016,15 @@ ThreadOpenProcess
 ThreadPoolTest:         %d threads -- %d (%d) jobs processed in %fms, %fms to suspend (%f/%f)\n
 ThreadPoolTest:     NO Sleep\n
 ThreadPoolTest:   NOT to completion\n
+ThreadPoolTest:   Non-per-frame jobs executed by the time the per-frame jobs finished: %d (main thread: %d)\n
+ThreadPoolTest:   Per-frame jobs executed: %d (main thread: %d)\n
 ThreadPoolTest:   To completion\n
+ThreadPoolTest: ===== RunThreadPoolPerFrame Tests Complete =====\n\n
 ThreadPoolTest: Job distribution speed\n
 ThreadPoolTest: Jobs doing work, %s main thread\n
+ThreadPoolTest: YieldWaitPerFrameJobs - Basic test\n
+ThreadPoolTest: YieldWaitPerFrameJobs - Dynamic spawn test\n
+ThreadPoolTest: YieldWaitPerFrameJobs - Only per-frame jobs executed by main thread\n
 ThreadReadProcessMemory
 ThreadSetDebugNameS2
 ThreadSetPerfSetAffinity
@@ -6104,7 +6129,6 @@ Unable to create thread in %s\n
 Unable to determine CPU Frequency\n
 Unable to determine ELF default base address\n
 Unable to determine Mach-O default base address\n
-Unable to determine buffer encoding.
 Unable to load COM\n
 Unable to load SDL\n
 Unable to load oleaut32\n
@@ -6250,7 +6274,6 @@ VMediaFoundation001
 VP4003
 VPLATFORM
 VPROJECT
-VPhysics2_Handle_Interface_001
 VPhysics2_Interface_001
 VProcessUtils002
 VProf
@@ -6265,6 +6288,7 @@ VProfLite_GetEnabled
 VProfLite_GetHistoricalData
 VProfLite_NextFrame
 VProfLite_SetEnabled
+VProfLite_SetExclusivePercentiles
 VProfService_001
 VProf_AssignNextTimespanId
 VProf_EnterScopeAdHoc
@@ -6292,7 +6316,9 @@ V_CompareNameWithWildcards
 V_CopyMemory3D
 V_CountTextLines
 V_DecodeBackslashSequencesInString
+V_DoubleToString_NoExponent
 V_DoubleToString_Unsafe
+V_ExpandScientificNotation
 V_ExtractDomainFromURL
 V_FixDoubleSlashes
 V_FixInvalidFileNameCharacters
@@ -6300,6 +6326,7 @@ V_FixInvalidPathCharacters
 V_FixSlashes
 V_FixupPathCharToUnderscore
 V_FixupPathSpaceToUnderscore
+V_FloatToString_NoExponent
 V_FloatToString_Unsafe
 V_GetErrno
 V_GetFileExtension
@@ -6524,6 +6551,7 @@ V_isfinited
 V_isinfd
 V_isnand
 V_isstrlower_fast
+V_isstrupper_fast
 V_isvalidhex
 V_iswalnum
 V_iswalpha
@@ -6679,7 +6707,7 @@ Vrad3_001
 Vtube
 VtuneApi32e.dll
 W 7x
-W)lQ
+W)lQx
 W/q#IX
 W4vC
 WARNING
@@ -6791,6 +6819,7 @@ Z>w_F
 ZSq>
 Z\>z8
 Zjz\v
+Zvpcf3
 ZwSetTimerResolution
 [   func+child         func ]
 [   func+child       func ]
@@ -6836,12 +6865,14 @@ ZwSetTimerResolution
 \nCwf\r
 \nLightweight verifier:\n
 \nOS memory stats:\n
+\nThreadPoolTest: ===== RunThreadPoolPerFrame Tests =====\n
 \n\nCMiniDumpComment encountered an error while generating the comment
 \nh?oT
 \nk>oB
+\ntier0.dll
+\r%s not expected here.  A valid JSON document should be a single object, which begins with '{' and ends with '}'
 \r00000000-0000-0000-0000-000000000000
-\rAssert
-\rInput contains no data
+\rGeneral
 \r\f\v\v\n\n\t\t\t\t\t
 \rmj>zjZ
 \sdktools\bin
@@ -6860,13 +6891,13 @@ ZwSetTimerResolution
 \t`M1k
 \tcQr
 \tkE>fvw
-\ttier0.dll
 \u must be followed by exactly 4 hex digits
 \u0000
 \vA03>A|
 \v_dbghelp_home_linked
 \v_dbghelp_home_unlinked
 \veBV
+]0S2
 ]P4H
 ]u9g
 ]xEc
@@ -6923,6 +6954,7 @@ _V_wcsncat_cch
 _V_wcsncpy_bytes
 _Warning_AlwaysSpewCallStack_Enable
 _Warning_AlwaysSpewCallStack_Length
+_Windows
 __based(
 __cdecl
 __clrcall
@@ -7358,7 +7390,7 @@ fD>b
 fGa>
 fP~V
 fWi?
-f\fn\nr\rt\t                %d:%02d:%02d.%03
+f\fn\nr\rt\t                0000000000000000%d:%02d:%02d.%03
 fabs
 face
 faceMergeAngle
@@ -7401,7 +7433,6 @@ forced
 forced dump\n
 format
 format specifier requires numeric argument
-format specifier requires signed argument
 found at %s\n
 fp>x
 fqUn
@@ -7526,15 +7557,16 @@ invalid code lengths set
 invalid distance code
 invalid distance too far back
 invalid distances set
-invalid fill
 invalid fill character '{'
+invalid format specifier
 invalid format specifier for char
 invalid format string
 invalid literal/length code
 invalid literal/lengths set
+invalid precision
 invalid seek
 invalid stored block lengths
-invalid type specifier
+invalid string_view position
 invalid window size
 invalid_parameter
 invert_orientation
@@ -7803,7 +7835,9 @@ m_bScaleInitialValue
 m_bScaleLocal
 m_bScalePerParticle
 m_bScreenSpaceEffect
+m_bSetNormal
 m_bSlopeEnabled
+m_bTraceAlongNormal
 m_bTrailBias
 m_bUseBiasAndClamp
 m_bUseHighestEndCP
@@ -7874,6 +7908,7 @@ m_flConstValue
 m_flDegrees
 m_flDegreesMax
 m_flDegreesMin
+m_flDensity
 m_flDuration
 m_flDurationSec
 m_flEmissionDuration
@@ -8020,6 +8055,7 @@ m_nControlPointNumber
 m_nControlPointNumberMax
 m_nControlPointRangeMax
 m_nDeltaControlPoint
+m_nDensity
 m_nElementID
 m_nEndCP
 m_nFeatheringMode
@@ -8029,6 +8065,7 @@ m_nFieldOutput
 m_nFireMode
 m_nFirstMultipleOverride_BackwardCompat
 m_nFogType
+m_nGroundNormalAttribute
 m_nHand
 m_nHeadLocation
 m_nIncomingTangent
@@ -8077,6 +8114,7 @@ m_nSwitchValue
 m_nTab compared different! %d != %d.
 m_nTextureChannels
 m_nTextureType
+m_nTraceDirectionAttribute
 m_nTraceMissBehavior
 m_nTranslations == 1
 m_nType
@@ -8154,6 +8192,7 @@ m_vecSamplePosition
 m_vecScale
 m_vecTailColorScale
 m_vecTexturesInput
+m_vecTraceDir
 m_velocityInput
 macos
 malloc is redirected.\n
@@ -8188,7 +8227,6 @@ mimalloc_
 min %s
 min_angle
 missing '}' in format string
-missing precision specifier
 mmaps
 model
 model_name
@@ -8247,16 +8285,15 @@ nMin
 nOffset < m_nAllocationSize
 nSwitchValue
 nTries < 10000000
+nUnable to determine buffer encoding.
 n\f"pA3Q
-n\f"pA3Q 
+n\f"pA3QP
 n]?iJ
 name
 nan(ind)
 nan(snan)
 nav_attribute_avoid
 nav_data
-negative precision
-negative width
 nested-name doesn't start with 'N'\n
 nested-name ran out of qualifier slots\n
 network down
@@ -8389,8 +8426,6 @@ point1
 pointer
 pose_control
 pose_control_type
-precision is not integer
-precision not allowed for this argument type
 preferred_carryangles
 privinstruction
 process
@@ -8424,7 +8459,6 @@ r9T6
 rNm>)
 rT+6ZNw
 r\tVr.>T
-r\vpX
 radius
 radius0
 radius1
@@ -8561,7 +8595,6 @@ symbol
 symsrv.dll
 symtab
 t#tvI
-t+02F\f
 table
 tail_frame
 tanf
@@ -8694,6 +8727,7 @@ visualizeEdges
 visualstudioautomation.exe -appverifier_setup %d
 visualstudioautomation.exe -attachtoprocessid %d
 vmdl;vmdl_prefab
+vmdlkeys0
 vmdlkeys1
 vmdlkeys2
 vmdlkeys3
@@ -8701,6 +8735,7 @@ vmdlkeys4
 void
 volatile
 vpcf
+vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -8722,7 +8757,6 @@ vpcf26
 vpcf27
 vpcf28
 vpcf29
-vpcf3
 vpcf30
 vpcf31
 vpcf32
@@ -8760,6 +8794,8 @@ vpcf60
 vpcf61
 vpcf62
 vpcf63
+vpcf64
+vpcf65
 vpcf7
 vpcf8
 vpcf9
@@ -8805,7 +8841,8 @@ wchar_t
 weldPositionTolerance
 weldVertices
 width
-width is not integer
+width/precision is not integer
+width/precision is out of range
 win64
 windows
 winhttp.dll
@@ -8823,7 +8860,6 @@ xSvf$
 xT?V
 xYiu
 x`tm6
-xrY`(1
 xu37
 xuRCk
 y9*O
@@ -8848,8 +8884,10 @@ zs}O
 {YIN?
 {kHw
 {unnamed type
+{}0.{:0>{}s}{}
 {}[]()=&, \t\n'"*;
 {}[]=, \t\n'":|;
+{}{}{:0<{}s}.0
 |jPZ
 ~DSTRCT
 ~NX4

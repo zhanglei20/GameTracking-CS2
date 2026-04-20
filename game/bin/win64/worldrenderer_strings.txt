@@ -67,6 +67,8 @@
 .?AVIWorldRendererMgr@@
 .?AVIWorldVPKReference@@
 .vwnod
+2\vpT
+2\vpt
 <<NULL ENTITY LUMP>>
 <no classname>
 <no targetname>
@@ -79,8 +81,10 @@ AllocateAndLoad failed for '%s' (%s)\n
 AllocateAndLoad failed for '%s'\n
 AllocateResource: Cannot find DATA block in resource %s!\n
 AllocateResource: Cannot find VXVS data in resource %s!\n
+B\vp\n0
 Bad KV3 data for resource '%s': %s\n
 C:\buildworker\csgo_rel_win64\build\_build_\worldrenderer\_vpc_worldrenderer\default\win64\_msvc_\Retail\worldrenderer.pdb
+C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\csgo_rel_win64\build\src\entity2\entitykeyvalues.cpp
 C:\buildworker\csgo_rel_win64\build\src\worldrenderer\grasstilesceneobject.cpp
 C:\buildworker\csgo_rel_win64\build\src\worldrenderer\worldrenderermgr.cpp
@@ -99,9 +103,9 @@ CUtlBinaryBlock
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct EntityKeyValueData_t,int,class CMemAllocAllocator>,struct EntityKeyValueData_t,int>::InsertBeforeGetPtr
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,struct WorldTraversal_t *,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,struct WorldTraversal_t *,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,struct WorldTraversal_t *,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CWorld::CacheNodes
-CWorldNode::CreateExtraVertexStreams(350): 
+CWorldNode::CreateExtraVertexStreams(376): 
 CWorldNode::GrassFileCreateManifest
-CWorldNode::HandleThrottledGrassTileLoading(1382): 
+CWorldNode::HandleThrottledGrassTileLoading(1408): 
 CWorldRendererMgr::CreateWorld
 CWorldRendererMgr::CreateWorld_Internal( %s ):  Blocking load because marked for deletion during load\n
 CWorldRendererMgr::ServiceWorldRequests long frame: %fms\n
@@ -174,7 +178,7 @@ RESOURCE_TYPE_WORLD_NODE
 RESOURCE_TYPE_WORLD_VIS
 RTProxyGeometry
 RTProxyUniqueAlbedo
-R\vp4
+R\fpT
 ResourceCompiler/BakedLighting/Version
 ResourceCompiler/DefaultMapBuilders/bakedlighting
 ResourceCompiler/DefaultMapBuilders/dontrequirebakedlighting
@@ -231,7 +235,6 @@ entity_lump_spew %s %s
 fast
 keyValues3Data
 kv 0x%p AddRef refcount == %d\n
-kv 0x%p Release refcount == %d\n
 lightmaps
 lowprecisionuv
 lowprecisionuv1
@@ -259,7 +262,7 @@ medium
 modellib
 optionallycompressedtangentframe
 posxyz
-r\fp4
+r\vpT
 resourcesystem
 slow
 standard

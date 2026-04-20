@@ -17,7 +17,11 @@
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  % 2d %s %s\n
  (08@HPX`j
+ (08@HPXb0
  (08@HPZ
+ (08@HR0
+ (08@J0
+ (0X`hpz0
  :score average_contribution  :payloadformat {  payload0 {  :score mvp_awards :format int  :upload sum  }  payload1 {  :score rounds_played  :format int  :upload sum  }  payload2 {  :score total_contribution  :format int  :upload sum  }  payload3 {  :score kills  :format int  :upload sum  }  payload4 {  :score deaths  :format int  :upload sum  }  payload5 {  :score damage  :format int  :upload sum  }  } 
  :score kd_ratio  :payloadformat {  payload0 {  :score kills :format int  :upload sum  }  payload1 {  :score deaths  :format int  :upload sum  }  payload2 {  :score rounds_played  :format int  :upload sum  }  payload3 {  :score shots_fired  :format int  :upload sum  }  payload4 {  :score head_shots  :format int  :upload sum  }  payload5 {  :score shots_hit  :format int  :upload sum  }  } 
  :score num_rounds  :scoresum 1  :payloadformat {  payload0 {  :score time_played  :format uint64  :upload sum  }  payload1 {  :score time_played_ct  :format uint64  :upload sum  }  payload2 {  :score time_played_t  :format uint64  :upload sum  }  payload3 {  :score total_medals  :format int  :upload last  }  } 
@@ -57,6 +61,7 @@ $\n k_ECommunityItemClass_Consumable
 $\n k_ECommunityItemClass_SalienItem
 $\n k_EGCMsgGetEmailTemplateResponse
 $\n k_EGCMsgWebAPIRegisterInterfaces
+$tIH
 %\n k_EGCMsgAccountPhoneNumberChange
 %\n k_EGCMsgGCAccountVacStatusChange
 %\n!GCClientLauncherType_PERFECTWORLD
@@ -206,7 +211,6 @@ $\n k_EGCMsgWebAPIRegisterInterfaces
 .?AVCCommunity_GetGamePersonalDataEntries_Response@@
 .?AVCCommunity_TerminateGamePersonalDataEntries_Request@@
 .?AVCCommunity_TerminateGamePersonalDataEntries_Response@@
-.?AVCConnectionlessLanMgr@@
 .?AVCDatacenter@@
 .?AVCDatacenterCmdBatchImpl@@
 .?AVCDsSearcher@@
@@ -237,7 +241,6 @@ $\n k_EGCMsgWebAPIRegisterInterfaces
 .?AVCMatchExtensions@@
 .?AVCMatchFramework@@
 .?AVCMatchNetworkMsgControllerBase@@
-.?AVCMatchSearchResultItem@@
 .?AVCMatchSearcher@@
 .?AVCMatchSearcher_OnlineSearch@@
 .?AVCMatchSearcher_OnlineTeamSearch@@
@@ -291,12 +294,8 @@ $\n k_EGCMsgWebAPIRegisterInterfaces
 .?AVCQuest_PublisherAddCommunityItemsToPlayer_Request@@
 .?AVCQuest_PublisherAddCommunityItemsToPlayer_Request_Attribute@@
 .?AVCQuest_PublisherAddCommunityItemsToPlayer_Response@@
-.?AVCSearchManager@@
-.?AVCServer@@
 .?AVCServerListListener@CDsSearcher@@
 .?AVCServerListListener@CMatchSessionOnlineSearch@@
-.?AVCServerManager@@
-.?AVCServerPinging@@
 .?AVCSharedObjectCache@GCSDK@@
 .?AVCSharedObjectTypeCache@GCSDK@@
 .?AVCSysSessionBase@@
@@ -328,8 +327,6 @@ $\n k_EGCMsgWebAPIRegisterInterfaces
 .?AVIMatchExtensions@@
 .?AVIMatchFramework@@
 .?AVIMatchNetworkMsgController@@
-.?AVIMatchSearchResult@@
-.?AVIMatchServer@@
 .?AVIMatchSession@@
 .?AVIMatchSessionInternal@@
 .?AVIMatchSystem@@
@@ -341,8 +338,6 @@ $\n k_EGCMsgWebAPIRegisterInterfaces
 .?AVIPlayerLocal@@
 .?AVIPlayerManager@@
 .?AVIProtoBufSendHandler@CProtoBufMsgBase@GCSDK@@
-.?AVISearchManager@@
-.?AVIServerManager@@
 .?AVISteamFriends@@
 .?AVISteamMatchmakingServerListResponse@@
 .?AVPlayerFriend@@
@@ -368,18 +363,19 @@ $\n k_EGCMsgWebAPIRegisterInterfaces
 0.0.0.0
 00000000
 08@HR
+08@J0
 0\n,GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE
 0\n,k_ECommunityItemAttribute_CommunityItemAppID
 18446744073709551615
 1\n,k_EGCMsgGetGamePersonalDataCategoriesRequest
-27015,27016,27017,27018,27019,27020
 2\n-k_EGCMsgGetGamePersonalDataCategoriesResponse
+2\vp|U
 32:B\n
 3\n/k_ECommunityItemAttribute_ProfileModiferEnabled
+4Ccl_session
 4\n/k_EGCMsgTerminateGamePersonalDataEntriesRequest
 5\n0k_EGCMsgTerminateGamePersonalDataEntriesResponse
 5\n\vtype_caches
-8F 7
 :9\n\tkey_field
 :format
 :name
@@ -394,9 +390,8 @@ $\n k_EGCMsgWebAPIRegisterInterfaces
 :upload
 <\n\ncategories
 >\n\tTypeCache
-@08N(
+@HPX`hv
 @\n\fSingleObject
-@ht0
 @workshop
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
 APPSYSTEM: In ConnectGameInterfaces(), tried to use different connection modes!\n
@@ -415,8 +410,6 @@ BAsyncSend
 BAsyncSendProto
 B\nP\t0
 Bad read pointer - no RTTI data!
-Binary/ptr
-Binary/size
 Busy
 C:\buildworker\csgo_rel_win64\build\_build_\matchmaking\_vpc_matchmaking_csgo\default\win64\_msvc_\Retail\matchmaking.pdb
 C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\gcclient.cpp
@@ -513,7 +506,7 @@ CTSQueue<class google::protobuf::Message *,0>::Push
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct GCSDK::SOID_t,class GCSDK::CGCClientSharedObjectCache *,class CDefLess<struct GCSDK::SOID_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,struct CIgnoredSessionsMgr::SessionSearchPass_t,class CDefLess<unsigned __int64>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,float,class CDefLess<unsigned int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,struct GCSDK::CSharedObjectTypeCache::SharedObjectAndIndex_t,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<int,struct GCSDK::CSharedObjectTypeCache::SharedObjectAndIndex_t,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,struct GCSDK::CSharedObjectTypeCache::SharedObjectAndIndex_t,class CDefEquals<int>,struct DefaultHashFunctor<int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<int,struct GCSDK::CSharedObjectTypeCache::SharedObjectAndIndex_t,class CDefEquals<int>,struct DefaultHashFunctor<int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<char const *,struct GCSDK::JobType_t const *,struct CaseSensitiveStrEquals,struct MurmurHash3ConstCharPtr>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<char const *,struct GCSDK::JobType_t const *,struct CaseSensitiveStrEquals,struct MurmurHash3ConstCharPtr>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<unsigned __int64,class GCSDK::CJob *,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<unsigned __int64,class GCSDK::CJob *,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<unsigned __int64,int,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<unsigned __int64,int,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int>::AddMultipleToTail
@@ -542,8 +535,6 @@ CWorkThreadPool::~CWorkThreadPool: work processing queue not empty: %d items dis
 Cache
 Cancel
 Command::%s
-ConnectServerDetailsRequest
-ConnectServerDetailsRequest/server
 Connection to server timed out
 Continue
 Converted sys session into CMatchSessionOnlineClient:\n
@@ -556,7 +547,6 @@ Created CMatchSessionOnlineClient:\n
 Created CMatchSessionOnlineHost:\n
 Created CMatchSessionOnlineSearch:\n
 Created CMatchSessionOnlineTeamSearch:\n
-Created CSearchManager(%p):\n
 Created DS searcher\n
 Created lobby id: 0x%llx\n
 Datacenter::EnableUpdate( %d ), current state = %d\n
@@ -575,12 +565,12 @@ Destroying CMatchSessionOnlineClient:\n
 Destroying CMatchSessionOnlineHost:\n
 Destroying CMatchSessionOnlineSearch:\n
 Destroying CMatchSessionOnlineTeamSearch.\n
-Destroying CSearchManager(%p):\n
 DotaMapUtils001
 ECommunityItemAttribute
 ECommunityItemClass
 EGCBaseClientMsg
 ESOMsg
+EconVData001
 EmitBaseMessageV
 EntitySubclassUtilsV001
 Establishing connection with %d search results.\n
@@ -644,7 +634,6 @@ Game alias "%s" is unknown, setting default game type=%d mode=%d\n
 Game alias "%s" resolved game type=%d mode=%d\n
 Game::SetPlayerRanking
 GameDetailsClient
-GameDetailsPlayer
 GameDetailsServer
 GameSystem2HostHook
 GameTypes001
@@ -694,9 +683,6 @@ GetPchTempTextBuffer() called after UninitTempTextBuffers()
 Host settings have bad key %s:%d\n
 HostUtils001
 IND)ind)"
-InetSearchServerDetails
-InetSearchServerDetails/pingxuid
-InetSearchServerDetails/timestamp
 InitFromPacket
 ItemDescriptionsLanguageBlock
 Job %s trying to release lock %s at %s(%d) though the lock is held by %s\n
@@ -711,9 +697,6 @@ Kick
 LOBBY: blocking join request from %llu with check: %s = '%s' (actual: '%s')\n
 LOBBY: blocking join request from %llu with invalid key: %s\n
 LOBBY: blocking join request from %llu, still %.1f sec kick ban duration remaining, mm_session_sys_kick_ban_duration = %.1f.\n
-LanSearch
-LanSearchServerPing
-LanSearchServerPing/timestamp
 LanguageSection
 Leaderboard
 Leaderboard '%s' was not found on server\n
@@ -761,7 +744,6 @@ OnInviteAccepted: confirming...\n
 OnInviteAccepted: waiting for confirmation...\n
 OnLevelLoadingSetDefaultGameModeAndType
 OnMatchPlayerMgrUpdate
-OnMatchServerMgrUpdate
 OnMatchSessionUpdate
 OnPlayerLeaderChanged
 OnPlayerMachinesConnected
@@ -778,21 +760,19 @@ OnlineSearch::StartSearch failed to build filter list!\n
 OnlineSearch::StartSearchPass:\n
 Options/searchteamkey
 Options/server
-P08J@
-P08N(
+P08@J0
+P08J
 P\n\nattributes
 PartnerItemPaymentRule
 Player#     Player Name\n
 Player# is invalid or refers to a bot, please use "voice_show_mute" command.\n
-Player/xuid
-Player/xuidOnline
 PlayerLocal::UpdateLeaderboardData for %s ...\n
 PlayerLocal::UpdateLeaderboardData for %s finished.\n
 PlayerManager::OnGameUsersChanged\n
-PnPC
 PredictionDiffManager001
 QueueConnect
 RP for %s\n
+R\vp|U
 Received %d search results.\n
 Received server_pre_shutdown notification - server is shutting down...\n
 Requested join data %.3f sec ago from xuid = %llx\n
@@ -806,11 +786,7 @@ Search results outstanding: %d\n
 SearchPass%d
 Searching...\n
 Sending join session request...\n
-Server manager refresh completed.\n
 Server shutting down
-Server/adronline
-Server/connectstring
-Server/ping
 Server/reservationid
 Server/server
 Server/xuid
@@ -957,8 +933,6 @@ X`hr
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 _remote_host
 _remote_xuidsrc
-`ht0
-aBv(
 aE%s%s
 accepted
 access
@@ -1052,7 +1026,6 @@ finale_start
 free_trial_account
 friend
 friends
-from
 fullpostinit
 game/apr
 game/ark
@@ -1116,6 +1089,7 @@ host>client
 host_writeconfig_ss %d
 hostendgame
 hostinit
+hpz0
 imagename
 is_identifying
 item_description
@@ -1313,8 +1287,6 @@ options/sessionHostData
 options/sessionid
 options/sv_load_test
 outofdate_subscribed_caches
-p08@H^(
-p6`1
 partner_accountbalance
 partner_accountflags
 partner_accountid
@@ -1327,7 +1299,6 @@ phone_id
 player%d
 player%d/voice
 player%d/xuid
-player/name
 player_capacity
 player_connect
 player_death
@@ -1476,4 +1447,3 @@ xuidOnline
 xuidsrc
 yielding
 youblocked
-zDInterval between datacenter stats updates.

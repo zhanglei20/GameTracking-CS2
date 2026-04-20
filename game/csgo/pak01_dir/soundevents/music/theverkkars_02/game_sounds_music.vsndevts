@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/theverkkars_02/mainmenu.vsnd"
+		vsnd_duration = 157.857956
 	}
 	Music.MVPPreview.theverkkars_02 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/theverkkars_02/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/theverkkars_02/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 9.377959
 	}
 	Music.Selection.theverkkars_02 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/theverkkars_02/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 33.671837
 	}
 	Music.MatchFound.theverkkars_02 = 
 	{
@@ -66,6 +72,7 @@
 			7.388, 9.314, 11.233, 13.107,
 			15.037, 17.005,
 		]
+		vsnd_duration = 20.192654
 	}
 	Music.LoadingScreen.theverkkars_02 = 
 	{
@@ -93,6 +100,7 @@
 			"sounds/music/theverkkars_02/startaction_01.vsnd",
 			"sounds/music/theverkkars_02/startaction_02.vsnd",
 		]
+		vsnd_duration = 15.412245
 	}
 	Music.StartRound.theverkkars_02 = 
 	{
@@ -133,6 +141,7 @@
 			7.388, 9.314, 11.233, 13.107,
 			15.037, 17.005,
 		]
+		vsnd_duration = 20.192654
 	}
 	Music.StartAction.theverkkars_02 = 
 	{
@@ -162,6 +171,7 @@
 			"sounds/music/theverkkars_02/startaction_01.vsnd",
 			"sounds/music/theverkkars_02/startaction_02.vsnd",
 		]
+		vsnd_duration = 15.412245
 	}
 	Music.StartRound_GG.theverkkars_02 = 
 	{
@@ -203,6 +213,7 @@
 			7.388, 9.314, 11.233, 13.107,
 			15.037, 17.005,
 		]
+		vsnd_duration = 20.192654
 	}
 	Music.BombPlanted.theverkkars_02 = 
 	{
@@ -225,6 +236,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 29.361633
 	}
 	Music.BombTenSecCount.theverkkars_02 = 
 	{
@@ -243,6 +255,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 15.960816
 	}
 	Music.GotHostage.theverkkars_02 = 
 	{
@@ -267,6 +280,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 29.361633
 	}
 	Music.HostageNearRescue.theverkkars_02 = 
 	{
@@ -289,6 +303,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 15.960816
 	}
 	Music.TenSecCount.theverkkars_02 = 
 	{
@@ -310,6 +325,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 15.438367
 	}
 	Music.WonRound.theverkkars_02 = 
 	{
@@ -334,6 +350,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 9.926531
 	}
 	Music.LostRound.theverkkars_02 = 
 	{
@@ -358,6 +375,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 4.466939
 	}
 	Music.DeathCam.theverkkars_02 = 
 	{
@@ -370,6 +388,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 3.526531
 	}
 	Music.MVPAnthem.theverkkars_02 = 
 	{
@@ -396,6 +427,7 @@
 		[
 			"sounds/music/theverkkars_02/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 9.377959
 	}
 	Music.MatchStart.theverkkars_02 = 
 	{
@@ -411,6 +443,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/theverkkars_02/startofmatch.vsnd"
+		vsnd_duration = 8.389025
 	}
 	Music.MatchEnd.theverkkars_02 = 
 	{
@@ -432,6 +465,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 46.127686
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

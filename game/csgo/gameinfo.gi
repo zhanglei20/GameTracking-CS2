@@ -44,6 +44,7 @@
 	Localize
 	{
 		DisallowTokenContexts	1
+		DisallowPgTokens		1
 	}
 
 	Engine2
@@ -227,6 +228,16 @@
 		"cq_buffer_bloat_msecs_max" "64"
 
 		"cl_interp_ag2_for_non_ag2_entities"	"0"
+
+		"r_skip_precache_validation_check" "1"
+
+		"r_aoproxy_default_light_position_0" "1.0 0.0 1.5"
+		"r_aoproxy_default_light_position_1" "-1.0 0.0 1.5"
+		"r_aoproxy_default_light_position_2"  "0.0 1.0 1.5"
+		"r_aoproxy_default_light_position_3" "0.0 -1.0 1.5"
+		"r_aoproxy_default_light_cone_angles" "0.3 0.3 0.3 0.3"
+		"r_aoproxy_default_light_cone_strengths" "1.0 1.0 1.0 1.0"
+		"r_aoproxy_default_ambient_strength" "0.2"
 	}
 	
 	Sounds

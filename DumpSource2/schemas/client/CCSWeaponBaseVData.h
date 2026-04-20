@@ -1,6 +1,7 @@
 // MGetKV3ClassDefaults = {
 //	"_class": "CCSWeaponBaseVData",
 //	"m_szWorldModel": "",
+//	"m_szWorldModelAg2Override": "",
 //	"m_sToolsOnlyOwnerModelName": "",
 //	"m_bBuiltRightHanded": true,
 //	"m_bAllowFlipping": true,

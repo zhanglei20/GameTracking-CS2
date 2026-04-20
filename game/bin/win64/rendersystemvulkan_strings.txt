@@ -137,7 +137,6 @@
 %s: zlib error: %s
 %sEOL padding
 %s[%s:%d] %s\n
-%s[line %d:%d] 
 %s_ColorTargetImageView
 %s_ColorTargetImageViewSrgb
 %s_CubeArrayImageView
@@ -152,8 +151,6 @@
 %s_PerMipLevelUAVCompressedBlockView
 %s_s_PerMipLevelImageViewSrgb
 %suncompressed data
-'exists'
-'return'
 ( ( uint32 ) pImmutableSamplersBlob->GetBinaryBlobSize() ) == ( pipelineLayoutHash.m_nNumImmutableSamplers * sizeof( PipelineLayoutImmutableSampler_t ) )
 ( ( uint32 ) pLayoutBindingFlagsBlob->GetBinaryBlobSize() ) == ( pipelineLayoutHash.m_numLayoutBindingsPerSet[ nDescriptorSet ] * sizeof( VkDescriptorBindingFlags ) )
 ( ( uint32 ) pLayoutBindingsBlob->GetBinaryBlobSize() ) == ( pipelineLayoutHash.m_numLayoutBindingsPerSet[ nDescriptorSet ] * sizeof( VkDescriptorSetLayoutBinding ) )
@@ -162,28 +159,28 @@
 ( result == VK_SUCCESS )
 (%s): ADD %s = %s\n
 (%s): Setting %s to %s\n
-(92Z
-(I0Z
-(I1Z
+(9rX
 (On the line reading %s):\n
-(Y5Z
-(i3Z
-*** CVfx::StartupSanityCheck(7060): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!\n
+(QyY
+(qzY
+*** CVfx::StartupSanityCheck(7115): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!\n
 *** Error masking unused parts! Equal sign not found after token "%s"! (line %d)\n
 *** IL "%s": Unable to create input layout; layout has %d fields, which is more than %d!\n
-*** VB "%s": Failed to allocate %s bytes!\n
 *** VB "%s": Failed to lock!\n
 *** VB "%s": Tried to lock a GPU-only buffer!\n
 *** VB "%s": Tried to lock a static buffer twice!\n
 *** VB "%s": Tried to lock too much memory (%s > %s)!\n
 *** VB "%s": Tried to lock too much memory for subregion (%s > %s)!\n
 *** VB "%s": Tried to lock twice without an unlock!\n
-*** VfxReadAndPrepForCrc(1253): Error opening file "%s"!\n\n
-*** VfxReadAndPrepForCrc(1263): Error masking unused parts for "%s"!\n\n
+*** VfxPopulateSourceCache(1137): Error opening file "%s"!\n\n
+*** VfxPopulateSourceCache(1145): Error opening file "%s"!\n\n
+*** VfxReadAndPrepForCrc(1295): Source cache incomplete, file "%s" missing!\n\n
+*** VfxReadAndPrepForCrc(1307): Error masking unused parts for "%s"!\n\n
 *.spv
 +v$x+v$xv$+xv+$xv$+x+$vx+$vx$v+x+$vx$+vx+v $+v $v $+v +$v $++$ v+$ v$ v++$ v$+ v+xv$+ v$v$ +v+ $v$ ++x$v+ $v$v ++ $v$ +v
 , channels = 
 , height = 
+,VUID-VkCopyAccelerationStructureInfoKHR-src-04963
 --------------------------------------------\n
 -rtest1
 -sSO\
@@ -214,7 +211,6 @@
 .?AV<lambda_1>@?BO@??LoadFromPath@CPipelineCacheManagerVulkan@@QEAAXPEAVCPipelineManagerVulkan@@AEBVCUtlString@@AEBVCUtlStringList@@1H@Z@
 .?AV<lambda_1>@?CC@??_CancelAndRunContinuations@?$_Task_impl@E@details@Concurrency@@UEAA_N_N00AEBV?$shared_ptr@U_ExceptionHolder@details@Concurrency@@@std@@@Z@
 .?AV<lambda_1>@?FB@??LinkPipelineLibrary@CPipelineManagerVulkan@@AEAA_NPEBVCPipelineVulkan@@PEAUPerThreadDataVulkan_t@@PEAUPipelineObjectVulkan_t@@@Z@
-.?AV<lambda_1>@?M@??ExecuteOustandingSWCommandStreamJobs@CRenderThreadVulkan@@AEAAXXZ@
 .?AV?$CBaseAppSystem@VIRenderDeviceMgr@@@@
 .?AV?$CBaseAppSystem@VIRenderUtils@@@@
 .?AV?$CConCommandMemberAccessor@VCFramebufferMgrVulkan@@@@
@@ -262,7 +258,6 @@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?BO@??LoadFromPath@CPipelineCacheManagerVulkan@@QEAAXPEAVCPipelineManagerVulkan@@AEBVCUtlString@@AEBVCUtlStringList@@1H@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?CC@??_CancelAndRunContinuations@?$_Task_impl@E@details@Concurrency@@UEAA_N_N00AEBV?$shared_ptr@U_ExceptionHolder@details@Concurrency@@@std@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?FB@??LinkPipelineLibrary@CPipelineManagerVulkan@@AEAA_NPEBVCPipelineVulkan@@PEAUPerThreadDataVulkan_t@@PEAUPipelineObjectVulkan_t@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?M@??ExecuteOustandingSWCommandStreamJobs@CRenderThreadVulkan@@AEAAXXZ@X$$V@std@@
 .?AV?$_Mpunct@D@std@@
 .?AV?$_Mpunct@G@std@@
 .?AV?$_Mpunct@_W@std@@
@@ -336,6 +331,7 @@
 .?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?1??FlushPipelineCache@CAsyncCompileHelperVulkan@@QEAAXXZ@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?1??FlushPipelineCache@CAsyncCompileHelperVulkan@@QEAAXXZ@@Z@
 .?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?1??QueuePresent@CRenderContextVulkan@@UEAAXPEAUSwapChainHandle_t__@@HPEAVIRenderDevicePresentCallback@@@Z@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?1??QueuePresent@CRenderContextVulkan@@UEAAXPEAUSwapChainHandle_t__@@HPEAVIRenderDevicePresentCallback@@@Z@@Z@
 .?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?7??QueueShaderCompile@CAsyncCompileHelperVulkan@@QEAAXPEAVCShaderVulkanBase@@@Z@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?7??QueueShaderCompile@CAsyncCompileHelperVulkan@@QEAAXPEAVCShaderVulkanBase@@@Z@@Z@
+.?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?M@??ExecuteOustandingSWCommandStreamJobs@CRenderThreadVulkan@@AEAAXXZ@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?M@??ExecuteOustandingSWCommandStreamJobs@CRenderThreadVulkan@@AEAAXXZ@@Z@
 .?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?M@??PerformQueuedTextureDeletions@CRenderDeviceVulkan@@AEAAX_N@Z@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?M@??PerformQueuedTextureDeletions@CRenderDeviceVulkan@@AEAAX_N@Z@@Z@
 .?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_2>@?1??QueuePresent@CRenderContextVulkan@@UEAAXPEAUSwapChainHandle_t__@@HPEAVIRenderDevicePresentCallback@@@Z@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_2>@?1??QueuePresent@CRenderContextVulkan@@UEAAXPEAUSwapChainHandle_t__@@HPEAVIRenderDevicePresentCallback@@@Z@@Z@
 .?AVCLayoutInsert@@
@@ -351,6 +347,7 @@
 .?AVCRayTracePipelineVulkan@@
 .?AVCRayTraceShaderBindingTableVulkan@@
 .?AVCReadGPUBuffer@@
+.?AVCReadTexturePixelsCallback@@
 .?AVCRenderContextBase@@
 .?AVCRenderContextVulkan@@
 .?AVCRenderContextVulkan_SoftwareCommandLists@@
@@ -435,22 +432,17 @@
 0123456789-
 0123456789ABCDEFabcdef-+Xx
 0123456789ABCDEFabcdef-+XxPp
-0>fi,
 0x%x
-0xm(
-1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
 2\f%24
 2\fu24*
 2\nP!E
-2\vpxm(
 58x\t
 5;FJ$,XEK4<
-6\fE647
+5\fE545
 7&F|If
 7T2,
 8"3hrf
 8&Kx
-8Fxq,
 969p
 :AM:am:PM:pm
 :Jan:January:Feb:February:Mar:March:Apr:April:May:May:Jun:June:Jul:July:Aug:August:Sep:September:Oct:October:Nov:November:Dec:December
@@ -471,9 +463,10 @@ ANDROID_VULKAN
 ANDROID_VULKAN_4_0
 ANDROID_VULKAN_4_1
 ANDROID_VULKAN_5_0
+Aboring CRenderContextVulkan::ReadBufferIndirect because of GPU memory allocation failure.\n
 Aboring OnReadBuffer because of GPU memory allocation failure.\n
 Aboring OnReadPixels because of GPU memory allocation failure.\n
-Aborting OnReadPixels - unable to create MSAA resolve image.\n
+Aborting ReadTexturePixelsInternal - unable to create MSAA resolve image.\n
 AccelStruct
 AccelStructBuffer %s [%s]
 AccelStructBuffer BLAS [Compact] [%s]
@@ -534,7 +527,6 @@ BINORMAL
 BLAS
 BLENDINDICES
 BLENDWEIGHT
-BOOLLITERAL
 BUFFER
 B\vP\n0
 Bad VTEX data for '%s'\n
@@ -569,6 +561,7 @@ Budget
 BudgetBytes
 Buffer '%s' is %s and total usage is %s, do you really want to allocate this much GPU buffer memory?  Performance issues/device lost could be imminent.\n
 Buffer allocation failed for DEVICE_LOCAL memory indicating video memory is full, trying again in system memory as a fallback.\n
+BufferReadIndirectArgs
 C:/dvs/p4/build/sw/devrel/libdev/NGX/core/rel_tot/source/common/common_lib.cpp
 C:/dvs/p4/build/sw/devrel/libdev/NGX/core/rel_tot/source/common/util-log.cpp
 C:/dvs/p4/build/sw/devrel/libdev/NGX/core/rel_tot/source/lib/nvsdk_ngx_lib_windows.cpp
@@ -578,23 +571,23 @@ C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlqueue.h
 C:\buildworker\csgo_rel_win64\build\src\rendersystem\rendercontextbase.cpp
 C:\buildworker\csgo_rel_win64\build\src\rendersystem\renderdevicebase.cpp
 C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(2417):Error loading texture: %s\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3444):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3447):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3480):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3483):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3505):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3508):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3528):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3531):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3551):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3554):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3576):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3579):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3591):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3594):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3606):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3609):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(2423):Error loading texture: %s\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3450):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3453):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3486):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3489):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3511):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3514):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3534):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3537):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3557):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3560):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3582):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3585):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3597):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3600):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3612):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3615):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
 C:\buildworker\csgo_rel_win64\build\src\rendersystem\vulkan\asynccompilehelpervulkan.cpp
 C:\buildworker\csgo_rel_win64\build\src\rendersystem\vulkan\memorymgrvulkan.cpp
 C:\buildworker\csgo_rel_win64\build\src\rendersystem\vulkan\pipelinecachemgrvulkan.cpp
@@ -608,7 +601,6 @@ C:\buildworker\csgo_rel_win64\build\src\rendersystem\vulkan\texturevulkan.cpp
 C:\buildworker\csgo_rel_win64\build\src\rendersystem\vulkan\vulkanfunctions.h
 C:\buildworker\csgo_rel_win64\build\src\vfx\compiletargetexpr.g
 C:\buildworker\csgo_rel_win64\build\src\vfx\vfx_shader_file.cpp
-C:\buildworker\csgo_rel_win64\build\src\vfx\vfxexpr.g
 CBaseAccelerationStructureVulkan::Create(236): 
 CCITT Group 3
 CCITT Group 4
@@ -623,10 +615,9 @@ CFossilizeStateCreator::RegisterShader
 CInputLayoutDict<class CInputLayoutVulkan>::ConcatentateInputLayouts
 CLargeCommandBufferChunk CUtlMemoryPool
 CMediumCommandBufferChunk CUtlMemoryPool
-CMemoryManagerVulkan::Allocate
-CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup(1591): vmaCreatePool failed with error: %d\n
-CMemoryManagerVulkan::AllocateImageInCustomPoolGroup(1520): vmaCreatePool failed with error: %d\n
-CMemoryManagerVulkan::VmaDefragProcessDeletionQueueInternal(), C:\buildworker\csgo_rel_win64\build\src\rendersystem\vulkan\memorymgrvulkan.cpp:753
+CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup(1566): vmaCreatePool failed with error: %d\n
+CMemoryManagerVulkan::AllocateImageInCustomPoolGroup(1495): vmaCreatePool failed with error: %d\n
+CMemoryManagerVulkan::VmaDefragProcessDeletionQueueInternal(), C:\buildworker\csgo_rel_win64\build\src\rendersystem\vulkan\memorymgrvulkan.cpp:723
 CNVReflexVulkan::LateWarpUpdateResolution(425): 
 COLOR0
 COMMENT
@@ -649,86 +640,87 @@ CRenderContextVulkan::CopyTexture failed to get resource.\n
 CRenderContextVulkan::EndQuery - BeginQuery failed, aborting!\n
 CRenderContextVulkan::EndQuery - Issued on an in-progress query!\n
 CRenderContextVulkan::ExecuteGeneratedCommands requires VK_EXT_device_generated_commands.\n
-CRenderContextVulkan::MarkIssuesCommands(450): 
+CRenderContextVulkan::MarkIssuesCommands(445): 
 CRenderContextVulkan::PreprocessGeneratedCommands requires VK_EXT_device_generated_commands.\n
+CRenderContextVulkan::QueuePolledBufferReadback - attempted to read invalid handle.\n
+CRenderContextVulkan::QueuePresent
 CRenderContextVulkan::ReadBuffer - attempted to read invalid handle.\n
+CRenderContextVulkan::ReadBufferIndirect - attempted to read invalid handle.\n
 CRenderContextVulkan::SemaphoreWaitAtBegin - already set semaphore to wait on, can't set another one.\n
-CRenderContextVulkan::WriteDataIntoTexture(6214):  - invalid offset, aborting texture update to avoid hanging the GPU [texture: %s].\n
+CRenderContextVulkan::WriteDataIntoTexture(6288):  - invalid offset, aborting texture update to avoid hanging the GPU [texture: %s].\n
 CRenderContextVulkan_SoftwareCommandLists::CopyFromVolumeTexture failed to get resource.\n
 CRenderContextVulkan_SoftwareCommandLists::CopyTexture failed to get resource.\n
 CRenderContextVulkan_SoftwareCommandLists::SemaphoreWaitAtBegin - already set semaphore to wait on, can't set another one.\n
 CRenderDeviceBase
-CRenderDeviceBase::AllocatePooledIndexBuffer(3622): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3658): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3796): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3827): 
-CRenderDeviceBase::AsyncSetTextureData(3262): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3516): 
-CRenderDeviceBase::CreateConstantBuffer(1548): 
-CRenderDeviceBase::EndRenderDocCapture(3496): 
-CRenderDeviceBase::FindOrCreateTexture(1690): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3646): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3682): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3823): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3854): 
+CRenderDeviceBase::AsyncSetTextureData(3285): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3539): 
+CRenderDeviceBase::CreateConstantBuffer(1571): 
+CRenderDeviceBase::EndRenderDocCapture(3519): 
+CRenderDeviceBase::FindOrCreateTexture(1713): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s\n
-CRenderDeviceBase::Flush(886): 
-CRenderDeviceBase::ForceFlushGPU(903): 
-CRenderDeviceBase::FreeTextureGPUResources(2002): 
-CRenderDeviceBase::FreeTextureGPUResources(2006): 
+CRenderDeviceBase::Flush(898): 
+CRenderDeviceBase::ForceFlushGPU(915): 
+CRenderDeviceBase::FreeTextureGPUResources(2025): 
+CRenderDeviceBase::FreeTextureGPUResources(2029): 
 CRenderDeviceBase::InitPerFrameMemoryStack
-CRenderDeviceBase::Present(598): 
-CRenderDeviceBase::StartRenderDocCapture(3483): 
+CRenderDeviceBase::Present(610): 
+CRenderDeviceBase::StartRenderDocCapture(3506): 
 CRenderDeviceVulkan::AllocateBufferInPool - invalid memory pool handle.\n
-CRenderDeviceVulkan::AllocateBufferInPool(10013): vmaBindImageMemory failed for buffer %s with error %d.\n
-CRenderDeviceVulkan::AllocateBufferInPool(9958): failed to allocate GPU memory in custom pool for %s.\n
+CRenderDeviceVulkan::AllocateBufferInPool(10207): failed to allocate GPU memory in custom pool for %s.\n
+CRenderDeviceVulkan::AllocateBufferInPool(10262): vmaBindImageMemory failed for buffer %s with error %d.\n
 CRenderDeviceVulkan::AllocateStaticDescriptorSet: Failed to allocate descriptor set.\n
 CRenderDeviceVulkan::AllocateTextureInPool - invalid memory pool handle.\n
-CRenderDeviceVulkan::AllocateTextureInPool(9640): Allocation already set for %s, it is not valid to assign a new allocation.\n
-CRenderDeviceVulkan::AllocateTextureInPool(9715): failed to allocate GPU memory in custom pool for %s.\n
-CRenderDeviceVulkan::AllocateTextureInPool(9781): vmaBindImageMemory failed for image %s with error %d.\n
+CRenderDeviceVulkan::AllocateTextureInPool(10029): vmaBindImageMemory failed for image %s with error %d.\n
+CRenderDeviceVulkan::AllocateTextureInPool(9885): Allocation already set for %s, it is not valid to assign a new allocation.\n
+CRenderDeviceVulkan::AllocateTextureInPool(9962): failed to allocate GPU memory in custom pool for %s.\n
 CRenderDeviceVulkan::AllocateUpdateAfterBindDescriptorSet: Failed to allocate descriptor set.\n
-CRenderDeviceVulkan::BeginSubmittingDisplayLists(4439): 
-CRenderDeviceVulkan::CreateDefaultBuffers(2517): 
+CRenderDeviceVulkan::BeginSubmittingDisplayLists(4564): 
+CRenderDeviceVulkan::CreateDefaultBuffers(2557): 
 CRenderDeviceVulkan::CreateDefaultShaders
 CRenderDeviceVulkan::CreateDescriptorSet: Failed to create descriptor set.\n
 CRenderDeviceVulkan::CreateIndirectCommandsPreprocessBuffer- invalid layout handle.\n
 CRenderDeviceVulkan::CreateIndirectExecutionSet
-CRenderDeviceVulkan::CreateTLAS(7740): 
-CRenderDeviceVulkan::DeleteQueryObject(4653): 
+CRenderDeviceVulkan::CreateTLAS(7964): 
+CRenderDeviceVulkan::DeleteQueryObject(4778): 
 CRenderDeviceVulkan::DestroyDeviceMemoryPool - invalid memory pool handle.\n
 CRenderDeviceVulkan::DestroyIndirectCommandsLayout - invalid layout handle.\n
-CRenderDeviceVulkan::FreeBufferFromPool(10052): Unable to get Vulkan buffer.\n
-CRenderDeviceVulkan::FreeBufferFromPool(10058): no allocation for buffer %s.\n
+CRenderDeviceVulkan::FreeBufferFromPool(10301): Unable to get Vulkan buffer.\n
+CRenderDeviceVulkan::FreeBufferFromPool(10307): no allocation for buffer %s.\n
 CRenderDeviceVulkan::FreeTextureFromPool - invalid memory pool handle.\n
-CRenderDeviceVulkan::FreeTextureFromPool(9813): Unable to get Vulkan image for %s.\n
-CRenderDeviceVulkan::FreeTextureFromPool(9819): no allocation for image %s.\n
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(10154): Unable to get Vulkan buffer.\n
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(10160): no allocation for buffer %s.\n
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(10129): Unable to get Vulkan image for %s.\n
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(10135): no allocation for image %s.\n
+CRenderDeviceVulkan::FreeTextureFromPool(10061): Unable to get Vulkan image for %s.\n
+CRenderDeviceVulkan::FreeTextureFromPool(10067): no allocation for image %s.\n
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(10403): Unable to get Vulkan buffer.\n
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(10409): no allocation for buffer %s.\n
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(10378): Unable to get Vulkan image for %s.\n
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(10384): no allocation for image %s.\n
 CRenderDeviceVulkan::GetDeviceSpecificTexture
 CRenderDeviceVulkan::GetDeviceSpecificTexture() failed to get texture data.\n
 CRenderDeviceVulkan::InitDevice: failed to get queue properties\n
 CRenderDeviceVulkan::InitDevice: no graphics queue found\n
 CRenderDeviceVulkan::InitDevice: vkEnumerateDeviceExtensionProperties( ... ) failed.\n
 CRenderDeviceVulkan::OnLowMemoryNotification - evicting all textures to reduce memory pressure.\n
-CRenderDeviceVulkan::ReadTexturePixels(4236): 
+CRenderDeviceVulkan::ReadTexturePixels(4372): 
 CRenderDeviceVulkan::RebakeDescriptorSetsReferencing - could not allocate descriptor in new pool.\n
 CRenderDeviceVulkan::SetHardwareGammaRamp failed to get swap chain.\n
 CRenderDeviceVulkan::UpdateDescriptorSet: Failed to update descriptor set.\n
 CRenderDeviceVulkan::UpdateIndirectExecutionSet
 CRenderDeviceVulkan::WaitIfAheadOfTheGPUByMoreThanNFrames(): waited for %0.2f seconds\n
-CRenderDeviceVulkan::m_hDefaultConstantBuffer
-CRenderDocAPI::AutoGenerateDebugShaders(), C:\buildworker\csgo_rel_win64\build\src\rendersystem\renderdocapi.cpp:828
+CRenderDocAPI::AutoGenerateDebugShaders(), C:\buildworker\csgo_rel_win64\build\src\rendersystem\renderdocapi.cpp:874
 CRenderThreadVulkan::OnReadPixels not supported for MSAA depth.  Requires shader-based MSAA depth resolve to be implemented.\n
-CRenderThreadVulkan::OnReadPixels(233): Error! NULL texture pointer sent to OnReadPixels()!\n
 CSheetDataTextureCache::AllocateAndUploadSequenceData(582): 
 CSwapChainBase::QueuePresentAndWait() looped for %d iterations without a present event.\n
 CSwapChainVulkan::CreateSwapChain
-CSwapChainVulkan::CreateSwapChain(3287): 
+CSwapChainVulkan::CreateSwapChain(3334): 
 CSwapChainVulkan::CreateSwapChain::<lambda_2>::operator ()
 CSwapChainVulkan::SwapBuffers
 CSwapChainVulkan::SwapBuffers vkAcquireNextImageKHR - completed result = %s\n
 CSwapChainVulkan::SwapBuffers(): the main thread is more than %d frames ahead which means no swap queue images are available.  Waiting for outstanding frames...\n
 CSwapChainVulkan::SwapBuffersRecreateSwapchain
-CTLASVulkan::CTLASVulkan(704): 
+CTLASVulkan::CTLASVulkan(720): 
 CTSQueue<class CCommandBufferChunk *,0>::Push
 CTSQueue<class CCommandStream *,0>::Push
 CTSQueue<struct CFossilizeStateCreator::RegisteredShader_t,0>::Push
@@ -751,12 +743,12 @@ CTextureManagerBase::MN_OnResourceLoadFailed
 CTextureManagerBase::MarkAsyncUpdatedThisFrame - Invalid texture handle.\n
 CTextureManagerBase::RemoveTextureFromAnyQueues
 CTextureManagerBase::WasAsyncUpdatedThisFrame - Invalid texture handle.\n
-CTextureManagerVulkan::ComputeTextureObject(1436): 
+CTextureManagerVulkan::ComputeTextureObject(1438): 
 CTextureManagerVulkan::ComputeTextureObject: Tried to create a depth-stencil texture which is *not* a render target!\n
 CTextureStreamingHelper::LoadExplicitlyRequestedTextures
 CTextureStreamingHelper::RemoveMipLevelsForTextures
-CTextureVulkan::SetInitialImageLayout(718): 
-CTextureVulkan::SetInitialImageLayout(725): 
+CTextureVulkan::SetInitialImageLayout(720): 
+CTextureVulkan::SetInitialImageLayout(727): 
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CUtlKeyValuePair<unsigned __int64,struct CShaderTableVulkan::RefCountedShaderFile_t>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CUtlKeyValuePair<unsigned __int64,struct CShaderTableVulkan::RefCountedShaderModule_t>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<struct AsyncReadbackVulkan_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
@@ -927,6 +919,7 @@ Decompressed %i texture mips in %.2f ms (%.1fmb/s)\n
 DedicatedAllocations
 DeepDVC
 DeepResolve
+DefaultCB
 DefaultCropOrigin
 DefaultCropSize
 DefaultPools
@@ -983,7 +976,7 @@ EXRReadFile() - B channel not found!\n
 EXRReadFile() - G channel not found!\n
 EXRReadFile() - R channel not found!\n
 EXRReadFile() - cannot read image data!\n
-E\tV_logd
+Empty
 Enable Software Command lists for Vulkan
 Enabling aggressive command pool rebalancing.\n
 Enabling instance extension: %s.\n
@@ -1022,18 +1015,15 @@ Error! Cannot find GAME\%s file in current search paths! If this is a new shader
 EstimateStripByteCounts
 Exclusive Fullscreen
 ExecuteQueuedCommandBuffers
-Expecting %s
 ExposureTexture
-Expression Parser - 
 ExternalDescSet
 ExtraSamples
 EydV
 FEATURES
-FLOATLITERAL
-FLOATSUFFIX
 FOSSILIZEDB
 FREE
 FSR2: %s\n
+F\nEF4$
 Failed AllocateTexture for '%s'\n
 Failed to allocate field info array
 Failed to allocate memory for %s (%ld elements of %ld bytes each)
@@ -1168,18 +1158,16 @@ GrayResponseUnit
 Group3Options
 Group4Options
 HEADER
-HEXINTEGERLITERAL
 HEX_DIGIT
 HLSL SM6.0 level subgroup wave ops supported, subgroup size = %d\n
 HOST_CACHED
 HOST_COHERENT
 HOST_VISIBLE
-HY"Z
-HY$Z
 HalftoneHints
 Header size does not contain enough data in pipeline cache file %s.  Deleting.\n
 Heap 
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.\n
+Hi~Y
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HostComputer
 IB Size: %s (Count: %d)\n
@@ -1189,7 +1177,6 @@ IMAGE_LINEAR
 IMAGE_OPTIMAL
 IMAGE_UNKNOWN
 INFO : 
-INTEGERLITERAL
 IOS_VULKAN
 IOS_VULKAN_4_0
 IOS_VULKAN_4_1
@@ -1201,6 +1188,7 @@ IS_PC
 IS_SM_
 IS_VULKAN
 IdThread
+If true, the main thread pauses and unpauses the Vulkan worker threads around each texture deallocation, which allows the workers to make a little bit of progress but results in main thread stalls. If false, we keep the workers paused until all deallocations are done, allowing the deallocations to complete significantly faster.
 Ik6 
 Image Layout Transitions (%s)
 Image data size is zero or too large: width = 
@@ -1475,7 +1463,6 @@ Old-style LZW codes, convert file
 OldSubfileType
 OnMultiGpuTransferTexture: No texture specification for destination texture, skipping transfer.\n
 OnQueuePresent
-OnUpdateSwappedImageLayout
 One of the client procedures is NULL pointer.
 OpenSCManagerW
 OpenServiceW
@@ -1562,8 +1549,6 @@ Prints out stats for the Vulkan Framebuffer manager
 Prints out stats for the Vulkan Pipeline manager
 Prints out stats for the Vulkan memory manager
 Prints out stats for the Vulkan shader table
-Pxm(
-Q\tV_powd
 Query
 QueryServiceStatus
 RENDERDOC_GetAPI
@@ -1648,7 +1633,6 @@ Requested memory properties that are not supported for this allocation. Requeste
 Required Vulkan extension "%s" is not supported. Please update your Vulkan driver.\n
 Requires
 Requires%d
-Reset
 ResolutionUnit
 ResolveLayout
 RichTIFFIPTC
@@ -1668,6 +1652,7 @@ SOFTWARE\Classes\RenderDoc.RDCCapture.1\DefaultIcon
 SOFTWARE\Khronos\Vulkan\ImplicitLayers
 SPIR-V reflect failed with error: %s\n
 SPV_GOOGLE_hlsl_functionality1
+SPV_KHR_physical_storage_buffer
 SPV_REFLECT_RESULT_ERROR_ALLOC_FAILED
 SPV_REFLECT_RESULT_ERROR_COUNT_MISMATCH
 SPV_REFLECT_RESULT_ERROR_ELEMENT_NOT_FOUND
@@ -1871,6 +1856,7 @@ UNICODE_ESC
 UUID mismatch in pipeline cache file.  Deleting %s in order to regenerate it.\n
 UUU?,
 U\8h(
+U\tV_logd
 Unable to create VkSurfaceKHR for invalid window handle.\n
 Unable to create the DLSS feature : error code = 0x%08x, info: %s
 Unable to determine texture heap size, assuming %llu MB.\n
@@ -1911,6 +1897,7 @@ Usage
 Usage: %s <window_name>
 UsageBytes
 Use compute shader for mipgen.
+UseSlangForDX11
 Using '%s' for Vulkan debug markers.\n
 Using Steam Shader Pre-Cache whitelist %s\n
 Using VK_EXT_memory_budget set texture memory budget to %llu MB.\n
@@ -2186,10 +2173,8 @@ XClipPathUnits
 XESS: %s\n
 XMLPacket
 XPosition
-XQ#Z
 XResolution
 XYZ, Luv
-X\fEXd$
 XqkY
 YCbCrCoefficients
 YCbCrPositioning
@@ -2206,7 +2191,6 @@ ZIPSetupEncode
 ZIPVSetField
 [%Y-%m-%d %H:%M:%S] 
 [*QmU
-\f\tV_expd
 \mfpmp.exe
 \n*** %s "%s" in %s does not follow the 0..N format!\n\n
 \n*** %s "%s" in %s has max(%d) > 254!\n\n
@@ -2216,13 +2200,13 @@ ZIPVSetField
 \n*** A feature alias in %s doesn't start with "F_"! Aborting shader compile!\n\n
 \n*** A feature in %s doesn't start with "F_"! Aborting shader compile!\n\n
 \n*** A static combo in %s doesn't start with "S_"! Aborting shader compile!\n\n
-\n*** CVfx::ParseCombosAndRulesFromFileHelper(6548): Error opening file "%s"!\n\n
-\n*** CVfx::ParseDescriptionFromFile(6444): Error opening file "%s"!\n\n
-\n*** CVfx::ParseDevBoolFromFile(6371): Error opening file "%s"!\n\n
-\n*** CVfx::ParseFeaturesFromFile(6058): Error opening file "%s"!\n\n
-\n*** CVfx::ParseIncludeFiles(6017): Error opening include file in features list"%s"!\n\n
-\n*** CVfx::ParseModesFromFile(5867): Error opening file "%s"!\n\n
-\n*** CVfx::ParseVersionFromFile(6405): Error opening file "%s"!\n\n
+\n*** CVfx::ParseBoolFromFile(6414): Error opening file "%s"!\n\n
+\n*** CVfx::ParseCombosAndRulesFromFileHelper(6603): Error opening file "%s"!\n\n
+\n*** CVfx::ParseDescriptionFromFile(6499): Error opening file "%s"!\n\n
+\n*** CVfx::ParseFeaturesFromFile(6100): Error opening file "%s"!\n\n
+\n*** CVfx::ParseIncludeFiles(6059): Error opening include file in features list"%s"!\n\n
+\n*** CVfx::ParseModesFromFile(5909): Error opening file "%s"!\n\n
+\n*** CVfx::ParseVersionFromFile(6460): Error opening file "%s"!\n\n
 \n*** Combo "%s" in %s doesn't match a known combo source!\n\n
 \n*** Combo "%s" in %s either does not follow the 0..N format, is not a valid dynamic combo name, or doesn't match an existing feature or mode argument!\n\n
 \n*** Combo "%s" in %s has arg %s that doesn't match an existing feature!\n\n
@@ -2274,14 +2258,15 @@ ZIPVSetField
 \n*** Unable to parse Version in HEADER section of %s!\n\n
 \n*** Unknown rule "%s" in %s!\n\n
 \n*** Unknown text found in FEATURES section in %s: "%s"\n\n
-\n*** VfxGetCompileTargetsFromVfxFile(1410): Error opening file "%s"!\n\n
-\n*** VfxGetUsedShaderProgramsFromVfxFile(1487): Error opening file "%s"!\n\n
+\n*** VfxGetCompileTargetsFromVfxFile(1451): Error opening file "%s"!\n\n
+\n*** VfxGetUsedShaderProgramsFromVfxFile(1528): Error opening file "%s"!\n\n
 \nGetVfxDll(93): ERROR! Can't load %s dll, automatic RenderDoc shader debug info not available.\n
 \nMS,\nVS_MS_RTX
 \nPS_RENDER_STATE
 \nRTX
 \n\tCommand Buffer Labels - %d\n
 \n\tObjects - %d\n
+\n\tV_atanf
 \r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \src\shaders\
 \t@@@@@@@@@@@@@@@@{N{N{N{N{N{N{N{N
@@ -2292,6 +2277,11 @@ ZIPVSetField
 \tRenderpass Count Count ( %d ): \n
 \tThread (%s) Command Buffers (%d)\n
 \tTotal Command Buffers (%d)\n
+\tV_atan2d
+\tV_expd
+\tV_strspn
+\tV_strtoi64
+\tV_strtoui64
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\tLabel[%d] - %s { %f, %f, %f, %f}\n
 \t\tObject[%d] - %s, Handle %p, Name "%s"\n
@@ -2333,7 +2323,7 @@ _psrs
 _rtx
 _tools.txt
 _wjb
-`e6Z
+a\tV_powd
 addressModeU
 addressModeV
 addressModeW
@@ -2413,10 +2403,6 @@ combinerOps
 compareEnable
 compareMask
 compareOp
-compiletargetexprLexerNew
-compiletargetexprLexerNewSSD
-compiletargetexprParserNew
-compiletargetexprParserNewSSD
 components
 compression
 compute
@@ -2578,6 +2564,10 @@ fragmentSize
 framebufferState.m_pFragmentShadingRateAttachment == VK_NULL_HANDLE
 front
 frontFace
+g_PushConstants
+g_nInputAddress
+g_nOutputAddress
+g_nSizeAddress
 g_pEngineServiceMgr is NULL. Display mode information unavailable\n
 g_pRenderDevice is NULL. %d adapter(s) available. Iterating adapters %d - %d\n
 g_pRenderHardwareConfig is NULL. Display mode information unavailable\n
@@ -2693,9 +2683,8 @@ n$Kx
 nQ:B
 nResult = vmaBindBufferMemory( m_MemoryManager.GetVmaAllocator(), pVmaAllocation, pBuffer )
 nResult = vmaBindBufferMemory( m_pVmaAllocator, pMove->dstTmpAllocation, ( VkBuffer ) nNewObject )
-nResult = vmaBindImageMemory( m_MemoryManager.GetVmaAllocator(), pNewVulkanImage->m_pVmaAllocation, pNewVulkanImage->m_pImage )
+nResult = vmaBindImageMemory( m_MemoryManager.GetVmaAllocator(), pNewVulkanImage->GetVmaAllocation(), pNewVulkanImage->GetImage() )
 nResult = vmaBindImageMemory( m_pVmaAllocator, pMove->dstTmpAllocation, ( VkImage ) nNewObject )
-nResult = vmaCreateBuffer( m_pVmaAllocator, &bufferCreateInfo, &allocInfo, ppVKBufferOut, ppVmaAllocationOut, nullptr )
 nResult = vmaCreatePool( m_pVmaAllocator, &poolCreateInfo, &allocInfo.pool )
 nResult = vmaCreatePool( m_pVmaAllocator, &poolCreateInfo, &pNewPool )
 nSemaphoreIndex < static_cast< int32 >( m_nSwapQueueImageCount )
@@ -2726,6 +2715,7 @@ out.var.TEXCOORD0
 outReactiveMask
 outputpatch
 pH_r
+pIntermediateSwapChainImage == pSwapChainVulkan->m_pIntermediateSwapChainImage
 pNext
 panorama_
 panorama_rt_
@@ -2754,9 +2744,7 @@ pseudo-
 psize
 psrs
 pushConstantRanges
-pxm(
 quAt
-r\tV_strspn
 r_allow_low_gpu_memory_mode
 r_cache_pool_allocations
 r_dilatedDepth
@@ -2814,8 +2802,7 @@ rayQueryFeatures.rayQuery not supported, disabling raytracing.\n
 raytracingPipelines
 raytracingaccelerationstructure
 rcasConfig
-readbuffer_staging_mem
-readpixels_staging_mem
+readback_staging_mem
 reductionMode
 reference
 renderPass
@@ -2982,12 +2969,12 @@ transparency
 tried to delete shader twice
 trying to bind a deleted shader
 type.2d.image
+type.ConstantBuffer.PushConstants
 type.PushConstant.
 type.sampled.image
 type.sampler
 t|AO
 uGroupId
-u\tV_strtoi64
 unable to write renderdoc capture to %s\n
 unexpected count for field "%s", %u, expected 2; ignored
 unique_handles
@@ -3006,10 +2993,6 @@ vertexInputState
 vfx_dx11
 vfx_vulkan
 vfxc
-vfxexprLexerNew
-vfxexprLexerNewSSD
-vfxexprParserNew
-vfxexprParserNewSSD
 video.cfg
 video_version
 viewMask
@@ -3733,7 +3716,6 @@ vkQueuePresentKHR failed with error %d\n
 vkQueueSetPerformanceConfigurationINTEL
 vkQueueSubmit
 vkQueueSubmit( VulkanQueue(), 1, &submitInfo, VK_NULL_HANDLE )
-vkQueueSubmit( VulkanQueue(), 1, &submitInfo, pFence ? pFence->Get() : VK_NULL_HANDLE )
 vkQueueSubmit( VulkanQueue(), 1, &submitInfo, pFenceForSubmit )
 vkQueueSubmit( VulkanQueue(), 1, &submitInfo, presentFence.m_pFenceObject->Get() )
 vkQueueSubmit( pQueue, 1, &submitInfo, pFence->Get() )
@@ -3798,17 +3780,16 @@ vmaAllocateMemory failed fallback system memory allocation.  Fatal error: out of
 vmaAllocateMemory failed for DEVICE_LOCAL memory indicating video memory is full, trying again in system memory as a fallback.\n
 vmaBeginDefragmentationPass defrag failed with error: %s\n
 vmaBeginDefragmentationPass: %.2f ms\n
-vmaBindImageMemory( GetVmaAllocator(), m_pDepthStencilImage->m_pVmaAllocation, m_pDepthStencilImage->m_pImage )
-vmaBindImageMemory( GetVmaAllocator(), m_pIntermediateImageResolved->m_pVmaAllocation, m_pIntermediateImageResolved->m_pImage )
-vmaBindImageMemory( GetVmaAllocator(), m_pIntermediateSwapChainImage->m_pVmaAllocation, m_pIntermediateSwapChainImage->m_pImage )
-vmaBindImageMemory( GetVmaAllocator(), m_pVulkanImage->m_pVmaAllocation, m_pVulkanImage->m_pImage )
-vmaBindImageMemory( GetVmaAllocator(), pVulkanImage->m_pVmaAllocation, pVulkanImage->m_pImage )
-vmaBindImageMemory2( GetVmaAllocator(), pVulkanImage->m_pVmaAllocation, 0, pVulkanImage->m_pImage, &bindImageMemoryInfo )
+vmaBindImageMemory( GetVmaAllocator(), m_pDepthStencilImage->GetVmaAllocation(), m_pDepthStencilImage->GetImage() )
+vmaBindImageMemory( GetVmaAllocator(), m_pIntermediateImageResolved->GetVmaAllocation(), m_pIntermediateImageResolved->GetImage() )
+vmaBindImageMemory( GetVmaAllocator(), m_pIntermediateSwapChainImage->GetVmaAllocation(), m_pIntermediateSwapChainImage->GetImage() )
+vmaBindImageMemory( GetVmaAllocator(), m_pVulkanImage->GetVmaAllocation(), m_pVulkanImage->GetImage() )
+vmaBindImageMemory( GetVmaAllocator(), pVulkanImage->GetVmaAllocation(), pVulkanImage->GetImage() )
+vmaBindImageMemory2( GetVmaAllocator(), pVulkanImage->GetVmaAllocation(), 0, pVulkanImage->GetImage(), &bindImageMemoryInfo )
 vmaCreateBufferWithAlignment
 vmaCreateBufferWithAlignment( size = %s ) failed fallback system memory allocation.  Fatal error: out of video and system memory.\n
 vmaCreatePool failed with error: %d\n
 vmaMapMemory( GetVmaAllocator(), asyncReadback.m_pVmaAllocation, &pLockedData )
-vmaMapMemory( GetVmaAllocator(), pStagingMemory, &pLockedData )
 vma_memdump%d.json
 vs_4_0
 vs_4_1
@@ -3828,9 +3809,9 @@ vulkan_pipeline_compile_throttle_ms
 vulkan_pipelinemgr_print
 vulkan_readpixels_resolve
 vulkan_shader_table_print
+vulkan_unpause_workers_after_each_texture_deallocation
 vulkan_vma_defrag
 vulkan_vma_gpu_mem_dump
-w\tV_strtoui64
 warning: NVSDK_NGX_VULKAN_RequiredExtensions will be deprecated in future SDK release. Use NVSDK_NGX_VULKAN_GetFeatureInstanceExtensionRequirements() and NVSDK_NGX_VULKAN_GetFeatureRequirements() instead
 warning: failed to load %ls
 warning: unable to find filename for the application

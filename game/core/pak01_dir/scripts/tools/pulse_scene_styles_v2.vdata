@@ -428,6 +428,28 @@
 		{
 			Visibility = "VISIBLE"
 		}
+		.ValueOuterSelectionBorder = 
+		{
+			PaintLayer = "SELECTION_OVERLAY"
+			Positioning = "INSIDE_PARENT"
+			VAlign = "STRETCH"
+			HAlign = "STRETCH"
+			Border = "1px Inside"
+			Visibility = "HIDDEN"
+			BorderRadius_TopLeft = "7px"
+			BorderRadius_TopRight = "7px"
+			BorderRadius_BottomLeft = "19px"
+			BorderRadius_BottomRight = "19px"
+		}
+		"&:hover-custom-a" = 
+		{
+			.ValueOuterSelectionBorder = 
+			{
+				Visibility = "VISIBLE"
+				Border = "2px Outside DotLine $TealBright"
+				Border_FixedScreenWidth = true
+			}
+		}
 		.NodeRows = 
 		{
 			.RowSeparatorLine = 
@@ -450,6 +472,48 @@
 			{
 				Visibility = "HIDDEN"
 			}
+		}
+	}
+	.LocalNameReferenceContainer = 
+	{
+		Positioning = "OUTSIDE_PARENT"
+		LayoutChildren = "HBOX"
+		Margin_Left = 12
+		VAlign = "CENTER"
+		HAlign = "RIGHT"
+	}
+	.LocalNameReference = 
+	{
+		FixedSizeX = 18
+		FixedSizeY = 18
+		BackgroundImage = "tools/images/pulse_editor/namereference_from_this.png"
+		ImageTint = "#777"
+		InteractionPriority = "BASE"
+		"&:hover" = 
+		{
+			ImageTint = "$GreyBright_Hover"
+		}
+	}
+	.PortLabelIcon = 
+	{
+		MinSizeX = 18
+		MinSizeY = 18
+		InteractionPriority = "ADD_FLOW"
+		"&.ValueType_Bool" = 
+		{
+			ImageTint = "$data_type_bool"
+		}
+		"&.ValueType_Number" = 
+		{
+			ImageTint = "$data_type_number"
+		}
+		"&.ValueType_String" = 
+		{
+			ImageTint = "$data_type_string"
+		}
+		"&.ValueType_Other" = 
+		{
+			ImageTint = "$data_type_other"
 		}
 	}
 	.BaseConnection = 
@@ -1207,6 +1271,13 @@
 		{
 			LayoutGrowFactor = 1
 			Margin_Right = 30
+			"&.FirstFlowPortGrow" = 
+			{
+				"&:first-child" = 
+				{
+					LayoutGrowFactor = 1
+				}
+			}
 			.InflowPortPlugSpacer = 
 			{
 				FixedSizeY = 12
@@ -1227,6 +1298,16 @@
 				.InflowPortPlugSpacer = 
 				{
 					Visibility = "VISIBLE"
+				}
+			}
+			"&.FixedSizeFlowPort" = 
+			{
+				LayoutGrowFactor = 0
+				FixedSizeX = 40
+				Margin_Right = 0
+				.InflowPortPlugSpacer = 
+				{
+					Visibility = "COLLAPSE"
 				}
 			}
 			.PortPlugCtn = 
@@ -1268,6 +1349,19 @@
 			"&:first-child" = 
 			{
 				LayoutGrowFactor = 0
+				"&.FirstFlowPortGrow" = 
+				{
+					LayoutGrowFactor = 1
+					.PortPlugCtn = 
+					{
+						HAlign = "LEFT"
+					}
+				}
+			}
+			"&.FixedSizeFlowPort" = 
+			{
+				LayoutGrowFactor = 0
+				FixedSizeX = 40
 			}
 			.PortPlugCtn = 
 			{
@@ -1969,7 +2063,7 @@
 				Visibility = "COLLAPSE"
 			}
 		}
-		"&.WaitForCompletion" = 
+		"&.WaitForCompletion &.IsTimelineNode" = 
 		{
 			.OutflowPortsLayout = 
 			{
@@ -2288,6 +2382,28 @@
 			{
 				Font = "Dinish,10,-1,5,50,0,0,0,0,0,Italic"
 				Foreground_Color = "$colorBase"
+			}
+		}
+		.HeaderTextAdditionalIcon = 
+		{
+			MinSizeX = 18
+			MinSizeY = 18
+			InteractionPriority = "ADD_FLOW"
+			"&.ValueType_Bool" = 
+			{
+				ImageTint = "$data_type_bool"
+			}
+			"&.ValueType_Number" = 
+			{
+				ImageTint = "$data_type_number"
+			}
+			"&.ValueType_String" = 
+			{
+				ImageTint = "$data_type_string"
+			}
+			"&.ValueType_Other" = 
+			{
+				ImageTint = "$data_type_other"
 			}
 		}
 		"&.Skipped, &.Unreachable" = 
@@ -2639,25 +2755,10 @@
 	"@Palette Palette_statecell" = 
 	{
 		Base_Palette = "Palette_yielding"
-		colors = 
-		{
-			"$flowColor" = "$GreyLight"
-			"$flowColorAccessory" = "$White"
-			"$iconColor" = "$GreyLight"
-			"$bgColorBase" = "$BrownLeather"
-			"$bgColorHover" = "$BrownLeather_Hover"
-			"$dragColorBase" = "$GreyLight"
-			"$dragColorHover" = "$GreyLight"
-		}
 	}
 	"@Palette Palette_statecell_active" = 
 	{
 		Base_Palette = "Palette_statecell"
-		colors = 
-		{
-			"$bgColorBase" = "$RedMid"
-			"$bgColorHover" = "$RedMid_Hover"
-		}
 	}
 	"@Palette Palette_value" = 
 	{

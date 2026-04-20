@@ -177,7 +177,7 @@ var InspectModelImage;
         return false;
     }
     InspectModelImage.PanZoomEnabled = PanZoomEnabled;
-    function _SetCSMSplitPlane0DistanceOverride(elPanel, backgroundMap) {
+    function _SetCSMSplitPlane0DistanceOverrideMainCharacter(elPanel, backgroundMap) {
         let flSplitPlane0Distance = 0.0;
         if (backgroundMap === 'de_ancient_vanity') {
             flSplitPlane0Distance = 180.0;
@@ -213,6 +213,67 @@ var InspectModelImage;
             elPanel.SetCSMSplitPlane0DistanceOverride(flSplitPlane0Distance);
         }
     }
+    function _SetCSMSplitPlane0DistanceOverrideItemInspect(elPanel, backgroundMap, itemId) {
+        let flSplitPlane0Distance = 0.0;
+        let bIsKeyChain = ItemInfo.IsKeychain(itemId);
+        let itemCategory = InventoryAPI.GetLoadoutCategory(itemId);
+        if (itemCategory === 'secondary')
+            flSplitPlane0Distance = 30.0;
+        else if (itemCategory === 'smg')
+            flSplitPlane0Distance = 40.0;
+        else if (itemCategory === 'rifle')
+            flSplitPlane0Distance = 55.0;
+        else if (itemCategory === 'clothing')
+            flSplitPlane0Distance = 15.0;
+        else if (itemCategory === 'melee')
+            flSplitPlane0Distance = 30.0;
+        else if (bIsKeyChain)
+            flSplitPlane0Distance = 10.0;
+        if (flSplitPlane0Distance > 0.0) {
+            elPanel.SetCSMSplitPlane0DistanceOverride(flSplitPlane0Distance);
+        }
+    }
+    function _SetBarnlightShadowScaleOverrideMainCharacter(elPanel, backgroundMap) {
+        let flBarnlightShadowScale = 0.0;
+        if (backgroundMap === 'ui/acknowledge_item') {
+            flBarnlightShadowScale = 1.0;
+        }
+        else if (backgroundMap === 'warehouse_vanity') {
+            flBarnlightShadowScale = 1.0;
+        }
+        else if (backgroundMap === 'de_train_vanity') {
+            flBarnlightShadowScale = 1.0;
+        }
+        if (flBarnlightShadowScale > 0.0) {
+            elPanel.SetBarnlightShadowScaleOverride(flBarnlightShadowScale);
+        }
+    }
+    function _SetBarnlightShadowScaleOverrideItemInspect(elPanel, backgroundMap, itemId) {
+        let flBarnlightShadowScale = 0.0;
+        const bIsKeyChain = ItemInfo.IsKeychain(itemId);
+        const bIsWeaponOrKnife = ItemInfo.IsWeapon(itemId) || ItemInfo.IsMelee(itemId);
+        const itemCategory = InventoryAPI.GetLoadoutCategory(itemId);
+        if (backgroundMap === 'ui/acknowledge_item') {
+            flBarnlightShadowScale = 1.0;
+        }
+        else if (itemCategory === 'clothing') {
+            if (backgroundMap === 'de_train_vanity')
+                flBarnlightShadowScale = 1.0;
+            else
+                flBarnlightShadowScale = 4.0;
+        }
+        else if (bIsWeaponOrKnife || bIsKeyChain) {
+            if (backgroundMap === 'warehouse_vanity')
+                flBarnlightShadowScale = 1.0;
+            else if (backgroundMap === 'de_train_vanity')
+                flBarnlightShadowScale = 1.0;
+            else
+                flBarnlightShadowScale = 4.0;
+        }
+        if (flBarnlightShadowScale > 0.0) {
+            elPanel.SetBarnlightShadowScaleOverride(flBarnlightShadowScale);
+        }
+    }
     function _InitWeaponScene(itemId) {
         const IsItemApplyRemove = InspectShared.GetPopupSetting('is_apply_remove_item');
         let oSettings = {
@@ -233,12 +294,6 @@ var InspectModelImage;
         const panel = _LoadInspectMap(itemId, oSettings);
         _SetParticlesBg(itemId, panel);
         SetItemCameraByWeaponType(itemId, panel, false);
-        if (InventoryAPI.GetLoadoutCategory(itemId) === 'secondary')
-            panel.SetCSMSplitPlane0DistanceOverride(30.0);
-        else if (InventoryAPI.GetLoadoutCategory(itemId) === 'smg')
-            panel.SetCSMSplitPlane0DistanceOverride(40.0);
-        else if (InventoryAPI.GetLoadoutCategory(itemId) === 'rifle')
-            panel.SetCSMSplitPlane0DistanceOverride(55.0);
         const settings = ItemInfo.GetOrUpdateVanityCharacterSettings();
         settings.panel = panel;
         settings.weaponItemId = '';
@@ -263,7 +318,6 @@ var InspectModelImage;
         const panel = _LoadInspectMap(itemId, oSettings);
         _SetParticlesBg(itemId, panel);
         _TransitionCamera(panel, 'melee');
-        panel.SetCSMSplitPlane0DistanceOverride(30.0);
         return panel;
     }
     function _InitStickerScene(itemId) {
@@ -428,7 +482,6 @@ var InspectModelImage;
         const panel = _LoadInspectMap(itemId, oSettings);
         _SetParticlesBg(itemId, panel);
         _TransitionCamera(panel, 'gloves', true);
-        panel.SetCSMSplitPlane0DistanceOverride(15.0);
         return panel;
     }
     function _InitNametagScene(itemId) {
@@ -471,7 +524,6 @@ var InspectModelImage;
         const panel = _LoadInspectMap(itemId, oSettings);
         _SetParticlesBg(itemId, panel);
         _TransitionCamera(panel, 'nametag_close');
-        panel.SetCSMSplitPlane0DistanceOverride(10.0);
         return panel;
     }
     function _GetBackGroundMap(bUseMainMenuMap = false) {
@@ -554,7 +606,8 @@ var InspectModelImage;
     function _AdditionalMapLoadSettings(elPanel, active_item_idx, mapName) {
         if (elPanel.id === 'CharPreviewPanel') {
             DisableItemLighting(elPanel);
-            _SetCSMSplitPlane0DistanceOverride(elPanel, mapName);
+            _SetCSMSplitPlane0DistanceOverrideMainCharacter(elPanel, mapName);
+            _SetBarnlightShadowScaleOverrideMainCharacter(elPanel, mapName);
         }
         else if (elPanel.id === 'id-inspect-image-bg-map') {
             DisableItemLighting(elPanel);
@@ -567,6 +620,9 @@ var InspectModelImage;
             else {
                 SetSunBrightness(elPanel);
             }
+            const itemId = elPanel.Data().itemId;
+            _SetCSMSplitPlane0DistanceOverrideItemInspect(elPanel, mapName, itemId);
+            _SetBarnlightShadowScaleOverrideItemInspect(elPanel, mapName, itemId);
         }
         _SetWorkshopPreviewPanelProperties(elPanel);
     }
@@ -781,7 +837,10 @@ var InspectModelImage;
     function _SetRimLight(indexShow, elPanel) {
         if (_UseAcknowledge()) {
             elPanel.FireEntityInput('light_item' + indexShow, 'Disable');
-            const itemId = InspectShared.GetPopupSetting('item_id');
+            let itemId = InspectShared.GetPopupSetting('item_id');
+            if (!itemId) {
+                itemId = elPanel.Data().itemId;
+            }
             const oColor = _HexColorToRgb(InventoryAPI.GetItemRarityColor(itemId));
             const sColor = `${oColor.r} ${oColor.g} ${oColor.b}`;
             let lightNameInMap = "light_item_new" + indexShow;

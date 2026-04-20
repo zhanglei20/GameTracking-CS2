@@ -1,5 +1,8 @@
 // MGetKV3ClassDefaults = {
 //	"m_nBands": 3,
+//	"m_scene":
+//	{
+//	},
 //	"m_grid":
 //	{
 //		"m_aabb":
@@ -33,7 +36,8 @@
 //		"m_nNumRays": 0,
 //		"m_nNumBounces": 0,
 //		"m_flIRDuration": 0.000000,
-//		"m_nAmbisonicsOrder": 0
+//		"m_nAmbisonicsOrder": 0,
+//		"m_bExportScene": false
 //	},
 //	"m_reverbClusteringSettings":
 //	{
@@ -100,6 +104,7 @@
 class CSteamAudioBakedReverbData
 {
 	int32 m_nBands;
+	CSteamAudioSceneData m_scene;
 	CSteamAudioProbeData m_probes;
 	CSteamAudioProbeGrid m_grid;
 	SteamAudioReverbSettings_t m_reverbSettings;

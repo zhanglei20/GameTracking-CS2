@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/meechydarko_01/mainmenu.vsnd"
+		vsnd_duration = 240.1698
 	}
 	Music.MVPPreview.meechydarko_01 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/meechydarko_01/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/meechydarko_01/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 8.594286
 	}
 	Music.Selection.meechydarko_01 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/meechydarko_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 22.778776
 	}
 	Music.MatchFound.meechydarko_01 = 
 	{
@@ -68,6 +74,7 @@
 			15.403, 18.449, 21.514,
 		]
 		syncpoints_03 = [ 3.074, 6.148, 9.19 ]
+		vsnd_duration = 26.044081
 	}
 	Music.LoadingScreen.meechydarko_01 = 
 	{
@@ -97,6 +104,7 @@
 			"sounds/music/meechydarko_01/startaction_02.vsnd",
 			"sounds/music/meechydarko_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 15.621224
 	}
 	Music.StartRound.meechydarko_01 = 
 	{
@@ -139,6 +147,7 @@
 			15.403, 18.449, 21.514,
 		]
 		syncpoints_03 = [ 3.074, 6.148, 9.19 ]
+		vsnd_duration = 26.044081
 	}
 	Music.StartAction.meechydarko_01 = 
 	{
@@ -170,6 +179,7 @@
 			"sounds/music/meechydarko_01/startaction_02.vsnd",
 			"sounds/music/meechydarko_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 15.621224
 	}
 	Music.StartRound_GG.meechydarko_01 = 
 	{
@@ -213,6 +223,7 @@
 			15.403, 18.449, 21.514,
 		]
 		syncpoints_03 = [ 3.074, 6.148, 9.19 ]
+		vsnd_duration = 26.044081
 	}
 	Music.BombPlanted.meechydarko_01 = 
 	{
@@ -235,6 +246,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.146122
 	}
 	Music.BombTenSecCount.meechydarko_01 = 
 	{
@@ -253,6 +265,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.109387
 	}
 	Music.GotHostage.meechydarko_01 = 
 	{
@@ -277,6 +290,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.146122
 	}
 	Music.HostageNearRescue.meechydarko_01 = 
 	{
@@ -299,6 +313,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.109387
 	}
 	Music.TenSecCount.meechydarko_01 = 
 	{
@@ -320,6 +335,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.13551
 	}
 	Music.WonRound.meechydarko_01 = 
 	{
@@ -344,6 +360,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 8.280816
 	}
 	Music.LostRound.meechydarko_01 = 
 	{
@@ -368,6 +385,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.03102
 	}
 	Music.DeathCam.meechydarko_01 = 
 	{
@@ -380,6 +398,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 8.124082
 	}
 	Music.MVPAnthem.meechydarko_01 = 
 	{
@@ -406,6 +437,7 @@
 		[
 			"sounds/music/meechydarko_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 8.594286
 	}
 	Music.MatchStart.meechydarko_01 = 
 	{
@@ -421,6 +453,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/meechydarko_01/startofmatch.vsnd"
+		vsnd_duration = 8.051202
 	}
 	Music.MatchEnd.meechydarko_01 = 
 	{
@@ -442,6 +475,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 45.883083
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

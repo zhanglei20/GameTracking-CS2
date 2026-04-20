@@ -931,6 +931,7 @@ Assignment %s: Reference to shader variable '%s' not valid for %s techniques bec
 Attempt to read undeclared component%s of input register v%d (*): %s. Components of v# registers to be read must be declared by a dcl statement.
 Attempt to write undeclared component%s of output register o%d (*): %s. Components of o# registers to be written must be declared by a dcl statement.
 AttrParams
+Attributes
 B*!(A * -B + B) -> A * B <| MR.GenSimplifyInstructionsOpt1_NoExcl
 BACK
 BINORMAL
@@ -2387,7 +2388,6 @@ PIXELSHADERCONSTANT4
 PIXELSHADERCONSTANTB
 PIXELSHADERCONSTANTF
 PIXELSHADERCONSTANTI
-POINT
 POINTSCALEENABLE
 POINTSCALE_A
 POINTSCALE_B

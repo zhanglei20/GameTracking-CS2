@@ -266,13 +266,14 @@ var InspectActionBar;
             elDropdown.AddOption(newEntry);
         }
         const itemId = InspectShared.GetPopupSetting('item_id');
-        elDropdown.SetPanelEvent('oninputsubmit', () => InspectActionBar.OnUpdateCharModel(elDropdown, itemId));
+        const contextPanel = $.GetContextPanel();
+        elDropdown.SetPanelEvent('oninputsubmit', () => InspectActionBar.OnUpdateCharModel(elDropdown, itemId, contextPanel));
         elDropdown.SetSelected(currentMainMenuVanitySettings.charItemId);
     }
-    function OnUpdateCharModel(elDropdown, weaponItemId) {
+    function OnUpdateCharModel(elDropdown, weaponItemId, contextPanel) {
         const characterItemId = elDropdown.GetSelected().id;
         elDropdown.Data().selectedId = elDropdown.GetSelected().id;
-        InspectModelImage.SetCharScene(characterItemId, weaponItemId);
+        InspectModelImage.SetCharScene(characterItemId, weaponItemId, contextPanel);
     }
     InspectActionBar.OnUpdateCharModel = OnUpdateCharModel;
     function NavigateModelPanel(type, bEndWeaponLookat = true) {

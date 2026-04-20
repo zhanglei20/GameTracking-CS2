@@ -632,7 +632,11 @@ var CapabilityDecodable;
             return 'graffiti';
         else if (itemDefName && itemDefName.indexOf("sticker") != -1)
             return 'sticker';
-        else if (itemDefName && itemDefName.indexOf("coupon") == 0)
+        else if (itemDefName && itemDefName.indexOf("pins") != -1)
+            return 'pins';
+        else if (itemDefName && itemDefName.indexOf("patch") != -1)
+            return 'patch';
+        else if (itemDefName && (itemDefName.indexOf("coupon") == 0 || itemDefName.indexOf("musickit") != -1))
             return 'music';
         else
             return 'weapon';

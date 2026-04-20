@@ -76,6 +76,7 @@
 //		}
 //	},
 //	"m_nOpEndCapState": "PARTICLE_ENDCAP_ALWAYS_ON",
+//	"m_nToolsState": "PARTICLE_TOOLS_STATE_ALWAYS_ON",
 //	"m_flOpStartFadeInTime": 0.000000,
 //	"m_flOpEndFadeInTime": 0.000000,
 //	"m_flOpStartFadeOutTime": 0.000000,
@@ -1347,6 +1348,7 @@
 //	"m_ActivityName": "",
 //	"m_SequenceName": "",
 //	"m_bEnableClothSimulation": false,
+//	"m_bDisableClothGroundCollision": false,
 //	"m_ClothEffectName": "",
 //	"m_hOverrideMaterial": "",
 //	"m_bOverrideTranslucentMaterials": true,
@@ -2310,6 +2312,8 @@ class C_OP_RenderModels : public CParticleFunctionRenderer
 	char[256] m_SequenceName;
 	// MPropertyFriendlyName = "Enable Cloth Simulation"
 	bool m_bEnableClothSimulation;
+	// MPropertyFriendlyName = "Disable Cloth Ground Collision"
+	bool m_bDisableClothGroundCollision;
 	// MPropertyFriendlyName = "With Cloth Effect"
 	// MPropertySortPriority = 500
 	char[64] m_ClothEffectName;

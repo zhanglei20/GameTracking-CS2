@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/denzelcurry_01/mainmenu.vsnd"
+		vsnd_duration = 192.104492
 	}
 	Music.MVPPreview.denzelcurry_01 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/denzelcurry_01/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/denzelcurry_01/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 9.116735
 	}
 	Music.Selection.denzelcurry_01 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/denzelcurry_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 26.12245
 	}
 	Music.MatchFound.denzelcurry_01 = 
 	{
@@ -68,6 +74,7 @@
 			0.0, 4.008, 8.014, 12.008,
 			16.013, 20.012,
 		]
+		vsnd_duration = 24.111021
 	}
 	Music.LoadingScreen.denzelcurry_01 = 
 	{
@@ -97,6 +104,7 @@
 			"sounds/music/denzelcurry_01/startaction_02.vsnd",
 			"sounds/music/denzelcurry_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 18.128979
 	}
 	Music.StartRound.denzelcurry_01 = 
 	{
@@ -139,6 +147,7 @@
 			0.0, 4.008, 8.014, 12.008,
 			16.013, 20.012,
 		]
+		vsnd_duration = 24.111021
 	}
 	Music.StartAction.denzelcurry_01 = 
 	{
@@ -170,6 +179,7 @@
 			"sounds/music/denzelcurry_01/startaction_02.vsnd",
 			"sounds/music/denzelcurry_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 18.128979
 	}
 	Music.StartRound_GG.denzelcurry_01 = 
 	{
@@ -213,6 +223,7 @@
 			0.0, 4.008, 8.014, 12.008,
 			16.013, 20.012,
 		]
+		vsnd_duration = 24.111021
 	}
 	Music.BombPlanted.denzelcurry_01 = 
 	{
@@ -235,6 +246,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.067757
 	}
 	Music.BombTenSecCount.denzelcurry_01 = 
 	{
@@ -253,6 +265,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.501225
 	}
 	Music.GotHostage.denzelcurry_01 = 
 	{
@@ -277,6 +290,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.067757
 	}
 	Music.HostageNearRescue.denzelcurry_01 = 
 	{
@@ -299,6 +313,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.501225
 	}
 	Music.TenSecCount.denzelcurry_01 = 
 	{
@@ -320,6 +335,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.318367
 	}
 	Music.WonRound.denzelcurry_01 = 
 	{
@@ -344,6 +360,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.109387
 	}
 	Music.LostRound.denzelcurry_01 = 
 	{
@@ -368,6 +385,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 8.85551
 	}
 	Music.DeathCam.denzelcurry_01 = 
 	{
@@ -380,6 +398,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 9.116735
 	}
 	Music.MVPAnthem.denzelcurry_01 = 
 	{
@@ -406,6 +437,7 @@
 		[
 			"sounds/music/denzelcurry_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 9.116735
 	}
 	Music.MatchStart.denzelcurry_01 = 
 	{
@@ -421,6 +453,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/denzelcurry_01/startofmatch.vsnd"
+		vsnd_duration = 42.343105
 	}
 	Music.MatchEnd.denzelcurry_01 = 
 	{
@@ -442,6 +475,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 42.343105
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

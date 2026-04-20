@@ -1913,7 +1913,6 @@ Arg list too long
 Artwork
 ArtworkPublished
 Ascending
-Assert
 Assert Dialog
 Assert( %s ):%s:%d\n
 Assertion Failed: stack%2d: %s (%d): %s
@@ -3873,7 +3872,6 @@ Individual
 Infinite time value
 Inherit all
 Inhibit Policy Mapping
-Init
 Init Failed
 InitOnceExecuteOnce
 InitVirtualHeap( %d ) called twice (%d)\n
@@ -7628,7 +7626,6 @@ could not unload the shared library
 count == 0 || s1 != NULL
 count == 0 || s2 != NULL
 count >= 0
-counter
 counter:
 countersignature
 countryCode3c
@@ -11078,6 +11075,7 @@ m_strTargetHostName
 m_strTargetPath
 m_strTempFile
 m_strURL
+m_strValue
 m_stringDimensions
 m_symbolDimensions
 m_totalTime

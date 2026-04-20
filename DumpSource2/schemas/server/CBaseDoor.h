@@ -1,4 +1,3 @@
-// MNetworkVarNames = "bool m_bIsUsable"
 class CBaseDoor : public CBaseToggle
 {
 	QAngle m_angMoveEntitySpace;
@@ -30,7 +29,6 @@ class CBaseDoor : public CBaseToggle
 	bool m_bCreateNavObstacle;
 	// MNotSaved
 	bool m_isChaining;
-	// MNetworkEnable
 	// MNotSaved
 	bool m_bIsUsable;
 };

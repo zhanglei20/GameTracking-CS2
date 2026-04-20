@@ -17,10 +17,21 @@
 			name = ""
 			group = "ToolsStartup"
 			source_file = "src/tools/toolutils2/detailprops.cpp"
-			source_line = 26
+			source_line = 27
 			resources = 
 			[
 				resource_name:"scripts/detail_prop_types.vdata",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/toolrenderutils/toolstandardmodels.cpp"
+			source_line = 18
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+				resource_name:"models/editor/camera.vmdl",
 			]
 		},
 		{
@@ -82,11 +93,31 @@
 			name = ""
 			group = "ToolsStartup"
 			source_file = "src/mapdoclib/mapstaticoverlay.cpp"
-			source_line = 225
+			source_line = 230
 			resources = 
 			[
 				resource_name:"materials/tools/static_overlay_base.vmat",
 				resource_name:"materials/tools/static_overlay_helper.vmat",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/mapdoclib/mappathlocator.cpp"
+			source_line = 17
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/mapdoclib/mapmeshlocator.cpp"
+			source_line = 21
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
 			]
 		},
 		{
@@ -155,10 +186,10 @@
 	{
 		"@lib:resourcecompiler.dll!CParticleBindingRealPulse" = 0
 		"@lib:resourcecompiler.dll!CParticleCollectionBindingInstance" = 11256737
-		"@lib:resourcecompiler.dll!CPulseArraylib" = 1970002260
+		"@lib:resourcecompiler.dll!CPulseArraylib" = 3172841818
 		"@lib:resourcecompiler.dll!CPulseCell_BooleanSwitchState" = 1295793995
 		"@lib:resourcecompiler.dll!CPulseCell_CursorQueue" = 717294393
-		"@lib:resourcecompiler.dll!CPulseCell_FireCursors" = 18454619
+		"@lib:resourcecompiler.dll!CPulseCell_FireCursors" = 3525151428
 		"@lib:resourcecompiler.dll!CPulseCell_Inflow_EntOutputHandler" = 0
 		"@lib:resourcecompiler.dll!CPulseCell_Inflow_EventHandler" = 0
 		"@lib:resourcecompiler.dll!CPulseCell_Inflow_GraphHook" = 0
@@ -184,9 +215,9 @@
 		"@lib:resourcecompiler.dll!CPulseCell_Value_RandomInt" = 393431413
 		"@lib:resourcecompiler.dll!CPulseCell_WaitForCursorsWithTag" = 860342186
 		"@lib:resourcecompiler.dll!CPulseCell_WaitForObservable" = 2210056048
-		"@lib:resourcecompiler.dll!CPulseCursorFuncs" = 4272227935
+		"@lib:resourcecompiler.dll!CPulseCursorFuncs" = 109602028
 		"@lib:resourcecompiler.dll!CPulseGraphInstance_SmartPropEval" = 362000811
-		"@lib:resourcecompiler.dll!CPulseMathlib" = 4024109508
+		"@lib:resourcecompiler.dll!CPulseMathlib" = 1084168616
 		"@lib:resourcecompiler.dll!CPulseTestScriptLib" = 1396807546
 		"@lib:resourcecompiler.dll!CSmartPropAPI" = 427769199
 		"@lib:resourcecompiler.dll!CSmartPropExprAPI" = 3805268226
@@ -220,6 +251,7 @@
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:SmartPropGridOriginBasis_t" = 3238756410
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:SmartPropGridPlacementMode_t" = 3971003712
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:SmartPropPathPositions_t" = 162285291
+		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:SmartPropPlaceMeshOrientationMode_t" = 1128921260
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:SmartPropRadiusPlacementMode_t" = 1415308148
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:SmartPropSpace_t" = 1968022276
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:TraceNoHitResult_t" = 3636113325
@@ -578,6 +610,87 @@
 								]
 								associated_outflow_name = "OutDefault"
 								direct_return_value_for = "CPulseArraylib::ArrayCount"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseArraylib::ArrayFindElementMatching" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Array Find Element Matching"
+					m_Description = "Find first element 'a' which compare equal to 'element' and return its index."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseArraylib"
+						}
+						pulse_inparams = 
+						{
+							a = 
+							{
+								friendly_name = "a"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_ARRAY:PVAL_UNKNOWN"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseArraylib::ArrayFindElementMatching"
+							}
+							element = 
+							{
+								friendly_name = "element"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_dependent_arg = "a:typeparam"
+								}
+								type = "PVAL_VARIANT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseArraylib::ArrayFindElementMatching"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseArraylib::ArrayFindElementMatching"
 							}
 						}
 						generic_node_category = 4
@@ -1455,8 +1568,8 @@
 					[
 						"CPulseCell_BaseState",
 					]
-					m_FriendlyName = "Boolean Switch State"
-					m_Description = "While active, activate a child state based on the results of a boolean condition. Any referenced variables must be marked as observable."
+					m_FriendlyName = "Monitor Observable"
+					m_Description = "While active, manage child cursors based on the results of a boolean condition. When the observable result changes, the prior cursor will be canceled and the appropriate outflow will fire a new child cursor. Will monitor continuously until externally canceled."
 					m_MetaData = 
 					{
 						MVDataNodeType = 0
@@ -1501,32 +1614,32 @@
 							{
 								field_name = "m_Condition"
 								attr_factory = "PulseObservableBoolExpression_t"
-								friendly_name = "Condition"
+								friendly_name = "Observable"
 								description = "Condition to evaluate when any of its dependent values change."
 							},
 						]
 						pulse_outflows = 
 						[
 							{
-								name = "m_SubGraph"
+								name = "m_Always"
 								is_default_outflow = false
 								backed_by_variable = true
-								friendly_name = "Sub Graph"
-								description = ""
+								friendly_name = "Always"
+								description = "Fired immediately when this node begins for chaining purposes."
 							},
 							{
 								name = "m_WhenTrue"
 								is_default_outflow = false
 								backed_by_variable = true
 								friendly_name = "When True"
-								description = ""
+								description = "Fired when the observable boolean is true, and killed when false."
 							},
 							{
 								name = "m_WhenFalse"
 								is_default_outflow = false
 								backed_by_variable = true
 								friendly_name = "When False"
-								description = ""
+								description = "Fired when the observable boolean is false, and killed when true."
 							},
 						]
 					}
@@ -1713,6 +1826,7 @@
 						editor_canvas_item_spec = 
 						{
 							className = "IsWaitNode IsControlFlowNode"
+							item_factory = "InflowWait"
 						}
 						pulse_outflows = 
 						[
@@ -2169,6 +2283,7 @@
 										m_FriendlyName = "Choose Best"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Choose the best outflow with all rules passing, as determined by number of passing rules (specificity)."
 									},
 									{
 										m_iValue = 0
@@ -2176,6 +2291,7 @@
 										m_FriendlyName = "Choose First"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Choose the first outflow with all rules passing, from left to right"
 									},
 								]
 							}
@@ -2733,6 +2849,7 @@
 										m_FriendlyName = "Keep running normally."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 									{
 										m_iValue = 0
@@ -2740,6 +2857,7 @@
 										m_FriendlyName = "Kill after current node."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Do not stop the current yielding node, but do not continue to the next node afterwards."
 									},
 									{
 										m_iValue = 0
@@ -2747,6 +2865,7 @@
 										m_FriendlyName = "Kill elegantly."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Request elegant wind-down of any associated work (e.g. vcd interrupt)."
 									},
 									{
 										m_iValue = 0
@@ -2754,6 +2873,7 @@
 										m_FriendlyName = "Kill immediately."
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = "Stop without any wind-down."
 									},
 								]
 							}
@@ -2839,8 +2959,8 @@
 					[
 						"CPulseCell_BaseYieldingInflow",
 					]
-					m_FriendlyName = "Wait For Observable Condition"
-					m_Description = ""
+					m_FriendlyName = "Wait Until"
+					m_Description = "All values connected to this node must be 'observable'. Variables on this graph will be automatically promoted to observable. Other value nodes must take an explicit context, look for those nodes with a corresponding icon."
 					m_MetaData = 
 					{
 						MVDataNodeType = 0
@@ -2888,7 +3008,7 @@
 							{
 								field_name = "m_Condition"
 								attr_factory = "PulseObservableBoolExpression_t"
-								friendly_name = "Condition"
+								friendly_name = "Observable"
 								description = "Condition to evaluate when any of its dependent values change."
 							},
 						]
@@ -3314,54 +3434,6 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CPulseCursorFuncs::KillThisCursorAndFail" = 
-				{
-					m_BaseClasses = [  ]
-					m_FriendlyName = "Kill This Cursor And Fail"
-					m_Description = "Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success."
-					m_MetaData = 
-					{
-						supported_domains = 
-						{
-							BaseDomain = true
-						}
-						scope_to_dependency_name = 
-						{
-							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseCursorFuncs"
-						}
-						header_icon = "tools/images/pulse_editor/cursor_kill.png"
-						pulse_inparams = null
-						generic_node_category = 5
-						is_pulse_library_method = true
-						pulse_inflows = 
-						[
-							{
-								name = "InDefault"
-								friendly_name = "Default In"
-								is_default_inflow = true
-							},
-						]
-						pulse_outflows = 
-						[
-							{
-								name = "OutDefault"
-								friendly_name = "Default Out"
-								is_default_outflow = true
-								allow_direct_return = true
-							},
-						]
-					}
-					m_HelpContextName = ""
-					m_nClassType = "vdata"
-					m_rgbColor = [ 220, 30, 220 ]
-					m_bmins = [ -8.0, -8.0, -8.0 ]
-					m_bmaxs = [ 8.0, 8.0, 8.0 ]
-					m_Tags = [  ]
-					m_Variables = [  ]
-					m_Inputs = [  ]
-					m_Outputs = [  ]
-					m_Helpers = [  ]
-				}
 				"CPulseCursorFuncs::RemoveTagFromCursor" = 
 				{
 					m_BaseClasses = [  ]
@@ -3635,6 +3707,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -3698,6 +3772,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -3761,6 +3837,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -3824,6 +3902,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -3887,6 +3967,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -3950,6 +4032,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4039,6 +4123,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4128,6 +4214,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4191,6 +4279,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4266,6 +4356,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4329,6 +4421,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4404,6 +4498,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4467,6 +4563,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4530,6 +4628,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4592,6 +4692,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4655,6 +4757,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4718,6 +4822,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4780,6 +4886,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4856,6 +4964,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4918,6 +5028,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -4980,6 +5092,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5043,6 +5157,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5106,6 +5222,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5195,6 +5313,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5284,6 +5404,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5373,6 +5495,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5436,6 +5560,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5499,6 +5625,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5562,6 +5690,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5650,6 +5780,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5712,6 +5844,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5800,6 +5934,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5889,6 +6025,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -5977,6 +6115,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6052,6 +6192,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6153,6 +6295,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6242,6 +6386,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6330,6 +6476,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6406,6 +6554,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6482,6 +6632,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6558,6 +6710,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6634,6 +6788,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6696,6 +6852,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6744,6 +6902,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6820,6 +6980,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6879,6 +7041,97 @@
 								]
 								associated_outflow_name = "OutDefault"
 								direct_return_value_for = "CPulseMathlib::Rad2Deg"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseMathlib::RandomWorldPosition" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Random World Position"
+					m_Description = "Returns a random position centered on vCenter with random min and max radius"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseMathlib"
+						}
+						expr_alias = "random_position"
+						pulse_inparams = 
+						{
+							vCenter = 
+							{
+								friendly_name = "Center"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3_WORLDSPACE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::RandomWorldPosition"
+							}
+							flMinRadius = 
+							{
+								friendly_name = "Min Radius"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::RandomWorldPosition"
+							}
+							flMaxRadius = 
+							{
+								friendly_name = "Max Radius"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::RandomWorldPosition"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3_WORLDSPACE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseMathlib::RandomWorldPosition"
 							}
 						}
 						generic_node_category = 4
@@ -6998,6 +7251,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7061,6 +7316,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7124,6 +7381,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7187,6 +7446,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7250,6 +7511,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7313,6 +7576,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7376,6 +7641,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7466,6 +7733,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7556,6 +7825,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7646,6 +7917,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7736,6 +8009,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7812,6 +8087,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -7916,6 +8193,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8006,6 +8285,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8096,6 +8377,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8159,6 +8442,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8222,6 +8507,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8285,6 +8572,72 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseMathlib::StringLength" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "String Length"
+					m_Description = "Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseMathlib"
+						}
+						pulse_inparams = 
+						{
+							strValue = 
+							{
+								friendly_name = "Value"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::StringLength"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseMathlib::StringLength"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8360,6 +8713,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8423,6 +8778,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8485,6 +8842,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8547,6 +8906,8 @@
 						}
 						generic_node_category = 4
 						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -12414,6 +12775,7 @@
 										m_FriendlyName = "None"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 									{
 										m_iValue = 0
@@ -12421,6 +12783,7 @@
 										m_FriendlyName = "Square"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 									{
 										m_iValue = 0
@@ -12428,6 +12791,7 @@
 										m_FriendlyName = "Circle"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 									{
 										m_iValue = 0
@@ -12435,6 +12799,7 @@
 										m_FriendlyName = "Diamond"
 										m_bDefault = false
 										m_bCustom = false
+										m_Description = ""
 									},
 								]
 							}

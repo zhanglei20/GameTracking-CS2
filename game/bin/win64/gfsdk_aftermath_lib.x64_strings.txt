@@ -16,7 +16,6 @@
   The error occurred while parsing the regular expression: '
   This option category has no options.\n
   Total Execution Time: %5.4f seconds (%5.4f wall clock)\n
- (08@JP
  (default: 
  (from end)]::
  (instance 
@@ -2255,7 +2254,6 @@ Decorate
 DecorateId
 DecorateString
 DecorationGroup
-Degrees
 DemoteToHelperInvocation
 DemoteToHelperInvocationEXT
 DenormFlushToZero
@@ -4019,7 +4017,6 @@ ReserveReadPipePackets
 ReserveWritePipePackets
 ReservedReadPipe
 ReservedWritePipe
-Reset
 Residency
 ResidentInSharedMemory
 Resource Pointer/Handle
@@ -6354,7 +6351,6 @@ invalid element type for struct
 invalid empty array initializer
 invalid extractelement operands
 invalid field '
-invalid format specifier
 invalid forward reference to function '
 invalid forward reference to function as global value!
 invalid function forward reference in uselistorder_bb
@@ -6377,7 +6373,6 @@ invalid number; expected digit after exponent sign
 invalid numeric label in uselistorder_bb
 invalid operand type for instruction
 invalid operands to shufflevector
-invalid precision
 invalid redefinition of function '
 invalid regular expression
 invalid repetition count(s)
@@ -11661,6 +11656,8 @@ ndn.w
 nds4
 ndscale.p
 ndscale.s
+negative precision
+negative width
 negh
 nehalem
 neon
@@ -11907,6 +11904,7 @@ ppc_fp128
 ppcf128
 pprox.f
 pr.512
+precision is not integer
 prefetch
 prefix
 prescott
@@ -12712,6 +12710,7 @@ weak_odr
 webkit_jscc
 westmere
 while parsing 
+width is not integer
 wine_get_version
 wlaf47906in
 write area exhausted

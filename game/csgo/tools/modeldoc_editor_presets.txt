@@ -14,7 +14,7 @@
 		"generic_actor",
 	]
 	
-	shoot_bullets =
+	available_weapons =
 	[
 		"weapon_glock",
 		"weapon_deagle",

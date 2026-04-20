@@ -14,6 +14,7 @@
  X?setAlignment@QTextOption@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
  Y?setDefaultTextOption@QTextDocument@@QEAAXAEBVQTextOption@@@Z
  {NO ELEMENT}
+!#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 !?triggered@QAction@@QEAAX_N@Z
 !?unsetCursor@QWidget@@QEAAXXZ
 !\f?focusNextPrevChild@QScrollArea@@UEAA_N_N@Z
@@ -95,6 +96,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 %[?setRange@QIntValidator@@UEAAXHH@Z
 %\?setUnderline@QFont@@QEAAX_N@Z
 %]?sibling@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
+%c%c%c%c%c%c
+%c%c%c%c%c%c%c%c
 %s%s: DynamicWidget: %s\n
 %s: %s [Incremental=%s, HasSentBegin=%s] (%p)\n
 %s: Initialize (%p) for [ m_bInIncrementalUpdate -> false ]\n
@@ -476,6 +479,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVQProgressBar@@
 .?AVQPushButton@@
 .?AVQRadioButton@@
+.?AVQRegularExpressionValidator@@
 .?AVQScrollArea@@
 .?AVQScrollBar@@
 .?AVQSlider@@
@@ -579,10 +583,10 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnReverseOutputClicked()
 1OnSelectClear()
 1OnSelectionChanged()
+1OnSetColorInternal(FatColor_t)
 1OnShowDocumentationWebpage()
 1OnShowKeyBindings()
 1OnStartPick()
-1OnTextChanged( int )
 1OnTextDownArrow()
 1OnTextUpArrow()
 1OnToggleOrientationAction()
@@ -604,7 +608,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1SetAlphaEditFromSlider(int)
 1SetBothTangents(int,int)
 1SetColor( QColor )
-1SetColorInternal(FatColor_t)
 1SetIncomingTangent(int,int)
 1SetOutgoingTangent(int,int)
 1TermIncrementalOperation()
@@ -650,6 +653,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpd
+2\vpt
 2aboutToShow()
 2accepted()
 2changed()
@@ -680,6 +685,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2valueChanged(int)
 3\f?focusOutEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 3\n?doItemsLayout@QTableView@@UEAAXXZ
+4[?setRegularExpression@QRegularExpressionValidator@@QEAAXAEBVQRegularExpression@@@Z
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 4\r?hidePopup@QComboBox@@UEAAXXZ
 5\f?focusOutEvent@QMenuBar@@MEAAXPEAVQFocusEvent@@@Z
@@ -697,6 +703,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 :\v?canRead@QImageReader@@QEBA_NXZ
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
 ;\v?event@QDialogButtonBox@@MEAA_NPEAVQEvent@@@Z
+;`?transientParent@QWindow@@QEBAPEAV1@XZ
 <MIXED TYPES>
 <MIXED>
 <Mixed Names>
@@ -816,6 +823,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??0QRect@@QEAA@HHHH@Z
 ??0QRectF@@QEAA@AEBVQRect@@@Z
 ??0QRegExp@@QEAA@AEBVQString@@W4CaseSensitivity@Qt@@W4PatternSyntax@0@@Z
+??0QRegularExpression@@QEAA@AEBVQString@@V?$QFlags@W4PatternOption@QRegularExpression@@@@@Z
+??0QRegularExpressionValidator@@QEAA@AEBVQRegularExpression@@PEAVQObject@@@Z
 ??0QScrollArea@@QEAA@PEAVQWidget@@@Z
 ??0QScrollBar@@QEAA@PEAVQWidget@@@Z
 ??0QSizePolicy@@QEAA@W4Policy@0@0W4ControlType@0@@Z
@@ -928,6 +937,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??1QRadioButton@@UEAA@XZ
 ??1QRegExp@@QEAA@XZ
 ??1QRegion@@QEAA@XZ
+??1QRegularExpression@@QEAA@XZ
+??1QRegularExpressionValidator@@UEAA@XZ
 ??1QScrollArea@@UEAA@XZ
 ??1QScrollBar@@UEAA@XZ
 ??1QSlider@@UEAA@XZ
@@ -1259,6 +1270,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?isIndexHidden@QListView@@MEBA_NAEBVQModelIndex@@@Z
 ?isIndexHidden@QTableView@@MEBA_NAEBVQModelIndex@@@Z
 ?isIndexHidden@QTreeView@@MEBA_NAEBVQModelIndex@@@Z
+?isModified@QLineEdit@@QEBA_NXZ
 ?isNull@QString@@QEBA_NXZ
 ?isNull@QVariant@@QEBA_NXZ
 ?isResettable@QMetaProperty@@QEBA_NXZ
@@ -1758,6 +1770,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?setColumnWidth@QTreeView@@QEAAXHH@Z
 ?setCompleter@QComboBox@@QEAAXPEAVQCompleter@@@Z
 ?setCompletionMode@QCompleter@@QEAAXW4CompletionMode@1@@Z
+?setContentsMargins@QLayout@@QEAAXAEBVQMargins@@@Z
 ?setContentsMargins@QLayout@@QEAAXHHHH@Z
 ?setContentsMargins@QWidget@@QEAAXAEBVQMargins@@@Z
 ?setContentsMargins@QWidget@@QEAAXHHHH@Z
@@ -2091,6 +2104,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?toRect@QRectF@@QEBA?AVQRect@@XZ
 ?toSize@QSizeF@@QEBA?AVQSize@@XZ
 ?toString@QVariant@@QEBA?AVQString@@XZ
+?toUpper@QString@@QEHAA?AV1@XZ
 ?toUtf8@QString@@QEGBA?AVQByteArray@@XZ
 ?toUtf8@QString@@QEHAA?AVQByteArray@@XZ
 ?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z
@@ -2105,7 +2119,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?userType@QVariant@@QEBAHXZ
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
-@InputBindSystem
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 ARRAY
@@ -2326,6 +2339,8 @@ Command Filter
 Command Name
 Command.%s.%s
 CommandButton
+CompleterClosed
+CompleterOpened
 Context
 Copy
 Copy Curve
@@ -2411,7 +2426,7 @@ Ease Out Quad
 Ease Out Quart
 Ease Out Sine
 EatEscapeKeyPress
-Edit Point ...
+Edit...
 EditWithFloatSlider
 EditWithIntSlider
 Editbox
@@ -2495,6 +2510,7 @@ HSVA
 HSVA\t
 HandleFilterChanged
 HandleViewportResize
+Hex:
 Hide unless error/warning occurs
 Home
 HoverItemChanged
@@ -2520,6 +2536,7 @@ InitIncrementalOperation
 Input Binding Error
 Input Debugger [%1]
 Input Sequence
+InputBindSystem
 Insert After
 Insert Before
 InteractiveEditFinished
@@ -2532,7 +2549,6 @@ Invalid property value for '%s.%s' %s
 Invalid size: %s
 InvokeCommand
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
-J\tV_modfd
 J\v?event@QLabel@@MEAA_NPEAVQEvent@@@Z
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 KV3 save transfer failed: %s
@@ -2679,6 +2695,7 @@ OnFooterMouseEvent
 OnGradientChanged
 OnGradientEditorChanged
 OnGradientEditorEscape
+OnHexChanged
 OnIndexChanged
 OnInteractiveColorChanged
 OnInteractiveFinished
@@ -2704,6 +2721,7 @@ OnReverseOutputClicked
 OnScrollbarValueChanged
 OnSelectClear
 OnSelectionChanged
+OnSetColorInternal
 OnShowDocumentationWebpage
 OnShowKeyBindings
 OnStartPick
@@ -2716,6 +2734,7 @@ OnTreeHoverChanged
 OnTreeMenuRequested
 OnTreeSelectionChanged
 OnValueChanged
+OnViewportChanged
 OnWhitespaceWarningClicked
 OnWhitespaceWarningClickedDelayed
 OpenMutexA
@@ -2746,6 +2765,7 @@ PickCancelled
 PickColor
 Policy
 PopupClosed
+PopupOpened
 Position:
 Preferred
 PresetMenuTriggered
@@ -2804,6 +2824,7 @@ QWidget*
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
 QtMetaTypePrivate::QSequentialIterableImpl
+R?metaObject@QRegularExpressionValidator@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QStandardItemModel@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QTextDocument@@UEBAPEBUQMetaObject@@XZ
 R?metric@QImage@@MEBAHW4PaintDeviceMetric@QPaintDevice@@@Z
@@ -2818,8 +2839,10 @@ RMouse
 RMouseDoubleClick
 RSDS?
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fpt
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+R\vpd
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Randomize
 RandomizeGradient
@@ -2906,7 +2929,6 @@ SetBackgroundEnabledDBG
 SetBothTangents
 SetColor
 SetColorAt
-SetColorInternal
 SetColorSetSize
 SetCursorPos
 SetDragEnd
@@ -2970,11 +2992,13 @@ Track Mouse & Focus
 TrySendVNotify - SendKV3 failed\n
 Type: %s\n
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+U?qt_metacall@QRegularExpressionValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QTextDocument@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacast@QDoubleValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QDrag@@UEAAPEAXPEBD@Z
 U?qt_metacast@QIntValidator@@UEAAPEAXPEBD@Z
+U?qt_metacast@QRegularExpressionValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 U?qt_metacast@QTextDocument@@UEAAPEAXPEBD@Z
 U\r?home@QTextBrowser@@UEAAXXZ
@@ -3086,6 +3110,7 @@ Z?setPixmap@QDrag@@QEAAXAEBVQPixmap@@@Z
 Z?setPlainText@QTextDocument@@QEAAXAEBVQString@@@Z
 Z?setPointSize@QFont@@QEAAXH@Z
 ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
+Z\tV_modfd
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 [?setPointSizeF@QFont@@QEAAXN@Z
 [?setPos@QCursor@@SAXHH@Z
@@ -3234,6 +3259,8 @@ Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 \t?dataChanged@QListView@@MEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
+\tT?parent@QWindow@@QEBAPEAV1@XZ
+\tV_strspn
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \v ?willGrow@QHashData@@QEAA_NXZ
 \v?clear@QStandardItemModel@@QEAAXXZ
@@ -3261,7 +3288,10 @@ Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QStandardItemModel@@2UQMetaObject@@B
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
+]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]\r?horizontalOffset@QListView@@MEBAHXZ
+^#?([0-9A-Fa-f]{6}|[0-9A-Fa-f]{3})
+^#?([0-9A-Fa-f]{8}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{4}|[0-9A-Fa-f]{3})$
 ^?systemFont@QFontDatabase@@SA?AVQFont@@W4SystemFont@1@@Z
 ^?text@QClipboard@@QEBA?AVQString@@W4Mode@1@@Z
 ^?text@QPalette@@QEBAAEBVQBrush@@XZ
@@ -3276,6 +3306,7 @@ _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
 __IsValveCQTabbedStyle
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
+`?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?value@QColor@@QEBAHXZ
 `?valueF@QColor@@QEBANXZ
 `Q?lightnessF@QColor@@QEBANXZ
@@ -3321,7 +3352,6 @@ clear_group
 clicked
 colorSelected
 colspan
-connections
 const char*
 content/
 contentsMargins
@@ -3342,7 +3372,6 @@ e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
 end_as_info
 end_group
-extended
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f\r?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
 ffValueIn
@@ -3518,7 +3547,8 @@ qQ?lineTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quiet
-r\tV_strspn
+r\vpd
+r\vpt
 rebuilding
 right
 rowspan

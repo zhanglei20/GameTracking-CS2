@@ -68,7 +68,6 @@ VS
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	DynamicComboRule( Allow0( D_CS_VERTEX_ANIMATION ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
@@ -258,7 +257,7 @@ PS
 	    float _Globals_1_g_flAlphaTestReference : packoffset(c0.z);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    int4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c0);
 	    float4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c23);

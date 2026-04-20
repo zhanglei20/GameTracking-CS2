@@ -53,6 +53,18 @@
 						soundevent_data = "true"
 						data_type = "vsnd"
 					}
+					vsnd_selection_type = 
+					{
+						data_type = "enum"
+						enum_field = "opvar_get_vsnd.array_selection_type"
+						value = "random_exclusive"
+					}
+					vsnd_weights = 
+					{
+						soundevent_data = "true"
+						data_type = "float"
+						value = "0"
+					}
 					startpoint_01 = 
 					{
 						soundevent_data = "true"
@@ -267,6 +279,44 @@
 						data_type = "bool"
 						value = "false"
 					}
+					set_mixlayer_amount_enable = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Mixer"
+						}
+					}
+					set_mixlayer_layer = 
+					{
+						data_type = "string"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Mixer"
+						}
+					}
+					time_mixlayer_amount_curve = 
+					{
+						data_type = "float6"
+						soundevent_data = "true"
+						value = 
+						{
+							value1 = "[0.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+							value2 = "[1.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+							value3 = "[2.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+						}
+						_system_properties = 
+						{
+							display_group = "normal"
+							display_edit_type = "field_curve_2d_editor"
+							display_edit_flag = "public.set_mixlayer_amount_enable"
+							property_group = "Mixer"
+						}
+					}
 				}
 			},
 			{
@@ -347,7 +397,8 @@
 				input_operator_name = "public"
 				input_field_name = "vsnd_files"
 				input_use_namespace = "false"
-				array_selection_type = "random_exclusive"
+				array_selection_type = "@public.vsnd_selection_type"
+				weights_field_name = "public.vsnd_weights"
 			},
 			{
 				name = "get_last_track_startpoint_index"
@@ -841,6 +892,39 @@
 				name = "stop_at_time"
 				operator = "soundevent_control"
 				input_stop_at_time = "@public.stop_at_time"
+			},
+			{
+				name = "time_mixlayer_amount_curve"
+				operator = "math_curve_2d"
+				input = "@get_event_info.output_elapsed_time"
+				input_execute = "@public.set_mixlayer_amount_enable"
+				input_scale_x = "1.0"
+				input_scale_y = "1.0"
+				public_field_name = "public.time_mixlayer_amount_curve"
+				output = "0.0"
+			},
+			{
+				name = "soundmixer_set_mixlayer_amount"
+				operator = "soundmixer_set_mixlayer_amount"
+				input_execute = "@public.set_mixlayer_amount_enable"
+				input = "@time_mixlayer_amount_curve.output"
+				mixlayer = "@public.set_mixlayer_layer"
+			},
+			{
+				name = "mixlayer_keepalive"
+				operator = "soundevent_control"
+				input_execute = "@public.set_mixlayer_amount_enable"
+				input_add_dependent = "1"
+				input_clear_dependencies = "@calc_mixlayer_terminate.output"
+			},
+			{
+				name = "calc_mixlayer_terminate"
+				operator = "math_float_eval"
+				input_execute = "@public.set_mixlayer_amount_enable"
+				input1 = "@time_mixlayer_amount_curve.output"
+				input2 = "@get_event_info.output_elapsed_time"
+				input3 = "@time_mixlayer_amount_curve.output_x_max"
+				expression = "_1 <= 0 || _2 >= _3"
 			},
 		]
 	}

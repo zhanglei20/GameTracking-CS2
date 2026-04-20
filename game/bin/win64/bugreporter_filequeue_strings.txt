@@ -1,8 +1,9 @@
 %s%c%04i%02i%02i-%02i%02i%02i-%s
 %s%cbug.txt
+-\tV_fread
 .?AVCBugReporter@@
 .?AVIBugReporter@@
-2\vp8
+2\vph
 <<Invalid>>
 Area
 BugReporter005
@@ -18,7 +19,7 @@ Names
 OptionsFile
 Owner
 RSDS[wv
-R\fp8
+R\fph
 Savegame
 Screenshot
 Source2
@@ -28,7 +29,6 @@ Version
 Versions
 WSOCK32.dll
 \\bugbait.valvesoftware.com\bugsub\config.txt
-\tV_fread
 alt_config
 bug_directory
 bugreporter repository
@@ -38,7 +38,7 @@ config_file
 crashdump_user_name
 json
 netmask
-r\vp8
+r\vph
 resource/bugreporter.res
 source2
 username

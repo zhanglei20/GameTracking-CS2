@@ -4,7 +4,6 @@
 !!SyncExtref!!%s
 !I>Ct
 #OS_Default_Device
-#\tV_fseek
 $procedural
 $toolgraphs
 %*s%s.%s: %s
@@ -49,6 +48,7 @@ $toolgraphs
 ---empty---
 ---invalid event---
 -> Success (%d attempts)\n
+-\tV_fread
 .?AUBufferedImpulseResponse_t@@
 .?AUCAttr_m_bApplyAntialiasing@?1??GetAttributeTable_Impl@VMixFlangerDesc_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bApplyAntialiasing@?1??GetAttributeTable_Impl@VMixModDelayDesc_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -259,12 +259,12 @@ $toolgraphs
 .?AUIMMNotificationClient@@
 .?AUIUnknown@@
 .?AUVDataInitInfo_t@@
-.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerParameterBlender@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerRandomSampler@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerRealtimeFMSineWave@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerStaticAdditiveSynth@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerParameterBlender@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerRandomSampler@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerRealtimeFMSineWave@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_1>@?1??BindInstanceParams@CVoiceContainerStaticAdditiveSynth@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??CopySamplesAndMixToMono@CAudioSourceCached@@UEAA_NAEAV?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@@Z@
 .?AV<lambda_1>@?1??CopySamplesFloat@CAudioSourceCached@@UEAA_NAEAV?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@0@Z@
 .?AV<lambda_1>@?1??Finalize_Internal@CVoiceContainerRandomSampler@@UEAA_NXZ@
@@ -285,23 +285,23 @@ $toolgraphs
 .?AV<lambda_1>@?4??Finalize_Internal@CVoiceContainerTapePlayer@@UEAA_NXZ@
 .?AV<lambda_1>@?6??GenerateCompiledFloatAudioStream@CVoiceContainerBase@@QEAAHAEAV?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@0@Z@
 .?AV<lambda_1>@?BJ@??Update@CSoundSystem@@UEAAXPEBVCAudioState@@_N@Z@
-.?AV<lambda_2>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_2>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_2>@?1??BindInstanceParams@CVoiceContainerParameterBlender@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_2>@?1??BindInstanceParams@CVoiceContainerStaticAdditiveSynth@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_2>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_2>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_2>@?1??BindInstanceParams@CVoiceContainerParameterBlender@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_2>@?1??BindInstanceParams@CVoiceContainerStaticAdditiveSynth@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
 .?AV<lambda_2>@?3??Execute@CSosOperatorFloat@@UEBAXPEAXPEAVCSosOperatorStack@@H@Z@
-.?AV<lambda_3>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_3>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_3>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_3>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
 .?AV<lambda_3>@?3??Execute@CSosOperatorFloat@@UEBAXPEAXPEAVCSosOperatorStack@@H@Z@
-.?AV<lambda_4>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_4>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_4>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_4>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
 .?AV<lambda_4>@?3??Execute@CSosOperatorFloat@@UEBAXPEAXPEAVCSosOperatorStack@@H@Z@
-.?AV<lambda_5>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_5>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_5>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_5>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
 .?AV<lambda_5>@?3??Execute@CSosOperatorFloat@@UEBAXPEAXPEAVCSosOperatorStack@@H@Z@
-.?AV<lambda_6>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_6>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
-.?AV<lambda_7>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_6>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_6>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
+.?AV<lambda_7>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@
 .?AV?$CBaseAppSystem@VISoundOpSystem@@@@
 .?AV?$CBaseAppSystem@VISoundOpSystemEdit@@@@
 .?AV?$CBaseAppSystem@VISoundSystem@@@@
@@ -852,12 +852,12 @@ $toolgraphs
 .?AV?$_Func_base@XPEAVCRandomSamplerInstanceView@CVoiceContainerRandomSampler@@AEBH@std@@
 .?AV?$_Func_base@_N$$V@std@@
 .?AV?$_Func_base@_N_N_N@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBH@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEBM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerParameterBlender@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCParameterBlendInstance@@AEBM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerRandomSampler@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCRandomSamplerInstanceView@3@AEBH@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerRealtimeFMSineWave@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCFMSineInstance@3@AEBM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerStaticAdditiveSynth@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCAdditiveSynthInstanceView@3@AEBH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerParameterBlender@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCParameterBlendInstance@@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerRandomSampler@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCRandomSamplerInstanceView@3@AEBH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerRealtimeFMSineWave@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCFMSineInstance@3@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BindInstanceParams@CVoiceContainerStaticAdditiveSynth@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCAdditiveSynthInstanceView@3@AEBH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??CopySamplesAndMixToMono@CAudioSourceCached@@UEAA_NAEAV?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@@Z@XPEAMHHH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??CopySamplesFloat@CAudioSourceCached@@UEAA_NAEAV?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@0@Z@XPEAMHHH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??Finalize_Internal@CVoiceContainerRandomSampler@@UEAA_NXZ@_N$$V@std@@
@@ -878,23 +878,23 @@ $toolgraphs
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??Finalize_Internal@CVoiceContainerTapePlayer@@UEAA_NXZ@_N$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?6??GenerateCompiledFloatAudioStream@CVoiceContainerBase@@QEAAHAEAV?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@0@Z@XAEAV?$CUtlVector@VCAudioMixBuffer@@HV?$CUtlVectorMemory_Growable@VCAudioMixBuffer@@H$0A@@@@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?BJ@??Update@CSoundSystem@@UEAAXPEBVCAudioState@@_N@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBH@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEBM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??BindInstanceParams@CVoiceContainerParameterBlender@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCParameterBlendInstance@@AEBM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??BindInstanceParams@CVoiceContainerStaticAdditiveSynth@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCAdditiveSynthInstanceView@3@AEBH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??BindInstanceParams@CVoiceContainerParameterBlender@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCParameterBlendInstance@@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??BindInstanceParams@CVoiceContainerStaticAdditiveSynth@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCAdditiveSynthInstanceView@3@AEBH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?3??Execute@CSosOperatorFloat@@UEBAXPEAXPEAVCSosOperatorStack@@H@Z@_N_N_N@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEBM@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?3??Execute@CSosOperatorFloat@@UEBAXPEAXPEAVCSosOperatorStack@@H@Z@_N_N_N@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_4>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_4>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_4>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_4>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEBM@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?3??Execute@CSosOperatorFloat@@UEBAXPEAXPEAVCSosOperatorStack@@H@Z@_N_N_N@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_5>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_5>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEB_N@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_5>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_5>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEB_N@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_5>@?3??Execute@CSosOperatorFloat@@UEBAXPEAXPEAVCSosOperatorStack@@H@Z@_N_N_N@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_6>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_6>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEB_N@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_7>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_6>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_6>@?1??BindInstanceParams@CVoiceContainerLoopXFade@@UEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCLoopXFadeInstance@@AEB_N@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_7>@?1??BindInstanceParams@CVoiceContainerGranulator@@MEAAXAEBUVoiceParamNamespace_t@@AEAV?$CUtlVector@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@HV?$CUtlVectorMemory_Growable@V?$unique_ptr@VCParameterBase@CVoiceContainerBase@@U?$default_delete@VCParameterBase@CVoiceContainerBase@@@std@@@std@@H$0A@@@@@@Z@XPEAVCGranulatorInstance@3@AEBM@std@@
 .?AV?$_Ref_count_obj2@V?$CUtlOrderedMap@VCUtlStringToken@@UVoiceContainerParamMem_t@@V?$CDefLess@VCUtlStringToken@@@@H@@@std@@
 .?AVCAdditiveSynthInstanceView@CVoiceContainerStaticAdditiveSynth@@
 .?AVCAddonWatcher@@
@@ -986,17 +986,29 @@ $toolgraphs
 .?AVCSchemaRegistration_soundsystem@@
 .?AVCSchemaRegistration_soundsystem_lowlevel@@
 .?AVCSchemaRegistration_soundsystem_voicecontainers@@
-.?AVCSequenceArranger@@
 .?AVCSfxTable@@
 .?AVCShaperAudioProcessor@@
 .?AVCSideChainAudioProcessor@@
 .?AVCSineInstance@CVoiceContainerDecayingSineWave@@
+.?AVCSndSeqArranger@@
+.?AVCSndSeqInstBaseSchema@@
+.?AVCSndSeqInstMidiSampler@@
+.?AVCSndSeqInstSndEvtSchema@@
+.?AVCSndSeqInstruments@@
+.?AVCSndSeqManager@@
+.?AVCSndSeqPlayerBase@@
+.?AVCSndSeqPlayerMidiSequence@@
+.?AVCSndSeqPlayerSndEvt@@
+.?AVCSndSeqRegionBase@@
+.?AVCSndSeqRegionMidiSequence@@
+.?AVCSndSeqRegionSndEvt@@
 .?AVCSosDependent@@
 .?AVCSosEdit@@
 .?AVCSosEventInfoWithFieldData_t@@
 .?AVCSosEventInfo_t@@
 .?AVCSosGroupActionLimitSchema@@
 .?AVCSosGroupActionMemberCountEnvelopeSchema@@
+.?AVCSosGroupActionOcclusionSchema@@
 .?AVCSosGroupActionSchema@@
 .?AVCSosGroupActionSetSoundeventParameterSchema@@
 .?AVCSosGroupActionSoundeventClusterSchema@@
@@ -1050,6 +1062,8 @@ $toolgraphs
 .?AVCSosOperatorFalloffVR@@
 .?AVCSosOperatorFindGroup@@
 .?AVCSosOperatorFindSourceDspPreset@@
+.?AVCSosOperatorFloat16Accumulate16@@
+.?AVCSosOperatorFloat16ToFloat@@
 .?AVCSosOperatorFloat3ToFloat@@
 .?AVCSosOperatorFloat@@
 .?AVCSosOperatorFloatAccumulate12@@
@@ -1089,6 +1103,10 @@ $toolgraphs
 .?AVCSosOperatorGroupSetFloat@@
 .?AVCSosOperatorGroupStop@@
 .?AVCSosOperatorGroups@@
+.?AVCSosOperatorHarmonicToolsDeltaHarmonicResponse@@
+.?AVCSosOperatorHarmonicToolsHarmonicLFOs@@
+.?AVCSosOperatorHarmonicToolsOddsAndEvens@@
+.?AVCSosOperatorHarmonicToolsSpectralSpread@@
 .?AVCSosOperatorImportStack@@
 .?AVCSosOperatorInRangeFloat@@
 .?AVCSosOperatorIncrementOpVarFloat@@
@@ -1161,6 +1179,9 @@ $toolgraphs
 .?AVCSosOperatorRightAngleFloat3@@
 .?AVCSosOperatorSamplerEvent@@
 .?AVCSosOperatorScaleVec3@@
+.?AVCSosOperatorSequenceStart@@
+.?AVCSosOperatorSequencerLFO@@
+.?AVCSosOperatorSequencerSetMasterBPM@@
 .?AVCSosOperatorSetBuiltins@@
 .?AVCSosOperatorSetContainerInstanceParam@@
 .?AVCSosOperatorSetConvar@@
@@ -1199,6 +1220,7 @@ $toolgraphs
 .?AVCSosOperatorTimer@@
 .?AVCSosOperatorTimerRamp@@
 .?AVCSosOperatorUnregisterSoundArea@@
+.?AVCSosOperatorUsableFloatRange@@
 .?AVCSosOperatorVMixInput@@
 .?AVCSosOperatorVMixInputArray@@
 .?AVCSosOperatorVMixInputIR@@
@@ -1220,8 +1242,6 @@ $toolgraphs
 .?AVCSoundEventManager@@
 .?AVCSoundMixGroupSystem@@
 .?AVCSoundOpSystem@@
-.?AVCSoundSamplers@@
-.?AVCSoundSequencer@@
 .?AVCSoundSystem@@
 .?AVCSoundViewerState@@
 .?AVCSoundsystemProcessorFactory@@
@@ -1314,13 +1334,13 @@ $toolgraphs
 .?AVIRD_RegisterResourceDataUtils@@
 .?AVIResourceTypeManager@@
 .?AVISequence@@
-.?AVISequenceArranger@@
+.?AVISndSeqArranger@@
+.?AVISndSeqInstruments@@
+.?AVISndSeqManager@@
 .?AVISoundEventManager@@
 .?AVISoundMixGroupSystem@@
 .?AVISoundOpSystem@@
 .?AVISoundOpSystemEdit@@
-.?AVISoundSamplers@@
-.?AVISoundSequencer@@
 .?AVISoundSystem@@
 .?AVISoundsystemProcessorFactory@@
 .?AVIToolAttr_Array@@
@@ -1334,9 +1354,9 @@ $toolgraphs
 .?AVIVoiceTraceKV3@@
 .vrman
 .vsnd
-0\fO9
 12dB
 1e<w 
+2\tV_fseek
 33s?
 8fff?fff?fff?fff?
 <EMPTY>
@@ -1406,11 +1426,13 @@ C:\buildworker\csgo_rel_win64\build\src\soundsystem\lowlevel\mix.cpp
 C:\buildworker\csgo_rel_win64\build\src\soundsystem\snd_dma.cpp
 C:\buildworker\csgo_rel_win64\build\src\soundsystem\snd_mixgroups.cpp
 C:\buildworker\csgo_rel_win64\build\src\soundsystem\snd_op_sys\sos_system.cpp
+C:\buildworker\csgo_rel_win64\build\src\soundsystem\snd_wave_mixer.cpp
 C:\buildworker\csgo_rel_win64\build\src\soundsystem\snd_wave_mixer_mp3.cpp
 C:\buildworker\csgo_rel_win64\build\src\soundsystem\vmix.cpp
 C:\buildworker\csgo_rel_win64\build\src\soundsystem\vsound_manager.cpp
 CAssociateResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!\n
 CAsyncWavDataCache:  %i sounds total %s, %.2f %% of capacity\n
+CAudioDecoderWave::OnCachedDataAvailable
 CAudioDecoderWaveMP3::OpenHandle
 CAudioMixThread::MixAudioFrame
 CFieldSelectionWordAllocator: Total number of array selection bytes on soundevent exceeded.\n\t%i required\n\t%i available\n
@@ -1422,6 +1444,7 @@ CSosOPeratorGetOpVarInfo
 CSosOperatorAudibility::Execute
 CSosOperatorConvar
 CSosOperatorFindSourceDspPreset: unable to get source soundscape on event: %s\n
+CSosOperatorFloat16Accumulate16
 CSosOperatorFloatAccumulate12
 CSosOperatorGetOpVarArrayIndex
 CSosOperatorGetOpVarBool
@@ -1467,7 +1490,6 @@ CSosOperatorStack::SetOpFieldData: Incoming data size %i greater than field %s, 
 CSosOperatorStartSoundEvent
 CSosOperatorSystem::HandleSetLibStackFieldsMessageQueue
 CSosOperatorSystem::HandleSetSoundEventFieldsMessageQueue
-CSosOperatorSystem::NewOpVarsParseKV3: Stack %s, cannot find public field %s to auto_connect_public_fields.\n
 CSosOperatorSystem::SetOpField: Unable to find operator stack %s\n
 CSosOperatorSystem::SetOpField: Unable to find operator stack from guid %d\n
 CSosOperatorSystem::StartSoundEvent Unable to find soundevent %s\n
@@ -1481,19 +1503,6 @@ CSoundOpSystem::LoadManifestStacksForParsing - Failed to load kv3 manifest: %s
 CSoundOpSystem::LoadManifestStacksForParsing - Failed to load stack %s: %s
 CSoundOpSystem::LoadManifestStacksForParsing - Missing operator stack manifest %s\n
 CSoundOpSystem::LoadManifestStacksForParsing - stack with empty name
-CSoundSampler: Key Groups: %i\n
-CSoundSampler: Max: %i\n
-CSoundSampler: Min: %i\n
-CSoundSampler: Sampler: %s\n
-CSoundSampler: SoundEvent: %s\n
-CSoundSampler:\tCenter: %i\n
-CSoundSampler:\tKey: %i : %i\n
-CSoundSampler:\tMax: %i\n
-CSoundSampler:\tMin: %i\n
-CSoundSampler:\tZones: %i\n
-CSoundSampler:\t\tMax: %i\n
-CSoundSampler:\t\tSamples: %i\n
-CSoundSampler:\t\t\tSample: %s\n
 CStrongHandle
 CTSQueue<class CAsyncWaveData *,0>::Push
 CTSQueue<class CSfxTable *,0>::Push
@@ -1507,12 +1516,14 @@ CUtlDict<struct CSosOperatorEvalFloat::EvalData *,class CDefFastCaselessStringLe
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CSosDependent *,int,class CDefLess<class CSosDependent *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class SoundEventGuid_t,class CSndMixGroupTrigger_t,class CDefLess<class SoundEventGuid_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned short,int,class CDefLess<unsigned short>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlStringToken,class CUtlVector<unsigned int,int,class CUtlVectorMemory_Growable<unsigned int,int,0> >,class CDefEquals<class CUtlStringToken>,struct HashMapFunctor_t<class CUtlStringToken>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlStringToken,class CUtlVector<unsigned int,int,class CUtlVectorMemory_Growable<unsigned int,int,0> >,class CDefEquals<class CUtlStringToken>,struct HashMapFunctor_t<class CUtlStringToken>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned __int64,struct vcon_SoundCacheMinorUpdateDatum_t,class CDefEquals<unsigned __int64>,struct HashMapFunctor_t<unsigned __int64>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned __int64,struct vcon_SoundCacheMinorUpdateDatum_t,class CDefEquals<unsigned __int64>,struct HashMapFunctor_t<unsigned __int64>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPendingInstanceInitialParamValues,int,class CMemAllocAllocator>,struct CPendingInstanceInitialParamValues,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPendingInstanceParam,int,class CMemAllocAllocator>,struct CPendingInstanceParam,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlStringToken,class CUtlVector<unsigned int,int,class CUtlVectorMemory_Growable<unsigned int,int,0> >,class CDefEquals<class CUtlStringToken>,struct DefaultHashFunctor<class CUtlStringToken>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlStringToken,class CUtlVector<unsigned int,int,class CUtlVectorMemory_Growable<unsigned int,int,0> >,class CDefEquals<class CUtlStringToken>,struct DefaultHashFunctor<class CUtlStringToken>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned __int64,struct vcon_SoundCacheMinorUpdateDatum_t,class CDefEquals<unsigned __int64>,struct DefaultHashFunctor<unsigned __int64>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned __int64,struct vcon_SoundCacheMinorUpdateDatum_t,class CDefEquals<unsigned __int64>,struct DefaultHashFunctor<unsigned __int64>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlRBTree<struct CUtlOrderedMapBase<class CSosDependent *,int,class CDefLess<class CSosDependent *>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CSosDependent *,int,class CDefLess<class CSosDependent *>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CSosDependent *,int,class CDefLess<class CSosDependent *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlStringToken,struct SosOpFieldMapInfo_t *,class CDefLess<class CUtlStringToken>,int>::Node_t,class CUtlOrderedMapBase<class CUtlStringToken,struct SosOpFieldMapInfo_t *,class CDefLess<class CUtlStringToken>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlStringToken,struct SosOpFieldMapInfo_t *,class CDefLess<class CUtlStringToken>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class SoundEventGuid_t,class CSndMixGroupTrigger_t,class CDefLess<class SoundEventGuid_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<class SoundEventGuid_t,class CSndMixGroupTrigger_t,class CDefLess<class SoundEventGuid_t>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class SoundEventGuid_t,class CSndMixGroupTrigger_t,class CDefLess<class SoundEventGuid_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CSosSoundEventGroupSchema *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CSosSoundEventGroupSchema *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CSosSoundEventGroupSchema *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CSosSoundEventGroupSchema *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CSosSoundEventGroupSchema *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CSosSoundEventGroupSchema *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<int,struct CVMixEngine::CRenderJob,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,struct CVMixEngine::CRenderJob,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,struct CVMixEngine::CRenderJob,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,class CVoiceContainerVOIP::CVOIPPlaybackData *,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,class CVoiceContainerVOIP::CVOIPPlaybackData *,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,class CVoiceContainerVOIP::CVOIPPlaybackData *,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned short,int,class CDefLess<unsigned short>,unsigned short>::Node_t,class CUtlOrderedMapBase<unsigned short,int,class CDefLess<unsigned short>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned short,int,class CDefLess<unsigned short>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
@@ -1702,6 +1713,7 @@ Envelope Amount
 Envelope Type
 Error (problem that prevents task success)
 Error: %s : Math expression type not currently supported in sound operator math_accumulate12_float\n
+Error: %s : Math expression type not currently supported in sound operator math_accumulate16_float16\n
 Error: CSosOperatorOpvarCurve in %s. Unable to find curve field "%s"\n
 Error: Failed to get mix group %s!\n
 Error: Invalid SoundEvent Hash %i from entry %s in sound event %s\n
@@ -1886,6 +1898,19 @@ Match Event Name: %s\n
 Match Event Type: %i\n
 Match SubString ?: %s\n
 Max Index
+MidiSampler: Key Groups: %i\n
+MidiSampler: Max: %i\n
+MidiSampler: Min: %i\n
+MidiSampler: Sampler: %s\n
+MidiSampler: SoundEvent: %s\n
+MidiSampler:\tCenter: %i\n
+MidiSampler:\tKey: %i : %i\n
+MidiSampler:\tMax: %i\n
+MidiSampler:\tMin: %i\n
+MidiSampler:\tZones: %i\n
+MidiSampler:\t\tMax: %i\n
+MidiSampler:\t\tSamples: %i\n
+MidiSampler:\t\t\tSample: %s\n
 Min Index
 Mirror
 Mix (1.0 = wet)
@@ -2005,7 +2030,7 @@ ProcessorGenerate
 PropWorldOrigin
 PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown\n
 QUEUE event %s | %s : elapsed time: %f, next sync time: %f, length: %f\n
-Q\tV_powd
+QUEUE event %s\n
 Quality
 RESOURCE_TYPE_SOUND
 RESOURCE_TYPE_SOUNDEVENTSCRIPT
@@ -2052,6 +2077,7 @@ Set Blend
 Set Num Grains
 Set Playback Speed
 Set Position
+Set Volume %d
 SetDataFromKV3: Unrecognized KV3 type on field %s.\n
 SetSoundEventDefinitionField: attempt to set an array element on an instance field beyond it's element count on %s\n
 SetSoundEventDefinitionField: field not found on %s\n
@@ -2142,6 +2168,7 @@ String Count: %i\n
 Subgraphs
 Sustain target amplitude
 Sustain time (ms)
+Sync Track: %s\n
 SystemAttributes
 TOPOLOGY: Stack %s has %i VSND operators\n
 TOPOLOGY: Stack %s, soundevent_start operator %s, soundevent_name field, source unresolved\n
@@ -2195,6 +2222,7 @@ Unable to create audio thread.\n
 Unable to create voice for vmix "%s" check script for %s.\n
 Unable to detect Windows Audio devices\n
 Unable to find graph for vmix %s\n
+Unable to find queue event\n
 Unable to find soundevent: %s\n
 Unable to load sound system data.\nStarting verification of Steam Game Cache.\nRetry launching after completion.\n
 Unable to read resource file %s!\n
@@ -2310,17 +2338,19 @@ X<"wP
 \nActive Sound events: %d\n
 \nCOpFieldHashCache: Stack %s searching for opfield: %s.%s\n
 \nOperator Field: %s\n
-\nP\fO9
 \nSOS PRINT STRING: %s: %s\n
 \nType Name: %s\n
 \nUpdate SoundEvent: %s\n
+\n\tV_atanf
 \t dspmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f\n
 \t x: %4f y: %4f z: %4f\n
 \tRefs %16s : Name (Locks)\n
 \tTrack: %s\n
 \tVOL: %f\n\tLVL: %f\n\tDSP: %f\n\tMUTE: %f\n\tSOLO: %f\n\n
 \tV_coshf
-\tV_fread
+\tV_strnchr
+\tV_tand
+\tV_tanhf
 \t[%2d] %16.16s : %s (%d) priority: %d\n
 \t\tInstrument: %s\n
 \t\t\tBeat:\t%f\n
@@ -2344,6 +2374,7 @@ _stack_properties
 _startSample
 _system_properties
 _voicegraph
+a\tV_powd
 accumulate_indexed_speakers
 advanced
 after_first_frame
@@ -2367,7 +2398,6 @@ audible_on_spawn
 auto.convar.
 auto_connect_field_scope
 auto_connect_public_fields
-b\tV_sinhf
 backward
 band_0:gainReduction
 band_0:input
@@ -2429,6 +2459,7 @@ cluster_group_box_mins
 cluster_should_play
 cluster_should_play_child
 cluster_size
+common
 compressedtangentframe
 construction_stack
 container_sample_curve
@@ -2553,6 +2584,7 @@ float6
 float8
 float_max_speakers
 force_direction
+force_flu_basis
 forever
 forward
 frames
@@ -2577,6 +2609,10 @@ greater_than
 greater_than_or_equal
 group_title
 groups
+harmonic_tools_delta_harmonic_response
+harmonic_tools_harmonic_lfos
+harmonic_tools_odds_and_evens
+harmonic_tools_spectral_spread
 headphones
 ignore_import
 import_public_opvars
@@ -2595,6 +2631,10 @@ input1
 input10
 input11
 input12
+input13
+input14
+input15
+input16
 input2
 input3
 input4
@@ -2629,6 +2669,7 @@ input_arrangement
 input_attack_time
 input_atten
 input_base_angle
+input_beat_mult
 input_block_max_events
 input_bpm
 input_center
@@ -2652,6 +2693,9 @@ input_default
 input_default_local_position
 input_default_world_position
 input_delay
+input_depth_max
+input_depth_min
+input_depth_multiplier
 input_directionality
 input_distance
 input_distance_max
@@ -2719,6 +2763,7 @@ input_is_player
 input_label
 input_latch_output_high
 input_level
+input_lfo_center
 input_lifespan_time
 input_limit_max_events
 input_limit_priority
@@ -2761,10 +2806,14 @@ input_min_val
 input_min_val_offset
 input_mixgroup
 input_mixgroups
+input_multiplier_negative
+input_multiplier_positive
 input_name
+input_namespace
 input_near_max
 input_near_min
 input_neutral_value
+input_num_harmonics
 input_obb_angles
 input_obb_bounds_max
 input_obb_bounds_min
@@ -2773,17 +2822,22 @@ input_observer_position
 input_occlusion_method
 input_occlusion_mode
 input_occlusion_samples
+input_odds_level
 input_offset_X
 input_on_note_off
 input_on_note_on
 input_operator_name
 input_opponent_value
+input_output_max
+input_output_min
 input_owner_entity_index
 input_owning_graph
 input_participant_perspective
 input_pathing_enabled
 input_pathing_eq_enabled
 input_pause
+input_percentile_lower
+input_percentile_upper
 input_pitch
 input_pitch1
 input_pitch2
@@ -2812,6 +2866,7 @@ input_position_7
 input_position_a
 input_position_b
 input_priority
+input_quantize_mult
 input_quantize_type
 input_query_position
 input_query_z_offset
@@ -2822,6 +2877,9 @@ input_rand_max
 input_rand_min
 input_random_seed
 input_rate_falling
+input_rate_max
+input_rate_min
+input_rate_multiplier
 input_rate_rising
 input_rear_stereo_scale
 input_reference_ir
@@ -2858,6 +2916,7 @@ input_source_offset
 input_source_position
 input_source_radius
 input_spawn_oneshots
+input_spawn_soundevents
 input_speaker_override
 input_speaker_volumes
 input_sphere_1_pos
@@ -2866,6 +2925,7 @@ input_sphere_2_pos
 input_sphere_2_radius
 input_sphere_pos
 input_sphere_radius
+input_spread
 input_spread_max
 input_spread_max_distance
 input_spread_max_value
@@ -2910,9 +2970,13 @@ input_target_value
 input_team_value
 input_test_depth
 input_threshold
+input_threshold_end_negative
+input_threshold_end_positive
 input_threshold_high
 input_threshold_low
 input_threshold_mid
+input_threshold_start_negative
+input_threshold_start_positive
 input_time
 input_time_scale
 input_tolerance
@@ -2982,6 +3046,7 @@ input_y
 input_z
 inrange
 instrument
+instruments
 invalid stack
 invalid_hitbox
 invalid_vsnd
@@ -2994,6 +3059,7 @@ is_local_player_slot
 is_untimed
 k8y<=
 key_groups
+last_calc_time
 left_front
 left_front1
 left_front2
@@ -3011,6 +3077,7 @@ less_than_or_equal
 level
 lfe1
 lfe2
+lfo_shape
 libmpg123-0.dll
 lifespan
 line_text
@@ -3094,6 +3161,7 @@ match_substring
 match_this_event
 material_resonant_soundevent_lookup
 math_accumulate12_float
+math_accumulate16_float16
 math_animate_float3
 math_average8_float
 math_calc_angle_from_3_vec3
@@ -3144,6 +3212,8 @@ max_velocity_db
 medium
 mem fail
 memory_type
+midi_sampler
+midi_sequence
 min_max_query
 min_note
 min_output
@@ -3266,7 +3336,20 @@ outputPeak
 output_
 output_0
 output_1
+output_10
+output_11
+output_12
+output_13
+output_14
+output_15
 output_2
+output_3
+output_4
+output_5
+output_6
+output_7
+output_8
+output_9
 output_above
 output_angles
 output_below
@@ -3301,6 +3384,7 @@ output_entity_index
 output_entity_is_actual_player_entity
 output_entity_is_npc
 output_entity_is_player
+output_entity_is_shrunken
 output_entity_scale
 output_event_finished
 output_event_playing
@@ -3348,8 +3432,10 @@ output_material_1
 output_material_1_weight
 output_material_2
 output_material_2_weight
+output_max
 output_max_index
 output_mid
+output_min
 output_mix
 output_mixgroups
 output_modifier_surface_index
@@ -3411,6 +3497,8 @@ output_total_weights
 output_transmission
 output_unspread
 output_unstopped
+output_usable_max
+output_usable_min
 output_vector_forward
 output_vector_left
 output_vector_up
@@ -3438,6 +3526,7 @@ output_y_max
 output_y_min
 output_z
 overwrite
+pSource != nullptr
 parallel filters
 parameter
 params
@@ -3469,20 +3558,19 @@ property_group
 property_help
 public.
 public.%s
-public.%s.%s
 public.end_point
+public.release
 public.start_point
 public.sync_bpm
 public.sync_bpm_beats
 public_field_name
 public_opvar
 qWindows Audio
-q\tV_strnchr
 quad
-quantize_multiplier
 quantize_type
 quiet
 rAb<
+r\tV_sinhf
 random
 random_distribution_factor
 random_exclusive
@@ -3490,6 +3578,7 @@ random_weighted
 recording_dump.wav
 reference_operator
 reference_stack
+regions
 reserve_array
 resourceManifest
 resourcesystem
@@ -3509,7 +3598,8 @@ room
 round
 round_to_int
 sampler_event
-samplers
+saw_down
+saw_up
 scripts/soundmixers.txt
 scripts/vmidi/vmidi_manifest.txt
 seek
@@ -3517,10 +3607,14 @@ send
 send%d
 sendOperator
 send_type
-sequence_index
-sequences
+sequence_track_name
+sequencer_LFO
+sequencer_LFO unable to find sequence track %s\n
+sequencer_sequence_start
+sequencer_set_master_bpm
 sideChain
 sideChainPeak
+sine
 single
 slerp
 slerp_bounce
@@ -3597,12 +3691,10 @@ source_column
 source_file_searchpath
 source_soundscape
 spawn_orphans
-sphere
 spline
+square
 startSubvoice
 startVoice
-start_beat
-start_offset
 start_on_name_change
 steamaudio_blend_ir
 steamaudio_compute_customdata
@@ -3614,9 +3706,11 @@ stopSubvoice
 stopVoice
 stop_events_by_next
 stop_oldest
+stop_previous
 stop_previous_on_name_change
 stop_queue
 stopped_includes_dependencies
+stopping_stops_current_events
 string0
 string1
 string10
@@ -3639,7 +3733,7 @@ submix.outputx2
 submix.spectrum
 submix_name
 sync_track
-sync_type
+sync_track_name
 t\tvi
 tangent
 tangentu_signv
@@ -3665,6 +3759,7 @@ trigger
 updateVoice
 update_stack
 use_entity_position_if_local_player
+use_independant_levels
 use_local_namespace
 use_namespace
 use_public_opvar_scope
@@ -3676,6 +3771,7 @@ util_draw_debug_sphere
 util_draw_perspective
 util_draw_radius
 util_draw_relevance
+util_elements_float16
 util_elements_float3
 util_float_to_speakers
 util_frame_switch_float
@@ -3690,7 +3786,7 @@ util_print_string
 util_print_vsnd
 util_timer
 util_timer_ramp
-v\tV_strtok
+util_usable_float_range
 values
 vector_facing_point
 velocity_zones
@@ -3740,6 +3836,4 @@ warn
 wave_type
 weights_field_name
 zG(knN~|wmW)
-z\tV_tand
-}\tV_tanhf
 ~CSosOperatorSystem: Deleting orphaned CSosOperatorStack pointer for %s via shutdown\n

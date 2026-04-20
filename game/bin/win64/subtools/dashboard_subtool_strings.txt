@@ -42,7 +42,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpp
+2\vp0
 2triggered( bool )
 2valueChanged( int )
 :\f?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
@@ -225,7 +225,6 @@ Prediction errors
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
 RSDSi
-R\fpp
 Reset state
 Save state
 Server CPU
@@ -278,7 +277,6 @@ offset_x
 offset_y
 p"?value@QSpinBox@@QEBAHXZ
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
-r\vpp
 scale_x
 scale_y
 sv_frame_time

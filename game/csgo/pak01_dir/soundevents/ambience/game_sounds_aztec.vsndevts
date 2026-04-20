@@ -3534,4 +3534,80 @@
 		vsnd_files_track_01 = "sounds/ambient/aztec2/jungle_exterior_02.vsnd"
 	}
 	_auto_calc_vnsd_duration_ = "false"
+	aztec.ChooseTeam = 
+	{
+		type = "csgo_mega"
+		use_time_volume_mapping_curve = true
+		use_distance_unfiltered_stereo_mapping_curve = true
+		mixgroup = "Aztec"
+		volume = 0.06
+		dsp_preset = "reverb_20_outsideAlley"
+		set_child_position = false
+		override_dsp_preset = true
+		reverb_wet = 1.0
+		enable_child_events = true
+		position_relative_to_player = true
+		distance_effect_mix = 0.0
+		restrict_source_reverb = true
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.071429, 0.720721, -0.440095, -0.440095,
+				3.0, 1.0,
+			],
+			[
+				1.74, 0.234234, -0.373707, -0.373707,
+				1.0, 1.0,
+			],
+			[
+				3.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		soundevent_01 = 
+		[
+			"aztec.TSpawnToAOutskirt_Swamp",
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/aztec2/jungle_exterior_02.vsnd",
+		]
+	}
 }

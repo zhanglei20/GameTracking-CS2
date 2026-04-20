@@ -96,7 +96,7 @@ PS
 	    int _Globals_1_g_nSampleCount : packoffset(c0.y);
 	};
 	
-	cbuffer FilterTapConstantBuffer_t : register(b3, space1)
+	cbuffer FilterTapConstantBuffer_t : register(b2, space1)
 	{
 	    _365 FilterTapConstantBuffer_t_1_m0 : packoffset(c0);
 	    _365 FilterTapConstantBuffer_t_1_m1 : packoffset(c2048);

@@ -77,7 +77,7 @@ class CDetailPropModel
 	float32 m_flDensityMinScale;
 	// MPropertyFriendlyName = "Blend Weight Scale"
 	// MPropertyAttributeRange = "0.01 1.0"
-	// MPropertyDescription = "Minimum scale to apply to the model based on the final material layer blend weight. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in."
+	// MPropertyDescription = "Minimum scale to apply to the model based on the final material layer blend weight. The model will be given this scale value when the layer blend weight equals the minimum blend weight and will be 1.0 when the maximum blend weight has been reached. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in."
 	float32 m_flBlendWeightMinScale;
 	// MPropertyFriendlyName = "Min Blend Weight"
 	// MPropertyAttributeRange = "0.01 1.0"

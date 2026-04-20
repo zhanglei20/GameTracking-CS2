@@ -871,4 +871,29 @@
 			},
 		]
 	}
+	Impact.Paintball = 
+	{
+		m_vecOptions = 
+		[
+			{
+				m_hMaterial = resource:"materials/decals/paintball/paintball_01.vmat"
+				m_flProbability = 1.0
+			},
+			{
+				m_hMaterial = resource:"materials/decals/paintball/paintball_02.vmat"
+			},
+			{
+				m_hMaterial = resource:"materials/decals/paintball/paintball_03.vmat"
+			},
+			{
+				m_hMaterial = resource:"materials/decals/paintball/paintball_04.vmat"
+			},
+			{
+				m_hMaterial = resource:"materials/decals/paintball/paintball_05.vmat"
+			},
+			{
+				m_hMaterial = resource:"materials/decals/paintball/paintball_06.vmat"
+			},
+		]
+	}
 }

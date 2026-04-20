@@ -124,7 +124,7 @@ PS
 	    float4 _Globals_1_g_vDepthBufferSize : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b3, space1)
+	cbuffer SunLightShaderParamsCB : register(b2, space1)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c2);
 	    float4 SunLightShaderParamsCB_1_m1 : packoffset(c3);

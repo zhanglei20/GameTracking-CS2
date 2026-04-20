@@ -14176,7 +14176,6 @@ Deformed Models
 Deformer
 Deformer::
 DegreeToRadian
-Degrees
 DepthOfField
 Desc
 DescAbsoluteURL
@@ -15662,7 +15661,6 @@ LETTER_OTHERS
 LETTER_TITLECASE 
 LETTER_UPPERCASE 
 LIGHT_NODE_TAG
-LINE
 LINEAR
 LINK
 LIN_COLOR_24
@@ -16622,7 +16620,6 @@ PIVOT_OBJECT
 PIVOT_ORDER
 PJR$@>T0V
 PLR Ty
-POINT
 POINTCACHE2
 POINT_ARRAY
 POINT_ARRAY_ENTRY
@@ -18938,7 +18935,6 @@ detected an error in element content\n
 dictionary allocation failure
 different number of member types in base
 diffuse
-direction
 directional
 disc_radius
 division by zero

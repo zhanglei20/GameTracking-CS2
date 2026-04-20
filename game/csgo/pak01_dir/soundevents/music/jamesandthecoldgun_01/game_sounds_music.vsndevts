@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/jamesandthecoldgun_01/mainmenu.vsnd"
+		vsnd_duration = 221.293335
 	}
 	Music.MVPPreview.jamesandthecoldgun_01 = 
 	{
@@ -18,6 +19,7 @@
 		[
 			"sounds/music/jamesandthecoldgun_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 8.041667
 	}
 	Music.Selection.jamesandthecoldgun_01 = 
 	{
@@ -30,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/jamesandthecoldgun_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 25.104166
 	}
 	Music.MatchFound.jamesandthecoldgun_01 = 
 	{
@@ -68,6 +71,7 @@
 			6.814, 8.501, 10.158, 11.647,
 			14.192, 16.844, 18.649,
 		]
+		vsnd_duration = 22.050636
 	}
 	Music.LoadingScreen.jamesandthecoldgun_01 = 
 	{
@@ -95,6 +99,7 @@
 			"sounds/music/jamesandthecoldgun_01/startaction_01.vsnd",
 			"sounds/music/jamesandthecoldgun_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 12.056771
 	}
 	Music.StartRound.jamesandthecoldgun_01 = 
 	{
@@ -134,6 +139,7 @@
 			6.814, 8.501, 10.158, 11.647,
 			14.192, 16.844, 18.649,
 		]
+		vsnd_duration = 22.050636
 	}
 	Music.StartAction.jamesandthecoldgun_01 = 
 	{
@@ -163,6 +169,7 @@
 			"sounds/music/jamesandthecoldgun_01/startaction_01.vsnd",
 			"sounds/music/jamesandthecoldgun_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 12.056771
 	}
 	Music.StartRound_GG.jamesandthecoldgun_01 = 
 	{
@@ -203,6 +210,7 @@
 			6.814, 8.501, 10.158, 11.647,
 			14.192, 16.844, 18.649,
 		]
+		vsnd_duration = 22.050636
 	}
 	Music.BombPlanted.jamesandthecoldgun_01 = 
 	{
@@ -225,6 +233,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 43.844791
 	}
 	Music.BombTenSecCount.jamesandthecoldgun_01 = 
 	{
@@ -243,6 +252,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 11.0
 	}
 	Music.GotHostage.jamesandthecoldgun_01 = 
 	{
@@ -267,6 +277,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 43.844791
 	}
 	Music.HostageNearRescue.jamesandthecoldgun_01 = 
 	{
@@ -289,6 +300,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 11.0
 	}
 	Music.TenSecCount.jamesandthecoldgun_01 = 
 	{
@@ -310,6 +322,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.270532
 	}
 	Music.WonRound.jamesandthecoldgun_01 = 
 	{
@@ -334,6 +347,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 12.0
 	}
 	Music.LostRound.jamesandthecoldgun_01 = 
 	{
@@ -358,6 +372,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 8.3
 	}
 	Music.DeathCam.jamesandthecoldgun_01 = 
 	{
@@ -370,6 +385,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 5.815104
 	}
 	Music.MVPAnthem.jamesandthecoldgun_01 = 
 	{
@@ -396,6 +424,7 @@
 		[
 			"sounds/music/jamesandthecoldgun_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 8.041667
 	}
 	Music.MatchStart.jamesandthecoldgun_01 = 
 	{
@@ -411,6 +440,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/jamesandthecoldgun_01/startofmatch.vsnd"
+		vsnd_duration = 12.666667
 	}
 	Music.MatchEnd.jamesandthecoldgun_01 = 
 	{
@@ -432,6 +462,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 54.406666
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

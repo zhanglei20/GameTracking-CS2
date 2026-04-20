@@ -55,7 +55,7 @@ VS
 	    float4 _m0[4];
 	};
 	
-	cbuffer SmokeConstantBaseBuffer_t : register(b3, space0)
+	cbuffer SmokeConstantBaseBuffer_t : register(b2, space0)
 	{
 	    _2649 SmokeConstantBaseBuffer_t_1_m0 : packoffset(c0);
 	    _2649 SmokeConstantBaseBuffer_t_1_m1 : packoffset(c16);

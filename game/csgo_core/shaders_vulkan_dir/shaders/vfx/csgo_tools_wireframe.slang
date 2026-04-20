@@ -39,7 +39,6 @@ VS
 	DynamicCombo( D_COMPRESSED_NORMALS_AND_TANGENTS, 0..1 );
 	DynamicCombo( D_CS_VERTEX_ANIMATION, 0..1 );
 	
-	cbuffer PerLayerConstantBuffer_t < Attribute("PerLayerConstantBuffer_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
@@ -48,7 +47,7 @@ VS
 	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); SrgbRead(false); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (5120 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (5032 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1125
 	{
@@ -83,11 +82,7 @@ VS
 	{
 	    _1906 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
-	};
-	
-	cbuffer PerLayerConstantBuffer_t : register(b2, space0)
-	{
-	    float4 PerLayerConstantBuffer_t_1_m0 : packoffset(c0);
+	    float4 PerViewConstantBuffer_t_1_m2 : packoffset(c39);
 	};
 	
 	
@@ -179,7 +174,7 @@ VS
 	    float4 _24662 = float4(_21354, _21355, _19302, _23812.w);
 	    float3 _12151 = mul(float3x4(_25207._m0[0], _25207._m0[1], _25207._m0[2]), float4(vPositionOs.xyz * _21709.xyz, 1.0f));
 	    float4 _23875 = mul(float4x4(float4(PerViewConstantBuffer_t_1_m0._m0[0].x, PerViewConstantBuffer_t_1_m0._m0[1].x, PerViewConstantBuffer_t_1_m0._m0[2].x, PerViewConstantBuffer_t_1_m0._m0[3].x), float4(PerViewConstantBuffer_t_1_m0._m0[0].y, PerViewConstantBuffer_t_1_m0._m0[1].y, PerViewConstantBuffer_t_1_m0._m0[2].y, PerViewConstantBuffer_t_1_m0._m0[3].y), float4(PerViewConstantBuffer_t_1_m0._m0[0].z, PerViewConstantBuffer_t_1_m0._m0[1].z, PerViewConstantBuffer_t_1_m0._m0[2].z, PerViewConstantBuffer_t_1_m0._m0[3].z), float4(PerViewConstantBuffer_t_1_m0._m0[0].w, PerViewConstantBuffer_t_1_m0._m0[1].w, PerViewConstantBuffer_t_1_m0._m0[2].w, PerViewConstantBuffer_t_1_m0._m0[3].w)), (float4(_12151.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m1 * 1.0f)).xyzw);
-	    float3 _13062 = _24662.xyz * PerLayerConstantBuffer_t_1_m0.xyz;
+	    float3 _13062 = _24662.xyz * PerViewConstantBuffer_t_1_m2.xyz;
 	    float4 _23714 = _24662;
 	    _23714.x = _13062.x;
 	    _23714.y = _13062.y;

@@ -65,7 +65,6 @@ VS
 	DynamicCombo( D_BAKED_LIGHTING_FROM_LIGHTMAP, 0..1 );
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ByteAddressBuffer g_animatedVertexCache < Attribute("AnimatedVertexCache"); SrgbRead(false); >;
@@ -382,7 +381,7 @@ PS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (42028 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (43024 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_ARB_sparse_texture_clamp : require
@@ -413,7 +412,7 @@ PS
 	    _2746 _m0[4];
 	};
 	
-	struct _1563
+	struct _760
 	{
 	    _2746 _m0;
 	    _2746 _m1;
@@ -438,6 +437,7 @@ PS
 	    vec4 _m20;
 	    vec3 _m21;
 	    float _m22;
+	    _2746 _m23;
 	};
 	
 	vec3 _4;
@@ -552,7 +552,7 @@ PS
 	
 	layout(set = 3, binding = 31, std430) readonly buffer g_BarnLights
 	{
-	    _1563 _m0[];
+	    _760 _m0[];
 	} g_BarnLights_1;
 	
 	layout(set = 4, binding = 46) uniform texture2D g_bindless_Texture2D_float4[65536];
@@ -677,9 +677,12 @@ PS
 	    vec3 _9175 = dFdy(_10560);
 	    vec3 _10347 = _11099.xyz;
 	    vec3 _12420 = _9175.xyz;
-	    vec2 _13392 = max(_19372.zz, vec2(pow(clamp(max(dot(_10347, _10347), dot(_12420, _12420)), 0.0, 1.0), 0.333000004291534423828125)));
+	    vec2 _21813 = max(_19372.zz, vec2(pow(clamp(max(dot(_10347, _10347), dot(_12420, _12420)), 0.0, 1.0), 0.333000004291534423828125)));
+	    vec3 _15598 = -_24347;
+	    vec3 _24735 = _13532.xyz;
+	    vec4 _23875 = vec4(_24735, 1.0);
 	    bvec4 _24465 = notEqual(PerViewConstantBufferCsgo_t._m0, ivec4(0));
-	    float _21785;
+	    float _21710;
 	    if (_24465.x)
 	    {
 	        vec3 _11394 = _24347.xyz;
@@ -709,16 +712,15 @@ PS
 	        {
 	            _23169 = _23168;
 	        }
-	        vec4 _17422 = (max(vec4(dot(PerViewLightingConstantBufferGpu_t._m1._m0[0].xyz, _11394), dot(PerViewLightingConstantBufferGpu_t._m1._m0[1].xyz, _11394), dot(PerViewLightingConstantBufferGpu_t._m1._m0[2].xyz, _11394), dot(PerViewLightingConstantBufferGpu_t._m1._m0[3].xyz, _11394)).xyzw, vec4(0.0)).xyzw * PerViewLightingConstantBufferGpu_t._m2.xyzw).xyzw;
-	        _21785 = (1.0 / (dot(_17422, vec4(1.0)) + PerViewLightingConstantBufferGpu_t._m3.x)) * (PerViewLightingConstantBufferGpu_t._m3.x + dot(_17422, textureLod(sampler2D(g_bindless_Texture2D_float4[PerViewConstantBufferCsgo_t._m4], undetermined[_Globals_.g_sPointClamp]), (_11085 + mix(_23169, PerViewConstantBufferCsgo_t._m9.xy, bvec2(abs(_18418.y) < (_12286 ? _15372 : _20965))).xy).xy, 0.0).xyzw));
+	        vec4 _10010 = normalize(vec4(PerViewLightingConstantBufferGpu_t._m2.x * fma(dot(_15598, normalize(vec3(PerViewLightingConstantBufferGpu_t._m1._m0[0].xy, 0.25))), 0.5, 0.5), PerViewLightingConstantBufferGpu_t._m2.y * fma(dot(_15598, normalize(vec3(PerViewLightingConstantBufferGpu_t._m1._m0[1].xy, 0.25))), 0.5, 0.5), PerViewLightingConstantBufferGpu_t._m2.z * fma(dot(_15598, normalize(vec3(PerViewLightingConstantBufferGpu_t._m1._m0[2].xy, 0.25))), 0.5, 0.5), PerViewLightingConstantBufferGpu_t._m2.w * fma(dot(_15598, normalize(vec3(PerViewLightingConstantBufferGpu_t._m1._m0[3].xy, 0.25))), 0.5, 0.5)));
+	        vec4 _13232 = max(vec4(dot(PerViewLightingConstantBufferGpu_t._m1._m0[0].xyz, _11394), dot(PerViewLightingConstantBufferGpu_t._m1._m0[1].xyz, _11394), dot(PerViewLightingConstantBufferGpu_t._m1._m0[2].xyz, _11394), dot(PerViewLightingConstantBufferGpu_t._m1._m0[3].xyz, _11394)).xyzw, vec4(0.0)) * normalize(clamp(((_10010 - vec4(max(max(_10010.x, _10010.y), max(_10010.z, _10010.w)))) + vec4(0.20000000298023223876953125)) * vec4(5.0), vec4(0.0), vec4(1.0)));
+	        _21710 = (1.0 / (dot(_13232, vec4(1.0)) + PerViewLightingConstantBufferGpu_t._m3.x)) * (PerViewLightingConstantBufferGpu_t._m3.x + dot(_13232, textureLod(sampler2D(g_bindless_Texture2D_float4[PerViewConstantBufferCsgo_t._m4], undetermined[_Globals_.g_sPointClamp]), (_11085 + mix(_23169, PerViewConstantBufferCsgo_t._m9.xy, bvec2(abs(_18418.y) < (_12286 ? _15372 : _20965))).xy).xy, 0.0)));
 	    }
 	    else
 	    {
-	        _21785 = 1.0;
+	        _21710 = 1.0;
 	    }
-	    vec3 _24735 = _13532.xyz;
-	    vec4 _23875 = vec4(_24735, 1.0);
-	    float _21710;
+	    float _21711;
 	    if (PerViewLightingConstantBufferGpu_t._m11 != 0)
 	    {
 	        int _23989;
@@ -799,18 +801,18 @@ PS
 	        {
 	            _12502 = _13279;
 	        }
-	        _21710 = _12502;
+	        _21711 = _12502;
 	    }
 	    else
 	    {
-	        _21710 = 1.0;
+	        _21711 = 1.0;
 	    }
 	    vec3 _9716;
 	    vec3 _24878;
-	    if ((dot(PerViewLightingConstantBufferGpu_t._m9.xyz, _24735) * _21710) > 0.0)
+	    if ((dot(PerViewLightingConstantBufferGpu_t._m9.xyz, _24735) * _21711) > 0.0)
 	    {
 	        float _11797 = max(0.0, dot(_13532.xyz, PerViewLightingConstantBufferGpu_t._m9.xyz));
-	        vec2 _9840 = max(_13392, vec2(PerViewLightingConstantBufferGpu_t._m9.w));
+	        vec2 _9840 = max(_21813, vec2(PerViewLightingConstantBufferGpu_t._m9.w));
 	        vec3 _12281 = normalize(PerViewLightingConstantBufferGpu_t._m9.xyz + (-normalize(_10061.xyz - PerViewConstantBuffer_t._m3.xyz)).xyz).xyz;
 	        float _12386 = dot(_12281, mix(_17892, _24735, bvec3(all(equal(_17892, vec3(1.0))))).xyz);
 	        float _19210 = max(0.0, dot(PerViewLightingConstantBufferGpu_t._m9.xyz, _12281));
@@ -818,7 +820,7 @@ PS
 	        float _25211 = _9850 * _9850;
 	        float _19095 = _25211 * _25211;
 	        float _15346 = ((_12386 * _12386) * (_19095 - 1.0)) + 1.0;
-	        vec3 _16808 = (PerViewLightingConstantBufferGpu_t._m10.xyz * _21710).xyz;
+	        vec3 _16808 = (PerViewLightingConstantBufferGpu_t._m10.xyz * _21711).xyz;
 	        _9716 = ((_12351.xyz * (_19095 / (((_15346 * _15346) * (_19210 * _19210)) * ((_9850 * 4.0) + 2.0)))).xyz * _11797).xyz * _16808;
 	        _24878 = PerViewLightingConstantBufferGpu_t._m4.xyz + (vec3(_11797).xyz * _16808);
 	    }
@@ -1082,7 +1084,7 @@ PS
 	                    _22671 = _21548;
 	                }
 	                float _11798 = max(0.0, dot(_13532.xyz, _11179.xyz));
-	                vec2 _9841 = max(_13392, vec2(g_BarnLights_1._m0[_12608]._m11));
+	                vec2 _9841 = max(_21813, vec2(g_BarnLights_1._m0[_12608]._m11));
 	                vec3 _12282 = normalize(_11179.xyz + (-normalize(_10061.xyz - PerViewConstantBuffer_t._m3.xyz)).xyz).xyz;
 	                float _12387 = dot(_12282, mix(_17892, _24735, bvec3(all(equal(_17892, vec3(1.0))))).xyz);
 	                float _19211 = max(0.0, dot(_11179.xyz, _12282));
@@ -1105,7 +1107,7 @@ PS
 	        _17017 = _21567;
 	        continue;
 	    }
-	    float _17172 = dot(_13392.xy, vec2(0.5));
+	    float _17172 = dot(_21813.xy, vec2(0.5));
 	    vec3 _6519 = _17892.xyz;
 	    vec3 _17138 = normalize(_10061.xyz - PerViewConstantBuffer_t._m3.xyz);
 	    float _17225 = _17172 * _17172;
@@ -1117,8 +1119,8 @@ PS
 	    vec2 _11427 = vec2(_20339, _24572.x + _20339);
 	    vec3 _8745 = vec3(dot(PerViewLightingConstantBufferGpu_t._m0._m0[0].xyzw, _23875), dot(PerViewLightingConstantBufferGpu_t._m0._m0[1].xyzw, _23875), dot(PerViewLightingConstantBufferGpu_t._m0._m0[2].xyzw, _23875)).xyz;
 	    vec3 _16991 = _16325.xyz + _8745;
-	    vec3 _13436 = vec3(_17476 * _21785).xyz;
-	    vec3 _22686 = ((_16325.xyz * vec3(_21785)).xyz + (_8745 * vec3(_21785 * _17476).xyz).xyz) * (_16324 * (1.0 - _10825)).xyz;
+	    vec3 _13436 = vec3(_17476 * _21710).xyz;
+	    vec3 _22686 = (_16325.xyz + (_8745 * vec3(_21710 * _17476).xyz).xyz) * (_16324 * (1.0 - _10825)).xyz;
 	    vec4 _11665 = vec4(_22686, input_3.w);
 	    vec3 _15752 = _11665.xyz + (mix((((_19877 * clamp(pow(_23826, _Globals_.g_flLayer2EmissiveFresnel), 0.0, 1.0)) * _Globals_.g_vLayer2EmissiveTint) * _Globals_.g_flLayer2EmissiveLevel) * input_3.xyz, ((_6342 * _Globals_.g_vLayer1EmissiveTint) * _Globals_.g_flLayer1EmissiveLevel) * input_3.xyz, _21153) * (1.0 - _15050)).xyz;
 	    vec4 _20490 = _11665;

@@ -99,12 +99,12 @@ PS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (6244 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (6336 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_EXT_samplerless_texture_functions : require
 	
-	const float _1208[2][2] = float[][](float[](0.25, 0.125), float[](0.125, 0.0625));
+	const float _378[2][2] = float[][](float[](0.25, 0.125), float[](0.125, 0.0625));
 	const float _2009[3] = float[](1.0, 0.666666686534881591796875, 0.16666667163372039794921875);
 	
 	struct _1104
@@ -130,8 +130,8 @@ PS
 	    ivec2 _11700 = ivec3(_19617, 0).xy;
 	    vec4 _23195 = texelFetch(g_tInputLighting, _11700, 0);
 	    vec4 _21078 = texelFetch(g_tInputDepthNormal, _11700, 0);
-	    float _12586 = dot(_23195.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
-	    float _10401 = _21078.x;
+	    float _12624 = dot(_23195.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
+	    float _8858 = _21078.x;
 	    vec2 _7688 = (_21078.zw * 2.0) - vec2(1.0);
 	    float _8347 = _7688.x;
 	    float _23404 = (1.0 - abs(_8347)) - abs(_7688.y);
@@ -162,7 +162,7 @@ PS
 	            {
 	                break;
 	            }
-	            float _23854[2] = _1208[abs(_16209)];
+	            float _23854[2] = _378[abs(_16209)];
 	            _16832 = _13156 + (texelFetch(g_tInputLighting, ivec3(_19617 + ivec2(_16209, _16208), 0).xy, 0).w * _23854[abs(_16208)]);
 	            _14722 = _16209 + 1;
 	            _13156 = _16832;
@@ -174,8 +174,8 @@ PS
 	        _16208 = _21567;
 	        continue;
 	    }
-	    float _10825 = _Globals_.g_fSignalPhi * sqrt(max(0.0, _13155 + 9.9999999747524270787835121154785e-07));
-	    float _10269 = (_Globals_.g_fDepthPhi * 0.00999999977648258209228515625) * float(_Globals_.g_nFilterScale);
+	    float _7725 = _Globals_.g_fSignalPhi * sqrt(max(0.0, _13155 + 9.9999999747524270787835121154785e-07));
+	    float _10269 = (_Globals_.g_fDepthPhi * max(min(1000.0, _21078.y), 0.00999999977648258209228515625)) * float(_Globals_.g_nFilterScale);
 	    float _13136;
 	    vec4 _16324;
 	    _13136 = 1.0;
@@ -244,9 +244,9 @@ PS
 	                }
 	                else
 	                {
-	                    _9364 = abs(_10401 - _3401.x) / _18186;
+	                    _9364 = abs(_8858 - _3401.x) / _18186;
 	                }
-	                float _6029 = (exp((-max(0.0, _9364)) - max(0.0, abs(_12586 - dot(_19777.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))) / _10825)) * pow(clamp(dot(_12110, normalize(_8255)), 0.0, 1.0), _Globals_.g_fNormalPhi)) * (_2009[abs(_17017)] * _2009[abs(_17018)]);
+	                float _6029 = (exp((-max(0.0, _9364)) - max(0.0, abs(_12624 - dot(_19777.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))) / _7725)) * pow(clamp(dot(_12110, normalize(_8255)), 0.0, 1.0), _Globals_.g_fNormalPhi)) * (_2009[abs(_17017)] * _2009[abs(_17018)]);
 	                _10913 = _13137 + _6029;
 	                _17551 = _16325 + vec4(_19777.xyz * _6029, _19777.w * (_6029 * _6029));
 	            }

@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/benbromfield_01/mainmenu.vsnd"
+		vsnd_duration = 147.646988
 	}
 	Music.MVPPreview.benbromfield_01 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/benbromfield_01/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/benbromfield_01/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 9.532653
 	}
 	Music.Selection.benbromfield_01 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/benbromfield_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 27.786304
 	}
 	Music.MatchFound.benbromfield_01 = 
 	{
@@ -56,6 +62,7 @@
 		]
 		syncpoints_01 = [ 3.348, 6.606, 9.9 ]
 		syncpoints_02 = [ 3.646, 7.246, 10.846 ]
+		vsnd_duration = 18.51635
 	}
 	Music.LoadingScreen.benbromfield_01 = 
 	{
@@ -83,6 +90,7 @@
 			"sounds/music/benbromfield_01/startaction_01.vsnd",
 			"sounds/music/benbromfield_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 17.782608
 	}
 	Music.StartRound.benbromfield_01 = 
 	{
@@ -113,6 +121,7 @@
 		]
 		syncpoints_01 = [ 3.348, 6.606, 9.9 ]
 		syncpoints_02 = [ 3.646, 7.246, 10.846 ]
+		vsnd_duration = 18.51635
 	}
 	Music.StartAction.benbromfield_01 = 
 	{
@@ -142,6 +151,7 @@
 			"sounds/music/benbromfield_01/startaction_01.vsnd",
 			"sounds/music/benbromfield_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 17.782608
 	}
 	Music.StartRound_GG.benbromfield_01 = 
 	{
@@ -173,6 +183,7 @@
 		]
 		syncpoints_01 = [ 3.348, 6.606, 9.9 ]
 		syncpoints_02 = [ 3.646, 7.246, 10.846 ]
+		vsnd_duration = 18.51635
 	}
 	Music.BombPlanted.benbromfield_01 = 
 	{
@@ -195,6 +206,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 41.646393
 	}
 	Music.BombTenSecCount.benbromfield_01 = 
 	{
@@ -213,6 +225,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 14.035964
 	}
 	Music.GotHostage.benbromfield_01 = 
 	{
@@ -237,6 +250,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 41.646393
 	}
 	Music.HostageNearRescue.benbromfield_01 = 
 	{
@@ -259,6 +273,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 14.035964
 	}
 	Music.TenSecCount.benbromfield_01 = 
 	{
@@ -280,6 +295,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 12.137755
 	}
 	Music.WonRound.benbromfield_01 = 
 	{
@@ -304,6 +320,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 8.42449
 	}
 	Music.LostRound.benbromfield_01 = 
 	{
@@ -328,6 +345,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 8.736734
 	}
 	Music.DeathCam.benbromfield_01 = 
 	{
@@ -340,6 +358,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 6.617596
 	}
 	Music.MVPAnthem.benbromfield_01 = 
 	{
@@ -366,6 +397,7 @@
 		[
 			"sounds/music/benbromfield_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 9.532653
 	}
 	Music.MatchStart.benbromfield_01 = 
 	{
@@ -381,6 +413,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/benbromfield_01/startofmatch.vsnd"
+		vsnd_duration = 14.492585
 	}
 	Music.MatchEnd.benbromfield_01 = 
 	{
@@ -402,6 +435,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 48.851021
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

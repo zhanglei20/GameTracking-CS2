@@ -111,7 +111,7 @@ PS
 	    float4 _m0[32];
 	};
 	
-	cbuffer FilterTaps_t : register(b3, space1)
+	cbuffer FilterTaps_t : register(b2, space1)
 	{
 	    float4 FilterTaps_t_1_m0 : packoffset(c0);
 	    _226 FilterTaps_t_1_m1 : packoffset(c2);

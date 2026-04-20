@@ -183,12 +183,12 @@ PS
 	    float3 _Globals_1_g_vColorTint : packoffset(c0);
 	};
 	
-	cbuffer RoughnessLightingGlobalsCB_t : register(b3, space1)
+	cbuffer RoughnessLightingGlobalsCB_t : register(b2, space1)
 	{
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b4, space1)
+	cbuffer SunLightShaderParamsCB : register(b3, space1)
 	{
 	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
 	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);

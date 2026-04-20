@@ -1,6 +1,9 @@
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Xt&
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$h
  (08@HPX`j
+ (08@HPXb
  (08@HPZ
+ (08@HR
+ (0X`hpz
  <b>@import</b> 
  cubic-bezier( %1.3f, %1.3f, %1.3f, %1.3f ) 
  ellipsis
@@ -127,7 +130,7 @@
 .?AV<lambda_1>@?1???$UpdateClassPanelList@VCImagePanel@panorama@@@panorama@@YAXPEAVCPanel2D@1@HAEBV?$function@$$A6AXPEAVCImagePanel@panorama@@H@Z@std@@@Z@
 .?AV<lambda_1>@?1???0CDelayLoadPanel@panorama@@QEAA@PEAVCPanel2D@2@PEBD@Z@
 .?AV<lambda_1>@?7??UpdateSearchText@CDebugLayout@panorama@@QEAAXAEBVCUtlString@@@Z@
-.?AV<lambda_3>@?1??OnLayoutTraverse@CSplitLabel@panorama@@EEAAXMM@Z@
+.?AV<lambda_3>@?1??OnLayoutTraverse@CSplitLabel@panorama@@MEAAXMM@Z@
 .?AV?$CBaseAppSystem@VIPanoramaUIClient@@@@
 .?AV?$CBaseSymbol@$00@panorama@@
 .?AV?$CCallResult@VCHTML@panorama@@UHTML_BrowserReady_t@@@@
@@ -229,7 +232,7 @@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$UpdateClassPanelList@VCImagePanel@panorama@@@panorama@@YAXPEAVCPanel2D@2@HAEBV?$function@$$A6AXPEAVCImagePanel@panorama@@H@Z@std@@@Z@PEAVCImagePanel@2@H@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???0CDelayLoadPanel@panorama@@QEAA@PEAVCPanel2D@3@PEBD@Z@XPEAV23@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?7??UpdateSearchText@CDebugLayout@panorama@@QEAAXAEBVCUtlString@@@Z@_NPEAVCPanel2D@4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??OnLayoutTraverse@CSplitLabel@panorama@@EEAAXMM@Z@XPEAVCImagePanel@4@H@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??OnLayoutTraverse@CSplitLabel@panorama@@MEAAXMM@Z@XPEAVCImagePanel@4@H@std@@
 .?AV?$function@$$A6AXXZ@std@@
 .?AVCAnimatedImageStrip@panorama@@
 .?AVCAsyncDataPanel@panorama@@
@@ -399,6 +402,7 @@
 .?AVCTransformScale3D@panorama@@
 .?AVCTransformSkew3D@panorama@@
 .?AVCTransformTranslate3D@panorama@@
+.?AVCTypewriterLabel@panorama@@
 .?AVCVerticalScrollBar@panorama@@
 .?AVCVerticalScrollForwardingPanel@panorama@@
 .?AVCVerticalSplitter@panorama@@
@@ -437,21 +441,21 @@
 .PEAVIVideoPlayer@@
 .PEA_N
 .PEBVILocalizationString@panorama@@
-.\tV_isbreakablewspace32
 08@HR
+08@J
+0:Ph
 0x%4.4x 
-2\vp4
-2\vpt0
+2\vpd
 3?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
 3?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z
-4\tV_isvalidhex
 5butt
 6?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
-7\tV_iswcntrl
-8\tV_iswdigit
+6P7 
+6p0 
+8B y
+8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 :context->%p->%s:\n
 :context->null->UIEngine Global:\n
-;\tV_iswspace
 << LIST TRUNCATED >>
 << Unconverted type %d >>
 <a href="\1\3">\1\3</a>
@@ -464,6 +468,7 @@
 <span class="%s">%p</span>
 <span class="%s">%s</span>
 <span class="%s">0x%x</span>
+=\tV_isbreakablewspace32
 ??0HandleScope@v8@@QEAA@PEAVIsolate@1@@Z
 ??0TryCatch@v8@@QEAA@PEAVIsolate@1@@Z
 ??0Utf8Value@String@v8@@QEAA@PEAVIsolate@2@V?$Local@VValue@v8@@@2@@Z
@@ -478,7 +483,7 @@
 ?Enter@Isolate@v8@@QEAAXXZ
 ?Exit@Context@v8@@QEAAXXZ
 ?Exit@Isolate@v8@@QEAAXXZ
-?FileOpenDialogEntry
+?FileOpenDialogDoubleClickFile
 ?For@Symbol@v8@@SA?AV?$Local@VSymbol@v8@@@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@@Z
 ?FromJustIsNothing@api_internal@v8@@YAXXZ
 ?Get@Object@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@I@Z
@@ -487,6 +492,7 @@
 ?GlobalizeReference@api_internal@v8@@YAPEA_KPEAVIsolate@internal@2@_K@Z
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
+@HPX`hv
 @keyframes 
 @keyframes '%s'\r\n{\r\n
 @panorama_streaming_load_local_images
@@ -529,7 +535,7 @@ AppendElementOpenTag
 AppendElementStyles
 AppendInheritedStyles
 AppendStyleInfoForProperty
-Applies an image as an opacity mask that stretches to the panel bounds and fades out it's content based on the alpha channel. The second float value is an optional opacity value for the mask itself, the image won't interpolate/cross-fade, but you can animate the opacity to fade the mask in/out. opacity-mask-threshold lets you specify a threshold and softness percentage of how the mask is applied. Below the threshold, pixels are fully transparent, and above the threshold pixels are fully opaque. The softness lets you apply a range during which the opacity is scaled by the alpha from the mask.<b>Examples:</b><pre>opacity-mask: url( "file://{images}/upper_row_mask.tga" );\nopacity-mask: url( "file://{images}/upper_row_mask.tga" ) 0.5;\nopacity-mask: url( "file://{images}/upper_row_mask.tga" ) -1.0;\nopacity-mask-position: 5px 50%;\nopacity-mask-scale: 200%;\nopacity-mask-scale: 50% 100%;\nopacity-mask-threshold: 0% 30%;\n</pre>
+Applies an image as an opacity mask that stretches to the panel bounds and fades out it's content based on the alpha channel. The second float value is an optional opacity value for the mask itself, the image won't interpolate/cross-fade, but you can animate the opacity to fade the mask in/out. opacity-mask-threshold lets you specify a threshold and softness percentage of how the mask is applied. Below the threshold, pixels are fully transparent, and above the threshold pixels are fully opaque. The softness lets you apply a range during which the opacity is scaled by the alpha from the mask.<b>Examples:</b><pre>opacity-mask: url( "file://{images}/upper_row_mask.tga" );\nopacity-mask: url( "file://{images}/upper_row_mask.tga" ) 0.5;\nopacity-mask: url( "file://{images}/upper_row_mask.tga" ) -1.0;\nopacity-mask-position: 5px 50%;\nopacity-mask-scale: 200%;\nopacity-mask-scale: 50% 100%;\nopacity-mask-scale: cover;\nopacity-mask-scale: contain;\nopacity-mask-threshold: 0% 30%;\n</pre>
 ApplyStyles
 AsyncContainer
 AsyncDataPanel
@@ -550,6 +556,7 @@ AudioVolumeUnder33
 AudioVolumeUnder66
 Autosuggest_Prefix_txt
 Autosuggest_Suffix_txt
+Awebm
 BAcceptsFocus
 BAcceptsInput
 BAdjustingVolume
@@ -591,7 +598,6 @@ C:\buildworker\csgo_rel_win64\build\src\panorama\controls\label.cpp
 C:\buildworker\csgo_rel_win64\build\src\panorama\controls\movieplayer.cpp
 C:\buildworker\csgo_rel_win64\build\src\panorama\controls\panel2d.cpp
 C:\buildworker\csgo_rel_win64\build\src\panorama\data\panoramavideoplayer.cpp
-C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 C:\buildworker\csgo_rel_win64\build\src\panorama\panoramasymbol.cpp
 C:\buildworker\csgo_rel_win64\build\src\public\panorama\controls\panel2d.h
 CDebugLayout::AppendElementOpenTag
@@ -618,14 +624,15 @@ CPanel2D::Initialize
 CPanel2D::SetDialogVariable - char *
 CPanel2D::SetDialogVariable - int
 CPanel2D::SetDialogVariable - time
+CPanel2D::SetDialogVariableLocToken - char *
 CPanel2D::~CPanel2D
 CPanel2DFactory:  Factory for '%s' already exists!!!!\n
 CPanoramaVideoPlayer - Call video64.dll CVideoPlayer::Stop
 CStylePropertyFactory:  Factory for '%s' already exists!!!!\n
 CStyleSymbol must become larger, cannot fit all style properties in uint8 anymore
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class panorama::CPanelPtr<class panorama::CPanel2D>,struct panorama::CDebugLayout::PanelDebugInfo_t,class CDefEquals<class panorama::CPanelPtr<class panorama::CPanel2D> >,struct HashMapFunctor_t<class panorama::CPanelPtr<class panorama::CPanel2D> >,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class panorama::CPanelPtr<class panorama::CPanel2D>,struct panorama::CDebugLayout::PanelDebugInfo_t,class CDefEquals<class panorama::CPanelPtr<class panorama::CPanel2D> >,struct HashMapFunctor_t<class panorama::CPanelPtr<class panorama::CPanel2D> >,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class panorama::CStyleSymbol,class panorama::CStyleProperty *,class CDefEquals<class panorama::CStyleSymbol>,struct HashMapFunctor_t<class panorama::CStyleSymbol>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class panorama::CStyleSymbol,class panorama::CStyleProperty *,class CDefEquals<class panorama::CStyleSymbol>,struct HashMapFunctor_t<class panorama::CStyleSymbol>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class panorama::CStyleSymbol,unsigned char,class CDefEquals<class panorama::CStyleSymbol>,struct HashMapFunctor_t<class panorama::CStyleSymbol>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class panorama::CStyleSymbol,unsigned char,class CDefEquals<class panorama::CStyleSymbol>,struct HashMapFunctor_t<class panorama::CStyleSymbol>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class panorama::CPanelPtr<class panorama::CPanel2D>,struct panorama::CDebugLayout::PanelDebugInfo_t,class CDefEquals<class panorama::CPanelPtr<class panorama::CPanel2D> >,struct DefaultHashFunctor<class panorama::CPanelPtr<class panorama::CPanel2D> >,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class panorama::CPanelPtr<class panorama::CPanel2D>,struct panorama::CDebugLayout::PanelDebugInfo_t,class CDefEquals<class panorama::CPanelPtr<class panorama::CPanel2D> >,struct DefaultHashFunctor<class panorama::CPanelPtr<class panorama::CPanel2D> >,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class panorama::CStyleSymbol,class panorama::CStyleProperty *,class CDefEquals<class panorama::CStyleSymbol>,struct DefaultHashFunctor<class panorama::CStyleSymbol>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class panorama::CStyleSymbol,class panorama::CStyleProperty *,class CDefEquals<class panorama::CStyleSymbol>,struct DefaultHashFunctor<class panorama::CStyleSymbol>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class panorama::CStyleSymbol,unsigned char,class CDefEquals<class panorama::CStyleSymbol>,struct DefaultHashFunctor<class panorama::CStyleSymbol>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class panorama::CStyleSymbol,unsigned char,class CDefEquals<class panorama::CStyleSymbol>,struct DefaultHashFunctor<class panorama::CStyleSymbol>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,short,class CDefFastCaselessStringLess,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,short,class CDefFastCaselessStringLess,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,short,class CDefFastCaselessStringLess,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbol,struct LocalPanelRegistration_t,class CDefLess<class CUtlSymbol>,int>::Node_t,class CUtlOrderedMapBase<class CUtlSymbol,struct LocalPanelRegistration_t,class CDefLess<class CUtlSymbol>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbol,struct LocalPanelRegistration_t,class CDefLess<class CUtlSymbol>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbol,struct LocalRegistration_t,class CDefLess<class CUtlSymbol>,int>::Node_t,class CUtlOrderedMapBase<class CUtlSymbol,struct LocalRegistration_t,class CDefLess<class CUtlSymbol>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbol,struct LocalRegistration_t,class CDefLess<class CUtlSymbol>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
@@ -671,6 +678,7 @@ ConsoleDragFrameUpdate
 ConsoleInput
 ConsoleLog
 ConsolePanel
+ConsoleResetSizeAndPosition
 ConsoleText
 ConsoleTextCopyAll
 ConsoleTextCopySelected
@@ -707,6 +715,7 @@ CreatePanelWithCurrentContext
 CreateVideoPlayer
 CuesContainer
 CycleButton
+D\tV_isvalidhex
 DaisyInputTypeABXY
 DaisyInputTypePIN
 DaisyInputTypeRS
@@ -765,6 +774,7 @@ DebugStyleStatus
 Debugger
 DecrementButton
 DelayLoadList
+DelayLoadListClearPanelsWhenStoppedPainting
 DelayLoadListLoadVisiblePanels
 DelayLoadPanel
 DeleteAsync
@@ -845,7 +855,7 @@ FileNameTextEntry
 FileOpenDialog
 FileOpenDialogCancel
 FileOpenDialogClose
-FileOpenDialogDoubleClickFile
+FileOpenDialogEntry
 FileOpenDialogFilesSelected
 FileOpenDialogFilterChanged
 FileOpenDialogFolderUp
@@ -882,6 +892,7 @@ FrameSection
 FrameStyleBlock
 Fullscreen
 GB=\nHB
+G\tV_iswcntrl
 Ga=UU
 GamepadInput
 GenericTextInputHandlerID
@@ -900,7 +911,6 @@ GetFocusChild
 GetFocusIndex
 GetFrameCount
 GetMaxCharCount
-GetParent
 GetPosition
 GetPositionWithinAncestor
 GetPositionWithinWindow
@@ -943,6 +953,7 @@ HTMLTitle
 HTMLURLChanged
 HTMLUpdatePageSize
 HTMLVerticalScrollBar
+H\tV_iswdigit
 Has Cached Command List
 HasCachedCommandList
 HasCaptions
@@ -1017,6 +1028,7 @@ Just ignore the calculations, you can zoom to this amount (will validate that th
 KEY_BACKSPACE: Accepted.\n
 KEY_BACKSPACE: Clearing state due to %d\n
 KEY_BACKSPACE: Rejected.\n
+K\tV_iswspace
 L?fff?
 LT_txt
 LabelHREF
@@ -1105,6 +1117,9 @@ OpenStyleFileForEditAtByteIndex
 OpenText
 Option_%d
 OverMaxPips
+P08@J
+P08J0
+P6@7 
 PageDown
 PageLeft
 PagePanelDown
@@ -1177,7 +1192,6 @@ PropertySection
 PropertyTransitionEnd
 RBLegend
 RT_txt
-R\vpt0
 RadioBox
 RadioButton
 RadioSelected
@@ -1283,8 +1297,7 @@ SetDialogVariable
 SetDialogVariableInt
 SetDialogVariableLocString
 SetDialogVariableLocStringNested
-SetDialogVariablePluralLocStringInt
-SetDialogVariablePluralLocStringIntNested
+SetDialogVariableLocToken
 SetDialogVariableTime
 SetDirection
 SetDisableFocusOnMouseDown
@@ -1533,6 +1546,9 @@ TopArrowVisible
 TopLevelWindowVisibilityChanged
 TriggerClass
 TriggerStyle
+Typed
+TypewriterLabel
+TypewriterLabelScheduledUpdate
 UIEngine()
 Underlying panel is deleted!
 Unexpected end of string.
@@ -1592,14 +1608,14 @@ Wrapper
 WriteCompositionLayerPNG
 XInputPad
 X`hr
+XfP$ 
 Y_txt
 [object@%p]
-\fp\vPP
-\fpt0
+\n\tV_atanf
+\tV_strupper_fast
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_AppendSlash
 \t_V_strcspn
-\vpt0
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `F?ToLocalEmpty@api_internal@v8@@YAXXZ
 about:blank
@@ -1691,7 +1707,6 @@ border-top-right-radius
 border-top-style
 border-top-width
 border-width
-both
 bottom
 bottomright
 box-shadow
@@ -1790,7 +1805,6 @@ desiredlayoutheight
 desiredlayoutwidth
 dimgray
 dimgrey
-direction
 disableactivatepause
 disableaudio
 disabled by parent
@@ -2102,9 +2116,9 @@ orange
 orangered
 orchid
 otherPanelID, eventToFire
-p0jp8\t
+p2 y
+p6P. 
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
-p\r`\fPt0
 padding
 padding-bottom
 padding-left
@@ -2424,7 +2438,6 @@ wrap
 wraparound
 wrappedhtmlid
 x-offset
-x\tV_strupper_fast
 y-offset
 y>?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
 yellow

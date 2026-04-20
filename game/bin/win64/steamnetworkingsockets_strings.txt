@@ -20,6 +20,7 @@
  ' ) - 3 G M Q _ c e i w } 
  (08@HPX`hpz`\n
  (08@HPX`j`\n
+ (08@HR
  (BGP MDT)
  (MPLS)
  (MPLS-labeled VPN)
@@ -636,6 +637,7 @@ $d`D-laM
 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz./
 08@HPX`hpx
 08@HR`\n
+08@J
 08bX
 0F2R0P4
 0Z@q
@@ -3400,7 +3402,6 @@ Incorrect username: got '%s' expected '%s'.
 Independent
 Inherit all
 Inhibit Policy Mapping
-Init
 InitAuthentication
 Initial ICE auth
 Initial attempt to contact %s failed.  Giving up after %d consecutive failures
@@ -3905,6 +3906,7 @@ P-256
 P-384
 P-521
 P00`
+P08@J
 P1\t98"
 P2P %s
 P2P CMsgSteamDatagramConnectRequest from %s; we're listening on %s, hosted server connection\n
@@ -6190,7 +6192,6 @@ could not load the shared library
 could not set engine
 could not set time
 could not unload the shared library
-counter
 counter:
 countersignature
 countryCode3c

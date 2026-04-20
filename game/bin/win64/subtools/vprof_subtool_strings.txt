@@ -134,6 +134,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpX
 2customContextMenuRequested( const QPoint &)
 2itemSelectionChanged()
 2textChanged( const QString & )
@@ -647,7 +648,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?toInt@QVariant@@QEBAHPEA_N@Z
 ?toPoint@QPointF@@QEBA?AVQPoint@@XZ
 ?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z
-@\tV_log10d
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 Budget History
@@ -667,7 +667,6 @@ C\v?event@QGraphicsScene@@MEAA_NPEAVQEvent@@@Z
 Calls
 Clear Samples
 Courier New
-D\tV_log2f
 D\v?event@QGraphicsView@@MEAA_NPEAVQEvent@@@Z
 Decoding 
 Decoding cancelled
@@ -715,6 +714,7 @@ OnStop
 OnTreeSelectionChanged
 OnValueChanged
 Open vprof recording
+P\tV_log10d
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
 RSDS?$l
@@ -732,6 +732,7 @@ StopSampling
 Stopped.
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
+T\tV_log2f
 Timings truncated
 Totals
 Truncated file

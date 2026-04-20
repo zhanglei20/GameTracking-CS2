@@ -123,7 +123,7 @@ var CapabilityCanApplyAction;
             CapabilityCanSticker.NextStickerButtonPressed(oSettings.contextPanel);
         }
         else if (worktype === 'can_patch') {
-            $.Schedule(.25, () => CapabilityCanPatch.PreviewPatchOnChar(itemToApplyId, activeSlot, oSettings.contextPanel));
+            CapabilityCanPatch.PreviewPatchOnChar(itemToApplyId, activeSlot, oSettings.contextPanel);
         }
     }
     function _OnCancelPressed(oSettings) {

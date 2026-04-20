@@ -18,6 +18,7 @@
 		m_TagName = "Child Asset"
 		m_TagDescription = "Asset is an uninteresting child resource."
 		m_TagIcon = "game:tools/images/assetbrowser/asset_badges/asset_is_trivial_child.png"
+		m_bTagHidesAssetByDefault = true
 	}
 	"@readonly_asset" = 
 	{
@@ -37,14 +38,6 @@
 		m_TagIcon = "game:tools/images/assetbrowser/asset_badges/vmat_decal.png"
 		m_TagName = "Decal Material"
 		m_TagDescription = "This material is a decal."
-		m_RestrictAutoTagToAssetType = "material_asset"
-	}
-	"@vmat_blend" = 
-	{
-		m_AutoFilterTag = "VertexPaintStreamCount>0"
-		m_TagIcon = "game:tools/images/assetbrowser/asset_badges/vmat_blend.png"
-		m_TagName = "Blend Material"
-		m_TagDescription = "This material uses multi-layer blending."
 		m_RestrictAutoTagToAssetType = "material_asset"
 	}
 	"@vmat_translucent" = 
@@ -100,5 +93,15 @@
 		m_TagDescription = "This model succesfully compiled with warnings."
 		m_RestrictAutoTagToAssetType = "model_asset"
 		m_ThumbnailOverlayImage = "tools\\images\\common\\compiled_with_warnings_overlay.png"
+	}
+	"@animgraph_1_model" = 
+	{
+		m_AutoFilterTag = "ref:model_key=\"anim_graph_resource\""
+		m_TagIcon = "tools\\images\\common\\tag_animgraph1.png"
+		m_TagName = "Animgraph1"
+		m_TagColor = [ 179, 151, 60 ]
+		m_TagDescription = "This model references an Animgraph1 graph."
+		m_RestrictAutoTagToAssetType = "model_asset"
+		m_ThumbnailOverlayImage = "tools\\images\\common\\tag_animgraph1_overlay.png"
 	}
 }

@@ -4,6 +4,17 @@
 	[
 		{
 			name = ""
+			group = "ToolsStartup"
+			source_file = "src/toolrenderutils/toolstandardmodels.cpp"
+			source_line = 18
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+				resource_name:"models/editor/camera.vmdl",
+			]
+		},
+		{
+			name = ""
 			group = "ToolsStartup_SM50"
 			source_file = "src/toolrenderutils/toolmatsysutils.cpp"
 			source_line = 161

@@ -24,6 +24,7 @@
 //		}
 //	],
 //	"m_groupName": "",
+//	"m_dictionaryParameterBinding": "00000000-0000-0000-0000-000000000000",
 //	"m_previewStartValue": "",
 //	"m_expectedValues":
 //	[
@@ -35,5 +36,6 @@ class CNmGraphDocIDControlParameterNode : public CNmGraphDocControlParameterNode
 	CGlobalSymbol m_previewStartValue;
 	// MPropertyAttributeEditor = "AnimGraphID()"
 	// MPropertyAutoExpandSelf
+	// MPropertyFriendlyName = "Local graph expected values"
 	CUtlVector< CGlobalSymbol > m_expectedValues;
 };

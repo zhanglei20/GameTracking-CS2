@@ -4,7 +4,7 @@
 	ViewModel = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -15,7 +15,7 @@
 	ViewModel_M4A1_S = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -29,7 +29,7 @@
 	ViewModel_AK = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -43,7 +43,7 @@
 	ViewModel_DECOY = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -57,7 +57,7 @@
 	ViewModel_HE_GRENADE = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -71,7 +71,7 @@
 	ViewModel_FLASHBANG = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -85,7 +85,7 @@
 	ViewModel_SMOKE = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -99,7 +99,7 @@
 	ViewModel_MOLOTOV = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -113,7 +113,7 @@
 	ViewModel_INCENDIARY = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -127,7 +127,7 @@
 	ViewModel_AUG = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -141,7 +141,7 @@
 	ViewModel_XM1014 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -155,7 +155,7 @@
 	ViewModel_SG556 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -169,7 +169,7 @@
 	ViewModel_AWP = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -183,7 +183,7 @@
 	ViewModel_NOVA = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -197,7 +197,7 @@
 	ViewModel_HEALTH_SHOT = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -211,7 +211,7 @@
 	ViewModel_C4 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -225,7 +225,7 @@
 	ViewModel_USP = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -239,7 +239,7 @@
 	ViewModel_HKP2000 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -253,7 +253,7 @@
 	ViewModel_P250 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -267,7 +267,7 @@
 	ViewModel_CZ75A = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -281,7 +281,7 @@
 	ViewModel_FIVE_SEVEN = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -295,7 +295,7 @@
 	ViewModel_DEAGLE = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -309,7 +309,7 @@
 	ViewModel_REVOLVER = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -323,7 +323,7 @@
 	ViewModel_ELITE = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -337,7 +337,7 @@
 	ViewModel_GLOCK = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -351,7 +351,7 @@
 	ViewModel_TEC9 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -365,7 +365,7 @@
 	ViewModel_TASER = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -379,7 +379,7 @@
 	ViewModel_SSG08 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -393,7 +393,7 @@
 	ViewModel_G3SG1 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -407,7 +407,7 @@
 	ViewModel_FAMAS = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -421,7 +421,7 @@
 	ViewModel_SCAR20 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -435,7 +435,7 @@
 	ViewModel_M4A4 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -449,7 +449,7 @@
 	ViewModel_GALIL = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -463,7 +463,7 @@
 	ViewModel_NEGEV = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -477,7 +477,7 @@
 	ViewModel_M249 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -491,7 +491,7 @@
 	ViewModel_SAWEDOFF = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -505,7 +505,7 @@
 	ViewModel_MAG7 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -519,7 +519,7 @@
 	ViewModel_P90 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -533,7 +533,7 @@
 	ViewModel_MP5SD = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -547,7 +547,7 @@
 	ViewModel_MP7 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -561,7 +561,7 @@
 	ViewModel_MP9 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -575,7 +575,7 @@
 	ViewModel_MAC10 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -589,7 +589,7 @@
 	ViewModel_BIZON = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -603,7 +603,7 @@
 	ViewModel_UMP45 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -617,7 +617,7 @@
 	ViewModel_Knife_Default_T = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -631,7 +631,7 @@
 	ViewModel_Knife_Default_CT = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -645,7 +645,7 @@
 	ViewModel_Knife_Bayonet = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -659,7 +659,7 @@
 	ViewModel_Knife_Bowie = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -673,7 +673,7 @@
 	ViewModel_Knife_butterfly = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -687,7 +687,7 @@
 	ViewModel_Knife_css = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -701,7 +701,7 @@
 	ViewModel_Knife_falchion = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -715,7 +715,7 @@
 	ViewModel_Knife_flip = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -729,7 +729,7 @@
 	ViewModel_Knife_gut = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -743,7 +743,7 @@
 	ViewModel_Knife_tactical = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -757,7 +757,7 @@
 	ViewModel_Knife_karambit = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -771,7 +771,7 @@
 	ViewModel_Knife_m9 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -785,12 +785,12 @@
 	ViewModel_Knife_navaja = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
 				m_previewModel = "weapons/models/knife/knife_navaja/weapon_knife_navaja.vmdl"
-				m_skeleton = "animation/skeletons/weapons/knife_tactical.vnmskel"
+				m_skeleton = "animation/skeletons/weapons/knife_navaja.vnmskel"
 				m_attachToBoneName = "wpn"
 			},
 		]
@@ -799,7 +799,7 @@
 	ViewModel_Knife_outdoor = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -813,7 +813,7 @@
 	ViewModel_Knife_cord = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -827,7 +827,7 @@
 	ViewModel_Knife_push = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -841,7 +841,7 @@
 	ViewModel_Knife_skeleton = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -855,7 +855,7 @@
 	ViewModel_Knife_stiletto = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -869,7 +869,7 @@
 	ViewModel_Knife_canis = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -883,7 +883,7 @@
 	ViewModel_Knife_talon = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -897,7 +897,7 @@
 	ViewModel_Knife_ursus = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -911,7 +911,7 @@
 	ViewModel_Knife_kukri = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -925,7 +925,7 @@
 	WorldModel = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -936,7 +936,7 @@
 	WorldModel_M4A1_S = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -950,7 +950,7 @@
 	WorldModel_AK = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -964,7 +964,7 @@
 	WorldModel_Knife_Default_T = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -978,7 +978,7 @@
 	WorldModel_Knife_Default_CT = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -992,7 +992,7 @@
 	WorldModel_DECOY = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1006,7 +1006,7 @@
 	WorldModel_HE_GRENADE = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1020,7 +1020,7 @@
 	WorldModel_FLASHBANG = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1034,7 +1034,7 @@
 	WorldModel_SMOKE = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1048,7 +1048,7 @@
 	WorldModel_MOLOTOV = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1062,7 +1062,7 @@
 	WorldModel_INCENDIARY = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1076,7 +1076,7 @@
 	WorldModel_AUG = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1090,7 +1090,7 @@
 	WorldModel_XM1014 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1104,7 +1104,7 @@
 	WorldModel_SG556 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1118,7 +1118,7 @@
 	WorldModel_AWP = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1132,7 +1132,7 @@
 	WorldModel_NOVA = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1146,7 +1146,7 @@
 	WorldModel_HEALTH_SHOT = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1160,7 +1160,7 @@
 	WorldModel_C4 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1174,7 +1174,7 @@
 	WorldModel_USP = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1188,7 +1188,7 @@
 	WorldModel_HKP2000 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1202,7 +1202,7 @@
 	WorldModel_P250 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1216,7 +1216,7 @@
 	WorldModel_CZ75A = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1230,7 +1230,7 @@
 	WorldModel_FIVE_SEVEN = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1244,7 +1244,7 @@
 	WorldModel_DEAGLE = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1258,7 +1258,7 @@
 	WorldModel_REVOLVER = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1272,7 +1272,7 @@
 	WorldModel_ELITE = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1286,7 +1286,7 @@
 	WorldModel_GLOCK = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1300,7 +1300,7 @@
 	WorldModel_TEC9 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1314,7 +1314,7 @@
 	WorldModel_TASER = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1328,7 +1328,7 @@
 	WorldModel_SSG08 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1342,7 +1342,7 @@
 	WorldModel_G3SG1 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1356,7 +1356,7 @@
 	WorldModel_FAMAS = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1370,7 +1370,7 @@
 	WorldModel_SCAR20 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1384,7 +1384,7 @@
 	WorldModel_M4A4 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1398,7 +1398,7 @@
 	WorldModel_GALIL = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1412,7 +1412,7 @@
 	WorldModel_NEGEV = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1426,7 +1426,7 @@
 	WorldModel_M249 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1440,7 +1440,7 @@
 	WorldModel_SAWEDOFF = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1454,7 +1454,7 @@
 	WorldModel_MAG7 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1468,7 +1468,7 @@
 	WorldModel_P90 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1482,7 +1482,7 @@
 	WorldModel_MP5SD = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1496,7 +1496,7 @@
 	WorldModel_MP7 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1510,7 +1510,7 @@
 	WorldModel_MP9 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1524,7 +1524,7 @@
 	WorldModel_MAC10 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1538,7 +1538,7 @@
 	WorldModel_BIZON = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1552,7 +1552,7 @@
 	WorldModel_UMP45 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1566,7 +1566,7 @@
 	WorldModel_Knife_Bayonet = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1580,7 +1580,7 @@
 	WorldModel_Knife_Bowie = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1594,7 +1594,7 @@
 	WorldModel_Knife_butterfly = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1608,7 +1608,7 @@
 	WorldModel_Knife_css = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1622,7 +1622,7 @@
 	WorldModel_Knife_falchion = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1636,7 +1636,7 @@
 	WorldModel_Knife_flip = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1650,7 +1650,7 @@
 	WorldModel_Knife_gut = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1664,7 +1664,7 @@
 	WorldModel_Knife_tactical = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1678,7 +1678,7 @@
 	WorldModel_Knife_karambit = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1692,7 +1692,7 @@
 	WorldModel_Knife_m9 = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1706,7 +1706,7 @@
 	WorldModel_Knife_navaja = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1720,7 +1720,7 @@
 	WorldModel_Knife_outdoor = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1734,7 +1734,7 @@
 	WorldModel_Knife_cord = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1748,7 +1748,7 @@
 	WorldModel_Knife_push = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1762,7 +1762,7 @@
 	WorldModel_Knife_skeleton = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1776,7 +1776,7 @@
 	WorldModel_Knife_stiletto = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1790,7 +1790,7 @@
 	WorldModel_Knife_canis = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1804,7 +1804,7 @@
 	WorldModel_Knife_talon = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1818,7 +1818,7 @@
 	WorldModel_Knife_ursus = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1832,7 +1832,7 @@
 	WorldModel_Knife_kukri = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/worldmodel.vnmskel"
-		m_previewModel = "phase2/characters/models/tm_professional/tm_professional_vari_ag2.vmdl"
+		m_previewModel = "agents/models/tm_professional/tm_professional_vari.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{
@@ -1852,7 +1852,7 @@
 	ViewModel_EGG = 
 	{
 		m_primarySkeleton = "animation/skeletons/characters/viewmodel.vnmskel"
-		m_previewModel = "phase2/weapons/models/arms/weapon_arms.vmdl"
+		m_previewModel = "weapons/models/shared/arms/weapon_arms.vmdl"
 		m_secondarySkeletonSettings = 
 		[
 			{

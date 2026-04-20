@@ -100,7 +100,7 @@ PS
 	    int _Globals_1_g_bForceMixedResolution : packoffset(c0);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b2, space1)
 	{
 	    int2 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c11);
 	};

@@ -6641,4 +6641,139 @@
 			},
 		]
 	}
+	test_harmonic_tools = 
+	{
+		operators = 
+		[
+			{
+				name = "public"
+				operator = "util_null"
+				operator_variables = 
+				{
+				}
+			},
+			{
+				name = "harmonic_odds_and_evens"
+				operator = "harmonic_tools_odds_and_evens"
+				input = 0.22
+				input_num_harmonics = 12
+				input_curve_amount = 1.0
+				input_min_val = 0.5
+				input_max_val = 1.0
+				use_independant_levels = "false"
+				input_odds_level = 0.0
+			},
+			{
+				name = "harmonic_delta_response"
+				operator = "harmonic_tools_delta_harmonic_response"
+				input = 0.25
+				input_max_val = 1.0
+				input_threshold_start_positive = "[ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ]"
+				input_threshold_end_positive = "[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]"
+				input_multiplier_positive = "[ -4.2, 2.2, 3.2, 5.2, 6.2, 7.2, 8.2, 1.2, 9.2, 10.2, 11.2, -2.2, -3.2, -4.2, -5.2, -6.2 ]"
+				input_threshold_start_negative = "[ -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1 ]"
+				input_threshold_end_negative = "[ -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0 ]"
+				input_multiplier_negative = "[ 4.2, 2.2, 3.2, 5.2, 6.2, 7.2, 8.2, 1.2, 9.2, 10.2, 11.2, 12.2, 13.2, 14.2, 15.2, 16.2 ]"
+				input_num_harmonics = 12
+			},
+			{
+				name = "harmonic_lfos"
+				operator = "harmonic_tools_harmonic_lfos"
+				input = 0.2
+				input_min_val = -1.0
+				input_max_val = 1.0
+				input_rate_multiplier = "[ 4.0, 2.0, 3.0, 5.0, 6.0, 7.0, 8.0, 1.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ]"
+				input_depth_multiplier = "[ 4.0, 2.0, 3.0, 5.0, 6.0, 7.0, 8.0, 1.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ]"
+				input_lfo_center = "[ 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7 ]"
+				input_rate_min = 0.2
+				input_rate_max = 0.8
+				input_depth_min = 0.1
+				input_depth_max = 0.5
+				input_num_harmonics = 12
+				lfo_shape = "sine"
+			},
+			{
+				name = "spectral_spread"
+				operator = "harmonic_tools_spectral_spread"
+				input_execute = "1"
+				input = 0.35
+				input_min_val = 0.5
+				input_max_val = 1.2
+				input_num_harmonics = 12
+				input_spread = 0.15
+			},
+			{
+				name = "accum16"
+				operator = "math_accumulate16_float16"
+				apply = "mult"
+				input1 = "@spectral_spread.output"
+				input2 = "@harmonic_lfos.output"
+				input3 = "@harmonic_delta_response.output"
+				input4 = "@harmonic_odds_and_evens.output"
+			},
+			{
+				name = "split_mult"
+				operator = "util_elements_float16"
+				input = "@accum16.output"
+			},
+		]
+	}
+	test_usable_float_range = 
+	{
+		operators = 
+		[
+			{
+				name = "public"
+				operator = "util_null"
+				operator_variables = 
+				{
+				}
+			},
+			{
+				name = "get_event_info"
+				operator = "soundevent_get_info"
+			},
+			{
+				name = "random_val"
+				operator = "math_random_float"
+				input_min = "-10.0"
+				input_max = "100.0"
+				round_to_int = "0"
+			},
+			{
+				name = "usable_floats"
+				operator = "util_usable_float_range"
+				input_execute = "1"
+				input = "@random_val.output"
+				input_percentile_lower = 5
+				input_percentile_upper = 95
+			},
+			{
+				name = "**min:"
+				operator = "util_print_float"
+				input = "@usable_floats.output_min"
+			},
+			{
+				name = "**useable_min:"
+				operator = "util_print_float"
+				input = "@usable_floats.output_usable_min"
+			},
+			{
+				name = "**max:"
+				operator = "util_print_float"
+				input = "@usable_floats.output_max"
+			},
+			{
+				name = "**useable_max:"
+				operator = "util_print_float"
+				input = "@usable_floats.output_usable_max"
+			},
+			{
+				name = "update_prevent_stop"
+				operator = "soundevent_control"
+				input_execute = "@get_event_info.output_unstopped"
+				input_add_dependent = "@get_event_info.output_unstopped"
+			},
+		]
+	}
 }

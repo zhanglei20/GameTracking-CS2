@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/hundredth_01/mainmenu.vsnd"
+		vsnd_duration = 146.886536
 	}
 	Music.MVPPreview.hundredth_01 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/hundredth_01/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/hundredth_01/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 5.276735
 	}
 	Music.Selection.hundredth_01 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/hundredth_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 22.125713
 	}
 	Music.MatchFound.hundredth_01 = 
 	{
@@ -76,6 +82,7 @@
 			24.818, 26.012, 27.207, 28.414,
 			29.491,
 		]
+		vsnd_duration = 29.544489
 	}
 	Music.LoadingScreen.hundredth_01 = 
 	{
@@ -105,6 +112,7 @@
 			"sounds/music/hundredth_01/startaction_02.vsnd",
 			"sounds/music/hundredth_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 21.342041
 	}
 	Music.StartRound.hundredth_01 = 
 	{
@@ -155,6 +163,7 @@
 			24.818, 26.012, 27.207, 28.414,
 			29.491,
 		]
+		vsnd_duration = 29.544489
 	}
 	Music.StartAction.hundredth_01 = 
 	{
@@ -186,6 +195,7 @@
 			"sounds/music/hundredth_01/startaction_02.vsnd",
 			"sounds/music/hundredth_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 21.342041
 	}
 	Music.StartRound_GG.hundredth_01 = 
 	{
@@ -237,6 +247,7 @@
 			24.818, 26.012, 27.207, 28.414,
 			29.491,
 		]
+		vsnd_duration = 29.544489
 	}
 	Music.BombPlanted.hundredth_01 = 
 	{
@@ -259,6 +270,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 30.902857
 	}
 	Music.BombTenSecCount.hundredth_01 = 
 	{
@@ -277,6 +289,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 9.848164
 	}
 	Music.GotHostage.hundredth_01 = 
 	{
@@ -301,6 +314,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 30.902857
 	}
 	Music.HostageNearRescue.hundredth_01 = 
 	{
@@ -323,6 +337,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 9.848164
 	}
 	Music.TenSecCount.hundredth_01 = 
 	{
@@ -344,6 +359,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 13.061225
 	}
 	Music.WonRound.hundredth_01 = 
 	{
@@ -368,6 +384,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 3.448163
 	}
 	Music.LostRound.hundredth_01 = 
 	{
@@ -392,6 +409,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 5.537959
 	}
 	Music.DeathCam.hundredth_01 = 
 	{
@@ -404,6 +422,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 6.321633
 	}
 	Music.MVPAnthem.hundredth_01 = 
 	{
@@ -430,6 +461,7 @@
 		[
 			"sounds/music/hundredth_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 5.276735
 	}
 	Music.MatchStart.hundredth_01 = 
 	{
@@ -445,6 +477,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/hundredth_01/startofmatch.vsnd"
+		vsnd_duration = 50.369797
 	}
 	Music.MatchEnd.hundredth_01 = 
 	{
@@ -466,6 +499,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 50.369797
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

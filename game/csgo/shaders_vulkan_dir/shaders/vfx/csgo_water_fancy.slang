@@ -71,7 +71,6 @@ VS
 	DynamicComboRule( Allow1( D_BAKED_LIGHTING_FROM_VERTEX_STREAM, D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	DynamicComboRule( Allow0( D_CS_VERTEX_ANIMATION ) );
 	
-	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	bool g_bTexCoordScaleByModel < UiType(CheckBox); Expression((g_nScaleTexCoordUByModelScaleAxis!=0) || (g_nScaleTexCoordVByModelScaleAxis!=0)); >;
@@ -300,6 +299,7 @@ PS
 	DynamicComboRule( Allow1( S_TOOLS, D_SPECULAR_CUBE_MAP_STATIC ) );
 	DynamicComboRule( Allow1( S_MODE_DEPTH, D_SPECULAR_CUBE_MAP_STATIC ) );
 	
+	cbuffer BakedLightingConstantBuffer_t < Attribute("BakedLightingConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	cbuffer PerViewLightingConstantBufferGpu_t < Attribute("PerViewLightingConstantBufferGpu_t"); >;
@@ -472,7 +472,7 @@ PS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (52024 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (52048 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_EXT_samplerless_texture_functions : require
@@ -516,7 +516,7 @@ PS
 	    _2045 _m0[4];
 	};
 	
-	struct _1196
+	struct _934
 	{
 	    _2045 _m0;
 	    _2045 _m1;
@@ -541,6 +541,7 @@ PS
 	    vec4 _m20;
 	    vec3 _m21;
 	    float _m22;
+	    _2045 _m23;
 	};
 	
 	float _4;
@@ -669,7 +670,7 @@ PS
 	
 	layout(set = 3, binding = 31, std430) readonly buffer g_BarnLights
 	{
-	    _1196 _m0[];
+	    _934 _m0[];
 	} g_BarnLights_1;
 	
 	layout(set = 1, binding = 62) uniform texture2D g_tZerothMoment;

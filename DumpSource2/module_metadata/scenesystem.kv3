@@ -53,7 +53,7 @@
 			name = "HairRendererManifest"
 			group = ""
 			source_file = "src/scenesystem/utils/hairrenderer.cpp"
-			source_line = 32
+			source_line = 34
 			resources = 
 			[
 				resource_name:"materials/dev/hair_processing_cs.vmat",
@@ -199,7 +199,7 @@
 			name = "ImGuiRendererManifest"
 			group = "GameStartup"
 			source_file = "src/scenesystem/imgui_render.cpp"
-			source_line = 20
+			source_line = 27
 			resources = 
 			[
 				resource_name:"materials/dev/imgui.vmat",
@@ -220,10 +220,20 @@
 			name = "AoProxyManifest"
 			group = ""
 			source_file = "src/scenesystem/ambientocclusionproxy.cpp"
-			source_line = 24
+			source_line = 32
 			resources = 
 			[
 				resource_name:"materials/dev/aoproxy_splat.vmat",
+			]
+		},
+		{
+			name = "AggregateRTProxySceneObjectManifest"
+			group = "GameStartup_SM50"
+			source_file = "src/scenesystem/aggregatertproxydesc.cpp"
+			source_line = 36
+			resources = 
+			[
+				resource_name:"materials/dev/visualize_rtproxy.vmat",
 			]
 		},
 		{

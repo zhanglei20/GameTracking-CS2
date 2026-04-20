@@ -58,11 +58,11 @@ VS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2428 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2468 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
-	struct _2817
+	struct _58
 	{
 	    vec4 _m0[4];
 	};
@@ -78,13 +78,13 @@ VS
 	
 	layout(set = 0) uniform _1295 _Globals_;
 	
-	struct _634
+	struct _1138
 	{
-	    _2817 _m0;
+	    _58 _m0;
 	    vec4 _m1;
 	};
 	
-	layout(set = 0) uniform _634 PerViewConstantBuffer_t;
+	layout(set = 0) uniform _1138 PerViewConstantBuffer_t;
 	
 	layout(location = 0) in vec3 vPositionOs;
 	layout(location = 1) in vec4 vColor;
@@ -93,12 +93,13 @@ VS
 	
 	void main()
 	{
-	    vec3 _5578 = (_Globals_.g_vGridAxis0 * mix(_Globals_.g_vGridMin.x, _Globals_.g_vGridMax.x, vPositionOs.x)) + (_Globals_.g_vGridAxis1 * mix(_Globals_.g_vGridMin.y, _Globals_.g_vGridMax.y, vPositionOs.y));
-	    vec4 _7941 = (vec4((_5578.xyz + _Globals_.g_vGridAxis2).xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	    output_0 = _5578;
+	    float _16863 = mix(_Globals_.g_vGridMin.x, _Globals_.g_vGridMax.x, vPositionOs.x);
+	    float _22467 = mix(_Globals_.g_vGridMin.y, _Globals_.g_vGridMax.y, vPositionOs.y);
+	    vec4 _23706 = (vec4((((_Globals_.g_vGridAxis0 * _16863) + (_Globals_.g_vGridAxis1 * _22467)).xyz + _Globals_.g_vGridAxis2).xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
+	    output_0 = vec3(_16863, _22467, 0.0);
 	    output_1 = vColor;
-	    _7941.y = -_7941.y;
-	    gl_Position = _7941;
+	    _23706.y = -_23706.y;
+	    gl_Position = _23706;
 	}
 	
 	

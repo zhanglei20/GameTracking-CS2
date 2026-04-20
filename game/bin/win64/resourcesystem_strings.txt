@@ -61,8 +61,6 @@
 .?AVIResourceTypeManager@@
 .?AVIVDataTypeManager@@
 .?AVbad_weak_ptr@std@@
-2\vpHV
-2\vpL
 <Anonymous>
 <INVALID>
 ?~~~~~~~~~~~~~~~~
@@ -81,6 +79,8 @@ C:\buildworker\csgo_rel_win64\build\src\resourcesystem\streamingresourcedata.cpp
 CAsyncResourceDataRequest
 CAsyncResourceDataRequest::CreateForFileRead
 CColorGradient
+CHandleUtilsSelfTest::TestAllocator
+CHandleUtilsSelfTest::_GetSerial
 CLoadingResource::~CLoadingResource
 CPanoramaImageName
 CPiecewiseCurve
@@ -117,7 +117,7 @@ CUtlBlockVector<struct UtlLinkedListElem_t<struct ExtRefList_t *,unsigned int>,u
 CUtlBlockVector<struct UtlLinkedListElem_t<struct ExtRefList_t *,unsigned int>,unsigned int,class CMemAllocAllocator>::GrowCount
 CUtlHashtable
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CResourceManifest *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned __int64,int,class CDefEquals<unsigned __int64>,struct HashMapFunctor_t<unsigned __int64>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned __int64,int,class CDefEquals<unsigned __int64>,struct HashMapFunctor_t<unsigned __int64>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned __int64,int,class CDefEquals<unsigned __int64>,struct DefaultHashFunctor<unsigned __int64>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned __int64,int,class CDefEquals<unsigned __int64>,struct DefaultHashFunctor<unsigned __int64>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<class CLoadingResource *,unsigned short>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<class CLoadingResource *,unsigned short>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<class CStreamingResourceData *,unsigned short>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<class CStreamingResourceData *,unsigned short>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<struct ExtRefList_t *,unsigned int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<struct ExtRefList_t *,unsigned int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
@@ -125,8 +125,8 @@ CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<class CLoadingResource *,uns
 CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<class CStreamingResourceData *,unsigned short>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<struct ExtRefList_t *,unsigned int>,class CMemAllocAllocator>::AddPage
 CUtlSortVector<struct CResourceManifest::LoadingResourceReference_t,class CUtlSortVectorDefaultLess<struct CResourceManifest::LoadingResourceReference_t>,class CUtlVector<struct CResourceManifest::LoadingResourceReference_t,int,class CUtlVectorMemory_Growable<struct CResourceManifest::LoadingResourceReference_t,int,0> > >::Find
-CUtlSortVector<struct CResourceManifest::LoadingResourceReference_t,class CUtlSortVectorDefaultLess<struct CResourceManifest::LoadingResourceReference_t>,class CUtlVector<struct CResourceManifest::LoadingResourceReference_t,int,class CUtlVectorMemory_Growable<struct CResourceManifest::LoadingResourceReference_t,int,0> > >::FindLessOrEqual
 CUtlSortVector<struct CResourceManifest::LoadingResourceReference_t,class CUtlSortVectorDefaultLess<struct CResourceManifest::LoadingResourceReference_t>,class CUtlVector<struct CResourceManifest::LoadingResourceReference_t,int,class CUtlVectorMemory_Growable<struct CResourceManifest::LoadingResourceReference_t,int,0> > >::Insert
+CVDataHandle
 CVDataLocalizedToken
 CWeakHandle
 CWeakHandleVoid
@@ -170,8 +170,6 @@ IKV3TransferInterface_ResourceSave
 Idle (ResourceSystemSleep)
 InstallResourceTypeManager
 IsResourceManifestGroupKnown: Manifest group name is empty or null\n
-Leaked reference to ERROR resource for type %s!\n
-Leaked resource: Refcount %s for %s%s resource "%s" (%016llX).  This may result in a crash.\n
 MKV3TransferName
 MPropertyCustomEditor
 MResourceTypeForInfoType
@@ -185,7 +183,6 @@ RESOURCE_TYPE_RESOURCE_MANIFEST
 RESOURCE_TYPE_TEST
 RESOURCE_TYPE_VDATA
 RSProfilerTool
-R\fpHV
 Range_t
 Re-entrant calls to CResourceSystem::PreShutdown()\n
 Reentrant call to CResourceSystem::BlockUntilManifestLoaded() while already in a frame update!\n
@@ -231,14 +228,13 @@ WARNING: resource '%s' is an unrecognized resource type!\n
 [% 5ims cb] [% 5ims async cb] [% 5i / %10s] %s\n
 [% 5ims cb] [% 5ims async cb] [% 5i / %10s] TOTAL\n
 [refcount % 4d]
-\nPHU
 \t\t[ FAIL ] - Manifest contains an illegal resource name "%s"!\n
 ___error_resource__
 _include
 _localization_path
-anonymous 
 bad_weak_ptr
 badresources_whitelist.txt
+ch.GetPointer() == rh
 enable_profiling
 flc_columns
 flc_count
@@ -248,14 +244,19 @@ flc_lines
 fltx4
 gYGw
 generic_data_type
+item->m_cookie == BindingAllocator_t::ITEM_COOKIE_ALLOC
+itemdefs
 localization_required
 m_hResource->m_nLoadingResource != LOADING_RESOURCE_INDEX_INVALID
 m_hResource->m_nStreamingResource != STREAMING_RESOURCE_DATA_INDEX_INVALID
 m_pTestFS == nullptr
 m_pTestFS == pTestFS
 mathlib_extended
+newSerial == i + 1
 panorama_image
-r\vpHV
+pthis->HandleUtils_Deref( ch )->m_ResourceId == key
+pthis->StaticDeref( ch, true ) == nullptr
+removed
 resource_leaks: Invalid resource name '%s'\n
 resource_leaks: No resource named '%s'\n
 resource_repeated_reload(%d)
@@ -263,7 +264,9 @@ resource_repeated_reload: Invalid resource name '%s'\n
 resourcefile
 resourcesystem
 resourcesystem.dll
+rh != RESOURCE_HANDLE_INVALID
 schemasystem
+serial == i
 set_profile_mode
 test_payload
 vagrp
@@ -280,16 +283,16 @@ vmix
 vmorf
 vmtst
 vnmgraphvnmclip
-vnmik
 vnmskel
 vpdi
 vphys
 vpost
 vptest
 vrman
+vseq
 vsgraph
 vsndevts
-vsndstckvseq
+vsndstck
 vsurf
 vsvg
 vtex

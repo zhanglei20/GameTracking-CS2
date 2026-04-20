@@ -13747,7 +13747,6 @@ Gb^I
 Gc`Jx
 GestureState
 GestureType
-GetDC
 GetLongPathNameW
 GetSysColor
 GetSystemMenu
@@ -15351,12 +15350,9 @@ Recent Places
 Redo
 Redo %1
 RegularTiler
-ReleaseDC
 Remove
 RequestSoftwareInputPanel
 Requested invalid tree cell: %d %d
-Reserved
-Reset
 ResizeMode
 ResizeToContents
 ResourceType
@@ -18521,7 +18517,6 @@ newState
 newVisualIndex
 newWidth
 newstate
-next
 ngz]
 njh\n
 nl@Z&

@@ -9,6 +9,7 @@
  RELEASE
  REPEAT
  X?setAlignment@QTextOption@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
+!#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 !?triggered@QAction@@QEAAX_N@Z
 !\f?focusNextPrevChild@QScrollArea@@UEAA_N_N@Z
 !root
@@ -64,6 +65,7 @@
 "\f?focusNextPrevChild@QTextBrowser@@MEAA_N_N@Z
 #?widgetAt@QApplication@@SAPEAVQWidget@@AEBVQPoint@@@Z
 #?winId@QWidget@@QEBA_KXZ
+#?window@QWidget@@QEBAPEAV1@XZ
 #\f?focusNextPrevChild@QTextEdit@@MEAA_N_N@Z
 #\n?columnCount@QSortFilterProxyModel@@UEBAHAEBVQModelIndex@@@Z
 #\r?hide@QWidget@@QEAAXXZ
@@ -397,6 +399,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 :shorthelp
 :shorthelp_ref
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
+;`?transientParent@QWindow@@QEBAPEAV1@XZ
 <(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+>
 </font>
 </font><br>
@@ -1499,7 +1502,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?userType@QVariant@@QEBAHXZ
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
-@InputBindSystem
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 A\n?document@QTextEdit@@QEBAPEAVQTextDocument@@XZ
@@ -1676,6 +1678,7 @@ Include Inactive
 Input Binding Error
 Input Debugger [%1]
 Input Sequence
+InputBindSystem
 InsertAssetLink
 InsertBold
 InsertImage
@@ -2054,6 +2057,7 @@ Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 \t?dataChanged@QListView@@MEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
+\tT?parent@QWindow@@QEBAPEAV1@XZ
 \v?clear@QStandardItemModel@@QEAAXXZ
 \v?clone@QStandardItem@@UEBAPEAV1@XZ
 \v?color@QBrush@@QEBAAEBVQColor@@XZ
@@ -2071,6 +2075,7 @@ Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
 ]?staticMetaObject@QSyntaxHighlighter@@2UQMetaObject@@B
+]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]\r?horizontalOffset@QListView@@MEBAHXZ
 ^\r?horizontalOffset@QTableView@@MEBAHXZ
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
@@ -2098,7 +2103,6 @@ checkstate
 clear_group
 colspan
 concommand
-connections
 const char*
 content/
 contentsMargins

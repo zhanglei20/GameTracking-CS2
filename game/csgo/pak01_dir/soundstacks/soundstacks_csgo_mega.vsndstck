@@ -16,95 +16,165 @@
 						_system_properties = 
 						{
 							display_group = "normal"
+							property_group = "Mixer"
+						}
+					}
+					set_mixlayer_amount_enable = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Mixer"
+						}
+					}
+					set_mixlayer_layer = 
+					{
+						data_type = "string"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Mixer"
+						}
+					}
+					time_mixlayer_amount_curve = 
+					{
+						data_type = "float6"
+						soundevent_data = "true"
+						value = 
+						{
+							value1 = "[0.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+							value2 = "[1.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+							value3 = "[2.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+						}
+						_system_properties = 
+						{
+							display_group = "normal"
+							display_edit_type = "field_curve_2d_editor"
+							display_edit_flag = "public.set_mixlayer_amount_enable"
+							property_group = "Mixer"
 						}
 					}
 					volume = 
 					{
 						value = "1.000000"
 						data_type = "float"
+						_system_properties = 
+						{
+							property_group = "Volume"
+						}
 					}
 					volume_random_min = 
 					{
 						value = "0.000000"
 						data_type = "float"
+						_system_properties = 
+						{
+							property_group = "Volume"
+						}
 					}
 					volume_random_max = 
 					{
 						value = "0.000000"
 						data_type = "float"
+						_system_properties = 
+						{
+							property_group = "Volume"
+						}
 					}
-					pitch = 
+					use_distance_volume_mapping_curve = 
 					{
-						value = "1.000000"
+						data_type = "bool"
+						value = "true"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Volume"
+						}
+					}
+					distance_volume_mapping_curve = 
+					{
+						data_type = "float6"
+						soundevent_data = "true"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "normal"
+							display_edit_type = "field_curve_2d_editor"
+							display_edit_flag = "public.use_distance_volume_mapping_curve"
+							property_group = "Volume"
+						}
+					}
+					ducking_bypass = 
+					{
 						data_type = "float"
-					}
-					pitch_random_min = 
-					{
 						value = "0.000000"
-						data_type = "float"
-					}
-					pitch_random_max = 
-					{
-						value = "0.000000"
-						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Volume"
+						}
 					}
 					vsnd_files_track_01 = 
 					{
 						value = "sounds/common/null.vsnd"
 						soundevent_data = "true"
 						data_type = "vsnd"
+						_system_properties = 
+						{
+							property_group = "VSNDS"
+						}
 					}
-					impact_speed_input = 
+					pitch = 
 					{
 						value = "1.000000"
 						data_type = "float"
-					}
-					delay = 
-					{
-						data_type = "float"
-						value = "0"
 						_system_properties = 
 						{
-							display_group = "normal"
+							property_group = "Pitch"
 						}
 					}
-					randomize_start_time = 
+					pitch_random_min = 
+					{
+						value = "0.000000"
+						data_type = "float"
+						_system_properties = 
+						{
+							property_group = "Pitch"
+						}
+					}
+					pitch_random_max = 
+					{
+						value = "0.000000"
+						data_type = "float"
+						_system_properties = 
+						{
+							property_group = "Pitch"
+						}
+					}
+					use_distance_pitch_mapping_curve = 
 					{
 						data_type = "bool"
 						value = "false"
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Sound Events"
+							property_group = "Pitch"
 						}
 					}
-					instance_limit = 
+					distance_pitch_mapping_curve = 
 					{
-						data_type = "float"
-						value = "0"
+						data_type = "float6"
+						soundevent_data = "true"
+						value = ""
 						_system_properties = 
 						{
 							display_group = "normal"
-						}
-					}
-					display_broadcast = 
-					{
-						data_type = "bool"
-						value = "false"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Sound Events"
-						}
-					}
-					broadcast_distance_override = 
-					{
-						data_type = "float"
-						value = "0"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Sound Events"
+							display_edit_type = "field_curve_2d_editor"
+							display_edit_flag = "public.use_distance_pitch_mapping_curve"
+							property_group = "Pitch"
 						}
 					}
 					enable_child_events = 
@@ -114,7 +184,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Sound Events"
+							property_group = "Children"
 						}
 					}
 					set_child_position = 
@@ -124,7 +194,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Sound Events"
+							property_group = "Children"
 						}
 					}
 					soundevent_01 = 
@@ -135,7 +205,134 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Sound Events"
+							property_group = "Children"
+						}
+					}
+					delay = 
+					{
+						data_type = "float"
+						value = "0"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Time"
+						}
+					}
+					self_destruct_time = 
+					{
+						data_type = "float"
+						value = "-1"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Time"
+						}
+					}
+					randomize_start_time = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Time"
+						}
+					}
+					use_fadetime_volume_mapping_curve = 
+					{
+						data_type = "bool"
+						value = "true"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Time"
+						}
+					}
+					fadetime_volume_mapping_curve = 
+					{
+						data_type = "float6"
+						soundevent_data = "true"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "normal"
+							display_edit_type = "field_curve_2d_editor"
+							display_edit_flag = "public.use_fadetime_volume_mapping_curve"
+							property_group = "Time"
+						}
+					}
+					use_time_volume_mapping_curve = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Time"
+						}
+					}
+					time_volume_mapping_curve = 
+					{
+						data_type = "float6"
+						soundevent_data = "true"
+						value = 
+						{
+							value1 = "[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+							value2 = "[0.500000,0.500000,0.000000,0.000000,2.000000,3.000000]"
+							value3 = "[1.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+						}
+						_system_properties = 
+						{
+							display_group = "normal"
+							display_edit_type = "field_curve_2d_editor"
+							display_edit_flag = "public.use_time_volume_mapping_curve"
+							property_group = "Time"
+						}
+					}
+					use_distance_unfiltered_stereo_mapping_curve = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Spread"
+						}
+					}
+					distance_unfiltered_stereo_mapping_curve = 
+					{
+						data_type = "float6"
+						soundevent_data = "true"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "normal"
+							display_edit_type = "field_curve_2d_editor"
+							display_edit_flag = "public.use_distance_unfiltered_stereo_mapping_curve"
+							property_group = "Spread"
+						}
+					}
+					use_time_unfiltered_stereo_mapping_curve = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Spread"
+						}
+					}
+					time_unfiltered_stereo_mapping_curve = 
+					{
+						data_type = "float6"
+						soundevent_data = "true"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "normal"
+							display_edit_type = "field_curve_2d_editor"
+							display_edit_flag = "public.use_time_unfiltered_stereo_mapping_curve"
+							property_group = "Spread"
 						}
 					}
 					position = 
@@ -170,11 +367,19 @@
 					{
 						data_type = "bool"
 						value = "false"
+						_system_properties = 
+						{
+							property_group = "Position"
+						}
 					}
 					use_uiposition = 
 					{
 						data_type = "bool"
 						value = "false"
+						_system_properties = 
+						{
+							property_group = "Position"
+						}
 					}
 					uiposition = 
 					{
@@ -194,32 +399,7 @@
 						{
 							display_edit_type = "field_position_editor"
 							property_group = "Position"
-						}
-					}
-					use_baked_occlusion = 
-					{
-						data_type = "bool"
-						value = "false"
-						_system_properties = 
-						{
-							property_group = "Position"
-						}
-					}
-					occlusion_path_curve = 
-					{
-						data_type = "float6"
-						soundevent_data = "true"
-						value = 
-						{
-							value1 = "1.0000 0.3000 0.0000 0.000 0.000 0.000"
-							value2 = "2.0000 0.8000 0.0000 0.000 0.000 0.000"
-							value3 = "4.0000 1.00000 0.0000 0.000 0.000 0.000"
-						}
-						_system_properties = 
-						{
 							display_group = "advanced"
-							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.use_baked_occlusion"
 						}
 					}
 					use_world_position = 
@@ -249,100 +429,6 @@
 							property_group = "Position"
 						}
 					}
-					vsnd_pause_with_game = 
-					{
-						data_type = "bool"
-						value = "true"
-					}
-					self_destruct_time = 
-					{
-						data_type = "float"
-						value = "-1"
-						_system_properties = 
-						{
-							display_group = "normal"
-						}
-					}
-					block_matching_events = 
-					{
-						data_type = "bool"
-						value = "true"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "block:Block Events"
-						}
-					}
-					block_match_entity = 
-					{
-						data_type = "bool"
-						value = "true"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "block:Block Events"
-						}
-					}
-					block_duration = 
-					{
-						data_type = "float"
-						value = "0.010000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "block:Block Events"
-						}
-					}
-					block_distance = 
-					{
-						data_type = "float"
-						value = "12.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "block:Block Events"
-						}
-					}
-					block_other = 
-					{
-						data_type = "bool"
-						value = "false"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "block:Block Other Events"
-						}
-					}
-					block_other_name = 
-					{
-						data_type = "string"
-						value = ""
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "block:Block Other Events"
-						}
-					}
-					block_other_distance = 
-					{
-						data_type = "float"
-						value = "0.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "block:Block Other Events"
-						}
-					}
-					block_other_duration = 
-					{
-						data_type = "float"
-						value = "0.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "block:Block Other Events"
-						}
-					}
 					distance_multiplier = 
 					{
 						data_type = "float"
@@ -351,115 +437,6 @@
 						{
 							display_group = "normal"
 							property_group = "Position"
-						}
-					}
-					attachment = 
-					{
-						data_type = "string_token"
-						value = ""
-						_system_properties = 
-						{
-							display_group = "locked"
-						}
-					}
-					use_doppler = 
-					{
-						data_type = "bool"
-						value = "false"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Doppler"
-						}
-					}
-					doppler_factor = 
-					{
-						data_type = "float"
-						value = "1.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Doppler"
-						}
-					}
-					doppler_factor_receding = 
-					{
-						data_type = "float"
-						value = "1.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Doppler"
-						}
-					}
-					reverb_wet = 
-					{
-						data_type = "float"
-						value = "0.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Reverb"
-						}
-					}
-					reverb_source_wet = 
-					{
-						data_type = "float"
-						value = "1.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Reverb"
-						}
-					}
-					override_dsp_preset = 
-					{
-						data_type = "bool"
-						value = "false"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Reverb"
-						}
-					}
-					dsp_preset = 
-					{
-						data_type = "dsppreset"
-						value = ""
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Reverb"
-						}
-					}
-					dsp_bypass = 
-					{
-						data_type = "float"
-						value = "0.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Player DSP"
-						}
-					}
-					dsp_blend = 
-					{
-						data_type = "float"
-						value = "-1.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Player DSP"
-						}
-					}
-					ducking_bypass = 
-					{
-						data_type = "float"
-						value = "0.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Player DSP"
 						}
 					}
 					randomize_position_min_radius = 
@@ -492,43 +469,43 @@
 							property_group = "Position"
 						}
 					}
-					occlusion_intensity = 
+					attachment = 
 					{
-						data_type = "float"
-						value = "0.000000"
+						data_type = "string_token"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "locked"
+							property_group = "Position"
+						}
+					}
+					vsnd_pause_with_game = 
+					{
+						data_type = "bool"
+						value = "true"
+						_system_properties = 
+						{
+							property_group = "Gameplay"
+						}
+					}
+					display_broadcast = 
+					{
+						data_type = "bool"
+						value = "false"
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Reverb"
+							property_group = "Gameplay"
 						}
 					}
-					occlusion_interval = 
+					broadcast_distance_override = 
 					{
 						data_type = "float"
-						value = "1.000000"
+						value = "0"
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Reverb"
-						}
-					}
-					occlusion_frequency_scale = 
-					{
-						data_type = "float"
-						value = "1.000000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Reverb"
-						}
-					}
-					metadata = 
-					{
-						data_type = "string"
-						soundevent_data = "true"
-						value = 
-						{
-							value = "meta"
+							property_group = "Gameplay"
 						}
 					}
 					relevant_player = 
@@ -537,57 +514,8 @@
 						value = "-1"
 						_system_properties = 
 						{
-							display_group = "advanced"
-						}
-					}
-					distance_effect_mix = 
-					{
-						data_type = "float"
-						value = "1.000000"
-						_system_properties = 
-						{
 							display_group = "normal"
-							property_group = "Position"
-						}
-					}
-					restrict_source_reverb = 
-					{
-						data_type = "bool"
-						value = "false"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Reverb"
-						}
-					}
-					voice_fade_out_time = 
-					{
-						data_type = "float"
-						value = "0.200000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Voice Management"
-						}
-					}
-					voice_culling_threshold = 
-					{
-						data_type = "float"
-						value = "0.001000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Voice Management"
-						}
-					}
-					voice_looped_culling_update_time = 
-					{
-						data_type = "float"
-						value = "0.500000"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Voice Management"
+							property_group = "Gameplay"
 						}
 					}
 					enable_retrigger = 
@@ -640,129 +568,295 @@
 							property_group = "Retrigger"
 						}
 					}
-					distance_volume_mapping_curve = 
+					instance_limit = 
 					{
-						data_type = "float6"
-						soundevent_data = "true"
-						value = 
-						{
-							value1 = "[0.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-							value2 = "[150.000000,0.500000,0.000000,0.000000,2.000000,3.000000]"
-							value3 = "[300.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-						}
+						data_type = "float"
+						value = "0"
 						_system_properties = 
 						{
-							display_group = "advanced"
-							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.use_distance_volume_mapping_curve"
+							display_group = "normal"
+							property_group = "Voice Management"
 						}
 					}
-					use_distance_volume_mapping_curve = 
+					block_matching_events = 
 					{
 						data_type = "bool"
 						value = "true"
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Curves"
+							property_group = "Voice Management"
 						}
 					}
-					distance_unfiltered_stereo_mapping_curve = 
-					{
-						data_type = "float6"
-						soundevent_data = "true"
-						value = 
-						{
-							value1 = "[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-							value2 = "[150.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-							value3 = "[300.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-						}
-						_system_properties = 
-						{
-							display_group = "advanced"
-							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.use_distance_unfiltered_stereo_mapping_curve"
-						}
-					}
-					use_distance_unfiltered_stereo_mapping_curve = 
-					{
-						data_type = "bool"
-						value = "false"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Curves"
-						}
-					}
-					fadetime_volume_mapping_curve = 
-					{
-						data_type = "float6"
-						soundevent_data = "true"
-						value = 
-						{
-							value1 = "[0.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-							value2 = "[0.500000,0.500000,0.000000,0.000000,2.000000,3.000000]"
-							value3 = "[1.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-						}
-						_system_properties = 
-						{
-							display_group = "advanced"
-							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.use_fadetime_volume_mapping_curve"
-						}
-					}
-					use_fadetime_volume_mapping_curve = 
+					block_match_entity = 
 					{
 						data_type = "bool"
 						value = "true"
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Curves"
+							property_group = "Voice Management"
 						}
 					}
-					time_volume_mapping_curve = 
+					block_duration = 
 					{
-						data_type = "float6"
-						soundevent_data = "true"
-						value = 
-						{
-							value1 = "[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-							value2 = "[0.500000,0.500000,0.000000,0.000000,2.000000,3.000000]"
-							value3 = "[1.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-						}
+						data_type = "float"
+						value = "0.010000"
 						_system_properties = 
 						{
-							display_group = "advanced"
-							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.use_time_volume_mapping_curve"
+							display_group = "normal"
+							property_group = "Voice Management"
 						}
 					}
-					use_time_volume_mapping_curve = 
+					block_distance = 
+					{
+						data_type = "float"
+						value = "12.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Voice Management"
+						}
+					}
+					block_other = 
 					{
 						data_type = "bool"
 						value = "false"
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Curves"
+							property_group = "Voice Management"
 						}
 					}
-					impact_speed_input_volume_mapping_curve = 
+					block_other_name = 
+					{
+						data_type = "string"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Voice Management"
+						}
+					}
+					block_other_distance = 
+					{
+						data_type = "float"
+						value = "0.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Voice Management"
+						}
+					}
+					block_other_duration = 
+					{
+						data_type = "float"
+						value = "0.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Voice Management"
+						}
+					}
+					voice_fade_out_time = 
+					{
+						data_type = "float"
+						value = "0.200000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Voice Management"
+						}
+					}
+					voice_culling_threshold = 
+					{
+						data_type = "float"
+						value = "0.001000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Voice Management"
+						}
+					}
+					voice_looped_culling_update_time = 
+					{
+						data_type = "float"
+						value = "0.500000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Voice Management"
+						}
+					}
+					reverb_wet = 
+					{
+						data_type = "float"
+						value = "0.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Reverb"
+						}
+					}
+					reverb_source_wet = 
+					{
+						data_type = "float"
+						value = "1.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Reverb"
+						}
+					}
+					distance_effect_mix = 
+					{
+						data_type = "float"
+						value = "1.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Reverb"
+						}
+					}
+					override_dsp_preset = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Reverb"
+						}
+					}
+					dsp_preset = 
+					{
+						data_type = "dsppreset"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Reverb"
+						}
+					}
+					dsp_bypass = 
+					{
+						data_type = "float"
+						value = "0.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Reverb"
+						}
+					}
+					dsp_blend = 
+					{
+						data_type = "float"
+						value = "-1.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Reverb"
+						}
+					}
+					restrict_source_reverb = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Reverb"
+						}
+					}
+					occlusion_intensity = 
+					{
+						data_type = "float"
+						value = "0.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Occlusion"
+						}
+					}
+					occlusion_interval = 
+					{
+						data_type = "float"
+						value = "1.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Occlusion"
+						}
+					}
+					occlusion_frequency_scale = 
+					{
+						data_type = "float"
+						value = "1.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Occlusion"
+						}
+					}
+					use_baked_occlusion = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							property_group = "Occlusion"
+						}
+					}
+					occlusion_path_curve = 
 					{
 						data_type = "float6"
 						soundevent_data = "true"
-						value = 
-						{
-							value1 = "[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-							value2 = "[0.500000,0.500000,0.000000,0.000000,2.000000,3.000000]"
-							value3 = "[1.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-						}
+						value = ""
 						_system_properties = 
 						{
-							display_group = "advanced"
+							display_group = "normal"
 							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.use_impact_speed_input_volume_mapping_curve"
+							display_edit_flag = "public.use_baked_occlusion"
+							property_group = "Occlusion"
+						}
+					}
+					use_doppler = 
+					{
+						data_type = "bool"
+						value = "false"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Doppler"
+						}
+					}
+					doppler_factor = 
+					{
+						data_type = "float"
+						value = "1.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Doppler"
+						}
+					}
+					doppler_factor_receding = 
+					{
+						data_type = "float"
+						value = "1.000000"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Doppler"
+						}
+					}
+					impact_speed_input = 
+					{
+						value = "1.000000"
+						data_type = "float"
+						_system_properties = 
+						{
+							property_group = "Physics"
 						}
 					}
 					use_impact_speed_input_volume_mapping_curve = 
@@ -772,61 +866,73 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Curves"
+							property_group = "Physics"
 						}
 					}
-					distance_pitch_mapping_curve = 
+					impact_speed_input_volume_mapping_curve = 
 					{
 						data_type = "float6"
 						soundevent_data = "true"
-						value = 
-						{
-							value1 = "[0.000000,0.800000,0.000000,0.000000,2.000000,3.000000]"
-							value2 = "[150.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-							value3 = "[300.000000,1.200000,0.000000,0.000000,2.000000,3.000000]"
-						}
+						value = ""
 						_system_properties = 
 						{
-							display_group = "advanced"
+							display_group = "normal"
 							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.use_distance_pitch_mapping_curve"
+							display_edit_flag = "public.use_impact_speed_input_volume_mapping_curve"
+							property_group = "Physics"
 						}
 					}
-					use_distance_pitch_mapping_curve = 
+					use_velocity_volume_curve = 
 					{
 						data_type = "bool"
 						value = "false"
 						_system_properties = 
 						{
-							display_group = "normal"
-							property_group = "Curves"
+							property_group = "Physics"
 						}
 					}
-					time_unfiltered_stereo_mapping_curve = 
+					velocity_magnitude = 
+					{
+						data_type = "float"
+						value = "0"
+						_system_properties = 
+						{
+							property_group = "Physics"
+						}
+					}
+					velocity_volume_seek_speed = 
+					{
+						data_type = "float"
+						value = "100"
+						_system_properties = 
+						{
+							property_group = "Physics"
+						}
+					}
+					velocity_volume_curve = 
 					{
 						data_type = "float6"
 						soundevent_data = "true"
-						value = 
-						{
-							value1 = "[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-							value2 = "[2.500000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-							value3 = "[5.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-						}
-						_system_properties = 
-						{
-							display_group = "advanced"
-							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.use_time_unfiltered_stereo_mapping_curve"
-						}
-					}
-					use_time_unfiltered_stereo_mapping_curve = 
-					{
-						data_type = "bool"
-						value = "false"
+						value = ""
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Curves"
+							display_edit_type = "field_curve_2d_editor"
+							display_edit_flag = "public.use_velocity_volume_curve"
+							property_group = "Physics"
+						}
+					}
+					metadata = 
+					{
+						data_type = "string"
+						soundevent_data = "true"
+						value = 
+						{
+							value = "meta"
+						}
+						_system_properties = 
+						{
+							property_group = "Tags"
 						}
 					}
 					use_volume_convar = 
@@ -836,7 +942,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Sound Events"
+							property_group = "Convar"
 						}
 					}
 					volume_convar = 
@@ -846,89 +952,135 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Sound Events"
+							property_group = "Convar"
 						}
 					}
-					set_mixlayer_amount_enable = 
+					input_field1 = 
 					{
-						data_type = "bool"
-						value = "false"
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Mixlayer"
-						}
-					}
-					set_mixlayer_layer = 
-					{
-						data_type = "string"
-						value = ""
-						_system_properties = 
-						{
-							display_group = "normal"
-							property_group = "Mixlayer"
-						}
-					}
-					time_mixlayer_amount_curve = 
-					{
-						data_type = "float6"
-						soundevent_data = "true"
-						value = 
-						{
-							value1 = "[0.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-							value2 = "[1.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-							value3 = "[2.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-						}
+						value = "0.0"
+						data_type = "float"
 						_system_properties = 
 						{
 							display_group = "advanced"
-							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.set_mixlayer_amount_enable"
 						}
 					}
-					use_velocity_volume_curve = 
+					input_field2 = 
 					{
-						data_type = "bool"
-						value = "false"
-						_system_properties = 
-						{
-							property_group = "Position"
-						}
-					}
-					velocity_magnitude = 
-					{
+						value = "0.0"
 						data_type = "float"
-						value = "0"
-						_system_properties = 
-						{
-							property_group = "Position"
-						}
-					}
-					velocity_volume_seek_speed = 
-					{
-						data_type = "float"
-						value = "100"
-						_system_properties = 
-						{
-							property_group = "Position"
-						}
-					}
-					velocity_volume_curve = 
-					{
-						data_type = "float6"
-						soundevent_data = "true"
-						value = 
-						{
-							value1 = "[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-							value2 = "[150.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
-							value3 = "[300.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
-						}
 						_system_properties = 
 						{
 							display_group = "advanced"
-							display_edit_type = "field_curve_2d_editor"
-							display_edit_flag = "public.use_velocity_volume_curve"
 						}
+					}
+					input_field3 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field4 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field5 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field6 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field7 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field8 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field9 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field10 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field11 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field12 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field13 = 
+					{
+						value = "0.0"
+						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					input_field14 = 
+					{
+						value = "0.0"
+						data_type = "float"
+					}
+					input_field15 = 
+					{
+						value = "0.0"
+						data_type = "float"
 					}
 				}
 			},
@@ -2273,7 +2425,7 @@
 			public = 
 			{
 				x = -1460.0
-				y = 1550.0
+				y = 1540.0
 			}
 			mixer = 
 			{

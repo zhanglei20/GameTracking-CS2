@@ -85,7 +85,7 @@
 2\vp8
 4\f%44
 8@HPX
-8CP-
+8Cp-
 8Csin
 9>pow
 <?xml version="1.0" encoding="UTF-8"?>\n
@@ -104,9 +104,9 @@
 ?exp
 @(\fEtobitDbnotEbswapFlshift
 @BXV
+@bPC
 @not enough memory
 Arg list too long
-Attempted to ConvertToCopiedData for unsupported type (%d)\n
 Audits.
 B\fp\v0
 Bad address
@@ -126,7 +126,7 @@ CLuaVM::HandleError
 CLuaVM::Lua_AtPanic
 COMSPEC
 CSS.
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned __int64,int,class CDefEquals<unsigned __int64>,struct HashMapFunctor_t<unsigned __int64>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned __int64,int,class CDefEquals<unsigned __int64>,struct HashMapFunctor_t<unsigned __int64>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned __int64,int,class CDefEquals<unsigned __int64>,struct DefaultHashFunctor<unsigned __int64>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned __int64,int,class CDefEquals<unsigned __int64>,struct DefaultHashFunctor<unsigned __int64>,int>::HashBucket_t,int>::AddMultipleToTail
 Cabs
 Can't call %s:%s on an object of type %s
 Cannot recover from failed socket shutdown. (error %d)
@@ -274,6 +274,7 @@ No free conversion of %s variant to %s right now\n
 No function binding found!
 No local named '%s'
 No locks available
+No script available to set URL breakpoint at %s:%u
 No space left on device
 No such device
 No such device or address
@@ -324,6 +325,7 @@ Runtime.executionContextCreated
 SQpq
 SSSSSSSS
 Script Runtime Error: %s\n
+Script instance being removed with corrupted internal table state. Bailing to avoid memory corruption.
 Script load error for script:\n %s\n
 Script load error for script\n %s: \n%s\n
 Script_Msg
@@ -571,6 +573,7 @@ _wprintf_p_l
 _wprintf_s_l
 _wscanf_l
 _wscanf_s_l
+`bPC
 `hpB
 abort
 accessorPropertiesOnly
@@ -837,7 +840,6 @@ name conflict for module '%s'
 namewhat
 newValue
 newproxy
-next
 nil or table expected
 nkeys
 no calling environment
@@ -862,6 +864,7 @@ path too long
 pattern too complex
 perform arithmetic on
 permessage-deflate
+pl K
 popen
 preload
 printf

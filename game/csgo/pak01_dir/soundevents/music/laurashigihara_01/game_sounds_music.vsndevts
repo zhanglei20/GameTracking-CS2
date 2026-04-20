@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/laurashigihara_01/mainmenu.vsnd"
+		vsnd_duration = 142.96817
 	}
 	Music.MVPPreview.laurashigihara_01 = 
 	{
@@ -14,7 +15,11 @@
 		volume = 0.8
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
-		vsnd_files = "sounds/music/laurashigihara_01/roundmvpanthem_01.vsnd"
+		vsnd_files = 
+		[
+			"sounds/music/laurashigihara_01/roundmvpanthem_01.vsnd",
+		]
+		vsnd_duration = 7.732245
 	}
 	Music.Selection.laurashigihara_01 = 
 	{
@@ -27,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/laurashigihara_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 23.823673
 	}
 	Music.MatchFound.laurashigihara_01 = 
 	{
@@ -72,6 +78,7 @@
 			2.88, 4.8, 6.72, 8.64,
 			10.56, 12.48, 14.44,
 		]
+		vsnd_duration = 18.311836
 	}
 	Music.LoadingScreen.laurashigihara_01 = 
 	{
@@ -101,6 +108,7 @@
 			"sounds/music/laurashigihara_01/startaction_02.vsnd",
 			"sounds/music/laurashigihara_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 18.311836
 	}
 	Music.StartRound.laurashigihara_01 = 
 	{
@@ -147,6 +155,7 @@
 			2.88, 4.8, 6.72, 8.64,
 			10.56, 12.48, 14.44,
 		]
+		vsnd_duration = 18.311836
 	}
 	Music.StartAction.laurashigihara_01 = 
 	{
@@ -178,6 +187,7 @@
 			"sounds/music/laurashigihara_01/startaction_02.vsnd",
 			"sounds/music/laurashigihara_01/startaction_03.vsnd",
 		]
+		vsnd_duration = 18.311836
 	}
 	Music.StartRound_GG.laurashigihara_01 = 
 	{
@@ -225,6 +235,7 @@
 			2.88, 4.8, 6.72, 8.64,
 			10.56, 12.48, 14.44,
 		]
+		vsnd_duration = 18.311836
 	}
 	Music.BombPlanted.laurashigihara_01 = 
 	{
@@ -247,6 +258,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 39.575512
 	}
 	Music.BombTenSecCount.laurashigihara_01 = 
 	{
@@ -265,6 +277,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.866939
 	}
 	Music.GotHostage.laurashigihara_01 = 
 	{
@@ -289,6 +302,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 39.575512
 	}
 	Music.HostageNearRescue.laurashigihara_01 = 
 	{
@@ -311,6 +325,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.866939
 	}
 	Music.TenSecCount.laurashigihara_01 = 
 	{
@@ -332,6 +347,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.866939
 	}
 	Music.WonRound.laurashigihara_01 = 
 	{
@@ -356,6 +372,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 7.732245
 	}
 	Music.LostRound.laurashigihara_01 = 
 	{
@@ -380,6 +397,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 7.732245
 	}
 	Music.DeathCam.laurashigihara_01 = 
 	{
@@ -392,6 +410,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 6.530612
 	}
 	Music.MVPAnthem.laurashigihara_01 = 
 	{
@@ -418,6 +449,7 @@
 		[
 			"sounds/music/laurashigihara_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 7.732245
 	}
 	Music.MatchStart.laurashigihara_01 = 
 	{
@@ -433,6 +465,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/laurashigihara_01/startofmatch.vsnd"
+		vsnd_duration = 7.399818
 	}
 	Music.MatchEnd.laurashigihara_01 = 
 	{
@@ -454,6 +487,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 46.142742
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }

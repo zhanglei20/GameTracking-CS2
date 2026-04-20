@@ -63,7 +63,7 @@ VS
 	    float _Globals_1_g_flProxyScale : packoffset(c0);
 	};
 	
-	cbuffer StencilProxyConstantBuffer_t : register(b4, space0)
+	cbuffer StencilProxyConstantBuffer_t : register(b3, space0)
 	{
 	    _1281 StencilProxyConstantBuffer_t_1_m0 : packoffset(c0);
 	};

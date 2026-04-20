@@ -1,4 +1,4 @@
-class C_CSGO_PreviewModel : public C_BaseFlex
+class C_CSGO_PreviewModel : public CBaseAnimGraph
 {
 	CUtlString m_defaultAnim;
 	AnimLoopMode_t m_nDefaultAnimLoopMode;

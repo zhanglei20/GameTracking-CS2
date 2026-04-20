@@ -28,6 +28,7 @@
  T;6P/Arc
  Version %s %d Embedded Chunk %d : %d Hashes %d Chunks %d \n
  Xia
+ \tV_ferror
  ^LXjt
  _GDK\tZ
  characters
@@ -76,7 +77,6 @@
 #P0_?G0
 #Q7z
 #\t#\v#'#)#/#3#5#E#Q#S#Y#c#k#
-#\tV_fseek
 #\v+(bF&drJ:x#
 #k+ka\T
 #lyj
@@ -91,7 +91,6 @@ $HypYkf
 $J6"t
 $JXsZ
 $XI(6
-$\tV_fseeki64
 $d`D-laM
 $f;Zv9l\r
 $g#8lu#
@@ -189,7 +188,6 @@ $hRh
 &AK(h
 &V6J
 &Ylb
-&\tV_ftelli64
 '()+,-./:=?
 '5'7'M'S'U'_'k'm's'w'
 '6J~U\fm
@@ -282,6 +280,7 @@ $hRh
 -DBF
 -U`5K
 -\6G5
+-\tV_fread
 -l34
 -mB:t
 -~T\viMOb
@@ -667,6 +666,7 @@ $hRh
 2Zq)
 2\fWQx
 2\rlhp
+2\tV_fseek
 2^pV
 2a"l
 2bT~
@@ -685,6 +685,7 @@ $hRh
 3Ej%Tb
 3M5cWAK
 3Wk1^
+3\tV_fseeki64
 3\v;8BJ\nH
 3icq
 3ja~
@@ -714,6 +715,7 @@ $hRh
 5A10K
 5EwO
 5N{j
+5\tV_ftelli64
 5\vFuo
 5b!g
 5dO7
@@ -1101,7 +1103,6 @@ Any Extended Key Usage
 Any Purpose
 Any language
 Arg list too long
-AssertFatalCast
 AsyncFileSystem2: io threads changed %i -> %i
 AsyncFilesystem Callback
 AsyncFilesystem Read
@@ -2362,6 +2363,7 @@ I\tHA\t981G'dc
 Ij)s
 Ik\f`dub`D
 Illegal byte sequence
+Impl::AssertCastImpl
 Improper link
 Inappropriate I/O control operation
 Independent
@@ -3314,7 +3316,6 @@ Signature failed for %s (reason: %d)\n
 Signature verification failed.
 Signature verified for %s.\n
 Sn^G
-SortKey_t
 Sr89[
 Stack part of OpenSSL 1.0.2j  26 Sep 2016
 Strong Extranet ID
@@ -3782,7 +3783,6 @@ Z~wl
 \W%08lX
 \Y|W2
 \\MVT
-\\tV_setvbuf
 \f%\f/\f1\fA\f[\f_\fa\fm\fs\fw\f
 \f7ig
 \f<<0A1pq
@@ -3838,8 +3838,7 @@ Z~wl
 \tHAI8xpH\f
 \tJm_9
 \tLa0+
-\tV_ferror
-\tV_fread
+\tV_strtoui64
 \tV_tmpnam
 \toRE
 \ttqE5
@@ -4379,7 +4378,6 @@ could not obtain hardware handle
 could not set engine
 could not set time
 could not unload the shared library
-counter
 counter:
 countersignature
 countryName
@@ -5573,6 +5571,7 @@ l7@J
 lC57
 lDcW
 lM2p
+l\tV_setvbuf
 language
 last octet invalid
 lastModifiedBy
@@ -5965,6 +5964,7 @@ operation not defined
 operation not supported for this keytype
 operation not supported on this type
 operaton not initialized
+operator short
 optionalSignature
 orOF
 order
@@ -7151,7 +7151,6 @@ wQ0"
 wR\fe3c
 wRlb.
 wY[K,
-w\tV_strtoui64
 w_5&#R4
 wap-wsg
 wap-wsg-idm-ecid-wtls1

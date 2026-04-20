@@ -145,6 +145,7 @@ var MainMenu;
         }
         InspectModelImage.DisableItemLighting(elMapPanel);
         _SetCSMSplitPlane0DistanceOverride(elMapPanel, backgroundMap);
+        _SetBarnlightShadowScaleOverride(elMapPanel, backgroundMap);
         return elMapPanel;
     }
     function _SetCSMSplitPlane0DistanceOverride(elPanel, backgroundMap) {
@@ -178,6 +179,18 @@ var MainMenu;
         }
         if (flSplitPlane0Distance > 0.0) {
             elPanel.SetCSMSplitPlane0DistanceOverride(flSplitPlane0Distance);
+        }
+    }
+    function _SetBarnlightShadowScaleOverride(elPanel, backgroundMap) {
+        let flBarnlightShadowScale = 4.0;
+        if (backgroundMap === 'warehouse_vanity') {
+            flBarnlightShadowScale = 1.0;
+        }
+        else if (backgroundMap === 'de_train_vanity') {
+            flBarnlightShadowScale = 1.0;
+        }
+        if (flBarnlightShadowScale > 0.0) {
+            elPanel.SetBarnlightShadowScaleOverride(flBarnlightShadowScale);
         }
     }
     let m_backgroundMapSoundHandle = null;
@@ -233,6 +246,7 @@ var MainMenu;
             _m_bPreLoadedTabs = true;
         }
         _ResetAnnotationsDropDown();
+        _UpdateBackgroundMap();
     }
     function _TournamentDraftUpdate() {
         if (!m_TournamentPickBanPopup || !m_TournamentPickBanPopup.IsValid()) {

@@ -3026,4 +3026,165 @@
 		]
 	}
 	_auto_calc_vnsd_duration_ = false
+	shoots.TeamSelect = 
+	{
+		type = "csgo_mega"
+		mixgroup = "Shoots"
+		volume = 1.0
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_min = 0.0
+		enable_retrigger = false
+		retrigger_interval_min = 0.0
+		retrigger_interval_max = 0.0
+		randomize_position_min_radius = 0.0
+		randomize_position_max_radius = 0.0
+		use_time_volume_mapping_curve = true
+		enable_child_events = true
+		dsp_preset = "reverb_21_outsideStreet"
+		set_child_position = false
+		override_dsp_preset = true
+		distance_effect_mix = 0.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 1.417088,
+				2.0, 1.0,
+			],
+			[
+				0.323186, 0.457983, 0.450868, 0.450868,
+				1.0, 1.0,
+			],
+			[
+				2.217943, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		soundevent_01 = 
+		[
+			"shoots.Outdoors.Amb",
+			"shoots.Outdoors.Amb2",
+			"shoots.Outdoors.Birds",
+			"shoots.Outdoors.Thunder",
+			"shoots.Cockatoo",
+			"shoots.Mid.WaterGush",
+			"shoots.Outdoors.CricketBed",
+			"shoots.Mid.WaterGutter",
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				0.614939, 0.75641, -0.533563, -0.533563,
+				3.0, 1.0,
+			],
+			[
+				1.465714, 0.217949, -0.317145, -0.317145,
+				1.0, 1.0,
+			],
+			[
+				3.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	shoots.TeamSelect_night = 
+	{
+		type = "csgo_mega"
+		mixgroup = "Shoots"
+		volume = 1.0
+		volume_random_min = 0.0
+		volume_random_max = 0.0
+		pitch_random_min = 0.0
+		enable_retrigger = false
+		retrigger_interval_min = 0.0
+		retrigger_interval_max = 0.0
+		randomize_position_min_radius = 0.0
+		randomize_position_max_radius = 0.0
+		use_time_volume_mapping_curve = true
+		enable_child_events = true
+		dsp_preset = "reverb_21_outsideStreet"
+		set_child_position = false
+		override_dsp_preset = true
+		distance_effect_mix = 0.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 1.417088,
+				2.0, 1.0,
+			],
+			[
+				0.323186, 0.457983, 0.450868, 0.450868,
+				1.0, 1.0,
+			],
+			[
+				2.217943, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				0.614939, 0.75641, -0.533563, -0.533563,
+				3.0, 1.0,
+			],
+			[
+				1.465714, 0.217949, -0.317145, -0.317145,
+				1.0, 1.0,
+			],
+			[
+				3.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		soundevent_01 = 
+		[
+			"shoots.Outdoors.Amb2_night",
+			"shoots.Outdoors.Birds_night",
+			"shoots.Outdoors.Thunder",
+			"shoots.Cockatoo",
+			"shoots.Mid.WaterGush",
+			"shoots.Outdoors.Cricket_night",
+			"shoots.Mid.WaterGutter",
+			"shoots.Outdoors.Amb_rain",
+			"shoots.tinroof_rain",
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
 }

@@ -36,9 +36,9 @@ var CharacterAnims;
             settings.model = ItemInfo.GetModelPlayer(settings.charItemId);
             if (!settings.model) {
                 if (settings.team == 'ct')
-                    settings.model = "models/player/ctm_sas.vmdl";
+                    settings.model = "agents/models/ctm_sas/ctm_sas.vmdl";
                 else
-                    settings.model = "models/player/tm_phoenix.vmdl";
+                    settings.model = "agents/models/tm_phoenix/tm_phoenix.vmdl";
             }
         }
         const wid = settings.weaponItemId;

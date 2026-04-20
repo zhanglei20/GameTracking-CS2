@@ -51,7 +51,7 @@
 			name = ""
 			group = "GameStartup"
 			source_file = "src/tools/toolscene/toolscene_sky.cpp"
-			source_line = 17
+			source_line = 16
 			resources = 
 			[
 				resource_name:"materials/tools/light_probe.vmat",
@@ -78,6 +78,17 @@
 				resource_name:"particles/dev/dev_preview_sequence_effect.vpcf",
 				resource_name:"particles/dev/dev_preview_sequence_alpha_effect.vpcf",
 				resource_name:"particles/dev/dev_preview_sequence_color_effect.vpcf",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/toolrenderutils/toolstandardmodels.cpp"
+			source_line = 18
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+				resource_name:"models/editor/camera.vmdl",
 			]
 		},
 		{

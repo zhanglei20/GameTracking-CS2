@@ -1791,7 +1791,6 @@ GetClipboardFormatNameW
 GetCursor
 GetCursorInfo
 GetCursorPos
-GetDC
 GetDeviceCaps
 GetDisplayAutoRotationPreferences
 GetDoubleClickTime
@@ -1812,7 +1811,6 @@ GetMonitorInfoW
 GetObjectW
 GetOpenFileNameW
 GetOutlineTextMetricsW
-GetParent
 GetPixelFormat
 GetPointerDeviceRects
 GetPointerFrameTouchInfo
@@ -2642,7 +2640,6 @@ RegisterTouchWindow() failed for window '%s'.
 RegisterWindowMessageW
 Registry
 ReleaseCapture
-ReleaseDC
 ReleaseStgMedium
 Releasing EGL display 
 Releasing automatic mouse capture 
@@ -2718,7 +2715,6 @@ Scaron
 Scaronsmall
 Scedilla
 Screen "
-ScreenToClient
 Segoe UI
 SelectClipRgn
 Semibold

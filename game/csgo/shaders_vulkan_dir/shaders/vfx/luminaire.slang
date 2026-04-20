@@ -95,7 +95,7 @@ VS
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space0)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space0)
 	{
 	    float4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c35);
 	};

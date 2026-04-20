@@ -1,9 +1,5 @@
-// MNetworkVarNames = "CAttributeContainer m_AttributeManager"
-// MNetworkVarNames = "bool m_jumpedThisFrame"
-// MNetworkVarNames = "CHandle< CCSPlayerPawn> m_leader"
 class CChicken : public CDynamicProp, public IHasAttributes
 {
-	// MNetworkEnable
 	CAttributeContainer m_AttributeManager;
 	CountdownTimer m_updateTimer;
 	Vector m_stuckAnchor;
@@ -20,9 +16,7 @@ class CChicken : public CDynamicProp, public IHasAttributes
 	CountdownTimer m_startleTimer;
 	CountdownTimer m_vocalizeTimer;
 	GameTime_t m_flWhenZombified;
-	// MNetworkEnable
 	bool m_jumpedThisFrame;
-	// MNetworkEnable
 	CHandle< CCSPlayerPawn > m_leader;
 	CountdownTimer m_reuseTimer;
 	bool m_hasBeenUsed;

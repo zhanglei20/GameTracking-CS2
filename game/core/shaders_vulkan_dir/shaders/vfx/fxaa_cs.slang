@@ -47,7 +47,7 @@ CS
 	
 	static float4 _6;
 	
-	cbuffer FxaaConstants_t : register(b2, space0)
+	cbuffer FxaaConstants_t : register(b1, space0)
 	{
 	    float FxaaConstants_t_1_m0 : packoffset(c0.z);
 	    float FxaaConstants_t_1_m1 : packoffset(c0.w);

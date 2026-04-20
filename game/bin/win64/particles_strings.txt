@@ -58,18 +58,17 @@ $SFXDetailBlendMode
 ,m_nStride=%d m_pData=%p )
 -1 for all asleep, 1 for all awake
 -BfF
-.?AUCableParticleRendererCollectionCache_t@@
-.?AUParticleRendererCollectionCache_t@@
-.?AUSpriteParticleRendererCollectionCache_t@@
-.?AUTrailParticleRendererCollectionCache_t@C_OP_RenderTrails@@
+.?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AV<lambda_1>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
 .?AV<lambda_1>@?1???$ScaleMatrix@$00VCVariableMatrix@@@MatrixMath@@YAXAEAVCVariableMatrix@@M@Z@
 .?AV<lambda_1>@?1??DrawBlobulatorImplicits@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MMAEBUConfig_t@2@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??DrawSoftObjectImplicits@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MMAEBUConfig_t@2@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??DrawSoftObjectImplicitsWithRadii@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MAEBUConfig_t@2@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??OnCreate@C_OP_ClientPhysics@@UEBAXPEAVCParticleCollection@@PEAX@Z@
-.?AV<lambda_1>@?1??Render@C_OP_RenderSprites@@UEBAXAEBUFunctionRenderingContext_t@@@Z@
-.?AV<lambda_1>@?4??CacheSpritecardVertexControlsCB@CBaseRendererSource2@@IEBAXAEBUFunctionRenderingContext_t@@MM@Z@
+.?AV<lambda_1>@?3??RenderBatchedCollections@CParticleCollection@@SAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@@Z@
+.?AV<lambda_1>@?4??GPUSimulateParticles@CParticleCollection@@QEAAXPEAVIRenderContext@@W4GPUSimulationStage@@@Z@
+.?AV<lambda_1>@?CE@??RenderSelfInternal@CParticleCollection@@AEAAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@@Z@
 .?AV<lambda_2>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
 .?AV<lambda_2>@?7??Operate@C_OP_VelocityMatchingForce@@UEBAXPEAVCParticleCollection@@MPEAX@Z@
 .?AV<lambda_2>@?8??AddForces@C_OP_IntraParticleForce@@UEBAXPEAVFourVectors@@PEAVCParticleCollection@@AEBV?$CUtlLocalStackArray@T__m128@@$00@@HMPEAX@Z@
@@ -273,6 +272,7 @@ $SFXDetailBlendMode
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_MovementRigidAttachToCP@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_MovementRotateParticleAroundAxis@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_MovementSkinnedPositionFromCPSnapshot@@@@
+.?AV?$CParticleFunctionDefinitionTyped@VC_OP_MultiSegmentDisplaySnapshotGenerator@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_Noise@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_NoiseEmitter@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_NormalLock@@@@
@@ -345,6 +345,7 @@ $SFXDetailBlendMode
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RemapTransformVisibilityToScalar@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RemapTransformVisibilityToVector@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RemapVectorComponentToScalar@@@@
+.?AV?$CParticleFunctionDefinitionTyped@VC_OP_RemapVectorToRotations@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RemapVectortoCP@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RemapVelocityToVector@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RemapVisibilityScalar@@@@
@@ -375,6 +376,7 @@ $SFXDetailBlendMode
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderTrails@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderTreeShake@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderVRHapticEvent@@@@
+.?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderVolumetricEmitter@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RepeatedTriggerChildGroup@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RestartAfterDuration@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RopeSpringConstraint@@@@
@@ -453,7 +455,7 @@ $SFXDetailBlendMode
 .?AV?$CTier2AppSystem@VIParticleSystemMgr@@$0A@@@
 .?AV?$CTier3AppSystem@VIParticleSystemMgr@@$0A@@@
 .?AV?$ISceneObjectDescBase@VCSceneParticleObject@@@@
-.?AV?$_Func_base@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAXUmonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAXUmonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
+.?AV?$_Func_base@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
 .?AV?$_Func_base@XHH@std@@
 .?AV?$_Func_base@XPEAVCRenderAttributes@@@std@@
 .?AV?$_Func_base@XPEAVIParticleCollection@@PEAX@std@@
@@ -464,8 +466,9 @@ $SFXDetailBlendMode
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??DrawSoftObjectImplicits@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MMAEBUConfig_t@3@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@XPEAVCRenderAttributes@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??DrawSoftObjectImplicitsWithRadii@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MAEBUConfig_t@3@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@XPEAVCRenderAttributes@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??OnCreate@C_OP_ClientPhysics@@UEBAXPEAVCParticleCollection@@PEAX@Z@XPEAVIParticleCollection@@PEAX@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??Render@C_OP_RenderSprites@@UEBAXAEBUFunctionRenderingContext_t@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAXUmonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAXUmonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??CacheSpritecardVertexControlsCB@CBaseRendererSource2@@IEBAXAEBUFunctionRenderingContext_t@@MM@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAXUmonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAXUmonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??RenderBatchedCollections@CParticleCollection@@SAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??GPUSimulateParticles@CParticleCollection@@QEAAXPEAVIRenderContext@@W4GPUSimulationStage@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?CE@??RenderSelfInternal@CParticleCollection@@AEAAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?7??Operate@C_OP_VelocityMatchingForce@@UEBAXPEAVCParticleCollection@@MPEAX@Z@XPEBUObjectPairCollisionList_t@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?8??AddForces@C_OP_IntraParticleForce@@UEBAXPEAVFourVectors@@PEAVCParticleCollection@@AEBV?$CUtlLocalStackArray@T__m128@@$00@@HMPEAX@Z@XPEBUObjectPairCollisionList_t@@@std@@
@@ -758,6 +761,7 @@ $SFXDetailBlendMode
 .?AVC_OP_MovementRigidAttachToCP@@
 .?AVC_OP_MovementRotateParticleAroundAxis@@
 .?AVC_OP_MovementSkinnedPositionFromCPSnapshot@@
+.?AVC_OP_MultiSegmentDisplaySnapshotGenerator@@
 .?AVC_OP_Noise@@
 .?AVC_OP_NoiseEmitter@@
 .?AVC_OP_NormalLock@@
@@ -833,6 +837,7 @@ $SFXDetailBlendMode
 .?AVC_OP_RemapTransformVisibilityToScalar@@
 .?AVC_OP_RemapTransformVisibilityToVector@@
 .?AVC_OP_RemapVectorComponentToScalar@@
+.?AVC_OP_RemapVectorToRotations@@
 .?AVC_OP_RemapVectortoCP@@
 .?AVC_OP_RemapVelocityToVector@@
 .?AVC_OP_RemapVisibilityScalar@@
@@ -865,6 +870,7 @@ $SFXDetailBlendMode
 .?AVC_OP_RenderTrails@@
 .?AVC_OP_RenderTreeShake@@
 .?AVC_OP_RenderVRHapticEvent@@
+.?AVC_OP_RenderVolumetricEmitter@@
 .?AVC_OP_RepeatedTriggerChildGroup@@
 .?AVC_OP_RestartAfterDuration@@
 .?AVC_OP_RopeSpringConstraint@@
@@ -956,18 +962,19 @@ $SFXDetailBlendMode
 .?AVISceneObjectListener@@
 .?AVISequence@@
 0=don't clear particle attrs at init 1=clear to zero 2=clear to 0xdb -1=clear to zero at first sim
-2\vpT
 33S@ff
 3E"F
 3E"W
 3E"g
 3L?Zb%
 4?Ku
+7?sk3mx>>*vn[9d
 8f?D
 :???;???;???3776>????/?/????7'7&>?????????
 ;1#INF
 <DEBUG-Only>
 <elt type not set>
+<nL4=
 <nL4=nL4=nL4=nL4=
 <none>\n
 <unimplemented>
@@ -1002,7 +1009,6 @@ Abs Float
 Abs Int
 Absolute value (float)
 Absolute value (int)
-Activate
 Activity %s has %d sequences with a total weight of %d!\n
 Add R%d <- R%d + R%d
 Add the array 'b' to the end of 'a'.
@@ -1016,6 +1022,7 @@ Alpha fade in random
 Alpha fade in simple
 Alpha fade out random
 Alpha fade out simple
+Always
 Amount of simulation time that can elapse before new systems start falling back to cheaper versions
 And R%d <- R%d && R%d
 Any Other Cursors Have Tag
@@ -1032,6 +1039,7 @@ Are we currently running unit tests?
 Array Append
 Array Concatenate
 Array Count
+Array Find Element Matching
 Array First N Elements
 Array Insert
 Array Remove Element Matching
@@ -1099,9 +1107,9 @@ CKV3MemberNameSet
 CKV3MemberNameWithStorage
 CONTENT ERROR: Unable to find %s '%s' in model '%s' referenced in particle system '%s'\n
 CP %d
+CParticleCollection::EvaluatePerFrameGPUSimulationState(3850): 
 CParticleCollection::GenerateSortedIndexList
 CParticleCollection::InitializeNewParticles
-CParticleCollection::InitializeParticleObjectCache
 CParticleCollection::SetControlPointOrientationFLU
 CParticleCollection::Term [%p]: %s\n
 CParticleCollection::~CParticleCollection [%p]\n
@@ -1121,6 +1129,7 @@ CPiecewiseCurve
 CPulseArraylib::ArrayAppend
 CPulseArraylib::ArrayConcatenate
 CPulseArraylib::ArrayCount
+CPulseArraylib::ArrayFindElementMatching
 CPulseArraylib::ArrayFirstNElements
 CPulseArraylib::ArrayInsert
 CPulseArraylib::ArrayRemoveElementMatching
@@ -1132,6 +1141,7 @@ CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
+CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
 CPulseCell_Inflow_EventHandler '%s' --> Chunk%d: %s
 CPulseCell_Inflow_GraphHook '%s' --> Chunk%d: %s
@@ -1157,7 +1167,6 @@ CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::KillThisCursorAndCancel
-CPulseCursorFuncs::KillThisCursorAndFail
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseMathlib::AbsFloat
@@ -1207,6 +1216,7 @@ CPulseMathlib::Pi
 CPulseMathlib::Pow
 CPulseMathlib::RSqrt
 CPulseMathlib::Rad2Deg
+CPulseMathlib::RandomWorldPosition
 CPulseMathlib::RemapClampedFloat
 CPulseMathlib::RoundFloat
 CPulseMathlib::Saturate
@@ -1224,6 +1234,7 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
+CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
@@ -1240,18 +1251,17 @@ CURVE_TANGENT_MIRROR
 CURVE_TANGENT_SINE
 CURVE_TANGENT_SPLINE
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CInstancedMeshSceneObject *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorBase<struct UtlLinkedListElem_t<enum UtlHashHandle_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
+CUtlLeanVectorBase<struct UtlLinkedListElem_t<struct RenderReadbackHandle_t__ *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPAssignment_t,int,class CMemAllocAllocator>,struct CPAssignment_t,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_InstructionDebug,int,class CMemAllocAllocator>,struct CPulse_InstructionDebug,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_RegisterInfo,int,class CMemAllocAllocator>,struct CPulse_RegisterInfo,int>::InsertBeforeGetPtr
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CKV3MemberName,class std::unique_ptr<class CModelHitBoxesInfo,struct std::default_delete<class CModelHitBoxesInfo> >,class CDefEquals<class CKV3MemberName>,struct HashMapFunctor_t<class CKV3MemberName>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CKV3MemberName,class std::unique_ptr<class CModelHitBoxesInfo,struct std::default_delete<class CModelHitBoxesInfo> >,class CDefEquals<class CKV3MemberName>,struct HashMapFunctor_t<class CKV3MemberName>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CDefEquals<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,struct HashMapFunctor_t<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CDefEquals<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,struct HashMapFunctor_t<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,int,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<int,int,class CDefEquals<int>,struct HashMapFunctor_t<int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CKV3MemberName,class std::unique_ptr<class CModelHitBoxesInfo,struct std::default_delete<class CModelHitBoxesInfo> >,class CDefEquals<class CKV3MemberName>,struct DefaultHashFunctor<class CKV3MemberName>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CKV3MemberName,class std::unique_ptr<class CModelHitBoxesInfo,struct std::default_delete<class CModelHitBoxesInfo> >,class CDefEquals<class CKV3MemberName>,struct DefaultHashFunctor<class CKV3MemberName>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CDefEquals<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,struct DefaultHashFunctor<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CDefEquals<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,struct DefaultHashFunctor<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,int,class CDefEquals<int>,struct DefaultHashFunctor<int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<int,int,class CDefEquals<int>,struct DefaultHashFunctor<int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct FloatInputMaterialVariable_t,int,class CMemAllocAllocator>,struct FloatInputMaterialVariable_t,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct PGDInstruction_t,int,class CMemAllocAllocator>,struct PGDInstruction_t,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct TextureGroup_t,int,class CMemAllocAllocator>,struct TextureGroup_t,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct VecInputMaterialVariable_t,int,class CMemAllocAllocator>,struct VecInputMaterialVariable_t,int>::InsertBeforeGetPtr
-CUtlRBTree<struct CUtlOrderedMapBase<struct std::pair<class CParticleCollection const *,class CParticleFunctionRenderer const *>,class std::unique_ptr<struct ParticleRendererCollectionCache_t,struct std::default_delete<struct ParticleRendererCollectionCache_t> >,class CDefLess<struct std::pair<class CParticleCollection const *,class CParticleFunctionRenderer const *> >,int>::Node_t,class CUtlOrderedMapBase<struct std::pair<class CParticleCollection const *,class CParticleFunctionRenderer const *>,class std::unique_ptr<struct ParticleRendererCollectionCache_t,struct std::default_delete<struct ParticleRendererCollectionCache_t> >,class CDefLess<struct std::pair<class CParticleCollection const *,class CParticleFunctionRenderer const *> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct std::pair<class CParticleCollection const *,class CParticleFunctionRenderer const *>,class std::unique_ptr<struct ParticleRendererCollectionCache_t,struct std::default_delete<struct ParticleRendererCollectionCache_t> >,class CDefLess<struct std::pair<class CParticleCollection const *,class CParticleFunctionRenderer const *> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlVectorFixedGrowable
 C_INIT_InitFromCPSnapshot: CP %d - No snapshot specified for %s!\n
 C_INIT_InitFromCPSnapshot: CP: %d - "%s" snapshot for %s has no data!\n
@@ -1313,6 +1323,7 @@ Convert radians (0-pi) to degrees (0-180)
 Copy 'element' to the end of 'a', increasing its count by one.
 Copy R%d <- R%d
 Cosine of angle. Input in radians, output in radians
+Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama.
 Cp to Radial direction of Screen Space
 Create External Particle Impulse
 Create and destroy N particle systems for every one created normally
@@ -1334,14 +1345,16 @@ Cursor Has Tag
 Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
 Cycle Scalar
-D\tV_log2f
 D_COMPRESSED_NORMALS_AND_TANGENTS
 D_DEBUG_STATS
 D_DEPTH_FEATHERING
+D_EXPLICIT_FETCH
+D_FORCE_LEGACY_SHADER_MODEL
+D_INITIALIZE_SYSTEM
 D_PANORAMA_PARTICLE
 D_PARTICLE_LDS_CACHE
 D_PER_PARTICLE_RADIUS
-D_SUPPORT_FRAME_CROP
+D_SUPPORTS_RAYTRACING
 D_VISUALIZE_ROUNDNESS
 Dampen Movement Relative to Plane
 Dampen Movement relative to model
@@ -1415,6 +1428,7 @@ F_PARTICLE_ORIENTATION
 F_PARTICLE_SHADOWS
 F_PER_PIXEL_LIGHTING
 F_REFRACT
+F_REFRACT_2_PASSES
 F_REFRACT_BLUR
 F_REFRACT_SOLID
 F_REVERSE_DEPTH
@@ -1431,6 +1445,7 @@ Failed to init snapshot data for resource '%s'\n
 FilterTaps_t
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find first element 'a' which compare equal to 'element' and return its index.
 FindParticleSystem
 Fixed "Animation Type" in Sprite Renderer not working for non-particle normal alignment types.\n
 Fixed "Inherit Attribute from Parent Particles" not keeping parent particles in sync with children.\n
@@ -1454,6 +1469,12 @@ Free
 Function "%s" not found while loading particle system\n
 GLOW_ALPHA
 GLOW_RGB
+GPU Particle Simulate
+GPU Particles InitialValues %s
+GPU Particles0 %s
+GPU Particles1 %s
+GPUParticleRequiredResources
+GPUSimulateSupportsRaytracing
 Game Blackboards: 
 Game Time To Float
 GameSupportsLegacyShaders
@@ -1508,7 +1529,6 @@ Indicates a test failure if value is false; only tested when running unit tests
 IndirectDrawArgs
 Inherit attribute from parent particle
 Inherit initial value from parent particle
-Init
 Init Collection [%p]: %s\n
 Init Collection: FAILED due to invalid particle system definition '%s'.\n
 Init Float
@@ -1538,12 +1558,10 @@ Is Valid Vector
 Is Valid World Vector
 IsoSurface
 Jump to Instr I%d
-KV3 save transfer failed: %s
 KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
 Kill This Cursor And Cancel
-Kill This Cursor And Fail
 LIFE_DURATION
 LONG PARTICLE RENDER: "%s" took %fms to submit to render.\n
 Lazily Cull on Float Comparison
@@ -1580,7 +1598,6 @@ LightmapUVW
 Lightning Snapshot Generator
 Limit debug visualizations to substring match of effect name
 Line length constraint
-LoadKV3ObjectInPlace error: %s\n
 Local acceleration force
 Lock a subsection of particles to control point
 Lock vector attribute to a list of values
@@ -1589,6 +1606,7 @@ Log2
 Ls?q
 MANUAL_ANIMATION_FRAME
 MAtomicTransfersAsPlainString
+MGPUParticleFunction
 MODEL_RENDER_HELPER_PTR
 MODEL_RENDER_HELPER_PTR_2
 MODEL_RENDER_HELPER_PTR_3
@@ -1678,6 +1696,7 @@ Movement set to control point
 Movement skin to bones
 Movement skin to bones rigid
 Mul R%d <- R%d * R%d
+Multi-Segment Display Snapshot Generator
 Multiplier for falling back to cheaper effects under load.
 NI>R
 NONE/Disabled
@@ -1712,7 +1731,6 @@ OnInterval
 Only wrote %d (of %d) values when saving map!
 Operator Name
 Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
-Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Or R%d <- R%d || R%d
 Oscillate scalar
@@ -1759,6 +1777,7 @@ Particles/Budget_ProfilePoint3US
 Particles/Budget_ProfilePoint4US
 Particles/Budget_RenderUS
 Particles/Budget_SimulationUS
+Particles/GPUParticles
 Particles/MixedResoluion/Slices
 Particles/ParticleTextureBaseSlot
 Particles/ParticleTraceOffsetOnlyHit
@@ -1820,6 +1839,7 @@ Q#Bg
 QAngle
 Quantize Float
 Quantize Float to Control Point Component
+Qx?33
 R Sqrt
 R?vlD>
 RADIUS
@@ -1830,7 +1850,6 @@ ROPE_SEGMENT_DATA
 ROPE_SEGMENT_ID
 ROTATION
 ROTATION_SPEED
-R\fpT
 Rad2 Deg
 Radius from CP object
 Radius scale
@@ -1839,6 +1858,7 @@ Ramp scalar linear random
 Ramp scalar linear simple
 Ramp scalar spline random
 Ramp scalar spline simple
+Random World Position
 Random force
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
 Reciprocoal square root (1/sqrt)
@@ -1857,6 +1877,7 @@ Remap Gravity To Vector
 Remap Hitbox Data to CP
 Remap QAngle in CP to rotations
 Remap Transform orientation to rotation
+Remap Vector to rotations
 Remap a transform to vector
 Remap and clamp input value from input range to output range (float)
 Remap control point direction to vector
@@ -1954,13 +1975,15 @@ Render sound
 Render sprite trail
 Render sprites
 Render standard light
-RenderOps_Init(14506): 
+Render volumetric smoke
+RenderOps_Init(15138): 
 RenderSimpleModelCollection is missing a model to render
 Repeatedly Trigger Child Group
 Restart effect after duration
 Return the number of elements in the array.
 Returns -1 or 0 or 1 based on the sign of the argument
 Returns -1.0 or 0.0 or 1.0 based on the sign of the argument
+Returns a random position centered on vCenter with random min and max radius
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (float)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (vector)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (world vector)
@@ -2104,9 +2127,7 @@ Split a Vector2D into component parts.
 Split a World Vector into component parts.
 Split an Angle into component parts.
 Spring to Vector constraint
-SpriteCardPixelCB
-SpriteCardVertexCB
-SpritecardVertexControls_t
+SpritecardRendererControls_t
 Sqr Float
 Sqr Int
 Sqrt
@@ -2118,15 +2139,19 @@ Stop effect after duration
 Stops all particle systems currently playing
 Stops all particle systems that don't match specified name
 Stops all particle systems that match specified name
+String Length
 Strings Are Equal Case Sensitive
-Sub Graph
 Sub R%d <- R%d - R%d
 System Name
+SystemParticlesIn
+SystemParticlesOut
 SystemStepSize
 Systems Measured: %d\n
 T>gaW?:]f?AHV>'
 TINT_RGB
 TRAIL_LENGTH
+T\sgPmx
+T\tV_log2f
 Tag Cursor
 Tag Self When Complete
 TanFrameQuat
@@ -2140,7 +2165,6 @@ TextureLayer3
 TextureLayer4
 The maximum detail level of particle to create
 The maximum distance that particles will render
-There should be no key duplication in the cache hashing scheme
 Threshold to warn about when rendering particles.
 Time since the start of the timer
 Time varying force
@@ -2167,7 +2191,6 @@ Use fixed seeds for easier debugging
 Use random seeds in debug
 Used to flag a test as having failed.
 User Event States
-V\tV_remainderf
 Value 0-1 how far along duration (always 0 if duration is -1)
 Variable '%s' is referenced but not declared in this system (%s). Adding a fallback now.\n
 Vector To World Vector
@@ -2214,16 +2237,20 @@ Z>wg}?0
 [IMMEDIATE_HALT]
 [INVALID]
 [NOP]
+[Ofm}
 [RETURN R%d]
 [RETURN]
 \fT>M-+?#gy?
 \n\n----------------------------\nInstance Count:\n
 \t%4d -  %s\n
+\tV_acosd
+\tV_asind
 \tV_cosd
+\tV_exp2f
+\tV_tand
+\t\tV_atand
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \tg_flConfigMaxCoord
-\v\tV_exp2f
-_\tV_sind
 __CursorQueue__
 __FireCursorsParent__
 __State_Child_Condition__
@@ -2231,6 +2258,7 @@ __State_Child_Subgraph__
 __TimelineParent__
 __procedural_colorgradient.vtex
 _procedural_particle_snapshot.vsnap
+_w|9^yq=v0
 a:fulltype
 a:typeparam
 alloc_particles
@@ -2261,6 +2289,7 @@ blendweights
 blob indirect draw
 blobulator
 body part
+bouncescale
 box_angles
 box_maxs
 box_mins
@@ -2271,7 +2300,6 @@ cable_tesselation_vb
 cable_tesselation_vb_meshlets
 cables.vfx
 cablevertices
-cache.Find( nKey ) == cache.InvalidIndex()
 can't solve quadratic for light %f %f\n
 cl_max_particle_pvs_aabb_edge_length
 cl_particle_create_duplicate_work_for_profiling
@@ -2290,6 +2318,7 @@ deg2rad
 densityVolume.InterpolatedVoxel( 0, Vector( 0.f, 0.f, 0.f ) )=%?
 domain_scope
 dumpparticlelist
+dynamicbounce
 element
 endFrame
 endTile
@@ -2297,6 +2326,7 @@ error.vpcf
 expected %s, got %s
 f>KZ}
 f?yu
+f\tV_remainderf
 fast
 features
 field_name
@@ -2308,6 +2338,8 @@ flFloat
 flFrac
 flInputA
 flInputB
+flMaxRadius
+flMinRadius
 flOutputA
 flOutputB
 flPercentage
@@ -2326,10 +2358,16 @@ flYaw
 float3
 force_scale
 frac
-frame_update
 g?Q1
 glow_alpha
 glow_rgb
+gpuparticles
+gpuparticles_definition
+gpuparticles_evaluators
+gpuparticles_functions
+gpuparticles_perframe
+gpuparticles_snapshot
+gpuparticles_uniqueindices
 h>4hp?
 hitbox
 hitbox_offset
@@ -2343,7 +2381,6 @@ implicit particles
 implicit vertices
 inherit attribute from peer particle systems
 internal error in particle system MapParticleOrientationIndexToShaderCombo()
-invalid string_view position
 invalid_hitbox
 is_selector
 itemgroups
@@ -2384,6 +2421,8 @@ m_nCurrentWakeIndex
 m_nGraphID
 m_szEffect
 manual_animation_frame
+materials/dev/gpu_particles_initialize.vmat
+materials/dev/gpu_particles_simulate.vmat
 materials/dev/implicit_surface.vmat
 materials/dev/roomwalls_white.vmat
 materials/dev/visualize_implicit.vmat
@@ -2407,6 +2446,8 @@ non_homogenous_forward_layer_only
 not obeying particle system stencil of failure to parse stencil comparison string %s\n
 not rendering particle system because of failure ot parse stencil write string %s\n
 num_particles
+o\tV_sind
+o\t\raHC
 opacity
 operators
 optionallycompressedtangentframe
@@ -2414,10 +2455,8 @@ p?33s?
 pCheckpointName
 pDescription
 pTagName
-particle.collection.name
 particle.collection_name
-particle.count
-particle.material.name
+particle.particle_count
 particle.renderer
 particle_id
 particle_layer_id_whitelist
@@ -2431,9 +2470,17 @@ particle_stop_all
 particle_stop_specified
 particle_stop_unspecified
 particle_system
+particlebatching.collection_count
+particlebatching.definition
+particlebatching.renderer
 particles.dll
 particles/dev/dev_cables_preview_material.vmat
 particles/error/error.vpcf
+particles_gpusim.collection
+particles_gpusim.execution_stage
+particles_gpusim.max_particles
+particles_gpusim.particles_emitted
+particles_gpusim.simulate_count
 particleslib
 particlesystemmgr
 point_1
@@ -2450,7 +2497,6 @@ pulse_runtime_lib
 pvec_color_black
 pvec_color_white
 quX?
-r\vpT
 r_draw_particle_children_with_parents
 r_drawparticles
 r_particle_allowprerender
@@ -2497,6 +2543,7 @@ r_particle_warn_threshold_ms
 r_particles_memset_at_init
 r_physics_particle_op_spawn_scale
 rad2deg
+random_position
 read attribute from neighboring particle
 remap
 remap vector component to scalar
@@ -2535,6 +2582,7 @@ spritecardparticlesnormal
 spritecardparticlestrail
 spritecardparticlestrailwithnormal
 spritecardtessvb
+strValue
 string_list
 systems
 t>vTU>
@@ -2560,9 +2608,9 @@ vecValue
 vecValueA
 vecValueB
 very_fast
+vn[90
 wH>r
 xn>8
 y?U0
 z>RegisterConCommand: Unknown error registering con command "%s"!\n
 zW>w
-z\tV_tand

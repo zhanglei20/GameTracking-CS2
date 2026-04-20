@@ -1712,7 +1712,6 @@ Reinit context to %dx%d, pix_fmt: %s\n
 RemotelyAnywhere Screen Capture
 Renderware TXD (TeXture Dictionary) image
 Replay Gain
-Reserved
 Reserved 17
 Reserved 18
 Reserved 22
@@ -2839,7 +2838,6 @@ bmv_audio
 bmv_video
 book_idx
 border_position non monotone.\n
-both
 bottom
 bottom coded first (swapped)
 bottom first

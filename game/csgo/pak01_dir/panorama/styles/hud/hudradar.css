@@ -745,7 +745,7 @@ CSGOHudRadar Label
 	height: 12px;
 	horizontal-align: center;
 	vertical-align: center;
-	img-shadow: 0px 0px 1px 2 #11111111;
+	img-shadow: 0px 0px 2px 2 black;
 }
 
 .PlantedBombAnimateRed

@@ -71,7 +71,7 @@ CS
 	    float _m16;
 	};
 	
-	cbuffer CullParams_t : register(b2, space0)
+	cbuffer CullParams_t : register(b1, space0)
 	{
 	    float CullParams_t_1_m0 : packoffset(c2.y);
 	    float CullParams_t_1_m1 : packoffset(c2.z);

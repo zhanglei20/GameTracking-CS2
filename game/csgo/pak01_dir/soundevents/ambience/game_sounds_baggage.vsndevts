@@ -24,7 +24,7 @@
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		override_dsp_preset = true
-		dsp_preset = "reverb_22_outsideOpen"
+		dsp_preset = "reverb_10_warehouse"
 		reverb_wet = 1.0
 		distance_effect_mix = 0.0
 		distance_volume_mapping_curve = 
@@ -34,7 +34,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				523.131653, 1.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -56,8 +56,11 @@
 		soundevent_01 = 
 		[
 			"baggage.main.metal",
-			"baggage.main.room1",
-			"baggage.main.room2",
+			"baggage.lowerlevel.room1",
+			"baggage.fan_SE",
+			"baggage.fan_nw",
+			"baggage.tspawn.announcer",
+			"baggage.ctspawn.airplanes",
 		]
 		fadetime_volume_mapping_curve = 
 		[
@@ -78,13 +81,14 @@
 				2.0, 3.0,
 			],
 		]
+		position = [ -204.675232, 474.710602, 212.072205 ]
 	}
 	baggage.main.room1 = 
 	{
 		type = "csgo_mega"
 		use_distance_unfiltered_stereo_mapping_curve = true
 		mixgroup = "Baggage"
-		volume = 0.0
+		volume = 0.1
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		reverb_wet = 1.0
@@ -160,7 +164,7 @@
 		type = "csgo_mega"
 		use_distance_unfiltered_stereo_mapping_curve = true
 		mixgroup = "Baggage"
-		volume = 0.1
+		volume = 0.02
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		reverb_wet = 1.0
@@ -319,7 +323,7 @@
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		override_dsp_preset = true
-		dsp_preset = "reverb_21_outsideStreet"
+		dsp_preset = "reverb_19_largeConcrete"
 		reverb_wet = 1.0
 		distance_effect_mix = 0.0
 		distance_volume_mapping_curve = 
@@ -351,8 +355,9 @@
 		soundevent_01 = 
 		[
 			"baggage.lowerlevel.metal",
-			"baggage.lowerlevel.room1",
-			"baggage.lowerlevel.room2",
+			"baggage.hallway_ct.room1",
+			"baggage.hallway_ct.room2",
+			"baggage.hallway_ct.room3",
 		]
 		fadetime_volume_mapping_curve = 
 		[
@@ -379,7 +384,7 @@
 		type = "csgo_mega"
 		use_distance_unfiltered_stereo_mapping_curve = true
 		mixgroup = "Baggage"
-		volume = 0.2
+		volume = 0.4
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		reverb_wet = 1.0
@@ -418,11 +423,11 @@
 		distance_unfiltered_stereo_mapping_curve = 
 		[
 			[
-				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.862408, 0.0, 0.0,
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.864865, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -614,7 +619,7 @@
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		override_dsp_preset = true
-		dsp_preset = "reverb_21_outsideStreet"
+		dsp_preset = "reverb_19_largeConcrete"
 		reverb_wet = 1.0
 		distance_effect_mix = 0.0
 		distance_volume_mapping_curve = 
@@ -646,8 +651,8 @@
 		soundevent_01 = 
 		[
 			"baggage.lowerlevel2.metal",
-			"baggage.lowerlevel2.room1",
-			"baggage.lowerlevel2.room2",
+			"baggage.main.room1",
+			"baggage.main.room2",
 		]
 		fadetime_volume_mapping_curve = 
 		[
@@ -909,7 +914,7 @@
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		override_dsp_preset = true
-		dsp_preset = "reverb_20_outsideAlley"
+		dsp_preset = "reverb_19_largeConcrete"
 		reverb_wet = 1.0
 		distance_effect_mix = 0.0
 		distance_volume_mapping_curve = 
@@ -940,9 +945,10 @@
 		]
 		soundevent_01 = 
 		[
-			"baggage.ctspawn.metal",
 			"baggage.ctspawn.room1",
-			"baggage.ctspawn.room2",
+			"baggage.fan_SE",
+			"baggage.ctspawn.airplanes",
+			"baggage.outside.Birds",
 		]
 		fadetime_volume_mapping_curve = 
 		[
@@ -951,15 +957,15 @@
 				2.0, 3.0,
 			],
 			[
-				0.285714, 0.816667, -1.072658, -1.072658,
+				0.285714, 0.816667, -0.576404, -0.576404,
 				3.0, 1.0,
 			],
 			[
-				0.691429, 0.258333, -0.618687, -0.618687,
+				1.163701, 0.329238, -0.300877, -0.300877,
 				1.0, 1.0,
 			],
 			[
-				1.605714, 0.0, 0.0, 0.0,
+				3.0, 0.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -1012,26 +1018,26 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.744472, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
 		fadetime_volume_mapping_curve = 
 		[
 			[
-				0.0, 1.0, 0.0, 0.0,
+				0.0, 1.0, -0.480585, -0.480585,
 				2.0, 3.0,
 			],
 			[
-				0.69, 0.695035, -0.531649, -0.531649,
+				0.519573, 0.63145, -0.603611, -0.603611,
 				3.0, 1.0,
 			],
 			[
-				1.334, 0.29078, -0.431699, -0.431699,
+				1.217082, 0.265356, -0.181429, -0.181429,
 				1.0, 1.0,
 			],
 			[
-				2.3, 0.0, 0.0, 0.0,
+				4.0, 0.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -1204,7 +1210,7 @@
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		override_dsp_preset = true
-		dsp_preset = "reverb_20_outsideAlley"
+		dsp_preset = "reverb_19_largeConcrete"
 		reverb_wet = 1.0
 		distance_effect_mix = 0.0
 		distance_volume_mapping_curve = 
@@ -1235,9 +1241,9 @@
 		]
 		soundevent_01 = 
 		[
-			"baggage.tspawn.metal",
 			"baggage.tspawn.room1",
-			"baggage.tspawn.room2",
+			"baggage.fan_nw",
+			"baggage.tspawn.announcer",
 		]
 		fadetime_volume_mapping_curve = 
 		[
@@ -1344,7 +1350,7 @@
 		type = "csgo_mega"
 		use_distance_unfiltered_stereo_mapping_curve = true
 		mixgroup = "Baggage"
-		volume = 0.2
+		volume = 0.4
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		reverb_wet = 1.0
@@ -1357,7 +1363,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.670846, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -1387,7 +1393,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.810811, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -1420,7 +1426,7 @@
 		type = "csgo_mega"
 		use_distance_unfiltered_stereo_mapping_curve = true
 		mixgroup = "Baggage"
-		volume = 0.15
+		volume = 0.1
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		reverb_wet = 1.0
@@ -1902,9 +1908,8 @@
 		soundevent_01 = 
 		[
 			"baggage.hallway_ct.metal",
-			"baggage.hallway_ct.room1",
-			"baggage.hallway_ct.room2",
-			"baggage.hallway_ct.room3",
+			"baggage.lowerlevel2.room1",
+			"baggage.lowerlevel2.room2",
 		]
 		fadetime_volume_mapping_curve = 
 		[
@@ -2275,6 +2280,7 @@
 			"baggage.hallway_01.metal",
 			"baggage.hallway_01.room1",
 			"baggage.hallway_01.room2",
+			"baggage.tspawn.announcer",
 		]
 		fadetime_volume_mapping_curve = 
 		[
@@ -2314,7 +2320,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.5086, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -2390,7 +2396,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.552826, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -2420,7 +2426,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.818182, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -3604,7 +3610,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.746929, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -3680,7 +3686,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.678133, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -3750,6 +3756,7 @@
 			"baggage.hallway_06.metal",
 			"baggage.hallway_06.room1",
 			"baggage.hallway_06.room2",
+			"baggage.tspawn.announcer",
 		]
 		fadetime_volume_mapping_curve = 
 		[
@@ -3899,7 +3906,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.488943, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -3975,7 +3982,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.515971, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -4489,7 +4496,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.776413, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -4565,7 +4572,7 @@
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.678133, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -5297,46 +5304,6 @@
 			"sounds/ambient/nuke/fan_03.vsnd",
 		]
 	}
-	baggage.fan_01 = 
-	{
-		type = "csgo_mega"
-		volume = 0.5
-		pitch = 1.0
-		use_distance_volume_mapping_curve = true
-		reverb_wet = 1.0
-		mixgroup = "Baggage"
-		distance_effect_mix = 0.0
-		distance_volume_mapping_curve = 
-		[
-			[
-				0.0, 1.0, 0.0, 0.0,
-				2.0, 3.0,
-			],
-			[
-				218.571426, 0.380753, -0.002, -0.002,
-				3.0, 1.0,
-			],
-			[
-				500.0, 0.0, 0.0, 0.0,
-				2.0, 3.0,
-			],
-		]
-		fadetime_volume_mapping_curve = 
-		[
-			[
-				0.0, 1.0, 0.0, 0.0,
-				2.0, 3.0,
-			],
-			[
-				1.0, 0.0, 0.0, 0.0,
-				2.0, 3.0,
-			],
-		]
-		vsnd_files_track_01 = 
-		[
-			"sounds/ambient/nuke/fan_03.vsnd",
-		]
-	}
 	baggage.outside.Wind = 
 	{
 		type = "csgo_mega"
@@ -5459,17 +5426,14 @@
 	{
 		type = "csgo_mega"
 		mixgroup = "Baggage"
-		volume_random_min = -0.9
-		volume_random_max = -0.8
+		volume_random_min = -0.3
+		volume_random_max = 0.0
 		enable_retrigger = true
-		retrigger_interval_min = 5.0
-		retrigger_interval_max = 20.0
+		retrigger_interval_min = 3.0
+		retrigger_interval_max = 10.0
 		use_distance_unfiltered_stereo_mapping_curve = false
-		randomize_position_min_radius = 0.0
-		randomize_position_max_radius = 0.0
 		retrigger_radius = 10000.0
 		reverb_wet = 1.0
-		distance_effect_mix = 0.0
 		distance_volume_mapping_curve = 
 		[
 			[
@@ -5477,11 +5441,11 @@
 				2.0, 3.0,
 			],
 			[
-				278.0, 0.292887, -0.001429, -0.001429,
+				708.185059, 0.4914, -0.0005, -0.0005,
 				3.0, 1.0,
 			],
 			[
-				700.0, 0.0, 0.0, 0.0,
+				2000.0, 0.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -5534,6 +5498,8 @@
 			"sounds/ambient/common/animal/bird8.vsnd",
 			"sounds/ambient/common/animal/bird9.vsnd",
 		]
+		position = [ 231.384583, -1947.636841, 192.213882 ]
+		volume = 0.3
 	}
 	baggage.conveyor_windup = 
 	{
@@ -5999,7 +5965,7 @@
 		use_time_volume_mapping_curve = true
 		set_child_position = false
 		override_dsp_preset = false
-		dsp_preset = "reverb_20_outsideAlley"
+		dsp_preset = "reverb_13_largeBright"
 		reverb_wet = 1.0
 		distance_effect_mix = 0.0
 		use_distance_unfiltered_stereo_mapping_curve = true
@@ -6055,6 +6021,9 @@
 		soundevent_01 = 
 		[
 			"baggage.chooseteam.conveyor",
+			"baggage.tspawn.announcer",
+			"baggage.tspawn.room1",
+			"baggage.fan_nw",
 		]
 		vsnd_files_track_01 = 
 		[
@@ -6298,16 +6267,20 @@
 		reverb_wet = 1.0
 		distance_effect_mix = 0.0
 		use_distance_unfiltered_stereo_mapping_curve = true
-		volume = 0.3
+		volume = 0.7
 		distance_volume_mapping_curve = 
 		[
 			[
-				0.0, 0.088235, 0.0, 0.0,
+				0.0, 1.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 			[
-				300.0, 0.121324, 0.0, 0.0,
+				285.231323, 1.0, 0.0, 0.0,
 				2.0, 3.0,
+			],
+			[
+				415.622742, 0.0, -0.007669, -0.007669,
+				3.0, 1.0,
 			],
 		]
 		time_volume_mapping_curve = 
@@ -6317,11 +6290,7 @@
 				2.0, 3.0,
 			],
 			[
-				0.274286, 0.643382, 1.569507, 1.569507,
-				3.0, 1.0,
-			],
-			[
-				0.637143, 1.0, 0.0, 0.0,
+				0.05694, 1.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -6332,18 +6301,18 @@
 				2.0, 3.0,
 			],
 			[
-				1.605714, 0.0, -0.270228, -0.270228,
+				0.025714, 0.0, -0.270228, -0.270228,
 				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
 			[
-				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 			[
-				300.0, 1.0, 0.0, 0.0,
+				300.0, 0.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]
@@ -6353,8 +6322,263 @@
 		]
 		vsnd_files_track_01 = 
 		[
-			"sounds/ambient/common/machines/conveyor_windup_loop.vsnd",
+			"sounds/ambient/common/vehicles/razor_train_wheels_loop1.vsnd",
 		]
+		position = [ -403.227173, 1537.035034, 160.097 ]
+		pitch = 2.0
 	}
 	_auto_calc_vnsd_duration_ = false
+	baggage.fan_SE = 
+	{
+		type = "csgo_mega"
+		volume = 0.5
+		pitch = 1.0
+		use_distance_volume_mapping_curve = true
+		reverb_wet = 1.0
+		mixgroup = "Baggage"
+		distance_effect_mix = 0.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -0.002538, -0.002538,
+				2.0, 3.0,
+			],
+			[
+				282.918152, 0.378378, -0.001, -0.001,
+				3.0, 1.0,
+			],
+			[
+				1000.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/nuke/fan_03.vsnd",
+		]
+		position = [ 157.039932, -448.299011, 232.03653 ]
+	}
+	baggage.fan_nw = 
+	{
+		type = "csgo_mega"
+		volume = 0.5
+		pitch = 1.0
+		use_distance_volume_mapping_curve = true
+		reverb_wet = 1.0
+		mixgroup = "Baggage"
+		distance_effect_mix = 0.0
+		position = [ -204.675003, 474.710602, 212.072205 ]
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -0.002416, -0.002416,
+				2.0, 3.0,
+			],
+			[
+				339.857666, 0.425061, -0.001, -0.001,
+				3.0, 1.0,
+			],
+			[
+				1000.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/nuke/fan_03.vsnd",
+		]
+	}
+	baggage.ctspawn.airplanes = 
+	{
+		type = "csgo_mega"
+		mixgroup = "Amb_Common"
+		use_time_volume_mapping_curve = true
+		set_child_position = false
+		override_dsp_preset = false
+		dsp_preset = "reverb_13_largeBright"
+		reverb_wet = 1.0
+		distance_effect_mix = 0.0
+		volume = 1.0
+		use_distance_unfiltered_stereo_mapping_curve = true
+		enable_retrigger = true
+		retrigger_interval_min = 2.0
+		retrigger_interval_max = 7.0
+		retrigger_radius = 10000.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
+			],
+			[
+				1060.498291, 1.0, 0.0, -0.00071,
+				0.0, 0.0,
+			],
+			[
+				1928.825684, 0.383292, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				0.045714, 0.629167, 10.937449, 10.937449,
+				3.0, 1.0,
+			],
+			[
+				0.091429, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 0.358722, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.361179, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		soundevent_01 = 
+		[
+			"",
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				0.285714, 0.816667, -1.072658, -1.072658,
+				3.0, 1.0,
+			],
+			[
+				0.691429, 0.258333, -0.618687, -0.618687,
+				1.0, 1.0,
+			],
+			[
+				1.605714, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/dust2/airplane_01.vsnd",
+			"sounds/ambient/dust2/airplane_02.vsnd",
+			"sounds/ambient/dust2/airplane_03.vsnd",
+			"sounds/ambient/nuke/airplane_01.vsnd",
+			"sounds/ambient/nuke/airplane_02.vsnd",
+			"sounds/ambient/nuke/airplane_03.vsnd",
+			"sounds/ambient/nuke/airplane_04.vsnd",
+		]
+		position = [ 231.384003, -1947.635986, 192.213806 ]
+		volume_random_min = -1.0
+		occlusion_intensity = 1.0
+	}
+	baggage.tspawn.announcer = 
+	{
+		type = "csgo_mega"
+		mixgroup = "Amb_Common"
+		enable_retrigger = true
+		retrigger_interval_min = 2.0
+		retrigger_interval_max = 12.0
+		volume = 1.0
+		volume_random_max = 0.1
+		use_time_volume_mapping_curve = true
+		set_child_position = false
+		retrigger_radius = 10000.0
+		reverb_wet = 0.0
+		distance_effect_mix = 0.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
+			],
+			[
+				918.149475, 1.0, -0.000421, -0.000421,
+				3.0, 1.0,
+			],
+			[
+				2377.224121, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				0.14, 0.129464, 1.875, 1.875,
+				3.0, 1.0,
+			],
+			[
+				0.357143, 0.669643, 1.40409, 1.40409,
+				1.0, 1.0,
+			],
+			[
+				0.76, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				0.485714, 0.799107, -0.612877, -0.612877,
+				3.0, 1.0,
+			],
+			[
+				1.325714, 0.1875, -0.527712, -0.527712,
+				1.0, 1.0,
+			],
+			[
+				2.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/baggage/announcement_01.vsnd",
+			"sounds/ambient/baggage/announcement_02.vsnd",
+		]
+		position = [ -336.289429, 1983.692017, 333.674988 ]
+		block_match_entity = false
+		block_matching_events = false
+		instance_limit = 1.0
+	}
 }

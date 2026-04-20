@@ -31,19 +31,8 @@
 		{
 			name = ""
 			group = "GameStartup"
-			source_file = "src/tools/toolscene/toolscene_materialpreview.cpp"
-			source_line = 20
-			resources = 
-			[
-				resource_name:"materials/dev/gray_50.vmat",
-				resource_name:"materials/tools/ui_material_preview_on_model.vmat",
-			]
-		},
-		{
-			name = ""
-			group = "GameStartup"
 			source_file = "src/tools/toolscene/toolscene_sky.cpp"
-			source_line = 17
+			source_line = 16
 			resources = 
 			[
 				resource_name:"materials/tools/light_probe.vmat",
@@ -57,6 +46,17 @@
 			resources = 
 			[
 				resource_name:"materials/tools/show_hitboxes.vmat",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/toolrenderutils/toolstandardmodels.cpp"
+			source_line = 18
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+				resource_name:"models/editor/camera.vmdl",
 			]
 		},
 		{

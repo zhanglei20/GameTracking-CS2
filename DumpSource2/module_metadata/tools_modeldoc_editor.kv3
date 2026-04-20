@@ -6,7 +6,7 @@
 			name = "MotionAnalysisSettings"
 			group = "ToolsStartup"
 			source_file = "src/tools/modeldoc_editor/modeldocwizard_motion_analysis.cpp"
-			source_line = 129
+			source_line = 131
 			resources = 
 			[
 				resource_name:"scripts/tools/modeldoc_motion_analysis.vdata",
@@ -26,7 +26,7 @@
 			name = ""
 			group = "ToolsStartup"
 			source_file = "src/tools/modeldoc_editor/modeldoc_editor_session.cpp"
-			source_line = 82
+			source_line = 84
 			resources = 
 			[
 				resource_name:"materials/dev/color_purple.vmat",
@@ -47,7 +47,7 @@
 			name = ""
 			group = "GameStartup"
 			source_file = "src/tools/modeldoc_editor/model_preview_root.cpp"
-			source_line = 61
+			source_line = 62
 			resources = 
 			[
 				resource_name:"materials/tools/show_normals.vmat",
@@ -126,17 +126,6 @@
 		{
 			name = ""
 			group = "GameStartup"
-			source_file = "src/tools/toolscene/toolscene_materialpreview.cpp"
-			source_line = 20
-			resources = 
-			[
-				resource_name:"materials/dev/gray_50.vmat",
-				resource_name:"materials/tools/ui_material_preview_on_model.vmat",
-			]
-		},
-		{
-			name = ""
-			group = "GameStartup"
 			source_file = "src/tools/toolscene/toolscene_hitboxes.cpp"
 			source_line = 24
 			resources = 
@@ -148,10 +137,21 @@
 			name = ""
 			group = "GameStartup"
 			source_file = "src/tools/toolscene/toolscene_sky.cpp"
-			source_line = 17
+			source_line = 16
 			resources = 
 			[
 				resource_name:"materials/tools/light_probe.vmat",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/toolrenderutils/toolstandardmodels.cpp"
+			source_line = 18
+			resources = 
+			[
+				resource_name:"models/editor/axis_helper_thick.vmdl",
+				resource_name:"models/editor/camera.vmdl",
 			]
 		},
 		{

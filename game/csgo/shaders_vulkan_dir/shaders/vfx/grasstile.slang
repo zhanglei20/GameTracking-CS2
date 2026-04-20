@@ -315,7 +315,6 @@ PS
 	DynamicComboRule( Allow0( D_BAKED_LIGHTING_FROM_VERTEX_STREAM ) );
 	DynamicComboRule( Allow0( D_BAKED_LIGHTING_FROM_LIGHTMAP ) );
 	
-	cbuffer PerLayerConstantBuffer_t < Attribute("PerLayerConstantBuffer_t"); >;
 	cbuffer PerViewConstantBufferCsgo_t < Attribute("PerViewConstantBufferCsgo_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	cbuffer PerViewLightProbeVolumeConstantBuffer_t < Attribute("PerViewLightProbeVolumeConstantBuffer_t"); >;
@@ -367,7 +366,7 @@ PS
 	
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (34580 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (34604 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1428
 	{
@@ -394,7 +393,7 @@ PS
 	    _1428 _m0[4];
 	};
 	
-	struct _32
+	struct _2411
 	{
 	    _1428 _m0;
 	    _1428 _m1;
@@ -419,6 +418,7 @@ PS
 	    float4 _m20;
 	    float3 _m21;
 	    float _m22;
+	    _1428 _m23;
 	};
 	
 	static float4 _3;
@@ -432,7 +432,7 @@ PS
 	    float _Globals_1_m2 : packoffset(c6.y);
 	};
 	
-	cbuffer PerViewConstantBufferCsgo_t : register(b4, space1)
+	cbuffer PerViewConstantBufferCsgo_t : register(b3, space1)
 	{
 	    int4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c1);
 	    int4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c2);
@@ -748,7 +748,7 @@ PS
 	                [unroll]
 	                for (int _2ident = 0; _2ident < 4; _2ident++)
 	                {
-	                    _25209._m0[_2ident] = asfloat(g_BarnLights.Load4(_2ident * 16 + _12608 * 416 + 0));
+	                    _25209._m0[_2ident] = asfloat(g_BarnLights.Load4(_2ident * 16 + _12608 * 480 + 0));
 	                }
 	                float4 _15817 = mul(float4(input_0.xyz, 1.0f), float4x4(float4(_25209._m0[0].x, _25209._m0[1].x, _25209._m0[2].x, _25209._m0[3].x), float4(_25209._m0[0].y, _25209._m0[1].y, _25209._m0[2].y, _25209._m0[3].y), float4(_25209._m0[0].z, _25209._m0[1].z, _25209._m0[2].z, _25209._m0[3].z), float4(_25209._m0[0].w, _25209._m0[1].w, _25209._m0[2].w, _25209._m0[3].w)));
 	                float3 _10521 = _15817.xyz / _15817.w.xxx;
@@ -778,7 +778,7 @@ PS
 	                    [unroll]
 	                    for (int _3ident = 0; _3ident < 3; _3ident++)
 	                    {
-	                        _8549._m0[_3ident] = asfloat(g_BarnLights.Load4(_3ident * 16 + _12608 * 416 + 272));
+	                        _8549._m0[_3ident] = asfloat(g_BarnLights.Load4(_3ident * 16 + _12608 * 480 + 272));
 	                    }
 	                    float3 _6368 = abs(mul(float4(input_0.xyz, 1.0f), float4x3(float3(_8549._m0[0].x, _8549._m0[1].x, _8549._m0[2].x), float3(_8549._m0[0].y, _8549._m0[1].y, _8549._m0[2].y), float3(_8549._m0[0].z, _8549._m0[1].z, _8549._m0[2].z), float3(_8549._m0[0].w, _8549._m0[1].w, _8549._m0[2].w))).xyz);
 	                    _12887 = !all(bool3(_6368.x <= 1.0f.xxx.x, _6368.y <= 1.0f.xxx.y, _6368.z <= 1.0f.xxx.z));
@@ -788,26 +788,26 @@ PS
 	                    _12505 = _13156;
 	                    break;
 	                }
-	                float _23571 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).y;
-	                float _18492 = (2.0f * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z) * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z;
-	                float _14805 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).x;
-	                float _9058 = _14805 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).y;
-	                float _17330 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).w;
-	                float _19825 = _17330 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z;
-	                float3 _16268 = float3(_9058 - _19825, (1.0f - (_14805 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).x)) - _18492, (_23571 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z) + (_17330 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).x)) * asfloat(g_BarnLights.Load3(_12608 * 416 + 192)).z;
+	                float _23571 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y;
+	                float _18492 = (2.0f * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z) * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z;
+	                float _14805 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).x;
+	                float _9058 = _14805 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y;
+	                float _17330 = 2.0f * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).w;
+	                float _19825 = _17330 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z;
+	                float3 _16268 = float3(_9058 - _19825, (1.0f - (_14805 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).x)) - _18492, (_23571 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z) + (_17330 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).x)) * asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).z;
 	                float _21316;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).z > 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).z > 0.0f)
 	                {
-	                    _21316 = smoothstep(0.0f, 1.0f, _21776 * asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).z);
+	                    _21316 = smoothstep(0.0f, 1.0f, _21776 * asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).z);
 	                }
 	                else
 	                {
 	                    _21316 = 1.0f;
 	                }
 	                float _19667;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).w > 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).w > 0.0f)
 	                {
-	                    _19667 = _21316 * smoothstep(0.0f, 1.0f, (1.0f - _21776) * asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).w);
+	                    _19667 = _21316 * smoothstep(0.0f, 1.0f, (1.0f - _21776) * asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).w);
 	                }
 	                else
 	                {
@@ -815,9 +815,9 @@ PS
 	                }
 	                float3 _11179;
 	                float _11633;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).w != 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w != 0.0f)
 	                {
-	                    float3 _10017 = asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).xyz - input_0.xyz;
+	                    float3 _10017 = asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).xyz - input_0.xyz;
 	                    float _18345 = dot(_10017, _10017);
 	                    float _17647 = sqrt(_18345);
 	                    float3 _20958 = _10017 - _16268;
@@ -839,16 +839,16 @@ PS
 	                        break; // unreachable workaround
 	                    } while(false);
 	                    _11179 = _10017 / _17647.xxx;
-	                    _11633 = ((_19667 * (asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).w / max(_18345, asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).w))) * smoothstep(0.0f, 1.0f, asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).x + (asfloat(g_BarnLights.Load4(_12608 * 416 + 144)).y * _17647))) * clamp(asfloat(g_BarnLights.Load3(_12608 * 416 + 192)).x + (asfloat(g_BarnLights.Load3(_12608 * 416 + 192)).y * dot(float3((1.0f - (_23571 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).y)) - _18492, _9058 + _19825, (_14805 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).z) - (_17330 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).y)), normalize(_10210))), 0.0f, 1.0f);
+	                    _11633 = ((_19667 * (asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w / max(_18345, asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w))) * smoothstep(0.0f, 1.0f, asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).x + (asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).y * _17647))) * clamp(asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).x + (asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).y * dot(float3((1.0f - (_23571 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y)) - _18492, _9058 + _19825, (_14805 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z) - (_17330 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y)), normalize(_10210))), 0.0f, 1.0f);
 	                }
 	                else
 	                {
-	                    _11179 = asfloat(g_BarnLights.Load4(_12608 * 416 + 128)).xyz;
+	                    _11179 = asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).xyz;
 	                    _11633 = _19667;
 	                }
-	                float3 _17828 = (asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).xyz * 1.0f).xyz * _11633;
+	                float3 _17828 = (asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).xyz * 1.0f).xyz * _11633;
 	                bool _24419;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 208)).z > 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 208)).z > 0.0f)
 	                {
 	                    _24419 = !_20059;
 	                }
@@ -857,24 +857,24 @@ PS
 	                    _24419 = false;
 	                }
 	                float3 _21548;
-	                if (asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).w == 0.0f)
+	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w == 0.0f)
 	                {
 	                    float _10342;
 	                    do
 	                    {
 	                        float2 _22154 = abs(_22905.xy);
-	                        if (asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).z == 0.0f)
+	                        if (asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).z == 0.0f)
 	                        {
-	                            _10342 = smoothstep(1.0f, asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).x, _22154.x) * smoothstep(1.0f, asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).y, _22154.y);
+	                            _10342 = smoothstep(1.0f, asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).x, _22154.x) * smoothstep(1.0f, asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).y, _22154.y);
 	                            break;
 	                        }
 	                        else
 	                        {
 	                            float _11473 = _22154.x;
-	                            float _15266 = 2.0f / asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).z;
+	                            float _15266 = 2.0f / asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).z;
 	                            float _15017 = _22154.y;
-	                            float _23041 = (-0.5f) * asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).z;
-	                            float _11981 = (asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).x * asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).y) * pow(max(pow(asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).y * _11473, _15266) + pow(asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).x * _15017, _15266), 1.1754943508222875079687365372222e-38f), _23041);
+	                            float _23041 = (-0.5f) * asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).z;
+	                            float _11981 = (asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).x * asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).y) * pow(max(pow(asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).y * _11473, _15266) + pow(asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).x * _15017, _15266), 1.1754943508222875079687365372222e-38f), _23041);
 	                            float _16524 = pow(max(pow(_11473, _15266) + pow(_15017, _15266), 1.1754943508222875079687365372222e-38f), _23041);
 	                            if (_11981 < _16524)
 	                            {
@@ -895,18 +895,18 @@ PS
 	                else
 	                {
 	                    float3 _12504;
-	                    if (asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).w < 0.0f)
+	                    if (asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w < 0.0f)
 	                    {
-	                        float4 _17795 = float4(-asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).xyz, asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).w);
+	                        float4 _17795 = float4(-asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).xyz, asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).w);
 	                        float4 _19008 = _17795.xyzw * float4(-1.0f, -1.0f, -1.0f, 1.0f);
 	                        float3 _24989 = _19008.xyz;
 	                        float3 _23629 = float4((-_11179).xyz, 0.0f).xyz;
 	                        float _15156 = -dot(_23629, _24989);
 	                        float3 _20479 = float4((_23629 * _19008.w) + cross(_23629, _24989), _15156).xyz;
 	                        float3 _23593 = _17795.xyz;
-	                        float3 _12170 = ((_20479 * asfloat(g_BarnLights.Load4(_12608 * 416 + 176)).w) + (_23593 * _15156)) + cross(_23593, _20479);
-	                        float3 _14081 = float3(float2(atan2(_12170.y, -_12170.x) * 0.15915493667125701904296875f, acos(_12170.z) * 0.3183098733425140380859375f), -asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).w);
-	                        float2 _20564 = (_14081.xy * asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).zw) + asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).xy;
+	                        float3 _12170 = ((_20479 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).w) + (_23593 * _15156)) + cross(_23593, _20479);
+	                        float3 _14081 = float3(float2(atan2(_12170.y, -_12170.x) * 0.15915493667125701904296875f, acos(_12170.z) * 0.3183098733425140380859375f), -asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w);
+	                        float2 _20564 = (_14081.xy * asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).zw) + asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).xy;
 	                        float3 _20491 = _14081;
 	                        _20491.x = _20564.x;
 	                        _20491.y = _20564.y;
@@ -914,8 +914,8 @@ PS
 	                    }
 	                    else
 	                    {
-	                        float3 _13791 = float3(mad(_22905.xy, float2(0.5f, -0.5f), 0.5f.xx), asfloat(g_BarnLights.Load4(_12608 * 416 + 160)).w);
-	                        float2 _20563 = (_13791.xy * asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).zw) + asfloat(g_BarnLights.Load4(_12608 * 416 + 224)).xy;
+	                        float3 _13791 = float3(mad(_22905.xy, float2(0.5f, -0.5f), 0.5f.xx), asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w);
+	                        float2 _20563 = (_13791.xy * asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).zw) + asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).xy;
 	                        float3 _20490 = _13791;
 	                        _20490.x = _20563.x;
 	                        _20490.y = _20563.y;
@@ -932,7 +932,7 @@ PS
 	                if (_24419)
 	                {
 	                    float3 _19629;
-	                    if ((g_BarnLights.Load(_12608 * 416 + 264) & 4u) != 0u)
+	                    if ((g_BarnLights.Load(_12608 * 480 + 264) & 4u) != 0u)
 	                    {
 	                        float2 _6281 = _22905.yx * float2(1.0f, -1.0f);
 	                        float3 _23714 = _21642;
@@ -948,7 +948,7 @@ PS
 	                    do
 	                    {
 	                        float _11455 = clamp(_19629.z + PerViewLightingConstantBufferGpu_t_1_m12, 0.0f, 1.0f);
-	                        float2 _14616 = float3(mad(_19629.xy, asfloat(g_BarnLights.Load4(_12608 * 416 + 208)).zw, asfloat(g_BarnLights.Load4(_12608 * 416 + 208)).xy), _19629.z).xy;
+	                        float2 _14616 = float3(mad(_19629.xy, asfloat(g_BarnLights.Load4(_12608 * 480 + 208)).zw, asfloat(g_BarnLights.Load4(_12608 * 480 + 208)).xy), _19629.z).xy;
 	                        float _15312 = dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(g_tShadowDepthBufferCmpSampler, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.z, PerViewLightingConstantBufferGpu_t_1_m3.z)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(g_tShadowDepthBufferCmpSampler, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.y, PerViewLightingConstantBufferGpu_t_1_m3.z)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(g_tShadowDepthBufferCmpSampler, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.z, PerViewLightingConstantBufferGpu_t_1_m3.y)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(g_tShadowDepthBufferCmpSampler, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.y, PerViewLightingConstantBufferGpu_t_1_m3.y)).xy, _11455)).xyzw, 0.25f.xxxx);
 	                        bool _12888;
 	                        if (_15312 == 0.0f)
@@ -967,7 +967,7 @@ PS
 	                        _24972 = ((_15312 * (PerViewLightingConstantBufferGpu_t_1_m0.w * 4.0f)) + dot(float4(g_tShadowDepthBufferDepth.SampleCmpLevelZero(g_tShadowDepthBufferCmpSampler, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.z, 0.0f)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(g_tShadowDepthBufferCmpSampler, (_14616 + float2(PerViewLightingConstantBufferGpu_t_1_m2.y, 0.0f)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(g_tShadowDepthBufferCmpSampler, (_14616 + float2(0.0f, PerViewLightingConstantBufferGpu_t_1_m3.y)).xy, _11455), g_tShadowDepthBufferDepth.SampleCmpLevelZero(g_tShadowDepthBufferCmpSampler, (_14616 + float2(0.0f, PerViewLightingConstantBufferGpu_t_1_m3.z)).xy, _11455)).xyzw, PerViewLightingConstantBufferGpu_t_1_m1.xxxx)) + (g_tShadowDepthBufferDepth.SampleCmpLevelZero(g_tShadowDepthBufferCmpSampler, _14616, _11455) * PerViewLightingConstantBufferGpu_t_1_m1.y);
 	                        break;
 	                    } while(false);
-	                    float3 _19878 = _21548.xyz * lerp(1.0f, _24972, asfloat(g_BarnLights.Load(_12608 * 416 + 260)));
+	                    float3 _19878 = _21548.xyz * lerp(1.0f, _24972, asfloat(g_BarnLights.Load(_12608 * 480 + 260)));
 	                    float3 _16449 = _19878.xyz;
 	                    if (all(bool3(_16449.x == 0.0f.xxx.x, _16449.y == 0.0f.xxx.y, _16449.z == 0.0f.xxx.z)))
 	                    {

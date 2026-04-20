@@ -20,7 +20,7 @@
 .?AVCVConsoleModuleMappingListener@@
 .?AVIModuleMappingListener@@
 .?AVIVConComm@@
-2\vppr
+2\vp0(
 <Unknown Shutdown Context>
 =============== End VConsole Buffered Messages ===============\n
 =============== Prior Messages Discarded at %d bytes ===============\n
@@ -59,7 +59,6 @@ PID %d @ %s\n
 QWidget
 QWindowIcon
 RSDS#
-R\fppr
 Rejecting registering message '%s'. Already registered to an alternate handler.\n
 SetHandleInformation
 TCP Local Port %d, Remote Port %d (State %d)\n
@@ -82,7 +81,6 @@ arg%d
 arg0
 commandline
 iphlpapi.dll
-r\vppr
 vc_exit %s
 vcon_clear_buffered_log
 vcon_clients

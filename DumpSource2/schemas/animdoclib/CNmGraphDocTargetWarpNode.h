@@ -37,6 +37,16 @@
 //			"m_bAllowMultipleOutConnections": false
 //		}
 //	],
+//	"m_pDefaultVariationData":
+//	{
+//		"_class": "CNmGraphDocTargetWarpNode::CData",
+//		"m_strAlignmentBoneName": ""
+//	},
+//	"m_overrides":
+//	[
+//	],
+//	"m_defaultResourceName": "",
+//	"m_targetUpdateRule": "None",
 //	"m_bAllowTargetUpdate": false,
 //	"m_bAlignWithTargetAtLastWarpEvent": false,
 //	"m_samplingMode": "WorldSpace",
@@ -46,8 +56,10 @@
 //	"m_flTargetUpdateDistanceThresholdDegrees": 4.000000,
 //	"m_flTargetUpdateAngleThresholdDegrees": 5.000000
 //}
-class CNmGraphDocTargetWarpNode : public CNmGraphDocFlowNode
+class CNmGraphDocTargetWarpNode : public CNmGraphDocVariationDataNode
 {
+	CNmTargetWarpNode::TargetUpdateRule_t m_targetUpdateRule;
+	// MPropertySuppressField
 	bool m_bAllowTargetUpdate;
 	bool m_bAlignWithTargetAtLastWarpEvent;
 	CNmRootMotionData::SamplingMode_t m_samplingMode;

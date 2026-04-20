@@ -1,6 +1,4 @@
 materials/default/default_ao_tga_559f1ac6.vtex
-characters/models/shared/arms/glove_bloodhound/v_glove_bloodhound.vmdl
-characters/models/shared/arms/glove_bloodhound/w_glove_bloodhound.vmdl
 characters/models/shared/arms/glove_bloodhound/materials/glove_bloodhound_left.vmat
 characters/models/shared/arms/glove_bloodhound/materials/glove_bloodhound_right.vmat
 gloves/paints/bloodhound_black_silver.vmat
@@ -6955,7 +6953,6 @@ panorama/images/econ/stickers/community/warhammer_decals/paper_rogue_trader_png.
 items/assets/stickers/community/warhammer_decals/paper_silver_skulls_albedo_texture_tga_27fa6b02.vtex
 panorama/images/econ/stickers/community/warhammer_decals/paper_silver_skulls_png.vtex
 panorama/images/econ/weapon_cases/crate_sticker_pack_warhammer_imperium_capsule_png.vtex
-characters/models/shared/arms/glove_bloodhound/glove_bloodhound_ag2.vmdl
 materials/default/default_ao_tga_80b8c020.vtex
 materials/models/inventory_items/music_kit/ghost_01/sleeve_cover.vmat
 materials/models/inventory_items/music_kit/tigercub_01/sleeve_cover.vmat
@@ -7104,6 +7101,7 @@ panorama/images/econ/stickers/warhammer/ork_waaagh_paper_1355_37_png.vtex
 panorama/images/econ/stickers/warhammer/primaris_keychain_paper_1355_37_png.vtex
 panorama/images/econ/stickers/warhammer/repulsor_paper_1355_37_png.vtex
 panorama/images/econ/stickers/warhammer/space_marine_holo_1355_37_png.vtex
+agents/models/shared/arms/glove_bloodhound/glove_bloodhound.vmdl
 characters/models/shared/arms/glove_bloodhound/materials/glove_bloodhound_left_vmat_g_tcolor_6b6e411d.vtex
 characters/models/shared/arms/glove_bloodhound/materials/glove_bloodhound_right_vmat_g_tcolor_6b6e411d.vtex
 materials/models/weapons/customization/paints/vmats/gs_aug_plague_vmat_g_tmasks_38c44297.vtex

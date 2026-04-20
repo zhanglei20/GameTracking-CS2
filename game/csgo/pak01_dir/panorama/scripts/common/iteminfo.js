@@ -314,16 +314,7 @@ var ItemInfo;
     }
     function BuildItemSchemaDef(id) {
         const schemaString = InventoryAPI.BuildItemSchemaDefJSON(id);
-        const itemSchemaDef = JSON.parse(schemaString);
-        if (itemSchemaDef.model_ag2 &&
-            itemSchemaDef.name &&
-            (itemSchemaDef.name.startsWith("customplayer_")
-                ? GameInterfaceAPI.IsUsingAG2Pawns()
-                : true)) {
-            itemSchemaDef.model_player = itemSchemaDef.model_ag2;
-            itemSchemaDef.model_world = itemSchemaDef.model_ag2;
-        }
-        return itemSchemaDef;
+        return JSON.parse(schemaString);
     }
     ItemInfo.BuildItemSchemaDef = BuildItemSchemaDef;
     function GetModelPlayer(id) {

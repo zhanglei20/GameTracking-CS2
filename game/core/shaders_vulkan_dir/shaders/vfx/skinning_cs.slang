@@ -45,7 +45,7 @@ CS
 	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); SrgbRead(false); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (11716 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (11880 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1017
 	{
@@ -112,47 +112,61 @@ CS
 	        uint _14347 = g_inputVB.Load(((_20858 + 8u) / 4u) * 4 + 0);
 	        float4 _9716;
 	        float3 _24878;
-	        if (_3444_m7 == 4294967295u)
+	        do
 	        {
-	            uint _23043 = uint(int(_3973 + _3444_m6)) / 4u;
-	            float _22483 = (float((g_inputVB.Load(_23043 * 4 + 0) >> 12u) & 1023u) * 0.00195503421127796173095703125f) - 1.0f;
-	            float _7589 = (float((g_inputVB.Load(_23043 * 4 + 0) >> 22u) & 1023u) * 0.00195503421127796173095703125f) - 1.0f;
-	            float _23404 = (1.0f - abs(_22483)) - abs(_7589);
-	            float3 _8254 = float3(_22483, _7589, _23404);
-	            float _24228 = clamp(-_23404, 0.0f, 1.0f);
-	            float2 _7335 = float2(_22483, _7589);
-	            bool2 _10803 = bool2(_7335.x >= 0.0f.xx.x, _7335.y >= 0.0f.xx.y);
-	            float2 _14501 = (-_24228).xx;
-	            float2 _8565 = _24228.xx;
-	            float2 _14350 = _7335 + float2(_10803.x ? _14501.x : _8565.x, _10803.y ? _14501.y : _8565.y);
-	            _8254.x = _14350.x;
-	            _8254.y = _14350.y;
-	            float3 _21001 = normalize(_8254);
-	            float _6384 = _21001.z;
-	            float _8220 = (_6384 >= 0.0f) ? 1.0f : (-1.0f);
-	            float _16417 = (-1.0f) / (_8220 + _6384);
-	            float _14755 = _21001.x;
-	            float3 _23176 = float3(1.0f + (((_8220 * _14755) * _14755) * _16417), _8220 * ((_14755 * _21001.y) * _16417), (-_8220) * _14755);
-	            float _23966 = float((g_inputVB.Load(_23043 * 4 + 0) >> uint(1)) & 2047u) * 0.003069460391998291015625f;
-	            _9716 = float4((_23176 * cos(_23966)) + (cross(_21001, _23176) * sin(_23966)), ((g_inputVB.Load(_23043 * 4 + 0) & 1u) == 0u) ? (-1.0f) : 1.0f);
-	            _24878 = _21001;
-	        }
-	        else
-	        {
-	            uint _20861 = _3973 + _3444_m6;
-	            float4 _12501;
-	            if (_3444_m7 < 4294967295u)
+	            if (_3444_m6 == 4294967295u)
 	            {
-	                uint _21336 = _3973 + _3444_m7;
-	                _12501 = asfloat(uint4(g_inputVB.Load((_21336 / 4u) * 4 + 0), g_inputVB.Load(((_21336 + 4u) / 4u) * 4 + 0), g_inputVB.Load(((_21336 + 8u) / 4u) * 4 + 0), g_inputVB.Load(((_21336 + 12u) / 4u) * 4 + 0)));
+	                _9716 = float4(0.0f, 0.0f, 1.0f, 1.0f);
+	                _24878 = float3(0.0f, 1.0f, 0.0f);
+	                break;
+	            }
+	            float4 _13212;
+	            float3 _15670;
+	            if (_3444_m7 == 4294967295u)
+	            {
+	                uint _23043 = uint(int(_3973 + _3444_m6)) / 4u;
+	                float _22483 = (float((g_inputVB.Load(_23043 * 4 + 0) >> 12u) & 1023u) * 0.00195503421127796173095703125f) - 1.0f;
+	                float _7589 = (float((g_inputVB.Load(_23043 * 4 + 0) >> 22u) & 1023u) * 0.00195503421127796173095703125f) - 1.0f;
+	                float _23404 = (1.0f - abs(_22483)) - abs(_7589);
+	                float3 _8254 = float3(_22483, _7589, _23404);
+	                float _24228 = clamp(-_23404, 0.0f, 1.0f);
+	                float2 _7335 = float2(_22483, _7589);
+	                bool2 _10803 = bool2(_7335.x >= 0.0f.xx.x, _7335.y >= 0.0f.xx.y);
+	                float2 _14501 = (-_24228).xx;
+	                float2 _8565 = _24228.xx;
+	                float2 _14350 = _7335 + float2(_10803.x ? _14501.x : _8565.x, _10803.y ? _14501.y : _8565.y);
+	                _8254.x = _14350.x;
+	                _8254.y = _14350.y;
+	                float3 _21001 = normalize(_8254);
+	                float _6384 = _21001.z;
+	                float _8220 = (_6384 >= 0.0f) ? 1.0f : (-1.0f);
+	                float _16417 = (-1.0f) / (_8220 + _6384);
+	                float _14755 = _21001.x;
+	                float3 _23176 = float3(1.0f + (((_8220 * _14755) * _14755) * _16417), _8220 * ((_14755 * _21001.y) * _16417), (-_8220) * _14755);
+	                float _23966 = float((g_inputVB.Load(_23043 * 4 + 0) >> uint(1)) & 2047u) * 0.003069460391998291015625f;
+	                _13212 = float4((_23176 * cos(_23966)) + (cross(_21001, _23176) * sin(_23966)), ((g_inputVB.Load(_23043 * 4 + 0) & 1u) == 0u) ? (-1.0f) : 1.0f);
+	                _15670 = _21001;
 	            }
 	            else
 	            {
-	                _12501 = float4(0.0f, 0.0f, 1.0f, 1.0f);
+	                uint _18914 = _3973 + _3444_m6;
+	                float4 _12501;
+	                if (_3444_m7 < 4294967295u)
+	                {
+	                    uint _21336 = _3973 + _3444_m7;
+	                    _12501 = asfloat(uint4(g_inputVB.Load((_21336 / 4u) * 4 + 0), g_inputVB.Load(((_21336 + 4u) / 4u) * 4 + 0), g_inputVB.Load(((_21336 + 8u) / 4u) * 4 + 0), g_inputVB.Load(((_21336 + 12u) / 4u) * 4 + 0)));
+	                }
+	                else
+	                {
+	                    _12501 = float4(0.0f, 0.0f, 1.0f, 1.0f);
+	                }
+	                _13212 = _12501;
+	                _15670 = asfloat(uint3(g_inputVB.Load((_18914 / 4u) * 4 + 0), g_inputVB.Load(((_18914 + 4u) / 4u) * 4 + 0), g_inputVB.Load(((_18914 + 8u) / 4u) * 4 + 0)));
 	            }
-	            _9716 = _12501;
-	            _24878 = asfloat(uint3(g_inputVB.Load((_20861 / 4u) * 4 + 0), g_inputVB.Load(((_20861 + 4u) / 4u) * 4 + 0), g_inputVB.Load(((_20861 + 8u) / 4u) * 4 + 0)));
-	        }
+	            _9716 = _13212;
+	            _24878 = _15670;
+	            break;
+	        } while(false);
 	        uint _3718 = g_instances.Load(_13724 * 16 + 8) & 15u;
 	        uint4 _18844;
 	        if (_3444_m2 < 4294967295u)
@@ -161,9 +175,9 @@ CS
 	            if (_3444_m4 == 16u)
 	            {
 	                uint _21337 = _3973 + _3444_m2;
-	                uint _12585 = _21337 / 4u;
-	                uint _6760 = (_21337 + 4u) / 4u;
-	                _12503 = uint4(g_inputVB.Load(_12585 * 4 + 0) & 65535u, g_inputVB.Load(_12585 * 4 + 0) >> uint(16), g_inputVB.Load(_6760 * 4 + 0) & 65535u, g_inputVB.Load(_6760 * 4 + 0) >> uint(16));
+	                uint _12586 = _21337 / 4u;
+	                uint _6759 = (_21337 + 4u) / 4u;
+	                _12503 = uint4(g_inputVB.Load(_12586 * 4 + 0) & 65535u, g_inputVB.Load(_12586 * 4 + 0) >> uint(16), g_inputVB.Load(_6759 * 4 + 0) & 65535u, g_inputVB.Load(_6759 * 4 + 0) >> uint(16));
 	            }
 	            else
 	            {

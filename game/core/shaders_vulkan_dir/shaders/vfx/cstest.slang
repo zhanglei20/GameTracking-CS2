@@ -30,7 +30,10 @@ CS
 {
 	DynamicCombo( D_INLINE_RTX_TEST, 0..1 );
 	DynamicCombo( D_INLINE_RTX_TEST_VARIANT, 0..1 );
+	DynamicCombo( D_CUBEMAP_TEST, 0..1 );
 	DynamicCombo( D_TEST_VARIANT, 0..1 );
+	DynamicComboRule( Requires( D_CUBEMAP_TEST, D_TEST_VARIANT=0 ) );
+	DynamicComboRule( Requires( D_CUBEMAP_TEST, D_INLINE_RTX_TEST=0 ) );
 	DynamicComboRule( Requires( D_INLINE_RTX_TEST, D_TEST_VARIANT=0 ) );
 	DynamicComboRule( Requires( D_INLINE_RTX_TEST_VARIANT, D_INLINE_RTX_TEST=1 ) );
 	
@@ -39,6 +42,7 @@ CS
 	Buffer Buffer2 < Attribute("Buffer2"); SrgbRead(false); >;
 	cbuffer Dimensions_t < Attribute("Dimensions_t"); >;
 	RWTexture2D<float4> OutputTexture < Attribute("OutputUAV"); >;
+	RWTexture2D<float4>[] g_CubemapUAV < Attribute("CubemapUAV"); >;
 	cbuffer g_PushConstants < Source(ExternalDescSet); Attribute("g_PushConstants"); >;
 	ExternalDescriptorSet g_rtxTestDescriptorSet < Source(ExternalDescSet); Attribute("g_rtxTestDescriptorSet"); >;
 	float2 vOutputSize < Attribute("OutputSize"); UiType(VectorText); >;

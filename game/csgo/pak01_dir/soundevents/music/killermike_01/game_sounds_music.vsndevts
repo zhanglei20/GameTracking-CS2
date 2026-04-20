@@ -7,6 +7,7 @@
 		volume_convar = "snd_menumusic_volume"
 		stop_music = "true"
 		vsnd_files = "sounds/music/killermike_01/mainmenu.vsnd"
+		vsnd_duration = 114.0
 	}
 	Music.MVPPreview.killermike_01 = 
 	{
@@ -18,6 +19,7 @@
 		[
 			"sounds/music/killermike_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 9.0
 	}
 	Music.Selection.killermike_01 = 
 	{
@@ -30,6 +32,7 @@
 		stop_loading = "true"
 		vsnd_files = "sounds/music/killermike_01/chooseteam.vsnd"
 		join_non_mvp_group = "true"
+		vsnd_duration = 22.0
 	}
 	Music.MatchFound.killermike_01 = 
 	{
@@ -63,6 +66,7 @@
 			13.95, 16.72,
 		]
 		syncpoints_02 = [ 5.81, 11.6, 17.45 ]
+		vsnd_duration = 23.25
 	}
 	Music.LoadingScreen.killermike_01 = 
 	{
@@ -90,6 +94,7 @@
 			"sounds/music/killermike_01/startaction_01.vsnd",
 			"sounds/music/killermike_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 13.75
 	}
 	Music.StartRound.killermike_01 = 
 	{
@@ -124,6 +129,7 @@
 			13.95, 16.72,
 		]
 		syncpoints_02 = [ 5.81, 11.6, 17.45 ]
+		vsnd_duration = 23.25
 	}
 	Music.StartAction.killermike_01 = 
 	{
@@ -153,6 +159,7 @@
 			"sounds/music/killermike_01/startaction_01.vsnd",
 			"sounds/music/killermike_01/startaction_02.vsnd",
 		]
+		vsnd_duration = 13.75
 	}
 	Music.StartRound_GG.killermike_01 = 
 	{
@@ -188,6 +195,7 @@
 			13.95, 16.72,
 		]
 		syncpoints_02 = [ 5.81, 11.6, 17.45 ]
+		vsnd_duration = 23.25
 	}
 	Music.BombPlanted.killermike_01 = 
 	{
@@ -210,6 +218,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.0
 	}
 	Music.BombTenSecCount.killermike_01 = 
 	{
@@ -228,6 +237,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.5
 	}
 	Music.GotHostage.killermike_01 = 
 	{
@@ -252,6 +262,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 37.0
 	}
 	Music.HostageNearRescue.killermike_01 = 
 	{
@@ -274,6 +285,7 @@
 		endpoint_01 = 0.0
 		endpoint_02 = 0.0
 		endpoint_03 = 0.0
+		vsnd_duration = 10.5
 	}
 	Music.TenSecCount.killermike_01 = 
 	{
@@ -295,6 +307,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.0
 	}
 	Music.WonRound.killermike_01 = 
 	{
@@ -319,6 +332,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 10.0
 	}
 	Music.LostRound.killermike_01 = 
 	{
@@ -343,6 +357,7 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 8.069774
 	}
 	Music.DeathCam.killermike_01 = 
 	{
@@ -355,6 +370,19 @@
 		stop_start_round = "true"
 		stop_won_mvp = "true"
 		join_non_mvp_group = "true"
+		set_mixlayer_amount_enable = true
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.5, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 6.624989
 	}
 	Music.MVPAnthem.killermike_01 = 
 	{
@@ -381,6 +409,7 @@
 		[
 			"sounds/music/killermike_01/roundmvpanthem_01.vsnd",
 		]
+		vsnd_duration = 9.0
 	}
 	Music.MatchStart.killermike_01 = 
 	{
@@ -396,6 +425,7 @@
 		stop_music = "true"
 		join_non_mvp_group = "true"
 		vsnd_files = "sounds/music/killermike_01/startofmatch.vsnd"
+		vsnd_duration = 12.0
 	}
 	Music.MatchEnd.killermike_01 = 
 	{
@@ -417,6 +447,6 @@
 		syncpoints_01 = [ 0.0 ]
 		syncpoints_02 = [ 0.0 ]
 		syncpoints_03 = [ 0.0 ]
+		vsnd_duration = 54.103638
 	}
-	_auto_calc_vnsd_duration_ = "false"
 }
