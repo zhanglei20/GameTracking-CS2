@@ -553,7 +553,7 @@
 			name = "c_cs_player_for_precache_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/cstrike15/c_cs_player_pawn.cpp"
-			source_line = 74
+			source_line = 80
 			resources = 
 			[
 				resource_name:"c_cs_player_for_precache.ventr",
@@ -969,7 +969,7 @@
 			name = "IronSight"
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/weapon_ironsightcontroller.cpp"
-			source_line = 69
+			source_line = 72
 			resources = 
 			[
 				resource_name:"materials/models/weapons/shared/scope/scope.vmat",
@@ -1310,7 +1310,7 @@
 			name = "NametagModule"
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/weapon_csbase.cpp"
-			source_line = 1131
+			source_line = 1134
 			resources = 
 			[
 				resource_name:"weapons/models/shared/nametag/nametag_module.vmdl",
@@ -1320,7 +1320,7 @@
 			name = "StattrakModule"
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/weapon_csbase.cpp"
-			source_line = 1070
+			source_line = 1073
 			resources = 
 			[
 				resource_name:"weapons/models/shared/stattrak/stattrak_module.vmdl",

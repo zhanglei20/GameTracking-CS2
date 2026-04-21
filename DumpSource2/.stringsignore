@@ -1594,6 +1594,7 @@ CCSPlayerPawn
 CCSPlayerPawnBase
 CCSPlayerResource
 CCSPlayer_ActionTrackingServices
+CCSPlayer_AimPunchServices
 CCSPlayer_BulletServices
 CCSPlayer_BuyServices
 CCSPlayer_CameraServices
@@ -17561,11 +17562,6 @@ m_aimFocus
 m_aimFocusInterval
 m_aimFocusNextUpdate
 m_aimGoal
-m_aimPunchAngle
-m_aimPunchAngleVel
-m_aimPunchCache
-m_aimPunchTickBase
-m_aimPunchTickFraction
 m_airAction
 m_albedoFormat
 m_alertTimer
@@ -25227,6 +25223,7 @@ m_ownerSpawnGroupType
 m_pAction
 m_pActionTrackingServices
 m_pActivator
+m_pAimPunchServices
 m_pAllowPickupScriptFunction
 m_pAmbientSoundEffect
 m_pAnimGraphDestructibleGraphController
@@ -25504,6 +25501,10 @@ m_potentialIssues
 m_ppath
 m_pprevious
 m_precision
+m_predictableBaseAngle
+m_predictableBaseAngleVel
+m_predictableBaseTick
+m_predictableBaseTickInterpAmount
 m_preferredCarryAngles
 m_prevLocalAngles
 m_prevLocalToWorld
@@ -26313,6 +26314,8 @@ m_unRoundStartEquipmentValue
 m_unTraceID
 m_unVerticalAlign
 m_unWeaponHash
+m_unpredictableBaseAngle
+m_unpredictableBaseTick
 m_updateID
 m_updateTimer
 m_updateTravelDistanceTimer

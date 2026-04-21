@@ -5,6 +5,7 @@ class C_CSPlayerPawn : public C_CSPlayerPawnBase
 	CCSPlayer_BuyServices* m_pBuyServices;
 	CCSPlayer_GlowServices* m_pGlowServices;
 	CCSPlayer_ActionTrackingServices* m_pActionTrackingServices;
+	CCSPlayer_AimPunchServices* m_pAimPunchServices;
 	CCSPlayer_DamageReactServices* m_pDamageReactServices;
 	GameTime_t m_flHealthShotBoostExpirationTime;
 	GameTime_t m_flLastFiredWeaponTime;
@@ -20,10 +21,6 @@ class C_CSPlayerPawn : public C_CSPlayerPawnBase
 	uint32 m_unWeaponHash;
 	bool m_bInBuyZone;
 	bool m_bPreviouslyInBuyZone;
-	QAngle m_aimPunchAngle;
-	QAngle m_aimPunchAngleVel;
-	GameTick_t m_aimPunchTickBase;
-	float32 m_aimPunchTickFraction;
 	bool m_bInLanding;
 	float32 m_flLandingStartTime;
 	bool m_bInHostageRescueZone;

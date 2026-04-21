@@ -4,6 +4,7 @@ class CCSPlayerPawn : public CCSPlayerPawnBase
 	CCSPlayer_HostageServices* m_pHostageServices;
 	CCSPlayer_BuyServices* m_pBuyServices;
 	CCSPlayer_ActionTrackingServices* m_pActionTrackingServices;
+	CCSPlayer_AimPunchServices* m_pAimPunchServices;
 	CCSPlayer_RadioServices* m_pRadioServices;
 	CCSPlayer_DamageReactServices* m_pDamageReactServices;
 	uint16 m_nCharacterDefIndex;
@@ -25,11 +26,6 @@ class CCSPlayerPawn : public CCSPlayerPawnBase
 	loadout_slot_t m_RetakesMVPBoostExtraUtility;
 	GameTime_t m_flHealthShotBoostExpirationTime;
 	float32 m_flLandingTimeSeconds;
-	QAngle m_aimPunchAngle;
-	QAngle m_aimPunchAngleVel;
-	GameTick_t m_aimPunchTickBase;
-	float32 m_aimPunchTickFraction;
-	CUtlVector< QAngle > m_aimPunchCache;
 	bool m_bIsBuyMenuOpen;
 	GameTime_t m_lastLandTime;
 	bool m_bOnGroundLastTick;

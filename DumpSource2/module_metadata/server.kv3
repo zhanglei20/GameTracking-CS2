@@ -882,7 +882,7 @@
 			name = "CCSPlayerPawn_Minimal_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/server/cstrike15/cs_player_pawn.cpp"
-			source_line = 1140
+			source_line = 1154
 			resources = 
 			[
 				resource_name:"agents/models/ctm_sas/ctm_sas.vmdl",
@@ -892,7 +892,7 @@
 			name = "player_server"
 			group = "GameSessionManifest_server"
 			source_file = "src/game/server/cstrike15/cs_player_pawn.cpp"
-			source_line = 295
+			source_line = 298
 			resources = 
 			[
 				resource_name:"player.ventr",

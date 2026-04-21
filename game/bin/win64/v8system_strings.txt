@@ -48,7 +48,7 @@ Disable runtime allocation of executable memory for V8.
 Dump output of v8::Isolate::GetHeapStatistics.
 Fatal V8 Error: %s - %s
 Hard limit for the v8 heap size (in mBytes)
-Ph|g
+Ph|h
 RESOURCE_TYPE_JAVASCRIPT
 RESOURCE_TYPE_TYPESCRIPT
 V8 Near Heap Limit: cur=%llu, init=%llu, max=%llu

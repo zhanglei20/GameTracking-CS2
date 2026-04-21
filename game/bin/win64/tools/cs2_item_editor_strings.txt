@@ -306,22 +306,25 @@ $\n\tword_list
 '\n\fglobal_stats
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
-(1XY
-(1cY
-(A9Y
+(1LY
+(1dY
+(5FY
+(5HY
+(5PY
+(9xY
+(A5Y
+(AWY
+(AjY
 (Documents Filter - Use | for OR, space for AND)
-(E7Y
 (Filter)
-(IFY
 (IJY
-(IhY
-(IyY
-(MkY
+(MaY
+(MfY
 (No Active Session)
 (Outliner Filter)
-(Q0Y
-(Y8Y
-(YBY
+(QiY
+(U7Y
+(YUY
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -445,20 +448,20 @@ $\n\tword_list
 (\v2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 (\v2\f.CSOEconItem
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(a5Y
-(aaY
-(amY
-(axY
+(awY
 (default)
-(e3Y
-(iUY
-(ioY
-(mIY
-(mbY
-(u1Y
-(uDY
-(uPY
-(uqY
+(ilY
+(m6Y
+(mNY
+(mQY
+(mSY
+(qLY
+(uGY
+(uZY
+(ueY
+(uhY
+(yEY
+(ymY
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n!penalty_account_id_sessions_green
@@ -2882,9 +2885,7 @@ $\n\tword_list
 7\n2k_EGCItemCustomizationNotification_XpShopUseTicket
 7\n2k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
-8)gY
 8F@f@
-8UrY
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
 8\n3k_EGCItemCustomizationNotification_GenerateSouvenir
@@ -2893,7 +2894,6 @@ $\n\tword_list
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8efY
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 9\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
@@ -4382,6 +4382,7 @@ $\n\tword_list
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @08N,
+@HCS
 @HPX`hv
 @\n\fSingleObject
 @\n\vserver_type
@@ -6517,6 +6518,7 @@ Zip system failure.\n
 \n2CMsgGCCStrike15_v2_MatchListTournamentOperatorMgmt
 \n2CMsgGCCStrike15_v2_MatchmakingGC2ClientSearchStats
 \n3CMsgGCCStrike15_v2_ServerNotificationForUserPenalty
+\n3gY
 \n7CMsgGCCStrike15_v2_MatchmakingServerReservationResponse
 \n?blue@QColor@@QEBAHXZ
 \n?blueF@QColor@@QEBANXZ
@@ -6986,8 +6988,8 @@ _toolsautosave
 `6PE@
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
+`MhY
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`eyZ
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
