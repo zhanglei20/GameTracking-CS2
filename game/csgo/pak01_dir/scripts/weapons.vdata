@@ -55,6 +55,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -127,6 +129,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -205,6 +209,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -287,6 +293,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -371,6 +379,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -463,6 +473,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -549,6 +561,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -634,6 +648,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -722,6 +738,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -806,6 +824,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -886,6 +906,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -970,6 +992,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -1054,6 +1078,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -1138,6 +1164,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.25
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 120.0 ]
 		m_flSpread = [ 0.0003, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.01935, 0.0015 ]
@@ -1237,6 +1265,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 215.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.00658, 0.00484 ]
@@ -1334,6 +1364,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 195.0, 195.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00534, 0.00534 ]
@@ -1431,6 +1463,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.55
+		m_flTimeBetweenBurstShots = 0.075
 		m_flMaxSpeed = [ 220.0, 220.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.0055, 0.00325 ]
@@ -1528,6 +1562,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 225.0, 225.0 ]
 		m_flSpread = [ 0.0006, 0.00045 ]
 		m_flInaccuracyCrouch = [ 0.0041, 0.00368 ]
@@ -1626,6 +1662,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.075
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.00998, 0.00998 ]
@@ -1723,6 +1761,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 1.455
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 200.0, 100.0 ]
 		m_flSpread = [ 0.0002, 0.0002 ]
 		m_flInaccuracyCrouch = [ 0.0606, 0.0015 ]
@@ -1822,6 +1862,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.07
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.001, 0.001 ]
 		m_flInaccuracyCrouch = [ 0.01024, 0.01024 ]
@@ -1919,6 +1961,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 220.0, 150.0 ]
 		m_flSpread = [ 0.0005, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00311 ]
@@ -2024,6 +2068,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 235.0, 220.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.0085, 0.0085 ]
@@ -2124,6 +2170,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 215.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.00481, 0.00481 ]
@@ -2221,6 +2269,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.35
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 215.0 ]
 		m_flSpread = [ 0.038, 0.038 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -2321,6 +2371,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.5
+		m_flTimeBetweenBurstShots = 0.05
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.015 ]
 		m_flInaccuracyCrouch = [ 0.0042, 0.003 ]
@@ -2418,6 +2470,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.001, 0.001 ]
 		m_flInaccuracyCrouch = [ 0.0105, 0.0105 ]
@@ -2515,6 +2569,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.85
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 225.0, 225.0 ]
 		m_flSpread = [ 0.04, 0.04 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -2614,6 +2670,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.075
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 150.0, 150.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00763, 0.00763 ]
@@ -2712,6 +2770,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.85
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 210.0, 210.0 ]
 		m_flSpread = [ 0.062, 0.062 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -2812,6 +2872,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.12
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.0018 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00727 ]
@@ -2909,6 +2971,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = 230.0
 		m_flSpread = 0.0
 		m_flInaccuracyCrouch = 0.05
@@ -3006,6 +3070,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.17
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.0015 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00368 ]
@@ -3103,6 +3169,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 220.0, 220.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.0085, 0.0085 ]
@@ -3201,6 +3269,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.07
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.008, 0.008 ]
@@ -3298,6 +3368,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.88
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 220.0, 220.0 ]
 		m_flSpread = [ 0.04, 0.04 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -3397,6 +3469,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00683, 0.00683 ]
@@ -3494,6 +3568,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.25
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 120.0 ]
 		m_flSpread = [ 0.0003, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.01935, 0.0015 ]
@@ -3593,6 +3669,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.11
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 210.0, 150.0 ]
 		m_flSpread = [ 0.0006, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.00381, 0.00305 ]
@@ -3698,6 +3776,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 1.25
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.00028, 0.00023 ]
 		m_flInaccuracyCrouch = [ 0.02378, 0.0028 ]
@@ -3797,6 +3877,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -3891,6 +3973,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -3986,6 +4070,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00683, 0.00683 ]
@@ -4083,6 +4169,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -4178,6 +4266,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.12
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.0075 ]
@@ -4276,6 +4366,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -4371,6 +4463,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -4467,6 +4561,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.001, 0.001 ]
 		m_flInaccuracyCrouch = [ 0.01007, 0.01007 ]
@@ -4564,6 +4660,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -4659,6 +4757,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -4754,6 +4854,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -4849,6 +4951,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -4944,6 +5048,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 225.0, 225.0 ]
 		m_flSpread = [ 0.0006, 0.0005 ]
 		m_flInaccuracyCrouch = [ 0.0041, 0.0041 ]
@@ -5044,6 +5150,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.17
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.0025, 0.0015 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00368 ]
@@ -5144,6 +5252,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.003, 0.003 ]
 		m_flInaccuracyCrouch = [ 0.0076, 0.0076 ]
@@ -5242,6 +5352,8 @@
 		m_bIsRevolver = true
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.5, 0.4 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 180.0, 220.0 ]
 		m_flSpread = [ 0.00052, 0.068 ]
 		m_flInaccuracyCrouch = [ 0.001, 0.005 ]
@@ -5340,6 +5452,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.225
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00218, 0.00218 ]
@@ -5437,6 +5551,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -5536,6 +5652,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.225
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00218, 0.00218 ]
@@ -5634,6 +5752,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.12
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.0075 ]
@@ -5733,6 +5853,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00683, 0.00683 ]
@@ -5831,6 +5953,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.5
+		m_flTimeBetweenBurstShots = 0.05
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.015 ]
 		m_flInaccuracyCrouch = [ 0.0042, 0.003 ]
@@ -5929,6 +6053,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 215.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.00481, 0.00481 ]
@@ -6027,6 +6153,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 220.0, 150.0 ]
 		m_flSpread = [ 0.0005, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00311 ]
@@ -6133,6 +6261,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 1.455
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 200.0, 100.0 ]
 		m_flSpread = [ 0.0002, 0.0002 ]
 		m_flInaccuracyCrouch = [ 0.0606, 0.0015 ]
@@ -6233,6 +6363,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.55
+		m_flTimeBetweenBurstShots = 0.075
 		m_flMaxSpeed = [ 220.0, 220.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.0055, 0.00325 ]
@@ -6331,6 +6463,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.25
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 120.0 ]
 		m_flSpread = [ 0.0003, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.01935, 0.0015 ]
@@ -6431,6 +6565,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 215.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.00658, 0.00484 ]
@@ -6529,6 +6665,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 195.0, 195.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00534, 0.00534 ]
@@ -6627,6 +6765,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 225.0, 225.0 ]
 		m_flSpread = [ 0.0006, 0.00045 ]
 		m_flInaccuracyCrouch = [ 0.0041, 0.00368 ]
@@ -6726,6 +6866,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.075
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.00998, 0.00998 ]
@@ -6824,6 +6966,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.07
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.001, 0.001 ]
 		m_flInaccuracyCrouch = [ 0.01024, 0.01024 ]
@@ -6922,6 +7066,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 235.0, 220.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.0085, 0.0085 ]
@@ -7023,6 +7169,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.001, 0.001 ]
 		m_flInaccuracyCrouch = [ 0.01007, 0.01007 ]
@@ -7121,6 +7269,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.35
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 215.0 ]
 		m_flSpread = [ 0.038, 0.038 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -7222,6 +7372,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.001, 0.001 ]
 		m_flInaccuracyCrouch = [ 0.0105, 0.0105 ]
@@ -7320,6 +7472,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.85
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 225.0, 225.0 ]
 		m_flSpread = [ 0.04, 0.04 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -7420,6 +7574,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.075
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 150.0, 150.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00763, 0.00763 ]
@@ -7519,6 +7675,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.85
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 210.0, 210.0 ]
 		m_flSpread = [ 0.062, 0.062 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -7620,6 +7778,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.12
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.0018 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00727 ]
@@ -7718,6 +7878,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = 230.0
 		m_flSpread = 0.0
 		m_flInaccuracyCrouch = 0.05
@@ -7816,6 +7978,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.17
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.0015 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00368 ]
@@ -7914,6 +8078,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 220.0, 220.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.0085, 0.0085 ]
@@ -8013,6 +8179,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.07
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.008, 0.008 ]
@@ -8111,6 +8279,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.88
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 220.0, 220.0 ]
 		m_flSpread = [ 0.04, 0.04 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -8211,6 +8381,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00683, 0.00683 ]
@@ -8309,6 +8481,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.25
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 120.0 ]
 		m_flSpread = [ 0.0003, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.01935, 0.0015 ]
@@ -8409,6 +8583,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.11
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 210.0, 150.0 ]
 		m_flSpread = [ 0.0006, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.00381, 0.00305 ]
@@ -8515,6 +8691,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 1.25
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.00028, 0.00023 ]
 		m_flInaccuracyCrouch = [ 0.02378, 0.0028 ]
@@ -8615,6 +8793,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -8710,6 +8890,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -8807,6 +8989,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -8904,6 +9088,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9001,6 +9187,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9099,6 +9287,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9196,6 +9386,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9293,6 +9485,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9389,6 +9583,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9474,6 +9670,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9559,6 +9757,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9642,6 +9842,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9724,6 +9926,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9809,6 +10013,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 1.0, 1.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9893,6 +10099,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -9991,6 +10199,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -10086,6 +10296,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 225.0, 225.0 ]
 		m_flSpread = [ 0.0006, 0.0005 ]
 		m_flInaccuracyCrouch = [ 0.0041, 0.0041 ]
@@ -10187,6 +10399,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.17
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.0025, 0.0015 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00368 ]
@@ -10288,6 +10502,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.003, 0.003 ]
 		m_flInaccuracyCrouch = [ 0.0076, 0.0076 ]
@@ -10387,6 +10603,8 @@
 		m_bIsRevolver = true
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.5, 0.4 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 180.0, 220.0 ]
 		m_flSpread = [ 0.00052, 0.068 ]
 		m_flInaccuracyCrouch = [ 0.001, 0.005 ]
@@ -10486,6 +10704,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -10581,6 +10801,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -10676,6 +10898,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -10771,6 +10995,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -10866,6 +11092,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -10961,6 +11189,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11056,6 +11286,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11151,6 +11383,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11246,6 +11480,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11341,6 +11577,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11436,6 +11674,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11531,6 +11771,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11626,6 +11868,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11721,6 +11965,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11816,6 +12062,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -11911,6 +12159,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -12006,6 +12256,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -12101,6 +12353,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -12196,6 +12450,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -12291,6 +12547,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -12386,6 +12644,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -12481,6 +12741,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.225
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00218, 0.00218 ]
@@ -12579,6 +12841,8 @@
 		m_bIsRevolver = true
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.5, 0.4 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 180.0, 220.0 ]
 		m_flSpread = [ 0.00052, 0.068 ]
 		m_flInaccuracyCrouch = [ 0.001, 0.005 ]
@@ -12678,6 +12942,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.12
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.0075 ]
@@ -12777,6 +13043,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00683, 0.00683 ]
@@ -12875,6 +13143,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.003, 0.003 ]
 		m_flInaccuracyCrouch = [ 0.0076, 0.0076 ]
@@ -12974,6 +13244,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.5
+		m_flTimeBetweenBurstShots = 0.05
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.015 ]
 		m_flInaccuracyCrouch = [ 0.0042, 0.003 ]
@@ -13072,6 +13344,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 215.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.00481, 0.00481 ]
@@ -13170,6 +13444,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 220.0, 150.0 ]
 		m_flSpread = [ 0.0005, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00311 ]
@@ -13276,6 +13552,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 1.455
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 200.0, 100.0 ]
 		m_flSpread = [ 0.0002, 0.0002 ]
 		m_flInaccuracyCrouch = [ 0.0606, 0.0015 ]
@@ -13376,6 +13654,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.55
+		m_flTimeBetweenBurstShots = 0.075
 		m_flMaxSpeed = [ 220.0, 220.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.0055, 0.00325 ]
@@ -13474,6 +13754,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.25
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 120.0 ]
 		m_flSpread = [ 0.0003, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.01935, 0.0015 ]
@@ -13574,6 +13856,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 215.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.00658, 0.00484 ]
@@ -13672,6 +13956,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 195.0, 195.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00534, 0.00534 ]
@@ -13770,6 +14056,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 225.0, 225.0 ]
 		m_flSpread = [ 0.0006, 0.00045 ]
 		m_flInaccuracyCrouch = [ 0.0041, 0.00368 ]
@@ -13869,6 +14157,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.1
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 225.0, 225.0 ]
 		m_flSpread = [ 0.0006, 0.0005 ]
 		m_flInaccuracyCrouch = [ 0.0041, 0.0041 ]
@@ -13970,6 +14260,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.075
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.00998, 0.00998 ]
@@ -14068,6 +14360,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.07
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.001, 0.001 ]
 		m_flInaccuracyCrouch = [ 0.01024, 0.01024 ]
@@ -14166,6 +14460,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.09
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.001, 0.001 ]
 		m_flInaccuracyCrouch = [ 0.01007, 0.01007 ]
@@ -14264,6 +14560,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.35
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 215.0 ]
 		m_flSpread = [ 0.038, 0.038 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -14365,6 +14663,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.001, 0.001 ]
 		m_flInaccuracyCrouch = [ 0.0105, 0.0105 ]
@@ -14463,6 +14763,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.85
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 225.0, 225.0 ]
 		m_flSpread = [ 0.04, 0.04 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -14563,6 +14865,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.075
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 150.0, 150.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00763, 0.00763 ]
@@ -14662,6 +14966,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.85
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 210.0, 210.0 ]
 		m_flSpread = [ 0.062, 0.062 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -14763,6 +15069,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.12
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.0018 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00727 ]
@@ -14861,6 +15169,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = 230.0
 		m_flSpread = 0.0
 		m_flInaccuracyCrouch = 0.05
@@ -14959,6 +15269,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.17
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.0015 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00368 ]
@@ -15057,6 +15369,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.17
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.0025, 0.0015 ]
 		m_flInaccuracyCrouch = [ 0.00368, 0.00368 ]
@@ -15158,6 +15472,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 220.0, 220.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.0085, 0.0085 ]
@@ -15257,6 +15573,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.08
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 235.0, 220.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.0085, 0.0085 ]
@@ -15358,6 +15676,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.07
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.0006, 0.0006 ]
 		m_flInaccuracyCrouch = [ 0.008, 0.008 ]
@@ -15456,6 +15776,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.88
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 220.0, 220.0 ]
 		m_flSpread = [ 0.04, 0.04 ]
 		m_flInaccuracyCrouch = [ 0.00525, 0.00525 ]
@@ -15556,6 +15878,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 240.0, 240.0 ]
 		m_flSpread = [ 0.002, 0.002 ]
 		m_flInaccuracyCrouch = [ 0.00683, 0.00683 ]
@@ -15654,6 +15978,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.25
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 215.0, 120.0 ]
 		m_flSpread = [ 0.0003, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.01935, 0.0015 ]
@@ -15754,6 +16080,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 0.11
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 210.0, 150.0 ]
 		m_flSpread = [ 0.0006, 0.0003 ]
 		m_flInaccuracyCrouch = [ 0.00381, 0.00305 ]
@@ -15860,6 +16188,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = 1.25
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 230.0, 230.0 ]
 		m_flSpread = [ 0.00028, 0.00023 ]
 		m_flInaccuracyCrouch = [ 0.02378, 0.0028 ]
@@ -15960,6 +16290,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -16056,6 +16388,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -16152,6 +16486,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -16248,6 +16584,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -16345,6 +16683,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -16441,6 +16781,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 245.0, 245.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -16537,6 +16879,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -16633,6 +16977,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]
@@ -16727,6 +17073,8 @@
 		m_bIsRevolver = false
 		m_bCannotShootUnderwater = false
 		m_flCycleTime = [ 0.15, 0.3 ]
+		m_flCycleTimeWhenInBurstMode = 0.0
+		m_flTimeBetweenBurstShots = 0.0
 		m_flMaxSpeed = [ 250.0, 250.0 ]
 		m_flSpread = [ 0.0, 0.0 ]
 		m_flInaccuracyCrouch = [ 0.0, 0.0 ]

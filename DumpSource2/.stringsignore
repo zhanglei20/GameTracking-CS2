@@ -20505,6 +20505,7 @@ m_flCustomOutputValue
 m_flCutoffFreq
 m_flCycle
 m_flCycleTime
+m_flCycleTimeWhenInBurstMode
 m_flCycleUnclamped
 m_flCycleZeroTime
 m_flCyclesPerSecond
@@ -22072,6 +22073,7 @@ m_flTicksSinceLastSurfingDetected
 m_flTiltPlanePitchSpringStrength
 m_flTiltPlaneRollSpringStrength
 m_flTime
+m_flTimeBetweenBurstShots
 m_flTimeCreated
 m_flTimeDuration
 m_flTimeFromPrevious

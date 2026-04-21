@@ -69,6 +69,8 @@
 //	"m_nNumBullets": 0,
 //	"m_bReloadsSingleShells": false,
 //	"m_flCycleTime": 0.000000,
+//	"m_flCycleTimeWhenInBurstMode": 0.000000,
+//	"m_flTimeBetweenBurstShots": 0.000000,
 //	"m_flMaxSpeed": 0.000000,
 //	"m_flSpread": 0.000000,
 //	"m_flInaccuracyCrouch": 0.000000,
@@ -171,6 +173,8 @@ class CCSWeaponBaseVData : public CBasePlayerWeaponVData
 	bool m_bReloadsSingleShells;
 	// MPropertyStartGroup = "Firing Mode Data"
 	CFiringModeFloat m_flCycleTime;
+	float32 m_flCycleTimeWhenInBurstMode;
+	float32 m_flTimeBetweenBurstShots;
 	CFiringModeFloat m_flMaxSpeed;
 	CFiringModeFloat m_flSpread;
 	CFiringModeFloat m_flInaccuracyCrouch;

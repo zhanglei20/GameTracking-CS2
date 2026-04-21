@@ -101,11 +101,11 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`jPR
+ (08@HPX`jpQ
  (08@HPXb
- (08@HPZPR
+ (08@HPZpQ
  (08@HR
- (08@JPR
+ (08@JpQ
  (0X`hpz
  (Dirty Animation)
  (Disabled on Server)
@@ -125,6 +125,7 @@
  -8CKV
  -> %s '%s'\n
  -> Could not find an item definition named '%s'\n
+ .0yT
  0@NYa
  0Fa
  1CSc\t
@@ -2240,7 +2241,6 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
-.0tT
 .4bb
 .97yY
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
@@ -8523,6 +8523,7 @@ $tH@T\tI
 .PlayerRankingInfo
 .PlayerRankingInfo"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
 .PlayerRankingInfo.PerMapRank
+.PsT
 .Q.Ol
 .ScoreLeaderboardData
 .ScoreLeaderboardData"S\n%CCSUsrMsg_PlayerDecalDigitalSignature
@@ -8814,7 +8815,6 @@ $tH@T\tI
 .fatdem
 .lbN
 .pp@0
-.ptT
 .text$
 .vjs_c
 .vmap
@@ -8851,23 +8851,23 @@ $tH@T\tI
 /usr/local/ssl/private
 /zt1
 0 == ( pInstance->GetOwnerEntity()->GetEntityIdentity()->GetFlags() & EF_IN_STAGING_LIST )
-0(ZO
-0,BO
 0123456789
 02V8[
-04iO
 05=k
-08@HRPR
+08@HRpQ
 08@J
-08BPR
+08BpQ
 08bX
 09,h
 0;Q5[
 0<cz
 0@NX^b!/@P\b
 0AOY_c"2CQ[c
+0HYO
+0LAO
 0M2~@p
 0Mc\t\n
+0ThO
 0W/5
 0Z@q
 0\n+k_EGCItemCustomizationNotification_NameItem
@@ -8973,7 +8973,7 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
-2\vp4iO
+2\vpThO
 2^pV
 2a"l
 2bT~
@@ -9107,7 +9107,6 @@ $tH@T\tI
 67-s
 6H,N
 6O|T%
-6P\fU
 6Qd=
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -9130,7 +9129,7 @@ $tH@T\tI
 6l13
 6lkc
 6myY;
-6p{T
+6p\vU
 6qo~
 6r-m_v
 6r1ij
@@ -9177,9 +9176,9 @@ $tH@T\tI
 8<pl
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
-8@JPR
+8@JpQ
 8A6j
-8BPR
+8BpQ
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9189,8 +9188,8 @@ $tH@T\tI
 8\n3k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\n4GAME_PARTICLE_MANAGER_EVENT_CLEAR_MODELLIST_OVERRIDE
-8\nPR
 8\n\nPlayerMask
+8\npQ
 8\v8!83858A8G8K8S8W8_8e8o8q8}8
 8]Vc2
 8ca1
@@ -9433,7 +9432,7 @@ $tH@T\tI
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
 @0pp
-@2PR
+@2pQ
 @333
 @333?
 @33s@
@@ -9442,7 +9441,7 @@ $tH@T\tI
 @BH]f
 @BoneSetup
 @CCSPlayer_RadioServices
-@HPX`hv
+@HPX`hv0
 @MfKZ
 @Pgl
 @Pu\rm
@@ -14616,10 +14615,10 @@ FX_FireBullets: GetItemDefinition failed\n
 FX_FireBullets: GetWeaponEconDataFromItem failed for weapon %s\n
 F\f5F4'
 F\n ParticleFreezeTransitionOverride
-F\nPR
 F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
+F\npQ
 F\rH'4
 Face %s
 Face Actor
@@ -18178,17 +18177,15 @@ Ow!y
 OwnerHandle
 P!bxo
 P(UH 
-P(ZO
-P,BO
 P-192
 P-224
 P-256
 P-384
 P-521
 P08@J
-P08JpT
+P08J
 P1\t98"
-P2PR
+P2pQ
 P5[1
 PAGN_4
 PARALYZE
@@ -18251,6 +18248,7 @@ PEM_write_bio
 PEvent
 PGr]
 PHAG2
+PHYO
 PHYSGUN
 PHYS_SAVE_RESTORE_VERSION
 PHhn}Y
@@ -18369,6 +18367,7 @@ PKEY_SET_TYPE
 PKEY_USAGE_PERIOD
 PKIX
 PLANT_BOMB
+PLAO
 PLASMA
 PLAYERS
 PLUG_TYPE_INPUT
@@ -18525,7 +18524,7 @@ PinnedDown
 Pistol
 PitchShift
 PivotPaint
-PjPR
+PjpQ
 Place
 PlaceDecalEvent_t
 Plant bomb on floor
@@ -18979,7 +18978,7 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDSE;2M
 RTime32
-R\fp4iO
+R\fpThO
 R\r1>Vp
 R\vp!y
 R]Di
@@ -21383,7 +21382,6 @@ Ut]<E
 Uv1t
 Uz_G3=
 V07;m
-V0zT
 V2I_ASIDENTIFIERS
 V2I_AUTHORITY_INFO_ACCESS
 V2I_AUTHORITY_KEYID
@@ -21429,6 +21427,7 @@ VNotify Abandoned (Not enabled)\n
 VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
+VPyT
 VR_HAND_HAPTIC_PULSE_LIGHT
 VR_HAND_HAPTIC_PULSE_MEDIUM
 VR_HAND_HAPTIC_PULSE_STRONG
@@ -21896,7 +21895,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hrPR
+X`hrpQ
 Xd3h
 XfJ7
 XjfR
@@ -22260,7 +22259,8 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\v`4iO
+\fp\v`LAO
+\fp\v`ThO
 \ful2
 \fy&3Gl
 \l:ArR
@@ -22345,7 +22345,7 @@ Z~wl
 \n========================================\n
 \nDictionary: %s\n
 \nGameTick_t
-\nP(ZO
+\nPHYO
 \nSimulating Entities:\n\n
 \nVisMon: Polling now. (Frequency: %f)\n
 \n\fBPE_Teleport
@@ -22909,6 +22909,7 @@ Z~wl
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
 \r@h!Aq8
 \rB6uZ
+\rH9t
 \rKT8v
 \rLAM
 \rMinghuaQu\f
@@ -22929,7 +22930,6 @@ Z~wl
 \roKK
 \rrCj
 \rusercmd.proto"V\n
-\rx9t
 \sG7tPD
 \t %s additional argument will keep existing held weapon if the gear\n
 \t %s: %d/%d\n
@@ -22953,7 +22953,7 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNone\n
-\tP,BO
+\tPLAO
 \tPrivate script scope:
 \tPublic script scope:
 \tRead %s\t%s%s%s,\tOffs 0x%04x\n
@@ -23004,13 +23004,14 @@ Z~wl
 \vGt5
 \vHCK/
 \vNCE\v
-\vP,BO
+\vPLAO
 \vUY6[E
 \v\n\tRemoveFan
 \v\vTSG
+\v`LAO
 \vj0k
 \vjC7
-\vp4iO
+\vpThO
 ] Done (%.2f seconds)
 ]1h=bfz
 ]FhSD}
@@ -23085,19 +23086,21 @@ _var
 _xU`u
 _}eOk
 `28)fk
-`2PR
+`2pQ
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`4iO
 `:zQF
 `D$daM-l
 `DZG
 `F?ToLocalEmpty@api_internal@v8@@YAXXZ
 `H(hqA1p
+`HYO
 `ITS
+`LAO
+`ThO
 `VX:H
 `\n\rvector_values
-`bPR
-`dPR
+`bpQ
+`dpQ
 `fPw.\vM
 `h9T~
 `o_je
@@ -24809,8 +24812,6 @@ cvar_setf
 cvarname
 cvarvalue
 cycle
-cycletime_when_in_burst_mode
-cycletime_when_zoomed
 cz75a
 cz>Sp
 d e not congruent to 1
@@ -29127,7 +29128,6 @@ nMaxElements
 nMeshGroupMask
 nMode
 nNumerator
-nP\nU
 nPitch
 nPriority != NETWORK_FIELD_CHANGE_DEFAULT_PRIORITY
 nReason
@@ -29418,6 +29418,7 @@ notifyforcemintime_z
 notmostrecent
 notsolid
 nova
+np\tU
 npc_ability_name
 npc_select %i
 npc_vehicle
@@ -29675,18 +29676,17 @@ p not prime
 p!PcA1|
 p)ou}
 p+"\tHr9
-p,BO
 p.char_two
 p.onBasis
 p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p0j0
 p250
-p2PR
+p2pQ
 p2{l
 p4Z3
-p4iO
 p5Z3
 p5\nL,
 p618
@@ -29718,6 +29718,7 @@ pFilter
 pG_*h
 pIp 
 pJointName
+pLAO
 pLocationEntity
 pMaterialGroup
 pMeshGroupName
@@ -29749,6 +29750,7 @@ pTagName
 pTarget1
 pTarget2
 pTargetAttachmentName
+pThO
 pU>\AL
 pValue
 p\rP!0
@@ -29935,7 +29937,6 @@ payload + padding <= 16381
 payment gateway capabilities
 payment_row_usd
 payment_us_usd
-pbPR
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -29949,6 +29950,7 @@ pbeWithSHA1And40BitRC2-CBC
 pbeWithSHA1And40BitRC4
 pbeWithSHA1AndDES-CBC
 pbeWithSHA1AndRC2-CBC
+pbpQ
 pcPathLengthConstraint
 pearlescent
 pedestal display model
@@ -30551,7 +30553,7 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
-r\vp4iO
+r\vpThO
 rad2deg
 radio.go
 radio.letsgo
@@ -32314,7 +32316,6 @@ time not ascii format
 time stamp routines
 time syscall error
 timeStamping
-time_between_burst_shots
 time_comms_ban
 time_first_played
 time_initiated
@@ -33686,8 +33687,8 @@ zz2K
 ~9ob
 ~If D
 ~P2T
-~PzT
 ~R65Fu
 ~jLRG
+~pyT
 ~w]UG
 ~yhZ
