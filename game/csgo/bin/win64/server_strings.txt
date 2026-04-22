@@ -101,10 +101,11 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`jp}
+ (08@HPX`jPw
  (08@HPXb
- (08@HPZp}
+ (08@HPZPw
  (08@HR
+ (08@JPw
  (0X`hpz
  (Dirty Animation)
  (Disabled on Server)
@@ -156,7 +157,6 @@
  [via entity lump b/c no save data for '%s' - first visit to map]
  \n\vbounds_maxs
  \n\vbounds_mins
- \n\vpunch_angle
  \n\vtranslation
  \n\vview_angles
  ^LXjt
@@ -1891,7 +1891,6 @@ $tH@T\tI
 (\v2\v.CEntityMsg"g\n
 (\v2\v.CMsgQAngle"#\n
 (\v2\v.CMsgQAngle"J\n CCSUsrMsg_RecurringMissionSchema
-(\v2\v.CMsgQAngle*?\n
 (\v2\v.CMsgVector"
 (\v2\v.CMsgVector"1\n
 (\v2\v.CMsgVector"B\n
@@ -1918,7 +1917,6 @@ $tH@T\tI
 (debug)
 (default)
 (duration: number)
-(fP U
 (fS{ggRcjh
 (from angle, to angle, time) - Spherical lerp of angle from->to based on time
 (hInflictor, hAttacker, flDamage) - Allocate a damageinfo object, used as an argument to TakeDamage(). Call DestroyDamageInfo( hInfo ) to free the object.
@@ -5953,7 +5951,6 @@ $tH@T\tI
 .?AVCCSPlayer_WeaponServices@@
 .?AVCCSPointPulseSystem@@
 .?AVCCSPointScriptEntity@@
-.?AVCCSPredictionEvent_AddAimPunch@@
 .?AVCCSPredictionEvent_DamageTag@@
 .?AVCCSPredictionEvent_DamageTag_t@@
 .?AVCCSScriptSystem@@
@@ -8853,19 +8850,19 @@ $tH@T\tI
 /usr/local/ssl/private
 /zt1
 0 == ( pInstance->GetOwnerEntity()->GetEntityIdentity()->GetFlags() & EF_IN_STAGING_LIST )
+0,gO
 0123456789
 02V8[
 05=k
-08@HRp}
+08@HRPw
 08@J
-08Bp}
+08BPw
 08bX
 09,h
 0;Q5[
 0<cz
 0@NX^b!/@P\b
 0AOY_c"2CQ[c
-0LmO
 0M2~@p
 0Mc\t\n
 0W/5
@@ -8973,7 +8970,7 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
-2\vpT
+2\vp4
 2^pV
 2a"l
 2bT~
@@ -9100,14 +9097,16 @@ $tH@T\tI
 6%vi
 6,2K
 6-zeZ
+60(U
 62$|S)6f
 64CK\vH
-6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
+6666666666666666`
 67-s
 6H,N
 6O|T%
-6P.U
+6P+U
+6P1U
 6Qd=
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -9130,8 +9129,6 @@ $tH@T\tI
 6l13
 6lkc
 6myY;
-6p1U
-6p7U
 6qo~
 6r-m_v
 6r1ij
@@ -9177,9 +9174,9 @@ $tH@T\tI
 8<pl
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
-8@Jp}
+8@JPw
 8A6j
-8Bp}
+8BPw
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9189,6 +9186,7 @@ $tH@T\tI
 8\n3k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\n4GAME_PARTICLE_MANAGER_EVENT_CLEAR_MODELLIST_OVERRIDE
+8\nPw
 8\n\nPlayerMask
 8\v8!83858A8G8K8S8W8_8e8o8q8}8
 8]Vc2
@@ -9432,6 +9430,7 @@ $tH@T\tI
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
 @0pp
+@2Pw
 @333
 @333?
 @33s@
@@ -9439,7 +9438,8 @@ $tH@T\tI
 @Aff
 @BH]f
 @BoneSetup
-@HPX`hv0
+@CWeaponCZ75a
+@HPX`hv
 @MfKZ
 @Pgl
 @Pu\rm
@@ -9895,7 +9895,7 @@ ApplyGameSettings: Invalid mapgroup name %s\n
 ApplyGameSettings: Map %s not part of Mapgroup %s\n
 ApplyLocalAngularVelocityImpulse
 Approach Point (Hiding)
-Apr 21 2026
+Apr 22 2026
 Arc Cos
 Arc Cosine of input value. Input must be -1.0, 1.0 range. Output in radians, from 0 to 
 Arc Sin
@@ -10804,7 +10804,6 @@ CCSPointPulseAPI::OnRoundEnd
 CCSPointPulseAPI::OnRoundFreezeEnd
 CCSPointPulseAPI::OnRoundStart
 CCSPointPulseSystem
-CCSPredictionEvent_AddAimPunch
 CCSPredictionEvent_DamageTag
 CCSScriptSystem
 CCSUsrMsgPreMatchSayText
@@ -12164,7 +12163,6 @@ CSOQuestProgress
 CSOVolatileItemClaimedRewards
 CSOVolatileItemOffer
 CSObserverPawn
-CSPE_AddAimPunch
 CSPE_DamageTag
 CSPName
 CSPlayerController
@@ -14617,6 +14615,7 @@ FX_FireBullets: GetItemDefinition failed\n
 FX_FireBullets: GetWeaponEconDataFromItem failed for weapon %s\n
 F\f5F4'
 F\n ParticleFreezeTransitionOverride
+F\nPw
 F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
@@ -18177,15 +18176,16 @@ Ow!y
 OwnerHandle
 P!bxo
 P(UH 
+P,gO
 P-192
 P-224
 P-256
 P-384
 P-521
 P08@J
-P08J
+P08Jpy
 P1\t98"
-P2p}
+P2Pw
 P5[1
 PAGN_4
 PARALYZE
@@ -18375,7 +18375,6 @@ PLUG_TYPE_RELAY_PREFAB_INBOUND
 PLUG_TYPE_RELAY_PREFAB_LOCAL
 PLUG_TYPE_RELAY_PREFAB_OUTBOUND
 PLUG_TYPE_UNKNOWN
-PLmO
 POISON
 POISONED 
 POLICYINFO
@@ -18523,7 +18522,7 @@ PinnedDown
 Pistol
 PitchShift
 PivotPaint
-Pjp}
+PjPw
 Place
 PlaceDecalEvent_t
 Plant bomb on floor
@@ -18977,7 +18976,7 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDSE;2M
 RTime32
-R\fpT
+R\fp4
 R\r1>Vp
 R\vp!y
 R]Di
@@ -21427,6 +21426,8 @@ VNotify Abandoned (Not enabled)\n
 VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
+VP"U
+VP%U
 VR_HAND_HAPTIC_PULSE_LIGHT
 VR_HAND_HAPTIC_PULSE_MEDIUM
 VR_HAND_HAPTIC_PULSE_STRONG
@@ -21529,8 +21530,6 @@ Vote started "%s %s" from #%u %s\n
 Vote succeeded "%s %s" from #%u %s\n
 Vote.Failed
 Voting %s.\n
-Vp(U
-Vp+U
 Vp>u
 Vt_9
 Vulkan
@@ -21896,7 +21895,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hrp}
+X`hrPw
 Xd3h
 XfJ7
 XjfR
@@ -22260,7 +22259,6 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\v`LmO
 \ful2
 \fy&3Gl
 \l:ArR
@@ -22951,7 +22949,7 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNone\n
-\tPLmO
+\tP,gO
 \tPrivate script scope:
 \tPublic script scope:
 \tRead %s\t%s%s%s,\tOffs 0x%04x\n
@@ -23002,11 +23000,10 @@ Z~wl
 \vGt5
 \vHCK/
 \vNCE\v
-\vPLmO
+\vP,gO
 \vUY6[E
 \v\n\tRemoveFan
 \v\vTSG
-\v`LmO
 \vj0k
 \vjC7
 ] Done (%.2f seconds)
@@ -23017,7 +23014,6 @@ Z~wl
 ]MSd
 ][LK~lO
 ^.om5r
-^02U
 ^DnJ
 ^DqPt
 ^J_spY
@@ -23084,6 +23080,7 @@ _var
 _xU`u
 _}eOk
 `28)fk
+`2Pw
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `:zQF
 `D$daM-l
@@ -23091,9 +23088,10 @@ _}eOk
 `F?ToLocalEmpty@api_internal@v8@@YAXXZ
 `H(hqA1p
 `ITS
-`LmO
 `VX:H
 `\n\rvector_values
+`bPw
+`dPw
 `fPw.\vM
 `h9T~
 `o_je
@@ -29121,6 +29119,7 @@ nMaxElements
 nMeshGroupMask
 nMode
 nNumerator
+nP/U
 nPitch
 nPriority != NETWORK_FIELD_CHANGE_DEFAULT_PRIORITY
 nReason
@@ -29411,7 +29410,6 @@ notifyforcemintime_z
 notmostrecent
 notsolid
 nova
-np5U
 npc_ability_name
 npc_select %i
 npc_vehicle
@@ -29668,21 +29666,20 @@ p not prime
 p!PcA1|
 p)ou}
 p+"\tHr9
+p,gO
 p.char_two
 p.onBasis
 p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0j0
 p250
-p2p}
+p2Pw
 p2{l
 p4Z3
 p5Z3
 p5\nL,
 p618
-p6@\vU
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pActivator
@@ -29711,7 +29708,6 @@ pFilter
 pG_*h
 pIp 
 pJointName
-pLmO
 pLocationEntity
 pMaterialGroup
 pMeshGroupName
@@ -29929,6 +29925,7 @@ payload + padding <= 16381
 payment gateway capabilities
 payment_row_usd
 payment_us_usd
+pbPw
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -29942,7 +29939,6 @@ pbeWithSHA1And40BitRC2-CBC
 pbeWithSHA1And40BitRC4
 pbeWithSHA1AndDES-CBC
 pbeWithSHA1AndRC2-CBC
-pbp}
 pcPathLengthConstraint
 pearlescent
 pedestal display model
@@ -30545,7 +30541,7 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
-r\vpT
+r\vp4
 rad2deg
 radio.go
 radio.letsgo
@@ -33023,6 +33019,7 @@ uvs are all identical
 uxX/
 v'A>M6
 v)56
+v0-U
 v0o/5
 v1(0)
 v1GZ
@@ -33047,7 +33044,6 @@ vF'l
 vForward
 vHingeAxis
 vOrigin
-vP3U
 vPoint
 vPoint1
 vPoint2

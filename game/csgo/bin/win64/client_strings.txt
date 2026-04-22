@@ -110,9 +110,9 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j
+ (08@HPX`j 
  (08@HPXb
- (08@HPZ
+ (08@HPZ 
  (08@HR
  (0X`hpz
  (DEFAULT)
@@ -163,7 +163,6 @@
  [via entity lump b/c no save data for '%s' - first visit to map]
  \n\vbounds_maxs
  \n\vbounds_mins
- \n\vpunch_angle
  \n\vtranslation
  \n\vview_angles
  \t\n\r@()[]{}=&,:*|;'!
@@ -2201,7 +2200,7 @@ $taser_charge
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
-%n4XQ
+%n4hP
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -2644,6 +2643,7 @@ $taser_charge
 (.CPlayer_SetPerFriendPreferences_Request
 (0'yX
 (0x%08X)'??'
+(4pu
 (5Me
 (5jP
 (ACTIVE)
@@ -2894,7 +2894,6 @@ $taser_charge
 (\v2\v.CEntityMsg"g\n
 (\v2\v.CMsgQAngle"#\n
 (\v2\v.CMsgQAngle"J\n CCSUsrMsg_RecurringMissionSchema
-(\v2\v.CMsgQAngle*?\n
 (\v2\v.CMsgVector"
 (\v2\v.CMsgVector"1\n
 (\v2\v.CMsgVector"B\n
@@ -2941,7 +2940,7 @@ $taser_charge
 ).CPlayer_GetPerFriendPreferences_Response"M
 ).CPlayer_SetCommunityPreferences_Response"+
 ).CPlayer_SetPerFriendPreferences_Response"G
-)24(P
+)248O
 )4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )A service for accessing Steam player dataB
 )App Id this file is being published FROM.
@@ -3124,7 +3123,7 @@ $taser_charge
 ,\n\nsv_interp1
 ,\n\vvictim_slot
 ,ar_monastery
-,d;4HP
+,d;4XO
 ,fQM(
 ,h11]
 ,hmQ#
@@ -7627,7 +7626,6 @@ $taser_charge
 .?AVCCSPlayer_WaterServices@@
 .?AVCCSPlayer_WeaponServices@@
 .?AVCCSPortraitWorldSystem@@
-.?AVCCSPredictionEvent_AddAimPunch@@
 .?AVCCSPredictionEvent_DamageTag@@
 .?AVCCSReplayObserverHandler@@
 .?AVCCSSteamVideo@@
@@ -10934,10 +10932,12 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR
+08@HR 
 08@J
+08B 
 08bX
 09,h
+0:0q
 0;Q5[
 0<cz
 0M2~@p
@@ -11209,7 +11209,6 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpT
 2^pV
 2a"l
 2bT~
@@ -11302,7 +11301,7 @@ $taser_charge
 4tpD
 4zj@1;IJ
 4|2;#GameUI_Retake_Card_LightEmUp,1,1,rifle1,grenade0|2;#GameUI_Retake_Card_Kobe,1,1,rifle1,grenade2|1;#GameUI_Retake_Card_1g,1,1,rifle1,grenade3|1;#GameUI_Retake_Card_DisappearingAct,1,1,rifle1,grenade1|1;#GameUI_Retake_Card_EyesOnTarget,1,1,weapon_aug
-4~38M
+4~3HL
 5'0v2ZP
 5(EWorkshopFileType) Type of Workshop file to publish.
 5(Optional) The number of results, per page to return.
@@ -11351,8 +11350,8 @@ $taser_charge
 6-zeZ
 6144
 62$|S)6f
-648P
 64CK\vH
+64HO
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 6666666666666666C:\buildworker\csgo_rel_win64\build\src\common\opensslwrapper.cpp
 67-s
@@ -11431,7 +11430,8 @@ $taser_charge
 8<pl
 8= zp
 8A6j
-8B38L
+8B0f
+8B3HK
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11528,7 +11528,6 @@ $taser_charge
 ;"lY7
 ;5jNf
 ;83\v\nHBJ7
-;I4xP
 ;LGEW
 ;Qo0
 ;Subtitles and Captions
@@ -11627,6 +11626,7 @@ $taser_charge
 <weapon>
 =!=-=3=7=?=C=o=s=u=y={=
 =&sf9
+=38K
 == %d Entities Dumped\n
 == PulseGraphDef ==\n
 == false\n
@@ -11719,12 +11719,14 @@ $taser_charge
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
+@08ND
 @0pp
-@4XP
+@4hO
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
 @HPX`hv
+@HVP
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11741,6 +11743,7 @@ $taser_charge
 @dKb]
 @fff>fff>fff>fff>
 @ffffff
+@htpu
 @i1V
 @icon_camera
 @icon_character
@@ -11765,7 +11768,6 @@ A9ur
 A<fP
 A>x8
 AA Compromise
-AA:@w
 AAAA-
 AAAA-%.*s
 AABBDirection
@@ -11869,7 +11871,6 @@ AJsN
 ALG_MODULE_INIT
 ALL:!EXPORT:!LOW:!aNULL:!eNULL:!SSLv2
 ALLOW_NODRAW_TARGET
-ALOADOUT_SLOT_CLOTHING_CUSTOMPLAYER
 ALWAYSGIB
 AMMO_TYPE_DECOY
 AMMO_TYPE_FLASHBANG
@@ -11878,6 +11879,7 @@ AMMO_TYPE_HEGRENADE
 AMMO_TYPE_MOLOTOV
 AMMO_TYPE_SMOKEGRENADE
 AMMO_TYPE_TASERCHARGE
+AMoveMountingAmount_t
 ANC[%d]
 ANNOTATION: Distance -- %s -- %f\n
 ANNOTATIONS: hiding node "%s"\n
@@ -12274,7 +12276,7 @@ ApplyCheer
 ApplyStyles
 Applying fallback networking config (%llu bytes)...\n
 Applying overrides for %s 0x%p\n
-Apr 21 2026
+Apr 22 2026
 Arc Cos
 Arc Cosine of input value. Input must be -1.0, 1.0 range. Output in radians, from 0 to 
 Arc Sin
@@ -13366,7 +13368,6 @@ CCSPortraitWorldSystem::GameActivate()\n
 CCSPortraitWorldSystem::GameDeactivate()\n
 CCSPortraitWorldSystem::SpawnImmediate() %s\n
 CCSPortraitWorldSystem::UpdatePortraitWorlds()\n
-CCSPredictionEvent_AddAimPunch
 CCSPredictionEvent_DamageTag
 CCSReplayObserverHandler
 CCSSteamVideo
@@ -14790,7 +14791,6 @@ CSOPersonaDataPublic
 CSOQuestProgress
 CSOVolatileItemClaimedRewards
 CSOVolatileItemOffer
-CSPE_AddAimPunch
 CSPE_DamageTag
 CSPName
 CSPlayerManifest_global_client
@@ -16421,8 +16421,8 @@ D2I_RSA_NET_2
 D2I_X509
 D2I_X509_CINF
 D2Lb!
-D4hP
 D4tp
+D4xO
 D514p
 D@D/lcO+hcK
 D@Dz
@@ -17953,7 +17953,7 @@ F+Zb
 F,mZq
 F/o4
 F2M+
-F3HL
+F3XK
 F6tr
 F7!z
 F9q'
@@ -20830,7 +20830,7 @@ LOG_MESSAGE
 LONG
 LONG_C2I
 LPVIndex
-LS&\nK n
+LS&\nK0m
 LT[N
 LT_txt
 LXKQ
@@ -22244,7 +22244,8 @@ P-256
 P-384
 P-521
 P08@J
-P08J
+P08J@
+P08ND
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
@@ -22758,6 +22759,7 @@ Permit Responses
 Permitted
 Persist
 PersonalStore
+Pf0l
 Phoenix Compound
 PhysDisableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
 PhysEntityCollisionsAreDisabled called on entities in two different scene worlds (%s - %u vs %s - %u)\n
@@ -22917,6 +22919,7 @@ Playsoundscape %s:Unknown command %s\n
 Please specify 0 or 1 with the -stream Parameter\n
 Pm8A?
 PmR"H?
+Pn0m
 Point entity.
 PointsAnim
 Policy Qualifier CPS
@@ -23393,7 +23396,6 @@ RULESHERE
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpT
 R]Di
 Rad2 Deg
 Radar
@@ -23543,7 +23545,6 @@ RefractDepth
 RefractOpaqueDetph
 Refresh
 Refresh reachable datacenters.
-RefreshActiveInventoryList
 RefreshDisplay
 RefreshEnum
 RefreshPickemPage
@@ -24936,6 +24937,7 @@ Show the team select menu with mock data passed in.
 Show vote context menu in pause menu
 Show/hide equipment for the current team
 ShowAcceptPopup
+ShowAcknowledgePopup
 ShowActiveTournamentPage
 ShowAndHide
 ShowArrow
@@ -27145,7 +27147,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr
+X`hr 
 Xd3h
 XfJ7
 XjfR
@@ -27461,7 +27463,6 @@ Z~wl
 \n1CQuest_PublisherAddCommunityItemsToPlayer_Request
 \n2CMsgGCCStrike15_v2_MatchListTournamentOperatorMgmt
 \n2CMsgGCCStrike15_v2_MatchmakingGC2ClientSearchStats
-\n30K
 \n3CMsgGCCStrike15_v2_ServerNotificationForUserPenalty
 \n3CPlayer_GetMutualFriendsForIncomingInvites_Response
 \n5a=Z
@@ -28402,10 +28403,9 @@ _util_drawtext_pos
 _var
 _xU`u
 _}eOk
-`20i
 `28)fk
+`2Pl
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`6pb
 `:zQF
 `D$daM-l
 `DZG
@@ -28436,6 +28436,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
+aBvD
 aD/x
 aDSS
 aECDH
@@ -33402,10 +33403,9 @@ i2d_SSL_SESSION
 i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
-i4HQ
+i4XP
 i4a."
 i5BH
-i@Q3
 iA5StringSyntax
 iAmmoType
 iC!l
@@ -34799,7 +34799,7 @@ lC57
 lDcW
 lM2p
 l\n\fexcludedtags
-l`w4xQ
+l`w4
 label_token
 ladder
 ladder_angle_yaw
@@ -36990,7 +36990,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0j`
+p08@H^D
+p20f
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37007,7 +37008,6 @@ p4Z3
 p5Z3
 p5\nL,
 p618
-p6pn
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pAm_nModelID
@@ -37017,6 +37017,7 @@ pD4t
 pData->GetDataDescMap() == pTemplateDataMap
 pDescription
 pDest
+pF p
 pField
 pFilter
 pG_*h
@@ -37027,10 +37028,10 @@ pO0h
 pOtherEntity
 pPose != nullptr
 pRTH
+pRefreshActiveInventoryList
 pRequest
 pSPo
 pSequenceName
-pShowAcknowledgePopup
 pSource
 pSourceFunc
 pSpawnedEntityName
@@ -38038,7 +38039,7 @@ r$0I
 r-IE
 r184
 r3A~
-r4hQ
+r4xP
 r<\rND
 rAGW
 rB2pBB
@@ -39959,6 +39960,7 @@ t(ydU
 t+RW
 t0;?ZlP*m
 t2U 
+t3(L
 t4O_
 t80z
 tA`KO/3G!\n7h=
@@ -41837,7 +41839,7 @@ y#y&Jb
 y-offset
 y0JY
 y2Cu
-y3(M
+y38L
 y;w9
 y>?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
 y?iLa

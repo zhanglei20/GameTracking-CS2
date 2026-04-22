@@ -30,7 +30,7 @@
 				</Panel>
 				<Panel id="id-xpshop-tile-limitedtimer" class="xpshop__item-tile__limitedtimer hidden">
 					<Panel class="left-right-flow width-fit-children">
-						<Image src="s2r://panorama/images/icons/ui/timer.vsvg" textureheight="14" texturewidth="-1" />
+						<Image src="s2r://panorama/images/icons/ui/timer.vsvg" textureheight="12" texturewidth="-1" />
 						<Label class="stratum-medium right-margin-4 fontcolor-white" html="true" text="{s:limitedtimeleft}" />
 					</Panel>
 				</Panel>

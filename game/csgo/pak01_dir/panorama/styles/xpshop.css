@@ -343,7 +343,7 @@
 {
 	height: 42px;
 	margin-right: 8px;
-	img-shadow: 0px 4px 12px 0 rgba(0, 0, 0, 0.13);
+	img-shadow: 0px 4px 12px 0 rgba(0, 0, 0, 0.493);
 }
 
 .xpshop__item-tile .xpshop__item-tile__limitedtimer
@@ -351,9 +351,10 @@
 	vertical-align: bottom;
 	horizontal-align: right;
 	width: fit-children;
-	margin: 0px 8px 4px 0px;
 	z-index: 3;
-	max-width: 90%;
+	width: 100%;
+	margin-left: 15px;
+	margin-bottom:4px;
 }
 
 .xpshop__item-tile .xpshop__item-tile__limitedtimer Label
@@ -363,8 +364,9 @@
 	margin: 0px;
 	horizontal-align:right;
 	text-align: right;
-	height: 14px;
+	height: 13px;
 	vertical-align: center;
+	text-overflow: ellipsis;
 }
 
 .xpshop__item-tile .xpshop__item-tile__limitedtimer Image
@@ -372,7 +374,6 @@
 	wash-color: rgba( 200, 220, 240, 0.7 );
 	vertical-align: center;
 	margin-right: 2px;
-	text-overflow: shrink;
 }
 
 .xpshop__item-tile .xpshop__item-tile__points
@@ -385,6 +386,7 @@
 .xpshop__item-tile .xpshop__item-tile__points Image
 {
 	wash-color: xpshop-green;
+	transform: translateY(-2px);
 	vertical-align: center;
 }
 
