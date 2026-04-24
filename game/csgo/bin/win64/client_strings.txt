@@ -110,11 +110,12 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j 
- (08@HPXb
- (08@HPZ 
- (08@HR
- (0X`hpz
+ (08@HPX`j
+ (08@HPXbPm
+ (08@HPZ
+ (08@HRPm
+ (08@JPm
+ (0X`hpzPm
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -2643,7 +2644,6 @@ $taser_charge
 (.CPlayer_SetPerFriendPreferences_Request
 (0'yX
 (0x%08X)'??'
-(4pu
 (5Me
 (5jP
 (ACTIVE)
@@ -10932,12 +10932,10 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR 
-08@J
-08B 
+08@HR
+08@JPm
 08bX
 09,h
-0:0q
 0;Q5[
 0<cz
 0M2~@p
@@ -11209,6 +11207,7 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
+2\vpd
 2^pV
 2a"l
 2bT~
@@ -11430,7 +11429,6 @@ $taser_charge
 8<pl
 8= zp
 8A6j
-8B0f
 8B3HK
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
@@ -11719,14 +11717,12 @@ $taser_charge
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08ND
 @0pp
 @4hO
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
-@HPX`hv
-@HVP
+@HPX`hv@
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11743,7 +11739,6 @@ $taser_charge
 @dKb]
 @fff>fff>fff>fff>
 @ffffff
-@htpu
 @i1V
 @icon_camera
 @icon_character
@@ -12276,7 +12271,6 @@ ApplyCheer
 ApplyStyles
 Applying fallback networking config (%llu bytes)...\n
 Applying overrides for %s 0x%p\n
-Apr 22 2026
 Arc Cos
 Arc Cosine of input value. Input must be -1.0, 1.0 range. Output in radians, from 0 to 
 Arc Sin
@@ -22243,13 +22237,15 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08J@
-P08ND
+P08@JPm
+P08J
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
+P2Pm
 P5[1
+P6Pe
+P:Pm
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -22759,7 +22755,6 @@ Permit Responses
 Permitted
 Persist
 PersonalStore
-Pf0l
 Phoenix Compound
 PhysDisableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
 PhysEntityCollisionsAreDisabled called on entities in two different scene worlds (%s - %u vs %s - %u)\n
@@ -22919,7 +22914,6 @@ Playsoundscape %s:Unknown command %s\n
 Please specify 0 or 1 with the -stream Parameter\n
 Pm8A?
 PmR"H?
-Pn0m
 Point entity.
 PointsAnim
 Policy Qualifier CPS
@@ -23388,7 +23382,6 @@ RSA_verify
 RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
-RSDSd
 RT %dx%d %s %s : %d Bytes\n
 RT_txt
 RTime32
@@ -23396,6 +23389,7 @@ RULESHERE
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
+R\vpd
 R]Di
 Rad2 Deg
 Radar
@@ -27147,7 +27141,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr 
+X`hr
 Xd3h
 XfJ7
 XjfR
@@ -28404,7 +28398,7 @@ _var
 _xU`u
 _}eOk
 `28)fk
-`2Pl
+`2Pm
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `:zQF
 `D$daM-l
@@ -28436,7 +28430,6 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
-aBvD
 aD/x
 aDSS
 aECDH
@@ -33286,6 +33279,7 @@ hour
 hours
 houseIdentifier
 hover
+hpzPm
 hr_H
 href="
 hscroll
@@ -36990,9 +36984,9 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^D
-p20f
+p0j 
 p250
+p2Pm
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
 p2p_Ping
@@ -37007,6 +37001,7 @@ p2{l
 p4Z3
 p5Z3
 p5\nL,
+p60h
 p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
@@ -37017,7 +37012,6 @@ pD4t
 pData->GetDataDescMap() == pTemplateDataMap
 pDescription
 pDest
-pF p
 pField
 pFilter
 pG_*h

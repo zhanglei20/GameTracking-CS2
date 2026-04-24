@@ -283,6 +283,7 @@ GetNearestNav: Pos Invalid
 GetNearestNav: Start Position
 GetNearestNav: Success! Returning area [%d]
 GetNearestNav: [%d] Areas that failed poly test
+HeQyA
 Hide unless error/warning occurs
 IslandRemoval
 IslandRemoval - unable to find a poly near navlink location %g %g %g\n
@@ -344,6 +345,7 @@ Polyclip : Generating connections...
 Polyclip : Optimising to Quads...
 Polyclip pipeline: \n
 PropWorldOrigin
+RSDSZ
 Raw Contours
 Recast
 Recast: 

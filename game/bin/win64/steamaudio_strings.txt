@@ -3110,7 +3110,7 @@ RSA_verify
 RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
-RSDS*
+RSDS3z"
 R\r1>Vp
 R]Di
 Rbg.E
@@ -4738,6 +4738,7 @@ eODj
 eTU\n
 eXQd
 e\tcCPtH
+ea@C
 ec group new by name failure
 ec_GF2m_simple_group_check_discriminant
 ec_GF2m_simple_group_set_curve

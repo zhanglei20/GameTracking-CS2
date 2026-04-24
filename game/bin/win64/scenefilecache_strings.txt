@@ -1,7 +1,6 @@
   %20s = '%s' (weight %f)\n
   %20s = '%s'\n
   criterion '%25s':'%15s' 
-!Ylt
 %s | %s:  discarded rule because of invalid criterion %i:  %s\n
 %s%20s : %40s %5.3f\n
 %s(token %i) : %s
@@ -682,7 +681,6 @@ RESPONSE_RESPONSE
 RESPONSE_RULES
 RESPONSE_SCENE
 RESPONSE_SPEAK
-RSDS4
 RULE MATCHED!\n
 RampCountChanged
 Reading: %s\n

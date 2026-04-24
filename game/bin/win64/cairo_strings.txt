@@ -14,7 +14,6 @@
   path: %s\n
   source: %s\n
 ####$$$$%%%%&&&&''''(((())))****++++
-#FnJ
 %.18f
 0000111122223333444455556666777788889999::::;;;;<<<<====>>>>
 1.15.4
@@ -75,7 +74,6 @@ OVERLAY
 Oblique
 PIXMAN_DISABLE
 Pixman bug: unknown image type\n
-RSDS=X1
 Roman
 SATURATE
 SCREEN

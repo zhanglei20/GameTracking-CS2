@@ -33,6 +33,7 @@
  ** Entrypoint For Method '%s'
  *:!focus { margin: 1px; padding: 1x; border: 2px solid rgb( 0, 0, 0 ); }
  + %lld bytes
+ 3GK_
  <-- Arg '%s'
  <-- Retval '%s'
  ?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
@@ -84,6 +85,13 @@
 !root
 " ?timerEvent@QListView@@MEAAXPEAVQTimerEvent@@@Z
 " connected\n
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T14:36:57-07:00" xmp:MetadataDate="2023-05-02T14:36:57-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:151f0a0f-c466-c241-b635-d5ce3063e5be" xmpMM:DocumentID="adobe:docid:photoshop:4a1dab67-1829-dd47-9ecb-fd44469a1804" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="14" exif:PixelYDimension="14"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:f7caaef1-6a96-2a48-9847-6211a71c9d6e" stEvt:when="2023-05-02T14:36:57-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:151f0a0f-c466-c241-b635-d5ce3063e5be" stEvt:when="2023-05-02T14:36:57-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:f7caaef1-6a96-2a48-9847-6211a71c9d6e" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T14:37:30-07:00" xmp:MetadataDate="2023-05-02T14:37:30-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:58ea1f16-88de-1443-bcd5-a2ea7281971b" xmpMM:DocumentID="adobe:docid:photoshop:508d1f02-c5d0-164c-aa95-4cdc013b3b9d" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="14" exif:PixelYDimension="14"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:6312c325-63a9-f24d-9f7a-349bee639664" stEvt:when="2023-05-02T14:37:30-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:58ea1f16-88de-1443-bcd5-a2ea7281971b" stEvt:when="2023-05-02T14:37:30-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:6312c325-63a9-f24d-9f7a-349bee639664" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T14:37:55-07:00" xmp:MetadataDate="2023-05-02T14:37:55-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:d358f588-c3ff-4540-bb2e-ab4e96d7a7ba" xmpMM:DocumentID="adobe:docid:photoshop:cd96ee09-f23a-6147-aa4e-e9b7a3ee136e" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="14" exif:PixelYDimension="14"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:a8065cfb-181a-3b45-abd3-6164d3dc2af1" stEvt:when="2023-05-02T14:37:55-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:d358f588-c3ff-4540-bb2e-ab4e96d7a7ba" stEvt:when="2023-05-02T14:37:55-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:a8065cfb-181a-3b45-abd3-6164d3dc2af1" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmp:CreatorTool="Adobe Photoshop 24.2 (Windows)" xmp:CreateDate="2023-05-16T15:33:16-07:00" xmp:ModifyDate="2023-05-16T17:33:22-07:00" xmp:MetadataDate="2023-05-16T17:33:22-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:41ebadb0-9c4d-3443-8a8e-c584acaba6b3" xmpMM:DocumentID="adobe:docid:photoshop:1409980f-538c-004f-a30d-33b9a3bca48c" xmpMM:OriginalDocumentID="xmp.did:e663ab67-fa09-b947-842d-161d2bb54bb0"> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:e663ab67-fa09-b947-842d-161d2bb54bb0" stEvt:when="2023-05-16T15:33:16-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:41ebadb0-9c4d-3443-8a8e-c584acaba6b3" stEvt:when="2023-05-16T17:33:22-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2014-07-22T17:28:16-07:00" xmp:MetadataDate="2023-05-16T15:33:00-07:00" xmp:ModifyDate="2023-05-16T15:33:00-07:00" dc:format="image/png" xmpMM:InstanceID="xmp.iid:70dca6ba-8156-f847-b72a-3f89ec0d1357" xmpMM:DocumentID="adobe:docid:photoshop:741433e6-d0f8-be4b-a8e3-c8a483b90b95" xmpMM:OriginalDocumentID="xmp.did:7C75E0A1FF11E411850AA13E28C147C4" photoshop:ColorMode="3" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="16" exif:PixelYDimension="16"> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:7C75E0A1FF11E411850AA13E28C147C4" stEvt:when="2014-07-22T17:28:16-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:7F75E0A1FF11E411850AA13E28C147C4" stEvt:when="2014-07-22T17:36:44-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:a49dbea6-ee0f-e540-b098-ca3d8ea9d8bb" stEvt:when="2023-05-16T15:33:00-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:70dca6ba-8156-f847-b72a-3f89ec0d1357" stEvt:when="2023-05-16T15:33:00-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:a49dbea6-ee0f-e540-b098-ca3d8ea9d8bb" stRef:documentID="xmp.did:7C75E0A1FF11E411850AA13E28C147C4" stRef:originalDocumentID="xmp.did:7C75E0A1FF11E411850AA13E28C147C4"/> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0062C125FDECE3118380C132D5657760</rdf:li> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:0F3A4C43EDE1E3118A4DD0FB6B6DA7B8</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:46AF812C2911E411AA4FA16065678800</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:68FAB29484DCE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:6A945CAB2A55E2118A87DE6F7E37EF82</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:84B599CBCBE5E3118A4DD0FB6B6DA7B8</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8EAEF2FA07206811871FC2842A0EC0DA</rdf:li> <rdf:li>xmp.did:9396FA9BACF1E311B93E88A43E96ECB4</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BE7455C56C06E211AB9AFFA8D688EE9B</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:D00FFCC6ADEDE311924BCEB213EBAC59</rdf:li> <rdf:li>xmp.did:DCE84491BCFCE31181A6DA8B89FC9D3F</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.c0204b2, 2023/02/09-06:26:14        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T16:38:14-07:00" xmp:MetadataDate="2023-05-02T16:38:14-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:9ac6a27e-1178-e441-a69d-482965dae103" xmpMM:DocumentID="adobe:docid:photoshop:f21d44d2-802f-da4a-b197-ea6fb332a30e" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="20" exif:PixelYDimension="20"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:9bb9bfa6-13b8-b24e-8f8f-9673c93c2712" stEvt:when="2023-05-02T16:38:14-07:00" stEvt:softwareAgent="Adobe Photoshop 24.3 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:9ac6a27e-1178-e441-a69d-482965dae103" stEvt:when="2023-05-02T16:38:14-07:00" stEvt:softwareAgent="Adobe Photoshop 24.3 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:9bb9bfa6-13b8-b24e-8f8f-9673c93c2712" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>@W
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.c0204b2, 2023/02/09-06:26:14        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T16:56:31-07:00" xmp:MetadataDate="2023-05-02T16:56:31-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:29b91465-e533-0044-867c-7864f68b898d" xmpMM:DocumentID="adobe:docid:photoshop:3f24f070-e01a-c34c-be23-cdf87dd94db3" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="20" exif:PixelYDimension="20"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:2b609727-5c36-d74c-a334-3a62b46479df" stEvt:when="2023-05-02T16:56:31-07:00" stEvt:softwareAgent="Adobe Photoshop 24.3 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:29b91465-e533-0044-867c-7864f68b898d" stEvt:when="2023-05-02T16:56:31-07:00" stEvt:softwareAgent="Adobe Photoshop 24.3 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:2b609727-5c36-d74c-a334-3a62b46479df" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
 "%s": Bad mode
 "%s": Information lost writing value (%g) as (unsigned) RATIONAL
 "?updateEditorData@QAbstractItemView@@MEAAXXZ
@@ -162,7 +170,7 @@
 #?winId@QWidget@@QEBA_KXZ
 #?window@QWidget@@QEBAPEAV1@XZ
 #CfU7
-#EFr
+#EJp
 #FFFF00
 #JAn
 #\f?focusNextPrevChild@QTextEdit@@MEAA_N_N@Z
@@ -170,6 +178,7 @@
 #\r?hide@QWidget@@QEAAXXZ
 #bnS
 #gx5\v
+#syy2
 #zOJ
 $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 $#T2Q
@@ -213,6 +222,7 @@ $t5\tEi\fo
 %d register(s) %d byte(s)\n
 %d trace results\n
 %daT
+%dg3
 %lu: Row out of range, max %lu
 %lu: Sample out of range, max %lu
 %s %s decoding is not implemented
@@ -291,6 +301,7 @@ $t5\tEi\fo
 & ?timerEvent@QMenuBar@@MEAAXPEAVQTimerEvent@@@Z
 &Devices
 &Help
+&IDAT8
 &Main
 &Tools
 &Viewers
@@ -309,6 +320,7 @@ $t5\tEi\fo
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
 (7dt!
 (Custom Colors Disabled)
+(ECC
 (Filter)
 (None Available)\n
 (Primary)
@@ -317,7 +329,9 @@ $t5\tEi\fo
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
 (bLLDc
+(d.9QN
 (i En
+(iCC
 (p8m
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )HBp
@@ -352,12 +366,14 @@ $t5\tEi\fo
 ,"?updateGeometries@QTableView@@MEAAXXZ
 ,4R\nm
 ,91GJ:R,
+,U0YNB
 ,xts
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
 -----------------------------------\n
 ------------------------\n
+-5dI
 -> Success (%d attempts)\n
 -Q"Ej
 -UUSW
@@ -943,10 +959,14 @@ $t5\tEi\fo
 0.0.0.0
 0012host:track-devices
 015@
+01G@
 027@
+02G@
 03j3
+04G@
+05G@
+05H@
 067@
-06F@
 095@
 099i 
 0B7@
@@ -954,19 +974,28 @@ $t5\tEi\fo
 0C7@
 0E6@
 0G6@
+0GG@
+0IDAT8
+0LG@
+0NG@
 0O7@
 0Ou"@
 0P7@
+0PG@
 0R7@
+0SG@
 0U7@
+0VG@
+0WG@
+0WH@
 0Y6@
 0Z6@
+0ZH@
 0a)Y
 0a7@
+0aG@
 0b2@
-0bF@
 0c4@
-0cF@
 0d2@
 0e2@
 0f2@
@@ -992,13 +1021,12 @@ $t5\tEi\fo
 0x%llx
 0x%p = %s '%s'
 0y5@
-0zP@
 1"?updateGeometry@QWidget@@QEAAXXZ
 1&im*
-11:30:25
-11:30:30
 127.0.0.0
 127.0.0.1:%d
+16:00:32
+16:00:56
 16];h
 16yd
 172.16.0.0
@@ -1225,6 +1253,7 @@ $t5\tEi\fo
 1ddd
 1deleteLater()
 1iOq
+1iTXtXML:com.adobe.xmp
 1map()
 1nZx
 1reject()
@@ -1319,7 +1348,6 @@ $t5\tEi\fo
 2valueChanged( int )
 2valueChanged(int)
 3*9Y
-3-tS
 32222222
 332E
 333333
@@ -1332,6 +1360,7 @@ $t5\tEi\fo
 3\v?event@QApplication@@MEAA_NPEAVQEvent@@@Z
 3wn;7:
 4)Br
+49-8
 497@
 4>G1_
 4EnP6AI
@@ -1365,7 +1394,7 @@ $t5\tEi\fo
 7"\nc3l
 7&F|If
 7?F|pX
-7N\tmI+
+7D4L
 7Q<g
 7RL7o
 7T2,
@@ -1373,9 +1402,12 @@ $t5\tEi\fo
 7^#OC\vO^r
 7i^1
 7o4&
+7u{7"
 8"3hrf
 8&Kx
+81G@
 825@
+82G@
 855@
 877@
 895@
@@ -1383,14 +1415,17 @@ $t5\tEi\fo
 8D7@
 8F7@
 8I6@
-8J;i
 8L7@
+8NG@
+8PG@
 8R5@
+8R7)
 8S7@
-8SF@
 8V6@
 8WWWs
 8X6@
+8XH@
+8XU%
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
@@ -1443,7 +1478,6 @@ $t5\tEi\fo
 :\f?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
 :\n?doSetTextCursor@QPlainTextEdit@@MEAAXAEBVQTextCursor@@@Z
 :\v?canRead@QImageReader@@QEBA_NXZ
-:a`oh
 :gqh-
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
 ;\v?event@QDialogButtonBox@@MEAA_NPEAVQEvent@@@Z
@@ -1454,6 +1488,7 @@ $t5\tEi\fo
 ;wDNE
 <$GAME_OR_CORE>
 <54c
+<?xpacket begin="
 <AHB
 <NONE>
 <\f?deallocate@QArrayData@@SAXPEAU1@_K1@Z
@@ -1472,7 +1507,6 @@ $t5\tEi\fo
 =HA5
 =IDAT(
 =M3B
-=fff?
 =hSa
 =lUAnh%
 =m_bUseShadowFastPath
@@ -1808,7 +1842,6 @@ $t5\tEi\fo
 ?QStringList_join@QtPrivate@@YA?AVQString@@PEBVQStringList@@PEBVQChar@@H@Z
 ?Tmx;
 ?Unable to read file %s\n
-?Xnwf
 ?\f?debug@QMessageLogger@@QEBA?AVQDebug@@XZ
 ?\v?event@QFontComboBox@@MEAA_NPEAVQEvent@@@Z
 ?about@QMessageBox@@SAXPEAVQWidget@@AEBVQString@@1@Z
@@ -3170,7 +3203,6 @@ $t5\tEi\fo
 @\tFFQb
 @\tV_isinfd
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
-@eWq
 @fff>fff>fff>fff>
 @iJT
 @spawn
@@ -3209,7 +3241,6 @@ AMDeviceStopSession
 AMDeviceValidatePairing
 ASSERT\nColor
 ATp\n
-A[Uk
 A\n?document@QTextEdit@@QEBAPEAVQTextDocument@@XZ
 About VConsole2
 About...
@@ -3376,6 +3407,7 @@ C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_hitboxes.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_sky.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\toolrenderutils.cpp
 C@HY
+C@ag
 CADBInterface::PumpEvents() logcat fiber exited for [%s]\n
 CAppleMobileDeviceInterface::InternalStartSyslogService() could not retrieve socket for service com.apple.syslog_relay on device [%s]\n
 CAppleMobileDeviceInterface::InternalStartSyslogService() failed to start service com.apple.syslog_relay on device [%s]\n
@@ -4000,6 +4032,7 @@ E9TD
 E<G&Iw
 ED\Sd"
 EHVcp
+EN\4
 ERROR! LoadFromJPG( %s ) failed!\n
 ERROR! LoadFromPNG( %s ) failed!\n
 ERROR! LoadFromWebP( %s ) failed!\n
@@ -4067,7 +4100,6 @@ ExtraSamples
 F"a7
 F'6Q
 F5}H
-FAB\nA
 FBDG
 FCToolSceneLightRig
 FIDAT8
@@ -4160,6 +4192,7 @@ FreeOffsets
 G channel not found!\n
 GL h
 GPSIFDOffset
+GRM"]M
 GVB&g9
 GZTI
 G[?setRgb@QColor@@QEAAXHHHH@Z
@@ -4210,24 +4243,35 @@ Group4Options
 GvZ<3
 H!0kZj
 H15@
+H1G@
 H27@
+H2G@
+H3G@
 H45@
+H9@C
 HAC K  Unused Binding
 HCto
 HI7@
 HJ7@
 HKEY_CURRENT_USER\Software\Valve\GeoView
 HM7@
+HMAC
+HNG@
+HPG@
 HR7@
 HT7@
 HV &G
 HV.J
+HWH@
 HY6@
+HZH@
 H\fBp
 Hack Dota Layer Opaque
 Hack Dota Layer Opaque Translucent
 HalftoneHints
+HbH@
 Hc4@
+HcG@
 Hd2@
 Header Color
 Header Color...
@@ -4252,6 +4296,7 @@ Highlight Line Matches
 HighlightColor
 HighlightedText
 Hj7@
+Hj~7!
 Hl2@
 Hmx\
 Ho6@
@@ -4271,10 +4316,12 @@ Hx6@
 Hx7@
 Hy5@
 Hy6@
+Hy?C
+HyAC
 Hz6@
-HzIz
 H}Go-
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
+I"AC
 IBindTarget
 IBindableCameraScene
 IBrs
@@ -4284,10 +4331,10 @@ IConVarDetailsCallback
 IDAT
 IDAT(
 IDAT8
-IDAT8O
 IDAT<
 IDATx
 IEND
+IEgwNXt
 IHelpChangeListener
 IHitTestable
 II+4
@@ -4399,6 +4446,7 @@ JA\rT@ibn
 JE[ul
 JPEG
 JQ\fy
+JRCmm
 JSKsw
 J\f?font@QApplication@@SA?AVQFont@@XZ
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
@@ -4408,10 +4456,10 @@ Je@4
 Jump to Instr I%d
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 K"O*i
+K+Da
 K/UPK
 K8w~\v
 KCL+
-KIDAT8
 KTHE
 K\r?hitButton@QRadioButton@@MEBA_NAEBVQPoint@@@Z
 K\v?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
@@ -4951,11 +4999,16 @@ Overwrite With Current
 P"?updateSection@QHeaderView@@IEAAXH@Z
 P05y
 P17@
+P1G@
 P25@
+P2G@
+P3G@
+P4H@
 P55@
+P5G@
 P67@
+P6G@
 P77@
-P7F@
 P87@
 P97@
 P=B A
@@ -4964,21 +5017,31 @@ P?isValidColor@QColor@@SA_NAEBVQString@@@Z
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
 P?keyboardModifiers@QGuiApplication@@SA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
+PAG@
+PBG@
 PC7@
 PD5@
 PI7@
 PIDAT8
+PJD<
+PJE=9'
 PJIa"\v
 PN7@
+PNG@
 PO7@
 POISONED 
 PP7@
+PQ]D?
 PRP\vI
 PU7@
+PUG@
 PURH
 PV6@
 PW6@
+PXH@
 PY7@
+PYG@
+PZG@
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 P\vFE
 PackBits
@@ -5002,13 +5065,15 @@ PasteColor
 PatternType
 Pb2@
 Pb5@
+PbG@
 Pc2@
+PcG@
 Pd4@
-PdF@
 Pe2@
 PerVertexLighting
 Pf2@
 Pf4@
+PfH@
 PgDn
 PgUp
 Ph2@
@@ -5031,12 +5096,12 @@ PlaceholderText
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Please close and restart VConsole to update!
+PnH@
 Po6@
 Policy
 Port: (Default = %1)
 Pp6@
 Pq6@
-PqF@
 Pr6@
 Predictor
 PredictorEncodeTile
@@ -5146,12 +5211,10 @@ RCON
 RCON server connection address: %s\n
 RCON: 
 RGBA\t%1\t%2\t%3\t%4
-RH^0#
 RJk`
 RMouse
 RMouseDoubleClick
 RO^k
-RSDSo
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\r?hitTestComplexControl@QProxyStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
@@ -5540,6 +5603,7 @@ T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
 T?primaryScreen@QGuiApplication@@SAPEAVQScreen@@XZ
+TBZU
 TBbUI
 TGA (*.tga)
 TIFFAppendToStrip
@@ -5662,7 +5726,6 @@ TransferFunction
 Truncated header.
 TrySendVNotify - SendKV3 failed\n
 U5B$z
-U5gE
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QRegularExpressionValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -5675,6 +5738,7 @@ UITextureOnModel
 UL_x\n
 USBMuxConnectByPort
 UUQD
+UYOSQ
 UZ?setMask@QPixmap@@QEAAXAEBVQBitmap@@@Z
 U\8h(
 U\r?home@QTextBrowser@@UEAAXXZ
@@ -5843,8 +5907,11 @@ W~1Z
 X to the Y power
 X05@
 X15@
+X1G@
 X27@
+X2G@
 X35@
+X3G@
 X65@
 X85@
 X8\r,z
@@ -5866,6 +5933,7 @@ X?setCoordinateMode@QGradient@@QEAAXW4CoordinateMode@1@@Z
 X?setDashOffset@QPen@@QEAAXN@Z
 X?setDashPattern@QPen@@QEAAXAEBV?$QVector@N@@@Z
 XB7@
+XBG@
 XC5@
 XClipPathUnits
 XD7@
@@ -5878,16 +5946,19 @@ XNML
 XP6@
 XPosition
 XResolution
+XVH@
+XW%\vC
 XX?setBackground@QPainter@@QEAAXAEBVQBrush@@@Z
+XYH@
 XYY~
 XYZ, Luv
 XZ6@
 X[[CY
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
-XaF@
 Xb4@
 Xbox VDP is not supported on this platform.
+XcG@
 Xd2@
 Xg2@
 XhD?\
@@ -5897,7 +5968,7 @@ Xm8;
 Xo6@
 Xp6@
 Xp7@
-XpF@
+Xq@C
 Xs6@
 Xs7@
 Xu5@
@@ -5906,6 +5977,7 @@ Xy5@
 Xy6@
 Xz6@
 Xz7@
+X}zl
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
 Y?setDecimals@QDoubleValidator@@QEAAXH@Z
@@ -5926,7 +5998,6 @@ YW?rgb@QColor@@QEBAIXZ
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 YawCameraLeft
 YawCameraRight
-YbOo
 YdV%#
 Yga!
 Yield, Resume=%s
@@ -5970,6 +6041,7 @@ Z~!|L8\v1H
 [%1 Data]
 [***INVALID INSTRUCTION %d (%s)***]\n
 [7iA
+[7w9,6
 [?setPointSizeF@QFont@@QEAAXN@Z
 [?setPos@QCursor@@SAXHH@Z
 [?setStops@QGradient@@QEAAXAEBV?$QVector@U?$QPair@NVQColor@@@@@@@Z
@@ -5997,7 +6069,6 @@ Z~!|L8\v1H
 [\v?event@QScrollArea@@MEAA_NPEAVQEvent@@@Z
 [command] : List commands/usage
 [p'pz3
-[qev
 \67B
 \?setWidth@QPen@@QEAAXH@Z
 \SteamApps\
@@ -6057,6 +6128,7 @@ Z~!|L8\v1H
 \fz0$vZ 
 \n------------------------------\n
 \n0DI
+\n3 RZh
 \n5ii
 \n?bits@QImage@@QEAAPEAEXZ
 \n?blue@QColor@@QEBAHXZ
@@ -6205,6 +6277,7 @@ Z~!|L8\v1H
 \t?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
 \t@@@@@@@@@@@@@@@@{N{N{N{N{N{N{N{N
 \tIDAT8
+\tMsn\f
 \tNew Line Indented 1 Tab...
 \tT?parent@QWindow@@QEBAPEAV1@XZ
 \tTwZ
@@ -6249,7 +6322,6 @@ Z~!|L8\v1H
 \v?fixup@QSpinBox@@MEBAXAEAVQString@@@Z
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v@mF]UTU
-\vE3k
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
 \vgJK
 ]3RPT
@@ -6269,11 +6341,13 @@ Z~!|L8\v1H
 ^?text@QPalette@@QEBAAEBVQBrush@@XZ
 ^L7B
 ^Q?lighter@QColor@@QEBA?AV1@H@Z
+^R46
 ^T?pixmap@QIcon@@QEBA?AVQPixmap@@AEBVQSize@@W4Mode@1@W4State@1@@Z
 ^W?wQ
 ^\r?horizontalOffset@QTableView@@MEBAHXZ
 ^aza
-_HSQ
+^h/5O
+^xHm
 _PuzD
 _TIFFMergeFieldInfo
 _TIFFSetupFieldInfo
@@ -6308,10 +6382,12 @@ _wjb
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?valueF@QColor@@QEBANXZ
+`IBC
 `Q?lightnessF@QColor@@QEBANXZ
 `T?pixmap@QIcon@@QEBA?AVQPixmap@@HW4Mode@1@W4State@1@@Z
 `W?rgba@QColor@@QEBAIXZ
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
+`qBC
 `qok
 a { text-decoration: underline; color: %1; }
 a:fulltype
@@ -6329,7 +6405,6 @@ activeDeviceType
 activeLogViewer
 active_frame
 adb.exe
-aeh6hF
 align
 allowed_api_features
 allowed_requirements
@@ -6476,7 +6551,6 @@ disableVisualEffects
 displayWindow
 dlBNvz!/u{1?cmR^
 doItemsLayout
-doW/
 dock
 docked_widget
 domain_scope
@@ -6500,6 +6574,7 @@ er'6
 etW.A
 execution_history
 extrasMinimized
+f5Y}
 fTul
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f\r?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
@@ -6570,13 +6645,13 @@ found '%s'\n
 found module '%s' already loaded at 0x%llx\n
 found module '%s', not already loaded at 0x%llx, updating\n
 found pointer in module '%s'\n
-fq[0
 frac
 frameColor
 fwgw
 gAMA
 gDGC
 gJ1T
+gYvg>o
 g\r?enumerator@QMetaObject@@QEBA?AVQMetaEnum@@H@Z
 g\r?horizontalScrollbarAction@QTableView@@MEAAXH@Z
 g\v?event@QTabBar@@MEAA_NPEAVQEvent@@@Z
@@ -6641,30 +6716,36 @@ green
 grid
 group_title
 h*CU
+h0G@
 h17@
 h25@
+h2G@
+h3G@
 h4*3
 h47@
 h55@
 h75@
 h97@
 h<7s
-h<mp
 hJ7@
 hK7@
 hL7@
 hM7@
 hP6@
 hP7@
+hPG@
 hQ7@
 hQXk0F
 hSnX
+hUH@
+hXH@
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?event@QTabWidget@@MEAA_NPEAVQEvent@@@Z
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
 handleDelta
 hb4@
 hbox
+hcG@
 hcenter
 hd2@
 hg2@
@@ -6695,9 +6776,10 @@ hy6@
 hy\teQ
 hz6@
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
+i=TZ
 iN_Uh
-iPUT
 iS.z
+iTXtXML:com.adobe.xmp
 iValueIn
 i\f?forward@QTextBrowser@@UEAAXXZ
 i\r?enumerator@QMetaProperty@@QEBA?AVQMetaEnum@@XZ
@@ -6856,6 +6938,7 @@ models/editor/axis_helper_thick.vmdl
 models/editor/camera.vmdl
 monitor_pid
 must be either LogLUV or LogL
+mz_nR2e
 m|z+wP
 n$Kx
 n,9h=g
@@ -6919,16 +7002,22 @@ outputcolor
 oy1\v
 p"?value@QSpinBox@@QEBAHXZ
 p"vb
+p0G@
+p0N@
 p15@
+p2G@
 p37@
+p3G@
 p57@
 p65@
+p6G@
 p75@
+p7G@
 p85@
-p8F@
 p8d8
 p96@
 p97@
+p>,iO~L
 pB6@
 pCheckpointName
 pCurrentFocusWidget
@@ -6945,8 +7034,10 @@ pG6@
 pH6@
 pI7@
 pJ7@
+pJG@
 pLightRigButton
 pLogViewer
+pMG@
 pModule->%s( 0x%llX )\n
 pN7@
 pO7@
@@ -6954,6 +7045,7 @@ pObject
 pPrevFocusWidget
 pQ5@
 pR7@
+pTG@
 pTagName
 pToWidget
 pToolButton
@@ -6961,9 +7053,12 @@ pToolsVisModeButton
 pTraceResult
 pU7@
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
+pVH@
 pW7@
 pWidget
 pX7@
+pXG@
+pYH@
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 p`?type@QStandardItem@@UEBAHXZ
@@ -6971,6 +7066,7 @@ parent
 parent_cursor_id
 pb2@
 pc2@
+pcG@
 pe2@
 pet_preview_gravity
 pet_preview_underwater
@@ -6989,13 +7085,13 @@ posxyz
 pp6@
 pq6@
 pr6@
-prF@
 previous_value
 propattr_flatten_into_parent_row
 pseudo-
 pt6@
 pu5@
 pu6@
+puG@
 pulse_node_custom_attributes
 pulse_open_graph_id %u %u
 pulse_runtime_lib
@@ -7003,8 +7099,8 @@ pv5@
 pv6@
 pw6@
 px5@
-pxG@
 q12_
+q1AVpx
 q3\f5e{
 qQ?lineTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
@@ -7056,7 +7152,6 @@ s9kjg
 sNNg,
 sO?insertRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 sQ3z
-sRGB
 s_hColoredVertexLayout
 saturate
 scanline
@@ -7193,8 +7288,8 @@ t|AO
 u>DE*
 uE O
 uSf)
+uT82
 uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
-uWt:
 uXcY
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
 u\v?eventFilter@QAbstractItemView@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
@@ -7291,6 +7386,7 @@ vvqpt
 vws;Q2\fd1)%
 w"######################################################
 w(GTf
+w393
 w=$LB
 w@6r
 wNEXtlF_h
@@ -7299,6 +7395,7 @@ w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 waiting_group
 warn
 white
+wjk.g
 wrapping
 wvsCa_]
 ww#SN>
@@ -7308,9 +7405,11 @@ wy)D
 wyS]
 x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
 x05@
+x0G@
 x0Ysqx
 x17@
 x27@
+x2G@
 x35@
 x75@
 xA7@
@@ -7318,17 +7417,22 @@ xB6@
 xEIh
 xF7@
 xG7@
+xGG@
 xIDAT(
+xJG@
 xOIIQd
 xP6@
 xU7@
 xV6@
 xW6@
+xWH@
 xX6@
 xZ6@
+xZH@
 x\f?generatedIconPixmap@QCommonStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 x\n?dragLeaveEvent@QListView@@MEAAXPEAVQDragLeaveEvent@@@Z
 xc4@
+xcG@
 xd4@
 xdt,T
 xh2@
@@ -7345,7 +7449,6 @@ xt2@
 xu7@
 xwv/
 xx6@
-xxG@
 xxz-<Z]
 xy5@
 xy6@
@@ -7362,11 +7465,14 @@ yfiZG
 ygQB
 yield_token
 ym&e1%
+yuV+\v
 yv\vP
 y|1A
+y~9z
 z/xh
 zBos
 zH._8SZ
+zIC2@
 z\f?generatedIconPixmap@QProxyStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
@@ -7380,8 +7486,10 @@ z}AR
 {\n?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
 {\n?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
 {a~8f
+{zLG
 |"?verticalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 |2RB@h\r
+|FiUn
 |UJz@
 |V?reason@QFocusEvent@@QEBA?AW4FocusReason@Qt@@XZ
 |`?underline@QFont@@QEBA_NXZ

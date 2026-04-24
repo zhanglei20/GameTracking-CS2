@@ -224,7 +224,7 @@ PredErrors
 Prediction errors
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
-RSDSi
+RSDS7.4
 Reset state
 Save state
 Server CPU
@@ -258,7 +258,6 @@ Z?setPen@QPainter@@QEAAXAEBVQPen@@@Z
 \t?childEvent@QObject@@MEAAXPEAVQChildEvent@@@Z
 \v?exec@QMenu@@QEAAPEAVQAction@@AEBVQPoint@@PEAV2@@Z
 \v?fixup@QSpinBox@@MEBAXAEAVQString@@@Z
-^h9B
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 cooldownTime
 dashboard_subtool

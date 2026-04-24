@@ -18,7 +18,6 @@ Misc
 Names
 OptionsFile
 Owner
-RSDS[wv
 R\fph
 Savegame
 Screenshot

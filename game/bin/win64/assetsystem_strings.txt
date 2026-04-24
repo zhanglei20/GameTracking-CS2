@@ -4401,6 +4401,7 @@ RSA_verify
 RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
+RSDSd
 R\r1>Vp
 R]Di
 R_T5Y

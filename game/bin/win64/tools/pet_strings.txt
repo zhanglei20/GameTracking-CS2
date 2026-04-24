@@ -7674,7 +7674,6 @@ RGBA\t%1\t%2\t%3\t%4
 RMouse
 RMouseDoubleClick
 ROTATION
-RSDS(N
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
@@ -10391,6 +10390,7 @@ userEdit
 v=Kv
 vForward
 vIK \f3
+vJKnJ
 vValue
 v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 valAsText

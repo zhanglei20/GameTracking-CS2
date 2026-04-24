@@ -742,7 +742,7 @@ QAbstractButton*
 QPushButton { 
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
-RSDSm"
+RSDSb(X
 R\fp0
 Replace?\n
 RightClicked
@@ -918,6 +918,7 @@ v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 w\n?connectImpl@QObject@@CA?AVConnection@QMetaObject@@PEBV1@PEAPEAX01PEAVQSlotObjectBase@QtPrivate@@W4ConnectionType@Qt@@PEBHPEBU3@@Z
 w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
+x:QA
 zU?qt_metacall@QDrag@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z

@@ -753,7 +753,6 @@ PulseSystemEventObservableVariableSourceChanged_t
 PulseSystemEventYieldResume_t
 R Sqrt
 RESOURCE_TYPE_PULSE_GRAPH_DEF
-RSDSEAV;
 Rad2 Deg
 Raise pen.
 Random World Position

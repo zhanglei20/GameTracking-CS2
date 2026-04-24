@@ -39,7 +39,7 @@ IGNORE
 Including: '%s'\n
 Inert VModuleMetadata
 Loading: '%s'\n
-RSDSUZu
+RSDS\r
 SCHEMA_
 Saved Debug KV3: %s\n
 WARNING: 

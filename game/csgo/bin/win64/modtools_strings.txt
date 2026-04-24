@@ -12133,7 +12133,6 @@ R8_UNORM
 R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
 ROTATION
-RSDS2
 R\vp!y
 R_T5Y
 Radial Basis Function Type

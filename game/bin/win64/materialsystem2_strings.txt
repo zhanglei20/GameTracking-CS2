@@ -1135,7 +1135,6 @@ texture2dindex
 texture3dindex
 texturecubearrayindex
 texturecubeindex
-tk`w
 v$G2
 vfx_dx11
 vfx_vulkan

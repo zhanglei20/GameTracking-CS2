@@ -403,8 +403,8 @@
 		Type = "grenade"
 		Id = "3574b19e-c0bb-4098-8d8e-41392cbbbf73"
 		SubType = "main"
-		Position = [ -7.96875, -1744.960327, 6.03125 ]
-		Angles = [ 0.0, 86.199402, 0.0 ]
+		Position = [ 699.9715, -1243.9373, 2.03125 ]
+		Angles = [ 0.0, 99.92644, 0.0 ]
 		VisiblePfx = true
 		Color = [ 255, 255, 255 ]
 		TextPositionOffset = [ 0.0, 0.0, 60.0 ]
@@ -438,8 +438,8 @@
 		Type = "grenade"
 		Id = "fe6dcab0-03a7-4fe1-95c7-1cb9428292d2"
 		SubType = "aim_target"
-		Position = [ -2.361401, -1658.761963, 118.76722 ]
-		Angles = [ -30.253454, 86.278053, 0.0 ]
+		Position = [ 683.73157, -1150.8868, 95.19068 ]
+		Angles = [ -19.166418, 99.90004, 0.0 ]
 		VisiblePfx = true
 		TextPositionOffset = [ 0.0, 0.0, 30.0 ]
 		TextFacePlayer = false
@@ -455,7 +455,7 @@
 		}
 		Desc = 
 		{
-			Text = "Line up -1y with top of roof and left window. Jump Throw."
+			Text = "Aim at the corner of the roof. Left Click Jump Throw."
 			FontSize = 75
 			FadeInDist = 50.0
 			FadeOutDist = -1.0
@@ -469,8 +469,8 @@
 		Type = "grenade"
 		Id = "6ca5b675-d7f2-44bd-b2db-5a3d12122240"
 		SubType = "destination"
-		Position = [ 155.466827, 520.862854, -29.96875 ]
-		Angles = [ -30.253454, 86.278053, 0.0 ]
+		Position = [ 292.54626, 448.26984, -31.958958 ]
+		Angles = [ -19.166418, 99.90004, 0.0 ]
 		VisiblePfx = true
 		TextPositionOffset = [ 0.0, 0.0, 0.0 ]
 		TextFacePlayer = false

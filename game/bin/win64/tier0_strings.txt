@@ -769,11 +769,11 @@ $xmm9
 1#QNAN
 1#SNAN
 1.2.11
-11:22:02
 11UT
 11Y@
 11eU%
 127.0.0.1
+15:52:12
 1;TRUE;YES;ON
 1A26b
 1DBlend
@@ -2557,7 +2557,7 @@ AppCaptureEnabled
 AppPolicyGetProcessTerminationMethod
 AppPolicyGetThreadInitializationType
 ApplyDiffs
-Apr 20 2026
+Apr 22 2026
 April
 AreFileApisANSI
 Assert
@@ -5294,7 +5294,7 @@ RDTSCP
 RELEASE
 REPLICATED
 RPCRT4.dll
-RSDS
+RSDS&
 RUSSIAN
 RVfQp
 RaiseException

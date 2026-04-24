@@ -772,7 +772,6 @@ QTableWidgetItem*
 QWidget*
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
-RSDS\v
 R\fpx
 Removed
 Removed Events

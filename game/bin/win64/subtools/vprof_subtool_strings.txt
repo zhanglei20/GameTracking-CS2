@@ -717,7 +717,7 @@ Open vprof recording
 P\tV_log10d
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
-RSDS?$l
+RSDS'
 Running.
 Samples: %1
 Show Budget - %1

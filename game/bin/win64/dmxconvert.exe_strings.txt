@@ -619,7 +619,7 @@ Pre-Age Noise
 Prefix element cannot contain element or element_array attributes. ('%s')
 Preset File
 Procedural
-RSDSV
+RSDSU
 Radius Random
 Random Cull
 Randomly Flip Yaw
@@ -935,7 +935,6 @@ isGroup
 isOrientation
 isPosition
 item_item_crate
-je Z
 jointIndices
 jointIndicesIndices
 jointList

@@ -76,7 +76,6 @@ MVj*
 NtOpenFile
 PeekMessageW
 RADD
-RSDS~
 SSE4.2
 SXS:
 Source2Launcher=1

@@ -232,7 +232,6 @@ QQPinyin
 Quan Pin
 Quan Pin 6.0
 Quick
-RSDS~x
 RegEnumKeyExA
 RegOpenKeyExW
 RegQueryInfoKeyW
