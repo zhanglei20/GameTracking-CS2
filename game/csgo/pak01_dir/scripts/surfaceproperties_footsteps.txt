@@ -367,6 +367,11 @@
 				walkright = "CT_WetMud.StepLeft"
 				surfacePropertyName = "wet_mud"
 			},
+			{
+				walkleft = "CT_MetalBarrel.StepLeft"
+				walkright = "CT_MetalBarrel.StepLeft"
+				surfacePropertyName = "metal_sheet_corrugated"
+			},
 		]
 	}
 	t_player = 
@@ -732,6 +737,11 @@
 				walkleft = "T_WetMud.StepLeft"
 				walkright = "CT_WetMud.StepLeft"
 				surfacePropertyName = "wet_mud"
+			},
+			{
+				walkleft = "T_MetalBarrel.StepLeft"
+				walkright = "T_MetalBarrel.StepLeft"
+				surfacePropertyName = "metal_sheet_corrugated"
 			},
 		]
 	}

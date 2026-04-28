@@ -8,9 +8,7 @@ class CCSPlayerAnimationState
 	bool m_bWasStationaryLastUpdate;
 	GameTick_t m_actionStartTick;
 	GameTick_t m_staticAimTimerStartTick;
-	GameTick_t m_stutterStepStartTick;
 	GameTick_t m_plantAndTurnStartTick;
-	bool m_bIsStutterStep;
 	float32 m_flTurnOnSpotAngle;
 	float32 m_flPreviousAimYaw;
 	float32 m_flPreviousHorizontalSpeed;

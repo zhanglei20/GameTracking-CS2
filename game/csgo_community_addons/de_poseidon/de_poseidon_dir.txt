@@ -1,4 +1,3 @@
-addoninfo.txt CRC:00bc0663f5 size:139
 cfg/maps/poseidon.cfg CRC:0051abb2eb size:30
 maps/de_poseidon_3dskybox.vpk CRC:0018c6eb37 size:50766129
 maps/poseidon.txt CRC:0099584069 size:22

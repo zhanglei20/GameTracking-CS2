@@ -91,7 +91,7 @@ VS
 	float2 g_vUvScale1 < Default2(4, 4); Range2(-10, -10, 10, 10); UiType(VectorText); UiGroup("Material1,1/Texcoord Transform,0/0"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (6956 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (7068 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1125
 	{
@@ -247,6 +247,9 @@ VS
 	    {
 	        _14124 = _7676.z;
 	    }
+	    float _9851 = _23812.w;
+	    float4 _20063 = float4(_21354, _21355, _14124, _9851);
+	    _20063.w = _9851 * asfloat(g_instanceBuffer.Load(nInstanceIdx * 32 + 28));
 	    float3 _11179 = normalize(mul(_17839, float4(vNormalOs.xyz, 0.0f)));
 	    float3 _12151 = mul(_17839, float4(vPositionOs.xyz * _21709.xyz, 1.0f));
 	    float4 _23875 = mul(float4x4(float4(PerViewConstantBuffer_t_1_m0._m0[0].x, PerViewConstantBuffer_t_1_m0._m0[1].x, PerViewConstantBuffer_t_1_m0._m0[2].x, PerViewConstantBuffer_t_1_m0._m0[3].x), float4(PerViewConstantBuffer_t_1_m0._m0[0].y, PerViewConstantBuffer_t_1_m0._m0[1].y, PerViewConstantBuffer_t_1_m0._m0[2].y, PerViewConstantBuffer_t_1_m0._m0[3].y), float4(PerViewConstantBuffer_t_1_m0._m0[0].z, PerViewConstantBuffer_t_1_m0._m0[1].z, PerViewConstantBuffer_t_1_m0._m0[2].z, PerViewConstantBuffer_t_1_m0._m0[3].z), float4(PerViewConstantBuffer_t_1_m0._m0[0].w, PerViewConstantBuffer_t_1_m0._m0[1].w, PerViewConstantBuffer_t_1_m0._m0[2].w, PerViewConstantBuffer_t_1_m0._m0[3].w)), (float4(_12151.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m1 * 1.0f)).xyzw);
@@ -257,7 +260,7 @@ VS
 	    output_0 = _12151.xyz - PerViewConstantBufferCsgo_t_1_m0.xyz;
 	    output_1 = _11179;
 	    output_2 = _9360;
-	    output_3 = float4(_21354, _21355, _14124, _23812.w);
+	    output_3 = _20063;
 	    output_4 = _11179;
 	    output_5 = float4(normalize(mul(_17839, float4(vTangentUOs_flTangentVSign.xyz, 0.0f))), vTangentUOs_flTangentVSign.w);
 	    output_6 = (g_instanceBuffer.Load(nInstanceIdx * 32 + 20)) & 65535u;

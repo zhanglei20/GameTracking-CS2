@@ -677,7 +677,7 @@
 	Player.FreezeCam = 
 	{
 		type = "csgo_mega"
-		volume = 0.5
+		volume = 0.0
 		pitch = 1.0
 		mixgroup = "UI"
 		use_distance_volume_mapping_curve = true
@@ -13688,6 +13688,7 @@
 		[
 			"sounds/ui/panorama/bg_ancient_day_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_anubis = 
 	{
@@ -13761,6 +13762,7 @@
 		[
 			"sounds/ui/panorama/bg_anubis_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_dz_blacksite = 
 	{
@@ -13834,11 +13836,12 @@
 		[
 			"sounds/ui/panorama/bg_blacksite_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_cache = 
 	{
 		type = "csgo_mega"
-		volume = 0.3
+		volume = 0.07
 		pitch = 1.0
 		mixgroup = "UI_Amb"
 		block_duration = 0.01
@@ -13905,8 +13908,16 @@
 		]
 		vsnd_files_track_01 = 
 		[
-			"sounds/ui/panorama/bg_cache_01.vsnd",
+			"sounds/ambient/cache/cache_ctspawn_outside_01.vsnd",
 		]
+		enable_child_events = true
+		soundevent_01 = 
+		[
+			"UIPanorama.BG_de_cache_animals",
+			"UIPanorama.BG_de_cache_reactor",
+			"UIPanorama.BG_de_cache_crickets",
+		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_cbble = 
 	{
@@ -13980,6 +13991,7 @@
 		[
 			"sounds/ui/panorama/bg_cobble_night_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_chlorine = 
 	{
@@ -14053,6 +14065,7 @@
 		[
 			"sounds/ui/panorama/bg_chlorine_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_dust2 = 
 	{
@@ -14126,6 +14139,7 @@
 		[
 			"sounds/ui/panorama/bg_dust2_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_coop_kasbah = 
 	{
@@ -14199,6 +14213,7 @@
 		[
 			"sounds/ui/panorama/bg_phoenixfacility_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_inferno = 
 	{
@@ -14272,6 +14287,7 @@
 		[
 			"sounds/ui/panorama/bg_inferno_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_cs_italy = 
 	{
@@ -14345,6 +14361,7 @@
 		[
 			"sounds/ui/panorama/bg_italy_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_mirage = 
 	{
@@ -14418,6 +14435,7 @@
 		[
 			"sounds/ui/panorama/bg_mirage_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_mutiny = 
 	{
@@ -14491,6 +14509,7 @@
 		[
 			"sounds/ui/panorama/bg_mutiny_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_nuke = 
 	{
@@ -14564,6 +14583,7 @@
 		[
 			"sounds/ui/panorama/bg_nuke_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_cs_office = 
 	{
@@ -14637,6 +14657,7 @@
 		[
 			"sounds/ui/panorama/bg_office_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_overpass = 
 	{
@@ -14710,6 +14731,7 @@
 		[
 			"sounds/ui/panorama/bg_overpass_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_vertigo = 
 	{
@@ -14783,6 +14805,7 @@
 		[
 			"sounds/ui/panorama/bg_vertigo_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.tab_mainmenu_shop = 
 	{
@@ -15059,6 +15082,7 @@
 		[
 			"sounds/ui/panorama/bg_baggage_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_ar_shoots = 
 	{
@@ -15132,6 +15156,7 @@
 		[
 			"sounds/ui/panorama/bg_anubis_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_ar_house = 
 	{
@@ -15205,6 +15230,7 @@
 		[
 			"sounds/ui/panorama/bg_anubis_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	ar_baggage_airplanes = 
 	{
@@ -15823,6 +15849,7 @@
 		[
 			"sounds/ambient/train/train_warehouse_loop.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_warehouse_space = 
 	{
@@ -16534,6 +16561,7 @@
 		[
 			"sounds/ui/panorama/bg_train_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_train.WheelLoop = 
 	{
@@ -16614,6 +16642,7 @@
 		[
 			"sounds/ambient/train/freighttrain_pullforward_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UIPanorama.BG_de_train.StartStop = 
 	{
@@ -16686,6 +16715,7 @@
 			"sounds/ambient/train/train_takeup_05.vsnd",
 			"sounds/ambient/train/train_takeup_06.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UI.Mission.QuotaUp = 
 	{
@@ -16864,6 +16894,7 @@
 		[
 			"sounds/ui/panorama/bg_ancient_night_01.vsnd",
 		]
+		randomize_start_time = true
 	}
 	UI.Laptop.ZoomIn = 
 	{
@@ -18387,6 +18418,265 @@
 				0.788119, 0.0, -0.709084, -0.709084,
 				3.0, 1.0,
 			],
+		]
+	}
+	UIPanorama.BG_de_cache_animals = 
+	{
+		type = "csgo_mega"
+		volume = 0.05
+		pitch = 1.0
+		mixgroup = "UI_Amb"
+		block_duration = 0.01
+		use_distance_volume_mapping_curve = true
+		use_distance_unfiltered_stereo_mapping_curve = true
+		ducking_bypass = 1.0
+		reverb_wet = 0.0
+		reverb_source_wet = 0.0
+		instance_limit = 1.0
+		vsnd_pause_with_game = false
+		use_world_position = false
+		distance_effect_mix = 0.0
+		occlusion_frequency_scale = 0.0
+		use_time_volume_mapping_curve = true
+		position_relative_to_player = false
+		is_ui_sound = false
+		use_volume_convar = true
+		volume_convar = "snd_menumap_volume"
+		override_dsp_preset = true
+		dsp_preset = "reverb_29_UI"
+		enable_retrigger = true
+		retrigger_radius = 10000.0
+		retrigger_interval_min = 3.0
+		retrigger_interval_max = 15.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 1.0, 1.526567, 1.526567,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -1.713287, -1.713287,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/common/animal/dog_bark_outdoors_01.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_02.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_03.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_04.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_05.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_06.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_07.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_08.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_09.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_10.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_11.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_12.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_13.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_14.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_15.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_16.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_17.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_18.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_19.vsnd",
+			"sounds/ambient/common/animal/dog_bark_outdoors_20.vsnd",
+		]
+		randomize_position_min_radius = 1000.0
+		randomize_position_max_radius = 1000.0
+	}
+	UIPanorama.BG_de_cache_reactor = 
+	{
+		type = "csgo_mega"
+		volume = 0.1
+		pitch = 1.0
+		mixgroup = "UI_Amb"
+		block_duration = 0.01
+		use_distance_volume_mapping_curve = true
+		use_distance_unfiltered_stereo_mapping_curve = true
+		ducking_bypass = 1.0
+		reverb_wet = 0.0
+		reverb_source_wet = 0.0
+		instance_limit = 1.0
+		vsnd_pause_with_game = false
+		use_world_position = false
+		distance_effect_mix = 0.0
+		occlusion_frequency_scale = 0.0
+		use_time_volume_mapping_curve = true
+		position_relative_to_player = false
+		is_ui_sound = false
+		use_volume_convar = true
+		volume_convar = "snd_menumap_volume"
+		override_dsp_preset = true
+		dsp_preset = "reverb_29_UI"
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 1.0, 1.526567, 1.526567,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -1.713287, -1.713287,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/cache/cache_distant_warmup_01.vsnd",
+			"sounds/ambient/cache/cache_distant_warmup_02.vsnd",
+			"sounds/ambient/cache/cache_distant_warmup_03.vsnd",
+			"sounds/ambient/cache/cache_distant_warmup_04.vsnd",
+		]
+		enable_retrigger = true
+		retrigger_interval_min = 5.0
+		retrigger_interval_max = 20.0
+	}
+	UIPanorama.BG_de_cache_crickets = 
+	{
+		type = "csgo_mega"
+		volume = 0.03
+		pitch = 1.0
+		mixgroup = "UI_Amb"
+		block_duration = 0.01
+		use_distance_volume_mapping_curve = true
+		use_distance_unfiltered_stereo_mapping_curve = true
+		ducking_bypass = 1.0
+		reverb_wet = 0.0
+		reverb_source_wet = 0.0
+		instance_limit = 1.0
+		vsnd_pause_with_game = false
+		use_world_position = false
+		distance_effect_mix = 0.0
+		occlusion_frequency_scale = 0.0
+		use_time_volume_mapping_curve = true
+		position_relative_to_player = false
+		is_ui_sound = false
+		use_volume_convar = true
+		volume_convar = "snd_menumap_volume"
+		override_dsp_preset = true
+		dsp_preset = "reverb_29_UI"
+		enable_retrigger = true
+		retrigger_radius = 10000.0
+		retrigger_interval_min = 0.5
+		retrigger_interval_max = 7.0
+		randomize_position_min_radius = 1000.0
+		randomize_position_max_radius = 1000.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 1.0, 1.526567, 1.526567,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -1.713287, -1.713287,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/cache/cache_crickets_ticks_01.vsnd",
+			"sounds/ambient/cache/cache_crickets_ticks_02.vsnd",
+			"sounds/ambient/cache/cache_crickets_ticks_03.vsnd",
+			"sounds/ambient/cache/cache_crickets_ticks_04.vsnd",
 		]
 	}
 }

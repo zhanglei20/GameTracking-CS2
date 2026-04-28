@@ -18,13 +18,16 @@
 			"mg_de_ancient"		"7"
 			"mg_de_train"		"8"
 			"mg_de_vertigo"		"9"
-			"mg_de_warden"		"10"
-			"mg_de_stronghold"		"11"
-			"mg_cs_alpine"		"12"
+			"mg_de_cache"		"10"
+
+			// community
+			"mg_de_warden"		"11"
+			"mg_de_stronghold"		"12"
+			"mg_cs_alpine"		"13"
 
 			// hostage
-			"mg_cs_office"		"13"
-			"mg_cs_italy"		"14"
+			"mg_cs_office"		"14"
+			"mg_cs_italy"		"15"
 		}
 		"casual"
 		{
@@ -37,13 +40,29 @@
 			"mg_de_ancient_night" "7"
 			"mg_de_train"		"8"
 			"mg_de_vertigo"		"9"
-			"mg_de_warden"		"10"
-			"mg_de_stronghold"		"11"
-			"mg_cs_alpine"		"12"
+			"mg_de_cache"		"10"
+
+			// community
+			"mg_de_warden"		"11"
+			"mg_de_stronghold"		"12"
+			"mg_cs_alpine"		"13"
 
 			// hostage
-			"mg_cs_office"		"13"
-			"mg_cs_italy"		"14"
+			"mg_cs_office"		"14"
+			"mg_cs_italy"		"15"
+		}
+		"retakes"
+		{
+			"mg_de_anubis"		"1"
+			"mg_de_overpass"	"2"
+			"mg_de_inferno"		"3"
+			"mg_de_mirage"		"4"
+			"mg_de_dust2"		"5"
+			"mg_de_nuke"		"6"
+			"mg_de_ancient_night" "7"
+			"mg_de_train"		"8"
+			"mg_de_vertigo"		"9"
+			"mg_de_cache"		"10"
 		}
 		"2v2"
 		{
@@ -322,15 +341,7 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
-						"mg_de_dust2"		"1"
-						"mg_de_mirage"		"2"
-						"mg_de_inferno"		"3"
-						"mg_de_ancient_night" "4"
-						"mg_de_nuke"		"5"
-						"mg_de_train"		"6"
-						"mg_de_overpass"	"7"
-						"mg_de_anubis"		"8"
-						"mg_de_vertigo"		"9"
+						"template#include"		"retakes"
 					}
 
 					// Map groups for online modesw
@@ -932,7 +943,7 @@
 			"imagename"				"mapgroup-casualalpha"
 			"nameID"				"#SFUI_Mapgroup_casualalpha"
 			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_CasualAlpha"
-			"tooltipMaps"			"de_dust2,de_mirage,de_inferno,de_vertigo"
+			"tooltipMaps"			"de_dust2,de_mirage,de_inferno,de_vertigo,de_cache"
 			"name"					"mg_casualalpha"
 			"grouptype"				"reserves"
 			"icon_image_path"		"map_icons/mapgroup_icon_reserves"
@@ -942,6 +953,7 @@
 				"de_mirage"		""
 				"de_inferno"	""
 				"de_vertigo"		""
+				"de_cache"		""
 			}
 		}
 		
@@ -3199,6 +3211,7 @@
 			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Reserves"
 			"name"					"mg_de_cache"
 			"icontag"				"bomb"
+			"showtagui"				"new"
 			"grouptype"				"reserves"
 			"icon_image_path"		"map_icons/map_icon_de_cache"
 			"maps"

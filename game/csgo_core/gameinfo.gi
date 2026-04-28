@@ -207,6 +207,7 @@
 		"PerObjectLightingSetup" "1"
 		"CharacterDecals" "1"
 		"FirstpersonLegs" "1"
+		"SupportsHybridInstancedFade" "1"
 
 		"CSMCascadeResolution" "2048"
 		"SunLightManagerCount" "0"

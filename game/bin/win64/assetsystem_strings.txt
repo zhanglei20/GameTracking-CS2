@@ -740,6 +740,7 @@ $prefix_element$
 .?AVCAssetNameFilterDef@@
 .?AVCAssetReferencedByCountFilter@@
 .?AVCAssetReferencedByFilter@@
+.?AVCAssetReferencedByTypeFilter@@
 .?AVCAssetReferencingFilter@@
 .?AVCAssetSystem@@
 .?AVCAssetSystemTest@@
@@ -1327,7 +1328,7 @@ $prefix_element$
 8GZS
 8SIffK5W
 8TZvrv<
-8XTH
+8XLH
 8\v8!83858A8G8K8S8W8_8e8o8q8}8
 8]Vc2
 8ca1
@@ -1741,6 +1742,7 @@ AssetTags
 AssetTagsManifest
 AssetTypes
 Assets in asset system: %d
+Assets that are referenced by an asset of the specified type
 Assetsystem Table "%s" (%d entries)\n
 Assetsystem cannot start: %s\n
 Assetsystem resource replacement buffer
@@ -4427,7 +4429,10 @@ Recompiling resource asset: '%s'\n
 Redo\n======\n
 ReductionMatrix1
 ReductionMatrix2
+RefbyTypes
 ReferenceBlackWhite
+Referenced by type
+Referenced by type: %s
 RegisterEventSourceW
 Registered ID
 Registering anonymous field with tag %d (0x%x) failed
@@ -4758,7 +4763,6 @@ TLSv1.1
 TLSv1.2
 TLSv1/SSLv3
 TM=U*
-TODO: remove IAssetSystem::GetAssetInfo before checkin!\n
 TPD2
 TPS'
 TPk+L
@@ -5421,7 +5425,6 @@ Z~wl
 \rMinghuaQu\f
 \rTxL
 \rUHz4Z}\r
-\rUnknown exception
 \rWhO
 \rY=QX
 \rYYHl
@@ -8563,6 +8566,7 @@ ref:%s
 refOrientation
 refby
 refby_count
+refby_type
 referenced_soundevent_
 referenced_surface_property_
 registeredAddress

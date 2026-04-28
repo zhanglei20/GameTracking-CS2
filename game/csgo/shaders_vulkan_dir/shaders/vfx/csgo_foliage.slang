@@ -156,7 +156,7 @@ VS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (7424 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (7468 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
@@ -293,7 +293,7 @@ VS
 	    {
 	        _14124 = _7676.z;
 	    }
-	    vec4 _10296 = vec4(_21354, _21355, _14124, _23812.w);
+	    float _9851 = _23812.w;
 	    vec3 _11179 = normalize(vec4(vTexCoord.xyz, 0.0) * _17839);
 	    vec3 _12151 = vec4(vPositionOs.xyz * _21709.xyz, 1.0) * _17839;
 	    vec4 _7227 = vBlendColorTint.xyxy;
@@ -303,13 +303,9 @@ VS
 	    vec4 _20488 = _7227;
 	    _20488.x = _22490.x;
 	    _20488.y = _22490.y;
-	    vec3 _23588 = mix(vec3(1.0), _10296.xyz, vec3(_Globals_.g_flModelTintAmount));
-	    vec4 _17842 = _10296;
-	    _17842.x = _23588.x;
-	    _17842.y = _23588.y;
-	    _17842.z = _23588.z;
-	    vec3 _13062 = _17842.xyz * _Globals_.g_vColorTint.xyz;
-	    vec4 _23714 = _17842;
+	    vec4 _11399 = vec4(mix(vec3(1.0), vec4(_21354, _21355, _14124, _9851).xyz, vec3(_Globals_.g_flModelTintAmount)), _9851 * g_instanceBuffer_1._m0[vBlendIndices]._m7);
+	    vec3 _13062 = _11399.xyz * _Globals_.g_vColorTint.xyz;
+	    vec4 _23714 = _11399;
 	    _23714.x = _13062.x;
 	    _23714.y = _13062.y;
 	    _23714.z = _13062.z;

@@ -9,6 +9,7 @@ class CMapInfo : public C_PointEntity
 	int32 m_iHostageCount;
 	bool m_bFadePlayerVisibilityFarZ;
 	bool m_bRainTraceToSkyEnabled;
+	bool m_bGPUCullSkybox;
 	float32 m_flEnvRainStrength;
 	float32 m_flEnvPuddleRippleStrength;
 	float32 m_flEnvPuddleRippleDirection;

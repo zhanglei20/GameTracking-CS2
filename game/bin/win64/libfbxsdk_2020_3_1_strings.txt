@@ -18844,6 +18844,7 @@ containerTemplateName
 containerTemplatePackageName
 containerTemplatePath
 containerTemplateVersion
+contains
 content: 
 continue after stop
 contributor

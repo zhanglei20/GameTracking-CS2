@@ -32,34 +32,21 @@ CS
 	StaticCombo( S_REVERSE_DEPTH_BUFFER, 0..1 );
 	DynamicCombo( D_OCCLUSION_CULLING, 0..1 );
 	DynamicCombo( D_VOLUME_CULLER, 0..1 );
-	DynamicCombo( D_PASS, 0..2 );
 	DynamicCombo( D_HAS_ROOT_VIEW, 0..1 );
-	DynamicCombo( D_LODS, 0..1 );
 	DynamicCombo( D_VIS_CULLING, 0..1 );
 	DynamicCombo( D_VISUALIZE_SCENEOBJECTS, 0..1 );
 	DynamicCombo( D_CULL_NON_MOVING_OBJECTS, 0..1 );
-	DynamicCombo( D_SUPPORTS_MESH_SHADER, 0..1 );
-	DynamicCombo( D_DEBUG_DRAW_MESHLETS, 0..1 );
+	DynamicCombo( D_SUPPORTS_FADE, 0..1 );
 	DynamicCombo( D_DEBUG_OUTPUT_STATS, 0..1 );
-	DynamicComboRule( Allow1( D_LODS, D_SUPPORTS_MESH_SHADER ) );
-	DynamicComboRule( Requires( D_PASS, D_SUPPORTS_MESH_SHADER ) );
-	DynamicComboRule( Requires( D_SUPPORTS_MESH_SHADER, S_SUBGROUP_WAVE_OPS ) );
-	DynamicComboRule( Requires( D_DEBUG_DRAW_MESHLETS, D_SUPPORTS_MESH_SHADER ) );
 	
 	cbuffer GpuVolumeCullerPlanes_t < Attribute("GpuVolumeCullerPlanes_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	StructuredBuffer g_CullRequests < Attribute("CullRequests"); SrgbRead(false); >;
-	RWStructuredBuffer g_CullRequests < Attribute("CullRequests"); >;
 	RWStructuredBuffer g_CullStats < Attribute("CullStats"); >;
 	ByteAddressBuffer g_InstanceData < Attribute("InstanceData"); SrgbRead(false); >;
 	RWBuffer<float4> g_InstancedDrawArgs < Attribute("IndirectDrawBuffer"); >;
-	RWStructuredBuffer g_MSIndirectDispatchArgs < Attribute("MSIndirectDispatchArgs"); >;
-	RWStructuredBuffer g_MSIndirectDispatchArgsDebug < Attribute("MSIndirectDispatchArgsDebug"); >;
-	RWStructuredBuffer g_MSIndirectDispatchArgsRecull < Attribute("MSIndirectDispatchArgsRecull"); >;
 	StructuredBuffer g_MeshData < Attribute("MeshData"); SrgbRead(false); >;
-	StructuredBuffer g_MeshletData < Attribute("MeshletData"); SrgbRead(false); >;
 	RWStructuredBuffer g_RWInstanceBuffer < Attribute("InstanceBuffer"); >;
-	RWStructuredBuffer g_RWMeshletBuffer < Source(ExternalDescSet); >;
 	RWStructuredBuffer g_RWTransformBuffer < Attribute("TransformBuffer"); >;
 	Buffer g_VisBits < Attribute("VisBits"); SrgbRead(false); >;
 	StructuredBuffer g_VisNodes < Attribute("VisNodes"); SrgbRead(false); >;
@@ -73,17 +60,13 @@ CS
 	float g_fRootViewOrthoInvWidth < Attribute("RootViewOrthoInvWidth"); UiType(Slider); >;
 	float g_fRootViewSizeThreshold < Attribute("RootViewSizeThreshold"); UiType(Slider); >;
 	float g_fRootViewTanHalfFov < Attribute("RootViewTanHalfFov"); UiType(Slider); >;
-	float g_fScreenSizeScaleForLOD < Attribute("ScreenSizeScaleForLOD"); UiType(Slider); >;
-	float g_fScreenWidthForLOD < Attribute("ScreenWidthForLOD"); UiType(Slider); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
 	float4x4 g_mDepthPyramidProjFromWorld < Attribute("DepthPyramidProjFromWorld"); >;
 	int g_nCullRequests < Attribute("NumCullRequests"); UiType(Slider); >;
-	int g_nDebugVisualizeDispatchIndex < Attribute("DebugVisualizeDispatchIndex"); UiType(Slider); >;
 	int g_nDepthPyramidHeight < Attribute("DepthPyramidHeight"); UiType(Slider); >;
 	int g_nDepthPyramidMaxMip < Attribute("DepthPyramidMaxMip"); UiType(Slider); >;
 	int g_nDepthPyramidWidth < Attribute("DepthPyramidWidth"); UiType(Slider); >;
 	int g_nFirstCullRequest < Attribute("FirstCullRequest"); UiType(Slider); >;
-	int g_nRootLODLevel < Attribute("RootLODLevel"); UiType(Slider); >;
 	int g_nTreeTraversalSeed < Attribute("VisTreeTraversalSeed"); UiType(Slider); >;
 	int g_nVisInternalTreeExtent < Attribute("VisInternalTreeExtent"); UiType(Slider); >;
 	int g_nVisualizeSceneObjectsMode < Attribute("VisualizeSceneObjectsMode"); UiType(Slider); >;
@@ -101,31 +84,23 @@ CS
 	float3 g_vRootViewOrigin < Attribute("RootViewOrigin"); UiType(VectorText); >;
 	float4 g_vVisLocalOrigin_Scale < Attribute("VisLocalOrigin_Scale"); UiType(VectorText); >;
 	
-	#if (S_SUBGROUP_WAVE_OPS == 0)
-		StructuredBuffer g_CullRequests < Attribute("CullRequests"); SrgbRead(false); >;
-	#endif
-	#if (S_SUBGROUP_WAVE_OPS == 1)
-		StructuredBuffer g_CullRequests < Attribute("CullRequests"); SrgbRead(false); >;
-		RWStructuredBuffer g_CullRequests < Attribute("CullRequests"); >;
-	#endif
-	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 0 (name: g_vFrustumPlane0) cannot be expressed with either HLSL packing layout or packoffset.
 	// 
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (14036 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (13476 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	layout(local_size_x = 192, local_size_y = 1, local_size_z = 1) in;
 	
-	struct _2541
+	struct _2517
 	{
 	    uint _m0[8];
 	};
 	
-	struct _2356
+	struct _2116
 	{
 	    uint _m0;
 	    uint _m1;
@@ -135,32 +110,32 @@ CS
 	    int _m5;
 	    uint _m6;
 	    uint _m7;
-	    _2541 _m8;
+	    _2517 _m8;
 	};
 	
-	struct _491
+	struct _323
 	{
 	    vec4 _m0[2];
 	};
 	
-	struct _2206
+	struct _2086
 	{
 	    uvec4 _m0[2];
 	};
 	
-	struct _2443
+	struct _1947
 	{
-	    _2541 _m0[8];
+	    _2517 _m0[8];
 	};
 	
-	struct _1200
+	struct _2964
 	{
 	    vec3 _m0;
 	    uint _m1;
 	    vec3 _m2;
 	    uint _m3;
-	    _491 _m4;
-	    _2206 _m5;
+	    _323 _m4;
+	    _2086 _m5;
 	    float _m6;
 	    float _m7;
 	    float _m8;
@@ -170,17 +145,17 @@ CS
 	    uint _m12;
 	    float _m13;
 	    uvec4 _m14;
-	    _2443 _m15;
+	    _1947 _m15;
 	};
 	
-	struct _617
+	struct _449
 	{
 	    vec4 _m0[3];
 	};
 	
-	struct _2193
+	struct _1857
 	{
-	    _617 _m0;
+	    _449 _m0;
 	};
 	
 	struct _1125
@@ -219,17 +194,17 @@ CS
 	
 	layout(set = 0, binding = 36, std430) readonly buffer g_CullRequests
 	{
-	    _2356 _m0[];
+	    _2116 _m0[];
 	} g_CullRequests_1;
 	
 	layout(set = 0, binding = 35, std430) readonly buffer g_MeshData
 	{
-	    _1200 _m0[];
+	    _2964 _m0[];
 	} g_MeshData_1;
 	
 	layout(set = 4, binding = 167, std430) buffer undetermined
 	{
-	    _2193 _m0[];
+	    _1857 _m0[];
 	} undetermined_1;
 	
 	layout(set = 0, binding = 37, std430) readonly buffer g_InstanceData
@@ -256,18 +231,16 @@ CS
 	        uint _7126 = g_CullRequests_1._m0[_13724]._m1;
 	        uint _13546 = g_CullRequests_1._m0[_13724]._m4;
 	        uint _5325 = _13546 + gl_LocalInvocationID.x;
-	        uint _11578;
+	        uint _13687;
 	        if (g_CullRequests_1._m0[_13724]._m5 == (-1))
 	        {
-	            _11578 = 4294967295u;
+	            _13687 = 4294967295u;
 	        }
 	        else
 	        {
-	            _11578 = uint(g_CullRequests_1._m0[_13724]._m5) + gl_LocalInvocationID.x;
+	            _13687 = uint(g_CullRequests_1._m0[_13724]._m5) + gl_LocalInvocationID.x;
 	        }
-	        uint _13076 = g_MeshData_1._m0[_24369]._m3;
-	        int _10074;
-	        float _11730;
+	        bool _12888;
 	        if (gl_LocalInvocationID.x < (_6493 & 1073741823u))
 	        {
 	            float _10932;
@@ -340,17 +313,14 @@ CS
 	            {
 	                _12885 = false;
 	            }
-	            float _13175;
-	            int _16055;
+	            bool _7251;
 	            if (_12885)
 	            {
-	                _13175 = 1.0;
-	                _16055 = -1;
+	                _7251 = false;
 	            }
 	            else
 	            {
-	                bool _10458;
-	                float _11692;
+	                bool _7462;
 	                do
 	                {
 	                    vec3 _11387 = (_11144 + _8008) * 0.5;
@@ -402,16 +372,13 @@ CS
 	                    }
 	                    if (_12886)
 	                    {
-	                        _11692 = 1.0;
-	                        _10458 = true;
+	                        _7462 = true;
 	                        break;
 	                    }
-	                    float _13174;
-	                    bool _16054;
+	                    bool _12887;
 	                    if (_Globals_.g_bEnableDensityCulling != 0)
 	                    {
-	                        float _13212;
-	                        bool _15670;
+	                        bool _12502;
 	                        do
 	                        {
 	                            if (g_MeshData_1._m0[_24369]._m8 > 0.0)
@@ -446,78 +413,58 @@ CS
 	                                uint _17451 = 668265263u * ((_7414 << uint(17)) | (_7414 >> uint(15)));
 	                                uint _17202 = 2246822519u * (_17451 ^ (_17451 >> uint(15)));
 	                                uint _17204 = 3266489917u * (_17202 ^ (_17202 >> uint(13)));
-	                                float _17267 = _17253 + (((float(_17204 ^ (_17204 >> uint(16))) * 2.3283064365386962890625e-10) * (float(_12240) / float(g_CullRequests_1._m0[_13724]._m7 >> uint(16)))) * g_MeshData_1._m0[_24369]._m10);
-	                                _13212 = min(1.0, (clamp((_17267 - g_MeshData_1._m0[_24369]._m8) / (g_MeshData_1._m0[_24369]._m9 - g_MeshData_1._m0[_24369]._m8), 0.0, 1.0) * (-1.0)) + 1.0);
-	                                _15670 = _17267 < g_MeshData_1._m0[_24369]._m9;
+	                                _12502 = (_17253 + (((float(_17204 ^ (_17204 >> uint(16))) * 2.3283064365386962890625e-10) * (float(_12240) / float(g_CullRequests_1._m0[_13724]._m7 >> uint(16)))) * g_MeshData_1._m0[_24369]._m10)) < g_MeshData_1._m0[_24369]._m9;
 	                                break;
 	                            }
-	                            _13212 = 1.0;
-	                            _15670 = false;
+	                            _12502 = false;
 	                            break;
 	                        } while(false);
-	                        _13174 = _13212;
-	                        _16054 = _15670;
+	                        _12887 = _12502;
 	                    }
 	                    else
 	                    {
-	                        _13174 = 1.0;
-	                        _16054 = false;
+	                        _12887 = false;
 	                    }
-	                    if (_16054)
+	                    if (_12887)
 	                    {
-	                        _11692 = _13174;
-	                        _10458 = true;
+	                        _7462 = true;
 	                        break;
 	                    }
-	                    _11692 = _13174;
-	                    _10458 = false;
+	                    _7462 = false;
 	                    break;
 	                } while(false);
-	                _13175 = _11692;
-	                _16055 = _10458 ? (-1) : 0;
+	                _7251 = !_7462;
 	            }
-	            bool _12887;
-	            if (_3779)
+	            if (_3779 ? _7251 : false)
 	            {
-	                _12887 = _16055 != (-1);
+	                undetermined_1._m0[_5325]._m0 = _449(vec4[](_15345[0], _15345[1], _15345[2]));
 	            }
-	            else
-	            {
-	                _12887 = false;
-	            }
-	            if (_12887)
-	            {
-	                undetermined_1._m0[_5325]._m0 = _617(vec4[](_15345[0], _15345[1], _15345[2]));
-	            }
-	            _11730 = _13175;
-	            _10074 = _16055;
+	            _12888 = _7251;
 	        }
 	        else
 	        {
-	            _11730 = 1.0;
-	            _10074 = -1;
+	            _12888 = false;
 	        }
-	        if (_10074 != (-1))
+	        if (_12888)
 	        {
-	            uint _21138 = g_MeshData_1._m0[_24369]._m12;
-	            uint _9307 = (_21138 >> uint(_10074 * 4)) & 15u;
-	            uint _8835 = _7126 + (uint(_10074) * (_13076 >> uint(16)));
-	            uint _3737 = imageAtomicAdd(_5506, int((_8835 * 5u) + 1u), 1u);
+	            uint _8369 = g_MeshData_1._m0[_24369]._m12;
+	            uint _6371 = _8369 & 15u;
+	            uint _3737 = imageAtomicAdd(_5506, int((_7126 * 5u) + 1u), 1u);
+	            uint _24498 = g_CullRequests_1._m0[_13724]._m6;
+	            uint _3056 = _24498 + _3737;
 	            uint _5186;
 	            uint _13039 = 1u;
 	            for (;;)
 	            {
-	                if (!(_13039 < _9307))
+	                if (!(_13039 < _6371))
 	                {
 	                    break;
 	                }
-	                uint _17760 = imageAtomicAdd(_5506, int(((_8835 + _13039) * 5u) + 1u), 1u);
+	                uint _17760 = imageAtomicAdd(_5506, int(((_7126 + (_13039 * 2u)) * 5u) + 1u), 1u);
 	                _5186 = _13039 + 1u;
 	                _13039 = _5186;
 	                continue;
 	            }
-	            uint _20652 = g_CullRequests_1._m0[_13724]._m6;
-	            uint _3056 = _20652 + _3737;
 	            uint _12699;
 	            if (_3779)
 	            {
@@ -529,12 +476,12 @@ CS
 	            }
 	            undetermined_3._m0[_3056]._m0 = g_InstanceData_1._m0[uint(int(_12699)) / 4u];
 	            undetermined_3._m0[_3056]._m1 = _5325;
-	            undetermined_3._m0[_3056]._m2 = uint(int(_11578));
+	            undetermined_3._m0[_3056]._m2 = uint(int(_13687));
 	            undetermined_3._m0[_3056]._m3 = 4294967295u;
 	            undetermined_3._m0[_3056]._m4 = 4294967295u;
 	            undetermined_3._m0[_3056]._m5 = 0u;
 	            undetermined_3._m0[_3056]._m6 = 0u;
-	            undetermined_3._m0[_3056]._m7 = _11730;
+	            undetermined_3._m0[_3056]._m7 = 1.0;
 	        }
 	    }
 	}

@@ -110,12 +110,12 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j
- (08@HPXbPm
- (08@HPZ
- (08@HRPm
- (08@JPm
- (0X`hpzPm
+ (08@HPX`jp
+ (08@HPXb@n
+ (08@HPZp
+ (08@HR@n
+ (08@Jp
+ (0X`hpz@n
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -312,6 +312,7 @@
 "d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo
 "e\n CCSUsrMsg_EntityOutlineHighlight
 "f\n\nCMsgTEDust
+"g3XL
 "h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 "l7ql`R2lWf
 "lbN.
@@ -2201,7 +2202,6 @@ $taser_charge
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
-%n4hP
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -2644,6 +2644,7 @@ $taser_charge
 (.CPlayer_SetPerFriendPreferences_Request
 (0'yX
 (0x%08X)'??'
+(4xO
 (5Me
 (5jP
 (ACTIVE)
@@ -2940,7 +2941,6 @@ $taser_charge
 ).CPlayer_GetPerFriendPreferences_Response"M
 ).CPlayer_SetCommunityPreferences_Response"+
 ).CPlayer_SetPerFriendPreferences_Response"G
-)248O
 )4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )A service for accessing Steam player dataB
 )App Id this file is being published FROM.
@@ -2971,7 +2971,6 @@ $taser_charge
 )\nOx*\nDh+\n(
 )\n\nEGCItemMsg
 )binary_zstd
-)camera_csgo_uimappreview_point
 )fuG
 )haI
 * Matchmaking '%s' -vs- '%s' in '%s' '%s'
@@ -3106,6 +3105,7 @@ $taser_charge
 ,?IsUint32@Value@v8@@QEBA_NXZ
 ,ARu@y6
 ,I?Value@Number@v8@@QEBANXZ
+,N`4hP
 ,Reason=
 ,Service for dealing with user-submitted logsB
 ,ShfPQ
@@ -3122,8 +3122,8 @@ $taser_charge
 ,\n\nsv_interp0
 ,\n\nsv_interp1
 ,\n\vvictim_slot
+,]p3xL
 ,ar_monastery
-,d;4XO
 ,fQM(
 ,h11]
 ,hmQ#
@@ -10932,8 +10932,9 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR
-08@JPm
+08@HRp
+08@J@n
+08Bp
 08bX
 09,h
 0;Q5[
@@ -11207,7 +11208,8 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpd
+2\vpT
+2\vpl
 2^pV
 2a"l
 2bT~
@@ -11300,7 +11302,6 @@ $taser_charge
 4tpD
 4zj@1;IJ
 4|2;#GameUI_Retake_Card_LightEmUp,1,1,rifle1,grenade0|2;#GameUI_Retake_Card_Kobe,1,1,rifle1,grenade2|1;#GameUI_Retake_Card_1g,1,1,rifle1,grenade3|1;#GameUI_Retake_Card_DisappearingAct,1,1,rifle1,grenade1|1;#GameUI_Retake_Card_EyesOnTarget,1,1,weapon_aug
-4~3HL
 5'0v2ZP
 5(EWorkshopFileType) Type of Workshop file to publish.
 5(Optional) The number of results, per page to return.
@@ -11350,7 +11351,6 @@ $taser_charge
 6144
 62$|S)6f
 64CK\vH
-64HO
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 6666666666666666C:\buildworker\csgo_rel_win64\build\src\common\opensslwrapper.cpp
 67-s
@@ -11428,8 +11428,8 @@ $taser_charge
 8835-KLXV-0292
 8<pl
 8= zp
+8@Jp
 8A6j
-8B3HK
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11624,7 +11624,6 @@ $taser_charge
 <weapon>
 =!=-=3=7=?=C=o=s=u=y={=
 =&sf9
-=38K
 == %d Entities Dumped\n
 == PulseGraphDef ==\n
 == false\n
@@ -11718,11 +11717,10 @@ $taser_charge
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
 @0pp
-@4hO
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
-@HPX`hv@
+@HPX`hv0
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11746,7 +11744,6 @@ $taser_charge
 @icon_item
 @keyframes 
 @keyframes '%s'\r\n{\r\n
-@m_bIronSightAvailable
 @n2w
 @workshop
 @zDSteamUnifiedMessages
@@ -11874,7 +11871,6 @@ AMMO_TYPE_HEGRENADE
 AMMO_TYPE_MOLOTOV
 AMMO_TYPE_SMOKEGRENADE
 AMMO_TYPE_TASERCHARGE
-AMoveMountingAmount_t
 ANC[%d]
 ANNOTATION: Distance -- %s -- %f\n
 ANNOTATIONS: hiding node "%s"\n
@@ -11981,7 +11977,6 @@ ASN1_seq_unpack
 ASN1_sign
 ASN1_unpack_string
 ASN1_verify
-ASpray
 AUTHORITY_INFO_ACCESS
 AUTHORITY_KEYID
 AVATAR: Image load failed for panel %s.
@@ -12493,6 +12488,7 @@ BAscendantHasClass
 BAsyncSend
 BAsyncSendProto
 BC (default)
+BC_RetakeGameRules
 BCanSeeInParentScroll
 BCanvasReady
 BEOS_BIND_FUNC
@@ -12664,6 +12660,7 @@ B\vp\nP
 B_txt
 B`4I
 Back Alley
+BackfaceCulling
 BackgroundForShaderIDs
 BackupFileNamesReceived
 Bad FLC data for resource '%s': %s\n
@@ -12694,7 +12691,6 @@ Bad time value
 Badge
 Baggage
 Balkan
-Bamount of money awared to every player after each round
 Banjo
 Bank
 Basalt
@@ -13225,6 +13221,7 @@ CAsyncWriteInProgress::OnComplete( "%s" ) -> %s at %.3f\n
 CAttachmentNameSymbolWithStorage
 CAttributeContainerPlayer
 CAttribute_String
+CBANNER_CELEBRATE_02
 CBI]6
 CBaseAnimGraph::InputSetBodyGroup
 CBaseAnimGraphChoreoServicesThink
@@ -14561,7 +14558,7 @@ CRenderGameSystem::OnClientPreOutput
 CRenderGameSystem::OnClientPreOutputParallelWithServer
 CRenderGameSystem::OnClientPreOutputParallelWithServer(), C:\buildworker\csgo_rel_win64\build\src\game\shared\rendergamesystem.cpp:1223
 CRenderGameSystem::OnClientPreOutputParallelWithServer(1323): 
-CRenderingPipelineCsgo::AddLayersToView(10661): 
+CRenderingPipelineCsgo::AddLayersToView(10664): 
 CResourceName
 CResourceNameTyped
 CResourcePrecacherGameSystem
@@ -16416,7 +16413,6 @@ D2I_X509
 D2I_X509_CINF
 D2Lb!
 D4tp
-D4xO
 D514p
 D@D/lcO+hcK
 D@Dz
@@ -17110,7 +17106,7 @@ DistanceThreshold
 Div R%d <- R%d / R%d
 Dividing by zero in CNmFloatMathNode
 Dizzy
-Dm_pReticleHintTextName
+Dm_scoreSecondHalf
 DnRv
 DoAllocateEntity failed\n
 DoAllocateEntity pEntity->m_pInstance != NULL %d\n
@@ -17947,7 +17943,6 @@ F+Zb
 F,mZq
 F/o4
 F2M+
-F3XK
 F6tr
 F7!z
 F9q'
@@ -18390,6 +18385,7 @@ FrameTitleButton.DisabledBgColor
 FrameTitleButton.DisabledFgColor
 FrameTitleButton.FgColor
 FramebufferColorTexture
+FramebufferDepthTexture
 Framenum   %8d
 Free
 FreeRoamSpectator
@@ -19497,6 +19493,7 @@ Gotv
 GotvPanel
 GotvToggle
 GpuCullShadow
+GpuCullSkybox
 GpuDebugDraw2D
 GpuDebugDraw3D
 GpuDebugDrawArgs
@@ -20685,6 +20682,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
+JY3(L
 JZIX
 J\nHBF
 J`KL
@@ -20824,7 +20822,7 @@ LOG_MESSAGE
 LONG
 LONG_C2I
 LPVIndex
-LS&\nK0m
+LS&\nKpm
 LT[N
 LT_txt
 LXKQ
@@ -21067,6 +21065,7 @@ Lunacy
 M'Ezb
 M-laO
 M0 E
+M4(P
 MASK:
 MATCH-
 MATCHSTATS\t%s, round %d, value %d\n
@@ -22237,15 +22236,14 @@ P-224
 P-256
 P-384
 P-521
-P08@JPm
+P08@J@n
 P08J
 P1\t98"
+P2@n
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
-P2Pm
 P5[1
-P6Pe
-P:Pm
+P6@f
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -23151,6 +23149,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
+Q$4hO
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23386,10 +23385,11 @@ RT %dx%d %s %s : %d Bytes\n
 RT_txt
 RTime32
 RULESHERE
+R\fpl
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpd
+R\vpT
 R]Di
 Rad2 Deg
 Radar
@@ -23539,6 +23539,7 @@ RefractDepth
 RefractOpaqueDetph
 Refresh
 Refresh reachable datacenters.
+RefreshActiveInventoryList
 RefreshDisplay
 RefreshEnum
 RefreshPickemPage
@@ -24931,7 +24932,6 @@ Show the team select menu with mock data passed in.
 Show vote context menu in pause menu
 Show/hide equipment for the current team
 ShowAcceptPopup
-ShowAcknowledgePopup
 ShowActiveTournamentPage
 ShowAndHide
 ShowArrow
@@ -25291,6 +25291,7 @@ Split a World Vector into component parts.
 Split an Angle into component parts.
 SplitLabel
 SpottedEntityUpdate
+Spray
 Spray-Paint
 SprayColorCategory
 SprayTexture
@@ -26704,6 +26705,7 @@ W'6S`
 W2Q=
 W3fp
 W3i+,
+W4HP
 W>peSp>9
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.\n
 WARNING! Field %s is using the wrong FIELD_ type!\nFix this or you'll see a crash.\n
@@ -27141,7 +27143,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr
+X`hrp
 Xd3h
 XfJ7
 XjfR
@@ -27279,6 +27281,7 @@ Z~wl
 [-1] -> empty
 [-1] -> gsn(empty)
 [-1] -> gsn(null)
+[4XP
 [Additional text in debugoverlay_dashboard]
 [CC Log %s]: d: %f, ls: %f, %s\n
 [CC]:  %s: No Caption Found\n
@@ -27346,6 +27349,7 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
+\fp\vPL
 \ful2
 \fy&3Gl
 \l:ArR
@@ -28301,6 +28305,7 @@ Z~wl
 \vj0k
 \vjC7
 ]1h=bfz
+]38L
 ]FhSD}
 ]GT7]
 ]G\nY1
@@ -28398,8 +28403,8 @@ _var
 _xU`u
 _}eOk
 `28)fk
-`2Pm
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
+`43PK
 `:zQF
 `D$daM-l
 `DZG
@@ -29195,6 +29200,7 @@ b <= sizeof ctx->buf
 b <= sizeof ctx->final
 b0M%
 b2i_PVK_bio
+b3HL
 b5o-
 b=G3
 bB"`3
@@ -29765,6 +29771,7 @@ camera/cameras/%s.txt
 cameraOrigin
 camera_baseanimating
 camera_csgo_uimappreview_pathdriven
+camera_csgo_uimappreview_point
 camera_datadriven
 camera_free
 camera_inventory
@@ -30394,6 +30401,7 @@ consumer_shortcutid
 cont [ %d ]
 contactshadow
 contain
+contains
 contains_patches_representing_organizations
 contains_stickers_autographed_by_proplayers
 contains_stickers_representing_organizations
@@ -30849,6 +30857,7 @@ d2i_TS_RESP
 d2i_X509_PKEY
 d35P
 d4\tp
+d4xP
 d7NSuLq2
 d=%-2d hl=%ld l=%4ld 
 d=%-2d hl=%ld l=inf  
@@ -32924,6 +32933,7 @@ gotvrelaystarting
 gpGlocals->curtime() called while IsInSimulation() is false\n
 gpGlocals->rendertime() called while IsInSimulation() is true\n
 gp\r3
+gpucullskybox
 gpudebugdraw
 gpudebugdrawargs
 gpudebugverts
@@ -33279,7 +33289,7 @@ hour
 hours
 houseIdentifier
 hover
-hpzPm
+hpz@n
 hr_H
 href="
 hscroll
@@ -33397,7 +33407,6 @@ i2d_SSL_SESSION
 i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
-i4XP
 i4a."
 i5BH
 iA5StringSyntax
@@ -34378,6 +34387,7 @@ k+Aq
 k/sn
 k0>Z,
 k26C*
+k3hL
 k8\vD
 k8fo
 k8xA
@@ -34786,6 +34796,7 @@ kvtags
 kw.6#
 k~Rz
 l <= sizeof(c->iv)
+l&+30K
 l&rB6
 l4Ot
 l7@J
@@ -35136,7 +35147,7 @@ lowresdepth
 luminaire_anisotropy
 luminaire_shape
 luminaire_size
-lvR4
+lvR48P
 m&9W
 m*Zu
 m249
@@ -35909,6 +35920,7 @@ mg_cs_office
 mg_de_ancient
 mg_de_anubis
 mg_de_bank
+mg_de_cache
 mg_de_canals
 mg_de_dust2
 mg_de_inferno
@@ -36203,7 +36215,6 @@ move
 move_crc
 move_crouch_amount
 move_direction_id
-move_is_stutter_step
 move_is_walking
 move_mode
 move_speed_horizontal
@@ -36984,9 +36995,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0j 
 p250
-p2Pm
+p2@n
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
 p2p_Ping
@@ -37001,7 +37011,7 @@ p2{l
 p4Z3
 p5Z3
 p5\nL,
-p60h
+p6 i
 p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
@@ -37014,6 +37024,7 @@ pDescription
 pDest
 pField
 pFilter
+pFpq
 pG_*h
 pIp 
 pLocationEntity
@@ -37022,10 +37033,10 @@ pO0h
 pOtherEntity
 pPose != nullptr
 pRTH
-pRefreshActiveInventoryList
 pRequest
 pSPo
 pSequenceName
+pShowAcknowledgePopup
 pSource
 pSourceFunc
 pSpawnedEntityName
@@ -38033,7 +38044,6 @@ r$0I
 r-IE
 r184
 r3A~
-r4xP
 r<\rND
 rAGW
 rB2pBB
@@ -38051,6 +38061,7 @@ rZPM
 r\n\vstart_index
 r\vDi
 r\vp!K
+r\vpl
 r_2PassBuildDraw 0
 r_2PassBuildDraw 1
 r_csm_fast_path 0
@@ -39410,6 +39421,8 @@ special1
 special2
 special3
 special:%d
+special_elite
+special_revolver
 specific_physics_body_to_replace
 specplayer_d_adr
 spectarget
@@ -39954,7 +39967,6 @@ t(ydU
 t+RW
 t0;?ZlP*m
 t2U 
-t3(L
 t4O_
 t80z
 tA`KO/3G!\n7h=
@@ -41833,7 +41845,6 @@ y#y&Jb
 y-offset
 y0JY
 y2Cu
-y38L
 y;w9
 y>?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
 y?iLa
@@ -41875,6 +41886,7 @@ z/B,9d
 z<d2
 z>Hz
 z>Will spew if a job takes longer than the specified number of microseconds
+zCBANNER_CELEBRATE_03
 zF):O4
 zFar
 zG2m8

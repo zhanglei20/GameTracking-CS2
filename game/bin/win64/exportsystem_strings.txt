@@ -82,7 +82,7 @@ $prefix_element$
 '?SetCount@FbxLayerElementArray@fbxsdk@@QEAA_NHW4EFbxMemoryClearMode@2@@Z
 '?SetCurrentAnimationStack@FbxScene@fbxsdk@@QEAAXPEAVFbxAnimStack@2@@Z
 '?SetFileName@FbxFileTexture@fbxsdk@@QEAA_NPEBD@Z
-(1p2
+(9T2
 (?SetLegacyStyle@FbxShape@fbxsdk@@QEAAX_N@Z
 (?SetLink@FbxCluster@fbxsdk@@QEAAXPEBVFbxNode@2@@Z
 (?SetLinkMode@FbxCluster@fbxsdk@@QEAAXW4ELinkMode@12@@Z
@@ -94,7 +94,6 @@ $prefix_element$
 (?SetNodeAttribute@FbxNode@fbxsdk@@QEAAPEAVFbxNodeAttribute@2@PEAV32@@Z
 (?SetNormals@FbxLayer@fbxsdk@@QEAAXPEAVFbxLayerElementNormal@2@@Z
 (?SetOriginalUpAxis@FbxGlobalSettings@fbxsdk@@QEAAXAEBVFbxAxisSystem@2@@Z
-(eo2
 )?SetSecondDouble@FbxTime@fbxsdk@@QEAAXN@Z
 )?SetShadingMode@FbxNode@fbxsdk@@QEAAXW4EShadingMode@12@@Z
 )?SetSkeletonType@FbxSkeleton@fbxsdk@@QEAAXW4EType@12@@Z
@@ -802,15 +801,13 @@ $prefix_element$
 .png
 .tga
 .vmat
-0>XL)
 0x%llx
 16-byte data pool
 2(?SetFrame@FbxTime@fbxsdk@@QEAAX_JW4EMode@12@@Z
 2\nP!E
+2\vpt
 4-byte data pool
-4C~CGenericFilter
 5sfm_v8
-62L)
 64 283 0
 7'?SetAt@FbxLayerElementArray@fbxsdk@@QEAAXHPEBXW4EFbxType@2@@Z
 8-byte data pool
@@ -1484,14 +1481,13 @@ GenericType
 GetClipboardData
 GetProfile_ultrafast
 GlobalSize
-H)m2
-H=n2
+H=Q2
+H=S2
 Hammer temp export
+HeP2
 HemiOctAnisoRoughness_RG_BA
 HemiOctIsoRoughness_RG_B
 HemiOctNormal
-Hil2
-Hin2
 Hold
 I(?SetGlobalTimeMode@FbxTime@fbxsdk@@SAXW4EMode@12@N@Z
 IExportSystem
@@ -1749,7 +1745,7 @@ WipeUndo '%s'\n
 World Files
 World Node Files
 X)?SetRotationActive@FbxNode@fbxsdk@@QEAAX_N@Z
-Xam2
+X5R2
 Z%?RemoveElementUV@FbxGeometryBase@fbxsdk@@QEAA_NPEAVFbxLayerElementUV@2@@Z
 ZFP compression is not supported in this build
 [%d] Aborting undo '%s'\n
@@ -1796,8 +1792,7 @@ _selfillummask_
 _specexp_
 _specmask_
 _texcoordNames
-`9o2
-`Qp2
+`yT2
 activeBookmarkSet
 adding layer %d to stack\n
 addlayer: log %p lc[%d], layer %p
@@ -2338,6 +2333,7 @@ overrideParent
 overridePos
 overrideRot
 ownerlog
+p>t9)
 parentBindRotation
 parentConstraint
 pathNodeName
@@ -2683,3 +2679,4 @@ z)?SetScale@FbxTexture@fbxsdk@@QEAAXNN@Z
 z\tV_sscanf_s
 {+?currentDateTimeGMT@FbxDateTime@fbxsdk@@SA?AV12@XZ
 |BBoneSetup
+~CGenericFilter

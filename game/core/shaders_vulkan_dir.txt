@@ -83,8 +83,8 @@ shaders/vfx/cull_aggregate_fragments.ini CRC:0000000000 size:0
 shaders/vfx/cull_aggregate_fragments_vulkan_50_cs.vcs CRC:00d144a3c6 size:108691
 shaders/vfx/cull_aggregate_fragments_vulkan_50_features.vcs CRC:0024e1f453 size:2258
 shaders/vfx/cull_instanced_meshes.ini CRC:0000000000 size:0
-shaders/vfx/cull_instanced_meshes_vulkan_50_cs.vcs CRC:002134665f size:660084
-shaders/vfx/cull_instanced_meshes_vulkan_50_features.vcs CRC:009bf4bde7 size:2466
+shaders/vfx/cull_instanced_meshes_vulkan_50_cs.vcs CRC:00e96d25da size:145547
+shaders/vfx/cull_instanced_meshes_vulkan_50_features.vcs CRC:00c627bd14 size:2338
 shaders/vfx/debug_show_texture.ini CRC:0000000000 size:0
 shaders/vfx/debug_show_texture_vulkan_40_features.vcs CRC:00375875b2 size:1522
 shaders/vfx/debug_show_texture_vulkan_40_ps.vcs CRC:009570918a size:2226

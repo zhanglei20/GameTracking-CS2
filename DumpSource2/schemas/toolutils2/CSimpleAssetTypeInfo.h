@@ -23,6 +23,10 @@
 //	[
 //	],
 //	"m_PreviewThumbnailOverlayIcon": "",
+//	"m_bErrorOnUnrecognizedOutboundRefs": false,
+//	"m_UnrecognizedOutboundRefsErrorTypeExceptions":
+//	[
+//	],
 //	"m_bHideTypeByDefault": false,
 //	"m_bCannotBeShown": false,
 //	"m_bIsNontrivialChildAssetType": false,
@@ -32,7 +36,6 @@
 //	"m_bPrefersLivePreview": false,
 //	"m_bPresentInGameTree": false,
 //	"m_bShouldCompileErrorFallbackToDisk": false,
-//	"m_bUnrecognizedReferencesAreErrors": false,
 //	"m_nAssetTypeVersion": 0,
 //	"m_Test_InjectSearchable": ""
 //}
@@ -49,6 +52,8 @@ class CSimpleAssetTypeInfo
 	CUtlVector< CUtlString > m_ExcludeFromMods;
 	CUtlVector< CUtlString > m_HideForRetailMods;
 	CUtlString m_PreviewThumbnailOverlayIcon;
+	bool m_bErrorOnUnrecognizedOutboundRefs;
+	CUtlVector< CUtlString > m_UnrecognizedOutboundRefsErrorTypeExceptions;
 	bool m_bHideTypeByDefault;
 	bool m_bCannotBeShown;
 	bool m_bIsNontrivialChildAssetType;
@@ -58,7 +63,6 @@ class CSimpleAssetTypeInfo
 	bool m_bPrefersLivePreview;
 	bool m_bPresentInGameTree;
 	bool m_bShouldCompileErrorFallbackToDisk;
-	bool m_bUnrecognizedReferencesAreErrors;
 	int32 m_nAssetTypeVersion;
 	CUtlString m_Test_InjectSearchable;
 };

@@ -88,7 +88,7 @@ VS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (6620 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (6584 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
@@ -120,7 +120,6 @@ VS
 	};
 	
 	float _3;
-	vec4 _4;
 	
 	layout(set = 4, binding = 32, std430) readonly buffer g_instanceBuffer
 	{
@@ -225,16 +224,11 @@ VS
 	    }
 	    vec3 _12151 = vec4(vTexCoord.xyz * _21709.xyz, 1.0) * _17839;
 	    vec4 _23533 = (vec4(_12151.xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	    vec3 _23588 = mix(vec3(1.0), vec4(_21354, _21355, _14124, _3).xyz, vec3(_Globals_.g_flModelTintAmount));
-	    vec4 _17842;
-	    _17842.x = _23588.x;
-	    _17842.y = _23588.y;
-	    _17842.z = _23588.z;
 	    output_0 = vPositionOs;
 	    output_1 = _12151.xyz - PerViewConstantBufferCsgo_t._m0.xyz;
 	    output_2 = normalize(vec4(vTangentUOs_flTangentVSign.xyz, 0.0) * _17839);
 	    output_3 = vec4(vNormalOs.xyxy);
-	    output_4 = vec4(_17842.xyz * _Globals_.g_vColorTint.xyz, 1.0);
+	    output_4 = vec4(vec4(mix(vec3(1.0), vec4(_21354, _21355, _14124, _23812.w).xyz, vec3(_Globals_.g_flModelTintAmount)), _3).xyz * _Globals_.g_vColorTint.xyz, 1.0);
 	    output_5 = vec4(normalize(vec4(vBlendIndices.xyz, 0.0) * _17839), vBlendIndices.w);
 	    output_6 = (g_instanceBuffer_1._m0[vColorBlendValues]._m5) & 65535u;
 	    _23533.y = -_23533.y;

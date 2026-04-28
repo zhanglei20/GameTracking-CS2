@@ -81,8 +81,8 @@ shaders/vfx/cull_aggregate_fragments.ini CRC:0000000000 size:0
 shaders/vfx/cull_aggregate_fragments_pc_50_cs.vcs CRC:00685af810 size:140486
 shaders/vfx/cull_aggregate_fragments_pc_50_features.vcs CRC:00526dfed4 size:2146
 shaders/vfx/cull_instanced_meshes.ini CRC:0000000000 size:0
-shaders/vfx/cull_instanced_meshes_pc_50_cs.vcs CRC:00630e1e3d size:142765
-shaders/vfx/cull_instanced_meshes_pc_50_features.vcs CRC:00e79fac5b size:2338
+shaders/vfx/cull_instanced_meshes_pc_50_cs.vcs CRC:006f74a6d4 size:125158
+shaders/vfx/cull_instanced_meshes_pc_50_features.vcs CRC:003400b308 size:2290
 shaders/vfx/debug_show_texture.ini CRC:0000000000 size:0
 shaders/vfx/debug_show_texture_pc_40_features.vcs CRC:00375875b2 size:1522
 shaders/vfx/debug_show_texture_pc_40_ps.vcs CRC:00d603a4e5 size:2143

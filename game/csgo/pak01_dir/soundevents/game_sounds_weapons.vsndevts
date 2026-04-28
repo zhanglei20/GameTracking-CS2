@@ -46159,4 +46159,67 @@
 			"sounds/weapons/c4/c4_beep2.vsnd",
 		]
 	}
+	c4.draw.grab = 
+	{
+		type = "csgo_mega"
+		preload_vsnds = true
+		volume = 0.5
+		mixgroup = "Foley"
+		block_duration = 0.0
+		block_distance = 0.0
+		block_match_entity = false
+		use_distance_volume_mapping_curve = true
+		use_distance_unfiltered_stereo_mapping_curve = true
+		reverb_wet = 1.0
+		occlusion_intensity = 1.0
+		position_offset = [ 0.0, 0.0, 0.0 ]
+		display_broadcast = false
+		reverb_source_wet = 1.0
+		use_fadetime_volume_mapping_curve = false
+		restrict_source_reverb = false
+		block_matching_events = false
+		enable_child_events = false
+		distance_volume_mapping_curve = 
+		[
+			[
+				396.86856, 1.0, 0.0, -0.001408,
+				0.0, 0.0,
+			],
+			[
+				1106.8573, 0.0, -0.001408, 0.0,
+				0.0, 0.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/weapons/c4/c4_draw_grab_01.vsnd",
+			"sounds/weapons/c4/c4_draw_grab_02.vsnd",
+			"sounds/weapons/c4/c4_draw_grab_03.vsnd",
+			"sounds/weapons/c4/c4_draw_grab_04.vsnd",
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				60.000004, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				80.571434, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		soundevent_01 = 
+		[
+			"",
+		]
+		metadata = 
+		[
+			"meta",
+			"localplayeronly",
+		]
+	}
 }

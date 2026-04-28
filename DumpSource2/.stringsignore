@@ -1,8 +1,6 @@
 
 !(m_bAnimated && m_bManualAnimFrame)
 !(m_bAnimated && m_bScaleAnimationRate)
-!=
-!= (or missing)
 !__IsSmartPropPulseActive
 !__SheetFileHasDecalParams
 !m_bAnimated
@@ -329,18 +327,12 @@ $SPECULARSCALE
 2D Orient
 3D
 7 Segment
-<
-<=
 <ESymbolType> Dump all of the symbols in the Panorama symbol table
 <b>Check</b> this if the input position is relative to the listener.<br /> <b>Don't check</b> this if the input position is aboslute world space coordinates.
 <b>Main Graph Only</b><br>This refers to a piece of code in the sound engine that will select specific voices to be mixed into this track and at what mix level each voice will be mixed.<br>If you want to drive that with data, choose "By Named Send" and author a list of send names for this track.  Then any sound event can send to one of those names and the audio will be mixed here.
 <entindex> <fieldname>:  Track changes to entity index entindex, for field fieldname.
 <msgid> Send a blank body message with a given ID to gc for routing tests
 <state> Turn on/off simulated GC communications failure (GC is down in a way that we know it is down)
-==
-== (or missing)
->
->=
 A
 A 220x45 (<16kb) image file in /csgo/ that will be displayed to spectators.
 A 3-bone solver that uses two 2-bone solves under the hood to emulate a dog leg.
@@ -520,29 +512,6 @@ ANIM_LOOP_MODE_NOT_LOOPING
 ANIM_LOOP_MODE_USE_SEQUENCE_SETTINGS
 ANY
 ARRAY: Grid is a specific number of grid divisions. FILL: The boundary is filled with as many as will fit at the specified cell spacing.
-ASSET_FILTER_CONTAINS
-ASSET_FILTER_DEF_SUBASSET
-ASSET_FILTER_DEPREF_ASSET
-ASSET_FILTER_DEPREF_BY_ASSET
-ASSET_FILTER_DOES_NOT_CONTAIN
-ASSET_FILTER_EQUAL
-ASSET_FILTER_EQUAL_OR_MISSING
-ASSET_FILTER_EXACT_DEF_SUBASSET
-ASSET_FILTER_EXACT_DEPREF_ASSET
-ASSET_FILTER_EXACT_DEPREF_BY_ASSET
-ASSET_FILTER_EXACT_PARENTED_BY_ASSET
-ASSET_FILTER_EXACT_PARENTS_ASSET
-ASSET_FILTER_EXACT_REF_SUBASSET
-ASSET_FILTER_FUNC_COUNT
-ASSET_FILTER_GREATER
-ASSET_FILTER_GREATER_EQUAL
-ASSET_FILTER_LESS
-ASSET_FILTER_LESS_EQUAL
-ASSET_FILTER_NOT_EQUAL
-ASSET_FILTER_NOT_EQUAL_OR_MISSING
-ASSET_FILTER_PARENTED_BY_ASSET
-ASSET_FILTER_PARENTS_ASSET
-ASSET_FILTER_REF_SUBASSET
 ASYNC_FIRE_AND_FORGET
 AUTO
 AVA_DEFEAT
@@ -891,7 +860,6 @@ AssetBrowse( vpost, *showassetpreview )
 AssetBrowse( vsnd )
 AssetBrowse( vsubgrph, *requiredoubleclick  )
 AssetBrowse( vtex, *showassetpreview )
-AssetEditInfoFilterFunc_t
 AssetEngineCommand_t
 AssetWarningFixType_t
 Associated emitter Index
@@ -1439,7 +1407,6 @@ CAnimationGraphVisualizerSphere
 CAnimationGraphVisualizerText
 CAnimationGroup
 CAnimationLayer
-CAssetInfoFilterParams
 CAssetTagInfo
 CAssetTypeConfig
 CAssetWarning
@@ -7052,7 +7019,6 @@ Indicates whether to treat reserve ammo as clips (reloads) instead of raw bullet
 Inferno dlights are at least this far apart
 Inferno_concav_plane_threshold
 Infinite Zoom Scale
-InfoDataFilter_t
 InfoForResourceTypeCAnimData
 InfoForResourceTypeCAnimationGroup
 InfoForResourceTypeCCSGOEconItem
@@ -11997,7 +11963,6 @@ Toggles fade support for instanced meshes
 Toggles input/output message display for the selected entity(ies).  The name of the entity will be displayed as well as any messages that it sends or receives.\n\tArguments:   \t{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
 Toggles instant replay.
 Toggles loadout display
-Toggles mesh shader rendering for instanced meshes
 Toggles motion vector support for instanced meshes
 Toggles showing which blocks are pending/loaded async.
 Toggles specified convar value on and off.
@@ -14402,7 +14367,6 @@ constraint
 constraint_axislimit_t
 constraint_breakableparams_t
 constraint_hingeparams_t
-contains
 contributionscore_assist
 contributionscore_assist_reqs
 contributionscore_bomb_defuse_major
@@ -14652,8 +14616,6 @@ default text
 default value
 defaultSubgraph
 default_fov
-defines subasset
-defines subasset (exact)
 delay
 delete physics sim when stopped
 demo_allow_game_mismatch
@@ -14779,7 +14741,6 @@ dlight_debug
 dm_reset_spawns
 dm_togglerandomweapons
 do not draw in particle pass
-doesn't contain
 don't traverse a jump link if there's a detour that costs less than this amount
 doorCheck_e
 dota_enable_spatial_audio
@@ -16590,8 +16551,6 @@ m_FeModelPos
 m_Feet
 m_FieldName
 m_Filter
-m_FilterFunc
-m_Filters
 m_FinalKVs
 m_FindMethod
 m_FitMatrices
@@ -17454,6 +17413,7 @@ m_Type
 m_UiName
 m_UiOptions
 m_UnknownKeys
+m_UnrecognizedOutboundRefsErrorTypeExceptions
 m_UnyieldResume
 m_UpDirectionSpace
 m_UpSpace
@@ -18151,6 +18111,7 @@ m_bEngaged
 m_bEnsureOnNavmeshOnFinish
 m_bEntitiesSpawned
 m_bEqualPow
+m_bErrorOnUnrecognizedOutboundRefs
 m_bEvenDistribution
 m_bEverFullyConnected
 m_bEverPlayedOnTeam
@@ -18257,6 +18218,7 @@ m_bFreezeTransitionActive
 m_bFreshStartThisRound
 m_bFrozen
 m_bFullbright
+m_bGPUCullSkybox
 m_bGamePaused
 m_bGameRestart
 m_bGameWritable
@@ -18584,7 +18546,6 @@ m_bIsStartState
 m_bIsStateMachineLayer
 m_bIsStatic
 m_bIsStoreItem
-m_bIsStutterStep
 m_bIsSwappingToPredictableController
 m_bIsSyncTrack
 m_bIsSynchronized
@@ -19307,7 +19268,6 @@ m_bUIWeapon
 m_bUnderCrosshair
 m_bUniformSpeed
 m_bUnloadingStarted
-m_bUnrecognizedReferencesAreErrors
 m_bUnstoppable
 m_bUnzoomsAfterShot
 m_bUpDownState
@@ -26039,7 +25999,6 @@ m_stuckJumpTimer
 m_stuckSpot
 m_stuckTimer
 m_stuckTimestamp
-m_stutterStepStartTick
 m_subCode
 m_subGraphFilename
 m_subQuantizers
@@ -28338,10 +28297,6 @@ parallel_update_surrounding_bounds_in_spatial_partition_update
 paramName
 parent particle radius scale
 parentIndex
-parented by asset
-parented by asset (exact)
-parents asset
-parents asset (exact)
 particle density
 particle feathering alpha filter
 particle feathering closest distance to surface
@@ -28492,7 +28447,7 @@ playdemo
 player0_using_joystick
 player_botdifflast_s
 player_competitive_maplist_2v2_10_0_630B8B7C
-player_competitive_maplist_8_10_0_C512DEBE
+player_competitive_maplist_8_10_0_556B3D03
 player_debug_off_nav
 player_debug_print_damage
 player_nevershow_communityservermessage
@@ -29110,12 +29065,6 @@ redirectstart
 reference CP 1
 reference CP 2
 reference replacement definition
-referenced or depended-on by asset
-referenced or depended-on by asset (exact)
-references or depends on asset
-references or depends on asset (exact)
-references subasset
-references subasset (exact)
 refract amount
 refract background
 refract blur radius
@@ -29356,7 +29305,6 @@ sc_instanced_mesh_gpu_occlusion_culling
 sc_instanced_mesh_gpu_vis_culling
 sc_instanced_mesh_lod_bias
 sc_instanced_mesh_lod_bias_shadow
-sc_instanced_mesh_mesh_shader
 sc_instanced_mesh_motion_vectors
 sc_instanced_mesh_opaque_fade
 sc_instanced_mesh_size_cull_bias
@@ -30231,6 +30179,7 @@ sv_cq_trim_bloat_space
 sv_cq_trim_catchup_remainder
 sv_cs_dump_econ_item_stringtable
 sv_cs_player_speed_has_hostage
+sv_csgo_gpu_culling_skybox
 sv_csgo_shoot_assert_lagcompensation_error
 sv_csgo_shoot_force_full_interp
 sv_csgo_shoot_force_use_target_time
@@ -30880,11 +30829,11 @@ ui_deepstats_radio_heat_tab
 ui_deepstats_radio_heat_team
 ui_deepstats_toplevel_mode
 ui_hud_dist
-ui_inspect_bkgnd_map_539CD0B9
+ui_inspect_bkgnd_map_C2AEBB5E
 ui_inventorysettings_recently_acknowledged
 ui_leaderboards_top_public_appid
 ui_lobby_draft_enabled
-ui_mainmenu_bkgnd_movie_539CD0B9
+ui_mainmenu_bkgnd_movie_C2AEBB5E
 ui_nearbylobbies_filter3
 ui_news_last_read_link
 ui_news_last_read_link2

@@ -23,6 +23,10 @@
 //	[
 //	],
 //	"m_PreviewThumbnailOverlayIcon": "",
+//	"m_bErrorOnUnrecognizedOutboundRefs": false,
+//	"m_UnrecognizedOutboundRefsErrorTypeExceptions":
+//	[
+//	],
 //	"m_bHideTypeByDefault": false,
 //	"m_bCannotBeShown": false,
 //	"m_bIsNontrivialChildAssetType": false,
@@ -32,7 +36,6 @@
 //	"m_bPrefersLivePreview": false,
 //	"m_bPresentInGameTree": false,
 //	"m_bShouldCompileErrorFallbackToDisk": false,
-//	"m_bUnrecognizedReferencesAreErrors": false,
 //	"m_nAssetTypeVersion": 0,
 //	"m_Test_InjectSearchable": "",
 //	"m_CompilerIdentifier": "",

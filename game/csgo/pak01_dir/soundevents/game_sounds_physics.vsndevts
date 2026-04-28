@@ -1118,7 +1118,7 @@
 	MetalVent.ImpactHard = 
 	{
 		type = "csgo_mega"
-		volume = 0.1
+		volume = 0.4
 		pitch = 0.99
 		block_duration = 0.4
 		mixgroup = "Physics"

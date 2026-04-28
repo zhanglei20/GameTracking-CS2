@@ -19,7 +19,7 @@
 .bmp
 /cursor.res
 00000409
-2\vpP
+2\vp0
 ACUTE_ACCENT
 AC_BACK
 AC_BOOKMARKS
@@ -380,6 +380,7 @@ RIGHT_CURLY_BRACKET
 RIGHT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK
 RSHIFT
 RWIN
+R\fp0
 R_AXIS
 R_AXIS_NEG
 R_AXIS_POS
@@ -420,6 +421,7 @@ SDL: Window %d shown\n
 SDL: Window %d size changed [%d,%d]\n
 SDL_CreateColorCursor failed for %s\n
 SDL_CreateColorCursor failed\n
+SDL_ENABLE_SCREEN_KEYBOARD
 SDL_EVENT(0x%x)
 SDL_EVENT_AUDIO_DEVICE_ADDED
 SDL_EVENT_AUDIO_DEVICE_REMOVED
@@ -589,6 +591,7 @@ keyc
 mouse %d %s (%d) at %g %g on window %d\n
 mouse motion %g %g at %g %g with buttons "%s" on window %d\n
 out of focus
+r\vp0
 s(KeEU
 scan
 shown

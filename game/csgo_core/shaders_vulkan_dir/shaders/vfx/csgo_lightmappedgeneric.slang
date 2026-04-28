@@ -180,7 +180,7 @@ VS
 	float g_flModelTintAmount < Default(1); UiType(Slider); UiGroup("Color,10/30"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (6664 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (6696 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1125
 	{
@@ -208,8 +208,6 @@ VS
 	{
 	    float4 _m0[4];
 	};
-	
-	static float4 _3;
 	
 	ByteAddressBuffer g_instanceBuffer : register(t32, space4);
 	ByteAddressBuffer g_transformBuffer : register(t30, space4);
@@ -332,21 +330,17 @@ VS
 	    {
 	        _14124 = _7676.z;
 	    }
-	    float _8825 = _23812.w;
+	    float _9851 = _23812.w;
+	    float _16337 = _9851 * asfloat(g_instanceBuffer.Load(nInstanceIdx * 32 + 28));
 	    float3 _12151 = mul(_17839, float4(vPositionOs.xyz * _21709.xyz, 1.0f));
 	    float4 _23875 = mul(float4x4(float4(PerViewConstantBuffer_t_1_m0._m0[0].x, PerViewConstantBuffer_t_1_m0._m0[1].x, PerViewConstantBuffer_t_1_m0._m0[2].x, PerViewConstantBuffer_t_1_m0._m0[3].x), float4(PerViewConstantBuffer_t_1_m0._m0[0].y, PerViewConstantBuffer_t_1_m0._m0[1].y, PerViewConstantBuffer_t_1_m0._m0[2].y, PerViewConstantBuffer_t_1_m0._m0[3].y), float4(PerViewConstantBuffer_t_1_m0._m0[0].z, PerViewConstantBuffer_t_1_m0._m0[1].z, PerViewConstantBuffer_t_1_m0._m0[2].z, PerViewConstantBuffer_t_1_m0._m0[3].z), float4(PerViewConstantBuffer_t_1_m0._m0[0].w, PerViewConstantBuffer_t_1_m0._m0[1].w, PerViewConstantBuffer_t_1_m0._m0[2].w, PerViewConstantBuffer_t_1_m0._m0[3].w)), (float4(_12151.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m1 * 1.0f)).xyzw);
 	    float4 _9337 = vTexCoord.xyxy;
 	    _9337.z = vTexCoord.x;
 	    _9337.w = vTexCoord.y;
-	    float3 _23588 = lerp(1.0f.xxx, float4(_21354, _21355, _14124, _8825).xyz, _Globals_1_g_flModelTintAmount.xxx);
-	    float4 _17842;
-	    _17842.x = _23588.x;
-	    _17842.y = _23588.y;
-	    _17842.z = _23588.z;
 	    output_0 = _12151.xyz - PerViewConstantBufferCsgo_t_1_m0.xyz;
 	    output_1 = normalize(mul(_17839, float4(vNormalOs.xyz, 0.0f)));
 	    output_2 = _9337;
-	    output_3 = float4(_17842.xyz * _Globals_1_g_vColorTint.xyz, _8825 * _Globals_1_g_flVertexColorOpacityScale);
+	    output_3 = float4(float4(lerp(1.0f.xxx, float4(_21354, _21355, _14124, _9851).xyz, _Globals_1_g_flModelTintAmount.xxx), _16337).xyz * _Globals_1_g_vColorTint.xyz, _16337 * _Globals_1_g_flVertexColorOpacityScale);
 	    output_4 = float4(normalize(mul(_17839, float4(vTangentUOs_flTangentVSign.xyz, 0.0f))), vTangentUOs_flTangentVSign.w);
 	    output_5 = (g_instanceBuffer.Load(nInstanceIdx * 32 + 20)) & 65535u;
 	    _23875.y = -_23875.y;

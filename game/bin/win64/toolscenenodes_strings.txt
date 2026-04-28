@@ -4037,7 +4037,7 @@ $prefix_element$
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\rlhp
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpL
+2\vpd
 2^pV
 2a"l
 2aboutToShow()
@@ -10448,11 +10448,11 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RT60 for low, mid, and high frequency bands for the probe.
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpL
 R\r1>Vp
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R\vp!6
+R\vpd
 R]Di
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
@@ -16439,7 +16439,6 @@ rZ1VwGf5
 rZPM
 r\tV_sinhf
 r\vDi
-r\vpL
 rad2deg
 radiusScale
 radius_key
@@ -17619,7 +17618,7 @@ u0Az
 u5bB
 u6Bm
 u:9F
-u;0y
+u;0p
 u;{Gk
 uBY+
 uC<[rR

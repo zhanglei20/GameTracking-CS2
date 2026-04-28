@@ -30,7 +30,6 @@
 //	"m_flPreviousMoveSpeedHorizontal": null,
 //	"m_flCrouchAmount": null,
 //	"m_bIsWalking": null,
-//	"m_bIsStutterStep": null,
 //	"m_flWeaponDropAmount": null,
 //	"m_groundAction": null,
 //	"m_groundActionDirectionID": null,
@@ -62,7 +61,6 @@ class CCS2PawnGraphController : public CCS2WeaponGraphController
 	CAnimGraph2ParamOptionalRef< float32 > m_flPreviousMoveSpeedHorizontal;
 	CAnimGraph2ParamOptionalRef< float32 > m_flCrouchAmount;
 	CAnimGraph2ParamOptionalRef< bool > m_bIsWalking;
-	CAnimGraph2ParamOptionalRef< bool > m_bIsStutterStep;
 	CAnimGraph2ParamOptionalRef< float32 > m_flWeaponDropAmount;
 	CAnimGraph2ParamOptionalRef< CGlobalSymbol > m_groundAction;
 	CAnimGraph2ParamOptionalRef< CGlobalSymbol > m_groundActionDirectionID;

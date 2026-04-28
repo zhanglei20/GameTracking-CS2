@@ -22,12 +22,14 @@
   w/ large threshold: %d,
   w/ zero threshold: %d,
   w/ zero threshold: (%.1f, %.1f)
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$8
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$0
  %i fog-only.
  %s | Flags %lld \n
  (08@HPX`j0
+ (08@HPXb 
  (08@HPZ0
  (08@J0
+ (0X`hpz 
  (EXTERN)
  (Frozen)
  (MAYBE DISABLED?!)
@@ -452,42 +454,42 @@ $tIP
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) %s
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) Col %d %s
 (%d,%d,%d,%d)
-(1Ab
-(1Yb
+(1Rb
 (2) Or right-click this text
 (3) Or click this button
-(5Eb
-(5Pb
+(5mb
+(5yb
 (<-- right-click here)
-(ALb
 (ActiveIdUsing: AllKeyboardKeys: %d, NavDirMask: 0x%X)
 (Click and drag to scroll)
 (Context Name: "%s")
 (Debug Log: Auto-disabled some ImGuiDebugLogFlags after 2 frames)\n
 (Dock node)
+(ESb
 (Hex)
 (Hold Ctrl to: 
 (Hold Ctrl to: use 
 (Hold Shift to display a dummy viewport)
-(I0b
+(I4b
 (Internal Buffer: TextA Size: %d, Capacity: %d)
 (Left) Using ImGui::PushClipRect():\nWill alter ImGui hit-testing logic + ImDrawList rendering.\n(use this if you want your clipping rectangle to affect interactions)\n\n(Center) Using ImDrawList::PushClipRect():\nWill alter ImDrawList rendering only.\n(use this as a shortcut if you are only using ImDrawList calls)\n\n(Right) Using ImDrawList::AddText() with a fine ClipRect:\nWill alter only this specific ImDrawList::AddText() rendering.\nThis is often used internally to avoid altering the clipping rectangle and minimize draw calls.
-(MSb
-(MVb
+(M7b
 (Main menu bar)
+(Mzb
 (Popup)
+(Q8b
+(QCb
 (R = radius, N = approx number of segments)
 (SceneWorld 3D Dump contains %d large objects - they are scaled down and will render red.)\n
-(UUb
+(UVb
+(Ubb
 (Untitled)
-(Uob
-(Urb
 (Use ImGui::SameLine() to keep adding items to the right of the preceding item)
-(Utb
-(YJb
-(Yqb
+(YUb
+(Yob
 (Z(^(b(f(j(n(r(v(z1
 (\?=\nW>=\nW>=\nW>
+(aWb
 (also access from 'Examples->Assets Browser' in menu)
 (and more errors)
 (c) 2014-2025 Omar Cornut
@@ -495,28 +497,25 @@ $tIP
 (dump)
 (dump3d)
 (except InputRouting which is spammy)
-(iab
+(i1b
+(i9b
+(iEb
 (in ChildD: not using same Shortcut)
 (in ChildE: using same Shortcut)
 (in PopupF)
 (in WindowA)
-(iwb
-(iyb
-(mCb
-(mFb
-(mHb
 (no material)
 (no model)
 (note: some platform backends may not reflect a change of this value for existing viewports, and may need the viewport to be recreated)
-(qAb
+(qMb
 (qnb
+(qqb
 (see Demo->Configuration for details & more)
-(uOb
-(uZb
+(uLb
 (unnamed)
+(uxb
 (void*)0x%p
-(ybb
-(ypb
+(yfb
 ** %d instances of same table! Some data below will refer to last instance.
 **DebugBreak**
 *COPIED*
@@ -862,6 +861,7 @@ $tIP
 04e/
 050s0
 08@HR0
+08@J 
 08B0
 0?333?333?333?333?
 0x%02X
@@ -889,6 +889,7 @@ $tIP
 2. I am selectable
 24 Hour Clock
 2C2L
+2\vph
 2d arr
 2q2z2
 3 (tab skip)
@@ -928,8 +929,9 @@ $tIP
 8859
 8888
 8@J0
-8Aia
 8C3F
+8Y[b
+8Ygb
 8\f58
 8\foQS
 8n8y
@@ -1038,13 +1040,12 @@ $tIP
 ?0x%p
 ?333?333?fff?
 ?Bxt>
-?ESceneObjectVisualization
 ?JA7=
 ?Label1
 ?PUNCTUAL
+?SCENEOBJECT_VIS_MATERIAL
 ?The "Tools" menu above gives access to: Style Editors (ImPlot/ImGui)\nand Metrics (general purpose Dear ImGui debugging tool).
 ?VertexPos_t
-?VertexUVPos_t
 ?XXXXXXXXXXXXXXXX
 ?alpha
 ?expf
@@ -1054,6 +1055,7 @@ $tIP
 ?fff?fff?fff?
 ?ffffff
 ?sqrt
+@08N\
 @33333
 @33333#
 @33333'
@@ -1092,9 +1094,9 @@ $tIP
 @33333{
 @33333}
 @33SA
-@HPX`hv
+@HPX`hv`
+@HVp
 @OS/2
-@Show
 @fff>fff>fff>fff>
 @fffff
 @fffff"
@@ -1137,6 +1139,8 @@ $tIP
 @fffffx
 @fffffz
 @fffff|
+@hnY
+@sc_setclassflags %s %d
 A Rather Long Title
 A#4A\v
 A*A3
@@ -2115,7 +2119,6 @@ D_ENABLE_VOLUMETRIC_FOG
 D_FIRST_FRAME
 D_FULL_HAIR_PIPELINE
 D_HAIR_OFFSETS
-D_HAS_ROOT_VIEW
 D_INDIRECT_TRANSMITTANCE
 D_JITTER
 D_NO_ZTEST
@@ -2130,10 +2133,12 @@ D_SELF_SHADOW
 D_SMOOTH_ACROSS_UV_SEAMS
 D_SPECULAR_CUBE_MAP_STATIC
 D_SUBGROUP_SIZE_32
+D_SUPPORTS_FADE
 D_SUPPORTS_MESH_SHADER
 D_TEMPORAL_INTEGRATE
 D_VARIANT
 D_VISUALIZE_BOUNDS
+D_VISUALIZE_SCENEOBJECTS
 D_VIS_CULLING
 D_VOLUME_CULLER
 Daikon
@@ -3256,6 +3261,7 @@ Inputs & Focus/Shortcuts
 Inputs & Focus/Tabbing
 Insert
 Instance %d: HoveredRow: %d, LastOuterHeight: %.2f
+InstanceBuffer
 InstanceCount
 InstanceData
 Instanced Debugger
@@ -3397,7 +3403,7 @@ Kiwi
 Ksmall
 L'LZa
 L0L:LA
-L=X?W
+L=8?W
 L>33
 L?33
 L?ff
@@ -4056,7 +4062,9 @@ Override ChildBg color
 Override Streaming GPU Memory
 P+\fGj
 P.P5
-P08J
+P08@J 
+P08Jp
+P08N\
 P3\rA
 P8\nD
 PAPU
@@ -4651,7 +4659,7 @@ SceneSystem/SkipLoadingRenderingPipelines
 SceneSystem/SparseShadowTrees
 SceneSystem/SubsurfaceProfiles
 SceneSystem/SupportNeedsDynamicShadows
-SceneSystem/SupportsInstancedFade
+SceneSystem/SupportsHybridInstancedFade
 SceneSystem/Tonemapping
 SceneSystem/TransformTextureRowCount
 SceneSystem/TransformTextureRowCountToolsMode
@@ -4675,6 +4683,7 @@ Scratch Keys
 Scratch Payload
 ScratchBuffer
 Screen-size: %.2f, alpha-fade %.2f, scale %.2f, fog scale %.2f 
+ScreenSizeScaleForLOD
 ScreenWidthForLOD
 Scroll %.1f/%.1f %.1f/%.1f
 Scroll Offset
@@ -4831,6 +4840,7 @@ Shift+Click to check multiple boxes.
 Shift+Keyboard to copy current value to other boxes.
 Short Text
 Shortcuts
+Show
 Show "Debug Break" buttons in other sections (io.ConfigDebugIsDebuggerPresent)
 Show 2nd header
 Show Axes Rects
@@ -5455,6 +5465,7 @@ VertexPosInstanceUV_t
 VertexPostProcess_t
 VertexSize
 VertexUVPosColorNormalAndTangent_t
+VertexUVPos_t
 VertexWireFrame2D_t
 VertexWireFrame_t
 Vertical
@@ -5934,8 +5945,10 @@ _WidthFixed
 _WidthStretch
 _XFREE86_GLYPH_RANGES
 _atlas
+`5bd
 a'aCaYb"b8b
 a-a8
+aBv\
 aJ!\vA
 aJaP
 a\ft/tOtet
@@ -6134,7 +6147,6 @@ daggerdbl
 darkening-parameters
 data%d
 dcroat
-dd/0
 dddd
 dear imgui says hello! (%s) (%d)
 dearimgui.com/faq
@@ -6389,6 +6401,7 @@ hitgroup_shader_%p
 hl?S
 horizontal
 horizontal split
+hpz 
 https://github.com/epezent/implot
 https://github.com/ocornut/imgui
 https://github.com/ocornut/imgui/blob/master/docs/BACKENDS.md
@@ -6794,6 +6807,8 @@ outer_size
 overlaps
 p q g j y
 p#p7pP
+p08@H^\
+p0jpq
 pCRF
 paragraph
 parallel
@@ -6907,7 +6922,6 @@ s1s:sHsX
 s_hScrambledHalton != GENERIC_DATA_HANDLE_INVALID
 sc_dumpworld %d
 sc_dumpworld3d %d
-sc_setclassflags %s %d
 scaron
 scedilla
 scene_quadindexbuffer
@@ -7193,7 +7207,6 @@ x=300
 x>xoxyx~
 xF%\nD
 xIxRx[xe
-xb\fS
 xinput1_1.dll
 xinput1_2.dll
 xinput1_3.dll
