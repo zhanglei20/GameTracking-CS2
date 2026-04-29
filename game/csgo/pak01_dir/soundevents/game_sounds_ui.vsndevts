@@ -13688,7 +13688,7 @@
 		[
 			"sounds/ui/panorama/bg_ancient_day_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_anubis = 
 	{
@@ -13762,7 +13762,7 @@
 		[
 			"sounds/ui/panorama/bg_anubis_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_dz_blacksite = 
 	{
@@ -13836,7 +13836,7 @@
 		[
 			"sounds/ui/panorama/bg_blacksite_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_cache = 
 	{
@@ -13917,7 +13917,7 @@
 			"UIPanorama.BG_de_cache_reactor",
 			"UIPanorama.BG_de_cache_crickets",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_cbble = 
 	{
@@ -13991,7 +13991,7 @@
 		[
 			"sounds/ui/panorama/bg_cobble_night_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_chlorine = 
 	{
@@ -14065,7 +14065,7 @@
 		[
 			"sounds/ui/panorama/bg_chlorine_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_dust2 = 
 	{
@@ -14139,7 +14139,7 @@
 		[
 			"sounds/ui/panorama/bg_dust2_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_coop_kasbah = 
 	{
@@ -14213,7 +14213,7 @@
 		[
 			"sounds/ui/panorama/bg_phoenixfacility_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_inferno = 
 	{
@@ -14287,7 +14287,7 @@
 		[
 			"sounds/ui/panorama/bg_inferno_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_cs_italy = 
 	{
@@ -14361,7 +14361,7 @@
 		[
 			"sounds/ui/panorama/bg_italy_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_mirage = 
 	{
@@ -14435,7 +14435,7 @@
 		[
 			"sounds/ui/panorama/bg_mirage_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_mutiny = 
 	{
@@ -14509,7 +14509,7 @@
 		[
 			"sounds/ui/panorama/bg_mutiny_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_nuke = 
 	{
@@ -14583,7 +14583,7 @@
 		[
 			"sounds/ui/panorama/bg_nuke_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_cs_office = 
 	{
@@ -14657,7 +14657,7 @@
 		[
 			"sounds/ui/panorama/bg_office_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_overpass = 
 	{
@@ -14731,7 +14731,7 @@
 		[
 			"sounds/ui/panorama/bg_overpass_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_vertigo = 
 	{
@@ -14805,7 +14805,7 @@
 		[
 			"sounds/ui/panorama/bg_vertigo_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.tab_mainmenu_shop = 
 	{
@@ -15082,7 +15082,7 @@
 		[
 			"sounds/ui/panorama/bg_baggage_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_ar_shoots = 
 	{
@@ -15156,7 +15156,7 @@
 		[
 			"sounds/ui/panorama/bg_anubis_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_ar_house = 
 	{
@@ -15230,7 +15230,7 @@
 		[
 			"sounds/ui/panorama/bg_anubis_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	ar_baggage_airplanes = 
 	{
@@ -15849,7 +15849,7 @@
 		[
 			"sounds/ambient/train/train_warehouse_loop.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_warehouse_space = 
 	{
@@ -16561,7 +16561,7 @@
 		[
 			"sounds/ui/panorama/bg_train_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_train.WheelLoop = 
 	{
@@ -16642,7 +16642,7 @@
 		[
 			"sounds/ambient/train/freighttrain_pullforward_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UIPanorama.BG_de_train.StartStop = 
 	{
@@ -16715,7 +16715,7 @@
 			"sounds/ambient/train/train_takeup_05.vsnd",
 			"sounds/ambient/train/train_takeup_06.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UI.Mission.QuotaUp = 
 	{
@@ -16894,7 +16894,7 @@
 		[
 			"sounds/ui/panorama/bg_ancient_night_01.vsnd",
 		]
-		randomize_start_time = true
+		randomize_start_time = false
 	}
 	UI.Laptop.ZoomIn = 
 	{

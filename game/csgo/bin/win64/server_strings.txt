@@ -1662,6 +1662,7 @@ $tH@T\tI
 (0x%08X)'??'
 (3@Mb
 (4?NewFromUnsigned@Integer@v8@@SA?AV?$Local@VInteger@v8@@@2@PEAVIsolate@2@I@Z
+(4pfj
 (5Me
 (5jP
 (=?Resolve@Resolver@Promise@v8@@QEAA?AV?$Maybe@_N@3@V?$Local@VContext@v8@@@3@V?$Local@VValue@v8@@@3@@Z
@@ -2019,7 +2020,6 @@ $tH@T\tI
 *DEAD*
 *DEAD*(TEAM)
 *DISABLED*
-*H4O
 *I?Value@Int32@v8@@QEBAHXZ
 *J\n\tQuestType
 *UlS
@@ -2049,6 +2049,7 @@ $tH@T\tI
 *\n\fitem_updates
 *\n\nECsgoGCMsg
 *gFBk
+*h4O
 *hbJ1
 *it%2
 *kf[R
@@ -2238,6 +2239,7 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
+.01U
 .4bb
 .97yY
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
@@ -8850,6 +8852,7 @@ $tH@T\tI
 /usr/local/ssl/private
 /zt1
 0 == ( pInstance->GetOwnerEntity()->GetEntityIdentity()->GetFlags() & EF_IN_STAGING_LIST )
+0(gO
 0123456789
 02V8[
 05=k
@@ -8946,7 +8949,6 @@ $tH@T\tI
 2:3maJ
 2:pS
 2?MakeWeak@api_internal@v8@@YAXPEA_KPEAXP6AXAEBV?$WeakCallbackInfo@X@2@@ZW4WeakCallbackType@2@@Z
-2H4O
 2I y)
 2Tm=#
 2Uiwp"9
@@ -8969,12 +8971,14 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
+2\vp0
 2^pV
 2a"l
 2bT~
 2cb:RO
 2d\v
 2f)l=
+2h4O
 2nIg
 2ndry
 2p"6
@@ -9098,7 +9102,7 @@ $tH@T\tI
 62$|S)6f
 64CK\vH
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
-6666666666666666p
+6666666666666666`
 67-s
 6H,N
 6O|T%
@@ -9170,7 +9174,7 @@ $tH@T\tI
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
 8A6j
-8F0\rU
+8FP\rU
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9431,7 +9435,7 @@ $tH@T\tI
 @BH]f
 @BoneSetup
 @CWeaponCZ75a
-@HPX`hvp
+@HPX`hv
 @MfKZ
 @Pgl
 @Pu\rm
@@ -18166,6 +18170,7 @@ Ow!y
 OwnerHandle
 P!bxo
 P(UH 
+P(gO
 P-192
 P-224
 P-256
@@ -18175,7 +18180,7 @@ P08@J
 P08J
 P1\t98"
 P5[1
-P60'U
+P6P'U
 PAGN_4
 PARALYZE
 PARAMETER NAME: %s | OPTIONAL: %s, TYPE: %s, BOUND: %s\n
@@ -18966,6 +18971,7 @@ RSDS}
 RTime32
 R\r1>Vp
 R\vp!y
+R\vp0
 R]Di
 Rad2 Deg
 Radial using: %s\n
@@ -21413,7 +21419,6 @@ VNotify Abandoned (Not enabled)\n
 VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
-VP!U
 VR_HAND_HAPTIC_PULSE_LIGHT
 VR_HAND_HAPTIC_PULSE_MEDIUM
 VR_HAND_HAPTIC_PULSE_STRONG
@@ -21516,6 +21521,7 @@ Vote started "%s %s" from #%u %s\n
 Vote succeeded "%s %s" from #%u %s\n
 Vote.Failed
 Voting %s.\n
+Vp!U
 Vp>u
 Vt_9
 Vulkan
@@ -22245,6 +22251,7 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
+\fp\vP(gO
 \ful2
 \fy&3Gl
 \l:ArR
@@ -22329,7 +22336,6 @@ Z~wl
 \n========================================\n
 \nDictionary: %s\n
 \nGameTick_t
-\nH4O
 \nSimulating Entities:\n\n
 \nVisMon: Polling now. (Frequency: %f)\n
 \n\fBPE_Teleport
@@ -22888,6 +22894,7 @@ Z~wl
 \n\vweapon_type
 \n\vxp_category
 \n\vyoutube_url
+\nh4O
 \nqYu
 \ntM(ie-V
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
@@ -22991,6 +22998,8 @@ Z~wl
 \v\vTSG
 \vj0k
 \vjC7
+\vp(gO
+\vp0iO
 ] Done (%.2f seconds)
 ]1h=bfz
 ]FhSD}
@@ -23076,6 +23085,7 @@ _}eOk
 `\n\rvector_values
 `fPw.\vM
 `h9T~
+`htpfj
 `o_je
 `yNT
 a null shared library handle was used
@@ -29646,6 +29656,7 @@ ownername
 p is not prime
 p not prime
 p!PcA1|
+p(gO
 p)ou}
 p+"\tHr9
 p.char_two
@@ -29654,7 +29665,6 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0jp
 p250
 p2{l
 p4Z3

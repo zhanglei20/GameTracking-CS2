@@ -983,7 +983,7 @@
 			{
 				mixgroup = "Amb_Common"
 				vol = 0.534
-				solo = 0.003
+				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
 				dsp = 1.0
@@ -1271,7 +1271,7 @@
 			{
 				mixgroup = "BuyMusic"
 				vol = 1.0
-				solo = 0.006
+				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
 				dsp = 0.0

@@ -110,12 +110,12 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`jp
- (08@HPXb@n
- (08@HPZp
- (08@HR@n
- (08@Jp
- (0X`hpz@n
+ (08@HPX`j`
+ (08@HPXb0o
+ (08@HPZ`
+ (08@HR0o
+ (08@J0o
+ (0X`hpz0o
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -10932,11 +10932,12 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HRp
-08@J@n
-08Bp
+08@HR`
+08@J0o
+08B`
 08bX
 09,h
+0:ps
 0;Q5[
 0<cz
 0M2~@p
@@ -11208,8 +11209,7 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpT
-2\vpl
+2\vpD
 2^pV
 2a"l
 2bT~
@@ -11428,8 +11428,8 @@ $taser_charge
 8835-KLXV-0292
 8<pl
 8= zp
-8@Jp
 8A6j
+8Bph
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11720,7 +11720,6 @@ $taser_charge
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
-@HPX`hv0
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11744,6 +11743,7 @@ $taser_charge
 @icon_item
 @keyframes 
 @keyframes '%s'\r\n{\r\n
+@m_bIronSightAvailable
 @n2w
 @workshop
 @zDSteamUnifiedMessages
@@ -22236,14 +22236,15 @@ P-224
 P-256
 P-384
 P-521
-P08@J@n
+P08@J0o
 P08J
 P1\t98"
-P2@n
+P20o
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
 P5[1
-P6@f
+P60g
+P:0o
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -22753,6 +22754,7 @@ Permit Responses
 Permitted
 Persist
 PersonalStore
+Pfpn
 Phoenix Compound
 PhysDisableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
 PhysEntityCollisionsAreDisabled called on entities in two different scene worlds (%s - %u vs %s - %u)\n
@@ -22912,6 +22914,7 @@ Playsoundscape %s:Unknown command %s\n
 Please specify 0 or 1 with the -stream Parameter\n
 Pm8A?
 PmR"H?
+Pnpo
 Point entity.
 PointsAnim
 Policy Qualifier CPS
@@ -23385,11 +23388,10 @@ RT %dx%d %s %s : %d Bytes\n
 RT_txt
 RTime32
 RULESHERE
-R\fpl
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpT
+R\vpD
 R]Di
 Rad2 Deg
 Radar
@@ -27143,7 +27145,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hrp
+X`hr`
 Xd3h
 XfJ7
 XjfR
@@ -27349,7 +27351,6 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\vPL
 \ful2
 \fy&3Gl
 \l:ArR
@@ -28402,6 +28403,7 @@ _util_drawtext_pos
 _var
 _xU`u
 _}eOk
+`20o
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `43PK
@@ -33289,7 +33291,7 @@ hour
 hours
 houseIdentifier
 hover
-hpz@n
+hpz0o
 hr_H
 href="
 hscroll
@@ -36995,8 +36997,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p20o
 p250
-p2@n
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
 p2p_Ping
@@ -37007,11 +37009,11 @@ p2p_ping could not convert "%s" to a CPeerToPeerAddress\n
 p2p_ping could not ping "%s" because they are an unknown peer\n
 p2p_ping requires a destination address\n
 p2p_ping sending to "%s"\n
+p2ph
 p2{l
 p4Z3
 p5Z3
 p5\nL,
-p6 i
 p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
@@ -37022,9 +37024,9 @@ pD4t
 pData->GetDataDescMap() == pTemplateDataMap
 pDescription
 pDest
+pF`r
 pField
 pFilter
-pFpq
 pG_*h
 pIp 
 pLocationEntity
@@ -38061,7 +38063,6 @@ rZPM
 r\n\vstart_index
 r\vDi
 r\vp!K
-r\vpl
 r_2PassBuildDraw 0
 r_2PassBuildDraw 1
 r_csm_fast_path 0

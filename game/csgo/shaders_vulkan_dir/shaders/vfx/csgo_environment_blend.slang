@@ -605,6 +605,7 @@ PS
 	float g_flDetailPropMaskBias1 < Range(0, 10); UiType(Slider); UiGroup("Material1/Detail Props,90/20"); >;
 	float g_flHeightMapScale1 < Default(1); Range(-4, 4); UiType(Slider); UiGroup("Material1/Height/20"); >;
 	float g_flHeightMapScale1 < Default(1); Range(-2, 2); UiType(Slider); UiGroup("Material1/Height/20"); >;
+	float3 g_vAmbientOcclusionLevels1 < Default2(0, 0.5); Range(-1, 1); Attribute("0=Option 1,1=Option 2,2=Option 3"); UiType(VectorText); UiGroup("Material1/Lighting/21"); Expression(float3(-this.x,-1.4427*log(max(.0001,1-this.y)),2-this.z)); >;
 	CreateInputTexture2D(TextureMetalness1, Linear, 8, "", "_metal", "Material1/Lighting/30", Default4(0, 0, 0, 0));
 	float g_fTextureColorSaturation1 < Default(1); Range(0, 4); UiType(Slider); UiGroup("Material1/Color Correction/30"); >;
 	float g_flDetailPropPuddleReduction1 < UiType(Slider); UiGroup("Material1/Detail Props,90/30"); >;
@@ -646,6 +647,7 @@ PS
 	float g_flHeightMapScale2 < Default(1); Range(-4, 4); UiType(Slider); UiGroup("Material2/Height/20"); >;
 	float g_flHeightMapScale2 < Default(1); Range(-2, 2); UiType(Slider); UiGroup("Material2/Height/20"); >;
 	float g_flNormalReplace2 < Default(1); UiType(Slider); UiGroup("Material2/Selective Blending/20"); >;
+	float3 g_vAmbientOcclusionLevels2 < Default2(0, 0.5); Range(-1, 1); UiType(VectorText); UiGroup("Material2/Lighting/21"); Expression(float3(-this.x,-1.4427*log(max(.0001,1-this.y)),2-this.z)); >;
 	CreateInputTexture2D(TextureMetalness2, Linear, 8, "", "_metal", "Material2/Lighting/30", Default4(0, 0, 0, 0));
 	float g_fTextureColorSaturation2 < Default(1); Range(0, 4); UiType(Slider); UiGroup("Material2/Color Correction/30"); >;
 	float g_flDetailPropPuddleReduction2 < UiType(Slider); UiGroup("Material2/Detail Props,90/30"); >;
@@ -701,6 +703,7 @@ PS
 	float g_flHeightMapScale3 < Default(1); Range(-4, 4); UiType(Slider); UiGroup("Material3/Height/20"); >;
 	float g_flHeightMapScale3 < Default(1); Range(-2, 2); UiType(Slider); UiGroup("Material3/Height/20"); >;
 	float g_flNormalReplace3 < Default(1); UiType(Slider); UiGroup("Material3/Selective Blending/20"); >;
+	float3 g_vAmbientOcclusionLevels3 < Default2(0, 0.5); Range(-1, 1); UiType(VectorText); UiGroup("Material3/Lighting/21"); Expression(float3(-this.x,-1.4427*log(max(.0001,1-this.y)),2-this.z)); >;
 	CreateInputTexture2D(TextureMetalness3, Linear, 8, "", "_metal", "Material3/Lighting/30", Default4(0, 0, 0, 0));
 	float g_fTextureColorSaturation3 < Default(1); Range(0, 4); UiType(Slider); UiGroup("Material3/Color Correction/30"); >;
 	float g_flDetailPropPuddleReduction3 < UiType(Slider); UiGroup("Material3/Detail Props,90/30"); >;
@@ -821,7 +824,7 @@ PS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (86340 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (86820 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#if defined(GL_EXT_control_flow_attributes)
@@ -897,9 +900,9 @@ PS
 	float _4;
 	vec3 _5;
 	vec3 _6;
-	float _7;
-	vec2 _10;
-	vec4 _14;
+	vec4 _7;
+	float _10;
+	vec2 _14;
 	
 	struct _2906
 	{
@@ -967,7 +970,7 @@ PS
 	    uint g_tHeight1;
 	    float g_fTintMaskContrast1;
 	    float g_fTintMaskBrightness1;
-	    vec3 _m21;
+	    vec3 g_vAmbientOcclusionLevels1;
 	    int g_bAdjustBaseColor1;
 	    float g_flHeightMapScale1;
 	    float g_flHeightMapZeroPoint1;
@@ -1000,7 +1003,7 @@ PS
 	    uint g_tColor2;
 	    uint g_tNormal2;
 	    uint g_tHeight2;
-	    vec3 _m54;
+	    vec3 g_vAmbientOcclusionLevels2;
 	    int g_bAdjustBaseColor2;
 	    anon_g_mTextureColorAdjust1 g_mTextureColorAdjust2;
 	    anon_g_mTextureColorAdjust1 g_mTextureAdjust2;
@@ -1452,16 +1455,20 @@ PS
 	    }
 	    float _7812 = clamp(((_Globals_.g_fTextureRoughnessContrast1 * (_13139 - 0.5)) + 0.5) * _Globals_.g_fTextureRoughnessBrightness1, 0.0, 1.0);
 	    vec4 _22411 = vec4(_22995.xyz, 1.0);
-	    float _9860 = _23299.w * float(_Globals_.g_bMetalness1 != 0);
+	    float _10048 = clamp(mix(_Globals_.g_vAmbientOcclusionLevels1.x, _Globals_.g_vAmbientOcclusionLevels1.z, pow(_22995.w, _Globals_.g_vAmbientOcclusionLevels1.y)), 0.0, 1.0);
+	    float _9068 = _23299.w * float(_Globals_.g_bMetalness1 != 0);
 	    float _24803 = clamp(((_Globals_.g_fTintMaskContrast1 * (_23299.y - 0.5)) + 0.5) * _Globals_.g_fTintMaskBrightness1, 0.0, 1.0);
-	    vec3 _25172 = mix(mix(_22995, vec4((_22411 * mat4(vec4(_Globals_.g_mTextureAdjust1._m0[0].x, _Globals_.g_mTextureAdjust1._m0[1].x, _Globals_.g_mTextureAdjust1._m0[2].x, _Globals_.g_mTextureAdjust1._m0[3].x), vec4(_Globals_.g_mTextureAdjust1._m0[0].y, _Globals_.g_mTextureAdjust1._m0[1].y, _Globals_.g_mTextureAdjust1._m0[2].y, _Globals_.g_mTextureAdjust1._m0[3].y), vec4(_Globals_.g_mTextureAdjust1._m0[0].z, _Globals_.g_mTextureAdjust1._m0[1].z, _Globals_.g_mTextureAdjust1._m0[2].z, _Globals_.g_mTextureAdjust1._m0[3].z), vec4(_Globals_.g_mTextureAdjust1._m0[0].w, _Globals_.g_mTextureAdjust1._m0[1].w, _Globals_.g_mTextureAdjust1._m0[2].w, _Globals_.g_mTextureAdjust1._m0[3].w))).xyz, _22995.w), bvec4(_Globals_.g_bAdjustBaseColor1 != 0)).xyz, vec4((_22411 * mat4(vec4(_Globals_.g_mTextureColorAdjust1._m0[0].x, _Globals_.g_mTextureColorAdjust1._m0[1].x, _Globals_.g_mTextureColorAdjust1._m0[2].x, _Globals_.g_mTextureColorAdjust1._m0[3].x), vec4(_Globals_.g_mTextureColorAdjust1._m0[0].y, _Globals_.g_mTextureColorAdjust1._m0[1].y, _Globals_.g_mTextureColorAdjust1._m0[2].y, _Globals_.g_mTextureColorAdjust1._m0[3].y), vec4(_Globals_.g_mTextureColorAdjust1._m0[0].z, _Globals_.g_mTextureColorAdjust1._m0[1].z, _Globals_.g_mTextureColorAdjust1._m0[2].z, _Globals_.g_mTextureColorAdjust1._m0[3].z), vec4(_Globals_.g_mTextureColorAdjust1._m0[0].w, _Globals_.g_mTextureColorAdjust1._m0[1].w, _Globals_.g_mTextureColorAdjust1._m0[2].w, _Globals_.g_mTextureColorAdjust1._m0[3].w))).xyz, _4).xyz, vec3(_24803));
-	    vec4 _12345 = vec4(_25172, _7);
-	    float _24323 = dot(_12345.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
+	    vec3 _25191 = mix(mix(_22995, vec4((_22411 * mat4(vec4(_Globals_.g_mTextureAdjust1._m0[0].x, _Globals_.g_mTextureAdjust1._m0[1].x, _Globals_.g_mTextureAdjust1._m0[2].x, _Globals_.g_mTextureAdjust1._m0[3].x), vec4(_Globals_.g_mTextureAdjust1._m0[0].y, _Globals_.g_mTextureAdjust1._m0[1].y, _Globals_.g_mTextureAdjust1._m0[2].y, _Globals_.g_mTextureAdjust1._m0[3].y), vec4(_Globals_.g_mTextureAdjust1._m0[0].z, _Globals_.g_mTextureAdjust1._m0[1].z, _Globals_.g_mTextureAdjust1._m0[2].z, _Globals_.g_mTextureAdjust1._m0[3].z), vec4(_Globals_.g_mTextureAdjust1._m0[0].w, _Globals_.g_mTextureAdjust1._m0[1].w, _Globals_.g_mTextureAdjust1._m0[2].w, _Globals_.g_mTextureAdjust1._m0[3].w))).xyz, _22995.w), bvec4(_Globals_.g_bAdjustBaseColor1 != 0)).xyz, vec4((_22411 * mat4(vec4(_Globals_.g_mTextureColorAdjust1._m0[0].x, _Globals_.g_mTextureColorAdjust1._m0[1].x, _Globals_.g_mTextureColorAdjust1._m0[2].x, _Globals_.g_mTextureColorAdjust1._m0[3].x), vec4(_Globals_.g_mTextureColorAdjust1._m0[0].y, _Globals_.g_mTextureColorAdjust1._m0[1].y, _Globals_.g_mTextureColorAdjust1._m0[2].y, _Globals_.g_mTextureColorAdjust1._m0[3].y), vec4(_Globals_.g_mTextureColorAdjust1._m0[0].z, _Globals_.g_mTextureColorAdjust1._m0[1].z, _Globals_.g_mTextureColorAdjust1._m0[2].z, _Globals_.g_mTextureColorAdjust1._m0[3].z), vec4(_Globals_.g_mTextureColorAdjust1._m0[0].w, _Globals_.g_mTextureColorAdjust1._m0[1].w, _Globals_.g_mTextureColorAdjust1._m0[2].w, _Globals_.g_mTextureColorAdjust1._m0[3].w))).xyz, _4).xyz, vec3(_24803));
+	    vec4 _17842;
+	    _17842.x = _25191.x;
+	    _17842.y = _25191.y;
+	    _17842.z = _25191.z;
+	    float _24323 = dot(_17842.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
 	    vec3 _9577 = normalize(max(input_1.xyz, vec3(0.001000000047497451305389404296875)));
 	    float _21159 = dot(_9577.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
 	    float _24175 = max(input_1.x, max(input_1.y, input_1.z));
 	    vec3 _24174 = normalize(mix(_24347, _13189, vec3(_Globals_.g_fTextureNormalContrast1))).xyz;
-	    vec3 _23405 = vec4(clamp(mix(_12345.xyz, (_9577 * min(_24323 / _21159, (3.0 * _24323) * _24175)).xyz, vec3((input_1.w * _24803) * float(_Globals_.g_bModelTint1 != 0))), vec3(0.0), vec3(1.0)).xyz, _7).xyz;
+	    vec3 _23405 = vec4(clamp(mix(_17842.xyz, (_9577 * min(_24323 / _21159, (3.0 * _24323) * _24175)).xyz, vec3((input_1.w * _24803) * float(_Globals_.g_bModelTint1 != 0))), vec3(0.0), vec3(1.0)).xyz, _10).xyz;
 	    vec2 _22927;
 	    _22927.x = _7812;
 	    float _7406 = float(_Globals_.g_bSnowLayer1 != 0);
@@ -1755,13 +1762,16 @@ PS
 	        }
 	        vec4 _21847 = vec4(_22996.xyz, 1.0);
 	        float _24804 = clamp(((_Globals_.g_fTintMaskContrast2 * (_23300.y - 0.5)) + 0.5) * _Globals_.g_fTintMaskBrightness2, 0.0, 1.0);
-	        vec3 _25173 = mix(mix(_22996, vec4((_21847 * mat4(vec4(_Globals_.g_mTextureAdjust2._m0[0].x, _Globals_.g_mTextureAdjust2._m0[1].x, _Globals_.g_mTextureAdjust2._m0[2].x, _Globals_.g_mTextureAdjust2._m0[3].x), vec4(_Globals_.g_mTextureAdjust2._m0[0].y, _Globals_.g_mTextureAdjust2._m0[1].y, _Globals_.g_mTextureAdjust2._m0[2].y, _Globals_.g_mTextureAdjust2._m0[3].y), vec4(_Globals_.g_mTextureAdjust2._m0[0].z, _Globals_.g_mTextureAdjust2._m0[1].z, _Globals_.g_mTextureAdjust2._m0[2].z, _Globals_.g_mTextureAdjust2._m0[3].z), vec4(_Globals_.g_mTextureAdjust2._m0[0].w, _Globals_.g_mTextureAdjust2._m0[1].w, _Globals_.g_mTextureAdjust2._m0[2].w, _Globals_.g_mTextureAdjust2._m0[3].w))).xyz, _22996.w), bvec4(_Globals_.g_bAdjustBaseColor2 != 0)).xyz, vec4((_21847 * mat4(vec4(_Globals_.g_mTextureColorAdjust2._m0[0].x, _Globals_.g_mTextureColorAdjust2._m0[1].x, _Globals_.g_mTextureColorAdjust2._m0[2].x, _Globals_.g_mTextureColorAdjust2._m0[3].x), vec4(_Globals_.g_mTextureColorAdjust2._m0[0].y, _Globals_.g_mTextureColorAdjust2._m0[1].y, _Globals_.g_mTextureColorAdjust2._m0[2].y, _Globals_.g_mTextureColorAdjust2._m0[3].y), vec4(_Globals_.g_mTextureColorAdjust2._m0[0].z, _Globals_.g_mTextureColorAdjust2._m0[1].z, _Globals_.g_mTextureColorAdjust2._m0[2].z, _Globals_.g_mTextureColorAdjust2._m0[3].z), vec4(_Globals_.g_mTextureColorAdjust2._m0[0].w, _Globals_.g_mTextureColorAdjust2._m0[1].w, _Globals_.g_mTextureColorAdjust2._m0[2].w, _Globals_.g_mTextureColorAdjust2._m0[3].w))).xyz, _4).xyz, vec3(_24804));
-	        vec4 _23105 = vec4(_25173, _7);
-	        float _16721 = dot(_23105.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
+	        vec3 _25192 = mix(mix(_22996, vec4((_21847 * mat4(vec4(_Globals_.g_mTextureAdjust2._m0[0].x, _Globals_.g_mTextureAdjust2._m0[1].x, _Globals_.g_mTextureAdjust2._m0[2].x, _Globals_.g_mTextureAdjust2._m0[3].x), vec4(_Globals_.g_mTextureAdjust2._m0[0].y, _Globals_.g_mTextureAdjust2._m0[1].y, _Globals_.g_mTextureAdjust2._m0[2].y, _Globals_.g_mTextureAdjust2._m0[3].y), vec4(_Globals_.g_mTextureAdjust2._m0[0].z, _Globals_.g_mTextureAdjust2._m0[1].z, _Globals_.g_mTextureAdjust2._m0[2].z, _Globals_.g_mTextureAdjust2._m0[3].z), vec4(_Globals_.g_mTextureAdjust2._m0[0].w, _Globals_.g_mTextureAdjust2._m0[1].w, _Globals_.g_mTextureAdjust2._m0[2].w, _Globals_.g_mTextureAdjust2._m0[3].w))).xyz, _22996.w), bvec4(_Globals_.g_bAdjustBaseColor2 != 0)).xyz, vec4((_21847 * mat4(vec4(_Globals_.g_mTextureColorAdjust2._m0[0].x, _Globals_.g_mTextureColorAdjust2._m0[1].x, _Globals_.g_mTextureColorAdjust2._m0[2].x, _Globals_.g_mTextureColorAdjust2._m0[3].x), vec4(_Globals_.g_mTextureColorAdjust2._m0[0].y, _Globals_.g_mTextureColorAdjust2._m0[1].y, _Globals_.g_mTextureColorAdjust2._m0[2].y, _Globals_.g_mTextureColorAdjust2._m0[3].y), vec4(_Globals_.g_mTextureColorAdjust2._m0[0].z, _Globals_.g_mTextureColorAdjust2._m0[1].z, _Globals_.g_mTextureColorAdjust2._m0[2].z, _Globals_.g_mTextureColorAdjust2._m0[3].z), vec4(_Globals_.g_mTextureColorAdjust2._m0[0].w, _Globals_.g_mTextureColorAdjust2._m0[1].w, _Globals_.g_mTextureColorAdjust2._m0[2].w, _Globals_.g_mTextureColorAdjust2._m0[3].w))).xyz, _4).xyz, vec3(_24804));
+	        vec4 _17843;
+	        _17843.x = _25192.x;
+	        _17843.y = _25192.y;
+	        _17843.z = _25192.z;
+	        float _16721 = dot(_17843.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
 	        _13143 = _24804;
-	        _16308 = vec4(clamp(mix(_23105.xyz, (_9577 * min(_16721 / _21159, (3.0 * _16721) * _24175)).xyz, vec3((input_1.w * _24804) * float(_Globals_.g_bModelTint2 != 0))), vec3(0.0), vec3(1.0)).xyz, _7);
+	        _16308 = vec4(clamp(mix(_17843.xyz, (_9577 * min(_16721 / _21159, (3.0 * _16721) * _24175)).xyz, vec3((input_1.w * _24804) * float(_Globals_.g_bModelTint2 != 0))), vec3(0.0), vec3(1.0)).xyz, _10);
 	        _17125 = _9718;
-	        _17126 = _22996.w;
+	        _17126 = clamp(mix(_Globals_.g_vAmbientOcclusionLevels2.x, _Globals_.g_vAmbientOcclusionLevels2.z, pow(_22996.w, _Globals_.g_vAmbientOcclusionLevels2.y)), 0.0, 1.0);
 	        _17152 = _23300.w * float(_Globals_.g_bMetalness2 != 0);
 	        _16863 = _24880;
 	    }
@@ -1816,12 +1826,12 @@ PS
 	            {
 	                _20653 = _7485.z;
 	            }
-	            _11673 = mix(_22995.w * mix(1.0, _17126, _6253 * _Globals_.g_flAOCombine2), _17126, _6253 * _Globals_.g_flAOReplace2);
+	            _11673 = mix(_10048 * mix(1.0, _17126, _6253 * _Globals_.g_flAOCombine2), _17126, _6253 * _Globals_.g_flAOReplace2);
 	            _10593 = mix(_23405 * mix(vec3(1.0), vec3(_21354, _21355, _20653) * 2.0, vec3(_6253 * _Globals_.g_flColorOverlay2)), _16308.xyz, vec3(_6253 * _Globals_.g_flColorReplace2));
 	        }
 	        else
 	        {
-	            _11673 = _22995.w;
+	            _11673 = _10048;
 	            _10593 = _23405;
 	        }
 	        vec3 _11008;
@@ -1838,7 +1848,7 @@ PS
 	            _11008 = _24174;
 	            _14482 = _22927;
 	        }
-	        _13144 = mix(_9860 * mix(1.0, _17152 * 2.0, _6253 * _Globals_.g_flMetalnessCombine2), _17152, _6253 * _Globals_.g_flMetalnessReplace2);
+	        _13144 = mix(_9068 * mix(1.0, _17152 * 2.0, _6253 * _Globals_.g_flMetalnessCombine2), _17152, _6253 * _Globals_.g_flMetalnessReplace2);
 	        _16309 = mix(_7406, float(_Globals_.g_bSnowLayer2 != 0), _6253);
 	        _17129 = _11673;
 	        _17130 = _11008;
@@ -1848,9 +1858,9 @@ PS
 	    }
 	    else
 	    {
-	        _13144 = _9860;
+	        _13144 = _9068;
 	        _16309 = _7406;
-	        _17129 = _22995.w;
+	        _17129 = _10048;
 	        _17130 = _24174;
 	        _17131 = _11237;
 	        _14948 = _22927;
@@ -1859,23 +1869,23 @@ PS
 	    float _13984 = saturate(1.0 - _6253);
 	    vec3 _14081 = _13381 * mix(vec3(1.0), input_5.xyz, vec3(clamp(clamp(((float(!(_Globals_.g_bMaskVertexColor1 != 0)) * _13984) + (float(!(_Globals_.g_bMaskVertexColor2 != 0)) * _6253)) + ((_24803 * _13984) + (_13143 * _6253)), 0.0, 1.0) * ((float(_Globals_.g_bVertexColorEnabled1 != 0) * _13984) + (float(_Globals_.g_bVertexColorEnabled2 != 0) * _6253)), 0.0, 1.0)));
 	    vec2 _23398 = vec2(_14948.x);
-	    bool _12894;
+	    bool _12896;
 	    if (_Globals_.g_bWetness != 0)
 	    {
-	        _12894 = (_Globals_.g_fPuddleStrength + _Globals_.g_fWetnessStrength) > 0.0;
+	        _12896 = (_Globals_.g_fPuddleStrength + _Globals_.g_fWetnessStrength) > 0.0;
 	    }
 	    else
 	    {
-	        _12894 = false;
+	        _12896 = false;
 	    }
-	    bool _12895;
-	    if (_12894)
+	    bool _12897;
+	    if (_12896)
 	    {
-	        _12895 = input_0.z > 0.0;
+	        _12897 = input_0.z > 0.0;
 	    }
 	    else
 	    {
-	        _12895 = false;
+	        _12897 = false;
 	    }
 	    float _12727;
 	    vec3 _13147;
@@ -1884,7 +1894,7 @@ PS
 	    vec3 _17134;
 	    float _17135;
 	    vec3 _18774;
-	    if (_12895)
+	    if (_12897)
 	    {
 	        vec4 _19372 = texture(sampler2D(g_bindless_Texture2D_float4[PerViewConstantBufferCsgo_t._m7], undetermined[_Globals_.g_sUserConfig]), (_10061.xy * 0.006000000052154064178466796875).xy);
 	        float _21302 = _24347.z;
@@ -1923,7 +1933,7 @@ PS
 	        {
 	            float _12497 = _Globals_.g_fRippleStrength * PerViewConstantBufferCsgo_t._m9;
 	            vec3 _6617;
-	            vec4 _12896;
+	            vec4 _12898;
 	            float _13145;
 	            if (_12497 > 0.0)
 	            {
@@ -1954,8 +1964,8 @@ PS
 	                vec2 _17104 = (((_20878.xy * 2.0) - vec2(1.0)) * 0.05200000107288360595703125) * input_0.z;
 	                _17104.y = _17104.y * 0.5;
 	                float _9251 = clamp(length(fwidth(_16048)) * 10.0, 0.0, 1.0);
-	                vec2 _13560 = _17104 * mix(1.0, 0.300000011920928955078125, _9251);
-	                vec2 _13330 = _19601.xy + vec2(dot(_22900.xy, _13560), dot(_13712, _13560));
+	                vec2 _13561 = _17104 * mix(1.0, 0.300000011920928955078125, _9251);
+	                vec2 _13330 = _19601.xy + vec2(dot(_22900.xy, _13561), dot(_13712, _13561));
 	                vec4 _20490 = _19601;
 	                _20490.x = _13330.x;
 	                _20490.y = _13330.y;
@@ -1964,13 +1974,13 @@ PS
 	                _20491.x = _10061.x;
 	                _20491.y = _10061.y;
 	                _13145 = _12497 * (0.039999999105930328369140625 * (_22222 + _9251));
-	                _12896 = _9719 + ((_20490 * _14498) * _12497);
+	                _12898 = _9719 + ((_20490 * _14498) * _12497);
 	                _6617 = _20491;
 	            }
 	            else
 	            {
 	                _13145 = 0.0;
-	                _12896 = _9719;
+	                _12898 = _9719;
 	                _6617 = _10061;
 	            }
 	            float _8914 = (_Globals_.g_fRainStrength * PerViewConstantBufferCsgo_t._m8) * PerViewConstantBufferCsgo_t._m8;
@@ -2014,8 +2024,8 @@ PS
 	                    continue;
 	                }
 	                vec3 _9348 = _13155 * _14498;
-	                vec2 _15752 = _12896.xy + _9348.xy;
-	                vec4 _20492 = _12896;
+	                vec2 _15752 = _12898.xy + _9348.xy;
+	                vec4 _20492 = _12898;
 	                _20492.x = _15752.x;
 	                _20492.y = _15752.y;
 	                _9982 = _9348.z;
@@ -2024,7 +2034,7 @@ PS
 	            else
 	            {
 	                _9982 = 0.0;
-	                _21594 = _12896;
+	                _21594 = _12898;
 	            }
 	            vec3 _10508 = normalize(_21594.xyz);
 	            vec4 _16886 = _21594;
@@ -2071,7 +2081,7 @@ PS
 	    vec3 _9175 = dFdy(_10562);
 	    vec3 _10347 = _11099.xyz;
 	    vec3 _12420 = _9175.xyz;
-	    vec2 _21816 = max(_16310.xy, vec2(pow(clamp(max(dot(_10347, _10347), dot(_12420, _12420)), 0.0, 1.0), 0.333000004291534423828125)));
+	    vec2 _21819 = max(_16310.xy, vec2(pow(clamp(max(dot(_10347, _10347), dot(_12420, _12420)), 0.0, 1.0), 0.333000004291534423828125)));
 	    vec3 _15598 = -_24347;
 	    vec4 _23875 = vec4(_18774.xyz, 1.0);
 	    bvec4 _24464 = notEqual(PerViewConstantBufferCsgo_t._m0, ivec4(0));
@@ -2218,7 +2228,7 @@ PS
 	        {
 	            _18223 = _17874;
 	        }
-	        vec2 _17301 = max(_21816, vec2(PerViewLightingConstantBufferGpu_t._m9.w));
+	        vec2 _17301 = max(_21819, vec2(PerViewLightingConstantBufferGpu_t._m9.w));
 	        vec3 _12281 = normalize(PerViewLightingConstantBufferGpu_t._m9.xyz + (-normalize(_10061.xyz - PerViewConstantBuffer_t._m4.xyz)).xyz).xyz;
 	        float _12386 = dot(_12281, _15460.xyz);
 	        float _19210 = max(0.0, dot(PerViewLightingConstantBufferGpu_t._m9.xyz, _12281));
@@ -2240,9 +2250,9 @@ PS
 	    vec4 _19363;
 	    if (_20059)
 	    {
-	        vec4 _24262 = vec4(_10061.xyz, 1.0).xyzw * mat4(vec4(PerViewConstantBufferCsgo_t._m13._m0[0].x, PerViewConstantBufferCsgo_t._m13._m0[1].x, PerViewConstantBufferCsgo_t._m13._m0[2].x, PerViewConstantBufferCsgo_t._m13._m0[3].x), vec4(PerViewConstantBufferCsgo_t._m13._m0[0].y, PerViewConstantBufferCsgo_t._m13._m0[1].y, PerViewConstantBufferCsgo_t._m13._m0[2].y, PerViewConstantBufferCsgo_t._m13._m0[3].y), vec4(PerViewConstantBufferCsgo_t._m13._m0[0].z, PerViewConstantBufferCsgo_t._m13._m0[1].z, PerViewConstantBufferCsgo_t._m13._m0[2].z, PerViewConstantBufferCsgo_t._m13._m0[3].z), vec4(PerViewConstantBufferCsgo_t._m13._m0[0].w, PerViewConstantBufferCsgo_t._m13._m0[1].w, PerViewConstantBufferCsgo_t._m13._m0[2].w, PerViewConstantBufferCsgo_t._m13._m0[3].w));
-	        float _20176 = _24262.w;
-	        vec2 _11414 = _24262.xy / vec2(_20176);
+	        vec4 _24261 = vec4(_10061.xyz, 1.0).xyzw * mat4(vec4(PerViewConstantBufferCsgo_t._m13._m0[0].x, PerViewConstantBufferCsgo_t._m13._m0[1].x, PerViewConstantBufferCsgo_t._m13._m0[2].x, PerViewConstantBufferCsgo_t._m13._m0[3].x), vec4(PerViewConstantBufferCsgo_t._m13._m0[0].y, PerViewConstantBufferCsgo_t._m13._m0[1].y, PerViewConstantBufferCsgo_t._m13._m0[2].y, PerViewConstantBufferCsgo_t._m13._m0[3].y), vec4(PerViewConstantBufferCsgo_t._m13._m0[0].z, PerViewConstantBufferCsgo_t._m13._m0[1].z, PerViewConstantBufferCsgo_t._m13._m0[2].z, PerViewConstantBufferCsgo_t._m13._m0[3].z), vec4(PerViewConstantBufferCsgo_t._m13._m0[0].w, PerViewConstantBufferCsgo_t._m13._m0[1].w, PerViewConstantBufferCsgo_t._m13._m0[2].w, PerViewConstantBufferCsgo_t._m13._m0[3].w));
+	        float _20176 = _24261.w;
+	        vec2 _11414 = _24261.xy / vec2(_20176);
 	        vec4 _6651;
 	        _6651.x = clamp(((_11414.x + 1.0) * PerViewConstantBuffer_t._m2.x) * 0.5, 0.0, PerViewConstantBuffer_t._m2.x - 1.0);
 	        _6651.y = clamp(((1.0 - _11414.y) * PerViewConstantBuffer_t._m2.y) * 0.5, 0.0, PerViewConstantBuffer_t._m2.y - 1.0);
@@ -2304,16 +2314,16 @@ PS
 	                {
 	                    _7426 = false;
 	                }
-	                bool _12897;
+	                bool _12899;
 	                if (!_7426)
 	                {
-	                    _12897 = true;
+	                    _12899 = true;
 	                }
 	                else
 	                {
-	                    _12897 = !all(lessThanEqual(abs((mat4x3(vec3(g_BarnLights_1._m0[_12608]._m15._m0[0].x, g_BarnLights_1._m0[_12608]._m15._m0[1].x, g_BarnLights_1._m0[_12608]._m15._m0[2].x), vec3(g_BarnLights_1._m0[_12608]._m15._m0[0].y, g_BarnLights_1._m0[_12608]._m15._m0[1].y, g_BarnLights_1._m0[_12608]._m15._m0[2].y), vec3(g_BarnLights_1._m0[_12608]._m15._m0[0].z, g_BarnLights_1._m0[_12608]._m15._m0[1].z, g_BarnLights_1._m0[_12608]._m15._m0[2].z), vec3(g_BarnLights_1._m0[_12608]._m15._m0[0].w, g_BarnLights_1._m0[_12608]._m15._m0[1].w, g_BarnLights_1._m0[_12608]._m15._m0[2].w)) * vec4(input_2.xyz, 1.0)).xyz), vec3(1.0)));
+	                    _12899 = !all(lessThanEqual(abs((mat4x3(vec3(g_BarnLights_1._m0[_12608]._m15._m0[0].x, g_BarnLights_1._m0[_12608]._m15._m0[1].x, g_BarnLights_1._m0[_12608]._m15._m0[2].x), vec3(g_BarnLights_1._m0[_12608]._m15._m0[0].y, g_BarnLights_1._m0[_12608]._m15._m0[1].y, g_BarnLights_1._m0[_12608]._m15._m0[2].y), vec3(g_BarnLights_1._m0[_12608]._m15._m0[0].z, g_BarnLights_1._m0[_12608]._m15._m0[1].z, g_BarnLights_1._m0[_12608]._m15._m0[2].z), vec3(g_BarnLights_1._m0[_12608]._m15._m0[0].w, g_BarnLights_1._m0[_12608]._m15._m0[1].w, g_BarnLights_1._m0[_12608]._m15._m0[2].w)) * vec4(input_2.xyz, 1.0)).xyz), vec3(1.0)));
 	                }
-	                if (_12897)
+	                if (_12899)
 	                {
 	                    _13214 = _13153;
 	                    _15676 = _16325;
@@ -2503,7 +2513,7 @@ PS
 	                {
 	                    _18232 = _17875;
 	                }
-	                vec2 _17302 = max(_21816, vec2(g_BarnLights_1._m0[_12608]._m11));
+	                vec2 _17302 = max(_21819, vec2(g_BarnLights_1._m0[_12608]._m11));
 	                vec3 _12282 = normalize(_11186.xyz + (-normalize(_10061.xyz - PerViewConstantBuffer_t._m4.xyz)).xyz).xyz;
 	                float _12387 = dot(_12282, _15461.xyz);
 	                float _19211 = max(0.0, dot(_11186.xyz, _12282));
@@ -2526,7 +2536,7 @@ PS
 	        _17017 = _21567;
 	        continue;
 	    }
-	    float _17172 = dot(_21816.xy, vec2(0.5));
+	    float _17172 = dot(_21819.xy, vec2(0.5));
 	    vec3 _7507 = _17892.xyz;
 	    vec3 _17138 = normalize(_10061.xyz - PerViewConstantBuffer_t._m4.xyz);
 	    float _17225 = _17172 * _17172;
@@ -2575,16 +2585,16 @@ PS
 	        do
 	        {
 	            _21493 = _22956.xyz;
-	            bool _12898;
+	            bool _12900;
 	            if (dot(_21493, _21493) > PerViewConstantBufferCsgo_t._m19.x)
 	            {
-	                _12898 = (_10061.z * PerViewConstantBufferCsgo_t._m19.z) < PerViewConstantBufferCsgo_t._m19.y;
+	                _12900 = (_10061.z * PerViewConstantBufferCsgo_t._m19.z) < PerViewConstantBufferCsgo_t._m19.y;
 	            }
 	            else
 	            {
-	                _12898 = false;
+	                _12900 = false;
 	            }
-	            if (_12898)
+	            if (_12900)
 	            {
 	                vec2 _9342 = clamp(PerViewConstantBufferCsgo_t._m16.xy + (PerViewConstantBufferCsgo_t._m16.zw * vec2(length(_21493), _10061.z)), vec2(0.0), vec2(1.0));
 	                float _12872 = (pow(_9342.x, PerViewConstantBufferCsgo_t._m17.x) * pow(_9342.y, PerViewConstantBufferCsgo_t._m17.y)) * PerViewConstantBufferCsgo_t._m18.w;
@@ -2601,16 +2611,16 @@ PS
 	        vec3 _19341;
 	        do
 	        {
-	            bool _12899;
+	            bool _12901;
 	            if (dot(_9057, _9057) > PerViewConstantBufferCsgo_t._m23.x)
 	            {
-	                _12899 = (PerViewConstantBufferCsgo_t._m23.z * _10061.z) < PerViewConstantBufferCsgo_t._m23.y;
+	                _12901 = (PerViewConstantBufferCsgo_t._m23.z * _10061.z) < PerViewConstantBufferCsgo_t._m23.y;
 	            }
 	            else
 	            {
-	                _12899 = false;
+	                _12901 = false;
 	            }
-	            if (_12899)
+	            if (_12901)
 	            {
 	                float _14602 = clamp(pow(max(0.0, (length(_21493) * PerViewConstantBufferCsgo_t._m20.y) + PerViewConstantBufferCsgo_t._m20.x), PerViewConstantBufferCsgo_t._m20.w), 0.0, 1.0) * clamp(pow(max(0.0, (_10061.z * PerViewConstantBufferCsgo_t._m21.y) + PerViewConstantBufferCsgo_t._m21.x), PerViewConstantBufferCsgo_t._m21.z), 0.0, 1.0);
 	                float _8892 = saturate(_14602) * PerViewConstantBufferCsgo_t._m23.w;
@@ -2871,6 +2881,7 @@ RTX
 	float g_flDetailPropMaskBias1 < Range(0, 10); UiType(Slider); UiGroup("Material1/Detail Props,90/20"); >;
 	float g_flHeightMapScale1 < Default(1); Range(-4, 4); UiType(Slider); UiGroup("Material1/Height/20"); >;
 	float g_flHeightMapScale1 < Default(1); Range(-2, 2); UiType(Slider); UiGroup("Material1/Height/20"); >;
+	float3 g_vAmbientOcclusionLevels1 < Default2(0, 0.5); Range(-1, 1); Attribute("0=Option 1,1=Option 2,2=Option 3"); UiType(VectorText); UiGroup("Material1/Lighting/21"); Expression(float3(-this.x,-1.4427*log(max(.0001,1-this.y)),2-this.z)); >;
 	CreateInputTexture2D(TextureMetalness1, Linear, 8, "", "_metal", "Material1/Lighting/30", Default4(0, 0, 0, 0));
 	float g_fTextureColorSaturation1 < Default(1); Range(0, 4); UiType(Slider); UiGroup("Material1/Color Correction/30"); >;
 	float g_flDetailPropPuddleReduction1 < UiType(Slider); UiGroup("Material1/Detail Props,90/30"); >;
@@ -2906,6 +2917,7 @@ RTX
 	float g_flHeightMapScale2 < Default(1); Range(-4, 4); UiType(Slider); UiGroup("Material2/Height/20"); >;
 	float g_flHeightMapScale2 < Default(1); Range(-2, 2); UiType(Slider); UiGroup("Material2/Height/20"); >;
 	float g_flNormalReplace2 < Default(1); UiType(Slider); UiGroup("Material2/Selective Blending/20"); >;
+	float3 g_vAmbientOcclusionLevels2 < Default2(0, 0.5); Range(-1, 1); UiType(VectorText); UiGroup("Material2/Lighting/21"); Expression(float3(-this.x,-1.4427*log(max(.0001,1-this.y)),2-this.z)); >;
 	CreateInputTexture2D(TextureMetalness2, Linear, 8, "", "_metal", "Material2/Lighting/30", Default4(0, 0, 0, 0));
 	float g_fTextureColorSaturation2 < Default(1); Range(0, 4); UiType(Slider); UiGroup("Material2/Color Correction/30"); >;
 	float g_flDetailPropPuddleReduction2 < UiType(Slider); UiGroup("Material2/Detail Props,90/30"); >;
@@ -2957,6 +2969,7 @@ RTX
 	float g_flHeightMapScale3 < Default(1); Range(-4, 4); UiType(Slider); UiGroup("Material3/Height/20"); >;
 	float g_flHeightMapScale3 < Default(1); Range(-2, 2); UiType(Slider); UiGroup("Material3/Height/20"); >;
 	float g_flNormalReplace3 < Default(1); UiType(Slider); UiGroup("Material3/Selective Blending/20"); >;
+	float3 g_vAmbientOcclusionLevels3 < Default2(0, 0.5); Range(-1, 1); UiType(VectorText); UiGroup("Material3/Lighting/21"); Expression(float3(-this.x,-1.4427*log(max(.0001,1-this.y)),2-this.z)); >;
 	CreateInputTexture2D(TextureMetalness3, Linear, 8, "", "_metal", "Material3/Lighting/30", Default4(0, 0, 0, 0));
 	float g_fTextureColorSaturation3 < Default(1); Range(0, 4); UiType(Slider); UiGroup("Material3/Color Correction/30"); >;
 	float g_flDetailPropPuddleReduction3 < UiType(Slider); UiGroup("Material3/Detail Props,90/30"); >;
@@ -3053,7 +3066,7 @@ RTX
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (160060 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (160012 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#if defined(GL_AMD_gpu_shader_half_float)
@@ -5080,29 +5093,31 @@ RTX
 	        _882 = _792;
 	    }
 	    vec4 _5730 = _882;
-	    _5730.w = clamp(mix(_g_rtx_material_data_._m66.x, _g_rtx_material_data_._m66.z, pow(_5730.w, _g_rtx_material_data_._m66.y)), 0.0, 1.0);
-	    float _5740 = _784;
-	    float _5741 = _5740 * float(_g_rtx_material_data_._m82);
-	    _784 = _5741;
-	    float _5742 = _783;
-	    float _5747 = clamp(((_g_rtx_material_data_._m61 * (_5742 - 0.5)) + 0.5) * _g_rtx_material_data_._m62, 0.0, 1.0);
-	    _783 = _5747;
-	    vec3 _5751 = mix(_5730.xyz, vec4((vec4(_792.xyz, 1.0) * _g_rtx_material_data_._m86).xyz, _701).xyz, vec3(_5747));
-	    vec4 _5753 = _5730;
-	    _5753.x = _5751.x;
-	    _5753.y = _5751.y;
-	    _5753.z = _5751.z;
-	    float _5764 = dot(_5753.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
-	    vec3 _5767 = normalize(max(_732.xyz, vec3(0.001000000047497451305389404296875)));
-	    vec4 _5786 = vec4(clamp(mix(_5753.xyz, (_5767 * min(_5764 / dot(_5767.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)), (3.0 * _5764) * max(_732.x, max(_732.y, _732.z)))).xyz, vec3((_732.w * _5747) * float(_g_rtx_material_data_._m83))), vec3(0.0), vec3(1.0)).xyz, _5753.w);
-	    _792 = _5786;
+	    float _5733 = _787;
+	    float _5737 = clamp(mix(_g_rtx_material_data_._m66.x, _g_rtx_material_data_._m66.z, pow(_5733, _g_rtx_material_data_._m66.y)), 0.0, 1.0);
+	    _787 = _5737;
+	    float _5739 = _784;
+	    float _5740 = _5739 * float(_g_rtx_material_data_._m82);
+	    _784 = _5740;
+	    float _5741 = _783;
+	    float _5746 = clamp(((_g_rtx_material_data_._m61 * (_5741 - 0.5)) + 0.5) * _g_rtx_material_data_._m62, 0.0, 1.0);
+	    _783 = _5746;
+	    vec3 _5750 = mix(_5730.xyz, vec4((vec4(_792.xyz, 1.0) * _g_rtx_material_data_._m86).xyz, _701).xyz, vec3(_5746));
+	    vec4 _5752 = _5730;
+	    _5752.x = _5750.x;
+	    _5752.y = _5750.y;
+	    _5752.z = _5750.z;
+	    float _5763 = dot(_5752.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
+	    vec3 _5766 = normalize(max(_732.xyz, vec3(0.001000000047497451305389404296875)));
+	    vec4 _5785 = vec4(clamp(mix(_5752.xyz, (_5766 * min(_5763 / dot(_5766.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)), (3.0 * _5763) * max(_732.x, max(_732.y, _732.z)))).xyz, vec3((_732.w * _5746) * float(_g_rtx_material_data_._m83))), vec3(0.0), vec3(1.0)).xyz, _5752.w);
+	    _792 = _5785;
 	    _816 = _791.xyz;
-	    _815 = _5786.xyz;
-	    _812 = _787;
-	    vec2 _5793 = _814;
-	    _5793.x = _782;
-	    _814 = _5793;
-	    _813 = _5741;
+	    _815 = _5785.xyz;
+	    _812 = _5737;
+	    vec2 _5791 = _814;
+	    _5791.x = _782;
+	    _814 = _5791;
+	    _813 = _5740;
 	    float _913 = _785;
 	    _808 = _786;
 	    float _919 = _g_rtx_material_data_._m119;
@@ -5171,33 +5186,33 @@ RTX
 	    float _773 = 0.0;
 	    float _772 = 0.0;
 	    float _771 = 0.0;
-	    vec3 _5850 = _779;
-	    _5850.x = _730.z;
-	    _5850.y = _730.w;
-	    _779 = _5850;
+	    vec3 _5848 = _779;
+	    _5848.x = _730.z;
+	    _5848.y = _730.w;
+	    _779 = _5848;
 	    _778 = _g_rtx_material_data_._m32.xy;
 	    vec4 _881;
 	    if (_g_rtx_material_data_._m30 == 0)
 	    {
-	        vec2 _5870 = _803;
+	        vec2 _5868 = _803;
+	        vec2 _5869 = _5868 * _778;
+	        _803 = _5869;
+	        vec2 _5870 = _801;
 	        vec2 _5871 = _5870 * _778;
-	        _803 = _5871;
-	        vec2 _5872 = _801;
+	        _801 = _5871;
+	        vec2 _5872 = _800;
 	        vec2 _5873 = _5872 * _778;
-	        _801 = _5873;
-	        vec2 _5874 = _800;
+	        _800 = _5873;
+	        vec2 _5874 = _802;
 	        vec2 _5875 = _5874 * _778;
-	        _800 = _5875;
-	        vec2 _5876 = _802;
+	        _802 = _5875;
+	        vec2 _5876 = _799;
 	        vec2 _5877 = _5876 * _778;
-	        _802 = _5877;
-	        vec2 _5878 = _799;
+	        _799 = _5877;
+	        vec2 _5878 = _798;
 	        vec2 _5879 = _5878 * _778;
-	        _799 = _5879;
-	        vec2 _5880 = _798;
-	        vec2 _5881 = _5880 * _778;
-	        _798 = _5881;
-	        _881 = (textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m107], g_bindless_Sampler[_g_rtx_material_data_._m194]), _5871.xy, _5873.xy, _5875.xy) * _797.x) + (textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m107], g_bindless_Sampler[_g_rtx_material_data_._m194]), _5877.xy, _5879.xy, _5881.xy) * _797.y);
+	        _798 = _5879;
+	        _881 = (textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m107], g_bindless_Sampler[_g_rtx_material_data_._m194]), _5869.xy, _5871.xy, _5873.xy) * _797.x) + (textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m107], g_bindless_Sampler[_g_rtx_material_data_._m194]), _5875.xy, _5877.xy, _5879.xy) * _797.y);
 	    }
 	    else
 	    {
@@ -5211,16 +5226,16 @@ RTX
 	    {
 	        _774 = max(0.0, ((_774 + 0.5) - _919) * _920);
 	    }
-	    float _5922 = _919;
-	    float _5923 = _5922 + (_912 * 0.5);
-	    _919 = _5923;
-	    float _5925 = _920;
-	    float _5926 = _5925 + _914;
-	    _920 = _5926;
-	    vec2 _5929 = _921;
-	    _5929.x = (-_5923) * _5926;
-	    _5929.y = (1.0 - _5923) * _5926;
-	    _921 = _5929;
+	    float _5920 = _919;
+	    float _5921 = _5920 + (_912 * 0.5);
+	    _919 = _5921;
+	    float _5923 = _920;
+	    float _5924 = _5923 + _914;
+	    _920 = _5924;
+	    vec2 _5927 = _921;
+	    _5927.x = (-_5921) * _5924;
+	    _5927.y = (1.0 - _5921) * _5924;
+	    _921 = _5927;
 	    if (true)
 	    {
 	        _920 -= (_914 * 2.0);
@@ -5230,38 +5245,38 @@ RTX
 	    {
 	        _910 *= clamp((((dot(_g_rtx_material_data_._m122.xyz, mix(_806.xyz, _816, vec3(_g_rtx_material_data_._m124)).xyz) - 1.0) + (_g_rtx_material_data_._m123 * 2.0)) / (_g_rtx_material_data_._m125 * 2.0)) + 0.5, 0.0, 1.0);
 	    }
-	    float _5985 = _775 + mix((_918.x - _921.y) - _914, _918.y - _921.x, _910);
-	    _923 = clamp((_5985 + _919) - _808, 0.0, 1.0);
-	    float _5989 = max(_808, _5985);
+	    float _5983 = _775 + mix((_918.x - _921.y) - _914, _918.y - _921.x, _910);
+	    _923 = clamp((_5983 + _919) - _808, 0.0, 1.0);
+	    float _5987 = max(_808, _5983);
 	    if (true)
 	    {
-	        vec3 _6019 = _915;
-	        _6019.x = _808;
-	        _6019.y = _5985;
-	        _915 = _6019;
-	        vec2 _6027 = max((_6019.xy - vec2(_5989)) + vec2(_914), vec2(0.0));
-	        _6027.x = _6027.x + 9.9999997473787516355514526367188e-05;
-	        _922 = (_6027 / vec2(_6027.x + _6027.y)).y;
+	        vec3 _6017 = _915;
+	        _6017.x = _808;
+	        _6017.y = _5983;
+	        _915 = _6017;
+	        vec2 _6025 = max((_6017.xy - vec2(_5987)) + vec2(_914), vec2(0.0));
+	        _6025.x = _6025.x + 9.9999997473787516355514526367188e-05;
+	        _922 = (_6025 / vec2(_6025.x + _6025.y)).y;
 	    }
 	    else
 	    {
 	        if (false)
 	        {
-	            vec3 _5995 = _915;
-	            _5995.z = _5985;
-	            _915 = _5995;
-	            vec3 _6002 = max((_5995.xyz - vec3(_5989)) + vec3(_914), vec3(0.0));
-	            _6002.x = _6002.x + 9.9999997473787516355514526367188e-05;
-	            vec3 _6017;
-	            _6017.z = (_6002.xyz / vec3((_6002.x + _6002.y) + _6002.z)).z;
-	            _922 = _6017.z;
+	            vec3 _5993 = _915;
+	            _5993.z = _5983;
+	            _915 = _5993;
+	            vec3 _6000 = max((_5993.xyz - vec3(_5987)) + vec3(_914), vec3(0.0));
+	            _6000.x = _6000.x + 9.9999997473787516355514526367188e-05;
+	            vec3 _6015;
+	            _6015.z = (_6000.xyz / vec3((_6000.x + _6000.y) + _6000.z)).z;
+	            _922 = _6015.z;
 	        }
 	    }
-	    float _6037 = _922;
-	    float _6041 = clamp((_6037 * mix(0.5, _5985, _g_rtx_material_data_._m120)) * 2.0, 0.0, 1.0);
-	    _922 = _6041;
-	    bool _6042 = _6041 > 0.0500000007450580596923828125;
-	    if (_6042)
+	    float _6035 = _922;
+	    float _6039 = clamp((_6035 * mix(0.5, _5983, _g_rtx_material_data_._m120)) * 2.0, 0.0, 1.0);
+	    _922 = _6039;
+	    bool _6040 = _6039 > 0.0500000007450580596923828125;
+	    if (_6040)
 	    {
 	        vec2 _856 = _803;
 	        vec2 _855 = _802;
@@ -5281,49 +5296,49 @@ RTX
 	            _852 *= _778;
 	            _851 *= _778;
 	            _780 = _806;
-	            bool _6168 = !_924;
-	            if (_6168)
+	            bool _6166 = !_924;
+	            if (_6166)
 	            {
 	                _781 = textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m105], g_bindless_Sampler[_g_rtx_material_data_._m194]), _856.xy, _854.xy, _853.xy) * _850.x;
 	            }
-	            bool _6186 = !_925;
-	            if (_6186)
+	            bool _6184 = !_925;
+	            if (_6184)
 	            {
-	                vec4 _6200 = textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m106], g_bindless_Sampler[_g_rtx_material_data_._m194]), _856.xy, _854.xy, _853.xy);
-	                _771 = _6200.z * _850.x;
-	                float _6205 = _6200.x;
-	                float _6206 = _6200.y;
-	                float _6208 = (_6205 + _6206) - 1.00392162799835205078125;
-	                float _6209 = _6205 - _6206;
-	                vec3 _6219 = normalize(vec3(vec2(_6208, _6209), (1.0 - abs(_6208)) - abs(_6209))).xyz * _850.x;
-	                vec4 _6221;
-	                _6221.x = _6219.x;
-	                _6221.y = _6219.y;
-	                vec4 _6225 = _6221;
-	                _6225.z = _6219.z;
-	                _780 = (_618[_849.x] * _6221.x) + (_622[_849.y] * _6221.y);
+	                vec4 _6198 = textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m106], g_bindless_Sampler[_g_rtx_material_data_._m194]), _856.xy, _854.xy, _853.xy);
+	                _771 = _6198.z * _850.x;
+	                float _6203 = _6198.x;
+	                float _6204 = _6198.y;
+	                float _6206 = (_6203 + _6204) - 1.00392162799835205078125;
+	                float _6207 = _6203 - _6204;
+	                vec3 _6217 = normalize(vec3(vec2(_6206, _6207), (1.0 - abs(_6206)) - abs(_6207))).xyz * _850.x;
+	                vec4 _6219;
+	                _6219.x = _6217.x;
+	                _6219.y = _6217.y;
+	                vec4 _6223 = _6219;
+	                _6223.z = _6217.z;
+	                _780 = (_618[_849.x] * _6219.x) + (_622[_849.y] * _6219.y);
 	            }
 	            if (_850.y > 0.0)
 	            {
-	                if (_6168)
+	                if (_6166)
 	                {
 	                    _781 += (textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m105], g_bindless_Sampler[_g_rtx_material_data_._m194]), _855.xy, _852.xy, _851.xy) * _850.y);
 	                }
-	                if (_6186)
+	                if (_6184)
 	                {
-	                    vec4 _6275 = textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m106], g_bindless_Sampler[_g_rtx_material_data_._m194]), _855.xy, _852.xy, _851.xy);
-	                    _771 += (_6275.z * _850.y);
-	                    float _6282 = _6275.x;
-	                    float _6283 = _6275.y;
-	                    float _6285 = (_6282 + _6283) - 1.00392162799835205078125;
-	                    float _6286 = _6282 - _6283;
-	                    vec3 _6296 = normalize(vec3(vec2(_6285, _6286), (1.0 - abs(_6285)) - abs(_6286))).xyz * _850.y;
-	                    vec4 _6298;
-	                    _6298.x = _6296.x;
-	                    _6298.y = _6296.y;
-	                    vec4 _6302 = _6298;
-	                    _6302.z = _6296.z;
-	                    _780 += ((_618[_848.x] * _6298.x) + (_622[_848.y] * _6298.y));
+	                    vec4 _6273 = textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m106], g_bindless_Sampler[_g_rtx_material_data_._m194]), _855.xy, _852.xy, _851.xy);
+	                    _771 += (_6273.z * _850.y);
+	                    float _6280 = _6273.x;
+	                    float _6281 = _6273.y;
+	                    float _6283 = (_6280 + _6281) - 1.00392162799835205078125;
+	                    float _6284 = _6280 - _6281;
+	                    vec3 _6294 = normalize(vec3(vec2(_6283, _6284), (1.0 - abs(_6283)) - abs(_6284))).xyz * _850.y;
+	                    vec4 _6296;
+	                    _6296.x = _6294.x;
+	                    _6296.y = _6294.y;
+	                    vec4 _6300 = _6296;
+	                    _6300.z = _6294.z;
+	                    _780 += ((_618[_848.x] * _6296.x) + (_622[_848.y] * _6296.y));
 	                }
 	            }
 	            _780 = normalize(_780 + _806);
@@ -5336,21 +5351,21 @@ RTX
 	            }
 	            if (!_925)
 	            {
-	                vec4 _6096 = textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m106], g_bindless_Sampler[_g_rtx_material_data_._m194]), _779.xy, _777.xy, _777.zw);
-	                vec3 _6097 = _6096.xyz;
-	                _771 = _6096.z;
-	                float _6099 = _6096.x;
-	                float _6100 = _6096.y;
-	                float _6102 = (_6099 + _6100) - 1.00392162799835205078125;
-	                float _6103 = _6099 - _6100;
-	                vec3 _6110 = normalize(vec3(vec2(_6102, _6103), (1.0 - abs(_6102)) - abs(_6103)));
-	                _6097.x = _6110.x;
-	                _6097.y = _6110.y;
-	                _6097.z = _6110.z;
-	                vec3 _6123 = _6097;
-	                _6123.x = dot(_6097.xy, _g_rtx_material_data_._m41.xy);
-	                _6123.y = dot(_6097.xy, _g_rtx_material_data_._m41.zw);
-	                vec3 _880 = _6123;
+	                vec4 _6094 = textureGrad(sampler2D(g_bindless_Texture2D_float4[_g_rtx_material_data_._m106], g_bindless_Sampler[_g_rtx_material_data_._m194]), _779.xy, _777.xy, _777.zw);
+	                vec3 _6095 = _6094.xyz;
+	                _771 = _6094.z;
+	                float _6097 = _6094.x;
+	                float _6098 = _6094.y;
+	                float _6100 = (_6097 + _6098) - 1.00392162799835205078125;
+	                float _6101 = _6097 - _6098;
+	                vec3 _6108 = normalize(vec3(vec2(_6100, _6101), (1.0 - abs(_6100)) - abs(_6101)));
+	                _6095.x = _6108.x;
+	                _6095.y = _6108.y;
+	                _6095.z = _6108.z;
+	                vec3 _6121 = _6095;
+	                _6121.x = dot(_6095.xy, _g_rtx_material_data_._m41.xy);
+	                _6121.y = dot(_6095.xy, _g_rtx_material_data_._m41.zw);
+	                vec3 _880 = _6121;
 	                vec3 _846;
 	                vec3 _847;
 	                if (_g_rtx_material_data_._m30 > 1)
@@ -5363,9 +5378,9 @@ RTX
 	                    _847 = _726;
 	                    _846 = _725;
 	                }
-	                vec3 _6131 = abs(_880.xyz);
-	                vec2 _6144 = (-vec2(_880.x, (-1.0) * _880.y)) / vec2(max(_6131.z, 0.0078125 * max(_6131.x, _6131.y)));
-	                _780 = normalize(_860 - ((_847 * _6144.x) + (_846 * _6144.y)));
+	                vec3 _6129 = abs(_880.xyz);
+	                vec2 _6142 = (-vec2(_880.x, (-1.0) * _880.y)) / vec2(max(_6129.z, 0.0078125 * max(_6129.x, _6129.y)));
+	                _780 = normalize(_860 - ((_847 * _6142.x) + (_846 * _6142.y)));
 	            }
 	        }
 	        _776 = _781.w;
@@ -5383,53 +5398,53 @@ RTX
 	        {
 	            _875 = _781;
 	        }
-	        vec4 _6367 = _875;
-	        _6367.w = clamp(mix(_g_rtx_material_data_._m108.x, _g_rtx_material_data_._m108.z, pow(_6367.w, _g_rtx_material_data_._m108.y)), 0.0, 1.0);
+	        vec4 _6365 = _875;
+	        _776 = clamp(mix(_g_rtx_material_data_._m108.x, _g_rtx_material_data_._m108.z, pow(_776, _g_rtx_material_data_._m108.y)), 0.0, 1.0);
 	        _773 *= float(_g_rtx_material_data_._m102);
-	        float _6379 = _772;
-	        float _6384 = clamp(((_g_rtx_material_data_._m103 * (_6379 - 0.5)) + 0.5) * _g_rtx_material_data_._m104, 0.0, 1.0);
-	        _772 = _6384;
-	        vec3 _6388 = mix(_6367.xyz, vec4((vec4(_781.xyz, 1.0) * _g_rtx_material_data_._m116).xyz, _701).xyz, vec3(_6384));
-	        vec4 _6390 = _6367;
-	        _6390.x = _6388.x;
-	        _6390.y = _6388.y;
-	        _6390.z = _6388.z;
-	        float _6401 = dot(_6390.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
-	        vec3 _6404 = normalize(max(_732.xyz, vec3(0.001000000047497451305389404296875)));
-	        _781 = vec4(clamp(mix(_6390.xyz, (_6404 * min(_6401 / dot(_6404.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)), (3.0 * _6401) * max(_732.x, max(_732.y, _732.z)))).xyz, vec3((_732.w * _6384) * float(_g_rtx_material_data_._m129))), vec3(0.0), vec3(1.0)).xyz, _6390.w);
+	        float _6376 = _772;
+	        float _6381 = clamp(((_g_rtx_material_data_._m103 * (_6376 - 0.5)) + 0.5) * _g_rtx_material_data_._m104, 0.0, 1.0);
+	        _772 = _6381;
+	        vec3 _6385 = mix(_6365.xyz, vec4((vec4(_781.xyz, 1.0) * _g_rtx_material_data_._m116).xyz, _701).xyz, vec3(_6381));
+	        vec4 _6387 = _6365;
+	        _6387.x = _6385.x;
+	        _6387.y = _6385.y;
+	        _6387.z = _6385.z;
+	        float _6398 = dot(_6387.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
+	        vec3 _6401 = normalize(max(_732.xyz, vec3(0.001000000047497451305389404296875)));
+	        _781 = vec4(clamp(mix(_6387.xyz, (_6401 * min(_6398 / dot(_6401.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)), (3.0 * _6398) * max(_732.x, max(_732.y, _732.z)))).xyz, vec3((_732.w * _6381) * float(_g_rtx_material_data_._m129))), vec3(0.0), vec3(1.0)).xyz, _6387.w);
 	    }
-	    if (_6042)
+	    if (_6040)
 	    {
 	        if (!_924)
 	        {
-	            vec3 _6453 = _781.xyz * 12.9200000762939453125;
-	            vec3 _6456 = (pow(_781.xyz, vec3(0.4166666567325592041015625)) * 1.05499994754791259765625) - vec3(0.054999999701976776123046875);
+	            vec3 _6450 = _781.xyz * 12.9200000762939453125;
+	            vec3 _6453 = (pow(_781.xyz, vec3(0.4166666567325592041015625)) * 1.05499994754791259765625) - vec3(0.054999999701976776123046875);
 	            float _872;
 	            if (_781.x <= 0.003130800090730190277099609375)
 	            {
-	                _872 = _6453.x;
+	                _872 = _6450.x;
 	            }
 	            else
 	            {
-	                _872 = _6456.x;
+	                _872 = _6453.x;
 	            }
 	            float _873;
 	            if (_781.y <= 0.003130800090730190277099609375)
 	            {
-	                _873 = _6453.y;
+	                _873 = _6450.y;
 	            }
 	            else
 	            {
-	                _873 = _6456.y;
+	                _873 = _6453.y;
 	            }
 	            float _874;
 	            if (_781.z <= 0.003130800090730190277099609375)
 	            {
-	                _874 = _6453.z;
+	                _874 = _6450.z;
 	            }
 	            else
 	            {
-	                _874 = _6456.z;
+	                _874 = _6453.z;
 	            }
 	            _815 = mix(_815 * mix(vec3(1.0), vec3(_872, _873, _874) * 2.0, vec3(_922 * _g_rtx_material_data_._m90)), _781.xyz, vec3(_922 * _g_rtx_material_data_._m89));
 	            _812 = mix(_812 * mix(1.0, _776, _922 * _g_rtx_material_data_._m98), _776, _922 * _g_rtx_material_data_._m97);
@@ -5437,22 +5452,22 @@ RTX
 	        if (!_925)
 	        {
 	            _816 = mix(mix(_816, normalize(mix(_806, (_816 + _780.xyz) * vec3(0.5), vec3(2.0))), vec3(_922 * _g_rtx_material_data_._m92)), _780.xyz, vec3((_922 * _923) * _g_rtx_material_data_._m91));
-	            vec2 _6514 = _814;
-	            _6514.x = _6514.x * (1.0 + ((((_771 - _6514.x) * 2.0) * _922) * _g_rtx_material_data_._m94));
-	            _6514.x = mix(_6514.x, _771, _922 * _g_rtx_material_data_._m93);
-	            _814 = _6514;
+	            vec2 _6511 = _814;
+	            _6511.x = _6511.x * (1.0 + ((((_771 - _6511.x) * 2.0) * _922) * _g_rtx_material_data_._m94));
+	            _6511.x = mix(_6511.x, _771, _922 * _g_rtx_material_data_._m93);
+	            _814 = _6511;
 	        }
 	        _813 = mix(_813 * mix(1.0, _773 * 2.0, _922 * _g_rtx_material_data_._m96), _773, _922 * _g_rtx_material_data_._m95);
 	        _913 = mix(_913, _774, _922);
 	        _808 = mix(_808, _775, _922);
 	    }
-	    float _6542 = saturate(1.0 - _922);
-	    _815 *= mix(vec3(1.0), _729.xyz, vec3(clamp(clamp(((float(!_g_rtx_material_data_._m78) * _6542) + (float(!_g_rtx_material_data_._m128) * _922)) + ((_783 * _6542) + (_772 * _922)), 0.0, 1.0) * ((float(_g_rtx_material_data_._m77) * _6542) + (float(_g_rtx_material_data_._m127) * _922)), 0.0, 1.0)));
-	    vec2 _6575 = _814;
-	    vec2 _6577 = _6575;
-	    _6577.x = _6575.x;
-	    _6577.y = _6575.x;
-	    _814 = _6577;
+	    float _6539 = saturate(1.0 - _922);
+	    _815 *= mix(vec3(1.0), _729.xyz, vec3(clamp(clamp(((float(!_g_rtx_material_data_._m78) * _6539) + (float(!_g_rtx_material_data_._m128) * _922)) + ((_783 * _6539) + (_772 * _922)), 0.0, 1.0) * ((float(_g_rtx_material_data_._m77) * _6539) + (float(_g_rtx_material_data_._m127) * _922)), 0.0, 1.0)));
+	    vec2 _6572 = _814;
+	    vec2 _6574 = _6572;
+	    _6574.x = _6572.x;
+	    _6574.y = _6572.x;
+	    _814 = _6574;
 	    bool _869;
 	    if (_g_rtx_material_data_._m216)
 	    {
@@ -5473,42 +5488,42 @@ RTX
 	    if (_869)
 	    {
 	        vec4 _870 = vec4(0.0, 0.0, 1.0, 0.0);
-	        float _6608 = pow(max(0.0, _806.z), 32.0);
-	        float _6613 = min(min(_733.z, 1.0), 1.0);
-	        float _6616 = saturate(_6613 - 0.75) * 2.0;
-	        float _6618 = _6613 + (_6616 * _6616);
-	        float _6628 = saturate(_6618 * 20.0);
+	        float _6605 = pow(max(0.0, _806.z), 32.0);
+	        float _6610 = min(min(_733.z, 1.0), 1.0);
+	        float _6613 = saturate(_6610 - 0.75) * 2.0;
+	        float _6615 = _6610 + (_6613 * _6613);
+	        float _6625 = saturate(_6615 * 20.0);
 	        float _871;
 	        if (_g_rtx_material_data_._m132)
 	        {
-	            vec4 _6645 = _870;
-	            _6645.x = _806.x;
-	            _6645.y = _806.y;
-	            _6645.z = _806.z;
-	            _870 = _6645;
-	            _871 = max(0.0, _6618 - _g_rtx_material_data_._m146);
+	            vec4 _6642 = _870;
+	            _6642.x = _806.x;
+	            _6642.y = _806.y;
+	            _6642.z = _806.z;
+	            _870 = _6642;
+	            _871 = max(0.0, _6615 - _g_rtx_material_data_._m146);
 	        }
 	        else
 	        {
-	            _871 = max(0.0, (_6618 * _6608) - _g_rtx_material_data_._m146);
+	            _871 = max(0.0, (_6615 * _6605) - _g_rtx_material_data_._m146);
 	        }
-	        float _6653 = max(0.001000000047497451305389404296875, _g_rtx_material_data_._m144);
-	        float _6661 = smoothstep(_871 + _6653, _871 - (_733.w + (_6653 * 2.0)), _913) * _6628;
-	        float _6664 = max((smoothstep(_6613, (_6618 - _g_rtx_material_data_._m146) - (0.20000000298023223876953125 * _6618), _913) * _g_rtx_material_data_._m145) * _6628, _6661) * _g_rtx_material_data_._m136;
-	        float _6666 = (_6613 - 1.0) - _913;
-	        float _6672 = (saturate(_6666 + _g_rtx_material_data_._m141) * _g_rtx_material_data_._m142) * _6661;
-	        _816 = mix(_816, _870.xyz, vec3(_6664 * _6672));
-	        float _6692 = max(clamp(((clamp((((_6618 * 2.0) - (mix(0.5, 0.5, saturate(_6608 * 20.0)) * 0.5)) - (_913 * 0.5)) + 0.25, 0.0, 1.0) * _g_rtx_material_data_._m148) * _6628) + _6661, 0.0, 1.0), _6664);
-	        vec2 _6696 = _814;
-	        vec3 _6704 = mix(_815, pow(_815, vec3(1.2999999523162841796875)) * 0.800000011920928955078125, clamp((pow(_815, vec3(0.25)) * (_6692 * _6696.x)) * 8.0, vec3(0.0), vec3(1.0)) * mix(_g_rtx_material_data_._m14, _g_rtx_material_data_._m42, _922 * _g_rtx_material_data_._m89));
-	        _815 = fma(mix((mix(_6704, _6704 * 0.5, vec3(saturate(_6661 * 1.5))) * mix(1.0, _812, _6664)) * mix(1.0, 1.0 - _6666, _6672), _g_rtx_material_data_._m140, vec3(_6672 * _6664)), vec3(1.0), vec3(0.0));
-	        _812 = mix(_812, 1.0, _6664);
-	        vec2 _6727 = clamp(mix(_6696.xx, vec2(_g_rtx_material_data_._m143), vec2(_6692)), vec2(0.0), vec2(1.0));
-	        vec2 _6729 = _6696;
-	        _6729.x = _6727.x;
-	        _6729.y = _6727.y;
-	        _814 = _6729;
-	        _810 = mix(_810, 0.0350000001490116119384765625, _6692);
+	        float _6650 = max(0.001000000047497451305389404296875, _g_rtx_material_data_._m144);
+	        float _6658 = smoothstep(_871 + _6650, _871 - (_733.w + (_6650 * 2.0)), _913) * _6625;
+	        float _6661 = max((smoothstep(_6610, (_6615 - _g_rtx_material_data_._m146) - (0.20000000298023223876953125 * _6615), _913) * _g_rtx_material_data_._m145) * _6625, _6658) * _g_rtx_material_data_._m136;
+	        float _6663 = (_6610 - 1.0) - _913;
+	        float _6669 = (saturate(_6663 + _g_rtx_material_data_._m141) * _g_rtx_material_data_._m142) * _6658;
+	        _816 = mix(_816, _870.xyz, vec3(_6661 * _6669));
+	        float _6689 = max(clamp(((clamp((((_6615 * 2.0) - (mix(0.5, 0.5, saturate(_6605 * 20.0)) * 0.5)) - (_913 * 0.5)) + 0.25, 0.0, 1.0) * _g_rtx_material_data_._m148) * _6625) + _6658, 0.0, 1.0), _6661);
+	        vec2 _6693 = _814;
+	        vec3 _6701 = mix(_815, pow(_815, vec3(1.2999999523162841796875)) * 0.800000011920928955078125, clamp((pow(_815, vec3(0.25)) * (_6689 * _6693.x)) * 8.0, vec3(0.0), vec3(1.0)) * mix(_g_rtx_material_data_._m14, _g_rtx_material_data_._m42, _922 * _g_rtx_material_data_._m89));
+	        _815 = fma(mix((mix(_6701, _6701 * 0.5, vec3(saturate(_6658 * 1.5))) * mix(1.0, _812, _6661)) * mix(1.0, 1.0 - _6663, _6669), _g_rtx_material_data_._m140, vec3(_6669 * _6661)), vec3(1.0), vec3(0.0));
+	        _812 = mix(_812, 1.0, _6661);
+	        vec2 _6724 = clamp(mix(_6693.xx, vec2(_g_rtx_material_data_._m143), vec2(_6689)), vec2(0.0), vec2(1.0));
+	        vec2 _6726 = _6693;
+	        _6726.x = _6724.x;
+	        _6726.y = _6724.y;
+	        _814 = _6726;
+	        _810 = mix(_810, 0.0350000001490116119384765625, _6689);
 	    }
 	    _812 = max(_812, 0.0);
 	    _21._m5 = int(uint(gl_InstanceID));
@@ -5517,32 +5532,32 @@ RTX
 	    _21._m2 = _806;
 	    vec3 _861[3] = vec3[](_719, _712, _707);
 	    vec3 _862[3] = vec3[](_720, _713, _708);
-	    vec3 _6771 = ((_720 * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_713 * _22.barycentrics.x)) + (_708 * _22.barycentrics.y);
+	    vec3 _6768 = ((_720 * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_713 * _22.barycentrics.x)) + (_708 * _22.barycentrics.y);
 	    vec3 _863[3];
-	    _863[0] = _6771 - (_719 * dot(_6771 - _720, _719));
-	    _863[1] = _6771 - (_712 * dot(_6771 - _713, _712));
-	    _863[2] = _6771 - (_707 * dot(_6771 - _708, _707));
-	    vec3 _6799 = ((_863[0] * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_863[1] * _22.barycentrics.x)) + (_863[2] * _22.barycentrics.y);
+	    _863[0] = _6768 - (_719 * dot(_6768 - _720, _719));
+	    _863[1] = _6768 - (_712 * dot(_6768 - _713, _712));
+	    _863[2] = _6768 - (_707 * dot(_6768 - _708, _707));
+	    vec3 _6796 = ((_863[0] * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_863[1] * _22.barycentrics.x)) + (_863[2] * _22.barycentrics.y);
 	    vec3 _864[3];
 	    _864[0] = cross(_720 - _713, _21._m1);
 	    _864[1] = cross(_713 - _708, _21._m1);
 	    _864[2] = cross(_708 - _720, _21._m1);
-	    float _865 = dot(_6799 - _6771, _21._m1);
-	    vec3 _866 = _6799;
+	    float _865 = dot(_6796 - _6768, _21._m1);
+	    vec3 _866 = _6796;
 	    int _867 = 0;
 	    for (;;)
 	    {
-	        bool _6815_ladder_break = false;
+	        bool _6812_ladder_break = false;
 	        do
 	        {
 	            if (!(_867 < 3))
 	            {
-	                _6815_ladder_break = true;
+	                _6812_ladder_break = true;
 	                break;
 	            }
 	            if (_865 > 0.00999999977648258209228515625)
 	            {
-	                _6815_ladder_break = true;
+	                _6812_ladder_break = true;
 	                break;
 	            }
 	            if (dot(_864[_867], _864[_867]) == 0.0)
@@ -5557,17 +5572,17 @@ RTX
 	                {
 	                    break;
 	                }
-	                vec3 _6853 = _861[_868] - (_864[_867] * dot(_864[_867], _861[_868]));
-	                _863[_868] = _6771 - (_6853 * dot(_6771 - _862[_868], _6853));
+	                vec3 _6850 = _861[_868] - (_864[_867] * dot(_864[_867], _861[_868]));
+	                _863[_868] = _6768 - (_6850 * dot(_6768 - _862[_868], _6850));
 	                _868++;
 	                continue;
 	            }
-	            vec3 _6877 = ((_863[0] * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_863[1] * _22.barycentrics.x)) + (_863[2] * _22.barycentrics.y);
-	            _865 = dot(_6877 - _6771, _21._m1);
-	            _866 = _6877;
+	            vec3 _6874 = ((_863[0] * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_863[1] * _22.barycentrics.x)) + (_863[2] * _22.barycentrics.y);
+	            _865 = dot(_6874 - _6768, _21._m1);
+	            _866 = _6874;
 	            break;
 	        } while(false);
-	        if (_6815_ladder_break)
+	        if (_6812_ladder_break)
 	        {
 	            break;
 	        }
@@ -5580,8 +5595,8 @@ RTX
 	    }
 	    _21.material = _866;
 	    _21._m6 = _804;
-	    f16vec3 _6890 = f16vec3(vec3(0.0));
-	    _21._m7 = MaterialDataMinimal_t(_6890, float16_t(0.0), f16vec3(vec3(1.0, 0.0, 1.0)), float16_t(1.0), _6890, float16_t(0.040008544921875), 0u, f16vec4(ivec4(0)));
+	    f16vec3 _6887 = f16vec3(vec3(0.0));
+	    _21._m7 = MaterialDataMinimal_t(_6887, float16_t(0.0), f16vec3(vec3(1.0, 0.0, 1.0)), float16_t(1.0), _6887, float16_t(0.040008544921875), 0u, f16vec4(ivec4(0)));
 	    _21._m7.vMaterialBits = f16vec3(_816);
 	    _21._m7._m2 = f16vec3(_815);
 	    _21._m7._m4 = f16vec3(_811);
@@ -5590,12 +5605,12 @@ RTX
 	    _21._m7._m3 = float16_t(dot(_814, vec2(0.5)));
 	    if (any(greaterThan(_809, vec3(0.0))))
 	    {
-	        f16vec4 _6919 = _21._m7._m7;
-	        f16vec3 _6922 = f16vec3(_809);
-	        _6919.x = _6922.x;
-	        _6919.y = _6922.y;
-	        _6919.z = _6922.z;
-	        _21._m7 = MaterialDataMinimal_t(_21._m7.vMaterialBits, _21._m7._m1, _21._m7._m2, _21._m7._m3, _21._m7._m4, _21._m7._m5, (_21._m7._m6 & 4294901760u) | 1u, _6919);
+	        f16vec4 _6916 = _21._m7._m7;
+	        f16vec3 _6919 = f16vec3(_809);
+	        _6916.x = _6919.x;
+	        _6916.y = _6919.y;
+	        _6916.z = _6919.z;
+	        _21._m7 = MaterialDataMinimal_t(_21._m7.vMaterialBits, _21._m7._m1, _21._m7._m2, _21._m7._m3, _21._m7._m4, _21._m7._m5, (_21._m7._m6 & 4294901760u) | 1u, _6916);
 	    }
 	}
 	
