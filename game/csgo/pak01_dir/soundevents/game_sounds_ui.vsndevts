@@ -13910,7 +13910,7 @@
 		[
 			"sounds/ambient/cache/cache_ctspawn_outside_01.vsnd",
 		]
-		enable_child_events = true
+		enable_child_events = false
 		soundevent_01 = 
 		[
 			"UIPanorama.BG_de_cache_animals",
