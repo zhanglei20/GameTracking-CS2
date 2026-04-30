@@ -378,10 +378,9 @@ PS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (43024 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (43028 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
-	#extension GL_ARB_sparse_texture_clamp : require
 	#extension GL_KHR_shader_subgroup_arithmetic : require
 	
 	struct _2746
@@ -657,10 +656,10 @@ PS
 	    vec2 _24081 = _8418.xy;
 	    float _12540 = _19372.z;
 	    vec4 _21760 = texture(sampler2D(g_bindless_Texture2D_float4[_Globals_.g_tColor], undetermined[_Globals_.g_sUserConfigAllowGlobalMipBias]), input_2.xy);
-	    vec4 _21761 = textureOffsetClampARB(sampler2D(g_bindless_Texture2D_float4[_Globals_.g_tLayer1Color], undetermined[_Globals_.g_sUserConfig]), (_24081 * _Globals_.g_flLayer1RefractionAmount) + (input_2.xy + (_6744 * ((_Globals_.g_flLayer1Offset * _21819) * _7281))), ivec2(0), mix(_Globals_.g_flLayer1RoughnessBlurMin, _Globals_.g_flLayer1RoughnessBlurMax, _12540));
+	    vec4 _21761 = texture(sampler2D(g_bindless_Texture2D_float4[_Globals_.g_tLayer1Color], undetermined[_Globals_.g_sUserConfig]), ((_24081 * _Globals_.g_flLayer1RefractionAmount) + (input_2.xy + (_6744 * ((_Globals_.g_flLayer1Offset * _21819) * _7281)))).xy, mix(_Globals_.g_flLayer1RoughnessBlurMin, _Globals_.g_flLayer1RoughnessBlurMax, _12540));
 	    vec4 _19373 = texture(sampler2D(g_bindless_Texture2D_float4[_Globals_.g_tLayer0Mask], undetermined[_Globals_.g_sUserConfig]), input_2.xy);
 	    float _15050 = _19373.x;
-	    vec3 _19877 = textureOffsetClampARB(sampler2D(g_bindless_Texture2D_float4[_Globals_.g_tLayer2Color], undetermined[_Globals_.g_sUserConfig]), (_24081 * _Globals_.g_flLayer2RefractionAmount) + (input_2.xy + (_6744 * ((_Globals_.g_flLayer2Offset * _21819) * _7281))), ivec2(0), mix(_Globals_.g_flLayer2RoughnessBlurMin, _Globals_.g_flLayer2RoughnessBlurMax, _12540)).xyz;
+	    vec3 _19877 = texture(sampler2D(g_bindless_Texture2D_float4[_Globals_.g_tLayer2Color], undetermined[_Globals_.g_sUserConfig]), ((_24081 * _Globals_.g_flLayer2RefractionAmount) + (input_2.xy + (_6744 * ((_Globals_.g_flLayer2Offset * _21819) * _7281)))).xy, mix(_Globals_.g_flLayer2RoughnessBlurMin, _Globals_.g_flLayer2RoughnessBlurMax, _12540)).xyz;
 	    vec3 _6342 = _21761.xyz;
 	    vec3 _21153 = vec3(_21761.w);
 	    vec4 _19068 = texture(sampler2D(g_bindless_Texture2D_float4[_Globals_.g_tAmbientOcclusion], undetermined[_Globals_.g_sTrilinearWrap]), input_2.xy);
@@ -683,8 +682,8 @@ PS
 	    if (_24465.x)
 	    {
 	        vec3 _11394 = _24347.xyz;
-	        vec2 _11085 = ((floor(_11408.xy * PerViewConstantBufferCsgo_t._m10) * PerViewConstantBufferCsgo_t._m9.xy) + (PerViewConstantBufferCsgo_t._m9.xy * 0.5)).xy;
-	        vec4 _18418 = textureGather(sampler2D(g_bindless_Texture2D_float4[PerViewConstantBufferCsgo_t._m5], undetermined[_Globals_.g_sCookieSampler]), _11085).xyzw - _11408.zzzz;
+	        vec2 _11087 = ((floor(_11408.xy * PerViewConstantBufferCsgo_t._m10) * PerViewConstantBufferCsgo_t._m9.xy) + (PerViewConstantBufferCsgo_t._m9.xy * 0.5)).xy;
+	        vec4 _18418 = textureGather(sampler2D(g_bindless_Texture2D_float4[PerViewConstantBufferCsgo_t._m5], undetermined[_Globals_.g_sCookieSampler]), _11087).xyzw - _11408.zzzz;
 	        float _18579 = _18418.w;
 	        float _12013 = _18418.z;
 	        bool _12285 = abs(_12013) < _18579;
@@ -711,7 +710,7 @@ PS
 	        }
 	        vec4 _10010 = normalize(vec4(PerViewLightingConstantBufferGpu_t._m2.x * fma(dot(_15598, normalize(vec3(PerViewLightingConstantBufferGpu_t._m1._m0[0].xy, 0.25))), 0.5, 0.5), PerViewLightingConstantBufferGpu_t._m2.y * fma(dot(_15598, normalize(vec3(PerViewLightingConstantBufferGpu_t._m1._m0[1].xy, 0.25))), 0.5, 0.5), PerViewLightingConstantBufferGpu_t._m2.z * fma(dot(_15598, normalize(vec3(PerViewLightingConstantBufferGpu_t._m1._m0[2].xy, 0.25))), 0.5, 0.5), PerViewLightingConstantBufferGpu_t._m2.w * fma(dot(_15598, normalize(vec3(PerViewLightingConstantBufferGpu_t._m1._m0[3].xy, 0.25))), 0.5, 0.5)));
 	        vec4 _13232 = max(vec4(dot(PerViewLightingConstantBufferGpu_t._m1._m0[0].xyz, _11394), dot(PerViewLightingConstantBufferGpu_t._m1._m0[1].xyz, _11394), dot(PerViewLightingConstantBufferGpu_t._m1._m0[2].xyz, _11394), dot(PerViewLightingConstantBufferGpu_t._m1._m0[3].xyz, _11394)).xyzw, vec4(0.0)) * normalize(clamp(((_10010 - vec4(max(max(_10010.x, _10010.y), max(_10010.z, _10010.w)))) + vec4(0.20000000298023223876953125)) * vec4(5.0), vec4(0.0), vec4(1.0)));
-	        _21710 = (1.0 / (dot(_13232, vec4(1.0)) + PerViewLightingConstantBufferGpu_t._m3.x)) * (PerViewLightingConstantBufferGpu_t._m3.x + dot(_13232, textureLod(sampler2D(g_bindless_Texture2D_float4[PerViewConstantBufferCsgo_t._m4], undetermined[_Globals_.g_sPointClamp]), (_11085 + mix(_23169, PerViewConstantBufferCsgo_t._m9.xy, bvec2(abs(_18418.y) < (_12286 ? _15372 : _20965))).xy).xy, 0.0)));
+	        _21710 = (1.0 / (dot(_13232, vec4(1.0)) + PerViewLightingConstantBufferGpu_t._m3.x)) * (PerViewLightingConstantBufferGpu_t._m3.x + dot(_13232, textureLod(sampler2D(g_bindless_Texture2D_float4[PerViewConstantBufferCsgo_t._m4], undetermined[_Globals_.g_sPointClamp]), (_11087 + mix(_23169, PerViewConstantBufferCsgo_t._m9.xy, bvec2(abs(_18418.y) < (_12286 ? _15372 : _20965))).xy).xy, 0.0)));
 	    }
 	    else
 	    {

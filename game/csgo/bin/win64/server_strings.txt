@@ -101,10 +101,11 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`j
+ (08@HPX`jp
  (08@HPXb
- (08@HPZ
+ (08@HPZp
  (08@HR
+ (08@Jp
  (0X`hpz
  (Dirty Animation)
  (Disabled on Server)
@@ -124,6 +125,7 @@
  -8CKV
  -> %s '%s'\n
  -> Could not find an item definition named '%s'\n
+ .pAU
  0@NYa
  0Fa
  1CSc\t
@@ -2049,7 +2051,6 @@ $tH@T\tI
 *\n\fitem_updates
 *\n\nECsgoGCMsg
 *gFBk
-*h4O
 *hbJ1
 *it%2
 *kf[R
@@ -2239,7 +2240,7 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
-.01U
+.06U
 .4bb
 .97yY
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
@@ -3960,6 +3961,7 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@MVNetworkVar_m_fadeMinDist@CBaseModelEntity@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flActualHealthRemoved@CDamageRecord@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAlphaScale@CEnvParticleGlow@@@@
+.?AV?$CNetworkVarBase@MVNetworkVar_m_flAltitudeAtLastUsingGroundTopologyOffsetTransition@CCSPlayer_MovementServices@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAnimTime@CBaseEntity@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAnisotropy@CEnvVolumetricFogController@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAspectRatio@CPointCamera@@@@
@@ -4210,6 +4212,7 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flTotalRoundDamageDealt@CCSPlayerController_ActionTrackingServices@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flTransitionStartSpeed@CFuncConveyor@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flUseFrictionStashedSpeedUntilFrac@CCSPlayer_MovementServices@@@@
+.?AV?$CNetworkVarBase@MVNetworkVar_m_flUsingGroundTopologyOffsetTransitionSmoothing@CCSPlayer_MovementServices@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flValue@CEconItemAttribute@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flVelocityModifier@CCSPlayerPawn@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flViewmodelFOV@CCSPlayerPawn@@@@
@@ -4507,8 +4510,6 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_flTimeOfLastInjury@CCSPlayerPawn@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_flTimeSilencerSwitchComplete@CCSWeaponBase@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_flWeaponGameplayAnimStateTimestamp@CCSWeaponBase@@@@
-.?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_gtLastTimeInAir@CCSPlayer_MovementServices@@@@
-.?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_gtLastTimeOnStaticWorldGround@CCSPlayer_MovementServices@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_nextPrevOwnerUseTime@CCSWeaponBase@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_timestamp@CountdownTimer@@@@
 .?AV?$CNetworkVarBase@VHSequence@@VNetworkVar_m_hSequence@CBaseAnimGraphController@@@@
@@ -4841,6 +4842,7 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bUseSecondaryColor@CLightComponent@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bUseUniqueColorTarget@CFuncMonitor@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bUsesBakedShadowing@CLightComponent@@@@
+.?AV?$CNetworkVarBase@_NVNetworkVar_m_bUsingGroundTopologyOffset@CCSPlayer_MovementServices@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bVisibleWhenParentNoDraw@CPointClientUIWorldPanel@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bWaitForNoAttack@CCSPlayerPawn@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bWarmupPeriod@CCSGameRules@@@@
@@ -8516,6 +8518,7 @@ $tH@T\tI
 .PEAVCPlayer_UseServices@@
 .PEAVCPlayer_WaterServices@@
 .PEAVCPlayer_WeaponServices@@
+.PHU
 .PlayerCommendationInfo
 .PlayerDecalDigitalSignature
 .PlayerDecalDigitalSignature":\n
@@ -8815,6 +8818,8 @@ $tH@T\tI
 .dx_LV9
 .fatdem
 .lbN
+.p8U
+.pHU
 .pp@0
 .text$
 .vjs_c
@@ -8852,16 +8857,17 @@ $tH@T\tI
 /usr/local/ssl/private
 /zt1
 0 == ( pInstance->GetOwnerEntity()->GetEntityIdentity()->GetFlags() & EF_IN_STAGING_LIST )
-0(gO
 0123456789
 02V8[
 05=k
-08@HR
+08@HRp
 08@J
+08Bp
 08bX
 09,h
 0;Q5[
 0<cz
+0>p&U
 0@NX^b!/@P\b
 0AOY_c"2CQ[c
 0M2~@p
@@ -8887,6 +8893,7 @@ $tH@T\tI
 0\r%0h
 0\r0#0)070;0U0Y0[0g0q0y0}0
 0e\r8
+0h~O
 0pp@5tqE?|sO541
 0tU+xc:
 0x%s
@@ -8971,14 +8978,13 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
-2\vp0
+2\vpp
 2^pV
 2a"l
 2bT~
 2cb:RO
 2d\v
 2f)l=
-2h4O
 2nIg
 2ndry
 2p"6
@@ -9101,9 +9107,10 @@ $tH@T\tI
 6-zeZ
 62$|S)6f
 64CK\vH
+6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
-6666666666666666`
 67-s
+6@HU
 6H,N
 6O|T%
 6Qd=
@@ -9173,8 +9180,8 @@ $tH@T\tI
 8<pl
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
+8@Jp
 8A6j
-8FP\rU
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9426,6 +9433,7 @@ $tH@T\tI
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
+@08ND
 @0pp
 @333
 @333?
@@ -9434,9 +9442,9 @@ $tH@T\tI
 @Aff
 @BH]f
 @BoneSetup
-@CWeaponCZ75a
 @HPX`hv
 @MfKZ
+@PGv
 @Pgl
 @Pu\rm
 @Release
@@ -9448,13 +9456,13 @@ $tH@T\tI
 @\n\nnomination
 @\n\tPlacement
 @\n\vserver_type
+@cs_team_manager
 @dKb]
 @fff>fff>fff>fff>
 @i1V
+@m_bPlayerAmmoStockOnPickup
 @n2w
-@observer
 @player_start_teleport_destination
-@vote_controller
 @workshop
 A CT bot doesn't know what to do while the bomb is planted!\n
 A Hiding Spot is off of the Nav Mesh at setpos %.0f %.0f %.0f\n
@@ -10133,7 +10141,6 @@ BOOSTS
 BOUNDARY
 BPE_Diagnostic
 BPE_StringCommand
-BPrints the current mapgroup and the contained maps
 BREAKABLE
 BRouteMsgToJob
 BT5f
@@ -10171,7 +10178,7 @@ BULLET_PLAYER_762MM
 BULLET_PLAYER_9MM
 BULLET_PLAYER_BUCKSHOT
 BURN
-BWeaponPurchaseTracker_t
+BWeaponPurchaseCount_t
 BY_FILE_CTRL
 BY_Lq)
 BYield
@@ -10331,6 +10338,7 @@ BreakableContentsType
 Breakables
 Breaks in the debugger
 Bs'n
+Bsv_fade_player_visibility_farz
 Bu 5
 Buffer too small
 BuildCacheSubscribed(CEconAccountSeasonalOperationGS)
@@ -14902,6 +14910,7 @@ Found no entity at %d.\n
 Found soundscape entity "%s" with no soundscape name.\n
 Found source soundscape %u after marching backwards.\n
 FourVectors
+Fp,U
 Frac
 Fractional component (ie. returns 0.34 for 12.34)
 FrameTime
@@ -18170,7 +18179,6 @@ Ow!y
 OwnerHandle
 P!bxo
 P(UH 
-P(gO
 P-192
 P-224
 P-256
@@ -18178,9 +18186,9 @@ P-384
 P-521
 P08@J
 P08J
+P08ND
 P1\t98"
 P5[1
-P6P'U
 PAGN_4
 PARALYZE
 PARAMETER NAME: %s | OPTIONAL: %s, TYPE: %s, BOUND: %s\n
@@ -18498,6 +18506,7 @@ PhysicsEntities
 PhysicsGameSystem
 PhysicsGameSystemManifest_server
 PhysicsSimulate
+Ph~O
 PickRandom
 PickRandomShuffle
 Picker %i/%s - ent %s model %s\n
@@ -18971,7 +18980,7 @@ RSDS}
 RTime32
 R\r1>Vp
 R\vp!y
-R\vp0
+R\vpp
 R]Di
 Rad2 Deg
 Radial using: %s\n
@@ -21521,7 +21530,6 @@ Vote started "%s %s" from #%u %s\n
 Vote succeeded "%s %s" from #%u %s\n
 Vote.Failed
 Voting %s.\n
-Vp!U
 Vp>u
 Vt_9
 Vulkan
@@ -21887,8 +21895,9 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr
+X`hrp
 Xd3h
+Xf (U
 XfJ7
 XjfR
 XpProgressData
@@ -22251,7 +22260,7 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\vP(gO
+\fp\vPh~O
 \ful2
 \fy&3Gl
 \l:ArR
@@ -22894,7 +22903,6 @@ Z~wl
 \n\vweapon_type
 \n\vxp_category
 \n\vyoutube_url
-\nh4O
 \nqYu
 \ntM(ie-V
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
@@ -22998,8 +23006,7 @@ Z~wl
 \v\vTSG
 \vj0k
 \vjC7
-\vp(gO
-\vp0iO
+\vph~O
 ] Done (%.2f seconds)
 ]1h=bfz
 ]FhSD}
@@ -23104,6 +23111,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
+aBvD
 aD/x
 aDSS
 aECDH
@@ -24685,7 +24693,6 @@ cs_rush
 cs_script
 cs_script/%s
 cs_siege
-cs_team_manager
 cs_thunder
 cs_usercmd.proto
 cs_win_panel_match
@@ -29402,6 +29409,7 @@ notifyforcemintime_z
 notmostrecent
 notsolid
 nova
+np+U
 npc_ability_name
 npc_select %i
 npc_vehicle
@@ -29477,6 +29485,7 @@ objsign
 obs_mode
 observable_listeners
 observable_scope
+observer
 observer pawn
 observer.ventr
 observer_cursors
@@ -29656,7 +29665,6 @@ ownername
 p is not prime
 p not prime
 p!PcA1|
-p(gO
 p)ou}
 p+"\tHr9
 p.char_two
@@ -29665,6 +29673,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p08@H^D
+p0j0
 p250
 p2{l
 p4Z3
@@ -30001,6 +30011,7 @@ physics_entity_solver
 physics_joint_modification_type
 physics_particle
 physics_prop_ragdoll
+ph~O
 pick
 pick_%s
 pick_all_attributes
@@ -33159,6 +33170,7 @@ volume_scale
 volumematcheseventramp
 vote
 vote_cast
+vote_controller
 vote_option
 vote_options
 vote_phase_length
@@ -33297,7 +33309,6 @@ weapon_galilar_server
 weapon_glock
 weapon_glock.ventr
 weapon_glock_server
-weapon_grenade
 weapon_hand_l
 weapon_hand_r
 weapon_healthshot

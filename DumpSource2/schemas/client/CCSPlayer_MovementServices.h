@@ -1,6 +1,9 @@
 class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 {
 	CCSPlayerAnimationState m_AnimationState;
+	bool m_bUsingGroundTopologyOffset;
+	float32 m_flAltitudeAtLastUsingGroundTopologyOffsetTransition;
+	float32 m_flUsingGroundTopologyOffsetTransitionSmoothing;
 	Vector m_vecLadderNormal;
 	int32 m_nLadderSurfacePropIndex;
 	bool m_bDucked;
@@ -47,7 +50,5 @@ class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 	float32 m_flTicksSinceLastSurfingDetected;
 	bool m_bWasSurfing;
 	Vector2D m_vecWalkWishVel;
-	GameTime_t m_gtLastTimeOnStaticWorldGround;
-	GameTime_t m_gtLastTimeInAir;
 	bool m_bHasEverProcessedCommand;
 };

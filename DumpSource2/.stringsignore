@@ -19230,7 +19230,6 @@ m_bTestOcclusion
 m_bTestYesOrNoPath
 m_bThinkDangerous
 m_bThinking
-m_bThirdpersonActiveWeaponCanSafelyOcclude
 m_bThreadsActive
 m_bThrowAnimating
 m_bThrownByPlayer
@@ -19374,6 +19373,7 @@ m_bUserFriendlyNameSealed
 m_bUserSpecifiedColor
 m_bUserSpecifiedMaterialGroup
 m_bUsesBakedShadowing
+m_bUsingGroundTopologyOffset
 m_bValid
 m_bValue
 m_bValueBoolean
@@ -20155,6 +20155,7 @@ m_flAlphaScaleMax
 m_flAlphaScaleMin
 m_flAlternateShiftLength
 m_flAlternateShiftWidth
+m_flAltitudeAtLastUsingGroundTopologyOffsetTransition
 m_flAmbientScale
 m_flAmbientScale1
 m_flAmbientScale2
@@ -22128,6 +22129,7 @@ m_flUseFrictionStashedSpeedUntilFrac
 m_flUseLockedTime
 m_flUseRange
 m_flUserSpecifiedTime
+m_flUsingGroundTopologyOffsetTransitionSmoothing
 m_flUvDensity
 m_flVHeightSrc
 m_flVPhysicsUpdateLocalTime
@@ -22399,8 +22401,6 @@ m_groupBoundingBoxMaxsOpvar
 m_groupBoundingBoxMinsOpvar
 m_groupName
 m_groups
-m_gtLastTimeInAir
-m_gtLastTimeOnStaticWorldGround
 m_hAbility
 m_hActivator
 m_hActiveCommentaryNode

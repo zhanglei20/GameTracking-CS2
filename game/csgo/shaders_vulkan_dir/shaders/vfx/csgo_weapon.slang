@@ -107,6 +107,7 @@ VS
 	bool g_bStickerProjectionPreview < Attribute("StickerProjectionPreview"); UiType(CheckBox); >;
 	bool g_bTexCoordScaleByModel < UiType(CheckBox); Expression((g_nScaleTexCoordUByModelScaleAxis!=0) || (g_nScaleTexCoordVByModelScaleAxis!=0)); >;
 	float g_flPlayerOcclusionAmount < Attribute("PlayerOcclusionAmount"); UiType(Slider); >;
+	float g_flWeaponOcclusionAmount < Attribute("WeaponOcclusionAmount"); UiType(Slider); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
 	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
@@ -127,6 +128,10 @@ VS
 		v1 = cos(v0);
 		v2 = sin(v0);
 		float4(v2*g_vTexCoordScale.x,v1*g_vTexCoordScale.y,0,(g_vTexCoordCenter.y+g_vTexCoordOffset.y)-((v2*g_vTexCoordCenter.x)+(v1*g_vTexCoordCenter.y)))); >;
+	float3 g_vWeaponOcclusionClampMaxs < Attribute("WeaponOcclusionClampMaxs"); UiType(VectorText); >;
+	float3 g_vWeaponOcclusionClampMins < Attribute("WeaponOcclusionClampMins"); UiType(VectorText); >;
+	float3 g_vWeaponOcclusionTestMaxs < Attribute("WeaponOcclusionTestMaxs"); UiType(VectorText); >;
+	float3 g_vWeaponOcclusionTestMins < Attribute("WeaponOcclusionTestMins"); UiType(VectorText); >;
 	
 	// Detail Texture
 	float2 g_vDetailTexCoordScale < Default2(1, 1); UiType(VectorText); UiGroup("Detail Texture,80/30"); >;
@@ -156,12 +161,12 @@ VS
 	int g_nStatTrakValue < Range(-1, 999999); UiType(Slider); UiGroup("StatTrak"); >;
 	
 	// SPIR-V reflection failed for backend HLSL:
-	// cbuffer ID 5618 (name: _Globals_), member index 1 (name: g_vPlayerOrigin) cannot be expressed with either HLSL packing layout or packoffset.
+	// cbuffer ID 5618 (name: _Globals_), member index 2 (name: g_vPlayerOrigin) cannot be expressed with either HLSL packing layout or packoffset.
 	// 
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (8736 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (9672 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
@@ -177,17 +182,17 @@ VS
 	    float _m7;
 	};
 	
-	struct _2242
+	struct _2620
 	{
 	    vec4 _m0[3];
 	};
 	
-	struct _2432
+	struct _177
 	{
-	    _2242 _m0;
+	    _2620 _m0;
 	};
 	
-	struct _743
+	struct _1121
 	{
 	    vec4 _m0[4];
 	};
@@ -201,14 +206,19 @@ VS
 	
 	layout(set = 4, binding = 30, std430) readonly buffer g_transformBuffer
 	{
-	    _2432 _m0[];
+	    _177 _m0[];
 	} g_transformBuffer_1;
 	
-	struct _1582
+	struct _2493
 	{
 	    int g_bStickerProjectionPreview;
-	    vec3 g_vPlayerOrigin;
 	    float g_flPlayerOcclusionAmount;
+	    vec3 g_vPlayerOrigin;
+	    float g_flWeaponOcclusionAmount;
+	    vec3 g_vWeaponOcclusionClampMins;
+	    vec3 g_vWeaponOcclusionClampMaxs;
+	    vec3 g_vWeaponOcclusionTestMins;
+	    vec3 g_vWeaponOcclusionTestMaxs;
 	    vec4 g_vTexCoordXform0;
 	    vec4 g_vTexCoordXform1;
 	    vec2 g_vTexCoordScrollSpeed;
@@ -217,16 +227,16 @@ VS
 	    float g_flZBias;
 	};
 	
-	layout(set = 0) uniform _1582 _Globals_;
+	layout(set = 0) uniform _2493 _Globals_;
 	
-	struct _2544
+	struct _289
 	{
-	    _743 _m0;
+	    _1121 _m0;
 	    float _m1;
 	    vec4 _m2;
 	};
 	
-	layout(set = 0) uniform _2544 PerViewConstantBuffer_t;
+	layout(set = 0) uniform _289 PerViewConstantBuffer_t;
 	
 	struct _1017
 	{
@@ -307,15 +317,33 @@ VS
 	    float _9851 = _23812.w;
 	    vec3 _11179 = normalize(vec4(vNormalOs.xyz, 0.0) * _17839);
 	    vec3 _12151 = vec4(vTexCoord.xyz * _21709.xyz, 1.0) * _17839;
-	    vec3 _19648;
-	    if (_Globals_.g_flPlayerOcclusionAmount >= 1.0)
+	    vec3 _21710;
+	    if (_Globals_.g_flPlayerOcclusionAmount >= 0.9900000095367431640625)
 	    {
-	        vec3 _23555 = _12151.xyz - _Globals_.g_vPlayerOrigin;
-	        _19648 = vec3(clamp(_23555.x, -16.0, 16.0), clamp(_23555.y, -16.0, 16.0), clamp(_23555.z, 0.0, 72.0)) + _Globals_.g_vPlayerOrigin;
+	        vec3 _19127 = _12151.xyz;
+	        _21710 = mix(_19127, mix(_19127, clamp(_19127, _Globals_.g_vPlayerOrigin + vec3(-16.0, -16.0, 0.0), _Globals_.g_vPlayerOrigin + vec3(16.0, 16.0, 72.0)), vec3(0.999000012874603271484375)), vec3(smoothstep(0.9900000095367431640625, 1.0, _Globals_.g_flPlayerOcclusionAmount)));
 	    }
 	    else
 	    {
-	        _19648 = _12151;
+	        _21710 = _12151;
+	    }
+	    bool _12885;
+	    if (_Globals_.g_flWeaponOcclusionAmount >= 1.0)
+	    {
+	        _12885 = !any(notEqual(_21710.xyz - clamp(_21710.xyz, _Globals_.g_vWeaponOcclusionTestMins, _Globals_.g_vWeaponOcclusionTestMaxs), vec3(0.0)));
+	    }
+	    else
+	    {
+	        _12885 = false;
+	    }
+	    vec3 _19648;
+	    if (_12885)
+	    {
+	        _19648 = mix(_21710.xyz, clamp(_21710.xyz, _Globals_.g_vWeaponOcclusionClampMins, _Globals_.g_vWeaponOcclusionClampMaxs), vec3(0.999000012874603271484375));
+	    }
+	    else
+	    {
+	        _19648 = _21710;
 	    }
 	    vec4 _21447 = PerViewConstantBuffer_t._m2 * 1.0;
 	    mat4 _15571 = mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));

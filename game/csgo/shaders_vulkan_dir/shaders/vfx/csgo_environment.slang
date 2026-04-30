@@ -477,7 +477,7 @@ PS
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (65712 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (65688 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#if defined(GL_EXT_control_flow_attributes)
@@ -1038,19 +1038,18 @@ PS
 	    _17842.z = _25191.z;
 	    float _24323 = dot(_17842.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
 	    vec3 _9577 = normalize(max(input_0.xyz, vec3(0.001000000047497451305389404296875)));
-	    vec3 _24174 = _19225.xyz;
-	    vec3 _23405 = vec4(clamp(mix(_17842.xyz, (_9577 * min(_24323 / dot(_9577.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)), (3.0 * _24323) * max(input_0.x, max(input_0.y, input_0.z)))).xyz, vec3(input_0.w * _7029)), vec3(0.0), vec3(1.0)).xyz, _10).xyz;
-	    vec2 _7314 = vec2(0.5);
-	    _7314.x = _6375;
-	    float _17651 = float(_Globals_.g_bSnowLayer1 != 0);
+	    vec3 _6756 = _19225.xyz;
+	    vec3 _6663 = vec4(clamp(mix(_17842.xyz, (_9577 * min(_24323 / dot(_9577.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)), (3.0 * _24323) * max(input_0.x, max(input_0.y, input_0.z)))).xyz, vec3(input_0.w * _7029)), vec3(0.0), vec3(1.0)).xyz, _10).xyz;
+	    float _9090 = float(_Globals_.g_bSnowLayer1 != 0);
+	    vec2 _11281 = vec2(_6375);
 	    vec3 _21712;
 	    if (_21710)
 	    {
-	        _21712 = _23405 * mix(vec3(1.0), input_5.xyz, vec3(saturate(_7029)));
+	        _21712 = _6663 * mix(vec3(1.0), input_5.xyz, vec3(saturate(_7029)));
 	    }
 	    else
 	    {
-	        _21712 = _23405;
+	        _21712 = _6663;
 	    }
 	    bool _12889;
 	    if (_Globals_.g_bWetness != 0)
@@ -1239,22 +1238,22 @@ PS
 	        float _9038 = max(_13706 * (1.0 - saturate(PerViewConstantBufferCsgo_t._m12 * 2.0)), _19808);
 	        vec3 _18806 = mix(_21712, pow(_21712, vec3(1.2999999523162841796875)) * 0.800000011920928955078125, clamp((pow(_21712, vec3(0.25)) * (_9038 * _6375)) * 8.0, vec3(0.0), vec3(1.0)) * _Globals_.g_flWetnessDarkeningStrength1);
 	        _13142 = fma(mix((mix(_18806, _18806 * 0.5, vec3(saturate(_14611 * 1.5))) * mix(1.0, _14713, _19808)) * mix(1.0, 1.0 - _17924, _10334), _Globals_.g_vPuddleSedimentColor, vec3(_10334 * _19808)), vec3(1.0 + _13141), vec3(_13141 * 0.100000001490116119384765625));
-	        _16307 = clamp(mix(_7314.xx, vec2(_Globals_.g_fPuddleRoughness), vec2(_9038)) + vec2(_13151 + (length(fwidth(_13712.xyz)) * 0.5)), vec2(0.0), vec2(1.0));
+	        _16307 = clamp(mix(_11281.xx, vec2(_Globals_.g_fPuddleRoughness), vec2(_9038)) + vec2(_13151 + (length(fwidth(_13712.xyz)) * 0.5)), vec2(0.0), vec2(1.0));
 	        _17123 = mix(_14713, 1.0, _19808);
 	        _17124 = mix(_Globals_.g_flReflectance, 0.0350000001490116119384765625, _9038);
 	        _17125 = _13712;
 	        _13960 = _10839 * (0.20000000298023223876953125 + (((0.1500000059604644775390625 * _23607.w) * _23607.w) * _23607.w));
-	        _24595 = mix(_24174, _23607.xyz, vec3(_19808 * _10334));
+	        _24595 = mix(_6756, _23607.xyz, vec3(_19808 * _10334));
 	    }
 	    else
 	    {
 	        _13142 = _21712;
-	        _16307 = _7314;
+	        _16307 = _11281;
 	        _17123 = _14713;
 	        _17124 = _Globals_.g_flReflectance;
 	        _17125 = vec3(1.0);
 	        _13960 = 0.0;
-	        _24595 = _24174;
+	        _24595 = _6756;
 	    }
 	    vec3 _9453 = mix(vec3(_17124).xyz, _13142.xyz, vec3(_23299.w));
 	    vec3 _17892 = mix(_17125, _24595, bvec3(all(equal(_17125, vec3(1.0)))));
@@ -1733,9 +1732,9 @@ PS
 	    vec3 _9666 = _8745 * vec3(_21714 * _17123).xyz;
 	    vec3 _13436 = vec3(_17123 * _21714).xyz;
 	    vec3 _20579;
-	    if (_17651 > 0.0)
+	    if (_9090 > 0.0)
 	    {
-	        _20579 = mix(_9666, pow(_9666, vec3(1.0499999523162841796875, 0.949999988079071044921875, 0.800000011920928955078125)), vec3(_17651));
+	        _20579 = mix(_9666, pow(_9666, vec3(1.0499999523162841796875, 0.949999988079071044921875, 0.800000011920928955078125)), vec3(_9090));
 	    }
 	    else
 	    {
@@ -2011,7 +2010,7 @@ RTX
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (107024 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (107112 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#if defined(GL_AMD_gpu_shader_half_float)
@@ -3812,43 +3811,46 @@ RTX
 	    _571 = _4459.xyz;
 	    vec2 _4464 = _570;
 	    _4464.x = _544;
-	    _570 = _4464;
 	    _569 = _546;
-	    vec3 _4472 = _571;
-	    vec3 _4473 = _4472 * mix(vec3(1.0), _498.xyz, vec3(saturate(_545)));
-	    _571 = _4473;
+	    vec2 _4467 = _4464;
+	    _4467.x = _4464.x;
+	    _4467.y = _4464.x;
+	    _570 = _4467;
+	    vec3 _4476 = _571;
+	    vec3 _4477 = _4476 * mix(vec3(1.0), _498.xyz, vec3(saturate(_545)));
+	    _571 = _4477;
 	    _21._m5 = int(uint(gl_InstanceID));
 	    _21._m3 = gl_RayTmaxEXT;
 	    _21._m1 = _564;
 	    _21._m2 = _565;
 	    vec3 _594[3] = vec3[](_489, _483, _478);
 	    vec3 _595[3] = vec3[](_490, _484, _479);
-	    vec3 _4508 = ((_490 * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_484 * _22.barycentrics.x)) + (_479 * _22.barycentrics.y);
+	    vec3 _4512 = ((_490 * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_484 * _22.barycentrics.x)) + (_479 * _22.barycentrics.y);
 	    vec3 _596[3];
-	    _596[0] = _4508 - (_489 * dot(_4508 - _490, _489));
-	    _596[1] = _4508 - (_483 * dot(_4508 - _484, _483));
-	    _596[2] = _4508 - (_478 * dot(_4508 - _479, _478));
-	    vec3 _4536 = ((_596[0] * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_596[1] * _22.barycentrics.x)) + (_596[2] * _22.barycentrics.y);
+	    _596[0] = _4512 - (_489 * dot(_4512 - _490, _489));
+	    _596[1] = _4512 - (_483 * dot(_4512 - _484, _483));
+	    _596[2] = _4512 - (_478 * dot(_4512 - _479, _478));
+	    vec3 _4540 = ((_596[0] * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_596[1] * _22.barycentrics.x)) + (_596[2] * _22.barycentrics.y);
 	    vec3 _597[3];
 	    _597[0] = cross(_490 - _484, _21._m1);
 	    _597[1] = cross(_484 - _479, _21._m1);
 	    _597[2] = cross(_479 - _490, _21._m1);
-	    float _598 = dot(_4536 - _4508, _21._m1);
-	    vec3 _599 = _4536;
+	    float _598 = dot(_4540 - _4512, _21._m1);
+	    vec3 _599 = _4540;
 	    int _600 = 0;
 	    for (;;)
 	    {
-	        bool _4552_ladder_break = false;
+	        bool _4556_ladder_break = false;
 	        do
 	        {
 	            if (!(_600 < 3))
 	            {
-	                _4552_ladder_break = true;
+	                _4556_ladder_break = true;
 	                break;
 	            }
 	            if (_598 > 0.00999999977648258209228515625)
 	            {
-	                _4552_ladder_break = true;
+	                _4556_ladder_break = true;
 	                break;
 	            }
 	            if (dot(_597[_600], _597[_600]) == 0.0)
@@ -3863,17 +3865,17 @@ RTX
 	                {
 	                    break;
 	                }
-	                vec3 _4590 = _594[_601] - (_597[_600] * dot(_597[_600], _594[_601]));
-	                _596[_601] = _4508 - (_4590 * dot(_4508 - _595[_601], _4590));
+	                vec3 _4594 = _594[_601] - (_597[_600] * dot(_597[_600], _594[_601]));
+	                _596[_601] = _4512 - (_4594 * dot(_4512 - _595[_601], _4594));
 	                _601++;
 	                continue;
 	            }
-	            vec3 _4614 = ((_596[0] * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_596[1] * _22.barycentrics.x)) + (_596[2] * _22.barycentrics.y);
-	            _598 = dot(_4614 - _4508, _21._m1);
-	            _599 = _4614;
+	            vec3 _4618 = ((_596[0] * ((1.0 - _22.barycentrics.x) - _22.barycentrics.y)) + (_596[1] * _22.barycentrics.x)) + (_596[2] * _22.barycentrics.y);
+	            _598 = dot(_4618 - _4512, _21._m1);
+	            _599 = _4618;
 	            break;
 	        } while(false);
-	        if (_4552_ladder_break)
+	        if (_4556_ladder_break)
 	        {
 	            break;
 	        }
@@ -3886,22 +3888,22 @@ RTX
 	    }
 	    _21.material = _599;
 	    _21._m6 = _563;
-	    f16vec3 _4627 = f16vec3(vec3(0.0));
-	    _21._m7 = MaterialDataMinimal_t(_4627, float16_t(0.0), f16vec3(vec3(1.0, 0.0, 1.0)), float16_t(1.0), _4627, float16_t(0.040008544921875), 0u, f16vec4(ivec4(0)));
+	    f16vec3 _4631 = f16vec3(vec3(0.0));
+	    _21._m7 = MaterialDataMinimal_t(_4631, float16_t(0.0), f16vec3(vec3(1.0, 0.0, 1.0)), float16_t(1.0), _4631, float16_t(0.040008544921875), 0u, f16vec4(ivec4(0)));
 	    _21._m7.vMaterialBits = f16vec3(_572);
-	    _21._m7._m2 = f16vec3(_4473);
+	    _21._m7._m2 = f16vec3(_4477);
 	    _21._m7._m4 = f16vec3(_568);
 	    _21._m7._m5 = float16_t(_567);
 	    _21._m7._m1 = float16_t(_569);
 	    _21._m7._m3 = float16_t(dot(_570, vec2(0.5)));
 	    if (any(greaterThan(_566, vec3(0.0))))
 	    {
-	        f16vec4 _4656 = _21._m7._m7;
-	        f16vec3 _4659 = f16vec3(_566);
-	        _4656.x = _4659.x;
-	        _4656.y = _4659.y;
-	        _4656.z = _4659.z;
-	        _21._m7 = MaterialDataMinimal_t(_21._m7.vMaterialBits, _21._m7._m1, _21._m7._m2, _21._m7._m3, _21._m7._m4, _21._m7._m5, (_21._m7._m6 & 4294901760u) | 1u, _4656);
+	        f16vec4 _4660 = _21._m7._m7;
+	        f16vec3 _4663 = f16vec3(_566);
+	        _4660.x = _4663.x;
+	        _4660.y = _4663.y;
+	        _4660.z = _4663.z;
+	        _21._m7 = MaterialDataMinimal_t(_21._m7.vMaterialBits, _21._m7._m1, _21._m7._m2, _21._m7._m3, _21._m7._m4, _21._m7._m5, (_21._m7._m6 & 4294901760u) | 1u, _4660);
 	    }
 	}
 	

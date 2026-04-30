@@ -110,12 +110,11 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j`
- (08@HPXb0o
- (08@HPZ`
- (08@HR0o
- (08@J0o
- (0X`hpz0o
+ (08@HPX`j
+ (08@HPXb
+ (08@HPZ
+ (08@HR
+ (0X`hpz
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -312,7 +311,7 @@
 "d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo
 "e\n CCSUsrMsg_EntityOutlineHighlight
 "f\n\nCMsgTEDust
-"g3XL
+"g3Hn
 "h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 "l7ql`R2lWf
 "lbN.
@@ -2644,7 +2643,7 @@ $taser_charge
 (.CPlayer_SetPerFriendPreferences_Request
 (0'yX
 (0x%08X)'??'
-(4xO
+(4hq
 (5Me
 (5jP
 (ACTIVE)
@@ -3105,7 +3104,6 @@ $taser_charge
 ,?IsUint32@Value@v8@@QEBA_NXZ
 ,ARu@y6
 ,I?Value@Number@v8@@QEBANXZ
-,N`4hP
 ,Reason=
 ,Service for dealing with user-submitted logsB
 ,ShfPQ
@@ -3122,7 +3120,7 @@ $taser_charge
 ,\n\nsv_interp0
 ,\n\nsv_interp1
 ,\n\vvictim_slot
-,]p3xL
+,]p3hn
 ,ar_monastery
 ,fQM(
 ,h11]
@@ -3161,6 +3159,7 @@ $taser_charge
 --CLoopModeGame::~CLoopModeGame
 --file:
 -.CPlayer_GetNewSteamAnnouncementState_Request
+-4xq
 -5X5
 -;-C-I-M-a-e-q-
 -> Success (%d attempts)\n
@@ -5364,6 +5363,7 @@ $taser_charge
 .?AV?$CNetworkVarBase@MVNetworkVar_m_fadeMinDist@C_BaseModelEntity@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flActualHealthRemoved@CDamageRecord@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAlphaScale@C_EnvParticleGlow@@@@
+.?AV?$CNetworkVarBase@MVNetworkVar_m_flAltitudeAtLastUsingGroundTopologyOffsetTransition@CCSPlayer_MovementServices@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAnimTime@C_BaseEntity@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAnisotropy@C_EnvVolumetricFogController@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAspectRatio@C_PointCamera@@@@
@@ -5617,6 +5617,7 @@ $taser_charge
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flTotalRoundDamageDealt@CCSPlayerController_ActionTrackingServices@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flTransitionStartSpeed@C_FuncConveyor@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flUseFrictionStashedSpeedUntilFrac@CCSPlayer_MovementServices@@@@
+.?AV?$CNetworkVarBase@MVNetworkVar_m_flUsingGroundTopologyOffsetTransitionSmoothing@CCSPlayer_MovementServices@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flValue@CEconItemAttribute@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flVelocityModifier@C_CSPlayerPawn@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flViewmodelFOV@C_CSPlayerPawn@@@@
@@ -5914,8 +5915,6 @@ $taser_charge
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_flTimeOfLastInjury@C_CSPlayerPawn@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_flTimeSilencerSwitchComplete@C_CSWeaponBase@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_flWeaponGameplayAnimStateTimestamp@C_CSWeaponBase@@@@
-.?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_gtLastTimeInAir@CCSPlayer_MovementServices@@@@
-.?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_gtLastTimeOnStaticWorldGround@CCSPlayer_MovementServices@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_nextPrevOwnerUseTime@C_CSWeaponBase@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_timestamp@CountdownTimer@@@@
 .?AV?$CNetworkVarBase@VHSequence@@VNetworkVar_m_hSequence@CBaseAnimGraphController@@@@
@@ -6249,6 +6248,7 @@ $taser_charge
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bUseSecondaryColor@CLightComponent@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bUseUniqueColorTarget@C_FuncMonitor@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bUsesBakedShadowing@CLightComponent@@@@
+.?AV?$CNetworkVarBase@_NVNetworkVar_m_bUsingGroundTopologyOffset@CCSPlayer_MovementServices@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bVisibleWhenParentNoDraw@C_PointClientUIWorldPanel@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bWaitForNoAttack@C_CSPlayerPawn@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bWarmupPeriod@C_CSGameRules@@@@
@@ -10879,6 +10879,7 @@ $taser_charge
 .yAu[7
 /'/)/A/E/K/M/Q/W/o/u/}/
 /2x1
+/30m
 /5dJ
 /?appid=%u
 /Published file id of the file we'd like update.
@@ -10932,12 +10933,10 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR`
-08@J0o
-08B`
+08@HR
+08@J
 08bX
 09,h
-0:ps
 0;Q5[
 0<cz
 0M2~@p
@@ -11209,7 +11208,6 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpD
 2^pV
 2a"l
 2bT~
@@ -11429,7 +11427,6 @@ $taser_charge
 8<pl
 8= zp
 8A6j
-8Bph
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11720,6 +11717,7 @@ $taser_charge
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
+@HPX`hv
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11760,6 +11758,7 @@ A9ur
 A<fP
 A>x8
 AA Compromise
+AA:p
 AAAA-
 AAAA-%.*s
 AABBDirection
@@ -11871,6 +11870,7 @@ AMMO_TYPE_HEGRENADE
 AMMO_TYPE_MOLOTOV
 AMMO_TYPE_SMOKEGRENADE
 AMMO_TYPE_TASERCHARGE
+AMoveMountingAmount_t
 ANC[%d]
 ANNOTATION: Distance -- %s -- %f\n
 ANNOTATIONS: hiding node "%s"\n
@@ -12774,7 +12774,7 @@ BlurBackground
 BlurBuffer
 BlurOperationPanel
 BlurPopupPanel
-Bm_iFOV
+Bm_vecSellbackPurchaseEntries
 BoX5
 Body Component Scriptdesc
 BodyGameSystem
@@ -13221,7 +13221,6 @@ CAsyncWriteInProgress::OnComplete( "%s" ) -> %s at %.3f\n
 CAttachmentNameSymbolWithStorage
 CAttributeContainerPlayer
 CAttribute_String
-CBANNER_CELEBRATE_02
 CBI]6
 CBaseAnimGraph::InputSetBodyGroup
 CBaseAnimGraphChoreoServicesThink
@@ -16954,6 +16953,7 @@ DeferredBlendItemListHead
 DeferredBlendLocationList
 Deferring csgo_download_match command!\n
 Deferring csgo_econ_action_preview command!\n
+Definition : %s\n
 DefuseKit
 Defuser
 Defuser%d
@@ -17106,7 +17106,7 @@ DistanceThreshold
 Div R%d <- R%d / R%d
 Dividing by zero in CNmFloatMathNode
 Dizzy
-Dm_scoreSecondHalf
+Dm_szTeamMatchStat
 DnRv
 DoAllocateEntity failed\n
 DoAllocateEntity pEntity->m_pInstance != NULL %d\n
@@ -18267,7 +18267,6 @@ First valid class must be less than or equal to last valid class.
 First valid item slot must be less than or equal to last valid item slot.
 FirstPersonLegsDisableDistortion
 Firstperson Legs
-FirstpersonLegsFade
 FirstpersonLegsPass1
 FirstpersonLegsPass2
 FirstpersonLegsPrepass
@@ -18582,6 +18581,7 @@ GameInterfaceAPI
 GameModeGunGame
 GameModelInfo001
 GameOverlay Particles
+GameParticleManager Message Queue capacity overflow!\n
 GamePortraitWorldsUpdated
 GamePreEntityThink
 GameRulesGameSystem
@@ -20682,7 +20682,6 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
-JY3(L
 JZIX
 J\nHBF
 J`KL
@@ -20822,7 +20821,7 @@ LOG_MESSAGE
 LONG
 LONG_C2I
 LPVIndex
-LS&\nKpm
+LS&\nK
 LT[N
 LT_txt
 LXKQ
@@ -21065,7 +21064,6 @@ Lunacy
 M'Ezb
 M-laO
 M0 E
-M4(P
 MASK:
 MATCH-
 MATCHSTATS\t%s, round %d, value %d\n
@@ -22236,15 +22234,12 @@ P-224
 P-256
 P-384
 P-521
-P08@J0o
+P08@J
 P08J
 P1\t98"
-P20o
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
 P5[1
-P60g
-P:0o
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -22754,7 +22749,6 @@ Permit Responses
 Permitted
 Persist
 PersonalStore
-Pfpn
 Phoenix Compound
 PhysDisableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
 PhysEntityCollisionsAreDisabled called on entities in two different scene worlds (%s - %u vs %s - %u)\n
@@ -22914,7 +22908,6 @@ Playsoundscape %s:Unknown command %s\n
 Please specify 0 or 1 with the -stream Parameter\n
 Pm8A?
 PmR"H?
-Pnpo
 Point entity.
 PointsAnim
 Policy Qualifier CPS
@@ -23152,7 +23145,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
-Q$4hO
+Q$4Xq
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23391,7 +23384,7 @@ RULESHERE
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpD
+R\vpL
 R]Di
 Rad2 Deg
 Radar
@@ -26707,7 +26700,6 @@ W'6S`
 W2Q=
 W3fp
 W3i+,
-W4HP
 W>peSp>9
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.\n
 WARNING! Field %s is using the wrong FIELD_ type!\nFix this or you'll see a crash.\n
@@ -26854,6 +26846,11 @@ WeaponImageSS
 WeaponLength
 WeaponName
 WeaponNameAndRarity
+WeaponOcclusionAmount
+WeaponOcclusionClampMaxs
+WeaponOcclusionClampMins
+WeaponOcclusionTestMaxs
+WeaponOcclusionTestMins
 WeaponPrimary
 WeaponRarity
 WeaponRow
@@ -27145,7 +27142,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr`
+X`hr
 Xd3h
 XfJ7
 XjfR
@@ -27283,7 +27280,6 @@ Z~wl
 [-1] -> empty
 [-1] -> gsn(empty)
 [-1] -> gsn(null)
-[4XP
 [Additional text in debugoverlay_dashboard]
 [CC Log %s]: d: %f, ls: %f, %s\n
 [CC]:  %s: No Caption Found\n
@@ -28306,7 +28302,6 @@ Z~wl
 \vj0k
 \vjC7
 ]1h=bfz
-]38L
 ]FhSD}
 ]GT7]
 ]G\nY1
@@ -28403,10 +28398,9 @@ _util_drawtext_pos
 _var
 _xU`u
 _}eOk
-`20o
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`43PK
+`43pm
 `:zQF
 `D$daM-l
 `DZG
@@ -29202,7 +29196,7 @@ b <= sizeof ctx->buf
 b <= sizeof ctx->final
 b0M%
 b2i_PVK_bio
-b3HL
+b38n
 b5o-
 b=G3
 bB"`3
@@ -30858,8 +30852,8 @@ d2i_SSL_SESSION
 d2i_TS_RESP
 d2i_X509_PKEY
 d35P
+d48r
 d4\tp
-d4xP
 d7NSuLq2
 d=%-2d hl=%ld l=%4ld 
 d=%-2d hl=%ld l=inf  
@@ -33291,7 +33285,6 @@ hour
 hours
 houseIdentifier
 hover
-hpz0o
 hr_H
 href="
 hscroll
@@ -33410,6 +33403,7 @@ i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
 i4a."
+i4xr
 i5BH
 iA5StringSyntax
 iAmmoType
@@ -34389,7 +34383,7 @@ k+Aq
 k/sn
 k0>Z,
 k26C*
-k3hL
+k3Xn
 k8\vD
 k8fo
 k8xA
@@ -34798,7 +34792,6 @@ kvtags
 kw.6#
 k~Rz
 l <= sizeof(c->iv)
-l&+30K
 l&rB6
 l4Ot
 l7@J
@@ -35149,7 +35142,7 @@ lowresdepth
 luminaire_anisotropy
 luminaire_shape
 luminaire_size
-lvR48P
+lvR4
 m&9W
 m*Zu
 m249
@@ -36997,7 +36990,6 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p20o
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37009,7 +37001,6 @@ p2p_ping could not convert "%s" to a CPeerToPeerAddress\n
 p2p_ping could not ping "%s" because they are an unknown peer\n
 p2p_ping requires a destination address\n
 p2p_ping sending to "%s"\n
-p2ph
 p2{l
 p4Z3
 p5Z3
@@ -37017,14 +37008,13 @@ p5\nL,
 p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
-pAm_nModelID
-pBHIERARCHY_NONE
+pASHARD_SOLID
+pBdemo_playback_override_settings
 pCheckpointName
 pD4t
 pData->GetDataDescMap() == pTemplateDataMap
 pDescription
 pDest
-pF`r
 pField
 pFilter
 pG_*h
@@ -38060,6 +38050,7 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
+r\fpL
 r\n\vstart_index
 r\vDi
 r\vp!K
@@ -39968,6 +39959,7 @@ t(ydU
 t+RW
 t0;?ZlP*m
 t2U 
+t3xn
 t4O_
 t80z
 tA`KO/3G!\n7h=
@@ -41408,7 +41400,6 @@ weapon_galilar_client
 weapon_glock
 weapon_glock.ventr
 weapon_glock_client
-weapon_grenade
 weapon_hand_l
 weapon_hand_r
 weapon_healthshot
@@ -41887,7 +41878,6 @@ z/B,9d
 z<d2
 z>Hz
 z>Will spew if a job takes longer than the specified number of microseconds
-zCBANNER_CELEBRATE_03
 zF):O4
 zFar
 zG2m8

@@ -15310,7 +15310,6 @@ weapon_flashbang
 weapon_g3sg1
 weapon_galilar
 weapon_glock
-weapon_grenade
 weapon_hand_l
 weapon_healthshot
 weapon_hegrenade

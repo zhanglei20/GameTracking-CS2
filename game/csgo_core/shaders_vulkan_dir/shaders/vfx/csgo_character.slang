@@ -127,6 +127,7 @@ VS
 	bool g_bTranslucentDistanceContrastAdjustment < UiType(CheckBox); Expression(F_DISTANCE_CONTRAST_ADJUSTMENT && F_TRANSLUCENT); >;
 	float g_flFirstpersonLegsFade < Attribute("FirstpersonLegsFade"); UiType(Slider); >;
 	float g_flPlayerOcclusionAmount < Attribute("PlayerOcclusionAmount"); UiType(Slider); >;
+	float g_flWeaponOcclusionAmount < Attribute("WeaponOcclusionAmount"); UiType(Slider); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
 	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
@@ -157,6 +158,10 @@ VS
 		v1 = cos(v0);
 		v2 = sin(v0);
 		float4(v2*g_vTexCoordScale.x,v1*g_vTexCoordScale.y,0,(g_vTexCoordCenter.y+g_vTexCoordOffset.y)-((v2*g_vTexCoordCenter.x)+(v1*g_vTexCoordCenter.y)))); >;
+	float3 g_vWeaponOcclusionClampMaxs < Attribute("WeaponOcclusionClampMaxs"); UiType(VectorText); >;
+	float3 g_vWeaponOcclusionClampMins < Attribute("WeaponOcclusionClampMins"); UiType(VectorText); >;
+	float3 g_vWeaponOcclusionTestMaxs < Attribute("WeaponOcclusionTestMaxs"); UiType(VectorText); >;
+	float3 g_vWeaponOcclusionTestMins < Attribute("WeaponOcclusionTestMins"); UiType(VectorText); >;
 	
 	// Material1
 	float g_flEyeBallWalleyeL1 < Range(0, 25); UiType(Slider); UiGroup("Material1/Eyes/95"); >;
@@ -192,12 +197,12 @@ VS
 	float g_vSphericalAnisotropyAngle < Range(0, 180); UiType(Slider); UiGroup("Lighting,30/Roughness,20/40"); Expression((this/90)-1); >;
 	
 	// SPIR-V reflection failed for backend HLSL:
-	// cbuffer ID 5618 (name: _Globals_), member index 4 (name: g_vTexCoordXform0) cannot be expressed with either HLSL packing layout or packoffset.
+	// cbuffer ID 5618 (name: _Globals_), member index 7 (name: g_vWeaponOcclusionTestMins) cannot be expressed with either HLSL packing layout or packoffset.
 	// 
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (10772 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (11680 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
@@ -213,17 +218,17 @@ VS
 	    float _m7;
 	};
 	
-	struct _2914
+	struct _197
 	{
 	    vec4 _m0[3];
 	};
 	
-	struct _765
+	struct _1353
 	{
-	    _2914 _m0;
+	    _197 _m0;
 	};
 	
-	struct _1415
+	struct _1709
 	{
 	    vec4 _m0[4];
 	};
@@ -235,15 +240,20 @@ VS
 	
 	layout(set = 4, binding = 30, std430) readonly buffer g_transformBuffer
 	{
-	    _765 _m0[];
+	    _1353 _m0[];
 	} g_transformBuffer_1;
 	
-	struct _1745
+	struct _2745
 	{
 	    int g_bTranslucentDistanceContrastAdjustment;
 	    float g_fDistanceContrastExposure;
-	    vec3 g_vPlayerOrigin;
 	    float g_flPlayerOcclusionAmount;
+	    vec3 g_vPlayerOrigin;
+	    float g_flWeaponOcclusionAmount;
+	    vec3 g_vWeaponOcclusionClampMins;
+	    vec3 g_vWeaponOcclusionClampMaxs;
+	    vec3 g_vWeaponOcclusionTestMins;
+	    vec3 g_vWeaponOcclusionTestMaxs;
 	    vec4 g_vTexCoordXform0;
 	    vec4 g_vTexCoordXform1;
 	    vec2 g_vTexCoordScrollSpeed;
@@ -253,18 +263,18 @@ VS
 	    int g_bDisableFirstpersonLegsDistortion;
 	};
 	
-	layout(set = 0) uniform _1745 _Globals_;
+	layout(set = 0) uniform _2745 _Globals_;
 	
-	struct _1053
+	struct _1641
 	{
-	    _1415 _m0;
+	    _1709 _m0;
 	    float _m1;
 	    vec4 _m2;
 	    vec3 _m3;
 	    vec3 _m4;
 	};
 	
-	layout(set = 0) uniform _1053 PerViewConstantBuffer_t;
+	layout(set = 0) uniform _1641 PerViewConstantBuffer_t;
 	
 	struct _1032
 	{
@@ -346,15 +356,33 @@ VS
 	    float _9851 = _23812.w;
 	    vec3 _11179 = normalize(vec4(vNormalOs.xyz, 0.0) * _17839);
 	    vec3 _12151 = vec4(vPositionOs.xyz * _21709.xyz, 1.0) * _17839;
-	    vec3 _19648;
-	    if (_Globals_.g_flPlayerOcclusionAmount >= 1.0)
+	    vec3 _21710;
+	    if (_Globals_.g_flPlayerOcclusionAmount >= 0.9900000095367431640625)
 	    {
-	        vec3 _23555 = _12151.xyz - _Globals_.g_vPlayerOrigin;
-	        _19648 = vec3(clamp(_23555.x, -16.0, 16.0), clamp(_23555.y, -16.0, 16.0), clamp(_23555.z, 0.0, 72.0)) + _Globals_.g_vPlayerOrigin;
+	        vec3 _19127 = _12151.xyz;
+	        _21710 = mix(_19127, mix(_19127, clamp(_19127, _Globals_.g_vPlayerOrigin + vec3(-16.0, -16.0, 0.0), _Globals_.g_vPlayerOrigin + vec3(16.0, 16.0, 72.0)), vec3(0.999000012874603271484375)), vec3(smoothstep(0.9900000095367431640625, 1.0, _Globals_.g_flPlayerOcclusionAmount)));
 	    }
 	    else
 	    {
-	        _19648 = _12151;
+	        _21710 = _12151;
+	    }
+	    bool _12885;
+	    if (_Globals_.g_flWeaponOcclusionAmount >= 1.0)
+	    {
+	        _12885 = !any(notEqual(_21710.xyz - clamp(_21710.xyz, _Globals_.g_vWeaponOcclusionTestMins, _Globals_.g_vWeaponOcclusionTestMaxs), vec3(0.0)));
+	    }
+	    else
+	    {
+	        _12885 = false;
+	    }
+	    vec3 _19648;
+	    if (_12885)
+	    {
+	        _19648 = mix(_21710.xyz, clamp(_21710.xyz, _Globals_.g_vWeaponOcclusionClampMins, _Globals_.g_vWeaponOcclusionClampMaxs), vec3(0.999000012874603271484375));
+	    }
+	    else
+	    {
+	        _19648 = _21710;
 	    }
 	    vec4 _23875 = (vec4(_19648.xyz, 1.0) + (PerViewConstantBuffer_t._m2 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
 	    vec4 _9360 = vTexCoord.xyxy;
@@ -370,26 +398,26 @@ VS
 	    _23714.x = _13062.x;
 	    _23714.y = _13062.y;
 	    _23714.z = _13062.z;
-	    bool _12885;
+	    bool _12886;
 	    if (vBlendColorTint.x == 0.0)
 	    {
-	        _12885 = vBlendColorTint.y == 0.0;
-	    }
-	    else
-	    {
-	        _12885 = false;
-	    }
-	    bool _12886;
-	    if (_12885)
-	    {
-	        _12886 = vBlendColorTint.z == 0.0;
+	        _12886 = vBlendColorTint.y == 0.0;
 	    }
 	    else
 	    {
 	        _12886 = false;
 	    }
-	    bool _7424;
+	    bool _12887;
 	    if (_12886)
+	    {
+	        _12887 = vBlendColorTint.z == 0.0;
+	    }
+	    else
+	    {
+	        _12887 = false;
+	    }
+	    bool _7424;
+	    if (_12887)
 	    {
 	        _7424 = vBlendColorTint.w == 0.0;
 	    }
@@ -406,18 +434,18 @@ VS
 	    {
 	        _19363 = _23714;
 	    }
-	    bool _12887;
+	    bool _12888;
 	    if (_Globals_.g_flFirstpersonLegsFade > 0.0)
 	    {
-	        _12887 = _Globals_.g_bDisableFirstpersonLegsDistortion == 0;
+	        _12888 = _Globals_.g_bDisableFirstpersonLegsDistortion == 0;
 	    }
 	    else
 	    {
-	        _12887 = false;
+	        _12888 = false;
 	    }
 	    vec3 _10020;
 	    vec3 _22509;
-	    if (_12887)
+	    if (_12888)
 	    {
 	        float _24164 = pow((clamp((vPositionOs.z + 1.0) * 0.012500000186264514923095703125, 0.0, 1.0) * 0.5) * pow(saturate(-PerViewConstantBuffer_t._m4.z), 2.0), 1.5);
 	        vec2 _21266 = _23875.xy * (1.0 + (5.0 * _24164));
