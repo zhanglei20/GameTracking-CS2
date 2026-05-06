@@ -224,6 +224,7 @@ $xmm9
 %s bytes used out of %s bytes available (%.2f%%)
 %s called on a pool arena (no root available)\n
 %s is out of range for KeyValues, which doesn't support signed 64-bit numbers
+%s not expected here.  A valid JSON document should be a single object, which begins with '{' and ends with '}'
 %s not expected here.  Missing ',' or ']'?
 %s not expected here.  Missing ',' or '}'?
 %s not expected here.  Missing ':'?
@@ -431,6 +432,7 @@ $xmm9
 (yaX
 ) : AssertMsg Failed in function 
 ) : Assertion Failed in function 
+)05\t8
 )14:;EFIJ^de
 )14:EFIJNOde\
 )EIWde
@@ -793,7 +795,7 @@ $xmm9
 3\r53h&
 3o=q
 3wl'
-420p
+420`
 4JpI?=
 4\tgA
 4^K\fOI
@@ -853,7 +855,6 @@ $xmm9
 ;BIb?
 ;srv*http://symbols/windows
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->\n
-<!-- schema 
 </link>
 </script>
 <6Rj
@@ -1701,7 +1702,7 @@ $xmm9
 ?GetWinLevelRevision@CPUInformation@@SA_NPEAG0@Z
 ?GrowByChunks@CBufferString@@QEAAHHH@Z
 ?GrowPool@CPoolAllocator@@QEAAXI@Z
-?HEAP WARNING: memory block at %p appears to be corrupt\n
+?HEAP WARNING: memory block at %p is unexpectedly allocated\n
 ?HandleFirstWriteLockTransition@CEventRWLock@@IEAAXAEAVCEventListNode@@@Z
 ?HandleToString@CCountedStringPool_CI@@QEBAPEBDG@Z
 ?HandlerQueueHeartBeat@MiniDumpStandardData_t@@QEBAXXZ
@@ -2560,7 +2561,6 @@ ApplyDiffs
 Apr 22 2026
 April
 AreFileApisANSI
-Assert
 AssertDlgThread
 Assertion Dialog could not be created. Breaking in debugger.\n
 Assertion Dialog could not be created. Ignoring assertion. Run under the debugger to break instead.\n
@@ -3967,6 +3967,7 @@ GameDVR_Enabled
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
+General
 GenerateHashFromUniqueId
 GenericGameData
 Generic_x86
@@ -4120,7 +4121,7 @@ H$BQ
 H(VVH
 H*0"ZOW
 H>r1
-HEAP WARNING: memory block at %p is unexpectedly allocated\n
+HEAP WARNING: memory block at %p appears to be corrupt\n
 HEAP WARNING: memory block at %p is unexpectedly free\n
 HEAP WARNING: memory block at %p is unexpectedly unrecognized\n
 HEAP WARNING: memory pointer %p is invalid\n
@@ -4312,7 +4313,7 @@ ISolveIKChainAnimNode
 ISubGraphAnimNode
 ISubGraphManager
 ITALIAN
-I\zH6
+I\zH6(
 Ignore
 Ignore All Asserts
 Ignore For 24 Hours
@@ -4351,7 +4352,6 @@ InitializeSListHead
 InitializeSRWLock
 InitializeSecurityDescriptor
 Inline attr without expected value\n
-Input contains no data
 InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
@@ -4475,7 +4475,6 @@ KV Conditional: Unknown symbol %s\n
 KV3 EHANDLEs cannot be serialized
 KV3 instances cannot be set to an unspecified specific type
 KV3 pointers cannot be serialized
-Keeping "%s" cvar value, specified on cmdline\n
 Kernel32.dll
 KeyValueCache001
 KeyValues Error: %s in file %s\n
@@ -6129,6 +6128,7 @@ Unable to create thread in %s\n
 Unable to determine CPU Frequency\n
 Unable to determine ELF default base address\n
 Unable to determine Mach-O default base address\n
+Unable to determine buffer encoding.
 Unable to load COM\n
 Unable to load SDL\n
 Unable to load oleaut32\n
@@ -6707,7 +6707,7 @@ Vrad3_001
 Vtube
 VtuneApi32e.dll
 W 7x
-W)lQx
+W)lQp
 W/q#IX
 W4vC
 WARNING
@@ -6819,7 +6819,7 @@ Z>w_F
 ZSq>
 Z\>z8
 Zjz\v
-Zvpcf3
+Zvpcf1
 ZwSetTimerResolution
 [   func+child         func ]
 [   func+child       func ]
@@ -6870,9 +6870,9 @@ ZwSetTimerResolution
 \nh?oT
 \nk>oB
 \ntier0.dll
-\r%s not expected here.  A valid JSON document should be a single object, which begins with '{' and ends with '}'
 \r00000000-0000-0000-0000-000000000000
-\rGeneral
+\rAssert
+\rInput contains no data
 \r\f\v\v\n\n\t\t\t\t\t
 \rmj>zjZ
 \sdktools\bin
@@ -6897,8 +6897,8 @@ ZwSetTimerResolution
 \v_dbghelp_home_linked
 \v_dbghelp_home_unlinked
 \veBV
-]0S2
 ]P4H
+]PS2
 ]u9g
 ]xEc
 ^<V7w
@@ -8277,6 +8277,7 @@ moredetailed
 moveto
 multiplayer_break
 n03>Pu
+n<!-- schema 
 n>log2
 nBits != 32
 nInterruptability
@@ -8285,9 +8286,8 @@ nMin
 nOffset < m_nAllocationSize
 nSwitchValue
 nTries < 10000000
-nUnable to determine buffer encoding.
 n\f"pA3Q
-n\f"pA3QP
+n\f"pA3QX
 n]?iJ
 name
 nan(ind)
@@ -8735,7 +8735,6 @@ vmdlkeys4
 void
 volatile
 vpcf
-vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -8757,6 +8756,7 @@ vpcf26
 vpcf27
 vpcf28
 vpcf29
+vpcf3
 vpcf30
 vpcf31
 vpcf32

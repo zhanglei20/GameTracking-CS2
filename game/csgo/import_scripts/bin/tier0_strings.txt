@@ -357,6 +357,7 @@ AdjustWindowRectEx
 AllocateThreadID
 AppendMiniProfilerToList
 AreAllAssertsDisabled
+Assert
 AssertValidWStringPtr
 Assertion Failed: bRtlGenRandomOK
 BGetMiniDumpLock
