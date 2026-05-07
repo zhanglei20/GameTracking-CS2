@@ -12733,8 +12733,7 @@ $prefix_element$
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\tV_fseek
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp8
-2\vpD
+2\vpd
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -14819,6 +14818,7 @@ $prefix_element$
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
+@08N
 @AuthPhysCollisionAttributesModeEnum_t
 @HPX`hv
 @Integer overflow in %s
@@ -21345,6 +21345,7 @@ Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P08@JPm.
 P08J
+P08N
 P20\v\v
 P2Pm.
 P:Pm.
@@ -21924,10 +21925,9 @@ RMouseDoubleClick
 ROTATION
 RSDSj
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fpd
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vp8
-R\vpD
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
@@ -25836,6 +25836,7 @@ group_options_button
 group_title
 grow_or_shrink
 guide_hair_count
+h*\nPo
 hAttachmentCamera
 hResource
 hSShould we try to straighten two faces connected to this edge? (tangent)
@@ -26774,6 +26775,7 @@ overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
 p"?value@QSpinBox@@QEBAHXZ
+p08@H^
 p20\v\v
 p2Pm.
 pAction
@@ -27015,6 +27017,7 @@ quadratic
 quaternion_array
 quiet
 r0l,
+r\vpd
 rad2deg
 radiant
 radiant_creeps

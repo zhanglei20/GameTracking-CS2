@@ -14177,18 +14177,20 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 0 to 1 value specifying the location on the local x-axis of the deformer around which the bend will occur. A value of 0 means the bend will occur around the minimum end of the deformer, a value of 1 means the bend will occur around the maximum end of the deformer, a value of 0.5 means the bend will occur at the center of the deformer volume.
 0*0,d
 0.2d0<*
+04e#
 08@H
 08@HPX`h
 08@HR
 08@J
 08@N
-0>mq?
+08FP->
 0L.x
+0Lv#
+0XP#
 0\f?focusOutEvent@QGraphicsView@@MEAAXPEAVQFocusEvent@@@Z
 0\fU04i
 0\r%0t
 0\tV_frexpf
-0lj#
 0x%llx
 1 additional asset reference to a moved asset was found:<br>
 1 component
@@ -14289,7 +14291,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vplj#
+2\vpLv#
 2_BONE_IK
 2accepted()
 2clicked()
@@ -14330,32 +14332,25 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 5;FJ$,XEK4<
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
 5sfm_v8
-604>
-60C?
-60F>
-60M?
-60X>
-60n>
-60o>
-60u>
+608>
+609>
+60e>
+60f>
+60g>
+60h>
+60y>
 64 283 0
-6Gq?
 6L8N6t0$:
-6P2>
-6P3?
-6PW>
-6Pa>
-6Pb>
-6Pi>
+6PA?
+6PG?
+6PR?
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6f:bF
-6p6>
-6pR>
-6pX>
-6pj>
-6pm>
-6pn>
-6po>
+6p1>
+6pZ>
+6pf>
+6pg>
+6ph>
 7&F|If
 7T2,
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -15449,9 +15444,9 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 @&*(**&,b*t
 @&*(**&,b*~
 @08@HV
-@6p6>
+@08N
 @8@HV
-@HPX`hv
+@HPX`hv09?
 @Integer overflow in %s
 @V@const char *__cdecl Reflection::Internal::GetFuncName<class CAnimNodeInstanceBase>(void)
 @\*^*`&bl`p
@@ -20075,8 +20070,6 @@ LowPrecisionUv
 LowPrecisionUv1
 LowercaseBoneNames
 Lowest
-M 0F>
-M)0F>
 MAPCLASS_ERROR
 MATCHES FILTER
 MATERIAL_ATTRIBUTE:%s_%i
@@ -20925,7 +20918,9 @@ P4 delete of source successful
 P4 edit successful
 P4 integrate (overwrite) and edit
 P4 revert and delete of CONTENT file successful
-P6p.?
+P4e#
+P6@4?
+P6@R?
 P?isValid@QColor@@QEBA_NXZ
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
 PARENT
@@ -20954,6 +20949,7 @@ PP R6T(V
 PS_RENDER_STATE
 PS_RTX
 PURH
+PXP#
 P\v5Pd
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
@@ -21162,8 +21158,6 @@ Playback:m_currentSequence
 Playback:m_flForcedCycle
 PlayerInputAnimMotorInstance
 Please make sure you deleted history on the mesh before exporting.\nThe mesh apparently has %d vertices, but %d blendWeights in field %s, while having %d weights per vertex\n
-Plj#
-PnP1?
 Point 0
 Point 1
 Point Bones At
@@ -21412,9 +21406,12 @@ RIGID
 ROTATION
 RSDSZ
 RT60 for low, mid, and high frequency bands for the probe.
+R\fpLv#
+R\np4e#
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\vp!6
-R\vplj#
+R\vp4e#
+R\vpLv#
 R_T5Y
 Rad2 Deg
 Radial Basis Function Type
@@ -22924,6 +22921,7 @@ Using deprecated 'base=prefix' syntax for adding a prefix to a base class
 Using worldspawn entity targetname of 'worldspawn' will not have entity name fixup and might produce confusing results!\n
 UsingAnimgraph
 Utility
+V0F>
 V?redF@QColor@@QEBANXZ
 VCS3 %s Load Failure: Could not find DATA block\n
 VData:%s
@@ -23075,7 +23073,7 @@ VolumetricFog
 Voronoi Plane Primitive
 Vortices
 Voxel volume (%i components)
-VpP>
+VpH>
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
 WARNING content and game files are in different mods:
 WARNING: %d Assets have references to this asset that will be broken.
@@ -23216,7 +23214,6 @@ X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
 X`hM\f
 X`hr
 X`hu
-XfpO?
 Y (Green / Left)
 Y - Left
 Y-Axis
@@ -23323,9 +23320,7 @@ ZoomSensitivityMouseWheel
 \f?hasHeightForWidth@QStackedLayout@@UEBA_NXZ
 \f?hasHeightForWidth@QWidget@@UEBA_NXZ
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
-\fp\vPlj#
-\fplj#
-\fzjw\r
+\fp4e#
 \n%.1fMB
 \n*** Error masking unused parts! Unknown text found. This is usually caused by a '{' or '}' not tabbed properly or an invalid declaration at the global scope. (line %d):\n%s\n\n
 \n*** Found variable "%s" multiple times in %s!\n\n
@@ -23365,6 +23360,7 @@ ZoomSensitivityMouseWheel
 \nERROR: EXCEPTION:\n
 \nERROR: UNKNOWN EXCEPTION\n
 \nNo game entities will be available for creation.\n
+\nP4e#
 \nS?moveTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 \nVCS file format is invalid for %s\n
 \nVCS file version is %d instead of %d for %s\n
@@ -23449,8 +23445,8 @@ ZoomSensitivityMouseWheel
 \v?extension@QGraphicsPathItem@@MEBA?AVQVariant@@AEBV2@@Z
 \v?extension@QGraphicsRectItem@@MEBA?AVQVariant@@AEBV2@@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
-\vplj#
-\vrjw\r
+\vp4e#
+\vpLv#
 ^&h2:8$6X($&$0*
 ^0`l^VJU
 ^L7B
@@ -23552,9 +23548,8 @@ _z000.
 _zero
 `0bb``*Ff6h
 `2PZ
-`2jw\r
-`60A>
-`6p8?
+`60z>
+`6pO?
 `\f?defaultTypeFor@QTimer@@CA?AW4TimerType@Qt@@H@Z
 a7Bz
 a:fulltype
@@ -25210,7 +25205,7 @@ eyeOffset
 eyelid
 eyes
 f$&&$$f(***,&.b,~0F
-f0F>
+f3l?
 fSpeedScale
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f_movement_current_speed
@@ -25401,8 +25396,6 @@ force_world_collision_on_all_nodes
 forcemultitrack
 forever
 forwardParity
-fpE>
-fps>
 fr\nDh.j\lhh
 frac
 frame %s{r=0},%s{g=a},%s{b=0},%s{a=a} %s
@@ -25869,7 +25862,6 @@ jigglebone
 jitteriterations
 jitterscale
 jitterscale_vector
-jjw\r
 jklmnopqrstuvwxyzyxwvutsrqponmlkj
 jnt_anchor_%d
 johna_opened_files.txt
@@ -26658,6 +26650,8 @@ multilevelchannel
 must be either LogLUV or LogL
 mute
 n$Kx
+n0J?
+n0L?
 nApplyMode
 nAscending
 nColumn
@@ -26762,7 +26756,6 @@ normal_map
 normals
 normalsIndices
 note
-npB?
 npc_ability_name
 npcclass
 npcclip
@@ -26877,18 +26870,21 @@ overwrite_existing
 overwrite_existing_flags_only
 ownerlog
 owns_polymorphic_data
+p08@H^
 p0j0
 p2@q\t
-p2l{\r
-p60I?
+p4e#
+p60*?
 pAsset
 pBd@>B@HdF>H"LVNTPHT`RTTr
 pCheckpointName
 pDescription
+pLv#
 pMaterialGroupName
 pModelResourceName
 pTagName
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
+pXP#
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 paint_wear.psd
@@ -27026,7 +27022,6 @@ plantTypes
 plastic
 plasticity
 playerclip
-plj#
 plugTypes
 point
 point0_key
@@ -27181,9 +27176,10 @@ quaternion_array
 quiet
 r04(*
 rT:V*X&Z>X
+r\fp4e#
 r\n?dragLeaveEvent@QGraphicsItem@@MEAAXPEAVQGraphicsSceneDragDropEvent@@@Z
 r\tV_sinhf
-r\vplj#
+r\vpLv#
 rad2deg
 radius0_key
 radius1_key
@@ -27206,7 +27202,6 @@ range
 rasterizerStateDesc
 rawControlNames
 rbf_type
-rdw\r
 reading file '%s' of legacy format '%s' - dmxconvert this file to a newer format!\n
 readonly
 recomputeVertices

@@ -553,12 +553,13 @@ $timer
 .?AVIUndoElement@@
 .?AVIVrad3@@
 .vmat
+0>dp
 0\tV_frexpf
 0x%llx
 16-byte data pool
 1Pl\v1
 2RD\n2
-2\vpT/
+2\vpTN
 4-byte data pool
 4CReport RTX perf stats at N bounces. -1 means no report
 4F=3
@@ -1909,7 +1910,7 @@ path_trace_triangles_gpu_init
 path_trace_triangles_gpu_shutdown
 path_trajectory
 pattern
-pc64 Apr 22 2026 16:00:56
+pc64 May  7 2026 13:13:15
 physicsSimplificationError
 physicsSimplificationOverride
 pinEnabled

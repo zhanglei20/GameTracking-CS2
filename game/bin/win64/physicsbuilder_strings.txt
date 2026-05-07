@@ -6886,7 +6886,7 @@ $prefix_element$
 .tif
 .vmat
 .webp
-045c
+0DOc
 0\r%0t
 0\tV_frexpf
 0x%llx
@@ -6901,7 +6901,6 @@ $prefix_element$
 2DBlend
 2DBlendEditor
 2DBlendFromAnimation
-2\vp<ku
 2_BONE_IK
 4-byte data pool
 4\r54t
@@ -9891,8 +9890,8 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P45c
 PARENT
+PDOc
 PF\n%d %d\n-1.000000\n
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
@@ -10181,6 +10180,7 @@ R8_UNORM
 R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
 ROTATION
+R\vpDOc
 R_T5Y
 Radial Basis Function Type
 Radius Params CP ( Prop Group Smallest Radius / Prop Group Largest Radius / Number of Avg Objects )
@@ -10637,6 +10637,7 @@ Subtracts a frame of the specified animation from all frames of this animation i
 Subtracts a frame of the specified animation from all frames of this animation.
 Subtracts a linear blend of the first and last frames of the animation from itself.
 Supplemental Bone List
+SupportsMaterialLayerSampling
 Suppress Creation On Death
 Suppress Joint Weight Count Warnings
 Suppress Missing Warnings
@@ -11121,7 +11122,7 @@ ZIPVSetField
 [cloth] | [procedural]
 [procedural]
 \f?nkK=f
-\fp\v`45c
+\nPDOc
 \nclass 
 \ndummyfilename.tif
 \ng default\n
@@ -11133,6 +11134,7 @@ ZIPVSetField
 \tV_strnchr
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_StringAfterPrefixCaseSensitive
+\vpDOc
 ]>jkT>Q3
 _CustomCommand
 _CustomCommand%d
@@ -11189,6 +11191,8 @@ _volumeatlas_
 _wjb
 _zero
 `=IhC?zm6>
+`DOc
+`\rP\f0DOc
 a\tV_powd
 absolute
 acceleration
@@ -12786,8 +12790,8 @@ overwrite_existing
 overwrite_existing_flags_only
 ownerlog
 owns_polymorphic_data
-p45c
 p=f3G=
+pDOc
 panorama_image
 panorama_layout
 panorama_style
@@ -12970,6 +12974,7 @@ quad_bend_tolerance
 quadratic
 quaternion log
 quaternion_array
+r\fpDOc
 radius0_key
 radius1_key
 radiusScale

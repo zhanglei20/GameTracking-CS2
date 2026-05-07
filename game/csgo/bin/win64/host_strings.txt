@@ -105,6 +105,7 @@
 8B0y
 8\n0y
 ?expf
+@08N
 @20y
 @HPX`hvP.
 @ht0|
@@ -145,6 +146,7 @@ LightmapUVW
 OverlayProjectionDirection
 P08@J
 P08J
+P08N
 P20y
 P6PI
 P6pN
@@ -204,6 +206,7 @@ m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 medium
 optionallycompressedtangentframe
+p08@H^
 p20y
 pb0y
 posxyz

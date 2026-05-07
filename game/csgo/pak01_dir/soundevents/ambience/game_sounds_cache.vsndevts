@@ -774,7 +774,7 @@
 	Cache.Outside.Bees.Child = 
 	{
 		type = "csgo_mega"
-		mixgroup = "Amb_Commmon"
+		mixgroup = "Amb_Common"
 		use_time_volume_mapping_curve = true
 		volume = 0.2
 		set_child_position = false
@@ -1989,7 +1989,7 @@
 	Cache.GeigerRelay.TStart.Rad = 
 	{
 		type = "csgo_mega"
-		mixgroup = "Amb_Commmon"
+		mixgroup = "Amb_Common"
 		use_time_volume_mapping_curve = false
 		volume = 0.25
 		reverb_wet = 1.0
@@ -3267,7 +3267,7 @@
 	Cache.Phone = 
 	{
 		type = "csgo_mega"
-		mixgroup = "Amb_Commmon"
+		mixgroup = "Amb_Common"
 		use_time_volume_mapping_curve = false
 		volume = 1.0
 		reverb_wet = 1.0

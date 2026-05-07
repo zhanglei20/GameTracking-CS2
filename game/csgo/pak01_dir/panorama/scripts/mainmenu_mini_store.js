@@ -33,10 +33,19 @@ var MainMenuMiniStore;
         _MakeStoreItemTiles(aItemsList);
         _m_StorePanel.SetHasClass('hidden', false);
     }
+    let _m_numMiniStoreItemsToShow = 5;
     function _MakeStoreItemTiles(aItemsList) {
         let elParent = $.GetContextPanel().FindChildInLayoutFile('id-mini-store-carousel');
-        const numItemsToShow = 5;
-        for (let i = 0; i < numItemsToShow; i++) {
+        let numNewPinnedOffers = 0;
+        for (let i = 0; i < aItemsList.length; i++) {
+            let oItemData = aItemsList[i];
+            if (oItemData.isNewRelease)
+                ++numNewPinnedOffers;
+            else
+                break;
+        }
+        _m_numMiniStoreItemsToShow = Math.max(_m_numMiniStoreItemsToShow, numNewPinnedOffers);
+        for (let i = 0; i < _m_numMiniStoreItemsToShow; i++) {
             let oItemData = aItemsList[i];
             oItemData.isDisplayedInMainMenu = true;
             let elTile = elParent.FindChildInLayoutFile('id-mini-store-tile' + aItemsList[i].id);

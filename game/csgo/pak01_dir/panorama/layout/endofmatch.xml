@@ -51,7 +51,7 @@
 				</Panel>
 				<Panel id="EomCancelReason3" class="eom-cancelled vaclive">
 					<Label id="matchCancelledTitle" class="stratum-bold-italic" text="#SFUI_match_cancelled" />
-					<Label id="matchCancelledDesc" class="stratum-bold" text="#SFUI_match_abort_match_abnormal_behavior" />
+					<Label id="matchCancelledDesc" class="stratum-bold" text="#SFUI_match_abort_match_abnormal_behavior_pano" />
 				</Panel>
 			</Panel>
 		</snippet>

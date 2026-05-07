@@ -115,29 +115,39 @@ var MainMenuStore;
         }
     }
     MainMenuStore.NavigateToTab = NavigateToTab;
-    function UpdateItemsInHomeSection(catagory, parentId, numItemsToShow) {
+    function UpdateItemsInHomeSection(sSectionName, parentId, numItemsToShow) {
+        let oItemsByCategory = StoreItems.GetStoreItems();
+        let aItemsList = oItemsByCategory[sSectionName];
+        let extraSuffix = '';
+        if ((sSectionName === 'coupon') && (aItemsList.length > 0) &&
+            (aItemsList[0].isNewRelease)) {
+            if ('17293822569102711679' === aItemsList[0].id)
+                extraSuffix = '_nightmode2';
+        }
         let elPanel = _m_cp.FindChildInLayoutFile(parentId);
-        let elParent = _m_cp.FindChildInLayoutFile('id-store-home-section-' + catagory);
-        elParent.style.backgroundImage = 'url("file://{images}/backgrounds/store_home_' + catagory + '.psd")';
+        let elParent = _m_cp.FindChildInLayoutFile('id-store-home-section-' + sSectionName);
+        elParent.style.backgroundImage = 'url("file://{images}/backgrounds/store_home_' + sSectionName + extraSuffix + '.psd")';
         elParent.style.backgroundPosition = '50% 50%';
         elParent.style.backgroundSize = 'cover';
-        if (catagory === 'tournament') {
+        let elTitleLabel = elParent.FindChildInLayoutFile('id-store-home-section-' + sSectionName + '-title');
+        if (elTitleLabel && extraSuffix) {
+            elTitleLabel.text = $.Localize('#store_nav_section_' + sSectionName + extraSuffix, elTitleLabel);
+        }
+        if (sSectionName === 'tournament') {
             elParent.SetDialogVariable('tournament-name', $.Localize("#store_nav_tournament_" + g_ActiveTournamentInfo.eventid));
         }
-        let oItemsByCategory = StoreItems.GetStoreItems();
-        let aItemsList = oItemsByCategory[catagory];
         if (aItemsList.length < 1) {
             elParent.visible = false;
             return;
         }
         elParent.visible = true;
         for (let i = 0; i < numItemsToShow; i++) {
-            let elTile = elPanel.FindChildInLayoutFile('home-' + catagory + '-' + i);
+            let elTile = elPanel.FindChildInLayoutFile('home-' + sSectionName + '-' + i);
             if (!elTile) {
-                elTile = $.CreatePanel("Button", elPanel, 'home-' + catagory + '-' + i);
+                elTile = $.CreatePanel("Button", elPanel, 'home-' + sSectionName + '-' + i);
                 elTile.BLoadLayout('file://{resources}/layout/itemtile_store.xml', false, false);
             }
-            UpdateItem(elTile, catagory, i);
+            UpdateItem(elTile, sSectionName, i);
         }
     }
     function MakeTabsBtnsFromStoreData() {

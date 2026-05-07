@@ -277,7 +277,7 @@
 			name = "CCSGraphicsSettings_Minimal_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/cstrike15/panorama/3dpanels/csgo_graphicssettings_3dpanel.cpp"
-			source_line = 355
+			source_line = 357
 			resources = 
 			[
 				resource_name:"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl",
@@ -573,7 +573,7 @@
 			name = ""
 			group = "GameStartup"
 			source_file = "src/game/client/cstrike15/c_cs_map_annotations.cpp"
-			source_line = 69
+			source_line = 67
 			resources = 
 			[
 				resource_name:"materials/dev/annotation_worldtext_background.vmat",
@@ -583,7 +583,7 @@
 			name = "AnnotationsEffects_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/cstrike15/c_cs_map_annotations.cpp"
-			source_line = 55
+			source_line = 53
 			resources = 
 			[
 				resource_name:"particles/ui/annotation/ui_annotation_ground.vpcf",
@@ -1414,7 +1414,7 @@
 			name = ""
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/cs_shareddefs.cpp"
-			source_line = 1607
+			source_line = 1605
 			resources = 
 			[
 				resource_name:"agents/models/shared/arms/glove_cloth_collision/glove_cloth_collision.vmdl",

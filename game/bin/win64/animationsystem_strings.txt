@@ -2091,6 +2091,7 @@
 ?Move Heading
 ?expf
 ?m_flPosition
+@08N
 @HPX`hv`
 @fff>fff>fff>fff>
 @htp
@@ -2939,6 +2940,7 @@ Overlay Blend: %.2f%%
 OverlayProjectionDirection
 P08@J
 P08J
+P08N
 PARENT
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
@@ -3698,6 +3700,7 @@ o\tV_sind
 offBeforeFinished
 offWhenFinished
 optionallycompressedtangentframe
+p08@H^
 pCheckpointName
 pDescription
 pTagName

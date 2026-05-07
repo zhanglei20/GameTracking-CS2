@@ -166,9 +166,9 @@
  (%ld unused bits)\n
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
- (08@HPX`j
+ (08@HPX`j 
  (08@HPXb
- (08@HPZ
+ (08@HPZ 
  (08@HR
  (0X`hpz
  (Bad Remap %d)
@@ -20960,8 +20960,9 @@ $prefix_element$
 02V8[
 05=k
 08:55:26
-08@HR
+08@HR 
 08@J
+08B 
 08bX
 09,h
 0;Q5[
@@ -21019,7 +21020,6 @@ $prefix_element$
 2)252Y2]2c2k2o2u2w2{2
 2)Ab`
 2+~,@\r;Zj09
-201=
 20t\f
 241:1: FLOAT : ( ( MINUS )? ( DIGIT )+ '.' ( DIGIT )* ( EXP )? ( FLOATSUFFIX )? | ( MINUS )? ( DIGIT )+ ( EXP )? ( FLOATSUFFIX )? | ( MINUS )? '.' ( DIGIT )+ ( EXP )? ( FLOATSUFFIX )? );
 24U\n
@@ -21037,13 +21037,13 @@ $prefix_element$
 2DBlendEditor
 2DBlendFromAnimation
 2I y)
-2PH;
 2Tm=#
 2Uiwp"9
 2Zq)
 2\fWQx
 2\rE2h
 2\rlhp
+2\vpDl
 2^pV
 2_BONE_IK
 2a"l
@@ -21392,13 +21392,14 @@ $prefix_element$
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
+@08N
 @0pp
 @?CFootAdjustmentInstanceData
 @BH]f
 @CMapLocator
 @CMixControlAutomatic
 @CNmSkeleton::SecondarySkeleton_t
-@HPX`hv
+@HPX`hv0
 @Integer overflow in %s
 @MfKZ
 @Pgl
@@ -21414,6 +21415,7 @@ $prefix_element$
 @define
 @define 
 @fff>fff>fff>fff>
+@htP
 @i1V
 @import
 @keyframes
@@ -22553,6 +22555,7 @@ Base class for animation markup nodes which generate user animation data
 Base class for animations which are nodes that map to a compiled animation
 Base class for nodes which can be children of AnimMarkupTarget derived nodes
 Base class for nodes which can be children of FaceposerMarkupBase derived nodes
+Base morphs not supported anymore
 Base-10 logarithm
 Base-2 logarithm
 BaseAnimGraph2Reference
@@ -24739,7 +24742,6 @@ Cannot convert KV3 type '%s' (%u) to a string token
 Cannot convert from %s to %s
 Cannot create convex hull from %d verts
 Cannot create input layouts for mesh\n
-Cannot create texture atlas
 Cannot determine end effector bone from :: %s[%s]
 Cannot directly compile files of type "%s".\n
 Cannot find Cloth Node "%s"
@@ -31473,6 +31475,7 @@ P-384
 P-521
 P08@J
 P08J
+P08N
 P1\t98"
 P5[1
 PAGN_4
@@ -32514,6 +32517,8 @@ RT60 for low, mid, and high frequency bands for the probe.
 R\r1>Vp
 R\vp!6
 R\vp!y
+R\vpDl
+R\vpd
 R]Di
 R_T5Y
 Rad2 Deg
@@ -35815,7 +35820,7 @@ XWY]
 XYD%
 XYZ, Luv
 X\tQo
-X`hr
+X`hr 
 Xd3h
 XfJ7
 XjfR
@@ -35977,10 +35982,10 @@ Z~wl
 \fKS1
 \fW9c
 \fXu"L
+\f\nP2D
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\vPl
 \ful2
 \fy&3Gl
 \l:ArR
@@ -36107,7 +36112,7 @@ Z~wl
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
 \r@h!Aq8
 \rB6uZ
-\rBase morphs not supported anymore
+\rCannot create texture atlas
 \rKT8v
 \rLAM
 \rMinghuaQu\f
@@ -36431,6 +36436,7 @@ _}eOk
 `VX:H
 `fPw.\vM
 `h9T~
+`htP
 `o_je
 `yNT
 a null shared library handle was used
@@ -36982,7 +36988,6 @@ bLockWhenWaning
 bLoop
 bN.l
 bOrientAlongLine
-bPH;
 bPb:L7X)
 bPreEvaluatePassthroughTransitionPath
 bPrioritizeUp
@@ -40147,6 +40152,7 @@ g|FeW\v
 g|MT
 h&eC
 h*Ax
+h*\nPc
 h0XB
 h2Wl
 h2n_\
@@ -43207,7 +43213,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0j`1=
+p08@H^
 p2{l
 p4Z3
 p4lib
@@ -43392,7 +43398,7 @@ pbeWithSHA1And40BitRC2-CBC
 pbeWithSHA1And40BitRC4
 pbeWithSHA1AndDES-CBC
 pbeWithSHA1AndRC2-CBC
-pc64 Apr 28 2026 08:54:27
+pc64 May  7 2026 13:17:58
 pcPathLengthConstraint
 peak
 peak_attr
@@ -43870,6 +43876,7 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
+r\fpd
 r\tV_sinhf
 r\vDi
 rad2deg

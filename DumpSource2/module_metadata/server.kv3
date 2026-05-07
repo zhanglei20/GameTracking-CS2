@@ -667,7 +667,7 @@
 			name = ""
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/cs_shareddefs.cpp"
-			source_line = 1607
+			source_line = 1605
 			resources = 
 			[
 				resource_name:"agents/models/shared/arms/glove_cloth_collision/glove_cloth_collision.vmdl",

@@ -1253,7 +1253,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp0
 2\vpt,
 2aboutToShow()
 2accepted()

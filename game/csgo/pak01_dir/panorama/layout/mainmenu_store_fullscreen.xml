@@ -107,7 +107,7 @@
 						</Panel>
 						<Panel id="id-store-home-section-coupon" class="store-home-section">
 							<Panel class="store-home-popular__info">
-								<Label class="store-home-section__title stratum-regular-condensed fontSize-xxl" text="#store_nav_popular" />
+								<Label id="id-store-home-section-coupon-title" class="store-home-section__title stratum-regular-condensed fontSize-xxl" text="#store_nav_popular" html="true" />
 							</Panel>
 							<Panel id="id-store-popular-items" class="store-home-popular__items" />
 							<Button id="" class="store-home-popular__btn" onactivate="MainMenuStore.GotoStorePage(&apos;id-store-nav-coupon&apos;)">
