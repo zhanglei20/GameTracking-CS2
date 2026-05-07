@@ -1206,6 +1206,7 @@ $hRh
 ;`Fzc
 ;bwP*
 ;xsK
+;{}:fill-opacity
 <)<5<C<O<S<[<e<k<q<
 <0\f<pqA1
 <3AC|[sqb
@@ -1321,6 +1322,7 @@ $hRh
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
+@08N
 @0pp
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
@@ -3592,6 +3594,7 @@ P-256
 P-384
 P-521
 P08J
+P08N
 P1\t98"
 P5[1
 PAGN_4
@@ -5043,8 +5046,8 @@ Z~wl
 \n\t\t<xs:complexType name="%sType">\n\t\t\t<xs:complexContent>\n\t\t\t\t<xs:extension base="Internal_BaseType">\n\t\t\t\t\t<xs:annotation>\n\t\t\t\t\t\t<xs:documentation xml:lang="en">\n\t\t\t\t\t\t\t%s\n\t\t\t\t\t\t</xs:documentation>\n\t\t\t\t\t</xs:annotation>\n\t\t
 \n\t\t\t\t</xs:extension>\n\t\t\t</xs:complexContent>\n\t\t</xs:complexType>\n\t\t
 \n\t\t\t\t\t<xs:annotation><xs:documentation xml:lang="en">%s</xs:documentation></xs:annotation>\n\t\t\t\t
+\nbutt
 \nqYu
-\nround
 \ntM(ie-V
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
 \r@h!Aq8
@@ -5502,7 +5505,6 @@ buffer
 buildingName
 burlywood
 businessCategory
-butt
 c2\f?C\t
 c2i_ASN1_BIT_STRING
 c2i_ASN1_INTEGER
@@ -6632,7 +6634,6 @@ file://{resources}/window_keybinds.cfg
 filename too big
 fill
 fill 
-fill-opacity
 fill-parent-flow
 fill-parent-flow( %s )
 fill-rule
@@ -8144,6 +8145,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p08@H^
 p0j 
 p2{l
 p4Z3
@@ -8592,6 +8594,7 @@ rotate3d(
 rotatex
 rotatey
 rotatez
+round
 row-resize
 royalblue
 rsa not implemented

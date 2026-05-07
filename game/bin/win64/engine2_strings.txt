@@ -171,7 +171,6 @@
  -component "%s"
  -noscreenshot
  -product "%s"
- .P7G
  2r6
  3CQ`p
  7Me}
@@ -1077,9 +1076,8 @@ $tI(knN
 ...<truncated>...
 ../src/shaders
 ..\content
+.00G
 .00cfg
-.02G
-.04G
 .9GXdx
 .>\rfJBGo
 .?AU?$Container@VUnknownFieldSet@protobuf@google@@@InternalMetadata@internal@protobuf@google@@
@@ -2466,7 +2464,6 @@ $tI(knN
 .ERQLC*
 .ESource2PlayStatsFieldType
 .ESplitScreenMessageType
-.P2G
 .P6AXPEBD@Z
 .PEAVCEntityIdentity@@
 .PLACEHOLDER_VALUE
@@ -2570,9 +2567,9 @@ $tI(knN
 0 0 0
 0 0 0 0
 0 0 0 255
-0 QB
 0"$\n\rCSVCMsg_Print
 0$2z4
+0$aF
 0(D7
 00000000-0000-0000-0000-000000000000
 00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
@@ -2590,17 +2587,16 @@ $tI(knN
 0:<\n\fdelta_ignore
 0=Off, 1=Surface Wireframe, 2=Transparent Wireframe
 0=Off, 1=Visualize trace from camera, 2=Visualize occlusion, 3=Visualize far field trace from camera
-0>0$G
-0>\JG
 0B_u
 0C&C
+0DAB
 0E>X
 0T.Q
-0T_B
 0X8b?~
 0\n\vserializers
 0iN>/
-0pFB
+0pLB
+0vD]B
 0x%x,
 0|t?L
 0|t?uj
@@ -2654,7 +2650,8 @@ $tI(knN
 2\r%2t
 2\r.PrefetchType"h\n
 2\rU2t
-2\vp QB
+2\vp$aF
+2\vppLB
 2i0/
 3$EE\f
 3'F^7
@@ -2696,18 +2693,15 @@ $tI(knN
 5c;3E
 5y?4
 64-bit
-66JG
 6?k 6?t
-6@6G
 6GQ^h~
 6KT3c7
 6NK>
+6P\fG
 6\fXO>\ntA
 6\n\fmessage_type
 6\r56t
 6\tV_fwrite
-6p+G
-6p:G
 6s?fBbEcJYG[I[NYVP\B]@f;g<h<u4{,
 6tmT
 6uu?>
@@ -2730,7 +2724,7 @@ $tI(knN
 8A3b
 8B`J
 8Csinf
-8Fp#G
+8Qq]
 8Smt
 8W?i
 8\n\textension
@@ -3169,14 +3163,16 @@ $tI(knN
 ?ysB
 @ Current  :  %s\n
 @08@HPX`hpx
-@08N
-@6p2G
+@08ND]B
 @GetProfile_ultrafast
 @HPX
 @HPX&I
-@HPX`hv 
+@HPX`hvp\rG
+@HVP
 @^8U)zj
+@fD]B
 @i-kuX
+@nD]B
 A command with the specified name already exists. Cannot create an alias with the same name.\n
 A dB floor of when to stop transmitting packets, the volume between this and voice_threshold will still transmit packets to allow for volume ramping.
 A file with this name is already in the pool.
@@ -5152,6 +5148,7 @@ FALSE
 FATAL
 FCVAR_CHEAT cvars reverted to defaults (sv_cheats disabled).\n
 FEMh\f
+FP'G
 FPS: Avg=%.1f, P1=%.1f\n
 FSKey=
 FWj|
@@ -5598,6 +5595,7 @@ H.FM
 HD?0
 HGR9\f
 HH:mm:ss
+HIN_
 HKR~
 HLTV
 HLTV Broadcast
@@ -5653,6 +5651,7 @@ Hostname for server.
 How far back before our current playback head in seconds to hold onto fragments.
 How long to show the message about Killer Replay after death. The best setting is a bit shorter than spec_replay_autostart_delay + spec_replay_leadup_time + spec_replay_winddown_time
 How often to flash demo recording/playback overlay (0 - disable overlay, -1 - show always)
+HuN_
 HudUpdate
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
@@ -6534,18 +6533,19 @@ Override Fog color: %f %f %f\n
 Overrides the SourceTV master root address.
 Overrides the max players reported to prospective clients
 Overriding minidump handler with Engine2MinidumpFunction\n
+P,DB
 P08@JP
 P08J`
-P08N
+P08ND]B
 P2`J
 P4File
-P606G
-P60\fG
+P6 ,G
 P:S;A
 P?fff?33s?{
 P@HPX`hpx\f
 PBDEMS2
 PCRE does not support \L, \l, \N{name}, \U, or \u
+PDAB
 PHrk
 PInstruction_t<41>::Run
 PInstruction_t<42>::Run
@@ -6565,7 +6565,6 @@ PREP
 PRUNE
 PS_FAILED %s in sequence for %s\n
 PS_SATISFIED %s in sequence for %s [%.3f msec]\n
-PT_B
 PVAL_ANY
 PVAL_ARRAY
 PVAL_BOOL
@@ -6815,13 +6814,13 @@ Playing Broadcast (%s)
 Playing Demo (%s)
 Playing back demo: '%s' at tick %u\n
 PmNk
+PnD]B
 Pointers cannot be used as numeric values
 PollAndProcessInput
 Poor man's restart: reload the current map from disk.
 Port
 Post Source2 Client
 PostProcessingSystem_001
-PpFB
 Pq?A6
 Pre Pack Entities Callback
 Pre Source2 Client
@@ -7000,9 +6999,8 @@ RP_PAUSE
 RP_TOGGLEPAUSE
 RSDS
 RST%d
-R\fp QB
+R\fppLB
 R\tV_log2_uint
-R\vpT_B
 RaiseException
 Random Float
 Random Integer
@@ -8324,7 +8322,6 @@ VModEnable
 VOICEDATA_FORMAT_ENGINE
 VOICEDATA_FORMAT_OPUS
 VOICEDATA_FORMAT_STEAM
-VP+G
 VP4003
 VPK overrides: 
 VPhysics2_Interface_001
@@ -8402,6 +8399,7 @@ V_TryAndMakeFriendlyNameFromCppName
 V_UInt32ToString_Unsafe
 V_UInt64ToString_Unsafe
 V_UnqualifiedFileName
+V`0G
 Validate each StateChanged against known offsets.
 Validation stalled\n
 Value must be "true" or "false" for boolean option "
@@ -8620,7 +8618,6 @@ X\n'NETWORK_DISCONNECT_DIFFERENTCLASSTABLES
 X\n'NETWORK_DISCONNECT_KICKED_NOSTEAMTICKET
 X\n(NETWORK_DISCONNECT_INVALID_MESSAGE_ERROR
 X`hr`J
-Xf`$G
 Xn1G
 Xr?9
 XsBI
@@ -8724,8 +8721,8 @@ Zq",9\fB
 \fV4U
 \fX\fm\vH\vH\vm\v
 \f\tV_atofloat32
-\fp\vPpFB
-\fp\v`pFB
+\fp\v`DAB
+\fp\v`pLB
 \g is not followed by a braced, angle-bracketed, or quoted name/number or by a plain number
 \n    Actual    : 
 \n    Field type: 
@@ -8757,7 +8754,6 @@ Zq",9\fB
 \nEnd mem_test\n
 \nGame: "%s"\nMap: "%s"\nPlayers: %i (%i bots) / %i humans\nBuild: %u (revision %s)\nServer Number: %i\n\n
 \nIHDRPLTEIDATIENDtRNScHRMgAMAiCCPsBITsRGBtEXtzTXtiTXtbKGDhISTpHYssPLTtIMEoFFseXIf
-\nPT_B
 \nParsing attempt:  
 \nProcess Memory:\nWorking set: %.2f MiB\nPeak working set: %.2f MiB\n
 \nRegistered comments:\n
@@ -9063,7 +9059,7 @@ Zq",9\fB
 \t?\tZ\tZ\tZ\tZ\t?\tg\t\n\t
 \t?\tZ\tt\tt\tt\t
 \tN1a
-\tTp8J
+\tTp(J
 \tV_acosf
 \tV_asinf
 \tV_atan2f
@@ -9123,6 +9119,7 @@ Zq",9\fB
 \vH\vm\vm\vm\vm\vH\vH\vH\vH\vH\v
 \vIG]h
 \vInterp
+\vPDAB
 \vSimulationTicks
 \vSource
 \vVyC
@@ -9131,9 +9128,7 @@ Zq",9\fB
 \vm\vm\vm\vH\vm\vm\v
 \vm\vm\vm\vm\vH\v
 \vnJH
-\vp QB
-\vpT_B
-\vppFB
+\vppLB
 \vxYT
 ] is an invalid data character in JavaScript compatibility mode
 ]\n,NETWORK_DISCONNECT_REJECT_INVALIDRESERVATION
@@ -9199,7 +9194,7 @@ _temp_mapcycle.txt
 `-uRQg
 `2Pl%
 `3Q"X
-`6p4G
+`6P/G
 `?m'_?&~]?(
 `RTTI
 `adjustor{
@@ -9213,6 +9208,7 @@ _temp_mapcycle.txt
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
+`fD]B
 `generic-class-parameter-
 `generic-method-parameter-
 `generic-type-
@@ -9226,9 +9222,10 @@ _temp_mapcycle.txt
 `managed vector constructor iterator'
 `managed vector copy constructor iterator'
 `managed vector destructor iterator'
+`nD]B
 `non-type-template-parameter
 `omni callsig'
-`pFB
+`pLB
 `placement delete closure'
 `placement delete[] closure'
 `scalar deleting destructor'
@@ -9258,6 +9255,7 @@ a numbered reference must not be zero
 a&M-=Z]<i*k)n-t&q&p&|
 a6>r
 a?wSa?\
+aBvD]B
 a\v4+Wk
 abcdefghijklmnopqrstuvwxyz
 abortflag
@@ -9950,13 +9948,16 @@ extend .$0 {\n
 extendee
 extension_range
 extern "C" 
+f"EG
 f#kI3\t
+f.EG
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
 f9U\n
 f?3Jf?6
 fD""B
 fD>b
 fDD"AUDT$t
+fD]B
 fP~V
 fWi?
 fabs
@@ -10698,12 +10699,13 @@ multvar
 multvar: cvar "%s" not found\n
 multvar: no varname specified!\n
 mx=E
-n 9G
+n0!G
 n03>Pu
 n>sak><
 n?A6
 n?SZn?
 nBits != 32
+nD]B
 nGh>
 nI9>h
 nMax
@@ -10814,6 +10816,7 @@ not started
 not supported
 notes
 nothing to repeat
+np4G
 null
 nullptr
 num_bits
@@ -10924,23 +10927,25 @@ overwatch
 owM&
 owner dead
 oz>!km>
-p QB
-p08@H^
+p,DB
+p08@H^D]B
 p0p@
 p2`J
 p2p_listpeers
 p2p_ping "%s"
 p4edit
+p>D]B
 p?ff
 p@HPX`h\f
 pClass
 pClass->m_ClassID(%i) >= %i\n
 pClient
 pCm)
+pDAB
+pFP'G
 pH\fy
 pMessage
 pServerClass
-pT_B
 pYa(bu
 p\r0\fP
 p\tV_sinf
@@ -11011,6 +11016,7 @@ playing %s from '%s'\n
 playsound
 playsound 
 playsound <soundname>
+pnD]B
 png 
 png_screenshot
 pointer, 
@@ -11024,7 +11030,7 @@ pos [player %d]: %.3f,%.3f,%.3f\n
 position
 positive_int_value
 postnetupdate
-ppFB
+ppLB
 preDistortionRenderSizeFactor
 predicted_by_player_slot
 prediction_sync
@@ -11094,9 +11100,8 @@ r?dar?\n
 rA?7
 rEy5
 rFg7
-r\fpT_B
 r\tVr.>T
-r\vp QB
+r\vppLB
 r_add_views_in_pre_output
 r_always_render_all_windows
 r_aspectratio
@@ -11966,6 +11971,7 @@ utl_vector,
 utlstringtoken
 uzKs@>
 v2!L.2
+vD]B
 vE-2
 vQO+t
 vWewe

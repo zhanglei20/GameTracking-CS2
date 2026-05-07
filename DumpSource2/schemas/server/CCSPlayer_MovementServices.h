@@ -2,7 +2,6 @@ class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 {
 	CCSPlayerAnimationState m_AnimationState;
 	bool m_bUsingGroundTopologyOffset;
-	float32 m_flAltitudeAtLastUsingGroundTopologyOffsetTransition;
 	float32 m_flUsingGroundTopologyOffsetTransitionSmoothing;
 	Vector m_vecLadderNormal;
 	int32 m_nLadderSurfacePropIndex;

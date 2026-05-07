@@ -110,9 +110,9 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j
+ (08@HPX`j 5
  (08@HPXb
- (08@HPZ
+ (08@HPZ 5
  (08@HR
  (0X`hpz
  (DEFAULT)
@@ -311,7 +311,6 @@
 "d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo
 "e\n CCSUsrMsg_EntityOutlineHighlight
 "f\n\nCMsgTEDust
-"g3Hn
 "h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 "l7ql`R2lWf
 "lbN.
@@ -2201,6 +2200,7 @@ $taser_charge
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
+%n4Xt
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -2643,7 +2643,7 @@ $taser_charge
 (.CPlayer_SetPerFriendPreferences_Request
 (0'yX
 (0x%08X)'??'
-(4hq
+(48s
 (5Me
 (5jP
 (ACTIVE)
@@ -2940,6 +2940,7 @@ $taser_charge
 ).CPlayer_GetPerFriendPreferences_Response"M
 ).CPlayer_SetCommunityPreferences_Response"+
 ).CPlayer_SetPerFriendPreferences_Response"G
+)24Xs
 )4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )A service for accessing Steam player dataB
 )App Id this file is being published FROM.
@@ -3120,8 +3121,9 @@ $taser_charge
 ,\n\nsv_interp0
 ,\n\nsv_interp1
 ,\n\vvictim_slot
-,]p3hn
+,]p38p
 ,ar_monastery
+,d;4xs
 ,fQM(
 ,h11]
 ,hmQ#
@@ -3159,7 +3161,7 @@ $taser_charge
 --CLoopModeGame::~CLoopModeGame
 --file:
 -.CPlayer_GetNewSteamAnnouncementState_Request
--4xq
+-4Hs
 -5X5
 -;-C-I-M-a-e-q-
 -> Success (%d attempts)\n
@@ -5363,7 +5365,6 @@ $taser_charge
 .?AV?$CNetworkVarBase@MVNetworkVar_m_fadeMinDist@C_BaseModelEntity@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flActualHealthRemoved@CDamageRecord@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAlphaScale@C_EnvParticleGlow@@@@
-.?AV?$CNetworkVarBase@MVNetworkVar_m_flAltitudeAtLastUsingGroundTopologyOffsetTransition@CCSPlayer_MovementServices@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAnimTime@C_BaseEntity@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAnisotropy@C_EnvVolumetricFogController@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_flAspectRatio@C_PointCamera@@@@
@@ -5952,6 +5953,7 @@ $taser_charge
 .?AV?$CNetworkVarBase@W4MoveCollide_t@@VNetworkVar_m_MoveCollide@C_BaseEntity@@@@
 .?AV?$CNetworkVarBase@W4MoveType_t@@VNetworkVar_m_MoveType@C_BaseEntity@@@@
 .?AV?$CNetworkVarBase@W4PlayerConnectedState@@VNetworkVar_m_iConnected@CBasePlayerController@@@@
+.?AV?$CNetworkVarBase@W4PlayerConnectedState@@VNetworkVar_m_iMostConnected@CBasePlayerController@@@@
 .?AV?$CNetworkVarBase@W4PointWorldTextJustifyHorizontal_t@@VNetworkVar_m_nJustifyHorizontal@C_PointWorldText@@@@
 .?AV?$CNetworkVarBase@W4PointWorldTextJustifyVertical_t@@VNetworkVar_m_nJustifyVertical@C_PointWorldText@@@@
 .?AV?$CNetworkVarBase@W4PointWorldTextReorientMode_t@@VNetworkVar_m_nReorientMode@C_PointWorldText@@@@
@@ -10879,7 +10881,7 @@ $taser_charge
 .yAu[7
 /'/)/A/E/K/M/Q/W/o/u/}/
 /2x1
-/30m
+/30o
 /5dJ
 /?appid=%u
 /Published file id of the file we'd like update.
@@ -10933,8 +10935,9 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR
+08@HR 5
 08@J
+08B 5
 08bX
 09,h
 0;Q5[
@@ -11208,6 +11211,8 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
+2\vpT
+2\vpl\v
 2^pV
 2a"l
 2bT~
@@ -11300,6 +11305,7 @@ $taser_charge
 4tpD
 4zj@1;IJ
 4|2;#GameUI_Retake_Card_LightEmUp,1,1,rifle1,grenade0|2;#GameUI_Retake_Card_Kobe,1,1,rifle1,grenade2|1;#GameUI_Retake_Card_1g,1,1,rifle1,grenade3|1;#GameUI_Retake_Card_DisappearingAct,1,1,rifle1,grenade1|1;#GameUI_Retake_Card_EyesOnTarget,1,1,weapon_aug
+4~3hp
 5'0v2ZP
 5(EWorkshopFileType) Type of Workshop file to publish.
 5(Optional) The number of results, per page to return.
@@ -11349,6 +11355,7 @@ $taser_charge
 6144
 62$|S)6f
 64CK\vH
+64hs
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 6666666666666666C:\buildworker\csgo_rel_win64\build\src\common\opensslwrapper.cpp
 67-s
@@ -11422,11 +11429,14 @@ $taser_charge
 8192
 8285-YOAZ-6049
 82\n:XPH
+83Po
 851Pe
 8835-KLXV-0292
 8<pl
 8= zp
+8@J 5
 8A6j
+8B 5
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11530,7 +11540,6 @@ $taser_charge
 ;\n\vrank_update
 ;`Fzc
 ;bwP*
-;env_gradient_fog
 ;sv_pausable;sv_cheats
 ;xsK
 <!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n
@@ -11713,11 +11722,12 @@ $taser_charge
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
+@08N
 @0pp
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
-@HPX`hv
+@HPX`hv0
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11734,6 +11744,7 @@ $taser_charge
 @dKb]
 @fff>fff>fff>fff>
 @ffffff
+@htp
 @i1V
 @icon_camera
 @icon_character
@@ -11758,7 +11769,6 @@ A9ur
 A<fP
 A>x8
 AA Compromise
-AA:p
 AAAA-
 AAAA-%.*s
 AABBDirection
@@ -12488,7 +12498,6 @@ BAscendantHasClass
 BAsyncSend
 BAsyncSendProto
 BC (default)
-BC_RetakeGameRules
 BCanSeeInParentScroll
 BCanvasReady
 BEOS_BIND_FUNC
@@ -12853,6 +12862,7 @@ Broken pipe
 BrowserGoToURL
 BrowserGoToURL( %s )
 Bs'n
+Bsv_csgo_gpu_culling_skybox
 Bu 5
 BuddyButton/ArmedBgColor
 BuddyButton/ArmedFgColor1
@@ -13005,7 +13015,7 @@ C:\buildworker\csgo_rel_win64\build\src\game\client\cstrike15\fx_cs_blood.cpp
 C:\buildworker\csgo_rel_win64\build\src\game\client\cstrike15\fx_cs_impacts.cpp
 C:\buildworker\csgo_rel_win64\build\src\game\client\cstrike15\fx_cs_knifeslash.cpp
 C:\buildworker\csgo_rel_win64\build\src\game\client\cstrike15\grenade_tracer.cpp
-C:\buildworker\csgo_rel_win64\build\src\game\client\cstrike15\grenade_tracer.cpp:405
+C:\buildworker\csgo_rel_win64\build\src\game\client\cstrike15\grenade_tracer.cpp:396
 C:\buildworker\csgo_rel_win64\build\src\game\client\cstrike15\hudmodel.cpp
 C:\buildworker\csgo_rel_win64\build\src\game\client\cstrike15\panorama\3dpanels\cs_iconscene.cpp
 C:\buildworker\csgo_rel_win64\build\src\game\client\cstrike15\panorama\3dpanels\csgo_3dpanel.cpp
@@ -17151,7 +17161,6 @@ Downsample and BloomThreshold
 DownsampleDepth
 DownsampleDepthForWaterEffects
 Downtown
-Dpath_node
 Dq;n
 DrBoom
 Draft is fully completed!\n
@@ -17839,7 +17848,7 @@ Error (problem that prevents task success)
 Error Message
 Error Parsing PaintData in %s! \n
 Error adding %s\n
-Error decoding bitstream for dropped fields in protobuf delta. And not using compatibility encoding style
+Error decoding bitstream for dropped fields in protobuf delta\n
 Error getting UGC annotation details\n
 Error in encoding\n
 Error loading %s : %s
@@ -20826,6 +20835,7 @@ LT[N
 LT_txt
 LXKQ
 LY\r5
+L\fP6
 L\n\fincludevotes
 L\n\nserverinfo
 L\n\tfile_type
@@ -22235,8 +22245,10 @@ P-256
 P-384
 P-521
 P08@J
-P08J
+P08J@7
+P08N
 P1\t98"
+P2 5
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
 P5[1
@@ -22776,6 +22788,7 @@ Pitch: %6.1f   Yaw: %6.1f   Dist: %6.1f %19s
 Pitch: %6.1f   Yaw: %6.1f %38s
 Pitstop
 PivotPaint
+Pj 5
 PlaceDecalEvent_t
 PlaceholderText
 PlantedBomb
@@ -23145,7 +23158,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
-Q$4Xq
+Q$4(s
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23381,10 +23394,11 @@ RT %dx%d %s %s : %d Bytes\n
 RT_txt
 RTime32
 RULESHERE
+R\fpl\v
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpL
+R\vpT
 R]Di
 Rad2 Deg
 Radar
@@ -24927,6 +24941,7 @@ Show the team select menu with mock data passed in.
 Show vote context menu in pause menu
 Show/hide equipment for the current team
 ShowAcceptPopup
+ShowAcknowledgePopup
 ShowActiveTournamentPage
 ShowAndHide
 ShowArrow
@@ -24992,7 +25007,6 @@ ShowHudRadio
 ShowHudRosettaSelector
 ShowLoadoutForItem
 ShowReadyUpPanel
-ShowSelectItemForCapabilityPopup
 ShowSelectItemForWorkshopPreviewCapability
 ShowSimpleContextMenu
 ShowSimpleContextMenuWithDismissEvent
@@ -27142,7 +27156,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr
+X`hr 5
 Xd3h
 XfJ7
 XjfR
@@ -27347,6 +27361,7 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
+\fp\vPL
 \ful2
 \fy&3Gl
 \l:ArR
@@ -28400,7 +28415,7 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`43pm
+`43@o
 `:zQF
 `D$daM-l
 `DZG
@@ -29196,7 +29211,6 @@ b <= sizeof ctx->buf
 b <= sizeof ctx->final
 b0M%
 b2i_PVK_bio
-b38n
 b5o-
 b=G3
 bB"`3
@@ -30852,7 +30866,6 @@ d2i_SSL_SESSION
 d2i_TS_RESP
 d2i_X509_PKEY
 d35P
-d48r
 d4\tp
 d7NSuLq2
 d=%-2d hl=%ld l=%4ld 
@@ -31810,6 +31823,7 @@ env_detail_controller
 env_entity_dissolver
 env_fog_controller
 env_global_light
+env_gradient_fog
 env_gunfire
 env_light_probe_volume
 env_particle_glow
@@ -31920,6 +31934,7 @@ eventdata
 eventname
 events/%u/%s
 events/%u/team
+ever_fully_connected
 evp pbe cipherinit error
 evp_pkey
 evparam
@@ -33402,8 +33417,8 @@ i2d_SSL_SESSION
 i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
+i4Ht
 i4a."
-i4xr
 i5BH
 iA5StringSyntax
 iAmmoType
@@ -33893,6 +33908,7 @@ info_particle_system
 info_particle_target
 info_player_ping
 info_target
+info_target_choreo
 info_trigger_fan
 info_visibility_box
 info_world_layer
@@ -34383,7 +34399,7 @@ k+Aq
 k/sn
 k0>Z,
 k26C*
-k3Xn
+k3(p
 k8\vD
 k8fo
 k8xA
@@ -34799,7 +34815,7 @@ lC57
 lDcW
 lM2p
 l\n\fexcludedtags
-l`w4
+l`w4xt
 label_token
 ladder
 ladder_angle_yaw
@@ -36302,7 +36318,6 @@ n5cM
 n6j/
 n:2C[
 n@PK
-nBcl_map_preview_debug_jitter
 nCRD
 nChangeOffset < INT16_MAX
 nChangeOffset > 0
@@ -36425,7 +36440,6 @@ nextupdate before thisupdate
 nhsR
 nicename
 nickname
-ninfo_target_choreo
 niv <= EVP_MAX_IV_LENGTH
 nkey <= EVP_MAX_KEY_LENGTH
 nl_NL
@@ -36990,6 +37004,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p08@H^
+p2 5
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37008,8 +37024,6 @@ p5\nL,
 p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
-pASHARD_SOLID
-pBdemo_playback_override_settings
 pCheckpointName
 pD4t
 pData->GetDataDescMap() == pTemplateDataMap
@@ -37028,7 +37042,7 @@ pRTH
 pRequest
 pSPo
 pSequenceName
-pShowAcknowledgePopup
+pShowSelectItemForCapabilityPopup
 pSource
 pSourceFunc
 pSpawnedEntityName
@@ -37326,6 +37340,7 @@ pathNodePinsEnabled
 pathNodeRadiusScales
 pathNodes
 path_index
+path_node
 path_parameter_string
 path_particle_rope
 path_particle_rope_clientside
@@ -37352,6 +37367,7 @@ payload-%u-%u.data
 payment gateway capabilities
 payment_row_usd
 payment_us_usd
+pb 5
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -38036,6 +38052,7 @@ r$0I
 r-IE
 r184
 r3A~
+r4ht
 r<\rND
 rAGW
 rB2pBB
@@ -38050,10 +38067,10 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
-r\fpL
 r\n\vstart_index
 r\vDi
 r\vp!K
+r\vpl\v
 r_2PassBuildDraw 0
 r_2PassBuildDraw 1
 r_csm_fast_path 0
@@ -39959,7 +39976,7 @@ t(ydU
 t+RW
 t0;?ZlP*m
 t2U 
-t3xn
+t3Hp
 t4O_
 t80z
 tA`KO/3G!\n7h=
@@ -41837,6 +41854,7 @@ y#y&Jb
 y-offset
 y0JY
 y2Cu
+y3Xp
 y;w9
 y>?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
 y?iLa

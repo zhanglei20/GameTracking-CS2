@@ -2758,6 +2758,9 @@ debug_video_config_cvars false (developmentonly clientdll)
 debug_visibility_monitor 0 (gamedll cheat)
 	<no description>
 
+debugoverlay_enable_dotted_dashed true (cheat)
+	Toggle the use of dotted/dashed debugoverlay lines to indicate source
+
 debugoverlay_force_respect_ttl false (cheat)
 	Force respect TTL even when clearing scopes
 
@@ -4713,7 +4716,7 @@ mp_dm_dogtag_score 0 (min: 0, gamedll clientdll replicated release commandline_e
 mp_dm_healthshot_killcount 3 (gamedll clientdll replicated release)
 	Grant healthshots in deathmatch after n kills
 
-mp_dm_kill_base_score 10 (min: 0, gamedll clientdll replicated release commandline_enforced)
+mp_dm_kill_base_score 8 (min: 0, gamedll clientdll replicated release commandline_enforced)
 	Number of base points to award for a kill in deathmatch.  Cheaper weapons award 1 or 2 additional points.
 
 mp_dm_taser_bonus_streak_max 2 (min: 0, gamedll clientdll replicated release)
@@ -11334,7 +11337,7 @@ videocfg_texture_detail 1 (developmentonly clientdll defensive)
 view_punch_decay 18 (gamedll clientdll replicated cheat release)
 	Decay factor exponent for view punch
 
-viewmodel_fov 60 (min: 54, max: 68, clientdll archive userinfo per_user)
+viewmodel_fov 60 (min: 60, max: 68, clientdll archive userinfo per_user)
 	Viewmodel FOV
 
 viewmodel_offset_x 1 (min: -2, max: 2.5, clientdll archive userinfo per_user)

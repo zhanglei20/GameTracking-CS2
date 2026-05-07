@@ -8752,6 +8752,7 @@ $modelname$_surface
 .webp
 08@HR
 08@J
+0:0j\r
 0\r%0t
 0\tV_frexpf
 1.0 - FractionalPart( A ) 
@@ -8759,15 +8760,12 @@ $modelname$_surface
 1D Twist
 1DBlendEditor
 1\r51h
-24p{
 2D Aim
 2D Blend Has No Referenced Animations
 2D Cross
 2DBlend
 2DBlendEditor
 2DBlendFromAnimation
-2PP\n
-2Pi\r
 2_BONE_IK
 4\r54t
 5;FJ$,XEK4<
@@ -8796,7 +8794,7 @@ $modelname$_surface
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
-@08N0
+@08N 
 @HPX`hv
 @Integer overflow in %s
 @Invalid Internal Point
@@ -9154,7 +9152,6 @@ Avoids normal seams on UV boundaries. Turning it off is faster and saves some GP
 B (Optional)
 B channel
 B channel not found!\n
-B0O\n
 B5G5R5A1_UNORM
 B5G6R5_UNORM
 B8G8R8A8_UNORM
@@ -10137,6 +10134,7 @@ Create Right
 CreateIndexBufferFromIndexArray(61): 
 Creates an animation from the model's bind pose
 Crouch Weight
+CubemapFogTexture
 Cull Unskinned Verts
 Current Sync Event
 Current Sync Event ID
@@ -10549,6 +10547,7 @@ Entry Overrides
 Entry State
 Entry State Conditions
 EnumArray
+EnvironmentMap
 Epsilon
 Equal to
 Error (not warn)
@@ -11886,8 +11885,8 @@ Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P08@J
-P08J@
-P08N0
+P08J0
+P08N 
 PARENT
 PF\n%d %d\n-1.000000\n
 POSE_SPACE_BONE
@@ -12186,7 +12185,7 @@ R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
 ROTATION
 R\vp!y
-R\vpX
+R\vpH
 R_T5Y
 Radial Basis Function Type
 Radius Params CP ( Prop Group Smallest Radius / Prop Group Largest Radius / Number of Avg Objects )
@@ -13204,7 +13203,7 @@ Zero input vector for info node!
 [cloth] | [procedural]
 [procedural]
 \fB33
-\fp\vPd
+\fp\vPT
 \n[ERR] Not enough memory, shop for some more RAM. See you!\n
 \ndummyfilename.tif
 \ng default\n
@@ -13271,7 +13270,7 @@ _temp_tangent
 _volumeatlas_
 _wjb
 _zero
-aBv0
+aBv 
 a\tV_powd
 absolute
 acceleration
@@ -14453,8 +14452,8 @@ overrideclass
 overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
-p08@H^0
-p0j@
+p08@H^ 
+p0j0
 pEvent != nullptr
 pParentTrack != nullptr
 pPose != nullptr
@@ -14594,7 +14593,7 @@ pushout_strength
 quad_bend_tolerance
 quadratic
 r>0f
-r\fpX
+r\fpH
 radius0_key
 radius1_key
 radius_key

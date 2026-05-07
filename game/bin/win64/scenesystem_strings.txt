@@ -22,14 +22,15 @@
   w/ large threshold: %d,
   w/ zero threshold: %d,
   w/ zero threshold: (%.1f, %.1f)
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$0
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  %i fog-only.
  %s | Flags %lld \n
- (08@HPX`j0
- (08@HPXb 
- (08@HPZ0
+ (08@HPX`j
+ (08@HPXb0
+ (08@HPZ
+ (08@HR0
  (08@J0
- (0X`hpz 
+ (0X`hpz0
  (EXTERN)
  (Frozen)
  (MAYBE DISABLED?!)
@@ -454,68 +455,72 @@ $tIP
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) %s
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) Col %d %s
 (%d,%d,%d,%d)
-(1Rb
+(15b
 (2) Or right-click this text
 (3) Or click this button
-(5mb
-(5yb
 (<-- right-click here)
+(ACb
+(AFb
+(AHb
 (ActiveIdUsing: AllKeyboardKeys: %d, NavDirMask: 0x%X)
 (Click and drag to scroll)
 (Context Name: "%s")
 (Debug Log: Auto-disabled some ImGuiDebugLogFlags after 2 frames)\n
 (Dock node)
-(ESb
+(EAb
+(Enb
 (Hex)
 (Hold Ctrl to: 
 (Hold Ctrl to: use 
 (Hold Shift to display a dummy viewport)
-(I4b
+(IOb
+(IZb
 (Internal Buffer: TextA Size: %d, Capacity: %d)
 (Left) Using ImGui::PushClipRect():\nWill alter ImGui hit-testing logic + ImDrawList rendering.\n(use this if you want your clipping rectangle to affect interactions)\n\n(Center) Using ImDrawList::PushClipRect():\nWill alter ImDrawList rendering only.\n(use this as a shortcut if you are only using ImDrawList calls)\n\n(Right) Using ImDrawList::AddText() with a fine ClipRect:\nWill alter only this specific ImDrawList::AddText() rendering.\nThis is often used internally to avoid altering the clipping rectangle and minimize draw calls.
-(M7b
 (Main menu bar)
-(Mzb
+(Mbb
+(Mpb
 (Popup)
-(Q8b
-(QCb
+(Qcb
 (R = radius, N = approx number of segments)
 (SceneWorld 3D Dump contains %d large objects - they are scaled down and will render red.)\n
-(UVb
-(Ubb
+(UIb
+(UYb
 (Untitled)
 (Use ImGui::SameLine() to keep adding items to the right of the preceding item)
-(YUb
-(Yob
 (Z(^(b(f(j(n(r(v(z1
 (\?=\nW>=\nW>=\nW>
-(aWb
+(a9b
 (also access from 'Examples->Assets Browser' in menu)
 (and more errors)
+(axb
 (c) 2014-2025 Omar Cornut
 (demo menu)
 (dump)
 (dump3d)
+(eTb
+(emb
 (except InputRouting which is spammy)
-(i1b
-(i9b
-(iEb
+(iGb
 (in ChildD: not using same Shortcut)
 (in ChildE: using same Shortcut)
 (in PopupF)
 (in WindowA)
+(irb
+(m1b
+(m7b
+(mBb
 (no material)
 (no model)
 (note: some platform backends may not reflect a change of this value for existing viewports, and may need the viewport to be recreated)
-(qMb
-(qnb
-(qqb
+(qLb
+(qzb
 (see Demo->Configuration for details & more)
-(uLb
+(u5b
 (unnamed)
-(uxb
+(uob
+(uvb
 (void*)0x%p
-(yfb
 ** %d instances of same table! Some data below will refer to last instance.
 **DebugBreak**
 *COPIED*
@@ -860,9 +865,8 @@ $tIP
 001.003
 04e/
 050s0
-08@HR0
-08@J 
-08B0
+08@HR
+08@J0
 0?333?333?333?333?
 0x%02X
 0x%04X
@@ -889,7 +893,8 @@ $tIP
 2. I am selectable
 24 Hour Clock
 2C2L
-2\vph
+2\vpD
+2\vpl
 2d arr
 2q2z2
 3 (tab skip)
@@ -928,10 +933,7 @@ $tIP
 80x80
 8859
 8888
-8@J0
 8C3F
-8Y[b
-8Ygb
 8\f58
 8\foQS
 8n8y
@@ -1040,10 +1042,10 @@ $tIP
 ?0x%p
 ?333?333?fff?
 ?Bxt>
+?ESceneObjectVisualization
 ?JA7=
 ?Label1
 ?PUNCTUAL
-?SCENEOBJECT_VIS_MATERIAL
 ?The "Tools" menu above gives access to: Style Editors (ImPlot/ImGui)\nand Metrics (general purpose Dear ImGui debugging tool).
 ?VertexPos_t
 ?XXXXXXXXXXXXXXXX
@@ -1055,7 +1057,7 @@ $tIP
 ?fff?fff?fff?
 ?ffffff
 ?sqrt
-@08N\
+@08N
 @33333
 @33333#
 @33333'
@@ -1094,8 +1096,7 @@ $tIP
 @33333{
 @33333}
 @33SA
-@HPX`hv`
-@HVp
+@HPX`hv
 @OS/2
 @fff>fff>fff>fff>
 @fffff
@@ -1139,7 +1140,6 @@ $tIP
 @fffffx
 @fffffz
 @fffff|
-@hnY
 @sc_setclassflags %s %d
 A Rather Long Title
 A#4A\v
@@ -2873,6 +2873,7 @@ Here we replace and select text each time Up/Down are pressed. See 'Examples>Con
 Here we toggle the casing of the first character on every edit + count edits.
 Here, all circle data is stored in a single interleaved buffer:
 Hex-encode non-ASCII
+Hi`d
 Hidden
 HiddenTabBar
 Hide
@@ -3403,7 +3404,7 @@ Kiwi
 Ksmall
 L'LZa
 L0L:LA
-L=8?W
+L=X?W
 L>33
 L?33
 L?ff
@@ -4062,9 +4063,9 @@ Override ChildBg color
 Override Streaming GPU Memory
 P+\fGj
 P.P5
-P08@J 
-P08Jp
-P08N\
+P08@J0
+P08J
+P08N
 P3\rA
 P8\nD
 PAPU
@@ -4108,7 +4109,6 @@ Password Input
 Paste
 Pastel
 PathTracingShaderBindingTable
-PatternType
 Pauciloquent
 Pause Streaming Activity Graph
 Pear
@@ -4355,6 +4355,8 @@ RFRQR\Rf
 RGBA32
 RTProxy Layout
 RTProxyBLAS
+R\fpD
+R\vpl
 Rand Paul
 Range: [%f,%f]
 RangeSrcItem = %I64d (0x%I64X), RangeSelected = %d
@@ -5717,7 +5719,7 @@ XInputGetState
 XK+G
 XUID
 X_HEIGHT
-X`hr0
+X`hr
 Xo1 WB
 Xsmall
 Y 3A
@@ -5870,6 +5872,7 @@ Zsmall
 \fG7+B
 \fPy\vE
 \fT>M-+?#gy?
+\fp\vPH
 \n Render %d specific objects
 \n Render world : %s\n
 \n"\n)\n7\nA\nH\nS\nc\np\n|\n
@@ -5945,10 +5948,9 @@ _WidthFixed
 _WidthStretch
 _XFREE86_GLYPH_RANGES
 _atlas
-`5bd
+`Yad
 a'aCaYb"b8b
 a-a8
-aBv\
 aJ!\vA
 aJaP
 a\ft/tOtet
@@ -6401,7 +6403,7 @@ hitgroup_shader_%p
 hl?S
 horizontal
 horizontal split
-hpz 
+hpz0
 https://github.com/epezent/implot
 https://github.com/ocornut/imgui
 https://github.com/ocornut/imgui/blob/master/docs/BACKENDS.md
@@ -6807,8 +6809,7 @@ outer_size
 overlaps
 p q g j y
 p#p7pP
-p08@H^\
-p0jpq
+p08@H^
 pCRF
 paragraph
 parallel
@@ -6871,6 +6872,7 @@ quotesinglbase
 quotesingle
 r*r4r;
 rQr\
+r\vpD
 radical
 radio a
 radio b
@@ -7207,6 +7209,7 @@ x=300
 x>xoxyx~
 xF%\nD
 xIxRx[xe
+xb\f3
 xinput1_1.dll
 xinput1_2.dll
 xinput1_3.dll

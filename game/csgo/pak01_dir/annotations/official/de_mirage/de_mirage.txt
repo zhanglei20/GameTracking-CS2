@@ -311,7 +311,7 @@
 		Position = [ 1033.351318, -1041.551025, -146.397324 ]
 		Angles = [ -28.485451, -143.624756, 0.0 ]
 		VisiblePfx = true
-		TextPositionOffset = [ 0.0, 0.0, 30.0 ]
+		TextPositionOffset = [ 0.0, 30.0, 30.0 ]
 		TextFacePlayer = false
 		TextHorizontalAlign = "center"
 		RevealOnSuccess = false
@@ -409,7 +409,7 @@
 		Position = [ -796.94397, -2212.424316, -87.922867 ]
 		Angles = [ -12.249459, 31.865582, 0.0 ]
 		VisiblePfx = true
-		TextPositionOffset = [ 0.0, 0.0, 30.0 ]
+		TextPositionOffset = [ 0.0, -30.0, 30.0 ]
 		TextFacePlayer = false
 		TextHorizontalAlign = "center"
 		RevealOnSuccess = false
@@ -507,7 +507,7 @@
 		Position = [ -2350.816895, -54.142616, -54.836113 ]
 		Angles = [ -26.267803, 43.402462, 0.0 ]
 		VisiblePfx = true
-		TextPositionOffset = [ 0.0, 0.0, 30.0 ]
+		TextPositionOffset = [ 0.0, -10.0, 30.0 ]
 		TextFacePlayer = false
 		TextHorizontalAlign = "center"
 		RevealOnSuccess = false

@@ -6195,8 +6195,8 @@ opqMU
 optionallycompressedtangentframe
 orientation
 originalColor
-p>Ud.
-p>td.
+p>Ed.
+p>dd.
 pAction
 pCheckpointName
 pCurrentFocusWidget

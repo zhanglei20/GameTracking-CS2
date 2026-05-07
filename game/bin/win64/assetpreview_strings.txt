@@ -8206,6 +8206,8 @@ $prefix_element$
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vp0
+2\vpd
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -14040,9 +14042,10 @@ RMouse
 RMouseDoubleClick
 ROTATION
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fpd
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vpX
+R\vp0
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
@@ -15564,6 +15567,7 @@ ZoomForwardBack3D
 \n?edit@QAbstractItemView@@MEAA_NAEBVQModelIndex@@W4EditTrigger@1@PEAVQEvent@@@Z
 \n?editingFinished@QLineEdit@@QEAAXXZ
 \n?editorDestroyed@QAbstractItemView@@MEAAXPEAVQObject@@@Z
+\nDRm
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \n\tV_atanf
 \n\t\tCREATE TABLE IF NOT EXISTS Thumbnails (\n\t\t\tAssetPath TEXT PRIMARY KEY,\n\t\t\tFingerprint INTEGER,\n\t\t\tPNGData BLOB\n\t\t);\n\t
@@ -17785,8 +17789,8 @@ quad_bend_tolerance
 quadratic
 quaternion_array
 quiet
-r\fpX
 r\tV_sinhf
+r\vpd
 r_renderdoc_capture_thumbnail_rendering
 rad2deg
 radius0_key

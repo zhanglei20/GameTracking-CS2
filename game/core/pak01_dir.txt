@@ -1280,7 +1280,7 @@ resource/bugreporter.res CRC:0017e96be8 size:79
 resource/clientscheme.res CRC:0091c13cb0 size:15227
 resource/colorpicker.res CRC:003d009bed size:7865
 resource/colorpickerframe.res CRC:0016c7a3fa size:1455
-resource/core.gameevents CRC:00b3cc751b size:17232
+resource/core.gameevents CRC:00cff06046 size:17305
 resource/countries_brazilian.txt CRC:00cc0ae68b size:10065
 resource/countries_bulgarian.txt CRC:000ac66730 size:12363
 resource/countries_czech.txt CRC:00df360693 size:10146

@@ -439,6 +439,7 @@ VS
 	BoolAttribute(VertexpaintUIPuddles, (F_WETNESS==1) || 0);
 	BoolAttribute(VertexPaintUIAlphaBlendFactor, true);
 	BoolAttribute(SupportsAggregateInstancing, true);
+	BoolAttribute(SupportsMaterialLayerSampling, true);
 	
 	#if (S_ENABLE_LAYER_3 == 1)
 		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
@@ -5635,6 +5636,7 @@ RTX
 	BoolAttribute(VertexpaintUIPuddles, (F_WETNESS==1) || 0);
 	BoolAttribute(VertexPaintUIAlphaBlendFactor, true);
 	BoolAttribute(SupportsAggregateInstancing, true);
+	BoolAttribute(SupportsMaterialLayerSampling, true);
 	BoolAttribute(NeedsLightProbe, true);
 	BoolAttribute(DoNotCastShadows, F_DO_NOT_CAST_SHADOWS || 0);
 	BoolAttribute(SupportsMappingDimensions, true);

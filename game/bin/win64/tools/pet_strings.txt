@@ -2462,7 +2462,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 /\r?hideEvent@QScrollBar@@MEAAXPEAVQHideEvent@@@Z
 /]?size@QImage@@QEBA?AVQSize@@XZ
 /y?YL
-0>YdZ
 0?TVS>
 0x%1
 0x%p = %s '%s'
@@ -2851,7 +2850,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\nP!E
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp4oY
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -2924,7 +2922,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 5\f?focusOutEvent@QMenuBar@@MEAAXPEAVQFocusEvent@@@Z
 5\r55t
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
-63dZ
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
@@ -4889,7 +4886,6 @@ Browse All Types
 BuildParticleSimList
 BuildWatch
 BuildWindowMenu
-Bx#q
 C:\buildworker\csgo_rel_win64\build\_build_\tools\pet\_vpc_pet\default\win64\_msvc_\Retail\pet.pdb
 C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\csgo_rel_win64\build\src\game\shared\dota\dota_constants.h
@@ -6518,7 +6514,6 @@ Kill All Other Cursors
 Kill Cursors With Tag
 Kill This Cursor And Cancel
 L>Cq
-L?x\rq
 LMouse
 LMouseDoubleClick
 LOD Value %g - %g
@@ -7564,7 +7559,6 @@ Properties
 Property '%s.%s' not writable
 Property Name
 Property Owner
-PtmY
 Public Output
 PublicOutputDefinition
 PublishChange
@@ -7678,6 +7672,7 @@ RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+R\vp4
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
@@ -8863,7 +8858,6 @@ ZoomForwardBack3D
 \n?editorEvent@QItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \n?editorEvent@QStyledItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \nComplete!  ----------\n
-\nPNY
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \n\tV_atanf
 \r?a7L>mt
@@ -9014,9 +9008,9 @@ _wjb
 `?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?value@QColor@@QEBAHXZ
 `?valueF@QColor@@QEBANXZ
-`MYv
+`MIv
 `Q?lightnessF@QColor@@QEBANXZ
-`QZv
+`QJv
 `W?rgba@QColor@@QEBAIXZ
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
@@ -10111,7 +10105,6 @@ proped_attr_logging
 property_editor_settings
 propertyeditor
 pseudo-
-ptmY
 public.vsnd_files
 pulse_bindings
 pulse_editor
@@ -10129,6 +10122,7 @@ q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quX?
 quiet
 r?GZf?
+r\fp4
 rad2deg
 radiant_creeps
 radiant_siege_creeps
