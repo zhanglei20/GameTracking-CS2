@@ -8795,7 +8795,6 @@ $modelname$_surface
 @%s_lookFrame_1
 @%s_lookFrame_2
 @08N 
-@HPX`hv
 @Integer overflow in %s
 @Invalid Internal Point
 @m_vCenter

@@ -14820,7 +14820,6 @@ $prefix_element$
 @%s_lookFrame_2
 @08N
 @AuthPhysCollisionAttributesModeEnum_t
-@HPX`hv
 @Integer overflow in %s
 @Invalid
 @P2I

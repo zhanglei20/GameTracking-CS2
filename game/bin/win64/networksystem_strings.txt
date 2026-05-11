@@ -19,11 +19,10 @@
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  %dms faster than direct ping of %dms
  (08@HPX`j
- (08@HPXbpq
+ (08@HPXb
  (08@HPZ
- (08@HRpq
- (08@Jpq
- (0X`hpzpq
+ (08@HR
+ (0X`hpz
  - keeping around as cacheable shared connection
  [+add recip %d]
  [COMPLEX]
@@ -260,16 +259,13 @@
 0 bit issue, spot 3
 0 bit issue, spot 4
 08@HR
-08@Jpq
-0v(J
-2\vp\fH
+08@J
+2\vp8M
+2\vplJ
+2\vpt9
 ::Storage_t
 <classname> <fieldname>:  spew why field was excluded from networking for classname.
-@08N(J
-@60R
-@60T
-@HPX`hv0d
-@HV@r
+@08N
 @ht0
 Accepting Steam Net connection %s\n
 AckSeqNum
@@ -681,12 +677,9 @@ Opened Steam Net Connection on socket '%s' to %s, connection %s\n
 Order,'From','To',Bits\n
 OutSeqNumAck
 Overrides IP for multihomed hosts
-P08@Jpq
-P08J
-P08N(J
-P2pq
-P6`R
-P:pq
+P08@J
+P08J0
+P08N
 PACKET_STATUS_DROPPED
 PACKET_STATUS_INVALID
 PACKET_STATUS_NORMAL
@@ -745,7 +738,8 @@ QueueChange
 QueueReplayCompatFieldChange( %s ): can't place MNetworkReplayCompatField callback on a fully fake struct (e.g., a pointed to component or object), game code should move callback on entity %d to a C_BaseEntity derived class!\n
 QueueTimeMS
 RSDS[>
-R\vp\fH
+R\fp8M
+R\vplJ
 RadianEuler
 ReadFields
 Recv
@@ -876,7 +870,6 @@ WriteFields
 WriteToBuffer Message %s is not initialized! Probably missing required fields!\n
 Writing %d bits for path %s of serializer %s entity %d, this will fail to parse\n
 X`hr
-Xfpv
 [ Net Message Info: %s ]\n
 [%s] Queued message count %d exceeds limit of %s=%d.  Allowing due to engine_frametime_warnings_enable=false\n
 [%s] high frame misdelivery %.1f%%, %d/%d of %d frames dropped/reordered, %.0fms ping, %.0fms peak jitter\n
@@ -887,6 +880,7 @@ Xfpv
 [Name]
 [context entity 0x%p]
 [opaque]
+\fplJ
 \nNon-networkables\n\n
 \rBytes
 \tCannotBeNetworked        = %s\n
@@ -900,13 +894,8 @@ Xfpv
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 \vInSeqNum
 \vMsgTick
-`2pq
-`6PT
-`6PU
-`6PV
-`6pO
+\vplJ
 `ht0
-aBv(J
 activated
 added
 aggegated
@@ -984,9 +973,7 @@ g_pSteamNetworkingUtils
 groupindex
 groupnames
 has_network_encoding_data
-heE%
 hostip
-hpzpq
 huge
 identified %d entity related c++ field shadowing issues:\n
 include
@@ -1092,10 +1079,11 @@ out-of-order
 outgoing_data_bytespersecond
 outgoing_sequence
 outgoing_sequence_start
-p08@H^(J
-p0j@
-p2pq
+p08@H^
+p6Pr
+pF0G
 p\rP\f0!h
+p\r`\fPlJ
 packet_status
 parallel
 paths
@@ -1103,7 +1091,6 @@ pending data
 pmInfoDest.m_pFlattenedSerializer
 pmInfoDest.m_unPolymorphicTypeId == pmInfoSource.m_unPolymorphicTypeId
 pmInfoSource.m_pFlattenedSerializer
-pn(J
 pointer field
 polymorphic
 polymorphic [forced]
@@ -1115,6 +1102,7 @@ pri(%u)
 problem detected locally
 qangle_pitch_yaw
 qangle_precise
+r\vp8M
 records
 regex
 regex_error
