@@ -44,7 +44,11 @@
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
  (08@HPX`j
+ (08@HPXbP
  (08@HPZ
+ (08@HRP
+ (08@JP
+ (0X`hpzP
  (repeat)
  (x2 - stereoscopic)
  * Animation Stack %s Layer %s - %s\n
@@ -3567,6 +3571,7 @@ $prefix_element$
 000000000
 0123456789
 08@HR
+08@JP
 0DBu
 0L6?
 0\fE04_
@@ -6498,7 +6503,6 @@ $prefix_element$
 ?waitForReadyRead@QProcess@@UEAA_NH@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @08N
-@HPX`hv
 @Integer overflow in %s
 @\n?document@QPlainTextEdit@@QEBAPEAVQTextDocument@@XZ
 @\tV_isinfd
@@ -10522,6 +10526,7 @@ OverridingFrameRate
 Overwrite
 Overwrite With Current
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
+P08@JP
 P08J
 P08N
 P4 Operation failed
@@ -14164,6 +14169,7 @@ horizontal_header_labels
 host_syncfps
 houdini
 hours
+hpzP
 http://beta.steamcommunity.com
 http://localhost/community
 http://steamcommunity.com

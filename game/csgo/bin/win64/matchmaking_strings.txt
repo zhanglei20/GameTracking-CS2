@@ -391,7 +391,6 @@ $tIH
 <\n\ncategories
 >\n\tTypeCache
 @08N
-@HPX`hv
 @\n\fSingleObject
 @workshop
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n

@@ -91,7 +91,6 @@
 =fff?
 ?expf
 @08N`
-@HPX`hv
 Adaptive border clusters (%.fs)\n
 Aslow
 Assigned %d clusters in %.2f seconds\n

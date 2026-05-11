@@ -19,6 +19,7 @@
 		{ m_OldName =  "WorldGroupId_t"					m_NewName = "uint32" },
 		{ m_OldName =  "PlayerAnimEvent_t"				m_NewName = "WeaponGameplayAnimState" },
 		{ m_OldName =  "WeaponAttackType_t"				m_NewName = "int32" },
+		{ m_OldName =  "DecalRtEncoding_t"				m_NewName = "uint8" },
 	]
 }	
 
