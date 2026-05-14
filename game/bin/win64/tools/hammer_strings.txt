@@ -70,7 +70,7 @@
   Repeats: 
   Top-level Mesh Op '%s' returning a cached result.\n
   V%d: '%s' (%s)\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ n
  !"#$%%&'()*+,-../0123456789:;<=>?@ABCDEFGHIJKLLMNOPQRSTUVWXY[]_`bdefhjlnprtvz|~
  #?windowFrameSectionAt@QGraphicsWidget@@MEBA?AW4WindowFrameSection@Qt@@AEBVQPointF@@@Z
  %.2f %.2f %.2f %.2f %.2f %.2f ;
@@ -154,7 +154,7 @@
  -vis
  -vrad3LargeBlockSize
  -world
- .pFP
+ .PLP
  255
  8f\ff
  <-- Arg '%s'
@@ -969,7 +969,6 @@ $worldspacetype
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
 (d4t8
-(f0xP
 (fS{ggRcjh
 (fixed)
 (h`H1pqA
@@ -1169,9 +1168,8 @@ $worldspacetype
 ....................
 ../src/devtools/bin/certificates/game/
 ..uR5&m
-.0UP
-.0WP
-.0bP
+.0RP
+.0dP
 .4bb
 .97yY
 .?AUBufferedImpulseResponse_t@@
@@ -14674,9 +14672,11 @@ $worldspacetype
 .P6AXPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
-.PJP
-.PMP
+.PNP
+.PRP
 .PTP
+.PfP
+.PoP
 .Q.Ol
 .R?matches@QKeyEvent@@QEBA_NW4StandardKey@QKeySequence@@@Z
 .[?setRed@QColor@@QEAAXH@Z
@@ -14951,12 +14951,12 @@ $worldspacetype
 .mp3
 .nav
 .navdbg
-.pGP
-.pMP
+.pOP
+.pQP
+.pRP
 .pTP
-.pUP
+.pfP
 .pfm
-.phP
 .png
 .pp@0
 .psd
@@ -16031,34 +16031,33 @@ $worldspacetype
 5sfm_v8
 5t?F
 5~EW
-6 aP
-6 kP
+6 LP
+6 vP
 6#6165676;6M6O6S6Y6a6k6m6
 6#RDP#
 6%vi
 6,2K
 6-zeZ
-60EP
-60oP
 62$|S)6f
 64 283 0
 64CK\vH
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 6666666666666666jjjjjjjjjjjjjjjj[
 67-s
+6@0T
+6@oP
+6@yP
 6FaceSkyBox
 6H,N
 6O|T%
-6PhP
-6PrP
-6P}P
+6P]P
+6PxP
 6Qd=
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
 6_wEX
-6`VP
-6`qP
+6`KP
 6afD
 6bX+
 6c&0|vvX
@@ -16066,8 +16065,9 @@ $worldspacetype
 6l13
 6lkc
 6myY;
-6pDP
-6pyP
+6pNP
+6phP
+6prP
 6qo~
 6r-m_v
 6r1ij
@@ -16111,7 +16111,7 @@ $worldspacetype
 8<pl
 8= zp
 8A6j
-8F0tP
+8F {P
 8GZS
 8SIffK5W
 8TZvrv<
@@ -16267,7 +16267,6 @@ $worldspacetype
 > (After)
 >"?IsValid@FbxProperty@fbxsdk@@QEBA_NXZ
 >#>)>/>3>A>W>c>e>w>
->0pP
 >4|6eXg_e
 >7^0g
 >>> Reading bsp from path %s\n
@@ -16276,7 +16275,6 @@ $worldspacetype
 >>NAVGEN MOVABLE: func_mover entity does not have any children. Skipping.\n
 >>NAVGEN MOVABLE: point_nav_movable_mesh must point to exactly one reference entity. %d reference entities found. Skipping.\n
 >>NAVGEN MOVABLE: point_nav_movable_mesh's reference entity does not have any children and 'generate on reference entity' is disabled, so no movable nav will be generated. Skipping.\n
->PxP
 >Sem
 >WK6
 >\v?\r?7?;?=?A?Y?_?e?g?y?}?
@@ -16908,6 +16906,7 @@ $worldspacetype
 ?ParallelComputeSurfacePoints
 ?QStringList_contains@QtPrivate@@YA_NPEBVQStringList@@AEBVQString@@W4CaseSensitivity@Qt@@@Z
 ?QStringList_sort@QtPrivate@@YAXPEAVQStringList@@W4CaseSensitivity@Qt@@@Z
+?Random
 ?VBH;
 ?\f?debug@QMessageLogger@@QEBA?AVQDebug@@XZ
 ?\n?availableGeometry@QScreen@@QEBA?AVQRect@@XZ
@@ -18705,12 +18704,13 @@ $worldspacetype
 @%s_lookFrame_2
 @08N
 @0pp
-@60nP
-@6@JP
-@6@MP
-@6pHP
-@6pJP
+@6 uP
+@60QP
+@60TP
+@6`OP
+@6`QP
 @BH]f
+@HPX`hv
 @Integer overflow in %s
 @MfKZ
 @Pgl
@@ -19561,7 +19561,6 @@ ApplyTransformsToVertices
 Applying Changes...
 Applying Fix
 Approximate size in feet of the texture before repeat
-Apr 28 2026
 Arc Cos
 Arc Cosine of input value. Input must be -1.0, 1.0 range. Output in radians, from 0 to 
 Arc Height
@@ -20742,7 +20741,7 @@ CMapCordon
 CMapDeformer
 CMapDeformerLattice
 CMapDeformerSimple
-CMapDoc::FrameUpdate(6644): 
+CMapDoc::FrameUpdate(6693): 
 CMapDocMaterialAdjustStruct
 CMapDotaGridnavMarkup
 CMapDotaTileGrid
@@ -25123,14 +25122,13 @@ F'pY
 F+Zb
 F,mZq
 F/o4
-F0wP
+F0SP
+F0pP
 F2M+
 F6tr
 F7!z
 F9q'
 F<mb
-F@LP
-F@iP
 FBX (*.fbx)
 FBX Export failed: %s\n
 FBX Export failed: Couldn't create FBX manager: "%s"\n
@@ -25164,6 +25162,7 @@ FORCE_UINT
 FORM
 FORMAT
 FOV:
+FPnP
 FStops:
 FULL
 FU\n-XP
@@ -25173,7 +25172,6 @@ F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 F_BLOOD_USE_UV2
 F_TEXTURE_FORMAT
 F_TEXTURE_FORMAT2
-F`gP
 Face
 Face %d
 Face Fit
@@ -27657,7 +27655,6 @@ Maximum of two values (int)
 Maximum projection angle
 Maximum radius for created lights
 Maximum segment length %
-MbP?(
 Mc]T=
 MdiArea
 Merge
@@ -34214,7 +34211,6 @@ V Axis Repeats
 V Offset
 V Repeats
 V07;m
-V0{P
 V2I_ASIDENTIFIERS
 V2I_AUTHORITY_INFO_ACCESS
 V2I_AUTHORITY_KEYID
@@ -34292,6 +34288,7 @@ VZ#-DLU[3=h
 V\rKk
 V\v?event@QProgressBar@@MEAA_NPEAVQEvent@@@Z
 V_a|I
+V`MP
 Va?width@QPixmap@@QEBAHXZ
 Valid Content Absolute Path
 Valid External Path
@@ -34502,7 +34499,6 @@ Voronoi Plane Primitive
 Vortices
 Voxel volume (%i components)
 Vp>u
-VpFP
 Vrad3_Init_SearchPath
 Vt_9
 V~~Vq
@@ -35738,7 +35734,8 @@ _zero
 _zero_percent_distance
 _}eOk
 `28)fk
-`6`TP
+`60cP
+`6P[P
 `:zQF
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -39235,7 +39232,6 @@ g|FeW\v
 g|MT
 h&eC
 h*Ax
-h.\nPG
 h0XB
 h2Wl
 h2n_\
@@ -40963,6 +40959,9 @@ map_enable_portrait_worlds 0
 map_enable_portrait_worlds 1
 map_parameters
 map_sg_%s
+map_subasset_reference_counts
+map_subasset_reference_names
+map_subasset_reference_types
 map_variable_link_break
 map_variable_link_create
 map_variable_select_node
@@ -41478,6 +41477,7 @@ nPointSpace
 nPos
 nPrevCol
 nPrevRow
+nP{P
 nRow
 nSRecord
 nScaleMode
@@ -41501,7 +41501,7 @@ n\r2S
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
 n_bFlipFaces
 n`3i
-n`tP
+n`wP
 name constraints minimum and maximum not supported
 name too long
 name translation failed
@@ -41758,8 +41758,6 @@ npc_dota_holdout_tower_reducespeed
 npc_dota_tower
 npcclass
 npcclip
-nppP
-npvP
 nsBaseUrl
 nsCaPolicyUrl
 nsCaRevocationUrl
@@ -42028,9 +42026,8 @@ p4 fstat -Op %s
 p4Z3
 p5Z3
 p5\nL,
-p6 ~P
 p618
-p6pnP
+p6`uP
 p@0pqE5tsO?|1
 pAction
 pAsset
@@ -42046,7 +42043,7 @@ pDescription
 pElement
 pEntity
 pEvent
-pF@LP
+pF0SP
 pFilter
 pG_*h
 pIp 
@@ -45520,7 +45517,6 @@ z)?SetScale@FbxTexture@fbxsdk@@QEAAXNN@Z
 z/B,9d
 z09>
 z<d2
-z>HG
 z>Hz
 zF):O4
 zG2m8
@@ -45594,12 +45590,13 @@ zz2K
 ~CModelInstance destructor: leaking softbody because physics world disappeared\n
 ~If D
 ~P2T
+~PdP
 ~R65Fu
 ~\f?geometry@QGraphicsLayoutItem@@QEBA?AVQRectF@@XZ
 ~\n?dragMoveEvent@QAbstractScrollArea@@MEAAXPEAVQDragMoveEvent@@@Z
 ~\v?eventFilter@QGraphicsScene@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 ~jLRG
-~pFP
+~pdP
 ~w]UG
 ~yhZ
 ~}|{zyxwvutsrqponmlkjihgfedcba`_^]\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#"! 

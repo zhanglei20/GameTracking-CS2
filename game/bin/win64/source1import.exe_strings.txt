@@ -3710,88 +3710,88 @@ $woundcutouttexture
 0.2 0.4 0.4
 0.9 0.85 0.8
 0.96862745 0.066666670 0.086274512
-00U@
-044@
-054@
-05d@
-07p@
+02z@
+04a@
+05O@
+05q@
+06B@
+06O@
+083@
+0AT@
+0Ax@
 0B4@
-0C6@
-0D6@
-0D9@
-0E6@
-0Ec@
-0En@
-0Ex@
-0Fx@
-0Gd@
-0Gr@
-0He@
-0Hn@
-0I3@
-0Ir@
-0J0@
-0JA@
-0K5@
+0Bk@
+0Bx@
+0Ck@
+0Dk@
+0F8@
+0FB@
+0FY@
+0G4@
+0H4@
+0Hk@
+0Ik@
+0J4@
+0JZ@
+0Jk@
+0Jo@
 0Kk@
-0Kn@
-0Kq@
-0L0@
-0Mr@
-0N5@
-0O5@
-0PS@
-0R9@
-0Ro@
-0Se@
-0Tr@
-0Vk@
-0WY@
-0Wl@
-0Zn@
-0Zo@
+0L3@
+0MT@
+0Nd@
+0Nn@
+0O6@
+0P6@
+0PA@
+0Pr@
+0Px@
+0Qn@
+0R0@
+0S3@
+0SZ@
+0U5@
+0U8@
+0ZT@
 0\fU04i
 0\r%0t
-0aQ@
-0b1@
+0aT@
+0ao@
+0b3@
 0bW@
-0c5@
 0c6@
-0cX@
-0d5@
-0fX@
-0g6@
-0gT@
-0hZ@
-0i8@
-0jB@
-0jX@
-0k2@
-0kk@
-0nC@
-0ne@
-0nm@
-0oX@
-0pW@
-0pm@
-0pn@
-0q2@
-0qr@
-0r3@
-0sp@
-0tT@
-0tX@
-0u2@
-0uZ@
-0uk@
-0vl@
+0eZ@
+0go@
+0h8@
+0i1@
+0k8@
+0kU@
+0mn@
+0n1@
+0n8@
+0oZ@
+0p8@
+0q4@
+0q7@
+0r2@
+0rk@
+0s2@
+0s7@
+0sR@
+0sk@
+0sm@
+0t2@
+0v7@
+0vm@
+0w3@
+0w4@
+0w7@
+0wZ@
+0we@
 0wl@
 0x%llx
-0xT@
-0y2@
-0y5@
-0yX@
-0z3@
+0x2@
+0xp@
+0zp@
 1 1 0
 1 component
 1 edge
@@ -4355,7 +4355,7 @@ CMapCordon
 CMapDeformer
 CMapDeformerLattice
 CMapDeformerSimple
-CMapDoc::FrameUpdate(6644): 
+CMapDoc::FrameUpdate(6693): 
 CMapDocMaterialAdjustStruct
 CMapDocTestStruct
 CMapDotaGridnavMarkup
@@ -7074,45 +7074,34 @@ Override CP field
 Override Max Velocity from this CP
 Override: 
 P0d@
-P1o@
+P1b@
+P27@
+P2Z@
 P2_null_start
-P2c@
-P33@
-P3l@
+P30@
+P34@
+P44@
 P4CopyFile
 P4CopyFile: Couldn't copy "%s" to "%s"\n
 P4CopyFile: Couldn't deduce depot path for source file "%s"\n
-P6T@
-P6f@
-P8l@
-P9p@
-PAl@
-PC4@
-PD6@
-PDk@
-PDp@
-PEr@
-PEx@
-PF3@
+P4K@
+P5a@
+P7Y@
+PDZ@
+PDx@
+PE4@
 PF\n%d %d\n-1.000000\n
-PFn@
-PG6@
-PGd@
-PHY@
-PHx@
-PI6@
+PFk@
+PG4@
+PHc@
 PITCH_HIGH
 PITCH_LOW
 PITCH_NORM
-PIn@
-PIr@
-PJ6@
-PJA@
+PJ9@
 PJx@
-PKc@
-PKd@
-PKq@
-PL5@
+PKk@
+PKp@
+PKx@
 PLUG_TYPE_INPUT
 PLUG_TYPE_OUTPUT
 PLUG_TYPE_RELAY_OMNIDIRECTIONAL_LEGACY
@@ -7121,20 +7110,27 @@ PLUG_TYPE_RELAY_PREFAB_LOCAL
 PLUG_TYPE_RELAY_PREFAB_OUTBOUND
 PLUG_TYPE_UNKNOWN
 PLn@
-PN5@
+PMd@
+PNd@
 POISONED 
-POk@
-PSW@
-PSc@
+POn@
+PP6@
+PPr@
+PQ5@
+PR0@
+PR5@
+PR6@
+PRf@
+PRn@
+PRr@
+PTq@
+PU5@
 PURH
-PV3@
-PVc@
-PVl@
-PWl@
-PX6@
-PYc@
+PUc@
+PVe@
+PXc@
 P\v5Pd
-PaW@
+Pa0@
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
@@ -7199,23 +7195,22 @@ Pathing Probe
 Pathing coefficients for 1st order Ambisonics.
 PatternType
 PauseGameOnActivate
-Pb1@
-Pbc@
-Pd1@
-Pd5@
-Pe8@
-Pec@
-Pel@
+Pbp@
+PcC@
+Pcp@
 Per Particle World Collision Tests
 Per-Edge
 Per-Tile
 PerVertexLighting
 Pf\n%d %d\n-1.000000\n
-Phc@
+Ph6@
+Ph8@
+PhU@
 Photometric tag is missing, assuming data is YCbCr
 Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
 Photoshop
+Php@
 Physics
 Physics Pin
 Physics Pin: %s\n
@@ -7229,7 +7224,7 @@ PhysicsSurfaceProperties4
 PhysicsTypeOverride_Mesh
 PhysicsTypeOverride_MultiConvex
 PhysicsTypeOverride_SingleConvex
-PiB@
+Pi1@
 Pick
 Pickover A Parameter
 Pickover B Parameter
@@ -7243,11 +7238,6 @@ Pitch Yaw Roll Max
 PivotPaint
 PivotToolSnapToBBox
 PixarLog
-Pj2@
-PjZ@
-Pjn@
-Pkc@
-Pkk@
 Place
 PlaceInSphere Parent Cursor
 PlanarConfiguration
@@ -7256,9 +7246,9 @@ Plane Normal
 Plants
 Play End Cap Effect
 Please make sure you deleted history on the mesh before exporting.\nThe mesh apparently has %d vertices, but %d blendWeights in field %s, while having %d weights per vertex\n
-Plk@
-Pnc@
-PoC@
+Pmj@
+Pn1@
+PoZ@
 Polygon Mesh Data Pool - level 1
 Polygon Mesh Data Pool - level 2
 Polygon Mesh Data Pool - level 3
@@ -7269,6 +7259,7 @@ PolygonMesh Instance Data
 Polymesh auxiliary
 Polymesh triangle
 Polymesh wireframe
+Poo@
 PortraitAmbientColor
 PortraitAmbientDirection
 PortraitAmbientOrigin
@@ -7323,12 +7314,12 @@ PostMapLoadCommands
 PostProcessDummy
 PostProcessingEnabled
 PosterSettings
-PpT@
-Ppl@
+Pp2@
+Pp7@
+Pp8@
+PpZ@
 Pq2@
-Pqc@
-Pr3@
-Pr7@
+Pr2@
 Pre-Age Noise
 Predictor
 PredictorEncodeTile
@@ -7355,6 +7346,8 @@ Preview Unit
 PreviewModelFade
 Previous Position
 PrimaryChromaticities
+Prk@
+Prn@
 Probability
 Probability Weight
 Probable infinite loop detected! Terminating pulse cursor after %d consecutive instructions (%s)
@@ -7392,12 +7385,19 @@ Proxies
 Proxy
 Proxy Instance
 Proxy Name
+Ps4@
+Psk@
+Pt4@
+Ptm@
+Pu7@
 Pull towards control point
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
 PulseType
-Pyl@
-Pyr@
+Puq@
+Pw4@
+Pwl@
+Py3@
 QAngle
 Quad Size
 QuarterSizeAttrWithBoxFilter
@@ -7462,6 +7462,7 @@ RIGID
 RSDSS
 RT60 for low, mid, and high frequency bands for the probe.
 R\vp!6
+R\vpL.
 R_T5Y
 Rad2 Deg
 Radius Bias
@@ -8879,12 +8880,10 @@ ZoomSensitivityMouseWheel
 \panorama\images\overheadmaps\
 \prefabs\
 \prefabs\%s\%s_gameplay.vmap
-\r0HK
 \rError reading file: %s\n
 \resource\Flash\econ\
 \resource\Flash\images\ui_icons\
 \resource\overview\
-\rnav
 \scripts\
 \scripts\items\unencrypted\
 \smousetracking=\"\w*\"
@@ -10674,6 +10673,7 @@ groupColor
 group_title
 groupid
 growth time
+h+\npHh
 halfgridsnap
 hammer
 hammerClipboard
@@ -11313,6 +11313,9 @@ mapUsageType
 mapVariables
 map_asset_references
 map_sg_%s
+map_subasset_reference_counts
+map_subasset_reference_names
+map_subasset_reference_types
 mapbuilder.blocklight
 mapbuilder.blocklos
 mapbuilder.blocksound
@@ -11783,58 +11786,66 @@ override_help_id
 overrideclass
 ownerlog
 owns_polymorphic_data
-p1r@
-p2T@
-p3b@
-p4a@
+p1S@
+p2O@
+p3O@
+p44@
+p4C@
 p4lib
 p4path
-p6Z@
-p8B@
-p9Y@
-pC4@
+p6a@
+p73@
+p8o@
+pAN@
+pBk@
+pCX@
 pCheckpointName
 pDc@
 pDescription
 pDk@
-pDp@
-pE8@
-pFd@
-pFr@
-pGc@
-pGd@
-pGn@
+pE4@
+pET@
+pFU@
+pH4@
+pH8@
 pHk@
-pHx@
-pI6@
-pI8@
-pIr@
-pJ0@
-pJn@
-pKC@
-pLr@
-pMW@
+pIT@
+pIk@
+pJk@
+pKU@
+pKf@
+pKk@
+pLZ@
+pLx@
 pMaterialGroupName
+pMd@
+pMn@
 pModelResourceName
-pN2@
-pNA@
-pNx@
-pOW@
+pN3@
+pNU@
+pNd@
+pP6@
+pPn@
+pPr@
+pQ8@
+pQA@
+pQd@
+pRC@
+pRT@
 pRootClass
-pSk@
-pSl@
-pSo@
-pSr@
+pSn@
+pSq@
+pT5@
 pTagName
-pW8@
-pWa@
-pWl@
-pX8@
-pZW@
+pUT@
+pUZ@
+pWq@
+pYW@
+pYo@
 pa_arcana_proxy
+paa@
 packmode flat\n
 packmode rgb+a\n
-pal@
 panorama/images
 panorama\
 panorama\images
@@ -11912,10 +11923,9 @@ pathnode
 pathnodeclass
 pattern
 payload_path_marker
-pb6@
-pbQ@
-pbX@
-peX@
+pdC@
+pdT@
+pel@
 penetrationmodifier
 per particle
 per_edge
@@ -11929,7 +11939,9 @@ perl -p -i.bak -e "s/%s/%s/g" %s
 perl.exe 
 permitresponses
 pervertexlighting
-pgC@
+pgZ@
+pgl@
+pgn@
 phonememap
 phys
 physicsCollisionProperty
@@ -11943,6 +11955,7 @@ physicsSimplificationError
 physicsSimplificationOverride
 physicsType
 physics_prop
+pi1@
 pickBySize
 pinAngles
 pinEnabled
@@ -11951,9 +11964,7 @@ pitch_rand_max
 pitch_rand_min
 pivotOffset
 pixelAspectRatio
-pj2@
-pkX@
-pkk@
+pk5@
 plane
 plantTypes
 platform
@@ -11967,10 +11978,9 @@ playback_time
 playerclip
 playoverscript
 plugTypes
-pmW@
-pnT@
-pnk@
-pnm@
+pme@
+pne@
+poW@
 point
 point_follow
 point_follow_substepped
@@ -12016,11 +12026,8 @@ postprocessing
 posxyz
 power
 powf
-ppX@
-ppZ@
-ppl@
-pqZ@
-pr0@
+pq2@
+prB@
 precomputedboundsmaxs
 precomputedboundsmins
 precomputedfieldsvalid
@@ -12050,6 +12057,7 @@ preview_flying
 preview_model
 preview_modelname
 previous_value
+prk@
 probability
 procedural
 projectOnBackFaces
@@ -12083,22 +12091,23 @@ propertyValues
 props_swamp/boardwalk_chunk
 proxyName
 proxySelectionHelper
-psB@
+pse@
 pseudo-
-puX@
+pt4@
 pulse_bindings
 pulse_node_custom_attributes
 pulse_open_graph_id %u %u
 pulse_runtime_lib
-pum@
-pv2@
 pvTarget
 pvec_color_black
 pvec_color_white
-pwc@
-py2@
-py5@
-pyZ@
+pwl@
+px2@
+px3@
+pxZ@
+pyr@
+pzC@
+pzk@
 qangle log
 qangle_array
 quadSize
@@ -12106,6 +12115,7 @@ quadraticAttenuation
 quaternion log
 quaternion_array
 quiet
+r\fpL.
 r\tV_sinhf
 rad2deg
 radial
@@ -13128,6 +13138,7 @@ yaw_rate_min
 yaw_stop_time
 yield_token
 z>AlignedByteArray not properly aligned\n
+zD`i
 z\tV_sscanf_s
 zero_value
 zip_line_node

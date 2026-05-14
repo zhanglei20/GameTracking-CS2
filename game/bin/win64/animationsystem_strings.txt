@@ -26,9 +26,9 @@
  %s : Animations loaded but no animation data found\n
  %s : animtable hash too small: %d elements / %d buckets\n
  %s : seqtable hash too small: %d elements / %d buckets\n
- (08@HPX`j
+ (08@HPX`jP
  (08@HPXb
- (08@HPZ
+ (08@HPZP
  (08@HR
  (0X`hpz
  * %d WeightLists\n
@@ -38,7 +38,7 @@
  - (Additive)
  <-- Arg '%s'
  <-- Retval '%s'
- AxHq
+ B0=q
  Vector b
  [*OBSERVABLE*]
  \t\n\r@()[]{}=&,:*|;'!
@@ -98,32 +98,28 @@
 %s_matgrp
 'Play reversed' has no effect when used with time synchronization!
 (%f, %f, %f)
-(90t
-(9tt
-(Awt
+(1It
+(1wt
+(9Et
+(9Ot
+(AHt
+(Azt
 (Blend1D):m_flBlendValue
 (Blend1D):m_resetCount
-(E4t
-(EQt
-(IIt
-(M1t
-(MLt
-(MTt
-(QOt
-(QUt
-(QYt
-(Qat
-(Qst
-(U8t
-(Uxt
-(Y9t
-(ekt
-(iDt
-(m4t
-(mtt
-(q1t
-(qyt
-(yHt
+(I1t
+(I6t
+(Myt
+(Q8t
+(QBt
+(QLt
+(Qft
+(Qxt
+(YXt
+(ast
+(eRt
+(q7t
+(qEt
+(uzt
 ** Invalid ID **
 *** Test failure: "%s"
 ***\nShared activity collision with private activity! %s<->%s [%i]\n***\n
@@ -2049,12 +2045,13 @@
 .?AVUsesCustomCurrentValue@MotionMatching@Attribute@@
 .?AVUsesCustomSampleInterpolation@MotionMatching@Attribute@@
 .vagrp_c/.vanim_c mismatch :: %s :: %s\n
-08@HR
+08@HRP
 08@J
+08BP
 180_recovery
-2\vpT
-2\vpl
+2\vpD
 2_BONE_IK
+8@JP
 ::embedded_animation
 :NetworkedCycle:CycleZeroTime
 :NetworkedCycle:CyclesPerSecond
@@ -2092,9 +2089,8 @@
 ?expf
 ?m_flPosition
 @08N
-@HPX`hv`
+@HPX`hv
 @fff>fff>fff>fff>
-@htp
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
 ACT_NEUTRAL_REF_POSE
 AE_ACTION_ALLOW_COMBO
@@ -2146,6 +2142,7 @@ AE_WPN_NEXTCLIP_TO_POSEPARAM
 AE_WPN_PLAYWPNSOUND
 AE_ZOMBIE_POPHEADCRAB event format missing velocity parameter! Usage: event AE_ZOMBIE_POPHEADCRAB "<BoneName> <Speed>" \n
 ATTACHMENT_INFLUENCE_FLAGS_NONE
+A\v:0h
 Abs Float
 Abs Int
 Absolute value (float)
@@ -2939,7 +2936,7 @@ Overlay Blend (Masked): %.2f%%
 Overlay Blend: %.2f%%
 OverlayProjectionDirection
 P08@J
-P08J
+P08J 
 P08N
 PARENT
 POSE_SPACE_BONE
@@ -2988,10 +2985,8 @@ RESOURCE_TYPE_NM_GRAPH
 RESOURCE_TYPE_NM_SKELETON
 RESOURCE_TYPE_SEQUENCE_GROUP_INTERNAL
 ROTATION
-R\fpT
 R\vp!F
 R\vp!y
-R\vpl
 Rad2 Deg
 Ragdoll Component
 Random World Position
@@ -3175,7 +3170,7 @@ World space tilt normal
 Write Cached Pose
 X (Red   / Forward)
 X to the Y power
-X`hr
+X`hrP
 Y (Green / Left)
 Yield, Resume=%s
 Z (Blue  / Up)
@@ -3221,10 +3216,10 @@ __TimelineParent__
 ______________________
 __current_metadata_table_stack
 _autoreset
-`MKt
-`aAt
-`htp
-`i3t
+`apt
+`qot
+`qqt
+`uft
 a:fulltype
 a:typeparam
 a\tV_powd
@@ -3623,8 +3618,7 @@ game:tools/images/animgraph_editor/animgraph_icon_statemachine.png
 game:tools/images/animgraph_editor/animgraph_parameter_base.png
 game:tools/images/animgraph_editor/animgraph_parameter_virtual_base.png
 game:tools/images/animgraph_editor/animgraph_tag_base.png
-hM1t
-hYdt
+h]et
 handshakeTypes
 hsequence
 idiv
@@ -3701,6 +3695,7 @@ offBeforeFinished
 offWhenFinished
 optionallycompressedtangentframe
 p08@H^
+p0j 
 pCheckpointName
 pDescription
 pTagName
@@ -3718,7 +3713,6 @@ pulse_runtime_lib
 r>BoneSetup
 r\tV_sinhf
 r\vp!4
-r\vpT
 rad2deg
 random_position
 remainingRootMotionToWarp\t[%f] [%s]

@@ -102,9 +102,10 @@
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
  (08@HPX`j
- (08@HPXb@
+ (08@HPXb
  (08@HPZ
- (0X`hpz@
+ (08@HR
+ (0X`hpz
  (Dirty Animation)
  (Disabled on Server)
  (INVALID PSS PARAMETERS)\n
@@ -1661,7 +1662,6 @@ $tH@T\tI
 (0x%08X)'??'
 (3@Mb
 (4?NewFromUnsigned@Integer@v8@@SA?AV?$Local@VInteger@v8@@@2@PEAVIsolate@2@I@Z
-(4`fj
 (5Me
 (5jP
 (=?Resolve@Resolver@Promise@v8@@QEAA?AV?$Maybe@_N@3@V?$Local@VContext@v8@@@3@V?$Local@VValue@v8@@@3@@Z
@@ -1916,6 +1916,7 @@ $tH@T\tI
 (debug)
 (default)
 (duration: number)
+(fP:U
 (fS{ggRcjh
 (from angle, to angle, time) - Spherical lerp of angle from->to based on time
 (hInflictor, hAttacker, flDamage) - Allocate a damageinfo object, used as an argument to TakeDamage(). Call DestroyDamageInfo( hInfo ) to free the object.
@@ -2237,6 +2238,7 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
+.0BU
 .4bb
 .97yY
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
@@ -8489,7 +8491,7 @@ $tH@T\tI
 .P6AXAEBUSoundOpvarManagerSettableData_t@@PEAVCSoundOpvarSetPointStackCollection@@@Z
 .P6A_NAEBUCharacterDefn_t@CCStrike15ItemSchema@@@Z
 .PARTICLE_MESSAGE
-.PCU
+.PBU
 .PEAVCBodyComponent@@
 .PEAVCCSGameModeRules@@
 .PEAVCCSGameRules@@
@@ -8814,6 +8816,7 @@ $tH@T\tI
 .dx_LV9
 .fatdem
 .lbN
+.pGU
 .pp@0
 .text$
 .vjs_c
@@ -8855,7 +8858,7 @@ $tH@T\tI
 02V8[
 05=k
 08@HR
-08@J@
+08@J
 08bX
 09,h
 0;Q5[
@@ -8865,7 +8868,6 @@ $tH@T\tI
 0M2~@p
 0Mc\t\n
 0W/5
-0XyO
 0Z@q
 0\n+k_EGCItemCustomizationNotification_NameItem
 0\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings
@@ -8886,7 +8888,6 @@ $tH@T\tI
 0\r%0h
 0\r0#0)070;0U0Y0[0g0q0y0}0
 0e\r8
-0l\fT
 0pp@5tqE?|sO541
 0tU+xc:
 0x%s
@@ -8971,7 +8972,7 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
-2\vpl\fT
+2\vpT
 2^pV
 2a"l
 2bT~
@@ -9047,6 +9048,7 @@ $tH@T\tI
 4\n/k_EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate
 4\n0GAME_PARTICLE_MANAGER_EVENT_SET_OVERRIDE_TEXTURE
 4\n0GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW
+4\re4h!
 4\vU44
 4f h
 4tpD
@@ -9098,7 +9100,7 @@ $tH@T\tI
 6%vi
 6,2K
 6-zeZ
-60CU
+600U
 62$|S)6f
 64CK\vH
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
@@ -9106,7 +9108,9 @@ $tH@T\tI
 67-s
 6H,N
 6O|T%
-6P"U
+6P1U
+6P6U
+6PHU
 6Qd=
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -9129,7 +9133,8 @@ $tH@T\tI
 6l13
 6lkc
 6myY;
-6p#U
+6pKU
+6pQU
 6qo~
 6r-m_v
 6r1ij
@@ -9147,6 +9152,7 @@ $tH@T\tI
 7GNW^c-<ER]c"09IYc
 7HOX_c.5AQ[c#(4FWc
 7OsR
+7PointOrientConstraint_t
 7W}2
 7XRJ
 7\n2k_EGCItemCustomizationNotification_XpShopAckTracks
@@ -9176,7 +9182,6 @@ $tH@T\tI
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
 8A6j
-8Fp U
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9384,6 +9389,7 @@ $tH@T\tI
 ??SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
 ?BooleanValue@Value@v8@@QEBA_NPEAVIsolate@2@@Z
 ?CEntityIOOutput
+?CNullGameJournal
 ?Call@Function@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@HQEAV52@@Z
 ?CompileModule@ScriptCompiler@v8@@SA?AV?$MaybeLocal@VModule@v8@@@2@PEAVIsolate@2@PEAVSource@12@W4CompileOptions@12@W4NoCacheReason@12@@Z
 ?Convex hull building with 2D data, will fail!\n
@@ -9427,7 +9433,7 @@ $tH@T\tI
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N4
+@08N
 @0pp
 @333
 @333?
@@ -9436,7 +9442,9 @@ $tH@T\tI
 @Aff
 @BH]f
 @BoneSetup
-@HV0
+@CWeaponNOVA
+@HPX`hv0
+@Logs attacks.  Values are: 0=off, 1=enemy, 2=teammate, 3=both)
 @MfKZ
 @Pgl
 @Pu\rm
@@ -9449,12 +9457,9 @@ $tH@T\tI
 @\n\nnomination
 @\n\tPlacement
 @\n\vserver_type
-@cs_team_manager
 @dKb]
 @fff>fff>fff>fff>
-@htP
 @i1V
-@m_bPlayerAmmoStockOnPickup
 @n2w
 @player_start_teleport_destination
 @workshop
@@ -9479,6 +9484,7 @@ AACompromise
 AC2,h
 ACCESS_DESCRIPTION
 ACCOLADE, FINAL: {%s},\t%s<%i>,\tVALUE: %f,\tPOS: %i,\tSCORE: %f\n
+ACCSGO_WingmanIntroCounterTerroristPosition
 ACHIEVEMENT_EVENT_
 ACID
 ACPT_STATE
@@ -9595,7 +9601,6 @@ AMMO_TYPE_HEGRENADE
 AMMO_TYPE_MOLOTOV
 AMMO_TYPE_SMOKEGRENADE
 AMMO_TYPE_TASERCHARGE
-AMoveMountingAmount_t
 ANSI X9.62
 ANY PRIVATE KEY
 APPEND_EXP
@@ -9801,6 +9806,7 @@ Affirmative
 Ag*g*
 Aggression
 AgreeWithPlan
+Ah'Z
 Aim CS
 AimFocusDecay
 AimFocusInitial
@@ -9830,6 +9836,7 @@ AmmoCount/%s
 AmmoCount/current
 Amplitude
 An RR_Concept couldn't find its string in the symbol table!\n
+Anav_path_optimizer_debug
 Anchor
 Anchor Actor
 Anchor Is External
@@ -10026,7 +10033,8 @@ BAddToMessage
 BAsyncSend
 BAsyncSendProto
 BC (default)
-BDraw the hiding spot the bot will check next.
+BCBtActionMoveTo
+BCPulseCell_Outflow_ListenForAnimgraphTag::Cancel
 BEOS_BIND_FUNC
 BEOS_BIND_VAR
 BEOS_LOAD
@@ -10235,6 +10243,7 @@ BaseTextureOverride
 Basic OCSP Response
 Basis Type: %s\n
 BcT`
+Bcs_player_manager
 Bd]U
 BeforeGraphStart
 Begin Sequence
@@ -10275,7 +10284,7 @@ Bloodlvl3
 Bloodlvl4
 Bloodlvl5
 Bloodlvl6
-Bm_hCarriedHostage
+Bm_vecSellbackPurchaseEntries
 BoX5
 Body Component Scriptdesc
 BodyGameSystem
@@ -10296,6 +10305,8 @@ BombsiteSecure
 Bone Transforms
 Bone merge bones from parent were invalid: parent model '%s': our model '%s'
 Bool Param was of wrong type %s!
+Bot %s could not find a path\n
+Bot %s found a path\n
 Bot.FellOff
 Bot.StuckSound
 Bot.StuckStart
@@ -10331,7 +10342,6 @@ BreakableContentsType
 Breakables
 Breaks in the debugger
 Bs'n
-Bsv_fade_player_visibility_farz
 Bu 5
 Buffer too small
 BuildCacheSubscribed(CEconAccountSeasonalOperationGS)
@@ -11711,7 +11721,6 @@ CNmGraphInstance::GetCurrentGraphTimingInfo
 CNmTaskSystem::SerializeTasks
 CNmTaskSystem::UpdatePostPhysics
 CNmTaskSystem::UpdatePrePhysics
-CNullGameJournal
 COLLECT_DATA
 COLLECT_HOSTAGES
 COMPLEMENTOFALL
@@ -11872,7 +11881,6 @@ CPulseCell_IsRequirementValid::CheckRequirement
 CPulseCell_LerpCameraSettings::Start
 CPulseCell_LimitCount::CheckRequirement
 CPulseCell_LimitCount::CommitStep
-CPulseCell_Outflow_ListenForAnimgraphTag::Cancel
 CPulseCell_Outflow_ListenForAnimgraphTag::Run
 CPulseCell_Outflow_ListenForEntityOutput::Cancel
 CPulseCell_Outflow_ListenForEntityOutput::OnFired
@@ -12302,7 +12310,7 @@ CSoundscapeSystem::Init:  Manifest '%s' with bogus file type '%s', expecting 'fi
 CSource1LegacyGameEventGameSystem
 CSource2GameClients::StartHLTVServer: game event %s not found.\n
 CSource2GameEntities::CheckEntities: %d ents\n
-CSource2GameEntities::CheckTransmit(), C:\buildworker\csgo_rel_win64\build\src\game\server\gameinterface.cpp:3111
+CSource2GameEntities::CheckTransmit(), C:\buildworker\csgo_rel_win64\build\src\game\server\gameinterface.cpp:3126
 CSource2Server::ApplyGameSettings game settings payload received:\n
 CSource2Server::GameFrame
 CSource2Server::GameServerSteamAPIActivated()\n
@@ -14918,6 +14926,7 @@ FreezePeriod
 Frequency
 FriendlyFire
 From
+Fsave_async
 Full Buy Round
 FullTossMoveBaseVelocity
 FullTossMovePreGravity
@@ -15557,6 +15566,7 @@ HARD
 HAS_LADDERS
 HB@T\tJ
 HBJ\nTRF
+HBX?
 HDR Color Scale: %0.3f
 HEAD
 HEAD 
@@ -18177,9 +18187,9 @@ P-224
 P-256
 P-384
 P-521
-P08@J@
-P08J0
-P08N4
+P08@J
+P08J
+P08N
 P1\t98"
 P5[1
 PAGN_4
@@ -18414,7 +18424,6 @@ PUX\`cIPTY_cBJNS\c8=DLWc*38>Mc
 PVSManagerGameSystem
 PVSModifier
 PVY]acJOTY`cCGLT]c9<AJVc+-19Ic
-PXyO
 P\n\nattributes
 Pack item "%s" included in more than one pack bundle - not allowed!
 PackedBlobNormal
@@ -18971,9 +18980,9 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDS}
 RTime32
+R\fpT
 R\r1>Vp
 R\vp!y
-R\vpl\fT
 R]Di
 Rad2 Deg
 Radial using: %s\n
@@ -20382,6 +20391,7 @@ Sets the value of the given cvar, as a float.
 Sets this entity's owner
 Setting
 Setting an animgraph parameter via Pulse is only supported on prop_dynamic!
+Setting desired grenade for bot %s to %s\n
 Setting mapgroup to '%s'\n
 SetupSequences
 ShakeRopes
@@ -21187,6 +21197,7 @@ UM_SayTextChannel
 UM_ServerFrameTime
 UM_Shake
 UM_UpdateCssClasses
+UM_UserSentBugBug
 UM_UtilActionResponse
 UN-STUCK\n
 UNCHANGED
@@ -21524,6 +21535,8 @@ Vote succeeded "%s %s" from #%u %s\n
 Vote.Failed
 Voting %s.\n
 Vp>u
+VpBU
+VpEU
 Vt_9
 Vulkan
 V~~Vq
@@ -21891,6 +21904,7 @@ X\tQo
 X`hr
 Xd3h
 XfJ7
+Xf`0U
 XjfR
 XpProgressData
 XqgA+
@@ -22252,8 +22266,6 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\vPXyO
-\fp\v`XyO
 \ful2
 \fy&3Gl
 \l:ArR
@@ -22368,7 +22380,6 @@ Z~wl
 \n\fbuttonstate3
 \n\fcmd_friendly
 \n\fcmd_teaching
-\n\fcommand_line
 \n\fcontent_type
 \n\fcontributors
 \n\fcreationtime
@@ -22642,6 +22653,7 @@ Z~wl
 \n\rteam_id_start
 \n\rteam_id_veto1
 \n\rtemplate_file
+\n\rthrough_smoke
 \n\rtier_unlocked
 \n\rtime_acquired
 \n\rtime_play_ban
@@ -22716,7 +22728,6 @@ Z~wl
 \n\tnextmatch
 \n\tnum_kills
 \n\tnumrounds
-\n\tosversion
 \n\toutcomeid
 \n\tpaintseed
 \n\tpaintwear
@@ -22999,7 +23010,6 @@ Z~wl
 \v\vTSG
 \vj0k
 \vjC7
-\vpXyO
 ] Done (%.2f seconds)
 ]1h=bfz
 ]FhSD}
@@ -23008,6 +23018,7 @@ Z~wl
 ]MSd
 ][LK~lO
 ^.om5r
+^0LU
 ^DnJ
 ^DqPt
 ^J_spY
@@ -23075,6 +23086,7 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
+`6 CU
 `:zQF
 `D$daM-l
 `DZG
@@ -23082,11 +23094,9 @@ _}eOk
 `H(hqA1p
 `ITS
 `VX:H
-`XyO
 `\n\rvector_values
 `fPw.\vM
 `h9T~
-`ht`fj
 `o_je
 `yNT
 a null shared library handle was used
@@ -23105,7 +23115,6 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
-aBv4
 aD/x
 aDSS
 aECDH
@@ -24677,7 +24686,6 @@ cs_motel
 cs_office
 cs_pet_placement
 cs_player_controller
-cs_player_manager
 cs_pre_restart
 cs_prediction_events.proto
 cs_respawn
@@ -24687,6 +24695,7 @@ cs_rush
 cs_script
 cs_script/%s
 cs_siege
+cs_team_manager
 cs_thunder
 cs_usercmd.proto
 cs_win_panel_match
@@ -26150,6 +26159,7 @@ flYaw
 flagchoices
 flair0
 flammable
+flash
 flash-
 flashbang
 flashbang_detonate
@@ -26872,7 +26882,6 @@ houseIdentifier
 hoverposeangles
 hoverposeflags
 hoverposeposition
-hpz@
 hr_H
 http request
 http$
@@ -27263,6 +27272,7 @@ inaccuracy_air
 inaccuracy_move
 inappropriate fallback
 inbound
+incend
 incgrenade
 include_children
 include_hierarchy
@@ -29115,7 +29125,6 @@ nMaxElements
 nMeshGroupMask
 nMode
 nNumerator
-nP\tU
 nPitch
 nPriority != NETWORK_FIELD_CHANGE_DEFAULT_PRIORITY
 nReason
@@ -29406,6 +29415,7 @@ notifyforcemintime_z
 notmostrecent
 notsolid
 nova
+npOU
 npc_ability_name
 npc_select %i
 npc_vehicle
@@ -29669,13 +29679,15 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^4
+p08@H^
+p0jp
 p250
 p2{l
 p4Z3
 p5Z3
 p5\nL,
 p618
+p6@%U
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pActivator
@@ -29737,7 +29749,6 @@ pTarget2
 pTargetAttachmentName
 pU>\AL
 pValue
-pXyO
 p\rP!0
 p\rP\f0!h
 p^i9
@@ -30072,7 +30083,6 @@ pkey
 pkeyalg
 pkix
 pkparameters2group failure
-pl\fT
 place
 place_anchors_at_constraint_transform
 place_name
@@ -30539,6 +30549,7 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
+r\vpT
 rad2deg
 radio.go
 radio.letsgo
@@ -31550,6 +31561,7 @@ smime.p7z
 smime_sign
 smimeencrypt
 smimesign
+smoke
 smoked
 smokegrenade
 smokegrenade_detonate
@@ -33040,6 +33052,7 @@ vF'l
 vForward
 vHingeAxis
 vOrigin
+vPMU
 vPoint
 vPoint1
 vPoint2
@@ -33667,7 +33680,6 @@ zz2K
 }gE3
 }n2W
 }}JSON_END\n
-~07U
 ~9ob
 ~If D
 ~P2T

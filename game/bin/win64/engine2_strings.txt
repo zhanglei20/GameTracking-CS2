@@ -150,10 +150,13 @@
  %4u stashed frames = %12s bytes
  %i refs\n
  (08@HPX`hpx
- (08@HPX`j`J
- (08@HPXb`
- (08@HPZ`J
- (0X`hpz`
+ (08@HPX`jpJ
+ (08@HPXbP
+ (08@HPZpJ
+ (08@HRP
+ (08@JP
+ (08@JpJ
+ (0X`hpzP
  (Start: 
  (Texture)
  (default = .tga + .wav file)\n
@@ -169,6 +172,7 @@
  -component "%s"
  -noscreenshot
  -product "%s"
+ .P3G
  2r6
  3CQ`p
  7Me}
@@ -861,6 +865,7 @@ $tI(knN
 (*VERB) not recognized
 (0`hpx
 (27>?<:20./-(
+(4PA
 (64-bit process)
 (8GXgw
 (?R or (?[+-]digits must be followed by )
@@ -1076,6 +1081,7 @@ $tI(knN
 ..\content
 .00cfg
 .04G
+.09G
 .9GXdx
 .>\rfJBGo
 .?AU?$Container@VUnknownFieldSet@protobuf@google@@@InternalMetadata@internal@protobuf@google@@
@@ -2156,6 +2162,7 @@ $tI(knN
 .?AVCToolService@@
 .?AVCTvDirectDemoRecorder@@
 .?AVCUGCAddonPathResolver@@
+.?AVCUserMessage_UserSentBugBug@@
 .?AVCUtlSlot@@
 .?AVCVConActivateMessage@@
 .?AVCVConAutoCompleteHelper@@
@@ -2458,11 +2465,11 @@ $tI(knN
 .CSVCMsg_GameEventList.key_t"
 .CSVCMsg_SendTable.sendprop_t
 .CSVCMsg_Sounds.sounddata_t
+.DjB
 .EProtoDebugVisiblity:
 .ERQLC*
 .ESource2PlayStatsFieldType
 .ESplitScreenMessageType
-.P1G
 .P6AXPEBD@Z
 .PEAVCEntityIdentity@@
 .PLACEHOLDER_VALUE
@@ -2568,17 +2575,18 @@ $tI(knN
 0 0 0 255
 0"$\n\rCSVCMsg_Print
 0$2z4
+0$nF
 0(D7
+0,hB
 00000000-0000-0000-0000-000000000000
 00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
 00A+
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
-04aF
 08@HP
-08@HR`J
-08@J`
-08B`J
+08@HRpJ
+08@JP
+08BpJ
 08\fj
 0: Force z prepass off. 1: Force on. -1: Don't force
 0: Use normals reconstructed from depth. 1: Output correct normals in z prepass.
@@ -2588,13 +2596,14 @@ $tI(knN
 0=Off, 1=Visualize trace from camera, 2=Visualize occlusion, 3=Visualize far field trace from camera
 0B_u
 0C&C
+0DNB
 0E>X
 0T.Q
-0TAB
 0X8b?~
 0\n\vserializers
 0iN>/
-0vT]B
+0pYB
+0vDjB
 0x%x,
 0|t?L
 0|t?uj
@@ -2609,7 +2618,7 @@ $tI(knN
 127.0.0.1
 16777215"R\n\nCMsg_CVars
 16777215B$
-16:05:15
+17:02:25
 1:1: Tokens : ( T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | SCOPE_QUALIFIER | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
 1>O\kw
 1?Uo
@@ -2642,13 +2651,15 @@ $tI(knN
 2Hax
 2NK?
 2Ogx
-2Pl$
+2Py%
 2Z4\nf
 2\f8Kf
 2\r%2t
 2\r.PrefetchType"h\n
 2\rU2t
-2\vp4aF
+2\vp$nF
+2\vp,hB
+2\vppYB
 2i0/
 3$EE\f
 3'F^7
@@ -2716,15 +2727,15 @@ $tI(knN
 87g}
 8>0RF>
 8@HP:
-8@J`J
+8@JpJ
 8A3b
-8B`J
+8BpJ
 8Csinf
-8Qq]
 8Smt
 8W?i
 8\n\textension
 8\n\vdescriptors
+8\npJ
 8\vu8t
 8b  16-May-2010
 8ke?;
@@ -3159,15 +3170,18 @@ $tI(knN
 ?ysB
 @ Current  :  %s\n
 @08@HPX`hpx
-@08NT]B
+@08NDjB
+@2pJ
 @GetProfile_ultrafast
 @HPX
 @HPX&I
-@HPX`hv
+@HPX`hvp
+@HVP(G
 @^8U)zj
-@fT]B
+@fDjB
+@htPA
 @i-kuX
-@nT]B
+@nDjB
 A command with the specified name already exists. Cannot create an alias with the same name.\n
 A dB floor of when to stop transmitting packets, the volume between this and voice_threshold will still transmit packets to allow for volume ramping.
 A file with this name is already in the pool.
@@ -3177,6 +3191,7 @@ A!;I2
 A2r>
 A7/s
 A>pP&
+AA:Py%
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -3376,7 +3391,6 @@ BGRA8888_LINEAR
 BGRX8888
 BGRX8888_LINEAR
 BKbhTb~XBK!;
-BPk%
 BROADCAST
 BSR_ANYCRLF)
 BSR_UNICODE)
@@ -4276,6 +4290,7 @@ CToolService::OnFrameBoundary
 CToolService::ThrottleRenderingToYieldCPU
 CTvDirectDemoRecorder::BroadcastEvent: Failed to serialize message to demo event write buffer.\n
 CType
+CUserMessage_UserSentBugBug
 CUtlBlockVector<struct CFrameTimer::PerfSample_t,int,class CMemAllocAllocator>::GrowCount
 CUtlDict<bool,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CGameNetworkableClass *,class CDefFastCaselessStringLess>::Insert
@@ -5143,6 +5158,7 @@ FALSE
 FATAL
 FCVAR_CHEAT cvars reverted to defaults (sv_cheats disabled).\n
 FEMh\f
+FP4G
 FPS: Avg=%.1f, P1=%.1f\n
 FSKey=
 FWj|
@@ -5150,6 +5166,7 @@ FYLh.o
 FZ?w
 F\n%NETWORK_DISCONNECT_DISCONNECT_BY_USER
 F\n\foptimize_for
+F\npJ
 Fail to schedule the chore!
 Failed
 Failed To Load '%s'! VConsole Communication Disabled!\n
@@ -5586,10 +5603,10 @@ G|u0J\n
 H$6t
 H*0"ZOW
 H.FM
+HAc_
 HD?0
 HGR9\f
 HH:mm:ss
-HIN_
 HKR~
 HLTV
 HLTV Broadcast
@@ -5616,6 +5633,7 @@ HelpSystem_001
 Hen\fM
 Hex and octal numbers must be integers.
 Hibernating
+Hic_
 Hide the console.
 Hides the game UI
 Highest unlocked game chapter.
@@ -5645,7 +5663,6 @@ Hostname for server.
 How far back before our current playback head in seconds to hold onto fragments.
 How long to show the message about Killer Replay after death. The best setting is a bit shorter than spec_replay_autostart_delay + spec_replay_leadup_time + spec_replay_winddown_time
 How often to flash demo recording/playback overlay (0 - disable overlay, -1 - show always)
-HuN_
 HudUpdate
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
@@ -6164,6 +6181,7 @@ Maximum queries per second to respond to from a single IP address.
 Maximum queries per second to respond to from anywhere.
 Maximum replay time in seconds
 Maximum supported image dimension is %u pixels
+May 13 2026
 MbP?
 Meetei_Mayek
 MemAlloc_AllocFunc
@@ -6527,18 +6545,20 @@ Override Fog color: %f %f %f\n
 Overrides the SourceTV master root address.
 Overrides the max players reported to prospective clients
 Overriding minidump handler with Engine2MinidumpFunction\n
-P08@J`
-P08Jp
-P08NT]B
-P2`J
+P,QB
+P,hB
+P08@JP
+P08J`
+P08NDjB
+P2pJ
 P4File
-P60,G
+P6 9G
 P:S;A
-P<DB
 P?fff?33s?{
 P@HPX`hpx\f
 PBDEMS2
 PCRE does not support \L, \l, \N{name}, \U, or \u
+PDNB
 PHrk
 PInstruction_t<41>::Run
 PInstruction_t<42>::Run
@@ -6558,7 +6578,6 @@ PREP
 PRUNE
 PS_FAILED %s in sequence for %s\n
 PS_SATISFIED %s in sequence for %s [%.3f msec]\n
-PTAB
 PVAL_ANY
 PVAL_ARRAY
 PVAL_BOOL
@@ -6660,7 +6679,7 @@ Phags_Pa
 Phoenician
 PhysicsBuilderMgr001
 Ping
-Pj`J
+PjpJ
 Plain assert text (has prefix)\n
 Plain general text (no prefix)\n
 Plat_AlertUser
@@ -6808,7 +6827,7 @@ Playing Broadcast (%s)
 Playing Demo (%s)
 Playing back demo: '%s' at tick %u\n
 PmNk
-PnT]B
+PnDjB
 Pointers cannot be used as numeric values
 PollAndProcessInput
 Poor man's restart: reload the current map from disk.
@@ -6993,7 +7012,9 @@ RP_PAUSE
 RP_TOGGLEPAUSE
 RSDS
 RST%d
+R\fppYB
 R\tV_log2_uint
+R\vp,hB
 RaiseException
 Random Float
 Random Integer
@@ -7190,7 +7211,11 @@ Runic
 Running SteamAPI_RunCallbacks for first time\n
 Running [%s]
 Runs the final server tick of the frame in parallel with client work
+S3: Client GetSteamIDForAuthSession doesn't match SteamID from auth blob
 S3: Client SteamID %s doesn't match SteamID %s from auth blob\n
+S3: Client connected doesn't match SteamID from auth blob
+S3: Client connected with existing active steam auth request
+S3: Client connected with existing active steam auth request: UserID: %x\n
 S3: Client connected with expired ticket: UserID: %x\n
 S3: Client connected with invalid ticket ( old version ): UserID: %x\n
 S3: Client connected with invalid ticket: UserID: %x\n
@@ -7334,6 +7359,11 @@ SV: Cheat command '%s' ignored.\n
 SV: Convar '%s' is cheat protected, change ignored.\n
 SV: Disconnecting due to unresolved k_EAuthSessionResponseAuthTicketCanceled for %s.\n
 SV: OnShutdownChannel called in a worker thread\n
+SV: OnValidateAuthTicketResponse duplicate authentication
+SV: OnValidateAuthTicketResponse no active request
+SV: OnValidateAuthTicketResponse no active request for %lld
+SV: OnValidateAuthTicketResponse no client found
+SV: OnValidateAuthTicketResponse no client found for %lld
 SV: Player %s kicked for too many failed console commands.\n
 SV: ProcessMove %s on tick %d, packet had too many Move messages (expected only 1, this is %d), disconnecting user\n
 SV: Queuing k_EAuthSessionResponseAuthTicketCanceled for %s.\n
@@ -7693,6 +7723,7 @@ Source2PlayStats_Int32
 Source2PlayStats_Int64
 Source2PlayStats_Int8
 Source2PlayStats_Invalid
+Source2PlayStats_SteamID
 Source2PlayStats_String
 Source2PlayStats_UInt16
 Source2PlayStats_UInt32
@@ -8296,8 +8327,8 @@ UtlVectorMemory_CalcNewAllocationCount
 UtlVectorMemory_FailedAllocation
 U}JK
 U}g7x~
+V 3G
 V/?[w8rV
-V0&G
 V<@ss
 V?wm\v
 VApplication001
@@ -8433,7 +8464,6 @@ Visibility %s.\n
 Voice
 VoiceDataFormat_t
 Void
-Vp0G
 Vrad3_001
 Vu?N\t?8Ws?vGr?
 Vv.q
@@ -8611,7 +8641,7 @@ X\n'NETWORK_DISCONNECT_BADSPECTATORPASSWORD
 X\n'NETWORK_DISCONNECT_DIFFERENTCLASSTABLES
 X\n'NETWORK_DISCONNECT_KICKED_NOSTEAMTICKET
 X\n(NETWORK_DISCONNECT_INVALID_MESSAGE_ERROR
-X`hr`J
+X`hrpJ
 Xn1G
 Xr?9
 XsBI
@@ -8634,7 +8664,7 @@ Z?SHX?
 Z@&LHA'\r:C(
 ZOCg
 ZPKE?81("
-ZPk%
+ZPy%
 ZW][Rbmxv\fqsuwc;Wo?opP~|}|
 Z\>z8
 Z\n(NETWORK_DISCONNECT_KICKED_HOSTAGEKILLING
@@ -8715,7 +8745,9 @@ Zq",9\fB
 \fV4U
 \fX\fm\vH\vH\vm\v
 \f\tV_atofloat32
-\fp\v`TAB
+\fp,hB
+\fp\v`DNB
+\fp\v`pYB
 \g is not followed by a braced, angle-bracketed, or quoted name/number or by a plain number
 \n    Actual    : 
 \n    Field type: 
@@ -8775,8 +8807,11 @@ Zq",9\fB
 \n\fTYPE_FIXED64
 \n\fTYPE_MESSAGE
 \n\faudible_mask
+\n\fautoexec_cfg
 \n\favg_data_out
 \n\favg_loss_out
+\n\fcommand_line
+\n\fcommand_logs
 \n\fdire_team_id
 \n\fdouble_value
 \n\fencode_flags
@@ -8805,6 +8840,7 @@ Zq",9\fB
 \n\fsavegamename
 \n\fserver_count
 \n\fserver_popid
+\n\fsteamid_vals
 \n\fstring_value
 \n\fsvc_BSPDecal
 \n\fsvc_PeerList
@@ -8933,6 +8969,7 @@ Zq",9\fB
 \n\tmap_entry
 \n\tmax_value
 \n\tname_part
+\n\tosversion
 \n\tproximity
 \n\tsignature
 \n\tsound_num
@@ -9052,7 +9089,7 @@ Zq",9\fB
 \t?\tZ\tZ\tZ\tZ\t?\tg\t\n\t
 \t?\tZ\tt\tt\tt\t
 \tN1a
-\tTp(J
+\tTp8J
 \tV_acosf
 \tV_asinf
 \tV_atan2f
@@ -9112,7 +9149,7 @@ Zq",9\fB
 \vH\vm\vm\vm\vm\vH\vH\vH\vH\vH\v
 \vIG]h
 \vInterp
-\vPTAB
+\vPDNB
 \vSimulationTicks
 \vSource
 \vVyC
@@ -9121,6 +9158,8 @@ Zq",9\fB
 \vm\vm\vm\vH\vm\vm\v
 \vm\vm\vm\vm\vH\v
 \vnJH
+\vp,hB
+\vppYB
 \vxYT
 ] is an invalid data character in JavaScript compatibility mode
 ]\n,NETWORK_DISCONNECT_REJECT_INVALIDRESERVATION
@@ -9184,15 +9223,19 @@ _root_keyname
 _spawngroup_logging/log_%s_group_%s.txt
 _temp_mapcycle.txt
 `-uRQg
+`2Py%
+`2pJ
 `3Q"X
-`6P%G
-`6p/G
+`6@2G
+`6P<G
 `?m'_?&~]?(
 `RTTI
 `adjustor{
 `anonymous namespace'
+`bpJ
 `copy constructor closure'
 `default constructor closure'
+`dpJ
 `dynamic atexit destructor for '
 `dynamic initializer for '
 `eh vector constructor iterator'
@@ -9200,11 +9243,12 @@ _temp_mapcycle.txt
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
-`fT]B
+`fDjB
 `generic-class-parameter-
 `generic-method-parameter-
 `generic-type-
 `hp\nU
+`htPA
 `hyz
 `local static destructor helper'
 `local static guard'
@@ -9214,9 +9258,10 @@ _temp_mapcycle.txt
 `managed vector constructor iterator'
 `managed vector copy constructor iterator'
 `managed vector destructor iterator'
-`nT]B
+`nDjB
 `non-type-template-parameter
 `omni callsig'
+`pYB
 `placement delete closure'
 `placement delete[] closure'
 `scalar deleting destructor'
@@ -9246,7 +9291,7 @@ a numbered reference must not be zero
 a&M-=Z]<i*k)n-t&q&p&|
 a6>r
 a?wSa?\
-aBvT]B
+aBvDjB
 a\v4+Wk
 abcdefghijklmnopqrstuvwxyz
 abortflag
@@ -9939,17 +9984,17 @@ extend .$0 {\n
 extendee
 extension_range
 extern "C" 
+f"RG
 f#kI3\t
-f2EG
+f.RG
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
 f9U\n
-f>EG
 f?3Jf?6
 fD""B
 fD>b
 fDD"AUDT$t
+fDjB
 fP~V
-fT]B
 fWi?
 fabs
 failed
@@ -10194,7 +10239,7 @@ hostname
 hostname : %s\n
 hostname_in_client_status
 hostport
-hpz`
+hpzP
 hscript
 hscript_lightbinding
 http Send %.3f ms ave, %.3f ms max\n
@@ -10690,16 +10735,17 @@ multvar
 multvar: cvar "%s" not found\n
 multvar: no varname specified!\n
 mx=E
+n0.G
 n03>Pu
 n>sak><
 n?A6
 n?SZn?
 nBits != 32
+nDjB
 nGh>
 nI9>h
 nMax
 nMin
-nT]B
 nTries < 10000000
 n\n0NETWORK_DISCONNECT_KICKED_VACNETABNORMALBEHAVIOR
 n\tV_sincosf
@@ -10806,6 +10852,7 @@ not started
 not supported
 notes
 nothing to repeat
+npAG
 null
 nullptr
 num_bits
@@ -10916,25 +10963,26 @@ overwatch
 owM&
 owner dead
 oz>!km>
-p08@H^T]B
+p,QB
+p,hB
+p08@H^DjB
 p0p@
-p2`J
+p2pJ
 p2p_listpeers
 p2p_ping "%s"
 p4edit
-p<DB
-p>T]B
+p>DjB
 p?ff
 p@HPX`h\f
 pClass
 pClass->m_ClassID(%i) >= %i\n
 pClient
 pCm)
-pF`'G
+pDNB
+pFP4G
 pH\fy
 pMessage
 pServerClass
-pTAB
 pYa(bu
 p\r0\fP
 p\tV_sinf
@@ -10962,7 +11010,7 @@ password
 path
 pause
 paused
-pb`J
+pbpJ
 pc64
 peer
 pending
@@ -11005,7 +11053,7 @@ playing %s from '%s'\n
 playsound
 playsound 
 playsound <soundname>
-pnT]B
+pnDjB
 png 
 png_screenshot
 pointer, 
@@ -11019,6 +11067,7 @@ pos [player %d]: %.3f,%.3f,%.3f\n
 position
 positive_int_value
 postnetupdate
+ppYB
 preDistortionRenderSizeFactor
 predicted_by_player_slot
 prediction_sync
@@ -11088,8 +11137,8 @@ r?dar?\n
 rA?7
 rEy5
 rFg7
-rPl$
 r\tVr.>T
+r\vppYB
 r_add_views_in_pre_output
 r_always_render_all_windows
 r_aspectratio
@@ -11959,9 +12008,9 @@ utl_vector,
 utlstringtoken
 uzKs@>
 v2!L.2
+vDjB
 vE-2
 vQO+t
-vT]B
 vWewe
 val_bool
 val_byte
@@ -12144,7 +12193,6 @@ yiq-
 yslf`ZTMGA;5.
 z?Mbz?H5z?
 zFarCull
-zPk%
 zPrePassNormals
 z\n8NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
 z\nB\fz

@@ -2044,9 +2044,6 @@ cl_silencer_mode 0 (clientdll archive userinfo per_user)
 cl_simulate_dormant_entities true (developmentonly clientdll defensive)
 	<no description>
 
-cl_skel_constraints_enable true (replicated cheat)
-	<no description>
-
 cl_skeleton_instance_smear_boneflags false (clientdll cheat)
 	Smear boneflags across the model.  Costs computation, but tests to make sure your bone flags are consistent.
 

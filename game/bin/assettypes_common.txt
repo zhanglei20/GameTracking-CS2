@@ -356,6 +356,11 @@
 					m_ResourceVersion = 1
 					m_Encoding = "RESOURCE_ENCODING_KV3"
 				},
+				{
+					m_BlockID = "DNAR" // DNA rig
+					m_ResourceVersion = 1
+					m_Encoding = "RESOURCE_ENCODING_RAW_BYTES"
+				},
 			]
 			m_CompilerIdentifier = "CompileModel"
 		}
@@ -1300,9 +1305,25 @@
 		{
 			m_bFollowReferences = true
 		}
-		particle_operator = {}
-		particle_feature = {}
-		model_key = {}
-		collision_prop = {}
+		particle_operator =
+		{
+			m_bAllowDefinitions = false
+		}
+		particle_feature =
+		{
+			m_bAllowDefinitions = false
+		}
+		model_key =
+		{
+			m_bAllowDefinitions = false
+		}
+		collision_prop =
+		{
+			m_bAllowDefinitions = false
+		}
+		entity =
+		{
+			m_bAllowDefinitions = false
+		}
 	}
 }

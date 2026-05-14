@@ -287,15 +287,14 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
+(Agm
 (Custom Colors Disabled)
-(Ehm
 (Filter)
 (No Active Session)
 (No Asset)
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(ihm
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\nNx*\nCh+\n'
@@ -1241,7 +1240,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 <pre>"%s"</pre> Is not an allowed file path. %s<br><br>%s
 == PulseGraphDef ==\n
 =]?size@QScreen@@QEBA?AVQSize@@XZ
-?0Fk
 ?433?
 ??0Connection@QMetaObject@@QEAA@XZ
 ??0QAbstractSlider@@QEAA@PEAVQWidget@@@Z
@@ -1531,6 +1529,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??MQTreeWidgetItem@@UEBA_NAEBV0@@Z
 ??YQString@@QEAAAEAV0@AEBVQByteArray@@@Z
 ??YQString@@QEAAAEAV0@PEBD@Z
+?PHk
 ?UNKNOWN
 ?\f?debug@QMessageLogger@@QEBA?AVQDebug@@XZ
 ?\n?availableGeometry@QScreen@@QEBA?AVQRect@@XZ
@@ -2055,6 +2054,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?objectName@QObject@@QEBA?AVQString@@XZ
 ?open@QDialog@@UEAAXXZ
 ?open@QFile@@UEAA_NV?$QFlags@W4OpenModeFlag@QIODevice@@@@@Z
+?pGk
 ?paintEngine@QWidget@@UEBAPEAVQPaintEngine@@XZ
 ?paintEvent@QAbstractScrollArea@@MEAAXPEAVQPaintEvent@@@Z
 ?paintEvent@QAbstractSpinBox@@MEAAXPEAVQPaintEvent@@@Z
@@ -3630,13 +3630,13 @@ Greens
 Grid layout should be an array of arrays
 Group3Options
 Group4Options
-H1em
 HAC K  Unused Binding
+HEdm
+HEfm
 HSLA
 HSLA\t
 HSVA
 HSVA\t
-HYem
 Hable (U2/HLVR)
 Hack Dota Layer Opaque
 Hack Dota Layer Opaque Translucent
@@ -3649,6 +3649,7 @@ Hide
 Hide unless error/warning occurs
 High Contrast
 Highlights
+Hmcm
 Home
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HorizontalStrafeCamera
@@ -3709,7 +3710,6 @@ Indicate Test Failure
 Indicate that a checkpoint has been reached.
 Indicates a test failure if Value is false.
 Indicates a test failure if value is false; only tested when running unit tests
-Infm
 InitCCITTFax3
 InkNames
 InkSet
@@ -3775,6 +3775,7 @@ KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
 Kill This Cursor And Cancel
+L>x\tk
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -4925,6 +4926,7 @@ Writable
 Write error at scanline %lu
 Writeable
 X to the Y power
+X=em
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setCheckState@QStandardItem@@QEAAXW4CheckState@Qt@@@Z
@@ -4963,7 +4965,6 @@ YO?insertColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 YPosition
 YResolution
 YY?setDropAction@QDropEvent@@QEAAXW4DropAction@Qt@@@Z
-Y\nfm
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 YawCameraLeft
 YawCameraRight
@@ -5224,9 +5225,11 @@ _wjb
 `?value@QColor@@QEBAHXZ
 `?valueF@QColor@@QEBANXZ
 `Q?lightnessF@QColor@@QEBANXZ
+`Ucm
+`Uhm
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`ugm
+`egm
 a:fulltype
 a:typeparam
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ

@@ -1164,6 +1164,7 @@ $prefix_element$
 0pp@5tqE?|sO541
 0tU+xc:
 0x%llx
+0|44
 0}dV
 1!1'1-191C1E1K1]1a1g1m1s1
 11nN
@@ -1328,7 +1329,6 @@ $prefix_element$
 8GZS
 8SIffK5W
 8TZvrv<
-8XLH
 8\v8!83858A8G8K8S8W8_8e8o8q8}8
 8]Vc2
 8ca1
@@ -2004,7 +2004,7 @@ CAssetSystem::InitializeAssetSystem
 CAssetSystem::NotifyResourceStatusChange( %s ) - %s\n
 CAssetSystem::ProcessFileChanges unable to acquire the file change suspension cross-process mutex.
 CAssetSystem::Test_PreRecompileResourceAsset
-CAssetSystem::UpdateAllAssetFileCRCs(), C:\buildworker\csgo_rel_win64\build\src\assetsystem\assetsystem.cpp:4584
+CAssetSystem::UpdateAllAssetFileCRCs(), C:\buildworker\csgo_rel_win64\build\src\assetsystem\assetsystem.cpp:4605
 CAssetSystemTest::RunTests
 CAssetSystemTestSetup::DiscardInMemoryReplacement
 CAssetSystemTestSetup::EnsureAssetIsUpToDate
@@ -4252,6 +4252,7 @@ Proxy Certificate Information
 Public Key
 Public-Key
 Public-Key: (%d bit)\n
+P|44
 P|iC\r
 Q*hd
 Q/xtJ2
@@ -4405,6 +4406,7 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDSd
 R\r1>Vp
+R\vp|44
 R]Di
 R_T5Y
 Radius Random
@@ -5411,6 +5413,7 @@ Z~wl
 \n%12s%s
 \n5a=Z
 \n:82H
+\nP|44
 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 \n\tIPSec/IKE/Oakley curve #3 over a 155 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
 \n\tIPSec/IKE/Oakley curve #4 over a 185 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
@@ -5464,6 +5467,7 @@ Z~wl
 \v\vTSG
 \vj0k
 \vjC7
+\vp|44
 ]1h=bfz
 ]FhSD}
 ]GT7]
@@ -7718,6 +7722,9 @@ manipulatorSettings
 mapNodeName
 mapUsageType
 map_asset_references
+map_subasset_reference_counts
+map_subasset_reference_names
+map_subasset_reference_types
 maskGenAlgorithm
 maskGenFunc
 master secret
@@ -8478,6 +8485,7 @@ publiccontent_
 pvk data too short
 pvk too short
 pzKD)
+p|44
 q not prime
 q&A\nn
 q/\rg2
@@ -8518,6 +8526,7 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
+r\fp|44
 r\vDi
 radiusScale
 radius_random

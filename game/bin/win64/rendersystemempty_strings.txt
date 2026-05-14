@@ -164,7 +164,6 @@
 .?AVIRenderUtils@@
 .?AVIResourceTypeManager@@
 2\nP!E
-2\vpt
 5;FJ$,XEK4<
 7&F|If
 7T2,
@@ -240,14 +239,14 @@ CFAPlaneColor
 CLargeCommandBufferChunk CUtlMemoryPool
 CMediumCommandBufferChunk CUtlMemoryPool
 CRenderDeviceBase
-CRenderDeviceBase::AllocatePooledIndexBuffer(3646): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3682): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3823): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3854): 
-CRenderDeviceBase::AsyncSetTextureData(3285): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3539): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3626): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3662): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3803): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3834): 
+CRenderDeviceBase::AsyncSetTextureData(3265): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3519): 
 CRenderDeviceBase::CreateConstantBuffer(1571): 
-CRenderDeviceBase::EndRenderDocCapture(3519): 
+CRenderDeviceBase::EndRenderDocCapture(3499): 
 CRenderDeviceBase::FindOrCreateTexture(1713): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s\n
 CRenderDeviceBase::Flush(898): 
@@ -255,7 +254,7 @@ CRenderDeviceBase::ForceFlushGPU(915):
 CRenderDeviceBase::FreeTextureGPUResources(2025): 
 CRenderDeviceBase::FreeTextureGPUResources(2029): 
 CRenderDeviceBase::Present(610): 
-CRenderDeviceBase::StartRenderDocCapture(3506): 
+CRenderDeviceBase::StartRenderDocCapture(3486): 
 CSheetDataTextureCache::AllocateAndUploadSequenceData(582): 
 CTextureManagerBase::AsyncHookUpTextureBits
 CTextureManagerBase::LoadStreamingData
@@ -266,7 +265,6 @@ CTextureManagerBase::MN_OnResourceLoadCompleted
 CTextureManagerBase::MN_OnResourceLoadFailed
 CTextureManagerBase::MarkAsyncUpdatedThisFrame - Invalid texture handle.\n
 CTextureManagerBase::RemoveTextureFromAnyQueues
-CTextureManagerBase::WasAsyncUpdatedThisFrame - Invalid texture handle.\n
 CalibrationIlluminant1
 CalibrationIlluminant2
 CameraCalibration1

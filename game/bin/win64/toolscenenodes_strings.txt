@@ -4037,7 +4037,6 @@ $prefix_element$
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\rlhp
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpl
 2^pV
 2a"l
 2aboutToShow()
@@ -6352,7 +6351,7 @@ CMapCordon
 CMapDeformer
 CMapDeformerLattice
 CMapDeformerSimple
-CMapDoc::FrameUpdate(6644): 
+CMapDoc::FrameUpdate(6693): 
 CMapDocMaterialAdjustStruct
 CMapDocTestStruct
 CMapDotaGridnavMarkup
@@ -10448,7 +10447,6 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RT60 for low, mid, and high frequency bands for the probe.
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpl
 R\r1>Vp
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
@@ -15332,6 +15330,9 @@ mapUsageType
 mapVariables
 map_asset_references
 map_sg_%s
+map_subasset_reference_counts
+map_subasset_reference_names
+map_subasset_reference_types
 mapbuilder.blocklos
 mapbuilder.blocksound
 mapbuilder.ladder
@@ -16439,7 +16440,6 @@ rZ1VwGf5
 rZPM
 r\tV_sinhf
 r\vDi
-r\vpl
 rad2deg
 radiusScale
 radius_key
@@ -17619,7 +17619,6 @@ u0Az
 u5bB
 u6Bm
 u:9F
-u;0p
 u;{Gk
 uBY+
 uC<[rR

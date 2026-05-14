@@ -8766,6 +8766,7 @@ $modelname$_surface
 2DBlend
 2DBlendEditor
 2DBlendFromAnimation
+2Tq{
 2_BONE_IK
 4\r54t
 5;FJ$,XEK4<
@@ -8794,7 +8795,8 @@ $modelname$_surface
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
-@08N 
+@08NP
+@HPX`hv
 @Integer overflow in %s
 @Invalid Internal Point
 @m_vCenter
@@ -11885,7 +11887,7 @@ Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P08@J
 P08J0
-P08N 
+P08NP
 PARENT
 PF\n%d %d\n-1.000000\n
 POSE_SPACE_BONE
@@ -12184,7 +12186,7 @@ R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
 ROTATION
 R\vp!y
-R\vpH
+R\vpx
 R_T5Y
 Radial Basis Function Type
 Radius Params CP ( Prop Group Smallest Radius / Prop Group Largest Radius / Number of Avg Objects )
@@ -13202,7 +13204,6 @@ Zero input vector for info node!
 [cloth] | [procedural]
 [procedural]
 \fB33
-\fp\vPT
 \n[ERR] Not enough memory, shop for some more RAM. See you!\n
 \ndummyfilename.tif
 \ng default\n
@@ -13269,7 +13270,7 @@ _temp_tangent
 _volumeatlas_
 _wjb
 _zero
-aBv 
+aBvP
 a\tV_powd
 absolute
 acceleration
@@ -14451,7 +14452,7 @@ overrideclass
 overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
-p08@H^ 
+p08@H^P
 p0j0
 pEvent != nullptr
 pParentTrack != nullptr
@@ -14592,7 +14593,7 @@ pushout_strength
 quad_bend_tolerance
 quadratic
 r>0f
-r\fpH
+r\fpx
 radius0_key
 radius1_key
 radius_key

@@ -110,10 +110,11 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j 5
+ (08@HPX`j0M
  (08@HPXb
- (08@HPZ 5
+ (08@HPZ0M
  (08@HR
+ (08@J0M
  (0X`hpz
  (DEFAULT)
  (Dirty Animation)
@@ -2200,7 +2201,6 @@ $taser_charge
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
-%n4Xt
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -2643,7 +2643,6 @@ $taser_charge
 (.CPlayer_SetPerFriendPreferences_Request
 (0'yX
 (0x%08X)'??'
-(48s
 (5Me
 (5jP
 (ACTIVE)
@@ -2940,7 +2939,6 @@ $taser_charge
 ).CPlayer_GetPerFriendPreferences_Response"M
 ).CPlayer_SetCommunityPreferences_Response"+
 ).CPlayer_SetPerFriendPreferences_Response"G
-)24Xs
 )4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )A service for accessing Steam player dataB
 )App Id this file is being published FROM.
@@ -3121,9 +3119,7 @@ $taser_charge
 ,\n\nsv_interp0
 ,\n\nsv_interp1
 ,\n\vvictim_slot
-,]p38p
 ,ar_monastery
-,d;4xs
 ,fQM(
 ,h11]
 ,hmQ#
@@ -3131,7 +3127,7 @@ $taser_charge
 ,kj8\te
 ,name:
 ,oYR
-,sK3
+,sK3H
 ,section=
 ,value:
 - "%s" = "%.2f"\n
@@ -3161,7 +3157,6 @@ $taser_charge
 --CLoopModeGame::~CLoopModeGame
 --file:
 -.CPlayer_GetNewSteamAnnouncementState_Request
--4Hs
 -5X5
 -;-C-I-M-a-e-q-
 -> Success (%d attempts)\n
@@ -8324,6 +8319,7 @@ $taser_charge
 .?AVCLocVariableSetBase@@
 .?AVCLocalPlayerFilter@@
 .?AVCLocatorTarget@@
+.?AVCLogForBugBug@@
 .?AVCLogicRelay@@
 .?AVCLogicalEntity@@
 .?AVCLoopModeGame@@
@@ -10881,7 +10877,6 @@ $taser_charge
 .yAu[7
 /'/)/A/E/K/M/Q/W/o/u/}/
 /2x1
-/30o
 /5dJ
 /?appid=%u
 /Published file id of the file we'd like update.
@@ -10935,9 +10930,9 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR 5
+08@HR0M
 08@J
-08B 5
+08B0M
 08bX
 09,h
 0;Q5[
@@ -10970,6 +10965,7 @@ $taser_charge
 0e\r8
 0pp@5tqE?|sO541
 0tU+xc:
+0v4 
 0x%4.4x 
 0x%X
 0x%X 
@@ -11211,8 +11207,6 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpT
-2\vpl\v
 2^pV
 2a"l
 2bT~
@@ -11299,13 +11293,11 @@ $taser_charge
 4\n/k_EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate
 4\n0GAME_PARTICLE_MANAGER_EVENT_SET_OVERRIDE_TEXTURE
 4\n0GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW
-4\re4h$
 4\vU44
 4f h
 4tpD
 4zj@1;IJ
 4|2;#GameUI_Retake_Card_LightEmUp,1,1,rifle1,grenade0|2;#GameUI_Retake_Card_Kobe,1,1,rifle1,grenade2|1;#GameUI_Retake_Card_1g,1,1,rifle1,grenade3|1;#GameUI_Retake_Card_DisappearingAct,1,1,rifle1,grenade1|1;#GameUI_Retake_Card_EyesOnTarget,1,1,weapon_aug
-4~3hp
 5'0v2ZP
 5(EWorkshopFileType) Type of Workshop file to publish.
 5(Optional) The number of results, per page to return.
@@ -11355,7 +11347,6 @@ $taser_charge
 6144
 62$|S)6f
 64CK\vH
-64hs
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 6666666666666666C:\buildworker\csgo_rel_win64\build\src\common\opensslwrapper.cpp
 67-s
@@ -11429,14 +11420,14 @@ $taser_charge
 8192
 8285-YOAZ-6049
 82\n:XPH
-83Po
 851Pe
 8835-KLXV-0292
 8<pl
 8= zp
-8@J 5
+8@J0M
 8A6j
-8B 5
+8B0M
+8B3(
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11446,6 +11437,7 @@ $taser_charge
 8Name of the file to use as the published file's preview.
 8SIffK5W
 8TZvrv<
+8\n0M
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
 8\n3k_EGCItemCustomizationNotification_GenerateSouvenir
 8\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2
@@ -11533,13 +11525,14 @@ $taser_charge
 ;"lY7
 ;5jNf
 ;83\v\nHBJ7
+;I48
 ;LGEW
 ;Qo0
-;Subtitles and Captions
 ;\n\nPerMapRank
 ;\n\vrank_update
 ;`Fzc
 ;bwP*
+;env_volumetric_fog_controller
 ;sv_pausable;sv_cheats
 ;xsK
 <!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n
@@ -11701,6 +11694,7 @@ $taser_charge
 ?HP4
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 ?MapItemPreviewPanel SetModel
+?OnSource1Source1LegacyGameEvent: Early event sv %d / cl %d. Total in queue %d.\n
 ?The most recent last-played time the client already knows about"
 ?VBH;
 ?\n:k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
@@ -11722,12 +11716,14 @@ $taser_charge
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N
+@08N4 
 @0pp
+@20M
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
-@HPX`hv0
+@Determines recharge time for taser. -1 = disabled.
+@HPX`hv
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11744,7 +11740,6 @@ $taser_charge
 @dKb]
 @fff>fff>fff>fff>
 @ffffff
-@htp
 @i1V
 @icon_camera
 @icon_character
@@ -11752,7 +11747,6 @@ $taser_charge
 @icon_item
 @keyframes 
 @keyframes '%s'\r\n{\r\n
-@m_bIronSightAvailable
 @n2w
 @workshop
 @zDSteamUnifiedMessages
@@ -12028,6 +12022,7 @@ AcknowledgeNewItembyItemID
 AcknowledgeRentalExpiration
 Acknowledged_HasInsufficientPagefile
 Acknowledged_HasLowAvailableVirtualMemory
+Acl_allow_multi_input_binds
 Action
 ActionAbandonOngoingMatch
 ActionAcknowledgeNotifications
@@ -12151,6 +12146,7 @@ AlertNoticeScrollInTime
 AlertPanel%d
 AlertText
 AlertVisible
+Alevellist_t
 All itemsets must have names.
 All lootlists must have names.
 All-Star
@@ -12626,6 +12622,7 @@ BScrollParentToFitWhenFocused
 BSecureAllowed
 BSetProperty
 BSignedInToFriends
+BSource2ClientConfig001
 BT5f
 BUCKSHOT
 BUF lib
@@ -12757,7 +12754,6 @@ Blacksite
 Blank
 Blend (Masked): %.2f%%
 Blend: %.2f%%
-Blocalization_quest_item_string_printout
 Block Headers | 
 BlockLight
 BlogAPI
@@ -12783,7 +12779,7 @@ BlurBackground
 BlurBuffer
 BlurOperationPanel
 BlurPopupPanel
-Bm_vecSellbackPurchaseEntries
+Bm_iPing
 BoX5
 Body Component Scriptdesc
 BodyGameSystem
@@ -12862,7 +12858,6 @@ Broken pipe
 BrowserGoToURL
 BrowserGoToURL( %s )
 Bs'n
-Bsv_csgo_gpu_culling_skybox
 Bu 5
 BuddyButton/ArmedBgColor
 BuddyButton/ArmedFgColor1
@@ -12870,6 +12865,8 @@ BuddyButton/ArmedFgColor2
 BuddyButton/FgColor1
 BuddyListBgColor
 Buffer too small
+BugBug operation pending. Please wait.
+BugBug recently sent. Please wait before doing again.
 BugSub
 Build
 Build Luminance Histogram
@@ -15987,7 +15984,6 @@ Close event
 Close event elements completed.
 Close the group automatically after a short wait (good for 'success' messages)
 Close the group automatically when the associated parent process exits (good for sticky 'error' messages)
-CloseAcceptPopup
 CloseAllFullScreenOpaquePopups
 CloseAllVisiblePopups
 CloseCaptionNoAttenuate
@@ -16999,6 +16995,7 @@ DemoPlaybackTitle
 DemoSetHUDVisible
 DemoSetMouseEnabled
 DemoToggleUI
+Dend_of_match_camera
 Denies mouse input to the game by filtering mouse input events. Returns a handle used by ReleaseDenyInputFlagsToGame.
 Depot
 Deprecated
@@ -17116,7 +17113,7 @@ DistanceThreshold
 Div R%d <- R%d / R%d
 Dividing by zero in CNmFloatMathNode
 Dizzy
-Dm_szTeamMatchStat
+Dm_timestamp
 DnRv
 DoAllocateEntity failed\n
 DoAllocateEntity pEntity->m_pInstance != NULL %d\n
@@ -18002,6 +17999,7 @@ FLASBANG: Time[%0.2f] Alpha[%0.2f] Snapshot[%0.2f]: \n
 FLASHBANG
 FLOAT1
 FLOAT2
+FMOD
 FN|p
 FORCE_CAPTION
 FORCE_NOT_USED
@@ -18045,6 +18043,7 @@ FX_RicochetSound.Ricochet
 FX_TracerSound
 F\f5F4'
 F\n ParticleFreezeTransitionOverride
+F\n0M
 F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
@@ -20691,6 +20690,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
+JY3x
 JZIX
 J\nHBF
 J`KL
@@ -20830,12 +20830,11 @@ LOG_MESSAGE
 LONG
 LONG_C2I
 LPVIndex
-LS&\nK
+LS&\nKP
 LT[N
 LT_txt
 LXKQ
 LY\r5
-L\fP6
 L\n\fincludevotes
 L\n\nserverinfo
 L\n\tfile_type
@@ -22096,7 +22095,6 @@ OnSimulate
 OnSimulationChanged
 OnSimulationTimeChanged
 OnSoundFinished
-OnSource1Source1LegacyGameEvent: Early event sv %d / cl %d. Total in queue %d.\n
 OnSpawn
 OnSpriteScaleChanged
 OnStartDeath
@@ -22245,13 +22243,14 @@ P-256
 P-384
 P-521
 P08@J
-P08J@7
-P08N
+P08JPO
+P08N4 
 P1\t98"
-P2 5
+P20M
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
 P5[1
+P6p(
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -22788,7 +22787,7 @@ Pitch: %6.1f   Yaw: %6.1f   Dist: %6.1f %19s
 Pitch: %6.1f   Yaw: %6.1f %38s
 Pitstop
 PivotPaint
-Pj 5
+Pj0M
 PlaceDecalEvent_t
 PlaceholderText
 PlantedBomb
@@ -22921,6 +22920,7 @@ Playsoundscape %s:Unknown command %s\n
 Please specify 0 or 1 with the -stream Parameter\n
 Pm8A?
 PmR"H?
+Pn4 
 Point entity.
 PointsAnim
 Policy Qualifier CPS
@@ -23158,7 +23158,6 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
-Q$4(s
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23394,11 +23393,10 @@ RT %dx%d %s %s : %d Bytes\n
 RT_txt
 RTime32
 RULESHERE
-R\fpl\v
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpT
+R\vpl
 R]Di
 Rad2 Deg
 Radar
@@ -24467,6 +24465,7 @@ Send a string to the console as a client command
 SendProxyNeverSend_RecipientsFilter
 SendToConsole
 Sending ping request %d/4.
+Sent BugBug message to server\n
 Separate Eye Ramp
 Seqnc
 Sequence Name
@@ -25007,6 +25006,7 @@ ShowHudRadio
 ShowHudRosettaSelector
 ShowLoadoutForItem
 ShowReadyUpPanel
+ShowSelectItemForCapabilityPopup
 ShowSelectItemForWorkshopPreviewCapability
 ShowSimpleContextMenu
 ShowSimpleContextMenuWithDismissEvent
@@ -25530,6 +25530,7 @@ Suboptimal
 Subscribed
 SubscribedType
 Subscribing
+Subtitles and Captions
 Subzero
 Success
 Success event 
@@ -26238,6 +26239,7 @@ UM_SayTextChannel
 UM_ServerFrameTime
 UM_Shake
 UM_UpdateCssClasses
+UM_UserSentBugBug
 UM_UtilActionResponse
 UNASSIGNED
 UNCHANGED
@@ -27156,7 +27158,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr 5
+X`hr0M
 Xd3h
 XfJ7
 XjfR
@@ -27361,7 +27363,6 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\vPL
 \ful2
 \fy&3Gl
 \l:ArR
@@ -27520,7 +27521,6 @@ Z~wl
 \n\fbuttonstate3
 \n\fcmd_friendly
 \n\fcmd_teaching
-\n\fcommand_line
 \n\fcontent_type
 \n\fcontributors
 \n\fcreationtime
@@ -27820,6 +27820,7 @@ Z~wl
 \n\rteam_id_start
 \n\rteam_id_veto1
 \n\rtemplate_file
+\n\rthrough_smoke
 \n\rtier_unlocked
 \n\rtime_acquired
 \n\rtime_play_ban
@@ -27905,7 +27906,6 @@ Z~wl
 \n\tnextmatch
 \n\tnum_kills
 \n\tnumrounds
-\n\tosversion
 \n\toutcomeid
 \n\tp2p_Voice
 \n\tpaintseed
@@ -28413,9 +28413,9 @@ _util_drawtext_pos
 _var
 _xU`u
 _}eOk
+`20M
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`43@o
 `:zQF
 `D$daM-l
 `DZG
@@ -28426,6 +28426,8 @@ _}eOk
 `\n\rvector_values
 `anonymous-namespace'::DynamicLockHelper<struct `anonymous namespace'::SmokeConstantBuffer_t>::Lock
 `anonymous-namespace'::DynamicLockHelper<struct `anonymous namespace'::SmokeLightProbeVolumeData_t>::Lock
+`b0M
+`d0M
 `fPw.\vM
 `h9T~
 `o_je
@@ -28446,6 +28448,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
+aBv4 
 aD/x
 aDSS
 aECDH
@@ -29183,6 +29186,7 @@ auto_rotate_y
 autobuy.txt
 autocompleteposition
 autocompletetext
+autoexec
 autogenerated_tga
 autograph
 automatically
@@ -31734,7 +31738,6 @@ end_as_info
 end_drag_sound
 end_group
 end_of_match
-end_of_match_camera
 end_of_match_celebration_ID
 end_of_match_character
 end_of_match_lineup_end
@@ -31837,7 +31840,6 @@ env_sprite
 env_sprite_oriented
 env_tonemap_controller
 env_tonemap_controller2
-env_volumetric_fog_controller
 env_volumetric_fog_volume
 env_wind_clientside
 env_wind_controller
@@ -33417,7 +33419,6 @@ i2d_SSL_SESSION
 i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
-i4Ht
 i4a."
 i5BH
 iA5StringSyntax
@@ -33437,6 +33438,7 @@ iSuccessCount
 iU[&l
 iVY2L
 i\n\ttotalonly
+i`R3
 ia5org
 ia7@\t H9
 iana
@@ -34399,7 +34401,6 @@ k+Aq
 k/sn
 k0>Z,
 k26C*
-k3(p
 k8\vD
 k8fo
 k8xA
@@ -34815,7 +34816,7 @@ lC57
 lDcW
 lM2p
 l\n\fexcludedtags
-l`w4xt
+l`w4
 label_token
 ladder
 ladder_angle_yaw
@@ -35158,7 +35159,7 @@ lowresdepth
 luminaire_anisotropy
 luminaire_shape
 luminaire_size
-lvR4
+lvR4X
 m&9W
 m*Zu
 m249
@@ -36318,6 +36319,7 @@ n5cM
 n6j/
 n:2C[
 n@PK
+nBmat_shading_complexity
 nCRD
 nChangeOffset < INT16_MAX
 nChangeOffset > 0
@@ -36444,6 +36446,7 @@ niv <= EVP_MAX_IV_LENGTH
 nkey <= EVP_MAX_KEY_LENGTH
 nl_NL
 nmI\n8
+nm_FOV
 nmonqnmomnmomomno
 nmvos^\n
 no accept port specified
@@ -37004,8 +37007,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
-p2 5
+p08@H^4 
+p20M
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37024,7 +37027,10 @@ p5\nL,
 p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
+pAshard_model_desc_t
+pBClears all debug overlays
 pCheckpointName
+pCloseAcceptPopup
 pD4t
 pData->GetDataDescMap() == pTemplateDataMap
 pDescription
@@ -37042,7 +37048,6 @@ pRTH
 pRequest
 pSPo
 pSequenceName
-pShowSelectItemForCapabilityPopup
 pSource
 pSourceFunc
 pSpawnedEntityName
@@ -37367,7 +37372,7 @@ payload-%u-%u.data
 payment gateway capabilities
 payment_row_usd
 payment_us_usd
-pb 5
+pb0M
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -37654,6 +37659,7 @@ playtime
 playtime_2weeks
 playtime_forever
 plum
+pn4 
 point
 point arithmetic failure
 point at infinity
@@ -38052,7 +38058,6 @@ r$0I
 r-IE
 r184
 r3A~
-r4ht
 r<\rND
 rAGW
 rB2pBB
@@ -38067,10 +38072,10 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
+r\fpl
 r\n\vstart_index
 r\vDi
 r\vp!K
-r\vpl\v
 r_2PassBuildDraw 0
 r_2PassBuildDraw 1
 r_csm_fast_path 0
@@ -39976,7 +39981,6 @@ t(ydU
 t+RW
 t0;?ZlP*m
 t2U 
-t3Hp
 t4O_
 t80z
 tA`KO/3G!\n7h=
@@ -40982,6 +40986,7 @@ usage:  %s <entindex>\n
 usage:  cc_emit tokenname\n
 usage:  cc_findsound 'substring'\n
 usage_capabilities
+use 'bugbug' command instead.
 use after date
 use srtp not negotiated
 use target is
@@ -41854,7 +41859,6 @@ y#y&Jb
 y-offset
 y0JY
 y2Cu
-y3Xp
 y;w9
 y>?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
 y?iLa

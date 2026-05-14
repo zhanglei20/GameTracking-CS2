@@ -16,7 +16,7 @@
   system status: %s\n
   version max  : %u.%u\n
   version used : %u.%u\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$0
  %dms faster than direct ping of %dms
  (08@HPX`j
  (08@HPXb
@@ -260,13 +260,17 @@
 0 bit issue, spot 4
 08@HR
 08@J
-2\vp8M
-2\vplJ
-2\vpt9
+0v8X
+2\vp$E
 ::Storage_t
 <classname> <fieldname>:  spew why field was excluded from networking for classname.
-@08N
-@ht0
+@08N8X
+@HPX`hv@r
+@HVP
+@Nps
+@f8X
+@n8X
+AA:P
 Accepting Steam Net connection %s\n
 AckSeqNum
 Activates/deactivates net message validation
@@ -678,8 +682,10 @@ Order,'From','To',Bits\n
 OutSeqNumAck
 Overrides IP for multihomed hosts
 P08@J
-P08J0
-P08N
+P08J
+P08N8X
+P6Pl
+P6p`
 PACKET_STATUS_DROPPED
 PACKET_STATUS_INVALID
 PACKET_STATUS_NORMAL
@@ -738,8 +744,6 @@ QueueChange
 QueueReplayCompatFieldChange( %s ): can't place MNetworkReplayCompatField callback on a fully fake struct (e.g., a pointed to component or object), game code should move callback on entity %d to a C_BaseEntity derived class!\n
 QueueTimeMS
 RSDS[>
-R\fp8M
-R\vplJ
 RadianEuler
 ReadFields
 Recv
@@ -880,7 +884,6 @@ X`hr
 [Name]
 [context entity 0x%p]
 [opaque]
-\fplJ
 \nNon-networkables\n\n
 \rBytes
 \tCannotBeNetworked        = %s\n
@@ -894,8 +897,9 @@ X`hr
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 \vInSeqNum
 \vMsgTick
-\vplJ
-`ht0
+`f8X
+`n8X
+aBv8X
 activated
 added
 aggegated
@@ -972,6 +976,7 @@ g_pSteamNetworkingSockets
 g_pSteamNetworkingUtils
 groupindex
 groupnames
+hAX%
 has_network_encoding_data
 hostip
 huge
@@ -1079,11 +1084,10 @@ out-of-order
 outgoing_data_bytespersecond
 outgoing_sequence
 outgoing_sequence_start
-p08@H^
-p6Pr
-pF0G
+p08@H^8X
+p0jP
+p>8X
 p\rP\f0!h
-p\r`\fPlJ
 packet_status
 parallel
 paths
@@ -1091,6 +1095,7 @@ pending data
 pmInfoDest.m_pFlattenedSerializer
 pmInfoDest.m_unPolymorphicTypeId == pmInfoSource.m_unPolymorphicTypeId
 pmInfoSource.m_pFlattenedSerializer
+pn8X
 pointer field
 polymorphic
 polymorphic [forced]
@@ -1102,7 +1107,6 @@ pri(%u)
 problem detected locally
 qangle_pitch_yaw
 qangle_precise
-r\vp8M
 records
 regex
 regex_error
