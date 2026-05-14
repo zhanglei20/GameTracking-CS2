@@ -13460,6 +13460,8 @@ buddha_reset_hp
 bug
 bug [auto_fill_tokens] [-title <text>] [-noscreenshot] : Activate the bug reporter.
 bug_submitter_override
+bugbug
+bugbug_commit
 bugvoice_clear
 bugvoice_save
 buildcubemaps
@@ -14156,7 +14158,6 @@ cl_showusercmd
 cl_silencer_mode
 cl_sim_grenade_trajectory
 cl_simulate_dormant_entities
-cl_skel_constraints_enable
 cl_skeleton_instance_smear_boneflags
 cl_skip_hierarchy_update_for_unchanged_entities
 cl_skip_update_animations

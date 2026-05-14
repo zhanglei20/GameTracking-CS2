@@ -264,6 +264,12 @@ breakable_force_break (developmentonly gamedll defensive)
 bug (developmentonly dontrecord defensive)
 	bug [auto_fill_tokens] [-title <text>] [-noscreenshot] : Activate the bug reporter.
 
+bugbug (clientdll release)
+	bugbug
+
+bugbug_commit (clientdll release)
+	bugbug_commit
+
 bugvoice_clear (developmentonly dontrecord defensive)
 	Clear voice attachment data.
 

@@ -306,25 +306,24 @@ $\n\tword_list
 '\n\fglobal_stats
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
-(5JY
-(5RY
-(5yY
-(9BY
-(9MY
+(50Y
+(52Y
+(5EY
+(5QY
+(5rY
+(AXY
 (Documents Filter - Use | for OR, space for AND)
-(E2Y
-(EjY
 (Filter)
-(I1Y
-(IkY
-(M4Y
+(INY
+(ITY
 (No Active Session)
 (Outliner Filter)
-(U6Y
-(Y3Y
-(Y7Y
-(YEY
-(YNY
+(QLY
+(QdY
+(UFY
+(UHY
+(UPY
+(YxY
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -448,13 +447,16 @@ $\n\tword_list
 (\v2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 (\v2\f.CSOEconItem
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
+(a5Y
+(aWY
+(ajY
 (default)
-(eTY
-(i5Y
-(mLY
-(myZ
-(qXY
-(qcY
+(iJY
+(maY
+(mfY
+(qiY
+(u7Y
+(yUY
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n!penalty_account_id_sessions_green
@@ -2878,8 +2880,7 @@ $\n\tword_list
 7\n2k_EGCItemCustomizationNotification_XpShopUseTicket
 7\n2k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
-81[X
-81vX
+8%gY
 8F@f@
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
@@ -2889,7 +2890,6 @@ $\n\tword_list
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8igY
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 9\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
@@ -4378,6 +4378,8 @@ $\n\tword_list
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @08N,
+@HCS
+@HPX`hv
 @\n\fSingleObject
 @\n\vserver_type
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
@@ -6553,6 +6555,7 @@ Zip system failure.\n
 \nNo modified item assets. Nothing to save.\n
 \nOpened By: 
 \nS?moveTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
+\nSgY
 \nThis assigns a permanent Schema reservation with the GC required for shipping.\n\nAre you sure?\n
 \nThis will delete '%1' from the tree.\n\nAre you sure?\n
 \n\fEGCSystemMsg
@@ -6980,8 +6983,8 @@ _toolsautosave
 `6PE@
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
-`MzZ
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
+`mhY
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ

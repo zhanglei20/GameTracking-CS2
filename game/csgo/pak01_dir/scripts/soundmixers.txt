@@ -1344,7 +1344,7 @@
 				mixgroup = "Cache"
 				vol = 0.504
 				solo = 0.0
-				mute = 0.024
+				mute = 0.0
 				lvl = 1.0
 				dsp = 1.0
 			},

@@ -1085,9 +1085,31 @@
 				}
 			},
 			{
+				name = "get_vsnd_track_01"
+				operator = "opvar_get_vsnd"
+				execute_once = "true"
+				check_event_data = "true"
+				input_operator_name = "public"
+				input_field_name = "vsnd_files_track_01"
+				input_use_namespace = "false"
+				array_selection_type = "random_exclusive"
+			},
+			{
 				name = "mixer"
 				operator = "soundmixer_get_mixgroup"
 				mixgroup = "@public.mixgroup"
+			},
+			{
+				name = "get_vsnd_info"
+				operator = "vmix_vsnd_info"
+				input_vsnd = "@get_vsnd_track_01.output"
+			},
+			{
+				name = "math_float"
+				operator = "math_float"
+				apply = "sub"
+				input2 = "@get_vsnd_info.output_duration"
+				execute_once = "1"
 			},
 			{
 				name = "randomize_start_time"
@@ -1095,7 +1117,7 @@
 				execute_once = "1"
 				input_execute = "@public.randomize_start_time"
 				output = "0"
-				input_min = "-1000"
+				input_min = "@math_float.output"
 				input_max = "0"
 			},
 			{
@@ -1937,16 +1959,6 @@
 				input2 = "1.000000"
 			},
 			{
-				name = "get_vsnd_track_01"
-				operator = "opvar_get_vsnd"
-				execute_once = "true"
-				check_event_data = "true"
-				input_operator_name = "public"
-				input_field_name = "vsnd_files_track_01"
-				input_use_namespace = "false"
-				array_selection_type = "random_exclusive"
-			},
-			{
 				name = "distance_volume_mapping_curve"
 				operator = "math_curve_2d"
 				input = "@multiplied_distance.output"
@@ -2137,11 +2149,6 @@
 				input1 = "@volume_fan.output"
 				input2 = "@volume_fan_scale.output"
 				input = "@speaker_spatialize_mult.output"
-			},
-			{
-				name = "get_vsnd_info"
-				operator = "vmix_vsnd_info"
-				input_vsnd = "@get_vsnd_track_01.output"
 			},
 			{
 				name = "vsnd_not_ready"

@@ -125,13 +125,13 @@
 %suncompressed data
 (%s): ADD %s = %s\n
 (%s): Setting %s to %s\n
-(9uA
-(AvA
+(9sA
+(9tA
 (On the line reading %s):\n
+(QuA
 (Repeated %dx) 
-(YsA
-(YtA
-(quA
+(avA
+(esA
 *** Buffer "%s": Failed to create shader resource view!\n
 *** Buffer "%s": Failed to create unordered access view!\n
 *** CVfx::StartupSanityCheck(7115): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!\n
@@ -321,7 +321,6 @@
 11_1
 2\f%24
 2\nP!E
-2\vpx
 3|am
 5;FJ$,XEK4<
 7&F|If
@@ -504,14 +503,14 @@ CRenderContextDx11_SoftwareCommandLists::ForceFlushGPU(2508):
 CRenderContextDx11_SoftwareCommandLists::ResolveUsingShaders(2025):  failed to get ID3D11ShaderResourceView for source texture '%s', skipping.\n
 CRenderContextDx11_SoftwareCommandLists::ResolveUsingShaders(2042):  failed to get view for dest texture '%s', skipping.\n
 CRenderDeviceBase
-CRenderDeviceBase::AllocatePooledIndexBuffer(3646): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3682): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3823): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3854): 
-CRenderDeviceBase::AsyncSetTextureData(3285): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3539): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3626): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3662): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3803): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3834): 
+CRenderDeviceBase::AsyncSetTextureData(3265): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3519): 
 CRenderDeviceBase::CreateConstantBuffer(1571): 
-CRenderDeviceBase::EndRenderDocCapture(3519): 
+CRenderDeviceBase::EndRenderDocCapture(3499): 
 CRenderDeviceBase::FindOrCreateTexture(1713): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s\n
 CRenderDeviceBase::Flush(898): 
@@ -520,7 +519,7 @@ CRenderDeviceBase::FreeTextureGPUResources(2025):
 CRenderDeviceBase::FreeTextureGPUResources(2029): 
 CRenderDeviceBase::InitPerFrameMemoryStack
 CRenderDeviceBase::Present(610): 
-CRenderDeviceBase::StartRenderDocCapture(3506): 
+CRenderDeviceBase::StartRenderDocCapture(3486): 
 CRenderDeviceDx11::BeginSubmittingDisplayLists(1162): 
 CRenderDeviceDx11::CreateDefaultShaders::<lambda_1>::operator ()
 CRenderDeviceDx11::DeleteQueryObject(3862): 
@@ -559,7 +558,6 @@ CTextureManagerBase::MN_OnResourceLoadCompleted
 CTextureManagerBase::MN_OnResourceLoadFailed
 CTextureManagerBase::MarkAsyncUpdatedThisFrame - Invalid texture handle.\n
 CTextureManagerBase::RemoveTextureFromAnyQueues
-CTextureManagerBase::WasAsyncUpdatedThisFrame - Invalid texture handle.\n
 CTextureManagerDx11::ComputeTextureObject
 CTextureManagerDx11::ComputeTextureObject: Tried to create a depth-stencil texture which is *not* a render target!\n
 CTextureStreamingHelper::LoadExplicitlyRequestedTextures
@@ -952,16 +950,17 @@ GrayResponseCurve
 GrayResponseUnit
 Group3Options
 Group4Options
+H)yA
+H=zA
 HEADER
 HEX_DIGIT
-HIyA
-H]zA
 HalftoneHints
 Hash
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.\n
+HixA
+HizA
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HostComputer
-I2zA
 I@r9iF
 IB Size: %s (Count: %d)\n
 IBPool
@@ -1352,6 +1351,7 @@ RDEF|\t
 RENDERDOC_GetAPI
 RESOURCE_MANIPULATION
 RESOURCE_TYPE_TEXTURE
+R\vpT^
 R_T5Y
 RawDataUniqueID
 RayReconstruction.Hint.Render.Preset.Balanced
@@ -1679,6 +1679,7 @@ XMLPacket
 XPosition
 XResolution
 XYZ, Luv
+XayA
 YCbCrCoefficients
 YCbCrPositioning
 YCbCrSubsampling
@@ -1696,7 +1697,6 @@ ZIPVSetField
 [%Y-%m-%d %H:%M:%S] 
 [FlipDiscard |    NoTear]
 [FlipDiscard | AllowTear]
-\fphF
 \mfpmp.exe
 \n*** %s "%s" in %s does not follow the 0..N format!\n\n
 \n*** %s "%s" in %s has max(%d) > 254!\n\n
@@ -1795,6 +1795,7 @@ ZIPVSetField
 \tg_TSPointerListNodes
 \tpSubResource[ array %d mip %d ]: pSysMem = %p sysMemPitch = %d SysMemSlicePitch = %d\n
 \tpTextureBitsData = %p\n
+\vp4F
 _DOD3D
 _INTC_CreateDeviceExtensionContext
 _INTC_D3D11_BeginUAVOverlap
@@ -1883,6 +1884,7 @@ _psrs
 _rtx
 _tools.txt
 _wjb
+`ywA
 a\tV_powd
 agsDeInitialize
 agsDriverExtensionsDX11_CreateDevice
@@ -2101,6 +2103,7 @@ psrs
 q!T9MiZ
 r1?1
 rP1`=RO
+r\fpT^
 r_dilatedDepth
 r_dilated_motion_vectors
 r_dilated_reactive_masks

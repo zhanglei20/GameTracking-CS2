@@ -277,7 +277,7 @@
 			name = "CCSGraphicsSettings_Minimal_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/cstrike15/panorama/3dpanels/csgo_graphicssettings_3dpanel.cpp"
-			source_line = 357
+			source_line = 355
 			resources = 
 			[
 				resource_name:"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl",

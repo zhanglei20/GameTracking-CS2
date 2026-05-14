@@ -1048,6 +1048,7 @@ $tIP
 ?PUNCTUAL
 ?The "Tools" menu above gives access to: Style Editors (ImPlot/ImGui)\nand Metrics (general purpose Dear ImGui debugging tool).
 ?VertexPos_t
+?VertexUVPos_t
 ?XXXXXXXXXXXXXXXX
 ?alpha
 ?expf
@@ -1096,6 +1097,8 @@ $tIP
 @33333{
 @33333}
 @33SA
+@HPX`hv
+@Hide
 @OS/2
 @fff>fff>fff>fff>
 @fffff
@@ -1139,7 +1142,6 @@ $tIP
 @fffffx
 @fffffz
 @fffff|
-@sc_setclassflags %s %d
 A Rather Long Title
 A#4A\v
 A*A3
@@ -2875,7 +2877,6 @@ Hex-encode non-ASCII
 Hi`d
 Hidden
 HiddenTabBar
-Hide
 Hide Filtered
 Hide tab bar###HideTabBar
 Hierarchy lines
@@ -5466,7 +5467,6 @@ VertexPosInstanceUV_t
 VertexPostProcess_t
 VertexSize
 VertexUVPosColorNormalAndTangent_t
-VertexUVPos_t
 VertexWireFrame2D_t
 VertexWireFrame_t
 Vertical
@@ -6923,6 +6923,7 @@ s1s:sHsX
 s_hScrambledHalton != GENERIC_DATA_HANDLE_INVALID
 sc_dumpworld %d
 sc_dumpworld3d %d
+sc_setclassflags %s %d
 scaron
 scedilla
 scene_quadindexbuffer

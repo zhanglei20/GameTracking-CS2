@@ -159,10 +159,11 @@
 ( result == VK_SUCCESS )
 (%s): ADD %s = %s\n
 (%s): Setting %s to %s\n
-(9rX
+(1yY
 (On the line reading %s):\n
-(QyY
-(qzY
+(QzY
+(qxY
+(qyY
 *** CVfx::StartupSanityCheck(7115): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!\n
 *** Error masking unused parts! Equal sign not found after token "%s"! (line %d)\n
 *** IL "%s": Unable to create input layout; layout has %d fields, which is more than %d!\n
@@ -436,6 +437,7 @@
 2\f%24
 2\fu24*
 2\nP!E
+2\vpx
 58x\t
 5;FJ$,XEK4<
 5\fE545
@@ -652,14 +654,14 @@ CRenderContextVulkan_SoftwareCommandLists::CopyFromVolumeTexture failed to get r
 CRenderContextVulkan_SoftwareCommandLists::CopyTexture failed to get resource.\n
 CRenderContextVulkan_SoftwareCommandLists::SemaphoreWaitAtBegin - already set semaphore to wait on, can't set another one.\n
 CRenderDeviceBase
-CRenderDeviceBase::AllocatePooledIndexBuffer(3646): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3682): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3823): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3854): 
-CRenderDeviceBase::AsyncSetTextureData(3285): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3539): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3626): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3662): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3803): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3834): 
+CRenderDeviceBase::AsyncSetTextureData(3265): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3519): 
 CRenderDeviceBase::CreateConstantBuffer(1571): 
-CRenderDeviceBase::EndRenderDocCapture(3519): 
+CRenderDeviceBase::EndRenderDocCapture(3499): 
 CRenderDeviceBase::FindOrCreateTexture(1713): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s\n
 CRenderDeviceBase::Flush(898): 
@@ -668,7 +670,7 @@ CRenderDeviceBase::FreeTextureGPUResources(2025):
 CRenderDeviceBase::FreeTextureGPUResources(2029): 
 CRenderDeviceBase::InitPerFrameMemoryStack
 CRenderDeviceBase::Present(610): 
-CRenderDeviceBase::StartRenderDocCapture(3506): 
+CRenderDeviceBase::StartRenderDocCapture(3486): 
 CRenderDeviceVulkan::AllocateBufferInPool - invalid memory pool handle.\n
 CRenderDeviceVulkan::AllocateBufferInPool(10207): failed to allocate GPU memory in custom pool for %s.\n
 CRenderDeviceVulkan::AllocateBufferInPool(10262): vmaBindImageMemory failed for buffer %s with error %d.\n
@@ -742,7 +744,6 @@ CTextureManagerBase::MN_OnResourceLoadCompleted
 CTextureManagerBase::MN_OnResourceLoadFailed
 CTextureManagerBase::MarkAsyncUpdatedThisFrame - Invalid texture handle.\n
 CTextureManagerBase::RemoveTextureFromAnyQueues
-CTextureManagerBase::WasAsyncUpdatedThisFrame - Invalid texture handle.\n
 CTextureManagerVulkan::ComputeTextureObject(1438): 
 CTextureManagerVulkan::ComputeTextureObject: Tried to create a depth-stencil texture which is *not* a render target!\n
 CTextureStreamingHelper::LoadExplicitlyRequestedTextures
@@ -1159,6 +1160,7 @@ Group3Options
 Group4Options
 HEADER
 HEX_DIGIT
+HI~Y
 HLSL SM6.0 level subgroup wave ops supported, subgroup size = %d\n
 HOST_CACHED
 HOST_COHERENT
@@ -1167,7 +1169,6 @@ HalftoneHints
 Header size does not contain enough data in pipeline cache file %s.  Deleting.\n
 Heap 
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.\n
-Hi~Y
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HostComputer
 IB Size: %s (Count: %d)\n

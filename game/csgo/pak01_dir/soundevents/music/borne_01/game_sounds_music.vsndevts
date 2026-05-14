@@ -18,8 +18,11 @@
 		vsnd_files = 
 		[
 			"sounds/music/borne_01/roundmvpanthem_01.vsnd",
+			"sounds/music/borne_01/roundmvpanthem_02.vsnd",
 		]
-		vsnd_duration = 12.924105
+		vsnd_selection_type = "random_weighted"
+		vsnd_weights = [ 0.8, 0.2 ]
+		vsnd_duration = 13.607142
 	}
 	Music.Selection.borne_01 = 
 	{
@@ -457,8 +460,11 @@
 		vsnd_files = 
 		[
 			"sounds/music/borne_01/roundmvpanthem_01.vsnd",
+			"sounds/music/borne_01/roundmvpanthem_02.vsnd",
 		]
-		vsnd_duration = 12.924105
+		vsnd_selection_type = "random_weighted"
+		vsnd_weights = [ 0.8, 0.2 ]
+		vsnd_duration = 13.607142
 	}
 	Music.MatchStart.borne_01 = 
 	{

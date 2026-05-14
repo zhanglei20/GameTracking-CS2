@@ -18,7 +18,10 @@
 		vsnd_files = 
 		[
 			"sounds/music/altare_01/roundmvpanthem_01.vsnd",
+			"sounds/music/altare_01/roundmvpanthem_02.vsnd",
 		]
+		vsnd_selection_type = "random_weighted"
+		vsnd_weights = [ 0.8, 0.2 ]
 		vsnd_duration = 10.285714
 	}
 	Music.Selection.altare_01 = 
@@ -420,7 +423,10 @@
 		vsnd_files = 
 		[
 			"sounds/music/altare_01/roundmvpanthem_01.vsnd",
+			"sounds/music/altare_01/roundmvpanthem_02.vsnd",
 		]
+		vsnd_selection_type = "random_weighted"
+		vsnd_weights = [ 0.8, 0.2 ]
 		vsnd_duration = 10.285714
 	}
 	Music.MatchStart.altare_01 = 

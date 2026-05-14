@@ -1430,7 +1430,6 @@ C:\buildworker\csgo_rel_win64\build\src\soundsystem\snd_wave_mixer.cpp
 C:\buildworker\csgo_rel_win64\build\src\soundsystem\snd_wave_mixer_mp3.cpp
 C:\buildworker\csgo_rel_win64\build\src\soundsystem\vmix.cpp
 C:\buildworker\csgo_rel_win64\build\src\soundsystem\vsound_manager.cpp
-CAssociateResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!\n
 CAsyncWavDataCache:  %i sounds total %s, %.2f %% of capacity\n
 CAudioDecoderWave::OnCachedDataAvailable
 CAudioDecoderWaveMP3::OpenHandle
@@ -2342,6 +2341,7 @@ X<"wP
 \nType Name: %s\n
 \nUpdate SoundEvent: %s\n
 \n\tV_atanf
+\rCAssociateResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!\n
 \t dspmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f\n
 \t x: %4f y: %4f z: %4f\n
 \tRefs %16s : Name (Locks)\n

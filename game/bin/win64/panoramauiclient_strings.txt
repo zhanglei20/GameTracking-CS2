@@ -445,13 +445,11 @@
 08@J
 0:Ph
 0x%4.4x 
-2\vpd
+2\vp4M
 3?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
 3?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z
 5butt
 6?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
-6P7 
-6p0 
 8B y
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 :context->%p->%s:\n
@@ -493,6 +491,7 @@
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 @08N
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
+@HPX`hv
 @keyframes 
 @keyframes '%s'\r\n{\r\n
 @panorama_streaming_load_local_images
@@ -1120,7 +1119,8 @@ OverMaxPips
 P08@J
 P08J0
 P08N
-P6@7 
+P60\v 
+P6p- 
 PageDown
 PageLeft
 PagePanelDown
@@ -1158,6 +1158,7 @@ PanoramaUIEngine interface not set up\n
 PanoramaUIEngine setup failed\n
 PanoramaVideoPlayer
 ParentWithProperties
+Pfp. 
 Picked
 PlaceholderText
 Play
@@ -1171,6 +1172,7 @@ PlaybackProgress
 PlaybackSpeed
 PlaybackTitle
 PlaybackTitleAndControls
+Pn00 
 PopupWrapper
 PostConsoleText
 PrevSearch
@@ -1193,6 +1195,7 @@ PropertySection
 PropertyTransitionEnd
 RBLegend
 RT_txt
+R\vp4M
 RadioBox
 RadioButton
 RadioSelected
@@ -1609,14 +1612,15 @@ Wrapper
 WriteCompositionLayerPNG
 XInputPad
 X`hr
-XfP$ 
 Y_txt
 [object@%p]
+\fp4M
 \n\tV_atanf
 \tV_strupper_fast
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_AppendSlash
 \t_V_strcspn
+\vp4M
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `F?ToLocalEmpty@api_internal@v8@@YAXXZ
 about:blank
@@ -2072,6 +2076,7 @@ not-allowed
 notches
 notreadybehavior
 nowrap
+np8 
 ns-resize
 num_search_results
 numeric
@@ -2119,8 +2124,9 @@ orchid
 otherPanelID, eventToFire
 p08@H^
 p2 y
-p6P. 
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
+pF@3 
+p\r`\fP4M
 padding
 padding-bottom
 padding-left
