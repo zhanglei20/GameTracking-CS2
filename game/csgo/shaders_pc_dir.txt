@@ -47,12 +47,12 @@ shaders/vfx/csgo_effects_pc_50_psrs.vcs CRC:00c00c0bc5 size:2242
 shaders/vfx/csgo_effects_pc_50_vs.vcs CRC:001054058f size:12365
 shaders/vfx/csgo_environment.ini CRC:0000000000 size:0
 shaders/vfx/csgo_environment_blend.ini CRC:0000000000 size:0
-shaders/vfx/csgo_environment_blend_pc_50_features.vcs CRC:008550733a size:10802
-shaders/vfx/csgo_environment_blend_pc_50_ps.vcs CRC:008fc446c9 size:16672405
+shaders/vfx/csgo_environment_blend_pc_50_features.vcs CRC:008cbe1898 size:10802
+shaders/vfx/csgo_environment_blend_pc_50_ps.vcs CRC:00051a8ca4 size:16717626
 shaders/vfx/csgo_environment_blend_pc_50_psrs.vcs CRC:00bb47aa91 size:2498
 shaders/vfx/csgo_environment_blend_pc_50_vs.vcs CRC:004fba2035 size:262614
-shaders/vfx/csgo_environment_pc_50_features.vcs CRC:003a5e7fe9 size:6402
-shaders/vfx/csgo_environment_pc_50_ps.vcs CRC:008a4ba6a2 size:593294
+shaders/vfx/csgo_environment_pc_50_features.vcs CRC:0099116bc5 size:6402
+shaders/vfx/csgo_environment_pc_50_ps.vcs CRC:004437f928 size:592967
 shaders/vfx/csgo_environment_pc_50_psrs.vcs CRC:00f15f17f1 size:2434
 shaders/vfx/csgo_environment_pc_50_vs.vcs CRC:000addbdbc size:108585
 shaders/vfx/csgo_eyeball.ini CRC:0000000000 size:0
@@ -110,8 +110,8 @@ shaders/vfx/csgo_simple_pc_50_ps.vcs CRC:00db517e6e size:314149
 shaders/vfx/csgo_simple_pc_50_psrs.vcs CRC:00c227dd25 size:2082
 shaders/vfx/csgo_simple_pc_50_vs.vcs CRC:00e89e0e9d size:27511
 shaders/vfx/csgo_static_overlay.ini CRC:0000000000 size:0
-shaders/vfx/csgo_static_overlay_pc_50_features.vcs CRC:00311ed3fc size:7634
-shaders/vfx/csgo_static_overlay_pc_50_ps.vcs CRC:00b4321232 size:552662
+shaders/vfx/csgo_static_overlay_pc_50_features.vcs CRC:0006ddf023 size:7634
+shaders/vfx/csgo_static_overlay_pc_50_ps.vcs CRC:00788fc386 size:551459
 shaders/vfx/csgo_static_overlay_pc_50_psrs.vcs CRC:00c37a620b size:2610
 shaders/vfx/csgo_static_overlay_pc_50_vs.vcs CRC:0020c12a59 size:163990
 shaders/vfx/csgo_textile_layer.ini CRC:0000000000 size:0

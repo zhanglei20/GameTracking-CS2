@@ -1310,7 +1310,7 @@
 			name = "NametagModule"
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/weapon_csbase.cpp"
-			source_line = 1132
+			source_line = 1134
 			resources = 
 			[
 				resource_name:"weapons/models/shared/nametag/nametag_module.vmdl",
@@ -1320,7 +1320,7 @@
 			name = "StattrakModule"
 			group = "GameStartup"
 			source_file = "src/game/shared/cstrike15/weapon_csbase.cpp"
-			source_line = 1071
+			source_line = 1073
 			resources = 
 			[
 				resource_name:"weapons/models/shared/stattrak/stattrak_module.vmdl",

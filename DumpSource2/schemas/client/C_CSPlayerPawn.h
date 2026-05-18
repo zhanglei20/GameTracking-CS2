@@ -87,9 +87,6 @@ class C_CSPlayerPawn : public C_CSPlayerPawnBase
 	QAngle m_angStashedShootAngles;
 	Vector m_vecStashedGrenadeThrowPosition;
 	Vector m_vecStashedVelocity;
-	QAngle[2] m_angShootAngleHistory;
-	Vector[2] m_vecThrowPositionHistory;
-	Vector[2] m_vecVelocityHistory;
 	bool m_bShouldAutobuyDMWeapons;
 	GameTime_t m_fImmuneToGunGameDamageTime;
 	bool m_bGunGameImmunity;

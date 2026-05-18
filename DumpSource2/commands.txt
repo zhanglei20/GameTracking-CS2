@@ -233,6 +233,9 @@ bot_goto_mark (gamedll cheat)
 bot_goto_selected (gamedll cheat)
 	Sends a bot to the selected nav area (useful for testing navigation meshes)
 
+bot_hurt (gamedll cheat)
+	<no description>
+
 bot_kick (gamedll release)
 	bot_kick <all> <t|ct> <type> <difficulty> <name> - Kicks a specific bot, or all bots, matching the given criteria.
 

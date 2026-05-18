@@ -825,6 +825,7 @@ Apply extracted motion when previewing animations
 Apply fog of war to color
 Apply fog to particle
 Apply global light to color
+Apply ladder inaccuracy to players boosted by a stack of this many (or more) players
 Apply negative mip bias when rendering with FSR.
 Apply scale to the last element in order to fit the line. Only proceed to scale additional elements if the scale range of the last element is not sufficient.
 Apply the active deformer to the current transform as a rigid deformation and disable the deformer.
@@ -13397,6 +13398,7 @@ bot_force_duck
 bot_freeze
 bot_goto_mark
 bot_goto_selected
+bot_hurt
 bot_ignore_enemies
 bot_ignore_players
 bot_join_after_player
@@ -17561,7 +17563,6 @@ m_angRotationAjarDeprecated
 m_angRotationClosed
 m_angRotationOpenBack
 m_angRotationOpenForward
-m_angShootAngleHistory
 m_angSrc
 m_angStart
 m_angStashedShootAngles
@@ -22606,6 +22607,7 @@ m_hPostTexture
 m_hPredictedPawn
 m_hPrevOwner
 m_hPrevPathMover
+m_hPrevPostProcessingVolume
 m_hProxySoundscape
 m_hPulseGraph
 m_hRagdollSource
@@ -26893,7 +26895,6 @@ m_vecTestDir
 m_vecTestNormal
 m_vecTexGenInstructions
 m_vecTexturesInput
-m_vecThrowPositionHistory
 m_vecTimelineIconFromPort
 m_vecTimelinePauseIconOffset
 m_vecTotalBulletForce
@@ -26903,7 +26904,6 @@ m_vecTurningInaccuracyEyeDirLast
 m_vecTwistAxis
 m_vecUp
 m_vecVelocity
-m_vecVelocityHistory
 m_vecViewOffset
 m_vecWalkWishVel
 m_vecWarpMax
@@ -31129,6 +31129,7 @@ weapon_accuracy_logging
 weapon_accuracy_nospread
 weapon_accuracy_reset_on_deploy
 weapon_accuracy_shotgun_spread_patterns
+weapon_accuracy_stack_boost_limit
 weapon_air_spread_scale
 weapon_all_nametag
 weapon_all_stattrak
