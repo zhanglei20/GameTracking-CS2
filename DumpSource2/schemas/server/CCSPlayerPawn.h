@@ -99,9 +99,6 @@ class CCSPlayerPawn : public CCSPlayerPawnBase
 	QAngle m_angStashedShootAngles;
 	Vector m_vecStashedGrenadeThrowPosition;
 	Vector m_vecStashedVelocity;
-	QAngle[2] m_angShootAngleHistory;
-	Vector[2] m_vecThrowPositionHistory;
-	Vector[2] m_vecVelocityHistory;
 	bool m_bCommittingSuicideOnTeamChange;
 	bool m_wasNotKilledNaturally;
 	GameTime_t m_fImmuneToGunGameDamageTime;

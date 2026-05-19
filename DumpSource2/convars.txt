@@ -11529,6 +11529,9 @@ weapon_accuracy_reset_on_deploy false (gamedll clientdll replicated cheat releas
 weapon_accuracy_shotgun_spread_patterns true (gamedll clientdll replicated release)
 	<no description>
 
+weapon_accuracy_stack_boost_limit 2 (gamedll clientdll replicated release)
+	Apply ladder inaccuracy to players boosted by a stack of this many (or more) players
+
 weapon_air_spread_scale 1 (min: 0, gamedll clientdll replicated release commandline_enforced)
 	Scale factor for jumping inaccuracy, set to 0 to make jumping accuracy equal to standing
 

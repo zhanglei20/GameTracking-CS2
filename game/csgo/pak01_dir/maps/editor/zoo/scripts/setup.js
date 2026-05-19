@@ -1,5 +1,6 @@
 import { CSDamageFlags, Instance } from "cs_script/point_script";
 
+Instance.ServerCommand("sv_cheats 1");
 Instance.ServerCommand("mp_warmup_offline_enabled 1");
 Instance.ServerCommand("mp_warmup_pausetimer 1");
 

@@ -5,10 +5,9 @@ const CSInputsValues = Object.values(CSInputs).filter((i) => typeof i === "numbe
 /** @type {CSPlayerPawn | undefined} */
 let inputPawn = undefined;
 
-Instance.OnPlayerChat(({ player, text }) => {
-    if (text === "!showinput") {
-        inputPawn = inputPawn == player?.GetPlayerPawn() ? undefined : player?.GetPlayerPawn();
-    }
+Instance.RegisterCheatCommand( "script_zoo_showinput", () => {
+    const player = Instance.GetAllPlayerControllers()[0];
+    inputPawn = inputPawn == player?.GetPlayerPawn() ? undefined : player?.GetPlayerPawn();
 });
 
 /**

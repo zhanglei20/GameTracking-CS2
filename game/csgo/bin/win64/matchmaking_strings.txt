@@ -14,11 +14,11 @@
     owner:     %llx\n
     rejected dedicated server '%s' due to ip filter '%s'\n
    View %s failed to allocate description!\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
  % 2d %s %s\n
- (08@HPX`j
+ (08@HPX`j0
  (08@HPXb0
- (08@HPZ
+ (08@HPZ0
  (08@HR0
  (08@J0
  (0X`hpz0
@@ -61,7 +61,6 @@ $\n k_ECommunityItemClass_Consumable
 $\n k_ECommunityItemClass_SalienItem
 $\n k_EGCMsgGetEmailTemplateResponse
 $\n k_EGCMsgWebAPIRegisterInterfaces
-$tIH
 %\n k_EGCMsgAccountPhoneNumberChange
 %\n k_EGCMsgGCAccountVacStatusChange
 %\n!GCClientLauncherType_PERFECTWORLD
@@ -85,25 +84,45 @@ $tIH
 ( payload2 /  max( payload1, 1 ) )
 (\n estimated_wait_seconds_remaining
 (\n make_workshop_files_subscribable
+(\n non_prepared_statements_executed
 (\n#k_EGCMsgDirectServiceMethodResponse
 (\n$k_ECommunityItemAttribute_CardBorder
 (\n$k_ECommunityItemAttribute_ExpiryTime
 (\n$k_EGCMsgGetAccountDetails_DEPRECATED
 (\n$k_EGCMsgWebAPIJobRequestHttpResponse
+(\r"8\n%CGCSystemMsg_GetPurchaseTrust_Request
 (\r":\n"CWorkshop_GetContributors_Response
 (\r"j\n'CCommunity_GamePersonalDataCategoryInfo
 (\t"(\n&CWorkshop_SetItemPaymentRules_Response"M\n%CGameServers_AggregationQuery_Request
+(\t"=\n(CMsgGCMsgWebAPIJobRequestForwardResponse
 (\t"A\n0CCommunity_GetGamePersonalDataCategories_Request
+(\t"K\n$CMsgGCMsgMasterSetDirectory_Response
 (\t"U\n3CCommunity_TerminateGamePersonalDataEntries_Request
 (\t"U\n<CChinaAgreementSessions_StartAgreementSessionInGame_Response
 (\t"u\n-CCommunity_GetGamePersonalDataEntries_Request
+(\v2 .CMsgGCHUpdateSession.ExtraField
+(\v2 .CMsgHttpResponse.ResponseHeader
 (\v2 .CMsgSerializedSOCache.TypeCache
+(\v2!.CMsgAMSendEmail.ReplacementToken
+(\v2!.CMsgGCMsgSetOptions.MessageRange
+(\v2".CMsgGCMsgMasterSetDirectory.SubGC
+(\v2#.CMsgDPPartnerMicroTxns.PartnerInfo
 (\v2#.CMsgSOMultipleObjects.SingleObject
+(\v2$.CGCMsgMemCachedGetResponse.ValueTag
 (\v2$.CMsgSerializedSOCache.Cache.Version
+(\v2%.CMsgAMGetUserGameStatsResponse.Stats
 (\v2%.CMsgSOCacheSubscribed.SubscribedType
+(\v2&.CMsgGCMsgMasterSetWebAPIRouting.Entry
+(\v2'.CMsgDPPartnerMicroTxns.PartnerMicroTxn
 (\v2(.CCommunity_GamePersonalDataCategoryInfo
+(\v2).CMsgGCMsgMasterSetClientMsgRouting.Entry
+(\v2+.CMsgGCGetPersonaNames_Response.PersonaName
+(\v2+.CMsgGCRoutingInfo.TokenBucketConfiguration"p\n\rRoutingMethod
+(\v2,.CMsgAMSendEmail.PersonaNameReplacementToken
 (\v2-.CGameServers_AggregationQuery_Response.Group
+(\v22.CMsgAMGetUserGameStatsResponse.Achievement_Blocks
 (\v27.CProductInfo_SetRichPresenceLocalization_Request.Token"3\n1CProductInfo_SetRichPresenceLocalization_Response"
+(\v2;.CMsgNotificationOfSuspiciousActivity.MultipleGameInstances
 (\v2<.CQuest_PublisherAddCommunityItemsToPlayer_Request.Attribute
 (\v2=.CWorkshop_SetItemPaymentRules_Request.PartnerItemPaymentRule
 (\v2>.CWorkshop_SetItemPaymentRules_Request.WorkshopItemPaymentRule
@@ -114,6 +133,9 @@ $tIH
 (muted)
 )\n%k_ECommunityItemAttribute_IssueNumber
 )\n%k_ECommunityItemClass_ProfileModifier
+)\n\fMessageRange
+)\n\nExtraField
+)\n\nQueryParam
 *\n%k_EGCMsgGetPartnerAccountLinkResponse
 *\n&k_ECommunityItemAttribute_TradableTime
 *\n&k_EGCMsgGetUserGameStatsSchemaResponse
@@ -124,6 +146,7 @@ $tIH
 +\n\rjob_id_source
 +\n\rjob_id_target
 ,\n(k_ECommunityItemAttribute_StorePackageID
+,\n\rRequestHeader
 ,ar_monastery
 ,sv_load_test
 -------     ----------------\n
@@ -220,6 +243,21 @@ $tIH
 .?AVCGCClientJobUpdateStats@@
 .?AVCGCClientSharedObjectCache@GCSDK@@
 .?AVCGCClientSharedObjectTypeCache@GCSDK@@
+.?AVCGCMsgGetIPLocation@@
+.?AVCGCMsgGetIPLocationResponse@@
+.?AVCGCMsgGetSystemStats@@
+.?AVCGCMsgGetSystemStatsResponse@@
+.?AVCGCMsgMemCachedDelete@@
+.?AVCGCMsgMemCachedGet@@
+.?AVCGCMsgMemCachedGetResponse@@
+.?AVCGCMsgMemCachedGetResponse_ValueTag@@
+.?AVCGCMsgMemCachedSet@@
+.?AVCGCMsgMemCachedSet_KeyPair@@
+.?AVCGCMsgMemCachedStats@@
+.?AVCGCMsgMemCachedStatsResponse@@
+.?AVCGCMsgSQLStats@@
+.?AVCGCMsgSQLStatsResponse@@
+.?AVCGCMsgSystemStatsSchema@@
 .?AVCGCSOCacheSubscribedJob@GCSDK@@
 .?AVCGCSOCacheSubscriptionCheck@GCSDK@@
 .?AVCGCSOCacheUnsubscribedJob@GCSDK@@
@@ -227,6 +265,10 @@ $tIH
 .?AVCGCSODestroyJob@GCSDK@@
 .?AVCGCSOUpdateJob@GCSDK@@
 .?AVCGCSOUpdateMultipleJob@GCSDK@@
+.?AVCGCSystemMsg_GetAccountDetails@@
+.?AVCGCSystemMsg_GetAccountDetails_Response@@
+.?AVCGCSystemMsg_GetPurchaseTrust_Request@@
+.?AVCGCSystemMsg_GetPurchaseTrust_Response@@
 .?AVCGCToGCMsgMasterAck@@
 .?AVCGCToGCMsgMasterAck_Response@@
 .?AVCGCToGCMsgMasterStartupComplete@@
@@ -235,6 +277,7 @@ $tIH
 .?AVCGameServers_AggregationQuery_Request@@
 .?AVCGameServers_AggregationQuery_Response@@
 .?AVCGameServers_AggregationQuery_Response_Group@@
+.?AVCIPLocationInfo@@
 .?AVCJob@GCSDK@@
 .?AVCLeaderboardRequestQueue@@
 .?AVCMatchEventsSubscription@@
@@ -253,20 +296,80 @@ $tIH
 .?AVCMatchTitle@@
 .?AVCMatchTitleGameSettingsMgr@@
 .?AVCMatchVoice@@
+.?AVCMsgAMAddFreeLicense@@
+.?AVCMsgAMAddFreeLicenseResponse@@
+.?AVCMsgAMFindAccounts@@
+.?AVCMsgAMFindAccountsResponse@@
+.?AVCMsgAMGetLicenses@@
+.?AVCMsgAMGetLicensesResponse@@
+.?AVCMsgAMGetUserGameStats@@
+.?AVCMsgAMGetUserGameStatsResponse@@
+.?AVCMsgAMGetUserGameStatsResponse_Achievement_Blocks@@
+.?AVCMsgAMGetUserGameStatsResponse_Stats@@
+.?AVCMsgAMGrantGuestPasses2@@
+.?AVCMsgAMGrantGuestPasses2Response@@
+.?AVCMsgAMSendEmail@@
+.?AVCMsgAMSendEmailResponse@@
+.?AVCMsgAMSendEmail_PersonaNameReplacementToken@@
+.?AVCMsgAMSendEmail_ReplacementToken@@
 .?AVCMsgAccountDetails@@
 .?AVCMsgClientHello@@
 .?AVCMsgClientWelcome@@
 .?AVCMsgClientWelcome_Location@@
 .?AVCMsgConnectionStatus@@
+.?AVCMsgDPPartnerMicroTxns@@
+.?AVCMsgDPPartnerMicroTxnsResponse@@
+.?AVCMsgDPPartnerMicroTxns_PartnerInfo@@
+.?AVCMsgDPPartnerMicroTxns_PartnerMicroTxn@@
+.?AVCMsgGCAddressMask@@
+.?AVCMsgGCAddressMaskGroup@@
+.?AVCMsgGCCheckFriendship@@
+.?AVCMsgGCCheckFriendship_Response@@
+.?AVCMsgGCGetCommandList@@
+.?AVCMsgGCGetCommandListResponse@@
+.?AVCMsgGCGetEmailTemplate@@
+.?AVCMsgGCGetEmailTemplateResponse@@
+.?AVCMsgGCGetPartnerAccountLink@@
+.?AVCMsgGCGetPartnerAccountLink_Response@@
+.?AVCMsgGCGetPersonaNames@@
+.?AVCMsgGCGetPersonaNames_Response@@
+.?AVCMsgGCGetPersonaNames_Response_PersonaName@@
 .?AVCMsgGCHAccountPhoneNumberChange@@
+.?AVCMsgGCHAccountVacStatusChange@@
 .?AVCMsgGCHInviteUserToLobby@@
 .?AVCMsgGCHRecurringSubscriptionStatusChange@@
+.?AVCMsgGCHUpdateSession@@
+.?AVCMsgGCHUpdateSession_ExtraField@@
 .?AVCMsgGCHVacVerificationChange@@
+.?AVCMsgGCMsgMasterSetClientMsgRouting@@
+.?AVCMsgGCMsgMasterSetClientMsgRouting_Entry@@
+.?AVCMsgGCMsgMasterSetClientMsgRouting_Response@@
+.?AVCMsgGCMsgMasterSetDirectory@@
+.?AVCMsgGCMsgMasterSetDirectory_Response@@
+.?AVCMsgGCMsgMasterSetDirectory_SubGC@@
+.?AVCMsgGCMsgMasterSetWebAPIRouting@@
+.?AVCMsgGCMsgMasterSetWebAPIRouting_Entry@@
+.?AVCMsgGCMsgMasterSetWebAPIRouting_Response@@
+.?AVCMsgGCMsgSetOptions@@
+.?AVCMsgGCMsgSetOptions_MessageRange@@
+.?AVCMsgGCMsgWebAPIJobRequestForwardResponse@@
 .?AVCMsgGCMultiplexMessage@@
 .?AVCMsgGCMultiplexMessage_Response@@
 .?AVCMsgGCRequestSessionIP@@
 .?AVCMsgGCRequestSessionIPResponse@@
+.?AVCMsgGCRoutingInfo@@
+.?AVCMsgGCRoutingInfo_PolicyRule@@
+.?AVCMsgGCRoutingInfo_TokenBucketConfiguration@@
 .?AVCMsgGCUpdateSessionIP@@
+.?AVCMsgHttpRequest@@
+.?AVCMsgHttpRequest_QueryParam@@
+.?AVCMsgHttpRequest_RequestHeader@@
+.?AVCMsgHttpResponse@@
+.?AVCMsgHttpResponse_ResponseHeader@@
+.?AVCMsgNotificationOfSuspiciousActivity@@
+.?AVCMsgNotificationOfSuspiciousActivity_MultipleGameInstances@@
+.?AVCMsgNotifyWatchdog@@
+.?AVCMsgPackageLicense@@
 .?AVCMsgProtoBufHeader@@
 .?AVCMsgSOCacheHaveVersion@@
 .?AVCMsgSOCacheSubscribed@@
@@ -284,6 +387,8 @@ $tIH
 .?AVCMsgSerializedSOCache_Cache_Version@@
 .?AVCMsgSerializedSOCache_TypeCache@@
 .?AVCMsgServerHello@@
+.?AVCMsgWebAPIKey@@
+.?AVCMsgWebAPIRequest@@
 .?AVCProductInfo_SetRichPresenceLocalization_Request@@
 .?AVCProductInfo_SetRichPresenceLocalization_Request_LanguageSection@@
 .?AVCProductInfo_SetRichPresenceLocalization_Request_Token@@
@@ -343,7 +448,19 @@ $tIH
 .?AVPlayerFriend@@
 .?AVPlayerLocal@@
 .?AVPlayerManager@@
+.CGCMsgMemCachedSet.KeyPair
+.CIPLocationInfo"?\n
 .CMsgClientWelcome.Location
+.CMsgGCAddressMask"
+.CMsgGCAddressMaskGroup
+.CMsgGCMsgSetOptions.Option
+.CMsgGCRoutingInfo"
+.CMsgGCRoutingInfo">\n(CMsgGCMsgMasterSetWebAPIRouting_Response
+.CMsgGCRoutingInfo.PolicyRule
+.CMsgHttpRequest
+.CMsgHttpRequest.QueryParam
+.CMsgHttpRequest.RequestHeader
+.CMsgPackageLicense
 .CMsgSOCacheHaveVersion
 .CMsgSOCacheSubscribed
 .CMsgSOCacheSubscriptionCheck
@@ -353,6 +470,7 @@ $tIH
 .CMsgSOIDOwner"D\n
 .CMsgSOIDOwner"S\n
 .CMsgSerializedSOCache.Cache
+.CMsgWebAPIKey
 .GCConnectionStatus
 .GCProtoBufMsgSrc
 .\n)k_EGCMsgGetGamePersonalDataEntriesRequest
@@ -360,22 +478,34 @@ $tIH
 .\n)k_EGCMsgRecurringSubscriptionStatusChange
 /\n*k_EGCMsgGetGamePersonalDataEntriesResponse
 /\n+k_ECommunityItemAttribute_CommunityItemType
+/\n\nget_params
 0.0.0.0
 00000000
-08@HR
+08@HR0
 08@J0
+08B0
 0\n,GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE
 0\n,k_ECommunityItemAttribute_CommunityItemAppID
+0\n\vpost_params
+0vhc
 18446744073709551615
 1\n,k_EGCMsgGetGamePersonalDataCategoriesRequest
+2 .CMsgGCRoutingInfo.RoutingMethod:
+2"A\n+CMsgGCMsgMasterSetClientMsgRouting_Response
+2*.CMsgDPPartnerMicroTxnsResponse.EErrorCode"
 2\n-k_EGCMsgGetGamePersonalDataCategoriesResponse
-2\vp|U
+2\vpLa
+2\vpT
 32:B\n
 3\n/k_ECommunityItemAttribute_ProfileModiferEnabled
+3\n\fpolicy_rules
 4Ccl_session
 4\n/k_EGCMsgTerminateGamePersonalDataEntriesRequest
+4\n\vPersonaName
 5\n0k_EGCMsgTerminateGamePersonalDataEntriesResponse
 5\n\vtype_caches
+6\n\fextra_fields
+8@J0
 :9\n\tkey_field
 :format
 :name
@@ -389,15 +519,19 @@ $tIH
 :sort
 :upload
 <\n\ncategories
+=\n\ftransactions
+>\n\neerrorcode
 >\n\tTypeCache
-@08N
-@HPX`hv
+@08Nhc
 @\n\fSingleObject
+@nhc
 @workshop
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
 APPSYSTEM: In ConnectGameInterfaces(), tried to use different connection modes!\n
 APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!\n
 ATime team search is in error state until it self-cancels
+A\n\ftoken_bucket
+Achievement_Blocks
 AddWorkItem
 Adding player %llu to team %d\n
 All connected players have been unmuted.\n
@@ -422,6 +556,19 @@ C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\workthreadpool.cpp
 C:\buildworker\csgo_rel_win64\build\src\public\gcsdk_csgo_legacy\msgprotobuf.h
 CGCClient
 CGCClient - BSendGCMsgToClient (ProtoBuf)
+CGCMsgGetIPLocation
+CGCMsgGetIPLocationResponse
+CGCMsgGetSystemStats"
+CGCMsgGetSystemStatsResponse
+CGCMsgMemCachedDelete
+CGCMsgMemCachedGet
+CGCMsgMemCachedGetResponse
+CGCMsgMemCachedSet
+CGCMsgMemCachedStats"
+CGCMsgMemCachedStatsResponse
+CGCMsgSQLStats
+CGCMsgSQLStatsResponse
+CGCMsgSystemStatsSchema
 CGCSOCacheSubscribedJob
 CGCSOCacheSubscriptionCheck
 CGCSOCacheUnsubscribedJob
@@ -429,12 +576,15 @@ CGCSOCreateJob
 CGCSODestroyJob
 CGCSOUpdateJob
 CGCSOUpdateMultipleJob
+CGCSystemMsg_GetAccountDetails
 CGCToGCMsgMasterAck
 CGCToGCMsgMasterAck_Response
 CGCToGCMsgMasterStartupComplete"X\n
 CGCToGCMsgRouted
 CGCToGCMsgRoutedReply
+CIPLocationInfo
 CJobMgr::m_WorkThreadPool
+CLIENT_STEAMID
 CLeaderboardRequestQueue::OnQueryFinished\n
 CLeaderboardRequestQueue::OnStartNewQuery - request prepared.\n
 CLeaderboardRequestQueue::OnStartNewQuery preparing request...\n
@@ -460,18 +610,53 @@ CMatchSessionOnlineSearch::UpdateSessionSettings is unavailable in state %d!\n
 CMatchSessionOnlineTeamSearch [ state=%d ]\n
 CMatchSessionOnlineTeamSearch::CMatchSessionOnlineSearch\n
 CMatchTitleGameSettingsMgr::ExtendTeamLobbyToGame\n
+CMsgAMAddFreeLicense
+CMsgAMAddFreeLicenseResponse
+CMsgAMFindAccounts
+CMsgAMFindAccountsResponse
+CMsgAMGetLicenses
+CMsgAMGetLicensesResponse
+CMsgAMGetUserGameStats
+CMsgAMGetUserGameStatsResponse
+CMsgAMGrantGuestPasses2
+CMsgAMGrantGuestPasses2Response
+CMsgAMSendEmail
+CMsgAMSendEmailResponse
 CMsgAccountDetails
 CMsgClientHello
 CMsgClientWelcome
 CMsgConnectionStatus
+CMsgDPPartnerMicroTxns
+CMsgDPPartnerMicroTxnsResponse
+CMsgGCAddressMask
+CMsgGCAddressMaskGroup
+CMsgGCCheckFriendship
+CMsgGCCheckFriendship_Response
+CMsgGCGetCommandList
+CMsgGCGetCommandListResponse
+CMsgGCGetEmailTemplate
+CMsgGCGetEmailTemplateResponse
+CMsgGCGetPartnerAccountLink
+CMsgGCGetPersonaNames
+CMsgGCGetPersonaNames_Response
 CMsgGCHAccountPhoneNumberChange
+CMsgGCHAccountVacStatusChange
 CMsgGCHInviteUserToLobby
+CMsgGCHUpdateSession
 CMsgGCHVacVerificationChange
+CMsgGCMsgMasterSetDirectory
+CMsgGCMsgMasterSetWebAPIRouting
+CMsgGCMsgSetOptions
 CMsgGCMultiplexMessage
 CMsgGCMultiplexMessage_Response
 CMsgGCRequestSessionIP
 CMsgGCRequestSessionIPResponse
+CMsgGCRoutingInfo
 CMsgGCUpdateSessionIP
+CMsgHttpRequest
+CMsgHttpResponse
+CMsgNotifyWatchdog
+CMsgPackageLicense
 CMsgProtoBufHeader
 CMsgSOCacheHaveVersion
 CMsgSOCacheSubscribed
@@ -483,6 +668,7 @@ CMsgSOMultipleObjects
 CMsgSOSingleObject
 CMsgSerializedSOCache
 CMsgServerHello
+CMsgWebAPIRequest
 CProtoBufMsg
 CProtoBufMsg::BAsyncSendProto
 CProtoBufMsg::CProtoBufMsg( MsgType_t )
@@ -694,10 +880,12 @@ JoinInviteSession: connecting...\n
 JoinInviteSession: sessionid = %llx\n
 JoinInviteSession: waiting for storage device selection...\n
 Joined lobby %llx\n
+KeyPair
 Kick
 LOBBY: blocking join request from %llu with check: %s = '%s' (actual: '%s')\n
 LOBBY: blocking join request from %llu with invalid key: %s\n
 LOBBY: blocking join request from %llu, still %.1f sec kick ban duration remaining, mm_session_sys_kick_ban_duration = %.1f.\n
+L\fP2
 LanguageSection
 Leaderboard
 Leaderboard '%s' was not found on server\n
@@ -721,9 +909,14 @@ Migrate
 Migrated into CMatchSessionOnlineClient:\n
 Migrated into CMatchSessionOnlineHost:\n
 Migrating into CMatchSessionOnlineClient...\n
+MultipleGameInstances
 Mute list cleared.\n
 Mutelist
 Mutelist/%d
+NOTIFY_ACHIEVEMENTS
+NOTIFY_SERVER_SESSIONS
+NOTIFY_USER_SESSIONS
+NOTIFY_VAC_ACTION
 Near
 Near/game:ark
 Near/members:numPlayers
@@ -759,13 +952,16 @@ Online
 OnlineSearch - client fully connected to session, search finished.\n
 OnlineSearch::StartSearch failed to build filter list!\n
 OnlineSearch::StartSearchPass:\n
+Option
 Options/searchteamkey
 Options/server
 P08@J0
-P08J
-P08N
+P08Nhc
+PROTOBUF_FIELD_UINT64
 P\n\nattributes
 PartnerItemPaymentRule
+PartnerMicroTxn
+PersonaNameReplacementToken
 Player#     Player Name\n
 Player# is invalid or refers to a bot, please use "voice_show_mute" command.\n
 PlayerLocal::UpdateLeaderboardData for %s ...\n
@@ -775,12 +971,14 @@ PredictionDiffManager001
 QueueConnect
 RP for %s\n
 RSDSu
-R\vp|U
+R\vpLa
 Received %d search results.\n
 Received server_pre_shutdown notification - server is shutting down...\n
+ReplacementToken
 Requested join data %.3f sec ago from xuid = %llx\n
 Requesting dedicated server list...\n
 Requesting dedicated whitelist validation...\n
+ResponseHeader
 ResponseRulesCache001
 SOCache
 STARS_
@@ -805,6 +1003,7 @@ Skill%dFormula
 Skill%dRange
 Snooze
 StartListenServer
+Stats
 Steam leaderboard was not found.\n
 Steam search for dedicated servers timed out.\n
 Steam whitelist validation timed out.\n
@@ -812,6 +1011,7 @@ SteamID
 SteamLeaderboard
 Steam_OnServersConnected\n
 Steam_OnServersDisconnected\n
+SubGC
 SubscribedType
 Succeeded in starting server map!\n
 Successfully validated whitelist for %s...\n
@@ -855,6 +1055,7 @@ Thread "%s" (ID %llu) failed to shut down
 ThreadingMain
 TitleSettings
 Token
+TokenBucketConfiguration
 Trying to send message type %d before GC connection established.  This is guaranteed to fail.\n
 Unexpected end of string.
 Unhandled mmF->SysSessionUpdate!\n
@@ -865,7 +1066,9 @@ UnpackGameDetailsFromSteamLobby defined unknown type in schema!\n
 Update/Server
 Uploading score for leaderboard '%s'...\n
 Usage: game_alias deathmatch|competitive|...\n
+ValueTag
 Version
+WEBAPI_PARAM_UINT64
 WINS_
 WOL: 0x%p (%s)
 WWWWWWWWWWWWWWW
@@ -874,13 +1077,19 @@ WakeDependentJobFinished
 Warning: ignoring P2P session request from %s\n
 WorkshopDirectPaymentRule
 WorkshopItemPaymentRule
-X`hr
+X`hr0
 [MM] Joining session %llx, %d search results remaining...\n
 [MM] Server responded '%s', dist %d\n
 \\n\tlanguages
+\fpLa
+\n"CMsgGCMsgMasterSetClientMsgRouting
 \n#CWorkshop_AddSpecialPayment_Request
+\n$CMsgGCGetPartnerAccountLink_Response
+\n$CMsgNotificationOfSuspiciousActivity
 \n%CWorkshop_SetItemPaymentRules_Request
+\n&CGCSystemMsg_GetPurchaseTrust_Response
 \n&CGameServers_AggregationQuery_Response
+\n'CGCSystemMsg_GetAccountDetails_Response
 \n*CWorkshop_PopulateItemDescriptions_Request
 \n.CCommunity_GetGamePersonalDataEntries_Response
 \n0CProductInfo_SetRichPresenceLocalization_Request
@@ -888,62 +1097,150 @@ X`hr
 \n1CQuest_PublisherAddCommunityItemsToPlayer_Request
 \n\fEGCSystemMsg
 \n\faccount_name
+\n\faccount_type
+\n\fcommand_name
 \n\fcontributors
+\n\fcountry_code
+\n\femail_format
 \n\ffile_version
+\n\ffriend_count
 \n\fgroup_fields
 \n\fgroup_values
+\n\fpartner_name
+\n\fpersona_name
 \n\fplayers_bots
+\n\fref_trans_id
 \n\fservers_full
+\n\fsteamid_left
+\n\ftime_created
+\n\ftokens_grant
+\n\ftokens_start
 \n\ftrade_banned
 \n\fwait_seconds
+\n\fwebapi_param
+\n\nEErrorCode
 \n\nEGCToGCMsg
+\n\nPolicyRule
 \n\naccount_id
+\n\nalert_type
+\n\nbytes_read
+\n\ncurr_items
 \n\ncyber_cafe
+\n\nemail_lang
 \n\ngame_data2
 \n\ngameitemid
+\n\nget_misses
+\n\nis_limited
+\n\nk_MsgValid
+\n\nlogon_jobs
+\n\npackage_id
+\n\npartner_id
 \n\nqueue_size
 \n\nservice_id
+\n\nstat_value
 \n\nsubscribed
+\n\ntoken_name
 \n\nvac_banned
 \n\ragreement_url
+\n\rbytes_written
 \n\rcontinue_text
+\n\rcurrency_code
+\n\rcurrency_name
+\n\rdelete_misses
 \n\rerror_message
+\n\rgrant_seconds
+\n\ris_banned_now
+\n\ris_cyber_cafe
+\n\ris_subscribed
+\n\ris_vac_banned
 \n\ritems_granted
 \n\ritems_matched
 \n\rk_EGCMsgMulti
 \n\rpartner_srcid
+\n\rpurchase_type
+\n\rrt_birth_date
+\n\rsearch_string
 \n\rservers_empty
 \n\rservers_total
 \n\rsource_app_id
 \n\rsteamid_lobby
+\n\rsteamid_locks
+\n\rsteamid_right
 \n\rtemplate_file
+\n\ruser_sessions
 \n\rvalidate_only
+\n\ryielding_jobs
+\n\taccountid
 \n\tattribute
+\n\tcmd_flush
+\n\tdef_index
+\n\tdepot_ids
 \n\tdir_index
+\n\tevictions
+\n\text_spend
 \n\tgame_data
+\n\tgc_app_id
+\n\tgc_binary
 \n\tgceresult
+\n\tinit_time
+\n\tip_public
+\n\tline_item
 \n\tlongitude
+\n\tpackageid
+\n\tprice_usd
 \n\treplytogc
 \n\trule_type
+\n\tschema_kv
 \n\tsender_id
+\n\tsource_gc
+\n\vactive_jobs
 \n\vagreementid
 \n\vbalance_url
+\n\vclient_addr
+\n\vdelete_hits
+\n\vid_verified
 \n\vis_verified
+\n\vlogon_queue
+\n\vmethod_name
 \n\vnet_message
 \n\vobject_data
+\n\vregion_code
+\n\vsearch_type
+\n\vserver_addr
+\n\vserver_port
+\n\vsteam_level
 \n\vtime_cached
+\n\vtoken_value
+\n\vunlock_time
 \tTypeCache for %d (%d objects):\n
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\vpLa
 _remote_host
 _remote_xuidsrc
+`fhc
+`nhc
+aBvhc
 aE%s%s
+absolute_timeout
 accepted
 access
+account_creation_time
 account_locked
+achievement_bit_id
+achievement_blocks
+achievement_id
 addr
+address_mask_group_id
+address_mask_groups
+addrs
 adrlocal
 adronline
+ageclass
+alert_destination
+api_key
 app_assets_basename
+app_id
+app_instance_count
 ar_monastery
 armsrace
 associated_workshop_files
@@ -960,17 +1257,24 @@ caches
 callhandleptr
 casual
 checkpoint
+city
 clan
 clan_preferred
 client>host
 client_ipaddress
 client_launcher
+client_msg_ranges
 client_session_id
 client_session_need
 client_steam_id
 clientconnect
 close
 closed
+cm_session_identifier
+cm_session_sysid
+cmd_get
+cmd_set
+command_prefix
 community_banned
 comp
 comp2v2
@@ -988,13 +1292,17 @@ coopstrike
 country
 create
 creating
+critical
 crypt
 ct_arms
 ct_models
+curr_connections
 currency
 custom
 custommatch
 date
+days_to_expiration
+deadlock_retries
 deathmatch
 default_game_mode
 default_game_type
@@ -1012,21 +1320,31 @@ disconnecthdrl
 dlcmask
 dlcrequired
 doesntexist
+domain
 dontmodifylocalsession
 dsresult
+e\n\vPartnerInfo
 eligible_for_community_market
+email_msg_type
 endgame
 ending
 endvalue
 entries
 eresult
+eresult_deprecated
+errors
 exec_offline
 externalIP
 externalpeer
+failed_lookup_steamids
+fallback
 false:A\n
 filter
 finale_start
+found
+found_friendship
 free_trial_account
+free_trial_expiration
 friend
 friends
 fullpostinit
@@ -1064,7 +1382,9 @@ game_alias new_user_training
 game_alias retakes
 game_alias wingman
 game_alias workshop
+game_id
 game_newmap
+game_server_sessions
 gamedir
 gamemodes
 gamemodes.txt
@@ -1076,17 +1396,23 @@ gametypes/%s/gamemodes/%s/exec
 gametypes/%s/gamemodes/%s/weaponprogression_ct
 gametypes/%s/gamemodes/%s/weaponprogression_t
 gc_dir_index_source
+gc_name
 gc_socache_file_version
 gc_type
 gcsdk_gcmessages.proto
 gcsystemmsgs.proto
 gcsystemmsgs.proto"S\n
+get_hits
 gotv
 groups
 guard
 guardian
 gungameprogressive
 gungametrbomb
+has_accepted_china_ssa
+has_no_recent_password_resets
+has_prior_purchase_history
+headers
 hltv_replay
 host>client
 host_writeconfig_ss %d
@@ -1094,8 +1420,28 @@ hostendgame
 hostinit
 hpz0
 imagename
+infos
+interface_name
+ipv4
+is_account_locked_down
+is_adult
+is_banned_future
+is_banned_steam_china
+is_community_banned
+is_free_trial_account
 is_identifying
+is_inventory_public
+is_low_violence
+is_phone_identifying
+is_phone_verified
+is_profile_public
+is_school_account
+is_steamguard_enabled
+is_trade_banned
+is_two_factor_auth_enabled
+is_wallet_cash_trusted
 item_description
+item_id
 join
 joincheck
 joined
@@ -1202,12 +1548,24 @@ k_ESOMsg_Create
 k_ESOMsg_Destroy
 k_ESOMsg_Update
 k_ESOMsg_UpdateMultiple
+k_MsgAlreadyRunning
+k_MsgInvalidAppID
+k_MsgInvalidPartnerInfo
+k_MsgInvalidTransactionData
+k_MsgNoTransactions
+k_MsgPartnerInfoDiscrepancy
+k_MsgSQLFailure
+k_MsgTransactionInsertFailed
+key_id
 kicked
 kills
 language
+last_update_time
 latitude
 legacy_client_session_need
 legacy_steamdatagram_routing
+license
+limit_maxbytes
 limited
 lobby
 local
@@ -1224,6 +1582,8 @@ mapGroups
 mapgroupsMP
 mapgroupsSP
 maps/%s.kv
+maskbits
+master_dir_index
 match_item_class
 match_item_type
 matching%s
@@ -1251,11 +1611,13 @@ mmqueue
 msgpool_hard_limit
 msgpool_soft_limit
 msgtype
+multiple_instances
 nameID
 nameID_SP
 netmsg
 newValue
 new_user_training
+nexonid
 nextpass
 nextpass?
 no_reset_vote_threshold_ct
@@ -1273,6 +1635,9 @@ objects_modified
 official
 offlineinit
 one_per_account
+online
+operations_submitted
+operations_timed_out_in_queue
 options/action
 options/anytypemode
 options/bypasslobby
@@ -1289,17 +1654,27 @@ options/server
 options/sessionHostData
 options/sessionid
 options/sv_load_test
+os_type
+other_steamids
 outofdate_subscribed_caches
-p08@H^
+owner_id
+p08@H^hc
+p>hc
+p\r`\fPLa
+partner
 partner_accountbalance
 partner_accountflags
 partner_accountid
 partner_accounts
+passes_granted
+passes_to_grant
 payload
 payment_row_usd
 payment_us_usd
 peerserver
+persona_name_tokens
 phone_id
+phone_verification_time
 player%d
 player%d/voice
 player%d/xuid
@@ -1308,18 +1683,27 @@ player_connect
 player_death
 player_disconnect
 players_humans
+pnhc
 practicesettings_
 prefix_item_name
+prepared_statements_executed
 preview
+price
 private
+protobuf_field
 public_inventory
 public_profile
+publisher_group_id
+purchase_result_detail
+pwid
+quantity
 queue_position
 quickmatch
 random
 ratelimit
 ready
 reload
+request_method
 required_internal_addr
 requires_attr
 requires_attr_reward
@@ -1333,9 +1717,14 @@ richpresence
 richpresencecontext
 round_end
 round_start
+routing
+routing_app_id
+rt_identity_linked
 rtime32_gc_welcome_timestamp
+rtime_vacban_starts
 rule_description
 runxuid
+schema_catalog
 school_account
 scrimcomp2v2
 scrimcomp5v5
@@ -1360,6 +1749,7 @@ server/reserved
 server/server
 server/team
 server_pre_shutdown
+server_steam_id
 sessionHostDataUnpacked
 session_client(%p) closed
 session_client(%p) created
@@ -1383,19 +1773,31 @@ skirmishid
 sleep for time
 socache_control
 socache_have_versions
+socaches
+socaches_loading
+socaches_to_unload
 soid
+source
 starting
 stat
 stat_agg
+stat_id
+stats_kv
 steam_launcher
+steam_txn_type
 steamdatagram_login
 steamid_invited
 steamids
 steammessages.proto
 steammessages.proto")\n\rCMsgSOIDOwner
+steammessages.proto"z\n\rCMsgWebAPIKey
+steammessages_gc.proto
 storage
+store_country_code
+succeeded_lookups
 suppressed
 survival
+suspension_end_time
 syssession
 system
 system/access
@@ -1406,20 +1808,30 @@ system:network
 t_arms
 t_models
 target_job_name
+tax_usd
 teamMembers
 teamResKey
 teamlink
 teamlobby
+template
 template#include
+template_exists
 templates#include
+threads_active
+threads_connected
+time_all_trusted
 titleid
 tokens
+trade_ban_expiration
 training
+transid
 transition
 trusted
 turequired
 tuver
+two_factor_enabled_time
 txn_country_code
+txn_id
 type_id
 udpate/game/map
 uids
@@ -1436,6 +1848,7 @@ updatedelete
 uptodate_subscribed_caches
 v\n,associated_workshop_file_for_direct_payments
 valid
+values
 versions
 voice
 waiting for lock
@@ -1446,6 +1859,7 @@ wingman
 work item
 workshop
 workshop_file_id
+writeback_queue
 xuidHost
 xuidOnline
 xuidsrc
