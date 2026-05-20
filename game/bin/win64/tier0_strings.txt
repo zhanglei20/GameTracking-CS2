@@ -207,7 +207,6 @@ $xmm9
 %llu
 %llu %s entries but no formats were defined\n
 %llu,%u,%u,%s\r\n
-%ls [wstring, len = %d]
 %s %s %s %s\n
 %s %s -nominidumps
 %s %s has conflicting %s flags (child: %s%s, parent: %s%s, parent wins)\n
@@ -217,6 +216,7 @@ $xmm9
 %s (before "%s")
 %s (tweaked to NOT wait for child outflows)
 %s -contextstart %d -codefile "%s" -codeline %d
+%s [wstring, len = %d]
 %s allocation count overflow
 %s allocation count overflow( %llu + %llu > %llu )\n
 %s allocation count overflow( %llu > %llu )\n
@@ -496,6 +496,7 @@ $xmm9
 -retire
 -rollback
 -testscript
+-testscript requires -insecure
 -testscript_inline
 .%0*llu
 .%x.%x.copy_tmp
@@ -783,6 +784,7 @@ $xmm9
 1wsHp
 2,THh
 28~v
+2\vpl
 2aNuE
 3 FB
 3+5<t
@@ -795,7 +797,6 @@ $xmm9
 3\r53h&
 3o=q
 3wl'
-420`
 4JpI?=
 4\tgA
 4^K\fOI
@@ -5296,6 +5297,8 @@ RPCRT4.dll
 RSDS&
 RUSSIAN
 RVfQp
+R\fpl
+R\vpl
 RaiseException
 RandomFloat
 RandomFloatExp

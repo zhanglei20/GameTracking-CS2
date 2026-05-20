@@ -2643,7 +2643,6 @@ $taser_charge
 (.CPlayer_SetPerFriendPreferences_Request
 (0'yX
 (0x%08X)'??'
-(404
 (5Me
 (5jP
 (ACTIVE)
@@ -11330,7 +11329,7 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpT
+2\vp4
 2^pV
 2a"l
 2bT~
@@ -11847,7 +11846,7 @@ $taser_charge
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
-@HPX`hv
+@HPX`hv`b
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11864,7 +11863,6 @@ $taser_charge
 @dKb]
 @fff>fff>fff>fff>
 @ffffff
-@ht04
 @i1V
 @icon_camera
 @icon_character
@@ -22431,7 +22429,7 @@ P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
 P5[1
-P6@X
+P6 X
 PAGN_4
 PANORAMA_LAYOUTFILE
 PARALYZE
@@ -23579,7 +23577,7 @@ RULESHERE
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpT
+R\vp4
 R]Di
 Rad2 Deg
 Radar
@@ -37340,6 +37338,7 @@ p.ppBasis
 p.prime
 p.tpBasis
 p08@H^
+p0j`
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37356,7 +37355,8 @@ p4Z3
 p5Z3
 p5\nL,
 p618
-p6p!
+p6P!
+p6pv
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pAbeam

@@ -154,7 +154,7 @@
  -vis
  -vrad3LargeBlockSize
  -world
- .PLP
+ .pMP
  255
  8f\ff
  <-- Arg '%s'
@@ -1168,8 +1168,7 @@ $worldspacetype
 ....................
 ../src/devtools/bin/certificates/game/
 ..uR5&m
-.0RP
-.0dP
+.0iP
 .4bb
 .97yY
 .?AUBufferedImpulseResponse_t@@
@@ -14672,11 +14671,9 @@ $worldspacetype
 .P6AXPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
-.PNP
-.PRP
+.PQP
 .PTP
-.PfP
-.PoP
+.PcP
 .Q.Ol
 .R?matches@QKeyEvent@@QEBA_NW4StandardKey@QKeySequence@@@Z
 .[?setRed@QColor@@QEAAXH@Z
@@ -14951,13 +14948,14 @@ $worldspacetype
 .mp3
 .nav
 .navdbg
-.pOP
-.pQP
-.pRP
+.pNP
 .pTP
+.pbP
+.pcP
 .pfP
 .pfm
 .png
+.poP
 .pp@0
 .psd
 .text$
@@ -16031,13 +16029,15 @@ $worldspacetype
 5sfm_v8
 5t?F
 5~EW
-6 LP
-6 vP
+6 hP
+6 rP
 6#6165676;6M6O6S6Y6a6k6m6
 6#RDP#
 6%vi
 6,2K
 6-zeZ
+60LP
+60vP
 62$|S)6f
 64 283 0
 64CK\vH
@@ -16045,19 +16045,17 @@ $worldspacetype
 6666666666666666jjjjjjjjjjjjjjjj[
 67-s
 6@0T
-6@oP
-6@yP
 6FaceSkyBox
 6H,N
 6O|T%
-6P]P
-6PxP
+6PoP
+6PyP
 6Qd=
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
 6_wEX
-6`KP
+6`xP
 6afD
 6bX+
 6c&0|vvX
@@ -16065,9 +16063,7 @@ $worldspacetype
 6l13
 6lkc
 6myY;
-6pNP
-6phP
-6prP
+6pKP
 6qo~
 6r-m_v
 6r1ij
@@ -16111,7 +16107,7 @@ $worldspacetype
 8<pl
 8= zp
 8A6j
-8F {P
+8F0{P
 8GZS
 8SIffK5W
 8TZvrv<
@@ -16267,6 +16263,7 @@ $worldspacetype
 > (After)
 >"?IsValid@FbxProperty@fbxsdk@@QEBA_NXZ
 >#>)>/>3>A>W>c>e>w>
+>0wP
 >4|6eXg_e
 >7^0g
 >>> Reading bsp from path %s\n
@@ -18704,11 +18701,11 @@ $worldspacetype
 @%s_lookFrame_2
 @08N
 @0pp
-@6 uP
-@60QP
-@60TP
-@6`OP
-@6`QP
+@60uP
+@6@QP
+@6@TP
+@6pOP
+@6pQP
 @BH]f
 @HPX`hv
 @Integer overflow in %s
@@ -25122,13 +25119,14 @@ F'pY
 F+Zb
 F,mZq
 F/o4
-F0SP
-F0pP
+F0~P
 F2M+
 F6tr
 F7!z
 F9q'
 F<mb
+F@SP
+F@pP
 FBX (*.fbx)
 FBX Export failed: %s\n
 FBX Export failed: Couldn't create FBX manager: "%s"\n
@@ -25162,7 +25160,6 @@ FORCE_UINT
 FORM
 FORMAT
 FOV:
-FPnP
 FStops:
 FULL
 FU\n-XP
@@ -25172,6 +25169,7 @@ F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 F_BLOOD_USE_UV2
 F_TEXTURE_FORMAT
 F_TEXTURE_FORMAT2
+F`nP
 Face
 Face %d
 Face Fit
@@ -34288,7 +34286,6 @@ VZ#-DLU[3=h
 V\rKk
 V\v?event@QProgressBar@@MEAA_NPEAVQEvent@@@Z
 V_a|I
-V`MP
 Va?width@QPixmap@@QEBAHXZ
 Valid Content Absolute Path
 Valid External Path
@@ -34499,6 +34496,7 @@ Voronoi Plane Primitive
 Vortices
 Voxel volume (%i components)
 Vp>u
+VpMP
 Vrad3_Init_SearchPath
 Vt_9
 V~~Vq
@@ -35734,8 +35732,7 @@ _zero
 _zero_percent_distance
 _}eOk
 `28)fk
-`60cP
-`6P[P
+`6@cP
 `:zQF
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -41477,7 +41474,6 @@ nPointSpace
 nPos
 nPrevCol
 nPrevRow
-nP{P
 nRow
 nSRecord
 nScaleMode
@@ -41501,7 +41497,6 @@ n\r2S
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
 n_bFlipFaces
 n`3i
-n`wP
 name constraints minimum and maximum not supported
 name too long
 name translation failed
@@ -41758,6 +41753,8 @@ npc_dota_holdout_tower_reducespeed
 npc_dota_tower
 npcclass
 npcclip
+npwP
+np}P
 nsBaseUrl
 nsCaPolicyUrl
 nsCaRevocationUrl
@@ -42027,7 +42024,7 @@ p4Z3
 p5Z3
 p5\nL,
 p618
-p6`uP
+p6puP
 p@0pqE5tsO?|1
 pAction
 pAsset
@@ -42043,7 +42040,7 @@ pDescription
 pElement
 pEntity
 pEvent
-pF0SP
+pF@SP
 pFilter
 pG_*h
 pIp 
@@ -45590,13 +45587,12 @@ zz2K
 ~CModelInstance destructor: leaking softbody because physics world disappeared\n
 ~If D
 ~P2T
-~PdP
 ~R65Fu
 ~\f?geometry@QGraphicsLayoutItem@@QEBA?AVQRectF@@XZ
 ~\n?dragMoveEvent@QAbstractScrollArea@@MEAAXPEAVQDragMoveEvent@@@Z
 ~\v?eventFilter@QGraphicsScene@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 ~jLRG
-~pdP
+~pMP
 ~w]UG
 ~yhZ
 ~}|{zyxwvutsrqponmlkjihgfedcba`_^]\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#"! 
