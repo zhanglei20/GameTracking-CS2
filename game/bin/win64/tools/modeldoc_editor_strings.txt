@@ -12733,7 +12733,7 @@ $prefix_element$
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\tV_fseek
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpd
+2\vpt
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -14820,8 +14820,7 @@ $prefix_element$
 @%s_lookFrame_2
 @08N
 @AuthPhysCollisionAttributesModeEnum_t
-@HPX`hv 
-@HV0
+@HPX`hv0
 @Integer overflow in %s
 @Invalid
 @P2I
@@ -21926,7 +21925,7 @@ RMouseDoubleClick
 ROTATION
 RSDSj
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpd
+R\fpt
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
@@ -27018,7 +27017,7 @@ quadratic
 quaternion_array
 quiet
 r0l,
-r\vpd
+r\vpt
 rad2deg
 radiant
 radiant_creeps

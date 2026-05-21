@@ -287,7 +287,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
-(Agm
+(5gm
 (Custom Colors Disabled)
 (Filter)
 (No Active Session)
@@ -1158,6 +1158,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\nP!E
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpP
 2aboutToShow()
 2accepted()
 2activated( int )
@@ -3630,16 +3631,18 @@ Greens
 Grid layout should be an array of arrays
 Group3Options
 Group4Options
+H9dm
+H9fm
 HAC K  Unused Binding
-HEdm
-HEfm
 HSLA
 HSLA\t
 HSVA
 HSVA\t
+H\rfm
 Hable (U2/HLVR)
 Hack Dota Layer Opaque
 Hack Dota Layer Opaque Translucent
+Hacm
 HalftoneHints
 Help
 HelperLoadFbmByFileExtension(3065): Error! Unknown file type for %s\n
@@ -3649,7 +3652,6 @@ Hide
 Hide unless error/warning occurs
 High Contrast
 Highlights
-Hmcm
 Home
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HorizontalStrafeCamera
@@ -4327,6 +4329,7 @@ RMouse
 RMouseDoubleClick
 RSDS(
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fpP
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
@@ -4926,7 +4929,7 @@ Writable
 Write error at scanline %lu
 Writeable
 X to the Y power
-X=em
+X1em
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setCheckState@QStandardItem@@QEAAXW4CheckState@Qt@@@Z
@@ -4973,6 +4976,7 @@ Yellows
 Yes - Discard and reload from disk
 Yes: Checkout, resolve conflicts later.
 Yield, Resume=%s
+Y~em
 Z?setItalic@QFont@@QEAAX_N@Z
 Z?setItemData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBV?$QMap@HVQVariant@@@@@Z
 Z?setNamedColor@QColor@@QEAAXAEBVQString@@@Z
@@ -5224,12 +5228,13 @@ _wjb
 `?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?value@QColor@@QEBAHXZ
 `?valueF@QColor@@QEBANXZ
+`Icm
+`Ihm
 `Q?lightnessF@QColor@@QEBANXZ
-`Ucm
-`Uhm
+`Ygm
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`egm
+`ugm
 a:fulltype
 a:typeparam
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
@@ -5683,6 +5688,7 @@ pulse_runtime_lib
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quiet
+r\vpP
 rad2deg
 random_position
 readbackcolor

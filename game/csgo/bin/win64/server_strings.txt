@@ -101,11 +101,12 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`j`Y
- (08@HPXb
- (08@HPZ`Y
- (08@HR
- (0X`hpz
+ (08@HPX`j@Y
+ (08@HPXbp
+ (08@HPZ@Y
+ (08@HRp
+ (08@Jp
+ (0X`hpzp
  (Dirty Animation)
  (Disabled on Server)
  (INVALID PSS PARAMETERS)\n
@@ -2265,6 +2266,7 @@ $tH@T\tI
 ....................
 ..uR5&m
 .4bb
+.4iR
 .97yY
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
 .?AUAI_BaseNPCAnimGraph_DebugSnapshotData_t@@
@@ -8643,6 +8645,7 @@ $tH@T\tI
 .PlayerRankingInfo
 .PlayerRankingInfo"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
 .PlayerRankingInfo.PerMapRank
+.PwW
 .Q.Ol
 .ScoreLeaderboardData
 .ScoreLeaderboardData"S\n%CCSUsrMsg_PlayerDecalDigitalSignature
@@ -8650,7 +8653,6 @@ $tH@T\tI
 .ScoreLeaderboardData.Entry"
 .ServerHltvInfo
 .Step
-.TiR
 .TournamentEvent
 .TournamentMatchSetup
 .TournamentPlayer"
@@ -8935,7 +8937,6 @@ $tH@T\tI
 .fatdem
 .lbN
 .pp@0
-.pwW
 .text$
 .vjs_c
 .vmap
@@ -8976,9 +8977,9 @@ $tH@T\tI
 0123456789
 02V8[
 05=k
-08@HR`Y
-08@J
-08B`Y
+08@HR@Y
+08@Jp
+08B@Y
 08bX
 09,h
 0;Q5[
@@ -8988,6 +8989,7 @@ $tH@T\tI
 0M2~@p
 0Mc\t\n
 0W/5
+0XER
 0Z@q
 0\n+k_EGCItemCustomizationNotification_NameItem
 0\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings
@@ -9011,9 +9013,8 @@ $tH@T\tI
 0e\r8
 0pp@5tqE?|sO541
 0tU+xc:
-0vTiR
+0v4iR
 0x%s
-0xER
 0|2;#GameUI_Retake_Card_BackInAFlash,1,1,weapon_ump45,grenade0|2;#GameUI_Retake_Card_AllIn,1,1,weapon_galilar|1;#GameUI_Retake_Card_BoomBox,1,1,weapon_mac10,grenade2,grenade1|1;#GameUI_Retake_Card_SetThemFree,1,1,weapon_ssg08,grenade0
 0|2;#GameUI_Retake_Card_BlindFire,1,0,weapon_elite,grenade0|2;#GameUI_Retake_Card_QueOta,0,0,weapon_deagle|1;#GameUI_Retake_Card_SmokeScreen,0,0,weapon_p250,grenade1|1;#GameUI_Retake_Card_TecTecBoom,0,0,weapon_tec9,grenade2
 0|2;#GameUI_Retake_Card_OlReliable,1,1,rifle1,grenade0|1;#GameUI_Retake_Card_SmokeShow,1,1,rifle1,grenade1|1;#GameUI_Retake_Card_HotShot,1,1,rifle1,grenade3|1;#GameUI_Retake_Card_EyeSpy,1,1,weapon_sg556,grenade2
@@ -9161,7 +9162,6 @@ $tH@T\tI
 4@AA
 4Ch;
 4F0I
-4F\vP
 4Mv8
 4Zis
 4\fPl
@@ -9304,9 +9304,9 @@ $tH@T\tI
 8<pl
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
-8@J`Y
+8@J@Y
 8A6j
-8B`Y
+8B@Y
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9560,7 +9560,7 @@ $tH@T\tI
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08NTiR
+@08N4iR
 @0pp
 @333
 @333?
@@ -9569,9 +9569,8 @@ $tH@T\tI
 @Aff
 @BH]f
 @BoneSetup
-@CWeaponRevolver
 @HPX`hv
-@HVP
+@HV0
 @Logs attacks.  Values are: 0=off, 1=enemy, 2=teammate, 3=both)
 @MfKZ
 @Pgl
@@ -9586,11 +9585,12 @@ $tH@T\tI
 @\n\tPlacement
 @\n\vserver_type
 @dKb]
-@fTiR
+@f4iR
 @fff>fff>fff>fff>
 @i1V
+@m_bWasOwnedByTerrorist
 @n2w
-@nTiR
+@n4iR
 @player_start_teleport_destination
 @workshop
 A CT bot doesn't know what to do while the bomb is planted!\n
@@ -10165,6 +10165,7 @@ BAddToMessage
 BAsyncSend
 BAsyncSendProto
 BC (default)
+BCPulseGraphInstance_ServerEntity::SetNextThink
 BDraw the hiding spot the bot will check next.
 BEOS_BIND_FUNC
 BEOS_BIND_VAR
@@ -10275,7 +10276,6 @@ BPE_Diagnostic
 BPE_StringCommand
 BREAKABLE
 BRouteMsgToJob
-BSchedule the next think for the entity that this graph is running on.
 BT5f
 BT_ACTION_MOVETO_FASTEST_ROUTE
 BT_ACTION_MOVETO_RUN
@@ -10473,7 +10473,7 @@ BreakableContentsType
 Breakables
 Breaks in the debugger
 Bs'n
-Bsv_fade_player_visibility_farz
+Bsv_teamid_overhead_maxdist
 Bu 5
 Buffer too small
 BuildCacheSubscribed(CEconAccountSeasonalOperationGS)
@@ -12113,7 +12113,6 @@ CPulseFuncs_GameParticleManager::SetEffectControlWorldVector
 CPulseGraphInstance_ServerEntity::BeforeGraphStart
 CPulseGraphInstance_ServerEntity::GraphStart
 CPulseGraphInstance_ServerEntity::InitialActivate
-CPulseGraphInstance_ServerEntity::SetNextThink
 CPulseGraphInstance_ServerEntity::Think
 CPulseMathlib::AbsFloat
 CPulseMathlib::AbsInt
@@ -17026,6 +17025,7 @@ LU[`ccAJS\bc6=HU_c)+4DWc
 LV\`cc>JU\ac+7ER]c
 LXKQ
 LY\r5
+L\fpZ
 L\n\nserverinfo
 Ladder FSM state: %s
 Ladder state: APPROACH
@@ -18386,11 +18386,11 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08J
-P08NTiR
+P08@Jp
+P08J`[
+P08N4iR
 P1\t98"
-P2`Y
+P2@Y
 P5[1
 PAGN_4
 PARALYZE
@@ -18625,6 +18625,7 @@ PUX\`cIPTY_cBJNS\c8=DLWc*38>Mc
 PVSManagerGameSystem
 PVSModifier
 PVY]acJOTY`cCGLT]c9<AJVc+-19Ic
+PXER
 P\n\nattributes
 Pack item "%s" included in more than one pack bundle - not allowed!
 PackedBlobNormal
@@ -18730,7 +18731,7 @@ PinnedDown
 Pistol
 PitchShift
 PivotPaint
-Pj`Y
+Pj@Y
 Place
 PlaceDecalEvent_t
 Plant bomb on floor
@@ -18849,7 +18850,7 @@ Please specify 0 or 1 with the -stream Parameter\n
 Please wait for broadcast to start ...
 Pm8A?
 PmR"H?
-PnTiR
+Pn4iR
 Point entity.
 PointTemplate
 Policy Qualifier CPS
@@ -18982,7 +18983,6 @@ Pushing linear hard!\n
 Pushing rotation hard!\n
 PutClientInServer: no info_player_logo on level\n
 PutClientInServer: no info_player_start on level\n
-PxER
 P|iC\r
 Q*hd
 Q/xtJ2
@@ -19804,6 +19804,7 @@ ScenePayloadTypesManifest_global_server
 ScenePrint
 Scenes
 Schedule Cleared
+Schedule the next think for the entity that this graph is running on.
 Schema_ClassOps
 Scope exceeded time! (%0.3f ms): %s\n
 Scorch
@@ -22114,7 +22115,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr`Y
+X`hr@Y
 Xd3h
 XfJ7
 XjfR
@@ -22477,8 +22478,8 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\vPxER
-\fp\v`xER
+\fp\vPXER
+\fp\v`XER
 \ful2
 \fy&3Gl
 \l:ArR
@@ -23294,7 +23295,8 @@ Z~wl
 \v\vTSG
 \vj0k
 \vjC7
-\vpxER
+\vpXER
+\vp`GR
 ] Done (%.2f seconds)
 ]1h=bfz
 ]FhSD}
@@ -23370,7 +23372,7 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`6PwW
+`60wW
 `:zQF
 `D$daM-l
 `DZG
@@ -23378,13 +23380,13 @@ _}eOk
 `H(hqA1p
 `ITS
 `VX:H
+`XER
 `\n\rvector_values
+`f4iR
 `fPw.\vM
-`fTiR
 `h9T~
-`nTiR
+`n4iR
 `o_je
-`xER
 `yNT
 a null shared library handle was used
 a trigger_changelevel doesn't have a map
@@ -23402,7 +23404,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
-aBvTiR
+aBv4iR
 aD/x
 aDSS
 aECDH
@@ -26264,6 +26266,8 @@ f%wyLmX:
 f&dy
 f1cK%
 f45\r
+f4iR
+f@tW
 fBB\fy
 fC[A:%u:%u:%u]
 fC\tc
@@ -26275,13 +26279,11 @@ fPitch
 fRoll
 fSpinDownTime
 fSpinUpTime
-fTiR
 fUnh\
 fValue
 fYaw
 f\trixZ
 f_pose_weight_%s
-f`tW
 faceposer
 facing: %s
 facsimileTelephoneNumber
@@ -27213,6 +27215,7 @@ houseIdentifier
 hoverposeangles
 hoverposeflags
 hoverposeposition
+hpzp
 hr_H
 http request
 http$
@@ -29466,6 +29469,7 @@ n < (int)sizeof(ctx->enc_data)
 n does not equal p q
 n0?X
 n1Z 
+n4iR
 n5cM
 n6j/
 n:2C[
@@ -29499,7 +29503,6 @@ nSoundEventGuid
 nStf,a
 nSw}Z\tu
 nTextOffset
-nTiR
 nTraceContents
 nValue
 nWinner
@@ -30050,17 +30053,16 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^TiR
-p0j 
+p08@H^4iR
 p250
-p2`Y
+p2@Y
 p2{l
 p4Z3
 p5Z3
 p5\nL,
 p618
+p>4iR
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
-p>TiR
 p@0pqE5tsO?|1
 pActivator
 pAnimGraphEntity
@@ -30121,6 +30123,7 @@ pTarget2
 pTargetAttachmentName
 pU>\AL
 pValue
+pXER
 p\rP!0
 p\rP\f0!h
 p^i9
@@ -30308,7 +30311,7 @@ payload + padding <= 16381
 payment gateway capabilities
 payment_row_usd
 payment_us_usd
-pb`Y
+pb@Y
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -30554,7 +30557,7 @@ playervisibilitystrength
 playerweapon
 playing_commentary
 playoverscript
-pnTiR
+pn4iR
 point
 point arithmetic failure
 point at infinity
@@ -30873,7 +30876,6 @@ pvk too short
 pvs_modify_entity
 pvsplayer
 pwid
-pxER
 pzKD)
 q not prime
 q&A\nn
@@ -33444,6 +33446,7 @@ v2i_ASN1_BIT_STRING
 v2i_GENERAL_NAMES
 v2i_GENERAL_NAME_ex
 v3\vt
+v4iR
 v8.dll
 v8array
 v8callback
@@ -33469,7 +33472,6 @@ vStartPos
 vStartPos[%s] pStartArea[%d]
 vStartPos[%s] vGoalPos[%s]
 vTarget
-vTiR
 vValue
 vVelocity
 vW3N&
