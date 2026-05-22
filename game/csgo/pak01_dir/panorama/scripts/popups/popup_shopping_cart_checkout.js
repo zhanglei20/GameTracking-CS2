@@ -99,6 +99,9 @@ var PopUpShoppingCartCheckout;
         $.Schedule(.4, () => {
             let itemId = '';
             let numInactiveTokens = 0;
+            if (!cp || !cp.IsValid()) {
+                return;
+            }
             InventoryAPI.SetInventorySortAndFilters('inv_sort_age', false, 'tool_type:seasontiers,has_attribute:season access:==:' + g_ActiveTournamentInfo.credits_id, '', '');
             if (InventoryAPI.GetInventoryCount() > 0) {
                 itemId = InventoryAPI.GetInventoryItemIDByIndex(0);
