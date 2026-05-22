@@ -2,6 +2,7 @@
 /// <reference path="../csgo.d.ts" />
 /// <reference path="../common/iteminfo.ts" />
 /// <reference path="popup_inspect_shared.ts" />
+/// <reference path="../generated/items_event_current_generated_store.ts" />
 var CanApplyHeader;
 (function (CanApplyHeader) {
     function Init(oTitleSettings) {
@@ -20,24 +21,52 @@ var CanApplyHeader;
             return;
         }
         let title = oTitleSettings.isRemove ? '#SFUI_InvContextMenu_can_stick_Wear_full_' + oTitleSettings.type : '#SFUI_InvContextMenu_stick_use_' + oTitleSettings.type;
-        if (InspectShared.GetPopupSetting('work_type') === 'can_wrap_sticker')
-            title = oTitleSettings.toolId ? '#CSGO_Tool_WrapStickerInDisplayCase_Title' : '#CSGO_Tool_UnWrapStickerInDisplayCase_Title';
+        switch (InspectShared.GetPopupSetting('work_type')) {
+            case 'remove_sticker':
+                if (InspectShared.GetPopupSetting('remove_sticker_all_at_once', oTitleSettings.contextPanel))
+                    title = '#SFUI_InvUse_Remove_Stickers';
+                break;
+            case 'can_wrap_sticker':
+                title = oTitleSettings.toolId ? '#CSGO_Tool_WrapStickerInDisplayCase_Title' : '#CSGO_Tool_UnWrapStickerInDisplayCase_Title';
+                break;
+            case 'craft_souvenir':
+                title = "#popup_craft_souvenir_button";
+                break;
+        }
         oTitleSettings.contextPanel.SetDialogVariable("CanApplyTitle", $.Localize(title, oTitleSettings.contextPanel));
     }
     function _SetUpDesc(oTitleSettings) {
         const currentName = InventoryAPI.GetItemNameUncustomized(oTitleSettings.itemId);
         oTitleSettings.contextPanel.SetDialogVariable('tool_target_name', currentName);
         let desc = oTitleSettings.isRemove ? '#popup_can_stick_scrape_full_' + oTitleSettings.type : '#popup_can_stick_desc';
-        if (InspectShared.GetPopupSetting('work_type') === 'can_wrap_sticker')
-            desc = '';
+        switch (InspectShared.GetPopupSetting('work_type')) {
+            case 'remove_sticker':
+                if (InspectShared.GetPopupSetting('remove_sticker_all_at_once', oTitleSettings.contextPanel))
+                    desc += '_wipestickers';
+                break;
+            case 'can_wrap_sticker':
+                desc = '';
+                break;
+            case 'craft_souvenir':
+                desc = '#popup_craft_souvenir_desc';
+                break;
+        }
         oTitleSettings.contextPanel.SetDialogVariable("CanApplyDesc", $.Localize(desc, oTitleSettings.contextPanel));
     }
     function _SetUpWarning(oTitleSettings) {
         const elLabel = oTitleSettings.headerPanel.FindChildTraverse('id-can-apply-warning');
-        if (InspectShared.GetPopupSetting('work_type') === 'can_wrap_sticker') {
-            elLabel.visible = true;
-            elLabel.FindChildInLayoutFile('id-can-apply-warning-text').SetLocString(oTitleSettings.toolId ? '#CSGO_Tool_WrapStickerInDisplayCase_Desc' : '#CSGO_Tool_UnWrapStickerInDisplayCase_Desc');
-            return;
+        switch (InspectShared.GetPopupSetting('work_type')) {
+            case 'can_wrap_sticker':
+                elLabel.visible = true;
+                elLabel.FindChildInLayoutFile('id-can-apply-warning-text').SetLocString(oTitleSettings.toolId ? '#CSGO_Tool_WrapStickerInDisplayCase_Desc' : '#CSGO_Tool_UnWrapStickerInDisplayCase_Desc');
+                return;
+            case 'craft_souvenir':
+                elLabel.visible = true;
+                const balanceCredits = InspectShared.GetPopupSetting('credits_owned_souvenir');
+                elLabel.SetDialogVariableInt('credits_owned_souvenir', balanceCredits);
+                elLabel.SetDialogVariableLocString('event_credits', '#CSGO_TournamentPass_' + g_ActiveTournamentInfo.location + '_credits');
+                elLabel.FindChildInLayoutFile('id-can-apply-warning-text').SetLocString('#popup_craft_souvenir_warn');
+                return;
         }
         if (oTitleSettings.isRemove && InspectShared.GetPopupSetting('work_type') == 'remove_keychain') {
             elLabel.visible = true;

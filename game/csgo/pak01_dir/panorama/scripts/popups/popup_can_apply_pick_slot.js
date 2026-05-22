@@ -8,8 +8,9 @@ var CanApplyPickSlot;
 (function (CanApplyPickSlot) {
     function Init(oSettings) {
         ShowHideInfoPanel(oSettings.isRemove && oSettings.type === 'keychain', oSettings.infoPanel);
-        if (oSettings.isRemove) {
-            _ShowItemIconsToRemove(oSettings);
+        const worktype = InspectShared.GetPopupSetting('work_type');
+        if (oSettings.isRemove || (worktype === 'craft_souvenir')) {
+            ShowItemIconsToRemove(oSettings, worktype);
         }
         else {
             _AddItemImage(oSettings, oSettings.toolId);
@@ -32,9 +33,10 @@ var CanApplyPickSlot;
         });
         const elStickerScrapeLevelContainer = oSettings.infoPanel.FindChildInLayoutFile('StickerScrapeLevelContainer');
         if (elStickerScrapeLevelContainer) {
-            elStickerScrapeLevelContainer.SetHasClass('StickerScrapeLevelContainerHidden', itemId ? false : true);
+            const bShowScrapeLevelSlider = itemId && !InspectShared.GetPopupSetting('remove_sticker_all_at_once', oSettings.contextPanel);
+            elStickerScrapeLevelContainer.SetHasClass('StickerScrapeLevelContainerHidden', bShowScrapeLevelSlider ? false : true);
             const elStickerScrapeLevelSlider = elStickerScrapeLevelContainer.FindChildInLayoutFile('StickerScrapeLevelSlider');
-            if (elStickerScrapeLevelSlider && itemId) {
+            if (elStickerScrapeLevelSlider && bShowScrapeLevelSlider) {
                 let valWear = InventoryAPI.GetItemAttributeValue(itemId, "sticker slot " + slotIndex + " wear");
                 if (!valWear)
                     valWear = 0.0;
@@ -49,13 +51,36 @@ var CanApplyPickSlot;
                     CapabilityCanSticker.SetStickerScrapeLevel(0, oSettings.contextPanel);
                 }
             }
+            else if (itemId && oSettings.asyncBarPanel) {
+                InventoryAPI.HighlightStickerBySlot(slotIndex);
+            }
         }
     }
     CanApplyPickSlot.UpdateSelectedRemoveForSticker = UpdateSelectedRemoveForSticker;
     function _ShowHideApplyHints(oSettings) {
         oSettings.infoPanel.FindChildInLayoutFile('popup-capability-keychain-hints').SetHasClass('show-keychain-apply-hints', !oSettings.isRemove && oSettings.type === "keychain");
         oSettings.infoPanel.FindChildInLayoutFile('popup-capability-sticker-hints').SetHasClass('show-sticker-apply-hints', !oSettings.isRemove && oSettings.type === "sticker");
-        oSettings.infoPanel.FindChildInLayoutFile('popup-capability-sticker-remove-hint').SetHasClass('show-sticker-remove-hints', oSettings.isRemove && oSettings.type === "sticker");
+        oSettings.infoPanel.FindChildInLayoutFile('popup-capability-sticker-remove-hint').SetHasClass('show-sticker-remove-hints', oSettings.isRemove && oSettings.type === "sticker"
+            && !InspectShared.GetPopupSetting('remove_sticker_all_at_once', oSettings.contextPanel));
+        oSettings.infoPanel.FindChildInLayoutFile('popup-capability-sticker-wipestickers-hint').SetHasClass('show-sticker-remove-hints', oSettings.isRemove && oSettings.type === "sticker"
+            && !!InspectShared.GetPopupSetting('remove_sticker_all_at_once', oSettings.contextPanel));
+        if ('craft_souvenir' === InspectShared.GetPopupSetting('work_type')) {
+            const elHintBar = oSettings.infoPanel.FindChildInLayoutFile('popup-capability-sticker-craft-souvenir-hint');
+            elHintBar.SetHasClass('show-craft-souvenir-hints', true);
+            const elHintLabel = elHintBar.FindChildInLayoutFile('popup-capability-sticker-craft-souvenir-inscription');
+            elHintLabel.SetDialogVariableLocString('event_name', '#CSGO_Tournament_Event_Name_' + InventoryAPI.GetItemAttributeValue(oSettings.itemId, '{uint32}tournament event id'));
+            elHintLabel.SetDialogVariableLocString('event_stage', '#CSGO_Tournament_Event_Stage_' + InventoryAPI.GetItemAttributeValue(oSettings.itemId, '{uint32}tournament event stage id'));
+            elHintLabel.SetDialogVariableLocString('event_team1', '#CSGO_TeamID_' + InventoryAPI.GetItemAttributeValue(oSettings.itemId, '{uint32}tournament event team0 id'));
+            elHintLabel.SetDialogVariableLocString('event_team2', '#CSGO_TeamID_' + InventoryAPI.GetItemAttributeValue(oSettings.itemId, '{uint32}tournament event team1 id'));
+            let locStringPlayer = '#SFUI_Character_Guest';
+            let unAutographPlayerID = InventoryAPI.GetItemAttributeValue(oSettings.itemId, '{uint32}tournament mvp account id');
+            g_ActiveTournamentTeams.forEach((tt) => tt.players.forEach((tp) => {
+                if (tp.playerid === unAutographPlayerID) {
+                    locStringPlayer = '#SFUI_ProPlayer_' + tp.code;
+                }
+            }));
+            elHintLabel.SetDialogVariableLocString('autograph_player', locStringPlayer);
+        }
     }
     function ShowHideInfoPanel(bHide, elInfoPanel) {
         elInfoPanel.SetHasClass('hidden', bHide);
@@ -68,23 +93,66 @@ var CanApplyPickSlot;
         return false;
     }
     CanApplyPickSlot.IsContinueEnabled = IsContinueEnabled;
-    function _ShowItemIconsToRemove(oSettings) {
+    const defidxStickerItem = InventoryAPI.GetItemDefinitionIndexFromDefinitionName('sticker');
+    function ShowItemIconsToRemove(oSettings, worktype) {
         const slotCount = InventoryAPI.GetItemStickerSlotCount(oSettings.itemId);
         const elContainer = oSettings.infoPanel.FindChildInLayoutFile('CanStickerItemIcons');
         elContainer.RemoveAndDeleteChildren();
+        let slots = [];
         for (let i = 0; i < slotCount; i++) {
             const imagePath = InventoryAPI.GetItemStickerImageBySlot(oSettings.itemId, i);
             if (imagePath) {
-                const elPatch = $.CreatePanel('RadioButton', elContainer, imagePath, { group: "remove-btns" });
-                elPatch.Data().slot = i;
+                let unCostInCredits = 0;
+                if (worktype === 'craft_souvenir') {
+                    const idStickerKit = InventoryAPI.GetItemAttributeValue(oSettings.itemId, '{uint32}sticker slot ' + i + ' id');
+                    const idFauxSticker = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(defidxStickerItem, idStickerKit);
+                    unCostInCredits = MissionsAPI.GetSeasonalOperationFauxCreditsCost(g_ActiveTournamentInfo.credits_id, idFauxSticker);
+                    if (!unCostInCredits)
+                        unCostInCredits = g_ActiveTournamentInfo.souvenir_cost;
+                }
+                slots.push({ index: i, imagePath: imagePath, cost: unCostInCredits });
+            }
+        }
+        if (worktype === 'craft_souvenir') {
+            slots.sort((a, b) => (b.cost - a.cost) * 100 + (a.index - b.index));
+        }
+        for (let j = 0; j < slots.length; j++) {
+            const elPatch = $.CreatePanel('RadioButton', elContainer, slots[j].imagePath, { group: "remove-btns" });
+            elPatch.Data().slot = slots[j].index;
+            elPatch.Data().itemId = oSettings.itemId;
+            elPatch.BLoadLayoutSnippet('RemoveBtn');
+            const elImage = elPatch.FindChildInLayoutFile('RemoveImage');
+            elImage.SetImage('file://{images}' + slots[j].imagePath + '.png');
+            if (worktype === 'craft_souvenir') {
+                elPatch.enabled = false;
+                const elCostLabel = elPatch.FindChildInLayoutFile('CostLabel');
+                elCostLabel.RemoveClass('hidden');
+                elCostLabel.SetDialogVariableInt('cost', slots[j].cost);
+            }
+            else {
+                elPatch.SetPanelEvent('onactivate', () => oSettings.funcOnSelectForRemove(slots[j].index, oSettings));
+            }
+        }
+        if (worktype === 'craft_souvenir') {
+            const discountAmount = InventoryAPI.GetItemSouvenirDiscountPercent(oSettings.itemId);
+            if (discountAmount > 0) {
+                const elPatch = $.CreatePanel('RadioButton', elContainer, 'discount-sticker', { group: "remove-btns" });
+                elPatch.Data().slot = slots.length;
                 elPatch.Data().itemId = oSettings.itemId;
                 elPatch.BLoadLayoutSnippet('RemoveBtn');
                 const elImage = elPatch.FindChildInLayoutFile('RemoveImage');
-                elImage.SetImage('file://{images}' + imagePath + '.png');
-                elPatch.SetPanelEvent('onactivate', () => oSettings.funcOnSelectForRemove(i, oSettings));
+                elImage.SetImage('file://{images}/icons/ui/coupon.svg');
+                elImage.SetHasClass('popup-can-apply_remove__image__coupon', true);
+                elImage.style.washColor = InventoryAPI.GetItemRarityColor(oSettings.itemId);
+                elPatch.enabled = false;
+                const elCostLabel = elPatch.FindChildInLayoutFile('CostLabel');
+                elCostLabel.RemoveClass('hidden');
+                elCostLabel.SetHasClass('popup-can-apply_remove__label__coupon', true);
+                elCostLabel.text = `-${discountAmount}%`;
             }
         }
     }
+    CanApplyPickSlot.ShowItemIconsToRemove = ShowItemIconsToRemove;
     function _AddItemImage(oSettings, itemid) {
         const elContainer = oSettings.infoPanel.FindChildInLayoutFile('CanStickerItemIcons');
         let aItems;
@@ -105,10 +173,11 @@ var CanApplyPickSlot;
         const elCancelBtn = oSettings.infoPanel.FindChildInLayoutFile('CanApplyCancel');
         const worktype = InspectShared.GetPopupSetting('work_type', oSettings.contextPanel);
         if (elContinueBtn)
-            elContinueBtn.SetHasClass('hidden', oSettings.isRemove || InspectShared.GetPopupSetting('is_workshop_preview', oSettings.contextPanel));
+            elContinueBtn.SetHasClass('hidden', oSettings.isRemove || InspectShared.GetPopupSetting('is_workshop_preview', oSettings.contextPanel)
+                || (worktype === 'craft_souvenir'));
         if (elNextSlotBtn) {
             elNextSlotBtn.enabled = !(oSettings.isRemove);
-            elNextSlotBtn.SetHasClass('hidden', oSettings.isRemove);
+            elNextSlotBtn.SetHasClass('hidden', oSettings.isRemove || (worktype === 'craft_souvenir'));
         }
         if (elCancelBtn) {
             elCancelBtn.SetHasClass('hidden', true);

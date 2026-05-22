@@ -95,6 +95,10 @@ var InspectModelImage;
             DeleteExistingItemPanel(itemId, 'ItemPreviewPanel');
             m_elPanel = _InitStickerScene(itemId);
         }
+        else if (ItemInfo.ItemDefinitionNameSubstrMatch(itemId, 'tournament_pass_') && ItemInfo.ItemDefinitionNameSubstrMatch(itemId, '_credits')) {
+            DeleteExistingItemPanel(itemId, 'ItemPreviewPanel');
+            m_elPanel = _InitDisplayScene(itemId, true);
+        }
         else if (model) {
             if (InventoryAPI.GetLoadoutCategory(itemId) === 'clothing') {
                 m_elPanel = _InitGlovesScene(itemId);
@@ -361,23 +365,23 @@ var InspectModelImage;
         _TransitionCamera(panel, 'path_spray', true, 0);
         return panel;
     }
-    function _InitDisplayScene(itemId) {
+    function _InitDisplayScene(itemId, bDoNotAllowRotate = false) {
         let bOverrideItem = InventoryAPI.GetItemDefinitionIndex(itemId) === 996;
         let rotationOverrideX = bOverrideItem ? "360" : "70";
-        let autoRotateOverrideX = bOverrideItem ? "180" : "45";
-        let autoRotateTimeOverrideX = bOverrideItem ? "100" : "20";
+        let autoRotateOverrideX = bDoNotAllowRotate ? "0" : bOverrideItem ? "180" : "45";
+        let autoRotateTimeOverrideX = bDoNotAllowRotate ? "1" : bOverrideItem ? "100" : "20";
         let oSettings = {
             panel_type: "MapItemPreviewPanel",
             active_item_idx: 3,
             camera: 'cam_display_close_intro',
             initial_entity: 'item',
-            mouse_rotate: "true",
+            mouse_rotate: bDoNotAllowRotate ? "false" : "true",
             rotation_limit_x: rotationOverrideX,
             rotation_limit_y: "60",
             auto_rotate_x: autoRotateOverrideX,
-            auto_rotate_y: "12",
+            auto_rotate_y: bDoNotAllowRotate ? "0" : "12",
             auto_rotate_period_x: autoRotateTimeOverrideX,
-            auto_rotate_period_y: "20",
+            auto_rotate_period_y: bDoNotAllowRotate ? "1" : "20",
             auto_recenter: false,
             player: "false",
         };

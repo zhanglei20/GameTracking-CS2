@@ -5,6 +5,7 @@
 		<include src="s2r://panorama/styles/context_menus/context_menu_get_souvenir.vcss_c" />
 	</styles>
 	<scripts>
+		<include src="s2r://panorama/scripts/generated/items_event_current_generated_store.vts_c" />
 		<include src="s2r://panorama/scripts/context_menus/context_menu_get_souvenir.vts_c" />
 	</scripts>
 	<snippets>
@@ -32,7 +33,7 @@
 				</Panel>
 				<Panel id="id-get-souvenir" class="get-souvenir__btn-container">
 					<Label class="get-souvenir__btn-message mapname stratum-regular-condensed" text="{s:redeems-text}" />
-					<Panel class="left-right-flow">
+					<Panel class="left-right-flow hidden">
 						<DropDown class="get-souvenir-dropdown" id="PurchaseCountDropdown" menuclass="DropDownMenu Numbers">
 							<Label text="1" id="1" value="1" />
 							<Label text="2" id="2" value="2" />
@@ -67,7 +68,7 @@
 		<Panel class="get-souvenir-no-score">
 			<Panel class="left-right-flow vertical-center">
 				<Image class="right-padding vertical-center" texturewidth="24" textureheight="24" src="s2r://panorama/images/icons/ui/info.vsvg" />
-				<Label class="stratum-regular" text="#contextmenu_pickem_souvenir_no_result" />
+				<Label class="stratum-regular" text="#contextmenu_pickem_souvenir_make_later" />
 			</Panel>
 		</Panel>
 		<Panel class="get-souvenir-container">

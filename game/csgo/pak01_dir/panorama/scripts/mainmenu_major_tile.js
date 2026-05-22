@@ -12,7 +12,7 @@ var MainMenuMajorTile;
             bVisible = false;
         else if (LicenseUtil.GetCurrentLicenseRestrictions())
             bVisible = false;
-        else if (!StoreAPI.GetStoreItemSalePrice(InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(g_ActiveTournamentStoreLayout[1][0], 0), 1, ''))
+        else if (!g_ActiveTournamentInfo.active)
             bVisible = false;
         _m_cp.SetHasClass('hidden', !bVisible);
         if (!bVisible)
@@ -21,21 +21,21 @@ var MainMenuMajorTile;
         _m_cp.SetHasClass('major-' + g_ActiveTournamentInfo.eventid.toString(), true);
         _m_cp.FindChildInLayoutFile('id-img-open-major-hub').SetImage('file://{images}/tournaments/backgrounds/pickem_mainmenu_promo_' + g_ActiveTournamentInfo.eventid + '.psd');
         let sRestriction = InventoryAPI.GetDecodeableRestriction("capsule");
-        let bCanSellCapsules = (sRestriction !== "restricted" && sRestriction !== "xray");
         let bHasActualCapsulesForPurchase = false;
         _m_cp.SetHasClass('has-reduction', false);
         let tournamentEventId = NewsAPI.GetActiveTournamentEventID();
-        let itemIdForStickerCapsule = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(g_ActiveTournamentStoreLayout[1][0], 0);
-        if (bCanSellCapsules && (tournamentEventId !== 0) && ('' !== StoreAPI.GetStoreItemSalePrice(itemIdForStickerCapsule, 1, ''))) {
-            _m_cp.FindChildInLayoutFile('id-open-major-item-image').itemid = itemIdForStickerCapsule;
-            bHasActualCapsulesForPurchase = true;
-            let reduction = StoreAPI.GetStoreItemPercentReduction(itemIdForStickerCapsule);
+        if ((tournamentEventId !== 0)) {
+            const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+            const defidxStickerItem = InventoryAPI.GetItemDefinitionIndexFromDefinitionName('sticker');
+            const numSticker = 3;
+            for (let i = 0; i < numSticker; i++) {
+                const itemId = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(defidxStickerItem, g_ActiveTournamentTeams[getRandomInt(0, g_ActiveTournamentTeams.length - 1)].players[getRandomInt(0, 4)].stickerids[getRandomInt(0, 3)]);
+                _m_cp.FindChildInLayoutFile('id-open-major-item-image-' + i).itemid = itemId;
+                bHasActualCapsulesForPurchase = true;
+            }
+            let reduction = '';
             _m_cp.SetHasClass('has-reduction', reduction !== '' && reduction !== undefined);
             _m_cp.FindChildInLayoutFile('id-items-banner').SetDialogVariable('items-text', reduction ? $.Localize('#store_sale') : $.Localize('#mainmenu_major_hub_items'));
-        }
-        let itemIdForChampions = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(g_ActiveTournamentStoreLayout[4][0], 0);
-        if (bCanSellCapsules && (tournamentEventId !== 0) && ('' !== StoreAPI.GetStoreItemSalePrice(itemIdForChampions, 1, ''))) {
-            _m_cp.FindChildInLayoutFile('id-open-major-item-image').itemid = itemIdForChampions;
         }
         _m_cp.SetDialogVariable('hub-title-bar-caption', $.Localize(bHasActualCapsulesForPurchase ? '#mainmenu_major_hub' : '#mainmenu_major_hub_no_items'));
         _m_cp.SetHasClass('can-sell-items', bHasActualCapsulesForPurchase);

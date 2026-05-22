@@ -20,7 +20,6 @@
  (08@HPZ
  (08@HR
  (0X`hpz
- (deprecated)
  * Adding Bone :: < %10.4f %10.4f %10.4f >\n
  - (Additive)
  255
@@ -209,6 +208,7 @@ $modelname$_surface
 +Visuals
 , channels = 
 , height = 
+-deprecated-
 .?AU?$CDelaBella2@MH@@
 .?AU?$IDelaBella2@MH@@
 .?AUCAttr_bodygroup@?1??GetAttributeTable_Impl@CNmClipDocEvent_BodyGroup@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1659,6 +1659,7 @@ $modelname$_surface
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocKeychainMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocStickerMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshNodeToAppend@?1??GetStaticAttributes@CModelDocRenderMeshAppendRenderMesh@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_strSpecialIdentifier@?1??GetStaticAttributes@CModelDocStickerMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strStackInstanceName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpStack@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ForceRealignBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ReassignBoneParent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -2589,6 +2590,7 @@ $modelname$_surface
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -3491,6 +3493,7 @@ $modelname$_surface
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -4475,6 +4478,7 @@ $modelname$_surface
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocRoot@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@X@@
@@ -5542,6 +5546,7 @@ $modelname$_surface
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -6226,6 +6231,7 @@ $modelname$_surface
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@@@
+.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@@@
@@ -7334,6 +7340,7 @@ $modelname$_surface
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -8766,7 +8773,7 @@ $modelname$_surface
 2DBlend
 2DBlendEditor
 2DBlendFromAnimation
-2Tq{
+2Tz{
 2_BONE_IK
 4\r54t
 5;FJ$,XEK4<
@@ -9143,6 +9150,7 @@ Auto Layer
 Auto Level
 Auto-Smooth
 Auto-detect
+Autograph
 Automatically builds a physics hull from render geometry.
 Automatically builds a physics hull from user-specified points
 Automatically builds a physics mesh from render geometry.
@@ -12570,7 +12578,9 @@ Spawn Piece Motion-Disabled
 Spawn particle meshes when this prop breaks.  These models are the contents of the container which broke, for example a crate and the things it contains.
 Spawn particle meshes when this prop breaks. (Automatically creates a helper model with a bodygroup choice for each particle, a snapshot that positions them in the appropriate places, and a breakcommand that spawns a particlesystem driven by the model and vsnaps.)
 SpawnConfig
+Special Identifier
 Special operation to execute when this model breaks.
+SpecialIdentifier
 Specific Physics Body to Replace
 Specified
 Specified class '%s' is a base class, @exclude cannot be used for base classes
@@ -12627,7 +12637,8 @@ Static Only Tolerance
 Status Effect Params CP ( Status Effect Flags / None / None )
 Stereo
 Stereo controls are compiled into right_<name> and left_<name> pairs.
-Sticker %d%s
+Sticker %d
+Sticker %d [%s]
 Sticker Index
 Sticker Markup Preview
 StickerMarkup
@@ -12742,6 +12753,8 @@ Target warp exceed accurate sampling error threshold! Switching to inaccurate sa
 Target warps required at least one translation XY event!
 TargetPrinter
 Targets
+Team1
+Team2
 Tension Compress Scale
 Tension Stretch Scale
 Test Enum
@@ -14592,7 +14605,6 @@ pseudo-
 pushout_strength
 quad_bend_tolerance
 quadratic
-r>0f
 r\fpx
 radius0_key
 radius1_key
@@ -14745,6 +14757,7 @@ sound_event
 sound_event_on_spawn
 source_mesh
 source_node
+special_identifier
 specific_physics_body_to_replace
 speed_range
 speeds

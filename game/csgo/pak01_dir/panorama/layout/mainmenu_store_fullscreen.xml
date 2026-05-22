@@ -47,6 +47,18 @@
 				</Panel>
 			</Panel>
 		</snippet>
+		<snippet name="TournamentStickers">
+			<Panel class="store-home-major-stickers">
+				<Panel class="store-home-major-stickers__images">
+					<ItemImage id="id-sticker-0" class="left-right-padding" scaling="stretch-to-fit-preserve-aspect" />
+					<ItemImage id="id-sticker-1" class="left-right-padding" scaling="stretch-to-fit-preserve-aspect" />
+					<ItemImage id="id-sticker-2" class="left-right-padding" scaling="stretch-to-fit-preserve-aspect" />
+					<ItemImage id="id-sticker-3" class="left-right-padding" scaling="stretch-to-fit-preserve-aspect" />
+					<ItemImage id="id-sticker-4" class="left-right-padding" scaling="stretch-to-fit-preserve-aspect" />
+				</Panel>
+				<Label class="stratum-bold-condensed" text="#major_hub_store_title_26" />
+			</Panel>
+		</snippet>
 	</snippets>
 	<Panel class="mainmenu-content__container" useglobalcontext="true" registerforreadyevents="true">
 		<Panel id="id-mainmenu-store" class="full-width full-height top-bottom-flow" hittest="false">

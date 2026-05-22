@@ -9,7 +9,7 @@
 	<snippets>
 		<snippet name="team-draggable">
 			<Panel class="group-stage-draggable-team" draggable="true" acceptsfocus="true" acceptsinput="true">
-				<Image id="id-team-logo" class="group-stage-draggable-team__logo" textureheight="60" texturewidth="60" scaling="stretch-to-cover-preserve-aspect" src="s2r://panorama/images/tournaments/unknown_team_dark.vsvg" />
+				<Image id="id-team-logo" class="group-stage-draggable-team__logo" textureheight="32" texturewidth="32" scaling="stretch-to-cover-preserve-aspect" src="s2r://panorama/images/tournaments/unknown_team_dark.vsvg" />
 			</Panel>
 		</snippet>
 		<snippet name="group-matchup">
@@ -95,14 +95,14 @@
 	<Panel class="full-width full-height">
 		<Frame id="id-predictions-timer" src="s2r://panorama/layout/tournaments/predictions_timer.vxml_c" />
 		<Frame id="id-predictions-apply-btn" class="vertical-align-bottom horizontal-align-right" src="s2r://panorama/layout/tournaments/predictions_apply_btn.vxml_c" />
-		<Panel class="full-width full-height left-right-flow">
+		<Panel class="full-width full-height left-right-flow horizontal-center">
 			<Panel class="group-stage-teams-container">
 				<Panel id="id-drag-teams" class="group-stage-teams__howto">
-					<Image class="" texturewidth="24" textureheight="24" scaling="stretch-to-fit-y-preserve-aspect" src="s2r://panorama/images/icons/ui/drag.vsvg" />
+					<Image class="" texturewidth="18" textureheight="18" scaling="stretch-to-fit-y-preserve-aspect" src="s2r://panorama/images/icons/ui/drag.vsvg" />
 					<Label class="stratum-light" text="#pickem_drag_picks" />
 				</Panel>
 				<Panel id="id-no-teams" class="group-stage-teams__howto">
-					<Image class="" texturewidth="24" textureheight="24" scaling="stretch-to-fit-y-preserve-aspect" src="s2r://panorama/images/icons/ui/info.vsvg" />
+					<Image class="" texturewidth="18" textureheight="18" scaling="stretch-to-fit-y-preserve-aspect" src="s2r://panorama/images/icons/ui/info.vsvg" />
 					<Label class="stratum-light" text="#pickem_teams_tbd" />
 				</Panel>
 				<Panel id="id-predictions-draggable-teams" class="group-stage-teams" />

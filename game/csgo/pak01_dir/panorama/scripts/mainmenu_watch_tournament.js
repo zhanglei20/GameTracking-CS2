@@ -336,6 +336,7 @@ var mainmenu_watch_tournament = (function () {
     {
         var elLink = elPanel.FindChildInLayoutFile( 'JsTournamentInfoLink' );
 		var olinks = {
+			26: "https://store.steampowered.com/sale/csmajorcologne2026",
 			25: "https://store.steampowered.com/sale/csmajorbud2025",
 			24: "https://store.steampowered.com/sale/csmajoraus2025",
 			23: "https://store.steampowered.com/sale/csmajorsha2024",

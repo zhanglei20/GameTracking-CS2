@@ -70,7 +70,7 @@
   Repeats: 
   Top-level Mesh Op '%s' returning a cached result.\n
   V%d: '%s' (%s)\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ n
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$%%&'()*+,-../0123456789:;<=>?@ABCDEFGHIJKLLMNOPQRSTUVWXY[]_`bdefhjlnprtvz|~
  #?windowFrameSectionAt@QGraphicsWidget@@MEBA?AW4WindowFrameSection@Qt@@AEBVQPointF@@@Z
  %.2f %.2f %.2f %.2f %.2f %.2f ;
@@ -97,7 +97,6 @@
  (Driven by choice group '%1')
  (INVALID PSS PARAMETERS)\n
  (Negative)
- (deprecated)
  (read-only)
  (repeat)
  (writable)
@@ -154,7 +153,7 @@
  -vis
  -vrad3LargeBlockSize
  -world
- .pMP
+ .pVP
  255
  8f\ff
  <-- Arg '%s'
@@ -1154,6 +1153,7 @@ $worldspacetype
 -\r?hideEvent@QMdiSubWindow@@MEAAXPEAVQHideEvent@@@Z
 -\tV_fread
 -changelist "%s"
+-deprecated-
 -gamma20
 -l34
 -mB:t
@@ -1168,7 +1168,9 @@ $worldspacetype
 ....................
 ../src/devtools/bin/certificates/game/
 ..uR5&m
-.0iP
+.0eP
+.0gP
+.0rP
 .4bb
 .97yY
 .?AUBufferedImpulseResponse_t@@
@@ -2629,6 +2631,7 @@ $worldspacetype
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocKeychainMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocStickerMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshNodeToAppend@?1??GetStaticAttributes@CModelDocRenderMeshAppendRenderMesh@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_strSpecialIdentifier@?1??GetStaticAttributes@CModelDocStickerMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strStackInstanceName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpStack@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ForceRealignBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ReassignBoneParent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -5055,6 +5058,7 @@ $worldspacetype
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -5909,6 +5913,7 @@ $worldspacetype
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -6905,6 +6910,7 @@ $worldspacetype
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocRoot@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@X@@
@@ -7809,6 +7815,7 @@ $worldspacetype
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -8562,6 +8569,7 @@ $worldspacetype
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@@@
+.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@@@
@@ -9999,6 +10007,7 @@ $worldspacetype
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -14671,9 +14680,9 @@ $worldspacetype
 .P6AXPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
-.PQP
-.PTP
-.PcP
+.PZP
+.PdP
+.PlP
 .Q.Ol
 .R?matches@QKeyEvent@@QEBA_NW4StandardKey@QKeySequence@@@Z
 .[?setRed@QColor@@QEAAXH@Z
@@ -14948,16 +14957,17 @@ $worldspacetype
 .mp3
 .nav
 .navdbg
-.pNP
-.pTP
-.pbP
-.pcP
-.pfP
+.pWP
+.pdP
+.peP
 .pfm
+.pkP
+.plP
 .png
 .poP
 .pp@0
 .psd
+.pxP
 .text$
 .tga
 .tif
@@ -16029,33 +16039,29 @@ $worldspacetype
 5sfm_v8
 5t?F
 5~EW
-6 hP
-6 rP
+6 qP
 6#6165676;6M6O6S6Y6a6k6m6
 6#RDP#
 6%vi
 6,2K
 6-zeZ
-60LP
-60vP
+60UP
 62$|S)6f
 64 283 0
 64CK\vH
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 6666666666666666jjjjjjjjjjjjjjjj[
 67-s
-6@0T
 6FaceSkyBox
 6H,N
 6O|T%
-6PoP
-6PyP
+6PxP
 6Qd=
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
 6_wEX
-6`xP
+6`fP
 6afD
 6bX+
 6c&0|vvX
@@ -16063,7 +16069,7 @@ $worldspacetype
 6l13
 6lkc
 6myY;
-6pKP
+6pTP
 6qo~
 6r-m_v
 6r1ij
@@ -16107,7 +16113,6 @@ $worldspacetype
 8<pl
 8= zp
 8A6j
-8F0{P
 8GZS
 8SIffK5W
 8TZvrv<
@@ -16263,7 +16268,6 @@ $worldspacetype
 > (After)
 >"?IsValid@FbxProperty@fbxsdk@@QEBA_NXZ
 >#>)>/>3>A>W>c>e>w>
->0wP
 >4|6eXg_e
 >7^0g
 >>> Reading bsp from path %s\n
@@ -18701,11 +18705,10 @@ $worldspacetype
 @%s_lookFrame_2
 @08N
 @0pp
-@60uP
-@6@QP
-@6@TP
-@6pOP
-@6pQP
+@60~P
+@6@ZP
+@6pXP
+@6pZP
 @BH]f
 @HPX`hv
 @Integer overflow in %s
@@ -19707,6 +19710,7 @@ Auto-detect
 AutoCenter
 AutoVisGroup
 AutoVisGroupDockWidget
+Autograph
 Automatic
 Automatic Popup
 Automatically Load Autosaves After Crash
@@ -25119,14 +25123,12 @@ F'pY
 F+Zb
 F,mZq
 F/o4
-F0~P
 F2M+
 F6tr
 F7!z
 F9q'
 F<mb
-F@SP
-F@pP
+F@yP
 FBX (*.fbx)
 FBX Export failed: %s\n
 FBX Export failed: Couldn't create FBX manager: "%s"\n
@@ -25169,7 +25171,7 @@ F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 F_BLOOD_USE_UV2
 F_TEXTURE_FORMAT
 F_TEXTURE_FORMAT2
-F`nP
+F`wP
 Face
 Face %d
 Face Fit
@@ -27653,6 +27655,7 @@ Maximum of two values (int)
 Maximum projection angle
 Maximum radius for created lights
 Maximum segment length %
+MbP?(
 Mc]T=
 MdiArea
 Merge
@@ -32610,7 +32613,9 @@ Spawn Piece Motion-Disabled
 Spawn particle meshes when this prop breaks.  These models are the contents of the container which broke, for example a crate and the things it contains.
 Spawn particle meshes when this prop breaks. (Automatically creates a helper model with a bodygroup choice for each particle, a snapshot that positions them in the appropriate places, and a breakcommand that spawns a particlesystem driven by the model and vsnaps.)
 SpawnConfig
+Special Identifier
 Special operation to execute when this model breaks.
+SpecialIdentifier
 Specific Physics Body to Replace
 Specified
 Specified class '%s' is a base class, @exclude cannot be used for base classes
@@ -32792,7 +32797,8 @@ Steps:
 Stereo
 Stereo controls are compiled into right_<name> and left_<name> pairs.
 StereoFlip
-Sticker %d%s
+Sticker %d
+Sticker %d [%s]
 Sticker Index
 Sticker Markup Preview
 StickerMarkup
@@ -33066,6 +33072,8 @@ TargetName
 TargetPrinter
 TargetTextChanged
 Targetname to find:
+Team1
+Team2
 Temp Morph Scene
 Template
 Template map files (*.vmap)
@@ -34496,7 +34504,7 @@ Voronoi Plane Primitive
 Vortices
 Voxel volume (%i components)
 Vp>u
-VpMP
+VpVP
 Vrad3_Init_SearchPath
 Vt_9
 V~~Vq
@@ -35732,7 +35740,8 @@ _zero
 _zero_percent_distance
 _}eOk
 `28)fk
-`6@cP
+`6@lP
+`6`dP
 `:zQF
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -41753,8 +41762,6 @@ npc_dota_holdout_tower_reducespeed
 npc_dota_tower
 npcclass
 npcclip
-npwP
-np}P
 nsBaseUrl
 nsCaPolicyUrl
 nsCaRevocationUrl
@@ -42024,7 +42031,7 @@ p4Z3
 p5Z3
 p5\nL,
 p618
-p6puP
+p6p~P
 p@0pqE5tsO?|1
 pAction
 pAsset
@@ -42040,7 +42047,7 @@ pDescription
 pElement
 pEntity
 pEvent
-pF@SP
+pF@\P
 pFilter
 pG_*h
 pIp 
@@ -43711,6 +43718,7 @@ spacing mul (%.1f)
 spawnFlags
 spawnflags
 spawnpos
+special_identifier
 specificImpulse
 specific_impulse
 specific_physics_body_to_replace
@@ -45592,7 +45600,7 @@ zz2K
 ~\n?dragMoveEvent@QAbstractScrollArea@@MEAAXPEAVQDragMoveEvent@@@Z
 ~\v?eventFilter@QGraphicsScene@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 ~jLRG
-~pMP
+~pVP
 ~w]UG
 ~yhZ
 ~}|{zyxwvutsrqponmlkjihgfedcba`_^]\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#"! 

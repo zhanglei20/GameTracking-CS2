@@ -92,7 +92,12 @@ var ContextMenuGetSouvenir;
         const team1 = MatchInfoAPI.GetMatchTournamentTeamID(umid, 1);
         const bPlayoffMatch = MatchInfoAPI.IsMatchTournamentStageIDPlayoff(nStageID);
         const bThisMatchHasRedeemsEnabled = !bPlayoffMatch || InventoryAPI.HasHighlightReelSchema(nEventID, nStageID, team0, team1);
-        elGetSouvenir.SetHasClass('awaiting-highlights', !bThisMatchHasRedeemsEnabled);
+        elGetSouvenir.SetHasClass('awaiting-highlights', !bThisMatchHasRedeemsEnabled && (nEventID < 26));
+        if (nEventID >= 26) {
+            let previewBtn = elMatch.FindChildInLayoutFile('id-preview-souvenir-btn');
+            previewBtn.text = $.Localize('#popup_redeem_souvenir_action_craft');
+            return;
+        }
         if (_m_redeemsAvailable > 0) {
             elGetSouvenir.SetDialogVariable('price', $.Localize('#popup_redeem_souvenir_action_redeem'));
             elDropdown.visible = false;
@@ -161,25 +166,17 @@ var ContextMenuGetSouvenir;
     ;
     function _SetPreviewBtn(elMatch, rawMapName, umid) {
         let previewBtn = elMatch.FindChildInLayoutFile('id-preview-souvenir-btn');
+        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers);
         previewBtn.SetPanelEvent('onactivate', () => {
-            let nEventID = MatchInfoAPI.GetMatchTournamentEventID(umid);
-            let nStageID = MatchInfoAPI.GetMatchTournamentStageID(umid);
-            let team0 = MatchInfoAPI.GetMatchTournamentTeamID(umid, 0);
-            let team1 = MatchInfoAPI.GetMatchTournamentTeamID(umid, 1);
-            const bPlayoffMatch = MatchInfoAPI.IsMatchTournamentStageIDPlayoff(nStageID);
-            let idFaux = InventoryAPI.GetFauxItemIDFromDefAndPaintIndexUB1(g_ActiveTournamentInfo.souvenirs[rawMapName], 0, bPlayoffMatch ? 13 : 0);
-            let attributes = `{ "tournament event id": ${nEventID}, "tournament event stage id": ${nStageID}, "tournament event team0 id": ${team0}, "tournament event team1 id": ${team1} }`;
-            const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('popup-inspect-' + idFaux, 'file://{resources}/layout/popups/popup_capability_decodable.xml');
-            let oSettings = {
-                item_id: idFaux,
-                item_attributes: attributes,
-                show_work_type_warning: false,
-                force_hide_async_bar: true,
-                inspect_only: true,
-                work_type: 'decodeable',
-                only_close_btn: true
-            };
-            elPanel.Data().oSettings = oSettings;
+            const defidxStickerItem = InventoryAPI.GetItemDefinitionIndexFromDefinitionName('sticker');
+            const idFauxSticker = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(defidxStickerItem, g_ActiveTournamentInfo.stickerids[g_ActiveTournamentInfo.stickerids.length - 1]);
+            if (!MissionsAPI.GetSeasonalOperationFauxCreditsCost(g_ActiveTournamentInfo.credits_id, idFauxSticker)) {
+                StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers);
+                return;
+            }
+            $.DispatchEvent('CSGOPlaySoundEffect', 'sticker_applySticker', 'MOUSE');
+            $.DispatchEvent('ContextMenuEvent', '');
+            $.DispatchEvent('ShowSelectItemForCapabilityPopup', umid, '', 'craft_souvenir');
         });
     }
     var _ItemCustomizationNotification = function (numericType, type, itemid) {

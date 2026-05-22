@@ -1089,10 +1089,7 @@ var MainMenu;
         _msg('params: ' + params);
         const ParamsList = params.split(',');
         const caseId = ParamsList[0];
-        const storeId = ParamsList[1];
-        const showRentalItems = (!ParamsList[2] && ParamsList[2] !== '') ? ParamsList[2] : 'false';
         const lootlistNameOverride = ParamsList[3] && ParamsList[3] !== '' ? ParamsList[3] : 'false';
-        const showMarketLinkDefault = _m_bPerfectWorld ? 'false' : 'true';
         JsInspectCallback = UiToolkitAPI.RegisterJSCallback(() => {
         });
         const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('popup-lootlist-item-inspect-' + id, 'file://{resources}/layout/popups/popup_inventory_inspect.xml');

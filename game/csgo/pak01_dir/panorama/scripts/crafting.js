@@ -18,6 +18,23 @@ var Crafting;
         }
         elDropdown.SetSelected(InventoryAPI.GetSortMethodByIndex(1));
     }
+    function OnReadyToTradeUpClicked() {
+        let elTradeUpConfirmBtn = $.GetContextPanel().FindChildTraverse('TradeUpConfirmBtn');
+        if (elTradeUpConfirmBtn.checked) {
+            InventoryAPI.SetInventorySortAndFilters('inv_sort_age', false, 'ingredient,item_quality:tournament', '', '');
+            const count = InventoryAPI.GetInventoryCount();
+            if (count > 0) {
+                elTradeUpConfirmBtn.SetDialogVariableInt('count', count);
+                UiToolkitAPI.ShowGenericPopupOkCancelBgStyle('#CSGO_Recipe_TradeUp', $.Localize('#CSGO_Recipe_TradeUp_Souvenirs:f', elTradeUpConfirmBtn), '', () => UpdateButtons(), () => { if (elTradeUpConfirmBtn && elTradeUpConfirmBtn.IsValid()) {
+                    elTradeUpConfirmBtn.checked = false;
+                    UpdateButtons();
+                } }, '');
+                return;
+            }
+        }
+        UpdateButtons();
+    }
+    Crafting.OnReadyToTradeUpClicked = OnReadyToTradeUpClicked;
     function UpdateButtons() {
         let elTradeUpConfirmBtn = $.GetContextPanel().FindChildTraverse('TradeUpConfirmBtn');
         elTradeUpConfirmBtn.enabled = InventoryAPI.IsCraftReady();

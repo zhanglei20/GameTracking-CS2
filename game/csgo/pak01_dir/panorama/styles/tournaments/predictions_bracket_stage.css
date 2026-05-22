@@ -5,6 +5,7 @@
 	flow-children:right;
 	margin-top: 32px;
 	height: 100%;
+	horizontal-align: center;
 }
 
 .bracket-column

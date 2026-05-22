@@ -2,6 +2,8 @@
 /// <reference path="csgo.d.ts" />
 /// <reference path="common/iteminfo.ts" />
 /// <reference path="hud/hudwinpanel_background_map.ts" />
+/// <reference path="generated/items_event_current_generated_store.d.ts" />
+/// <reference path="generated/items_event_current_generated_store.ts" />
 var controlsLibActiveTab = null;
 function ControlsLibNavigateToTab(tab, msg) {
     if (controlsLibActiveTab) {
@@ -58,6 +60,10 @@ function OnPopupCustomLayoutPremierPickBan() {
 }
 function OnPopupCustomLayoutXpGrant() {
     UiToolkitAPI.ShowCustomLayoutPopupParameters('', 'file://{resources}/layout/popups/popup_acknowledge_xpgrant.xml', 'none');
+}
+function OnPopupCustomLayoutMajorStore() {
+    const popupPanel = UiToolkitAPI.ShowCustomLayoutPopup('id-popup-major-store', 'file://{resources}/layout/popups/popup_major_store.xml');
+    popupPanel.Data().eventId = g_ActiveTournamentInfo.eventid;
 }
 function OnPopupCustomLayoutCaseConfirm() {
     UiToolkitAPI.ShowCustomLayoutPopupParameters('', 'file://{resources}/layout/popups/popup_container_open_confirm.xml', 'none');

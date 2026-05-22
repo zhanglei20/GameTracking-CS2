@@ -51,7 +51,6 @@
  (0X`hpz
  (Asset has NO content file.)
  (Right click)
- (deprecated)
  * Adding Bone :: < %10.4f %10.4f %10.4f >\n
  * Requested DmAttribute of value of type "%s" From DmAttribute "%s" which is type "%s"\n
  ** Entrypoint For Method '%s'
@@ -559,6 +558,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 -> Success (%d attempts)\n
 -\nLx.\nAh/\n/4h
 -]?size@QFontMetrics@@QEBA?AVQSize@@HAEBVQString@@HPEAH@Z
+-deprecated-
 .:2&4"6(8$6j:<.&<$.Z>h@<>.:
 .?AU?$AccessorT@VCActionComponent@@VCAnimGraphDoc_Action@@@ArrayOperator@Attribute@@
 .?AU?$AccessorT@VCAnimGraphDoc_ComponentManager@@VCAnimGraphDoc_Component@@@ArrayOperator@Attribute@@
@@ -2887,6 +2887,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocKeychainMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocStickerMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshNodeToAppend@?1??GetStaticAttributes@CModelDocRenderMeshAppendRenderMesh@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_strSpecialIdentifier@?1??GetStaticAttributes@CModelDocStickerMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strStackInstanceName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpStack@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ForceRealignBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ReassignBoneParent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -4155,6 +4156,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -5266,6 +5268,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -6530,6 +6533,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocRoot@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@X@@
@@ -7842,6 +7846,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -8591,6 +8596,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@@@
+.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@@@
@@ -10371,6 +10377,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -14180,8 +14187,6 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 08@HR
 08@J
 08@N
-08F@4>
-0HW#
 0L.x
 0\f?focusOutEvent@QGraphicsView@@MEAAXPEAVQFocusEvent@@@Z
 0\fU04i
@@ -14327,30 +14332,35 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 5;FJ$,XEK4<
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
 5sfm_v8
-60G?
-60N>
-60Z>
-60a>
-60p>
-60q>
+605>
+607>
+60P?
+60W>
+60c>
+60e?
+60j>
+60y>
+60z>
 64 283 0
 6L8N6t0$:
-6P0?
-6Pb>
-6Pc>
-6Pd>
+6P0>
+6P1>
+6P2?
+6P9?
+6Pf>
+6Pk>
 6Pl>
-6Pt>
+6Pm>
+6Pu>
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6f:bF
-6p6>
-6pE?
-6pH>
-6pO?
-6pZ>
-6pp>
-6pq>
-6pw>
+6p1>
+6pN?
+6pQ>
+6pX?
+6pc>
+6py>
+6pz>
 7&F|If
 7T2,
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -15445,9 +15455,12 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 @&*(**&,b*~
 @08@HV
 @08N
-@608>
-@60K?
+@60A>
+@60T?
+@6p3?
+@6p5?
 @8@HV
+@HPX`hv I?
 @Integer overflow in %s
 @V@const char *__cdecl Reflection::Internal::GetFuncName<class CAnimNodeInstanceBase>(void)
 @\*^*`&bl`p
@@ -15937,6 +15950,7 @@ Auto Level
 Auto-Smooth
 Auto-detect
 AutoVisGroup
+Autograph
 Automatically builds a physics hull from render geometry.
 Automatically builds a physics hull from user-specified points
 Automatically builds a physics mesh from render geometry.
@@ -20071,8 +20085,8 @@ LowPrecisionUv
 LowPrecisionUv1
 LowercaseBoneNames
 Lowest
-M pH>
-M)pH>
+M pQ>
+M)pQ>
 MAPCLASS_ERROR
 MATCHES FILTER
 MATERIAL_ATTRIBUTE:%s_%i
@@ -20921,8 +20935,8 @@ P4 delete of source successful
 P4 edit successful
 P4 integrate (overwrite) and edit
 P4 revert and delete of CONTENT file successful
-P60;?
-P60Y?
+P60D?
+P60b?
 P?isValid@QColor@@QEBA_NXZ
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
 PARENT
@@ -20941,7 +20955,6 @@ PC_SM_5_0
 PC_SM_5_0_VULKAN
 PC_SM_6_0_VULKAN
 PF\n%d %d\n-1.000000\n
-PHW#
 PLUS %d ADDITIONAL REFERENCES
 PLUS ADDITIONAL REFERENCES NOT LISTED HERE\n
 PLUS ONE ADDITIONAL REFERENCE
@@ -22147,7 +22160,9 @@ Spawn Piece Motion-Disabled
 Spawn particle meshes when this prop breaks.  These models are the contents of the container which broke, for example a crate and the things it contains.
 Spawn particle meshes when this prop breaks. (Automatically creates a helper model with a bodygroup choice for each particle, a snapshot that positions them in the appropriate places, and a breakcommand that spawns a particlesystem driven by the model and vsnaps.)
 SpawnConfig
+Special Identifier
 Special operation to execute when this model breaks.
+SpecialIdentifier
 Specific Physics Body to Replace
 Specified
 Specified class '%s' is a base class, @exclude cannot be used for base classes
@@ -22261,7 +22276,8 @@ Steps Remaining
 Stereo
 Stereo controls are compiled into right_<name> and left_<name> pairs.
 StereoFlip
-Sticker %d%s
+Sticker %d
+Sticker %d [%s]
 Sticker Index
 Sticker Markup Preview
 StickerMarkup
@@ -22400,6 +22416,8 @@ Target Warps
 TargetGroup
 TargetPrinter
 TargetSelectorNode
+Team1
+Team2
 Tension Compress Scale
 Tension Stretch Scale
 Terrain
@@ -22919,7 +22937,7 @@ Using deprecated 'base=prefix' syntax for adding a prefix to a base class
 Using worldspawn entity targetname of 'worldspawn' will not have entity name fixup and might produce confusing results!\n
 UsingAnimgraph
 Utility
-V0R>
+V02?
 V?redF@QColor@@QEBANXZ
 VCS3 %s Load Failure: Could not find DATA block\n
 VData:%s
@@ -22951,6 +22969,7 @@ VNotify Abandoned (Not enabled)\n
 VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
+VPe>
 VSNAP
 VSNAP Node needs either a node name or explicit output resource
 VSNAP that doesn't load a file and starts off with a set of reasonable default streams
@@ -23542,10 +23561,9 @@ _z000.
 _zero
 `0bb``*Ff6h
 `2PZ
-`6P4?
-`6pC>
+`6pL>
 `\f?defaultTypeFor@QTimer@@CA?AW4TimerType@Qt@@H@Z
-`jp0
+`jp9
 a7Bz
 a:fulltype
 a:typeparam
@@ -25390,7 +25408,7 @@ force_world_collision_on_all_nodes
 forcemultitrack
 forever
 forwardParity
-fpH>
+fpQ>
 fr\nDh.j\lhh
 frac
 frame %s{r=0},%s{g=a},%s{b=0},%s{a=a} %s
@@ -25588,7 +25606,7 @@ gs_5_0
 gs_6_0
 guide_hair_count
 gun_grunge.psd
-h,\nP9
+h,\nPB
 hS%s SceneWorld AllViews
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 hair_count
@@ -26649,7 +26667,7 @@ multilevelchannel
 must be either LogLUV or LogL
 mute
 n$Kx
-n07>
+n0d?
 nApplyMode
 nAscending
 nColumn
@@ -26670,7 +26688,7 @@ nMaxElements
 nNoHitResult
 nNumerator
 nOriginSpace
-nPM?
+nPV?
 nPathSpace
 nPickMode
 nPlacementMode
@@ -26872,13 +26890,11 @@ owns_polymorphic_data
 p08@H^
 p0j0
 p2@q\t
-p6 1?
-p6pK?
+p6pT?
 pAsset
 pBd@>B@HdF>H"LVNTPHT`RTTr
 pCheckpointName
 pDescription
-pHW#
 pMaterialGroupName
 pModelResourceName
 pTagName
@@ -27611,6 +27627,7 @@ sources
 spawnFlags
 spawnflags
 special key
+special_identifier
 specificImpulse
 specific_impulse
 specific_physics_body_to_replace
@@ -28227,6 +28244,7 @@ twoWay
 two_sided
 t|AO
 u:9F
+u;Hf
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
 u\v?eventFilter@QAbstractItemView@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 ui_order

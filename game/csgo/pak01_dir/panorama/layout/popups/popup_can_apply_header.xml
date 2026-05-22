@@ -10,11 +10,12 @@
 	<scripts>
 		<include src="s2r://panorama/scripts/common/icon.vts_c" />
 		<include src="s2r://panorama/scripts/common/iteminfo.vts_c" />
+		<include src="s2r://panorama/scripts/generated/items_event_current_generated_store.vts_c" />
 		<include src="s2r://panorama/scripts/popups/popup_can_apply_header.vts_c" />
 	</scripts>
 	<Panel class="popup-capability__top" useglobalcontext="true">
 		<Label class="popup-capability__name horizontal-center" text="{s:CanApplyTitle}" />
-		<Label id="id-can-apply-desc" html="true" class="fontSize-l horizontal-center" text="{s:CanApplyDesc}" />
+		<Label id="id-can-apply-desc" html="true" class="fontSize-l horizontal-center popup-capability__topdesc" text="{s:CanApplyDesc}" />
 		<Panel id="id-can-apply-warning" class="left-right-flow horizontal-center top-padding">
 			<Image class="right-padding vertical-center" texturewidth="24" textureheight="-1" src="s2r://panorama/images/icons/ui/info.vsvg" />
 			<Label id="id-can-apply-warning-text" html="true" class="popup-capability__warning" text="{s:CanApplyWarning}" />

@@ -7,11 +7,13 @@
 		<include src="s2r://panorama/styles/popups/popup_can_apply_pick_slot.vcss_c" />
 	</styles>
 	<scripts>
+		<include src="s2r://panorama/scripts/generated/items_event_current_generated_store.vts_c" />
 		<include src="s2r://panorama/scripts/popups/popup_can_apply_pick_slot.vts_c" />
 	</scripts>
 	<snippets>
 		<snippet name="RemoveBtn">
 			<Button class="popup-can-apply_remove_btn">
+				<Label class="stratum-regular fontSize-ml popup-can-apply_remove__label cart-item__price hidden" id="CostLabel" text="#popup_can_stick_cost_label" html="true" />
 				<Image class="popup-can-apply_remove__selected" textureheight="20" texturewidth="-1" src="s2r://panorama/images/icons/ui/check.vsvg" />
 				<Image id="RemoveImage" class="popup-can-apply_remove__image" />
 				<Panel id="RemoveSpinner" class="ScrapeStickerSpinner Spinner hidden" />
@@ -56,6 +58,14 @@
 			<Panel id="popup-capability-sticker-remove-hint" class="popup-capability__remove-sticker-hint" hittest="false" hittestchildren="false">
 				<Image class="" texturewidth="32" textureheight="32" src="s2r://panorama/images/icons/ui/info.vsvg" />
 				<Label class="stratum-regular fontSize-ml" text="#popup_can_stick_scrape_hint" />
+			</Panel>
+			<Panel id="popup-capability-sticker-wipestickers-hint" class="popup-capability__remove-sticker-hint" hittest="false" hittestchildren="false">
+				<Image class="" texturewidth="32" textureheight="32" src="s2r://panorama/images/icons/ui/info.vsvg" />
+				<Label class="stratum-regular fontSize-ml" text="#popup_can_stick_wipestickers_hint" />
+			</Panel>
+			<Panel id="popup-capability-sticker-craft-souvenir-hint" class="popup-capability__craft-souvenir-hint" hittest="false" hittestchildren="false">
+				<Image class="" texturewidth="32" textureheight="32" src="s2r://panorama/images/icons/ui/filter_signature.vsvg" />
+				<Label id="popup-capability-sticker-craft-souvenir-inscription" class="stratum-regular fontSize-ml" text="#CSGO_Event_Details_CraftSouvenir_Memento" html="true" />
 			</Panel>
 			<Panel class="vertical-align-bottom top-bottom-flow horizontal-center" hittest="false">
 				<Panel id="CanStickerItemIcons" hittest="false" class="left-right-flow horizontal-center height-fit-children width-fit-children" />

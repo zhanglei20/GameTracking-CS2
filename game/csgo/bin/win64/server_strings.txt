@@ -101,12 +101,11 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`j@Y
- (08@HPXbp
- (08@HPZ@Y
- (08@HRp
- (08@Jp
- (0X`hpzp
+ (08@HPX`j
+ (08@HPXb
+ (08@HPZ
+ (08@HR
+ (0X`hpz
  (Dirty Animation)
  (Disabled on Server)
  (INVALID PSS PARAMETERS)\n
@@ -1682,11 +1681,11 @@ $tH@T\tI
 (WIPE AND EXTRACT)
 (ZdOt\n&
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
+(\f"6\n#CSOAccountKeychainRemoveToolCharges
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f"r\n CClientMsg_CustomGameEventBounce
 (\n estimated_wait_seconds_remaining
 (\n make_workshop_files_subscribable
-(\n non_prepared_statements_executed
 (\n ongoingmatch_account_id_sessions
 (\n#CM_WorldUIControllerHasPanelChanged
 (\n#k_EGCMsgDirectServiceMethodResponse
@@ -1718,9 +1717,7 @@ $tH@T\tI
 (\r",\n*CMsgGCCStrike15_v2_GiftsLeaderboardRequest"
 (\r"-\n+CMsgGCCStrike15_v2_Client2GcAckXPShopTracks"
 (\r".\n,CMsgGCCStrike15_v2_MatchmakingClient2GCHello"
-(\r"6\n#CSOAccountKeychainRemoveToolCharges
 (\r"6\n&CMsgGCCStrike15_v2_ClientNetworkConfig
-(\r"8\n%CGCSystemMsg_GetPurchaseTrust_Request
 (\r":\n"CWorkshop_GetContributors_Response
 (\r"=\n%CMsgGCCStrike15_v2_AcknowledgePenalty
 (\r"?\n*CMsgGCCStrike15_v2_Server2GCClientValidate
@@ -1747,16 +1744,15 @@ $tH@T\tI
 (\r"q\n"CMsgGCDev_SchemaReservationRequest
 (\r"r\n*CMsgGCCStrike15_v2_GC2ClientTournamentInfo
 (\r"s\n\rCMsgTEBubbles
+(\r"y\n(CMsgGCCStrike15_v2_VolatileShopSubscribe
 (\t"!\n\vCMsgGCError
 (\t"%\n#CMsgRequestRecurringMissionSchedule"
 (\t"(\n&CWorkshop_SetItemPaymentRules_Response"M\n%CGameServers_AggregationQuery_Request
-(\t"=\n(CMsgGCMsgWebAPIJobRequestForwardResponse
 (\t">\n!CMsgGCToClientSteamDatagramTicket
 (\t">\n+CClientMsg_DevPaletteVisibilityChangedEvent
 (\t"A\n0CCommunity_GetGamePersonalDataCategories_Request
 (\t"E\n!CMsgGCCStrike15_v2_GCToClientChat
 (\t"E\n$CMsgGCCStrike15_v2_ClientAuthKeyCode
-(\t"K\n$CMsgGCMsgMasterSetDirectory_Response
 (\t"M\n'CMsgGCCStrike15_v2_ClientPartyJoinRelay
 (\t"S\n"CMsgGCCStrike15_v2_ClientPollState
 (\t"T\n-CMsgGCCStrike15_v2_GC2ClientRequestValidation
@@ -1765,37 +1761,27 @@ $tH@T\tI
 (\t"u\n-CCommunity_GetGamePersonalDataEntries_Request
 (\t"z\n1CMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 (\v2 .CMsgGCCStrike15_ClientDeepStats"
-(\v2 .CMsgGCHUpdateSession.ExtraField
-(\v2 .CMsgHttpResponse.ResponseHeader
 (\v2 .CMsgSerializedSOCache.TypeCache
 (\v2 .CUserMsg_ParticleManager.AddFan
 (\v2!.CCSUsrMsg_PlayerStatsUpdate.Stat
-(\v2!.CMsgAMSendEmail.ReplacementToken
-(\v2!.CMsgGCMsgSetOptions.MessageRange
 (\v2!.CMsgSource1LegacyGameEvent.key_t
 (\v2".CCSUsrMsg_SurvivalStats.Placement
 (\v2".CEconItemPreviewDataBlock.Sticker
-(\v2".CMsgGCMsgMasterSetDirectory.SubGC
 (\v2".CMsgSetItemPositions.ItemPosition
 (\v2".CUserMsg_ParticleManager.SetVData
 (\v2#.CDataGCCStrike15_v2_TournamentInfo"
-(\v2#.CMsgDPPartnerMicroTxns.PartnerInfo
 (\v2#.CMsgSOMultipleObjects.SingleObject
 (\v2#.CUserMsg_ParticleManager.RemoveFan
 (\v2#.CUserMsg_ParticleManager.UpdateFan
 (\v2$.CDataGCCStrike15_v2_TournamentGroup"
-(\v2$.CGCMsgMemCachedGetResponse.ValueTag
 (\v2$.CMsgSerializedSOCache.Cache.Version
 (\v2$.CUserMessage_DllStatus.CVDiagnostic
 (\v2$.ScoreLeaderboardData.AccountEntries
-(\v2%.CMsgAMGetUserGameStatsResponse.Stats
 (\v2%.CMsgSOCacheSubscribed.SubscribedType
 (\v2%.CMsgSource1LegacyGameEventList.key_t:
 (\v2&.CCSUsrMsg_RoundEndReportData.RerEvent
 (\v2&.CCSUsrMsg_ServerRankUpdate.RankUpdate
 (\v2&.CDataGCCStrike15_v2_TournamentSection
-(\v2&.CMsgGCMsgMasterSetWebAPIRouting.Entry
-(\v2'.CMsgDPPartnerMicroTxns.PartnerMicroTxn
 (\v2'.CMsgGCCStrike15_v2_Fantasy.FantasySlot""\n
 (\v2'.CMsgGCCStrike15_v2_Fantasy.FantasyTeam
 (\v2(.CCSUsrMsg_SendPlayerLoadout.LoadoutItem
@@ -1804,7 +1790,6 @@ $tH@T\tI
 (\v2(.CMsgLegacySource1ClientWelcome.Location
 (\v2(.CUserMsg_ParticleManager.CreateParticle
 (\v2).CDataGCCStrike15_v2_TournamentMatchDraft
-(\v2).CMsgGCMsgMasterSetClientMsgRouting.Entry
 (\v2).CUserMessageRequestDiagnostic.Diagnostic
 (\v2).CUserMessage_UtilMsg_Response.ItemDetail
 (\v2).CUserMsg_ParticleManager.CreateSmokeGrid
@@ -1814,13 +1799,10 @@ $tH@T\tI
 (\v2*.CMsgGCCStrike15_v2_ClientPerfReport.Entry
 (\v2*.CUserMessage_NotifyResponseFound.Criteria
 (\v2*.CUserMsg_ParticleManager.CreatePhysicsSim
-(\v2+.CMsgGCGetPersonaNames_Response.PersonaName
-(\v2+.CMsgGCRoutingInfo.TokenBucketConfiguration"p\n\rRoutingMethod
 (\v2+.CUserMsg_ParticleManager.DestroyPhysicsSim
 (\v2+.CUserMsg_ParticleManager.ParticleCanFreeze
 (\v2+.CUserMsg_ParticleManager.UpdateParticleEnt
 (\v2,.CCSUsrMsg_EndOfMatchAllPlayersData.Accolade
-(\v2,.CMsgAMSendEmail.PersonaNameReplacementToken
 (\v2,.CMsgGCCStrike15_v2_ClientPartyWarning.Entry
 (\v2,.CMsgSource1LegacyGameEventList.descriptor_t
 (\v2,.CUserMessage_Diagnostic_Response.Diagnostic
@@ -1861,7 +1843,6 @@ $tH@T\tI
 (\v21.CUserMsg_ParticleManager.UpdateParticleSetFrozen
 (\v21.CUserMsg_ParticleManager.UpdateParticleTransform
 (\v21.CUserMsg_ParticleManager.UpdateParticle_OBSOLETE
-(\v22.CMsgAMGetUserGameStatsResponse.Achievement_Blocks
 (\v22.CMsgGCCStrike15_v2_AccountPrivacySettings.Setting
 (\v22.CMsgGCCStrike15_v2_Predictions.GroupMatchTeamPick
 (\v22.CUserMsg_ParticleManager.DestroyParticleInvolving
@@ -1885,7 +1866,6 @@ $tH@T\tI
 (\v28.CMsgGCCStrike15_v2_MatchmakingServerRoundStats.DropInfo
 (\v29.CCSUsrMsg_ProcessSpottedEntityUpdate.SpottedEntityUpdate
 (\v2:.CUserMsg_ParticleManager.ParticleFreezeTransitionOverride
-(\v2;.CMsgNotificationOfSuspiciousActivity.MultipleGameInstances
 (\v2<.CQuest_PublisherAddCommunityItemsToPlayer_Request.Attribute
 (\v2=.CWorkshop_SetItemPaymentRules_Request.PartnerItemPaymentRule
 (\v2>.CWorkshop_SetItemPaymentRules_Request.WorkshopItemPaymentRule
@@ -2017,10 +1997,7 @@ $tH@T\tI
 )\n%k_ECommunityItemAttribute_IssueNumber
 )\n%k_ECommunityItemClass_ProfileModifier
 )\n%k_UnlockStyle_Failed_CantAffordAttrib
-)\n\fMessageRange
 )\n\nEGCItemMsg
-)\n\nExtraField
-)\n\nQueryParam
 )binary_zstd
 )fuG
 )haI
@@ -2138,7 +2115,6 @@ $tH@T\tI
 ,\n\nentity_idx
 ,\n\nsv_interp0
 ,\n\nsv_interp1
-,\n\rRequestHeader
 ,\n\vvictim_slot
 ,fQM(
 ,h11]
@@ -2265,8 +2241,12 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
+.0VU
+.0XU
+.0oU
+.0qU
+.0rU
 .4bb
-.4iR
 .97yY
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
 .?AUAI_BaseNPCAnimGraph_DebugSnapshotData_t@@
@@ -4649,6 +4629,7 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bBurstMode@CCSWeaponBase@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bCTCantBuy@CCSGameRules@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bCTTimeOutActive@CCSGameRules@@@@
+.?AV?$CNetworkVarBase@_NVNetworkVar_m_bCanBePickedUp@CCSWeaponBase@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bCanControlObservedBot@CCSPlayerController@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bCanHLTVUse@CPointCamera@@@@
 .?AV?$CNetworkVarBase@_NVNetworkVar_m_bCannotBeDefused@CPlantedC4@@@@
@@ -6493,21 +6474,6 @@ $tH@T\tI
 .?AVCGCClientSystem@@
 .?AVCGCDev_NewItemRequestResponse@@
 .?AVCGCItemAcknowledged@@
-.?AVCGCMsgGetIPLocation@@
-.?AVCGCMsgGetIPLocationResponse@@
-.?AVCGCMsgGetSystemStats@@
-.?AVCGCMsgGetSystemStatsResponse@@
-.?AVCGCMsgMemCachedDelete@@
-.?AVCGCMsgMemCachedGet@@
-.?AVCGCMsgMemCachedGetResponse@@
-.?AVCGCMsgMemCachedGetResponse_ValueTag@@
-.?AVCGCMsgMemCachedSet@@
-.?AVCGCMsgMemCachedSet_KeyPair@@
-.?AVCGCMsgMemCachedStats@@
-.?AVCGCMsgMemCachedStatsResponse@@
-.?AVCGCMsgSQLStats@@
-.?AVCGCMsgSQLStatsResponse@@
-.?AVCGCMsgSystemStatsSchema@@
 .?AVCGCSOCacheSubscribedJob@GCSDK@@
 .?AVCGCSOCacheSubscriptionCheck@GCSDK@@
 .?AVCGCSOCacheUnsubscribedJob@GCSDK@@
@@ -6516,10 +6482,6 @@ $tH@T\tI
 .?AVCGCSOUpdateJob@GCSDK@@
 .?AVCGCSOUpdateMultipleJob@GCSDK@@
 .?AVCGCStorePurchaseInit_LineItem@@
-.?AVCGCSystemMsg_GetAccountDetails@@
-.?AVCGCSystemMsg_GetAccountDetails_Response@@
-.?AVCGCSystemMsg_GetPurchaseTrust_Request@@
-.?AVCGCSystemMsg_GetPurchaseTrust_Response@@
 .?AVCGCToGCMsgMasterAck@@
 .?AVCGCToGCMsgMasterAck_Response@@
 .?AVCGCToGCMsgMasterStartupComplete@@
@@ -6574,7 +6536,6 @@ $tH@T\tI
 .?AVCHostageExpresserShim@@
 .?AVCHostageRescueZone@@
 .?AVCHostageRescueZoneShim@@
-.?AVCIPLocationInfo@@
 .?AVCImprovLocomotor@@
 .?AVCInButtonState@@
 .?AVCInButtonStatePB@@
@@ -6703,22 +6664,6 @@ $tH@T\tI
 .?AVCMotorController@@
 .?AVCMovementStatsProperty@@
 .?AVCMoverPathNode@@
-.?AVCMsgAMAddFreeLicense@@
-.?AVCMsgAMAddFreeLicenseResponse@@
-.?AVCMsgAMFindAccounts@@
-.?AVCMsgAMFindAccountsResponse@@
-.?AVCMsgAMGetLicenses@@
-.?AVCMsgAMGetLicensesResponse@@
-.?AVCMsgAMGetUserGameStats@@
-.?AVCMsgAMGetUserGameStatsResponse@@
-.?AVCMsgAMGetUserGameStatsResponse_Achievement_Blocks@@
-.?AVCMsgAMGetUserGameStatsResponse_Stats@@
-.?AVCMsgAMGrantGuestPasses2@@
-.?AVCMsgAMGrantGuestPasses2Response@@
-.?AVCMsgAMSendEmail@@
-.?AVCMsgAMSendEmailResponse@@
-.?AVCMsgAMSendEmail_PersonaNameReplacementToken@@
-.?AVCMsgAMSendEmail_ReplacementToken@@
 .?AVCMsgAccountDetails@@
 .?AVCMsgAcknowledgeRentalExpiration@@
 .?AVCMsgAdjustEquipSlot@@
@@ -6739,14 +6684,8 @@ $tH@T\tI
 .?AVCMsgConnectionStatus@@
 .?AVCMsgConsumableExhausted@@
 .?AVCMsgCsgoSteamUserStatChange@@
-.?AVCMsgDPPartnerMicroTxns@@
-.?AVCMsgDPPartnerMicroTxnsResponse@@
-.?AVCMsgDPPartnerMicroTxns_PartnerInfo@@
-.?AVCMsgDPPartnerMicroTxns_PartnerMicroTxn@@
 .?AVCMsgDevNewItemRequest@@
 .?AVCMsgEffectData@@
-.?AVCMsgGCAddressMask@@
-.?AVCMsgGCAddressMaskGroup@@
 .?AVCMsgGCBannedWord@@
 .?AVCMsgGCBannedWordListRequest@@
 .?AVCMsgGCBannedWordListResponse@@
@@ -6854,9 +6793,8 @@ $tH@T\tI
 .?AVCMsgGCCStrike15_v2_ServerVarValueNotificationInfo@@
 .?AVCMsgGCCStrike15_v2_SetEventFavorite@@
 .?AVCMsgGCCStrike15_v2_SetPlayerLeaderboardSafeName@@
+.?AVCMsgGCCStrike15_v2_VolatileShopSubscribe@@
 .?AVCMsgGCCStrike15_v2_WatchInfoUsers@@
-.?AVCMsgGCCheckFriendship@@
-.?AVCMsgGCCheckFriendship_Response@@
 .?AVCMsgGCClientDisplayNotification@@
 .?AVCMsgGCClientVersionUpdated@@
 .?AVCMsgGCCollectItem@@
@@ -6865,38 +6803,14 @@ $tH@T\tI
 .?AVCMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded@@
 .?AVCMsgGCDev_SchemaReservationRequest@@
 .?AVCMsgGCError@@
-.?AVCMsgGCGetCommandList@@
-.?AVCMsgGCGetCommandListResponse@@
-.?AVCMsgGCGetEmailTemplate@@
-.?AVCMsgGCGetEmailTemplateResponse@@
-.?AVCMsgGCGetPartnerAccountLink@@
-.?AVCMsgGCGetPartnerAccountLink_Response@@
-.?AVCMsgGCGetPersonaNames@@
-.?AVCMsgGCGetPersonaNames_Response@@
-.?AVCMsgGCGetPersonaNames_Response_PersonaName@@
 .?AVCMsgGCGiftedItems@@
 .?AVCMsgGCHAccountPhoneNumberChange@@
-.?AVCMsgGCHAccountVacStatusChange@@
 .?AVCMsgGCHInviteUserToLobby@@
 .?AVCMsgGCHRecurringSubscriptionStatusChange@@
-.?AVCMsgGCHUpdateSession@@
-.?AVCMsgGCHUpdateSession_ExtraField@@
 .?AVCMsgGCHVacVerificationChange@@
 .?AVCMsgGCIncrementKillCountResponse@@
 .?AVCMsgGCItemCustomizationNotification@@
 .?AVCMsgGCItemPreviewItemBoughtNotification@@
-.?AVCMsgGCMsgMasterSetClientMsgRouting@@
-.?AVCMsgGCMsgMasterSetClientMsgRouting_Entry@@
-.?AVCMsgGCMsgMasterSetClientMsgRouting_Response@@
-.?AVCMsgGCMsgMasterSetDirectory@@
-.?AVCMsgGCMsgMasterSetDirectory_Response@@
-.?AVCMsgGCMsgMasterSetDirectory_SubGC@@
-.?AVCMsgGCMsgMasterSetWebAPIRouting@@
-.?AVCMsgGCMsgMasterSetWebAPIRouting_Entry@@
-.?AVCMsgGCMsgMasterSetWebAPIRouting_Response@@
-.?AVCMsgGCMsgSetOptions@@
-.?AVCMsgGCMsgSetOptions_MessageRange@@
-.?AVCMsgGCMsgWebAPIJobRequestForwardResponse@@
 .?AVCMsgGCMultiplexMessage@@
 .?AVCMsgGCMultiplexMessage_Response@@
 .?AVCMsgGCNameItemNotification@@
@@ -6906,9 +6820,6 @@ $tH@T\tI
 .?AVCMsgGCRequestAnnouncementsResponse@@
 .?AVCMsgGCRequestSessionIP@@
 .?AVCMsgGCRequestSessionIPResponse@@
-.?AVCMsgGCRoutingInfo@@
-.?AVCMsgGCRoutingInfo_PolicyRule@@
-.?AVCMsgGCRoutingInfo_TokenBucketConfiguration@@
 .?AVCMsgGCServerVersionUpdated@@
 .?AVCMsgGCShowItemsPickedUp@@
 .?AVCMsgGCStorePurchaseCancel@@
@@ -6935,11 +6846,6 @@ $tH@T\tI
 .?AVCMsgGC_GlobalGame_Unsubscribe@@
 .?AVCMsgGC_ServerQuestUpdateData@@
 .?AVCMsgGameServerInfo@@
-.?AVCMsgHttpRequest@@
-.?AVCMsgHttpRequest_QueryParam@@
-.?AVCMsgHttpRequest_RequestHeader@@
-.?AVCMsgHttpResponse@@
-.?AVCMsgHttpResponse_ResponseHeader@@
 .?AVCMsgIncrementKillCountAttribute@@
 .?AVCMsgInvitationCreated@@
 .?AVCMsgInviteToParty@@
@@ -6951,11 +6857,7 @@ $tH@T\tI
 .?AVCMsgLegacySource1ClientWelcome@@
 .?AVCMsgLegacySource1ClientWelcome_Location@@
 .?AVCMsgModifyItemAttribute@@
-.?AVCMsgNotificationOfSuspiciousActivity@@
-.?AVCMsgNotificationOfSuspiciousActivity_MultipleGameInstances@@
-.?AVCMsgNotifyWatchdog@@
 .?AVCMsgOpenCrate@@
-.?AVCMsgPackageLicense@@
 .?AVCMsgPartyInviteResponse@@
 .?AVCMsgPlaceDecalEvent@@
 .?AVCMsgPlayerBulletHit@@
@@ -7036,8 +6938,6 @@ $tH@T\tI
 .?AVCMsgUpdateItemSchema@@
 .?AVCMsgUseItem@@
 .?AVCMsgVDebugGameSessionIDEvent@@
-.?AVCMsgWebAPIKey@@
-.?AVCMsgWebAPIRequest@@
 .?AVCMultiLightProxy@@
 .?AVCMultiSource@@
 .?AVCMultiplayRules@@
@@ -8536,28 +8436,16 @@ $tH@T\tI
 .CEconItemPreviewDataBlock"z\n
 .CEconItemPreviewDataBlock"}\n7CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest
 .CEngineGotvSyncPacket"
-.CGCMsgMemCachedSet.KeyPair
 .CGCStorePurchaseInit_LineItem"`\n
-.CIPLocationInfo"?\n
 .CInButtonStatePB
 .CMsgAdjustEquipSlot
 .CMsgClientWelcome.Location
 .CMsgCsgoSteamUserStatChange
 .CMsgEffectData"[\n
-.CMsgGCAddressMask"
-.CMsgGCAddressMaskGroup
 .CMsgGCBannedWord"U\n!CMsgGCToGCBannedWordListBroadcast
 .CMsgGCBannedWordListResponse"3\n
-.CMsgGCMsgSetOptions.Option
-.CMsgGCRoutingInfo"
-.CMsgGCRoutingInfo">\n(CMsgGCMsgMasterSetWebAPIRouting_Response
-.CMsgGCRoutingInfo.PolicyRule
 .CMsgGC_ServerQuestUpdateData"
 .CMsgGameServerInfo.ServerType:\vUNSPECIFIED
-.CMsgHttpRequest
-.CMsgHttpRequest.QueryParam
-.CMsgHttpRequest.RequestHeader
-.CMsgPackageLicense
 .CMsgQuaternion
 .CMsgSOCacheHaveVersion
 .CMsgSOCacheSubscribed
@@ -8571,7 +8459,6 @@ $tH@T\tI
 .CMsgTEBaseBeam
 .CMsgTEFireBullets.Extra
 .CMsgTransform
-.CMsgWebAPIKey
 .CPreMatchInfoData
 .CPreMatchInfoData.TeamStats
 .CSGOInputHistoryEntryPB
@@ -8636,6 +8523,9 @@ $tH@T\tI
 .PEAVCPlayer_UseServices@@
 .PEAVCPlayer_WaterServices@@
 .PEAVCPlayer_WeaponServices@@
+.PUU
+.PVU
+.PgU
 .PlayerCommendationInfo
 .PlayerDecalDigitalSignature
 .PlayerDecalDigitalSignature":\n
@@ -8645,7 +8535,8 @@ $tH@T\tI
 .PlayerRankingInfo
 .PlayerRankingInfo"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
 .PlayerRankingInfo.PerMapRank
-.PwW
+.PoU
+.PqU
 .Q.Ol
 .ScoreLeaderboardData
 .ScoreLeaderboardData"S\n%CCSUsrMsg_PlayerDecalDigitalSignature
@@ -8936,7 +8827,12 @@ $tH@T\tI
 .dx_LV9
 .fatdem
 .lbN
+.pUU
+.pVU
+.pgU
+.poU
 .pp@0
+.psU
 .text$
 .vjs_c
 .vmap
@@ -8961,9 +8857,9 @@ $tH@T\tI
 /\n*k_EMsgGCCStrike15_v2_ClientPlayerDecalSign
 /\n*k_EMsgGCCStrike15_v2_ClientRequestSouvenir
 /\n*k_EMsgGCCStrike15_v2_GC2ClientNotifyXPShop
+/\n*k_EMsgGCCStrike15_v2_VolatileShopSubscribe
 /\n+GAME_PARTICLE_MANAGER_EVENT_UPDATE_FALLBACK
 /\n+k_ECommunityItemAttribute_CommunityItemType
-/\n\nget_params
 /\n\rinput_history
 /\n\rplayer_interp
 /\n\rsecond_target
@@ -8977,9 +8873,8 @@ $tH@T\tI
 0123456789
 02V8[
 05=k
-08@HR@Y
-08@Jp
-08B@Y
+08@HR
+08@J
 08bX
 09,h
 0;Q5[
@@ -8989,7 +8884,6 @@ $tH@T\tI
 0M2~@p
 0Mc\t\n
 0W/5
-0XER
 0Z@q
 0\n+k_EGCItemCustomizationNotification_NameItem
 0\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings
@@ -9007,13 +8901,11 @@ $tH@T\tI
 0\n,k_ECSUsrMsg_DisconnectToLobby_Action_GoQueue
 0\n,k_ECommunityItemAttribute_CommunityItemAppID
 0\n\tbroadcast
-0\n\vpost_params
 0\r%0h
 0\r0#0)070;0U0Y0[0g0q0y0}0
 0e\r8
 0pp@5tqE?|sO541
 0tU+xc:
-0v4iR
 0x%s
 0|2;#GameUI_Retake_Card_BackInAFlash,1,1,weapon_ump45,grenade0|2;#GameUI_Retake_Card_AllIn,1,1,weapon_galilar|1;#GameUI_Retake_Card_BoomBox,1,1,weapon_mac10,grenade2,grenade1|1;#GameUI_Retake_Card_SetThemFree,1,1,weapon_ssg08,grenade0
 0|2;#GameUI_Retake_Card_BlindFire,1,0,weapon_elite,grenade0|2;#GameUI_Retake_Card_QueOta,0,0,weapon_deagle|1;#GameUI_Retake_Card_SmokeScreen,0,0,weapon_p250,grenade1|1;#GameUI_Retake_Card_TecTecBoom,0,0,weapon_tec9,grenade2
@@ -9063,11 +8955,8 @@ $tH@T\tI
 1|3;#GameUI_Retake_Card_4v3,1,0,secondary0|1;#GameUI_Retake_Card_FlashOut,0,0,secondary0,grenade0;#GameUI_Retake_Card_HideAndPeek,0,0,secondary0,grenade1
 1|5;0,0,secondary0
 1}oP
-2 .CMsgGCRoutingInfo.RoutingMethod:
-2"A\n+CMsgGCMsgMasterSetClientMsgRouting_Response
 2)252Y2]2c2k2o2u2w2{2
 2)Ab`
-2*.CMsgDPPartnerMicroTxnsResponse.EErrorCode"
 2+~,@\r;Zj09
 20t\f
 24U\n
@@ -9099,6 +8988,7 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
+2\vp4
 2^pV
 2a"l
 2bT~
@@ -9145,7 +9035,6 @@ $tH@T\tI
 3\n/GAME_PARTICLE_MANAGER_EVENT_DESTROY_PHYSICS_SIM
 3\n/k_ECommunityItemAttribute_ProfileModiferEnabled
 3\n\fper_map_rank
-3\n\fpolicy_rules
 3\v;8BJ\nH
 3icq
 3ja~
@@ -9162,6 +9051,7 @@ $tH@T\tI
 4@AA
 4Ch;
 4F0I
+4F\vP
 4Mv8
 4Zis
 4\fPl
@@ -9175,7 +9065,6 @@ $tH@T\tI
 4\n/k_EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate
 4\n0GAME_PARTICLE_MANAGER_EVENT_SET_OVERRIDE_TEXTURE
 4\n0GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW
-4\n\vPersonaName
 4\re4h!
 4\vU44
 4f h
@@ -9228,13 +9117,16 @@ $tH@T\tI
 6%vi
 6,2K
 6-zeZ
+60_U
 62$|S)6f
 64CK\vH
-6666666666666666 :
+6666666666666666 %
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 67-s
+6@cU
 6H,N
 6O|T%
+6PfU
 6Qd=
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -9248,7 +9140,6 @@ $tH@T\tI
 6\n1k_EMsgGCCStrike15_v2_MatchmakingClient2ServerPing
 6\n1k_EMsgGCCStrike15_v2_SetPlayerLeaderboardSafeName
 6\n2GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
-6\n\fextra_fields
 6\n\nvariations
 6_wEX
 6afD
@@ -9258,6 +9149,8 @@ $tH@T\tI
 6l13
 6lkc
 6myY;
+6p*U
+6pbU
 6qo~
 6r-m_v
 6r1ij
@@ -9271,7 +9164,6 @@ $tH@T\tI
 7?7E7I7O7]7a7u7
 7??SetInternalField@Object@v8@@QEAAXHV?$Local@VData@v8@@@2@@Z
 7?XEAVn
-7CLightEnvironmentEntity
 7GK2
 7GNW^c-<ER]c"09IYc
 7HOX_c.5AQ[c#(4FWc
@@ -9291,6 +9183,7 @@ $tH@T\tI
 7gS_
 7i@X
 7m:e
+7m_nMode
 7o4H
 7qp9
 7q|Q@
@@ -9304,9 +9197,7 @@ $tH@T\tI
 8<pl
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
-8@J@Y
 8A6j
-8B@Y
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9461,11 +9352,11 @@ $tH@T\tI
 =Q9M
 =\n8k_EGCItemCustomizationNotification_ActivateOperationCoin
 =\n9GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_GENERIC_FLAG
-=\n\ftransactions
 =cdE
 =trF6,#
 >#>)>/>3>A>W>c>e>w>
 >0 = watershed, 1 = monotone, 2 = layers
+>0eU
 >4|6eXg_e
 >7^0g
 >>NAVGEN MOVABLE: Skipping movable mesh... no polys present\n
@@ -9487,6 +9378,7 @@ $tH@T\tI
 >?SetClassName@FunctionTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@@Z
 >JRZ`c4DLV_c*8AN\c
 >KS[ac5>IU^c+0<LZc
+>P2U
 >Sem
 >WK6
 >\n9k_EGCItemCustomizationNotification_ClientRedeemFreeReward
@@ -9494,7 +9386,6 @@ $tH@T\tI
 >\n9k_EMsgGCCStrike15_v2_MatchListUploadTournamentPredictions
 >\n9k_EMsgGCCStrike15_v2_MatchmakingServerReservationResponse
 >\n:GAME_PARTICLE_MANAGER_EVENT_ADD_MODELLIST_OVERRIDE_ELEMENT
->\n\neerrorcode
 >\n\tTypeCache
 >\n\vdiagnostics
 >\n\vitemdetails
@@ -9514,6 +9405,7 @@ $tH@T\tI
 ??1HandleScope@v8@@QEAA@XZ
 ??1TryCatch@v8@@QEAA@XZ
 ??SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
+?Autosave
 ?BooleanValue@Value@v8@@QEBA_NPEAVIsolate@2@@Z
 ?CEntityIOOutput
 ?Call@Function@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@HQEAV52@@Z
@@ -9540,6 +9432,7 @@ $tH@T\tI
 ?HP4
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 ?No data
+?Spring stiffness for length constraint
 ?VBH;
 ?\n:k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 ?\n:k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions
@@ -9554,24 +9447,25 @@ $tH@T\tI
 ?gwL
 ?jOb
 ?m_Stops
-?physics_entity_solver
 ?srJO
 ?tya
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N4iR
+@08N
 @0pp
 @333
 @333?
 @33s@
+@6 VU
+@6@UU
 @?SlowGetAlignedPointerFromInternalField@Object@v8@@AEAAPEAXH@Z
 @Aff
 @BH]f
 @BoneSetup
+@CBaseToggle
+@CWeaponNegev
 @HPX`hv
-@HV0
-@Logs attacks.  Values are: 0=off, 1=enemy, 2=teammate, 3=both)
 @MfKZ
 @Pgl
 @Pu\rm
@@ -9584,13 +9478,11 @@ $tH@T\tI
 @\n\nnomination
 @\n\tPlacement
 @\n\vserver_type
+@cs_script
 @dKb]
-@f4iR
 @fff>fff>fff>fff>
 @i1V
-@m_bWasOwnedByTerrorist
 @n2w
-@n4iR
 @player_start_teleport_destination
 @workshop
 A CT bot doesn't know what to do while the bomb is planted!\n
@@ -9609,6 +9501,7 @@ A<fP
 A>x8
 A@d0I
 AA Compromise
+AA:@G
 AABBDirection
 AACompromise
 AC2,h
@@ -9849,7 +9742,6 @@ AVelocity: %.2f %.2f %.2f
 AW:S
 AWt.
 A\n<k_EGCItemCustomizationNotification_ClientRedeemMissionReward
-A\n\ftoken_bucket
 A\n\tent_index
 A\n\tweapon_id
 A\n\vdescriptors
@@ -9869,7 +9761,6 @@ AccountBalance
 AccountEntries
 Achievement reward %s has no items!
 AchievementEvent
-Achievement_Blocks
 AcquireItems
 Action
 Activate specified spawngroup.
@@ -9964,6 +9855,7 @@ Alternate icon definition index %d must be greater than or equal to zero
 Alternate icon definition index '%s' (%llu) must be greater than zero
 AlternativeSorting
 Always
+Am_hMyWeapons
 AmbientCubes
 AmmoCount/%s
 AmmoCount/current
@@ -10165,8 +10057,7 @@ BAddToMessage
 BAsyncSend
 BAsyncSendProto
 BC (default)
-BCPulseGraphInstance_ServerEntity::SetNextThink
-BDraw the hiding spot the bot will check next.
+BCBtActionMoveTo
 BEOS_BIND_FUNC
 BEOS_BIND_VAR
 BEOS_LOAD
@@ -10311,7 +10202,6 @@ BULLET_PLAYER_762MM
 BULLET_PLAYER_9MM
 BULLET_PLAYER_BUCKSHOT
 BURN
-BWeaponPurchaseCount_t
 BY_FILE_CTRL
 BY_Lq)
 BYield
@@ -10415,7 +10305,7 @@ Bloodlvl3
 Bloodlvl4
 Bloodlvl5
 Bloodlvl6
-Bm_hCarriedHostage
+Bmp_global_damage_per_second
 BoX5
 Body Component Scriptdesc
 BodyGameSystem
@@ -10473,7 +10363,6 @@ BreakableContentsType
 Breakables
 Breaks in the debugger
 Bs'n
-Bsv_teamid_overhead_maxdist
 Bu 5
 Buffer too small
 BuildCacheSubscribed(CEconAccountSeasonalOperationGS)
@@ -11311,19 +11200,6 @@ CGCClientSystem - failed to init GCClient!\n
 CGCClientSystem - no ISteamClient interface!\n
 CGCDev_NewItemRequestResponse
 CGCItemAcknowledged
-CGCMsgGetIPLocation
-CGCMsgGetIPLocationResponse
-CGCMsgGetSystemStats"
-CGCMsgGetSystemStatsResponse
-CGCMsgMemCachedDelete
-CGCMsgMemCachedGet
-CGCMsgMemCachedGetResponse
-CGCMsgMemCachedSet
-CGCMsgMemCachedStats"
-CGCMsgMemCachedStatsResponse
-CGCMsgSQLStats
-CGCMsgSQLStatsResponse
-CGCMsgSystemStatsSchema
 CGCSOCacheSubscribedJob
 CGCSOCacheSubscriptionCheck
 CGCSOCacheUnsubscribedJob
@@ -11332,7 +11208,6 @@ CGCSODestroyJob
 CGCSOUpdateJob
 CGCSOUpdateMultipleJob
 CGCStorePurchaseInit_LineItem
-CGCSystemMsg_GetAccountDetails
 CGCToGCMsgMasterAck
 CGCToGCMsgMasterAck_Response
 CGCToGCMsgMasterStartupComplete"X\n
@@ -11437,7 +11312,6 @@ CHitboxComponentReferencedPtr
 CHostageHostageThink
 CHostageHostageUse
 CHostageRescueZoneHostageRescueTouch
-CIPLocationInfo
 CInButtonStatePB
 CInferno::CheckExpired (check lifetimes)
 CInferno::InfernoThink
@@ -11473,7 +11347,6 @@ CLIENT_CERTIFICATE
 CLIENT_FINISHED
 CLIENT_HELLO
 CLIENT_MASTER_KEY
-CLIENT_STEAMID
 CLNT
 CLOSED
 CLOSING
@@ -11634,18 +11507,6 @@ CMomentaryRotButtonUpdateThink
 CMomentaryRotButtonUseMoveDone
 CMotionTransform
 CMotionTransform-world
-CMsgAMAddFreeLicense
-CMsgAMAddFreeLicenseResponse
-CMsgAMFindAccounts
-CMsgAMFindAccountsResponse
-CMsgAMGetLicenses
-CMsgAMGetLicensesResponse
-CMsgAMGetUserGameStats
-CMsgAMGetUserGameStatsResponse
-CMsgAMGrantGuestPasses2
-CMsgAMGrantGuestPasses2Response
-CMsgAMSendEmail
-CMsgAMSendEmailResponse
 CMsgAccountDetails
 CMsgAcknowledgeRentalExpiration
 CMsgAdjustEquipSlot
@@ -11665,12 +11526,8 @@ CMsgClientWelcome
 CMsgConnectionStatus
 CMsgConsumableExhausted
 CMsgCsgoSteamUserStatChange
-CMsgDPPartnerMicroTxns
-CMsgDPPartnerMicroTxnsResponse
 CMsgDevNewItemRequest
 CMsgEffectData
-CMsgGCAddressMask
-CMsgGCAddressMaskGroup
 CMsgGCBannedWord
 CMsgGCBannedWordListRequest
 CMsgGCBannedWordListResponse
@@ -11681,27 +11538,13 @@ CMsgGCCStrike15_v2_MatchList
 CMsgGCCStrike15_v2_Party_Invite
 CMsgGCCStrike15_v2_Party_Search
 CMsgGCCStrike15_v2_Predictions
-CMsgGCCheckFriendship
-CMsgGCCheckFriendship_Response
 CMsgGCClientDisplayNotification
 CMsgGCClientVersionUpdated
 CMsgGCCollectItem
-CMsgGCGetCommandList
-CMsgGCGetCommandListResponse
-CMsgGCGetEmailTemplate
-CMsgGCGetEmailTemplateResponse
-CMsgGCGetPartnerAccountLink
-CMsgGCGetPersonaNames
-CMsgGCGetPersonaNames_Response
 CMsgGCGiftedItems
 CMsgGCHAccountPhoneNumberChange
-CMsgGCHAccountVacStatusChange
 CMsgGCHInviteUserToLobby
-CMsgGCHUpdateSession
 CMsgGCHVacVerificationChange
-CMsgGCMsgMasterSetDirectory
-CMsgGCMsgMasterSetWebAPIRouting
-CMsgGCMsgSetOptions
 CMsgGCMultiplexMessage
 CMsgGCMultiplexMessage_Response
 CMsgGCNameItemNotification
@@ -11710,7 +11553,6 @@ CMsgGCReportAbuseResponse
 CMsgGCRequestAnnouncements"
 CMsgGCRequestSessionIP
 CMsgGCRequestSessionIPResponse
-CMsgGCRoutingInfo
 CMsgGCServerVersionUpdated
 CMsgGCShowItemsPickedUp
 CMsgGCStorePurchaseCancel
@@ -11729,8 +11571,6 @@ CMsgGC_GlobalGame_Subscribe
 CMsgGC_GlobalGame_Unsubscribe
 CMsgGC_ServerQuestUpdateData
 CMsgGameServerInfo
-CMsgHttpRequest
-CMsgHttpResponse
 CMsgIncrementKillCountAttribute
 CMsgInvitationCreated
 CMsgInviteToParty
@@ -11740,8 +11580,6 @@ CMsgLANServerAvailable
 CMsgLeaveParty"
 CMsgLegacySource1ClientWelcome
 CMsgModifyItemAttribute
-CMsgNotifyWatchdog
-CMsgPackageLicense
 CMsgPartyInviteResponse
 CMsgPlaceDecalEvent
 CMsgPlayerBulletHit
@@ -11800,7 +11638,6 @@ CMsgTEShatterSurface
 CMsgTEWorldDecal
 CMsgUpdateItemSchema
 CMsgVDebugGameSessionIDEvent
-CMsgWebAPIRequest
 CMultiLightProxyApproachBrightnessThink
 CMultiLightProxyRestoreFlashlightThink
 CMultiSourceRegister
@@ -12113,6 +11950,7 @@ CPulseFuncs_GameParticleManager::SetEffectControlWorldVector
 CPulseGraphInstance_ServerEntity::BeforeGraphStart
 CPulseGraphInstance_ServerEntity::GraphStart
 CPulseGraphInstance_ServerEntity::InitialActivate
+CPulseGraphInstance_ServerEntity::SetNextThink
 CPulseGraphInstance_ServerEntity::Think
 CPulseMathlib::AbsFloat
 CPulseMathlib::AbsInt
@@ -12915,6 +12753,7 @@ CUtlRBTree<struct CUtlOrderedMapBase<struct AsyncQueryHandle_t,class CUtlVector<
 CUtlRBTree<struct CUtlOrderedMapBase<struct AsyncQueryHandle_t,struct CPhysicsAsyncQueryManager::TraceLineResult_t,class CDefLess<struct AsyncQueryHandle_t>,int>::Node_t,class CUtlOrderedMapBase<struct AsyncQueryHandle_t,struct CPhysicsAsyncQueryManager::TraceLineResult_t,class CDefLess<struct AsyncQueryHandle_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AsyncQueryHandle_t,struct CPhysicsAsyncQueryManager::TraceLineResult_t,class CDefLess<struct AsyncQueryHandle_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<struct CEconItemSchema::CTournamentMatchCompositeKey_t,class CUtlVector<class CEconHighlightReelDefinition *,int,class CUtlVectorMemory_Growable<class CEconHighlightReelDefinition *,int,0> > *,class CDefLess<struct CEconItemSchema::CTournamentMatchCompositeKey_t>,int>::Node_t,class CUtlOrderedMapBase<struct CEconItemSchema::CTournamentMatchCompositeKey_t,class CUtlVector<class CEconHighlightReelDefinition *,int,class CUtlVectorMemory_Growable<class CEconHighlightReelDefinition *,int,0> > *,class CDefLess<struct CEconItemSchema::CTournamentMatchCompositeKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct CEconItemSchema::CTournamentMatchCompositeKey_t,class CUtlVector<class CEconHighlightReelDefinition *,int,class CUtlVectorMemory_Growable<class CEconHighlightReelDefinition *,int,0> > *,class CDefLess<struct CEconItemSchema::CTournamentMatchCompositeKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<struct GCSDK::SOID_t,class GCSDK::CGCClientSharedObjectCache *,class CDefLess<struct GCSDK::SOID_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct GCSDK::SOID_t,class GCSDK::CGCClientSharedObjectCache *,class CDefLess<struct GCSDK::SOID_t>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct GCSDK::SOID_t,class GCSDK::CGCClientSharedObjectCache *,class CDefLess<struct GCSDK::SOID_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<struct std::pair<int,int>,class CUtlVector<class CStickerKit *,int,class CUtlVectorMemory_Growable<class CStickerKit *,int,0> > *,class CDefLess<struct std::pair<int,int> >,int>::Node_t,class CUtlOrderedMapBase<struct std::pair<int,int>,class CUtlVector<class CStickerKit *,int,class CUtlVectorMemory_Growable<class CStickerKit *,int,0> > *,class CDefLess<struct std::pair<int,int> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct std::pair<int,int>,class CUtlVector<class CStickerKit *,int,class CUtlVectorMemory_Growable<class CStickerKit *,int,0> > *,class CDefLess<struct std::pair<int,int> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,class AlternateIconData_t,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,class AlternateIconData_t,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,class AlternateIconData_t,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,class CCSUsrMsg_PostRoundDamageReport_t,class CDefLess<unsigned __int64>,short>::Node_t,class CUtlOrderedMapBase<unsigned __int64,class CCSUsrMsg_PostRoundDamageReport_t,class CDefLess<unsigned __int64>,short>::CKeyLess,short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,class CCSUsrMsg_PostRoundDamageReport_t,class CDefLess<unsigned __int64>,short>::Node_t,short>,short,class CMemAllocAllocator> >::Insert
@@ -13246,7 +13085,7 @@ Close the group automatically after a short wait (good for 'success' messages)
 Close the group automatically when the associated parent process exits (good for sticky 'error' messages)
 CloseCaptionNoAttenuate
 CloseToolhelp32Snapshot
-Cnav_bfs_debug
+Cnav_path_optimizer_debug
 Co-dependent physics tasks detected!
 Coaches/%u
 Code Signing
@@ -14809,6 +14648,7 @@ F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
 F\rH'4
+F`AU
 Face %s
 Face Actor
 Face Entity
@@ -15753,7 +15593,6 @@ HARD
 HAS_LADDERS
 HB@T\tJ
 HBJ\nTRF
-HBnpcsolve_path_lookahead_const
 HDR Color Scale: %0.3f
 HEAD
 HEAD 
@@ -16953,7 +16792,6 @@ Kbf}
 Key Agreement
 Key Compromise
 Key Encipherment
-KeyPair
 KeyValues3
 Keychain definition %s: missing "name"
 Keychain definition %s: name must be a positive integer
@@ -17025,7 +16863,6 @@ LU[`ccAJS\bc6=HU_c)+4DWc
 LV\`cc>JU\ac+7ER]c
 LXKQ
 LY\r5
-L\fpZ
 L\n\nserverinfo
 Ladder FSM state: %s
 Ladder state: APPROACH
@@ -17539,7 +17376,6 @@ Multiple components in same entity instance not supported (%s in class %s)\n
 Multiple entity classes have the same designer name "%s" ( alias class %s and class %s )\n
 Multiple entity classes have the same designer name "%s" ( class %s and class %s )\n
 Multiple registration of class %s\n
-MultipleGameInstances
 Multisource %s enabled (%d inputs)\n
 Music definition %s: missing "name"
 Music definition %s: name must be a positive integer
@@ -17621,10 +17457,6 @@ NOT an attr
 NOT networked
 NOTICEREF
 NOTICE_SECTION
-NOTIFY_ACHIEVEMENTS
-NOTIFY_SERVER_SESSIONS
-NOTIFY_USER_SESSIONS
-NOTIFY_VAC_ACTION
 NO_JUMP
 NO_MERGE
 NPCState1
@@ -18386,11 +18218,10 @@ P-224
 P-256
 P-384
 P-521
-P08@Jp
-P08J`[
-P08N4iR
+P08@J
+P08J
+P08N
 P1\t98"
-P2@Y
 P5[1
 PAGN_4
 PARALYZE
@@ -18607,7 +18438,6 @@ PRNG not seeded
 PROCESS_PCI_VALUE
 PROPINTER_FIRE_LEAK_OIL
 PROPINTER_FIRE_LEAK_WATER
-PROTOBUF_FIELD_UINT64
 PROXY
 PROXY_CERT_INFO_EXTENSION
 PROXY_POLICY
@@ -18625,7 +18455,6 @@ PUX\`cIPTY_cBJNS\c8=DLWc*38>Mc
 PVSManagerGameSystem
 PVSModifier
 PVY]acJOTY`cCGLT]c9<AJVc+-19Ic
-PXER
 P\n\nattributes
 Pack item "%s" included in more than one pack bundle - not allowed!
 PackedBlobNormal
@@ -18652,7 +18481,6 @@ ParticleSkipToTime
 ParticleSystemQueryGameSystem
 ParticleTracer
 PartnerItemPaymentRule
-PartnerMicroTxn
 Pass Outflow
 Pass entity and effect name
 Pass table - Inputs: entity, effect
@@ -18691,7 +18519,7 @@ Permanently removes the entity from the world.
 Permit Responses
 Permitted
 Persist
-PersonaNameReplacementToken
+Pf0?U
 Phys.GlassBreakLg
 Phys.GlassBreakMd
 Phys.GlassBreakSm
@@ -18731,7 +18559,6 @@ PinnedDown
 Pistol
 PitchShift
 PivotPaint
-Pj@Y
 Place
 PlaceDecalEvent_t
 Plant bomb on floor
@@ -18850,7 +18677,7 @@ Please specify 0 or 1 with the -stream Parameter\n
 Please wait for broadcast to start ...
 Pm8A?
 PmR"H?
-Pn4iR
+Pn0@U
 Point entity.
 PointTemplate
 Policy Qualifier CPS
@@ -19186,6 +19013,7 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDS}
 RTime32
+R\fp4
 R\r1>Vp
 R\vp!y
 R]Di
@@ -19334,7 +19162,6 @@ Removing relationship for lost entity\n
 RenderGameSystem
 RenderOrder
 RenderingChanged
-ReplacementToken
 Replaying from %s (%d) pov\n
 ReportEventW
 Reports all extant entities. Optional 2nd arg is a substring of a classname that the list will be filtered by.
@@ -19370,7 +19197,6 @@ Response %s has a followup with unsupported response type %d\n
 Response rule targeted %s with entityio, but that doesn't exist.\n
 Response was entityio but had bad value %s\n
 ResponseContext
-ResponseHeader
 ResponseQueueManager
 ResponseRulesCache001
 ResponseRulesManifest_global_server
@@ -20855,7 +20681,6 @@ State: %s
 State=%s
 StateChanged
 Statement obsolete - removing.\n
-Stats
 Steady view = %s
 SteamGameCoordinator001
 SteamGameServer_GetHSteamPipe
@@ -20872,6 +20697,7 @@ StepSimulationFuncRotatingAnglesSerializer
 Sticker
 Sticker kit '%s' rotate range is not valid %f:%f
 Sticker kit '%s' scale range is not valid %f:%f
+Sticker kit name '%s' is a duplicate gold sticker for event %d team %d
 Still in the last area
 StitchPath has incorrect ending\n
 Stone.Huge
@@ -20920,7 +20746,6 @@ Strong Extranet ID
 Stuck
 StyleChanged
 Sub R%d <- R%d - R%d
-SubGC
 Subclass: %s
 SubclassID_RecipientsFilter
 Subdiv
@@ -21238,7 +21063,6 @@ ToggleSpark
 ToggleSprite
 ToggleTest
 Token
-TokenBucketConfiguration
 TokenService
 TokenServiceAssignment
 TokenServiceAssignmentIndex
@@ -21600,6 +21424,7 @@ Using spawn points configuration 0x%08X\n
 Ut]<E
 Uv1t
 Uz_G3=
+V0)U
 V07;m
 V2I_ASIDENTIFIERS
 V2I_AUTHORITY_INFO_ACCESS
@@ -21670,7 +21495,6 @@ Value 0-1 how far along duration (always 0 if duration is -1)
 Value: DEAD
 Value: OFF
 Value: ON
-ValueTag
 ValveSMMem:%s
 ValveSMMut:%s
 VarChangeInfo_t log file started (file "%s") (game "%s")\n
@@ -21783,7 +21607,6 @@ WARNING: item_generic '%s' - allowpickup callback '%s' should return a bool!\n
 WARNING: item_generic '%s' - cannot have a trigger radius without a pickup radius - disabling trigger behavior!\n
 WARNING: item_generic '%s' - pickup radius of %f is larger than trigger radius of %f - disabling trigger behavior!\n
 WD%g"0Q-)
-WEBAPI_PARAM_UINT64
 WIDE_HUMAN_HULL
 WIN32_BIND_FUNC
 WIN32_BIND_VAR
@@ -22115,7 +21938,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr@Y
+X`hr
 Xd3h
 XfJ7
 XjfR
@@ -22478,8 +22301,6 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\vPXER
-\fp\v`XER
 \ful2
 \fy&3Gl
 \l:ArR
@@ -22494,7 +22315,6 @@ Z~wl
 \n!\n1\n9\n=\nI\nW\na\nc\ng\no\nu\n{\n
 \n"CCSUsrMsg_EndOfMatchAllPlayersData
 \n"CDataGCCStrike15_v2_TournamentInfo
-\n"CMsgGCMsgMasterSetClientMsgRouting
 \n"CMsgGCRequestAnnouncementsResponse
 \n"ECSUsrMsg_DisconnectToLobby_Action
 \n#CDataGCCStrike15_v2_TournamentGroup
@@ -22503,8 +22323,6 @@ Z~wl
 \n#CUserMessageCloseCaptionPlaceholder
 \n#CWorkshop_AddSpecialPayment_Request
 \n$CCSUsrMsg_ProcessSpottedEntityUpdate
-\n$CMsgGCGetPartnerAccountLink_Response
-\n$CMsgNotificationOfSuspiciousActivity
 \n$CUserMessage_PlayResponseConditional
 \n%*s            
 \n%*sExtensions: 
@@ -22520,12 +22338,10 @@ Z~wl
 \n%CMsgGCCStrike15_v2_ClientReportServer
 \n%CWorkshop_SetItemPaymentRules_Request
 \n&CCSUsrMsg_SendLastKillerDamageToClient
-\n&CGCSystemMsg_GetPurchaseTrust_Response
 \n&CGameServers_AggregationQuery_Response
 \n&CMsgGCCStrike15_v2_ClientCommendPlayer
 \n&CMsgGCCStrike15_v2_GC2ClientInitSystem
 \n&CMsgGCCStrike15_v2_Party_SearchResults
-\n'CGCSystemMsg_GetAccountDetails_Response
 \n'CMsgGCCStrike15_v2_ClientReportResponse
 \n'CMsgGCCStrike15_v2_PremierSeasonSummary
 \n(CDataGCCStrike15_v2_TournamentMatchDraft
@@ -22589,7 +22405,6 @@ Z~wl
 \n\fUM_VoiceMask
 \n\facceleration
 \n\faccount_name
-\n\faccount_type
 \n\facknowledged
 \n\fammo_reserve
 \n\fannouncement
@@ -22600,24 +22415,20 @@ Z~wl
 \n\fbuttonstate3
 \n\fcmd_friendly
 \n\fcmd_teaching
-\n\fcommand_name
 \n\fcontent_type
 \n\fcontributors
-\n\fcountry_code
 \n\fcreationtime
 \n\fdamage_given
 \n\fdamage_taken
 \n\fdesc_outputs
 \n\fdisplay_time
 \n\feffect_scale
-\n\femail_format
 \n\fevent_public
 \n\ffade_in_time
 \n\ffile_version
 \n\fflagstoclear
 \n\fframe_number
 \n\ffree_rewards
-\n\ffriend_count
 \n\fgiftdefindex
 \n\fgroup_fields
 \n\fgroup_values
@@ -22635,8 +22446,6 @@ Z~wl
 \n\fmsgrequestid
 \n\foffset_index
 \n\fother_defidx
-\n\fpartner_name
-\n\fpersona_name
 \n\fplayer_inair
 \n\fplayer_level
 \n\fplayers_bots
@@ -22645,7 +22454,6 @@ Z~wl
 \n\frank_if_lose
 \n\frank_type_id
 \n\frecoil_index
-\n\fref_trans_id
 \n\fround_killhs
 \n\fround_number
 \n\fround_result
@@ -22659,13 +22467,9 @@ Z~wl
 \n\fskip_to_time
 \n\fspeak_result
 \n\fstart_effect
-\n\fsteamid_left
 \n\fsticker_slot
 \n\fsticker_wear
 \n\ftexture_name
-\n\ftime_created
-\n\ftokens_grant
-\n\ftokens_start
 \n\ftool_item_id
 \n\ftotal_count2
 \n\ftotal_damage
@@ -22680,19 +22484,16 @@ Z~wl
 \n\fvote_mapid_5
 \n\fwait_seconds
 \n\fweaponselect
-\n\fwebapi_param
 \n\nCS_UM_Fade
 \n\nCS_UM_SSUI
 \n\nDataPerMap
 \n\nDiagnostic
-\n\nEErrorCode
 \n\nEGCBaseMsg
 \n\nEGCToGCMsg
 \n\nEM_DoSpark
 \n\nET_Unknown
 \n\nEWT_Pistol
 \n\nPlayerData
-\n\nPolicyRule
 \n\nROLL_STATS
 \n\nRankUpdate
 \n\nTE_DecalId
@@ -22704,18 +22505,15 @@ Z~wl
 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 \n\nabuse_type
 \n\naccount_id
-\n\nalert_type
 \n\nall_events
 \n\nattachment
 \n\nattr_value
 \n\nbomb_state
 \n\nbrightness
-\n\nbytes_read
 \n\ncan_freeze
 \n\nchange_num
 \n\ncmd_leader
 \n\ncontroller
-\n\ncurr_items
 \n\ncurrent_xp
 \n\ncustomname
 \n\ncyber_cafe
@@ -22725,7 +22523,6 @@ Z~wl
 \n\ndll_action
 \n\ndropreason
 \n\neffectname
-\n\nemail_lang
 \n\nent_origin
 \n\nentity_msg
 \n\nerror_text
@@ -22742,20 +22539,16 @@ Z~wl
 \n\ngame_data2
 \n\ngameitemid
 \n\ngametimems
-\n\nget_misses
 \n\ngscookieid
 \n\ninaccuracy
-\n\nis_limited
 \n\nis_trusted
 \n\nissue_date
 \n\nitem_count
 \n\nitem_level
 \n\nitems_game
 \n\njoin_token
-\n\nk_MsgValid
 \n\nkey_uint64
 \n\nlevel_type
-\n\nlogon_jobs
 \n\nmaps_count
 \n\nmax_rounds
 \n\nmenustring
@@ -22769,9 +22562,7 @@ Z~wl
 \n\nnote_level
 \n\nother_xuid
 \n\noutputname
-\n\npackage_id
 \n\npaintindex
-\n\npartner_id
 \n\npellet_idx
 \n\nplayer_dob
 \n\nplayerslot
@@ -22793,7 +22584,6 @@ Z~wl
 \n\nstart_time
 \n\nstartframe
 \n\nstat_score
-\n\nstat_value
 \n\nsticker_id
 \n\nsubscribed
 \n\nteam_id_ct
@@ -22801,7 +22591,6 @@ Z~wl
 \n\ntest_token
 \n\ntick_count
 \n\nticknumber
-\n\ntoken_name
 \n\ntv_clients
 \n\ntv_control
 \n\ntv_proxies
@@ -22839,7 +22628,6 @@ Z~wl
 \n\rammo_clip_max
 \n\rb_starting_ct
 \n\rbuild_version
-\n\rbytes_written
 \n\rchoked_blocks
 \n\rcontext_value
 \n\rcontinue_text
@@ -22847,11 +22635,8 @@ Z~wl
 \n\rcrate_item_id
 \n\rcreate_debris
 \n\rcur_timescale
-\n\rcurrency_code
-\n\rcurrency_name
 \n\rcurrent_level
 \n\rdebug_message
-\n\rdelete_misses
 \n\rdirect_udp_ip
 \n\rerror_message
 \n\rexpected_cost
@@ -22860,12 +22645,7 @@ Z~wl
 \n\rflash_success
 \n\rgame_mapgroup
 \n\rgamesessionid
-\n\rgrant_seconds
 \n\rinstance_name
-\n\ris_banned_now
-\n\ris_cyber_cafe
-\n\ris_subscribed
-\n\ris_vac_banned
 \n\ritems_granted
 \n\ritems_matched
 \n\rjson_featured
@@ -22892,8 +22672,6 @@ Z~wl
 \n\rresponse_type
 \n\rrpt_speedhack
 \n\rrpt_textabuse
-\n\rrt_birth_date
-\n\rsearch_string
 \n\rsequence_name
 \n\rserver_region
 \n\rservers_empty
@@ -22903,8 +22681,6 @@ Z~wl
 \n\rsnapshot_name
 \n\rsource_app_id
 \n\rsteamid_lobby
-\n\rsteamid_locks
-\n\rsteamid_right
 \n\rsticker_scale
 \n\rt_equip_value
 \n\rteam_behavior
@@ -22920,12 +22696,11 @@ Z~wl
 \n\rtv_relay_port
 \n\rtv_spectators
 \n\rupgrade_level
-\n\ruser_sessions
 \n\rusercmd.proto
 \n\rutility_count
 \n\rvalidate_only
 \n\rvictim_damage
-\n\ryielding_jobs
+\n\rvolatile_shop
 \n\tEHitGroup
 \n\tIPSec/IKE/Oakley curve #3 over a 155 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
 \n\tIPSec/IKE/Oakley curve #4 over a 185 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
@@ -22949,11 +22724,9 @@ Z~wl
 \n\tboneindex
 \n\tcheck_fow
 \n\tcmd_flags
-\n\tcmd_flush
 \n\tcode_type
 \n\tcrc_part2
 \n\tdef_index
-\n\tdepot_ids
 \n\tdir_index
 \n\tdirection
 \n\teaccolade
@@ -22965,32 +22738,25 @@ Z~wl
 \n\tequipslot
 \n\terrorcode
 \n\tevent_tag
-\n\tevictions
 \n\texplosive
-\n\text_spend
 \n\tfraglimit
 \n\tframerate
 \n\tfrequency
 \n\tfrom_hits
 \n\tgame_data
-\n\tgc_app_id
-\n\tgc_binary
 \n\tgceresult
 \n\thaloindex
 \n\thas_panel
 \n\theadshots
 \n\thit_group
 \n\thold_time
-\n\tinit_time
 \n\tinstances
 \n\tint_value
 \n\tinventory
-\n\tip_public
 \n\titemgroup
 \n\titemindex
 \n\tkick_user
 \n\tleague_id
-\n\tline_item
 \n\tlongitude
 \n\tmagnitude
 \n\tmatchtime
@@ -22999,14 +22765,12 @@ Z~wl
 \n\tnum_kills
 \n\tnumrounds
 \n\toutcomeid
-\n\tpackageid
 \n\tpaintseed
 \n\tpaintwear
 \n\tparty_ids
 \n\tperf_time
 \n\tplacement
 \n\tpre_delay
-\n\tprice_usd
 \n\tredeem_id
 \n\treference
 \n\tregion_id
@@ -23016,7 +22780,6 @@ Z~wl
 \n\trounds_5k
 \n\trule_name
 \n\trule_type
-\n\tschema_kv
 \n\tseason_id
 \n\tsectionid
 \n\tsender_id
@@ -23027,7 +22790,6 @@ Z~wl
 \n\tshoot_pos
 \n\tsort_type
 \n\tsoundname
-\n\tsource_gc
 \n\tstage_ids
 \n\tstat_mvps
 \n\tsurvey_id
@@ -23075,7 +22837,6 @@ Z~wl
 \n\vaccount_ids
 \n\vaccount_mvp
 \n\vachievement
-\n\vactive_jobs
 \n\vagreementid
 \n\vattach_type
 \n\vattack_type
@@ -23089,7 +22850,6 @@ Z~wl
 \n\vbonus_count
 \n\vcamera_type
 \n\vcampaign_id
-\n\vclient_addr
 \n\vclient_time
 \n\vcommand_num
 \n\vcon_command
@@ -23099,7 +22859,6 @@ Z~wl
 \n\vcss_classes
 \n\vcustom_desc
 \n\vcustom_name
-\n\vdelete_hits
 \n\vdesc_inputs
 \n\vdescription
 \n\vdetails_str
@@ -23120,7 +22879,6 @@ Z~wl
 \n\vforwardmove
 \n\vfrom_player
 \n\vfull_report
-\n\vid_verified
 \n\vis_favorite
 \n\vis_verified
 \n\vitem_count2
@@ -23128,12 +22886,10 @@ Z~wl
 \n\vitem_rarity
 \n\vload_system
 \n\vlogo_length
-\n\vlogon_queue
 \n\vmatchmaking
 \n\vmaterial_id
 \n\vmenu_string
 \n\vmessagename
-\n\vmethod_name
 \n\vmp_winlimit
 \n\vmstimestamp
 \n\vname_symbol
@@ -23157,20 +22913,17 @@ Z~wl
 \n\vrank_if_tie
 \n\vrank_if_win
 \n\vrecent_only
-\n\vregion_code
 \n\vreward_flag
 \n\vround_kills
 \n\vrounds_lost
 \n\vrpt_badmotd
 \n\vrtime32_cur
-\n\vsearch_type
 \n\vsender_name
 \n\vserver_addr
 \n\vserver_port
 \n\vshould_draw
 \n\vstartentity
 \n\vstat_deaths
-\n\vsteam_level
 \n\vsurfaceprop
 \n\vsurfacetype
 \n\vsurvey_vote
@@ -23181,11 +22934,9 @@ Z~wl
 \n\vticket_data
 \n\vtime_cached
 \n\vtime_played
-\n\vtoken_value
 \n\vtotal_count
 \n\vtotal_files
 \n\vtv_udp_port
-\n\vunlock_time
 \n\vuser_defidx
 \n\vvalue_bytes
 \n\vvictim_slot
@@ -23215,6 +22966,7 @@ Z~wl
 \ri1I
 \rjwB\t
 \roKK
+\rp5U
 \rrCj
 \rusercmd.proto"V\n
 \sG7tPD
@@ -23240,6 +22992,7 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNone\n
+\tP4U
 \tPrivate script scope:
 \tPublic script scope:
 \tRead %s\t%s%s%s,\tOffs 0x%04x\n
@@ -23295,8 +23048,6 @@ Z~wl
 \v\vTSG
 \vj0k
 \vjC7
-\vpXER
-\vp`GR
 ] Done (%.2f seconds)
 ]1h=bfz
 ]FhSD}
@@ -23372,7 +23123,11 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`60wW
+`6 WU
+`60YU
+`60pU
+`6`XU
+`6`YU
 `:zQF
 `D$daM-l
 `DZG
@@ -23380,12 +23135,9 @@ _}eOk
 `H(hqA1p
 `ITS
 `VX:H
-`XER
 `\n\rvector_values
-`f4iR
 `fPw.\vM
 `h9T~
-`n4iR
 `o_je
 `yNT
 a null shared library handle was used
@@ -23404,7 +23156,6 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
-aBv4iR
 aD/x
 aDSS
 aECDH
@@ -23434,7 +23185,6 @@ abcdefghijklmnopqrrqponmlkjihgfedcba
 abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba
 abort
 absolute
-absolute_timeout
 absorigin
 absorigin_follow
 abspos
@@ -23448,7 +23198,6 @@ acceptableResponses
 acceptdamagefromheldobjects
 accepted
 account
-account_creation_time
 account_ids__deprecated
 account_locked
 account_profiles
@@ -23456,10 +23205,7 @@ accountentries
 accountid
 accumulated_error
 achievement
-achievement_bit_id
-achievement_blocks
 achievement_earned
-achievement_id
 achievement_rewards
 act_as_wearable
 actanim
@@ -23556,9 +23302,6 @@ addlength
 addon_init
 addon_location
 address=
-address_mask_group_id
-address_mask_groups
-addrs
 admin
 adrenalinepresence
 aes iv setup failed
@@ -23607,7 +23350,6 @@ affect_ragdolls
 affiliationChanged
 after
 against
-ageclass
 agent
 agents/models/ctm_diver/ctm_diver_varianta.vmdl
 agents/models/ctm_diver/ctm_diver_variantb.vmdl
@@ -23746,7 +23488,6 @@ ajarangles
 ajardoorshouldntalwaysopen
 ak47
 akid mismatch
-alert_destination
 algor
 algorithm
 algorithm mismatch
@@ -23867,11 +23608,8 @@ announcement_title
 ansi-X9-62
 anyExtendedKeyUsage
 anyPolicy
-api_key
 app data in handshake
 app_assets_basename
-app_id
-app_instance_count
 append_items
 appl [ %d ]
 application verification failure
@@ -24679,7 +24417,6 @@ cipher parameter initialisation error
 cipher table src error
 cisc
 citadel_snd_opvar_set_obb
-city
 cl_decryptdata_key
 cl_decryptdata_key_pub
 cl_imgui_set_selection %i
@@ -24712,7 +24449,6 @@ client_ehandle
 client_ipaddress
 client_launcher
 client_loot_lists
-client_msg_ranges
 client_session_id
 client_session_need
 client_steam_id
@@ -24747,14 +24483,10 @@ cluster
 clutchKs
 clutchk
 clutchkills
-cm_session_identifier
-cm_session_sysid
 cmac
 cmd not executable
 cmd target time = [ #%d + %.3f ], tick diff from latency time = %.3f\n
 cmd time = [ #%d : %.3f ], player lerp ticks = %.3f\n
-cmd_get
-cmd_set
 cms datafinal error
 cms lib
 cms_CompressedData_create
@@ -24806,7 +24538,6 @@ command not supported
 command rate %.2f commands per sec vs. tickrate of %.2f\n
 command takes input
 command takes no input
-command_prefix
 commentary_auto
 commentary_cvarsnotchanging\n
 commentary_semaphore
@@ -25003,7 +24734,6 @@ cs_respawn
 cs_round_final_beep
 cs_round_start_beep
 cs_rush
-cs_script
 cs_script/%s
 cs_siege
 cs_team_manager
@@ -25079,7 +24809,6 @@ cubemapfogtexture
 cubemapheightfog
 cubemaptexture
 cull_mode
-curr_connections
 currency
 currency_deprecated
 current
@@ -25246,7 +24975,6 @@ data_cp
 data_cp_value
 data_plus_mac_plus_padding_size < 1024 * 1024
 date
-days_to_expiration
 db("0
 dcObject
 dcobject
@@ -25355,7 +25083,6 @@ de_vertigo
 de_warden
 de_whistle
 de_zoo
-deadlock_retries
 deagle
 death
 deathmatch
@@ -25776,7 +25503,6 @@ eNULL
 eODj
 eTU\n
 eXQd
-e\n\vPartnerInfo
 e\tcCPtH
 e_body_idle
 e_face_idle
@@ -25887,7 +25613,6 @@ email:%s
 emailAddress
 emailCA
 emailProtection
-email_msg_type
 emitterAngle
 empty file structure
 empty srtp protection profile list
@@ -26111,7 +25836,6 @@ equipped_class_t
 equipped_slot_t
 equipped_state
 eresult
-eresult_deprecated
 erodeWalkableArea: Out of memory 'dist / relX / relY' (%d).
 err asn1 lib
 err ec lib
@@ -26146,7 +25870,6 @@ error setting recipientinfo
 error with the srp params
 error:%08lX:%s:%s:%s
 errormsg
-errors
 ess add signing cert error
 ess signing certificate error
 essence_item_id
@@ -26266,8 +25989,6 @@ f%wyLmX:
 f&dy
 f1cK%
 f45\r
-f4iR
-f@tW
 fBB\fy
 fC[A:%u:%u:%u]
 fC\tc
@@ -26303,7 +26024,6 @@ fadescale
 fadetime
 failed loading private key
 failed loading public key
-failed_lookup_steamids
 failping_account_id_sessions
 failready_account_id_sessions
 fair
@@ -26616,8 +26336,6 @@ format error in certificate's notAfter field
 format error in certificate's notBefore field
 forward
 forward %f\n
-found
-found_friendship
 fow_control_point
 fow_control_point2
 fpnS
@@ -26644,7 +26362,6 @@ frame_time_sample_count
 framestart
 fread
 free_trial_account
-free_trial_expiration
 freeze period: %d\n
 freeze time: %d\n
 freeze_particle_involving
@@ -26769,7 +26486,6 @@ game_end
 game_event_listener
 game_event_name
 game_gib_manager
-game_id
 game_info
 game_license
 game_map
@@ -26781,7 +26497,6 @@ game_playerkill
 game_playerleave
 game_ragdoll_manager
 game_rules_mask
-game_server_sessions
 game_text
 game_timestamp
 game_vars
@@ -26810,7 +26525,6 @@ gc_generation_settings/rotate_end
 gc_generation_settings/rotate_start
 gc_generation_settings/scale_max
 gc_generation_settings/scale_min
-gc_name
 gc_reservation_sent
 gc_socache_file_version
 gc_status
@@ -26820,6 +26534,7 @@ gcsdk_gcmessages.proto
 gcsdk_gcmessages.proto"=\n
 gcsystemmsgs.proto
 gcsystemmsgs.proto"S\n
+gctime
 gdPI
 gd_bank
 gd_cbble
@@ -26839,7 +26554,6 @@ generator:
 generic cryptogram
 generic_actor
 gesture
-get_hits
 gethostbyname
 gethostbyname addr is not af inet
 getout
@@ -27030,10 +26744,7 @@ hardstopspeakevent
 hardware
 hardware%d
 hasHelmet
-has_accepted_china_ssa
-has_no_recent_password_resets
 has_parent
-has_prior_purchase_history
 hasbomb
 hash
 hashAlgorithm
@@ -27051,7 +26762,6 @@ head_0
 header too long
 header_expr
 header_text
-headers
 headless
 headshot
 headshotkills
@@ -27215,7 +26925,6 @@ houseIdentifier
 hoverposeangles
 hoverposeflags
 hoverposeposition
-hpzp
 hr_H
 http request
 http$
@@ -27679,7 +27388,6 @@ info_teleport_destination
 info_trigger_fan
 info_visibility_box
 info_world_layer
-infos
 inherit_all_joints
 inherit_owner
 inherit_owner_index
@@ -27773,7 +27481,6 @@ interactive
 interacts
 interest_tags
 interestingness
-interface_name
 intermission duration: %f\n
 intermission start time: %f\n
 internal list error
@@ -27894,7 +27601,6 @@ ipsec4
 ipsecEndSystem
 ipsecTunnel
 ipsecUser
-ipv4
 iqmp
 iqmp not inverse of q
 ir@r`
@@ -27902,47 +27608,31 @@ is commodity
 is now %d.\n
 is2d
 isPointPrefab
-is_account_locked_down
 is_add
-is_adult
 is_attacking
-is_banned_future
-is_banned_steam_china
 is_collection
-is_community_banned
 is_dead
 is_defusing
 is_essential_piece
 is_event_quest
-is_free_trial_account
 is_hidden_set
 is_identifying
-is_inventory_public
 is_kill
 is_local_server
-is_low_violence
 is_pack_bundle
-is_phone_identifying
-is_phone_verified
 is_predicting_body_shot_fx
 is_predicting_head_shot_fx
 is_predicting_kill_ragdolls
-is_profile_public
 is_pulse_domain_subtype
 is_pulse_global_event
 is_pulse_hook
 is_pulse_library_method
 is_pulse_target_method
 is_pulse_target_output
-is_school_account
 is_selected_in_hammer
 is_selector
 is_spontaneous
-is_steamguard_enabled
 is_tool_controlled_session
-is_trade_banned
-is_two_factor_auth_enabled
-is_wallet_cash_trusted
 is_yes_no_vote
 isbot
 isdebris
@@ -28362,14 +28052,6 @@ k_ESOMsg_Create
 k_ESOMsg_Destroy
 k_ESOMsg_Update
 k_ESOMsg_UpdateMultiple
-k_MsgAlreadyRunning
-k_MsgInvalidAppID
-k_MsgInvalidPartnerInfo
-k_MsgInvalidTransactionData
-k_MsgNoTransactions
-k_MsgPartnerInfoDiscrepancy
-k_MsgSQLFailure
-k_MsgTransactionInsertFailed
 k_UnlockStyle_Failed_CantAfford
 k_UnlockStyle_Failed_CantCommit
 k_UnlockStyle_Failed_PreReq
@@ -28403,7 +28085,6 @@ keyInfo
 keyUsage
 key_data
 key_enc_algor
-key_id
 key_name
 keyblob header parse error
 keyblob too short
@@ -28512,7 +28193,6 @@ last_match_rounds
 last_match_t_wins
 last_match_wins
 last_time_played
-last_update_time
 last_valid_class
 last_valid_item_slot
 last_valid_item_slot not set!
@@ -28568,7 +28248,6 @@ lib(%lu)
 libdes part of OpenSSL 1.0.2j  26 Sep 2016
 library bug
 library has no ciphers
-license
 life
 lifespan
 light
@@ -28619,7 +28298,6 @@ lightprobetexture_sh2_r
 limbs
 limit
 limit_description_to_number_rnd
-limit_maxbytes
 limit_to_material_group
 limit_to_piece
 limited
@@ -29016,7 +28694,6 @@ mask
 mask='%s'
 maskGenAlgorithm
 maskGenFunc
-maskbits
 mass %.1f
 massScale
 masscenteroffset
@@ -29024,7 +28701,6 @@ massoverride
 massscale
 master secret
 master_controller
-master_dir_index
 match
 match_duration
 match_end_quest_data
@@ -29444,7 +29120,6 @@ mstring wrong tag
 multi_manager
 multipart/signed
 multiple sgc restarts
-multiple_instances
 multisource
 music id
 music_definitions
@@ -29469,7 +29144,6 @@ n < (int)sizeof(ctx->enc_data)
 n does not equal p q
 n0?X
 n1Z 
-n4iR
 n5cM
 n6j/
 n:2C[
@@ -29572,7 +29246,6 @@ newer crl not newer
 newname
 newtarget
 newunit
-nexonid
 next think: %f\n
 nextUpdate
 next_cursor_id
@@ -29934,8 +29607,6 @@ operation_coin
 operation_points_awarded
 operation_points_eligible
 operation_type
-operations_submitted
-operations_timed_out_in_queue
 operaton not initialized
 operator int
 operatorName
@@ -29980,7 +29651,6 @@ ortholightheight
 ortholightwidth
 os.length <= (int)sizeof(ret->session_id)
 osM@\vQ}
-os_type
 otT)
 other
 otherCert
@@ -29991,7 +29661,6 @@ otherRevInfo
 otherRevInfoFormat
 other_death
 other_playerslot
-other_steamids
 other_team_str
 otherid
 othername
@@ -30039,7 +29708,6 @@ owcaseid
 owner
 owner: %s\n
 owner_context
-owner_id
 owner_only
 ownername
 p is not prime
@@ -30053,15 +29721,14 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^4iR
+p08@H^
+p0jPY
 p250
-p2@Y
 p2{l
 p4Z3
 p5Z3
 p5\nL,
 p618
-p>4iR
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pActivator
@@ -30123,7 +29790,6 @@ pTarget2
 pTargetAttachmentName
 pU>\AL
 pValue
-pXER
 p\rP!0
 p\rP\f0!h
 p^i9
@@ -30250,7 +29916,6 @@ particles/weapons/cs_weapon_fx/weapon_molotov_held.vpcf
 particles/weapons/cs_weapon_fx/weapon_molotov_thrown.vpcf
 particles/weapons/cs_weapon_fx/weapon_tracers_taser.vpcf
 particles_list
-partner
 partner_accountbalance
 partner_accountflags
 partner_accountid
@@ -30260,8 +29925,6 @@ party_id
 pass
 passed a null parameter
 passed null parameter
-passes_granted
-passes_to_grant
 passive
 password based MAC
 patch
@@ -30311,7 +29974,6 @@ payload + padding <= 16381
 payment gateway capabilities
 payment_row_usd
 payment_us_usd
-pb@Y
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -30356,7 +30018,6 @@ permitresponses
 permitted
 permitted subtree violation
 permittedSubtrees
-persona_name_tokens
 personalSignature
 personalTitle
 petindex
@@ -30364,7 +30025,6 @@ petpopulation
 phase
 phase not supported
 phone_id
-phone_verification_time
 phonemes
 phonemes_strong
 phonemes_weak
@@ -30396,6 +30056,7 @@ phys_torque
 phys_wheelconstraint
 physdamagescale
 physicalDeliveryOfficeName
+physics_entity_solver
 physics_joint_modification_type
 physics_particle
 physics_prop_ragdoll
@@ -30557,7 +30218,6 @@ playervisibilitystrength
 playerweapon
 playing_commentary
 playoverscript
-pn4iR
 point
 point arithmetic failure
 point at infinity
@@ -30720,7 +30380,6 @@ premier_%s
 premier_intro_01
 premier_season_coin
 premium_only
-prepared_statements_executed
 presentationAddress
 preserve_cycle
 press_to_release_ns
@@ -30806,7 +30465,6 @@ propdata
 propdata_override
 propdataname
 propername
-protobuf_field
 protocol is shutdown
 protocolInformation
 provide parameters
@@ -30818,6 +30476,7 @@ proxyPolicy
 ps(crh
 psC3
 pseudonym
+psid
 psk identity not found
 psk no client cb
 psk no server cb
@@ -30846,7 +30505,6 @@ public_inventory
 public_key
 public_list_contents
 public_profile
-publisher_group_id
 pull_towards_point
 pulse/client_blackboards
 pulse_bindings
@@ -30867,7 +30525,6 @@ pulse_runtime_lib
 pulse_vcd_%u
 punchangle
 puntsound
-purchase_result_detail
 purchases
 pushdir
 pushscale
@@ -30875,7 +30532,6 @@ pvk data too short
 pvk too short
 pvs_modify_entity
 pvsplayer
-pwid
 pzKD)
 q not prime
 q&A\nn
@@ -30935,6 +30591,7 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
+r\vp4
 rad2deg
 radio.go
 radio.letsgo
@@ -31166,7 +30823,6 @@ request not signed
 requestExtensions
 requestList
 request_id__deprecated
-request_method
 requested_cancel
 requested_player_index
 requested_sync
@@ -31318,8 +30974,6 @@ roundssurvived
 roundstats_legacy
 route_type
 routes
-routing
-routing_app_id
 rpt_abusivemodels
 rpt_inventoryabuse
 rpt_listingabuse
@@ -31341,11 +30995,9 @@ rsadsi
 rsaesOaep
 rsassaPss
 rsqrt
-rt_identity_linked
 rtcoplay
 rtime
 rtime32_gc_welcome_timestamp
-rtime_vacban_starts
 rule_description
 run length compression
 run_variation
@@ -31432,7 +31084,6 @@ scene_owner
 scenefilecache
 scenes/%s%s*.*
 scenes/%s.vcd
-schema_catalog
 schema_typename
 schemasystem
 school_account
@@ -31610,7 +31261,6 @@ server_public_ip_addr
 server_relay_connected_steam_id
 server_shutdown
 server_spawn
-server_steam_id
 server_tv_broadcast_time
 server_tv_port
 server_version
@@ -31996,9 +31646,6 @@ snmpv2
 so=H*m
 socache_control
 socache_have_versions
-socaches
-socaches_loading
-socaches_to_unload
 socket
 soft_x
 soft_y
@@ -32047,6 +31694,7 @@ source_entity_index
 source_file_searchpath
 source_soundscapeid
 sourceid
+souvenir_matchid
 space not built
 space_simple_air
 space_simple_water
@@ -32323,10 +31971,8 @@ startup_ServerModuleInit
 startup_SteamLoggedOn
 startvalue
 stash
-stat_id
 stateOrProvinceName
 static
-stats_kv
 stattrak_swap
 status expired
 status not yet valid
@@ -32336,7 +31982,6 @@ statusid
 stay
 steamID
 steam_launcher
-steam_txn_type
 steam_universe
 steamdatagram_login
 steamdatagram_routing
@@ -32346,8 +31991,6 @@ steamids
 steammessages.proto
 steammessages.proto"
 steammessages.proto")\n\rCMsgSOIDOwner
-steammessages.proto"z\n\rCMsgWebAPIKey
-steammessages_gc.proto
 steering_axis_friction
 step
 stereo
@@ -32382,7 +32025,6 @@ stoppoint
 store
 store init error
 store_bundle
-store_country_code
 store_item_hash
 store_remap
 stored_as_integer
@@ -32448,7 +32090,6 @@ subtreeMaximumQuality
 subtreeMinimumQuality
 subtype
 succeed_after_first
-succeeded_lookups
 suggestions
 superseded
 suppPubInfo
@@ -32465,7 +32106,6 @@ survival
 survival_paradrop_break
 survival_paradrop_spawn
 suspension_damping_ratio
-suspension_end_time
 suspension_frequency
 suspension_height_offset
 sv tick = [ #%d + %.3f ] engine latency ticks = %.3f, net latency ticks = %.3f, net-latency-based target time = [ #%d + %.3f ]\n
@@ -32628,7 +32268,6 @@ targetpoint
 targets
 taser
 taserkills
-tax_usd
 taxonomy
 taxonomy/table_display
 taxonomy/wall_display
@@ -32672,8 +32311,6 @@ teleportfollowdistance
 teleporting player by (%.2f %.2f %.2f) : (%.2f %.2f %.2f) -> (%.2f %.2f %.2f), rotating by (%.2f %.2f %.2f)\n
 teletexTerminalIdentifier
 telexNumber
-template
-template_exists
 terrorist_odds
 terrorist_team_intro_camera
 terrorist_wingman_intro_camera
@@ -32704,8 +32341,6 @@ thirdperson_default
 thirdperson_hide_default_gloves
 thisUpdate
 thread=%lu, 
-threads_active
-threads_connected
 threat
 threat_min_keep_distance
 threshold
@@ -32721,7 +32356,6 @@ time not ascii format
 time stamp routines
 time syscall error
 timeStamping
-time_all_trusted
 time_comms_ban
 time_first_played
 time_initiated
@@ -33056,7 +32690,6 @@ trade_ban_expiration
 trailerField
 train
 transform_values
-transid
 transition volume not found
 transition volume passed
 transition volume screened out
@@ -33130,7 +32763,6 @@ tv_slots
 tv_time
 tv_watch_password
 twitch_streams_version
-two_factor_enabled_time
 txn_country_code
 txn_id
 type not compressed data
@@ -33369,6 +33001,7 @@ updatenavwhenmoving
 upgrade_item_id
 upgraded_defidx
 upmove
+upnext
 uptodate_subscribed_caches
 urgent
 usable
@@ -33446,7 +33079,6 @@ v2i_ASN1_BIT_STRING
 v2i_GENERAL_NAMES
 v2i_GENERAL_NAME_ex
 v3\vt
-v4iR
 v8.dll
 v8array
 v8callback
@@ -33948,7 +33580,6 @@ wrapped_gift
 wrapped_sticker
 write bio not set
 write to read only BIO
-writeback_queue
 wrong certificate type
 wrong cipher returned
 wrong content type
@@ -34097,5 +33728,6 @@ zz2K
 ~P2T
 ~R65Fu
 ~jLRG
+~pqU
 ~w]UG
 ~yhZ

@@ -155,12 +155,12 @@ shaders/vfx/csgo_water_fancy_vulkan_50_psrs.vcs CRC:00c3b6a01d size:2018
 shaders/vfx/csgo_water_fancy_vulkan_50_vs.vcs CRC:00aad02a90 size:18766
 shaders/vfx/csgo_weapon.ini CRC:0000000000 size:0
 shaders/vfx/csgo_weapon_sticker.ini CRC:0000000000 size:0
-shaders/vfx/csgo_weapon_sticker_vulkan_50_features.vcs CRC:00c6d64543 size:4962
-shaders/vfx/csgo_weapon_sticker_vulkan_50_ps.vcs CRC:00abea51f2 size:97017
+shaders/vfx/csgo_weapon_sticker_vulkan_50_features.vcs CRC:00daa90bba size:4978
+shaders/vfx/csgo_weapon_sticker_vulkan_50_ps.vcs CRC:00a3bc2db0 size:118019
 shaders/vfx/csgo_weapon_sticker_vulkan_50_psrs.vcs CRC:00ab666458 size:1586
 shaders/vfx/csgo_weapon_sticker_vulkan_50_vs.vcs CRC:0031191d93 size:12605
-shaders/vfx/csgo_weapon_vulkan_50_features.vcs CRC:004459a582 size:10370
-shaders/vfx/csgo_weapon_vulkan_50_ps.vcs CRC:00af122bdd size:30567562
+shaders/vfx/csgo_weapon_vulkan_50_features.vcs CRC:0083549ec2 size:10370
+shaders/vfx/csgo_weapon_vulkan_50_ps.vcs CRC:00222b0beb size:30571702
 shaders/vfx/csgo_weapon_vulkan_50_psrs.vcs CRC:0091c4b9f6 size:2386
 shaders/vfx/csgo_weapon_vulkan_50_vs.vcs CRC:005449c072 size:46241
 shaders/vfx/deferred_particle_shadows.ini CRC:0000000000 size:0

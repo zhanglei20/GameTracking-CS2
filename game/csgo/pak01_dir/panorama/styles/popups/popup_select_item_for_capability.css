@@ -8,6 +8,17 @@
 	background-color: rgba(0, 0, 0, 0.532);
 }
 
+.PopupPanel.Capability.PopupSelectItemForCapability_craft_souvenir
+{
+	background-img-opacity: .025;
+	background-color: rgba( 0, 0, 0, 0.99 );
+}
+
+.PopupPanel.Capability .inv-popup-title Label
+{
+	max-width: 800px;
+}
+
 .popup-select-item-list
 {
 	height: fill-parent-flow(1);

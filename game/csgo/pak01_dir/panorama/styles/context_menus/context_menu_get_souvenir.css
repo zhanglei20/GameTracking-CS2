@@ -93,6 +93,11 @@
 	transform: translateX( 0px );
 }
 
+.get-souvenir__matches .get-souvenir__match .hidden
+{
+	visibility: collapse;
+}
+
 .get-souvenir__matches .get-souvenir__match .get-souvenir__map-image
 {
 	ignore-parent-flow: true;

@@ -24,9 +24,12 @@
 			<Image id="id-img-open-major-hub" class="mainmenu-major-tile__image" />
 		</Button>
 		<Panel id="id-items-banner" class="mainmenu-major-tile__new-items">
-			<Panel class="mainmenu-major-tile__bar" />
-			<ItemImage id="id-open-major-item-image" class="" />
-			<Label class="stratum-medium-condensed fontcolor-white margin-12 vertical-align-top" text="{s:items-text}" />
+			<Panel class="full-height">
+				<ItemImage id="id-open-major-item-image-0" scaling="stretch-to-fit-preserve-aspect" class="" />
+				<ItemImage id="id-open-major-item-image-1" scaling="stretch-to-fit-preserve-aspect" class="" />
+				<ItemImage id="id-open-major-item-image-2" scaling="stretch-to-fit-preserve-aspect" class="" />
+			</Panel>
+			<Label class="stratum-medium-condensed" text="{s:items-text}" />
 		</Panel>
 	</Panel>
 </root>

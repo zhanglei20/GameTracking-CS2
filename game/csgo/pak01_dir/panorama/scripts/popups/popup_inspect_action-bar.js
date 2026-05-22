@@ -3,6 +3,7 @@
 /// <reference path="../common/item_context_entries.ts" />
 /// <reference path="../inspect.ts" />
 /// <reference path="../characterbuttons.ts" />
+/// <reference path="../common/shopping_cart.ts" />
 var InspectActionBar;
 (function (InspectActionBar) {
     function Init() {
@@ -24,6 +25,10 @@ var InspectActionBar;
         _SetUpMarketLink(elActionBar, itemId);
         _SetUpOpenSeasonStatsAction(elActionBar, $.GetContextPanel(), itemId);
         _SetUpViewHighlightReelAction(elActionBar, itemId);
+        const nPrice = InspectShared.GetPopupSetting('price_in_tokens');
+        _SetupAddRemoveToCartButtons(elActionBar, itemId, nPrice);
+        _SetupCartActionsBtn(elActionBar, nPrice, itemId);
+        _ShowHideCartBtn(elActionBar, nPrice);
         if (!elActionBar.Data().panelRegisteredForEvents) {
             elActionBar.Data().panelRegisteredForEvents = true;
             $.RegisterForUnhandledEvent('PanoramaComponent_Loadout_EquipSlotChanged', () => _SetupEquipItemBtns(elActionBar, itemId));
@@ -178,11 +183,10 @@ var InspectActionBar;
                 displayName = entry.name;
             }
             const previewActionPrefix = displayName.startsWith('preview_') ? '' : 'preview_';
-            const bisItemInLootlist = InspectShared.GetPopupSetting('is_item_in_lootlist');
             const contextPanel = $.GetContextPanel();
             elSingleActionBtn.text = '#inv_context_' + previewActionPrefix + displayName;
             elSingleActionBtn.SetPanelEvent('onactivate', () => {
-                const bCloseInspect = (bisItemInLootlist && contextPanel.IsValid()) ? false : true;
+                const bCloseInspect = (contextPanel.IsValid()) ? false : true;
                 _OnSingleAction(entry, id, bCloseInspect, contextPanel);
                 if (!bCloseInspect) {
                     $.DispatchEvent('BlurPopupPanel', contextPanel.id, true);
@@ -196,6 +200,71 @@ var InspectActionBar;
             CloseBtnAction(_GetSettingCallback(contextPanel), contextPanel);
         }
         entry.OnSelected(id);
+    }
+    function _SetupAddRemoveToCartButtons(elPanel, id, price) {
+        const elAddToCartContainer = elPanel.FindChildInLayoutFile('AddToCartContainer');
+        const elPrice = elPanel.FindChildInLayoutFile('MajorItemPrice');
+        if (!price) {
+            elAddToCartContainer.SetHasClass('hidden', true);
+            return;
+        }
+        elPrice.visible = price > 0;
+        elAddToCartContainer.SetHasClass('hidden', false);
+        elPanel.SetDialogVariableInt('cart-count', ShoppingCart.cart.getItemQuantity(id));
+        elPanel.SetDialogVariableInt('total-items', ShoppingCart.cart.getTotalItems());
+        const shopItem = { id: id, name: ItemInfo.GetFormattedName(id), price: price };
+        elAddToCartContainer.FindChildInLayoutFile('AddToCart').SetPanelEvent('onactivate', () => {
+            ShoppingCart.cart.addItem(shopItem, 1);
+            const quantity = ShoppingCart.cart.getItemQuantity(id);
+            elPanel.SetDialogVariableInt('cart-count', quantity);
+            _ShowHideCartBtn(elPanel, price);
+            elPrice.visible = quantity > 0;
+        });
+        elAddToCartContainer.FindChildInLayoutFile('RemoveFromCart').SetPanelEvent('onactivate', () => {
+            ShoppingCart.cart.decrementItem(id);
+            const quantity = ShoppingCart.cart.getItemQuantity(id);
+            elPanel.SetDialogVariableInt('cart-count', quantity);
+            _ShowHideCartBtn(elPanel, price);
+            elPrice.visible = price > 0;
+        });
+    }
+    function _SetupCartActionsBtn(elPanel, price, id) {
+        if (!price) {
+            return;
+        }
+        const elOpenCartBtn = elPanel.FindChildInLayoutFile('InspectOpenCheckout');
+        const cp = $.GetContextPanel();
+        function _Callback() {
+            CloseBtnAction(_GetSettingCallback(cp), elPanel);
+        }
+        ;
+        const callback = UiToolkitAPI.RegisterJSCallback(_Callback);
+        elOpenCartBtn.SetPanelEvent('onactivate', () => {
+            if (InspectShared.GetPopupSetting('back_to_checkout', cp)) {
+                CloseBtnAction(_GetSettingCallback(cp), elPanel);
+                return;
+            }
+            const popupPanel = UiToolkitAPI.ShowCustomLayoutPopupParameters('id-popup-shopping-cart-checkout', 'file://{resources}/layout/popups/popup_shopping_cart_checkout.xml', '&callback=' + callback);
+            popupPanel.Data().eventId = g_ActiveTournamentInfo.eventid;
+            popupPanel.Data().isFromInspect = true;
+        });
+        ShoppingCart.cart.subscribeToUpdates(elOpenCartBtn, 'inspect-sticker', () => {
+            elPanel.SetDialogVariableInt('cart-count', ShoppingCart.cart.getItemQuantity(id));
+            elPanel.SetDialogVariableInt('total-items', ShoppingCart.cart.getTotalItems());
+            elPanel.SetDialogVariableInt('price', ShoppingCart.cart.getItemLinePrice(id));
+        });
+    }
+    function _ShowHideCartBtn(elPanel, price) {
+        const elOpenCartBtn = elPanel.FindChildInLayoutFile('InspectOpenCheckout');
+        if (!price) {
+            elOpenCartBtn.SetHasClass('hidden', true);
+            return;
+        }
+        if (ShoppingCart.cart.getTotalItems() < 1) {
+            elOpenCartBtn.SetHasClass('hidden', true);
+            return;
+        }
+        elOpenCartBtn.SetHasClass('hidden', false);
     }
     function _OnActivateUpdateSelectionForMultiSelect(idSubjectItem, contextPanel) {
         CloseBtnAction(_GetSettingCallback(contextPanel), contextPanel);

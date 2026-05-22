@@ -13,6 +13,7 @@
 		<include src="s2r://panorama/scripts/common/store_items.vts_c" />
 		<include src="s2r://panorama/scripts/popups/popup_acknowledge_item.vts_c" />
 		<include src="s2r://panorama/scripts/common/formattext.vts_c" />
+		<include src="s2r://panorama/scripts/common/xpshop_tile_weapon_camera_settings.vts_c" />
 		<include src="s2r://panorama/scripts/itemtile_store.vts_c" />
 		<include src="s2r://panorama/scripts/tournaments/predictions_timer.vts_c" />
 		<include src="s2r://panorama/scripts/tournaments/predictions_group_stage.vts_c" />
@@ -32,33 +33,51 @@
 	<PopupCustomLayout class="PopupPanel popup-major-hub Hidden" useglobalcontext="true" registerforreadyevents="true" popupbackground="blur" onload="PopupMajorHub.Init();" oncancel="PopupMajorHub.ClosePopup();">
 		<Panel class="full-width">
 			<Panel class="major-hub-title-container">
-				<Image id="id-major-logo" class="major-hub-title-logo" textureheight="64" texturewidth="-1" />
+				<Image id="id-major-logo" class="major-hub-title-logo" textureheight="32" texturewidth="-1" />
 				<Label class="major-hub-title-text stratum-light-condensed" text="{s:tournament_name}" />
 			</Panel>
 		</Panel>
 		<Panel id="id-major-store" class="major-hub-store">
 			<Panel id="id-major-store-block" class="major-hub-store__items-section">
 				<Label class="stratum-medium-condensed major-hub-section-title" text="#pickem_items_section_title" />
-				<Panel class="major-hub-store__items-and-souvenirs">
-					<Panel class="major-hub-store__souvenir">
-						<Panel class="major-hub-store__souvenir__container">
-							<MapPreviewPanel id="id-major-hub-souvenir-model" class="major-hub-store__souvenir__model" camera="cam" initial_entity="item" map="ui/major_souvenir_cases_major_25" mouse_rotate="false" auto_rotate_y="0" auto_rotate_x="0" auto_rotate_period_x="0" auto_rotate_period_y="0" require-composition-layer="true" transparent-background="false" parallax_degrees=".5" parallax_offset="200.0" hittest="true" />
-							<Image class="major-hub-store__souvenir__model--border" />
+				<Panel id="id-major-store-banner" class="major-hub-store__banner">
+					<Panel class="major-hub-store__banner_stickers">
+						<Panel class="major-hub-store__banner_images">
+							<ItemImage id="id-major-store-banner-item-0" class="major-hub-store__banner__image 0" scaling="stretch-to-fit-preserve-aspect" />
+							<ItemImage id="id-major-store-banner-item-1" class="major-hub-store__banner__image 1" scaling="stretch-to-fit-preserve-aspect" />
+							<MapItemPreviewPanel id="id-major-store-banner-item-2" class="major-hub-store__banner__image 2" initial_entity="item" map="ui/xpshop_item" mouse_rotate="false" auto_rotate_y="0" auto_rotate_x="20" auto_rotate_period_x="15" auto_rotate_period_y="20" require-composition-layer="true" transparent-background="true" hittest="false" />
+							<ItemImage id="id-major-store-banner-item-3" class="major-hub-store__banner__image 3" scaling="stretch-to-fit-preserve-aspect" />
+							<ItemImage id="id-major-store-banner-item-4" class="major-hub-store__banner__image 4" scaling="stretch-to-fit-preserve-aspect" />
+							<ItemImage id="id-major-store-banner-item-5" class="major-hub-store__banner__image 5" scaling="stretch-to-fit-preserve-aspect" />
+							<ItemImage id="id-major-store-banner-item-6" class="major-hub-store__banner__image 6" scaling="stretch-to-fit-preserve-aspect" />
+							<ItemImage id="id-major-store-banner-item-7" class="major-hub-store__banner__image 7" scaling="stretch-to-fit-preserve-aspect" />
+							<MapItemPreviewPanel id="id-major-store-banner-item-8" class="major-hub-store__banner__image 8" initial_entity="item" map="ui/xpshop_item" mouse_rotate="false" auto_rotate_y="0" auto_rotate_x="-20" auto_rotate_period_x="13" auto_rotate_period_y="20" require-composition-layer="true" transparent-background="true" hittest="false" />
+							<ItemImage id="id-major-store-banner-item-9" class="major-hub-store__banner__image 9" scaling="stretch-to-fit-preserve-aspect" />
 						</Panel>
-						<Panel class="horizontal-center top-bottom-flow vertical-align-bottom margin-8">
-							<Label class="major-hub-store__souvenir__header stratum-medium-condensed" text="{s:souvenir_package}" />
-							<Label id="id-major-hub-souvenir-desc" class="major-hub-store__souvenir__body stratum-light-condensed" html="true" text="{s:souvenir_package_desc}" />
+						<Panel class="major-hub-store__banner__text">
+							<Label class="major-hub-store__banner__title stratum-medium-condensed" text="{s:store-title}" />
+							<Label class="major-hub-store__banner__desc stratum-regular" text="#major_hub_store_desc" />
+							<TextButton id="id-major-open-store" class="major-hub-rounded-btn top-margin-8" text="Visit the Shop" />
 						</Panel>
 					</Panel>
-					<Panel id="id-major-items" class="major-hub-store__items" />
+					<Panel class="major-hub-store__banner__souvenir">
+						<MapItemPreviewPanel id="id-major-store-banner-souvenir" class="major-hub-store__banner__souvenir__image" initial_entity="item" map="ui/xpshop_item" mouse_rotate="false" auto_rotate_y="0" auto_rotate_x="20" auto_rotate_period_x="15" auto_rotate_period_y="20" require-composition-layer="true" transparent-background="true" hittest="false" />
+						<Panel class="major-hub-store__banner__text">
+							<Label class="major-hub-store__banner__title stratum-medium-condensed" text="#major_hub_make_souvenir_title" />
+							<Panel class="horizontal-center top-bottom-flow">
+								<Label class="major-hub-store__banner__desc stratum-medium" text="#major_hub_make_souvenir" />
+								<Label class="major-hub-store__banner__desc stratum-regular" text="#major_hub_make_souvenir_desc" />
+							</Panel>
+						</Panel>
+					</Panel>
 				</Panel>
 			</Panel>
 			<Panel id="id-graffiti-block" class="major-hub-store__spray">
 				<Label class="stratum-medium-condensed major-hub-section-title" text="#tournament_coin_team_graffiti" />
 				<ItemImage id="id-tournament-journal-spray" class="major-hub-store__spray-image" src="" />
 				<Panel class="major-hub-store__spray-info horizontal-center">
-					<Label class="major-hub-store__souvenir__body stratum-light-condensed full-width" html="true" text="#tournament_coin_select_team_graffiti-2" />
-					<TextButton id="id-tournament-journal-selectspray-btn" class="major-hub-store__spray-btn">
+					<Label class="major-hub-store__souvenir__body stratum-light full-width" html="true" text="#tournament_coin_select_team_graffiti-2" />
+					<TextButton id="id-tournament-journal-selectspray-btn" class="major-hub-rounded-btn">
 						<Label id="" class="stratum-regular-condensed" text="#tooltip_navbar_switch_teams" />
 					</TextButton>
 				</Panel>
@@ -88,7 +107,7 @@
 						<ItemImage id="id-pass-upsell-image" class="major-hub-pass-upsell__image" />
 						<ItemImage id="id-pass-upsell-image-coin" class="major-hub-pass-upsell__image-coin" />
 					</Panel>
-					<TextButton id="id-pass-upsell-btn" class="major-hub-pass-upsell__btn" text="#op_pass_upsell" />
+					<TextButton id="id-pass-upsell-btn" class="major-hub-rounded-btn" text="#op_pass_upsell" />
 					<Label class="stratum-regular-condensed major-hub-pass-upsell__text" text="#major_hub_pass_desc" />
 				</Panel>
 				<Panel id="id-major-challenges" class="major-hub-challenges-container" />

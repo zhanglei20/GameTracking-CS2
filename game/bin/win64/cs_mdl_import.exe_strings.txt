@@ -40,7 +40,6 @@
  (%d %d %d)
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
- (deprecated)
  * Adding Bone :: < %10.4f %10.4f %10.4f >\n
  * Requested DmAttribute of value of type "%s" From DmAttribute "%s" which is type "%s"\n
  ** Entrypoint For Method '%s'
@@ -297,6 +296,7 @@ $prefix_element$
 ---- dmxconvert output ----\n
 ---------------------------\n
 -YupToZup
+-deprecated-
 -game
 -header_hull_bounds
 -lods
@@ -1468,6 +1468,7 @@ $prefix_element$
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocKeychainMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocStickerMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshNodeToAppend@?1??GetStaticAttributes@CModelDocRenderMeshAppendRenderMesh@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_strSpecialIdentifier@?1??GetStaticAttributes@CModelDocStickerMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strStackInstanceName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpStack@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ForceRealignBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ReassignBoneParent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -2109,6 +2110,7 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -2777,6 +2779,7 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -3483,6 +3486,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocRoot@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@X@@
@@ -4170,6 +4174,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -4854,6 +4859,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@@@
+.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@@@
@@ -5766,6 +5772,7 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -7053,53 +7060,61 @@ $prefix_element$
 .vpk:
 .vvd
 .webp
-00H@
-00T@
-00V@
-00b@
-01R@
+01C@
+01I@
+01U@
+02H@
+02R@
+02U@
+02u@
 056@
-05I@
-05O@
-06I@
-06M@
-07T@
+05b@
+06Q@
+07b@
 086@
-08P@
+08I@
+08b@
 099@
-09U@
+09H@
+09T@
+09V@
+09b@
+0AP@
+0BU@
 0C1@
-0DI@
+0CV@
+0DV@
+0Dy@
 0F2@
 0F8@
 0GA@
 0GI@
 0H4@
-0HN@
-0Ic@
-0JI@
+0HI@
+0HV@
 0K9@
-0KQ@
 0MI@
-0Nd@
-0RI@
-0VK@
+0PA@
+0PI@
+0QN@
+0Rc@
+0SI@
+0TQ@
+0VI@
+0Wd@
 0X5@
 0\r%0t
 0\tV_frexpf
 0c5@
-0eI@
-0gA@
-0hI@
-0iI@
 0k6@
-0kw@
-0lU@
-0pU@
-0sU@
-0sw@
-0vN@
+0nI@
+0pA@
+0qI@
+0rI@
+0tw@
+0uU@
 0x%llx
+0yU@
 0z5@
 16-byte data pool
 180_recovery
@@ -7113,7 +7128,6 @@ $prefix_element$
 2DBlend
 2DBlendEditor
 2DBlendFromAnimation
-2\vpt
 2_BONE_IK
 4-byte data pool
 4\r54t
@@ -7126,7 +7140,7 @@ $prefix_element$
 8"3hrf
 8&Kx
 8-byte data pool
-80U@
+89U@
 969p
 9>No data
 :: <NO TARGET BONE>
@@ -7667,6 +7681,7 @@ Auto Layer
 Auto Level
 Auto-Smooth
 Auto-detect
+Autograph
 Automatically builds a physics hull from render geometry.
 Automatically builds a physics hull from user-specified points
 Automatically builds a physics mesh from render geometry.
@@ -9078,11 +9093,11 @@ Cycle Start Frame
 Cycle Type
 Cylinder
 Cylinder: %s
-D0U@
 D16_UNORM
 D24_UNORM_S8_UINT
 D32_FLOAT
 D32_FLOAT_S8X24_UINT
+D9U@
 DBM&(
 DMX Model
 DMX Model Pipeline Animation Script File
@@ -9872,6 +9887,7 @@ Grow Selection
 Grow or Shrink
 Grow or shrink a selection
 Grow the selection by adding contiguous components to the selection.
+H5b@
 HAC K  Unused Binding
 HELPER_BONE
 HairShader
@@ -10948,37 +10964,40 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P0U@
+P0I@
+P0V@
+P1Q@
 P36@
-P3V@
-P4U@
-P5d@
-P6I@
-P6T@
-P6U@
+P3C@
+P3I@
+P3x@
+P6S@
 P74@
-P7I@
+P8T@
+P9U@
 PARENT
 PC7@
+PCV@
 PD8@
-PER@
 PF8@
 PF\n%d %d\n-1.000000\n
 PH4@
+PHI@
 PHY Import: Invalid solid index %d in keyvalues\n
 PHY Import: Solid with index %d is defined twice!\n
-PIc@
-PJI@
-PKM@
-PLN@
-PLc@
+PII@
+PIy@
+PNR@
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
-PPI@
+PRc@
+PSI@
 PT4@
+PTM@
+PUN@
 PURH
-PVO@
-PZI@
+PUc@
+PYI@
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
@@ -11025,8 +11044,9 @@ ParticleImport
 ParticleParamID_t
 ParticlesLib
 Pass Outflow
-PbI@
-PeU@
+PcI@
+PdI@
+PeC@
 Peak Cycle
 Peak Frame
 Peak Frame Number
@@ -11037,8 +11057,9 @@ Perforce
 Perform a set of parametric mesh modification operations.
 Persistent
 Perturb vertex positions using sine waves.
+PfP@
 Pf\n%d %d\n-1.000000\n
-PgA@
+PgN@
 Photometric tag is missing, assuming data is YCbCr
 Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
@@ -11076,7 +11097,6 @@ PhysicsShapeHullPrimitive
 PhysicsShapeList
 PhysicsShapeReplacements
 PhysicsSurfaceProperties
-PiA@
 Pick 3 target cloth nodes
 Pick Target Cloth Nodes:
 Pick the IK Chain to lock:
@@ -11118,8 +11138,7 @@ Pitch Yaw Roll
 Pitch Yaw Roll Max
 PivotPaint
 PixarLog
-PlA@
-PlI@
+PkI@
 Place On Attachment
 Place On Bone
 Place on Floor
@@ -11135,8 +11154,7 @@ Plane Primitive
 Plastic
 Plasticity
 Play End Cap Effect
-PmI@
-PmU@
+PnU@
 Point 0
 Point 1
 Point Bones At
@@ -11185,8 +11203,8 @@ Positions in grid
 PosterSettings
 Posture
 Power scale for applying the supplemental ambient occlusion map.
-PpU@
-PrU@
+PpA@
+PrA@
 Pre-Age Noise
 Pre-Clear Selection
 Precision Degrees
@@ -11241,15 +11259,16 @@ Prop Group for Physics Particles
 Prop group for spawned physics particles
 PropWorldOrigin
 Prune pieces < error threshold
-PsU@
-Ptw@
-PuS@
+PuA@
+PuI@
 Pull towards control point
 Pulse Graph
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Push Out
 Push mesh faces outward along their local normal. Optionally build shell geometry.
 PushBack
+PvI@
+PvU@
 PyU@
 QAngle
 Quad Bend Tolerance
@@ -11862,7 +11881,9 @@ Spawn Piece Motion-Disabled
 Spawn particle meshes when this prop breaks.  These models are the contents of the container which broke, for example a crate and the things it contains.
 Spawn particle meshes when this prop breaks. (Automatically creates a helper model with a bodygroup choice for each particle, a snapshot that positions them in the appropriate places, and a breakcommand that spawns a particlesystem driven by the model and vsnaps.)
 SpawnConfig
+Special Identifier
 Special operation to execute when this model breaks.
+SpecialIdentifier
 Specific Physics Body to Replace
 Specified
 Specified class '%s' is a base class, @exclude cannot be used for base classes
@@ -11939,7 +11960,8 @@ Stencil write ID
 Stereo
 Stereo controls are compiled into right_<name> and left_<name> pairs.
 StereoFlip
-Sticker %d%s
+Sticker %d
+Sticker %d [%s]
 Sticker Index
 Sticker Markup Preview
 StickerMarkup
@@ -12004,6 +12026,7 @@ Swing Limit
 Swing Offset Angle
 Switch Threshold
 Symbol table:  %d entries %llu bytes\n
+T5b@
 THEM
 TIFFAppendToStrip
 TIFFClientOpen
@@ -14550,38 +14573,37 @@ overwrite_existing_flags_only
 ownerlog
 owns_polymorphic_data
 p05@
-p0U@
-p3B@
-p3U@
-p3y@
+p1I@
+p1x@
+p4I@
 p4lib
-p5T@
-p6U@
-p7I@
-p7S@
+p5Q@
+p5V@
+p7T@
 p7U@
-p8I@
-p9V@
+p8P@
+p8Q@
+p9U@
 pAI@
-pAy@
-pBP@
+pBV@
 pCheckpointName
 pD8@
 pDescription
-pDy@
-pEN@
 pF8@
-pGC@
 pH4@
-pIy@
-pJC@
+pII@
+pJI@
+pJy@
+pKP@
+pMy@
+pNN@
+pPC@
+pRy@
+pSC@
 pTagName
-pTy@
-pUI@
 pW5@
-pXI@
 pY3@
-pZN@
+paI@
 panorama_image
 panorama_layout
 panorama_style
@@ -14624,7 +14646,9 @@ pathclass
 pathnode
 pathnodeclass
 pattern
-pbI@
+pcN@
+pdC@
+peC@
 peak
 peak_attr
 peak_cycle
@@ -14633,10 +14657,8 @@ per particle
 per_material_options
 permissive
 pervertexlighting
-pfI@
-pfM@
-pgA@
-pgU@
+pgI@
+phQ@
 phonememap
 phys
 physicsSimplificationError
@@ -14671,6 +14693,7 @@ pitch_friction
 pitch_stiffness
 pivotOffset
 pixelAspectRatio
+pkI@
 place_on_floor
 placementOrigin
 placementattachment
@@ -14681,6 +14704,8 @@ plastic
 plasticity
 playerclip
 pn8@
+poI@
+poM@
 point
 point0_key
 point1_key
@@ -14725,7 +14750,8 @@ posture
 posture_nohands
 posxyz
 pp7@
-prU@
+ppA@
+ppU@
 preMerge face 0
 preMerge face 1
 precision_degrees
@@ -14771,15 +14797,11 @@ propattr_stretch_editor_into_label_column
 propdataname
 prune
 pseudo-
-psw@
 pulse_node_custom_attributes
 pulse_runtime_lib
 pushout_strength
 pv5@
 pvTarget
-pxT@
-pyU@
-pzN@
 qangle log
 qangle_array
 quad
@@ -15121,6 +15143,7 @@ source_node
 sources
 spawnFlags
 spawnflags
+special_identifier
 specificImpulse
 specific_impulse
 specific_physics_body_to_replace

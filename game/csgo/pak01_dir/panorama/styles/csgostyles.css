@@ -1286,7 +1286,7 @@ DropDown .Width-350:hover,DropDownMenu .Width-350:hover,DropDownMenu.Width-350 L
 
 VerticalScrollBar,HTMLVerticalScrollBar
 {
-	width: 8px;
+	width: 6px;
 	margin: 4px, 8px, 4px 8px;
 	height: 100%;
 	opacity:.4;
@@ -1300,7 +1300,7 @@ VerticalScrollBar,HTMLVerticalScrollBar
 
 VerticalScrollBar:hover,HTMLVerticalScrollBar:hover
 {
-	opacity:.6;
+	opacity:.4;
 }
 
 VerticalScrollBar .ScrollThumb,HTMLVerticalScrollBar .ScrollThumb
@@ -2394,7 +2394,7 @@ DropDownMenu Label Image
 
 .PopupButtonTimer:disabled
 {
-	border: 0px solid #5b6164;
+	border: 1px solid #5b616400;
 	wash-color: disabledColor;
 }
 
@@ -2805,13 +2805,13 @@ SlottedSlider.HorizontalSlider .SliderNotch
 	z-index: 5;
 }
 
-Slider.HorizontalSlider,SlottedSlider.HorizontalSlider
+Slider.HorizontalSlider,SlottedSlider.HorizontalSlider,RangeSlider.HorizontalSlider
 {
 	width: 420px;
 	height: 36px;
 }
 
-Slider.HorizontalSlider #SliderTrack,SlottedSlider.HorizontalSlider #SliderTrack
+Slider.HorizontalSlider #SliderTrack,SlottedSlider.HorizontalSlider #SliderTrack,RangeSlider.HorizontalSlider #SliderTrack
 {
 	width: 100%;
 	height: 8px;
@@ -2826,7 +2826,7 @@ Slider.HorizontalSlider #SliderTrackProgress,SlottedSlider.HorizontalSlider #Sli
 	border: 0px;
 }
 
-Slider.HorizontalSlider.OutOfBounds #SliderTrackProgress,Slider.HorizontalSlider.OutOfBounds #SliderTrack
+Slider.HorizontalSlider.OutOfBounds #SliderTrackProgress,Slider.HorizontalSlider.OutOfBounds #SliderTrack,RangeSlider.HorizontalSlider #SliderTrack
 {
 	width: 100%;
 	height: 8px;
@@ -2843,13 +2843,14 @@ Slider.HorizontalSlider #SliderTrackProgress:disabled,SlottedSlider.HorizontalSl
 	margin-left: 1px;
 }
 
-Slider.HorizontalSlider #SliderThumb,SlottedSlider.HorizontalSlider #SliderThumb
+Slider.HorizontalSlider #SliderThumb,SlottedSlider.HorizontalSlider #SliderThumb,RangeSlider.HorizontalSlider .SliderThumb
 {
 	background-color: baseText;
 	border-radius: 2px;
 	width: 16px;
 	height: 12px;
 	align: center center;
+	z-index: 2;
 }
 
 Slider.HorizontalSlider #SliderDefault
@@ -2869,6 +2870,23 @@ Slider.HorizontalSlider #SliderThumb:hover,SlottedSlider.HorizontalSlider #Slide
 Slider.HorizontalSlider #SliderThumb:disabled,SlottedSlider.HorizontalSlider #SliderThumb:disabled
 {
 	background-color: #333333;
+}
+
+RangeSlider
+{
+	width: 30px;
+	height: 130px;
+	margin-bottom: 20px;
+}
+
+RangeSlider.HorizontalSlider #SliderTrackRangeFill
+{
+	width: 100%;
+	height: 10px;
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( #222222FF ), to( #444f52FF ) );
+	box-shadow: inset black -2px 1px 3px 0px;
+	margin-left: 1px;
+	align:center center;
 }
 
 .CarouselContainer
@@ -3856,6 +3874,11 @@ EdgeScrollBar.Vertical #MaxButton
 .top-margin-48
 {
 	margin-top: 48px;
+}
+
+.bottom-margin-16
+{
+	margin-bottom: 16px;
 }
 
 .bottom-margin-32
