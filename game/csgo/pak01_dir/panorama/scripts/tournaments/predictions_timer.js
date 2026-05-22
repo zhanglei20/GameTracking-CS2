@@ -6,15 +6,17 @@ var PredictionsTimer;
 (function (PredictionsTimer) {
     function UpdateTimer() {
         let oPageData = PopupMajorHub.GetActivePageData();
-        let secRemaining = PredictionsAPI.GetGroupRemainingPredictionSeconds(oPageData.tournamentId, oPageData.groupId);
-        let isActive = PredictionsAPI.GetSectionIsActive(oPageData.tournamentId, oPageData.sectionId);
-        let elIcon = oPageData.panel.FindChildTraverse('id-predictions-timer-icon');
-        let elParent = oPageData.panel.FindChildTraverse('id-predictions-timer');
+        if (!oPageData || !oPageData.tournamentId)
+            return;
         if (oPageData.panel.Data().handlerLockPicksTimerSch) {
             oPageData.panel.Data().handlerLockPicksTimerSch = null;
         }
+        let elIcon = oPageData.panel.FindChildTraverse('id-predictions-timer-icon');
+        let elParent = oPageData.panel.FindChildTraverse('id-predictions-timer');
         elParent.SwitchClass('state', '');
         let canPick = PredictionsAPI.GetGroupCanPick(oPageData.tournamentId, oPageData.groupId);
+        let secRemaining = PredictionsAPI.GetGroupRemainingPredictionSeconds(oPageData.tournamentId, oPageData.groupId);
+        let isActive = PredictionsAPI.GetSectionIsActive(oPageData.tournamentId, oPageData.sectionId);
         if (!canPick) {
             elIcon.SetImage('file://{images}/icons/ui/locked.svg');
             oPageData.panel.SetDialogVariable('lock_state', $.Localize('#pickem_timer_locked'));

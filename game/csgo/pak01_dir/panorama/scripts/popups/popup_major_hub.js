@@ -25,16 +25,18 @@ var PopupMajorHub;
     let m_oPageData = {};
     m_oPageData.hasAlreadyInit = [];
     function ClosePopup() {
-        m_oPageData.hasAlreadyInit.forEach(id => {
-            let elPage = _m_elPickemPages.FindChild(id);
-            if (elPage && elPage.IsValid()) {
-                let elBtn = elPage.FindChildInLayoutFile('id-predictions-apply-btn').FindChild('id-apply-btn');
-                if (elBtn.enabled) {
-                    elBtn.AddClass('activated-by-program');
-                    $.DispatchEvent("Activated", elBtn, "program");
+        if (_m_elPickemPages && _m_elPickemPages.IsValid()) {
+            m_oPageData.hasAlreadyInit.forEach(id => {
+                let elPage = _m_elPickemPages.FindChild(id);
+                if (elPage && elPage.IsValid()) {
+                    let elBtn = elPage.FindChildInLayoutFile('id-predictions-apply-btn').FindChild('id-apply-btn');
+                    if (elBtn.enabled) {
+                        elBtn.AddClass('activated-by-program');
+                        $.DispatchEvent("Activated", elBtn, "program");
+                    }
                 }
-            }
-        });
+            });
+        }
         PopupMajorHub.DeleteDragItem();
         $.DispatchEvent('CSGOPlaySoundEffect', 'inventory_inspect_close', 'MOUSE');
         _m_cp.SetReadyForDisplay(false);
@@ -417,8 +419,12 @@ var PopupMajorHub;
         }
     };
     function _SetUpSpray() {
-        let tournamentCoinItemId = InventoryAPI.GetActiveTournamentCoinItemId(_m_eventId);
         let elParent = $.GetContextPanel().FindChildInLayoutFile('id-major-store');
+        if (!_m_eventId) {
+            elParent.SetHasClass('graffiti-panel-visible', false);
+            return;
+        }
+        let tournamentCoinItemId = InventoryAPI.GetActiveTournamentCoinItemId(_m_eventId);
         if (!tournamentCoinItemId || tournamentCoinItemId === '0' || g_ActiveTournamentInfo.eventid !== _m_eventId || !g_ActiveTournamentInfo.active) {
             elParent.SetHasClass('graffiti-panel-visible', false);
             return;

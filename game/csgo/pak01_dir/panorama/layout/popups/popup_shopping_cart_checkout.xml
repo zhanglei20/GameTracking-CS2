@@ -159,7 +159,7 @@
 			</Panel>
 			<Panel class="cart-checkout__purchase-row">
 				<Button id="id-cart-close" class="cart-close PopupButton">
-					<Label text="Close" />
+					<Label text="#GameUI_Close" />
 				</Button>
 			</Panel>
 		</Panel>

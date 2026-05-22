@@ -74,7 +74,7 @@
 				</Panel>
 				<Panel class="major-store__item-tile__image-container" hittest="false">
 					<ItemImage id="id-store-item-image" scaling="stretch-to-fit-preserve-aspect" hittest="false" />
-					<MapItemPreviewPanel id="id-store-item-model" class="major-store__item-tile__model" map="ui/xpshop_item" initial_entity="item" mouse_rotate="false" />
+					<MapItemPreviewPanel id="id-store-item-model" class="major-store__item-tile__model" map="ui/xpshop_item" initial_entity="item" mouse_rotate="false" require-composition-layer="true" transparent-background="true" />
 					<Button id="id-inspect-sticker" class="major-store__item-tile__btn" acceptsfocus="false" />
 					<Panel class="major-store__item-tile__cart-btns">
 						<Button id="id-store-item-remove-from-cart-btn" class="major-store__cart-btn">
@@ -257,7 +257,7 @@
 						<Panel class="popup-major-store__content__navbar">
 							<Button id="id-major-store-single-view-back-btn" class="popup-major-store__filters-active-btn home-btn">
 								<Image texturewidth="16" textureheight="-1" src="s2r://panorama/images/icons/ui/back.vsvg" />
-								<Label text="#back" class="stratum-medium" />
+								<Label text="#UI_Back_Footer" class="stratum-medium" />
 							</Button>
 						</Panel>
 						<Panel class="popup-major-store__content__controls">
