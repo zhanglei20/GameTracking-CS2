@@ -37,6 +37,62 @@ CarouselNav:disabled
 	border-radius: 0px;
 }
 
+.popup-major-store__popular__nav
+{
+	horizontal-align: center;
+	flow-children: none;
+}
+
+.popup-major-store__popular__nav .PaginationArrow
+{
+	width: 24px;
+	height: 24px;
+	background-size:18px auto;
+	background-color: rgba(255, 255, 255, 0.0);
+	padding: 16px;
+	margin: 4px;
+}
+
+.popup-major-store__popular__nav .PaginationArrow:hover
+{
+	brightness: 2;
+}
+
+.popup-major-store__popular__nav .PaginationArrow:disabled
+{
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.0);
+	background-img-opacity: .1;
+}
+
+.popup-major-store__popular__nav .PaginationArrow.Right
+{
+	margin-left: 32px;
+}
+
+.popup-major-store__popular__nav #ItemPips
+{
+	horizontal-align: center;
+	margin: 0px 32px;
+}
+
+.popup-major-store__popular__nav #ItemPips .PaginationButton
+{
+	width: 12px;
+	height: 12px;
+	background-color: rgba(0, 0, 0, 0.418);
+	margin: 0px 2px;
+	horizontal-align: center;
+	border-radius: 50%;
+}
+
+.popup-major-store__popular__nav #ItemPips .PaginationButton:selected
+{
+	background-color: rgba(255, 255, 255, 0.192);
+	border-radius: 0px;
+	border-radius: 50%;
+}
+
 .xpshop__crate-lootlist-carousel-nav
 {
 	width: 100%;

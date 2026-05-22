@@ -31,6 +31,10 @@ var PopupLeaderboards;
     }
     ;
     function _SetBackground() {
+        const eventId = $.GetContextPanel().GetAttributeString('eventid', '');
+        if (!eventId) {
+            return;
+        }
         let elBackground = $.GetContextPanel().FindChild('id-popup-leaderboard-bg');
         elBackground.style.backgroundImage = 'url( "file://{images}/tournaments/backgrounds/pickem_bg_' + $.GetContextPanel().GetAttributeString('eventid', '') + '.png");';
         elBackground.style.backgroundSize = 'cover';

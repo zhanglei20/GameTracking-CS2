@@ -119,6 +119,16 @@
 	transform: scale3d( 1, 1, 1);
 }
 
+.popup-can-apply_remove_btn .inline-coin-icon
+{
+	height: 14px;
+	width: 14px;
+	vertical-align: top;
+	transform: translateY(-3px);
+	color: black;
+	wash-color: black;
+}
+
 .popup-can-apply_remove_btn:hover:not(:disabled)
 {
 	transform: scale3d( 1.05, 1.05, 1);
@@ -145,6 +155,41 @@
 {
 	width: height-percentage( 135%);
 	height: 100px;
+}
+
+.popup-can-apply_remove_btn .popup-can-apply_remove__image.popup-can-apply_remove__image__coupon
+{
+	width: height-percentage( 100%);
+	vertical-align: bottom;
+}
+
+.popup-can-apply_remove_btn .popup-can-apply_remove__label
+{
+	transform: translateY(35px);
+	margin-left: 0px;
+	horizontal-align: center;
+	text-align: center;
+}
+
+.popup-can-apply_remove_btn .popup-can-apply_remove__label.cart-item__price
+{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	padding: 0px 6px;
+	border-radius: 14px;
+	color: black;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #efefef ), to( rgb( 212, 211, 211 )));
+}
+
+.popup-can-apply_remove_btn .popup-can-apply_remove__label.cart-item__price.popup-can-apply_remove__label__coupon
+{
+	z-index: 5;
+	transform: rotateZ( -45deg ) translateX( 15px ) translateY( 90px );
+	padding-left: 5px;
+	padding-right: 20px;
+	font-size: 20px;
+	background-color: #00000000;
 }
 
 .popup-can-apply_remove_btn .popup-can-apply_remove__selected
@@ -241,6 +286,31 @@
 {
 	margin-left: 8px;
 	vertical-align: center;
+}
+
+.popup-capability__craft-souvenir-hint
+{
+	background-color: rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	padding: 8px 16px;
+	visibility: collapse;
+	margin-top: 230px;
+	margin-left: 150px;
+	margin-right: 150px;
+	horizontal-align: center;
+	flow-children: right;
+}
+
+.popup-capability__craft-souvenir-hint.show-craft-souvenir-hints
+{
+	visibility: visible;
+}
+
+.popup-capability__craft-souvenir-hint Label
+{
+	margin-left: 8px;
+	vertical-align: center;
+	color: #FFD700;
 }
 
 #StickerScrapeLevelContainer Label

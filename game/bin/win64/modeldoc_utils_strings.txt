@@ -46,7 +46,6 @@
  (%d %d %d)
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
- (deprecated)
  * Adding Bone :: < %10.4f %10.4f %10.4f >\n
  * Animation Stack %s Layer %s - %s\n
  * Fbx Time: %6.2f Fbx Frame: %6lld Dmx Time: %6.2f Dmx Frame: %d\n
@@ -95,7 +94,6 @@
 "%s" renamed from "%s"
 "%s": Bad mode
 "%s": Information lost writing value (%g) as (unsigned) RATIONAL
-"04\nZ
 "Limit Count: " + m_nLimitCount
 "Predictor" value %d not supported
 "b}b*XhUu
@@ -109,7 +107,6 @@
 "screenWindowCenter" attribute not found in the header.
 "screenWindowWidth" attribute not found in the header.
 # of channels is zero.\n
-#04\nZ
 #?MultNormalize@FbxMatrix@fbxsdk@@QEBA?AVFbxVector4@2@AEBV32@@Z
 #?Normalize@FbxVector4@fbxsdk@@QEAAXXZ
 #?ObjectType@FbxCriteria@fbxsdk@@SA?AV12@AEBVFbxClassId@2@@Z
@@ -382,6 +379,7 @@ $prefix_element$
 ---- dmxconvert cmdline ----\n
 ---- dmxconvert output ----\n
 ---------------------------\n
+-deprecated-
 .,?sVectorDisplacementColor@FbxSurfaceMaterial@fbxsdk@@2PEBDEB
 .?AU?$TArrayDeleter@C@v11@AbcCoreAbstract@Alembic@@
 .?AU?$TArrayDeleter@E@v11@AbcCoreAbstract@Alembic@@
@@ -1560,6 +1558,7 @@ $prefix_element$
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocKeychainMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocStickerMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshNodeToAppend@?1??GetStaticAttributes@CModelDocRenderMeshAppendRenderMesh@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_strSpecialIdentifier@?1??GetStaticAttributes@CModelDocStickerMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strStackInstanceName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpStack@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ForceRealignBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ReassignBoneParent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -2205,6 +2204,7 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -2873,6 +2873,7 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -3579,6 +3580,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocRoot@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@X@@
@@ -4266,6 +4268,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -4950,6 +4953,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@@@
+.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@@@
@@ -5867,6 +5871,7 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -7307,12 +7312,11 @@ $prefix_element$
 .webp
 .xform
 // FRAMERATE=%f
-0<pn
+0<yn
 0\r%0t
 0\tV_frexpf
 0x%llx
-0xzn
-0|Xn
+0|an
 16-byte data pool
 180_recovery
 1D Blend Has No Referenced Animations
@@ -7327,7 +7331,7 @@ $prefix_element$
 2DBlendEditor
 2DBlendFromAnimation
 2\n??9FbxDataType@fbxsdk@@QEBA_NAEBV01@@Z
-2\vpxzn
+2\vpx
 2_BONE_IK
 4-byte data pool
 4\r54t
@@ -8011,6 +8015,7 @@ Auto Layer
 Auto Level
 Auto-Smooth
 Auto-detect
+Autograph
 Automatically builds a physics hull from render geometry.
 Automatically builds a physics hull from user-specified points
 Automatically builds a physics mesh from render geometry.
@@ -11665,7 +11670,7 @@ Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
-P<pn
+P<yn
 PARENT
 PF\n%d %d\n-1.000000\n
 PHY Import: Invalid solid index %d in keyvalues\n
@@ -11937,7 +11942,7 @@ Pulse domain which enables particle content to query leaf code to introspect gam
 Push Out
 Push mesh faces outward along their local normal. Optionally build shell geometry.
 PushBack
-P|Xn
+P|an
 QAngle
 Q\v??DFbxVector4@fbxsdk@@QEBA?AV01@N@Z
 Quad Bend Tolerance
@@ -12011,10 +12016,10 @@ RBF Based Anim Constraint
 RGB blend weight for sequence 0
 RGB blend weight for sequence 1
 ROTATION
-R\fpxzn
-R\np<pn
-R\vp<pn
-R\vpxzn
+R\fpx
+R\np<yn
+R\vp<yn
+R\vpx
 R_T5Y
 Rad2 Deg
 Radial Basis Function Type
@@ -12584,7 +12589,9 @@ Spawn Piece Motion-Disabled
 Spawn particle meshes when this prop breaks.  These models are the contents of the container which broke, for example a crate and the things it contains.
 Spawn particle meshes when this prop breaks. (Automatically creates a helper model with a bodygroup choice for each particle, a snapshot that positions them in the appropriate places, and a breakcommand that spawns a particlesystem driven by the model and vsnaps.)
 SpawnConfig
+Special Identifier
 Special operation to execute when this model breaks.
+SpecialIdentifier
 Specific Physics Body to Replace
 Specified
 Specified class '%s' is a base class, @exclude cannot be used for base classes
@@ -12662,7 +12669,8 @@ Stencil write ID
 Stereo
 Stereo controls are compiled into right_<name> and left_<name> pairs.
 StereoFlip
-Sticker %d%s
+Sticker %d
+Sticker %d [%s]
 Sticker Index
 Sticker Markup Preview
 StickerMarkup
@@ -12791,6 +12799,8 @@ Target Name
 Target Triangle Percent
 Target layer ID for rendering
 TargetPrinter
+Team1
+Team2
 Temp Morph Scene
 Tension Compress Scale
 Tension Stretch Scale
@@ -13358,8 +13368,7 @@ Zero skin weights on one or more vertices
 [cloth] | [procedural]
 [procedural]
 \f$?ParseForGlobalSettings@FbxImporter@fbxsdk@@QEAAX_N@Z
-\fp<pn
-\fp\v`xzn
+\fp<yn
 \instances\
 \maps\
 \materialsrc\
@@ -13369,7 +13378,7 @@ Zero skin weights on one or more vertices
 \n??AFbxQuaternion@fbxsdk@@QEBAAEBNH@Z
 \nERROR: EXCEPTION:\n
 \nERROR: UNKNOWN EXCEPTION\n
-\nP<pn
+\nP<yn
 \ndummyfilename.tif
 \ng default\n
 \prefabs\
@@ -13395,8 +13404,7 @@ Zero skin weights on one or more vertices
 \tg_bUpdateStringTokenDatabase
 \tnexttoken
 \v??YFbxString@fbxsdk@@QEAAAEBV01@PEBD@Z
-\vp<pn
-\vpxzn
+\vp<yn
 ^(.+)_[0-9A-Fa-f]{8}$
 _CustomCommand
 _CustomCommand%d
@@ -13476,7 +13484,6 @@ _temp_tangent
 _volumeatlas_
 _wjb
 _zero
-`xzn
 a:fulltype
 a:typeparam
 a\tV_powd
@@ -14601,7 +14608,7 @@ group_name
 grow_or_shrink
 growth time
 guide_hair_count
-h*\n0fi
+h*\n0oi
 hair_count
 halfEdges %d,%d faces %d,%d angle %.1f deg.
 halfgridsnap
@@ -15695,7 +15702,7 @@ overwrite_existing
 overwrite_existing_flags_only
 ownerlog
 owns_polymorphic_data
-p<pn
+p<yn
 pCheckpointName
 pDescription
 pTagName
@@ -15893,16 +15900,15 @@ pulse_node_custom_attributes
 pulse_runtime_lib
 pushout_strength
 pvTarget
-pxzn
-p|Xn
+p|an
 qangle log
 qangle_array
 quad_bend_tolerance
 quadratic
 quaternion log
 quaternion_array
-r\fp<pn
-r\vpxzn
+r\fp<yn
+r\vpx
 rad2deg
 radius0_key
 radius1_key
@@ -16257,6 +16263,7 @@ sourceframe
 sources
 spawnFlags
 spawnflags
+special_identifier
 specificImpulse
 specific_impulse
 specific_physics_body_to_replace

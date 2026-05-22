@@ -5,6 +5,7 @@
 /// <reference path="../common/store_items.ts" />
 /// <reference path="../generated/items_event_current_generated_store.d.ts" />
 /// <reference path="../generated/items_event_current_generated_store.ts" />
+/// <reference path="../common/xpshop_tile_weapon_camera_settings.ts" />
 /// <reference path="../popups/popup_acknowledge_item.ts" />
 /// <reference path="../itemtile_store.ts" />
 /// <reference path="../tournaments/predictions_timer.ts" />
@@ -98,11 +99,7 @@ var PopupMajorHub;
         let bItemsForSale = _ItemsForSale();
         _m_cp.SetHasClass('no-items-on-sale', !bItemsForSale);
         if (bItemsForSale) {
-            _UpdateSouvenirSection(bItemsForSale);
-            _UpdateStoreTiles();
-        }
-        else {
-            _UpdateSouvenirSection(bItemsForSale);
+            _UpdateStoreBannar();
         }
         LoadPickEmData();
         SetUpTournamentControlRoom();
@@ -167,6 +164,7 @@ var PopupMajorHub;
     function _UpdateTournamentTitle() {
         _m_cp.SetDialogVariable('tournament_name', $.Localize('#CSGO_Tournament_Event_NameShort_' + _m_eventId));
         _m_cp.FindChildInLayoutFile('id-major-logo').SetImage('file://{images}/tournaments/events/tournament_logo_' + _m_eventId + '.svg');
+        _m_cp.SetDialogVariable('store-title', $.Localize('#major_hub_store_title_event', _m_cp));
     }
     function _SetBackgroundImages() {
         if (!_m_eventId)
@@ -186,51 +184,88 @@ var PopupMajorHub;
         _m_cp.FindChildInLayoutFile('id-challenges-block').SetHasClass('major-background-size', true);
     }
     function _UpdateSouvenirSection(bItemsForSale) {
-        if (_m_eventId === g_ActiveTournamentInfo.eventid) {
-            let elDesc = _m_cp.FindChildInLayoutFile('id-major-hub-souvenir-desc');
-            elDesc.visible = true;
-            if (bItemsForSale) {
-                let idForCharges = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(g_ActiveTournamentInfo.itemid_charge, 0);
-                if (StoreAPI.GetStoreItemSalePrice(idForCharges, 1, '')) {
-                    _m_cp.SetDialogVariable('souvenir_price', StoreAPI.GetStoreItemSalePrice(idForCharges, 1, ''));
-                }
-                elDesc.SetDialogVariable('souvenir_package_desc', $.Localize('#major_hub_souvenir_package_desc', _m_cp));
+        let elDesc = _m_cp.FindChildInLayoutFile('id-major-hub-souvenir-desc');
+        elDesc.visible = true;
+        if (bItemsForSale) {
+            let idForCharges = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(g_ActiveTournamentInfo.itemid_charge, 0);
+            if (StoreAPI.GetStoreItemSalePrice(idForCharges, 1, '')) {
+                _m_cp.SetDialogVariable('souvenir_price', StoreAPI.GetStoreItemSalePrice(idForCharges, 1, ''));
             }
-            else if (m_redeemAvailable && m_redeemAvailable > 0) {
-                elDesc.SetDialogVariable('souvenir_package_desc', $.Localize('#major_hub_souvenir_package_desc_no_price', _m_cp));
-            }
-            else {
-                elDesc.visible = false;
-            }
+            elDesc.SetDialogVariable('souvenir_package_desc', $.Localize('#major_hub_souvenir_package_desc', _m_cp));
         }
-        _m_cp.SetDialogVariable('souvenir_package', $.Localize('#CSGO_crate_' + g_ActiveTournamentInfo.location + '_promo'));
-        SetupSouvenirMap();
-    }
-    function SetupSouvenirMap() {
-    }
-    function _UpdateStoreTiles() {
-        let elStore = _m_cp.FindChildInLayoutFile('id-major-store-block');
-        if (StoreItems.GetStoreItems().coupon && StoreItems.GetStoreItems().coupon.length < 1) {
-            StoreItems.MakeStoreItemList();
-            elStore.SetHasClass('no-store', false);
+        else if (m_redeemAvailable && m_redeemAvailable > 0) {
+            elDesc.SetDialogVariable('souvenir_package_desc', $.Localize('#major_hub_souvenir_package_desc_no_price', _m_cp));
         }
         else {
-            elStore.SetHasClass('no-store', true);
+            elDesc.visible = false;
         }
-        let oItemsByCategory = StoreItems.GetStoreItems();
-        let aItemsList = oItemsByCategory['tournament'];
-        let elParent = $.GetContextPanel().FindChildInLayoutFile('id-major-items');
-        for (let i = 0; i < aItemsList.length; i++) {
-            let oItemData = StoreItems.GetStoreItemData('tournament', i);
-            let elTile = elParent.FindChildInLayoutFile('major-hub-item-' + i);
-            if (!elTile && !oItemData.hasOwnProperty('isTournamentPass')) {
-                elTile = $.CreatePanel("Button", elParent, 'major-hub-item-' + i);
-                elTile.BLoadLayout('file://{resources}/layout/itemtile_store.xml', false, false);
+        _m_cp.SetDialogVariable('souvenir_package', $.Localize('#CSGO_TournamentPass_' + g_ActiveTournamentInfo.location + '_store_desc'));
+    }
+    const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+    function _UpdateStoreBannar() {
+        _m_cp.FindChildInLayoutFile('id-major-open-store').SetPanelEvent('onactivate', () => {
+            UiToolkitAPI.ShowCustomLayoutPopup('id-popup-major-store', 'file://{resources}/layout/popups/popup_major_store.xml');
+            $.DispatchEvent("CSGOPlaySoundEffect", "UIPanorama.tab_mainmenu_shop", "MOUSE");
+        });
+        const elStore = _m_cp.FindChildInLayoutFile('id-major-store-banner');
+        const defidxStickerItem = InventoryAPI.GetItemDefinitionIndexFromDefinitionName('sticker');
+        const numStickers = 10;
+        for (let i = 0; i < numStickers; i++) {
+            const itemId = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(defidxStickerItem, g_ActiveTournamentTeams[getRandomInt(0, g_ActiveTournamentTeams.length - 1)].players[getRandomInt(0, 4)].stickerids[getRandomInt(0, 3)]);
+            let elDisplay;
+            if (i == 2 || i == 8) {
+                elDisplay = elStore.FindChildInLayoutFile('id-major-store-banner-item-' + i);
+                elDisplay.SetCamera('camera_weapon_7');
+                elDisplay.SetActiveItem(0);
+                elDisplay.SetItemItemId(itemId, '');
+                let nRenderInterval = 1;
+                elDisplay.SetRenderInterval(nRenderInterval);
             }
-            if (!oItemData.hasOwnProperty('isTournamentPass')) {
-                ItemTileStore.Init(elTile, oItemData);
+            else {
+                elDisplay = elStore.FindChildInLayoutFile('id-major-store-banner-item-' + i);
+                elDisplay.itemid = itemId;
             }
+            elDisplay.AddClass('show');
         }
+        _SetUpBannerSouvenir(elStore);
+    }
+    function _SetUpBannerSouvenir(elStore) {
+        InventoryAPI.SetInventorySortAndFilters('inv_sort_rarity', false, 'rifle,craft_souvenir,is_rental:false,is_sealed:false', '', '');
+        let itemId = '';
+        const count = InventoryAPI.GetInventoryCount();
+        if (count > 0) {
+            const rarityCutoff = Math.floor(InventoryAPI.GetItemRarity(InventoryAPI.GetInventoryItemIDByIndex(0)) / 3);
+            let maxInclusiveIndex = count - 1;
+            while (maxInclusiveIndex > 0) {
+                const rarityMid = InventoryAPI.GetItemRarity(InventoryAPI.GetInventoryItemIDByIndex(maxInclusiveIndex));
+                if (rarityMid >= rarityCutoff)
+                    break;
+                else
+                    maxInclusiveIndex = Math.floor(maxInclusiveIndex / 2);
+            }
+            itemId = InventoryAPI.GetInventoryItemIDByIndex(getRandomInt(0, maxInclusiveIndex));
+        }
+        if (!itemId) {
+            const randomRifles = [7, 8, 9, 10, 11, 13, 16, 40, 60];
+            itemId = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(randomRifles[getRandomInt(0, randomRifles.length - 1)], 0);
+        }
+        if (itemId) {
+            const halfTeams = Math.floor(g_ActiveTournamentTeams.length / 2);
+            const fauxSouvenirItemId = InventoryAPI.CreateTempCombinedItemWithTool(itemId, 'craft_souvenir:faux_' + g_ActiveTournamentInfo.eventid + '_'
+                + g_ActiveTournamentTeams[getRandomInt(0, halfTeams - 1)].teamid + '_'
+                + g_ActiveTournamentTeams[getRandomInt(halfTeams, g_ActiveTournamentTeams.length - 1)].teamid);
+            if (fauxSouvenirItemId)
+                itemId = fauxSouvenirItemId;
+        }
+        const defName = InventoryAPI.GetItemDefinitionName(itemId);
+        let cameraData = XpShopWeaponCameraSettings.CameraSettings.find(({ type }) => type === defName);
+        let cameraSuffix = cameraData !== undefined ? cameraData.camera : '0';
+        const elModelPanel = elStore.FindChildInLayoutFile('id-major-store-banner-souvenir');
+        elModelPanel.SetCamera('camera_weapon_' + cameraSuffix);
+        elModelPanel.SetActiveItem(0);
+        elModelPanel.SetItemItemId(itemId, '');
+        let nRenderInterval = 1;
+        elModelPanel.SetRenderInterval(nRenderInterval);
     }
     function _ItemsForSale() {
         var tournamentEventId = NewsAPI.GetActiveTournamentEventID();
@@ -238,11 +273,7 @@ var PopupMajorHub;
             return false;
         if (g_ActiveTournamentInfo.eventid !== tournamentEventId)
             return false;
-        for (let i = 0; i < g_ActiveTournamentStoreLayout.length; ++i) {
-            if ('' !== StoreAPI.GetStoreItemSalePrice(InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(g_ActiveTournamentStoreLayout[i][0], 0), 1, ''))
-                return true;
-        }
-        return false;
+        return g_ActiveTournamentInfo.active;
     }
     ;
     function _UpdateChallenges() {
@@ -335,7 +366,7 @@ var PopupMajorHub;
     var _SetThresholdText = function (nPointsEarned, nTotalChallenges, tournamentCoinItemId) {
         let threshold = InventoryAPI.GetItemAttributeValue(tournamentCoinItemId, "upgrade threshold");
         let sText = (nTotalChallenges - nPointsEarned) === 0 ? '#tournament_coin_completed_challenges' :
-            (threshold > nPointsEarned) ? '#tournament_coin_remaining_challenges_token' : '';
+            (threshold > nPointsEarned) ? '#tournament_coin_remaining_challenges_curr' : '';
         let challengesRemain = threshold - nPointsEarned;
         _m_cp.SetDialogVariableInt('challenges', challengesRemain);
         _m_cp.SetDialogVariable('challenges_status', $.Localize(sText, $.GetContextPanel()));
@@ -347,6 +378,8 @@ var PopupMajorHub;
             coinLevel += coinRedeemsPurchased;
         let redeemed = parseInt(InventoryAPI.GetItemAttributeValue(tournamentCoinItemId, "operation drops awarded 0"));
         m_redeemAvailable = coinLevel - redeemed;
+        if (_m_eventId >= 26)
+            m_redeemAvailable = 0;
         _m_cp.SetDialogVariableInt('redeems', m_redeemAvailable);
         let elPanel = _m_cp.FindChildInLayoutFile('id-coin-status-charges');
         elPanel.visible = m_redeemAvailable > 0;
@@ -522,14 +555,6 @@ var PopupMajorHub;
             OpenPassActivate(itemId);
             return;
         }
-        Object.entries(nSouvenir.souvenirs).forEach(element => {
-            let defName = InventoryAPI.GetItemDefinitionName(InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(element[1], 0));
-            if (defName === newItemDefName) {
-                $.DispatchEvent('ShowAcknowledgePopup', '', '');
-                $.DispatchEvent('HideStoreStatusPanel');
-                return;
-            }
-        });
     }
     function OpenPassActivate(itemId) {
         const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('', 'file://{resources}/layout/popups/popup_capability_decodable.xml');

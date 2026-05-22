@@ -26,7 +26,7 @@
   R%d: %15s %25s %s\n
   Top-level Mesh Op '%s' returning a cached result.\n
   V%d: '%s' (%s)\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@
  !"#$%%&'()*+,-../0123456789:;<=>?@ABCDEFGHIJKLLMNOPQRSTUVWXY[]_`bdefhjlnprtvz|~
  #%d: %d Faces, %d Verts, %d Edges\n
  %dw %dl %dh @(%.0f %.0f %.0f)
@@ -37,16 +37,14 @@
  (%d %d %d)
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
- (08@HPX`j0\v\v
- (08@HPXbPm.
- (08@HPZ0\v\v
- (08@HRPm.
- (08@JPm.
- (0X`hpzPm.
+ (08@HPX`j
+ (08@HPXb
+ (08@HPZ
+ (08@HR
+ (0X`hpz
  (Crouch)
  (Pitch)
  (Roll)
- (deprecated)
  (disabled)
  (model ctrl %d)
  (repeat)
@@ -559,29 +557,37 @@ $prefix_element$
 (%.2f, %.2f, %.2f)
 (%1 clips)
 (%d tracks)
-(1TP
-(1jP
+(1DP
+(1PP
 (1oP
-(1zP
-(5PP
-(9UP
+(1pP
+(5JP
+(5YP
+(5nP
+(5sP
+(9kP
+(9uP
+(9zP
 (? Queued)
 (?!\d)[\w_]*
-(AbP
 (Advanced Feature) Used to specify special interaction rules or exclusions. References a name in scripts/collision_properties.txt.
-(AmP
 (Anonymous)
 (Cannot dynamically spawn a prop_static)
 (Custom Colors Disabled)
 (Debug Feature) Used to draw collision with the same material in Physics Debugger as in Hammer.
-(ERP
+(ECP
+(ESP
+(EWP
 (Edges to Faces)
 (Edges to Vertices)
+(ErP
 (Error)
 (Faces to Edges)
 (Faces to Vertices)
 (Filter)
-(MJP
+(IGP
+(ImP
+(IxP
 (Mesh Substring Filter)
 (Multiple)
 (No Active Session)
@@ -591,33 +597,29 @@ $prefix_element$
 (No class selected)
 (Outliner Filter)
 (Preview Outliner Filter)
-(QBP
-(QrP
+(Q7P
 (Specified in project's gameinfo.gi)
 (Steam Audio) Update physics surface property of VMDL files. They are used for picking acoustic material property for Steam Audio.
-(UWP
+(UUP
 (Vertices to Edges)
 (Vertices to Faces)
-(Y7P
-(YdP
+(YMP
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(a9P
-(aMP
-(e0P
+(aBP
+(aoP
+(eZP
+(esP
 (export) %d %s %d %s %s\n
 (export) %d %s %d %s\n
-(eyP
+(iDP
+(iXP
 (layer %d)
-(mGP
 (no-compile)
-(uEP
-(uNP
-(uPP
-(uTP
-(uaP
-(ybP
+(uRP
+(yGP
+(yHP
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n?displayText@QStyledItemDelegate@@UEBA?AVQString@@AEBVQVariant@@AEBVQLocale@@@Z
@@ -690,6 +692,7 @@ $prefix_element$
 -> Success (%d attempts)\n
 -\nLx.\nAh/\n/4h
 -\tV_fread
+-deprecated-
 -node:
 -node:%1
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
@@ -2168,6 +2171,7 @@ $prefix_element$
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocKeychainMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocStickerMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strRenderMeshNodeToAppend@?1??GetStaticAttributes@CModelDocRenderMeshAppendRenderMesh@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_strSpecialIdentifier@?1??GetStaticAttributes@CModelDocStickerMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strStackInstanceName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpStack@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ForceRealignBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ReassignBoneParent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -3611,6 +3615,7 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -4614,6 +4619,7 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
@@ -5754,6 +5760,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocRoot@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@X@@
@@ -6928,6 +6935,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -7712,6 +7720,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocRoot@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocSkeletonFile@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkup@@@@@@
+.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocStickerMarkupLocator@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTestNode@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@@@
@@ -9045,6 +9054,7 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocRoot@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocSkeletonFile@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkup@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocStickerMarkupLocator@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTestStruct@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_CavityMap@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocTextureGenerator_FaceVertexColor@@@@
@@ -12042,7 +12052,7 @@ $prefix_element$
 .?AVQValidator@@
 .?AVQWidget@@
 .?AVQWidgetAction@@
-.@xjI
+.@0uI
 .P6AXPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQCheckBox@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
@@ -12083,9 +12093,8 @@ $prefix_element$
 /animgraphs/
 0.000
 0000``
-08@HR0\v\v
-08@JPm.
-08B0\v\v
+08@HR
+08@J
 0\r%0h
 0\r%0t
 0\tV_frexpf
@@ -12658,7 +12667,7 @@ $prefix_element$
 1setFilterWildcard(QString)
 1tileSubWindows()
 1trigger()
-20l,
+20v.
 2AnimCaptureDeselected()
 2AnyConfigStateChanged()
 2Apply( const KeyValues3 * )
@@ -12711,7 +12720,7 @@ $prefix_element$
 2OnValueChanged( QString )
 2OnValueChanged(QString)
 2PickCancelled()
-2Pm.
+2Pn.
 2RowClicked(int)
 2SceneCameraChanged()
 2SelectionChanged()
@@ -12733,7 +12742,7 @@ $prefix_element$
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\tV_fseek
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpt
+2\vpH
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -12826,6 +12835,7 @@ $prefix_element$
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 4\r54t
 4\r?hidePopup@QComboBox@@UEAAXXZ
+4po.
 53x\f
 58h\n
 5;FJ$,XEK4<
@@ -12843,13 +12853,12 @@ $prefix_element$
 7\r?hideSection@QHeaderView@@QEAAXH@Z
 8"3hrf
 8&Kx
-8-FP
 8-byte data pool
-8B0\v\v
+85QP
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8e$N
+8m/N
 8m_CtrlHash
 969p
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
@@ -12951,7 +12960,6 @@ $prefix_element$
 =]?size@QScreen@@QEBA?AVQSize@@XZ
 >JUMP
 ?%d edges, %d interior edges, %d silhouette edges\n
-?0D4
 ?333?Y
 ??0Connection@QMetaObject@@QEAA@AEBV01@@Z
 ??0Connection@QMetaObject@@QEAA@XZ
@@ -14818,12 +14826,11 @@ $prefix_element$
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
-@08N
+@08Nd
 @AuthPhysCollisionAttributesModeEnum_t
-@HPX`hv0
+@HPX`hv
 @Integer overflow in %s
 @Invalid
-@P2I
 @\tV_isinfd
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 @bonemerge
@@ -15430,6 +15437,7 @@ Auto-markup animations?
 Auto-rename pasted nodes?
 Auto-rename the pasted nodes.
 AutoLOD
+Autograph
 Automatically builds a physics hull from render geometry.
 Automatically builds a physics hull from user-specified points
 Automatically builds a physics mesh from render geometry.
@@ -15732,6 +15740,7 @@ By default angle data is expected in degrees. Check this if the data is specifie
 By default, any change to the chain position will be reflected in parent's rotation.  Uncheck this if you wish the parent to be left unmodified.
 By default, empty selection is the failure case. Set this to false to make having not-empty selection be a failure case.
 By default, only the animation events on the first child animation are considered, if true all animation events which have a non-zero blend weight are used to detect animation events
+C8KH
 C:\buildworker\csgo_rel_win64\build\_build_\tools\modeldoc_editor\_vpc_modeldoc_editor\default\win64\_msvc_\Retail\modeldoc_editor.pdb
 C:\buildworker\csgo_rel_win64\build\src\animdoclib\clip\animclipdoc_events.cpp
 C:\buildworker\csgo_rel_win64\build\src\animlib\graph\animgraph_instance.cpp
@@ -17612,7 +17621,6 @@ CustomSortByColumn
 Cut Max
 Cut Min
 CutSelectedNodes
-Cx@H
 Cycle
 Cycle Start
 Cycle Start Frame
@@ -21343,12 +21351,9 @@ Overwrite With Current
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P08@JPm.
-P08J
-P08N
-P20\v\v
-P2Pm.
-P:Pm.
+P08@J
+P08J@o/
+P08Nd
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?item@QStandardItemModel@@QEBAPEAVQStandardItem@@HH@Z
@@ -21579,7 +21584,6 @@ PitchCameraDown
 PitchCameraUp
 PivotPaint
 PixarLog
-Pj0\v\v
 Place On Attachment
 Place On Bone
 Place on Floor
@@ -21925,9 +21929,9 @@ RMouseDoubleClick
 ROTATION
 RSDSj
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpt
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+R\vpH
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
@@ -22875,7 +22879,9 @@ Spawn Piece Motion-Disabled
 Spawn particle meshes when this prop breaks.  These models are the contents of the container which broke, for example a crate and the things it contains.
 Spawn particle meshes when this prop breaks. (Automatically creates a helper model with a bodygroup choice for each particle, a snapshot that positions them in the appropriate places, and a breakcommand that spawns a particlesystem driven by the model and vsnaps.)
 SpawnConfig
+Special Identifier
 Special operation to execute when this model breaks.
+SpecialIdentifier
 Specific Physics Body to Replace
 Specified
 Specified Motion Frames
@@ -22971,7 +22977,8 @@ StepBack
 StepForward
 Stereo
 Stereo controls are compiled into right_<name> and left_<name> pairs.
-Sticker %d%s
+Sticker %d
+Sticker %d [%s]
 Sticker Index
 Sticker Markup Preview
 Sticker%dOffset
@@ -23164,6 +23171,8 @@ Target warp exceed accurate sampling error threshold! Switching to inaccurate sa
 Target warps required at least one translation XY event!
 TargetPrinter
 Targets
+Team1
+Team2
 Temp_ModelPreviewMassCalculation
 Tension Compress Scale
 Tension Stretch Scale
@@ -24013,7 +24022,7 @@ XResolution
 XYZ, Luv
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
-X`hr0\v\v
+X`hr
 Y (Green / Left)
 Y - Left
 Y0 Node Name
@@ -24079,7 +24088,6 @@ ZIPPostEncode
 ZIPSetupDecode
 ZIPSetupEncode
 ZIPVSetField
-ZPm.
 ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 Z\f?convertFromImage@QPixmap@@QEAA_NAEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 Z\tV_modfd
@@ -24272,8 +24280,9 @@ ZoomOut
 \n[ERR] Not enough memory, shop for some more RAM. See you!\n
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \n\tV_atanf
+\nfEN
 \ng default\n
-\nxIN
+\nyIP
 \prefabs
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
@@ -24519,7 +24528,7 @@ _variant_
 _volumeatlas_
 _wjb
 _zero
-`2Pm.
+`2Pn.
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -24528,14 +24537,16 @@ _zero
 `?valueF@QColor@@QEBANXZ
 `Q?lightnessF@QColor@@QEBANXZ
 `V?queryKeyboardModifiers@QGuiApplication@@SA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
+`Y4P
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`aUP
-`uLP
+`a5P
+`i3P
 a:fulltype
 a:typeparam
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
+aBvd
 a\f?foreground@QTreeWidgetItem@@QEBA?AVQBrush@@H@Z
 a\n?dragDropMode@QAbstractItemView@@QEBA?AW4DragDropMode@1@XZ
 a\tV_powd
@@ -25836,7 +25847,6 @@ group_options_button
 group_title
 grow_or_shrink
 guide_hair_count
-h*\nPo
 hAttachmentCamera
 hResource
 hSShould we try to straighten two faces connected to this edge? (tangent)
@@ -25895,6 +25905,7 @@ hero_effigy
 hero_effigy_persona_1
 hero_model_change
 heroic_statue
+hi)P
 hidden_in_tools
 hideSourceMesh
 hide_if_child_selected
@@ -25923,7 +25934,6 @@ horizontalStretch
 horizontal_header
 horizontal_header_labels
 horizontal_pose_param_name
-hpzPm.
 hsequence_id
 hud_skin
 hullIvr-0.obj
@@ -26048,7 +26058,6 @@ italic
 itemtest_manifest
 iterate_to_element
 iterations
-jPm.
 jY?setFamily@QFont@@QEAAXAEBVQString@@@Z
 jZ?setMimeData@QDrag@@QEAAXPEAVQMimeData@@@Z
 j\v?event@QTextBrowser@@MEAA_NPEAVQEvent@@@Z
@@ -26775,9 +26784,8 @@ overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
 p"?value@QSpinBox@@QEBAHXZ
-p08@H^
-p20\v\v
-p2Pm.
+p08@H^d
+p0j@0.
 pAction
 pActionObject
 pAsset
@@ -26858,7 +26866,6 @@ particles_list
 pathclass
 pathnode
 pathnodeclass
-pb0\v\v
 peak
 peak_attr
 peak_cycle
@@ -27016,8 +27023,6 @@ quad_bend_tolerance
 quadratic
 quaternion_array
 quiet
-r0l,
-r\vpt
 rad2deg
 radiant
 radiant_creeps
@@ -27351,6 +27356,7 @@ source_mesh
 source_node
 spaceWalkCamera
 spacing
+special_identifier
 specific_physics_body_to_replace
 speed_range
 speeds
@@ -27447,7 +27453,6 @@ swing_offset_angle
 swing_relax
 switch_threshold
 system_state
-tB`g*
 tW?rotate@QPainter@@QEAAXN@Z
 t\n?beginEditBlock@QTextCursor@@QEAAXXZ
 t\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@AEBVQMetaMethod@@01W4ConnectionType@Qt@@@Z
@@ -28376,7 +28381,7 @@ yaw_damping
 yaw_friction
 yaw_stiffness
 yield_token
-zPm.
+z>08
 zU?qt_metacall@QDrag@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 z\tV_sscanf_s

@@ -1325,8 +1325,7 @@ var Scoreboard;
         }
         elRndTop.AddClass('sb-team--CT');
         elRndBot.AddClass('sb-team--TERRORIST');
-        let idx = rnd - jsoTime['first_round_this_period'] + 1;
-        const roundData = oScoreData.rounddata[idx];
+        const roundData = oScoreData.rounddata[rnd];
         if (typeof roundData !== 'object')
             return;
         let result = roundData['result'].replace(/^(ct_|t_)/, '');
@@ -1493,6 +1492,7 @@ var Scoreboard;
             return;
         if (!_SupportsTimeline(jsoTime))
             return;
+        let firstRound = jsoTime['first_round_this_period'];
         let lastRound = jsoTime['last_round_this_period'];
         m_topScore = 0;
         m_botScore = 0;
@@ -1500,7 +1500,7 @@ var Scoreboard;
             m_topScore = (jsoTime['maxrounds'] + (jsoTime['overtime'] - 1) * jsoTime['maxrounds_overtime']) / 2;
             m_botScore = (jsoTime['maxrounds'] + (jsoTime['overtime'] - 1) * jsoTime['maxrounds_overtime']) / 2;
         }
-        for (let rnd = 1; rnd <= lastRound; rnd++) {
+        for (let rnd = firstRound; rnd <= lastRound; rnd++) {
             _UpdateRound(rnd, oScoreData, jsoTime);
         }
     }

@@ -41,6 +41,24 @@ var CapabilityCanApplyAction;
                 }
                 InspectShared.SetPopupSetting('temp_display_item_id', tempCreatedItem);
             }
+            if (worktype === 'craft_souvenir') {
+                const craftSouvenirFauxTool = 'craft_souvenir:' + InspectShared.GetPopupSetting('umid_souvenir');
+                const tempCreatedItem = InventoryAPI.CreateTempCombinedItemWithTool(itemId, craftSouvenirFauxTool);
+                if (!tempCreatedItem) {
+                    ClosePopUp();
+                    return;
+                }
+                let nRedeemableBalance = 0;
+                {
+                    const idxLookup = InventoryAPI.GetCacheTypeElementIndexByKey('SeasonalOperations', g_ActiveTournamentInfo.credits_id);
+                    if (g_ActiveTournamentInfo.credits_id == InventoryAPI.GetCacheTypeElementFieldByIndex('SeasonalOperations', idxLookup, 'season_value')) {
+                        nRedeemableBalance = InventoryAPI.GetCacheTypeElementFieldByIndex('SeasonalOperations', idxLookup, 'redeemable_balance');
+                        nRedeemableBalance = (nRedeemableBalance === null || nRedeemableBalance === undefined) ? 0 : nRedeemableBalance;
+                    }
+                }
+                InspectShared.SetPopupSetting('temp_display_item_id', tempCreatedItem);
+                InspectShared.SetPopupSetting('credits_owned_souvenir', nRedeemableBalance);
+            }
         }
         let oSettings = {
             headerPanel: $.GetContextPanel().FindChildInLayoutFile('PopUpCanApplyHeader'),
@@ -71,7 +89,8 @@ var CapabilityCanApplyAction;
         _SetItemModel(toolId, itemId, isRemove);
         _SetUpAsyncActionBar(toolId);
         _UpdateEnableDisableOkBtn(false, oSettings);
-        if (oSettings.isRemove && oSettings.type === 'keychain') {
+        if (oSettings.isRemove && ((oSettings.type === 'keychain')
+            || (oSettings.type === 'sticker' && !!InspectShared.GetPopupSetting('remove_sticker_all_at_once')))) {
             _OnConfirmPressed(oSettings);
         }
         if (worktype === "remove_sticker") {

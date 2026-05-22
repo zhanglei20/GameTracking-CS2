@@ -25,6 +25,11 @@
 	transition-timing-function: ease-in-out;
 }
 
+.PopupPanel.Capability.Hidden.PopupPanelCapability_craft_souvenir,.PopupPanel.Capability.PopupPanelCapability_craft_souvenir
+{
+	transition-duration: 1.2s;
+}
+
 .PopupPanel.Capability.popup-laptop-offers.Hidden
 {
 	opacity: 0.0;
@@ -100,6 +105,12 @@
 	text-align: left;
 }
 
+.popup-capability__topdesc
+{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
 .popup-capability__rental-expiration
 {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -120,6 +131,77 @@
 {
 	font-size: 18px;
 	max-width: 720px;
+}
+
+.inline-coin-icon
+{
+	height: 15px;
+	width: 15px;
+	vertical-align: top;
+	transform: translateY(-3px);
+}
+
+.PopupButtonTimer .inline-coin-icon
+{
+	height: 20px;
+	width: 20px;
+	margin-right: 6px;
+	transform: translateY(-4px);
+	wash-color: positiveColor;
+}
+
+.makesouvenirplayerselecticon
+{
+	transform: translateY(7px);
+}
+
+.DropDownChild .craft_souvenir_dropdown_select_player_entry_cost .inline-coin-icon
+{
+	wash-color: baseText;
+}
+
+#MakeSouvenirPlayerSelect .DropDownChild .craft_souvenir_dropdown_select_player_entry_cost,#MakeSouvenirPlayerSelect .DropDownChild .craft_souvenir_dropdown_select_player_entry_logo
+{
+	visibility: collapse;
+}
+
+#MakeSouvenirPlayerSelect .DropDownChild .craft_souvenir_dropdown_select_player_entry_name
+{
+	padding-left: 16px;
+	margin-left: 12px;
+	color: White;
+}
+
+.craft_souvenir_dropdown_select_player_entry_name
+{
+	padding-left: 103px;
+	margin-left: -100px;
+}
+
+.craft_souvenir_dropdown_selected Label
+{
+	color: #AAEEAA;
+}
+
+.craft_souvenir_dropdown_selected Image,.craft_souvenir_dropdown_selected .craft_souvenir_dropdown_select_player_entry_cost .inline-coin-icon
+{
+	wash-color: #AAEEAA;
+}
+
+.craft_souvenir_dropdown_select_player_entry_cost
+{
+	min-width: 75px;
+	padding-right: 0px;
+	text-align: right;
+}
+
+.craft_souvenir_dropdown_select_player_entry_logo
+{
+	min-width: 20px;
+	vertical-align: center;
+	padding-left: 8px;
+	padding-right: 0px;
+	opacity: 0.1;
 }
 
 .popup-capability__info-block
@@ -162,6 +244,25 @@
 .popup-capability__button-row .IconButton:disabled
 {
 	opacity: .5;
+}
+
+#InspectOpenCheckout
+{
+	flow-children: right;
+}
+
+#InspectOpenCheckout Label
+{
+	font-size: 14px;
+	color: white;
+	background-color: rgb(223, 140, 17);
+	horizontal-align: right;
+	vertical-align: top;
+	border-radius: 4px;
+	text-align: center;
+	padding: 0px 6px;
+	margin-top: 4px;
+	transform: translateX( -12px );
 }
 
 .popup-capability__button-row .IconButton Image
@@ -330,6 +431,90 @@
 #id-rental-xray-section
 {
 	visibility: collapse;
+}
+
+.add-to-cart-controls
+{
+	flow-children: right;
+	margin-left: 16px;
+	border-radius: 3px;
+	vertical-align: center;
+	height: 46px;
+	transition-property: background-color;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn
+{
+	width: 46px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn Label
+{
+	font-size: 28px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	color: white;
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn:hover
+{
+	background-color: rgba(255, 255, 255, 0.90);
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn:hover Label
+{
+	color:black;
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn:active
+{
+	sound: "UIPanorama.submenu_select";
+}
+
+.add-to-cart-controls .add-to-cart-controls__center
+{
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-left: 1px solid rgba(255, 255, 255, 0.05);
+	border-right: 1px solid rgba(255, 255, 255, 0.05);
+	padding: 0px 16px;
+	flow-children: down;
+}
+
+.add-to-cart-controls .add-to-cart-controls__center .add-to-cart-controls__title
+{
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-size: 24px;
+	min-width: 92px;
+}
+
+.add-to-cart-controls .add-to-cart-controls__center .add-to-cart-controls__price
+{
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-size: 14px;
+}
+
+.add-to-cart-controls .add-to-cart-controls__center .add-to-cart-controls__price Image
+{
+	width: 12px;
+	height: 12px;
+}
+
+.add-to-cart-controls .add-to-cart-controls__separator
+{
+	width: 1px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.178);
+	padding: 0px 8px;
 }
 
 .rent-bar-btn

@@ -12,6 +12,7 @@
 	</styles>
 	<scripts>
 		<include src="s2r://panorama/scripts/common/async.vts_c" />
+		<include src="s2r://panorama/scripts/generated/items_event_current_generated_store.vts_c" />
 		<include src="s2r://panorama/scripts/common/tint_spray_icon.vts_c" />
 		<include src="s2r://panorama/scripts/common/hold_button.vts_c" />
 		<include src="s2r://panorama/scripts/inspect.vts_c" />

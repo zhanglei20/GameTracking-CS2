@@ -129,13 +129,13 @@ shaders/vfx/csgo_water_fancy_pc_50_ps.vcs CRC:0030b9ec74 size:3516213
 shaders/vfx/csgo_water_fancy_pc_50_psrs.vcs CRC:00c3b6a01d size:2018
 shaders/vfx/csgo_water_fancy_pc_50_vs.vcs CRC:00c9f51eb5 size:19573
 shaders/vfx/csgo_weapon.ini CRC:0000000000 size:0
-shaders/vfx/csgo_weapon_pc_50_features.vcs CRC:006b2f37ec size:10418
-shaders/vfx/csgo_weapon_pc_50_ps.vcs CRC:00dd7ac9fb size:19412872
+shaders/vfx/csgo_weapon_pc_50_features.vcs CRC:00ac220cac size:10418
+shaders/vfx/csgo_weapon_pc_50_ps.vcs CRC:00284c47bd size:19453995
 shaders/vfx/csgo_weapon_pc_50_psrs.vcs CRC:00d9b018f8 size:2354
 shaders/vfx/csgo_weapon_pc_50_vs.vcs CRC:0080d97916 size:44948
 shaders/vfx/csgo_weapon_sticker.ini CRC:0000000000 size:0
-shaders/vfx/csgo_weapon_sticker_pc_50_features.vcs CRC:009dccf0d8 size:4882
-shaders/vfx/csgo_weapon_sticker_pc_50_ps.vcs CRC:00cc3b8946 size:64142
+shaders/vfx/csgo_weapon_sticker_pc_50_features.vcs CRC:00265059d6 size:4898
+shaders/vfx/csgo_weapon_sticker_pc_50_ps.vcs CRC:0031447bc7 size:68262
 shaders/vfx/csgo_weapon_sticker_pc_50_psrs.vcs CRC:00ab666458 size:1586
 shaders/vfx/csgo_weapon_sticker_pc_50_vs.vcs CRC:0017034bf2 size:12913
 shaders/vfx/deferred_particle_shadows.ini CRC:0000000000 size:0

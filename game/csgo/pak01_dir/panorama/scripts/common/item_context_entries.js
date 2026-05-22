@@ -270,7 +270,7 @@ var ItemContextEntries;
                     };
                     elPanel.Data().oSettings = oSettings;
                 }
-                else if (ItemInfo.ItemDefinitionNameSubstrMatch(id, 'tournament_pass_')) {
+                else if (ItemInfo.ItemDefinitionNameSubstrMatch(id, 'tournament_pass_') && !ItemInfo.ItemDefinitionNameSubstrMatch(id, '_credits')) {
                     const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('', 'file://{resources}/layout/popups/popup_capability_decodable.xml');
                     let oSettings = {
                         item_id: id,

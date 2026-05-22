@@ -98,7 +98,7 @@ var MainMenuStore;
         if (_m_activePanelId !== panelId) {
             if (panelId === _m_pagePrefix + 'home') {
                 UpdateItemsInHomeSection('coupon', 'id-store-popular-items', 6);
-                UpdateItemsInHomeSection('tournament', 'id-store-tournament-items', 4);
+                UpdateItemsInHomeSection('tournament', 'id-store-tournament-items', 1);
             }
             else {
                 MakePageFromStoreData(keyType);
@@ -135,6 +135,23 @@ var MainMenuStore;
         }
         if (sSectionName === 'tournament') {
             elParent.SetDialogVariable('tournament-name', $.Localize("#store_nav_tournament_" + g_ActiveTournamentInfo.eventid));
+            elParent.SetDialogVariable('tournament_name', $.Localize('#CSGO_Tournament_Event_NameShort_' + g_ActiveTournamentInfo.eventid));
+            const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+            let elStickerLink = elParent.FindChildInLayoutFile('id-store-home-section-major-store-btn');
+            if (!elStickerLink) {
+                elStickerLink = $.CreatePanel('Panel', elParent, 'id-store-home-section-major-store-btn');
+                elStickerLink.BLoadLayoutSnippet('TournamentStickers');
+                elStickerLink.SetPanelEvent('onactivate', () => {
+                    UiToolkitAPI.ShowCustomLayoutPopup('id-popup-major-store', 'file://{resources}/layout/popups/popup_major_store.xml');
+                    $.DispatchEvent("CSGOPlaySoundEffect", "UIPanorama.tab_mainmenu_shop", "MOUSE");
+                });
+            }
+            const defidxStickerItem = InventoryAPI.GetItemDefinitionIndexFromDefinitionName('sticker');
+            const numSticker = 5;
+            for (let i = 0; i < numSticker; i++) {
+                const itemId = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(defidxStickerItem, g_ActiveTournamentTeams[getRandomInt(0, g_ActiveTournamentTeams.length - 1)].players[getRandomInt(0, 4)].stickerids[getRandomInt(0, 3)]);
+                elStickerLink.FindChildInLayoutFile('id-sticker-' + i).itemid = itemId;
+            }
         }
         if (aItemsList.length < 1) {
             elParent.visible = false;

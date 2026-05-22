@@ -60,9 +60,14 @@
 	wash-color:groups-text-color-major-24;
 }
 
+.major-26 .group-stage-teams-container .group-stage-teams__howto Image
+{
+	wash-color:rgba(255, 255, 255, 0.5);
+}
+
 .group-stage-teams-container .group-stage-teams__howto Label
 {
-	font-size: 13px;
+	font-size: 12px;
 	text-align: center;
 	color: blueColor;
 	text-overflow: shrink;
@@ -81,10 +86,25 @@
 	font-family: Stratum2 Medium, "Arial Unicode MS";
 }
 
+.major-26 .group-stage-teams-container .group-stage-teams__howto Label
+{
+	color: rgba(255, 255, 255, 0.562);
+	text-shadow: none;
+	font-family: Stratum2 Medium, "Arial Unicode MS";
+}
+
 .group-stage-teams-container .group-stage-teams
 {
 	flow-children: right-wrap;
 	vertical-align: center;
+	max-height: 360px;
+	overflow: clip scroll;
+	width:92px;
+}
+
+.group-stage-teams-container .group-stage-teams VerticalScrollBar
+{
+	width: 3px;
 }
 
 .group-stage-draggable-team
@@ -181,12 +201,21 @@
 
 .major-25 .group-stage-draggable-team.empty-team
 {
-	background-color: rgba(74, 53, 100, 0.397) opacity: 1;
+	background-color: rgba(74, 53, 100, 0.397);
+	opacity: 1;
+}
+
+.major-26 .group-stage-draggable-team.empty-team
+{
+	background-color: rgba(28, 73, 28, 0.397);
+	opacity: 1;
 }
 
 .group-stage-draggable-team .group-stage-draggable-team__logo
 {
 	img-shadow: 0px 0px 8px 1.0 #d6d6d66b;
+	vertical-align: center;
+	horizontal-align: center;
 }
 
 .major-23 .group-stage-draggable-team .group-stage-draggable-team__logo
@@ -203,6 +232,11 @@
 .major-25 .group-stage-draggable-team .group-stage-draggable-team__logo
 {
 	img-shadow: 0px 0px 4px 1.0 rgb(0, 0, 0);
+}
+
+.major-26 .group-stage-draggable-team .group-stage-draggable-team__logo
+{
+	img-shadow: 0px 0px 4px 1.0 rgb(10, 71, 13);
 }
 
 .group-stage-draggable-team .group-stage-draggable-team__check
@@ -387,6 +421,16 @@
 	background-color: arrow-bg-color-red-major-25;
 }
 
+.major-26 .group-stage-matchups-container .group-stage-matchups-arrows .first,.major-26 .group-stage-matchups-container .group-stage-matchups-arrows .third,.major-26 .group-stage-matchups-container .group-stage-matchups-arrows .fifth
+{
+	background-color: arrow-bg-color-green-major-26;
+}
+
+.major-26 .group-stage-matchups-container .group-stage-matchups-arrows .second,.major-26 .group-stage-matchups-container .group-stage-matchups-arrows .fourth,.major-26 .group-stage-matchups-container .group-stage-matchups-arrows .sixth
+{
+	background-color: arrow-bg-color-red-major-26;
+}
+
 .group-stage-matchups-container .group-stage-matchups-section
 {
 	background-color: groups-bg-color;
@@ -395,7 +439,6 @@
 	width: 128px;
 	vertical-align: center;
 	margin: 4px 0px;
-	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px 0px;
 }
 
 .major-23 .group-stage-matchups-container .group-stage-matchups-section
@@ -406,6 +449,11 @@
 .major-25 .group-stage-matchups-container .group-stage-matchups-section
 {
 	background-color: groups-bg-color-major-25;
+}
+
+.major-26 .group-stage-matchups-container .group-stage-matchups-section
+{
+	background-color: groups-bg-color-major-26;
 }
 
 .group-stage-matchups-container .group-stage-matchups-section.eliminated
@@ -445,6 +493,11 @@
 {
 	color:groups-text-color-major-25;
 	opacity: .8;
+}
+
+.major-26 .group-stage-matchups-container .group-stage-matchups-section .group-stage-matchups-section__header
+{
+	background-color: groups-bg-color-major-26;
 }
 
 .group-stage-matchups-container .group-stage-matchup
@@ -614,6 +667,11 @@
 .major-25 .group-stage-matchups-results
 {
 	background-color: groups-bg-color-major-25;
+}
+
+.major-26 .group-stage-matchups-results
+{
+	background-color: rgb(19, 46, 29);
 }
 
 .group-stage-matchups-results.eliminated

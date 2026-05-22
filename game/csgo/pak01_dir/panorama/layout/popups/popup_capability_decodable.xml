@@ -11,6 +11,7 @@
 	</styles>
 	<scripts>
 		<include src="s2r://panorama/scripts/common/tint_spray_icon.vts_c" />
+		<include src="s2r://panorama/scripts/generated/items_event_current_generated_store.vts_c" />
 		<include src="s2r://panorama/scripts/inspect.vts_c" />
 		<include src="s2r://panorama/scripts/common/formattext.vts_c" />
 		<include src="s2r://panorama/scripts/common/iteminfo.vts_c" />

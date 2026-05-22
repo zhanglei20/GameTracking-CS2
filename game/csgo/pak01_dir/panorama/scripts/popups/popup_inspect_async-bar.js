@@ -5,16 +5,18 @@
 /// <reference path="../inspect.ts" />
 /// <reference path="popup_inspect_shared.ts" />
 /// <reference path="popup_can_apply_pick_slot.ts" />
+/// <reference path="../generated/items_event_current_generated_store.ts" />
+/// <reference path="../common/shopping_cart.ts" />
 var InspectAsyncActionBar;
 (function (InspectAsyncActionBar) {
     let m_scheduleHandle = null;
-    let _m_PanelRegisteredForEvents = undefined;
     function Init() {
         const worktype = InspectShared.GetPopupSetting('work_type');
         const toolId = InspectShared.GetPopupSetting('tool_id');
         const showXrayMachineUi = InspectShared.GetPopupSetting('is_xray_machine');
         const allowRental = InspectShared.GetPopupSetting('allow_rent');
         const elAsyncActionBarPanel = $.GetContextPanel().FindChildInLayoutFile('PopUpInspectAsyncBar');
+        $.GetContextPanel().AddClass('PopupPanelCapability_' + worktype);
         if (InspectShared.GetPopupSetting('force_hide_async_bar') ||
             !worktype ||
             (allowRental && !showXrayMachineUi) ||
@@ -37,15 +39,32 @@ var InspectAsyncActionBar;
         if (worktype === 'prestigecheck') {
             _OnAccept($.GetContextPanel().Data().oSettings, elAsyncActionBarPanel);
         }
-        if (!_m_PanelRegisteredForEvents) {
-            _m_PanelRegisteredForEvents = $.RegisterForUnhandledEvent('PanoramaComponent_Inventory_ItemCustomizationNotification', _OnItemCustomization);
+        const cp = $.GetContextPanel();
+        if (!elAsyncActionBarPanel.Data().PanelRegisteredForEvents) {
+            elAsyncActionBarPanel.Data().PanelRegisteredForEvents = $.RegisterForUnhandledEvent('PanoramaComponent_Inventory_ItemCustomizationNotification', (...args) => {
+                return _OnItemCustomization(...args, cp);
+            });
             if (worktype !== 'decodeable' && worktype !== 'nameable' && worktype !== 'remove_sticker') {
                 $.RegisterForUnhandledEvent('PanoramaComponent_MyPersona_InventoryUpdated', _OnMyPersonaInventoryUpdated);
                 $.RegisterForUnhandledEvent('PanoramaComponent_Inventory_PrestigeCoinResponse', _OnInventoryPrestigeCoinResponse);
             }
+            if (worktype === 'craft_souvenir') {
+                $.RegisterForUnhandledEvent('PanoramaComponent_Store_VolatileShopSubscribe', (...args) => { _OnVolatileShopSubscribe(...args, cp); });
+                _EnsureVolatileShopSubscribed(cp);
+            }
         }
     }
     InspectAsyncActionBar.Init = Init;
+    function _EnsureVolatileShopSubscribed(cp) {
+        if (!cp || !cp.IsValid())
+            return;
+        if (cp.Data().refreshSubscriptionHandle) {
+            $.CancelScheduled(cp.Data().refreshSubscriptionHandle);
+            cp.Data().refreshSubscriptionHandle = null;
+        }
+        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers);
+        cp.Data().refreshSubscriptionHandle = $.Schedule(150, () => _EnsureVolatileShopSubscribed(cp));
+    }
     function _DoesNotMeetDecodalbeRequirements() {
         if (InspectShared.GetPopupSetting('work_type') === 'decodeable') {
             const sRestriction = InventoryAPI.GetDecodeableRestriction(InspectShared.GetPopupSetting('item_id'));
@@ -91,6 +110,19 @@ var InspectAsyncActionBar;
             InventoryAPI.RemoveKeychain(itemId, 0);
         }
         else if (worktype === 'remove_sticker') {
+            if (oSettings.remove_sticker_all_at_once) {
+                $.DispatchEvent('CSGOPlaySoundEffect', 'UI.StickerScratch', 'MOUSE');
+                _ClosePopup();
+                const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('popup-inspect-' + itemId, 'file://{resources}/layout/popups/popup_capability_can_keychain.xml');
+                let oSouvenirSettings = {
+                    item_id: itemId,
+                    tool_id: '',
+                    umid_souvenir: oSettings.umid_souvenir,
+                    work_type: 'craft_souvenir'
+                };
+                elPanel.Data().oSettings = oSouvenirSettings;
+                return;
+            }
             CapabilityCanSticker.OnScratchSticker(itemId, selectedSlot, bForceRemoveSticker, oSettings.popup_panel);
         }
         else if (worktype === 'can_wrap_sticker' && !oSettings.tool_id) {
@@ -101,6 +133,24 @@ var InspectAsyncActionBar;
             $.DispatchEvent('CSGOPlaySoundEffect', 'sticker_applyConfirm', 'MOUSE');
             InventoryAPI.SetStickerToolSlot(itemId, selectedSlot);
             InventoryAPI.UseTool(toolId, itemId);
+        }
+        else if (worktype === 'craft_souvenir') {
+            const fauxCartItemID = oSettings.temp_display_item_id;
+            const nPurchaseCost = _ComputeTotalSouvenirCost(oSettings.popup_panel, fauxCartItemID);
+            const strPurchaseCommand = 'craft_souvenir:' + itemId + ':' + oSettings.umid_souvenir;
+            m_SouvenirCheckoutCart = ShoppingCart.findOrCreateTempCart(itemId, true);
+            const shopItem = {
+                id: fauxCartItemID,
+                name: ItemInfo.GetFormattedName(fauxCartItemID),
+                price: nPurchaseCost,
+                checkout_id: strPurchaseCommand
+            };
+            m_SouvenirCheckoutCart.clearCart();
+            m_SouvenirCheckoutCart.addItem(shopItem);
+            $.DispatchEvent('CSGOPlaySoundEffect', 'sticker_applyConfirm', 'MOUSE');
+            const popupPanel = UiToolkitAPI.ShowCustomLayoutPopupParameters('id-popup-shopping-cart-checkout', 'file://{resources}/layout/popups/popup_shopping_cart_checkout.xml', 'cartid=' + itemId +
+                '&checkoutsuffix=_souvenir');
+            popupPanel.Data().eventId = g_ActiveTournamentInfo.eventid;
         }
         else if (worktype === 'decodeable') {
             if (ItemInfo.IsSpraySealed(itemId) || ItemInfo.ItemDefinitionNameSubstrMatch(itemId, 'tournament_pass_')) {
@@ -150,7 +200,7 @@ var InspectAsyncActionBar;
             btnHoldAction.RemoveClass('AsyncItemWorkAcceptNegativeHidden');
             const btnSettings = {
                 btn: btnHoldAction,
-                tooltip: !toolId ? '#popup_can_wrap_sticker_button_negative_tooltip' : '#popup_can_wrap_sticker_button_tooltip',
+                tooltip: !toolId ? '#popup_' + worktype + '_button_negative_tooltip' : '#popup_' + worktype + '_button_tooltip',
                 locString: locString,
                 loopingSound: 'UI.Laptop.ButtonFillLoop',
                 timerCompleteAction: () => {
@@ -159,6 +209,103 @@ var InspectAsyncActionBar;
                 }
             };
             HoldButton.SetupButton(btnSettings);
+            return;
+        }
+        if (worktype === 'craft_souvenir') {
+            elOK.visible = false;
+            elNegative.visible = false;
+            const btnId = 'AsyncItemWorkAcceptConfirmHold';
+            const btnHoldAction = elPanel.FindChildInLayoutFile(btnId);
+            let locString = '#popup_' + worktype + '_button';
+            const nTotalCostInCredits = _ComputeTotalSouvenirCost(oSettings.popup_panel);
+            const umidSouvenir = InspectShared.GetPopupSetting('umid_souvenir');
+            if (nTotalCostInCredits) {
+                btnHoldAction.SetDialogVariableInt('cost_souvenir', nTotalCostInCredits);
+                m_panelsToSetCost = [btnHoldAction];
+                locString += '_spend';
+                locString = $.Localize(locString, btnHoldAction);
+            }
+            btnHoldAction.RemoveClass('AsyncItemWorkAcceptNegativeHidden');
+            const btnSettings = {
+                btn: btnHoldAction,
+                tooltip: '#popup_' + worktype + '_button_tooltip',
+                locString: locString,
+                loopingSound: 'UI.Laptop.ButtonFillLoop',
+                timerCompleteAction: () => {
+                    _OnAccept(oSettings, elPanel);
+                }
+            };
+            HoldButton.SetupButton(btnSettings);
+            btnHoldAction.enabled = true;
+            const elButtonChangeSouvenirItem = elPanel.FindChildInLayoutFile('ChangeSouvenirItem');
+            elButtonChangeSouvenirItem.RemoveClass('hidden');
+            elButtonChangeSouvenirItem.SetPanelEvent('onactivate', () => {
+                $.DispatchEvent('CSGOPlaySoundEffect', 'sticker_applySticker', 'MOUSE');
+                _ClosePopup();
+                $.DispatchEvent('ShowSelectItemForCapabilityPopup', umidSouvenir, '', 'craft_souvenir');
+            });
+            elPanel.FindChildInLayoutFile('MakeSouvenirPlayerSelectIcon').RemoveClass('hidden');
+            const elMakeSouvenirPlayerSelect = elPanel.FindChildInLayoutFile('MakeSouvenirPlayerSelect');
+            elMakeSouvenirPlayerSelect.RemoveClass('hidden');
+            const goldenItemId = InspectShared.GetPopupSetting('temp_display_item_id');
+            const unTeamIDs = [InventoryAPI.GetItemAttributeValue(goldenItemId, '{uint32}tournament event team0 id'),
+                InventoryAPI.GetItemAttributeValue(goldenItemId, '{uint32}tournament event team1 id')];
+            const unPlayerID = InventoryAPI.GetItemAttributeValue(goldenItemId, '{uint32}tournament mvp account id');
+            let arrSelections = [];
+            const defidxStickerItem = InventoryAPI.GetItemDefinitionIndexFromDefinitionName('sticker');
+            g_ActiveTournamentTeams.filter((tt) => unTeamIDs.includes(tt.teamid)).forEach((tt) => {
+                tt.players.forEach((tp) => {
+                    let sPlayerName = $.Localize('#SFUI_ProPlayer_' + tp.code, elPanel).split(" ");
+                    sPlayerName.splice(1, 0, ...["'" + tp.nick + "'"]);
+                    const idFauxSticker = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(defidxStickerItem, tp.stickerids[tp.stickerids.length - 1]);
+                    let unCostInCredits = MissionsAPI.GetSeasonalOperationFauxCreditsCost(g_ActiveTournamentInfo.credits_id, idFauxSticker);
+                    arrSelections.push({
+                        unPlayerID: tp.playerid,
+                        sPlayerName: sPlayerName.join(" "),
+                        sTeamTag: tt.team,
+                        unCostInCredits: unCostInCredits,
+                        unStickerID: tp.stickerids[tp.stickerids.length - 1]
+                    });
+                });
+            });
+            arrSelections.sort((a, b) => (a.unCostInCredits - b.unCostInCredits) * 100000 + (a.unStickerID - b.unStickerID));
+            arrSelections.forEach((sel) => {
+                let elOption = $.CreatePanel('Panel', elMakeSouvenirPlayerSelect, 'id-MakeSouvenirPlayerSelect-p' + sel.unPlayerID);
+                elOption.BLoadLayoutSnippet('craft-souvenir-dropdown-select-player-entry');
+                let elNamePanel = elOption.FindChildInLayoutFile('id-craft-souvenir-dropdown-select-player-entry-name');
+                elNamePanel.text = sel.sPlayerName;
+                elOption.FindChildInLayoutFile('id-craft-souvenir-dropdown-select-player-entry-cost')
+                    .SetDialogVariableInt('cost', sel.unCostInCredits);
+                elOption.FindChildInLayoutFile('id-team-player-logo')
+                    .SetImage("file://{images}/tournaments/teams/" + sel.sTeamTag + ".svg");
+                elOption.SetAttributeUInt32('playerid', sel.unPlayerID);
+                if (sel.unPlayerID != unPlayerID) {
+                    elNamePanel.SetPanelEvent('onactivate', () => {
+                        $.DispatchEvent("Activated", elNamePanel.GetParent(), "mouse");
+                    });
+                }
+                else {
+                    elOption.AddClass('craft_souvenir_dropdown_selected');
+                }
+                elMakeSouvenirPlayerSelect.AddOption(elOption);
+            });
+            elMakeSouvenirPlayerSelect.SetPanelEvent('oninputsubmit', () => {
+                const elSelected = elMakeSouvenirPlayerSelect.GetSelected();
+                const nNewPlayerID = elSelected.GetAttributeUInt32('playerid', 0);
+                if (nNewPlayerID && unPlayerID != nNewPlayerID) {
+                    let oNewSettings = {
+                        item_id: itemId,
+                        tool_id: '',
+                        umid_souvenir: 'pid_' + nNewPlayerID + ':' + (umidSouvenir.split(':').pop()),
+                        work_type: 'craft_souvenir'
+                    };
+                    _ClosePopup();
+                    const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('popup-inspect-' + itemId, 'file://{resources}/layout/popups/popup_capability_can_keychain.xml');
+                    elPanel.AddClass('PopupPanelCapability_' + oNewSettings.work_type);
+                    elPanel.Data().oSettings = oNewSettings;
+                }
+            });
+            elMakeSouvenirPlayerSelect.SetSelected('id-MakeSouvenirPlayerSelect-p' + unPlayerID);
             return;
         }
         if (worktype === 'remove_keychain') {
@@ -198,13 +345,16 @@ var InspectAsyncActionBar;
             return;
         }
         if (worktype === 'remove_sticker') {
+            const bRemovingAllStickersForSouvenir = !!InspectShared.GetPopupSetting('remove_sticker_all_at_once');
+            if (bRemovingAllStickersForSouvenir)
+                elOK.visible = false;
             elNegative.visible = false;
             const btnHoldAction = elPanel.FindChildInLayoutFile('AsyncItemWorkAcceptNegativeHold');
             btnHoldAction.RemoveClass('AsyncItemWorkAcceptNegativeHidden');
             const btnSettings = {
                 btn: btnHoldAction,
-                tooltip: '#SFUI_Sticker_RemoveImmediate_Tooltip',
-                locString: '#popup_' + worktype + '_button_negative',
+                tooltip: bRemovingAllStickersForSouvenir ? '#SFUI_Sticker_WipeStickersImmediate_Tooltip' : '#SFUI_Sticker_RemoveImmediate_Tooltip',
+                locString: '#popup_' + worktype + '_button_negative' + (bRemovingAllStickersForSouvenir ? '_wipestickers' : ''),
                 loopingSound: 'UI.Laptop.ButtonFillLoop',
                 timerCompleteAction: () => {
                     _OnAccept(oSettings, elPanel, true);
@@ -297,6 +447,9 @@ var InspectAsyncActionBar;
             if (itemDefName && itemDefName.startsWith('XpShopTicket')) {
                 const bHasPrime = FriendsListAPI.GetFriendPrimeEligible(MyPersonaAPI.GetXuid());
                 sOkButtonText = bHasPrime ? '#xpshop_pass_activate_open_armory' : '#SFUI_Elevated_Status_upgrade_status';
+            }
+            if (itemDefName?.includes('tournament_pass_') && itemDefName?.includes('_credits')) {
+                $.GetContextPanel().Data().majorCreditsToClaim = Number(InventoryAPI.GetItemAttributeValue(itemId, '{uint32}upgrade level'));
             }
         }
         elOK.text = sOkButtonText;
@@ -418,6 +571,8 @@ var InspectAsyncActionBar;
             }
         }
         _PerformAsyncAction(oSettings, bForceRemoveSticker);
+        if (worktype === 'craft_souvenir')
+            return;
         let elNegative = elAsyncActionBarPanel.FindChildInLayoutFile('AsyncItemWorkAcceptNegative');
         if (elNegative)
             elNegative.AddClass('hidden');
@@ -456,7 +611,7 @@ var InspectAsyncActionBar;
             elAsyncActionBarPanel.FindChildInLayoutFile('InspectWeaponBtn').GetParent().SetHasClass('hidden', true);
         }
         elAsyncActionBarPanel.FindChildInLayoutFile('ChangeScenery').SetHasClass('hidden', worktype === 'decodeable' || worktype === 'remove_patch'
-            || worktype === 'can_wrap_sticker'
+            || worktype === 'can_wrap_sticker' || worktype === 'craft_souvenir'
             || worktype === 'remove_sticker' || worktype === 'remove_keychain');
     }
     function _ChangeSceneryBtn(elAsyncActionBarPanel) {
@@ -555,10 +710,14 @@ var InspectAsyncActionBar;
         }
     }
     InspectAsyncActionBar.ResetTimeouthandle = ResetTimeouthandle;
-    function _OnItemCustomization(numericType, type, itemid) {
+    function _OnItemCustomization(numericType, type, itemid, cp = $.GetContextPanel()) {
         const worktype = InspectShared.GetPopupSetting('work_type');
         if (_IgnoreClose()) {
             ResetTimeouthandle();
+            return;
+        }
+        if (worktype === 'craft_souvenir' && type === 'reward_redeemed') {
+            _ClosePopup();
             return;
         }
         OnEventToClose();
@@ -570,12 +729,70 @@ var InspectAsyncActionBar;
             $.DispatchEvent("ShowCustomLayoutPopupParametersAsEvent", '', 'file://{resources}/layout/popups/popup_inventory_inspect.xml', 'item_id=' + fauxItemID +
                 ',' + 'inspect_only=true');
         }
+        else if (type === 'seasontiers') {
+            const popupPanel = UiToolkitAPI.ShowCustomLayoutPopup('id-popup-major-store', 'file://{resources}/layout/popups/popup_major_store.xml');
+            popupPanel.Data().activatedCredits = cp.Data().majorCreditsToClaim;
+        }
         else {
             $.DispatchEvent('ShowAcknowledgePopup', type, itemid);
         }
     }
     function _IgnoreClose() {
         return InspectShared.GetPopupSetting('work_type') === 'decodeable';
+    }
+    let m_panelsToSetCost = [];
+    function _ComputeTotalSouvenirCost(cp, itemIdSouvenir) {
+        const tempCreatedItem = itemIdSouvenir ?? InspectShared.GetPopupSetting('temp_display_item_id');
+        let nTotalCostInCredits = 0;
+        {
+            const defidxStickerItem = InventoryAPI.GetItemDefinitionIndexFromDefinitionName('sticker');
+            for (let i = 0; i < 6; ++i) {
+                const idStickerKit = InventoryAPI.GetItemAttributeValue(tempCreatedItem, '{uint32}sticker slot ' + i + ' id');
+                if (!idStickerKit)
+                    continue;
+                const idFauxSticker = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(defidxStickerItem, idStickerKit);
+                const unCostInCredits = MissionsAPI.GetSeasonalOperationFauxCreditsCost(g_ActiveTournamentInfo.credits_id, idFauxSticker);
+                if (unCostInCredits)
+                    nTotalCostInCredits += unCostInCredits;
+                else
+                    nTotalCostInCredits += g_ActiveTournamentInfo.souvenir_cost;
+            }
+        }
+        const discountAmount = InventoryAPI.GetItemSouvenirDiscountPercent(tempCreatedItem);
+        const discountCredits = Math.trunc(nTotalCostInCredits * discountAmount / 100);
+        if (discountCredits < nTotalCostInCredits)
+            nTotalCostInCredits -= discountCredits;
+        return nTotalCostInCredits;
+    }
+    let m_SouvenirCheckoutCart = ShoppingCart.cart;
+    function _OnVolatileShopSubscribe(nContainerDef, bNewPricesParsed, cp) {
+        const nTotalCostInCredits = _ComputeTotalSouvenirCost(cp);
+        if (m_SouvenirCheckoutCart !== ShoppingCart.cart) {
+            m_SouvenirCheckoutCart.syncPrices((itemId) => {
+                return nTotalCostInCredits;
+            });
+        }
+        m_panelsToSetCost.forEach((p) => {
+            if (p && p.IsValid()) {
+                p.SetDialogVariableInt('cost_souvenir', nTotalCostInCredits);
+                p.SetDialogVariable('action-label', $.Localize('#popup_craft_souvenir_button_spend', p));
+            }
+        });
+        let oApplySettings = {
+            headerPanel: $.GetContextPanel().FindChildInLayoutFile('PopUpCanApplyHeader'),
+            infoPanel: $.GetContextPanel().FindChildInLayoutFile('PopUpCanApplyPickSlot'),
+            asyncBarPanel: $.GetContextPanel().FindChildInLayoutFile('PopUpInspectAsyncBar'),
+            contextPanel: $.GetContextPanel(),
+            itemId: InspectShared.GetPopupSetting('temp_display_item_id') ? InspectShared.GetPopupSetting('temp_display_item_id') : InspectShared.GetPopupSetting('item_id'),
+            toolId: InspectShared.GetPopupSetting('tool_id'),
+            isRemove: false,
+            type: '',
+            funcOnConfirm: () => { },
+            funcOnNext: () => { },
+            funcOnCancel: () => { },
+            funcOnSelectForRemove: () => { }
+        };
+        CanApplyPickSlot.Init(oApplySettings);
     }
     function _OnMyPersonaInventoryUpdated() {
         if (InspectShared.GetPopupSetting('is_season_pass') && InventoryAPI.IsValidItemID(InspectShared.GetPopupSetting('item_id'))) {
@@ -587,6 +804,7 @@ var InspectAsyncActionBar;
             worktype === "remove_keychain" ||
             worktype === "can_sticker" ||
             worktype === "can_wrap_sticker" ||
+            worktype === "craft_souvenir" ||
             worktype === "can_patch" ||
             worktype === "can_keychain" ||
             worktype === "useitem" ||

@@ -478,25 +478,13 @@
 			source_line = 148
 			resources = 
 			[
-				resource_name:"lighting/postprocessing/correction/cc_death.vpost",
-				resource_name:"lighting/postprocessing/correction/cc_deathcamreplay.vpost",
 				resource_name:"lighting/postprocessing/correction/cc_freeze_ct.vpost",
 				resource_name:"lighting/postprocessing/correction/cc_freeze_t.vpost",
-				resource_name:"lighting/postprocessing/correction/ghost.vpost",
-				resource_name:"lighting/postprocessing/effects/low_health.vpost",
-				resource_name:"lighting/postprocessing/effects/very_low_health.vpost",
 				resource_name:"lighting/postprocessing/effects/in_buy_menu.vpost",
-				resource_name:"lighting/postprocessing/effects/death_cam.vpost",
-				resource_name:"lighting/postprocessing/effects/spectating.vpost",
-				resource_name:"lighting/postprocessing/effects/in_fire.vpost",
-				resource_name:"lighting/postprocessing/effects/under_water.vpost",
 				resource_name:"lighting/postprocessing/effects/round_end_via_bombing.vpost",
-				resource_name:"lighting/postprocessing/effects/spec_camera_lerping.vpost",
 				resource_name:"lighting/postprocessing/effects/death_cam_phase1.vpost",
 				resource_name:"lighting/postprocessing/effects/death_cam_phase1_low_violence.vpost",
 				resource_name:"lighting/postprocessing/effects/death_cam_phase2.vpost",
-				resource_name:"lighting/postprocessing/effects/ghost.vpost",
-				resource_name:"lighting/postprocessing/effects/dangerzone.vpost",
 				resource_name:"lighting/postprocessing/effects/hltv_replay_fade.vpost",
 				resource_name:"lighting/postprocessing/effects/hltv_replay.vpost",
 			]
