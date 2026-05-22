@@ -135,6 +135,7 @@ var MainMenuStore;
         }
         if (sSectionName === 'tournament') {
             elParent.SetDialogVariable('tournament-name', $.Localize("#store_nav_tournament_" + g_ActiveTournamentInfo.eventid));
+            elParent.SetDialogVariable('tournament_name', $.Localize('#CSGO_Tournament_Event_NameShort_' + g_ActiveTournamentInfo.eventid));
             const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
             let elStickerLink = elParent.FindChildInLayoutFile('id-store-home-section-major-store-btn');
             if (!elStickerLink) {

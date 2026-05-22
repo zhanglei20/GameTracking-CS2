@@ -362,10 +362,7 @@ var PopupMajorStore;
             UiToolkitAPI.HideTextTooltip();
         });
         cp.FindChildInLayoutFile('id-major-store-receipt').SetPanelEvent('onactivate', () => {
-            SteamOverlayAPI.OpenUrlInOverlayOrExternalBrowser("https://" + SteamOverlayAPI.GetSteamCommunityURL() + "/my/gcpd/710/?tab=creditsaudit");
-        });
-        cp.FindChildInLayoutFile('id-major-store-receipt').SetPanelEvent('onactivate', () => {
-            SteamOverlayAPI.OpenUrlInOverlayOrExternalBrowser("https://" + SteamOverlayAPI.GetSteamCommunityURL() + "/my/gcpd/710/?tab=creditsaudit");
+            SteamOverlayAPI.OpenUrlInOverlayOrExternalBrowser("https://" + SteamOverlayAPI.GetSteamCommunityURL() + "/my/gcpd/" + SteamOverlayAPI.GetAppID() + "/?tab=creditsaudit");
         });
         function _Callback() {
             _UpdateBalance(cp);
