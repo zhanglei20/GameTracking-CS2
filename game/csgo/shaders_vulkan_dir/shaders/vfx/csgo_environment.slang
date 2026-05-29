@@ -317,7 +317,7 @@ VS
 	BoolAttribute(VertexPaintUIPickColor, true);
 	BoolAttribute(GroupDefaultCollapseState_TextureTransform, true);
 	BoolAttribute(GroupDefaultCollapseState_DetailTextureTransform, true);
-	BoolAttribute(HasTexcoordTransform, (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || 0);
+	BoolAttribute(HasTexcoordTransform, ((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || 0);
 	BoolAttribute(VertexPaintUIAlphaBlendFactor, true);
 	BoolAttribute(VertexPaintUIPuddles, (F_WETNESS==1) || 0);
 	BoolAttribute(SupportsAggregateInstancing, true);
@@ -1808,7 +1808,7 @@ PS
 	StringAttribute(MaterialLayerRefType, csgo_environment);
 	BoolAttribute(GroupDefaultCollapseState_TextureTransform, true);
 	BoolAttribute(GroupDefaultCollapseState_DetailTextureTransform, true);
-	BoolAttribute(HasTexcoordTransform, (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || 0);
+	BoolAttribute(HasTexcoordTransform, ((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || 0);
 	BoolAttribute(environmentmapped, true);
 	BoolAttribute(environmentmappeddynamic, true);
 	BoolAttribute(NeedsLightProbe, true);
@@ -3905,7 +3905,7 @@ RTX
 	BoolAttribute(VertexPaintUIPickColor, true);
 	BoolAttribute(GroupDefaultCollapseState_TextureTransform, true);
 	BoolAttribute(GroupDefaultCollapseState_DetailTextureTransform, true);
-	BoolAttribute(HasTexcoordTransform, (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || 0);
+	BoolAttribute(HasTexcoordTransform, ((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || 0);
 	BoolAttribute(VertexPaintUIAlphaBlendFactor, true);
 	BoolAttribute(VertexPaintUIPuddles, (F_WETNESS==1) || 0);
 	BoolAttribute(SupportsAggregateInstancing, true);

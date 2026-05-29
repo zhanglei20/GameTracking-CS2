@@ -38,10 +38,7 @@
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  (Crouch)
  (Pitch)
  (Roll)
@@ -12094,7 +12091,6 @@ $prefix_element$
 0.000
 0000``
 08@HR
-08@J
 0\r%0h
 0\r%0t
 0\tV_frexpf
@@ -14828,7 +14824,6 @@ $prefix_element$
 @%s_lookFrame_2
 @08Nd
 @AuthPhysCollisionAttributesModeEnum_t
-@HPX`hv
 @Integer overflow in %s
 @Invalid
 @\tV_isinfd
@@ -21351,7 +21346,6 @@ Overwrite With Current
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P08@J
 P08J@o/
 P08Nd
 P?isValid@QColor@@QEBA_NXZ

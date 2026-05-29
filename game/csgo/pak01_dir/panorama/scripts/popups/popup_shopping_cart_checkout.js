@@ -291,7 +291,8 @@ var PopUpShoppingCartCheckout;
                     getCart(cp).addItem(item);
                     const itemQuantity = getCart(cp).getItemQuantity(item.id);
                     elTile.SetDialogVariableInt('count', itemQuantity);
-                    elTile.SetDialogVariableInt('price', getCart(cp).getItemLinePrice(item.id));
+                    const lineItemPrice = getCart(cp).getItemLinePrice(item.id);
+                    elTile.SetDialogVariableInt('price', lineItemPrice);
                     if (ShoppingCart.cart.getItemQuantity(item.id) >= 10 || ShoppingCart.cart.getTotalItems() >= 100) {
                         $.DispatchEvent('CSGOPlaySoundEffect', 'UIPanorama.buymenu_failure', 'MOUSE');
                         return;
@@ -301,7 +302,8 @@ var PopUpShoppingCartCheckout;
                 elTile.FindChildInLayoutFile('id-cart-item-remove-from-cart-btn').SetPanelEvent('onactivate', () => {
                     getCart(cp).decrementItem(item.id);
                     const itemQuantity = getCart(cp).getItemQuantity(item.id);
-                    elTile.SetDialogVariableInt('price', getCart(cp).getItemLinePrice(item.id));
+                    const lineItemPrice = getCart(cp).getItemLinePrice(item.id);
+                    elTile.SetDialogVariableInt('price', lineItemPrice);
                     elTile.SetDialogVariableInt('count', itemQuantity);
                     $.DispatchEvent('CSGOPlaySoundEffect', 'UIPanorama.generic_button_press', 'MOUSE');
                 });
@@ -333,7 +335,9 @@ var PopUpShoppingCartCheckout;
                     }
                     else
                         elChange.SetHasClass('show-change', false);
-                    elTile.SetDialogVariableInt('price', getCart(cp).getItemLinePrice(item.id));
+                    const lineItemPrice = getCart(cp).getItemLinePrice(item.id);
+                    const itemQuantity = getCart(cp).getItemQuantity(item.id);
+                    elTile.SetDialogVariableInt('price', lineItemPrice);
                     lastSeenPrice = item.price;
                     isInitialSetup = false;
                 });
@@ -345,6 +349,8 @@ var PopUpShoppingCartCheckout;
                     }
                 });
             }
+            const lineItemPrice = getCart(cp).getItemLinePrice(item.id);
+            const itemQuantity = getCart(cp).getItemQuantity(item.id);
             elTile.SetDialogVariableInt('count', getCart(cp).getItemQuantity(item.id));
             elTile.SetDialogVariableInt('price', getCart(cp).getItemLinePrice(item.id));
         });

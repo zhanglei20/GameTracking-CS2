@@ -25,7 +25,7 @@ var PopupMajorHub;
     let m_oPageData = {};
     m_oPageData.hasAlreadyInit = [];
     function ClosePopup() {
-        if (_m_elPickemPages && _m_elPickemPages.IsValid()) {
+        if (_m_elPickemPages.IsValid() && _m_elPickemPages) {
             m_oPageData.hasAlreadyInit.forEach(id => {
                 let elPage = _m_elPickemPages.FindChild(id);
                 if (elPage && elPage.IsValid()) {

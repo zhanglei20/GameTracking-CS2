@@ -18703,14 +18703,12 @@ $worldspacetype
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
-@08N
 @0pp
 @60~P
 @6@ZP
 @6pXP
 @6pZP
 @BH]f
-@HPX`hv
 @Integer overflow in %s
 @MfKZ
 @Pgl
@@ -29302,8 +29300,6 @@ P-256
 P-384
 P-521
 P08@J@
-P08J
-P08N
 P1\t98"
 P4CopyFile
 P4CopyFile: Couldn't copy "%s" to "%s"\n
@@ -42024,7 +42020,6 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
 p2{l
 p4 fstat -Op %s
 p4Z3

@@ -369,6 +369,7 @@ $tIH
 18446744073709551615
 1\n,k_EGCMsgGetGamePersonalDataCategoriesRequest
 2\n-k_EGCMsgGetGamePersonalDataCategoriesResponse
+2\vpt
 2\vp|U
 32:B\n
 3\n/k_ECommunityItemAttribute_ProfileModiferEnabled
@@ -390,8 +391,6 @@ $tIH
 :upload
 <\n\ncategories
 >\n\tTypeCache
-@08N
-@HPX`hv
 @\n\fSingleObject
 @workshop
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
@@ -762,8 +761,6 @@ OnlineSearch::StartSearchPass:\n
 Options/searchteamkey
 Options/server
 P08@J0
-P08J
-P08N
 P\n\nattributes
 PartnerItemPaymentRule
 Player#     Player Name\n
@@ -1290,7 +1287,6 @@ options/sessionHostData
 options/sessionid
 options/sv_load_test
 outofdate_subscribed_caches
-p08@H^
 partner_accountbalance
 partner_accountflags
 partner_accountid

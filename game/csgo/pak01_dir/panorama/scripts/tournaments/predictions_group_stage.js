@@ -406,6 +406,9 @@ var PredictionsGroup;
                 _m_elPlacements[strID] = { slots: arrSlots, results: 0 };
             }
         }
+        let numBestOf1Rounds = ((g_ActiveTournamentInfo.eventid >= 26)
+            && (oPageData.sectionIndex >= g_ActiveTournamentInfo.num_stages_with_swiss - 1))
+            ? 0 : 2;
         let teamStates = {};
         function GetTeamState(teamid) {
             if (!teamStates.hasOwnProperty(teamid)) {
@@ -419,7 +422,7 @@ var PredictionsGroup;
             return teamStates[teamid];
         }
         function AddWin(state) {
-            if (state.wins >= 2 || state.loss >= 2) {
+            if (state.wins >= numBestOf1Rounds || state.loss >= numBestOf1Rounds) {
                 ++state.bo3w;
                 if (state.bo3w >= 2) {
                     state.bo3w = state.bo3l = 0;
@@ -431,7 +434,7 @@ var PredictionsGroup;
             }
         }
         function AddLoss(state) {
-            if (state.wins >= 2 || state.loss >= 2) {
+            if (state.wins >= numBestOf1Rounds || state.loss >= numBestOf1Rounds) {
                 ++state.bo3l;
                 if (state.bo3l >= 2) {
                     state.bo3l = state.bo3w = 0;

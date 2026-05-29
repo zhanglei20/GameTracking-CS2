@@ -1,9 +1,6 @@
  (%d remaining)...
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  (Boosted +1)
  (repeat)
  - IsCheckedOut: %s\n
@@ -305,25 +302,21 @@ $\n\tword_list
 '\n\fglobal_stats
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
-(15X
-(57X
-(5YX
-(9DX
-(9LX
-(9sX
-(A4X
-(AQX
-(AtX
-(AzX
+(1VX
+(90X
+(A5X
+(AKX
+(ATX
+(AgX
 (Documents Filter - Use | for OR, space for AND)
 (Filter)
-(IdX
-(MeX
-(MvX
+(INX
+(MZX
 (No Active Session)
 (Outliner Filter)
-(QVX
-(Y0X
+(QFX
+(QsY
+(URX
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"6\n#CSOAccountKeychainRemoveToolCharges
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
@@ -448,16 +441,17 @@ $\n\tword_list
 (\v2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 (\v2\f.CSOEconItem
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(a5X
-(aKX
-(aTX
-(agX
+(aWX
 (default)
-(iNX
-(mZX
-(qFX
-(qsY
-(uRX
+(e3X
+(i1X
+(mDX
+(mbX
+(msX
+(qeX
+(uXX
+(y9X
+(yvX
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n!penalty_account_id_sessions_green
@@ -2633,7 +2627,6 @@ $\n\tword_list
 /stickers
 /weapons/customization/paints_gloves/
 08@HR
-08@J
 0\n+k_EGCItemCustomizationNotification_NameItem
 0\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings
 0\n+k_EMsgGCCStrike15_v2_Account_RequestCoPlays
@@ -2877,6 +2870,7 @@ $\n\tword_list
 7\n2k_EGCItemCustomizationNotification_XpShopUseTicket
 7\n2k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
+8MaX
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
 8\n3k_EGCItemCustomizationNotification_GenerateSouvenir
@@ -2885,7 +2879,7 @@ $\n\tword_list
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8maX
+8ylX
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 9\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
@@ -4373,7 +4367,6 @@ $\n\tword_list
 ?userType@QVariant@@QEBAHXZ
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
-@08N
 @HPX`hv`
 @HQR
 @HV0
@@ -5720,9 +5713,6 @@ OrigMat
 Other Tools
 Outliner
 OverlayProjectionDirection
-P08@J
-P08J
-P08N
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
@@ -6508,7 +6498,6 @@ Zip system failure.\n
 \n2CMsgGCCStrike15_v2_MatchmakingGC2ClientSearchStats
 \n3CMsgGCCStrike15_v2_ServerNotificationForUserPenalty
 \n7CMsgGCCStrike15_v2_MatchmakingServerReservationResponse
-\n9UW
 \n?blue@QColor@@QEBAHXZ
 \n?blueF@QColor@@QEBANXZ
 \n?bold@QFont@@QEBA_NXZ
@@ -6973,10 +6962,11 @@ _nodrips
 _sm.png
 _sticker_capsule
 _toolsautosave
+`1tY
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
-`QtY
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
+`euY
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
@@ -7585,7 +7575,6 @@ gs_location_id
 gs_ping
 gungameprogressive
 gungametrbomb
-hI\nX
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?event@QTabWidget@@MEAA_NPEAVQEvent@@@Z
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
@@ -8346,7 +8335,6 @@ overrideclass
 owcaseid
 owner_only
 owns_polymorphic_data
-p08@H^
 pButton
 pCurrentFocusWidget
 pData

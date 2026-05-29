@@ -108,6 +108,7 @@ var PopupMajorStore;
         _SetUpTitleBar(cp, eventId);
         _SetUpTeamsBanner(cp);
         _SetUpPopularityBanner(cp);
+        _SetUpBookmarkItemsBanner(cp);
         _SetUpOrgBanners(cp);
         _VariousButtonActionsAndEvents(cp);
         _SetUpFilterPanel(cp);
@@ -137,29 +138,34 @@ var PopupMajorStore;
         if (bNewPricesParsed) {
             _UpdateStickerData(cp);
             cp.Data().stopTileUpdate = false;
-            if (m_activeMain?.id === 'id-major-store-single-view') {
-                const elPanel = cp.FindChildInLayoutFile('id-major-store-single-view');
-                if (elPanel.Data().SingleViewDisplayedStickers) {
-                    _SetUpSingleView(cp, elPanel.Data().SingleViewDisplayedStickers);
-                }
-            }
-            else if (m_activeMain?.id === 'id-major-store-team-view') {
-                const elPanel = cp.FindChildInLayoutFile('id-major-store-team-view');
-                if (elPanel.Data().DisplayedTeam) {
-                    _SetUpTeamView(cp, elPanel.Data().DisplayedTeam);
-                }
-            }
-            else if (m_activeMain?.id === 'id-major-store-banners') {
-                _SetUpPopularityBanner(cp);
-            }
-            else if (m_activeMain?.id === 'id-major-store-content') {
-                _UpdateItemsList(cp);
-            }
+            _UpdateVisiblePanel(cp, true);
             $.Schedule(1, () => { cp.Data().stopTileUpdate = true; });
             ShoppingCart.cart.syncPrices((itemId) => {
                 const item = cp.Data().aFlatStickersData.find(i => i.itemId === itemId);
                 return item ? item.price : undefined;
             });
+        }
+    }
+    function _UpdateVisiblePanel(cp, bDisableScroll = false) {
+        cp.Data().stopTileUpdate = false;
+        if (m_activeMain?.id === 'id-major-store-single-view') {
+            const elPanel = cp.FindChildInLayoutFile('id-major-store-single-view');
+            if (elPanel.Data().SingleViewDisplayedStickers) {
+                _SetUpSingleView(cp, elPanel.Data().SingleViewDisplayedStickers);
+            }
+        }
+        else if (m_activeMain?.id === 'id-major-store-team-view') {
+            const elPanel = cp.FindChildInLayoutFile('id-major-store-team-view');
+            if (elPanel.Data().DisplayedTeam) {
+                _SetUpTeamView(cp, elPanel.Data().DisplayedTeam);
+            }
+        }
+        else if (m_activeMain?.id === 'id-major-store-banners') {
+            _SetUpPopularityBanner(cp);
+            _SetUpBookmarkItemsBanner(cp);
+        }
+        else if (m_activeMain?.id === 'id-major-store-content') {
+            _UpdateItemsList(cp, bDisableScroll);
         }
     }
     function GetNewMarketPrice(itemId) {
@@ -397,6 +403,11 @@ var PopupMajorStore;
             const elDropDown = cp.FindChildInLayoutFile('id-major-store-sort-dropdown');
             elDropDown.SetSelected('popularity-high-low');
         });
+        cp.FindChildInLayoutFile('id-major-store-see-all-bookmarked-btn').SetPanelEvent('onactivate', () => {
+            _OnActivateClearAll(cp);
+            cp.Data().useBookMarkList = true;
+            _ShowMainPanel(cp, 'id-major-store-content');
+        });
         cp.FindChildInLayoutFile('id-major-store-filters-panel').SetPanelEvent('onactivate', () => {
         });
         cp.FindChildInLayoutFile('id-major-store-search-results').SetPanelEvent('onactivate', () => {
@@ -431,6 +442,16 @@ var PopupMajorStore;
         }
         $.RegisterEventHandler('PropertyTransitionEnd', elFloatingFilterPanel, fnOnPropertyTransitionEndEvent);
         AddMajorTokensAnim.SetTransitionEndEvent(cp.FindChildInLayoutFile('id-major-store-add-tokens'));
+        const elBookmark = cp.FindChildInLayoutFile('id-major-store-banners-bookmarks');
+        $.RegisterEventHandler('PropertyTransitionEnd', elBookmark, (panel, propertyName) => {
+            if (elBookmark.id === panel.id && propertyName === 'opacity') {
+                if (elBookmark.visible === true && elBookmark.BIsTransparent()) {
+                    elBookmark.visible = false;
+                    return true;
+                }
+            }
+            return false;
+        });
     }
     function _MakeDelayedLoadList(cp) {
         let lister = cp.FindChildInLayoutFile('id-major-store-items-lister');
@@ -501,6 +522,88 @@ var PopupMajorStore;
                 const elTile = elPanel.FindChildInLayoutFile('id-popular-tile');
                 _UpdateTile(cp, elTile, aSorted, i);
             }
+        }
+    }
+    function _GetBookmarkedItemsList(cp) {
+        const stickerMap = new Map();
+        for (const sticker of cp.Data().aFlatStickersData) {
+            stickerMap.set(sticker.rawId.toString(), sticker);
+        }
+        const aDefIndexes = GameInterfaceAPI.GetSettingString('cl_major_store_watch_list').split(',');
+        return aDefIndexes.map(defIndex => stickerMap.get(defIndex)).filter((sticker) => sticker !== undefined).reverse();
+    }
+    function _SetUpBookmarkItemsBanner(cp) {
+        const aSorted = _GetBookmarkedItemsList(cp);
+        if (aSorted.length < 1) {
+            cp.FindChildInLayoutFile('id-major-store-banners-bookmarks').SetHasClass('show', false);
+            cp.FindChildInLayoutFile('id-major-store-bookmark-hint').visible = true;
+            return;
+        }
+        cp.FindChildInLayoutFile('id-major-store-banners-bookmarks').SetHasClass('show', true);
+        cp.FindChildInLayoutFile('id-major-store-banners-bookmarks').visible = true;
+        cp.FindChildInLayoutFile('id-major-store-bookmark-hint').visible = false;
+        const elParent = cp.FindChildInLayoutFile('id-major-store-banner-bookmarked');
+        const numTilesPerPage = 8;
+        const totalPages = Math.ceil(aSorted.length / numTilesPerPage);
+        for (let i = 0; i < totalPages; i++) {
+            let elCarouselPage = elParent.FindChildInLayoutFile('id-major-store-carousel-page-' + i);
+            if (!elCarouselPage) {
+                elCarouselPage = $.CreatePanel('Panel', elParent, 'id-major-store-carousel-page-' + i, { class: 'popup-major-store__banner__popular_page' });
+                elCarouselPage.SetHasClass('small', true);
+                elCarouselPage.SetHasClass('banner-bookmark', true);
+            }
+            const startIndex = i * numTilesPerPage;
+            for (let j = 0; j < numTilesPerPage; j++) {
+                let stickerIndex = startIndex + j;
+                let elPanel = elCarouselPage.FindChildInLayoutFile('id-carousel-sticker' + stickerIndex);
+                if (!elPanel) {
+                    elPanel = $.CreatePanel('Panel', elCarouselPage, 'id-carousel-sticker' + stickerIndex);
+                    elPanel.BLoadLayoutSnippet('store-tile');
+                }
+                if (aSorted[stickerIndex]) {
+                    _UpdateTile(cp, elPanel, aSorted, stickerIndex);
+                    elPanel.SetHasClass('hidden', false);
+                    elPanel.enabled = true;
+                    elPanel.hittest = true;
+                }
+                else {
+                    elPanel.SetHasClass('hidden', true);
+                    elPanel.enabled = false;
+                    elPanel.hittest = false;
+                }
+            }
+        }
+        if (elParent.Children().length > totalPages) {
+            const numPanelsToDelete = elParent.Children().length - totalPages;
+            const numPagesMade = elParent.Children().length - 1;
+            for (let i = numPagesMade; i > (numPagesMade - numPanelsToDelete); i--) {
+                elParent.Children()[i].DeleteAsync(0);
+            }
+        }
+    }
+    function _IsItemBookmarked(defidx) {
+        return GameInterfaceAPI.GetSettingString('cl_major_store_watch_list').split(',').includes(defidx.toString());
+    }
+    function _UpdateBookmarkSetting(cp, reusePanel, defidx) {
+        const aItemIds = GameInterfaceAPI.GetSettingString('cl_major_store_watch_list').split(',');
+        const idIndex = aItemIds.findIndex(id => id === defidx.toString());
+        if (idIndex === -1) {
+            aItemIds.push(defidx.toString());
+        }
+        else {
+            aItemIds.splice(idIndex, 1);
+        }
+        GameInterfaceAPI.SetSettingString('cl_major_store_watch_list', aItemIds.length > 0 ? aItemIds.join(',') : "");
+        if (m_activeMain?.id === 'id-major-store-banners') {
+            _SetUpBookmarkItemsBanner(cp);
+            _SetUpPopularityBanner(cp);
+        }
+        else if (m_activeMain?.id === 'id-major-store-banners') {
+            _SetUpBookmarkItemsBanner(cp);
+            _SetUpPopularityBanner(cp);
+        }
+        if (cp.Data().useBookMarkList) {
+            _UpdateItemsList(cp, true);
         }
     }
     function _SetUpOrgBanners(cp) {
@@ -606,7 +709,7 @@ var PopupMajorStore;
         const elFilterPanel = cp.FindChildInLayoutFile('id-major-store-filters-panel');
         elFilterPanel.FindChildInLayoutFile(filterId).checked = true;
     }
-    function _UpdateItemsList(cp) {
+    function _UpdateItemsList(cp, bDisableScroll = false) {
         const elParent = cp.FindChildInLayoutFile('id-major-store-content-page');
         let elLister = elParent.FindChildInLayoutFile('id-major-store-items-lister');
         const filteredList = _GetFilteredSortedIds(cp);
@@ -621,7 +724,8 @@ var PopupMajorStore;
         });
         elLister.UpdateListItems(filteredList.length);
         cp.SetDialogVariableInt('item-count', filteredList.length);
-        elLister.ScrollToTop();
+        if (!bDisableScroll)
+            elLister.ScrollToTop();
     }
     function _UpdateFilterSettings(cp) {
         const elDropDown = cp.FindChildInLayoutFile('id-major-store-sort-dropdown');
@@ -707,9 +811,12 @@ var PopupMajorStore;
             elActiveFilterBtn.DeleteAsync(0);
         });
     }
-    function _OnActivateClearAll(cp, doNotClearSearch = false) {
+    function _OnActivateClearAll(cp, doNotClearSearch = false, doNotClearBookmarks = false) {
         const elFilterPanel = cp.FindChildInLayoutFile('id-major-store-filters-panel');
         elFilterPanel.FindChildrenWithAttributeTraverse('filter-button').forEach(btn => btn.checked = false);
+        if (!doNotClearBookmarks) {
+            cp.Data().useBookMarkList = false;
+        }
         if (!doNotClearSearch) {
             _ClearTextSearch(cp);
         }
@@ -723,15 +830,6 @@ var PopupMajorStore;
     }
     function _UpdateTile(cp, reusePanel, filteredList, nPanelIdx) {
         const stickerData = filteredList[nPanelIdx];
-        reusePanel.FindChildInLayoutFile('id-store-item-image').itemid = stickerData.itemId;
-        reusePanel.FindChildInLayoutFile('id-store-item-team-logo').SetImage(stickerData.isOrg ?
-            'file://{images}/tournaments/events/tournament_logo_' + g_ActiveTournamentInfo.eventid + '.svg' :
-            'file://{images}/tournaments/teams/' + filteredList[nPanelIdx].teamTag + '.svg');
-        ShoppingCart.cart.subscribeToUpdates(reusePanel, 'tile-counter', () => {
-            const quantityInCart = ShoppingCart.cart.getItemQuantity(stickerData.itemId);
-            reusePanel.SetHasClass('show-quantity', quantityInCart > 0);
-            reusePanel.SetDialogVariableInt('quantity', quantityInCart);
-        });
         reusePanel.SetDialogVariable('title', stickerData.isPlayer ?
             stickerData.playerCode :
             stickerData.isOrg ?
@@ -763,6 +861,11 @@ var PopupMajorStore;
         reusePanel.FindChildInLayoutFile('id-store-item-hot-trend').SetHasClass('show', stickerData.popularityRank < 40);
         reusePanel.SetHasClass('is-player', stickerData.isPlayer);
         const shopItem = { id: stickerData.itemId, name: filteredList[nPanelIdx].displayName, price: filteredList[nPanelIdx].price, oldPrice: filteredList[nPanelIdx].oldPrice };
+        ShoppingCart.cart.subscribeToUpdates(reusePanel, 'tile-counter', () => {
+            const quantityInCart = ShoppingCart.cart.getItemQuantity(stickerData.itemId);
+            reusePanel.SetHasClass('show-quantity', quantityInCart > 0);
+            reusePanel.SetDialogVariableInt('quantity', quantityInCart);
+        });
         reusePanel.FindChildInLayoutFile('id-store-item-add-to-cart-btn').SetPanelEvent('onactivate', () => {
             ShoppingCart.cart.addItem(shopItem);
             if (ShoppingCart.cart.getItemQuantity(stickerData.itemId) >= 10 || ShoppingCart.cart.getTotalItems() >= 100) {
@@ -775,6 +878,15 @@ var PopupMajorStore;
             ShoppingCart.cart.decrementItem(shopItem.id);
             $.DispatchEvent('CSGOPlaySoundEffect', 'UIPanorama.generic_button_press', 'MOUSE');
         });
+        const elBookmark = reusePanel.FindChildInLayoutFile('id-store-item-bookmark');
+        elBookmark.checked = _IsItemBookmarked(stickerData.rawId);
+        elBookmark.SetPanelEvent('onactivate', () => {
+            _UpdateBookmarkSetting(cp, reusePanel, stickerData.rawId);
+        });
+        reusePanel.FindChildInLayoutFile('id-store-item-image').itemid = stickerData.itemId;
+        reusePanel.FindChildInLayoutFile('id-store-item-team-logo').SetImage(stickerData.isOrg ?
+            'file://{images}/tournaments/events/tournament_logo_' + g_ActiveTournamentInfo.eventid + '.svg' :
+            'file://{images}/tournaments/teams/' + filteredList[nPanelIdx].teamTag + '.svg');
         const MapPanel = reusePanel.FindChildInLayoutFile('id-store-item-model');
         MapPanel.SetCamera('camera_weapon_7');
         MapPanel.SetActiveItem(0);
@@ -785,16 +897,23 @@ var PopupMajorStore;
         let nRenderInterval = 1;
         MapPanel.SetRenderInterval(nRenderInterval);
         reusePanel.FindChildInLayoutFile('id-inspect-sticker').SetPanelEvent('onactivate', () => {
-            _OpenFullscreenInspect(stickerData);
+            _OpenFullscreenInspect(cp, stickerData);
         });
     }
-    function _OpenFullscreenInspect(stickerData) {
+    function _OpenFullscreenInspect(cp, stickerData) {
+        function _Callback() {
+            _UpdateVisiblePanel(cp);
+        }
+        ;
+        const callback = UiToolkitAPI.RegisterJSCallback(_Callback);
         const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('', 'file://{resources}/layout/popups/popup_inventory_inspect.xml');
         let oSettings = {
             item_id: stickerData.itemId,
             inspect_only: true,
             hide_all_action_items: true,
-            price_in_tokens: stickerData.price
+            price_in_tokens: stickerData.price,
+            sticker_def_index: stickerData.rawId,
+            callback_handle: callback
         };
         elPanel.Data().oSettings = oSettings;
     }
@@ -806,6 +925,9 @@ var PopupMajorStore;
         if (elSearchBox.text) {
             aFilteredStickers = _GetItemsForSearch(cp, elSearchBox.text);
             bNoFilter = false;
+        }
+        else if (cp.Data().useBookMarkList) {
+            aFilteredStickers = _GetBookmarkedItemsList(cp);
         }
         else
             aFilteredStickers = cp.Data().aFlatStickersData;
@@ -858,7 +980,6 @@ var PopupMajorStore;
     }
     function _SetUpFilterPanel(cp) {
         const elFilterPanel = cp.FindChildInLayoutFile('id-major-store-filters-panel');
-        const numTeamsInSection = g_ActiveTournamentTeams.length / 2;
         g_ActiveTournamentTeams.forEach((team, i) => {
             const elParent = elFilterPanel.FindChildInLayoutFile('id-major-store-filter-section-teams');
             let elTeam = elParent.FindChildInLayoutFile(g_ActiveTournamentTeams[i].team);
@@ -897,7 +1018,7 @@ var PopupMajorStore;
         const elClearBtn = elFilterPanel.FindChildInLayoutFile('id-major-store-filters-clear');
         elClearBtn.SetDialogVariable('name', $.Localize('#major_store_filter_type_clear_all'));
         elClearBtn.SetPanelEvent('onactivate', () => {
-            _OnActivateClearAll(cp);
+            _OnActivateClearAll(cp, false, cp.Data().useBookMarkList);
             _UpdateItemsList(cp);
         });
         const elClearAllNavBtn = cp.FindChildInLayoutFile('id-filter-active-clear_all');
@@ -905,7 +1026,7 @@ var PopupMajorStore;
         elClearAllNavBtn.AddClass('clear-all');
         elClearAllNavBtn.visible = false;
         elClearAllNavBtn.SetPanelEvent('onactivate', () => {
-            _OnActivateClearAll(cp);
+            _OnActivateClearAll(cp, false, cp.Data().useBookMarkList);
             _UpdateItemsList(cp);
             elClearAllNavBtn.visible = false;
         });
@@ -979,9 +1100,14 @@ var PopupMajorStore;
                 elTile.FindChildInLayoutFile('id-result-icon').itemid = sticker.itemId;
                 sticker.displayName.SetOnLabel(elTile.FindChildInLayoutFile('id-result-name'));
                 elTile.SetDialogVariableInt('price', sticker.price);
-                elTile.SetPanelEvent('onactivate', () => {
-                    _OpenFullscreenInspect(sticker);
+                elTile.FindChildInLayoutFile('id-result-inspect').SetPanelEvent('onactivate', () => {
+                    _OpenFullscreenInspect(cp, sticker);
                     _PopOverlay();
+                });
+                const elBookmark = elTile.FindChildInLayoutFile('id-store-item-bookmark');
+                elBookmark.checked = _IsItemBookmarked(sticker.rawId);
+                elBookmark.SetPanelEvent('onactivate', () => {
+                    _UpdateBookmarkSetting(cp, elTile, sticker.rawId);
                 });
             });
             return;
@@ -1001,6 +1127,7 @@ var PopupMajorStore;
                 m_activeMain = nextPanel;
             }
             if (panelId == 'id-major-store-banners') {
+                _SetUpBookmarkItemsBanner(cp);
                 _SetUpPopularityBanner(cp);
             }
             if (panelId == 'id-major-store-content') {
