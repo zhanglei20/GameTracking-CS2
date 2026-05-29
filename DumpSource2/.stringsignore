@@ -11344,6 +11344,7 @@ Spectate a player by name or slot
 Spectate next player
 Spectate previous player
 Spectator camera interpolation speed
+Spectator flash opacity
 Speed
 Speed Function
 Speed Scale
@@ -13925,6 +13926,7 @@ cl_log_tick_skips
 cl_low_latency_vsync_recommendation_dont_show_again
 cl_mainmenu_hide_blog
 cl_mainmenu_show_blog
+cl_major_store_watch_list
 cl_map_preview_debug_jitter
 cl_massreport
 cl_matchlist_controlroom_aid
@@ -28927,6 +28929,7 @@ r_size_cull_threshold_shadow
 r_skinning_enabled
 r_skip_precache_validation_check
 r_smooth_morph_normals
+r_spectator_flashbang_opacity
 r_ssao
 r_ssao_bias
 r_ssao_blur

@@ -441,16 +441,28 @@ VS
 	BoolAttribute(SupportsAggregateInstancing, true);
 	BoolAttribute(SupportsMaterialLayerSampling, true);
 	
+	#if (S_SHARED_COLOR_OVERLAY == 1)
+		BoolAttribute(HasTexcoordTransform, (((((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || ((g_nUVSet3>0) && (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0)))) || ((g_nColorOverlayUVSet>0) && (((g_vOverlayTexCoordScale.x!=1) || (g_vOverlayTexCoordScale.y!=1)) || (g_flOverlayTexCoordRotation!=0)))) || 0);
+		BoolAttribute(VertexPaintUI2Layer, false);
+		BoolAttribute(VertexPaintUI3Layer, true);
+	#endif
 	#if (S_ENABLE_LAYER_3 == 1)
-		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
 		BoolAttribute(VertexPaintUI2Layer, false);
 		BoolAttribute(VertexPaintUI3Layer, true);
 	#endif
 	#if (S_ENABLE_LAYER_3 == 0)
-		BoolAttribute(HasTexcoordTransform, ((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || 0);
 		BoolAttribute(VertexPaintUI2Layer, true);
 		BoolAttribute(VertexPaintUI3Layer, false);
 	#endif
+	#if (S_SHARED_COLOR_OVERLAY == 0)
+		BoolAttribute(HasTexcoordTransform, ((((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || ((g_nUVSet3>0) && (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0)))) || 0);
+		BoolAttribute(VertexPaintUI2Layer, false);
+		BoolAttribute(VertexPaintUI3Layer, true);
+	#endif
+	
+	// Variant Attributes
+	BoolAttribute(HasTexcoordTransform, (((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || 0);
+	BoolAttribute(HasTexcoordTransform, ((((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || ((g_nColorOverlayUVSet>0) && (((g_vOverlayTexCoordScale.x!=1) || (g_vOverlayTexCoordScale.y!=1)) || (g_flOverlayTexCoordRotation!=0)))) || 0);
 }
 
 PS
@@ -584,6 +596,7 @@ PS
 	CreateInputTexture2D(TextureColor1, Srgb, 8, "", "_color", "Material1,0/Color,10/0", Default4(1, 1, 1, 0));
 	CreateInputTexture2D(TextureNormal1, Linear, 8, "NormalizeNormals", "_normal", "Material1/Lighting/0", Default4(0.5, 0.5, 1, 0));
 	CreateInputTexture2D(TextureTintMask1, Linear, 8, "", "_mask", "Material1/Tint Mask,15/0", Default4(1, 1, 1, 0));
+	CreateInputTexture2D(TextureTranslucency1, Linear, 8, "", "_trans", "Material1/Translucent,15/0", Default4(1, 1, 1, 0));
 	int g_nUVSet1 < Default(1); Range4(0, 0, 0, 0, 2, 2, 2, 2); UiOptions("0=Biplanar,1=UV1,2=UV2"); UiType(Enum); UiGroup("Material1/Texture Coordinates,34/1"); >;
 	int g_nDetailUVSet1 < Default(-1); Range4(-1, -1, -1, -1, 2, 2, 2, 2); UiOptions("-1=Inherit,0=Biplanar,1=UV1,2=UV2"); UiType(Enum); UiGroup("Material1/Texture Coordinates,34/2"); >;
 	float2 g_vTexCoordScale1 < Default2(1, 1); Range2(0, 0, 100, 100); Attribute("0=X,1=Y"); UiType(VectorText); UiGroup("Material1/Texture Transform,35/2"); >;
@@ -743,11 +756,7 @@ PS
 	int g_nScaleTexCoord2VByModelScaleAxis < Range4(0, 0, 0, 0, 3, 3, 3, 3); UiOptions("0=None,1=UV2.v * model.x,2=UV2.v * model.y,3=UV2.v * model.z"); UiType(Enum); UiGroup("Color/110"); UiVisibility(1); >;
 	float g_flBlendSoftnessDistanceModifierStrength < Default(1); UiType(Slider); UiGroup("Color/120"); >;
 	float2 g_vOverlayTexCoordScale < Default2(1, 1); Range2(0, 0, 100, 100); UiType(VectorText); UiGroup("Color/Overlay/210"); >;
-	
-	// Translucent
-	CreateInputTexture2D(TextureTranslucency, Linear, 8, "", "_trans", "Translucent,15", Default4(1, 1, 1, 0));
-	float g_flAlphaTestReference < Default(0.5); Range(0.01, 0.99); UiType(Slider); UiGroup("Translucent"); >;
-	float g_flAntiAliasedEdgeStrength < Default(1); UiType(Slider); UiGroup("Translucent"); >;
+	float g_flOverlayTexCoordRotation < Range(-360, 360); UiType(Slider); UiGroup("Color/Overlay/220"); >;
 	
 	// Blend Effects
 	float g_flBorderSpread2 < Default(0.1); UiType(Slider); UiGroup("Blend Effects,8/Border Layer 2,0/10"); >;
@@ -798,6 +807,10 @@ PS
 	float g_fWetnessStrength < Default(1); Range(0, 2); UiType(Slider); UiGroup("Wetness/30"); UiVisibility(F_WETNESS || 0); >;
 	float g_fRainStrength < Default(1); Range(0, 2); UiType(Slider); UiGroup("Wetness/35"); UiVisibility(F_WETNESS || 0); >;
 	float g_fRippleStrength < Default(1); Range(0, 2); UiType(Slider); UiGroup("Wetness/40"); UiVisibility(F_WETNESS || 0); >;
+	
+	// Translucent
+	float g_flAlphaTestReference < Default(0.5); Range(0.01, 0.99); UiType(Slider); UiGroup("Translucent"); >;
+	float g_flAntiAliasedEdgeStrength < Default(1); UiType(Slider); UiGroup("Translucent"); >;
 	
 	// Occlusion Culling
 	float g_flOcclusionCullingBoundsScale < Default(1); Range(1, 100); UiType(Slider); UiGroup("Occlusion Culling"); UiVisibility(F_OCCLUSION_CULLING_BOUNDS_SCALE); >;
@@ -2624,12 +2637,17 @@ PS
 	TextureAttribute(LightSim_DiffuseAlbedoTexture, g_tColor1);
 	TextureAttribute(RepresentativeTexture, g_tColor1);
 	
+	#if (S_SHARED_COLOR_OVERLAY == 0)
+		BoolAttribute(HasTexcoordTransform, ((((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || ((g_nUVSet3>0) && (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0)))) || 0);
+		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
+		FloatAttribute(_dummyMakeVisiblePropMaskSoftness3, g_flDetailPropMaskSoftness3);
+		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
+		IntAttribute(MaterialLayerCount, 3);
+	#endif
 	#if (S_ENABLE_LAYER_3 == 0)
-		BoolAttribute(HasTexcoordTransform, ((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || 0);
 		IntAttribute(MaterialLayerCount, 2);
 	#endif
 	#if (S_BLEND_EFFECTS_3 == 1)
-		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
 		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
 		FloatAttribute(_dummyMakeVisiblePropMaskSoftness3, g_flDetailPropMaskSoftness3);
 		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
@@ -2652,12 +2670,22 @@ PS
 		TextureAttribute(LightSim_Opacity_A, g_tColor1);
 	#endif
 	#if (S_ENABLE_LAYER_3 == 1)
-		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
 		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
 		FloatAttribute(_dummyMakeVisiblePropMaskSoftness3, g_flDetailPropMaskSoftness3);
 		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
 		IntAttribute(MaterialLayerCount, 3);
 	#endif
+	#if (S_SHARED_COLOR_OVERLAY == 1)
+		BoolAttribute(HasTexcoordTransform, (((((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || ((g_nUVSet3>0) && (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0)))) || ((g_nColorOverlayUVSet>0) && (((g_vOverlayTexCoordScale.x!=1) || (g_vOverlayTexCoordScale.y!=1)) || (g_flOverlayTexCoordRotation!=0)))) || 0);
+		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
+		FloatAttribute(_dummyMakeVisiblePropMaskSoftness3, g_flDetailPropMaskSoftness3);
+		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
+		IntAttribute(MaterialLayerCount, 3);
+	#endif
+	
+	// Variant Attributes
+	BoolAttribute(HasTexcoordTransform, (((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || 0);
+	BoolAttribute(HasTexcoordTransform, ((((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || ((g_nColorOverlayUVSet>0) && (((g_vOverlayTexCoordScale.x!=1) || (g_vOverlayTexCoordScale.y!=1)) || (g_flOverlayTexCoordRotation!=0)))) || 0);
 	
 	// PSRS
 	
@@ -2811,6 +2839,7 @@ RTX
 	CreateInputTexture2D(TextureColor1, Srgb, 8, "", "_color", "Material1,0/Color,10/0", Default4(1, 1, 1, 0));
 	CreateInputTexture2D(TextureNormal1, Linear, 8, "NormalizeNormals", "_normal", "Material1/Lighting/0", Default4(0.5, 0.5, 1, 0));
 	CreateInputTexture2D(TextureTintMask1, Linear, 8, "", "_mask", "Material1/Tint Mask,15/0", Default4(1, 1, 1, 0));
+	CreateInputTexture2D(TextureTranslucency1, Linear, 8, "", "_trans", "Material1/Translucent,15/0", Default4(1, 1, 1, 0));
 	int g_nUVSet1 < Default(1); Range4(0, 0, 0, 0, 2, 2, 2, 2); UiOptions("0=Biplanar,1=UV1,2=UV2"); UiType(Enum); UiGroup("Material1/Texture Coordinates,34/1"); >;
 	float2 g_vTexCoordCenter1 < Default2(0.5, 0.5); Attribute("0=X,1=Y"); UiType(VectorText); UiGroup("Material1/Texture Transform,35/1"); UiVisibility(1); >;
 	float2 g_vTexCoordCenter2 < Default2(0.5, 0.5); Attribute("0=X,1=Y"); UiType(VectorText); UiGroup("Material1/Texture Transform,35/1"); UiVisibility(1); >;
@@ -2965,10 +2994,6 @@ RTX
 	float g_flOverlayTexCoordRotation < Range(-360, 360); UiType(Slider); UiGroup("Color/Overlay/220"); >;
 	float2 g_vOverlayTexCoordOffset < Range2(-1, -1, 1, 1); Attribute("0=X,1=Y"); UiType(VectorText); UiGroup("Color/Overlay/230"); >;
 	
-	// Translucent
-	CreateInputTexture2D(TextureTranslucency, Linear, 8, "", "_trans", "Translucent,15", Default4(1, 1, 1, 0));
-	float g_flAlphaTestReference < Default(0.5); Range(0.01, 0.99); UiType(Slider); UiGroup("Translucent"); >;
-	
 	// Blend Effects
 	float g_flBorderSpread2 < Default(0.1); UiType(Slider); UiGroup("Blend Effects,8/Border Layer 2,0/10"); >;
 	float g_flBorderSpread3 < Default(0.1); UiType(Slider); UiGroup("Blend Effects/Border Layer 3,10/10"); >;
@@ -3001,6 +3026,9 @@ RTX
 	float g_fWetEdgeSpread < Default(0.2); UiType(Slider); UiGroup("Wetness/25"); UiVisibility(F_WETNESS || 0); >;
 	float g_fWetEdgeSoftness < Default(0.2); UiType(Slider); UiGroup("Wetness/26"); UiVisibility(F_WETNESS || 0); >;
 	float g_fWetnessStrength < Default(1); Range(0, 2); UiType(Slider); UiGroup("Wetness/30"); UiVisibility(F_WETNESS || 0); >;
+	
+	// Translucent
+	float g_flAlphaTestReference < Default(0.5); Range(0.01, 0.99); UiType(Slider); UiGroup("Translucent"); >;
 	
 	// Texture Address Mode
 	int g_nTextureAddressModeU < UiOption("RsTextureAddressMode_t"); UiType(Enum); UiGroup("Texture Address Mode"); >;
@@ -5613,8 +5641,15 @@ RTX
 	FloatAttribute(_dummyMakeVisiblePropMaskSoftness2, g_flDetailPropMaskSoftness2);
 	FloatAttribute(_dummyMakeVisiblePropPuddleReduction2, g_flDetailPropPuddleReduction2);
 	
+	#if (S_SHARED_COLOR_OVERLAY == 1)
+		BoolAttribute(HasTexcoordTransform, (((((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || ((g_nUVSet3>0) && (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0)))) || ((g_nColorOverlayUVSet>0) && (((g_vOverlayTexCoordScale.x!=1) || (g_vOverlayTexCoordScale.y!=1)) || (g_flOverlayTexCoordRotation!=0)))) || 0);
+		BoolAttribute(VertexPaintUI2Layer, false);
+		BoolAttribute(VertexPaintUI3Layer, true);
+		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
+		FloatAttribute(_dummyMakeVisiblePropMaskSoftness3, g_flDetailPropMaskSoftness3);
+		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
+	#endif
 	#if (S_ENABLE_LAYER_3 == 0)
-		BoolAttribute(HasTexcoordTransform, ((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || 0);
 		BoolAttribute(VertexPaintUI2Layer, true);
 		BoolAttribute(VertexPaintUI3Layer, false);
 	#endif
@@ -5627,7 +5662,6 @@ RTX
 		BoolAttribute(NoZPrepass, F_DISABLE_Z_PREPASS || 0);
 	#endif
 	#if (S_BLEND_EFFECTS_3 == 1)
-		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
 		BoolAttribute(VertexPaintUI2Layer, false);
 		BoolAttribute(VertexPaintUI3Layer, true);
 		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
@@ -5635,7 +5669,6 @@ RTX
 		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
 	#endif
 	#if (S_MODE_DEPTH == 0)
-		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
 		BoolAttribute(VertexPaintUI2Layer, false);
 		BoolAttribute(VertexPaintUI3Layer, true);
 		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
@@ -5643,7 +5676,6 @@ RTX
 		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
 	#endif
 	#if (S_DETAIL_NORMAL == 0)
-		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
 		BoolAttribute(VertexPaintUI2Layer, false);
 		BoolAttribute(VertexPaintUI3Layer, true);
 		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
@@ -5651,7 +5683,6 @@ RTX
 		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
 	#endif
 	#if (S_ENABLE_LAYER_3 == 1)
-		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
 		BoolAttribute(VertexPaintUI2Layer, false);
 		BoolAttribute(VertexPaintUI3Layer, true);
 		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
@@ -5664,7 +5695,14 @@ RTX
 		BoolAttribute(AlphaTestZPrepass, true);
 	#endif
 	#if (S_MODE_TOOLS_VIS == 0)
-		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
+		BoolAttribute(VertexPaintUI2Layer, false);
+		BoolAttribute(VertexPaintUI3Layer, true);
+		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
+		FloatAttribute(_dummyMakeVisiblePropMaskSoftness3, g_flDetailPropMaskSoftness3);
+		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
+	#endif
+	#if (S_SHARED_COLOR_OVERLAY == 0)
+		BoolAttribute(HasTexcoordTransform, ((((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || ((g_nUVSet3>0) && (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0)))) || 0);
 		BoolAttribute(VertexPaintUI2Layer, false);
 		BoolAttribute(VertexPaintUI3Layer, true);
 		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
@@ -5672,11 +5710,14 @@ RTX
 		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
 	#endif
 	#if (S_SHADER_QUALITY == 0)
-		BoolAttribute(HasTexcoordTransform, (((((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0)) || (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0))) || (((g_vTexCoordScale3.x!=1) || (g_vTexCoordScale3.y!=1)) || (g_flTexCoordRotation3!=0))) || 0);
 		BoolAttribute(VertexPaintUI2Layer, false);
 		BoolAttribute(VertexPaintUI3Layer, true);
 		FloatAttribute(_dummyMakeVisiblePropMaskBias3, g_flDetailPropMaskBias3);
 		FloatAttribute(_dummyMakeVisiblePropMaskSoftness3, g_flDetailPropMaskSoftness3);
 		FloatAttribute(_dummyMakeVisiblePropPuddleReduction3, g_flDetailPropPuddleReduction3);
 	#endif
+	
+	// Variant Attributes
+	BoolAttribute(HasTexcoordTransform, (((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || 0);
+	BoolAttribute(HasTexcoordTransform, ((((g_nUVSet1>0) && (((g_vTexCoordScale1.x!=1) || (g_vTexCoordScale1.y!=1)) || (g_flTexCoordRotation1!=0))) || ((g_nUVSet2>0) && (((g_vTexCoordScale2.x!=1) || (g_vTexCoordScale2.y!=1)) || (g_flTexCoordRotation2!=0)))) || ((g_nColorOverlayUVSet>0) && (((g_vOverlayTexCoordScale.x!=1) || (g_vOverlayTexCoordScale.y!=1)) || (g_flOverlayTexCoordRotation!=0)))) || 0);
 }

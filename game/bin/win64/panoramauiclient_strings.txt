@@ -1,9 +1,6 @@
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$h
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  <b>@import</b> 
  cubic-bezier( %1.3f, %1.3f, %1.3f, %1.3f ) 
  ellipsis
@@ -442,10 +439,9 @@
 .PEA_N
 .PEBVILocalizationString@panorama@@
 08@HR
-08@J
 0:Ph
+0vDA
 0x%4.4x 
-2\vp4M
 3?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
 3?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z
 5butt
@@ -489,11 +485,12 @@
 ?GetName@Function@v8@@QEBA?AV?$Local@VValue@v8@@@2@XZ
 ?GlobalizeReference@api_internal@v8@@YAPEA_KPEAVIsolate@internal@2@_K@Z
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
-@08N
+@08NDA
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
-@HPX`hv
+@HPX`hvP
 @keyframes 
 @keyframes '%s'\r\n{\r\n
+@nDA
 @panorama_streaming_load_local_images
 ABXY
 APIN_txt
@@ -1116,11 +1113,9 @@ OpenStyleFileForEditAtByteIndex
 OpenText
 Option_%d
 OverMaxPips
-P08@J
 P08J0
-P08N
-P60\v 
-P6p- 
+P08NDA
+P60. 
 PageDown
 PageLeft
 PagePanelDown
@@ -1158,7 +1153,7 @@ PanoramaUIEngine interface not set up\n
 PanoramaUIEngine setup failed\n
 PanoramaVideoPlayer
 ParentWithProperties
-Pfp. 
+Pf0/ 
 Picked
 PlaceholderText
 Play
@@ -1172,7 +1167,6 @@ PlaybackProgress
 PlaybackSpeed
 PlaybackTitle
 PlaybackTitleAndControls
-Pn00 
 PopupWrapper
 PostConsoleText
 PrevSearch
@@ -1195,7 +1189,6 @@ PropertySection
 PropertyTransitionEnd
 RBLegend
 RT_txt
-R\vp4M
 RadioBox
 RadioButton
 RadioSelected
@@ -1600,6 +1593,7 @@ Visible
 VolumeControl
 VolumeSliderPopup
 VolumeSliderValueChanged
+Vp6 
 WebBrowser
 WebVTT Parse Error %d: %s:%u:%u - %s.\n
 WindowGotFocus
@@ -1614,15 +1608,18 @@ XInputPad
 X`hr
 Y_txt
 [object@%p]
-\fp4M
+\nPlM
 \n\tV_atanf
 \tV_strupper_fast
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_AppendSlash
 \t_V_strcspn
-\vp4M
+\vPT5
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `F?ToLocalEmpty@api_internal@v8@@YAXXZ
+`fDA
+`nDA
+aBvDA
 about:blank
 activation
 activation_change_fail
@@ -1636,6 +1633,7 @@ actualyoffset
 aliceblue
 align
 all-scroll
+allow-focus-changes-on-scroll
 allowtextselection
 alpha-only
 alternate
@@ -2063,6 +2061,7 @@ multiply
 multitouchzoomscale
 muted
 n-resize
+n09 
 navajowhite
 navy
 ne-resize
@@ -2076,7 +2075,6 @@ not-allowed
 notches
 notreadybehavior
 nowrap
-np8 
 ns-resize
 num_search_results
 numeric
@@ -2122,11 +2120,10 @@ orange
 orangered
 orchid
 otherPanelID, eventToFire
-p08@H^
+p08@H^DA
 p2 y
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
-pF@3 
-p\r`\fP4M
+p>DA
 padding
 padding-bottom
 padding-left
@@ -2197,6 +2194,7 @@ placeholder
 playback_speed
 playback_volume
 plum
+pnDA
 point
 popuplinks
 portuguese

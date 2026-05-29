@@ -110,10 +110,9 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j
- (08@HPXb`
- (08@HPZ
- (0X`hpz`
+ (08@HPX`j05
+ (08@HPZ05
+ (08@J05
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -218,6 +217,7 @@
 !.CPlayer_GetNicknameList_Response"<
 !.CPublishedFile_Subscribe_Request
 !3mmXs
+!3xm
 !5!A!I!O!Y![!_!s!}!
 !9iV
 !AECO
@@ -310,6 +310,7 @@
 "d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo
 "e\n CCSUsrMsg_EntityOutlineHighlight
 "f\n\nCMsgTEDust
+"g3hn
 "h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 "l7ql`R2lWf
 "lbN.
@@ -2203,7 +2204,7 @@ $taser_charge
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
-%n4pq
+%n4Pr
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -2973,6 +2974,7 @@ $taser_charge
 )\nOx*\nDh+\n(
 )\n\nEGCItemMsg
 )binary_zstd
+)cs_portrait_world_callback_handler
 )fuG
 )haI
 * Matchmaking '%s' -vs- '%s' in '%s' '%s'
@@ -3132,7 +3134,7 @@ $taser_charge
 ,kj8\te
 ,name:
 ,oYR
-,sK3(m
+,sK3
 ,section=
 ,value:
 - "%s" = "%.2f"\n
@@ -3162,6 +3164,7 @@ $taser_charge
 --CLoopModeGame::~CLoopModeGame
 --file:
 -.CPlayer_GetNewSteamAnnouncementState_Request
+-4pq
 -5X5
 -;-C-I-M-a-e-q-
 -> Success (%d attempts)\n
@@ -10938,12 +10941,13 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR
-08@J`
+08@HR05
+08B05
 08bX
 09,h
 0;Q5[
 0<cz
+0>P3
 0M2~@p
 0Marks latest announcement timestamp read by user
 0Name of the file to publish in the user's cloud.
@@ -11213,7 +11217,6 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpT
 2^pV
 2a"l
 2bT~
@@ -11431,7 +11434,9 @@ $taser_charge
 8835-KLXV-0292
 8<pl
 8= zp
+8@J05
 8A6j
+8B05
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11441,6 +11446,7 @@ $taser_charge
 8Name of the file to use as the published file's preview.
 8SIffK5W
 8TZvrv<
+8\n05
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
 8\n3k_EGCItemCustomizationNotification_GenerateSouvenir
 8\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2
@@ -11717,13 +11723,14 @@ $taser_charge
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N
+@08N$
 @0pp
+@205
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
 @C_SmokeGrenade
-@HPX`hv
+@HV0
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11780,7 +11787,7 @@ ACTIVATE_TYPE_DATAUPDATE_CREATION
 ACTIVATE_TYPE_INITIAL_CREATION
 ACTIVATE_TYPE_ONRESTORE
 ACTOR
-AC_PlantedC4
+AC_CSGO_TeamSelectCharacterPosition
 AD Time Stamping
 ADD_CERT_DIR
 ADH-AES128-GCM-SHA256
@@ -11875,7 +11882,6 @@ AMMO_TYPE_HEGRENADE
 AMMO_TYPE_MOLOTOV
 AMMO_TYPE_SMOKEGRENADE
 AMMO_TYPE_TASERCHARGE
-AMoveMountingAmount_t
 ANC[%d]
 ANNOTATION: Distance -- %s -- %f\n
 ANNOTATIONS: hiding node "%s"\n
@@ -14564,7 +14570,7 @@ CRenderGameSystem::OnClientPreOutput
 CRenderGameSystem::OnClientPreOutputParallelWithServer
 CRenderGameSystem::OnClientPreOutputParallelWithServer(), C:\buildworker\csgo_rel_win64\build\src\game\shared\rendergamesystem.cpp:1223
 CRenderGameSystem::OnClientPreOutputParallelWithServer(1323): 
-CRenderingPipelineCsgo::AddLayersToView(10664): 
+CRenderingPipelineCsgo::AddLayersToView(10666): 
 CResourceName
 CResourceNameTyped
 CResourcePrecacherGameSystem
@@ -18050,6 +18056,7 @@ FX_RicochetSound.Ricochet
 FX_TracerSound
 F\f5F4'
 F\n ParticleFreezeTransitionOverride
+F\n05
 F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
@@ -20704,7 +20711,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
-JY3Xm
+JY38n
 JZIX
 J\nHBF
 J`KL
@@ -22257,13 +22264,12 @@ P-224
 P-256
 P-384
 P-521
-P08@J`
-P08J
-P08N
+P08JP7
+P08N$
 P1\t98"
+P205
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
-P38m
 P5[1
 PAGN_4
 PANORAMA_LAYOUTFILE
@@ -22802,6 +22808,7 @@ Pitch: %6.1f   Yaw: %6.1f   Dist: %6.1f %19s
 Pitch: %6.1f   Yaw: %6.1f %38s
 Pitstop
 PivotPaint
+Pj05
 PlaceDecalEvent_t
 PlaceholderText
 PlantedBomb
@@ -23171,7 +23178,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
-Q$4pp
+Q$4Pq
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23410,7 +23417,6 @@ RULESHERE
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpT
 R]Di
 Rad2 Deg
 Radar
@@ -25594,7 +25600,7 @@ SystemInputLanguageChanged
 SystemMemoryMB
 T*8U
 T0.S
-T3Hm
+T3(n
 T61STRING
 T72[t
 TASK=%llu\n
@@ -26117,6 +26123,7 @@ Triggers the creation of entities in a manually-completed spawn group
 TrueSight spectating prediction changing %d->%d for player slot %d?\n
 TrueView adjust timing: Client tick %d + %.2f, desired offset %.3f sec = %.2f ticks, desired final predicted tick %d + %.2f\n
 TrueView cached command %d executed on tick %d.  Client tick = %d, offset %d\n
+TrueView target time going in reverse [ %d + %.3f ] -> [ %d + %.3f ]
 TrueViewDeadOnServer
 TrueViewDeadOnServerChanged
 Trust Root
@@ -26739,7 +26746,6 @@ W'6S`
 W2Q=
 W3fp
 W3i+,
-W4 q
 W>peSp>9
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.\n
 WARNING! Field %s is using the wrong FIELD_ type!\nFix this or you'll see a crash.\n
@@ -27182,7 +27188,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr
+X`hr05
 Xd3h
 XfJ7
 XjfR
@@ -27320,7 +27326,6 @@ Z~wl
 [-1] -> empty
 [-1] -> gsn(empty)
 [-1] -> gsn(null)
-[40q
 [Additional text in debugoverlay_dashboard]
 [CC Log %s]: d: %f, ls: %f, %s\n
 [CC]:  %s: No Caption Found\n
@@ -27342,6 +27347,7 @@ Z~wl
 [OdP
 [RETURN R%d]
 [RETURN]
+[TrueView %d] m_taiaTrueSpectateTargetTime=%d+%.3f   player.m_nLastExecutedCommandNumber=%d  nFirstEarlyPredictionCommand=%d\n
 [Wearables] Creating new wearable (%d)
 [disabled] 
 [dt %5.2f] velocity: %s
@@ -28343,7 +28349,7 @@ Z~wl
 \vj0k
 \vjC7
 ]1h=bfz
-]3hm
+]3Hn
 ]FhSD}
 ]GT7]
 ]G\nY1
@@ -28440,9 +28446,9 @@ _util_drawtext_pos
 _var
 _xU`u
 _}eOk
+`205
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`6py
 `:zQF
 `D$daM-l
 `DZG
@@ -28453,6 +28459,8 @@ _}eOk
 `\n\rvector_values
 `anonymous-namespace'::DynamicLockHelper<struct `anonymous namespace'::SmokeConstantBuffer_t>::Lock
 `anonymous-namespace'::DynamicLockHelper<struct `anonymous namespace'::SmokeLightProbeVolumeData_t>::Lock
+`b05
+`d05
 `fPw.\vM
 `h9T~
 `o_je
@@ -28473,6 +28481,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
+aBv$
 aD/x
 aDSS
 aECDH
@@ -28845,6 +28854,7 @@ all_same_slot
 allgrenades_v1
 alligator
 allocated
+allow-focus-changes-on-scroll
 allow_direct_return
 allow_interaction_from_all_scene_worlds
 allow_sst_generation
@@ -29239,7 +29249,7 @@ b <= sizeof ctx->buf
 b <= sizeof ctx->final
 b0M%
 b2i_PVK_bio
-b3xm
+b3Xn
 b5o-
 b=G3
 bB"`3
@@ -30665,7 +30675,6 @@ cs_office
 cs_pet_placement
 cs_player_controller
 cs_player_manager
-cs_portrait_world_callback_handler
 cs_pre_restart
 cs_prediction_events.proto
 cs_round_final_beep
@@ -30834,6 +30843,7 @@ cz75a
 cz>Sp
 czech
 d e not congruent to 1
+d#$rf3
 d.allOrFirstTier
 d.authenticatedData
 d.certificate
@@ -30898,7 +30908,7 @@ d2i_SSL_SESSION
 d2i_TS_RESP
 d2i_X509_PKEY
 d35P
-d4Pq
+d40r
 d4\tp
 d7NSuLq2
 d=%-2d hl=%ld l=%4ld 
@@ -33334,7 +33344,6 @@ hour
 hours
 houseIdentifier
 hover
-hpz`
 hr_H
 href="
 hscroll
@@ -33452,7 +33461,7 @@ i2d_SSL_SESSION
 i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
-i4`q
+i4@r
 i4a."
 i5BH
 iA5StringSyntax
@@ -33472,7 +33481,6 @@ iSuccessCount
 iU[&l
 iVY2L
 i\n\ttotalonly
-i`U3
 ia5org
 ia7@\t H9
 iana
@@ -34434,6 +34442,7 @@ k+Aq
 k/sn
 k0>Z,
 k26C*
+k3xn
 k8\vD
 k8fo
 k8xA
@@ -34849,7 +34858,7 @@ lC57
 lDcW
 lM2p
 l\n\fexcludedtags
-l`w4
+l`w4pr
 label_token
 ladder
 ladder_angle_yaw
@@ -37025,8 +37034,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
-p0j0
+p08@H^$
+p205
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37389,6 +37398,7 @@ payload-%u-%u.data
 payment gateway capabilities
 payment_row_usd
 payment_us_usd
+pb05
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -38075,6 +38085,7 @@ r$0I
 r-IE
 r184
 r3A~
+r4`r
 r<\rND
 rAGW
 rB2pBB
@@ -38084,7 +38095,6 @@ rF6t
 rFC822localPart
 rFur`7\t
 rL[i+
-rPh!
 rR"P9O&J/H-^~
 rRfKR
 rX&O0

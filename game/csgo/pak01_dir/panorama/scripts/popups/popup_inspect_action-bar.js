@@ -29,6 +29,7 @@ var InspectActionBar;
         _SetupAddRemoveToCartButtons(elActionBar, itemId, nPrice);
         _SetupCartActionsBtn(elActionBar, nPrice, itemId);
         _ShowHideCartBtn(elActionBar, nPrice);
+        _ShowHideFavoriteBtn($.GetContextPanel(), elActionBar, nPrice);
         if (!elActionBar.Data().panelRegisteredForEvents) {
             elActionBar.Data().panelRegisteredForEvents = true;
             $.RegisterForUnhandledEvent('PanoramaComponent_Loadout_EquipSlotChanged', () => _SetupEquipItemBtns(elActionBar, itemId));
@@ -266,6 +267,33 @@ var InspectActionBar;
         }
         elOpenCartBtn.SetHasClass('hidden', false);
     }
+    function _ShowHideFavoriteBtn(cp, elPanel, nPrice) {
+        const elBtn = elPanel.FindChildInLayoutFile('id-sticker-bookmark');
+        const defIndex = InspectShared.GetPopupSetting('sticker_def_index', cp);
+        if (!nPrice || !defIndex) {
+            elBtn.SetHasClass('hidden', true);
+            return;
+        }
+        elBtn.checked = GameInterfaceAPI.GetSettingString('cl_major_store_watch_list').split(',').includes(defIndex.toString());
+        elBtn.SetPanelEvent('onactivate', () => {
+            const aDefIndexes = GameInterfaceAPI.GetSettingString('cl_major_store_watch_list').split(',');
+            const idIndex = aDefIndexes.findIndex(id => id === defIndex.toString());
+            if (idIndex === -1) {
+                aDefIndexes.push(defIndex.toString());
+            }
+            else {
+                aDefIndexes.splice(idIndex, 1);
+            }
+            GameInterfaceAPI.SetSettingString('cl_major_store_watch_list', aDefIndexes.length > 0 ? aDefIndexes.join(',') : "");
+        });
+        elBtn.SetPanelEvent('onmouseover', () => {
+            UiToolkitAPI.ShowTextTooltip('id-sticker-bookmark', '#major_store_bookmark_tooltip');
+        });
+        elBtn.SetPanelEvent('onmouseout', () => {
+            UiToolkitAPI.HideTextTooltip();
+        });
+        elBtn.SetHasClass('hidden', false);
+    }
     function _OnActivateUpdateSelectionForMultiSelect(idSubjectItem, contextPanel) {
         CloseBtnAction(_GetSettingCallback(contextPanel), contextPanel);
         $.DispatchEvent('UpdateSelectItemForCapabilityPopup', InspectShared.GetPopupSetting('capability', contextPanel), idSubjectItem, !InspectShared.GetPopupSetting('is_selected', contextPanel));
@@ -410,6 +438,7 @@ var InspectActionBar;
     function CloseBtnAction(callbackHandle = -1, elActionBar) {
         $.DispatchEvent("CSGOPlaySoundEffect", "inventory_inspect_close", "MOUSE");
         $.DispatchEvent('UIPopupButtonClicked', '');
+        UiToolkitAPI.HideTextTooltip();
         if (callbackHandle != -1) {
             UiToolkitAPI.InvokeJSCallback(callbackHandle);
         }

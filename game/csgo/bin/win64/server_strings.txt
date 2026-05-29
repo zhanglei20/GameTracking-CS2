@@ -102,10 +102,7 @@
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  (Dirty Animation)
  (Disabled on Server)
  (INVALID PSS PARAMETERS)\n
@@ -326,7 +323,6 @@
 "F\n'CMsgGCCStrike15_v2_ClientAccountBalance
 "Find " + entityType + " Entities In Trigger
 "Find " + entityType + " Entities Within Radius
-"Find " + entityType + " Entity
 "Find " + entityType + " Entity Within Radius
 "Find All " + entityType + " Entities
 "G\n#CMsgGCStorePurchaseFinalizeResponse
@@ -2241,11 +2237,8 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
-.0VU
-.0XU
-.0oU
 .0qU
-.0rU
+.0sU
 .4bb
 .97yY
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
@@ -8523,9 +8516,8 @@ $tH@T\tI
 .PEAVCPlayer_UseServices@@
 .PEAVCPlayer_WaterServices@@
 .PEAVCPlayer_WeaponServices@@
-.PUU
-.PVU
-.PgU
+.PWU
+.PYU
 .PlayerCommendationInfo
 .PlayerDecalDigitalSignature
 .PlayerDecalDigitalSignature":\n
@@ -8535,8 +8527,9 @@ $tH@T\tI
 .PlayerRankingInfo
 .PlayerRankingInfo"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
 .PlayerRankingInfo.PerMapRank
-.PoU
-.PqU
+.PpU
+.PrU
+.PsU
 .Q.Ol
 .ScoreLeaderboardData
 .ScoreLeaderboardData"S\n%CCSUsrMsg_PlayerDecalDigitalSignature
@@ -8827,12 +8820,12 @@ $tH@T\tI
 .dx_LV9
 .fatdem
 .lbN
-.pUU
 .pVU
-.pgU
-.poU
+.pWU
+.phU
 .pp@0
-.psU
+.ppU
+.prU
 .text$
 .vjs_c
 .vmap
@@ -8874,13 +8867,13 @@ $tH@T\tI
 02V8[
 05=k
 08@HR
-08@J
 08bX
 09,h
 0;Q5[
 0<cz
 0@NX^b!/@P\b
 0AOY_c"2CQ[c
+0H\nP
 0M2~@p
 0Mc\t\n
 0W/5
@@ -8988,7 +8981,7 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
-2\vp4
+2\vpT
 2^pV
 2a"l
 2bT~
@@ -9112,21 +9105,24 @@ $tH@T\tI
 5s\nl
 5t?F
 5~EW
+6 7U
+6 aU
+6 yU
 6#6165676;6M6O6S6Y6a6k6m6
 6#RDP#
 6%vi
 6,2K
 6-zeZ
-60_U
+60eU
+60zU
 62$|S)6f
 64CK\vH
-6666666666666666 %
+6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 67-s
-6@cU
 6H,N
 6O|T%
-6PfU
+6P`U
 6Qd=
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -9142,6 +9138,7 @@ $tH@T\tI
 6\n2GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
 6\n\nvariations
 6_wEX
+6`dU
 6afD
 6bX+
 6c&0|vvX
@@ -9149,8 +9146,7 @@ $tH@T\tI
 6l13
 6lkc
 6myY;
-6p*U
-6pbU
+6pgU
 6qo~
 6r-m_v
 6r1ij
@@ -9198,6 +9194,7 @@ $tH@T\tI
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
 8A6j
+8B@B
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9356,7 +9353,6 @@ $tH@T\tI
 =trF6,#
 >#>)>/>3>A>W>c>e>w>
 >0 = watershed, 1 = monotone, 2 = layers
->0eU
 >4|6eXg_e
 >7^0g
 >>NAVGEN MOVABLE: Skipping movable mesh... no polys present\n
@@ -9378,7 +9374,7 @@ $tH@T\tI
 >?SetClassName@FunctionTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@@Z
 >JRZ`c4DLV_c*8AN\c
 >KS[ac5>IU^c+0<LZc
->P2U
+>PfU
 >Sem
 >WK6
 >\n9k_EGCItemCustomizationNotification_ClientRedeemFreeReward
@@ -9393,6 +9389,8 @@ $tH@T\tI
 >fN46R^
 >l\rur
 >p00<
+>p3U
+>paU
 >yhP
 >ztq
 ?33s?
@@ -9405,7 +9403,6 @@ $tH@T\tI
 ??1HandleScope@v8@@QEAA@XZ
 ??1TryCatch@v8@@QEAA@XZ
 ??SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
-?Autosave
 ?BooleanValue@Value@v8@@QEBA_NPEAVIsolate@2@@Z
 ?CEntityIOOutput
 ?Call@Function@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@HQEAV52@@Z
@@ -9432,7 +9429,8 @@ $tH@T\tI
 ?HP4
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 ?No data
-?Spring stiffness for length constraint
+?Show listening addition/removals
+?Spring damping ratio for length constraint
 ?VBH;
 ?\n:k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 ?\n:k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions
@@ -9452,20 +9450,18 @@ $tH@T\tI
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N
 @0pp
 @333
 @333?
 @33s@
-@6 VU
-@6@UU
+@6@WU
+@6`VU
 @?SlowGetAlignedPointerFromInternalField@Object@v8@@AEAAPEAXH@Z
 @Aff
 @BH]f
 @BoneSetup
 @CBaseToggle
-@CWeaponNegev
-@HPX`hv
+@HPX`hv0|U
 @MfKZ
 @Pgl
 @Pu\rm
@@ -9478,6 +9474,7 @@ $tH@T\tI
 @\n\nnomination
 @\n\tPlacement
 @\n\vserver_type
+@clear_bombs
 @cs_script
 @dKb]
 @fff>fff>fff>fff>
@@ -9501,7 +9498,6 @@ A<fP
 A>x8
 A@d0I
 AA Compromise
-AA:@G
 AABBDirection
 AACompromise
 AC2,h
@@ -10024,6 +10020,7 @@ AwardText
 Axis
 AxisAngleToQuaternion
 B!rA
+B"Find " + entityType + " Entity
 B#B)B/BCBSBUB[BaBsB}B
 B*k@5
 B+N3
@@ -10166,6 +10163,7 @@ BOUNDARY
 BPE_Diagnostic
 BPE_StringCommand
 BREAKABLE
+BReports all list of all entities in a map, one by one
 BRouteMsgToJob
 BT5f
 BT_ACTION_MOVETO_FASTEST_ROUTE
@@ -10305,7 +10303,6 @@ Bloodlvl3
 Bloodlvl4
 Bloodlvl5
 Bloodlvl6
-Bmp_global_damage_per_second
 BoX5
 Body Component Scriptdesc
 BodyGameSystem
@@ -14648,7 +14645,6 @@ F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
 F\rH'4
-F`AU
 Face %s
 Face Actor
 Face Entity
@@ -18218,9 +18214,6 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08J
-P08N
 P1\t98"
 P5[1
 PAGN_4
@@ -18286,6 +18279,7 @@ PGr]
 PHAG2
 PHYSGUN
 PHYS_SAVE_RESTORE_VERSION
+PH\nP
 PHhn}Y
 PISTOL
 PKCS #7 SIGNED DATA
@@ -18519,7 +18513,7 @@ Permanently removes the entity from the world.
 Permit Responses
 Permitted
 Persist
-Pf0?U
+PfP@U
 Phys.GlassBreakLg
 Phys.GlassBreakMd
 Phys.GlassBreakSm
@@ -18677,7 +18671,7 @@ Please specify 0 or 1 with the -stream Parameter\n
 Please wait for broadcast to start ...
 Pm8A?
 PmR"H?
-Pn0@U
+PnPAU
 Point entity.
 PointTemplate
 Policy Qualifier CPS
@@ -19013,7 +19007,7 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDS}
 RTime32
-R\fp4
+R\fpT
 R\r1>Vp
 R\vp!y
 R]Di
@@ -21424,7 +21418,6 @@ Using spawn points configuration 0x%08X\n
 Ut]<E
 Uv1t
 Uz_G3=
-V0)U
 V07;m
 V2I_ASIDENTIFIERS
 V2I_AUTHORITY_INFO_ACCESS
@@ -21471,6 +21464,7 @@ VNotify Abandoned (Not enabled)\n
 VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
+VP*U
 VR_HAND_HAPTIC_PULSE_LIGHT
 VR_HAND_HAPTIC_PULSE_MEDIUM
 VR_HAND_HAPTIC_PULSE_STRONG
@@ -22385,6 +22379,7 @@ Z~wl
 \n========================================\n
 \nDictionary: %s\n
 \nGameTick_t
+\nPH\nP
 \nSimulating Entities:\n\n
 \nVisMon: Polling now. (Frequency: %f)\n
 \n\fBPE_Teleport
@@ -22966,7 +22961,6 @@ Z~wl
 \ri1I
 \rjwB\t
 \roKK
-\rp5U
 \rrCj
 \rusercmd.proto"V\n
 \sG7tPD
@@ -22992,7 +22986,6 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNone\n
-\tP4U
 \tPrivate script scope:
 \tPublic script scope:
 \tRead %s\t%s%s%s,\tOffs 0x%04x\n
@@ -23033,6 +23026,7 @@ Z~wl
 \tlast acknowledged tick %d\n
 \tnexttoken
 \toRE
+\tp5U
 \ttqE5
 \tv %f %f %f\n
 \tvn %f %f %f\n
@@ -23123,11 +23117,10 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`6 WU
 `60YU
-`60pU
-`6`XU
-`6`YU
+`6@XU
+`6PZU
+`6PqU
 `:zQF
 `D$daM-l
 `DZG
@@ -29721,9 +29714,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
-p0jPY
 p250
+p2@B
 p2{l
 p4Z3
 p5Z3
@@ -30591,7 +30583,7 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
-r\vp4
+r\vpT
 rad2deg
 radio.go
 radio.letsgo
@@ -33723,11 +33715,11 @@ zz2K
 }gE3
 }n2W
 }}JSON_END\n
+~0rU
 ~9ob
 ~If D
 ~P2T
 ~R65Fu
 ~jLRG
-~pqU
 ~w]UG
 ~yhZ

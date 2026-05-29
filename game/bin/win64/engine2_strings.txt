@@ -151,12 +151,11 @@
  %i refs\n
  (08@HPX`hpx
  (08@HPX`jpJ
- (08@HPXbP
+ (08@HPXb
  (08@HPZpJ
- (08@HRP
- (08@JP
+ (08@HR
  (08@JpJ
- (0X`hpzP
+ (0X`hpz
  (Start: 
  (Texture)
  (default = .tga + .wav file)\n
@@ -172,7 +171,6 @@
  -component "%s"
  -noscreenshot
  -product "%s"
- .P3G
  2r6
  3CQ`p
  7Me}
@@ -865,7 +863,6 @@ $tI(knN
 (*VERB) not recognized
 (0`hpx
 (27>?<:20./-(
-(4PA
 (64-bit process)
 (8GXgw
 (?R or (?[+-]digits must be followed by )
@@ -933,6 +930,7 @@ $tI(knN
 (channel = 
 (dump took %.1fms)\n
 (end of input).\n\t This indicates a poorly specified lexer RULE\n\t or unterminated input element such as: "STRING["]\n
+(f 0G
 (merge 
 (no landmark)
 (no reason given)
@@ -1080,8 +1078,8 @@ $tI(knN
 ../src/shaders
 ..\content
 .00cfg
-.04G
-.09G
+.0AG
+.0CG
 .9GXdx
 .>\rfJBGo
 .?AU?$Container@VUnknownFieldSet@protobuf@google@@@InternalMetadata@internal@protobuf@google@@
@@ -2465,11 +2463,11 @@ $tI(knN
 .CSVCMsg_GameEventList.key_t"
 .CSVCMsg_SendTable.sendprop_t
 .CSVCMsg_Sounds.sounddata_t
-.DjB
 .EProtoDebugVisiblity:
 .ERQLC*
 .ESource2PlayStatsFieldType
 .ESplitScreenMessageType
+.P4G
 .P6AXPEBD@Z
 .PEAVCEntityIdentity@@
 .PLACEHOLDER_VALUE
@@ -2511,6 +2509,8 @@ $tI(knN
 .log
 .los
 .lzh
+.p4G
+.p9G
 .pdata
 .placeholder.proto
 .rdata
@@ -2575,9 +2575,7 @@ $tI(knN
 0 0 0 255
 0"$\n\rCSVCMsg_Print
 0$2z4
-0$nF
 0(D7
-0,hB
 00000000-0000-0000-0000-000000000000
 00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
 00A+
@@ -2585,7 +2583,7 @@ $tI(knN
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
 08@HRpJ
-08@JP
+08@J
 08BpJ
 08\fj
 0: Force z prepass off. 1: Force on. -1: Don't force
@@ -2596,14 +2594,13 @@ $tI(knN
 0=Off, 1=Visualize trace from camera, 2=Visualize occlusion, 3=Visualize far field trace from camera
 0B_u
 0C&C
-0DNB
 0E>X
 0T.Q
 0X8b?~
 0\n\vserializers
+0dnF
 0iN>/
-0pYB
-0vDjB
+0lhB
 0x%x,
 0|t?L
 0|t?uj
@@ -2651,15 +2648,13 @@ $tI(knN
 2Hax
 2NK?
 2Ogx
-2Py%
 2Z4\nf
 2\f8Kf
 2\r%2t
 2\r.PrefetchType"h\n
 2\rU2t
-2\vp$nF
-2\vp,hB
-2\vppYB
+2\vpdnF
+2\vplhB
 2i0/
 3$EE\f
 3'F^7
@@ -2700,11 +2695,14 @@ $tI(knN
 5\n\vnested_type
 5c;3E
 5y?4
+60 G
+60)G
 64-bit
 6?k 6?t
 6GQ^h~
 6KT3c7
 6NK>
+6P1G
 6\fXO>\ntA
 6\n\fmessage_type
 6\r56t
@@ -3170,18 +3168,16 @@ $tI(knN
 ?ysB
 @ Current  :  %s\n
 @08@HPX`hpx
-@08NDjB
+@08N
 @2pJ
+@609G
+@60;G
 @GetProfile_ultrafast
 @HPX
 @HPX&I
-@HPX`hvp
-@HVP(G
+@HPX`hv
 @^8U)zj
-@fDjB
-@htPA
 @i-kuX
-@nDjB
 A command with the specified name already exists. Cannot create an alias with the same name.\n
 A dB floor of when to stop transmitting packets, the volume between this and voice_threshold will still transmit packets to allow for volume ramping.
 A file with this name is already in the pool.
@@ -3191,7 +3187,6 @@ A!;I2
 A2r>
 A7/s
 A>pP&
-AA:Py%
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -5152,13 +5147,13 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 Extra arguments given after name\n
 ExtractModuleMetadata
 Extraneous token
+F0/G
 F>qUxv
 FAIL
 FALSE
 FATAL
 FCVAR_CHEAT cvars reverted to defaults (sv_cheats disabled).\n
 FEMh\f
-FP4G
 FPS: Avg=%.1f, P1=%.1f\n
 FSKey=
 FWj|
@@ -5603,7 +5598,6 @@ G|u0J\n
 H$6t
 H*0"ZOW
 H.FM
-HAc_
 HD?0
 HGR9\f
 HH:mm:ss
@@ -5620,6 +5614,7 @@ HLTV:maxplayers set to %i\n
 HLTVServerAsync
 HLTV_CopyNewEntity: GetDynamicBaseline(%d) failed.
 HSR_GAME_REMOTE_CHANGELEVEL_RECONNECT
+HUc_
 HammerMapLoader001
 Hangul
 Hanunoo
@@ -5633,7 +5628,7 @@ HelpSystem_001
 Hen\fM
 Hex and octal numbers must be integers.
 Hibernating
-Hic_
+Hid_
 Hide the console.
 Hides the game UI
 Highest unlocked game chapter.
@@ -6545,20 +6540,17 @@ Override Fog color: %f %f %f\n
 Overrides the SourceTV master root address.
 Overrides the max players reported to prospective clients
 Overriding minidump handler with Engine2MinidumpFunction\n
-P,QB
-P,hB
-P08@JP
-P08J`
-P08NDjB
+P08@J
+P08J
+P08N
 P2pJ
 P4File
-P6 9G
+P6`9G
 P:S;A
 P?fff?33s?{
 P@HPX`hpx\f
 PBDEMS2
 PCRE does not support \L, \l, \N{name}, \U, or \u
-PDNB
 PHrk
 PInstruction_t<41>::Run
 PInstruction_t<42>::Run
@@ -6680,6 +6672,7 @@ Phoenician
 PhysicsBuilderMgr001
 Ping
 PjpJ
+PlQB
 Plain assert text (has prefix)\n
 Plain general text (no prefix)\n
 Plat_AlertUser
@@ -6826,8 +6819,9 @@ Playing '%s'\n
 Playing Broadcast (%s)
 Playing Demo (%s)
 Playing back demo: '%s' at tick %u\n
+PlhB
 PmNk
-PnDjB
+PnP\nG
 Pointers cannot be used as numeric values
 PollAndProcessInput
 Poor man's restart: reload the current map from disk.
@@ -7012,9 +7006,8 @@ RP_PAUSE
 RP_TOGGLEPAUSE
 RSDS
 RST%d
-R\fppYB
 R\tV_log2_uint
-R\vp,hB
+R\vplhB
 RaiseException
 Random Float
 Random Integer
@@ -8327,7 +8320,6 @@ UtlVectorMemory_CalcNewAllocationCount
 UtlVectorMemory_FailedAllocation
 U}JK
 U}g7x~
-V 3G
 V/?[w8rV
 V<@ss
 V?wm\v
@@ -8424,6 +8416,7 @@ V_TryAndMakeFriendlyNameFromCppName
 V_UInt32ToString_Unsafe
 V_UInt64ToString_Unsafe
 V_UnqualifiedFileName
+V`3G
 Validate each StateChanged against known offsets.
 Validation stalled\n
 Value must be "true" or "false" for boolean option "
@@ -8664,7 +8657,6 @@ Z?SHX?
 Z@&LHA'\r:C(
 ZOCg
 ZPKE?81("
-ZPy%
 ZW][Rbmxv\fqsuwc;Wo?opP~|}|
 Z\>z8
 Z\n(NETWORK_DISCONNECT_KICKED_HOSTAGEKILLING
@@ -8745,9 +8737,8 @@ Zq",9\fB
 \fV4U
 \fX\fm\vH\vH\vm\v
 \f\tV_atofloat32
-\fp,hB
-\fp\v`DNB
-\fp\v`pYB
+\fp\v`lhB
+\fplhB
 \g is not followed by a braced, angle-bracketed, or quoted name/number or by a plain number
 \n    Actual    : 
 \n    Field type: 
@@ -9078,6 +9069,8 @@ Zq",9\fB
 \r\n\tsvc_Print
 \r\r\f\f\f\f\v\v\v\n\n\n\t\t\t\t\t\t
 \rmj>zjZ
+\rp\f`\v0lhB
+\rp\f`\vPlhB
 \t The lexer was matching from line %d, offset %d, which\n\t 
 \t"%s" has %d known peers:\n
 \t"%s" has no known peers.\n
@@ -9149,7 +9142,6 @@ Zq",9\fB
 \vH\vm\vm\vm\vm\vH\vH\vH\vH\vH\v
 \vIG]h
 \vInterp
-\vPDNB
 \vSimulationTicks
 \vSource
 \vVyC
@@ -9158,8 +9150,7 @@ Zq",9\fB
 \vm\vm\vm\vH\vm\vm\v
 \vm\vm\vm\vm\vH\v
 \vnJH
-\vp,hB
-\vppYB
+\vplhB
 \vxYT
 ] is an invalid data character in JavaScript compatibility mode
 ]\n,NETWORK_DISCONNECT_REJECT_INVALIDRESERVATION
@@ -9223,10 +9214,9 @@ _root_keyname
 _spawngroup_logging/log_%s_group_%s.txt
 _temp_mapcycle.txt
 `-uRQg
-`2Py%
 `2pJ
 `3Q"X
-`6@2G
+`6P;G
 `6P<G
 `?m'_?&~]?(
 `RTTI
@@ -9243,13 +9233,12 @@ _temp_mapcycle.txt
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
-`fDjB
 `generic-class-parameter-
 `generic-method-parameter-
 `generic-type-
 `hp\nU
-`htPA
 `hyz
+`lhB
 `local static destructor helper'
 `local static guard'
 `local static thread guard'
@@ -9258,10 +9247,8 @@ _temp_mapcycle.txt
 `managed vector constructor iterator'
 `managed vector copy constructor iterator'
 `managed vector destructor iterator'
-`nDjB
 `non-type-template-parameter
 `omni callsig'
-`pYB
 `placement delete closure'
 `placement delete[] closure'
 `scalar deleting destructor'
@@ -9291,7 +9278,6 @@ a numbered reference must not be zero
 a&M-=Z]<i*k)n-t&q&p&|
 a6>r
 a?wSa?\
-aBvDjB
 a\v4+Wk
 abcdefghijklmnopqrstuvwxyz
 abortflag
@@ -9984,16 +9970,13 @@ extend .$0 {\n
 extendee
 extension_range
 extern "C" 
-f"RG
 f#kI3\t
-f.RG
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
 f9U\n
 f?3Jf?6
 fD""B
 fD>b
 fDD"AUDT$t
-fDjB
 fP~V
 fWi?
 fabs
@@ -10010,6 +9993,7 @@ false:=\n
 false:=\n\rvalve_map_key
 false:?\n
 fast path %d at %d\n
+fbRG
 field
 field_serializer_name_sym
 field_serializer_version
@@ -10041,6 +10025,7 @@ float32
 float64
 floor
 fmod
+fnRG
 fog_enable
 fog_override_color
 fog_override_enable
@@ -10239,7 +10224,6 @@ hostname
 hostname : %s\n
 hostname_in_client_status
 hostport
-hpzP
 hscript
 hscript_lightbinding
 http Send %.3f ms ave, %.3f ms max\n
@@ -10735,13 +10719,12 @@ multvar
 multvar: cvar "%s" not found\n
 multvar: no varname specified!\n
 mx=E
-n0.G
+n0,G
 n03>Pu
 n>sak><
 n?A6
 n?SZn?
 nBits != 32
-nDjB
 nGh>
 nI9>h
 nMax
@@ -10852,7 +10835,7 @@ not started
 not supported
 notes
 nothing to repeat
-npAG
+np.G
 null
 nullptr
 num_bits
@@ -10963,28 +10946,26 @@ overwatch
 owM&
 owner dead
 oz>!km>
-p,QB
-p,hB
-p08@H^DjB
+p08@H^
 p0p@
 p2pJ
 p2p_listpeers
 p2p_ping "%s"
 p4edit
-p>DjB
+p6@&G
+p>7RG
 p?ff
 p@HPX`h\f
 pClass
 pClass->m_ClassID(%i) >= %i\n
 pClient
 pCm)
-pDNB
-pFP4G
 pH\fy
 pMessage
 pServerClass
 pYa(bu
 p\r0\fP
+p\r`\fPlhB
 p\tV_sinf
 package
 packed
@@ -11029,6 +11010,7 @@ phys_highlight_expensive_objects
 phys_highlight_expensive_objects_strength
 ping
 pitch
+plQB
 playback_frames
 playback_ticks
 playcast
@@ -11053,7 +11035,7 @@ playing %s from '%s'\n
 playsound
 playsound 
 playsound <soundname>
-pnDjB
+plhB
 png 
 png_screenshot
 pointer, 
@@ -11067,7 +11049,6 @@ pos [player %d]: %.3f,%.3f,%.3f\n
 position
 positive_int_value
 postnetupdate
-ppYB
 preDistortionRenderSizeFactor
 predicted_by_player_slot
 prediction_sync
@@ -11138,7 +11119,6 @@ rA?7
 rEy5
 rFg7
 r\tVr.>T
-r\vppYB
 r_add_views_in_pre_output
 r_always_render_all_windows
 r_aspectratio
@@ -12007,8 +11987,8 @@ utcdatetime_vals
 utl_vector, 
 utlstringtoken
 uzKs@>
+v0@G
 v2!L.2
-vDjB
 vE-2
 vQO+t
 vWewe

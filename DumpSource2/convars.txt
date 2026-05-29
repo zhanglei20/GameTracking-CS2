@@ -1516,6 +1516,9 @@ cl_log_tick_skips 0 (developmentonly defensive)
 cl_low_latency_vsync_recommendation_dont_show_again false (clientdll archive release)
 	<no description>
 
+cl_major_store_watch_list "" (clientdll archive)
+	<no description>
+
 cl_map_preview_debug_jitter false (developmentonly clientdll defensive)
 	<no description>
 
@@ -7841,6 +7844,9 @@ r_skip_precache_validation_check false (developmentonly defensive)
 
 r_smooth_morph_normals true (release)
 	<no description>
+
+r_spectator_flashbang_opacity 0.6 (min: 0.2, max: 1, clientdll archive)
+	Spectator flash opacity
 
 r_ssao true (developmentonly defensive)
 	Set to use screen-space ambient occlusion

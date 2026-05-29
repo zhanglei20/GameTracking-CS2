@@ -1,10 +1,7 @@
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
  (08@HPX`j0y
- (08@HPXb
  (08@HPZ0y
- (08@HR
  (08@J0y
- (0X`hpz
 !m_hParam.IsValid()
 %%s%%s%%d:  sv[%%%d.%ds] cl[%%%d.%ds]\n
 %s:  IGameSystem::LoopActivateAllSystems {\n
@@ -97,7 +94,6 @@
 .?AVISinglePlayerSharedMemory@@
 .?AVISource2Host@@
 08@HR0y
-08@J
 08B0y
 2\vpT
 2\vpt
@@ -105,7 +101,6 @@
 8B0y
 8\n0y
 ?expf
-@08N
 @20y
 @HPX`hvP.
 @ht0|
@@ -144,9 +139,6 @@ IND)ind)"
 LightmapUV
 LightmapUVW
 OverlayProjectionDirection
-P08@J
-P08J
-P08N
 P20y
 P6PI
 P6pN
@@ -206,7 +198,6 @@ m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 medium
 optionallycompressedtangentframe
-p08@H^
 p20y
 pb0y
 posxyz

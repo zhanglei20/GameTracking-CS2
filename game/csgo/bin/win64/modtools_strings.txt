@@ -16,10 +16,7 @@
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  * Adding Bone :: < %10.4f %10.4f %10.4f >\n
  - (Additive)
  255
@@ -8758,7 +8755,6 @@ $modelname$_surface
 .tif
 .webp
 08@HR
-08@J
 0:0j\r
 0\r%0t
 0\tV_frexpf
@@ -8803,7 +8799,6 @@ $modelname$_surface
 @%s_lookFrame_1
 @%s_lookFrame_2
 @08NP
-@HPX`hv
 @Integer overflow in %s
 @Invalid Internal Point
 @m_vCenter
@@ -11893,7 +11888,6 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P08@J
 P08J0
 P08NP
 PARENT

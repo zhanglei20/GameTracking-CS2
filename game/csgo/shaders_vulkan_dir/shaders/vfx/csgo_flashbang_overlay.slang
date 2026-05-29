@@ -272,7 +272,7 @@ PS
 	CreateInputTexture2D(TextureColor, Srgb, 8, "", "_color", "Color/10", Default4(1, 1, 1, 0));
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2780 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2908 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	static float4 _3;
 	
@@ -346,7 +346,7 @@ PS
 	    {
 	        _19456 = _9358.z;
 	    }
-	    float3 _13437 = (pow(g_tFlashbangFrame.SampleLevel(g_sPointClamp, (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy, 0.0f).xyz, 2.2000000476837158203125f.xxx).xyz * _21709).xyz * 4.0f;
+	    float3 _13437 = (pow(clamp(g_tFlashbangFrame.SampleLevel(g_sPointClamp, (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy, 0.0f).xyz, 0.0f.xxx, 1.0f.xxx).xyz, 2.2000000476837158203125f.xxx).xyz * _21709).xyz * 4.0f;
 	    float4 _8673;
 	    _8673.x = _13437.x;
 	    _8673.y = _13437.y;
