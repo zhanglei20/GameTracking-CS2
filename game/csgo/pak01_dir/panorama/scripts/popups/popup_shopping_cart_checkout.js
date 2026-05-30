@@ -379,7 +379,6 @@ var PopUpShoppingCartCheckout;
                 Init();
                 cp.FindChildInLayoutFile('id-cart-add-tokens').SetHasClass('hidden', true);
                 cp.FindChildInLayoutFile('id-cart-balance').TriggerClass('popup-major-store__top-bar__balance-anim');
-                _InvokeCallback(cp);
             }
             cp.FindChildInLayoutFile('id-cart-add-tokens').SetHasClass('hidden', false);
             AddMajorTokensAnim.StartAnim(cp.FindChildInLayoutFile('id-cart-add-tokens'), cp.FindChildInLayoutFile('id-cart-balance'), cp.Data().activatedCredits, CallAtEndAnimation);

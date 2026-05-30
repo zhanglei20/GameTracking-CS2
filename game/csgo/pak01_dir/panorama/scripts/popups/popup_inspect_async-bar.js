@@ -136,7 +136,7 @@ var InspectAsyncActionBar;
         }
         else if (worktype === 'craft_souvenir') {
             const fauxCartItemID = oSettings.temp_display_item_id;
-            const nPurchaseCost = _ComputeTotalSouvenirCost(oSettings.popup_panel, fauxCartItemID);
+            const nPurchaseCost = _ComputeTotalSouvenirCost(oSettings.popup_panel, fauxCartItemID).discountPrice;
             const strPurchaseCommand = 'craft_souvenir:' + itemId + ':' + oSettings.umid_souvenir;
             m_SouvenirCheckoutCart = ShoppingCart.findOrCreateTempCart(itemId, true);
             const shopItem = {
@@ -217,26 +217,35 @@ var InspectAsyncActionBar;
             const btnId = 'AsyncItemWorkAcceptConfirmHold';
             const btnHoldAction = elPanel.FindChildInLayoutFile(btnId);
             let locString = '#popup_' + worktype + '_button';
-            const nTotalCostInCredits = _ComputeTotalSouvenirCost(oSettings.popup_panel);
-            const umidSouvenir = InspectShared.GetPopupSetting('umid_souvenir');
-            if (nTotalCostInCredits) {
-                btnHoldAction.SetDialogVariableInt('cost_souvenir', nTotalCostInCredits);
-                m_panelsToSetCost = [btnHoldAction];
-                locString += '_spend';
-                locString = $.Localize(locString, btnHoldAction);
-            }
             btnHoldAction.RemoveClass('AsyncItemWorkAcceptNegativeHidden');
             const btnSettings = {
                 btn: btnHoldAction,
-                tooltip: '#popup_' + worktype + '_button_tooltip',
                 locString: locString,
                 loopingSound: 'UI.Laptop.ButtonFillLoop',
                 timerCompleteAction: () => {
                     _OnAccept(oSettings, elPanel);
                 }
             };
+            const tempCreatedItem = InspectShared.GetPopupSetting('temp_display_item_id');
+            btnHoldAction.SetPanelEvent('onmouseover', () => {
+                UiToolkitAPI.ShowCustomLayoutParametersTooltip(btnHoldAction.id, 'tooltip-souvenir-receipt', 'file://{resources}/layout/tooltips/tooltip_souvenir_receipt.xml', 'itemid=' + tempCreatedItem);
+            });
+            btnHoldAction.SetPanelEvent('onmouseout', () => {
+                UiToolkitAPI.HideCustomLayoutTooltip('tooltip-souvenir-receipt');
+            });
+            const oPriceData = _ComputeTotalSouvenirCost(oSettings.popup_panel);
+            const elDiscount = elPanel.FindChildInLayoutFile('id-souvenir-discount');
+            if (oPriceData.discountAmount > 0) {
+                elDiscount.SetHasClass('hidden', false);
+                elDiscount.SetDialogVariableInt('discount', oPriceData.discountAmount);
+                elDiscount.SetDialogVariableInt('price', oPriceData.discountPrice);
+                elDiscount.SetDialogVariableInt('original-price', oPriceData.originalPrice);
+            }
+            else
+                elDiscount.SetHasClass('hidden', true);
             HoldButton.SetupButton(btnSettings);
             btnHoldAction.enabled = true;
+            const umidSouvenir = InspectShared.GetPopupSetting('umid_souvenir');
             const elButtonChangeSouvenirItem = elPanel.FindChildInLayoutFile('ChangeSouvenirItem');
             elButtonChangeSouvenirItem.RemoveClass('hidden');
             elButtonChangeSouvenirItem.SetPanelEvent('onactivate', () => {
@@ -244,7 +253,6 @@ var InspectAsyncActionBar;
                 _ClosePopup();
                 $.DispatchEvent('ShowSelectItemForCapabilityPopup', umidSouvenir, '', 'craft_souvenir');
             });
-            elPanel.FindChildInLayoutFile('MakeSouvenirPlayerSelectIcon').RemoveClass('hidden');
             const elMakeSouvenirPlayerSelect = elPanel.FindChildInLayoutFile('MakeSouvenirPlayerSelect');
             elMakeSouvenirPlayerSelect.RemoveClass('hidden');
             const goldenItemId = InspectShared.GetPopupSetting('temp_display_item_id');
@@ -720,7 +728,6 @@ var InspectAsyncActionBar;
             _ClosePopup();
             return;
         }
-        OnEventToClose();
         if (type === 'xp_shop_use_ticket' || type === 'xp_shop_ack_tracks') {
         }
         else if (type === 'keychain_tool_charges' && worktype === 'useitem') {
@@ -730,12 +737,18 @@ var InspectAsyncActionBar;
                 ',' + 'inspect_only=true');
         }
         else if (type === 'seasontiers') {
-            const popupPanel = UiToolkitAPI.ShowCustomLayoutPopup('id-popup-major-store', 'file://{resources}/layout/popups/popup_major_store.xml');
-            popupPanel.Data().activatedCredits = cp.Data().majorCreditsToClaim;
+            if (worktype === 'useitem') {
+                const popupPanel = UiToolkitAPI.ShowCustomLayoutPopup('id-popup-major-store', 'file://{resources}/layout/popups/popup_major_store.xml');
+                popupPanel.Data().activatedCredits = cp.Data().majorCreditsToClaim;
+            }
+            else {
+                return;
+            }
         }
         else {
             $.DispatchEvent('ShowAcknowledgePopup', type, itemid);
         }
+        OnEventToClose();
     }
     function _IgnoreClose() {
         return InspectShared.GetPopupSetting('work_type') === 'decodeable';
@@ -760,13 +773,14 @@ var InspectAsyncActionBar;
         }
         const discountAmount = InventoryAPI.GetItemSouvenirDiscountPercent(tempCreatedItem);
         const discountCredits = Math.trunc(nTotalCostInCredits * discountAmount / 100);
+        let discountPrice = nTotalCostInCredits;
         if (discountCredits < nTotalCostInCredits)
-            nTotalCostInCredits -= discountCredits;
-        return nTotalCostInCredits;
+            discountPrice -= discountCredits;
+        return { discountPrice: discountPrice, originalPrice: nTotalCostInCredits, discountAmount: discountAmount };
     }
     let m_SouvenirCheckoutCart = ShoppingCart.cart;
     function _OnVolatileShopSubscribe(nContainerDef, bNewPricesParsed, cp) {
-        const nTotalCostInCredits = _ComputeTotalSouvenirCost(cp);
+        const nTotalCostInCredits = _ComputeTotalSouvenirCost(cp).discountPrice;
         if (m_SouvenirCheckoutCart !== ShoppingCart.cart) {
             m_SouvenirCheckoutCart.syncPrices((itemId) => {
                 return nTotalCostInCredits;
