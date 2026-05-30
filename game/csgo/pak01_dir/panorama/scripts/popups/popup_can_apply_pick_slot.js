@@ -133,24 +133,6 @@ var CanApplyPickSlot;
                 elPatch.SetPanelEvent('onactivate', () => oSettings.funcOnSelectForRemove(slots[j].index, oSettings));
             }
         }
-        if (worktype === 'craft_souvenir') {
-            const discountAmount = InventoryAPI.GetItemSouvenirDiscountPercent(oSettings.itemId);
-            if (discountAmount > 0) {
-                const elPatch = $.CreatePanel('RadioButton', elContainer, 'discount-sticker', { group: "remove-btns" });
-                elPatch.Data().slot = slots.length;
-                elPatch.Data().itemId = oSettings.itemId;
-                elPatch.BLoadLayoutSnippet('RemoveBtn');
-                const elImage = elPatch.FindChildInLayoutFile('RemoveImage');
-                elImage.SetImage('file://{images}/icons/ui/coupon.svg');
-                elImage.SetHasClass('popup-can-apply_remove__image__coupon', true);
-                elImage.style.washColor = InventoryAPI.GetItemRarityColor(oSettings.itemId);
-                elPatch.enabled = false;
-                const elCostLabel = elPatch.FindChildInLayoutFile('CostLabel');
-                elCostLabel.RemoveClass('hidden');
-                elCostLabel.SetHasClass('popup-can-apply_remove__label__coupon', true);
-                elCostLabel.text = `-${discountAmount}%`;
-            }
-        }
     }
     CanApplyPickSlot.ShowItemIconsToRemove = ShowItemIconsToRemove;
     function _AddItemImage(oSettings, itemid) {
