@@ -641,7 +641,7 @@ AlwaysOnTop
 Auto-fit Window
 AutoFitGridCells
 Background
-Bm4\n
+Bm4\v
 Button label (optional):
 Button-%1-%2-AltButtonText
 Button-%1-%2-BGColor

@@ -319,7 +319,7 @@ var PopupMajorStore;
         return MissionsAPI.GetSeasonalOperationFauxCreditsCost(g_ActiveTournamentInfo.credits_id, itemId);
     }
     function _GetCurrentTrend(itemId) {
-        return MissionsAPI.GetSeasonalOperationFauxItemTrend(g_ActiveTournamentInfo.credits_id, itemId);
+        return MissionsAPI.GetSeasonalOperationFauxItemTrend(g_ActiveTournamentInfo.credits_id, itemId, 'trend');
     }
     function UnreadyForDisplay() {
     }

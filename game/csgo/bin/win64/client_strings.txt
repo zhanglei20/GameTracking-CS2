@@ -110,9 +110,12 @@
  (%d)Unknown
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
- (08@HPX`j05
- (08@HPZ05
- (08@J05
+ (08@HPX`j
+ (08@HPXbp
+ (08@HPZ
+ (08@HRp
+ (08@Jp
+ (0X`hpzp
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -217,7 +220,6 @@
 !.CPlayer_GetNicknameList_Response"<
 !.CPublishedFile_Subscribe_Request
 !3mmXs
-!3xm
 !5!A!I!O!Y![!_!s!}!
 !9iV
 !AECO
@@ -310,7 +312,7 @@
 "d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo
 "e\n CCSUsrMsg_EntityOutlineHighlight
 "f\n\nCMsgTEDust
-"g3hn
+"g3p~
 "h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 "l7ql`R2lWf
 "lbN.
@@ -2204,7 +2206,6 @@ $taser_charge
 %ld bytes leaked in %d chunks\n
 %llud
 %lu:%s:%s:%d:%s\n
-%n4Pr
 %p Load from %s\n
 %p Load from memory size %d\n
 %p OnFreeAudioMainThread\n
@@ -3110,6 +3111,7 @@ $taser_charge
 ,?IsUint32@Value@v8@@QEBA_NXZ
 ,ARu@y6
 ,I?Value@Number@v8@@QEBANXZ
+,N`4P
 ,Reason=
 ,Service for dealing with user-submitted logsB
 ,ShfPQ
@@ -3164,7 +3166,6 @@ $taser_charge
 --CLoopModeGame::~CLoopModeGame
 --file:
 -.CPlayer_GetNewSteamAnnouncementState_Request
--4pq
 -5X5
 -;-C-I-M-a-e-q-
 -> Success (%d attempts)\n
@@ -10941,13 +10942,12 @@ $taser_charge
 0123456789
 02V8[
 05=k
-08@HR05
-08B05
+08@HR
+08@Jp
 08bX
 09,h
 0;Q5[
 0<cz
-0>P3
 0M2~@p
 0Marks latest announcement timestamp read by user
 0Name of the file to publish in the user's cloud.
@@ -11217,6 +11217,7 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
+2\vpT
 2^pV
 2a"l
 2bT~
@@ -11434,9 +11435,7 @@ $taser_charge
 8835-KLXV-0292
 8<pl
 8= zp
-8@J05
 8A6j
-8B05
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11446,7 +11445,6 @@ $taser_charge
 8Name of the file to use as the published file's preview.
 8SIffK5W
 8TZvrv<
-8\n05
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
 8\n3k_EGCItemCustomizationNotification_GenerateSouvenir
 8\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2
@@ -11723,14 +11721,12 @@ $taser_charge
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N$
 @0pp
-@205
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
 @C_SmokeGrenade
-@HV0
+@HPX`hv0
 @MfKZ
 @Pgl
 @Pu\rm
@@ -18056,7 +18052,6 @@ FX_RicochetSound.Ricochet
 FX_TracerSound
 F\f5F4'
 F\n ParticleFreezeTransitionOverride
-F\n05
 F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
@@ -20711,7 +20706,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
-JY38n
+JY3@~
 JZIX
 J\nHBF
 J`KL
@@ -22264,10 +22259,8 @@ P-224
 P-256
 P-384
 P-521
-P08JP7
-P08N$
+P08@Jp
 P1\t98"
-P205
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
 P5[1
@@ -22808,7 +22801,6 @@ Pitch: %6.1f   Yaw: %6.1f   Dist: %6.1f %19s
 Pitch: %6.1f   Yaw: %6.1f %38s
 Pitstop
 PivotPaint
-Pj05
 PlaceDecalEvent_t
 PlaceholderText
 PlantedBomb
@@ -23178,7 +23170,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
-Q$4Pq
+Q$4X
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23417,6 +23409,7 @@ RULESHERE
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
+R\vpT
 R]Di
 Rad2 Deg
 Radar
@@ -25600,7 +25593,7 @@ SystemInputLanguageChanged
 SystemMemoryMB
 T*8U
 T0.S
-T3(n
+T30~
 T61STRING
 T72[t
 TASK=%llu\n
@@ -27188,7 +27181,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr05
+X`hr
 Xd3h
 XfJ7
 XjfR
@@ -27394,6 +27387,7 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
+\fp\vPL
 \ful2
 \fy&3Gl
 \l:ArR
@@ -28349,7 +28343,6 @@ Z~wl
 \vj0k
 \vjC7
 ]1h=bfz
-]3Hn
 ]FhSD}
 ]GT7]
 ]G\nY1
@@ -28446,7 +28439,6 @@ _util_drawtext_pos
 _var
 _xU`u
 _}eOk
-`205
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `:zQF
@@ -28459,8 +28451,6 @@ _}eOk
 `\n\rvector_values
 `anonymous-namespace'::DynamicLockHelper<struct `anonymous namespace'::SmokeConstantBuffer_t>::Lock
 `anonymous-namespace'::DynamicLockHelper<struct `anonymous namespace'::SmokeLightProbeVolumeData_t>::Lock
-`b05
-`d05
 `fPw.\vM
 `h9T~
 `o_je
@@ -28481,7 +28471,6 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
-aBv$
 aD/x
 aDSS
 aECDH
@@ -29249,7 +29238,6 @@ b <= sizeof ctx->buf
 b <= sizeof ctx->final
 b0M%
 b2i_PVK_bio
-b3Xn
 b5o-
 b=G3
 bB"`3
@@ -30908,7 +30896,6 @@ d2i_SSL_SESSION
 d2i_TS_RESP
 d2i_X509_PKEY
 d35P
-d40r
 d4\tp
 d7NSuLq2
 d=%-2d hl=%ld l=%4ld 
@@ -33344,6 +33331,7 @@ hour
 hours
 houseIdentifier
 hover
+hpzp
 hr_H
 href="
 hscroll
@@ -33461,7 +33449,6 @@ i2d_SSL_SESSION
 i2o_ECPublicKey
 i2s_ASN1_ENUMERATED
 i2s_ASN1_INTEGER
-i4@r
 i4a."
 i5BH
 iA5StringSyntax
@@ -34442,7 +34429,6 @@ k+Aq
 k/sn
 k0>Z,
 k26C*
-k3xn
 k8\vD
 k8fo
 k8xA
@@ -34858,7 +34844,7 @@ lC57
 lDcW
 lM2p
 l\n\fexcludedtags
-l`w4pr
+l`w4
 label_token
 ladder
 ladder_angle_yaw
@@ -35187,7 +35173,7 @@ lowresdepth
 luminaire_anisotropy
 luminaire_shape
 luminaire_size
-lvR4
+lvR4 
 m&9W
 m*Zu
 m249
@@ -37034,8 +37020,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^$
-p205
+p0j@
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37398,7 +37383,6 @@ payload-%u-%u.data
 payment gateway capabilities
 payment_row_usd
 payment_us_usd
-pb05
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -38085,7 +38069,6 @@ r$0I
 r-IE
 r184
 r3A~
-r4`r
 r<\rND
 rAGW
 rB2pBB
@@ -38103,6 +38086,7 @@ rZPM
 r\n\vstart_index
 r\vDi
 r\vp!K
+r\vpl
 r_2PassBuildDraw 0
 r_2PassBuildDraw 1
 r_csm_fast_path 0
