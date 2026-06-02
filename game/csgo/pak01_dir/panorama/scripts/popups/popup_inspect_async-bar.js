@@ -233,18 +233,9 @@ var InspectAsyncActionBar;
             btnHoldAction.SetPanelEvent('onmouseout', () => {
                 UiToolkitAPI.HideCustomLayoutTooltip('tooltip-souvenir-receipt');
             });
-            const oPriceData = _ComputeTotalSouvenirCost(oSettings.popup_panel);
-            const elDiscount = elPanel.FindChildInLayoutFile('id-souvenir-discount');
-            if (oPriceData.discountAmount > 0) {
-                elDiscount.SetHasClass('hidden', false);
-                elDiscount.SetDialogVariableInt('discount', oPriceData.discountAmount);
-                elDiscount.SetDialogVariableInt('price', oPriceData.discountPrice);
-                elDiscount.SetDialogVariableInt('original-price', oPriceData.originalPrice);
-            }
-            else
-                elDiscount.SetHasClass('hidden', true);
             HoldButton.SetupButton(btnSettings);
             btnHoldAction.enabled = true;
+            _DiscountPanel(oSettings.popup_panel, elPanel);
             const umidSouvenir = InspectShared.GetPopupSetting('umid_souvenir');
             const elButtonChangeSouvenirItem = elPanel.FindChildInLayoutFile('ChangeSouvenirItem');
             elButtonChangeSouvenirItem.RemoveClass('hidden');
@@ -463,6 +454,18 @@ var InspectAsyncActionBar;
         elOK.text = sOkButtonText;
         elOK.AddClass(btnStyle);
         _SetPanelEventOnAccept();
+    }
+    function _DiscountPanel(popup_panel, elAsyncBar) {
+        const oPriceData = _ComputeTotalSouvenirCost(popup_panel);
+        const elDiscount = elAsyncBar.FindChildInLayoutFile('id-souvenir-discount');
+        if (oPriceData.discountAmount > 0) {
+            elDiscount.SetHasClass('hidden', false);
+            elDiscount.SetDialogVariableInt('discount', oPriceData.discountAmount);
+            elDiscount.SetDialogVariableInt('price', oPriceData.discountPrice);
+            elDiscount.SetDialogVariableInt('original-price', oPriceData.originalPrice);
+        }
+        else
+            elDiscount.SetHasClass('hidden', true);
     }
     function _SetUpOfferLimitDropdown(elDropdown) {
         const oLimits = JSON.parse(InventoryAPI.GetVolatileLimits());
@@ -753,7 +756,6 @@ var InspectAsyncActionBar;
     function _IgnoreClose() {
         return InspectShared.GetPopupSetting('work_type') === 'decodeable';
     }
-    let m_panelsToSetCost = [];
     function _ComputeTotalSouvenirCost(cp, itemIdSouvenir) {
         const tempCreatedItem = itemIdSouvenir ?? InspectShared.GetPopupSetting('temp_display_item_id');
         let nTotalCostInCredits = 0;
@@ -786,12 +788,6 @@ var InspectAsyncActionBar;
                 return nTotalCostInCredits;
             });
         }
-        m_panelsToSetCost.forEach((p) => {
-            if (p && p.IsValid()) {
-                p.SetDialogVariableInt('cost_souvenir', nTotalCostInCredits);
-                p.SetDialogVariable('action-label', $.Localize('#popup_craft_souvenir_button_spend', p));
-            }
-        });
         let oApplySettings = {
             headerPanel: $.GetContextPanel().FindChildInLayoutFile('PopUpCanApplyHeader'),
             infoPanel: $.GetContextPanel().FindChildInLayoutFile('PopUpCanApplyPickSlot'),
@@ -807,6 +803,7 @@ var InspectAsyncActionBar;
             funcOnSelectForRemove: () => { }
         };
         CanApplyPickSlot.Init(oApplySettings);
+        _DiscountPanel(oApplySettings.contextPanel, oApplySettings.asyncBarPanel);
     }
     function _OnMyPersonaInventoryUpdated() {
         if (InspectShared.GetPopupSetting('is_season_pass') && InventoryAPI.IsValidItemID(InspectShared.GetPopupSetting('item_id'))) {
