@@ -323,6 +323,7 @@
 "F\n'CMsgGCCStrike15_v2_ClientAccountBalance
 "Find " + entityType + " Entities In Trigger
 "Find " + entityType + " Entities Within Radius
+"Find " + entityType + " Entity
 "Find " + entityType + " Entity Within Radius
 "Find All " + entityType + " Entities
 "G\n#CMsgGCStorePurchaseFinalizeResponse
@@ -10020,7 +10021,6 @@ AwardText
 Axis
 AxisAngleToQuaternion
 B!rA
-B"Find " + entityType + " Entity
 B#B)B/BCBSBUB[BaBsB}B
 B*k@5
 B+N3

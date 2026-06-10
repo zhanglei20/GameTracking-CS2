@@ -166,12 +166,12 @@ var ContextMenuGetSouvenir;
     ;
     function _SetPreviewBtn(elMatch, rawMapName, umid) {
         let previewBtn = elMatch.FindChildInLayoutFile('id-preview-souvenir-btn');
-        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers);
+        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers, true);
         previewBtn.SetPanelEvent('onactivate', () => {
             const defidxStickerItem = InventoryAPI.GetItemDefinitionIndexFromDefinitionName('sticker');
             const idFauxSticker = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(defidxStickerItem, g_ActiveTournamentInfo.stickerids[g_ActiveTournamentInfo.stickerids.length - 1]);
             if (!MissionsAPI.GetSeasonalOperationFauxCreditsCost(g_ActiveTournamentInfo.credits_id, idFauxSticker)) {
-                StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers);
+                StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers, true);
                 return;
             }
             $.DispatchEvent('CSGOPlaySoundEffect', 'sticker_applySticker', 'MOUSE');

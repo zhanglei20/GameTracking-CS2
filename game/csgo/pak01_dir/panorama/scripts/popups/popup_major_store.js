@@ -76,7 +76,7 @@ var PopupMajorStore;
         $.RegisterForUnhandledEvent('PanoramaComponent_MyPersona_GcLogonNotificationReceived', ReadyForDisplay);
         $.RegisterForUnhandledEvent('PanoramaComponent_MyPersona_UpdateConnectionToGC', ReadyForDisplay);
         $.RegisterForUnhandledEvent('PanoramaComponent_Store_VolatileShopSubscribe', (...args) => { OnVolatileShopSubscribe(...args, cp); });
-        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers);
+        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers, true);
     }
     function Init() {
         let cp = $.GetContextPanel();
@@ -177,7 +177,7 @@ var PopupMajorStore;
         if (!cp || !cp.IsValid())
             return;
         CancelRefreshSubscription(cp);
-        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers);
+        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers, true);
         cp.Data().refreshSubscriptionHandle = $.Schedule(150, () => RefreshSubscription(cp));
     }
     PopupMajorStore.RefreshSubscription = RefreshSubscription;
@@ -243,7 +243,13 @@ var PopupMajorStore;
                 if (livePrice !== undefined && stickerData.price !== undefined) {
                     stickerData.oldPrice = stickerData.price;
                     stickerData.price = livePrice;
-                    stickerData.popularity = _GetCurrentTrend(stickerData.itemId);
+                    stickerData.popularity = _GetCurrentTrendData(stickerData.itemId, 'trend');
+                    const weeklyLow = _GetCurrentTrendData(stickerData.itemId, 'low');
+                    const weeklyHigh = _GetCurrentTrendData(stickerData.itemId, 'high');
+                    stickerData.weeklyLow = weeklyLow;
+                    stickerData.weeklyHigh = weeklyHigh;
+                    stickerData.weeklyPctReductionFromHigh = (weeklyHigh > livePrice)
+                        ? ((weeklyHigh - livePrice) * 100.0 / weeklyHigh) : 0.0;
                 }
             }
             else {
@@ -296,6 +302,11 @@ var PopupMajorStore;
         const numRarity = InventoryAPI.GetItemRarity(itemId);
         const teamInRegion = ('teamId' in oData) ? _teamRegionData.filter(team => team.teamid === oData.teamId) : [];
         const teamRegion = (teamInRegion.length > 0) ? teamInRegion[0].region : '';
+        const livePrice = _GetCurrentPriceForItem(itemId);
+        const weeklyLow = _GetCurrentTrendData(itemId, 'low');
+        const weeklyHigh = _GetCurrentTrendData(itemId, 'high');
+        const weeklyPctReductionFromHigh = (weeklyHigh > livePrice)
+            ? ((weeklyHigh - livePrice) * 100.0 / weeklyHigh) : 0.0;
         return {
             isPlayer: oData.isPlayer,
             isOrg: ('isOrg' in oData) ? oData.isOrg : false,
@@ -306,20 +317,23 @@ var PopupMajorStore;
             playerCode: ('playerCode' in oData) ? oData.playerCode : '',
             realName: oData.isPlayer ? $.Localize('#SFUI_ProPlayer_' + oData.playerCode) : '',
             itemId: itemId,
-            price: _GetCurrentPriceForItem(itemId),
+            price: livePrice,
             rarity: numRarity,
             rarityLookup: $.Localize('#major_store_filter_type_' + numRarity),
             name: InventoryAPI.GetItemName(itemId),
             displayName: ItemInfo.GetFormattedName(itemId),
-            popularity: _GetCurrentTrend(itemId),
+            popularity: _GetCurrentTrendData(itemId, 'trend'),
+            weeklyLow: weeklyLow,
+            weeklyHigh: weeklyHigh,
+            weeklyPctReductionFromHigh: weeklyPctReductionFromHigh,
             teamRegion: teamRegion
         };
     }
     function _GetCurrentPriceForItem(itemId) {
         return MissionsAPI.GetSeasonalOperationFauxCreditsCost(g_ActiveTournamentInfo.credits_id, itemId);
     }
-    function _GetCurrentTrend(itemId) {
-        return MissionsAPI.GetSeasonalOperationFauxItemTrend(g_ActiveTournamentInfo.credits_id, itemId, 'trend');
+    function _GetCurrentTrendData(itemId, szField) {
+        return MissionsAPI.GetSeasonalOperationFauxItemTrend(g_ActiveTournamentInfo.credits_id, itemId, szField);
     }
     function UnreadyForDisplay() {
     }
@@ -396,6 +410,8 @@ var PopupMajorStore;
         cp.FindChildInLayoutFile('id-major-store-see-all-teams-btn').SetPanelEvent('onactivate', () => {
             _OnActivateClearAll(cp);
             _ShowMainPanel(cp, 'id-major-store-content');
+            const elDropDown = cp.FindChildInLayoutFile('id-major-store-sort-dropdown');
+            elDropDown.SetSelected('weekly-high-low');
         });
         cp.FindChildInLayoutFile('id-major-store-see-all-popular-btn').SetPanelEvent('onactivate', () => {
             _OnActivateClearAll(cp);
@@ -789,6 +805,13 @@ var PopupMajorStore;
             case 'popularity-low-high':
                 sortType = 'popularity';
                 break;
+            case 'weekly-high-low':
+                sortDirection = 'desc';
+                sortType = 'weeklyPctReductionFromHigh';
+                break;
+            case 'weekly-low-high':
+                sortType = 'weeklyPctReductionFromHigh';
+                break;
         }
         return {
             selectedTeamIds: aTeams.flatMap(team => team.Data().teamid),
@@ -855,6 +878,13 @@ var PopupMajorStore;
         else
             elChange.SetHasClass('show-change', false);
         reusePanel.SetDialogVariableInt('price', filteredList[nPanelIdx].price);
+        reusePanel.SetDialogVariableInt('weeklyLow', filteredList[nPanelIdx].weeklyLow);
+        reusePanel.SetDialogVariableInt('weeklyHigh', filteredList[nPanelIdx].weeklyHigh);
+        let posDot = (filteredList[nPanelIdx].weeklyHigh > filteredList[nPanelIdx].weeklyLow)
+            ? ((filteredList[nPanelIdx].price - filteredList[nPanelIdx].weeklyLow) / (filteredList[nPanelIdx].weeklyHigh - filteredList[nPanelIdx].weeklyLow)) * 100
+            : 100;
+        posDot = Math.floor(Math.max(0, Math.min(96, posDot)));
+        reusePanel.FindChildInLayoutFile('id-store-item-price-pos').style.transform = 'translateX(' + posDot + '%)';
         reusePanel.FindChildInLayoutFile('id-store-item-rarity').SetImage('file://{images}/icons/ui/sticker_rarity_' + stickerData.rarity + '.svg');
         reusePanel.SwitchClass('rarity', 'rarity-' + stickerData.rarity);
         reusePanel.FindChildInLayoutFile('id-store-item-rarity-bar').style.washColor = InventoryAPI.GetItemRarityColor(stickerData.itemId);
@@ -1137,6 +1167,7 @@ var PopupMajorStore;
         }
         nextPanel.RemoveClass('hidden');
         m_activeMain = nextPanel;
+        cp.FindChildInLayoutFile('id-popup-major-store-close-btn').visible = m_activeMain.id == 'id-major-store-banners';
         _UpdateBackButton(cp);
         $.DispatchEvent('CSGOPlaySoundEffect', 'inventory_inspect_close', 'MOUSE');
     }

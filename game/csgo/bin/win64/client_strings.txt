@@ -111,11 +111,7 @@
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
  (08@HPX`j
- (08@HPXbp
  (08@HPZ
- (08@HRp
- (08@Jp
- (0X`hpzp
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -312,7 +308,6 @@
 "d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo
 "e\n CCSUsrMsg_EntityOutlineHighlight
 "f\n\nCMsgTEDust
-"g3p~
 "h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 "l7ql`R2lWf
 "lbN.
@@ -3111,7 +3106,6 @@ $taser_charge
 ,?IsUint32@Value@v8@@QEBA_NXZ
 ,ARu@y6
 ,I?Value@Number@v8@@QEBANXZ
-,N`4P
 ,Reason=
 ,Service for dealing with user-submitted logsB
 ,ShfPQ
@@ -3136,7 +3130,7 @@ $taser_charge
 ,kj8\te
 ,name:
 ,oYR
-,sK3
+,sK3 
 ,section=
 ,value:
 - "%s" = "%.2f"\n
@@ -10943,7 +10937,6 @@ $taser_charge
 02V8[
 05=k
 08@HR
-08@Jp
 08bX
 09,h
 0;Q5[
@@ -11217,7 +11210,7 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpT
+2\vpd
 2^pV
 2a"l
 2bT~
@@ -11726,7 +11719,7 @@ $taser_charge
 @BH]f
 @BoneSetup
 @C_SmokeGrenade
-@HPX`hv0
+@HPX`hv@
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11766,6 +11759,7 @@ A9ur
 A<fP
 A>x8
 AA Compromise
+AA:0
 AAAA-
 AAAA-%.*s
 AABBDirection
@@ -19335,6 +19329,7 @@ GetSectionName
 GetSectionTeamStatus
 GetSelected
 GetSelectedButton
+GetSelectedItemId
 GetServerGraphic1Name
 GetServerGraphic2Name
 GetServerLoadoutInSlot: Failed to get local player inventory component!\n
@@ -20706,7 +20701,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
-JY3@~
+JY3P
 JZIX
 J\nHBF
 J`KL
@@ -22035,6 +22030,7 @@ OnInterval
 OnInventoryItemSelected
 OnInvite
 OnIsSpottedChanged
+OnItemActivated
 OnItemTileActivated
 OnJumpedChanged
 OnLatchInterpolatedVariablesHelper
@@ -22259,7 +22255,6 @@ P-224
 P-256
 P-384
 P-521
-P08@Jp
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
@@ -23170,7 +23165,6 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pyramid
 P|iC\r
-Q$4X
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
 Q*hd
 Q/xtJ2
@@ -23409,7 +23403,7 @@ RULESHERE
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpT
+R\vpd
 R]Di
 Rad2 Deg
 Radar
@@ -25593,7 +25587,6 @@ SystemInputLanguageChanged
 SystemMemoryMB
 T*8U
 T0.S
-T30~
 T61STRING
 T72[t
 TASK=%llu\n
@@ -27387,7 +27380,6 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\vPL
 \ful2
 \fy&3Gl
 \l:ArR
@@ -29871,6 +29863,8 @@ cant pack structure
 cant-buy
 canvaspos
 capabilities
+capability_multistatus_hover
+capability_multistatus_selected
 capslockwarn
 capsule
 capsule_length
@@ -33331,7 +33325,6 @@ hour
 hours
 houseIdentifier
 hover
-hpzp
 hr_H
 href="
 hscroll
@@ -34259,6 +34252,7 @@ item-image-image
 item-name
 item-selected-name
 item-text
+item-tile
 item\t%02x%02x%02x%02x%02x%02x%02x%02x\n
 item_
 item_%d
@@ -35173,7 +35167,7 @@ lowresdepth
 luminaire_anisotropy
 luminaire_shape
 luminaire_size
-lvR4 
+lvR40
 m&9W
 m*Zu
 m249
@@ -35947,7 +35941,6 @@ mg_de_ancient
 mg_de_anubis
 mg_de_bank
 mg_de_cache
-mg_de_canals
 mg_de_dust2
 mg_de_inferno
 mg_de_lake
@@ -36333,8 +36326,8 @@ n5cM
 n6j/
 n:2C[
 n@PK
-nCBasePulseGraphInstance
 nCRD
+nC_LightEntity
 nChangeOffset < INT16_MAX
 nChangeOffset > 0
 nDataSize > 0
@@ -37020,7 +37013,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0j@
+p0jP*
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -38086,7 +38079,6 @@ rZPM
 r\n\vstart_index
 r\vDi
 r\vp!K
-r\vpl
 r_2PassBuildDraw 0
 r_2PassBuildDraw 1
 r_csm_fast_path 0
@@ -38839,6 +38831,7 @@ seed:
 segment-data
 selected
 selected-attribute-types
+selectedItemCount
 selectedTextBackgroundColor
 selectionpos_x
 selectionpos_y

@@ -7060,62 +7060,56 @@ $prefix_element$
 .vpk:
 .vvd
 .webp
-01C@
-01I@
-01U@
-02H@
-02R@
-02U@
-02u@
-056@
-05b@
-06Q@
+00I@
+05I@
+05T@
+06I@
+06U@
+076@
+079@
+07U@
 07b@
-086@
 08I@
-08b@
-099@
-09H@
-09T@
-09V@
-09b@
-0AP@
-0BU@
-0C1@
-0CV@
-0DV@
-0Dy@
-0F2@
-0F8@
-0GA@
-0GI@
-0H4@
-0HI@
-0HV@
-0K9@
+0AI@
+0AT@
+0DI@
+0F4@
+0FO@
+0FV@
+0JI@
+0JN@
+0KM@
+0MC@
 0MI@
-0PA@
+0My@
+0NA@
+0NS@
 0PI@
-0QN@
-0Rc@
-0SI@
-0TQ@
-0VI@
-0Wd@
-0X5@
+0PN@
+0Pc@
+0R5@
+0R6@
+0T9@
+0U3@
+0U5@
+0X9@
+0YR@
 0\r%0t
 0\tV_frexpf
-0c5@
-0k6@
-0nI@
-0pA@
-0qI@
-0rI@
-0tw@
-0uU@
+0by@
+0d6@
+0dI@
+0eC@
+0f5@
+0gI@
+0hI@
+0iR@
+0oI@
+0qL@
+0v3@
+0ww@
 0x%llx
-0yU@
-0z5@
+0y3@
 16-byte data pool
 180_recovery
 1D Blend Has No Referenced Animations
@@ -7128,8 +7122,10 @@ $prefix_element$
 2DBlend
 2DBlendEditor
 2DBlendFromAnimation
+2\vpH
 2_BONE_IK
 4-byte data pool
+4PYX
 4\r54t
 5;FJ$,XEK4<
 5a\v6;
@@ -7140,7 +7136,6 @@ $prefix_element$
 8"3hrf
 8&Kx
 8-byte data pool
-89U@
 969p
 9>No data
 :: <NO TARGET BONE>
@@ -7692,7 +7687,6 @@ Avoids normal seams on UV boundaries. Turning it off is faster and saves some GP
 B channel
 B channel not found!\n
 B-Spline
-B0n7@
 B5G5R5A1_UNORM
 B5G6R5_UNORM
 B8G8R8A8_UNORM
@@ -7712,6 +7706,7 @@ BC4_UNORM
 BC5_SNORM
 BC5_TYPELESS
 BC5_UNORM
+BPl7@
 Back-solve Joints
 Back-solve Joints Drive Meshes
 Back-solve Min Weight
@@ -9097,7 +9092,6 @@ D16_UNORM
 D24_UNORM_S8_UINT
 D32_FLOAT
 D32_FLOAT_S8X24_UINT
-D9U@
 DBM&(
 DMX Model
 DMX Model Pipeline Animation Script File
@@ -9887,7 +9881,6 @@ Grow Selection
 Grow or Shrink
 Grow or shrink a selection
 Grow the selection by adding contiguous components to the selection.
-H5b@
 HAC K  Unused Binding
 HELPER_BONE
 HairShader
@@ -10964,40 +10957,47 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P0I@
+P0L@
 P0V@
 P1Q@
-P36@
-P3C@
-P3I@
-P3x@
-P6S@
-P74@
-P8T@
-P9U@
+P6I@
+P7U@
+P9I@
+P9T@
+PA1@
 PARENT
-PC7@
-PCV@
-PD8@
-PF8@
+PB8@
+PBI@
+PBU@
+PD2@
+PDO@
+PEA@
+PEI@
+PEV@
+PF4@
+PF9@
+PFS@
 PF\n%d %d\n-1.000000\n
-PH4@
-PHI@
 PHY Import: Invalid solid index %d in keyvalues\n
 PHY Import: Solid with index %d is defined twice!\n
-PII@
-PIy@
-PNR@
+PKI@
+PKN@
+PMO@
+PNA@
+PNI@
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
-PRc@
 PSI@
-PT4@
-PTM@
-PUN@
+PSc@
+PT9@
+PTN@
 PURH
-PUc@
+PUS@
+PV5@
+PY6@
 PYI@
+Pa5@
+PaI@
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
@@ -11044,9 +11044,6 @@ ParticleImport
 ParticleParamID_t
 ParticlesLib
 Pass Outflow
-PcI@
-PdI@
-PeC@
 Peak Cycle
 Peak Frame
 Peak Frame Number
@@ -11057,9 +11054,8 @@ Perforce
 Perform a set of parametric mesh modification operations.
 Persistent
 Perturb vertex positions using sine waves.
-PfP@
 Pf\n%d %d\n-1.000000\n
-PgN@
+Pg8@
 Photometric tag is missing, assuming data is YCbCr
 Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
@@ -11139,6 +11135,7 @@ Pitch Yaw Roll Max
 PivotPaint
 PixarLog
 PkI@
+PlI@
 Place On Attachment
 Place On Bone
 Place on Floor
@@ -11154,7 +11151,9 @@ Plane Primitive
 Plastic
 Plasticity
 Play End Cap Effect
-PnU@
+PmU@
+PoI@
+PoR@
 Point 0
 Point 1
 Point Bones At
@@ -11203,8 +11202,8 @@ Positions in grid
 PosterSettings
 Posture
 Power scale for applying the supplemental ambient occlusion map.
-PpA@
-PrA@
+Pr6@
+PrT@
 Pre-Age Noise
 Pre-Clear Selection
 Precision Degrees
@@ -11259,17 +11258,18 @@ Prop Group for Physics Particles
 Prop group for spawned physics particles
 PropWorldOrigin
 Prune pieces < error threshold
-PuA@
-PuI@
+PsI@
 Pull towards control point
 Pulse Graph
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Push Out
 Push mesh faces outward along their local normal. Optionally build shell geometry.
 PushBack
-PvI@
 PvU@
-PyU@
+PwR@
+PwU@
+Px5@
+Py6@
 QAngle
 Quad Bend Tolerance
 Quadratic
@@ -12026,7 +12026,6 @@ Swing Limit
 Swing Offset Angle
 Switch Threshold
 Symbol table:  %d entries %llu bytes\n
-T5b@
 THEM
 TIFFAppendToStrip
 TIFFClientOpen
@@ -12592,6 +12591,7 @@ ZIPVSetField
 [choices
 [cloth] | [procedural]
 [procedural]
+\fPYX
 \instances\
 \maps\
 \materialsrc\
@@ -14572,38 +14572,39 @@ overwrite_existing
 overwrite_existing_flags_only
 ownerlog
 owns_polymorphic_data
-p05@
-p1I@
-p1x@
-p4I@
+p0I@
+p4V@
 p4lib
-p5Q@
-p5V@
-p7T@
-p7U@
-p8P@
-p8Q@
+p54@
+p7I@
+p8T@
+p8x@
+p96@
 p9U@
-pAI@
-pBV@
+pA7@
+pB8@
+pBU@
+pCI@
 pCheckpointName
 pD8@
 pDescription
-pF8@
-pH4@
-pII@
-pJI@
-pJy@
-pKP@
-pMy@
-pNN@
-pPC@
-pRy@
-pSC@
+pF4@
+pFI@
+pFK@
+pMN@
+pMi@
+pNA@
+pOy@
+pQ6@
+pQI@
+pR4@
 pTagName
-pW5@
-pY3@
+pVI@
+pW9@
+pYN@
+pYX@
 paI@
+paQ@
 panorama_image
 panorama_layout
 panorama_style
@@ -14646,9 +14647,8 @@ pathclass
 pathnode
 pathnodeclass
 pattern
-pcN@
-pdC@
-peC@
+pe6@
+peI@
 peak
 peak_attr
 peak_cycle
@@ -14657,8 +14657,7 @@ per particle
 per_material_options
 permissive
 pervertexlighting
-pgI@
-phQ@
+ph8@
 phonememap
 phys
 physicsSimplificationError
@@ -14693,7 +14692,7 @@ pitch_friction
 pitch_stiffness
 pivotOffset
 pixelAspectRatio
-pkI@
+pkR@
 place_on_floor
 placementOrigin
 placementattachment
@@ -14703,9 +14702,9 @@ plane
 plastic
 plasticity
 playerclip
-pn8@
-poI@
-poM@
+pmT@
+pmU@
+poU@
 point
 point0_key
 point1_key
@@ -14749,9 +14748,9 @@ postprocessing
 posture
 posture_nohands
 posxyz
-pp7@
-ppA@
-ppU@
+pqA@
+prL@
+prP@
 preMerge face 0
 preMerge face 1
 precision_degrees
@@ -14796,12 +14795,18 @@ propattr_force_readonly
 propattr_stretch_editor_into_label_column
 propdataname
 prune
+prw@
+psI@
+psO@
 pseudo-
+psw@
 pulse_node_custom_attributes
 pulse_runtime_lib
 pushout_strength
-pv5@
+pvT@
 pvTarget
+pvU@
+pvc@
 qangle log
 qangle_array
 quad
@@ -15264,6 +15269,7 @@ swing_offset_angle
 switch_threshold
 syncEngineFramerate
 synched
+t7U@
 tBSheetSequenceIntegerId_t
 tagValue
 tag_list

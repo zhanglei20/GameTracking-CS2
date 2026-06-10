@@ -153,7 +153,7 @@
  -vis
  -vrad3LargeBlockSize
  -world
- .pVP
+ .PTP
  255
  8f\ff
  <-- Arg '%s'
@@ -1168,9 +1168,10 @@ $worldspacetype
 ....................
 ../src/devtools/bin/certificates/game/
 ..uR5&m
-.0eP
-.0gP
-.0rP
+.0XP
+.0YP
+.0jP
+.0lP
 .4bb
 .97yY
 .?AUBufferedImpulseResponse_t@@
@@ -14680,8 +14681,12 @@ $worldspacetype
 .P6AXPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
-.PZP
-.PdP
+.PUP
+.PXP
+.PYP
+.PeP
+.PjP
+.PkP
 .PlP
 .Q.Ol
 .R?matches@QKeyEvent@@QEBA_NW4StandardKey@QKeySequence@@@Z
@@ -14957,17 +14962,12 @@ $worldspacetype
 .mp3
 .nav
 .navdbg
-.pWP
-.pdP
-.peP
+.pYP
 .pfm
 .pkP
-.plP
 .png
-.poP
 .pp@0
 .psd
-.pxP
 .text$
 .tga
 .tif
@@ -16039,29 +16039,30 @@ $worldspacetype
 5sfm_v8
 5t?F
 5~EW
-6 qP
 6#6165676;6M6O6S6Y6a6k6m6
 6#RDP#
 6%vi
 6,2K
 6-zeZ
-60UP
+60pP
 62$|S)6f
 64 283 0
 64CK\vH
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 6666666666666666jjjjjjjjjjjjjjjj[
 67-s
+6@xP
 6FaceSkyBox
 6H,N
 6O|T%
-6PxP
+6PoP
+6PyP
 6Qd=
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
 6_wEX
-6`fP
+6`SP
 6afD
 6bX+
 6c&0|vvX
@@ -16069,7 +16070,6 @@ $worldspacetype
 6l13
 6lkc
 6myY;
-6pTP
 6qo~
 6r-m_v
 6r1ij
@@ -16268,6 +16268,8 @@ $worldspacetype
 > (After)
 >"?IsValid@FbxProperty@fbxsdk@@QEBA_NXZ
 >#>)>/>3>A>W>c>e>w>
+>0SP
+>0zP
 >4|6eXg_e
 >7^0g
 >>> Reading bsp from path %s\n
@@ -18703,11 +18705,10 @@ $worldspacetype
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
+@08N\f
 @0pp
-@60~P
-@6@ZP
 @6pXP
-@6pZP
+@6p[P
 @BH]f
 @Integer overflow in %s
 @MfKZ
@@ -25126,7 +25127,6 @@ F6tr
 F7!z
 F9q'
 F<mb
-F@yP
 FBX (*.fbx)
 FBX Export failed: %s\n
 FBX Export failed: Couldn't create FBX manager: "%s"\n
@@ -25169,7 +25169,6 @@ F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 F_BLOOD_USE_UV2
 F_TEXTURE_FORMAT
 F_TEXTURE_FORMAT2
-F`wP
 Face
 Face %d
 Face Fit
@@ -25595,6 +25594,8 @@ Four-View Quad
 Fourth Control Point Location
 Fourth Control Point Number
 Fourth Control Point Parent
+FpZP
+FpwP
 Frac
 Fractal
 Fractional component (ie. returns 0.34 for 12.34)
@@ -29300,6 +29301,7 @@ P-256
 P-384
 P-521
 P08@J@
+P08N\f
 P1\t98"
 P4CopyFile
 P4CopyFile: Couldn't copy "%s" to "%s"\n
@@ -30518,6 +30520,7 @@ R\r1>Vp
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R\vp!6
+R\vp4
 R]Di
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
@@ -34500,7 +34503,6 @@ Voronoi Plane Primitive
 Vortices
 Voxel volume (%i components)
 Vp>u
-VpVP
 Vrad3_Init_SearchPath
 Vt_9
 V~~Vq
@@ -35736,8 +35738,9 @@ _zero
 _zero_percent_distance
 _}eOk
 `28)fk
-`6@lP
-`6`dP
+`6 ZP
+`6 cP
+`6pjP
 `:zQF
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -35774,6 +35777,7 @@ a?worldTransform@QPainter@@QEBAAEBVQTransform@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a@XZ
 aA0k
+aBv\f
 aD/x
 aDSS
 aECDH
@@ -38256,6 +38260,7 @@ f ?topLevelItemCount@QTreeWidget@@QEBAHXZ
 f#9i\n
 f%wyLmX:
 f&dy
+f0uP
 f1cK%
 f45\r
 fBB\fy
@@ -42020,13 +42025,13 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p08@H^\f
 p2{l
 p4 fstat -Op %s
 p4Z3
 p5Z3
 p5\nL,
 p618
-p6p~P
 p@0pqE5tsO?|1
 pAction
 pAsset
@@ -42042,8 +42047,8 @@ pDescription
 pElement
 pEntity
 pEvent
-pF@\P
 pFilter
+pFpZP
 pG_*h
 pIp 
 pLightRigButton
@@ -42646,6 +42651,7 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
+r\fp4
 r\n?dragLeaveEvent@QGraphicsItem@@MEAAXPEAVQGraphicsSceneDragDropEvent@@@Z
 r\tV_sinhf
 r\vDi
@@ -45035,6 +45041,7 @@ v2i_GENERAL_NAMES
 v2i_GENERAL_NAME_ex
 v3\vt
 v<d2}
+v@rP
 vAj}
 vAlignDirection
 vAr>
@@ -45584,6 +45591,7 @@ zz2K
 }\r?hoverMoveEvent@QGraphicsWidget@@MEAAXPEAVQGraphicsSceneHoverEvent@@@Z
 }gE3
 }n2W
+~0kP
 ~9ob
 ~CGenericFilter
 ~CMapDoc destructor: Leaking physics world because there are still ModelInstances that use it.\n
@@ -45595,7 +45603,6 @@ zz2K
 ~\n?dragMoveEvent@QAbstractScrollArea@@MEAAXPEAVQDragMoveEvent@@@Z
 ~\v?eventFilter@QGraphicsScene@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 ~jLRG
-~pVP
 ~w]UG
 ~yhZ
 ~}|{zyxwvutsrqponmlkjihgfedcba`_^]\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#"! 

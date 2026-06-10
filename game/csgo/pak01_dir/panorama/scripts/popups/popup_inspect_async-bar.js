@@ -62,7 +62,7 @@ var InspectAsyncActionBar;
             $.CancelScheduled(cp.Data().refreshSubscriptionHandle);
             cp.Data().refreshSubscriptionHandle = null;
         }
-        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers);
+        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers, true);
         cp.Data().refreshSubscriptionHandle = $.Schedule(150, () => _EnsureVolatileShopSubscribed(cp));
     }
     function _DoesNotMeetDecodalbeRequirements() {
