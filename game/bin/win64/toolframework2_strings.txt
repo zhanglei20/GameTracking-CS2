@@ -6925,7 +6925,8 @@ $name_$id
 2\nYH
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp0
+2\vp@wh
+2\vpL
 2_BONE_IK
 2aboutToShow()
 2changed()
@@ -12142,7 +12143,6 @@ PF\n%d %d\n-1.000000\n
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 PURH
-PX~Z
 PYA@
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 P\v0A
@@ -12508,12 +12508,11 @@ RMouse
 RMouseDoubleClick
 ROTATION
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fp0
 R\n@Z*oG8
 R\r?hitTestComplexControl@QProxyStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vpt
+R\vpL
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Radial Basis Function Type
@@ -13824,10 +13823,12 @@ Z}uU
 \nFMu@
 \nFQu@
 \nFas@
+\nPUZ
 \n\nThe chosen shader doesn't have an input for this texture.\nIf selected, this texture will be copied, but not used.
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \ng default\n
 \nh"lx
+\ntJZ
 \r/9AF
 \r?dark@QPalette@@QEBAAEBVQBrush@@XZ
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
@@ -15918,7 +15919,6 @@ pPrevFocusWidget
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
 pX'"T
 pX@ffff*
-pX~Z
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 p`?type@QStandardItem@@UEBAHXZ
@@ -16118,8 +16118,6 @@ r@3333S
 r@ffff
 rJ@LB
 rKK\t@i;
-r\fpt
-r\vp0
 rabbit
 rabid
 raccoon

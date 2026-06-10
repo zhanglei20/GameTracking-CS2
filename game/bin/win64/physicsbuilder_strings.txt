@@ -6893,11 +6893,10 @@ $prefix_element$
 .tif
 .vmat
 .webp
-04Zc
+04>c
 0\r%0t
 0\tV_frexpf
 0x%llx
-0x]c
 16-byte data pool
 1D Blend Has No Referenced Animations
 1D Twist
@@ -6909,7 +6908,7 @@ $prefix_element$
 2DBlend
 2DBlendEditor
 2DBlendFromAnimation
-2\vpx]c
+2\vpLpu
 2_BONE_IK
 4-byte data pool
 4\r54t
@@ -9900,7 +9899,7 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P4Zc
+P4>c
 PARENT
 PF\n%d %d\n-1.000000\n
 POSE_SPACE_BONE
@@ -10190,8 +10189,6 @@ R8_UNORM
 R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
 ROTATION
-R\fpx]c
-R\vp4Zc
 R_T5Y
 Radial Basis Function Type
 Radius Params CP ( Prop Group Smallest Radius / Prop Group Largest Radius / Number of Avg Objects )
@@ -11138,7 +11135,6 @@ ZIPVSetField
 [cloth] | [procedural]
 [procedural]
 \f?nkK=f
-\nP4Zc
 \nclass 
 \ndummyfilename.tif
 \ng default\n
@@ -11150,8 +11146,6 @@ ZIPVSetField
 \tV_strnchr
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_StringAfterPrefixCaseSensitive
-\vp4Zc
-\vpx]c
 ]>jkT>Q3
 _CustomCommand
 _CustomCommand%d
@@ -11207,9 +11201,7 @@ _temp_tangent
 _volumeatlas_
 _wjb
 _zero
-`4Zc
 `=IhC?zm6>
-`\rP\f04Zc
 a\tV_powd
 absolute
 acceleration
@@ -12807,7 +12799,7 @@ overwrite_existing
 overwrite_existing_flags_only
 ownerlog
 owns_polymorphic_data
-p4Zc
+p4>c
 p=f3G=
 panorama_image
 panorama_layout
@@ -12985,15 +12977,12 @@ prune
 pseudo-
 pushout_strength
 pvTarget
-px]c
 qangle log
 qangle_array
 quad_bend_tolerance
 quadratic
 quaternion log
 quaternion_array
-r\fp4Zc
-r\vpx]c
 radius0_key
 radius1_key
 radiusScale

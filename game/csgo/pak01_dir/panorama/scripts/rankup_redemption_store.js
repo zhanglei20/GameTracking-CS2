@@ -313,8 +313,14 @@ var RankUpRedemptionStore;
         }
     }
     function OnRedeem() {
-        if (_GetSelectedItems().length === 0) {
+        const numSelected = _GetSelectedItems().length;
+        if (numSelected === 0) {
             _PulseItems();
+            return;
+        }
+        InventoryAPI.SetInventorySortAndFilters('inv_sort_age', false, 'only_econ_items', '', '');
+        if (InventoryAPI.GetInventoryCount() + numSelected > ItemInfo.NUM_BACKPACK_SLOTS) {
+            UiToolkitAPI.ShowGenericPopupOk($.Localize('#popup_casket_title_error_casket_inv_full'), $.Localize('#SFUI_InventoryFull_Error'), '', () => { });
             return;
         }
         let szItemList = _GetSelectedItems().map(item => item.item_id).join(',');

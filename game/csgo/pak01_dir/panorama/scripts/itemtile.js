@@ -21,7 +21,6 @@ var ItemTile;
         _TintSprayImage(id);
         _DisableTile(id);
         _SetBackground(id);
-        _SetMultiSelect(id);
         _SetRentalTime(id);
         _SetIsRentable(id);
         _SetOriginalOwner(id);
@@ -55,16 +54,6 @@ var ItemTile;
             elTeamTile.visible = false;
         }
     }
-    function _SetMultiSelect(id) {
-        let ocapabilityInfo = _GetPopUpCapability();
-        if (ocapabilityInfo) {
-            let bSelectedInMultiSelect = (SelectItemForCapability.oCapabilityInfo.bIsMultiSelect &&
-                SelectItemForCapability.oCapabilityInfo.multiselectItemIds &&
-                SelectItemForCapability.oCapabilityInfo.multiselectItemIds.hasOwnProperty(id));
-            $.GetContextPanel().SetHasClass('capability_multistatus_selected', bSelectedInMultiSelect);
-        }
-    }
-    ;
     function _SetImage(id) {
         $.GetContextPanel().FindChildInLayoutFile('ItemImage').itemid = id;
     }

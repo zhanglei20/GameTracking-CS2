@@ -8213,7 +8213,7 @@ $prefix_element$
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpt
+2\vph\
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -14048,7 +14048,6 @@ RMouse
 RMouseDoubleClick
 ROTATION
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpt
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
@@ -15544,7 +15543,6 @@ ZoomForwardBack3D
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n?cmp@QVariant@@QEBA_NAEBV1@@Z
 \f\n?deselect@QLineEdit@@QEAAXXZ
-\n0fm
 \n?bits@QImage@@QEAAPEAEXZ
 \n?blue@QColor@@QEBAHXZ
 \n?blueF@QColor@@QEBANXZ
@@ -17800,7 +17798,6 @@ quadratic
 quaternion_array
 quiet
 r\tV_sinhf
-r\vpt
 r_renderdoc_capture_thumbnail_rendering
 rad2deg
 radius0_key

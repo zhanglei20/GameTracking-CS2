@@ -7312,11 +7312,12 @@ $prefix_element$
 .webp
 .xform
 // FRAMERATE=%f
-0<yn
+0$xn
+0X`n
 0\r%0t
 0\tV_frexpf
+0`Li
 0x%llx
-0|an
 16-byte data pool
 180_recovery
 1D Blend Has No Referenced Animations
@@ -7331,7 +7332,8 @@ $prefix_element$
 2DBlendEditor
 2DBlendFromAnimation
 2\n??9FbxDataType@fbxsdk@@QEBA_NAEBV01@@Z
-2\vpx
+2\vp$xn
+2\vpt
 2_BONE_IK
 4-byte data pool
 4\r54t
@@ -11670,7 +11672,7 @@ Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
-P<yn
+P(cn
 PARENT
 PF\n%d %d\n-1.000000\n
 PHY Import: Invalid solid index %d in keyvalues\n
@@ -11679,6 +11681,7 @@ PHY file empty, zero hulls found: %s.
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 PURH
+PX`n
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
@@ -11942,7 +11945,6 @@ Pulse domain which enables particle content to query leaf code to introspect gam
 Push Out
 Push mesh faces outward along their local normal. Optionally build shell geometry.
 PushBack
-P|an
 QAngle
 Q\v??DFbxVector4@fbxsdk@@QEBA?AV01@N@Z
 Quad Bend Tolerance
@@ -12016,10 +12018,7 @@ RBF Based Anim Constraint
 RGB blend weight for sequence 0
 RGB blend weight for sequence 1
 ROTATION
-R\fpx
-R\np<yn
-R\vp<yn
-R\vpx
+R\fpt
 R_T5Y
 Rad2 Deg
 Radial Basis Function Type
@@ -13368,7 +13367,6 @@ Zero skin weights on one or more vertices
 [cloth] | [procedural]
 [procedural]
 \f$?ParseForGlobalSettings@FbxImporter@fbxsdk@@QEAAX_N@Z
-\fp<yn
 \instances\
 \maps\
 \materialsrc\
@@ -13378,7 +13376,6 @@ Zero skin weights on one or more vertices
 \n??AFbxQuaternion@fbxsdk@@QEBAAEBNH@Z
 \nERROR: EXCEPTION:\n
 \nERROR: UNKNOWN EXCEPTION\n
-\nP<yn
 \ndummyfilename.tif
 \ng default\n
 \prefabs\
@@ -13404,7 +13401,6 @@ Zero skin weights on one or more vertices
 \tg_bUpdateStringTokenDatabase
 \tnexttoken
 \v??YFbxString@fbxsdk@@QEAAAEBV01@PEBD@Z
-\vp<yn
 ^(.+)_[0-9A-Fa-f]{8}$
 _CustomCommand
 _CustomCommand%d
@@ -14105,6 +14101,7 @@ cycle_type
 cyclepose without cycle pose parameter on cmd sequence: %s\n
 cyclestart
 cylinder
+d(0P
 damage_direction_cp
 damage_position_cp
 damage_table
@@ -14608,7 +14605,7 @@ group_name
 grow_or_shrink
 growth time
 guide_hair_count
-h*\n0oi
+h+\npZi
 hair_count
 halfEdges %d,%d faces %d,%d angle %.1f deg.
 halfgridsnap
@@ -15702,10 +15699,11 @@ overwrite_existing
 overwrite_existing_flags_only
 ownerlog
 owns_polymorphic_data
-p<yn
+p$xn
 pCheckpointName
 pDescription
 pTagName
+pX`n
 p\rP\f0
 paintsplat
 panorama_image
@@ -15900,15 +15898,12 @@ pulse_node_custom_attributes
 pulse_runtime_lib
 pushout_strength
 pvTarget
-p|an
 qangle log
 qangle_array
 quad_bend_tolerance
 quadratic
 quaternion log
 quaternion_array
-r\fp<yn
-r\vpx
 rad2deg
 radius0_key
 radius1_key

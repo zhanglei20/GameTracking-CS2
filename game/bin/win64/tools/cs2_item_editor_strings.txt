@@ -302,21 +302,26 @@ $\n\tword_list
 '\n\fglobal_stats
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
-(1VX
-(90X
-(A5X
-(AKX
-(ATX
-(AgX
+(1XX
+(5cX
+(91X
+(9ZX
+(AwX
+(AzX
 (Documents Filter - Use | for OR, space for AND)
+(EqX
 (Filter)
-(INX
-(MZX
+(MfX
 (No Active Session)
 (Outliner Filter)
-(QFX
-(QsY
-(URX
+(Q0X
+(QHX
+(QKX
+(QMX
+(UFX
+(YAX
+(YTX
+(YbX
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"6\n#CSOAccountKeychainRemoveToolCharges
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
@@ -441,17 +446,19 @@ $\n\tword_list
 (\v2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 (\v2\f.CSOEconItem
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(aWX
+(a6X
+(ahX
 (default)
 (e3X
-(i1X
-(mDX
-(mbX
-(msX
-(qeX
-(uXX
-(y9X
-(yvX
+(eNX
+(m1X
+(m2X
+(q5X
+(u7X
+(uYX
+(yDX
+(yLX
+(ysX
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n!penalty_account_id_sessions_green
@@ -2870,7 +2877,6 @@ $\n\tword_list
 7\n2k_EGCItemCustomizationNotification_XpShopUseTicket
 7\n2k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
-8MaX
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
 8\n3k_EGCItemCustomizationNotification_GenerateSouvenir
@@ -2879,7 +2885,8 @@ $\n\tword_list
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8ylX
+8]UW
+8]pW
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 9\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
@@ -4368,7 +4375,6 @@ $\n\tword_list
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @HPX`hv`
-@HQR
 @HV0
 @\n\fSingleObject
 @\n\vserver_type
@@ -6851,6 +6857,7 @@ Zip system failure.\n
 \n\vvalue_bytes
 \n\vxp_category
 \n\vyoutube_url
+\nyUW
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
 \r?data@QStandardItemModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
@@ -6879,6 +6886,7 @@ Zip system failure.\n
 \r?initStyleOption@QStyledItemDelegate@@MEBAXPEAVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
+\rtext
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?alpha@QColor@@QEBAHXZ
 \t?alphaF@QColor@@QEBANXZ
@@ -6962,11 +6970,10 @@ _nodrips
 _sm.png
 _sticker_capsule
 _toolsautosave
-`1tY
+`1bX
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`euY
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ

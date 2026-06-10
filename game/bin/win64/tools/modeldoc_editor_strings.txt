@@ -26,7 +26,7 @@
   R%d: %15s %25s %s\n
   Top-level Mesh Op '%s' returning a cached result.\n
   V%d: '%s' (%s)\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$%%&'()*+,-../0123456789:;<=>?@ABCDEFGHIJKLLMNOPQRSTUVWXY[]_`bdefhjlnprtvz|~
  #%d: %d Faces, %d Verts, %d Edges\n
  %dw %dl %dh @(%.0f %.0f %.0f)
@@ -38,7 +38,9 @@
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
  (08@HPX`j
+ (08@HPXb p.
  (08@HPZ
+ (0X`hpz p.
  (Crouch)
  (Pitch)
  (Roll)
@@ -76,6 +78,7 @@
  ?timerEvent@QAbstractSlider@@MEAAXPEAVQTimerEvent@@@Z
  ?timerEvent@QAbstractSpinBox@@MEAAXPEAVQTimerEvent@@@Z
  ?write@QMetaProperty@@QEBA_NPEAVQObject@@AEBVQVariant@@@Z
+ A8?H
  CCD
  Click to inherit.
  Click to override.
@@ -554,37 +557,28 @@ $prefix_element$
 (%.2f, %.2f, %.2f)
 (%1 clips)
 (%d tracks)
-(1DP
-(1PP
-(1oP
-(1pP
-(5JP
-(5YP
-(5nP
-(5sP
-(9kP
-(9uP
-(9zP
+(1TP
+(5QP
+(5rP
+(9xP
 (? Queued)
 (?!\d)[\w_]*
+(@hkB
 (Advanced Feature) Used to specify special interaction rules or exclusions. References a name in scripts/collision_properties.txt.
+(AkP
 (Anonymous)
 (Cannot dynamically spawn a prop_static)
 (Custom Colors Disabled)
 (Debug Feature) Used to draw collision with the same material in Physics Debugger as in Hammer.
-(ECP
-(ESP
-(EWP
 (Edges to Faces)
 (Edges to Vertices)
-(ErP
 (Error)
 (Faces to Edges)
 (Faces to Vertices)
 (Filter)
+(IEP
 (IGP
-(ImP
-(IxP
+(IhP
 (Mesh Substring Filter)
 (Multiple)
 (No Active Session)
@@ -594,29 +588,40 @@ $prefix_element$
 (No class selected)
 (Outliner Filter)
 (Preview Outliner Filter)
-(Q7P
+(QUP
 (Specified in project's gameinfo.gi)
 (Steam Audio) Update physics surface property of VMDL files. They are used for picking acoustic material property for Steam Audio.
-(UUP
+(UNP
+(UZP
+(UeP
 (Vertices to Edges)
 (Vertices to Faces)
-(YMP
+(YaP
+(YjP
+(YtP
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(aBP
-(aoP
-(eZP
-(esP
+(alP
+(eDP
+(ePP
+(eoP
+(epP
 (export) %d %s %d %s %s\n
 (export) %d %s %d %s\n
-(iDP
-(iXP
+(iJP
+(iYP
+(inP
+(isP
 (layer %d)
+(mkP
+(muP
+(mzP
 (no-compile)
-(uRP
-(yGP
-(yHP
+(yCP
+(ySP
+(yWP
+(yrP
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n?displayText@QStyledItemDelegate@@UEBA?AVQString@@AEBVQVariant@@AEBVQLocale@@@Z
@@ -12049,7 +12054,6 @@ $prefix_element$
 .?AVQValidator@@
 .?AVQWidget@@
 .?AVQWidgetAction@@
-.@0uI
 .P6AXPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQCheckBox@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
@@ -12091,6 +12095,7 @@ $prefix_element$
 0.000
 0000``
 08@HR
+08@J p.
 0\r%0h
 0\r%0t
 0\tV_frexpf
@@ -12663,7 +12668,6 @@ $prefix_element$
 1setFilterWildcard(QString)
 1tileSubWindows()
 1trigger()
-20v.
 2AnimCaptureDeselected()
 2AnyConfigStateChanged()
 2Apply( const KeyValues3 * )
@@ -12716,7 +12720,6 @@ $prefix_element$
 2OnValueChanged( QString )
 2OnValueChanged(QString)
 2PickCancelled()
-2Pn.
 2RowClicked(int)
 2SceneCameraChanged()
 2SelectionChanged()
@@ -12738,7 +12741,8 @@ $prefix_element$
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\tV_fseek
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpH
+2\vpT
+2\vpt
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -12831,7 +12835,6 @@ $prefix_element$
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 4\r54t
 4\r?hidePopup@QComboBox@@UEAAXXZ
-4po.
 53x\f
 58h\n
 5;FJ$,XEK4<
@@ -12850,11 +12853,10 @@ $prefix_element$
 8"3hrf
 8&Kx
 8-byte data pool
-85QP
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8m/N
+8iQP
 8m_CtrlHash
 969p
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
@@ -12956,6 +12958,7 @@ $prefix_element$
 =]?size@QScreen@@QEBA?AVQSize@@XZ
 >JUMP
 ?%d edges, %d interior edges, %d silhouette edges\n
+?0J4
 ?333?Y
 ??0Connection@QMetaObject@@QEAA@AEBV01@@Z
 ??0Connection@QMetaObject@@QEAA@XZ
@@ -14822,7 +14825,6 @@ $prefix_element$
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
-@08Nd
 @AuthPhysCollisionAttributesModeEnum_t
 @Integer overflow in %s
 @Invalid
@@ -15735,7 +15737,6 @@ By default angle data is expected in degrees. Check this if the data is specifie
 By default, any change to the chain position will be reflected in parent's rotation.  Uncheck this if you wish the parent to be left unmodified.
 By default, empty selection is the failure case. Set this to false to make having not-empty selection be a failure case.
 By default, only the animation events on the first child animation are considered, if true all animation events which have a non-zero blend weight are used to detect animation events
-C8KH
 C:\buildworker\csgo_rel_win64\build\_build_\tools\modeldoc_editor\_vpc_modeldoc_editor\default\win64\_msvc_\Retail\modeldoc_editor.pdb
 C:\buildworker\csgo_rel_win64\build\src\animdoclib\clip\animclipdoc_events.cpp
 C:\buildworker\csgo_rel_win64\build\src\animlib\graph\animgraph_instance.cpp
@@ -21346,8 +21347,9 @@ Overwrite With Current
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P08J@o/
-P08Nd
+P08@J p.
+P08Jpp/
+P2 p.
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?item@QStandardItemModel@@QEBAPEAVQStandardItem@@HH@Z
@@ -21923,9 +21925,10 @@ RMouseDoubleClick
 ROTATION
 RSDSj
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fpT
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vpH
+R\vpt
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
@@ -24274,9 +24277,7 @@ ZoomOut
 \n[ERR] Not enough memory, shop for some more RAM. See you!\n
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \n\tV_atanf
-\nfEN
 \ng default\n
-\nyIP
 \prefabs
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
@@ -24522,7 +24523,6 @@ _variant_
 _volumeatlas_
 _wjb
 _zero
-`2Pn.
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -24531,16 +24531,12 @@ _zero
 `?valueF@QColor@@QEBANXZ
 `Q?lightnessF@QColor@@QEBANXZ
 `V?queryKeyboardModifiers@QGuiApplication@@SA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
-`Y4P
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`a5P
-`i3P
 a:fulltype
 a:typeparam
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
-aBvd
 a\f?foreground@QTreeWidgetItem@@QEBA?AVQBrush@@H@Z
 a\n?dragDropMode@QAbstractItemView@@QEBA?AW4DragDropMode@1@XZ
 a\tV_powd
@@ -25841,6 +25837,7 @@ group_options_button
 group_title
 grow_or_shrink
 guide_hair_count
+h1(P
 hAttachmentCamera
 hResource
 hSShould we try to straighten two faces connected to this edge? (tangent)
@@ -25899,7 +25896,6 @@ hero_effigy
 hero_effigy_persona_1
 hero_model_change
 heroic_statue
-hi)P
 hidden_in_tools
 hideSourceMesh
 hide_if_child_selected
@@ -25928,6 +25924,7 @@ horizontalStretch
 horizontal_header
 horizontal_header_labels
 horizontal_pose_param_name
+hpz p.
 hsequence_id
 hud_skin
 hullIvr-0.obj
@@ -26778,8 +26775,8 @@ overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
 p"?value@QSpinBox@@QEBAHXZ
-p08@H^d
-p0j@0.
+p0jp1.
+p2 p.
 pAction
 pActionObject
 pAsset
@@ -27017,6 +27014,7 @@ quad_bend_tolerance
 quadratic
 quaternion_array
 quiet
+r\vpT
 rad2deg
 radiant
 radiant_creeps

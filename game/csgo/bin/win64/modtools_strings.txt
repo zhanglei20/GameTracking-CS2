@@ -8756,6 +8756,7 @@ $modelname$_surface
 .webp
 08@HR
 0:0j\r
+0@sw
 0\r%0t
 0\tV_frexpf
 1.0 - FractionalPart( A ) 
@@ -8769,7 +8770,8 @@ $modelname$_surface
 2DBlend
 2DBlendEditor
 2DBlendFromAnimation
-2Tz{
+2\vp<J
+2\vpP
 2_BONE_IK
 4\r54t
 5;FJ$,XEK4<
@@ -8798,7 +8800,6 @@ $modelname$_surface
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
-@08NP
 @Integer overflow in %s
 @Invalid Internal Point
 @m_vCenter
@@ -11889,7 +11890,6 @@ Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P08J0
-P08NP
 PARENT
 PF\n%d %d\n-1.000000\n
 POSE_SPACE_BONE
@@ -12188,7 +12188,7 @@ R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
 ROTATION
 R\vp!y
-R\vpx
+R\vpP
 R_T5Y
 Radial Basis Function Type
 Radius Params CP ( Prop Group Smallest Radius / Prop Group Largest Radius / Number of Avg Objects )
@@ -13277,7 +13277,6 @@ _temp_tangent
 _volumeatlas_
 _wjb
 _zero
-aBvP
 a\tV_powd
 absolute
 acceleration
@@ -14459,7 +14458,6 @@ overrideclass
 overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
-p08@H^P
 p0j0
 pEvent != nullptr
 pParentTrack != nullptr
@@ -14599,7 +14597,6 @@ pseudo-
 pushout_strength
 quad_bend_tolerance
 quadratic
-r\fpx
 radius0_key
 radius1_key
 radius_key

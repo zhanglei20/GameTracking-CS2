@@ -10,7 +10,6 @@
 /// <reference path="../popups/popup_acknowledge_item.ts" />
 var PopUpShoppingCartCheckout;
 (function (PopUpShoppingCartCheckout) {
-    const m_maxInventoryCount = 900;
     function getCart(cp) {
         if (!cp)
             cp = $.GetContextPanel();
@@ -45,11 +44,14 @@ var PopUpShoppingCartCheckout;
     }
     function OnUnreadyForDisplay() {
     }
+    let m_numTotalEconItemsInInventory = 0;
     function Init() {
         if (!MyPersonaAPI.IsConnectedToGC()) {
             ClosePopup();
             return;
         }
+        InventoryAPI.SetInventorySortAndFilters('inv_sort_age', false, 'only_econ_items', '', '');
+        m_numTotalEconItemsInInventory = InventoryAPI.GetInventoryCount();
         const cp = $.GetContextPanel();
         const strOneOffCartId = cp.GetAttributeString('cartid', '');
         if (strOneOffCartId) {
@@ -93,7 +95,7 @@ var PopUpShoppingCartCheckout;
         cp.Data().redeemableBalance = nRedeemableBalance;
     }
     function _SetupButtonsAndWarnings(cp) {
-        const isInventoryFull = InventoryAPI.GetInventoryCount() >= (m_maxInventoryCount - getCart(cp).getTotalItems());
+        const isInventoryFull = (m_numTotalEconItemsInInventory + getCart(cp).getTotalItems() > ItemInfo.NUM_BACKPACK_SLOTS);
         cp.FindChildInLayoutFile('id-cart-warning').visible = isInventoryFull;
         _AcknowledgeNewTokens(cp);
         $.Schedule(.4, () => {
@@ -214,6 +216,11 @@ var PopUpShoppingCartCheckout;
             locString: strButtonText,
             loopingSound: 'UI.Laptop.ButtonFillLoop',
             timerCompleteAction: () => {
+                InventoryAPI.SetInventorySortAndFilters('inv_sort_age', false, 'only_econ_items', '', '');
+                if (InventoryAPI.GetInventoryCount() + getCart(oSettings.cp).getTotalItems() > ItemInfo.NUM_BACKPACK_SLOTS) {
+                    UiToolkitAPI.ShowGenericPopupOk($.Localize('#popup_casket_title_error_casket_inv_full'), $.Localize('#SFUI_InventoryFull_Error'), '', () => { });
+                    return;
+                }
                 _OnAccept(oSettings.cp.Data().redeemableBalance, getCart(oSettings.cp).getTotalPrice(), oSettings.cp);
                 elBtn.enabled = false;
                 oSettings.cp.FindChildInLayoutFile('id-cart-close').enabled = false;

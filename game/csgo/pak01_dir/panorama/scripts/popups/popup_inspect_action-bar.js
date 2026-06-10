@@ -34,6 +34,10 @@ var InspectActionBar;
             elActionBar.Data().panelRegisteredForEvents = true;
             $.RegisterForUnhandledEvent('PanoramaComponent_Loadout_EquipSlotChanged', () => _SetupEquipItemBtns(elActionBar, itemId));
         }
+        if (nPrice) {
+            $.RegisterForUnhandledEvent('PanoramaComponent_Store_VolatileShopSubscribe', (...args) => { _OnVolatileShopSubscribe(...args, elActionBar); });
+            _EnsureVolatileShopSubscribed($.GetContextPanel());
+        }
         const contentPanel = $.GetContextPanel();
         elActionBar.FindChildInLayoutFile('InspectPlayMvpBtn').SetPanelEvent('onactivate', () => InspectPlayMusic('mvp', contentPanel));
         const category = InventoryAPI.GetLoadoutCategory(itemId);
@@ -53,6 +57,24 @@ var InspectActionBar;
         }
     }
     InspectActionBar.Init = Init;
+    function _EnsureVolatileShopSubscribed(cp) {
+        if (!cp || !cp.IsValid())
+            return;
+        if (cp.Data().refreshSubscriptionHandle) {
+            $.CancelScheduled(cp.Data().refreshSubscriptionHandle);
+            cp.Data().refreshSubscriptionHandle = null;
+        }
+        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers, true);
+        cp.Data().refreshSubscriptionHandle = $.Schedule(150, () => _EnsureVolatileShopSubscribed(cp));
+    }
+    function _OnVolatileShopSubscribe(nContainerDef, bNewPricesParsed, elActionBar) {
+        const nPrice = InspectShared.GetPopupSetting('price_in_tokens');
+        const itemId = InspectShared.GetPopupSetting('item_id');
+        _SetupAddRemoveToCartButtons(elActionBar, itemId, nPrice);
+        _SetupCartActionsBtn(elActionBar, nPrice, itemId);
+        _ShowHideCartBtn(elActionBar, nPrice);
+        _ShowHideFavoriteBtn($.GetContextPanel(), elActionBar, nPrice);
+    }
     function _SetUpItemCertificate(elPanel, id) {
         const elCert = elPanel.FindChildInLayoutFile('InspectItemCert');
         if (!elCert || !elCert.IsValid()) {
@@ -250,9 +272,10 @@ var InspectActionBar;
             popupPanel.Data().isFromInspect = true;
         });
         ShoppingCart.cart.subscribeToUpdates(elOpenCartBtn, 'inspect-sticker', () => {
+            const quantityInCart = ShoppingCart.cart.getItemQuantity(id);
             elPanel.SetDialogVariableInt('cart-count', ShoppingCart.cart.getItemQuantity(id));
             elPanel.SetDialogVariableInt('total-items', ShoppingCart.cart.getTotalItems());
-            elPanel.SetDialogVariableInt('price', ShoppingCart.cart.getItemLinePrice(id));
+            elPanel.SetDialogVariableInt('price', quantityInCart == 0 ? price : ShoppingCart.cart.getItemLinePrice(id));
         });
     }
     function _ShowHideCartBtn(elPanel, price) {

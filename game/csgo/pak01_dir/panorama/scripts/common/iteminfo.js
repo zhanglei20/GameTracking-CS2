@@ -403,4 +403,5 @@ var ItemInfo;
         return InventoryAPI.DoesItemMatchDefinitionByName(id, 'recipe');
     }
     ItemInfo.IsRecipe = IsRecipe;
+    ItemInfo.NUM_BACKPACK_SLOTS = 1000;
 })(ItemInfo || (ItemInfo = {}));

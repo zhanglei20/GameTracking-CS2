@@ -12,8 +12,6 @@ var SelectItemForCapability;
     SelectItemForCapability.oCapabilityInfo = {
         capability: '',
         initialItemId: '',
-        multiselectItemIds: {},
-        multiselectItemIdsArray: [],
         popupVisible: false,
         bWorkshopItemPreview: false,
         bIsMultiSelect: false
@@ -107,30 +105,15 @@ var SelectItemForCapability;
         elEmpty.SetDialogVariable('empty-text', emptyText);
         elEmpty.visible = true;
     }
-    function _UpdateMultiSelectItemsList(itemid, bSelected) {
-        if (bSelected) {
-            if (!SelectItemForCapability.oCapabilityInfo.multiselectItemIds.hasOwnProperty(itemid)) {
-                SelectItemForCapability.oCapabilityInfo.multiselectItemIds[itemid] = bSelected;
-                SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.push(itemid);
-            }
-        }
-        else {
-            if (SelectItemForCapability.oCapabilityInfo.multiselectItemIds.hasOwnProperty(itemid)) {
-                delete SelectItemForCapability.oCapabilityInfo.multiselectItemIds[itemid];
-                SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.splice(SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.indexOf(itemid), 1);
-            }
-        }
-        _UpdateMultiSelectDisplay();
-    }
     function _UpdateMultiSelectDisplay() {
         const elMultiSelectDisplay = _m_cp.FindChildInLayoutFile('id-popup-select-multi-item-display');
         if (!SelectItemForCapability.oCapabilityInfo.bIsMultiSelect) {
             elMultiSelectDisplay.visible = false;
             return;
         }
-        SelectItemForCapability.oCapabilityInfo.capability === "";
-        elMultiSelectDisplay.SetDialogVariableInt('count', SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.length);
-        _m_cp.FindChildInLayoutFile('id-popup-select-multi-item-btn').enabled = (SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.length > 0);
+        let count = _m_elItemList.selectedItemCount;
+        elMultiSelectDisplay.SetDialogVariableInt('count', count);
+        _m_cp.FindChildInLayoutFile('id-popup-select-multi-item-btn').enabled = (count > 0);
         elMultiSelectDisplay.visible = true;
     }
     function ClosePopUp() {
@@ -177,13 +160,15 @@ var SelectItemForCapability;
             _CapabilityPutIntoCasketAction(itemid, SelectItemForCapability.oCapabilityInfo.initialItemId);
         }
         if (SelectItemForCapability.oCapabilityInfo.capability === 'casketretrieve') {
-            itemTile.ToggleClass('capability_multistatus_selected');
-            _UpdateMultiSelectItemsList(itemid, itemTile.BHasClass('capability_multistatus_selected'));
+            let listPanel = itemTile.FindAncestor("id-popup-select-item-list");
+            listPanel.OnItemActivated(itemid);
+            _UpdateMultiSelectDisplay();
             return;
         }
         else if (SelectItemForCapability.oCapabilityInfo.capability === 'casketstore') {
-            itemTile.ToggleClass('capability_multistatus_selected');
-            _UpdateMultiSelectItemsList(itemid, itemTile.BHasClass('capability_multistatus_selected'));
+            let listPanel = itemTile.FindAncestor("id-popup-select-item-list");
+            listPanel.OnItemActivated(itemid);
+            _UpdateMultiSelectDisplay();
             return;
         }
         else if (SelectItemForCapability.oCapabilityInfo.capability === 'craft_souvenir') {
@@ -346,7 +331,11 @@ var SelectItemForCapability;
     ;
     function ProceedForMultiStatusCapabilityPopup() {
         let capability = SelectItemForCapability.oCapabilityInfo.capability;
-        let arrItemIDs = SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray;
+        let count = _m_elItemList.selectedItemCount;
+        let arrItemIDs = [];
+        for (let i = 0; i < count; i++) {
+            arrItemIDs.push(_m_elItemList.GetSelectedItemId(i).toString());
+        }
         if (arrItemIDs.length <= 0)
             return;
         switch (capability) {
@@ -379,7 +368,7 @@ var SelectItemForCapability;
             return false;
         if (!itemid)
             return false;
-        _UpdateMultiSelectItemsList(itemid, bSelected);
+        _UpdateMultiSelectDisplay();
         UpdateSort();
         return true;
     }

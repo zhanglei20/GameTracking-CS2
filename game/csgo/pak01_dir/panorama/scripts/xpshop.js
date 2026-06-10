@@ -687,6 +687,11 @@ var XpShop;
             IconUtil.SetItemSetSVGImage(elImage, ShopEntry.ui_set_image);
         }
         elConfirmBar.FindChildInLayoutFile('id-xpshop-item-redeem-confirm').SetPanelEvent('onactivate', () => {
+            InventoryAPI.SetInventorySortAndFilters('inv_sort_age', false, 'only_econ_items', '', '');
+            if (InventoryAPI.GetInventoryCount() >= ItemInfo.NUM_BACKPACK_SLOTS) {
+                UiToolkitAPI.ShowGenericPopupOk($.Localize('#popup_casket_title_error_casket_inv_full'), $.Localize('#SFUI_InventoryFull_Error'), '', () => { });
+                return;
+            }
             MissionsAPI.ActionRedeemOperationGoods(m_nTrack, ShopEntry.shop_index, ShopEntry.bidding_cycle ? ShopEntry.bidding_points_amount : parseInt(ShopEntry.points));
             elConfirmBar.FindChildInLayoutFile('id-xpshop-item-redeem-confirm').enabled = false;
             elConfirmBar.FindChildInLayoutFile('id-xpshop-item-redeem-cancel').enabled = false;
