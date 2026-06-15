@@ -471,7 +471,7 @@ var PredictionsGroup;
                     : ((team0 == keyteam) ? true : false);
                 let nLeftScore = 0;
                 let nRightScore = 0;
-                if (steam.wins >= 2 || steam.loss >= 2) {
+                if (steam.wins >= numBestOf1Rounds || steam.loss >= numBestOf1Rounds) {
                     nLeftScore = (omatch.keyteam_wins >= omatch.keyteam_loss) ? omatch.keyteam_wins : omatch.keyteam_loss;
                     nRightScore = (omatch.keyteam_wins < omatch.keyteam_loss) ? omatch.keyteam_wins : omatch.keyteam_loss;
                 }
