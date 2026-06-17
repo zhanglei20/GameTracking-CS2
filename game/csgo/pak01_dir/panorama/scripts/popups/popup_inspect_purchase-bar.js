@@ -29,7 +29,7 @@ var InspectPurchaseBar;
             !InventoryAPI.IsValidItemID(purchaseItemId) ||
             !priceOriginal ||
             sRestriction === 'xray' && !showXrayMachineUi ||
-            sRestriction === 'restricted') {
+            sRestriction === 'restricted' && !$.GetContextPanel().Data().existingRewardFromXrayId) {
             elPurchaseBar.AddClass('hidden');
             return;
         }

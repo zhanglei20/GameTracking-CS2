@@ -17,10 +17,12 @@ var InspectAsyncActionBar;
         const allowRental = InspectShared.GetPopupSetting('allow_rent');
         const elAsyncActionBarPanel = $.GetContextPanel().FindChildInLayoutFile('PopUpInspectAsyncBar');
         $.GetContextPanel().AddClass('PopupPanelCapability_' + worktype);
+        const purchaseItemId = InspectShared.GetPopupSetting('purchase_item_id');
         if (InspectShared.GetPopupSetting('force_hide_async_bar') ||
             !worktype ||
             (allowRental && !showXrayMachineUi) ||
             (worktype === 'nameable' && !toolId) ||
+            purchaseItemId && showXrayMachineUi ||
             _DoesNotMeetDecodalbeRequirements()) {
             elAsyncActionBarPanel.AddClass('hidden');
             return;
@@ -390,7 +392,7 @@ var InspectAsyncActionBar;
             const elDescLabel = elPanel.FindChildInLayoutFile('AsyncItemWorkDesc');
             const elDescImage = elPanel.FindChildInLayoutFile('AsyncItemWorkDescImage');
             const inspectOnly = InspectShared.GetPopupSetting('inspect_only');
-            if (inspectOnly || sRestriction === 'restricted') {
+            if (inspectOnly || sRestriction === 'restricted' && !$.GetContextPanel().Data().existingRewardFromXrayId) {
                 elOK.visible = false;
                 elDescLabel.visible = false;
                 elDescImage.visible = false;
