@@ -837,7 +837,7 @@ var PopupMajorStore;
         }
         elBanner.visible = true;
         elCarouselNav.visible = true;
-        const numToShow = aChamps.length - 1;
+        const numToShow = aChamps.length;
         const elParent = cp.FindChildInLayoutFile('id-major-store-banner-champions');
         const numTilesPerPage = 8;
         let numPages = 0;
