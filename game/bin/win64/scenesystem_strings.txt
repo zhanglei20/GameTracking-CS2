@@ -26,11 +26,7 @@
  %i fog-only.
  %s | Flags %lld \n
  (08@HPX`j
- (08@HPXb0
  (08@HPZ
- (08@HR0
- (08@J0
- (0X`hpz0
  (EXTERN)
  (Frozen)
  (MAYBE DISABLED?!)
@@ -455,72 +451,70 @@ $tIP
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) %s
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) Col %d %s
 (%d,%d,%d,%d)
-(15b
+(1Eb
+(1Pb
 (2) Or right-click this text
 (3) Or click this button
 (<-- right-click here)
-(ACb
-(AFb
-(AHb
 (ActiveIdUsing: AllKeyboardKeys: %d, NavDirMask: 0x%X)
 (Click and drag to scroll)
 (Context Name: "%s")
 (Debug Log: Auto-disabled some ImGuiDebugLogFlags after 2 frames)\n
 (Dock node)
-(EAb
-(Enb
+(E0b
 (Hex)
 (Hold Ctrl to: 
 (Hold Ctrl to: use 
 (Hold Shift to display a dummy viewport)
-(IOb
-(IZb
+(ISb
+(IVb
 (Internal Buffer: TextA Size: %d, Capacity: %d)
 (Left) Using ImGui::PushClipRect():\nWill alter ImGui hit-testing logic + ImDrawList rendering.\n(use this if you want your clipping rectangle to affect interactions)\n\n(Center) Using ImDrawList::PushClipRect():\nWill alter ImDrawList rendering only.\n(use this as a shortcut if you are only using ImDrawList calls)\n\n(Right) Using ImDrawList::AddText() with a fine ClipRect:\nWill alter only this specific ImDrawList::AddText() rendering.\nThis is often used internally to avoid altering the clipping rectangle and minimize draw calls.
 (Main menu bar)
-(Mbb
-(Mpb
 (Popup)
-(Qcb
+(QUb
+(Qob
+(Qrb
+(Qtb
 (R = radius, N = approx number of segments)
 (SceneWorld 3D Dump contains %d large objects - they are scaled down and will render red.)\n
-(UIb
-(UYb
+(UJb
 (Untitled)
+(Uqb
 (Use ImGui::SameLine() to keep adding items to the right of the preceding item)
+(Y5b
 (Z(^(b(f(j(n(r(v(z1
 (\?=\nW>=\nW>=\nW>
-(a9b
 (also access from 'Examples->Assets Browser' in menu)
 (and more errors)
-(axb
 (c) 2014-2025 Omar Cornut
 (demo menu)
 (dump)
 (dump3d)
-(eTb
-(emb
+(eab
+(ewb
 (except InputRouting which is spammy)
-(iGb
+(eyb
+(iCb
+(iFb
+(iHb
 (in ChildD: not using same Shortcut)
 (in ChildE: using same Shortcut)
 (in PopupF)
 (in WindowA)
-(irb
-(m1b
-(m7b
-(mBb
+(mAb
+(mnb
 (no material)
 (no model)
 (note: some platform backends may not reflect a change of this value for existing viewports, and may need the viewport to be recreated)
-(qLb
-(qzb
+(qOb
+(qZb
 (see Demo->Configuration for details & more)
-(u5b
+(ubb
 (unnamed)
-(uob
-(uvb
+(upb
 (void*)0x%p
+(ycb
 ** %d instances of same table! Some data below will refer to last instance.
 **DebugBreak**
 *COPIED*
@@ -866,7 +860,6 @@ $tIP
 04e/
 050s0
 08@HR
-08@J0
 0?333?333?333?333?
 0x%02X
 0x%04X
@@ -893,8 +886,6 @@ $tIP
 2. I am selectable
 24 Hour Clock
 2C2L
-2\vpD
-2\vpl
 2d arr
 2q2z2
 3 (tab skip)
@@ -1096,6 +1087,8 @@ $tIP
 @33333{
 @33333}
 @33SA
+@HPX`hv 
+@HV0
 @Hide
 @OS/2
 @fff>fff>fff>fff>
@@ -2872,7 +2865,6 @@ Here we replace and select text each time Up/Down are pressed. See 'Examples>Con
 Here we toggle the casing of the first character on every edit + count edits.
 Here, all circle data is stored in a single interleaved buffer:
 Hex-encode non-ASCII
-Hi`d
 Hidden
 HiddenTabBar
 Hide Filtered
@@ -4061,7 +4053,6 @@ Override ChildBg color
 Override Streaming GPU Memory
 P+\fGj
 P.P5
-P08@J0
 P3\rA
 P8\nD
 PAPU
@@ -4351,8 +4342,6 @@ RFRQR\Rf
 RGBA32
 RTProxy Layout
 RTProxyBLAS
-R\fpD
-R\vpl
 Rand Paul
 Range: [%f,%f]
 RangeSrcItem = %I64d (0x%I64X), RangeSelected = %d
@@ -5867,7 +5856,6 @@ Zsmall
 \fG7+B
 \fPy\vE
 \fT>M-+?#gy?
-\fp\vPH
 \n Render %d specific objects
 \n Render world : %s\n
 \n"\n)\n7\nA\nH\nS\nc\np\n|\n
@@ -5943,7 +5931,7 @@ _WidthFixed
 _WidthStretch
 _XFREE86_GLYPH_RANGES
 _atlas
-`Yad
+`yad
 a'aCaYb"b8b
 a-a8
 aJ!\vA
@@ -6398,7 +6386,6 @@ hitgroup_shader_%p
 hl?S
 horizontal
 horizontal split
-hpz0
 https://github.com/epezent/implot
 https://github.com/ocornut/imgui
 https://github.com/ocornut/imgui/blob/master/docs/BACKENDS.md
@@ -6866,7 +6853,6 @@ quotesinglbase
 quotesingle
 r*r4r;
 rQr\
-r\vpD
 radical
 radio a
 radio b

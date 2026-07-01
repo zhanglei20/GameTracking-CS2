@@ -2691,6 +2691,8 @@ TextEntry Label
 {
 	opacity: 0;
 	transform: scale3d(1, 1, 1);
+	visibility: collapse;
+	contrast: 1;
 }
 
 .major-store__item-tile:hover:not(.major-store__item-tile.hidden) .major-store__cart-btn,.major-store__item-tile:hover:not(.major-store__item-tile.hidden) .major-store__item-tile__in-cart,.major-store__item-tile:hover:not(.major-store__item-tile.hidden) .major-store__item-tile__btn,.major-store__item-tile:hover:not(.major-store__item-tile.hidden) .major-store__item-tile__bookmark
