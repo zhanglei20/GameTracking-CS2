@@ -24524,8 +24524,6 @@ m_nOutputWhitePointRGB
 m_nOutsideWorld
 m_nOverlayRenderOrder
 m_nOverrideBlockLOS
-m_nOverrideCP
-m_nOverrideCPField
 m_nOverrideFlinchHitGroup
 m_nOversampleFactor
 m_nOvertimePlaying
@@ -28178,8 +28176,6 @@ output value at min distance
 outputSubmix
 overall size multiplier (-1 count based distribution)
 overbright factor
-override CP field
-override max velocity from this CP
 override translucent materials
 p2p_listpeers
 p2p_ping

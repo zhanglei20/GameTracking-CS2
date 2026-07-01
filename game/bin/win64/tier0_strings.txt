@@ -77,6 +77,7 @@
 #include is NULL 
 #int#
 #nyf
+#vpulse2
 $Ib?s
 $eax
 $ebp
@@ -784,7 +785,6 @@ $xmm9
 1wsHp
 2,THh
 28~v
-2\vpl
 2aNuE
 3 FB
 3+5<t
@@ -797,6 +797,7 @@ $xmm9
 3\r53h&
 3o=q
 3wl'
+4200
 4JpI?=
 4\tgA
 4^K\fOI
@@ -856,6 +857,7 @@ $xmm9
 ;BIb?
 ;srv*http://symbols/windows
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->\n
+<!-- schema 
 </link>
 </script>
 <6Rj
@@ -1703,7 +1705,7 @@ $xmm9
 ?GetWinLevelRevision@CPUInformation@@SA_NPEAG0@Z
 ?GrowByChunks@CBufferString@@QEAAHHH@Z
 ?GrowPool@CPoolAllocator@@QEAAXI@Z
-?HEAP WARNING: memory block at %p is unexpectedly allocated\n
+?HEAP WARNING: memory block at %p appears to be corrupt\n
 ?HandleFirstWriteLockTransition@CEventRWLock@@IEAAXAEAVCEventListNode@@@Z
 ?HandleToString@CCountedStringPool_CI@@QEBAPEBDG@Z
 ?HandlerQueueHeartBeat@MiniDumpStandardData_t@@QEBAXXZ
@@ -2562,6 +2564,7 @@ ApplyDiffs
 Apr 22 2026
 April
 AreFileApisANSI
+Assert
 AssertDlgThread
 Assertion Dialog could not be created. Breaking in debugger.\n
 Assertion Dialog could not be created. Ignoring assertion. Run under the debugger to break instead.\n
@@ -3426,6 +3429,7 @@ C_OP_InstantaneousEmitter
 C_OP_LockToBone
 C_OP_LockToSavedSequentialPath
 C_OP_MaintainEmitter
+C_OP_MaxVelocity
 C_OP_MoveToHitbox
 C_OP_MovementPlaceOnGround
 C_OP_MovementRotateParticleAroundAxis
@@ -3559,7 +3563,6 @@ ConfigAttachedModel
 Conflicting range base values given for compile_unit\n
 Connection_Inparam
 Connection_Outflow
-Console
 Constructor/destructor index ('%c%c') out of range\n
 Constructor/destructor name extraction failed\n
 Content Assertion Failed
@@ -4122,7 +4125,7 @@ H$BQ
 H(VVH
 H*0"ZOW
 H>r1
-HEAP WARNING: memory block at %p appears to be corrupt\n
+HEAP WARNING: memory block at %p is unexpectedly allocated\n
 HEAP WARNING: memory block at %p is unexpectedly free\n
 HEAP WARNING: memory block at %p is unexpectedly unrecognized\n
 HEAP WARNING: memory pointer %p is invalid\n
@@ -4839,7 +4842,7 @@ Outflow_NPCScriptedMoveTo
 Outflow_NPCUseScriptedAbility
 Outflow_Simultaneous
 OutputDebugStringA
-P(YX
+P(YX8S2
 P4_EXTRACT_CMD=p4.exe print -o %srcsrvtrg% -q "//%var3%#%var4%"\n
 P4_EXTRACT_TARGET=%targ%\%var2%\%fnbksl%(%var3%)\%var4%\%fnfile%(%var1%)\n
 PARTICLE_DEPTH_FEATHERING_OFF
@@ -5297,8 +5300,6 @@ RPCRT4.dll
 RSDS&
 RUSSIAN
 RVfQp
-R\fpl
-R\vpl
 RaiseException
 RandomFloat
 RandomFloatExp
@@ -6710,7 +6711,7 @@ Vrad3_001
 Vtube
 VtuneApi32e.dll
 W 7x
-W)lQp
+W)lQ`
 W/q#IX
 W4vC
 WARNING
@@ -6874,9 +6875,10 @@ ZwSetTimerResolution
 \nk>oB
 \ntier0.dll
 \r00000000-0000-0000-0000-000000000000
-\rAssert
+\rConsole
 \rInput contains no data
 \r\f\v\v\n\n\t\t\t\t\t
+\rhS2
 \rmj>zjZ
 \sdktools\bin
 \sdktools\bin\win32
@@ -6901,7 +6903,6 @@ ZwSetTimerResolution
 \v_dbghelp_home_unlinked
 \veBV
 ]P4H
-]PS2
 ]u9g
 ]xEc
 ^<V7w
@@ -7947,6 +7948,7 @@ m_flLiteralValue
 m_flMax
 m_flMaxLength
 m_flMaxPitchAngle
+m_flMaxVelocity
 m_flMaxYawAngle
 m_flMin
 m_flMinLength
@@ -8095,6 +8097,7 @@ m_nOutputBlendMode
 m_nOutputField
 m_nOverrideCP
 m_nOverrideCP2
+m_nOverrideCPField
 m_nParamInterruptability
 m_nParticleNumber
 m_nParticleSelection
@@ -8280,15 +8283,17 @@ moredetailed
 moveto
 multiplayer_break
 n03>Pu
-n<!-- schema 
 n>log2
 nBits != 32
 nInterruptability
 nMax
 nMin
 nOffset < m_nAllocationSize
+nOverrideCPField
+nPS2
 nSwitchValue
 nTries < 10000000
+nXAO
 n\f"pA3Q
 n\f"pA3QX
 n]?iJ
@@ -8799,6 +8804,7 @@ vpcf62
 vpcf63
 vpcf64
 vpcf65
+vpcf66
 vpcf7
 vpcf8
 vpcf9
@@ -8813,7 +8819,6 @@ vpulse14
 vpulse15
 vpulse16
 vpulse17
-vpulse2
 vpulse3
 vpulse4
 vpulse5
@@ -8874,6 +8879,7 @@ yaw_start
 z3zr
 z8ji
 z>h4
+z@S2
 zN,W
 zQ3W
 z\r8Pf

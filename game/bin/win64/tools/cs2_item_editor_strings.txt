@@ -302,26 +302,25 @@ $\n\tword_list
 '\n\fglobal_stats
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
-(1XX
-(5cX
-(91X
-(9ZX
-(AwX
-(AzX
+(1dX
+(52X
+(95X
+(9PX
+(ArX
 (Documents Filter - Use | for OR, space for AND)
-(EqX
 (Filter)
-(MfX
+(IgX
+(M1X
+(MIX
+(MLX
+(MNX
 (No Active Session)
 (Outliner Filter)
-(Q0X
-(QHX
-(QKX
-(QMX
-(UFX
-(YAX
-(YTX
-(YbX
+(QGX
+(UBX
+(UUX
+(UcX
+(YhX
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"6\n#CSOAccountKeychainRemoveToolCharges
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
@@ -446,19 +445,19 @@ $\n\tword_list
 (\v2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 (\v2\f.CSOEconItem
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(a6X
-(ahX
+(a4X
+(aOX
+(aaX
 (default)
-(e3X
-(eNX
-(m1X
-(m2X
-(q5X
-(u7X
-(uYX
-(yDX
-(yLX
-(ysX
+(i2X
+(i3X
+(m6X
+(q8X
+(qZX
+(uEX
+(uMX
+(utX
+(yHX
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n!penalty_account_id_sessions_green
@@ -2646,6 +2645,7 @@ $\n\tword_list
 0\n,GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE
 0\n,k_ECommunityItemAttribute_CommunityItemAppID
 0\n\tbroadcast
+0vl^;
 0x%1
 0x%p = %s '%s'
 0x%s
@@ -2885,8 +2885,6 @@ $\n\tword_list
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8]UW
-8]pW
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 9\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
@@ -4374,8 +4372,8 @@ $\n\tword_list
 ?userType@QVariant@@QEBAHXZ
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
-@HPX`hv`
-@HV0
+@08Nl^;
+@HPX`hv@
 @\n\fSingleObject
 @\n\vserver_type
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
@@ -5431,6 +5429,8 @@ Keychain Kit Description
 Keychain Kit ID
 Keychain Kit Name
 Keychain Kits
+Keychain definition %s: failed to resolve base keychain: %s
+Keychain definition %s: invalid highlight reel specified: %s
 Keychain definition %s: missing "name"
 Keychain definition %s: name must be a positive integer
 Keychain definition %s: unsupported item_quality '%s'
@@ -5719,6 +5719,7 @@ OrigMat
 Other Tools
 Outliner
 OverlayProjectionDirection
+P08Nl^;
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
@@ -6110,6 +6111,7 @@ Sticker Name
 Sticker kit '%s' rotate range is not valid %f:%f
 Sticker kit '%s' scale range is not valid %f:%f
 Sticker kit name '%s' is a duplicate gold sticker for event %d team %d
+Sticker kit name '%s' is a duplicate gold sticker for event %d team %d player %d with a decreasing ID
 StickerCapsule
 StickerKit_
 StickerKit_%s
@@ -6857,7 +6859,6 @@ Zip system failure.\n
 \n\vvalue_bytes
 \n\vxp_category
 \n\vyoutube_url
-\nyUW
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
 \r?data@QStandardItemModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
@@ -6970,13 +6971,13 @@ _nodrips
 _sm.png
 _sticker_capsule
 _toolsautosave
-`1bX
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
+aBvl^;
 abandon
 abandoned_match
 absolute
@@ -8342,6 +8343,7 @@ overrideclass
 owcaseid
 owner_only
 owns_polymorphic_data
+p08@H^l^;
 pButton
 pCurrentFocusWidget
 pData
@@ -8435,6 +8437,7 @@ player_xp_bonus_flags
 players_humans
 players_online
 players_searching
+pnl^;
 point
 point_follow
 point_follow_substepped

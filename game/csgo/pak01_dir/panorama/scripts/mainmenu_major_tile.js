@@ -53,6 +53,7 @@ var MainMenuMajorTile;
                 if (!elTile) {
                     elTile = $.CreatePanel('Button', elParent, 'id-mini-store-tile-' + i);
                     elTile.BLoadLayoutSnippet('major-shop-item');
+                    elTile.hittest = false;
                 }
                 elTile.FindChildInLayoutFile('id-item-image').itemid = arrSorted[nIndex].fauxid;
                 elTile.SetDialogVariableInt('price', arrSorted[nIndex].price);

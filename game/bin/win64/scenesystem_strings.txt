@@ -894,6 +894,7 @@ $tIP
 24 Hour Clock
 2C2L
 2\vpD
+2\vpl
 2d arr
 2q2z2
 3 (tab skip)
@@ -4351,6 +4352,7 @@ RGBA32
 RTProxy Layout
 RTProxyBLAS
 R\fpD
+R\vpl
 Rand Paul
 Range: [%f,%f]
 RangeSrcItem = %I64d (0x%I64X), RangeSelected = %d

@@ -187,10 +187,16 @@ var mainmenu_watch;
                 let oPlayer = arrTeamPlayers[i][1];
                 let elPlayer = $.CreatePanel('Panel', elPlayerContainer, 'JsPlayerCard');
                 elPlayer.BLoadLayoutSnippet('snippet-tournament-player');
-                elPlayer.SetDialogVariable('tournament-player-name', oPlayer['name']);
+                let playername = oPlayer['name'];
+                let steamid64 = oPlayer['accountid64'];
+                if (eventid === 26 && playername === 'kyxsan') {
+                    playername = 'karrigan';
+                    steamid64 = '76561197989430253';
+                }
+                elPlayer.SetDialogVariable('tournament-player-name', playername);
                 let elPlayerImage = elPlayer.FindChildTraverse('JsTournamentPlayerPhoto');
                 if (elPlayerImage) {
-                    let photo_url = "file://{images}/tournaments/avatars/" + eventid + "/" + oPlayer['accountid64'] + ".png";
+                    let photo_url = "file://{images}/tournaments/avatars/" + eventid + "/" + steamid64 + ".png";
                     elPlayerImage.SetImage(photo_url);
                 }
             });

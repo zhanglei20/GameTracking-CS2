@@ -79,7 +79,7 @@ var PopUpShoppingCartCheckout;
             _SetUpEmptyState(cp);
             _MakeCartTiles(cp);
         });
-        if (StoreAPI.GetSecondsUntilPendingPriceUpdate(g_ActiveTournamentInfo.itemid_dynamic_stickers) > 0) {
+        if (PopupMajorStore.GetSecondsUntilPendingPriceUpdateForAllTournamentItems() > 0) {
             PopupMajorStore.PriceRefreshTimerUpdate(cp);
         }
     }

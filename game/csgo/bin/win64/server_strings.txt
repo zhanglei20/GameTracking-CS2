@@ -101,8 +101,12 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`j
- (08@HPZ
+ (08@HPX`j 
+ (08@HPXbPJ
+ (08@HPZ 
+ (08@HRPJ
+ (08@JPJ
+ (0X`hpzPJ
  (Dirty Animation)
  (Disabled on Server)
  (INVALID PSS PARAMETERS)\n
@@ -2238,8 +2242,9 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
-.0qU
-.0sU
+.0ZU
+.0rU
+.0vU
 .4bb
 .97yY
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
@@ -8489,6 +8494,7 @@ $tH@T\tI
 .MatchEndItemUpdates
 .OperationalStatisticElement"S\n
 .OperationalVarValue
+.P3U
 .P6AXAEBUSoundOpvarManagerSettableData_t@@PEAVCSoundOpvarSetPointStackCollection@@@Z
 .P6A_NAEBUCharacterDefn_t@CCStrike15ItemSchema@@@Z
 .PARTICLE_MESSAGE
@@ -8517,8 +8523,7 @@ $tH@T\tI
 .PEAVCPlayer_UseServices@@
 .PEAVCPlayer_WaterServices@@
 .PEAVCPlayer_WeaponServices@@
-.PWU
-.PYU
+.PZU
 .PlayerCommendationInfo
 .PlayerDecalDigitalSignature
 .PlayerDecalDigitalSignature":\n
@@ -8528,9 +8533,9 @@ $tH@T\tI
 .PlayerRankingInfo
 .PlayerRankingInfo"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
 .PlayerRankingInfo.PerMapRank
-.PpU
 .PrU
 .PsU
+.PvU
 .Q.Ol
 .ScoreLeaderboardData
 .ScoreLeaderboardData"S\n%CCSUsrMsg_PlayerDecalDigitalSignature
@@ -8821,11 +8826,10 @@ $tH@T\tI
 .dx_LV9
 .fatdem
 .lbN
-.pVU
-.pWU
-.phU
+.pSU
+.pYU
+.piU
 .pp@0
-.ppU
 .prU
 .text$
 .vjs_c
@@ -8867,14 +8871,15 @@ $tH@T\tI
 0123456789
 02V8[
 05=k
-08@HR
+08@HR 
+08@JPJ
+08B 
 08bX
 09,h
 0;Q5[
 0<cz
 0@NX^b!/@P\b
 0AOY_c"2CQ[c
-0H\nP
 0M2~@p
 0Mc\t\n
 0W/5
@@ -8982,7 +8987,6 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
-2\vpT
 2^pV
 2a"l
 2bT~
@@ -9106,24 +9110,28 @@ $tH@T\tI
 5s\nl
 5t?F
 5~EW
-6 7U
-6 aU
-6 yU
+6 hU
+6 iU
 6#6165676;6M6O6S6Y6a6k6m6
 6#RDP#
 6%vi
 6,2K
 6-zeZ
-60eU
-60zU
+60IU
+60`U
 62$|S)6f
 64CK\vH
-6666666666666666
+6666666666666666 5
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 67-s
+6@JU
+6@cU
 6H,N
 6O|T%
-6P`U
+6PBU
+6PKU
+6P^U
+6PgU
 6Qd=
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -9139,7 +9147,7 @@ $tH@T\tI
 6\n2GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
 6\n\nvariations
 6_wEX
-6`dU
+6`iU
 6afD
 6bX+
 6c&0|vvX
@@ -9147,7 +9155,10 @@ $tH@T\tI
 6l13
 6lkc
 6myY;
-6pgU
+6p8U
+6p_U
+6pbU
+6pzU
 6qo~
 6r-m_v
 6r1ij
@@ -9195,7 +9206,6 @@ $tH@T\tI
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
 8A6j
-8B@B
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9354,6 +9364,7 @@ $tH@T\tI
 =trF6,#
 >#>)>/>3>A>W>c>e>w>
 >0 = watershed, 1 = monotone, 2 = layers
+>0eU
 >4|6eXg_e
 >7^0g
 >>NAVGEN MOVABLE: Skipping movable mesh... no polys present\n
@@ -9375,7 +9386,6 @@ $tH@T\tI
 >?SetClassName@FunctionTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@@Z
 >JRZ`c4DLV_c*8AN\c
 >KS[ac5>IU^c+0<LZc
->PfU
 >Sem
 >WK6
 >\n9k_EGCItemCustomizationNotification_ClientRedeemFreeReward
@@ -9390,8 +9400,7 @@ $tH@T\tI
 >fN46R^
 >l\rur
 >p00<
->p3U
->paU
+>phU
 >yhP
 >ztq
 ?33s?
@@ -9406,12 +9415,14 @@ $tH@T\tI
 ??SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
 ?BooleanValue@Value@v8@@QEBA_NPEAVIsolate@2@@Z
 ?CEntityIOOutput
+?CLIENTSTUB
 ?Call@Function@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@HQEAV52@@Z
 ?CompileModule@ScriptCompiler@v8@@SA?AV?$MaybeLocal@VModule@v8@@@2@PEAVIsolate@2@PEAVSource@12@W4CompileOptions@12@W4NoCacheReason@12@@Z
 ?Convex hull building with 2D data, will fail!\n
 ?CreateHandle@HandleScope@v8@@KAPEA_KPEAVIsolate@internal@2@_K@Z
 ?CreateSyntheticModule@Module@v8@@SA?AV?$Local@VModule@v8@@@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@AEBV?$MemorySpan@$$CBV?$Local@VString@v8@@@v8@@@2@P6A?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V32@@Z@Z
 ?DisposeGlobal@api_internal@v8@@YAXPEA_K@Z
+?Enable debug printing about constraint sounds.
 ?Enter@Context@v8@@QEAAXXZ
 ?Enter@Isolate@v8@@QEAAXXZ
 ?Evaluate@Module@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@@Z
@@ -9430,8 +9441,6 @@ $tH@T\tI
 ?HP4
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 ?No data
-?Show listening addition/removals
-?Spring damping ratio for length constraint
 ?VBH;
 ?\n:k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
 ?\n:k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions
@@ -9455,14 +9464,14 @@ $tH@T\tI
 @333
 @333?
 @33s@
-@6@WU
-@6`VU
+@60SU
+@6`YU
 @?SlowGetAlignedPointerFromInternalField@Object@v8@@AEAAPEAXH@Z
 @Aff
 @BH]f
 @BoneSetup
 @CBaseToggle
-@HPX`hv0|U
+@CWeaponNegev
 @MfKZ
 @Pgl
 @Pu\rm
@@ -9475,10 +9484,10 @@ $tH@T\tI
 @\n\nnomination
 @\n\tPlacement
 @\n\vserver_type
-@clear_bombs
 @cs_script
 @dKb]
 @fff>fff>fff>fff>
+@ht`6
 @i1V
 @n2w
 @player_start_teleport_destination
@@ -10108,6 +10117,7 @@ BLTY^b5>IT\b&.:HVb
 BMPSTRING
 BMUZ_c6BLV\c'1=JVc
 BMV]`b3>LW_b!+;LZb
+BMaximum number of maps to include in endmatch voting during War Games
 BN lib
 BNRAND
 BNW^ac4ANY_c".=MZc
@@ -10163,7 +10173,6 @@ BOUNDARY
 BPE_Diagnostic
 BPE_StringCommand
 BREAKABLE
-BReports all list of all entities in a map, one by one
 BRouteMsgToJob
 BT5f
 BT_ACTION_MOVETO_FASTEST_ROUTE
@@ -11339,7 +11348,6 @@ CKV3MemberNameWithStorage
 CKh/Q
 CLASSNAME
 CLIENTSIDE
-CLIENTSTUB
 CLIENT_CERTIFICATE
 CLIENT_FINISHED
 CLIENT_HELLO
@@ -14933,6 +14941,7 @@ Found no entity at %d.\n
 Found soundscape entity "%s" with no soundscape name.\n
 Found source soundscape %u after marching backwards.\n
 FourVectors
+Fparticle_cluster_use_collision_hulls
 Frac
 Fractional component (ie. returns 0.34 for 12.34)
 FrameTime
@@ -16789,6 +16798,8 @@ Key Agreement
 Key Compromise
 Key Encipherment
 KeyValues3
+Keychain definition %s: failed to resolve base keychain: %s
+Keychain definition %s: invalid highlight reel specified: %s
 Keychain definition %s: missing "name"
 Keychain definition %s: name must be a positive integer
 Keychain definition %s: unsupported item_quality '%s'
@@ -18214,8 +18225,15 @@ P-224
 P-256
 P-384
 P-521
+P08@JPJ
+P08J@\t
 P1\t98"
+P2PJ
 P5[1
+P6@sU
+P6`:U
+P6`SU
+P:PJ
 PAGN_4
 PARALYZE
 PARAMETER NAME: %s | OPTIONAL: %s, TYPE: %s, BOUND: %s\n
@@ -18279,7 +18297,6 @@ PGr]
 PHAG2
 PHYSGUN
 PHYS_SAVE_RESTORE_VERSION
-PH\nP
 PHhn}Y
 PISTOL
 PKCS #7 SIGNED DATA
@@ -18513,7 +18530,6 @@ Permanently removes the entity from the world.
 Permit Responses
 Permitted
 Persist
-PfP@U
 Phys.GlassBreakLg
 Phys.GlassBreakMd
 Phys.GlassBreakSm
@@ -18671,7 +18687,6 @@ Please specify 0 or 1 with the -stream Parameter\n
 Please wait for broadcast to start ...
 Pm8A?
 PmR"H?
-PnPAU
 Point entity.
 PointTemplate
 Policy Qualifier CPS
@@ -19007,7 +19022,6 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDS}
 RTime32
-R\fpT
 R\r1>Vp
 R\vp!y
 R]Di
@@ -20692,6 +20706,7 @@ Sticker
 Sticker kit '%s' rotate range is not valid %f:%f
 Sticker kit '%s' scale range is not valid %f:%f
 Sticker kit name '%s' is a duplicate gold sticker for event %d team %d
+Sticker kit name '%s' is a duplicate gold sticker for event %d team %d player %d with a decreasing ID
 Still in the last area
 StitchPath has incorrect ending\n
 Stone.Huge
@@ -21464,7 +21479,6 @@ VNotify Abandoned (Not enabled)\n
 VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
-VP*U
 VR_HAND_HAPTIC_PULSE_LIGHT
 VR_HAND_HAPTIC_PULSE_MEDIUM
 VR_HAND_HAPTIC_PULSE_STRONG
@@ -21932,7 +21946,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr
+X`hr 
 Xd3h
 XfJ7
 XjfR
@@ -22379,7 +22393,6 @@ Z~wl
 \n========================================\n
 \nDictionary: %s\n
 \nGameTick_t
-\nPH\nP
 \nSimulating Entities:\n\n
 \nVisMon: Polling now. (Frequency: %f)\n
 \n\fBPE_Teleport
@@ -23026,7 +23039,6 @@ Z~wl
 \tlast acknowledged tick %d\n
 \tnexttoken
 \toRE
-\tp5U
 \ttqE5
 \tv %f %f %f\n
 \tvn %f %f %f\n
@@ -23058,6 +23070,7 @@ Z~wl
 ^\n\ffloat_values
 ^`bbccX^`bccPW[_bc@IOW_c.7;ETc
 ^accccY]`bccQUZ_ccAFMV_c/-2=Pc
+^pJU
 _CustomCommand
 _CustomCommand%d
 _DisableUpdateTarget
@@ -23116,11 +23129,8 @@ _var
 _xU`u
 _}eOk
 `28)fk
+`2PJ
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`60YU
-`6@XU
-`6PZU
-`6PqU
 `:zQF
 `D$daM-l
 `DZG
@@ -26918,6 +26928,7 @@ houseIdentifier
 hoverposeangles
 hoverposeflags
 hoverposeposition
+hpzPJ
 hr_H
 http request
 http$
@@ -29175,6 +29186,7 @@ nValue
 nWinner
 n\r2S
 n`3i
+n`HU
 name constraints minimum and maximum not supported
 name too long
 name translation failed
@@ -29715,12 +29727,13 @@ p.ppBasis
 p.prime
 p.tpBasis
 p250
-p2@B
+p2PJ
 p2{l
 p4Z3
 p5Z3
 p5\nL,
 p618
+p6@=U
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pActivator
@@ -29744,6 +29757,7 @@ pData->GetDataDescMap() == pTemplateDataMap
 pDefault
 pDescription
 pEntity
+pFPDU
 pField
 pFilter
 pG_*h
@@ -30583,7 +30597,6 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
-r\vpT
 rad2deg
 radio.go
 radio.letsgo
@@ -33715,7 +33728,6 @@ zz2K
 }gE3
 }n2W
 }}JSON_END\n
-~0rU
 ~9ob
 ~If D
 ~P2T

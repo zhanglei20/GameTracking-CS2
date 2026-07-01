@@ -784,6 +784,8 @@ var InspectAsyncActionBar;
     }
     let m_SouvenirCheckoutCart = ShoppingCart.cart;
     function _OnVolatileShopSubscribe(nContainerDef, bNewPricesParsed, cp) {
+        if (nContainerDef != g_ActiveTournamentInfo.itemid_dynamic_stickers)
+            return;
         const nTotalCostInCredits = _ComputeTotalSouvenirCost(cp).discountPrice;
         if (m_SouvenirCheckoutCart !== ShoppingCart.cart) {
             m_SouvenirCheckoutCart.syncPrices((itemId) => {
