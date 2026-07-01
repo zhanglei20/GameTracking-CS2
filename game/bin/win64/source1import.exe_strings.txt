@@ -8101,6 +8101,7 @@ Success! Wrote source 2 workshop zip to: %s\n
 SunSpreadAngle
 SupportsDisplacementMapping
 SurfacePropPicker()
+Svpcf66
 Symbol table:  %d entries %llu bytes\n
 SyncSource1ChangelistExceptions
 Syncing source 1 mod files %s to head revision.\n

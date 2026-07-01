@@ -308,6 +308,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 %s will be DELETED
 %s%s: FGD Parse error: %s %s\n
 %s(%d) : %s\n
+%s(%d): error: %s
 %s(%s) = %s
 %s/%s.vmdl
 %s2-d encoding
@@ -451,7 +452,6 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 &nbsp;&nbsp;There is one code reference that may need to be manually fixed:<br>\n
 &nbsp;&nbsp;There is one code reference that will need to be manually fixed:<br>\n
 &nbsp;&nbsp;VMDL File saved: %s<br>\n
-&nbsp;&nbsp;VTEX File saved : %s<br>\n
 '%s' is not a valid variable type
 'OverrideClass' was specified but class '%s' has not been previously defined.\n
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
@@ -14486,6 +14486,7 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 <font color = red>&nbsp;&nbsp;ERROR: %s:<br>&nbsp;&nbspFrom: %s<br>&nbsp;&nbsp;&nbsp;&nbsp;To: %s<br></font>\n
 <font color = red>&nbsp;&nbsp;ERROR: Invalid DMX Save %s<br></font>\n
 <font color = red>&nbsp;&nbsp;ERROR: Invalid FBX Save %s<br></font>\n
+<font color = red>&nbsp;&nbsp;ERROR: Invalid VTEX Save %s<br></font>\n
 <font color = red>&nbsp;&nbsp;ERROR: No CDmeModel found in %s!\n
 <font color = red>&nbsp;&nbsp;ERROR: Non-P4 Delete of GAME file:<br>&nbsp;&nbsp;%s<br></font>\n
 <font color = red>ERROR: Cannot read Modeldoc file %s<br></font>\n
@@ -16125,7 +16126,6 @@ Body Heading
 Body Vector
 BodyGroupList
 Bone "%s" parent bone %d doesn't exist.  Only %d bones currently defined.\n
-Bone "%s" specified as bone %d but should be bone %d\n
 Bone %d to %d
 Bone '%s' already existed in the bind pose
 Bone '%s' already existed in the mesh
@@ -23373,6 +23373,7 @@ ZoomSensitivityMouseWheel
 \n?editorDestroyed@QAbstractItemView@@MEAAXPEAVQObject@@@Z
 \nERROR: EXCEPTION:\n
 \nERROR: UNKNOWN EXCEPTION\n
+\nNPh
 \nNo game entities will be available for creation.\n
 \nPds#
 \nS?moveTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
@@ -23383,9 +23384,8 @@ ZoomSensitivityMouseWheel
 \n\tV_atanf
 \ndummyfilename.tif
 \ng default\n
-\r%s(%d): error: %s
 \r&nbsp;&nbsp;Fixing up references in VSMART file:<br>%s<br><br>\n
-\r<font color = red>&nbsp;&nbsp;ERROR: Invalid VTEX Save %s<br></font>\n
+\r&nbsp;&nbsp;VTEX File saved : %s<br>\n
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?event@QObject@@UEAA_NPEAVQEvent@@@Z
 \r?eventFilter@QObject@@UEAA_NPEAV1@PEAVQEvent@@@Z
@@ -23400,9 +23400,11 @@ ZoomSensitivityMouseWheel
 \r?information@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z
 \r?information@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1W421@2@Z
 \r?initPainter@QWidget@@MEBAXPEAVQPainter@@@Z
+\rBone "%s" specified as bone %d but should be bone %d\n
 \rModelDoc
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
+\rm_fileName
 \rp\f`\v0\nP!'\f
 \src\shaders\
 \t2t4J6$"$
@@ -28248,7 +28250,6 @@ twoWay
 two_sided
 t|AO
 u:9F
-u;Hf
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
 u\v?eventFilter@QAbstractItemView@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 ui_order

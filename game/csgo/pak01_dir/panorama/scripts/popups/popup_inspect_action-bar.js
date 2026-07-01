@@ -64,7 +64,7 @@ var InspectActionBar;
             $.CancelScheduled(cp.Data().refreshSubscriptionHandle);
             cp.Data().refreshSubscriptionHandle = null;
         }
-        StoreAPI.VolatileShopSubscribe(g_ActiveTournamentInfo.itemid_dynamic_stickers, true);
+        g_ActiveTournamentDynamicContainers.forEach((id) => StoreAPI.VolatileShopSubscribe(id, true));
         cp.Data().refreshSubscriptionHandle = $.Schedule(150, () => _EnsureVolatileShopSubscribed(cp));
     }
     function _OnVolatileShopSubscribe(nContainerDef, bNewPricesParsed, elActionBar) {
@@ -129,11 +129,15 @@ var InspectActionBar;
         if (!reelId)
             return;
         const elViewHighlightReelAction = elPanel.FindChildInLayoutFile('ViewHighlightReelAction');
-        elViewHighlightReelAction.SetPanelEvent('onactivate', () => {
+        const fnPopupVideoClip = () => {
             UiToolkitAPI.ShowCustomLayoutPopupParameters('popup-videoclip-' + reelId, 'file://{resources}/layout/popups/popup_videoclip.xml', 'reelid=' + reelId + '&' +
                 'itemid=' + id);
-        });
+        };
+        elViewHighlightReelAction.SetPanelEvent('onactivate', fnPopupVideoClip);
         elViewHighlightReelAction.SetHasClass('hidden', false);
+        if (ItemInfo.IsKeychain(id)) {
+            $.Schedule(0.0001, fnPopupVideoClip);
+        }
     }
     function _SetupEquipItemBtns(elPanel, id) {
         const elMoreActionsBtn = elPanel.FindChildInLayoutFile('InspectActionsButton');

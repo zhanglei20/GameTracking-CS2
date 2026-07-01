@@ -2970,7 +2970,6 @@ $taser_charge
 )\nOx*\nDh+\n(
 )\n\nEGCItemMsg
 )binary_zstd
-)cs_portrait_world_callback_handler
 )fuG
 )haI
 * Matchmaking '%s' -vs- '%s' in '%s' '%s'
@@ -3036,7 +3035,6 @@ $taser_charge
 *lootlist
 *o\n\teRollType
 *paintkit
-*shatterglass_debug
 +'+1+3+=+?+K+O+U+i+m+o+{+
 +(#\v&dbF:xrJ'$#
 +(Optional) Filename for the published file.
@@ -12732,6 +12730,7 @@ Bell
 BelowPlayer
 Beta
 BetaUniverse
+Bfrag_grenade_blip_frequency
 BgColor
 Bh;+j
 Big Number part of OpenSSL 1.0.2j  26 Sep 2016
@@ -12751,7 +12750,6 @@ Blacksite
 Blank
 Blend (Masked): %.2f%%
 Blend: %.2f%%
-Blocalization_quest_item_string_printout
 Block Headers | 
 BlockLight
 BlogAPI
@@ -12777,7 +12775,6 @@ BlurBackground
 BlurBuffer
 BlurOperationPanel
 BlurPopupPanel
-Bm_hThrower
 BoX5
 Body Component Scriptdesc
 BodyGameSystem
@@ -17117,7 +17114,6 @@ DistanceThreshold
 Div R%d <- R%d / R%d
 Dividing by zero in CNmFloatMathNode
 Dizzy
-Dlocal_temp_entity
 DnRv
 DoAllocateEntity failed\n
 DoAllocateEntity pEntity->m_pInstance != NULL %d\n
@@ -20784,6 +20780,8 @@ Key Agreement
 Key Compromise
 Key Encipherment
 KeyValues3
+Keychain definition %s: failed to resolve base keychain: %s
+Keychain definition %s: invalid highlight reel specified: %s
 Keychain definition %s: missing "name"
 Keychain definition %s: name must be a positive integer
 Keychain definition %s: unsupported item_quality '%s'
@@ -21989,7 +21987,6 @@ OnClientRagdollEnabledChanged
 OnClientUntrustedDisallowed
 OnClientUntrustedLaunch
 OnClientUntrustedSystemFiles
-OnCloseBuyMenu
 OnCloseScoreboard
 OnColorChanged
 OnCompTeammateColorChanged
@@ -24427,6 +24424,7 @@ Seasonal operation definition %s: mission card id '%s' must be a positive intege
 Seasonal operation definition %s: mission card id '%s' must have a name
 Seasonal operation definition %s: mission card id '%s' needs operational_points, found '%s'
 Seasonal operation definition %s: name must be a positive integer
+Seasonal operation definition %s: no redeemable_goods credits configuration found
 Seasonal operation definition %s: redeemable reward %s has duplicate redeem_id (%s & %s)
 Seasonal operation definition %s: redeemable reward %s has no valid redeem_id
 Seasonal operation definition %s: redeemable reward %s without redeem_id must have item_name
@@ -25054,6 +25052,7 @@ Shutdown prediction for player slot %d.  %i predictable entities and %i client-c
 ShutdownPredictables due to global state change\n
 Shutting down P2P voice peer group %s\n
 Shutting down...\n
+SidebarContextMenuActive
 SidebarIsCollapsed
 Siege
 Sign Float
@@ -25434,6 +25433,7 @@ Sticker
 Sticker kit '%s' rotate range is not valid %f:%f
 Sticker kit '%s' scale range is not valid %f:%f
 Sticker kit name '%s' is a duplicate gold sticker for event %d team %d
+Sticker kit name '%s' is a duplicate gold sticker for event %d team %d player %d with a decreasing ID
 Sticker0Offset
 Sticker0Rotation
 Sticker0Scale
@@ -28465,6 +28465,7 @@ a@XZ
 aA0k
 aD/x
 aDSS
+aDminimap_create
 aECDH
 aECDSA
 aF<7u
@@ -30657,6 +30658,7 @@ cs_office
 cs_pet_placement
 cs_player_controller
 cs_player_manager
+cs_portrait_world_callback_handler
 cs_pre_restart
 cs_prediction_events.proto
 cs_round_final_beep
@@ -35117,6 +35119,7 @@ local_player_pawn_changed
 local_player_team
 local_point
 local_strings
+local_temp_entity
 localaxis
 localityName
 localization_required
@@ -36326,8 +36329,8 @@ n5cM
 n6j/
 n:2C[
 n@PK
+nCBasePulseGraphInstance
 nCRD
-nC_LightEntity
 nChangeOffset < INT16_MAX
 nChangeOffset > 0
 nDataSize > 0
@@ -37013,7 +37016,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0jP*
+p0jP)
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37033,6 +37036,7 @@ p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pACBaseAnimGraph
+pBm_flDepth
 pCheckpointName
 pD4t
 pData->GetDataDescMap() == pTemplateDataMap
@@ -37045,13 +37049,13 @@ pIp
 pLocationEntity
 pNewRequest
 pO0h
+pOnCloseBuyMenu
 pOtherEntity
 pPose != nullptr
 pRTH
 pRequest
 pSPo
 pSequenceName
-pSidebarContextMenuActive
 pSource
 pSourceFunc
 pSpawnedEntityName
