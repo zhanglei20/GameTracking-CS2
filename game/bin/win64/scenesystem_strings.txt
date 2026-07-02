@@ -26,9 +26,11 @@
  %i fog-only.
  %s | Flags %lld \n
  (08@HPX`j
- (08@HPXb 
+ (08@HPXbp
  (08@HPZ
- (0X`hpz 
+ (08@HRp
+ (08@Jp
+ (0X`hpzp
  (EXTERN)
  (Frozen)
  (MAYBE DISABLED?!)
@@ -453,46 +455,39 @@ $tIP
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) %s
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) Col %d %s
 (%d,%d,%d,%d)
-(1Ub
-(1ob
-(1rb
-(1tb
+(12b
+(1Fb
 (2) Or right-click this text
 (3) Or click this button
-(5Jb
-(5qb
-(95b
+(9Nb
+(9ob
+(9rb
 (<-- right-click here)
 (ActiveIdUsing: AllKeyboardKeys: %d, NavDirMask: 0x%X)
+(Agb
 (Click and drag to scroll)
 (Context Name: "%s")
 (Debug Log: Auto-disabled some ImGuiDebugLogFlags after 2 frames)\n
 (Dock node)
-(Eab
-(Ewb
-(Eyb
+(ECb
+(EIb
 (Hex)
 (Hold Ctrl to: 
 (Hold Ctrl to: use 
 (Hold Shift to display a dummy viewport)
-(ICb
-(IFb
-(IHb
 (Internal Buffer: TextA Size: %d, Capacity: %d)
+(Izb
 (Left) Using ImGui::PushClipRect():\nWill alter ImGui hit-testing logic + ImDrawList rendering.\n(use this if you want your clipping rectangle to affect interactions)\n\n(Center) Using ImDrawList::PushClipRect():\nWill alter ImDrawList rendering only.\n(use this as a shortcut if you are only using ImDrawList calls)\n\n(Right) Using ImDrawList::AddText() with a fine ClipRect:\nWill alter only this specific ImDrawList::AddText() rendering.\nThis is often used internally to avoid altering the clipping rectangle and minimize draw calls.
 (MAb
+(MYb
 (Main menu bar)
-(Mnb
 (Popup)
-(QOb
-(QZb
+(QEb
+(QPb
 (R = radius, N = approx number of segments)
 (SceneWorld 3D Dump contains %d large objects - they are scaled down and will render red.)\n
-(Ubb
 (Untitled)
-(Upb
 (Use ImGui::SameLine() to keep adding items to the right of the preceding item)
-(Ycb
 (Z(^(b(f(j(n(r(v(z1
 (\?=\nW>=\nW>=\nW>
 (also access from 'Examples->Assets Browser' in menu)
@@ -501,29 +496,27 @@ $tIP
 (demo menu)
 (dump)
 (dump3d)
-(eXb
+(e0b
 (except InputRouting which is spammy)
-(i9b
+(iSb
+(iVb
 (in ChildD: not using same Shortcut)
 (in ChildE: using same Shortcut)
 (in PopupF)
 (in WindowA)
-(ixb
-(mTb
-(mmb
 (no material)
 (no model)
 (note: some platform backends may not reflect a change of this value for existing viewports, and may need the viewport to be recreated)
-(qGb
+(qUb
+(qob
 (qrb
+(qtb
 (see Demo->Configuration for details & more)
-(u1b
-(u7b
-(uBb
+(uJb
 (unnamed)
+(uqb
 (void*)0x%p
-(yLb
-(yzb
+(y5b
 ** %d instances of same table! Some data below will refer to last instance.
 **DebugBreak**
 *COPIED*
@@ -869,7 +862,7 @@ $tIP
 04e/
 050s0
 08@HR
-08@J 
+08@Jp
 0?333?333?333?333?
 0x%02X
 0x%04X
@@ -896,7 +889,6 @@ $tIP
 2. I am selectable
 24 Hour Clock
 2C2L
-2\vp4
 2d arr
 2q2z2
 3 (tab skip)
@@ -932,6 +924,7 @@ $tIP
 797k7
 7F7W7c
 7\n0K0O0S0W0[0_0c0g0k0o0
+8!hb
 80x80
 8859
 8888
@@ -2813,7 +2806,6 @@ HISTORY
 HO#Cq
 HOP##1
 HOP##2
-HQ`d
 HSV encoded colors
 HSV shown as HSV##1
 HSV shown as RGB##1
@@ -4063,8 +4055,7 @@ Override ChildBg color
 Override Streaming GPU Memory
 P+\fGj
 P.P5
-P08@J 
-P08Jp
+P08@Jp
 P3\rA
 P8\nD
 PAPU
@@ -4354,7 +4345,6 @@ RFRQR\Rf
 RGBA32
 RTProxy Layout
 RTProxyBLAS
-R\fp4
 Rand Paul
 Range: [%f,%f]
 RangeSrcItem = %I64d (0x%I64X), RangeSelected = %d
@@ -5869,7 +5859,6 @@ Zsmall
 \fG7+B
 \fPy\vE
 \fT>M-+?#gy?
-\fp\vP8
 \n Render %d specific objects
 \n Render world : %s\n
 \n"\n)\n7\nA\nH\nS\nc\np\n|\n
@@ -5945,8 +5934,6 @@ _WidthFixed
 _WidthStretch
 _XFREE86_GLYPH_RANGES
 _atlas
-`Aad
-`ebd
 a'aCaYb"b8b
 a-a8
 aJ!\vA
@@ -6401,7 +6388,7 @@ hitgroup_shader_%p
 hl?S
 horizontal
 horizontal split
-hpz 
+hpzp
 https://github.com/epezent/implot
 https://github.com/ocornut/imgui
 https://github.com/ocornut/imgui/blob/master/docs/BACKENDS.md
@@ -6807,7 +6794,6 @@ outer_size
 overlaps
 p q g j y
 p#p7pP
-p0jpq
 pCRF
 paragraph
 parallel
@@ -6870,7 +6856,6 @@ quotesinglbase
 quotesingle
 r*r4r;
 rQr\
-r\vp4
 radical
 radio a
 radio b
@@ -7208,7 +7193,6 @@ x=300
 x>xoxyx~
 xF%\nD
 xIxRx[xe
-xb\f3
 xinput1_1.dll
 xinput1_2.dll
 xinput1_3.dll

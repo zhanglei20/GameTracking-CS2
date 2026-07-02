@@ -73,7 +73,7 @@
 					<Image id="id-store-item-rarity" textureheight="64px" class="major-store__item-tile__rarity" />
 					<Image id="id-store-item-team-logo" class="major-store__item__team-logo" textureheight="48px" scaling="stretch-to-fit-preserve-aspect" texturewidth="-1" />
 				</Panel>
-				<Panel class="major-store__item-tile__image-container" hittest="false">
+				<Panel id="id-store-item-image_container" class="major-store__item-tile__image-container" hittest="false">
 					<Panel class="full-width full-height">
 						<Image id="id-store-item-team-bg-1" class="major-store__item__team-logo team-bg-1" textureheight="200px" scaling="stretch-to-fit-preserve-aspect" texturewidth="-1" />
 						<Image id="id-store-item-team-bg-2" class="major-store__item__team-logo team-bg-2" textureheight="200px" scaling="stretch-to-fit-preserve-aspect" texturewidth="-1" />
@@ -85,7 +85,6 @@
 						<Movie id="id-store-item-movie" class="major_store__item_movie" controls="none" repeat="true" autoplay="onload" hittest="false" disableaudio="true" />
 					</Panel>
 					<Label html="true" class="stratum-bold-italic major-store__item-keychain-title" hittest="false" text="{s:title}" />
-					<MapItemPreviewPanel id="id-store-item-model" class="major-store__item-tile__model" map="ui/xpshop_item" initial_entity="item" mouse_rotate="false" require-composition-layer="true" transparent-background="true" />
 					<Button id="id-inspect-sticker" class="major-store__item-tile__btn" />
 					<Panel class="major-store__item-tile__cart-btns">
 						<Button id="id-store-item-remove-from-cart-btn" class="major-store__cart-btn">

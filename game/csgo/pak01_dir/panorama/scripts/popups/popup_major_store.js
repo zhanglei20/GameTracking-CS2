@@ -1172,18 +1172,50 @@ var PopupMajorStore;
         reusePanel.FindChildInLayoutFile('id-store-item-team-logo').SetImage(stickerData.isOrg ?
             'file://{images}/tournaments/events/tournament_logo_' + g_ActiveTournamentInfo.eventid + '.svg' :
             'file://{images}/tournaments/teams/' + stickerData.teamTag + '.svg');
-        const MapPanel = reusePanel.FindChildInLayoutFile('id-store-item-model');
-        MapPanel.SetCamera('camera_weapon_7');
-        MapPanel.SetActiveItem(0);
-        MapPanel.SetItemItemId(stickerData.itemId, '');
-        MapPanel.SetRotationLimits(60, 45);
-        MapPanel.SetAutoRotateAmount(20, -2);
-        MapPanel.SetAutoRotatePeriod(6, 6);
-        let nRenderInterval = 1;
-        MapPanel.SetRenderInterval(nRenderInterval);
+        reusePanel.SetPanelEvent('onmouseover', () => {
+            _MakeModelPanel(reusePanel, stickerData.itemId);
+        });
+        reusePanel.SetPanelEvent('onmouseout', () => {
+            _DeleteModelPanel(reusePanel);
+        });
         reusePanel.FindChildInLayoutFile('id-inspect-sticker').SetPanelEvent('onactivate', () => {
             _OpenFullscreenInspect(cp, stickerData);
         });
+    }
+    function _MakeModelPanel(reusePanel, itemId) {
+        let elParent = reusePanel.FindChildInLayoutFile('id-store-item-image_container');
+        let MapPanel = elParent.FindChildInLayoutFile('id-store-item-model');
+        if (!MapPanel) {
+            MapPanel = $.CreatePanel('MapItemPreviewPanel', elParent, 'id-store-item-model', {
+                class: 'major-store__item-tile__model',
+                "require-composition-layer": "true",
+                'transparent-background': true,
+                'disable-depth-of-field': true,
+                player: "false",
+                map: "ui/xpshop_item",
+                initial_entity: 'item',
+                active_item_idx: 0,
+                camera: 'camera_weapon_7',
+                mouse_rotate: "false",
+                auto_recenter: true,
+                tabindex: "auto",
+                selectionpos: "auto",
+                hittest: "true",
+                hide_while_waiting_for_composite_materials: "false"
+            });
+            MapPanel.SetItemItemId(itemId, '');
+            MapPanel.SetRotationLimits(60, 45);
+            MapPanel.SetAutoRotateAmount(20, -2);
+            MapPanel.SetAutoRotatePeriod(6, 6);
+            let nRenderInterval = 1;
+            MapPanel.SetRenderInterval(nRenderInterval);
+        }
+    }
+    function _DeleteModelPanel(reusePanel) {
+        let MapPanel = reusePanel.FindChildInLayoutFile('id-store-item-model');
+        if (MapPanel !== null && MapPanel.IsValid()) {
+            MapPanel.DeleteAsync(0);
+        }
     }
     function _UpdateKeyChainsTile(cp, reusePanel, filteredList, nPanelIdx) {
         const keychainData = filteredList[nPanelIdx];
