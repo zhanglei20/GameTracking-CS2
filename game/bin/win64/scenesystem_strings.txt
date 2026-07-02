@@ -26,7 +26,9 @@
  %i fog-only.
  %s | Flags %lld \n
  (08@HPX`j
+ (08@HPXb 
  (08@HPZ
+ (0X`hpz 
  (EXTERN)
  (Frozen)
  (MAYBE DISABLED?!)
@@ -451,38 +453,46 @@ $tIP
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) %s
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) Col %d %s
 (%d,%d,%d,%d)
-(1Eb
-(1Pb
+(1Ub
+(1ob
+(1rb
+(1tb
 (2) Or right-click this text
 (3) Or click this button
+(5Jb
+(5qb
+(95b
 (<-- right-click here)
 (ActiveIdUsing: AllKeyboardKeys: %d, NavDirMask: 0x%X)
 (Click and drag to scroll)
 (Context Name: "%s")
 (Debug Log: Auto-disabled some ImGuiDebugLogFlags after 2 frames)\n
 (Dock node)
-(E0b
+(Eab
+(Ewb
+(Eyb
 (Hex)
 (Hold Ctrl to: 
 (Hold Ctrl to: use 
 (Hold Shift to display a dummy viewport)
-(ISb
-(IVb
+(ICb
+(IFb
+(IHb
 (Internal Buffer: TextA Size: %d, Capacity: %d)
 (Left) Using ImGui::PushClipRect():\nWill alter ImGui hit-testing logic + ImDrawList rendering.\n(use this if you want your clipping rectangle to affect interactions)\n\n(Center) Using ImDrawList::PushClipRect():\nWill alter ImDrawList rendering only.\n(use this as a shortcut if you are only using ImDrawList calls)\n\n(Right) Using ImDrawList::AddText() with a fine ClipRect:\nWill alter only this specific ImDrawList::AddText() rendering.\nThis is often used internally to avoid altering the clipping rectangle and minimize draw calls.
+(MAb
 (Main menu bar)
+(Mnb
 (Popup)
-(QUb
-(Qob
-(Qrb
-(Qtb
+(QOb
+(QZb
 (R = radius, N = approx number of segments)
 (SceneWorld 3D Dump contains %d large objects - they are scaled down and will render red.)\n
-(UJb
+(Ubb
 (Untitled)
-(Uqb
+(Upb
 (Use ImGui::SameLine() to keep adding items to the right of the preceding item)
-(Y5b
+(Ycb
 (Z(^(b(f(j(n(r(v(z1
 (\?=\nW>=\nW>=\nW>
 (also access from 'Examples->Assets Browser' in menu)
@@ -491,30 +501,29 @@ $tIP
 (demo menu)
 (dump)
 (dump3d)
-(eab
-(ewb
+(eXb
 (except InputRouting which is spammy)
-(eyb
-(iCb
-(iFb
-(iHb
+(i9b
 (in ChildD: not using same Shortcut)
 (in ChildE: using same Shortcut)
 (in PopupF)
 (in WindowA)
-(mAb
-(mnb
+(ixb
+(mTb
+(mmb
 (no material)
 (no model)
 (note: some platform backends may not reflect a change of this value for existing viewports, and may need the viewport to be recreated)
-(qOb
-(qZb
+(qGb
+(qrb
 (see Demo->Configuration for details & more)
-(ubb
+(u1b
+(u7b
+(uBb
 (unnamed)
-(upb
 (void*)0x%p
-(ycb
+(yLb
+(yzb
 ** %d instances of same table! Some data below will refer to last instance.
 **DebugBreak**
 *COPIED*
@@ -548,7 +557,7 @@ $tIP
 .?AV<lambda_1>@?4???R0?1??Thread_RenderViewLayer@CSceneSystem@@AEAAXV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@QEBA@_N@Z@
 .?AV<lambda_1>@?4???R0?6??DebugLightProbeVolumeGrid@CLightBinnerGPU@@IEAAXPEAVCSceneView@@@Z@QEBA@PEAVCSceneLightProbeVolumeObject@@@Z@
 .?AV<lambda_1>@?4??AddEnvironmentMapsForView@CLightBinnerGPU@@IEAAXPEAVCSceneView@@@Z@
-.?AV<lambda_1>@?4??AddLightProbeVolumesForView@CLightBinnerGPU@@IEAAXPEAVCSceneView@@H@Z@
+.?AV<lambda_1>@?4??AddLightProbeVolumesForView@CLightBinnerGPU@@IEAAXPEAVCSceneView@@@Z@
 .?AV<lambda_1>@?4??AtFinish@CSceneView@@QEAAXXZ@
 .?AV<lambda_1>@?5??DrawArray@CAggregateSceneObjectDesc@@UEAAXPEAVIRenderContext@@PEAUCMeshDrawPrimitive_t@@HPEBVISceneView@@PEAVISceneLayer@@AEAUSceneSystemPerFrameStats_t@@@Z@
 .?AV<lambda_1>@?6??CanBatchWithPrevousPrimitive@CRenderBatchList@@AEAA_NPEAUCMeshDrawPrimitive_t@@@Z@
@@ -626,7 +635,7 @@ $tIP
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4???R1?1??Thread_RenderViewLayer@CSceneSystem@@AEAAXV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@QEBA@_N@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4???R1?6??DebugLightProbeVolumeGrid@CLightBinnerGPU@@IEAAXPEAVCSceneView@@@Z@QEBA@PEAVCSceneLightProbeVolumeObject@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??AddEnvironmentMapsForView@CLightBinnerGPU@@IEAAXPEAVCSceneView@@@Z@XPEAVCEnvMapSceneObject@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??AddLightProbeVolumesForView@CLightBinnerGPU@@IEAAXPEAVCSceneView@@H@Z@XPEAVCSceneLightProbeVolumeObject@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??AddLightProbeVolumesForView@CLightBinnerGPU@@IEAAXPEAVCSceneView@@@Z@XPEAVCSceneLightProbeVolumeObject@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??AtFinish@CSceneView@@QEAAXXZ@PEAVCDisplayList@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?5??DrawArray@CAggregateSceneObjectDesc@@UEAAXPEAVIRenderContext@@PEAUCMeshDrawPrimitive_t@@HPEBVISceneView@@PEAVISceneLayer@@AEAUSceneSystemPerFrameStats_t@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?6??CanBatchWithPrevousPrimitive@CRenderBatchList@@AEAA_NPEAUCMeshDrawPrimitive_t@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
@@ -860,6 +869,7 @@ $tIP
 04e/
 050s0
 08@HR
+08@J 
 0?333?333?333?333?
 0x%02X
 0x%04X
@@ -886,6 +896,7 @@ $tIP
 2. I am selectable
 24 Hour Clock
 2C2L
+2\vp4
 2d arr
 2q2z2
 3 (tab skip)
@@ -1033,10 +1044,10 @@ $tIP
 ?0x%p
 ?333?333?fff?
 ?Bxt>
-?ESceneObjectVisualization
 ?JA7=
 ?Label1
 ?PUNCTUAL
+?SCENEOBJECT_VIS_NONE
 ?The "Tools" menu above gives access to: Style Editors (ImPlot/ImGui)\nand Metrics (general purpose Dear ImGui debugging tool).
 ?VertexPos_t
 ?VertexUVPos_t
@@ -1087,8 +1098,6 @@ $tIP
 @33333{
 @33333}
 @33SA
-@HPX`hv 
-@HV0
 @Hide
 @OS/2
 @fff>fff>fff>fff>
@@ -2804,6 +2813,7 @@ HISTORY
 HO#Cq
 HOP##1
 HOP##2
+HQ`d
 HSV encoded colors
 HSV shown as HSV##1
 HSV shown as RGB##1
@@ -4053,6 +4063,8 @@ Override ChildBg color
 Override Streaming GPU Memory
 P+\fGj
 P.P5
+P08@J 
+P08Jp
 P3\rA
 P8\nD
 PAPU
@@ -4342,6 +4354,7 @@ RFRQR\Rf
 RGBA32
 RTProxy Layout
 RTProxyBLAS
+R\fp4
 Rand Paul
 Range: [%f,%f]
 RangeSrcItem = %I64d (0x%I64X), RangeSelected = %d
@@ -5856,6 +5869,7 @@ Zsmall
 \fG7+B
 \fPy\vE
 \fT>M-+?#gy?
+\fp\vP8
 \n Render %d specific objects
 \n Render world : %s\n
 \n"\n)\n7\nA\nH\nS\nc\np\n|\n
@@ -5931,7 +5945,8 @@ _WidthFixed
 _WidthStretch
 _XFREE86_GLYPH_RANGES
 _atlas
-`yad
+`Aad
+`ebd
 a'aCaYb"b8b
 a-a8
 aJ!\vA
@@ -6386,6 +6401,7 @@ hitgroup_shader_%p
 hl?S
 horizontal
 horizontal split
+hpz 
 https://github.com/epezent/implot
 https://github.com/ocornut/imgui
 https://github.com/ocornut/imgui/blob/master/docs/BACKENDS.md
@@ -6791,6 +6807,7 @@ outer_size
 overlaps
 p q g j y
 p#p7pP
+p0jpq
 pCRF
 paragraph
 parallel
@@ -6853,6 +6870,7 @@ quotesinglbase
 quotesingle
 r*r4r;
 rQr\
+r\vp4
 radical
 radio a
 radio b
