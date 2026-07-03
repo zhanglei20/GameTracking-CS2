@@ -3128,7 +3128,7 @@ $taser_charge
 ,kj8\te
 ,name:
 ,oYR
-,sK3 
+,sK3@
 ,section=
 ,value:
 - "%s" = "%.2f"\n
@@ -11208,7 +11208,7 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpd
+2\vpD
 2^pV
 2a"l
 2bT~
@@ -11427,6 +11427,7 @@ $taser_charge
 8<pl
 8= zp
 8A6j
+8B3 
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11523,6 +11524,7 @@ $taser_charge
 ;"lY7
 ;5jNf
 ;83\v\nHBJ7
+;I40
 ;LGEW
 ;Qo0
 ;Scale on the force wind applies to physics bodies
@@ -11717,7 +11719,7 @@ $taser_charge
 @BH]f
 @BoneSetup
 @C_SmokeGrenade
-@HPX`hv@
+@HPX`hvp
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11734,6 +11736,7 @@ $taser_charge
 @dKb]
 @fff>fff>fff>fff>
 @ffffff
+@ht0
 @i1V
 @icon_camera
 @icon_character
@@ -11757,7 +11760,6 @@ A9ur
 A<fP
 A>x8
 AA Compromise
-AA:0
 AAAA-
 AAAA-%.*s
 AABBDirection
@@ -20697,7 +20699,7 @@ JSCreatePanelWithCurrentContext was not called within a context
 JSDelayLoadList
 JSValueFromKeyValue failed to package parameter %s (type %d)\n
 JS_!0
-JY3P
+JY3p
 JZIX
 J\nHBF
 J`KL
@@ -23400,7 +23402,7 @@ RULESHERE
 R\n\rincludekvtags
 R\r1>Vp
 R\vp!y
-R\vpd
+R\vpD
 R]Di
 Rad2 Deg
 Radar
@@ -34699,6 +34701,7 @@ k_UnlockStyle_Failed_PreReq
 k_UnlockStyle_Succeeded
 ka`O
 kangaroo
+karrigan
 kc_sticker_display_case
 kcdef
 kcimg
@@ -34831,6 +34834,7 @@ kte'
 kv 0x%p AddRef refcount == %d\n
 kvtags
 kw.6#
+kyxsan
 k~Rz
 l <= sizeof(c->iv)
 l&rB6
@@ -35170,7 +35174,7 @@ lowresdepth
 luminaire_anisotropy
 luminaire_shape
 luminaire_size
-lvR40
+lvR4P
 m&9W
 m*Zu
 m249
@@ -37016,7 +37020,6 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0jP)
 p250
 p2p_FightingGame_Connection
 p2p_FightingGame_GameData
@@ -37034,6 +37037,8 @@ p5Z3
 p5\nL,
 p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
+p>DW
+p>oW
 p@0pqE5tsO?|1
 pACBaseAnimGraph
 pBm_flDepth
