@@ -324,25 +324,24 @@ var MapDraft;
     }
     function _PopulatePlayerList() {
         const yourXuid = MyPersonaAPI.GetXuid();
-        const oPlayerList = GameStateAPI.GetPlayerDataJSO();
+        const oPlayerData = GameStateAPI.GetPlayerDataJSO();
         const teamNames = ['TERRORIST', 'CT'];
         let iYourXuidTeamIdx = 1;
         for (let iTeam = 0; iTeam < teamNames.length; ++iTeam) {
             const teamName = teamNames[iTeam];
-            let players = {};
-            if (oPlayerList !== undefined && oPlayerList[teamName]) {
-                players = oPlayerList[teamName];
-            }
-            if (iTeam === 0 && Object.values(players).indexOf(yourXuid) !== -1) {
+            const teamIndex = oPlayerData.teams.findIndex(t => t.name === teamName);
+            if (iTeam === 0 && oPlayerData.players.find(p => p.team === teamIndex)) {
                 iYourXuidTeamIdx = 0;
             }
             const teamPanelId = (iYourXuidTeamIdx === iTeam) ? 'id-map-draft-phase-your-team' : 'id-map-draft-phase-other-team';
             const elTeammates = _m_cp.FindChildInLayoutFile(teamPanelId).FindChild('id-map-draft-phase-avatars');
             elTeammates.RemoveAndDeleteChildren();
-            for (const j in players) {
-                const xuid = players[j];
-                if (!GameStateAPI.IsFakePlayer(xuid)) {
-                    _MakeAvatar(xuid, elTeammates, true);
+            for (const p of oPlayerData.players) {
+                if (p.team == teamIndex) {
+                    const xuid = p.xuid;
+                    if (!GameStateAPI.IsFakePlayer(xuid)) {
+                        _MakeAvatar(xuid, elTeammates, true);
+                    }
                 }
             }
         }

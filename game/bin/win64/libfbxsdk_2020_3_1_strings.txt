@@ -12974,6 +12974,7 @@ $\t$\n$\v$\f$\r$
 ?valueAs@FbxDistance@fbxsdk@@QEBAMAEBVFbxSystemUnit@2@@Z
 @&DlF4D>H4D>J4D
 @08B 
+@08N
 @2p9'
 @6 Zj
 @60/k
@@ -16581,6 +16582,7 @@ Overscan Fit
 P$RfP
 P%luY%luM%luDT%luH%luM%.14gS
 P(Pe{
+P08N
 P08~
 P0F&RPTZX
 P2 p
@@ -18438,7 +18440,6 @@ Zrotation
 \nP6J
 \nPjA
 \nSUUU
-\n\t\n\n\n\v\n\f\n\r\n
 \npJA
 \nppD
 \r \r!\r"\r#\r$\r%\r&\r'\r(\r)\r*\r+\r,\r-\r.\r/\r0\r1\r2\r3\r4\r5\r6\r7\r8\r9\r:\r;\r<\r=\r>\r?\r@\rA\rB\rC\rD\rE\rF\rG\rH\rI\rJ\rK\rL\rM\rN\rO\rP\rQ\rR\rS\rT\rU\rV\rW\rX\rY\rZ\r[\r\\r]\r^\r_\r`\ra\rb\rc\rd\re\rf\rg\rh\ri\rj\rk\rl\rm\rn\ro\rp\rq\rr\rs\rt\ru\rv\rw\rx\ry\rz\r{\r|\r}\r~\r
@@ -18641,6 +18642,7 @@ allocating wildcard component
 alpha channel tint
 already in use
 ambient
+ambientColor
 an error occurred
 ancestor
 ancestor-or-self

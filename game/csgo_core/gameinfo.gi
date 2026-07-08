@@ -312,6 +312,11 @@
 			"sacustomdata"	"1"	// Bake Steam Audio custom data
 		}
 		
+		GameSpecificPostMapBuildSteps
+		{
+			"cs2_bomb_damage"      "1"
+		}
+		
 		CompileManifest
 		{
 			EnforceValidManifestResourcePaths "1"
@@ -438,9 +443,7 @@
 
 		TextureCompiler
 		{
-			//Compressor              "lz4"
-			Compressor              "mermaid"
-			//Compressor              "kraken" 
+			Compression             "lz4"
 			CompressMipsOnDisk      "1"
 			CompressMinRatio        "95"
 			AllowNP2Textures		"1"
@@ -510,6 +513,10 @@
 		{
 			"material" "materials/debug/debugempty.vmat"
 		}
+		content_consider_missing_materials_fatal
+		{
+			"substr" ".vmdl"
+		}
 		"content_consider_warnings_as_errors"
 		{
 			"substr" "agents/models/"
@@ -519,19 +526,13 @@
 
 	RenderSystem
 	{
-		"SwapChainSampleableDepth"					"1"
 		"AllowPartialMipChainImmediateTexLoads"		"1"
-		"VulkanSteamShaderCache"					"1"
-		"VulkanOnly"								"1"	[ $LINUX || $OSX ] // No OpenGL or D3D9/11 fallback on Linux or OSX, only Vulkan is supported.
-		"VulkanRequireSubgroupWaveOpSupport"			"1"	[ !$OSX ]
-		"VulkanRequireDescriptorIndexing"			"1"	[ !$OSX ]
+		"VulkanRequireSubgroupWaveOpSupport"		"1"
+		"VulkanRequireDescriptorIndexing"			"1"
 		"VulkanDefrag"								"1"
-		"VulkanAdditionalShaderCache"				"csgo_shaders.foz"	[ $OSX ]
 		//"MaxPreloadTextureResolution"				"256"
-		"GraphicsPipelineLibrary"					"1"
 		"IndexBufferPoolSizeMB"						"64"
 		"LowLatency"								"1"
-		"MinDXLevel"								"110" // DX 11.0 is the minimum
 		"MinStreamingPoolSizeMB"					"500"
 		"MinStreamingPoolSizeMBTools"				"2048"
 		"UseHardwareGammaRamp"						"0" // Fullscreen gamma controlled in postprocessing
@@ -572,6 +573,7 @@
         "cl_joystick_enabled" "0"
         "panorama_joystick_enabled" "0"
         "demo_max_consecutive_skip_packets" "2500"
+		"r_particle_batch_collections" "1"
 
 		"spec_replay_enable"
 		{

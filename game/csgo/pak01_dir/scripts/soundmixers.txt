@@ -855,6 +855,20 @@
 			duck_to_percent = 100
 			ducker_threshold = 20
 		},
+		{
+			name = "C4Shockwave"
+			parent = "Explosions"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
 	]
 	SoundMixers = 
 	{
@@ -1347,6 +1361,14 @@
 				mute = 0.0
 				lvl = 1.0
 				dsp = 1.0
+			},
+			{
+				mixgroup = "C4Shockwave"
+				vol = 1.0
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.0
 			},
 		]
 		MainMenu_Mix = 
@@ -2201,12 +2223,11 @@
 			Triggers = 
 			[
 				{
-					trigger = "PlayerVictim"
+					trigger = "ArmsRace"
 					threshold = 0.0
 					mixamount = 1.0
 					attack = 0.0
 					release = 0.0
-					max_trigger_amounts = true
 				},
 			]
 		}
@@ -2239,6 +2260,7 @@
 					mixamount = 1.0
 					attack = 0.0
 					release = 0.23
+					max_trigger_amounts = true
 				},
 			]
 		}
@@ -2382,6 +2404,69 @@
 					dsp = 1.0
 					solo = 0.0
 					mute = 0.4
+				},
+			]
+			Triggers = [  ]
+		}
+		Shockwave = 
+		{
+			Mixers = 
+			[
+				{
+					mixgroup = "Ambient"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.0
+				},
+				{
+					mixgroup = "Weapons"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.0
+				},
+				{
+					mixgroup = "WeaponsDistant"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.5
+				},
+				{
+					mixgroup = "World"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.0
+				},
+				{
+					mixgroup = "Physics"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.0
+				},
+				{
+					mixgroup = "Foley"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.0
+				},
+				{
+					mixgroup = "Footsteps"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.0
 				},
 			]
 			Triggers = [  ]

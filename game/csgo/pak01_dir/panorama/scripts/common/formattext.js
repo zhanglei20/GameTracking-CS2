@@ -109,10 +109,10 @@ var FormatText;
         const locFilePrefix = "#NumberAbbreviation_suffix_E";
         do {
             stringToken = locFilePrefix + [pow10];
-            if ($.Localize(stringToken) != stringToken)
+            if ($.CanLocalize(stringToken))
                 break;
         } while (--pow10 > 0);
-        if ($.Localize(stringToken) == stringToken)
+        if (!$.CanLocalize(stringToken))
             return [number.toString(), ''];
         const scale = Math.pow(10, pow10);
         const scaledNumber = number / scale;
@@ -127,15 +127,12 @@ var FormatText;
         let pow10 = Math.log10(number) | 0;
         let stringToken = "";
         const locFilePrefix = "#NumberAbbreviation_E";
-        function _IsLocalizationValid(symbol) {
-            return (symbol === "");
-        }
         do {
             stringToken = locFilePrefix + [pow10];
-            if (_IsLocalizationValid($.Localize(stringToken, $.GetContextPanel())))
+            if ($.CanLocalize(stringToken))
                 break;
         } while (--pow10 > 0);
-        if (!_IsLocalizationValid($.Localize(stringToken, $.GetContextPanel())))
+        if (!$.CanLocalize(stringToken))
             return number.toString();
         const scale = Math.pow(10, pow10);
         const scaledNumber = number / scale;

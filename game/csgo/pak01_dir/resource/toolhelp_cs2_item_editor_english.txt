@@ -3097,7 +3097,6 @@
 			</ul>
 			</body>
 			</html>"
-
 		"Attribute.PaintKit_Gunsmith.exposed_params.g_flPatternTexCoordScale:name_ref"		"Texture Scale"
 		"Attribute.PaintKit_Gunsmith.exposed_params.g_flPatternTexCoordScale:shorthelp"		"Controls size of the texture when applied to a weapon. Increasing the scale repeats the pattern."
 		"Attribute.PaintKit_Gunsmith.exposed_params.g_flPatternTexCoordScale:help"		"			<html>
@@ -3821,6 +3820,26 @@
 		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_bUseOverlay:help"		"Enables the use of an overlay texture."
 		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_tOverlay:name_ref"		"Overlay Texture"
 		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_tOverlay:help"		"Full-color albedo texture."
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_bUseOverlayMask:name_ref"		"Enable Overlay Mask"
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_bUseOverlayMask:help"		"Enables the use of a custom mask for the overlay texture."
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_tOverlayMask:name_ref"		"Overlay Mask"
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_tOverlayMask:help"		"A greyscale texture that is used to determine what parts should receive the overlay texture."
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_bOverlayUsesUniqueUVs:name_ref"		"Unique Overlay UVs"
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_bOverlayUsesUniqueUVs:help"		"When enabled, the overlay texture will be applied with with it's own scale, rotation, and offset values separate from the albedo texture."
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_flOverlayTexCoordScale:name_ref"		"Overlay Scale"
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_flOverlayTexCoordScale:help"		"Controls size of the overlay texture when applied to a weapon. Increasing the scale repeats the pattern."
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_flOverlayTexCoordRotation:name_ref"		"Overlay Rotation"
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_flOverlayTexCoordRotation:help"		"Range of overlay texture rotation specified in degrees. <br>
+			<br>
+			On application, random values are chosen within this range so that each application is unique."
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_vOverlayTexCoordOffset.0:name_ref"		"Overlay Offset X"
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_vOverlayTexCoordOffset.0:help"		"Range for overlay texture placement along the X axis. <br>
+			<br>
+			On application, random values are chosen within this range so that each application is unique."
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_vOverlayTexCoordOffset.1:name_ref"		"Overlay Offset Y"
+		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_vOverlayTexCoordOffset.1:help"		"Range for overlay texture placement along the Y axis. <br>
+			<br>
+			On application, random values are chosen within this range so that each application is unique."
 		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.F_OVERLAY_BLEND_MODE:name_ref"		"Blend Mode"
 		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.F_OVERLAY_BLEND_MODE:help"		"Controls how the overlay gets applied.<br><br><b><u>Translucent</b></u>: allows the colors of the albedo texture to be visible through the overlay texture.<br><b><u>Color</b></u>: replaces the hue and saturation of the albedo texture with the hue and saturation of the overlay.<br><b><u>Multiply</b></u>: multiplies the color values of the albedo texture with the overlay texture.<br><b><u>Add</b></u>: adds the color values of the albedo texture and the overlay texture.<br><b><u>Layer</b></u>: applies the overlay texture on top of the albedo texture."
 		"Attribute.PaintKit_CustomPaintJobExtended.exposed_params.g_fOverlayBrightness:name_ref"		"Brightness"

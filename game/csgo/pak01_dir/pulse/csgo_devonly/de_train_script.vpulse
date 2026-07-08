@@ -344,6 +344,7 @@
 			m_bIsPublicBlackboardVariable = false
 			m_bIsObservable = false
 			m_nEditorNodeID = 937282370
+			m_Metadata = null
 		},
 		{
 			m_Name = "loopTimerMax"
@@ -354,6 +355,7 @@
 			m_bIsPublicBlackboardVariable = false
 			m_bIsObservable = false
 			m_nEditorNodeID = 562630136
+			m_Metadata = null
 		},
 		{
 			m_Name = "thunderVolume"
@@ -364,6 +366,7 @@
 			m_bIsPublicBlackboardVariable = false
 			m_bIsObservable = false
 			m_nEditorNodeID = 110084710
+			m_Metadata = null
 		},
 		{
 			m_Name = "nextLightningTime"
@@ -374,6 +377,7 @@
 			m_bIsPublicBlackboardVariable = false
 			m_bIsObservable = false
 			m_nEditorNodeID = 705070716
+			m_Metadata = null
 		},
 		{
 			m_Name = "nextLightningTimeDisplay"
@@ -384,6 +388,7 @@
 			m_bIsPublicBlackboardVariable = false
 			m_bIsObservable = false
 			m_nEditorNodeID = 129079773
+			m_Metadata = null
 		},
 		{
 			m_Name = "roundNumber"
@@ -394,6 +399,7 @@
 			m_bIsPublicBlackboardVariable = false
 			m_bIsObservable = false
 			m_nEditorNodeID = 837121299
+			m_Metadata = null
 		},
 	]
 	m_Constants = 
@@ -1104,7 +1110,12 @@
 				},
 				{
 					m_nFlowNodeID = 643564611
-					m_nValueNodeID = -1
+					m_nValueNodeID = 643564611
+					m_SequencePointName = "InDefault"
+				},
+				{
+					m_nFlowNodeID = 643564611
+					m_nValueNodeID = 643564611
 					m_SequencePointName = "InDefault"
 				},
 				{
@@ -1114,12 +1125,7 @@
 				},
 				{
 					m_nFlowNodeID = 643564611
-					m_nValueNodeID = -1
-					m_SequencePointName = "InDefault"
-				},
-				{
-					m_nFlowNodeID = 643564611
-					m_nValueNodeID = -1
+					m_nValueNodeID = 643564611
 					m_SequencePointName = "InDefault"
 				},
 				{
@@ -1347,7 +1353,12 @@
 				},
 				{
 					m_nFlowNodeID = 933560588
-					m_nValueNodeID = -1
+					m_nValueNodeID = 933560588
+					m_SequencePointName = "InDefault"
+				},
+				{
+					m_nFlowNodeID = 933560588
+					m_nValueNodeID = 933560588
 					m_SequencePointName = "InDefault"
 				},
 				{
@@ -1357,12 +1368,7 @@
 				},
 				{
 					m_nFlowNodeID = 933560588
-					m_nValueNodeID = -1
-					m_SequencePointName = "InDefault"
-				},
-				{
-					m_nFlowNodeID = 933560588
-					m_nValueNodeID = -1
+					m_nValueNodeID = 933560588
 					m_SequencePointName = "InDefault"
 				},
 				{
@@ -1456,7 +1462,7 @@
 				},
 				{
 					m_nFlowNodeID = 936571110
-					m_nValueNodeID = -1
+					m_nValueNodeID = 936571110
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -1550,7 +1556,7 @@
 				},
 				{
 					m_nFlowNodeID = 185171044
-					m_nValueNodeID = -1
+					m_nValueNodeID = 185171044
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -1867,7 +1873,12 @@
 				},
 				{
 					m_nFlowNodeID = 465731345
-					m_nValueNodeID = -1
+					m_nValueNodeID = 465731345
+					m_SequencePointName = "InDefault"
+				},
+				{
+					m_nFlowNodeID = 465731345
+					m_nValueNodeID = 465731345
 					m_SequencePointName = "InDefault"
 				},
 				{
@@ -1877,12 +1888,7 @@
 				},
 				{
 					m_nFlowNodeID = 465731345
-					m_nValueNodeID = -1
-					m_SequencePointName = "InDefault"
-				},
-				{
-					m_nFlowNodeID = 465731345
-					m_nValueNodeID = -1
+					m_nValueNodeID = 465731345
 					m_SequencePointName = "InDefault"
 				},
 				{
@@ -1981,7 +1987,7 @@
 				},
 				{
 					m_nFlowNodeID = 273098351
-					m_nValueNodeID = -1
+					m_nValueNodeID = 273098351
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -2742,12 +2748,12 @@
 				},
 				{
 					m_nFlowNodeID = 877383492
-					m_nValueNodeID = -1
+					m_nValueNodeID = 877383492
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 877383492
-					m_nValueNodeID = -1
+					m_nValueNodeID = 877383492
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -2757,12 +2763,12 @@
 				},
 				{
 					m_nFlowNodeID = 777374705
-					m_nValueNodeID = -1
+					m_nValueNodeID = 777374705
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 777374705
-					m_nValueNodeID = -1
+					m_nValueNodeID = 777374705
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -2772,12 +2778,12 @@
 				},
 				{
 					m_nFlowNodeID = 731367902
-					m_nValueNodeID = -1
+					m_nValueNodeID = 731367902
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 731367902
-					m_nValueNodeID = -1
+					m_nValueNodeID = 731367902
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -2787,12 +2793,12 @@
 				},
 				{
 					m_nFlowNodeID = 587791200
-					m_nValueNodeID = -1
+					m_nValueNodeID = 587791200
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 587791200
-					m_nValueNodeID = -1
+					m_nValueNodeID = 587791200
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -2812,12 +2818,12 @@
 				},
 				{
 					m_nFlowNodeID = 89604376
-					m_nValueNodeID = -1
+					m_nValueNodeID = 89604376
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 89604376
-					m_nValueNodeID = -1
+					m_nValueNodeID = 89604376
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -2827,12 +2833,12 @@
 				},
 				{
 					m_nFlowNodeID = 462988779
-					m_nValueNodeID = -1
+					m_nValueNodeID = 462988779
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 462988779
-					m_nValueNodeID = -1
+					m_nValueNodeID = 462988779
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -2842,12 +2848,12 @@
 				},
 				{
 					m_nFlowNodeID = 9900934
-					m_nValueNodeID = -1
+					m_nValueNodeID = 9900934
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 9900934
-					m_nValueNodeID = -1
+					m_nValueNodeID = 9900934
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -2857,12 +2863,12 @@
 				},
 				{
 					m_nFlowNodeID = 257767788
-					m_nValueNodeID = -1
+					m_nValueNodeID = 257767788
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 257767788
-					m_nValueNodeID = -1
+					m_nValueNodeID = 257767788
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -2996,7 +3002,7 @@
 				},
 				{
 					m_nFlowNodeID = 3243203
-					m_nValueNodeID = -1
+					m_nValueNodeID = 3243203
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -3447,7 +3453,12 @@
 				},
 				{
 					m_nFlowNodeID = 851762813
-					m_nValueNodeID = -1
+					m_nValueNodeID = 851762813
+					m_SequencePointName = "InDefault"
+				},
+				{
+					m_nFlowNodeID = 851762813
+					m_nValueNodeID = 851762813
 					m_SequencePointName = "InDefault"
 				},
 				{
@@ -3457,12 +3468,7 @@
 				},
 				{
 					m_nFlowNodeID = 851762813
-					m_nValueNodeID = -1
-					m_SequencePointName = "InDefault"
-				},
-				{
-					m_nFlowNodeID = 851762813
-					m_nValueNodeID = -1
+					m_nValueNodeID = 851762813
 					m_SequencePointName = "InDefault"
 				},
 				{

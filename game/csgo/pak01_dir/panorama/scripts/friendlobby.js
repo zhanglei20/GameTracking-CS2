@@ -34,7 +34,7 @@ var friendLobby;
     function _SetLobbyLeaderNameAvatar(elTile, lobbyType) {
         let xuidLobbyLeader = PartyBrowserAPI.GetPartyMemberXuid(_m_xuid, 0);
         let rawName = FriendsListAPI.GetFriendName(xuidLobbyLeader);
-        elTile.SetDialogVariable('friendname', $.HTMLEscape(rawName));
+        elTile.SetDialogVariable('friendname', rawName);
         let nameString = (lobbyType === 'invited') ? '#tooltip_friend_invited_you' : "#tooltip_lobby_leader_name";
         elTile.FindChildTraverse('JsFriendLobbyLeaderName').text = nameString;
         elTile.FindChildTraverse('JsFriendLobbyLeaderAvatar').PopulateFromSteamID(xuidLobbyLeader);

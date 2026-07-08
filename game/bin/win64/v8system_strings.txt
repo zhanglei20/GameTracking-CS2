@@ -19,6 +19,7 @@
 .?AVISource2V8System@@
 .?AVV8ArrayBufferAllocator@@
 1?LowMemoryNotification@Isolate@v8@@QEAAXXZ
+2\vp`9
 3?New@Isolate@v8@@SAPEAV12@AEBUCreateParams@12@@Z
 9?Reallocate@Allocator@ArrayBuffer@v8@@UEAAPEAXPEAX_K1@Z
 ;#?Initialize@V8@v8@@CA_NH@Z
@@ -51,6 +52,7 @@ Hard limit for the v8 heap size (in mBytes)
 RESOURCE_TYPE_JAVASCRIPT
 RESOURCE_TYPE_TYPESCRIPT
 RSDSD
+R\fp`9
 V8 Near Heap Limit: cur=%llu, init=%llu, max=%llu
 V8 hiting max memory limit: %d MB
 V8FatalErrorHandler
@@ -58,6 +60,7 @@ V8System
 \6?NumberOfHeapSpaces@Isolate@v8@@QEAA_KXZ
 \v??SetFlagsFromString@V8@v8@@SAXPEBD_K@Z
 a#?InitializePlatform@V8@v8@@SAXPEAVPlatform@2@@Z
+r\vp`9
 resourcesystem
 v8 heap external_memory = %llu\n
 v8 heap heap_size_limit = %llu\n

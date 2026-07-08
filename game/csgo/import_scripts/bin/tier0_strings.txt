@@ -452,7 +452,6 @@ GetFullPathNameA
 GetFullPathNameUTF8
 GetHardwareClockReliably
 GetModuleFileNameUTF8
-GetShellWindow
 GetShortPathNameUTF8
 GetShortPathNameW
 GetTempFileNameUTF8

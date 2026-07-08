@@ -20,7 +20,6 @@
 .?AVCVConsoleModuleMappingListener@@
 .?AVIModuleMappingListener@@
 .?AVIVConComm@@
-2\vp0(
 <Unknown Shutdown Context>
 =============== End VConsole Buffered Messages ===============\n
 =============== Prior Messages Discarded at %d bytes ===============\n
@@ -30,8 +29,6 @@
 C:\buildworker\csgo_rel_win64\build\_build_\vconcomm\_vpc_vconcomm\default\win64\_msvc_\Retail\vconcomm.pdb
 C:\buildworker\csgo_rel_win64\build\src\vconcomm\vconcomm.cpp
 CTSQueue<struct VConCommMessage_t *,0>::Push
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,class CUtlString,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,class CUtlString,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,class CUtlString,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CVConComm::Init
 Cannot recover from failed socket shutdown. (error %d)
 Clear buffered logging
@@ -81,6 +78,19 @@ arg%d
 arg0
 commandline
 iphlpapi.dll
+m_bCanAutoComplete
+m_bCommand
+m_bIsDefault
+m_bIsFlagsEnum
+m_szDefault
+m_szFriendlyName
+m_szGroupName
+m_szHelpString
+m_szMax
+m_szMin
+m_szValue
+m_vecDetails
+m_vecEnum
 vc_exit %s
 vcon_clear_buffered_log
 vcon_clients

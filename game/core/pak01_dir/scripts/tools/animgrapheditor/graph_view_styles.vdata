@@ -491,4 +491,21 @@
 		VAlign = "TOP"
 		HAlign = "RIGHT"
 	}
+	TransitionActiveIcon = 
+	{
+		BackgroundRepeat = "NoRepeat"
+		BackgroundSize = "Natural"
+		BackgroundImageWidth = "32"
+		BackgroundImageHeight = "32"
+		FixedSizeX = 32
+		FixedSizeY = 32
+		VAlign = "TOP"
+		HAlign = "RIGHT"
+		Padding = "0px 0px -32px 4px"
+		Positioning = "OUTSIDE_PARENT"
+	}
+	TransitionActiveIcon.Active = 
+	{
+		BackgroundImage = "tools/images/animation/transition.png"
+	}
 }

@@ -3,12 +3,12 @@
 %s (binlaunch): Can't get interface %s from from %s\n\n
 %s (binlaunch): No dot character in the filename.\n
 %s (binlaunch): Unable to find game\bin directory anywhere up the tree from %s.\n
-%s (binlaunch): Unable to load module %s, error %ld\n\n
+%s (binlaunch): Unable to load module '%s', error %lu\n\n
 .CRT$XCAA
 .CRT$XIAA
 .CRT$XIAC
 2\vp(x
-C:\buildworker\csgo_rel_win64\build\_build_\utils\binlaunch\_vpc_binlaunch\default\win64\_msvc_\Retail\binlaunch.pdb
+C:\buildworker\csgo_rel_win64\build\_build_\utils\vrad3\_vpc_vrad3_launch\default\win64\_msvc_\Retail\vrad3_launch.pdb
 GetFileAttributesA
 PATH
 PATH=%s;%s

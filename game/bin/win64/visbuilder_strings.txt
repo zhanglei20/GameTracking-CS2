@@ -1,6 +1,8 @@
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  (08@HPX`j
+ (08@HPXb@"\t
  (08@HPZ
+ (0X`hpz@"\t
 %.1fs total merge time\n
 %.3f cpu s cast, %.3f cpu s rasterize\n
 %08dx.geo
@@ -80,14 +82,13 @@
 .?AVISequence@@
 .?AVIVertColorBase@@
 08@HR
-0\rP!4
-2\vpP
-2\vpd
-8F0#
+2\vpT
 =fff?
 ?expf
-@08N`
+@08NP
+@HPX`hvpA
 Adaptive border clusters (%.fs)\n
+AggregateVertexEmissiveStreamOnDiskData_t
 Aslow
 Assigned %d clusters in %.2f seconds\n
 AxialRays
@@ -100,7 +101,7 @@ C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlblockvector.h
 C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\visbuilder.cpp
 C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\voxel_utils.cpp
 CBoundaryPointsRayGenerator
-CBoxMerge::MergeBestCandidates(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\utils.cpp:356
+CBoxMerge::MergeBestCandidates(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\utils.cpp:347
 CLOSRayGenerator
 CNeighboringClustersList::Build() completed %d neighbors (%.1fs)\n
 CStrongHandle
@@ -119,14 +120,15 @@ CUtlMemoryBlockAllocator<class CVectorPair,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::AddPage
+CUtlStringToken
 CVisBuilder::Build
 CVisClusterList::RecomputeClusterCostLists(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis_cluster.cpp:488
 CVisClusterList::RecomputeClusterCostListsForPartition(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis_cluster.cpp:526
 CVisibilityMesh::LoadRTEFromFile
-CVoxelSampler3::AdaptivelySampleBorders(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis3.cpp:4721
-CVoxelSampler3::MergeClusterSet(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis3.cpp:3209
-CVoxelSampler3::MergeClusterSet(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis3.cpp:3230
-CVoxelSampler3::MergeInsideRegions(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis3.cpp:3307
+CVoxelSampler3::AdaptivelySampleBorders(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis3.cpp:4718
+CVoxelSampler3::MergeClusterSet(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis3.cpp:3206
+CVoxelSampler3::MergeClusterSet(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis3.cpp:3227
+CVoxelSampler3::MergeInsideRegions(), C:\buildworker\csgo_rel_win64\build\src\utils\visbuilder\vis3.cpp:3304
 ClusterCenterRayGenerator
 ClusterView
 Collapsing resolution of %d nodes\n
@@ -141,6 +143,8 @@ Data_Branch2yz
 DebugWriteTracesFromCluster %d traces\n
 DebugWriteTracesFromCluster.gl
 Distance merged regions (%d merged to %d)\n
+DualHull
+EnsureCapacity
 Error loading %s!\n
 Error: %s loading vis config!\n
 Failed to read %s\n
@@ -178,15 +182,14 @@ No triangles found to compute visibility\n
 Note, removing %u lines of sight, too much memory! (was %s, use -debuglos to preserve more of these for debugging)\n
 Outside detection took %.2f seconds\n
 OverlayProjectionDirection
-P08J`\t\n
-P08N`
-PackedBlobNormal
+P08J
+P08NP
+P6p\
 PerVertexLighting
 Physics
 PivotPaint
 Pre-merged nodes %.2f seconds\n
 PropWorldOrigin
-R\fpP
 RandomRays
 RayProcessJob
 RayTracingEnvironment::RefineNode
@@ -231,11 +234,10 @@ Wrote vis hints to %s\n
 Wrote vis resource %s bytes\n
 X`hr
 You must build with -world before you can build with -vis!  Couldn't find raytrace.rte\n
-\fp\vPl
 \nLoading kd-trees\n
+\ng_flConfigMaxCoord
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\tg_flConfigMaxCoord
-aBv`
+aBvP
 bentnormal
 blendindices
 blendweight
@@ -257,29 +259,25 @@ los_errors
 lowprecisionuv
 lowprecisionuv1
 m_Format
+m_InstanceEmissiveData
 m_InstanceOrientations32
 m_VisClusterMemberBits
-m_bBakedTwoSided
-m_bCanBatchWithDynamicShaderConstants
-m_bDrawLast
-m_bHasBakedLightingFromLightMap
-m_bHasBakedLightingFromVertexStream
-m_bIsNotMatchedToMaterial
-m_bNoShadow
-m_bOnlyShadow
-m_bUseCompressedNormalTangent
-m_bUseShadowFastPath
+m_emissiveFormat
+m_fEmissiveFactor
+m_nVertexEmissiveByteOffset
+m_nVertexEmissiveStreamOffset
+m_vertexEmissiveStream
+m_vertexEmissiveStreams
 matrix3x4_t
 medium
 oldvis
 optionallycompressedtangentframe
-p08@H^`
-p0j`
+p08@H^P
+p60M
 posxyz
 pre-merged to %d clusters\n
 preMergeDist.gl
 pvstype
-r\vpP
 resourcesystem
 tangent
 tangentu_signv

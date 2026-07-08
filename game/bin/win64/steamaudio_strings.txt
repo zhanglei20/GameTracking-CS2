@@ -622,6 +622,7 @@ $hRh
 05=k
 08bX
 09,h
+0: Use order-truncated Ambisonics HRTF without correction. 1: Use diffuse field equalization to correct order-truncated Ambisonics HRTFs.
 0: distance ratio only. 1: deviation only (1/r). 2: deviation only (linear). 3: Mode 0 and Mode 1, 4: Mode 0 and Mode 2
 0;Q5[
 0<cz
@@ -673,9 +674,8 @@ $hRh
 2Zq)
 2\fWQx
 2\rlhp
-2\vpL
-2\vpP'
-2\vpd5
+2\vpPK
+2\vpdY
 2^pV
 2a"l
 2bT~
@@ -864,6 +864,7 @@ $hRh
 <SVX
 <YGr+
 <YVtV&
+<non-RTTI type>
 <unsupported>
 =!=-=3=7=?=C=o=s=u=y={=
 =&sf9
@@ -1102,6 +1103,8 @@ AbW_
 AcG\nt
 Acceptable OCSP Responses
 Adjust overall volume of the default HRTF by the specified gain (dB).
+Adjust scaling for reflection energy when combining it to calculate occlusion value.
+Adjust scaling of pathing energy by exponentiall scaling with pathing delta.
 Affiliation Changed
 Ag*g*
 Ambisonics order to use for convolution reverb. 0th order = 1 channel, 1st order = 4 channels.
@@ -1255,8 +1258,8 @@ BakeMaterials: Max probes (%u) limit exceeded (%d). Bake cancelled.\n
 BakeMaterials: No probes generated. Bake cancelled.\n
 BakeOcclusion: Max probes (%u) limit exceeded (%d). Bake cancelled.\n
 BakeOcclusion: No probes generated. Bake cancelled.\n
-BakeOcclusion: Unable to create impulse response. (%d)\n
 BakeOcclusion: Unable to create probe batch. [%d]\n
+BakeOcclusion: Unable to create reflection simulator. (%d)\n
 BakeOcclusion: Unable to create simulator. (%d)\n
 BakeOcclusion: Unable to create source. (%d)\n
 BakePathData: Cancelled\n
@@ -1540,7 +1543,6 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlStringT
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,struct _IPLSource_t *,class CDefEquals<int>,struct DefaultHashFunctor<int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<int,struct _IPLSource_t *,class CDefEquals<int>,struct DefaultHashFunctor<int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::AddPage
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlStringToken,int,class CDefLess<class CUtlStringToken>,int>::Node_t,class CUtlOrderedMapBase<class CUtlStringToken,int,class CDefLess<class CUtlStringToken>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlStringToken,int,class CDefLess<class CUtlStringToken>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlSortVector<struct ChunkHashFraction_t,class CUtlSortVectorDefaultLess<struct ChunkHashFraction_t::SortKey_t>,class CUtlVector<struct ChunkHashFraction_t,int,class CUtlVectorMemory_Growable<struct ChunkHashFraction_t,int,0> > >::Find
 CVcn
 C[L6
@@ -1582,7 +1584,8 @@ Content-Type: %ssignature;
 Content-Type: application/ocsp-request\r\nContent-Length: %d\r\n\r\n
 Content-Type: multipart/signed;
 Content-Type: text/plain\r\n\r\n
-Continue using previous prrobes if probe lookup for reverb fails.
+Continue using previous occlusion if probe lookup for occlusion fails.
+Continue using previous reverb if probe lookup for reverb fails.
 Could not load custom hrtf properties file. %s
 Critical
 CrlID
@@ -2123,6 +2126,7 @@ EjNG
 Email address mismatch
 Enable caching listener probe neighborhood for pathing.
 Enable custom HRTF loading.
+Enable order-truncated Ambisonics HRTF loading.
 Enable perspective correction for 3D audio.
 Enables tracy profiling when baking steam audio data in Hammer.
 Encipher Only
@@ -2175,7 +2179,7 @@ FORMAT
 FU\n-XP
 FV|FgUV
 F\rH'4
-Failed to allocate an instance of a class
+Failed to allocate an instance of a class of type '%s'
 Failed to open file
 Failed to read
 Failed to read %d bytes\n
@@ -2362,6 +2366,7 @@ ISSUING_DIST_POINT
 ITU-T
 IV block
 I\tHA\t981G'dc
+If set, OBJ export and Hammer visualization only shows sound blocking geometry used for baking simulation and runtime queries.
 If set, all the probes near a source withing probe range are used to find paths instead of nearest probe.
 If set, baked dimensions data is loaded.
 If set, baked materials data is loaded.
@@ -2507,6 +2512,7 @@ Maximum number of probes to create when baking custom data (dimensions).
 Maximum number of probes to create when baking custom data (occlusion).
 Maximum number of probes to create when baking paths.
 Maximum number of probes to create when baking reverb.
+Maximum order for Ambisonics binaural rendering and Ambisonics panning.
 Mc]T=
 Microsoft CSP Name
 Microsoft Commercial Code Signing
@@ -2936,6 +2942,7 @@ Packed store %s with refcount > 0.\n
 Parameters
 Parse error on %s: %s\n
 Path length of invalid path in inches. Set this to .0 to use direct distance as path length.
+Pathing...\n
 Pathing: Cannot find baked paths file: %s. Pathing disabled.\n
 Pathing: Cannot find baked paths file: %s.\n
 Pathing: Filesystem not initialized.\n
@@ -3114,13 +3121,13 @@ RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDS3z"
-R\fpP'
+R\fpPK
 R\r1>Vp
-R\vpL
 R]Di
 Rbg.E
 ReadConsoleInputW
 Reasons
+Reflections...\n
 RegisterEventSourceW
 Registered ID
 Remove From CRL
@@ -3524,6 +3531,8 @@ UUUUUUUUUUUa\f\v
 U^Pg
 Ugi<
 Unable to create Ambisonics decode effect [%d]\n
+Unable to create GPU scene: %d.\n
+Unable to create GPU static mesh: %d.\n
 Unable to create custom HRTF [%s]\n
 Unable to create direct effect [%d]\n
 Unable to create impulse response [%d]\n
@@ -3882,7 +3891,6 @@ Z~wl
 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 \n\tIPSec/IKE/Oakley curve #3 over a 155 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
 \n\tIPSec/IKE/Oakley curve #4 over a 185 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
-\n\tV_atanf
 \nqYu
 \ntM(ie-V
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
@@ -3911,6 +3919,7 @@ Z~wl
 \tHAI8xpH\f
 \tJm_9
 \tLa0+
+\tV_atanf
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \toRE
 \ttqE5
@@ -3988,7 +3997,6 @@ aRWZ5
 aRecord
 aSRP
 aXvC
-a\tV_powd
 a]?xG
 aaControls
 absorptionCoefficients
@@ -4820,6 +4828,7 @@ enable_compressed_reverb_lookup
 enable_dc_correction_for_phase_interpolation
 enable_iir_order_8
 enable_iir_order_switching
+enable_optix_verbose_logging
 enable_paths_from_all_source_probes
 enable_reverb_probe_caching_for_missing_probes
 enc->iv_len <= (int)sizeof(iv)
@@ -5501,6 +5510,8 @@ iplAmbisonicsDecodeEffectRelease
 iplBinauralEffectApply
 iplBinauralEffectCreate
 iplBinauralEffectRelease
+iplCUDADeviceCreate
+iplCUDADeviceRelease
 iplCompressedEnergyFieldsBlendAndDecompress
 iplCompressedEnergyFieldsCreateEmpty
 iplCompressedEnergyFieldsCreateFromProbeBatch
@@ -5526,7 +5537,9 @@ iplDirectivityCalculate
 iplDistanceAttenuationCalculate
 iplEmbreeDeviceCreate
 iplEmbreeDeviceRelease
+iplEnergyFieldCopyDeviceToHost
 iplEnergyFieldCreate
+iplEnergyFieldGetBand
 iplEnergyFieldGetChannel
 iplEnergyFieldGetNumBins
 iplEnergyFieldGetNumChannels
@@ -5541,12 +5554,6 @@ iplHybridReverbEstimatorEstimate
 iplHybridReverbEstimatorRelease
 iplImageSourceSimulatorCreate
 iplImageSourceSimulatorRelease
-iplImpulseResponse2Create
-iplImpulseResponse2GetChannel
-iplImpulseResponse2GetNumSamples
-iplImpulseResponse2Release
-iplImpulseResponse2Reset
-iplImpulseResponse2SwapSource
 iplImpulseResponseCopy
 iplImpulseResponseCreate
 iplImpulseResponseGetChannel
@@ -5555,6 +5562,9 @@ iplImpulseResponseGetNumSamples
 iplImpulseResponseRelease
 iplImpulseResponseReset
 iplImpulseResponseSwap
+iplOpenCLDeviceRelease
+iplOptiXDeviceCreate
+iplOptiXDeviceRelease
 iplOverlapSaveFIRCreate
 iplOverlapSaveFIRRelease
 iplPartitionerCreate
@@ -5604,11 +5614,13 @@ iplProbeNeighborhoodResize
 iplProbeNeighborhoodSetProbeBatch
 iplProbeNeighborhoodSetProbeIndex
 iplProbeNeighborhoodSetProbeWeight
+iplRadeonRaysDeviceRelease
 iplReconstructorCreate
 iplReconstructorReconstruct
 iplReconstructorRelease
 iplReflectionSimulatorCreate
 iplReflectionSimulatorRelease
+iplReflectionSimulatorSimulate
 iplReflectionsBakerBake
 iplReverbEstimatorApplyScale
 iplReverbEstimatorCreate
@@ -5632,7 +5644,6 @@ iplSimulatorRunPathing
 iplSimulatorRunPathingForNeighborhoods
 iplSimulatorRunPathingPerSource
 iplSimulatorRunPathingPerSourceForNeighborhood
-iplSimulatorRunReflections
 iplSimulatorSetScene
 iplSimulatorSetSharedInputs
 iplSourceAdd
@@ -5797,6 +5808,7 @@ l7@J
 lC57
 lDcW
 lM2p
+l\tV_powd
 language
 last octet invalid
 lastModifiedBy
@@ -5842,6 +5854,7 @@ m_vecAABBs
 m_vecData
 m_vecInitialTransforms
 m_vecKeys
+m_vecReflectionEnergy
 ma\v\r01!
 mac absent
 mac generation error
@@ -6363,6 +6376,7 @@ pp&c
 ppBasis
 pqualid
 pre mac length too long
+precached_ambisonics_order
 preferredDeliveryMethod
 presentationAddress
 prf-gostr3411-94
@@ -6462,9 +6476,8 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
-r\tV_sinhf
 r\vDi
-r\vpP'
+r\vpPK
 rand
 rand2
 random number generation failed
@@ -6866,16 +6879,21 @@ smimesign
 sm{c
 sn_d.
 snd_steamaudio_active_hrtf
+snd_steamaudio_ambisonics_correction_type
 snd_steamaudio_baked_data_stats
 snd_steamaudio_baked_occlusion_mode
+snd_steamaudio_baked_occlusion_pathing_exponent
+snd_steamaudio_baked_occlusion_reflection_factor
 snd_steamaudio_default_hrtf_volume_gain
 snd_steamaudio_enable_compressed_reverb_lookup
 snd_steamaudio_enable_custom_hrtf
 snd_steamaudio_enable_editor_profiling
+snd_steamaudio_enable_occlusion_caching
+snd_steamaudio_enable_ordertruncated_ambisonics_hrtf
 snd_steamaudio_enable_pathing
 snd_steamaudio_enable_perspective_correction
 snd_steamaudio_enable_probeneighborhood_caching
-snd_steamaudio_enable_reverb_probe_caching_for_missing_probes
+snd_steamaudio_enable_reverb_caching
 snd_steamaudio_enable_spatial_blend_fix
 snd_steamaudio_halton_sequence
 snd_steamaudio_hybrid_reverb_overlap
@@ -6888,6 +6906,7 @@ snd_steamaudio_load_materials_data
 snd_steamaudio_load_occlusion_data
 snd_steamaudio_load_pathing_data
 snd_steamaudio_load_reverb_data
+snd_steamaudio_max_ambisonics_order
 snd_steamaudio_max_convolution_sources
 snd_steamaudio_max_hrtf_normalization_gain_db
 snd_steamaudio_max_occlusion_samples
@@ -6908,6 +6927,7 @@ snd_steamaudio_perspective_correction_factor
 snd_steamaudio_reverb_order
 snd_steamaudio_reverb_order_rendering
 snd_steamaudio_reverb_update_rate
+snd_steamaudio_use_soundblocking_shapes_only
 snmpv2
 so=H*m
 socket
@@ -7595,6 +7615,7 @@ zz2K
 }VKRZ
 }W70d
 }Xee+
+}\tV_sinhf
 }gE3
 }n2W
 ~9ob

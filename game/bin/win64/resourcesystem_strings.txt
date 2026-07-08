@@ -31,8 +31,10 @@
 .?AVCKV3Transfer_ResourceLoadInterface@@
 .?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?7??Submit@CAsyncResourceDataRequest@@QEAAXXZ@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?7??Submit@CAsyncResourceDataRequest@@QEAAXXZ@@Z@
 .?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?8??IO_HandleAsyncResourceDataRequest@CAsyncResourceDataRequest@@AEAAXPEAVIAsyncReadRequest2@@W4AsyncRequestStatus_t@@@Z@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?8??IO_HandleAsyncResourceDataRequest@CAsyncResourceDataRequest@@AEAAXPEAVIAsyncReadRequest2@@W4AsyncRequestStatus_t@@@Z@@Z@
+.?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_2>@?CC@??FinalizeManifests@CResourceSystem@@AEAAXXZ@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_2>@?CC@??FinalizeManifests@CResourceSystem@@AEAAXXZ@@Z@
 .?AVCLoadingResource@@
 .?AVCNullTypeManager@@
+.?AVCRD_AsyncProcessDataUtils@@
 .?AVCRD_RegisterResourceDataUtils@@
 .?AVCResourceDeallocatorUtils@@
 .?AVCResourceManifestTypeManager@@
@@ -50,7 +52,9 @@
 .?AVIAsyncResourceDataRequest@@
 .?AVIAsyncResourceDataRequestOwner@@
 .?AVICodeResourceManifestManager@@
+.?AVIRD_AsyncProcessDataUtils@@
 .?AVIRD_RegisterResourceDataUtils@@
+.?AVIRD_ResourceExtrefUtils@@
 .?AVIResourceDeallocatorUtils@@
 .?AVIResourceHandleUtils@@
 .?AVIResourceManifestRegistry@@
@@ -63,8 +67,11 @@
 .?AVbad_weak_ptr@std@@
 <Anonymous>
 <INVALID>
+<non-RTTI type>
 ?~~~~~~~~~~~~~~~~
+AABBWS_t
 An attempt was made to create a resource manifest with debug name "%s" while the resource system was shutting down.\n
+AsyncPreFinalize
 AsyncProcess
 Attempted to register duplicate manifest name %s!\n
 Bad FLC data for resource '%s': %s\n
@@ -124,13 +131,15 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<stru
 CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<class CLoadingResource *,unsigned short>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<class CStreamingResourceData *,unsigned short>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct UtlLinkedListElem_t<struct ExtRefList_t *,unsigned int>,class CMemAllocAllocator>::AddPage
-CUtlSortVector<struct CResourceManifest::LoadingResourceReference_t,class CUtlSortVectorDefaultLess<struct CResourceManifest::LoadingResourceReference_t>,class CUtlVector<struct CResourceManifest::LoadingResourceReference_t,int,class CUtlVectorMemory_Growable<struct CResourceManifest::LoadingResourceReference_t,int,0> > >::Find
-CUtlSortVector<struct CResourceManifest::LoadingResourceReference_t,class CUtlSortVectorDefaultLess<struct CResourceManifest::LoadingResourceReference_t>,class CUtlVector<struct CResourceManifest::LoadingResourceReference_t,int,class CUtlVectorMemory_Growable<struct CResourceManifest::LoadingResourceReference_t,int,0> > >::Insert
+CUtlSortVector<struct ResourceBindingBase_t const *,class CUtlSortVectorDefaultLess<struct ResourceBindingBase_t const *>,class CUtlVector<struct ResourceBindingBase_t const *,int,class CUtlVectorMemory_Growable<struct ResourceBindingBase_t const *,int,0> > >::Find
+CUtlSortVector<struct ResourceBindingBase_t const *,class CUtlSortVectorDefaultLess<struct ResourceBindingBase_t const *>,class CUtlVector<struct ResourceBindingBase_t const *,int,class CUtlVectorMemory_Growable<struct ResourceBindingBase_t const *,int,0> > >::Insert
+CUtlStringToken
 CVDataHandle
 CVDataLocalizedToken
 CWeakHandle
 CWeakHandleVoid
 Couldn't load KV3 for resource: %s
+DEPRECATED_FIELD_AI_SCHEDULE_BITS
 DISABLED
 Deleting empty loading resource\n
 ERROR: %s resource %016llX is the wrong resource type!\n
@@ -145,17 +154,16 @@ Error loading resource "%s" (Invalid header version: %d != %d)\n
 Error loading resource "%s" file size %d > allocated buffer size %d\n
 Error loading resource manifest "%s" (No DATA block)\n
 FATAL ERROR: %s resource '%s' (%016llX) is the wrong resource type! (This is likely caused by a hash collision between the strings '%s' and '%s')\n
+FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTORWS
+FIELD_NETWORK_QUANTIZED_VECTORWS
 Failed loading resource "%s" (%s)\n
-Failed to allocate an instance of a class
+Failed to allocate an instance of a class of type '%s'
 Failed to apply FLC data to resource '%s': %s\n
 Failed to enumerate process modules.\n
 Failed to find [K32]EnumProcessModules and [K32]GetModuleFileNameExA.\n
 Failed to find or register resource "%s" for external reference: referring resource is %s\n
 Failed to load resource "%s" and ExitOnResourceLoadFailure was set and it's not in badresources_whitelist.txt\n\tUse '-allow_missing_resources' to ignore.
 Failed to open handle for this process.\n
-Finalize queue Finalizing StartLoading(%s) @%.2f\n
-Finalize queue completed processed %d, %s, elapsed time %.2fMSEC %s @%.2f\n
-Finalize queue continue processed %d of %d, elapsed time %.2fMSEC %s @%.2f\n
 ForceSynchronizationAndBlockUntilManifestLoaded
 Forgot to remove resource type manager for type %s!\n
 FourVectors
@@ -173,7 +181,6 @@ IsResourceManifestGroupKnown: Manifest group name is empty or null\n
 MKV3TransferName
 MPropertyCustomEditor
 MResourceTypeForInfoType
-MULTI FRAME
 Manifest %s references non-existent resource '%s'\n
 No DATA block for resource\n
 Only wrote %d (of %d) values when saving map!
@@ -201,7 +208,6 @@ ResourceSystem/ExitOnResourceLoadFailure
 ResourceSystem/SpewBlockingLoads
 ResourceSystemFrame
 ResourceSystemWaitingForFutureWork
-SINGLE FRAME
 SetGrowSize
 SphereBase_t
 Tried to double-register resource manager for two resource types! ( "%lld" and "%lld")\n
@@ -216,6 +222,7 @@ Update_Internal
 Usage: resource_leaks <resource_name>\n
 Usage: resource_repeated_reload <count> <resource_name>\n
 V_isempty( pFileNameOverride )
+VectorWS
 WARNING: %s resource '%s' (%016llX) requested but is not in the system. (Missing from from a manifest?)\n
 WARNING: Long frame update (%.2fms) for resource type manager '%s' in frame %d (%d long updates total for this manager)\n
 WARNING: Long resource system update - should have taken no more than %dns, but took %.4fs! (Frame #%d)\n
@@ -290,10 +297,9 @@ vphys
 vpost
 vptest
 vrman
-vseq
 vsgraph
 vsndevts
-vsndstck
+vsndstckvseq
 vsurf
 vsvg
 vtex

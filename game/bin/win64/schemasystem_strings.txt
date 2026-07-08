@@ -65,6 +65,7 @@
 .?AVCSchemaType_Ptr@@
 .?AVISchemaSystem@@
 .?AVISchemaSystemTypeScope@@
+2\vpds
 <%s, cat %d>
 <No schema binary for binding>
 <No schemasystem>
@@ -121,18 +122,8 @@ CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct Atomi
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct TypeAndCountInfo_t,class CSchemaType_FixedArray *,class CDefLess<struct TypeAndCountInfo_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,class CSchemaType_DeclaredClass *,class CDefLess<unsigned int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,class CSchemaType_DeclaredEnum *,class CDefLess<unsigned int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlRBTree<struct CUtlOrderedMapBase<class SchemaMetaInfoHandle_t<class CSchemaType>,class CSchemaType_Ptr *,class CDefLess<class SchemaMetaInfoHandle_t<class CSchemaType> >,unsigned short>::Node_t,class CUtlOrderedMapBase<class SchemaMetaInfoHandle_t<class CSchemaType>,class CSchemaType_Ptr *,class CDefLess<class SchemaMetaInfoHandle_t<class CSchemaType> >,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class SchemaMetaInfoHandle_t<class CSchemaType>,class CSchemaType_Ptr *,class CDefLess<class SchemaMetaInfoHandle_t<class CSchemaType> >,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CSchemaType_Atomic *,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,class CSchemaType_Atomic *,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CSchemaType_Atomic *,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CSchemaType_Bitfield *,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,class CSchemaType_Bitfield *,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CSchemaType_Bitfield *,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct TypeAndCountInfo_t,class CSchemaType_FixedArray *,class CDefLess<struct TypeAndCountInfo_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct TypeAndCountInfo_t,class CSchemaType_FixedArray *,class CDefLess<struct TypeAndCountInfo_t>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct TypeAndCountInfo_t,class CSchemaType_FixedArray *,class CDefLess<struct TypeAndCountInfo_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,class CSchemaType_DeclaredClass *,class CDefLess<unsigned int>,unsigned short>::Node_t,class CUtlOrderedMapBase<unsigned int,class CSchemaType_DeclaredClass *,class CDefLess<unsigned int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,class CSchemaType_DeclaredClass *,class CDefLess<unsigned int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,class CSchemaType_DeclaredEnum *,class CDefLess<unsigned int>,unsigned short>::Node_t,class CUtlOrderedMapBase<unsigned int,class CSchemaType_DeclaredEnum *,class CDefLess<unsigned int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,class CSchemaType_DeclaredEnum *,class CDefLess<unsigned int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlReference
+CUtlStringToken
 CUtlStringTokenWithStorage
 CUtlSymbol
 CUtlVectorFixed
@@ -149,6 +140,7 @@ ConvertOldIntrospectedResourceDataToKV3 - Bad arguments!\n
 ConvertOldIntrospectedResourceDataToKV3 - No introspection dictionary!\n
 ConvertOldIntrospectedResourceDataToKV3 - No root struct\n
 ConvertOldIntrospectedResourceDataToKV3 - Out-of-date source introspection dictionary\n
+DEPRECATED_FIELD_AI_SCHEDULE_BITS
 DegreeEuler
 ERROR: CResourceToKV3 failed to DeduceDerivedTypeFromDisk\n
 ERROR: CResourceToKV3 failed to resolve extref  %016llX\n
@@ -172,6 +164,8 @@ Enumerator Name
 Enumerator Value
 Exiting due to fatal schema validation errors, see log output\n
 ExternalReference
+FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTORWS
+FIELD_NETWORK_QUANTIZED_VECTORWS
 Failed to register '%s' - inconsistent with '%s' (hash=%d,%d)\n
 Fatal error: class '%s' has whitespace in its registration macro.\n
 Field
@@ -211,6 +205,7 @@ MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
 MFieldVerificationName
 MResourceTypeForInfoType
+MSkipDataDescTweaks
 Member Count
 Meta tag name
 Mismatched compile/runtime hash '%s' (%d != %d)\n
@@ -276,9 +271,11 @@ schema_dump_binding "%s"
 schemalib
 schemasystem
 schemasystem.dll
+std::optional
 std::pair
 std::shared_ptr
 std::unique_ptr
+std_optional
 std_pair
 std_shared_ptr
 std_unique_ptr

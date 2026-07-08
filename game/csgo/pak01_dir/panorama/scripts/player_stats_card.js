@@ -136,12 +136,8 @@ var PlayerStatsCard;
     }
     PlayerStatsCard.SetSkillGroup = SetSkillGroup;
     function _SetHonorIcon(elPanel, xuid) {
-        const honorIconOptions = {
-            honor_icon_frame_panel: elPanel.FindChildTraverse('jsHonorIcon'),
-            do_fx: true,
-            xptrail_value: GameStateAPI.GetPlayerXpTrailLevel(xuid)
-        };
-        HonorIcon.SetOptions(honorIconOptions);
+        const elHonorIcon = elPanel.FindChildTraverse('jsHonorIcon');
+        elHonorIcon.Set(GameStateAPI.GetPlayerXpTrailLevel(xuid), false);
     }
     function SetStats(elCard, xuid, arrBestStats = null) {
         let oStats = MockAdapter.GetPlayerStatsJSO(xuid);

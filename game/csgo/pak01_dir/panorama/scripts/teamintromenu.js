@@ -90,16 +90,13 @@ var TeamIntroMenu;
     }
     function _SetHonorIcon(elPanel, xuid, teamColor) {
         const elHonorIconFrame = elPanel.FindChildTraverse('jsHonorIcon');
-        const honorIconOptions = {
-            honor_icon_frame_panel: elHonorIconFrame,
-            do_fx: true,
-            xptrail_value: GameStateAPI.GetPlayerXpTrailLevel(xuid)
-        };
-        HonorIcon.SetOptions(honorIconOptions);
-        if (teamColor) {
-            const elImage = elHonorIconFrame.FindChildTraverse('JsHonorIconImage');
-            if (elImage) {
-                elImage.style.washColor = teamColor;
+        if (elHonorIconFrame) {
+            elHonorIconFrame.Set(GameStateAPI.GetPlayerXpTrailLevel(xuid), false);
+            if (teamColor) {
+                const elImage = elHonorIconFrame.FindChildTraverse('JsHonorIconImage');
+                if (elImage) {
+                    elImage.style.washColor = teamColor;
+                }
             }
         }
     }
@@ -112,7 +109,7 @@ var TeamIntroMenu;
         const elAvatarImage = elInfo.FindChildInLayoutFile("AvatarImage");
         elAvatarImage.PopulateFromPlayerSlot(GameStateAPI.GetPlayerSlot(sXuid));
         const elName = elInfo.FindChildInLayoutFile("Name");
-        elName.text = GameStateAPI.GetPlayerName(sXuid);
+        elName.SetDialogVariableInt("intro_player_slot", GameStateAPI.GetPlayerSlot(sXuid));
         const teamColor = GameStateAPI.GetPlayerColor(sXuid);
         if (teamColor)
             elName.style.washColor = teamColor;

@@ -287,6 +287,8 @@ $prefix_element$
 .vmat
 0x%llx
 16-byte data pool
+2\vp4
+2\vp8
 4-byte data pool
 5sfm_v8
 64 283 0
@@ -392,13 +394,6 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement 
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
-CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmElement *,class CDefLess<class CDmElement *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmElement *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class IDmeOperator *,class CDefLess<class IDmeOperator *>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CDmElementSerializationDictionary::ElementInfo_t,class CLessFunc<&private: static bool __cdecl CDmElementSerializationDictionary::LessFunc(struct CDmElementSerializationDictionary::ElementInfo_t const &,struct CDmElementSerializationDictionary::ElementInfo_t const &)>,int,class CUtlBlockVector<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,class CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CVisibilityMgr
 Cannot unserialize a prefix element here (type "$prefix_element$")
@@ -603,7 +598,6 @@ Operator cycle found during dependency graph traversal!\n
 Orient Rotation to 2D Direction
 Oscillate Scalar
 Oscillate Vector
-P2p}\v
 Particle Configuration File
 Position Along Path Random
 Position Along Path Sequential
@@ -656,7 +650,6 @@ Serialize: File encoding '%s' is undefined!\n
 Serialize: Format %s expects to be written to a binary format, but the buffer is a text-format buffer\n
 StereoFlip
 Symbol table:  %d entries %llu bytes\n
-T\tV_log2f
 Texture Configuration File
 TongueCurl
 TongueD
@@ -708,8 +701,10 @@ World Node Files
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
 \tSupported DMX file encodings:\n
 \tSupported DMX file formats:\n
+\tV_sscanf_s
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_StringAfterPrefixCaseSensitive
+_\tV_log2f
 _light
 _linked_type_
 _name
@@ -754,6 +749,7 @@ baseMapToOverride
 baseName
 baseStates
 basic_movement
+binary
 binary_array
 binary_seqids
 binary_v
@@ -1291,4 +1287,3 @@ wrinkle
 wrinkle$0
 wrinkle$0Indices
 wrinkleIndices
-z\tV_sscanf_s

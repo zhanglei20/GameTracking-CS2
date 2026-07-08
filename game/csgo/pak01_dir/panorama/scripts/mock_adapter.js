@@ -405,7 +405,6 @@ var MockAdapter = (function () {
         GetMatchEndWinDataJSO: function _APIGetMatchEndWinDataJSO() { return _APIAccessor(GameStateAPI.GetMatchEndWinDataJSO(), k_GetMatchEndWinDataJSO); },
         GetScoreDataJSO: function _GetScoreDataJSO() { return _APIAccessor(GameStateAPI.GetScoreDataJSO(), k_GetScoreDataJSO); },
         GetPlayerName: function _GetPlayerName(xuid) { return _APIAccessor(GameStateAPI.GetPlayerName(xuid), k_GetPlayerName, xuid); },
-        GetPlayerNameWithNoHTMLEscapes: function GetPlayerNameWithNoHTMLEscapes(xuid) { return _APIAccessor(GameStateAPI.GetPlayerNameWithNoHTMLEscapes(xuid), k_GetPlayerName, xuid); },
         IsFakePlayer: function _IsFakePlayer(xuid) { return _APIAccessor(GameStateAPI.IsFakePlayer(xuid), k_IsFakePlayer); },
         XPDataJSO: function _XPDataJSO(panel) { return _APIAccessor(panel.XpDataJSO, k_XpDataJSO); },
         XPShopDataJSO: function _XPShopDataJSO(panel) { return _APIAccessor(panel.XpShopDataJSO, k_XpShopDataJSO); },

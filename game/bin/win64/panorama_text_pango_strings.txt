@@ -13,8 +13,11 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`j`
- (08@HPZ`
+ (08@HPX`j
+ (08@HPXb`k
+ (08@HPZ
+ (08@HR`k
+ (0X`hpz`k
  (INVALID PSS PARAMETERS)\n
  (Negative)
  8f\ff
@@ -257,7 +260,6 @@ $hRh
 (\v2,.CUIFontFilePackagePB.CUIEncryptedFontFilePB
 (d4t8
 (fS{ggRcjh
-(fp5
 (h`H1pqA
 (i/Al
 (jvg;
@@ -628,8 +630,8 @@ $hRh
 0123456789
 02V8[
 05=k
-08@HR`
-08B`
+08@HR
+08@J`k
 08bX
 09,h
 0;Q5[
@@ -680,7 +682,7 @@ $hRh
 2Zq)
 2\fWQx
 2\rlhp
-2\vp8
+2\vp8\r
 2^pV
 2a"l
 2bT~
@@ -786,12 +788,12 @@ $hRh
 7zRQ
 8+Qw
 80F2<
+81U%
 82\n:XPH
 851Pe
 8<pl
 8= zp
 8A6j
-8Fp1
 8GZS
 8SIffK5W
 8TZvrv<
@@ -799,8 +801,6 @@ $hRh
 8]Vc2
 8ca1
 8dS2
-8e0%
-8ia%
 8pe7?
 8q-S*]X
 8sOy
@@ -901,8 +901,10 @@ $hRh
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
+@08NX
 @0pp
 @BH]f
+@HPX`hv
 @MfKZ
 @Pgl
 @Pu\rm
@@ -923,7 +925,6 @@ A9ur
 A<fP
 A>x8
 AA Compromise
-AA:P
 AACompromise
 AC2,h
 ACCESS_DESCRIPTION
@@ -1478,10 +1479,10 @@ CUITextLayoutPango::DrawRun
 CUITextLayoutPango::DrawRun - Glyph render
 CUITextLayoutPango::GetCharacterCoordinates
 CUITextLayoutPango::GetCharacterRangeCoordinates
+CUITextLayoutPango::GetLineRangeCoordinates
 CUITextLayoutPango::HitTestPoint
 CUITextLayoutPango::Initialize
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct panorama::CUIFontLoaderLinux::FontMemory_t *,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct panorama::CUIFontLoaderLinux::FontMemory_t *,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlRBTree<struct CUtlOrderedMapBase<struct panorama::UITextLayoutProperties_t *,struct panorama::UITextOpacityMaskData_t,class CDefLessPtr<struct panorama::UITextLayoutProperties_t>,int>::Node_t,class CUtlOrderedMapBase<struct panorama::UITextLayoutProperties_t *,struct panorama::UITextOpacityMaskData_t,class CDefLessPtr<struct panorama::UITextLayoutProperties_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct panorama::UITextLayoutProperties_t *,struct panorama::UITextOpacityMaskData_t,class CDefLessPtr<struct panorama::UITextLayoutProperties_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CVcn
 C[L6
 C\lVQ
@@ -2181,6 +2182,7 @@ GetCharacterCoordinates
 GetCharacterRangeCoordinates
 GetConsoleCP
 GetCursorInfo
+GetLineRangeCoordinates
 GetQueueStatus
 GetSystemTime
 Gew}
@@ -2622,7 +2624,11 @@ P-224
 P-256
 P-384
 P-521
+P08@J`k
+P08J
+P08NX
 P1\t98"
+P2`k
 P5[1
 PAGN_4
 PANGO_LIBDIR
@@ -2827,8 +2833,10 @@ Parameters
 Peer haven't sent GOST certificate, required for selected ciphersuite
 Permanent Identifier
 Permitted
+Pfp>
 Pm8A?
 PmR"H?
+Pn0@
 Policy Qualifier CPS
 Policy Qualifier User Notice
 Polish
@@ -2992,8 +3000,8 @@ RSA_verify
 RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
-R\fp8
 R\r1>Vp
+R\vp8\r
 R]Di
 Rbg.E
 ReadConsoleInputW
@@ -3582,9 +3590,8 @@ XRJ2
 XWY]
 XYD%
 X\tQo
-X`hr`
+X`hr
 Xd3h
-Xf02
 XfJ7
 XjfR
 XqgA+
@@ -3762,6 +3769,7 @@ a5<p
 a;Tg
 a@XZ
 aA0k
+aBvX
 aD/x
 aDSS
 aECDH
@@ -4831,6 +4839,7 @@ g|MT
 h&eC
 h*Ax
 h0XB
+h1P%
 h2Wl
 h2n_\
 h5N.
@@ -4877,6 +4886,7 @@ holdInstructionReject
 homePostalAddress
 homeTelephoneNumber
 houseIdentifier
+hpz`k
 hr_H
 http request
 https proxy request
@@ -5894,6 +5904,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p08@H^X
+p2`k
 p2{l
 p4Z3
 p5Z3
@@ -5927,6 +5939,7 @@ pango_attr_list_new
 pango_attr_list_unref
 pango_attr_shape_new
 pango_attr_size_new
+pango_attr_size_new_absolute
 pango_attr_stretch_new
 pango_attr_strikethrough_new
 pango_attr_style_new
@@ -6224,7 +6237,6 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
-r\vp8
 rand
 rand2
 random number generation failed

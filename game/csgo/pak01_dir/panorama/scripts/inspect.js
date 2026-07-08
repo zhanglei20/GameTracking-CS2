@@ -33,7 +33,6 @@ var InspectModelImage;
         { type: 'weapon_elite', camera: '2' },
         { type: 'weapon_tec9', camera: '2' },
         { type: 'weapon_revolver', camera: '2' },
-        { type: 'weapon_p250', camera: '2' },
         { type: 'weapon_c4', camera: '3' },
         { type: 'weapon_taser', camera: '0' },
     ];

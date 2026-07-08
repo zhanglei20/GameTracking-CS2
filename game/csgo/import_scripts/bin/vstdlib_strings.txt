@@ -147,11 +147,9 @@ ConVar(%s) defined with infinite float value (%s)\n
 ConVarRef %s doesn't point to an existing ConVar\n
 Convar %s has conflicting %s flags (child: %s%s, parent: %s%s, parent wins)\n
 Convar %s has multiple help strings:\n\tparent (wins): "%s"\n\tchild: "%s"\n
-Coroutine_Cancel
 Coroutine_DebugAssert
 Coroutine_DebugBreak
 Coroutine_GetStackDepth
-Coroutine_IsActive
 Coroutine_ReleaseThreadMemory
 Coroutine_ValidateGlobals
 Could not execute the command:\n   %s\nWindows gave the error message:\n   "%s"\n

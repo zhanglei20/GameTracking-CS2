@@ -106,17 +106,20 @@
 .?AVIMeshSystem@@
 .?AVIMeshUtils@@
 .?AVIPoseAccessor@@
+.?AVIRD_AsyncProcessDataUtils@@
 .?AVIRD_RegisterResourceDataUtils@@
+.?AVIRD_ResourceExtrefUtils@@
 .?AVIResourceTypeManager@@
 .?AVISceneObjectDesc@@
 .?AVISequence@@
 .?AVIShaderReloadListener@@
 .?AVIVPhysicsLegacyKeyHandler@@
 .vmdl
-2\vpd
-2\vpde
+2\vpT
 2_BONE_IK
 8a\v6;
+;1#INF
+<non-RTTI type>
 <pair_a> 
 <pair_b> 
 =3vmdlkeys4
@@ -196,11 +199,12 @@ CModelAttachmentName
 CModelBodyGroupName
 CModelBoneName
 CModelMaterialGroupName
-CModelMeshBufferData_t
 CModelTypeManager::FinalizeResource
-CModelTypeManager::GetErrorResource(117): GetErrorModel() called before error model exists!\n
+CModelTypeManager::GetErrorResource(118): GetErrorModel() called before error model exists!\n
 CParentAttachmentName
-CRenderMesh::CreateBufferResources(1023): 
+CRenderMesh::CreateBufferResources(1199): 
+CRenderMeshSlotType_t
+CSceneObjectData::CreateMeshletResources(985): 
 CStrongHandle
 CStrongHandleCopyable
 CTransform
@@ -225,18 +229,20 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CSceneObjectData::RTProxyDraw
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<unsigned short,int,class CMemAllocAllocator>,unsigned short,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<class CSceneObjectData,1,int,class CMemAllocAllocator>,class CSceneObjectData,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<struct CRenderBufferBinding,2,int,class CMemAllocAllocator>,struct CRenderBufferBinding,int>::AddMultipleToTail
 CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::AddPage
-CUtlRBTree<struct CUtlOrderedMapBase<class CRenderMesh const *,class CMeshRayTrace *,class CDefLess<class CRenderMesh const *>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CRenderMesh const *,class CMeshRayTrace *,class CDefLess<class CRenderMesh const *>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CRenderMesh const *,class CMeshRayTrace *,class CDefLess<class CRenderMesh const *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 Cables
 Cannot allocate abstract class
 Cannot deallocate abstract class
 Class does not allow allocation from its schema binding
 Class does not allow deallocation from its schema binding
 Control block error for '%s'\n
+Cylinder - Centered (SLOW PERF)
+Cylinder - Ground (SLOW PERF)
 D16_UNORM
 D24_UNORM_S8_UINT
 D32_FLOAT
@@ -248,10 +254,12 @@ Data_Branch2yz
 DisableLODBlending
 DistanceFieldList_t
 DrawIndexedTriangles(145): 
+DualHull
+EnsureCapacity
 Expected an array with two elements when loading a std::pair.
 FORCE_UINT
-Failed to allocate an instance of a class
-Failed to allocate an instance of class '%s'
+Failed to allocate an instance of a class of type '%s'
+Failed to allocate an instance of class '%s' (type '%s')
 Failed to call CBaseIntrospectedToKV3TypeManager::Init
 Failed to load distance field KV3 data.\n
 FoliageAnimation
@@ -275,6 +283,7 @@ LoadModelSyncNoExtrefs - Model is incompatible version\n
 MATERIAL_ATTRIBUTE:
 MAlternateSemanticName
 MAtomicTransfersAsPlainString
+MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MFgdHelper
 MIsStringAndTokenType
 MKV3TransferName
@@ -285,6 +294,7 @@ MPropertySuppressField
 Mesh needs recompiling: '%s' (invalid version: %d)\nBrowse to the corresponding model in asset browser, right click and select Full Recompile.
 MeshSystem
 MeshSystem/UseIndexBufferPool
+MeshSystem/UseVertexBufferPool
 Missing buffers for mesh (%s: %d)\n
 Missing data block for mesh (%s: %d)\n
 Missing vbib block for mesh (%s: %d)\n
@@ -311,7 +321,6 @@ OverlayProjectionDirection
 PARENT
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
-PackedBlobNormal
 ParentAttachmentName()
 Particles
 PerVertexLighting
@@ -378,10 +387,12 @@ R8_SNORM
 R8_TYPELESS
 R8_UNORM
 R9G9B9E5_SHAREDEXP
+RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RESOURCE_TYPE_MODEL
 RESOURCE_TYPE_MORPHSET_INTERNAL
 RESOURCE_TYPE_RENDERMESH_INTERNAL
 ROTATION
+R\fpL
 RayTracingEnvironment::RefineNode
 RayTracingEnvironment::RefineNodeJob
 Rejecting load for legacy model: '%s'\n
@@ -397,10 +408,17 @@ Tried to load resource reference '%s' from a value without a resource reference 
 Trying to override a material with an invalid draw call index\n
 Trying to override the same draw call with two different materials!\nOnly the last override will be set!\n
 TypeManager
+UPSCALER_AMD_FSR2
+UPSCALER_AMD_FSR3
+UPSCALER_COUNT
+UPSCALER_INTEL_XESS
+UPSCALER_NONE
+UPSCALER_NVIDIA_DLSS
 USAGE: print_model_bind_pose <vmdl_name> [bone_name]\n
 Unable to load tools vb block (%s: %d)\n
 Unable to read resource file %s!\n
 Untested code path - Morph layers without morphset/flex rules. Will try to map model flex controllers directly to cloth morph layers
+UpscalerType_t
 VModelError
 VectorAligned
 VertexElementAnnotation
@@ -414,6 +432,7 @@ Whether to support legacy (pre-modeldoc) models
 X24_TYPELESS_G8_UINT
 X32_TYPELESS_G8X24_UINT
 [idx=%d] "%s"
+\tV_ZSTD_decompress
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 _VertexGenericIntegerData
 acosf
@@ -422,7 +441,6 @@ anim_data_block
 anim_graph_resource
 bOwnVBAndIB == m_bOwnVBAndIB && m_pFixedMeshDataOverride
 bShaderBlended
-b\vP\n0
 bentnormal
 blendindices
 blendweight
@@ -439,6 +457,8 @@ compressedtangentframe
 curvature
 data_block
 distancefield_data_block
+eCenteredCylinder
+eGroundCylinder
 embedded_animation
 embedded_distancefield
 embedded_meshes
@@ -458,6 +478,7 @@ interactive
 legacy_models_supported
 lowprecisionuv
 lowprecisionuv1
+m_BoneMergeLinks
 m_Format
 m_Stops
 m_attachments
@@ -478,20 +499,32 @@ m_bUseShadowFastPath
 m_bounds
 m_distanceFields
 m_eRbfType
+m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
+m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
+m_fEmissiveFactor
 m_flGridCellSize
 m_flMaxQuantizedDistance
 m_flSurfaceBias
 m_hitboxsets
 m_influenceFlags
+m_materialGroupToken
 m_morphSet
 m_nBodyGroupChoice
 m_nBodyGroupIndex
+m_nChildNode
 m_nParentBoneNameHash
+m_nParentHash
 m_nResX
 m_nResY
 m_nResZ
+m_nSrcDrawIndex
+m_nVertexEmissiveFormat
+m_nVertexEmissiveOffset
+m_nVertexEmissiveStride
+m_nVertexEmissiveVB
 m_quantizedData
 m_rbfParameters
+m_rootBvhNodes
 materialgroup_driven_morph_list
 materialgroup_name
 materials/tools/show_skeleton.vmat
@@ -517,18 +550,19 @@ placementbone
 posxyz
 print_model_bind_pose
 projectedDecal
+r\vpL
 reload_model
 resourcesystem
 root
 seqgroup_data_block
 slow
 std::pair
-tBSheetSequenceIntegerId_t
+tBRenderBufferFlags_t
 tangent
 tangentu_signv
 texcoord
-tools.light_volume_boundary
 tools.reference_notrace
+tools.toolsmaterial
 tools_vb_block
 vbib_block
 very_fast

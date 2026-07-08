@@ -686,6 +686,9 @@
 		[
 			"sounds/weapons/bizon/bizon_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_bizon.BoltForward = 
 	{
@@ -739,6 +742,9 @@
 		[
 			"sounds/weapons/bizon/bizon_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_bizon.Clipin = 
 	{
@@ -792,6 +798,9 @@
 		[
 			"sounds/weapons/bizon/bizon_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_bizon.Clipout = 
 	{
@@ -845,6 +854,9 @@
 		[
 			"sounds/weapons/bizon/bizon_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_bizon.Draw = 
 	{
@@ -1289,6 +1301,9 @@
 		[
 			"sounds/weapons/g3sg1/g3sg1_slideback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_G3SG1.SlideForward = 
 	{
@@ -1341,6 +1356,9 @@
 		[
 			"sounds/weapons/g3sg1/g3sg1_slideforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_G3SG1.Clipout = 
 	{
@@ -1394,6 +1412,9 @@
 		[
 			"sounds/weapons/g3sg1/g3sg1_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_G3SG1.Clipin = 
 	{
@@ -1447,6 +1468,9 @@
 		[
 			"sounds/weapons/g3sg1/g3sg1_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_G3SG1.Draw = 
 	{
@@ -1889,6 +1913,9 @@
 		[
 			"sounds/weapons/glock18/glock_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Glock.Clipin = 
 	{
@@ -1942,6 +1969,9 @@
 		[
 			"sounds/weapons/glock18/glock_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Glock.Draw = 
 	{
@@ -2049,6 +2079,9 @@
 		[
 			"sounds/weapons/glock18/glock_sliderelease.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Glock.Slideback = 
 	{
@@ -2102,6 +2135,9 @@
 		[
 			"sounds/weapons/glock18/glock_slideback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_GalilAR.Single = 
 	{
@@ -2321,6 +2357,9 @@
 		[
 			"sounds/weapons/galilar/galil_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_GalilAR.Clipin = 
 	{
@@ -2373,6 +2412,9 @@
 		[
 			"sounds/weapons/magazine_slide_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_GalilAR.Draw = 
 	{
@@ -2480,6 +2522,9 @@
 		[
 			"sounds/weapons/galilar/galil_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_GalilAR.BoltForward = 
 	{
@@ -2534,6 +2579,9 @@
 		[
 			"sounds/weapons/galilar/galil_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_GalilAR.WeaponMove1 = 
 	{
@@ -4551,6 +4599,9 @@
 		[
 			"sounds/weapons/mag7/mag7_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Mag7.Clipout = 
 	{
@@ -4604,6 +4655,9 @@
 		[
 			"sounds/weapons/mag7/mag7_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Mag7.Draw = 
 	{
@@ -5980,6 +6034,9 @@
 		[
 			"sounds/weapons/mac10/mac10_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MAC10.Clipin = 
 	{
@@ -6033,6 +6090,9 @@
 		[
 			"sounds/weapons/mac10/mac10_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MAC10.Draw = 
 	{
@@ -6140,6 +6200,9 @@
 		[
 			"sounds/weapons/mac10/mac10_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MAC10.BoltForward = 
 	{
@@ -6193,6 +6256,9 @@
 		[
 			"sounds/weapons/mac10/mac10_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MAC10.WeaponMove1 = 
 	{
@@ -6513,6 +6579,9 @@
 		[
 			"sounds/weapons/mp5/mp5_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP5.Clipin = 
 	{
@@ -6566,6 +6635,9 @@
 		[
 			"sounds/weapons/mp5/mp5_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP5.Draw = 
 	{
@@ -6673,6 +6745,9 @@
 		[
 			"sounds/weapons/mp5/mp5_slideback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP5.SlideForward = 
 	{
@@ -6726,6 +6801,9 @@
 		[
 			"sounds/weapons/mp5/mp5_slideforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP5.WeaponMove1 = 
 	{
@@ -6947,6 +7025,9 @@
 		[
 			"sounds/weapons/mp5/mp5_slideforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP7.Single = 
 	{
@@ -7168,6 +7249,9 @@
 		[
 			"sounds/weapons/mp7/mp7_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP7.Clipin = 
 	{
@@ -7221,6 +7305,9 @@
 		[
 			"sounds/weapons/mp7/mp7_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP7.Draw = 
 	{
@@ -7328,6 +7415,9 @@
 		[
 			"sounds/weapons/mp7/mp7_slideback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP7.SlideForward = 
 	{
@@ -7381,6 +7471,9 @@
 		[
 			"sounds/weapons/mp7/mp7_slideforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP7.WeaponMove1 = 
 	{
@@ -7771,6 +7864,9 @@
 		[
 			"sounds/weapons/mp9/mp9_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP9.Clipin = 
 	{
@@ -7824,6 +7920,9 @@
 		[
 			"sounds/weapons/mp9/mp9_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP9.Draw = 
 	{
@@ -7931,6 +8030,9 @@
 		[
 			"sounds/weapons/mp9/mp9_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP9.BoltForward = 
 	{
@@ -7984,6 +8086,9 @@
 		[
 			"sounds/weapons/mp9/mp9_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP9.WeaponMove1 = 
 	{
@@ -8372,6 +8477,9 @@
 		[
 			"sounds/weapons/p250/p250_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P250.Clipin = 
 	{
@@ -8425,6 +8533,9 @@
 		[
 			"sounds/weapons/p250/p250_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P250.Draw = 
 	{
@@ -8532,6 +8643,9 @@
 		[
 			"sounds/weapons/p250/p250_sliderelease.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P250.Slideback = 
 	{
@@ -8585,6 +8699,9 @@
 		[
 			"sounds/weapons/p250/p250_slideback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_CZ75A.Single = 
 	{
@@ -8975,6 +9092,9 @@
 		[
 			"sounds/weapons/hkp2000/hkp2000_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_hkp2000.Clipin = 
 	{
@@ -9028,6 +9148,9 @@
 		[
 			"sounds/weapons/hkp2000/hkp2000_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_hkp2000.Sliderelease = 
 	{
@@ -9081,6 +9204,9 @@
 		[
 			"sounds/weapons/hkp2000/hkp2000_sliderelease.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_hkp2000.Slideback = 
 	{
@@ -9134,6 +9260,9 @@
 		[
 			"sounds/weapons/hkp2000/hkp2000_slideback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_hkp2000.Draw = 
 	{
@@ -9407,6 +9536,9 @@
 		[
 			"sounds/weapons/tec9/tec9_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_tec9.Clipin = 
 	{
@@ -9460,6 +9592,9 @@
 		[
 			"sounds/weapons/tec9/tec9_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_tec9.Draw = 
 	{
@@ -9567,6 +9702,9 @@
 		[
 			"sounds/weapons/tec9/tec9_boltpull.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_tec9.Boltrelease = 
 	{
@@ -9620,6 +9758,9 @@
 		[
 			"sounds/weapons/tec9/tec9_boltrelease.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P90.Single = 
 	{
@@ -9844,6 +9985,9 @@
 		[
 			"sounds/weapons/p90/p90_cliprelease.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P90.Clipout = 
 	{
@@ -9897,6 +10041,9 @@
 		[
 			"sounds/weapons/p90/p90_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P90.Clipin = 
 	{
@@ -9950,6 +10097,9 @@
 		[
 			"sounds/weapons/p90/p90_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P90.Draw = 
 	{
@@ -10057,6 +10207,9 @@
 		[
 			"sounds/weapons/p90/p90_cliphit.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P90.BoltBack = 
 	{
@@ -10110,6 +10263,9 @@
 		[
 			"sounds/weapons/p90/p90_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P90.BoltForward = 
 	{
@@ -10163,6 +10319,9 @@
 		[
 			"sounds/weapons/p90/p90_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P90.WeaponMove1 = 
 	{
@@ -10550,6 +10709,9 @@
 		[
 			"sounds/weapons/ssg08/ssg08_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SSG08.Clipout = 
 	{
@@ -10603,6 +10765,9 @@
 		[
 			"sounds/weapons/ssg08/ssg08_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SSG08.Draw = 
 	{
@@ -10729,6 +10894,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SSG08.BoltForward = 
 	{
@@ -10789,6 +10957,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SSG08.ClipHit = 
 	{
@@ -10842,6 +11013,9 @@
 		[
 			"sounds/weapons/ssg08/ssg08_hit_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SSG08.WeaponMove1 = 
 	{
@@ -11345,6 +11519,9 @@
 		[
 			"sounds/weapons/sg556/sg556_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_sg556.Clipin = 
 	{
@@ -11398,6 +11575,9 @@
 		[
 			"sounds/weapons/sg556/sg556_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SG556.Draw = 
 	{
@@ -11505,6 +11685,9 @@
 		[
 			"sounds/weapons/sg556/sg556_cliphit.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_sg556.BoltBack = 
 	{
@@ -11558,6 +11741,9 @@
 		[
 			"sounds/weapons/sg556/sg556_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_sg556.BoltForward = 
 	{
@@ -11611,6 +11797,9 @@
 		[
 			"sounds/weapons/sg556/sg556_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_sg556.WeaponMove1 = 
 	{
@@ -11998,6 +12187,9 @@
 		[
 			"sounds/weapons/fiveseven/fiveseven_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FiveSeven.Clipin = 
 	{
@@ -12051,6 +12243,9 @@
 		[
 			"sounds/weapons/fiveseven/fiveseven_clipin_02.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FiveSeven.Draw = 
 	{
@@ -12158,6 +12353,9 @@
 		[
 			"sounds/weapons/fiveseven/fiveseven_sliderelease.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FiveSeven.Slideback = 
 	{
@@ -12211,6 +12409,9 @@
 		[
 			"sounds/weapons/fiveseven/fiveseven_slideback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_UMP45.Single = 
 	{
@@ -12430,6 +12631,9 @@
 		[
 			"sounds/weapons/ump45/ump45_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_UMP45.Clipin = 
 	{
@@ -12483,6 +12687,9 @@
 		[
 			"sounds/weapons/ump45/ump45_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_UMP45.Draw = 
 	{
@@ -12590,6 +12797,9 @@
 		[
 			"sounds/weapons/ump45/ump45_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_UMP45.BoltForward = 
 	{
@@ -12643,6 +12853,9 @@
 		[
 			"sounds/weapons/ump45/ump45_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_UMP45.WeaponMove1 = 
 	{
@@ -13156,6 +13369,9 @@
 		[
 			"sounds/weapons/usp/usp_clipout_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_USP.Clipin = 
 	{
@@ -13209,6 +13425,9 @@
 		[
 			"sounds/weapons/usp/usp_clipin_02.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_USP.Draw = 
 	{
@@ -13315,6 +13534,9 @@
 		[
 			"sounds/weapons/usp/usp_sliderelease_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_USP.Slideback = 
 	{
@@ -13368,6 +13590,9 @@
 		[
 			"sounds/weapons/usp/usp_slideback_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_USP.Slideback2 = 
 	{
@@ -13421,6 +13646,9 @@
 		[
 			"sounds/weapons/usp/usp_slideback_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_USP.SilencerScrewOnStart = 
 	{
@@ -14266,6 +14494,9 @@
 		[
 			"sounds/weapons/m4a1/m4a1_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_M4A1.Clipin = 
 	{
@@ -14319,6 +14550,9 @@
 		[
 			"sounds/weapons/m4a1/m4a1_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_M4A1.BoltBack = 
 	{
@@ -14371,6 +14605,9 @@
 		[
 			"sounds/weapons/m4a1/m4a1_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_M4A1S.BoltBack = 
 	{
@@ -14423,6 +14660,9 @@
 		[
 			"sounds/weapons/m4a1/m4a1_silencer_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_M4A1.BoltForward = 
 	{
@@ -14475,6 +14715,9 @@
 		[
 			"sounds/weapons/m4a1/m4a1_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_M4A1S.BoltForward = 
 	{
@@ -14527,6 +14770,9 @@
 		[
 			"sounds/weapons/m4a1/m4a1_silencer_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_M4A1.Draw = 
 	{
@@ -14633,6 +14879,9 @@
 		[
 			"sounds/weapons/m4a1/m4a1_cliphit.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_M4A1.SilencerWeaponMove1 = 
 	{
@@ -15554,6 +15803,9 @@
 		[
 			"sounds/weapons/scar20/scar20_clipout_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SCAR20.Clipin = 
 	{
@@ -15606,6 +15858,9 @@
 		[
 			"sounds/weapons/scar20/scar20_clipin_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SCAR20.ClipTouch = 
 	{
@@ -15658,6 +15913,9 @@
 		[
 			"sounds/weapons/scar20/scar20_cliptouch.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SCAR20.Draw = 
 	{
@@ -15763,6 +16021,9 @@
 		[
 			"sounds/weapons/scar20/scar20_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SCAR20.BoltForward = 
 	{
@@ -15815,6 +16076,9 @@
 		[
 			"sounds/weapons/scar20/scar20_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SCAR20.WeaponMove1 = 
 	{
@@ -16270,6 +16534,9 @@
 		[
 			"sounds/weapons/elite/elite_leftclipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_ELITE.Clipout = 
 	{
@@ -16323,6 +16590,9 @@
 		[
 			"sounds/weapons/elite/elite_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_ELITE.Sliderelease = 
 	{
@@ -16379,6 +16649,9 @@
 			"sounds/weapons/elite/elite_sliderelease.vsnd",
 			"sounds/weapons/elite/elite_sliderelease_02.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_ELITE.Rclipin = 
 	{
@@ -16447,6 +16720,9 @@
 		[
 			"sounds/weapons/elite/elite_rightclipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_ELITE.Draw = 
 	{
@@ -17045,6 +17321,9 @@
 		[
 			"sounds/weapons/famas/famas_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FAMAS.Clipin = 
 	{
@@ -17098,6 +17377,9 @@
 		[
 			"sounds/weapons/famas/famas_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FAMAS.ClipHit = 
 	{
@@ -17162,6 +17444,9 @@
 		[
 			"sounds/weapons/famas/famas_cliphit.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FAMAS.Draw = 
 	{
@@ -17269,6 +17554,9 @@
 		[
 			"sounds/weapons/famas/famas_boltback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FAMAS.BoltForward = 
 	{
@@ -17323,6 +17611,9 @@
 		[
 			"sounds/weapons/famas/famas_boltforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FAMAS.WeaponMove1 = 
 	{
@@ -17835,6 +18126,9 @@
 		[
 			"",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AUG.Boltrelease = 
 	{
@@ -17892,6 +18186,9 @@
 		[
 			"",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AUG.Clipout = 
 	{
@@ -17945,6 +18242,9 @@
 		[
 			"sounds/weapons/aug/aug_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AUG.Clipin = 
 	{
@@ -17998,6 +18298,9 @@
 		[
 			"sounds/weapons/aug/aug_clipin_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AUG.Draw = 
 	{
@@ -18105,6 +18408,9 @@
 		[
 			"sounds/weapons/aug/aug_hit_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AUG.WeaponMove1 = 
 	{
@@ -18517,6 +18823,9 @@
 		[
 			"sounds/weapons/awp/awp_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AWP.Cliphit = 
 	{
@@ -18570,6 +18879,9 @@
 		[
 			"sounds/weapons/awp/awp_cliphit.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AWP.Clipout = 
 	{
@@ -18623,6 +18935,9 @@
 		[
 			"sounds/weapons/awp/awp_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AWP.Draw = 
 	{
@@ -18735,6 +19050,9 @@
 			"meta",
 			"",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AWP.BoltForward = 
 	{
@@ -18793,6 +19111,9 @@
 			"meta",
 			"",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AWP.WeaponMove1 = 
 	{
@@ -19182,6 +19503,9 @@
 		[
 			"sounds/weapons/deagle/de_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_DEagle.Clipin = 
 	{
@@ -19235,6 +19559,9 @@
 		[
 			"sounds/weapons/magazine_slide_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_DEagle.Draw = 
 	{
@@ -19342,6 +19669,9 @@
 		[
 			"sounds/weapons/deagle/de_slideback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_DEagle.Slideforward = 
 	{
@@ -19395,6 +19725,9 @@
 		[
 			"sounds/weapons/deagle/de_slideforward.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_DEagle.WeaponMove1 = 
 	{
@@ -20402,6 +20735,9 @@
 		[
 			"sounds/weapons/ak47/ak47_boltpull_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AK47.Clipin = 
 	{
@@ -20468,6 +20804,9 @@
 		[
 			"sounds/weapons/magazine_slide_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AK47.Clipout = 
 	{
@@ -20534,6 +20873,9 @@
 		[
 			"sounds/weapons/ak47/ak47_clipout_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AK47.WeaponMove1 = 
 	{
@@ -22715,6 +23057,9 @@
 		[
 			"sounds/weapons/clipempty_rifle.vsnd",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Default.ClipEmpty_Pistol = 
 	{
@@ -22781,6 +23126,9 @@
 		[
 			"sounds/weapons/clipempty_pistol.vsnd",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	BaseGrenade.Explode = 
 	{
@@ -26761,6 +27109,9 @@
 		[
 			"sounds/weapons/revolver/revolver_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Revolver.Clipin = 
 	{
@@ -26814,6 +27165,9 @@
 		[
 			"sounds/weapons/revolver/revolver_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Revolver.Draw = 
 	{
@@ -28281,6 +28635,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_AUG.Boltpull_Q = 
 	{
@@ -28338,6 +28693,7 @@
 		[
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_AUG.Boltrelease_Q = 
 	{
@@ -28395,6 +28751,7 @@
 		[
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_AWP.BoltBack_Q = 
 	{
@@ -28453,6 +28810,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_AWP.BoltForward_Q = 
 	{
@@ -28511,6 +28869,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_bizon.BoltBack_Q = 
 	{
@@ -28569,6 +28928,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_bizon.BoltForward_Q = 
 	{
@@ -28627,6 +28987,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_CZ.Slideback = 
 	{
@@ -28680,6 +29041,9 @@
 		[
 			"sounds/weapons/p250/p250_slideback.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_CZ.Sliderelease = 
 	{
@@ -28733,6 +29097,9 @@
 		[
 			"sounds/weapons/p250/p250_sliderelease.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_CZ.Clipin = 
 	{
@@ -28786,6 +29153,9 @@
 		[
 			"sounds/weapons/cz75a/cz75_clipin_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_CZ.Draw = 
 	{
@@ -28893,6 +29263,9 @@
 		[
 			"sounds/weapons/p250/p250_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_CZ.Clipin_Q = 
 	{
@@ -28951,6 +29324,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_CZ.Slideback_Q = 
 	{
@@ -29009,6 +29385,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_CZ.Sliderelease_Q = 
 	{
@@ -29067,6 +29446,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_CZ.Clipout2 = 
 	{
@@ -29120,6 +29502,9 @@
 		[
 			"sounds/weapons/deagle/de_clipout.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_ELITE.Sliderelease_Q = 
 	{
@@ -29181,6 +29566,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_FAMAS.BoltBack_Q = 
 	{
@@ -29239,6 +29627,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_FAMAS.BoltForward_Q = 
 	{
@@ -29297,6 +29686,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_FiveSeven.Slideback_Q = 
 	{
@@ -29355,6 +29745,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_FiveSeven.Sliderelease_Q = 
 	{
@@ -29413,6 +29806,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_G3SG1.SlideBack_Q = 
 	{
@@ -29470,6 +29866,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_G3SG1.SlideForward_Q = 
 	{
@@ -29527,6 +29926,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_GalilAR.BoltBack_Q = 
 	{
@@ -29585,6 +29987,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_GalilAR.BoltForward_Q = 
 	{
@@ -29643,6 +30046,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_Glock.Slideback_Q = 
 	{
@@ -29701,6 +30105,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_Glock.Sliderelease_Q = 
 	{
@@ -29759,6 +30166,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_hkp2000.Slideback_Q = 
 	{
@@ -29817,6 +30227,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_hkp2000.Sliderelease_Q = 
 	{
@@ -29875,6 +30288,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_M4A1S.BoltForward_Q = 
 	{
@@ -29932,6 +30348,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_M4A1S.BoltBack_Q = 
 	{
@@ -29989,6 +30406,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_M4A1.BoltBack_Q = 
 	{
@@ -30046,6 +30464,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_M4A1.BoltForward_Q = 
 	{
@@ -30103,6 +30522,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_M249.Pump_Q = 
 	{
@@ -30157,6 +30577,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_MAC10.BoltBack_Q = 
 	{
@@ -30215,6 +30636,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_MAC10.BoltForward_Q = 
 	{
@@ -30273,6 +30695,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_Mag7.PumpBack_Q = 
 	{
@@ -30327,6 +30750,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_Mag7.PumpForward_Q = 
 	{
@@ -30380,6 +30804,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_MP5.SlideForward_Q = 
 	{
@@ -30438,6 +30863,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_MP7.SlideForward_Q = 
 	{
@@ -30496,6 +30924,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_MP7.Slideback_Q = 
 	{
@@ -30554,6 +30985,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_MP9.BoltBack_Q = 
 	{
@@ -30612,6 +31046,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_MP9.BoltForward_Q = 
 	{
@@ -30670,6 +31105,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_Negev.Pump_Q = 
 	{
@@ -30724,6 +31160,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_Nova.Pump_Q = 
 	{
@@ -30778,6 +31215,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_P90.BoltBack_Q = 
 	{
@@ -30836,6 +31274,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_P90.BoltForward_Q = 
 	{
@@ -30894,6 +31333,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_P250.Slideback_Q = 
 	{
@@ -30952,6 +31392,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_P250.Sliderelease_Q = 
 	{
@@ -31010,6 +31453,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_Revolver.Siderelease_Q = 
 	{
@@ -31064,6 +31510,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_Revolver.Sideback_Q = 
 	{
@@ -31118,6 +31565,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_Revolver.Clipin_Q = 
 	{
@@ -31176,6 +31624,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Revolver.BarrelRoll_Q = 
 	{
@@ -31228,6 +31679,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_Sawedoff.Pump_Q = 
 	{
@@ -31282,6 +31734,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_SCAR20.BoltBack_Q = 
 	{
@@ -31339,6 +31792,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_SCAR20.BoltForward_Q = 
 	{
@@ -31396,6 +31850,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_SSG08.BoltBack_Q = 
 	{
@@ -31456,6 +31911,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_SSG08.BoltForward_Q = 
 	{
@@ -31516,6 +31972,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_sg556.BoltBack_Q = 
 	{
@@ -31574,6 +32031,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_sg556.BoltForward_Q = 
 	{
@@ -31632,6 +32090,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_tec9.Boltpull_Q = 
 	{
@@ -31690,6 +32149,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_tec9.Boltrelease_Q = 
 	{
@@ -31748,6 +32208,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_UMP45.BoltBack_Q = 
 	{
@@ -31806,6 +32267,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_UMP45.BoltForward_Q = 
 	{
@@ -31864,6 +32326,7 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
 	}
 	Weapon_USP.Sliderelease_Q = 
 	{
@@ -31922,6 +32385,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	Weapon_USP.Slideback_Q = 
 	{
@@ -31980,6 +32446,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = false
+		suppression_volume_multiplier = 0.1
+		suppression_falloff_multiplier = 0.4
 	}
 	C4.10Seconds = 
 	{
@@ -35675,6 +36144,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_CZ.AddAmmo = 
 	{
@@ -35728,6 +36200,9 @@
 		[
 			"sounds/weapons/cz75a/cz75_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_CZ.ClipinSlide = 
 	{
@@ -35781,6 +36256,9 @@
 		[
 			"sounds/weapons/magazine_slide_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_DEagle.AddAmmo = 
 	{
@@ -35834,6 +36312,9 @@
 		[
 			"sounds/weapons/deagle/deagle_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_bizon.AddAmmo = 
 	{
@@ -35887,6 +36368,9 @@
 		[
 			"sounds/weapons/bizon/bizon_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FAMAS.AddAmmo = 
 	{
@@ -35940,6 +36424,9 @@
 		[
 			"sounds/weapons/famas/famas_addammo.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MAC10.AddAmmo = 
 	{
@@ -35993,6 +36480,9 @@
 		[
 			"sounds/weapons/mac10/mac10_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MAC10.Clip.Slide = 
 	{
@@ -36046,6 +36536,9 @@
 		[
 			"sounds/weapons/magazine_slide_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP7.AddAmmo = 
 	{
@@ -36099,6 +36592,9 @@
 		[
 			"sounds/weapons/mp7/mp7_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP9.AddAmmo = 
 	{
@@ -36152,6 +36648,9 @@
 		[
 			"sounds/weapons/mp9/mp9_addammo.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP9.Clip.Slide = 
 	{
@@ -36205,6 +36704,9 @@
 		[
 			"sounds/weapons/magazine_slide_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_tec9.AddAmmo = 
 	{
@@ -36258,6 +36760,9 @@
 		[
 			"sounds/weapons/tec9/tec9_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_UMP45.AddAmmo = 
 	{
@@ -36311,6 +36816,9 @@
 		[
 			"sounds/weapons/ump45/ump45_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP5.AddAmmo = 
 	{
@@ -36364,6 +36872,9 @@
 		[
 			"sounds/weapons/mp5/mp5_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_MP5.Hit = 
 	{
@@ -36604,6 +37115,9 @@
 		[
 			"sounds/weapons/ak47/ak47_addammo_02.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_GalilAR.AddAmmo = 
 	{
@@ -36656,6 +37170,9 @@
 		[
 			"sounds/weapons/galilar/galil_clipin.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_M4A1.AddAmmo = 
 	{
@@ -36709,6 +37226,9 @@
 		[
 			"sounds/weapons/m4a1/m4a1_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Mag7.WeaponMove = 
 	{
@@ -36819,6 +37339,9 @@
 		[
 			"sounds/weapons/mag7/mag7_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Nova.AddAmmo = 
 	{
@@ -36875,6 +37398,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_Sawedoff.AddAmmo = 
 	{
@@ -36931,6 +37457,9 @@
 			"meta",
 			"localplayeronly",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_XM1014.Grab = 
 	{
@@ -37036,6 +37565,9 @@
 		[
 			"sounds/weapons/g3sg1/g3sg1_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SCAR20.Handles = 
 	{
@@ -37145,6 +37677,9 @@
 		[
 			"sounds/weapons/scar20/scar20_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SCAR20.Hit = 
 	{
@@ -37255,6 +37790,9 @@
 		[
 			"sounds/weapons/ssg08/ssg08_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_SSG08.Clipin.Slide = 
 	{
@@ -37308,6 +37846,9 @@
 		[
 			"sounds/weapons/magazine_slide_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_sg556.AddAmmo = 
 	{
@@ -37361,6 +37902,9 @@
 		[
 			"sounds/weapons/sg556/sg556_cliphit.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_AUG.AddAmmo = 
 	{
@@ -37414,6 +37958,9 @@
 		[
 			"sounds/weapons/aug/aug_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_ELITE.Clipin = 
 	{
@@ -37470,6 +38017,9 @@
 			"sounds/weapons/elite/elites_clipin_09.vsnd",
 			"sounds/weapons/elite/elites_clipin_10.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_ELITE.Clipin.Slide = 
 	{
@@ -37523,6 +38073,9 @@
 		[
 			"sounds/weapons/magazine_slide_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_ELITE.AddAmmo = 
 	{
@@ -37572,6 +38125,9 @@
 		[
 			"sounds/weapons/elite/elite_taunt_tap.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_FiveSeven.AddAmmo = 
 	{
@@ -37624,6 +38180,9 @@
 		[
 			"sounds/weapons/fiveseven/fiveseven_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_hkp2000.AddAmmo = 
 	{
@@ -37677,6 +38236,9 @@
 		[
 			"sounds/weapons/hkp2000/hkp2000_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_P250.AddAmmo = 
 	{
@@ -37730,6 +38292,9 @@
 		[
 			"sounds/weapons/p250/p250_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Weapon_USP.AddAmmo = 
 	{
@@ -37783,6 +38348,9 @@
 		[
 			"sounds/weapons/usp/usp_addammo_01.vsnd",
 		]
+		suppression_enable = true
+		suppression_volume_multiplier = 0.07
+		suppression_falloff_multiplier = 0.2
 	}
 	Knife.Cord.Flip.Loop = 
 	{
@@ -46220,6 +46788,316 @@
 		[
 			"meta",
 			"localplayeronly",
+		]
+	}
+	c4.shockwave.boom = 
+	{
+		type = "csgo_mega"
+		preload_vsnds = true
+		volume = 1.0
+		pitch = 1.0
+		use_distance_volume_mapping_curve = true
+		mixgroup = "Explosions"
+		use_distance_unfiltered_stereo_mapping_curve = true
+		reverb_wet = 0.0
+		occlusion_intensity = 0.0
+		display_broadcast = true
+		reverb_source_wet = 0.0
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 20.0 ]
+		occlusion_frequency_scale = 0.0
+		use_fadetime_volume_mapping_curve = false
+		restrict_source_reverb = false
+		block_matching_events = true
+		block_match_entity = true
+		block_duration = 0.5
+		block_distance = 40.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				556.83014, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1434.6534, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 0.727273, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.724138, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/weapons/c4/c4_thump_01.vsnd",
+		]
+		set_mixlayer_amount_enable = true
+		set_mixlayer_layer = "Shockwave"
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
+			],
+			[
+				0.387413, 1.0, 0.0, -0.381317,
+				0.0, 0.0,
+			],
+			[
+				3.009901, 0.0, -0.104825, -0.104825,
+				2.0, 3.0,
+			],
+		]
+		enable_child_events = true
+		soundevent_01 = 
+		[
+			"c4.explode.close",
+		]
+	}
+	c4.shockwave.hit = 
+	{
+		type = "csgo_mega"
+		preload_vsnds = true
+		volume = 1.0
+		pitch = 1.0
+		use_distance_volume_mapping_curve = true
+		mixgroup = "Explosions"
+		use_distance_unfiltered_stereo_mapping_curve = true
+		reverb_wet = 0.0
+		occlusion_intensity = 0.0
+		display_broadcast = true
+		reverb_source_wet = 0.0
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 20.0 ]
+		occlusion_frequency_scale = 0.0
+		use_fadetime_volume_mapping_curve = false
+		restrict_source_reverb = false
+		block_matching_events = true
+		block_match_entity = true
+		block_duration = 0.5
+		block_distance = 40.0
+		set_mixlayer_amount_enable = false
+		distance_volume_mapping_curve = 
+		[
+			[
+				579.40594, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1100.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 0.0, 1.953317, 1.953317,
+				3.0, 1.0,
+			],
+			[
+				0.51195, 1.0, 0.391473, 0.391473,
+				1.0, 1.0,
+			],
+			[
+				2.554456, 1.0, 0.0, -0.397638,
+				0.0, 0.0,
+			],
+			[
+				5.069307, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/weapons/c4/c4_shockwave_hit_02.vsnd",
+			"sounds/weapons/c4/c4_shockwave_hit_03.vsnd",
+		]
+		set_mixlayer_layer = "Shockwave"
+		enable_child_events = true
+		soundevent_01 = 
+		[
+			"c4.shockwave.debris",
+		]
+	}
+	c4.shockwave.debris = 
+	{
+		type = "csgo_mega"
+		preload_vsnds = true
+		volume = 0.1
+		pitch = 1.0
+		use_distance_volume_mapping_curve = true
+		mixgroup = "Explosions"
+		use_distance_unfiltered_stereo_mapping_curve = true
+		reverb_wet = 1.0
+		occlusion_intensity = 0.0
+		display_broadcast = true
+		reverb_source_wet = 0.0
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 20.0 ]
+		occlusion_frequency_scale = 0.0
+		use_fadetime_volume_mapping_curve = false
+		restrict_source_reverb = false
+		block_matching_events = true
+		block_match_entity = true
+		block_duration = 0.5
+		block_distance = 40.0
+		set_mixlayer_amount_enable = false
+		set_mixlayer_layer = ""
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1100.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_mixlayer_amount_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				3.0, 1.0,
+			],
+			[
+				2.554456, 1.0, 0.0, -0.397638,
+				0.0, 0.0,
+			],
+			[
+				5.069307, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/weapons/c4/c4_shockwave_debris_01.vsnd",
+			"sounds/weapons/c4/c4_shockwave_debris_02.vsnd",
+			"sounds/weapons/c4/c4_shockwave_debris_03.vsnd",
+			"sounds/weapons/c4/c4_shockwave_debris_04.vsnd",
+		]
+		delay = 0.1
+	}
+	c4.explode.close = 
+	{
+		type = "csgo_mega"
+		preload_vsnds = true
+		volume = 1.0
+		pitch = 1.0
+		use_distance_volume_mapping_curve = true
+		mixgroup = "Explosions"
+		use_distance_unfiltered_stereo_mapping_curve = true
+		reverb_wet = 0.0
+		occlusion_intensity = 0.0
+		display_broadcast = true
+		reverb_source_wet = 0.0
+		distance_effect_mix = 0.0
+		position_offset = [ 0.0, 0.0, 20.0 ]
+		occlusion_frequency_scale = 0.0
+		use_fadetime_volume_mapping_curve = false
+		restrict_source_reverb = false
+		block_matching_events = true
+		block_match_entity = true
+		block_duration = 0.5
+		block_distance = 40.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				233.06932, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1500.0, 0.0, -0.000594, -0.000594,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				130.69307, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.507837, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/weapons/c4/c4_explode_close_01.vsnd",
 		]
 	}
 }

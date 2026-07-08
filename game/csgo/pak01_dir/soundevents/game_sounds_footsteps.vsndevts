@@ -3440,7 +3440,7 @@
 		use_distance_volume_mapping_curve = true
 		volume_random_min = 0.0
 		volume_random_max = 0.0
-		volume = 0.3
+		volume = 1.0
 		pitch = 0.98
 		pitch_random_min = -0.07
 		pitch_random_max = 0.01
@@ -3532,7 +3532,7 @@
 		pitch_random_max = 0.01
 		use_fadetime_volume_mapping_curve = false
 		block_distance = 0.0
-		enable_child_events = true
+		enable_child_events = false
 		reverb_wet = 1.0
 		use_world_position = true
 		use_entity_position_if_local_player = true
@@ -3548,15 +3548,15 @@
 		distance_volume_mapping_curve = 
 		[
 			[
-				49.591427, 0.45, 0.010452, 0.010452,
+				0.0, 1.0, 0.0, 0.0,
 				3.0, 1.0,
 			],
 			[
-				116.563492, 1.0, -0.001429, -0.001429,
+				116.56349, 1.0, -0.001429, -0.001429,
 				2.0, 3.0,
 			],
 			[
-				402.285736, 0.488971, -0.000991, -0.000991,
+				402.28574, 0.488971, -0.000991, -0.000991,
 				3.0, 1.0,
 			],
 			[
@@ -3614,7 +3614,7 @@
 		pitch_random_max = 0.01
 		use_fadetime_volume_mapping_curve = false
 		block_distance = 0.0
-		enable_child_events = true
+		enable_child_events = false
 		reverb_wet = 1.0
 		use_world_position = true
 		use_entity_position_if_local_player = true
@@ -3630,15 +3630,15 @@
 		distance_volume_mapping_curve = 
 		[
 			[
-				49.591427, 0.45, 0.010452, 0.010452,
+				0.0, 1.0, 0.0, 0.0,
 				3.0, 1.0,
 			],
 			[
-				116.563492, 1.0, -0.001429, -0.001429,
+				116.56349, 1.0, -0.001429, -0.001429,
 				2.0, 3.0,
 			],
 			[
-				402.285736, 0.488971, -0.000991, -0.000991,
+				402.28574, 0.488971, -0.000991, -0.000991,
 				3.0, 1.0,
 			],
 			[
@@ -9998,7 +9998,7 @@
 		use_world_position = true
 		use_entity_position_if_local_player = true
 		occlusion_intensity = 0.375
-		volume = 0.3
+		volume = 1.0
 		position_offset = [ 0.0, 0.0, 20.0 ]
 		display_broadcast = true
 		use_distance_unfiltered_stereo_mapping_curve = true
@@ -11123,20 +11123,20 @@
 	{
 		type = "csgo_mega"
 		preload_vsnds = true
-		volume = 0.2
+		volume = 0.3
 		pitch = 1.0
 		mixgroup = "Footsteps"
 		block_distance = 0.0
 		use_distance_volume_mapping_curve = true
 		reverb_wet = 1.0
 		display_broadcast = true
-		instance_limit = 1.0
+		instance_limit = 0.0
 		block_duration = 0.2
 		position_offset = [ 0.0, 0.0, 30.0 ]
 		use_distance_unfiltered_stereo_mapping_curve = true
 		pitch_random_min = -0.06
 		pitch_random_max = 0.06
-		volume_random_min = -0.1
+		volume_random_min = 0.0
 		volume_random_max = 0.0
 		occlusion_intensity = 0.375
 		occlusion_frequency_scale = 0.998
@@ -11155,22 +11155,42 @@
 		distance_volume_mapping_curve = 
 		[
 			[
-				50.285713, 1.0, -0.001265, -0.001265,
-				2.0, 3.0,
+				0.0, 0.460815, 0.0, 0.0,
+				3.0, 1.0,
 			],
 			[
-				1600.0, 0.0, -0.000183, -0.000183,
+				37.029705, 0.460815, 0.0, 0.035362,
+				0.0, 0.0,
+			],
+			[
+				52.27723, 1.0, 0.035362, 0.0,
+				0.0, 0.0,
+			],
+			[
+				102.37624, 1.0, 0.0, -0.001704,
+				0.0, 0.0,
+			],
+			[
+				402.28574, 0.488971, -0.000977, -0.000977,
+				3.0, 1.0,
+			],
+			[
+				1095.0, 0.03, -0.000701, -0.000701,
+				1.0, 1.0,
+			],
+			[
+				1100.0, 0.0, -0.000476, -0.000476,
 				2.0, 3.0,
 			],
 		]
 		distance_unfiltered_stereo_mapping_curve = 
 		[
 			[
-				49.42857, 1.0, 0.0, 0.0,
+				50.0, 1.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 			[
-				100.0, 0.0, 0.0, 0.0,
+				60.0, 0.0, 0.0, 0.0,
 				2.0, 3.0,
 			],
 		]

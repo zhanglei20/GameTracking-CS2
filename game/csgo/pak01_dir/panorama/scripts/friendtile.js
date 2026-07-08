@@ -27,12 +27,9 @@ var FriendTile;
     }
     FriendTile.Init = Init;
     function _SetHonorIcon(elTile) {
-        const honorIconOptions = {
-            honor_icon_frame_panel: elTile.FindChildTraverse('jsHonorIcon'),
-            do_fx: true,
-            xptrail_value: FriendsListAPI.GetFriendXpTrailLevel(_m_xuid)
-        };
-        HonorIcon.SetOptions(honorIconOptions);
+        const elHonorIcon = elTile.FindChildTraverse('jsHonorIcon');
+        if (elHonorIcon)
+            elHonorIcon.Set(FriendsListAPI.GetFriendXpTrailLevel(_m_xuid), false);
     }
     function _SetImage(elTile) {
         let elAvatarImg = elTile.FindChildTraverse('JsFriendAvatar');

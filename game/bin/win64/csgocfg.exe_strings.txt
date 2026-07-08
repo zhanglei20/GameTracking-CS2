@@ -152,7 +152,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCQLineEditWithArrowEvents@@
 .?AVCQLogDetailsDialog@@
 .?AVCQNewAddOnDialog@@
-.?AVCQRichItemListPicker@@
+.?AVCQRichItemListPickerDialog@@
+.?AVCQRichItemListPickerWidget@@
 .?AVCQSelectionListItemDelegate@@
 .?AVCQSplitter@@
 .?AVCQSplitterHandle@@
@@ -162,11 +163,11 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCToolAttrHost@@
 .?AVCToolAttrPropertyDomain@@
 .?AVCToolEditContextQuery_Base@@
+.?AVCToolEditContextQuery_ExpressionGlobal@@
 .?AVCToolEditContextQuery_String@@
 .?AVIBaseToolAttr@@
 .?AVIKV3FGDTargetResolver@@
 .?AVIPropertyEditDomain@@
-.?AVIToolAttrExpressionGlobals@@
 .?AVIToolAttrHost@@
 .?AVIToolAttr_Array@@
 .?AVIToolAttr_KV3@@
@@ -220,7 +221,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .CRT$XIAC
 .fgd
 /e,/select,"
-15:36:35
+14:11:36
 1AcceptIfItemPicked()
 1OnAccept()
 1OnAddonDoubleClicked()
@@ -256,8 +257,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp$9
-2\vpDp
+2\vpdt
 2accepted()
 2clicked()
 2customContextMenuRequested( const QPoint & )
@@ -285,6 +285,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 <\f?deallocate@QArrayData@@SAXPEAU1@_K1@Z
 <map_key>
 <map_value>
+<non-RTTI type>
 <unnamed>
 ??0QAction@@QEAA@AEBVQIcon@@AEBVQString@@PEAVQObject@@@Z
 ??0QAction@@QEAA@AEBVQString@@PEAVQObject@@@Z
@@ -948,6 +949,7 @@ A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 ARRAY_MEMBERS_VIA_PARENT
 ARRAY_PARENT_ONLY
 AcceptIfItemPicked
+Accepted
 Active
 Already running on this machine. Only one instance at a time is allowed.
 AlternateBase
@@ -959,6 +961,7 @@ Applies to array parents or non-array items (just not array members)
 AssetBrowse( %s )
 AssetBrowse( vnmclip )
 AssetBrowse( vnmgraph )
+AssetBrowse()
 Attribute.%s.%s
 B`?translate@QPainter@@QEAAXAEBVQPointF@@@Z
 Bad class description
@@ -1011,7 +1014,8 @@ CQEditAddonInfoDialog
 CQLineEditWithArrowEvents
 CQLogDetailsDialog
 CQNewAddOnDialog
-CQRichItemListPicker
+CQRichItemListPickerDialog
+CQRichItemListPickerWidget
 CQRichItemListPicker_Choice_Internal*
 CQRichItemListPicker_Group_Internal*
 CQSmartTextEdit
@@ -1022,13 +1026,12 @@ CQTabbedStyle
 CQTabbedStyle_ToolButton_Stealthy
 CQTabbedToolButton
 CQTreeWidgetWithArrowEvents
+CToolAttrPropertyDomain
 CToolAttrPropertyDomain::GetVDataChoiceFriendlyNameForValue
-CUtlRBTree<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,class CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CheckmarkPossible
 Could not load color map %s: %s\n
 Counter-Strike 2 Workshop Submission
 Courier
-CurveEditor
 Dark
 DarkSplitter
 DarkSplitterHandle
@@ -1083,9 +1086,9 @@ Expecting numbers 'min_x' 'min_y' 'min_z'
 Expecting tag name
 FGD Variable %s has bad default value %d (has bits set that are not valid choices)
 F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
-Failed to allocate an instance of a class
+Failed to allocate an instance of a class of type '%s'
 Failed to map from %s to game-path\n
-Filter name/description:
+Filter type/description:
 Flag sets do not have long names
 FlatSelection
 GetVDataChoiceFriendlyNameForValue
@@ -1143,6 +1146,7 @@ NOT_ARRAY_MEMBERS
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 New Item Type
 No %s specified. Expected '=' '[' <%s> ']'
+NoEditor()
 NoRole
 OP?isNull@QIcon@@QEBA_NXZ
 O\r?hitTestComplexControl@QCommonStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
@@ -1176,7 +1180,6 @@ OnShowItemsContextMenu
 OnTextDownArrow
 OnTextUpArrow
 OnToggleOrientationAction
-Optional properties not fully supported in property editor (text editor required)
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
@@ -1200,7 +1203,7 @@ R?metaObject@QRegExpValidator@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QTextDocument@@UEBAPEBUQMetaObject@@XZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\r?hitTestComplexControl@QProxyStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
-R\vpDp
+R\vpdt
 Reset to Default
 RichItemList_Accept
 RichItemList_Reject
@@ -1218,8 +1221,11 @@ T?pos@QCursor@@SA?AVQPoint@@XZ
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 TabBarBackgroundNotSelected
 TabTextInactive
+TargetCastForModify
 TestKeyForAddon
 This value is currently inherited from a base node.
+This value is optional. Click to set.
+This value is optional. Click to unset.
 This value is overriding a base node.
 To the left of the attribute label
 To the right of the attribute editor
@@ -1254,6 +1260,7 @@ UpdateUIForSelectedAddon
 UpperLine
 Using deprecated 'base=prefix' syntax for adding a prefix to a base class
 VDataChoice( %s )
+VDataChoice()
 Va?width@QPixmap@@QEBAHXZ
 Variable %s has bad default value %s (no choices with that name or value)
 ViewportBackground
@@ -1414,6 +1421,7 @@ animgraph2_identifier
 animgraph_enum
 applicable_to
 assetTag
+asset_specific_keys_source
 associated_key
 autoexpand_self
 autoexpand_self_class
@@ -1473,6 +1481,8 @@ game:tools/images/propertyeditor/attr_reset.png
 game:tools/images/propertyeditor/attr_reset_hover.png
 game:tools/images/propertyeditor/extra_attr_remove.png
 game:tools/images/propertyeditor/extra_attr_remove_hover.png
+game:tools/images/propertyeditor/eye_hidden.png
+game:tools/images/propertyeditor/eye_visible.png
 game:tools/images/propertyeditor/overlay_inherit.png
 game:tools/images/propertyeditor/overlay_inherit_hover.png
 game:tools/images/propertyeditor/overlay_override.png
@@ -1575,6 +1585,7 @@ npcclass
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
 open
+optional_toggle_cmd
 override_attr
 override_description
 override_help_context_name

@@ -42,7 +42,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp0
 2triggered( bool )
 2valueChanged( int )
 :\f?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
@@ -203,7 +202,6 @@ Asserts
 C:\buildworker\csgo_rel_win64\build\_build_\utils\vconsole2\subtools\dashboard\_vpc_dashboard_subtool\default\win64\_msvc_\Retail\dashboard_subtool.pdb
 CQDashboardHistoryGraphWidget
 CQDashboardWidget
-CUtlRBTree<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQDashboardWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,class CUtlOrderedMapBase<class IVConsoleDevice *,class CQDashboardWidget *,class CDefLess<class IVConsoleDevice *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQDashboardWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 Client CPU
 ClientCPU
 Dashboard

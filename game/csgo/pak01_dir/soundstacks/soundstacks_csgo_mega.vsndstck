@@ -955,16 +955,7 @@
 							property_group = "Convar"
 						}
 					}
-					input_field1 = 
-					{
-						value = "0.0"
-						data_type = "float"
-						_system_properties = 
-						{
-							display_group = "advanced"
-						}
-					}
-					input_field2 = 
+					retrigger_keepalive_override = 
 					{
 						value = "0.0"
 						data_type = "float"
@@ -1076,13 +1067,81 @@
 					{
 						value = "0.0"
 						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
 					}
 					input_field15 = 
 					{
 						value = "0.0"
 						data_type = "float"
+						_system_properties = 
+						{
+							display_group = "advanced"
+						}
+					}
+					suppressed = 
+					{
+						value = "0.0"
+						data_type = "bool"
+						_system_properties = 
+						{
+							property_group = "advanced"
+						}
+					}
+					suppression_enable = 
+					{
+						value = "0.0"
+						data_type = "bool"
+						_system_properties = 
+						{
+							property_group = "Suppression"
+						}
+					}
+					suppression_volume_multiplier = 
+					{
+						value = "1"
+						data_type = "float"
+						_system_properties = 
+						{
+							property_group = "Suppression"
+						}
+					}
+					suppression_falloff_multiplier = 
+					{
+						value = "1"
+						data_type = "float"
+						_system_properties = 
+						{
+							property_group = "Suppression"
+						}
+					}
+					suppression_vsnd_override = 
+					{
+						value = "0.0"
+						data_type = "vsnd"
+						_system_properties = 
+						{
+							property_group = "Suppression"
+						}
 					}
 				}
+			},
+			{
+				name = "game_get_source_player_info"
+				operator = "game_get_source_player_info"
+				input_execute = "@public.suppression_enable"
+				execute_once = "1"
+			},
+			{
+				name = "calc_is_suppressed"
+				operator = "math_float"
+				apply = "or"
+				input_execute = "@public.suppression_enable"
+				execute_once = "1"
+				input1 = "@public.suppressed"
+				input2 = "@game_get_source_player_info.output_is_stealthy"
 			},
 			{
 				name = "get_vsnd_track_01"
@@ -1105,7 +1164,7 @@
 				input_vsnd = "@get_vsnd_track_01.output"
 			},
 			{
-				name = "math_float"
+				name = "duration_negative"
 				operator = "math_float"
 				apply = "sub"
 				input2 = "@get_vsnd_info.output_duration"
@@ -1117,7 +1176,7 @@
 				execute_once = "1"
 				input_execute = "@public.randomize_start_time"
 				output = "0"
-				input_min = "@math_float.output"
+				input_min = "@duration_negative.output"
 				input_max = "0"
 			},
 			{
@@ -1510,11 +1569,18 @@
 				input_compute_occlusion = "true"
 			},
 			{
+				name = "one_minus_occlusion"
+				operator = "math_float"
+				apply = "sub"
+				input1 = "1"
+				input2 = "@params_steamaudio_source.output_occlusion_value"
+			},
+			{
 				name = "occlusion_path_ratio"
 				operator = "math_float"
 				apply = "div"
 				input1 = "1"
-				input2 = "@params_steamaudio_source.output_occlusion_value"
+				input2 = "@one_minus_occlusion.output"
 				output = "100"
 			},
 			{
@@ -1903,11 +1969,19 @@
 			},
 			{
 				name = "calc_event_finished_or_stopped"
+				operator = "math_float_eval"
+				input1 = "@calc_event_finished.output"
+				input2 = "@get_event_info.output_stopped"
+				input_execute = "@public.enable_retrigger"
+				input3 = "@public.retrigger_keepalive_override"
+				expression = "(_3 && _4) ? 0 : (_1+_2)"
+				input4 = "@public.enable_retrigger"
+			},
+			{
+				name = "calc_event_finished_or_stopped"
 				input_execute = "@public.enable_retrigger"
 				operator = "math_float"
 				apply = "add"
-				input1 = "@calc_event_finished.output"
-				input2 = "@get_event_info.output_stopped"
 			},
 			{
 				name = "event_terminator"
@@ -1959,14 +2033,31 @@
 				input2 = "1.000000"
 			},
 			{
+				name = "distance_suppression_calc"
+				operator = "math_float_eval"
+				execute_once = "1"
+				input_execute = "@public.suppression_enable"
+				input2 = "@public.suppression_falloff_multiplier"
+				expression = "_1 ? _2 : 1"
+				input1 = "@calc_is_suppressed.output"
+				output = "1.0"
+			},
+			{
+				name = "distance_after_suppression"
+				operator = "math_float"
+				input1 = "@multiplied_distance.output"
+				input2 = "@distance_suppression_calc.output"
+				apply = "div"
+			},
+			{
 				name = "distance_volume_mapping_curve"
 				operator = "math_curve_2d"
-				input = "@multiplied_distance.output"
 				input_execute = "@public.use_distance_volume_mapping_curve"
 				input_scale_x = "1.0"
 				input_scale_y = "1.0"
 				public_field_name = "public.distance_volume_mapping_curve"
 				output = "1.0"
+				input = "@distance_after_suppression.output"
 			},
 			{
 				name = "distance_volume_mapping_curve_mult"
@@ -2085,6 +2176,16 @@
 				input2 = "@doppler_filter.output"
 			},
 			{
+				name = "calc_volume_suppressed"
+				operator = "math_float_eval"
+				input_execute = "@public.suppression_enable"
+				execute_once = "1"
+				output = "1.0"
+				expression = "_1 ? _2 : 1"
+				input1 = "@calc_is_suppressed.output"
+				input2 = "@public.suppression_volume_multiplier"
+			},
+			{
 				name = "get_volume_convar"
 				operator = "convar_get"
 				convar = "@public.volume_convar"
@@ -2101,6 +2202,7 @@
 				input3 = "@get_volume_convar.output"
 				input4 = "@velocity_volume_curve.output"
 				input5 = "@surf_ambient_volume.output"
+				input6 = "@calc_volume_suppressed.output"
 			},
 			{
 				name = "volume_fan"
@@ -2224,9 +2326,14 @@
 			},
 			{
 				name = "set_culling_dependency"
-				operator = "soundevent_control"
 				input_execute = "@culling_and_unstopped.output"
+				operator = "soundevent_control"
 				input_add_dependent = "@culling_and_unstopped.output"
+			},
+			{
+				name = "set_culling_wait_time"
+				input_execute = "@culling_and_unstopped.output"
+				operator = "soundevent_control"
 				input_wait_time = "@culling_think_time_switch.output"
 			},
 			{
@@ -2431,8 +2538,8 @@
 			}
 			public = 
 			{
-				x = -1460.0
-				y = 1540.0
+				x = 19540.0
+				y = 2130.0
 			}
 			mixer = 
 			{
@@ -2506,8 +2613,8 @@
 			}
 			uiposition_left = 
 			{
-				x = 2268.0
-				y = 334.0
+				x = 2270.0
+				y = 500.0
 			}
 			uiposition_forward = 
 			{
@@ -2816,8 +2923,8 @@
 			}
 			in_retrigger_radius = 
 			{
-				x = 8400.0
-				y = 1506.0
+				x = 8540.0
+				y = 1470.0
 			}
 			retrigger_finite = 
 			{
@@ -2896,8 +3003,8 @@
 			}
 			calc_event_finished_or_stopped = 
 			{
-				x = 21240.0
-				y = 3500.0
+				x = 20910.0
+				y = 3210.0
 			}
 			event_terminator = 
 			{
@@ -2911,8 +3018,8 @@
 			}
 			volume_random_add = 
 			{
-				x = 2268.0
-				y = 1896.0
+				x = 2280.0
+				y = 1810.0
 			}
 			pitch_random_variance = 
 			{
@@ -2926,8 +3033,8 @@
 			}
 			volume_volume_linear_mult = 
 			{
-				x = 2954.0
-				y = 724.0
+				x = 2920.0
+				y = 810.0
 			}
 			pitch_pitch_linear_mult = 
 			{
@@ -2946,8 +3053,8 @@
 			}
 			distance_volume_mapping_curve_mult = 
 			{
-				x = 10458.0
-				y = 0.0
+				x = 10090.0
+				y = -70.0
 			}
 			distance_unfiltered_stereo_mapping_curve = 
 			{
@@ -2976,8 +3083,8 @@
 			}
 			time_volume_mapping_curve_mult = 
 			{
-				x = 11662.0
-				y = 4084.0
+				x = 11640.0
+				y = 4230.0
 			}
 			impact_speed_input_volume_mapping_curve = 
 			{
@@ -2986,8 +3093,8 @@
 			}
 			impact_speed_input_volume_mapping_curve_mult = 
 			{
-				x = 12292.0
-				y = 4084.0
+				x = 12330.0
+				y = 4130.0
 			}
 			distance_pitch_mapping_curve = 
 			{
@@ -3021,8 +3128,8 @@
 			}
 			mult_mixer_volume = 
 			{
-				x = 4070.0
-				y = 2420.0
+				x = 4060.0
+				y = 2430.0
 			}
 			volume_fan = 
 			{
@@ -3176,8 +3283,8 @@
 			}
 			send_voicegraph_ang_y = 
 			{
-				x = 8400.0
-				y = 334.0
+				x = 8270.0
+				y = 300.0
 			}
 			set_voice_position = 
 			{
@@ -3214,10 +3321,10 @@
 				x = 1540.0
 				y = 2580.0
 			}
-			math_float_eval = 
+			calc_volume_suppressed = 
 			{
-				x = 1480.0
-				y = 2440.0
+				x = 330.0
+				y = 2010.0
 			}
 			velocity_volume_curve = 
 			{
@@ -3241,8 +3348,8 @@
 			}
 			is_ambient = 
 			{
-				x = -1230.0
-				y = 1260.0
+				x = -480.0
+				y = 1400.0
 			}
 			is_surf_enabled = 
 			{
@@ -3256,13 +3363,13 @@
 			}
 			surf_ambient_volume = 
 			{
-				x = -147.171188
-				y = 886.848328
+				x = -147.17119
+				y = 886.8483
 			}
 			is_ambient_and_surf_enabled = 
 			{
-				x = -1001.487061
-				y = 744.399841
+				x = -750.0
+				y = 700.0
 			}
 			randomize_start_time = 
 			{
@@ -3271,8 +3378,48 @@
 			}
 			calc_delay = 
 			{
-				x = 16444.958984
-				y = 4752.226074
+				x = 16444.959
+				y = 4752.226
+			}
+			duration_negative = 
+			{
+				x = 2260.0
+				y = 330.0
+			}
+			game_get_source_player_info = 
+			{
+				x = -550.0
+				y = 2490.0
+			}
+			calc_suppressed = 
+			{
+				x = -373.18896
+				y = 2716.6914
+			}
+			distance_suppression_calc = 
+			{
+				x = 8250.0
+				y = 490.0
+			}
+			distance_after_suppression = 
+			{
+				x = 8950.0
+				y = 500.0
+			}
+			calc_is_suppressed = 
+			{
+				x = -50.0
+				y = 2300.0
+			}
+			calc_event_finished_or_stopped_a = 
+			{
+				x = 21020.0
+				y = 2440.0
+			}
+			one_minus_occlusion = 
+			{
+				x = 4074.0
+				y = 6570.0
 			}
 		}
 	}

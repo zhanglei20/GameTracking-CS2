@@ -1,4 +1,5 @@
-  C%d:I%-2d {F=%-10d,V=%-10d} 
+                                           
+  C%d:I%-2d {F=%-10d,V=%-10d,S=%-20.20s} 
   CallInfo%d: %s\n
   Cell%d - NULL\n
   Cell%d EditorID:%d [%s]: %s\n
@@ -24,13 +25,14 @@
  randseed[
  rot[
  yaw[
+!is_gpu_particle_system
 "Limit Count: " + m_nLimitCount
 "Position within sphere random" no longer supports the "randomly distribute to highest supplied Control Point" feature\n\t"Emit continuously" and "Emit noise" no longer support "scale emission to used control points".\n\t"Position from control points" had a max control point added to it.
 "Remap control point orientation to rotation" does something approaching sanity for the cases I looked at.  If we have cases where this isn't appropriate, we can split out the behavior.\n
 "Remap control point orientation to rotation" rewritten to make more sense.\n
 "Set control point rotation" pre-emission operator now correctly produces right-handed matrices [previously it would produce left-handed ones].
 "Twist around axis" force now rotates around the specified control point instead of control point 0.\n
-$DETAIL2BLENDMODE
+#\tV_exp2f
 $SFXDetailBlendMode
 %02x 
 %40s: Age: %6.2f, asleep: %s next sleep %6.2f NumActive: %3d, flags %d, Bounds Center: (%.2f,%.2f,%.2f) (0x%p)\n
@@ -49,9 +51,11 @@ $SFXDetailBlendMode
 %s Be Batch Rendered
 %s is trying to get CP object %d but the function read limit is %d\n
 %s is trying to get CP renderable %d but the function read limit is %d\n
+%s%02d:%02d
 %s:( ActiveParticleCount()=%d, m_bounds=%? simtime=%g )
 %s::%s (%u)
 %s::%s (Entity Output Handler)
+%t<\t%d;\t%4:\t%
 (builtin)
 (min=%g max=%g)
 *** Test failure: "%s"
@@ -59,17 +63,22 @@ $SFXDetailBlendMode
 -1 for all asleep, 1 for all awake
 -BfF
 .?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_IntervalTimer_DebugInfo_t@@
 .?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AV<lambda_1>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
+.?AV<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
+.?AV<lambda_1>@?1???$DoNotDeleteReadCallback@VIReadBufferCallback@@@@YA?AV?$shared_ptr@VIReadBufferCallback@@@std@@PEAVIReadBufferCallback@@@Z@
 .?AV<lambda_1>@?1???$ScaleMatrix@$00VCVariableMatrix@@@MatrixMath@@YAXAEAVCVariableMatrix@@M@Z@
 .?AV<lambda_1>@?1??DrawBlobulatorImplicits@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MMAEBUConfig_t@2@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??DrawSoftObjectImplicits@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MMAEBUConfig_t@2@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??DrawSoftObjectImplicitsWithRadii@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MAEBUConfig_t@2@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??OnCreate@C_OP_ClientPhysics@@UEBAXPEAVCParticleCollection@@PEAX@Z@
+.?AV<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@
 .?AV<lambda_1>@?3??RenderBatchedCollections@CParticleCollection@@SAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@@Z@
-.?AV<lambda_1>@?4??GPUSimulateParticles@CParticleCollection@@QEAAXPEAVIRenderContext@@W4GPUSimulationStage@@@Z@
-.?AV<lambda_1>@?CE@??RenderSelfInternal@CParticleCollection@@AEAAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@@Z@
+.?AV<lambda_1>@?4??GPUSimulateParticles@CParticleCollection@@QEAAXPEAVIRenderContext@@AEAVIBarrierHelper@@W4GPUSimulationStage@@AEAVCRenderAttributes@@@Z@
+.?AV<lambda_1>@?CH@??RenderSelfInternal@CParticleCollection@@AEAAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@I@Z@
 .?AV<lambda_2>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
+.?AV<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
 .?AV<lambda_2>@?7??Operate@C_OP_VelocityMatchingForce@@UEBAXPEAVCParticleCollection@@MPEAX@Z@
 .?AV<lambda_2>@?8??AddForces@C_OP_IntraParticleForce@@UEBAXPEAVFourVectors@@PEAVCParticleCollection@@AEBV?$CUtlLocalStackArray@T__m128@@$00@@HMPEAX@Z@
 .?AV<lambda_3>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
@@ -167,6 +176,7 @@ $SFXDetailBlendMode
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_SetHitboxToModel@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_SetRigidAttachment@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_SetVectorAttributeToVectorExpression@@@@
+.?AV?$CParticleFunctionDefinitionTyped@VC_INIT_SkyVisCull@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_StatusEffect@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_StatusEffectCitadel@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_VelocityFromCP@@@@
@@ -461,21 +471,25 @@ $SFXDetailBlendMode
 .?AV?$_Func_base@XPEAVIParticleCollection@@PEAX@std@@
 .?AV?$_Func_base@XPEBUObjectPairCollisionList_t@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$ScaleMatrix@$00VCVariableMatrix@@@MatrixMath@@YAXAEAVCVariableMatrix@@M@Z@XHH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??DrawBlobulatorImplicits@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MMAEBUConfig_t@3@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@XPEAVCRenderAttributes@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??DrawSoftObjectImplicits@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MMAEBUConfig_t@3@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@XPEAVCRenderAttributes@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??DrawSoftObjectImplicitsWithRadii@CGpuImplicitRenderer@@QEAAXPEAVIRenderContext@@PEBVIMaterialMode@@MAEBUConfig_t@3@AEBV?$CUtlVector@UParticle_t@CGpuImplicitRenderer@@HV?$CUtlVectorMemory_Growable@UParticle_t@CGpuImplicitRenderer@@H$0A@@@@@@Z@XPEAVCRenderAttributes@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??OnCreate@C_OP_ClientPhysics@@UEBAXPEAVCParticleCollection@@PEAX@Z@XPEAVIParticleCollection@@PEAX@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??RenderBatchedCollections@CParticleCollection@@SAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??GPUSimulateParticles@CParticleCollection@@QEAAXPEAVIRenderContext@@W4GPUSimulationStage@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?CE@??RenderSelfInternal@CParticleCollection@@AEAAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??GPUSimulateParticles@CParticleCollection@@QEAAXPEAVIRenderContext@@AEAVIBarrierHelper@@W4GPUSimulationStage@@AEAVCRenderAttributes@@@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?CH@??RenderSelfInternal@CParticleCollection@@AEAAXAEAUParticleRenderingContext_t@@AEAUParticleBatchingContext_t@@I@Z@V?$CUtlVector@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@HV?$CUtlVectorMemory_Growable@U?$pair@PEBDV?$variant@_NMH_KVCUtlString@@V?$Vec4D@M@@PEAURenderResourceHandle_t__@@Umonostate@std@@@std@@@std@@H$0A@@@@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?7??Operate@C_OP_VelocityMatchingForce@@UEBAXPEAVCParticleCollection@@MPEAX@Z@XPEBUObjectPairCollisionList_t@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?8??AddForces@C_OP_IntraParticleForce@@UEBAXPEAVFourVectors@@PEAVCParticleCollection@@AEBV?$CUtlLocalStackArray@T__m128@@$00@@HMPEAX@Z@XPEBUObjectPairCollisionList_t@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?BA@???$VisitAllOverlappingPairs@$0A@@?$CObjectTree@HUParticleObjectTreeOptions_t@CParticleCollection@@@ObjectTree@@QEBAXAEBV?$function@$$A6AXPEBUObjectPairCollisionList_t@@@Z@std@@@Z@XHH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@I$$V@std@@
 .?AV?$_Ref_count_obj2@VCPulseStructLayout@@@std@@
+.?AV?$_Ref_count_resource@PEAVIReadBufferCallback@@V<lambda_1>@?1???$DoNotDeleteReadCallback@VIReadBufferCallback@@@@YA?AV?$shared_ptr@VIReadBufferCallback@@@std@@PEAV1@@Z@@std@@
 .?AVCBaseRendererSource2@@
 .?AVCBaseTrailRenderer@@
 .?AVCChildFunctionDefinition@@
@@ -655,6 +669,7 @@ $SFXDetailBlendMode
 .?AVC_INIT_SetHitboxToModel@@
 .?AVC_INIT_SetRigidAttachment@@
 .?AVC_INIT_SetVectorAttributeToVectorExpression@@
+.?AVC_INIT_SkyVisCull@@
 .?AVC_INIT_StatusEffect@@
 .?AVC_INIT_StatusEffectCitadel@@
 .?AVC_INIT_VelocityFromCP@@
@@ -962,7 +977,6 @@ $SFXDetailBlendMode
 .?AVISceneObjectListener@@
 .?AVISequence@@
 0=don't clear particle attrs at init 1=clear to zero 2=clear to 0xdb -1=clear to zero at first sim
-33S@ff
 3E"F
 3E"W
 3E"g
@@ -970,12 +984,14 @@ $SFXDetailBlendMode
 4?Ku
 7?sk3mx>>*vn[9d
 8f?D
-:???;???;???3776>????/?/????7'7&>?????????
+8oNj
+9>-memory-
 ;1#INF
 <DEBUG-Only>
 <elt type not set>
 <nL4=
 <nL4=nL4=nL4=nL4=
+<non-RTTI type>
 <none>\n
 <unimplemented>
 =2qg
@@ -990,8 +1006,6 @@ $SFXDetailBlendMode
 >pwn?
 >sh1?
 >uYL>
-?/?????/?.>??????????????>>??;?/?+???;?/?**?/?;???+?/?;??>>??????????????>.?/?????/?
-?????????>&7'7????/?/????>6773???;???;???:
 ?Bxt>
 ?CURVE_TANGENT_LINEAR
 ?JA7=
@@ -1010,9 +1024,12 @@ Abs Int
 Absolute value (float)
 Absolute value (int)
 Activity %s has %d sequences with a total weight of %d!\n
+Add Flags
 Add R%d <- R%d + R%d
+Add flags to the given value.
 Add the array 'b' to the end of 'a'.
 Address of m_Children.m_pHead: [%p]\n
+After the real remainder, how many additional digits should we continue to append to create additional visual movement?
 All Particle Systems:\n
 Allocated Particles
 Alpha Alternate
@@ -1022,7 +1039,6 @@ Alpha fade in random
 Alpha fade in simple
 Alpha fade out random
 Alpha fade out simple
-Always
 Amount of simulation time that can elapse before new systems start falling back to cheaper versions
 And R%d <- R%d && R%d
 Any Other Cursors Have Tag
@@ -1048,7 +1064,9 @@ Array Remove Invalid Elements
 Array Set Count
 Array Shuffle
 Assert True
-Async Fire C%d:I%d
+Async Call Method (Child Cursor) C%d:I%d
+Async Outflow (Child Cursor) C%d:I%d
+Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 Attempt to read and write stencil at the same time on a particle system. Ignoring write state\n
 Attempted a typeid of nullptr pointer!
 Attempted to create particle system from RESOURCE_HANDLE_INVALID\n
@@ -1068,7 +1086,6 @@ BOX_MINS
 Bad KV3 data (%s)
 Bad KV3 data for resource '%s': %s\n
 Bad compression
-Bad count in ArraySetCount (%d)
 Bad max in ArrayFirstNElements (%d)
 Bad read pointer - no RTTI data!
 Bad reinterpret on ArrayAppend
@@ -1078,18 +1095,18 @@ Bad sequence in GetSequenceActivityName() for model '%s'!\n
 Base for falling back to cheaper effects under load.
 Base-10 logarithm
 Base-2 logarithm
-BaseTexture
+Basic string support.
 Begin testing a condition composed of Observable values. Continues checking until canceled.
 Begin testing a condition composed of Observable variable references. Continues checking until true.
 BindlessParticleShader
-Blobulator
 Bone Indices
 Box Angles
 Box Flags
 Box Maxs
 Box Mins
+Branch Recursion Distance Scale Factor
+Branch Recursion Offset/Twist Scale Factor
 C:\buildworker\csgo_rel_win64\build\_build_\particles\_vpc_particles\default\win64\_msvc_\Retail\particles.pdb
-C:\buildworker\csgo_rel_win64\build\src\blobulator\implicit\sweeprenderer.cpp
 C:\buildworker\csgo_rel_win64\build\src\particles\gpu_implicit_renderer.cpp
 C:\buildworker\csgo_rel_win64\build\src\particles\particle_initialization.cpp
 C:\buildworker\csgo_rel_win64\build\src\particles\particle_sceneobject.cpp
@@ -1107,7 +1124,8 @@ CKV3MemberNameSet
 CKV3MemberNameWithStorage
 CONTENT ERROR: Unable to find %s '%s' in model '%s' referenced in particle system '%s'\n
 CP %d
-CParticleCollection::EvaluatePerFrameGPUSimulationState(3850): 
+CParticleCollection::AllocateSharedGPUBufferSlots Slot %d BDAOffset %d: %s\n
+CParticleCollection::EvaluatePerFrameGPUSimulationState(3994): 
 CParticleCollection::GenerateSortedIndexList
 CParticleCollection::InitializeNewParticles
 CParticleCollection::SetControlPointOrientationFLU
@@ -1117,7 +1135,7 @@ CParticleCollectionBindingInstance::HACK_UnusedBinding
 CParticleFloatInput::MEmitKV3TransferPreLoadFn failed\n
 CParticleNamedValueRef
 CParticleObjectDesc
-CParticleObjectDesc::OnPreRender(283): 
+CParticleObjectDesc::OnPreRender(311): 
 CParticleSnapshot::%s - Invalid attribute mapping specified (must be one-to-one)!\n
 CParticleSystemMgr::CreateParticleCollection( Name String )
 CParticleSystemMgr::FindParticleSystem
@@ -1137,9 +1155,9 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
+CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
-CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
 CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
@@ -1149,26 +1167,28 @@ CPulseCell_Inflow_ObservableVariableListener '%s'.'%s (%u)' --> Chunk%d: %s
 CPulseCell_InlineNodeSkipSelector::ProcessSelector
 CPulseCell_IntervalTimer::OnInterval
 CPulseCell_IntervalTimer::Start
-CPulseCell_IntervalTimer::StopTimer
 CPulseCell_IsRequirementValid::CheckRequirement
 CPulseCell_LimitCount::CheckRequirement
 CPulseCell_LimitCount::CommitStep
 CPulseCell_PickBestOutflowSelector::ProcessSelector
 CPulseCell_Step_CallExternalMethod '%s'
 CPulseCell_Timeline::Start
-CPulseCell_Timeline::Stop
 CPulseCell_Value_Curve::Eval
 CPulseCell_Value_Gradient::Eval
 CPulseCell_WaitForCursorsWithTag::Wait
-CPulseCell_WaitForObservable::Cancel
 CPulseCell_WaitForObservable::Start
 CPulseCursorFuncs::AnyOtherCursorsHaveTag
 CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
-CPulseCursorFuncs::KillThisCursorAndCancel
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
+CPulseCursorFuncs::WakeCursorsWithTag
+CPulseEnumlib
+CPulseEnumlib::AddFlags
+CPulseEnumlib::HasAllFlags
+CPulseEnumlib::HasAnyFlags
+CPulseEnumlib::RemoveFlags
 CPulseMathlib::AbsFloat
 CPulseMathlib::AbsInt
 CPulseMathlib::ArcCos
@@ -1205,6 +1225,7 @@ CPulseMathlib::MakeTransform
 CPulseMathlib::MakeVector
 CPulseMathlib::MakeVector2D
 CPulseMathlib::MakeVector4D
+CPulseMathlib::MakeVectorFromAngle
 CPulseMathlib::MakeWorldTransform
 CPulseMathlib::MakeWorldVector
 CPulseMathlib::MaxFloat
@@ -1234,34 +1255,42 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
-CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
+CPulseObservableExpression
+CPulseStringlib
+CPulseStringlib::FormatDurationStringFromSeconds
+CPulseStringlib::StringLength
+CPulseStringlib::StringsAreEqualCaseSensitive
 CPulseTestScriptLib::AssertTrue
 CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
+CREATE_CHILD_CURSOR_OUTFLOW
 CREATION_TIME
 CStrongHandle
 CURVE_TANGENT_FREE
 CURVE_TANGENT_MIRROR
 CURVE_TANGENT_SINE
 CURVE_TANGENT_SPLINE
+CUtlBlockVector<class std::function<void __cdecl(void)>,int,class CMemAllocAllocator>::GrowCount
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CInstancedMeshSceneObject *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorBase<struct UtlLinkedListElem_t<struct RenderReadbackHandle_t__ *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
+CUtlLeanVectorBase<struct UtlLinkedListElem_t<struct CParticleSystemMgr::ParticleMgrReadbackRequest_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPAssignment_t,int,class CMemAllocAllocator>,struct CPAssignment_t,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_InstructionDebug,int,class CMemAllocAllocator>,struct CPulse_InstructionDebug,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_RegisterInfo,int,class CMemAllocAllocator>,struct CPulse_RegisterInfo,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CKV3MemberName,class std::unique_ptr<class CModelHitBoxesInfo,struct std::default_delete<class CModelHitBoxesInfo> >,class CDefEquals<class CKV3MemberName>,struct DefaultHashFunctor<class CKV3MemberName>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CKV3MemberName,class std::unique_ptr<class CModelHitBoxesInfo,struct std::default_delete<class CModelHitBoxesInfo> >,class CDefEquals<class CKV3MemberName>,struct DefaultHashFunctor<class CKV3MemberName>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CDefEquals<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,struct DefaultHashFunctor<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CWeakHandle<struct InfoForResourceTypeCTextureBase>,class CDefEquals<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,struct DefaultHashFunctor<class CWeakHandle<struct InfoForResourceTypeCTextureBase> >,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,int,class CDefEquals<int>,struct DefaultHashFunctor<int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<int,int,class CDefEquals<int>,struct DefaultHashFunctor<int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct FloatInputMaterialVariable_t,int,class CMemAllocAllocator>,struct FloatInputMaterialVariable_t,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct PGDInstruction_t,int,class CMemAllocAllocator>,struct PGDInstruction_t,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct TextureGroup_t,int,class CMemAllocAllocator>,struct TextureGroup_t,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct VecInputMaterialVariable_t,int,class CMemAllocAllocator>,struct VecInputMaterialVariable_t,int>::InsertBeforeGetPtr
+CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::AddPage
 CUtlVectorFixedGrowable
 C_INIT_InitFromCPSnapshot: CP %d - No snapshot specified for %s!\n
 C_INIT_InitFromCPSnapshot: CP: %d - "%s" snapshot for %s has no data!\n
@@ -1270,13 +1299,12 @@ C_INIT_InitFromCPSnapshot: Unsupported attribute data type! (%d)\n
 C_INIT_InitFromCPSnapshot: cannot initialize PREV_XYZ - XYZ cannot be read!\n
 C_INIT_InitFromCPSnapshot: framerate unknown initializing PREV_XYZ! Defaulting to 30fps, but particle velocity may look wrong...\n
 C_INIT_InitFromParentKilled: Unsupported attribute data type! (%d)\n
+C_INIT_SkyVisCull
 C_OP_SetFromCPSnapshot: cannot initialize PREV_XYZ - XYZ cannot be read!\n
 C_OP_SetFromCPSnapshot: framerate unknown initializing PREV_XYZ! Defaulting to 30fps, but particle velocity may look wrong...\n
 Calculate vector attribute
 Call C%d:I%d (%s)
 Can NOT
-Cancel
-Cancel observing.
 Cannot allocate abstract class
 Causes all single-fire particle assertions to trigger once more.
 Ceiling - round float up to nearest integer)
@@ -1303,10 +1331,11 @@ Color light from control point
 Color lit per particle
 Color random
 Commit Step
-Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
+Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive.
 Completed
 Computes 2 ( 2.71...) raised to a power
 Computes e ( 2.71...) raised to a power
+Cone Angle Offset
 Constrain distance to control point
 Constrain distance to path between two control points
 Constrain distance to user specified path
@@ -1338,6 +1367,7 @@ Cull random
 Cull relative to model
 Cull relative to plane
 Cull relative to ray trace environment
+Cull relative to sky visibility
 Cull relative to sphere
 Cull when crossing plane
 Cull when crossing sphere
@@ -1345,29 +1375,20 @@ Cursor Has Tag
 Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
 Cycle Scalar
-D_COMPRESSED_NORMALS_AND_TANGENTS
-D_DEBUG_STATS
-D_DEPTH_FEATHERING
-D_EXPLICIT_FETCH
-D_FORCE_LEGACY_SHADER_MODEL
-D_INITIALIZE_SYSTEM
-D_PANORAMA_PARTICLE
-D_PARTICLE_LDS_CACHE
-D_PER_PARTICLE_RADIUS
-D_SUPPORTS_RAYTRACING
-D_VISUALIZE_ROUNDNESS
 Dampen Movement Relative to Plane
 Dampen Movement relative to model
 Data_Branch1xy
 Data_Branch1zBranch2x
 Data_Branch2yz
+Decay From Wake
 Deg2 Rad
 Density-based force
 Depth
-DepthMap
 Desired Kill Priority
 Detach R%d
 Diffuse particle attributes
+Disable Non-Static Collision
+Disable Non-Static Collision Duration
 Disable to get a better look at what's happening offscreen
 DisableSorting
 Div R%d <- R%d / R%d
@@ -1376,7 +1397,7 @@ Dot Product Vector
 Dot Product of Vector a 
 Draw particle children with parents (-1=use gameinfo, 0=no, 1=yes)
 Drive CP from global sound float
-ERROR: SweepRenderer::render_slices got into an infinite loop!\n
+DualHull
 Elapsed time = %f\n
 Element Access R%d <- R%d[R%d]
 Emit continuously
@@ -1389,10 +1410,10 @@ EnableParticleShaderFeatureBranching
 Enables/Disables Particle Simulation
 Endcap timed system freeze
 EntityName
+Enum support.
 Eq R%d <- R%d == R%d
 Error in child list of particle system %s [%p], parent: %p\n
 Error initializing particle system %s\n
-Error: Sort failed\n
 Evaluate the curve at the specified input position
 Evaluate the gradient at a position between 0 and 1
 Exp2
@@ -1439,18 +1460,19 @@ F_SPHERICAL_HARMONIC_LIGHTING
 F_TEXTURE_LAYERS
 F_TINT_BY_FOW
 Fail Outflow
-Failed to allocate an instance of a class
-Failed to allocate an instance of class '%s'
+Failed to allocate an instance of a class of type '%s'
+Failed to allocate an instance of class '%s' (type '%s')
 Failed to init snapshot data for resource '%s'\n
-FilterTaps_t
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find all the yielded cursors on this graph with the matching tag and wake them.
 Find first element 'a' which compare equal to 'element' and return its index.
 FindParticleSystem
 Fixed "Animation Type" in Sprite Renderer not working for non-particle normal alignment types.\n
 Fixed "Inherit Attribute from Parent Particles" not keeping parent particles in sync with children.\n
 Fixed Float Evaluator "Particle Count Percent of Total Count" being off-by-one at the end. Double-check remapping of any Particle Count Normalized float evaluators.\n
 Fixed bugs in "Position along path sequential" where it could incorrectly create too many particles at the last control point. Also fixed issues with control points specified in backward order in that operator as well as "Movement lock to saved position along path".\n
+Flashlight
 Float To Game Time
 Float16HDRBackBuffer
 Floor - round float down to nearest integer
@@ -1461,9 +1483,9 @@ Force Control Point In Pet
 Force Scale
 Force based on distance from plane
 ForceMaterialOverride
+Format Duration String From Seconds
 Frac
 Fractional component (ie. returns 0.34 for 12.34)
-FrameBufferCopyTexture
 Frames Measured: %d\n
 Free
 Function "%s" not found while loading particle system\n
@@ -1473,8 +1495,10 @@ GPU Particle Simulate
 GPU Particles InitialValues %s
 GPU Particles0 %s
 GPU Particles1 %s
+GPUParticleRemapTexture %s
 GPUParticleRequiredResources
-GPUSimulateSupportsRaytracing
+GPUParticle_perframes
+GPUParticle_readbacks
 Game Blackboards: 
 Game Time To Float
 GameSupportsLegacyShaders
@@ -1497,18 +1521,16 @@ HAT\tKAT\tKAT\tKAT\tK
 HITBOX_INDEX
 HITBOX_RELATIVE_XYZ
 HSV Shift to control point
+Has All Flags
+Has Any Flags
 Hit maximum implicit index buffer size of %u, desired %u\n
 Hit maximum implicit vertex buffer size of %u, desired %u\n
 Hitbox Index
 Hitbox Offset Position
 How aggressive the switch to fallbacks will be depending on how far over the cl_particle_sim_fallback_threshold_ms the sim time is.  Higher numbers are more aggressive.
 IKV3TransferInterface_ResourceSave
-IKV3TransferInterface_UtlSymbolLarge
-IS_EFFECTS_LAYER
-IS_PARTICLE_MIXED_RESOLUTION_LAYER
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
-If -1 timer will continue forever
 If specified, each wait interval will vary randomly between WaitInterval this value
 If this cursor spawns other work via Fire And Forget, should this Tag be inherited?
 IgnoreMaterialOverride
@@ -1519,14 +1541,10 @@ Implicit: max verts %uk, max indices %uk\n
 Implicit: pruned particles %u, columns culled %u (%u particles)\n
 Implicit: verts per cell
 ImplicitVertex_t
-IndexBuffer
-IndexBufferSize
-IndexTriVertexBufferLayout
 Indicate Test Failure
 Indicate that a checkpoint has been reached.
 Indicates a test failure if Value is false.
 Indicates a test failure if value is false; only tested when running unit tests
-IndirectDrawArgs
 Inherit attribute from parent particle
 Inherit initial value from parent particle
 Init Collection [%p]: %s\n
@@ -1556,12 +1574,11 @@ Invoke Lib %s
 Is In Test Mode
 Is Valid Vector
 Is Valid World Vector
-IsoSurface
 Jump to Instr I%d
 KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
-Kill This Cursor And Cancel
+Killed on Cull
 LIFE_DURATION
 LONG PARTICLE RENDER: "%s" took %fms to submit to render.\n
 Lazily Cull on Float Comparison
@@ -1607,6 +1624,8 @@ Ls?q
 MANUAL_ANIMATION_FRAME
 MAtomicTransfersAsPlainString
 MGPUParticleFunction
+MM:SS with leading zeros
+MM_SS_LEADING_ZERO
 MODEL_RENDER_HELPER_PTR
 MODEL_RENDER_HELPER_PTR_2
 MODEL_RENDER_HELPER_PTR_3
@@ -1628,6 +1647,7 @@ MPropertyStartGroup
 MPropertySuppressField
 MPulseExpressionAlias
 MPulseFunctionHiddenInTool
+MPulseTypeRestriction
 MVectorIsCoordinate
 MVectorIsSometimesCoordinate
 Made disabling operators + children actually fully work.\n
@@ -1636,12 +1656,14 @@ Make Angle From Forward Vector
 Make Color
 Make Transform
 Make Vector
+Make Vector From Angle
 Make Vector2 D
 Make Vector4 D
 Make World Transform
 Make World Vector
 Make a Color from component parts
 Make a Transform from component parts.
+Make a Vector from an Angle
 Make a Vector from component parts.
 Make a Vector2D from component parts.
 Make a World Vector from component parts.
@@ -1672,7 +1694,7 @@ Model Helper Pointer 2
 Model Helper Pointer 3
 Model Helper Pointer 4
 Model Surface UV Snapshot Generator
-MotionVectorsTexture
+Motion Disabled
 Move particles between 2 control points
 Movement Lerp to Initial Position relative to CP
 Movement Lerp to skinned position from CP snapshot
@@ -1698,6 +1720,7 @@ Movement skin to bones rigid
 Mul R%d <- R%d * R%d
 Multi-Segment Display Snapshot Generator
 Multiplier for falling back to cheaper effects under load.
+N@Bad count in ArraySetCount (%d)
 NI>R
 NONE/Disabled
 NULL CELL 
@@ -1718,11 +1741,11 @@ Normal Scaling Force
 Normal align to CP
 Normal lock to control point
 Normal modify offset random
-NormalTexture
 Normalize Vector a
 Normalize vector
 Not R%d <- !R%d
 Not safe to 'new' this class due to alignment requirements
+Number Of Lights To Create
 O@33S@
 Offset of m_Children.m_pHead: [%i]\n
 On Interval
@@ -1730,7 +1753,6 @@ On True
 OnInterval
 Only wrote %d (of %d) values when saving map!
 Operator Name
-Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Or R%d <- R%d || R%d
 Oscillate scalar
@@ -1742,16 +1764,24 @@ OverlayProjectionDirection
 P8?2
 PARENT_PARTICLE_ID
 PARENT_PARTICLE_INDEX
+PARTICLE_ATTR_BOX_FLAGS_DISABLE_NONSTATIC_COLLISION
+PARTICLE_ATTR_BOX_FLAGS_MOTION_DISABLED
+PARTICLE_ATTR_BOX_FLAGS_WAKE_DECAY
+PARTICLE_ATTR_BOX_FLAGS_ZERO_GRAVITY
+PARTICLE_EVENT_TYPE_MASK_KILLED_ON_CULL
+PARTICLE_FLASHLIGHT
 PARTICLE_ID
+PARTICLE_VOLUMETRIC_SMOKE_TYPE_TRACE
 PET_SupportFadingOpaqueModels
+PF_TYPE_CONTROL_POINT_IS_SET
 PITCH
 PRECIPITATION
 PREV_XYZ
-PackedBlobNormal
 PanelID
 Parent Map: %s\n
 Parent Particle ID
 Parent Particle Index
+Parent VData
 Particle Binding
 Particle Binding (Real)
 Particle Error before emit: Effect %s, Function %s (%d, %d)\n
@@ -1779,8 +1809,10 @@ Particles/Budget_RenderUS
 Particles/Budget_SimulationUS
 Particles/GPUParticles
 Particles/MixedResoluion/Slices
+Particles/ParticlePixelCBSlot
 Particles/ParticleTextureBaseSlot
 Particles/ParticleTraceOffsetOnlyHit
+Particles/ParticleVertexCBSlot
 ParticlesFoggedByDefault
 ParticlesLib
 Pass Outflow
@@ -1792,6 +1824,7 @@ Pin Particle to control point
 Pin Rope Segment Particle to Parent Particle
 PivotPaint
 Play EndCap when Finished
+Point at Previous instead of next
 Point vector at next particle position
 Position On Grid
 Position Previous
@@ -1823,6 +1856,7 @@ Prevent passing through static part of world
 Print debug message every time a particle collection is created
 Print out information on existing particle systems
 Problem loading error.vpcf, please validate your game install\n
+Proceed Immediately
 Process Selector
 Profile Point 1
 Profile Point 2
@@ -1834,6 +1868,7 @@ Profile particle spike
 PropWorldOrigin
 Pull towards control point
 Pulse domain which enables particle content to query leaf code to introspect game state.
+PulseDurationStringFormat_t
 Q#B7
 Q#Bg
 QAngle
@@ -1851,6 +1886,7 @@ ROPE_SEGMENT_ID
 ROTATION
 ROTATION_SPEED
 Rad2 Deg
+Radially splashed points require exposure to sky
 Radius from CP object
 Radius scale
 Ramp control point linear random
@@ -1862,6 +1898,7 @@ Random World Position
 Random force
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
 Reciprocoal square root (1/sqrt)
+Recursion Branch Split Scale
 Ref Counted Pointer
 Register Test Checkpoint
 Reinitialize on endcap scalar random
@@ -1936,9 +1973,11 @@ Remap speed to scalar
 Remap touching water to scalar
 Remap vector to CP
 Remap velocity to vector
+Remove Flags
 Remove Tag From Cursor
 Remove all elements from 'a' which are invalid instances.
 Remove all elements from 'a' which compare equal to 'element'.
+Remove flags from the given value.
 Remove the element at the given index in 'a', decreasing its count by one and moving the elements after index.
 Remove the given tag from this cursor. If other cursors are waiting on us, they will resume.
 Render Cables
@@ -1976,7 +2015,7 @@ Render sprite trail
 Render sprites
 Render standard light
 Render volumetric smoke
-RenderOps_Init(15138): 
+RenderOps_Init(15110): 
 RenderSimpleModelCollection is missing a model to render
 Repeatedly Trigger Child Group
 Restart effect after duration
@@ -2021,11 +2060,12 @@ SHADER_EXTRA_DATA2
 Saturate
 Saturate (clamps float between 0 and 1)
 Save a named value of any type on the cursor.
+Scale Branch Distance From Recursion Depth
+Scale Branch Offset/Twist From Recursion Depth
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 ScaleMatrix
 Scene Object Pointer
-SceneDepth
 SceneSystem/DrawParticleChildrenSeparateFromParents
 SceneSystem/Particles/Debug Visualizer
 SceneSystem/Particles/Draw Particles
@@ -2039,6 +2079,7 @@ Scratch float 3
 Screen Space Distance To Edge
 Screen Space Position of Target
 Screen Space Rotate Toward Target
+Scroll Offset
 Second Sequence Number / Alpha Window Threshold
 Selectively Enable Children
 Sequence Number
@@ -2100,6 +2141,7 @@ Show all used controlpoints
 Show rope segments when debugging particle systems - specify a number to isolate to that segment id
 Show specific attribute when debugging particle systems
 Show the sorting position when debugging particle systems
+ShqN
 Sign Float
 Sign Int
 Signature hook to fill out arguments for OnInterval
@@ -2108,7 +2150,6 @@ Sim Time Max: %.2fms\n
 Sim Time Min: %.2fms\n
 Sine of angle. Input in radians, output in radians
 Snapshot load error for resource '%s': %s\n
-SphericalHarmonicsTextureA
 SphericalHarmonicsTextureB
 SphericalHarmonicsTextureC
 Spline
@@ -2127,14 +2168,12 @@ Split a Vector2D into component parts.
 Split a World Vector into component parts.
 Split an Angle into component parts.
 Spring to Vector constraint
-SpritecardRendererControls_t
 Sqr Float
 Sqr Int
 Sqrt
 Square root
 Start a timer with the specified duration, fire the OnInterval output 
-Stop Timer
-Stop any active timers - the completed outflow will still fire
+Stop Waiting
 Stop effect after duration
 Stops all particle systems currently playing
 Stops all particle systems that don't match specified name
@@ -2142,16 +2181,13 @@ Stops all particle systems that match specified name
 String Length
 Strings Are Equal Case Sensitive
 Sub R%d <- R%d - R%d
+Synchronous - Wait for this node to fully complete before proceeding.
 System Name
-SystemParticlesIn
-SystemParticlesOut
-SystemStepSize
 Systems Measured: %d\n
 T>gaW?:]f?AHV>'
 TINT_RGB
 TRAIL_LENGTH
 T\sgPmx
-T\tV_log2f
 Tag Cursor
 Tag Self When Complete
 TanFrameQuat
@@ -2165,24 +2201,27 @@ TextureLayer3
 TextureLayer4
 The maximum detail level of particle to create
 The maximum distance that particles will render
+This is the overall duration. If -1 timer will continue forever. During this duration, we will fire a new child cursor at each Interval.
 Threshold to warn about when rendering particles.
 Time since the start of the timer
 Time varying force
-TintColor
 Took %g uS per iteration to create+destroy %s, %gUs for create+sim
 Total Frames
 Total Render (us)
 Total Sim (us)
 Total particles created : %u
+Trace
 Trace cache efficiency = %.2f%% (%d traces for %d tests)\n
 Trail Length
 Tried to load a polymorphic pointer with no '%s' key
 Tried to load resource reference '%s' from a value without a resource reference specific type.
 Turbulent force
+Turn a time in seconds into a display string. NOT localized.
 Twist around axis
 UNUSED
 USER_EVENT_STATES
 Unable to find a valid model handle for m_bModelFromRenderer in '%s'\n
+Unknown format type
 Update lights
 Usage: particle_profile <'systems'|'operators'> <num_frames>\n
 Usage: particle_profile_spike <'systems'|'operators'> <spike_threshold_ms>\n
@@ -2191,6 +2230,8 @@ Use fixed seeds for easier debugging
 Use random seeds in debug
 Used to flag a test as having failed.
 User Event States
+VDATA
+VDataChoice( scripts/light_styles.vdata )
 Value 0-1 how far along duration (always 0 if duration is -1)
 Variable '%s' is referenced but not declared in this system (%s). Adding a fallback now.\n
 Vector To World Vector
@@ -2205,8 +2246,6 @@ Velocity random
 Velocity repulse from world
 Velocity set from control point
 Version circa 7/31/2018.
-VertexBuffer
-VertexBufferSize
 VertexColorUVPos_t
 VertexElementAnnotation
 VertexGenericIntegerData
@@ -2219,10 +2258,13 @@ WARNING: Particle system '%s' was not precached correctly. Performing blocking l
 WARNING: Particle system '%s' with missing path was not found in existing particle system list.\n
 WARNING: Removing circular reference to particle child '%s'.\n
 Wait Complete
+Wake Cursors With Tag
 Warning: Missing fallback for particle system "%s"!\n
-When False
 When Steady State in %f Seconds
-When True
+Whether value has ALL of the specified flags set (it may have other flags.)
+Whether value has ANY of the specified flags set (it may have other flags.)
+While False
+While True
 World Vector To Vector
 X to the Y power
 Y>UU
@@ -2230,6 +2272,8 @@ Y?Mi
 Yield, Resume=%s
 Yz'x
 Z>wg}?0
+Zero Gravity
+Zero Gravity Duration
 [ Chunk%d ]
 [ written at chunk start last-read I%d ]
 [ written by I%d last-read I%d ]
@@ -2241,30 +2285,31 @@ Z>wg}?0
 [RETURN R%d]
 [RETURN]
 \fT>M-+?#gy?
+\f\tV_acosd
 \n\n----------------------------\nInstance Count:\n
+\ng_flConfigMaxCoord
 \t%4d -  %s\n
-\tV_acosd
 \tV_asind
+\tV_atand
 \tV_cosd
-\tV_exp2f
 \tV_tand
-\t\tV_atand
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\tg_flConfigMaxCoord
+_\tV_log2f
 __CursorQueue__
 __FireCursorsParent__
 __State_Child_Condition__
-__State_Child_Subgraph__
 __TimelineParent__
 __procedural_colorgradient.vtex
 _procedural_particle_snapshot.vsnap
 _w|9^yq=v0
 a:fulltype
 a:typeparam
+allflags
 alloc_particles
 allowed_api_features
 allowed_requirements
 alpha2
+anyflags
 attr_factory
 attributes
 avg_num_tests
@@ -2280,16 +2325,12 @@ bE"W
 bE"g
 bInherit
 bValue
-beginFrame
-beginTile
 bentnormal
 blendindices
 blendweight
 blendweights
 blob indirect draw
-blobulator
 body part
-bouncescale
 box_angles
 box_maxs
 box_mins
@@ -2309,24 +2350,25 @@ clamp
 compressedtangentframe
 con_command
 creation_time
+cull on sky
 curvature
 data_offset
 data_size
+debug orientation
 def min cpu=%d system cpu=%d def gpu=%d system gpu=%d\n
 default_sort
 deg2rad
 densityVolume.InterpolatedVoxel( 0, Vector( 0.f, 0.f, 0.f ) )=%?
+direction input
 domain_scope
 dumpparticlelist
-dynamicbounce
 element
-endFrame
-endTile
 error.vpcf
+event horizon threshold distance for max force
 expected %s, got %s
+expression_type
 f>KZ}
 f?yu
-f\tV_remainderf
 fast
 features
 field_name
@@ -2347,6 +2389,7 @@ flPitch
 flRadians
 flRoll
 flScale
+flSeconds
 flTime
 flVal
 flValue
@@ -2355,17 +2398,20 @@ flValueB
 flWaitInterval
 flWaitIntervalHigh
 flYaw
+flashlight radius CP
+flashlight radius control point component
 float3
 force_scale
 frac
 g?Q1
 glow_alpha
 glow_rgb
+gpuparticlemgr
 gpuparticles
 gpuparticles_definition
 gpuparticles_evaluators
+gpuparticles_eventindices
 gpuparticles_functions
-gpuparticles_perframe
 gpuparticles_snapshot
 gpuparticles_uniqueindices
 h>4hp?
@@ -2382,16 +2428,21 @@ implicit vertices
 inherit attribute from peer particle systems
 internal error in particle system MapParticleOrientationIndexToShaderCombo()
 invalid_hitbox
+is_gpu_particle_system
+is_gpu_particle_system || m_nTraceSet == PARTICLE_TRACE_SET_STATIC
 is_selector
 itemgroups
 k>Mg
 k?C9
+kill density scale
 kv3:ParticleParamID_t
 length2d
 length3d
 lerp
 lifespan
 light has _fifty_percent_distance of %f but no zero_percent_distance\n
+light style
+light style time
 lj?HP
 log2
 lookup tables
@@ -2399,27 +2450,52 @@ lowprecisionuv
 lowprecisionuv1
 lwK?
 m_Children.m_pHead: [%p]\n
+m_Metadata
+m_SequencePoint
 m_Stops
 m_TagValue
-m_bBakedTwoSided
-m_bCanBatchWithDynamicShaderConstants
+m_bCheckExposedToSky
 m_bConditionValue
-m_bDrawLast
+m_bCullOnSky
+m_bDebugOrientation
 m_bFirstEvaluate
-m_bHasBakedLightingFromLightMap
-m_bHasBakedLightingFromVertexStream
-m_bIsNotMatchedToMaterial
-m_bNoShadow
-m_bOnlyShadow
-m_bUseCompressedNormalTangent
-m_bUseShadowFastPath
+m_bPrevious
+m_bScaleBranchDistance
+m_bScaleBranchDistance == false
+m_bScaleBranchOffset
+m_bScaleBranchOffset == false
 m_buffer=
-m_externalMethodTargetGraph
+m_fMinimumDistance
+m_flBranchDistanceScale
+m_flBranchOffsetScale
+m_flKillDensityScale
+m_flLightStyleTime
+m_flNumberOfLightsToCreate
+m_flRecursionSplitScale
+m_flScollOffset
 m_flSlopeIncoming
 m_flSlopeOutgoing
+m_flSubPixelAAScale
+m_hCursorOnOtherGraph
 m_nCurrentWakeIndex
+m_nCursorID
+m_nForcedStatusEffects == 0
 m_nGraphID
+m_nNoCollisionAttribute
+m_nPosition != PARTICLE_FLASHLIGHT
+m_nRadiusCP
+m_nRadiusCPField
+m_nType != PARTICLE_VOLUMETRIC_SMOKE_TYPE_TRACE
+m_nType == PARTICLE_VOLUMETRIC_SMOKE_TYPE_EMISSION || m_nType == PARTICLE_VOLUMETRIC_SMOKE_TYPE_TRACE
+m_nType == PARTICLE_VOLUMETRIC_SMOKE_TYPE_TRACE
+m_nYieldToken
+m_nZeroGravityAttribute
+m_strLightStyle
+m_strLightStyle == ''
 m_szEffect
+m_vPrevPosition
+m_vecConeRotationOffset
+m_vecPreviewWind
 manual_animation_frame
 materials/dev/gpu_particles_initialize.vmat
 materials/dev/gpu_particles_simulate.vmat
@@ -2434,19 +2510,23 @@ max_render
 max_sim
 medium
 mesh group
+mod != csgo && mod != hlx
 n?9a
 nDenominator
 nFirstParticle=%?
+nFormat
 nKillPriority
 nMaxElements
 nNumerator
+nRemainderDigits
+nRemainderNoiseDigits
 nValue
+nWakePriority
 no_gpu_blobs
 non_homogenous_forward_layer_only
 not obeying particle system stencil of failure to parse stencil comparison string %s\n
 not rendering particle system because of failure ot parse stencil write string %s\n
 num_particles
-o\tV_sind
 o\t\raHC
 opacity
 operators
@@ -2490,17 +2570,20 @@ point_4
 polymorphic_arg
 pos[
 posxyz
+prev position
 procedural_spritecard.vmat
 propattr_flatten_into_parent_row
 pulse_node_custom_attributes
 pulse_runtime_lib
 pvec_color_black
 pvec_color_white
+q\tV_remainderf
 quX?
 r_draw_particle_children_with_parents
 r_drawparticles
 r_particle_allowprerender
 r_particle_batch_collections
+r_particle_batch_in_fullsort
 r_particle_cables_cast_shadows
 r_particle_cables_culling
 r_particle_cables_culling_bounds_scale
@@ -2536,6 +2619,7 @@ r_particle_model_per_thread_count
 r_particle_multiplier
 r_particle_newinput
 r_particle_render_refreshes_sleep_timer
+r_particle_render_sprites_issue_vizquery
 r_particle_render_test
 r_particle_skip_postsim
 r_particle_testbuffers
@@ -2584,6 +2668,7 @@ spritecardparticlestrailwithnormal
 spritecardtessvb
 strValue
 string_list
+sub-pixel AA scale
 systems
 t>vTU>
 tagValue
@@ -2602,8 +2687,10 @@ total_sim
 trail_length
 translucent
 turn on optimized particle init
+type_restriction_is_enum_flags
 vForward
 vMins=%?
+value:fulltype
 vecValue
 vecValueA
 vecValueB
@@ -2612,5 +2699,6 @@ vn[90
 wH>r
 xn>8
 y?U0
-z>RegisterConCommand: Unknown error registering con command "%s"!\n
 zW>w
+z\tV_sind
+{ item_factory = 'IntervalTimer' }

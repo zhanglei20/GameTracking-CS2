@@ -1,15 +1,14 @@
 %s%c%04i%02i%02i-%02i%02i%02i-%s
 %s%cbug.txt
--\tV_fread
 .?AVCBugReporter@@
 .?AVIBugReporter@@
-2\vph
+2\vpH
+6\tV_fread
 <<Invalid>>
 Area
 BugReporter005
 Build
 C:\buildworker\csgo_rel_win64\build\_build_\utils\bugreporter_filequeue\_vpc_bugreporter_filequeue\default\win64\_msvc_\Retail\bugreporter_filequeue.pdb
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbol,class CUtlVector<class CUtlSymbol,int,class CUtlVectorMemory_Growable<class CUtlSymbol,int,0> > *,struct CBugReporter_UtlSymbol_LessThan,int>::Node_t,class CUtlOrderedMapBase<class CUtlSymbol,class CUtlVector<class CUtlSymbol,int,class CUtlVectorMemory_Growable<class CUtlSymbol,int,0> > *,struct CBugReporter_UtlSymbol_LessThan,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbol,class CUtlVector<class CUtlSymbol,int,class CUtlVectorMemory_Growable<class CUtlSymbol,int,0> > *,struct CBugReporter_UtlSymbol_LessThan,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 Category
 DriverInfo
 Level
@@ -18,7 +17,7 @@ Misc
 Names
 OptionsFile
 Owner
-R\fph
+R\fpH
 Savegame
 Screenshot
 Source2
@@ -37,7 +36,7 @@ config_file
 crashdump_user_name
 json
 netmask
-r\vph
+r\vpH
 resource/bugreporter.res
 source2
 username

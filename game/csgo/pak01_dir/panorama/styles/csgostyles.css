@@ -4117,3 +4117,11 @@ Label .InlineGlyph
 	vertical-align: center;
 }
 
+CSGOScoreboardContainer
+{
+	border: 0;
+	margin: 0;
+	vertical-align: center;
+	horizontal-align: center;
+}
+

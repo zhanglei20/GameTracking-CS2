@@ -44,6 +44,7 @@
 .?AVIIMEManager@@
 .?AVIMEManagerBase@@
 0x%4.4x 
+2\vp`Z
 A previous call to CoInitializeEx specified the concurrency model for this thread as multithread apartment (MTA).\n
 ABC IME
 ALPHANUMERIC_FULL
@@ -232,6 +233,7 @@ QQPinyin
 Quan Pin
 Quan Pin 6.0
 Quick
+R\fp`Z
 RegEnumKeyExA
 RegOpenKeyExW
 RegQueryInfoKeyW
@@ -301,7 +303,6 @@ Wubi98
 Zheng Ma
 Zheng Ma 6.0
 ZhengMa
-\nP4f
 \tV_wcsicmp
 `5Sf
 c\t4
@@ -328,6 +329,7 @@ itABC IME v5.30
 phon.ime
 pintlgnt.ime
 quick.ime
+r\vp`Z
 sogoupy.ime
 winabc.ime
 winabcx.ime

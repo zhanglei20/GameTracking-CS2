@@ -18,7 +18,7 @@
    + Shape %3d Deltas: %5d - %s\n
    - Searched %s
   Bad Fax Lines: %lu\n
-  C%d:I%-2d {F=%-10d,V=%-10d} 
+  C%d:I%-2d {F=%-10d,V=%-10d,S=%-20.20s} 
   CallInfo%d: %s\n
   Cell%d - NULL\n
   Cell%d EditorID:%d [%s]: %s\n
@@ -43,12 +43,11 @@
  &Colors
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
- (08@HPX`j
- (08@HPXbP
- (08@HPZ
- (08@HRP
- (08@JP
- (0X`hpzP
+ (08@HPX`j` 
+ (08@HPXbPk+
+ (08@HRPk+
+ (08@JPk+
+ (0X`hpzPk+
  (repeat)
  (x2 - stereoscopic)
  * Animation Stack %s Layer %s - %s\n
@@ -212,6 +211,7 @@
 #\f?focusNextPrevChild@QTextEdit@@MEAA_N_N@Z
 #\n?columnCount@QSortFilterProxyModel@@UEBAHAEBVQModelIndex@@@Z
 #\r?hide@QWidget@@QEAAXXZ
+#\tV_exp2f
 $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 $COLORWARP
 $ChamberLight
@@ -221,7 +221,6 @@ $CounterDigitTens
 $CounterIcon
 $DETAIL2
 $DIFFUSEWARP
-$DryEraseMarker
 $ENVMAP
 $FRESNELCOLORWARP
 $FRESNELWARP
@@ -247,6 +246,7 @@ $SlideLight
 $WristIconFrame
 $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
+$\tV_expd
 $cloakfactor
 $fullycloakedrefractfactor
 $keys
@@ -361,6 +361,7 @@ $prefix_element$
 %s compression support is not configured
 %s encoding %s %d format %s %d %s\n
 %s is malformed\n
+%s%02d:%02d
 %s%02i:%02i:%02i.%03i
 %s%02i:%02i:%02i:%.02f
 %s%02i:%02i:%02i:%02.0f
@@ -482,6 +483,7 @@ $prefix_element$
 (No User Picks)
 (Root Element)
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
+(\fKMr
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
 (multiple presets with different descriptions)
@@ -552,7 +554,7 @@ $prefix_element$
 ...filter...
 ../tf_movies/elements/sessions/mtt_%s/mtt_%s.dmx
 .?AU?$StoredFunctorCall2@XP6AXAEBVQStringList@@AEBVQString@@@ZV1@V2@@QtConcurrent@@
-.?AUCAttr_m_InterestTags@?1??GetAttributeTable_CChoreoActor@CChoreoActor@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_StrafeMode@?1??GetAttributeTable_CChoreoEvent_FACE@CChoreoEvent_FACE@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CChoreoActor@CChoreoActor@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CChoreoEvent_ANIMGRAPH_CONTROLLER@CChoreoEvent_ANIMGRAPH_CONTROLLER@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CChoreoEvent_ANIM_CLIP@CChoreoEvent_ANIM_CLIP@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -595,8 +597,10 @@ $prefix_element$
 .?AUCAttr_no_member@?4??GetAttributeTable_CChoreoEvent_ANIM_CLIP@CChoreoEvent_ANIM_CLIP@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?4??GetAttributeTable_CChoreoEvent_BaseLocalEvent@CChoreoEvent_BaseLocalEvent@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?4??GetAttributeTable_CChoreoEvent_EXTERNAL_ANIMGRAPH@CChoreoEvent_EXTERNAL_ANIMGRAPH@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?4??GetAttributeTable_CChoreoEvent_EXTERNAL_ANIMGRAPH_CONTROL@CChoreoEvent_EXTERNAL_ANIMGRAPH_CONTROL@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?4??GetAttributeTable_CChoreoEvent_LOCATOR@CChoreoEvent_LOCATOR@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?4??GetAttributeTable_CChoreoEvent_LOOKAT@CChoreoEvent_LOOKAT@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?4??GetAttributeTable_CChoreoEvent_SEQUENCE@CChoreoEvent_SEQUENCE@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?4??GetAttributeTable_CChoreoEvent_SPEAK@CChoreoEvent_SPEAK@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?5??GetAttributeTable_CChoreoActor@CChoreoActor@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?5??GetAttributeTable_CChoreoEvent_ANIM_CLIP@CChoreoEvent_ANIM_CLIP@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -604,16 +608,27 @@ $prefix_element$
 .?AUCAttr_no_member@?5??GetAttributeTable_CChoreoEvent_EXTERNAL_ANIMGRAPH@CChoreoEvent_EXTERNAL_ANIMGRAPH@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?5??GetAttributeTable_CChoreoEvent_LOCATOR@CChoreoEvent_LOCATOR@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?5??GetAttributeTable_CChoreoEvent_LOOKAT@CChoreoEvent_LOOKAT@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?5??GetAttributeTable_CChoreoEvent_SEQUENCE@CChoreoEvent_SEQUENCE@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?5??GetAttributeTable_CChoreoEvent_SPEAK@CChoreoEvent_SPEAK@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?6??GetAttributeTable_CChoreoEvent_ANIM_CLIP@CChoreoEvent_ANIM_CLIP@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?6??GetAttributeTable_CChoreoEvent_BaseLocalEvent@CChoreoEvent_BaseLocalEvent@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?6??GetAttributeTable_CChoreoEvent_EXTERNAL_ANIMGRAPH@CChoreoEvent_EXTERNAL_ANIMGRAPH@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?6??GetAttributeTable_CChoreoEvent_LOOKAT@CChoreoEvent_LOOKAT@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?6??GetAttributeTable_CChoreoEvent_SEQUENCE@CChoreoEvent_SEQUENCE@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?6??GetAttributeTable_CChoreoEvent_SPEAK@CChoreoEvent_SPEAK@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?7??GetAttributeTable_CChoreoEvent_ANIM_CLIP@CChoreoEvent_ANIM_CLIP@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?7??GetAttributeTable_CChoreoEvent_BaseLocalEvent@CChoreoEvent_BaseLocalEvent@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?7??GetAttributeTable_CChoreoEvent_EXTERNAL_ANIMGRAPH@CChoreoEvent_EXTERNAL_ANIMGRAPH@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?7??GetAttributeTable_CChoreoEvent_LOOKAT@CChoreoEvent_LOOKAT@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?7??GetAttributeTable_CChoreoEvent_SEQUENCE@CChoreoEvent_SEQUENCE@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?8??GetAttributeTable_CChoreoEvent_ANIM_CLIP@CChoreoEvent_ANIM_CLIP@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?8??GetAttributeTable_CChoreoEvent_EXTERNAL_ANIMGRAPH@CChoreoEvent_EXTERNAL_ANIMGRAPH@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?8??GetAttributeTable_CChoreoEvent_LOOKAT@CChoreoEvent_LOOKAT@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?9??GetAttributeTable_CChoreoEvent_ANIM_CLIP@CChoreoEvent_ANIM_CLIP@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?L@??GetAttributeTable_CChoreoEvent_ANIM_CLIP@CChoreoEvent_ANIM_CLIP@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?M@??GetAttributeTable_CChoreoEvent_ANIM_CLIP@CChoreoEvent_ANIM_CLIP@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_IntervalTimer_DebugInfo_t@@
 .?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AUVDataInitInfo_t@@
 .?AV<lambda_100>@?BBP@??contextMenuEvent@CQAnimationSetControlTree@@MEAAXPEAVQContextMenuEvent@@@Z@
@@ -736,6 +751,7 @@ $prefix_element$
 .?AV<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_19>@?EC@??contextMenuEvent@CQAnimationSetControlTree@@MEAAXPEAVQContextMenuEvent@@@Z@
 .?AV<lambda_19>@?L@??OnTrackContextMenuWillBeShown@CQTimelineEditor@@QEAAXPEAVQMenu@@PEAVQObject@@PEAVCDmeTrack@@VDmeTime_t@@@Z@
+.?AV<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
 .?AV<lambda_1>@?1???$AddMatrixToMatrix@$00VCVariableMatrix@@V1@@MatrixMath@@YAXAEBVCVariableMatrix@@PEAV2@@Z@
 .?AV<lambda_1>@?1???$AddMatrixToMatrix@$0A@VCVariableMatrix@@V1@@MatrixMath@@YAXAEBVCVariableMatrix@@PEAV2@@Z@
 .?AV<lambda_1>@?1???$AddRadioFunctorAction@VCDmeTransformPath@@M@CActionHelper@@SAPEAVCQFunctorAction@@PEBDPEAVQObject@@PEAVCDmeTransformPath@@P84@EAAXM@ZAEBM4_NAEBVQKeySequence@@AEBVQString@@H@Z@
@@ -891,6 +907,7 @@ $prefix_element$
 .?AV<lambda_29>@?1??CreateGlobalActions@CQSFMController@@AEAAXXZ@
 .?AV<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_29>@?HC@??contextMenuEvent@CQAnimationSetControlTree@@MEAAXPEAVQContextMenuEvent@@@Z@
+.?AV<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
 .?AV<lambda_2>@?1???0CQSFMNewWizardDialog@@QEAA@_NPEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z@
 .?AV<lambda_2>@?1???0CQScreencastSettingsEditor@@QEAA@XZ@
 .?AV<lambda_2>@?1??AddSelectClipMenu@CQTimelineEditor@@QEAAXPEAVQMenu@@PEAVQObject@@PEAVCDmeTrackGroup@@PEAVCDmeTrack@@VDmeTime_t@@@Z@
@@ -1267,7 +1284,6 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@MVCChoreoEvent_LOOP@@@@
 .?AV?$CBaseConcreteToolAttr@MVCChoreoEvent_REQUIREMENTS@@@@
 .?AV?$CBaseConcreteToolAttr@MVCChoreoEvent_SPEAK@@@@
-.?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@VCChoreoActor@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCChoreoEvent_LOCATOR@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCChoreoActor@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCChoreoEvent_ANIMGRAPH_CONTROLLER@@@@
@@ -1290,9 +1306,13 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCChoreoEvent_STOPPOINT@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCChoreoScene@@@@
 .?AV?$CBaseConcreteToolAttr@VQAngle@@VCChoreoEvent_LOCATOR@@@@
+.?AV?$CBaseConcreteToolAttr@W4ChoreoStrafeMode_t@@VCChoreoEvent_FACE@@@@
+.?AV?$CBaseConcreteToolAttr@W4HandshakeTagType_t@@VCChoreoEvent_EXTERNAL_ANIMGRAPH@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCChoreoActor@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCChoreoEvent_ANIM_CLIP@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCChoreoEvent_BaseLocalEvent@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH_CONTROL@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCChoreoEvent_GESTURE@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCChoreoEvent_LOCATOR@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCChoreoEvent_LOOKAT@@@@
@@ -1331,9 +1351,13 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCChoreoEvent_STOPPOINT@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCChoreoScene@@@@
 .?AV?$CBaseConcreteToolAttrValue@VQAngle@@VCChoreoEvent_LOCATOR@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4ChoreoStrafeMode_t@@VCChoreoEvent_FACE@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4HandshakeTagType_t@@VCChoreoEvent_EXTERNAL_ANIMGRAPH@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCChoreoActor@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCChoreoEvent_ANIM_CLIP@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCChoreoEvent_BaseLocalEvent@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH_CONTROL@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCChoreoEvent_GESTURE@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCChoreoEvent_LOCATOR@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCChoreoEvent_LOOKAT@@@@
@@ -1355,7 +1379,6 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@MVCChoreoEvent_LOOP@@X@@
 .?AV?$CConcreteToolAttr@MVCChoreoEvent_REQUIREMENTS@@X@@
 .?AV?$CConcreteToolAttr@MVCChoreoEvent_SPEAK@@X@@
-.?AV?$CConcreteToolAttr@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@VCChoreoActor@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCChoreoEvent_LOCATOR@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCChoreoActor@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCChoreoEvent_ANIMGRAPH_CONTROLLER@@X@@
@@ -1378,16 +1401,19 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@VCUtlString@@VCChoreoEvent_STOPPOINT@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCChoreoScene@@X@@
 .?AV?$CConcreteToolAttr@VQAngle@@VCChoreoEvent_LOCATOR@@X@@
+.?AV?$CConcreteToolAttr@W4ChoreoStrafeMode_t@@VCChoreoEvent_FACE@@X@@
+.?AV?$CConcreteToolAttr@W4HandshakeTagType_t@@VCChoreoEvent_EXTERNAL_ANIMGRAPH@@X@@
 .?AV?$CConcreteToolAttr@_NVCChoreoActor@@X@@
+.?AV?$CConcreteToolAttr@_NVCChoreoEvent_ANIM_CLIP@@X@@
 .?AV?$CConcreteToolAttr@_NVCChoreoEvent_BaseLocalEvent@@X@@
 .?AV?$CConcreteToolAttr@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH@@X@@
+.?AV?$CConcreteToolAttr@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH_CONTROL@@X@@
 .?AV?$CConcreteToolAttr@_NVCChoreoEvent_GESTURE@@X@@
 .?AV?$CConcreteToolAttr@_NVCChoreoEvent_LOCATOR@@X@@
 .?AV?$CConcreteToolAttr@_NVCChoreoEvent_LOOKAT@@X@@
 .?AV?$CConcreteToolAttr@_NVCChoreoEvent_REQUIREMENTS@@X@@
 .?AV?$CConcreteToolAttr@_NVCChoreoEvent_SEQUENCE@@X@@
 .?AV?$CConcreteToolAttr@_NVCChoreoEvent_SPEAK@@X@@
-.?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@VCChoreoActor@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCChoreoEvent_ANIM_CLIP@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCChoreoEvent_BaseLocalEvent@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCChoreoEvent_LOOP@@@@
@@ -1420,9 +1446,13 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCChoreoEvent_STOPPOINT@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCChoreoScene@@@@
 .?AV?$CConcreteToolAttrGetSet@VQAngle@@VCChoreoEvent_LOCATOR@@@@
+.?AV?$CConcreteToolAttrGetSet@W4ChoreoStrafeMode_t@@VCChoreoEvent_FACE@@@@
+.?AV?$CConcreteToolAttrGetSet@W4HandshakeTagType_t@@VCChoreoEvent_EXTERNAL_ANIMGRAPH@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCChoreoActor@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCChoreoEvent_ANIM_CLIP@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCChoreoEvent_BaseLocalEvent@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH_CONTROL@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCChoreoEvent_GESTURE@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCChoreoEvent_LOCATOR@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCChoreoEvent_LOOKAT@@@@
@@ -1766,7 +1796,6 @@ $prefix_element$
 .?AV?$CTier1AppSystem@VIToolSystem2@@$0A@@@
 .?AV?$CTier2AppSystem@VIToolSystem2@@$0A@@@
 .?AV?$CTier3AppSystem@VIToolSystem2@@$0A@@@
-.?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@VCChoreoActor@@@@
 .?AV?$CToolAttrGetSetAccess@HVCChoreoEvent_ANIM_CLIP@@@@
 .?AV?$CToolAttrGetSetAccess@HVCChoreoEvent_BaseLocalEvent@@@@
 .?AV?$CToolAttrGetSetAccess@HVCChoreoEvent_LOOP@@@@
@@ -1799,9 +1828,13 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCChoreoEvent_STOPPOINT@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCChoreoScene@@@@
 .?AV?$CToolAttrGetSetAccess@VQAngle@@VCChoreoEvent_LOCATOR@@@@
+.?AV?$CToolAttrGetSetAccess@W4ChoreoStrafeMode_t@@VCChoreoEvent_FACE@@@@
+.?AV?$CToolAttrGetSetAccess@W4HandshakeTagType_t@@VCChoreoEvent_EXTERNAL_ANIMGRAPH@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCChoreoActor@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCChoreoEvent_ANIM_CLIP@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCChoreoEvent_BaseLocalEvent@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCChoreoEvent_EXTERNAL_ANIMGRAPH_CONTROL@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCChoreoEvent_GESTURE@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCChoreoEvent_LOCATOR@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCChoreoEvent_LOOKAT@@@@
@@ -1975,16 +2008,19 @@ $prefix_element$
 .?AV?$ISceneObjectDescBase@VCVertexListSceneObject@@@@
 .?AV?$IToolAttrConcreteDataAccess@H@@
 .?AV?$IToolAttrConcreteDataAccess@M@@
-.?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$Vec3D@M@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCUtlString@@@@
 .?AV?$IToolAttrConcreteDataAccess@VQAngle@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4ChoreoStrafeMode_t@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4HandshakeTagType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@_N@@
 .?AV?$IToolAttr_TypedValue@H@@
 .?AV?$IToolAttr_TypedValue@M@@
 .?AV?$IToolAttr_TypedValue@V?$Vec3D@M@@@@
 .?AV?$IToolAttr_TypedValue@VCUtlString@@@@
 .?AV?$IToolAttr_TypedValue@VQAngle@@@@
+.?AV?$IToolAttr_TypedValue@W4ChoreoStrafeMode_t@@@@
+.?AV?$IToolAttr_TypedValue@W4HandshakeTagType_t@@@@
 .?AV?$IToolAttr_TypedValue@_N@@
 .?AV?$QFutureInterface@X@@
 .?AV?$QFutureWatcher@X@@
@@ -2148,6 +2184,7 @@ $prefix_element$
 .?AV?$_Func_impl_no_alloc@V<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_19>@?EC@??contextMenuEvent@CQAnimationSetControlTree@@MEAAXPEAVQContextMenuEvent@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_19>@?L@??OnTrackContextMenuWillBeShown@CQTimelineEditor@@QEAAXPEAVQMenu@@PEAVQObject@@PEAVCDmeTrack@@VDmeTime_t@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$AddMatrixToMatrix@$00VCVariableMatrix@@V1@@MatrixMath@@YAXAEBVCVariableMatrix@@PEAV3@@Z@XHH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$AddMatrixToMatrix@$0A@VCVariableMatrix@@V1@@MatrixMath@@YAXAEBVCVariableMatrix@@PEAV3@@Z@XHH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$AddRadioFunctorAction@VCDmeTransformPath@@M@CActionHelper@@SAPEAVCQFunctorAction@@PEBDPEAVQObject@@PEAVCDmeTransformPath@@P85@EAAXM@ZAEBM4_NAEBVQKeySequence@@AEBVQString@@H@Z@X$$V@std@@
@@ -2303,6 +2340,7 @@ $prefix_element$
 .?AV?$_Func_impl_no_alloc@V<lambda_29>@?1??CreateGlobalActions@CQSFMController@@AEAAXXZ@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_29>@?HC@??contextMenuEvent@CQAnimationSetControlTree@@MEAAXPEAVQContextMenuEvent@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1???0CQSFMNewWizardDialog@@QEAA@_NPEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1???0CQScreencastSettingsEditor@@QEAA@XZ@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??AddSelectClipMenu@CQTimelineEditor@@QEAAXPEAVQMenu@@PEAVQObject@@PEAVCDmeTrackGroup@@PEAVCDmeTrack@@VDmeTime_t@@@Z@X$$V@std@@
@@ -2671,7 +2709,6 @@ $prefix_element$
 .?AV?$_Func_impl_no_alloc@V?$RemapIndexFunctor@$04$0A@VFbxLayerElementUserData@fbxsdk@@@@HPEBVFbxLayerElementUserData@fbxsdk@@HH@std@@
 .?AV?$_Func_impl_no_alloc@V?$RemapIndexFunctor@$0A@$0A@VFbxLayerElementUserData@fbxsdk@@@@HPEBVFbxLayerElementUserData@fbxsdk@@HH@std@@
 .?AVCAccumulationLayerRenderer@@
-.?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@VCChoreoActor@@X@@
 .?AVCBaseDynamicWidgetFactory@@
 .?AVCBasePresetOperation@@
 .?AVCBasePulseGraphInstance@@
@@ -3397,7 +3434,6 @@ $prefix_element$
 .?AVITimeHelperListener@@
 .?AVITimeStripInterface@@
 .?AVITimelinePreviewChangedListener@@
-.?AVIToolAttr_Array@@
 .?AVIToolAttr_Table@@
 .?AVIToolAttr_Value@@
 .?AVIToolFrameListener@@
@@ -3557,7 +3593,6 @@ $prefix_element$
 0 0 1
 0.08
 0.9.8.4
-00"w>
 00.00
 0000
 0000 of 0000
@@ -3570,16 +3605,16 @@ $prefix_element$
 00000000
 000000000
 0123456789
-08@HR
-08@JP
-0DBu
+08@HR` 
+08@JPk+
+08B` 
+0>p5
+0Hru
 0L6?
 0\fE04_
-0dLu
 0x%1
 0x%llx
 0x%p = %s '%s'
-0x%u
 1 control locked to %1
 1 item
 1"?updateGeometry@QWidget@@QEAAXXZ
@@ -3956,6 +3991,7 @@ $prefix_element$
 2048 x 1536
 2048 x 2048
 2048 x 858 (2K)
+20j)
 23.976
 24 fps
 256 (override)
@@ -3986,6 +4022,7 @@ $prefix_element$
 2OnDownPressed()
 2OnValueChanged(QString)
 2PickCancelled()
+2Pk+
 2PlaybackSpeedChanged( float )
 2PoseParameterChanged( int, float )
 2PoseParameterEditingFinished( int, float )
@@ -4006,8 +4043,7 @@ $prefix_element$
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpDBu
-2\vpdLu
+2\vp4
 2aboutToHide()
 2aboutToShow()
 2accepted()
@@ -4160,6 +4196,7 @@ $prefix_element$
 969p
 999.9
 999.999
+9>-memory-
 9E7?Y
 9EG>
 9EW?9
@@ -4208,6 +4245,7 @@ $prefix_element$
 <map_value>
 <no shot selected>
 <no vsnds>
+<non-RTTI type>
 <none>\n
 <p>Copyright by Valve Corporation. All rights reserved.                     
 <sil>
@@ -6502,12 +6540,15 @@ $prefix_element$
 ?waitForFinished@QProcess@@QEAA_NH@Z
 ?waitForReadyRead@QProcess@@UEAA_NH@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
+@606
+@608
+@HPX`hvpP
 @Integer overflow in %s
 @\n?document@QPlainTextEdit@@QEBAPEAVQTextDocument@@XZ
-@\tV_isinfd
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 @control_point
 @fff>fff>fff>fff>
+@htP#
 @merged
 @spawn
 A picker dialog is active
@@ -6585,6 +6626,7 @@ Add Film Clip
 Add Fire Weapon Effects
 Add Fire Weapon Effects (Left)
 Add Fire Weapon Effects (Right)
+Add Flags
 Add Fog Controls
 Add Global Desaturation Control
 Add HSL Grain FX Clip To Track
@@ -6609,6 +6651,7 @@ Add Texture Overlay FX Clip(s)
 Add Track
 Add Track Group
 Add Wind Controls
+Add flags to the given value.
 Add game sound
 Add illumPositionDag attribute
 Add keys
@@ -6647,12 +6690,12 @@ AdobeDeflate
 Adopt Orphaned Scene Elements
 After Movie Arguments
 After Movie Command
+After the real remainder, how many additional digits should we continue to append to create additional visual movement?
 Ago : lower-mid central unrounded vowel
 Ago : mid-central unrounded vowel
 Aim Constrain
 Aim Work Camera At Manipulator
 AimWorkCameraAtManipulator
-Alignment
 All Clips
 All Clips after %.3f
 All Clips before %.3f
@@ -6663,7 +6706,6 @@ Alpha Fade and Decay
 Alpha Random
 Alpha decoder initialization failed.
 Alpha:
-Always
 Ambient Effects
 Ambient Occlusion Mode:
 Amount:
@@ -6675,9 +6717,15 @@ And R%d <- R%d && R%d
 Anim Actual
 Anim Clip
 Anim Est (days)
+AnimClip Is Looping
+AnimClip Is Public
+AnimClip Public Name
+AnimClips:
 AnimGraph Parameter Controller
 AnimGraphParameters
 AnimGraphValue
+AnimSequence Is Public
+AnimSequence Public Name
 AnimatableSceneObjectDesc
 Animation Bone Flags
 Animation Configuration File
@@ -6755,11 +6803,15 @@ Ascii
 Asize
 Assert True
 Asset Browser
-Async Fire C%d:I%d
+AssetBrowse( %s )
+AssetBrowse()
+Async Call Method (Child Cursor) C%d:I%d
+Async Outflow (Child Cursor) C%d:I%d
+Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 At Bookmarks
 At least one sound clip must be selected to extract phonemes.
 Ate : upper-mid front unrounded vowel
-AtlasToVolumeTextureConversion(3093): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
+AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attach IK Rig
 Attach Spline Rig
 Attempted to add the same remapped control "%s" twice!\n
@@ -6790,6 +6842,7 @@ Autosaving...
 B channel not found!\n
 B-Spline
 B>X?L7I>
+BSceneSystem
 BUTTON
 B\f?focusWidget@QApplication@@SAPEAVQWidget@@XZ
 B\nP\t0
@@ -6836,6 +6889,7 @@ Base-2 logarithm
 BaselineExposure
 BaselineNoise
 BaselineSharpness
+Basic string support.
 BayerGreenSplit
 Begin mouse capture [%i]: %s\n
 Begin testing a condition composed of Observable values. Continues checking until canceled.
@@ -6942,7 +6996,6 @@ C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\lightingcontrolrig.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_hitboxes.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_sky.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\toolrenderutils.cpp
-CAdditionalWearable
 CBasePulseGraphInstance::CBasePulseGraphInstance( %p )\n
 CBasePulseGraphInstance::EndGraphReload( %p ) %s\n
 CBasePulseGraphInstance::InitInstance_Internal( %s; %p ) %s\n
@@ -6950,14 +7003,14 @@ CBasePulseGraphInstance::Shutdown( %s; %p ) %s\n
 CBasePulseGraphInstance::StartGraphReload( %p ) %s\n
 CBasePulseGraphInstance::~CBasePulseGraphInstance( %p )\n
 CBaseToolSystem2::BlockingLoadResourceManifestGroup
-CBaseToolsModelInstance::CreateReversedIBs(4560): 
+CBaseToolsModelInstance::CreateReversedIBs(4586): 
 CBindableCamera
 CBufferString
-CCEntityHandle
 CCITT Group 3
 CCITT Group 4
 CCITT RLE
 CCITT RLE/W
+CCast of %s loses value information (returning %s)\n
 CChoreoActor
 CChoreoEvent_ANIMGRAPH_CONTROLLER
 CChoreoEvent_ANIM_CLIP
@@ -6984,7 +7037,6 @@ CChoreoObjectBase
 CChoreoScene
 CChoreoScene::ImportEventFromKV3( %s ):  discarding invalid event of type '%s'\n
 CColorGradient
-CDOTAPlayerPawn
 CDataModel:  %i elements left in memory!!!\n
 CDataModel: Failed to open file "%s"\n
 CDataModel: Failed to open file %s\n
@@ -7139,7 +7191,7 @@ COMMAND_TEXT_MODE_ICON
 COMMAND_TEXT_MODE_MENU
 COMMAND_TEXT_MODE_NONE
 CParticleCollectionBindingInstance::HACK_UnusedBinding
-CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1186
+CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1166
 CParticleProperty::AddControlPoint
 CParticleProperty::SetControlPoint
 CParticleSystemQuery::GetTintOnCPEntity not yet implemented!\n
@@ -7159,9 +7211,9 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
+CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
-CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
 CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
@@ -7171,26 +7223,28 @@ CPulseCell_Inflow_ObservableVariableListener '%s'.'%s (%u)' --> Chunk%d: %s
 CPulseCell_InlineNodeSkipSelector::ProcessSelector
 CPulseCell_IntervalTimer::OnInterval
 CPulseCell_IntervalTimer::Start
-CPulseCell_IntervalTimer::StopTimer
 CPulseCell_IsRequirementValid::CheckRequirement
 CPulseCell_LimitCount::CheckRequirement
 CPulseCell_LimitCount::CommitStep
 CPulseCell_PickBestOutflowSelector::ProcessSelector
 CPulseCell_Step_CallExternalMethod '%s'
 CPulseCell_Timeline::Start
-CPulseCell_Timeline::Stop
 CPulseCell_Value_Curve::Eval
 CPulseCell_Value_Gradient::Eval
 CPulseCell_WaitForCursorsWithTag::Wait
-CPulseCell_WaitForObservable::Cancel
 CPulseCell_WaitForObservable::Start
 CPulseCursorFuncs::AnyOtherCursorsHaveTag
 CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
-CPulseCursorFuncs::KillThisCursorAndCancel
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
+CPulseCursorFuncs::WakeCursorsWithTag
+CPulseEnumlib
+CPulseEnumlib::AddFlags
+CPulseEnumlib::HasAllFlags
+CPulseEnumlib::HasAnyFlags
+CPulseEnumlib::RemoveFlags
 CPulseMathlib::AbsFloat
 CPulseMathlib::AbsInt
 CPulseMathlib::ArcCos
@@ -7227,6 +7281,7 @@ CPulseMathlib::MakeTransform
 CPulseMathlib::MakeVector
 CPulseMathlib::MakeVector2D
 CPulseMathlib::MakeVector4D
+CPulseMathlib::MakeVectorFromAngle
 CPulseMathlib::MakeWorldTransform
 CPulseMathlib::MakeWorldVector
 CPulseMathlib::MaxFloat
@@ -7256,11 +7311,15 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
-CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
+CPulseObservableExpression
+CPulseStringlib
+CPulseStringlib::FormatDurationStringFromSeconds
+CPulseStringlib::StringLength
+CPulseStringlib::StringsAreEqualCaseSensitive
 CPulseTestScriptLib::AssertTrue
 CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
@@ -7578,6 +7637,7 @@ CQtEditFadeTimesDialog
 CQtMovieLayoffProgress
 CQtMultiInputDialog
 CQtTimeScaleInputDialog
+CREATE_CHILD_CURSOR_OUTFLOW
 CRayTraceModelHelper::FindOrAddSceneObject
 CRayTraceModelHelper::Trace
 CRenderOptionsPopupUI
@@ -7630,7 +7690,6 @@ CToolRenderContext::PopTransform - matrix stack underflow
 CToolRenderContext::PushRenderMode - exceeded stack depth\n
 CToolRenderContext::PushTransform - busted through MAX_MATRIX_STACK_DEPTH (%d)
 CToolRenderContext::PushTransform - matrix stack underflow
-CToolScene::Update(1406): 
 CToolSceneAttachmentNames
 CToolSceneAttachments
 CToolSceneAxis
@@ -7738,7 +7797,6 @@ CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CQTimelineEditor::SoundInfo_t,u
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CDmeGraphEditorCurve *,class CUtlVector<struct CurveKeyReference_t,int,class CUtlVectorMemory_Growable<struct CurveKeyReference_t,int,0> > *,class CDefLess<class CDmeGraphEditorCurve *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CDmeGraphEditorCurve *,int,class CDefLess<class CDmeGraphEditorCurve *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class ConVarRefAbstract,class CUtlString,class CLessFunc<&private: static bool __cdecl CMovieDoc::PrevConVarLessFunc(class ConVarRefAbstract const &,class ConVarRefAbstract const &)>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class fbxsdk::FbxNode *,struct CDmFbxSerializer::DmxNodeData_t,class CDefLess<class fbxsdk::FbxNode *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
@@ -7788,112 +7846,12 @@ CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocato
 CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
 CUtlNTree overflow!\n
-CUtlRBTree<class CBasePhonemeTag *,class CLessFunc<&bool __cdecl UniquePhonemeLessFunc(class CBasePhonemeTag * const &,class CBasePhonemeTag * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class CBasePhonemeTag *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CChoreoEvent_GESTURE *,class CLessFunc<&bool __cdecl ChoreEventStartTimeLessFunc(class CChoreoEvent_GESTURE * const &,class CChoreoEvent_GESTURE * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class CChoreoEvent_GESTURE *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmElement *,class CDefLess<class CDmElement *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmElement *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmElement *,class CDefLess<class CDmElement *>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmElement *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmeChannel const *,class CDefLess<class CDmeChannel const *>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmeChannel const *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmeClip *,class CLessFunc<&bool __cdecl IFM_ClipStartLessFunc<class CDmeClip>(class CDmeClip * const &,class CDmeClip * const &)>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmeClip *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmeFilmClip *,class CLessFunc<&bool __cdecl IFM_ClipStartLessFunc<class CDmeFilmClip>(class CDmeFilmClip * const &,class CDmeFilmClip * const &)>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmeFilmClip *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmeHandle<class CDmeChannel,0>,class CDefLess<class CDmeHandle<class CDmeChannel,0> >,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmeHandle<class CDmeChannel,0>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmeHandle<class CDmeOperator,0>,class CDefLess<class CDmeHandle<class CDmeOperator,0> >,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmeHandle<class CDmeOperator,0>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmeSoundClip *,class CLessFunc<&bool __cdecl IFM_ClipStartLessFunc<class CDmeSoundClip>(class CDmeSoundClip * const &,class CDmeSoundClip * const &)>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmeSoundClip *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class IDmeOperator *,class CDefLess<class IDmeOperator *>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<bool> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<bool>::PriorityLessFunc(struct ActiveLayer_t<bool> * const &,struct ActiveLayer_t<bool> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<bool> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class CUtlSymbolLarge> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class CUtlSymbolLarge>::PriorityLessFunc(struct ActiveLayer_t<class CUtlSymbolLarge> * const &,struct ActiveLayer_t<class CUtlSymbolLarge> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class CUtlSymbolLarge> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Color> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Color>::PriorityLessFunc(struct ActiveLayer_t<class Color> * const &,struct ActiveLayer_t<class Color> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Color> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class DmeTime_t> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class DmeTime_t>::PriorityLessFunc(struct ActiveLayer_t<class DmeTime_t> * const &,struct ActiveLayer_t<class DmeTime_t> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class DmeTime_t> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class QAngle> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class QAngle>::PriorityLessFunc(struct ActiveLayer_t<class QAngle> * const &,struct ActiveLayer_t<class QAngle> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class QAngle> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class QuaternionStorage> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class QuaternionStorage>::PriorityLessFunc(struct ActiveLayer_t<class QuaternionStorage> * const &,struct ActiveLayer_t<class QuaternionStorage> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class QuaternionStorage> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class VMatrix> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class VMatrix>::PriorityLessFunc(struct ActiveLayer_t<class VMatrix> * const &,struct ActiveLayer_t<class VMatrix> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class VMatrix> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Vec2D<float> > *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Vec2D<float> >::PriorityLessFunc(struct ActiveLayer_t<class Vec2D<float> > * const &,struct ActiveLayer_t<class Vec2D<float> > * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Vec2D<float> > *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Vec3D<float> > *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Vec3D<float> >::PriorityLessFunc(struct ActiveLayer_t<class Vec3D<float> > * const &,struct ActiveLayer_t<class Vec3D<float> > * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Vec3D<float> > *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Vec4D<float> > *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Vec4D<float> >::PriorityLessFunc(struct ActiveLayer_t<class Vec4D<float> > * const &,struct ActiveLayer_t<class Vec4D<float> > * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Vec4D<float> > *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<float> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<float>::PriorityLessFunc(struct ActiveLayer_t<float> * const &,struct ActiveLayer_t<float> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<float> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<int> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<int>::PriorityLessFunc(struct ActiveLayer_t<int> * const &,struct ActiveLayer_t<int> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<int> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<unsigned __int64> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<unsigned __int64>::PriorityLessFunc(struct ActiveLayer_t<unsigned __int64> * const &,struct ActiveLayer_t<unsigned __int64> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<unsigned __int64> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<unsigned char> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<unsigned char>::PriorityLessFunc(struct ActiveLayer_t<unsigned char> * const &,struct ActiveLayer_t<unsigned char> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<unsigned char> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CDmElementSerializationDictionary::ElementInfo_t,class CLessFunc<&private: static bool __cdecl CDmElementSerializationDictionary::LessFunc(struct CDmElementSerializationDictionary::ElementInfo_t const &,struct CDmElementSerializationDictionary::ElementInfo_t const &)>,int,class CUtlBlockVector<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CDmeGraphEditorCurve *,class CUtlVector<struct CurveKeyReference_t,int,class CUtlVectorMemory_Growable<struct CurveKeyReference_t,int,0> > *,class CDefLess<class CDmeGraphEditorCurve *>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CDmeGraphEditorCurve *,class CUtlVector<struct CurveKeyReference_t,int,class CUtlVectorMemory_Growable<struct CurveKeyReference_t,int,0> > *,class CDefLess<class CDmeGraphEditorCurve *>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CDmeGraphEditorCurve *,class CUtlVector<struct CurveKeyReference_t,int,class CUtlVectorMemory_Growable<struct CurveKeyReference_t,int,0> > *,class CDefLess<class CDmeGraphEditorCurve *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CDmeGraphEditorCurve *,int,class CDefLess<class CDmeGraphEditorCurve *>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CDmeGraphEditorCurve *,int,class CDefLess<class CDmeGraphEditorCurve *>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CDmeGraphEditorCurve *,int,class CDefLess<class CDmeGraphEditorCurve *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CDmeHandle<class CDmeBaseGameLight,0>,class CSceneLightObject *,class CDefLess<class CDmeHandle<class CDmeBaseGameLight,0> >,int>::Node_t,class CUtlOrderedMapBase<class CDmeHandle<class CDmeBaseGameLight,0>,class CSceneLightObject *,class CDefLess<class CDmeHandle<class CDmeBaseGameLight,0> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CDmeHandle<class CDmeBaseGameLight,0>,class CSceneLightObject *,class CDefLess<class CDmeHandle<class CDmeBaseGameLight,0> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CDmeHandle<class CDmeProjectedLight,0>,struct SFMLightStruct_t,class CDefLess<class CDmeHandle<class CDmeProjectedLight,0> >,int>::Node_t,class CUtlOrderedMapBase<class CDmeHandle<class CDmeProjectedLight,0>,struct SFMLightStruct_t,class CDefLess<class CDmeHandle<class CDmeProjectedLight,0> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CDmeHandle<class CDmeProjectedLight,0>,struct SFMLightStruct_t,class CDefLess<class CDmeHandle<class CDmeProjectedLight,0> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CStrongHandleCopyable<struct InfoForResourceTypeCModel>,class CStrongHandleCopyable<struct InfoForResourceTypeCModel>,class CDefLess<class CStrongHandleCopyable<struct InfoForResourceTypeCModel> >,int>::Node_t,class CUtlOrderedMapBase<class CStrongHandleCopyable<struct InfoForResourceTypeCModel>,class CStrongHandleCopyable<struct InfoForResourceTypeCModel>,class CDefLess<class CStrongHandleCopyable<struct InfoForResourceTypeCModel> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CStrongHandleCopyable<struct InfoForResourceTypeCModel>,class CStrongHandleCopyable<struct InfoForResourceTypeCModel>,class CDefLess<class CStrongHandleCopyable<struct InfoForResourceTypeCModel> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,class CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::CKeyLess,unsigned int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class ConVarRefAbstract,class CUtlString,class CLessFunc<&private: static bool __cdecl CMovieDoc::PrevConVarLessFunc(class ConVarRefAbstract const &,class ConVarRefAbstract const &)>,unsigned short>::Node_t,class CUtlOrderedMapBase<class ConVarRefAbstract,class CUtlString,class CLessFunc<&private: static bool __cdecl CMovieDoc::PrevConVarLessFunc(class ConVarRefAbstract const &,class ConVarRefAbstract const &)>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class ConVarRefAbstract,class CUtlString,class CLessFunc<&private: static bool __cdecl CMovieDoc::PrevConVarLessFunc(class ConVarRefAbstract const &,class ConVarRefAbstract const &)>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class IToolObject *,class CSceneObject *,class CDefLess<class IToolObject *>,int>::Node_t,class CUtlOrderedMapBase<class IToolObject *,class CSceneObject *,class CDefLess<class IToolObject *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IToolObject *,class CSceneObject *,class CDefLess<class IToolObject *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class fbxsdk::FbxNode *,struct CDmFbxSerializer::DmxNodeData_t,class CDefLess<class fbxsdk::FbxNode *>,unsigned short>::Node_t,class CUtlOrderedMapBase<class fbxsdk::FbxNode *,struct CDmFbxSerializer::DmxNodeData_t,class CDefLess<class fbxsdk::FbxNode *>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class fbxsdk::FbxNode *,struct CDmFbxSerializer::DmxNodeData_t,class CDefLess<class fbxsdk::FbxNode *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,class CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum DmElementHandle_t,struct CQGraphEditorTreeView::QChannelItemSet_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,class CUtlOrderedMapBase<enum DmElementHandle_t,struct CQGraphEditorTreeView::QChannelItemSet_t,class CDefLess<enum DmElementHandle_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum DmElementHandle_t,struct CQGraphEditorTreeView::QChannelItemSet_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<float,int,class CDefLess<float>,unsigned short>::Node_t,class CUtlOrderedMapBase<float,int,class CDefLess<float>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<float,int,class CDefLess<float>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,class CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct CGameRecorder::RecordedLight_t,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct CGameRecorder::RecordedLight_t,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct CGameRecorder::RecordedLight_t,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct CGameRecorder::RecordedModel_t,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct CGameRecorder::RecordedModel_t,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct CGameRecorder::RecordedModel_t,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<void *,struct CGameRecorder::RecordedParticleSystem_t,class CDefLess<void *>,int>::Node_t,class CUtlOrderedMapBase<void *,struct CGameRecorder::RecordedParticleSystem_t,class CDefLess<void *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<void *,struct CGameRecorder::RecordedParticleSystem_t,class CDefLess<void *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct DmeTransformRefreshInfo,class CLessFunc<&public: static bool __cdecl DmeTransformRefreshInfo::Less(struct DmeTransformRefreshInfo const &,struct DmeTransformRefreshInfo const &)>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct DmeTransformRefreshInfo,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<bool>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<bool>::LessFunc(struct LayerEvent_t<bool> const &,struct LayerEvent_t<bool> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<bool>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class CUtlSymbolLarge>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class CUtlSymbolLarge>::LessFunc(struct LayerEvent_t<class CUtlSymbolLarge> const &,struct LayerEvent_t<class CUtlSymbolLarge> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class CUtlSymbolLarge>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Color>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Color>::LessFunc(struct LayerEvent_t<class Color> const &,struct LayerEvent_t<class Color> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Color>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class DmeTime_t>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class DmeTime_t>::LessFunc(struct LayerEvent_t<class DmeTime_t> const &,struct LayerEvent_t<class DmeTime_t> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class DmeTime_t>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class QAngle>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class QAngle>::LessFunc(struct LayerEvent_t<class QAngle> const &,struct LayerEvent_t<class QAngle> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class QAngle>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class QuaternionStorage>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class QuaternionStorage>::LessFunc(struct LayerEvent_t<class QuaternionStorage> const &,struct LayerEvent_t<class QuaternionStorage> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class QuaternionStorage>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class VMatrix>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class VMatrix>::LessFunc(struct LayerEvent_t<class VMatrix> const &,struct LayerEvent_t<class VMatrix> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class VMatrix>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Vec2D<float> >,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Vec2D<float> >::LessFunc(struct LayerEvent_t<class Vec2D<float> > const &,struct LayerEvent_t<class Vec2D<float> > const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Vec2D<float> >,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Vec3D<float> >,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Vec3D<float> >::LessFunc(struct LayerEvent_t<class Vec3D<float> > const &,struct LayerEvent_t<class Vec3D<float> > const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Vec3D<float> >,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Vec4D<float> >,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Vec4D<float> >::LessFunc(struct LayerEvent_t<class Vec4D<float> > const &,struct LayerEvent_t<class Vec4D<float> > const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Vec4D<float> >,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<float>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<float>::LessFunc(struct LayerEvent_t<float> const &,struct LayerEvent_t<float> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<float>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<int>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<int>::LessFunc(struct LayerEvent_t<int> const &,struct LayerEvent_t<int> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<int>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<unsigned __int64>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<unsigned __int64>::LessFunc(struct LayerEvent_t<unsigned __int64> const &,struct LayerEvent_t<unsigned __int64> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned __int64>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<unsigned char>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<unsigned char>::LessFunc(struct LayerEvent_t<unsigned char> const &,struct LayerEvent_t<unsigned char> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned char>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LookupHelper_t,class CLessFunc<&public: static bool __cdecl LookupHelper_t::LessFunc(struct LookupHelper_t const &,struct LookupHelper_t const &)>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LookupHelper_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlSortVector<struct KeyTimePair_t,class CKeyTimePairLess,class CUtlVector<struct KeyTimePair_t,int,class CUtlVectorMemory_Growable<struct KeyTimePair_t,int,0> > >::Insert
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CUtlVectorFixedGrowable
 CVertexListSceneObject
 CVisibilityMgr
-C_AI_BaseNPC
-C_AnimInteractable
-C_BlindZombie
-C_DOTAPlayerController
-C_DOTAPropCustomTexture
-C_DOTAWearableItem
-C_DOTAWorldParticleSystem
-C_DOTA_BaseNPC_Barracks
-C_DOTA_BaseNPC_Building
-C_DOTA_BaseNPC_Creep_Lane
-C_DOTA_BaseNPC_Creep_Neutral
-C_DOTA_BaseNPC_Creep_Siege
-C_DOTA_BaseNPC_Effigy_BattleCup
-C_DOTA_BaseNPC_Effigy_Statue
-C_DOTA_BaseNPC_Filler
-C_DOTA_BaseNPC_Fort
-C_DOTA_BaseNPC_HallofFame
-C_DOTA_BaseNPC_LotusPool
-C_DOTA_BaseNPC_NeutralItemStash
-C_DOTA_BaseNPC_Shop
-C_DOTA_BaseNPC_Tower
-C_DOTA_BaseNPC_Watch_Tower
-C_DOTA_BaseNPC_XP_Fountain
-C_DOTA_MapTree
-C_DOTA_NPC_BaseBlocker
-C_DOTA_NPC_Lantern
-C_DOTA_Unit_Fountain
 C_DOTA_Unit_Hero_
-C_DOTA_Unit_Templar_Gate
-C_DOTA_Unit_Twin_Gate
-C_DynamicPropClientside
-C_NPC_BaseHeadcrab
-C_NPC_BaseZombie
-C_NPC_Combine
-C_NPC_RunnerHeadcrab
-C_NPC_VR_Barnacle
-C_Strider
 C`?translate@QPainter@@QEAAXNN@Z
 CalibrationIlluminant1
 CalibrationIlluminant2
@@ -7916,7 +7874,6 @@ Can't remove all clips\n
 Can't remove clips, nothing selected\n
 Can't throw while recording\n
 Cancel
-Cancel observing.
 Cannot CDmAttribute::GetValueAsString(%p, %u)\n
 Cannot Debug
 Cannot Find DMX Node For FBXNode: %s\n
@@ -8002,6 +7959,7 @@ Choose Output File
 Choose Takes To Delete
 Choose Target Directory
 Choreo Control State
+ChoreoStrafeMode_t
 ChromaBlurRadius
 Citadel
 Clamp Float
@@ -8054,7 +8012,6 @@ Close the group automatically when the associated parent process exits (good for
 CloseCaptionNoAttenuate
 CloseDocument
 CloseLid
-CloudTexture
 Collapse All Tracks
 Collapse Track
 CollapseAllTracks
@@ -8084,7 +8041,7 @@ Community
 Compact Track
 Compact clips
 CompactTrack
-Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
+Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive.
 CompileKeyTimeList
 Compiled GUI file
 Completed
@@ -8134,6 +8091,7 @@ Copy Key
 Copy Keys
 Copy R%d <- R%d
 Copy Samples
+Copy Unbound Params From Actor
 Copy to Scene Camera
 Copy to Work Camera
 CopyBookmark
@@ -8240,9 +8198,6 @@ Cross Product of Vector a x Vector b
 Ctrl
 Ctrl+M
 Ctrl+Shift+Z
-CubeFogParams
-CubeFogParams2
-CubeFogParams3
 CubemapFogTexture
 Cull Random
 Current
@@ -8251,7 +8206,6 @@ CurrentICCProfile
 CurrentPreProfileMatrix
 Cursor Has Tag
 Cursor[ ptr:%p | id:%d | graph:%p ]: CPulseExecCursor()\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: Completed with result:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of result:%d from Subject:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d\n
@@ -8282,6 +8236,7 @@ D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D#?x@QWidget@@QEBAHXZ
 DBM&(
 DEBRIS
+DISABLE
 DMX (*.dmx);;All Files (*.*)
 DMX Model
 DMX Model Pipeline Animation Script File
@@ -8298,21 +8253,15 @@ DMX_MODEL_SOURCE_UNKNOWN
 DNGBackwardVersion
 DNGPrivateData
 DNGVersion
-D_BORDER
 D_COLOR_WARP
 D_DECALS_ENABLED
 D_DYNAMIC_HIGHLIGHT
 D_ENABLE_CLOAK
-D_ENABLE_CUBEMAP_FOG
-D_MSAA_MODE
-D_SNAP_TO_SCREEN_PIXELS
-D_THICK_LINES
 D_USE_STATUS_EFFECTS_PROXY
 DagNameProxyModel
 Dampen Movement Relative to Control Point
 Data
 DataModel needs the file system to function
-DataOffset
 DataType
 Data_Branch1xy
 Data_Branch1zBranch2x
@@ -8376,7 +8325,6 @@ DeleteWorldModelPickerDialog
 Depth
 Depth Of Field
 Depth of Field
-DepthBuffer
 Derived must implement
 Desaturation
 Desaturation Enable
@@ -8397,7 +8345,6 @@ DidResize
 Dig : voiced alveolar flap or tap
 Dig : voiced bilabial stop
 Directory:
-DirectoryEntries
 Disable Shadows
 Disable Volumetrics
 Disable auto blink for BaseActor
@@ -8624,7 +8571,6 @@ Dot Product of Vector a
 DotRange
 Dota
 DotaForward
-DotaGlobalParams_t
 Down
 Drag
 Drag Clip Operation
@@ -8675,6 +8621,7 @@ Drop Clips Operation
 Drop Film Clips Operation
 Drop: Blend each control towards that control's values prior to starting the floating modification layer
 DropClipDialog
+DualHull
 DummyNoOp
 Dump float log to console
 DumpModeDecode: Not enough data for scanline %d
@@ -8685,6 +8632,7 @@ Dynamic Actor
 Dynamic Configs
 E<G&Iw
 EG2>
+ENABLE
 ERROR %s
 ERROR! LoadFromJPG( %s ) failed!\n
 ERROR! LoadFromPNG( %s ) failed!\n
@@ -8768,6 +8716,7 @@ Emission Duration:
 EmitEditingFinishedOnDrop
 EmitEditingFinishedOrAborted
 Empty time selection
+Enable
 Enable Global Light Shadow
 Enable Lighting
 Enable Procedural Bones
@@ -8795,6 +8744,7 @@ EngineSyncedToFixedFPS
 Ensure Info Attribute
 Ensure Info Data
 Ensure that interactive film clip operations always stay on frame
+EnsureCapacity
 Enter
 Enter Game Mode
 Enter command
@@ -8805,6 +8755,7 @@ EnterKeyPressed
 Entity Sounds
 EntityIndex
 EntityName
+Enum support.
 Eq R%d <- R%d == R%d
 Equalize tangent length
 Error (problem that prevents task success)
@@ -8985,7 +8936,7 @@ FadeOutChanged
 Fail Outflow
 Failed To Load Current Map
 Failed to add sound event '%s'\n
-Failed to allocate an instance of a class
+Failed to allocate an instance of a class of type '%s'
 Failed to allocate field info array
 Failed to allocate memory for %s (%ld elements of %ld bytes each)
 Failed to calculate IK pole vector from bind pose for '%s' of %s - trying current pose...\n
@@ -9061,12 +9012,14 @@ Filter Log
 Filter Size:
 Filter Width:
 Filter:
+FilterApplied
 FilterSoundEvents
 Filters
 FinalizeChanges
 FinalizeDraggingAfterRevertAnimation
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find all the yielded cursors on this graph with the matching tag and wake them.
 Find first element 'a' which compare equal to 'element' and return its index.
 Find:
 FindAttrNode
@@ -9090,8 +9043,8 @@ FlattenLayers
 Float Control Slider Menu
 Float To Game Time
 FloatBitMap_t: Error loading %s\n
-FloatBitMap_t::LoadFromFile(3285): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
-FloatBitMap_t::LoadFromTGA(2234): Error loading %s\n
+FloatBitMap_t::LoadFromFile(3729): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
+FloatBitMap_t::LoadFromTGA(2678): Error loading %s\n
 FloatBitMap_t::WriteInMemoryEXRFast
 FloatBitMap_t::WriteInMemoryEXRFast(), C:\buildworker\csgo_rel_win64\build\src\bitmap\tinyexr_impl.cpp:170
 Floating Modification Layer Enabled
@@ -9130,6 +9083,7 @@ Force Transform %s To Follow %s
 Forgot the Title
 Fork : voiceless labiodental fricative
 Format
+Format Duration String From Seconds
 Found multiple active env_cubemap_fog entities\n
 Found multiple active env_gradient_fog entities\n
 Frac
@@ -9157,7 +9111,6 @@ Full Movie Path
 Fullscreen
 G channel not found!\n
 GPSIFDOffset
-G\f%G47
 G\n??9FbxVector4@fbxsdk@@QEBA_NAEBV01@@Z
 G\v?event@QHeaderView@@MEAA_NPEAVQEvent@@@Z
 Game Blackboards: 
@@ -9206,7 +9159,6 @@ Global End
 Global Start
 Global Time
 GlobalHotkeys
-GlobalLightOverride
 GlobalSize
 GlobalTopLevel
 Go To Start
@@ -9251,10 +9203,14 @@ Hammer temp export
 Hammer/GameFeatureSet
 Handle Frames Post:
 Handle Frames Pre:
+Handshake Enum
+HandshakeTagType_t::eMovement
+HandshakeTagType_t::eTask
 Hard Stop Speak Event
 HardStopSpeakEvent
 Hardware config info:\n
-HasMaterialOverride
+Has All Flags
+Has Any Flags
 HeadLockOverwriteHasChanged
 HeadLockedHasChanged
 Height:
@@ -9264,7 +9220,7 @@ Help
 Help : breathy-voiced glottal fricative
 Help : voiceless glottal fricative
 Help...
-HelperLoadFbmByFileExtension(3065): Error! Unknown file type for %s\n
+HelperLoadFbmByFileExtension(3509): Error! Unknown file type for %s\n
 Helpers
 Hero
 HeroViewer
@@ -9339,7 +9295,6 @@ IRecordingStateChangedListener
 IRenderListener
 IRenderSizeChangedListener
 ISO JBIG
-IS_EFFECTS_LAYER
 ISnappingHasChangedListener
 ITimeChangedListener
 ITimeHelperListener
@@ -9360,7 +9315,6 @@ If "Trim Type" is "Trim To Shot With Handles", this value is added to "Shot End 
 If "Trim Type" is "Trim To Shot With Handles", this value is subtracted from "Shot Start Frame" to determine the first frame of exported animation
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
-If -1 timer will continue forever
 If left empty, will default to the owner entity of this scene, meaning that the relative position will actually be the world position
 If specified, each wait interval will vary randomly between WaitInterval this value
 If this cursor spawns other work via Fire And Forget, should this Tag be inherited?
@@ -9468,11 +9422,12 @@ Integer overflow writing large exr: %ix%i %ibpp\n
 Integrate
 InteractiveEditFinished
 InteractiveEditStarted
-Interest Tags
 Interface
 Internal error, unknown tag 0x%x
 InteroperabilityIFDOffset
 Interrupt
+InterruptElegantly
+InterruptImmediately
 Intro Playback Rate
 IntroPlaybackRate
 Invalid "PlaybackRate" of 0\n
@@ -9516,8 +9471,6 @@ IsMaster
 IsOverridingFrameRate
 Isometric Tangents
 Item Operations
-ItemIsolateView
-ItemIsolateVignette
 J%f%f%f%f%f%f%f%f
 JPEG
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
@@ -9567,6 +9520,7 @@ KYF>
 KYv?
 K\r?hitButton@QRadioButton@@MEBA_NAEBVQPoint@@@Z
 K\t?canConvert@QVariant@@QEBA_NH@Z
+K\tV_isinfd
 K\v?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
 Key Bindings
 KeyState
@@ -9586,7 +9540,6 @@ Keymode
 Keys
 Kill All Other Cursors
 Kill Cursors With Tag
-Kill This Cursor And Cancel
 Kochanek-Bartels
 Kochanek-Bartels Early
 Kochanek-Bartels Late
@@ -9711,6 +9664,7 @@ Locked
 Locked (Driven by current config)
 Locked to %1
 Locked, with Constraints
+Locomotion and choreo handshake
 Log Compression 
 Log Generation
 Log10
@@ -9737,11 +9691,14 @@ M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
 MAtomicTransfersAsPlainString
 MENU
+MM:SS with leading zeros
+MM_SS_LEADING_ZERO
 MMouse
 MMouseDoubleClick
 MPropertyFlattenIntoParentRow
 MPulseExpressionAlias
 MPulseFunctionHiddenInTool
+MPulseTypeRestriction
 MSAA Resolve
 MWheelDn
 MWheelLeft
@@ -9758,18 +9715,21 @@ Make Color
 Make Root
 Make Transform
 Make Vector
+Make Vector From Angle
 Make Vector2 D
 Make Vector4 D
 Make World Transform
 Make World Vector
 Make a Color from component parts
 Make a Transform from component parts.
+Make a Vector from an Angle
 Make a Vector from component parts.
 Make a Vector2D from component parts.
 Make a World Vector from component parts.
 Make an Angle from a Forward Vector
 Make an Angle from component parts
 Make sheet file
+Make this a requirement.
 MakeRoot
 MakerNoteSafety
 Manage Takes
@@ -9790,7 +9750,6 @@ Match Particle Velocities
 Matched %d channels; missing %d channels; skipped %d channels.
 Material Browser
 Material Group:
-MaterialPreviewUseLayerViewportExtents
 MatrixMultiply
 MatrixWorldToCamera
 MatrixWorldToScreen
@@ -9914,6 +9873,7 @@ MoveCameraLeft3D
 MoveCameraRight3D
 MoveCameraUp3D
 MoveTrackGroupsToNewFile
+Movement
 Movement Basic
 Movement Dampen Relative to Control Point
 Movement Lock to Bone
@@ -10487,7 +10447,6 @@ Operate
 Operation
 Operations
 Operator cycle found during dependency graph traversal!\n
-Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Or Filter
 Or R%d <- R%d || R%d
@@ -10525,12 +10484,15 @@ OverridingFrameRate
 Overwrite
 Overwrite With Current
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
-P08@JP
+P08@JPk+
+P08J
+P2Pk+
 P4 Operation failed
 P4InteractionDialog
 P4OpenFilesDialog
-P6px
-P8+u
+P6`6
+P6pk
+P:Pk+
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextBlock@@QEBA_NXZ
 P?isVisible@QTextBlock@@QEBA_NXZ
@@ -10541,8 +10503,8 @@ P?jumpToNextImage@QImageReader@@QEAA_NXZ
 P?keyboardModifiers@QGuiApplication@@SA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 P?yX(
 PASSABLE
-PDBu
 PHONEME_EXTRACTOR_001
+PHru
 PK?J{
 POISONED 
 PPPPPP
@@ -10551,7 +10513,6 @@ P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
-PackedBlobNormal
 PageName
 PageNumber
 Paint
@@ -10568,6 +10529,7 @@ Parameters
 Parent
 Parent Constrain
 Parent Map: %s\n
+Parent VData
 ParseEXRHeaderFromMemory failed! Error message: %s\n
 Partially Locked (Driven by some random choices in current config)
 Particle Binding
@@ -10615,7 +10577,6 @@ PasteKeysFromClipboard
 PasteKeysToComponent
 PasteSamples
 Path %1 doesn't exist
-PatternType
 Pause Sequences
 PerVertexLighting
 Perforce
@@ -10627,6 +10588,7 @@ PerforceSubmitDocument
 PerforceViewInP4
 PerforceViewInP4Win
 Permit Responses
+Pf`l
 PgDn
 PgUp
 PhonemeExtractionSettings
@@ -10679,6 +10641,7 @@ Player %d Models
 PlayerRenderClipPlane
 Playhead
 Playhead: Blend each control towards that control's current value
+Pn n
 Point Constrain
 Policy
 PopupClosed
@@ -10709,7 +10672,6 @@ PredictorEncodeTile
 PredictorSetup
 Preferred
 Prefix element cannot contain element or element_array attributes. ('%s')
-PreloadDirectoryEntries
 Premature EOL
 Premature end-of-file encountered.
 Premature end-of-partition0 encountered.
@@ -10728,7 +10690,6 @@ Preview Sound Clips
 PreviewMocap
 PreviewSelectedSoundClips
 PreviewSoundEvent
-PreviewUIMaterialOnModel
 Previous
 Previous Clip
 Previous Frame
@@ -10741,6 +10702,7 @@ Probable infinite loop detected! Terminating pulse cursor after %d consecutive i
 Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
 Problems in interaction with Perforce
 Procedural
+Proceed Immediately
 Process Selector
 Progressive Refinement
 Progressive Refinement Settings
@@ -10757,15 +10719,16 @@ PropertyEditorTarget
 PropertyEditorWidget
 PropertyEditorWidget_1
 Public Graph: %s
+Public: %s
 Publish Image to Steam
 Publish Video to YouTube and Steam
 Pulse Requirement
 Pulse Requirement Name
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
+PulseDurationStringFormat_t
 PulseRequirementName
 Put; voiceless alveolar stop
-Px%u
 Python (*.py);;All Files (*.*)
 Q?load@QPixmap@@QEAA_NAEBVQString@@PEBDV?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 QAbstractButton*
@@ -10903,11 +10866,9 @@ RMouse
 RMouseDoubleClick
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpdLu
-R\n0DBu
+R\fp4
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vpDBu
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
@@ -11002,6 +10963,7 @@ Remove Clip
 Remove Clips
 Remove Constant Valued Channels
 Remove Empty Gap
+Remove Flags
 Remove Gap
 Remove Invisible Objects
 Remove Keys
@@ -11019,6 +10981,7 @@ Remove Trimmed Effects and Particle Systems
 Remove all elements from 'a' which are invalid instances.
 Remove all elements from 'a' which compare equal to 'element'.
 Remove clips outside the parent film clip (in seconds):
+Remove flags from the given value.
 Remove log data outside any parent clips (in seconds):
 Remove the element at the given index in 'a', decreasing its count by one and moving the elements after index.
 Remove the given tag from this cursor. If other cursors are waiting on us, they will resume.
@@ -11112,6 +11075,7 @@ ResampleLogsOnSelectedClipsHalfFrames
 Resampled Framerate:
 Reset History
 Reset Layouts
+Reset On End
 Reset Phoneme Mappings
 Reset Pivot
 Reset Time Offset
@@ -11329,9 +11293,6 @@ SaveContentToSettings
 SaveCurrentLayout
 SaveDocument
 Sc?L7I?$(
-ScalableAOBias
-ScalableAORadius
-ScalableAOStrength
 Scale Center:
 Scale Down Only
 Scale INV R%d <- R%d / R%d
@@ -11346,7 +11307,6 @@ ScaleMatrix
 ScalpD
 SceneCameraChanged
 ScenePreview
-SceneSystem
 SceneSystem/VolumetricFog
 Schema description file
 ScrLk
@@ -11599,9 +11559,6 @@ SetWrapEnabled
 Setting %s::%s = '%s'\n
 Setting up field info failed
 SetupRenderState
-ShaderVar_WireframeBackfaces
-ShadowAtlasHeight
-ShadowAtlasWidth
 ShadowScale
 Shard model '%s' changed to '%s'\n
 SharedToolCommands
@@ -11847,10 +11804,11 @@ Stock Item Set
 Stop Ignoring Log Changes
 Stop Mocap
 Stop Previewing Sound
-Stop Timer
-Stop any active timers - the completed outflow will still fire
+Stop Waiting
 StopPreviewingSoundEvent
 StopSendingCameraTo
+Strafe Mode
+StrafeMode
 String Length
 Strings Are Equal Case Sensitive
 StripByteCounts
@@ -11871,8 +11829,10 @@ Switch to Scene Camera
 Switch to Work Camera
 SwitchToEngineWindow
 Symbol table:  %d entries %llu bytes\n
+Sync Cycle To Time
 Sync Exit tag to next gesture Entry tag
 SyncToFollowingGesture
+Synchronous - Wait for this node to fully complete before proceeding.
 T ?year@QDate@@QEBAHXZ
 T"?IsZero@FbxVector4@fbxsdk@@QEBA_NH@Z
 T=KY
@@ -11915,7 +11875,6 @@ TRW?
 TVGamma
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T\tV_log2f
 TabStyle_t
 TabWindow
 TabbedController
@@ -11959,7 +11918,10 @@ TangentsUnified
 TangentsUnifiedFree
 TangentsUnweighted
 TangentsWeighted
+TargetCastForModify
 TargetPrinter
+Task
+Task/Action handshake.
 Temp Morph Scene
 TemporarilyBakeLocksAndConstraintsForFunctor
 Test Mode Assert True
@@ -11994,6 +11956,7 @@ There was no element found. The root was not changed.
 This editor has no actions defined.
 This file is out of date. You should sync if you want to see the latest version or make edits.
 This is a BigTIFF file.  This format not supported\nby this version of libtiff.
+This is the overall duration. If -1 timer will continue forever. During this duration, we will fire a new child cursor at each Interval.
 This pose parameter isn't used by the currently playing sequence(s).
 This will overwrite an existing layoff. Continue?
 Threshholding
@@ -12123,7 +12086,6 @@ ToolWindowGrid
 Tools  
 Tools audio currently muted
 ToolsEnvironment
-ToolsLightMode
 ToolsUploadImage.vtex
 ToolsVis Modes
 ToolsVisMode: %s
@@ -12215,6 +12177,7 @@ Trying to record particle system in unexpected directory! (%s)\n
 Trying to record particle system with no entity owner! (%s)\n
 TtD?
 TtT?
+Turn a time in seconds into a display string. NOT localized.
 Twist
 Type Column
 Type in key time
@@ -12231,12 +12194,10 @@ U?qt_metacast@QRegExpValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QRegularExpressionValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 UIMatRTTexture.vtex
-UITextureOnModel
 URn : rhotacized lower-mid central vowel
 URn : rhotacized schwa
 U\8h(
 U\r?home@QTextBrowser@@UEAAXXZ
-U\tV_logd
 U\v?event@QPlainTextEdit@@MEAA_NPEAVQEvent@@@Z
 Unable To Create IK Rig
 Unable To Create Spline Rig
@@ -12289,6 +12250,7 @@ Units Outside Camera View
 Unknown compression type.
 Unknown data format %d for LogLuv compression
 Unknown encoding %d for LogLuv compression
+Unknown format type
 Unknown interpolation type %d\n
 UnknownType
 UnlitPostPass
@@ -12320,7 +12282,6 @@ Unserialize: Unable to open dmxconvert temp file "%s"\n
 Unserialize: Unable to start dmxconvert process\n
 Unserialize: Unexpected encoding name '%s' reading file '%s' - expected encoding '%s'\n
 Unserialize: Unexpected format '%s' reading file '%s' - expected format '%s'\n
-Unsupported Graphics Card
 Unsupported primitive type: %d\n
 Unweighted Tangents
 Unweighted tangents
@@ -12378,7 +12339,10 @@ V?redirected@QPaintDevice@@MEBAPEAV1@PEAVQPoint@@@Z
 V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VConsole
+VDATA
 VData:%s
+VDataChoice( %s )
+VDataChoice()
 VDataModelVersion001
 VDmElementFrameworkVersion001
 VDmSerializers001
@@ -12463,6 +12427,8 @@ Wait Complete
 Wait Until End
 WaitUntilEnd
 Waiting for Perforce
+Wake Cursors With Tag
+Wants Handshake
 WarnTrailingWhitespace
 Warning (problem that doesn't prevent forward progress)
 Warning! Couldn't convert FbxMesh "%s"\n
@@ -12494,8 +12460,10 @@ Weapon Effects
 WeightChanged
 Weighted Tangents
 Weighted tangents
-When False
-When True
+Whether value has ALL of the specified flags set (it may have other flags.)
+Whether value has ANY of the specified flags set (it may have other flags.)
+While False
+While True
 WhiteLevel
 WhitePoint
 Widget Debugger
@@ -12547,7 +12515,6 @@ XYZ, Luv
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\t?canReadLine@QProcess@@UEBA_NXZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
-X`hr
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
 Y?setDecimals@QDoubleValidator@@QEAAXH@Z
@@ -12586,7 +12553,6 @@ You can not import settings without a document.
 You can't manipulate a camera or light through the viewport when the head is outside the selected animation shot. Please select the current shot in the timeline to manipulate this camera or light.
 You can't manipulate a camera or light through the viewport when the head is outside the time selection. Please move the head inside the time selection to manipulate this camera or light.
 You can't manipulate an animated camera or light through the viewport when in timeline mode. Please switch to the Motion Editor or Graph Editor to manipulate this camera or light.
-Your graphics card does not meet the minimum requirements to run the SFM.\nYou need a graphics card that supports at least DirectX 10.0 Shader Model 4.0.\nIf you have a system that contains both integrated and higher-end graphics,\nyou may need to change your driver settings to enable the higher-end graphics.
 Z?]mu?k
 Z?gD
 Z?setItalic@QFont@@QEAAX_N@Z
@@ -12613,13 +12579,8 @@ ZIPS
 ZIPSetupDecode
 ZIPSetupEncode
 ZIPVSetField
-ZIP_EndOfCentralDirRecord
-ZIP_FileHeader
-ZIP_LocalFileHeader
-ZIP_PreloadDirectoryEntry
-ZIP_PreloadHeader
+ZPk+
 Z\f?convertFromImage@QPixmap@@QEAA_NAEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
-Z\tV_modfd
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 Zap : voiced alveolar fricative
 Zero
@@ -12750,11 +12711,9 @@ ZoomOutFromClip
 \f\n?deselect@QLineEdit@@QEAAXXZ
 \f\r?heightForWidth@QFormLayout@@UEBAHH@Z
 \f\t?beginReadArray@QSettings@@QEAAHAEBVQString@@@Z
-\fpDBu
-\fp\vPx%u
-\fp\v`DBu
-\fp\v`\n0DBu
-\fp\v`dLu
+\f\tV_acosd
+\fp\vPHru
+\fp\v`Hru
 \game\
 \n ?textValue@QInputDialog@@QEBA?AVQString@@XZ
 \n,?sReflection@FbxSurfaceMaterial@fbxsdk@@2PEBDEB
@@ -12815,8 +12774,9 @@ ZoomOutFromClip
 \n?editorEvent@QItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \n?editorEvent@QStyledItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
-\n\tV_atanf
 \nfinished rendering %d frames\n
+\ng_flConfigMaxCoord
+\ng_flToolsDefaultFarZ
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
 \r?data@QStandardItemModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
@@ -12859,8 +12819,6 @@ ZoomOutFromClip
 \rO?initPainter@QPaintDevice@@MEBAXPEAVQPainter@@@Z
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
-\rp\f`\v0DBu
-\rp\f`\vPDBu
 \t??8FbxMatrix@fbxsdk@@QEBA_NAEBV01@@Z
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?addRoundedRect@QPainterPath@@QEAAXNNNNNNW4SizeMode@Qt@@@Z
@@ -12902,24 +12860,22 @@ ZoomOutFromClip
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
 \tSubSystem / Rev:     0x%x / 0x%x\n
 \tT?parent@QWindow@@QEBAPEAV1@XZ
-\tV_acosd
 \tV_asind
 \tV_atan2d
+\tV_atand
+\tV_atanf
 \tV_cosd
-\tV_exp2f
-\tV_expd
+\tV_sscanf_s
 \tV_tand
 \tV_tier0_ispunct
 \tVendorId / DeviceId:     0x%x / 0x%x\n
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\t\tV_atand
 \t\t\t\t\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUnsupported PSD color mode!\n
 \t_V_FixupPathName
 \t_V_MakeRelativePath
 \t_V_StringAfterPrefixCaseSensitive
 \t_V_StripLastDir
-\tg_flConfigMaxCoord
 \v ?willGrow@QHashData@@QEAA_NXZ
 \v"?update@QWidget@@QEAAXHHHH@Z
 \v??YFbxString@fbxsdk@@QEAAAEBV01@PEBD@Z
@@ -12960,9 +12916,7 @@ ZoomOutFromClip
 \vFu?6
 \vS?moveTo@QPainterPath@@QEAAXNN@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
-\vpDBu
-\vpdLu
-\vpx%u
+\vpHru
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]\r?horizontalOffset@QListView@@MEBAHXZ
@@ -12984,6 +12938,7 @@ _TIFFSetupFieldInfo
 _TIFFVGetField
 _TIFFVSetField
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
+_\tV_log2f
 _\v??GFbxVector4@fbxsdk@@QEBA?AV01@AEBV01@@Z
 _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
 _]?source@QDropEvent@@QEBAPEAVQObject@@XZ
@@ -12991,7 +12946,6 @@ __CursorQueue__
 __FireCursorsParent__
 __IsValveCQTabbedStyle
 __State_Child_Condition__
-__State_Child_Subgraph__
 __TimelineParent__
 __current_metadata_table_stack
 __rootElement
@@ -13013,17 +12967,18 @@ _scale
 _to_curve_
 _volumeatlas_
 _wjb
-`6pz
+`2Pk+
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?value@QColor@@QEBAHXZ
 `?valueF@QColor@@QEBANXZ
-`DBu
+`Hru
 `Q?lightnessF@QColor@@QEBANXZ
+`\tV_logd
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`dLu
+`htP#
 a1?I.
 a:fulltype
 a:typeparam
@@ -13034,7 +12989,6 @@ a?y@QMouseEvent@@QEBAHXZ
 aC=H
 aTR>7
 aZure : voiced postalveolar fricative
-a\tV_powd
 accept
 actions
 activate command channel
@@ -13051,7 +13005,6 @@ actors
 actualInDays
 adding layer %d to stack\n
 adding missing flex controller %d %s\n
-additional_wearable
 addlayer: log %p lc[%d], layer %p
 addlayer: log %p lc[%d], layer NULL
 adopted
@@ -13059,6 +13012,7 @@ afterMovieArguments
 afterMovieCommand
 aimOffset
 align
+allflags
 allowed_api_features
 allowed_requirements
 alpha_fade
@@ -13102,12 +13056,17 @@ animations
 animations/dmx
 animationset
 animclip
+animclip_is_looping
+animclip_is_public
+animclip_public_name
 animflags
 animgraph_choreo_control_state
 animgraph_public_name
 animgraph_resource
 animgraph_slot_id
 animgraphcontroller
+animsequence_is_public
+animsequence_public_name
 animset
 ankle_A_L
 ankle_A_R
@@ -13116,6 +13075,7 @@ ankle_L1
 ankle_R
 ankle_R1
 antialiasingCheckBox
+anyflags
 aoB>"
 aperture
 appVersion
@@ -13180,15 +13140,10 @@ b\vp\nP
 background
 background texture fx clip
 backgroundColor
-backgroundCornerColor0
-backgroundCornerColor1
-backgroundCornerColor2
-backgroundCornerColor3
 backgroundEnabled
 backgroundFXClip
 backgroundFill
 backgroundMap
-backgroundMaterial
 backgroundStyle
 bad partition length
 baked_light_indexing
@@ -13205,10 +13160,10 @@ baseName
 baseStateName
 baseStates
 base_attacks/
-baseanimating
 basic_movement
 bentnormal
 bezier
+binary
 binary_array
 binary_seqids
 binary_v
@@ -13308,7 +13263,6 @@ cc_noattenuate
 cellConfiguration
 cell_info
 cellsNodeID
-centralDirectorySize
 centralWidget
 central_widget
 cfg/sfm_default_animation_groups.vcfg
@@ -13323,6 +13277,7 @@ childBindRotation
 chlist
 choices
 choicetype
+choreo_fullbody_takeover
 choreohelper_animclip
 choreohelper_baselocaleventwithramp
 choreohelper_default
@@ -13342,6 +13297,7 @@ clipBin
 clipNameLineEdit
 clipText
 clipType
+clip_is_public
 clips
 cloakFactor
 clothStiffness
@@ -13381,7 +13337,6 @@ combinedSkins
 combo
 command channelsclip
 comment
-commentLength
 compileAsOverride
 complete
 completeCount
@@ -13390,11 +13345,9 @@ componentType
 componentVisibility
 components
 compressed
-compressedSize
 compressedtangentframe
 compression
 compression error would be too large %f [%f %f]\n
-compressionMethod
 computeBounds
 concommands
 configName
@@ -13426,10 +13379,10 @@ conversionErrors
 coordSys
 coordinates
 copy old selection
+copy_unbound_params_from_actor
 core.voip
 corrected
 cpoint%d_value
-crc32
 create float slider
 create from parent particles
 create stereo slider
@@ -13525,14 +13478,12 @@ dirlight
 disableOverride
 disableShadows
 disableShadows2
-disableVisualEffects
 disable_blink
 disableinlowquality
 disablemultiplegravitygrab
 disablereceiveshadows
 disableshadows
 disallowOverride
-diskNumberStart
 displayGrid
 displayScale
 displaySet
@@ -13553,13 +13504,9 @@ dominators
 done
 doneTextColor
 dota_
-dota_item_wearable
-dota_player_controller
-dota_prop_customtexture
 dota_show_data_driven_camera
 dota_teammate_max_invis
 dota_use_heightmap
-dota_world_particle_system
 dqe-KO{/3
 draw bone axes for models
 draw bounding boxes for models
@@ -13571,7 +13518,6 @@ drawExtents
 drawGameRenderablesMask
 drawGrid
 drawShadowFrustum
-drawShadows
 drawToolRenderablesMask
 draw_tool_render_util_layers
 dropDraggedColorSet
@@ -13585,6 +13531,7 @@ eG??5
 eGenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!\n
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
+e\tV_modfd
 e\v?event@QStatusBar@@MEAA_NPEAVQEvent@@@Z
 easein
 easeinout
@@ -13617,12 +13564,7 @@ endTime
 endUp
 end_as_info
 end_group
-ent_dota_fountain
-ent_dota_halloffame
 ent_dota_lightinfo
-ent_dota_neutral_item_stash
-ent_dota_shop
-ent_dota_tree
 entities
 entityLumpName
 entity_properties
@@ -13656,19 +13598,20 @@ exporttags
 exposurecompensation
 exposurespeeddown
 exposurespeedup
+expression_type
 expressions
 expressions/heroes/phonemes.txt
 exrCompressionType
 extensionEditor
-externalFileAttribs
+external_animclip_name
 external_animgraph
 external_animgraph_control
 external_animgraph_is_public
 external_animgraph_name
 external_animgraph_public_name
 external_animgraph_slot_id
+external_animsequence_name
 external_graph_choreo_a
-extraFieldLength
 extractButton
 eyeOffset
 eye_convergence_channel
@@ -13709,8 +13652,6 @@ ffffff
 ffmpeg
 fieldOfView
 field_name
-fileCommentLength
-fileNameLength
 filePath
 filenameBase
 filter
@@ -13746,6 +13687,7 @@ flPitch
 flRadians
 flRoll
 flScale
+flSeconds
 flSpeed
 flTime
 flVal
@@ -14078,7 +14020,6 @@ game_camera_anim
 gameitemclass
 gameunitclass
 gc?C
-generic_actor
 gentle_pulse
 geometry
 gesture
@@ -14107,7 +14048,6 @@ groupComboBox
 groupFile
 groupLabel
 group_title
-hSD_NO_ZTEST
 hSequence
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?currentPath@QDir@@SA?AVQString@@XZ
@@ -14120,6 +14060,7 @@ hand_R
 handleDelta
 handleframespost
 handleframespre
+handshake_enum
 hardstopspeakevent
 hasTangents
 hbox
@@ -14136,20 +14077,6 @@ hide_debug_complaints
 high_priority
 highlightCurrentLine
 hitbox
-hl_prop_vr_hand
-hlvr_flashlight_attachment
-hlvr_gravity_glove_ammo_panel
-hlvr_hand_item_holder
-hlvr_multitool
-hlvr_prop_renderable_glove
-hlvr_shotgun_ammo_counter
-hlvr_shotgun_slide_interactable
-hlvr_slide_interactable
-hlvr_weapon_energygun
-hlvr_weapon_rapidfire
-hlvr_weapon_rapidfire_ammo_capsule
-hlvr_weapon_rapidfire_upgrade_model
-hlvr_weapon_shotgun
 hold
 holdLineColor
 hold_left
@@ -14166,7 +14093,7 @@ horizontal_header_labels
 host_syncfps
 houdini
 hours
-hpzP
+hpzPk+
 http://beta.steamcommunity.com
 http://localhost/community
 http://steamcommunity.com
@@ -14218,11 +14145,10 @@ instance_parm
 instance_variable
 int log
 int_array
-interest_tags
-internalFileAttribs
 interpolator_left
 interpolator_right
 interrupt
+interrupt_priority
 invalid vector subscript
 invalid_hitbox
 inverse
@@ -14239,32 +14165,19 @@ isReadOnly
 isRigid
 isVisible
 isWorldAligned
+is_requirement_condition
 is_selector
 italic
 itemSelection
 itemSetName
 item_combine_console
 item_combine_tank_locker
-item_health_station_charger
 item_healthcharger
-item_healthcharger_internals
-item_healthcharger_reservoir
-item_hlvr_clip_energygun
-item_hlvr_clip_rapidfire
-item_hlvr_clip_shotgun_multiple
-item_hlvr_clip_shotgun_single
-item_hlvr_combine_console_rack
 item_hlvr_combine_console_tank
-item_hlvr_crafting_currency_large
-item_hlvr_grenade_frag
-item_hlvr_grenade_xen
-item_hlvr_health_station_vial
-item_hlvr_prop_battery
-item_hlvr_prop_discovery
-item_hlvr_weapon_tripmine
 item_item_crate
 jMS?Ttd
 jMc?
+jPk+
 jY?setFamily@QFont@@QEAAXAEBVQString@@@Z
 jZ?setMimeData@QDrag@@QEAAXPEAVQMimeData@@@Z
 j\v??HFbxVector4@fbxsdk@@QEBA?AV01@AEBV01@@Z
@@ -14324,6 +14237,7 @@ l7?N
 lO?insertRow@QStandardItem@@QEAAXHAEBV?$QList@PEAVQStandardItem@@@@@Z
 lR?metaObject@QIntValidator@@UEBAPEBUQMetaObject@@XZ
 l\n?dragEnterEvent@QLineEdit@@MEAAXPEAVQDragEnterEvent@@@Z
+l\tV_powd
 l\ti?e
 l\v?event@QToolBar@@MEAA_NPEAVQEvent@@@Z
 l_?toString@QKeySequence@@QEBA?AVQString@@W4SequenceFormat@1@@Z
@@ -14334,8 +14248,6 @@ labelText
 label_2
 label_3
 lastImportedFilename
-lastModifiedDate
-lastModifiedTime
 layerName
 layers
 lbFadeIn
@@ -14396,6 +14308,8 @@ lineNumberFont
 lineOrder
 linearAttenuation
 linear_interp
+linked_events
+linked_requirement_id
 localContrast
 localContrastEdgeScale
 localContrastMidToneMask
@@ -14421,26 +14335,17 @@ m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 m_Bindings
 m_Context
 m_InputMacros
+m_Metadata
 m_Retiming
+m_SequencePoint
 m_Stops
 m_TagValue
-m_bBakedTwoSided
-m_bCanBatchWithDynamicShaderConstants
 m_bChildCursorsShouldInherit
 m_bConditionValue
-m_bDrawLast
 m_bFirstEvaluate
-m_bHasBakedLightingFromLightMap
-m_bHasBakedLightingFromVertexStream
-m_bIsNotMatchedToMaterial
-m_bNoShadow
-m_bOnlyShadow
 m_bRemoveWhenOutOfScope
-m_bUseCompressedNormalTangent
 m_bUseSeparateEyeRamp
-m_bUseShadowFastPath
 m_buttonBox
-m_externalMethodTargetGraph
 m_fMoveTo
 m_flIntroPlaybackRate
 m_flLoopPlaybackRate
@@ -14466,6 +14371,7 @@ m_floatEdit30
 m_floatEdit31
 m_floatEdit32
 m_floatEdit33
+m_hCursorOnOtherGraph
 m_hDef
 m_label
 m_nCurrentWakeIndex
@@ -14477,6 +14383,7 @@ m_nYieldToken
 m_pVertexData
 mailto:SFMbugs@valvesoftware.com?subject=Bug Report from SFM user&body=
 maintain position along path
+make_requirement
 makefile
 manipulatorSettings
 mapEntitiesToIgnore
@@ -14633,15 +14540,15 @@ muzzle_flash
 muzzle_flash_l
 n$Kx
 n2?6
+n<}\v<}\v<}\v<}\v
 nAlpha
 nBalance
 nBlendIndex
-nCentralDirectoryEntries_ThisDisk
-nCentralDirectoryEntries_Total
 nColumn
 nDataSize > 0
 nDelayInMS
 nDenominator
+nFormat
 nKillPriority
 nLayoffState
 nMaxElements
@@ -14654,6 +14561,8 @@ nNumerator
 nOption
 nPos
 nPoseParameter
+nRemainderDigits
+nRemainderNoiseDigits
 nRow
 nSelectionIndex
 nState
@@ -14662,6 +14571,7 @@ nToolId
 nTreadmillState
 nValidGroupIndex
 nValue
+nWakePriority
 nX?setBold@QFont@@QEAAX_N@Z
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
@@ -14695,26 +14605,7 @@ normalSelectedTextColor
 normals
 normalsIndices
 note
-npc_combine_s
-npc_dota_barracks
-npc_dota_base_blocker
-npc_dota_building
-npc_dota_creep_lane
-npc_dota_creep_neutral
-npc_dota_creep_siege
-npc_dota_effigy_battle_cup
-npc_dota_effigy_statue
-npc_dota_filler
-npc_dota_fort
 npc_dota_hero_
-npc_dota_lantern
-npc_dota_lotus_pool
-npc_dota_tower
-npc_dota_unit_templar_gate
-npc_dota_unit_twin_gate
-npc_dota_watch_tower
-npc_dota_xp_fountain
-npc_furniture
 npcclass
 null FbxMaterial
 null VP8Io passed to VP8GetHeaders()
@@ -14722,8 +14613,6 @@ numDigitsLabel
 numDigitsLineEdit
 numPlanes
 numTimeSteps
-numberOfTheDiskWithStartOfCentralDirectory
-numberOfThisDisk
 numcascades
 o KPBf
 o@EncodeBC7Blocks
@@ -14732,7 +14621,6 @@ oOffset
 oQ?Y
 oY.o<
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
-o\tV_sind
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
 objects rejected / passing PVS vis check:   %4d / %4d\n
 objects rejected / passing frustum culling: %4d / %4d\n
@@ -14789,8 +14677,9 @@ overrideShutterSpeedValue
 ownerelement
 ownerlog
 p"?value@QSpinBox@@QEBAHXZ
+p2Pk+
 p4win
-p8+u
+p60\
 p?L7
 p?X94<
 p?vO
@@ -14799,11 +14688,11 @@ pCamera
 pCheckpointName
 pClip
 pCurrentFocusWidget
-pDBu
 pDescription
 pEt : lower-mid front unrounded vowel
 pEvent
 pFilter
+pHru
 pLightRigButton
 pMapName
 pMenu
@@ -14818,7 +14707,6 @@ pTreeView
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
 pWidget
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
-p\r`\fPDBu
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 p`?type@QStandardItem@@UEBAHXZ
 pack_color_channel
@@ -14847,11 +14735,11 @@ path_node_trajectory
 path_particle_rope
 path_trajectory
 pattern
-pdLu
 per-camera settings
 permitresponses
 pet_preview_gravity
 pet_preview_underwater
+pet_preview_wind
 phoneme
 phonemeextractors/%s
 phonemeextractors/*.dll
@@ -14923,21 +14811,9 @@ progressTextColor
 progressiveRefinementGroupBox
 projlight
 projlight%d
-prop_animating_breakable
-prop_animinteractable
-prop_door_rotating_physics
-prop_dry_erase_marker
-prop_dynamic
-prop_dynamic_client_fadeout
-prop_dynamic_clientside
-prop_dynamic_override
-prop_grabbity_gloves
 prop_hlvr_crafting_station
-prop_hlvr_crafting_station_console
-prop_item_healthvial_capsule
 prop_physics_override
 prop_physics_respawnable
-prop_ragdoll
 propattr_flatten_into_parent_row
 propdataname
 pseudo-
@@ -14947,7 +14823,6 @@ pulse_node_custom_attributes
 pulse_open_graph_id %u %u
 pulse_runtime_lib
 pvTarget
-px%u
 python
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?currentTime@QTime@@SA?AV1@XZ
@@ -14958,10 +14833,10 @@ quadraticAttenuation
 quaternion log
 quaternion_array
 quiet
+r0j)
 r>TR'>O
 rQ?lineTo@QPainterPath@@QEAAXNN@Z
-r\vpDBu
-r\vpdLu
+r\vp4
 r_dota_wind_min_high_freq_strength
 rad2deg
 radius of the sfm skeleton display
@@ -14990,7 +14865,6 @@ redCurveColor
 refOrientation
 registers
 reject
-relativeOffsetOfLocalHeader
 relative_orientation
 relative_position
 remap
@@ -14999,12 +14873,8 @@ removeOne
 removing duplicate flex controller %d %s\n
 removing flex controller %s\n
 removing layer %d from stack\n
-renderDecals
 renderDiffuse
 renderOnlySelectedClips
-renderOpaque
-renderSSAO
-renderScalableAO
 renderSettings
 renderSpecular
 renderVerts
@@ -15027,9 +14897,13 @@ requested_cancel
 requirement_name
 requirements
 resampleinterval
+reset_cycle_on_time_change
+reset_on_end
 resourcesystem
 result_left
 result_right
+return_values
+return_values_enabled
 rigIdx
 right
 rightEdgeActive
@@ -15104,7 +14978,6 @@ scriptlist
 scripts
 scripts//moods_default.vdata
 scripts/activity_modifier_weights.txt
-scripts/interest_tags.vdata
 scripts/moods_default.vdata
 scripts\sfm
 scroll_widget
@@ -15134,6 +15007,7 @@ self_with_wearables
 semanticName
 separate_eye_ramp
 separator
+sequence_is_public
 sequence_random
 sequenceduration
 sequential position along path
@@ -15236,7 +15110,6 @@ shape
 shared
 sharedPresetGroupSettings
 shatteredShard
-shatterglass_shard
 shifted_time
 shot1
 shots
@@ -15260,7 +15133,6 @@ side
 sidelist
 sign
 signal
-signature
 silence
 simple_cubic
 simulateWhenShutterClosed
@@ -15353,7 +15225,6 @@ stacked_one
 staggerinterval
 standard
 startJoint
-startOfCentralDirOffset
 startOffset
 startTime
 startUp
@@ -15369,6 +15240,7 @@ stereoSquashed
 stereoscopic
 stoppoint
 strValue
+strafe_mode
 stretch
 string log
 string_array
@@ -15434,7 +15306,6 @@ text_block
 textureCoordinates
 textureCoordinatesIndices
 textureFrame
-texture_based_animatable
 thread initialization failed.
 threshold
 tile
@@ -15465,9 +15336,11 @@ toneMapScale
 tonemapping
 tool
 toolSpecificUI
+tool_request_args
+tool_request_text
+tool_request_tool
 toolbarArea
 toolhud_enable
-tools.light_volume_boundary
 tools.reference_notrace
 tools.toolsmaterial
 tools/colors/shared_colors.txt
@@ -15487,8 +15360,6 @@ trackGroups
 tracks
 trail_length_random
 transforms
-transient
-translucent
 transparency
 treeColor
 treeWidget
@@ -15496,6 +15367,7 @@ trigger_
 trimtoshot
 trimtype
 twistJoints
+type_restriction_is_enum_flags
 t|AO
 uA?l\t9>
 uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
@@ -15506,7 +15378,6 @@ uint64 log
 uint64_array
 uint8 log
 uint8_array
-uncompressedSize
 underline
 unexpected count for field "%s", %u, expected 2; ignored
 unified
@@ -15540,6 +15411,7 @@ vForward
 vIK \f3
 vO^?KY
 v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
+value:fulltype
 valueChanged
 valueChangedByEdit
 valueChangedBySlider
@@ -15577,8 +15449,6 @@ vector4_array
 velTolerance
 velocity_random
 velocity_tolerance
-versionMadeBy
-versionNeededToExtract
 vertexFormat
 vertexpaint
 verticalAlignment
@@ -15634,9 +15504,8 @@ w\n?connectImpl@QObject@@CA?AVConnection@QMetaObject@@PEBV1@PEAPEAX01PEAVQSlotOb
 w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 wait_until_end
 waiting_group
+wants_handshake
 warn
-weapon_ar2 
-weapon_smg1
 weapons/
 weatherType
 weight$0
@@ -15644,7 +15513,6 @@ weighted
 weights
 weightweight$0
 weightweight$0Indices
-wellknown_white_1x1.vtex
 white
 whiteCurveColor
 widget
@@ -15688,8 +15556,6 @@ xScale
 xSpeed
 x\n?dragLeaveEvent@QListView@@MEAAXPEAVQDragLeaveEvent@@@Z
 x\v?changeOverrideCursor@QGuiApplication@@SAXAEBVQCursor@@@Z
-xen_flora_animatedmover
-xen_hearing_flower
 xxxx
 xy?P
 xz5?i
@@ -15708,13 +15574,15 @@ z>AlignedByteArray not properly aligned\n
 z?HP
 z?KY
 zO?insertText@QTextCursor@@QEAAXAEBVQString@@AEBVQTextCharFormat@@@Z
+zPk+
 zU?qt_metacall@QDrag@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 z\n?connectNotify@QFutureWatcherBase@@MEAAXAEBVQMetaMethod@@@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
-z\tV_sscanf_s
+z\tV_sind
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 zero_value
+{ item_factory = 'IntervalTimer' }
 {X?setBottom@QIntValidator@@QEAAXH@Z
 {\n?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
 {\n?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
