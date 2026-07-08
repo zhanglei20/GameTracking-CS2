@@ -1310,6 +1310,8 @@
 		0 : "A"
 		1 : "B"
 	]
+	
+	bomb_damage_power(float) : "Bomb Power" : "3000"
 ]
 
 @OverrideClass = prop_static

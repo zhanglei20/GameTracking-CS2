@@ -4055,6 +4055,18 @@
 							"10000.000000",
 						]
 					}
+					start_point = 
+					{
+						soundevent_data = "true"
+						data_type = "float"
+						value = "0.000000"
+					}
+					end_point = 
+					{
+						soundevent_data = "true"
+						data_type = "float"
+						value = "0.000000"
+					}
 					priority = 
 					{
 						data_type = "float"
@@ -4066,6 +4078,11 @@
 						value = "0.000000"
 					}
 					block_equal_priority = 
+					{
+						data_type = "float"
+						value = "0.000000"
+					}
+					use_queue = 
 					{
 						data_type = "float"
 						value = "0.000000"
@@ -4093,6 +4110,7 @@
 				input_sync_track_name = "@public.sync_track"
 				input_sync_field_name = "@public.sync_field"
 				wait_for_track = "@public.wait_for_track"
+				use_queue = "@public.use_queue"
 			},
 			{
 				name = "update_test_start_vsnd_rand_oneshot"
@@ -6402,7 +6420,10 @@
 				operator = "util_null"
 				operator_variables = 
 				{
-					import_public_opvars = [  ]
+					import_public_opvars = 
+					[
+						"inner_2",
+					]
 					test_opvars = 
 					{
 						soundevent_data = "true"
@@ -6420,7 +6441,7 @@
 				name = "import_inner_2"
 				operator = "sos_import_stack"
 				import_stack = "inner_2"
-				auto_connect_public_fields = true
+				auto_connect_public_fields = "true"
 				operator_variables = 
 				{
 					opvars_use_namespace = 
@@ -6773,6 +6794,115 @@
 				operator = "soundevent_control"
 				input_execute = "@get_event_info.output_unstopped"
 				input_add_dependent = "@get_event_info.output_unstopped"
+			},
+		]
+	}
+	test_ryan_imported = 
+	{
+		operators = 
+		[
+			{
+				name = "public"
+				operator = "util_null"
+				operator_variables = 
+				{
+					global_opvar_names = 
+					{
+						soundevent_data = "true"
+						data_type = "string"
+						value = "min_vol_inverse_val"
+						_system_properties = 
+						{
+							display_group = "normal"
+							property_group = "Opvars"
+							property_help = "List of opvars whose values influence the volume/filter values of the sound"
+						}
+					}
+					opvars_use_namespace = 
+					{
+						data_type = "bool"
+						value = "true"
+					}
+				}
+			},
+			{
+				name = "scoped_opvars"
+				operator = "util_null"
+				operator_variables = 
+				{
+					min_vol_inverse_val = 
+					{
+						data_type = "float"
+						value = "150.00"
+					}
+				}
+			},
+			{
+				name = "get_opvar_name"
+				operator = "opvar_get_string"
+				input_execute = "1.0"
+				check_event_data = "true"
+				input_operator_name = "public"
+				input_field_name = "global_opvar_names"
+				input_use_namespace = "@public.opvars_use_namespace"
+				array_selection_type = "index"
+				input_index = "0"
+			},
+			{
+				name = "get_scoped_opvar_1"
+				operator = "opvar_get_float"
+				input_operator_name = "scoped_opvars"
+				input_field_name = "@get_opvar_name.output"
+				input_use_namespace = "@public.opvars_use_namespace"
+			},
+			{
+				name = "set_scoped_opvar"
+				operator = "opvar_set_float"
+				input_operator_name = "scoped_opvars"
+				input_field_name = "@get_opvar_name.output"
+				input_use_namespace = "@public.opvars_use_namespace"
+				input = "200.0"
+			},
+			{
+				name = "get_scoped_opvar_2"
+				operator = "opvar_get_float"
+				input_operator_name = "scoped_opvars"
+				input_field_name = "@get_opvar_name.output"
+				input_use_namespace = "@public.opvars_use_namespace"
+			},
+			{
+				name = "opvar_name"
+				operator = "util_print_string"
+				input = "@get_opvar_name.output"
+			},
+		]
+	}
+	test_ryan_outer = 
+	{
+		operators = 
+		[
+			{
+				name = "public"
+				operator = "util_null"
+				operator_variables = 
+				{
+					test_ryan_imported = 
+					{
+						data_type = "public_opvar"
+						value = "test_ryan_imported"
+						use_public_opvar_scope = "true"
+					}
+				}
+			},
+			{
+				name = "test_ryan_imported"
+				operator = "sos_import_stack"
+				import_stack = "test_ryan_imported"
+				auto_connect_public_fields = "true"
+				auto_connect_field_scope = "test_ryan_imported"
+				operator_variables = 
+				{
+				}
 			},
 		]
 	}

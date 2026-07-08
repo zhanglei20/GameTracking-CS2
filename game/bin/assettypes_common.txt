@@ -1238,7 +1238,7 @@
 			m_nAssetTypeVersion = 1
 			m_LimitToMods = 
 			[
-				"csgo","csgo_lv"
+				"csgo","csgo_lv","tf"
 			]
 			m_Blocks = 
 			[

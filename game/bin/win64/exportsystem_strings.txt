@@ -82,7 +82,6 @@ $prefix_element$
 '?SetCount@FbxLayerElementArray@fbxsdk@@QEAA_NHW4EFbxMemoryClearMode@2@@Z
 '?SetCurrentAnimationStack@FbxScene@fbxsdk@@QEAAXPEAVFbxAnimStack@2@@Z
 '?SetFileName@FbxFileTexture@fbxsdk@@QEAA_NPEBD@Z
-(9T2
 (?SetLegacyStyle@FbxShape@fbxsdk@@QEAAX_N@Z
 (?SetLink@FbxCluster@fbxsdk@@QEAAXPEBVFbxNode@2@@Z
 (?SetLinkMode@FbxCluster@fbxsdk@@QEAAXW4ELinkMode@12@@Z
@@ -801,11 +800,12 @@ $prefix_element$
 .png
 .tga
 .vmat
+0lj'
 0x%llx
 16-byte data pool
 2(?SetFrame@FbxTime@fbxsdk@@QEAAX_JW4EMode@12@@Z
 2\nP!E
-2\vpt
+2\vplj'
 4-byte data pool
 5sfm_v8
 64 283 0
@@ -817,7 +817,7 @@ $prefix_element$
 <UNKNOWN_EXPORT_TYPE>
 <\v??BFbxString@fbxsdk@@QEBAPEBDXZ
 ='?SetAxisSystem@FbxGlobalSettings@fbxsdk@@QEAAXAEBVFbxAxisSystem@2@@Z
-=m_bUseShadowFastPath
+=8l3
 >"?IsValid@FbxProperty@fbxsdk@@QEBA_NXZ
 ??0FbxAMatrix@fbxsdk@@QEAA@AEBV01@@Z
 ??0FbxAMatrix@fbxsdk@@QEAA@XZ
@@ -964,6 +964,7 @@ $prefix_element$
 ?GetTextureCount@FbxScene@fbxsdk@@QEBAHXZ
 ?alpha
 ?expf
+?model_default_preview_sequence_name
 ?vtex
 AddNewLayer
 AddUndoElement '%s'\n
@@ -1151,41 +1152,6 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement 
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
-CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmElement *,class CDefLess<class CDmElement *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmElement *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class IDmeOperator *,class CDefLess<class IDmeOperator *>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<bool> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<bool>::PriorityLessFunc(struct ActiveLayer_t<bool> * const &,struct ActiveLayer_t<bool> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<bool> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class CUtlSymbolLarge> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class CUtlSymbolLarge>::PriorityLessFunc(struct ActiveLayer_t<class CUtlSymbolLarge> * const &,struct ActiveLayer_t<class CUtlSymbolLarge> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class CUtlSymbolLarge> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Color> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Color>::PriorityLessFunc(struct ActiveLayer_t<class Color> * const &,struct ActiveLayer_t<class Color> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Color> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class DmeTime_t> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class DmeTime_t>::PriorityLessFunc(struct ActiveLayer_t<class DmeTime_t> * const &,struct ActiveLayer_t<class DmeTime_t> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class DmeTime_t> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class QAngle> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class QAngle>::PriorityLessFunc(struct ActiveLayer_t<class QAngle> * const &,struct ActiveLayer_t<class QAngle> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class QAngle> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class QuaternionStorage> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class QuaternionStorage>::PriorityLessFunc(struct ActiveLayer_t<class QuaternionStorage> * const &,struct ActiveLayer_t<class QuaternionStorage> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class QuaternionStorage> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class VMatrix> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class VMatrix>::PriorityLessFunc(struct ActiveLayer_t<class VMatrix> * const &,struct ActiveLayer_t<class VMatrix> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class VMatrix> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Vec2D<float> > *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Vec2D<float> >::PriorityLessFunc(struct ActiveLayer_t<class Vec2D<float> > * const &,struct ActiveLayer_t<class Vec2D<float> > * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Vec2D<float> > *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Vec3D<float> > *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Vec3D<float> >::PriorityLessFunc(struct ActiveLayer_t<class Vec3D<float> > * const &,struct ActiveLayer_t<class Vec3D<float> > * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Vec3D<float> > *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Vec4D<float> > *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Vec4D<float> >::PriorityLessFunc(struct ActiveLayer_t<class Vec4D<float> > * const &,struct ActiveLayer_t<class Vec4D<float> > * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Vec4D<float> > *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<float> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<float>::PriorityLessFunc(struct ActiveLayer_t<float> * const &,struct ActiveLayer_t<float> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<float> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<int> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<int>::PriorityLessFunc(struct ActiveLayer_t<int> * const &,struct ActiveLayer_t<int> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<int> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<unsigned __int64> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<unsigned __int64>::PriorityLessFunc(struct ActiveLayer_t<unsigned __int64> * const &,struct ActiveLayer_t<unsigned __int64> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<unsigned __int64> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<unsigned char> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<unsigned char>::PriorityLessFunc(struct ActiveLayer_t<unsigned char> * const &,struct ActiveLayer_t<unsigned char> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<unsigned char> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CDmElementSerializationDictionary::ElementInfo_t,class CLessFunc<&private: static bool __cdecl CDmElementSerializationDictionary::LessFunc(struct CDmElementSerializationDictionary::ElementInfo_t const &,struct CDmElementSerializationDictionary::ElementInfo_t const &)>,int,class CUtlBlockVector<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,class CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<bool>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<bool>::LessFunc(struct LayerEvent_t<bool> const &,struct LayerEvent_t<bool> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<bool>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class CUtlSymbolLarge>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class CUtlSymbolLarge>::LessFunc(struct LayerEvent_t<class CUtlSymbolLarge> const &,struct LayerEvent_t<class CUtlSymbolLarge> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class CUtlSymbolLarge>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Color>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Color>::LessFunc(struct LayerEvent_t<class Color> const &,struct LayerEvent_t<class Color> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Color>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class DmeTime_t>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class DmeTime_t>::LessFunc(struct LayerEvent_t<class DmeTime_t> const &,struct LayerEvent_t<class DmeTime_t> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class DmeTime_t>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class QAngle>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class QAngle>::LessFunc(struct LayerEvent_t<class QAngle> const &,struct LayerEvent_t<class QAngle> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class QAngle>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class QuaternionStorage>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class QuaternionStorage>::LessFunc(struct LayerEvent_t<class QuaternionStorage> const &,struct LayerEvent_t<class QuaternionStorage> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class QuaternionStorage>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class VMatrix>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class VMatrix>::LessFunc(struct LayerEvent_t<class VMatrix> const &,struct LayerEvent_t<class VMatrix> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class VMatrix>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Vec2D<float> >,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Vec2D<float> >::LessFunc(struct LayerEvent_t<class Vec2D<float> > const &,struct LayerEvent_t<class Vec2D<float> > const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Vec2D<float> >,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Vec3D<float> >,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Vec3D<float> >::LessFunc(struct LayerEvent_t<class Vec3D<float> > const &,struct LayerEvent_t<class Vec3D<float> > const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Vec3D<float> >,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Vec4D<float> >,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Vec4D<float> >::LessFunc(struct LayerEvent_t<class Vec4D<float> > const &,struct LayerEvent_t<class Vec4D<float> > const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Vec4D<float> >,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<float>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<float>::LessFunc(struct LayerEvent_t<float> const &,struct LayerEvent_t<float> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<float>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<int>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<int>::LessFunc(struct LayerEvent_t<int> const &,struct LayerEvent_t<int> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<int>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<unsigned __int64>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<unsigned __int64>::LessFunc(struct LayerEvent_t<unsigned __int64> const &,struct LayerEvent_t<unsigned __int64> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned __int64>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<unsigned char>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<unsigned char>::LessFunc(struct LayerEvent_t<unsigned char> const &,struct LayerEvent_t<unsigned char> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned char>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CVisibilityMgr
 CWeakHandle
@@ -1201,6 +1167,7 @@ Cleanup
 ClipBoard
 CloseLid
 CmdLine
+Cmdl
 Color Fade
 Color Light From Control Point
 Color Random
@@ -1411,6 +1378,7 @@ DmeXSIMakefile
 DmxSemanticName
 DmxSourceFile
 DmxSourceFileRelative
+DualHull
 ERROR: Specified full path %s does not lie under the mod search path!)\n
 ERROR: Specified path %s could not be made content-relative\n
 ERROR: Unable to create an attribute handle! Save, quit, restart and clean up your file to have fewer elements!\n
@@ -1472,7 +1440,6 @@ FloatBitMap_t::WriteInMemoryEXRFast(), C:\buildworker\csgo_rel_win64\build\src\b
 FoldLipLo
 FoldLipUp
 FoliageAnimation
-G\f%G47
 GenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!\n
 Generic DMX
 Generic MovieObjects
@@ -1481,10 +1448,7 @@ GenericType
 GetClipboardData
 GetProfile_ultrafast
 GlobalSize
-H=Q2
-H=S2
 Hammer temp export
-HeP2
 HemiOctAnisoRoughness_RG_BA
 HemiOctIsoRoughness_RG_B
 HemiOctNormal
@@ -1493,6 +1457,7 @@ I(?SetGlobalTimeMode@FbxTime@fbxsdk@@SAXW4EMode@12@N@Z
 IExportSystem
 IKV3TransferInterface_ResourceSave
 IOSRoot
+If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 Inherit Velocity
 Initial Repulsion Velocity
 Initial Scalar Noise
@@ -1604,8 +1569,8 @@ Oscillate Vector
 Output memory size is zero
 OverlayProjectionDirection
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
+PDW'
 PF\n%d %d\n-1.000000\n
-PackedBlobNormal
 Particle Configuration File
 PerVertexLighting
 Pf\n%d %d\n-1.000000\n
@@ -1683,7 +1648,6 @@ Solved Knee
 Solved Thigh
 StereoFlip
 Symbol table:  %d entries %llu bytes\n
-T\tV_log2f
 Take 001
 TanFrameQuat
 Texture  :: %s\n
@@ -1722,6 +1686,7 @@ Unserialize: Unexpected encoding name '%s' reading file '%s' - expected encoding
 Unserialize: Unexpected format '%s' reading file '%s' - expected format '%s'\n
 Unsupported export type :: %s
 Unsupported input file type: %s
+Use World Space Up
 User Data Element
 VDataModelVersion001
 VDmElementFrameworkVersion001
@@ -1745,7 +1710,6 @@ WipeUndo '%s'\n
 World Files
 World Node Files
 X)?SetRotationActive@FbxNode@fbxsdk@@QEAAX_N@Z
-X5R2
 Z%?RemoveElementUV@FbxGeometryBase@fbxsdk@@QEAA_NPEAVFbxLayerElementUV@2@@Z
 ZFP compression is not supported in this build
 [%d] Aborting undo '%s'\n
@@ -1769,12 +1733,15 @@ ZFP compression is not supported in this build
 \t??8FbxVector4@fbxsdk@@QEBA_NAEBV01@@Z
 \tError\n
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
+\tV_ZSTD_decompress
+\tV_sscanf_s
 \tV_strnchr
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\t\t\t\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_StringAfterPrefixCaseSensitive
 \t_V_StripLastDir
 \v??_7FbxAnimCurveFilter@fbxsdk@@6B@
+_\tV_log2f
 _basetintmask_
 _colorSetNames
 _detailmask_
@@ -1792,7 +1759,6 @@ _selfillummask_
 _specexp_
 _specmask_
 _texcoordNames
-`yT2
 activeBookmarkSet
 adding layer %d to stack\n
 addlayer: log %p lc[%d], layer %p
@@ -1849,6 +1815,7 @@ baseStates
 basic_movement
 bentnormal
 bezier
+binary
 binary_array
 binary_seqids
 binary_v
@@ -2214,18 +2181,12 @@ m_SubassetDefinitions
 m_SubassetReferences
 m_UserData
 m_WeakReferenceList
-m_bBakedTwoSided
-m_bCanBatchWithDynamicShaderConstants
-m_bDrawLast
+m_bAllowDefinitions
+m_bAllowReferences
 m_bFileExists
-m_bHasBakedLightingFromLightMap
-m_bHasBakedLightingFromVertexStream
 m_bIsGameFile
-m_bIsNotMatchedToMaterial
-m_bNoShadow
-m_bOnlyShadow
 m_bOptional
-m_bUseCompressedNormalTangent
+m_bWorldSpaceOrientation
 m_fMoveTo
 m_nFileCRC
 m_nFingerprint
@@ -2333,7 +2294,6 @@ overrideParent
 overridePos
 overrideRot
 ownerlog
-p>t9)
 parentBindRotation
 parentConstraint
 pathNodeName
@@ -2352,6 +2312,7 @@ pinEnabled
 pin_enabled
 pivotOffset
 pixelAspectRatio
+plj'
 pointentityclass
 poleVector
 posTolerance
@@ -2676,7 +2637,6 @@ wrinkle$0Indices
 wrinkleIndices
 wrinkleScales
 z)?SetScale@FbxTexture@fbxsdk@@QEAAXNN@Z
-z\tV_sscanf_s
 {+?currentDateTimeGMT@FbxDateTime@fbxsdk@@SA?AV12@XZ
 |BBoneSetup
 ~CGenericFilter

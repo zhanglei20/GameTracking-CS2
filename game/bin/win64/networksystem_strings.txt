@@ -16,10 +16,14 @@
   system status: %s\n
   version max  : %u.%u\n
   version used : %u.%u\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$0
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  %dms faster than direct ping of %dms
  (08@HPX`j
+ (08@HPXbpq
  (08@HPZ
+ (08@HRpq
+ (08@Jpq
+ (0X`hpzpq
  - keeping around as cacheable shared connection
  [+add recip %d]
  [COMPLEX]
@@ -154,6 +158,7 @@
 (NULL)
 (This list may include POPs without any gameservers)\n
 (compressed)
+(fpy
 (stream: %s%s local: %s%s)
 *pEnd > *pStart
 + include
@@ -256,17 +261,14 @@
 0 bit issue, spot 3
 0 bit issue, spot 4
 08@HR
-0v8X
-2\vp$E
+08@Jpq
+0>PQ
+8Fpu
 ::Storage_t
 <classname> <fieldname>:  spew why field was excluded from networking for classname.
-@08N8X
-@HPX`hv@r
-@HVP
-@Nps
-@f8X
-@n8X
-AA:P
+@08N
+@6po
+@HPX`hv
 Accepting Steam Net connection %s\n
 AckSeqNum
 Activates/deactivates net message validation
@@ -431,15 +433,6 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CSerializer
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,int,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,int,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<struct CFieldPath::Path_t,6,int,class CMemAllocAllocator>,struct CFieldPath::Path_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<unsigned int,3,int,class CMemAllocAllocator>,unsigned int,int>::AddMultipleToTail
-CUtlRBTree<int,class CDefLess<int>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<int,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CNetChan::SplitPlayer_t,class CLessFunc<&public: static bool __cdecl CNetChan::SplitPlayer_t::Less(struct CNetChan::SplitPlayer_t const &,struct CNetChan::SplitPlayer_t const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CNetChan::SplitPlayer_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<char const *,class CFlattenedSerializer const *,class CDefFastCaselessStringLess,int>::Node_t,class CUtlOrderedMapBase<char const *,class CFlattenedSerializer const *,class CDefFastCaselessStringLess,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<char const *,class CFlattenedSerializer const *,class CDefFastCaselessStringLess,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class INetworkMessageInternal *,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,class INetworkMessageInternal *,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class INetworkMessageInternal *,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,int,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,int,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,int,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct ns_address,int,struct SteamNetConnection_t::ns_address_less,int>::Node_t,class CUtlOrderedMapBase<struct ns_address,int,struct SteamNetConnection_t::ns_address_less,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct ns_address,int,struct SteamNetConnection_t::ns_address_less,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,int,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,int,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,int,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct ConnectionStats_t,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct ConnectionStats_t,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct ConnectionStats_t,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct OverrideWork_t,class CLessFunc<&public: static bool __cdecl OverrideWork_t::Less(struct OverrideWork_t const &,struct OverrideWork_t const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct OverrideWork_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlSortVector<int,class CNetworkMessages::CPriorityLess,class CUtlVector<int,int,class CUtlVectorMemory_Growable<int,int,0> > >::Find
 CUtlSortVector<int,class CNetworkMessages::CPriorityLess,class CUtlVector<int,int,class CUtlVectorMemory_Growable<int,int,0> > >::InsertIfNotFound
 CacheableConnectionExpired
@@ -507,7 +500,6 @@ Error installing message handlers into a net channel: missing handlers in channe
 Error parsing message type %d (%s)
 Error processing network message %s! Channel is closing!\n
 Error! Failed to WSAStartup! err = %d.\n
-Error:  SkipPropData_ with invalid GetFieldAndBaseDepthByPath result (result.m_pField == nullptr), %s unable to find field for path '%s', reading field %d starting at bit %d!
 Error: Components count + networkable data type must be the same for all instances of network field serializer (%s)!\n
 Error: Duplicate network array field serializer registered (%s)!\n
 Error: Duplicate network field change callback registered (%s)!\n
@@ -677,9 +669,12 @@ Opened Steam Net Connection on socket '%s' to %s, connection %s\n
 Order,'From','To',Bits\n
 OutSeqNumAck
 Overrides IP for multihomed hosts
-P08N8X
-P6Pl
-P6p`
+P08@Jpq
+P08J
+P08N
+P2pq
+P6 R
+P:pq
 PACKET_STATUS_DROPPED
 PACKET_STATUS_INVALID
 PACKET_STATUS_NORMAL
@@ -868,6 +863,7 @@ WriteFields
 WriteToBuffer Message %s is not initialized! Probably missing required fields!\n
 Writing %d bits for path %s of serializer %s entity %d, this will fail to parse\n
 X`hr
+Xf0v
 [ Net Message Info: %s ]\n
 [%s] Queued message count %d exceeds limit of %s=%d.  Allowing due to engine_frametime_warnings_enable=false\n
 [%s] high frame misdelivery %.1f%%, %d/%d of %d frames dropped/reordered, %.0fms ping, %.0fms peak jitter\n
@@ -879,6 +875,7 @@ X`hr
 [context entity 0x%p]
 [opaque]
 \nNon-networkables\n\n
+\nPDG
 \rBytes
 \tCannotBeNetworked        = %s\n
 \tCategory Mask            = %08X\n
@@ -891,9 +888,9 @@ X`hr
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 \vInSeqNum
 \vMsgTick
-`f8X
-`n8X
-aBv8X
+`2pq
+`60O
+`6PU
 activated
 added
 aggegated
@@ -912,6 +909,7 @@ avg_packet_in
 avg_packet_loss
 avg_packet_out
 backing paths
+binary
 bit %d - %d (%d bits/%d bytes):\n
 both states
 building fake field for %s %s\n
@@ -970,9 +968,9 @@ g_pSteamNetworkingSockets
 g_pSteamNetworkingUtils
 groupindex
 groupnames
-hAX%
 has_network_encoding_data
 hostip
+hpzpq
 huge
 identified %d entity related c++ field shadowing issues:\n
 include
@@ -1055,7 +1053,6 @@ net_skip_redundant_change_callbacks
 net_spewcounts
 net_spewserializer
 net_status
-net_use_delta_property_fastpath
 net_use_packet_compression
 net_validatemessages
 net_validatemessages = %d\n
@@ -1078,9 +1075,9 @@ out-of-order
 outgoing_data_bytespersecond
 outgoing_sequence
 outgoing_sequence_start
-p08@H^8X
-p0jP
-p>8X
+p08@H^
+p0j@
+p2pq
 p\rP\f0!h
 packet_status
 parallel
@@ -1089,7 +1086,6 @@ pending data
 pmInfoDest.m_pFlattenedSerializer
 pmInfoDest.m_unPolymorphicTypeId == pmInfoSource.m_unPolymorphicTypeId
 pmInfoSource.m_pFlattenedSerializer
-pn8X
 pointer field
 polymorphic
 polymorphic [forced]

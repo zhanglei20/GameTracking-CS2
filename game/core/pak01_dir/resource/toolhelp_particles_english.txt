@@ -823,5 +823,7 @@ Max - the largest value across all particles.<p>"
 		"Element.C_INIT_CreateOnModel:help"		"Creates particles on a model's hitboxes, bones, or render meshes.  If the entity doesn't have these things, it can fallback to a supplied snapshot or bounding box, in that order."
 		"Attribute.C_OP_RenderCables.m_nForceRoundnessFixed:name_ref"		"force roundness factor fixed"
 		"Attribute.C_OP_RenderCables.m_nForceRoundnessFixed:help"		"On mods with dynamic roundness on, force the cable roundness to be fixed to the value set above"
+		"Attribute.C_OP_AttractToControlPoint.m_fMinimumDistance:name_ref"		"minimum threshold distance for max force"
+		"Attribute.C_OP_AttractToControlPoint.m_fMinimumDistance:help"		"Any particle closer than this distance will get 100% force."
 	}
 }

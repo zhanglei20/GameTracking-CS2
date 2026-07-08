@@ -4,7 +4,8 @@
 .CRT$XCAA
 .CRT$XIAA
 .CRT$XIAC
-2\vpt
+2\vpd
+2\vpp
 <<ECONITEM_INSERT_COUPON_LOOTLIST>>
 <<ECONITEM_INSERT_EVERYTHING_SOURCE2_BUILD_HERE>>
 AppSystemInitFailed\n
@@ -40,6 +41,8 @@ Including: '%s'\n
 Inert VModuleMetadata
 Loading: '%s'\n
 RSDS\r
+R\fpp
+R\vpp
 SCHEMA_
 Saved Debug KV3: %s\n
 WARNING: 
@@ -101,6 +104,7 @@ paint_kits
 paint_kits_rarity
 pedestal_display_model
 prefabs
+r\vpp
 reserved_item_index
 revolving_loot_lists
 scripts/items/items_game.txt

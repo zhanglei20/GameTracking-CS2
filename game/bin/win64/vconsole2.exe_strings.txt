@@ -1,5 +1,5 @@
   Bad Fax Lines: %lu\n
-  C%d:I%-2d {F=%-10d,V=%-10d} 
+  C%d:I%-2d {F=%-10d,V=%-10d,S=%-20.20s} 
   CallInfo%d: %s\n
   Cell%d - NULL\n
   Cell%d EditorID:%d [%s]: %s\n
@@ -50,7 +50,6 @@
  REPEAT
  Reset And Restart 
  Restart Now! 
- Silencing future connection failure messages.
  Vector b
  X?setAlignment@QTextOption@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
  [*OBSERVABLE*]
@@ -84,7 +83,6 @@
 !\f?focusNextPrevChild@QScrollArea@@UEAA_N_N@Z
 !root
 " ?timerEvent@QListView@@MEAAXPEAVQTimerEvent@@@Z
-" connected\n
 " id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T14:36:57-07:00" xmp:MetadataDate="2023-05-02T14:36:57-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:151f0a0f-c466-c241-b635-d5ce3063e5be" xmpMM:DocumentID="adobe:docid:photoshop:4a1dab67-1829-dd47-9ecb-fd44469a1804" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="14" exif:PixelYDimension="14"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:f7caaef1-6a96-2a48-9847-6211a71c9d6e" stEvt:when="2023-05-02T14:36:57-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:151f0a0f-c466-c241-b635-d5ce3063e5be" stEvt:when="2023-05-02T14:36:57-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:f7caaef1-6a96-2a48-9847-6211a71c9d6e" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
 " id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T14:37:30-07:00" xmp:MetadataDate="2023-05-02T14:37:30-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:58ea1f16-88de-1443-bcd5-a2ea7281971b" xmpMM:DocumentID="adobe:docid:photoshop:508d1f02-c5d0-164c-aa95-4cdc013b3b9d" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="14" exif:PixelYDimension="14"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:6312c325-63a9-f24d-9f7a-349bee639664" stEvt:when="2023-05-02T14:37:30-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:58ea1f16-88de-1443-bcd5-a2ea7281971b" stEvt:when="2023-05-02T14:37:30-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:6312c325-63a9-f24d-9f7a-349bee639664" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
 " id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.14ecb42, 2022/12/02-19:12:44        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)" xmp:CreateDate="2013-11-27T12:05:26-08:00" xmp:ModifyDate="2023-05-02T14:37:55-07:00" xmp:MetadataDate="2023-05-02T14:37:55-07:00" dc:format="image/png" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:d358f588-c3ff-4540-bb2e-ab4e96d7a7ba" xmpMM:DocumentID="adobe:docid:photoshop:cd96ee09-f23a-6147-aa4e-e9b7a3ee136e" xmpMM:OriginalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" tiff:Orientation="1" tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" exif:ColorSpace="1" exif:PixelXDimension="14" exif:PixelYDimension="14"> <photoshop:DocumentAncestors> <rdf:Bag> <rdf:li>xmp.did:0DA87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:10A87AAC3A55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:1B97DD56E482E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:2E108DF13B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:5979FD2FE782E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:5E21FDEF3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:6AA1FDF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:838786823055E211B880E99C4437BD69</rdf:li> <rdf:li>xmp.did:865F2DED3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:8B326DEE3B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:98F3DC0A6F5FE2118FD08EF6150E58D8</rdf:li> <rdf:li>xmp.did:BF596EF03B55E2118DBBDA9058FCA566</rdf:li> <rdf:li>xmp.did:C30BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:C70BBB84D781E211BDA5F45C1030E076</rdf:li> <rdf:li>xmp.did:EF3389583DDDE3118C3ECAFAE0F72564</rdf:li> <rdf:li>xmp.did:FD84F65A4085E2119488E083CDE1C6C4</rdf:li> <rdf:li>xmp.did:FFC6261B1AE1E3118A4DD0FB6B6DA7B8</rdf:li> </rdf:Bag> </photoshop:DocumentAncestors> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:EF3389583DDDE3118C3ECAFAE0F72564" stEvt:when="2013-11-27T12:05:26-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"/> <rdf:li stEvt:action="converted" stEvt:parameters="from image/png to application/vnd.adobe.photoshop"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F03389583DDDE3118C3ECAFAE0F72564" stEvt:when="2014-05-16T14:32:17-07:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:a8065cfb-181a-3b45-abd3-6164d3dc2af1" stEvt:when="2023-05-02T14:37:55-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> <rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/png"/> <rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:d358f588-c3ff-4540-bb2e-ab4e96d7a7ba" stEvt:when="2023-05-02T14:37:55-07:00" stEvt:softwareAgent="Adobe Photoshop 24.2 (Windows)" stEvt:changed="/"/> </rdf:Seq> </xmpMM:History> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:a8065cfb-181a-3b45-abd3-6164d3dc2af1" stRef:documentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564" stRef:originalDocumentID="xmp.did:EF3389583DDDE3118C3ECAFAE0F72564"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>
@@ -176,6 +174,7 @@
 #\f?focusNextPrevChild@QTextEdit@@MEAA_N_N@Z
 #\n?columnCount@QSortFilterProxyModel@@UEBAHAEBVQModelIndex@@@Z
 #\r?hide@QWidget@@QEAAXXZ
+#\tV_exp2f
 #bnS
 #gx5\v
 #syy2
@@ -186,6 +185,7 @@ $5RJ'
 $B0B
 $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
+$\tV_expd
 $hab
 $t5\tEi\fo
 % ?timerEvent@QMenu@@MEAAXPEAVQTimerEvent@@@Z
@@ -241,6 +241,7 @@ $t5\tEi\fo
 %s View WorldSpace
 %s [Internal]
 %s compression support is not configured
+%s%02d:%02d
 %s%s: DynamicWidget: %s\n
 %s2-d encoding
 %s: %s at line %u of %s %u (got %u, expected %u)
@@ -320,7 +321,6 @@ $t5\tEi\fo
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
 (7dt!
 (Custom Colors Disabled)
-(E3C
 (Filter)
 (None Available)\n
 (Primary)
@@ -331,7 +331,6 @@ $t5\tEi\fo
 (bLLDc
 (d.9QN
 (i En
-(i3C
 (p8m
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )HBp
@@ -384,6 +383,7 @@ $t5\tEi\fo
 ...Continue Test Message For Simple Image Attachments With Found File.
 .9oV
 .?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_IntervalTimer_DebugInfo_t@@
 .?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AUVDataInitInfo_t@@
 .?AV<lambda_10>@?BM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -402,6 +402,7 @@ $t5\tEi\fo
 .?AV<lambda_17>@?CI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_18>@?CM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
+.?AV<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
 .?AV<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@
 .?AV<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@
 .?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -419,6 +420,7 @@ $t5\tEi\fo
 .?AV<lambda_27>@?DJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_28>@?DM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
+.?AV<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
 .?AV<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@
 .?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -534,6 +536,7 @@ $t5\tEi\fo
 .?AV?$_Func_impl_no_alloc@V<lambda_17>@?CI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_18>@?CM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
@@ -551,6 +554,7 @@ $t5\tEi\fo
 .?AV?$_Func_impl_no_alloc@V<lambda_27>@?DJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_28>@?DM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
@@ -577,8 +581,6 @@ $t5\tEi\fo
 .?AV?$_Func_impl_no_alloc@V<lambda_8>@?BK@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_9>@?BL@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_9>@?L@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AVCADBInterface@@
-.?AVCAppleMobileDeviceInterface@@
 .?AVCAttachmentData@@
 .?AVCBaseDynamicWidgetFactory@@
 .?AVCBasePulseGraphInstance@@
@@ -611,12 +613,8 @@ $t5\tEi\fo
 .?AVCInternalStackTranslationHelper@@
 .?AVCKV3Transfer_AssertAlreadyLoadedResourceLoadInterface@@
 .?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?1???R<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@QEBA@XZ@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?1???R<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@QEBA@XZ@@Z@
-.?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?7??CreateADBConnection@@YA_KPEAVCFiber@@@Z@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?7??CreateADBConnection@@YA_KPEAVCFiber@@@Z@@Z@
 .?AVCLightingControlRig@@
 .?AVCLightingPreviewPopupUI@@
-.?AVCListenerAdapter@CMobileDeviceInterface@@
-.?AVCMobileDeviceInterface@@
-.?AVCMobileDeviceSyslogLinkGenerator@@
 .?AVCModelInstanceManager@@
 .?AVCNewParticleEffect@@
 .?AVCOffscreenToolSceneWindow@@
@@ -786,24 +784,17 @@ $t5\tEi\fo
 .?AVCVertexListSceneObject@@
 .?AVCVertexListSceneObjectDescriptor@@
 .?AVCommandItemDelegate@@
-.?AVIADBDeviceConnectionListener@@
-.?AVIADBDeviceLogCatListener@@
 .?AVIAnimTagListener@@
 .?AVIAnimationHelperAnimGraphChangeLister@@
-.?AVIAppleMobileDeviceConnectionListener@@
-.?AVIAppleMobileDeviceSyslogListener@@
 .?AVIAssetFileListener@@
 .?AVIBaseErrorContext@@
 .?AVIBaseSequence@@
 .?AVIBindTarget@@
 .?AVIBindableCameraScene@@
 .?AVICompleterSortFilterCallback@@
-.?AVIConVarDetailsCallback@@
 .?AVIGeoViewerElement@@
 .?AVIHelpChangeListener@@
 .?AVIHitTestable@@
-.?AVIMobileDeviceConnectionListener@@
-.?AVIMobileDeviceLogListener@@
 .?AVIModelConfigPreviewHost@@
 .?AVIModelInstanceRenderContext@@
 .?AVIModuleMappingListener@@
@@ -830,6 +821,7 @@ $t5\tEi\fo
 .?AVIToolSceneObjectContainer@@
 .?AVIToolSceneWindow@@
 .?AVIToolSpecificPopupUI@@
+.?AVIVConVarDetailsCallback@@
 .?AVIVConsoleDataReceived@@
 .?AVIVConsoleDevice@@
 .?AVIVConsoleSubTool@@
@@ -952,71 +944,64 @@ $t5\tEi\fo
 .vsky
 .webp
 /BU5dQ
-/System/Library/PrivateFrameworks/MobileDevice.framework/MobileDevice
 /\r?hideEvent@QScrollBar@@MEAAXPEAVQHideEvent@@@Z
 /]?size@QImage@@QEBA?AVQSize@@XZ
 /s\tIg
 0.0.0.0
-0012host:track-devices
+007@
+017@
 027@
-037@
+036@
 03j3
+046@
 056@
+066@
 076@
 07G@
+096@
 099i 
-0B7@
+0A5@
 0BCDEFGHIJKLMNOPQRSTUVWXYZ1BCDEFGHIJKLMNOPQRSTUVWXYZ2BCDEFGHIJKLMNOPQRSTUVWXYZ3BCDEFGHIJKLMNOPQRSTUVWXYZ4BCDEFGHIJKLMNOPQRSTUVWXYZ\n
-0CG@
-0E7@
-0FG@
-0GG@
-0GH@
-0I6@
+0D5@
+0EG@
+0I2@
 0IDAT8
-0J6@
-0JH@
+0J2@
+0K2@
 0KG@
-0NG@
-0O6@
+0L2@
+0LG@
+0N2@
+0N6@
 0Ou"@
-0Q7@
-0QG@
-0R2@
-0S4@
-0T2@
-0U2@
-0V2@
-0V4@
-0W2@
-0Y2@
-0Z2@
+0Q2@
+0S7@
+0TG@
+0V6@
+0Y7@
+0Z7@
 0a)Y
-0a6@
-0b6@
-0c6@
-0d2@
-0e6@
-0e7@
-0f5@
-0g6@
-0g7@
-0i5@
-0l7@
-0s7@
-0uH@
+0fG@
+0g4@
+0h4@
+0hF@
+0j5@
+0jG@
+0mG@
+0oG@
+0pG@
+0v6@
+0vF@
 0x%1
 0x%llx
 0x%p = %s '%s'
-0z6@
-0z7@
-0zH@
+0z1@
 1"?updateGeometry@QWidget@@QEAAXXZ
 1&im*
 127.0.0.0
 127.0.0.1:%d
-15:38:00
-15:38:01
+14:11:02
+14:11:11
 16];h
 16yd
 172.16.0.0
@@ -1286,6 +1271,7 @@ $t5\tEi\fo
 2\nmg
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpP
 2aboutToShow()
 2accepted()
 2actionTriggered( int )
@@ -1353,12 +1339,13 @@ $t5\tEi\fo
 49-8
 4>G1_
 4EnP6AI
-4R4@
 4V+2 W
 4[?setRegularExpression@QRegularExpressionValidator@@QEAAXAEBVQRegularExpression@@@Z
 4[YF
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 4\r?hidePopup@QComboBox@@UEAAXXZ
+4h4@
+4oNj
 5 Line gap\n
 5.15.2
 58OnB!
@@ -1394,45 +1381,49 @@ $t5\tEi\fo
 7u{7"
 8"3hrf
 8&Kx
-847@
-867@
-896@
+836@
+846@
+856@
+864@
+874@
+877@
+87G@
+886@
 8:9a
 8B5@
-8C7@
-8F6@
-8H6@
-8HH@
-8N6@
+8D7@
+8M2@
+8O6@
 8O7@
-8P7@
-8Q5@
+8P6@
+8Q6@
+8R6@
 8R7)
 8S2@
-8T4@
-8W2@
+8S6@
+8T6@
+8TG@
+8U6@
+8W6@
 8WWWs
 8XU%
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8a7@
-8d6@
-8e5@
-8f6@
-8h5@
-8h6@
-8i6@
-8j6@
+8g4@
+8h4@
+8hF@
+8i4@
+8lG@
 8liS
-8n7@
-8u7@
-8y7@
+8pG@
+8y1@
 9*x2$
 969p
 98On@
 999u
 99:99:99.999W
+9>-memory-
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\r?hideText@QToolTip@@SAXXZ
 9e5Z
@@ -1482,6 +1473,7 @@ $t5\tEi\fo
 <map_key>
 <map_value>
 <no debug file path>
+<non-RTTI type>
 <none>\n
 <p>[<b>%d</b>] <big>%s</big></p>
 <small><p>%s</p></small>
@@ -1489,9 +1481,10 @@ $t5\tEi\fo
 =HA5
 =IDAT(
 =M3B
+=blendweight
+=fff?
 =hSa
 =lUAnh%
-=m_bUseShadowFastPath
 >Far
 >RIvn
 >Sxb
@@ -3130,7 +3123,6 @@ $t5\tEi\fo
 ?takeAt@QGridLayout@@UEAAPEAVQLayoutItem@@H@Z
 ?takeAt@QStackedLayout@@UEAAPEAVQLayoutItem@@H@Z
 ?testAttribute_helper@QWidget@@AEBA_NW4WidgetAttribute@Qt@@@Z
-?texcoord
 ?text@QAbstractButton@@QEBA?AVQString@@XZ
 ?text@QAction@@QEBA?AVQString@@XZ
 ?text@QLabel@@QEBA?AVQString@@XZ
@@ -3183,7 +3175,6 @@ $t5\tEi\fo
 @[7HU
 @\n?document@QPlainTextEdit@@QEBAPEAVQTextDocument@@XZ
 @\tFFQb
-@\tV_isinfd
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 @fff>fff>fff>fff>
 @iJT
@@ -3194,33 +3185,6 @@ A9\vD
 ACTIVITY WEIGHTS
 ACT_IDLE
 ACT_NEUTRAL_REF_POSE
-ADBInterface
-ADBPath
-AMDServiceConnectionGetSocket
-AMDServiceConnectionInvalidate
-AMDServiceConnectionReceive
-AMDServiceConnectionReceiveMessage
-AMDServiceConnectionSend
-AMDServiceConnectionSendMessage
-AMDSetLogLevel
-AMDeviceConnect
-AMDeviceCopyDeviceIdentifier
-AMDeviceCopyValue
-AMDeviceCopyValueWithError
-AMDeviceDisconnect
-AMDeviceGetConnectionID
-AMDeviceIsPaired
-AMDeviceNotificationSubscribe
-AMDeviceNotificationUnsubscribe
-AMDevicePair
-AMDeviceRelease
-AMDeviceRetain
-AMDeviceSecureStartService
-AMDeviceStartService
-AMDeviceStartServiceWithOptions
-AMDeviceStartSession
-AMDeviceStopSession
-AMDeviceValidatePairing
 ASSERT\nColor
 ATp\n
 A\n?document@QTextEdit@@QEBAPEAVQTextDocument@@XZ
@@ -3238,33 +3202,30 @@ Active Window Widget
 ActiveArea
 Activity %s has %d sequences with a total weight of %d!\n
 Add Device
+Add Flags
 Add Log Viewer
 Add R%d <- R%d + R%d
 Add RCON Server
 Add a new device to connect.
 Add a new log viewer with custom configured channels.
+Add flags to the given value.
 Add the array 'b' to the end of 'a'.
 AddColor
 Addr
 Address
 Adobe ImageReadyq
 AdobeDeflate
+After the real remainder, how many additional digits should we continue to append to create additional visual movement?
 Alpha decoder initialization failed.
 Alpha:
 Alternate
 Alternate Path: %s\n
 AlternateBase
-Always
 AnalogBalance
 And R%d <- R%d && R%d
-Android Device Logcat tab link => "
-Android LogCat
 AntiAliasStrength
 Any Other Cursors Have Tag
 Anywhere
-Apple Mobile Syslog
-Apple Mobile device syslog tab link => "
-AppleDeviceInterface
 Apply filter to log line only, excluding the channel header.
 Arc Cos
 Arc Cosine of input value. Input must be -1.0, 1.0 range. Output in radians, from 0 to 
@@ -3295,9 +3256,11 @@ AsShotWhiteXY
 Assert Messages Color
 Assert True
 Asserts/Errors Only
-Async Fire C%d:I%d
+Async Call Method (Child Cursor) C%d:I%d
+Async Outflow (Child Cursor) C%d:I%d
+Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 At Whitespace
-AtlasToVolumeTextureConversion(3093): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
+AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attachment Text - Attachment Text - Attachment Text
 Attempting to register the command %s for context %s multiple times\n
 AuC=
@@ -3326,7 +3289,6 @@ Backspace
 Bad Filename
 Bad checkstate (expected eg. 'PartiallyChecked')
 Bad code word
-Bad count in ArraySetCount (%d)
 Bad horizontalPolicy "%s"
 Bad max in ArrayFirstNElements (%d)
 Bad reinterpret on ArrayAppend
@@ -3346,6 +3308,7 @@ Base-2 logarithm
 BaselineExposure
 BaselineNoise
 BaselineSharpness
+Basic string support.
 BayerGreenSplit
 Be%y9 
 Begin mouse capture [%i]: %s\n
@@ -3377,9 +3340,6 @@ C7G`
 C:\buildworker\csgo_rel_win64\build\_build_\utils\vconsole2\_vpc_vconsole2\default\win64\_msvc_\Retail\vconsole2.pdb
 C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\csgo_rel_win64\build\src\common\stackhelpers\stackhelpers_vsymbolmodule_translation.cpp
-C:\buildworker\csgo_rel_win64\build\src\mobiledeviceinterface\adb.cpp
-C:\buildworker\csgo_rel_win64\build\src\mobiledeviceinterface\applemobiledevice.cpp
-C:\buildworker\csgo_rel_win64\build\src\mobiledeviceinterface\mobiledeviceinterface.cpp
 C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlblockvector.h
 C:\buildworker\csgo_rel_win64\build\src\toolrenderutils\toolmatsysutils.cpp
@@ -3390,11 +3350,6 @@ C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_sky.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\toolrenderutils.cpp
 C@HY
 C@ag
-CADBInterface::PumpEvents() logcat fiber exited for [%s]\n
-CAppleMobileDeviceInterface::InternalStartSyslogService() could not retrieve socket for service com.apple.syslog_relay on device [%s]\n
-CAppleMobileDeviceInterface::InternalStartSyslogService() failed to start service com.apple.syslog_relay on device [%s]\n
-CAppleMobileDeviceInterface::PumpEvents() error %d reading syslog service for [%s]\n
-CAppleMobileDeviceInterface::SubscriptionCallback( %p ) received an unsubscribed notification\n
 CB\fn
 CBasePulseGraphInstance::CBasePulseGraphInstance( %p )\n
 CBasePulseGraphInstance::EndGraphReload( %p ) %s\n
@@ -3427,7 +3382,6 @@ CLightingControlRig
 CLightingControlRig::DestroyBackgroundMap
 CLightingControlRig::ReloadLightRigConfig
 CLightingPreviewPopupUI
-CMobileDeviceInterface::ReverseForwardNetworkPort() is not available for Apple devices\n
 CModelPreviewAttachedModel
 CNewParticleEffect::DetectChanges
 COMMAND_TEXT_MODE_BUTTON
@@ -3436,7 +3390,7 @@ COMMAND_TEXT_MODE_MENU
 COMMAND_TEXT_MODE_NONE
 COZw
 CParticleCollectionBindingInstance::HACK_UnusedBinding
-CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1186
+CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1166
 CPiecewiseCurve
 CPulseArraylib::ArrayAppend
 CPulseArraylib::ArrayConcatenate
@@ -3449,9 +3403,9 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
+CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
-CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
 CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
@@ -3461,26 +3415,28 @@ CPulseCell_Inflow_ObservableVariableListener '%s'.'%s (%u)' --> Chunk%d: %s
 CPulseCell_InlineNodeSkipSelector::ProcessSelector
 CPulseCell_IntervalTimer::OnInterval
 CPulseCell_IntervalTimer::Start
-CPulseCell_IntervalTimer::StopTimer
 CPulseCell_IsRequirementValid::CheckRequirement
 CPulseCell_LimitCount::CheckRequirement
 CPulseCell_LimitCount::CommitStep
 CPulseCell_PickBestOutflowSelector::ProcessSelector
 CPulseCell_Step_CallExternalMethod '%s'
 CPulseCell_Timeline::Start
-CPulseCell_Timeline::Stop
 CPulseCell_Value_Curve::Eval
 CPulseCell_Value_Gradient::Eval
 CPulseCell_WaitForCursorsWithTag::Wait
-CPulseCell_WaitForObservable::Cancel
 CPulseCell_WaitForObservable::Start
 CPulseCursorFuncs::AnyOtherCursorsHaveTag
 CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
-CPulseCursorFuncs::KillThisCursorAndCancel
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
+CPulseCursorFuncs::WakeCursorsWithTag
+CPulseEnumlib
+CPulseEnumlib::AddFlags
+CPulseEnumlib::HasAllFlags
+CPulseEnumlib::HasAnyFlags
+CPulseEnumlib::RemoveFlags
 CPulseMathlib::AbsFloat
 CPulseMathlib::AbsInt
 CPulseMathlib::ArcCos
@@ -3517,6 +3473,7 @@ CPulseMathlib::MakeTransform
 CPulseMathlib::MakeVector
 CPulseMathlib::MakeVector2D
 CPulseMathlib::MakeVector4D
+CPulseMathlib::MakeVectorFromAngle
 CPulseMathlib::MakeWorldTransform
 CPulseMathlib::MakeWorldVector
 CPulseMathlib::MaxFloat
@@ -3546,11 +3503,15 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
-CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
+CPulseObservableExpression
+CPulseStringlib
+CPulseStringlib::FormatDurationStringFromSeconds
+CPulseStringlib::StringLength
+CPulseStringlib::StringsAreEqualCaseSensitive
 CPulseTestScriptLib::AssertTrue
 CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
@@ -3669,9 +3630,9 @@ CQVerticalSpacerWidget
 CQWidgetDebugHighlight
 CQWidgetDebugger
 CQWindowDivider
+CREATE_CHILD_CURSOR_OUTFLOW
 CRenderOptionsPopupUI
 CResourceNameTyped
-CSemiAutoRWLockT<class CThreadRWLock_FastRead>::LockForRead
 CStackTranslationHelper_VSymbolModule::CanTranslatePointer
 CStackTranslationHelper_VSymbolModule::GetMappedModuleName
 CStackTranslationHelper_VSymbolModule::UnloadModulesInTargetRange
@@ -3687,7 +3648,6 @@ CToolRenderContext::PopTransform - matrix stack underflow
 CToolRenderContext::PushRenderMode - exceeded stack depth\n
 CToolRenderContext::PushTransform - busted through MAX_MATRIX_STACK_DEPTH (%d)
 CToolRenderContext::PushTransform - matrix stack underflow
-CToolScene::Update(1406): 
 CToolSceneAxis
 CToolSceneCamera
 CToolSceneGrid
@@ -3707,11 +3667,12 @@ CUtlBlockVector<class std::function<void __cdecl(void)>,int,class CMemAllocAlloc
 CUtlBlockVector<struct CacheOptimizedTriangle_t,int,class CMemAllocAllocator>::GrowCount
 CUtlBlockVector<struct StoredTriangleVertexPositions_t,int,class CMemAllocAllocator>::GrowCount
 CUtlDict<struct CQInputBindEditor::BindingContextInfo_t *,class CDefFastCaselessStringLess>::Insert
+CUtlDict<struct Command_t *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<struct MonitorFileInfo_t,class CDefFastCaselessStringIgnoreSlashesLess>::Insert
+CUtlDict<struct vcon_ConVarDetail_t *,class CDefFastCaselessStringLess>::Insert
 CUtlHashtable<CGeoViewerObjectId*>
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CNewParticleEffect *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_InstructionDebug,int,class CMemAllocAllocator>,struct CPulse_InstructionDebug,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_RegisterInfo,int,class CMemAllocAllocator>,struct CPulse_RegisterInfo,int>::InsertBeforeGetPtr
@@ -3724,20 +3685,6 @@ CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::AddPage
-CUtlRBTree<int,class CDefLess<int>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<int,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CAttachmentData const *,class CQAttachmentViewerFrame *,class CDefLess<class CAttachmentData const *>,int>::Node_t,class CUtlOrderedMapBase<class CAttachmentData const *,class CQAttachmentViewerFrame *,class CDefLess<class CAttachmentData const *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CAttachmentData const *,class CQAttachmentViewerFrame *,class CDefLess<class CAttachmentData const *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,class CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::CKeyLess,unsigned int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class CConVarDetail *,class CDefFastCaselessStringLess,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,class CConVarDetail *,class CDefFastCaselessStringLess,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CConVarDetail *,class CDefFastCaselessStringLess,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,struct Command_t *,class CDefFastCaselessStringLess,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,struct Command_t *,class CDefFastCaselessStringLess,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,struct Command_t *,class CDefFastCaselessStringLess,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class IVConsoleDevice *,struct FrameStats_t,class CDefLess<class IVConsoleDevice *>,int>::Node_t,class CUtlOrderedMapBase<class IVConsoleDevice *,struct FrameStats_t,class CDefLess<class IVConsoleDevice *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IVConsoleDevice *,struct FrameStats_t,class CDefLess<class IVConsoleDevice *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,class CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,class CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct LoggingChannelInfo_t *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct LoggingChannelInfo_t *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct LoggingChannelInfo_t *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlSortVector<struct LogChannelConfig_t *,class CChannelConfigLess,class CUtlVector<struct LogChannelConfig_t *,int,class CUtlVectorMemory_Growable<struct LogChannelConfig_t *,int,0> > >::Insert
 CUtlSortVector<unsigned int,class CUtlSortVectorDefaultLess<unsigned int>,class CUtlVector<unsigned int,int,class CUtlVectorMemory_Growable<unsigned int,int,0> > >::Find
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
@@ -3763,7 +3710,6 @@ CameraLookAtSelection
 CameraSerialNumber
 Can not read scanlines from a tiled image
 Cancel
-Cancel observing.
 Cannot Debug
 Cannot add device "%1" as a duplicate, the existing device "%2" has the same address.\n
 Cannot add multiple root layouts to the same widget
@@ -3820,7 +3766,6 @@ Close all tabs except '%1'
 Close all tabs except Default ['%1']
 Close the group automatically after a short wait (good for 'success' messages)
 Close the group automatically when the associated parent process exits (good for sticky 'error' messages)
-CloudTexture
 Color Picker
 ColorDialogFinished
 ColorMap
@@ -3842,7 +3787,7 @@ Command:
 Command: "%s" is ill formed. Missing -address parameter\n
 CommandHistory
 Commit Step
-Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
+Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive.
 Completed
 Compression
 Compression algorithm does not support random access
@@ -3899,7 +3844,6 @@ CurrentICCProfile
 CurrentPreProfileMatrix
 Cursor Has Tag
 Cursor[ ptr:%p | id:%d | graph:%p ]: CPulseExecCursor()\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: Completed with result:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of result:%d from Subject:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d\n
@@ -3918,16 +3862,11 @@ DBM&(
 DETAILED\nColor
 DISABLED
 DJ1E
-DN6@
 DNGBackwardVersion
 DNGPrivateData
 DNGVersion
 DWARF_SYMBOL_PATH
 D^0m
-D_BORDER
-D_NO_ZTEST
-D_SNAP_TO_SCREEN_PIXELS
-D_THICK_LINES
 Dark
 Dark Theme (Requires Restart)
 DarkSplitter
@@ -3975,12 +3914,11 @@ Detailed Debug
 Detailed Messages Color
 Device Name - Error
 Device Properties - %1
-Device [%s] AMDeviceConnect() failed\n
-Device [%s] AMDeviceStartSession() failed\n
-Device [%s] could not be paired\n
-Device [%s] pairing did not validate\n
 Device tabs at bottom
 Devices
+Dg4@
+Dh4@
+Di4@
 Disable "Restart Dialog" notifications
 Disconnect
 Disconnected From '%1'\n
@@ -3995,7 +3933,6 @@ Dot Product Vector
 Dot Product of Vector a 
 DotRange
 DotaForward
-DotaGlobalParams_t
 Down
 DragOffsetRelativeEnd
 DragOffsetRelativeStart
@@ -4007,6 +3944,7 @@ Draw in stereo using overlapping red and cyan images
 DrawBoneNamesChanged
 DrawSkyboxChanged
 DtmC
+DualHull
 DummyNoOp
 DumpModeDecode: Not enough data for scanline %d
 E$PZ
@@ -4049,8 +3987,10 @@ End mouse capture [%i]: %s\n
 End.\n
 EndCancelSequence
 EndWheelSequence
+EnsureCapacity
 Enter
 EntityName
+Enum support.
 EnumWindows
 Eq R%d <- R%d == R%d
 Error (problem that prevents task success)
@@ -4083,7 +4023,6 @@ F"a7
 F'6Q
 F5}H
 FBDG
-FCToolSceneLightRig
 FIDAT8
 FJBL
 FPS: %.2f (%6.3f ms +/-%6.3f)
@@ -4094,7 +4033,7 @@ F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 F`f#B
 Fail Outflow
 Failed To Connect After %1 Attempts.\n
-Failed to allocate an instance of a class
+Failed to allocate an instance of a class of type '%s'
 Failed to allocate field info array
 Failed to allocate memory for %s (%ld elements of %ld bytes each)
 Failed to compute bone transform %d for attachment '%s'
@@ -4129,9 +4068,11 @@ FieldOfViewCotangent
 File not open for reading
 FillOrder
 Filter:
+FilterApplied
 Final Port: %1
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find all the yielded cursors on this graph with the matching tag and wake them.
 Find first element 'a' which compare equal to 'element' and return its index.
 Find:
 Fixed
@@ -4139,8 +4080,8 @@ Flash hidden channel activity in log viewer tab
 FlatSelection
 Float To Game Time
 FloatBitMap_t: Error loading %s\n
-FloatBitMap_t::LoadFromFile(3285): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
-FloatBitMap_t::LoadFromTGA(2234): Error loading %s\n
+FloatBitMap_t::LoadFromFile(3729): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
+FloatBitMap_t::LoadFromTGA(2678): Error loading %s\n
 Floating point "Predictor" not supported with %d data format
 Floor - round float down to nearest integer
 Floor Float
@@ -4160,6 +4101,7 @@ FocusIn
 FocusOut
 FoliageAnimation
 Follow user preference
+Format Duration String From Seconds
 Frac
 Fractional component (ie. returns 0.34 for 12.34)
 Frame Selected
@@ -4209,7 +4151,6 @@ Gf95)1&!\ry9I
 Gg!x8n
 Global
 GlobalHotkeys
-GlobalLightOverride
 GlobalTopLevel
 Go To Current Bookmark
 Go To Current Match
@@ -4224,51 +4165,56 @@ Group3Options
 Group4Options
 GvZ<3
 H!0kZj
-H90C
+H36@
+H46@
+H54@
+H64@
+H67@
+H74@
+H7G@
+H86@
 H97@
 HAC K  Unused Binding
-HB7@
 HCto
-HD7@
-HGH@
-HI6@
-HJH@
-HK7@
 HKEY_CURRENT_USER\Software\Valve\GeoView
-HM1C
+HN2@
 HO6@
-HP7@
-HRH@
-HS4@
-HSG@
-HT2@
+HP6@
+HQ2@
+HQ6@
+HR6@
+HS2@
+HS6@
+HT6@
+HT7@
+HTG@
+HU6@
 HV &G
 HV.J
-HZ7@
+HV6@
+HV7@
+HW6@
+HYG@
 H\fBp
-H\r0C
 Hack Dota Layer Opaque
 Hack Dota Layer Opaque Translucent
 HalftoneHints
-Hd6@
-He5@
+Has All Flags
+Has Any Flags
+HeG@
 Header Color
 Header Color...
 HeaderCheckStateChanged
 HeaderSectionBackground
 HeaderSectionLine
-HelperLoadFbmByFileExtension(3065): Error! Unknown file type for %s\n
+HelperLoadFbmByFileExtension(3509): Error! Unknown file type for %s\n
 HeroViewer
 Hex:
-Hf5@
-Hf6@
-Hg5@
-Hg7@
+Hg4@
 HgBNv
-Hh6@
-Hh7@
-Hi5@
-Hi6@
+Hh4@
+HhF@
+HhG@
 Hidden Channels
 HiddenIds
 Hide
@@ -4282,29 +4228,24 @@ Highlight Color...
 Highlight Line Matches
 HighlightColor
 HighlightedText
-Hj6@
 Hj~7!
-Hk7@
 Hmx\
 Home
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HorizontalStrafeCamera
 HostComputer
 HoverItemChanged
-Hp7@
-Hr7@
-Ht7@
-Hy/C
-Hy1C
+HpG@
+Hv5@
+Hy1@
+Hz1@
 H}Go-
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
-I"1C
 IBindTarget
 IBindableCameraScene
 IBrs
 ICC Profile
 ICompleterSortFilterCallback
-IConVarDetailsCallback
 IDAT
 IDAT(
 IDAT8
@@ -4316,18 +4257,16 @@ IHelpChangeListener
 IHitTestable
 II+4
 IKV3TransferInterface_ResourceSave
-IMobileDeviceConnectionListener
-IMobileDeviceLogListener
 IP: Unknown
 IPulseGraphLoadErrorReporter
 IPulseReloadListener
 ISO JBIG
-IS_EFFECTS_LAYER
 IToolFrameListener
 IToolRenderCallbacks
 IToolSceneWindow
 IToolSpecificPopupUI
 IVB%3#
+IVConVarDetailsCallback
 IVConsoleDataReceived
 IVConsoleDevice
 IVConsoleSubTool
@@ -4337,7 +4276,6 @@ I\n?compare@QString@@QEBAHAEBV1@W4CaseSensitivity@Qt@@@Z
 I\r?hitButton@QCheckBox@@MEBA_NAEBVQPoint@@@Z
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
-If -1 timer will continue forever
 If specified, each wait interval will vary randomly between WaitInterval this value
 If this cursor spawns other work via Fire And Forget, should this Tag be inherited?
 Ignored
@@ -4386,6 +4324,8 @@ Integer division - unlike the divide (/) node, this will truncate any remainder 
 Internal error, unknown tag 0x%x
 InternalChannelInfos
 InteroperabilityIFDOffset
+InterruptElegantly
+InterruptImmediately
 Invalid 'dockWidgetArea (%s)
 Invalid 'toolbarArea' (%s)
 Invalid YCbCr subsampling
@@ -4414,8 +4354,6 @@ Is Valid World Vector
 IsIconic
 IsWindow
 IsWindowVisible
-ItemIsolateView
-ItemIsolateVignette
 J%f%f%f%f%f%f%f%f
 J4_1 u
 J6e>F
@@ -4439,6 +4377,7 @@ K8w~\v
 KCL+
 KTHE
 K\r?hitButton@QRadioButton@@MEBA_NAEBVQPoint@@@Z
+K\tV_isinfd
 K\v?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
 K`FV
 Ker(io
@@ -4448,14 +4387,11 @@ KeyState[%1]
 KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
-Kill This Cursor And Cancel
 Koez
 Kt6b}$
 K}QVi1c
 LMouse
 LMouseDoubleClick
-LN6@
-LR4@
 LT?pixel@QImage@@QEBAIHH@Z
 LYBK
 LZ!D
@@ -4486,6 +4422,8 @@ Lerp World Vector
 Less R%d <- R%d < R%d
 LessEq R%d <- R%d <= R%d
 Lf-N
+Lg4@
+Li4@
 Library Modification Detected
 Library Modification Detected: '%s'\n
 Library: "%s" %s\n
@@ -4539,12 +4477,15 @@ MAtomicTransfersAsPlainString
 MENU
 MESSAGE\nColor
 MIDAT8
+MM:SS with leading zeros
+MM_SS_LEADING_ZERO
 MMouse
 MMouseDoubleClick
 MPBPK
 MPropertyFlattenIntoParentRow
 MPulseExpressionAlias
 MPulseFunctionHiddenInTool
+MPulseTypeRestriction
 MSAA Resolve
 MVDataAssociatedFile
 MVDataRoot
@@ -4563,12 +4504,14 @@ Make Angle From Forward Vector
 Make Color
 Make Transform
 Make Vector
+Make Vector From Angle
 Make Vector2 D
 Make Vector4 D
 Make World Transform
 Make World Vector
 Make a Color from component parts
 Make a Transform from component parts.
+Make a Vector from an Angle
 Make a Vector from component parts.
 Make a Vector2D from component parts.
 Make a World Vector from component parts.
@@ -4578,7 +4521,6 @@ MakerNoteSafety
 MaskedAreas
 Match as a contiguous word, including border spaces. A valid word break is anything EXCEPT word chars A-Z, a-z, 0-9, underscore.
 Match whole words
-MaterialPreviewUseLayerViewportExtents
 MatrixWorldToCamera
 MatrixWorldToScreen
 Matteing
@@ -4615,7 +4557,6 @@ Missing cell class '%s', replacing with 'CPulseCell_Unknown'\n
 MissingRequired
 MknT-S
 MnZ/rs
-MobileDeviceInterface
 Mod R%d <- R%d %% R%d
 Module Path: %s\n
 Monitor Directory: %s\n
@@ -4649,6 +4590,7 @@ N?highlight@QPalette@@QEBAAEBVQBrush@@XZ
 N?horizontalAdvance@QFontMetrics@@QEBAHAEBVQString@@H@Z
 N?hueF@QColor@@QEBANXZ
 N?index@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
+N@Bad count in ArraySetCount (%d)
 NColorRoles_Qt
 NLl55
 NO COMMAND TARGET
@@ -4957,7 +4899,7 @@ Open Geo File
 Open In New Log Viewer
 OpenLogViewerProperties
 OpenMutexA
-Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
+OpenSubTool
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Options...
 Options:
@@ -4974,61 +4916,70 @@ Output aborted.
 OverlayProjectionDirection
 Overwrite With Current
 P"?updateSection@QHeaderView@@IEAAXH@Z
+P02@
 P05y
 P07@
-P1G@
-P2G@
-P37@
-P45@
-P97@
+P17@
+P27@
+P46@
+P54@
+P56@
+P5G@
+P66@
+P76@
+P7G@
+P96@
+P9G@
 P=B A
 P?isValid@QColor@@QEBA_NXZ
 P?isValidColor@QColor@@SA_NAEBVQString@@@Z
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
 P?keyboardModifiers@QGuiApplication@@SA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
-PE7@
-PEG@
-PF6@
-PG6@
-PHH@
+PC5@
+PD5@
+PDG@
+PG7@
+PH7@
+PI2@
 PI7@
 PIDAT8
-PIG@
+PJ2@
+PJ5@
 PJD<
 PJE=9'
 PJG@
 PJIa"\v
-PK6@
-PN7@
+PK2@
+PM2@
+PM7@
+PMG@
+PN6@
+PO2@
+PO5@
+PO7@
 POISONED 
+PP2@
 PQ]D?
-PR2@
-PR5@
-PRG@
+PR7@
 PRP\vI
 PS2@
-PSG@
-PT4@
-PU2@
+PTG@
 PURH
-PV2@
-PV4@
-PVH@
-PX2@
-PY2@
+PW7@
+PYG@
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 P\vFE
-Pa6@
+PaG@
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
-PackedBlobNormal
 PageName
 PageNumber
 PanCamera3D
 PanelID
 Parent Map: %s\n
+Parent VData
 ParseEXRHeaderFromMemory failed! Error message: %s\n
 ParseEXRHeaderFromMemory() failed! Error message: %s\n
 Particle Binding
@@ -5038,16 +4989,15 @@ Pass Outflow
 Paste
 Paste (Overwrite)
 PasteColor
-PatternType
-Pb6@
-Pd2@
-Pe6@
-Pe7@
+PbG@
+PdG@
 PerVertexLighting
-Pg6@
+Pg4@
 PgDn
+PgG@
 PgUp
-Ph5@
+Ph4@
+PhF@
 Photometric tag is missing, assuming data is YCbCr
 Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
@@ -5061,13 +5011,16 @@ PitchCameraDown
 PitchCameraUp
 PivotPaint
 PixarLog
-Pk1@
+PlG@
 PlaceholderText
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Please close and restart VConsole to update!
+PnG@
 Policy
 Port: (Default = %1)
+PpG@
+PrG@
 Predictor
 PredictorEncodeTile
 PredictorSetup
@@ -5076,7 +5029,6 @@ Premature EOL
 Premature end-of-file encountered.
 Premature end-of-partition0 encountered.
 PrevFrame
-PreviewUIMaterialOnModel
 Previous
 Previous Bookmark
 Previous Frame
@@ -5084,19 +5036,23 @@ Previous Match
 PrimaryChromaticities
 Probable infinite loop detected! Terminating pulse cursor after %d consecutive instructions (%s)
 Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
+Proceed Immediately
 Process Selector
 PropWorldOrigin
 Properties
 Properties...
 Property '%s.%s' not writable
 Protocol: %d\n
+PsG@
+PtG@
 PtZP
+PuG@
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
-Py6@
+PulseDurationStringFormat_t
+PwF@
 PyNn2FAh
-Pz6@
-Pz7@
+Pz1@
 Q1y\tkL
 Q?logicalDotsPerInch@QScreen@@QEBANXZ
 Q?logicalDpiY@QPaintDevice@@QEBAHXZ
@@ -5180,6 +5136,7 @@ RMouseDoubleClick
 RO^k
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fpP
 R\r?hitTestComplexControl@QProxyStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
 R\rBe
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
@@ -5213,10 +5170,12 @@ Remap Clamped Float
 Remap and clamp input value from input range to output range (float)
 Remove
 Remove Device
+Remove Flags
 Remove Log Viewer
 Remove Tag From Cursor
 Remove all elements from 'a' which are invalid instances.
 Remove all elements from 'a' which compare equal to 'element'.
+Remove flags from the given value.
 Remove the element at the given index in 'a', decreasing its count by one and moving the elements after index.
 Remove the given tag from this cursor. If other cursors are waiting on us, they will resume.
 RemoveColor
@@ -5352,7 +5311,6 @@ SamplesPerPixel tag is missing, assuming correct SamplesPerPixel value is 1
 SamplesPerPixel tag is missing, assuming correct SamplesPerPixel value is 3
 Saturate
 Saturate (clamps float between 0 and 1)
-Save
 Save As
 Save As GL...
 Save As Geo
@@ -5373,9 +5331,6 @@ Save a named value of any type on the cursor.
 Save changes to "%1"?\n(%2)
 Save color changes?
 SaveAsAction
-ScalableAOBias
-ScalableAORadius
-ScalableAOStrength
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 SceneCameraChanged
@@ -5436,7 +5391,6 @@ SetupMaterialSystem(): Failed to add dependant systems!\n
 SetupMaterialSystem(): Missing MaterialSystem2 App Dictionary!\n
 SetupMaterialSystem(): Mod disagreement! MaterialSystem2 setup as '%s'. Device expects '%s'.\n
 SfG'
-ShaderVar_WireframeBackfaces
 Shadow
 ShadowScale
 SharedToolCommands
@@ -5531,8 +5485,6 @@ Standard Messages Color
 Start Of Joining text and 3 attachments text...
 Start a timer with the specified duration, fire the OnInterval output 
 StartSendingCameraTo
-Started ADB Daemon found at "%s"\n
-Started ADB Daemon found in search paths\n
 Starting VConsole2%1...
 Steam Shutdown Detected
 Steam Shutdown Detected.\n
@@ -5540,8 +5492,7 @@ Steam is exiting and wants VConsole to close. Please close VConsole!
 Sticky Frame
 Sticky RCON device tabs (Keep RCON tab active across toggles)
 StoNits
-Stop Timer
-Stop any active timers - the completed outflow will still fire
+Stop Waiting
 StopSendingCameraTo
 String Length
 Strings Are Equal Case Sensitive
@@ -5558,6 +5509,7 @@ Success
 SupportsActivities
 SwitchToEngineWindow
 Sync may be disrupted! Restart from alternate location DISABLED (%1)
+Synchronous - Wait for this node to fully complete before proceeding.
 Syncing in progress! Auto Restart pending...
 Syntax error with array notation or invalid splitscreen slot in '%1'.\n
 SystemParametersInfoA
@@ -5591,12 +5543,10 @@ TIFFTileRowSize
 TIFFVStripSize
 TIFFVTileSize
 TJcyi\t
-TR4@
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 TXT (*.txt)
 TXT (*.txt);;All files (*.*)
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T\tV_log2f
 TabBarBackgroundNotSelected
 TabStyle_t
 TabTextInactive
@@ -5620,16 +5570,19 @@ Text Data Corrupt
 Text Viewer
 TextureFormat
 TextureWrapModes
+Tg4@
 The following libraries have changed:<pre>%1</pre>You need to close and restart VConsole to update.<br>(You will only be prompted to restart once per session.)
 This is BLUE text
 This is a BigTIFF file.  This format not supported\nby this version of libtiff.
 This is line number %d\tThis is line number %d\tThis is line number %d\tThis is line number %d\n
+This is the overall duration. If -1 timer will continue forever. During this duration, we will fire a new child cursor at each Interval.
 This should be a warning colored in yellow!\n
 Thread Start() Failure\n
 Threshholding
 Threshold of sun shadow map size percentage below which objects get culled
 ThunderDecode: %s data at scanline %ld (%lu != %lu)
 ThunderScan
+Ti4@
 TileByteCounts
 TileDepth
 TileLength
@@ -5666,7 +5619,6 @@ ToolTipShortcut
 ToolTipText
 ToolWindowGrid
 ToolsEnvironment
-ToolsLightMode
 ToolsUploadImage.vtex
 ToolsVis Modes
 ToolsVisMode: %s
@@ -5688,6 +5640,8 @@ Track Mouse & Focus
 TransferFunction
 Truncated header.
 TrySendVNotify - SendKV3 failed\n
+Turn a time in seconds into a display string. NOT localized.
+Ty1@
 U5B$z
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QRegularExpressionValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -5697,24 +5651,19 @@ U?qt_metacast@QIntValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QRegularExpressionValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 UIMatRTTexture.vtex
-UITextureOnModel
 UL_x\n
-USBMuxConnectByPort
 UUQD
 UYOSQ
 UZ?setMask@QPixmap@@QEAAXAEBVQBitmap@@@Z
 U\8h(
 U\r?home@QTextBrowser@@UEAAXXZ
-U\tV_logd
 U\v?event@QPlainTextEdit@@MEAA_NPEAVQEvent@@@Z
 Ue[0
 Un/>DD
-Unable to start ADB daemon. Please ensure it's running with "adb start-server" and restart vconsole2\nDon't have ADB or the Android SDK installed?\nDownload adb in the platform-tools here:\n
 Unbalanced pop object namespace
 UnderMouse
 Unhandled/unrecognized child entry (Must have a _class, or be a special entry like: vbox=[] hbox=[] grid=[[],[]] flowing=[] spacing=NUM stretch=NUM
 UniqueCameraModel
-Unknown ADB device status "%s"\n
 Unknown Attachment Test.\n
 Unknown Bitmap Type
 Unknown Image Format
@@ -5722,6 +5671,7 @@ Unknown MetaDataID: "%s" Size: %d
 Unknown compression type.
 Unknown data format %d for LogLuv compression
 Unknown encoding %d for LogLuv compression
+Unknown format type
 Unknown protocol.
 UnknownType
 UnlitPostPass
@@ -5766,6 +5716,7 @@ VConsole2%1
 VConsole2.exe
 VConsole2Tools
 VConsole_SubTool_001_
+VDATA
 VData:%s
 VJby4"
 VNOTIFY_DISABLE
@@ -5844,13 +5795,16 @@ W\v?event@QProxyStyle@@MEAA_NPEAVQEvent@@@Z
 W]Gg
 W^fw
 Wait Complete
+Wake Cursors With Tag
 Warning (problem that doesn't prevent forward progress)
 Warning Messages Color
 Wb2>
 Wfss
 Wh)a
-When False
-When True
+Whether value has ALL of the specified flags set (it may have other flags.)
+Whether value has ANY of the specified flags set (it may have other flags.)
+While False
+While True
 WhiteLevel
 WhitePoint
 Widget Debugger
@@ -5868,11 +5822,13 @@ Writable
 Write error at scanline %lu
 W~1Z
 X to the Y power
-X27@
-X2G@
-X35@
-X47@
-X77@
+X36@
+X46@
+X64@
+X74@
+X7G@
+X84@
+X86@
 X8\r,z
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
@@ -5890,48 +5846,50 @@ X?setCompositionMode@QPainter@@QEAAXW4CompositionMode@1@@Z
 X?setCoordinateMode@QGradient@@QEAAXW4CoordinateMode@1@@Z
 X?setDashOffset@QPen@@QEAAXN@Z
 X?setDashPattern@QPen@@QEAAXAEBV?$QVector@N@@@Z
+XA5@
+XB5@
 XClipPathUnits
-XFH@
-XIH@
-XJ6@
+XD5@
+XD7@
+XE7@
 XJpQ
+XL2@
 XM3w
-XM7@
 XMLPacket
-XN6@
 XN?hasChildren@QStandardItemModel@@UEBA_NAEBVQModelIndex@@@Z
 XNML
-XO7@
-XP7@
+XO6@
+XP6@
 XPosition
-XR4@
+XQ6@
+XR6@
 XResolution
-XSG@
-XT2@
+XS6@
+XT6@
+XTG@
+XU6@
+XV6@
 XW%\vC
-XW2@
+XW6@
+XX7@
 XX?setBackground@QPainter@@QEAAXAEBVQBrush@@@Z
+XYG@
 XYY~
 XYZ, Luv
-XZ2@
 X[[CY
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
 Xbox VDP is not supported on this platform.
-Xc6@
-Xc7@
-Xe5@
-Xh6@
+XdG@
+Xg4@
+Xh4@
 XhD?\
-Xi5@
-Xi6@
-Xj6@
-Xj7@
-Xk1@
+XhF@
 Xm8;
-Xn7@
-Xq0C
-Xy7@
+XpG@
+XrG@
+XtG@
+XuG@
 X}zl
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -5950,6 +5908,7 @@ YO?insertColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 YPosition
 YResolution
 YW?rgb@QColor@@QEBAIXZ
+YZ C
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 YawCameraLeft
 YawCameraRight
@@ -5979,7 +5938,6 @@ ZKSWlO
 ZS5c
 Z\f?convertFromImage@QPixmap@@QEAA_NAEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 Z\r?horizontalHeaderItem@QTableWidget@@QEBAPEAVQTableWidgetItem@@H@Z
-Z\tV_modfd
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 ZoomAllCamerasIn
 ZoomAllCamerasOut
@@ -6002,15 +5960,6 @@ Z~!|L8\v1H
 [?setStops@QGradient@@QEAAXAEBV?$QVector@U?$QPair@NVQColor@@@@@@@Z
 [?setStyle@QBrush@@QEAAXW4BrushStyle@Qt@@@Z
 [?setText@QClipboard@@QEAAXAEBVQString@@W4Mode@1@@Z
-[ADB] Android Device "%s" connected\n
-[ADB] Android Device "%s" disconnected\n
-[ADB] Device list request failed:\n
-[ADB] FAILED to connect to ADB service.%s\n
-[ADB] FAILED to open an ADB port mapping for %s:%d -> host:%d using request "%s"\n
-[ADB] FAILED to open an ADB port mapping for host:%d -> %s:%d using request "%s"\n
-[ADB] FAILED to start shell for device "%s" using request "%s"\n
-[ADB] FAILED to target device "%s" using request "%s"\n
-[ADB] Monitoring for connected device changes\n
 [Default] Determine a lifespan based on the warning/error state of the group
 [Default] General information
 [IMMEDIATE_HALT]
@@ -6079,6 +6028,7 @@ Z~!|L8\v1H
 \f\f?columnCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\t?beginReadArray@QSettings@@QEAAHAEBVQString@@@Z
+\f\tV_acosd
 \fj0F
 \fz0$vZ 
 \n------------------------------\n
@@ -6168,7 +6118,8 @@ Z~!|L8\v1H
 \nYou have data or important state in the "%1" Tool.\n\nAbandon and continue closing?\n
 \n\f?data@QStringListModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
-\n\tV_atanf
+\ng_flConfigMaxCoord
+\ng_flToolsDefaultFarZ
 \p4u
 \r?dark@QPalette@@QEBAAEBVQBrush@@XZ
 \r?darker@QColor@@QEBA?AV1@H@Z
@@ -6236,20 +6187,17 @@ Z~!|L8\v1H
 \tNew Line Indented 1 Tab...
 \tT?parent@QWindow@@QEBAPEAV1@XZ
 \tTwZ
-\tV_acosd
 \tV_asind
 \tV_atan2d
+\tV_atand
+\tV_atanf
 \tV_cosd
-\tV_exp2f
-\tV_expd
 \tV_tand
 \t[?setPosition@QTextCursor@@QEAAXHW4MoveMode@1@@Z
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\tL\ti\tn\tk\t  A  \n
-\t\tV_atand
 \t\v?brushOrigin@QPainter@@QEBA?AVQPoint@@XZ
 \t_V_StringAfterPrefixCaseSensitive
-\tg_flConfigMaxCoord
 \tpHYs
 \v?brush@QPainter@@QEBAAEBVQBrush@@XZ
 \v?brush@QPalette@@QEBAAEBVQBrush@@W4ColorRole@1@@Z
@@ -6309,13 +6257,13 @@ _TIFFSetupFieldInfo
 _TIFFVGetField
 _TIFFVSetField
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
+_\tV_log2f
 _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
 __CursorQueue__
 __FireCursorsParent__
 __Frame
 __IsValveCQTabbedStyle
 __State_Child_Condition__
-__State_Child_Subgraph__
 __TabIndex
 __TimelineParent__
 __channelInfoString
@@ -6337,12 +6285,11 @@ _wjb
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?valueF@QColor@@QEBANXZ
-`I2C
 `Q?lightnessF@QColor@@QEBANXZ
 `T?pixmap@QIcon@@QEBA?AVQPixmap@@HW4Mode@1@W4State@1@@Z
 `W?rgba@QColor@@QEBAIXZ
+`\tV_logd
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`q2C
 `qok
 a { text-decoration: underline; color: %1; }
 a:fulltype
@@ -6352,18 +6299,18 @@ a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
 aV03F\t
-a\tV_powd
 actions
 activatedText
 activeDevice
 activeDeviceType
 activeLogViewer
 active_frame
-adb.exe
 align
+allflags
 allowed_api_features
 allowed_requirements
 amd_ags_x64.dll
+anyflags
 aoB>"
 area
 arg%d
@@ -6389,21 +6336,16 @@ bValue
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
 background
 backgroundColor
-backgroundCornerColor0
-backgroundCornerColor1
-backgroundCornerColor2
-backgroundCornerColor3
 backgroundEnabled
 backgroundFill
-backgroundMaterial
 backgroundStyle
 bad partition length
 bentnormal
 bh\fcc
 bii\t
+binary
 black
 blendindices
-blendweight
 blendweights
 blue
 bold
@@ -6467,9 +6409,11 @@ cursor_id
 cursors
 curvature
 custom_colors
+d54@
 d6J0
 d6ai
 d7(N
+dI2@
 dO{H
 dZr:
 d\f?convertToFormat_helper@QImage@@IEBA?AV1@W4Format@1@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
@@ -6494,15 +6438,16 @@ defaultAction
 defaultTextColor
 deg2rad
 dest
-device
 deviceName
 deviceTabPaneSize
 deviceTabView
 deviceTabsAtBottom
 deviceType
+dg4@
+dh4@
 dhc\tM"7
+di4@
 dimensions
-disableVisualEffects
 displayWindow
 dlBNvz!/u{1?cmR^
 doItemsLayout
@@ -6511,7 +6456,7 @@ docked_widget
 domain_scope
 doubleClicked
 dqe-KO{/3
-drawShadows
+du4@
 dummyfilename.tif
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 e"Q8
@@ -6521,6 +6466,7 @@ e9,X
 eQ@i
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
+e\tV_modfd
 e]bi
 element
 end_as_info
@@ -6528,6 +6474,7 @@ end_group
 er'6
 etW.A
 execution_history
+expression_type
 extrasMinimized
 f5Y}
 fTul
@@ -6567,6 +6514,7 @@ flPitch
 flRadians
 flRoll
 flScale
+flSeconds
 flTime
 flVal
 flValue
@@ -6671,52 +6619,58 @@ green
 grid
 group_title
 h*CU
-h06@
+h36@
 h4*3
+h46@
+h57@
+h74@
+h77@
+h7G@
+h86@
+h97@
 h<7s
-hA7@
-hEH@
-hHH@
-hL7@
-hP7@
+hD5@
+hJ2@
+hM2@
+hO6@
+hP2@
+hP6@
+hQ6@
 hQXk0F
-hR4@
-hSG@
+hR6@
+hS6@
 hSnX
-hT2@
-hW2@
-hY2@
-hZ7@
+hT6@
+hTG@
+hU6@
+hV6@
+hW6@
+hYG@
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?event@QTabWidget@@MEAA_NPEAVQEvent@@@Z
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
 handleDelta
 hbox
-hc6@
+hcG@
 hcenter
-hg5@
-hg7@
-hh6@
-hi6@
+hdG@
+helpsystem.dll
+hg4@
+hh4@
 hideFromTaskSwitching
 highlightColor
 highlightLineSearchResults
 highlightText
-hj6@
 hjO>
-hk1@
+hkG@
 horizontal differencing 
 horizontalPolicy
 horizontalStretch
 horizontal_header
 horizontal_header_labels
-host-serial:%s:forward:tcp:%d;tcp:%d
-host:transport:%s
-ht7@
-https://dl.google.com/android/repository/platform-tools-latest-windows.zip
-hu7@
+hpG@
 hy\teQ
-hz6@
+hz1@
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
 i=TZ
 iN_Uh
@@ -6734,6 +6688,7 @@ incrementalTabCompletion
 incrementvar mat_fullbright 0 1 1
 incrementvar mat_wireframe 0 1 1
 indentWrappedLines
+interrupt_priority
 invalid vector subscript
 is_selector
 italic
@@ -6756,9 +6711,12 @@ kX?setBlue@QColor@@QEAAXH@Z
 k\v?event@QTextEdit@@MEAA_NPEAVQEvent@@@Z
 l-%Zk
 lELp
+lI2@
 lJoH
 lR?metaObject@QIntValidator@@UEBAPEBUQMetaObject@@XZ
+lS2@
 l\n?dragEnterEvent@QLineEdit@@MEAAXPEAVQDragEnterEvent@@@Z
+l\tV_powd
 l\v?event@QToolBar@@MEAA_NPEAVQEvent@@@Z
 labelPos
 labelText
@@ -6768,8 +6726,8 @@ left
 length2d
 length3d
 lerp
+lg4@
 lhA[M
-li5@
 lifespan
 lineOrder
 lineWrap
@@ -6779,15 +6737,16 @@ local
 local, checking capture modules\n
 local\n
 localhost:%d
+localize.dll
 log viewer font: %s, size:%d\n
 log2
 logViewerTabView
 logViewerTabsAtBottom
-logcat --clear\nlogcat\n
 loud
 lowprecisionuv
 lowprecisionuv1
 lp={S
+ly1@
 m4UPh
 mX?setBlueF@QColor@@QEAAXN@Z
 m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
@@ -6803,6 +6762,8 @@ m_Items
 m_LibraryPath
 m_MaterialSystemDependencies
 m_MenuString
+m_Metadata
+m_SequencePoint
 m_StatusBarTipString
 m_Stops
 m_SubToolIconPath
@@ -6811,31 +6772,35 @@ m_TagValue
 m_ToolConfig
 m_ToolbarString
 m_bAllowAutoStart
-m_bBakedTwoSided
-m_bCanBatchWithDynamicShaderConstants
+m_bCanAutoComplete
 m_bChildCursorsShouldInherit
+m_bCommand
 m_bConditionValue
-m_bDrawLast
 m_bFirstEvaluate
-m_bHasBakedLightingFromLightMap
-m_bHasBakedLightingFromVertexStream
 m_bInternalUseOnly
-m_bIsNotMatchedToMaterial
-m_bNoShadow
-m_bOnlyShadow
+m_bIsDefault
+m_bIsFlagsEnum
 m_bRemoveWhenOutOfScope
 m_bRequiresAppConnection
 m_bRequiresToolConnection
-m_bUseCompressedNormalTangent
-m_externalMethodTargetGraph
 m_flSlopeIncoming
 m_flSlopeOutgoing
+m_hCursorOnOtherGraph
 m_hDef
 m_nCurrentWakeIndex
 m_nCursorID
 m_nGraphID
 m_nStackDepthWhenAdded
 m_nYieldToken
+m_szDefault
+m_szFriendlyName
+m_szGroupName
+m_szHelpString
+m_szMax
+m_szMin
+m_szValue
+m_vecDetails
+m_vecEnum
 mailto:steam@valvesoftware.com
 mailto:steam@valvesoftware.com\n
 mapped
@@ -6889,6 +6854,7 @@ nBottomValue
 nColumn
 nDelayInMS
 nDenominator
+nFormat
 nFromIndex
 nKillPriority
 nLogicalIndex
@@ -6901,6 +6867,8 @@ nNewFrame
 nNumerator
 nPostLines
 nPreLines
+nRemainderDigits
+nRemainderNoiseDigits
 nRow
 nSkipUpdate
 nSliderAction
@@ -6908,6 +6876,7 @@ nTabIndex
 nToIndex
 nTopValue
 nValue
+nWakePriority
 nX?setBold@QFont@@QEAAX_N@Z
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
@@ -6928,7 +6897,6 @@ o$FFb
 o>6qai
 oY.o<
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
-o\tV_sind
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
 observable_listeners
 observable_scope
@@ -6944,88 +6912,90 @@ outputcolor
 oy1\v
 p"?value@QSpinBox@@QEBAHXZ
 p"vb
-p26@
-p47@
+p04@
+p17@
+p27@
+p36@
+p37@
+p46@
+p54@
 p56@
-p57@
 p66@
 p76@
-p86@
+p7G@
+p84@
 p8d8
-p97@
+p96@
 p>,iO~L
 pA5@
-pB7@
 pCheckpointName
 pCurrentFocusWidget
 pD3o
-pDG@
 pDescription
 pDevice
 pE7@
-pFH@
 pFilter
 pFromWidget
 pG7@
-pH7@
 pHG@
-pIH@
-pK7@
+pIG@
+pK2@
+pL2@
 pLightRigButton
 pLogViewer
 pModule->%s( 0x%llX )\n
+pN2@
 pN6@
-pO6@
+pO2@
 pOG@
 pObject
 pPrevFocusWidget
-pR2@
-pS2@
-pSG@
+pQ2@
+pTG@
 pTagName
 pToWidget
 pToolButton
 pToolsVisModeButton
 pTraceResult
-pU2@
-pV2@
-pV4@
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
+pW7@
 pWidget
-pZ2@
+pYG@
+pZ7@
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 p`?type@QStandardItem@@UEBAHXZ
-pa6@
 parent
 parent_cursor_id
-pb6@
-pd6@
-pe5@
-pe6@
-peG@
+pcG@
+pdG@
 pet_preview_gravity
 pet_preview_underwater
-pf5@
-pf6@
-pg6@
-ph5@
+pet_preview_wind
+pg4@
+ph4@
+pi4@
+pi5@
+piG@
 pi\nH%
 pickedColor
 pixelAspectRatio
-pk1@
+poG@
 pointer not found in module list\n
 polymorphic_arg
 port_name
 posxyz
+ppG@
 previous_value
 propattr_flatten_into_parent_row
+propertyeditor
+propertyeditor.dll
 pseudo-
 pulse_node_custom_attributes
 pulse_open_graph_id %u %u
 pulse_runtime_lib
-py6@
-py7@
+pxF@
+pz1@
 q12_
 q1AVpx
 q3\f5e{
@@ -7049,6 +7019,7 @@ qt_dockwidget_floatbutton
 qtadvanceddocking-qt5.dll
 quiet
 qvm\tK
+r\vpP
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
@@ -7060,14 +7031,11 @@ registers
 remap
 remapSeverityColor_%1
 remapSeverity_%1
-renderDecals
-renderOpaque
-renderSSAO
-renderScalableAO
 requested_cancel
 resourcesystem
 resourcesystem.dll
-reverse:forward:norebind:tcp:%d;tcp:%d
+return_values
+return_values_enabled
 rigIdx
 right
 root
@@ -7108,7 +7076,6 @@ setMinimum
 setRange
 setValue
 sfv-N
-shell:
 showAsTickMark
 showChannelAttachment
 showChannelBookmark
@@ -7142,7 +7109,6 @@ src\public\tier0\platform.h
 stack
 stacked
 stacked_one
-start-server
 stats_display %d\n
 stats_display set to %d\n
 stickyRCONDeviceTabs
@@ -7155,11 +7121,9 @@ success\n
 suppress_menu
 system_state
 t*iv`
-t26@
 t2ak
 tEXtSoftware
 tH)a]
-tR4@
 tU3njZkq
 t\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@AEBVQMetaMethod@@01W4ConnectionType@Qt@@@Z
 t\nhM
@@ -7178,7 +7142,9 @@ td0JQ
 tentative
 texcoord
 text/plain
+tg4@
 th1EAt\n
+th4@
 thread initialization failed.
 tile
 tiles
@@ -7191,9 +7157,11 @@ to read TIFF directory
 toggleViewAction
 tonemapping
 toolSpecificUI
+tool_request_args
+tool_request_text
+tool_request_tool
 toolbarArea
 toolhud_enable
-tools.light_volume_boundary
 tools.reference_notrace
 tools/colors/shared_colors.txt
 tools/images/pulse_editor/cursor_kill.png
@@ -7209,8 +7177,8 @@ tools_renderscenes
 toolscene
 toolscenenodes
 toolscenevismodes.txt
-transient
 transparency
+type_restriction_is_enum_flags
 t|AO
 u>DE*
 uE O
@@ -7245,12 +7213,12 @@ vForward
 vIK \f3
 vM=j
 v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
+value:fulltype
 valueChanged
 valueChangedByEdit
 valueChangedBySlider
 vbox
 vc_add_device
-vc_add_device -address %s -type %d
 vc_connect
 vc_disconnect
 vc_embedded
@@ -7289,7 +7257,6 @@ vc_exit
 vc_help
 vc_info
 vc_localconsole
-vc_localconsole openurl https://dl.google.com/android/repository/platform-tools-latest-windows.zip
 vc_path
 vc_restart
 vcenter
@@ -7333,50 +7300,49 @@ wyS]
 x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
 x07@
 x0Ysqx
-x17@
-x26@
-x67@
-x77@
+x36@
+x46@
+x64@
 x7G@
-xE7@
+x86@
+xB5@
+xC5@
+xD7@
 xEIh
-xF6@
-xG6@
-xGH@
-xH6@
+xI2@
 xIDAT(
-xJ6@
-xJH@
-xK6@
-xM7@
+xL7@
+xO6@
 xO7@
 xOIIQd
-xP7@
-xS4@
-xSG@
-xT4@
-xX2@
-xY2@
+xP6@
+xQ6@
+xR6@
+xS2@
+xS6@
+xT6@
+xTG@
+xU6@
+xV6@
+xW6@
+xYG@
+xZ1@
 x\f?generatedIconPixmap@QCommonStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 x\n?dragLeaveEvent@QListView@@MEAAXPEAVQDragLeaveEvent@@@Z
-xc6@
-xc7@
-xd2@
+xcG@
 xdt,T
-xe7@
-xh6@
-xi5@
-xi6@
+xg4@
+xh4@
 xi\t%x
-xj6@
-xk1@
 xm#uc
+xpG@
 xpd\
-xr7@
-xt7@
-xv7@
+xrG@
+xtG@
+xuG@
 xwv/
 xxz-<Z]
+xy1@
 y8Ry
 yTTh%
 yU?qt_metacall@QDoubleValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -7399,11 +7365,13 @@ zH._8SZ
 zIC2@
 z\f?generatedIconPixmap@QProxyStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
+z\tV_sind
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 zf1ZK
 zhh%
 z}AR
+{ item_factory = 'IntervalTimer' }
 {9VfMYU
 {G\fBa-E
 {Y?setFixedPitch@QFont@@QEAAX_N@Z

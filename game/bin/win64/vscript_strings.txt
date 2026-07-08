@@ -82,10 +82,9 @@
 1X2\v3z3
 258EAFA5-E914-47DA-95CA-C5AB0DC85B11
 2\nP!E
-2\vp8
+2\vppx
 4\f%44
 8@HPX
-8Cp-
 8Csin
 9>pow
 <?xml version="1.0" encoding="UTF-8"?>\n
@@ -104,7 +103,6 @@
 ?exp
 @(\fEtobitDbnotEbswapFlshift
 @BXV
-@bPC
 @not enough memory
 Arg list too long
 Audits.
@@ -310,8 +308,8 @@ RRRRRRRR
 RRRRRRRR4Q5QQQQQ
 RRRRRRRREEGRQQQQ
 RSDST
-R\fp8
-R\vp8
+R\fppx
+R\vppx
 RandomFloatWrapper
 Read-only file system
 Receive buffer overflow for %s\n
@@ -424,6 +422,7 @@ Xbox VDP is not supported on this platform.
 \u%04x
 \var\srcds\shared\dota
 \vgetregistry\fgetmetatable\fsetmetatable
+\vppx
 _LOADED
 _LOADLIB
 _NAME
@@ -574,7 +573,6 @@ _wprintf_p_l
 _wprintf_s_l
 _wscanf_l
 _wscanf_s_l
-`bPC
 `hpB
 abort
 accessorPropertiesOnly
@@ -865,7 +863,6 @@ path too long
 pattern too complex
 perform arithmetic on
 permessage-deflate
-pl K
 popen
 preload
 printf
@@ -879,7 +876,6 @@ property_set
 protocolVersion
 protocol_version
 putf
-r\vp8
 random
 rawequal
 rawset

@@ -3,7 +3,7 @@
   %llums to extract surface\n
   %llums to scan inputs\n
   Bad Fax Lines: %lu\n
-  C%d:I%-2d {F=%-10d,V=%-10d} 
+  C%d:I%-2d {F=%-10d,V=%-10d,S=%-20.20s} 
   CallInfo%d: %s\n
   Cell%d - NULL\n
   Cell%d EditorID:%d [%s]: %s\n
@@ -52,6 +52,7 @@
  [*OBSERVABLE*]
  [-r] <source 1 file>'\n
  [curvetype %s]\n
+ \tV_coshf
  \t\n\r@()[]{}=&,:*|;'!
  bn0s}Q_@r~aoPq
  clean
@@ -59,6 +60,9 @@
  receiver regenerated
  uncorrected errors
 !"P4IMPORT ERROR: bug: Trying to add file to p4 with caps!"
+!IsText()
+!m_Byteswap.IsSwappingBytes()
+!m_Swap.IsSwappingBytes()
 "%s": Bad mode
 "%s": Information lost writing value (%g) as (unsigned) RATIONAL
 "Limit Count: " + m_nLimitCount
@@ -71,6 +75,7 @@
 "displayWindow" attribute not found in the header.
 "id" "elementid" 
 "lineOrder" attribute not found in the header.
+"oNj
 "particle_file"
 "particle_folder"
 "particlefile"
@@ -79,6 +84,7 @@
 "screenWindowWidth" attribute not found in the header.
 # of channels is zero.\n
 #CfU7
+#\tV_exp2f
 #have
 $1\"$2\"$3\"\L$4.vmat\"
 $1\"$2\"$3\"\L$4.vmdl\"
@@ -216,6 +222,7 @@ $SpecularBlendToFull
 $SpecularExponentBlendToFull
 $TEXTURE_REPLACEMENT_TOKEN
 $ZOOMANIMATESEQ2
+$\tV_expd
 $addbumpmaps
 $additive
 $alpha
@@ -515,9 +522,11 @@ $woundcutouttexture
 %s compression support is not configured
 %s converted to vgui shader.\n
 %s encoding %s %d format %s %d %s\n
+%s filling in default key %s for class %s
 %s is not a IBSP file
 %s is version %i, not %i
 %s was found in vmttovmat_whitelist.\n
+%s%02d:%02d
 %s%c%s%c%s%c%g%c%d
 %s%s: FGD Parse error: %s %s\n
 %s%s_nav
@@ -592,13 +601,14 @@ $woundcutouttexture
 %s\%s.vpost
 %s\scripts
 %s\surfaceproperties
-%s_ang
+%s_%d_ang
+%s_%d_extent_max
+%s_%d_extent_min
+%s_%d_only_warp_position
+%s_%d_pos
+%s_%d_radius
+%s_%d_type
 %s_count
-%s_extent_max
-%s_extent_min
-%s_pos
-%s_radius
-%s_type
 %sfemale%s
 %smale%s
 %suncompressed data
@@ -671,7 +681,6 @@ $woundcutouttexture
 *.vpcf
 *.vtf
 *\nNx+\nCh,\n'
-*initialFilterString=%s
 +Parameters
 +jUU
 , channels = 
@@ -689,7 +698,6 @@ $woundcutouttexture
 -> Success (%d attempts)\n
 -CustomImporter_render_animated_sprites-\n
 -\nLx.\nAh/\n/4h
--\tV_fread
 -addon
 -bOnlyIfAfterCurrentChangelist
 -bOnlyIfAfterPrevChangelist
@@ -798,10 +806,12 @@ $woundcutouttexture
 .?AUCAttr_m_Str@?1??GetAttributeTable_CMapDocTestStruct@CMapDocTestStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_StringArrayArray@?1??GetAttributeTable_CMapTestNode@CMapTestNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_StructArray@?1??GetAttributeTable_CMapTestNode@CMapTestNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
-.?AUCAttr_m_TargetEntries@?1??GetAttributeTable_CMapChoreoAnchor@CMapChoreoAnchor@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_TargetEntry@?1??GetAttributeTable_CMapChoreoAnchor@CMapChoreoAnchor@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TargetMapPath@?1??GetAttributeTable_CMapPrefab@CMapPrefab@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TargetMapPath@?1??GetAttributeTable_CMapTerrainPrefab@CMapTerrainPrefab@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
-.?AUCAttr_m_TargetWarps@?1??GetAttributeTable_CMapChoreoAnchor@CMapChoreoAnchor@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_TargetPath@?1??GetAttributeTable_CMapDeformerPath@CMapDeformerPath@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_TargetType@?1??GetAttributeTable_CMapChoreoAnchorLocator@CMapChoreoAnchorLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_TargetWarp@?1??GetAttributeTable_CMapChoreoAnchor@CMapChoreoAnchor@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TestEnum@?1??GetAttributeTable_CMapDocTestStruct@CMapDocTestStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TintColor@?1??GetAttributeTable_CMapInstance@CMapInstance@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TintColor@?1??GetAttributeTable_CMapMesh@CMapMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -830,12 +840,15 @@ $woundcutouttexture
 .?AUCAttr_m_bFlipFaces@?1??GetAttributeTable_CMapCable@CMapCable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bFlipFaces@?1??GetAttributeTable_CMapDeformerLattice@CMapDeformerLattice@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bForceHidden@?1??GetAttributeTable_CMapNode@CMapNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bInitialized@?1??GetAttributeTable_CMapChoreoAnchorLocatorData_t@CMapChoreoAnchorLocatorData_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bKeepVertices@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bLightingDummy@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bLoadAtRuntime@?1??GetAttributeTable_CMapPrefab@CMapPrefab@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bLoadIfNested@?1??GetAttributeTable_CMapPrefab@CMapPrefab@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bNormalBlendOverride@?1??GetAttributeTable_CMapDocMaterialAdjustStruct@CMapDocMaterialAdjustStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bOnlyMeshes@?1??GetAttributeTable_CMapTerrainLayerWorldHeight@CMapTerrainLayerWorldHeight@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bOnlyWarpPosition@?1??GetAttributeTable_CMapChoreoAnchorLocator@CMapChoreoAnchorLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bOnlyWarpPosition@?1??GetAttributeTable_CMapChoreoAnchorLocatorData_t@CMapChoreoAnchorLocatorData_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bOrientToSurface@?1??GetAttributeTable_CMapTerrainDetail@CMapTerrainDetail@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPhysicsSimplificationOverride@?1??GetAttributeTable_CMapMesh@CMapMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPinAngles@?1??GetAttributeTable_CMapNodeTransformPin@CMapNodeTransformPin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -878,15 +891,17 @@ $woundcutouttexture
 .?AUCAttr_m_flDisplayScale@?1??GetAttributeTable_CMapSmartPropLocator@CMapSmartPropLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flEditValue@?1??GetAttributeTable_CMapSmartPropLocator@CMapSmartPropLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flEmissiveLightingBoost@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_flEnd@?1??GetAttributeTable_CMapDeformerPath@CMapDeformerPath@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flFadeMaxDist@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flFadeMinDist@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flFadeStartDistance@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flLimitMax@?1??GetAttributeTable_CMapSmartPropLocator@CMapSmartPropLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flLimitMin@?1??GetAttributeTable_CMapSmartPropLocator@CMapSmartPropLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_flMaxError@?1??GetAttributeTable_CMapDeformerPath@CMapDeformerPath@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flObjectSpacing@?1??GetAttributeTable_CMapTerrainDetail@CMapTerrainDetail@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flOcclusionDeviation@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flOcclusionDistanceRatio@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
-.?AUCAttr_m_flOcclusionReflectionRatio@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_flOcclusionReflectionEnergy@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flOcclusionValue@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flOrder0@?1??GetAttributeTable_CSteamAudioAmbisonicValues@CSteamAudioAmbisonicValues@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flOrder10@?1??GetAttributeTable_CSteamAudioAmbisonicValues@CSteamAudioAmbisonicValues@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -908,6 +923,7 @@ $woundcutouttexture
 .?AUCAttr_m_flSampleSpacing@?1??GetAttributeTable_CMapTerrainLayerWorldHeight@CMapTerrainLayerWorldHeight@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flSmoothingAngle@?1??GetAttributeTable_CMapMesh@CMapMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flSnappingIncrement@?1??GetAttributeTable_CMapSmartPropLocator@CMapSmartPropLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_flStart@?1??GetAttributeTable_CMapDeformerPath@CMapDeformerPath@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flTessellationSpacing@?1??GetAttributeTable_CMapCable@CMapCable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flTextureOffsetAlongPath@?1??GetAttributeTable_CMapCable@CMapCable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flTextureOffsetCircumference@?1??GetAttributeTable_CMapCable@CMapCable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -927,6 +943,7 @@ $woundcutouttexture
 .?AUCAttr_m_nImageMode@?1??GetAttributeTable_CMapTerrainLayerImage@CMapTerrainLayerImage@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nInTangentType@?1??GetAttributeTable_CMapPathNode@CMapPathNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nInterpolationMode@?1??GetAttributeTable_CMapDeformerLattice@CMapDeformerLattice@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_nLocatorType@?1??GetAttributeTable_CMapChoreoAnchorLocatorData_t@CMapChoreoAnchorLocatorData_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nMaterialAdjustmentParamsStruct@?1??GetAttributeTable_CMapStaticOverlay@CMapStaticOverlay@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nMovableIndex@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nNumDivisionsX@?1??GetAttributeTable_CMapDeformerLattice@CMapDeformerLattice@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -939,6 +956,7 @@ $woundcutouttexture
 .?AUCAttr_m_nProbeType@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nPropBakedLightingMode@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nPropCollisionMode@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_nPropCollisionPropertyOverride@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nPropLightmapScaleBias@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nRandomSeed@?1??GetAttributeTable_CMapNode@CMapNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nRenderAlpha@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -958,7 +976,6 @@ $woundcutouttexture
 .?AUCAttr_m_strMovementReverse@?1??GetAttributeTable_CMapNavLink@CMapNavLink@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strPreviewForward@?1??GetAttributeTable_CMapNavLink@CMapNavLink@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strPreviewReverse@?1??GetAttributeTable_CMapNavLink@CMapNavLink@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
-.?AUCAttr_m_uLocatorIndex@?1??GetAttributeTable_CMapChoreoAnchorLocator@CMapChoreoAnchorLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vDimensionsInsideSizeField@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vDimensionsOutsideField@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vExtentsMax@?1??GetAttributeTable_CMapChoreoAnchorLocator@CMapChoreoAnchorLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -993,6 +1010,7 @@ $woundcutouttexture
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapTerrainLayerPaintable@CMapTerrainLayerPaintable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapTileProxy@CMapTileProxy@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapTileSet@CMapTileSet@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapWeightedGroup@CMapWeightedGroup@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapWorld@CMapWorld@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1080,23 +1098,25 @@ $woundcutouttexture
 .?AUCAttr_no_member@?P@??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?P@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_IntervalTimer_DebugInfo_t@@
 .?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AUVDataInitInfo_t@@
 .?AV<lambda_10>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@
-.?AV<lambda_11>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropSpace_t@@@@
-.?AV<lambda_12>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropSpace_t@@@@
-.?AV<lambda_13>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDirection_t@@@@
-.?AV<lambda_14>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDirection_t@@@@
-.?AV<lambda_15>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDistributionMode_t@@@@
-.?AV<lambda_16>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDistributionMode_t@@@@
-.?AV<lambda_17>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@
-.?AV<lambda_18>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@
-.?AV<lambda_19>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@
+.?AV<lambda_11>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@
+.?AV<lambda_12>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@
+.?AV<lambda_13>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropSpace_t@@@@
+.?AV<lambda_14>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropSpace_t@@@@
+.?AV<lambda_15>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDirection_t@@@@
+.?AV<lambda_16>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDirection_t@@@@
+.?AV<lambda_17>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDistributionMode_t@@@@
+.?AV<lambda_18>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDistributionMode_t@@@@
+.?AV<lambda_19>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@
+.?AV<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
 .?AV<lambda_1>@?1??CollectAreasAssociatedWithMovableMeshInternal@CNavMovableMeshCatalog@@AEAAXIPEAIPEAV?$CUtlVector@V?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@H$0A@@@@@PEAV?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??CreateLeafChoiceWrapperThunk@@YA?AV?$function@$$A6AXVHToolAttrTableInstance@@PEBVIBaseToolAttr@@PEAV?$CUtlVector@UToolAttrGenericChoice_t@@HV?$CUtlVectorMemory_Growable@UToolAttrGenericChoice_t@@H$0A@@@@@@Z@std@@P6AXPEAV?$CUtlVector@ULeafPropertyChoice_t@@HV?$CUtlVectorMemory_Growable@ULeafPropertyChoice_t@@H$0A@@@@@@Z@Z@
 .?AV<lambda_1>@?1??Restart@CNewParticleEffect@@QEAAXXZ@
 .?AV<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@
-.?AV<lambda_1>@?1??SortTableMembersToMatch@KeyValues3@@QEAAXV?$span@VCKV3MemberName@@$0?0@std@@@Z@
+.?AV<lambda_1>@?1??SortTableMembersToMatch@KeyValues3@@QEAAXV?$span@$$CBVCKV3MemberName@@$0?0@std@@@Z@
 .?AV<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@
 .?AV<lambda_1>@?1??UpdateInstanceLocators@CMapPrefab@@AEAAXXZ@
 .?AV<lambda_1>@?1??UpdateLocators@CMapPrefabVariableLocator@@SAXPEAVCMapNode@@PEBVCMapVariableSet@@PEBVCMapPrefab@@W4EMapPrefabVariableUsageType_t@@AEBV?$function@$$A6AXPEAVCMapPrefabVariableLocator@@_N@Z@std@@@Z@
@@ -1104,40 +1124,40 @@ $woundcutouttexture
 .?AV<lambda_1>@?5??AddParticleDomainBindings@@YAXAEAVGameData@@@Z@
 .?AV<lambda_1>@?CC@??QuarterSizeAttrWithBoxFilter@CSOAContainer@@QEAAXAEBV2@HHPEAVCCallQueue@@@Z@
 .?AV<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
-.?AV<lambda_1>@?O@??GetEditableAttributeInfo@CMapPrefab@@UEBA_NPEBDPEAUMapNodeAttributeInfo_t@@@Z@
-.?AV<lambda_20>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@
-.?AV<lambda_21>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@
-.?AV<lambda_22>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@
-.?AV<lambda_23>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDetailFadeLevel_t@@@@
-.?AV<lambda_24>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDetailFadeLevel_t@@@@
-.?AV<lambda_25>@?$PulseBindingSchemaEnumTraits_t@W4ConfigurationHandleShape_t@@@@
-.?AV<lambda_26>@?$PulseBindingSchemaEnumTraits_t@W4ConfigurationHandleShape_t@@@@
-.?AV<lambda_27>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@
-.?AV<lambda_28>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@
-.?AV<lambda_29>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@
+.?AV<lambda_20>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@
+.?AV<lambda_21>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@
+.?AV<lambda_22>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@
+.?AV<lambda_23>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@
+.?AV<lambda_24>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@
+.?AV<lambda_25>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDetailFadeLevel_t@@@@
+.?AV<lambda_26>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDetailFadeLevel_t@@@@
+.?AV<lambda_27>@?$PulseBindingSchemaEnumTraits_t@W4ConfigurationHandleShape_t@@@@
+.?AV<lambda_28>@?$PulseBindingSchemaEnumTraits_t@W4ConfigurationHandleShape_t@@@@
+.?AV<lambda_29>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@
+.?AV<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
 .?AV<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@
 .?AV<lambda_2>@?1??UpdateLocators@CMapPrefabVariableLocator@@SAXPEAVCMapNode@@PEBVCMapVariableSet@@PEBVCMapPrefab@@W4EMapPrefabVariableUsageType_t@@AEBV?$function@$$A6AXPEAVCMapPrefabVariableLocator@@_N@Z@std@@@Z@
 .?AV<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
 .?AV<lambda_2>@?DE@??QuarterSizeAttrWithBoxFilter@CSOAContainer@@QEAAXAEBV2@HHPEAVCCallQueue@@@Z@
-.?AV<lambda_30>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@
-.?AV<lambda_31>@?$PulseBindingSchemaEnumTraits_t@W4PickMode_t@@@@
-.?AV<lambda_32>@?$PulseBindingSchemaEnumTraits_t@W4PickMode_t@@@@
-.?AV<lambda_33>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@
-.?AV<lambda_34>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@
-.?AV<lambda_35>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@
-.?AV<lambda_36>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@
-.?AV<lambda_37>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@
-.?AV<lambda_38>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@
-.?AV<lambda_39>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@
-.?AV<lambda_3>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
-.?AV<lambda_40>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@
-.?AV<lambda_41>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@
-.?AV<lambda_42>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@
-.?AV<lambda_4>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
+.?AV<lambda_30>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@
+.?AV<lambda_31>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@
+.?AV<lambda_32>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@
+.?AV<lambda_33>@?$PulseBindingSchemaEnumTraits_t@W4PickMode_t@@@@
+.?AV<lambda_34>@?$PulseBindingSchemaEnumTraits_t@W4PickMode_t@@@@
+.?AV<lambda_35>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@
+.?AV<lambda_36>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@
+.?AV<lambda_37>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@
+.?AV<lambda_38>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@
+.?AV<lambda_39>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@
+.?AV<lambda_40>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@
+.?AV<lambda_41>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@
+.?AV<lambda_42>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@
+.?AV<lambda_43>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@
+.?AV<lambda_44>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@
 .?AV<lambda_5>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
 .?AV<lambda_6>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
-.?AV<lambda_7>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@
-.?AV<lambda_8>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@
+.?AV<lambda_7>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
+.?AV<lambda_8>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
 .?AV<lambda_9>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@
 .?AV?$CBaseAppSystem@VIDataModel@@@@
 .?AV?$CBaseAppSystem@VIDmElementFramework@@@@
@@ -1162,11 +1182,11 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttr@HVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CBaseConcreteToolAttr@HVCSteamAudioImportedProbeNode@@@@
 .?AV?$CBaseConcreteToolAttr@HVCTerrainInput@@@@
-.?AV?$CBaseConcreteToolAttr@IVCMapChoreoAnchorLocator@@@@
 .?AV?$CBaseConcreteToolAttr@MVCImagePlaneNode@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapCable@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapChoreoAnchorLocator@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapChoreoAnchorLocatorData_t@@@@
+.?AV?$CBaseConcreteToolAttr@MVCMapDeformerPath@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapDeformerSimple@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapDocTestStruct@@@@
@@ -1198,7 +1218,6 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@@@
-.?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@@@
@@ -1224,6 +1243,7 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttr@VCMapChoreoAnchorLocatorData_t@@VCMapChoreoAnchor@@@@
 .?AV?$CBaseConcreteToolAttr@VCMapDocMaterialAdjustStruct@@VCMapStaticOverlay@@@@
 .?AV?$CBaseConcreteToolAttr@VCMapDocTestStruct@@VCMapTestNode@@@@
+.?AV?$CBaseConcreteToolAttr@VCMapNodeReference@@VCMapDeformerPath@@@@
 .?AV?$CBaseConcreteToolAttr@VCMapNodeReference@@VCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttr@VCMapNodeTransformPin@@VCMapNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCPiecewiseCurve@@VCMapTestNode@@@@
@@ -1263,6 +1283,7 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTerrainPrefab@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTileMesh@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTileProxy@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTileSet@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapWorldLayer@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCSteamAudioMaterialValues@@@@
@@ -1286,6 +1307,8 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttr@W4BezierPathTangentType_t@@VCMapPathNode@@@@
 .?AV?$CBaseConcreteToolAttr@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@@@
 .?AV?$CBaseConcreteToolAttr@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@@@
+.?AV?$CBaseConcreteToolAttr@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttr@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttr@W4DisableShadows_t@@VCMapMeshBase@@@@
 .?AV?$CBaseConcreteToolAttr@W4DisableShadows_t@@VCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttr@W4HammerMeshPhysicsType_t@@VCMapMesh@@@@
@@ -1306,6 +1329,8 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttr@_KVCMapNodeReference@@@@
 .?AV?$CBaseConcreteToolAttr@_KVCSteamAudioSignal@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapCable@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapDeformerLattice@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapDotaTileGrid@@@@
@@ -1349,11 +1374,11 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttrValue@HVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCSteamAudioImportedProbeNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCTerrainInput@@@@
-.?AV?$CBaseConcreteToolAttrValue@IVCMapChoreoAnchorLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCImagePlaneNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapCable@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapChoreoAnchorLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapChoreoAnchorLocatorData_t@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCMapDeformerPath@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapDeformerSimple@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapDocTestStruct@@@@
@@ -1422,6 +1447,7 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTerrainPrefab@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTileMesh@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTileProxy@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTileSet@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapWorldLayer@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCSteamAudioMaterialValues@@@@
@@ -1445,6 +1471,8 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttrValue@W4BezierPathTangentType_t@@VCMapPathNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4DisableShadows_t@@VCMapMeshBase@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4DisableShadows_t@@VCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4HammerMeshPhysicsType_t@@VCMapMesh@@@@
@@ -1465,6 +1493,8 @@ $woundcutouttexture
 .?AV?$CBaseConcreteToolAttrValue@_KVCMapNodeReference@@@@
 .?AV?$CBaseConcreteToolAttrValue@_KVCSteamAudioSignal@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapCable@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapDeformerLattice@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapDotaTileGrid@@@@
@@ -1515,11 +1545,11 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttr@HVCSteamAudioImportedProbeBoxNode@@X@@
 .?AV?$CConcreteToolAttr@HVCSteamAudioImportedProbeNode@@X@@
 .?AV?$CConcreteToolAttr@HVCTerrainInput@@X@@
-.?AV?$CConcreteToolAttr@IVCMapChoreoAnchorLocator@@X@@
 .?AV?$CConcreteToolAttr@MVCImagePlaneNode@@X@@
 .?AV?$CConcreteToolAttr@MVCMapCable@@X@@
 .?AV?$CConcreteToolAttr@MVCMapChoreoAnchorLocator@@X@@
 .?AV?$CConcreteToolAttr@MVCMapChoreoAnchorLocatorData_t@@X@@
+.?AV?$CConcreteToolAttr@MVCMapDeformerPath@@X@@
 .?AV?$CConcreteToolAttr@MVCMapDeformerSimple@@X@@
 .?AV?$CConcreteToolAttr@MVCMapDocMaterialAdjustStruct@@X@@
 .?AV?$CConcreteToolAttr@MVCMapDocTestStruct@@X@@
@@ -1551,7 +1581,6 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttr@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@X@@
-.?AV?$CConcreteToolAttr@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@X@@
@@ -1577,6 +1606,7 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttr@VCMapChoreoAnchorLocatorData_t@@VCMapChoreoAnchor@@X@@
 .?AV?$CConcreteToolAttr@VCMapDocMaterialAdjustStruct@@VCMapStaticOverlay@@X@@
 .?AV?$CConcreteToolAttr@VCMapDocTestStruct@@VCMapTestNode@@X@@
+.?AV?$CConcreteToolAttr@VCMapNodeReference@@VCMapDeformerPath@@X@@
 .?AV?$CConcreteToolAttr@VCMapNodeReference@@VCMapSmartProp@@X@@
 .?AV?$CConcreteToolAttr@VCMapNodeTransformPin@@VCMapNode@@X@@
 .?AV?$CConcreteToolAttr@VCPiecewiseCurve@@VCMapTestNode@@X@@
@@ -1616,6 +1646,7 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapTerrainPrefab@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapTestNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapTileMesh@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCMapTileProxy@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapTileSet@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapWorldLayer@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCSteamAudioMaterialValues@@X@@
@@ -1639,6 +1670,8 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttr@W4BezierPathTangentType_t@@VCMapPathNode@@X@@
 .?AV?$CConcreteToolAttr@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@X@@
 .?AV?$CConcreteToolAttr@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@X@@
+.?AV?$CConcreteToolAttr@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocator@@X@@
+.?AV?$CConcreteToolAttr@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocatorData_t@@X@@
 .?AV?$CConcreteToolAttr@W4DisableShadows_t@@VCMapMeshBase@@X@@
 .?AV?$CConcreteToolAttr@W4DisableShadows_t@@VCMapSmartProp@@X@@
 .?AV?$CConcreteToolAttr@W4HammerMeshPhysicsType_t@@VCMapMesh@@X@@
@@ -1659,6 +1692,8 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttr@_KVCMapNodeReference@@X@@
 .?AV?$CConcreteToolAttr@_KVCSteamAudioSignal@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapCable@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapChoreoAnchorLocator@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapChoreoAnchorLocatorData_t@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapDeformerLattice@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapDocMaterialAdjustStruct@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapDotaTileGrid@@X@@
@@ -1689,7 +1724,6 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@@@
-.?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@@@
@@ -1698,8 +1732,10 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@VCMapTerrainGroupInputs@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapDocTestStruct@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapTestNode@@@@
+.?AV?$CConcreteToolAttrGetForModify@VCMapChoreoAnchorLocatorData_t@@VCMapChoreoAnchor@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCMapDocMaterialAdjustStruct@@VCMapStaticOverlay@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCMapDocTestStruct@@VCMapTestNode@@@@
+.?AV?$CConcreteToolAttrGetForModify@VCMapNodeReference@@VCMapDeformerPath@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCMapNodeTransformPin@@VCMapNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCPiecewiseCurve@@VCMapTestNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCSteamAudioAmbisonicValues@@VCSteamAudioImportedProbeNode@@@@
@@ -1726,11 +1762,11 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttrGetSet@HVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCSteamAudioImportedProbeNode@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCTerrainInput@@@@
-.?AV?$CConcreteToolAttrGetSet@IVCMapChoreoAnchorLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCImagePlaneNode@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapCable@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapChoreoAnchorLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapChoreoAnchorLocatorData_t@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCMapDeformerPath@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapDeformerSimple@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapDocTestStruct@@@@
@@ -1796,6 +1832,7 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTerrainLayerImage@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTerrainPrefab@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTileMesh@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTileProxy@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTileSet@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapWorldLayer@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCSteamAudioMaterialValues@@@@
@@ -1819,6 +1856,8 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttrGetSet@W4BezierPathTangentType_t@@VCMapPathNode@@@@
 .?AV?$CConcreteToolAttrGetSet@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@@@
+.?AV?$CConcreteToolAttrGetSet@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CConcreteToolAttrGetSet@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CConcreteToolAttrGetSet@W4DisableShadows_t@@VCMapMeshBase@@@@
 .?AV?$CConcreteToolAttrGetSet@W4DisableShadows_t@@VCMapSmartProp@@@@
 .?AV?$CConcreteToolAttrGetSet@W4HammerMeshPhysicsType_t@@VCMapMesh@@@@
@@ -1838,6 +1877,8 @@ $woundcutouttexture
 .?AV?$CConcreteToolAttrGetSet@_KVCMapNodeReference@@@@
 .?AV?$CConcreteToolAttrGetSet@_KVCSteamAudioSignal@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapCable@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapChoreoAnchorLocator@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapDeformerLattice@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapDotaTileGrid@@@@
@@ -1872,6 +1913,7 @@ $woundcutouttexture
 .?AV?$CDefaultToolAttrTableForStruct@VCMapCordon@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDeformer@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDeformerLattice@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapDeformerPath@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDeformerSimple@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDocMaterialAdjustStruct@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDocTestStruct@@@@
@@ -1912,6 +1954,7 @@ $woundcutouttexture
 .?AV?$CDefaultToolAttrTableForStruct@VCMapTestNode@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapTile@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapTileMesh@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapTileProxy@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapTileSet@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapWeightedGroup@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapWorkplaneMarker@@@@
@@ -2169,6 +2212,7 @@ $woundcutouttexture
 .?AV?$CDmElementFactory@VCMapCordon@@@@
 .?AV?$CDmElementFactory@VCMapDeformer@@@@
 .?AV?$CDmElementFactory@VCMapDeformerLattice@@@@
+.?AV?$CDmElementFactory@VCMapDeformerPath@@@@
 .?AV?$CDmElementFactory@VCMapDeformerSimple@@@@
 .?AV?$CDmElementFactory@VCMapDotaGridnavMarkup@@@@
 .?AV?$CDmElementFactory@VCMapDotaTileGrid@@@@
@@ -2371,7 +2415,6 @@ $woundcutouttexture
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@@@
-.?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@@@
@@ -2380,8 +2423,10 @@ $woundcutouttexture
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@VCMapTerrainGroupInputs@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapDocTestStruct@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapTestNode@@@@
+.?AV?$CToolAttrGetForModifyAccess@VCMapChoreoAnchorLocatorData_t@@VCMapChoreoAnchor@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCMapDocMaterialAdjustStruct@@VCMapStaticOverlay@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCMapDocTestStruct@@VCMapTestNode@@@@
+.?AV?$CToolAttrGetForModifyAccess@VCMapNodeReference@@VCMapDeformerPath@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCMapNodeTransformPin@@VCMapNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCPiecewiseCurve@@VCMapTestNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCSteamAudioAmbisonicValues@@VCSteamAudioImportedProbeNode@@@@
@@ -2408,11 +2453,11 @@ $woundcutouttexture
 .?AV?$CToolAttrGetSetAccess@HVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CToolAttrGetSetAccess@HVCSteamAudioImportedProbeNode@@@@
 .?AV?$CToolAttrGetSetAccess@HVCTerrainInput@@@@
-.?AV?$CToolAttrGetSetAccess@IVCMapChoreoAnchorLocator@@@@
 .?AV?$CToolAttrGetSetAccess@MVCImagePlaneNode@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapCable@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapChoreoAnchorLocator@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapChoreoAnchorLocatorData_t@@@@
+.?AV?$CToolAttrGetSetAccess@MVCMapDeformerPath@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapDeformerSimple@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapDocTestStruct@@@@
@@ -2478,6 +2523,7 @@ $woundcutouttexture
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTerrainLayerImage@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTerrainPrefab@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTileMesh@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTileProxy@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTileSet@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapWorldLayer@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCSteamAudioMaterialValues@@@@
@@ -2501,6 +2547,8 @@ $woundcutouttexture
 .?AV?$CToolAttrGetSetAccess@W4BezierPathTangentType_t@@VCMapPathNode@@@@
 .?AV?$CToolAttrGetSetAccess@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@@@
 .?AV?$CToolAttrGetSetAccess@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@@@
+.?AV?$CToolAttrGetSetAccess@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CToolAttrGetSetAccess@W4CMapChoreoLocatorType_t@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CToolAttrGetSetAccess@W4DisableShadows_t@@VCMapMeshBase@@@@
 .?AV?$CToolAttrGetSetAccess@W4DisableShadows_t@@VCMapSmartProp@@@@
 .?AV?$CToolAttrGetSetAccess@W4HammerMeshPhysicsType_t@@VCMapMesh@@@@
@@ -2520,6 +2568,8 @@ $woundcutouttexture
 .?AV?$CToolAttrGetSetAccess@_KVCMapNodeReference@@@@
 .?AV?$CToolAttrGetSetAccess@_KVCSteamAudioSignal@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapCable@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapChoreoAnchorLocator@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapDeformerLattice@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapDotaTileGrid@@@@
@@ -2545,6 +2595,8 @@ $woundcutouttexture
 .?AV?$CToolAttrGetSetAccess@_NVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCSteamAudioImportedProbeNode@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCSteamAudioProbeGenerationVolume@@@@
+.?AV?$CToolAttrStringFGDProvider@VCMapGameDataNode@@@@
+.?AV?$CToolAttrStringFGDProvider@VCMapPrefab@@@@
 .?AV?$CToolEventMapRegistrationHelper@VCCordonMgr@@@@
 .?AV?$CToolEventMapRegistrationHelper@VCDebugDrawRayTracingEnvironment@@@@
 .?AV?$CTypedLogLayerSampleData@E@@
@@ -2712,13 +2764,11 @@ $woundcutouttexture
 .?AV?$IToolAttrConcreteDataAccess@$$BY03W4MapTestNodeEnum_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@E@@
 .?AV?$IToolAttrConcreteDataAccess@H@@
-.?AV?$IToolAttrConcreteDataAccess@I@@
 .?AV?$IToolAttrConcreteDataAccess@M@@
 .?AV?$IToolAttrConcreteDataAccess@URange_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@@@
-.?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@@@
@@ -2746,6 +2796,7 @@ $woundcutouttexture
 .?AV?$IToolAttrConcreteDataAccess@W4BendAxis_t@CLatticeDeformer@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4BezierPathTangentType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4CMapChoreoLocatorShapeType_t@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4CMapChoreoLocatorType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4DisableShadows_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4HammerMeshPhysicsType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4ImageMode_t@CMapTerrainLayerImage@@@@
@@ -2764,7 +2815,6 @@ $woundcutouttexture
 .?AV?$IToolAttrConcreteDataAccess@_N@@
 .?AV?$IToolAttr_TypedValue@E@@
 .?AV?$IToolAttr_TypedValue@H@@
-.?AV?$IToolAttr_TypedValue@I@@
 .?AV?$IToolAttr_TypedValue@M@@
 .?AV?$IToolAttr_TypedValue@URange_t@@@@
 .?AV?$IToolAttr_TypedValue@V?$Vec2D@M@@@@
@@ -2780,6 +2830,7 @@ $woundcutouttexture
 .?AV?$IToolAttr_TypedValue@W4BendAxis_t@CLatticeDeformer@@@@
 .?AV?$IToolAttr_TypedValue@W4BezierPathTangentType_t@@@@
 .?AV?$IToolAttr_TypedValue@W4CMapChoreoLocatorShapeType_t@@@@
+.?AV?$IToolAttr_TypedValue@W4CMapChoreoLocatorType_t@@@@
 .?AV?$IToolAttr_TypedValue@W4DisableShadows_t@@@@
 .?AV?$IToolAttr_TypedValue@W4HammerMeshPhysicsType_t@@@@
 .?AV?$IToolAttr_TypedValue@W4ImageMode_t@CMapTerrainLayerImage@@@@
@@ -2802,25 +2853,25 @@ $woundcutouttexture
 .?AV?$_Func_base@XPEBUParticleDomainLeafElement_t@@@std@@
 .?AV?$_Func_base@XVHToolAttrTableInstance@@PEBVIBaseToolAttr@@PEAV?$CUtlVector@UToolAttrGenericChoice_t@@HV?$CUtlVectorMemory_Growable@UToolAttrGenericChoice_t@@H$0A@@@@@@std@@
 .?AV?$_Func_base@_NHH@std@@
-.?AV?$_Func_base@_NPEBVCMapNode@@PEAV?$CUtlVector@UToolAttrGenericChoice_t@@HV?$CUtlVectorMemory_Growable@UToolAttrGenericChoice_t@@H$0A@@@@@@std@@
 .?AV?$_Func_base@_NPEBVCMapPrefabVariableLocator@@@std@@
 .?AV?$_Func_base@_NPEBVKeyValues3@@PEBV1@@std@@
 .?AV?$_Func_impl_no_alloc@P6A_NPEBVKeyValues3@@0@Z_NPEBV1@PEBV1@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_10>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_11>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropSpace_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_12>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropSpace_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_13>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDirection_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_14>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDirection_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_15>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDistributionMode_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_16>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDistributionMode_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_17>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_18>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_19>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_11>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_12>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_13>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropSpace_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_14>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropSpace_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_15>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDirection_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_16>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDirection_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_17>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDistributionMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_18>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDistributionMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_19>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??CollectAreasAssociatedWithMovableMeshInternal@CNavMovableMeshCatalog@@AEAAXIPEAIPEAV?$CUtlVector@V?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@H$0A@@@@@PEAV?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@@Z@XAEAVCNavArea@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??CreateLeafChoiceWrapperThunk@@YA?AV?$function@$$A6AXVHToolAttrTableInstance@@PEBVIBaseToolAttr@@PEAV?$CUtlVector@UToolAttrGenericChoice_t@@HV?$CUtlVectorMemory_Growable@UToolAttrGenericChoice_t@@H$0A@@@@@@Z@std@@P6AXPEAV?$CUtlVector@ULeafPropertyChoice_t@@HV?$CUtlVectorMemory_Growable@ULeafPropertyChoice_t@@H$0A@@@@@@Z@Z@XVHToolAttrTableInstance@@PEBVIBaseToolAttr@@PEAV?$CUtlVector@UToolAttrGenericChoice_t@@HV?$CUtlVectorMemory_Growable@UToolAttrGenericChoice_t@@H$0A@@@@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??Restart@CNewParticleEffect@@QEAAXXZ@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??SortTableMembersToMatch@KeyValues3@@QEAAXV?$span@VCKV3MemberName@@$0?0@std@@@Z@_NHH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??SortTableMembersToMatch@KeyValues3@@QEAAXV?$span@$$CBVCKV3MemberName@@$0?0@std@@@Z@_NHH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??UpdateInstanceLocators@CMapPrefab@@AEAAXXZ@XPEAVCMapPrefabVariableLocator@@_N@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??UpdateLocators@CMapPrefabVariableLocator@@SAXPEAVCMapNode@@PEBVCMapVariableSet@@PEBVCMapPrefab@@W4EMapPrefabVariableUsageType_t@@AEBV?$function@$$A6AXPEAVCMapPrefabVariableLocator@@_N@Z@std@@@Z@_NPEBV3@@std@@
@@ -2828,40 +2879,40 @@ $woundcutouttexture
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?5??AddParticleDomainBindings@@YAXAEAVGameData@@@Z@XPEBUParticleDomainLeafElement_t@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?CC@??QuarterSizeAttrWithBoxFilter@CSOAContainer@@QEAAXAEBV3@HHPEAVCCallQueue@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?O@??GetEditableAttributeInfo@CMapPrefab@@UEBA_NPEBDPEAUMapNodeAttributeInfo_t@@@Z@_NPEBVCMapNode@@PEAV?$CUtlVector@UToolAttrGenericChoice_t@@HV?$CUtlVectorMemory_Growable@UToolAttrGenericChoice_t@@H$0A@@@@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_20>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_21>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_22>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_23>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDetailFadeLevel_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_24>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDetailFadeLevel_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_25>@?$PulseBindingSchemaEnumTraits_t@W4ConfigurationHandleShape_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_26>@?$PulseBindingSchemaEnumTraits_t@W4ConfigurationHandleShape_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_27>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_28>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_29>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_20>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_21>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_22>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_23>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_24>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_25>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDetailFadeLevel_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_26>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropDetailFadeLevel_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_27>@?$PulseBindingSchemaEnumTraits_t@W4ConfigurationHandleShape_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_28>@?$PulseBindingSchemaEnumTraits_t@W4ConfigurationHandleShape_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_29>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??UpdateLocators@CMapPrefabVariableLocator@@SAXPEAVCMapNode@@PEBVCMapVariableSet@@PEBVCMapPrefab@@W4EMapPrefabVariableUsageType_t@@AEBV?$function@$$A6AXPEAVCMapPrefabVariableLocator@@_N@Z@std@@@Z@XPEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?DE@??QuarterSizeAttrWithBoxFilter@CSOAContainer@@QEAAXAEBV3@HHPEAVCCallQueue@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_30>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_31>@?$PulseBindingSchemaEnumTraits_t@W4PickMode_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_32>@?$PulseBindingSchemaEnumTraits_t@W4PickMode_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_33>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_34>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_35>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_36>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_37>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_38>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_39>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_3>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_40>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_41>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_42>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_4>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_30>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_31>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_32>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_33>@?$PulseBindingSchemaEnumTraits_t@W4PickMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_34>@?$PulseBindingSchemaEnumTraits_t@W4PickMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_35>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_36>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_37>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_38>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_39>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_40>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_41>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_42>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_43>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_44>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_5>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_6>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_7>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_8>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_7>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_8>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_9>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@VCPulseValueFullType@@$$V@std@@
 .?AVCAlignedBoxHelper@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@$$BY03W4MapTestNodeEnum_t@@VCMapTestNode@@X@@
@@ -2869,7 +2920,6 @@ $woundcutouttexture
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@X@@
-.?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@X@@
@@ -2902,6 +2952,7 @@ $woundcutouttexture
 .?AVCBoundingBoxChangeRenderable@@
 .?AVCBrightnessContrastColorCorrectionLayer@@
 .?AVCBufferStream@@
+.?AVCBuilderEntityKeyErrorListener@@
 .?AVCClassInput@@
 .?AVCClassInputOutputBase@@
 .?AVCClassOutput@@
@@ -3132,7 +3183,6 @@ $woundcutouttexture
 .?AVCHammerClipboard@@
 .?AVCHammerModelInstance@@
 .?AVCHammerPolyMesh@@
-.?AVCHistory@@
 .?AVCHueSaturationColorCorrectionLayer@@
 .?AVCImagePlaneNode@@
 .?AVCImportSFMV1@@
@@ -3156,7 +3206,9 @@ $woundcutouttexture
 .?AVCLightHelper@@
 .?AVCLightHelperBase@@
 .?AVCLightSceneObjectContainer@@
+.?AVCLightStyle@@
 .?AVCLocalContrastLayer@@
+.?AVCLocalExposureLayer@@
 .?AVCLogLayerSampleData@@
 .?AVCManifestInstance@@
 .?AVCMapAssetTypeInfo@@
@@ -3169,8 +3221,10 @@ $woundcutouttexture
 .?AVCMapCordon@@
 .?AVCMapDeformer@@
 .?AVCMapDeformerLattice@@
+.?AVCMapDeformerPath@@
 .?AVCMapDeformerSimple@@
 .?AVCMapDoc@@
+.?AVCMapDocHistory@@
 .?AVCMapDocMaterialAdjustStruct@@
 .?AVCMapDocSmartPropEvaluator@@
 .?AVCMapDocTestStruct@@
@@ -3277,6 +3331,7 @@ $woundcutouttexture
 .?AVCNavHullVDataFileManager@@
 .?AVCNavMesh@@
 .?AVCNavPoly@@
+.?AVCNestedGameClassInfo@@
 .?AVCNewParticleEffect@@
 .?AVCObjectSelectionData@@
 .?AVCObjectSelectionSet@@
@@ -3355,6 +3410,7 @@ $woundcutouttexture
 .?AVCSelectionStateBackup@@
 .?AVCSequenceListHelper@@
 .?AVCSimpleAssetTypeInfo@@
+.?AVCSimpleErrorListener@@
 .?AVCSimpleSceneObjectContainer@@
 .?AVCSkyboxHelper@@
 .?AVCSmartPropAttributeAngles@@
@@ -3525,6 +3581,7 @@ $woundcutouttexture
 .?AVCSteamAudioSignal@@
 .?AVCStoredCamera@@
 .?AVCStoredCameras@@
+.?AVCStringFGDToolAttr@@
 .?AVCTerrainGrassTileRenderable@@
 .?AVCTerrainGroundBlock@@
 .?AVCTerrainInput@@
@@ -3534,12 +3591,15 @@ $woundcutouttexture
 .?AVCThinkableHelper@@
 .?AVCTileGridTransformationBaseLine@@
 .?AVCTileMeshFace@@
+.?AVCTilePropertyData@@
 .?AVCTileSetGrassParameters@@
 .?AVCTileSetMaterialSet@@
 .?AVCTileSetProperty@@
+.?AVCTileSetPropertyAttr@@
 .?AVCToneMappingLayer@@
 .?AVCToolAttrHost@@
 .?AVCToolEditContextQuery_Base@@
+.?AVCToolEditContextQuery_ExpressionGlobal@@
 .?AVCToolEditContextQuery_String@@
 .?AVCToolModelInstance_ConfigNode@@
 .?AVCToolModelInstance_MaterialAttributeTagListener@@
@@ -3631,6 +3691,7 @@ $woundcutouttexture
 .?AVISmartPropShapeMesh@@
 .?AVISmartPropShapePath@@
 .?AVIStreamDataBuffer@@
+.?AVIStringFGDTargetResolver@@
 .?AVITerrainDataSource@@
 .?AVITerrainElementSet@@
 .?AVITextSceneObject@@
@@ -3710,88 +3771,80 @@ $woundcutouttexture
 0.2 0.4 0.4
 0.9 0.85 0.8
 0.96862745 0.066666670 0.086274512
-02z@
-04a@
-05O@
-05q@
-06B@
-06O@
+00V@
+00p@
+02D@
+02O@
+02R@
+02X@
+02h@
+037@
+04P@
+05X@
+07P@
 083@
-0AT@
-0Ax@
-0B4@
-0Bk@
-0Bx@
-0Ck@
-0Dk@
-0F8@
-0FB@
-0FY@
-0G4@
-0H4@
-0Hk@
-0Ik@
-0J4@
-0JZ@
-0Jk@
-0Jo@
-0Kk@
-0L3@
-0MT@
-0Nd@
-0Nn@
-0O6@
-0P6@
-0PA@
-0Pr@
-0Px@
-0Qn@
-0R0@
-0S3@
-0SZ@
-0U5@
-0U8@
-0ZT@
+087@
+08C@
+09P@
+0BP@
+0C4@
+0CN@
+0Cq@
+0D3@
+0E3@
+0FD@
+0Fe@
+0GU@
+0Gn@
+0IP@
+0In@
+0KZ@
+0MP@
+0O1@
+0O7@
+0OT@
+0PX@
+0Pc@
+0Qo@
+0Ss@
+0TC@
+0Up@
+0Xe@
+0YZ@
 0\fU04i
 0\r%0t
-0aT@
-0ao@
-0b3@
-0bW@
-0c6@
-0eZ@
-0go@
-0h8@
-0i1@
-0k8@
-0kU@
-0mn@
-0n1@
-0n8@
-0oZ@
-0p8@
-0q4@
-0q7@
-0r2@
-0rk@
-0s2@
-0s7@
-0sR@
-0sk@
-0sm@
-0t2@
-0v7@
-0vm@
-0w3@
-0w4@
-0w7@
-0wZ@
-0we@
-0wl@
+0an@
+0bU@
+0d9@
+0ff@
+0h6@
+0hd@
+0i2@
+0i3@
+0i6@
+0id@
+0k6@
+0l6@
+0lf@
+0lq@
+0lr@
+0mr@
+0ms@
+0ng@
+0pZ@
+0pm@
+0qs@
+0r0@
+0r9@
+0re@
+0sd@
+0tf@
+0ul@
+0ve@
 0x%llx
-0x2@
-0xp@
-0zp@
+0xc@
+0yp@
+0z6@
 1 1 0
 1 component
 1 edge
@@ -3806,11 +3859,10 @@ $woundcutouttexture
 2D Views
 2DARRAY
 2\nP!E
-2\tV_fseek
-2\vp!J
+2\vp0
 2nd most active material around a probe.
 30.0
-333?Pause
+333?
 3D Skybox
 3D Views
 3\r53
@@ -3822,8 +3874,10 @@ $woundcutouttexture
 5\f554>
 5sfm_v8
 64 283 0
+6\tV_fread
 7&F|If
 7T2,
+7VmfToVmap
 8"3hrf
 8&Kx
 8-byte data pool
@@ -3831,16 +3885,20 @@ $woundcutouttexture
 9>-memory-
 : clip_then_cover;(.*)$
 : cover;$1 \/* CSGO_SOURCE2_PORT clip_then_cover not supported *\/
+;\tV_fseek
 <!-- DMXVersion
 <!-- dmx encoding keyvalues2_noids 1 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array" \n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "0"\n\t\t\t"m_fileName" "string" "%s"\n\t\t\t"m_colorSpace" "string" "srgb"\n\t\t\t"m_typeString" "string" "2D"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "DXT5"\n%s\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t\t[\n\t\t\t\t\t"0"\n\t\t\t\t]\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "Box"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "srgb"\n\t\t}\n\t]\n}\n
 <!-- dmx encoding keyvalues2_noids 1 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array" \n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "0"\n\t\t\t"m_fileName" "string" "%s"\n\t\t\t"m_colorSpace" "string" "srgb"\n\t\t\t"m_typeString" "string" "2D"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "DXT5"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t\t[\n\t\t\t\t\t"0"\n\t\t\t\t]\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "Box"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "srgb"\n\t\t}\n\t]\n}\n
 <!-- dmx encoding keyvalues2_noids 1 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "SheetTexture"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t]\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "DXT5"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"SheetTexture"\n\t\t\t]\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "1"\n}\n
+<33s?
 <<error in CDmAttribute::GetValueAsString()>>
 <DescribeIsUnimplemented>
 <No schemasystem>
 <map_key>
 <map_value>
 <no file>
+<noclass>
+<non-RTTI type>
 <none>\n
 <unnamed>
 == PulseGraphDef ==\n
@@ -3848,23 +3906,20 @@ $woundcutouttexture
 =JRJ
 >>> Reading bsp from path %s\n
 >C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp
->JUMP
 ?433?433
 ?Create@FbxIOSettings@fbxsdk@@SAPEAV12@PEAVFbxManager@2@PEBD@Z
 ?Create@FbxManager@fbxsdk@@SAPEAV12@XZ
 ?DmeChannelsClip
 ?Engine2/RenderingPipeline
 ?EventMapVariableConnectionChanged_t
-?Mesh %s
 ?ParallelComputeSurfacePoints
 ?RGBA8888
-?Render Steam Audio Probes even when probes are unselected.
+?position
 ?vtex
 @Integer overflow in %s
 @MaterialFindOrBlockingLoad
-@Start
 @fff>fff>fff>fff>
-@m_flLength
+@m_pName
 @spawn
 A name that will be concatenated onto the end of the containing subclass name to generate the subclass name of this embedded subclass.
 A node may be 'pinned' to another node, causing its transform to be computed relative to the target node, meaning it will move and rotate with the target node, but potentially with a relative offset. Note that transform pins can be globally toggled on the toolbar.
@@ -3905,11 +3960,13 @@ ActiveArea
 AdaptFacesToDisplacement
 Add Curvature
 Add Custom Tag...
+Add Flags
 Add Material Override
 Add Model
 Add R%d <- R%d + R%d
 Add Slack (not implemented)
 Add Vector to Vector
+Add flags to the given value.
 Add noise
 Add self amount for combined additive and alpha blended
 Add the array 'b' to the end of 'a'.
@@ -3938,8 +3995,8 @@ AddonList
 AddonMapCommand
 AddonMapCommandIsAddonImplied
 AdobeDeflate
+After the real remainder, how many additional digits should we continue to append to create additional visual movement?
 Align To Axis
-Alignment
 Allocation of the face failed (not a topology failure).
 Allow Deformation
 Allow entities that match criteria
@@ -3958,8 +4015,8 @@ Alpha blend weight for sequence 1
 Alpha decoder initialization failed.
 Alpha of the fade, where 0 = fully transparent and 255 = fully opaque.
 Already processed master color_correction entity, ignoring additional master color_correction entity.\n
-Always
 Always Orient Up
+AlwaysSolidIgnoreNav
 Ambisonics field of how to reach to nearby inside probes in small spaces.
 Ambisonics field of how to reach to nearby outside probes.
 Amount of accumulated force to preserve
@@ -4025,17 +4082,25 @@ AsShotNeutral
 AsShotPreProfileMatrix
 AsShotWhiteXY
 Assert True
+AssetBrowse( %s )
+AssetBrowse( %s, *initialFilterString=%s )
+AssetBrowse( vmap )
 AssetBrowse( vmap, *extraFilterString=tileset )
+AssetBrowse( vmat, *filterProcedural:overlay=1 )
+AssetBrowse( vmdl )
 AssetBrowse( vnmclip )
 AssetBrowse( vnmgraph )
+AssetBrowse()
 AssetBrowse(vmat)
 AssetType .%s finished: %d assets took %dm:%02ds\n
 AssignMaterialToFaces
 AssignMaterialToOverlay
 AssignSmoothingModeToEdges
-Async Fire C%d:I%d
+Async Call Method (Child Cursor) C%d:I%d
+Async Outflow (Child Cursor) C%d:I%d
 Async Simulate Particles
-AtlasToVolumeTextureConversion(3093): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
+Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
+AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attempted to add two format updaters with the same file format (%s)!\n
 Attempted to add two legacy updaters with the same file format (%s)!\n
 Attempted to add two serializers with the same file encoding (%s)!\n
@@ -4079,7 +4144,6 @@ BackPlane
 Background
 Bad class description
 Bad code word
-Bad count in ArraySetCount (%d)
 Bad input/output type '%s'
 Bad max in ArrayFirstNElements (%d)
 Bad metadata for %s
@@ -4125,6 +4189,7 @@ BaseUnit "%s" in unit "%s" not found.\n
 BaselineExposure
 BaselineNoise
 BaselineSharpness
+Basic string support.
 BasisNormal
 BasisOrigin
 BasisU
@@ -4154,12 +4219,14 @@ Blend Layer 3 (B)
 BlendCubeMapFaceEdges: unsupported image format (%d)
 BlendLayersUsingTimeSelection
 BlendTonemapScale
-Blocking Load for info_interction VData
+Blocking Load for info_interaction VData
 Bloom %d
+BossName
 Both Baked and Realtime
 Bottom Edge
 Bottom Left Corner
 Bottom Right Corner
+BoverrideParent
 BoxColor
 Breakable
 Brightness/Contrast %d
@@ -4189,7 +4256,7 @@ BuildOnlyBaseTileGometry
 BuildParticleSimList
 BuildRenderDataForPolygonGroup
 BuildRenderDataForPolygonGroup(483): 
-BuildSolidRenderData(554): 
+BuildSolidRenderData(555): 
 BuildSteamAudioCustomData
 BuildSteamAudioPaths
 BuildSteamAudioReverb
@@ -4228,6 +4295,8 @@ C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp
 C:\buildworker\csgo_rel_win64\build\src\public\fbxsystem\fbxsystem.cpp
 C:\buildworker\csgo_rel_win64\build\src\public\mapdoclib\mapnodefactory.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlblockvector.h
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlbuffer.h
+C:\buildworker\csgo_rel_win64\build\src\public\zip\zip_utils.cpp
 C:\buildworker\csgo_rel_win64\build\src\source1importlib\importedfilecache.cpp
 C:\buildworker\csgo_rel_win64\build\src\source1importlib\p4funcs.cpp
 C:\buildworker\csgo_rel_win64\build\src\source1importlib\pcf_to_source2\import_lookup_table_generator.cpp
@@ -4252,8 +4321,9 @@ CBasePulseGraphInstance::InitInstance_Internal( %s; %p ) %s\n
 CBasePulseGraphInstance::Shutdown( %s; %p ) %s\n
 CBasePulseGraphInstance::StartGraphReload( %p ) %s\n
 CBasePulseGraphInstance::~CBasePulseGraphInstance( %p )\n
-CBaseToolsModelInstance::CreateReversedIBs(4560): 
+CBaseToolsModelInstance::CreateReversedIBs(4586): 
 CBufferString
+CBuilderEntityKeys
 CCITT Group 3
 CCITT Group 4
 CCITT RLE
@@ -4343,6 +4413,7 @@ CKV3MemberNameSet
 CKV3MemberNameWithStorage
 CLEAN_CONTENT
 CLEAN_GAME
+CLocalExposureLayer
 CManifestInstance
 CMapBox
 CMapCable
@@ -4351,17 +4422,19 @@ CMapChoreoAnchorLocator
 CMapChoreoAnchorLocatorData_t
 CMapChoreoLocatorShapeType_t::LINE
 CMapChoreoLocatorShapeType_t::POINT
+CMapChoreoLocatorShapeType_t::RADIUS
 CMapCordon
 CMapDeformer
 CMapDeformerLattice
+CMapDeformerPath
 CMapDeformerSimple
-CMapDoc::FrameUpdate(6693): 
+CMapDoc::FrameUpdate(6715): 
 CMapDocMaterialAdjustStruct
 CMapDocTestStruct
 CMapDotaGridnavMarkup
 CMapDotaTileGrid
-CMapDotaTileGrid::UpdateFlowMap(7352): 
-CMapDotaTileGrid::UpdateFogOpacity(7249): 
+CMapDotaTileGrid::UpdateFlowMap(7460): 
+CMapDotaTileGrid::UpdateFogOpacity(7357): 
 CMapEntity
 CMapEntityIONode
 CMapFileManager::CopyMapDataFromReference
@@ -4443,8 +4516,8 @@ CMapWeightedGroup
 CMapWorkplaneMarker
 CMapWorld
 CMapWorldLayer
-CMaterialSampler::AllocateVertexBuffers(169): 
-CMaterialSampler::DrawMaterialSamplePoints(310): 
+CMaterialSampler::AllocateVertexBuffers(176): 
+CMaterialSampler::DrawMaterialSamplePoints(317): 
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)\n
 CMesh Cannot create packed input layout, too many blend weights per vertex %d, max %d\n
 CModelHelper::UpdateMaterialOverride
@@ -4467,7 +4540,7 @@ CParticleFloatInputDefaultTestFunc
 CParticleForceOperatorInstance
 CParticleHelper::SetDefinitionByName
 CParticleInitializerOperatorInstance
-CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1186
+CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1166
 CParticleModelInputDefaultTestFunc
 CParticleNamedValueRef
 CParticleOperatorInstance
@@ -4497,9 +4570,9 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
+CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
-CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
 CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
@@ -4509,26 +4582,28 @@ CPulseCell_Inflow_ObservableVariableListener '%s'.'%s (%u)' --> Chunk%d: %s
 CPulseCell_InlineNodeSkipSelector::ProcessSelector
 CPulseCell_IntervalTimer::OnInterval
 CPulseCell_IntervalTimer::Start
-CPulseCell_IntervalTimer::StopTimer
 CPulseCell_IsRequirementValid::CheckRequirement
 CPulseCell_LimitCount::CheckRequirement
 CPulseCell_LimitCount::CommitStep
 CPulseCell_PickBestOutflowSelector::ProcessSelector
 CPulseCell_Step_CallExternalMethod '%s'
 CPulseCell_Timeline::Start
-CPulseCell_Timeline::Stop
 CPulseCell_Value_Curve::Eval
 CPulseCell_Value_Gradient::Eval
 CPulseCell_WaitForCursorsWithTag::Wait
-CPulseCell_WaitForObservable::Cancel
 CPulseCell_WaitForObservable::Start
 CPulseCursorFuncs::AnyOtherCursorsHaveTag
 CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
-CPulseCursorFuncs::KillThisCursorAndCancel
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
+CPulseCursorFuncs::WakeCursorsWithTag
+CPulseEnumlib
+CPulseEnumlib::AddFlags
+CPulseEnumlib::HasAllFlags
+CPulseEnumlib::HasAnyFlags
+CPulseEnumlib::RemoveFlags
 CPulseGraphInstance_SmartPropEval::Evaluate
 CPulseMathlib::AbsFloat
 CPulseMathlib::AbsInt
@@ -4566,6 +4641,7 @@ CPulseMathlib::MakeTransform
 CPulseMathlib::MakeVector
 CPulseMathlib::MakeVector2D
 CPulseMathlib::MakeVector4D
+CPulseMathlib::MakeVectorFromAngle
 CPulseMathlib::MakeWorldTransform
 CPulseMathlib::MakeWorldVector
 CPulseMathlib::MaxFloat
@@ -4595,16 +4671,21 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
-CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
+CPulseObservableExpression
+CPulseStringlib
+CPulseStringlib::FormatDurationStringFromSeconds
+CPulseStringlib::StringLength
+CPulseStringlib::StringsAreEqualCaseSensitive
 CPulseTestScriptLib::AssertTrue
 CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
+CREATE_CHILD_CURSOR_OUTFLOW
 CResourceArray< ModelReference_t >
 CResourceExtReference< CWeakHandle< InfoForResourceTypeCModel > >
 CResourceExtReference< CWeakHandle< InfoForResourceTypeCTextureBase > >
@@ -4709,6 +4790,7 @@ CTerrainInput
 CTerrainSelection
 CTextureCompositor::RenderComposite(401): 
 CTileMeshFace
+CTilePropertyData
 CTileSetGrassParameters
 CTileSetMaterialSet
 CTileSetProperty
@@ -4746,9 +4828,12 @@ CUtlBlockVector<struct CPolygonMeshSubdivisionRemappingData::PatchData_t,int,cla
 CUtlBlockVector<struct CacheOptimizedTriangle_t,int,class CMemAllocAllocator>::GrowCount
 CUtlBlockVector<struct StoredTriangleVertexPositions_t,int,class CMemAllocAllocator>::GrowCount
 CUtlBlockVector<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,int,class CMemAllocAllocator>::GrowCount
+CUtlBuffer::BGetObjectRaw
 CUtlDict<class CDmElement *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CDmElementFactoryHelper *,class CDefFastCaselessStringLess>::Insert
+CUtlDict<class CLightStyle *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CMapEntity *,class CDefFastCaselessStringLess>::Insert
+CUtlDict<class CUtlString,class CDefStringLess>::Insert
 CUtlDict<class CUtlVector<class CVMFtoVMAP::CTargetNameMapping,int,class CUtlVectorMemory_Growable<class CVMFtoVMAP::CTargetNameMapping,int,0> >,class CDefFastCaselessStringLess>::Insert
 CUtlDict<enum DmElementHandle_t,class CDefFastCaselessStringLess>::Insert
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CNewParticleEffect *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
@@ -4769,7 +4854,6 @@ CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct ActiveLayer_t<float> *,unsigned
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct ActiveLayer_t<int> *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct ActiveLayer_t<unsigned __int64> *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct ActiveLayer_t<unsigned char> *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<bool>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<class CUtlSymbolLarge>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
@@ -4807,66 +4891,9 @@ CUtlMemoryBlockAllocator<struct CPolygonMeshSubdivisionRemappingData::PatchData_
 CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
-CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmElement *,class CDefLess<class CDmElement *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmElement *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor>,class CDefLess<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor> >,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor>,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CZipFile::CZipEntry,class CZipFile::CZipEntryLessFunc,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CZipFile::CZipEntry,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class IDmeOperator *,class CDefLess<class IDmeOperator *>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<int,class CDefLess<int>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<int,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<bool> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<bool>::PriorityLessFunc(struct ActiveLayer_t<bool> * const &,struct ActiveLayer_t<bool> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<bool> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class CUtlSymbolLarge> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class CUtlSymbolLarge>::PriorityLessFunc(struct ActiveLayer_t<class CUtlSymbolLarge> * const &,struct ActiveLayer_t<class CUtlSymbolLarge> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class CUtlSymbolLarge> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Color> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Color>::PriorityLessFunc(struct ActiveLayer_t<class Color> * const &,struct ActiveLayer_t<class Color> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Color> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class DmeTime_t> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class DmeTime_t>::PriorityLessFunc(struct ActiveLayer_t<class DmeTime_t> * const &,struct ActiveLayer_t<class DmeTime_t> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class DmeTime_t> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class QAngle> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class QAngle>::PriorityLessFunc(struct ActiveLayer_t<class QAngle> * const &,struct ActiveLayer_t<class QAngle> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class QAngle> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class QuaternionStorage> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class QuaternionStorage>::PriorityLessFunc(struct ActiveLayer_t<class QuaternionStorage> * const &,struct ActiveLayer_t<class QuaternionStorage> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class QuaternionStorage> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class VMatrix> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class VMatrix>::PriorityLessFunc(struct ActiveLayer_t<class VMatrix> * const &,struct ActiveLayer_t<class VMatrix> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class VMatrix> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Vec2D<float> > *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Vec2D<float> >::PriorityLessFunc(struct ActiveLayer_t<class Vec2D<float> > * const &,struct ActiveLayer_t<class Vec2D<float> > * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Vec2D<float> > *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Vec3D<float> > *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Vec3D<float> >::PriorityLessFunc(struct ActiveLayer_t<class Vec3D<float> > * const &,struct ActiveLayer_t<class Vec3D<float> > * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Vec3D<float> > *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<class Vec4D<float> > *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<class Vec4D<float> >::PriorityLessFunc(struct ActiveLayer_t<class Vec4D<float> > * const &,struct ActiveLayer_t<class Vec4D<float> > * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<class Vec4D<float> > *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<float> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<float>::PriorityLessFunc(struct ActiveLayer_t<float> * const &,struct ActiveLayer_t<float> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<float> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<int> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<int>::PriorityLessFunc(struct ActiveLayer_t<int> * const &,struct ActiveLayer_t<int> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<int> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<unsigned __int64> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<unsigned __int64>::PriorityLessFunc(struct ActiveLayer_t<unsigned __int64> * const &,struct ActiveLayer_t<unsigned __int64> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<unsigned __int64> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct ActiveLayer_t<unsigned char> *,class CLessFunc<&public: static bool __cdecl ActiveLayer_t<unsigned char>::PriorityLessFunc(struct ActiveLayer_t<unsigned char> * const &,struct ActiveLayer_t<unsigned char> * const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct ActiveLayer_t<unsigned char> *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CDmElementSerializationDictionary::ElementInfo_t,class CLessFunc<&private: static bool __cdecl CDmElementSerializationDictionary::LessFunc(struct CDmElementSerializationDictionary::ElementInfo_t const &,struct CDmElementSerializationDictionary::ElementInfo_t const &)>,int,class CUtlBlockVector<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CHalfEdgeComponentList<struct CHalfEdgeMesh<int,struct EdgeDataPair_t,int>::Face_t,22>::ComponentHandleWithListPointer_t,class CLessFunc<&public: static bool __cdecl CHalfEdgeComponentList<struct CHalfEdgeMesh<int,struct EdgeDataPair_t,int>::Face_t,22>::ComponentHandleWithListPointer_t::LessFunc(struct CHalfEdgeComponentList<struct CHalfEdgeMesh<int,struct EdgeDataPair_t,int>::Face_t,22>::ComponentHandleWithListPointer_t const &,struct CHalfEdgeComponentList<struct CHalfEdgeMesh<int,struct EdgeDataPair_t,int>::Face_t,22>::ComponentHandleWithListPointer_t const &)>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CHalfEdgeComponentList<struct CHalfEdgeMesh<int,struct EdgeDataPair_t,int>::Face_t,22>::ComponentHandleWithListPointer_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CDotaTileSelectionItem,int,class CDefLess<class CDotaTileSelectionItem>,int>::Node_t,class CUtlOrderedMapBase<class CDotaTileSelectionItem,int,class CDefLess<class CDotaTileSelectionItem>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CDotaTileSelectionItem,int,class CDefLess<class CDotaTileSelectionItem>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CMapNode *,int,class CDefLess<class CMapNode *>,int>::Node_t,class CUtlOrderedMapBase<class CMapNode *,int,class CDefLess<class CMapNode *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CMapNode *,int,class CDefLess<class CMapNode *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CMapNode const *,int,class CDefLess<class CMapNode const *>,int>::Node_t,class CUtlOrderedMapBase<class CMapNode const *,int,class CDefLess<class CMapNode const *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CMapNode const *,int,class CDefLess<class CMapNode const *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CMeshEdge,int,class CDefLess<class CMeshEdge>,int>::Node_t,class CUtlOrderedMapBase<class CMeshEdge,int,class CDefLess<class CMeshEdge>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CMeshEdge,int,class CDefLess<class CMeshEdge>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CMeshFace,int,class CDefLess<class CMeshFace>,int>::Node_t,class CUtlOrderedMapBase<class CMeshFace,int,class CDefLess<class CMeshFace>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CMeshFace,int,class CDefLess<class CMeshFace>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CMeshVertex,int,class CDefLess<class CMeshVertex>,int>::Node_t,class CUtlOrderedMapBase<class CMeshVertex,int,class CDefLess<class CMeshVertex>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CMeshVertex,int,class CDefLess<class CMeshVertex>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor>,int,class CDefLess<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor> >,int>::Node_t,class CUtlOrderedMapBase<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor>,int,class CDefLess<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor>,int,class CDefLess<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,class CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,class CMapNode *,class CLessFunc<&private: static bool __cdecl CMapWorld::NodeNameLessFunc(class CUtlSymbolLarge const &,class CUtlSymbolLarge const &)>,int>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,class CMapNode *,class CLessFunc<&private: static bool __cdecl CMapWorld::NodeNameLessFunc(class CUtlSymbolLarge const &,class CUtlSymbolLarge const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,class CMapNode *,class CLessFunc<&private: static bool __cdecl CMapWorld::NodeNameLessFunc(class CUtlSymbolLarge const &,class CUtlSymbolLarge const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::Node_t,class CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CDetailPropType *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CDetailPropType *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CDetailPropType *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,class CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CMapGroup *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CMapGroup *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CMapGroup *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CMapSelectionSet *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CMapSelectionSet *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CMapSelectionSet *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,class CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<bool>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<bool>::LessFunc(struct LayerEvent_t<bool> const &,struct LayerEvent_t<bool> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<bool>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class CUtlSymbolLarge>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class CUtlSymbolLarge>::LessFunc(struct LayerEvent_t<class CUtlSymbolLarge> const &,struct LayerEvent_t<class CUtlSymbolLarge> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class CUtlSymbolLarge>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Color>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Color>::LessFunc(struct LayerEvent_t<class Color> const &,struct LayerEvent_t<class Color> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Color>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class DmeTime_t>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class DmeTime_t>::LessFunc(struct LayerEvent_t<class DmeTime_t> const &,struct LayerEvent_t<class DmeTime_t> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class DmeTime_t>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class QAngle>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class QAngle>::LessFunc(struct LayerEvent_t<class QAngle> const &,struct LayerEvent_t<class QAngle> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class QAngle>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class QuaternionStorage>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class QuaternionStorage>::LessFunc(struct LayerEvent_t<class QuaternionStorage> const &,struct LayerEvent_t<class QuaternionStorage> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class QuaternionStorage>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class VMatrix>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class VMatrix>::LessFunc(struct LayerEvent_t<class VMatrix> const &,struct LayerEvent_t<class VMatrix> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class VMatrix>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Vec2D<float> >,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Vec2D<float> >::LessFunc(struct LayerEvent_t<class Vec2D<float> > const &,struct LayerEvent_t<class Vec2D<float> > const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Vec2D<float> >,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Vec3D<float> >,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Vec3D<float> >::LessFunc(struct LayerEvent_t<class Vec3D<float> > const &,struct LayerEvent_t<class Vec3D<float> > const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Vec3D<float> >,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<class Vec4D<float> >,class CLessFunc<&public: static bool __cdecl LayerEvent_t<class Vec4D<float> >::LessFunc(struct LayerEvent_t<class Vec4D<float> > const &,struct LayerEvent_t<class Vec4D<float> > const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<class Vec4D<float> >,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<float>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<float>::LessFunc(struct LayerEvent_t<float> const &,struct LayerEvent_t<float> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<float>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<int>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<int>::LessFunc(struct LayerEvent_t<int> const &,struct LayerEvent_t<int> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<int>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<unsigned __int64>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<unsigned __int64>::LessFunc(struct LayerEvent_t<unsigned __int64> const &,struct LayerEvent_t<unsigned __int64> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned __int64>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct LayerEvent_t<unsigned char>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<unsigned char>::LessFunc(struct LayerEvent_t<unsigned char> const &,struct LayerEvent_t<unsigned char> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned char>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlSortVector<class CDmxAttribute *,class CDmxAttributeLess,class CUtlVector<class CDmxAttribute *,int,class CUtlVectorMemory_Growable<class CDmxAttribute *,int,0> > >::Find
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
+CUtlStringToken
 CUtlStringTokenWithStorage
 CUtlVectorFixedGrowable
 CVMFtoVMAP: Missing a required top-level key.\n
@@ -4877,6 +4904,8 @@ CVertexListSceneObject
 CVertexSelectionSetDataElement
 CVisibilityMgr
 CWeakHandle
+CZipFile::ParseFromDisk
+CZipFile::SaveDirectory
 C_INIT_CodeDriven
 C_INIT_CreateGrid
 C_INIT_CreateInHierarchy
@@ -4902,8 +4931,6 @@ CameraTargetDistance
 Can not read scanlines from a tiled image
 Can't copy to target path with files already open
 Can't find helper '%s' - fgd error?\n
-Cancel
-Cancel observing.
 Cannot CDmAttribute::GetValueAsString(%p, %u)\n
 Cannot allocate abstract class
 Cannot exactly import particle system "%s" because it scales size and uses offset or scroll!\n
@@ -4989,6 +5016,7 @@ CloseLid
 Closed Loop
 Cluster Index
 ClutterSceneObjectDesc
+Cnav_recorder_enabled
 Code Driven Emitter
 Code Driven Initializer
 CollapseEdge
@@ -4998,6 +5026,7 @@ Collision Group Override
 Collision Property Override
 Collision enabled
 Collision via traces
+CollisionPropertyPicker()
 CollisionType
 CollisionWireframe
 CollisionWireframeDisabled
@@ -5025,7 +5054,7 @@ CombineFacesPreserveMaterials
 CombineFacesPreserveUVs
 CombineFacesSkipSubdivided
 Commit Step
-Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
+Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive.
 CompatibilityAttenuation
 CompatibilityAttenuation for sound %s must have same start and end values.\n
 CompatibilitySoundlevel
@@ -5171,14 +5200,13 @@ CurrentPreProfileMatrix
 Cursor Has Tag
 Cursor Pack
 Cursor[ ptr:%p | id:%d | graph:%p ]: CPulseExecCursor()\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: Completed with result:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of result:%d from Subject:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: ~CPulseExecCursor()\n
 Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
-CurveEditor
+Curve Fit Error Tolerance
 Curves %d
 Custom Groups
 Custom Vis Group
@@ -5204,17 +5232,10 @@ DMX_MODEL_SOURCE_UNKNOWN
 DNGBackwardVersion
 DNGPrivateData
 DNGVersion
-D_BORDER
-D_DEPTH_BIAS
-D_NO_ZTEST
-D_SNAP_TO_SCREEN_PIXELS
-D_THICK_LINES
-D_TRANSLUCENT
 DamageCutoutData
 Dampen Movement Relative to Control Point
 Dangling
 DataModel needs the file system to function
-DataOffset
 DataType
 Data_Branch1xy
 Data_Branch1zBranch2x
@@ -5277,7 +5298,6 @@ Dimensions Size
 Direction Matching Strength
 Direction of the path reaching the probe.
 Directly specifies the name of a collision group to assign to the mesh, replaces any group specified by the material or collision property.
-DirectoryEntries
 Disable Height Displacement
 Disable In Low Quality Mode
 Disable Merging
@@ -5593,6 +5613,8 @@ End Target
 End dot product value for fading as the particle normal becomes aligned with the view vector
 EndU
 EndV
+EnsureCapacity
+Enter Prefab
 Entities/Paths
 Entities/Paths/Cables
 Entity
@@ -5600,7 +5622,7 @@ Entity: %s
 Entity: Unknown
 EntityName
 Entry Clearance
-Entry Location
+Enum support.
 EnumArray
 Eq R%d <- R%d == R%d
 Error (problem that prevents task success)
@@ -5621,6 +5643,7 @@ Error parsing S1 vcd: %s\n
 Error parsing class '%s'
 Error post-encoding before directory write
 Error reading attribute "%s"
+Error reading file: %s\n
 Error reading in array attribute "%s" element %d
 Error reading sub-version number.\n
 Error unable to find studio model "%s" in "CONTENT"!\n
@@ -5727,6 +5750,7 @@ EventTileGridLayerListChanged_t
 EventTileGridResized_t
 EventTileGridTileSetMapChanged_t
 EventTileSetModified_t
+Exit Prefab
 Exiting with no conversion: No source 1 compiled assets found in zip!\nMay not need conversion or may need work by hand to import.\n
 Exp2
 ExpandOperations
@@ -5893,8 +5917,8 @@ Fade Start Distance
 Fail Outflow
 Failed get full path for dummy sky texture we supposedly wrote %s\n
 Failed to add filter for asset tag %s, unknown tag.\n
-Failed to allocate an instance of a class
-Failed to allocate an instance of class '%s'
+Failed to allocate an instance of a class of type '%s'
+Failed to allocate an instance of class '%s' (type '%s')
 Failed to allocate field info array
 Failed to allocate memory for %s (%ld elements of %ld bytes each)
 Failed to allocate mesh edges for mesh, maximum edge count %i has been reached.\n
@@ -5961,6 +5985,7 @@ FilterTextures
 Final import list order:\n
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find all the yielded cursors on this graph with the matching tag and wake them.
 Find first element 'a' which compare equal to 'element' and return its index.
 FindAttrNode
 FindFallbackMaterial: can't open "%s" in path "%s"\n
@@ -5987,9 +6012,9 @@ Float To Game Time
 FloatBitMap::QuarterSize
 FloatBitMap::QuarterSize3D
 FloatBitMap_t::CopyFloatBitmap: Received NULL pointer!\n
-FloatBitMap_t::LoadFromFile(3285): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
+FloatBitMap_t::LoadFromFile(3729): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
 FloatBitMap_t::LoadFromFloatBitmap: Received improper bitmap size, skipping!\n
-FloatBitMap_t::LoadFromTGA(2234): Error loading %s\n
+FloatBitMap_t::LoadFromTGA(2678): Error loading %s\n
 Floating point "Predictor" not supported with %d data format
 Floor - round float down to nearest integer
 Floor Float
@@ -6013,6 +6038,7 @@ Force at Min distance
 Force based on distance from plane
 Force to apply
 ForceStaticPropsForModelDrags
+Format Duration String From Seconds
 ForwardSpeedMax
 Found %d unique shaders\n\n
 Found %d unknown source1 shaders:\n
@@ -6051,7 +6077,6 @@ GameData
 GameDefaultFarZ
 GameFeatureSet
 GameFileWeaponInfo_t
-Gbakeresource
 Generate normals for cylinder
 GenerateDestFileNameAndMakeDir: requires absolute path for source 1 filename!\n
 GenerateImportLookups
@@ -6146,23 +6171,31 @@ Hammer/ForceHighPrecisionTexcoords
 Hammer/GridDisplayExtent
 Hammer/ModelStateAutoConversionEntities
 Hammer/UseAnalyticGrid
+HammerBodyGroupChoices( %s )
 HammerCables
 HammerCablesSolid
 HammerCustomVisGroupPicker
+HammerEntityPicker( filterclass )
 HammerEntityPicker()
 HammerGrid
 HammerImagePlaneNode.vtex
 HammerImagePlane_Indices
 HammerImagePlane_Verts
 HammerInfo
+HammerLODLevelChoices( %s )
+HammerModelStateChoices( %s )
+HammerObjectPicker( %s )
 HammerObjectPicker( CMapGroup )
 HammerObjectPicker( list: )
+HammerObjectPicker( list:%s )
 HammerObjectPicker()
 Handle Shape
 HandleColor
 Handling missing file: %s using last frame %s as this file\n
 Handling missing file: %s using prev frame %s as this file\n
 Hardware
+Has All Flags
+Has Any Flags
 Height and width must be equal for cubemaps!\n
 HeightFogAdjustment
 HeightFogDrawScale1
@@ -6175,7 +6208,7 @@ HeightFogScrollDir1
 HeightFogScrollDir2
 HeightFogTexture
 HeightFogWorldScale
-HelperLoadFbmByFileExtension(3065): Error! Unknown file type for %s\n
+HelperLoadFbmByFileExtension(3509): Error! Unknown file type for %s\n
 Hide surface
 Hide unless error/warning occurs
 HideSmallGrid
@@ -6220,16 +6253,17 @@ IOSRoot
 IPulseGraphLoadErrorReporter
 IPulseReloadListener
 ISO JBIG
+Ibakeresource
 IceSurface
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
-If -1 timer will continue forever
 If checked, decompress and show compressed reverb IRs.
 If enabled and the smart prop is inside a prefab, the evaluation of the smart prop considers only the contents of the parent prefab, not anything outside the prefab. For example, if enabled, any traces performed by the smart prop will only hit other objects within the parent prefab.
 If enabled the prefab will be loaded when it is the child of another prefab, if disabled, this prefab will not be loaded if it is the child of another prefab.
 If enabled the prefab will not be baked into the parent map during map compile, but instead will be dynamically loaded in the game. This requires the target map to be compiled separately. Additionally this requires support for dynamic loading of maps by the game, which may not be supported by all games and game systems. Do not use without checking to see if this is fully supported by the game you are working on.
 If enabled, any entity target names within the prefab will have a prefix applied to ensure they are unique. This prevents any issues with entities in two different prefabs having name collisions.
 If enabled, double clicking on the marker will re-orient the camera in addition to setting the workplane.
+If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 If enabled, there will be a point_prefab entity at runtime representing this prefab as an EntityIO target (requires Relays and a Target Name). Map Relay connections will not be baked, but will instead route through this entity.
 If enabled, transforming this node will transform the target node such that the relative offset is maintained, essentially locking the transform of the two objects together regardless of which one is edited. Normally when this is disabled, moving this object will not affect the target node and will instead update the pin offset values.
 If set, the contents of the prefab will not be included in visibility calculations.
@@ -6373,10 +6407,14 @@ IntArray
 IntChoiceArray
 Integer Divide
 Integer division - unlike the divide (/) node, this will truncate any remainder (floor) and return an integer.
+InteractsAs
+InteractsWith
 Internal error, unknown tag 0x%x
 InternalName
 InternalPath
 InteroperabilityIFDOffset
+InterruptElegantly
+InterruptImmediately
 Intraframe zoom amount for sequence 0
 Intraframe zoom amount for sequence 1
 Invalid YCbCr subsampling
@@ -6434,13 +6472,13 @@ KeyValues: Can't serialize attribute of type %s into KeyValues files!\n
 KeyValues: Element uses unknown element type %s\n
 Kill All Other Cursors
 Kill Cursors With Tag
-Kill This Cursor And Cancel
 Kochanek-Bartels
 Kochanek-Bartels Early
 Kochanek-Bartels Late
 L<L7
-L>33s?
+L>Pause
 L@can't solve quadratic for light %f %f\n
+LAYER_TYPE_LOCAL_EXPOSURE
 LESS
 LESS_OR_EQUAL
 LINEAR
@@ -6590,6 +6628,7 @@ Loading map: %s
 Loading prefab: %s
 LoadingScreen
 Local Contrast %d
+Local Exposure %d
 Local Offset Max
 Local Offset Min
 Local Space CP
@@ -6634,6 +6673,8 @@ MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
 MKV3TransferName
+MM:SS with leading zeros
+MM_SS_LEADING_ZERO
 MParticleAdvancedField
 MParticleDomainTag
 MParticleInputOptional
@@ -6645,6 +6686,7 @@ MPropertyAttributeEditorOverride
 MPropertyAutoExpandSelf
 MPropertyColorPlusAlpha
 MPropertyCustomEditor
+MPropertyFGDFromAssetKeysFromOtherField
 MPropertyFlattenIncludeLabel
 MPropertyFlattenIntoParentRow
 MPropertyFlattenStretchFactor
@@ -6662,6 +6704,7 @@ MPropertySuppressBaseClassField
 MPropertySuppressField
 MPulseExpressionAlias
 MPulseFunctionHiddenInTool
+MPulseTypeRestriction
 MResourceTypeForInfoType
 MSmartPropClassVersion
 MVDataAnonymousNode
@@ -6704,12 +6747,14 @@ Make Angle From Forward Vector
 Make Color
 Make Transform
 Make Vector
+Make Vector From Angle
 Make Vector2 D
 Make Vector4 D
 Make World Transform
 Make World Vector
 Make a Color from component parts
 Make a Transform from component parts.
+Make a Vector from an Angle
 Make a Vector from component parts.
 Make a Vector2D from component parts.
 Make a World Vector from component parts.
@@ -6729,6 +6774,7 @@ MapGrassTile
 MapLocatorModel
 MapNavLinkType_t::CLIMB_UP
 MapNavLinkType_t::GENERIC
+MapNavLinkType_t::GROUND
 MapNavLinkType_t::JUMP_DOWN
 MapNavLinkType_t::VAULT_OVER
 MapNode
@@ -6795,11 +6841,13 @@ Merging Predictor codec-specific tags failed
 Merging SGILog codec-specific tags failed
 Merging common CCITT Fax codec-specific tags failed
 Mesh
+Mesh %s
 Mesh %s has poylgonal faces defined which have bad vertex counts, these will be ignored\n
 Mesh (%d faces)
 Mesh Edges
 Mesh Faces
 Mesh Locator
+Mesh Name
 Mesh Vertices
 Mesh contains %d blend weights per vertex;  truncating to %d\n
 MeshHardEdges
@@ -6885,6 +6933,7 @@ Multiple VisGroups with the same id: %i\n
 Multiple groups with the same id: %i\n
 Must enable sky light IBL to extract HDR sunlight from the skybox.
 My Subclass Name
+N@Bad count in ArraySetCount (%d)
 NEVER
 NOT an attr
 NOT_ARRAY_MEMBERS
@@ -6950,6 +6999,7 @@ No space to write per-sample values
 No support for converting user data format to LogL
 No support for converting user data format to LogLuv
 NoCollapse
+NoEditor()
 NodeID %d port '%s' called from C%d:I%d
 Noise Scalar
 Noise Vector
@@ -6995,10 +7045,9 @@ Objects
 Occlusion Deviation
 Occlusion Path Ratio
 Occlusion Probe
-Occlusion Reflection Ratio
+Occlusion Reflection Energy
 Occlusion path deviation between the source and selected probe.
 Occlusion path ratio of direct path over shortest path between the source and selected probe.
-Occlusion ratio of indirect reflection energy over direct energy between the source and selected probe.
 Occlusion value between the source and selected probe.
 Offset Angles
 Offset End Point Amount
@@ -7020,6 +7069,7 @@ One of the client procedures is NULL pointer.
 Only Baked Shadows
 Only Realtime Shadows
 Only Restart Children
+Only Warp Position
 Only models
 Only set orientation once
 Only set position once
@@ -7034,7 +7084,6 @@ Operator cycle found during dependency graph traversal!\n
 Optimize for rope and cloth simulation
 OptimizeCollisionV2
 OptimizedHeightFieldName
-Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Or R%d <- R%d || R%d
 Orient Rotation to 2D Direction
@@ -7073,35 +7122,33 @@ Override CP 2 (X/Y/Z *= Pitch/Yaw/Roll)
 Override CP field
 Override Max Velocity from this CP
 Override: 
-P0d@
-P1b@
+P0n@
+P1P@
+P1p@
 P27@
-P2Z@
 P2_null_start
-P30@
-P34@
-P44@
+P3W@
+P3n@
+P47@
 P4CopyFile
 P4CopyFile: Couldn't copy "%s" to "%s"\n
 P4CopyFile: Couldn't deduce depot path for source file "%s"\n
-P4K@
-P5a@
-P7Y@
-PDZ@
-PDx@
-PE4@
+P7P@
+PA5@
+PAD@
+PBP@
+PBn@
+PD5@
+PDo@
+PFP@
 PF\n%d %d\n-1.000000\n
-PFk@
-PG4@
-PHc@
+PF_TYPE_CONTROL_POINT_IS_SET
+PHY@
+PI8@
 PITCH_HIGH
 PITCH_LOW
 PITCH_NORM
-PJ9@
-PJx@
-PKk@
-PKp@
-PKx@
+PJm@
 PLUG_TYPE_INPUT
 PLUG_TYPE_OUTPUT
 PLUG_TYPE_RELAY_OMNIDIRECTIONAL_LEGACY
@@ -7109,33 +7156,24 @@ PLUG_TYPE_RELAY_PREFAB_INBOUND
 PLUG_TYPE_RELAY_PREFAB_LOCAL
 PLUG_TYPE_RELAY_PREFAB_OUTBOUND
 PLUG_TYPE_UNKNOWN
-PLn@
-PMd@
-PNd@
+PMt@
+PO0@
+PO3@
 POISONED 
-POn@
-PP6@
-PPr@
-PQ5@
-PR0@
-PR5@
-PR6@
-PRf@
-PRn@
-PRr@
-PTq@
-PU5@
+POp@
+PQD@
+PQV@
+PRZ@
+PSC@
 PURH
-PUc@
-PVe@
-PXc@
+PVo@
+PZY@
+PZf@
 P\v5Pd
-Pa0@
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
 PackToSharedVB
-PackedBlobNormal
 PageName
 PageNumber
 PaintOnlyFlat
@@ -7152,6 +7190,7 @@ Parameter '%s' corresponds to an entity target name, but is sent to input '%s' o
 Parameters
 ParametersKV3
 Parent Map: %s\n
+Parent VData
 ParseEXRHeaderFromMemory failed! Error message: %s\n
 ParseEntity
 ParseEntity: EOF without closing brace
@@ -7178,7 +7217,7 @@ ParticleParamID_t
 Particles
 ParticlesLib
 Pass Outflow
-Path Cable
+Path Deformer
 Path Locator
 Path Name
 Path Node
@@ -7193,24 +7232,24 @@ Pathing Distance Ratio
 Pathing EQ for low, mid, and high frequency bands.
 Pathing Probe
 Pathing coefficients for 1st order Ambisonics.
-PatternType
 PauseGameOnActivate
-Pbp@
-PcC@
-Pcp@
+Pbn@
+Pcs@
+Pde@
+Pe9@
+PeC@
 Per Particle World Collision Tests
 Per-Edge
 Per-Tile
 PerVertexLighting
 Pf\n%d %d\n-1.000000\n
+Pfd@
+Pgf@
 Ph6@
-Ph8@
-PhU@
 Photometric tag is missing, assuming data is YCbCr
 Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
 Photoshop
-Php@
 Physics
 Physics Pin
 Physics Pin: %s\n
@@ -7224,7 +7263,6 @@ PhysicsSurfaceProperties4
 PhysicsTypeOverride_Mesh
 PhysicsTypeOverride_MultiConvex
 PhysicsTypeOverride_SingleConvex
-Pi1@
 Pick
 Pickover A Parameter
 Pickover B Parameter
@@ -7238,6 +7276,9 @@ Pitch Yaw Roll Max
 PivotPaint
 PivotToolSnapToBBox
 PixarLog
+Pk2@
+Pk5@
+Pkc@
 Place
 PlaceInSphere Parent Cursor
 PlanarConfiguration
@@ -7246,9 +7287,9 @@ Plane Normal
 Plants
 Play End Cap Effect
 Please make sure you deleted history on the mesh before exporting.\nThe mesh apparently has %d vertices, but %d blendWeights in field %s, while having %d weights per vertex\n
-Pmj@
-Pn1@
-PoZ@
+Pmf@
+Pn8@
+Pnm@
 Polygon Mesh Data Pool - level 1
 Polygon Mesh Data Pool - level 2
 Polygon Mesh Data Pool - level 3
@@ -7259,7 +7300,6 @@ PolygonMesh Instance Data
 Polymesh auxiliary
 Polymesh triangle
 Polymesh wireframe
-Poo@
 PortraitAmbientColor
 PortraitAmbientDirection
 PortraitAmbientOrigin
@@ -7313,13 +7353,10 @@ PostLoadFromFile
 PostMapLoadCommands
 PostProcessDummy
 PostProcessingEnabled
+PostProcessingLocalExposureParameters_t
 PosterSettings
-Pp2@
-Pp7@
-Pp8@
-PpZ@
-Pq2@
-Pr2@
+Ppn@
+Pqm@
 Pre-Age Noise
 Predictor
 PredictorEncodeTile
@@ -7333,7 +7370,6 @@ Prefab: %s
 Prefabs
 Prefix element cannot contain element or element_array attributes. ('%s')
 Prefix with Target Name
-PreloadDirectoryEntries
 Premature EOL
 Premature end-of-file encountered.
 Premature end-of-partition0 encountered.
@@ -7346,8 +7382,6 @@ Preview Unit
 PreviewModelFade
 Previous Position
 PrimaryChromaticities
-Prk@
-Prn@
 Probability
 Probability Weight
 Probable infinite loop detected! Terminating pulse cursor after %d consecutive instructions (%s)
@@ -7356,6 +7390,7 @@ Probe Index
 Probe Radius
 Probe Type
 Procedural
+Proceed Immediately
 Process Selector
 ProcessIncludes: can't open "%s" in path "%s"\n
 ProcessSubrect: can't open "%s" in path "%s"\n
@@ -7385,19 +7420,22 @@ Proxies
 Proxy
 Proxy Instance
 Proxy Name
-Ps4@
-Psk@
-Pt4@
-Ptm@
-Pu7@
+Pse@
+Psn@
+Pue@
+Pug@
 Pull towards control point
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
+PulseDurationStringFormat_t
 PulseType
-Puq@
-Pw4@
-Pwl@
-Py3@
+Pvf@
+Pwa@
+Pwc@
+Pwp@
+Pz6@
+Pzm@
+Pzr@
 QAngle
 Quad Size
 QuarterSizeAttrWithBoxFilter
@@ -7461,8 +7499,6 @@ RGB blend weight for sequence 1
 RIGID
 RSDSS
 RT60 for low, mid, and high frequency bands for the probe.
-R\vp!6
-R\vpL.
 R_T5Y
 Rad2 Deg
 Radius Bias
@@ -7566,9 +7602,11 @@ Remap and clamp input value from input range to output range (float)
 Remap distance to line between 2 control points to scalar
 Remap distance to line between 2 control points to vector
 Removable
+Remove Flags
 Remove Tag From Cursor
 Remove all elements from 'a' which are invalid instances.
 Remove all elements from 'a' which compare equal to 'element'.
+Remove flags from the given value.
 Remove the element at the given index in 'a', decreasing its count by one and moving the elements after index.
 Remove the given tag from this cursor. If other cursors are waiting on us, they will resume.
 RemoveBadFaces
@@ -7604,6 +7642,7 @@ Render Properties
 Render Screen Shake
 Render Sound
 Render Status Effect
+Render Steam Audio Probes even when probes are unselected.
 Render To Cubemaps
 Render With Dynamic
 Render models
@@ -7627,6 +7666,7 @@ Resetting value of tile property '%s' from invalid value '%s' to default value '
 ResolutionGate
 ResolutionUnit
 ResourceCompiler
+ResourceCompiler/ForceOldBuilderEntityKeysPath
 ResourceCompiler/PhysicsBuilder/DefaultHammerMeshSimplification
 Restart Effect after Duration
 ResultMaxX
@@ -7884,6 +7924,7 @@ ShouldImportAssetsOnlyFromLeafiestMod: Found source 1 basemod content file %s\n
 ShouldImportAssetsOnlyFromLeafiestMod: Found source 1 content file not imported to source 2. %s\n
 ShouldPunchThroughPolymorphism
 Show Clustered Probes Only
+Show Collision Model Enclosed Mesh Debug
 Show Collision Models
 Show Compressed IR
 Show Detail Objects
@@ -7906,6 +7947,7 @@ ShowSelectionBounds
 ShowSelectionDimensions
 ShowSelectionOutline
 ShowTranslationDistance
+ShowWaterPlanes
 Sign Float
 Sign Int
 Signature hook to fill out arguments for OnInterval
@@ -8006,11 +8048,15 @@ Spatial Coordinate Offset
 Spatial Noise Coordinate Scale
 Spawn Group
 Spawn Group (%d objects)
+Specific type mismatch (%d!=%d)
 Specified class '%s' is a base class, @exclude cannot be used for base classes
 Specifies a material replacement to apply to all following models. Mapping goes from the material specified by the model( including material group selection ) to the replacement material. Previous material overrides are not considered when determining the base material.
 Specifies additional interaction layers to append to the set of Interacts As layers assigned to the mesh.
 Specifies additional interaction layers to append to the set of Interacts With layers assigned to the mesh.
+Specifies allowed amount of error used when determining how many segments to use int he deformer. Represents a percentage of the length of the target path.
 Specifies how collision shapes are to generated.
+Specifies the [ 0, 1 ] parameter along the path where the deformer will end.
+Specifies the [ 0, 1 ] parameter along the path where the deformer will start.
 Specifies the angle of bend to apply in degrees. Range is [ -360, 360 ]. Negative values cause the bend to occur in the opposite direction.
 Specifies the local space axis which the deformer will bend around.
 Specifies the map file whose contents will be referenced by this prefab.
@@ -8019,6 +8065,7 @@ Specifies the name by which the prefab can be referenced by entity i/o. The set 
 Specifies the radius of the bend. When the value is 0, the radius is automatically calculated to preserve the length of the deformer volume for the specified angle. If an explict radius is specified then the inside edge of the bend will match this radius for all angle values, however this will result the the deformer changing the length of its contents.
 Specifies the size of the volume of space to be deformed.
 Specifies the smart prop which this object will instantiate
+Specifies the target path which defines the deformation that is applied.
 Speed Matching Strength
 Speed Max
 Speed Min
@@ -8077,8 +8124,7 @@ Stencil write ID
 StereoFlip
 StoNits
 Stop Effect after Duration
-Stop Timer
-Stop any active timers - the completed outflow will still fire
+Stop Waiting
 StoreFileRemapping: Unable to calc relative path for file %s\n
 StretchArches
 String Length
@@ -8100,10 +8146,12 @@ Submission ZIP load Failed: Failed to open manifest.txt\n
 Success! Wrote source 2 workshop zip to: %s\n
 SunSpreadAngle
 SupportsDisplacementMapping
+Suppressing entity from the compiled map due to the above issue with key %s\n
 SurfacePropPicker()
 Svpcf66
 Symbol table:  %d entries %llu bytes\n
 SyncSource1ChangelistExceptions
+Synchronous - Wait for this node to fully complete before proceeding.
 Syncing source 1 mod files %s to head revision.\n
 Syncing source 1 mod files %s@%s\n
 SystemAttributes
@@ -8132,7 +8180,7 @@ TODO: make a source 2 zip manifest.\n
 TOOLS/TOOLSINVISIBLE
 TOOLS/TOOLSNODRAW
 TOOLS\TOOLSNODRAW
-T\tV_log2f
+Table Member %i Missing (%s)
 Tag 
 Tag %d
 Tag Cursor
@@ -8141,16 +8189,18 @@ Tag Value
 TanFrameQuat
 Tangent of angle. Input in radians, output in radians
 TangentU_SignV
-Target Entry Points
+Target Entry
 Target Name
 Target Node
 Target Objects
-Target Warp Location
-Target Warps
+Target Warp 
 Target layer ID for rendering
+TargetCastForModify
+TargetEntry
 TargetGroup
 TargetName
 TargetPrinter
+TargetWarp
 Terrain
 Terrain Feature
 Terrain Map File
@@ -8293,9 +8343,12 @@ Third Control Point Number
 Third Control Point Parent
 This expression determines whether the tag should actually be applied to an asset\nIt will be evaluated against vdata entries where the key matches the asset - if any of them evaluate to true the tag will be applied.\nMost simple expressions involving the VData keys are supported. Use 'true' to tag unconditionally.
 This is a BigTIFF file.  This format not supported\nby this version of libtiff.
+This is the overall duration. If -1 timer will continue forever. During this duration, we will fire a new child cursor at each Interval.
 This mesh will not belong to these detail layers
 This prefab wants procedural relay connections, but it must have a Runtime Entity to enable this feature!
 This prefab wants procedural relay connections, but it must have a targetname to enable this feature!
+This value is optional. Click to set.
+This value is optional. Click to unset.
 This zip is usable as a source 2 zip. TODO: fix manifest?\n
 Threshholding
 ThunderDecode: %s data at scanline %ld (%lu != %lu)
@@ -8340,6 +8393,7 @@ TileSet_Skybox2
 TileSet_Skybox3
 TileWidth
 Tiles
+Tileset Properties
 Time Coordinate Offset
 Time Noise Coordinate Scale
 Time since the start of the timer
@@ -8384,6 +8438,7 @@ Tools_Unlit_PreOverlay
 Top Edge
 Top Left Corner
 Top Right Corner
+Total indirect reflection energy between the source and selected probe.
 Totals
 Trace Direction Override
 Trace In Direction
@@ -8411,7 +8466,9 @@ Trying to import color gem proxy to unsupported var "%s"!\n
 Trying to import sine proxy to unsupported var "%s"!\n
 Trying to import texture scroll proxy to unsupported var "%s"!\n
 Trying to import texture transform proxy to unsupported var "%s"!\n
+Turn a time in seconds into a display string. NOT localized.
 Two way pin
+Type mismatch (kv1 %s != kv3 %s)
 Type of data stored inside the probe.
 Type of probes to filter for visualization.
 UI Background
@@ -8423,7 +8480,6 @@ UR Offset in FLU local space
 UR control point number
 UScale
 U\8h(
-U\tV_logd
 Unable to acquire asset system file change suspension mutex
 Unable to copy %s to %s to proceed with import.\n
 Unable to create unknown element %s!\n
@@ -8451,7 +8507,6 @@ Undo\n======\n
 Unexpected Blend Weight Count %d with %d joints
 Unexpected EOF in quoted string
 Unexpected end of input
-Unhide quick-hidden
 Uniform speed
 Unique Source 1 Shaders:\n
 UniqueCameraModel
@@ -8467,6 +8522,7 @@ Unknown compressed mip format
 Unknown compression type.
 Unknown data format %d for LogLuv compression
 Unknown encoding %d for LogLuv compression
+Unknown format type
 Unknown function "%s"
 Unknown interpolation type %d\n
 Unknown navigation file version.\n
@@ -8480,6 +8536,7 @@ UnknownType
 UnlitGeneric
 UnlitTwoTexture
 Unnamed Group %i
+Unrecognized btype %d
 Unrecognized meta key: %s
 Unrecognized section name %s
 Unserialize: Cannot determine encoding from file, and no encoding provided!\n
@@ -8525,6 +8582,7 @@ Use Normals From Base Polygons
 Use Particle Count as Density Scale
 Use Radius Culling
 Use VPhysics
+Use World Space Up
 Use additive blending
 Use distance to an infinite line instead of a finite line segment
 Use max-luminance blending for sequence 0
@@ -8536,7 +8594,6 @@ UseCombinedTexture
 UseCustom
 UseDefaultAutoExposure
 UseFirstAnimationAsDefault
-UseRenderFarm
 UseTintColor
 Used to boost emissive lighting from models. Note that boosting emissive on smaller areas can create more lighting artifacts/noise.
 Used to flag a test as having failed.
@@ -8547,8 +8604,12 @@ Using 16-bit blend indices\n
 Using deprecated 'base=prefix' syntax for adding a prefix to a base class
 Using worldspawn entity targetname of 'worldspawn' will not have entity name fixup and might produce confusing results!\n
 UsingAnimgraph
+VDATA
 VData:%s
+VDataChoice( %s )
+VDataChoice( %s!%s )
 VDataChoice( scripts/navlinks.vdata )
+VDataChoice()
 VDataModelVersion001
 VDmElementFrameworkVersion001
 VDmSerializers001
@@ -8634,7 +8695,6 @@ Visibility input maximum
 Visibility input minimum
 Visible Map Errors
 Visualize Values
-VmfToVmap
 VmtToVmat
 VolumetricFog
 Voxel volume (%i components)
@@ -8681,6 +8741,7 @@ WARNING:\n
 WDG,r3
 WHEN_SELECTED
 Wait Complete
+Wake Cursors With Tag
 Warning (problem that doesn't prevent forward progress)
 Warning found identical imported file "%s" at different location %s. But it is not in perforce! You should remove this file.\n
 Warning found identical imported file "%s" at different location %s. Opening for delete.\n
@@ -8704,10 +8765,12 @@ Weight for the most active material around a probe.
 Weighted
 Weighted Group
 What type of object this is.
-When False
-When True
 When enabled, the normals of the final surface will use the normals from the base polygons of the overlay instead of the normals of the surface that the overlay is being projected onto.
 Whether to continue executing
+Whether value has ALL of the specified flags set (it may have other flags.)
+Whether value has ANY of the specified flags set (it may have other flags.)
+While False
+While True
 WhiteLevel
 WhiteOnBlack
 WhitePoint
@@ -8768,11 +8831,6 @@ ZIPPostEncode
 ZIPSetupDecode
 ZIPSetupEncode
 ZIPVSetField
-ZIP_EndOfCentralDirRecord
-ZIP_FileHeader
-ZIP_LocalFileHeader
-ZIP_PreloadDirectoryEntry
-ZIP_PreloadHeader
 ZoomFogScale
 ZoomSensitivityMouseMove
 ZoomSensitivityMouseWheel
@@ -8839,6 +8897,7 @@ ZoomSensitivityMouseWheel
 \content\
 \content\core\
 \econ\
+\f\tV_acosd
 \game
 \game\
 \game\core\
@@ -8871,8 +8930,8 @@ ZoomSensitivityMouseWheel
 \n\nEND VBSP\n\nVBSP SUCCESS, loading BSP data...\n\n
 \n\nFailed to load BSP:%s. Using vmf geo only during import instead.\n\n
 \n\nINVALID BSP, returned 0 faces. Using vmf geo only during import instead.\n\n
-\n\tV_atanf
 \ndummyfilename.tif
+\ng_flConfigMaxCoord
 \nlayout_owner materials/%s.mks\n
 \nlayout_owner materials/%s_color.mks\n
 \panorama\images\
@@ -8881,10 +8940,12 @@ ZoomSensitivityMouseWheel
 \panorama\images\overheadmaps\
 \prefabs\
 \prefabs\%s\%s_gameplay.vmap
-\rError reading file: %s\n
+\r\nnexttoken
+\rconvertedmapfilestemp.txt
 \resource\Flash\econ\
 \resource\Flash\images\ui_icons\
 \resource\overview\
+\rtext
 \scripts\
 \scripts\items\unencrypted\
 \smousetracking=\"\w*\"
@@ -8949,62 +9010,62 @@ ZoomSensitivityMouseWheel
 \tP4 WARNING: %s
 \tP4ERROR: %s
 \tP4RevertAllSource2AssetFilesInCache: reverting %s\n
-\tPopulateSettings_WorldVertexTransition_VrStandard(9149): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_WorldVertexTransition_VrStandard(9160): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_WorldVertexTransition_VrStandard(9177): WARNING converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_WorldVertexTransition_VrStandard(9187): WARNING converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9213): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9224): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9235): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9249): WARNING converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9259): WARNING converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_colorcorrection(7271): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_global_lit_simple(7464): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_global_lit_simple(7502): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_global_lit_simple(7509): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_global_lit_simple(7521): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_WorldVertexTransition_VrStandard(9169): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_WorldVertexTransition_VrStandard(9180): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_WorldVertexTransition_VrStandard(9197): WARNING converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_WorldVertexTransition_VrStandard(9207): WARNING converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9233): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9244): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9255): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9269): WARNING converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_WorldVertexTransition_vr_simple_2way_blend(9279): WARNING converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_colorcorrection(7291): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_global_lit_simple(7484): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_global_lit_simple(7522): ERROR converting '%s' by calling ProcessTexture()!\n
 \tPopulateSettings_global_lit_simple(7529): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_global_lit_simple(7545): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_global_lit_simple(7559): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8215): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8225): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8262): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8279): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8295): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8331): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8364): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8440): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8496): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8520): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8548): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8559): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_hero(8582): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_ice_surface_dota(9017): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_ice_surface_dota(9028): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_ice_surface_dota(9039): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_ice_surface_dota(9050): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_ice_surface_dota(9063): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_lightmapped4wayblend_csgo(6690): WARNING converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_lightmapped4wayblend_csgo(6735): WARNING converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_lightmappedgeneric_csgo(6038): WARNING converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_lightmappedgeneric_csgo(6076): WARNING converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_lightmappedgeneric_csgo(6097): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_multiblend(7611): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_multiblend(7623): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_multiblend(7635): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_multiblend(7647): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_multiblend(7663): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_multiblend(7676): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_multiblend(7689): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_multiblend(7702): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_projected_dota(8907): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_projected_dota(8922): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_water_csgo(5440): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_water_csgo(5474): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_water_csgo(5485): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_water_dota(8745): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_water_dota(8761): ERROR converting '%s' by calling ProcessTexture()!\n
-\tPopulateSettings_water_dota(8772): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_global_lit_simple(7541): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_global_lit_simple(7549): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_global_lit_simple(7565): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_global_lit_simple(7579): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8235): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8245): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8282): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8299): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8315): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8351): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8384): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8460): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8516): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8540): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8568): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8579): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_hero(8602): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_ice_surface_dota(9037): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_ice_surface_dota(9048): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_ice_surface_dota(9059): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_ice_surface_dota(9070): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_ice_surface_dota(9083): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_lightmapped4wayblend_csgo(6710): WARNING converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_lightmapped4wayblend_csgo(6755): WARNING converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_lightmappedgeneric_csgo(6058): WARNING converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_lightmappedgeneric_csgo(6096): WARNING converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_lightmappedgeneric_csgo(6117): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_multiblend(7631): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_multiblend(7643): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_multiblend(7655): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_multiblend(7667): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_multiblend(7683): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_multiblend(7696): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_multiblend(7709): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_multiblend(7722): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_projected_dota(8927): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_projected_dota(8942): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_water_csgo(5460): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_water_csgo(5494): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_water_csgo(5505): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_water_dota(8765): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_water_dota(8781): ERROR converting '%s' by calling ProcessTexture()!\n
+\tPopulateSettings_water_dota(8792): ERROR converting '%s' by calling ProcessTexture()!\n
 \tProcessBaseTexture: Skipping importing material %s because its source texture %s is a rendertarget.\n
 \tProcessTexture: Unable to find source texture(s) for %s but ignoring due to -allowmissingtextures on the command line.\n
 \tProcessTexture: Unable to find source texture(s) for %s, Converting VTF to sources.\n
@@ -9019,13 +9080,14 @@ ZoomSensitivityMouseWheel
 \tThis can occur if the case of the file or directory was changed in p4 after the initial source 1 sync in the clientspec.\n
 \tThis file needs hitbox names to import from source 1.\n
 \tUnserialize failed!\n
-\tV_acosd
+\tV_ZSTD_decompress
 \tV_asind
 \tV_atan2d
+\tV_atand
+\tV_atanf
+\tV_atofloat64
 \tV_cosd
-\tV_coshf
-\tV_exp2f
-\tV_expd
+\tV_sscanf_s
 \tV_strnchr
 \tV_tand
 \tV_tanhf
@@ -9092,7 +9154,6 @@ ZoomSensitivityMouseWheel
 \t\tThis will enable many options including -quiet, -logwarnings,\n
 \t\tUseful to keep cmd window up.\n\n
 \t\tUsing an absolute path will try to import that exact file.\n\n
-\t\tV_atand
 \t\t\t"file" "materials\models\props\de_dust\hr_dust\dust_kasbah\*.vmt"\n
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\tactually referenced in one of the scripts/game_sounds_*.txt file.\n\n
@@ -9121,9 +9182,7 @@ ZoomSensitivityMouseWheel
 \t_V_StripLastDir
 \t_V_wcsncpy_bytes
 \tbody_groups = %s\n
-\tg_flConfigMaxCoord
 \tmaterial_group = "%s"\n
-\tnexttoken
 \unencrypted
 \unencrypted\
 ^(?:[^v]+|v(?!gui))*$
@@ -9140,20 +9199,21 @@ _TIFFMergeFieldInfo
 _TIFFSetupFieldInfo
 _TIFFVGetField
 _TIFFVSetField
+_\tV_log2f
 __CACHED_editcontext_provider_lookup
 __CursorQueue__
 __FireCursorsParent__
 __State_Child_Condition__
-__State_Child_Subgraph__
 __TimelineParent__
 __current_metadata_table_stack
 __dmekv3_attribute_will_be_name__
+__ground__
 __ignoreInvalidAttributes
 __populated_from_schema_binary_names
 _addons\
 _ambient
 _ambientHDR
-_attr_%s
+_attr_
 _audio_prefab
 _audio_prefab.vmap
 _baked
@@ -9255,9 +9315,10 @@ _wvt_patch
 _z%03d
 _z000
 _zero_percent_distance
+`6Hn
+`\tV_logd
 a:fulltype
 a:typeparam
-a\tV_powd
 aaaaaaaazzzzzzzz
 abcdefghijklmnopqrrqponmlkjihgfedcba
 abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba
@@ -9276,9 +9337,11 @@ addons/
 addons\
 affects_children
 aimOffset
+ajarangle
 alert_func
 alignToAxis
 all revision(s) already integrated
+allflags
 allow_linking
 allow_scale
 allow_sst_generation
@@ -9347,6 +9410,7 @@ animgraph2_identifier
 animgraph_enum
 animgraphcontroller
 anisotropic
+anyflags
 aoB>"
 aperture
 aplha field
@@ -9361,11 +9425,13 @@ assetType
 assetTypeOrder
 asset_keys_indirect_model_gamedata_key
 asset_keys_indirect_model_gamedata_subkey
+asset_keys_indirect_vdata_gamedata_expression_context_key
 asset_keys_indirect_vdata_gamedata_fieldkey
 asset_keys_mapcompile_opaque
 asset_modifier
 asset_modifier%d
 asset_specific_keys_destination
+asset_specific_keys_source
 assettype
 associated_key
 ati_compress_wrapper.dll
@@ -9462,6 +9528,7 @@ bent_normal
 bentnormal
 bezier
 biased
+binary
 binary_array
 binary_seqids
 binary_v
@@ -9549,6 +9616,7 @@ brightnessscale
 bsp faces
 bsp func_detail faces
 bspline
+builder_entity_keys
 bulge
 bulletPenetrationDamageModifier
 bulletPenetrationDistanceModifier
@@ -9598,7 +9666,6 @@ center %f %f scale %f %f rotate %f translate %f %f
 centered_box_oriented
 centeru
 centerv
-centralDirectorySize
 chan_
 changelist
 char[128]
@@ -9642,6 +9709,8 @@ collapsed
 collisionEnabled
 collisionGroup
 collisionMode
+collisionPropertyOverride
+collision_override
 collision_properties
 collision_property
 collisionmesh
@@ -9675,7 +9744,6 @@ colorsIndices
 colortemperature
 colortint
 combo
-commentLength
 comparison control point number
 compileAsOverride
 compile_source_id
@@ -9690,12 +9758,10 @@ composite_
 composite_description
 compressType
 compressed
-compressedSize
 compressedValues
 compressedtangentframe
 compression
 compression error would be too large %f [%f %f]\n
-compressionMethod
 concave
 concommands
 conditional
@@ -9751,7 +9817,6 @@ converteddesttexturestemp.txt
 convertedfiles
 convertedgamesoundfilestemp.txt
 convertedintegfilestemp.txt
-convertedmapfilestemp.txt
 convertedmdlfilestemp.txt
 convertedpcffilestemp.txt
 convertedscriptfilestemp.txt
@@ -9780,7 +9845,6 @@ courier
 courier_flying
 cpoint
 cpoint%d%n
-crc32
 create from parent particles
 create in model
 createPathParticleRopes
@@ -9806,6 +9870,7 @@ csgo_water.vfx
 cubeMapName
 cube_width
 cubemap
+cubemapfogtexture
 cubemapsize
 cullDistance
 cull_control_point
@@ -9900,6 +9965,7 @@ detailgeometry
 detailmaterial
 diff 
 diffuse warp texture
+dimmer
 directlight
 disable child
 disableDynamicDeformable
@@ -9920,7 +9986,6 @@ disableshadowdepth
 disableshadows
 disablevertexlighting
 disallowOverride
-diskNumberStart
 dispinfo
 displacementInput
 displayBaseFace
@@ -10122,6 +10187,9 @@ env_soundscape
 env_soundscape*
 env_sprite
 env_sun
+env_tonemap_controller
+env_tonemap_controller_ghost
+env_tonemap_controller_infected
 env_volumetric_fog_volume
 error parsing vector element in ParseVectorFromKeyValueString\n
 error.vfx
@@ -10149,18 +10217,19 @@ expecting {
 expecting {\n
 expects_cpp_declaration
 expf
+explosion_smoke_interaction_effect
 exponential_decay
 exportTags
 exportType
 exporttags
 exposurespeedup
+expression_type
 exr, png, tga, tif
 extentsMax
 extentsMin
 external precache file
-externalFileAttribs
 externalInputs
-extraFieldLength
+externallyended
 extra_vertex_data
 extracted_motion
 eyeOffset
@@ -10213,8 +10282,6 @@ file:\/\/{images_econ}
 file:\/\/{images_econ}\/images\/ui_icons
 file:\/\/{images}
 file:\/\/{images}\/icons\/ui
-fileCommentLength
-fileNameLength
 fileending
 filenameBase
 filter
@@ -10222,6 +10289,7 @@ filterType
 filterclass
 finalTime
 final_time
+fire_time
 firetrigger
 firstbrush
 fixedbounds
@@ -10272,6 +10340,7 @@ flRandomScaleMin
 flRandomness
 flRoll
 flScale
+flSeconds
 flSnapIncrement
 flSnappingIncrement
 flSpacing
@@ -10315,7 +10384,6 @@ fogFlowMapValues
 fogOpacity
 fog_lighting
 fog_type
-fog_volume
 fogblend
 fogcolor
 fogcolor2
@@ -10364,7 +10432,6 @@ frameRate
 frameStart
 frames
 fresnel color warp texture
-friendly_name_without_target
 fromAttribute
 fromElement
 fromIndex
@@ -10377,13 +10444,11 @@ func_combined_light_probe_volume
 func_detail
 func_door
 func_dustmotes
-func_illusionary
 func_instance
 func_ladder
 func_nav_markup
 func_occluder
 func_physbox
-func_precipitation
 func_respawnroomvisualizer
 func_rotating
 func_smokevolume
@@ -10392,8 +10457,6 @@ function
 functionName
 functionParams
 g_bFogEnabled
-g_f1024InchHighlight
-g_f64InchHighlight
 g_flAlphaAnglePower
 g_flAlphaRange
 g_flAlphaTestReference
@@ -10515,11 +10578,8 @@ g_flUniformPointSize
 g_flWaterDepth
 g_flWaterStart
 g_flWorldUvScale
-g_n1024InchMask
-g_n64InchMask
 g_pApplication is not yet initialized!\n
 g_tSkyTexture
-g_v1024InchHighlightColor
 g_vAnimationGrid
 g_vBlendEnd
 g_vBlendModulateTexCoordCenter
@@ -10576,7 +10636,6 @@ g_vNormalTexCoordCenter
 g_vNormalTexCoordOffset
 g_vNormalTexCoordRotation
 g_vNormalTexCoordScale
-g_vOriginColor
 g_vReflectanceRange
 g_vReflectionColor
 g_vReflectionDir
@@ -10612,9 +10671,12 @@ game:tools/images/assettypes/generic_lg.png
 game:tools/images/assettypes/generic_sm.png
 game:tools/images/hammer/instance_path_instance.png
 game:tools/images/hammer/instance_path_prefab.png
+game:tools/images/hammer/new_key.png
 game:tools/images/hammer/tool_deform_activated.png
 game:tools/images/hammer/tool_lattice_activated.png
 game:tools/images/propertyeditor/attr_alert.png
+game:tools/images/propertyeditor/eye_hidden.png
+game:tools/images/propertyeditor/eye_visible.png
 gameSoundName
 game_sounds
 gamedata
@@ -10643,6 +10705,7 @@ gentle_pulse
 gesture
 getSkinningFromLod0
 getSkinningFromLod0ByDefault
+get_entity_keys:%s
 get_random_delay
 global
 globalState
@@ -10674,7 +10737,8 @@ groupColor
 group_title
 groupid
 growth time
-h+\npHh
+h1\nA
+hP\nA
 halfgridsnap
 hammer
 hammerClipboard
@@ -10776,6 +10840,7 @@ images\heroes\icons\npc_dota_hero_
 images\heroes\npc_dota_hero_
 importSettings
 import_scripts/source1import_map_brushexclusionlist.txt
+import_scripts/source1import_map_bspignorefacesfromentitylist.txt
 import_scripts/source1import_map_detailproplist.txt
 import_scripts/source1import_map_disablebakedlightinglist.txt
 import_scripts/source1import_map_entityexclusionlist.txt
@@ -10821,6 +10886,7 @@ initial_fill_depth
 initial_filter_string
 initial_mass
 initial_particles
+initialized
 initializers
 inner_angle
 innerconeangle
@@ -10852,12 +10918,12 @@ interactWith
 interact_as
 interact_exclude
 interact_with
-internalFileAttribs
 internalInputs
 interpolationType
 interpolator_left
 interpolator_right
 interrupt
+interrupt_priority
 intmap
 invalid vector subscript
 inverse
@@ -10934,11 +11000,10 @@ kochanek_late
 kv3:ParticleParamID_t
 l4d2_infected.vfx
 l=!vpcf1
+l\tV_powd
 ladder
 lang
 large
-lastModifiedDate
-lastModifiedTime
 layer%i
 layerData
 layerData0
@@ -11045,8 +11110,8 @@ localaxis
 localization_required
 locatorAngles
 locatorOffset
+locatorType
 locatorangles
-locatorindex
 locatoroffset
 locatoroorigin
 lock to bone
@@ -11104,6 +11169,7 @@ m_MaterialOverrideTables
 m_MaterialTintTables
 m_MeshResourceName
 m_MetaData
+m_Metadata
 m_NavAreas.Count() < CNavMarkerData::MAX_ELEMENTS
 m_Normals
 m_Parts
@@ -11112,16 +11178,16 @@ m_Positions
 m_ReferencedMeshSnapshots
 m_ReplacementTable
 m_ResourceNames
+m_SequencePoint
 m_Stops
 m_Streams
 m_TagValue
-m_TargetEntries
-m_TargetWarps
+m_TargetType
 m_Texcoords
 m_TintTable
+m_bAllowDefinitions
+m_bAllowReferences
 m_bAlpha
-m_bBakedTwoSided
-m_bCanBatchWithDynamicShaderConstants
 m_bChildCursorsShouldInherit
 m_bColor
 m_bConditionValue
@@ -11129,15 +11195,12 @@ m_bConfirmCollision
 m_bConstraints
 m_bCordonsVisible
 m_bCustom
-m_bDrawLast
 m_bFirstEvaluate
 m_bFlipFaces
-m_bHasBakedLightingFromLightMap
-m_bHasBakedLightingFromVertexStream
+m_bHasLocalExposureParams
 m_bHiddenAssetFlag
 m_bHorizontalInterleaved
 m_bIsCordoning
-m_bIsNotMatchedToMaterial
 m_bLiveParameterUpdate
 m_bLockLColumn
 m_bLockLLCorner
@@ -11148,9 +11211,7 @@ m_bLockULCorner
 m_bLockURCorner
 m_bLockURow
 m_bNoLod
-m_bNoShadow
 m_bNormalizeRange
-m_bOnlyShadow
 m_bPassThroughToCompiledVtex
 m_bPerVertexLighting
 m_bPosition
@@ -11166,15 +11227,21 @@ m_bSequence1
 m_bShowCompressedIR
 m_bStiff
 m_bTriangulate
-m_bUseCompressedNormalTangent
-m_bUseShadowFastPath
 m_bUsingLegacyDefault
+m_bWorldSpaceOrientation
+m_baseMetrics
 m_bmaxs
 m_bmins
 m_colorSpace
 m_dstChannels
-m_externalMethodTargetGraph
+m_fBoostLocalContrast
+m_fHighlightOffsetEV
 m_fMoveTo
+m_fShadowOffsetEV
+m_fSigma
+m_fWaterDensity
+m_fWaterDepthBlurRadius
+m_fWaterScale
 m_fileExt
 m_flAddCurvature
 m_flAddNoise
@@ -11192,7 +11259,7 @@ m_flMaxRecreationTime
 m_flNormalMapScrollRate
 m_flOcclusionDeviation
 m_flOcclusionDistanceRatio
-m_flOcclusionReflectionRatio
+m_flOcclusionReflectionEnergy
 m_flOcclusionValue
 m_flOpacityScale
 m_flOrder0
@@ -11208,6 +11275,7 @@ m_flSlopeOutgoing
 m_flTextureScrollRate
 m_flTextureSize
 m_flTrailEndAlpha
+m_hCursorOnOtherGraph
 m_hDef
 m_hModel0
 m_horizontalRange
@@ -11215,6 +11283,7 @@ m_iValue
 m_imageProcessorArray
 m_inputTextureArray
 m_iszNPC
+m_localExposureParams
 m_materialsValues
 m_mipAlgorithm
 m_n3DSliceCount
@@ -11264,6 +11333,7 @@ m_nOutputMinDimension
 m_nProbeIndex
 m_nProbeIndexSource
 m_nProbeType
+m_nReferenceID
 m_nResourceNameIndex
 m_nSelectedProbeType
 m_nStackDepthWhenAdded
@@ -11351,7 +11421,9 @@ materialName
 materialNames
 materialSetAssignments
 materialSets
-material_blend_sampler_%i_%i
+material_blend_sampler_alpha_%i_%i
+material_blend_sampler_color_%i_%i
+material_blend_sampler_emissive_%i_%i
 material_group
 materialgroup
 materialindex
@@ -11365,6 +11437,7 @@ materials/default/default_normal.tga
 materials/default/default_rough.tga
 materials/default/default_rough_s1import.tga
 materials/dev/black_simple.vmat
+materials/dev/fow_clouds_01.vtex
 materials/dev/gray_50.vmat
 materials/dev/reflectivity_30.vmat
 materials/editor/deformer_icon.vmat
@@ -11374,6 +11447,7 @@ materials/editor/prefab_icon.vmat
 materials/error.vmat
 materials/lights/white_color.tga
 materials/skybox/
+materials/skybox/sky_dl_hideout_dusk01.vmat
 materials/skybox/sky_dotasky_01
 materials/tools/
 materials/tools/fill_vertex_color.vmat
@@ -11427,6 +11501,7 @@ materialsrc\vgui\fonts\
 matrix
 matrix_array
 maxDistance
+maxError
 maxScale
 maxThrust
 max_particles
@@ -11515,6 +11590,7 @@ models/editor/camera.vmdl
 models/editor/choreo_anchor_locator_model.vmdl
 models/editor/cordon_helper.vmdl
 models/editor/proxy_helper.vmdl
+models/effects/cappoint_hologram.mdl
 models/items/
 models/props/navlink/nav_link_hammer_model.vmdl
 models\
@@ -11540,6 +11616,7 @@ move_to_gait
 moveclass
 moveforwarddistance
 moverightdistance
+movespeed_override
 movieSettings
 movieobjects
 mp_anim
@@ -11567,8 +11644,6 @@ must be either LogLUV or LogL
 mute
 n$Kx
 nApplyMode
-nCentralDirectoryEntries_ThisDisk
-nCentralDirectoryEntries_Total
 nCompressedSize == nUncompressedSize
 nCoordinateSpace
 nCountMax
@@ -11577,6 +11652,7 @@ nDenominator
 nDetailObjectFadeLevel
 nDirectionSpace
 nDistributionMode
+nFormat
 nHandleSize
 nKillPriority
 nLayoffState
@@ -11589,11 +11665,14 @@ nPathSpace
 nPickMode
 nPlacementMode
 nPointSpace
+nRemainderDigits
+nRemainderNoiseDigits
 nScaleMode
 nSelectionMode
 nSpecificChildIndex
 nUpDirectionSpace
 nValue
+nWakePriority
 n_bFlipFaces
 name unnamed\n
 name_remap_table
@@ -11610,6 +11689,7 @@ navlink_type
 navlinkclass
 navplace.db
 nearclipplane
+nested keys: %s
 nestedKeys
 newVariable
 newfile
@@ -11687,15 +11767,12 @@ num_path_points
 num_to_emit
 num_to_emit_minimum
 num_values
-numberOfTheDiskWithStartOfCentralDirectory
-numberOfThisDisk
 numbrushes
 numcascades
 numchannels
 o KPBf
 oOffset
 oY.o<
-o\tV_sind
 objectConfiguration
 objectConfigurationByName
 objectSelectionSetData
@@ -11724,7 +11801,9 @@ oldfallback name = %s\n
 omni
 onebitalpha\n
 onlyMeshes
+onlyWarpPosition
 only_visible_highlight_enabled
+only_warp_position
 onlyimportleafiestmod
 opacityValues
 open
@@ -11746,6 +11825,7 @@ operator_stacks
 operator_variables
 operators
 opqMU
+optional_toggle_cmd
 optionallycompressedtangentframe
 orientToSurface
 orientation
@@ -11778,7 +11858,6 @@ overlays/
 overlays\
 overlaysize
 overrideParam
-overrideParent
 overridePos
 overrideRot
 override_description
@@ -11787,64 +11866,57 @@ override_help_id
 overrideclass
 ownerlog
 owns_polymorphic_data
-p1S@
+p28@
 p2O@
-p3O@
-p44@
-p4C@
+p2P@
+p3D@
 p4lib
 p4path
-p6a@
+p6L@
 p73@
-p8o@
-pAN@
-pBk@
-pCX@
+p7D@
+p7h@
+p94@
+pBZ@
+pBn@
+pBo@
 pCheckpointName
-pDc@
+pD3@
+pDU@
 pDescription
-pDk@
-pE4@
-pET@
-pFU@
-pH4@
-pH8@
-pHk@
-pIT@
-pIk@
-pJk@
-pKU@
-pKf@
-pKk@
-pLZ@
-pLx@
+pF8@
+pFP@
+pFr@
+pGt@
+pID@
+pIq@
+pJP@
+pJc@
+pK8@
+pLe@
+pLo@
 pMaterialGroupName
-pMd@
-pMn@
 pModelResourceName
-pN3@
-pNU@
-pNd@
-pP6@
-pPn@
-pPr@
-pQ8@
-pQA@
-pQd@
-pRC@
-pRT@
+pO8@
+pOo@
+pQU@
+pR0@
+pRo@
 pRootClass
-pSn@
-pSq@
-pT5@
+pT0@
+pT4@
 pTagName
-pUT@
-pUZ@
-pWq@
-pYW@
-pYo@
+pUc@
+pUk@
+pXC@
+pXW@
+pXo@
+pZc@
+pZz@
+pa2@
+paF@
+paZ@
 pa_arcana_proxy
-paa@
 packmode flat\n
 packmode rgb+a\n
 panorama/images
@@ -11855,6 +11927,7 @@ panorama_image
 panorama_layout
 panorama_style
 panorama_video
+pao@
 param3
 paramMap
 paramMapKV3
@@ -11870,6 +11943,7 @@ parentBindRotation
 parentConstraint
 parent_cursor_id
 parentname
+participates_in_undo
 particleSnapshotSpacing
 particleSystemDefinitions
 particle_attribute_to_container_attribute
@@ -11924,9 +11998,10 @@ pathnode
 pathnodeclass
 pattern
 payload_path_marker
-pdC@
-pdT@
-pel@
+pc2@
+pds@
+peY@
+pef@
 penetrationmodifier
 per particle
 per_edge
@@ -11940,9 +12015,11 @@ perl -p -i.bak -e "s/%s/%s/g" %s
 perl.exe 
 permitresponses
 pervertexlighting
-pgZ@
-pgl@
-pgn@
+pf0@
+pfn@
+pgd@
+pgp@
+phf@
 phonememap
 phys
 physicsCollisionProperty
@@ -11956,8 +12033,9 @@ physicsSimplificationError
 physicsSimplificationOverride
 physicsType
 physics_prop
-pi1@
+pi9@
 pickBySize
+pid@
 pinAngles
 pinEnabled
 pin_enabled
@@ -11965,7 +12043,10 @@ pitch_rand_max
 pitch_rand_min
 pivotOffset
 pixelAspectRatio
-pk5@
+pjZ@
+pjc@
+pk2@
+pkf@
 plane
 plantTypes
 platform
@@ -11979,9 +12060,7 @@ playback_time
 playerclip
 playoverscript
 plugTypes
-pme@
-pne@
-poW@
+pms@
 point
 point_follow
 point_follow_substepped
@@ -11997,6 +12076,7 @@ poleVector
 poly_limiting_start
 polymorphic_arg
 polymorphic_class
+pom@
 populateDefaultValues
 population
 port_name
@@ -12027,8 +12107,9 @@ postprocessing
 posxyz
 power
 powf
-pq2@
-prB@
+pqd@
+pqe@
+pr9@
 precomputedboundsmaxs
 precomputedboundsmins
 precomputedfieldsvalid
@@ -12058,7 +12139,6 @@ preview_flying
 preview_model
 preview_modelname
 previous_value
-prk@
 probability
 procedural
 projectOnBackFaces
@@ -12092,23 +12172,21 @@ propertyValues
 props_swamp/boardwalk_chunk
 proxyName
 proxySelectionHelper
-pse@
 pseudo-
-pt4@
+pu0@
 pulse_bindings
 pulse_node_custom_attributes
 pulse_open_graph_id %u %u
 pulse_runtime_lib
 pvTarget
+pvV@
+pvc@
 pvec_color_black
 pvec_color_white
-pwl@
-px2@
-px3@
-pxZ@
-pyr@
-pzC@
-pzk@
+pwa@
+px5@
+pxl@
+pzd@
 qangle log
 qangle_array
 quadSize
@@ -12116,8 +12194,6 @@ quadraticAttenuation
 quaternion log
 quaternion_array
 quiet
-r\fpL.
-r\tV_sinhf
 rad2deg
 radial
 radiusScale
@@ -12165,7 +12241,6 @@ reflectivity
 refract
 refract.vfx
 registers
-relativeOffsetOfLocalHeader
 relativetag
 relayPlug
 relayPlugData
@@ -12236,6 +12311,8 @@ resultVar
 result_left
 result_right
 resumeconditioncc_noattenuate
+return_values
+return_values_enabled
 right
 rightEdgeActive
 rightEdgeCurveType
@@ -12323,6 +12400,7 @@ scripts/collision_detail_layers.vdata
 scripts/collision_properties.txt
 scripts/game_sounds_manifest.txt
 scripts/hammerinfo.txt
+scripts/light_styles.vdata
 scripts/nav_hulls.vdata
 scripts/nav_hulls_presets.vdata
 scripts/navlinks.vdata
@@ -12436,6 +12514,8 @@ shadowtextureheight
 shadowtexturewidth
 shape
 shapeReferences
+shapeType != CMapChoreoLocatorShapeType_t::LINE
+shapeType != CMapChoreoLocatorShapeType_t::RADIUS
 shapetype
 shared
 sharedenvironment
@@ -12453,7 +12533,6 @@ shutterSpeed
 side
 sidelist
 sign
-signature
 simple.vfx
 simple_cubic
 simulating
@@ -12518,6 +12597,7 @@ snapshot_control_point
 snapshot_file
 snapshot_mesh
 snd_*
+snd_steamaudio_baked_occlusion_mode
 snd_steamaudio_hammer_probes_always_render
 soft_x
 soft_y
@@ -12644,7 +12724,6 @@ staggerinterval
 standard
 standardAttributeName
 startJoint
-startOfCentralDirOffset
 startOffset
 startTime
 startUp
@@ -12684,6 +12763,7 @@ string_array
 string_instanced
 string_list
 stringmap
+stringtokendatabase.txt
 strip
 strips
 struct
@@ -12716,6 +12796,7 @@ system
 system_state
 tagValue
 tag_list
+tag_list_add_custom
 tag_list_dynamic
 tail color and alpha scale factor
 talker
@@ -12742,12 +12823,14 @@ targetMapPath%i
 targetName
 targetNodeID
 targetOffset
+targetPath
 targetPrefab
 targetReferenceID
 targetStreamIndex
 targetTileSet
 targetTileSetNodeID
 targetType
+targetType != 1
 targetTypeFlags
 targetWeight
 target_arg_name
@@ -12829,6 +12912,7 @@ timeOffset
 time_array
 time_steps
 timesToFire
+tint
 tintColor
 tintInput
 tintValues
@@ -12847,8 +12931,10 @@ toIndex
 toggle_faces_with_selection_overlay
 toneMapScale
 tool
+tool_request_args
+tool_request_text
+tool_request_tool
 tools code
-tools.light_volume_boundary
 tools.reference_notrace
 tools.tilebase
 tools.toolsmaterial
@@ -12856,6 +12942,10 @@ tools/images/pulse_editor/cursor_kill.png
 tools/images/pulse_editor/kill_cursor_with_tag.png
 tools/tools
 tools/tools_no_wards
+tools/toolsareaportal
+tools/toolshint
+tools/toolsinvisibleladder
+tools/toolsnodraw
 tools/toolsskybox
 toolsMaterial
 tools_asset_info.bin
@@ -12884,6 +12974,7 @@ turbulent force
 twist around axis
 twistJoints
 twoWay
+type_restriction_is_enum_flags
 t|AO
 u:9F
 uaxis
@@ -12893,7 +12984,6 @@ uint64_array
 uint8 log
 uint8_array
 unable to write %s \n
-uncompressedSize
 unexpected count for field "%s", %u, expected 2; ignored
 unified
 uniformScale
@@ -12949,6 +13039,7 @@ vTraceDirection
 vUpDirection
 validGrassTile
 valid_children
+value:fulltype
 valueDeltaRotation
 valueOrientation
 valuePivot
@@ -13004,8 +13095,6 @@ vector4_array
 velTolerance
 velocity_random
 velocity_tolerance
-versionMadeBy
-versionNeededToExtract
 versioninfo
 vertexBufferLocation
 vertexData
@@ -13040,7 +13129,6 @@ visible
 visoccluder
 visuals
 vmap
-vmat, *filterProcedural:overlay=1
 vmatrix
 vmatrix log
 vmdl_c
@@ -13077,7 +13165,6 @@ vpost
 vr_simple.vfx
 vr_simple_2way_blend.vfx
 vr_standard.vfx
-vrad_brush_cast_shadows
 vsDmxIO SketchUpScene
 vsDmxIO houdiniSceneIO
 vsUtils.py
@@ -13130,6 +13217,8 @@ writable_func
 write_to_path_key
 wyS]
 x0Ysqx
+x1\nA
+xP\nA
 yaw_initial
 yaw_offset_max
 yaw_offset_min
@@ -13139,15 +13228,16 @@ yaw_rate_min
 yaw_stop_time
 yield_token
 z>AlignedByteArray not properly aligned\n
-zD`i
-z\tV_sscanf_s
+z\tV_sind
 zero_value
 zip_line_node
+{ item_factory = 'IntervalTimer' }
 {Hammer node %d} 
 {images}
 |Binvalid_hitbox
 |all_source_engine_paths|
 |gameinfo_path|.
+}\tV_sinhf
 ~CGenericFilter
 ~CMapDoc destructor: Leaking physics world because there are still ModelInstances that use it.\n
 ~CModelInstance destructor: leaking softbody because physics world disappeared\n

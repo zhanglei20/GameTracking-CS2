@@ -9,8 +9,8 @@
 	{
 		"competitive"
 		{
-			"mg_de_anubis"		"1"
-			"mg_de_overpass"	"2"
+			"mg_de_cache"		"1"
+			"mg_de_anubis"		"2"
 			"mg_de_inferno"		"3"
 			"mg_de_mirage"		"4"
 			"mg_de_dust2"		"5"
@@ -18,12 +18,12 @@
 			"mg_de_ancient"		"7"
 			"mg_de_train"		"8"
 			"mg_de_vertigo"		"9"
-			"mg_de_cache"		"10"
+			"mg_de_overpass"	"10"
 
 			// community
-			"mg_de_warden"		"11"
-			"mg_de_stronghold"		"12"
-			"mg_cs_alpine"		"13"
+			"mg_de_boulder"		"11"
+			"mg_de_fachwerk"		"12"
+			"mg_cs_shelter"		"13"
 
 			// hostage
 			"mg_cs_office"		"14"
@@ -31,8 +31,8 @@
 		}
 		"casual"
 		{
-			"mg_de_anubis"		"1"
-			"mg_de_overpass"	"2"
+			"mg_de_cache"		"1"
+			"mg_de_anubis"		"2"
 			"mg_de_inferno"		"3"
 			"mg_de_mirage"		"4"
 			"mg_de_dust2"		"5"
@@ -40,12 +40,12 @@
 			"mg_de_ancient_night" "7"
 			"mg_de_train"		"8"
 			"mg_de_vertigo"		"9"
-			"mg_de_cache"		"10"
+			"mg_de_overpass"	"10"
 
 			// community
-			"mg_de_warden"		"11"
-			"mg_de_stronghold"		"12"
-			"mg_cs_alpine"		"13"
+			"mg_de_boulder"		"11"
+			"mg_de_fachwerk"		"12"
+			"mg_cs_shelter"		"13"
 
 			// hostage
 			"mg_cs_office"		"14"
@@ -53,8 +53,8 @@
 		}
 		"retakes"
 		{
-			"mg_de_anubis"		"1"
-			"mg_de_overpass"	"2"
+			"mg_de_cache"		"1"
+			"mg_de_anubis"		"2"
 			"mg_de_inferno"		"3"
 			"mg_de_mirage"		"4"
 			"mg_de_dust2"		"5"
@@ -62,16 +62,17 @@
 			"mg_de_ancient_night" "7"
 			"mg_de_train"		"8"
 			"mg_de_vertigo"		"9"
-			"mg_de_cache"		"10"
+			"mg_de_overpass"	"10"
 		}
 		"2v2"
 		{
-			"mg_de_poseidon"		"0"
-			"mg_de_sanctum"		"1"
-			"mg_de_overpass"	"2"
-			"mg_de_vertigo"		"3"
-			"mg_de_nuke"		"4"
-			"mg_de_inferno"		"5"
+			"mg_de_debris"		"0"
+			"mg_de_eldorado"	"1"
+			"mg_de_poseidon"	"2"
+			"mg_de_overpass"	"3"
+			"mg_de_vertigo"		"4"
+			"mg_de_nuke"		"5"
+			"mg_de_inferno"		"6"
 		}
 		"sddh"
 		{
@@ -907,15 +908,15 @@
 			"imagename"				"mapgroup-casualcharlie"
 			"nameID"				"#SFUI_Mapgroup_casualcharlie"
 			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_CasualCharlie"
-			"tooltipMaps"			"de_warden,de_stronghold,cs_alpine"
+			"tooltipMaps"			"de_boulder,de_fachwerk,cs_shelter"
 			"name"					"mg_casualcharlie"
 			"grouptype"				"reserves"
 			"icon_image_path"		"map_icons/mapgroup_icon_reserves"
 			"maps"
 			{
-				"de_warden"		""
-				"de_stronghold"		""
-				"cs_alpine"		""
+				"de_boulder"		""
+				"de_fachwerk"		""
+				"cs_shelter"		""
 			}
 		}
 		
@@ -1468,10 +1469,10 @@
 		{
 			"imagename"				"map-overpass-overall"
 			"nameID"				"#SFUI_Map_de_overpass"
-			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Active_Op_over"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Reserves"
 			"name"					"mg_de_overpass"
 			"icontag"				"bomb"
-			"grouptype"				"active"
+			"grouptype"				"reserves"
 			"icon_image_path"		"map_icons/map_icon_de_overpass"
 			"maps"
 			{
@@ -2318,6 +2319,84 @@
 			}
 		}
 
+		"mg_de_boulder"
+		{
+			"imagename"				"map-boulder-overall"
+			"nameID"				"#SFUI_Map_de_boulder"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Reserves"
+			"descriptionID"			"#SFUI_Map_Tooltip_Desc_boulder"
+			"authorID"				"Community Made"
+			"name"					"mg_de_boulder"
+			"icontag"				"bomb"
+			"grouptype"				"reserves"
+			"icon_image_path"		"map_icons/map_icon_de_boulder"
+			"maps"
+			{
+				"de_boulder"		""
+			}
+		}
+
+		"mg_de_fachwerk"
+		{
+			"imagename"				"map-fachwerk-overall"
+			"nameID"				"#SFUI_Map_de_fachwerk"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Reserves"
+			"descriptionID"			"#SFUI_Map_Tooltip_Desc_fachwerk"
+			"authorID"				"Community Made"
+			"name"					"mg_de_fachwerk"
+			"icontag"				"bomb"
+			"grouptype"				"reserves"
+			"icon_image_path"		"map_icons/map_icon_de_fachwerk"
+			"maps"
+			{
+				"de_fachwerk"		""
+			}
+		}
+
+		"mg_cs_shelter"
+		{
+			"imagename"				"map-shelter-overall"
+			"nameID"				"#SFUI_Map_cs_shelter"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Hostage"
+			"descriptionID"			"#SFUI_Map_Tooltip_Desc_shelter"
+			"authorID"				"Community Made"
+			"name"					"mg_cs_shelter"
+			"icontag"				"hostage"
+			"grouptype"				"reserves"
+			"icon_image_path"		"map_icons/map_icon_cs_shelter"
+			"maps"
+			{
+				"cs_shelter"			""
+			}
+		}
+
+		"mg_de_debris"
+		{
+			"imagename"				"map-debris-overall"
+			"nameID"				"#SFUI_Map_de_debris"
+			"authorID"				"Community Made"
+			"name"					"mg_de_debris"
+			"icontag"				"bomb"
+			"icon_image_path"		"map_icons/map_icon_de_debris"
+			"maps"
+			{
+				"de_debris"			""
+			}
+		}
+
+		"mg_de_eldorado"
+		{
+			"imagename"				"map-eldorado-overall"
+			"nameID"				"#SFUI_Map_de_eldorado"
+			"authorID"				"Community Made"
+			"name"					"mg_de_eldorado"
+			"icontag"				"bomb"
+			"icon_image_path"		"map_icons/map_icon_de_eldorado"
+			"maps"
+			{
+				"de_eldorado"			""
+			}
+		}
 
 		// Community maps
 
@@ -3208,11 +3287,10 @@
 		{
 			"imagename"				"map-cache-overall"
 			"nameID"				"#SFUI_Map_de_cache"
-			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Reserves"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Active_Op_over"
 			"name"					"mg_de_cache"
 			"icontag"				"bomb"
-			"showtagui"				"new"
-			"grouptype"				"reserves"
+			"grouptype"				"active"
 			"icon_image_path"		"map_icons/map_icon_de_cache"
 			"maps"
 			{
@@ -6294,6 +6372,60 @@
 			}
 		}
 
+		"de_debris"
+		{
+			"nameID"				"#SFUI_Map_de_debris"
+			"name"					"de_debris"
+			"imagename"				"map-debris-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms_phoenix.vmdl"
+			"t_models"
+			{
+				"tm_phoenix"		""
+				"tm_phoenix_variantA"	""
+				"tm_phoenix_variantB"	""
+				"tm_phoenix_variantC"	""
+				"tm_phoenix_variantD"	""
+			}
+			"ct_arms"			"models/weapons/ct_arms_fbi.vmdl"
+			"ct_models"
+			{
+				"ctm_fbi"		""
+				"ctm_fbi_variantA"	""
+				"ctm_fbi_variantE"	""
+				"ctm_fbi_variantC"	""
+				"ctm_fbi_variantD"	""
+			}
+		}
+
+		"de_eldorado"
+		{
+			"nameID"				"#SFUI_Map_de_eldorado"
+			"name"					"de_eldorado"
+			"imagename"				"map-eldorado-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms_phoenix.vmdl"
+			"t_models"
+			{
+				"tm_phoenix"		""
+				"tm_phoenix_variantA"	""
+				"tm_phoenix_variantB"	""
+				"tm_phoenix_variantC"	""
+				"tm_phoenix_variantD"	""
+			}
+			"ct_arms"			"models/weapons/ct_arms_fbi.vmdl"
+			"ct_models"
+			{
+				"ctm_fbi"		""
+				"ctm_fbi_variantA"	""
+				"ctm_fbi_variantE"	""
+				"ctm_fbi_variantC"	""
+				"ctm_fbi_variantD"	""
+			}
+		}
+
 		"de_transit"
 		{
 			"nameID"				"#SFUI_Map_de_transit"
@@ -6628,6 +6760,7 @@
 			"default_game_type"		"0" // classic
 			"default_game_mode"		"0" // casual
 			"t_arms"				"models/weapons/t_arms.vmdl"
+			"addon"					"de_warden" 
 			"t_models"
 			{
 				"tm_leet_variantA"		""
@@ -6655,6 +6788,7 @@
 			"default_game_type"		"0" // classic
 			"default_game_mode"		"0" // casual
 			"t_arms"				"models/weapons/t_arms.vmdl"
+			"addon"					"de_stronghold" 
 			"t_models"
 			{
 				"tm_leet_variantA"		""
@@ -6682,6 +6816,91 @@
 			"default_game_type"		"0" // classic
 			"default_game_mode"		"0" // casual
 			"t_arms"				"models/weapons/t_arms.vmdl"
+			"addon"					"cs_alpine" 
+			"t_models"
+			{
+				"tm_phoenix"		""
+				"tm_phoenix_variantA"	""
+				"tm_phoenix_variantB"	""
+				"tm_phoenix_variantC"	""
+				"tm_phoenix_variantD"	""
+			}
+			"ct_arms"			"models/weapons/ct_arms_fbi.vmdl"
+			"ct_models"
+			{
+				"ctm_fbi"		""
+				"ctm_fbi_variantA"	""
+				"ctm_fbi_variantE"	""
+				"ctm_fbi_variantC"	""
+				"ctm_fbi_variantD"	""
+			}
+		}
+
+		"de_boulder"
+		{
+			"nameID"				"#SFUI_Map_de_boulder"
+			"name"					"de_boulder"
+			"imagename"				"map-boulder-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms.vmdl"
+			"addon"					"de_boulder" 
+			"t_models"
+			{
+				"tm_leet_variantA"		""
+				"tm_leet_variantB"		""
+				"tm_leet_variantC"		""
+				"tm_leet_variantD"		""
+				"tm_leet_variantE"		""
+			}
+			"ct_arms"			"models/weapons/ct_arms_gign.vmdl"
+			"ct_models"
+			{
+				"ctm_gign"		""
+				"ctm_gign_variantA"	""
+				"ctm_gign_variantB"	""
+				"ctm_gign_variantC"	""
+				"ctm_gign_variantD"	""
+			}
+		}
+
+		"de_fachwerk"
+		{
+			"nameID"				"#SFUI_Map_de_fachwerk"
+			"name"					"de_fachwerk"
+			"imagename"				"map-fachwerk-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms.vmdl"
+			"addon"					"de_fachwerk" 
+			"t_models"
+			{
+				"tm_leet_variantA"		""
+				"tm_leet_variantB"		""
+				"tm_leet_variantC"		""
+				"tm_leet_variantD"		""
+				"tm_leet_variantE"		""
+			}
+			"ct_arms"			"models/weapons/ct_arms_gign.vmdl"
+			"ct_models"
+			{
+				"ctm_gign"		""
+				"ctm_gign_variantA"	""
+				"ctm_gign_variantB"	""
+				"ctm_gign_variantC"	""
+				"ctm_gign_variantD"	""
+			}
+		}
+
+		"cs_shelter"
+		{
+			"nameID"				"#SFUI_Map_cs_shelter"
+			"name"					"cs_shelter"
+			"imagename"				"map-shelter-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms.vmdl"
+			"addon"					"cs_shelter" 
 			"t_models"
 			{
 				"tm_phoenix"		""

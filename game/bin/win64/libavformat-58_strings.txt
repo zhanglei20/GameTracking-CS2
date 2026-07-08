@@ -2248,6 +2248,7 @@ bN9UQW9w>`96*i9
 background
 bandwidth
 bandwidth of this stream to be specified in the DASH manifest.
+binary
 bit rate
 bitDepthChromaMinus8:                %hhu\n
 bitDepthLumaMinus8:                  %hhu\n

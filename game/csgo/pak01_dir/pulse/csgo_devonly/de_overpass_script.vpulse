@@ -153,7 +153,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 1
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 6
+			m_nSrcInstruction = 7
 		},
 		{
 			m_RegisterMap = 
@@ -167,7 +167,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 2
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 8
+			m_nSrcInstruction = 9
 		},
 		{
 			m_RegisterMap = 
@@ -181,7 +181,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 3
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 10
+			m_nSrcInstruction = 11
 		},
 		{
 			m_RegisterMap = 
@@ -195,7 +195,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 4
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 12
+			m_nSrcInstruction = 13
 		},
 		{
 			m_RegisterMap = 
@@ -210,7 +210,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 5
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 15
+			m_nSrcInstruction = 16
 		},
 		{
 			m_RegisterMap = 
@@ -224,7 +224,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 6
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 17
+			m_nSrcInstruction = 18
 		},
 		{
 			m_RegisterMap = 
@@ -238,7 +238,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 7
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 19
+			m_nSrcInstruction = 20
 		},
 		{
 			m_RegisterMap = 
@@ -252,7 +252,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 8
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 21
+			m_nSrcInstruction = 22
 		},
 		{
 			m_RegisterMap = 
@@ -266,7 +266,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 9
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 24
+			m_nSrcInstruction = 26
 		},
 		{
 			m_RegisterMap = 
@@ -280,7 +280,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 10
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 26
+			m_nSrcInstruction = 28
 		},
 		{
 			m_RegisterMap = 
@@ -294,7 +294,7 @@
 			m_FuncName = "CPulseCell_Step_EntFire::FireAtName"
 			m_nCellIndex = 11
 			m_nSrcChunk = 0
-			m_nSrcInstruction = 28
+			m_nSrcInstruction = 30
 		},
 	]
 	m_CallInfos = [  ]
@@ -422,7 +422,7 @@
 					m_nReg2 = -1
 					m_nInvokeBindingIndex = -1
 					m_nChunk = -1
-					m_nDestInstruction = 23
+					m_nDestInstruction = 24
 					m_nCallInfoIndex = -1
 					m_nConstIdx = -1
 					m_nDomainValueIdx = -1
@@ -430,6 +430,20 @@
 				},
 				{
 					m_nCode = "IMMEDIATE_HALT"
+					m_nVar = -1
+					m_nReg0 = -1
+					m_nReg1 = -1
+					m_nReg2 = -1
+					m_nInvokeBindingIndex = -1
+					m_nChunk = -1
+					m_nDestInstruction = 0
+					m_nCallInfoIndex = -1
+					m_nConstIdx = -1
+					m_nDomainValueIdx = -1
+					m_nBlackboardReferenceIdx = -1
+				},
+				{
+					m_nCode = "NOP"
 					m_nVar = -1
 					m_nReg0 = -1
 					m_nReg1 = -1
@@ -695,6 +709,20 @@
 					m_nBlackboardReferenceIdx = -1
 				},
 				{
+					m_nCode = "NOP"
+					m_nVar = -1
+					m_nReg0 = -1
+					m_nReg1 = -1
+					m_nReg2 = -1
+					m_nInvokeBindingIndex = -1
+					m_nChunk = -1
+					m_nDestInstruction = 0
+					m_nCallInfoIndex = -1
+					m_nConstIdx = -1
+					m_nDomainValueIdx = -1
+					m_nBlackboardReferenceIdx = -1
+				},
+				{
 					m_nCode = "GET_DOMAIN_VALUE"
 					m_nVar = -1
 					m_nReg0 = 10
@@ -806,84 +834,84 @@
 					m_nReg = 1
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "730037394:TargetName"
-					m_nWrittenByInstruction = 5
+					m_nWrittenByInstruction = 6
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 2
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "450407620:TargetName"
-					m_nWrittenByInstruction = 7
+					m_nWrittenByInstruction = 8
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 3
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "260280497:TargetName"
-					m_nWrittenByInstruction = 9
+					m_nWrittenByInstruction = 10
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 4
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "333567555:TargetName"
-					m_nWrittenByInstruction = 11
+					m_nWrittenByInstruction = 12
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 5
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "14905923:TargetName"
-					m_nWrittenByInstruction = 13
+					m_nWrittenByInstruction = 14
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 6
 					m_Type = "PVAL_STRING"
 					m_OriginName = "14905923:pParam"
-					m_nWrittenByInstruction = 14
+					m_nWrittenByInstruction = 15
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 7
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "682359721:TargetName"
-					m_nWrittenByInstruction = 16
+					m_nWrittenByInstruction = 17
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 8
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "504373748:TargetName"
-					m_nWrittenByInstruction = 18
+					m_nWrittenByInstruction = 19
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 9
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "870705444:TargetName"
-					m_nWrittenByInstruction = 20
+					m_nWrittenByInstruction = 21
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 10
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "641560877:TargetName"
-					m_nWrittenByInstruction = 23
+					m_nWrittenByInstruction = 25
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 11
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "854190920:TargetName"
-					m_nWrittenByInstruction = 25
+					m_nWrittenByInstruction = 27
 					m_nLastReadByInstruction = -1
 				},
 				{
 					m_nReg = 12
 					m_Type = "PVAL_ENTITY_NAME"
 					m_OriginName = "52872891:TargetName"
-					m_nWrittenByInstruction = 27
+					m_nWrittenByInstruction = 29
 					m_nLastReadByInstruction = -1
 				},
 			]
@@ -910,13 +938,18 @@
 					m_SequencePointName = "m_PrimaryPoint"
 				},
 				{
-					m_nFlowNodeID = -1
+					m_nFlowNodeID = 531967020
 					m_nValueNodeID = -1
-					m_SequencePointName = ""
+					m_SequencePointName = "m_PrimaryPoint"
+				},
+				{
+					m_nFlowNodeID = 531967020
+					m_nValueNodeID = -1
+					m_SequencePointName = "m_IsTrue"
 				},
 				{
 					m_nFlowNodeID = 730037394
-					m_nValueNodeID = -1
+					m_nValueNodeID = 730037394
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -926,7 +959,7 @@
 				},
 				{
 					m_nFlowNodeID = 450407620
-					m_nValueNodeID = -1
+					m_nValueNodeID = 450407620
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -936,7 +969,7 @@
 				},
 				{
 					m_nFlowNodeID = 260280497
-					m_nValueNodeID = -1
+					m_nValueNodeID = 260280497
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -946,7 +979,7 @@
 				},
 				{
 					m_nFlowNodeID = 333567555
-					m_nValueNodeID = -1
+					m_nValueNodeID = 333567555
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -956,12 +989,12 @@
 				},
 				{
 					m_nFlowNodeID = 14905923
-					m_nValueNodeID = -1
+					m_nValueNodeID = 14905923
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 14905923
-					m_nValueNodeID = -1
+					m_nValueNodeID = 14905923
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -971,7 +1004,7 @@
 				},
 				{
 					m_nFlowNodeID = 682359721
-					m_nValueNodeID = -1
+					m_nValueNodeID = 682359721
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -981,12 +1014,17 @@
 				},
 				{
 					m_nFlowNodeID = 504373748
-					m_nValueNodeID = -1
+					m_nValueNodeID = 504373748
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 504373748
 					m_nValueNodeID = -1
+					m_SequencePointName = "m_StepPoint"
+				},
+				{
+					m_nFlowNodeID = 870705444
+					m_nValueNodeID = 870705444
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -997,16 +1035,16 @@
 				{
 					m_nFlowNodeID = 870705444
 					m_nValueNodeID = -1
-					m_SequencePointName = "m_StepPoint"
+					m_SequencePointName = "OutDefault"
 				},
 				{
-					m_nFlowNodeID = -1
+					m_nFlowNodeID = 531967020
 					m_nValueNodeID = -1
-					m_SequencePointName = ""
+					m_SequencePointName = "m_IsFalse"
 				},
 				{
 					m_nFlowNodeID = 641560877
-					m_nValueNodeID = -1
+					m_nValueNodeID = 641560877
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -1016,12 +1054,17 @@
 				},
 				{
 					m_nFlowNodeID = 854190920
-					m_nValueNodeID = -1
+					m_nValueNodeID = 854190920
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
 					m_nFlowNodeID = 854190920
 					m_nValueNodeID = -1
+					m_SequencePointName = "m_StepPoint"
+				},
+				{
+					m_nFlowNodeID = 52872891
+					m_nValueNodeID = 52872891
 					m_SequencePointName = "m_StepPoint"
 				},
 				{
@@ -1032,12 +1075,7 @@
 				{
 					m_nFlowNodeID = 52872891
 					m_nValueNodeID = -1
-					m_SequencePointName = "m_StepPoint"
-				},
-				{
-					m_nFlowNodeID = -1
-					m_nValueNodeID = -1
-					m_SequencePointName = ""
+					m_SequencePointName = "OutDefault"
 				},
 			]
 		},

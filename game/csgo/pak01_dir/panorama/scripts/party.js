@@ -97,14 +97,10 @@ var PartyMenu;
         return elPartyMember;
     }
     function _SetHonorIcon(elPartyMember, xuid) {
-        const honorIconOptions = {
-            honor_icon_frame_panel: elPartyMember.FindChildTraverse('jsHonorIcon'),
-            debug_xuid: xuid,
-            do_fx: true,
-            xptrail_value: PartyListAPI.GetFriendXpTrailLevel(xuid),
-            prime_value: PartyListAPI.GetFriendPrimeEligible(xuid)
-        };
-        HonorIcon.SetOptions(honorIconOptions);
+        const elHonorIcon = elPartyMember.FindChildTraverse('jsHonorIcon');
+        if (elHonorIcon) {
+            elHonorIcon.Set(PartyListAPI.GetFriendXpTrailLevel(xuid), PartyListAPI.GetFriendPrimeEligible(xuid));
+        }
     }
     function _UpdateAvatar(elPartyMember, xuid) {
         let elAvatar = elPartyMember.FindChildInLayoutFile(xuid);

@@ -80,14 +80,10 @@ var Leaderboard;
         _ShowGlobalRank();
     }
     function _SetHonorIcon(elPanel, xuid) {
-        const honorIconOptions = {
-            honor_icon_frame_panel: elPanel.FindChildTraverse('jsHonorIcon'),
-            xuid: xuid,
-            do_fx: true,
-            xptrail_value: PartyListAPI.GetFriendXpTrailLevel(xuid),
-            prime_value: PartyListAPI.GetFriendPrimeEligible(xuid)
-        };
-        HonorIcon.SetOptions(honorIconOptions);
+        const elHonorIcon = elPanel.FindChildTraverse('jsHonorIcon');
+        if (elHonorIcon) {
+            elHonorIcon.Set(PartyListAPI.GetFriendXpTrailLevel(xuid), PartyListAPI.GetFriendPrimeEligible(xuid));
+        }
     }
     function _SetTitle() {
         $.GetContextPanel().SetDialogVariable('leaderboard-title', $.Localize('#leaderboard_title_' + String(m_lbType)));

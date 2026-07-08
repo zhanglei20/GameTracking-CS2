@@ -1,5 +1,5 @@
   Bad Fax Lines: %lu\n
-  C%d:I%-2d {F=%-10d,V=%-10d} 
+  C%d:I%-2d {F=%-10d,V=%-10d,S=%-20.20s} 
   CallInfo%d: %s\n
   Cell%d - NULL\n
   Cell%d EditorID:%d [%s]: %s\n
@@ -62,6 +62,7 @@
 !"Calling CBaseEditorApp::SetActiveSession on an unknown session"
 !#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 !?triggered@QAction@@QEAAX_N@Z
+!?triggered@QMenu@@QEAAXPEAVQAction@@@Z
 !\f?focusNextPrevChild@QScrollArea@@UEAA_N_N@Z
 !root
 " ?timerEvent@QListView@@MEAAXPEAVQTimerEvent@@@Z
@@ -141,10 +142,12 @@
 #\f?focusNextPrevChild@QTextEdit@@MEAA_N_N@Z
 #\n?columnCount@QSortFilterProxyModel@@UEBAHAEBVQModelIndex@@@Z
 #\r?hide@QWidget@@QEAAXXZ
+#\tV_exp2f
 $ ?timerEvent@QMdiSubWindow@@MEAAXPEAVQTimerEvent@@@Z
 $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
+$\tV_expd
 % ?timerEvent@QMenu@@MEAAXPEAVQTimerEvent@@@Z
 %.100s: Can not read TIFF directory
 %.2f FPS (%.2fms%s)
@@ -199,6 +202,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 %s compression support is not configured
 %s did not shut down correctly the last time it was used.\nMore recent autosaves exist of the files you were working on.\nWould you like to recover the last saved versions of the files that were open?\n
 %s layer
+%s%02d:%02d
 %s%s%03d.%s%s
 %s%s: DynamicWidget: %s\n
 %s2-d encoding
@@ -287,7 +291,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
-(5gm
 (Custom Colors Disabled)
 (Filter)
 (No Active Session)
@@ -329,6 +332,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 -\r?hideEvent@QMdiSubWindow@@MEAAXPEAVQHideEvent@@@Z
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 .?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_IntervalTimer_DebugInfo_t@@
 .?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AUVDataInitInfo_t@@
 .?AV<lambda_10>@?BM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -357,6 +361,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV<lambda_18>@?CM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_19>@?BF@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CPostProcessEditorApp@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
+.?AV<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
 .?AV<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@
 .?AV<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@
 .?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -380,6 +385,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV<lambda_27>@?DJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_28>@?DM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
+.?AV<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
 .?AV<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@
 .?AV<lambda_2>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -531,6 +537,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV?$_Func_impl_no_alloc@V<lambda_18>@?CM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_19>@?BF@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CPostProcessEditorApp@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
@@ -554,6 +561,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV?$_Func_impl_no_alloc@V<lambda_27>@?DJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_28>@?DM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
@@ -632,6 +640,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCLightingControlRig@@
 .?AVCLightingPreviewPopupUI@@
 .?AVCLocalContrastLayer@@
+.?AVCLocalExposureLayer@@
 .?AVCModelInstanceManager@@
 .?AVCModelInstanceSceneObjectContainer@@
 .?AVCNewParticleEffect@@
@@ -730,6 +739,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCQLineEditWithFocus@@
 .?AVCQLinePlotCurve@@
 .?AVCQLocalContrastWidget@@
+.?AVCQLocalExposureWidget@@
 .?AVCQLuminosityMaskPlotCurve@@
 .?AVCQMainWindow@@
 .?AVCQMdiArea@@
@@ -984,7 +994,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1BeginModify()
 1BuildWindowMenu()
 1CancelClicked()
-1CheckForKeepActive()
 1CheckOutClicked()
 1ClearInputHistory()
 1CloseAndSetActiveSession( int )
@@ -1003,8 +1012,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1FocusChanged( QWidget *, QWidget * )
 1InvokeCommand()
 1LaunchEngineTool(int)
-1LoadRecentFile( QAction * )
-1MarkSettingsDirty()
 1NavigateToFile()
 1OkClicked()
 1OnAbout()
@@ -1026,7 +1033,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnModeChanged( int )
 1OnMuteGameInToolsChanged()
 1OnMuteToolsChanged()
-1OnNewModelPicked()
 1OnNewRigPicked()
 1OnPickBackgroundColor()
 1OnPicked(QColor)
@@ -1071,7 +1077,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1PullSelectionFromGlobalBrowser()
 1PushSelectionToGlobalBrowser()
 1RebuildPlotCurve()
-1RebuildRecentFilesSubmenu()
 1RecenterVignette()
 1RemoveColor( int )
 1RenameColor( int )
@@ -1084,7 +1089,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1SetFilmicPreset( int )
 1SetLayerOpacity( int )
 1ShowWindowsList()
-1SubWindowActivated(QMdiSubWindow *)
 1SubmitClicked()
 1SyncClicked()
 1SyncLayerToUI()
@@ -1101,12 +1105,10 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1UpdateButtonStatusFromAction()
 1UpdateEditFromSlider()
 1UpdateEditMenu()
-1UpdateFileMenu()
 1UpdateGamma( int )
 1UpdateLuminosityCurve()
 1UpdateMenu()
 1UpdateSliderFromEdit()
-1UpdateVersionControlSubmenu()
 1UpdateWhiteAndGammaSliderRange( int )
 1UpdateWhiteOutputLevel( int )
 1UpdateWhitePoint( int )
@@ -1152,13 +1154,11 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2Value1Changed( int )
 2Value2Changed( int )
 2WhitePointChanged( int )
-2WindowStateChanged()
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\nP!E
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpP
 2aboutToShow()
 2accepted()
 2activated( int )
@@ -1181,7 +1181,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2sliderPressed( )
 2sliderPressed()
 2sliderReleased()
-2subWindowActivated(QMdiSubWindow *)
 2textChanged( QString )
 2textChanged(QString)
 2textEdited( const QString& )
@@ -1189,7 +1188,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2timeout()
 2toggled( bool )
 2topLevelChanged(bool)
-2triggered( QAction * )
 2triggered()
 2valueChanged( float )
 2valueChanged( int )
@@ -1218,6 +1216,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
 969p
+9>-memory-
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 : Add
 :\f?constScanLine@QImage@@QEBAPEBEH@Z
@@ -1237,6 +1236,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 <br>The file:<pre>"%1"</pre>is outside of the directory required for game content:<pre>"%2"</pre>
 <map_key>
 <map_value>
+<non-RTTI type>
 <none>\n
 <pre>"%s"</pre> Is not an allowed file path. %s<br><br>%s
 == PulseGraphDef ==\n
@@ -1530,10 +1530,10 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??MQTreeWidgetItem@@UEBA_NAEBV0@@Z
 ??YQString@@QEAAAEAV0@AEBVQByteArray@@@Z
 ??YQString@@QEAAAEAV0@PEBD@Z
-?PHk
 ?UNKNOWN
 ?\f?debug@QMessageLogger@@QEBA?AVQDebug@@XZ
 ?\n?availableGeometry@QScreen@@QEBA?AVQRect@@XZ
+?aboutToShow@QMenu@@QEAAXXZ
 ?absoluteFilePath@QFileInfo@@QEBA?AVQString@@XZ
 ?accept@QDialog@@UEAAXXZ
 ?actionEvent@QMenu@@MEAAXPEAVQActionEvent@@@Z
@@ -2055,7 +2055,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?objectName@QObject@@QEBA?AVQString@@XZ
 ?open@QDialog@@UEAAXXZ
 ?open@QFile@@UEAA_NV?$QFlags@W4OpenModeFlag@QIODevice@@@@@Z
-?pGk
 ?paintEngine@QWidget@@UEBAPEAVQPaintEngine@@XZ
 ?paintEvent@QAbstractScrollArea@@MEAAXPEAVQPaintEvent@@@Z
 ?paintEvent@QAbstractSpinBox@@MEAAXPEAVQPaintEvent@@@Z
@@ -2608,6 +2607,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?stop@QTimer@@QEAAXXZ
 ?style@QApplication@@SAPEAVQStyle@@XZ
 ?styleSheet@QWidget@@QEBA?AVQString@@XZ
+?subWindowActivated@QMdiArea@@QEAAXPEAVQMdiSubWindow@@@Z
 ?subWindowList@QMdiArea@@QEBA?AV?$QList@PEAVQMdiSubWindow@@@@W4WindowOrder@1@@Z
 ?submit@QAbstractItemModel@@UEAA_NXZ
 ?submit@QAbstractProxyModel@@UEAA_NXZ
@@ -2663,7 +2663,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @Integer overflow in %s
-@\tV_isinfd
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 @fff>fff>fff>fff>
 @spawn
@@ -2695,10 +2694,12 @@ Active Window Widget
 ActiveArea
 Add Failed
 Add Failed.
+Add Flags
 Add Layer
 Add Mask
 Add R%d <- R%d + R%d
 Add failed
+Add flags to the given value.
 Add layer mask%s
 Add layer: %s
 Add mask to selected layer
@@ -2714,10 +2715,10 @@ Adding %d file(s).  Please wait...
 Addr
 Address
 AdobeDeflate
+After the real remainder, how many additional digits should we continue to append to create additional visual movement?
 All Files (*)
 Alpha decoder initialization failed.
 Alpha:
-Always
 An error occurred when reading from the file.
 An error occurred when writing to the file.
 An unspecified error occurred.
@@ -2760,8 +2761,10 @@ AsShotWhiteXY
 Assert True
 Asset
 Asset Browser
-Async Fire C%d:I%d
-AtlasToVolumeTextureConversion(3093): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
+Async Call Method (Child Cursor) C%d:I%d
+Async Outflow (Child Cursor) C%d:I%d
+Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
+AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attempting to register the command %s for context %s multiple times\n
 Autosaved %i
 Autosaves Enabled
@@ -2777,7 +2780,6 @@ Backspace
 Bad autosave dir
 Bad checkstate (expected eg. 'PartiallyChecked')
 Bad code word
-Bad count in ArraySetCount (%d)
 Bad horizontalPolicy "%s"
 Bad max in ArrayFirstNElements (%d)
 Bad reinterpret on ArrayAppend
@@ -2797,6 +2799,7 @@ BaseEditor
 BaselineExposure
 BaselineNoise
 BaselineSharpness
+Basic string support.
 BayerGreenSplit
 Begin mouse capture [%i]: %s\n
 Begin testing a condition composed of Observable values. Continues checking until canceled.
@@ -2821,6 +2824,7 @@ Bloom Strength
 Bloom Threshold
 Blues
 Blur
+Boost Local Contrast
 Brightness Fade
 Brightness Threshold
 Brightness/Contrast
@@ -2852,7 +2856,7 @@ CBasePulseGraphInstance::InitInstance_Internal( %s; %p ) %s\n
 CBasePulseGraphInstance::Shutdown( %s; %p ) %s\n
 CBasePulseGraphInstance::StartGraphReload( %p ) %s\n
 CBasePulseGraphInstance::~CBasePulseGraphInstance( %p )\n
-CBaseToolsModelInstance::CreateReversedIBs(4560): 
+CBaseToolsModelInstance::CreateReversedIBs(4586): 
 CBindableCamera
 CBufferString
 CCITT Group 3
@@ -2869,11 +2873,11 @@ CGlobalSymbolCaseSensitive
 CInputBindManager::HandleInputCode recursion depth got too deep.\n
 CKV3MemberNameSet
 CKV3MemberNameWithStorage
-CL31
 CLightingControlRig
 CLightingControlRig::DestroyBackgroundMap
 CLightingControlRig::ReloadLightRigConfig
 CLightingPreviewPopupUI
+CLocalExposureLayer
 CModelPreviewAttachedModel
 CNewParticleEffect::DetectChanges
 COMMAND_TEXT_MODE_BUTTON
@@ -2881,7 +2885,7 @@ COMMAND_TEXT_MODE_ICON
 COMMAND_TEXT_MODE_MENU
 COMMAND_TEXT_MODE_NONE
 CParticleCollectionBindingInstance::HACK_UnusedBinding
-CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1186
+CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\particleslib\particlemgr.cpp:1166
 CPiecewiseCurve
 CPostProcessEditorApp
 CPostProcessEditorApp::SetPreviewModel
@@ -2898,9 +2902,9 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
+CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
-CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
 CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
@@ -2910,26 +2914,28 @@ CPulseCell_Inflow_ObservableVariableListener '%s'.'%s (%u)' --> Chunk%d: %s
 CPulseCell_InlineNodeSkipSelector::ProcessSelector
 CPulseCell_IntervalTimer::OnInterval
 CPulseCell_IntervalTimer::Start
-CPulseCell_IntervalTimer::StopTimer
 CPulseCell_IsRequirementValid::CheckRequirement
 CPulseCell_LimitCount::CheckRequirement
 CPulseCell_LimitCount::CommitStep
 CPulseCell_PickBestOutflowSelector::ProcessSelector
 CPulseCell_Step_CallExternalMethod '%s'
 CPulseCell_Timeline::Start
-CPulseCell_Timeline::Stop
 CPulseCell_Value_Curve::Eval
 CPulseCell_Value_Gradient::Eval
 CPulseCell_WaitForCursorsWithTag::Wait
-CPulseCell_WaitForObservable::Cancel
 CPulseCell_WaitForObservable::Start
 CPulseCursorFuncs::AnyOtherCursorsHaveTag
 CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
-CPulseCursorFuncs::KillThisCursorAndCancel
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
+CPulseCursorFuncs::WakeCursorsWithTag
+CPulseEnumlib
+CPulseEnumlib::AddFlags
+CPulseEnumlib::HasAllFlags
+CPulseEnumlib::HasAnyFlags
+CPulseEnumlib::RemoveFlags
 CPulseMathlib::AbsFloat
 CPulseMathlib::AbsInt
 CPulseMathlib::ArcCos
@@ -2966,6 +2972,7 @@ CPulseMathlib::MakeTransform
 CPulseMathlib::MakeVector
 CPulseMathlib::MakeVector2D
 CPulseMathlib::MakeVector4D
+CPulseMathlib::MakeVectorFromAngle
 CPulseMathlib::MakeWorldTransform
 CPulseMathlib::MakeWorldVector
 CPulseMathlib::MaxFloat
@@ -2995,11 +3002,15 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
-CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
+CPulseObservableExpression
+CPulseStringlib
+CPulseStringlib::FormatDurationStringFromSeconds
+CPulseStringlib::StringLength
+CPulseStringlib::StringsAreEqualCaseSensitive
 CPulseTestScriptLib::AssertTrue
 CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
@@ -3088,6 +3099,7 @@ CQLevelsControlWidget
 CQLevelsToolWidget
 CQLineEditWithFocus
 CQLocalContrastWidget
+CQLocalExposureWidget
 CQMainWindow
 CQMdiArea
 CQMdiWindowsList
@@ -3120,6 +3132,7 @@ CQVibranceToolWidget
 CQVignetteToolWidget
 CQWidgetDebugHighlight
 CQWidgetDebugger
+CREATE_CHILD_CURSOR_OUTFLOW
 CRenderOptionsPopupUI
 CStrongHandle
 CTSQueue<struct ParticleSoundQueueEntry_t *,0>::Push
@@ -3131,7 +3144,6 @@ CToolRenderContext::PopTransform - matrix stack underflow
 CToolRenderContext::PushRenderMode - exceeded stack depth\n
 CToolRenderContext::PushTransform - busted through MAX_MATRIX_STACK_DEPTH (%d)
 CToolRenderContext::PushTransform - matrix stack underflow
-CToolScene::Update(1406): 
 CToolSceneAttachmentNames
 CToolSceneAttachments
 CToolSceneAxis
@@ -3167,7 +3179,6 @@ CUtlDict<class CToolSceneHitBoxData::CMeshHitBoxes *,class CDefFastCaselessStrin
 CUtlDict<struct CQInputBindEditor::BindingContextInfo_t *,class CDefFastCaselessStringLess>::Insert
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CNewParticleEffect *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_InstructionDebug,int,class CMemAllocAllocator>,struct CPulse_InstructionDebug,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_RegisterInfo,int,class CMemAllocAllocator>,struct CPulse_RegisterInfo,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
@@ -3179,12 +3190,6 @@ CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::AddPage
-CUtlRBTree<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,class CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::CKeyLess,unsigned int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::Node_t,class CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,class CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CUtlVector<int>
 CUtlVectorFixedGrowable
@@ -3199,7 +3204,6 @@ CameraSerialNumber
 Can not read scanlines from a tiled image
 Cancel
 Cancel and keep my changes
-Cancel observing.
 CancelClicked
 Cannot Debug
 Cannot Redo
@@ -3277,7 +3281,6 @@ CloseAndSetActiveSession
 CloseSelected
 Closed Correctly
 ClosedCorrectly %i
-CloudTexture
 Color Balance
 Color Balance %d
 Color Lookup
@@ -3298,7 +3301,7 @@ Command Filter
 Command Name
 Command.%s.%s
 Commit Step
-Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
+Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive.
 Completed
 CompleterClosed
 CompleterOpened
@@ -3344,7 +3347,6 @@ CurrentICCProfile
 CurrentPreProfileMatrix
 Cursor Has Tag
 Cursor[ ptr:%p | id:%d | graph:%p ]: CPulseExecCursor()\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: Completed with result:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of result:%d from Subject:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d\n
@@ -3364,10 +3366,6 @@ DBM&(
 DNGBackwardVersion
 DNGPrivateData
 DNGVersion
-D_BORDER
-D_NO_ZTEST
-D_SNAP_TO_SCREEN_PIXELS
-D_THICK_LINES
 DataType
 Data_Branch1xy
 Data_Branch1zBranch2x
@@ -3420,7 +3418,6 @@ Dot Product Vector
 Dot Product of Vector a 
 DotRange
 DotaForward
-DotaGlobalParams_t
 Down
 DragFinished
 DragOffsetRelativeEnd
@@ -3431,6 +3428,7 @@ DragUpdated
 Draw Shadows
 DrawBoneNamesChanged
 DrawSkyboxChanged
+DualHull
 DummyNoOp
 DumpModeDecode: Not enough data for scanline %d
 E&xit
@@ -3470,8 +3468,10 @@ EndDropEvent
 EndModify
 EndWheelSequence
 Engine2/RenderingPipeline
+EnsureCapacity
 Enter
 EntityName
+Enum support.
 Eq R%d <- R%d == R%d
 Error (problem that prevents task success)
 Error converting image %1.
@@ -3500,11 +3500,12 @@ Expected eg. [10,20] or 30
 Exposure Bias (stops)
 Exposure Bias Highlights
 Exposure Bias Shadows
+Exposure Tolerance
 ExtraSamples
 F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 Fail Outflow
-Failed to allocate an instance of a class
-Failed to allocate an instance of class '%s'
+Failed to allocate an instance of a class of type '%s'
+Failed to allocate an instance of class '%s' (type '%s')
 Failed to allocate field info array
 Failed to allocate memory for %s (%ld elements of %ld bytes each)
 Failed to compute bone transform %d for attachment '%s'
@@ -3557,16 +3558,18 @@ Filename %i
 Files to Checkin:
 FillOrder
 Filter:
+FilterApplied
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find all the yielded cursors on this graph with the matching tag and wake them.
 Find first element 'a' which compare equal to 'element' and return its index.
 Find:
 FinishDragDropLayerMove
 Fixed
 Float To Game Time
 FloatBitMap_t: Error loading %s\n
-FloatBitMap_t::LoadFromFile(3285): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
-FloatBitMap_t::LoadFromTGA(2234): Error loading %s\n
+FloatBitMap_t::LoadFromFile(3729): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
+FloatBitMap_t::LoadFromTGA(2678): Error loading %s\n
 Floating point "Predictor" not supported with %d data format
 Floor - round float down to nearest integer
 Floor Float
@@ -3589,6 +3592,7 @@ Fog Scattering
 Fog Scattering %d
 FoliageAnimation
 Follow user preference
+Format Duration String From Seconds
 Frac
 Fractional component (ie. returns 0.34 for 12.34)
 Frame not displayable.
@@ -3620,7 +3624,6 @@ Global
 Global Preview
 Global Scale
 GlobalHotkeys
-GlobalLightOverride
 GlobalTopLevel
 GpuCullPreview
 Gradient Scale
@@ -3631,26 +3634,25 @@ Greens
 Grid layout should be an array of arrays
 Group3Options
 Group4Options
-H9dm
-H9fm
 HAC K  Unused Binding
 HSLA
 HSLA\t
 HSVA
 HSVA\t
-H\rfm
 Hable (U2/HLVR)
 Hack Dota Layer Opaque
 Hack Dota Layer Opaque Translucent
-Hacm
 HalftoneHints
+Has All Flags
+Has Any Flags
 Help
-HelperLoadFbmByFileExtension(3065): Error! Unknown file type for %s\n
+HelperLoadFbmByFileExtension(3509): Error! Unknown file type for %s\n
 HeroViewer
 Hex:
 Hide
 Hide unless error/warning occurs
 High Contrast
+Highlight Offset EV
 Highlights
 Home
 Horizontal differencing "Predictor" not supported with %d-bit samples
@@ -3672,7 +3674,6 @@ IKV3TransferInterface_ResourceSave
 IPulseGraphLoadErrorReporter
 IPulseReloadListener
 ISO JBIG
-IS_EFFECTS_LAYER
 IToolFrameListener
 IToolFrameworkAudioSettingsListener
 IToolSceneWindow
@@ -3684,7 +3685,6 @@ I\r?endsWith@QString@@QEBA_NVQChar@@W4CaseSensitivity@Qt@@@Z
 I\r?hitButton@QCheckBox@@MEBA_NAEBVQPoint@@@Z
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
-If -1 timer will continue forever
 If specified, each wait interval will vary randomly between WaitInterval this value
 If the file is saved in this location it cannot be used in game.\nSave here anyway?
 If this cursor spawns other work via Fire And Forget, should this Tag be inherited?
@@ -3731,6 +3731,8 @@ InteractiveEditFinished
 InteractiveEditStarted
 Internal error, unknown tag 0x%x
 InteroperabilityIFDOffset
+InterruptElegantly
+InterruptImmediately
 Invalid 'dockWidgetArea (%s)
 Invalid 'toolbarArea' (%s)
 Invalid Path
@@ -3757,8 +3759,6 @@ Is In Test Mode
 Is Valid Vector
 Is Valid World Vector
 IsOpenByOtherUser
-ItemIsolateView
-ItemIsolateVignette
 J%f%f%f%f%f%f%f%f
 JPEG
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
@@ -3767,6 +3767,7 @@ Jump to Instr I%d
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 KV3 save transfer failed: %s
 K\r?hitButton@QRadioButton@@MEBA_NAEBVQPoint@@@Z
+K\tV_isinfd
 K\v?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
 Keep Current
 KeepActive
@@ -3776,8 +3777,7 @@ KeyState[%1]
 KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
-Kill This Cursor And Cancel
-L>x\tk
+LAYER_TYPE_LOCAL_EXPOSURE
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -3844,6 +3844,8 @@ Loaded '%1':\nwith the following errors:\n%2
 Loading session from file: '%s'\n
 Local Contrast
 Local Contrast %d
+Local Exposure
+Local Exposure %d
 LocalizedCameraModel
 Lock Height [Toggle: %s]
 Log10
@@ -3860,11 +3862,14 @@ Lum Source: Diffuse<-->Pixel
 Luminosity:
 MAtomicTransfersAsPlainString
 MENU
+MM:SS with leading zeros
+MM_SS_LEADING_ZERO
 MMouse
 MMouseDoubleClick
 MPropertyFlattenIntoParentRow
 MPulseExpressionAlias
 MPulseFunctionHiddenInTool
+MPulseTypeRestriction
 MSAA Resolve
 MWheelDn
 MWheelLeft
@@ -3882,12 +3887,14 @@ Make Angle From Forward Vector
 Make Color
 Make Transform
 Make Vector
+Make Vector From Angle
 Make Vector2 D
 Make Vector4 D
 Make World Transform
 Make World Vector
 Make a Color from component parts
 Make a Transform from component parts.
+Make a Vector from an Angle
 Make a Vector from component parts.
 Make a Vector2D from component parts.
 Make a World Vector from component parts.
@@ -3897,7 +3904,6 @@ MakerNoteSafety
 MarkSettingsDirty
 MaskedAreas
 Master
-MaterialPreviewUseLayerViewportExtents
 MatrixWorldToCamera
 MatrixWorldToScreen
 Matteing
@@ -3972,6 +3978,7 @@ N?hsvHueF@QColor@@QEBANXZ
 N?hsvSaturation@QColor@@QEBAHXZ
 N?hsvSaturationF@QColor@@QEBANXZ
 N?index@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
+N@Bad count in ArraySetCount (%d)
 NO COMMAND TARGET
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
 NULL CELL 
@@ -4151,7 +4158,6 @@ OpenBuildWatch
 OpenContainingFolder
 OpenMutexA
 OpenVConsole
-Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Or R%d <- R%d || R%d
 OriginalRawFileData
@@ -4175,12 +4181,12 @@ P\v?event@QMdiSubWindow@@MEAA_NPEAVQEvent@@@Z
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
-PackedBlobNormal
 PageName
 PageNumber
 PanCamera3D
 PanelID
 Parent Map: %s\n
+Parent VData
 ParseEXRHeaderFromMemory failed! Error message: %s\n
 Particle Binding
 Particle Binding (Real)
@@ -4192,7 +4198,6 @@ Paste layers from clipboard
 PasteColor
 PasteColorSetFromClipboard
 Path Overflow, must be less than 260 characters.
-PatternType
 PerVertexLighting
 Perforce Integration
 PerformSingleRedo
@@ -4225,7 +4230,9 @@ PostProcessingEditor/compute_bloom
 PostProcessingEditor/filmic_linear_scale
 PostProcessingEditor/supports_fog_scattering
 PostProcessingEditor/supports_local_contrast
+PostProcessingEditor/supports_local_exposure
 PostProcessingEditor/supports_vignette
+PostProcessingLocalExposureParameters_t
 Postprocessing Data (*.vpost);;
 Postprocessing Data (*.vpost);;Postprocessing Data Autosave (*.vpost_autosave);;All Files (*)
 Postprocessing Layers
@@ -4239,12 +4246,12 @@ Premature end-of-partition0 encountered.
 Preserve Luminosity
 Presets:
 Preview Model:
-PreviewUIMaterialOnModel
 Previous
 PreviousSession
 PrimaryChromaticities
 Probable infinite loop detected! Terminating pulse cursor after %d consecutive instructions (%s)
 Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
+Proceed Immediately
 Process Selector
 PromptToSyncNewVersion
 PropWorldOrigin
@@ -4255,6 +4262,7 @@ Pull From Global Browser
 PullSelectionFromGlobalBrowser
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
+PulseDurationStringFormat_t
 Push To Global Browser
 PushSelectionToGlobalBrowser
 Q?map@QTransform@@QEBA?AVQPointF@@AEBV2@@Z
@@ -4329,7 +4337,6 @@ RMouse
 RMouseDoubleClick
 RSDS(
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpP
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
@@ -4370,10 +4377,12 @@ Reloading...
 Remap Clamped Float
 Remap and clamp input value from input range to output range (float)
 Remove
+Remove Flags
 Remove Mask
 Remove Tag From Cursor
 Remove all elements from 'a' which are invalid instances.
 Remove all elements from 'a' which compare equal to 'element'.
+Remove flags from the given value.
 Remove mask from selected layer
 Remove the element at the given index in 'a', decreasing its count by one and moving the elements after index.
 Remove the given tag from this cursor. If other cursors are waiting on us, they will resume.
@@ -4481,15 +4490,11 @@ Save changes?
 Save color changes?
 Save session
 Saving session to file: '%s'\n
-ScalableAOBias
-ScalableAORadius
-ScalableAOStrength
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
 Scene:
 SceneCameraChanged
 ScenePreview
-SceneSystem
 ScrLk
 ScrToggle
 Seek error at scanline %lu
@@ -4547,7 +4552,7 @@ SetVarArrayElement1D V%d (%s) [ R%d ] <- R%d R%d
 SetWrapEnabled
 Setting up field info failed
 SetupConnections
-ShaderVar_WireframeBackfaces
+Shadow Offset EV
 ShadowScale
 Shape:
 SharedToolCommands
@@ -4611,8 +4616,7 @@ StartSendingCameraTo
 Status
 Status...
 StoNits
-Stop Timer
-Stop any active timers - the completed outflow will still fire
+Stop Waiting
 StopSendingCameraTo
 Strength:
 String Length
@@ -4639,6 +4643,7 @@ SyncToHeadRevision - SyncFile failed: %s\n
 SyncUIToLayer
 Synced %d file(s).
 Synced %d file(s).  %d file(s) were not synced!
+Synchronous - Wait for this node to fully complete before proceeding.
 Syncing %d file(s).  Please wait...
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
@@ -4667,7 +4672,6 @@ TIFFVStripSize
 TIFFVTileSize
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T\tV_log2f
 TabStyle_t
 Tabbed Mode
 Tag 
@@ -4709,6 +4713,7 @@ This autosave file's original file location:
 This file is marked as READ ONLY.  You will not be able to save your changes.\n\n%s
 This file is not checked out.  Would you like to check it out? <pre> %s </pre>
 This is a BigTIFF file.  This format not supported\nby this version of libtiff.
+This is the overall duration. If -1 timer will continue forever. During this duration, we will fire a new child cursor at each Interval.
 Threshholding
 ThunderDecode: %s data at scanline %ld (%lu != %lu)
 ThunderScan
@@ -4747,7 +4752,6 @@ ToolWindowGrid
 Tools  
 Tools audio currently muted
 ToolsEnvironment
-ToolsLightMode
 ToolsUploadImage.vtex
 ToolsVis Modes
 ToolsVisMode: %s
@@ -4771,6 +4775,7 @@ TransferFunction
 Tried to load a polymorphic pointer with no '%s' key
 Truncated header.
 TrySendVNotify - SendKV3 failed\n
+Turn a time in seconds into a display string. NOT localized.
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QRegularExpressionValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -4780,10 +4785,8 @@ U?qt_metacast@QIntValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QRegularExpressionValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 UIMatRTTexture.vtex
-UITextureOnModel
 U\8h(
 U\r?home@QTextBrowser@@UEAAXXZ
-U\tV_logd
 Unable to create autosave directory
 Unable to open
 Unable to read file %s\n
@@ -4800,6 +4803,7 @@ Unknown compression type.
 Unknown data format %d for LogLuv compression
 Unknown encoding %d for LogLuv compression
 Unknown error
+Unknown format type
 UnknownType
 UnlitPostPass
 Unlock camera and allow perspective to roll upside down
@@ -4839,6 +4843,7 @@ V?redirected@QPaintDevice@@MEBAPEAV1@PEAVQPoint@@@Z
 V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VConsole
+VDATA
 VData:%s
 VNOTIFY_DISABLE
 VNotify
@@ -4907,12 +4912,18 @@ WARNING: VNotify abandoned after too many attempts:\n%s\n
 WDG,r3
 WIDGET DEBUGGER DELETING widget: 0x%p\n
 Wait Complete
+Wake Cursors With Tag
 WarnTrailingWhitespace
 Warning (problem that doesn't prevent forward progress)
 Warning!
 Warning: This text ends with whitespace
-When False
-When True
+Water Density
+Water Depth Blur Radius
+Water Scale
+Whether value has ALL of the specified flags set (it may have other flags.)
+Whether value has ANY of the specified flags set (it may have other flags.)
+While False
+While True
 White Point
 WhiteLevel
 WhitePoint
@@ -4929,7 +4940,6 @@ Writable
 Write error at scanline %lu
 Writeable
 X to the Y power
-X1em
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setCheckState@QStandardItem@@QEAAXW4CheckState@Qt@@@Z
@@ -4976,7 +4986,6 @@ Yellows
 Yes - Discard and reload from disk
 Yes: Checkout, resolve conflicts later.
 Yield, Resume=%s
-Y~em
 Z?setItalic@QFont@@QEAAX_N@Z
 Z?setItemData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBV?$QMap@HVQVariant@@@@@Z
 Z?setNamedColor@QColor@@QEAAXAEBVQString@@@Z
@@ -4998,7 +5007,6 @@ ZIPSetupEncode
 ZIPVSetField
 ZY?setDropEnabled@QStandardItem@@QEAAX_N@Z
 Z\f?convertFromImage@QPixmap@@QEAA_NAEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
-Z\tV_modfd
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 ZoomAllCamerasIn
 ZoomAllCamerasOut
@@ -5076,6 +5084,7 @@ ZoomForwardBack3D
 \f\f?columnCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n?deselect@QLineEdit@@QEAAXXZ
+\f\tV_acosd
 \n   Size: L: <%i, %i>   A: <%i, %i>   Scale: %0.2f\n   Geometry: %s\n   Virtual Geometry: %s\n   Available Geometry: %s\n   Orientation: %s\n
 \n?appendRow@QStandardItemModel@@QEAAXPEAVQStandardItem@@@Z
 \n?bits@QImage@@QEAAPEAEXZ
@@ -5111,8 +5120,10 @@ ZoomForwardBack3D
 \n?edit@QAbstractItemView@@MEAA_NAEBVQModelIndex@@W4EditTrigger@1@PEAVQEvent@@@Z
 \n?editingFinished@QLineEdit@@QEAAXXZ
 \n?editorDestroyed@QAbstractItemView@@MEAAXPEAVQObject@@@Z
+\nLKn
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
-\n\tV_atanf
+\ng_flConfigMaxCoord
+\ng_flToolsDefaultFarZ
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
 \r?data@QStandardItemModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
@@ -5162,16 +5173,13 @@ ZoomForwardBack3D
 \t?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
 \t@@@@@@@@@@@@@@@@{N{N{N{N{N{N{N{N
 \tT?parent@QWindow@@QEBAPEAV1@XZ
-\tV_acosd
 \tV_asind
 \tV_atan2d
+\tV_atand
+\tV_atanf
 \tV_cosd
-\tV_exp2f
-\tV_expd
 \tV_tand
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\t\tV_atand
-\tg_flConfigMaxCoord
 \v?checkState@QStandardItem@@QEBA?AW4CheckState@Qt@@XZ
 \v?clear@QStandardItemModel@@QEAAXXZ
 \v?clipboard@QGuiApplication@@SAPEAVQClipboard@@XZ
@@ -5211,12 +5219,12 @@ _TIFFSetupFieldInfo
 _TIFFVGetField
 _TIFFVSetField
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
+_\tV_log2f
 _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
 __CursorQueue__
 __FireCursorsParent__
 __IsValveCQTabbedStyle
 __State_Child_Condition__
-__State_Child_Subgraph__
 __TimelineParent__
 _autosave
 _cells
@@ -5228,23 +5236,21 @@ _wjb
 `?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?value@QColor@@QEBAHXZ
 `?valueF@QColor@@QEBANXZ
-`Icm
-`Ihm
 `Q?lightnessF@QColor@@QEBANXZ
-`Ygm
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
+`\tV_logd
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`ugm
 a:fulltype
 a:typeparam
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
-a\tV_powd
 actions
 active_frame
 align
+allflags
 allowed_api_features
 allowed_requirements
+anyflags
 aoB>"
 application/x-color
 area
@@ -5267,16 +5273,12 @@ b\v?currentIndex@QItemSelectionModel@@QEBA?AVQModelIndex@@XZ
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
 background
 background-color: #22b14c
-backgroundCornerColor0
-backgroundCornerColor1
-backgroundCornerColor2
-backgroundCornerColor3
 backgroundEnabled
 backgroundFill
-backgroundMaterial
 backgroundStyle
 bad partition length
 bentnormal
+binary
 black
 blendindices
 blendweight
@@ -5327,7 +5329,6 @@ data_with or data_height too large. data_width:
 defaultAction
 deg2rad
 dest
-disableVisualEffects
 displayWindow
 dlBNvz!/u{1?cmR^
 doItemsLayout
@@ -5335,20 +5336,21 @@ dock
 docked_widget
 domain_scope
 dqe-KO{/3
-drawShadows
 dropDraggedColorSet
 dummyfilename.tif
 e ?topLevelItem@QTreeWidget@@QEBAPEAVQTreeWidgetItem@@H@Z
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
+eSceneSystem
 e\f?convertToFormat_inplace@QImage@@IEAA_NW4Format@1@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
+e\tV_modfd
 editingFinished
 element
 end_as_info
 end_group
-etexcoord
 execution_history
+expression_type
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f\r?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
 fast
@@ -5379,6 +5381,7 @@ flPitch
 flRadians
 flRoll
 flScale
+flSeconds
 flTime
 flVal
 flValue
@@ -5463,6 +5466,7 @@ game:tools/images/postprocessingeditor/layer-fog-scattering.png
 game:tools/images/postprocessingeditor/layer-hue-saturation.png
 game:tools/images/postprocessingeditor/layer-levels.png
 game:tools/images/postprocessingeditor/layer-local-contrast.png
+game:tools/images/postprocessingeditor/layer-local-exposure.png
 game:tools/images/postprocessingeditor/layer-mask-disabled.png
 game:tools/images/postprocessingeditor/layer-mask.png
 game:tools/images/postprocessingeditor/layer-tonemapping.png
@@ -5495,6 +5499,7 @@ i\v?event@QTableWidget@@MEAA_NPEAVQEvent@@@Z
 idiv
 incorrect count for field "%s" (%u, expecting %u); tag ignored
 incorrect count for field "%s" (%u, expecting %u); tag trimmed
+interrupt_priority
 invalid vector subscript
 is_selector
 italic
@@ -5506,6 +5511,7 @@ kX?setBlue@QColor@@QEAAXH@Z
 k\v?event@QTextEdit@@MEAA_NPEAVQEvent@@@Z
 lR?metaObject@QIntValidator@@UEBAPEBUQMetaObject@@XZ
 l\n?dragEnterEvent@QLineEdit@@MEAAXPEAVQDragEnterEvent@@@Z
+l\tV_powd
 l\v?event@QToolBar@@MEAA_NPEAVQEvent@@@Z
 labelPos
 labelText
@@ -5526,27 +5532,28 @@ m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m_Bindings
 m_Context
 m_InputMacros
+m_Metadata
+m_SequencePoint
 m_Stops
 m_TagValue
-m_bBakedTwoSided
-m_bCanBatchWithDynamicShaderConstants
 m_bChildCursorsShouldInherit
 m_bConditionValue
-m_bDrawLast
 m_bFirstEvaluate
-m_bHasBakedLightingFromLightMap
-m_bHasBakedLightingFromVertexStream
-m_bIsNotMatchedToMaterial
-m_bNoShadow
-m_bOnlyShadow
+m_bHasLocalExposureParams
 m_bRemoveWhenOutOfScope
 m_bShutdown
-m_bUseCompressedNormalTangent
-m_bUseShadowFastPath
-m_externalMethodTargetGraph
+m_fBoostLocalContrast
+m_fHighlightOffsetEV
+m_fShadowOffsetEV
+m_fSigma
+m_fWaterDensity
+m_fWaterDepthBlurRadius
+m_fWaterScale
 m_flSlopeIncoming
 m_flSlopeOutgoing
+m_hCursorOnOtherGraph
 m_hDef
+m_localExposureParams
 m_nCurrentWakeIndex
 m_nCursorID
 m_nGraphID
@@ -5598,6 +5605,7 @@ nAlpha
 nBlackPointVal
 nDelayInMS
 nDenominator
+nFormat
 nGammaSliderVal
 nKillPriority
 nMaxElements
@@ -5607,11 +5615,14 @@ nMouseButton
 nNewValue
 nNumerator
 nOpacity
+nRemainderDigits
+nRemainderNoiseDigits
 nRow
 nSliderIdx
 nToolId
 nVal
 nValue
+nWakePriority
 nWhitePointVal
 nX?setBold@QFont@@QEAAX_N@Z
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
@@ -5629,7 +5640,6 @@ null VP8Io passed to VP8GetHeaders()
 o KPBf
 oY.o<
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
-o\tV_sind
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
 observable_listeners
 observable_scope
@@ -5663,6 +5673,7 @@ parent
 parent_cursor_id
 pet_preview_gravity
 pet_preview_underwater
+pet_preview_wind
 pickedColor
 pixelAspectRatio
 polymorphic_arg
@@ -5688,18 +5699,15 @@ pulse_runtime_lib
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quiet
-r\vpP
 rad2deg
 random_position
 readbackcolor
 recovered_autosave
 registers
 remap
-renderDecals
-renderOpaque
-renderSSAO
-renderScalableAO
 requested_cancel
+return_values
+return_values_enabled
 rigIdx
 right
 root
@@ -5775,9 +5783,11 @@ to read TIFF directory
 toggleViewAction
 tonemapping
 toolSpecificUI
+tool_request_args
+tool_request_text
+tool_request_tool
 toolbarArea
 toolhud_enable
-tools.light_volume_boundary
 tools.reference_notrace
 tools/colors/shared_colors.txt
 tools/images/pulse_editor/cursor_kill.png
@@ -5788,8 +5798,8 @@ tools/keybindings/shared_tool_key_bindings.txt
 toolsVisModeIndex
 tools_preview
 toolscenevismodes.txt
-transient
 transparency
+type_restriction_is_enum_flags
 t|AO
 uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
@@ -5802,6 +5812,7 @@ userEdit
 vForward
 vIK \f3
 v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
+value:fulltype
 valueChanged
 valueChangedByEdit
 valueChangedBySlider
@@ -5831,8 +5842,10 @@ yU?qt_metacall@QDoubleValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 yield_token
 zU?qt_metacall@QDrag@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
+z\tV_sind
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
+{ item_factory = 'IntervalTimer' }
 {\n?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
 {\n?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
 |"?verticalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ

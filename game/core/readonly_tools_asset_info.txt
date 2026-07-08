@@ -14,7 +14,6 @@ panorama/localization/core_tools_greek.txt
 panorama/localization/core_tools_hungarian.txt
 panorama/localization/core_tools_italian.txt
 panorama/localization/core_tools_japanese.txt
-panorama/localization/core_tools_korean.txt
 panorama/localization/core_tools_koreana.txt
 panorama/localization/core_tools_latam.txt
 panorama/localization/core_tools_norwegian.txt
@@ -43,7 +42,6 @@ panorama/localization/panorama_greek.txt
 panorama/localization/panorama_hungarian.txt
 panorama/localization/panorama_italian.txt
 panorama/localization/panorama_japanese.txt
-panorama/localization/panorama_korean.txt
 panorama/localization/panorama_koreana.txt
 panorama/localization/panorama_latam.txt
 panorama/localization/panorama_norwegian.txt
@@ -72,7 +70,6 @@ resource/countries_greek.txt
 resource/countries_hungarian.txt
 resource/countries_italian.txt
 resource/countries_japanese.txt
-resource/countries_korean.txt
 resource/countries_koreana.txt
 resource/countries_latam.txt
 resource/countries_norwegian.txt
@@ -329,7 +326,6 @@ materials/dev/generalfilter_additive.vmat
 materials/dev/generalfilter_alphablended.vmat
 materials/dev/generalfilter_premultipliedalphablend.vmat
 materials/dev/generalfilter_vertextinted_alphablended.vmat
-materials/dev/generate_aggregate_cull_requests.vmat
 materials/dev/generate_relaxed_cones.vmat
 materials/dev/gray_25.vmat
 materials/dev/gray_50.vmat
@@ -1357,7 +1353,6 @@ panorama/layout/popups/popup_generic_dropdown.vxml
 panorama/styles/popups/popup_generic_dropdown.vcss
 particles/entity/ent_physics_gorilla_tentacle_placeholder.vsnap
 smartprops/test/test_fill_box.vsmart
-sounds/envelope_analyzer.vsnd
 sounds/common/noise.vsnd
 sounds/containers/random_selector.vsnd
 sounds/containers/random_switch.vsnd
@@ -1384,7 +1379,6 @@ particles/dev/default_break_particles_contents.vpcf
 smartprops/test/test_color_tint.vsmart
 sounds/containers/test_blend.vsnd
 sounds/containers/test_constant_sine_decay.vsnd
-sounds/containers/test_envelope.vsnd
 sounds/containers/test_fm.vsnd
 sounds/containers/test_retrigger.vsnd
 sounds/ir/ir_neutral_forest.vsnd
@@ -1409,8 +1403,6 @@ materials/dev/wind_controller_visualize.vmat
 materials/dev/wind_noise_cs.vmat
 materials/dev/wind_update_cs.vmat
 materials/editor/error_indicator.vmat
-materials/editor/nav_space_flight.vmat
-materials/editor/nav_space_water.vmat
 models/dev/antitunnel_n5.vmdl
 particles/dev/dev_origin.vsnap
 smartprops/test/test_path_locators.vsmart
@@ -1439,8 +1431,6 @@ soundstacks/soundstacks_manifest_core_tools.vrman
 soundstacks/soundstacks_manifest_tools.vrman
 materials/dev/primary_grey_translucent_vmat_g_tcolor_e3c9c5c.vtex
 materials/editor/error_indicator_psd_95f0e675.vtex
-materials/editor/nav_space_flight_tga_35406aa8.vtex
-materials/editor/nav_space_water_tga_f3f7bd69.vtex
 materials/editor/hand_pose_active.vmat
 materials/editor/hand_pose_default.vmat
 materials/editor/hand_pose_inactive.vmat
@@ -1485,6 +1475,19 @@ sounds/diagnostics/one_2sec_lp.vsnd
 materials/editor/point_shake_tga_f9a1d80.vtex
 materials/models/editor/axis_helper_disabled_tga_74a3a09b.vtex
 models/dev/unittest/boot_breakable_model/boot_l_brk1.vmdl
+dev/vt_debug_imgui.vmat
+materials/dev/vt_cs.vmat
+materials/skybox/light_test_sky_sunset_light_mesh.vmat
+particles/dev/dev_lightning_2.vpcf
+sounds/diagnostics/click1_oneshot-01.vsnd
+sounds/diagnostics/silent_1sec_lp.vsnd
+sounds/diagnostics/sin_1k_0p005_lp-01.vsnd
+sounds/diagnostics/sin_1k_0p1_lp-01.vsnd
+sounds/diagnostics/sin_1k_0p1_oneshot-01.vsnd
+sounds/diagnostics/sqr_2k_0p005_oneshot-01.vsnd
+sounds/diagnostics/sqr_2k_0p05_oneshot-01.vsnd
+sounds/diagnostics/three_2sec_lp.vsnd
+sounds/diagnostics/two_2sec_lp.vsnd
 materials/loading_background.vmat
 materials/startup_background.vmat
 materials/tools_postprocess_volume.vmat

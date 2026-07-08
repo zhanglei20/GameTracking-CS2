@@ -78,6 +78,7 @@
 #\f?focusNextPrevChild@QTextEdit@@MEAA_N_N@Z
 #\n?columnCount@QSortFilterProxyModel@@UEBAHAEBVQModelIndex@@@Z
 #\r?hide@QWidget@@QEAAXXZ
+#rowlist{ border: 0px }
 $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
@@ -222,11 +223,13 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_ColorAlpha@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_ComboBox@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_CommandButton@@@@
+.?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditWithButton@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditWithFloatSlider@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditWithIntSlider@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_Editbox@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditboxOctaveBand@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditboxQAngle@@@@
+.?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditboxTransform@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditboxVector12@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditboxVector2@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditboxVector3@@@@
@@ -235,17 +238,22 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_EditboxVector8@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_Flags@@@@
 .?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_NoEditor@@@@
+.?AV?$CInternalPropertyAttributeEditorFactory@VCQAttributeEditor_Radio@@@@
 .?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_CurveEditor@@@@
 .?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_Gradient@@@@
+.?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_GradientWithAlpha@@@@
 .?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_ImageAbsPathBrowse@@@@
 .?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_Radio@@@@
 .?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_Range@@@@
+.?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_ReadOnlyLabel@@@@
 .?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_TextBlock@@@@
 .?AV?$CPropertyAttributeEditorFactoryBaseFixedHeight@VCQAttributeEditor_CurveEditor@@@@
 .?AV?$CPropertyAttributeEditorFactoryBaseFixedHeight@VCQAttributeEditor_Gradient@@@@
+.?AV?$CPropertyAttributeEditorFactoryBaseFixedHeight@VCQAttributeEditor_GradientWithAlpha@@@@
 .?AV?$CPropertyAttributeEditorFactoryBaseFixedHeight@VCQAttributeEditor_ImageAbsPathBrowse@@@@
 .?AV?$CPropertyAttributeEditorFactoryBaseFixedHeight@VCQAttributeEditor_Radio@@@@
 .?AV?$CPropertyAttributeEditorFactoryBaseFixedHeight@VCQAttributeEditor_Range@@@@
+.?AV?$CPropertyAttributeEditorFactoryBaseFixedHeight@VCQAttributeEditor_ReadOnlyLabel@@@@
 .?AV?$CPropertyAttributeEditorFactoryBaseFixedHeight@VCQAttributeEditor_TextBlock@@@@
 .?AV?$CTier0AppSystem@VIPropertyEditorSystem@@$0A@@@
 .?AV?$CTier1AppSystem@VIPropertyEditorSystem@@$0A@@@
@@ -310,6 +318,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV?$_Func_impl_no_alloc@V<lambda_8>@?9???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_9>@?L@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AVCBaseDynamicWidgetFactory@@
+.?AVCBaseInternalPropertyAttributeEditorFactory@@
 .?AVCBasePropItem@@
 .?AVCBindTargetDescriptorBase@@
 .?AVCBindableCommand@@
@@ -332,11 +341,13 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCQAttributeEditor_DomainAgnostic@@
 .?AVCQAttributeEditor_DomainAgnosticKV3@@
 .?AVCQAttributeEditor_DomainAgnosticPlural@@
+.?AVCQAttributeEditor_EditWithButton@@
 .?AVCQAttributeEditor_EditWithFloatSlider@@
 .?AVCQAttributeEditor_EditWithIntSlider@@
 .?AVCQAttributeEditor_Editbox@@
 .?AVCQAttributeEditor_EditboxOctaveBand@@
 .?AVCQAttributeEditor_EditboxQAngle@@
+.?AVCQAttributeEditor_EditboxTransform@@
 .?AVCQAttributeEditor_EditboxVector12@@
 .?AVCQAttributeEditor_EditboxVector2@@
 .?AVCQAttributeEditor_EditboxVector3@@
@@ -346,10 +357,12 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCQAttributeEditor_EditboxVectorBase@@
 .?AVCQAttributeEditor_Flags@@
 .?AVCQAttributeEditor_Gradient@@
+.?AVCQAttributeEditor_GradientWithAlpha@@
 .?AVCQAttributeEditor_ImageAbsPathBrowse@@
 .?AVCQAttributeEditor_NoEditor@@
 .?AVCQAttributeEditor_Radio@@
 .?AVCQAttributeEditor_Range@@
+.?AVCQAttributeEditor_ReadOnlyLabel@@
 .?AVCQAttributeEditor_TextBlock@@
 .?AVCQBindNameFilterWidget@@
 .?AVCQBindableCommandAction@@
@@ -397,7 +410,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCQPropertyEditor@@
 .?AVCQPropertyEditorToolbar@@
 .?AVCQPropertyOverlayWidget@@
-.?AVCQRichItemListPicker@@
+.?AVCQRichItemListPickerDialog@@
+.?AVCQRichItemListPickerWidget@@
 .?AVCQScreenCaptureOverlay@@
 .?AVCQScrollableWidgetList@@
 .?AVCQSelectionListItemDelegate@@
@@ -419,6 +433,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCGlobalHotkeyCommands@@@@
 .?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCQPropertyEditor@@@@
 .?AVCToolEditContextQuery_Base@@
+.?AVCToolEditContextQuery_ExpressionGlobal@@
 .?AVCToolEditContextQuery_String@@
 .?AVCTreeWidgetFilter@@
 .?AVCTreeWidgetFilter_KeywordList@@
@@ -432,6 +447,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVIPropertyEditorSystem@@
 .?AVIPropertyModificationListener@@
 .?AVIQtImageCache@@
+.?AVIToolAttrExpressionContext@@
 .?AVIToolAttr_Value@@
 .?AVIToolFrameListener@@
 .?AVQAbstractButton@@
@@ -526,7 +542,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 /\r?hideEvent@QScrollBar@@MEAAXPEAVQHideEvent@@@Z
 /\v?event@QAbstractScrollArea@@MEAA_NPEAVQEvent@@@Z
 /]?size@QImage@@QEBA?AVQSize@@XZ
-0123456789X
+04O\f
 0x%1
 0x%p = %s '%s'
 1"?updateGeometry@QWidget@@QEAAXXZ
@@ -653,8 +669,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpd
-2\vpt
+2\vp4O\f
+2\vpt2\r
 2aboutToShow()
 2accepted()
 2changed()
@@ -841,7 +857,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??0QString@@QEAA@AEBV0@@Z
 ??0QString@@QEAA@AEBVQByteArray@@@Z
 ??0QString@@QEAA@PEBD@Z
-??0QString@@QEAA@VQChar@@@Z
 ??0QString@@QEAA@XZ
 ??0QStyledItemDelegate@@QEAA@PEAVQObject@@@Z
 ??0QTabWidget@@QEAA@PEAVQWidget@@@Z
@@ -2119,6 +2134,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?userType@QVariant@@QEBAHXZ
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
+@InputBindSystem
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 ARRAY
@@ -2126,6 +2142,7 @@ ATTR
 About...
 AcceptColorInternal
 AcceptIfItemPicked
+Accepted
 Active Window Widget
 Add to Array
 Add to Map
@@ -2171,11 +2188,13 @@ CQAttributeEditor_CurveEditor
 CQAttributeEditor_DomainAgnostic
 CQAttributeEditor_DomainAgnosticKV3
 CQAttributeEditor_DomainAgnosticPlural
+CQAttributeEditor_EditWithButton
 CQAttributeEditor_EditWithFloatSlider
 CQAttributeEditor_EditWithIntSlider
 CQAttributeEditor_Editbox
 CQAttributeEditor_EditboxOctaveBand
 CQAttributeEditor_EditboxQAngle
+CQAttributeEditor_EditboxTransform
 CQAttributeEditor_EditboxVector12
 CQAttributeEditor_EditboxVector2
 CQAttributeEditor_EditboxVector3
@@ -2185,10 +2204,12 @@ CQAttributeEditor_EditboxVector8
 CQAttributeEditor_EditboxVectorBase
 CQAttributeEditor_Flags
 CQAttributeEditor_Gradient
+CQAttributeEditor_GradientWithAlpha
 CQAttributeEditor_ImageAbsPathBrowse
 CQAttributeEditor_NoEditor
 CQAttributeEditor_Radio
 CQAttributeEditor_Range
+CQAttributeEditor_ReadOnlyLabel
 CQAttributeEditor_TextBlock
 CQBindNameFilterWidget
 CQBindableCommandAction
@@ -2275,7 +2296,8 @@ CQPropertyEditor::UnblockRebuilds() %d -> %d\n
 CQPropertyEditor::UpdateDraggingLabelWidthColumn() - cursor[%d,%d] - col = %d\n
 CQPropertyEditorToolbar
 CQPropertyOverlayWidget
-CQRichItemListPicker
+CQRichItemListPickerDialog
+CQRichItemListPickerWidget
 CQRichItemListPicker_Choice_Internal*
 CQRichItemListPicker_Group_Internal*
 CQScreenCaptureOverlay
@@ -2427,11 +2449,13 @@ Ease Out Quart
 Ease Out Sine
 EatEscapeKeyPress
 Edit...
+EditWithButton
 EditWithFloatSlider
 EditWithIntSlider
 Editbox
 EditboxOctaveBand
 EditboxQAngle
+EditboxTransform
 EditboxVector12
 EditboxVector2
 EditboxVector3
@@ -2475,8 +2499,9 @@ Failed to paste gradient
 Failed to read colors: %s\n
 Failed to save colors: %s\n
 FatColor_t
-Filter name/description:
+Filter type/description:
 Filter:
+FilterApplied
 Find:
 Fixed
 FlagsChanged
@@ -2502,6 +2527,7 @@ Global
 GlobalHotkeys
 GlobalTopLevel
 GradientChanged
+GradientWithAlpha
 Grid layout should be an array of arrays
 HACK_OnToggled
 HSLA
@@ -2536,7 +2562,6 @@ InitIncrementalOperation
 Input Binding Error
 Input Debugger [%1]
 Input Sequence
-InputBindSystem
 Insert After
 Insert Before
 InteractiveEditFinished
@@ -2621,6 +2646,7 @@ N?hsvSaturation@QColor@@QEBAHXZ
 N?hsvSaturationF@QColor@@QEBANXZ
 N?index@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
 NO COMMAND TARGET
+NO_UI
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 Name: %s (%s)\n
@@ -2763,6 +2789,7 @@ PgUp
 Pick
 PickCancelled
 PickColor
+Pitch: rotation around Y axis
 Policy
 PopupClosed
 PopupOpened
@@ -2838,16 +2865,16 @@ RGBA\t%1\t%2\t%3\t%4
 RMouse
 RMouseDoubleClick
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fpt
+R\fp4O\f
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vpd
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Randomize
 RandomizeGradient
 RangeEditor
 Raw Edit Mode
 ReSelectOnReturn
+ReadOnlyLabel
 Really delete this widget?<br><br>***THIS MAY CRASH THE PROGRAM***<br>
 Redo
 Reloading...
@@ -2869,6 +2896,7 @@ ReverseGradient
 RichItemList_Accept
 RichItemList_Reject
 Right Mouse (Average)
+Roll: rotation around X axis
 RunCommand
 S?movePosition@QTextCursor@@QEAA_NW4MoveOperation@1@W4MoveMode@1@H@Z
 S?name@QColor@@QEBA?AVQString@@XZ
@@ -3005,6 +3033,7 @@ U^?supportedImageFormats@QImageReader@@SA?AV?$QList@VQByteArray@@@@XZ
 UnderMouse
 Undo
 Unhandled/unrecognized child entry (Must have a _class, or be a special entry like: vbox=[] hbox=[] grid=[[],[]] flowing=[] spacing=NUM stretch=NUM
+Uniform scale
 Unrecognized
 Unrecognized action class '%s'
 Unrecognized property '%s.%s'
@@ -3060,6 +3089,7 @@ Warning: This text ends with whitespace
 Widget Debugger
 Widget Properties
 Writable
+X offset
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrushOrigin@QPainter@@QEAAXAEBVQPoint@@@Z
@@ -3078,6 +3108,7 @@ XN?hasChildren@QStandardItemModel@@UEBA_NAEBVQModelIndex@@@Z
 XR?mergeCharFormat@QTextCursor@@QEAAXAEBVQTextCharFormat@@@Z
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
+Y offset
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
 Y?setFocalPoint@QRadialGradient@@QEAAXAEBVQPointF@@@Z
@@ -3094,6 +3125,8 @@ Y?setHsvF@QColor@@QEAAXNNNN@Z
 YO?insertColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 YY?setDropAction@QDropEvent@@QEAAXW4DropAction@Qt@@@Z
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
+Yaw: rotation around Z axis
+Z offset
 Z?setItalic@QFont@@QEAAX_N@Z
 Z?setItemData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBV?$QMap@HVQVariant@@@@@Z
 Z?setJoinStyle@QPen@@QEAAXW4PenJoinStyle@Qt@@@Z
@@ -3109,7 +3142,6 @@ Z?setPixmap@QDrag@@QEAAXAEBVQPixmap@@@Z
 Z?setPlainText@QTextDocument@@QEAAXAEBVQString@@@Z
 Z?setPointSize@QFont@@QEAAXH@Z
 ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
-Z\tV_modfd
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 [?setPointSizeF@QFont@@QEAAXN@Z
 [?setPos@QCursor@@SAXHH@Z
@@ -3284,6 +3316,7 @@ Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 \v?fixup@QSpinBox@@MEBAXAEAVQString@@@Z
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
+\vp4O\f
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QStandardItemModel@@2UQMetaObject@@B
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
@@ -3337,6 +3370,7 @@ backgroundEnabled
 backgroundFill
 backgroundStyle
 before
+binary
 black
 blue
 bold
@@ -3369,6 +3403,7 @@ dropDraggedColorSet
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
+e\tV_modfd
 end_as_info
 end_group
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
@@ -3523,6 +3558,7 @@ o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
 offsetDelta
 orientation
 output_name
+p4O\f
 pButton
 pCurrentFocusWidget
 pFileName
@@ -3546,10 +3582,10 @@ qQ?lineTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quiet
-r\vpd
-r\vpt
+r\vp4O\f
 rebuilding
 right
+rowlist
 rowspan
 sO?insertRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 scroll_widget
@@ -3579,6 +3615,9 @@ tabs
 tentative
 text/uri-list
 toggleViewAction
+tool_request_args
+tool_request_text
+tool_request_tool
 toolbarArea
 tools/colors/shared_colors.txt
 tools/keybindings/global_key_bindings.txt

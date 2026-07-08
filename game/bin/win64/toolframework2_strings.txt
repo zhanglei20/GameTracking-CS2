@@ -171,6 +171,7 @@ $EdX
 $ModelPath$/transmission
 $SO0
 $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
+$\tV_expd
 $dir
 $modelname$
 $modelname$_cavity
@@ -481,7 +482,6 @@ $name_$id
 .?AUCAttr_m_FindStr@?1??GetStaticAttributes@CModelDocModelModifier_ReplaceResourceReferenceSubstring@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_FollowerBone@?1??GetStaticAttributes@CModelDocClothFollowBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_FromName@?1??GetStaticAttributes@CModelDocMeshModifier_RenameStream@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
-.?AUCAttr_m_GraphName@?1??GetStaticAttributes@CModelDocAssociatedPulseGraph@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_GroupName@?1??GetStaticAttributes@CModelDocConfigElement_SetBodygroup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_GroupName@?1??GetStaticAttributes@CModelDocConfigElement_SetBodygroupOnAttachedModels@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_HitGroup@?1??GetStaticAttributes@CModelDocBasePhysicsShape@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -561,7 +561,6 @@ $name_$id
 .?AUCAttr_m_PrefixToMatch@?1??GetStaticAttributes@CModelDocMeshModifier_RenameBonePrefix@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_PrimaryAssociatedEntity@?1??GetStaticAttributes@CModelDocRoot@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_PrimaryRootBone@?1??GetStaticAttributes@CModelDocBoneMarkupList@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
-.?AUCAttr_m_PropGroupContents@?1??GetAttributeTable_CModelDocBreakPieceContentsStruct@CModelDocBreakPieceContentsStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_RenderMeshList@?1??GetStaticAttributes@CModelDocClothShapeSDF@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_RenderMeshList@?1??GetStaticAttributes@CModelDocPhysicsFromRender@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_RenderMode@?1??GetStaticAttributes@CModelDocRenderMeshMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -784,6 +783,7 @@ $name_$id
 .?AUCAttr_m_bHiddenInTools@?1??GetStaticAttributes@CModelDocBodyGroup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bHideMaterialGroupInTools@?1??GetStaticAttributes@CModelDocSpawnConfig@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bHideRenderColorInTools@?1??GetStaticAttributes@CModelDocSpawnConfig@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bHighPrecisionBlendWeights@?1??GetStaticAttributes@CModelDocRenderMeshMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bHighPrecisionTexCoords@?1??GetStaticAttributes@CModelDocRenderMeshMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bHighQuality@?1??GetStaticAttributes@CModelDocGroomMeshFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bIgnoreBackfaces@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpSelectFacesByAngle@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1016,6 +1016,7 @@ $name_$id
 .?AUCAttr_m_flBaseUpFriction@?1??GetStaticAttributes@CModelDocJiggleBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flBias@?1??GetStaticAttributes@CModelDocClothMapFilter@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flBiasToCenter@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_flBoneOverlayAmount@?1??GetStaticAttributes@CModelDocClothEffectStiffen@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flBoneWeight0@?1??GetStaticAttributes@CModelDocVSNAPParticle@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flBoneWeight1@?1??GetStaticAttributes@CModelDocVSNAPParticle@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flBoneWeight2@?1??GetStaticAttributes@CModelDocVSNAPParticle@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1195,6 +1196,7 @@ $name_$id
 .?AUCAttr_m_flShrinkPieces@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flSkinThreshold@?1??GetStaticAttributes@CModelDocVSNAPFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flSmoothDistance@?1??GetStaticAttributes@CModelDocModelModifier_FoliageVertexNormals@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_flSnapToGrid@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpVertexTransform@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flSpeedup@?1??GetStaticAttributes@CModelDocClothEffectSpeedup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flSpinAxisFriction@?1??GetStaticAttributes@CModelDocPhysicsJoint_Wheel@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flSpinDegrees@?1??GetStaticAttributes@CModelDocAnimForceBoneSpin@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1281,6 +1283,7 @@ $name_$id
 .?AUCAttr_m_nBlurRadius@?1??GetStaticAttributes@CModelDocClothShapeSDF@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nBodyGroupChoice@?1??GetStaticAttributes@CModelDocDistanceField@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nBodyGroupCount@?1??GetStaticAttributes@CModelDocModelContentDataBudgetLimit@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_nBodyOrder@?1??GetStaticAttributes@CModelDocPhysicsShapeList@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nBoneCount@?1??GetStaticAttributes@CModelDocModelContentDataBudgetLimit@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nBoneIndex0@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nBoneIndex1@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1363,6 +1366,7 @@ $name_$id
 .?AUCAttr_m_nLODCount@?1??GetStaticAttributes@CModelDocModelContentDataBudgetLimit@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nLastFrame@?1??GetStaticAttributes@CModelDocAnimGesture@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nLastFrame@?1??GetStaticAttributes@CModelDocAnimPosture@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_nLeaderType@?1??GetStaticAttributes@CModelDocClothFollowBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nLocalGravityCP@?1??GetStaticAttributes@CModelDocBreakPieceContents@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nLocalGravityCP@?1??GetStaticAttributes@CModelDocBreakPieceSimpleParticles@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nLoopEndFrame@?1??GetStaticAttributes@CModelDocAnimGesture@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1799,6 +1803,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttr@HVCModelDocClothEffectAnimEvent@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocClothEffectSkinnedCollider@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocClothEffectWind@@@@
+.?AV?$CBaseConcreteToolAttr@HVCModelDocClothFollowBone@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocClothMapFilter@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocClothNode@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocClothParams@@@@
@@ -1921,6 +1926,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectEdgesByLength@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectFacesByAngle@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@
+.?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpVertexTransform@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMeshSimplificationParams@@@@
@@ -2104,7 +2110,6 @@ $name_$id
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAnimTurn@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAnimatedMaterialAttribute@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAnimationList@@@@
-.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAssociatedPulseGraph@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAttachmentPreviewModel@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBaseAnimGraph2Reference@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBaseBoneListMeshModifer@@@@
@@ -2116,7 +2121,6 @@ $name_$id
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBoneMarkupList@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBoneRelativeNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceContents@@@@
-.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceContentsStruct@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceEmbedded@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceExternal@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceSimpleParticles@@@@
@@ -2294,6 +2298,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttr@W4AnimFrameRangeLerpType_t@@VCModelDocLocalHierarchy@@@@
 .?AV?$CBaseConcreteToolAttr@W4AttachmentType_t@CModelDocConfigElement_AttachedModel@@V2@@@
 .?AV?$CBaseConcreteToolAttr@W4BlendWeightsPerVertex_t@CModelDocRenderMeshMarkup@@V2@@@
+.?AV?$CBaseConcreteToolAttr@W4BodyOrder_t@CModelDocPhysicsShapeList@@V2@@@
 .?AV?$CBaseConcreteToolAttr@W4BoneCull_t@CModelDocBoneMarkupList@@V2@@@
 .?AV?$CBaseConcreteToolAttr@W4CollisionGroup_t@CModelDocBaseBreakPiece@@V2@@@
 .?AV?$CBaseConcreteToolAttr@W4CompressionLevel_t@CModelDocAclParameters@@V2@@@
@@ -2506,6 +2511,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocClothEffectAnimEvent@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocClothEffectSkinnedCollider@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocClothEffectWind@@@@
+.?AV?$CBaseConcreteToolAttrValue@HVCModelDocClothFollowBone@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocClothMapFilter@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocClothNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocClothParams@@@@
@@ -2628,6 +2634,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_MeshOpSelectEdgesByLength@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_MeshOpSelectFacesByAngle@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_MeshOpVertexTransform@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshSimplificationParams@@@@
@@ -2773,7 +2780,6 @@ $name_$id
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocAnimTurn@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocAnimatedMaterialAttribute@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocAnimationList@@@@
-.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocAssociatedPulseGraph@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocAttachmentPreviewModel@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocBaseAnimGraph2Reference@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocBaseBoneListMeshModifer@@@@
@@ -2785,7 +2791,6 @@ $name_$id
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocBoneMarkupList@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocBoneRelativeNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocBreakPieceContents@@@@
-.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocBreakPieceContentsStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocBreakPieceEmbedded@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocBreakPieceExternal@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocBreakPieceSimpleParticles@@@@
@@ -2963,6 +2968,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttrValue@W4AnimFrameRangeLerpType_t@@VCModelDocLocalHierarchy@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4AttachmentType_t@CModelDocConfigElement_AttachedModel@@V2@@@
 .?AV?$CBaseConcreteToolAttrValue@W4BlendWeightsPerVertex_t@CModelDocRenderMeshMarkup@@V2@@@
+.?AV?$CBaseConcreteToolAttrValue@W4BodyOrder_t@CModelDocPhysicsShapeList@@V2@@@
 .?AV?$CBaseConcreteToolAttrValue@W4BoneCull_t@CModelDocBoneMarkupList@@V2@@@
 .?AV?$CBaseConcreteToolAttrValue@W4CollisionGroup_t@CModelDocBaseBreakPiece@@V2@@@
 .?AV?$CBaseConcreteToolAttrValue@W4CompressionLevel_t@CModelDocAclParameters@@V2@@@
@@ -3176,6 +3182,7 @@ $name_$id
 .?AV?$CConcreteToolAttr@HVCModelDocClothEffectAnimEvent@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocClothEffectSkinnedCollider@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocClothEffectWind@@X@@
+.?AV?$CConcreteToolAttr@HVCModelDocClothFollowBone@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocClothMapFilter@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocClothNode@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocClothParams@@X@@
@@ -3298,6 +3305,7 @@ $name_$id
 .?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectEdgesByLength@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectFacesByAngle@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@X@@
+.?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_MeshOpVertexTransform@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_MeshOpVertexWeld@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_ScaleWrinkleMap@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocMeshSimplificationParams@@X@@
@@ -3481,7 +3489,6 @@ $name_$id
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocAnimTurn@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocAnimatedMaterialAttribute@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocAnimationList@@X@@
-.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocAssociatedPulseGraph@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocAttachmentPreviewModel@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocBaseAnimGraph2Reference@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocBaseBoneListMeshModifer@@X@@
@@ -3493,7 +3500,6 @@ $name_$id
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocBoneMarkupList@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocBoneRelativeNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceContents@@X@@
-.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceContentsStruct@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceEmbedded@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceExternal@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocBreakPieceSimpleParticles@@X@@
@@ -3671,6 +3677,7 @@ $name_$id
 .?AV?$CConcreteToolAttr@W4AnimFrameRangeLerpType_t@@VCModelDocLocalHierarchy@@X@@
 .?AV?$CConcreteToolAttr@W4AttachmentType_t@CModelDocConfigElement_AttachedModel@@V2@X@@
 .?AV?$CConcreteToolAttr@W4BlendWeightsPerVertex_t@CModelDocRenderMeshMarkup@@V2@X@@
+.?AV?$CConcreteToolAttr@W4BodyOrder_t@CModelDocPhysicsShapeList@@V2@X@@
 .?AV?$CConcreteToolAttr@W4BoneCull_t@CModelDocBoneMarkupList@@V2@X@@
 .?AV?$CConcreteToolAttr@W4CollisionGroup_t@CModelDocBaseBreakPiece@@V2@X@@
 .?AV?$CConcreteToolAttr@W4CompressionLevel_t@CModelDocAclParameters@@V2@X@@
@@ -3915,6 +3922,7 @@ $name_$id
 .?AV?$CConcreteToolAttrGetSet@HVCModelDocClothEffectAnimEvent@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCModelDocClothEffectSkinnedCollider@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCModelDocClothEffectWind@@@@
+.?AV?$CConcreteToolAttrGetSet@HVCModelDocClothFollowBone@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCModelDocClothMapFilter@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCModelDocClothNode@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCModelDocClothParams@@@@
@@ -4036,6 +4044,7 @@ $name_$id
 .?AV?$CConcreteToolAttrGetSet@MVCModelDocMeshModifier_MeshOpSelectEdgesByLength@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCModelDocMeshModifier_MeshOpSelectFacesByAngle@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCModelDocMeshModifier_MeshOpVertexTransform@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCModelDocMeshSimplificationParams@@@@
@@ -4177,7 +4186,6 @@ $name_$id
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocAnimTurn@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocAnimatedMaterialAttribute@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocAnimationList@@@@
-.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocAssociatedPulseGraph@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocAttachmentPreviewModel@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocBaseAnimGraph2Reference@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocBaseBreakPiece@@@@
@@ -4188,7 +4196,6 @@ $name_$id
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocBoneMarkupList@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocBoneRelativeNode@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocBreakPieceContents@@@@
-.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocBreakPieceContentsStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocBreakPieceEmbedded@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocBreakPieceExternal@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCModelDocBreakPieceSimpleParticles@@@@
@@ -4358,6 +4365,7 @@ $name_$id
 .?AV?$CConcreteToolAttrGetSet@W4AnimFrameRangeLerpType_t@@VCModelDocLocalHierarchy@@@@
 .?AV?$CConcreteToolAttrGetSet@W4AttachmentType_t@CModelDocConfigElement_AttachedModel@@V2@@@
 .?AV?$CConcreteToolAttrGetSet@W4BlendWeightsPerVertex_t@CModelDocRenderMeshMarkup@@V2@@@
+.?AV?$CConcreteToolAttrGetSet@W4BodyOrder_t@CModelDocPhysicsShapeList@@V2@@@
 .?AV?$CConcreteToolAttrGetSet@W4BoneCull_t@CModelDocBoneMarkupList@@V2@@@
 .?AV?$CConcreteToolAttrGetSet@W4CollisionGroup_t@CModelDocBaseBreakPiece@@V2@@@
 .?AV?$CConcreteToolAttrGetSet@W4CompressionLevel_t@CModelDocAclParameters@@V2@@@
@@ -4567,6 +4575,7 @@ $name_$id
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@HVCModelDocClothEffectAnimEvent@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@HVCModelDocClothEffectSkinnedCollider@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@HVCModelDocClothEffectWind@@@@@@
+.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@HVCModelDocClothFollowBone@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@HVCModelDocClothMapFilter@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@HVCModelDocClothNode@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@HVCModelDocClothParams@@@@@@
@@ -4687,6 +4696,7 @@ $name_$id
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectEdgesByLength@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectFacesByAngle@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@@@
+.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpVertexTransform@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@MVCModelDocModelModifier_FoliageVertexNormals@@@@@@
@@ -4858,7 +4868,6 @@ $name_$id
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAnimTurn@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAnimatedMaterialAttribute@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAnimationList@@@@@@
-.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAssociatedPulseGraph@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocAttachmentPreviewModel@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBaseAnimGraph2Reference@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocBaseBoneListMeshModifer@@@@@@
@@ -5042,6 +5051,7 @@ $name_$id
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@W4AnimFrameRangeLerpType_t@@VCModelDocLocalHierarchy@@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@W4AttachmentType_t@CModelDocConfigElement_AttachedModel@@V2@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@W4BlendWeightsPerVertex_t@CModelDocRenderMeshMarkup@@V2@@@@@
+.?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@W4BodyOrder_t@CModelDocPhysicsShapeList@@V2@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@W4BoneCull_t@CModelDocBoneMarkupList@@V2@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@W4CollisionGroup_t@CModelDocBaseBreakPiece@@V2@@@@@
 .?AV?$CConcreteToolAttrSaveLoadHelper@V?$CBaseConcreteToolAttr@W4CompressionLevel_t@CModelDocAclParameters@@V2@@@@@
@@ -5336,6 +5346,7 @@ $name_$id
 .?AV?$CToolAttrGetSetAccess@HVCModelDocClothEffectAnimEvent@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocClothEffectSkinnedCollider@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocClothEffectWind@@@@
+.?AV?$CToolAttrGetSetAccess@HVCModelDocClothFollowBone@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocClothMapFilter@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocClothNode@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocClothParams@@@@
@@ -5457,6 +5468,7 @@ $name_$id
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_MeshOpSelectEdgesByLength@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_MeshOpSelectFacesByAngle@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@
+.?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_MeshOpVertexTransform@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMeshSimplificationParams@@@@
@@ -5598,7 +5610,6 @@ $name_$id
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocAnimTurn@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocAnimatedMaterialAttribute@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocAnimationList@@@@
-.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocAssociatedPulseGraph@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocAttachmentPreviewModel@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocBaseAnimGraph2Reference@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocBaseBreakPiece@@@@
@@ -5609,7 +5620,6 @@ $name_$id
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocBoneMarkupList@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocBoneRelativeNode@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocBreakPieceContents@@@@
-.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocBreakPieceContentsStruct@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocBreakPieceEmbedded@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocBreakPieceExternal@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocBreakPieceSimpleParticles@@@@
@@ -5779,6 +5789,7 @@ $name_$id
 .?AV?$CToolAttrGetSetAccess@W4AnimFrameRangeLerpType_t@@VCModelDocLocalHierarchy@@@@
 .?AV?$CToolAttrGetSetAccess@W4AttachmentType_t@CModelDocConfigElement_AttachedModel@@V2@@@
 .?AV?$CToolAttrGetSetAccess@W4BlendWeightsPerVertex_t@CModelDocRenderMeshMarkup@@V2@@@
+.?AV?$CToolAttrGetSetAccess@W4BodyOrder_t@CModelDocPhysicsShapeList@@V2@@@
 .?AV?$CToolAttrGetSetAccess@W4BoneCull_t@CModelDocBoneMarkupList@@V2@@@
 .?AV?$CToolAttrGetSetAccess@W4CollisionGroup_t@CModelDocBaseBreakPiece@@V2@@@
 .?AV?$CToolAttrGetSetAccess@W4CompressionLevel_t@CModelDocAclParameters@@V2@@@
@@ -5955,7 +5966,6 @@ $name_$id
 .?AV?$CToolAttrGetSetAccess@_NVCModelDocVSNAPFile@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCRenderMeshSimplifyParams@@@@
 .?AV?$CToolAttrKV3FGDProvider@VCModelDocAnimEvent@@@@
-.?AV?$CToolAttrKV3FGDProvider@VCModelDocAssociatedPulseGraph@@@@
 .?AV?$CToolAttrKV3FGDProvider@VCModelDocGenericGameData@@@@
 .?AV?$CUtlOrderedSet@PEAVCModelDocNode@@@@
 .?AV?$IToolAttrConcreteDataAccess@H@@
@@ -5992,6 +6002,7 @@ $name_$id
 .?AV?$IToolAttrConcreteDataAccess@W4AnimFrameRangeLerpType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4AttachmentType_t@CModelDocConfigElement_AttachedModel@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4BlendWeightsPerVertex_t@CModelDocRenderMeshMarkup@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4BodyOrder_t@CModelDocPhysicsShapeList@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4BoneCull_t@CModelDocBoneMarkupList@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4CollisionGroup_t@CModelDocBaseBreakPiece@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4CompressionLevel_t@CModelDocAclParameters@@@@
@@ -6053,6 +6064,7 @@ $name_$id
 .?AV?$IToolAttr_TypedValue@W4AnimFrameRangeLerpType_t@@@@
 .?AV?$IToolAttr_TypedValue@W4AttachmentType_t@CModelDocConfigElement_AttachedModel@@@@
 .?AV?$IToolAttr_TypedValue@W4BlendWeightsPerVertex_t@CModelDocRenderMeshMarkup@@@@
+.?AV?$IToolAttr_TypedValue@W4BodyOrder_t@CModelDocPhysicsShapeList@@@@
 .?AV?$IToolAttr_TypedValue@W4BoneCull_t@CModelDocBoneMarkupList@@@@
 .?AV?$IToolAttr_TypedValue@W4CollisionGroup_t@CModelDocBaseBreakPiece@@@@
 .?AV?$IToolAttr_TypedValue@W4CompressionLevel_t@CModelDocAclParameters@@@@
@@ -6114,6 +6126,7 @@ $name_$id
 .?AV?$_Func_base@XPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
+.?AV?$_Func_base@XPEBDPEAVCBufferString@@@std@@
 .?AV?$_Func_base@XVHToolAttrTableInstance@@PEBVIBaseToolAttr@@PEAV?$CUtlVector@UToolAttrGenericChoice_t@@HV?$CUtlVectorMemory_Growable@UToolAttrGenericChoice_t@@H$0A@@@@@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
@@ -6127,6 +6140,7 @@ $name_$id
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
+.?AV?$_Func_impl_no_alloc@P6AXPEBDPEAVCBufferString@@@ZXPEBDPEAV1@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_10>@?M@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_11>@?N@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_12>@?O@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
@@ -6300,7 +6314,6 @@ $name_$id
 .?AVCModelDocAnimatedMaterialAttributeColor@@
 .?AVCModelDocAnimatedMaterialAttributeValue@@
 .?AVCModelDocAnimationList@@
-.?AVCModelDocAssociatedPulseGraph@@
 .?AVCModelDocAtom@@
 .?AVCModelDocAttachment@@
 .?AVCModelDocAttachmentBase@@
@@ -6827,6 +6840,7 @@ $name_$id
 .P6AXPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
+.P6AXPEBDPEAVCBufferString@@@Z
 .Vq6_
 .\r?hideEvent@QMenu@@MEAAXPEAVQHideEvent@@@Z
 .\v?event@QAbstractItemView@@MEAA_NPEAVQEvent@@@Z
@@ -6859,9 +6873,9 @@ $name_$id
 0R@ffffF(
 0\fXr
 0\r%0t
-0\tV_frexpf
 0fF@
 0fKVE8
+0pI[
 0x%1
 0x%p = %s '%s'
 0|DL
@@ -6925,8 +6939,7 @@ $name_$id
 2\nYH
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp@wh
-2\vpL
+2\vppI[
 2_BONE_IK
 2aboutToShow()
 2changed()
@@ -7045,7 +7058,6 @@ $name_$id
 44T{
 4@G8-x
 4AffffN
-4Ckeys
 4I6A
 4KNb
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
@@ -7128,6 +7140,7 @@ $name_$id
 9D7V=
 9Px? FcH
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
+9\tV_frexpf
 9jsA{
 9n@3333
 9rIz
@@ -7171,6 +7184,7 @@ $name_$id
 <font color=yellow>Unknown (default)</font>
 <map_key>
 <map_value>
+<non-RTTI type>
 <p>Loads a content file containing animation keyframe data and resolves into animation data which plays in reverse, i.e. backwards.</p><p>Works the same as AnimFile except the direction of the animation data.</p><p>When specifying a sub frame range, the frame range is pulled from the animation file before reversal.</p><p>For a typical walk style animation with extracted motion, likely an AnimAlign to first frame of the original forward animation will be required.</p>
 <pair_a> 
 <pair_b> 
@@ -7181,10 +7195,8 @@ $name_$id
 ================================================================================\n\n
 =C8f
 =CAnimFoot
-=animgraph_incompatible
 =wf@j
 >"?IsValid@FbxProperty@fbxsdk@@QEBA_NXZ
->Hull
 >Wdw@
 >rkR
 >tA}K
@@ -9069,6 +9081,7 @@ Alpha decoder initialization failed.
 Also Missing Exclusive Detail Layers
 Also select faces using any of these additional materials.
 AlternateBase
+Am_flOffset
 Am_nParticle
 Ambient Occlusion Map
 Ambient Occlusion Map Power
@@ -9219,9 +9232,10 @@ Asset Directory
 Asset Preview System
 Asset System
 Asset System Disabled
+AssetBrowse( %s )
 AssetBrowse( vnmclip )
 AssetBrowse( vnmgraph )
-AssetBrowse( vpulse, *extraFilterString=(pulse_domain=ServerEntity)pulse_domain_subtype=prop_physics|pulse_domain_subtype=prop_ragdoll|pulse_domain_subtype=prop_dynamic )
+AssetBrowse()
 Assetsystem Startup Modal Dialog
 Assign A Channel
 Assign B Channel
@@ -9240,10 +9254,9 @@ Assigns a color value to a material attribute over a frame range.
 Assigns a floating point value to a material attribute over a frame range.
 Assigns all vertex weights to the specified bone.
 AssocQueryStringA
-AssociatedPulseGraph
 Associates a semantic identifier with an animgraph2 used by this model.
 At least one LOD must be selected.\n
-AtlasToVolumeTextureConversion(3093): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
+AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attach Point
 Attach to Morphing Base Mesh
 AttachedSoundEvent
@@ -9395,9 +9408,12 @@ Blend Weights Per Vertex
 Blocked save of settings: %s\n
 Blur Radius
 Bm_Plane
+Bodies are ordered by bone depth (root bone body is first)
+Bodies are ordered the way their shapes appear in the shape list 
 Body Collection
 Body Group Choice
 Body Group Name
+Body Order
 BodyGroupList
 Bone '%s' already existed in the bind pose
 Bone '%s' already existed in the mesh
@@ -9409,9 +9425,11 @@ Bone 1
 Bone 2
 Bone 3
 Bone Cull Type
+Bone Depth
 Bone Influence Filter
 Bone Influence Filter Threshold
 Bone Input :: 
+Bone Merge (Ex)
 Bone Names
 Bone Rename failed, results in duplicate bone '%s' in this animation
 Bone Rename failed, results in duplicate bones in this animation
@@ -9423,6 +9441,7 @@ Bone flags markup data
 Bone name
 Bone names must differ
 Bone or Attachment
+Bone-Direct
 BoneConstraintRbf :: Cannot find input bone "%s" :: %s\n
 BoneConstraintRbf :: Cannot find output bone "%s" :: %s\n
 BoneConstraintRbf :: Invalid input %d or output %d bone count :: %s\n
@@ -9431,6 +9450,7 @@ BoneConstraintRbf :: output bone count %d != output pose count %d :: %s\n
 BoneMarkup
 BoneMarkupList
 BoneName
+BoneOverlay
 BoneRelativeNode
 BoneReplacements
 Bonemerged
@@ -9446,8 +9466,6 @@ Bounds Hull
 Bounds Maxs
 Bounds Mins
 Bounds View
-BoundsOffset
-BoundsScale
 Box De-Select (
 Box Dimensions
 Box Primitive
@@ -9514,6 +9532,7 @@ CDualHullAgglomerator: Degenerate topology, %d faces removed\n
 CEntityIndex
 CFALayout
 CFAPlaneColor
+CFaces
 CFbxSystem::GetFbxManager
 CGlobalHotkeyCommands
 CGlobalSymbol
@@ -9591,7 +9610,6 @@ CModelDocAnimatedMaterialAttribute
 CModelDocAnimatedMaterialAttributeColor
 CModelDocAnimatedMaterialAttributeValue
 CModelDocAnimationList
-CModelDocAssociatedPulseGraph
 CModelDocAtom
 CModelDocAttachment
 CModelDocAttachmentBase
@@ -9772,7 +9790,7 @@ CModelDocModelModifier_FoliageVertexNormals
 CModelDocModelModifier_FoliageVertexNormals: Computing...
 CModelDocModelModifier_FoliageVertexNormals: Computing...\n
 CModelDocModelModifier_FoliageVertexNormals: Mesh %d/%d...\n
-CModelDocModelModifier_FoliageVertexNormals::OperatorSmoothByDistance(), C:\buildworker\csgo_rel_win64\build\src\modeldoc_lib\modeldoc_modelmodifier.cpp:1147
+CModelDocModelModifier_FoliageVertexNormals::OperatorSmoothByDistance(), C:\buildworker\csgo_rel_win64\build\src\modeldoc_lib\modeldoc_modelmodifier.cpp:1148
 CModelDocModelModifier_GenerateDecalUVs
 CModelDocModelModifier_RenameBone
 CModelDocModelModifier_ReplaceResourceReferenceSubstring
@@ -9848,7 +9866,6 @@ CModelDocVSNAPParticle
 CModelDocWristBone
 CModelMaterialGroupName
 CModelMesh Index Buffer
-CModelMeshBufferData_t
 CModelMeshRenderData::BuildVertexBuffersForMaterialGroups(732): 
 CModelMeshVertexBuffer
 COMMAND_TEXT_MODE_BUTTON
@@ -9919,6 +9936,7 @@ CQTreeWidgetWithHover
 CQWidgetDebugHighlight
 CQWidgetDebugger
 CRenderMeshSimplifyParams
+CRenderMeshSlotType_t
 CResourceNameTyped
 CStrongHandle
 CStrongHandleCopyable
@@ -9952,17 +9970,13 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CSceneObjectData::RTProxyDraw
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<unsigned short,int,class CMemAllocAllocator>,unsigned short,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<class CSceneObjectData,1,int,class CMemAllocAllocator>,class CSceneObjectData,int>::InsertBeforeGetPtr
 CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::AddPage
-CUtlRBTree<struct CUtlOrderedMapBase<char const *,struct empty_t,class CDefFastCaselessStringLess,int>::Node_t,class CUtlOrderedMapBase<char const *,struct empty_t,class CDefFastCaselessStringLess,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<char const *,struct empty_t,class CDefFastCaselessStringLess,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class EngineToolID_t,class CUtlVector<struct AssetOpenRequest_t,int,class CUtlVectorMemory_Growable<struct AssetOpenRequest_t,int,0> > *,class CDefLess<class EngineToolID_t>,int>::Node_t,class CUtlOrderedMapBase<class EngineToolID_t,class CUtlVector<struct AssetOpenRequest_t,int,class CUtlVectorMemory_Growable<struct AssetOpenRequest_t,int,0> > *,class CDefLess<class EngineToolID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class EngineToolID_t,class CUtlVector<struct AssetOpenRequest_t,int,class CUtlVectorMemory_Growable<struct AssetOpenRequest_t,int,0> > *,class CDefLess<class EngineToolID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class ExternalToolID_t,class CUtlVector<struct AssetOpenRequest_t,int,class CUtlVectorMemory_Growable<struct AssetOpenRequest_t,int,0> > *,class CDefLess<class ExternalToolID_t>,int>::Node_t,class CUtlOrderedMapBase<class ExternalToolID_t,class CUtlVector<struct AssetOpenRequest_t,int,class CUtlVectorMemory_Growable<struct AssetOpenRequest_t,int,0> > *,class CDefLess<class ExternalToolID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class ExternalToolID_t,class CUtlVector<struct AssetOpenRequest_t,int,class CUtlVectorMemory_Growable<struct AssetOpenRequest_t,int,0> > *,class CDefLess<class ExternalToolID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::Node_t,class CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,class CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum CQTabbedStyle::ColorRole,class CStyleColorData_Item,class CDefLess<enum CQTabbedStyle::ColorRole>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
+CUtlStringToken
 CUtlStringTokenWithStorage
 CW Limit
 CWeakHandle
@@ -10324,13 +10338,14 @@ CurrentPreProfileMatrix
 Curvature
 Curvature Drop Amount
 Curvature Drop Distance
-CurveEditor
 CurveEditor( { extended=true input_name="Frame" output_name="Value" } ) 
 Cut Max
 Cut Min
 Cycle Start Frame
 Cycle Type
 Cylinder
+Cylinder - Centered (SLOW PERF)
+Cylinder - Ground (SLOW PERF)
 Cylinder: %s
 D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D [%.2f, %.2f] G [%.2f, %.2f]\n
@@ -10375,8 +10390,10 @@ DecodeHemiOctahedronNormal flat normal using %.8f: %f %f %f\n
 DefRawInputProc
 Default (No Name)
 Default (No RGB Tint)
+Default Entity Static
 Default Gravity Scale
 Default Root Bone Name
+Default to old body ordering for now
 Default: %s
 DefaultAnimGraph2
 DefaultButtonBackground
@@ -10575,6 +10592,7 @@ End Frame Number
 End Loop
 End mouse capture [%i] due to hidden widget\n
 End mouse capture [%i]: %s\n
+EnsureCapacity
 Enter
 Entity Class Override
 EnumArray
@@ -10608,6 +10626,7 @@ Essential Piece
 EstimateStripByteCounts
 Euler Offset XYZ
 Euler XYZ
+Event Class
 Exact
 Example %1: (showing %2 of %3)\n
 Example %1:\n
@@ -10737,7 +10756,6 @@ Faceposer folder name
 FaceposerFolder
 FaceposerKeys
 FaceposerMarkupBase
-Faces
 Faces, 
 Fade In Time
 Fade Max Dist
@@ -10745,8 +10763,8 @@ Fade Min Dist
 Fade Out Time
 Fade Time
 Fail on empty
-Failed to allocate an instance of a class
-Failed to allocate an instance of class '%s'
+Failed to allocate an instance of a class of type '%s'
+Failed to allocate an instance of class '%s' (type '%s')
 Failed to allocate field info array
 Failed to allocate memory for %s (%ld elements of %ld bytes each)
 Failed to allocate mesh edges for mesh, maximum edge count %i has been reached.\n
@@ -10797,6 +10815,7 @@ Failed to save document kv3 data: %s\n
 Failed to save material file.\n
 Failed to save modeldoc file. (error %s)\n
 Failed to save settings: %s (%s)\n
+Failed to save texture settings file: %s\n
 Failed to serialize document state to kv3 data.
 Failed to start buildwatch.exe
 Failed to store metadata in model. (error %s)\n
@@ -10831,6 +10850,7 @@ Filename %s specifies extension '%s', but this node will generate a '%s'. You ca
 Filename of the additional animation file to be merged into the resulting animation
 FillOrder
 Filter:
+FilterApplied
 Final animation consists of A, Crossfade, B
 Find String
 Find and replace in resource references across the document (NOTE: Some references like materialgroups may be missed with the current implementation.)
@@ -10870,11 +10890,11 @@ Flip Bone Forward
 Flip Direction
 Flip the forward (x) axis direction of bones
 Float Bitmap Failure
-FloatBitMap_t::ConvertLinearToGamma(409): Conversion not supported yet!\n
-FloatBitMap_t::LoadFromFile(3285): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
+FloatBitMap_t::ConvertLinearToGamma(607): Conversion not supported yet!\n
+FloatBitMap_t::LoadFromFile(3729): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
 FloatBitMap_t::LoadFromFloatBitmap: Received improper bitmap size, skipping!\n
-FloatBitMap_t::LoadFromTGA(2234): Error loading %s\n
-FloatBitMap_t::MapRGBParallel(), C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp:2807
+FloatBitMap_t::LoadFromTGA(2678): Error loading %s\n
+FloatBitMap_t::MapRGBParallel(), C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp:3251
 FloatBitMap_t::WriteInMemoryEXRFast
 FloatBitMap_t::WriteInMemoryEXRFast(), C:\buildworker\csgo_rel_win64\build\src\bitmap\tinyexr_impl.cpp:170
 Floating point "Predictor" not supported with %d data format
@@ -10945,7 +10965,6 @@ G:\dev\source2\main\content\hlx\materials\particle\test\test_shlit_alpha.exr
 GHQ%
 GPSIFDOffset
 GQ\f5
-G\f%G47
 G\v?event@QHeaderView@@MEAA_NPEAVQEvent@@@Z
 Game Motion Smoothing
 GameDataList
@@ -11008,6 +11027,7 @@ Goal Strength
 Goal Strength Bias
 Goal Strength Scale
 Gp#e
+Gradient()
 Graphs CIE1931 functions to make sure they look right
 Graphs the old broken filter kernel and candidates for new ones
 Gravity Multiplier
@@ -11074,7 +11094,7 @@ Height Target
 Height Tolerance
 Height of the primitive to project normals from.
 Helper for previewing how a model may attach to the given attachment. Does NOT affect the compiled model.
-HelperLoadFbmByFileExtension(3065): Error! Unknown file type for %s\n
+HelperLoadFbmByFileExtension(3509): Error! Unknown file type for %s\n
 Hidden
 Hide Materialgroup in Tools
 Hide Render Color in Tools
@@ -11116,10 +11136,12 @@ How many iterations this solvers hould use.
 How much the joint tries to drive back to bind pose
 How much to consider facing angle in occlusion.
 How quickly the elasticity target pose changes to match the current pose
+How should the bodies, created by these shapes, be ordered in the final model
 How the end effector should be rotated after the solve.
 Hp#e
 Ht*t
 HuV@
+Hull
 Hull Per Element
 Hull Per Mesh
 Hull Too Complex for Runtime (%d verts, %d edges, %d faces)
@@ -11157,6 +11179,7 @@ If Lerp Type is Full Frame Range, this is the fixed scale value applied, the cur
 If animation has been subtracted in ModelDoc to create an additive animation to be used with AnimGraph, set this to true
 If any faces with a given material are selected, expand the selection to include ALL faces using those materials.
 If enabled writes the modified normals into a separate vertex stream to be used by the shader. Otherwise modifies meshes original normals.
+If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 If set, considers failure cases to be errors. Failures are warnings by default.
 If set, the offset of the extracted motion channels from the origin is removed and stored as a queryable value on the animation
 If set, this config will be active by default when the model open in the editor.
@@ -11463,6 +11486,7 @@ Layer0
 Lc tu
 Lc@H
 Leader Bone
+Leader Type
 Leaf Only
 Leave Body Collision Unmodified
 Left pose, i.e. frame 0 from the 3 frame turn animation file with frame 1 subtracted :: %s
@@ -11557,6 +11581,7 @@ MAlternateSemanticName
 MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
 MENU
+MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
@@ -11572,6 +11597,7 @@ MPropertyAttributeEditorOverride
 MPropertyAutoExpandSelf
 MPropertyColorPlusAlpha
 MPropertyCustomEditor
+MPropertyFGDFromAssetKeysFromOtherField
 MPropertyFlattenIncludeLabel
 MPropertyFlattenIntoParentRow
 MPropertyFlattenStretchFactor
@@ -11669,6 +11695,7 @@ Max Pitch
 Max Range/Radius
 Max Steering Angle
 Max Suspension Offset
+Max Texture Resolution: None
 Max Twist Angle
 Max U
 Max V
@@ -11711,11 +11738,11 @@ Mesh  Min/Max :: %8.4f, %8.4f R :: %8.4f %8.4f C :: %8.4f %8.4f\n
 Mesh & Skeleton
 Mesh Filter Affects Duplicate Input Mesh Names, %s -> %s
 Mesh Operation Stack
-Mesh also used by %s: %s but use 8 joint weights per vertex, unsupported by %s
+Mesh also used by %s: %s but uses 8 or 12 joint weights per vertex, unsupported by %s
 Mesh contains %d blend weights per vertex;  truncating to %d\n
 Mesh has %i > %i floats of attributes, unable to apply all weightings.
 Mesh node name
-Mesh used is tagged to use 8 joint weights per vertex, unsupported by %s
+Mesh used is tagged to use 8 or 12 joint weights per vertex, unsupported by %s
 MeshDrawOrder
 MeshFileReferenceEditor
 MeshID
@@ -11921,6 +11948,7 @@ No bone named :: %s in modeldoc, CSkeletonpose mismatch?
 No but transfer UVs
 No component selection made; node will have no effect.
 No conversion from KV3 to variant type %d (%s)
+No destructible hit group set up for hitgroup '%s'; this anim event should be removed/disabled!
 No edges selected by length threshold.
 No faces selected by facing angle.
 No faces selected.
@@ -11954,6 +11982,7 @@ No support for converting user data format to LogLuv
 No vertex attribute name specified
 No vertices selected by index and weight threshold.
 NoCollapse
+NoEditor()
 NoRole
 Node '%s' not allowed in this document type (%s)
 Node Name
@@ -11975,7 +12004,6 @@ Non-unique animation %s stream name :: %s
 Nonstandard tile length %d, convert file
 Nonstandard tile width %d, convert file
 Normal Attribute Simplification Weight
-NormalBias
 Normal\n
 Not a TIFF file, bad magic number %d (0x%x)
 Not a TIFF file, bad version number %d (0x%x)
@@ -12122,6 +12150,7 @@ Override Vector
 Override all mesh normals with a specific vector.
 Override bone scale information on an animation
 Override model bounds.
+Override sound is invalid.
 Override surface property for auto-created physics. (Default behavior is to pick the first surfaceprop in the parent document.)
 Override the health this external piece will spawn with regardless of the VMDL propdata. (For embedded pieces, just add propdata child node.)
 Override the mass this embedded piece will spawn with regardless of the VMDL propdata.
@@ -12150,7 +12179,6 @@ PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
 PackToSharedVB
-PackedBlobNormal
 Packing Material Particle System
 Packing Material Volume scale - to have more or less contents
 PageName
@@ -12322,6 +12350,7 @@ PredictorEncodeTile
 PredictorSetup
 Prefab
 Prefab [%s]
+Prefab target file '%s' not found
 PrefabList
 Preferred
 Prefix to Match
@@ -12353,14 +12382,11 @@ Proceed?
 Product Name: %s\n
 Project From Primitive
 Projected Primitive
-Prop Group for Physics Particles
 Prop Physics Models have Prop Data and Distance Fields, whereas Prop Static Models do not.\nProp Physics and Prop Static Models also have distinct surface property choices.
-Prop group for spawned physics particles
 PropWorldOrigin
 Properties
 Property '%s.%s' not writable
 Prune pieces < error threshold
-Pulse Graph
 Push Out
 Push mesh faces outward along their local normal. Optionally build shell geometry.
 PushBack
@@ -12436,6 +12462,7 @@ QtWarningMsg: %s\n
 Quad Bend Tolerance
 Quadratic
 Quadric Error Metric
+Quantize the transform centroid position to the given modulus.
 Quaternion
 QuaternionStorage
 Quickhull got into an impossible state and failed
@@ -12504,15 +12531,16 @@ R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RBF Based Anim Constraint
+RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RMouse
 RMouseDoubleClick
 ROTATION
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fppI[
 R\n@Z*oG8
 R\r?hitTestComplexControl@QProxyStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vpL
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Radial Basis Function Type
@@ -12546,7 +12574,6 @@ Red is the filter we shipped in HL:A (gaussian, with input erraneously squared),
 Reduce how bouncy the joint is
 ReductionMatrix1
 ReductionMatrix2
-Reference to a Pulse file to be run on this model entity.
 Reference to a content file that will append its contents to a parent render mesh file node.
 Reference to a content file that will resolve to one or more animations. (Plus additional document nodes such as skeleton bones etc.)
 Reference to a content file that will resolve to one or more bone nodes to define a skeleton.
@@ -12698,6 +12725,7 @@ STANDIN: %1
 SUh 
 S\v?event@QMessageBox@@MEAA_NPEAVQEvent@@@Z
 Safeguard against producing a model outside budgetary limits.
+Same Model (In)
 Sample Count
 Sample Rays
 Sample bitmap data using input UV channel and bake it to the output face vertex data channel.
@@ -12811,6 +12839,7 @@ Settings for the character's speeds in different situations and movement setting
 Shadow
 ShadowScale
 ShadowWarp %dx%d\n
+Shape List
 Shapes
 Shapes controlled by this incremental control
 Shapes not on this node will not be part of the detail layer automatically<br><br><em>(NOTE: PhysicsDetailLayer always enables this )</em>
@@ -12889,6 +12918,7 @@ Smooth Iterations
 Smooth Normals Across UV Seams
 Smooth Rate
 Smooth Vertex Normals
+Snap to grid
 SnapshotVertexExtraction
 Soft Link
 Softbody
@@ -13084,6 +13114,7 @@ Target Hair Count
 Target Name
 Target Resource Name
 Target Triangle Percent
+TargetCastForModify
 TargetPrinter
 Team1
 Team2
@@ -13191,6 +13222,8 @@ This is a BigTIFF file.  This format not supported\nby this version of libtiff.
 This is an Euler Rotation in degrees in XYZ order.
 This is the bone that will used for motion extraction. If the specified bone does not exist or is unspecified, it will fall back to looking at the AnimationList parent for a root bone name. If the AnimationList root motion bone is unspecified or doesn't exist, it will fall back to using the first bone without a parent in the skeleton which is the first bone. <br><b>NOTE</b>: The first bone in the skeleton can be controlled via the BoneFlags singleton node
 This model will fail to compile outside a development environment.
+This value is optional. Click to set.
+This value is optional. Click to unset.
 This value is set when the morph control is created via mesh loading and not explictly created by the user
 Threshholding
 Threshold value to use when detecting if translation tracks are constant or default. In game units, i.e. inches
@@ -13294,6 +13327,12 @@ UICameraRotation
 UI\tf
 UM0'
 UN{J
+UPSCALER_AMD_FSR2
+UPSCALER_AMD_FSR3
+UPSCALER_COUNT
+UPSCALER_INTEL_XESS
+UPSCALER_NONE
+UPSCALER_NVIDIA_DLSS
 UV Attribute Simplification Weight
 UV Map Box
 UV Map Cylinder
@@ -13303,7 +13342,6 @@ UV Map Planar Custom
 UV Mapping
 U\8h(
 U\r?home@QTextBrowser@@UEAAXXZ
-U\tV_logd
 U\v?event@QPlainTextEdit@@MEAA_NPEAVQEvent@@@Z
 Udt@R
 Un-inertial Rods
@@ -13378,6 +13416,7 @@ UpdateFilenames
 UpdateMenu
 UpdateSurfaceProperties
 UpperLine
+UpscalerType_t
 Usage: "%s R G B" where R, G, B are integers in the range [0,255]\n
 Usage: gfx_generate_ao_cone_response <cone-angle>\n
 Usage: gfx_generate_ao_sphere_response <resolution> <min> <exp> <cutoff> <cutoff-width>\n
@@ -13392,6 +13431,7 @@ Use Expensive Tangents
 Use Flat Color
 Use For Collision
 Use For Occlusion
+Use High Precision Blend Weights
 Use High Precision TexCoords
 Use High Precision/Expensive Texcoords
 Use Layer Sequence
@@ -13400,7 +13440,9 @@ Use Per-Node Local Force and Rotation
 Use Pole Vector for Axis
 Use RenderMesh List
 Use UV2 for Lightmap Charting
+Use World Space Up
 Use a higher quality solver for this joint. Improves accuracy / stiffness but increases CPU cost.
+Use for faces
 UseBaseVertex
 UseTintColor
 User  Neg/Pos :: %8.4f, %8.4f\n
@@ -13418,6 +13460,8 @@ V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VAffff&
 VBwI
+VDataChoice( %s )
+VDataChoice()
 VNOTIFY_DISABLE
 VNotify
 VNotify Abandoned (ActiveProtocolIsNewer)\n
@@ -13578,6 +13622,7 @@ WhitePoint
 Widget Debugger
 Widget Properties
 Width Target
+Will use the second uv channel in the model to generate lightmap uvs.  This can help improve the quality of lightmap uvs by providing a better unwrap that has fewer shards and generates fewer charts.
 Wind Speed, mph
 Windage Normal
 Windage Tangent
@@ -13767,6 +13812,7 @@ Z}uU
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n?deselect@QLineEdit@@QEAAXXZ
 \f\r?heightForWidth@QFormLayout@@UEBAHH@Z
+\f\tV_acosd
 \mEQ
 \n================================================================================\n
 \n?bits@QImage@@QEAAPEAEXZ
@@ -13823,12 +13869,10 @@ Z}uU
 \nFMu@
 \nFQu@
 \nFas@
-\nPUZ
 \n\nThe chosen shader doesn't have an input for this texture.\nIf selected, this texture will be copied, but not used.
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \ng default\n
 \nh"lx
-\ntJZ
 \r/9AF
 \r?dark@QPalette@@QEBAAEBVQBrush@@XZ
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
@@ -13858,7 +13902,6 @@ Z}uU
 \rModelDoc
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
-\r\tV_atofloat64
 \t6\t9J
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?alphaF@QColor@@QEBANXZ
@@ -13885,10 +13928,9 @@ Z}uU
 \tR)v4N
 \tR)v4n
 \tT?parent@QWindow@@QEBAPEAV1@XZ
-\tV_acosd
 \tV_atan2d
+\tV_atofloat64
 \tV_cosd
-\tV_expd
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\t\t\t\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\v?brushOrigin@QPainter@@QEBA?AVQPoint@@XZ
@@ -13922,6 +13964,7 @@ Z}uU
 \vM8@0
 \vV?ffff
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
+\vppI[
 \|e9d
 ]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]Kyw@
@@ -14018,6 +14061,7 @@ _zero
 `TRg
 `TRge@
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
+`\tV_logd
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 `awpf*
 `obH
@@ -14032,7 +14076,6 @@ aA3333)
 aS@D
 aT,@J
 aTR' 
-a\tV_powd
 a\tZ7
 a\v?event@QSplashScreen@@MEAA_NPEAVQEvent@@@Z
 aardvark
@@ -14141,6 +14184,7 @@ animgraph_attribute
 animgraph_compatibility_check
 animgraph_compatibility_force
 animgraph_enum
+animgraph_incompatible
 animgraph_public_name
 animturn
 anklebone
@@ -14168,6 +14212,7 @@ asset id
 asset name
 assetTag
 asset_fgd_example
+asset_specific_keys_source
 assetbrowser
 assetpreview
 assetpreviewsystem
@@ -14180,7 +14225,6 @@ assign_r
 assign_to_all
 assign_to_all_faces
 associated_key
-associated_vpulse
 ati_compress_wrapper.dll
 attach_material
 attach_mesh
@@ -14257,6 +14301,7 @@ bias_to_center
 biased
 bin/enginetools.txt
 bin/sdkenginetools.txt
+binary
 bind_current_selection
 bind_pose
 bind_pose_reference
@@ -14279,6 +14324,7 @@ body_collection
 body_group_choice
 body_group_count
 body_group_name
+body_order
 bodygroupchoices
 bold
 boneIndicesAndWeights
@@ -14290,6 +14336,7 @@ bone_3
 bone_attrs
 bone_count
 bone_cull_type
+bone_depth
 bone_index0
 bone_index1
 bone_index2
@@ -14680,7 +14727,9 @@ e0F$
 e0F$J
 e:8A
 e?RR
+eCenteredCylinder
 eDc?t
+eGroundCylinder
 eK6@
 eZQ9\
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
@@ -14697,6 +14746,7 @@ edge_selection
 edge_threshold
 edge_to_face
 edge_to_vertex
+editor_friendly_name
 editorconfig
 effect_contents
 effect_name
@@ -14987,6 +15037,8 @@ game:tools/images/modeldoc_editor/outliner_icon_cloth_tri.png
 game:tools/images/modeldoc_editor/outliner_icon_cloth_tri2.png
 game:tools/images/modeldoc_editor/outliner_icon_cloth_vertexmap.png
 game:tools/images/modeldoc_editor/outliner_icon_jiggle_bone.png
+game:tools/images/propertyeditor/eye_hidden.png
+game:tools/images/propertyeditor/eye_visible.png
 game:tools/images/splash_screen
 game:tools/images/valve_style/arrow_down.png
 game:tools/images/valve_style/arrow_left.png
@@ -15106,8 +15158,6 @@ graceful
 gradient
 granite
 graph_is_public
-graph_keys
-graph_name
 grasshopper
 gravity_z
 great
@@ -15189,11 +15239,13 @@ hide_materialgroup_in_tools
 hide_rendercolor_in_tools
 hideous
 high_high_precision_texcoords
+high_precision_blendweights
 high_precision_texcoords
 high_quality
 hinge_axis
 hinge_vector
 hippo
+hit_group
 hitbox
 hitbox_maxs
 hitbox_mins
@@ -15393,6 +15445,7 @@ lVU=@
 lV}f@
 l\n?dragEnterEvent@QLineEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 l\tTZ
+l\tV_powd
 l\v?event@QToolBar@@MEAA_NPEAVQEvent@@@Z
 large
 lark
@@ -15400,6 +15453,7 @@ last_frame
 late
 lavender
 leader_bone
+leader_type
 leave_body_collision_unmodified
 left
 left_
@@ -15493,6 +15547,7 @@ m_AdditionalInputDependencies
 m_AdditionalRelatedFiles
 m_ArgumentDependencies
 m_Bindings
+m_BoneMergeLinks
 m_ChildResourceList
 m_Context
 m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNameOrientation
@@ -15532,6 +15587,8 @@ m_TestEnum
 m_UserData
 m_WeakReferenceList
 m_attachments
+m_bAllowDefinitions
+m_bAllowReferences
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
 m_bDrawLast
@@ -15547,21 +15604,34 @@ m_bParentJointRequiresAlignment
 m_bUseCompressedNormalTangent
 m_bUseNewPoleVectorForAxis
 m_bUseShadowFastPath
+m_bWorldSpaceOrientation
 m_capabilities
 m_eRbfType
+m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
+m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
+m_fEmissiveFactor
 m_flMaxRadians
 m_flMinRadians
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_hitboxsets
 m_influenceFlags
+m_materialGroupToken
 m_morphSet
+m_nChildNode
 m_nFileCRC
 m_nFingerprint
 m_nFingerprintDefault
+m_nParentHash
+m_nSrcDrawIndex
 m_nUserData
+m_nVertexEmissiveFormat
+m_nVertexEmissiveOffset
+m_nVertexEmissiveStride
+m_nVertexEmissiveVB
 m_qFixupRotation
 m_rbfParameters
+m_rootBvhNodes
 magenta
 magpie
 make_two_sided
@@ -15646,6 +15716,7 @@ max_value
 max_vertices
 max_yaw
 maxangle
+maxres
 maxs
 medium
 megascans
@@ -15820,7 +15891,6 @@ oCy@
 oG8-x
 oY.o<
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
-o\tV_sind
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
 obscene
 octopus
@@ -15839,6 +15909,7 @@ openwith.exe
 operator_mode
 opqMU
 optimization_algorithm
+optional_toggle_cmd
 optionallycompressedtangentframe
 orange
 orientation
@@ -15848,6 +15919,7 @@ ostrich
 other_suffixes
 otter
 out_frame
+outliner_icon
 output_A
 output_B
 output_G
@@ -15864,6 +15936,7 @@ override_help_id
 override_value
 override_vector
 overrideclass
+overridesound
 overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
@@ -16041,6 +16114,7 @@ posture
 posture_nohands
 posxyz
 potato\n
+ppI[
 preMerge face 0
 preMerge face 1
 precision_degrees
@@ -16071,6 +16145,7 @@ prop_group
 prop_group_contents
 prop_group_contents_list
 prop_group_packing_material
+prop_static
 propattr_flatten_include_label
 propattr_flatten_into_parent_row
 propattr_flatten_stretch_factor
@@ -16118,6 +16193,7 @@ r@3333S
 r@ffff
 rJ@LB
 rKK\t@i;
+r\vppI[
 rabbit
 rabid
 raccoon
@@ -16227,7 +16303,6 @@ scriptlist
 scripts/activity_modifier_weights.txt
 scripts/collision_detail_layers.vdata
 scripts/physics_particles.vdata!%s
-scripts/physics_particles.vdata!hlx_physics_particle_spawner
 scroll_widget
 seahorse
 seal
@@ -16265,6 +16340,7 @@ set_as_cycles
 set_bodygroup_on_other_models
 set_initial_value
 set_materialgroup_on_other_models
+settings
 settings.txt
 sh_%d.exr
 shader
@@ -16273,6 +16349,7 @@ shader_extra_data_1
 shader_extra_data_2
 shallow
 shape
+shape_list
 shapes
 shark
 sharpStartAngle
@@ -16324,6 +16401,7 @@ smooth_distance
 smooth_normals_across_uv_seams
 snail
 snake
+snap_to_grid
 snapshot
 sofa
 soft
@@ -16432,7 +16510,7 @@ system_external_tool
 t39[
 t?vZ
 tAffffhF
-tBSheetSequenceIntegerId_t
+tBRenderBufferFlags_t
 tI00
 tYLPG@
 tYLl
@@ -16517,6 +16595,9 @@ tomato
 tool_material
 tool_name
 tool_request
+tool_request_args
+tool_request_text
+tool_request_tool
 toolbarArea
 toolframework
 toolframework2.dll
@@ -16797,7 +16878,6 @@ tools/images/modeldoc_editor/outliner_icon_sticker_markup_polygon_node.png
 tools/images/modeldoc_editor/outliner_icon_texture_generator.png
 tools/images/modeldoc_editor/outliner_icon_texture_generator_list.png
 tools/images/modeldoc_editor/outliner_icon_transfermorphs.png
-tools/images/modeldoc_editor/outliner_icon_vpulse.png
 tools/images/modeldoc_editor/outliner_icon_vsnap.png
 tools/images/modeldoc_editor/outliner_icon_vsnap_file.png
 tools/images/modeldoc_editor/outliner_icon_vsnap_list.png
@@ -16934,6 +17014,7 @@ velocity_cp
 velocity_smooth_iterations
 velocity_smooth_rate
 verify
+verify_override_sound_foot_choice
 vertexPaintBlendParams
 vertexPaintTintColor
 vertex_attribute
@@ -17077,6 +17158,7 @@ zSl?
 z\f?generatedIconPixmap@QProxyStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 z\nA7
+z\tV_sind
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 zebra

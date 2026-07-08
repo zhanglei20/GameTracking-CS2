@@ -41,6 +41,7 @@
 "screenWindowWidth" attribute not found in the header.
 # of channels is zero.\n
 #CfU7
+$\tV_expd
 %-100s %-6s %-6s\n
 %.100s: Can not read TIFF directory
 %A Is
@@ -106,9 +107,9 @@
 , channels = 
 , height = 
 --------------------------------------------\n
+.?AV<lambda_1>@?1???$DoNotDeleteReadCallback@VCReadGPUBuffer@@@@YA?AV?$shared_ptr@VCReadGPUBuffer@@@std@@PEAVCReadGPUBuffer@@@Z@
 .?AV<lambda_1>@?1??CaptureRenderDocWindow@CRenderDocAPI@@SAXAEBVCCommandContext@@AEBVCCommand@@@Z@
 .?AV<lambda_1>@?1??MN_AddAsyncTextureBitsHookupJob@CTextureManagerBase@@IEAAXPEAVCTextureBase@@AEBUAsyncTextureHookupData_t@2@@Z@
-.?AV<lambda_1>@?3??MN_CacheRequestedResources@CTextureManagerBase@@IEAAXAEAV?$CUtlVector@UToCacheHandle_t@CTextureManagerBase@@HV?$CUtlVectorMemory_Growable@UToCacheHandle_t@CTextureManagerBase@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?4??RenderDocCaptureWindowAutoComplete@@YAXAEBVCCommand@@AEAV?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@@Z@
 .?AV?$CBaseAppSystem@VIRenderDeviceMgr@@@@
 .?AV?$CBaseAppSystem@VIRenderUtils@@@@
@@ -120,22 +121,17 @@
 .?AV?$CTier1AppSystem@VIRenderUtils@@$0A@@@
 .?AV?$CTier2AppSystem@VIRenderDeviceMgr@@$0A@@@
 .?AV?$CTier2AppSystem@VIRenderUtils@@$0A@@@
-.?AV?$ITSHashConstructor@PEAX@@
 .?AV?$ITSHashConstructor@VCTextureSequenceRecord_t@@@@
 .?AV?$_Func_base@XPEAVCSwapChainBase@@@std@@
-.?AV?$_Func_base@XPEAVIAsyncResourceDataRequest@@V?$unique_ptr@VIAsyncProcessedDataResult@@U?$default_delete@VIAsyncProcessedDataResult@@@std@@@std@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??CaptureRenderDocWindow@CRenderDocAPI@@SAXAEBVCCommandContext@@AEBVCCommand@@@Z@XPEAVCSwapChainBase@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??MN_AddAsyncTextureBitsHookupJob@CTextureManagerBase@@IEAAXPEAVCTextureBase@@AEBUAsyncTextureHookupData_t@3@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??MN_CacheRequestedResources@CTextureManagerBase@@IEAAXAEAV?$CUtlVector@UToCacheHandle_t@CTextureManagerBase@@HV?$CUtlVectorMemory_Growable@UToCacheHandle_t@CTextureManagerBase@@H$0A@@@@@@Z@XPEAVIAsyncResourceDataRequest@@V?$unique_ptr@VIAsyncProcessedDataResult@@U?$default_delete@VIAsyncProcessedDataResult@@@std@@@std@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RenderDocCaptureWindowAutoComplete@@YAXAEBVCCommand@@AEAV?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@@Z@XPEAVCSwapChainBase@@@std@@
-.?AVCBlendStateCreator@@
-.?AVCDepthStencilStateCreator@@
+.?AV?$_Ref_count_resource@PEAVCReadGPUBuffer@@V<lambda_1>@?1???$DoNotDeleteReadCallback@VCReadGPUBuffer@@@@YA?AV?$shared_ptr@VCReadGPUBuffer@@@std@@PEAV1@@Z@@std@@
 .?AVCDeviceFence@@
 .?AVCDeviceFenceBase@@
 .?AVCEmptyShaderBuffer@@
 .?AVCPooledIndexBuffer@@
 .?AVCPooledVertexBuffer@@
-.?AVCRasterizerStateCreator@@
 .?AVCReadGPUBuffer@@
 .?AVCRenderContextEmpty@@
 .?AVCRenderDeviceBase@@
@@ -148,7 +144,6 @@
 .?AVCRenderUtils@@
 .?AVCSchemaRegistration_rendersystemempty@@
 .?AVCSheetHashConstructor@@
-.?AVCStateBundleCreator@@
 .?AVCSwapChainBase@@
 .?AVCSwapChainEmpty@@
 .?AVCTextureBase@@
@@ -173,6 +168,7 @@
 <invalid %d>
 <unknown multisample type
 ?EncodeBC7Blocks
+?~~~~~~~~~~~~~~~~
 @Integer overflow in %s
 ActiveArea
 Adapter: %d\nDriver Name:  %s\nDriver Version: %s\nVendorId / DeviceId:  0x%x / 0x%x\nSubSystem / Rev:  0x%x / 0x%x\n\n
@@ -211,23 +207,23 @@ C:\buildworker\csgo_rel_win64\build\_build_\rendersystem\_vpc_rendersystemempty\
 C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\csgo_rel_win64\build\src\rendersystem\renderdevicebase.cpp
 C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(2423):Error loading texture: %s\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3450):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3453):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3486):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3489):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3511):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3514):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3534):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3537):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3557):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3560):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3582):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3585):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3597):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3600):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3612):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
-C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3615):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(2339):Error loading texture: %s\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3097):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3100):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3133):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3136):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3158):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3161):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3181):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3184):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3204):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3207):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3229):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3232):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3244):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3247):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3259):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
+C:\buildworker\csgo_rel_win64\build\src\rendersystem\texturebase.cpp(3262):ResourceHandleToData( %s ) failed! Falling back to error texture!\n
 CCITT Group 3
 CCITT Group 4
 CCITT RLE
@@ -239,28 +235,27 @@ CFAPlaneColor
 CLargeCommandBufferChunk CUtlMemoryPool
 CMediumCommandBufferChunk CUtlMemoryPool
 CRenderDeviceBase
-CRenderDeviceBase::AllocatePooledIndexBuffer(3626): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3662): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3803): 
-CRenderDeviceBase::AllocatePooledVertexBuffer(3834): 
-CRenderDeviceBase::AsyncSetTextureData(3265): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3519): 
-CRenderDeviceBase::CreateConstantBuffer(1571): 
-CRenderDeviceBase::EndRenderDocCapture(3499): 
-CRenderDeviceBase::FindOrCreateTexture(1713): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3638): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3665): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3825): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3847): 
+CRenderDeviceBase::AsyncSetTextureData(3266): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3520): 
+CRenderDeviceBase::CreateConstantBuffer(1573): 
+CRenderDeviceBase::CreateConstantBufferInternal
+CRenderDeviceBase::EndRenderDocCapture(3500): 
+CRenderDeviceBase::FindOrCreateTexture(1715): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s\n
-CRenderDeviceBase::Flush(898): 
-CRenderDeviceBase::ForceFlushGPU(915): 
-CRenderDeviceBase::FreeTextureGPUResources(2025): 
-CRenderDeviceBase::FreeTextureGPUResources(2029): 
-CRenderDeviceBase::Present(610): 
-CRenderDeviceBase::StartRenderDocCapture(3486): 
+CRenderDeviceBase::Flush(889): 
+CRenderDeviceBase::ForceFlushGPU(914): 
+CRenderDeviceBase::FreeTextureGPUResources(2032): 
+CRenderDeviceBase::FreeTextureGPUResources(2036): 
+CRenderDeviceBase::Present(601): 
+CRenderDeviceBase::StartRenderDocCapture(3487): 
 CSheetDataTextureCache::AllocateAndUploadSequenceData(582): 
 CTextureManagerBase::AsyncHookUpTextureBits
 CTextureManagerBase::LoadStreamingData
-CTextureManagerBase::MN_BuildRequestedResourcesList
 CTextureManagerBase::MN_DeallocateCacheableData
-CTextureManagerBase::MN_OnResourceFileLoaded
 CTextureManagerBase::MN_OnResourceLoadCompleted
 CTextureManagerBase::MN_OnResourceLoadFailed
 CTextureManagerBase::MarkAsyncUpdatedThisFrame - Invalid texture handle.\n
@@ -271,8 +266,6 @@ CameraCalibration1
 CameraCalibration2
 CameraSerialNumber
 Can not read scanlines from a tiled image
-Can't clear TEXTURE_WAITING_FOR_IO flag because of streaming request mismatch: %d in handle, %d in request\n
-Can't clear TEXTURE_WAITING_FOR_IO flag because pTexture is NULL\n
 Can't detect memory size on this platform!\n
 Cannot handle different per-sample values for field "%s"
 Cannot read TIFF header
@@ -282,7 +275,6 @@ CellLength
 CellWidth
 ChromaBlurRadius
 CleanFaxData
-Clearing TEXTURE_WAITING_FOR_IO flag because it's has no streaming request id anymore\n
 ClipPath
 ColorMap
 ColorMatrix1
@@ -297,6 +289,7 @@ Compression scheme %u %s encoding is not implemented
 ConsecutiveBadFaxLines
 Copyright
 Could not decode alpha data.
+CreateConstantBufferInternal
 CurrentICCProfile
 CurrentPreProfileMatrix
 DBM&(
@@ -319,7 +312,7 @@ DeviceID
 Direct3D 11
 Discarding abandoned streaming texture load for %s\n
 DocumentName
-Don't support DXLevel < 100
+Don't support DXLevel < 110
 DotRange
 Driver Name:  %s\nDriver Version: %s\nVendorId / DeviceId:  0x%x / 0x%x\nSubSystem / Rev:  0x%x / 0x%x\nDXLevel:  %d\nTexture memory:  %s\nGPU memory (use / budget): %s / %s\nVid:  %s, render at %i x %i, display at %i x %i, refresh rate %.2fHz (%uHz desktop)\n
 DumpModeDecode: Not enough data for scanline %d
@@ -456,8 +449,6 @@ LogLuvDecode32: Not enough data at row %d (short %d pixels)
 LogLuvInitState
 MN_AddAsyncTextureBitsHookupJob Data
 MN_AddAsyncTextureBitsHookupJob Disk
-MN_CacheRequestedResources
-MN_OnResourceFileLoaded
 Make
 MakerNoteSafety
 MaskedAreas
@@ -534,8 +525,15 @@ Premature end-of-file encountered.
 Premature end-of-partition0 encountered.
 PrimaryChromaticities
 RENDERDOC_GetAPI
+RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RESOURCE_TYPE_TEXTURE
 RSDSM
+RS_CMP_CLOSER
+RS_CMP_CLOSER_EQUAL
+RS_CMP_CLOSER_FARTHER_FLAG
+RS_CMP_FARTHER
+RS_CMP_FARTHER_EQUAL
+RS_CMP_FUNC_MASK
 R_T5Y
 RawDataUniqueID
 ReductionMatrix1
@@ -549,12 +547,9 @@ Render system:  %s\n
 RenderDoc is not active, did you forget to add -renderdoc to the command-line? Is RenderDoc installed?\n
 RenderSystem
 RenderSystem/AllowPartialMipChainImmediateTexLoads
-RenderSystem/IndexBufferPoolSizeMB
 RenderSystem/MaxPreloadTextureResolution
-RenderSystem/MinDXLevel
 RenderSystem/MinStreamingPoolSizeMB
 RenderSystem/MinStreamingPoolSizeMBTools
-RenderSystem/VertexBufferPoolSizeMB
 Rendersystem/SheetCacheTextureCols
 Rendersystem/SheetCacheTextureRows
 ResolutionUnit
@@ -588,13 +583,12 @@ StripOffsets
 SubIFD
 SubfileType
 Success
+Swap Chain Mode Changing:\n\tm_nVersion: %d -> %d\n\tm_DisplayMode:\n\t\tm_nVersion: %d -> %d\n\t\tm_nWidth: %d -> %d\n\t\tm_nHeight: %d -> %d\n\t\tm_Format: %d -> %d\n\t\tm_nRefreshRateNumerator: %d -> %d\n\t\tm_nRefreshRateDenominator: %d -> %d\n\t\tm_nFlags: 0x%X -> 0x%X\n\tm_nBackBufferCount: %d -> %d\n\tm_nMultisampleType: %d -> %d\n\tm_nModeUsage: %d -> %d\n\tm_bUseStencil: %d -> %d\n\tm_bWaitForVSync: %d -> %d\n\tm_bScaleToOutputResolution: %d -> %d\n\tm_bProgressive: %d -> %d\n\tm_bUsingMultipleWindows: %d -> %d\n\tm_bIsMainWindow: %d -> %d\n
 TEXMAN: %s LoadStreamingData (%s)\n
 TEXMAN: %s MarkTextureBitsLoaded (%s)\n
 TEXMAN: %s TextureBecameEvicted (%s)\n
 TEXMAN: %s loaded %s %i/%i mips (%ix%i / %ix%i) of %s (%i bytes)\n
 TEXMAN: Abandoning job in %s (%s)\n
-TEXMAN: Abandoning streaming request early in %s\n
-TEXMAN: Abandoning streaming request in %s\n
 TEXMAN: Adding %llx+%p (binding=%p), %s to abandoned hookup jobs\n
 TEXMAN: Deleting %d textures\n
 TEXMAN: Outstanding stream count %d -> %d (%s)\n
@@ -646,10 +640,14 @@ Truncated header.
 Trying to create a render target with invalid image format %s\n
 Trying to set dxlevel (%d) which is higher than the card can support (%d)!\n
 Trying to set dxlevel (%d) which is lower than the card can support (%d)!\n
+UPSCALER_AMD_FSR2
+UPSCALER_AMD_FSR3
+UPSCALER_COUNT
+UPSCALER_INTEL_XESS
+UPSCALER_NONE
+UPSCALER_NVIDIA_DLSS
 U\8h(
-U\tV_logd
 Unable to find swapchain named %s
-Unable to stream in resource file "%s" (Error: %s)\n
 Unavailable
 Unexpected resource version '%d' for '%s'\n
 UniqueCameraModel
@@ -657,6 +655,7 @@ Unknown compression type.
 Unknown data format %d for LogLuv compression
 Unknown encoding %d for LogLuv compression
 Unsupported PSD color mode!\n
+UpscalerType_t
 Usage: %s <window_name>
 VB Size: %s (Count: %d)\n
 VBPool
@@ -692,8 +691,8 @@ ZIPSetupDecode
 ZIPSetupEncode
 ZIPVSetField
 \t@@@@@@@@@@@@@@@@{N{N{N{N{N{N{N{N
+\tV_ZSTD_decompress
 \tV_atan2d
-\tV_expd
 \tV_strtoi64
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \tg_TSPointerListNodes
@@ -703,7 +702,7 @@ _TIFFVGetField
 _TIFFVSetField
 _tools.txt
 _wjb
-a\tV_powd
+`\tV_logd
 aoB>"
 ati_compress_wrapper.dll
 bValid
@@ -751,6 +750,7 @@ immediate
 incorrect count for field "%s" (%u, expecting %u); tag ignored
 incorrect count for field "%s" (%u, expecting %u); tag trimmed
 invalid vector subscript
+l\tV_powd
 lineOrder
 ltmX.
 makemelast
@@ -784,16 +784,11 @@ scanline
 screenWindowCenter
 screenWindowWidth
 setting.
-setting.CentroidHack
 setting.DXLevel
 setting.DisableShaderOptimizations
 setting.HasBrokenPipelineStats
 setting.MaxDXLevel
 setting.MinDXLevel
-setting.PreferHardwareSync
-setting.PreferTexturesInHWMemory
-setting.PreferZPrepass
-setting.SuppressPixelShaderCentroidHackFixup
 setting.Unsupported
 setting.knowndevice
 setting.maxdxlevel

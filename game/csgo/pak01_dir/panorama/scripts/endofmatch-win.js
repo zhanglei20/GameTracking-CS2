@@ -19,8 +19,10 @@ var EOM_Win;
             return;
         const winningTeamNumber = _m_oMatchEndData.winning_team_number;
         let result = "#eom-result-tie3";
-        let localPlayerTeamScore = _m_oScoreData.teamdata["TERRORIST"].score;
-        let otherTeamNumber = _m_oScoreData.teamdata["CT"].score;
+        const teamT = _m_oScoreData.teamdata.find(td => td.team_name === "TERRORIST");
+        const teamCT = _m_oScoreData.teamdata.find(td => td.team_name === "CT");
+        let localPlayerTeamScore = teamT.score;
+        let otherTeamNumber = teamCT.score;
         _m_cP.RemoveClass('eom-win_won');
         _m_cP.RemoveClass('eom-win_lost');
         _m_cP.SetDialogVariable("teamname", "");
@@ -29,14 +31,14 @@ var EOM_Win;
             const mode = EOM_Characters.GetModeForEndOfMatchPurposes();
             const bForceShowWinningTeam = EOM_Characters.ShowWinningTeam(mode);
             if (GameStateAPI.IsDemoOrHltv() || (localPlayerTeamNumber != 2 && localPlayerTeamNumber != 3) || bForceShowWinningTeam) {
-                localPlayerTeamScore = winningTeamNumber == _m_nT ? _m_oScoreData.teamdata["TERRORIST"].score : _m_oScoreData.teamdata["CT"].score;
-                otherTeamNumber = winningTeamNumber == _m_nT ? _m_oScoreData.teamdata["CT"].score : _m_oScoreData.teamdata["TERRORIST"].score;
+                localPlayerTeamScore = winningTeamNumber == _m_nT ? teamT.score : teamCT.score;
+                otherTeamNumber = winningTeamNumber == _m_nT ? teamCT.score : teamT.score;
                 result = "#eom-result-win3";
                 _m_cP.SetHasClass('eom-win_won', true);
             }
             else {
-                localPlayerTeamScore = localPlayerTeamNumber == _m_nT ? _m_oScoreData.teamdata["TERRORIST"].score : _m_oScoreData.teamdata["CT"].score;
-                otherTeamNumber = localPlayerTeamNumber == _m_nT ? _m_oScoreData.teamdata["CT"].score : _m_oScoreData.teamdata["TERRORIST"].score;
+                localPlayerTeamScore = localPlayerTeamNumber == _m_nT ? teamT.score : teamCT.score;
+                otherTeamNumber = localPlayerTeamNumber == _m_nT ? teamCT.score : teamT.score;
                 result = winningTeamNumber == localPlayerTeamNumber ? "#eom-result-win3" : "#eom-result-loss3";
                 _m_cP.SetHasClass('eom-win_won', winningTeamNumber == localPlayerTeamNumber);
                 _m_cP.SetHasClass('eom-win_lost', winningTeamNumber != localPlayerTeamNumber);
@@ -71,9 +73,8 @@ var EOM_Win;
         if (!_m_oMatchEndData)
             return false;
         if (!_m_oScoreData ||
-            !_m_oScoreData["teamdata"] ||
-            !_m_oScoreData["teamdata"]["CT"] ||
-            !_m_oScoreData["teamdata"]["TERRORIST"])
+            !_m_oScoreData.teamdata.some(td => td.team_name === "CT") ||
+            !_m_oScoreData.teamdata.some(td => td.team_name === "TERRORIST"))
             return false;
         if (_m_oMatchEndData.hasOwnProperty('winning_player'))
             return false;

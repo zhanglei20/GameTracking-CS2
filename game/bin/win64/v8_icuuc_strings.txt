@@ -3862,7 +3862,6 @@ Zzzz
 \n4\t4\t4\t4\t4\t
 \n4\tI\vP\vT\vZ\v4\t4\t4\t
 \n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v
-\n\t\n\n\n\v\n\f\n\r\n
 \n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\vi
 \n\v\n\v\n\v\n\v\r\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\r\vi
 \r#\r#\r#\r#\r#\r#\r#\r#\r#\r#\r#\r
@@ -4107,6 +4106,7 @@ bg_BG
 bic8
 biguous#$
 bin_NG
+binary
 biningmark
 block!
 blt_Latn

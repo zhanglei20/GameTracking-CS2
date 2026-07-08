@@ -32,19 +32,10 @@
 
 			AddonRoot			csgo_addons
 			OfficialAddonRoot	csgo_community_addons
-
-			LayeredGameRoot		"../game_otherplatforms/etc" [$MOBILE || $ETC_TEXTURES] //Some platforms do not support DXT compression. ETC is a well-supported alternative.
-			LayeredGameRoot		"../game_otherplatforms/low_bitrate" [$MOBILE]
 		}
 
 		"UserSettingsPathID"	"USRLOCAL"
 		"UserSettingsFileEx"	"cs2_"
-	}
-
-	Localize
-	{
-		DisallowTokenContexts	1
-		DisallowPgTokens		1
 	}
 
 	Engine2
@@ -191,6 +182,16 @@
 		"snd_steamaudio_enable_pathing"						"1"
 		"snd_steamaudio_source_pathing_debug"				"0"
 		"snd_steamaudio_max_probes_customdata"				"12000"
+		"snd_steamaudio_baked_occlusion_mode"				"4"
+		"snd_steamaudio_load_reverb_data"					"0"
+		"snd_steamaudio_load_pathing_data"					"0"
+		"snd_steamaudio_load_dimensions_data"				"0"
+		"snd_steamaudio_load_materials_data"				"0"
+		"snd_steamaudio_load_occlusion_data"				"0"
+		"snd_use_baked_occlusion"							"0"
+		"snd_steamaudio_use_soundblocking_shapes_only"		"0"
+		"snd_steamaudio_baked_occlusion_reflection_factor"	"1.0"
+		"snd_steamaudio_baked_occlusion_pathing_exponent"	"0.2"
 
 		"snd_event_browser_default_stack"			"csgo_mega"
 		"snd_event_browser_default_vsnd_field"		"public.vsnd_files_track_01"

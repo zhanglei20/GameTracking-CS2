@@ -134,7 +134,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpX
+2\vpp
 2customContextMenuRequested( const QPoint &)
 2itemSelectionChanged()
 2textChanged( const QString & )
@@ -662,7 +662,6 @@ CQBudgetWidget
 CQFPSGraphWidget
 CQFlamegraphWidget
 CQVprofPlayerWidget
-CUtlRBTree<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQBudgetWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,class CUtlOrderedMapBase<class IVConsoleDevice *,class CQBudgetWidget *,class CDefLess<class IVConsoleDevice *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQBudgetWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 C\v?event@QGraphicsScene@@MEAA_NPEAVQEvent@@@Z
 Calls
 Clear Samples
@@ -714,10 +713,10 @@ OnStop
 OnTreeSelectionChanged
 OnValueChanged
 Open vprof recording
-P\tV_log10d
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
 RSDS'
+R\fpp
 Running.
 Samples: %1
 Show Budget - %1
@@ -732,7 +731,6 @@ StopSampling
 Stopped.
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
-T\tV_log2f
 Timings truncated
 Totals
 Truncated file
@@ -752,6 +750,7 @@ Z?setPen@QPainter@@QEAAXAEBVQColor@@@Z
 Z?setPen@QPainter@@QEAAXAEBVQPen@@@Z
 Z?setPen@QPainter@@QEAAXW4PenStyle@Qt@@@Z
 [?setStyle@QPen@@QEAAXW4PenStyle@Qt@@@Z
+[\tV_log10d
 \?setWidth@QPen@@QEAAXH@Z
 \\v?event@QScrollBar@@UEAA_NPEAVQEvent@@@Z
 \f"?update@QWidget@@QEAAXXZ
@@ -824,6 +823,7 @@ Z?setPen@QPainter@@QEAAXW4PenStyle@Qt@@@Z
 \v?extension@QGraphicsItem@@MEBA?AVQVariant@@AEBV2@@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
+_\tV_log2f
 _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
 ave: %f/call\nmax: %f\nid: %d
 avg %5.2f stddev %6.3f [%6.3f->%6.3f]
@@ -864,6 +864,7 @@ p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 ptGlobal
 r\n?dragLeaveEvent@QGraphicsItem@@MEAAXPEAVQGraphicsSceneDragDropEvent@@@Z
+r\vpp
 s\r?hoverEnterEvent@QGraphicsItem@@MEAAXPEAVQGraphicsSceneHoverEvent@@@Z
 samples_scale
 show_averages

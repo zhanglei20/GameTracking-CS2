@@ -7,6 +7,7 @@
         Subject:%c
         Validity\n
     Signature Algorithm: 
+    { no data }\n
   ##%%&&))**,,//1122447788;;==>>@@CCEEFFIIJJLLOOQQRRTTWWXX[[]]^^aabbddgghhkkmmnnppssuuvvyyzz||
  %4hf
  %s%lu (%s0x%lx)\n
@@ -906,65 +907,92 @@ $prefix_element$
 /usr/local/ssl/lib/engines
 /usr/local/ssl/private
 /zt1
+007@
 0123456789
-025@
+026@
 02V8[
-033@
+036@
+044@
 046@
+050@
+054@
+057@
 05=k
-083@
-086@
+064@
+084@
+085@
+088@
 08bX
 09,h
-093@
+094@
 0;Q5[
 0<cz
-0B3@
-0D3@
-0E3@
-0E6@
-0G4@
-0G6@
-0H3@
+0A4@
+0C7@
+0G7@
 0H4@
-0I3@
-0J6@
+0I7@
+0K6@
+0L6@
 0M2~@p
-0MD5
-0N3@
-0O6@
-0P3@
-0Q6@
-0R3@
-0S3@
-0T3@
-0U3@
+0M4@
+0M6@
+0N4@
+0N5@
+0P4@
+0Q4@
+0R4@
+0S4@
+0T4@
+0TB$
+0V4@
+0V5@
 0W/5
-0W6@
-0X3@
-0X6@
-0Y3@
+0X4@
+0Y4@
 0Z@q
 0\r0#0)070;0U0Y0[0g0q0y0}0
-0a3@
-0b3@
-0e6@
+0b6@
+0c4@
+0d3$
+0e7@
 0e\r8
-0m3@
+0h4@
+0i4@
+0i6@
+0i7@
+0l0@
+0m0@
+0m6@
+0n0@
+0n4@
+0o0@
 0o5@
+0o7@
+0p0@
+0p5@
 0pp@5tqE?|sO541
-0q6@
-0r5@
-0r6@
-0s5@
-0t6@
+0q0@
+0r0@
+0r4@
+0r7@
+0s0@
+0t0@
+0t4@
 0tU+xc:
-0u5@
-0v5@
+0u0@
+0u4@
+0v0@
+0w0@
 0w5@
-0w6@
 0x%llx
-0z4@
+0x0@
+0x4@
+0x5@
+0y0@
+0y4@
+0z0@
+0z7@
 0}dV
 1!1'1-191C1E1K1]1a1g1m1s1
 11nN
@@ -1005,7 +1033,7 @@ $prefix_element$
 2Zq)
 2\fWQx
 2\rlhp
-2\vpT
+2\vpd3$
 2^pV
 2a"l
 2bT~
@@ -1044,6 +1072,7 @@ $prefix_element$
 4Zis
 4\fPl
 4f h
+4l4@
 4tpD
 4zj@1;IJ
 5'0v2ZP
@@ -1114,58 +1143,81 @@ $prefix_element$
 7zRQ
 8+Qw
 8-byte data pool
-803@
 80F2<
-813@
-823@
-826@
+814@
+817@
+824@
+827@
 82\n:XPH
-835@
+834@
+837@
+847@
+848@
 851Pe
-853@
-875@
+874@
 885@
-893@
 895@
+898@
 8<pl
 8= zp
-8A3@
 8A6j
-8C3@
+8A7@
+8B7@
+8C4@
 8ClipBoard
-8F3@
-8F6@
-8G3@
+8D0@
+8D7@
+8E4@
+8E7@
+8F7@
 8GZS
-8H6@
-8J3@
-8L3@
-8M3@
-8N3@
-8O3@
-8P3@
-8R3@
-8R6@
+8H7@
+8I0@
+8I4@
+8L4@
+8N0@
+8O6@
+8S4@
+8S6@
 8SIffK5W
 8TZvrv<
-8Z6@
+8U4@
+8W4@
+8X0@
+8Z4@
 8\v8!83858A8G8K8S8W8_8e8o8q8}8
 8]Vc2
-8a6@
-8c6@
+8a4@
+8b4@
+8b7@
 8ca1
+8d6@
 8dS2
-8g6@
-8i6@
+8e4@
+8e6@
+8f6@
+8g7@
+8h6@
+8i4@
+8k4@
+8m4@
 8m5@
-8n5@
-8p5@
+8m7@
+8n6@
+8n7@
+8o4@
+8p4@
+8p7@
 8pe7?
 8q-S*]X
-8q5@
+8q4@
+8q7@
+8s4@
 8sOy
-8u6@
-8v6@
+8v4@
+8w4@
+8x7@
+8z4@
 9#9%9)9/9=9A9M9[9k9y9}9
 9)PF
 9)jx
@@ -1237,6 +1289,7 @@ $prefix_element$
 <UNKNOWN>
 <YGr+
 <YVtV&
+<non-RTTI type>
 <unsupported>
 =!=-=3=7=?=C=o=s=u=y={=
 =&sf9
@@ -1487,7 +1540,6 @@ Alpha Fade In Random
 Alpha Fade Out Random
 Alpha Fade and Decay
 Alpha Random
-Am_bUseShadowFastPath
 Animation Bone Flags
 Animation Configuration File
 Any Extended Key Usage
@@ -1495,6 +1547,7 @@ Any Purpose
 Any language
 Append one of the following subfiles to access it (eg. "foo.vpk/folder/filename.txt")\n
 Arms
+Aslow
 Attempted to add two format updaters with the same file format (%s)!\n
 Attempted to add two legacy updaters with the same file format (%s)!\n
 Attempted to add two serializers with the same file encoding (%s)!\n
@@ -1982,13 +2035,6 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<stru
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
-CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CDmElement *,class CDefLess<class CDmElement *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmElement *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class IDmeOperator *,class CDefLess<class IDmeOperator *>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CDmElementSerializationDictionary::ElementInfo_t,class CLessFunc<&private: static bool __cdecl CDmElementSerializationDictionary::LessFunc(struct CDmElementSerializationDictionary::ElementInfo_t const &,struct CDmElementSerializationDictionary::ElementInfo_t const &)>,int,class CUtlBlockVector<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,class CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlSortVector<struct ChunkHashFraction_t,class CUtlSortVectorDefaultLess<struct ChunkHashFraction_t::SortKey_t>,class CUtlVector<struct ChunkHashFraction_t,int,class CUtlVectorMemory_Growable<struct ChunkHashFraction_t,int,0> > >::Find
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CVcn
@@ -2021,6 +2067,7 @@ Class does not allow allocation from its schema binding
 Cleanup
 CloseLid
 CloseToolhelp32Snapshot
+Cmdl
 Code Signing
 Code=
 Cofactor: 
@@ -2404,10 +2451,12 @@ DmeVector4CurveInfo
 DmeVector4Log
 DmeVector4LogLayer
 DmeVertexData
+Dn4@
 DnRv
 Domain
 Dq;n
 DsBV
+DualHull
 E"Y6
 E)2G\
 E+E1EAEIESEUEaEwE}E
@@ -2761,8 +2810,8 @@ FV|FgUV
 F\rH'4
 Facial Animation File
 Factory for element type '%s' already exists (Check your IMPLEMENT_ELEMENT_FACTORY macros for duplicate lookupNames)\n
-Failed to allocate an instance of a class
-Failed to allocate an instance of class '%s'
+Failed to allocate an instance of a class of type '%s'
+Failed to allocate an instance of class '%s' (type '%s')
 Failed to read
 Failed to read %d bytes\n
 Failed to read inputlist '%s' (%d)\n
@@ -2848,7 +2897,6 @@ GRAPHICSTRING
 GTsW
 GXqN
 GXy{
-G\f%G47
 GeneralNames
 GeneralString
 GenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!\n
@@ -2876,68 +2924,78 @@ Gz,J
 G{Ol
 H.aR
 H0+G+R
-H03@
-H06@
-H13@
-H16@
-H23@
-H25@
-H26@
+H04@
+H10@
+H14@
 H36@
-H43@
-H55@
+H46@
+H58@
 H5gRR-
+H68@
 H8,2
-H83@
 H8xp
+H94@
+H95@
 H=`HY
 H@H9xqI
-HB4@
+HA"3
+HA4@
+HA7@
 HBJ\nTRF
-HD3@
-HE3@
-HE6@
+HC7@
+HD4@
+HE7@
 HEAD 
-HG3@
 HH&a
-HI3@
-HI6@
+HH4@
 HIGH
+HJ4@
+HL4@
+HL6@
+HM4@
 HMAC
 HMAC GOST 34.11-94
 HMAC routines
 HMAC-MD5
 HMAC-SHA1
 HMAC_Init_ex
-HO6@
+HN4@
 HO8?
-HR6@
-HS3@
-HT3@
+HQ4@
+HR4@
 HT4@
-HT6@
-HU3@
-HU6@
 HU>mA$_E*
-HV3@
-HW6@
 HWyn
 HX4@
-HZ3@
-Ha6@
+Ha4@
 Hammer temp export
 Hash Algorithm: 
+Hb4@
 HbAta
 Hc S
+Hc6@
 Hc8a"
+Hd4@
+Hd7@
 HdEu
+He7@
 Heap32First
 Heap32ListFirst
 Heap32ListNext
 Heap32Next
+Hg6@
 Hg>?S
+Hh4@
+Hh6@
+Hh7@
 Hhr+g
+Hi6@
+Hk6@
+Hm 3
+Hm"3
+Hm5@
 Ho5@
+Ho7@
 Hofw
 Hold Instruction Call Issuer
 Hold Instruction Code
@@ -2945,17 +3003,19 @@ Hold Instruction None
 Hold Instruction Reject
 Hostname mismatch
 Hp)X?
+Hp7@
 Hq,r/f
-Hq5@
-Hq6@
+Hq7@
 HqI9x
-Hr6@
-Hs5@
+Hr5@
+Hr7@
+Ht4@
 Ht4qw
-Hu5@
-Hu6@
-Hv5@
-Hv6@
+Hu4@
+Hw4@
+Hx7@
+Hy4@
+Hy7@
 H{1S
 I"9|OxTex
 I+8G
@@ -3003,6 +3063,7 @@ ISSUING_DIST_POINT
 ITU-T
 IV block
 I\tHA\t981G'dc
+If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 Ij)s
 Ik\f`dub`D
 Images (%u):\n
@@ -3092,13 +3153,13 @@ L0fO*'
 L4Eud
 L4uGv~;6
 L5^x|S
+L85@
 L@4T
 LAM\rhaI)|pL<
 LBN6
 LG.HK
 LINEBUFFER_CTRL
 LIST_ADD
-LM3@
 LOAD
 LOAD_IV
 LOG_MESSAGE
@@ -3107,6 +3168,7 @@ LONG_C2I
 LT[N
 LXKQ
 LY\r5
+LZ4@
 Last two rows as percentage of total size %f %%:\n
 LbWf
 Leaking %i elements\n
@@ -3142,6 +3204,7 @@ MEDIUM
 MEMORY_LOCK
 MEM_READ
 MEM_WRITE
+MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MGF1
 MGrB
 MIC-CLEAR
@@ -3429,15 +3492,25 @@ P-224
 P-256
 P-384
 P-521
+P06@
+P07@
+P16@
 P1\t98"
-P46@
+P24@
+P27@
+P34@
+P37@
+P38@
+P47@
+P48@
+P54@
 P5[1
-P66@
-P85@
-P86@
-P93@
-P95@
-PA3@
+P64@
+P74@
+P77@
+P78@
+P84@
+P88@
 PAGN_4
 PARAMETERS
 PARSE_BAG
@@ -3445,8 +3518,6 @@ PARSE_BAGS
 PARSE_HTTP_LINE1
 PARSE_TAGGING
 PATHBYADDR
-PB3@
-PB4@
 PBE-MD2-DES
 PBE-MD2-RC2-64
 PBE-MD5-DES
@@ -3465,7 +3536,7 @@ PBES2
 PBKDF2
 PBKDF2PARAM
 PBMAC1
-PC3@
+PD7@
 PEIF
 PEM lib
 PEM part of OpenSSL 1.0.2j  26 Sep 2016
@@ -3495,15 +3566,15 @@ PEM_read_bio
 PEM_read_bio_Parameters
 PEM_write
 PEM_write_bio
-PF3@
-PF6@
-PG3@
-PG4@
-PG6@
+PF4@
+PF7@
+PG7@
 PGr]
+PH7@
 PHAG2
 PHhn}Y
-PJ3@
+PI4@
+PK6@
 PKCS #7 SIGNED DATA
 PKCS12
 PKCS12 lib
@@ -3617,8 +3688,8 @@ PKEY_RSA_VERIFYRECOVER
 PKEY_SET_TYPE
 PKEY_USAGE_PERIOD
 PKIX
-PN3@
-PO3@
+PN5@
+PO4@
 POLICYINFO
 POLICYQUALINFO
 POLICY_CONSTRAINTS
@@ -3627,11 +3698,9 @@ POLICY_MAPPINGS
 POLICY_SECTION
 POST
 POST 
-PP3@
 PP4@
 PP6@
 PPz\v=
-PR3@
 PRB+
 PRINTABLE
 PRINTABLESTRING
@@ -3641,38 +3710,44 @@ PRNG not seeded
 PROCESS_PCI_VALUE
 PROXY_CERT_INFO_EXTENSION
 PROXY_POLICY
+PS4@
+PS6@
 PSC\n
 PSK-3DES-EDE-CBC-SHA
 PSK-AES128-CBC-SHA
 PSK-AES256-CBC-SHA
 PSK-RC4-SHA
 PSPECIFIED
-PT4@
+PTB$
 PUBLIC KEY
 PUT 
-PW3@
-PX4@
-PX6@
-PZ6@
-Pa3@
+PV5@
+PY4@
+Pa7@
 Packed store %s with refcount > 0.\n
-PackedBlobNormal
 Parameters
 Particle Configuration File
-Pb3@
-Pb6@
+Pd6@
 Peer haven't sent GOST certificate, required for selected ciphersuite
 PerVertexLighting
 Permanent Identifier
 Permitted
-Pg3@
+Pf7@
+Pg7@
 Physics
-Pi6@
+Pi4@
 PivotPaint
-Pm5@
+Pk4@
+Pl4@
+Pm4@
+Pm6@
+Pm7@
 Pm8A?
 PmR"H?
+Pn4@
 Pn5@
+Po4@
+Po6@
 Policy Qualifier CPS
 Policy Qualifier User Notice
 Polynomial:
@@ -3686,8 +3761,11 @@ Position Within Box Random
 Position Within Sphere Random
 Position on Model Random
 PosterSettings
+Pp4@
 Pp5@
+Pq4@
 Pr"V
+Pr4@
 Pr5@
 Pre-Age Noise
 Prefix element cannot contain element or element_array attributes. ('%s')
@@ -3702,12 +3780,14 @@ Proc-Type: 4,
 Procedural
 PropWorldOrigin
 Proxy Certificate Information
-Ps6@
+Ps4@
 Public Key
 Public-Key
 Public-Key: (%d bit)\n
+Pv4@
+Pw4@
 Pw5@
-Pw6@
+Pw7@
 Pz4@
 P|iC\r
 Q*hd
@@ -3814,6 +3894,7 @@ RE!r
 RE4\t
 READ_N
 REAL
+RENDER_BUFFER_DYNAMIC_ZERO_COPY
 REQUEST_CERTIFICATE
 REQUEST_VERIFY
 RFC 3779 resource not subset of parent's resources
@@ -3910,10 +3991,10 @@ RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDS\t
-R\fpT
+R\fpd3$
 R\r1>Vp
-R\vpD
-R\vpT
+R\vpTB$
+R\vpd3$
 R]Di
 Radius Random
 Random Cull
@@ -4179,6 +4260,8 @@ T*8U
 T0.S
 T61STRING
 T72[t
+T85@
+T95@
 TC\tf\
 TELETEXSTRING
 TLS Web Client Authentication
@@ -4245,9 +4328,9 @@ TS_TST_INFO_set_tsa
 TS_VERIFY
 TS_VERIFY_CERT
 TS_VERIFY_CTX_new
+TW4@
 TXJw^{
 TYPE=
-T\tV_log2f
 TanFrameQuat
 TextImage
 Texture Configuration File
@@ -4297,6 +4380,12 @@ UI_set_result
 UNDEF
 UNIV
 UNIVERSALSTRING
+UPSCALER_AMD_FSR2
+UPSCALER_AMD_FSR3
+UPSCALER_COUNT
+UPSCALER_INTEL_XESS
+UPSCALER_NONE
+UPSCALER_NVIDIA_DLSS
 URI:%s
 USERNOTICE
 UTCTIME
@@ -4333,7 +4422,9 @@ Unspecified
 Unsupported extension feature
 Unsupported texture version: %d
 Unused
+UpscalerType_t
 Usage: resourceinfo [-i <resource file name(s)>] [-v] [-q] [-diff_format]\n
+Use World Space Up
 Ut]<E
 Uv1t
 Uz_G3=
@@ -4489,16 +4580,13 @@ WrgoI
 Writing .tga from float format image, values will be clamped [0..1].  Perhaps you want to write an .exr?\n
 Writing mesh data to %s\n
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
-X03@
-X13@
-X23@
+X17@
 X24_TYPELESS_G8_UINT
+X26@
 X32_TYPELESS_G8X24_UINT
-X35@
 X400Name
 X400Name:<unsupported>
-X43@
-X45@
+X46@
 X500
 X500algorithms
 X509
@@ -4614,10 +4702,8 @@ X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
 X56@
-X63@
-X65@
-X73@
-X76@
+X57@
+X85@
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -4636,57 +4722,76 @@ X9.62 curve over a 359 bit binary field
 X9.62 curve over a 368 bit binary field
 X9.62 curve over a 431 bit binary field
 X9.62/SECG curve over a 256 bit prime field
-X93@
+X98@
 X9_62_CHARACTERISTIC_TWO
 X9_62_CURVE
 X9_62_FIELDID
 X9_62_PENTANOMIAL
 X9cm
 X:vS
-XB4@
+XB7@
 XB`i|
 XD{p7
-XE6@
+XE0@
 XFle
+XG4@
 XG[r
-XH3@
-XH6@
-XJ6@
-XK3@
-XL3@
+XJ0@
 XLuC'4
-XM3@
+XM4@
 XMM{*
-XN3@
+XN4@
+XN5@
 XNU`{3
-XO5@
 XO6@
-XP3@
-XQ3@
 XQ6@
+XR6@
 XRJ2
-XT3@
+XS4@
+XT0@
+XT4@
+XU4@
+XV4@
 XWY]
+XX4@
+XY0@
+XY4@
 XYD%
+XZ4@
+XZ7@
 X\tQo
+Xa4@
+Xb4@
+Xb6@
+Xc7@
 Xd3h
+Xd4@
+Xe!3
 Xe6@
-Xf6@
+Xe7@
+Xf4@
 XfJ7
-Xg6@
-Xh6@
+Xg4@
+Xh7@
+Xi4@
+Xi7@
+Xj4@
 Xj6@
 XjfR
-Xk6@
-Xq6@
+Xm5@
+Xn6@
+Xn7@
+Xp7@
+Xq7@
 XqgA+
-Xt5@
-Xt6@
-Xu5@
+Xr5@
+Xr7@
 Xuub
-Xv6@
 XwA0
+Xx4@
+Xx7@
 Xz"7
+Xz7@
 Y-Ny
 Y4i%
 Y93a=7c@
@@ -4786,6 +4891,7 @@ Z~wl
 \n--- Resource External Refs: ---\n
 \n5a=Z
 \n:82H
+\nPTB$
 \nRAW BUFFER:\n
 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 \n\tIPSec/IKE/Oakley curve #3 over a 155 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
@@ -4912,6 +5018,8 @@ Z~wl
 \tSpecified extraction type "%s" not supported for resource type %s!\n
 \tVPK File % 4d: /%s\n
 \tVTEX Version = %d\n
+\tV_ZSTD_decompress
+\tV_sscanf_s
 \tVertex Buffer%s\n
 \tWidth        = %d\n
 \t[ Additional Options ]\n
@@ -4963,6 +5071,7 @@ Z~wl
 \v\vTSG
 \vj0k
 \vjC7
+\vpTB$
 ]1h=bfz
 ]FhSD}
 ]GT7]
@@ -4979,6 +5088,7 @@ _Ek6b]
 _Lx6
 _OPENSSL_isservice
 _YWL
+_\tV_log2f
 _f%02i
 _flt.vpk
 _g@Cg
@@ -5294,6 +5404,7 @@ bignum routines
 bignum too long
 bin/enginetools.txt
 bin/sdkenginetools.txt
+binary
 binary_array
 binary_seqids
 binary_v
@@ -5730,6 +5841,7 @@ dHHp
 dITRedirect
 dNSDomain
 dOj\f,
+dS4@
 dSAQuality
 dWry
 dZ!2.
@@ -6266,71 +6378,82 @@ g|FeW\v
 g|MT
 h&eC
 h*Ax
-h03@
+h07@
 h0XB
-h13@
-h25@
+h16@
+h24@
 h2Wl
 h2n_\
-h33@
+h36@
+h37@
+h47@
+h48@
 h56@
 h5N.
-h63@
-h73@
-h86@
-h93@
-h95@
-hB3@
-hC3@
-hE3@
-hE6@
+h68@
+h70@
+h84@
+h85@
+h98@
+hA7@
 hEM&!
-hF3@
-hF6@
+hF4@
 hF\rDz
 hFcg
-hI6@
-hJ3@
-hJ6@
+hI4@
 hJxRX@_
-hM3@
+hK6@
 hN2D
-hO5@
-hQ6@
+hN5@
+hO4@
+hQ4@
 hRB.
-hS6@
-hU6@
+hU4@
 hW*m
 hW1M
-hW3@
 hW_z
 hX@e
+hY4@
+hZ7@
 h`Zr
+ha4@
 hammer
 hash
 hashAlgorithm
 hashFunc
-hb6@
+hb7@
 hb`V
 hbvc
+hc4@
+hc6@
+hc7@
 hc[N
 hc\raF
+hd6@
+hd7@
 header too long
 heartbeat request already pending
 hex:
 hex_to_string
 hexkey
+hf4@
+hf6@
+hg4@
+hh7@
 hhwi
+hi4@
+hi7@
 hiddenFlags
 hiddenGroups
 hide_debug_complaints
 high_priority
 hitbox
-hj6@
+hj4@
 hk6@
 hl5v
 hloav\\t
 hm5@
+hm7@
 hmac
 hmac-md5
 hmac-sha1
@@ -6340,8 +6463,10 @@ hmacWithSHA224
 hmacWithSHA256
 hmacWithSHA384
 hmacWithSHA512
-hn5@
 hnM<
+ho4@
+ho6@
+ho7@
 holdInstructionCallIssuer
 holdInstructionCode
 holdInstructionNone
@@ -6353,15 +6478,18 @@ homeTelephoneNumber
 houdini
 houseIdentifier
 hp5@
-hq6@
+hr4@
+hr7@
 hr_H
-hs6@
+hs4@
 http request
 https proxy request
-hu5@
-hv6@
+hu4@
+hv4@
 hvL&
-hw6@
+hw7@
+hx7@
+hy7@
 hz4@
 h|gg
 i <= EVP_MAX_MD_SIZE
@@ -6960,6 +7088,7 @@ l7@J
 lC57
 lDcW
 lM2p
+lZ4@
 language
 last octet invalid
 lastModifiedBy
@@ -7007,6 +7136,7 @@ lightsourceradius
 lineOrder
 list cannot be null
 list error
+ln4@
 loading cert dir
 loading defaults
 localKeyID
@@ -7051,18 +7181,12 @@ m_SubassetDefinitions
 m_SubassetReferences
 m_UserData
 m_WeakReferenceList
-m_bBakedTwoSided
-m_bCanBatchWithDynamicShaderConstants
-m_bDrawLast
+m_bAllowDefinitions
+m_bAllowReferences
 m_bFileExists
-m_bHasBakedLightingFromLightMap
-m_bHasBakedLightingFromVertexStream
 m_bIsGameFile
-m_bIsNotMatchedToMaterial
-m_bNoShadow
-m_bOnlyShadow
 m_bOptional
-m_bUseCompressedNormalTangent
+m_bWorldSpaceOrientation
 m_fMoveTo
 m_nFileCRC
 m_nFingerprint
@@ -7526,48 +7650,59 @@ p.ppBasis
 p.prime
 p.tpBasis
 p06@
-p23@
+p14@
+p26@
+p27@
 p2{l
-p35@
-p45@
+p34@
+p38@
+p44@
 p4Z3
 p4diff
-p53@
+p54@
+p57@
+p58@
 p5Z3
 p5\nL,
 p618
-p65@
-p76@
-p85@
+p64@
+p78@
+p95@
 p@0pqE5tsO?|1
-pA3@
-pB4@
-pD3@
+pA4@
+pB7@
+pC7@
+pD4@
 pD4t
-pG6@
+pD7@
+pE4@
+pF0@
+pF5@
+pF7@
+pG4@
+pG7@
 pG_*h
-pH3@
-pI3@
 pIp 
-pK3@
-pL3@
-pN3@
+pL4@
+pM4@
+pN4@
 pO0h
-pP3@
-pP6@
-pQ3@
+pP0@
+pP4@
+pQ6@
+pR6@
 pRTH
+pS4@
 pSPo
 pSourceFunc
 pSpecified
-pT3@
 pT4@
+pTB$
 pU>\AL
-pV3@
-pW6@
-pX3@
+pV4@
+pV5@
 p^i9
-pa3@
+pa7@
 packet length too long
 padding check failed
 pagerTelephoneNumber
@@ -7595,6 +7730,7 @@ pathlen
 pattern
 payload + padding <= 16381
 payment gateway capabilities
+pb4@
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -7609,7 +7745,10 @@ pbeWithSHA1And40BitRC4
 pbeWithSHA1AndDES-CBC
 pbeWithSHA1AndRC2-CBC
 pcPathLengthConstraint
+pd3$
+pe4@
 pe6@
+pe7@
 peer did not return a certificate
 peer does not accept heartbeats
 peer error
@@ -7626,13 +7765,11 @@ permittedSubtrees
 personalSignature
 personalTitle
 pg6@
-ph6@
 photo
 phrase is too short, needs to be at least %d chars\n
 physicalDeliveryOfficeName
 physicsSimplificationError
 physicsSimplificationOverride
-pi6@
 pilot
 pilotAttributeSyntax
 pilotAttributeType
@@ -7647,6 +7784,8 @@ pinEnabled
 pin_enabled
 pivotOffset
 pixelAspectRatio
+pj6@
+pk4@
 pkL'
 pkcs
 pkcs decoding error
@@ -7679,6 +7818,12 @@ pkey
 pkeyalg
 pkix
 pkparameters2group failure
+pl4@
+pm4@
+pm5@
+pn5@
+pn7@
+po5@
 point arithmetic failure
 point at infinity
 point is not on curve
@@ -7716,7 +7861,11 @@ postprocessing
 posxyz
 pp == NULL || *pp != NULL
 pp&c
+pp4@
+pp7@
 ppBasis
+pq4@
+pq7@
 pqualid
 pr5@
 pre mac length too long
@@ -7775,8 +7924,7 @@ pseudonym
 psk identity not found
 psk no client cb
 psk no server cb
-pt5@
-pu6@
+pt4@
 pub: 
 pub_key
 pubkey
@@ -7792,8 +7940,8 @@ publicKey
 public_key
 pvk data too short
 pvk too short
-pw5@
-pz4@
+px4@
+py4@
 pzKD)
 q not prime
 q&A\nn
@@ -7834,9 +7982,9 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
-r\fpD
+r\fpTB$
 r\vDi
-r\vpT
+r\vpd3$
 radiusScale
 radius_random
 radius_scale
@@ -8326,7 +8474,6 @@ skycolor
 skyintensity
 skyname
 slot full
-slow
 slow_pulse_nofade
 slow_strobe
 slow_strong_pulse
@@ -8558,6 +8705,7 @@ tLY^m`6
 tLl 
 tLsq
 tNt5
+tW4@
 tag mismatch
 tag value too high
 tag=
@@ -8647,6 +8795,7 @@ tlsv1 bad certificate status response
 tlsv1 certificate unobtainable
 tlsv1 unrecognized name
 tlsv1 unsupported extension
+tn4@
 toAttribute
 toElement
 token not present
@@ -9022,12 +9171,12 @@ w{Z0
 x#Nb
 x,5J
 x/OA
-x03@
+x04@
+x07@
 x121Address
-x13@
-x16@
-x26@
-x33@
+x17@
+x36@
+x46@
 x500UniqueIdentifier
 x509
 x509 certificate routines
@@ -9040,52 +9189,59 @@ x509_info
 x509_pkey
 x509_req
 x509_store
+x66@
+x74@
+x88@
 x931
-xE3@
-xE6@
-xF3@
-xF4@
+x94@
+xA0@
+xC4@
+xE7@
 xFKF
-xG3@
-xG4@
-xH3@
-xH6@
-xM3@
-xN3@
-xO3@
-xO5@
+xH4@
+xH7@
+xK4@
+xK6@
+xM6@
+xN5@
+xO4@
 xO6@
 xOu\vsF
-xP3@
-xQ6@
+xP6@
 xQfF
-xR3@
-xR6@
-xS3@
-xU3@
+xR4@
+xT4@
+xU0@
 xUN'
-xW3@
-xX3@
-xX6@
-xY3@
-xZ6@
+xY4@
+xZ0@
+xZ4@
 x\v6V
-xa6@
-xf6@
+xa4@
+xb6@
+xc4@
+xd7@
+xf7@
 xg-9Ja
-xj6@
-xo5@
+xg7@
+xh7@
+xi6@
+xm6@
 xp$=S
+xp5@
 xpH8
-xq5@
 xqI9
 xrJ:DCG
-xs5@
 xsK;
-xt6@
+xu4@
+xv4@
 xv5@
-xw6@
+xw4@
+xw5@
+xw7@
+xx4@
 xxH}
+xz7@
 xzxv
 y#y&Jb
 y0JY
@@ -9114,7 +9270,6 @@ z>Hz
 zF):O4
 zG2m8
 zRXU 
-z\tV_sscanf_s
 zlVO
 zlib compression
 zone

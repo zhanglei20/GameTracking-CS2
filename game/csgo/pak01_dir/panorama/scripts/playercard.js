@@ -82,17 +82,12 @@ var PlayerCard;
             FillOutFriendCard();
     }
     function UpdateName() {
-        let elNameLabel = $.GetContextPanel().FindChildInLayoutFile('JsPlayerName');
-        elNameLabel.text = FriendsListAPI.GetFriendName(_m_xuid);
+        $.GetContextPanel().SetDialogVariable('xuid', _m_xuid);
     }
     function _SetHonorIcon() {
-        const honorIconOptions = {
-            honor_icon_frame_panel: $.GetContextPanel().FindChildInLayoutFile('jsHonorIcon'),
-            debug_xuid: _m_xuid,
-            do_fx: true,
-            xptrail_value: FriendsListAPI.GetFriendXpTrailLevel(_m_xuid),
-        };
-        HonorIcon.SetOptions(honorIconOptions);
+        const elHonorIcon = $.GetContextPanel().FindChildInLayoutFile('jsHonorIcon');
+        if (elHonorIcon)
+            elHonorIcon.Set(FriendsListAPI.GetFriendXpTrailLevel(_m_xuid), false);
     }
     function _SetAvatar() {
         let elAvatarExisting = $.GetContextPanel().FindChildInLayoutFile('JsPlayerCardAvatar');

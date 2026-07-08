@@ -103,7 +103,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnUpdateStatusBar()
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
-2\vp$C
+2\vp`C
+2\vptQ
 2clicked ( )
 2clicked()
 2rangeChanged( int, int )
@@ -484,7 +485,6 @@ CQGridTextWidget
 CQNetGraphPacketsWidget
 CQNetGraphVerticalTicksWidget
 CQNetGraphWidget
-CUtlRBTree<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQNetGraphWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,class CUtlOrderedMapBase<class IVConsoleDevice *,class CQNetGraphWidget *,class CDefLess<class IVConsoleDevice *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQNetGraphWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 Combine
 Courier New
 G[?setRgb@QColor@@QEAAXHHHH@Z
@@ -524,8 +524,9 @@ Paused
 Qt5Widgets.dll
 RSDS6
 RW?restore@QPainter@@QEAAXXZ
+R\fp`C
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
-R\vp$C
+R\vptQ
 Reliable
 Reliable %s
 Rescale
@@ -670,6 +671,7 @@ peer:%1 local:%2
 prediction_errors
 qQ?lineTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
+r\vp`C
 records
 reliable_bits
 render_interpolation_fraction

@@ -78,6 +78,16 @@ declare module "cs_script/point_script"
         /** Set when the OnThink callback should next be run. The exact time will be on the tick nearest to the specified time, which may be earlier or later. */
         SetNextThink(time: number): void;
 
+        /**
+         * Queue up a callback to be invoked once, after all entities have executed their think functions this tick (eg. player input has been handled, projectiles have moved).
+         * This can be useful for delaying until a clean moment when an entity isn't mid-computation and might ignore or misinterpret.
+         * This can be useful for delaying until the world is in a consistent state.
+         * Callbacks queued up during a post entity think callback will be invoked in the same tick.
+         * @experimental This method is experimental and may experience breaking changes.
+         * Please send feedback to CSGOTeamFeedback@valvesoftware.com with "cs_script Feedback" in the subject line.
+         */
+        QueueAfterThinks( callback: () => void ): void;
+
         /** Called when the point_script entity is activated */
         OnActivate(callback: () => void): void;
         /** Called when input RunScriptInput is triggered on the point_script entity with a parameter value that matches name. */
@@ -139,6 +149,8 @@ declare module "cs_script/point_script"
          * This will be called for all impacts of a bullet before any player damage events are called.
          */
         OnBulletImpact(callback: (event: { weapon: CSWeaponBase, position: Vector, hitEntity: Entity }) => void): void;
+        /** Called when a weapon is dropped. */
+        OnWeaponDrop(callback: (event: { weapon: CSWeaponBase }) => void): void;
         /** Called when a grenade is thrown. `projectile` is the newly created grenade projectile. */
         OnGrenadeThrow(callback: (event: { weapon: CSWeaponBase, projectile: Entity }) => void): void;
         /** Called when a grenade bounces off a surface. `bounces` is the number of bounces so far. */
@@ -551,6 +563,7 @@ declare module "cs_script/point_script"
     export class CSWeaponBase extends BaseModelEntity {
         GetData(): CSWeaponData;
         GetOwner(): CSPlayerPawn | undefined;
+        GetOriginalOwner(): CSPlayerPawn | undefined;
         GetClipAmmo(): number;
         SetClipAmmo(ammo: number): void;
         GetReserveAmmo(): number;
@@ -645,12 +658,3 @@ declare module "cs_script/point_script"
     /** @deprecated This enum will be removed in a future update */
     export enum CSDamageType { }
 }
-
-/**
- * @deprecated This unreleased feature will be removed in a future update as will the ability to load vts assets.
- */
-declare module "server/serverpointentity" { }
-/**
- * @deprecated This unreleased feature will be removed in a future update as will the ability to load vts assets.
- */
-declare module "server/cspointscript" { }

@@ -152,7 +152,7 @@
 							<CSGOAvatarImage id="JsDirectChallengeAvatar" class="directchallenge-status__header__avatar" />
 							<Panel class="directchallenge-status__header__text">
 								<Label id="" class="directchallenge-status__header__codesourcelabel horizontal-align-left vertical-align-top" text="{s:code-source-label}" />
-								<Label id="JsDirectChallengeKeySource" class="directchallenge-status__header__codesource horizontal-align-left vertical-align-top" text="{s:code-source}" />
+								<Label id="JsDirectChallengeKeySource" class="directchallenge-status__header__codesource horizontal-align-left vertical-align-top" text="{s:code-source}" html="true" />
 								<Label id="JsDirectChallengeKey" class="directchallenge-status__header__queuecode horizontal-align-left vertical-align-top" text="{s:queue-code}" />
 							</Panel>
 							<Button id="CopyChallengeKey" class="IconButton" onactivate="$.DispatchEvent( &apos;DirectChallenge_CopyKey&apos; )" onmouseout="UiToolkitAPI.HideTextTooltip()">

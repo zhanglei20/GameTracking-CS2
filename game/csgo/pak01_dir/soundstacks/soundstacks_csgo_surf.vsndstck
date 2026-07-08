@@ -1284,11 +1284,18 @@
 				input_compute_occlusion = "true"
 			},
 			{
+				name = "one_minus_occlusion"
+				operator = "math_float"
+				apply = "sub"
+				input1 = "1"
+				input2 = "@params_steamaudio_source.output_occlusion_value"
+			},
+			{
 				name = "occlusion_path_ratio"
 				operator = "math_float"
 				apply = "div"
 				input1 = "1"
-				input2 = "@params_steamaudio_source.output_occlusion_value"
+				input2 = "@one_minus_occlusion.output"
 				output = "100"
 			},
 			{

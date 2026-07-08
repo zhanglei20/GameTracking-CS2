@@ -114,12 +114,8 @@ var EOM_Rank;
                     if (_m_cP && _m_cP.IsValid()) {
                         _m_cP.SetHasClass('xptrail-acquired', true);
                         _DisplayXpTrailRemainingTime(oXpData.xp_trail_remaining);
-                        HonorIcon.SetOptions({
-                            honor_icon_frame_panel: _m_cP.FindChildTraverse('jsHonorIcon'),
-                            do_fx: true,
-                            xptrail_value: xp_trail_level,
-                            force_icon: 'xptrail',
-                        });
+                        const elHonorIcon = _m_cP.FindChildTraverse('jsHonorIcon');
+                        elHonorIcon.Set(xp_trail_level, false);
                     }
                 });
             }
@@ -156,18 +152,13 @@ var EOM_Rank;
         let animTime = 0;
         _AnimPause(1.0);
         function _PlaceXpTrail(xp) {
-            HonorIcon.SetOptions({
-                honor_icon_frame_panel: _m_cP.FindChildTraverse('jsHonorIcon'),
-                do_fx: false,
-                xptrail_value: xp_trail_level,
-                force_icon: 'xptrail',
-            });
+            const elHonorIcon = _m_cP.FindChildTraverse('jsHonorIcon');
+            elHonorIcon.Set(xp_trail_level, false);
             _m_cP.SetHasClass('xptrail-enabled', xp >= 0);
             if (xp < 0)
                 return;
-            const elXpTrailIcon = _m_cP.FindChildTraverse('jsHonorIcon');
             const XpTrail_pct = (xp / xPPerLevel * 100) - 2;
-            elXpTrailIcon.style.x = (XpTrail_pct) + '%;';
+            elHonorIcon.style.x = (XpTrail_pct) + '%;';
         }
         function _DisplayXpTrailRemainingTime(xp_trail_remaining) {
             _m_cP.SetHasClass('xptrail-remaining-time-enabled', (xp_trail_remaining != undefined) && (xp_trail_remaining > 0));

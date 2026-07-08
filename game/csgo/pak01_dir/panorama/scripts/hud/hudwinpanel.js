@@ -89,7 +89,7 @@ var HudWinPanel;
         }
         $.GetContextPanel().SetDialogVariable("mvp_name_and_reason", $.Localize(sMvpReasonToken, $.GetContextPanel()));
         const jsHonorIcon = $("#jsHonorIcon");
-        $.DispatchEvent("HonorIcon_SetOptions", jsHonorIcon, jsHonorIcon, true, GameStateAPI.GetPlayerXpTrailLevel(xuid), false);
+        jsHonorIcon.Set(GameStateAPI.GetPlayerXpTrailLevel(xuid), false);
     }
     function _OnReceivePlayerHurt(attackerXuid, victimXuid, damage) {
         if (!_m_ListeningForGameEvents)

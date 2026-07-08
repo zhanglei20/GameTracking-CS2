@@ -163,8 +163,8 @@ var InspectActionBar;
         const isPatch = ItemInfo.IsPatch(id);
         const isKeychain = ItemInfo.IsKeychain(id);
         const isSpraySealed = ItemInfo.IsSpraySealed(id);
-        const isEquipped = InventoryAPI.IsEquipped(id, 't') || InventoryAPI.IsEquipped(id, 'ct') || InventoryAPI.IsEquipped(id, "noteam");
-        let bCloseInspectOnSingleAction = (isSticker || isSpraySealed || isFanToken || isPatch || isKeychain || isStickerDisplaySleeve);
+        const bCloseInspectOnSingleAction = (isSticker || isSpraySealed || isFanToken || isPatch || isKeychain || isStickerDisplaySleeve);
+        let isEquipped = InventoryAPI.IsEquipped(id, 't') || InventoryAPI.IsEquipped(id, 'ct') || InventoryAPI.IsEquipped(id, "noteam");
         if (ItemInfo.IsEquippalbleButNotAWeapon(id) ||
             bCloseInspectOnSingleAction ||
             isEquipped) {

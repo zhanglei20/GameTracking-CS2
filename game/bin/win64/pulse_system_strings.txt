@@ -1,4 +1,4 @@
-  C%d:I%-2d {F=%-10d,V=%-10d} 
+  C%d:I%-2d {F=%-10d,V=%-10d,S=%-20.20s} 
   CallInfo%d: %s\n
   Cell%d - NULL\n
   Cell%d EditorID:%d [%s]: %s\n
@@ -16,6 +16,7 @@
  [*OBSERVABLE*]
 !g_pPulseSystem->GetWeakHandleTable()->AnyHandlesAllocated()
 "Limit Count: " + m_nLimitCount
+#\tV_exp2f
 %d CallInfos:\n
 %d Cells:\n
 %d Chunks:\n
@@ -28,17 +29,22 @@
 %s '%s' (%s)
 %s (uid=%d)
 %s [%u] - %s\n
+%s%02d:%02d
 %s::%s (%u)
 %s::%s (Entity Output Handler)
+%s:autowake
+%s:interrupt
+%s:wait
 (debug)
 *** Test failure: "%s"
 - Graph Def '
+. Dead
 . Req FAIL
 . Req PASS
-. Retired
 . Tag Added: '%s'
 . Tag Removed: '%s'
 .?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_IntervalTimer_DebugInfo_t@@
 .?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AUFakeEntityDerivedA_t@@
 .?AUFakeEntityDerivedB_t@@
@@ -49,10 +55,16 @@
 .?AUPulseSystemEventObservableVariableSourceChanged_t@@
 .?AUPulseSystemEventYieldResume_t@@
 .?AUTestComponent_t@@
-.?AV<lambda_3>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@
-.?AV<lambda_4>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@
-.?AV<lambda_5>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumShape_t@@@@
-.?AV<lambda_6>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumShape_t@@@@
+.?AV<lambda_10>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumFlags_t@@@@
+.?AV<lambda_11>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumFlagsAlt_t@@@@
+.?AV<lambda_12>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumFlagsAlt_t@@@@
+.?AV<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
+.?AV<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@
+.?AV<lambda_5>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@
+.?AV<lambda_6>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@
+.?AV<lambda_7>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumShape_t@@@@
+.?AV<lambda_8>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumShape_t@@@@
+.?AV<lambda_9>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumFlags_t@@@@
 .?AV?$CBaseAppSystem@VIPulseSystem@@@@
 .?AV?$CKV3ResourceTypeManager@$0GFHDGMHFHAHG@@@
 .?AV?$CPulseModuleRegistrationHook@VCPulseDomainScopeLoader@@@@
@@ -60,14 +72,20 @@
 .?AV?$CTier1AppSystem@VIPulseSystem@@$0A@@@
 .?AV?$CTier2AppSystem@VIPulseSystem@@$0A@@@
 .?AV?$CTier3AppSystem@VIPulseSystem@@$0A@@@
-.?AV?$_Func_impl_no_alloc@V<lambda_3>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_4>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_5>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumShape_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_6>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumShape_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_10>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumFlags_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_11>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumFlagsAlt_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_12>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumFlagsAlt_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseDurationStringFormat_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_5>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_6>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumColor_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_7>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumShape_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_8>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumShape_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_9>@?$PulseBindingSchemaEnumTraits_t@W4PulseTestEnumFlags_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AVCBasePulseGraphInstance@@
 .?AVCKV3ResourceBlockHelper@@
 .?AVCKV3Transfer_ResourceLoadInterface@@
-.?AVCPulseAPIExtensionRegistrationContext_t@@
+.?AVCPulseAPIExtensionRegistrationContext@@
 .?AVCPulseBlackboardViewFromGraphInstance@@
 .?AVCPulseCell_BaseState@@
 .?AVCPulseCell_BooleanSwitchState@@
@@ -97,7 +115,11 @@
 .?AVCPulseCell_Step_TestDomainDestroyFakeEntity@@
 .?AVCPulseCell_Step_TestDomainEntFire@@
 .?AVCPulseCell_Step_TestDomainTracepoint@@
+.?AVCPulseCell_TestEnums@@
+.?AVCPulseCell_TestWaitWithAutoTracepoints@@
 .?AVCPulseCell_TestWaitWithCursorState@@
+.?AVCPulseCell_TestYieldForever@@
+.?AVCPulseCell_TestYieldWithObservables@@
 .?AVCPulseCell_Test_MultiInflow_NoDefault@@
 .?AVCPulseCell_Test_MultiInflow_WithDefault@@
 .?AVCPulseCell_Test_MultiOutflow_WithParams@@
@@ -123,8 +145,8 @@
 .?AVCPulseGraphInstance_TestDomain_UseReadOnlyBlackboardView@@
 .?AVCPulseGraphInstance_TurtleGraphics@@
 .?AVCPulseGraphLoadContext@@
+.?AVCPulseLibraryVisitForFingerprint@@
 .?AVCPulseSystem@@
-.?AVCPulseTargetVisitForVMMD_t@@
 .?AVCPulseTestHandleService@@
 .?AVCPulseTurtleGraphicsCursor@@
 .?AVCPulseTypeManager@@
@@ -133,6 +155,7 @@
 .?AVCSchemaRegistration_pulse_runtime_lib@@
 .?AVCSchemaRegistration_pulse_system@@
 .?AVCTestDomainDerived_Cursor@@
+.?AVCVisitTargetRootForGDClasses@@
 .?AVIAsyncProcessedDataResult@@
 .?AVIPulseBlackboardView@@
 .?AVIPulseExecLog@@
@@ -146,9 +169,11 @@
 .?AVIPulseHost_YieldingCursor@@
 .?AVIPulseSystem@@
 .?AVIResourceTypeManager@@
+;1#INF
 <No Cell>
 <map_key>
 <map_value>
+<non-RTTI type>
 <none>\n
 == PulseGraphDef ==\n
 @fff>fff>fff>fff>
@@ -164,10 +189,12 @@ Abs Float
 Abs Int
 Absolute value (float)
 Absolute value (int)
+Add Flags
 Add R%d <- R%d + R%d
+Add flags to the given value.
 Add the array 'b' to the end of 'a'.
 Adjust heading (positive = right, negative = left)
-Always
+After the real remainder, how many additional digits should we continue to append to create additional visual movement?
 And R%d <- R%d && R%d
 Any Other Cursors Have Tag
 Arc Cos
@@ -191,9 +218,11 @@ Array Remove Invalid Elements
 Array Set Count
 Array Shuffle
 Assert True
+Async Call Method (Child Cursor) C%d:I%d
 Async Child1
 Async Child2
-Async Fire C%d:I%d
+Async Outflow (Child Cursor) C%d:I%d
+Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 Bad FLC data for resource '%s': %s\n
 Bad KV3 data for resource '%s': %s\n
 Bad count in ArraySetCount (%d)
@@ -204,6 +233,7 @@ Bad reinterpret on ArrayRemoveElementMatching
 Base-10 logarithm
 Base-2 logarithm
 Basic Function
+Basic string support.
 Begin testing a condition composed of Observable values. Continues checking until canceled.
 Begin testing a condition composed of Observable variable references. Continues checking until true.
 C:\buildworker\csgo_rel_win64\build\_build_\pulse_system\_vpc_pulse_system\default\win64\_msvc_\Retail\pulse_system.pdb
@@ -222,8 +252,8 @@ CGlobalSymbol
 CGlobalSymbolCaseSensitive
 CKV3MemberNameSet
 CKV3MemberNameWithStorage
-COMPONENT(
-COMPONENT(%s)+%s
+COMPONENT!
+COMPONENT!%s+%s
 CPiecewiseCurve
 CPulseArraylib::ArrayAppend
 CPulseArraylib::ArrayConcatenate
@@ -236,11 +266,11 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
+CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_ExampleCriteria::CheckRequirement
 CPulseCell_ExampleSelector::ProcessSelector
-CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
 CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
@@ -250,7 +280,6 @@ CPulseCell_Inflow_ObservableVariableListener '%s'.'%s (%u)' --> Chunk%d: %s
 CPulseCell_InlineNodeSkipSelector::ProcessSelector
 CPulseCell_IntervalTimer::OnInterval
 CPulseCell_IntervalTimer::Start
-CPulseCell_IntervalTimer::StopTimer
 CPulseCell_IsRequirementValid::CheckRequirement
 CPulseCell_LimitCount::CheckRequirement
 CPulseCell_LimitCount::CommitStep
@@ -262,8 +291,16 @@ CPulseCell_Step_TestDomainCreateFakeEntity::Run
 CPulseCell_Step_TestDomainDestroyFakeEntity::Run
 CPulseCell_Step_TestDomainEntFire::Run
 CPulseCell_Step_TestDomainTracepoint::Run
-CPulseCell_TestWaitWithCursorState::FailImmediately
+CPulseCell_TestEnums
+CPulseCell_TestEnums::CompareValues
+CPulseCell_TestWaitWithAutoTracepoints
+CPulseCell_TestWaitWithAutoTracepoints::Wait
+CPulseCell_TestWaitWithCursorState::InstanceState_t
 CPulseCell_TestWaitWithCursorState::Wait
+CPulseCell_TestYieldForever
+CPulseCell_TestYieldForever::Run
+CPulseCell_TestYieldWithObservables
+CPulseCell_TestYieldWithObservables::Run
 CPulseCell_Test_MultiInflow_NoDefault::InflowA
 CPulseCell_Test_MultiInflow_NoDefault::InflowB
 CPulseCell_Test_MultiInflow_WithDefault::InflowA
@@ -278,24 +315,26 @@ CPulseCell_Test_MultiOutflow_WithParams_Yielding::OnOut1
 CPulseCell_Test_MultiOutflow_WithParams_Yielding::OnYieldResume1
 CPulseCell_Test_MultiOutflow_WithParams_Yielding::OnYieldResume2
 CPulseCell_Test_MultiOutflow_WithParams_Yielding::Start
-CPulseCell_Test_MultiOutflow_WithParams_Yielding::Stop
 CPulseCell_Timeline::Start
-CPulseCell_Timeline::Stop
 CPulseCell_Val_TestDomainFindEntityByName::Eval
 CPulseCell_Val_TestDomainGetEntityName::Eval
 CPulseCell_Value_Curve::Eval
 CPulseCell_Value_Gradient::Eval
 CPulseCell_Value_TestValue50::Eval
 CPulseCell_WaitForCursorsWithTag::Wait
-CPulseCell_WaitForObservable::Cancel
 CPulseCell_WaitForObservable::Start
 CPulseCursorFuncs::AnyOtherCursorsHaveTag
 CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
-CPulseCursorFuncs::KillThisCursorAndCancel
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
+CPulseCursorFuncs::WakeCursorsWithTag
+CPulseEnumlib
+CPulseEnumlib::AddFlags
+CPulseEnumlib::HasAllFlags
+CPulseEnumlib::HasAnyFlags
+CPulseEnumlib::RemoveFlags
 CPulseFakeEntityList::CreateFakeEntity
 CPulseFakeEntityList::DestroyAll
 CPulseGraphInstance_TestDomain::GenerateInt
@@ -343,6 +382,7 @@ CPulseMathlib::MakeTransform
 CPulseMathlib::MakeVector
 CPulseMathlib::MakeVector2D
 CPulseMathlib::MakeVector4D
+CPulseMathlib::MakeVectorFromAngle
 CPulseMathlib::MakeWorldTransform
 CPulseMathlib::MakeWorldVector
 CPulseMathlib::MaxFloat
@@ -372,11 +412,15 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
-CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
+CPulseObservableExpression
+CPulseStringlib
+CPulseStringlib::FormatDurationStringFromSeconds
+CPulseStringlib::StringLength
+CPulseStringlib::StringsAreEqualCaseSensitive
 CPulseSystem: Detected NULL RESOURCE_TYPE_PULSE_GRAPH_DEF, skipping type manager registration.\n
 CPulseSystem::Internal_InstanceCreated( %s, %p )\n
 CPulseSystem::Internal_InstanceDestroyed( %s, %p )\n
@@ -384,6 +428,7 @@ CPulseTestFuncs_LibraryA::AGreaterThan5
 CPulseTestFuncs_LibraryA::AValueChanged
 CPulseTestFuncs_LibraryA::AZeroed
 CPulseTestFuncs_LibraryA::GetEnumColorValue
+CPulseTestFuncs_LibraryA::GetEnumFlagsValue
 CPulseTestFuncs_LibraryA::GetEnumShapeValue
 CPulseTestFuncs_LibraryA::GetFloatValue
 CPulseTestFuncs_LibraryA::GetIntValue
@@ -396,6 +441,7 @@ CPulseTestFuncs_LibraryA::LibrarySpawnFakeEntity
 CPulseTestFuncs_LibraryA::PrintStringWithEditorSuggestions
 CPulseTestFuncs_LibraryA::PrintStringWithLeafSuggestions
 CPulseTestFuncs_LibraryA::SetEnumColor
+CPulseTestFuncs_LibraryA::SetEnumFlags
 CPulseTestFuncs_LibraryA::SetEnumShape
 CPulseTestFuncs_LibraryA::SetFloatValue
 CPulseTestFuncs_LibraryA::SetFloatValueOptional
@@ -432,6 +478,7 @@ CPulseTurtleGraphicsCursor::Turn
 CPulseTypeManager::Allocate( %s )\n
 CPulseTypeManager::Deallocate( %s, %p )\n
 CPulseTypeManager::DeallocateResource( %s, %s, dealloc=%p live=%p )\n
+CREATE_CHILD_CURSOR_OUTFLOW
 CStrongHandle
 CTestDomainDerived_Cursor::GetCursorValueA
 CTestDomainDerived_Cursor::GetCursorValueB
@@ -445,15 +492,9 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_InstructionDebug,int,c
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_RegisterInfo,int,class CMemAllocAllocator>,struct CPulse_RegisterInfo,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct PGDInstruction_t,int,class CMemAllocAllocator>,struct PGDInstruction_t,int>::InsertBeforeGetPtr
 CUtlOrderedMap<class PulseSymbol_t,class IPulseBlackboardView *,class CDefLess<class PulseSymbol_t>,int>::FindElement
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseSymbol_t,class CReadOnlyBlackboardView *,class CDefLess<class PulseSymbol_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseSymbol_t,class CReadOnlyBlackboardView *,class CDefLess<class PulseSymbol_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseSymbol_t,class CReadOnlyBlackboardView *,class CDefLess<class PulseSymbol_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseSymbol_t,class IPulseBlackboardView *,class CDefLess<class PulseSymbol_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseSymbol_t,class IPulseBlackboardView *,class CDefLess<class PulseSymbol_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseSymbol_t,class IPulseBlackboardView *,class CDefLess<class PulseSymbol_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlVectorFixedGrowable
 Call C%d:I%d (%s)
 Called to invoke the graph
-Cancel
-Cancel observing.
 Cannot allocate abstract class
 Cast of %s loses value information (returning %s) in %s on %s:%u\n
 Ceiling - round float up to nearest integer)
@@ -468,8 +509,10 @@ Clamp value to range (float)
 Clamp value to range (int)
 Class does not allow allocation from its schema binding
 Commit Step
-Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
+Compare Values
+Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive.
 Completed
+CompletedNormally
 Component Func
 Computes 2 ( 2.71...) raised to a power
 Computes e ( 2.71...) raised to a power
@@ -492,7 +535,6 @@ Cross Product of Vector a x Vector b
 Cursor Has Tag
 Cursor [%s] @ %.2f. Cell: %u => %s: %s
 Cursor[ ptr:%p | id:%d | graph:%p ]: CPulseExecCursor()\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: Completed with result:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of result:%d from Subject:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d\n
 Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d\n
@@ -523,6 +565,8 @@ Dot Product of Vector a
 Element Access R%d <- R%d[R%d]
 EntFire,%s,%s,%s
 EntityName
+Enum flags '%s' invalid value '%s'
+Enum support.
 Enumeration '%s' does not have a value '%s'
 Eq R%d <- R%d == R%d
 Evaluate the curve at the specified input position
@@ -532,10 +576,9 @@ External system providing an int for the test graph to consume
 External system requesting a vector from the test graph
 External system requesting an int from the test graph
 External system requesting an int from the test graph (variant)
-Fail Immediately
 Fail Outflow
-Failed to allocate an instance of a class
-Failed to allocate an instance of class '%s'
+Failed to allocate an instance of a class of type '%s'
+Failed to allocate an instance of class '%s' (type '%s')
 Failed to apply FLC data to resource '%s': %s\n
 Failed to load %s: %s
 Failed to load: '%s' graph not found\n
@@ -556,6 +599,7 @@ FakeEntity_t_DomainSubType
 Find a spawned entity by name.
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find all the yielded cursors on this graph with the matching tag and wake them.
 Find first element 'a' which compare equal to 'element' and return its index.
 Fired when A becomes 0 from any other number.
 Fired when A exceeds 5.
@@ -564,6 +608,7 @@ Float To Game Time
 Floor - round float down to nearest integer
 Floor Float
 Flow Node ID
+Format Duration String From Seconds
 Frac
 Fractional component (ie. returns 0.34 for 12.34)
 Free
@@ -577,6 +622,7 @@ GenerateVector
 Get Cursor Value A
 Get Cursor Value B
 Get Enum Color Value
+Get Enum Flags Value
 Get Enum Shape Value
 Get Float Value
 Get Instance Value X
@@ -589,6 +635,7 @@ Get the 'ValueA' number off the cursor.
 Get the 'ValueB' number off the cursor.
 Get the 'ValueX' number off the graph instance.
 Get the global color enum value.
+Get the global flags enum value.
 Get the global float value.
 Get the global int value.
 Get the global shape enum value.
@@ -604,14 +651,18 @@ GetInlineConst R%d <- C%d (%s)
 GetVar R%d <- V%d (%s)
 GetVar R%d <=MOVE*V%d (%s)
 Gradient()
+HPulseCell
+HPulseCellBase
+HYieldedCursor
 HandleInt
 HandleIntDerived
+Has All Flags
+Has Any Flags
 IKV3TransferInterface_ResourceSave
 IPulseGraphLoadErrorReporter
 IPulseReloadListener
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
-If -1 timer will continue forever
 If specified, each wait interval will vary randomly between WaitInterval this value
 If this cursor spawns other work via Fire And Forget, should this Tag be inherited?
 Impl::AssertCastImpl
@@ -626,6 +677,8 @@ InflowB
 Insert 'element' in the given index in 'a', increasing its count by one and moving the elements after index.
 Integer Divide
 Integer division - unlike the divide (/) node, this will truncate any remainder (floor) and return an integer.
+InterruptElegantly
+InterruptImmediately
 Invoke Cell%d [eid=%d] %s%s
 Invoke Lib %s
 Invoke binding %d (%s) not found, converting to NOP\n
@@ -636,7 +689,6 @@ Jump to Instr I%d
 KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
-Kill This Cursor And Cancel
 Leap to Chunk C%d
 Length (magnitude) of Vector
 Length (magnitude) of Vector2D
@@ -650,10 +702,14 @@ LessEq R%d <- R%d <= R%d
 Library Destroy Fake Entity
 Library Find Fake Entity By Name
 Library Spawn Fake Entity
+Live Float Value
+Live String Value
 Log10
 Log2
 Lower pen.
 MAtomicTransfersAsPlainString
+MM:SS with leading zeros
+MM_SS_LEADING_ZERO
 MPropertyFlattenIntoParentRow
 MPropertyLeafSuggestionProviderFn
 MPulseEditorHeaderExpr
@@ -661,18 +717,20 @@ MPulseEditorHeaderText
 MPulseExpressionAlias
 MPulseFunctionDisableRequirements
 MPulseFunctionHiddenInTool
-MPulseLegacyName
+MPulseTypeRestriction
 Make Angle
 Make Angle From Forward Vector
 Make Color
 Make Transform
 Make Vector
+Make Vector From Angle
 Make Vector2 D
 Make Vector4 D
 Make World Transform
 Make World Vector
 Make a Color from component parts
 Make a Transform from component parts.
+Make a Vector from an Angle
 Make a Vector from component parts.
 Make a Vector2D from component parts.
 Make a World Vector from component parts.
@@ -696,6 +754,7 @@ Multiple pointer returns
 NULL CELL 
 NULL_ENT
 Natural logarithm (base e)
+Need to specify a pulse file to open.\n
 Neg R%d <- -R%d
 Neq R%d <- R%d != R%d
 No DATA block for resource\n
@@ -704,6 +763,7 @@ Normalize Vector a
 Not R%d <- !R%d
 Not safe to 'new' this class due to alignment requirements
 NotReloading
+OUTPUT!%s::%s
 On Interval
 On True
 OnAsyncChild1
@@ -714,7 +774,7 @@ OnOut2
 OnYieldResume1
 OnYieldResume2
 Only wrote %d (of %d) values when saving map!
-Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
+Opens the specified pulse used in this map in the editor.\n\tArguments: <pulse_file>
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Or R%d <- R%d || R%d
 Out1
@@ -733,6 +793,7 @@ PanelID
 Parameters
 ParametersKV3
 Parent Map: %s\n
+Parent VData
 Pass Outflow
 Pen Down
 Pen Up
@@ -744,13 +805,17 @@ PrintStringWithEditorSuggestions: %s\n
 PrintStringWithLeafSuggestions: %s\n
 Probable infinite loop detected! Terminating pulse cursor after %d consecutive instructions (%s)
 Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
+Proceed Immediately
 Process Selector
 Pulse system: minimal vpulse definition loading enabled - graphs may be incomplete!\n
 Pulse: %s 
+PulseDurationStringFormat_t
 PulseSystemEventCursorResult_t
 PulseSystemEventObservableVariableListenerNotify_t
 PulseSystemEventObservableVariableSourceChanged_t
 PulseSystemEventYieldResume_t
+PulseTestEnumFlagsAlt_t
+PulseTestEnumFlags_t
 R Sqrt
 RESOURCE_TYPE_PULSE_GRAPH_DEF
 Rad2 Deg
@@ -759,15 +824,19 @@ Random World Position
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
 Reciprocoal square root (1/sqrt)
 Record that the function was called
+Reference Color
+Reference Flags
 Register Test Checkpoint
 RegisterChoice_CPulseTestFuncs_LibraryA_PrintStringWithLeafSuggestions
 Reinterpret Instance %s R%d <- %s R%d
 Reloading
 Remap Clamped Float
 Remap and clamp input value from input range to output range (float)
+Remove Flags
 Remove Tag From Cursor
 Remove all elements from 'a' which are invalid instances.
 Remove all elements from 'a' which compare equal to 'element'.
+Remove flags from the given value.
 Remove the element at the given index in 'a', decreasing its count by one and moving the elements after index.
 Remove the given tag from this cursor. If other cursors are waiting on us, they will resume.
 Return the input string, use the code default if none was supplied.
@@ -784,15 +853,18 @@ Returns true if the World Vector is valid
 Returns up to the maximum requested elements. Never grows the array (unlike SetCount).
 Round - round float up or down to integer
 Round Float
+SECOND
 Saturate
 Saturate (clamps float between 0 and 1)
 Save a named value of any type on the cursor.
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
+Second
 Set And Get Int Value
 Set Cursor Value A
 Set Cursor Value B
 Set Enum Color
+Set Enum Flags
 Set Enum Shape
 Set Float Value
 Set Float Value Optional
@@ -805,6 +877,7 @@ Set the 'ValueB' number on the cursor.
 Set the 'ValueX' number on the graph instance.
 Set the current color
 Set the global color enum value.
+Set the global color flags value.
 Set the global color shape value.
 Set the global float value (with default).
 Set the global float value.
@@ -847,14 +920,15 @@ Sqr Int
 Sqrt
 Square root
 Start a timer with the specified duration, fire the OnInterval output 
-Stop Timer
-Stop any active timers - the completed outflow will still fire
+Stop Waiting
 String Length
 Strings Are Equal Case Sensitive
 Sub R%d <- R%d - R%d
-T\tV_log2f
+Synchronous - Wait for this node to fully complete before proceeding.
+THIRD
 Tag Cursor
 Tag Self When Complete
+TagsRemoved
 Tangent of angle. Input in radians, output in radians
 Test Array Array Access
 Test Array Int Shuffle
@@ -863,6 +937,7 @@ Test Compiled Params  After Type Changes
 Test Compiled Params  Before Type Changes
 Test Domain
 Test Domain Entity
+Test Enums
 Test Function Renamed   With Args  New
 Test Function Renamed  New
 Test Function Renamed  Old
@@ -889,25 +964,37 @@ TestFunctionRenamed_New
 TestFunctionRenamed_Old
 TestFunctionRenamed_WithArgs_New
 TestFunctionRenamed_WithArgs_Old
+The Target object. In code, this parameter is the API This() object for this Input.
+Third
 This is the description of the fake entity sub-domain
+This is the overall duration. If -1 timer will continue forever. During this duration, we will fire a new child cursor at each Interval.
 Time since the start of the timer
+Trace Prefix
 TracePoint: %s
 Tried to load a polymorphic pointer with no '%s' key
 Tried to load resource reference '%s' from a value without a resource reference specific type.
+Turn a time in seconds into a display string. NOT localized.
 Turtle Graphics Domain
 TurtleGraphics
+Unknown format type
 Unsupported version %d for resource '%s' (Expected %d)\n
 Used to flag a test as having failed.
+VDATA
 Value 0-1 how far along duration (always 0 if duration is -1)
 Vector To World Vector
 WARNING: Pulse failed to restore yielded cursor - error with cell state (%d:%s)\n
 WARNING: Pulse failed to restore yielded cursor - no yielding cell or landing pad (%d:%s)\n
 WARNING: Pulse failed to save yielded cursor - no yielding cell or landing pad (C%d:I%d)\n
 Wait Complete
-Wake Cancel
+Wait and Trace
+Wake Cursors With Tag
 Wake Fail
-When False
-When True
+Watch For Float Value
+Watch For String Value
+Whether value has ALL of the specified flags set (it may have other flags.)
+Whether value has ANY of the specified flags set (it may have other flags.)
+While False
+While True
 World Vector To Vector
 X to the Y power
 Yield Resume1
@@ -922,24 +1009,24 @@ Yield, Resume=%s
 [NOP]
 [RETURN R%d]
 [RETURN]
-\tV_acosd
+\f\tV_acosd
 \tV_asind
+\tV_atand
 \tV_cosd
-\tV_exp2f
 \tV_tand
-\t\tV_atand
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_StringAfterPrefixCaseSensitive
+_\tV_log2f
 __CursorQueue__
 __FireCursorsParent__
 __State_Child_Condition__
-__State_Child_Subgraph__
 __TimelineParent__
 __test_graph_%d.vpulse
 _cells
 a:fulltype
 a:typeparam
 active_frame
+allflags
 allow_direct_return
 allowed_api_features
 allowed_requirements
@@ -949,11 +1036,13 @@ animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
 animgraph_enum
+anyflags
 arg1
 arg2
 arg3
 arg4
 attr_factory
+bFail
 bInAutoWakeList
 bInherit
 bValue
@@ -982,6 +1071,7 @@ domain_subtype_info
 element
 execution_history
 expr_alias
+expression_type
 fakeEnt.m_nHandle.WeakHandle() == PULSE_WEAK_HANDLE_INVALID
 fake_derived_a
 fake_derived_b
@@ -1005,6 +1095,7 @@ flPitch
 flRadians
 flRoll
 flScale
+flSeconds
 flTime
 flVal
 flValue
@@ -1021,7 +1112,6 @@ flc_file_ids
 flc_file_list
 flc_lines
 frac
-friendly_name_without_target
 gamedata
 gameitemclass
 gameunitclass
@@ -1038,6 +1128,7 @@ instance_parm
 instance_variable
 instances
 intchoices
+interrupt_priority
 intmap
 is_pulse_domain_subtype
 is_pulse_global_event
@@ -1048,8 +1139,6 @@ is_pulse_target_output
 is_selector
 is_spontaneous
 keyframeclass
-legacy_name_replacement
-legacy_names
 length2d
 length3d
 lerp
@@ -1072,15 +1161,21 @@ m_Inputs
 m_Items
 m_KV3Metadata
 m_LegacyDefaultStr
+m_LiveFloatValue
+m_LiveStringValue
 m_LongName
 m_MetaData
+m_Metadata
 m_MissingRetvalDefault
 m_ParamType
 m_PlugType
 m_PreparedHook
 m_ResumePoint
+m_SequencePoint
 m_Stops
 m_TagValue
+m_TracePrefix
+m_WatchForStringValue
 m_bChildCursorsShouldInherit
 m_bConditionValue
 m_bCustom
@@ -1091,22 +1186,30 @@ m_bUsingLegacyDefault
 m_bmaxs
 m_bmins
 m_curValue
-m_externalMethodTargetGraph
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_flWakeTime
+m_flWatchForFloatValue
 m_hCursor
+m_hCursorOnOtherGraph
 m_hDef
 m_hGraphInstance
 m_hInstance
 m_hListenerInstance
 m_hObserver
+m_hSelfCellInstance
+m_hSelfCellInstanceUntyped
+m_hSelfCursor
 m_iValue
+m_nCellID
 m_nClassType
 m_nCurrentWakeIndex
 m_nCursorID
+m_nDummy
 m_nGraphID
 m_nLegacyDefaultInt
+m_nReferenceColor
+m_nReferenceFlags
 m_nResult
 m_nStackDepthWhenAdded
 m_nSubject
@@ -1133,15 +1236,19 @@ modelstatechoices
 moveclass
 nAsyncRet1
 nDenominator
+nFormat
 nHandle
 nKillPriority
 nMaxElements
 nNumerator
 nParam
+nRemainderDigits
+nRemainderNoiseDigits
 nRetValue
 nRetValue2
 nShape
 nValue
+nWakePriority
 nWhichOutflowA
 nWhichOutflowB
 nYieldArg1
@@ -1152,7 +1259,6 @@ node_id
 node_id_List
 npc_ability_name
 npcclass
-o\tV_sind
 observable_false
 observable_listeners
 observable_scope
@@ -1160,6 +1266,7 @@ observable_true
 observer_cursors
 omni
 open_asset %s
+open_current_map_pulse_in_tool
 operator int
 outbound
 overrideclass
@@ -1212,6 +1319,8 @@ remove_key
 requested_cancel
 required_domain_subtype
 resourcesystem
+return_values
+return_values_enabled
 round
 rsqrt
 saturate
@@ -1249,7 +1358,9 @@ text_block
 tools/images/pulse_editor/cursor_kill.png
 tools/images/pulse_editor/kill_cursor_with_tag.png
 type:
+type_restriction_is_enum_flags
 vForward
+value:fulltype
 vdata
 vdata_choice
 vdataderived
@@ -1261,3 +1372,5 @@ world_angle
 world_point
 world_transform
 yield_token
+z\tV_sind
+{ item_factory = 'IntervalTimer' }

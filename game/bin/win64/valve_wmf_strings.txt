@@ -6,8 +6,7 @@
 .?AV?$CTier3AppSystem@VIMediaFoundation@@$0A@@@
 .?AVCMediaFoundation@@
 .?AVIMediaFoundation@@
-2\vp0
-2\vp`b
+2\vp0b
 7^d[L
 C:\buildworker\csgo_rel_win64\build\_build_\valve_wmf\_vpc_valve_wmf\default\win64\_msvc_\Retail\valve_wmf.pdb
 MFCreateMediaType
@@ -31,7 +30,6 @@ MFSetAttributeSize( pVideoTypeOut.Get(), MF_MT_FRAME_SIZE, params.m_nWidth, para
 MFShutdown
 MFStartup
 RSDSP
-R\fp0
 YUY2
 p6auds
 pAudioTypeIn->SetGUID( MF_MT_MAJOR_TYPE, MFMediaType_Audio )
@@ -59,5 +57,4 @@ pVideoTypeOut->SetUINT32( MF_MT_INTERLACE_MODE, MFVideoInterlace_Progressive )
 pVideoTypeOut->SetUINT32( MF_MT_MPEG2_PROFILE, eAVEncH264VProfile_Main )
 qH264
 qvids
-r\vp0
 valve_wmf.dll

@@ -14,14 +14,12 @@
     owner:     %llx\n
     rejected dedicated server '%s' due to ip filter '%s'\n
    View %s failed to allocate description!\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
- % 2d %s %s\n
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$P
  (08@HPX`j
- (08@HPXb0
+ (08@HPXb
  (08@HPZ
- (08@HR0
- (08@J0
- (0X`hpz0
+ (08@HR
+ (0X`hpz
  :score average_contribution  :payloadformat {  payload0 {  :score mvp_awards :format int  :upload sum  }  payload1 {  :score rounds_played  :format int  :upload sum  }  payload2 {  :score total_contribution  :format int  :upload sum  }  payload3 {  :score kills  :format int  :upload sum  }  payload4 {  :score deaths  :format int  :upload sum  }  payload5 {  :score damage  :format int  :upload sum  }  } 
  :score kd_ratio  :payloadformat {  payload0 {  :score kills :format int  :upload sum  }  payload1 {  :score deaths  :format int  :upload sum  }  payload2 {  :score rounds_played  :format int  :upload sum  }  payload3 {  :score shots_fired  :format int  :upload sum  }  payload4 {  :score head_shots  :format int  :upload sum  }  payload5 {  :score shots_hit  :format int  :upload sum  }  } 
  :score num_rounds  :scoresum 1  :payloadformat {  payload0 {  :score time_played  :format uint64  :upload sum  }  payload1 {  :score time_played_ct  :format uint64  :upload sum  }  payload2 {  :score time_played_t  :format uint64  :upload sum  }  payload3 {  :score total_medals  :format int  :upload last  }  } 
@@ -61,7 +59,7 @@ $\n k_ECommunityItemClass_Consumable
 $\n k_ECommunityItemClass_SalienItem
 $\n k_EGCMsgGetEmailTemplateResponse
 $\n k_EGCMsgWebAPIRegisterInterfaces
-$tIH
+$tIJobs/Coroutines
 %\n k_EGCMsgAccountPhoneNumberChange
 %\n k_EGCMsgGCAccountVacStatusChange
 %\n!GCClientLauncherType_PERFECTWORLD
@@ -72,8 +70,6 @@ $tIH
 %llX
 %llx
 %llx/%s
-%s is now muted.\n
-%s is now unmuted.\n
 %u.%u.%u.%u:%u
 &\n!k_EGCMsgMasterSetClientMsgRouting
 &\n!k_EGCToGCMsgMasterStartupComplete
@@ -111,7 +107,6 @@ $tIH
 (\v2A.CProductInfo_SetRichPresenceLocalization_Request.LanguageSection
 (\v2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F\n!CWorkshop_GetContributors_Request
 (\v2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
-(muted)
 )\n%k_ECommunityItemAttribute_IssueNumber
 )\n%k_ECommunityItemClass_ProfileModifier
 *\n%k_EGCMsgGetPartnerAccountLinkResponse
@@ -126,7 +121,6 @@ $tIH
 ,\n(k_ECommunityItemAttribute_StorePackageID
 ,ar_monastery
 ,sv_load_test
--------     ----------------\n
 -\n\tAttribute
 .360
 .?AV?$CBaseAppSystem@VIGameTypes@@@@
@@ -144,7 +138,6 @@ $tIH
 .?AV?$CCallback@VCMatchSteamInviteListener@@UGameLobbyJoinRequested_t@@$0A@@@
 .?AV?$CCallback@VCSysSessionBase@@ULobbyChatMsg_t@@$0A@@@
 .?AV?$CCallback@VCSysSessionBase@@ULobbyChatUpdate_t@@$0A@@@
-.?AV?$CCallback@VCSysSessionBase@@UP2PSessionRequest_t@@$0A@@@
 .?AV?$CCallback@VCSysSessionBase@@USteamServersConnected_t@@$0A@@@
 .?AV?$CCallback@VCSysSessionBase@@USteamServersDisconnected_t@@$0A@@@
 .?AV?$CCallback@VCSysSessionClient@@ULobbyEnter_t@@$0A@@@
@@ -211,8 +204,6 @@ $tIH
 .?AVCCommunity_GetGamePersonalDataEntries_Response@@
 .?AVCCommunity_TerminateGamePersonalDataEntries_Request@@
 .?AVCCommunity_TerminateGamePersonalDataEntries_Response@@
-.?AVCDatacenter@@
-.?AVCDatacenterCmdBatchImpl@@
 .?AVCDsSearcher@@
 .?AVCFastSteamFriendsWithInProcessCache@@
 .?AVCGCClient@GCSDK@@
@@ -252,7 +243,6 @@ $tIH
 .?AVCMatchSystem@@
 .?AVCMatchTitle@@
 .?AVCMatchTitleGameSettingsMgr@@
-.?AVCMatchVoice@@
 .?AVCMsgAccountDetails@@
 .?AVCMsgClientHello@@
 .?AVCMsgClientWelcome@@
@@ -317,8 +307,6 @@ $tIH
 .?AVCWorkshop_SetItemPaymentRules_Response@@
 .?AVGameTypes@@
 .?AVICacheableMapEvictable@CFastSteamFriendsWithInProcessCache@@
-.?AVIDatacenter@@
-.?AVIDatacenterCmdBatch@@
 .?AVIGameEventListener2@@
 .?AVIGameTypes@@
 .?AVILeaderboardRequestQueue@@
@@ -332,7 +320,6 @@ $tIH
 .?AVIMatchSystem@@
 .?AVIMatchTitle@@
 .?AVIMatchTitleGameSettingsMgr@@
-.?AVIMatchVoice@@
 .?AVIPlayer@@
 .?AVIPlayerFriend@@
 .?AVIPlayerLocal@@
@@ -363,14 +350,14 @@ $tIH
 0.0.0.0
 00000000
 08@HR
-08@J0
+08@J
 0\n,GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE
 0\n,k_ECommunityItemAttribute_CommunityItemAppID
+0v8,
 18446744073709551615
 1\n,k_EGCMsgGetGamePersonalDataCategoriesRequest
 2\n-k_EGCMsgGetGamePersonalDataCategoriesResponse
 2\vpt
-2\vp|U
 32:B\n
 3\n/k_ECommunityItemAttribute_ProfileModiferEnabled
 4Ccl_session
@@ -391,6 +378,8 @@ $tIH
 :upload
 <\n\ncategories
 >\n\tTypeCache
+@08N8,
+@HPX`hv
 @\n\fSingleObject
 @workshop
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
@@ -399,7 +388,6 @@ APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!
 ATime team search is in error state until it self-cancels
 AddWorkItem
 Adding player %llu to team %d\n
-All connected players have been unmuted.\n
 AllowSecureServers
 Attempted a typeid of nullptr pointer!
 AvgFormula
@@ -408,6 +396,10 @@ AwaitingRemoteAccept
 Away
 BAsyncSend
 BAsyncSendProto
+BFrameFuncCheckForJobTimeouts
+BFrameFuncDispatchCompletedWorkItems
+BFrameFuncResumeSleepingJobs
+BFrameFuncResumeYieldingJobs
 B\nP\t0
 Bad read pointer - no RTTI data!
 Busy
@@ -415,6 +407,7 @@ C:\buildworker\csgo_rel_win64\build\_build_\matchmaking\_vpc_matchmaking_csgo\de
 C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\gcclient.cpp
 C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\gclogger.cpp
 C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\job.cpp
+C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\jobmgr.cpp
 C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\messagelist.cpp
 C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\msgprotobuf.cpp
 C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\workthreadpool.cpp
@@ -433,6 +426,11 @@ CGCToGCMsgMasterAck_Response
 CGCToGCMsgMasterStartupComplete"X\n
 CGCToGCMsgRouted
 CGCToGCMsgRoutedReply
+CJobMgr::BFrameFuncCheckForJobTimeouts
+CJobMgr::BFrameFuncDispatchCompletedWorkItems
+CJobMgr::BFrameFuncResumeSleepingJobs
+CJobMgr::BFrameFuncResumeYieldingJobs
+CJobMgr::TimeoutJob
 CJobMgr::m_WorkThreadPool
 CLeaderboardRequestQueue::OnQueryFinished\n
 CLeaderboardRequestQueue::OnStartNewQuery - request prepared.\n
@@ -510,23 +508,8 @@ CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<int,struct GCSDK:
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<char const *,struct GCSDK::JobType_t const *,struct CaseSensitiveStrEquals,struct MurmurHash3ConstCharPtr>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<char const *,struct GCSDK::JobType_t const *,struct CaseSensitiveStrEquals,struct MurmurHash3ConstCharPtr>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<unsigned __int64,class GCSDK::CJob *,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<unsigned __int64,class GCSDK::CJob *,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<unsigned __int64,int,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<unsigned __int64,int,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<unsigned int,struct GCSDK::JobStatsBucket_t,class CUtlHashMapLargeDefEquals<unsigned int>,struct MurmurHash3Functor<unsigned int> >::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<unsigned int,struct GCSDK::JobStatsBucket_t,class CUtlHashMapLargeDefEquals<unsigned int>,struct MurmurHash3Functor<unsigned int> >::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<unsigned __int64,struct GCSDK::JobStatsBucket_t,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<unsigned __int64,struct GCSDK::JobStatsBucket_t,class CUtlHashMapLargeDefEquals<unsigned __int64>,struct MurmurHash3Functor<unsigned __int64> >::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<unsigned int,struct GCSDK::JobType_t const *,class CUtlHashMapLargeDefEquals<unsigned int>,struct MurmurHash3Functor<unsigned int> >::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<unsigned int,struct GCSDK::JobType_t const *,class CUtlHashMapLargeDefEquals<unsigned int>,struct MurmurHash3Functor<unsigned int> >::HashBucket_t,int>::AddMultipleToTail
-CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlString,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlString,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlString,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class GCSDK::CSOIDNameInfo,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class GCSDK::CSOIDNameInfo,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class GCSDK::CSOIDNameInfo,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct GCSDK::SOID_t,class GCSDK::CGCClientSharedObjectCache *,class CDefLess<struct GCSDK::SOID_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct GCSDK::SOID_t,class GCSDK::CGCClientSharedObjectCache *,class CDefLess<struct GCSDK::SOID_t>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct GCSDK::SOID_t,class GCSDK::CGCClientSharedObjectCache *,class CDefLess<struct GCSDK::SOID_t>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,class CUtlOrderedMap<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int> *,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,class CUtlOrderedMap<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int> *,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,class CUtlOrderedMap<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int> *,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,class CUtlOrderedMap<int,class CUtlString,class CDefLess<int>,int> *,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,class CUtlOrderedMap<int,class CUtlString,class CDefLess<int>,int> *,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,class CUtlOrderedMap<int,class CUtlString,class CDefLess<int>,int> *,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,class CUtlString,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,class CUtlString,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,class CUtlString,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,double,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,double,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,double,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,enum EFriendRelationship,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,enum EFriendRelationship,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,enum EFriendRelationship,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,enum EPersonaState,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,enum EPersonaState,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,enum EPersonaState,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,int,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,int,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,int,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,struct CIgnoredSessionsMgr::SessionSearchPass_t,class CDefLess<unsigned __int64>,unsigned short>::Node_t,class CUtlOrderedMapBase<unsigned __int64,struct CIgnoredSessionsMgr::SessionSearchPass_t,class CDefLess<unsigned __int64>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,struct CIgnoredSessionsMgr::SessionSearchPass_t,class CDefLess<unsigned __int64>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,float,class CDefLess<unsigned int>,unsigned short>::Node_t,class CUtlOrderedMapBase<unsigned int,float,class CDefLess<unsigned int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,float,class CDefLess<unsigned int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<void *,struct CThreadSafeMultiMemoryPool::RawAllocation_t,class CDefLess<void *>,int>::Node_t,class CUtlOrderedMapBase<void *,struct CThreadSafeMultiMemoryPool::RawAllocation_t,class CDefLess<void *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<void *,struct CThreadSafeMultiMemoryPool::RawAllocation_t,class CDefLess<void *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlSortVector<struct GCSDK::CSharedObject::SharedObjectInfo_t,class GCSDK::CSharedObject::CCompareSharedObject,class CUtlVector<struct GCSDK::CSharedObject::SharedObjectInfo_t,int,class CUtlVectorMemory_Growable<struct GCSDK::CSharedObject::SharedObjectInfo_t,int,0> > >::Find
 CWorkThread -- Sleep
 CWorkThreadPool::StartWorkThread: Thread creation failed.\n
@@ -549,8 +532,6 @@ Created CMatchSessionOnlineSearch:\n
 Created CMatchSessionOnlineTeamSearch:\n
 Created DS searcher\n
 Created lobby id: 0x%llx\n
-Datacenter::EnableUpdate( %d ), current state = %d\n
-Datacenter::RequestStop, time %.2f, state %d\n
 DebugDrawQueueManager001
 Dedicated search in progress\n
 Dedicated search not active\n
@@ -574,8 +555,6 @@ EconVData001
 EmitBaseMessageV
 EntitySubclassUtilsV001
 Establishing connection with %d search results.\n
-Example usage: voice_mute player#   -   where player# is a number that you can find with "voice_show_mute" command.\n
-Example usage: voice_unmute {player#|all}   -   where player# is a number that you can find with "voice_show_mute" command, or all to unmute all connected players.\n
 ExpCheck
 ExperienceFormula
 ExperienceRange
@@ -679,7 +658,6 @@ GamesTypes: unable to set bot difficulty convars. There are no convars for bot d
 GamesTypes: unable to set convars. There are no convars for game type/mode (%s:%d/%s:%d).\n
 GamesTypes: unable to set game type and mode. Could not find type/mode matching type:%s/mode:%s.\n
 GamesTypes: unable to set game type and mode. Game type value is outside valid range.  (value == %d)\n
-GetPchTempTextBuffer() called after UninitTempTextBuffers()
 Host settings have bad key %s:%d\n
 HostUtils001
 IND)ind)"
@@ -720,16 +698,12 @@ Migrate
 Migrated into CMatchSessionOnlineClient:\n
 Migrated into CMatchSessionOnlineHost:\n
 Migrating into CMatchSessionOnlineClient...\n
-Mute list cleared.\n
-Mutelist
-Mutelist/%d
 Near
 Near/game:ark
 Near/members:numPlayers
 NetMsg: %s
 NetMsg: Unknown %d
 No match session.\n
-No players currently connected who can be muted.\n
 Offline
 Offline session failed to convert to online session: %s\n
 Offline session is already in active game, discarding online session\n
@@ -753,18 +727,17 @@ OnPlayerUpdated
 OnProfileLeaderboardData
 OnProfilesWriteOpportunity
 OnSteamOverlayCall::LobbyJoin
-OnSysMuteListChanged
 Online
 OnlineSearch - client fully connected to session, search finished.\n
 OnlineSearch::StartSearch failed to build filter list!\n
 OnlineSearch::StartSearchPass:\n
 Options/searchteamkey
 Options/server
-P08@J0
+P08@J
+P08Jp
+P08N8,
 P\n\nattributes
 PartnerItemPaymentRule
-Player#     Player Name\n
-Player# is invalid or refers to a bot, please use "voice_show_mute" command.\n
 PlayerLocal::UpdateLeaderboardData for %s ...\n
 PlayerLocal::UpdateLeaderboardData for %s finished.\n
 PlayerManager::OnGameUsersChanged\n
@@ -772,7 +745,6 @@ PredictionDiffManager001
 QueueConnect
 RP for %s\n
 RSDSu
-R\vp|U
 Received %d search results.\n
 Received server_pre_shutdown notification - server is shutting down...\n
 Requested join data %.3f sec ago from xuid = %llx\n
@@ -822,9 +794,6 @@ SysSession::OnUpdate
 SysSession::Quit
 SysSession::ReplyJoinData
 SysSession::RequestJoinData
-SysSession::Voice
-SysSession::VoiceMutelist
-SysSession::VoiceStatus
 SysSessionData
 System data:\n
 System/dependentlobby
@@ -850,6 +819,7 @@ TeamSearchResult::ListenClient
 TeamSearchResult::ListenHost
 Thread "%s" (ID %llu) failed to shut down
 ThreadingMain
+TimeoutJob
 TitleSettings
 Token
 Trying to send message type %d before GC connection established.  This is guaranteed to fail.\n
@@ -868,7 +838,7 @@ WOL: 0x%p (%s)
 WWWWWWWWWWWWWWW
 W\n\fdescriptions
 WakeDependentJobFinished
-Warning: ignoring P2P session request from %s\n
+Work Item for Work Pool %s completed but job no longer existed to notify\n
 WorkshopDirectPaymentRule
 WorkshopItemPaymentRule
 X`hr
@@ -933,7 +903,7 @@ X`hr
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 _remote_host
 _remote_xuidsrc
-aE%s%s
+aBv8,
 accepted
 access
 account_locked
@@ -1020,7 +990,6 @@ eresult
 exec_offline
 externalIP
 externalpeer
-false:A\n
 filter
 finale_start
 free_trial_account
@@ -1089,10 +1058,10 @@ host>client
 host_writeconfig_ss %d
 hostendgame
 hostinit
-hpz0
 imagename
 is_identifying
 item_description
+job warning: Resuming job '%s (id: %lld)' due to timeout while paused for %s\n
 join
 joincheck
 joined
@@ -1211,7 +1180,6 @@ local
 localization_token
 lock
 machine%d
-machine%d/id
 machine0
 machine0/tuver
 makeonline
@@ -1287,6 +1255,7 @@ options/sessionHostData
 options/sessionid
 options/sv_load_test
 outofdate_subscribed_caches
+p08@H^8,
 partner_accountbalance
 partner_accountflags
 partner_accountid
@@ -1297,13 +1266,13 @@ payment_us_usd
 peerserver
 phone_id
 player%d
-player%d/voice
 player%d/xuid
 player_capacity
 player_connect
 player_death
 player_disconnect
 players_humans
+pn8,
 practicesettings_
 prefix_item_name
 preview
@@ -1381,7 +1350,6 @@ socache_control
 socache_have_versions
 soid
 starting
-stat
 stat_agg
 steam_launcher
 steamdatagram_login
@@ -1433,7 +1401,6 @@ uptodate_subscribed_caches
 v\n,associated_workshop_file_for_direct_payments
 valid
 versions
-voice
 waiting for lock
 weaponprogression_ct
 weaponprogression_t

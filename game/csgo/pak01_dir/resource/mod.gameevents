@@ -128,18 +128,21 @@
 	{
 		"userid"	"player_controller_and_pawn"		// player who planted the bomb
 		"site"		"short"		// bombsite index
+		"c4"		"short"
 	}
 	
 	"bomb_defused"
 	{
 		"userid"	"player_controller_and_pawn"		// player who defused the bomb
 		"site"		"short"		// bombsite index
+		"c4"		"short"
 	}
 	
 	"bomb_exploded"
 	{
 		"userid"	"player_controller_and_pawn"		// player who planted the bomb
 		"site"		"short"		// bombsite index
+		"c4"		"short"
 	}
 	
 	"bomb_dropped"
