@@ -6540,6 +6540,7 @@ $prefix_element$
 ?waitForFinished@QProcess@@QEAA_NH@Z
 ?waitForReadyRead@QProcess@@UEAA_NH@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
+@08Nd
 @606
 @608
 @HPX`hvpP
@@ -10471,7 +10472,7 @@ Overwrite
 Overwrite With Current
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
 P08@JPk+
-P08J
+P08Nd
 P2Pk+
 P4 Operation failed
 P4InteractionDialog
@@ -12963,6 +12964,7 @@ a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
 a?y@QMouseEvent@@QEBAHXZ
+aBvd
 aC=H
 aTR>7
 aZure : voiced postalveolar fricative
@@ -14653,6 +14655,7 @@ overrideShutterSpeedValue
 ownerelement
 ownerlog
 p"?value@QSpinBox@@QEBAHXZ
+p08@H^d
 p2Pk+
 p4win
 p60\

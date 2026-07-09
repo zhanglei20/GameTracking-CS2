@@ -152,9 +152,10 @@
  %i refs\n
  (08@HPX`hpx
  (08@HPX`j@E
- (08@HPXb@
+ (08@HPXb
  (08@HPZ@E
- (0X`hpz@
+ (08@HR
+ (0X`hpz
  (Start: 
  (default = .tga + .wav file)\n
  (fallback, started with 
@@ -169,7 +170,7 @@
  -component "%s"
  -noscreenshot
  -product "%s"
- .phG
+ .06G
  2r6
  3CQ`p
  7Me}
@@ -926,6 +927,7 @@ $tI(knN
 (channel = 
 (dump took %.1fms)\n
 (end of input).\n\t This indicates a poorly specified lexer RULE\n\t or unterminated input element such as: "STRING["]\n
+(f YG
 (merge 
 (no landmark)
 (no reason given)
@@ -1073,9 +1075,10 @@ $tI(knN
 ../src/shaders
 ..\content
 .00cfg
-.01G
-.0WG
-.0cG
+.08G
+.0eG
+.0jG
+.0lG
 .9GXdx
 .>\rfJBGo
 .?AU?$Container@VUnknownFieldSet@protobuf@google@@@InternalMetadata@internal@protobuf@google@@
@@ -2475,12 +2478,9 @@ $tI(knN
 .ESource2PlayStatsFieldType
 .ESplitScreenMessageType
 .P6AXPEBD@Z
-.PBG
 .PEAVCEntityIdentity@@
+.PIG
 .PLACEHOLDER_VALUE
-.PRG
-.PcG
-.PeG
 .ProtoFlattenedSerializer_t
 .RequestPause_t
 .SignonState_t
@@ -2520,10 +2520,13 @@ $tI(knN
 .log
 .los
 .lzh
-.p7G
-.pVG
-.pcG
+.p6G
+.pMG
+.pbG
+.pdG
 .pdata
+.peG
+.pfG
 .placeholder.proto
 .rdata
 .rdata$00
@@ -2596,14 +2599,14 @@ $tI(knN
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
 08@HR@E
-08@J@
+08@J
 08B@E
 08\fj
 0: run all send jobs on main thread; 1: send jobs run asynchronously (except on dedicated server); 2: send jobs asynchronously; 3: send jobs run in parallel but block to not overlap the next tick; 4: main server clients' send jobs run in parallel, then HLTV server jobs; this approximately matches pre-async profile for a single HLTV server configuration
+0:0d%
 0:<\n\fdelta_ignore
 0=Off, 1=Surface Wireframe, 2=Transparent Wireframe
 0=Off, 1=Visualize trace from camera, 2=Visualize occlusion, 3=Visualize far field trace from camera
-0>PUG
 0B_u
 0C&C
 0E>X
@@ -2650,11 +2653,13 @@ $tI(knN
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2$.google.protobuf.FieldOptions.JSType:\tJS_NORMAL
 2%sT5
+2(RB
 2).google.protobuf.FileOptions.OptimizeMode:
 2*.google.protobuf.FieldDescriptorProto.Type
 2+.google.protobuf.FieldDescriptorProto.Label
 2/.google.protobuf.MethodOptions.IdempotencyLevel:
 200000
+20b%
 25:Q
 2CZu
 2Hax
@@ -2666,7 +2671,7 @@ $tI(knN
 2\r.PrefetchType"h\n
 2\rU2t
 2\tV_fpclassifyd
-2\vpL
+2\vpT
 2i0/
 3$EE\f
 3'F^7
@@ -2706,21 +2711,22 @@ $tI(knN
 5\n\vnested_type
 5c;3E
 5y?4
-6 BG
-605G
+6 3G
+6 SG
+60BG
+60IG
+60RG
 64-bit
 6?k 6?t
 6GQ^h~
 6KT3c7
 6NK>
-6V{G
+6PZG
 6\fXO>\ntA
 6\n\fmessage_type
 6\r56t
-6`7G
-6`gG
-6`kG
-6p4G
+6`LG
+6`MG
 6s?fBbEcJYG[I[NYVP\B]@f;g<h<u4{,
 6tmT
 6uu?>
@@ -2741,6 +2747,7 @@ $tI(knN
 8@HP:
 8@J@E
 8A3b
+8B0}$
 8B@E
 8Csinf
 8Smt
@@ -2749,6 +2756,7 @@ $tI(knN
 8\n\vdescriptors
 8\vu8t
 8b  16-May-2010
+8e5^
 8ke?;
 8}WW`
 9*ubC'
@@ -2812,7 +2820,6 @@ $tI(knN
 =e2m
 =imb;D
 =rF`JXKXWJYB[Cd;l2x(z%a+N2SNTQXKVJWGZI]J]Jm(r$u"u"
->0MG
 >0|t?z7
 >5dK
 >6uu
@@ -2826,7 +2833,8 @@ $tI(knN
 >cQ6
 >fff?fff?fff?fff?invalid_hitbox
 >jtm}S
->pLG
+>p5G
+>pPG
 >qxs
 >qxs?
 >qxs?z7
@@ -3184,14 +3192,13 @@ $tI(knN
 ?ysB
 @ Current  :  %s\n
 @08@HPX`hpx
-@08Nd
-@6P*G
+@08N
+@60bG
+@60dG
 @GetProfile_ultrafast
 @HPX
 @HPX&I
-@HPX`hv@CG
-@HV QG
-@NPDG
+@HPX`hv
 @\tV_fwrite
 @^8U)zj
 @i-kuX
@@ -3381,7 +3388,6 @@ Automatically records all games as SourceTV demos.
 Av8I5
 Avestan
 A{v8
-B0b%
 B2Bk
 B5@S
 B86!
@@ -5182,7 +5188,10 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 Extra arguments given after name\n
 ExtractModuleMetadata
 Extraneous token
+F JG
+F0XG
 F>qUxv
+F@HG
 FAIL
 FALSE
 FATAL
@@ -6570,14 +6579,12 @@ Override Fog color: %f %f %f\n
 Overrides the SourceTV master root address.
 Overrides the max players reported to prospective clients
 Overriding minidump handler with Engine2MinidumpFunction\n
-P08@J@
-P08JP
-P08Nd
+P08@J
+P08J
+P08N
 P2@E
 P4File
-P6P=G
-P6PgG
-P6`/G
+P6`bG
 P:S;A
 P?fff?33s?{
 P@HPX`hpx\f
@@ -6701,6 +6708,7 @@ PerFrameSleepChanged
 PerFrameSleepMS
 Perf stats buffer full, no more data will be collected.\n
 Performs a bind <key> "increment var <cvar> 0 1 1".
+Pfp1G
 Phags_Pa
 Phoenician
 PhysicsBuilderMgr001
@@ -6849,6 +6857,7 @@ Playing Broadcast (%s)
 Playing Demo (%s)
 Playing back demo: '%s' at tick %u\n
 PmNk
+PnP3G
 Pointers cannot be used as numeric values
 PollAndProcessInput
 Poor man's restart: reload the current map from disk.
@@ -7035,7 +7044,7 @@ RP_PAUSE
 RP_TOGGLEPAUSE
 RSDS
 RST%d
-R\vpL
+R\vp4
 RaiseException
 Random Float
 Random Integer
@@ -8338,7 +8347,6 @@ UtlVectorMemory_FailedAllocation
 U}JK
 U}g7x~
 V/?[w8rV
-V0fG
 V<@ss
 V?wm\v
 VApplication001
@@ -8473,7 +8481,6 @@ Visibility %s.\n
 Voice
 VoiceDataFormat_t
 Void
-Vp\G
 Vrad3_001
 Vu?N\t?8Ws?vGr?
 Vv.q
@@ -8667,7 +8674,6 @@ You have been kicked and banned %s by the server.\n
 Your current chat group is "%s"\n
 YpU_Z
 Z-google.golang.org/protobuf/types/descriptorpb
-Z0b%
 Z48wN39
 Z6y\r?
 Z?SHX?
@@ -8754,7 +8760,7 @@ Zq",9\fB
 \fV4U
 \fX\fm\vH\vH\vm\v
 \f\ng_pThreadPool
-\foNj
+\fp\vPP
 \g is not followed by a braced, angle-bracketed, or quoted name/number or by a plain number
 \n    Actual    : 
 \n    Field type: 
@@ -9172,7 +9178,6 @@ Zq",9\fB
 ]\n,NETWORK_DISCONNECT_REJECT_INVALIDRESERVATION
 ]\tV_log2_uint
 ^<V7w
-^PUG
 ^RfN>
 ^\n*NETWORK_DISCONNECT_KICKED_CONVICTEDACCOUNT
 ^\n*NETWORK_DISCONNECT_KICKED_UNTRUSTEDACCOUNT
@@ -9233,8 +9238,8 @@ _spawngroup_logging/log_%s_group_%s.txt
 _temp_mapcycle.txt
 `-uRQg
 `3Q"X
-`6 eG
-`60eG
+`6PdG
+`6PeG
 `?m'_?&~]?(
 `RTTI
 `adjustor{
@@ -9292,7 +9297,6 @@ a numbered reference must not be zero
 a&M-=Z]<i*k)n-t&q&p&|
 a6>r
 a?wSa?\
-aBvd
 a\tV_logf
 a\v4+Wk
 abcdefghijklmnopqrstuvwxyz
@@ -10001,6 +10005,7 @@ false:=\n\rvalve_map_key
 false:?\n
 false:A\n
 fast path %d at %d\n
+fb{G
 field
 field_serializer_name_sym
 field_serializer_version
@@ -10032,6 +10037,7 @@ float32
 float64
 floor
 fmod
+fn{G
 fog_enable
 fog_override_color
 fog_override_enable
@@ -10052,8 +10058,6 @@ forcing new thread crash\n
 forcing parallel process non-main thread crash\n
 format
 found duplicate in %s\n
-fp(G
-fpGG
 fps variability,
 fps,
 fps_max
@@ -10176,6 +10180,7 @@ guid
 h0'D
 h>1my
 hJ4%
+hMI^
 hPU3
 hTarget
 h\n,NETWORK_DISCONNECT_REMOTE_TIMEOUT_CONNECTING
@@ -10230,7 +10235,6 @@ hostname
 hostname : %s\n
 hostname_in_client_status
 hostport
-hpz@
 hscript
 hscript_lightbinding
 http Send %.3f ms ave, %.3f ms max\n
@@ -10719,11 +10723,13 @@ multvar
 multvar: cvar "%s" not found\n
 multvar: no varname specified!\n
 mx=E
+n 4G
 n03>Pu
+n0UG
 n>sak><
 n?A6
 n?SZn?
-n@jG
+n@QG
 nBits != 32
 nGh>
 nI9>h
@@ -10834,6 +10840,8 @@ not started
 not supported
 notes
 nothing to repeat
+npHG
+npWG
 null
 nullptr
 num_bits
@@ -10941,20 +10949,21 @@ overwatch
 owM&
 owner dead
 oz>!km>
-p08@H^d
+p08@H^
 p0p@
+p20}$
 p2@E
 p2p_listpeers
 p2p_ping "%s"
 p4edit
-p6@0G
+p6@OG
+p>7{G
 p?ff
 p@HPX`h\f
 pClass
 pClass->m_ClassID(%i) >= %i\n
 pClient
 pCm)
-pF ]G
 pH\fy
 pMessage
 pNewSet->m_readPipe.OpenPipe_Named( false, szReadPipeParam, true )
@@ -11103,10 +11112,12 @@ quit
 quit\n
 qxs?L
 qxs?z7
+r0b%
 r?dar?\n
 rA?7
 rEy5
 rFg7
+r\fp4
 r\tVr.>T
 r_always_render_all_windows
 r_aspectratio
@@ -11951,6 +11962,7 @@ utcdatetime_vals
 utl_vector, 
 utlstringtoken
 uzKs@>
+v0iG
 v2!L.2
 vE-2
 vQO+t
@@ -12131,7 +12143,6 @@ y\tV_sincosf
 yields
 yiq-
 yslf`ZTMGA;5.
-z0b%
 z?Mbz?H5z?
 z\n8NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
 z\nB\fz

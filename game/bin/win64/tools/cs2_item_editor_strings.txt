@@ -4378,7 +4378,6 @@ $\n\tword_list
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @08N<U;
-@HPX`hv
 @\n\fSingleObject
 @\n\vserver_type
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
@@ -5687,7 +5686,6 @@ Other Tools
 Outliner
 OverlayProjectionDirection
 P08@Jp
-P08J
 P08N<U;
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ

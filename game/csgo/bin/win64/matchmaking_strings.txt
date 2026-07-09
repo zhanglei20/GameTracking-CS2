@@ -16,10 +16,7 @@
    View %s failed to allocate description!\n
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$P
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  :score average_contribution  :payloadformat {  payload0 {  :score mvp_awards :format int  :upload sum  }  payload1 {  :score rounds_played  :format int  :upload sum  }  payload2 {  :score total_contribution  :format int  :upload sum  }  payload3 {  :score kills  :format int  :upload sum  }  payload4 {  :score deaths  :format int  :upload sum  }  payload5 {  :score damage  :format int  :upload sum  }  } 
  :score kd_ratio  :payloadformat {  payload0 {  :score kills :format int  :upload sum  }  payload1 {  :score deaths  :format int  :upload sum  }  payload2 {  :score rounds_played  :format int  :upload sum  }  payload3 {  :score shots_fired  :format int  :upload sum  }  payload4 {  :score head_shots  :format int  :upload sum  }  payload5 {  :score shots_hit  :format int  :upload sum  }  } 
  :score num_rounds  :scoresum 1  :payloadformat {  payload0 {  :score time_played  :format uint64  :upload sum  }  payload1 {  :score time_played_ct  :format uint64  :upload sum  }  payload2 {  :score time_played_t  :format uint64  :upload sum  }  payload3 {  :score total_medals  :format int  :upload last  }  } 
@@ -350,7 +347,6 @@ $tIJobs/Coroutines
 0.0.0.0
 00000000
 08@HR
-08@J
 0\n,GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE
 0\n,k_ECommunityItemAttribute_CommunityItemAppID
 0v8,
@@ -379,7 +375,6 @@ $tIJobs/Coroutines
 <\n\ncategories
 >\n\tTypeCache
 @08N8,
-@HPX`hv
 @\n\fSingleObject
 @workshop
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
@@ -715,7 +710,6 @@ OnlineSearch::StartSearch failed to build filter list!\n
 OnlineSearch::StartSearchPass:\n
 Options/searchteamkey
 Options/server
-P08@J
 P08Jp
 P08N8,
 P\n\nattributes

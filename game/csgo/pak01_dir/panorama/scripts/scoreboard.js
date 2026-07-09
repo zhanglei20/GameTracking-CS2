@@ -825,8 +825,14 @@ var Scoreboard;
                                     _m_panelCache.m_elMusicKitUnborrow.SetHasClass('hidden', !isBorrowed);
                                 }
                                 let imagepath = 'file://{images}/' + InventoryAPI.GetItemInventoryImageFromMusicID(newStatValue) + '.png';
-                                $('#id-sb-meta__musickit-image').SetImage(imagepath);
-                                $('#id-sb-meta__musickit-name').text = $.Localize(InventoryAPI.GetMusicNameFromMusicID(newStatValue));
+                                let elMusicKitImage = $('#id-sb-meta__musickit-image');
+                                if (elMusicKitImage) {
+                                    elMusicKitImage.SetImage(imagepath);
+                                }
+                                let elMusicKitName = $('#id-sb-meta__musickit-name');
+                                if (elMusicKitName) {
+                                    elMusicKitName.text = $.Localize(InventoryAPI.GetMusicNameFromMusicID(newStatValue));
+                                }
                             }
                         }
                     }
@@ -1446,7 +1452,9 @@ var Scoreboard;
             oPlayer.m_elPlayer.SetPanelEvent('onactivate', () => {
                 _m_arrSortingPausedRefGetCounter++;
                 let elPlayerCardContextMenu = UiToolkitAPI.ShowCustomLayoutContextMenuParametersDismissEventSetFocus('', '', 'file://{resources}/layout/context_menus/context_menu_playercard.xml', 'xuid=' + oPlayer.m_xuid, _OnPlayerCardDismiss, false);
-                elPlayerCardContextMenu.AddClass('ContextMenu_NoArrow');
+                if (elPlayerCardContextMenu) {
+                    elPlayerCardContextMenu.AddClass('ContextMenu_NoArrow');
+                }
                 if (!_m_hDenyInputToGame) {
                     _m_hDenyInputToGame = UiToolkitAPI.AddDenyInputFlagsToGame(elPlayerCardContextMenu, 'ScoreboardPlayercard', 'CaptureMouse');
                 }
@@ -2319,7 +2327,7 @@ var Scoreboard;
         }
     }
     function _UpdateJob() {
-        if (!_m_bInit) {
+        if (_m_bInit) {
             _UpdateMatchInfo();
             _UpdateScore();
             _UpdateNextPlayer();

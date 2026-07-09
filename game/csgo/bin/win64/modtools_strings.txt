@@ -8850,8 +8850,6 @@ $modelname$_surface
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
-@08N
-@HPX`hv
 @Integer overflow in %s
 @N08
 @m_nParticle
@@ -11973,8 +11971,6 @@ Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P08@J0s
-P08J
-P08N
 P20s
 P6 W
 P:0s
@@ -14583,7 +14579,6 @@ overridesound
 overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
-p08@H^
 p20s
 p6pR
 pEvent != nullptr
