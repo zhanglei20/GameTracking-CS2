@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -39,27 +39,22 @@ VS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 3246 (name: WindControllerConstantBuffer_t), member index 0 (name: _m0) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (5300 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (4744 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
-	struct _323
+	struct _365
 	{
 	    vec4 _m0[4];
 	};
 	
-	struct _1605
+	struct _1689
 	{
-	    _323 _m0;
-	};
-	
-	struct _324
-	{
-	    vec4 _m0[4];
+	    _365 _m0;
 	};
 	
 	struct _995
@@ -70,22 +65,22 @@ VS
 	
 	layout(set = 0) uniform _995 _Globals_;
 	
-	struct _1173
+	struct _1341
 	{
-	    _1605 _m0;
+	    _1689 _m0;
 	    float _m1;
 	};
 	
-	layout(set = 0) uniform _1173 WindControllerConstantBuffer_t;
+	layout(set = 0) uniform _1341 WindControllerConstantBuffer_t;
 	
-	struct _1732
+	struct _1288
 	{
-	    _324 _m0;
+	    mat4 _m0;
 	    vec4 _m1;
 	    vec3 _m2;
 	};
 	
-	layout(set = 0) uniform _1732 PerViewConstantBuffer_t;
+	layout(set = 0) uniform _1288 PerViewConstantBuffer_t;
 	
 	layout(set = 0, binding = 30) uniform texture3D g_tWind;
 	layout(set = 0, binding = 14) uniform sampler AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint;
@@ -131,7 +126,7 @@ VS
 	        {
 	            _19363 = _24854;
 	        }
-	        _18053 = (vec4(((_19363.xyz + PerViewConstantBuffer_t._m2.xyz) - vec3(0.0, 0.0, 1000.0)).xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
+	        _18053 = (vec4(((_19363.xyz + PerViewConstantBuffer_t._m2.xyz) - vec3(0.0, 0.0, 1000.0)).xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * PerViewConstantBuffer_t._m0;
 	    }
 	    float _21177 = saturate(_3401.z);
 	    float _9436 = _21177 * _21177;

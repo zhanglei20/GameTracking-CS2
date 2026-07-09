@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -86,8 +86,8 @@ VS
 	cbuffer PerViewLightingConstantBufferGpu_t < Attribute("PerViewLightingConstantBufferGpu_t"); >;
 	cbuffer SpriteCardPixelControls_t < Attribute("SpriteCardPixelControls_t"); >;
 	cbuffer SpritecardVertexControls_t < Attribute("SpritecardVertexControls_t"); >;
-	StructuredBuffer g_BarnLights < Attribute("BarnLights"); SrgbRead(false); >;
-	StructuredBuffer g_CullBits < Attribute("CullBits"); SrgbRead(false); >;
+	StructuredBuffer g_BarnLights < Attribute("BarnLights"); >;
+	StructuredBuffer g_CullBits < Attribute("CullBits"); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
 	Texture3D g_tLPV_Irradiance < Attribute("LPV_Irradiance"); SrgbRead(false); >;
@@ -98,27 +98,17 @@ VS
 	
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (81576 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (79516 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	struct _2746
-	{
-	    float4 _m0[4];
-	};
-	
-	struct _1092
+	struct _1428
 	{
 	    float4 _m0[3];
 	};
 	
-	struct _1094
+	struct _200
 	{
-	    float4 _m0[3];
-	};
-	
-	struct _300
-	{
-	    _2746 _m0;
-	    _2746 _m1;
+	    column_major float4x4 _m0;
+	    column_major float4x4 _m1;
 	    float4 _m2;
 	    float4 _m3;
 	    float4 _m4;
@@ -132,7 +122,7 @@ VS
 	    float _m12;
 	    uint _m13;
 	    int _m14;
-	    _1094 _m15;
+	    column_major float4x3 _m15;
 	    float4 _m16;
 	    float4 _m17;
 	    float4 _m18;
@@ -140,7 +130,7 @@ VS
 	    float4 _m20;
 	    float3 _m21;
 	    float _m22;
-	    _2746 _m23;
+	    column_major float4x4 _m23;
 	};
 	
 	static float _4;
@@ -163,7 +153,7 @@ VS
 	
 	cbuffer PerViewConstantBuffer_t : register(b1, space0)
 	{
-	    _2746 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c17);
 	    float PerViewConstantBuffer_t_1_m2 : packoffset(c19.z);
 	    float PerViewConstantBuffer_t_1_m3 : packoffset(c19.w);
@@ -187,7 +177,7 @@ VS
 	cbuffer PerViewConstantBufferCsgo_t : register(b6, space0)
 	{
 	    int4 PerViewConstantBufferCsgo_t_1_m0 : packoffset(c2);
-	    _2746 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c12);
+	    column_major float4x4 PerViewConstantBufferCsgo_t_1_m1 : packoffset(c12);
 	    float4 PerViewConstantBufferCsgo_t_1_m2 : packoffset(c35);
 	    float PerViewConstantBufferCsgo_t_1_m3 : packoffset(c36.w);
 	};
@@ -198,7 +188,7 @@ VS
 	    float4 PerViewLightingConstantBufferGpu_t_1_m1 : packoffset(c1);
 	    float4 PerViewLightingConstantBufferGpu_t_1_m2 : packoffset(c2);
 	    float4 PerViewLightingConstantBufferGpu_t_1_m3 : packoffset(c3);
-	    _1092 PerViewLightingConstantBufferGpu_t_1_m4 : packoffset(c7);
+	    _1428 PerViewLightingConstantBufferGpu_t_1_m4 : packoffset(c7);
 	    float4 PerViewLightingConstantBufferGpu_t_1_m5 : packoffset(c18);
 	    uint4 PerViewLightingConstantBufferGpu_t_1_m6 : packoffset(c19);
 	    uint4 PerViewLightingConstantBufferGpu_t_1_m7 : packoffset(c22);
@@ -301,12 +291,13 @@ VS
 	    {
 	        float2 _11358 = float2(SpritecardVertexControls_t_1_m5.xy);
 	        float2 _13746 = float2(SpritecardVertexControls_t_1_m5.zw);
-	        int _15396 = int(SpritecardVertexControls_t_1_m4.x) & 31;
-	        float _15589 = float((_15396 >> 4) & 1);
-	        int _9493 = int(SpritecardVertexControls_t_1_m8.x) & 65535;
-	        uint _23818 = uint(_9493 & 15);
-	        uint _12835 = uint(_15396 & 15);
-	        uint _15500 = uint(int(SpritecardVertexControls_t_1_m4.y) & 15);
+	        int _14314 = int(SpritecardVertexControls_t_1_m4.x);
+	        float _15589 = float(((_14314 & 31) >> 4) & 1);
+	        int _9473 = int(SpritecardVertexControls_t_1_m8.x);
+	        uint _11758 = uint(_9473 & 15);
+	        uint _12835 = uint(_14314 & 15);
+	        uint _14730 = uint(int(SpritecardVertexControls_t_1_m4.y) & 15);
+	        int _10222 = _9473 & 65535;
 	        int _20705 = int(SpritecardVertexControls_t_1_m4.z);
 	        uint _23506 = uint((_20705 >> 12) & 15);
 	        uint _14704 = uint((int(SpriteCardPixelControls_t_1_m0.y) >> 16) & 15);
@@ -320,7 +311,7 @@ VS
 	                {
 	                    float _13196;
 	                    bool _16075;
-	                    switch (_23818)
+	                    switch (_11758)
 	                    {
 	                        case 1u:
 	                        {
@@ -523,7 +514,7 @@ VS
 	                {
 	                    float _13198;
 	                    bool _16077;
-	                    switch (_15500)
+	                    switch (_14730)
 	                    {
 	                        case 1u:
 	                        {
@@ -619,7 +610,7 @@ VS
 	                    _19457 = 1.0f;
 	                    break;
 	                } while(false);
-	                float2 _8768 = (_11358.xy * float2(_12909, _19457)) + lerp(0.0f.xx, frac(float2(input_1.x * 1718.4361572265625f, input_1.x * 1271.89013671875f)), _15589.xx);
+	                float2 _8770 = (_11358.xy * float2(_12909, _19457)) + lerp(0.0f.xx, frac(float2(input_1.x * 1718.4361572265625f, input_1.x * 1271.89013671875f)), _15589.xx);
 	                float _22687;
 	                do
 	                {
@@ -721,7 +712,7 @@ VS
 	                    _22687 = 1.0f;
 	                    break;
 	                } while(false);
-	                _15093 = float4(_8768.x, _8768.y * _11182.y, _11182.x, _22687);
+	                _15093 = float4(_8770.x, _8770.y * _11182.y, _11182.x, _22687);
 	                break;
 	            }
 	            else
@@ -731,7 +722,7 @@ VS
 	                {
 	                    float _13188;
 	                    bool _16068;
-	                    switch (_23818)
+	                    switch (_11758)
 	                    {
 	                        case 1u:
 	                        {
@@ -933,7 +924,7 @@ VS
 	                {
 	                    float _13190;
 	                    bool _16070;
-	                    switch (_15500)
+	                    switch (_14730)
 	                    {
 	                        case 1u:
 	                        {
@@ -1034,7 +1025,7 @@ VS
 	                {
 	                    float _13191;
 	                    bool _16071;
-	                    switch (uint((_9493 >> 4) & 15))
+	                    switch (uint((_10222 >> 4) & 15))
 	                    {
 	                        case 1u:
 	                        {
@@ -1144,7 +1135,7 @@ VS
 	                {
 	                    float _13193;
 	                    bool _16072;
-	                    switch (uint((_9493 >> 8) & 15))
+	                    switch (uint((_10222 >> 8) & 15))
 	                    {
 	                        case 1u:
 	                        {
@@ -1249,7 +1240,7 @@ VS
 	                    {
 	                        float _13194;
 	                        bool _16073;
-	                        switch (uint((_9493 >> 12) & 15))
+	                        switch (uint((_10222 >> 12) & 15))
 	                        {
 	                            case 1u:
 	                            {
@@ -1850,12 +1841,13 @@ VS
 	        {
 	            float2 _11357 = float2(SpritecardVertexControls_t_1_m5.xy);
 	            float2 _13745 = float2(SpritecardVertexControls_t_1_m5.zw);
-	            int _15395 = int(SpritecardVertexControls_t_1_m4.x) & 31;
-	            float _15588 = float((_15395 >> 4) & 1);
-	            int _9492 = int(SpritecardVertexControls_t_1_m8.x) & 65535;
-	            uint _23817 = uint(_9492 & 15);
-	            uint _12834 = uint(_15395 & 15);
-	            uint _15498 = uint(int(SpritecardVertexControls_t_1_m4.y) & 15);
+	            int _14313 = int(SpritecardVertexControls_t_1_m4.x);
+	            float _15588 = float(((_14313 & 31) >> 4) & 1);
+	            int _9472 = int(SpritecardVertexControls_t_1_m8.x);
+	            uint _11757 = uint(_9472 & 15);
+	            uint _12834 = uint(_14313 & 15);
+	            uint _14729 = uint(int(SpritecardVertexControls_t_1_m4.y) & 15);
+	            int _10221 = _9472 & 65535;
 	            uint _23505 = uint((int(SpritecardVertexControls_t_1_m4.z) >> 12) & 15);
 	            uint _14700 = uint((int(SpriteCardPixelControls_t_1_m0.y) >> 16) & 15);
 	            float4 _10883;
@@ -1868,7 +1860,7 @@ VS
 	                    {
 	                        float _13181;
 	                        bool _16061;
-	                        switch (_23817)
+	                        switch (_11757)
 	                        {
 	                            case 1u:
 	                            {
@@ -2071,7 +2063,7 @@ VS
 	                    {
 	                        float _13183;
 	                        bool _16063;
-	                        switch (_15498)
+	                        switch (_14729)
 	                        {
 	                            case 1u:
 	                            {
@@ -2279,7 +2271,7 @@ VS
 	                    {
 	                        float _13174;
 	                        bool _16054;
-	                        switch (_23817)
+	                        switch (_11757)
 	                        {
 	                            case 1u:
 	                            {
@@ -2481,7 +2473,7 @@ VS
 	                    {
 	                        float _13176;
 	                        bool _16056;
-	                        switch (_15498)
+	                        switch (_14729)
 	                        {
 	                            case 1u:
 	                            {
@@ -2582,7 +2574,7 @@ VS
 	                    {
 	                        float _13177;
 	                        bool _16057;
-	                        switch (uint((_9492 >> 4) & 15))
+	                        switch (uint((_10221 >> 4) & 15))
 	                        {
 	                            case 1u:
 	                            {
@@ -2692,7 +2684,7 @@ VS
 	                    {
 	                        float _13178;
 	                        bool _16058;
-	                        switch (uint((_9492 >> 8) & 15))
+	                        switch (uint((_10221 >> 8) & 15))
 	                        {
 	                            case 1u:
 	                            {
@@ -2797,7 +2789,7 @@ VS
 	                        {
 	                            float _13179;
 	                            bool _16059;
-	                            switch (uint((_9492 >> 12) & 15))
+	                            switch (uint((_10221 >> 12) & 15))
 	                            {
 	                                case 1u:
 	                                {
@@ -3388,14 +3380,14 @@ VS
 	        float _7331 = _24619 * _24619;
 	        float _6498 = _18015.z;
 	        float _17752 = _6498 * _6498;
-	        float _22878 = 1.0f - _8898;
-	        float _10270 = (_9794 * _24619) * _22878;
+	        float _22876 = 1.0f - _8898;
+	        float _10272 = (_9794 * _24619) * _22876;
 	        float _21408 = _6498 * _19825;
-	        float _6451 = (_6498 * _9794) * _22878;
+	        float _6451 = (_6498 * _9794) * _22876;
 	        float _22637 = _24619 * _19825;
-	        float _6440 = (_24619 * _6498) * _22878;
+	        float _6440 = (_24619 * _6498) * _22876;
 	        float _22945 = _9794 * _19825;
-	        float3x3 _23397 = float3x3(float3(_21144 + ((1.0f - _21144) * _8898), _10270 - _21408, _6451 + _22637), float3(_10270 + _21408, _7331 + ((1.0f - _7331) * _8898), _6440 - _22945), float3(_6451 - _22637, _6440 + _22945, _17752 + ((1.0f - _17752) * _8898)));
+	        float3x3 _23397 = float3x3(float3(_21144 + ((1.0f - _21144) * _8898), _10272 - _21408, _6451 + _22637), float3(_10272 + _21408, _7331 + ((1.0f - _7331) * _8898), _6440 - _22945), float3(_6451 - _22637, _6440 + _22945, _17752 + ((1.0f - _17752) * _8898)));
 	        _13141 = mul(_23397, _22185);
 	        _13203 = _13140;
 	        _24249 = (mul(_23397, (_16747 * _13567) + (_11892 * _8404)) * (input_0.x + SpritecardVertexControls_t_1_m1.y)) + (_18015 * (input_0.y + SpritecardVertexControls_t_1_m1.z));
@@ -3433,30 +3425,26 @@ VS
 	        _10020 = input_5.w;
 	        _24447 = _13203;
 	    }
-	    float _13915 = (_24447.w < 0.0039215688593685626983642578125f) ? 0.0f : _10020;
-	    float4 _13105 = _24447;
-	    _13105.w = _24447.w * lerp(1.0f, input_5.w / _13915, SpritecardVertexControls_t_1_m2.w);
-	    float3 _23592 = _21709.xyz + (_24249 * _13915);
-	    float3 _7336 = _23592.xyz;
+	    float3 _19803 = _21709.xyz + (_24249 * ((_24447.w < 0.0039215688593685626983642578125f) ? 0.0f : _10020));
+	    float3 _7336 = _19803.xyz;
 	    float4 _8056 = float4(_7336, 1.0f);
 	    float4 _21447 = PerViewConstantBuffer_t_1_m9 * 1.0f;
-	    float4x4 _15571 = float4x4(float4(PerViewConstantBuffer_t_1_m0._m0[0].x, PerViewConstantBuffer_t_1_m0._m0[1].x, PerViewConstantBuffer_t_1_m0._m0[2].x, PerViewConstantBuffer_t_1_m0._m0[3].x), float4(PerViewConstantBuffer_t_1_m0._m0[0].y, PerViewConstantBuffer_t_1_m0._m0[1].y, PerViewConstantBuffer_t_1_m0._m0[2].y, PerViewConstantBuffer_t_1_m0._m0[3].y), float4(PerViewConstantBuffer_t_1_m0._m0[0].z, PerViewConstantBuffer_t_1_m0._m0[1].z, PerViewConstantBuffer_t_1_m0._m0[2].z, PerViewConstantBuffer_t_1_m0._m0[3].z), float4(PerViewConstantBuffer_t_1_m0._m0[0].w, PerViewConstantBuffer_t_1_m0._m0[1].w, PerViewConstantBuffer_t_1_m0._m0[2].w, PerViewConstantBuffer_t_1_m0._m0[3].w));
-	    float4 _23913 = mul(_15571, (_8056 + _21447).xyzw);
-	    float _24624 = _23913.w;
-	    float4 _8847 = mul(_15571, (float4((_23592 + (PerViewConstantBuffer_t_1_m12 * SpritecardVertexControls_t_1_m1.x)).xyz, 1.0f) + _21447).xyzw);
-	    float4 _15598 = _23913;
-	    _15598.z = max(_24624 * (_8847.z / _8847.w), min(0.001000000047497451305389404296875f, _23913.z));
+	    float4 _18275 = mul(PerViewConstantBuffer_t_1_m0, (_8056 + _21447).xyzw);
+	    float _24624 = _18275.w;
+	    float4 _8847 = mul(PerViewConstantBuffer_t_1_m0, (float4((_19803 + (PerViewConstantBuffer_t_1_m12 * SpritecardVertexControls_t_1_m1.x)).xyz, 1.0f) + _21447).xyzw);
+	    float4 _15598 = _18275;
+	    _15598.z = max(_24624 * (_8847.z / _8847.w), min(0.001000000047497451305389404296875f, _18275.z));
 	    float3 _11173 = _7336 - PerViewConstantBuffer_t_1_m10.xyz;
-	    float3 _19688;
+	    float3 _19671;
 	    if (_9660)
 	    {
-	        _19688 = faceforward(_13141, _11173.xyz, _13141);
+	        _19671 = faceforward(_13141, _11173.xyz, _13141);
 	    }
 	    else
 	    {
-	        _19688 = normalize(-_11173.xyz);
+	        _19671 = normalize(-_11173.xyz);
 	    }
-	    bool3 _16163 = (uint(!((SpritecardVertexControls_t_1_m9 & 2048u) != 0u)) != 0u).xxx;
+	    bool3 _21236 = ((SpritecardVertexControls_t_1_m9 & 2048u) == 0u).xxx;
 	    float3 _10685 = _7336 - PerViewConstantBufferCsgo_t_1_m2.xyz;
 	    float3 _9877 = _15598.xyz / _24624.xxx;
 	    float3 _7856 = _9877;
@@ -3465,17 +3453,17 @@ VS
 	    float4 _23718;
 	    _23718.x = _15813.x;
 	    _23718.y = _15813.y;
-	    float _22879 = (abs(_9877.z) * (PerViewConstantBuffer_t_1_m8 - PerViewConstantBuffer_t_1_m7)) + PerViewConstantBuffer_t_1_m7;
-	    _23718.z = _22879;
+	    float _22877 = (abs(_9877.z) * (PerViewConstantBuffer_t_1_m8 - PerViewConstantBuffer_t_1_m7)) + PerViewConstantBuffer_t_1_m7;
+	    _23718.z = _22877;
 	    bool4 _24464 = bool4(PerViewConstantBufferCsgo_t_1_m0.x != int4(0, 0, 0, 0).x, PerViewConstantBufferCsgo_t_1_m0.y != int4(0, 0, 0, 0).y, PerViewConstantBufferCsgo_t_1_m0.z != int4(0, 0, 0, 0).z, PerViewConstantBufferCsgo_t_1_m0.w != int4(0, 0, 0, 0).w);
 	    bool _20058 = _24464.x;
 	    float4 _19363;
 	    if (_20058)
 	    {
-	        float4 _24259 = mul(float4x4(float4(PerViewConstantBufferCsgo_t_1_m1._m0[0].x, PerViewConstantBufferCsgo_t_1_m1._m0[1].x, PerViewConstantBufferCsgo_t_1_m1._m0[2].x, PerViewConstantBufferCsgo_t_1_m1._m0[3].x), float4(PerViewConstantBufferCsgo_t_1_m1._m0[0].y, PerViewConstantBufferCsgo_t_1_m1._m0[1].y, PerViewConstantBufferCsgo_t_1_m1._m0[2].y, PerViewConstantBufferCsgo_t_1_m1._m0[3].y), float4(PerViewConstantBufferCsgo_t_1_m1._m0[0].z, PerViewConstantBufferCsgo_t_1_m1._m0[1].z, PerViewConstantBufferCsgo_t_1_m1._m0[2].z, PerViewConstantBufferCsgo_t_1_m1._m0[3].z), float4(PerViewConstantBufferCsgo_t_1_m1._m0[0].w, PerViewConstantBufferCsgo_t_1_m1._m0[1].w, PerViewConstantBufferCsgo_t_1_m1._m0[2].w, PerViewConstantBufferCsgo_t_1_m1._m0[3].w)), _8056.xyzw);
-	        float _20176 = _24259.w;
-	        float2 _11441 = _24259.xy / _20176.xx;
-	        _19363 = float4(clamp(((_11441.x + 1.0f) * PerViewConstantBuffer_t_1_m5.x) * 0.5f, 0.0f, PerViewConstantBuffer_t_1_m5.x - 1.0f), clamp(((1.0f - _11441.y) * PerViewConstantBuffer_t_1_m5.y) * 0.5f, 0.0f, PerViewConstantBuffer_t_1_m5.y - 1.0f), _22879, _20176);
+	        float4 _18621 = mul(PerViewConstantBufferCsgo_t_1_m1, _8056.xyzw);
+	        float _20176 = _18621.w;
+	        float2 _11441 = _18621.xy / _20176.xx;
+	        _19363 = float4(clamp(((_11441.x + 1.0f) * PerViewConstantBuffer_t_1_m5.x) * 0.5f, 0.0f, PerViewConstantBuffer_t_1_m5.x - 1.0f), clamp(((1.0f - _11441.y) * PerViewConstantBuffer_t_1_m5.y) * 0.5f, 0.0f, PerViewConstantBuffer_t_1_m5.y - 1.0f), _22877, _20176);
 	    }
 	    else
 	    {
@@ -3511,14 +3499,9 @@ VS
 	            do
 	            {
 	                float3 _14644 = _10685.xyz;
-	                _2746 _25207;
-	                [unroll]
-	                for (int _2ident = 0; _2ident < 4; _2ident++)
-	                {
-	                    _25207._m0[_2ident] = asfloat(g_BarnLights.Load4(_2ident * 16 + _12608 * 480 + 0));
-	                }
-	                float4 _15817 = mul(float4(_10685.xyz, 1.0f), float4x4(float4(_25207._m0[0].x, _25207._m0[1].x, _25207._m0[2].x, _25207._m0[3].x), float4(_25207._m0[0].y, _25207._m0[1].y, _25207._m0[2].y, _25207._m0[3].y), float4(_25207._m0[0].z, _25207._m0[1].z, _25207._m0[2].z, _25207._m0[3].z), float4(_25207._m0[0].w, _25207._m0[1].w, _25207._m0[2].w, _25207._m0[3].w)));
-	                float3 _10521 = _15817.xyz / _15817.w.xxx;
+	                float4x4 _14097 = asfloat(uint4x4(g_BarnLights.Load(_12608 * 480 + 0), g_BarnLights.Load(_12608 * 480 + 16), g_BarnLights.Load(_12608 * 480 + 32), g_BarnLights.Load(_12608 * 480 + 48), g_BarnLights.Load(_12608 * 480 + 4), g_BarnLights.Load(_12608 * 480 + 20), g_BarnLights.Load(_12608 * 480 + 36), g_BarnLights.Load(_12608 * 480 + 52), g_BarnLights.Load(_12608 * 480 + 8), g_BarnLights.Load(_12608 * 480 + 24), g_BarnLights.Load(_12608 * 480 + 40), g_BarnLights.Load(_12608 * 480 + 56), g_BarnLights.Load(_12608 * 480 + 12), g_BarnLights.Load(_12608 * 480 + 28), g_BarnLights.Load(_12608 * 480 + 44), g_BarnLights.Load(_12608 * 480 + 60)));
+	                float4 _24895 = mul(float4(_10685.xyz, 1.0f), _14097);
+	                float3 _10521 = _24895.xyz / _24895.w.xxx;
 	                float4 _22905;
 	                _22905.x = _10521.x;
 	                _22905.y = _10521.y;
@@ -3541,13 +3524,8 @@ VS
 	                }
 	                else
 	                {
-	                    _1094 _8550;
-	                    [unroll]
-	                    for (int _3ident = 0; _3ident < 3; _3ident++)
-	                    {
-	                        _8550._m0[_3ident] = asfloat(g_BarnLights.Load4(_3ident * 16 + _12608 * 480 + 272));
-	                    }
-	                    float3 _6368 = abs(mul(float4(_14644, 1.0f), float4x3(float3(_8550._m0[0].x, _8550._m0[1].x, _8550._m0[2].x), float3(_8550._m0[0].y, _8550._m0[1].y, _8550._m0[2].y), float3(_8550._m0[0].z, _8550._m0[1].z, _8550._m0[2].z), float3(_8550._m0[0].w, _8550._m0[1].w, _8550._m0[2].w))).xyz);
+	                    float4x3 _16509 = asfloat(uint4x3(g_BarnLights.Load(_12608 * 480 + 272), g_BarnLights.Load(_12608 * 480 + 288), g_BarnLights.Load(_12608 * 480 + 304), g_BarnLights.Load(_12608 * 480 + 276), g_BarnLights.Load(_12608 * 480 + 292), g_BarnLights.Load(_12608 * 480 + 308), g_BarnLights.Load(_12608 * 480 + 280), g_BarnLights.Load(_12608 * 480 + 296), g_BarnLights.Load(_12608 * 480 + 312), g_BarnLights.Load(_12608 * 480 + 284), g_BarnLights.Load(_12608 * 480 + 300), g_BarnLights.Load(_12608 * 480 + 316)));
+	                    float3 _6368 = abs(mul(float4(_14644, 1.0f), _16509).xyz);
 	                    _12886 = !all(bool3(_6368.x <= 1.0f.xxx.x, _6368.y <= 1.0f.xxx.y, _6368.z <= 1.0f.xxx.z));
 	                }
 	                if (_12886)
@@ -3588,25 +3566,25 @@ VS
 	                    float _18345 = dot(_10017, _10017);
 	                    float _17647 = sqrt(_18345);
 	                    float3 _20958 = _10017 - _16268;
-	                    float3 _10273;
+	                    float3 _10275;
 	                    do
 	                    {
 	                        float3 _20229 = (_10017 + _16268) - _20958;
 	                        float _25105 = dot(-_20958, _20229);
 	                        if (_25105 <= 0.0f)
 	                        {
-	                            _10273 = _20958;
+	                            _10275 = _20958;
 	                            break;
 	                        }
 	                        else
 	                        {
-	                            _10273 = _20958 + (_20229 * min(1.0f, _25105 / dot(_20229, _20229)));
+	                            _10275 = _20958 + (_20229 * min(1.0f, _25105 / dot(_20229, _20229)));
 	                            break;
 	                        }
 	                        break; // unreachable workaround
 	                    } while(false);
 	                    _11185 = _10017 / _17647.xxx;
-	                    _11633 = ((_19668 * (asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w / max(_18345, asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w))) * smoothstep(0.0f, 1.0f, asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).x + (asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).y * _17647))) * clamp(asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).x + (asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).y * dot(float3((1.0f - (_23570 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y)) - _18492, _9058 + _19826, (_14805 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z) - (_17330 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y)), normalize(_10273))), 0.0f, 1.0f);
+	                    _11633 = ((_19668 * (asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w / max(_18345, asfloat(g_BarnLights.Load4(_12608 * 480 + 128)).w))) * smoothstep(0.0f, 1.0f, asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).x + (asfloat(g_BarnLights.Load4(_12608 * 480 + 144)).y * _17647))) * clamp(asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).x + (asfloat(g_BarnLights.Load3(_12608 * 480 + 192)).y * dot(float3((1.0f - (_23570 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y)) - _18492, _9058 + _19826, (_14805 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).z) - (_17330 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).y)), normalize(_10275))), 0.0f, 1.0f);
 	                }
 	                else
 	                {
@@ -3624,6 +3602,7 @@ VS
 	                    _24419 = false;
 	                }
 	                float3 _21570;
+	                [branch]
 	                if (asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w == 0.0f)
 	                {
 	                    float _10351;
@@ -3669,9 +3648,9 @@ VS
 	                        float3 _24989 = _19008.xyz;
 	                        float3 _23629 = float4((-_11185).xyz, 0.0f).xyz;
 	                        float _15156 = -dot(_23629, _24989);
-	                        float3 _20481 = float4((_23629 * _19008.w) + cross(_23629, _24989), _15156).xyz;
-	                        float3 _23593 = _17805.xyz;
-	                        float3 _12170 = ((_20481 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).w) + (_23593 * _15156)) + cross(_23593, _20481);
+	                        float3 _20480 = float4((_23629 * _19008.w) + cross(_23629, _24989), _15156).xyz;
+	                        float3 _23592 = _17805.xyz;
+	                        float3 _12170 = ((_20480 * asfloat(g_BarnLights.Load4(_12608 * 480 + 176)).w) + (_23592 * _15156)) + cross(_23592, _20480);
 	                        float3 _14081 = float3(float2(atan2(_12170.y, -_12170.x) * 0.15915493667125701904296875f, acos(_12170.z) * 0.3183098733425140380859375f), -asfloat(g_BarnLights.Load4(_12608 * 480 + 160)).w);
 	                        float2 _20562 = (_14081.xy * asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).zw) + asfloat(g_BarnLights.Load4(_12608 * 480 + 224)).xy;
 	                        float3 _20490 = _14081;
@@ -3769,12 +3748,12 @@ VS
 	    _20488.y = _15752.y;
 	    _20488.z = _15752.z;
 	    output_0 = _9982;
-	    output_1 = _13105;
-	    output_2 = _23592;
-	    output_3 = float3(_16163.x ? _19688.x : _5.x, _16163.y ? _19688.y : _5.y, _16163.z ? _19688.z : _5.z);
+	    output_1 = _24447;
+	    output_2 = _19803;
+	    output_3 = float3(_21236.x ? _19671.x : _5.x, _21236.y ? _19671.y : _5.y, _21236.z ? _19671.z : _5.z);
 	    output_4 = _23824;
 	    output_5 = _20488;
-	    _15598.y = -_23913.y;
+	    _15598.y = -_18275.y;
 	    gl_Position = _15598;
 	    gl_ClipDistance[0] = dot(_8056, PerViewConstantBuffer_t_1_m1.xyzw);
 	}
@@ -3877,7 +3856,7 @@ PS
 	cbuffer SpriteCardPixelControls_t < Attribute("SpriteCardPixelControls_t"); >;
 	RenderState(SrcBlend, F_MOD2X ? DestColor : One);
 	RenderState(SrcBlendAlpha, F_MOD2X ? Zero : InvDestAlpha);
-	cbuffer SunLightShaderParamsCB < Attribute("SunLightShaderParamsCB"); >;
+	cbuffer SunLightShaderParamsCB_t < Attribute("SunLightShaderParamsCB_t"); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
 	int g_nToolsVisMode < Attribute("g_nToolsVisMode"); UiType(Slider); >;
@@ -3915,19 +3894,14 @@ PS
 	#endif
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (27604 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
-	
-	struct _1664
-	{
-	    float4 _m0[4];
-	};
+	// SPIR-V source (26976 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	static float _2;
 	static float4 _3;
 	static float4 _4;
 	
-	static const float2 _280[15] = { float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, 0.0f.xx, 0.0f.xx };
-	static const float3 _2477[15] = { 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), float3(1.0f, 0.0f, 0.0f), float3(1.0f, 0.0f, 1.0f), 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx };
+	static const float3 _2637[15] = { 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), float3(1.0f, 0.0f, 0.0f), float3(1.0f, 0.0f, 1.0f), 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx };
+	static const float2 _390[15] = { float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, 0.0f.xx, 0.0f.xx };
 	
 	cbuffer SpriteCardPixelControls_t : register(b4, space1)
 	{
@@ -3956,14 +3930,14 @@ PS
 	    float4 PerViewConstantBufferCsgo_t_1_m3 : packoffset(c25);
 	    float4 PerViewConstantBufferCsgo_t_1_m4 : packoffset(c27);
 	    float4 PerViewConstantBufferCsgo_t_1_m5 : packoffset(c28);
-	    _1664 PerViewConstantBufferCsgo_t_1_m6 : packoffset(c29);
+	    column_major float4x4 PerViewConstantBufferCsgo_t_1_m6 : packoffset(c29);
 	    float4 PerViewConstantBufferCsgo_t_1_m7 : packoffset(c33);
 	    float4 PerViewConstantBufferCsgo_t_1_m8 : packoffset(c34);
 	};
 	
-	SamplerState Filter_MinMagMipLinear_MaxAniso_1 : register(s15, space1);
-	Texture2D<float4> g_tBaseTexture : register(t38, space1);
 	SamplerState AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear_MaxAniso_1 : register(s17, space1);
+	Texture2D<float4> g_tBaseTexture : register(t38, space1);
+	SamplerState Filter_MinMagMipLinear_MaxAniso_1 : register(s15, space1);
 	TextureCube<float4> g_tFogCubeTexture : register(t43, space1);
 	SamplerState g_sTrilinearClamp : register(s21, space1);
 	
@@ -3991,11 +3965,11 @@ PS
 	void MainPs_inner()
 	{
 	    bool _13055;
-	    uint _17764 = SpriteCardPixelControls_t_1_m9 & 1u;
-	    bool _19210 = _17764 != 0u;
-	    float4 _6585 = input_0.xyzw;
-	    _6585.x = input_0.x;
-	    _6585.z = input_0.z;
+	    uint _17422 = SpriteCardPixelControls_t_1_m9 & 1u;
+	    bool _21944 = _17422 != 0u;
+	    float4 _15476 = input_0.xyzw;
+	    _15476.x = input_0.x;
+	    _15476.z = input_0.z;
 	    int _9501 = int(SpriteCardPixelControls_t_1_m2.z);
 	    float4 _12885;
 	    do
@@ -4003,14 +3977,14 @@ PS
 	        _13055 = float(_9501 & 1) == 1.0f;
 	        if (_13055)
 	        {
-	            _12885 = g_tBaseTexture.Sample(AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear_MaxAniso_1, _6585.xy);
+	            _12885 = g_tBaseTexture.Sample(AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear_MaxAniso_1, _15476.xy);
 	            break;
 	        }
-	        _12885 = g_tBaseTexture.Sample(Filter_MinMagMipLinear_MaxAniso_1, _6585.xy);
+	        _12885 = g_tBaseTexture.Sample(Filter_MinMagMipLinear_MaxAniso_1, _15476.xy);
 	        break;
 	    } while(false);
 	    float4 _19707;
-	    if (_19210)
+	    if (_21944)
 	    {
 	        float3 _22667 = _12885.xyz - float3(0.005859375f, 0.009765625f, 0.005859375f);
 	        float4 _22101 = _12885;
@@ -4034,14 +4008,14 @@ PS
 	            {
 	                if (_13055)
 	                {
-	                    _12886 = g_tBaseTexture.Sample(AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear_MaxAniso_1, _6585.zw);
+	                    _12886 = g_tBaseTexture.Sample(AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear_MaxAniso_1, _15476.zw);
 	                    break;
 	                }
-	                _12886 = g_tBaseTexture.Sample(Filter_MinMagMipLinear_MaxAniso_1, _6585.zw);
+	                _12886 = g_tBaseTexture.Sample(Filter_MinMagMipLinear_MaxAniso_1, _15476.zw);
 	                break;
 	            } while(false);
 	            float4 _12904;
-	            if (_19210)
+	            if (_21944)
 	            {
 	                float3 _22668 = _12886.xyz - float3(0.005859375f, 0.009765625f, 0.005859375f);
 	                float4 _22102 = _12886;
@@ -4102,8 +4076,8 @@ PS
 	    {
 	        _21709 = _19707;
 	    }
-	    int _9492 = int(SpriteCardPixelControls_t_1_m8.x) & 255;
-	    uint3 _11720 = uint3(float3(float(uint((int(SpriteCardPixelControls_t_1_m8.y) >> 16) & 15)), float(uint(_9492 & 15)), float(uint((_9492 >> 4) & 15))));
+	    int _15090 = int(SpriteCardPixelControls_t_1_m8.x);
+	    uint3 _11720 = uint3(float3(float(uint((int(SpriteCardPixelControls_t_1_m8.y) >> 16) & 15)), float(uint(_15090 & 15)), float(uint(((_15090 & 255) >> 4) & 15))));
 	    uint _12528 = _11720.y;
 	    uint _24623 = _11720.z;
 	    float4 _12887;
@@ -4111,6 +4085,7 @@ PS
 	    {
 	        float4 _13174;
 	        bool _16054;
+	        [branch]
 	        switch (_11720.x)
 	        {
 	            case 0u:
@@ -4123,7 +4098,7 @@ PS
 	            {
 	                float _11534 = frac(SpriteCardPixelControls_t_1_m6.z * input_0.z);
 	                float _16439 = _11534 / (((-0.39999997615814208984375f) * (1.0f - _11534)) + 1.0f);
-	                float4 _22205 = _6585 - 0.5f.xxxx;
+	                float4 _22205 = _15476 - 0.5f.xxxx;
 	                float4 _17630 = (_22205 * lerp(4.0f, 1.0f, _16439)) + 0.5f.xxxx;
 	                float4 _6627 = (_22205 * lerp(1.0f, 0.0625f, _16439)) + 0.5f.xxxx;
 	                float4 _12906;
@@ -4149,7 +4124,7 @@ PS
 	                    break;
 	                } while(false);
 	                float4 _10911 = lerp(_19630.xyzw, _12906.xyzw, (_16439 * _16439).xxxx);
-	                _10911.w = lerp(_21709.w, _10911.w, float(_2477[int(_12528)].y != 1.0f));
+	                _10911.w = lerp(_21709.w, _10911.w, float(_2637[int(_12528)].y != 1.0f));
 	                _13174 = _10911;
 	                _16054 = true;
 	                break;
@@ -4176,7 +4151,7 @@ PS
 	                {
 	                    _19458 = _7486.y;
 	                }
-	                float2 _20343 = _6585.xy - (((float3(_21356, _19458, _2).xy - 0.5f.xx) * 2.0f) * (((SpriteCardPixelControls_t_1_m6.w * input_0.w) * 0.125f) * _21709.w));
+	                float2 _20343 = _15476.xy - (((float3(_21356, _19458, _2).xy - 0.5f.xx) * 2.0f) * (((SpriteCardPixelControls_t_1_m6.w * input_0.w) * 0.125f) * _21709.w));
 	                float4 _12504;
 	                do
 	                {
@@ -4196,7 +4171,7 @@ PS
 	            {
 	                float _11533 = frac(SpriteCardPixelControls_t_1_m6.z * input_0.z);
 	                float _16438 = _11533 / (((-0.39999997615814208984375f) * (1.0f - _11533)) + 1.0f);
-	                float4 _22204 = _6585 - 0.5f.xxxx;
+	                float4 _22204 = _15476 - 0.5f.xxxx;
 	                float4 _17629 = (_22204 * lerp(4.0f, 1.0f, _16438)) + 0.5f.xxxx;
 	                float4 _6626 = (_22204 * lerp(1.0f, 0.0625f, _16438)) + 0.5f.xxxx;
 	                float4 _12905;
@@ -4243,7 +4218,7 @@ PS
 	                {
 	                    _19457 = _9166.y;
 	                }
-	                float2 _20342 = _6585.xy - (((float3(_23035, _19457, _2).xy - 0.5f.xx) * 2.0f) * (((SpriteCardPixelControls_t_1_m6.w * input_0.w) * 0.125f) * lerp(_21709.w, _10910.w, float(_2477[int(_12528)].y != 1.0f))));
+	                float2 _20342 = _15476.xy - (((float3(_23035, _19457, _2).xy - 0.5f.xx) * 2.0f) * (((SpriteCardPixelControls_t_1_m6.w * input_0.w) * 0.125f) * lerp(_21709.w, _10910.w, float(_2637[int(_12528)].y != 1.0f))));
 	                float4 _12503;
 	                do
 	                {
@@ -4262,8 +4237,8 @@ PS
 	            case 2u:
 	            {
 	                int _8289 = int(_12528);
-	                float4 _20655 = _280[_8289].y.xxxx;
-	                float4 _9219 = lerp(lerp(float4(_21709.xyz * _21709.www, 1.0f), _21709, _280[_8289].x.xxxx), _21709.wwww, _20655);
+	                float4 _20655 = _390[_8289].y.xxxx;
+	                float4 _9219 = lerp(lerp(float4(_21709.xyz * _21709.www, 1.0f), _21709, _390[_8289].x.xxxx), _21709.wwww, _20655);
 	                float3 _25122 = _9219.xyz;
 	                float3 _17379 = _25122 * 12.9200000762939453125f;
 	                float3 _7485 = (pow(_25122, 0.4166666567325592041015625f.xxx) * 1.05499994754791259765625f) - 0.054999999701976776123046875f.xxx;
@@ -4523,11 +4498,12 @@ PS
 	    _23714.y = _21122.y;
 	    _23714.z = _21122.z;
 	    float _19376 = _11015.w;
-	    bool _18504 = clamp(SpriteCardPixelControls_t_1_m9 & 262144u, 0u, 1u) != 0u;
+	    uint _19935 = clamp(SpriteCardPixelControls_t_1_m9 & 262144u, 0u, 1u);
 	    float4 _19631;
-	    if (uint(!_18504) != 0u)
+	    if (_19935 == 0u)
 	    {
 	        float4 _21710;
+	        [branch]
 	        if (SpriteCardPixelControls_t_1_m0.w < SpriteCardPixelControls_t_1_m0.z)
 	        {
 	            _21710 = float4(_12758, _21122.yz, smoothstep(SpriteCardPixelControls_t_1_m0.w, SpriteCardPixelControls_t_1_m0.z, _19376));
@@ -4546,6 +4522,7 @@ PS
 	            _12888 = false;
 	        }
 	        float4 _12505;
+	        [branch]
 	        if (_12888)
 	        {
 	            float _21711;
@@ -4578,30 +4555,30 @@ PS
 	    float _12460 = _21103.w + SpriteCardPixelControls_t_1_m6.x;
 	    float4 _14171 = _21103;
 	    _14171.w = _12460;
-	    float4 _12889;
+	    float4 _6905;
 	    if ((SpriteCardPixelControls_t_1_m9 & 1024u) != 0u)
 	    {
 	        float4 _18986 = _14171;
 	        _18986.w = clamp(_12460, 0.0f, 1.0f);
-	        _12889 = _18986;
+	        _6905 = _18986;
 	    }
 	    else
 	    {
-	        _12889 = _14171;
+	        _6905 = _14171;
 	    }
 	    float4 _19283;
-	    if (_18504)
+	    if (_19935 != 0u)
 	    {
-	        float _20523 = max(SpriteCardPixelControls_t_1_m5.x, _12889.w);
-	        float _15029 = _12889.w - SpriteCardPixelControls_t_1_m0.w;
-	        float4 _13727 = _12889;
-	        _13727.w = min(clamp(((input_3.z + input_3.w) - _12889.w) / ((_12889.w + SpriteCardPixelControls_t_1_m0.z) - _12889.w), 0.0f, 1.0f) * _20523, (clamp((input_3.z - _15029) / (_12889.w - _15029), 0.0f, 1.0f) * (-_20523)) + _20523) * max(SpriteCardPixelControls_t_1_m5.y, input_1.w);
+	        float _20523 = max(SpriteCardPixelControls_t_1_m5.x, _6905.w);
+	        float _15029 = _6905.w - SpriteCardPixelControls_t_1_m0.w;
+	        float4 _13727 = _6905;
+	        _13727.w = min(clamp(((input_3.z + input_3.w) - _6905.w) / ((_6905.w + SpriteCardPixelControls_t_1_m0.z) - _6905.w), 0.0f, 1.0f) * _20523, (clamp((input_3.z - _15029) / (_6905.w - _15029), 0.0f, 1.0f) * (-_20523)) + _20523) * max(SpriteCardPixelControls_t_1_m5.y, input_1.w);
 	        _19283 = _13727;
 	    }
 	    else
 	    {
-	        float4 _18602 = _12889;
-	        _18602.w = _12889.w * input_1.w;
+	        float4 _18602 = _6905;
+	        _18602.w = _6905.w * input_1.w;
 	        _19283 = _18602;
 	    }
 	    float3 _11507 = _19283.xyz * (((input_4.xyz * SpriteCardPixelControls_t_1_m0.y) + SpriteCardPixelControls_t_1_m0.x.xxx) + input_4.w.xxx);
@@ -4620,7 +4597,7 @@ PS
 	    }
 	    float4 _11008;
 	    float _13494;
-	    if (_19210)
+	    if (_21944)
 	    {
 	        float3 _25193 = lerp(0.5f.xxx, lerp(0.5f.xxx, _19283.xyz, input_1.xyz).xyz, _21712.xxx);
 	        float4 _17852;
@@ -4652,11 +4629,12 @@ PS
 	        {
 	            float4 _13213;
 	            float _15671;
-	            if (_17764 == 0u)
+	            if (_17422 == 0u)
 	            {
 	                float3 _3895 = input_2.xyz - PerViewConstantBuffer_t_1_m0.xyz;
 	                bool4 _24464 = bool4(PerViewConstantBufferCsgo_t_1_m0.x != int4(0, 0, 0, 0).x, PerViewConstantBufferCsgo_t_1_m0.y != int4(0, 0, 0, 0).y, PerViewConstantBufferCsgo_t_1_m0.z != int4(0, 0, 0, 0).z, PerViewConstantBufferCsgo_t_1_m0.w != int4(0, 0, 0, 0).w);
 	                float4 _22475;
+	                [branch]
 	                if (_24464.y)
 	                {
 	                    float2 _9342 = clamp(PerViewConstantBufferCsgo_t_1_m1.xy + (PerViewConstantBufferCsgo_t_1_m1.zw * float2(length(_3895.xyz), input_2.z)), 0.0f.xx, 1.0f.xx);
@@ -4674,12 +4652,13 @@ PS
 	                }
 	                float4 _13212;
 	                float _15670;
+	                [branch]
 	                if (_24464.z)
 	                {
 	                    float _14602 = clamp(pow(max(0.0f, (length(_3895.xyz) * PerViewConstantBufferCsgo_t_1_m4.y) + PerViewConstantBufferCsgo_t_1_m4.x), PerViewConstantBufferCsgo_t_1_m4.w), 0.0f, 1.0f) * clamp(pow(max(0.0f, (input_2.z * PerViewConstantBufferCsgo_t_1_m5.y) + PerViewConstantBufferCsgo_t_1_m5.x), PerViewConstantBufferCsgo_t_1_m5.z), 0.0f, 1.0f);
 	                    float _13668 = clamp(_14602, 0.0f, 1.0f) * PerViewConstantBufferCsgo_t_1_m7.w;
 	                    float _24483 = 1.0f - _13668;
-	                    float3 _25192 = lerp(float4((g_tFogCubeTexture.SampleLevel(g_sTrilinearClamp, normalize(mul(float4(_3895.xyz, 0.0f), float4x4(float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].x, PerViewConstantBufferCsgo_t_1_m6._m0[1].x, PerViewConstantBufferCsgo_t_1_m6._m0[2].x, PerViewConstantBufferCsgo_t_1_m6._m0[3].x), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].y, PerViewConstantBufferCsgo_t_1_m6._m0[1].y, PerViewConstantBufferCsgo_t_1_m6._m0[2].y, PerViewConstantBufferCsgo_t_1_m6._m0[3].y), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].z, PerViewConstantBufferCsgo_t_1_m6._m0[1].z, PerViewConstantBufferCsgo_t_1_m6._m0[2].z, PerViewConstantBufferCsgo_t_1_m6._m0[3].z), float4(PerViewConstantBufferCsgo_t_1_m6._m0[0].w, PerViewConstantBufferCsgo_t_1_m6._m0[1].w, PerViewConstantBufferCsgo_t_1_m6._m0[2].w, PerViewConstantBufferCsgo_t_1_m6._m0[3].w))).xyz).xyz, PerViewConstantBufferCsgo_t_1_m5.w * clamp(1.0f - (_14602 * PerViewConstantBufferCsgo_t_1_m4.z), 0.0f, 1.0f)) * PerViewConstantBufferCsgo_t_1_m8.x).xyz, _13668).xyz * SpriteCardPixelControls_t_1_m1.w, _22475.xyz, _24483.xxx);
+	                    float3 _25192 = lerp(float4((g_tFogCubeTexture.SampleLevel(g_sTrilinearClamp, normalize(mul(float4(_3895.xyz, 0.0f), PerViewConstantBufferCsgo_t_1_m6).xyz).xyz, PerViewConstantBufferCsgo_t_1_m5.w * clamp(1.0f - (_14602 * PerViewConstantBufferCsgo_t_1_m4.z), 0.0f, 1.0f)) * PerViewConstantBufferCsgo_t_1_m8.x).xyz, _13668).xyz * SpriteCardPixelControls_t_1_m1.w, _22475.xyz, _24483.xxx);
 	                    float4 _17851;
 	                    _17851.x = _25192.x;
 	                    _17851.y = _25192.y;
@@ -4718,7 +4697,7 @@ PS
 	    }
 	    float4 _23992 = float4(_11008.xyz, _13494 * abs(SpriteCardPixelControls_t_1_m1.w));
 	    float4 _6805;
-	    if (_19210)
+	    if (_21944)
 	    {
 	        float3 _16279 = clamp(_23992.xyz, 0.0f.xxx, 1.0f.xxx);
 	        float4 _13514 = _23992;

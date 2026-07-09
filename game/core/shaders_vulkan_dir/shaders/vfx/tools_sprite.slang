@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: gs, ps, vs
 }
 
@@ -149,31 +149,26 @@ GS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// Unsupported shader stage.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (3776 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (3172 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	layout(points) in;
 	layout(max_vertices = 4, triangle_strip) out;
 	
-	struct _1402
-	{
-	    vec4 _m0[4];
-	};
-	
 	vec4 _2;
 	
-	struct _869
+	struct _1278
 	{
-	    _1402 _m0;
+	    mat4 _m0;
 	    vec2 _m1;
 	    vec4 _m2;
 	};
 	
-	layout(set = 2) uniform _869 PerViewConstantBuffer_t;
+	layout(set = 2) uniform _1278 PerViewConstantBuffer_t;
 	
 	layout(location = 0) in vec4 input_0[1];
 	layout(location = 1) in vec4 input_1[1];
@@ -184,10 +179,10 @@ GS
 	
 	void main()
 	{
-	    vec4 _7230 = (vec4(input_0[0].xyz, 1.0) + (PerViewConstantBuffer_t._m2 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	    vec2 _13731 = _7230.xy;
+	    vec4 _20663 = (vec4(input_0[0].xyz, 1.0) + (PerViewConstantBuffer_t._m2 * 1.0)).xyzw * PerViewConstantBuffer_t._m0;
+	    vec2 _13731 = _20663.xy;
 	    vec2 _14654 = PerViewConstantBuffer_t._m1.xy * input_2[0];
-	    float _12129 = _7230.w;
+	    float _12129 = _20663.w;
 	    vec2 _6635 = _13731 + ((_14654 * vec2(-1.0)) * _12129);
 	    float _9979 = _6635.x;
 	    vec4 _20488;
@@ -206,7 +201,7 @@ GS
 	    vec2 _9004 = ((_20489.xy / _7534) * 0.5) + vec2(0.5);
 	    vec4 _5752 = vec4(_22603.x, (vec2(_9004.x, 1.0 - _9004.y) / PerViewConstantBuffer_t._m1.xy).yx, _22603.y);
 	    vec2 _9831 = _13731 + ((_14654 * vec2(-1.0, 1.0)) * _12129);
-	    vec4 _20108 = _7230;
+	    vec4 _20108 = _20663;
 	    _20108.x = _9831.x;
 	    output_0 = input_1[0];
 	    output_1 = vec2(0.0);
@@ -214,7 +209,7 @@ GS
 	    _20108.y = -_9831.y;
 	    gl_Position = _20108;
 	    EmitVertex();
-	    vec4 _18816 = _7230;
+	    vec4 _18816 = _20663;
 	    _18816.x = _9979;
 	    output_0 = input_1[0];
 	    output_1 = vec2(0.0, 1.0);
@@ -222,7 +217,7 @@ GS
 	    _18816.y = -_21775;
 	    gl_Position = _18816;
 	    EmitVertex();
-	    vec4 _18817 = _7230;
+	    vec4 _18817 = _20663;
 	    _18817.x = _9980;
 	    output_0 = input_1[0];
 	    output_1 = vec2(1.0, 0.0);
@@ -231,7 +226,7 @@ GS
 	    gl_Position = _18817;
 	    EmitVertex();
 	    vec2 _9832 = _13731 + ((_14654 * vec2(1.0, -1.0)) * _12129);
-	    vec4 _20109 = _7230;
+	    vec4 _20109 = _20663;
 	    _20109.x = _9832.x;
 	    output_0 = input_1[0];
 	    output_1 = vec2(1.0);

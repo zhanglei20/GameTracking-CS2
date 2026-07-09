@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_60
 	// Programs: rtx
 }
@@ -31,18 +31,27 @@ RTX
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// Unsupported builtin in HLSL: 5319
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (50508 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (58156 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_EXT_ray_tracing : require
 	
-	struct _MatrixStorage_float4x3_ColMajornatural
+	struct SceneGlobalInfoGPU_t_natural_logical
 	{
-	    vec4 data[3];
+	    vec4 m_vSkyColor;
+	    vec4 m_vSkyAmbientBounce;
+	    vec4 m_vSunLightIrradiance;
+	    vec4 m_vLocalLightMinBounds;
+	    vec4 m_vLocalLightMaxBounds;
+	    ivec4 m_vLightBinCellCount_nLightCount;
+	    mat4x3 m_mIBLTransformI;
+	    vec4 m_vIBLCubeMapScale;
+	    ivec4 m_vIBLParams;
+	    ivec4 m_vBrdfLUTs;
 	};
 	
 	struct SceneGlobalInfoGPU_t_natural
@@ -53,15 +62,10 @@ RTX
 	    vec4 m_vLocalLightMinBounds;
 	    vec4 m_vLocalLightMaxBounds;
 	    ivec4 m_vLightBinCellCount_nLightCount;
-	    _MatrixStorage_float4x3_ColMajornatural m_mIBLTransformI;
+	    mat4x3 m_mIBLTransformI;
 	    vec4 m_vIBLCubeMapScale;
 	    ivec4 m_vIBLParams;
 	    ivec4 m_vBrdfLUTs;
-	};
-	
-	struct _MatrixStorage_float4x4_ColMajornatural
-	{
-	    vec4 data[4];
 	};
 	
 	struct _Array_natural_vector_float_4_5
@@ -71,8 +75,8 @@ RTX
 	
 	struct PathTraceBarnLightGPU_t_natural
 	{
-	    _MatrixStorage_float4x4_ColMajornatural m_mToClipSpace;
-	    _MatrixStorage_float4x4_ColMajornatural m_mFromClipSpace;
+	    mat4 m_mToClipSpace;
+	    mat4 m_mFromClipSpace;
 	    vec4 m_vNearPlane;
 	    vec4 m_vLightPosition;
 	    vec4 m_vCookieParameters;
@@ -87,7 +91,7 @@ RTX
 	    vec4 m_vIlluminationBoundsCenter;
 	    vec4 m_qIlluminationBoundsOrient;
 	    vec4 m_vIlluminationBoundsExtent;
-	    _MatrixStorage_float4x3_ColMajornatural m_mBarnIlluminationFromWorld;
+	    mat4x3 m_mBarnIlluminationFromWorld;
 	    int m_nCookie;
 	    int m_nLuminaireType;
 	    int m_nPathTraceFlags;
@@ -98,2171 +102,2306 @@ RTX
 	    int _pad;
 	};
 	
-	vec4 _90;
+	vec4 _85;
 	
 	layout(set = 3, binding = 37, std430) readonly buffer StructuredBuffer
 	{
-	    SceneGlobalInfoGPU_t_natural _m0[];
+	    layout(row_major) SceneGlobalInfoGPU_t_natural _member0[];
 	} g_SceneGlobalInfo;
-	
-	layout(set = 6, binding = 158, std430) buffer RWStructuredBuffer
-	{
-	    uint _m0[];
-	} g_LightBins;
 	
 	layout(set = 3, binding = 36, std430) readonly buffer g_Lights
 	{
-	    PathTraceBarnLightGPU_t_natural _m0[];
+	    layout(row_major) PathTraceBarnLightGPU_t_natural _member0[];
 	} g_Lights_1;
+	
+	layout(set = 6, binding = 158, std430) buffer RWStructuredBuffer
+	{
+	    uint _member0[];
+	} g_LightBins;
 	
 	void main()
 	{
-	    do
+	    SceneGlobalInfoGPU_t_natural_logical _283;
+	    _283.m_vSkyColor = g_SceneGlobalInfo._member0[0].m_vSkyColor;
+	    _283.m_vSkyAmbientBounce = g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce;
+	    _283.m_vSunLightIrradiance = g_SceneGlobalInfo._member0[0].m_vSunLightIrradiance;
+	    _283.m_vLocalLightMinBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMinBounds;
+	    _283.m_vLocalLightMaxBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMaxBounds;
+	    _283.m_vLightBinCellCount_nLightCount = g_SceneGlobalInfo._member0[0].m_vLightBinCellCount_nLightCount;
+	    _283.m_mIBLTransformI = g_SceneGlobalInfo._member0[0].m_mIBLTransformI;
+	    _283.m_vIBLCubeMapScale = g_SceneGlobalInfo._member0[0].m_vIBLCubeMapScale;
+	    _283.m_vIBLParams = g_SceneGlobalInfo._member0[0].m_vIBLParams;
+	    _283.m_vBrdfLUTs = g_SceneGlobalInfo._member0[0].m_vBrdfLUTs;
+	    SceneGlobalInfoGPU_t_natural_logical _288;
+	    _288.m_vSkyColor = g_SceneGlobalInfo._member0[0].m_vSkyColor;
+	    _288.m_vSkyAmbientBounce = g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce;
+	    _288.m_vSunLightIrradiance = g_SceneGlobalInfo._member0[0].m_vSunLightIrradiance;
+	    _288.m_vLocalLightMinBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMinBounds;
+	    _288.m_vLocalLightMaxBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMaxBounds;
+	    _288.m_vLightBinCellCount_nLightCount = g_SceneGlobalInfo._member0[0].m_vLightBinCellCount_nLightCount;
+	    _288.m_mIBLTransformI = g_SceneGlobalInfo._member0[0].m_mIBLTransformI;
+	    _288.m_vIBLCubeMapScale = g_SceneGlobalInfo._member0[0].m_vIBLCubeMapScale;
+	    _288.m_vIBLParams = g_SceneGlobalInfo._member0[0].m_vIBLParams;
+	    _288.m_vBrdfLUTs = g_SceneGlobalInfo._member0[0].m_vBrdfLUTs;
+	    uint _294 = uint(max(1, ((_288.m_vLightBinCellCount_nLightCount.w + 31) / 32)));
+	    uvec3 _295 = uvec3(_283.m_vLightBinCellCount_nLightCount.xyz);
+	    uint _299 = gl_LaunchIDEXT.z / _294;
+	    uint nMask = gl_LaunchIDEXT.z - (_299 * _294);
+	    uint _302 = _294 * _295.x;
+	    SceneGlobalInfoGPU_t_natural_logical _315;
+	    _315.m_vSkyColor = g_SceneGlobalInfo._member0[0].m_vSkyColor;
+	    _315.m_vSkyAmbientBounce = g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce;
+	    _315.m_vSunLightIrradiance = g_SceneGlobalInfo._member0[0].m_vSunLightIrradiance;
+	    _315.m_vLocalLightMinBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMinBounds;
+	    _315.m_vLocalLightMaxBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMaxBounds;
+	    _315.m_vLightBinCellCount_nLightCount = g_SceneGlobalInfo._member0[0].m_vLightBinCellCount_nLightCount;
+	    _315.m_mIBLTransformI = g_SceneGlobalInfo._member0[0].m_mIBLTransformI;
+	    _315.m_vIBLCubeMapScale = g_SceneGlobalInfo._member0[0].m_vIBLCubeMapScale;
+	    _315.m_vIBLParams = g_SceneGlobalInfo._member0[0].m_vIBLParams;
+	    _315.m_vBrdfLUTs = g_SceneGlobalInfo._member0[0].m_vBrdfLUTs;
+	    SceneGlobalInfoGPU_t_natural_logical _320;
+	    _320.m_vSkyColor = g_SceneGlobalInfo._member0[0].m_vSkyColor;
+	    _320.m_vSkyAmbientBounce = g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce;
+	    _320.m_vSunLightIrradiance = g_SceneGlobalInfo._member0[0].m_vSunLightIrradiance;
+	    _320.m_vLocalLightMinBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMinBounds;
+	    _320.m_vLocalLightMaxBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMaxBounds;
+	    _320.m_vLightBinCellCount_nLightCount = g_SceneGlobalInfo._member0[0].m_vLightBinCellCount_nLightCount;
+	    _320.m_mIBLTransformI = g_SceneGlobalInfo._member0[0].m_mIBLTransformI;
+	    _320.m_vIBLCubeMapScale = g_SceneGlobalInfo._member0[0].m_vIBLCubeMapScale;
+	    _320.m_vIBLParams = g_SceneGlobalInfo._member0[0].m_vIBLParams;
+	    _320.m_vBrdfLUTs = g_SceneGlobalInfo._member0[0].m_vBrdfLUTs;
+	    SceneGlobalInfoGPU_t_natural_logical _326;
+	    _326.m_vSkyColor = g_SceneGlobalInfo._member0[0].m_vSkyColor;
+	    _326.m_vSkyAmbientBounce = g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce;
+	    _326.m_vSunLightIrradiance = g_SceneGlobalInfo._member0[0].m_vSunLightIrradiance;
+	    _326.m_vLocalLightMinBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMinBounds;
+	    _326.m_vLocalLightMaxBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMaxBounds;
+	    _326.m_vLightBinCellCount_nLightCount = g_SceneGlobalInfo._member0[0].m_vLightBinCellCount_nLightCount;
+	    _326.m_mIBLTransformI = g_SceneGlobalInfo._member0[0].m_mIBLTransformI;
+	    _326.m_vIBLCubeMapScale = g_SceneGlobalInfo._member0[0].m_vIBLCubeMapScale;
+	    _326.m_vIBLParams = g_SceneGlobalInfo._member0[0].m_vIBLParams;
+	    _326.m_vBrdfLUTs = g_SceneGlobalInfo._member0[0].m_vBrdfLUTs;
+	    vec3 vCellMin = vec3(uvec3(gl_LaunchIDEXT.xy, _299)) / vec3(_326.m_vLightBinCellCount_nLightCount.xyz);
+	    SceneGlobalInfoGPU_t_natural_logical _332;
+	    _332.m_vSkyColor = g_SceneGlobalInfo._member0[0].m_vSkyColor;
+	    _332.m_vSkyAmbientBounce = g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce;
+	    _332.m_vSunLightIrradiance = g_SceneGlobalInfo._member0[0].m_vSunLightIrradiance;
+	    _332.m_vLocalLightMinBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMinBounds;
+	    _332.m_vLocalLightMaxBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMaxBounds;
+	    _332.m_vLightBinCellCount_nLightCount = g_SceneGlobalInfo._member0[0].m_vLightBinCellCount_nLightCount;
+	    _332.m_mIBLTransformI = g_SceneGlobalInfo._member0[0].m_mIBLTransformI;
+	    _332.m_vIBLCubeMapScale = g_SceneGlobalInfo._member0[0].m_vIBLCubeMapScale;
+	    _332.m_vIBLParams = g_SceneGlobalInfo._member0[0].m_vIBLParams;
+	    _332.m_vBrdfLUTs = g_SceneGlobalInfo._member0[0].m_vBrdfLUTs;
+	    vec3 _337 = mix(_315.m_vLocalLightMinBounds.xyz, _320.m_vLocalLightMaxBounds.xyz, vCellMin);
+	    vec3 _338 = mix(_315.m_vLocalLightMinBounds.xyz, _320.m_vLocalLightMaxBounds.xyz, vCellMin + (vec3(1.0) / vec3(_332.m_vLightBinCellCount_nLightCount.xyz)));
+	    int nStartLight = int(nMask) * 32;
+	    SceneGlobalInfoGPU_t_natural_logical _342;
+	    _342.m_vSkyColor = g_SceneGlobalInfo._member0[0].m_vSkyColor;
+	    _342.m_vSkyAmbientBounce = g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce;
+	    _342.m_vSunLightIrradiance = g_SceneGlobalInfo._member0[0].m_vSunLightIrradiance;
+	    _342.m_vLocalLightMinBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMinBounds;
+	    _342.m_vLocalLightMaxBounds = g_SceneGlobalInfo._member0[0].m_vLocalLightMaxBounds;
+	    _342.m_vLightBinCellCount_nLightCount = g_SceneGlobalInfo._member0[0].m_vLightBinCellCount_nLightCount;
+	    _342.m_mIBLTransformI = g_SceneGlobalInfo._member0[0].m_mIBLTransformI;
+	    _342.m_vIBLCubeMapScale = g_SceneGlobalInfo._member0[0].m_vIBLCubeMapScale;
+	    _342.m_vIBLParams = g_SceneGlobalInfo._member0[0].m_vIBLParams;
+	    _342.m_vBrdfLUTs = g_SceneGlobalInfo._member0[0].m_vBrdfLUTs;
+	    int _345 = min((nStartLight + 32), _342.m_vLightBinCellCount_nLightCount.w);
+	    int i = nStartLight;
+	    int nBits = 0;
+	    float _159;
+	    vec4 _160;
+	    vec4 _161;
+	    bool _162;
+	    vec3 _163;
+	    float _164;
+	    vec3 _165;
+	    float _166;
+	    vec3 _167;
+	    float _168;
+	    vec3 _169;
+	    float _170;
+	    vec3 _171;
+	    float _172;
+	    vec3 _173;
+	    float _174;
+	    vec3 _175;
+	    float _176;
+	    vec3 _177;
+	    float _178;
+	    float _179;
+	    vec4 _180;
+	    vec4 _181;
+	    bool _182;
+	    vec3 _183;
+	    float _184;
+	    vec3 _185;
+	    float _186;
+	    vec3 _187;
+	    float _188;
+	    vec3 _189;
+	    float _190;
+	    vec3 _191;
+	    float _192;
+	    vec3 _193;
+	    float _194;
+	    vec3 _195;
+	    float _196;
+	    vec3 _197;
+	    float _198;
+	    float _199;
+	    vec4 _200;
+	    vec4 _201;
+	    bool _202;
+	    vec3 _203;
+	    float _204;
+	    vec3 _205;
+	    float _206;
+	    vec3 _207;
+	    float _208;
+	    vec3 _209;
+	    float _210;
+	    vec3 _211;
+	    float _212;
+	    vec3 _213;
+	    float _214;
+	    vec3 _215;
+	    float _216;
+	    vec3 _217;
+	    float _218;
+	    float _219;
+	    vec4 _220;
+	    vec4 _221;
+	    bool _222;
+	    vec3 _223;
+	    float _224;
+	    vec3 _225;
+	    float _226;
+	    vec3 _227;
+	    float _228;
+	    vec3 _229;
+	    float _230;
+	    vec3 _231;
+	    float _232;
+	    vec3 _233;
+	    float _234;
+	    vec3 _235;
+	    float _236;
+	    vec3 _237;
+	    float _238;
+	    float _239;
+	    vec4 _240;
+	    vec4 _241;
+	    bool _242;
+	    vec3 _243;
+	    float _244;
+	    vec3 _245;
+	    float _246;
+	    vec3 _247;
+	    float _248;
+	    vec3 _249;
+	    float _250;
+	    vec3 _251;
+	    float _252;
+	    vec3 _253;
+	    float _254;
+	    vec3 _255;
+	    float _256;
+	    vec3 _257;
+	    float _258;
+	    float _259;
+	    vec4 _260;
+	    vec4 _261;
+	    bool _262;
+	    vec3 _263;
+	    float _264;
+	    vec3 _265;
+	    float _266;
+	    vec3 _267;
+	    float _268;
+	    vec3 _269;
+	    float _270;
+	    vec3 _271;
+	    float _272;
+	    vec3 _273;
+	    float _274;
+	    vec3 _275;
+	    float _276;
+	    vec3 _277;
+	    float _278;
+	    float _279;
+	    bool _280;
+	    for (;;)
 	    {
-	        uint _235 = uint(max(1, ((g_SceneGlobalInfo._m0[0].m_vLightBinCellCount_nLightCount.w + 31) / 32)));
-	        uvec3 _236 = uvec3(g_SceneGlobalInfo._m0[0].m_vLightBinCellCount_nLightCount.xyz);
-	        uint _240 = uint(int(_235));
-	        uint _241 = gl_LaunchIDEXT.z / _240;
-	        uint nMask = gl_LaunchIDEXT.z - (_241 * _240);
-	        uint _244 = _235 * _236.x;
-	        vec3 vCellMin = vec3(uvec3(gl_LaunchIDEXT.xy, _241)) / vec3(g_SceneGlobalInfo._m0[0].m_vLightBinCellCount_nLightCount.xyz);
-	        vec3 _275 = mix(g_SceneGlobalInfo._m0[0].m_vLocalLightMinBounds.xyz, g_SceneGlobalInfo._m0[0].m_vLocalLightMaxBounds.xyz, vCellMin);
-	        vec3 _276 = mix(g_SceneGlobalInfo._m0[0].m_vLocalLightMinBounds.xyz, g_SceneGlobalInfo._m0[0].m_vLocalLightMaxBounds.xyz, vCellMin + (vec3(1.0) / vec3(g_SceneGlobalInfo._m0[0].m_vLightBinCellCount_nLightCount.xyz)));
-	        int nStartLight = int(nMask) * 32;
-	        int _282 = min((nStartLight + 32), g_SceneGlobalInfo._m0[0].m_vLightBinCellCount_nLightCount.w);
-	        int i = nStartLight;
-	        int nBits = 0;
-	        float _100;
-	        vec4 _101;
-	        vec4 _102;
-	        bool _103;
-	        vec3 _104;
-	        float _105;
-	        vec3 _106;
-	        float _107;
-	        vec3 _108;
-	        float _109;
-	        vec3 _110;
-	        float _111;
-	        vec3 _112;
-	        float _113;
-	        vec3 _114;
-	        float _115;
-	        vec3 _116;
-	        float _117;
-	        vec3 _118;
-	        float _119;
-	        float _120;
-	        vec4 _121;
-	        vec4 _122;
-	        bool _123;
-	        vec3 _124;
-	        float _125;
-	        vec3 _126;
-	        float _127;
-	        vec3 _128;
-	        float _129;
-	        vec3 _130;
-	        float _131;
-	        vec3 _132;
-	        float _133;
-	        vec3 _134;
-	        float _135;
-	        vec3 _136;
-	        float _137;
-	        vec3 _138;
-	        float _139;
-	        float _140;
-	        vec4 _141;
-	        vec4 _142;
-	        bool _143;
-	        vec3 _144;
-	        float _145;
-	        vec3 _146;
-	        float _147;
-	        vec3 _148;
-	        float _149;
-	        vec3 _150;
-	        float _151;
-	        vec3 _152;
-	        float _153;
-	        vec3 _154;
-	        float _155;
-	        vec3 _156;
-	        float _157;
-	        vec3 _158;
-	        float _159;
-	        float _160;
-	        vec4 _161;
-	        vec4 _162;
-	        bool _163;
-	        vec3 _164;
-	        float _165;
-	        vec3 _166;
-	        float _167;
-	        vec3 _168;
-	        float _169;
-	        vec3 _170;
-	        float _171;
-	        vec3 _172;
-	        float _173;
-	        vec3 _174;
-	        float _175;
-	        vec3 _176;
-	        float _177;
-	        vec3 _178;
-	        float _179;
-	        float _180;
-	        vec4 _181;
-	        vec4 _182;
-	        bool _183;
-	        vec3 _184;
-	        float _185;
-	        vec3 _186;
-	        float _187;
-	        vec3 _188;
-	        float _189;
-	        vec3 _190;
-	        float _191;
-	        vec3 _192;
-	        float _193;
-	        vec3 _194;
-	        float _195;
-	        vec3 _196;
-	        float _197;
-	        vec3 _198;
-	        float _199;
-	        float _200;
-	        vec4 _201;
-	        vec4 _202;
-	        bool _203;
-	        vec3 _204;
-	        float _205;
-	        vec3 _206;
-	        float _207;
-	        vec3 _208;
-	        float _209;
-	        vec3 _210;
-	        float _211;
-	        vec3 _212;
-	        float _213;
-	        vec3 _214;
-	        float _215;
-	        vec3 _216;
-	        float _217;
-	        vec3 _218;
-	        float _219;
-	        float _220;
-	        bool _221;
-	        for (;;)
+	        bool _350_ladder_break = false;
+	        do
 	        {
-	            bool _287_ladder_break = false;
+	            if (!(i < _345))
+	            {
+	                _350_ladder_break = true;
+	                break;
+	            }
+	            vec3 _110 = g_Lights_1._member0[i].m_vMinBounds.xyz;
+	            vec3 _109 = g_Lights_1._member0[i].m_vMaxBounds.xyz;
+	            vec3 _108 = _337;
+	            vec3 _107 = _338;
 	            do
 	            {
-	                if (!(i < _282))
+	                bvec3 _370 = greaterThan(_110, _107);
+	                bvec3 _373 = lessThan(_109, _108);
+	                if (any(bvec3(_370.x || _373.x, _370.y || _373.y, _370.z || _373.z)))
 	                {
-	                    _287_ladder_break = true;
+	                    _280 = false;
 	                    break;
 	                }
-	                mat4 _327 = mat4(vec4(g_Lights_1._m0[i].m_mFromClipSpace.data[0].x, g_Lights_1._m0[i].m_mFromClipSpace.data[1].x, g_Lights_1._m0[i].m_mFromClipSpace.data[2].x, g_Lights_1._m0[i].m_mFromClipSpace.data[3].x), vec4(g_Lights_1._m0[i].m_mFromClipSpace.data[0].y, g_Lights_1._m0[i].m_mFromClipSpace.data[1].y, g_Lights_1._m0[i].m_mFromClipSpace.data[2].y, g_Lights_1._m0[i].m_mFromClipSpace.data[3].y), vec4(g_Lights_1._m0[i].m_mFromClipSpace.data[0].z, g_Lights_1._m0[i].m_mFromClipSpace.data[1].z, g_Lights_1._m0[i].m_mFromClipSpace.data[2].z, g_Lights_1._m0[i].m_mFromClipSpace.data[3].z), vec4(g_Lights_1._m0[i].m_mFromClipSpace.data[0].w, g_Lights_1._m0[i].m_mFromClipSpace.data[1].w, g_Lights_1._m0[i].m_mFromClipSpace.data[2].w, g_Lights_1._m0[i].m_mFromClipSpace.data[3].w));
-	                do
-	                {
-	                    bvec3 _340 = greaterThan(g_Lights_1._m0[i].m_vMinBounds.xyz, _276);
-	                    bvec3 _341 = lessThan(g_Lights_1._m0[i].m_vMaxBounds.xyz, _275);
-	                    if (any(bvec3(_340.x || _341.x, _340.y || _341.y, _340.z || _341.z)))
-	                    {
-	                        _221 = false;
-	                        break;
-	                    }
-	                    _221 = true;
-	                    break;
-	                } while(false);
-	                if (!_221)
-	                {
-	                    break;
-	                }
-	                do
-	                {
-	                    if (g_Lights_1._m0[i].m_vLightPosition.w == 0.0)
-	                    {
-	                        _220 = 3.4028234663852885981170418348452e+38;
-	                        break;
-	                    }
-	                    if (g_Lights_1._m0[i].m_vDistanceFade_vSkirt.y == 0.0)
-	                    {
-	                        _220 = 3.4028234663852885981170418348452e+38;
-	                        break;
-	                    }
-	                    _220 = (-g_Lights_1._m0[i].m_vDistanceFade_vSkirt.x) / g_Lights_1._m0[i].m_vDistanceFade_vSkirt.y;
-	                    break;
-	                } while(false);
-	                if (_220 < 3.4028234663852885981170418348452e+38)
-	                {
-	                    vec3 vDelta = g_Lights_1._m0[i].m_vLightPosition.xyz - clamp(g_Lights_1._m0[i].m_vLightPosition.xyz, _275, _276);
-	                    if (dot(vDelta, vDelta) > (_220 * _220))
-	                    {
-	                        break;
-	                    }
-	                }
-	                vec4 _377 = _327 * vec4(vec3(-1.0, -1.0, 0.0), 1.0);
-	                vec3 _381 = _377.xyz / vec3(_377.w);
-	                vec4 _383;
-	                _383.x = _381.x;
-	                _383.y = _381.y;
-	                _383.z = _381.z;
-	                vec3 _99 = _383.xyz;
-	                vec4 _390 = _327 * vec4(vec3(-1.0, 1.0, 0.0), 1.0);
-	                vec3 _394 = _390.xyz / vec3(_390.w);
-	                vec4 _396;
-	                _396.x = _394.x;
-	                _396.y = _394.y;
-	                _396.z = _394.z;
-	                vec3 _98 = _396.xyz;
-	                vec4 _403 = _327 * vec4(vec3(1.0, 1.0, 0.0), 1.0);
-	                vec3 _407 = _403.xyz / vec3(_403.w);
-	                vec4 _409;
-	                _409.x = _407.x;
-	                _409.y = _407.y;
-	                _409.z = _407.z;
-	                vec3 _97 = _409.xyz;
-	                vec4 _416 = _327 * vec4(vec3(1.0, -1.0, 0.0), 1.0);
-	                vec3 _420 = _416.xyz / vec3(_416.w);
-	                vec4 _422;
-	                _422.x = _420.x;
-	                _422.y = _420.y;
-	                _422.z = _420.z;
-	                vec3 _96 = _422.xyz;
-	                vec4 _429 = _327 * vec4(vec3(-1.0, -1.0, 1.0), 1.0);
-	                vec3 _433 = _429.xyz / vec3(_429.w);
-	                vec4 _435;
-	                _435.x = _433.x;
-	                _435.y = _433.y;
-	                _435.z = _433.z;
-	                vec3 _95 = _435.xyz;
-	                vec4 _442 = _327 * vec4(vec3(-1.0, 1.0, 1.0), 1.0);
-	                vec3 _446 = _442.xyz / vec3(_442.w);
-	                vec4 _448;
-	                _448.x = _446.x;
-	                _448.y = _446.y;
-	                _448.z = _446.z;
-	                vec3 _94 = _448.xyz;
-	                vec4 _455 = _327 * vec4(vec3(1.0), 1.0);
-	                vec3 _459 = _455.xyz / vec3(_455.w);
-	                vec4 _461;
-	                _461.x = _459.x;
-	                _461.y = _459.y;
-	                _461.z = _459.z;
-	                vec3 _93 = _461.xyz;
-	                vec4 _468 = _327 * vec4(vec3(1.0, -1.0, 1.0), 1.0);
-	                vec3 _472 = _468.xyz / vec3(_468.w);
-	                vec4 _474;
-	                _474.x = _472.x;
-	                _474.y = _472.y;
-	                _474.z = _472.z;
-	                vec3 _92 = _474.xyz;
-	                vec3 _483 = normalize(cross(_396.xyz - _383.xyz, _409.xyz - _383.xyz));
-	                vec4 _485 = vec4(_483, dot(_483, _396.xyz));
-	                if (false)
-	                {
-	                    _219 = _276.x;
-	                }
-	                else
-	                {
-	                    _219 = _275.x;
-	                }
-	                vec3 _492 = _218;
-	                _492.x = _219;
-	                _218 = _492;
-	                if (false)
-	                {
-	                    _219 = _276.y;
-	                }
-	                else
-	                {
-	                    _219 = _275.y;
-	                }
-	                vec3 _500 = _218;
-	                _500.y = _219;
-	                _218 = _500;
-	                if (false)
-	                {
-	                    _219 = _276.z;
-	                }
-	                else
-	                {
-	                    _219 = _275.z;
-	                }
-	                vec3 _508 = _218;
-	                _508.z = _219;
-	                _218 = _508;
-	                if (true)
-	                {
-	                    _217 = _276.x;
-	                }
-	                else
-	                {
-	                    _217 = _275.x;
-	                }
-	                vec3 _516 = _216;
-	                _516.x = _217;
-	                _216 = _516;
-	                if (false)
-	                {
-	                    _217 = _276.y;
-	                }
-	                else
-	                {
-	                    _217 = _275.y;
-	                }
-	                vec3 _524 = _216;
-	                _524.y = _217;
-	                _216 = _524;
-	                if (false)
-	                {
-	                    _217 = _276.z;
-	                }
-	                else
-	                {
-	                    _217 = _275.z;
-	                }
-	                vec3 _532 = _216;
-	                _532.z = _217;
-	                _216 = _532;
-	                if (false)
-	                {
-	                    _215 = _276.x;
-	                }
-	                else
-	                {
-	                    _215 = _275.x;
-	                }
-	                vec3 _540 = _214;
-	                _540.x = _215;
-	                _214 = _540;
-	                if (true)
-	                {
-	                    _215 = _276.y;
-	                }
-	                else
-	                {
-	                    _215 = _275.y;
-	                }
-	                vec3 _548 = _214;
-	                _548.y = _215;
-	                _214 = _548;
-	                if (false)
-	                {
-	                    _215 = _276.z;
-	                }
-	                else
-	                {
-	                    _215 = _275.z;
-	                }
-	                vec3 _556 = _214;
-	                _556.z = _215;
-	                _214 = _556;
-	                if (true)
-	                {
-	                    _213 = _276.x;
-	                }
-	                else
-	                {
-	                    _213 = _275.x;
-	                }
-	                vec3 _564 = _212;
-	                _564.x = _213;
-	                _212 = _564;
-	                if (true)
-	                {
-	                    _213 = _276.y;
-	                }
-	                else
-	                {
-	                    _213 = _275.y;
-	                }
-	                vec3 _572 = _212;
-	                _572.y = _213;
-	                _212 = _572;
-	                if (false)
-	                {
-	                    _213 = _276.z;
-	                }
-	                else
-	                {
-	                    _213 = _275.z;
-	                }
-	                vec3 _580 = _212;
-	                _580.z = _213;
-	                _212 = _580;
-	                if (false)
-	                {
-	                    _211 = _276.x;
-	                }
-	                else
-	                {
-	                    _211 = _275.x;
-	                }
-	                vec3 _588 = _210;
-	                _588.x = _211;
-	                _210 = _588;
-	                if (false)
-	                {
-	                    _211 = _276.y;
-	                }
-	                else
-	                {
-	                    _211 = _275.y;
-	                }
-	                vec3 _596 = _210;
-	                _596.y = _211;
-	                _210 = _596;
-	                if (true)
-	                {
-	                    _211 = _276.z;
-	                }
-	                else
-	                {
-	                    _211 = _275.z;
-	                }
-	                vec3 _604 = _210;
-	                _604.z = _211;
-	                _210 = _604;
-	                if (true)
-	                {
-	                    _209 = _276.x;
-	                }
-	                else
-	                {
-	                    _209 = _275.x;
-	                }
-	                vec3 _612 = _208;
-	                _612.x = _209;
-	                _208 = _612;
-	                if (false)
-	                {
-	                    _209 = _276.y;
-	                }
-	                else
-	                {
-	                    _209 = _275.y;
-	                }
-	                vec3 _620 = _208;
-	                _620.y = _209;
-	                _208 = _620;
-	                if (true)
-	                {
-	                    _209 = _276.z;
-	                }
-	                else
-	                {
-	                    _209 = _275.z;
-	                }
-	                vec3 _628 = _208;
-	                _628.z = _209;
-	                _208 = _628;
-	                if (false)
-	                {
-	                    _207 = _276.x;
-	                }
-	                else
-	                {
-	                    _207 = _275.x;
-	                }
-	                vec3 _636 = _206;
-	                _636.x = _207;
-	                _206 = _636;
-	                if (true)
-	                {
-	                    _207 = _276.y;
-	                }
-	                else
-	                {
-	                    _207 = _275.y;
-	                }
-	                vec3 _644 = _206;
-	                _644.y = _207;
-	                _206 = _644;
-	                if (true)
-	                {
-	                    _207 = _276.z;
-	                }
-	                else
-	                {
-	                    _207 = _275.z;
-	                }
-	                vec3 _652 = _206;
-	                _652.z = _207;
-	                _206 = _652;
-	                if (true)
-	                {
-	                    _205 = _276.x;
-	                }
-	                else
-	                {
-	                    _205 = _275.x;
-	                }
-	                vec3 _660 = _204;
-	                _660.x = _205;
-	                _204 = _660;
-	                if (true)
-	                {
-	                    _205 = _276.y;
-	                }
-	                else
-	                {
-	                    _205 = _275.y;
-	                }
-	                vec3 _668 = _204;
-	                _668.y = _205;
-	                _204 = _668;
-	                if (true)
-	                {
-	                    _205 = _276.z;
-	                }
-	                else
-	                {
-	                    _205 = _275.z;
-	                }
-	                vec3 _676 = _204;
-	                _676.z = _205;
-	                _204 = _676;
-	                do
-	                {
-	                    vec3 _680 = _485.xyz;
-	                    float _682 = _485.w;
-	                    vec4 _684 = _201;
-	                    _684.x = dot(_680, _508) - _682;
-	                    _684.y = dot(_680, _532) - _682;
-	                    _684.z = dot(_680, _556) - _682;
-	                    _684.w = dot(_680, _580) - _682;
-	                    _201 = _684;
-	                    vec4 _697 = _202;
-	                    _697.x = dot(_680, _604) - _682;
-	                    _697.y = dot(_680, _628) - _682;
-	                    _697.z = dot(_680, _652) - _682;
-	                    _697.w = dot(_680, _676) - _682;
-	                    _202 = _697;
-	                    if (all(greaterThan(_684, vec4(0.0))))
-	                    {
-	                        _203 = all(greaterThan(_202, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _203 = false;
-	                    }
-	                    if (_203)
-	                    {
-	                        _200 = 1.0;
-	                        break;
-	                    }
-	                    if (all(lessThan(_201, vec4(0.0))))
-	                    {
-	                        _203 = all(lessThan(_202, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _203 = false;
-	                    }
-	                    if (_203)
-	                    {
-	                        _200 = -1.0;
-	                        break;
-	                    }
-	                    _200 = 0.0;
-	                    break;
-	                } while(false);
-	                if (_200 < 0.0)
-	                {
-	                    break;
-	                }
-	                vec3 _741 = normalize(cross(_93 - _95, _94 - _95));
-	                vec4 _743 = vec4(_741, dot(_741, _93));
-	                if (false)
-	                {
-	                    _199 = _276.x;
-	                }
-	                else
-	                {
-	                    _199 = _275.x;
-	                }
-	                vec3 _750 = _198;
-	                _750.x = _199;
-	                _198 = _750;
-	                if (false)
-	                {
-	                    _199 = _276.y;
-	                }
-	                else
-	                {
-	                    _199 = _275.y;
-	                }
-	                vec3 _758 = _198;
-	                _758.y = _199;
-	                _198 = _758;
-	                if (false)
-	                {
-	                    _199 = _276.z;
-	                }
-	                else
-	                {
-	                    _199 = _275.z;
-	                }
-	                vec3 _766 = _198;
-	                _766.z = _199;
-	                _198 = _766;
-	                if (true)
-	                {
-	                    _197 = _276.x;
-	                }
-	                else
-	                {
-	                    _197 = _275.x;
-	                }
-	                vec3 _774 = _196;
-	                _774.x = _197;
-	                _196 = _774;
-	                if (false)
-	                {
-	                    _197 = _276.y;
-	                }
-	                else
-	                {
-	                    _197 = _275.y;
-	                }
-	                vec3 _782 = _196;
-	                _782.y = _197;
-	                _196 = _782;
-	                if (false)
-	                {
-	                    _197 = _276.z;
-	                }
-	                else
-	                {
-	                    _197 = _275.z;
-	                }
-	                vec3 _790 = _196;
-	                _790.z = _197;
-	                _196 = _790;
-	                if (false)
-	                {
-	                    _195 = _276.x;
-	                }
-	                else
-	                {
-	                    _195 = _275.x;
-	                }
-	                vec3 _798 = _194;
-	                _798.x = _195;
-	                _194 = _798;
-	                if (true)
-	                {
-	                    _195 = _276.y;
-	                }
-	                else
-	                {
-	                    _195 = _275.y;
-	                }
-	                vec3 _806 = _194;
-	                _806.y = _195;
-	                _194 = _806;
-	                if (false)
-	                {
-	                    _195 = _276.z;
-	                }
-	                else
-	                {
-	                    _195 = _275.z;
-	                }
-	                vec3 _814 = _194;
-	                _814.z = _195;
-	                _194 = _814;
-	                if (true)
-	                {
-	                    _193 = _276.x;
-	                }
-	                else
-	                {
-	                    _193 = _275.x;
-	                }
-	                vec3 _822 = _192;
-	                _822.x = _193;
-	                _192 = _822;
-	                if (true)
-	                {
-	                    _193 = _276.y;
-	                }
-	                else
-	                {
-	                    _193 = _275.y;
-	                }
-	                vec3 _830 = _192;
-	                _830.y = _193;
-	                _192 = _830;
-	                if (false)
-	                {
-	                    _193 = _276.z;
-	                }
-	                else
-	                {
-	                    _193 = _275.z;
-	                }
-	                vec3 _838 = _192;
-	                _838.z = _193;
-	                _192 = _838;
-	                if (false)
-	                {
-	                    _191 = _276.x;
-	                }
-	                else
-	                {
-	                    _191 = _275.x;
-	                }
-	                vec3 _846 = _190;
-	                _846.x = _191;
-	                _190 = _846;
-	                if (false)
-	                {
-	                    _191 = _276.y;
-	                }
-	                else
-	                {
-	                    _191 = _275.y;
-	                }
-	                vec3 _854 = _190;
-	                _854.y = _191;
-	                _190 = _854;
-	                if (true)
-	                {
-	                    _191 = _276.z;
-	                }
-	                else
-	                {
-	                    _191 = _275.z;
-	                }
-	                vec3 _862 = _190;
-	                _862.z = _191;
-	                _190 = _862;
-	                if (true)
-	                {
-	                    _189 = _276.x;
-	                }
-	                else
-	                {
-	                    _189 = _275.x;
-	                }
-	                vec3 _870 = _188;
-	                _870.x = _189;
-	                _188 = _870;
-	                if (false)
-	                {
-	                    _189 = _276.y;
-	                }
-	                else
-	                {
-	                    _189 = _275.y;
-	                }
-	                vec3 _878 = _188;
-	                _878.y = _189;
-	                _188 = _878;
-	                if (true)
-	                {
-	                    _189 = _276.z;
-	                }
-	                else
-	                {
-	                    _189 = _275.z;
-	                }
-	                vec3 _886 = _188;
-	                _886.z = _189;
-	                _188 = _886;
-	                if (false)
-	                {
-	                    _187 = _276.x;
-	                }
-	                else
-	                {
-	                    _187 = _275.x;
-	                }
-	                vec3 _894 = _186;
-	                _894.x = _187;
-	                _186 = _894;
-	                if (true)
-	                {
-	                    _187 = _276.y;
-	                }
-	                else
-	                {
-	                    _187 = _275.y;
-	                }
-	                vec3 _902 = _186;
-	                _902.y = _187;
-	                _186 = _902;
-	                if (true)
-	                {
-	                    _187 = _276.z;
-	                }
-	                else
-	                {
-	                    _187 = _275.z;
-	                }
-	                vec3 _910 = _186;
-	                _910.z = _187;
-	                _186 = _910;
-	                if (true)
-	                {
-	                    _185 = _276.x;
-	                }
-	                else
-	                {
-	                    _185 = _275.x;
-	                }
-	                vec3 _918 = _184;
-	                _918.x = _185;
-	                _184 = _918;
-	                if (true)
-	                {
-	                    _185 = _276.y;
-	                }
-	                else
-	                {
-	                    _185 = _275.y;
-	                }
-	                vec3 _926 = _184;
-	                _926.y = _185;
-	                _184 = _926;
-	                if (true)
-	                {
-	                    _185 = _276.z;
-	                }
-	                else
-	                {
-	                    _185 = _275.z;
-	                }
-	                vec3 _934 = _184;
-	                _934.z = _185;
-	                _184 = _934;
-	                do
-	                {
-	                    vec3 _938 = _743.xyz;
-	                    float _940 = _743.w;
-	                    vec4 _942 = _181;
-	                    _942.x = dot(_938, _766) - _940;
-	                    _942.y = dot(_938, _790) - _940;
-	                    _942.z = dot(_938, _814) - _940;
-	                    _942.w = dot(_938, _838) - _940;
-	                    _181 = _942;
-	                    vec4 _955 = _182;
-	                    _955.x = dot(_938, _862) - _940;
-	                    _955.y = dot(_938, _886) - _940;
-	                    _955.z = dot(_938, _910) - _940;
-	                    _955.w = dot(_938, _934) - _940;
-	                    _182 = _955;
-	                    if (all(greaterThan(_942, vec4(0.0))))
-	                    {
-	                        _183 = all(greaterThan(_182, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _183 = false;
-	                    }
-	                    if (_183)
-	                    {
-	                        _180 = 1.0;
-	                        break;
-	                    }
-	                    if (all(lessThan(_181, vec4(0.0))))
-	                    {
-	                        _183 = all(lessThan(_182, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _183 = false;
-	                    }
-	                    if (_183)
-	                    {
-	                        _180 = -1.0;
-	                        break;
-	                    }
-	                    _180 = 0.0;
-	                    break;
-	                } while(false);
-	                if (_180 < 0.0)
-	                {
-	                    break;
-	                }
-	                vec3 _999 = normalize(cross(_95 - _99, _94 - _99));
-	                vec4 _1001 = vec4(_999, dot(_999, _95));
-	                if (false)
-	                {
-	                    _179 = _276.x;
-	                }
-	                else
-	                {
-	                    _179 = _275.x;
-	                }
-	                vec3 _1008 = _178;
-	                _1008.x = _179;
-	                _178 = _1008;
-	                if (false)
-	                {
-	                    _179 = _276.y;
-	                }
-	                else
-	                {
-	                    _179 = _275.y;
-	                }
-	                vec3 _1016 = _178;
-	                _1016.y = _179;
-	                _178 = _1016;
-	                if (false)
-	                {
-	                    _179 = _276.z;
-	                }
-	                else
-	                {
-	                    _179 = _275.z;
-	                }
-	                vec3 _1024 = _178;
-	                _1024.z = _179;
-	                _178 = _1024;
-	                if (true)
-	                {
-	                    _177 = _276.x;
-	                }
-	                else
-	                {
-	                    _177 = _275.x;
-	                }
-	                vec3 _1032 = _176;
-	                _1032.x = _177;
-	                _176 = _1032;
-	                if (false)
-	                {
-	                    _177 = _276.y;
-	                }
-	                else
-	                {
-	                    _177 = _275.y;
-	                }
-	                vec3 _1040 = _176;
-	                _1040.y = _177;
-	                _176 = _1040;
-	                if (false)
-	                {
-	                    _177 = _276.z;
-	                }
-	                else
-	                {
-	                    _177 = _275.z;
-	                }
-	                vec3 _1048 = _176;
-	                _1048.z = _177;
-	                _176 = _1048;
-	                if (false)
-	                {
-	                    _175 = _276.x;
-	                }
-	                else
-	                {
-	                    _175 = _275.x;
-	                }
-	                vec3 _1056 = _174;
-	                _1056.x = _175;
-	                _174 = _1056;
-	                if (true)
-	                {
-	                    _175 = _276.y;
-	                }
-	                else
-	                {
-	                    _175 = _275.y;
-	                }
-	                vec3 _1064 = _174;
-	                _1064.y = _175;
-	                _174 = _1064;
-	                if (false)
-	                {
-	                    _175 = _276.z;
-	                }
-	                else
-	                {
-	                    _175 = _275.z;
-	                }
-	                vec3 _1072 = _174;
-	                _1072.z = _175;
-	                _174 = _1072;
-	                if (true)
-	                {
-	                    _173 = _276.x;
-	                }
-	                else
-	                {
-	                    _173 = _275.x;
-	                }
-	                vec3 _1080 = _172;
-	                _1080.x = _173;
-	                _172 = _1080;
-	                if (true)
-	                {
-	                    _173 = _276.y;
-	                }
-	                else
-	                {
-	                    _173 = _275.y;
-	                }
-	                vec3 _1088 = _172;
-	                _1088.y = _173;
-	                _172 = _1088;
-	                if (false)
-	                {
-	                    _173 = _276.z;
-	                }
-	                else
-	                {
-	                    _173 = _275.z;
-	                }
-	                vec3 _1096 = _172;
-	                _1096.z = _173;
-	                _172 = _1096;
-	                if (false)
-	                {
-	                    _171 = _276.x;
-	                }
-	                else
-	                {
-	                    _171 = _275.x;
-	                }
-	                vec3 _1104 = _170;
-	                _1104.x = _171;
-	                _170 = _1104;
-	                if (false)
-	                {
-	                    _171 = _276.y;
-	                }
-	                else
-	                {
-	                    _171 = _275.y;
-	                }
-	                vec3 _1112 = _170;
-	                _1112.y = _171;
-	                _170 = _1112;
-	                if (true)
-	                {
-	                    _171 = _276.z;
-	                }
-	                else
-	                {
-	                    _171 = _275.z;
-	                }
-	                vec3 _1120 = _170;
-	                _1120.z = _171;
-	                _170 = _1120;
-	                if (true)
-	                {
-	                    _169 = _276.x;
-	                }
-	                else
-	                {
-	                    _169 = _275.x;
-	                }
-	                vec3 _1128 = _168;
-	                _1128.x = _169;
-	                _168 = _1128;
-	                if (false)
-	                {
-	                    _169 = _276.y;
-	                }
-	                else
-	                {
-	                    _169 = _275.y;
-	                }
-	                vec3 _1136 = _168;
-	                _1136.y = _169;
-	                _168 = _1136;
-	                if (true)
-	                {
-	                    _169 = _276.z;
-	                }
-	                else
-	                {
-	                    _169 = _275.z;
-	                }
-	                vec3 _1144 = _168;
-	                _1144.z = _169;
-	                _168 = _1144;
-	                if (false)
-	                {
-	                    _167 = _276.x;
-	                }
-	                else
-	                {
-	                    _167 = _275.x;
-	                }
-	                vec3 _1152 = _166;
-	                _1152.x = _167;
-	                _166 = _1152;
-	                if (true)
-	                {
-	                    _167 = _276.y;
-	                }
-	                else
-	                {
-	                    _167 = _275.y;
-	                }
-	                vec3 _1160 = _166;
-	                _1160.y = _167;
-	                _166 = _1160;
-	                if (true)
-	                {
-	                    _167 = _276.z;
-	                }
-	                else
-	                {
-	                    _167 = _275.z;
-	                }
-	                vec3 _1168 = _166;
-	                _1168.z = _167;
-	                _166 = _1168;
-	                if (true)
-	                {
-	                    _165 = _276.x;
-	                }
-	                else
-	                {
-	                    _165 = _275.x;
-	                }
-	                vec3 _1176 = _164;
-	                _1176.x = _165;
-	                _164 = _1176;
-	                if (true)
-	                {
-	                    _165 = _276.y;
-	                }
-	                else
-	                {
-	                    _165 = _275.y;
-	                }
-	                vec3 _1184 = _164;
-	                _1184.y = _165;
-	                _164 = _1184;
-	                if (true)
-	                {
-	                    _165 = _276.z;
-	                }
-	                else
-	                {
-	                    _165 = _275.z;
-	                }
-	                vec3 _1192 = _164;
-	                _1192.z = _165;
-	                _164 = _1192;
-	                do
-	                {
-	                    vec3 _1196 = _1001.xyz;
-	                    float _1198 = _1001.w;
-	                    vec4 _1200 = _161;
-	                    _1200.x = dot(_1196, _1024) - _1198;
-	                    _1200.y = dot(_1196, _1048) - _1198;
-	                    _1200.z = dot(_1196, _1072) - _1198;
-	                    _1200.w = dot(_1196, _1096) - _1198;
-	                    _161 = _1200;
-	                    vec4 _1213 = _162;
-	                    _1213.x = dot(_1196, _1120) - _1198;
-	                    _1213.y = dot(_1196, _1144) - _1198;
-	                    _1213.z = dot(_1196, _1168) - _1198;
-	                    _1213.w = dot(_1196, _1192) - _1198;
-	                    _162 = _1213;
-	                    if (all(greaterThan(_1200, vec4(0.0))))
-	                    {
-	                        _163 = all(greaterThan(_162, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _163 = false;
-	                    }
-	                    if (_163)
-	                    {
-	                        _160 = 1.0;
-	                        break;
-	                    }
-	                    if (all(lessThan(_161, vec4(0.0))))
-	                    {
-	                        _163 = all(lessThan(_162, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _163 = false;
-	                    }
-	                    if (_163)
-	                    {
-	                        _160 = -1.0;
-	                        break;
-	                    }
-	                    _160 = 0.0;
-	                    break;
-	                } while(false);
-	                if (_160 < 0.0)
-	                {
-	                    break;
-	                }
-	                vec3 _1257 = normalize(cross(_94 - _98, _93 - _98));
-	                vec4 _1259 = vec4(_1257, dot(_1257, _94));
-	                if (false)
-	                {
-	                    _159 = _276.x;
-	                }
-	                else
-	                {
-	                    _159 = _275.x;
-	                }
-	                vec3 _1266 = _158;
-	                _1266.x = _159;
-	                _158 = _1266;
-	                if (false)
-	                {
-	                    _159 = _276.y;
-	                }
-	                else
-	                {
-	                    _159 = _275.y;
-	                }
-	                vec3 _1274 = _158;
-	                _1274.y = _159;
-	                _158 = _1274;
-	                if (false)
-	                {
-	                    _159 = _276.z;
-	                }
-	                else
-	                {
-	                    _159 = _275.z;
-	                }
-	                vec3 _1282 = _158;
-	                _1282.z = _159;
-	                _158 = _1282;
-	                if (true)
-	                {
-	                    _157 = _276.x;
-	                }
-	                else
-	                {
-	                    _157 = _275.x;
-	                }
-	                vec3 _1290 = _156;
-	                _1290.x = _157;
-	                _156 = _1290;
-	                if (false)
-	                {
-	                    _157 = _276.y;
-	                }
-	                else
-	                {
-	                    _157 = _275.y;
-	                }
-	                vec3 _1298 = _156;
-	                _1298.y = _157;
-	                _156 = _1298;
-	                if (false)
-	                {
-	                    _157 = _276.z;
-	                }
-	                else
-	                {
-	                    _157 = _275.z;
-	                }
-	                vec3 _1306 = _156;
-	                _1306.z = _157;
-	                _156 = _1306;
-	                if (false)
-	                {
-	                    _155 = _276.x;
-	                }
-	                else
-	                {
-	                    _155 = _275.x;
-	                }
-	                vec3 _1314 = _154;
-	                _1314.x = _155;
-	                _154 = _1314;
-	                if (true)
-	                {
-	                    _155 = _276.y;
-	                }
-	                else
-	                {
-	                    _155 = _275.y;
-	                }
-	                vec3 _1322 = _154;
-	                _1322.y = _155;
-	                _154 = _1322;
-	                if (false)
-	                {
-	                    _155 = _276.z;
-	                }
-	                else
-	                {
-	                    _155 = _275.z;
-	                }
-	                vec3 _1330 = _154;
-	                _1330.z = _155;
-	                _154 = _1330;
-	                if (true)
-	                {
-	                    _153 = _276.x;
-	                }
-	                else
-	                {
-	                    _153 = _275.x;
-	                }
-	                vec3 _1338 = _152;
-	                _1338.x = _153;
-	                _152 = _1338;
-	                if (true)
-	                {
-	                    _153 = _276.y;
-	                }
-	                else
-	                {
-	                    _153 = _275.y;
-	                }
-	                vec3 _1346 = _152;
-	                _1346.y = _153;
-	                _152 = _1346;
-	                if (false)
-	                {
-	                    _153 = _276.z;
-	                }
-	                else
-	                {
-	                    _153 = _275.z;
-	                }
-	                vec3 _1354 = _152;
-	                _1354.z = _153;
-	                _152 = _1354;
-	                if (false)
-	                {
-	                    _151 = _276.x;
-	                }
-	                else
-	                {
-	                    _151 = _275.x;
-	                }
-	                vec3 _1362 = _150;
-	                _1362.x = _151;
-	                _150 = _1362;
-	                if (false)
-	                {
-	                    _151 = _276.y;
-	                }
-	                else
-	                {
-	                    _151 = _275.y;
-	                }
-	                vec3 _1370 = _150;
-	                _1370.y = _151;
-	                _150 = _1370;
-	                if (true)
-	                {
-	                    _151 = _276.z;
-	                }
-	                else
-	                {
-	                    _151 = _275.z;
-	                }
-	                vec3 _1378 = _150;
-	                _1378.z = _151;
-	                _150 = _1378;
-	                if (true)
-	                {
-	                    _149 = _276.x;
-	                }
-	                else
-	                {
-	                    _149 = _275.x;
-	                }
-	                vec3 _1386 = _148;
-	                _1386.x = _149;
-	                _148 = _1386;
-	                if (false)
-	                {
-	                    _149 = _276.y;
-	                }
-	                else
-	                {
-	                    _149 = _275.y;
-	                }
-	                vec3 _1394 = _148;
-	                _1394.y = _149;
-	                _148 = _1394;
-	                if (true)
-	                {
-	                    _149 = _276.z;
-	                }
-	                else
-	                {
-	                    _149 = _275.z;
-	                }
-	                vec3 _1402 = _148;
-	                _1402.z = _149;
-	                _148 = _1402;
-	                if (false)
-	                {
-	                    _147 = _276.x;
-	                }
-	                else
-	                {
-	                    _147 = _275.x;
-	                }
-	                vec3 _1410 = _146;
-	                _1410.x = _147;
-	                _146 = _1410;
-	                if (true)
-	                {
-	                    _147 = _276.y;
-	                }
-	                else
-	                {
-	                    _147 = _275.y;
-	                }
-	                vec3 _1418 = _146;
-	                _1418.y = _147;
-	                _146 = _1418;
-	                if (true)
-	                {
-	                    _147 = _276.z;
-	                }
-	                else
-	                {
-	                    _147 = _275.z;
-	                }
-	                vec3 _1426 = _146;
-	                _1426.z = _147;
-	                _146 = _1426;
-	                if (true)
-	                {
-	                    _145 = _276.x;
-	                }
-	                else
-	                {
-	                    _145 = _275.x;
-	                }
-	                vec3 _1434 = _144;
-	                _1434.x = _145;
-	                _144 = _1434;
-	                if (true)
-	                {
-	                    _145 = _276.y;
-	                }
-	                else
-	                {
-	                    _145 = _275.y;
-	                }
-	                vec3 _1442 = _144;
-	                _1442.y = _145;
-	                _144 = _1442;
-	                if (true)
-	                {
-	                    _145 = _276.z;
-	                }
-	                else
-	                {
-	                    _145 = _275.z;
-	                }
-	                vec3 _1450 = _144;
-	                _1450.z = _145;
-	                _144 = _1450;
-	                do
-	                {
-	                    vec3 _1454 = _1259.xyz;
-	                    float _1456 = _1259.w;
-	                    vec4 _1458 = _141;
-	                    _1458.x = dot(_1454, _1282) - _1456;
-	                    _1458.y = dot(_1454, _1306) - _1456;
-	                    _1458.z = dot(_1454, _1330) - _1456;
-	                    _1458.w = dot(_1454, _1354) - _1456;
-	                    _141 = _1458;
-	                    vec4 _1471 = _142;
-	                    _1471.x = dot(_1454, _1378) - _1456;
-	                    _1471.y = dot(_1454, _1402) - _1456;
-	                    _1471.z = dot(_1454, _1426) - _1456;
-	                    _1471.w = dot(_1454, _1450) - _1456;
-	                    _142 = _1471;
-	                    if (all(greaterThan(_1458, vec4(0.0))))
-	                    {
-	                        _143 = all(greaterThan(_142, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _143 = false;
-	                    }
-	                    if (_143)
-	                    {
-	                        _140 = 1.0;
-	                        break;
-	                    }
-	                    if (all(lessThan(_141, vec4(0.0))))
-	                    {
-	                        _143 = all(lessThan(_142, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _143 = false;
-	                    }
-	                    if (_143)
-	                    {
-	                        _140 = -1.0;
-	                        break;
-	                    }
-	                    _140 = 0.0;
-	                    break;
-	                } while(false);
-	                if (_140 < 0.0)
-	                {
-	                    break;
-	                }
-	                vec3 _1515 = normalize(cross(_93 - _97, _92 - _97));
-	                vec4 _1517 = vec4(_1515, dot(_1515, _93));
-	                if (false)
-	                {
-	                    _139 = _276.x;
-	                }
-	                else
-	                {
-	                    _139 = _275.x;
-	                }
-	                vec3 _1524 = _138;
-	                _1524.x = _139;
-	                _138 = _1524;
-	                if (false)
-	                {
-	                    _139 = _276.y;
-	                }
-	                else
-	                {
-	                    _139 = _275.y;
-	                }
-	                vec3 _1532 = _138;
-	                _1532.y = _139;
-	                _138 = _1532;
-	                if (false)
-	                {
-	                    _139 = _276.z;
-	                }
-	                else
-	                {
-	                    _139 = _275.z;
-	                }
-	                vec3 _1540 = _138;
-	                _1540.z = _139;
-	                _138 = _1540;
-	                if (true)
-	                {
-	                    _137 = _276.x;
-	                }
-	                else
-	                {
-	                    _137 = _275.x;
-	                }
-	                vec3 _1548 = _136;
-	                _1548.x = _137;
-	                _136 = _1548;
-	                if (false)
-	                {
-	                    _137 = _276.y;
-	                }
-	                else
-	                {
-	                    _137 = _275.y;
-	                }
-	                vec3 _1556 = _136;
-	                _1556.y = _137;
-	                _136 = _1556;
-	                if (false)
-	                {
-	                    _137 = _276.z;
-	                }
-	                else
-	                {
-	                    _137 = _275.z;
-	                }
-	                vec3 _1564 = _136;
-	                _1564.z = _137;
-	                _136 = _1564;
-	                if (false)
-	                {
-	                    _135 = _276.x;
-	                }
-	                else
-	                {
-	                    _135 = _275.x;
-	                }
-	                vec3 _1572 = _134;
-	                _1572.x = _135;
-	                _134 = _1572;
-	                if (true)
-	                {
-	                    _135 = _276.y;
-	                }
-	                else
-	                {
-	                    _135 = _275.y;
-	                }
-	                vec3 _1580 = _134;
-	                _1580.y = _135;
-	                _134 = _1580;
-	                if (false)
-	                {
-	                    _135 = _276.z;
-	                }
-	                else
-	                {
-	                    _135 = _275.z;
-	                }
-	                vec3 _1588 = _134;
-	                _1588.z = _135;
-	                _134 = _1588;
-	                if (true)
-	                {
-	                    _133 = _276.x;
-	                }
-	                else
-	                {
-	                    _133 = _275.x;
-	                }
-	                vec3 _1596 = _132;
-	                _1596.x = _133;
-	                _132 = _1596;
-	                if (true)
-	                {
-	                    _133 = _276.y;
-	                }
-	                else
-	                {
-	                    _133 = _275.y;
-	                }
-	                vec3 _1604 = _132;
-	                _1604.y = _133;
-	                _132 = _1604;
-	                if (false)
-	                {
-	                    _133 = _276.z;
-	                }
-	                else
-	                {
-	                    _133 = _275.z;
-	                }
-	                vec3 _1612 = _132;
-	                _1612.z = _133;
-	                _132 = _1612;
-	                if (false)
-	                {
-	                    _131 = _276.x;
-	                }
-	                else
-	                {
-	                    _131 = _275.x;
-	                }
-	                vec3 _1620 = _130;
-	                _1620.x = _131;
-	                _130 = _1620;
-	                if (false)
-	                {
-	                    _131 = _276.y;
-	                }
-	                else
-	                {
-	                    _131 = _275.y;
-	                }
-	                vec3 _1628 = _130;
-	                _1628.y = _131;
-	                _130 = _1628;
-	                if (true)
-	                {
-	                    _131 = _276.z;
-	                }
-	                else
-	                {
-	                    _131 = _275.z;
-	                }
-	                vec3 _1636 = _130;
-	                _1636.z = _131;
-	                _130 = _1636;
-	                if (true)
-	                {
-	                    _129 = _276.x;
-	                }
-	                else
-	                {
-	                    _129 = _275.x;
-	                }
-	                vec3 _1644 = _128;
-	                _1644.x = _129;
-	                _128 = _1644;
-	                if (false)
-	                {
-	                    _129 = _276.y;
-	                }
-	                else
-	                {
-	                    _129 = _275.y;
-	                }
-	                vec3 _1652 = _128;
-	                _1652.y = _129;
-	                _128 = _1652;
-	                if (true)
-	                {
-	                    _129 = _276.z;
-	                }
-	                else
-	                {
-	                    _129 = _275.z;
-	                }
-	                vec3 _1660 = _128;
-	                _1660.z = _129;
-	                _128 = _1660;
-	                if (false)
-	                {
-	                    _127 = _276.x;
-	                }
-	                else
-	                {
-	                    _127 = _275.x;
-	                }
-	                vec3 _1668 = _126;
-	                _1668.x = _127;
-	                _126 = _1668;
-	                if (true)
-	                {
-	                    _127 = _276.y;
-	                }
-	                else
-	                {
-	                    _127 = _275.y;
-	                }
-	                vec3 _1676 = _126;
-	                _1676.y = _127;
-	                _126 = _1676;
-	                if (true)
-	                {
-	                    _127 = _276.z;
-	                }
-	                else
-	                {
-	                    _127 = _275.z;
-	                }
-	                vec3 _1684 = _126;
-	                _1684.z = _127;
-	                _126 = _1684;
-	                if (true)
-	                {
-	                    _125 = _276.x;
-	                }
-	                else
-	                {
-	                    _125 = _275.x;
-	                }
-	                vec3 _1692 = _124;
-	                _1692.x = _125;
-	                _124 = _1692;
-	                if (true)
-	                {
-	                    _125 = _276.y;
-	                }
-	                else
-	                {
-	                    _125 = _275.y;
-	                }
-	                vec3 _1700 = _124;
-	                _1700.y = _125;
-	                _124 = _1700;
-	                if (true)
-	                {
-	                    _125 = _276.z;
-	                }
-	                else
-	                {
-	                    _125 = _275.z;
-	                }
-	                vec3 _1708 = _124;
-	                _1708.z = _125;
-	                _124 = _1708;
-	                do
-	                {
-	                    vec3 _1712 = _1517.xyz;
-	                    float _1714 = _1517.w;
-	                    vec4 _1716 = _121;
-	                    _1716.x = dot(_1712, _1540) - _1714;
-	                    _1716.y = dot(_1712, _1564) - _1714;
-	                    _1716.z = dot(_1712, _1588) - _1714;
-	                    _1716.w = dot(_1712, _1612) - _1714;
-	                    _121 = _1716;
-	                    vec4 _1729 = _122;
-	                    _1729.x = dot(_1712, _1636) - _1714;
-	                    _1729.y = dot(_1712, _1660) - _1714;
-	                    _1729.z = dot(_1712, _1684) - _1714;
-	                    _1729.w = dot(_1712, _1708) - _1714;
-	                    _122 = _1729;
-	                    if (all(greaterThan(_1716, vec4(0.0))))
-	                    {
-	                        _123 = all(greaterThan(_122, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _123 = false;
-	                    }
-	                    if (_123)
-	                    {
-	                        _120 = 1.0;
-	                        break;
-	                    }
-	                    if (all(lessThan(_121, vec4(0.0))))
-	                    {
-	                        _123 = all(lessThan(_122, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _123 = false;
-	                    }
-	                    if (_123)
-	                    {
-	                        _120 = -1.0;
-	                        break;
-	                    }
-	                    _120 = 0.0;
-	                    break;
-	                } while(false);
-	                if (_120 < 0.0)
-	                {
-	                    break;
-	                }
-	                vec3 _1773 = normalize(cross(_92 - _96, _95 - _96));
-	                vec4 _1775 = vec4(_1773, dot(_1773, _92));
-	                if (false)
-	                {
-	                    _119 = _276.x;
-	                }
-	                else
-	                {
-	                    _119 = _275.x;
-	                }
-	                vec3 _1782 = _118;
-	                _1782.x = _119;
-	                _118 = _1782;
-	                if (false)
-	                {
-	                    _119 = _276.y;
-	                }
-	                else
-	                {
-	                    _119 = _275.y;
-	                }
-	                vec3 _1790 = _118;
-	                _1790.y = _119;
-	                _118 = _1790;
-	                if (false)
-	                {
-	                    _119 = _276.z;
-	                }
-	                else
-	                {
-	                    _119 = _275.z;
-	                }
-	                vec3 _1798 = _118;
-	                _1798.z = _119;
-	                _118 = _1798;
-	                if (true)
-	                {
-	                    _117 = _276.x;
-	                }
-	                else
-	                {
-	                    _117 = _275.x;
-	                }
-	                vec3 _1806 = _116;
-	                _1806.x = _117;
-	                _116 = _1806;
-	                if (false)
-	                {
-	                    _117 = _276.y;
-	                }
-	                else
-	                {
-	                    _117 = _275.y;
-	                }
-	                vec3 _1814 = _116;
-	                _1814.y = _117;
-	                _116 = _1814;
-	                if (false)
-	                {
-	                    _117 = _276.z;
-	                }
-	                else
-	                {
-	                    _117 = _275.z;
-	                }
-	                vec3 _1822 = _116;
-	                _1822.z = _117;
-	                _116 = _1822;
-	                if (false)
-	                {
-	                    _115 = _276.x;
-	                }
-	                else
-	                {
-	                    _115 = _275.x;
-	                }
-	                vec3 _1830 = _114;
-	                _1830.x = _115;
-	                _114 = _1830;
-	                if (true)
-	                {
-	                    _115 = _276.y;
-	                }
-	                else
-	                {
-	                    _115 = _275.y;
-	                }
-	                vec3 _1838 = _114;
-	                _1838.y = _115;
-	                _114 = _1838;
-	                if (false)
-	                {
-	                    _115 = _276.z;
-	                }
-	                else
-	                {
-	                    _115 = _275.z;
-	                }
-	                vec3 _1846 = _114;
-	                _1846.z = _115;
-	                _114 = _1846;
-	                if (true)
-	                {
-	                    _113 = _276.x;
-	                }
-	                else
-	                {
-	                    _113 = _275.x;
-	                }
-	                vec3 _1854 = _112;
-	                _1854.x = _113;
-	                _112 = _1854;
-	                if (true)
-	                {
-	                    _113 = _276.y;
-	                }
-	                else
-	                {
-	                    _113 = _275.y;
-	                }
-	                vec3 _1862 = _112;
-	                _1862.y = _113;
-	                _112 = _1862;
-	                if (false)
-	                {
-	                    _113 = _276.z;
-	                }
-	                else
-	                {
-	                    _113 = _275.z;
-	                }
-	                vec3 _1870 = _112;
-	                _1870.z = _113;
-	                _112 = _1870;
-	                if (false)
-	                {
-	                    _111 = _276.x;
-	                }
-	                else
-	                {
-	                    _111 = _275.x;
-	                }
-	                vec3 _1878 = _110;
-	                _1878.x = _111;
-	                _110 = _1878;
-	                if (false)
-	                {
-	                    _111 = _276.y;
-	                }
-	                else
-	                {
-	                    _111 = _275.y;
-	                }
-	                vec3 _1886 = _110;
-	                _1886.y = _111;
-	                _110 = _1886;
-	                if (true)
-	                {
-	                    _111 = _276.z;
-	                }
-	                else
-	                {
-	                    _111 = _275.z;
-	                }
-	                vec3 _1894 = _110;
-	                _1894.z = _111;
-	                _110 = _1894;
-	                if (true)
-	                {
-	                    _109 = _276.x;
-	                }
-	                else
-	                {
-	                    _109 = _275.x;
-	                }
-	                vec3 _1902 = _108;
-	                _1902.x = _109;
-	                _108 = _1902;
-	                if (false)
-	                {
-	                    _109 = _276.y;
-	                }
-	                else
-	                {
-	                    _109 = _275.y;
-	                }
-	                vec3 _1910 = _108;
-	                _1910.y = _109;
-	                _108 = _1910;
-	                if (true)
-	                {
-	                    _109 = _276.z;
-	                }
-	                else
-	                {
-	                    _109 = _275.z;
-	                }
-	                vec3 _1918 = _108;
-	                _1918.z = _109;
-	                _108 = _1918;
-	                if (false)
-	                {
-	                    _107 = _276.x;
-	                }
-	                else
-	                {
-	                    _107 = _275.x;
-	                }
-	                vec3 _1926 = _106;
-	                _1926.x = _107;
-	                _106 = _1926;
-	                if (true)
-	                {
-	                    _107 = _276.y;
-	                }
-	                else
-	                {
-	                    _107 = _275.y;
-	                }
-	                vec3 _1934 = _106;
-	                _1934.y = _107;
-	                _106 = _1934;
-	                if (true)
-	                {
-	                    _107 = _276.z;
-	                }
-	                else
-	                {
-	                    _107 = _275.z;
-	                }
-	                vec3 _1942 = _106;
-	                _1942.z = _107;
-	                _106 = _1942;
-	                if (true)
-	                {
-	                    _105 = _276.x;
-	                }
-	                else
-	                {
-	                    _105 = _275.x;
-	                }
-	                vec3 _1950 = _104;
-	                _1950.x = _105;
-	                _104 = _1950;
-	                if (true)
-	                {
-	                    _105 = _276.y;
-	                }
-	                else
-	                {
-	                    _105 = _275.y;
-	                }
-	                vec3 _1958 = _104;
-	                _1958.y = _105;
-	                _104 = _1958;
-	                if (true)
-	                {
-	                    _105 = _276.z;
-	                }
-	                else
-	                {
-	                    _105 = _275.z;
-	                }
-	                vec3 _1966 = _104;
-	                _1966.z = _105;
-	                _104 = _1966;
-	                do
-	                {
-	                    vec3 _1970 = _1775.xyz;
-	                    float _1972 = _1775.w;
-	                    vec4 _1974 = _101;
-	                    _1974.x = dot(_1970, _1798) - _1972;
-	                    _1974.y = dot(_1970, _1822) - _1972;
-	                    _1974.z = dot(_1970, _1846) - _1972;
-	                    _1974.w = dot(_1970, _1870) - _1972;
-	                    _101 = _1974;
-	                    vec4 _1987 = _102;
-	                    _1987.x = dot(_1970, _1894) - _1972;
-	                    _1987.y = dot(_1970, _1918) - _1972;
-	                    _1987.z = dot(_1970, _1942) - _1972;
-	                    _1987.w = dot(_1970, _1966) - _1972;
-	                    _102 = _1987;
-	                    if (all(greaterThan(_1974, vec4(0.0))))
-	                    {
-	                        _103 = all(greaterThan(_102, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _103 = false;
-	                    }
-	                    if (_103)
-	                    {
-	                        _100 = 1.0;
-	                        break;
-	                    }
-	                    if (all(lessThan(_101, vec4(0.0))))
-	                    {
-	                        _103 = all(lessThan(_102, vec4(0.0)));
-	                    }
-	                    else
-	                    {
-	                        _103 = false;
-	                    }
-	                    if (_103)
-	                    {
-	                        _100 = -1.0;
-	                        break;
-	                    }
-	                    _100 = 0.0;
-	                    break;
-	                } while(false);
-	                if (_100 < 0.0)
-	                {
-	                    break;
-	                }
-	                nBits |= int(1u << uint(i - nStartLight));
+	                _280 = true;
 	                break;
 	            } while(false);
-	            if (_287_ladder_break)
+	            if (!_280)
 	            {
 	                break;
 	            }
-	            i++;
-	            continue;
+	            do
+	            {
+	                if (g_Lights_1._member0[i].m_vLightPosition.w == 0.0)
+	                {
+	                    _279 = 3.4028234663852885981170418348452e+38;
+	                    break;
+	                }
+	                if (g_Lights_1._member0[i].m_vDistanceFade_vSkirt.y == 0.0)
+	                {
+	                    _279 = 3.4028234663852885981170418348452e+38;
+	                    break;
+	                }
+	                _279 = (-g_Lights_1._member0[i].m_vDistanceFade_vSkirt.x) / g_Lights_1._member0[i].m_vDistanceFade_vSkirt.y;
+	                break;
+	            } while(false);
+	            if (_279 < 3.4028234663852885981170418348452e+38)
+	            {
+	                vec3 vDelta = g_Lights_1._member0[i].m_vLightPosition.xyz - clamp(g_Lights_1._member0[i].m_vLightPosition.xyz, _337, _338);
+	                if (dot(vDelta, vDelta) > (_279 * _279))
+	                {
+	                    break;
+	                }
+	            }
+	            vec4 _420 = g_Lights_1._member0[i].m_mFromClipSpace * vec4(vec3(-1.0, -1.0, 0.0), 1.0);
+	            vec3 _424 = _420.xyz / vec3(_420.w);
+	            vec4 _426;
+	            _426.x = _424.x;
+	            _426.y = _424.y;
+	            _426.z = _424.z;
+	            vec3 _106 = _426.xyz;
+	            vec4 _436 = g_Lights_1._member0[i].m_mFromClipSpace * vec4(vec3(-1.0, 1.0, 0.0), 1.0);
+	            vec3 _440 = _436.xyz / vec3(_436.w);
+	            vec4 _442;
+	            _442.x = _440.x;
+	            _442.y = _440.y;
+	            _442.z = _440.z;
+	            vec3 _105 = _442.xyz;
+	            vec4 _452 = g_Lights_1._member0[i].m_mFromClipSpace * vec4(vec3(1.0, 1.0, 0.0), 1.0);
+	            vec3 _456 = _452.xyz / vec3(_452.w);
+	            vec4 _458;
+	            _458.x = _456.x;
+	            _458.y = _456.y;
+	            _458.z = _456.z;
+	            vec3 _104 = _458.xyz;
+	            vec4 _468 = g_Lights_1._member0[i].m_mFromClipSpace * vec4(vec3(1.0, -1.0, 0.0), 1.0);
+	            vec3 _472 = _468.xyz / vec3(_468.w);
+	            vec4 _474;
+	            _474.x = _472.x;
+	            _474.y = _472.y;
+	            _474.z = _472.z;
+	            vec3 _103 = _474.xyz;
+	            vec4 _484 = g_Lights_1._member0[i].m_mFromClipSpace * vec4(vec3(-1.0, -1.0, 1.0), 1.0);
+	            vec3 _488 = _484.xyz / vec3(_484.w);
+	            vec4 _490;
+	            _490.x = _488.x;
+	            _490.y = _488.y;
+	            _490.z = _488.z;
+	            vec3 _102 = _490.xyz;
+	            vec4 _500 = g_Lights_1._member0[i].m_mFromClipSpace * vec4(vec3(-1.0, 1.0, 1.0), 1.0);
+	            vec3 _504 = _500.xyz / vec3(_500.w);
+	            vec4 _506;
+	            _506.x = _504.x;
+	            _506.y = _504.y;
+	            _506.z = _504.z;
+	            vec3 _101 = _506.xyz;
+	            vec4 _516 = g_Lights_1._member0[i].m_mFromClipSpace * vec4(vec3(1.0), 1.0);
+	            vec3 _520 = _516.xyz / vec3(_516.w);
+	            vec4 _522;
+	            _522.x = _520.x;
+	            _522.y = _520.y;
+	            _522.z = _520.z;
+	            vec3 _100 = _522.xyz;
+	            vec4 _532 = g_Lights_1._member0[i].m_mFromClipSpace * vec4(vec3(1.0, -1.0, 1.0), 1.0);
+	            vec3 _536 = _532.xyz / vec3(_532.w);
+	            vec4 _538;
+	            _538.x = _536.x;
+	            _538.y = _536.y;
+	            _538.z = _536.z;
+	            vec3 _99 = _538.xyz;
+	            vec3 _547 = normalize(cross(_442.xyz - _426.xyz, _458.xyz - _426.xyz));
+	            vec4 _549 = vec4(_547, dot(_547, _442.xyz));
+	            vec3 _98 = _337;
+	            vec3 _97 = _338;
+	            if (false)
+	            {
+	                _278 = _97.x;
+	            }
+	            else
+	            {
+	                _278 = _98.x;
+	            }
+	            vec3 _558 = _277;
+	            _558.x = _278;
+	            _277 = _558;
+	            if (false)
+	            {
+	                _278 = _97.y;
+	            }
+	            else
+	            {
+	                _278 = _98.y;
+	            }
+	            vec3 _568 = _277;
+	            _568.y = _278;
+	            _277 = _568;
+	            if (false)
+	            {
+	                _278 = _97.z;
+	            }
+	            else
+	            {
+	                _278 = _98.z;
+	            }
+	            vec3 _578 = _277;
+	            _578.z = _278;
+	            _277 = _578;
+	            if (true)
+	            {
+	                _276 = _97.x;
+	            }
+	            else
+	            {
+	                _276 = _98.x;
+	            }
+	            vec3 _588 = _275;
+	            _588.x = _276;
+	            _275 = _588;
+	            if (false)
+	            {
+	                _276 = _97.y;
+	            }
+	            else
+	            {
+	                _276 = _98.y;
+	            }
+	            vec3 _598 = _275;
+	            _598.y = _276;
+	            _275 = _598;
+	            if (false)
+	            {
+	                _276 = _97.z;
+	            }
+	            else
+	            {
+	                _276 = _98.z;
+	            }
+	            vec3 _608 = _275;
+	            _608.z = _276;
+	            _275 = _608;
+	            if (false)
+	            {
+	                _274 = _97.x;
+	            }
+	            else
+	            {
+	                _274 = _98.x;
+	            }
+	            vec3 _618 = _273;
+	            _618.x = _274;
+	            _273 = _618;
+	            if (true)
+	            {
+	                _274 = _97.y;
+	            }
+	            else
+	            {
+	                _274 = _98.y;
+	            }
+	            vec3 _628 = _273;
+	            _628.y = _274;
+	            _273 = _628;
+	            if (false)
+	            {
+	                _274 = _97.z;
+	            }
+	            else
+	            {
+	                _274 = _98.z;
+	            }
+	            vec3 _638 = _273;
+	            _638.z = _274;
+	            _273 = _638;
+	            if (true)
+	            {
+	                _272 = _97.x;
+	            }
+	            else
+	            {
+	                _272 = _98.x;
+	            }
+	            vec3 _648 = _271;
+	            _648.x = _272;
+	            _271 = _648;
+	            if (true)
+	            {
+	                _272 = _97.y;
+	            }
+	            else
+	            {
+	                _272 = _98.y;
+	            }
+	            vec3 _658 = _271;
+	            _658.y = _272;
+	            _271 = _658;
+	            if (false)
+	            {
+	                _272 = _97.z;
+	            }
+	            else
+	            {
+	                _272 = _98.z;
+	            }
+	            vec3 _668 = _271;
+	            _668.z = _272;
+	            _271 = _668;
+	            if (false)
+	            {
+	                _270 = _97.x;
+	            }
+	            else
+	            {
+	                _270 = _98.x;
+	            }
+	            vec3 _678 = _269;
+	            _678.x = _270;
+	            _269 = _678;
+	            if (false)
+	            {
+	                _270 = _97.y;
+	            }
+	            else
+	            {
+	                _270 = _98.y;
+	            }
+	            vec3 _688 = _269;
+	            _688.y = _270;
+	            _269 = _688;
+	            if (true)
+	            {
+	                _270 = _97.z;
+	            }
+	            else
+	            {
+	                _270 = _98.z;
+	            }
+	            vec3 _698 = _269;
+	            _698.z = _270;
+	            _269 = _698;
+	            if (true)
+	            {
+	                _268 = _97.x;
+	            }
+	            else
+	            {
+	                _268 = _98.x;
+	            }
+	            vec3 _708 = _267;
+	            _708.x = _268;
+	            _267 = _708;
+	            if (false)
+	            {
+	                _268 = _97.y;
+	            }
+	            else
+	            {
+	                _268 = _98.y;
+	            }
+	            vec3 _718 = _267;
+	            _718.y = _268;
+	            _267 = _718;
+	            if (true)
+	            {
+	                _268 = _97.z;
+	            }
+	            else
+	            {
+	                _268 = _98.z;
+	            }
+	            vec3 _728 = _267;
+	            _728.z = _268;
+	            _267 = _728;
+	            if (false)
+	            {
+	                _266 = _97.x;
+	            }
+	            else
+	            {
+	                _266 = _98.x;
+	            }
+	            vec3 _738 = _265;
+	            _738.x = _266;
+	            _265 = _738;
+	            if (true)
+	            {
+	                _266 = _97.y;
+	            }
+	            else
+	            {
+	                _266 = _98.y;
+	            }
+	            vec3 _748 = _265;
+	            _748.y = _266;
+	            _265 = _748;
+	            if (true)
+	            {
+	                _266 = _97.z;
+	            }
+	            else
+	            {
+	                _266 = _98.z;
+	            }
+	            vec3 _758 = _265;
+	            _758.z = _266;
+	            _265 = _758;
+	            if (true)
+	            {
+	                _264 = _97.x;
+	            }
+	            else
+	            {
+	                _264 = _98.x;
+	            }
+	            vec3 _768 = _263;
+	            _768.x = _264;
+	            _263 = _768;
+	            if (true)
+	            {
+	                _264 = _97.y;
+	            }
+	            else
+	            {
+	                _264 = _98.y;
+	            }
+	            vec3 _778 = _263;
+	            _778.y = _264;
+	            _263 = _778;
+	            if (true)
+	            {
+	                _264 = _97.z;
+	            }
+	            else
+	            {
+	                _264 = _98.z;
+	            }
+	            vec3 _788 = _263;
+	            _788.z = _264;
+	            _263 = _788;
+	            vec3 _118 = _578;
+	            vec3 _117 = _608;
+	            vec3 _116 = _638;
+	            vec3 _115 = _668;
+	            vec3 _114 = _698;
+	            vec3 _113 = _728;
+	            vec3 _112 = _758;
+	            vec3 _111 = _788;
+	            do
+	            {
+	                vec3 _792 = _549.xyz;
+	                float _795 = _549.w;
+	                vec4 _797 = _260;
+	                _797.x = dot(_792, _118) - _795;
+	                _797.y = dot(_792, _117) - _795;
+	                _797.z = dot(_792, _116) - _795;
+	                _797.w = dot(_792, _115) - _795;
+	                _260 = _797;
+	                vec4 _814 = _261;
+	                _814.x = dot(_792, _114) - _795;
+	                _814.y = dot(_792, _113) - _795;
+	                _814.z = dot(_792, _112) - _795;
+	                _814.w = dot(_792, _111) - _795;
+	                _261 = _814;
+	                if (all(greaterThan(_797, vec4(0.0))))
+	                {
+	                    _262 = all(greaterThan(_261, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _262 = false;
+	                }
+	                if (_262)
+	                {
+	                    _259 = 1.0;
+	                    break;
+	                }
+	                if (all(lessThan(_260, vec4(0.0))))
+	                {
+	                    _262 = all(lessThan(_261, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _262 = false;
+	                }
+	                if (_262)
+	                {
+	                    _259 = -1.0;
+	                    break;
+	                }
+	                _259 = 0.0;
+	                break;
+	            } while(false);
+	            if (_259 < 0.0)
+	            {
+	                break;
+	            }
+	            vec3 _861 = normalize(cross(_100 - _102, _101 - _102));
+	            vec4 _863 = vec4(_861, dot(_861, _100));
+	            vec3 _96 = _337;
+	            vec3 _95 = _338;
+	            if (false)
+	            {
+	                _258 = _95.x;
+	            }
+	            else
+	            {
+	                _258 = _96.x;
+	            }
+	            vec3 _872 = _257;
+	            _872.x = _258;
+	            _257 = _872;
+	            if (false)
+	            {
+	                _258 = _95.y;
+	            }
+	            else
+	            {
+	                _258 = _96.y;
+	            }
+	            vec3 _882 = _257;
+	            _882.y = _258;
+	            _257 = _882;
+	            if (false)
+	            {
+	                _258 = _95.z;
+	            }
+	            else
+	            {
+	                _258 = _96.z;
+	            }
+	            vec3 _892 = _257;
+	            _892.z = _258;
+	            _257 = _892;
+	            if (true)
+	            {
+	                _256 = _95.x;
+	            }
+	            else
+	            {
+	                _256 = _96.x;
+	            }
+	            vec3 _902 = _255;
+	            _902.x = _256;
+	            _255 = _902;
+	            if (false)
+	            {
+	                _256 = _95.y;
+	            }
+	            else
+	            {
+	                _256 = _96.y;
+	            }
+	            vec3 _912 = _255;
+	            _912.y = _256;
+	            _255 = _912;
+	            if (false)
+	            {
+	                _256 = _95.z;
+	            }
+	            else
+	            {
+	                _256 = _96.z;
+	            }
+	            vec3 _922 = _255;
+	            _922.z = _256;
+	            _255 = _922;
+	            if (false)
+	            {
+	                _254 = _95.x;
+	            }
+	            else
+	            {
+	                _254 = _96.x;
+	            }
+	            vec3 _932 = _253;
+	            _932.x = _254;
+	            _253 = _932;
+	            if (true)
+	            {
+	                _254 = _95.y;
+	            }
+	            else
+	            {
+	                _254 = _96.y;
+	            }
+	            vec3 _942 = _253;
+	            _942.y = _254;
+	            _253 = _942;
+	            if (false)
+	            {
+	                _254 = _95.z;
+	            }
+	            else
+	            {
+	                _254 = _96.z;
+	            }
+	            vec3 _952 = _253;
+	            _952.z = _254;
+	            _253 = _952;
+	            if (true)
+	            {
+	                _252 = _95.x;
+	            }
+	            else
+	            {
+	                _252 = _96.x;
+	            }
+	            vec3 _962 = _251;
+	            _962.x = _252;
+	            _251 = _962;
+	            if (true)
+	            {
+	                _252 = _95.y;
+	            }
+	            else
+	            {
+	                _252 = _96.y;
+	            }
+	            vec3 _972 = _251;
+	            _972.y = _252;
+	            _251 = _972;
+	            if (false)
+	            {
+	                _252 = _95.z;
+	            }
+	            else
+	            {
+	                _252 = _96.z;
+	            }
+	            vec3 _982 = _251;
+	            _982.z = _252;
+	            _251 = _982;
+	            if (false)
+	            {
+	                _250 = _95.x;
+	            }
+	            else
+	            {
+	                _250 = _96.x;
+	            }
+	            vec3 _992 = _249;
+	            _992.x = _250;
+	            _249 = _992;
+	            if (false)
+	            {
+	                _250 = _95.y;
+	            }
+	            else
+	            {
+	                _250 = _96.y;
+	            }
+	            vec3 _1002 = _249;
+	            _1002.y = _250;
+	            _249 = _1002;
+	            if (true)
+	            {
+	                _250 = _95.z;
+	            }
+	            else
+	            {
+	                _250 = _96.z;
+	            }
+	            vec3 _1012 = _249;
+	            _1012.z = _250;
+	            _249 = _1012;
+	            if (true)
+	            {
+	                _248 = _95.x;
+	            }
+	            else
+	            {
+	                _248 = _96.x;
+	            }
+	            vec3 _1022 = _247;
+	            _1022.x = _248;
+	            _247 = _1022;
+	            if (false)
+	            {
+	                _248 = _95.y;
+	            }
+	            else
+	            {
+	                _248 = _96.y;
+	            }
+	            vec3 _1032 = _247;
+	            _1032.y = _248;
+	            _247 = _1032;
+	            if (true)
+	            {
+	                _248 = _95.z;
+	            }
+	            else
+	            {
+	                _248 = _96.z;
+	            }
+	            vec3 _1042 = _247;
+	            _1042.z = _248;
+	            _247 = _1042;
+	            if (false)
+	            {
+	                _246 = _95.x;
+	            }
+	            else
+	            {
+	                _246 = _96.x;
+	            }
+	            vec3 _1052 = _245;
+	            _1052.x = _246;
+	            _245 = _1052;
+	            if (true)
+	            {
+	                _246 = _95.y;
+	            }
+	            else
+	            {
+	                _246 = _96.y;
+	            }
+	            vec3 _1062 = _245;
+	            _1062.y = _246;
+	            _245 = _1062;
+	            if (true)
+	            {
+	                _246 = _95.z;
+	            }
+	            else
+	            {
+	                _246 = _96.z;
+	            }
+	            vec3 _1072 = _245;
+	            _1072.z = _246;
+	            _245 = _1072;
+	            if (true)
+	            {
+	                _244 = _95.x;
+	            }
+	            else
+	            {
+	                _244 = _96.x;
+	            }
+	            vec3 _1082 = _243;
+	            _1082.x = _244;
+	            _243 = _1082;
+	            if (true)
+	            {
+	                _244 = _95.y;
+	            }
+	            else
+	            {
+	                _244 = _96.y;
+	            }
+	            vec3 _1092 = _243;
+	            _1092.y = _244;
+	            _243 = _1092;
+	            if (true)
+	            {
+	                _244 = _95.z;
+	            }
+	            else
+	            {
+	                _244 = _96.z;
+	            }
+	            vec3 _1102 = _243;
+	            _1102.z = _244;
+	            _243 = _1102;
+	            vec3 _126 = _892;
+	            vec3 _125 = _922;
+	            vec3 _124 = _952;
+	            vec3 _123 = _982;
+	            vec3 _122 = _1012;
+	            vec3 _121 = _1042;
+	            vec3 _120 = _1072;
+	            vec3 _119 = _1102;
+	            do
+	            {
+	                vec3 _1106 = _863.xyz;
+	                float _1109 = _863.w;
+	                vec4 _1111 = _240;
+	                _1111.x = dot(_1106, _126) - _1109;
+	                _1111.y = dot(_1106, _125) - _1109;
+	                _1111.z = dot(_1106, _124) - _1109;
+	                _1111.w = dot(_1106, _123) - _1109;
+	                _240 = _1111;
+	                vec4 _1128 = _241;
+	                _1128.x = dot(_1106, _122) - _1109;
+	                _1128.y = dot(_1106, _121) - _1109;
+	                _1128.z = dot(_1106, _120) - _1109;
+	                _1128.w = dot(_1106, _119) - _1109;
+	                _241 = _1128;
+	                if (all(greaterThan(_1111, vec4(0.0))))
+	                {
+	                    _242 = all(greaterThan(_241, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _242 = false;
+	                }
+	                if (_242)
+	                {
+	                    _239 = 1.0;
+	                    break;
+	                }
+	                if (all(lessThan(_240, vec4(0.0))))
+	                {
+	                    _242 = all(lessThan(_241, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _242 = false;
+	                }
+	                if (_242)
+	                {
+	                    _239 = -1.0;
+	                    break;
+	                }
+	                _239 = 0.0;
+	                break;
+	            } while(false);
+	            if (_239 < 0.0)
+	            {
+	                break;
+	            }
+	            vec3 _1175 = normalize(cross(_102 - _106, _101 - _106));
+	            vec4 _1177 = vec4(_1175, dot(_1175, _102));
+	            vec3 _94 = _337;
+	            vec3 _93 = _338;
+	            if (false)
+	            {
+	                _238 = _93.x;
+	            }
+	            else
+	            {
+	                _238 = _94.x;
+	            }
+	            vec3 _1186 = _237;
+	            _1186.x = _238;
+	            _237 = _1186;
+	            if (false)
+	            {
+	                _238 = _93.y;
+	            }
+	            else
+	            {
+	                _238 = _94.y;
+	            }
+	            vec3 _1196 = _237;
+	            _1196.y = _238;
+	            _237 = _1196;
+	            if (false)
+	            {
+	                _238 = _93.z;
+	            }
+	            else
+	            {
+	                _238 = _94.z;
+	            }
+	            vec3 _1206 = _237;
+	            _1206.z = _238;
+	            _237 = _1206;
+	            if (true)
+	            {
+	                _236 = _93.x;
+	            }
+	            else
+	            {
+	                _236 = _94.x;
+	            }
+	            vec3 _1216 = _235;
+	            _1216.x = _236;
+	            _235 = _1216;
+	            if (false)
+	            {
+	                _236 = _93.y;
+	            }
+	            else
+	            {
+	                _236 = _94.y;
+	            }
+	            vec3 _1226 = _235;
+	            _1226.y = _236;
+	            _235 = _1226;
+	            if (false)
+	            {
+	                _236 = _93.z;
+	            }
+	            else
+	            {
+	                _236 = _94.z;
+	            }
+	            vec3 _1236 = _235;
+	            _1236.z = _236;
+	            _235 = _1236;
+	            if (false)
+	            {
+	                _234 = _93.x;
+	            }
+	            else
+	            {
+	                _234 = _94.x;
+	            }
+	            vec3 _1246 = _233;
+	            _1246.x = _234;
+	            _233 = _1246;
+	            if (true)
+	            {
+	                _234 = _93.y;
+	            }
+	            else
+	            {
+	                _234 = _94.y;
+	            }
+	            vec3 _1256 = _233;
+	            _1256.y = _234;
+	            _233 = _1256;
+	            if (false)
+	            {
+	                _234 = _93.z;
+	            }
+	            else
+	            {
+	                _234 = _94.z;
+	            }
+	            vec3 _1266 = _233;
+	            _1266.z = _234;
+	            _233 = _1266;
+	            if (true)
+	            {
+	                _232 = _93.x;
+	            }
+	            else
+	            {
+	                _232 = _94.x;
+	            }
+	            vec3 _1276 = _231;
+	            _1276.x = _232;
+	            _231 = _1276;
+	            if (true)
+	            {
+	                _232 = _93.y;
+	            }
+	            else
+	            {
+	                _232 = _94.y;
+	            }
+	            vec3 _1286 = _231;
+	            _1286.y = _232;
+	            _231 = _1286;
+	            if (false)
+	            {
+	                _232 = _93.z;
+	            }
+	            else
+	            {
+	                _232 = _94.z;
+	            }
+	            vec3 _1296 = _231;
+	            _1296.z = _232;
+	            _231 = _1296;
+	            if (false)
+	            {
+	                _230 = _93.x;
+	            }
+	            else
+	            {
+	                _230 = _94.x;
+	            }
+	            vec3 _1306 = _229;
+	            _1306.x = _230;
+	            _229 = _1306;
+	            if (false)
+	            {
+	                _230 = _93.y;
+	            }
+	            else
+	            {
+	                _230 = _94.y;
+	            }
+	            vec3 _1316 = _229;
+	            _1316.y = _230;
+	            _229 = _1316;
+	            if (true)
+	            {
+	                _230 = _93.z;
+	            }
+	            else
+	            {
+	                _230 = _94.z;
+	            }
+	            vec3 _1326 = _229;
+	            _1326.z = _230;
+	            _229 = _1326;
+	            if (true)
+	            {
+	                _228 = _93.x;
+	            }
+	            else
+	            {
+	                _228 = _94.x;
+	            }
+	            vec3 _1336 = _227;
+	            _1336.x = _228;
+	            _227 = _1336;
+	            if (false)
+	            {
+	                _228 = _93.y;
+	            }
+	            else
+	            {
+	                _228 = _94.y;
+	            }
+	            vec3 _1346 = _227;
+	            _1346.y = _228;
+	            _227 = _1346;
+	            if (true)
+	            {
+	                _228 = _93.z;
+	            }
+	            else
+	            {
+	                _228 = _94.z;
+	            }
+	            vec3 _1356 = _227;
+	            _1356.z = _228;
+	            _227 = _1356;
+	            if (false)
+	            {
+	                _226 = _93.x;
+	            }
+	            else
+	            {
+	                _226 = _94.x;
+	            }
+	            vec3 _1366 = _225;
+	            _1366.x = _226;
+	            _225 = _1366;
+	            if (true)
+	            {
+	                _226 = _93.y;
+	            }
+	            else
+	            {
+	                _226 = _94.y;
+	            }
+	            vec3 _1376 = _225;
+	            _1376.y = _226;
+	            _225 = _1376;
+	            if (true)
+	            {
+	                _226 = _93.z;
+	            }
+	            else
+	            {
+	                _226 = _94.z;
+	            }
+	            vec3 _1386 = _225;
+	            _1386.z = _226;
+	            _225 = _1386;
+	            if (true)
+	            {
+	                _224 = _93.x;
+	            }
+	            else
+	            {
+	                _224 = _94.x;
+	            }
+	            vec3 _1396 = _223;
+	            _1396.x = _224;
+	            _223 = _1396;
+	            if (true)
+	            {
+	                _224 = _93.y;
+	            }
+	            else
+	            {
+	                _224 = _94.y;
+	            }
+	            vec3 _1406 = _223;
+	            _1406.y = _224;
+	            _223 = _1406;
+	            if (true)
+	            {
+	                _224 = _93.z;
+	            }
+	            else
+	            {
+	                _224 = _94.z;
+	            }
+	            vec3 _1416 = _223;
+	            _1416.z = _224;
+	            _223 = _1416;
+	            vec3 _134 = _1206;
+	            vec3 _133 = _1236;
+	            vec3 _132 = _1266;
+	            vec3 _131 = _1296;
+	            vec3 _130 = _1326;
+	            vec3 _129 = _1356;
+	            vec3 _128 = _1386;
+	            vec3 _127 = _1416;
+	            do
+	            {
+	                vec3 _1420 = _1177.xyz;
+	                float _1423 = _1177.w;
+	                vec4 _1425 = _220;
+	                _1425.x = dot(_1420, _134) - _1423;
+	                _1425.y = dot(_1420, _133) - _1423;
+	                _1425.z = dot(_1420, _132) - _1423;
+	                _1425.w = dot(_1420, _131) - _1423;
+	                _220 = _1425;
+	                vec4 _1442 = _221;
+	                _1442.x = dot(_1420, _130) - _1423;
+	                _1442.y = dot(_1420, _129) - _1423;
+	                _1442.z = dot(_1420, _128) - _1423;
+	                _1442.w = dot(_1420, _127) - _1423;
+	                _221 = _1442;
+	                if (all(greaterThan(_1425, vec4(0.0))))
+	                {
+	                    _222 = all(greaterThan(_221, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _222 = false;
+	                }
+	                if (_222)
+	                {
+	                    _219 = 1.0;
+	                    break;
+	                }
+	                if (all(lessThan(_220, vec4(0.0))))
+	                {
+	                    _222 = all(lessThan(_221, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _222 = false;
+	                }
+	                if (_222)
+	                {
+	                    _219 = -1.0;
+	                    break;
+	                }
+	                _219 = 0.0;
+	                break;
+	            } while(false);
+	            if (_219 < 0.0)
+	            {
+	                break;
+	            }
+	            vec3 _1489 = normalize(cross(_101 - _105, _100 - _105));
+	            vec4 _1491 = vec4(_1489, dot(_1489, _101));
+	            vec3 _92 = _337;
+	            vec3 _91 = _338;
+	            if (false)
+	            {
+	                _218 = _91.x;
+	            }
+	            else
+	            {
+	                _218 = _92.x;
+	            }
+	            vec3 _1500 = _217;
+	            _1500.x = _218;
+	            _217 = _1500;
+	            if (false)
+	            {
+	                _218 = _91.y;
+	            }
+	            else
+	            {
+	                _218 = _92.y;
+	            }
+	            vec3 _1510 = _217;
+	            _1510.y = _218;
+	            _217 = _1510;
+	            if (false)
+	            {
+	                _218 = _91.z;
+	            }
+	            else
+	            {
+	                _218 = _92.z;
+	            }
+	            vec3 _1520 = _217;
+	            _1520.z = _218;
+	            _217 = _1520;
+	            if (true)
+	            {
+	                _216 = _91.x;
+	            }
+	            else
+	            {
+	                _216 = _92.x;
+	            }
+	            vec3 _1530 = _215;
+	            _1530.x = _216;
+	            _215 = _1530;
+	            if (false)
+	            {
+	                _216 = _91.y;
+	            }
+	            else
+	            {
+	                _216 = _92.y;
+	            }
+	            vec3 _1540 = _215;
+	            _1540.y = _216;
+	            _215 = _1540;
+	            if (false)
+	            {
+	                _216 = _91.z;
+	            }
+	            else
+	            {
+	                _216 = _92.z;
+	            }
+	            vec3 _1550 = _215;
+	            _1550.z = _216;
+	            _215 = _1550;
+	            if (false)
+	            {
+	                _214 = _91.x;
+	            }
+	            else
+	            {
+	                _214 = _92.x;
+	            }
+	            vec3 _1560 = _213;
+	            _1560.x = _214;
+	            _213 = _1560;
+	            if (true)
+	            {
+	                _214 = _91.y;
+	            }
+	            else
+	            {
+	                _214 = _92.y;
+	            }
+	            vec3 _1570 = _213;
+	            _1570.y = _214;
+	            _213 = _1570;
+	            if (false)
+	            {
+	                _214 = _91.z;
+	            }
+	            else
+	            {
+	                _214 = _92.z;
+	            }
+	            vec3 _1580 = _213;
+	            _1580.z = _214;
+	            _213 = _1580;
+	            if (true)
+	            {
+	                _212 = _91.x;
+	            }
+	            else
+	            {
+	                _212 = _92.x;
+	            }
+	            vec3 _1590 = _211;
+	            _1590.x = _212;
+	            _211 = _1590;
+	            if (true)
+	            {
+	                _212 = _91.y;
+	            }
+	            else
+	            {
+	                _212 = _92.y;
+	            }
+	            vec3 _1600 = _211;
+	            _1600.y = _212;
+	            _211 = _1600;
+	            if (false)
+	            {
+	                _212 = _91.z;
+	            }
+	            else
+	            {
+	                _212 = _92.z;
+	            }
+	            vec3 _1610 = _211;
+	            _1610.z = _212;
+	            _211 = _1610;
+	            if (false)
+	            {
+	                _210 = _91.x;
+	            }
+	            else
+	            {
+	                _210 = _92.x;
+	            }
+	            vec3 _1620 = _209;
+	            _1620.x = _210;
+	            _209 = _1620;
+	            if (false)
+	            {
+	                _210 = _91.y;
+	            }
+	            else
+	            {
+	                _210 = _92.y;
+	            }
+	            vec3 _1630 = _209;
+	            _1630.y = _210;
+	            _209 = _1630;
+	            if (true)
+	            {
+	                _210 = _91.z;
+	            }
+	            else
+	            {
+	                _210 = _92.z;
+	            }
+	            vec3 _1640 = _209;
+	            _1640.z = _210;
+	            _209 = _1640;
+	            if (true)
+	            {
+	                _208 = _91.x;
+	            }
+	            else
+	            {
+	                _208 = _92.x;
+	            }
+	            vec3 _1650 = _207;
+	            _1650.x = _208;
+	            _207 = _1650;
+	            if (false)
+	            {
+	                _208 = _91.y;
+	            }
+	            else
+	            {
+	                _208 = _92.y;
+	            }
+	            vec3 _1660 = _207;
+	            _1660.y = _208;
+	            _207 = _1660;
+	            if (true)
+	            {
+	                _208 = _91.z;
+	            }
+	            else
+	            {
+	                _208 = _92.z;
+	            }
+	            vec3 _1670 = _207;
+	            _1670.z = _208;
+	            _207 = _1670;
+	            if (false)
+	            {
+	                _206 = _91.x;
+	            }
+	            else
+	            {
+	                _206 = _92.x;
+	            }
+	            vec3 _1680 = _205;
+	            _1680.x = _206;
+	            _205 = _1680;
+	            if (true)
+	            {
+	                _206 = _91.y;
+	            }
+	            else
+	            {
+	                _206 = _92.y;
+	            }
+	            vec3 _1690 = _205;
+	            _1690.y = _206;
+	            _205 = _1690;
+	            if (true)
+	            {
+	                _206 = _91.z;
+	            }
+	            else
+	            {
+	                _206 = _92.z;
+	            }
+	            vec3 _1700 = _205;
+	            _1700.z = _206;
+	            _205 = _1700;
+	            if (true)
+	            {
+	                _204 = _91.x;
+	            }
+	            else
+	            {
+	                _204 = _92.x;
+	            }
+	            vec3 _1710 = _203;
+	            _1710.x = _204;
+	            _203 = _1710;
+	            if (true)
+	            {
+	                _204 = _91.y;
+	            }
+	            else
+	            {
+	                _204 = _92.y;
+	            }
+	            vec3 _1720 = _203;
+	            _1720.y = _204;
+	            _203 = _1720;
+	            if (true)
+	            {
+	                _204 = _91.z;
+	            }
+	            else
+	            {
+	                _204 = _92.z;
+	            }
+	            vec3 _1730 = _203;
+	            _1730.z = _204;
+	            _203 = _1730;
+	            vec3 _142 = _1520;
+	            vec3 _141 = _1550;
+	            vec3 _140 = _1580;
+	            vec3 _139 = _1610;
+	            vec3 _138 = _1640;
+	            vec3 _137 = _1670;
+	            vec3 _136 = _1700;
+	            vec3 _135 = _1730;
+	            do
+	            {
+	                vec3 _1734 = _1491.xyz;
+	                float _1737 = _1491.w;
+	                vec4 _1739 = _200;
+	                _1739.x = dot(_1734, _142) - _1737;
+	                _1739.y = dot(_1734, _141) - _1737;
+	                _1739.z = dot(_1734, _140) - _1737;
+	                _1739.w = dot(_1734, _139) - _1737;
+	                _200 = _1739;
+	                vec4 _1756 = _201;
+	                _1756.x = dot(_1734, _138) - _1737;
+	                _1756.y = dot(_1734, _137) - _1737;
+	                _1756.z = dot(_1734, _136) - _1737;
+	                _1756.w = dot(_1734, _135) - _1737;
+	                _201 = _1756;
+	                if (all(greaterThan(_1739, vec4(0.0))))
+	                {
+	                    _202 = all(greaterThan(_201, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _202 = false;
+	                }
+	                if (_202)
+	                {
+	                    _199 = 1.0;
+	                    break;
+	                }
+	                if (all(lessThan(_200, vec4(0.0))))
+	                {
+	                    _202 = all(lessThan(_201, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _202 = false;
+	                }
+	                if (_202)
+	                {
+	                    _199 = -1.0;
+	                    break;
+	                }
+	                _199 = 0.0;
+	                break;
+	            } while(false);
+	            if (_199 < 0.0)
+	            {
+	                break;
+	            }
+	            vec3 _1803 = normalize(cross(_100 - _104, _99 - _104));
+	            vec4 _1805 = vec4(_1803, dot(_1803, _100));
+	            vec3 _90 = _337;
+	            vec3 _89 = _338;
+	            if (false)
+	            {
+	                _198 = _89.x;
+	            }
+	            else
+	            {
+	                _198 = _90.x;
+	            }
+	            vec3 _1814 = _197;
+	            _1814.x = _198;
+	            _197 = _1814;
+	            if (false)
+	            {
+	                _198 = _89.y;
+	            }
+	            else
+	            {
+	                _198 = _90.y;
+	            }
+	            vec3 _1824 = _197;
+	            _1824.y = _198;
+	            _197 = _1824;
+	            if (false)
+	            {
+	                _198 = _89.z;
+	            }
+	            else
+	            {
+	                _198 = _90.z;
+	            }
+	            vec3 _1834 = _197;
+	            _1834.z = _198;
+	            _197 = _1834;
+	            if (true)
+	            {
+	                _196 = _89.x;
+	            }
+	            else
+	            {
+	                _196 = _90.x;
+	            }
+	            vec3 _1844 = _195;
+	            _1844.x = _196;
+	            _195 = _1844;
+	            if (false)
+	            {
+	                _196 = _89.y;
+	            }
+	            else
+	            {
+	                _196 = _90.y;
+	            }
+	            vec3 _1854 = _195;
+	            _1854.y = _196;
+	            _195 = _1854;
+	            if (false)
+	            {
+	                _196 = _89.z;
+	            }
+	            else
+	            {
+	                _196 = _90.z;
+	            }
+	            vec3 _1864 = _195;
+	            _1864.z = _196;
+	            _195 = _1864;
+	            if (false)
+	            {
+	                _194 = _89.x;
+	            }
+	            else
+	            {
+	                _194 = _90.x;
+	            }
+	            vec3 _1874 = _193;
+	            _1874.x = _194;
+	            _193 = _1874;
+	            if (true)
+	            {
+	                _194 = _89.y;
+	            }
+	            else
+	            {
+	                _194 = _90.y;
+	            }
+	            vec3 _1884 = _193;
+	            _1884.y = _194;
+	            _193 = _1884;
+	            if (false)
+	            {
+	                _194 = _89.z;
+	            }
+	            else
+	            {
+	                _194 = _90.z;
+	            }
+	            vec3 _1894 = _193;
+	            _1894.z = _194;
+	            _193 = _1894;
+	            if (true)
+	            {
+	                _192 = _89.x;
+	            }
+	            else
+	            {
+	                _192 = _90.x;
+	            }
+	            vec3 _1904 = _191;
+	            _1904.x = _192;
+	            _191 = _1904;
+	            if (true)
+	            {
+	                _192 = _89.y;
+	            }
+	            else
+	            {
+	                _192 = _90.y;
+	            }
+	            vec3 _1914 = _191;
+	            _1914.y = _192;
+	            _191 = _1914;
+	            if (false)
+	            {
+	                _192 = _89.z;
+	            }
+	            else
+	            {
+	                _192 = _90.z;
+	            }
+	            vec3 _1924 = _191;
+	            _1924.z = _192;
+	            _191 = _1924;
+	            if (false)
+	            {
+	                _190 = _89.x;
+	            }
+	            else
+	            {
+	                _190 = _90.x;
+	            }
+	            vec3 _1934 = _189;
+	            _1934.x = _190;
+	            _189 = _1934;
+	            if (false)
+	            {
+	                _190 = _89.y;
+	            }
+	            else
+	            {
+	                _190 = _90.y;
+	            }
+	            vec3 _1944 = _189;
+	            _1944.y = _190;
+	            _189 = _1944;
+	            if (true)
+	            {
+	                _190 = _89.z;
+	            }
+	            else
+	            {
+	                _190 = _90.z;
+	            }
+	            vec3 _1954 = _189;
+	            _1954.z = _190;
+	            _189 = _1954;
+	            if (true)
+	            {
+	                _188 = _89.x;
+	            }
+	            else
+	            {
+	                _188 = _90.x;
+	            }
+	            vec3 _1964 = _187;
+	            _1964.x = _188;
+	            _187 = _1964;
+	            if (false)
+	            {
+	                _188 = _89.y;
+	            }
+	            else
+	            {
+	                _188 = _90.y;
+	            }
+	            vec3 _1974 = _187;
+	            _1974.y = _188;
+	            _187 = _1974;
+	            if (true)
+	            {
+	                _188 = _89.z;
+	            }
+	            else
+	            {
+	                _188 = _90.z;
+	            }
+	            vec3 _1984 = _187;
+	            _1984.z = _188;
+	            _187 = _1984;
+	            if (false)
+	            {
+	                _186 = _89.x;
+	            }
+	            else
+	            {
+	                _186 = _90.x;
+	            }
+	            vec3 _1994 = _185;
+	            _1994.x = _186;
+	            _185 = _1994;
+	            if (true)
+	            {
+	                _186 = _89.y;
+	            }
+	            else
+	            {
+	                _186 = _90.y;
+	            }
+	            vec3 _2004 = _185;
+	            _2004.y = _186;
+	            _185 = _2004;
+	            if (true)
+	            {
+	                _186 = _89.z;
+	            }
+	            else
+	            {
+	                _186 = _90.z;
+	            }
+	            vec3 _2014 = _185;
+	            _2014.z = _186;
+	            _185 = _2014;
+	            if (true)
+	            {
+	                _184 = _89.x;
+	            }
+	            else
+	            {
+	                _184 = _90.x;
+	            }
+	            vec3 _2024 = _183;
+	            _2024.x = _184;
+	            _183 = _2024;
+	            if (true)
+	            {
+	                _184 = _89.y;
+	            }
+	            else
+	            {
+	                _184 = _90.y;
+	            }
+	            vec3 _2034 = _183;
+	            _2034.y = _184;
+	            _183 = _2034;
+	            if (true)
+	            {
+	                _184 = _89.z;
+	            }
+	            else
+	            {
+	                _184 = _90.z;
+	            }
+	            vec3 _2044 = _183;
+	            _2044.z = _184;
+	            _183 = _2044;
+	            vec3 _150 = _1834;
+	            vec3 _149 = _1864;
+	            vec3 _148 = _1894;
+	            vec3 _147 = _1924;
+	            vec3 _146 = _1954;
+	            vec3 _145 = _1984;
+	            vec3 _144 = _2014;
+	            vec3 _143 = _2044;
+	            do
+	            {
+	                vec3 _2048 = _1805.xyz;
+	                float _2051 = _1805.w;
+	                vec4 _2053 = _180;
+	                _2053.x = dot(_2048, _150) - _2051;
+	                _2053.y = dot(_2048, _149) - _2051;
+	                _2053.z = dot(_2048, _148) - _2051;
+	                _2053.w = dot(_2048, _147) - _2051;
+	                _180 = _2053;
+	                vec4 _2070 = _181;
+	                _2070.x = dot(_2048, _146) - _2051;
+	                _2070.y = dot(_2048, _145) - _2051;
+	                _2070.z = dot(_2048, _144) - _2051;
+	                _2070.w = dot(_2048, _143) - _2051;
+	                _181 = _2070;
+	                if (all(greaterThan(_2053, vec4(0.0))))
+	                {
+	                    _182 = all(greaterThan(_181, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _182 = false;
+	                }
+	                if (_182)
+	                {
+	                    _179 = 1.0;
+	                    break;
+	                }
+	                if (all(lessThan(_180, vec4(0.0))))
+	                {
+	                    _182 = all(lessThan(_181, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _182 = false;
+	                }
+	                if (_182)
+	                {
+	                    _179 = -1.0;
+	                    break;
+	                }
+	                _179 = 0.0;
+	                break;
+	            } while(false);
+	            if (_179 < 0.0)
+	            {
+	                break;
+	            }
+	            vec3 _2117 = normalize(cross(_99 - _103, _102 - _103));
+	            vec4 _2119 = vec4(_2117, dot(_2117, _99));
+	            vec3 _88 = _337;
+	            vec3 _87 = _338;
+	            if (false)
+	            {
+	                _178 = _87.x;
+	            }
+	            else
+	            {
+	                _178 = _88.x;
+	            }
+	            vec3 _2128 = _177;
+	            _2128.x = _178;
+	            _177 = _2128;
+	            if (false)
+	            {
+	                _178 = _87.y;
+	            }
+	            else
+	            {
+	                _178 = _88.y;
+	            }
+	            vec3 _2138 = _177;
+	            _2138.y = _178;
+	            _177 = _2138;
+	            if (false)
+	            {
+	                _178 = _87.z;
+	            }
+	            else
+	            {
+	                _178 = _88.z;
+	            }
+	            vec3 _2148 = _177;
+	            _2148.z = _178;
+	            _177 = _2148;
+	            if (true)
+	            {
+	                _176 = _87.x;
+	            }
+	            else
+	            {
+	                _176 = _88.x;
+	            }
+	            vec3 _2158 = _175;
+	            _2158.x = _176;
+	            _175 = _2158;
+	            if (false)
+	            {
+	                _176 = _87.y;
+	            }
+	            else
+	            {
+	                _176 = _88.y;
+	            }
+	            vec3 _2168 = _175;
+	            _2168.y = _176;
+	            _175 = _2168;
+	            if (false)
+	            {
+	                _176 = _87.z;
+	            }
+	            else
+	            {
+	                _176 = _88.z;
+	            }
+	            vec3 _2178 = _175;
+	            _2178.z = _176;
+	            _175 = _2178;
+	            if (false)
+	            {
+	                _174 = _87.x;
+	            }
+	            else
+	            {
+	                _174 = _88.x;
+	            }
+	            vec3 _2188 = _173;
+	            _2188.x = _174;
+	            _173 = _2188;
+	            if (true)
+	            {
+	                _174 = _87.y;
+	            }
+	            else
+	            {
+	                _174 = _88.y;
+	            }
+	            vec3 _2198 = _173;
+	            _2198.y = _174;
+	            _173 = _2198;
+	            if (false)
+	            {
+	                _174 = _87.z;
+	            }
+	            else
+	            {
+	                _174 = _88.z;
+	            }
+	            vec3 _2208 = _173;
+	            _2208.z = _174;
+	            _173 = _2208;
+	            if (true)
+	            {
+	                _172 = _87.x;
+	            }
+	            else
+	            {
+	                _172 = _88.x;
+	            }
+	            vec3 _2218 = _171;
+	            _2218.x = _172;
+	            _171 = _2218;
+	            if (true)
+	            {
+	                _172 = _87.y;
+	            }
+	            else
+	            {
+	                _172 = _88.y;
+	            }
+	            vec3 _2228 = _171;
+	            _2228.y = _172;
+	            _171 = _2228;
+	            if (false)
+	            {
+	                _172 = _87.z;
+	            }
+	            else
+	            {
+	                _172 = _88.z;
+	            }
+	            vec3 _2238 = _171;
+	            _2238.z = _172;
+	            _171 = _2238;
+	            if (false)
+	            {
+	                _170 = _87.x;
+	            }
+	            else
+	            {
+	                _170 = _88.x;
+	            }
+	            vec3 _2248 = _169;
+	            _2248.x = _170;
+	            _169 = _2248;
+	            if (false)
+	            {
+	                _170 = _87.y;
+	            }
+	            else
+	            {
+	                _170 = _88.y;
+	            }
+	            vec3 _2258 = _169;
+	            _2258.y = _170;
+	            _169 = _2258;
+	            if (true)
+	            {
+	                _170 = _87.z;
+	            }
+	            else
+	            {
+	                _170 = _88.z;
+	            }
+	            vec3 _2268 = _169;
+	            _2268.z = _170;
+	            _169 = _2268;
+	            if (true)
+	            {
+	                _168 = _87.x;
+	            }
+	            else
+	            {
+	                _168 = _88.x;
+	            }
+	            vec3 _2278 = _167;
+	            _2278.x = _168;
+	            _167 = _2278;
+	            if (false)
+	            {
+	                _168 = _87.y;
+	            }
+	            else
+	            {
+	                _168 = _88.y;
+	            }
+	            vec3 _2288 = _167;
+	            _2288.y = _168;
+	            _167 = _2288;
+	            if (true)
+	            {
+	                _168 = _87.z;
+	            }
+	            else
+	            {
+	                _168 = _88.z;
+	            }
+	            vec3 _2298 = _167;
+	            _2298.z = _168;
+	            _167 = _2298;
+	            if (false)
+	            {
+	                _166 = _87.x;
+	            }
+	            else
+	            {
+	                _166 = _88.x;
+	            }
+	            vec3 _2308 = _165;
+	            _2308.x = _166;
+	            _165 = _2308;
+	            if (true)
+	            {
+	                _166 = _87.y;
+	            }
+	            else
+	            {
+	                _166 = _88.y;
+	            }
+	            vec3 _2318 = _165;
+	            _2318.y = _166;
+	            _165 = _2318;
+	            if (true)
+	            {
+	                _166 = _87.z;
+	            }
+	            else
+	            {
+	                _166 = _88.z;
+	            }
+	            vec3 _2328 = _165;
+	            _2328.z = _166;
+	            _165 = _2328;
+	            if (true)
+	            {
+	                _164 = _87.x;
+	            }
+	            else
+	            {
+	                _164 = _88.x;
+	            }
+	            vec3 _2338 = _163;
+	            _2338.x = _164;
+	            _163 = _2338;
+	            if (true)
+	            {
+	                _164 = _87.y;
+	            }
+	            else
+	            {
+	                _164 = _88.y;
+	            }
+	            vec3 _2348 = _163;
+	            _2348.y = _164;
+	            _163 = _2348;
+	            if (true)
+	            {
+	                _164 = _87.z;
+	            }
+	            else
+	            {
+	                _164 = _88.z;
+	            }
+	            vec3 _2358 = _163;
+	            _2358.z = _164;
+	            _163 = _2358;
+	            vec3 _158 = _2148;
+	            vec3 _157 = _2178;
+	            vec3 _156 = _2208;
+	            vec3 _155 = _2238;
+	            vec3 _154 = _2268;
+	            vec3 _153 = _2298;
+	            vec3 _152 = _2328;
+	            vec3 _151 = _2358;
+	            do
+	            {
+	                vec3 _2362 = _2119.xyz;
+	                float _2365 = _2119.w;
+	                vec4 _2367 = _160;
+	                _2367.x = dot(_2362, _158) - _2365;
+	                _2367.y = dot(_2362, _157) - _2365;
+	                _2367.z = dot(_2362, _156) - _2365;
+	                _2367.w = dot(_2362, _155) - _2365;
+	                _160 = _2367;
+	                vec4 _2384 = _161;
+	                _2384.x = dot(_2362, _154) - _2365;
+	                _2384.y = dot(_2362, _153) - _2365;
+	                _2384.z = dot(_2362, _152) - _2365;
+	                _2384.w = dot(_2362, _151) - _2365;
+	                _161 = _2384;
+	                if (all(greaterThan(_2367, vec4(0.0))))
+	                {
+	                    _162 = all(greaterThan(_161, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _162 = false;
+	                }
+	                if (_162)
+	                {
+	                    _159 = 1.0;
+	                    break;
+	                }
+	                if (all(lessThan(_160, vec4(0.0))))
+	                {
+	                    _162 = all(lessThan(_161, vec4(0.0)));
+	                }
+	                else
+	                {
+	                    _162 = false;
+	                }
+	                if (_162)
+	                {
+	                    _159 = -1.0;
+	                    break;
+	                }
+	                _159 = 0.0;
+	                break;
+	            } while(false);
+	            if (_159 < 0.0)
+	            {
+	                break;
+	            }
+	            nBits |= int(1u << uint(i - nStartLight));
+	            break;
+	        } while(false);
+	        if (_350_ladder_break)
+	        {
+	            break;
 	        }
-	        g_LightBins._m0[((((_244 * _236.y) * _241) + (_244 * gl_LaunchIDEXT.y)) + (_235 * gl_LaunchIDEXT.x)) + nMask] = uint(nBits);
-	        break;
-	    } while(false);
+	        i++;
+	        continue;
+	    }
+	    g_LightBins._member0[((((_302 * _295.y) * _299) + (_302 * gl_LaunchIDEXT.y)) + (_294 * gl_LaunchIDEXT.x)) + nMask] = uint(nBits);
 	}
 	
 	

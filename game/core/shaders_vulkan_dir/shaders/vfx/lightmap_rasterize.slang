@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: gs, ps, vs
 }
@@ -135,15 +135,15 @@ VS
 GS
 {
 	
-	StructuredBuffer g_ChartIDs < Attribute("g_ChartIDs"); SrgbRead(false); >;
+	StructuredBuffer g_ChartIDs < Attribute("g_ChartIDs"); >;
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// Unsupported builtin in HLSL.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (3388 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (3404 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	layout(triangles) in;
@@ -167,9 +167,6 @@ GS
 	
 	void main()
 	{
-	    vec4 _12827 = gl_in[0].gl_Position;
-	    vec4 _12828 = gl_in[1].gl_Position;
-	    vec4 _21734 = gl_in[2].gl_Position;
 	    vec3 _7777 = normalize(cross(input_0[1] - input_0[0], input_0[2] - input_0[0]));
 	    uint _11093 = uint(gl_PrimitiveIDIn);
 	    uvec2 _16324;
@@ -193,39 +190,42 @@ GS
 	        _17017 = _6352;
 	        continue;
 	    }
-	    float _18134 = float(_16324.x & 1048575u) * 9.5367431640625e-07;
-	    vec4 _11679 = _12827;
-	    _11679.z = _18134;
+	    float _21748 = float(_16324.x & 1048575u) * 9.5367431640625e-07;
+	    vec4 _9829 = gl_in[0].gl_Position;
+	    vec4 _12875 = _9829;
+	    _12875.z = _21748;
 	    output_0 = input_0[0];
 	    output_1 = input_1[0];
 	    output_2 = _7777;
 	    output_3 = input_2[0];
 	    output_4 = input_3[0];
 	    output_5 = g_ChartIDs_1._m0[_11093];
-	    _11679.y = -_12827.y;
-	    gl_Position = _11679;
+	    _12875.y = -_9829.y;
+	    gl_Position = _12875;
 	    EmitVertex();
-	    vec4 _18816 = _12828;
-	    _18816.z = _18134;
+	    vec4 _9830 = gl_in[1].gl_Position;
+	    vec4 _12876 = _9830;
+	    _12876.z = _21748;
 	    output_0 = input_0[1];
 	    output_1 = input_1[1];
 	    output_2 = _7777;
 	    output_3 = input_2[1];
 	    output_4 = input_3[1];
 	    output_5 = g_ChartIDs_1._m0[_11093];
-	    _18816.y = -_12828.y;
-	    gl_Position = _18816;
+	    _12876.y = -_9830.y;
+	    gl_Position = _12876;
 	    EmitVertex();
-	    vec4 _18817 = _21734;
-	    _18817.z = _18134;
+	    vec4 _9831 = gl_in[2].gl_Position;
+	    vec4 _12877 = _9831;
+	    _12877.z = _21748;
 	    output_0 = input_0[2];
 	    output_1 = input_1[2];
 	    output_2 = _7777;
 	    output_3 = input_2[2];
 	    output_4 = input_3[2];
 	    output_5 = g_ChartIDs_1._m0[_11093];
-	    _18817.y = -_21734.y;
-	    gl_Position = _18817;
+	    _12877.y = -_9831.y;
+	    gl_Position = _12877;
 	    EmitVertex();
 	    EndPrimitive();
 	}
@@ -242,7 +242,7 @@ PS
 	DynamicCombo( D_REVERSE_DEPTH, 0..1 );
 	DynamicComboRule( Requires( D_REVERSE_DEPTH, D_PASS=0 ) );
 	
-	StructuredBuffer g_ChartInfo < Attribute("g_ChartInfo"); SrgbRead(false); >;
+	StructuredBuffer g_ChartInfo < Attribute("g_ChartInfo"); >;
 	RWStructuredBuffer g_LightmapSamples < Attribute("g_LightmapSamples"); >;
 	Texture2D g_LuxelChartIDs < Attribute("g_LuxelChartIDs"); SrgbRead(false); >;
 	int g_nSampleStride < Attribute("g_nSampleStride"); UiType(Slider); >;
@@ -250,7 +250,7 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (768 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	Texture2D<uint4> g_LuxelChartIDs_unexpectedTypeId404_1041 : register(t30, space1);
+	Texture2D<uint4> g_LuxelChartIDs : register(t30, space1);
 	
 	static float4 gl_FragCoord;
 	static uint input_0;
@@ -269,7 +269,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    if (input_0 != g_LuxelChartIDs_unexpectedTypeId404_1041.Load(int3(uint2(gl_FragCoord.xy), 0)).x)
+	    if (input_0 != g_LuxelChartIDs.Load(int3(uint2(gl_FragCoord.xy), 0)).x)
 	    {
 	        discard;
 	    }

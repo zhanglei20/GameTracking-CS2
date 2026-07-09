@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -35,6 +35,9 @@ struct VS_INPUT
 
 VS
 {
+	DynamicCombo( D_DSTCOLOR_BLENDMODE, 0..8 );
+	
+	float2 g_vTexture4Scale < Default2(1, 1); Attribute("Texture4Scale"); UiType(VectorText); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (576 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
@@ -91,9 +94,15 @@ VS
 
 PS
 {
+	DynamicCombo( D_DSTCOLOR_BLENDMODE, 0..8 );
 	DynamicCombo( D_TEXTURETYPE, 0..7 );
 	DynamicCombo( D_FAST_BLUR_SAMPLES, 0..8 );
+	DynamicCombo( D_RESOLVE_DESTINATION, 0..2 );
+	DynamicCombo( D_MSAA_SAMPLES, 0..3 );
 	DynamicComboRule( Requires( D_FAST_BLUR_SAMPLES, D_TEXTURETYPE=6 ) );
+	DynamicComboRule( Requires( D_MSAA_SAMPLES, D_RESOLVE_DESTINATION=2 ) );
+	DynamicComboRule( Allow1( D_RESOLVE_DESTINATION, D_TEXTURETYPE ) );
+	DynamicComboRule( Allow1( D_RESOLVE_DESTINATION, D_DSTCOLOR_BLENDMODE ) );
 	
 	cbuffer FastBlurFilterParams_t < Attribute("FastBlurFilterParams_t"); >;
 	float g_flBlurSigma < Attribute("BlurSigma"); UiType(Slider); >;
@@ -102,6 +111,7 @@ PS
 	Texture2D g_tTexture1 < Attribute("Texture1"); SrgbRead(false); >;
 	Texture2D g_tTexture2 < Attribute("Texture2"); SrgbRead(false); >;
 	Texture2D g_tTexture3 < Attribute("Texture3"); SrgbRead(false); >;
+	Texture2D g_tTexture4 < Attribute("Texture4"); SrgbRead(false); >;
 	float2 g_vBlurMultiplyVec < Default(0); Attribute("BlurMultiplyVec"); UiType(VectorText); >;
 	
 	

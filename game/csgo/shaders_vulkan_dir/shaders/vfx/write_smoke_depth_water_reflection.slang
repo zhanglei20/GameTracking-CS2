@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 2;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -88,12 +88,7 @@ PS
 	Texture2D g_tZeroth_Moment < Attribute("zeroth_moment"); SrgbRead(true); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (4340 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
-	
-	struct _2284
-	{
-	    float4 _m0[4];
-	};
+	// SPIR-V source (3736 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	cbuffer _Globals_ : register(b0, space1)
 	{
@@ -107,7 +102,7 @@ PS
 	
 	cbuffer PerViewConstantBuffer_t : register(b1, space1)
 	{
-	    _2284 PerViewConstantBuffer_t_1_m0 : packoffset(c8);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c8);
 	    float PerViewConstantBuffer_t_1_m1 : packoffset(c23);
 	    float PerViewConstantBuffer_t_1_m2 : packoffset(c23.y);
 	    float PerViewConstantBuffer_t_1_m3 : packoffset(c23.z);
@@ -149,8 +144,7 @@ PS
 	            if (_16170 != 2.0f)
 	            {
 	                float _17238 = log(PerViewConstantBuffer_t_1_m3);
-	                float _16534 = (clamp(((PerViewConstantBuffer_t_1_m7.x / mul(float4x4(float4(PerViewConstantBuffer_t_1_m0._m0[0].x, PerViewConstantBuffer_t_1_m0._m0[1].x, PerViewConstantBuffer_t_1_m0._m0[2].x, PerViewConstantBuffer_t_1_m0._m0[3].x), float4(PerViewConstantBuffer_t_1_m0._m0[0].y, PerViewConstantBuffer_t_1_m0._m0[1].y, PerViewConstantBuffer_t_1_m0._m0[2].y, PerViewConstantBuffer_t_1_m0._m0[3].y), float4(PerViewConstantBuffer_t_1_m0._m0[0].z, PerViewConstantBuffer_t_1_m0._m0[1].z, PerViewConstantBuffer_t_1_m0._m0[2].z, PerViewConstantBuffer_t_1_m0._m0[3].z), float4(PerViewConstantBuffer_t_1_m0._m0[0].w, PerViewConstantBuffer_t_1_m0._m0[1].w, PerViewConstantBuffer_t_1_m0._m0[2].w, PerViewConstantBuffer_t_1_m0._m0[3].w)), float4((PerViewConstantBuffer_t_1_m5 + (PerViewConstantBuffer_t_1_m6 * ((exp((((_16170 + 1.0f) * 0.5f) * (log(PerViewConstantBuffer_t_1_m4) - _17238)) + _17238) * 1.03999996185302734375f) + 70.0f))).xyz, 1.0f).xyzw).z) - PerViewConstantBuffer_t_1_m7.z) / PerViewConstantBuffer_t_1_m7.y, 0.0f, 1.0f) * (PerViewConstantBuffer_t_1_m2 - PerViewConstantBuffer_t_1_m1)) + PerViewConstantBuffer_t_1_m1;
-	                _12501 = _16534;
+	                _12501 = (clamp(((PerViewConstantBuffer_t_1_m7.x / mul(PerViewConstantBuffer_t_1_m0, float4((PerViewConstantBuffer_t_1_m5 + (PerViewConstantBuffer_t_1_m6 * ((exp((((_16170 + 1.0f) * 0.5f) * (log(PerViewConstantBuffer_t_1_m4) - _17238)) + _17238) * 1.03999996185302734375f) + 70.0f))).xyz, 1.0f).xyzw).z) - PerViewConstantBuffer_t_1_m7.z) / PerViewConstantBuffer_t_1_m7.y, 0.0f, 1.0f) * (PerViewConstantBuffer_t_1_m2 - PerViewConstantBuffer_t_1_m1)) + PerViewConstantBuffer_t_1_m1;
 	            }
 	            else
 	            {

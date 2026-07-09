@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_60
 	// Programs: cs
 }
@@ -29,12 +29,12 @@ COMMON
 CS
 {
 	
-	StructuredBuffer g_ChartInfo < Attribute("g_ChartInfo"); SrgbRead(false); >;
+	StructuredBuffer g_ChartInfo < Attribute("g_ChartInfo"); >;
 	RWStructuredBuffer g_LightmapSamples < Attribute("g_LightmapSamples"); >;
 	Texture2D g_LuxelChartIDs < Attribute("g_LuxelChartIDs"); SrgbRead(false); >;
-	StructuredBuffer g_TriangleArea < Attribute("g_TriangleArea"); SrgbRead(false); >;
-	StructuredBuffer g_TriangleListForThreadGroup < Attribute("g_TriangleListForThreadGroup"); SrgbRead(false); >;
-	ByteAddressBuffer g_Vertices < Attribute("g_Vertices"); SrgbRead(false); >;
+	StructuredBuffer g_TriangleArea < Attribute("g_TriangleArea"); >;
+	StructuredBuffer g_TriangleListForThreadGroup < Attribute("g_TriangleListForThreadGroup"); >;
+	ByteAddressBuffer g_Vertices < Attribute("g_Vertices"); >;
 	int g_nLightmapBlockRectWidth < Attribute("g_nLightmapBlockRectWidth"); UiType(Slider); >;
 	int g_nLightmapBlockRectX < Attribute("g_nLightmapBlockRectX"); UiType(Slider); >;
 	int g_nLightmapBlockRectY < Attribute("g_nLightmapBlockRectY"); UiType(Slider); >;
@@ -47,7 +47,7 @@ CS
 	int g_nVertexStride < Attribute("g_nVertexStride"); UiType(Slider); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (18500 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (18644 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1531
 	{
@@ -59,6 +59,12 @@ CS
 	    float2 _m5;
 	    int _m6;
 	    uint _m7;
+	};
+	
+	struct _990
+	{
+	    uint _m0;
+	    uint _m1;
 	};
 	
 	struct _1532
@@ -73,7 +79,7 @@ CS
 	    uint _m7;
 	};
 	
-	struct _990
+	struct _991
 	{
 	    uint _m0;
 	    uint _m1;
@@ -98,11 +104,11 @@ CS
 	
 	ByteAddressBuffer g_TriangleListForThreadGroup : register(t31, space0);
 	RWByteAddressBuffer undetermined : register(u158, space0);
-	ByteAddressBuffer g_ChartInfo : register(t33, space0);
+	ByteAddressBuffer g_TriangleArea : register(t32, space0);
 	ByteAddressBuffer g_Vertices : register(t30, space0);
 	ByteAddressBuffer g_Vertices_1 : register(t30, space0);
-	ByteAddressBuffer g_TriangleArea : register(t32, space0);
-	Texture2D<uint4> g_LuxelChartIDs_unexpectedTypeId404_1041 : register(t34, space0);
+	ByteAddressBuffer g_ChartInfo : register(t33, space0);
+	Texture2D<uint4> g_LuxelChartIDs : register(t34, space0);
 	
 	static uint3 gl_WorkGroupID;
 	static uint3 gl_GlobalInvocationID;
@@ -124,7 +130,7 @@ CS
 	        uint _5156 = gl_WorkGroupID.x + (gl_WorkGroupID.y * uint(_Globals_1_g_nLightmapBlockRectWidth / 8));
 	        int _6540 = int(g_TriangleListForThreadGroup.Load(_5156 * 4 + 0));
 	        uint _13648 = _5156 + 1u;
-	        int _15017 = int(g_TriangleListForThreadGroup.Load(_13648 * 4 + 0));
+	        int _18397 = int(g_TriangleListForThreadGroup.Load(_13648 * 4 + 0));
 	        uint _5963 = (gl_GlobalInvocationID.y * uint(_Globals_1_g_nLightmapBlockRectWidth)) + gl_GlobalInvocationID.x;
 	        undetermined.Store4(_5963 * 96 + 0, asuint(0.0f.xxxx));
 	        undetermined.Store4(_5963 * 96 + 16, asuint(0.0f.xxxx));
@@ -134,7 +140,8 @@ CS
 	        undetermined.Store2(_5963 * 96 + 80, asuint((-1.0f).xx));
 	        undetermined.Store(_5963 * 96 + 88, uint(0));
 	        undetermined.Store(_5963 * 96 + 92, 0u);
-	        if (_6540 >= _15017)
+	        [branch]
+	        if (_6540 >= _18397)
 	        {
 	            break;
 	        }
@@ -227,7 +234,7 @@ CS
 	            int _17020 = _6540;
 	            for (;;)
 	            {
-	                if (!(_17020 < _15017))
+	                if (!(_17020 < _18397))
 	                {
 	                    break;
 	                }
@@ -378,10 +385,10 @@ CS
 	                _16886.x = _22590.x;
 	                _16886.y = _22590.y;
 	                _16886.z = _22590.z;
-	                float2 _15794 = ((float2(asfloat(g_Vertices.Load((_19607 / 4u) * 4 + 0)), asfloat(g_Vertices.Load(((_19607 + 4u) / 4u) * 4 + 0))) * _15062) + (float2(asfloat(g_Vertices.Load((_18788 / 4u) * 4 + 0)), asfloat(g_Vertices.Load(((_18788 + 4u) / 4u) * 4 + 0))) * _11861)) + (float2(asfloat(g_Vertices.Load((_18790 / 4u) * 4 + 0)), asfloat(g_Vertices.Load(((_18790 + 4u) / 4u) * 4 + 0))) * _16310);
-	                _1531 _12437 = { _20493, 0.0f.xxxx, _20494, _16886, ((float4((_23176 * cos(_23966)) + (cross(_21001, _23176) * sin(_23966)), ((g_Vertices_1.Load(_19813 * 4 + 0) & 1u) == 0u) ? (-1.0f) : 1.0f) * _15062) + (float4((_23177 * cos(_23967)) + (cross(_21002, _23177) * sin(_23967)), ((g_Vertices_1.Load(_19815 * 4 + 0) & 1u) == 0u) ? (-1.0f) : 1.0f) * _11861)) + (float4((_23178 * cos(_23968)) + (cross(_21003, _23178) * sin(_23968)), ((g_Vertices_1.Load(_19817 * 4 + 0) & 1u) == 0u) ? (-1.0f) : 1.0f) * _16310), _15794, 0, 0u };
-	                _5633[gl_LocalInvocationIndex] = _12437;
-	                _5704[gl_LocalInvocationIndex] = int2(_15794.xy * float2(int2(_Globals_1_g_nLightmapWidth, _Globals_1_g_nLightmapHeight)));
+	                float2 _16199 = ((float2(asfloat(g_Vertices.Load((_19607 / 4u) * 4 + 0)), asfloat(g_Vertices.Load(((_19607 + 4u) / 4u) * 4 + 0))) * _15062) + (float2(asfloat(g_Vertices.Load((_18788 / 4u) * 4 + 0)), asfloat(g_Vertices.Load(((_18788 + 4u) / 4u) * 4 + 0))) * _11861)) + (float2(asfloat(g_Vertices.Load((_18790 / 4u) * 4 + 0)), asfloat(g_Vertices.Load(((_18790 + 4u) / 4u) * 4 + 0))) * _16310);
+	                _1531 _21868 = { _20493, 0.0f.xxxx, _20494, _16886, ((float4((_23176 * cos(_23966)) + (cross(_21001, _23176) * sin(_23966)), ((g_Vertices_1.Load(_19813 * 4 + 0) & 1u) == 0u) ? (-1.0f) : 1.0f) * _15062) + (float4((_23177 * cos(_23967)) + (cross(_21002, _23177) * sin(_23967)), ((g_Vertices_1.Load(_19815 * 4 + 0) & 1u) == 0u) ? (-1.0f) : 1.0f) * _11861)) + (float4((_23178 * cos(_23968)) + (cross(_21003, _23178) * sin(_23968)), ((g_Vertices_1.Load(_19817 * 4 + 0) & 1u) == 0u) ? (-1.0f) : 1.0f) * _16310), _16199, 0, 0u };
+	                _5633[gl_LocalInvocationIndex] = _21868;
+	                _5704[gl_LocalInvocationIndex] = int2(_16199.xy * float2(int2(_Globals_1_g_nLightmapWidth, _Globals_1_g_nLightmapHeight)));
 	            }
 	            GroupMemoryBarrierWithGroupSync();
 	            uint2 _16326;
@@ -597,7 +604,7 @@ CS
 	            _17017 = _13142;
 	            continue;
 	        }
-	        uint4 _3401 = g_LuxelChartIDs_unexpectedTypeId404_1041.Load(int3(gl_GlobalInvocationID.xy, 0));
+	        uint4 _3401 = g_LuxelChartIDs.Load(int3(gl_GlobalInvocationID.xy, 0));
 	        uint _17171 = _3401.x;
 	        bool _12885;
 	        if (_17119.w != 0.0f)
@@ -622,7 +629,12 @@ CS
 	            _13639.x = _24205;
 	            _13639.y = _21816;
 	            _13639.z = _21832;
-	            uint _9062 = g_ChartInfo.Load(_17171 * 8 + 4);
+	            _991 _10574;
+	            _10574._m0 = g_ChartInfo.Load(_17171 * 8 + 0);
+	            _10574._m1 = g_ChartInfo.Load(_17171 * 8 + 4);
+	            _990 _19867;
+	            _19867._m0 = _10574._m0;
+	            _19867._m1 = _10574._m1;
 	            undetermined.Store4(_5963 * 96 + 0, asuint(_17119));
 	            undetermined.Store4(_5963 * 96 + 16, asuint(_13639));
 	            undetermined.Store4(_5963 * 96 + 32, asuint(_16887));
@@ -630,7 +642,7 @@ CS
 	            undetermined.Store4(_5963 * 96 + 64, asuint(float4(normalize(_17116.xyz), float(int(sign(_17116.w))))));
 	            undetermined.Store2(_5963 * 96 + 80, asuint(_17114));
 	            undetermined.Store(_5963 * 96 + 88, uint(_17115));
-	            undetermined.Store(_5963 * 96 + 92, _9062);
+	            undetermined.Store(_5963 * 96 + 92, _19867._m1);
 	        }
 	        break;
 	    } while(false);

@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 2;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -94,13 +94,13 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (5300 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	cbuffer _Globals_ : register(b0, space1)
+	cbuffer PerViewConstantBuffer_t : register(b0, space1)
 	{
-	    float4 _Globals_1_m0 : packoffset(c16);
-	    float _Globals_1_m1 : packoffset(c23);
-	    float _Globals_1_m2 : packoffset(c23.y);
-	    float3 _Globals_1_m3 : packoffset(c26);
-	    float3 _Globals_1_m4 : packoffset(c28);
+	    float4 PerViewConstantBuffer_t_1_m0 : packoffset(c16);
+	    float PerViewConstantBuffer_t_1_m1 : packoffset(c23);
+	    float PerViewConstantBuffer_t_1_m2 : packoffset(c23.y);
+	    float3 PerViewConstantBuffer_t_1_m3 : packoffset(c26);
+	    float3 PerViewConstantBuffer_t_1_m4 : packoffset(c28);
 	};
 	
 	Texture2D<float4> g_tSceneDepth : register(t30, space1);
@@ -134,51 +134,51 @@ PS
 	    float _14919 = _21863.x;
 	    float3 _14924 = ddx(input_0);
 	    float3 _11557 = ddy(input_0);
-	    float _10955 = _Globals_1_m2 - _Globals_1_m1;
-	    float3 _16581 = (_Globals_1_m3.xyz + (input_0.xyz * (1.0f / (((clamp((_7480 - _Globals_1_m1) / _10955, 0.0f, 1.0f) * _Globals_1_m0.z) + _Globals_1_m0.w) * dot(_Globals_1_m4.xyz, input_0.xyz))))).xyz;
+	    float _10955 = PerViewConstantBuffer_t_1_m2 - PerViewConstantBuffer_t_1_m1;
+	    float3 _16581 = (PerViewConstantBuffer_t_1_m3.xyz + (input_0.xyz * (1.0f / (((clamp((_7480 - PerViewConstantBuffer_t_1_m1) / _10955, 0.0f, 1.0f) * PerViewConstantBuffer_t_1_m0.z) + PerViewConstantBuffer_t_1_m0.w) * dot(PerViewConstantBuffer_t_1_m4.xyz, input_0.xyz))))).xyz;
 	    float3 _10970;
 	    float3 _14790;
 	    if (abs(_7480 - _7481) < abs(_7480 - _7482))
 	    {
-	        float3 _18365 = (input_0 - _14924).xyz;
-	        float3 _16583 = (_Globals_1_m3.xyz + (_18365 * (1.0f / (((clamp((_7481 - _Globals_1_m1) / _10955, 0.0f, 1.0f) * _Globals_1_m0.z) + _Globals_1_m0.w) * dot(_Globals_1_m4.xyz, _18365))))).xyz;
-	        float3 _13213;
-	        float3 _15671;
-	        if (abs(_7480 - _7483) < abs(_7480 - _14919))
-	        {
-	            float3 _18367 = (input_0 - _11557).xyz;
-	            _13213 = (_Globals_1_m3.xyz + (_18367 * (1.0f / (((clamp((_7483 - _Globals_1_m1) / _10955, 0.0f, 1.0f) * _Globals_1_m0.z) + _Globals_1_m0.w) * dot(_Globals_1_m4.xyz, _18367))))).xyz;
-	            _15671 = _16583;
-	        }
-	        else
-	        {
-	            float3 _18366 = (input_0 + _11557).xyz;
-	            _13213 = _16583;
-	            _15671 = (_Globals_1_m3.xyz + (_18366 * (1.0f / (((clamp((_14919 - _Globals_1_m1) / _10955, 0.0f, 1.0f) * _Globals_1_m0.z) + _Globals_1_m0.w) * dot(_Globals_1_m4.xyz, _18366))))).xyz;
-	        }
-	        _10970 = _13213;
-	        _14790 = _15671;
-	    }
-	    else
-	    {
-	        float3 _18362 = (input_0 + _14924).xyz;
-	        float3 _16582 = (_Globals_1_m3.xyz + (_18362 * (1.0f / (((clamp((_7482 - _Globals_1_m1) / _10955, 0.0f, 1.0f) * _Globals_1_m0.z) + _Globals_1_m0.w) * dot(_Globals_1_m4.xyz, _18362))))).xyz;
+	        float3 _18362 = (input_0 - _14924).xyz;
+	        float3 _16582 = (PerViewConstantBuffer_t_1_m3.xyz + (_18362 * (1.0f / (((clamp((_7481 - PerViewConstantBuffer_t_1_m1) / _10955, 0.0f, 1.0f) * PerViewConstantBuffer_t_1_m0.z) + PerViewConstantBuffer_t_1_m0.w) * dot(PerViewConstantBuffer_t_1_m4.xyz, _18362))))).xyz;
 	        float3 _13212;
 	        float3 _15670;
 	        if (abs(_7480 - _7483) < abs(_7480 - _14919))
 	        {
-	            float3 _18364 = (input_0 - _11557).xyz;
-	            _13212 = _16582;
-	            _15670 = (_Globals_1_m3.xyz + (_18364 * (1.0f / (((clamp((_7483 - _Globals_1_m1) / _10955, 0.0f, 1.0f) * _Globals_1_m0.z) + _Globals_1_m0.w) * dot(_Globals_1_m4.xyz, _18364))))).xyz;
+	            float3 _18363 = (input_0 - _11557).xyz;
+	            _13212 = (PerViewConstantBuffer_t_1_m3.xyz + (_18363 * (1.0f / (((clamp((_7483 - PerViewConstantBuffer_t_1_m1) / _10955, 0.0f, 1.0f) * PerViewConstantBuffer_t_1_m0.z) + PerViewConstantBuffer_t_1_m0.w) * dot(PerViewConstantBuffer_t_1_m4.xyz, _18363))))).xyz;
+	            _15670 = _16582;
 	        }
 	        else
 	        {
-	            float3 _18363 = (input_0 + _11557).xyz;
-	            _13212 = (_Globals_1_m3.xyz + (_18363 * (1.0f / (((clamp((_14919 - _Globals_1_m1) / _10955, 0.0f, 1.0f) * _Globals_1_m0.z) + _Globals_1_m0.w) * dot(_Globals_1_m4.xyz, _18363))))).xyz;
-	            _15670 = _16582;
+	            float3 _18364 = (input_0 + _11557).xyz;
+	            _13212 = _16582;
+	            _15670 = (PerViewConstantBuffer_t_1_m3.xyz + (_18364 * (1.0f / (((clamp((_14919 - PerViewConstantBuffer_t_1_m1) / _10955, 0.0f, 1.0f) * PerViewConstantBuffer_t_1_m0.z) + PerViewConstantBuffer_t_1_m0.w) * dot(PerViewConstantBuffer_t_1_m4.xyz, _18364))))).xyz;
 	        }
 	        _10970 = _13212;
 	        _14790 = _15670;
+	    }
+	    else
+	    {
+	        float3 _18365 = (input_0 + _14924).xyz;
+	        float3 _16583 = (PerViewConstantBuffer_t_1_m3.xyz + (_18365 * (1.0f / (((clamp((_7482 - PerViewConstantBuffer_t_1_m1) / _10955, 0.0f, 1.0f) * PerViewConstantBuffer_t_1_m0.z) + PerViewConstantBuffer_t_1_m0.w) * dot(PerViewConstantBuffer_t_1_m4.xyz, _18365))))).xyz;
+	        float3 _13213;
+	        float3 _15671;
+	        if (abs(_7480 - _7483) < abs(_7480 - _14919))
+	        {
+	            float3 _18366 = (input_0 - _11557).xyz;
+	            _13213 = _16583;
+	            _15671 = (PerViewConstantBuffer_t_1_m3.xyz + (_18366 * (1.0f / (((clamp((_7483 - PerViewConstantBuffer_t_1_m1) / _10955, 0.0f, 1.0f) * PerViewConstantBuffer_t_1_m0.z) + PerViewConstantBuffer_t_1_m0.w) * dot(PerViewConstantBuffer_t_1_m4.xyz, _18366))))).xyz;
+	        }
+	        else
+	        {
+	            float3 _18367 = (input_0 + _11557).xyz;
+	            _13213 = (PerViewConstantBuffer_t_1_m3.xyz + (_18367 * (1.0f / (((clamp((_14919 - PerViewConstantBuffer_t_1_m1) / _10955, 0.0f, 1.0f) * PerViewConstantBuffer_t_1_m0.z) + PerViewConstantBuffer_t_1_m0.w) * dot(PerViewConstantBuffer_t_1_m4.xyz, _18367))))).xyz;
+	            _15671 = _16583;
+	        }
+	        _10970 = _13213;
+	        _14790 = _15671;
 	    }
 	    float3 _23652 = -normalize(cross(_14790 - _16581, _10970 - _16581));
 	    output_0 = float4(((((_23652.xy / (_23652.z + 1.0f).xx) * 0.562524616718292236328125f.xx) * 0.5f) + 0.5f.xx).xy, 0.0f, 0.0f);

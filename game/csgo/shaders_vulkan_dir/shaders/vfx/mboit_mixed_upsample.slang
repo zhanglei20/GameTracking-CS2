@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -68,7 +68,7 @@ CS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 0 (name: g_vOutputDim) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
@@ -98,32 +98,32 @@ CS
 	
 	layout(set = 0) uniform _1000 PerViewConstantBuffer_t;
 	
-	layout(set = 0, binding = 36) uniform texture2D g_tZerothHalf;
-	layout(set = 0, binding = 31) uniform texture2D g_tLinearDepthHalf;
-	layout(set = 0, binding = 34) uniform texture2D g_tSmokeDepthHalf;
-	layout(set = 0, binding = 39) uniform texture2D g_tMomentsHalf;
-	layout(set = 0, binding = 40) uniform texture2D g_tExtraHalf;
 	layout(set = 0, binding = 35) uniform texture2D g_tZerothQuarter;
 	layout(set = 0, binding = 33) uniform texture2D g_tSmokeDepthQuarter;
 	layout(set = 0, binding = 30) uniform texture2D g_tLinearDepthQuarter;
 	layout(set = 0, binding = 37) uniform texture2D g_tMomentsQuarter;
 	layout(set = 0, binding = 38) uniform texture2D g_tExtraQuarter;
+	layout(set = 0, binding = 36) uniform texture2D g_tZerothHalf;
+	layout(set = 0, binding = 31) uniform texture2D g_tLinearDepthHalf;
+	layout(set = 0, binding = 34) uniform texture2D g_tSmokeDepthHalf;
+	layout(set = 0, binding = 39) uniform texture2D g_tMomentsHalf;
+	layout(set = 0, binding = 40) uniform texture2D g_tExtraHalf;
 	layout(set = 0, binding = 158) uniform writeonly image2D _3675;
 	layout(set = 0, binding = 32) uniform texture2D g_tLinearDepthFull;
 	layout(set = 0, binding = 159) uniform image2D _4494;
 	layout(set = 0, binding = 160) uniform image2D _3327;
 	layout(set = 0, binding = 161) uniform image2D _5667;
 	
-	shared float _5504[36];
-	shared float _5750[36];
-	shared vec2 _4675[36];
-	shared vec2 _3430[36];
-	shared vec4 _4077[36];
 	shared float _3449[25];
 	shared vec2 _5300[25];
 	shared float _5084[25];
 	shared vec2 _5745[25];
 	shared vec4 _4516[25];
+	shared float _5504[36];
+	shared float _5750[36];
+	shared vec2 _4675[36];
+	shared vec2 _3430[36];
+	shared vec4 _4077[36];
 	
 	void main()
 	{
@@ -133,12 +133,12 @@ CS
 	        uint _3100 = (gl_LocalInvocationID.y * 8u) + gl_LocalInvocationID.x;
 	        if (_3100 < 25u)
 	        {
-	            ivec3 _9621 = min(max(ivec3(0), ivec3(ivec2(((gl_WorkGroupID.xy * uvec2(2u)) - uvec2(1u)) + uvec2(_3100 % 5u, _3100 / 5u)), 0)), ivec3(ivec2(_Globals_.g_vOutputDim.xy * vec2(0.25)), 0));
-	            ivec2 _21442 = _9621.xy;
-	            int _13856 = _9621.z;
-	            _3449[_3100] = texelFetch(g_tZerothQuarter, _21442, _13856).x;
-	            _5300[_3100] = texelFetch(g_tSmokeDepthQuarter, _21442, _13856).xy;
-	            _5084[_3100] = texelFetch(g_tLinearDepthQuarter, _21442, _13856).x;
+	            ivec3 _9620 = min(max(ivec3(0), ivec3(ivec2(((gl_WorkGroupID.xy * uvec2(2u)) - uvec2(1u)) + uvec2(_3100 % 5u, _3100 / 5u)), 0)), ivec3(ivec2(_Globals_.g_vOutputDim.xy * vec2(0.25)), 0));
+	            ivec2 _21441 = _9620.xy;
+	            int _13855 = _9620.z;
+	            _3449[_3100] = texelFetch(g_tZerothQuarter, _21441, _13855).x;
+	            _5300[_3100] = texelFetch(g_tSmokeDepthQuarter, _21441, _13855).xy;
+	            _5084[_3100] = texelFetch(g_tLinearDepthQuarter, _21441, _13855).x;
 	            if (_3449[_3100] == 0.0)
 	            {
 	                _5745[_3100] = vec2(0.0);
@@ -146,8 +146,8 @@ CS
 	            }
 	            else
 	            {
-	                _5745[_3100] = texelFetch(g_tMomentsQuarter, _21442, _13856).xy;
-	                _4516[_3100] = texelFetch(g_tExtraQuarter, _21442, _13856);
+	                _5745[_3100] = texelFetch(g_tMomentsQuarter, _21441, _13855).xy;
+	                _4516[_3100] = texelFetch(g_tExtraQuarter, _21441, _13855);
 	            }
 	            if (_5300[_3100].y > 1.5)
 	            {
@@ -159,11 +159,11 @@ CS
 	            if (_3100 < 61u)
 	            {
 	                uint _22201 = _3100 - 25u;
-	                ivec3 _9620 = min(max(ivec3(0), ivec3(ivec2(((gl_WorkGroupID.xy * uvec2(4u)) - uvec2(1u)) + uvec2(ivec2(int(_22201 % 6u), int(_22201 / 6u)))), 0)), ivec3(ivec2(_Globals_.g_vOutputDim.xy * vec2(0.5)), 0));
-	                ivec2 _21441 = _9620.xy;
-	                int _13855 = _9620.z;
-	                _5504[_22201] = texelFetch(g_tZerothHalf, _21441, _13855).x;
-	                _5750[_22201] = texelFetch(g_tLinearDepthHalf, _21441, _13855).x;
+	                ivec3 _9621 = min(max(ivec3(0), ivec3(ivec2(((gl_WorkGroupID.xy * uvec2(4u)) - uvec2(1u)) + uvec2(ivec2(int(_22201 % 6u), int(_22201 / 6u)))), 0)), ivec3(ivec2(_Globals_.g_vOutputDim.xy * vec2(0.5)), 0));
+	                ivec2 _21442 = _9621.xy;
+	                int _13856 = _9621.z;
+	                _5504[_22201] = texelFetch(g_tZerothHalf, _21442, _13856).x;
+	                _5750[_22201] = texelFetch(g_tLinearDepthHalf, _21442, _13856).x;
 	                if (_5504[_22201] == 0.0)
 	                {
 	                    _4675[_22201] = vec2(2.0, -2.0);
@@ -172,9 +172,9 @@ CS
 	                }
 	                else
 	                {
-	                    _4675[_22201] = texelFetch(g_tSmokeDepthHalf, _21441, _13855).xy;
-	                    _3430[_22201] = texelFetch(g_tMomentsHalf, _21441, _13855).xy;
-	                    _4077[_22201] = texelFetch(g_tExtraHalf, _21441, _13855);
+	                    _4675[_22201] = texelFetch(g_tSmokeDepthHalf, _21442, _13856).xy;
+	                    _3430[_22201] = texelFetch(g_tMomentsHalf, _21442, _13856).xy;
+	                    _4077[_22201] = texelFetch(g_tExtraHalf, _21442, _13856);
 	                }
 	                if (_4675[_22201].y > 1.5)
 	                {
@@ -253,8 +253,8 @@ CS
 	                            _22401 = vec4(0.0);
 	                            break;
 	                        }
-	                        vec4 _17660 = vec4(_5750[_7519]);
-	                        vec4 _21922 = abs(_17660 - vec4(_5084[_3925], _5084[_13648], _5084[_13649], _5084[_13650])) / _17660;
+	                        vec4 _13625 = vec4(_5750[_7519]);
+	                        vec4 _21922 = abs(_13625 - vec4(_5084[_3925], _5084[_13648], _5084[_13649], _5084[_13650])) / _13625;
 	                        if (all(lessThan(_21922, vec4(_Globals_.g_flDepthThreshold))))
 	                        {
 	                            _22401 = vec4(_19631, _20716, _22329, _22330);
@@ -379,8 +379,8 @@ CS
 	                    _23104 = vec4(0.0);
 	                    break;
 	                }
-	                vec4 _17661 = vec4(_17621);
-	                vec4 _21923 = abs(_17661 - vec4(_5750[_4275], _5750[_13651], _5750[_13652], _5750[_13653])) / _17661;
+	                vec4 _13626 = vec4(_17621);
+	                vec4 _21923 = abs(_13626 - vec4(_5750[_4275], _5750[_13651], _5750[_13652], _5750[_13653])) / _13626;
 	                if (all(lessThan(_21923, vec4(_Globals_.g_flDepthThreshold))))
 	                {
 	                    _23104 = vec4(_19632, _20717, _22331, _22332);

@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -96,23 +96,32 @@ PS
 	DynamicCombo( D_IMGUI, 0..1 );
 	DynamicCombo( D_VR_DEPTH_TEXTURE, 0..2 );
 	
+	int g_nCombinedSlicesMode < Attribute("g_nCombinedSlicesMode"); UiType(Slider); >;
+	int g_nDepthSlice < Attribute("g_nDepthSlice"); UiType(Slider); >;
 	Texture2D g_tDepthTexture < Attribute("InputTexture"); SrgbRead(false); >;
 	
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (1348 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (3140 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	
+	static const float3 _2728[3] = { float3(1.0f, 0.0f, 0.0f), float3(0.0f, 1.0f, 0.0f), float3(0.0f, 0.0f, 1.0f) };
+	static const float3 _2729[3] = { float3(1.0f, 0.0f, 0.0f), float3(0.0f, 1.0f, 0.0f), float3(0.0f, 0.0f, 1.0f) };
+	
+	cbuffer _Globals_ : register(b0, space1)
+	{
+	    int _Globals_1_g_nDepthSlice : packoffset(c0);
+	    int _Globals_1_g_nCombinedSlicesMode : packoffset(c0.y);
+	};
 	
 	Texture2D<float4> g_tDepthTexture : register(t30, space1);
-	SamplerComparisonState AddressU_Clamp_AddressV_Clamp_Filter_ComparisonMinMagMipLinear : register(s15, space1);
+	SamplerState AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagMipPoint : register(s16, space1);
 	
-	static float4 input_0;
+	static float2 input_0;
 	static float4 output_0;
-	static float2 input_1;
 	
 	struct PS_INPUT
 	{
-	    float2 input_1 : TEXCOORD0;
-	    float4 input_0 : TEXCOORD1;
+	    float2 input_0 : TEXCOORD0;
 	};
 	
 	struct PS_OUTPUT
@@ -122,35 +131,75 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float4 _13155;
-	    _13155 = float4(0.0f, 0.0f, 0.0f, 1.0f);
-	    int _11515;
-	    float4 _13138;
-	    int _16208 = 0;
-	    for (;;)
+	    float4 _6805;
+	    if (_Globals_1_g_nCombinedSlicesMode == 0)
 	    {
-	        if (!(_16208 < 64))
-	        {
-	            break;
-	        }
-	        float3 _20312 = _13155.xyz + (0.015625f * g_tDepthTexture.SampleCmpLevelZero(AddressU_Clamp_AddressV_Clamp_Filter_ComparisonMinMagMipLinear, input_1.xy, float(_16208) * 0.015625f)).xxx;
-	        float4 _20488 = _13155;
-	        _20488.x = _20312.x;
-	        _20488.y = _20312.y;
-	        _13138 = _20488;
-	        _13138.z = _20312.z;
-	        _11515 = _16208 + 1;
-	        _13155 = _13138;
-	        _16208 = _11515;
-	        continue;
+	        _6805 = frac(g_tDepthTexture.SampleLevel(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagMipPoint, input_0.xy, float(_Globals_1_g_nDepthSlice)).x * 32.0f).xxxx;
 	    }
-	    output_0 = _13155 * input_0;
+	    else
+	    {
+	        float4 _12502;
+	        if (_Globals_1_g_nCombinedSlicesMode == 1)
+	        {
+	            int _7603;
+	            float3 _22743;
+	            int _13039 = 9;
+	            for (;;)
+	            {
+	                if (!(_13039 >= 0))
+	                {
+	                    _22743 = 0.0f.xxx;
+	                    break;
+	                }
+	                if (frac(g_tDepthTexture.SampleLevel(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagMipPoint, input_0.xy, float(_13039)).x) > 0.0f)
+	                {
+	                    _22743 = _2728[_13039 - 3 * (_13039 / 3)];
+	                    break;
+	                }
+	                _7603 = _13039 - 1;
+	                _13039 = _7603;
+	                continue;
+	            }
+	            _12502 = float4(_22743 * frac(g_tDepthTexture.SampleLevel(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagMipPoint, input_0.xy, 0.0f).x * 64.0f), 1.0f);
+	        }
+	        else
+	        {
+	            float4 _12501;
+	            if (_Globals_1_g_nCombinedSlicesMode == 2)
+	            {
+	                float3 _13155;
+	                _13155 = 0.0f.xxx;
+	                float3 _5949;
+	                int _18752;
+	                int _16208 = 0;
+	                for (;;)
+	                {
+	                    if (!(_16208 < 10))
+	                    {
+	                        break;
+	                    }
+	                    _5949 = _13155 + (_2729[_16208 - 3 * (_16208 / 3)] * frac(g_tDepthTexture.SampleLevel(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagMipPoint, input_0.xy, float(_16208)).x * 32.0f));
+	                    _18752 = _16208 + 1;
+	                    _13155 = _5949;
+	                    _16208 = _18752;
+	                    continue;
+	                }
+	                _12501 = float4(_13155, 1.0f);
+	            }
+	            else
+	            {
+	                _12501 = float4(0.0f, 0.0f, 0.0f, 1.0f);
+	            }
+	            _12502 = _12501;
+	        }
+	        _6805 = _12502;
+	    }
+	    output_0 = _6805;
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)
 	{
 	    input_0 = stage_input.input_0;
-	    input_1 = stage_input.input_1;
 	    MainPs_inner();
 	    PS_OUTPUT stage_output;
 	    stage_output.output_0 = output_0;

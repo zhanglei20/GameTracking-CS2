@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -136,7 +136,7 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 0 (name: g_vViewFadeColor) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io

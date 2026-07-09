@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -111,10 +111,10 @@ PS
 	    float _Globals_1_g_flJumpThrow : packoffset(c1.z);
 	};
 	
-	Texture2D<float4> g_tJumpThrowIcon : register(t31, space1);
-	SamplerState g_sBilinearClamp : register(s15, space1);
 	Texture2D<float4> g_tCameraTexture : register(t30, space1);
 	SamplerState DefaultSamplerState_0 : register(s21, space1);
+	Texture2D<float4> g_tJumpThrowIcon : register(t31, space1);
+	SamplerState g_sBilinearClamp : register(s15, space1);
 	
 	static float2 input_0;
 	static float4 output_0;
@@ -174,8 +174,8 @@ PS
 	    {
 	        float2 _22640 = float2(0.100000001490116119384765625f, (-0.300000011920928955078125f) + (fmod(PerViewConstantBuffer_t_1_m0, 0.5f) * 0.100000001490116119384765625f)) + (input_0.xy * 4.0f);
 	        _22640.y = _22640.y * _3458;
-	        float4 _19680 = g_tJumpThrowIcon.Sample(g_sBilinearClamp, _22640);
-	        _11275 = lerp(_10289.xyz, _19680.xyz, (_19680.w * _Globals_1_g_flJumpThrow).xxx);
+	        float4 _3401 = g_tJumpThrowIcon.Sample(g_sBilinearClamp, _22640);
+	        _11275 = lerp(_10289.xyz, _3401.xyz, (_3401.w * _Globals_1_g_flJumpThrow).xxx);
 	    }
 	    else
 	    {

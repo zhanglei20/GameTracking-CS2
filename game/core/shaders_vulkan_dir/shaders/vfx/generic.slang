@@ -7,8 +7,8 @@ HEADER
 	DevShader = false;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -81,9 +81,9 @@ VS
 	DynamicComboRule( Allow1( S_TRANSLUCENT, D_MORPH ) );
 	
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
-	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); >;
 	Texture2D g_tCompositeMorphTextureAtlas < Attribute("CompositeMorphTextureAtlas"); SrgbRead(false); >;
-	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); >;
 	
 	// Normal Map
 	float2 g_vNormalTexCoordScale < Default2(1, 1); Range2(0, 0, 8, 8); UiType(VectorText); UiGroup("Normal Map"); >;
@@ -93,7 +93,7 @@ VS
 	float2 g_vTexCoordOffset < Range2(-1, -1, 1, 1); UiType(VectorText); UiGroup("Color/40"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (5760 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (5068 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1125
 	{
@@ -107,26 +107,33 @@ VS
 	    float _m7;
 	};
 	
-	struct _1444
+	struct _1126
 	{
-	    float4 _m0[3];
+	    uint _m0;
+	    uint _m1;
+	    uint _m2;
+	    uint _m3;
+	    uint _m4;
+	    uint _m5;
+	    uint _m6;
+	    float _m7;
 	};
 	
-	struct _836
+	struct _1119
 	{
-	    _1444 _m0;
+	    float3x4 _m0;
 	};
 	
-	struct _1570
+	struct _1120
 	{
-	    float4 _m0[4];
+	    row_major float3x4 _m0;
 	};
 	
 	ByteAddressBuffer g_instanceBuffer : register(t32, space0);
 	ByteAddressBuffer g_transformBuffer : register(t30, space0);
 	cbuffer PerViewConstantBuffer_t : register(b1, space0)
 	{
-	    _1570 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c17);
 	    float4 PerViewConstantBuffer_t_1_m2 : packoffset(c24);
 	};
@@ -141,11 +148,11 @@ VS
 	
 	static float4 gl_Position;
 	static float gl_ClipDistance[1];
-	static float3 vPositionOs;
-	static float2 vTexCoord;
-	static float3 vNormalOs;
-	static float4 vTangentUOs_flTangentVSign;
-	static uint nInstanceIdx;
+	static uint vPositionOs;
+	static float3 vTexCoord;
+	static float2 vNormalOs;
+	static float3 vTangentUOs_flTangentVSign;
+	static float4 nInstanceIdx;
 	static float3 output_0;
 	static float4 output_1;
 	static float3 output_2;
@@ -154,11 +161,11 @@ VS
 	
 	struct VS_INPUT
 	{
-	    float3 vPositionOs : TEXCOORD0;
-	    float2 vTexCoord : TEXCOORD1;
-	    float3 vNormalOs : TEXCOORD2;
-	    float4 vTangentUOs_flTangentVSign : TEXCOORD3;
-	    uint nInstanceIdx : TEXCOORD4;
+	    float3 vTexCoord : TEXCOORD0;
+	    float2 vNormalOs : TEXCOORD1;
+	    float3 vTangentUOs_flTangentVSign : TEXCOORD2;
+	    float4 nInstanceIdx : TEXCOORD3;
+	    uint vPositionOs : TEXCOORD4;
 	};
 	
 	struct PS_INPUT
@@ -174,7 +181,25 @@ VS
 	
 	void MainVs_inner()
 	{
-	    float4 _23812 = float4(uint4((g_instanceBuffer.Load(nInstanceIdx * 32 + 0) & 255u), (g_instanceBuffer.Load(nInstanceIdx * 32 + 0) & 65280u) >> uint(8), (g_instanceBuffer.Load(nInstanceIdx * 32 + 0) & 16711680u) >> uint(16), (g_instanceBuffer.Load(nInstanceIdx * 32 + 0) & 4278190080u) >> uint(24))) * 0.0039215688593685626983642578125f.xxxx;
+	    _1126 _24007;
+	    _24007._m0 = g_instanceBuffer.Load(vPositionOs * 32 + 0);
+	    _24007._m1 = g_instanceBuffer.Load(vPositionOs * 32 + 4);
+	    _24007._m2 = g_instanceBuffer.Load(vPositionOs * 32 + 8);
+	    _24007._m3 = g_instanceBuffer.Load(vPositionOs * 32 + 12);
+	    _24007._m4 = g_instanceBuffer.Load(vPositionOs * 32 + 16);
+	    _24007._m5 = g_instanceBuffer.Load(vPositionOs * 32 + 20);
+	    _24007._m6 = g_instanceBuffer.Load(vPositionOs * 32 + 24);
+	    _24007._m7 = asfloat(g_instanceBuffer.Load(vPositionOs * 32 + 28));
+	    _1125 _22470;
+	    _22470._m0 = _24007._m0;
+	    _22470._m1 = _24007._m1;
+	    _22470._m2 = _24007._m2;
+	    _22470._m3 = _24007._m3;
+	    _22470._m4 = _24007._m4;
+	    _22470._m5 = _24007._m5;
+	    _22470._m6 = _24007._m6;
+	    _22470._m7 = _24007._m7;
+	    float4 _23812 = float4(uint4(_22470._m0 & 255u, (_22470._m0 & 65280u) >> uint(8), (_22470._m0 & 16711680u) >> uint(16), (_22470._m0 & 4278190080u) >> uint(24))) * 0.0039215688593685626983642578125f.xxxx;
 	    float3 _6253 = _23812.xyz;
 	    float3 _17828 = _6253 * 0.077399380505084991455078125f.xxx;
 	    float3 _7676 = pow((_6253 * 0.947867333889007568359375f.xxx) + 0.052132703363895416259765625f.xxx, 2.400000095367431640625f.xxx);
@@ -205,25 +230,22 @@ VS
 	    {
 	        _19302 = _7676.z;
 	    }
-	    _1444 _25207;
-	    [unroll]
-	    for (int _1ident = 0; _1ident < 3; _1ident++)
-	    {
-	        _25207._m0[_1ident] = asfloat(g_transformBuffer.Load4(_1ident * 16 + g_instanceBuffer.Load(nInstanceIdx * 32 + 4) * 48 + 0));
-	    }
-	    float3x4 _14817 = float3x4(_25207._m0[0], _25207._m0[1], _25207._m0[2]);
-	    float3 _11198 = normalize(mul(_14817, float4(vNormalOs.xyz, 0.0f)));
-	    float3 _12861 = mul(_14817, float4(vTangentUOs_flTangentVSign.xyz, 0.0f)).xyz;
+	    _1120 _8152;
+	    _8152._m0 = asfloat(uint3x4(g_transformBuffer.Load4(_22470._m1 * 48 + 0), g_transformBuffer.Load4(_22470._m1 * 48 + 16), g_transformBuffer.Load4(_22470._m1 * 48 + 32)));
+	    _1119 _19848;
+	    _19848._m0 = _8152._m0;
+	    float3 _11198 = normalize(mul(_19848._m0, float4(vTangentUOs_flTangentVSign.xyz, 0.0f)));
+	    float3 _12861 = mul(_19848._m0, float4(nInstanceIdx.xyz, 0.0f)).xyz;
 	    float3 _24912 = _11198.xyz;
-	    float3 _19938 = mul(_14817, float4(vPositionOs.xyz, 1.0f));
-	    float4 _23894 = mul(float4x4(float4(PerViewConstantBuffer_t_1_m0._m0[0].x, PerViewConstantBuffer_t_1_m0._m0[1].x, PerViewConstantBuffer_t_1_m0._m0[2].x, PerViewConstantBuffer_t_1_m0._m0[3].x), float4(PerViewConstantBuffer_t_1_m0._m0[0].y, PerViewConstantBuffer_t_1_m0._m0[1].y, PerViewConstantBuffer_t_1_m0._m0[2].y, PerViewConstantBuffer_t_1_m0._m0[3].y), float4(PerViewConstantBuffer_t_1_m0._m0[0].z, PerViewConstantBuffer_t_1_m0._m0[1].z, PerViewConstantBuffer_t_1_m0._m0[2].z, PerViewConstantBuffer_t_1_m0._m0[3].z), float4(PerViewConstantBuffer_t_1_m0._m0[0].w, PerViewConstantBuffer_t_1_m0._m0[1].w, PerViewConstantBuffer_t_1_m0._m0[2].w, PerViewConstantBuffer_t_1_m0._m0[3].w)), (float4(_19938.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m2 * 1.0f)).xyzw);
+	    float3 _19938 = mul(_19848._m0, float4(vTexCoord.xyz, 1.0f));
+	    float4 _18256 = mul(PerViewConstantBuffer_t_1_m0, (float4(_19938.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m2 * 1.0f)).xyzw);
 	    output_0 = _11198;
-	    output_1 = float4((vTexCoord.xy * _Globals_1_g_vTexCoordScale.xy) + _Globals_1_g_vTexCoordOffset.xy, ((vTexCoord.xy * _Globals_1_g_vNormalTexCoordScale.xy) * _Globals_1_g_vTexCoordScale.xy) + _Globals_1_g_vTexCoordOffset.xy);
+	    output_1 = float4((vNormalOs.xy * _Globals_1_g_vTexCoordScale.xy) + _Globals_1_g_vTexCoordOffset.xy, ((vNormalOs.xy * _Globals_1_g_vNormalTexCoordScale.xy) * _Globals_1_g_vTexCoordScale.xy) + _Globals_1_g_vTexCoordOffset.xy);
 	    output_2 = _19938;
 	    output_3 = float4(_21354, _21355, _19302, _23812.w);
-	    output_4 = float4(normalize(_12861 - (_24912 * dot(_12861, _24912))), vTangentUOs_flTangentVSign.w);
-	    _23894.y = -_23894.y;
-	    gl_Position = _23894;
+	    output_4 = float4(normalize(_12861 - (_24912 * dot(_12861, _24912))), nInstanceIdx.w);
+	    _18256.y = -_18256.y;
+	    gl_Position = _18256;
 	    gl_ClipDistance[0] = dot(float4(_19938.xyz, 1.0f), PerViewConstantBuffer_t_1_m1.xyzw);
 	}
 	
@@ -296,10 +318,13 @@ PS
 	RenderState(StencilPassOp, 2);
 	RenderState(StencilRef, 1);
 	RenderState(StencilWriteMask, 1);
-	cbuffer SunLightShaderParamsCB < Attribute("SunLightShaderParamsCB"); >;
+	cbuffer SunLightShaderParamsCB_t < Attribute("SunLightShaderParamsCB_t"); >;
+	float g_flCubeMapBlur < UiType(Slider); Expression((thisAmount*9)+1); >;
+	int g_nEnvMapIndex < Attribute("EnvMapIndex"); UiType(Slider); >;
 	Texture2D g_tColor < Channel(RGB, Box(TextureColor), Srgb); OutputFormat(DXT1); SrgbRead(true); >;
 	Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, PreserveCoverage(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
 	Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
+	TextureCubeArray g_tEnvLightProbes < Attribute("EnvMapArray"); SrgbRead(true); >;
 	Texture2D g_tMetalnessReflectanceFresnel < Channel(R, Box(TextureMetalness), Linear); Channel(G, Box(TextureReflectance), Linear); OutputFormat(DXT1); SrgbRead(false); >;
 	Texture2D g_tNormal < Channel(AG, MipNormal(TextureNormal), Linear); OutputFormat(DXT5); SrgbRead(false); >;
 	Texture2D g_tRoughness < Channel(RGBA, AnisoNormal(TextureNormal, TextureGlossiness), Linear); OutputFormat(DXT5); SrgbRead(false); >;
@@ -335,126 +360,137 @@ PS
 	float g_flAlphaTestReference < Default(0.5); Range(0.01, 0.99); UiType(Slider); UiGroup("Translucent"); >;
 	float g_flOpacityScale < Default(1); UiType(Slider); UiGroup("Translucent"); >;
 	
-	#if (S_RENDER_BACKFACES == 0)
-		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
-	#endif
+	// Cube Map
+	float g_flCubeMapBlurAmount < Default(1); Range(0, 2); UiType(Slider); UiGroup("Cube Map,40/30"); >;
+	
 	#if (S_TRANSLUCENT == 1)
-		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
-	#endif
-	#if (S_ALPHA_TEST == 0)
-		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
-	#endif
-	#if (S_MODE_TOOLS_WIREFRAME == 0)
-		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
-	#endif
-	#if (S_SPECULAR_CUBE_MAP == 0)
-		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
-	#endif
-	#if (S_UNLIT == 0)
 		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
 	#endif
 	#if (S_OVERLAY == 1)
 		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
 	#endif
+	#if (S_ALPHA_TEST == 0)
+		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
+	#endif
+	#if (S_UNLIT == 0)
+		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
+	#endif
+	#if (S_MODE_TOOLS_WIREFRAME == 0)
+		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
+	#endif
 	#if (S_TOOLS_ENABLED == 0)
 		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
 	#endif
-	
-	// SPIR-V reflection failed for backend HLSL:
-	// cbuffer ID 5618 (name: _Globals_), member index 1 (name: g_vColorTint) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
-	// Re-attempting reflection with the GLSL backend.
+	#if (S_RENDER_BACKFACES == 0)
+		Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
+	#endif
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (5912 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (5896 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	#version 460
+	static float3 _2;
+	static float4 _3;
 	
-	vec3 _2;
-	vec4 _3;
-	
-	struct _1077
+	cbuffer _Globals_ : register(b0, space1)
 	{
-	    float g_flBumpStrength;
-	    vec3 g_vColorTint;
-	    vec2 g_vRoughnessScaleAndBias;
+	    float _Globals_1_g_flBumpStrength : packoffset(c0.w);
+	    float3 _Globals_1_g_vColorTint : packoffset(c1);
+	    float2 _Globals_1_g_vRoughnessScaleAndBias : packoffset(c3.y);
 	};
 	
-	layout(set = 1) uniform _1077 _Globals_;
-	
-	struct _1017
+	cbuffer RoughnessLightingGlobalsCB_t : register(b3, space1)
 	{
-	    vec4 _m0;
+	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	layout(set = 1) uniform _1017 RoughnessLightingGlobalsCB_t;
-	
-	struct _1227
+	cbuffer PerViewConstantBuffer_t : register(b1, space1)
 	{
-	    float _m0;
-	    vec3 _m1;
-	    vec3 _m2;
-	    float _m3;
-	    float _m4;
-	    float _m5;
-	    float _m6;
+	    float PerViewConstantBuffer_t_1_m0 : packoffset(c18);
+	    float3 PerViewConstantBuffer_t_1_m1 : packoffset(c26);
+	    float3 PerViewConstantBuffer_t_1_m2 : packoffset(c31);
+	    float PerViewConstantBuffer_t_1_m3 : packoffset(c31.w);
+	    float PerViewConstantBuffer_t_1_m4 : packoffset(c32);
+	    float PerViewConstantBuffer_t_1_m5 : packoffset(c32.y);
+	    float PerViewConstantBuffer_t_1_m6 : packoffset(c32.z);
 	};
 	
-	layout(set = 1) uniform _1227 PerViewConstantBuffer_t;
-	
-	struct _1065
+	cbuffer SunLightShaderParamsCB_t : register(b4, space1)
 	{
-	    vec4 _m0;
-	    vec3 _m1;
+	    float3 SunLightShaderParamsCB_t_1_m0 : packoffset(c0);
+	    float3 SunLightShaderParamsCB_t_1_m1 : packoffset(c1);
 	};
 	
-	layout(set = 1) uniform _1065 SunLightShaderParamsCB;
+	Texture2D<float4> g_tColor : register(t32, space1);
+	SamplerState DefaultSamplerState_0 : register(s16, space1);
+	Texture2D<float4> g_tNormal : register(t33, space1);
+	Texture2D<float4> g_tRoughness : register(t34, space1);
 	
-	layout(set = 1, binding = 31) uniform texture2D g_tColor;
-	layout(set = 1, binding = 15) uniform sampler DefaultSamplerState_0;
-	layout(set = 1, binding = 32) uniform texture2D g_tNormal;
-	layout(set = 1, binding = 33) uniform texture2D g_tRoughness;
+	static float3 input_0;
+	static float4 input_1;
+	static float4 input_2;
+	static float4 input_3;
+	static float3 input_4;
+	static float4 output_0;
 	
-	layout(location = 0) in vec3 input_0;
-	layout(location = 1) in vec4 input_1;
-	layout(location = 3) in vec4 input_2;
-	layout(location = 4) in vec4 input_3;
-	layout(location = 2) in vec3 input_4;
-	layout(location = 0) out vec4 output_0;
-	
-	void main()
+	struct PS_INPUT
 	{
-	    vec2 _7707 = (texture(sampler2D(g_tNormal, DefaultSamplerState_0), input_1.zw).wy * 2.0) - vec2(1.0);
+	    float3 input_0 : TEXCOORD0;
+	    float4 input_1 : TEXCOORD1;
+	    float3 input_4 : TEXCOORD2;
+	    float4 input_2 : TEXCOORD3;
+	    float4 input_3 : TEXCOORD4;
+	};
+	
+	struct PS_OUTPUT
+	{
+	    float4 output_0 : SV_Target0;
+	};
+	
+	void MainPs_inner()
+	{
+	    float2 _7707 = (g_tNormal.Sample(DefaultSamplerState_0, input_1.zw).wy * 2.0f) - 1.0f.xx;
 	    float _9481 = _7707.x;
-	    vec3 _22101;
+	    float3 _22101;
 	    _22101.x = _9481;
 	    float _21775 = _7707.y;
 	    _22101.y = _21775;
-	    vec3 _19739 = vec3(_9481, _21775, sqrt(clamp(1.0 - dot(_22101.xy, _22101.xy), 0.0, 1.0)));
+	    float3 _19739 = float3(_9481, _21775, sqrt(clamp(1.0f - dot(_22101.xy, _22101.xy), 0.0f, 1.0f)));
 	    _19739.y = -_21775;
-	    vec3 _24157 = _19739.xyz;
-	    vec2 _11003 = _19739.xy * _Globals_.g_flBumpStrength;
+	    float3 _24157 = _19739.xyz;
+	    float2 _11003 = _19739.xy * _Globals_1_g_flBumpStrength;
 	    _24157.x = _11003.x;
 	    _24157.y = _11003.y;
-	    vec3 _23712 = normalize(_24157.xyz);
-	    vec4 _3401 = texture(sampler2D(g_tRoughness, DefaultSamplerState_0), input_1.xy);
-	    vec3 _14744 = normalize((((normalize(input_3.xyz).xyz * _23712.x).xyz + ((normalize(cross(normalize(input_0.xyz).xyz, input_3.xyz)) * input_3.w).xyz * _23712.y)).xyz + (input_0.xyz * _23712.z)).xyz).xyz;
-	    vec3 _23378 = saturate(_14744);
-	    vec3 _23904 = saturate(-_14744);
-	    float _7186 = (1.0 - min(1.0, ((((_3401.z + _3401.w) * 0.5) * _Globals_.g_vRoughnessScaleAndBias.x) + _Globals_.g_vRoughnessScaleAndBias.y) + ((_3401.x + _3401.y) * 0.5))) * 0.800000011920928955078125;
-	    vec3 _21103 = ((RoughnessLightingGlobalsCB_t._m0.xyz * (dot(vec3(0.60000002384185791015625, 0.4000000059604644775390625, 1.0), _23378 * _23378) + dot(vec3(0.60000002384185791015625, 0.4000000059604644775390625, 0.20000000298023223876953125), _23904 * _23904))).xyz + ((SunLightShaderParamsCB._m0.xyz * (pow(clamp(dot(_14744, SunLightShaderParamsCB._m1.xyz), 0.0, 1.0), _7186 + 0.60000002384185791015625) * ((_7186 + 1.60000002384185791015625) * 0.5))) * 1.0)).xyz * ((texture(sampler2D(g_tColor, DefaultSamplerState_0), input_1.xy).xyz * _Globals_.g_vColorTint.xyz) * input_2.xyz).xyz;
-	    vec4 _13888;
+	    float3 _23712 = normalize(_24157.xyz);
+	    float4 _3401 = g_tRoughness.Sample(DefaultSamplerState_0, input_1.xy);
+	    float3 _14744 = normalize((((normalize(input_3.xyz).xyz * _23712.x).xyz + ((normalize(cross(normalize(input_0.xyz).xyz, input_3.xyz)) * input_3.w).xyz * _23712.y)).xyz + (input_0.xyz * _23712.z)).xyz).xyz;
+	    float3 _23378 = clamp(_14744, 0.0f.xxx, 1.0f.xxx);
+	    float3 _23904 = clamp(-_14744, 0.0f.xxx, 1.0f.xxx);
+	    float _7186 = (1.0f - min(1.0f, ((((_3401.z + _3401.w) * 0.5f) * _Globals_1_g_vRoughnessScaleAndBias.x) + _Globals_1_g_vRoughnessScaleAndBias.y) + ((_3401.x + _3401.y) * 0.5f))) * 0.800000011920928955078125f;
+	    float3 _21103 = ((RoughnessLightingGlobalsCB_t_1_m0.xyz * (dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 1.0f), _23378 * _23378) + dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 0.20000000298023223876953125f), _23904 * _23904))).xyz + ((SunLightShaderParamsCB_t_1_m0.xyz * (pow(clamp(dot(_14744, SunLightShaderParamsCB_t_1_m1.xyz), 0.0f, 1.0f), _7186 + 0.60000002384185791015625f) * ((_7186 + 1.60000002384185791015625f) * 0.5f))) * 1.0f)).xyz * ((g_tColor.Sample(DefaultSamplerState_0, input_1.xy).xyz * _Globals_1_g_vColorTint.xyz) * input_2.xyz).xyz;
+	    float4 _13888;
 	    _13888.x = _21103.x;
 	    _13888.y = _21103.y;
 	    _13888.z = _21103.z;
-	    vec3 _19800 = mix(_13888.xyz, PerViewConstantBuffer_t._m2.xyz, vec3(clamp(min(PerViewConstantBuffer_t._m5, pow(clamp((distance(input_4.xyz, PerViewConstantBuffer_t._m1.xyz) * PerViewConstantBuffer_t._m4) + PerViewConstantBuffer_t._m3, 0.0, 1.0), PerViewConstantBuffer_t._m6)), 0.0, 1.0)));
-	    vec4 _17842;
+	    float3 _19800 = lerp(_13888.xyz, PerViewConstantBuffer_t_1_m2.xyz, clamp(min(PerViewConstantBuffer_t_1_m5, pow(clamp((distance(input_4.xyz, PerViewConstantBuffer_t_1_m1.xyz) * PerViewConstantBuffer_t_1_m4) + PerViewConstantBuffer_t_1_m3, 0.0f, 1.0f), PerViewConstantBuffer_t_1_m6)), 0.0f, 1.0f).xxx);
+	    float4 _17842;
 	    _17842.x = _19800.x;
 	    _17842.y = _19800.y;
 	    _17842.z = _19800.z;
-	    output_0 = vec4(_17842.xyz * PerViewConstantBuffer_t._m0, 1.0);
+	    output_0 = float4(_17842.xyz * PerViewConstantBuffer_t_1_m0, 1.0f);
 	}
 	
+	PS_OUTPUT MainPs(PS_INPUT stage_input)
+	{
+	    input_0 = stage_input.input_0;
+	    input_1 = stage_input.input_1;
+	    input_2 = stage_input.input_2;
+	    input_3 = stage_input.input_3;
+	    input_4 = stage_input.input_4;
+	    MainPs_inner();
+	    PS_OUTPUT stage_output;
+	    stage_output.output_0 = output_0;
+	    return stage_output;
+	}
 	
 	// ---------  SPIRV -> HLSL end  --------- 
 	
@@ -483,44 +519,34 @@ PS
 	#if (S_TRANSLUCENT == 1)
 		BoolAttribute(translucent, true);
 	#endif
-	#if (S_UNLIT == 0)
-		BoolAttribute(translucent, true);
-		BoolAttribute(overlay, true);
-	#endif
-	#if (S_TRANSLUCENT == 0)
-		TextureAttribute(LightSim_SelfIllumMaskTexture, g_tSelfIllumMask);
-		Float3Attribute(LightSim_SelfIllumTint, g_vSelfIllumTint);
-		FloatAttribute(LightSim_SelfIllumScale, g_flSelfIllumScale);
-		BoolAttribute(ForwardLayerOnly, true);
-		BoolAttribute(mapbuilder_donotcollapse, true);
-	#endif
-	#if (S_SELF_ILLUM == 0)
-		BoolAttribute(translucent, true);
+	#if (S_SPECULAR_CUBE_MAP == 1)
+		BoolAttribute(environmentmapped, true);
 	#endif
 	#if (S_SPECULAR_CUBE_MAP == 0)
 		BoolAttribute(translucent, true);
 		BoolAttribute(overlay, true);
 	#endif
-	#if (S_MODE_TOOLS_WIREFRAME == 0)
-		BoolAttribute(translucent, true);
-		BoolAttribute(overlay, true);
-	#endif
-	#if (S_OVERLAY == 0)
-		TextureAttribute(LightSim_SelfIllumMaskTexture, g_tSelfIllumMask);
-		Float3Attribute(LightSim_SelfIllumTint, g_vSelfIllumTint);
-		FloatAttribute(LightSim_SelfIllumScale, g_flSelfIllumScale);
-		BoolAttribute(ForwardLayerOnly, true);
-		BoolAttribute(mapbuilder_donotcollapse, true);
-	#endif
 	#if (S_OVERLAY == 1)
 		BoolAttribute(translucent, true);
 		BoolAttribute(overlay, true);
 	#endif
-	#if (S_RENDER_BACKFACES == 0)
+	#if (S_SELF_ILLUM == 0)
+		BoolAttribute(translucent, true);
+		BoolAttribute(overlay, true);
+	#endif
+	#if (S_UNLIT == 0)
 		BoolAttribute(translucent, true);
 		BoolAttribute(overlay, true);
 	#endif
 	#if (S_TOOLS_ENABLED == 0)
+		BoolAttribute(translucent, true);
+		BoolAttribute(overlay, true);
+	#endif
+	#if (S_SPECULAR == 1)
+		BoolAttribute(translucent, true);
+		BoolAttribute(overlay, true);
+	#endif
+	#if (S_MODE_TOOLS_WIREFRAME == 0)
 		BoolAttribute(translucent, true);
 		BoolAttribute(overlay, true);
 	#endif
@@ -531,8 +557,35 @@ PS
 		BoolAttribute(ForwardLayerOnly, true);
 		BoolAttribute(mapbuilder_donotcollapse, true);
 	#endif
+	#if (S_OVERLAY == 0)
+		TextureAttribute(LightSim_SelfIllumMaskTexture, g_tSelfIllumMask);
+		Float3Attribute(LightSim_SelfIllumTint, g_vSelfIllumTint);
+		FloatAttribute(LightSim_SelfIllumScale, g_flSelfIllumScale);
+		BoolAttribute(ForwardLayerOnly, true);
+		BoolAttribute(mapbuilder_donotcollapse, true);
+	#endif
+	#if (S_TRANSLUCENT == 0)
+		TextureAttribute(LightSim_SelfIllumMaskTexture, g_tSelfIllumMask);
+		Float3Attribute(LightSim_SelfIllumTint, g_vSelfIllumTint);
+		FloatAttribute(LightSim_SelfIllumScale, g_flSelfIllumScale);
+		BoolAttribute(ForwardLayerOnly, true);
+		BoolAttribute(mapbuilder_donotcollapse, true);
+	#endif
+	#if (S_RENDER_BACKFACES == 0)
+		BoolAttribute(translucent, true);
+		BoolAttribute(overlay, true);
+	#endif
 	#if (S_ALPHA_TEST == 0)
 		BoolAttribute(translucent, true);
+		BoolAttribute(overlay, true);
+	#endif
+	#if (S_SPECULAR == 0)
+		TextureAttribute(LightSim_SelfIllumMaskTexture, g_tSelfIllumMask);
+		Float3Attribute(LightSim_SelfIllumTint, g_vSelfIllumTint);
+		FloatAttribute(LightSim_SelfIllumScale, g_flSelfIllumScale);
+		BoolAttribute(translucent, true);
+		BoolAttribute(ForwardLayerOnly, true);
+		BoolAttribute(mapbuilder_donotcollapse, true);
 		BoolAttribute(overlay, true);
 	#endif
 }

@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_41
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -48,13 +48,13 @@ VS
 	cbuffer GrassParamsPerQuadSlice_t < Attribute("GrassParamsPerQuadSlice_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	cbuffer RoughnessLightingGlobalsCB_t < Attribute("RoughnessLightingGlobalsCB_t"); >;
-	cbuffer SunLightShaderParamsCB < Attribute("SunLightShaderParamsCB"); >;
-	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
+	cbuffer SunLightShaderParamsCB_t < Attribute("SunLightShaderParamsCB_t"); >;
+	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); >;
 	Texture2D g_tDensityArray < Attribute("DensityArray"); SrgbRead(false); >;
 	Texture2D g_tHeightArray < Attribute("HeightArray"); SrgbRead(false); >;
 	Texture2D g_tSkewBrightness < Attribute("SkewBrightness"); SrgbRead(false); >;
 	Texture2D g_tTintArray < Attribute("TintArray"); SrgbRead(false); >;
-	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); >;
 	float3 g_vFadeParams < Default3(1000, 1500, 1); Attribute("FadeParams"); UiType(VectorText); >;
 	float3 g_vWindDir < Default2(0.707, 0.707); Attribute("WindDir"); UiType(VectorText); >;
 	float3 g_vWindOffset < Default3(0.25, 0.2, 0.21); Attribute("WindOffset"); UiType(VectorText); >;
@@ -62,11 +62,11 @@ VS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 2 (name: g_vWindDir) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (9776 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (9200 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
@@ -82,24 +82,31 @@ VS
 	    float _m7;
 	};
 	
-	struct _1654
+	struct _1119
 	{
-	    vec4 _m0[3];
+	    mat3x4 _m0;
 	};
 	
-	struct _1256
+	struct _1126
 	{
-	    _1654 _m0;
+	    uint _m0;
+	    uint _m1;
+	    uint _m2;
+	    uint _m3;
+	    uint _m4;
+	    uint _m5;
+	    uint _m6;
+	    float _m7;
 	};
 	
-	struct _533
+	struct _1120
+	{
+	    mat3x4 _m0;
+	};
+	
+	struct _113
 	{
 	    vec4 _m0[8];
-	};
-	
-	struct _1780
-	{
-	    vec4 _m0[4];
 	};
 	
 	vec3 _3;
@@ -108,24 +115,24 @@ VS
 	
 	layout(set = 0, binding = 32, std430) readonly buffer g_instanceBuffer
 	{
-	    _1125 _m0[];
+	    _1126 _m0[];
 	} g_instanceBuffer_1;
 	
 	layout(set = 0, binding = 30, std430) readonly buffer g_transformBuffer
 	{
-	    _1256 _m0[];
+	    _1120 _m0[];
 	} g_transformBuffer_1;
 	
-	struct _2442
+	struct _64
 	{
-	    _533 _m0;
-	    _533 _m1;
-	    _533 _m2;
-	    _533 _m3;
-	    _533 _m4;
+	    _113 _m0;
+	    _113 _m1;
+	    _113 _m2;
+	    _113 _m3;
+	    _113 _m4;
 	};
 	
-	layout(set = 0) uniform _2442 GrassParamsPerQuadSlice_t;
+	layout(set = 0) uniform _64 GrassParamsPerQuadSlice_t;
 	
 	struct _1209
 	{
@@ -137,14 +144,14 @@ VS
 	
 	layout(set = 0) uniform _1209 _Globals_;
 	
-	struct _1635
+	struct _1288
 	{
-	    _1780 _m0;
+	    mat4 _m0;
 	    vec4 _m1;
 	    vec3 _m2;
 	};
 	
-	layout(set = 0) uniform _1635 PerViewConstantBuffer_t;
+	layout(set = 0) uniform _1288 PerViewConstantBuffer_t;
 	
 	layout(set = 0, binding = 35) uniform texture2D g_tDensityArray;
 	layout(set = 0, binding = 14) uniform sampler AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear;
@@ -168,7 +175,18 @@ VS
 	
 	void main()
 	{
-	    vec4 _10881 = fract(vSide_Top_Right.xyzw + (saturate(vSide_Top_Right.xyzw * 1000000.0) * ((g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[0].w * 0.013698630034923553466796875) + (g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[1].w * 0.005181347019970417022705078125))));
+	    _1125 _19924;
+	    _19924._m0 = g_instanceBuffer_1._m0[vDensityMask]._m0;
+	    _19924._m1 = g_instanceBuffer_1._m0[vDensityMask]._m1;
+	    _19924._m2 = g_instanceBuffer_1._m0[vDensityMask]._m2;
+	    _19924._m3 = g_instanceBuffer_1._m0[vDensityMask]._m3;
+	    _19924._m4 = g_instanceBuffer_1._m0[vDensityMask]._m4;
+	    _19924._m5 = g_instanceBuffer_1._m0[vDensityMask]._m5;
+	    _19924._m6 = g_instanceBuffer_1._m0[vDensityMask]._m6;
+	    _19924._m7 = g_instanceBuffer_1._m0[vDensityMask]._m7;
+	    _1119 _20228;
+	    _20228._m0 = g_transformBuffer_1._m0[_19924._m1]._m0;
+	    vec4 _10881 = fract(vSide_Top_Right.xyzw + (saturate(vSide_Top_Right.xyzw * 1000000.0) * ((_20228._m0[0].w * 0.013698630034923553466796875) + (_20228._m0[1].w * 0.005181347019970417022705078125))));
 	    float _21853 = abs(nInstanceIdx.x);
 	    vec2 _10547 = (vUStart_VStart_UVScale_GrassQuadU.xy + (vec2(_21853, nInstanceIdx.y) * vUStart_VStart_UVScale_GrassQuadU.z)).xy;
 	    vec4 _10799 = textureLod(sampler2D(g_tHeightArray, AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear_1), _10547, 0.0);
@@ -186,25 +204,26 @@ VS
 	    int _18779 = int(vUStart_VStart_UVScale_GrassQuadU.w);
 	    vec4 _7832 = saturate(_13292);
 	    float _15699 = dot(mix(GrassParamsPerQuadSlice_t._m1._m0[_18779], GrassParamsPerQuadSlice_t._m2._m0[_18779], vec4(vPositionOs.y)), _7832) * _14802;
-	    vec3 _13005 = ((vec3(_22101.xy, 0.0) * mat3(g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[0].xyz, g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[1].xyz, g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[2].xyz)).xyz * _Globals_.g_vFadeParams.z).xyz;
+	    vec3 _13005 = ((vec3(_22101.xy, 0.0) * mat3(_20228._m0[0].xyz, _20228._m0[1].xyz, _20228._m0[2].xyz)).xyz * _Globals_.g_vFadeParams.z).xyz;
 	    float _11300 = length(_13005);
 	    vec3 _18636 = vec3(_11300);
+	    vec2 _13842 = vec3(256.0 * (_21853 - 0.5), 256.0 * (nInstanceIdx.y - 0.5), _17919).xy + ((_24823.xy * (0.5 * _24664.x)) * (dot(GrassParamsPerQuadSlice_t._m0._m0[_18779], _7832) * _14802));
 	    float _6967 = dot(vec4(0.0, 1.0, 2.0, 3.0), _7832);
 	    float _23131 = vUStart_VStart_UVScale_GrassQuadU.w * 0.125;
 	    vec2 _10633;
 	    if ((float(int(sign(nInstanceIdx.x))) * (dot(GrassParamsPerQuadSlice_t._m4._m0[_18779], _7832) * _14802)) > 0.0)
 	    {
-	        vec2 _10181;
-	        _10181.x = _23131 + (((1.0 - vPositionOs.x) + _6967) * 0.03125);
-	        _10633 = _10181;
+	        vec2 _10180;
+	        _10180.x = _23131 + (((1.0 - vPositionOs.x) + _6967) * 0.03125);
+	        _10633 = _10180;
 	    }
 	    else
 	    {
-	        vec2 _10180;
-	        _10180.x = _23131 + ((vPositionOs.x + _6967) * 0.03125);
-	        _10633 = _10180;
+	        vec2 _10181;
+	        _10181.x = _23131 + ((vPositionOs.x + _6967) * 0.03125);
+	        _10633 = _10181;
 	    }
-	    vec3 _13631 = (vec4(vec3(vec3(256.0 * (_21853 - 0.5), 256.0 * (nInstanceIdx.y - 0.5), _17919).xy + ((_24823.xy * (0.5 * _24664.x)) * (dot(GrassParamsPerQuadSlice_t._m0._m0[_18779], _7832) * _14802)), _17919 + ((_18203 * _15699) * (1.0 - _11300))).xyz, 1.0) * mat3x4(g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[0], g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[1], g_transformBuffer_1._m0[g_instanceBuffer_1._m0[vDensityMask]._m1]._m0._m0[2])).xyz;
+	    vec3 _13631 = (vec4(vec3(_13842, _17919 + ((_18203 * _15699) * (1.0 - _11300))).xyz, 1.0) * _20228._m0).xyz;
 	    vec3 _6344 = _13631;
 	    _6344.z = 0.0;
 	    vec3 _7692 = (_6344.xyz * _Globals_.g_vWindStrengthFreqMulHighStrength.yyy) + _Globals_.g_vWindOffset.xyz;
@@ -216,14 +235,14 @@ VS
 	    vec4 _21368 = abs((fract((fract(vec4(_20211, _7692.yz, dot(_20488.xyz, vec3(1.0))).xyzw * vec4(0.5, 1.0, 0.5, 1.5)) * 2.0) + vec4(-0.5)) * 2.0) - vec4(1.0));
 	    vec3 _9428 = mix((_Globals_.g_vWindDir * (dot((((_21368 * _21368) * (vec4(3.0) - (_21368 * 2.0))) * vec4(1.0, 0.5, 0.25, 0.0500000007450580596923828125)).xyzw, vec4(1.0)) * _Globals_.g_vWindStrengthFreqMulHighStrength.x)) * (dot(GrassParamsPerQuadSlice_t._m3._m0[_18779], _7832) * _14802), (_13005 / _18636).xyz, _18636) * _18203;
 	    vec3 _15100 = _13631 + (_9428 * _15699);
-	    vec4 _23552 = (vec4(_15100.xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
+	    vec4 _17914 = (vec4(_15100.xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * PerViewConstantBuffer_t._m0;
 	    output_0 = _15100;
 	    output_1 = mix(cross(vec3(0.0, 0.0, 1.0), _24823).xyz, (vec3(0.0, 0.0, 1.0) + _9428.xyz).xyz, vec3(0.800000011920928955078125));
 	    output_2 = vec2(_10633.x, 1.0 - _18203);
 	    output_3 = vec3(textureLod(sampler2D(g_tTintArray, AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear_3), _10547, 0.0).xyz);
 	    output_4 = vec3(_12684.z, 1.0 - clamp((length((_13631 - PerViewConstantBuffer_t._m2).xyz) - _Globals_.g_vFadeParams.x) / _Globals_.g_vFadeParams.y, 0.0, 1.0), 0.0);
-	    _23552.y = -_23552.y;
-	    gl_Position = _23552;
+	    _17914.y = -_17914.y;
+	    gl_Position = _17914;
 	}
 	
 	
@@ -244,22 +263,22 @@ PS
 	
 	RenderState(DepthEnable, exists(ATTRIBUTE[e75c960c]) ? ATTRIBUTE[e75c960c] : True);
 	cbuffer RoughnessLightingGlobalsCB_t < Attribute("RoughnessLightingGlobalsCB_t"); >;
-	cbuffer SunLightShaderParamsCB < Attribute("SunLightShaderParamsCB"); >;
+	cbuffer SunLightShaderParamsCB_t < Attribute("SunLightShaderParamsCB_t"); >;
 	float g_flAlphaTestThreshold < Default(0.3); UiType(Slider); >;
 	Texture2D g_tGrassQuadArray < Attribute("GrassQuadArray"); SrgbRead(true); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2736 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2752 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	cbuffer RoughnessLightingGlobalsCB_t : register(b3, space1)
 	{
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b4, space1)
+	cbuffer SunLightShaderParamsCB_t : register(b4, space1)
 	{
-	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
-	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);
+	    float3 SunLightShaderParamsCB_t_1_m0 : packoffset(c0);
+	    float3 SunLightShaderParamsCB_t_1_m1 : packoffset(c1);
 	};
 	
 	Texture2D<float4> g_tGrassQuadArray : register(t31, space1);
@@ -291,7 +310,7 @@ PS
 	    float3 _14744 = normalize(input_0.xyz).xyz;
 	    float3 _23378 = clamp(_14744, 0.0f.xxx, 1.0f.xxx);
 	    float3 _23904 = clamp(-_14744, 0.0f.xxx, 1.0f.xxx);
-	    output_0 = float4(float4(((_19372.xyz * input_2.xyz) * lerp(0.0f.xxx, 1.0f.xxx, (clamp(input_3.x, 0.0f, 0.699999988079071044921875f) * 1.4285714626312255859375f).xxx).xyz) * input_3.x, _14493).xyz * ((RoughnessLightingGlobalsCB_t_1_m0.xyz * (dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 1.0f), _23378 * _23378) + dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 0.20000000298023223876953125f), _23904 * _23904))).xyz + ((SunLightShaderParamsCB_1_m0.xyz * (pow(clamp(dot(_14744, SunLightShaderParamsCB_1_m1.xyz), 0.0f, 1.0f), 0.60000002384185791015625f) * 0.800000011920928955078125f)) * 1.0f)).xyz, _14493);
+	    output_0 = float4(float4(((_19372.xyz * input_2.xyz) * lerp(0.0f.xxx, 1.0f.xxx, (clamp(input_3.x, 0.0f, 0.699999988079071044921875f) * 1.4285714626312255859375f).xxx).xyz) * input_3.x, _14493).xyz * ((RoughnessLightingGlobalsCB_t_1_m0.xyz * (dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 1.0f), _23378 * _23378) + dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 0.20000000298023223876953125f), _23904 * _23904))).xyz + ((SunLightShaderParamsCB_t_1_m0.xyz * (pow(clamp(dot(_14744, SunLightShaderParamsCB_t_1_m1.xyz), 0.0f, 1.0f), 0.60000002384185791015625f) * 0.800000011920928955078125f)) * 1.0f)).xyz, _14493);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

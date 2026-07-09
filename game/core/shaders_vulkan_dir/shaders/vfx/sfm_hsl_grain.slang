@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -178,10 +178,10 @@ PS
 	    float3 _22743;
 	    if (_Globals_1_g_flSatNoiseScale != 0.0f)
 	    {
-	        float _14703 = _Globals_1_g_flHueNoiseScale * 6.0f;
-	        float _23729 = floor(_14703);
+	        float _12281 = _Globals_1_g_flHueNoiseScale * 6.0f;
+	        float _23729 = floor(_12281);
 	        float _15688 = _8572 * (1.0f - _Globals_1_g_flSatNoiseScale);
-	        float _17993 = _14703 - _23729;
+	        float _17993 = _12281 - _23729;
 	        float _10560 = _8572 * (1.0f - (_Globals_1_g_flSatNoiseScale * _17993));
 	        float _23319 = _8572 * (1.0f - (_Globals_1_g_flSatNoiseScale * (1.0f - _17993)));
 	        float3 _12505;

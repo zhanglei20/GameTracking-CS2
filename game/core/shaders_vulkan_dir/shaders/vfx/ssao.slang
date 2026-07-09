@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -101,20 +101,15 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 3 (name: g_vInvRenderTargetDim) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (7220 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (6632 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
-	struct _2116
-	{
-	    vec4 _m0[4];
-	};
-	
-	const vec3 _1277[9] = vec3[](vec3(0.13390399515628814697265625, 0.0365430004894733428955078125, 0.049350000917911529541015625), vec3(-0.12978200614452362060546875, -0.0326079986989498138427734375, 0.098058998584747314453125), vec3(-0.1944600045680999755859375, -0.4137530028820037841796875, 0.8764560222625732421875), vec3(-0.0387840010225772857666015625, 0.43998301029205322265625, 0.0596049986779689788818359375), vec3(-0.118508003652095794677734375, 0.001674000057391822338104248046875, -0.011568999849259853363037109375), vec3(0.0038580000400543212890625, -0.00258699990808963775634765625, -0.00047200001426972448825836181640625), vec3(0.007021999917924404144287109375, 0.000399000011384487152099609375, -0.0054720002226531505584716796875), vec3(-0.16810800135135650634765625, -0.2530579864978790283203125, -0.224711000919342041015625), vec3(0.0112229995429515838623046875, -0.254115998744964599609375, -0.4668669998645782470703125));
+	const vec3 _1213[9] = vec3[](vec3(0.13390399515628814697265625, 0.0365430004894733428955078125, 0.049350000917911529541015625), vec3(-0.12978200614452362060546875, -0.0326079986989498138427734375, 0.098058998584747314453125), vec3(-0.1944600045680999755859375, -0.4137530028820037841796875, 0.8764560222625732421875), vec3(-0.0387840010225772857666015625, 0.43998301029205322265625, 0.0596049986779689788818359375), vec3(-0.118508003652095794677734375, 0.001674000057391822338104248046875, -0.011568999849259853363037109375), vec3(0.0038580000400543212890625, -0.00258699990808963775634765625, -0.00047200001426972448825836181640625), vec3(0.007021999917924404144287109375, 0.000399000011384487152099609375, -0.0054720002226531505584716796875), vec3(-0.16810800135135650634765625, -0.2530579864978790283203125, -0.224711000919342041015625), vec3(0.0112229995429515838623046875, -0.254115998744964599609375, -0.4668669998645782470703125));
 	
 	struct _1283
 	{
@@ -127,14 +122,14 @@ PS
 	
 	layout(set = 1) uniform _1283 _Globals_;
 	
-	struct _2307
+	struct _1288
 	{
-	    _2116 _m0;
+	    mat4 _m0;
 	    vec4 _m1;
 	    vec3 _m2;
 	};
 	
-	layout(set = 1) uniform _2307 PerViewConstantBuffer_t;
+	layout(set = 1) uniform _1288 PerViewConstantBuffer_t;
 	
 	layout(set = 1, binding = 31) uniform texture2D g_tGBufferLinearDepth;
 	layout(set = 1, binding = 15) uniform sampler AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipPoint;
@@ -165,7 +160,7 @@ PS
 	    float _20688 = _Globals_.g_flSampleRadius * _Globals_.g_flSampleRadius;
 	    float _13155;
 	    _13155 = 0.0;
-	    float _3304;
+	    float _9828;
 	    int _14722;
 	    int _16208 = 0;
 	    for (;;)
@@ -174,7 +169,7 @@ PS
 	        {
 	            break;
 	        }
-	        vec3 _13945 = reflect((_1277[_16208] * _Globals_.g_flSampleRadius).xyz, _15145.xyz);
+	        vec3 _13945 = reflect((_1213[_16208] * _Globals_.g_flSampleRadius).xyz, _15145.xyz);
 	        vec3 _22410 = _13945.xyz;
 	        vec3 _19629;
 	        if (dot(_24081, _22410) < 0.0)
@@ -187,15 +182,15 @@ PS
 	        }
 	        vec3 _21589 = _12200.xyz;
 	        vec3 _16060 = _19629.xyz + _21589;
-	        vec4 _24259 = (vec4(_16060.xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	        vec4 _3402 = textureLodOffset(sampler2D(g_tGBufferLinearDepth, AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipPoint), clamp(((_23080.xy * (_24259.xy / vec2(_24259.w)).xy) + _20508.xy).xy, _Globals_.g_vRelativeViewport.xy, _Globals_.g_vRelativeViewport.zw).xy, 0.0, ivec2(0));
+	        vec4 _18621 = (vec4(_16060.xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * PerViewConstantBuffer_t._m0;
+	        vec4 _3402 = textureLodOffset(sampler2D(g_tGBufferLinearDepth, AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipPoint), clamp(((_23080.xy * (_18621.xy / vec2(_18621.w)).xy) + _20508.xy).xy, _Globals_.g_vRelativeViewport.xy, _Globals_.g_vRelativeViewport.zw).xy, 0.0, ivec2(0));
 	        float _5202 = _3402.x;
 	        vec3 _17519 = _16060.xyz - PerViewConstantBuffer_t._m2.xyz;
 	        float _15544 = length(_17519.xyz);
 	        vec3 _6560 = ((PerViewConstantBuffer_t._m2.xyz + ((_17519 / vec3(_15544)).xyz * _5202)).xyz - _21589).xyz;
-	        _3304 = _13155 + (clamp((_20688 - dot(_6560, _6560)) * 1000000.0, 0.0, 1.0) * clamp((_15544 - _5202) * 1000000.0, 0.0, 1.0));
+	        _9828 = _13155 + (clamp((_20688 - dot(_6560, _6560)) * 1000000.0, 0.0, 1.0) * clamp((_15544 - _5202) * 1000000.0, 0.0, 1.0));
 	        _14722 = _16208 + 1;
-	        _13155 = _3304;
+	        _13155 = _9828;
 	        _16208 = _14722;
 	        continue;
 	    }

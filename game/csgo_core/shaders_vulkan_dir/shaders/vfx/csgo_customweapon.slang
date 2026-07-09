@@ -7,7 +7,7 @@ HEADER
 	DevShader = false;
 	Version = 7;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -291,7 +291,7 @@ VS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 0 (name: g_vPatternTexCoordXform0) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
@@ -1114,13 +1114,25 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 4 (name: g_vColor2) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (7356 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (7360 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
+	#if defined(GL_EXT_control_flow_attributes)
+	#extension GL_EXT_control_flow_attributes : require
+	#define SPIRV_CROSS_FLATTEN [[flatten]]
+	#define SPIRV_CROSS_BRANCH [[dont_flatten]]
+	#define SPIRV_CROSS_UNROLL [[unroll]]
+	#define SPIRV_CROSS_LOOP [[dont_unroll]]
+	#else
+	#define SPIRV_CROSS_FLATTEN
+	#define SPIRV_CROSS_BRANCH
+	#define SPIRV_CROSS_UNROLL
+	#define SPIRV_CROSS_LOOP
+	#endif
 	
 	struct _2733
 	{
@@ -1172,13 +1184,13 @@ PS
 	    vec4 _9437 = texture(sampler2D(g_tGrunge, g_sTrilinearWrap), input_1.zw);
 	    vec4 _16529 = mix(vec4(1.0), _9437, vec4((pow(1.0 - _4306, 4.0) * 0.25) + (0.75 * _Globals_.g_flWearAmount)));
 	    float _7177 = mix(mix(mix(_Globals_.g_vPaintMetalness.x, _Globals_.g_vPaintMetalness.y, _7656), _Globals_.g_vPaintMetalness.z, _11437), _Globals_.g_vPaintMetalness.w, _12425);
-	    bool _14874 = _Globals_.bRoughnessMode != 0;
-	    vec4 _7424;
-	    if (_14874)
+	    vec4 _7078;
+	    if (_Globals_.bRoughnessMode != 0)
 	    {
 	        vec4 _19391 = texture(sampler2D(g_tMetalness, g_sTrilinearClamp), input_0.xy);
 	        _19391.x = _19391.x;
 	        float _20271;
+	        SPIRV_CROSS_BRANCH
 	        if (_Globals_.g_bRoughnessPerColor != 0)
 	        {
 	            _20271 = mix(mix(mix(_Globals_.g_vPaintRoughness.x, _Globals_.g_vPaintRoughness.y, _7656), _Globals_.g_vPaintRoughness.z, _11437), _Globals_.g_vPaintRoughness.w, _12425);
@@ -1222,14 +1234,14 @@ PS
 	        }
 	        vec4 _17156 = vec4(_21354, _23035, _10938, min(1.0, _Globals_.g_flPearlescentScale));
 	        _17156.z = _19513;
-	        _7424 = _17156;
+	        _7078 = _17156;
 	    }
 	    else
 	    {
-	        _7424 = vec4(input_0.xy, 0.0, 1.0);
+	        _7078 = vec4(input_0.xy, 0.0, 1.0);
 	    }
 	    vec4 _22401;
-	    if (!_14874)
+	    if (_Globals_.bRoughnessMode == 0)
 	    {
 	        vec3 _13063 = mix(mix(mix(_Globals_.g_vColor0, _Globals_.g_vColor1, vec3(_7656)), _Globals_.g_vColor2, vec3(_11437)), _Globals_.g_vColor3, vec3(_12425));
 	        vec3 _21103 = _13063.xyz * _16529.xyz;
@@ -1240,7 +1252,7 @@ PS
 	    }
 	    else
 	    {
-	        _22401 = _7424;
+	        _22401 = _7078;
 	    }
 	    vec4 _3401 = texture(sampler2D(g_tGlitterNormal, g_sTrilinearWrap), input_0.xy);
 	    vec4 _6805;

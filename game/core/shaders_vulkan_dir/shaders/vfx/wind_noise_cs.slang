@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -34,8 +34,8 @@ CS
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
 	
 	// SPIR-V reflection failed for backend HLSL:
-	// cbuffer ID 3246 (name: _Globals_), member index 0 (name: _m0) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	// cbuffer ID 3246 (name: WindControllerConstantBuffer_t), member index 0 (name: _m0) cannot be expressed with either HLSL packing layout or packoffset.
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
@@ -60,7 +60,7 @@ CS
 	    float _m6;
 	};
 	
-	layout(set = 0) uniform _117 _Globals_;
+	layout(set = 0) uniform _117 WindControllerConstantBuffer_t;
 	
 	layout(set = 0, binding = 158) uniform writeonly image3D _4363;
 	
@@ -70,13 +70,13 @@ CS
 	    uint _13039 = 0u;
 	    for (;;)
 	    {
-	        if (!(_13039 < _Globals_._m0._m0))
+	        if (!(_13039 < WindControllerConstantBuffer_t._m0._m0))
 	        {
 	            break;
 	        }
 	        float _17644 = float(_13039);
-	        vec2 _4678 = _Globals_._m1 + ((vec2(gl_GlobalInvocationID.xy) * _Globals_._m2) * exp2(_Globals_._m4 * _17644));
-	        float _3269 = (_Globals_._m3 * exp2(_Globals_._m5 * _17644)) + (_Globals_._m6 * _17644);
+	        vec2 _4678 = WindControllerConstantBuffer_t._m1 + ((vec2(gl_GlobalInvocationID.xy) * WindControllerConstantBuffer_t._m2) * exp2(WindControllerConstantBuffer_t._m4 * _17644));
+	        float _3269 = (WindControllerConstantBuffer_t._m3 * exp2(WindControllerConstantBuffer_t._m5 * _17644)) + (WindControllerConstantBuffer_t._m6 * _17644);
 	        vec3 _8570 = vec3(_4678, _3269);
 	        vec3 _12135 = _8570 * mat3(vec3(0.0, 1.0, 1.0), vec3(1.0, 0.0, 1.0), vec3(1.0, 1.0, 0.0));
 	        vec3 _16879 = floor(_12135);

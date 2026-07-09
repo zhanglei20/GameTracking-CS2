@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 1;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -43,16 +43,11 @@ VS
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2420 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1816 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _2649
 	{
 	    float4 _m0[16];
-	};
-	
-	struct _2242
-	{
-	    float4 _m0[4];
 	};
 	
 	cbuffer SmokeConstantBaseBuffer_t : register(b2, space0)
@@ -61,10 +56,10 @@ VS
 	    _2649 SmokeConstantBaseBuffer_t_1_m1 : packoffset(c16);
 	};
 	
-	cbuffer _Globals_ : register(b0, space0)
+	cbuffer PerViewConstantBuffer_t : register(b0, space0)
 	{
-	    _2242 _Globals_1_m0 : packoffset(c0);
-	    float4 _Globals_1_m1 : packoffset(c24);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
 	};
 	
 	
@@ -98,9 +93,9 @@ VS
 	{
 	    uint _24589 = uint(gl_InstanceIndex - gl_BaseInstanceARB);
 	    float3 _18555 = lerp(SmokeConstantBaseBuffer_t_1_m0._m0[_24589].xyz, SmokeConstantBaseBuffer_t_1_m1._m0[_24589].xyz, vPositionOs.xyz + 0.5f.xxx);
-	    float4 _24787 = mul(float4x4(float4(_Globals_1_m0._m0[0].x, _Globals_1_m0._m0[1].x, _Globals_1_m0._m0[2].x, _Globals_1_m0._m0[3].x), float4(_Globals_1_m0._m0[0].y, _Globals_1_m0._m0[1].y, _Globals_1_m0._m0[2].y, _Globals_1_m0._m0[3].y), float4(_Globals_1_m0._m0[0].z, _Globals_1_m0._m0[1].z, _Globals_1_m0._m0[2].z, _Globals_1_m0._m0[3].z), float4(_Globals_1_m0._m0[0].w, _Globals_1_m0._m0[1].w, _Globals_1_m0._m0[2].w, _Globals_1_m0._m0[3].w)), (float4(_18555.xyz, 1.0f) + (_Globals_1_m1 * 1.0f)).xyzw);
-	    _24787.y = -_24787.y;
-	    gl_Position = _24787;
+	    float4 _19149 = mul(PerViewConstantBuffer_t_1_m0, (float4(_18555.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m1 * 1.0f)).xyzw);
+	    _19149.y = -_19149.y;
+	    gl_Position = _19149;
 	    output_0 = _18555;
 	    output_1 = _24589;
 	}

@@ -7,7 +7,7 @@ HEADER
 	DevShader = false;
 	Version = 2;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -54,9 +54,9 @@ VS
 	
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
-	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); >;
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
-	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); >;
 	
 	// Texture Transform
 	float g_flTexCoordRotation < Range(0, 360); UiType(Slider); UiGroup("Texture Transform"); >;
@@ -71,11 +71,11 @@ VS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 1 (name: g_vTexCoordOffset) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (4724 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (4004 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
@@ -91,38 +91,45 @@ VS
 	    float _m7;
 	};
 	
-	struct _1906
+	struct _1119
 	{
-	    vec4 _m0[3];
+	    mat3x4 _m0;
 	};
 	
-	struct _1760
+	struct _1126
 	{
-	    _1906 _m0;
+	    uint _m0;
+	    uint _m1;
+	    uint _m2;
+	    uint _m3;
+	    uint _m4;
+	    uint _m5;
+	    uint _m6;
+	    float _m7;
 	};
 	
-	struct _2032
+	struct _1120
 	{
-	    vec4 _m0[4];
+	    mat3x4 _m0;
 	};
 	
 	layout(set = 4, binding = 32, std430) readonly buffer g_instanceBuffer
 	{
-	    _1125 _m0[];
+	    _1126 _m0[];
 	} g_instanceBuffer_1;
 	
 	layout(set = 4, binding = 30, std430) readonly buffer g_transformBuffer
 	{
-	    _1760 _m0[];
+	    _1120 _m0[];
 	} g_transformBuffer_1;
 	
-	struct _2075
+	struct _1224
 	{
-	    _2032 _m0;
+	    mat4 _m0;
 	    vec4 _m1;
 	};
 	
-	layout(set = 0) uniform _2075 PerViewConstantBuffer_t;
+	layout(set = 0) uniform _1224 PerViewConstantBuffer_t;
 	
 	struct _1030
 	{
@@ -132,12 +139,12 @@ VS
 	
 	layout(set = 0) uniform _1030 _Globals_;
 	
-	layout(location = 0) in vec3 vPositionOs;
-	layout(location = 1) in vec2 vTexCoord;
-	layout(location = 2) in vec3 vNormalOs;
-	layout(location = 3) in vec4 vTangentUOs_flTangentVSign;
-	layout(location = 4) in uvec4 vBlendIndices;
-	layout(location = 5) in uint nInstanceIdx;
+	layout(location = 5) in uint vPositionOs;
+	layout(location = 4) in uvec4 vTexCoord;
+	layout(location = 0) in vec3 vNormalOs;
+	layout(location = 1) in vec2 vTangentUOs_flTangentVSign;
+	layout(location = 2) in vec3 vBlendIndices;
+	layout(location = 3) in vec4 nInstanceIdx;
 	layout(location = 0) out vec3 output_0;
 	layout(location = 1) out vec2 output_1;
 	layout(location = 2) out vec3 output_2;
@@ -145,38 +152,50 @@ VS
 	
 	void main()
 	{
-	    uint _13771 = (g_instanceBuffer_1._m0[nInstanceIdx]._m5 >> uint(16)) & 15u;
-	    uint _21785;
-	    if (_13771 == 1u)
+	    _1125 _20228;
+	    _20228._m0 = g_instanceBuffer_1._m0[vPositionOs]._m0;
+	    _20228._m1 = g_instanceBuffer_1._m0[vPositionOs]._m1;
+	    _20228._m2 = g_instanceBuffer_1._m0[vPositionOs]._m2;
+	    _20228._m3 = g_instanceBuffer_1._m0[vPositionOs]._m3;
+	    _20228._m4 = g_instanceBuffer_1._m0[vPositionOs]._m4;
+	    _20228._m5 = g_instanceBuffer_1._m0[vPositionOs]._m5;
+	    _20228._m6 = g_instanceBuffer_1._m0[vPositionOs]._m6;
+	    _20228._m7 = g_instanceBuffer_1._m0[vPositionOs]._m7;
+	    uint _16987 = (_20228._m5 >> uint(16)) & 15u;
+	    uint _21709;
+	    if (_16987 == 1u)
 	    {
-	        _21785 = g_instanceBuffer_1._m0[nInstanceIdx]._m1 + (2u + vBlendIndices.x);
+	        _21709 = _20228._m1 + (2u + vTexCoord.x);
 	    }
 	    else
 	    {
-	        _21785 = g_instanceBuffer_1._m0[nInstanceIdx]._m1;
+	        _21709 = _20228._m1;
 	    }
-	    mat3x4 _17839 = mat3x4(g_transformBuffer_1._m0[_21785]._m0._m0[0], g_transformBuffer_1._m0[_21785]._m0._m0[1], g_transformBuffer_1._m0[_21785]._m0._m0[2]);
-	    vec3 _22781;
-	    if (_13771 > 0u)
+	    _1119 _21957;
+	    _21957._m0 = g_transformBuffer_1._m0[_21709]._m0;
+	    vec3 _22401;
+	    if (_16987 > 0u)
 	    {
-	        _22781 = vec3(g_transformBuffer_1._m0[g_instanceBuffer_1._m0[nInstanceIdx]._m1]._m0._m0[0].z);
+	        _1119 _20229;
+	        _20229._m0 = g_transformBuffer_1._m0[_20228._m1]._m0;
+	        _22401 = vec3(_20229._m0[0].z);
 	    }
 	    else
 	    {
-	        _22781 = vec3(1.0);
+	        _22401 = vec3(1.0);
 	    }
-	    vec3 _11198 = normalize(vec4(vNormalOs.xyz, 0.0) * _17839);
-	    vec3 _12861 = (vec4(vTangentUOs_flTangentVSign.xyz, 0.0) * _17839).xyz;
+	    vec3 _11198 = normalize(vec4(vBlendIndices.xyz, 0.0) * _21957._m0);
+	    vec3 _12861 = (vec4(nInstanceIdx.xyz, 0.0) * _21957._m0).xyz;
 	    vec3 _24912 = _11198.xyz;
-	    vec3 _12151 = vec4(vPositionOs.xyz * _22781.xyz, 1.0) * _17839;
-	    vec4 _23533 = (vec4(_12151.xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	    vec4 _12868 = vec4(vTexCoord, 0.0, 1.0);
+	    vec3 _12151 = vec4(vNormalOs.xyz * _22401.xyz, 1.0) * _21957._m0;
+	    vec4 _17895 = (vec4(_12151.xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * PerViewConstantBuffer_t._m0;
+	    vec4 _12868 = vec4(vTangentUOs_flTangentVSign, 0.0, 1.0);
 	    output_0 = _11198;
 	    output_1 = vec2(dot(_12868, vec4(_Globals_.g_vTexCoordScale.x, 0.0, 0.0, 0.0)), dot(_12868, vec4(0.0, _Globals_.g_vTexCoordScale.y, 0.0, 0.0))).xy + _Globals_.g_vTexCoordOffset.xy;
 	    output_2 = _12151;
-	    output_3 = vec4(normalize(_12861 - (_24912 * dot(_12861, _24912))), vTangentUOs_flTangentVSign.w);
-	    _23533.y = -_23533.y;
-	    gl_Position = _23533;
+	    output_3 = vec4(normalize(_12861 - (_24912 * dot(_12861, _24912))), nInstanceIdx.w);
+	    _17895.y = -_17895.y;
+	    gl_Position = _17895;
 	}
 	
 	

@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_60
 	// Programs: cs
 }
@@ -37,8 +37,8 @@ CS
 	DynamicComboRule( Requires( D_INLINE_RTX_TEST, D_TEST_VARIANT=0 ) );
 	DynamicComboRule( Requires( D_INLINE_RTX_TEST_VARIANT, D_INLINE_RTX_TEST=1 ) );
 	
-	StructuredBuffer Buffer0 < Attribute("Buffer0"); SrgbRead(false); >;
-	StructuredBuffer Buffer1 < Attribute("Buffer1"); SrgbRead(false); >;
+	StructuredBuffer Buffer0 < Attribute("Buffer0"); >;
+	StructuredBuffer Buffer1 < Attribute("Buffer1"); >;
 	Buffer Buffer2 < Attribute("Buffer2"); SrgbRead(false); >;
 	cbuffer Dimensions_t < Attribute("Dimensions_t"); >;
 	RWTexture2D<float4> OutputTexture < Attribute("OutputUAV"); >;
@@ -56,9 +56,15 @@ CS
 	    float4 _m1;
 	};
 	
-	cbuffer _Globals_ : register(b0, space0)
+	struct _1081
 	{
-	    uint _Globals_1_m0 : packoffset(c0);
+	    float4 _m0;
+	    float4 _m1;
+	};
+	
+	cbuffer Dimensions_t : register(b0, space0)
+	{
+	    uint Dimensions_t_1_m0 : packoffset(c0);
 	};
 	
 	ByteAddressBuffer Buffer0 : register(t30, space0);
@@ -74,8 +80,20 @@ CS
 	
 	void MainCs_inner()
 	{
-	    uint _7595 = (gl_GlobalInvocationID.y * _Globals_1_m0) + gl_GlobalInvocationID.x;
-	    _3407[gl_GlobalInvocationID.xy] = ((asfloat(Buffer0.Load4(_7595 * 32 + 0)) + asfloat(Buffer0.Load4(_7595 * 32 + 16))) + (asfloat(Buffer1.Load4(_7595 * 32 + 0)) + asfloat(Buffer1.Load4(_7595 * 32 + 16)))) + undetermined_unexpectedTypeId410_1047.Load(int(_7595));
+	    uint _7519 = (gl_GlobalInvocationID.y * Dimensions_t_1_m0) + gl_GlobalInvocationID.x;
+	    _1081 _17001;
+	    _17001._m0 = asfloat(Buffer0.Load4(_7519 * 32 + 0));
+	    _17001._m1 = asfloat(Buffer0.Load4(_7519 * 32 + 16));
+	    _1080 _20228;
+	    _20228._m0 = _17001._m0;
+	    _20228._m1 = _17001._m1;
+	    _1081 _14579;
+	    _14579._m0 = asfloat(Buffer1.Load4(_7519 * 32 + 0));
+	    _14579._m1 = asfloat(Buffer1.Load4(_7519 * 32 + 16));
+	    _1080 _20229;
+	    _20229._m0 = _14579._m0;
+	    _20229._m1 = _14579._m1;
+	    _3407[gl_GlobalInvocationID.xy] = ((_20228._m0 + _20228._m1) + (_20229._m0 + _20229._m1)) + undetermined_unexpectedTypeId410_1047.Load(int(_7519));
 	}
 	
 	[numthreads(32, 32, 1)]

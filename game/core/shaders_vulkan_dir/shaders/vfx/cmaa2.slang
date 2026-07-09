@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -47,7 +47,7 @@ CS
 	
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (1056 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1028 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	RWByteAddressBuffer undetermined : register(u159, space0);
 	RWBuffer<uint> _5971 : register(u163, space0);

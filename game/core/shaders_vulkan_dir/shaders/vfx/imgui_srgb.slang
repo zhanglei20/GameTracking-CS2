@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -114,7 +114,7 @@ PS
 	
 	Texture2D<float4> g_texture : register(t30, space1);
 	SamplerState Filter_MinMagMipLinear : register(s14, space1);
-	Texture2DArray<float4> g_textureArray_unexpectedTypeId470_1107 : register(t31, space1);
+	Texture2DArray<float4> g_textureArray : register(t31, space1);
 	SamplerState Filter_MinMagMipLinear_1 : register(s15, space1);
 	
 	static float2 input_0;
@@ -138,7 +138,7 @@ PS
 	    float4 _20655;
 	    if (_Globals_1_g_ArrayIndex != (-1))
 	    {
-	        _20655 = g_textureArray_unexpectedTypeId470_1107.Sample(Filter_MinMagMipLinear_1, float3(input_0.xy, float(_Globals_1_g_ArrayIndex)).xyz);
+	        _20655 = g_textureArray.Sample(Filter_MinMagMipLinear_1, float3(input_0.xy, float(_Globals_1_g_ArrayIndex)).xyz);
 	    }
 	    else
 	    {

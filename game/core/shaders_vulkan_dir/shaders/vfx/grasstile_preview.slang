@@ -7,8 +7,8 @@ HEADER
 	DevShader = false;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_41
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -46,11 +46,11 @@ VS
 	DynamicCombo( D_BAKE_GRASS, 0..1 );
 	
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
-	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
-	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); >;
+	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (3056 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2372 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1125
 	{
@@ -64,27 +64,34 @@ VS
 	    float _m7;
 	};
 	
-	struct _1570
+	struct _1119
 	{
-	    float4 _m0[3];
+	    float3x4 _m0;
 	};
 	
-	struct _1088
+	struct _1126
 	{
-	    _1570 _m0;
+	    uint _m0;
+	    uint _m1;
+	    uint _m2;
+	    uint _m3;
+	    uint _m4;
+	    uint _m5;
+	    uint _m6;
+	    float _m7;
 	};
 	
-	struct _1696
+	struct _1120
 	{
-	    float4 _m0[4];
+	    row_major float3x4 _m0;
 	};
 	
 	ByteAddressBuffer g_instanceBuffer : register(t32, space0);
 	ByteAddressBuffer g_transformBuffer : register(t30, space0);
-	cbuffer _Globals_ : register(b0, space0)
+	cbuffer PerViewConstantBuffer_t : register(b0, space0)
 	{
-	    _1696 _Globals_1_m0 : packoffset(c0);
-	    float4 _Globals_1_m1 : packoffset(c24);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
 	};
 	
 	
@@ -115,20 +122,35 @@ VS
 	
 	void MainVs_inner()
 	{
-	    _1570 _25207;
-	    [unroll]
-	    for (int _1ident = 0; _1ident < 3; _1ident++)
-	    {
-	        _25207._m0[_1ident] = asfloat(g_transformBuffer.Load4(_1ident * 16 + g_instanceBuffer.Load(nInstanceIdx * 32 + 4) * 48 + 0));
-	    }
-	    float3x4 _11684 = float3x4(_25207._m0[0], _25207._m0[1], _25207._m0[2]);
-	    float3 _19956 = mul(_11684, float4(vPositionOs.xyz, 1.0f));
-	    float4 _23552 = mul(float4x4(float4(_Globals_1_m0._m0[0].x, _Globals_1_m0._m0[1].x, _Globals_1_m0._m0[2].x, _Globals_1_m0._m0[3].x), float4(_Globals_1_m0._m0[0].y, _Globals_1_m0._m0[1].y, _Globals_1_m0._m0[2].y, _Globals_1_m0._m0[3].y), float4(_Globals_1_m0._m0[0].z, _Globals_1_m0._m0[1].z, _Globals_1_m0._m0[2].z, _Globals_1_m0._m0[3].z), float4(_Globals_1_m0._m0[0].w, _Globals_1_m0._m0[1].w, _Globals_1_m0._m0[2].w, _Globals_1_m0._m0[3].w)), (float4(_19956.xyz, 1.0f) + (_Globals_1_m1 * 1.0f)).xyzw);
-	    output_0 = normalize(mul(_11684, float4(vNormalOs.xyz, 0.0f)));
+	    _1126 _24007;
+	    _24007._m0 = g_instanceBuffer.Load(nInstanceIdx * 32 + 0);
+	    _24007._m1 = g_instanceBuffer.Load(nInstanceIdx * 32 + 4);
+	    _24007._m2 = g_instanceBuffer.Load(nInstanceIdx * 32 + 8);
+	    _24007._m3 = g_instanceBuffer.Load(nInstanceIdx * 32 + 12);
+	    _24007._m4 = g_instanceBuffer.Load(nInstanceIdx * 32 + 16);
+	    _24007._m5 = g_instanceBuffer.Load(nInstanceIdx * 32 + 20);
+	    _24007._m6 = g_instanceBuffer.Load(nInstanceIdx * 32 + 24);
+	    _24007._m7 = asfloat(g_instanceBuffer.Load(nInstanceIdx * 32 + 28));
+	    _1125 _19924;
+	    _19924._m0 = _24007._m0;
+	    _19924._m1 = _24007._m1;
+	    _19924._m2 = _24007._m2;
+	    _19924._m3 = _24007._m3;
+	    _19924._m4 = _24007._m4;
+	    _19924._m5 = _24007._m5;
+	    _19924._m6 = _24007._m6;
+	    _19924._m7 = _24007._m7;
+	    _1120 _8152;
+	    _8152._m0 = asfloat(uint3x4(g_transformBuffer.Load4(_19924._m1 * 48 + 0), g_transformBuffer.Load4(_19924._m1 * 48 + 16), g_transformBuffer.Load4(_19924._m1 * 48 + 32)));
+	    _1119 _20190;
+	    _20190._m0 = _8152._m0;
+	    float3 _19956 = mul(_20190._m0, float4(vPositionOs.xyz, 1.0f));
+	    float4 _17914 = mul(PerViewConstantBuffer_t_1_m0, (float4(_19956.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m1 * 1.0f)).xyzw);
+	    output_0 = normalize(mul(_20190._m0, float4(vNormalOs.xyz, 0.0f)));
 	    output_1 = vTexCoord;
 	    output_2 = _19956;
-	    _23552.y = -_23552.y;
-	    gl_Position = _23552;
+	    _17914.y = -_17914.y;
+	    gl_Position = _17914;
 	}
 	
 	PS_INPUT MainVs(VS_INPUT stage_input)
@@ -158,7 +180,7 @@ PS
 	DynamicCombo( D_BAKE_GRASS, 0..1 );
 	
 	cbuffer RoughnessLightingGlobalsCB_t < Attribute("RoughnessLightingGlobalsCB_t"); >;
-	cbuffer SunLightShaderParamsCB < Attribute("SunLightShaderParamsCB"); >;
+	cbuffer SunLightShaderParamsCB_t < Attribute("SunLightShaderParamsCB_t"); >;
 	Texture2D g_tColor < Channel(RGB, AlphaWeighted(TextureColor, TextureTranslucency), Srgb); Channel(A, Box(TextureTranslucency), Linear); OutputFormat(DXT5); SrgbRead(true); >;
 	
 	// Color
@@ -174,7 +196,7 @@ PS
 	float g_flGrassHeightMax < Default(55); Range(1, 256); UiType(Slider); UiGroup("GrassSize/30"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2672 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2688 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	static float4 _3;
 	
@@ -188,10 +210,10 @@ PS
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b3, space1)
+	cbuffer SunLightShaderParamsCB_t : register(b3, space1)
 	{
-	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
-	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);
+	    float3 SunLightShaderParamsCB_t_1_m0 : packoffset(c0);
+	    float3 SunLightShaderParamsCB_t_1_m1 : packoffset(c1);
 	};
 	
 	Texture2D<float4> g_tColor : register(t30, space1);
@@ -225,7 +247,7 @@ PS
 	    float3 _14744 = normalize((input_0.xyz * (gl_FrontFacing ? 1.0f : (-1.0f))).xyz).xyz;
 	    float3 _23378 = clamp(_14744, 0.0f.xxx, 1.0f.xxx);
 	    float3 _23904 = clamp(-_14744, 0.0f.xxx, 1.0f.xxx);
-	    output_0 = float4(((RoughnessLightingGlobalsCB_t_1_m0.xyz * (dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 1.0f), _23378 * _23378) + dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 0.20000000298023223876953125f), _23904 * _23904))).xyz + ((SunLightShaderParamsCB_1_m0.xyz * (pow(clamp(dot(_14744, SunLightShaderParamsCB_1_m1.xyz), 0.0f, 1.0f), 0.60000002384185791015625f) * 0.800000011920928955078125f)) * 1.0f)).xyz * _23714.xyz, _3401.w);
+	    output_0 = float4(((RoughnessLightingGlobalsCB_t_1_m0.xyz * (dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 1.0f), _23378 * _23378) + dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 0.20000000298023223876953125f), _23904 * _23904))).xyz + ((SunLightShaderParamsCB_t_1_m0.xyz * (pow(clamp(dot(_14744, SunLightShaderParamsCB_t_1_m1.xyz), 0.0f, 1.0f), 0.60000002384185791015625f) * 0.800000011920928955078125f)) * 1.0f)).xyz * _23714.xyz, _3401.w);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -39,7 +39,7 @@ CS
 	Texture2D g_tInputDepth < Attribute("Dummy"); SrgbRead(false); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (20072 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (19340 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _981
 	{
@@ -54,8 +54,8 @@ CS
 	};
 	
 	Texture2D<float4> g_tInputDepth : register(t30, space3);
-	RWTexture2D<float4> _5785[13] : register(u160, space3);
 	globallycoherent RWTexture2D<float4> _4300 : register(u159, space3);
+	RWTexture2D<float4> _5785[13] : register(u160, space3);
 	
 	static uint3 gl_WorkGroupID;
 	static uint gl_LocalInvocationIndex;
@@ -80,8 +80,8 @@ CS
 	        int2 _17277;
 	        int _22460;
 	        uint _17662 = gl_LocalInvocationIndex % 64u;
-	        uint _18055 = ((_17662 & 1u) | (((_17662 >> 2u) & 7u) & 4294967294u)) + (8u * ((gl_LocalInvocationIndex >> uint(6)) % 2u));
-	        uint _21604 = ((((_17662 >> 1u) & 3u) & 3u) | (((_17662 >> 3u) & 7u) & 4294967292u)) + (8u * (gl_LocalInvocationIndex >> uint(7)));
+	        uint _18055 = ((_17662 & 1u) | ((_17662 >> 2u) & 6u)) + (8u * ((gl_LocalInvocationIndex >> uint(6)) % 2u));
+	        uint _21604 = (((_17662 >> 1u) & 3u) | ((_17662 >> 3u) & 4u)) + (8u * (gl_LocalInvocationIndex >> uint(7)));
 	        do
 	        {
 	            _6312 = gl_WorkGroupID.xy;
@@ -91,30 +91,34 @@ CS
 	            _10507 = _21604 * 2u;
 	            _12461 = int(_10507);
 	            _17277 = int2(_22460, _12461);
+	            int2 _16450 = _15224 + _17277;
 	            int2 _20613 = int2(_6312 * uint2(32u, 32u));
 	            int _18838 = int(_18055);
 	            int _8296 = int(_21604);
 	            _16009 = int2(_18838, _8296);
-	            float4 _20198[4];
-	            uint2 _19109 = uint2(_15224 + _17277);
-	            float4 _13482 = max(max(g_tInputDepth.Load(int3(int3(int2(_19109), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19109 + uint2(0u, 1u)), 0).xy, 0)).x.xxxx), max(g_tInputDepth.Load(int3(int3(int2(_19109 + uint2(1u, 0u)), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19109 + uint2(1u, 1u)), 0).xy, 0)).x.xxxx));
-	            _20198[0] = _13482;
+	            float4 _20274[4];
+	            uint2 _19109 = uint2(_16450);
+	            float4 _13482 = max(max(g_tInputDepth.Load(int3(int3(_16450, 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19109 + uint2(0u, 1u)), 0).xy, 0)).x.xxxx), max(g_tInputDepth.Load(int3(int3(int2(_19109 + uint2(1u, 0u)), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19109 + uint2(1u, 1u)), 0).xy, 0)).x.xxxx));
+	            _20274[0] = _13482;
 	            _5785[1u][uint2(_20613 + _16009)] = _13482.x.xxxx;
 	            int _15894 = int(_11495 + 32u);
+	            int2 _17142 = _15224 + int2(_15894, _12461);
 	            int _16683 = int(_18055 + 16u);
-	            uint2 _19110 = uint2(_15224 + int2(_15894, _12461));
-	            float4 _14603 = max(max(g_tInputDepth.Load(int3(int3(int2(_19110), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19110 + uint2(0u, 1u)), 0).xy, 0)).x.xxxx), max(g_tInputDepth.Load(int3(int3(int2(_19110 + uint2(1u, 0u)), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19110 + uint2(1u, 1u)), 0).xy, 0)).x.xxxx));
-	            _20198[1] = _14603;
+	            uint2 _19110 = uint2(_17142);
+	            float4 _14603 = max(max(g_tInputDepth.Load(int3(int3(_17142, 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19110 + uint2(0u, 1u)), 0).xy, 0)).x.xxxx), max(g_tInputDepth.Load(int3(int3(int2(_19110 + uint2(1u, 0u)), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19110 + uint2(1u, 1u)), 0).xy, 0)).x.xxxx));
+	            _20274[1] = _14603;
 	            _5785[1u][uint2(_20613 + int2(_16683, _8296))] = _14603.x.xxxx;
 	            int _15895 = int(_10507 + 32u);
+	            int2 _17143 = _15224 + int2(_22460, _15895);
 	            int _16684 = int(_21604 + 16u);
-	            uint2 _19111 = uint2(_15224 + int2(_22460, _15895));
-	            float4 _14604 = max(max(g_tInputDepth.Load(int3(int3(int2(_19111), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19111 + uint2(0u, 1u)), 0).xy, 0)).x.xxxx), max(g_tInputDepth.Load(int3(int3(int2(_19111 + uint2(1u, 0u)), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19111 + uint2(1u, 1u)), 0).xy, 0)).x.xxxx));
-	            _20198[2] = _14604;
+	            uint2 _19111 = uint2(_17143);
+	            float4 _14604 = max(max(g_tInputDepth.Load(int3(int3(_17143, 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19111 + uint2(0u, 1u)), 0).xy, 0)).x.xxxx), max(g_tInputDepth.Load(int3(int3(int2(_19111 + uint2(1u, 0u)), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19111 + uint2(1u, 1u)), 0).xy, 0)).x.xxxx));
+	            _20274[2] = _14604;
 	            _5785[1u][uint2(_20613 + int2(_18838, _16684))] = _14604.x.xxxx;
-	            uint2 _19112 = uint2(_15224 + int2(_15894, _15895));
-	            float4 _14605 = max(max(g_tInputDepth.Load(int3(int3(int2(_19112), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19112 + uint2(0u, 1u)), 0).xy, 0)).x.xxxx), max(g_tInputDepth.Load(int3(int3(int2(_19112 + uint2(1u, 0u)), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19112 + uint2(1u, 1u)), 0).xy, 0)).x.xxxx));
-	            _20198[3] = _14605;
+	            int2 _21502 = _15224 + int2(_15894, _15895);
+	            uint2 _19112 = uint2(_21502);
+	            float4 _14605 = max(max(g_tInputDepth.Load(int3(int3(_21502, 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19112 + uint2(0u, 1u)), 0).xy, 0)).x.xxxx), max(g_tInputDepth.Load(int3(int3(int2(_19112 + uint2(1u, 0u)), 0).xy, 0)).x.xxxx, g_tInputDepth.Load(int3(int3(int2(_19112 + uint2(1u, 1u)), 0).xy, 0)).x.xxxx));
+	            _20274[3] = _14605;
 	            _5785[1u][uint2(_20613 + int2(_16683, _16684))] = _14605.x.xxxx;
 	            if (_5474_m0 <= 1u)
 	            {
@@ -128,7 +132,7 @@ CS
 	                {
 	                    break;
 	                }
-	                _3286[_18055 + (16u * _21604)] = _20198[_13039].x;
+	                _3286[_18055 + (16u * _21604)] = _20274[_13039].x;
 	                GroupMemoryBarrierWithGroupSync();
 	                if (gl_LocalInvocationIndex < 64u)
 	                {
@@ -136,7 +140,7 @@ CS
 	                    uint _17922 = _21604 * 32u;
 	                    uint _12552 = 16u * (_10507 + 1u);
 	                    float4 _14755 = max(max(_3286[_11495 + _17922].xxxx, _3286[_21225 + _17922].xxxx), max(_3286[_11495 + _12552].xxxx, _3286[_21225 + _12552].xxxx));
-	                    _20198[_13039] = _14755;
+	                    _20274[_13039] = _14755;
 	                    _5785[2u][uint2(int2(_6312 * uint2(16u, 16u)) + int2(int(_18055 + uint((_13039 - 2 * (_13039 / 2)) * 8)), int(_21604 + uint((_13039 / 2) * 8))))] = _14755.x.xxxx;
 	                }
 	                GroupMemoryBarrierWithGroupSync();
@@ -147,12 +151,12 @@ CS
 	            if (gl_LocalInvocationIndex < 64u)
 	            {
 	                uint _17259 = 16u * _21604;
-	                _3286[_18055 + _17259] = _20198[0].x;
+	                _3286[_18055 + _17259] = _20274[0].x;
 	                uint _15354 = _18055 + 8u;
-	                _3286[_15354 + _17259] = _20198[1].x;
+	                _3286[_15354 + _17259] = _20274[1].x;
 	                uint _17034 = 16u * (_21604 + 8u);
-	                _3286[_18055 + _17034] = _20198[2].x;
-	                _3286[_15354 + _17034] = _20198[3].x;
+	                _3286[_18055 + _17034] = _20274[2].x;
+	                _3286[_15354 + _17034] = _20274[3].x;
 	            }
 	            break;
 	        } while(false);
@@ -210,7 +214,7 @@ CS
 	            GroupMemoryBarrierWithGroupSync();
 	            if (gl_LocalInvocationIndex < 1u)
 	            {
-	                _4300[uint2(int2(_6312))] = max(max(_3286[0u].xxxx, _3286[1u].xxxx), max(_3286[2u].xxxx, _3286[3u].xxxx)).x.xxxx;
+	                _4300[_6312] = max(max(_3286[0u].xxxx, _3286[1u].xxxx), max(_3286[2u].xxxx, _3286[3u].xxxx)).x.xxxx;
 	            }
 	            break;
 	        } while(false);
@@ -241,41 +245,45 @@ CS
 	            int _19466 = int(_12251);
 	            uint _10508 = _21604 * 4u;
 	            int _12385 = int(_10508);
-	            uint2 _11848 = uint2(int2(_19466, _12385));
-	            float4 _21178 = _4300[int2(uint2(int2(_11848)))];
-	            float4 _21179 = _4300[int2(uint2(int2(_11848 + uint2(0u, 1u))))];
-	            float4 _21180 = _4300[int2(uint2(int2(_11848 + uint2(1u, 0u))))];
-	            float4 _21181 = _4300[int2(uint2(int2(_11848 + uint2(1u, 1u))))];
-	            float4 _14084 = max(max(_21178.x.xxxx, _21179.x.xxxx), max(_21180.x.xxxx, _21181.x.xxxx));
+	            int2 _17893 = int2(_19466, _12385);
+	            uint2 _11848 = uint2(_17893);
+	            float4 _17947 = _4300[_17893];
+	            float4 _21178 = _4300[int2(_11848 + uint2(0u, 1u))];
+	            float4 _21179 = _4300[int2(_11848 + uint2(1u, 0u))];
+	            float4 _21180 = _4300[int2(_11848 + uint2(1u, 1u))];
+	            float4 _14084 = max(max(_17947.x.xxxx, _21178.x.xxxx), max(_21179.x.xxxx, _21180.x.xxxx));
 	            _5785[7u][uint2(_17277)] = _14084.x.xxxx;
 	            _21382 = _12251 + 2u;
 	            int _15896 = int(_21382);
+	            int2 _20356 = int2(_15896, _12385);
 	            _16998 = _11495 + 1u;
 	            int _10180 = int(_16998);
-	            uint2 _11849 = uint2(int2(_15896, _12385));
-	            float4 _21182 = _4300[int2(uint2(int2(_11849)))];
-	            float4 _21183 = _4300[int2(uint2(int2(_11849 + uint2(0u, 1u))))];
-	            float4 _21184 = _4300[int2(uint2(int2(_11849 + uint2(1u, 0u))))];
-	            float4 _21185 = _4300[int2(uint2(int2(_11849 + uint2(1u, 1u))))];
-	            float4 _22131 = max(max(_21182.x.xxxx, _21183.x.xxxx), max(_21184.x.xxxx, _21185.x.xxxx));
+	            uint2 _11849 = uint2(_20356);
+	            float4 _17948 = _4300[_20356];
+	            float4 _21181 = _4300[int2(_11849 + uint2(0u, 1u))];
+	            float4 _21182 = _4300[int2(_11849 + uint2(1u, 0u))];
+	            float4 _21183 = _4300[int2(_11849 + uint2(1u, 1u))];
+	            float4 _22131 = max(max(_17948.x.xxxx, _21181.x.xxxx), max(_21182.x.xxxx, _21183.x.xxxx));
 	            _5785[7u][uint2(int2(_10180, _12461))] = _22131.x.xxxx;
 	            _21383 = _10508 + 2u;
 	            int _15897 = int(_21383);
+	            int2 _20357 = int2(_19466, _15897);
 	            _16999 = _10507 + 1u;
 	            int _10181 = int(_16999);
-	            uint2 _11850 = uint2(int2(_19466, _15897));
-	            float4 _21186 = _4300[int2(uint2(int2(_11850)))];
-	            float4 _21187 = _4300[int2(uint2(int2(_11850 + uint2(0u, 1u))))];
-	            float4 _21188 = _4300[int2(uint2(int2(_11850 + uint2(1u, 0u))))];
-	            float4 _21189 = _4300[int2(uint2(int2(_11850 + uint2(1u, 1u))))];
-	            float4 _22132 = max(max(_21186.x.xxxx, _21187.x.xxxx), max(_21188.x.xxxx, _21189.x.xxxx));
+	            uint2 _11850 = uint2(_20357);
+	            float4 _17949 = _4300[_20357];
+	            float4 _21184 = _4300[int2(_11850 + uint2(0u, 1u))];
+	            float4 _21185 = _4300[int2(_11850 + uint2(1u, 0u))];
+	            float4 _21186 = _4300[int2(_11850 + uint2(1u, 1u))];
+	            float4 _22132 = max(max(_17949.x.xxxx, _21184.x.xxxx), max(_21185.x.xxxx, _21186.x.xxxx));
 	            _5785[7u][uint2(int2(_22460, _10181))] = _22132.x.xxxx;
-	            uint2 _8647 = uint2(int2(_15896, _15897));
-	            float4 _21190 = _4300[int2(uint2(int2(_8647)))];
-	            float4 _21191 = _4300[int2(uint2(int2(_8647 + uint2(0u, 1u))))];
-	            float4 _21192 = _4300[int2(uint2(int2(_8647 + uint2(1u, 0u))))];
-	            float4 _21193 = _4300[int2(uint2(int2(_8647 + uint2(1u, 1u))))];
-	            float4 _22133 = max(max(_21190.x.xxxx, _21191.x.xxxx), max(_21192.x.xxxx, _21193.x.xxxx));
+	            int2 _22601 = int2(_15896, _15897);
+	            uint2 _8647 = uint2(_22601);
+	            float4 _17950 = _4300[_22601];
+	            float4 _21187 = _4300[int2(_8647 + uint2(0u, 1u))];
+	            float4 _21188 = _4300[int2(_8647 + uint2(1u, 0u))];
+	            float4 _21189 = _4300[int2(_8647 + uint2(1u, 1u))];
+	            float4 _22133 = max(max(_17950.x.xxxx, _21187.x.xxxx), max(_21188.x.xxxx, _21189.x.xxxx));
 	            _5785[7u][uint2(int2(_10180, _10181))] = _22133.x.xxxx;
 	            if (_5474_m0 <= 7u)
 	            {

@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 1;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -145,10 +145,9 @@ PS
 	    float3 _17934 = normalize(float3(float2(_16783, _11176), (1.0f - abs(_16783)) - abs(_11176)));
 	    float4 _20540 = g_tHeight.Sample(DefaultSamplerState_0_1, input_0.xy);
 	    float _19496 = ddx(_20540[_Globals_1_g_nHeightChannel]);
-	    float _18253 = -_19496;
 	    float _24200 = ddy(_20540[_Globals_1_g_nHeightChannel]);
-	    float _18996 = sqrt((1.0f - (_18253 * _18253)) - (_24200 * _24200));
-	    float3 _10356 = normalize(float3(_17934.xy + float3(float3(_18253, _24200, 0.0f).xy * _Globals_1_g_flNormalScale, _18996).xy, _17934.z * _18996));
+	    float _18996 = sqrt((1.0f - (_19496 * _19496)) - (_24200 * _24200));
+	    float3 _10356 = normalize(float3(_17934.xy + float3(float3(-_19496, _24200, 0.0f).xy * _Globals_1_g_flNormalScale, _18996).xy, _17934.z * _18996));
 	    float2 _9840 = _10356.xy * (1.0f / ((abs(_10356.x) + abs(_10356.y)) + _10356.z));
 	    float _9145 = _9840.x;
 	    float _9493 = _9840.y;

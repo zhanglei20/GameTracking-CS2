@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -124,8 +124,8 @@ PS
 	    float _16324;
 	    _13136 = 0.0f.xxxx;
 	    _16324 = 0.0f;
-	    float _5941;
 	    int _9583;
+	    float _18147;
 	    float4 _22315;
 	    int _17017 = 0;
 	    for (;;)
@@ -136,10 +136,10 @@ PS
 	        }
 	        float4 _3401 = g_tOutlineInput.Sample(Filter_MinMagMipPoint, (_11542 + (_2506[_17017] * _25006)).xy);
 	        _22315 = _13136 + _3401;
-	        _5941 = _16324 + step((_3401.x + _3401.y) + _3401.z, 0.0f);
+	        _18147 = _16324 + step((_3401.x + _3401.y) + _3401.z, 0.0f);
 	        _9583 = _17017 + 1;
 	        _13136 = _22315;
-	        _16324 = _5941;
+	        _16324 = _18147;
 	        _17017 = _9583;
 	        continue;
 	    }

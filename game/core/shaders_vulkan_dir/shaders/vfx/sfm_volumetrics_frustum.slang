@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -36,19 +36,14 @@ VS
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2196 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1592 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	struct _16
+	cbuffer PerViewConstantBuffer_t : register(b0, space0)
 	{
-	    float4 _m0[4];
-	};
-	
-	cbuffer _Globals_ : register(b0, space0)
-	{
-	    _16 _Globals_1_m0 : packoffset(c0);
-	    float4 _Globals_1_m1 : packoffset(c24);
-	    float3 _Globals_1_m2 : packoffset(c26);
-	    float3 _Globals_1_m3 : packoffset(c28);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
+	    float3 PerViewConstantBuffer_t_1_m2 : packoffset(c26);
+	    float3 PerViewConstantBuffer_t_1_m3 : packoffset(c28);
 	};
 	
 	
@@ -81,10 +76,10 @@ VS
 	
 	void MainVs_inner()
 	{
-	    float4 _23533 = mul(float4x4(float4(_Globals_1_m0._m0[0].x, _Globals_1_m0._m0[1].x, _Globals_1_m0._m0[2].x, _Globals_1_m0._m0[3].x), float4(_Globals_1_m0._m0[0].y, _Globals_1_m0._m0[1].y, _Globals_1_m0._m0[2].y, _Globals_1_m0._m0[3].y), float4(_Globals_1_m0._m0[0].z, _Globals_1_m0._m0[1].z, _Globals_1_m0._m0[2].z, _Globals_1_m0._m0[3].z), float4(_Globals_1_m0._m0[0].w, _Globals_1_m0._m0[1].w, _Globals_1_m0._m0[2].w, _Globals_1_m0._m0[3].w)), (float4(input_0.xyz, 1.0f) + (_Globals_1_m1 * 1.0f)).xyzw);
-	    _23533.y = -_23533.y;
-	    gl_Position = _23533;
-	    output_0 = float4(input_0, dot(_Globals_1_m3, input_0.xyz - _Globals_1_m2.xyz));
+	    float4 _17895 = mul(PerViewConstantBuffer_t_1_m0, (float4(input_0.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m1 * 1.0f)).xyzw);
+	    _17895.y = -_17895.y;
+	    gl_Position = _17895;
+	    output_0 = float4(input_0, dot(PerViewConstantBuffer_t_1_m3, input_0.xyz - PerViewConstantBuffer_t_1_m2.xyz));
 	    output_1 = input_1;
 	    output_2 = input_2;
 	    output_3 = input_3;

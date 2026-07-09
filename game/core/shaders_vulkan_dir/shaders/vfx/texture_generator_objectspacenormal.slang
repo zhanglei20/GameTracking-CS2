@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -44,8 +44,8 @@ VS
 	
 	static float4 gl_Position;
 	static float2 vTexCoord;
-	static float4 vNormalOs;
-	static float3 vTangentUOs_flTangentVSign;
+	static float3 vNormalOs;
+	static float4 vTangentUOs_flTangentVSign;
 	static float3 output_0;
 	static float2 output_1;
 	static float3 output_2;
@@ -54,8 +54,8 @@ VS
 	struct VS_INPUT
 	{
 	    float2 vTexCoord : TEXCOORD0;
-	    float3 vTangentUOs_flTangentVSign : TEXCOORD1;
-	    float4 vNormalOs : TEXCOORD2;
+	    float3 vNormalOs : TEXCOORD1;
+	    float4 vTangentUOs_flTangentVSign : TEXCOORD2;
 	};
 	
 	struct PS_INPUT
@@ -70,14 +70,14 @@ VS
 	void MainVs_inner()
 	{
 	    float2 _7080 = (float2(vTexCoord.x, 1.0f - vTexCoord.y) - 0.5f.xx) * 2.0f;
-	    float4 _14817 = float4(_7080, 1.0f, 1.0f);
-	    float3 _24772 = normalize(vNormalOs.xyz - (vTangentUOs_flTangentVSign.xyz * dot(vNormalOs.xyz, vTangentUOs_flTangentVSign.xyz)));
-	    output_0 = vTangentUOs_flTangentVSign;
+	    float4 _14437 = float4(_7080, 1.0f, 1.0f);
+	    float3 _24772 = normalize(vTangentUOs_flTangentVSign.xyz - (vNormalOs.xyz * dot(vTangentUOs_flTangentVSign.xyz, vNormalOs.xyz)));
+	    output_0 = vNormalOs;
 	    output_1 = vTexCoord.xy;
 	    output_2 = _24772;
-	    output_3 = cross(vTangentUOs_flTangentVSign.xyz, _24772.xyz) * vNormalOs.w;
-	    _14817.y = -_7080.y;
-	    gl_Position = _14817;
+	    output_3 = cross(vNormalOs.xyz, _24772.xyz) * vTangentUOs_flTangentVSign.w;
+	    _14437.y = -_7080.y;
+	    gl_Position = _14437;
 	}
 	
 	PS_INPUT MainVs(VS_INPUT stage_input)

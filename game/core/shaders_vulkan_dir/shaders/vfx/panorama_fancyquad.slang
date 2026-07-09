@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -41,6 +41,9 @@ struct VS_INPUT
 
 VS
 {
+	DynamicCombo( D_DSTCOLOR_BLENDMODE, 0..8 );
+	
+	float2 g_vTexture4Scale < Default2(1, 1); Attribute("Texture4Scale"); UiType(VectorText); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (1176 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
@@ -139,6 +142,7 @@ VS
 
 PS
 {
+	DynamicCombo( D_DSTCOLOR_BLENDMODE, 0..8 );
 	DynamicCombo( D_USERADIALGRADIENT, 0..1 );
 	DynamicCombo( D_USEOUTERCORNER, 0..1 );
 	DynamicCombo( D_USEINNERCORNER, 0..1 );
@@ -153,24 +157,25 @@ PS
 	Texture2D g_tTexture0 < Attribute("Texture0"); SrgbRead(true); >;
 	Texture2D g_tTexture1 < Attribute("Texture1"); SrgbRead(true); >;
 	Texture2D g_tTexture3 < Attribute("Texture3"); SrgbRead(true); >;
+	Texture2D g_tTexture4 < Attribute("Texture4"); SrgbRead(false); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (5928 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	cbuffer _Globals_ : register(b0, space1)
+	cbuffer FancyQuadCoreConstants_t : register(b0, space1)
 	{
-	    float _Globals_1_m0 : packoffset(c6.z);
-	    int _Globals_1_m1 : packoffset(c7.y);
-	    int _Globals_1_m2 : packoffset(c7.z);
-	    int _Globals_1_m3 : packoffset(c7.w);
-	    float _Globals_1_m4 : packoffset(c9.y);
-	    float _Globals_1_m5 : packoffset(c9.z);
-	    int _Globals_1_m6 : packoffset(c9.w);
+	    float FancyQuadCoreConstants_t_1_m0 : packoffset(c6.z);
+	    int FancyQuadCoreConstants_t_1_m1 : packoffset(c7.y);
+	    int FancyQuadCoreConstants_t_1_m2 : packoffset(c7.z);
+	    int FancyQuadCoreConstants_t_1_m3 : packoffset(c7.w);
+	    float FancyQuadCoreConstants_t_1_m4 : packoffset(c9.y);
+	    float FancyQuadCoreConstants_t_1_m5 : packoffset(c9.z);
+	    int FancyQuadCoreConstants_t_1_m6 : packoffset(c9.w);
 	};
 	
 	SamplerState DefaultSamplerState_0 : register(s14, space1);
-	Texture2D<float4> g_tLinearTexture0 : register(t34, space1);
 	Texture2D<float4> g_tTexture0 : register(t30, space1);
+	Texture2D<float4> g_tLinearTexture0 : register(t34, space1);
 	Texture2D<float4> g_tTexture3 : register(t33, space1);
 	Texture2D<float4> g_tTexture1 : register(t31, space1);
 	
@@ -198,13 +203,13 @@ PS
 	    float2 _13829 = ddx(input_0.xy);
 	    float2 _9944 = ddy(input_0.xy);
 	    bool _12885;
-	    if (_Globals_1_m3 == 1)
+	    if (FancyQuadCoreConstants_t_1_m3 == 1)
 	    {
 	        _12885 = true;
 	    }
 	    else
 	    {
-	        _12885 = _Globals_1_m3 == 2;
+	        _12885 = FancyQuadCoreConstants_t_1_m3 == 2;
 	    }
 	    float4 _7078;
 	    if (_12885)
@@ -214,7 +219,7 @@ PS
 	    else
 	    {
 	        float4 _12502;
-	        if (_Globals_1_m3 == 3)
+	        if (FancyQuadCoreConstants_t_1_m3 == 3)
 	        {
 	            float4 _11198 = g_tTexture0.SampleGrad(DefaultSamplerState_0, input_0.xy, _13829, _9944);
 	            float _14685 = _11198.w;
@@ -226,15 +231,15 @@ PS
 	        }
 	        else
 	        {
-	            bool _21124 = _Globals_1_m3 == 4;
+	            bool _23546 = FancyQuadCoreConstants_t_1_m3 == 4;
 	            bool _12886;
-	            if (_21124)
+	            if (_23546)
 	            {
 	                _12886 = true;
 	            }
 	            else
 	            {
-	                _12886 = _21124;
+	                _12886 = _23546;
 	            }
 	            float4 _12501;
 	            if (_12886)
@@ -292,7 +297,7 @@ PS
 	        _7078 = _12502;
 	    }
 	    float4 _19017;
-	    if (_Globals_1_m3 == 2)
+	    if (FancyQuadCoreConstants_t_1_m3 == 2)
 	    {
 	        float3 _16714 = _7078.xyz * _7078.w;
 	        float4 _8673 = _7078;
@@ -306,14 +311,14 @@ PS
 	        _19017 = _7078;
 	    }
 	    float4 _21709;
-	    if (_Globals_1_m1 == 2)
+	    if (FancyQuadCoreConstants_t_1_m1 == 2)
 	    {
 	        _21709 = _19017 * g_tTexture3.SampleLevel(DefaultSamplerState_0, float2((clamp(input_0.z, 0.0f, 1.0f) * 0.9990234375f) + 0.00048828125f, 0.0f), 0.0f);
 	    }
 	    else
 	    {
 	        float4 _12503;
-	        if (_Globals_1_m1 == 1)
+	        if (FancyQuadCoreConstants_t_1_m1 == 1)
 	        {
 	            _12503 = _19017 * lerp(input_1, input_2, clamp(input_0.z, 0.0f, 1.0f).xxxx);
 	        }
@@ -324,12 +329,12 @@ PS
 	        _21709 = _12503;
 	    }
 	    float4 _19306;
-	    if (_Globals_1_m2 != 0)
+	    if (FancyQuadCoreConstants_t_1_m2 != 0)
 	    {
 	        float4 _19068 = g_tTexture1.Sample(DefaultSamplerState_0, input_3.xy);
 	        float _17476 = _19068.w;
 	        float _21710;
-	        if (_Globals_1_m6 != 0)
+	        if (FancyQuadCoreConstants_t_1_m6 != 0)
 	        {
 	            _21710 = _17476 * dot(g_tTexture1.Sample(DefaultSamplerState_0, input_3.xy).xyz, float3(0.2125000059604644775390625f, 0.7153999805450439453125f, 0.07209999859333038330078125f));
 	        }
@@ -338,16 +343,16 @@ PS
 	            _21710 = _17476;
 	        }
 	        float _21711;
-	        if (_21710 < _Globals_1_m4)
+	        if (_21710 < FancyQuadCoreConstants_t_1_m4)
 	        {
 	            _21711 = 0.0f;
 	        }
 	        else
 	        {
 	            float _12504;
-	            if (_21710 < _Globals_1_m5)
+	            if (_21710 < FancyQuadCoreConstants_t_1_m5)
 	            {
-	                _12504 = (_21710 - _Globals_1_m4) / (_Globals_1_m5 - _Globals_1_m4);
+	                _12504 = (_21710 - FancyQuadCoreConstants_t_1_m4) / (FancyQuadCoreConstants_t_1_m5 - FancyQuadCoreConstants_t_1_m4);
 	            }
 	            else
 	            {
@@ -355,9 +360,9 @@ PS
 	            }
 	            _21711 = _12504;
 	        }
-	        float _6837 = abs(_Globals_1_m0);
+	        float _6837 = abs(FancyQuadCoreConstants_t_1_m0);
 	        float _11659;
-	        if (_Globals_1_m0 > 0.0f)
+	        if (FancyQuadCoreConstants_t_1_m0 > 0.0f)
 	        {
 	            _11659 = _21711;
 	        }

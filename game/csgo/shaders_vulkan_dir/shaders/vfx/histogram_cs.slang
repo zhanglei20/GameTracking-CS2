@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -55,9 +55,9 @@ CS
 	    uint Histogram_t_1_m3 : packoffset(c1.y);
 	};
 	
-	RWBuffer<uint> _3900 : register(u159, space0);
 	Texture2D<float4> g_tInput : register(t31, space0);
 	RWTexture2D<float4> _5853 : register(u158, space0);
+	RWBuffer<uint> _3900 : register(u159, space0);
 	
 	static uint3 gl_GlobalInvocationID;
 	static uint gl_LocalInvocationIndex;

@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -94,7 +94,7 @@ PS
 	    float2 _Globals_1_g_vViewportRatio : packoffset(c0);
 	};
 	
-	Texture2DArray<float4> g_tVisualizeDistanceField_unexpectedTypeId470_1107 : register(t30, space1);
+	Texture2DArray<float4> g_tVisualizeDistanceField : register(t30, space1);
 	SamplerState AddressU_Clamp_AddressV_Clamp_Filter_MinMagLinearMipPoint : register(s14, space1);
 	
 	static float2 input_0;
@@ -112,7 +112,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float4 _3401 = g_tVisualizeDistanceField_unexpectedTypeId470_1107.Sample(AddressU_Clamp_AddressV_Clamp_Filter_MinMagLinearMipPoint, float3(input_0 * _Globals_1_g_vViewportRatio, 0.0f));
+	    float4 _3401 = g_tVisualizeDistanceField.Sample(AddressU_Clamp_AddressV_Clamp_Filter_MinMagLinearMipPoint, float3(input_0 * _Globals_1_g_vViewportRatio, 0.0f));
 	    float _17666 = _3401.x;
 	    output_0 = float4(_17666, _17666, _17666, (_17666 > 0.0500000007450580596923828125f) ? 0.5f : 0.0f);
 	}

@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -82,11 +82,11 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (1332 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	cbuffer _Globals_ : register(b0, space1)
+	cbuffer PerViewConstantBuffer_t : register(b0, space1)
 	{
-	    float _Globals_1_m0 : packoffset(c23);
-	    float _Globals_1_m1 : packoffset(c23.y);
-	    float3 _Globals_1_m2 : packoffset(c29);
+	    float PerViewConstantBuffer_t_1_m0 : packoffset(c23);
+	    float PerViewConstantBuffer_t_1_m1 : packoffset(c23.y);
+	    float3 PerViewConstantBuffer_t_1_m2 : packoffset(c29);
 	};
 	
 	Texture2D<float4> g_tGBufferDepth : register(t30, space1);
@@ -106,7 +106,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = (_Globals_1_m2.x / ((_Globals_1_m2.y * clamp((g_tGBufferDepth.Load(int3(int3(int2(gl_FragCoord.xy).xy, 0).xy, 0)).x - _Globals_1_m0) / (_Globals_1_m1 - _Globals_1_m0), 0.0f, 1.0f)) + _Globals_1_m2.z)).xxxx;
+	    output_0 = (PerViewConstantBuffer_t_1_m2.x / ((PerViewConstantBuffer_t_1_m2.y * clamp((g_tGBufferDepth.Load(int3(int3(int2(gl_FragCoord.xy).xy, 0).xy, 0)).x - PerViewConstantBuffer_t_1_m0) / (PerViewConstantBuffer_t_1_m1 - PerViewConstantBuffer_t_1_m0), 0.0f, 1.0f)) + PerViewConstantBuffer_t_1_m2.z)).xxxx;
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

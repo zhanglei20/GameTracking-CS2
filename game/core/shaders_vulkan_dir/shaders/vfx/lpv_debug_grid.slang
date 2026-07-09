@@ -7,7 +7,7 @@ HEADER
 	DevShader = false;
 	Version = 1;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: gs, ps, vs
 }
@@ -42,11 +42,11 @@ VS
 	DynamicCombo( D_BLEND_WEIGHT_COUNT, 0..4 );
 	DynamicComboRule( Allow0( D_BLEND_WEIGHT_COUNT ) );
 	
-	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
-	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); >;
+	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (1512 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1432 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1125
 	{
@@ -60,14 +60,26 @@ VS
 	    float _m7;
 	};
 	
-	struct _1150
+	struct _1119
 	{
-	    float4 _m0[3];
+	    float3x4 _m0;
 	};
 	
-	struct _248
+	struct _1126
 	{
-	    _1150 _m0;
+	    uint _m0;
+	    uint _m1;
+	    uint _m2;
+	    uint _m3;
+	    uint _m4;
+	    uint _m5;
+	    uint _m6;
+	    float _m7;
+	};
+	
+	struct _1120
+	{
+	    row_major float3x4 _m0;
 	};
 	
 	ByteAddressBuffer g_instanceBuffer : register(t32, space0);
@@ -90,13 +102,29 @@ VS
 	
 	void MainVs_inner()
 	{
-	    _1150 _25207;
-	    [unroll]
-	    for (int _0ident = 0; _0ident < 3; _0ident++)
-	    {
-	        _25207._m0[_0ident] = asfloat(g_transformBuffer.Load4(_0ident * 16 + g_instanceBuffer.Load(nInstanceIdx * 32 + 4) * 48 + 0));
-	    }
-	    output_0 = mul(float3x4(_25207._m0[0], _25207._m0[1], _25207._m0[2]), float4(vPositionOs.xyz, 1.0f));
+	    _1126 _24007;
+	    _24007._m0 = g_instanceBuffer.Load(nInstanceIdx * 32 + 0);
+	    _24007._m1 = g_instanceBuffer.Load(nInstanceIdx * 32 + 4);
+	    _24007._m2 = g_instanceBuffer.Load(nInstanceIdx * 32 + 8);
+	    _24007._m3 = g_instanceBuffer.Load(nInstanceIdx * 32 + 12);
+	    _24007._m4 = g_instanceBuffer.Load(nInstanceIdx * 32 + 16);
+	    _24007._m5 = g_instanceBuffer.Load(nInstanceIdx * 32 + 20);
+	    _24007._m6 = g_instanceBuffer.Load(nInstanceIdx * 32 + 24);
+	    _24007._m7 = asfloat(g_instanceBuffer.Load(nInstanceIdx * 32 + 28));
+	    _1125 _19924;
+	    _19924._m0 = _24007._m0;
+	    _19924._m1 = _24007._m1;
+	    _19924._m2 = _24007._m2;
+	    _19924._m3 = _24007._m3;
+	    _19924._m4 = _24007._m4;
+	    _19924._m5 = _24007._m5;
+	    _19924._m6 = _24007._m6;
+	    _19924._m7 = _24007._m7;
+	    _1120 _8152;
+	    _8152._m0 = asfloat(uint3x4(g_transformBuffer.Load4(_19924._m1 * 48 + 0), g_transformBuffer.Load4(_19924._m1 * 48 + 16), g_transformBuffer.Load4(_19924._m1 * 48 + 32)));
+	    _1119 _20190;
+	    _20190._m0 = _8152._m0;
+	    output_0 = mul(_20190._m0, float4(vPositionOs.xyz, 1.0f));
 	}
 	
 	PS_INPUT MainVs(VS_INPUT stage_input)
@@ -130,30 +158,25 @@ GS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// Unsupported shader stage.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (3480 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2876 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	layout(points) in;
 	layout(max_vertices = 4, triangle_strip) out;
 	
-	struct _394
+	struct _1368
 	{
-	    vec4 _m0[4];
-	};
-	
-	struct _1954
-	{
-	    _394 _m0;
+	    mat4 _m0;
 	    vec4 _m1;
 	    vec3 _m2;
 	    vec3 _m3;
 	};
 	
-	layout(set = 2) uniform _1954 PerViewConstantBuffer_t;
+	layout(set = 2) uniform _1368 PerViewConstantBuffer_t;
 	
 	struct _1032
 	{
@@ -179,16 +202,15 @@ GS
 	    vec3 _8702 = PerViewConstantBuffer_t._m3 * _13108;
 	    vec3 _7336 = (_21046 + _8702).xyz;
 	    vec4 _21447 = PerViewConstantBuffer_t._m1 * 1.0;
-	    mat4 _15571 = mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	    vec4 _7230 = (vec4(_7336, 1.0) + _21447).xyzw * _15571;
+	    vec4 _20663 = (vec4(_7336, 1.0) + _21447).xyzw * PerViewConstantBuffer_t._m0;
 	    output_0 = _7336 - undetermined._m0.xyz;
 	    output_1 = _9918;
-	    _7230.y = -_7230.y;
-	    gl_Position = _7230;
+	    _20663.y = -_20663.y;
+	    gl_Position = _20663;
 	    EmitVertex();
 	    vec3 _24428 = PerViewConstantBuffer_t._m3 * _25224;
 	    vec3 _8552 = (_21046 + _24428).xyz;
-	    vec4 _18907 = (vec4(_8552, 1.0) + _21447).xyzw * _15571;
+	    vec4 _18907 = (vec4(_8552, 1.0) + _21447).xyzw * PerViewConstantBuffer_t._m0;
 	    output_0 = _8552 - undetermined._m0.xyz;
 	    output_1 = _9918;
 	    _18907.y = -_18907.y;
@@ -196,14 +218,14 @@ GS
 	    EmitVertex();
 	    vec3 _15138 = _16500 + (_11686 * _13108);
 	    vec3 _7753 = (_15138 + _8702).xyz;
-	    vec4 _18908 = (vec4(_7753, 1.0) + _21447).xyzw * _15571;
+	    vec4 _18908 = (vec4(_7753, 1.0) + _21447).xyzw * PerViewConstantBuffer_t._m0;
 	    output_0 = _7753 - undetermined._m0.xyz;
 	    output_1 = _9918;
 	    _18908.y = -_18908.y;
 	    gl_Position = _18908;
 	    EmitVertex();
 	    vec3 _18190 = (_15138 + _24428).xyz;
-	    vec4 _18909 = (vec4(_18190, 1.0) + _21447).xyzw * _15571;
+	    vec4 _18909 = (vec4(_18190, 1.0) + _21447).xyzw * PerViewConstantBuffer_t._m0;
 	    output_0 = _18190 - undetermined._m0.xyz;
 	    output_1 = _9918;
 	    _18909.y = -_18909.y;

@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 2;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -40,17 +40,12 @@ VS
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (1892 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1272 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	struct _1360
+	cbuffer PerViewConstantBuffer_t : register(b0, space0)
 	{
-	    float4 _m0[4];
-	};
-	
-	cbuffer _Globals_ : register(b0, space0)
-	{
-	    _1360 _Globals_1_m0 : packoffset(c4);
-	    float3 _Globals_1_m1 : packoffset(c26);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c4);
+	    float3 PerViewConstantBuffer_t_1_m1 : packoffset(c26);
 	};
 	
 	
@@ -74,10 +69,10 @@ VS
 	void MainVs_inner()
 	{
 	    float4 _14817 = float4(vPositionPs, 0.0f, 1.0f);
-	    float4 _24010 = mul(float4x4(float4(_Globals_1_m0._m0[0].x, _Globals_1_m0._m0[1].x, _Globals_1_m0._m0[2].x, _Globals_1_m0._m0[3].x), float4(_Globals_1_m0._m0[0].y, _Globals_1_m0._m0[1].y, _Globals_1_m0._m0[2].y, _Globals_1_m0._m0[3].y), float4(_Globals_1_m0._m0[0].z, _Globals_1_m0._m0[1].z, _Globals_1_m0._m0[2].z, _Globals_1_m0._m0[3].z), float4(_Globals_1_m0._m0[0].w, _Globals_1_m0._m0[1].w, _Globals_1_m0._m0[2].w, _Globals_1_m0._m0[3].w)), float4((vTexCoord.x * 2.0f) - 1.0f, ((1.0f - vTexCoord.y) * 2.0f) - 1.0f, 1.0f, 1.0f));
+	    float4 _14015 = mul(PerViewConstantBuffer_t_1_m0, float4((vTexCoord.x * 2.0f) - 1.0f, ((1.0f - vTexCoord.y) * 2.0f) - 1.0f, 1.0f, 1.0f));
 	    _14817.y = -vPositionPs.y;
 	    gl_Position = _14817;
-	    output_0 = normalize((_24010.xyz / _24010.w.xxx) - _Globals_1_m1);
+	    output_0 = normalize((_14015.xyz / _14015.w.xxx) - PerViewConstantBuffer_t_1_m1);
 	}
 	
 	PS_INPUT MainVs(VS_INPUT stage_input)
@@ -177,14 +172,26 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 4023 (name: SmokeConstantBuffer_t), member index 13 (name: _m13) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (22460 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (22384 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_EXT_samplerless_texture_functions : require
+	#if defined(GL_EXT_control_flow_attributes)
+	#extension GL_EXT_control_flow_attributes : require
+	#define SPIRV_CROSS_FLATTEN [[flatten]]
+	#define SPIRV_CROSS_BRANCH [[dont_flatten]]
+	#define SPIRV_CROSS_UNROLL [[unroll]]
+	#define SPIRV_CROSS_LOOP [[dont_unroll]]
+	#else
+	#define SPIRV_CROSS_FLATTEN
+	#define SPIRV_CROSS_BRANCH
+	#define SPIRV_CROSS_UNROLL
+	#define SPIRV_CROSS_LOOP
+	#endif
 	layout(early_fragment_tests) in;
 	
 	struct _1017
@@ -192,17 +199,17 @@ PS
 	    vec4 _m0;
 	};
 	
-	struct _2410
+	struct _2200
 	{
 	    vec4 _m0[16];
 	};
 	
-	struct _2536
+	struct _2326
 	{
 	    vec4 _m0[5];
 	};
 	
-	struct _2662
+	struct _2452
 	{
 	    vec4 _m0[2];
 	};
@@ -220,27 +227,27 @@ PS
 	
 	layout(set = 1) uniform _1228 PerViewConstantBuffer_t;
 	
-	struct _1867
+	struct _1663
 	{
-	    _2410 _m0;
-	    _2410 _m1;
-	    _2410 _m2;
-	    _2410 _m3;
-	    _2410 _m4;
-	    _2410 _m5;
+	    _2200 _m0;
+	    _2200 _m1;
+	    _2200 _m2;
+	    _2200 _m3;
+	    _2200 _m4;
+	    _2200 _m5;
 	    vec4 _m6;
 	    vec4 _m7;
-	    _2410 _m8;
-	    _2410 _m9;
-	    _2410 _m10;
-	    _2536 _m11;
-	    _2662 _m12;
+	    _2200 _m8;
+	    _2200 _m9;
+	    _2200 _m10;
+	    _2326 _m11;
+	    _2452 _m12;
 	    uint _m13;
 	    float _m14;
 	    uint _m15;
 	};
 	
-	layout(set = 1) uniform _1867 SmokeConstantBuffer_t;
+	layout(set = 1) uniform _1663 SmokeConstantBuffer_t;
 	
 	struct _983
 	{
@@ -278,8 +285,8 @@ PS
 	    vec2 _11253 = max(_7415.xx, _7415.yz);
 	    float _12676 = max(_11253.x, _11253.y);
 	    vec2 _16933 = min(_13037.xx, _13037.yz);
-	    float _14150 = min(_16933.x, _16933.y);
-	    if (!(!(_12676 > _14150)))
+	    float _15651 = min(_16933.x, _16933.y);
+	    if (_12676 > _15651)
 	    {
 	        discard;
 	    }
@@ -290,6 +297,7 @@ PS
 	    float _10558 = 1.0 / (((clamp((texelFetch(g_tDepthTexture, _11700, 0).x - PerViewConstantBuffer_t._m1) / _10955, 0.0, 1.0) * PerViewConstantBuffer_t._m0.z) + PerViewConstantBuffer_t._m0.w) * _15694);
 	    bool _6681 = SmokeConstantBuffer_t._m15 > 0u;
 	    bool _12666;
+	    SPIRV_CROSS_BRANCH
 	    if (_6681)
 	    {
 	        _12666 = ((1.0 / (((clamp((texelFetch(g_tDepthNoCharacters, ivec3(ivec2(gl_FragCoord.xy * float(_Globals_.g_MixedResolutionScale)), 0).xy, 0).x - PerViewConstantBuffer_t._m1) / _10955, 0.0, 1.0) * PerViewConstantBuffer_t._m0.z) + PerViewConstantBuffer_t._m0.w) * _15694)) - _10558) > 10.0;
@@ -299,18 +307,19 @@ PS
 	        _12666 = false;
 	    }
 	    float _4364 = _10558 - 2.0;
+	    SPIRV_CROSS_BRANCH
 	    if (_17986 > _4364)
 	    {
 	        discard;
 	    }
 	    vec3 _5607 = PerViewConstantBuffer_t._m3 + (_15861 * _17986);
-	    vec3 _4987 = PerViewConstantBuffer_t._m3 + (_15861 * min(_14150, _4364));
+	    vec3 _4987 = PerViewConstantBuffer_t._m3 + (_15861 * min(_15651, _4364));
 	    uint _19697 = uint(texelFetch(g_tMaskTexture, _11700, 0).x);
 	    uint _4249;
 	    uint _15529;
 	    _1017 _5767[1];
 	    uint _6386;
-	    uint _6864;
+	    uint _22420;
 	    uint _13136 = 0u;
 	    uint _16324 = 0u;
 	    uint _17017 = _19697;
@@ -318,7 +327,7 @@ PS
 	    {
 	        if (!(_17017 != 0u))
 	        {
-	            _6864 = _16324;
+	            _22420 = _16324;
 	            break;
 	        }
 	        if ((_17017 & 1u) != 0u)
@@ -340,7 +349,7 @@ PS
 	        }
 	        if (_6386 >= 1u)
 	        {
-	            _6864 = _6386;
+	            _22420 = _6386;
 	            break;
 	        }
 	        _4249 = _17017 >> uint(1);
@@ -350,13 +359,13 @@ PS
 	        _17017 = _4249;
 	        continue;
 	    }
+	    _1017 _22684[1] = _5767;
 	    vec4 _13174;
 	    do
 	    {
-	        _1017 _20544[1] = _5767;
-	        vec3 _11835 = _4987 - _5607;
-	        int _18242 = int(max(2.0, length(_11835) * 0.25));
-	        vec3 _14798 = _11835 / vec3(float(_18242 - 1));
+	        vec3 _24182 = _4987 - _5607;
+	        int _18242 = int(max(2.0, length(_24182) * 0.25));
+	        vec3 _14798 = _24182 / vec3(float(_18242 - 1));
 	        float _24637 = length(_14798);
 	        vec4 _16305;
 	        vec3 _17115;
@@ -373,7 +382,7 @@ PS
 	        bool _16863;
 	        float _17123;
 	        uint _17124;
-	        vec4 _17152;
+	        vec4 _17153;
 	        bool _13137 = false;
 	        int _17018 = 0;
 	        float _17114 = 0.0;
@@ -428,19 +437,19 @@ PS
 	                bool _7956_ladder_break = false;
 	                do
 	                {
-	                    if (!(_17019 < _6864))
+	                    if (!(_17019 < _22420))
 	                    {
 	                        _13150 = _16306;
 	                        _16312 = _17119;
 	                        _17123 = _17120;
 	                        _17124 = _17134;
-	                        _17152 = _13138;
+	                        _17153 = _13138;
 	                        _16863 = _13137;
 	                        _7956_ladder_break = true;
 	                        break;
 	                    }
-	                    uint _21927 = uint(_20544[_17019]._m0.z);
-	                    if (_17133 < _20544[_17019]._m0.x)
+	                    uint _20424 = uint(_22684[_17019]._m0.z);
+	                    if (_17133 < _22684[_17019]._m0.x)
 	                    {
 	                        _13149 = _13138;
 	                        _16311 = _16306;
@@ -449,7 +458,7 @@ PS
 	                        _18361 = _17134;
 	                        break;
 	                    }
-	                    if (_17133 > _20544[_17019]._m0.y)
+	                    if (_17133 > _22684[_17019]._m0.y)
 	                    {
 	                        _13149 = _13138;
 	                        _16311 = _16306;
@@ -458,10 +467,10 @@ PS
 	                        _18361 = _17134;
 	                        break;
 	                    }
-	                    vec3 _10842;
 	                    uint _13141;
-	                    float _13618;
 	                    float _16308;
+	                    vec3 _16882;
+	                    float _17152;
 	                    do
 	                    {
 	                        bool _12885;
@@ -477,8 +486,8 @@ PS
 	                        {
 	                            _13141 = _17134;
 	                            _16308 = _16306;
-	                            _13618 = _17120;
-	                            _10842 = _17119;
+	                            _17152 = _17120;
+	                            _16882 = _17119;
 	                            break;
 	                        }
 	                        float _13139;
@@ -503,6 +512,7 @@ PS
 	                            float _19448 = clamp((length(_14636 - (_21554 * clamp(dot(_14636, _21554) / dot(_21554, _21554), 0.0, 1.0))) * 0.0500000007450580596923828125) * SmokeConstantBuffer_t._m10._m0[_17020].x, 0.0, 1.0);
 	                            float _14626 = smoothstep(0.0, 0.00999999977648258209228515625, SmokeConstantBuffer_t._m8._m0[_17020].w) * (1.0 - smoothstep(0.00999999977648258209228515625, 0.20000000298023223876953125, SmokeConstantBuffer_t._m8._m0[_17020].w));
 	                            float _6223;
+	                            SPIRV_CROSS_BRANCH
 	                            if (_19448 < 1.0)
 	                            {
 	                                float _18731 = max(_17135, smoothstep(0.0, 1.0, 1.0 - clamp(SmokeConstantBuffer_t._m8._m0[_17020].w + clamp(_19448 + (1.0 - clamp(length(_17118 - SmokeConstantBuffer_t._m9._m0[_17020].xyz) * 0.00999999977648258209228515625, 0.0, 1.0)), 0.0, 1.0), 0.0, 1.0)));
@@ -534,20 +544,20 @@ PS
 	                        }
 	                        _13141 = _17134 | 1u;
 	                        _16308 = _13139;
-	                        _13618 = _17135;
-	                        _10842 = _16307;
+	                        _17152 = _17135;
+	                        _16882 = _16307;
 	                        break;
 	                    } while(false);
-	                    vec4 _22608;
+	                    vec4 _21317;
 	                    do
 	                    {
-	                        vec3 _25170 = _17118 + ((normalize(_10842) * pow(_13618, 3.0)) * 20.0);
-	                        vec3 _14658 = clamp((((_25170 - SmokeConstantBuffer_t._m2._m0[int(_21927)].xyz) * vec3(0.0500000007450580596923828125)) + vec3(16.0)) * vec3(0.03125), vec3(0.0), vec3(1.0));
+	                        vec3 _25170 = _17118 + ((normalize(_16882) * pow(_17152, 3.0)) * 20.0);
+	                        vec3 _14658 = clamp((((_25170 - SmokeConstantBuffer_t._m2._m0[int(_20424)].xyz) * vec3(0.0500000007450580596923828125)) + vec3(16.0)) * vec3(0.03125), vec3(0.0), vec3(1.0));
 	                        vec3 _21495 = saturate(_14658);
-	                        uint _14092 = uint(SmokeConstantBuffer_t._m3._m0[_21927].z);
+	                        uint _14092 = uint(SmokeConstantBuffer_t._m3._m0[_20424].z);
 	                        _21495.x = ((34.0 * float(_14092)) + (_21495.x * 32.0)) * 0.0018450184725224971771240234375;
 	                        vec4 _11487 = textureLod(sampler3D(g_tSmokeVolumeTexA_Atlas, g_sTrilinearClamp), _21495.xyz, 0.0);
-	                        vec2 _7714 = mix(_11487.xz, _11487.yw, vec2(SmokeConstantBuffer_t._m3._m0[_21927].y));
+	                        vec2 _7714 = mix(_11487.xz, _11487.yw, vec2(SmokeConstantBuffer_t._m3._m0[_20424].y));
 	                        float _20593 = _7714.x;
 	                        float _6734 = _7714.y;
 	                        vec4 _13144;
@@ -564,16 +574,18 @@ PS
 	                        {
 	                            _18056 = _13144.xyzw;
 	                        }
-	                        float _6665 = clamp(mix(_18056.w, -0.0500000007450580596923828125, _13618), 0.0, 1.0);
+	                        float _6665 = clamp(mix(_18056.w, -0.0500000007450580596923828125, _17152), 0.0, 1.0);
+	                        SPIRV_CROSS_BRANCH
 	                        if (_6665 > 0.00999999977648258209228515625)
 	                        {
 	                            vec4 _20413 = textureLod(sampler3D(g_tSmokeVolumeLPV_Atlas, g_sTrilinearClamp), _21495.xyz, 0.0);
-	                            float _15720 = clamp(clamp((_6665 - 0.00999999977648258209228515625) * 1.01010096073150634765625, 0.0, 1.0) * max(0.5, clamp((abs(sin((_14658.x * 18.840000152587890625) + (SmokeConstantBuffer_t._m14 * 0.699999988079071044921875))) + abs(cos((_14658.y * 31.40000152587890625) + (SmokeConstantBuffer_t._m14 * 0.5)))) * 0.5, 0.0, 1.0)), 0.0, 1.0) * clamp((SmokeConstantBuffer_t._m5._m0[_21927].x * 2.0) - 0.5, 0.0, 1.0);
+	                            float _15720 = clamp(clamp((_6665 - 0.00999999977648258209228515625) * 1.01010096073150634765625, 0.0, 1.0) * max(0.5, clamp((abs(sin((_14658.x * 18.840000152587890625) + (SmokeConstantBuffer_t._m14 * 0.699999988079071044921875))) + abs(cos((_14658.y * 31.40000152587890625) + (SmokeConstantBuffer_t._m14 * 0.5)))) * 0.5, 0.0, 1.0)), 0.0, 1.0) * clamp((SmokeConstantBuffer_t._m5._m0[_20424].x * 2.0) - 0.5, 0.0, 1.0);
 	                            float _22281 = clamp(_15720 + ((1.0 - clamp(distance(PerViewConstantBuffer_t._m3, _25170) * 0.100000001490116119384765625, 0.0, 1.0)) * _15720), 0.0, 1.0);
 	                            float _13147;
 	                            vec3 _13734;
 	                            float _15157;
 	                            float _16310;
+	                            SPIRV_CROSS_BRANCH
 	                            if (_6681)
 	                            {
 	                                float _13142;
@@ -608,7 +620,7 @@ PS
 	                                        vec3 _13145;
 	                                        float _16382;
 	                                        float _16480;
-	                                        if (_10810 < (SmokeConstantBuffer_t._m3._m0[_21927].x - 0.4000000059604644775390625))
+	                                        if (_10810 < (SmokeConstantBuffer_t._m3._m0[_20424].x - 0.4000000059604644775390625))
 	                                        {
 	                                            float _13668 = distance(_16309, SmokeConstantBuffer_t._m11._m0[_17021].xyz);
 	                                            vec3 _13143;
@@ -799,9 +811,10 @@ PS
 	                            }
 	                            float _8377 = clamp((((1.0 - _13155) * 0.60000002384185791015625) + ((1.0 - _13158) * 0.2800000011920928955078125)) + 0.119999997317790985107421875, 0.0, 1.0);
 	                            float _9429;
-	                            if (SmokeConstantBuffer_t._m5._m0[_21927].w < 1.0)
+	                            SPIRV_CROSS_BRANCH
+	                            if (SmokeConstantBuffer_t._m5._m0[_20424].w < 1.0)
 	                            {
-	                                float _17097 = clamp(SmokeConstantBuffer_t._m5._m0[_21927].w, 9.9999997473787516355514526367188e-05, 0.99989998340606689453125);
+	                                float _17097 = clamp(SmokeConstantBuffer_t._m5._m0[_20424].w, 9.9999997473787516355514526367188e-05, 0.99989998340606689453125);
 	                                float _8419 = smoothstep(0.0, 0.800000011920928955078125, _17097);
 	                                float _14551 = smoothstep(0.20000000298023223876953125, 1.0, _17097);
 	                                float _12502;
@@ -823,6 +836,7 @@ PS
 	                            }
 	                            float _15862 = pow(clamp((dot(normalize(_14658 - vec3(0.5)), PerViewLightingConstantBufferGpu_t._m0.xyz) * 0.800000011920928955078125) + 0.20000000298023223876953125, 0.0, 1.0), 2.0);
 	                            float _11659;
+	                            SPIRV_CROSS_BRANCH
 	                            if (_15862 > 0.0)
 	                            {
 	                                _11659 = _15862 * _20413.w;
@@ -831,35 +845,34 @@ PS
 	                            {
 	                                _11659 = _15862;
 	                            }
-	                            vec3 _7844 = (((_20413.xyz * (1.0 - _9429)) * 0.5) + (saturate(PerViewLightingConstantBufferGpu_t._m1.xyz) * (_11659 * (1.0 - _13618)))) * _8377;
-	                            vec3 _23772 = _7844 * SmokeConstantBuffer_t._m4._m0[_21927].xyz;
-	                            vec3 _25142 = mix(_7844, _23772 * (dot(_7844.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)) / dot((_23772 + vec3(0.001000000047497451305389404296875)).xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))), vec3(0.5 * (1.0 - SmokeConstantBuffer_t._m5._m0[_21927].z))).xyz;
+	                            vec3 _7844 = (((_20413.xyz * (1.0 - _9429)) * 0.5) + (saturate(PerViewLightingConstantBufferGpu_t._m1.xyz) * (_11659 * (1.0 - _17152)))) * _8377;
+	                            vec3 _23772 = _7844 * SmokeConstantBuffer_t._m4._m0[_20424].xyz;
+	                            vec3 _25142 = mix(_7844, _23772 * (dot(_7844.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)) / dot((_23772 + vec3(0.001000000047497451305389404296875)).xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))), vec3(0.5 * (1.0 - SmokeConstantBuffer_t._m5._m0[_20424].z))).xyz;
 	                            vec3 _21313 = mix(_25142, _25142 * _13147, vec3(0.60000002384185791015625)).xyz;
 	                            float _9049 = smoothstep(0.0, 0.20000000298023223876953125, clamp(mix(_9429 - (1.0 - _8377), _9429 + _8377, _9429), 0.0, 1.0));
-	                            _22608 = _13138 + (vec4(clamp((_21313 + ((_21313 * vec3(8.0, 4.0, 0.0)) * _16308)) * _9049, vec3(0.0), vec3(1.0)), _9049) * (1.0 - _13138.w));
+	                            _21317 = _13138 + (vec4(clamp((_21313 + ((_21313 * vec3(8.0, 4.0, 0.0)) * _16308)) * _9049, vec3(0.0), vec3(1.0)), _9049) * (1.0 - _13138.w));
 	                            break;
 	                        }
-	                        _22608 = _13138;
+	                        _21317 = _13138;
 	                        break;
 	                    } while(false);
-	                    _20544[_17019] = _20544[_17019];
-	                    if (_22608.w > 0.990999996662139892578125)
+	                    if (_21317.w > 0.990999996662139892578125)
 	                    {
-	                        vec4 _23482 = _22608;
+	                        vec4 _23482 = _21317;
 	                        _23482.w = 1.0;
 	                        _13150 = _16308;
-	                        _16312 = _10842;
-	                        _17123 = _13618;
+	                        _16312 = _16882;
+	                        _17123 = _17152;
 	                        _17124 = _13141;
-	                        _17152 = _23482;
+	                        _17153 = _23482;
 	                        _16863 = true;
 	                        _7956_ladder_break = true;
 	                        break;
 	                    }
-	                    _13149 = _22608;
+	                    _13149 = _21317;
 	                    _16311 = _16308;
-	                    _17121 = _10842;
-	                    _14891 = _13618;
+	                    _17121 = _16882;
+	                    _14891 = _17152;
 	                    _18361 = _13141;
 	                    break;
 	                } while(false);
@@ -878,7 +891,7 @@ PS
 	            }
 	            if (_16863)
 	            {
-	                _13174 = _17152;
+	                _13174 = _17153;
 	                _16054 = _16863;
 	                break;
 	            }
@@ -886,7 +899,7 @@ PS
 	            _7831 = _17133 + _24637;
 	            _11496 = _17018 + 1;
 	            _13137 = _16863;
-	            _16305 = _17152;
+	            _16305 = _17153;
 	            _17114 = _13150;
 	            _17115 = _16312;
 	            _17116 = _17123;

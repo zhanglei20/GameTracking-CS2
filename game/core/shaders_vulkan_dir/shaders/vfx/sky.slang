@@ -7,8 +7,8 @@ HEADER
 	DevShader = false;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -42,50 +42,56 @@ VS
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	float4x4 g_matSkyWsToOs < Attribute("SkyWsToOs"); >;
 	
-	// SPIR-V reflection failed for backend HLSL:
-	// cbuffer ID 4459 (name: PerViewConstantBuffer_t), member index 1 (name: _m1) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
-	// Re-attempting reflection with the GLSL backend.
-	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2812 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1684 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	#version 460
-	
-	struct anon_g_matSkyWsToOs
+	cbuffer _Globals_ : register(b0, space0)
 	{
-	    vec4 _m0[4];
+	    column_major float4x4 _Globals_1_g_matSkyWsToOs : packoffset(c0);
 	};
 	
-	struct _1915
+	cbuffer PerViewConstantBuffer_t : register(b1, space0)
 	{
-	    anon_g_matSkyWsToOs g_matSkyWsToOs;
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    float PerViewConstantBuffer_t_1_m1 : packoffset(c23.z);
+	    float PerViewConstantBuffer_t_1_m2 : packoffset(c23.w);
+	    float4 PerViewConstantBuffer_t_1_m3 : packoffset(c24);
+	    float3 PerViewConstantBuffer_t_1_m4 : packoffset(c26);
 	};
 	
-	layout(set = 0) uniform _1915 _Globals_;
 	
-	struct _2151
+	static float4 gl_Position;
+	static float4 vPositionOs;
+	static float3 output_0;
+	
+	struct VS_INPUT
 	{
-	    anon_g_matSkyWsToOs _m0;
-	    float _m1;
-	    float _m2;
-	    vec4 _m3;
-	    vec3 _m4;
+	    float4 vPositionOs : TEXCOORD0;
 	};
 	
-	layout(set = 0) uniform _2151 PerViewConstantBuffer_t;
-	
-	layout(location = 0) in vec4 vPositionOs;
-	layout(location = 0) out vec3 output_0;
-	
-	void main()
+	struct PS_INPUT
 	{
-	    vec4 _23552 = (vec4((PerViewConstantBuffer_t._m4.xyz + (vPositionOs.xyz * (PerViewConstantBuffer_t._m1 + PerViewConstantBuffer_t._m2))).xyz, 1.0) + (PerViewConstantBuffer_t._m3 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	    output_0 = normalize((mat4(vec4(_Globals_.g_matSkyWsToOs._m0[0].x, _Globals_.g_matSkyWsToOs._m0[1].x, _Globals_.g_matSkyWsToOs._m0[2].x, _Globals_.g_matSkyWsToOs._m0[3].x), vec4(_Globals_.g_matSkyWsToOs._m0[0].y, _Globals_.g_matSkyWsToOs._m0[1].y, _Globals_.g_matSkyWsToOs._m0[2].y, _Globals_.g_matSkyWsToOs._m0[3].y), vec4(_Globals_.g_matSkyWsToOs._m0[0].z, _Globals_.g_matSkyWsToOs._m0[1].z, _Globals_.g_matSkyWsToOs._m0[2].z, _Globals_.g_matSkyWsToOs._m0[3].z), vec4(_Globals_.g_matSkyWsToOs._m0[0].w, _Globals_.g_matSkyWsToOs._m0[1].w, _Globals_.g_matSkyWsToOs._m0[2].w, _Globals_.g_matSkyWsToOs._m0[3].w)) * vec4(vPositionOs.xyz, 0.0)).xyz);
-	    _23552.y = -_23552.y;
-	    gl_Position = _23552;
+	    float3 output_0 : TEXCOORD0;
+	    float4 gl_Position : SV_Position;
+	};
+	
+	void MainVs_inner()
+	{
+	    float4 _17914 = mul(PerViewConstantBuffer_t_1_m0, (float4((PerViewConstantBuffer_t_1_m4.xyz + (vPositionOs.xyz * (PerViewConstantBuffer_t_1_m1 + PerViewConstantBuffer_t_1_m2))).xyz, 1.0f) + (PerViewConstantBuffer_t_1_m3 * 1.0f)).xyzw);
+	    output_0 = normalize(mul(float4(vPositionOs.xyz, 0.0f), _Globals_1_g_matSkyWsToOs).xyz);
+	    _17914.y = -_17914.y;
+	    gl_Position = _17914;
 	}
 	
+	PS_INPUT MainVs(VS_INPUT stage_input)
+	{
+	    vPositionOs = stage_input.vPositionOs;
+	    MainVs_inner();
+	    PS_INPUT stage_output;
+	    stage_output.gl_Position = gl_Position;
+	    stage_output.output_0 = output_0;
+	    return stage_output;
+	}
 	
 	// ---------  SPIRV -> HLSL end  --------- 
 	
@@ -140,7 +146,7 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 2 (name: g_vTint) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io

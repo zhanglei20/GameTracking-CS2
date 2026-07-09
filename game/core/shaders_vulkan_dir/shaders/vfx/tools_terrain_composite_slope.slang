@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -93,11 +93,11 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 1 (name: g_vLayerSize) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2320 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2336 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_EXT_samplerless_texture_functions : require
@@ -133,7 +133,7 @@ PS
 	        {
 	            break;
 	        }
-	        uvec2 _10352 = uvec2(textureSize(g_tDisplacement, 0));
+	        uvec2 _10352 = uvec2(textureSize(g_tDisplacement, int(0u)));
 	        vec2 _19607 = vec2(1.0) / vec2(ivec2(int(_10352.x), int(_10352.y)));
 	        vec3 _10323 = abs(_20688 - (vec3((_19607 * _Globals_.g_vLayerSize) * _863[_16208], 0.0) + (texture(sampler2D(g_tDisplacement, AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipPoint), (input_0 + (_19607 * _863[_16208])).xy).zyx * _Globals_.g_vDisplacementScale)));
 	        float _23793 = _10323.z;

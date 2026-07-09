@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 1;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -40,17 +40,12 @@ VS
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2064 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1444 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	struct _2032
+	cbuffer PerViewConstantBuffer_t : register(b0, space0)
 	{
-	    float4 _m0[4];
-	};
-	
-	cbuffer _Globals_ : register(b0, space0)
-	{
-	    _2032 _Globals_1_m0 : packoffset(c4);
-	    float3 _Globals_1_m1 : packoffset(c26);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c4);
+	    float3 PerViewConstantBuffer_t_1_m1 : packoffset(c26);
 	};
 	
 	
@@ -78,12 +73,12 @@ VS
 	void MainVs_inner()
 	{
 	    float4 _14817 = float4(vPositionPs, 0.0f, 1.0f);
-	    float4 _24010 = mul(float4x4(float4(_Globals_1_m0._m0[0].x, _Globals_1_m0._m0[1].x, _Globals_1_m0._m0[2].x, _Globals_1_m0._m0[3].x), float4(_Globals_1_m0._m0[0].y, _Globals_1_m0._m0[1].y, _Globals_1_m0._m0[2].y, _Globals_1_m0._m0[3].y), float4(_Globals_1_m0._m0[0].z, _Globals_1_m0._m0[1].z, _Globals_1_m0._m0[2].z, _Globals_1_m0._m0[3].z), float4(_Globals_1_m0._m0[0].w, _Globals_1_m0._m0[1].w, _Globals_1_m0._m0[2].w, _Globals_1_m0._m0[3].w)), float4((vTexCoord.x * 2.0f) - 1.0f, ((1.0f - vTexCoord.y) * 2.0f) - 1.0f, 1.0f, 1.0f));
+	    float4 _14015 = mul(PerViewConstantBuffer_t_1_m0, float4((vTexCoord.x * 2.0f) - 1.0f, ((1.0f - vTexCoord.y) * 2.0f) - 1.0f, 1.0f, 1.0f));
 	    _14817.y = -vPositionPs.y;
 	    gl_Position = _14817;
 	    output_0 = vTexCoord;
 	    output_1 = 1.0f.xxxx;
-	    output_2 = normalize((_24010.xyz / _24010.w.xxx) - _Globals_1_m1.xyz);
+	    output_2 = normalize((_14015.xyz / _14015.w.xxx) - PerViewConstantBuffer_t_1_m1.xyz);
 	}
 	
 	PS_INPUT MainVs(VS_INPUT stage_input)
@@ -123,45 +118,45 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 1 (name: g_vTintColor) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (5708 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (5660 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_EXT_samplerless_texture_functions : require
 	layout(early_fragment_tests) in;
 	
-	struct _2746
+	struct _2662
 	{
 	    vec4 _m0[256];
 	};
 	
-	struct _2872
+	struct _2788
 	{
 	    vec4 _m0[16];
 	};
 	
-	struct _1876
+	struct _1816
 	{
 	    uvec4 _m0[64];
 	};
 	
-	struct _1966
+	struct _1906
 	{
 	    uvec4 _m0[4];
 	};
 	
-	struct _2195
+	struct _1235
 	{
-	    _2746 _m0;
-	    _2872 _m1;
-	    _1876 _m2;
-	    _1966 _m3;
+	    _2662 _m0;
+	    _2788 _m1;
+	    _1816 _m2;
+	    _1906 _m3;
 	};
 	
-	layout(set = 1) uniform _2195 BoundingBoxConstantBufferFire_t;
+	layout(set = 1) uniform _1235 BoundingBoxConstantBufferFire_t;
 	
 	struct _1285
 	{
@@ -226,32 +221,25 @@ PS
 	        uint _16209 = BoundingBoxConstantBufferFire_t._m2._m0[_15661][_8743];
 	        for (;;)
 	        {
-	            bool _7956_ladder_break = false;
-	            do
-	            {
-	                if (!(_16209 != 0u))
-	                {
-	                    _7956_ladder_break = true;
-	                    break;
-	                }
-	                _10019 = _16209 & (_16209 - 1u);
-	                uint _23944 = _10083 + uint(findLSB(_16209));
-	                vec3 _11346 = _15651 - BoundingBoxConstantBufferFire_t._m0._m0[_23944].xyz;
-	                _11346.z = _11346.z * 2.0;
-	                float _24065 = PerViewConstantBuffer_t._m1 - BoundingBoxConstantBufferFire_t._m0._m0[_23944].w;
-	                float _9251 = length(_11346) - _24065;
-	                if (_9251 >= 100.0)
-	                {
-	                    _12501 = _13156;
-	                    break;
-	                }
-	                _12501 = max(_13156, (smoothstep(100.0, 50.0, _9251) * smoothstep(0.0, 1.0, _24065)) * smoothstep(6.5, 5.5, BoundingBoxConstantBufferFire_t._m0._m0[_23944].w - BoundingBoxConstantBufferFire_t._m1._m0[_17426].x));
-	                break;
-	            } while(false);
-	            if (_7956_ladder_break)
+	            if (!(_16209 != 0u))
 	            {
 	                break;
 	            }
+	            uint _17427 = uint(findLSB(_16209));
+	            _10019 = _16209 & (_16209 - 1u);
+	            uint _23944 = _10083 + _17427;
+	            vec3 _11346 = _15651 - BoundingBoxConstantBufferFire_t._m0._m0[_23944].xyz;
+	            _11346.z = _11346.z * 2.0;
+	            float _24065 = PerViewConstantBuffer_t._m1 - BoundingBoxConstantBufferFire_t._m0._m0[_23944].w;
+	            float _9251 = length(_11346) - _24065;
+	            if (_9251 >= 100.0)
+	            {
+	                _12501 = _13156;
+	                _13156 = _12501;
+	                _16209 = _10019;
+	                continue;
+	            }
+	            _12501 = max(_13156, (smoothstep(100.0, 50.0, _9251) * smoothstep(0.0, 1.0, _24065)) * smoothstep(6.5, 5.5, BoundingBoxConstantBufferFire_t._m0._m0[_23944].w - BoundingBoxConstantBufferFire_t._m1._m0[_17426].x));
 	            _13156 = _12501;
 	            _16209 = _10019;
 	            continue;

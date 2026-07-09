@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_60
 	// Programs: rtx
 }
@@ -32,11 +32,11 @@ RTX
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// Unsupported builtin in HLSL: 5319
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (16184 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (15512 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#if defined(GL_AMD_gpu_shader_half_float)
@@ -52,36 +52,31 @@ RTX
 	
 	struct MaterialDataMinimal_t
 	{
-	    f16vec3 vMaterialBits;
-	    float16_t _m1;
-	    f16vec3 _m2;
-	    float16_t _m3;
-	    f16vec3 _m4;
-	    float16_t _m5;
-	    uint _m6;
-	    f16vec4 _m7;
+	    f16vec3 vNormalWs;
+	    float16_t flMetalness;
+	    f16vec3 vAlbedo;
+	    float16_t flRoughness;
+	    f16vec3 vEmissive;
+	    float16_t flReflectance;
+	    uint nMaterialTypeAndFlags;
+	    f16vec4 vMaterialBits;
 	};
 	
 	struct Payload_t
 	{
-	    vec3 material;
-	    vec3 _m1;
-	    vec3 _m2;
-	    float _m3;
-	    float _m4;
-	    int _m5;
-	    bool _m6;
-	    MaterialDataMinimal_t _m7;
+	    vec3 vSmoothPositionWs;
+	    vec3 vFaceNormalWs;
+	    vec3 vInterpolatedNormalWs;
+	    float flHitT;
+	    float flOpacityRng;
+	    int nInstance;
+	    bool bFlippedNormal;
+	    MaterialDataMinimal_t material;
 	};
 	
-	struct _MatrixStorage_float4x4_ColMajornatural
+	struct PayloadShadow_t
 	{
-	    vec4 data[4];
-	};
-	
-	struct _MatrixStorage_float4x3_ColMajornatural
-	{
-	    vec4 data[3];
+	    float m_flVisibility;
 	};
 	
 	struct SceneGlobalInfoGPU_t_natural
@@ -92,27 +87,22 @@ RTX
 	    vec4 m_vLocalLightMinBounds;
 	    vec4 m_vLocalLightMaxBounds;
 	    ivec4 m_vLightBinCellCount_nLightCount;
-	    _MatrixStorage_float4x3_ColMajornatural m_mIBLTransformI;
+	    mat4x3 m_mIBLTransformI;
 	    vec4 m_vIBLCubeMapScale;
 	    ivec4 m_vIBLParams;
 	    ivec4 m_vBrdfLUTs;
 	};
 	
-	struct PayloadShadow_t
-	{
-	    float m_flVisibility;
-	};
-	
-	vec4 _133;
+	vec4 _128;
 	
 	layout(set = 3, binding = 37, std430) readonly buffer StructuredBuffer
 	{
-	    SceneGlobalInfoGPU_t_natural _m0[];
+	    layout(row_major) SceneGlobalInfoGPU_t_natural _member0[];
 	} g_SceneGlobalInfo;
 	
 	layout(push_constant, std430) uniform PushConstants_t_t_natural
 	{
-	    _MatrixStorage_float4x4_ColMajornatural m_mInvViewProj;
+	    layout(row_major) mat4 m_mInvViewProj;
 	    vec4 m_vCameraOrigin;
 	    vec4 m_vRandomOffsets;
 	    ivec4 m_nIntParams;
@@ -122,22 +112,22 @@ RTX
 	layout(set = 6, binding = 161) uniform readonly image3D g_RandomSamples;
 	layout(location = 0) rayPayloadEXT Payload_t p;
 	layout(set = 3, binding = 30) uniform accelerationStructureEXT g_AccelStruct;
+	layout(location = 1) rayPayloadEXT PayloadShadow_t p_1;
 	layout(set = 4, binding = 46) uniform textureCube g_bindless_TextureCube[65536];
 	layout(set = 3, binding = 14) uniform sampler g_Sampler;
-	layout(location = 1) rayPayloadEXT PayloadShadow_t p_1;
 	layout(set = 6, binding = 159) uniform image2D g_VarianceImage;
 	
 	void main()
 	{
-	    vec2 _219 = (((vec2(gl_LaunchIDEXT.xy) + PushConstants_t.m_vRandomOffsets.xy) / vec2(gl_LaunchSizeEXT.xy)) * 2.0) - vec2(1.0);
-	    _219.y = -_219.y;
-	    vec4 _225 = mat4(vec4(PushConstants_t.m_mInvViewProj.data[0].x, PushConstants_t.m_mInvViewProj.data[1].x, PushConstants_t.m_mInvViewProj.data[2].x, PushConstants_t.m_mInvViewProj.data[3].x), vec4(PushConstants_t.m_mInvViewProj.data[0].y, PushConstants_t.m_mInvViewProj.data[1].y, PushConstants_t.m_mInvViewProj.data[2].y, PushConstants_t.m_mInvViewProj.data[3].y), vec4(PushConstants_t.m_mInvViewProj.data[0].z, PushConstants_t.m_mInvViewProj.data[1].z, PushConstants_t.m_mInvViewProj.data[2].z, PushConstants_t.m_mInvViewProj.data[3].z), vec4(PushConstants_t.m_mInvViewProj.data[0].w, PushConstants_t.m_mInvViewProj.data[1].w, PushConstants_t.m_mInvViewProj.data[2].w, PushConstants_t.m_mInvViewProj.data[3].w)) * vec4(_219.xy, 0.0, 1.0);
-	    vec3 _229 = _225.xyz / vec3(_225.w);
-	    vec4 _231;
-	    _231.x = _229.x;
-	    _231.y = _229.y;
-	    _231.z = _229.z;
-	    vec3 _240 = normalize(_231.xyz - PushConstants_t.m_vCameraOrigin.xyz);
+	    vec2 _199 = (((vec2(gl_LaunchIDEXT.xy) + PushConstants_t.m_vRandomOffsets.xy) / vec2(gl_LaunchSizeEXT.xy)) * 2.0) - vec2(1.0);
+	    _199.y = -_199.y;
+	    vec4 _205 = PushConstants_t.m_mInvViewProj * vec4(_199.xy, 0.0, 1.0);
+	    vec3 _209 = _205.xyz / vec3(_205.w);
+	    vec4 _211;
+	    _211.x = _209.x;
+	    _211.y = _209.y;
+	    _211.z = _209.z;
+	    vec3 _220 = normalize(_211.xyz - PushConstants_t.m_vCameraOrigin.xyz);
 	    vec4 vCurrentSample;
 	    if (PushConstants_t.m_nIntParams.y > 0)
 	    {
@@ -147,95 +137,101 @@ RTX
 	    {
 	        vCurrentSample = vec4(0.0);
 	    }
-	    uvec3 _255 = uvec3(imageSize(g_RandomSamples));
-	    ivec3 _175;
-	    ivec3 _258 = _175;
-	    _258.x = int(_255.x);
-	    _258.y = int(_255.y);
-	    _258.z = int(_255.z);
-	    _175 = _258;
-	    ivec2 _267 = ivec2(gl_LaunchIDEXT.xy) - _258.xy * (ivec2(gl_LaunchIDEXT.xy) / _258.xy);
-	    f16vec3 _276 = f16vec3(vec3(0.0));
-	    vec3 _154;
-	    p = Payload_t(vec3(3.4028234663852885981170418348452e+38), vec3(0.0), _154, 3.4028234663852885981170418348452e+38, imageLoad(g_RandomSamples, ivec3(uvec3(ivec3(_267.xy, 1)))).xy.y, -1, false, MaterialDataMinimal_t(_276, float16_t(0.0), f16vec3(vec3(1.0, 0.0, 1.0)), float16_t(1.0), _276, float16_t(0.040008544921875), 0u, f16vec4(ivec4(0))));
-	    traceRayEXT(g_AccelStruct, 16u, 1u, 0u, 2u, 0u, PushConstants_t.m_vCameraOrigin.xyz, 0.0, _240, 56755.83984375, 0);
-	    vec3 _153 = p.material;
-	    vec3 _152 = p._m1;
-	    float _151 = p._m3;
-	    f16vec3 _142 = p._m7.vMaterialBits;
-	    float16_t _141 = p._m7._m1;
-	    f16vec3 _140 = p._m7._m2;
-	    float16_t _139 = p._m7._m3;
-	    f16vec3 _138 = p._m7._m4;
-	    float16_t _137 = p._m7._m5;
-	    uint _136 = p._m7._m6;
-	    f16vec4 _135 = p._m7._m7;
+	    uvec3 _235 = uvec3(imageSize(g_RandomSamples));
+	    ivec3 _181;
+	    ivec3 _238 = _181;
+	    _238.x = int(_235.x);
+	    _238.y = int(_235.y);
+	    _238.z = int(_235.z);
+	    _181 = _238;
+	    ivec2 _247 = ivec2(gl_LaunchIDEXT.xy) - _238.xy * (ivec2(gl_LaunchIDEXT.xy) / _238.xy);
+	    f16vec3 _254 = f16vec3(vec3(0.0));
+	    vec3 _157;
+	    p = Payload_t(vec3(3.4028234663852885981170418348452e+38), vec3(0.0), _157, 3.4028234663852885981170418348452e+38, imageLoad(g_RandomSamples, ivec3(_247.xy, 1)).xy.y, -1, false, MaterialDataMinimal_t(_254, float16_t(0.0), f16vec3(vec3(1.0, 0.0, 1.0)), float16_t(1.0), _254, float16_t(0.040008544921875), 0u, f16vec4(ivec4(0))));
+	    traceRayEXT(g_AccelStruct, 16u, 1u, 0u, 2u, 0u, PushConstants_t.m_vCameraOrigin.xyz, 0.0, _220, 56755.83984375, 0);
+	    vec3 _156 = p.vSmoothPositionWs;
+	    vec3 _155 = p.vFaceNormalWs;
+	    float _154 = p.flHitT;
+	    f16vec3 _137 = p.material.vNormalWs;
+	    float16_t _136 = p.material.flMetalness;
+	    f16vec3 _135 = p.material.vAlbedo;
+	    float16_t _134 = p.material.flRoughness;
+	    f16vec3 _133 = p.material.vEmissive;
+	    float16_t _132 = p.material.flReflectance;
+	    uint _131 = p.material.nMaterialTypeAndFlags;
+	    f16vec4 _130 = p.material.vMaterialBits;
 	    vec3 vNewSample;
-	    if (p._m5 != (-1))
+	    if (p.nInstance != (-1))
 	    {
+	        vec3 _153 = PushConstants_t.m_vCameraOrigin.xyz;
+	        vec3 _152 = _220;
 	        do
 	        {
-	            vec3 _156 = (PushConstants_t.m_vCameraOrigin.xyz + (_240 * _151)) + (_152 * ((abs(PushConstants_t.m_vCameraOrigin.xyz) + vec3(abs(_151))) * 9.9999997473787516355514526367188e-05));
-	            vec3 _155 = _152;
-	            bool _168;
+	            vec3 _160 = _156;
+	            vec3 _159 = _155;
+	            float _158 = _154;
+	            f16vec3 _146 = _137;
+	            vec3 _162 = (_153 + (_152 * _158)) + (_159 * ((abs(_153) + vec3(abs(_158))) * 9.9999997473787516355514526367188e-05));
+	            vec3 _161 = _159;
+	            bool _180;
 	            if (false)
 	            {
-	                _168 = any(notEqual(_153, vec3(3.4028234663852885981170418348452e+38)));
+	                _180 = any(notEqual(_160, vec3(3.4028234663852885981170418348452e+38)));
 	            }
 	            else
 	            {
-	                _168 = false;
+	                _180 = false;
 	            }
-	            vec3 _474 = _153 - _156;
-	            float _475 = length(_474);
-	            vec3 _159 = _156;
-	            float _158 = 0.0;
-	            vec3 _157 = vec4(_474 / vec3(_475), _475).xyz;
-	            float _167;
-	            if (_168)
+	            vec3 _313 = _160 - _162;
+	            float _314 = length(_313);
+	            vec3 _165 = _162;
+	            float _164 = 0.0;
+	            vec3 _163 = vec4(_313 / vec3(_314), _314).xyz;
+	            float _179;
+	            if (_180)
 	            {
-	                _167 = _475;
+	                _179 = _314;
 	            }
 	            else
 	            {
-	                _167 = 0.0;
+	                _179 = 0.0;
 	            }
 	            p_1 = PayloadShadow_t(1.0);
-	            traceRayEXT(g_AccelStruct, 0u, 255u, 1u, 2u, 1u, _159, _158, _157, _167, 1);
-	            if (_168)
+	            traceRayEXT(g_AccelStruct, 0u, 255u, 1u, 2u, 1u, _165, _164, _163, _179, 1);
+	            if (_180)
 	            {
-	                _167 = p_1.m_flVisibility;
+	                _179 = p_1.m_flVisibility;
 	            }
 	            else
 	            {
-	                _167 = 0.0;
+	                _179 = 0.0;
 	            }
-	            if (_167 == 1.0)
+	            if (_179 == 1.0)
 	            {
-	                _156 = _153;
-	                _155 = vec3(_142);
+	                _162 = _160;
+	                _161 = vec3(_146);
 	            }
-	            vec3 _160;
-	            p = Payload_t(vec3(3.4028234663852885981170418348452e+38), vec3(0.0), _160, 3.4028234663852885981170418348452e+38, 0.0, -1, false, MaterialDataMinimal_t(_142, _141, _140, _139, _138, _137, _136, _135));
-	            traceRayEXT(g_AccelStruct, 32u, 32u, 0u, 2u, 0u, _156 - ((_155 * 0.5) * 0.5), 0.0, _155, 0.5, 0);
-	            f16vec3 _150 = p._m7.vMaterialBits;
-	            float16_t _149 = p._m7._m1;
-	            f16vec3 _148 = p._m7._m2;
-	            float16_t _147 = p._m7._m3;
-	            f16vec3 _146 = p._m7._m4;
-	            float16_t _145 = p._m7._m5;
-	            uint _144 = p._m7._m6;
-	            f16vec4 _143 = p._m7._m7;
-	            if (p._m5 != (-1))
+	            vec3 _166;
+	            p = Payload_t(vec3(3.4028234663852885981170418348452e+38), vec3(0.0), _166, 3.4028234663852885981170418348452e+38, 0.0, -1, false, MaterialDataMinimal_t(_137, _136, _135, _134, _133, _132, _131, _130));
+	            traceRayEXT(g_AccelStruct, 32u, 32u, 0u, 2u, 0u, _162 - ((_161 * 0.5) * 0.5), 0.0, _161, 0.5, 0);
+	            f16vec3 _145 = p.material.vNormalWs;
+	            float16_t _144 = p.material.flMetalness;
+	            f16vec3 _143 = p.material.vAlbedo;
+	            float16_t _142 = p.material.flRoughness;
+	            f16vec3 _141 = p.material.vEmissive;
+	            float16_t _140 = p.material.flReflectance;
+	            uint _139 = p.material.nMaterialTypeAndFlags;
+	            f16vec4 _138 = p.material.vMaterialBits;
+	            if (p.nInstance != (-1))
 	            {
-	                _142 = _150;
-	                _141 = _149;
-	                _140 = _148;
-	                _139 = _147;
-	                _138 = _146;
 	                _137 = _145;
 	                _136 = _144;
 	                _135 = _143;
+	                _134 = _142;
+	                _133 = _141;
+	                _132 = _140;
+	                _131 = _139;
+	                _130 = _138;
 	                break;
 	            }
 	            else
@@ -244,136 +240,141 @@ RTX
 	            }
 	            break;
 	        } while(false);
-	        vec3 _161 = (PushConstants_t.m_vCameraOrigin.xyz + (_240 * _151)) + (_152 * ((abs(PushConstants_t.m_vCameraOrigin.xyz) + vec3(abs(_151))) * 9.9999997473787516355514526367188e-05));
-	        bool _166;
+	        vec3 _151 = PushConstants_t.m_vCameraOrigin.xyz;
+	        vec3 _150 = _220;
+	        vec3 _149 = _156;
+	        vec3 _148 = _155;
+	        float _147 = _154;
+	        vec3 _167 = (_151 + (_150 * _147)) + (_148 * ((abs(_151) + vec3(abs(_147))) * 9.9999997473787516355514526367188e-05));
+	        bool _178;
 	        if (true)
 	        {
-	            _166 = any(notEqual(_153, vec3(3.4028234663852885981170418348452e+38)));
+	            _178 = any(notEqual(_149, vec3(3.4028234663852885981170418348452e+38)));
 	        }
 	        else
 	        {
-	            _166 = false;
+	            _178 = false;
 	        }
-	        vec3 _564 = _153 - _161;
-	        float _565 = length(_564);
-	        vec3 _164 = _161;
-	        float _163 = 0.0;
-	        vec3 _162 = vec4(_564 / vec3(_565), _565).xyz;
-	        float _165;
-	        if (_166)
+	        vec3 _410 = _149 - _167;
+	        float _411 = length(_410);
+	        vec3 _170 = _167;
+	        float _169 = 0.0;
+	        vec3 _168 = vec4(_410 / vec3(_411), _411).xyz;
+	        float _177;
+	        if (_178)
 	        {
-	            _165 = _565;
+	            _177 = _411;
 	        }
 	        else
 	        {
-	            _165 = 0.0;
+	            _177 = 0.0;
 	        }
 	        p_1 = PayloadShadow_t(1.0);
-	        traceRayEXT(g_AccelStruct, 0u, 255u, 1u, 2u, 1u, _164, _163, _162, _165, 1);
-	        if (_166)
+	        traceRayEXT(g_AccelStruct, 0u, 255u, 1u, 2u, 1u, _170, _169, _168, _177, 1);
+	        if (_178)
 	        {
-	            _165 = p_1.m_flVisibility;
+	            _177 = p_1.m_flVisibility;
 	        }
 	        else
 	        {
-	            _165 = 0.0;
+	            _177 = 0.0;
 	        }
-	        if (_165 == 1.0)
+	        if (_177 == 1.0)
 	        {
-	            _161 = _153;
+	            _167 = _149;
 	        }
-	        vNewSample = vec3(_140);
+	        vNewSample = vec3(_135);
 	    }
 	    else
 	    {
-	        vec2 _170 = imageLoad(g_RandomSamples, ivec3(uvec3(ivec3(_267.xy, 2)))).xy;
-	        bool _171;
-	        if (_240.z < 0.0)
+	        vec2 _172 = imageLoad(g_RandomSamples, ivec3(_247.xy, 2)).xy;
+	        bool _173;
+	        if (_220.z < 0.0)
 	        {
-	            float _172 = _170.y;
-	            bool _169;
+	            float _174 = _172.y;
+	            bool _171;
 	            do
 	            {
-	                if (g_SceneGlobalInfo._m0[0].m_vSkyAmbientBounce.w <= 0.0)
+	                if (g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce.w <= 0.0)
 	                {
-	                    _169 = false;
+	                    _171 = false;
 	                    break;
 	                }
-	                if (g_SceneGlobalInfo._m0[0].m_vSkyAmbientBounce.w >= 1.0)
+	                if (g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce.w >= 1.0)
 	                {
-	                    _169 = true;
+	                    _171 = true;
 	                    break;
 	                }
-	                if (_172 < g_SceneGlobalInfo._m0[0].m_vSkyAmbientBounce.w)
+	                if (_174 < g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce.w)
 	                {
-	                    _172 = min(_172 / g_SceneGlobalInfo._m0[0].m_vSkyAmbientBounce.w, 0.99999988079071044921875);
-	                    _169 = true;
+	                    _174 = min(_174 / g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce.w, 0.99999988079071044921875);
+	                    _171 = true;
 	                    break;
 	                }
-	                _172 = min((_172 - g_SceneGlobalInfo._m0[0].m_vSkyAmbientBounce.w) / (1.0 - g_SceneGlobalInfo._m0[0].m_vSkyAmbientBounce.w), 0.99999988079071044921875);
-	                _169 = false;
+	                _174 = min((_174 - g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce.w) / (1.0 - g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce.w), 0.99999988079071044921875);
+	                _171 = false;
 	                break;
 	            } while(false);
-	            vec2 _341 = _170;
-	            _341.y = _172;
-	            _170 = _341;
-	            _171 = _169;
+	            vec2 _474 = _172;
+	            _474.y = _174;
+	            _172 = _474;
+	            _173 = _171;
 	        }
 	        else
 	        {
-	            _171 = false;
+	            _173 = false;
 	        }
-	        vec3 _173;
-	        vec3 _174;
-	        if (_171)
+	        vec3 _175;
+	        vec3 _176;
+	        if (_173)
 	        {
-	            float _349 = sqrt(_170.y);
-	            float _351 = 6.283185482025146484375 * _170.x;
-	            _173 = vec3(cos(_351) * _349, sin(_351) * _349, sqrt(max(0.0, 1.0 - _170.y)));
-	            _174 = g_SceneGlobalInfo._m0[0].m_vSunLightIrradiance.xyz;
+	            float _482 = sqrt(_172.y);
+	            float _484 = 6.283185482025146484375 * _172.x;
+	            _175 = vec3(cos(_484) * _482, sin(_484) * _482, sqrt(max(0.0, 1.0 - _172.y)));
+	            _176 = g_SceneGlobalInfo._member0[0].m_vSunLightIrradiance.xyz;
 	        }
 	        else
 	        {
-	            _173 = _240;
-	            _174 = vec3(0.0);
+	            _175 = _220;
+	            _176 = vec3(0.0);
 	        }
-	        if (g_SceneGlobalInfo._m0[0].m_vIBLParams.y >= 0)
+	        if (g_SceneGlobalInfo._member0[0].m_vIBLParams.y >= 0)
 	        {
-	            vec4 _418 = textureLod(samplerCube(g_bindless_TextureCube[g_SceneGlobalInfo._m0[0].m_vIBLParams.y], g_Sampler), normalize(mat4x3(vec3(g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[0].x, g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[1].x, g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[2].x), vec3(g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[0].y, g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[1].y, g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[2].y), vec3(g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[0].z, g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[1].z, g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[2].z), vec3(g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[0].w, g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[1].w, g_SceneGlobalInfo._m0[0].m_mIBLTransformI.data[2].w)) * vec4(_173, 0.0)), 0.0);
-	            if (dot(_418.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)) < g_SceneGlobalInfo._m0[0].m_vSunLightIrradiance.w)
+	            vec4 _524 = textureLod(samplerCube(g_bindless_TextureCube[g_SceneGlobalInfo._member0[0].m_vIBLParams.y], g_Sampler), normalize(g_SceneGlobalInfo._member0[0].m_mIBLTransformI * vec4(_175, 0.0)), 0.0);
+	            if (dot(_524.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)) < g_SceneGlobalInfo._member0[0].m_vSunLightIrradiance.w)
 	            {
-	                _174 += (g_SceneGlobalInfo._m0[0].m_vIBLCubeMapScale.xyz * _418.xyz);
+	                _176 += (g_SceneGlobalInfo._member0[0].m_vIBLCubeMapScale.xyz * _524.xyz);
 	            }
 	        }
 	        else
 	        {
-	            _174 += g_SceneGlobalInfo._m0[0].m_vSkyColor.xyz;
+	            _176 += g_SceneGlobalInfo._member0[0].m_vSkyColor.xyz;
 	        }
 	        if (false)
 	        {
-	            _174 *= g_SceneGlobalInfo._m0[0].m_vIBLCubeMapScale.w;
+	            _176 *= g_SceneGlobalInfo._member0[0].m_vIBLCubeMapScale.w;
 	        }
-	        if (_171)
+	        if (_173)
 	        {
-	            _174 *= g_SceneGlobalInfo._m0[0].m_vSkyAmbientBounce.xyz;
+	            _176 *= g_SceneGlobalInfo._member0[0].m_vSkyAmbientBounce.xyz;
 	        }
-	        vNewSample = _174;
+	        vNewSample = _176;
 	    }
-	    vec4 _599 = vec4(mix(vCurrentSample.xyz, vNewSample, vec3(1.0 / (1.0 + vCurrentSample.w))), 1.0 + vCurrentSample.w);
-	    imageStore(g_OutputImage, ivec2(gl_LaunchIDEXT.xy), _599);
-	    vec2 _176;
+	    vec4 _567 = vec4(mix(vCurrentSample.xyz, vNewSample, vec3(1.0 / (1.0 + vCurrentSample.w))), 1.0 + vCurrentSample.w);
+	    imageStore(g_OutputImage, ivec2(gl_LaunchIDEXT.xy), _567);
+	    vec2 _182;
 	    if (PushConstants_t.m_nIntParams.y == 0)
 	    {
-	        _176 = vec2(0.0);
+	        _182 = vec2(0.0);
 	    }
 	    else
 	    {
-	        _176 = imageLoad(g_VarianceImage, ivec2(gl_LaunchIDEXT.xy)).xy;
+	        _182 = imageLoad(g_VarianceImage, ivec2(gl_LaunchIDEXT.xy)).xy;
 	    }
-	    float _616 = dot(vNewSample.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
-	    float _621 = _616 - _176.x;
-	    float _623 = _176.x + (_621 / _599.w);
-	    imageStore(g_VarianceImage, ivec2(gl_LaunchIDEXT.xy), vec4(vec2(_623, _176.y + (_621 * (_616 - _623))), 0.0, 0.0));
+	    float _584 = dot(vNewSample.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
+	    float _589 = _584 - _182.x;
+	    float _591 = _182.x + (_589 / _567.w);
+	    imageStore(g_VarianceImage, ivec2(gl_LaunchIDEXT.xy), vec4(vec2(_591, _182.y + (_589 * (_584 - _591))), 0.0, 0.0));
 	}
 	
 	

@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 1;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -35,7 +35,7 @@ CS
 	cbuffer PerViewLightProbeVolumeConstantBuffer_t < Attribute("PerViewLightProbeVolumeConstantBuffer_t"); >;
 	cbuffer PerViewLightingConstantBufferGpu_t < Attribute("PerViewLightingConstantBufferGpu_t"); >;
 	cbuffer SmokeConstantBuffer_t < Attribute("SmokeConstantBuffer_t"); >;
-	StructuredBuffer g_BarnLights < Attribute("BarnLights"); SrgbRead(false); >;
+	StructuredBuffer g_BarnLights < Attribute("BarnLights"); >;
 	RWTexture3D<float4> g_SmokeVolumeLPV < Attribute("SmokeVolumeLPV"); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
 	ExternalDescriptorSet g_lightBinnerGpuSet < Source(ExternalDescSet); Attribute("g_lightBinnerGpuSet"); >;
@@ -47,11 +47,11 @@ CS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 4372 (name: LightProbeVolumeData_t), member index 1 (name: _m1) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (24020 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (22348 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#if defined(GL_EXT_control_flow_attributes)
@@ -68,33 +68,41 @@ CS
 	#endif
 	layout(local_size_x = 8, local_size_y = 8, local_size_z = 1) in;
 	
-	struct _1528
+	struct _1612
 	{
 	    vec4 _m0[16];
 	};
 	
-	struct _659
-	{
-	    vec4 _m0[3];
-	};
-	
-	struct _711
+	struct _1484
 	{
 	    vec4 _m0;
 	    vec4 _m1;
-	    _659 _m2;
-	    int _m3;
-	    uint _m4;
+	    mat4x3 _m2;
+	    uint _m3;
+	    int _m4;
+	    uint _m5;
+	    int _m6;
 	};
 	
-	struct _2380
+	struct _1485
 	{
-	    _711 _m0[64];
+	    vec4 _m0;
+	    vec4 _m1;
+	    mat4x3 _m2;
+	    uint _m3;
+	    int _m4;
+	    uint _m5;
+	    int _m6;
 	};
 	
-	struct _2702
+	struct _1169
 	{
-	    _659 _m0;
+	    _1485 _m0[64];
+	};
+	
+	struct _1556
+	{
+	    mat4x3 _m0;
 	    vec3 _m1;
 	    vec3 _m2;
 	    vec4 _m3;
@@ -102,20 +110,15 @@ CS
 	    vec3 _m5;
 	};
 	
-	struct _800
+	struct _1414
 	{
-	    _2702 _m0[400];
+	    _1556 _m0[400];
 	};
 	
-	struct _1037
+	struct _200
 	{
-	    vec4 _m0[4];
-	};
-	
-	struct _1889
-	{
-	    _1037 _m0;
-	    _1037 _m1;
+	    mat4 _m0;
+	    mat4 _m1;
 	    vec4 _m2;
 	    vec4 _m3;
 	    vec4 _m4;
@@ -129,7 +132,7 @@ CS
 	    float _m12;
 	    uint _m13;
 	    int _m14;
-	    _659 _m15;
+	    mat4x3 _m15;
 	    vec4 _m16;
 	    vec4 _m17;
 	    vec4 _m18;
@@ -137,32 +140,32 @@ CS
 	    vec4 _m20;
 	    vec3 _m21;
 	    float _m22;
-	    _1037 _m23;
+	    mat4 _m23;
 	};
 	
 	vec4 _3;
 	
-	struct _1004
+	struct _1172
 	{
-	    _1528 _m0;
+	    _1612 _m0;
 	};
 	
-	layout(set = 0) uniform _1004 SmokeConstantBuffer_t;
+	layout(set = 0) uniform _1172 SmokeConstantBuffer_t;
 	
-	struct _2099
+	struct _1477
 	{
 	    uvec4 _m0;
-	    _2380 _m1;
+	    _1169 _m1;
 	};
 	
-	layout(set = 0) uniform _2099 LightProbeVolumeData_t;
+	layout(set = 0) uniform _1477 LightProbeVolumeData_t;
 	
-	struct _2559
+	struct _776
 	{
-	    _800 _m0;
+	    _1414 _m0;
 	};
 	
-	layout(set = 0) uniform _2559 PerViewLightProbeVolumeConstantBuffer_t;
+	layout(set = 0) uniform _776 PerViewLightProbeVolumeConstantBuffer_t;
 	
 	struct _1007
 	{
@@ -186,7 +189,7 @@ CS
 	
 	layout(set = 3, binding = 31, std430) readonly buffer g_BarnLights
 	{
-	    _1889 _m0[];
+	    layout(row_major) _200 _m0[];
 	} g_BarnLights_1;
 	
 	struct _1011
@@ -198,13 +201,13 @@ CS
 	
 	layout(set = 0, binding = 42) uniform texture3D g_tLPV_Irradiance;
 	layout(set = 0, binding = 15) uniform sampler g_sBilinearClamp;
-	layout(set = 0, binding = 48) uniform texture3D g_tLPV_Shadows;
-	layout(set = 0, binding = 158) uniform writeonly image3D _4931;
 	layout(set = 0, binding = 34) uniform texture3D g_tLightCookieTexture;
-	layout(set = 0, binding = 22) uniform sampler g_sCookieSampler;
 	layout(set = 0, binding = 16) uniform sampler g_sTrilinearWrap;
+	layout(set = 0, binding = 22) uniform sampler g_sCookieSampler;
 	layout(set = 0, binding = 23) uniform samplerShadow g_tShadowDepthBufferCmpSampler;
 	layout(set = 0, binding = 36) uniform texture2D g_tShadowDepthBufferDepth;
+	layout(set = 0, binding = 48) uniform texture3D g_tLPV_Shadows;
+	layout(set = 0, binding = 158) uniform writeonly image3D _4931;
 	
 	void main()
 	{
@@ -246,10 +249,17 @@ CS
 	                    break;
 	                }
 	                uint _15059 = (_18909 * 32u) + uint(_17017);
-	                mat4x3 _16417 = mat4x3(vec3(LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[0].x, LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[1].x, LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[2].x), vec3(LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[0].y, LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[1].y, LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[2].y), vec3(LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[0].z, LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[1].z, LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[2].z), vec3(LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[0].w, LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[1].w, LightProbeVolumeData_t._m1._m0[_15059]._m2._m0[2].w));
-	                vec3 _7678 = _16417 * vec4(_18075.xyz, 1.0);
-	                vec3 _17147 = LightProbeVolumeData_t._m1._m0[_15059]._m0.xyz - _7678;
-	                vec3 _7179 = _7678 - LightProbeVolumeData_t._m1._m0[_15059]._m1.xyz;
+	                _1484 _20228;
+	                _20228._m0 = LightProbeVolumeData_t._m1._m0[_15059]._m0;
+	                _20228._m1 = LightProbeVolumeData_t._m1._m0[_15059]._m1;
+	                _20228._m2 = LightProbeVolumeData_t._m1._m0[_15059]._m2;
+	                _20228._m3 = LightProbeVolumeData_t._m1._m0[_15059]._m3;
+	                _20228._m4 = LightProbeVolumeData_t._m1._m0[_15059]._m4;
+	                _20228._m5 = LightProbeVolumeData_t._m1._m0[_15059]._m5;
+	                _20228._m6 = LightProbeVolumeData_t._m1._m0[_15059]._m6;
+	                vec3 _7678 = _20228._m2 * vec4(_18075.xyz, 1.0);
+	                vec3 _17147 = _20228._m0.xyz - _7678;
+	                vec3 _7179 = _7678 - _20228._m1.xyz;
 	                vec3 _11965 = vec3(max(_17147.x, 0.0), max(_17147.y, 0.0), max(_17147.z, 0.0)) + vec3(max(_7179.x, 0.0), max(_7179.y, 0.0), max(_7179.z, 0.0));
 	                float _14811 = sqrt(dot(_11965, _11965));
 	                bool _8325 = _14811 == 0.0;
@@ -259,7 +269,7 @@ CS
 	                    bool _12885;
 	                    if (_8325)
 	                    {
-	                        _12885 = LightProbeVolumeData_t._m1._m0[_15059]._m3 != _16305;
+	                        _12885 = _20228._m4 != _16305;
 	                    }
 	                    else
 	                    {
@@ -267,7 +277,7 @@ CS
 	                    }
 	                    if (_12885)
 	                    {
-	                        if (LightProbeVolumeData_t._m1._m0[_15059]._m3 < _16305)
+	                        if (_20228._m4 < _16305)
 	                        {
 	                            _13137 = _13136;
 	                            _16306 = _16305;
@@ -289,9 +299,9 @@ CS
 	                    }
 	                    if (!_8325)
 	                    {
-	                        vec3 _21857 = _16417 * vec4(_23211.xyz, 1.0);
-	                        vec3 _15862 = LightProbeVolumeData_t._m1._m0[_15059]._m0.xyz - _21857;
-	                        vec3 _7180 = _21857 - LightProbeVolumeData_t._m1._m0[_15059]._m1.xyz;
+	                        vec3 _21857 = _20228._m2 * vec4(_23211.xyz, 1.0);
+	                        vec3 _15862 = _20228._m0.xyz - _21857;
+	                        vec3 _7180 = _21857 - _20228._m1.xyz;
 	                        vec3 _11966 = vec3(max(_15862.x, 0.0), max(_15862.y, 0.0), max(_15862.z, 0.0)) + vec3(max(_7180.x, 0.0), max(_7180.y, 0.0), max(_7180.z, 0.0));
 	                        if (_8285 < sqrt(dot(_11966, _11966)))
 	                        {
@@ -315,9 +325,9 @@ CS
 	                    }
 	                }
 	                _13137 = _20890;
-	                _16306 = LightProbeVolumeData_t._m1._m0[_15059]._m3;
+	                _16306 = _20228._m4;
 	                _14891 = _8325;
-	                _18360 = int(LightProbeVolumeData_t._m1._m0[_15059]._m4);
+	                _18360 = int(_20228._m5);
 	                break;
 	            } while(false);
 	            if (_7956_ladder_break)
@@ -334,22 +344,22 @@ CS
 	        }
 	        vec3 _9087 = normalize(_18075 - SmokeConstantBuffer_t._m0._m0[_18909].xyz);
 	        uint _21017 = uint(max(0, _17133));
-	        vec3 _11782 = mat4x3(vec3(PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[0].x, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[1].x, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[2].x), vec3(PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[0].y, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[1].y, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[2].y), vec3(PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[0].z, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[1].z, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[2].z), vec3(PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[0].w, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[1].w, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0._m0[2].w)) * vec4(_18075.xyz, 1.0);
-	        vec3 _11981 = _11782.xyz;
-	        vec3 _24500 = _11981;
-	        _24500.z = _11782.z * 0.16666667163372039794921875;
-	        vec3 _12209 = clamp(_24500.xyz, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m1, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m2);
-	        _12209.z = _12209.z * 6.0;
-	        vec3 _21530 = (_12209.xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m4).xyz + PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m5;
-	        _21530.z = _21530.z * 0.16666667163372039794921875;
+	        vec3 _24893 = PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m0 * vec4(_18075.xyz, 1.0);
+	        vec3 _6343 = _24893.xyz;
+	        vec3 _6393 = _6343;
+	        _6393.z = _24893.z * 0.16666667163372039794921875;
+	        vec3 _19423 = clamp(_6393.xyz, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m1, PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m2);
+	        _19423.z = _19423.z * 6.0;
+	        vec3 _23126 = (_19423.xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m4).xyz + PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m5;
+	        _23126.z = _23126.z * 0.16666667163372039794921875;
 	        vec3 _17330 = _9087.xyz;
 	        vec3 _16057 = mix(vec3(0.0, 0.16666667163372039794921875, 0.3333333432674407958984375), vec3(0.5, 0.666666686534881591796875, 0.833333313465118408203125), step(_17330, vec3(0.0)).xyz);
 	        vec3 _16868 = _17330 * _17330;
-	        vec3 _21122 = (((textureLod(sampler3D(g_tLPV_Irradiance, g_sBilinearClamp), _21530.xyz + vec3(0.0, 0.0, _16057.x), 0.0).xyz * _16868.x) + (textureLod(sampler3D(g_tLPV_Irradiance, g_sBilinearClamp), _21530.xyz + vec3(0.0, 0.0, _16057.y), 0.0).xyz * _16868.y)) + (textureLod(sampler3D(g_tLPV_Irradiance, g_sBilinearClamp), _21530.xyz + vec3(0.0, 0.0, _16057.z), 0.0).xyz * _16868.z)).xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m3.xyz;
+	        vec3 _13062 = (((textureLod(sampler3D(g_tLPV_Irradiance, g_sBilinearClamp), _23126.xyz + vec3(0.0, 0.0, _16057.x), 0.0).xyz * _16868.x) + (textureLod(sampler3D(g_tLPV_Irradiance, g_sBilinearClamp), _23126.xyz + vec3(0.0, 0.0, _16057.y), 0.0).xyz * _16868.y)) + (textureLod(sampler3D(g_tLPV_Irradiance, g_sBilinearClamp), _23126.xyz + vec3(0.0, 0.0, _16057.z), 0.0).xyz * _16868.z)).xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m3.xyz;
 	        vec4 _23714;
-	        _23714.x = _21122.x;
-	        _23714.y = _21122.y;
-	        _23714.z = _21122.z;
+	        _23714.x = _13062.x;
+	        _23714.y = _13062.y;
+	        _23714.z = _13062.z;
 	        vec3 _18003 = _18075 - PerViewConstantBuffer_t._m0;
 	        vec3 _13155;
 	        _13155 = vec3(0.0);
@@ -367,8 +377,8 @@ CS
 	            do
 	            {
 	                vec3 _14644 = _18003.xyz;
-	                vec4 _15817 = mat4(vec4(g_BarnLights_1._m0[_14247]._m0._m0[0].x, g_BarnLights_1._m0[_14247]._m0._m0[1].x, g_BarnLights_1._m0[_14247]._m0._m0[2].x, g_BarnLights_1._m0[_14247]._m0._m0[3].x), vec4(g_BarnLights_1._m0[_14247]._m0._m0[0].y, g_BarnLights_1._m0[_14247]._m0._m0[1].y, g_BarnLights_1._m0[_14247]._m0._m0[2].y, g_BarnLights_1._m0[_14247]._m0._m0[3].y), vec4(g_BarnLights_1._m0[_14247]._m0._m0[0].z, g_BarnLights_1._m0[_14247]._m0._m0[1].z, g_BarnLights_1._m0[_14247]._m0._m0[2].z, g_BarnLights_1._m0[_14247]._m0._m0[3].z), vec4(g_BarnLights_1._m0[_14247]._m0._m0[0].w, g_BarnLights_1._m0[_14247]._m0._m0[1].w, g_BarnLights_1._m0[_14247]._m0._m0[2].w, g_BarnLights_1._m0[_14247]._m0._m0[3].w)) * vec4(_18003.xyz, 1.0);
-	                vec3 _10521 = _15817.xyz / vec3(_15817.w);
+	                vec4 _24894 = g_BarnLights_1._m0[_14247]._m0 * vec4(_18003.xyz, 1.0);
+	                vec3 _10521 = _24894.xyz / vec3(_24894.w);
 	                vec4 _22905;
 	                _22905.x = _10521.x;
 	                _22905.y = _10521.y;
@@ -391,7 +401,7 @@ CS
 	                }
 	                else
 	                {
-	                    _12886 = !all(lessThanEqual(abs((mat4x3(vec3(g_BarnLights_1._m0[_14247]._m15._m0[0].x, g_BarnLights_1._m0[_14247]._m15._m0[1].x, g_BarnLights_1._m0[_14247]._m15._m0[2].x), vec3(g_BarnLights_1._m0[_14247]._m15._m0[0].y, g_BarnLights_1._m0[_14247]._m15._m0[1].y, g_BarnLights_1._m0[_14247]._m15._m0[2].y), vec3(g_BarnLights_1._m0[_14247]._m15._m0[0].z, g_BarnLights_1._m0[_14247]._m15._m0[1].z, g_BarnLights_1._m0[_14247]._m15._m0[2].z), vec3(g_BarnLights_1._m0[_14247]._m15._m0[0].w, g_BarnLights_1._m0[_14247]._m15._m0[1].w, g_BarnLights_1._m0[_14247]._m15._m0[2].w)) * vec4(_14644, 1.0)).xyz), vec3(1.0)));
+	                    _12886 = !all(lessThanEqual(abs((g_BarnLights_1._m0[_14247]._m15 * vec4(_14644, 1.0)).xyz), vec3(1.0)));
 	                }
 	                if (_12886)
 	                {
@@ -467,6 +477,7 @@ CS
 	                    _24419 = false;
 	                }
 	                vec3 _21548;
+	                SPIRV_CROSS_BRANCH
 	                if (g_BarnLights_1._m0[_14247]._m4.w == 0.0)
 	                {
 	                    float _10342;
@@ -484,11 +495,11 @@ CS
 	                            float _15266 = 2.0 / g_BarnLights_1._m0[_14247]._m9.z;
 	                            float _15017 = _22154.y;
 	                            float _23041 = (-0.5) * g_BarnLights_1._m0[_14247]._m9.z;
-	                            float _11982 = (g_BarnLights_1._m0[_14247]._m9.x * g_BarnLights_1._m0[_14247]._m9.y) * pow(max(pow(g_BarnLights_1._m0[_14247]._m9.y * _11473, _15266) + pow(g_BarnLights_1._m0[_14247]._m9.x * _15017, _15266), 1.1754943508222875079687365372222e-38), _23041);
+	                            float _11981 = (g_BarnLights_1._m0[_14247]._m9.x * g_BarnLights_1._m0[_14247]._m9.y) * pow(max(pow(g_BarnLights_1._m0[_14247]._m9.y * _11473, _15266) + pow(g_BarnLights_1._m0[_14247]._m9.x * _15017, _15266), 1.1754943508222875079687365372222e-38), _23041);
 	                            float _16524 = pow(max(pow(_11473, _15266) + pow(_15017, _15266), 1.1754943508222875079687365372222e-38), _23041);
-	                            if (_11982 < _16524)
+	                            if (_11981 < _16524)
 	                            {
-	                                _10342 = smoothstep(_16524, _11982, 1.0);
+	                                _10342 = smoothstep(_16524, _11981, 1.0);
 	                                break;
 	                            }
 	                            else
@@ -598,7 +609,7 @@ CS
 	            _16208 = _4283;
 	            continue;
 	        }
-	        imageStore(_4931, ivec3(uvec3(ivec3(ivec2(_14205), _13039))), vec4(_23714.xyz + _13155, 1.0 - dot(textureLod(sampler3D(g_tLPV_Shadows, g_sBilinearClamp), ((saturate(_11981).xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m4).xyz + PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m5).xyz, 0.0).xyzw, PerViewLightingConstantBufferGpu_t._m4)));
+	        imageStore(_4931, ivec3(uvec3(ivec3(ivec2(_14205), _13039))), vec4(_23714.xyz + _13155, 1.0 - dot(textureLod(sampler3D(g_tLPV_Shadows, g_sBilinearClamp), ((saturate(_6343).xyz * PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m4).xyz + PerViewLightProbeVolumeConstantBuffer_t._m0._m0[_21017]._m5).xyz, 0.0).xyzw, PerViewLightingConstantBufferGpu_t._m4)));
 	        _4300 = _13039 + 1;
 	        _13039 = _4300;
 	        continue;
