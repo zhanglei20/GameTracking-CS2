@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -41,12 +41,7 @@ VS
 	float4 g_vlowResTexelSize < Attribute("LowResTexelSize"); UiType(VectorText); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2660 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
-	
-	struct _2200
-	{
-	    float4 _m0[4];
-	};
+	// SPIR-V source (2056 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	cbuffer _Globals_ : register(b0, space0)
 	{
@@ -55,7 +50,7 @@ VS
 	
 	cbuffer PerViewConstantBuffer_t : register(b1, space0)
 	{
-	    _2200 PerViewConstantBuffer_t_1_m0 : packoffset(c4);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c4);
 	    float3 PerViewConstantBuffer_t_1_m1 : packoffset(c26);
 	};
 	
@@ -93,14 +88,14 @@ VS
 	{
 	    float4 _14513 = float4(vPositionPs, 0.0f, 1.0f);
 	    float2 _7669 = vTexCoord - (_Globals_1_g_vlowResTexelSize.xy * 0.5f);
-	    float4 _24010 = mul(float4x4(float4(PerViewConstantBuffer_t_1_m0._m0[0].x, PerViewConstantBuffer_t_1_m0._m0[1].x, PerViewConstantBuffer_t_1_m0._m0[2].x, PerViewConstantBuffer_t_1_m0._m0[3].x), float4(PerViewConstantBuffer_t_1_m0._m0[0].y, PerViewConstantBuffer_t_1_m0._m0[1].y, PerViewConstantBuffer_t_1_m0._m0[2].y, PerViewConstantBuffer_t_1_m0._m0[3].y), float4(PerViewConstantBuffer_t_1_m0._m0[0].z, PerViewConstantBuffer_t_1_m0._m0[1].z, PerViewConstantBuffer_t_1_m0._m0[2].z, PerViewConstantBuffer_t_1_m0._m0[3].z), float4(PerViewConstantBuffer_t_1_m0._m0[0].w, PerViewConstantBuffer_t_1_m0._m0[1].w, PerViewConstantBuffer_t_1_m0._m0[2].w, PerViewConstantBuffer_t_1_m0._m0[3].w)), float4((vTexCoord.x * 2.0f) - 1.0f, ((1.0f - vTexCoord.y) * 2.0f) - 1.0f, 1.0f, 1.0f));
+	    float4 _14015 = mul(PerViewConstantBuffer_t_1_m0, float4((vTexCoord.x * 2.0f) - 1.0f, ((1.0f - vTexCoord.y) * 2.0f) - 1.0f, 1.0f, 1.0f));
 	    output_0 = vTexCoord;
 	    output_1 = 1.0f.xxxx;
 	    output_2 = _7669;
 	    output_3 = _7669 + float2(_Globals_1_g_vlowResTexelSize.x, 0.0f);
 	    output_4 = _7669 + float2(0.0f, _Globals_1_g_vlowResTexelSize.y);
 	    output_5 = _7669 + _Globals_1_g_vlowResTexelSize.xy;
-	    output_6 = normalize((_24010.xyz / _24010.w.xxx) - PerViewConstantBuffer_t_1_m1.xyz);
+	    output_6 = normalize((_14015.xyz / _14015.w.xxx) - PerViewConstantBuffer_t_1_m1.xyz);
 	    _14513.y = -vPositionPs.y;
 	    gl_Position = _14513;
 	}

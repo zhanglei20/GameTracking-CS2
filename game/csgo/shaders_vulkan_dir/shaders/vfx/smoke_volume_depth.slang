@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 1;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -112,11 +112,11 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 4023 (name: SmokeConstantBuffer_t), member index 6 (name: _m6) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (13364 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (12720 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#extension GL_EXT_samplerless_texture_functions : require
@@ -136,11 +136,6 @@ PS
 	    vec4 _m0[2];
 	};
 	
-	struct _2181
-	{
-	    vec4 _m0[4];
-	};
-	
 	float _4;
 	
 	struct _571
@@ -157,15 +152,15 @@ PS
 	
 	layout(set = 1) uniform _571 SmokeConstantBuffer_t;
 	
-	struct _2489
+	struct _1340
 	{
-	    _2181 _m0;
+	    mat4 _m0;
 	    float _m1;
 	    vec4 _m2;
 	    vec3 _m3;
 	};
 	
-	layout(set = 1) uniform _2489 PerViewConstantBuffer_t;
+	layout(set = 1) uniform _1340 PerViewConstantBuffer_t;
 	
 	struct _998
 	{
@@ -223,8 +218,8 @@ PS
 	        vec2 _11253 = max(_7415.xx, _7415.yz);
 	        float _12676 = max(_11253.x, _11253.y);
 	        vec2 _16933 = min(_13037.xx, _13037.yz);
-	        float _14150 = min(_16933.x, _16933.y);
-	        if (!(_12676 > _14150))
+	        float _15132 = min(_16933.x, _16933.y);
+	        if (!(_12676 > _15132))
 	        {
 	            float _14952 = max(0.0, _12676);
 	            vec3 _12822 = (input_0 + (input_1 * _14952)) - SmokeConstantBuffer_t._m2._m0[_17017].xyz;
@@ -245,11 +240,11 @@ PS
 	            do
 	            {
 	                ivec3 _12244 = ivec3(sign(input_1));
-	                vec3 _8653 = input_1 + (vec3(equal(input_1, vec3(0.0))) * 9.9999997473787516355514526367188e-06);
-	                vec3 _11212 = abs(vec3(1.0) / _8653);
+	                vec3 _19587 = input_1 + mix(vec3(0.0), vec3(9.9999997473787516355514526367188e-06), equal(input_1, vec3(0.0)));
+	                vec3 _11212 = abs(vec3(1.0) / _19587);
 	                vec3 _13137;
 	                vec3 _16324;
-	                _13137 = (((vec3(greaterThan(_12244, ivec3(0))) - fract(_20183)) * vec3(_12244)) + (vec3(equal(_12244, ivec3(0))) * (_14150 - _14952))) * _11212;
+	                _13137 = (((vec3(greaterThan(_12244, ivec3(0))) - fract(_20183)) * vec3(_12244)) + (vec3(equal(_12244, ivec3(0))) * (_15132 - _14952))) * _11212;
 	                _16324 = _20183;
 	                uint _14723;
 	                vec3 _23259;
@@ -297,7 +292,7 @@ PS
 	                            {
 	                                break;
 	                            }
-	                            _18040 = _16325 + (_8653 * 0.800000011920928955078125);
+	                            _18040 = _16325 + (_19587 * 0.800000011920928955078125);
 	                            vec3 _15154 = _18040 * vec3(0.03125);
 	                            vec3 _8236 = saturate(_15154);
 	                            if (any(notEqual(_8236, _15154)))
@@ -322,7 +317,7 @@ PS
 	                    }
 	                    vec3 _16849 = vec3(lessThanEqual(_13137, min(_13137.yzx, _13137.zxy)));
 	                    vec3 _16703 = _16849 * _13137;
-	                    _24030 = _20183 + (_8653 * ((_16703.x + _16703.y) + _16703.z));
+	                    _24030 = _20183 + (_19587 * ((_16703.x + _16703.y) + _16703.z));
 	                    _23259 = _13137 + (_16849 * _11212);
 	                    _14723 = _17018 + 2u;
 	                    _13137 = _23259;
@@ -343,7 +338,7 @@ PS
 	            float _16479;
 	            if (_23381 > 0.0)
 	            {
-	                float _3914 = (_23381 + 0.300000011920928955078125) * clamp(SmokeConstantBuffer_t._m3._m0[_17017].z + (0.5 * float(_3259)), 0.0, 1.0);
+	                float _3914 = (_23381 + 0.300000011920928955078125) * clamp(SmokeConstantBuffer_t._m3._m0[_17017].z + (_3259 ? 0.5 : 0.0), 0.0, 1.0);
 	                uint _10837;
 	                vec3 _14747;
 	                if (_17133 == 0u)
@@ -483,12 +478,12 @@ PS
 	    {
 	        discard;
 	    }
-	    vec4 _23913 = (vec4((_14880 + vec3(-4.0)).xyz, 1.0) + (PerViewConstantBuffer_t._m2 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
+	    vec4 _18275 = (vec4((_14880 + vec3(-4.0)).xyz, 1.0) + (PerViewConstantBuffer_t._m2 * 1.0)).xyzw * PerViewConstantBuffer_t._m0;
 	    if ((fma(_13143, 2.0, -1.5) + fract(texelFetch(g_tBlueNoise, ivec3(ivec2(gl_FragCoord.xy) & PerViewConstantBufferCsgo_t._m0, 0).xy, 0).y + ((PerViewConstantBuffer_t._m1 * 0.61803400516510009765625) * float(_Globals_.g_bAnimateEdge != 0)))) < 0.0)
 	    {
 	        discard;
 	    }
-	    gl_FragDepth = (_23913.z / _23913.w) + (_Globals_.g_flDepthBias * 0.100000001490116119384765625);
+	    gl_FragDepth = (_18275.z / _18275.w) + (_Globals_.g_flDepthBias * 0.100000001490116119384765625);
 	}
 	
 	

@@ -7,7 +7,7 @@ HEADER
 	DevShader = false;
 	Version = 4;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -433,6 +433,7 @@ PS
 	float2 g_vSurfaceBurnishingMinMax1 < Default(0); UiType(VectorText); UiGroup("Material1/Burnishing/40"); >;
 	CreateInputTexture2D(TextureSubstrateClothMask1, Srgb, 8, "", "_mask", "Material1/Substrate Layer/41", "materials/default/default_black_mask.tga");
 	CreateInputTexture2D(TextureSurfaceClothMask1, Linear, 8, "", "_mask", "Material1/Surface Layer/41", "materials/default/default_black_mask.tga");
+	float g_fDamageBevelAnisotropy1 < UiType(Slider); UiGroup("Material1/Damage Bevel/41"); >;
 	float g_fDamageNormalEdgeWidth1 < Default(1); Range(0, 8); UiType(Slider); UiGroup("Material1,1/Wear Edge/41"); >;
 	float2 g_vSubstrateBurnishingMinMax1 < Default(0); UiType(VectorText); UiGroup("Material1/Burnishing/41"); >;
 	float g_fDamageEdgeRoughness1 < Default(0.8); UiType(Slider); UiGroup("Material1/Wear Edge/42"); >;
@@ -524,6 +525,7 @@ PS
 	float2 g_vSurfaceBurnishingMinMax2 < Default(0); UiType(VectorText); UiGroup("Material2/Burnishing/40"); >;
 	CreateInputTexture2D(TextureSubstrateClothMask2, Srgb, 8, "", "_mask", "Material2/Substrate Layer/41", "materials/default/default_black_mask.tga");
 	CreateInputTexture2D(TextureSurfaceClothMask2, Linear, 8, "", "_mask", "Material2/Surface Layer/41", "materials/default/default_black_mask.tga");
+	float g_fDamageBevelAnisotropy2 < UiType(Slider); UiGroup("Material2/Damage Bevel/41"); >;
 	float2 g_vSubstrateBurnishingMinMax2 < Default(0); UiType(VectorText); UiGroup("Material2/Burnishing/41"); >;
 	float g_fDamageBevelMetalness2 < UiType(Slider); UiGroup("Material2/Damage Bevel/50"); >;
 	float g_fDamageBevelCloth2 < UiType(Slider); UiGroup("Material2/Damage Bevel/60"); >;
@@ -613,6 +615,7 @@ PS
 	float2 g_vSurfaceBurnishingMinMax3 < Default(0); UiType(VectorText); UiGroup("Material3/Burnishing/40"); >;
 	CreateInputTexture2D(TextureSubstrateClothMask3, Srgb, 8, "", "_mask", "Material3/Substrate Layer/41", "materials/default/default_black_mask.tga");
 	CreateInputTexture2D(TextureSurfaceClothMask3, Linear, 8, "", "_mask", "Material3/Surface Layer/41", "materials/default/default_black_mask.tga");
+	float g_fDamageBevelAnisotropy3 < UiType(Slider); UiGroup("Material3/Damage Bevel/41"); >;
 	float2 g_vSubstrateBurnishingMinMax3 < Default(0); UiType(VectorText); UiGroup("Material3/Burnishing/41"); >;
 	float g_fDamageBevelMetalness3 < UiType(Slider); UiGroup("Material3/Damage Bevel/50"); >;
 	float g_fDamageBevelCloth3 < UiType(Slider); UiGroup("Material3/Damage Bevel/60"); >;
@@ -703,6 +706,7 @@ PS
 	float2 g_vSurfaceBurnishingMinMax4 < Default(0); UiType(VectorText); UiGroup("Material4/Burnishing/40"); >;
 	CreateInputTexture2D(TextureSubstrateClothMask4, Srgb, 8, "", "_mask", "Material4/Substrate Layer/41", "materials/default/default_black_mask.tga");
 	CreateInputTexture2D(TextureSurfaceClothMask4, Linear, 8, "", "_mask", "Material4/Surface Layer/41", "materials/default/default_black_mask.tga");
+	float g_fDamageBevelAnisotropy4 < UiType(Slider); UiGroup("Material4/Damage Bevel/41"); >;
 	float2 g_vSubstrateBurnishingMinMax4 < Default(0); UiType(VectorText); UiGroup("Material4/Burnishing/41"); >;
 	float g_fDamageBevelMetalness4 < UiType(Slider); UiGroup("Material4/Damage Bevel/50"); >;
 	float g_fDamageBevelCloth4 < UiType(Slider); UiGroup("Material4/Damage Bevel/60"); >;
@@ -789,16 +793,28 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 3 (name: g_vTextileAlbedoLevels) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (45156 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
+	#if defined(GL_EXT_control_flow_attributes)
+	#extension GL_EXT_control_flow_attributes : require
+	#define SPIRV_CROSS_FLATTEN [[flatten]]
+	#define SPIRV_CROSS_BRANCH [[dont_flatten]]
+	#define SPIRV_CROSS_UNROLL [[unroll]]
+	#define SPIRV_CROSS_LOOP [[dont_unroll]]
+	#else
+	#define SPIRV_CROSS_FLATTEN
+	#define SPIRV_CROSS_BRANCH
+	#define SPIRV_CROSS_UNROLL
+	#define SPIRV_CROSS_LOOP
+	#endif
 	
-	const vec3 _1185[9] = vec3[](vec3(0.0, 0.0, 0.31972789764404296875), vec3(-1.0, -1.0, 0.051020406186580657958984375), vec3(-1.0, 0.0, 0.119047619402408599853515625), vec3(-1.0, 1.0, 0.051020406186580657958984375), vec3(0.0, -1.0, 0.119047619402408599853515625), vec3(0.0, 1.0, 0.119047619402408599853515625), vec3(1.0, -1.0, 0.051020406186580657958984375), vec3(1.0, 0.0, 0.119047619402408599853515625), vec3(1.0, 1.0, 0.051020406186580657958984375));
-	const vec2 _493[4] = vec2[](vec2(-1.0), vec2(-1.0, 1.0), vec2(1.0), vec2(1.0, -1.0));
+	const vec3 _1329[9] = vec3[](vec3(0.0, 0.0, 0.31972789764404296875), vec3(-1.0, -1.0, 0.051020406186580657958984375), vec3(-1.0, 0.0, 0.119047619402408599853515625), vec3(-1.0, 1.0, 0.051020406186580657958984375), vec3(0.0, -1.0, 0.119047619402408599853515625), vec3(0.0, 1.0, 0.119047619402408599853515625), vec3(1.0, -1.0, 0.051020406186580657958984375), vec3(1.0, 0.0, 0.119047619402408599853515625), vec3(1.0, 1.0, 0.051020406186580657958984375));
+	const vec2 _592[4] = vec2[](vec2(-1.0), vec2(-1.0, 1.0), vec2(1.0), vec2(1.0, -1.0));
 	vec3 _2;
 	
 	struct _2422
@@ -970,8 +986,8 @@ PS
 	layout(set = 1, binding = 41) uniform texture2D g_tDamageNormal2;
 	layout(set = 1, binding = 45) uniform texture2D g_tDamageNormal3;
 	layout(set = 1, binding = 49) uniform texture2D g_tDamageNormal4;
-	layout(set = 1, binding = 38) uniform texture2D g_tPattern;
 	layout(set = 1, binding = 14) uniform sampler g_sPoint;
+	layout(set = 1, binding = 38) uniform texture2D g_tPattern;
 	
 	layout(location = 0) in vec4 input_0;
 	layout(location = 0) out vec4 output_0;
@@ -980,27 +996,27 @@ PS
 	{
 	    vec2 _13810 = input_0.xy;
 	    vec4 _21836 = texture(sampler2D(g_tLayerMask, g_sTrilinearWrap), input_0.xy);
-	    float _19403 = _21836.x;
-	    float _10030 = _21836.y;
-	    float _9726 = _21836.z;
-	    float _7177 = mix(mix(mix(_Globals_.g_fDetailMetalness1, _Globals_.g_fDetailMetalness2, _19403), _Globals_.g_fDetailMetalness3, _10030), _Globals_.g_fDetailMetalness4, _9726);
-	    vec2 _8506 = vec2(_19403);
-	    vec2 _14169 = vec2(_10030);
-	    vec2 _13884 = vec2(_9726);
+	    float _13915 = _21836.x;
+	    float _21941 = _21836.y;
+	    float _24699 = _21836.z;
+	    float _22165 = mix(mix(mix(_Globals_.g_fDetailMetalness1, _Globals_.g_fDetailMetalness2, _13915), _Globals_.g_fDetailMetalness3, _21941), _Globals_.g_fDetailMetalness4, _24699);
+	    vec2 _8506 = vec2(_13915);
+	    vec2 _14169 = vec2(_21941);
+	    vec2 _13884 = vec2(_24699);
 	    vec2 _7502 = mix(mix(mix(_Globals_.g_vDamageLevels1, _Globals_.g_vDamageLevels2, _8506), _Globals_.g_vDamageLevels3, _14169), _Globals_.g_vDamageLevels4, _13884);
-	    float _22167 = mix(mix(mix(_Globals_.g_fDamageSaturation1, _Globals_.g_fDamageSaturation2, _19403), _Globals_.g_fDamageSaturation3, _10030), _Globals_.g_fDamageSaturation4, _9726);
-	    float _22170 = mix(mix(mix(_Globals_.g_fDamageNormalEdgeWidth1, _Globals_.g_fDamageNormalEdgeWidth2, _19403), _Globals_.g_fDamageNormalEdgeWidth3, _10030), _Globals_.g_fDamageNormalEdgeWidth4, _9726);
-	    float _22173 = mix(mix(mix(_Globals_.g_fDetailGrunge1, _Globals_.g_fDetailGrunge2, _19403), _Globals_.g_fDetailGrunge3, _10030), _Globals_.g_fDetailGrunge4, _9726);
-	    float _22176 = mix(mix(mix(_Globals_.g_fGrimeSaturation1, _Globals_.g_fGrimeSaturation2, _19403), _Globals_.g_fGrimeSaturation3, _10030), _Globals_.g_fGrimeSaturation4, _9726);
+	    float _22168 = mix(mix(mix(_Globals_.g_fDamageSaturation1, _Globals_.g_fDamageSaturation2, _13915), _Globals_.g_fDamageSaturation3, _21941), _Globals_.g_fDamageSaturation4, _24699);
+	    float _22171 = mix(mix(mix(_Globals_.g_fDamageNormalEdgeWidth1, _Globals_.g_fDamageNormalEdgeWidth2, _13915), _Globals_.g_fDamageNormalEdgeWidth3, _21941), _Globals_.g_fDamageNormalEdgeWidth4, _24699);
+	    float _22174 = mix(mix(mix(_Globals_.g_fDetailGrunge1, _Globals_.g_fDetailGrunge2, _13915), _Globals_.g_fDetailGrunge3, _21941), _Globals_.g_fDetailGrunge4, _24699);
+	    float _22177 = mix(mix(mix(_Globals_.g_fGrimeSaturation1, _Globals_.g_fGrimeSaturation2, _13915), _Globals_.g_fGrimeSaturation3, _21941), _Globals_.g_fGrimeSaturation4, _24699);
 	    vec2 _22248 = _13810;
 	    _22248.x = input_0.x * _Globals_.g_fFlipFixup;
 	    vec4 _18992 = texture(sampler2D(g_tSurface, g_sTrilinearWrap), input_0.xy);
 	    float _18168 = _18992.x;
-	    float _14997 = pow(_18168, mix(mix(mix(_Globals_.g_fCurvaturePower1, _Globals_.g_fCurvaturePower2, _19403), _Globals_.g_fCurvaturePower3, _10030), _Globals_.g_fCurvaturePower4, _9726));
+	    float _14997 = pow(_18168, mix(mix(mix(_Globals_.g_fCurvaturePower1, _Globals_.g_fCurvaturePower2, _13915), _Globals_.g_fCurvaturePower3, _21941), _Globals_.g_fCurvaturePower4, _24699));
 	    float _20235 = _18992.y;
 	    float _24805 = _18992.z;
 	    float _22201 = _18992.w;
-	    vec2 _22630 = (_13810 * mix(mix(mix(_Globals_.g_fDetailScale1, _Globals_.g_fDetailScale2, _19403), _Globals_.g_fDetailScale3, _10030), _Globals_.g_fDetailScale4, _9726)).xy;
+	    vec2 _22630 = (_13810 * mix(mix(mix(_Globals_.g_fDetailScale1, _Globals_.g_fDetailScale2, _13915), _Globals_.g_fDetailScale3, _21941), _Globals_.g_fDetailScale4, _24699)).xy;
 	    vec4 _19414 = texture(sampler2D(g_tDetail1, g_sTrilinearWrap), _22630);
 	    vec2 _14800 = vec2(_Globals_.g_fDetailBlackPoint1);
 	    vec2 _7443 = _14800 + (_19414.xy * _Globals_.g_fDetailBlackPointCompensation1);
@@ -1022,10 +1038,10 @@ PS
 	    vec4 _20491 = _19417;
 	    _20491.x = _7446.x;
 	    _20491.y = _7446.y;
-	    vec4 _21173 = vec4(_19403);
-	    vec4 _14170 = vec4(_10030);
-	    vec4 _14150 = vec4(_9726);
-	    vec4 _6543 = mix(mix(mix(_20488.xyzw, _20489.xyzw, _21173), _20490.xyzw, _14170), _20491.xyzw, _14150);
+	    vec4 _21174 = vec4(_13915);
+	    vec4 _14170 = vec4(_21941);
+	    vec4 _14150 = vec4(_24699);
+	    vec4 _6543 = mix(mix(mix(_20488.xyzw, _20489.xyzw, _21174), _20490.xyzw, _14170), _20491.xyzw, _14150);
 	    vec2 _24074 = _14800 + (_6543.xy * _Globals_.g_fDetailBlackPointCompensation1);
 	    float _10152 = _24074.x;
 	    float _10579 = _24074.y;
@@ -1033,14 +1049,14 @@ PS
 	    vec2 _23217 = vec2(dot(_22248.xy, _Globals_.g_vPatternTexCoordXform0.xy) + _Globals_.g_vPatternTexCoordXform0.w, dot(_22248.xy, _Globals_.g_vPatternTexCoordXform1.xy) + _Globals_.g_vPatternTexCoordXform1.w) + vec2((((_10579 * 2.0) - 1.0) * 0.0009765625) * _Globals_.g_fPatternDetailInfluence);
 	    _23217.x = _23217.x * ((input_0.x < 0.0) ? (-1.0) : 1.0);
 	    float _21717 = 1.0 - _6543.w;
-	    float _7730 = clamp(((mix(mix(mix(_Globals_.g_fDetailRoughnessContrast1, _Globals_.g_fDetailRoughnessContrast2, _19403), _Globals_.g_fDetailRoughnessContrast3, _10030), _Globals_.g_fDetailRoughnessContrast4, _9726) * (((_21717 * _21717) * 0.85000002384185791015625) + (-0.3499999940395355224609375))) + 0.5) * mix(mix(mix(_Globals_.g_fDetailRoughnessBrightness1, _Globals_.g_fDetailRoughnessBrightness2, _19403), _Globals_.g_fDetailRoughnessBrightness3, _10030), _Globals_.g_fDetailRoughnessBrightness4, _9726), 0.0, 1.0);
+	    float _7730 = clamp(((mix(mix(mix(_Globals_.g_fDetailRoughnessContrast1, _Globals_.g_fDetailRoughnessContrast2, _13915), _Globals_.g_fDetailRoughnessContrast3, _21941), _Globals_.g_fDetailRoughnessContrast4, _24699) * (((_21717 * _21717) * 0.85000002384185791015625) + (-0.3499999940395355224609375))) + 0.5) * mix(mix(mix(_Globals_.g_fDetailRoughnessBrightness1, _Globals_.g_fDetailRoughnessBrightness2, _13915), _Globals_.g_fDetailRoughnessBrightness3, _21941), _Globals_.g_fDetailRoughnessBrightness4, _24699), 0.0, 1.0);
 	    float _17411 = 1.0 - _10152;
 	    vec2 _15902 = vec2(dot(_13810, _Globals_.g_vGrungeTexCoordXform0.xy) + _Globals_.g_vGrungeTexCoordXform0.w, dot(_13810, _Globals_.g_vGrungeTexCoordXform1.xy) + _Globals_.g_vGrungeTexCoordXform1.w).xy;
 	    vec4 _19338 = texture(sampler2D(g_tGrunge1, g_sTrilinearWrap), _15902);
 	    vec4 _19339 = texture(sampler2D(g_tGrunge2, g_sTrilinearWrap), _15902);
 	    vec4 _19340 = texture(sampler2D(g_tGrunge3, g_sTrilinearWrap), _15902);
 	    vec4 _18453 = texture(sampler2D(g_tGrunge4, g_sTrilinearWrap), _15902);
-	    vec4 _19739 = mix(mix(mix(_19338.xyzw, _19339.xyzw, _21173), _19340.xyzw, _14170), _18453.xyzw, _14150);
+	    vec4 _19739 = mix(mix(mix(_19338.xyzw, _19339.xyzw, _21174), _19340.xyzw, _14170), _18453.xyzw, _14150);
 	    vec3 _12690 = _19739.xyz;
 	    float _17907 = dot(_12690, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
 	    vec4 _22452 = texture(sampler2D(g_tNoise, g_sAniso), (_13810 * 2.0).xy);
@@ -1078,7 +1094,7 @@ PS
 	        {
 	            break;
 	        }
-	        vec4 _22564 = texture(sampler2D(g_tLayerMask, g_sPoint), (_13810 + ((_1185[_13039].xy * 0.0009765625) * _Globals_.g_fColorMaskBlur)).xy);
+	        vec4 _22564 = texture(sampler2D(g_tLayerMask, g_sPoint), (_13810 + ((_1329[_13039].xy * 0.0009765625) * _Globals_.g_fColorMaskBlur)).xy);
 	        float _8268 = _22564.w;
 	        int _23989;
 	        int _13040 = 0;
@@ -1090,7 +1106,7 @@ PS
 	            }
 	            if (float(_13040) == floor(_8268 * 8.0))
 	            {
-	                _16408[_13040] += _1185[_13039].z;
+	                _16408[_13040] += _1329[_13039].z;
 	            }
 	            _23989 = _13040 + 1;
 	            _13040 = _23989;
@@ -1110,6 +1126,7 @@ PS
 	    float _17120;
 	    float _17121;
 	    float _23554;
+	    SPIRV_CROSS_BRANCH
 	    if (_14874)
 	    {
 	        bool _12885;
@@ -1122,6 +1139,7 @@ PS
 	            _12885 = _Globals_.g_nPatternMode == 3;
 	        }
 	        float _19287;
+	        SPIRV_CROSS_BRANCH
 	        if (_12885)
 	        {
 	            _19287 = 1.0;
@@ -1131,7 +1149,7 @@ PS
 	            _19287 = _16408[_Globals_.g_nPatternReplaceIndex];
 	        }
 	        vec4 _21760 = texture(sampler2D(g_tPattern, g_sTrilinearWrap), _23217.xy);
-	        vec3 _16446[8] = vec3[](_Globals_.g_vColorTint1, _Globals_.g_vColorTint2, _Globals_.g_vColorTint3, _Globals_.g_vColorTint4, _Globals_.g_vColorTint5, _Globals_.g_vColorTint6, _Globals_.g_vColorTint7, _Globals_.g_vColorTint8);
+	        vec3 _16442[8] = vec3[](_Globals_.g_vColorTint1, _Globals_.g_vColorTint2, _Globals_.g_vColorTint3, _Globals_.g_vColorTint4, _Globals_.g_vColorTint5, _Globals_.g_vColorTint6, _Globals_.g_vColorTint7, _Globals_.g_vColorTint8);
 	        float _6616;
 	        float _13136;
 	        vec3 _13694;
@@ -1139,6 +1157,7 @@ PS
 	        vec3 _17114;
 	        float _17115;
 	        float _17116;
+	        SPIRV_CROSS_BRANCH
 	        if (_Globals_.g_nPatternMode < 2)
 	        {
 	            float _13819 = _21760.x;
@@ -1146,6 +1165,7 @@ PS
 	            float _19483 = _21760.z;
 	            float _9865 = (_13819 + _19482) + _19483;
 	            float _10776;
+	            SPIRV_CROSS_BRANCH
 	            if (_Globals_.g_fPaintThickness > 0.0)
 	            {
 	                vec4 _20322 = texture(sampler2D(g_tPattern, g_sTrilinearWrap), _23217.xy, 0.5 + (0.100000001490116119384765625 * _Globals_.g_fPaintThickness));
@@ -1162,7 +1182,7 @@ PS
 	            _17114 = mix(_17935, vec3(0.0, 0.0, 1.0), vec3(_21772));
 	            _17115 = _9865 * _Globals_.g_fPaintThickness;
 	            _17116 = _10776;
-	            _13694 = mix(mix(mix(_16446[_Globals_.g_vPatternPaletteIndices.x - 1], _16446[_Globals_.g_vPatternPaletteIndices.y - 1], vec3(_13819)), _16446[_Globals_.g_vPatternPaletteIndices.z - 1], vec3(_19482)), _16446[_Globals_.g_vPatternPaletteIndices.w - 1], vec3(_19483));
+	            _13694 = mix(mix(mix(_16442[_Globals_.g_vPatternPaletteIndices.x - 1], _16442[_Globals_.g_vPatternPaletteIndices.y - 1], vec3(_13819)), _16442[_Globals_.g_vPatternPaletteIndices.z - 1], vec3(_19482)), _16442[_Globals_.g_vPatternPaletteIndices.w - 1], vec3(_19483));
 	            _6616 = _7730 * mix(1.0, _Globals_.g_fPatternRoughnessBrightness, _21772);
 	        }
 	        else
@@ -1175,7 +1195,7 @@ PS
 	            _13694 = _21760.xyz;
 	            _6616 = _7730;
 	        }
-	        _13137 = mix(_7177, _Globals_.g_fPatternMetalness, _19287);
+	        _13137 = mix(_22165, _Globals_.g_fPatternMetalness, _19287);
 	        _16306 = _13136;
 	        _17117 = _16305;
 	        _17118 = _17114;
@@ -1187,7 +1207,7 @@ PS
 	    }
 	    else
 	    {
-	        _13137 = _7177;
+	        _13137 = _22165;
 	        _16306 = _22201;
 	        _17117 = _10579;
 	        _17118 = _17935;
@@ -1259,7 +1279,7 @@ PS
 	        _20482 = _7677.z;
 	    }
 	    float _11428 = _14997 * _16306;
-	    float _20765 = mix(mix(mix(_Globals_.g_fCurvatureWearBoost1, _Globals_.g_fCurvatureWearBoost2, _19403), _Globals_.g_fCurvatureWearBoost3, _10030), _Globals_.g_fCurvatureWearBoost4, _9726) * _14997;
+	    float _20765 = mix(mix(mix(_Globals_.g_fCurvatureWearBoost1, _Globals_.g_fCurvatureWearBoost2, _13915), _Globals_.g_fCurvatureWearBoost3, _21941), _Globals_.g_fCurvatureWearBoost4, _24699) * _14997;
 	    float _12034 = clamp((_11428 * _19739.w) + _20765, 0.0, 1.0);
 	    float _22935 = _7502.x;
 	    float _11001 = _7502.y;
@@ -1267,6 +1287,7 @@ PS
 	    float _9410 = 1.0 - _19034;
 	    float _17292 = clamp(_19034 + ((clamp(smoothstep(_22935, _11001, _12034 * (_Globals_.g_fWearProgress * 4.0)), 0.0, 1.0) * _9410) * _14189), 0.0, 1.0);
 	    vec3 _20940;
+	    SPIRV_CROSS_BRANCH
 	    if (_14874)
 	    {
 	        _20940 = mix(_15471, mix(vec3(_21356, _21357, _20482), _15471, vec3(_17292)), vec3(_17119));
@@ -1294,49 +1315,49 @@ PS
 	    float _9287 = dot(vec4(_19227).xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125));
 	    vec3 _9577 = normalize(max(_18056.xyz, vec3(0.001000000047497451305389404296875)));
 	    vec3 _10951 = clamp((_9577 * min(_9287 / dot(_9577.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)), (3.0 * _9287) * max(_18056.x, max(_18056.y, _18056.z)))).xyz, vec3(0.0), vec3(1.0));
-	    float _15624 = mix(((_Globals_.g_fWearProgress * _24805) * mix(mix(mix(_Globals_.g_fWearBleaching1, _Globals_.g_fWearBleaching2, _19403), _Globals_.g_fWearBleaching3, _10030), _Globals_.g_fWearBleaching4, _9726)) * mix(_14189, 0.0, saturate(_17120 - 1.0)), mix(mix(mix(_Globals_.g_fDamageBleaching1, _Globals_.g_fDamageBleaching2, _19403), _Globals_.g_fDamageBleaching3, _10030), _Globals_.g_fDamageBleaching4, _9726), _19034);
+	    float _15624 = mix(((_Globals_.g_fWearProgress * _24805) * mix(mix(mix(_Globals_.g_fWearBleaching1, _Globals_.g_fWearBleaching2, _13915), _Globals_.g_fWearBleaching3, _21941), _Globals_.g_fWearBleaching4, _24699)) * mix(_14189, 0.0, saturate(_17120 - 1.0)), mix(mix(mix(_Globals_.g_fDamageBleaching1, _Globals_.g_fDamageBleaching2, _13915), _Globals_.g_fDamageBleaching3, _21941), _Globals_.g_fDamageBleaching4, _24699), _19034);
 	    vec3 _10558;
 	    do
 	    {
-	        if (_22176 > 0.0)
+	        if (_22177 > 0.0)
 	        {
 	            vec3 _22572 = normalize(_12690 * _17907).xyz - vec3(0.57700002193450927734375);
 	            vec3 _7057 = clamp((normalize(_22572) * 2.0) + vec3(1.0), vec3(0.0), vec3(1.0)).xyz;
 	            vec3 _15712 = _7057 * vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125);
-	            _10558 = mix(_12690, _7057 * (_17907 / ((_15712.x + _15712.y) + _15712.z)), vec3(clamp(_22176 * pow(abs(dot(_22572, vec3(0.57700002193450927734375))), 0.20000000298023223876953125), 0.0, 1.0)));
+	            _10558 = mix(_12690, _7057 * (_17907 / ((_15712.x + _15712.y) + _15712.z)), vec3(clamp(_22177 * pow(abs(dot(_22572, vec3(0.57700002193450927734375))), 0.20000000298023223876953125), 0.0, 1.0)));
 	            break;
 	        }
 	        else
 	        {
-	            _10558 = mix(_12690, vec3(_17907), vec3(-_22176));
+	            _10558 = mix(_12690, vec3(_17907), vec3(-_22177));
 	            break;
 	        }
 	        break; // unreachable workaround
 	    } while(false);
 	    vec3 _23869 = (_10951 * _12690) * 2.0;
-	    vec3 _16559 = mix(mix(_10951, _23869, vec3((_22173 * (1.0 + (_Globals_.g_fWearProgress * _22173))) * _9410)), (_10558 * (1.0 + mix(mix(mix(_Globals_.g_fGrimeBrightness1, _Globals_.g_fGrimeBrightness2, _19403), _Globals_.g_fGrimeBrightness3, _10030), _Globals_.g_fGrimeBrightness4, _9726))) * _19227, vec3(_15624));
+	    vec3 _16559 = mix(mix(_10951, _23869, vec3((_22174 * (1.0 + (_Globals_.g_fWearProgress * _22174))) * _9410)), (_10558 * (1.0 + mix(mix(mix(_Globals_.g_fGrimeBrightness1, _Globals_.g_fGrimeBrightness2, _13915), _Globals_.g_fGrimeBrightness3, _21941), _Globals_.g_fGrimeBrightness4, _24699))) * _19227, vec3(_15624));
 	    vec3 _9452 = _16559.xyz;
 	    vec3 _10559;
 	    do
 	    {
-	        if (_22167 > 0.0)
+	        if (_22168 > 0.0)
 	        {
 	            vec3 _22573 = normalize(_20940.xyz * dot(_20940.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))).xyz - vec3(0.57700002193450927734375);
 	            vec3 _7058 = clamp((normalize(_22573) * 2.0) + vec3(1.0), vec3(0.0), vec3(1.0)).xyz;
 	            vec3 _15713 = _7058 * vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125);
-	            _10559 = mix(_9452, _7058 * (dot(_9452, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)) / ((_15713.x + _15713.y) + _15713.z)), vec3(clamp(_22167 * pow(abs(dot(_22573, vec3(0.57700002193450927734375))), 0.20000000298023223876953125), 0.0, 1.0)));
+	            _10559 = mix(_9452, _7058 * (dot(_9452, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)) / ((_15713.x + _15713.y) + _15713.z)), vec3(clamp(_22168 * pow(abs(dot(_22573, vec3(0.57700002193450927734375))), 0.20000000298023223876953125), 0.0, 1.0)));
 	            break;
 	        }
 	        else
 	        {
-	            _10559 = mix(_9452, vec3(dot(_16559.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))), vec3(-_22167));
+	            _10559 = mix(_9452, vec3(dot(_16559.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))), vec3(-_22168));
 	            break;
 	        }
 	        break; // unreachable workaround
 	    } while(false);
 	    vec3 _19489 = vec3(_19034);
-	    vec3 _6932 = mix(_16559, _10559 * (1.0 + mix(mix(mix(_Globals_.g_fDamageBrightness1, _Globals_.g_fDamageBrightness2, _19403), _Globals_.g_fDamageBrightness3, _10030), _Globals_.g_fDamageBrightness4, _9726)), _19489);
-	    vec3 _12529 = mix(_6932, _12690 * _6932, vec3((smoothstep(0.449999988079071044921875, 0.75, (1.0 - ((_18168 * _20235) * _20235)) * _Globals_.g_fWearProgress) * (1.0 - (_23685 * 0.5))) * mix(mix(mix(_Globals_.g_fGrungeMax1, _Globals_.g_fGrungeMax2, _19403), _Globals_.g_fGrungeMax3, _10030), _Globals_.g_fGrungeMax4, _9726)));
+	    vec3 _6932 = mix(_16559, _10559 * (1.0 + mix(mix(mix(_Globals_.g_fDamageBrightness1, _Globals_.g_fDamageBrightness2, _13915), _Globals_.g_fDamageBrightness3, _21941), _Globals_.g_fDamageBrightness4, _24699)), _19489);
+	    vec3 _12529 = mix(_6932, _12690 * _6932, vec3((smoothstep(0.449999988079071044921875, 0.75, (1.0 - ((_18168 * _20235) * _20235)) * _Globals_.g_fWearProgress) * (1.0 - (_23685 * 0.5))) * mix(mix(mix(_Globals_.g_fGrungeMax1, _Globals_.g_fGrungeMax2, _13915), _Globals_.g_fGrungeMax3, _21941), _Globals_.g_fGrungeMax4, _24699)));
 	    vec3 _7286 = _12529.xyz;
 	    float _15036 = dot(_7286, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125)) * 0.5;
 	    float _9533 = _12529.x;
@@ -1438,9 +1459,9 @@ PS
 	        {
 	            break;
 	        }
-	        vec2 _10548 = (_15902 + (((_493[_17017] * 0.0009765625) * _22170) * (1.0 + _17120))).xy;
-	        float _24694 = _19034 - smoothstep(_22935, _11001, clamp((mix(mix(mix(texture(sampler2D(g_tGrunge1, g_sTrilinearWrap), _10548).w, texture(sampler2D(g_tGrunge2, g_sTrilinearWrap), _10548).w, _19403), texture(sampler2D(g_tGrunge3, g_sTrilinearWrap), _10548).w, _10030), texture(sampler2D(g_tGrunge4, g_sTrilinearWrap), _10548).w, _9726) * _11428) + _20765, 0.0, 1.0) * _Globals_.g_fWearProgress);
-	        _10648 = _13138.xy - (_493[_17017] * _24694);
+	        vec2 _10548 = (_15902 + (((_592[_17017] * 0.0009765625) * _22171) * (1.0 + _17120))).xy;
+	        float _24694 = _19034 - smoothstep(_22935, _11001, clamp((mix(mix(mix(texture(sampler2D(g_tGrunge1, g_sTrilinearWrap), _10548).w, texture(sampler2D(g_tGrunge2, g_sTrilinearWrap), _10548).w, _13915), texture(sampler2D(g_tGrunge3, g_sTrilinearWrap), _10548).w, _21941), texture(sampler2D(g_tGrunge4, g_sTrilinearWrap), _10548).w, _24699) * _11428) + _20765, 0.0, 1.0) * _Globals_.g_fWearProgress);
+	        _10648 = _13138.xy - (_592[_17017] * _24694);
 	        _14733 = _16324 + abs(_24694);
 	        _18386 = _17017 + 1;
 	        _13138 = _10648;
@@ -1449,8 +1470,9 @@ PS
 	        continue;
 	    }
 	    float _7827 = _16324 * 0.25;
-	    vec2 _11392 = _13138.xy * (_22170 * 0.25);
+	    vec2 _11392 = _13138.xy * (_22171 * 0.25);
 	    vec2 _23775;
+	    SPIRV_CROSS_BRANCH
 	    if (_Globals_.g_nPatternMode < 2)
 	    {
 	        float _11401 = (0.0009765625 * _Globals_.g_fPaintThickness) * (1.0 - _7827);
@@ -1465,11 +1487,11 @@ PS
 	            {
 	                break;
 	            }
-	            vec4 _19373 = texture(sampler2D(g_tPattern, g_sTrilinearWrap), (_23217.xy + ((_493[_16208] * _11401) * 2.0)).xy);
-	            float _16001 = _19373.x;
+	            vec4 _19373 = texture(sampler2D(g_tPattern, g_sTrilinearWrap), (_23217.xy + ((_592[_16208] * _11401) * 2.0)).xy);
+	            float _16002 = _19373.x;
 	            float _18770 = _19373.y;
 	            float _14681 = _19373.z;
-	            _11588 = _13155.xy - ((((_493[_16208] * (_17120 - (((_16001 + _18770) + _14681) * _Globals_.g_fPaintThickness))).xy * (saturate(_9410) * _17119)).xy * (1.0 - min(min(_16001, _14681 - min(_16001, _18770)), _18770 - _16001))) * 0.5);
+	            _11588 = _13155.xy - ((((_592[_16208] * (_17120 - (((_16002 + _18770) + _14681) * _Globals_.g_fPaintThickness))).xy * (saturate(_9410) * _17119)).xy * (1.0 - min(min(_16002, _14681 - min(_16002, _18770)), _18770 - _16002))) * 0.5);
 	            _11797 = _16208 + 1;
 	            _13155 = _11588;
 	            _16208 = _11797;
@@ -1497,14 +1519,14 @@ PS
 	        _23775 = vec2(0.0);
 	    }
 	    vec3 _24364 = mix(_17118, normalize(vec3(vec2(_16785, _11178), (1.0 - abs(_16785)) - abs(_11178))), _19489);
-	    vec2 _22606 = _24364.xy * mix(mix(mix(_Globals_.g_fDetailNormalContrast1, _Globals_.g_fDetailNormalContrast2, _19403), _Globals_.g_fDetailNormalContrast3, _10030), _Globals_.g_fDetailNormalContrast4, _9726);
+	    vec2 _22606 = _24364.xy * mix(mix(mix(_Globals_.g_fDetailNormalContrast1, _Globals_.g_fDetailNormalContrast2, _13915), _Globals_.g_fDetailNormalContrast3, _21941), _Globals_.g_fDetailNormalContrast4, _24699);
 	    vec3 _8673;
 	    _8673.x = _22606.x;
 	    _8673.y = _22606.y;
 	    vec3 _10041 = normalize(vec3(((_17934.xy + _8673.xy) - vec2(-dot(_11392, _Globals_.g_vGrungeTexRotationXform0.xy), dot(_11392, _Globals_.g_vGrungeTexRotationXform1.xy)).xy) + _23775.xy, _17934.z));
-	    float _19526 = mix(mix(_13137, mix(mix(mix(_Globals_.g_fDamageMetalness1, _Globals_.g_fDamageMetalness2, _19403), _Globals_.g_fDamageMetalness3, _10030), _Globals_.g_fDamageMetalness4, _9726), _19034), mix(mix(mix(_Globals_.g_fDamageEdgeMetalness1, _Globals_.g_fDamageEdgeMetalness2, _19403), _Globals_.g_fDamageEdgeMetalness3, _10030), _Globals_.g_fDamageEdgeMetalness4, _9726), _7827);
-	    float _11543 = mix(mix(mix(mix(_Globals_.g_fDetailCloth1, _Globals_.g_fDetailCloth2, _19403), _Globals_.g_fDetailCloth3, _10030), _Globals_.g_fDetailCloth4, _9726), mix(mix(mix(_Globals_.g_fDamageCloth1, _Globals_.g_fDamageCloth2, _19403), _Globals_.g_fDamageCloth3, _10030), _Globals_.g_fDamageCloth4, _9726), max(_17292, _7827)) * (1.0 - _19526);
-	    vec2 _22792 = mix(mix(vec2(1.0) * mix(min(1.0, _23554), (1.0 - _17907) + mix(mix(mix(_Globals_.g_fGrungeRoughnessBrightness1, _Globals_.g_fGrungeRoughnessBrightness2, _19403), _Globals_.g_fGrungeRoughnessBrightness3, _10030), _Globals_.g_fGrungeRoughnessBrightness4, _9726), _15624), vec2(clamp(((mix(mix(mix(_Globals_.g_fDamageRoughnessContrast1, _Globals_.g_fDamageRoughnessContrast2, _19403), _Globals_.g_fDamageRoughnessContrast3, _10030), _Globals_.g_fDamageRoughnessContrast4, _9726) * (((_17411 * _17411) * 0.85000002384185791015625) + (-0.3499999940395355224609375))) + 0.5) * mix(mix(mix(_Globals_.g_fDamageRoughnessBrightness1, _Globals_.g_fDamageRoughnessBrightness2, _19403), _Globals_.g_fDamageRoughnessBrightness3, _10030), _Globals_.g_fDamageRoughnessBrightness4, _9726), 0.0, 1.0)), vec2(_19034)).xy, vec2(mix(mix(mix(_Globals_.g_fDamageEdgeRoughness1, _Globals_.g_fDamageEdgeRoughness2, _19403), _Globals_.g_fDamageEdgeRoughness3, _10030), _Globals_.g_fDamageEdgeRoughness4, _9726)), vec2(_7827));
+	    float _19526 = mix(mix(_13137, mix(mix(mix(_Globals_.g_fDamageMetalness1, _Globals_.g_fDamageMetalness2, _13915), _Globals_.g_fDamageMetalness3, _21941), _Globals_.g_fDamageMetalness4, _24699), _19034), mix(mix(mix(_Globals_.g_fDamageEdgeMetalness1, _Globals_.g_fDamageEdgeMetalness2, _13915), _Globals_.g_fDamageEdgeMetalness3, _21941), _Globals_.g_fDamageEdgeMetalness4, _24699), _7827);
+	    float _11543 = mix(mix(mix(mix(_Globals_.g_fDetailCloth1, _Globals_.g_fDetailCloth2, _13915), _Globals_.g_fDetailCloth3, _21941), _Globals_.g_fDetailCloth4, _24699), mix(mix(mix(_Globals_.g_fDamageCloth1, _Globals_.g_fDamageCloth2, _13915), _Globals_.g_fDamageCloth3, _21941), _Globals_.g_fDamageCloth4, _24699), max(_17292, _7827)) * (1.0 - _19526);
+	    vec2 _22792 = mix(mix(vec2(1.0) * mix(min(1.0, _23554), (1.0 - _17907) + mix(mix(mix(_Globals_.g_fGrungeRoughnessBrightness1, _Globals_.g_fGrungeRoughnessBrightness2, _13915), _Globals_.g_fGrungeRoughnessBrightness3, _21941), _Globals_.g_fGrungeRoughnessBrightness4, _24699), _15624), vec2(clamp(((mix(mix(mix(_Globals_.g_fDamageRoughnessContrast1, _Globals_.g_fDamageRoughnessContrast2, _13915), _Globals_.g_fDamageRoughnessContrast3, _21941), _Globals_.g_fDamageRoughnessContrast4, _24699) * (((_17411 * _17411) * 0.85000002384185791015625) + (-0.3499999940395355224609375))) + 0.5) * mix(mix(mix(_Globals_.g_fDamageRoughnessBrightness1, _Globals_.g_fDamageRoughnessBrightness2, _13915), _Globals_.g_fDamageRoughnessBrightness3, _21941), _Globals_.g_fDamageRoughnessBrightness4, _24699), 0.0, 1.0)), vec2(_19034)).xy, vec2(mix(mix(mix(_Globals_.g_fDamageEdgeRoughness1, _Globals_.g_fDamageEdgeRoughness2, _13915), _Globals_.g_fDamageEdgeRoughness3, _21941), _Globals_.g_fDamageEdgeRoughness4, _24699)), vec2(_7827));
 	    vec3 _7958 = normalize(max(vec3(0.0003000000142492353916168212890625), _17278.xyz));
 	    vec3 _23898 = mix(_Globals_.g_vTextileAlbedoLevels.xyz, _Globals_.g_vMetallicTextileAlbedoLevels.xyz, vec3(_19526));
 	    float _22205 = ((_20235 * pow(_24364.z, 0.20000000298023223876953125)) * (1.0 - (_16324 * 0.0500000007450580596923828125))) * mix(_17121, 1.0, _19034);
@@ -1512,9 +1534,10 @@ PS
 	    vec3 _23712 = normalize(_10041.xyz);
 	    float _21931 = _22792.x;
 	    vec4 _23727;
+	    SPIRV_CROSS_BRANCH
 	    if (_Globals_.g_nOutputMode == 0)
 	    {
-	        _23727 = vec4(mix(_17278.xyz, ((_7958.xyz * mix(min(_23898.x, dot(mix(_10951, _23869, vec3(_22173)).xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))), _23898.z, clamp(pow(max(_17278.x, max(_17278.y, _17278.z)), _23898.y), 0.0, 1.0))) / vec3(max(_7958.x, max(_7958.y, _7958.z)))).xyz, vec3(_Globals_.g_fWearProgress)).xyz, 1.0);
+	        _23727 = vec4(mix(_17278.xyz, ((_7958.xyz * mix(min(_23898.x, dot(mix(_10951, _23869, vec3(_22174)).xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))), _23898.z, clamp(pow(max(_17278.x, max(_17278.y, _17278.z)), _23898.y), 0.0, 1.0))) / vec3(max(_7958.x, max(_7958.y, _7958.z)))).xyz, vec3(_Globals_.g_fWearProgress)).xyz, 1.0);
 	    }
 	    else
 	    {
@@ -1658,6 +1681,7 @@ PS
 	        _23727 = _12504;
 	    }
 	    vec4 _6805;
+	    SPIRV_CROSS_BRANCH
 	    if (_11543 < 0.0)
 	    {
 	        vec4 _18969 = _23727;

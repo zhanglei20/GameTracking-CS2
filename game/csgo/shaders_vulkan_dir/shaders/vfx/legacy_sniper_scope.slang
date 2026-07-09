@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -151,13 +151,13 @@ PS
 	            _9054 = length(_18013);
 	            break;
 	        }
-	        float _20809 = dot(_19537, _19537);
-	        if (_20809 <= _11853)
+	        float _23231 = dot(_19537, _19537);
+	        if (_23231 <= _11853)
 	        {
 	            _9054 = length(gl_FragCoord.xy - _18274);
 	            break;
 	        }
-	        _9054 = length(gl_FragCoord.xy - (_8175 + (_19537 * (_11853 / _20809))));
+	        _9054 = length(gl_FragCoord.xy - (_8175 + (_19537 * (_11853 / _23231))));
 	        break;
 	    } while(false);
 	    float _17142 = max(0.5f, float(_Globals_1_g_nSniperScopeLineWidth) * 0.5f);
@@ -176,28 +176,28 @@ PS
 	            _19755 = length(_18014);
 	            break;
 	        }
-	        float _20810 = dot(_19538, _19538);
-	        if (_20810 <= _11854)
+	        float _23232 = dot(_19538, _19538);
+	        if (_23232 <= _11854)
 	        {
 	            _19755 = length(gl_FragCoord.xy - _18275);
 	            break;
 	        }
-	        _19755 = length(gl_FragCoord.xy - (_9827 + (_19538 * (_11854 / _20810))));
+	        _19755 = length(gl_FragCoord.xy - (_9827 + (_19538 * (_11854 / _23232))));
 	        break;
 	    } while(false);
 	    float _15651 = clamp(smoothstep(_17142, _17319, _9054) * smoothstep(_17142, _17319, _19755), 0.0f, 1.0f);
 	    float _11689;
 	    if (_Globals_1_g_nSpreadGap > 0)
 	    {
-	        float2 _14619 = _3944 + 0.25f.xx;
+	        float2 _12197 = _3944 + 0.25f.xx;
 	        float2 _15043;
 	        if ((_Globals_1_g_nSniperScopeLineWidth % 2u) == 0u)
 	        {
-	            _15043 = _14619.xy - 0.5f.xx;
+	            _15043 = _12197.xy - 0.5f.xx;
 	        }
 	        else
 	        {
-	            _15043 = _14619;
+	            _15043 = _12197;
 	        }
 	        float _4637 = float(_Globals_1_g_nSpreadGap);
 	        float _25218 = smoothstep(_4637 + 0.5f, _4637, distance(gl_FragCoord.xy, _15043));

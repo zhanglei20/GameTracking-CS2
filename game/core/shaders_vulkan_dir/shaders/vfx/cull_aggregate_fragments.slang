@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -30,45 +30,42 @@ CS
 {
 	StaticCombo( S_SUBGROUP_WAVE_OPS, 0..1 );
 	StaticCombo( S_REVERSE_DEPTH_BUFFER, 0..1 );
-	StaticCombo( S_SUPPORTS_DX_11_1, 0, Sys( 13 ) );
-	DynamicCombo( D_PASS, 0..3 );
+	StaticCombo( S_SUPPORTS_DX_11_1, 0, Sys( 11 ) );
+	DynamicCombo( D_PASS, 0..2 );
 	DynamicCombo( D_OCCLUSION_CULLING, 0..1 );
 	DynamicCombo( D_VOLUME_CULLER, 0..1 );
-	DynamicCombo( D_VIS_CULLING, 0..1 );
 	DynamicCombo( D_SUPPORTS_MESH_SHADER, 0..1 );
 	DynamicCombo( D_DEBUG_OUTPUT_STATS, 0..1 );
 	DynamicCombo( D_DEBUG_DRAW_MESHLETS, 0..1 );
+	DynamicComboRule( Requires( D_SUPPORTS_MESH_SHADER, S_SUBGROUP_WAVE_OPS ) );
 	
 	cbuffer GpuVolumeCullerPlanes_t < Attribute("GpuVolumeCullerPlanes_t"); >;
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
-	StructuredBuffer g_CullRequests < Attribute("CullRequests"); SrgbRead(false); >;
 	RWStructuredBuffer g_CullStats < Attribute("FragmentStats"); >;
 	RWBuffer<float4> g_DebugMeshletDrawArgs < Attribute("DebugMeshletDrawArgs"); >;
 	RWBuffer<float4> g_DrawArgs < Attribute("FragmentDrawArgs"); >;
-	StructuredBuffer g_FragmentData < Attribute("FragmentBounds"); SrgbRead(false); >;
-	ByteAddressBuffer g_InputIndices < Attribute("InputIndices"); SrgbRead(false); >;
+	StructuredBuffer g_FragmentCullRequests < Attribute("FragmentCullRequests"); >;
+	StructuredBuffer g_FragmentData < Attribute("FragmentBounds"); >;
+	ByteAddressBuffer g_InputIndices < Attribute("InputIndices"); >;
 	RWStructuredBuffer g_MSIndirectDispatchArgs < Attribute("MSIndirectDispatchArgs"); >;
 	RWStructuredBuffer g_MSIndirectDispatchArgsRecull < Attribute("MSIndirectDispatchArgsRecull"); >;
-	StructuredBuffer g_MeshletData < Attribute("MeshletData"); SrgbRead(false); >;
+	ByteAddressBuffer g_MeshletData < Attribute("MeshletData"); >;
 	RWByteAddressBuffer g_OutputIndices < Attribute("OutputIndices"); >;
 	RWStructuredBuffer g_RWMeshletBuffer < Source(ExternalDescSet); >;
 	RWBuffer<float4> g_RecullDispatchArgs < Attribute("RecullDispatchArgs"); >;
 	RWBuffer<float4> g_RecullDrawArgs < Attribute("FragmentRecullDrawArgs"); >;
-	Buffer g_RecullRequestCount < Attribute("RecullRequestCount"); SrgbRead(false); >;
-	RWBuffer<float4> g_RecullRequestCount < Attribute("RecullRequestCount"); >;
+	StructuredBuffer g_RecullRequests < Attribute("RecullRequests"); >;
 	RWStructuredBuffer g_RecullRequests < Attribute("RecullRequests"); >;
-	Buffer g_VisBits < Attribute("VisBits"); SrgbRead(false); >;
 	bool g_bBackfaceCulling < Attribute("BackfaceCulling"); UiType(CheckBox); >;
 	bool g_bDrawAllMeshlets < Attribute("DebugDrawAllMeshlets"); UiType(CheckBox); >;
 	bool g_bOrthographicView < Attribute("OrthographicView"); UiType(CheckBox); >;
 	ExternalDescriptorSet g_globalLateBoundBindlessSet < Source(ExternalDescSet); Attribute("g_globalLateBoundBindlessSet"); >;
 	float4x4 g_mDepthPyramidProjFromWorld < Attribute("DepthPyramidProjFromWorld"); >;
-	int g_nCullRequests < Attribute("NumCullRequests"); UiType(Slider); >;
 	int g_nDepthPyramidHeight < Attribute("DepthPyramidHeight"); UiType(Slider); >;
 	int g_nDepthPyramidMaxMip < Attribute("DepthPyramidMaxMip"); UiType(Slider); >;
 	int g_nDepthPyramidWidth < Attribute("DepthPyramidWidth"); UiType(Slider); >;
-	int g_nNumAggregates < Attribute("NumAggregates"); UiType(Slider); >;
-	int g_nNumFragments < Attribute("NumFragments"); UiType(Slider); >;
+	int g_nFragmentCullRequests < Attribute("NumFragmentRequests"); UiType(Slider); >;
+	int g_nMeshletCullRequests < Attribute("NumMeshletCullRequests"); UiType(Slider); >;
 	Texture2D g_tDepthPyramid < Attribute("DepthPyramid"); SrgbRead(false); >;
 	float3 g_vCullCameraForwardWs < Attribute("CullCameraForwardWs"); UiType(VectorText); >;
 	float3 g_vCullCameraPositionWs < Attribute("CullCameraPositionWs"); UiType(VectorText); >;
@@ -82,17 +79,17 @@ CS
 	float4 g_vFrustumPlane5 < Attribute("FrustumPlane5"); UiType(VectorText); >;
 	
 	#if (S_SUPPORTS_DX_11_1 == 0)
-		Buffer g_RecullRequestCount < Attribute("RecullRequestCount"); SrgbRead(false); >;
-		RWBuffer<float4> g_RecullRequestCount < Attribute("RecullRequestCount"); >;
+		StructuredBuffer g_RecullRequests < Attribute("RecullRequests"); >;
+		RWStructuredBuffer g_RecullRequests < Attribute("RecullRequests"); >;
 	#endif
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 1 (name: g_vCullCameraPositionWs) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (8960 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (9864 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	#if defined(GL_EXT_control_flow_attributes)
@@ -109,14 +106,6 @@ CS
 	#endif
 	layout(local_size_x = 64, local_size_y = 1, local_size_z = 1) in;
 	
-	struct _1017
-	{
-	    uint _m0;
-	    uint _m1;
-	    uint _m2;
-	    uint _m3;
-	};
-	
 	struct _1107
 	{
 	    uint _m0;
@@ -129,15 +118,35 @@ CS
 	    uint _m7;
 	};
 	
-	struct _1095
+	struct _1098
 	{
 	    vec3 _m0;
-	    uint _m1;
+	    int _m1;
 	    vec3 _m2;
 	    uint _m3;
 	};
 	
-	struct _1996
+	struct _1108
+	{
+	    uint _m0;
+	    uint _m1;
+	    uint _m2;
+	    uint _m3;
+	    uint _m4;
+	    uint _m5;
+	    uint _m6;
+	    uint _m7;
+	};
+	
+	struct _1099
+	{
+	    vec3 _m0;
+	    int _m1;
+	    vec3 _m2;
+	    uint _m3;
+	};
+	
+	struct _2037
 	{
 	    vec3 g_vCullCameraForwardWs;
 	    vec3 g_vCullCameraPositionWs;
@@ -147,34 +156,35 @@ CS
 	    vec4 g_vFrustumPlane3;
 	    vec4 g_vFrustumPlane4;
 	    vec4 g_vFrustumPlane5;
-	    uint g_nCullRequests;
+	    uint g_nFragmentCullRequests;
+	    uint g_nMeshletCullRequests;
 	    int g_bBackfaceCulling;
 	    int g_bOrthographicView;
 	};
 	
-	layout(set = 0) uniform _1996 _Globals_;
+	layout(set = 0) uniform _2037 _Globals_;
 	
-	layout(set = 0, binding = 35, std430) readonly buffer g_CullRequests
+	layout(set = 0, binding = 33, std430) readonly buffer g_FragmentCullRequests
 	{
-	    _1017 _m0[];
-	} g_CullRequests_1;
+	    _1108 _m0[];
+	} g_FragmentCullRequests_1;
 	
-	layout(set = 0, binding = 34, std430) readonly buffer g_MeshletData
+	layout(set = 0, binding = 32, std430) readonly buffer g_MeshletData
 	{
-	    _1107 _m0[];
+	    uint _m0[];
 	} g_MeshletData_1;
 	
-	layout(set = 0, binding = 33, std430) readonly buffer g_FragmentData
+	layout(set = 0, binding = 31, std430) readonly buffer g_FragmentData
 	{
-	    _1095 _m0[];
+	    _1099 _m0[];
 	} g_FragmentData_1;
 	
-	layout(set = 0, binding = 36, std430) readonly buffer g_InputIndices
+	layout(set = 0, binding = 34, std430) readonly buffer g_InputIndices
 	{
 	    uint _m0[];
 	} g_InputIndices_1;
 	
-	layout(set = 0, binding = 165, std430) buffer undetermined
+	layout(set = 0, binding = 164, std430) buffer undetermined
 	{
 	    uint _m0[];
 	} undetermined_1;
@@ -183,46 +193,96 @@ CS
 	
 	void main()
 	{
-	    if (gl_GlobalInvocationID.x < _Globals_.g_nCullRequests)
+	    if (gl_GlobalInvocationID.x < _Globals_.g_nMeshletCullRequests)
 	    {
-	        uint _8600 = g_CullRequests_1._m0[gl_GlobalInvocationID.x]._m0;
-	        uint _23745 = g_MeshletData_1._m0[_8600]._m0;
-	        uint _4523 = (_23745 >> uint(7)) & 127u;
-	        uint _5882 = _4523 + (_4523 & 1u);
-	        uint _13328 = g_MeshletData_1._m0[_8600]._m7;
-	        uint _5395 = _13328 & 16777215u;
-	        vec3 _10538 = mix(g_FragmentData_1._m0[_5395]._m0.xyz, g_FragmentData_1._m0[_5395]._m2.xyz, vec3(float((g_MeshletData_1._m0[_8600]._m4) & 1023u) * 0.000977517105638980865478515625, float((g_MeshletData_1._m0[_8600]._m4 >> uint(10)) & 1023u) * 0.000977517105638980865478515625, float((g_MeshletData_1._m0[_8600]._m4 >> uint(20)) & 1023u) * 0.000977517105638980865478515625));
-	        vec3 _23228 = mix(g_FragmentData_1._m0[_5395]._m0.xyz, g_FragmentData_1._m0[_5395]._m2.xyz, vec3(float((g_MeshletData_1._m0[_8600]._m5) & 1023u) * 0.000977517105638980865478515625, float((g_MeshletData_1._m0[_8600]._m5 >> uint(10)) & 1023u) * 0.000977517105638980865478515625, float((g_MeshletData_1._m0[_8600]._m5 >> uint(20)) & 1023u) * 0.000977517105638980865478515625));
-	        uint _24909 = g_MeshletData_1._m0[_8600]._m1;
-	        uint _13546 = g_FragmentData_1._m0[_5395]._m1;
-	        uint _17363 = g_CullRequests_1._m0[gl_GlobalInvocationID.x]._m2;
-	        vec4 _20578[6] = vec4[](_Globals_.g_vFrustumPlane0, _Globals_.g_vFrustumPlane1, _Globals_.g_vFrustumPlane2, _Globals_.g_vFrustumPlane3, _Globals_.g_vFrustumPlane4, _Globals_.g_vFrustumPlane5);
-	        float _13155;
-	        _13155 = 100000000.0;
-	        float _6414;
-	        int _8899;
-	        int _16208 = 0;
+	        uint _16208;
+	        _16208 = 0u;
+	        uint _18463;
+	        uint _19349;
+	        uint _13155 = _Globals_.g_nFragmentCullRequests;
 	        for (;;)
 	        {
-	            if (!(_16208 < 6))
+	            if (!((_16208 + 1u) < _13155))
 	            {
 	                break;
 	            }
-	            _6414 = min(_13155, dot(mix(_10538, _23228, greaterThan(_20578[_16208].xyz, vec3(0.0))), _20578[_16208].xyz) + _20578[_16208].w);
-	            _8899 = _16208 + 1;
-	            _13155 = _6414;
-	            _16208 = _8899;
+	            uint _3189 = (_16208 + _13155) >> uint(1);
+	            _1107 _22071;
+	            _22071._m0 = g_FragmentCullRequests_1._m0[_3189]._m0;
+	            _22071._m1 = g_FragmentCullRequests_1._m0[_3189]._m1;
+	            _22071._m2 = g_FragmentCullRequests_1._m0[_3189]._m2;
+	            _22071._m3 = g_FragmentCullRequests_1._m0[_3189]._m3;
+	            _22071._m4 = g_FragmentCullRequests_1._m0[_3189]._m4;
+	            _22071._m5 = g_FragmentCullRequests_1._m0[_3189]._m5;
+	            _22071._m6 = g_FragmentCullRequests_1._m0[_3189]._m6;
+	            _22071._m7 = g_FragmentCullRequests_1._m0[_3189]._m7;
+	            bool _17766 = _22071._m3 <= gl_GlobalInvocationID.x;
+	            _19349 = _17766 ? _13155 : _3189;
+	            _18463 = _17766 ? _3189 : _16208;
+	            _13155 = _19349;
+	            _16208 = _18463;
 	            continue;
 	        }
-	        bool _9364 = (_13155 < 0.0) ? false : true;
+	        _1107 _20228;
+	        _20228._m0 = g_FragmentCullRequests_1._m0[_16208]._m0;
+	        _20228._m1 = g_FragmentCullRequests_1._m0[_16208]._m1;
+	        _20228._m2 = g_FragmentCullRequests_1._m0[_16208]._m2;
+	        _20228._m3 = g_FragmentCullRequests_1._m0[_16208]._m3;
+	        _20228._m4 = g_FragmentCullRequests_1._m0[_16208]._m4;
+	        _20228._m5 = g_FragmentCullRequests_1._m0[_16208]._m5;
+	        _20228._m6 = g_FragmentCullRequests_1._m0[_16208]._m6;
+	        _20228._m7 = g_FragmentCullRequests_1._m0[_16208]._m7;
+	        uint _5517 = gl_GlobalInvocationID.x - _20228._m3;
+	        if (_5517 == 0u)
+	        {
+	            uint _8597 = _20228._m2 * 5u;
+	            imageStore(_4767, int(_8597 + 1u), uvec4(1u));
+	            imageStore(_4767, int(_8597 + 2u), uvec4(_20228._m4));
+	            imageStore(_4767, int(_8597 + 3u), uvec4(_20228._m5));
+	            imageStore(_4767, int(_8597 + 4u), uvec4(_20228._m6));
+	        }
+	        uint _17109 = (_20228._m0 + _5517) * 32u;
+	        uint _6233 = g_MeshletData_1._m0[_17109 / 4u];
+	        uint _6234 = g_MeshletData_1._m0[(_17109 + 4u) / 4u];
+	        uint _6752 = (_17109 + 12u) / 4u;
+	        uint _6753 = (_17109 + 16u) / 4u;
+	        uint _6754 = (_17109 + 20u) / 4u;
+	        uint _18023 = _6233 >> uint(7);
+	        uint _5882 = (_18023 & 127u) + (_18023 & 1u);
+	        _1098 _20229;
+	        _20229._m0 = g_FragmentData_1._m0[_20228._m7]._m0;
+	        _20229._m1 = g_FragmentData_1._m0[_20228._m7]._m1;
+	        _20229._m2 = g_FragmentData_1._m0[_20228._m7]._m2;
+	        _20229._m3 = g_FragmentData_1._m0[_20228._m7]._m3;
+	        vec3 _11811 = mix(_20229._m0.xyz, _20229._m2.xyz, vec3(float(g_MeshletData_1._m0[_6753] & 1023u) * 0.000977517105638980865478515625, float((g_MeshletData_1._m0[_6753] >> uint(10)) & 1023u) * 0.000977517105638980865478515625, float((g_MeshletData_1._m0[_6753] >> uint(20)) & 1023u) * 0.000977517105638980865478515625));
+	        vec3 _12834 = mix(_20229._m0.xyz, _20229._m2.xyz, vec3(float(g_MeshletData_1._m0[_6754] & 1023u) * 0.000977517105638980865478515625, float((g_MeshletData_1._m0[_6754] >> uint(10)) & 1023u) * 0.000977517105638980865478515625, float((g_MeshletData_1._m0[_6754] >> uint(20)) & 1023u) * 0.000977517105638980865478515625));
+	        vec4 _20578[6] = vec4[](_Globals_.g_vFrustumPlane0, _Globals_.g_vFrustumPlane1, _Globals_.g_vFrustumPlane2, _Globals_.g_vFrustumPlane3, _Globals_.g_vFrustumPlane4, _Globals_.g_vFrustumPlane5);
+	        float _13156;
+	        _13156 = 100000000.0;
+	        float _6414;
+	        int _8900;
+	        int _16209 = 0;
+	        for (;;)
+	        {
+	            if (!(_16209 < 6))
+	            {
+	                break;
+	            }
+	            _6414 = min(_13156, dot(mix(_11811, _12834, greaterThan(_20578[_16209].xyz, vec3(0.0))), _20578[_16209].xyz) + _20578[_16209].w);
+	            _8900 = _16209 + 1;
+	            _13156 = _6414;
+	            _16209 = _8900;
+	            continue;
+	        }
+	        bool _10462 = !(_13156 < 0.0);
 	        bool _12885;
 	        if (_Globals_.g_bBackfaceCulling != 0)
 	        {
 	            bool _24742;
 	            do
 	            {
-	                vec3 _10254 = vec3(float(int(((g_MeshletData_1._m0[_8600]._m3) & 255u) << uint(24)) >> 24) * 0.0078740157186985015869140625, float(int(((g_MeshletData_1._m0[_8600]._m3 >> uint(8)) & 255u) << uint(24)) >> 24) * 0.0078740157186985015869140625, float(int(((g_MeshletData_1._m0[_8600]._m3 >> uint(16)) & 255u) << uint(24)) >> 24) * 0.0078740157186985015869140625);
-	                float _15712 = float(int(((g_MeshletData_1._m0[_8600]._m3 >> uint(24)) & 255u) << uint(24)) >> 24) * 0.0078740157186985015869140625;
+	                vec3 _10254 = vec3(float(int((g_MeshletData_1._m0[_6752] & 255u) << uint(24)) >> 24) * 0.0078740157186985015869140625, float(int(((g_MeshletData_1._m0[_6752] >> uint(8)) & 255u) << uint(24)) >> 24) * 0.0078740157186985015869140625, float(int(((g_MeshletData_1._m0[_6752] >> uint(16)) & 255u) << uint(24)) >> 24) * 0.0078740157186985015869140625);
+	                float _15712 = float(int(((g_MeshletData_1._m0[_6752] >> uint(24)) & 255u) << uint(24)) >> 24) * 0.0078740157186985015869140625;
 	                if (_Globals_.g_bOrthographicView != 0)
 	                {
 	                    _24742 = dot(_Globals_.g_vCullCameraForwardWs.xyz, _10254) > _15712;
@@ -230,29 +290,29 @@ CS
 	                }
 	                else
 	                {
-	                    vec3 _16593 = ((_10538 + _23228) * 0.5) - _Globals_.g_vCullCameraPositionWs.xyz;
-	                    _24742 = dot(_16593, _10254) > ((_15712 * length(_16593)) + (length(_23228 - _10538) * 0.5));
+	                    vec3 _16593 = ((_11811 + _12834) * 0.5) - _Globals_.g_vCullCameraPositionWs.xyz;
+	                    _24742 = dot(_16593, _10254) > ((_15712 * length(_16593)) + (length(_12834 - _11811) * 0.5));
 	                    break;
 	                }
 	                break; // unreachable workaround
 	            } while(false);
-	            _12885 = _24742 ? false : _9364;
+	            _12885 = _24742 ? false : _10462;
 	        }
 	        else
 	        {
-	            _12885 = _9364;
+	            _12885 = _10462;
 	        }
 	        if (_12885)
 	        {
-	            uint _18763 = imageAtomicAdd(_4767, int(g_CullRequests_1._m0[gl_GlobalInvocationID.x]._m1 * 5u), _5882 * 3u);
+	            uint _18763 = imageAtomicAdd(_4767, int(_20228._m2 * 5u), _5882 * 3u);
 	            uint _14025 = _5882 * 6u;
 	            uint _16134 = _14025 / 128u;
 	            uint _10045 = (_14025 % 128u) / 16u;
 	            uint _11906 = (_14025 % 16u) / 4u;
 	            uint _13136;
 	            uint _16324;
-	            _13136 = (_18763 + _17363) * 2u;
-	            _16324 = (_24909 + _13546) * 2u;
+	            _13136 = (_18763 + _20228._m4) * 2u;
+	            _16324 = ((_6234 * 3u) + uint(_20229._m1)) * 2u;
 	            uint _14167;
 	            uint _16273;
 	            uint _21149;
@@ -275,14 +335,14 @@ CS
 	                    }
 	                    uint _9984 = _13039 * 16u;
 	                    uint _23357 = _16324 + _9984;
-	                    uint _6234 = g_InputIndices_1._m0[(_23357 + 4u) / 4u];
-	                    uint _6235 = g_InputIndices_1._m0[(_23357 + 8u) / 4u];
-	                    uint _6236 = g_InputIndices_1._m0[(_23357 + 12u) / 4u];
-	                    uint _20861 = _13136 + _9984;
-	                    undetermined_1._m0[_20861 / 4u] = g_InputIndices_1._m0[_23357 / 4u];
-	                    undetermined_1._m0[(_20861 + 4u) / 4u] = _6234;
-	                    undetermined_1._m0[(_20861 + 8u) / 4u] = _6235;
-	                    undetermined_1._m0[(_20861 + 12u) / 4u] = _6236;
+	                    uint _6238 = g_InputIndices_1._m0[(_23357 + 4u) / 4u];
+	                    uint _6239 = g_InputIndices_1._m0[(_23357 + 8u) / 4u];
+	                    uint _6240 = g_InputIndices_1._m0[(_23357 + 12u) / 4u];
+	                    uint _20865 = _13136 + _9984;
+	                    undetermined_1._m0[_20865 / 4u] = g_InputIndices_1._m0[_23357 / 4u];
+	                    undetermined_1._m0[(_20865 + 4u) / 4u] = _6238;
+	                    undetermined_1._m0[(_20865 + 8u) / 4u] = _6239;
+	                    undetermined_1._m0[(_20865 + 12u) / 4u] = _6240;
 	                    _23262 = _13039 + 1u;
 	                    _13039 = _23262;
 	                    continue;
@@ -310,12 +370,12 @@ CS
 	                {
 	                    break;
 	                }
-	                uint _6238 = g_InputIndices_1._m0[(_13137 + 4u) / 4u];
-	                uint _6239 = g_InputIndices_1._m0[(_13137 + 8u) / 4u];
+	                uint _6242 = g_InputIndices_1._m0[(_13137 + 4u) / 4u];
+	                uint _6243 = g_InputIndices_1._m0[(_13137 + 8u) / 4u];
 	                uint _22955 = g_InputIndices_1._m0[(_13137 + 12u) / 4u];
 	                undetermined_1._m0[_16325 / 4u] = g_InputIndices_1._m0[_13137 / 4u];
-	                undetermined_1._m0[(_16325 + 4u) / 4u] = _6238;
-	                undetermined_1._m0[(_16325 + 8u) / 4u] = _6239;
+	                undetermined_1._m0[(_16325 + 4u) / 4u] = _6242;
+	                undetermined_1._m0[(_16325 + 8u) / 4u] = _6243;
 	                undetermined_1._m0[(_16325 + 12u) / 4u] = _22955;
 	                _22844 = _13137 + 16u;
 	                _8018 = _16325 + 16u;
@@ -338,7 +398,7 @@ CS
 	                {
 	                    break;
 	                }
-	                undetermined_1._m0[_13138 / 4u] = g_InputIndices_1._m0[uint(int(_16326)) / 4u];
+	                undetermined_1._m0[_13138 / 4u] = g_InputIndices_1._m0[_16326 / 4u];
 	                _22845 = _16326 + 4u;
 	                _8019 = _13138 + 4u;
 	                _14169 = _17019 + 1u;

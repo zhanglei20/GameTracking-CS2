@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -65,7 +65,7 @@ CS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 0 (name: g_vInputDownSampleDim) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
@@ -96,11 +96,11 @@ CS
 	{
 	    do
 	    {
-	        uint _25171 = (gl_WorkGroupID.x * 8u) + gl_LocalInvocationID.x;
+	        uint _16337 = (gl_WorkGroupID.x * 8u) + gl_LocalInvocationID.x;
 	        uint _24071 = (gl_WorkGroupID.y * 8u) + gl_LocalInvocationID.y;
-	        uvec2 _13756 = uvec2(_25171, _24071);
+	        uvec2 _13756 = uvec2(_16337, _24071);
 	        bool _12885;
-	        if (_25171 >= _Globals_.g_nDstWidth)
+	        if (_16337 >= _Globals_.g_nDstWidth)
 	        {
 	            _12885 = true;
 	        }

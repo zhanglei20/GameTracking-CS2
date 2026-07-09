@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_41
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -55,7 +55,6 @@ VS
 	StaticCombo( S_TEXTURE_LAYERS, F_TEXTURE_LAYERS );
 	StaticComboRule( Requires( S_ADDRESS_V_CLAMP, S_DRAW_AS_TRAIL ) );
 	StaticComboRule( Requires( S_ADDRESS_V_CLAMP, S_DRAW_AS_TRAIL ) );
-	DynamicCombo( D_FORCE_LEGACY_SHADER_MODEL, 0, Sys( 0 ) );
 	DynamicCombo( D_SUPPORT_FRAME_CROP, 0..1 );
 	DynamicComboRule( Requires( D_SUPPORT_FRAME_CROP, S_NUM_SEQUENCES_PER_PARTICLE ) );
 	
@@ -63,33 +62,28 @@ VS
 	cbuffer RoughnessLightingGlobalsCB_t < Attribute("RoughnessLightingGlobalsCB_t"); >;
 	cbuffer SpriteCardPixelControls_t < Attribute("SpriteCardPixelControls_t"); >;
 	cbuffer SpritecardVertexControls_t < Attribute("SpritecardVertexControls_t"); >;
-	cbuffer SunLightShaderParamsCB < Attribute("SunLightShaderParamsCB"); >;
+	cbuffer SunLightShaderParamsCB_t < Attribute("SunLightShaderParamsCB_t"); >;
 	Texture2D g_tParticleSheetTexture < Attribute("SheetTexture"); SrgbRead(false); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (32080 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
-	
-	struct _1822
-	{
-	    float4 _m0[4];
-	};
+	// SPIR-V source (31368 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	static float _4;
 	static float4 _5;
 	
-	cbuffer _Globals_ : register(b0, space0)
+	cbuffer PerViewConstantBuffer_t : register(b0, space0)
 	{
-	    _1822 _Globals_1_m0 : packoffset(c0);
-	    float4 _Globals_1_m1 : packoffset(c17);
-	    float4 _Globals_1_m2 : packoffset(c24);
-	    float3 _Globals_1_m3 : packoffset(c26);
-	    float3 _Globals_1_m4 : packoffset(c27);
-	    float3 _Globals_1_m5 : packoffset(c28);
-	    float3 _Globals_1_m6 : packoffset(c31);
-	    float _Globals_1_m7 : packoffset(c31.w);
-	    float _Globals_1_m8 : packoffset(c32);
-	    float _Globals_1_m9 : packoffset(c32.y);
-	    float _Globals_1_m10 : packoffset(c32.z);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c17);
+	    float4 PerViewConstantBuffer_t_1_m2 : packoffset(c24);
+	    float3 PerViewConstantBuffer_t_1_m3 : packoffset(c26);
+	    float3 PerViewConstantBuffer_t_1_m4 : packoffset(c27);
+	    float3 PerViewConstantBuffer_t_1_m5 : packoffset(c28);
+	    float3 PerViewConstantBuffer_t_1_m6 : packoffset(c31);
+	    float PerViewConstantBuffer_t_1_m7 : packoffset(c31.w);
+	    float PerViewConstantBuffer_t_1_m8 : packoffset(c32);
+	    float PerViewConstantBuffer_t_1_m9 : packoffset(c32.y);
+	    float PerViewConstantBuffer_t_1_m10 : packoffset(c32.z);
 	};
 	
 	cbuffer SpritecardVertexControls_t : register(b4, space0)
@@ -113,10 +107,10 @@ VS
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b2, space0)
+	cbuffer SunLightShaderParamsCB_t : register(b2, space0)
 	{
-	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
-	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);
+	    float3 SunLightShaderParamsCB_t_1_m0 : packoffset(c0);
+	    float3 SunLightShaderParamsCB_t_1_m1 : packoffset(c1);
 	};
 	
 	
@@ -161,12 +155,13 @@ VS
 	    float _21640 = (input_0.y * (-0.5f)) + 0.5f;
 	    float2 _11357 = float2(SpritecardVertexControls_t_1_m4.xy);
 	    float2 _13745 = float2(SpritecardVertexControls_t_1_m4.zw);
-	    int _15395 = int(SpritecardVertexControls_t_1_m3.x) & 31;
-	    float _15588 = float((_15395 >> 4) & 1);
-	    int _9492 = int(SpritecardVertexControls_t_1_m5.x) & 65535;
-	    uint _23817 = uint(_9492 & 15);
-	    uint _12834 = uint(_15395 & 15);
-	    uint _15498 = uint(int(SpritecardVertexControls_t_1_m3.y) & 15);
+	    int _14313 = int(SpritecardVertexControls_t_1_m3.x);
+	    float _15588 = float(((_14313 & 31) >> 4) & 1);
+	    int _9472 = int(SpritecardVertexControls_t_1_m5.x);
+	    uint _11757 = uint(_9472 & 15);
+	    uint _12834 = uint(_14313 & 15);
+	    uint _14729 = uint(int(SpritecardVertexControls_t_1_m3.y) & 15);
+	    int _10221 = _9472 & 65535;
 	    int _20704 = int(SpritecardVertexControls_t_1_m3.z);
 	    uint _23505 = uint((_20704 >> 12) & 15);
 	    uint _14700 = uint((int(SpriteCardPixelControls_t_1_m1.y) >> 16) & 15);
@@ -180,7 +175,7 @@ VS
 	            {
 	                float _13181;
 	                bool _16061;
-	                switch (_23817)
+	                switch (_11757)
 	                {
 	                    case 1u:
 	                    {
@@ -383,7 +378,7 @@ VS
 	            {
 	                float _13183;
 	                bool _16063;
-	                switch (_15498)
+	                switch (_14729)
 	                {
 	                    case 1u:
 	                    {
@@ -591,7 +586,7 @@ VS
 	            {
 	                float _13174;
 	                bool _16054;
-	                switch (_23817)
+	                switch (_11757)
 	                {
 	                    case 1u:
 	                    {
@@ -793,7 +788,7 @@ VS
 	            {
 	                float _13176;
 	                bool _16056;
-	                switch (_15498)
+	                switch (_14729)
 	                {
 	                    case 1u:
 	                    {
@@ -894,7 +889,7 @@ VS
 	            {
 	                float _13177;
 	                bool _16057;
-	                switch (uint((_9492 >> 4) & 15))
+	                switch (uint((_10221 >> 4) & 15))
 	                {
 	                    case 1u:
 	                    {
@@ -1004,7 +999,7 @@ VS
 	            {
 	                float _13178;
 	                bool _16058;
-	                switch (uint((_9492 >> 8) & 15))
+	                switch (uint((_10221 >> 8) & 15))
 	                {
 	                    case 1u:
 	                    {
@@ -1109,7 +1104,7 @@ VS
 	                {
 	                    float _13179;
 	                    bool _16059;
-	                    switch (uint((_9492 >> 12) & 15))
+	                    switch (uint((_10221 >> 12) & 15))
 	                    {
 	                        case 1u:
 	                        {
@@ -1565,10 +1560,10 @@ VS
 	        _19494 = _7676.z;
 	    }
 	    float4 _25152 = lerp(input_2, float4(float3(_21354, _21355, _19494), input_2.w), float((_20704 >> 8) & 15).xxxx);
-	    float3 _17858 = cross(_Globals_1_m5, _Globals_1_m4);
-	    float _8663 = cos(input_4.x);
+	    float3 _17858 = cross(PerViewConstantBuffer_t_1_m5, PerViewConstantBuffer_t_1_m4);
+	    float _8664 = cos(input_4.x);
 	    float _23279 = sin(input_4.x);
-	    float3 _18015 = (_Globals_1_m4 * _8663) - (_17858 * _23279);
+	    float3 _18015 = (PerViewConstantBuffer_t_1_m4 * _8664) - (_17858 * _23279);
 	    float _19825 = sin(input_4.y);
 	    float _8898 = cos(input_4.y);
 	    float _9794 = _18015.x;
@@ -1577,14 +1572,14 @@ VS
 	    float _7331 = _24619 * _24619;
 	    float _6498 = _18015.z;
 	    float _17752 = _6498 * _6498;
-	    float _22876 = 1.0f - _8898;
-	    float _10185 = (_9794 * _24619) * _22876;
+	    float _22875 = 1.0f - _8898;
+	    float _10185 = (_9794 * _24619) * _22875;
 	    float _21408 = _6498 * _19825;
-	    float _6451 = (_6498 * _9794) * _22876;
+	    float _6451 = (_6498 * _9794) * _22875;
 	    float _22637 = _24619 * _19825;
-	    float _6426 = (_24619 * _6498) * _22876;
+	    float _6426 = (_24619 * _6498) * _22875;
 	    float _22945 = _9794 * _19825;
-	    float _20054 = length(_Globals_1_m3.xyz - input_3.xyz);
+	    float _20054 = length(PerViewConstantBuffer_t_1_m3.xyz - input_3.xyz);
 	    float _10020;
 	    float4 _24447;
 	    if (SpritecardVertexControls_t_1_m2.z > 0.0f)
@@ -1616,39 +1611,35 @@ VS
 	        _10020 = input_4.w;
 	        _24447 = _25152;
 	    }
-	    float _13915 = (_24447.w < 0.0039215688593685626983642578125f) ? 0.0f : _10020;
-	    float4 _13105 = _24447;
-	    _13105.w = _24447.w * lerp(1.0f, input_4.w / _13915, SpritecardVertexControls_t_1_m2.w);
-	    float3 _23592 = input_3.xyz + (((mul(float3x3(float3(_21121 + ((1.0f - _21121) * _8898), _10185 - _21408, _6451 + _22637), float3(_10185 + _21408, _7331 + ((1.0f - _7331) * _8898), _6426 - _22945), float3(_6451 - _22637, _6426 + _22945, _17752 + ((1.0f - _17752) * _8898))), (_17858 * _8663) + (_Globals_1_m4 * _23279)) * (input_0.x + SpritecardVertexControls_t_1_m1.y)) + (_18015 * (input_0.y + SpritecardVertexControls_t_1_m1.z))) * _13915);
-	    float3 _7336 = _23592.xyz;
+	    float3 _19802 = input_3.xyz + (((mul(float3x3(float3(_21121 + ((1.0f - _21121) * _8898), _10185 - _21408, _6451 + _22637), float3(_10185 + _21408, _7331 + ((1.0f - _7331) * _8898), _6426 - _22945), float3(_6451 - _22637, _6426 + _22945, _17752 + ((1.0f - _17752) * _8898))), (_17858 * _8664) + (PerViewConstantBuffer_t_1_m4 * _23279)) * (input_0.x + SpritecardVertexControls_t_1_m1.y)) + (_18015 * (input_0.y + SpritecardVertexControls_t_1_m1.z))) * ((_24447.w < 0.0039215688593685626983642578125f) ? 0.0f : _10020));
+	    float3 _7336 = _19802.xyz;
 	    float4 _8056 = float4(_7336, 1.0f);
-	    float4 _21447 = _Globals_1_m2 * 1.0f;
-	    float4x4 _15571 = float4x4(float4(_Globals_1_m0._m0[0].x, _Globals_1_m0._m0[1].x, _Globals_1_m0._m0[2].x, _Globals_1_m0._m0[3].x), float4(_Globals_1_m0._m0[0].y, _Globals_1_m0._m0[1].y, _Globals_1_m0._m0[2].y, _Globals_1_m0._m0[3].y), float4(_Globals_1_m0._m0[0].z, _Globals_1_m0._m0[1].z, _Globals_1_m0._m0[2].z, _Globals_1_m0._m0[3].z), float4(_Globals_1_m0._m0[0].w, _Globals_1_m0._m0[1].w, _Globals_1_m0._m0[2].w, _Globals_1_m0._m0[3].w));
-	    float4 _23913 = mul(_15571, (_8056 + _21447).xyzw);
-	    float4 _8847 = mul(_15571, (float4((_23592 + (_Globals_1_m5 * SpritecardVertexControls_t_1_m1.x)).xyz, 1.0f) + _21447).xyzw);
-	    float4 _15598 = _23913;
-	    _15598.z = max(_23913.w * (_8847.z / _8847.w), min(0.001000000047497451305389404296875f, _23913.z));
+	    float4 _21447 = PerViewConstantBuffer_t_1_m2 * 1.0f;
+	    float4 _18275 = mul(PerViewConstantBuffer_t_1_m0, (_8056 + _21447).xyzw);
+	    float4 _8847 = mul(PerViewConstantBuffer_t_1_m0, (float4((_19802 + (PerViewConstantBuffer_t_1_m5 * SpritecardVertexControls_t_1_m1.x)).xyz, 1.0f) + _21447).xyzw);
+	    float4 _15598 = _18275;
+	    _15598.z = max(_18275.w * (_8847.z / _8847.w), min(0.001000000047497451305389404296875f, _18275.z));
 	    float3 _21709;
-	    if (!(SpriteCardPixelControls_t_1_m0.w == (-1.0f)))
+	    if (SpriteCardPixelControls_t_1_m0.w != (-1.0f))
 	    {
-	        float3 _14744 = normalize(-(_7336 - _Globals_1_m3.xyz).xyz).xyz;
+	        float3 _14744 = normalize(-(_7336 - PerViewConstantBuffer_t_1_m3.xyz).xyz).xyz;
 	        float3 _23378 = clamp(_14744, 0.0f.xxx, 1.0f.xxx);
 	        float3 _23904 = clamp(-_14744, 0.0f.xxx, 1.0f.xxx);
-	        _21709 = lerp(((RoughnessLightingGlobalsCB_t_1_m0.xyz * (dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 1.0f), _23378 * _23378) + dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 0.20000000298023223876953125f), _23904 * _23904))).xyz + ((SunLightShaderParamsCB_1_m0.xyz * (pow(clamp(dot(_14744, SunLightShaderParamsCB_1_m1.xyz), 0.0f, 1.0f), 0.60000002384185791015625f) * 0.800000011920928955078125f)) * 1.0f)).xyz, _Globals_1_m6.xyz, clamp(min(_Globals_1_m9, pow(clamp((distance(_23592.xyz, _Globals_1_m3.xyz) * _Globals_1_m8) + _Globals_1_m7, 0.0f, 1.0f), _Globals_1_m10)), 0.0f, 1.0f).xxx);
+	        _21709 = lerp(((RoughnessLightingGlobalsCB_t_1_m0.xyz * (dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 1.0f), _23378 * _23378) + dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 0.20000000298023223876953125f), _23904 * _23904))).xyz + ((SunLightShaderParamsCB_t_1_m0.xyz * (pow(clamp(dot(_14744, SunLightShaderParamsCB_t_1_m1.xyz), 0.0f, 1.0f), 0.60000002384185791015625f) * 0.800000011920928955078125f)) * 1.0f)).xyz, PerViewConstantBuffer_t_1_m6.xyz, clamp(min(PerViewConstantBuffer_t_1_m9, pow(clamp((distance(_19802.xyz, PerViewConstantBuffer_t_1_m3.xyz) * PerViewConstantBuffer_t_1_m8) + PerViewConstantBuffer_t_1_m7, 0.0f, 1.0f), PerViewConstantBuffer_t_1_m10)), 0.0f, 1.0f).xxx);
 	    }
 	    else
 	    {
 	        _21709 = 0.0f.xxx;
 	    }
 	    output_0 = _20091;
-	    output_1 = _13105;
+	    output_1 = _24447;
 	    output_2 = _21709;
-	    output_3 = _23592;
+	    output_3 = _19802;
 	    output_4 = 0.0f.xxx;
 	    output_5 = _20655;
-	    _15598.y = -_23913.y;
+	    _15598.y = -_18275.y;
 	    gl_Position = _15598;
-	    gl_ClipDistance[0] = dot(_8056, _Globals_1_m1.xyzw);
+	    gl_ClipDistance[0] = dot(_8056, PerViewConstantBuffer_t_1_m1.xyzw);
 	}
 	
 	PS_INPUT MainVs(VS_INPUT stage_input)
@@ -1691,7 +1682,6 @@ PS
 	StaticCombo( S_TEXTURE_LAYERS, F_TEXTURE_LAYERS );
 	StaticComboRule( Allow1( S_MODE_DEPTH, S_OPAQUE ) );
 	StaticComboRule( Allow1( S_REFRACT, S_TEXTURE_LAYERS ) );
-	DynamicCombo( D_FORCE_LEGACY_SHADER_MODEL, 0, Sys( 0 ) );
 	DynamicCombo( D_DEPTH_FEATHERING, 0..1 );
 	DynamicCombo( D_FASTPATH, 0..1 );
 	DynamicComboRule( Allow1( S_MODE_DEPTH, D_DEPTH_FEATHERING ) );
@@ -1709,7 +1699,7 @@ PS
 	cbuffer RoughnessLightingGlobalsCB_t < Attribute("RoughnessLightingGlobalsCB_t"); >;
 	cbuffer SpriteCardPixelControls_t < Attribute("SpriteCardPixelControls_t"); >;
 	RenderState(SrcBlend, F_MOD2X ? DestColor : One);
-	cbuffer SunLightShaderParamsCB < Attribute("SunLightShaderParamsCB"); >;
+	cbuffer SunLightShaderParamsCB_t < Attribute("SunLightShaderParamsCB_t"); >;
 	Texture2D g_tBaseTexture < Attribute("BaseTexture"); SrgbRead(true); >;
 	Texture2D g_tBaseTextureNoSRGB < Attribute("BaseTexture"); SrgbRead(false); >;
 	Texture2D g_tDepthTexture < Attribute("SceneDepth"); SrgbRead(false); >;
@@ -1719,14 +1709,14 @@ PS
 	Texture2D g_tTextureLayer3 < Attribute("TextureLayer3"); SrgbRead(true); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (21764 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (21716 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	static float _2;
 	static float4 _3;
 	static float4 _4;
 	
-	static const float2 _2136[15] = { float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, 0.0f.xx, 0.0f.xx };
-	static const float3 _797[15] = { 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), float3(1.0f, 0.0f, 0.0f), float3(1.0f, 0.0f, 1.0f), 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx };
+	static const float3 _941[15] = { 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), float3(1.0f, 0.0f, 0.0f), float3(1.0f, 0.0f, 1.0f), 0.0f.xxx, 0.0f.xxx, float3(0.0f, 1.0f, 0.0f), 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx, 0.0f.xxx };
+	static const float2 _2235[15] = { float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, float2(0.0f, 1.0f), 0.0f.xx, float2(1.0f, 0.0f), float2(1.0f, 0.0f), float2(1.0f, 0.0f), 0.0f.xx, 0.0f.xx, 0.0f.xx };
 	
 	cbuffer SpriteCardPixelControls_t : register(b3, space1)
 	{
@@ -1746,26 +1736,26 @@ PS
 	    float4 RoughnessLightingGlobalsCB_t_1_m0 : packoffset(c0);
 	};
 	
-	cbuffer _Globals_ : register(b0, space1)
+	cbuffer PerViewConstantBuffer_t : register(b0, space1)
 	{
-	    float _Globals_1_m0 : packoffset(c18);
-	    float3 _Globals_1_m1 : packoffset(c26);
-	    float3 _Globals_1_m2 : packoffset(c31);
-	    float _Globals_1_m3 : packoffset(c31.w);
-	    float _Globals_1_m4 : packoffset(c32);
-	    float _Globals_1_m5 : packoffset(c32.y);
-	    float _Globals_1_m6 : packoffset(c32.z);
+	    float PerViewConstantBuffer_t_1_m0 : packoffset(c18);
+	    float3 PerViewConstantBuffer_t_1_m1 : packoffset(c26);
+	    float3 PerViewConstantBuffer_t_1_m2 : packoffset(c31);
+	    float PerViewConstantBuffer_t_1_m3 : packoffset(c31.w);
+	    float PerViewConstantBuffer_t_1_m4 : packoffset(c32);
+	    float PerViewConstantBuffer_t_1_m5 : packoffset(c32.y);
+	    float PerViewConstantBuffer_t_1_m6 : packoffset(c32.z);
 	};
 	
-	cbuffer SunLightShaderParamsCB : register(b2, space1)
+	cbuffer SunLightShaderParamsCB_t : register(b2, space1)
 	{
-	    float4 SunLightShaderParamsCB_1_m0 : packoffset(c0);
-	    float3 SunLightShaderParamsCB_1_m1 : packoffset(c1);
+	    float3 SunLightShaderParamsCB_t_1_m0 : packoffset(c0);
+	    float3 SunLightShaderParamsCB_t_1_m1 : packoffset(c1);
 	};
 	
-	SamplerState Filter_MinMagMipLinear_MaxAniso_1 : register(s15, space1);
-	SamplerState AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear_MaxAniso_1 : register(s17, space1);
 	Texture2D<float4> g_tBaseTexture : register(t32, space1);
+	SamplerState AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear_MaxAniso_1 : register(s17, space1);
+	SamplerState Filter_MinMagMipLinear_MaxAniso_1 : register(s15, space1);
 	
 	static float4 input_0;
 	static float4 input_1;
@@ -1805,14 +1795,15 @@ PS
 	    {
 	        _21709 = g_tBaseTexture.Sample(Filter_MinMagMipLinear_MaxAniso_1, _15476.xy);
 	    }
-	    int _9492 = int(SpriteCardPixelControls_t_1_m8.x) & 255;
-	    uint _6863 = uint(_9492 & 15);
-	    uint _23505 = uint((_9492 >> 4) & 15);
+	    int _18311 = int(SpriteCardPixelControls_t_1_m8.x);
+	    int _23893 = _18311 & 15;
+	    uint _23505 = uint(((_18311 & 255) >> 4) & 15);
 	    float4 _12885;
 	    do
 	    {
 	        float4 _13174;
 	        bool _16054;
+	        [branch]
 	        switch (uint((int(SpriteCardPixelControls_t_1_m8.y) >> 16) & 15))
 	        {
 	            case 0u:
@@ -1853,7 +1844,7 @@ PS
 	                    break;
 	                } while(false);
 	                float4 _10911 = lerp(_19630.xyzw, _12905.xyzw, (_16439 * _16439).xxxx);
-	                _10911.w = lerp(_21709.w, _10911.w, float(_797[int(_6863)].y != 1.0f));
+	                _10911.w = lerp(_21709.w, _10911.w, float(_941[_23893].y != 1.0f));
 	                _13174 = _10911;
 	                _16054 = true;
 	                break;
@@ -1949,7 +1940,7 @@ PS
 	                {
 	                    _19457 = _9166.y;
 	                }
-	                float2 _20342 = _15476.xy - (((float3(_23035, _19457, _2).xy - 0.5f.xx) * 2.0f) * (((SpriteCardPixelControls_t_1_m6.w * input_0.w) * 0.125f) * lerp(_21709.w, _10910.w, float(_797[int(_6863)].y != 1.0f))));
+	                float2 _20342 = _15476.xy - (((float3(_23035, _19457, _2).xy - 0.5f.xx) * 2.0f) * (((SpriteCardPixelControls_t_1_m6.w * input_0.w) * 0.125f) * lerp(_21709.w, _10910.w, float(_941[_23893].y != 1.0f))));
 	                float4 _12501;
 	                do
 	                {
@@ -1967,9 +1958,8 @@ PS
 	            }
 	            case 2u:
 	            {
-	                int _8289 = int(_6863);
-	                float4 _20655 = _2136[_8289].y.xxxx;
-	                float4 _9219 = lerp(lerp(float4(_21709.xyz * _21709.www, 1.0f), _21709, _2136[_8289].x.xxxx), _21709.wwww, _20655);
+	                float4 _20655 = _2235[_23893].y.xxxx;
+	                float4 _9219 = lerp(lerp(float4(_21709.xyz * _21709.www, 1.0f), _21709, _2235[_23893].x.xxxx), _21709.wwww, _20655);
 	                float3 _25122 = _9219.xyz;
 	                float3 _17379 = _25122 * 12.9200000762939453125f;
 	                float3 _7485 = (pow(_25122, 0.4166666567325592041015625f.xxx) * 1.05499994754791259765625f) - 0.054999999701976776123046875f.xxx;
@@ -2045,7 +2035,7 @@ PS
 	        _12906 = SpriteCardPixelControls_t_1_m6.y;
 	    }
 	    float4 _12907;
-	    switch (_6863)
+	    switch (uint(_23893))
 	    {
 	        case 0u:
 	        {
@@ -2234,6 +2224,7 @@ PS
 	    if (_10282 == 0)
 	    {
 	        float4 _21710;
+	        [branch]
 	        if (SpriteCardPixelControls_t_1_m0.w < SpriteCardPixelControls_t_1_m0.z)
 	        {
 	            _21710 = float4(_12758, _21122.yz, smoothstep(SpriteCardPixelControls_t_1_m0.w, SpriteCardPixelControls_t_1_m0.z, _23577));
@@ -2252,6 +2243,7 @@ PS
 	            _12886 = false;
 	        }
 	        float4 _12503;
+	        [branch]
 	        if (_12886)
 	        {
 	            float _21711;
@@ -2315,7 +2307,7 @@ PS
 	    {
 	        float3 _23378 = clamp(input_4.xyz, 0.0f.xxx, 1.0f.xxx);
 	        float3 _23904 = clamp(-input_4.xyz, 0.0f.xxx, 1.0f.xxx);
-	        _9057 = lerp(((RoughnessLightingGlobalsCB_t_1_m0.xyz * (dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 1.0f), _23378 * _23378) + dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 0.20000000298023223876953125f), _23904 * _23904))).xyz + ((SunLightShaderParamsCB_1_m0.xyz * (pow(clamp(dot(input_4.xyz, SunLightShaderParamsCB_1_m1.xyz), 0.0f, 1.0f), 0.60000002384185791015625f) * 0.800000011920928955078125f)) * 1.0f)).xyz, _Globals_1_m2.xyz, clamp(min(_Globals_1_m5, pow(clamp((distance(input_3.xyz, _Globals_1_m1.xyz) * _Globals_1_m4) + _Globals_1_m3, 0.0f, 1.0f), _Globals_1_m6)), 0.0f, 1.0f).xxx);
+	        _9057 = lerp(((RoughnessLightingGlobalsCB_t_1_m0.xyz * (dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 1.0f), _23378 * _23378) + dot(float3(0.60000002384185791015625f, 0.4000000059604644775390625f, 0.20000000298023223876953125f), _23904 * _23904))).xyz + ((SunLightShaderParamsCB_t_1_m0.xyz * (pow(clamp(dot(input_4.xyz, SunLightShaderParamsCB_t_1_m1.xyz), 0.0f, 1.0f), 0.60000002384185791015625f) * 0.800000011920928955078125f)) * 1.0f)).xyz, PerViewConstantBuffer_t_1_m2.xyz, clamp(min(PerViewConstantBuffer_t_1_m5, pow(clamp((distance(input_3.xyz, PerViewConstantBuffer_t_1_m1.xyz) * PerViewConstantBuffer_t_1_m4) + PerViewConstantBuffer_t_1_m3, 0.0f, 1.0f), PerViewConstantBuffer_t_1_m6)), 0.0f, 1.0f).xxx);
 	    }
 	    else
 	    {
@@ -2327,7 +2319,7 @@ PS
 	    _23715.x = _11507.x;
 	    _23715.y = _11507.y;
 	    _23715.z = _11507.z;
-	    float3 _11003 = _23715.xyz * _Globals_1_m0;
+	    float3 _11003 = _23715.xyz * PerViewConstantBuffer_t_1_m0;
 	    float4 _8674;
 	    _8674.x = _11003.x;
 	    _8674.y = _11003.y;

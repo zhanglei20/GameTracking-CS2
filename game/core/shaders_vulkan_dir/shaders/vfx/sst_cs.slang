@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -31,7 +31,7 @@ CS
 	DynamicCombo( D_UNPACK_METHOD, 0..2 );
 	DynamicCombo( D_OUTPUT_DEBUG_COLOR, 0..1 );
 	
-	StructuredBuffer g_SST < Attribute("SparseShadowTree"); SrgbRead(false); >;
+	StructuredBuffer g_SST < Attribute("SparseShadowTree"); >;
 	int g_nSSTForest < Attribute("SSTForest"); UiType(Slider); >;
 	int g_nSSTOutputPixelExcludeEndX < Attribute("SSTOutputPixelExcludeEndX"); UiType(Slider); >;
 	int g_nSSTOutputPixelExcludeEndY < Attribute("SSTOutputPixelExcludeEndY"); UiType(Slider); >;
@@ -50,7 +50,7 @@ CS
 	RWTexture2D<float4> g_tOutDepth < Attribute("ShadowAtlas"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (40196 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (39904 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	cbuffer _Globals_ : register(b0, space0)
 	{
@@ -83,9 +83,9 @@ CS
 	{
 	    do
 	    {
-	        uint2 _19018 = gl_GlobalInvocationID.xy * uint2(4u, 4u);
+	        uint2 _23624 = gl_GlobalInvocationID.xy * uint2(4u, 4u);
 	        uint2 _3797 = uint2(_Globals_1_g_nSSTTileStartX, _Globals_1_g_nSSTTileStartY) + (gl_GlobalInvocationID.xy / uint2(32u, 32u));
-	        uint2 _15313 = _19018 + uint2(_Globals_1_g_nSSTOutputPixelStartOffsetX, _Globals_1_g_nSSTOutputPixelStartOffsetY);
+	        uint2 _15313 = _23624 + uint2(_Globals_1_g_nSSTOutputPixelStartOffsetX, _Globals_1_g_nSSTOutputPixelStartOffsetY);
 	        uint _7985 = _15313.x;
 	        bool _12885;
 	        if (_7985 >= _Globals_1_g_nSSTOutputPixelWidth)
@@ -135,27 +135,26 @@ CS
 	        uint _17785 = (_3797.y * _Globals_1_g_nSSTWidth) + _3797.x;
 	        bool _11402;
 	        uint _11518;
-	        float _13174;
+	        float _12889;
 	        uint _14842;
 	        do
 	        {
+	            bool _18261;
 	            uint _21397 = g_SST.Load(_17785 * 4 + 0);
-	            bool _16054;
 	            do
 	            {
-	                if ((_21397 & 1073741824u) != 0u)
+	                _18261 = (_21397 & 1073741824u) != 0u;
+	                if (_18261)
 	                {
-	                    _13174 = asfloat((_21397 & 3221225471u) << uint(2));
-	                    _16054 = true;
+	                    _12889 = asfloat((_21397 & 3221225471u) << uint(2));
 	                    break;
 	                }
-	                _13174 = 1.0f;
-	                _16054 = false;
+	                _12889 = 1.0f;
 	                break;
 	            } while(false);
-	            if (_16054)
+	            if (_18261)
 	            {
-	                float4 _10876 = _13174.xxxx;
+	                float4 _10876 = _12889.xxxx;
 	                _3177[_15314] = _10876;
 	                _3177[_15314 + uint2(1u, 0u)] = _10876;
 	                _3177[_15314 + uint2(0u, 1u)] = _10876;
@@ -190,27 +189,26 @@ CS
 	        {
 	            bool _11403;
 	            float3 _11519;
-	            float _13175;
+	            float _12890;
 	            uint _14843;
 	            do
 	            {
+	                bool _18262;
 	                uint _21398 = g_SST.Load(_14842 * 4 + 0);
-	                bool _16055;
 	                do
 	                {
-	                    if ((_21398 & 1073741824u) != 0u)
+	                    _18262 = (_21398 & 1073741824u) != 0u;
+	                    if (_18262)
 	                    {
-	                        _13175 = asfloat((_21398 & 3221225471u) << uint(2));
-	                        _16055 = true;
+	                        _12890 = asfloat((_21398 & 3221225471u) << uint(2));
 	                        break;
 	                    }
-	                    _13175 = _13174;
-	                    _16055 = false;
+	                    _12890 = _12889;
 	                    break;
 	                } while(false);
-	                if (_16055)
+	                if (_18262)
 	                {
-	                    float4 _10877 = _13175.xxxx;
+	                    float4 _10877 = _12890.xxxx;
 	                    _3177[_15314] = _10877;
 	                    _3177[_15314 + uint2(1u, 0u)] = _10877;
 	                    _3177[_15314 + uint2(0u, 1u)] = _10877;
@@ -234,30 +232,29 @@ CS
 	                }
 	                else
 	                {
+	                    bool _18263;
 	                    uint _21970 = _14842 + 1u;
-	                    float3 _13176;
-	                    bool _16056;
+	                    float3 _12891;
 	                    do
 	                    {
-	                        if ((_21398 & 2147483648u) != 0u)
+	                        _18263 = (_21398 & 2147483648u) != 0u;
+	                        if (_18263)
 	                        {
-	                            _13176 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21970 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21970 * 4 + 0) & 65535u))), asfloat((_21398 & 2147483647u) << uint(1)));
-	                            _16056 = true;
+	                            _12891 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21970 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21970 * 4 + 0) & 65535u))), asfloat((_21398 & 2147483647u) << uint(1)));
 	                            break;
 	                        }
-	                        _13176 = float3(1.0f, 0.0f, 0.0f);
-	                        _16056 = false;
+	                        _12891 = float3(1.0f, 0.0f, 0.0f);
 	                        break;
 	                    } while(false);
-	                    if (_16056)
+	                    if (_18263)
 	                    {
-	                        uint2 _24337 = _19018 % uint2(128u, 128u);
-	                        float4 _22821 = _13176.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
-	                        float4 _22382 = ((_13176.z + (float(_24337.x) * _13176.x)) + (float(_24337.y) * _13176.y)).xxxx;
+	                        uint2 _24337 = _23624 % uint2(128u, 128u);
+	                        float4 _22821 = _12891.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
+	                        float4 _22382 = ((_12891.z + (float(_24337.x) * _12891.x)) + (float(_24337.y) * _12891.y)).xxxx;
 	                        float4 _9987 = _22382 + _22821;
-	                        float4 _21802 = (_22382 + _13176.yyyy) + _22821;
-	                        float4 _20890 = (_22382 + (_13176.yyyy * 2.0f)) + _22821;
-	                        float4 _16200 = (_22382 + (_13176.yyyy * 3.0f)) + _22821;
+	                        float4 _21802 = (_22382 + _12891.yyyy) + _22821;
+	                        float4 _20890 = (_22382 + (_12891.yyyy * 2.0f)) + _22821;
+	                        float4 _16200 = (_22382 + (_12891.yyyy * 3.0f)) + _22821;
 	                        _3177[_15314] = _9987.x.xxxx;
 	                        _3177[_15314 + uint2(1u, 0u)] = _9987.y.xxxx;
 	                        _3177[_15314 + uint2(2u, 0u)] = _9987.z.xxxx;
@@ -274,14 +271,14 @@ CS
 	                        _3177[_15314 + uint2(1u, 3u)] = _16200.y.xxxx;
 	                        _3177[_15314 + uint2(2u, 3u)] = _16200.z.xxxx;
 	                        _3177[_15314 + uint2(3u, 3u)] = _16200.w.xxxx;
-	                        _11519 = _13176;
+	                        _11519 = _12891;
 	                        _14843 = _14842;
 	                        _11403 = true;
 	                        break;
 	                    }
 	                    else
 	                    {
-	                        uint2 _13668 = _19018 % uint2(128u, 128u);
+	                        uint2 _13668 = _23624 % uint2(128u, 128u);
 	                        uint _21709;
 	                        if (_13668.x < 64u)
 	                        {
@@ -318,7 +315,7 @@ CS
 	                            }
 	                            _14382 = _12502;
 	                        }
-	                        _11519 = _13176;
+	                        _11519 = _12891;
 	                        _14843 = _14382 + _11518;
 	                        _11403 = false;
 	                        break;
@@ -331,27 +328,26 @@ CS
 	            {
 	                bool _11404;
 	                float3 _11520;
-	                float _13177;
+	                float _12892;
 	                uint _14844;
 	                do
 	                {
+	                    bool _18264;
 	                    uint _21399 = g_SST.Load(_14843 * 4 + 0);
-	                    bool _16057;
 	                    do
 	                    {
-	                        if ((_21399 & 1073741824u) != 0u)
+	                        _18264 = (_21399 & 1073741824u) != 0u;
+	                        if (_18264)
 	                        {
-	                            _13177 = asfloat((_21399 & 3221225471u) << uint(2));
-	                            _16057 = true;
+	                            _12892 = asfloat((_21399 & 3221225471u) << uint(2));
 	                            break;
 	                        }
-	                        _13177 = _13175;
-	                        _16057 = false;
+	                        _12892 = _12890;
 	                        break;
 	                    } while(false);
-	                    if (_16057)
+	                    if (_18264)
 	                    {
-	                        float4 _10878 = _13177.xxxx;
+	                        float4 _10878 = _12892.xxxx;
 	                        _3177[_15314] = _10878;
 	                        _3177[_15314 + uint2(1u, 0u)] = _10878;
 	                        _3177[_15314 + uint2(0u, 1u)] = _10878;
@@ -375,30 +371,29 @@ CS
 	                    }
 	                    else
 	                    {
+	                        bool _18265;
 	                        uint _21971 = _14843 + 1u;
-	                        float3 _13178;
-	                        bool _16058;
+	                        float3 _12893;
 	                        do
 	                        {
-	                            if ((_21399 & 2147483648u) != 0u)
+	                            _18265 = (_21399 & 2147483648u) != 0u;
+	                            if (_18265)
 	                            {
-	                                _13178 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21971 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21971 * 4 + 0) & 65535u))), asfloat((_21399 & 2147483647u) << uint(1)));
-	                                _16058 = true;
+	                                _12893 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21971 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21971 * 4 + 0) & 65535u))), asfloat((_21399 & 2147483647u) << uint(1)));
 	                                break;
 	                            }
-	                            _13178 = _11519;
-	                            _16058 = false;
+	                            _12893 = _11519;
 	                            break;
 	                        } while(false);
-	                        if (_16058)
+	                        if (_18265)
 	                        {
-	                            uint2 _24338 = _19018 % uint2(64u, 64u);
-	                            float4 _22822 = _13178.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
-	                            float4 _22383 = ((_13178.z + (float(_24338.x) * _13178.x)) + (float(_24338.y) * _13178.y)).xxxx;
+	                            uint2 _24338 = _23624 % uint2(64u, 64u);
+	                            float4 _22822 = _12893.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
+	                            float4 _22383 = ((_12893.z + (float(_24338.x) * _12893.x)) + (float(_24338.y) * _12893.y)).xxxx;
 	                            float4 _9988 = _22383 + _22822;
-	                            float4 _21803 = (_22383 + _13178.yyyy) + _22822;
-	                            float4 _20891 = (_22383 + (_13178.yyyy * 2.0f)) + _22822;
-	                            float4 _16201 = (_22383 + (_13178.yyyy * 3.0f)) + _22822;
+	                            float4 _21803 = (_22383 + _12893.yyyy) + _22822;
+	                            float4 _20891 = (_22383 + (_12893.yyyy * 2.0f)) + _22822;
+	                            float4 _16201 = (_22383 + (_12893.yyyy * 3.0f)) + _22822;
 	                            _3177[_15314] = _9988.x.xxxx;
 	                            _3177[_15314 + uint2(1u, 0u)] = _9988.y.xxxx;
 	                            _3177[_15314 + uint2(2u, 0u)] = _9988.z.xxxx;
@@ -415,14 +410,14 @@ CS
 	                            _3177[_15314 + uint2(1u, 3u)] = _16201.y.xxxx;
 	                            _3177[_15314 + uint2(2u, 3u)] = _16201.z.xxxx;
 	                            _3177[_15314 + uint2(3u, 3u)] = _16201.w.xxxx;
-	                            _11520 = _13178;
+	                            _11520 = _12893;
 	                            _14844 = _14843;
 	                            _11404 = true;
 	                            break;
 	                        }
 	                        else
 	                        {
-	                            uint2 _13669 = _19018 % uint2(64u, 64u);
+	                            uint2 _13669 = _23624 % uint2(64u, 64u);
 	                            uint _21710;
 	                            if (_13669.x < 32u)
 	                            {
@@ -459,7 +454,7 @@ CS
 	                                }
 	                                _14383 = _12504;
 	                            }
-	                            _11520 = _13178;
+	                            _11520 = _12893;
 	                            _14844 = _14383 + _11518;
 	                            _11404 = false;
 	                            break;
@@ -472,27 +467,26 @@ CS
 	                {
 	                    bool _11405;
 	                    float3 _11521;
-	                    float _13179;
+	                    float _12894;
 	                    uint _14845;
 	                    do
 	                    {
+	                        bool _18266;
 	                        uint _21400 = g_SST.Load(_14844 * 4 + 0);
-	                        bool _16059;
 	                        do
 	                        {
-	                            if ((_21400 & 1073741824u) != 0u)
+	                            _18266 = (_21400 & 1073741824u) != 0u;
+	                            if (_18266)
 	                            {
-	                                _13179 = asfloat((_21400 & 3221225471u) << uint(2));
-	                                _16059 = true;
+	                                _12894 = asfloat((_21400 & 3221225471u) << uint(2));
 	                                break;
 	                            }
-	                            _13179 = _13177;
-	                            _16059 = false;
+	                            _12894 = _12892;
 	                            break;
 	                        } while(false);
-	                        if (_16059)
+	                        if (_18266)
 	                        {
-	                            float4 _10879 = _13179.xxxx;
+	                            float4 _10879 = _12894.xxxx;
 	                            _3177[_15314] = _10879;
 	                            _3177[_15314 + uint2(1u, 0u)] = _10879;
 	                            _3177[_15314 + uint2(0u, 1u)] = _10879;
@@ -516,30 +510,29 @@ CS
 	                        }
 	                        else
 	                        {
+	                            bool _18267;
 	                            uint _21972 = _14844 + 1u;
-	                            float3 _13180;
-	                            bool _16060;
+	                            float3 _12895;
 	                            do
 	                            {
-	                                if ((_21400 & 2147483648u) != 0u)
+	                                _18267 = (_21400 & 2147483648u) != 0u;
+	                                if (_18267)
 	                                {
-	                                    _13180 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21972 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21972 * 4 + 0) & 65535u))), asfloat((_21400 & 2147483647u) << uint(1)));
-	                                    _16060 = true;
+	                                    _12895 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21972 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21972 * 4 + 0) & 65535u))), asfloat((_21400 & 2147483647u) << uint(1)));
 	                                    break;
 	                                }
-	                                _13180 = _11520;
-	                                _16060 = false;
+	                                _12895 = _11520;
 	                                break;
 	                            } while(false);
-	                            if (_16060)
+	                            if (_18267)
 	                            {
-	                                uint2 _24339 = _19018 % uint2(32u, 32u);
-	                                float4 _22823 = _13180.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
-	                                float4 _22384 = ((_13180.z + (float(_24339.x) * _13180.x)) + (float(_24339.y) * _13180.y)).xxxx;
+	                                uint2 _24339 = _23624 % uint2(32u, 32u);
+	                                float4 _22823 = _12895.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
+	                                float4 _22384 = ((_12895.z + (float(_24339.x) * _12895.x)) + (float(_24339.y) * _12895.y)).xxxx;
 	                                float4 _9989 = _22384 + _22823;
-	                                float4 _21804 = (_22384 + _13180.yyyy) + _22823;
-	                                float4 _20892 = (_22384 + (_13180.yyyy * 2.0f)) + _22823;
-	                                float4 _16202 = (_22384 + (_13180.yyyy * 3.0f)) + _22823;
+	                                float4 _21804 = (_22384 + _12895.yyyy) + _22823;
+	                                float4 _20892 = (_22384 + (_12895.yyyy * 2.0f)) + _22823;
+	                                float4 _16202 = (_22384 + (_12895.yyyy * 3.0f)) + _22823;
 	                                _3177[_15314] = _9989.x.xxxx;
 	                                _3177[_15314 + uint2(1u, 0u)] = _9989.y.xxxx;
 	                                _3177[_15314 + uint2(2u, 0u)] = _9989.z.xxxx;
@@ -556,14 +549,14 @@ CS
 	                                _3177[_15314 + uint2(1u, 3u)] = _16202.y.xxxx;
 	                                _3177[_15314 + uint2(2u, 3u)] = _16202.z.xxxx;
 	                                _3177[_15314 + uint2(3u, 3u)] = _16202.w.xxxx;
-	                                _11521 = _13180;
+	                                _11521 = _12895;
 	                                _14845 = _14844;
 	                                _11405 = true;
 	                                break;
 	                            }
 	                            else
 	                            {
-	                                uint2 _13670 = _19018 % uint2(32u, 32u);
+	                                uint2 _13670 = _23624 % uint2(32u, 32u);
 	                                uint _21711;
 	                                if (_13670.x < 16u)
 	                                {
@@ -600,7 +593,7 @@ CS
 	                                    }
 	                                    _14384 = _12506;
 	                                }
-	                                _11521 = _13180;
+	                                _11521 = _12895;
 	                                _14845 = _14384 + _11518;
 	                                _11405 = false;
 	                                break;
@@ -613,27 +606,26 @@ CS
 	                    {
 	                        bool _11406;
 	                        float3 _11522;
-	                        float _13181;
+	                        float _12896;
 	                        uint _14846;
 	                        do
 	                        {
+	                            bool _18268;
 	                            uint _21401 = g_SST.Load(_14845 * 4 + 0);
-	                            bool _16061;
 	                            do
 	                            {
-	                                if ((_21401 & 1073741824u) != 0u)
+	                                _18268 = (_21401 & 1073741824u) != 0u;
+	                                if (_18268)
 	                                {
-	                                    _13181 = asfloat((_21401 & 3221225471u) << uint(2));
-	                                    _16061 = true;
+	                                    _12896 = asfloat((_21401 & 3221225471u) << uint(2));
 	                                    break;
 	                                }
-	                                _13181 = _13179;
-	                                _16061 = false;
+	                                _12896 = _12894;
 	                                break;
 	                            } while(false);
-	                            if (_16061)
+	                            if (_18268)
 	                            {
-	                                float4 _10880 = _13181.xxxx;
+	                                float4 _10880 = _12896.xxxx;
 	                                _3177[_15314] = _10880;
 	                                _3177[_15314 + uint2(1u, 0u)] = _10880;
 	                                _3177[_15314 + uint2(0u, 1u)] = _10880;
@@ -657,30 +649,29 @@ CS
 	                            }
 	                            else
 	                            {
+	                                bool _18269;
 	                                uint _21973 = _14845 + 1u;
-	                                float3 _13182;
-	                                bool _16062;
+	                                float3 _12897;
 	                                do
 	                                {
-	                                    if ((_21401 & 2147483648u) != 0u)
+	                                    _18269 = (_21401 & 2147483648u) != 0u;
+	                                    if (_18269)
 	                                    {
-	                                        _13182 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21973 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21973 * 4 + 0) & 65535u))), asfloat((_21401 & 2147483647u) << uint(1)));
-	                                        _16062 = true;
+	                                        _12897 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21973 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21973 * 4 + 0) & 65535u))), asfloat((_21401 & 2147483647u) << uint(1)));
 	                                        break;
 	                                    }
-	                                    _13182 = _11521;
-	                                    _16062 = false;
+	                                    _12897 = _11521;
 	                                    break;
 	                                } while(false);
-	                                if (_16062)
+	                                if (_18269)
 	                                {
-	                                    uint2 _24340 = _19018 % uint2(16u, 16u);
-	                                    float4 _22824 = _13182.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
-	                                    float4 _22385 = ((_13182.z + (float(_24340.x) * _13182.x)) + (float(_24340.y) * _13182.y)).xxxx;
+	                                    uint2 _24340 = _23624 % uint2(16u, 16u);
+	                                    float4 _22824 = _12897.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
+	                                    float4 _22385 = ((_12897.z + (float(_24340.x) * _12897.x)) + (float(_24340.y) * _12897.y)).xxxx;
 	                                    float4 _9990 = _22385 + _22824;
-	                                    float4 _21805 = (_22385 + _13182.yyyy) + _22824;
-	                                    float4 _20893 = (_22385 + (_13182.yyyy * 2.0f)) + _22824;
-	                                    float4 _16203 = (_22385 + (_13182.yyyy * 3.0f)) + _22824;
+	                                    float4 _21805 = (_22385 + _12897.yyyy) + _22824;
+	                                    float4 _20893 = (_22385 + (_12897.yyyy * 2.0f)) + _22824;
+	                                    float4 _16203 = (_22385 + (_12897.yyyy * 3.0f)) + _22824;
 	                                    _3177[_15314] = _9990.x.xxxx;
 	                                    _3177[_15314 + uint2(1u, 0u)] = _9990.y.xxxx;
 	                                    _3177[_15314 + uint2(2u, 0u)] = _9990.z.xxxx;
@@ -697,14 +688,14 @@ CS
 	                                    _3177[_15314 + uint2(1u, 3u)] = _16203.y.xxxx;
 	                                    _3177[_15314 + uint2(2u, 3u)] = _16203.z.xxxx;
 	                                    _3177[_15314 + uint2(3u, 3u)] = _16203.w.xxxx;
-	                                    _11522 = _13182;
+	                                    _11522 = _12897;
 	                                    _14846 = _14845;
 	                                    _11406 = true;
 	                                    break;
 	                                }
 	                                else
 	                                {
-	                                    uint2 _13671 = _19018 % uint2(16u, 16u);
+	                                    uint2 _13671 = _23624 % uint2(16u, 16u);
 	                                    uint _21712;
 	                                    if (_13671.x < 8u)
 	                                    {
@@ -741,7 +732,7 @@ CS
 	                                        }
 	                                        _14385 = _12508;
 	                                    }
-	                                    _11522 = _13182;
+	                                    _11522 = _12897;
 	                                    _14846 = _14385 + _11518;
 	                                    _11406 = false;
 	                                    break;
@@ -754,27 +745,26 @@ CS
 	                        {
 	                            bool _11407;
 	                            uint _11523;
-	                            float _13183;
+	                            float _12898;
 	                            float3 _14847;
 	                            do
 	                            {
+	                                bool _18270;
 	                                uint _21402 = g_SST.Load(_14846 * 4 + 0);
-	                                bool _16063;
 	                                do
 	                                {
-	                                    if ((_21402 & 1073741824u) != 0u)
+	                                    _18270 = (_21402 & 1073741824u) != 0u;
+	                                    if (_18270)
 	                                    {
-	                                        _13183 = asfloat((_21402 & 3221225471u) << uint(2));
-	                                        _16063 = true;
+	                                        _12898 = asfloat((_21402 & 3221225471u) << uint(2));
 	                                        break;
 	                                    }
-	                                    _13183 = _13181;
-	                                    _16063 = false;
+	                                    _12898 = _12896;
 	                                    break;
 	                                } while(false);
-	                                if (_16063)
+	                                if (_18270)
 	                                {
-	                                    float4 _10881 = _13183.xxxx;
+	                                    float4 _10881 = _12898.xxxx;
 	                                    _3177[_15314] = _10881;
 	                                    _3177[_15314 + uint2(1u, 0u)] = _10881;
 	                                    _3177[_15314 + uint2(0u, 1u)] = _10881;
@@ -798,30 +788,29 @@ CS
 	                                }
 	                                else
 	                                {
+	                                    bool _18271;
 	                                    uint _21974 = _14846 + 1u;
-	                                    float3 _13184;
-	                                    bool _16064;
+	                                    float3 _12899;
 	                                    do
 	                                    {
-	                                        if ((_21402 & 2147483648u) != 0u)
+	                                        _18271 = (_21402 & 2147483648u) != 0u;
+	                                        if (_18271)
 	                                        {
-	                                            _13184 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21974 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21974 * 4 + 0) & 65535u))), asfloat((_21402 & 2147483647u) << uint(1)));
-	                                            _16064 = true;
+	                                            _12899 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21974 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21974 * 4 + 0) & 65535u))), asfloat((_21402 & 2147483647u) << uint(1)));
 	                                            break;
 	                                        }
-	                                        _13184 = _11522;
-	                                        _16064 = false;
+	                                        _12899 = _11522;
 	                                        break;
 	                                    } while(false);
-	                                    if (_16064)
+	                                    if (_18271)
 	                                    {
-	                                        uint2 _24341 = _19018 % uint2(8u, 8u);
-	                                        float4 _22825 = _13184.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
-	                                        float4 _22386 = ((_13184.z + (float(_24341.x) * _13184.x)) + (float(_24341.y) * _13184.y)).xxxx;
+	                                        uint2 _24341 = _23624 % uint2(8u, 8u);
+	                                        float4 _22825 = _12899.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
+	                                        float4 _22386 = ((_12899.z + (float(_24341.x) * _12899.x)) + (float(_24341.y) * _12899.y)).xxxx;
 	                                        float4 _9991 = _22386 + _22825;
-	                                        float4 _21806 = (_22386 + _13184.yyyy) + _22825;
-	                                        float4 _20894 = (_22386 + (_13184.yyyy * 2.0f)) + _22825;
-	                                        float4 _16204 = (_22386 + (_13184.yyyy * 3.0f)) + _22825;
+	                                        float4 _21806 = (_22386 + _12899.yyyy) + _22825;
+	                                        float4 _20894 = (_22386 + (_12899.yyyy * 2.0f)) + _22825;
+	                                        float4 _16204 = (_22386 + (_12899.yyyy * 3.0f)) + _22825;
 	                                        _3177[_15314] = _9991.x.xxxx;
 	                                        _3177[_15314 + uint2(1u, 0u)] = _9991.y.xxxx;
 	                                        _3177[_15314 + uint2(2u, 0u)] = _9991.z.xxxx;
@@ -839,13 +828,13 @@ CS
 	                                        _3177[_15314 + uint2(2u, 3u)] = _16204.z.xxxx;
 	                                        _3177[_15314 + uint2(3u, 3u)] = _16204.w.xxxx;
 	                                        _11523 = _14846;
-	                                        _14847 = _13184;
+	                                        _14847 = _12899;
 	                                        _11407 = true;
 	                                        break;
 	                                    }
 	                                    else
 	                                    {
-	                                        uint2 _13672 = _19018 % uint2(8u, 8u);
+	                                        uint2 _13672 = _23624 % uint2(8u, 8u);
 	                                        uint _21713;
 	                                        if (_13672.x < 4u)
 	                                        {
@@ -883,7 +872,7 @@ CS
 	                                            _14386 = _12510;
 	                                        }
 	                                        _11523 = _14386 + _11518;
-	                                        _14847 = _13184;
+	                                        _14847 = _12899;
 	                                        _11407 = false;
 	                                        break;
 	                                    }
@@ -894,23 +883,23 @@ CS
 	                            if (!_11407)
 	                            {
 	                                uint _21403 = g_SST.Load(_11523 * 4 + 0);
-	                                float _13185;
-	                                bool _16065;
+	                                float _13174;
+	                                bool _16054;
 	                                do
 	                                {
 	                                    if ((_21403 & 1073741824u) != 0u)
 	                                    {
-	                                        _13185 = asfloat((_21403 & 3221225471u) << uint(2));
-	                                        _16065 = true;
+	                                        _13174 = asfloat((_21403 & 3221225471u) << uint(2));
+	                                        _16054 = true;
 	                                        break;
 	                                    }
-	                                    _13185 = _13183;
-	                                    _16065 = false;
+	                                    _13174 = _12898;
+	                                    _16054 = false;
 	                                    break;
 	                                } while(false);
-	                                if (_16065)
+	                                if (_16054)
 	                                {
-	                                    float4 _10882 = _13185.xxxx;
+	                                    float4 _10882 = _13174.xxxx;
 	                                    _3177[_15314] = _10882;
 	                                    _3177[_15314 + uint2(1u, 0u)] = _10882;
 	                                    _3177[_15314 + uint2(0u, 1u)] = _10882;
@@ -931,29 +920,29 @@ CS
 	                                else
 	                                {
 	                                    uint _21975 = _11523 + 1u;
-	                                    float3 _13186;
-	                                    bool _16066;
+	                                    float3 _13175;
+	                                    bool _16055;
 	                                    do
 	                                    {
 	                                        if ((_21403 & 2147483648u) != 0u)
 	                                        {
-	                                            _13186 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21975 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21975 * 4 + 0) & 65535u))), asfloat((_21403 & 2147483647u) << uint(1)));
-	                                            _16066 = true;
+	                                            _13175 = float3(float((min16float)f16tof32(min16uint(g_SST.Load(_21975 * 4 + 0) >> uint(16)))), float((min16float)f16tof32(min16uint(g_SST.Load(_21975 * 4 + 0) & 65535u))), asfloat((_21403 & 2147483647u) << uint(1)));
+	                                            _16055 = true;
 	                                            break;
 	                                        }
-	                                        _13186 = _14847;
-	                                        _16066 = false;
+	                                        _13175 = _14847;
+	                                        _16055 = false;
 	                                        break;
 	                                    } while(false);
-	                                    if (_16066)
+	                                    if (_16055)
 	                                    {
-	                                        uint2 _24342 = _19018 % uint2(4u, 4u);
-	                                        float4 _22826 = _13186.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
-	                                        float4 _22387 = ((_13186.z + (float(_24342.x) * _13186.x)) + (float(_24342.y) * _13186.y)).xxxx;
+	                                        uint2 _24342 = _23624 % uint2(4u, 4u);
+	                                        float4 _22826 = _13175.xxxx * float4(0.0f, 1.0f, 2.0f, 3.0f);
+	                                        float4 _22387 = ((_13175.z + (float(_24342.x) * _13175.x)) + (float(_24342.y) * _13175.y)).xxxx;
 	                                        float4 _9992 = _22387 + _22826;
-	                                        float4 _21807 = (_22387 + _13186.yyyy) + _22826;
-	                                        float4 _20895 = (_22387 + (_13186.yyyy * 2.0f)) + _22826;
-	                                        float4 _16205 = (_22387 + (_13186.yyyy * 3.0f)) + _22826;
+	                                        float4 _21807 = (_22387 + _13175.yyyy) + _22826;
+	                                        float4 _20895 = (_22387 + (_13175.yyyy * 2.0f)) + _22826;
+	                                        float4 _16205 = (_22387 + (_13175.yyyy * 3.0f)) + _22826;
 	                                        _3177[_15314] = _9992.x.xxxx;
 	                                        _3177[_15314 + uint2(1u, 0u)] = _9992.y.xxxx;
 	                                        _3177[_15314 + uint2(2u, 0u)] = _9992.z.xxxx;

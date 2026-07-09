@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -38,7 +38,7 @@ CS
 	
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (6740 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (6708 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	cbuffer _Globals_ : register(b0, space0)
 	{
@@ -47,10 +47,10 @@ CS
 	    uint _Globals_1_g_nMipCount : packoffset(c1.y);
 	};
 	
-	RWTexture2D<uint> _5369 : register(u158, space0);
 	Texture2D<float4> g_tHeightmap : register(t30, space0);
 	SamplerState AddressU_Wrap_AddressV_Wrap_Filter_MinMagMipPoint : register(s14, space0);
 	SamplerState AddressU_Wrap_AddressV_Wrap_Filter_MinMagLinearMipPoint : register(s15, space0);
+	RWTexture2D<uint> _5369 : register(u158, space0);
 	
 	static uint3 gl_WorkGroupID;
 	static uint3 gl_LocalInvocationID;
@@ -72,7 +72,7 @@ CS
 	        _4495 = 255u;
 	    }
 	    GroupMemoryBarrierWithGroupSync();
-	    int2 _9524 = int2(gl_WorkGroupID.xy);
+	    int2 _10133 = int2(gl_WorkGroupID.xy);
 	    uint _6475;
 	    float _11901;
 	    float _13155 = 1.0f;
@@ -83,11 +83,11 @@ CS
 	        {
 	            break;
 	        }
-	        float2 _16123 = (float2(_9524) + 0.5f.xx) * _Globals_1_g_vImageDimensions.zw;
+	        float2 _16123 = (float2(_10133) + 0.5f.xx) * _Globals_1_g_vImageDimensions.zw;
 	        float4 _11160 = g_tHeightmap.SampleLevel(AddressU_Wrap_AddressV_Wrap_Filter_MinMagMipPoint, _16123, 0.0f);
 	        float _17197 = _11160.x;
 	        uint2 _13520 = _16208.xx;
-	        float _17362 = -length(float2(int2(2, 2) << int2(_13520)) * _Globals_1_g_vImageDimensions.zw);
+	        float _24380 = length(float2(int2(2, 2) << int2(_13520)) * _Globals_1_g_vImageDimensions.zw);
 	        int _12501;
 	        if (_16208 != 0u)
 	        {
@@ -121,16 +121,16 @@ CS
 	                    _14382 = _13156;
 	                    break;
 	                }
-	                float2 _6348 = (float2((_9524 & int2(-4, -4)) + ((_9763 + int2(2, 2)) << int2(_13520))) + 0.5f.xx) * _Globals_1_g_vImageDimensions.zw;
-	                float _15526 = _17197 - g_tHeightmap.SampleLevel(AddressU_Wrap_AddressV_Wrap_Filter_MinMagMipPoint, _6348, float(_16208 + 2u)).x;
+	                float2 _6348 = (float2((_10133 & int2(-4, -4)) + ((_9763 + int2(2, 2)) << int2(_13520))) + 0.5f.xx) * _Globals_1_g_vImageDimensions.zw;
+	                float _10682 = _17197 - g_tHeightmap.SampleLevel(AddressU_Wrap_AddressV_Wrap_Filter_MinMagMipPoint, _6348, float(_16208 + 2u)).x;
 	                float _23727;
-	                if (_15526 <= 0.0f)
+	                if (_10682 <= 0.0f)
 	                {
 	                    _23727 = 1.0f;
 	                }
 	                else
 	                {
-	                    _23727 = (_Globals_1_g_fWidthScale * (length(_16123.xy - _6348.xy) + _17362)) / _15526;
+	                    _23727 = (_Globals_1_g_fWidthScale * (length(_16123.xy - _6348.xy) - _24380)) / _10682;
 	                }
 	                uint _12502;
 	                if (_23727 < _13155)
@@ -187,11 +187,11 @@ CS
 	                    {
 	                        break;
 	                    }
-	                    int2 _15209 = (_9524 & int2(-4, -4)) + ((_24144 + int2(_16212, _16211)) << int2(_13520));
+	                    int2 _15209 = (_10133 & int2(-4, -4)) + ((_24144 + int2(_16212, _16211)) << int2(_13520));
 	                    float _20773;
 	                    do
 	                    {
-	                        if (all(bool2(_9524.x == _15209.x, _9524.y == _15209.y)))
+	                        if (all(bool2(_10133.x == _15209.x, _10133.y == _15209.y)))
 	                        {
 	                            _20773 = 1.0f;
 	                            break;
@@ -256,7 +256,7 @@ CS
 	    }
 	    if (_17840)
 	    {
-	        _5369[uint2(_9524)] = _4495.x;
+	        _5369[gl_WorkGroupID.xy] = _4495.x;
 	    }
 	}
 	

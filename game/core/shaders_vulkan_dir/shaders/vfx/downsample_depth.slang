@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -88,7 +88,7 @@ PS
 	Texture2D g_tDepth < Attribute("DepthBuffer"); SrgbRead(false); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (932 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (924 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	cbuffer _Globals_ : register(b0, space1)
 	{
@@ -96,7 +96,7 @@ PS
 	    int _Globals_1_g_nDownsampleRatioH : packoffset(c0.y);
 	};
 	
-	Texture2DMS<float4> g_tDepth_unexpectedTypeId438_1075 : register(t30, space1);
+	Texture2DMS<float4> g_tDepth : register(t30, space1);
 	
 	static float4 gl_FragCoord;
 	static float gl_FragDepth;
@@ -112,7 +112,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    gl_FragDepth = g_tDepth_unexpectedTypeId438_1075.Load((int2(gl_FragCoord.xy).xy * int2(_Globals_1_g_nDownsampleRatioW, _Globals_1_g_nDownsampleRatioH)).xy, 0).x;
+	    gl_FragDepth = g_tDepth.Load((int2(gl_FragCoord.xy).xy * int2(_Globals_1_g_nDownsampleRatioW, _Globals_1_g_nDownsampleRatioH)).xy, 0).x;
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

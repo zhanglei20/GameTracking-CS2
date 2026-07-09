@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_60
 	// Programs: cs
 }
@@ -33,15 +33,15 @@ CS
 	DynamicCombo( D_COMPRESSED_NORMALS_AND_TANGENTS, 0..1 );
 	
 	RWTexture3D<float4> g_BlockConverged < Attribute("g_BlockConverged"); >;
-	StructuredBuffer g_LpvLuxels < Attribute("g_LpvLuxels"); SrgbRead(false); >;
-	StructuredBuffer g_Luxels < Attribute("g_Luxels"); SrgbRead(false); >;
-	StructuredBuffer g_VertexLightSamples < Attribute("g_VertexLightSamples"); SrgbRead(false); >;
+	StructuredBuffer g_LpvLuxels < Attribute("g_LpvLuxels"); >;
+	StructuredBuffer g_Luxels < Attribute("g_Luxels"); >;
+	StructuredBuffer g_VertexLightSamples < Attribute("g_VertexLightSamples"); >;
 	float g_flErrorTolerance < Attribute("g_flErrorTolerance"); UiType(Slider); >;
 	int g_nBlockHeight < Attribute("g_nBlockHeight"); UiType(Slider); >;
 	int g_nBlockWidth < Attribute("g_nBlockWidth"); UiType(Slider); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2992 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (3008 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _427
 	{
@@ -81,12 +81,12 @@ CS
 	
 	void MainCs_inner()
 	{
-	    bool _7078;
+	    bool _24472;
 	    do
 	    {
 	        if (_Globals_1_g_flErrorTolerance <= 0.0f)
 	        {
-	            _7078 = false;
+	            _24472 = false;
 	            break;
 	        }
 	        uint _15834 = uint(_Globals_1_g_nBlockWidth);
@@ -95,14 +95,14 @@ CS
 	        int _12919 = WaveActiveSum(int(_6817));
 	        if (_12919 == 0)
 	        {
-	            _7078 = true;
+	            _24472 = true;
 	            break;
 	        }
 	        else
 	        {
 	            if (_12919 <= 2)
 	            {
-	                _7078 = false;
+	                _24472 = false;
 	                break;
 	            }
 	        }
@@ -118,12 +118,12 @@ CS
 	        float _22462 = dot(_20940.xyz, float3(0.2125000059604644775390625f, 0.7153999805450439453125f, 0.07209999859333038330078125f));
 	        float _18595 = float(_12919);
 	        float _12151 = WaveActiveSum(_22462) / _18595;
-	        _7078 = !(sqrt(abs((WaveActiveSum(_22462 * _22462) / _18595) - (_12151 * _12151))) > (_12151 * _Globals_1_g_flErrorTolerance));
+	        _24472 = !(sqrt(abs((WaveActiveSum(_22462 * _22462) / _18595) - (_12151 * _12151))) > (_12151 * _Globals_1_g_flErrorTolerance));
 	        break;
 	    } while(false);
 	    if (gl_LocalInvocationIndex == 0u)
 	    {
-	        _3474[gl_GlobalInvocationID / uint3(4u, 4u, 1u)] = uint(int(_7078)).x;
+	        _3474[gl_GlobalInvocationID / uint3(4u, 4u, 1u)] = uint(int(_24472)).x;
 	    }
 	}
 	

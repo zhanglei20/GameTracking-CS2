@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: gs, ps, vs
 }
 
@@ -42,14 +42,13 @@ struct VS_INPUT
 	float4 vColor              : COLOR0         < Semantic( Color ); >;                           
 	float4 vNormalOs           : NORMAL0        < Semantic( Normal ); >;                          
 	float3 vPositionOs         : POSITION0      < Semantic( PosXyz ); >;                          
-	float2 vFirstLineVertPosWs : TEXCOORD0      < Semantic( uvw ); >;                              // D_THICK_LINES=0, D_FREEFORM_DEFORMATION=1, S_MOBILE=1
+	float2 vFirstLineVertPosWs : TEXCOORD0      < Semantic( uvw ); >;                              // D_THICK_LINES=0, D_FREEFORM_DEFORMATION=1
 	float2 nInstanceIdx        : TEXCOORD13     < Semantic( InstanceTransformUv ); >;             
 };
 
 VS
 {
 	StaticCombo( S_MODE_DEPTH, 0..1 );
-	StaticCombo( S_MOBILE, 0..1 );
 	DynamicCombo( D_BLEND_WEIGHT_COUNT, 0..4 );
 	DynamicCombo( D_DEPTH_BIAS, 0..1 );
 	DynamicCombo( D_SNAP_TO_SCREEN_PIXELS, 0..1 );
@@ -61,8 +60,8 @@ VS
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	bool g_bIgnoreTintAlpha < Attribute("IgnoreTintAlpha"); UiType(CheckBox); >;
 	float g_flDynamicLineThickness < Default(1); Attribute("DynamicLineThickness"); UiType(Slider); >;
-	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
-	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); >;
+	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); >;
 	
 	// Depth Bias Amount
 	float g_DepthBiasAmount < Default(0.005); UiType(Slider); UiGroup("Depth Bias Amount"); >;
@@ -75,7 +74,7 @@ VS
 	float4 g_vOverrideColor < Default(0); UiType(Color); UiGroup("Override Color"); Expression(SrgbGammaToLinear(this)); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (6176 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (5476 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1125
 	{
@@ -89,26 +88,33 @@ VS
 	    float _m7;
 	};
 	
-	struct _1360
+	struct _1119
 	{
-	    float4 _m0[3];
+	    float3x4 _m0;
 	};
 	
-	struct _668
+	struct _1126
 	{
-	    _1360 _m0;
+	    uint _m0;
+	    uint _m1;
+	    uint _m2;
+	    uint _m3;
+	    uint _m4;
+	    uint _m5;
+	    uint _m6;
+	    float _m7;
 	};
 	
-	struct _1486
+	struct _1120
 	{
-	    float4 _m0[4];
+	    row_major float3x4 _m0;
 	};
 	
 	ByteAddressBuffer g_instanceBuffer : register(t32, space0);
 	ByteAddressBuffer g_transformBuffer : register(t30, space0);
 	cbuffer PerViewConstantBuffer_t : register(b1, space0)
 	{
-	    _1486 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
 	};
 	
@@ -153,17 +159,31 @@ VS
 	
 	void MainVs_inner()
 	{
-	    _1360 _25207;
-	    [unroll]
-	    for (int _1ident = 0; _1ident < 3; _1ident++)
-	    {
-	        _25207._m0[_1ident] = asfloat(g_transformBuffer.Load4(_1ident * 16 + g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 4) * 48 + 0));
-	    }
-	    float3x4 _14779 = float3x4(_25207._m0[0], _25207._m0[1], _25207._m0[2]);
-	    float3 _23070 = mul(_14779, float4(vPositionOs.xyz, 1.0f));
+	    _1126 _24007;
+	    _24007._m0 = g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 0);
+	    _24007._m1 = g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 4);
+	    _24007._m2 = g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 8);
+	    _24007._m3 = g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 12);
+	    _24007._m4 = g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 16);
+	    _24007._m5 = g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 20);
+	    _24007._m6 = g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 24);
+	    _24007._m7 = asfloat(g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 28));
+	    _1125 _19924;
+	    _19924._m0 = _24007._m0;
+	    _19924._m1 = _24007._m1;
+	    _19924._m2 = _24007._m2;
+	    _19924._m3 = _24007._m3;
+	    _19924._m4 = _24007._m4;
+	    _19924._m5 = _24007._m5;
+	    _19924._m6 = _24007._m6;
+	    _19924._m7 = _24007._m7;
+	    _1120 _8152;
+	    _8152._m0 = asfloat(uint3x4(g_transformBuffer.Load4(_19924._m1 * 48 + 0), g_transformBuffer.Load4(_19924._m1 * 48 + 16), g_transformBuffer.Load4(_19924._m1 * 48 + 32)));
+	    _1119 _19848;
+	    _19848._m0 = _8152._m0;
+	    float3 _23070 = mul(_19848._m0, float4(vPositionOs.xyz, 1.0f));
 	    float4 _21447 = PerViewConstantBuffer_t_1_m1 * 1.0f;
-	    float4x4 _15571 = float4x4(float4(PerViewConstantBuffer_t_1_m0._m0[0].x, PerViewConstantBuffer_t_1_m0._m0[1].x, PerViewConstantBuffer_t_1_m0._m0[2].x, PerViewConstantBuffer_t_1_m0._m0[3].x), float4(PerViewConstantBuffer_t_1_m0._m0[0].y, PerViewConstantBuffer_t_1_m0._m0[1].y, PerViewConstantBuffer_t_1_m0._m0[2].y, PerViewConstantBuffer_t_1_m0._m0[3].y), float4(PerViewConstantBuffer_t_1_m0._m0[0].z, PerViewConstantBuffer_t_1_m0._m0[1].z, PerViewConstantBuffer_t_1_m0._m0[2].z, PerViewConstantBuffer_t_1_m0._m0[3].z), float4(PerViewConstantBuffer_t_1_m0._m0[0].w, PerViewConstantBuffer_t_1_m0._m0[1].w, PerViewConstantBuffer_t_1_m0._m0[2].w, PerViewConstantBuffer_t_1_m0._m0[3].w));
-	    float4 _23875 = mul(_15571, (float4(_23070.xyz, 1.0f) + _21447).xyzw);
+	    float4 _18237 = mul(PerViewConstantBuffer_t_1_m0, (float4(_23070.xyz, 1.0f) + _21447).xyzw);
 	    float3 _24030 = nInstanceIdx.xyz * 0.077399380505084991455078125f.xxx;
 	    float3 _7676 = pow((nInstanceIdx.xyz * 0.947867333889007568359375f.xxx) + 0.052132703363895416259765625f.xxx, 2.400000095367431640625f.xxx);
 	    float _21354;
@@ -193,8 +213,8 @@ VS
 	    {
 	        _19302 = _7676.z;
 	    }
-	    float4 _23628 = float4(_21354, _21355, _19302, nInstanceIdx.w);
-	    float4 _23812 = float4(uint4((g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 0) & 255u), (g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 0) & 65280u) >> uint(8), (g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 0) & 16711680u) >> uint(16), (g_instanceBuffer.Load(vFirstLineVertPosWs * 32 + 0) & 4278190080u) >> uint(24))) * 0.0039215688593685626983642578125f.xxxx;
+	    float4 _23482 = float4(_21354, _21355, _19302, nInstanceIdx.w);
+	    float4 _23812 = float4(uint4(_19924._m0 & 255u, (_19924._m0 & 65280u) >> uint(8), (_19924._m0 & 16711680u) >> uint(16), (_19924._m0 & 4278190080u) >> uint(24))) * 0.0039215688593685626983642578125f.xxxx;
 	    float3 _6253 = _23812.xyz;
 	    float3 _17828 = _6253 * 0.077399380505084991455078125f.xxx;
 	    float3 _7677 = pow((_6253 * 0.947867333889007568359375f.xxx) + 0.052132703363895416259765625f.xxx, 2.400000095367431640625f.xxx);
@@ -231,8 +251,8 @@ VS
 	    float4 _21709;
 	    if (_Globals_1_g_bIgnoreTintAlpha != 0)
 	    {
-	        float3 _15408 = _23628.xyz * abs(_23812.xyz);
-	        float4 _23714 = _23628;
+	        float3 _15408 = _23482.xyz * abs(_23812.xyz);
+	        float4 _23714 = _23482;
 	        _23714.x = _15408.x;
 	        _23714.y = _15408.y;
 	        _23714.z = _15408.z;
@@ -240,15 +260,15 @@ VS
 	    }
 	    else
 	    {
-	        _21709 = _23628 * abs(_23812);
+	        _21709 = _23482 * abs(_23812);
 	    }
-	    output_0 = normalize(mul(_14779, float4(vColor.xyz, 0.0f)).xyz);
+	    output_0 = normalize(mul(_19848._m0, float4(vColor.xyz, 0.0f)).xyz);
 	    output_1 = lerp(_21709, _Globals_1_g_vOverrideColor, _Globals_1_g_OverrideColorFactor.xxxx);
-	    output_2 = mul(_15571, (float4(mul(_14779, float4(vNormalOs, 1.0f)).xyz, 1.0f) + _21447).xyzw);
-	    output_3 = _23875;
+	    output_2 = mul(PerViewConstantBuffer_t_1_m0, (float4(mul(_19848._m0, float4(vNormalOs, 1.0f)).xyz, 1.0f) + _21447).xyzw);
+	    output_3 = _18237;
 	    output_4 = _23070;
-	    _23875.y = -_23875.y;
-	    gl_Position = _23875;
+	    _18237.y = -_18237.y;
+	    gl_Position = _18237;
 	}
 	
 	PS_INPUT MainVs(VS_INPUT stage_input)
@@ -277,7 +297,6 @@ VS
 GS
 {
 	StaticCombo( S_MODE_DEPTH, 0..1 );
-	StaticCombo( S_MOBILE, 0..1 );
 	DynamicCombo( D_THICK_LINES, 0..1 );
 	DynamicCombo( D_DEPTH_BIAS, 0..1 );
 	
@@ -288,30 +307,25 @@ GS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// Unsupported shader stage.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (4136 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (3532 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	// Dynamic combos: D_THICK_LINES
 	
 	#version 460
 	layout(lines) in;
 	layout(max_vertices = 4, triangle_strip) out;
 	
-	struct _1864
+	struct _1278
 	{
-	    vec4 _m0[4];
-	};
-	
-	struct _1793
-	{
-	    _1864 _m0;
+	    mat4 _m0;
 	    vec2 _m1;
 	    vec4 _m2;
 	};
 	
-	layout(set = 2) uniform _1793 PerViewConstantBuffer_t;
+	layout(set = 2) uniform _1278 PerViewConstantBuffer_t;
 	
 	layout(location = 0) in vec3 input_0[2];
 	layout(location = 1) in vec3 input_1[2];
@@ -326,61 +340,60 @@ GS
 	void main()
 	{
 	    vec4 _21447 = PerViewConstantBuffer_t._m2 * 1.0;
-	    mat4 _15571 = mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	    vec4 _24240 = (vec4(input_0[0].xyz, 1.0) + _21447).xyzw * _15571;
-	    vec4 _9193 = (vec4(input_0[1].xyz, 1.0) + _21447).xyzw * _15571;
+	    vec4 _20663 = (vec4(input_0[0].xyz, 1.0) + _21447).xyzw * PerViewConstantBuffer_t._m0;
+	    vec4 _9193 = (vec4(input_0[1].xyz, 1.0) + _21447).xyzw * PerViewConstantBuffer_t._m0;
 	    vec2 _13645 = _9193.xy;
 	    float _20176 = _9193.w;
-	    vec2 _7058 = _24240.xy;
-	    float _20181 = _24240.w;
+	    vec2 _7058 = _20663.xy;
+	    float _20181 = _20663.w;
 	    vec2 _25108 = PerViewConstantBuffer_t._m1.xy * 2.0;
-	    float _14436 = _24240.z;
-	    vec2 _19809 = (normalize(vec2(1.0, -1.0) * (((_13645 / vec2(_20176)) - (_7058 / vec2(_20181))).xy / _25108).yx).xy * _25108).xy;
-	    vec2 _13861 = _7058 + ((_19809 * input_2[0]) * _20181);
+	    float _15395 = _20663.z;
+	    vec2 _20907 = (normalize(vec2(1.0, -1.0) * (((_13645 / vec2(_20176)) - (_7058 / vec2(_20181))).xy / _25108).yx).xy * _25108).xy;
+	    vec2 _13861 = _7058 + ((_20907 * input_2[0]) * _20181);
 	    float _9979 = _13861.x;
-	    vec4 _20450 = _24240;
+	    vec4 _20450 = _20663;
 	    _20450.x = _9979;
 	    output_0 = input_1[0];
 	    output_1 = input_3[0];
-	    output_2 = _24240;
-	    output_3 = vec4(_9979, _13861.y, _14436, _20181);
+	    output_2 = _20663;
+	    output_3 = vec4(_9979, _13861.y, _15395, _20181);
 	    output_4 = input_0[0];
 	    _20450.y = -_13861.y;
 	    gl_Position = _20450;
 	    EmitVertex();
-	    float _14689 = _9193.z;
-	    vec2 _13862 = _13645 + ((_19809 * input_2[1]) * _20176);
+	    float _8092 = _9193.z;
+	    vec2 _13862 = _13645 + ((_20907 * input_2[1]) * _20176);
 	    float _9980 = _13862.x;
 	    vec4 _20451 = _9193;
 	    _20451.x = _9980;
 	    output_0 = input_1[1];
 	    output_1 = input_3[1];
-	    output_2 = _24240;
-	    output_3 = vec4(_9980, _13862.y, _14689, _20176);
+	    output_2 = _20663;
+	    output_3 = vec4(_9980, _13862.y, _8092, _20176);
 	    output_4 = input_0[1];
 	    _20451.y = -_13862.y;
 	    gl_Position = _20451;
 	    EmitVertex();
-	    vec2 _13863 = _7058 + ((_19809 * ((-1.0) * input_2[0])) * _20181);
+	    vec2 _13863 = _7058 + ((_20907 * ((-1.0) * input_2[0])) * _20181);
 	    float _9981 = _13863.x;
-	    vec4 _20452 = _24240;
+	    vec4 _20452 = _20663;
 	    _20452.x = _9981;
 	    output_0 = input_1[0];
 	    output_1 = input_3[0];
-	    output_2 = _24240;
-	    output_3 = vec4(_9981, _13863.y, _14436, _20181);
+	    output_2 = _20663;
+	    output_3 = vec4(_9981, _13863.y, _15395, _20181);
 	    output_4 = input_0[0];
 	    _20452.y = -_13863.y;
 	    gl_Position = _20452;
 	    EmitVertex();
-	    vec2 _13864 = _13645 + ((_19809 * ((-1.0) * input_2[1])) * _20176);
+	    vec2 _13864 = _13645 + ((_20907 * ((-1.0) * input_2[1])) * _20176);
 	    float _9982 = _13864.x;
 	    vec4 _20453 = _9193;
 	    _20453.x = _9982;
 	    output_0 = input_1[1];
 	    output_1 = input_3[1];
-	    output_2 = _24240;
-	    output_3 = vec4(_9982, _13864.y, _14689, _20176);
+	    output_2 = _20663;
+	    output_3 = vec4(_9982, _13864.y, _8092, _20176);
 	    output_4 = input_0[1];
 	    _20453.y = -_13864.y;
 	    gl_Position = _20453;

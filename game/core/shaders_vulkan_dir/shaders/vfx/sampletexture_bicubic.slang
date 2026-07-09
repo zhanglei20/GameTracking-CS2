@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -132,11 +132,11 @@ PS
 	
 	void MainPs_inner()
 	{
-	    uint _16185_dummy_parameter;
-	    uint2 _16185 = spvTextureSize(g_tInputTexture, uint(0), _16185_dummy_parameter);
-	    float2 _14249 = float2(int2(int(_16185.x), int(_16185.y)));
-	    float2 _10728 = 1.0f.xx / _14249;
-	    float2 _13560 = (input_0 * _14249) - 0.5f.xx;
+	    uint _10352_dummy_parameter;
+	    uint2 _10352 = spvTextureSize(g_tInputTexture, 0u, _10352_dummy_parameter);
+	    float2 _15674 = float2(int2(int(_10352.x), int(_10352.y)));
+	    float2 _18768 = 1.0f.xx / _15674;
+	    float2 _13560 = (input_0 * _15674) - 0.5f.xx;
 	    float2 _11204 = floor(_13560);
 	    float2 _24976 = _13560 - _11204;
 	    float _9202 = _24976.x;
@@ -151,7 +151,7 @@ PS
 	    float2 _15076 = (_11358 / _22452) - 1.0f.xx;
 	    float2 _14303 = (_23036 / (float2(_23690.z, _22702.z) + _23036)) + 1.0f.xx;
 	    float4 _17001 = _22452.y.xxxx;
-	    output_0 = lerp(lerp(g_tInputTexture.SampleLevel(Filter_MinMagLinearMipPoint, (((_11204 + _14303) + 0.5f.xx) * _10728).xy, 0.0f), g_tInputTexture.SampleLevel(Filter_MinMagLinearMipPoint, (((_11204 + float2(_14303.x, _15076.y)) + 0.5f.xx) * _10728).xy, 0.0f), _17001), lerp(g_tInputTexture.SampleLevel(Filter_MinMagLinearMipPoint, (((_11204 + float2(_15076.x, _14303.y)) + 0.5f.xx) * _10728).xy, 0.0f), g_tInputTexture.SampleLevel(Filter_MinMagLinearMipPoint, (((_11204 + _15076) + 0.5f.xx) * _10728).xy, 0.0f), _17001), _22452.x.xxxx);
+	    output_0 = lerp(lerp(g_tInputTexture.SampleLevel(Filter_MinMagLinearMipPoint, (((_11204 + _14303) + 0.5f.xx) * _18768).xy, 0.0f), g_tInputTexture.SampleLevel(Filter_MinMagLinearMipPoint, (((_11204 + float2(_14303.x, _15076.y)) + 0.5f.xx) * _18768).xy, 0.0f), _17001), lerp(g_tInputTexture.SampleLevel(Filter_MinMagLinearMipPoint, (((_11204 + float2(_15076.x, _14303.y)) + 0.5f.xx) * _18768).xy, 0.0f), g_tInputTexture.SampleLevel(Filter_MinMagLinearMipPoint, (((_11204 + _15076) + 0.5f.xx) * _18768).xy, 0.0f), _17001), _22452.x.xxxx);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

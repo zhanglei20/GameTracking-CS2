@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -56,12 +56,12 @@ VS
 	DynamicComboRule( Requires( D_MORPH, S_MORPH_SUPPORTED ) );
 	
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
-	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_instanceBuffer < Attribute("InstanceBuffer"); >;
 	Texture2D g_tCompositeMorphTextureAtlas < Attribute("CompositeMorphTextureAtlas"); SrgbRead(false); >;
-	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_transformBuffer < Attribute("TransformBuffer"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (4352 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (3660 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _1125
 	{
@@ -75,26 +75,33 @@ VS
 	    float _m7;
 	};
 	
-	struct _1360
+	struct _1126
 	{
-	    float4 _m0[3];
+	    uint _m0;
+	    uint _m1;
+	    uint _m2;
+	    uint _m3;
+	    uint _m4;
+	    uint _m5;
+	    uint _m6;
+	    float _m7;
 	};
 	
-	struct _668
+	struct _1119
 	{
-	    _1360 _m0;
+	    float3x4 _m0;
 	};
 	
-	struct _1486
+	struct _1120
 	{
-	    float4 _m0[4];
+	    row_major float3x4 _m0;
 	};
 	
 	ByteAddressBuffer g_instanceBuffer : register(t32, space0);
 	ByteAddressBuffer g_transformBuffer : register(t30, space0);
 	cbuffer PerViewConstantBuffer_t : register(b1, space0)
 	{
-	    _1486 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
 	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c17);
 	    float4 PerViewConstantBuffer_t_1_m2 : packoffset(c24);
 	};
@@ -102,15 +109,15 @@ VS
 	
 	static float4 gl_Position;
 	static float gl_ClipDistance[1];
-	static float3 vPositionOs;
-	static uint nInstanceIdx;
+	static uint vPositionOs;
+	static float3 nInstanceIdx;
 	static float3 output_0;
 	static float4 output_1;
 	
 	struct VS_INPUT
 	{
-	    float3 vPositionOs : TEXCOORD0;
-	    uint nInstanceIdx : TEXCOORD4;
+	    float3 nInstanceIdx : TEXCOORD0;
+	    uint vPositionOs : TEXCOORD4;
 	};
 	
 	struct PS_INPUT
@@ -123,7 +130,25 @@ VS
 	
 	void MainVs_inner()
 	{
-	    float4 _23812 = float4(uint4((g_instanceBuffer.Load(nInstanceIdx * 32 + 0) & 255u), (g_instanceBuffer.Load(nInstanceIdx * 32 + 0) & 65280u) >> uint(8), (g_instanceBuffer.Load(nInstanceIdx * 32 + 0) & 16711680u) >> uint(16), (g_instanceBuffer.Load(nInstanceIdx * 32 + 0) & 4278190080u) >> uint(24))) * 0.0039215688593685626983642578125f.xxxx;
+	    _1126 _24007;
+	    _24007._m0 = g_instanceBuffer.Load(vPositionOs * 32 + 0);
+	    _24007._m1 = g_instanceBuffer.Load(vPositionOs * 32 + 4);
+	    _24007._m2 = g_instanceBuffer.Load(vPositionOs * 32 + 8);
+	    _24007._m3 = g_instanceBuffer.Load(vPositionOs * 32 + 12);
+	    _24007._m4 = g_instanceBuffer.Load(vPositionOs * 32 + 16);
+	    _24007._m5 = g_instanceBuffer.Load(vPositionOs * 32 + 20);
+	    _24007._m6 = g_instanceBuffer.Load(vPositionOs * 32 + 24);
+	    _24007._m7 = asfloat(g_instanceBuffer.Load(vPositionOs * 32 + 28));
+	    _1125 _22470;
+	    _22470._m0 = _24007._m0;
+	    _22470._m1 = _24007._m1;
+	    _22470._m2 = _24007._m2;
+	    _22470._m3 = _24007._m3;
+	    _22470._m4 = _24007._m4;
+	    _22470._m5 = _24007._m5;
+	    _22470._m6 = _24007._m6;
+	    _22470._m7 = _24007._m7;
+	    float4 _23812 = float4(uint4(_22470._m0 & 255u, (_22470._m0 & 65280u) >> uint(8), (_22470._m0 & 16711680u) >> uint(16), (_22470._m0 & 4278190080u) >> uint(24))) * 0.0039215688593685626983642578125f.xxxx;
 	    float3 _6253 = _23812.xyz;
 	    float3 _17828 = _6253 * 0.077399380505084991455078125f.xxx;
 	    float3 _7676 = pow((_6253 * 0.947867333889007568359375f.xxx) + 0.052132703363895416259765625f.xxx, 2.400000095367431640625f.xxx);
@@ -154,18 +179,16 @@ VS
 	    {
 	        _19302 = _7676.z;
 	    }
-	    _1360 _25207;
-	    [unroll]
-	    for (int _1ident = 0; _1ident < 3; _1ident++)
-	    {
-	        _25207._m0[_1ident] = asfloat(g_transformBuffer.Load4(_1ident * 16 + g_instanceBuffer.Load(nInstanceIdx * 32 + 4) * 48 + 0));
-	    }
-	    float3 _19937 = mul(float3x4(_25207._m0[0], _25207._m0[1], _25207._m0[2]), float4(vPositionOs.xyz, 1.0f));
-	    float4 _23894 = mul(float4x4(float4(PerViewConstantBuffer_t_1_m0._m0[0].x, PerViewConstantBuffer_t_1_m0._m0[1].x, PerViewConstantBuffer_t_1_m0._m0[2].x, PerViewConstantBuffer_t_1_m0._m0[3].x), float4(PerViewConstantBuffer_t_1_m0._m0[0].y, PerViewConstantBuffer_t_1_m0._m0[1].y, PerViewConstantBuffer_t_1_m0._m0[2].y, PerViewConstantBuffer_t_1_m0._m0[3].y), float4(PerViewConstantBuffer_t_1_m0._m0[0].z, PerViewConstantBuffer_t_1_m0._m0[1].z, PerViewConstantBuffer_t_1_m0._m0[2].z, PerViewConstantBuffer_t_1_m0._m0[3].z), float4(PerViewConstantBuffer_t_1_m0._m0[0].w, PerViewConstantBuffer_t_1_m0._m0[1].w, PerViewConstantBuffer_t_1_m0._m0[2].w, PerViewConstantBuffer_t_1_m0._m0[3].w)), (float4(_19937.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m2 * 1.0f)).xyzw);
+	    _1120 _8152;
+	    _8152._m0 = asfloat(uint3x4(g_transformBuffer.Load4(_22470._m1 * 48 + 0), g_transformBuffer.Load4(_22470._m1 * 48 + 16), g_transformBuffer.Load4(_22470._m1 * 48 + 32)));
+	    _1119 _19848;
+	    _19848._m0 = _8152._m0;
+	    float3 _19937 = mul(_19848._m0, float4(nInstanceIdx.xyz, 1.0f));
+	    float4 _18256 = mul(PerViewConstantBuffer_t_1_m0, (float4(_19937.xyz, 1.0f) + (PerViewConstantBuffer_t_1_m2 * 1.0f)).xyzw);
 	    output_0 = _19937;
 	    output_1 = float4(_21354, _21355, _19302, _23812.w);
-	    _23894.y = -_23894.y;
-	    gl_Position = _23894;
+	    _18256.y = -_18256.y;
+	    gl_Position = _18256;
 	    gl_ClipDistance[0] = dot(float4(_19937.xyz, 1.0f), PerViewConstantBuffer_t_1_m1.xyzw);
 	}
 	

@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -41,11 +41,11 @@ CS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (5172 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	cbuffer _Globals_ : register(b0, space0)
+	cbuffer MipConstantBuffer_t : register(b0, space0)
 	{
-	    float _Globals_1_m0 : packoffset(c0);
-	    float _Globals_1_m1 : packoffset(c0.y);
-	    float2 _Globals_1_m2 : packoffset(c0.z);
+	    float MipConstantBuffer_t_1_m0 : packoffset(c0);
+	    float MipConstantBuffer_t_1_m1 : packoffset(c0.y);
+	    float2 MipConstantBuffer_t_1_m2 : packoffset(c0.z);
 	};
 	
 	Texture2D<float4> g_tSrcMip : register(t30, space0);
@@ -72,8 +72,8 @@ CS
 	{
 	    do
 	    {
-	        uint _3962 = uint(_Globals_1_m1);
-	        float4 _3401 = g_tSrcMip.SampleLevel(AddressU_Clamp_AddressV_Clamp_Filter_MinMagLinearMipPoint, (_Globals_1_m2 * (float2(gl_GlobalInvocationID.xy) + 0.5f.xx)).xy, float(uint(_Globals_1_m0)));
+	        uint _3962 = uint(MipConstantBuffer_t_1_m1);
+	        float4 _3401 = g_tSrcMip.SampleLevel(AddressU_Clamp_AddressV_Clamp_Filter_MinMagLinearMipPoint, (MipConstantBuffer_t_1_m2 * (float2(gl_GlobalInvocationID.xy) + 0.5f.xx)).xy, float(uint(MipConstantBuffer_t_1_m0)));
 	        _3764[gl_GlobalInvocationID.xy] = _3401;
 	        if (_3962 == 1u)
 	        {
@@ -87,11 +87,11 @@ CS
 	        float4 _7078;
 	        if ((gl_LocalInvocationIndex & 9u) == 0u)
 	        {
-	            uint _14126 = gl_LocalInvocationIndex + 1u;
-	            float _17363 = _4128[_14126];
-	            float _24369 = _4117[_14126];
-	            float _24370 = _4112[_14126];
-	            float _23047 = _4111[_14126];
+	            uint _11704 = gl_LocalInvocationIndex + 1u;
+	            float _17363 = _4128[_11704];
+	            float _24369 = _4117[_11704];
+	            float _24370 = _4112[_11704];
+	            float _23047 = _4111[_11704];
 	            uint _18005 = gl_LocalInvocationIndex + 8u;
 	            float _17364 = _4128[_18005];
 	            float _24371 = _4117[_18005];
@@ -122,11 +122,11 @@ CS
 	        float4 _7079;
 	        if ((gl_LocalInvocationIndex & 27u) == 0u)
 	        {
-	            uint _11704 = gl_LocalInvocationIndex + 2u;
-	            float _17366 = _4128[_11704];
-	            float _24375 = _4117[_11704];
-	            float _24376 = _4112[_11704];
-	            float _23049 = _4111[_11704];
+	            uint _11705 = gl_LocalInvocationIndex + 2u;
+	            float _17366 = _4128[_11705];
+	            float _24375 = _4117[_11705];
+	            float _24376 = _4112[_11705];
+	            float _23049 = _4111[_11705];
 	            uint _18007 = gl_LocalInvocationIndex + 16u;
 	            float _17367 = _4128[_18007];
 	            float _24377 = _4117[_18007];
@@ -156,10 +156,10 @@ CS
 	        GroupMemoryBarrierWithGroupSync();
 	        if (gl_LocalInvocationIndex == 0u)
 	        {
-	            uint _11705 = gl_LocalInvocationIndex + 4u;
+	            uint _11706 = gl_LocalInvocationIndex + 4u;
 	            uint _18009 = gl_LocalInvocationIndex + 32u;
 	            uint _18010 = gl_LocalInvocationIndex + 36u;
-	            _3767[gl_GlobalInvocationID.xy / uint2(8u, 8u)] = (((_7079 + float4(_4128[_11705], _4117[_11705], _4112[_11705], _4111[_11705])) + float4(_4128[_18009], _4117[_18009], _4112[_18009], _4111[_18009])) + float4(_4128[_18010], _4117[_18010], _4112[_18010], _4111[_18010])) * 0.25f;
+	            _3767[gl_GlobalInvocationID.xy / uint2(8u, 8u)] = (((_7079 + float4(_4128[_11706], _4117[_11706], _4112[_11706], _4111[_11706])) + float4(_4128[_18009], _4117[_18009], _4112[_18009], _4111[_18009])) + float4(_4128[_18010], _4117[_18010], _4112[_18010], _4111[_18010])) * 0.25f;
 	        }
 	        break;
 	    } while(false);

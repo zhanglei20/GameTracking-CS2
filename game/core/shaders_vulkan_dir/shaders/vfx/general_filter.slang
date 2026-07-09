@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -99,14 +99,9 @@ PS
 	
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2236 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1632 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	struct _226
-	{
-	    float4 _m0[4];
-	};
-	
-	struct _352
+	struct _268
 	{
 	    float4 _m0[32];
 	};
@@ -114,15 +109,15 @@ PS
 	cbuffer FilterTaps_t : register(b2, space1)
 	{
 	    float4 FilterTaps_t_1_m0 : packoffset(c0);
-	    _226 FilterTaps_t_1_m1 : packoffset(c2);
-	    _352 FilterTaps_t_1_m2 : packoffset(c6);
+	    column_major float4x4 FilterTaps_t_1_m1 : packoffset(c2);
+	    _268 FilterTaps_t_1_m2 : packoffset(c6);
 	};
 	
 	Texture2D<float4> g_tInputTexture : register(t30, space1);
 	SamplerState Filter_MinMagLinearMipPoint : register(s14, space1);
 	
-	static float4 output_0;
 	static float2 input_0;
+	static float4 output_0;
 	
 	struct PS_INPUT
 	{
@@ -155,7 +150,7 @@ PS
 	        _16208 = _18752;
 	        continue;
 	    }
-	    output_0 = mul(float4x4(float4(FilterTaps_t_1_m1._m0[0].x, FilterTaps_t_1_m1._m0[1].x, FilterTaps_t_1_m1._m0[2].x, FilterTaps_t_1_m1._m0[3].x), float4(FilterTaps_t_1_m1._m0[0].y, FilterTaps_t_1_m1._m0[1].y, FilterTaps_t_1_m1._m0[2].y, FilterTaps_t_1_m1._m0[3].y), float4(FilterTaps_t_1_m1._m0[0].z, FilterTaps_t_1_m1._m0[1].z, FilterTaps_t_1_m1._m0[2].z, FilterTaps_t_1_m1._m0[3].z), float4(FilterTaps_t_1_m1._m0[0].w, FilterTaps_t_1_m1._m0[1].w, FilterTaps_t_1_m1._m0[2].w, FilterTaps_t_1_m1._m0[3].w)), _13155);
+	    output_0 = mul(FilterTaps_t_1_m1, _13155);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

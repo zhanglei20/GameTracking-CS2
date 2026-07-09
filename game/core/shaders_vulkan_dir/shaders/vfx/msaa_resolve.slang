@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 2;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -92,7 +92,7 @@ PS
 	float2 g_vSourceOffset < Attribute("SourceOffset"); UiType(VectorText); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (1732 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1724 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	static float4 _3;
 	
@@ -101,7 +101,7 @@ PS
 	    float2 _Globals_1_g_vSourceOffset : packoffset(c7.z);
 	};
 	
-	Texture2DMS<float4> g_tSourceMsaa_unexpectedTypeId438_1075 : register(t31, space1);
+	Texture2DMS<float4> g_tSourceMsaa : register(t31, space1);
 	
 	static float4 gl_FragCoord;
 	static float4 output_0;
@@ -129,7 +129,7 @@ PS
 	        {
 	            break;
 	        }
-	        float4 _3401 = g_tSourceMsaa_unexpectedTypeId438_1075.Load(int2((gl_FragCoord.xy - _Globals_1_g_vSourceOffset.xy).xy), _16208);
+	        float4 _3401 = g_tSourceMsaa.Load(int2((gl_FragCoord.xy - _Globals_1_g_vSourceOffset.xy).xy), _16208);
 	        float3 _12039 = clamp(_3401.xyz, 0.0f.xxx, 65504.0f.xxx);
 	        float4 _13514;
 	        _13514.x = _12039.x;

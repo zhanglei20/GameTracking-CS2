@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -54,18 +54,13 @@ VS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 1 (name: g_vGridAxis1) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2468 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1880 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
-	
-	struct _58
-	{
-	    vec4 _m0[4];
-	};
 	
 	struct _1295
 	{
@@ -78,13 +73,13 @@ VS
 	
 	layout(set = 0) uniform _1295 _Globals_;
 	
-	struct _1138
+	struct _1224
 	{
-	    _58 _m0;
+	    mat4 _m0;
 	    vec4 _m1;
 	};
 	
-	layout(set = 0) uniform _1138 PerViewConstantBuffer_t;
+	layout(set = 0) uniform _1224 PerViewConstantBuffer_t;
 	
 	layout(location = 0) in vec3 vPositionOs;
 	layout(location = 1) in vec4 vColor;
@@ -95,11 +90,11 @@ VS
 	{
 	    float _16863 = mix(_Globals_.g_vGridMin.x, _Globals_.g_vGridMax.x, vPositionOs.x);
 	    float _22467 = mix(_Globals_.g_vGridMin.y, _Globals_.g_vGridMax.y, vPositionOs.y);
-	    vec4 _23706 = (vec4((((_Globals_.g_vGridAxis0 * _16863) + (_Globals_.g_vGridAxis1 * _22467)).xyz + _Globals_.g_vGridAxis2).xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
+	    vec4 _18068 = (vec4((((_Globals_.g_vGridAxis0 * _16863) + (_Globals_.g_vGridAxis1 * _22467)).xyz + _Globals_.g_vGridAxis2).xyz, 1.0) + (PerViewConstantBuffer_t._m1 * 1.0)).xyzw * PerViewConstantBuffer_t._m0;
 	    output_0 = vec3(_16863, _22467, 0.0);
 	    output_1 = vColor;
-	    _23706.y = -_23706.y;
-	    gl_Position = _23706;
+	    _18068.y = -_18068.y;
+	    gl_Position = _18068;
 	}
 	
 	
@@ -132,30 +127,25 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 1 (name: g_vGridAxis1) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (6212 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (5608 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	
-	struct _1444
-	{
-	    vec4 _m0[4];
-	};
-	
 	vec4 _3;
 	
-	struct _993
+	struct _1318
 	{
-	    _1444 _m0;
+	    mat4 _m0;
 	    vec2 _m1;
 	    vec2 _m2;
 	    vec3 _m3;
 	};
 	
-	layout(set = 1) uniform _993 PerViewConstantBuffer_t;
+	layout(set = 1) uniform _1318 PerViewConstantBuffer_t;
 	
 	struct _1980
 	{
@@ -203,8 +193,8 @@ PS
 	        _16306 = _16305;
 	        _17134 = _17133;
 	        int _3633;
-	        float _4243;
 	        float _5489;
+	        float _23914;
 	        vec4 _14211;
 	        float _17018 = -0.25;
 	        for (;;)
@@ -215,8 +205,8 @@ PS
 	            }
 	            _3633 = _17134 + 1;
 	            vec3 _7727 = cross(_Globals_.g_vGridAxis0, _Globals_.g_vGridAxis1);
-	            vec4 _24010 = vec4(_17305 + (PerViewConstantBuffer_t._m2 * vec2(_17018, _17017)), 1.0, 1.0) * mat4(vec4(PerViewConstantBuffer_t._m0._m0[0].x, PerViewConstantBuffer_t._m0._m0[1].x, PerViewConstantBuffer_t._m0._m0[2].x, PerViewConstantBuffer_t._m0._m0[3].x), vec4(PerViewConstantBuffer_t._m0._m0[0].y, PerViewConstantBuffer_t._m0._m0[1].y, PerViewConstantBuffer_t._m0._m0[2].y, PerViewConstantBuffer_t._m0._m0[3].y), vec4(PerViewConstantBuffer_t._m0._m0[0].z, PerViewConstantBuffer_t._m0._m0[1].z, PerViewConstantBuffer_t._m0._m0[2].z, PerViewConstantBuffer_t._m0._m0[3].z), vec4(PerViewConstantBuffer_t._m0._m0[0].w, PerViewConstantBuffer_t._m0._m0[1].w, PerViewConstantBuffer_t._m0._m0[2].w, PerViewConstantBuffer_t._m0._m0[3].w));
-	            vec3 _10521 = _24010.xyz / vec3(_24010.w);
+	            vec4 _18372 = vec4(_17305 + (PerViewConstantBuffer_t._m2 * vec2(_17018, _17017)), 1.0, 1.0) * PerViewConstantBuffer_t._m0;
+	            vec3 _10521 = _18372.xyz / vec3(_18372.w);
 	            vec4 _22905;
 	            _22905.x = _10521.x;
 	            _22905.y = _10521.y;
@@ -228,7 +218,7 @@ PS
 	            vec2 _4840 = vec2(1.0) - clamp(abs(_3719 - _15975) / (_22106 * (0.699999988079071044921875 * _Globals_.g_fInvGridSpacing)), vec2(0.0), vec2(1.0));
 	            float _13224 = _4840.x;
 	            float _7629 = _4840.y;
-	            _4243 = _16306 + max(_13224, _7629);
+	            _23914 = _16306 + max(_13224, _7629);
 	            if (_13224 > _7629)
 	            {
 	                int _6461 = int(_15975.x * _Globals_.g_fGridSpacing);
@@ -295,7 +285,7 @@ PS
 	            }
 	            _5489 = _17018 + 0.25;
 	            _13137 = _14211;
-	            _16306 = _4243;
+	            _16306 = _23914;
 	            _17134 = _3633;
 	            _17018 = _5489;
 	            continue;
@@ -308,9 +298,9 @@ PS
 	        continue;
 	    }
 	    float _16034 = 1.0 / float(_17133);
-	    vec4 _13992 = _13136 * _16034;
-	    _13992.w = _13992.w * (_16305 * _16034);
-	    output_0 = _13992;
+	    vec4 _5645 = _13136 * _16034;
+	    _5645.w = _5645.w * (_16305 * _16034);
+	    output_0 = _5645;
 	}
 	
 	

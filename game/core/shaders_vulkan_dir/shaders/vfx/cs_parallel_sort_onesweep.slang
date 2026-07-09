@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -39,7 +39,7 @@ CS
 	RWStructuredBuffer b_passHist < Attribute("PassHistBuffer"); >;
 	RWStructuredBuffer b_sort < Attribute("SortBuffer"); >;
 	RWStructuredBuffer b_sortPayload < Attribute("PayloadBuffer"); >;
-	StructuredBuffer g_constantBuffer < Attribute("DispatchArgBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_constantBuffer < Attribute("DispatchArgBuffer"); >;
 	cbuffer g_consts < Source(ExternalDescSet); Attribute("g_consts"); >;
 	cbuffer g_consts < Source(ExternalDescSet); Attribute("g_consts"); >;
 	RWStructuredBuffer g_dispatchBuffer < Attribute("DispatchArgBuffer"); >;
@@ -51,7 +51,7 @@ CS
 	
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (1968 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2064 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _990
 	{
@@ -59,9 +59,15 @@ CS
 	    uint _m1;
 	};
 	
-	struct _417
+	struct _991
 	{
-	    _990 _m0[4];
+	    uint _m0;
+	    uint _m1;
+	};
+	
+	struct _1464
+	{
+	    _991 _m0[4];
 	};
 	
 	struct _1002
@@ -71,21 +77,21 @@ CS
 	    uint _m2;
 	};
 	
-	struct _1281
+	struct _2304
 	{
 	    _1002 _m0[4];
 	};
 	
-	struct _2601
+	struct _1742
 	{
-	    _417 _m0;
-	    _1281 _m1;
+	    _1464 _m0;
+	    _2304 _m1;
 	};
 	
 	ByteAddressBuffer g_constantBuffer : register(t30, space0);
-	RWByteAddressBuffer undetermined : register(u162, space0);
-	globallycoherent RWByteAddressBuffer undetermined_1 : register(u164, space0);
-	globallycoherent RWByteAddressBuffer undetermined_2 : register(u163, space0);
+	globallycoherent RWByteAddressBuffer undetermined : register(u163, space0);
+	RWByteAddressBuffer undetermined_1 : register(u162, space0);
+	globallycoherent RWByteAddressBuffer undetermined_2 : register(u164, space0);
 	cbuffer _981_4645
 	{
 	    uint _4645_m0 : packoffset(c0);
@@ -100,27 +106,33 @@ CS
 	
 	void MainCs_inner()
 	{
-	    uint _19822 = g_constantBuffer.Load(_4645_m0 * 8 + 4) * 1024u;
+	    _991 _8162;
+	    _8162._m0 = g_constantBuffer.Load(_4645_m0 * 8 + 0);
+	    _8162._m1 = g_constantBuffer.Load(_4645_m0 * 8 + 4);
+	    _990 _21197;
+	    _21197._m0 = _8162._m0;
+	    _21197._m1 = _8162._m1;
+	    uint _17622 = _21197._m1 * 1024u;
 	    uint _4283;
 	    uint _13039 = gl_GlobalInvocationID.x;
 	    for (;;)
 	    {
-	        if (!(_13039 < _19822))
+	        if (!(_13039 < _17622))
 	        {
 	            break;
 	        }
-	        undetermined_2.Store(_13039 * 4 + 0, 0u);
+	        undetermined.Store(_13039 * 4 + 0, 0u);
 	        _4283 = _13039 + 65536u;
 	        _13039 = _4283;
 	        continue;
 	    }
 	    if (gl_GlobalInvocationID.x < 1024u)
 	    {
-	        undetermined.Store(gl_GlobalInvocationID.x * 4 + 0, 0u);
+	        undetermined_1.Store(gl_GlobalInvocationID.x * 4 + 0, 0u);
 	    }
 	    if (gl_GlobalInvocationID.x < 4u)
 	    {
-	        undetermined_1.Store(gl_GlobalInvocationID.x * 4 + 0, 0u);
+	        undetermined_2.Store(gl_GlobalInvocationID.x * 4 + 0, 0u);
 	    }
 	}
 	

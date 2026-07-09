@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -33,11 +33,11 @@ CS
 	DynamicCombo( D_FIELD_MODE, 0..1 );
 	DynamicCombo( D_PER_PARTICLE_RADIUS, 0..1 );
 	
-	StructuredBuffer g_DispatchBuffer < Attribute("DispatchBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_DispatchBuffer < Attribute("DispatchBuffer"); >;
 	RWByteAddressBuffer g_IndexBuffer < Attribute("IndexBuffer"); >;
 	RWBuffer<float4> g_IndirectDrawArgs < Attribute("IndirectDrawArgs"); >;
 	Buffer g_LookupTables < Attribute("LookupTables"); SrgbRead(false); >;
-	StructuredBuffer g_Particles < Attribute("ParticleBuffer"); SrgbRead(false); >;
+	StructuredBuffer g_Particles < Attribute("ParticleBuffer"); >;
 	RWByteAddressBuffer g_VertexBuffer < Attribute("VertexBuffer"); >;
 	float g_fIsosurfaceThreshold < Attribute("IsosurfaceThreshold"); UiType(Slider); >;
 	int g_nBrickHeight < Attribute("BrickHeight"); UiType(Slider); >;
@@ -53,11 +53,11 @@ CS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 5 (name: g_vBlobulatorConstants) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (17228 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (17084 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
 	layout(local_size_x = 8, local_size_y = 8, local_size_z = 1) in;
@@ -80,11 +80,23 @@ CS
 	    uint _m1;
 	};
 	
+	struct _1023
+	{
+	    vec3 _m0;
+	    float _m1;
+	};
+	
+	struct _992
+	{
+	    uint _m0;
+	    uint _m1;
+	};
+	
 	uint _4;
 	
 	layout(set = 0, binding = 31, std430) readonly buffer g_DispatchBuffer
 	{
-	    _990 _m0[];
+	    _991 _m0[];
 	} g_DispatchBuffer_1;
 	
 	struct _1529
@@ -105,7 +117,7 @@ CS
 	
 	layout(set = 0, binding = 32, std430) readonly buffer g_Particles
 	{
-	    _1022 _m0[];
+	    _1023 _m0[];
 	} g_Particles_1;
 	
 	layout(set = 0, binding = 159, std430) buffer undetermined
@@ -118,23 +130,25 @@ CS
 	    uint _m0[];
 	} undetermined_3;
 	
-	layout(set = 0, binding = 30) uniform usamplerBuffer undetermined_4;
+	layout(set = 0, binding = 30) uniform usamplerBuffer undetermined_unexpectedTypeId408_1045;
 	layout(set = 0, binding = 158, r32ui) uniform uimageBuffer _4008;
 	
 	shared uint _5696;
 	shared uint _5501;
 	shared float _3739[64][2];
-	shared _991 _3560[49];
+	shared _992 _3560[49];
 	shared uint _4676[49];
 	
 	void main()
 	{
-	    uint _10312 = g_DispatchBuffer_1._m0[gl_WorkGroupID.x]._m1;
-	    uint _15781 = _10312 >> uint(16);
-	    uint _7912 = _10312 & 65535u;
+	    _990 _20228;
+	    _20228._m0 = g_DispatchBuffer_1._m0[gl_WorkGroupID.x]._m0;
+	    _20228._m1 = g_DispatchBuffer_1._m0[gl_WorkGroupID.x]._m1;
+	    uint _15978 = _20228._m1 >> uint(16);
+	    uint _9584 = _20228._m1 & 65535u;
 	    uint _5563 = (gl_LocalInvocationID.y * 8u) + gl_LocalInvocationID.x;
-	    vec3 _23073 = _Globals_.g_vSystemOrigin + (_Globals_.g_vSystemStepSize * vec3(uvec3(((g_DispatchBuffer_1._m0[gl_WorkGroupID.x]._m0) & 1023u) * 7u, ((g_DispatchBuffer_1._m0[gl_WorkGroupID.x]._m0 >> uint(10)) & 1023u) * 7u, ((g_DispatchBuffer_1._m0[gl_WorkGroupID.x]._m0 >> uint(20)) & 4095u) * 4u)));
-	    vec3 _6302 = _23073 + vec3(_Globals_.g_vSystemStepSize.xy * vec2(gl_LocalInvocationID.xy), 0.0);
+	    vec3 _22446 = _Globals_.g_vSystemOrigin + (_Globals_.g_vSystemStepSize * vec3(uvec3((_20228._m0 & 1023u) * 7u, ((_20228._m0 >> uint(10)) & 1023u) * 7u, ((_20228._m0 >> uint(20)) & 4095u) * 4u)));
+	    vec3 _6302 = _22446 + vec3(_Globals_.g_vSystemStepSize.xy * vec2(gl_LocalInvocationID.xy), 0.0);
 	    bool _8412 = all(equal(gl_LocalInvocationID.xy, uvec2(0u)));
 	    if (_8412)
 	    {
@@ -145,42 +159,45 @@ CS
 	    _13155 = 0.0;
 	    uint _14722;
 	    float _20258;
-	    uint _16208 = _15781;
+	    uint _16208 = _15978;
 	    for (;;)
 	    {
-	        if (!(_16208 < _7912))
+	        if (!(_16208 < _9584))
 	        {
 	            break;
 	        }
-	        vec3 _12928 = _6302 - g_Particles_1._m0[_16208]._m0;
-	        float _18342 = dot(_12928, _12928);
+	        _1022 _20229;
+	        _20229._m0 = g_Particles_1._m0[_16208]._m0;
+	        _20229._m1 = g_Particles_1._m0[_16208]._m1;
+	        vec3 _20252 = _6302 - _20229._m0;
+	        float _21558 = dot(_20252, _20252);
 	        float _11237;
-	        if (_18342 <= _Globals_.g_vBlobulatorConstants.x)
+	        if (_21558 <= _Globals_.g_vBlobulatorConstants.x)
 	        {
-	            float _19902 = _18342 * _Globals_.g_vBlobulatorConstants.y;
+	            float _19902 = _21558 * _Globals_.g_vBlobulatorConstants.y;
 	            _11237 = (0.25 + (_19902 * _19902)) - _19902;
 	        }
 	        else
 	        {
 	            _11237 = 0.0;
 	        }
-	        _20258 = _13155 + (_11237 * g_Particles_1._m0[_16208]._m1);
+	        _20258 = _13155 + (_11237 * _20229._m1);
 	        _14722 = _16208 + 1u;
 	        _13155 = _20258;
 	        _16208 = _14722;
 	        continue;
 	    }
 	    _3739[_5563][0] = (_13155 - _Globals_.g_fIsosurfaceThreshold) * (-1.0);
-	    vec3 _13136;
+	    vec3 _13137;
 	    vec3 _16305;
-	    _13136 = _23073;
+	    _13137 = _22446;
 	    _16305 = _6302;
 	    uint _4300;
 	    vec3 _14716;
 	    vec3 _19764;
 	    uint _13039;
 	    uint _17017 = 1u;
-	    uint _17133 = _15781;
+	    uint _17133 = _15978;
 	    for (;;)
 	    {
 	        if (!(_17017 <= _Globals_.g_nBrickHeight))
@@ -192,9 +209,12 @@ CS
 	        for (;;)
 	        {
 	            bool _12885;
-	            if (_13039 < _7912)
+	            if (_13039 < _9584)
 	            {
-	                _12885 = (g_Particles_1._m0[_13039]._m0.z + _Globals_.g_vBlobulatorConstants.w) < _16305.z;
+	                _1022 _20230;
+	                _20230._m0 = g_Particles_1._m0[_13039]._m0;
+	                _20230._m1 = g_Particles_1._m0[_13039]._m1;
+	                _12885 = (_20230._m0.z + _Globals_.g_vBlobulatorConstants.w) < _16305.z;
 	            }
 	            else
 	            {
@@ -208,8 +228,8 @@ CS
 	            _13039 = _23989;
 	            continue;
 	        }
-	        _14716 = _13136;
-	        _14716.z = _13136.z + _Globals_.g_vSystemStepSize.z;
+	        _14716 = _13137;
+	        _14716.z = _13137.z + _Globals_.g_vSystemStepSize.z;
 	        _19764 = _16305;
 	        _19764.z = _16305.z + _Globals_.g_vSystemStepSize.z;
 	        float _13156;
@@ -219,23 +239,26 @@ CS
 	        uint _16209 = _13039;
 	        for (;;)
 	        {
-	            if (!(_16209 < _7912))
+	            if (!(_16209 < _9584))
 	            {
 	                break;
 	            }
-	            vec3 _12929 = _19764 - g_Particles_1._m0[_16209]._m0;
-	            float _18343 = dot(_12929, _12929);
+	            _1022 _20231;
+	            _20231._m0 = g_Particles_1._m0[_16209]._m0;
+	            _20231._m1 = g_Particles_1._m0[_16209]._m1;
+	            vec3 _20253 = _19764 - _20231._m0;
+	            float _21559 = dot(_20253, _20253);
 	            float _11238;
-	            if (_18343 <= _Globals_.g_vBlobulatorConstants.x)
+	            if (_21559 <= _Globals_.g_vBlobulatorConstants.x)
 	            {
-	                float _19903 = _18343 * _Globals_.g_vBlobulatorConstants.y;
+	                float _19903 = _21559 * _Globals_.g_vBlobulatorConstants.y;
 	                _11238 = (0.25 + (_19903 * _19903)) - _19903;
 	            }
 	            else
 	            {
 	                _11238 = 0.0;
 	            }
-	            _20259 = _13156 + (_11238 * g_Particles_1._m0[_16209]._m1);
+	            _20259 = _13156 + (_11238 * _20231._m1);
 	            _14723 = _16209 + 1u;
 	            _13156 = _20259;
 	            _16209 = _14723;
@@ -251,7 +274,7 @@ CS
 	            uint _7596 = (_11305.y * 8u) + _11305.x;
 	            uvec2 _11306 = gl_LocalInvocationID.xy + uvec2(1u);
 	            uint _7597 = (_11306.y * 8u) + _11306.x;
-	            uvec4 _9781 = texelFetch(undetermined_4, int(_Globals_.g_nClassDataOffset + (((((((((floatBitsToUint(_3739[_5563][0u]) & 2147483648u) >> uint(31)) | ((floatBitsToUint(_3739[_7595][0u]) & 2147483648u) >> uint(30))) | ((floatBitsToUint(_3739[_7596][0u]) & 2147483648u) >> uint(29))) | ((floatBitsToUint(_3739[_7597][0u]) & 2147483648u) >> uint(28))) | ((floatBitsToUint(_3739[_5563][1u]) & 2147483648u) >> uint(27))) | ((floatBitsToUint(_3739[_7595][1u]) & 2147483648u) >> uint(26))) | ((floatBitsToUint(_3739[_7596][1u]) & 2147483648u) >> uint(25))) | ((floatBitsToUint(_3739[_7597][1u]) & 2147483648u) >> uint(24)))));
+	            uvec4 _9781 = texelFetch(undetermined_unexpectedTypeId408_1045, int(_Globals_.g_nClassDataOffset + (((((((((floatBitsToUint(_3739[_5563][0u]) & 2147483648u) >> uint(31)) | ((floatBitsToUint(_3739[_7595][0u]) & 2147483648u) >> uint(30))) | ((floatBitsToUint(_3739[_7596][0u]) & 2147483648u) >> uint(29))) | ((floatBitsToUint(_3739[_7597][0u]) & 2147483648u) >> uint(28))) | ((floatBitsToUint(_3739[_5563][1u]) & 2147483648u) >> uint(27))) | ((floatBitsToUint(_3739[_7595][1u]) & 2147483648u) >> uint(26))) | ((floatBitsToUint(_3739[_7596][1u]) & 2147483648u) >> uint(25))) | ((floatBitsToUint(_3739[_7597][1u]) & 2147483648u) >> uint(24)))));
 	            uint _16997 = _9781.x;
 	            uint _24537 = (_16997 >> uint(4)) & 15u;
 	            uint _23149 = (_16997 >> uint(8)) & 15u;
@@ -281,9 +304,8 @@ CS
 	            }
 	        }
 	        barrier();
-	        uint _18165 = (8u * gl_LocalInvocationID.y) + gl_LocalInvocationID.x;
-	        uint _24510 = _5501 - 1u;
-	        uint _13205 = _24510 | (_24510 >> uint(1));
+	        uint _18293 = _5501 - 1u;
+	        uint _13205 = _18293 | (_18293 >> uint(1));
 	        uint _25270 = _13205 | (_13205 >> uint(2));
 	        uint _25271 = _25270 | (_25270 >> uint(4));
 	        uint _25272 = _25271 | (_25271 >> uint(8));
@@ -298,8 +320,8 @@ CS
 	            {
 	                break;
 	            }
-	            uint _4009 = _13040 + (_18165 >> _7125);
-	            uint _3354 = _18165 & _14175;
+	            uint _4009 = _13040 + (_5563 >> _7125);
+	            uint _3354 = _5563 & _14175;
 	            if (_4009 >= _5696)
 	            {
 	                break;
@@ -311,16 +333,19 @@ CS
 	            if (_3354 < ((_3560[_4009]._m0 >> uint(4)) & 15u))
 	            {
 	                vec3 _4278 = _14716 + vec3(vec2(_5072) * _Globals_.g_vSystemStepSize.xy, 0.0);
-	                uvec4 _8451 = texelFetch(undetermined_4, int((_Globals_.g_nVertexDataOffset + (_4688 * 12u)) + _3354));
-	                uint _10036 = _8451.x;
-	                uint _4758 = (_10036) & 15u;
-	                uint _4759 = (_10036 >> uint(4)) & 15u;
-	                uvec2 _7087 = _5072 + uvec3((_4758) & 1u, (_4758 >> uint(1)) & 1u, _4).xy;
-	                uvec2 _7088 = _5072 + uvec3((_4759) & 1u, (_4759 >> uint(1)) & 1u, _4).xy;
+	                uvec4 _9876 = texelFetch(undetermined_unexpectedTypeId408_1045, int((_Globals_.g_nVertexDataOffset + (_4688 * 12u)) + _3354));
+	                uint _16037 = _9876.x;
+	                uint _4758 = _16037 & 15u;
+	                uint _18698 = _16037 >> uint(4);
+	                uint _4759 = _18698 & 15u;
+	                uint _14643 = _16037 & 1u;
+	                uvec2 _7087 = _5072 + uvec3(_14643, (_4758 >> uint(1)) & 1u, _4).xy;
+	                uint _16065 = _18698 & 1u;
+	                uvec2 _7088 = _5072 + uvec3(_16065, (_4759 >> uint(1)) & 1u, _4).xy;
 	                uint _16749 = uint(int(_4759 >= 4u));
 	                uint _7599 = (_7088.y * 8u) + _7088.x;
 	                vec3 _19688;
-	                if ((_4758 & 1u) != 0u)
+	                if (_14643 != 0u)
 	                {
 	                    vec3 _6984 = _4278;
 	                    _6984.x = _4278.x + _Globals_.g_vSystemStepSize.x;
@@ -331,7 +356,7 @@ CS
 	                    _19688 = _4278;
 	                }
 	                vec3 _19689;
-	                if ((_4758 & 2u) != 0u)
+	                if ((_16037 & 2u) != 0u)
 	                {
 	                    vec3 _6985 = _19688;
 	                    _6985.y = _19688.y + _Globals_.g_vSystemStepSize.y;
@@ -341,51 +366,51 @@ CS
 	                {
 	                    _19689 = _19688;
 	                }
-	                vec3 _19690;
-	                if ((_4758 & 4u) != 0u)
+	                vec3 _6905;
+	                if ((_16037 & 4u) != 0u)
 	                {
 	                    vec3 _6986 = _19689;
 	                    _6986.z = _19689.z + _Globals_.g_vSystemStepSize.z;
-	                    _19690 = _6986;
+	                    _6905 = _6986;
 	                }
 	                else
 	                {
-	                    _19690 = _19689;
+	                    _6905 = _19689;
 	                }
-	                vec3 _19691;
-	                if ((_4759 & 1u) != 0u)
+	                vec3 _19690;
+	                if (_16065 != 0u)
 	                {
 	                    vec3 _6987 = _4278;
 	                    _6987.x = _4278.x + _Globals_.g_vSystemStepSize.x;
-	                    _19691 = _6987;
+	                    _19690 = _6987;
 	                }
 	                else
 	                {
-	                    _19691 = _4278;
+	                    _19690 = _4278;
 	                }
-	                vec3 _19692;
-	                if ((_4759 & 2u) != 0u)
+	                vec3 _19691;
+	                if ((_18698 & 2u) != 0u)
 	                {
-	                    vec3 _6988 = _19691;
-	                    _6988.y = _19691.y + _Globals_.g_vSystemStepSize.y;
-	                    _19692 = _6988;
+	                    vec3 _6988 = _19690;
+	                    _6988.y = _19690.y + _Globals_.g_vSystemStepSize.y;
+	                    _19691 = _6988;
 	                }
 	                else
 	                {
-	                    _19692 = _19691;
+	                    _19691 = _19690;
 	                }
 	                vec3 _18229;
-	                if ((_4759 & 4u) != 0u)
+	                if ((_18698 & 4u) != 0u)
 	                {
-	                    vec3 _6989 = _19692;
-	                    _6989.z = _19692.z + _Globals_.g_vSystemStepSize.z;
+	                    vec3 _6989 = _19691;
+	                    _6989.z = _19691.z + _Globals_.g_vSystemStepSize.z;
 	                    _18229 = _6989;
 	                }
 	                else
 	                {
-	                    _18229 = _19692;
+	                    _18229 = _19691;
 	                }
-	                vec3 _12090 = mix(_18229, _19690, vec3(_3739[_7599][_16749] / (_3739[_7599][_16749] - _3739[(_7087.y * 8u) + _7087.x][uint(int(_4758 >= 4u))])));
+	                vec3 _12090 = mix(_18229, _6905, vec3(_3739[_7599][_16749] / (_3739[_7599][_16749] - _3739[(_7087.y * 8u) + _7087.x][uint(int(_4758 >= 4u))])));
 	                _12090.z = _12090.z - _Globals_.g_vSystemStepSize.z;
 	                vec3 _13157;
 	                _13157 = vec3(0.0);
@@ -394,23 +419,26 @@ CS
 	                uint _16210 = _13039;
 	                for (;;)
 	                {
-	                    if (!(_16210 < _7912))
+	                    if (!(_16210 < _9584))
 	                    {
 	                        break;
 	                    }
-	                    vec3 _12930 = _12090 - g_Particles_1._m0[_16210]._m0;
-	                    float _18344 = dot(_12930, _12930);
+	                    _1022 _20232;
+	                    _20232._m0 = g_Particles_1._m0[_16210]._m0;
+	                    _20232._m1 = g_Particles_1._m0[_16210]._m1;
+	                    vec3 _20254 = _12090 - _20232._m0;
+	                    float _21560 = dot(_20254, _20254);
 	                    float _11484;
-	                    if (_18344 <= _Globals_.g_vBlobulatorConstants.x)
+	                    if (_21560 <= _Globals_.g_vBlobulatorConstants.x)
 	                    {
-	                        float _19904 = _18344 * _Globals_.g_vBlobulatorConstants.y;
+	                        float _19904 = _21560 * _Globals_.g_vBlobulatorConstants.y;
 	                        _11484 = (0.25 + (_19904 * _19904)) - _19904;
 	                    }
 	                    else
 	                    {
 	                        _11484 = 0.0;
 	                    }
-	                    _23944 = _13157 + (_12930 * (_11484 * g_Particles_1._m0[_16210]._m1));
+	                    _23944 = _13157 + (_20254 * (_11484 * _20232._m1));
 	                    _18752 = _16210 + 1u;
 	                    _13157 = _23944;
 	                    _16210 = _18752;
@@ -427,7 +455,7 @@ CS
 	                {
 	                    _19321 = (vec2(1.0) - abs(_19000.yx)) * mix(vec2(-1.0), vec2(1.0), greaterThanEqual(_19000.xy, vec2(0.0)));
 	                }
-	                uint _13526 = (_4676[(_22527 * 7u) + _23151] + ((_10036 >> uint(12)) & 15u)) * 16u;
+	                uint _13526 = (_4676[(_22527 * 7u) + _23151] + ((_16037 >> uint(12)) & 15u)) * 16u;
 	                uvec3 _9171 = floatBitsToUint(_12090);
 	                undetermined_1._m0[_13526 / 4u] = _9171.x;
 	                undetermined_1._m0[(_13526 + 4u) / 4u] = _9171.y;
@@ -436,11 +464,14 @@ CS
 	            }
 	            if (_3354 < ((_3560[_4009]._m0 >> uint(8)) & 15u))
 	            {
-	                uvec4 _3401 = texelFetch(undetermined_4, int((_Globals_.g_nTriangleDataOffset + (_4688 * 5u)) + _3354));
-	                uint _10037 = _3401.x;
-	                uint _5913 = (_10037 >> uint(24)) & 3u;
-	                uint _5914 = (_10037 >> uint(26)) & 3u;
-	                uint _5915 = (_10037 >> uint(28)) & 3u;
+	                uvec4 _3401 = texelFetch(undetermined_unexpectedTypeId408_1045, int((_Globals_.g_nTriangleDataOffset + (_4688 * 5u)) + _3354));
+	                uint _16038 = _3401.x;
+	                uint _16517 = _16038 >> uint(24);
+	                uint _5913 = _16517 & 3u;
+	                uint _16518 = _16038 >> uint(26);
+	                uint _5914 = _16518 & 3u;
+	                uint _16088 = _16038 >> uint(28);
+	                uint _5915 = _16088 & 3u;
 	                uint _7601 = uint(int(_23151 > 0u) | ((_22527 > 0u) ? 2 : 0));
 	                bool _12887;
 	                if (_5913 != 0u)
@@ -454,7 +485,7 @@ CS
 	                uvec2 _23168;
 	                if (_12887)
 	                {
-	                    _23168 = uvec2(_23151 - ((_5913) & 1u), _22527 - ((_5913 >> uint(1)) & 1u));
+	                    _23168 = uvec2(_23151 - (_16517 & 1u), _22527 - ((_5913 >> uint(1)) & 1u));
 	                }
 	                else
 	                {
@@ -472,7 +503,7 @@ CS
 	                uvec2 _23169;
 	                if (_12888)
 	                {
-	                    _23169 = uvec2(_23151 - ((_5914) & 1u), _22527 - ((_5914 >> uint(1)) & 1u));
+	                    _23169 = uvec2(_23151 - (_16518 & 1u), _22527 - ((_5914 >> uint(1)) & 1u));
 	                }
 	                else
 	                {
@@ -490,16 +521,16 @@ CS
 	                uvec2 _23170;
 	                if (_12889)
 	                {
-	                    _23170 = uvec2(_23151 - ((_5915) & 1u), _22527 - ((_5915 >> uint(1)) & 1u));
+	                    _23170 = uvec2(_23151 - (_16088 & 1u), _22527 - ((_5915 >> uint(1)) & 1u));
 	                }
 	                else
 	                {
 	                    _23170 = _5072;
 	                }
 	                uint _20110 = (_3560[_4009]._m1 + (_3354 * 3u)) * 4u;
-	                undetermined_3._m0[_20110 / 4u] = (_12887 ? ((_10037 >> uint(12)) & 15u) : ((_10037) & 15u)) + _4676[(_23168.y * 7u) + _23168.x];
-	                undetermined_3._m0[(_20110 + 4u) / 4u] = (_12888 ? ((_10037 >> uint(16)) & 15u) : ((_10037 >> uint(4)) & 15u)) + _4676[(_23169.y * 7u) + _23169.x];
-	                undetermined_3._m0[(_20110 + 8u) / 4u] = (_12889 ? ((_10037 >> uint(20)) & 15u) : ((_10037 >> uint(8)) & 15u)) + _4676[(_23170.y * 7u) + _23170.x];
+	                undetermined_3._m0[_20110 / 4u] = (_12887 ? ((_16038 >> uint(12)) & 15u) : (_16038 & 15u)) + _4676[(_23168.y * 7u) + _23168.x];
+	                undetermined_3._m0[(_20110 + 4u) / 4u] = (_12888 ? ((_16038 >> uint(16)) & 15u) : ((_16038 >> uint(4)) & 15u)) + _4676[(_23169.y * 7u) + _23169.x];
+	                undetermined_3._m0[(_20110 + 8u) / 4u] = (_12889 ? ((_16038 >> uint(20)) & 15u) : ((_16038 >> uint(8)) & 15u)) + _4676[(_23170.y * 7u) + _23170.x];
 	            }
 	            _3750 = _13040 + _4097;
 	            _13040 = _3750;
@@ -513,7 +544,7 @@ CS
 	            _5501 = 0u;
 	        }
 	        _4300 = _17017 + 1u;
-	        _13136 = _14716;
+	        _13137 = _14716;
 	        _16305 = _19764;
 	        _17133 = _13039;
 	        _17017 = _4300;

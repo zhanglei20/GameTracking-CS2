@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -37,7 +37,7 @@ CS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 3246 (name: WindControllerConstantBuffer_t), member index 0 (name: _m0) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
@@ -46,24 +46,24 @@ CS
 	#version 460
 	layout(local_size_x = 8, local_size_y = 8, local_size_z = 1) in;
 	
-	struct _310
+	struct _226
 	{
 	    vec4 _m0[4];
 	};
 	
-	struct _1968
+	struct _1716
 	{
 	    vec4 _m0;
-	    _310 _m1;
+	    _226 _m1;
 	    float _m2;
 	    float _m3;
 	};
 	
 	vec4 _4;
 	
-	struct _2183
+	struct _1679
 	{
-	    _1968 _m0;
+	    _1716 _m0;
 	    float _m1;
 	    float _m2;
 	    float _m3;
@@ -75,7 +75,7 @@ CS
 	    float _m9;
 	};
 	
-	layout(set = 0) uniform _2183 WindControllerConstantBuffer_t;
+	layout(set = 0) uniform _1679 WindControllerConstantBuffer_t;
 	
 	layout(set = 0, binding = 158) uniform writeonly image3D _4903;
 	

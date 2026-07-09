@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -95,7 +95,7 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 0 (name: g_vInputDimensions) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
@@ -105,7 +105,7 @@ PS
 	#extension GL_EXT_samplerless_texture_functions : require
 	
 	const float _378[2][2] = float[][](float[](0.25, 0.125), float[](0.125, 0.0625));
-	const float _2009[3] = float[](1.0, 0.666666686534881591796875, 0.16666667163372039794921875);
+	const float _1994[3] = float[](1.0, 0.666666686534881591796875, 0.16666667163372039794921875);
 	
 	struct _1104
 	{
@@ -246,7 +246,7 @@ PS
 	                {
 	                    _9364 = abs(_8858 - _3401.x) / _18186;
 	                }
-	                float _6029 = (exp((-max(0.0, _9364)) - max(0.0, abs(_12624 - dot(_19777.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))) / _7725)) * pow(clamp(dot(_12110, normalize(_8255)), 0.0, 1.0), _Globals_.g_fNormalPhi)) * (_2009[abs(_17017)] * _2009[abs(_17018)]);
+	                float _6029 = (exp((-max(0.0, _9364)) - max(0.0, abs(_12624 - dot(_19777.xyz, vec3(0.2125000059604644775390625, 0.7153999805450439453125, 0.07209999859333038330078125))) / _7725)) * pow(clamp(dot(_12110, normalize(_8255)), 0.0, 1.0), _Globals_.g_fNormalPhi)) * (_1994[abs(_17017)] * _1994[abs(_17018)]);
 	                _10913 = _13137 + _6029;
 	                _17551 = _16325 + vec4(_19777.xyz * _6029, _19777.w * (_6029 * _6029));
 	            }

@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -36,9 +36,9 @@ CS
 	int g_bIs16BitIB < Attribute("16BitIB"); UiType(Slider); >;
 	float g_flCompressMultiplier < Attribute("CompressMultiplier"); UiType(Slider); >;
 	float g_flStretchMultiplier < Attribute("StretchMultiplier"); UiType(Slider); >;
-	ByteAddressBuffer g_inputIB < Attribute("InputIB"); SrgbRead(false); >;
-	ByteAddressBuffer g_inputVB < Attribute("InputVB"); SrgbRead(false); >;
-	ByteAddressBuffer g_inputVertAliasInfo < Attribute("InputVertAliasInfo"); SrgbRead(false); >;
+	ByteAddressBuffer g_inputIB < Attribute("InputIB"); >;
+	ByteAddressBuffer g_inputVB < Attribute("InputVB"); >;
+	ByteAddressBuffer g_inputVertAliasInfo < Attribute("InputVertAliasInfo"); >;
 	int g_nAccumVBStartIndex < Attribute("TempBufferStartIndex"); UiType(Slider); >;
 	int g_nInputIndexOffset < Attribute("InputIBOffset"); UiType(Slider); >;
 	int g_nInputVertexSizeInBytes < Attribute("VertexSize"); UiType(Slider); >;
@@ -51,7 +51,7 @@ CS
 	RWByteAddressBuffer g_vertexCacheVB < Attribute("VertexCacheVB"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (4524 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (4508 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	cbuffer _Globals_ : register(b0, space0)
 	{
@@ -114,7 +114,7 @@ CS
 	        }
 	        else
 	        {
-	            _19017 = uint3(g_inputIB.Load(_6279 * 4 + 0), g_inputIB.Load(_6751 * 4 + 0), g_inputIB.Load((uint(int(_9848 + 8u)) / 4u) * 4 + 0));
+	            _19017 = uint3(g_inputIB.Load(_6279 * 4 + 0), g_inputIB.Load(_6751 * 4 + 0), g_inputIB.Load(((_9848 + 8u) / 4u) * 4 + 0));
 	        }
 	        uint _11276 = (_19017.x + _Globals_1_g_nVertexCacheStartIndex) * 24u;
 	        uint _6234 = undetermined.Load((_11276 / 4u) * 4 + 0);

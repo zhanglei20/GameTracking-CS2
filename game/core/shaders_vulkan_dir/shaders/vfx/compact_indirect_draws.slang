@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -35,7 +35,7 @@ CS
 	RWStructuredBuffer g_GlobalStats < Attribute("GlobalStats"); >;
 	Buffer g_Input < Attribute("InputDraws"); SrgbRead(false); >;
 	RWBuffer<float4> g_Output < Attribute("OutputDraws"); >;
-	StructuredBuffer g_Requests < Attribute("CompactionRequests"); SrgbRead(false); >;
+	StructuredBuffer g_Requests < Attribute("CompactionRequests"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (3000 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
@@ -46,10 +46,16 @@ CS
 	    uint _m1;
 	};
 	
+	struct _991
+	{
+	    uint _m0;
+	    uint _m1;
+	};
+	
 	ByteAddressBuffer g_Requests : register(t30, space0);
-	RWBuffer<uint> _3229 : register(u159, space0);
-	Buffer<uint4> undetermined : register(t31, space0);
+	Buffer<uint4> undetermined_unexpectedTypeId408_1045 : register(t31, space0);
 	RWBuffer<uint> _4783 : register(u158, space0);
+	RWBuffer<uint> _3229 : register(u159, space0);
 	
 	static uint3 gl_LocalInvocationID;
 	static uint3 gl_GlobalInvocationID;
@@ -63,12 +69,16 @@ CS
 	
 	void MainCs_inner()
 	{
-	    uint _24425 = g_Requests.Load(gl_GlobalInvocationID.x * 8 + 0);
-	    uint _19512 = _24425 >> uint(8);
-	    uint _23353 = g_Requests.Load(gl_GlobalInvocationID.x * 8 + 4);
-	    uint _6021 = _24425 & 255u;
-	    bool _20621 = gl_LocalInvocationID.y == 0u;
-	    if (_20621)
+	    _991 _8152;
+	    _8152._m0 = g_Requests.Load(gl_GlobalInvocationID.x * 8 + 0);
+	    _8152._m1 = g_Requests.Load(gl_GlobalInvocationID.x * 8 + 4);
+	    _990 _20228;
+	    _20228._m0 = _8152._m0;
+	    _20228._m1 = _8152._m1;
+	    uint _24796 = _20228._m0 >> uint(8);
+	    uint _6021 = _20228._m0 & 255u;
+	    bool _21645 = gl_LocalInvocationID.y == 0u;
+	    if (_21645)
 	    {
 	        _5866[gl_LocalInvocationID.x] = 0u;
 	    }
@@ -81,21 +91,21 @@ CS
 	        {
 	            break;
 	        }
-	        uint _18763 = (_19512 + _13039) * 5u;
-	        uint4 _8527 = undetermined.Load(int(_18763));
+	        uint _18763 = (_24796 + _13039) * 5u;
+	        uint4 _8527 = undetermined_unexpectedTypeId408_1045.Load(int(_18763));
 	        uint _7919 = _8527.x;
-	        uint4 _8603 = undetermined.Load(int(_18763 + 1u));
+	        uint4 _8603 = undetermined_unexpectedTypeId408_1045.Load(int(_18763 + 1u));
 	        uint _8120 = _8603.x;
 	        if ((_7919 * _8120) != 0u)
 	        {
-	            uint _3233;
-	            InterlockedAdd(_5866[gl_LocalInvocationID.x], 1u, _3233);
-	            uint _25189 = (_23353 + _3233) * 5u;
+	            uint _8060;
+	            InterlockedAdd(_5866[gl_LocalInvocationID.x], 1u, _8060);
+	            uint _25189 = (_20228._m1 + _8060) * 5u;
 	            _4783[_25189] = _7919.x;
 	            _4783[_25189 + 1u] = _8120.x;
-	            _4783[_25189 + 2u] = undetermined.Load(int(_18763 + 2u)).x.x;
-	            _4783[_25189 + 3u] = undetermined.Load(int(_18763 + 3u)).x.x;
-	            _4783[_25189 + 4u] = undetermined.Load(int(_18763 + 4u)).x.x;
+	            _4783[_25189 + 2u] = undetermined_unexpectedTypeId408_1045.Load(int(_18763 + 2u)).x.x;
+	            _4783[_25189 + 3u] = undetermined_unexpectedTypeId408_1045.Load(int(_18763 + 3u)).x.x;
+	            _4783[_25189 + 4u] = undetermined_unexpectedTypeId408_1045.Load(int(_18763 + 4u)).x.x;
 	        }
 	        _4283 = _13039 + 16u;
 	        _13039 = _4283;
@@ -103,7 +113,7 @@ CS
 	    }
 	    GroupMemoryBarrierWithGroupSync();
 	    bool _12885;
-	    if (_20621)
+	    if (_21645)
 	    {
 	        _12885 = _6021 != 0u;
 	    }
@@ -113,7 +123,7 @@ CS
 	    }
 	    if (_12885)
 	    {
-	        _3229[_23353] = _5866[gl_LocalInvocationID.x].x;
+	        _3229[_20228._m1] = _5866[gl_LocalInvocationID.x].x;
 	    }
 	}
 	

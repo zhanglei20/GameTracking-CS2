@@ -7,7 +7,7 @@ HEADER
 	DevShader = false;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: cs
 }
@@ -50,7 +50,7 @@ CS
 	float2 g_vInvSrcSize < Attribute("InvSrcSize"); UiType(VectorText); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (3132 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (3116 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	cbuffer _Globals_ : register(b0, space0)
 	{
@@ -71,7 +71,7 @@ CS
 	
 	void MainCs_inner()
 	{
-	    int2 _5754 = (int2(uint2((((gl_LocalInvocationID.x) & 1u) | (((gl_LocalInvocationID.x >> uint(3)) & 3u) << uint(1))) | (((gl_LocalInvocationID.x >> uint(7)) & 1u) << uint(3)), ((gl_LocalInvocationID.x >> uint(1)) & 3u) | (((gl_LocalInvocationID.x >> uint(5)) & 3u) << uint(2)))) * int2(4, 4)) + int2(gl_WorkGroupID.xy * uint2(64u, 64u));
+	    int2 _5754 = (int2(uint2(((gl_LocalInvocationID.x & 1u) | (((gl_LocalInvocationID.x >> uint(3)) & 3u) << uint(1))) | (((gl_LocalInvocationID.x >> uint(7)) & 1u) << uint(3)), ((gl_LocalInvocationID.x >> uint(1)) & 3u) | (((gl_LocalInvocationID.x >> uint(5)) & 3u) << uint(2)))) * int2(4, 4)) + int2(gl_WorkGroupID.xy * uint2(64u, 64u));
 	    float2 _11517 = float2(_5754) * _Globals_1_g_vInvSrcSize;
 	    float4 _24999 = g_tSrcDepth.GatherRed(AddressU_Clamp_AddressV_Clamp_AllowGlobalMipBiasOverride_0_Filter_MinMagMipPoint, _11517, int2(1, 1));
 	    float4 _25000 = g_tSrcDepth.GatherRed(AddressU_Clamp_AddressV_Clamp_AllowGlobalMipBiasOverride_0_Filter_MinMagMipPoint, _11517, int2(3, 1));

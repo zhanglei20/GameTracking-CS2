@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -98,7 +98,7 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (2540 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	struct _2998
+	struct _239
 	{
 	    float4 _m0[256];
 	};
@@ -106,7 +106,7 @@ PS
 	cbuffer Dof2CBParams_t : register(b1, space1)
 	{
 	    float Dof2CBParams_t_1_m0 : packoffset(c1.y);
-	    _2998 Dof2CBParams_t_1_m1 : packoffset(c3);
+	    _239 Dof2CBParams_t_1_m1 : packoffset(c3);
 	    int Dof2CBParams_t_1_m2 : packoffset(c259);
 	};
 	

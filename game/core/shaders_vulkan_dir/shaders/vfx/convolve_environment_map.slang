@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_41
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -41,7 +41,7 @@ VS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// cbuffer ID 5618 (name: _Globals_), member index 1 (name: g_vMatRow1) cannot be expressed with either HLSL packing layout or packoffset.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
@@ -86,7 +86,7 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (2524 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	struct _365
+	struct _71
 	{
 	    float4 _m0[2048];
 	};
@@ -98,8 +98,8 @@ PS
 	
 	cbuffer FilterTapConstantBuffer_t : register(b2, space1)
 	{
-	    _365 FilterTapConstantBuffer_t_1_m0 : packoffset(c0);
-	    _365 FilterTapConstantBuffer_t_1_m1 : packoffset(c2048);
+	    _71 FilterTapConstantBuffer_t_1_m0 : packoffset(c0);
+	    _71 FilterTapConstantBuffer_t_1_m1 : packoffset(c2048);
 	};
 	
 	TextureCube<float4> g_tCubemap : register(t30, space1);

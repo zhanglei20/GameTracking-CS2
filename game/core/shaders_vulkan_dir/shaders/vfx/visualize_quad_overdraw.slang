@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -80,12 +80,12 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (2872 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	cbuffer _Globals_ : register(b0, space1)
+	cbuffer PerViewConstantBuffer_t : register(b0, space1)
 	{
-	    float4 _Globals_1_m0 : packoffset(c22);
+	    float4 PerViewConstantBuffer_t_1_m0 : packoffset(c22);
 	};
 	
-	Texture2D<uint4> g_tQuadOverdrawUAV_unexpectedTypeId404_1041 : register(t30, space1);
+	Texture2D<uint4> g_tQuadOverdrawUAV : register(t30, space1);
 	
 	static float4 gl_FragCoord;
 	static float4 output_0;
@@ -103,7 +103,7 @@ PS
 	void MainPs_inner()
 	{
 	    float4 _21709;
-	    switch (g_tQuadOverdrawUAV_unexpectedTypeId404_1041.Load(int3(uint2(gl_FragCoord.xy * 0.5f.xx), 0)).x)
+	    switch (g_tQuadOverdrawUAV.Load(int3(uint2(gl_FragCoord.xy * 0.5f.xx), 0)).x)
 	    {
 	        case 0u:
 	        {
@@ -161,7 +161,7 @@ PS
 	            break;
 	        }
 	    }
-	    float2 _21065 = gl_FragCoord.xy * _Globals_1_m0.xy;
+	    float2 _21065 = gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy;
 	    float2 _12444 = _21065.xy;
 	    bool _12885;
 	    if (all(bool2(_12444.x > float2(0.100000001490116119384765625f, 0.89999997615814208984375f).x, _12444.y > float2(0.100000001490116119384765625f, 0.89999997615814208984375f).y)))

@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -117,12 +117,12 @@ PS
 	    int _Globals_1_g_ArrayArrayIndex : packoffset(c1.z);
 	};
 	
-	Texture2DArray<float4> g_texArray_unexpectedTypeId470_1107 : register(t32, space1);
-	SamplerState Filter_MinMagMipLinear : register(s16, space1);
+	Texture2D<float4> g_tex2D : register(t30, space1);
+	SamplerState Filter_MinMagMipLinear : register(s14, space1);
 	Texture3D<float4> g_tex3D : register(t31, space1);
 	SamplerState Filter_MinMagMipLinear_1 : register(s15, space1);
-	Texture2D<float4> g_tex2D : register(t30, space1);
-	SamplerState Filter_MinMagMipLinear_2 : register(s14, space1);
+	Texture2DArray<float4> g_texArray : register(t32, space1);
+	SamplerState Filter_MinMagMipLinear_2 : register(s16, space1);
 	
 	static float2 input_0;
 	static float4 input_1;
@@ -144,7 +144,7 @@ PS
 	    float4 _21709;
 	    if (_Globals_1_g_nTexType == 0)
 	    {
-	        _21709 = g_tex2D.Sample(Filter_MinMagMipLinear_2, input_0.xy);
+	        _21709 = g_tex2D.Sample(Filter_MinMagMipLinear, input_0.xy);
 	    }
 	    else
 	    {
@@ -158,7 +158,7 @@ PS
 	            float4 _12501;
 	            if (_Globals_1_g_nTexType == 2)
 	            {
-	                _12501 = g_texArray_unexpectedTypeId470_1107.Sample(Filter_MinMagMipLinear, float3(input_0.xy, float(_Globals_1_g_ArrayArrayIndex)).xyz);
+	                _12501 = g_texArray.Sample(Filter_MinMagMipLinear_2, float3(input_0.xy, float(_Globals_1_g_ArrayArrayIndex)).xyz);
 	            }
 	            else
 	            {

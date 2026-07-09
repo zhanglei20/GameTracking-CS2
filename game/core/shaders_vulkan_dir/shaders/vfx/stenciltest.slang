@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -79,7 +79,7 @@ PS
 	// Source 2 Viewer - https://valveresourceformat.github.io
 	// SPIR-V source (772 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	Texture2D<uint4> g_tStencilTexture_unexpectedTypeId404_1041 : register(t30, space1);
+	Texture2D<uint4> g_tStencilTexture : register(t30, space1);
 	
 	static float4 gl_FragCoord;
 	static float4 output_0;
@@ -96,7 +96,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = float4(float(g_tStencilTexture_unexpectedTypeId404_1041.Load(int3(int3(int2(gl_FragCoord.xy), 0).xy, 0)).x) * 0.0039215688593685626983642578125f, 0.0f, 0.0f, 1.0f);
+	    output_0 = float4(float(g_tStencilTexture.Load(int3(int3(int2(gl_FragCoord.xy), 0).xy, 0)).x) * 0.0039215688593685626983642578125f, 0.0f, 0.0f, 1.0f);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

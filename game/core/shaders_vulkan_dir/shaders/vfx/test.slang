@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_60
 	// Programs: gs, ms, ps, vs
 }
@@ -33,15 +33,13 @@ COMMON
 MS
 {
 	StaticCombo( S_GS_FORCE_ENABLE, F_GS_FORCE_ENABLE );
-	StaticCombo( S_MOBILE, 0..1 );
 	DynamicCombo( D_GS_TEST, 0, Sys( 0 ) );
 	DynamicCombo( D_MS_TEST, 0..1 );
 	
 	ExternalDescriptorSet ExtTestDescSet < Source(ExternalDescSet); Attribute("ExtTestDescSet"); >;
-	ByteAddressBuffer g_inputVB < Source(ExternalDescSet); SrgbRead(false); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2476 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2492 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	// Dynamic combos: D_MS_TEST
 	
 	static float _4;
@@ -68,14 +66,14 @@ MS
 	void MainMs_inner(inout gl_MeshPerVertexEXT gl_MeshVerticesEXT[4], inout uint3 gl_PrimitiveTriangleIndicesEXT[2])
 	{
 	    SetMeshOutputCounts(4u, 2u);
-	    uint _6392 = gl_GlobalInvocationID.x * 36u;
-	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_0.x = asfloat(g_inputVB.Load(((_6392 + 12u) / 4u) * 4 + 0));
-	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_0.y = asfloat(g_inputVB.Load(((_6392 + 16u) / 4u) * 4 + 0));
-	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_0.z = asfloat(g_inputVB.Load(((_6392 + 20u) / 4u) * 4 + 0));
-	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_1.x = asfloat(g_inputVB.Load(((_6392 + 28u) / 4u) * 4 + 0));
-	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_1.y = asfloat(g_inputVB.Load(((_6392 + 32u) / 4u) * 4 + 0));
-	    float4 _15926 = float4(asfloat(g_inputVB.Load((_6392 / 4u) * 4 + 0)), _4, asfloat(g_inputVB.Load(((_6392 + 8u) / 4u) * 4 + 0)), 1.0f);
-	    _15926.y = asfloat(g_inputVB.Load(((_6392 + 4u) / 4u) * 4 + 0));
+	    uint _11265 = gl_GlobalInvocationID.x * 36u;
+	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_0.x = asfloat(g_inputVB.Load(((_11265 + 12u) / 4u) * 4 + 0));
+	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_0.y = asfloat(g_inputVB.Load(((_11265 + 16u) / 4u) * 4 + 0));
+	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_0.z = asfloat(g_inputVB.Load(((_11265 + 20u) / 4u) * 4 + 0));
+	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_1.x = asfloat(g_inputVB.Load(((_11265 + 28u) / 4u) * 4 + 0));
+	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].output_1.y = asfloat(g_inputVB.Load(((_11265 + 32u) / 4u) * 4 + 0));
+	    float4 _15926 = float4(asfloat(g_inputVB.Load((_11265 / 4u) * 4 + 0)), _4, asfloat(g_inputVB.Load(((_11265 + 8u) / 4u) * 4 + 0)), 1.0f);
+	    _15926.y = asfloat(g_inputVB.Load(((_11265 + 4u) / 4u) * 4 + 0));
 	    gl_MeshVerticesEXT[gl_GlobalInvocationID.x].gl_Position = _15926;
 	    if (gl_GlobalInvocationID.x == 0u)
 	    {
@@ -113,7 +111,6 @@ struct VS_INPUT
 VS
 {
 	StaticCombo( S_GS_FORCE_ENABLE, F_GS_FORCE_ENABLE );
-	StaticCombo( S_MOBILE, 0..1 );
 	DynamicCombo( D_GS_TEST, 0..1 );
 	DynamicCombo( D_MS_TEST, 0, Sys( 0 ) );
 	
@@ -171,7 +168,6 @@ VS
 GS
 {
 	StaticCombo( S_GS_FORCE_ENABLE, F_GS_FORCE_ENABLE );
-	StaticCombo( S_MOBILE, 0..1 );
 	DynamicCombo( D_GS_TEST, 0..1 );
 	DynamicCombo( D_MS_TEST, 0..1 );
 	
@@ -179,11 +175,11 @@ GS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// Unsupported shader stage.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2152 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (1756 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	// Static combos: S_GS_FORCE_ENABLE
 	// Dynamic combos: D_GS_TEST
 	
@@ -203,13 +199,6 @@ GS
 	layout(triangles) in;
 	layout(max_vertices = 3, triangle_strip) out;
 	
-	struct _1109
-	{
-	    vec4 _m0;
-	    vec3 _m1;
-	    vec2 _m2;
-	};
-	
 	struct _985
 	{
 	    float _m0;
@@ -225,7 +214,6 @@ GS
 	
 	void main()
 	{
-	    _1109 _19582[3] = _1109[](_1109(input_0[0], input_1[0], input_2[0]), _1109(input_0[1], input_1[1], input_2[1]), _1109(input_0[2], input_1[2], input_2[2]));
 	    vec4 _25074 = ((input_0[0] + input_0[1]) + input_0[2]).xyzw * vec4(0.3333333432674407958984375);
 	    float _11735 = (0.5 * ExternalTestCB1._m0) + 0.5;
 	    int _7155;
@@ -237,11 +225,11 @@ GS
 	        {
 	            break;
 	        }
-	        vec4 _14141 = mix(_25074, _19582[_13039]._m0, vec4((0.300000011920928955078125 * _11735) + 0.699999988079071044921875));
-	        output_0 = _19582[_13039]._m1;
-	        output_1 = _19582[_13039]._m2;
-	        _14141.y = -_14141.y;
-	        gl_Position = _14141;
+	        vec4 _17221 = mix(_25074, input_0[_13039], vec4((0.300000011920928955078125 * _11735) + 0.699999988079071044921875));
+	        output_0 = input_1[_13039];
+	        output_1 = input_2[_13039];
+	        _17221.y = -_17221.y;
+	        gl_Position = _17221;
 	        EmitVertex();
 	        _7155 = _13039 + 1;
 	        _13039 = _7155;
@@ -270,7 +258,6 @@ PS
 	float g_flPinch < Default(1); UiType(Slider); >;
 	int g_nValue < UiType(Slider); >;
 	Texture2D g_tColor < Channel(RGB, Box(TextureColor), Srgb); OutputFormat(DXT1); SrgbRead(true); >;
-	Texture2D g_tDescSetTest < Source(ExternalDescSet); SrgbRead(false); >;
 	float3 g_vModulationColor2 < Default(0); UiType(Color); >;
 	float3 g_vModulationColor3 < Default3(1, 1, 0.5); UiType(Color); >;
 	
@@ -279,7 +266,7 @@ PS
 	
 	// SPIR-V reflection failed for backend HLSL:
 	// Only Logical addressing model can be used with HLSL.
-	// 
+	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io

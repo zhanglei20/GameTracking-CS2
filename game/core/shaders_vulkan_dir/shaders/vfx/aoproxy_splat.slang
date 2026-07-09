@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 1;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -38,7 +38,7 @@ VS
 	cbuffer PerViewConstantBuffer_t < Attribute("PerViewConstantBuffer_t"); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (3424 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (2820 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	struct _2817
 	{
@@ -50,11 +50,6 @@ VS
 	    int4 _m0[20];
 	};
 	
-	struct _2691
-	{
-	    float4 _m0[4];
-	};
-	
 	cbuffer AoProxyConstantBuffer_t : register(b1, space0)
 	{
 	    _2817 AoProxyConstantBuffer_t_1_m0 : packoffset(c5);
@@ -63,11 +58,11 @@ VS
 	    _2697 AoProxyConstantBuffer_t_1_m3 : packoffset(c65);
 	};
 	
-	cbuffer _Globals_ : register(b0, space0)
+	cbuffer PerViewConstantBuffer_t : register(b0, space0)
 	{
-	    _2691 _Globals_1_m0 : packoffset(c0);
-	    float4 _Globals_1_m1 : packoffset(c24);
-	    float3 _Globals_1_m2 : packoffset(c26);
+	    column_major float4x4 PerViewConstantBuffer_t_1_m0 : packoffset(c0);
+	    float4 PerViewConstantBuffer_t_1_m1 : packoffset(c24);
+	    float3 PerViewConstantBuffer_t_1_m2 : packoffset(c26);
 	};
 	
 	
@@ -107,15 +102,15 @@ VS
 	{
 	    uint _24589 = uint(gl_InstanceIndex - gl_BaseInstanceARB);
 	    float3 _9948 = lerp(AoProxyConstantBuffer_t_1_m0._m0[_24589].xyz, AoProxyConstantBuffer_t_1_m1._m0[_24589].xyz, vPositionOs.xyz * 2.0f).xyz;
-	    float4 _23609 = mul(float4x4(float4(_Globals_1_m0._m0[0].x, _Globals_1_m0._m0[1].x, _Globals_1_m0._m0[2].x, _Globals_1_m0._m0[3].x), float4(_Globals_1_m0._m0[0].y, _Globals_1_m0._m0[1].y, _Globals_1_m0._m0[2].y, _Globals_1_m0._m0[3].y), float4(_Globals_1_m0._m0[0].z, _Globals_1_m0._m0[1].z, _Globals_1_m0._m0[2].z, _Globals_1_m0._m0[3].z), float4(_Globals_1_m0._m0[0].w, _Globals_1_m0._m0[1].w, _Globals_1_m0._m0[2].w, _Globals_1_m0._m0[3].w)), (float4(_9948, 1.0f) + (_Globals_1_m1 * 1.0f)).xyzw);
+	    float4 _17971 = mul(PerViewConstantBuffer_t_1_m0, (float4(_9948, 1.0f) + (PerViewConstantBuffer_t_1_m1 * 1.0f)).xyzw);
 	    float3 _23026 = 2.0f.xxx / (AoProxyConstantBuffer_t_1_m1._m0[_24589].xyz - AoProxyConstantBuffer_t_1_m0._m0[_24589].xyz);
 	    output_0 = float4(((AoProxyConstantBuffer_t_1_m0._m0[_24589].xyz + AoProxyConstantBuffer_t_1_m1._m0[_24589].xyz) * (-0.5f)) * _23026.xyz, AoProxyConstantBuffer_t_1_m2._m0[_24589].x);
 	    output_1 = _23026;
-	    output_2 = _9948 - _Globals_1_m2.xyz;
+	    output_2 = _9948 - PerViewConstantBuffer_t_1_m2.xyz;
 	    output_3 = AoProxyConstantBuffer_t_1_m1._m0[_24589].w;
 	    output_4 = uint3(AoProxyConstantBuffer_t_1_m3._m0[_24589].xyz);
-	    _23609.y = -_23609.y;
-	    gl_Position = _23609;
+	    _17971.y = -_17971.y;
+	    gl_Position = _17971;
 	}
 	
 	PS_INPUT MainVs(VS_INPUT stage_input)
@@ -152,43 +147,38 @@ PS
 	CreateInputTexture2D(TextureAoConeLUT, Linear, 8, "", "_lut_z000", "LUT", Default4(1, 1, 1, 0));
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (9696 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (8780 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
-	struct _1276
+	struct _2704
 	{
 	    float4 _m0[4];
 	};
 	
-	struct _2646
+	struct _1413
 	{
-	    float4 _m0[3];
+	    column_major float4x3 _m0[106];
 	};
 	
-	struct _532
-	{
-	    _2646 _m0[106];
-	};
-	
-	struct _2688
+	struct _2520
 	{
 	    float4 _m0[106];
 	};
 	
-	cbuffer _Globals_ : register(b0, space1)
+	cbuffer PerViewConstantBuffer_t : register(b0, space1)
 	{
-	    float4 _Globals_1_m0 : packoffset(c16);
-	    float _Globals_1_m1 : packoffset(c23);
-	    float _Globals_1_m2 : packoffset(c23.y);
-	    float3 _Globals_1_m3 : packoffset(c26);
-	    float3 _Globals_1_m4 : packoffset(c28);
+	    float4 PerViewConstantBuffer_t_1_m0 : packoffset(c16);
+	    float PerViewConstantBuffer_t_1_m1 : packoffset(c23);
+	    float PerViewConstantBuffer_t_1_m2 : packoffset(c23.y);
+	    float3 PerViewConstantBuffer_t_1_m3 : packoffset(c26);
+	    float3 PerViewConstantBuffer_t_1_m4 : packoffset(c28);
 	};
 	
 	cbuffer AoProxyConstantBuffer_t : register(b1, space1)
 	{
-	    _1276 AoProxyConstantBuffer_t_1_m0 : packoffset(c0);
+	    _2704 AoProxyConstantBuffer_t_1_m0 : packoffset(c0);
 	    float4 AoProxyConstantBuffer_t_1_m1 : packoffset(c4);
-	    _532 AoProxyConstantBuffer_t_1_m2 : packoffset(c85);
-	    _2688 AoProxyConstantBuffer_t_1_m3 : packoffset(c403);
+	    _1413 AoProxyConstantBuffer_t_1_m2 : packoffset(c85);
+	    _2520 AoProxyConstantBuffer_t_1_m3 : packoffset(c403);
 	};
 	
 	Texture2D<float4> g_tSceneDepth : register(t31, space1);
@@ -220,7 +210,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float3 _10889 = (_Globals_1_m3.xyz + (input_1.xyz * (1.0f / (((clamp((g_tSceneDepth.Load(int3(int3(int2(gl_FragCoord.xy).xy, 0).xy, 0)).x - _Globals_1_m1) / (_Globals_1_m2 - _Globals_1_m1), 0.0f, 1.0f) * _Globals_1_m0.z) + _Globals_1_m0.w) * dot(_Globals_1_m4.xyz, input_1.xyz))))).xyz;
+	    float3 _10889 = (PerViewConstantBuffer_t_1_m3.xyz + (input_1.xyz * (1.0f / (((clamp((g_tSceneDepth.Load(int3(int3(int2(gl_FragCoord.xy).xy, 0).xy, 0)).x - PerViewConstantBuffer_t_1_m1) / (PerViewConstantBuffer_t_1_m2 - PerViewConstantBuffer_t_1_m1), 0.0f, 1.0f) * PerViewConstantBuffer_t_1_m0.z) + PerViewConstantBuffer_t_1_m0.w) * dot(PerViewConstantBuffer_t_1_m4.xyz, input_1.xyz))))).xyz;
 	    float3 _11842 = mad(_10889, input_2.xyz, input_3.xyz);
 	    float3 _3852 = 1.0f.xxx - abs(_11842);
 	    float _4208 = clamp(3.0f * min(_3852.x, min(_3852.y, _3852.z)), 0.0f, 1.0f) * clamp(2.7999999523162841796875f - (2.0f * length(_11842)), 0.0f, 1.0f);
@@ -241,12 +231,11 @@ PS
 	        {
 	            break;
 	        }
-	        float4x3 _21989 = float4x3(float3(AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[0].x, AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[1].x, AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[2].x), float3(AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[0].y, AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[1].y, AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[2].y), float3(AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[0].z, AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[1].z, AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[2].z), float3(AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[0].w, AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[1].w, AoProxyConstantBuffer_t_1_m2._m0[_16208]._m0[2].w));
-	        float3 _17090 = mul(float4(_10889, 1.0f), _21989);
-	        float3 _17194 = _17090.xyz;
-	        float _8132 = rsqrt(dot(_17194, _17194));
-	        float3 _16478 = (_17090.xyz * (-_8132)).xyz;
-	        _16164 = _13155.xyzw * float4(g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[0].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.x)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[1].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.y)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[2].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.z)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[3].xyzw, _21989).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.w)).x).xyzw;
+	        float3 _7095 = mul(float4(_10889, 1.0f), AoProxyConstantBuffer_t_1_m2._m0[_16208]);
+	        float3 _11556 = _7095.xyz;
+	        float _8132 = rsqrt(dot(_11556, _11556));
+	        float3 _16478 = (_7095.xyz * (-_8132)).xyz;
+	        _16164 = _13155.xyzw * float4(g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[0].xyzw, AoProxyConstantBuffer_t_1_m2._m0[_16208]).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.x)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[1].xyzw, AoProxyConstantBuffer_t_1_m2._m0[_16208]).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.y)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[2].xyzw, AoProxyConstantBuffer_t_1_m2._m0[_16208]).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.z)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[3].xyzw, AoProxyConstantBuffer_t_1_m2._m0[_16208]).xyz).xyz, _16478), 0.5f, 0.5f), _8132, AoProxyConstantBuffer_t_1_m1.w)).x).xyzw;
 	        _21531 = _16208 + 1;
 	        _13155 = _16164;
 	        _16208 = _21531;
@@ -264,13 +253,12 @@ PS
 	        {
 	            break;
 	        }
-	        float4x3 _21990 = float4x3(float3(AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[0].x, AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[1].x, AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[2].x), float3(AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[0].y, AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[1].y, AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[2].y), float3(AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[0].z, AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[1].z, AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[2].z), float3(AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[0].w, AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[1].w, AoProxyConstantBuffer_t_1_m2._m0[_16209]._m0[2].w));
-	        float3 _15779 = mul(float4(_10889, 1.0f), _21990);
-	        float3 _20220 = (clamp(_15779.xyz, -AoProxyConstantBuffer_t_1_m3._m0[_16209].xyz, AoProxyConstantBuffer_t_1_m3._m0[_16209].xyz) * 0.89999997615814208984375f) - _15779.xyz;
+	        float3 _24855 = mul(float4(_10889, 1.0f), AoProxyConstantBuffer_t_1_m2._m0[_16209]);
+	        float3 _20220 = (clamp(_24855.xyz, -AoProxyConstantBuffer_t_1_m3._m0[_16209].xyz, AoProxyConstantBuffer_t_1_m3._m0[_16209].xyz) * 0.89999997615814208984375f) - _24855.xyz;
 	        float3 _10134 = abs(_20220);
 	        float _23212 = 1.0f / (1.0f + (dot(_10134 / ((_10134.x + _10134.y) + _10134.z).xxx, 3.1415927410125732421875f.xxx / (AoProxyConstantBuffer_t_1_m3._m0[_16209].yzx * AoProxyConstantBuffer_t_1_m3._m0[_16209].zxy).xyz) * length(_20220)));
 	        float3 _16479 = normalize(_20220).xyz;
-	        _16165 = _13156.xyzw * float4(g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[0].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.x)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[1].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.y)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[2].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.z)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[3].xyzw, _21990).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.w)).x).xyzw;
+	        _16165 = _13156.xyzw * float4(g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[0].xyzw, AoProxyConstantBuffer_t_1_m2._m0[_16209]).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.x)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[1].xyzw, AoProxyConstantBuffer_t_1_m2._m0[_16209]).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.y)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[2].xyzw, AoProxyConstantBuffer_t_1_m2._m0[_16209]).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.z)).x, g_tTextureAoConeLUT.Sample(AddressU_Clamp_AddressV_Clamp_AddressW_Clamp_Filter_MinMagLinearMipPoint, float3(mad(dot(normalize(mul(AoProxyConstantBuffer_t_1_m0._m0[3].xyzw, AoProxyConstantBuffer_t_1_m2._m0[_16209]).xyz).xyz, _16479), 0.5f, 0.5f), _23212, AoProxyConstantBuffer_t_1_m1.w)).x).xyzw;
 	        _21532 = _16209 + 1;
 	        _13156 = _16165;
 	        _16209 = _21532;

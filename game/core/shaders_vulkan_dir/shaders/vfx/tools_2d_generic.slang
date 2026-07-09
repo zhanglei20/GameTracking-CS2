@@ -7,8 +7,8 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
-	// Platform: VULKAN_SM_40
+	// VcsVersion: 71
+	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
 
@@ -98,14 +98,14 @@ PS
 	Texture2D<float4> g_tColorTexture : register(t30, space1);
 	SamplerState AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear : register(s14, space1);
 	
-	static float2 input_0;
-	static float4 input_1;
+	static float4 input_0;
+	static float2 input_1;
 	static float4 output_0;
 	
 	struct PS_INPUT
 	{
-	    float4 input_1 : TEXCOORD0;
-	    float2 input_0 : TEXCOORD1;
+	    float4 input_0 : TEXCOORD0;
+	    float2 input_1 : TEXCOORD1;
 	};
 	
 	struct PS_OUTPUT
@@ -115,7 +115,7 @@ PS
 	
 	void MainPs_inner()
 	{
-	    output_0 = input_1 * g_tColorTexture.Sample(AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear, input_0.xy);
+	    output_0 = input_0 * g_tColorTexture.Sample(AddressU_Clamp_AddressV_Clamp_Filter_MinMagMipLinear, input_1.xy);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

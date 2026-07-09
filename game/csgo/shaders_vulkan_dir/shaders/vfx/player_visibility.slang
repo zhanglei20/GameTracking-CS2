@@ -7,7 +7,7 @@ HEADER
 	DevShader = true;
 	Version = 0;
 	
-	// VcsVersion: 70
+	// VcsVersion: 71
 	// Platform: VULKAN_SM_50
 	// Programs: ps, vs
 }
@@ -96,10 +96,10 @@ PS
 	    float _Globals_1_g_flPlayerVisStrength : packoffset(c0);
 	};
 	
-	Texture2D<float4> g_tDataColor : register(t31, space1);
-	SamplerState Filter_MinMagLinearMipPoint : register(s15, space1);
 	Texture2D<float4> g_tWithPlayers : register(t30, space1);
-	SamplerState Filter_MinMagLinearMipPoint_1 : register(s14, space1);
+	SamplerState Filter_MinMagLinearMipPoint : register(s14, space1);
+	Texture2D<float4> g_tDataColor : register(t31, space1);
+	SamplerState Filter_MinMagLinearMipPoint_1 : register(s15, space1);
 	
 	static float4 gl_FragCoord;
 	static float4 output_0;
@@ -178,11 +178,11 @@ PS
 	            float4 _20506 = float4(-3.5f, -1.5f, 1.5f, 2.5f);
 	            float4 _23892 = float4(-3.5f, -1.5f, 1.5f, 2.5f);
 	            float2 _12974 = (_21103.xy + (float2(_20506[_17017], _23892[_17018]) * PerViewConstantBuffer_t_1_m0.xy)).xy;
-	            float4 _18109 = g_tDataColor.Sample(Filter_MinMagLinearMipPoint, _12974);
+	            float4 _18109 = g_tDataColor.Sample(Filter_MinMagLinearMipPoint_1, _12974);
 	            float _23523 = _18109.x;
 	            float _17655 = step(9.9999997473787516355514526367188e-06f, _23523);
 	            _3716 = _17123 + (_17655 * _2034[(_17017 * 4) + _17018]);
-	            float3 _23291 = g_tWithPlayers.Sample(Filter_MinMagLinearMipPoint_1, _12974).xyz;
+	            float3 _23291 = g_tWithPlayers.Sample(Filter_MinMagLinearMipPoint, _12974).xyz;
 	            _6508 = _17122.xyz + (_23291 * (1.0f - _17655));
 	            _22803 = _17121.xyz + (_23291 * _17655);
 	            _17524 = max(_17120, _18109.y);
@@ -218,16 +218,16 @@ PS
 	    float3 _7136 = _17117.xyz / max(1.0f, 16.0f - _17118).xxx;
 	    float _14232 = min(min(1.0f, _17118), 1.0f - _17116);
 	    float2 _8764 = _21103.xy;
-	    float4 _19372 = g_tDataColor.Sample(Filter_MinMagLinearMipPoint, _8764);
+	    float4 _19372 = g_tDataColor.Sample(Filter_MinMagLinearMipPoint_1, _8764);
 	    float _16000 = _19372.x;
-	    float4 _19680 = g_tWithPlayers.Sample(Filter_MinMagLinearMipPoint_1, _8764);
+	    float4 _3401 = g_tWithPlayers.Sample(Filter_MinMagLinearMipPoint, _8764);
 	    float _7796 = dot(_7136.xyz, float3(0.2125000059604644775390625f, 0.7153999805450439453125f, 0.07209999859333038330078125f));
 	    float _12193 = dot(_6923.xyz, float3(0.2125000059604644775390625f, 0.7153999805450439453125f, 0.07209999859333038330078125f));
 	    float _4884 = _7796 - _12193;
 	    float3 _22537 = _7136.xyz;
 	    float _14451 = step(9.9999997473787516355514526367188e-06f, _16000);
-	    float _5998 = (float(min(min(min(min(_16000, g_tDataColor.Sample(Filter_MinMagLinearMipPoint, float2(_16123 + PerViewConstantBuffer_t_1_m0.x, _25068).xy).x), g_tDataColor.Sample(Filter_MinMagLinearMipPoint, float2(_16123 - PerViewConstantBuffer_t_1_m0.x, _25068).xy).x), g_tDataColor.Sample(Filter_MinMagLinearMipPoint, float2(_16123, _25068 + PerViewConstantBuffer_t_1_m0.y).xy).x), g_tDataColor.Sample(Filter_MinMagLinearMipPoint, float2(_16123, _25068 - PerViewConstantBuffer_t_1_m0.y).xy).x) == 0.0f) * _14451) * _14232;
-	    float3 _14188 = lerp(lerp(lerp(_22537, max(0.0f.xxx, (normalize(max(_22537, 0.001000000047497451305389404296875f.xxx)) * ((_7796 + max(0.0f, _4884 * 4.0f)) + min(0.0f, _4884 * 2.0f))).xyz).xyz, (((lerp(_17115 * _17115, 1.0f, _17114 * _14232) * pow(1.0f - clamp(abs(_4884) * smoothstep(0.699999988079071044921875f, 0.25f, _7796 * _12193), 0.0f, 1.0f), 8.0f)) * _Globals_1_g_flPlayerVisStrength) * _14232).xxx), _19680.xyz, max(_14451, _5998).xxx), _19680.xyz + (((_6923.xyz - _22537) * 0.25f) * _Globals_1_g_flPlayerVisStrength), _5998.xxx);
+	    float _5998 = (float(min(min(min(min(_16000, g_tDataColor.Sample(Filter_MinMagLinearMipPoint_1, float2(_16123 + PerViewConstantBuffer_t_1_m0.x, _25068).xy).x), g_tDataColor.Sample(Filter_MinMagLinearMipPoint_1, float2(_16123 - PerViewConstantBuffer_t_1_m0.x, _25068).xy).x), g_tDataColor.Sample(Filter_MinMagLinearMipPoint_1, float2(_16123, _25068 + PerViewConstantBuffer_t_1_m0.y).xy).x), g_tDataColor.Sample(Filter_MinMagLinearMipPoint_1, float2(_16123, _25068 - PerViewConstantBuffer_t_1_m0.y).xy).x) == 0.0f) * _14451) * _14232;
+	    float3 _14188 = lerp(lerp(lerp(_22537, max(0.0f.xxx, (normalize(max(_22537, 0.001000000047497451305389404296875f.xxx)) * ((_7796 + max(0.0f, _4884 * 4.0f)) + min(0.0f, _4884 * 2.0f))).xyz).xyz, (((lerp(_17115 * _17115, 1.0f, _17114 * _14232) * pow(1.0f - clamp(abs(_4884) * smoothstep(0.699999988079071044921875f, 0.25f, _7796 * _12193), 0.0f, 1.0f), 8.0f)) * _Globals_1_g_flPlayerVisStrength) * _14232).xxx), _3401.xyz, max(_14451, _5998).xxx), _3401.xyz + (((_6923.xyz - _22537) * 0.25f) * _Globals_1_g_flPlayerVisStrength), _5998.xxx);
 	    float _24197 = _14188.x;
 	    float4 _10432 = float4(_24197, _14188.yz, (((1.0f / max(1.0f, 8.0f - _17118)) * (_16305 * smoothstep(0.0599999986588954925537109375f, 0.4000000059604644775390625f, _14232))) * _17114) * _13136);
 	    float3 _21152 = clamp(_10432.xyz, 0.0f.xxx, max(max(_24197, _14188.y), _14188.z).xxx);
