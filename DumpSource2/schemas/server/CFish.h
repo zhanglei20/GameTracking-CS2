@@ -12,7 +12,7 @@ class CFish : public CBaseAnimGraph
 	float32 m_angleChange;
 	Vector m_forward;
 	Vector m_perp;
-	Vector m_poolOrigin;
+	VectorWS m_poolOrigin;
 	float32 m_waterLevel;
 	float32 m_speed;
 	float32 m_desiredSpeed;

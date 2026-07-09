@@ -30,7 +30,7 @@ class CPointValueRemapper : public CBaseEntity
 	bool m_bFirstUpdate;
 	float32 m_flPreviousValue;
 	GameTime_t m_flPreviousUpdateTickTime;
-	Vector m_vecPreviousTestPoint;
+	VectorWS m_vecPreviousTestPoint;
 	CHandle< CBasePlayerPawn > m_hUsingPlayer;
 	float32 m_flCustomOutputValue;
 	CUtlSymbolLarge m_iszSoundEngage;

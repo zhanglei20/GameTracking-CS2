@@ -191,6 +191,9 @@ axis (gamedll cheat)
 	Draw an axis
 	Arguments:  x y z pitch yaw roll <lifetime = 10.0> <r g b a>
 
+bake_bomb_damage_render_visualization (clientdll cheat)
+	<no description>
+
 banid (developmentonly defensive)
 	Add a user ID to the ban list.
 
@@ -269,9 +272,6 @@ bug (developmentonly dontrecord defensive)
 
 bugbug (clientdll release)
 	bugbug
-
-bugbug_commit (clientdll release)
-	bugbug_commit
 
 bugvoice_clear (developmentonly dontrecord defensive)
 	Clear voice attachment data.
@@ -368,18 +368,6 @@ cast_sphere (gamedll cheat)
 
 cc_emit (developmentonly clientdll defensive)
 	Emits a closed caption
-
-cc_findsound (developmentonly clientdll defensive)
-	Searches for soundname which emits specified text.
-
-cc_flush (developmentonly clientdll defensive)
-	Flushes async'd captions.
-
-cc_random (developmentonly clientdll defensive)
-	Emits a random caption
-
-cc_showblocks (developmentonly clientdll defensive)
-	Toggles showing which blocks are pending/loaded async.
 
 changelevel (release)
 	changelevel <mapname> :Multiplayer change level.
@@ -728,7 +716,7 @@ cl_pred_track_off (developmentonly clientdll defensive)
 	clear field track changes.
 
 cl_predictioncopy_describe (developmentonly clientdll defensive)
-	Describe datamap_t for entindex
+	Describe PredictionMap_t for entindex
 
 cl_predictioncopy_print (developmentonly clientdll defensive)
 	Print simple description of prediction copy fields for entindex
@@ -765,9 +753,6 @@ cl_resetfps (developmentonly clientdll defensive)
 
 cl_rr_dump_rules (clientdll cheat)
 	Print all response rules
-
-cl_rr_reloadresponsesystems (clientdll cheat)
-	Reload all response system scripts.
 
 cl_script_add_debug_filter (clientdll cheat)
 	Add a filter to the game debug overlay
@@ -1983,9 +1968,6 @@ menuselect (clientdll clientcmd_can_execute)
 minimap_create (clientdll cheat)
 	Does a bunch of work to create a minimap
 
-mm_datacenter_debugprint (developmentonly defensive)
-	Shows information retrieved from data center
-
 mm_debugprint (developmentonly defensive)
 	Show debug information about current matchmaking session
 
@@ -2189,6 +2171,10 @@ open_asset (developmentonly defensive)
 
 open_current_map_in_hammer (developmentonly)
 	opens the current map in hammer.
+
+open_current_map_pulse_in_tool (developmentonly vconsole_fuzzy_matching)
+	Opens the specified pulse used in this map in the editor.
+	Arguments: <pulse_file>
 
 p2p_listpeers (developmentonly defensive)
 	List currently known peers.
@@ -2470,6 +2456,9 @@ removeip (developmentonly defensive)
 repeat_last_console_command (release)
 	Repeat last console command.
 
+replant_bomb (gamedll cheat)
+	<no description>
+
 replay_death (gamedll cheat)
 	start hltv replay of last death
 
@@ -2544,9 +2533,6 @@ rr_forceconcept (gamedll cheat)
 	USAGE: rr_forceconcept <target name or index> <concept> "criteria1:value1,criteria2:value2,..."
 	criteria values are optional.
 
-rr_reloadresponsesystems (gamedll cheat)
-	Reload all response system scripts.
-
 rs_dump_stats (developmentonly)
 	rs_dump_stats - Dump resourcesystem stats.
 
@@ -2597,9 +2583,6 @@ sc_setclassflags (cheat)
 
 sc_showclasses (cheat)
 	List the object class names known by scenesystem
-
-scene_coordinator_add_request (developmentonly gamedll defensive)
-	Add a request to the scene coordinator
 
 scene_playvcd (gamedll cheat)
 	Play the given VCD as an instanced scripted scene.
@@ -2707,7 +2690,10 @@ server_game_time (developmentonly gamedll defensive)
 	Gives the game time in seconds (server's curtime)
 
 server_snd_cast (gamedll cheat)
-	Casts a ray and starts a sound event where the ray hits. The sound event will retrigger periodically. Usage: snd_cast <eventname> [<retrigger time>] [<max distance>]. Arguments that are specified will become defaults for the remainder of the session.
+	Casts a ray and starts a sound event where the ray hits. The sound event will retrigger periodically. Usage: server_snd_cast <eventname> [<retrigger time>] [<max distance>]. Arguments that are specified will become defaults for the remainder of the session.
+
+server_snd_pos (gamedll cheat)
+	Starts a sound event at a given position. The sound event will retrigger periodically. Usage: server_snd_pos <eventname> <retrigger time> <x> <y> <z>.
 
 servervoice_clear (developmentonly clientdll defensive)
 	servervoice_clear
@@ -2818,8 +2804,8 @@ slot9 (clientdll server_can_execute)
 snapto (developmentonly clientdll defensive)
 	<no description>
 
-snd_arrangement_start (cheat)
-	Starts the specified arrangement.
+snd__beatpattern_stop_track (cheat)
+	Stops the specified track
 
 snd_async_flush (developmentonly defensive)
 	Flush all unlocked async audio data
@@ -2832,6 +2818,24 @@ snd_async_showmem_music (developmentonly defensive)
 
 snd_async_showmem_summary (developmentonly defensive)
 	Show brief async memory stats
+
+snd_beatpattern_flush (cheat)
+	Purge and reload all beat pattern data and files.
+
+snd_beatpattern_print_activetracks (cheat)
+	List all active tracks
+
+snd_beatpattern_print_patterns (cheat)
+	List all available beat patterns
+
+snd_beatpattern_set_track_bpm (cheat)
+	Sets the tempo of the specified track
+
+snd_beatpattern_set_track_transpose (cheat)
+	Sets the transposition of the specified track
+
+snd_beatpattern_stop_all_tracks (cheat)
+	Stops all currently playing patterns
 
 snd_cast (cheat)
 	Casts a ray and starts a sound event where the ray hits. The sound event will retrigger periodically if cl_snd_cast_retrigger is set. The sound event will clear previous snd_cast events if cl_snd_cast_clear is set. Usage: snd_cast <eventname> [<retrigger time>] [<max distance>]. Arguments that are specified will become defaults for the remainder of the session.
@@ -2907,30 +2911,6 @@ snd_samplers_play_note (cheat)
 
 snd_samplers_stop_note (cheat)
 	Stop a note from a specified sampler
-
-snd_sequencer_print_activetracks (cheat)
-	List all active tracks
-
-snd_sequencer_print_arrangements (cheat)
-	List all available sequence arrangments
-
-snd_sequencer_print_sequences (cheat)
-	List all available midi sequences
-
-snd_sequencer_set_track_bpm (cheat)
-	Sets the tempo of the specified track
-
-snd_sequencer_set_track_transpose (cheat)
-	Sets the transposition of the specified track
-
-snd_sequencer_stop_all_tracks (cheat)
-	Stops all currently playing sequences
-
-snd_sequencer_stop_track (cheat)
-	Stops the specified track
-
-snd_sequencer_vmidi_flush (cheat)
-	Purge and reload all vmidi data and files.
 
 snd_set_physics_surface_properties (cheat)
 	Set physics surface properties for materials. Usage: <heuristic #> <commit>
@@ -3145,6 +3125,9 @@ ss_remove (developmentonly defensive)
 ss_teleport (developmentonly clientdll cheat)
 	Teleport other splitscreen player to my location.
 
+start_rec_mic (linked_concommand developmentonly defensive)
+	Start recording to a desired wav.
+
 startdemos (release)
 	Play demos in demo sequence.
 
@@ -3171,6 +3154,12 @@ steamvrevent_quit (developmentonly gamedll hidden defensive)
 
 stop (release)
 	Finish recording demo.
+
+stop_rec_mic (linked_concommand developmentonly defensive)
+	Stop recording to a desired wav.
+
+stop_rec_mic_all (linked_concommand developmentonly defensive)
+	Stop recording all mic streams.
 
 stopdemos (release)
 	Stop looping demos (current demo will complete).
@@ -3458,23 +3447,11 @@ voice_containers_get_instance_params (linked_concommand developmentonly defensiv
 voice_modenable_toggle (clientdll release)
 	Toggle the voice_modenable convar.
 
-voice_mute (developmentonly defensive)
-	Mute a specific Steam user
-
-voice_reset_mutelist (developmentonly defensive)
-	Reset all mute information for all players who were ever muted.
-
-voice_show_mute (developmentonly defensive)
-	Show whether current players are muted.
-
 voice_status_test_toggle (developmentonly clientdll)
 	Test voice and status notices
 
 voice_toggle_open_mic (clientdll release)
 	Toggles between open-mic and push-to-talk
-
-voice_unmute (developmentonly defensive)
-	Unmute a specific Steam user, or `all` to unmute all connected players.
 
 vprof_dump_counters (developmentonly defensive)
 	Dump vprof counters to the console
@@ -3521,6 +3498,12 @@ weapon_switch (developmentonly gamedll)
 
 workshop_annotation_submit (clientdll release)
 	Submit annotation to workshop. To update an existing submission add its ID number from the workshop URL as a second argument.
+
+workshop_clear_cloud_save (developmentonly gamedll defensive)
+	Remove a workshop save from steam cloud. Pass the published file id to delete or 0 to delete the non-workshop addon save.
+
+workshop_dump_cloud_contents (developmentonly gamedll defensive)
+	Spew contents of steam cloud.
 
 workshop_item_submit (clientdll hidden release)
 	<no description>

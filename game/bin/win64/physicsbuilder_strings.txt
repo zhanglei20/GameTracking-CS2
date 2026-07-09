@@ -8335,8 +8335,6 @@ Cut Min
 Cycle Start Frame
 Cycle Type
 Cylinder
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 Cylinder: %s
 D(None)
 D16_UNORM
@@ -9427,7 +9425,6 @@ MATERIAL_ATTRIBUTE:%s_%i
 MAlternateSemanticName
 MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
@@ -10177,7 +10174,6 @@ R8_TYPELESS
 R8_UNORM
 R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 ROTATION
 R_T5Y
 Radial Basis Function Type
@@ -10870,12 +10866,6 @@ Type of data to export.  Note that skeleton can only be filtered if type is skel
 Type of faceposer keys, Gesture or Posture
 UI Camera Yaw/Pitch
 UICameraRotation
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 UV Attribute Simplification Weight
 UV Map Box
 UV Map Cylinder
@@ -10943,7 +10933,6 @@ Unsupported mesh type for '%s': %s
 Unsupported mix of opaque and translucent materials in thie groom group. Render materials in child groom meshfile nodes must either be all opaque or all translucent.
 Up Type
 Up Vector
-UpscalerType_t
 Use Block Solver
 Use Child Offset Attachment
 Use Curvature Drop
@@ -11315,7 +11304,6 @@ animationSets
 animationTime
 animations
 animflags
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
@@ -11850,8 +11838,6 @@ durationTime
 duration_info
 dynamic_attributes
 eCONTENTROOT
-eCenteredCylinder
-eGroundCylinder
 ease_in_key
 ease_is_duration
 ease_out_key
@@ -12438,7 +12424,6 @@ lowprecisionuv1
 m_AdditionalInputDependencies
 m_AdditionalRelatedFiles
 m_ArgumentDependencies
-m_BoneMergeLinks
 m_ChildResourceList
 m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNameOrientation
 m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition
@@ -12491,9 +12476,6 @@ m_bUseCompressedNormalTangent
 m_bUseNewPoleVectorForAxis
 m_capabilities
 m_eRbfType
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_fEmissiveFactor
 m_fMoveTo
 m_flMaxRadians
 m_flMinRadians
@@ -12501,23 +12483,14 @@ m_flSlopeIncoming
 m_flSlopeOutgoing
 m_hitboxsets
 m_influenceFlags
-m_materialGroupToken
 m_morphSet
-m_nChildNode
 m_nFileCRC
 m_nFingerprint
 m_nFingerprintDefault
-m_nParentHash
-m_nSrcDrawIndex
 m_nUserData
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_pVertexData
 m_qFixupRotation
 m_rbfParameters
-m_rootBvhNodes
 maintain position along path
 make_two_sided
 makefile

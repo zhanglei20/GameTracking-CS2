@@ -1,0 +1,3 @@
+class CChicken_API
+{
+};

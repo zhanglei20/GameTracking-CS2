@@ -1,0 +1,3 @@
+class CCSObserverPawn_API
+{
+};

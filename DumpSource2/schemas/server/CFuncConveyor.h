@@ -2,6 +2,7 @@ class CFuncConveyor : public CBaseModelEntity
 {
 	CUtlSymbolLarge m_szConveyorModels;
 	float32 m_flTransitionDurationSeconds;
+	float32 m_flSpeed;
 	QAngle m_angMoveEntitySpace;
 	Vector m_vecMoveDirEntitySpace;
 	float32 m_flTargetSpeed;

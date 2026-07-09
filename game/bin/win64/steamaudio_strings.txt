@@ -5854,7 +5854,6 @@ m_vecAABBs
 m_vecData
 m_vecInitialTransforms
 m_vecKeys
-m_vecReflectionEnergy
 ma\v\r01!
 mac absent
 mac generation error

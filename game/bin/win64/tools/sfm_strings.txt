@@ -6568,6 +6568,7 @@ AO Only
 AO Proxies
 AVI (*.avi);;All Files (*.*)
 A`?translate@QPainter@@QEAAXAEBVQPoint@@@Z
+Abort
 Abort Floating Modification Layer
 AbortTextEntry
 About Qt
@@ -6591,7 +6592,6 @@ ActivateLayout6
 ActivateLayout7
 ActivateLayout8
 ActivateLayout9
-Active
 Active Bookmark Set
 Active Camera
 Active Window Widget
@@ -6807,7 +6807,6 @@ AssetBrowse( %s )
 AssetBrowse()
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 At Bookmarks
 At least one sound clip must be selected to extract phonemes.
 Ate : upper-mid front unrounded vowel
@@ -6889,7 +6888,6 @@ Base-2 logarithm
 BaselineExposure
 BaselineNoise
 BaselineSharpness
-Basic string support.
 BayerGreenSplit
 Begin mouse capture [%i]: %s\n
 Begin testing a condition composed of Observable values. Continues checking until canceled.
@@ -7211,7 +7209,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -7240,7 +7237,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -7316,7 +7312,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -7637,7 +7632,6 @@ CQtEditFadeTimesDialog
 CQtMovieLayoffProgress
 CQtMultiInputDialog
 CQtTimeScaleInputDialog
-CREATE_CHILD_CURSOR_OUTFLOW
 CRayTraceModelHelper::FindOrAddSceneObject
 CRayTraceModelHelper::Trace
 CRenderOptionsPopupUI
@@ -7959,7 +7953,6 @@ Choose Output File
 Choose Takes To Delete
 Choose Target Directory
 Choreo Control State
-ChoreoStrafeMode_t
 ChromaBlurRadius
 Citadel
 Clamp Float
@@ -8200,7 +8193,6 @@ Ctrl+M
 Ctrl+Shift+Z
 CubemapFogTexture
 Cull Random
-Current
 Current Binding
 CurrentICCProfile
 CurrentPreProfileMatrix
@@ -8236,7 +8228,6 @@ D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D#?x@QWidget@@QEBAHXZ
 DBM&(
 DEBRIS
-DISABLE
 DMX (*.dmx);;All Files (*.*)
 DMX Model
 DMX Model Pipeline Animation Script File
@@ -8632,7 +8623,6 @@ Dynamic Actor
 Dynamic Configs
 E<G&Iw
 EG2>
-ENABLE
 ERROR %s
 ERROR! LoadFromJPG( %s ) failed!\n
 ERROR! LoadFromPNG( %s ) failed!\n
@@ -8716,7 +8706,6 @@ Emission Duration:
 EmitEditingFinishedOnDrop
 EmitEditingFinishedOrAborted
 Empty time selection
-Enable
 Enable Global Light Shadow
 Enable Lighting
 Enable Procedural Bones
@@ -8755,7 +8744,6 @@ EnterKeyPressed
 Entity Sounds
 EntityIndex
 EntityName
-Enum support.
 Eq R%d <- R%d == R%d
 Equalize tangent length
 Error (problem that prevents task success)
@@ -9260,6 +9248,7 @@ IBookmarkSource
 ICC Profile
 ICSFMOperationWidget
 IControlSelectionChangedListener
+IDLE
 IDataModelChangedListener
 IDmAttributeAddedListener
 IDmAttributeChangedListener
@@ -9537,7 +9526,6 @@ Keyboard Shortcuts
 KeyboardShortcuts
 Keyframing
 Keymode
-Keys
 Kill All Other Cursors
 Kill Cursors With Tag
 Kochanek-Bartels
@@ -9691,8 +9679,6 @@ M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
 MAtomicTransfersAsPlainString
 MENU
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MMouse
 MMouseDoubleClick
 MPropertyFlattenIntoParentRow
@@ -10529,7 +10515,6 @@ Parameters
 Parent
 Parent Constrain
 Parent Map: %s\n
-Parent VData
 ParseEXRHeaderFromMemory failed! Error message: %s\n
 Partially Locked (Driven by some random choices in current config)
 Particle Binding
@@ -10702,7 +10687,6 @@ Probable infinite loop detected! Terminating pulse cursor after %d consecutive i
 Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
 Problems in interaction with Perforce
 Procedural
-Proceed Immediately
 Process Selector
 Progressive Refinement
 Progressive Refinement Settings
@@ -10726,7 +10710,6 @@ Pulse Requirement
 Pulse Requirement Name
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
-PulseDurationStringFormat_t
 PulseRequirementName
 Put; voiceless alveolar stop
 Python (*.py);;All Files (*.*)
@@ -11774,7 +11757,6 @@ StartSendingCameraTo
 StartTime
 StartingAnim
 State=%s
-Status
 StatusLabel
 Steady
 Steady: Retime each control's animation towards having a constant velocity
@@ -11832,7 +11814,6 @@ Symbol table:  %d entries %llu bytes\n
 Sync Cycle To Time
 Sync Exit tag to next gesture Entry tag
 SyncToFollowingGesture
-Synchronous - Wait for this node to fully complete before proceeding.
 T ?year@QDate@@QEBAHXZ
 T"?IsZero@FbxVector4@fbxsdk@@QEBA_NH@Z
 T=KY
@@ -12112,7 +12093,6 @@ Totals
 Tower
 Towers
 Tq?TR
-Trace
 TraceAgainstDmeGameModels
 TraceWorld
 Track
@@ -12339,7 +12319,6 @@ V?redirected@QPaintDevice@@MEBAPEAV1@PEAVQPoint@@@Z
 V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VConsole
-VDATA
 VData:%s
 VDataChoice( %s )
 VDataChoice()
@@ -12462,8 +12441,6 @@ Weighted Tangents
 Weighted tangents
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
-While False
-While True
 WhiteLevel
 WhitePoint
 Widget Debugger
@@ -14334,10 +14311,11 @@ m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 m_Bindings
 m_Context
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
+m_EvaluateConnection
 m_InputMacros
-m_Metadata
 m_Retiming
-m_SequencePoint
 m_Stops
 m_TagValue
 m_bChildCursorsShouldInherit
@@ -14547,7 +14525,6 @@ nBlendIndex
 nColumn
 nDataSize > 0
 nDelayInMS
-nDenominator
 nFormat
 nKillPriority
 nLayoffState
@@ -14557,7 +14534,6 @@ nModelIndex
 nModifiers
 nMouseButton
 nNewDesiredHeight
-nNumerator
 nOption
 nPos
 nPoseParameter
@@ -15582,7 +15558,6 @@ z\tV_sind
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 zero_value
-{ item_factory = 'IntervalTimer' }
 {X?setBottom@QIntValidator@@QEAAXH@Z
 {\n?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
 {\n?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z

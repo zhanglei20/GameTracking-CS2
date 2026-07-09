@@ -525,15 +525,8 @@ Premature end-of-file encountered.
 Premature end-of-partition0 encountered.
 PrimaryChromaticities
 RENDERDOC_GetAPI
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RESOURCE_TYPE_TEXTURE
 RSDSM
-RS_CMP_CLOSER
-RS_CMP_CLOSER_EQUAL
-RS_CMP_CLOSER_FARTHER_FLAG
-RS_CMP_FARTHER
-RS_CMP_FARTHER_EQUAL
-RS_CMP_FUNC_MASK
 R_T5Y
 RawDataUniqueID
 ReductionMatrix1
@@ -640,12 +633,6 @@ Truncated header.
 Trying to create a render target with invalid image format %s\n
 Trying to set dxlevel (%d) which is higher than the card can support (%d)!\n
 Trying to set dxlevel (%d) which is lower than the card can support (%d)!\n
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 U\8h(
 Unable to find swapchain named %s
 Unavailable
@@ -655,7 +642,6 @@ Unknown compression type.
 Unknown data format %d for LogLuv compression
 Unknown encoding %d for LogLuv compression
 Unsupported PSD color mode!\n
-UpscalerType_t
 Usage: %s <window_name>
 VB Size: %s (Count: %d)\n
 VBPool

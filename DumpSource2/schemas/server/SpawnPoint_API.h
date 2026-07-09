@@ -1,0 +1,3 @@
+class SpawnPoint_API
+{
+};

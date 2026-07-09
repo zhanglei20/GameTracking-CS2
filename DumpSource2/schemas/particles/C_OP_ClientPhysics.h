@@ -275,7 +275,9 @@
 //	"m_nControlPoint": 0,
 //	"m_nForcedSimId": -1,
 //	"m_nColorBlendType": "PARTICLE_COLOR_BLEND_MULTIPLY",
-//	"m_nForcedStatusEffects": ""
+//	"m_nForcedStatusEffects": "",
+//	"m_nNoCollisionAttribute": 18,
+//	"m_nZeroGravityAttribute": 26
 //}
 class C_OP_ClientPhysics : public CParticleFunctionRenderer
 {
@@ -310,4 +312,12 @@ class C_OP_ClientPhysics : public CParticleFunctionRenderer
 	ParticleColorBlendType_t m_nColorBlendType;
 	// MPropertyFriendlyName = "forced status effect flags"
 	ParticleAttrBoxFlags_t m_nForcedStatusEffects;
+	// MPropertyFriendlyName = "Disable Non-Static Collision Duration"
+	// MPropertyAttributeChoiceName = "particlefield_scalar"
+	// MPropertySuppressExpr = "m_nForcedStatusEffects == 0"
+	ParticleAttributeIndex_t m_nNoCollisionAttribute;
+	// MPropertyFriendlyName = "Zero Gravity Duration"
+	// MPropertyAttributeChoiceName = "particlefield_scalar"
+	// MPropertySuppressExpr = "m_nForcedStatusEffects == 0"
+	ParticleAttributeIndex_t m_nZeroGravityAttribute;
 };

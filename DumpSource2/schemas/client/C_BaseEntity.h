@@ -70,8 +70,6 @@ class C_BaseEntity : public CEntityInstance
 	// MNotSaved
 	GameTime_t m_flCreateTime;
 	// MNotSaved
-	float32 m_flSpeed;
-	// MNotSaved
 	uint16 m_EntClientFlags;
 	// MNotSaved
 	bool m_bClientSideRagdoll;
@@ -80,7 +78,7 @@ class C_BaseEntity : public CEntityInstance
 	uint32 m_spawnflags;
 	// MNotSaved
 	GameTick_t m_nNextThinkTick;
-	// MSaveFlags = 4096
+	// MSaveBehavior (UNKNOWN FOR PARSER)
 	uint32 m_fFlags;
 	// MNotSaved
 	Vector m_vecAbsVelocity;

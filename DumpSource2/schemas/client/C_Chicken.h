@@ -1,7 +1,5 @@
 class C_Chicken : public C_DynamicProp, public IHasAttributes
 {
-	CHandle< CBaseAnimGraph > m_hHolidayHatAddon;
-	bool m_jumpedThisFrame;
 	CHandle< C_CSPlayerPawn > m_leader;
 	C_AttributeContainer m_AttributeManager;
 	bool m_bAttributesInitialized;

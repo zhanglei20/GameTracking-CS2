@@ -1,7 +1,7 @@
 class CInferno : public CBaseModelEntity
 {
-	Vector[64] m_firePositions;
-	Vector[64] m_fireParentPositions;
+	VectorWS[64] m_firePositions;
+	VectorWS[64] m_fireParentPositions;
 	bool[64] m_bFireIsBurning;
 	Vector[64] m_BurnNormal;
 	int32 m_fireCount;
@@ -15,8 +15,8 @@ class CInferno : public CBaseModelEntity
 	CountdownTimer m_damageRampTimer;
 	Vector m_splashVelocity;
 	Vector m_InitialSplashVelocity;
-	Vector m_startPos;
-	Vector m_vecOriginalSpawnLocation;
+	VectorWS m_startPos;
+	VectorWS m_vecOriginalSpawnLocation;
 	IntervalTimer m_activeTimer;
 	int32 m_fireSpawnOffset;
 	int32 m_nMaxFlames;

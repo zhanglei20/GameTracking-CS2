@@ -1,3 +1,4 @@
+// MGetKV3ClassDefaults = Could not parse KV3 Defaults
 class CModelState
 {
 	CStrongHandle< InfoForResourceTypeCModel > m_hModel;

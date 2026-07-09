@@ -11838,7 +11838,6 @@ AAAA-
 AAAA-%.*s
 AABB
 AABBDirection
-AABBWS_t
 AACompromise
 AAMode
 ABCDEFGHJKLMNOPQRSTUVWXYZabcdefhijkmnopqrstuvwxyz23456789
@@ -11926,19 +11925,6 @@ AES_T4_INIT_KEY
 AES_XTS
 AES_XTS_CIPHER
 AE_CHOREO_LOOP
-AE_COUNT
-AE_SCRIPT_FIRE_EVENT_01
-AE_SCRIPT_FIRE_EVENT_02
-AE_SCRIPT_FIRE_EVENT_03
-AE_SCRIPT_FIRE_EVENT_04
-AE_SCRIPT_FIRE_EVENT_05
-AE_SCRIPT_FIRE_EVENT_06
-AE_SCRIPT_FIRE_EVENT_07
-AE_SCRIPT_FIRE_EVENT_08
-AE_SCRIPT_FIRE_EVENT_09
-AE_SCRIPT_FIRE_EVENT_10
-AE_VEHICLE_ENTER_FINISHED
-AE_VEHICLE_EXIT_FINISHED
 AG2 - EvaluateAnimList - Job Execute Func
 AG2_OnAnimGraphDefinitionOrModeChanged
 AG2_OnAnimGraphSerializationContextInvalidated
@@ -11949,11 +11935,6 @@ AG2_PushAnimTransformsToSkeletonInstance
 AGgV
 AIRBOAT
 AI\tHpH8x
-AI_FacingServices_DebugSnapshotData_t
-AI_GroundRootMotionMotor_DebugSnapshotData_t
-AI_GroundRootMotionMotor_DebugSnapshotData_t::Event_t
-AI_MotorServices_DebugSnapshotData_t
-AI_MotorServices_DebugSnapshotData_t::MotorPathWaypoint_t
 AJsN
 ALG_MODULE_INIT
 ALL:!EXPORT:!LOW:!aNULL:!eNULL:!SSLv2
@@ -12144,7 +12125,6 @@ ActionSpray
 ActionStartAgreementSessionInGame
 ActionWatchFriendSession
 Activated
-Active
 Active Particles : %d\n
 Active projected textures: %d\n
 ActiveBindButton
@@ -12281,7 +12261,6 @@ AnimClip Is Public
 AnimClip Public Name
 AnimClips:
 AnimEventOutflows{ model_key='m_strEditorModel' sequence_key='m_SequenceName'  events=[ [ 'AE_PULSE_GRAPH', 'name' ] ] }
-AnimGraph
 AnimGraph Client Tick
 AnimGraph Parameter Controller
 AnimGraph Server Tick
@@ -12361,7 +12340,6 @@ Applies an image as an opacity mask that stretches to the panel bounds and fades
 Apply an impulse at a worldspace position to the physics
 ApplyBreakCommandListToPieces
 ApplyCheer
-ApplyPhysicsForce
 ApplyStyles
 Applying fallback networking config (%llu bytes)...\n
 Applying overrides for %s 0x%p\n
@@ -12437,7 +12415,6 @@ AsyncPlayerSprayDecal
 AsyncSave
 AsyncSuccessContainer
 AsyncSuccessState
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 Asynchronously spawn an entity group from a list of spawn tables. A callback will be triggered when the spawning is complete
 Asynchronously spawns a single entity from a table
 AtMaximum
@@ -12575,8 +12552,6 @@ BAD INTEGER
 BAD RECURSION DEPTH\n
 BAD-TYPE
 BADFUNCTIONPOINTER
-BANNER_BOMB_DEFUSAL_VER1
-BANNER_BOMB_DEFUSAL_VER2
 BASEPTR
 BASIC_CONSTRAINTS
 BAcceptsFocus
@@ -12709,9 +12684,6 @@ BOGUS
 BOOL ABSENT
 BOOLEAN
 BOOSTS
-BPE_Diagnostic
-BPE_StringCommand
-BPE_Teleport
 BPIN_txt
 BPublic
 BReadyForDisplay
@@ -12796,8 +12768,6 @@ Balkan
 Banjo
 Bank
 Basalt
-Base NPC
-Base Structured Data
 Base component class %s needs to have the same contained / referenced rules as its derived classes!\n
 Base entity with model
 Base-10 logarithm
@@ -12814,7 +12784,6 @@ BaseSettings
 BaseText
 BaseTextureOverride
 Basic OCSP Response
-Basic string support.
 Basis Type: %s\n
 Bazaar
 BcT`
@@ -12878,7 +12847,6 @@ BoX5
 Body Component Scriptdesc
 BodyGameSystem
 BodyGroup: %s => %d
-BodySectionMutex_t
 BombAbove
 BombBelow
 BombBlast
@@ -12905,7 +12873,6 @@ BombTargetUse does nothing\n
 BombZoneA
 BombZoneB
 BombZone_OnMap
-Bone Transforms
 Bone bind-space position (vec3)
 Bone merge bones from parent were invalid: parent model '%s': our model '%s'
 Bone up-vector (vec3)
@@ -13301,7 +13268,6 @@ CAST5-CBC
 CAST5-CFB
 CAST5-ECB
 CAST5-OFB
-CAnimGraph2InstancePtr
 CAnimGraph2ParamAutoResetOptionalRef
 CAnimGraph2ParamAutoResetRef
 CAnimGraph2ParamOptionalRef
@@ -13313,7 +13279,6 @@ CAnimGraph2ParamRefBase<float>::Bind
 CAnimGraphControllerManager::CreateAndBindController
 CAnimGraphControllerManager::CreateControllerToGraphBindings
 CAnimGraphControllerManager::PreGraphUpdate
-CAnimGraphControllerPtr
 CAnimGraphGameSystem::PreUpdateAnimGraphAnimations
 CAnimGraphGameSystem::ProcessPostNetworkingAnimationDecodes(), C:\buildworker\csgo_rel_win64\build\src\game\shared\animgraph_gamesystem.cpp:2173
 CAnimGraphParamAutoResetRef
@@ -13332,7 +13297,6 @@ CAttachmentNameSymbolWithStorage
 CAttributeContainerPlayer
 CAttribute_String
 CBI]6
-CBarnLightAPI
 CBarnLightAPI::CastDynamicShadows
 CBarnLightAPI::Disable
 CBarnLightAPI::Enable
@@ -13345,7 +13309,6 @@ CBarnLightAPI::SetFogStrength
 CBarnLightAPI::SetStyle
 CBarnLightAPI::Toggle
 CBaseAnimGraph::InputSetBodyGroup
-CBaseAnimGraphAPI
 CBaseAnimGraphAPI::DisableAnimEventSounds
 CBaseAnimGraphAPI::GetLayerCycle
 CBaseAnimGraphAPI::IsAnimEventActive
@@ -13353,18 +13316,15 @@ CBaseAnimGraphAPI::IsExternalChoreoGraphActive
 CBaseAnimGraphAPI::PlaySequence
 CBaseAnimGraphAPI::SetBodygroup
 CBaseAnimGraphAPI::SetPlaybackRate
-CBaseAnimGraphAlias_baseanimating
 CBaseAnimGraphChoreoServicesThink
 CBaseAnimGraphController::SequenceDuration( %d ) NULL CModel on %s!\n
 CBaseAnimGraphController::SequenceDuration( %d ) out of range\n
 CBaseEntity::TakeDamageOld: damagetype %d with info.GetDamageForce() == Vector::vZero\n
 CBaseEntity::TakeDamageOld: damagetype %d with info.GetDamagePosition() == VectorWS::vZero\n
-CBaseEntity_SharedAPI
 CBaseEntity_SharedAPI::AddOutput
 CBaseEntity_SharedAPI::SetScale
 CBaseGameStats::Event_MapChange to [%s]\n
 CBaseGameStats::Event_SaveGame [%s]\n
-CBaseGrenade_API
 CBaseLesson::IsTimedOut
 CBaseModelEntity::BaseFlex_FlexControllerLocalToGlobalInternal failed!\n
 CBaseModelEntity::SetBodygroup(%d,%d) failed: CBaseModelEntity has no model!\n
@@ -13468,7 +13428,6 @@ CCSGO_MapOverview
 CCSGO_OutOfAmmo
 CCSGO_RetakeLoadout
 CCSGO_Scoreboard::CreatePanels()
-CCSGO_TeamPreviewCharacterPosition_API
 CCSGameModeRules *
 CCSGameRules*
 CCSGraphicsSettings_Minimal_client
@@ -13480,7 +13439,6 @@ CCSItemIconGeneratorGameSystem::LoadFromIconCacheFile(1028):
 CCSPanoramaPrewarmSystem
 CCSPanoramaPrewarmSystem::PrewarmPanorama
 CCSPlayerControllerGameSystem
-CCSPlayerController_API
 CCSPlayerController_ActionTrackingServices *
 CCSPlayerController_DamageServices *
 CCSPlayerController_InGameMoneyServices *
@@ -13617,7 +13575,6 @@ CCSUsrMsg_XRankGet
 CCSUsrMsg_XRankUpd
 CCSUsrMsg_XpUpdate
 CCSUsrMsg_XpUpdate_t
-CCSWeaponBase_API
 CCS_PortraitWorld::ClearBackgroundMap() %s\n
 CCS_PortraitWorld::CreateDynamicEntitySpawnGroup() %s\n
 CCS_PortraitWorld::DestroyDynamicEntitySpawnGroup() %s\n
@@ -13661,7 +13618,6 @@ CChoreoEvent_SPEAK
 CChoreoEvent_STOPPOINT
 CChoreoObjectBase
 CChoreoScene
-CChoreo_GraphController
 CClientBugBugService
 CClientHeaderOverwatchEvidence
 CClientModeGameSystem
@@ -13867,19 +13823,11 @@ CEntitySystem::QueuePostDataUpdates
 CEntitySystem::RegisterAliasEntityClass
 CEntitySystem::RegisterComponentType
 CEntitySystem::RegisterEntityClass
-CEnvCombinedLightProbeVolumeAPI
-CEnvCubemapAPI
-CEnvLightProbeVolumeAPI
-CEnvSkyAPI
-CEnvWindSharedAPI
-CExternalAnimGraphList
 CFilterMultipleAPI::AddFilter
 CFilterMultipleAPI::RemoveFilter
 CFireObjectDesc
 CFireSceneObjectDesc::DrawArrayFire
-CFlashbangProjectile_API
 CFlatGroupDatabase::LookupFlatGroup
-CFootstepControl_API
 CFreeCamera
 CGBackpackSortFinished
 CGCClient
@@ -13944,7 +13892,6 @@ CGlobalLightBase::UpdateState
 CGlobalSymbol
 CGlobalSymbolCaseSensitive
 CGlowHelperSceneObjectDesc
-CGrenadeTracer_API
 CHECK_BITLEN_DSA
 CHECK_BITLEN_RSA
 CHECK_CONTENT
@@ -14034,7 +13981,6 @@ CL:  Recompute interp amounts: %s\n
 CL:  WARNING! User command buffer overflow (%i->%i), last cmd was %i bytes long\n
 CL:  client listens to event '%s' unknown by server.\n
 CL:  turning to %s after %d steps\n
-CLC_Messages
 CLIENT
 CLIENTSIDE
 CLIENTSTUB
@@ -14049,7 +13995,6 @@ CLegacyGameUI::Initialize() failed to get necessary interfaces\n
 CLightComponent::Storage_t
 CLightComponentReferenced
 CLightComponentReferencedPtr
-CLightEntityAPI
 CLightEntityAPI::SetAppearance
 CLightEntityAPI::SetCustomAppearance
 CLightEntityAPI::SetLightBrightness
@@ -14192,17 +14137,9 @@ CMS_sign_receipt
 CMS_stream
 CMS_uncompress
 CMS_verify
-CM_ClientUIEvent
-CM_CustomGameEvent
-CM_CustomGameEventBounce
-CM_DevPaletteVisibilityChanged
-CM_MAX_BASE
-CM_RotateAnchor
-CM_WorldUIControllerHasPanelChanged
 CMapBombDamageGameSystem
 CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:440
 CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:459
-CMapInfo_API
 CMapInfo_API::FireWinCondition
 CMissionTemplate::BMakeQuestDefSchema
 CModel::GetBoneIndexForHitboxForMesh
@@ -14354,7 +14291,6 @@ CMsgTEWorldDecal
 CMsgUpdateItemSchema
 CMsgVDebugGameSessionIDEvent
 CMultimeter
-CNMEventPulseState_t
 CNetworkFieldScratchData.m_MemoryStacks[ %d ]
 CNetworkFieldScratchData.m_MemoryStacks[ 0 ]
 CNetworkFieldScratchData::Alloc created buffer %s of size %s\n
@@ -14362,8 +14298,6 @@ CNetworkFieldScratchData::Alloc, failed to add new CMemoryStack at slot %d of si
 CNetworkFieldScratchData::Init failed on buffer of %u bytes.
 CNetworkGameClient::OnSource1Source1LegacyGameEvent: UnserializeKeyValue failed.\n
 CNetworkOriginCellCoordQuantizedVector m_cell%c cell %d is outside of cell bounds (0->%d) @(%f %f %f)\n
-CNetworkOriginCellCoordQuantizedVectorWS
-CNetworkOriginQuantizedVectorWS
 CNetworkSerializerBindingBuildFilter::GetFieldPriority
 CNetworkSerializerFieldInfo::InitCodeGenTypes:  unable to find class %s for field %s %s::%s\n
 CNetworkTransmitComponent::FireEvent( m_bPendingStateChange == true )
@@ -14412,10 +14346,6 @@ CNewParticleEffect::DetectChanges
 CNmAimCSTask::TrySetupSolverData
 CNmChainLookatNode::CDefinition::InstantiateNode
 CNmChainLookatTask::CNmChainLookatTask
-CNmEventConsumerPulse
-CNmFloatChannelData
-CNmFloatChannelData::ChannelSettings_t
-CNmFloatChannelSet_t
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::ExecutePostPhysicsPoseTasks
 CNmGraphInstance::ExecutePrePhysicsPoseTasks
@@ -14489,7 +14419,6 @@ CParticleMgr::SimulateParticles(), C:\buildworker\csgo_rel_win64\build\src\parti
 CParticleProperty::AddControlPoint
 CParticleProperty::SetControlPoint
 CParticleSystem::ClientThink SkipToTime
-CParticleSystemAPI
 CParticleSystemAPI::DestroyImmediately
 CParticleSystemAPI::Freeze
 CParticleSystemAPI::SetControlPoint
@@ -14558,7 +14487,6 @@ CPointTemplateAPI::DeleteCreatedSpawnGroups
 CPointTemplateAPI::ForceSpawn
 CPointTemplateAPI::ForceSpawnAtLocation
 CPointTemplateAPI::ForceSpawnReturnEntities
-CPointValueRemapperAPI
 CPopupWorkshopAnnotationSubmit::WorkshopAnnotationSubmit
 CPopupWorkshopSubmit::WorkshopMtxItemSubmit
 CPreMatchInfoData
@@ -14613,7 +14541,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -14646,7 +14573,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -14722,7 +14648,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -14733,7 +14658,6 @@ CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
 CQuantizedVectorBase<class CNetworkOriginCellCoordQuantizedVector,class Vec3D<float> >::SetNetworkStateChangedRouter
 CR&C
-CREATE_CHILD_CURSOR_OUTFLOW
 CRL Sign
 CRL has expired
 CRL is not yet valid
@@ -14797,7 +14721,6 @@ CSGO Vanity Overlay View
 CSGO game instructor
 CSGO-
 CSGO-cXRt7-URURp-wo2kd-n4VTi-oTc3K
-CSGO/Bomb Damage
 CSGOApplyLowLatencyVSyncRecommendation
 CSGOApplyVideoSettings
 CSGOAspectRatioSelectionChanged
@@ -14999,91 +14922,11 @@ CSOPersonaDataPublic
 CSOQuestProgress
 CSOVolatileItemClaimedRewards
 CSOVolatileItemOffer
-CSPE_DamageTag
-CSPE_PlayerTeleport
 CSPName
 CSPlayerManifest_global_client
 CSPrewarmPanorama
 CSVCMsg_HLTVStatus_t
 CSWeaponSystem
-CS_UM_AchievementEvent
-CS_UM_AdjustMoney
-CS_UM_AmmoDenied
-CS_UM_BarTime
-CS_UM_CallVoteFailed
-CS_UM_ClientInfo
-CS_UM_CloseCaption
-CS_UM_CloseCaptionDirect
-CS_UM_CounterStrafe
-CS_UM_CurrentRoundOdds
-CS_UM_CurrentTimescale
-CS_UM_Damage
-CS_UM_DamagePrediction
-CS_UM_DeepStats
-CS_UM_DesiredTimescale
-CS_UM_DisconnectToLobby
-CS_UM_DisconnectToLobby2
-CS_UM_EndOfMatchAllPlayersData
-CS_UM_EntityOutlineHighlight
-CS_UM_Fade
-CS_UM_GameTitle
-CS_UM_Geiger
-CS_UM_HintText
-CS_UM_HudMsg
-CS_UM_HudText
-CS_UM_ItemDrop
-CS_UM_ItemPickup
-CS_UM_KeyHintText
-CS_UM_KillCam
-CS_UM_MarkAchievement
-CS_UM_MatchEndConditions
-CS_UM_MatchStatsUpdate
-CS_UM_PlayerDecalDigitalSignature
-CS_UM_PlayerStatsUpdate
-CS_UM_PostRoundDamageReport
-CS_UM_ProcessSpottedEntityUpdate
-CS_UM_QuestProgress
-CS_UM_RadioText
-CS_UM_RawAudio
-CS_UM_RecurringMissionSchema
-CS_UM_ReloadEffect
-CS_UM_ReportHit
-CS_UM_RequestState
-CS_UM_ResetHud
-CS_UM_RoundBackupFilenames
-CS_UM_RoundEndReportData
-CS_UM_Rumble
-CS_UM_SSUI
-CS_UM_SayText
-CS_UM_SayText2
-CS_UM_ScoreLeaderboardData
-CS_UM_SendAudio
-CS_UM_SendLastKillerDamageToClient
-CS_UM_SendPlayerItemDrops
-CS_UM_SendPlayerItemFound
-CS_UM_SendPlayerLoadout
-CS_UM_ServerRankRevealAll
-CS_UM_ServerRankUpdate
-CS_UM_Shake
-CS_UM_ShootInfo
-CS_UM_ShowMenu
-CS_UM_StopSpectatorMode
-CS_UM_SurvivalStats
-CS_UM_TextMsg
-CS_UM_Train
-CS_UM_UpdateScreenHealthBar
-CS_UM_UpdateTeamMoney
-CS_UM_VGUIMenu
-CS_UM_VoiceMask
-CS_UM_VoteFailed
-CS_UM_VotePass
-CS_UM_VoteSetup
-CS_UM_VoteStart
-CS_UM_WeaponMagDrop
-CS_UM_WeaponSound
-CS_UM_XRankGet
-CS_UM_XRankUpd
-CS_UM_XpUpdate
 CSaveMemory
 CSceneEntity %s :"%s" invalid vnmclip "%s" for channel "%s"\n
 CSceneEntity %s :"%s" no channel name for vnmclip "%s"\n
@@ -15120,7 +14963,6 @@ CSoundOpGameSystem::SetLibraryStackField: Faied library stack message to: %s, %s
 CSoundOpGameSystem::SetSoundEventParam: Failed cached soundevent param message\n
 CSoundOpGameSystem::SetSoundEventParam: Failed soundevent param message to: %s\n
 CSoundOpGameSystem::StopSoundEvent: Attempting to stop non-existent soundevent: %s\n
-CSoundOpvarSetBoxEntity
 CSoundPatch:  invalid entity on sound %s\n
 CSoundPatch::Init called with NULL pEnt, playing from world instead\n
 CSoundPatch::ResumeSound: Lost EHAndle on restore - destroy the sound patch in your entity's StopLoopingSounds! (%s)\n
@@ -15680,20 +15522,11 @@ C_CS2HudModelArms::AG2_PushAnimTransformsToSkeletonInstance
 C_CS2HudModelArms::UpdateAndSetupView
 C_CS2PartyPeerGroup: Received MM update causing rebuild of peer list: %s\n
 C_CS2VoicePeerGroup
-C_CSGO_MapPreviewCameraPathNode_API
-C_CSGO_MapPreviewCameraPath_API
 C_CSGO_PreviewModel Load Model
-C_CSGO_PreviewModel_API
 C_CSGO_PreviewModel_API::SetItem
-C_CSGO_PreviewPlayer_API
-C_CSGO_TeamPreviewCamera_API
 C_CSGameRules *
 C_CSGameRules*
-C_CSObserverPawn_API
-C_CSPlayerPawnBase_API
-C_CSPlayerPawn_API
 C_CSWeaponBase::GetEconWpnData
-C_CsmFovOverride_API
 C_DynamicProp::HandleSpawnBackCompat
 C_DynamicPropAnimThink
 C_EnvWindControllerWindThink
@@ -15910,7 +15743,6 @@ Chinatown
 Chlorine
 Choreo Component created without a valid CBaseModelEntity.\n
 Choreo Control State
-ChoreoStrafeMode_t
 Chosen
 Chunk hash not found.
 ChunkHashFraction_t::GetBLAKE3HashContents
@@ -16449,7 +16281,6 @@ Cubemap %s has invalid radiance coefficients!
 Cubemap is still loaded -- will force reload after map load: %s\n
 CuesContainer
 Cultivating Trouble
-Current
 Current frame %d
 Current sound patches: %d\n
 CurrentState
@@ -16513,15 +16344,6 @@ DEF_SERIAL_CB
 DEF_TIME_CB
 DEK-Info: 
 DELAYED_SHOW
-DEM_ClassInfo
-DEM_Error
-DEM_FileInfo
-DEM_Packet
-DEM_Recovery
-DEM_SaveGame
-DEM_SyncTick
-DEM_UserCmd
-DEPRECATED_FIELD_AI_SCHEDULE_BITS
 DER:
 DES part of OpenSSL 1.0.2j  26 Sep 2016
 DES(40)
@@ -16614,17 +16436,11 @@ DH_generate_key
 DH_generate_parameters_ex
 DH_new_method
 DHparams_print_fp
-DIALOG_ENTRY
-DIALOG_MENU
-DIALOG_MSG
-DIALOG_TEXT
-DIALOG_TYPE
 DIRECT
 DIRECTORYSTRING
 DIR_ADD
 DIR_CTRL
 DIR_LOAD
-DISABLE
 DISABLED
 DISPLAYTEXT
 DISPLAY_LIMIT
@@ -16933,7 +16749,6 @@ DefIdx
 DefIndex
 Default Game Description
 Default In
-Default NPC
 Default Out
 Default Pistol Round
 Default.ClipEmpty_Pistol
@@ -16994,7 +16809,6 @@ Depth Resolve
 DepthPyramid
 DeregisterEventSource
 Desc
-Describe PredictionMap_t for entindex
 DescriptionText
 DescriptionTextSS
 DeserializeFromProtoBufItem
@@ -17077,7 +16891,6 @@ DispatchPanelEvent
 DispatchVideoPlayerEvent
 Dispatched when a new chat entry is added to the main menu chat body.
 Display flair image and medal text for the given player xuid (and skillgroup)
-Display the convars on the screen in big text. Use semicolons to separate multiple convars
 Display the string in the center of the hud.
 DisplayEnum
 DisplayModeEnum
@@ -17222,7 +17035,6 @@ DropDownSelectionChanged
 DropInfo
 DropInputFocus
 DropdownMenuFocusChanged
-Dropped grenades detonate when shot.
 DroppedBomb
 DsBV
 Dsnd_report_c4_sounds
@@ -17282,11 +17094,6 @@ E5tq
 E;5k
 E?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z
 EA/c
-EBaseClientMessages
-EBaseEntityMessages
-EBaseGameEvents
-EBasePredictionEvents
-EBaseUserMessages
 EC PARAMETERS
 EC PRIVATE KEY
 EC lib
@@ -17367,8 +17174,6 @@ ECP_NIST_MOD_256
 ECP_NIST_MOD_521
 ECParameters_print
 ECParameters_print_fp
-ECSPredictionEvents
-ECSUsrMsg_DisconnectToLobby_Action
 EC_ASN1_GROUP2CURVE
 EC_ASN1_GROUP2FIELDID
 EC_ASN1_GROUP2PARAMETERS
@@ -17434,58 +17239,18 @@ EC_POINTs_make_affine
 EC_PRE_COMP_DUP
 EC_PRE_COMP_NEW
 EC_PRIVATEKEY
-EChickenActivity
-EClientReportingVersion
-EClientUIEvent
-EClientUIEvent_DialogFinished
-EClientUIEvent_FireOutput
-EClientUIEvent_Invalid
-ECommunityItemAttribute
-ECommunityItemClass
-ECsgoGCMsg
-ECsgoGameEvents
-ECsgoSteamUserStat
-ECstrike15UserMessages
 EDH-DSS-DES-CBC3-SHA
 EDH-RSA-DES-CBC3-SHA
 EDIPARTYNAME
-EDemoCommands
 EECDH
 EFlags=0x%X  Effects=0x%X
-EGCBaseClientMsg
-EGCBaseMsg
-EGCBaseProtoObjectTypes
-EGCItemCustomizationNotification
-EGCItemMsg
-EGCMsgResponse
-EGCSystemMsg
-EGCToGCMsg
 EG{M
 EHANDLE
-EHG_Chest
-EHG_Gear
-EHG_Generic
-EHG_Head
-EHG_LeftArm
-EHG_LeftLeg
-EHG_Miss
-EHG_RightArm
-EHG_RightLeg
-EHG_Stomach
 EHandleContext
-EHapticPulseType
-EHitGroup
-EInitSystemResult
 ELEAGUE 2018 Boston CS:GO Major Championship
 ELEAGUE Atlanta 2017 CS:GO Championship
 ELF0
-EM_DoSpark
-EM_FixAngle
-EM_PlayJingle
-EM_PropagateForce
-EM_ScreenOverlay
 EN2 s/
-ENABLE
 ENCRYPTED
 ENCRYPTED PRIVATE KEY
 ENERGYBEAM
@@ -17525,9 +17290,6 @@ ENT TEXT STICKY NAMES\n
 ENTITY1
 ENTITY2
 ENTITYFUNCPTR
-ENTITY_POOL_STATE_AVAILABLE
-ENTITY_POOL_STATE_INVALID
-ENTITY_POOL_STATE_IN_USE
 ENUM
 ENUMERATED
 ENotificationSetting
@@ -17543,7 +17305,6 @@ ESL One Cologne 2014 CS:GO Championship
 ESL One Cologne 2015 CS:GO Championship
 ESL One Cologne 2016 CS:GO Championship
 ESL One Katowice 2015 CS:GO Championship
-ESOMsg
 ESS_ADD_SIGNING_CERT
 ESS_CERT_ID_NEW_INIT
 ESS_SIGNING_CERT_NEW_INIT
@@ -17551,15 +17312,8 @@ ET:  AccumulateElapsedTime %u seconds to %u, now at %s\n
 ET:  AccumulateElapsedTime( %s ) at %d\n
 ET:  SetMostRecentElapsedTime( %s ) at %d\n
 ETABLE
-ETEProtobufIds
-ET_CT
-ET_Spectator
-ET_Terrorist
-ET_Unknown
 ET`K\
-ETeam
 ETh7
-EUnlockStyle
 EVENT_LEVELSHUTDOWN:  with negative elapsed time (rt %f starttime %f)\n
 EVP lib
 EVP part of OpenSSL 1.0.2j  26 Sep 2016
@@ -17614,19 +17368,6 @@ EVP_PKEY_verify_recover_init
 EVP_RIJNDAEL
 EVP_SignFinal
 EVP_VerifyFinal
-EWT_C4
-EWT_Equipment
-EWT_Grenade
-EWT_Knife
-EWT_MachineGun
-EWT_Pistol
-EWT_Rifle
-EWT_Shotgun
-EWT_SniperRifle
-EWT_StackableItem
-EWT_SubMachineGun
-EWT_Unknown
-EWeaponType
 EXP-DHE-DSS-DES-CBC-SHA
 EXP-DHE-RSA-DES-CBC-SHA
 EXPERIMENTAL: Sets a more-complex brush for the entire border paint area (ignores normal border color).<br><br><b>Examples:</b><pre>border-brush: gradient( linear, 0% 0%, 0% 100%, from( #fbfbfbff ), to( #c0c0c0c0 ) );\nborder-brush: gradient( linear, 0% 0%, 0% 100%, from( #fbfbfbff ), color-stop( 0.3, #ebebebff ), to( #c0c0c0c0 ) );\nborder-brush: gradient( radial, 50% 50%, 0% 0%, 80% 80%, from( #00ff00ff ), to( #0000ffff ) );</pre>
@@ -17712,7 +17453,6 @@ EmitSoundOnClient
 Empire
 Empty
 EmptyWorldService001_Client
-Enable
 Enable : %d SplitScreen %X
 Enable Refire
 Enable this entity.
@@ -17808,7 +17548,6 @@ EntityAxis
 EntityBounds
 EntityDebugGameSystem
 EntityDebugSaveData
-EntityDissolveType_t
 EntityFramework
 EntityIO Parameter Type Mismatch! See log lines above for details.
 EntityKey
@@ -17826,7 +17565,6 @@ EntityText
 Entity_%s
 Ents Registered for Animation Update: %i\n
 Enum flags '%s' invalid value '%s'
-Enum support.
 EnumerateLocalizationStringVariants
 EnumerateUserFiles
 Enumeration '%s' does not have a value '%s'
@@ -17974,8 +17712,6 @@ FFADE_OUT
 FFADE_PURGE
 FFADE_STAYOUT
 FIELD_EMBEDDED in flat list!!!
-FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTORWS
-FIELD_NETWORK_QUANTIZED_VECTORWS
 FILE pointer
 FILE=%s\n
 FILE_CTRL
@@ -18037,7 +17773,6 @@ Faceposer_LookTypeSuggestions
 Faceposer_SequenceNameSuggestions
 Fachwerk
 Facial Animation
-Facing Services
 Fact
 Fade To Black
 FadeInDist
@@ -18403,75 +18138,13 @@ GAMEINSTRUCTOR_SAVE_RESTORE_VERSION
 GAMEPAD_BINDING
 GAMEUI_Stat_MatchesPlayedGG
 GAME_DISPLAY_TYPE
-GAME_PARTICLE_MANAGER_EVENT_ADD_FAN
-GAME_PARTICLE_MANAGER_EVENT_ADD_MODELLIST_OVERRIDE_ELEMENT
-GAME_PARTICLE_MANAGER_EVENT_CAN_FREEZE
-GAME_PARTICLE_MANAGER_EVENT_CHANGE_CONTROL_POINT_ATTACHMENT
-GAME_PARTICLE_MANAGER_EVENT_CLEAR_MODELLIST_OVERRIDE
-GAME_PARTICLE_MANAGER_EVENT_CREATE
-GAME_PARTICLE_MANAGER_EVENT_CREATE_PHYSICS_SIM
-GAME_PARTICLE_MANAGER_EVENT_CREATE_SMOKE_GRID
-GAME_PARTICLE_MANAGER_EVENT_DESTROY
-GAME_PARTICLE_MANAGER_EVENT_DESTROY_INVOLVING
-GAME_PARTICLE_MANAGER_EVENT_DESTROY_NAMED
-GAME_PARTICLE_MANAGER_EVENT_DESTROY_PHYSICS_SIM
-GAME_PARTICLE_MANAGER_EVENT_FREEZE_INVOLVING
-GAME_PARTICLE_MANAGER_EVENT_FREEZE_TRANSITION_OVERRIDE
-GAME_PARTICLE_MANAGER_EVENT_FROZEN
-GAME_PARTICLE_MANAGER_EVENT_LATENCY
-GAME_PARTICLE_MANAGER_EVENT_RELEASE
-GAME_PARTICLE_MANAGER_EVENT_REMOVE_FAN
-GAME_PARTICLE_MANAGER_EVENT_SET_CLUSTER_GROWTH
-GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_MODEL
-GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_SNAPSHOT
-GAME_PARTICLE_MANAGER_EVENT_SET_FOW_PROPERTIES
-GAME_PARTICLE_MANAGER_EVENT_SET_MATERIAL_OVERRIDE
-GAME_PARTICLE_MANAGER_EVENT_SET_NAMED_VALUE_CONTEXT
-GAME_PARTICLE_MANAGER_EVENT_SET_OVERRIDE_TEXTURE
-GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_GENERIC_FLAG
-GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_TINT_AND_DESAT
-GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW
-GAME_PARTICLE_MANAGER_EVENT_SET_TEXT
-GAME_PARTICLE_MANAGER_EVENT_SET_TEXTURE_ATTRIBUTE
-GAME_PARTICLE_MANAGER_EVENT_SET_VDATA
-GAME_PARTICLE_MANAGER_EVENT_SHOULD_DRAW
-GAME_PARTICLE_MANAGER_EVENT_SKIP_TO_TIME
-GAME_PARTICLE_MANAGER_EVENT_UPDATE
-GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENT
-GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
-GAME_PARTICLE_MANAGER_EVENT_UPDATE_FALLBACK
-GAME_PARTICLE_MANAGER_EVENT_UPDATE_FAN
-GAME_PARTICLE_MANAGER_EVENT_UPDATE_FORWARD
-GAME_PARTICLE_MANAGER_EVENT_UPDATE_OFFSET
-GAME_PARTICLE_MANAGER_EVENT_UPDATE_ORIENTATION
-GAME_PARTICLE_MANAGER_EVENT_UPDATE_TRANSFORM
 GB=\nHB
 GBd<}v
 GBuffer
 GC sent empty missions list?
 GCClient
-GCClientLauncherType
-GCClientLauncherType_DEFAULT
-GCClientLauncherType_PERFECTWORLD
-GCClientLauncherType_SOURCE2
-GCClientLauncherType_STEAMCHINA
-GCConnectionStatus
-GCConnectionStatus_GC_GOING_DOWN
-GCConnectionStatus_HAVE_SESSION
-GCConnectionStatus_NO_SESSION
-GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE
-GCConnectionStatus_NO_STEAM
 GCHost
-GCProtoBufMsgSrc
-GCProtoBufMsgSrc_FromGC
-GCProtoBufMsgSrc_FromSteamID
-GCProtoBufMsgSrc_FromSystem
-GCProtoBufMsgSrc_ReplySystem
-GCProtoBufMsgSrc_Unspecified
 GCUserTrackTimePlayedConsecutively( %u )\n
-GC_BANNED_WORD_DISABLE_WORD
-GC_BANNED_WORD_ENABLE_WORD
-GC_BannedWordType
 GENERALIZEDTIME
 GENERALSTRING
 GENERAL_ALLOCATE_BOOLEAN
@@ -18494,25 +18167,6 @@ GET_SERVER_FINISHED
 GET_SERVER_HELLO
 GET_SERVER_STATIC_DH_KEY
 GET_SERVER_VERIFY
-GE_ClearDecalsForEntityEvent
-GE_ClearEntityDecalsEvent
-GE_ClearWorldDecalsEvent
-GE_ClothEffectAnimEvent
-GE_ClothStiffenAnimEvent
-GE_FireBulletsId
-GE_PlaceDecalEvent
-GE_PlayerAnimEventId
-GE_PlayerBulletHitId
-GE_RadioIconEventId
-GE_SosSetLibraryStackFields
-GE_SosSetSoundEventParams
-GE_SosStartSoundEvent
-GE_SosStopSoundEvent
-GE_SosStopSoundEventHash
-GE_Source1LegacyGameEvent
-GE_Source1LegacyGameEventList
-GE_Source1LegacyListenEvents
-GE_VDebugGameSessionIDEvent
 GGet a list of friends who are playing, have played, own, or want a game
 GI.lesson.%s
 GL.n
@@ -19482,7 +19136,6 @@ Gew}
 GiftLeaderboardEntry
 GlassImpact
 GlassImpact_global_client
-Glide
 Glitter
 Global ongoing matches:   %u\n
 Global players online:    %u\n
@@ -19570,7 +19223,6 @@ Grenade_MOLOTOV
 Grenade_SMOKE
 Grenades
 Grind
-Ground Root Motion Motor
 Group Stage | Decider Match
 Group Stage | Decider Match 1 of 3
 Group Stage | Decider Match 2 of 3
@@ -20112,7 +19764,6 @@ INT_NEW_EX_DATA
 INT_RSA_VERIFY
 INT_TS_RESP_VERIFY_TOKEN
 INVALID CGameEventStartTouchCollideAdaptor
-INavPathCostAreaFilter
 INdK
 IP Address
 IP Address:%d.%d.%d.%d
@@ -20154,7 +19805,6 @@ If 'loop = true', how many times to loop before stopping. -1 == infinite
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
 If >= 0, drags longer than this distance will suppress mouse click events (e.g. onactivate of embedded panels)
-If a joint's entire name matches (case insensitive), it will be displayed.
 If left empty, will default to the owner entity of this scene, meaning that the relative position will actually be the world position
 If set, how many frames in the sprite sheet. Default assumes every space in image is filled.
 If specified, each wait interval will vary randomly between WaitInterval this value
@@ -20785,7 +20435,6 @@ Keychain definition %s: unsupported item_quality '%s'
 KeychainMarkup
 KeychainRemoveToolCharges
 Keychains
-Keys
 Kick
 Kick a player from the party. Only usable by lobby host
 KickPlayer
@@ -21123,10 +20772,8 @@ MLDict
 MLEvent
 MLG Columbus 2016 CS:GO Championship
 MLTick
-MM:SS with leading zeros
 MMStatus
 MM[%.1f]ANC[%d]
-MM_SS_LEADING_ZERO
 MModelGameData
 MNetworkVarChainer
 MODIFIER_VALUE_HEAT_DELAY
@@ -21460,7 +21107,6 @@ Mood: %s
 MoodName
 Moods File
 Motel
-Motor Services
 MouseDown
 MousePanning
 MousePanningImage
@@ -21597,101 +21243,7 @@ NETSCAPE_SPKAC
 NETSCAPE_SPKI
 NETSCAPE_SPKI_b64_decode
 NETSCAPE_SPKI_b64_encode
-NETWORK_DISCONNECT_BADRELAYPASSWORD
-NETWORK_DISCONNECT_BADSPECTATORPASSWORD
-NETWORK_DISCONNECT_BAD_SERVER_PASSWORD
-NETWORK_DISCONNECT_CLIENT_CONSISTENCY_FAIL
-NETWORK_DISCONNECT_CLIENT_DIFFERENT_MAP
-NETWORK_DISCONNECT_CLIENT_NO_MAP
-NETWORK_DISCONNECT_CLIENT_UNABLE_TO_CRC_MAP
-NETWORK_DISCONNECT_CONNECTION_FAILURE
-NETWORK_DISCONNECT_CONNECT_REQUEST_TIMEDOUT
-NETWORK_DISCONNECT_CREATE_SERVER_FAILED
-NETWORK_DISCONNECT_DELTAENTMSG_OVERFLOW
-NETWORK_DISCONNECT_DIFFERENTCLASSTABLES
-NETWORK_DISCONNECT_DIRECT_CONNECT_RESERVATION
-NETWORK_DISCONNECT_DISCONNECT_BY_SERVER
-NETWORK_DISCONNECT_DISCONNECT_BY_USER
-NETWORK_DISCONNECT_HLTVRESTRICTED
-NETWORK_DISCONNECT_HLTVUNAVAILABLE
-NETWORK_DISCONNECT_INTERNAL_ERROR
-NETWORK_DISCONNECT_INVALID_MESSAGE_ERROR
-NETWORK_DISCONNECT_KICKED_COMPETITIVECOOLDOWN
-NETWORK_DISCONNECT_KICKED_CONVICTEDACCOUNT
-NETWORK_DISCONNECT_KICKED_HOSTAGEKILLING
-NETWORK_DISCONNECT_KICKED_INPUTAUTOMATION
-NETWORK_DISCONNECT_KICKED_INSECURECLIENT
-NETWORK_DISCONNECT_KICKED_NOSTEAMLOGIN
-NETWORK_DISCONNECT_KICKED_NOSTEAMTICKET
-NETWORK_DISCONNECT_KICKED_SUICIDE
-NETWORK_DISCONNECT_KICKED_TEAMHURTING
-NETWORK_DISCONNECT_KICKED_TEAMKILLING
-NETWORK_DISCONNECT_KICKED_TK_START
-NETWORK_DISCONNECT_KICKED_UNTRUSTEDACCOUNT
-NETWORK_DISCONNECT_KICKED_VACNETABNORMALBEHAVIOR
-NETWORK_DISCONNECT_KICKED_VOTEDOFF
-NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
-NETWORK_DISCONNECT_LOCALPROBLEM_MANYRELAYS
-NETWORK_DISCONNECT_LOCALPROBLEM_NETWORKCONFIG
-NETWORK_DISCONNECT_LOCALPROBLEM_OTHER
-NETWORK_DISCONNECT_LOOPDEACTIVATE
-NETWORK_DISCONNECT_LOOP_LEVELLOAD_ACTIVATE
-NETWORK_DISCONNECT_MESSAGE_PARSE_ERROR
-NETWORK_DISCONNECT_NO_PEER_GROUP_HANDLERS
-NETWORK_DISCONNECT_PURESERVER_CLIENTEXTRA
-NETWORK_DISCONNECT_PURESERVER_MISMATCH
-NETWORK_DISCONNECT_REJECTED_BY_GAME
-NETWORK_DISCONNECT_REJECT_BACKGROUND_MAP
-NETWORK_DISCONNECT_REJECT_BADCHALLENGE
-NETWORK_DISCONNECT_REJECT_BADPASSWORD
-NETWORK_DISCONNECT_REJECT_BANNED
-NETWORK_DISCONNECT_REJECT_CONNECT_FROM_LOBBY
-NETWORK_DISCONNECT_REJECT_FAILEDCHANNEL
-NETWORK_DISCONNECT_REJECT_HIDDEN_GAME
-NETWORK_DISCONNECT_REJECT_INVALIDCERTLEN
-NETWORK_DISCONNECT_REJECT_INVALIDCONNECTION
-NETWORK_DISCONNECT_REJECT_INVALIDKEYLENGTH
-NETWORK_DISCONNECT_REJECT_INVALIDRESERVATION
-NETWORK_DISCONNECT_REJECT_INVALIDSTEAMCERTLEN
-NETWORK_DISCONNECT_REJECT_LANRESTRICT
-NETWORK_DISCONNECT_REJECT_NEWPROTOCOL
-NETWORK_DISCONNECT_REJECT_NOLOBBY
-NETWORK_DISCONNECT_REJECT_OLDPROTOCOL
-NETWORK_DISCONNECT_REJECT_RESERVED_FOR_LOBBY
-NETWORK_DISCONNECT_REJECT_SERVERAUTHDISABLED
-NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
-NETWORK_DISCONNECT_REJECT_SERVERFULL
-NETWORK_DISCONNECT_REJECT_SINGLE_PLAYER
-NETWORK_DISCONNECT_RELIABLEOVERFLOW
-NETWORK_DISCONNECT_REMOTE_BADCRYPT
-NETWORK_DISCONNECT_REMOTE_CERTNOTTRUSTED
-NETWORK_DISCONNECT_REMOTE_TIMEOUT
-NETWORK_DISCONNECT_REMOTE_TIMEOUT_CONNECTING
-NETWORK_DISCONNECT_REPLAY_INCOMPATIBLE
-NETWORK_DISCONNECT_REQUEST_HOSTSTATE_HLTVRELAY
-NETWORK_DISCONNECT_REQUEST_HOSTSTATE_IDLE
-NETWORK_DISCONNECT_SERVERINFO_OVERFLOW
-NETWORK_DISCONNECT_SERVER_INCOMPATIBLE
-NETWORK_DISCONNECT_SERVER_REQUIRES_STEAM
-NETWORK_DISCONNECT_SERVER_SHUTDOWN
-NETWORK_DISCONNECT_SNAPSHOTERROR
-NETWORK_DISCONNECT_SNAPSHOTOVERFLOW
-NETWORK_DISCONNECT_SOUNDSMSG_OVERFLOW
-NETWORK_DISCONNECT_STEAM_AUTHALREADYUSED
-NETWORK_DISCONNECT_STEAM_AUTHCANCELLED
-NETWORK_DISCONNECT_STEAM_AUTHINVALID
-NETWORK_DISCONNECT_STEAM_DENY_BAD_ANTI_CHEAT
-NETWORK_DISCONNECT_STEAM_DENY_MISC
-NETWORK_DISCONNECT_STEAM_DROPPED
-NETWORK_DISCONNECT_STEAM_LOGGED_IN_ELSEWHERE
-NETWORK_DISCONNECT_STEAM_OWNERSHIP
-NETWORK_DISCONNECT_STEAM_VACBANSTATE
-NETWORK_DISCONNECT_STEAM_VAC_CHECK_TIMEDOUT
-NETWORK_DISCONNECT_STRINGTABLEMSG_OVERFLOW
-NETWORK_DISCONNECT_TEMPENTMSG_OVERFLOW
-NETWORK_DISCONNECT_TICKMSG_OVERFLOW
 NETWORK_FIELD_CHANGES_OFTEN_PRIORITY
-NET_Messages
 NEVERGIB
 NEW CERTIFICATE REQUEST
 NIST CURVE: %s\n
@@ -21720,9 +21272,6 @@ NOTICEREF
 NOTICE_SECTION
 NO_ICON_TARGET
 NO_OFFSCREEN
-NPC Anim AI Handshakes
-NPC God Mode
-NPC Path Queries
 NREF_NOS
 NULL CELL 
 NULL shared library method
@@ -21756,7 +21305,6 @@ NavigationCancel
 NavigationContainer
 NavigationReplay
 NavigationSnapshot
-Navigator
 Near Blurry Distance
 Near Crisp Distance
 Need to be running in -tools mode for minimap creation\n
@@ -22016,9 +21564,6 @@ OSType
 OTHERNAME
 OUTPUT
 OUTPUT!%s::%s
-OVERLAY_NPC_ANIM_AI_HANDSHAKES_BIT
-OVERLAY_NPC_GOD_MODE
-OVERLAY_NPC_PATH_QUERIES_BIT
 OVRWTCH1%08X
 OWC#XXXXXXX%03d
 O\n\vinvite_sent
@@ -22334,7 +21879,6 @@ P08N$
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
-P2P_Messages
 P5[1
 PAGN_4
 PANORAMA_LAYOUTFILE
@@ -22346,7 +21890,6 @@ PARSE_BAGS
 PARSE_HTTP_LINE1
 PARSE_TAGGING
 PARTICLE DETAIL %d    \t\t\t\t\t\n
-PARTICLE_MESSAGE
 PASSABLE
 PATHBYADDR
 PBE-MD2-DES
@@ -22399,7 +21942,6 @@ PEM_read_bio
 PEM_read_bio_Parameters
 PEM_write
 PEM_write_bio
-PFT_SOUND
 PGL 2017 Krakow CS:GO Major Championship
 PGL 2021 Stockholm CS:GO Major Championship
 PGL 2022 Antwerp CS:GO Major Championship
@@ -22680,7 +22222,6 @@ PanelRequestedSecondaryLayout
 PanelStart
 PanelStyleChanged
 PanelStylesInvalidated
-Panic
 Panorama
 Panorama function called with an improper team string: %s\n
 PanoramaAlphaCopy
@@ -22791,7 +22332,6 @@ Parameterized Selector: Failed to select a valid option!
 Parameters
 ParametersKV3
 Parent Map: %s\n
-Parent VData
 Parent: 
 ParentWithProperties
 Parse error on %s: %s\n
@@ -23138,7 +22678,6 @@ PredictionDiffManager001
 PredictionGameSystem
 PredictionsAPI
 PreferredItems
-PrefetchType
 PrefilterLeaderboardSafeName
 PregameDraftChat
 Preliminary Stage | Decider Match
@@ -23216,7 +22755,6 @@ ProbablyUnlocalizedText
 Problem in lesson %s: Locator_GetTargetFromHandle returned null for handle %d.\n IsInstanceActive: %s. IsInstructing: %s. IsLearned: %s\n
 Proc-Type: 
 Proc-Type: 4,
-Proceed Immediately
 Process Selector
 ProcessElement
 ProcessElements
@@ -23272,7 +22810,6 @@ Pulse: %s
 PulseAPIConvertArgumentsForCall: Binding '%s' Inparam '%s': %s
 PulseAPIFromLegacyBindingAnnotate: %s\n
 PulseClient
-PulseDurationStringFormat_t
 PulseGameSystem
 PulseRequirementName
 PulseShared
@@ -23344,7 +22881,6 @@ Quest definition %s specifies quest graph QQ expression, but uses an invalid typ
 Quest definition %s: ID must be a positive integer
 Quest definition %s: missing "name"
 Quest reward lootlist %d '%s' already exists, cannot add '%s'.
-QuestType
 Quest_OperationalPoints_Template
 Quests
 Queue AgeSaveList\n
@@ -23405,7 +22941,6 @@ READ_N
 REAL
 REMOVENORAGDOLL
 REPLACE_KEY
-REPLAY_EVENT_STUCK_NEED_FULL_UPDATE
 REQUEST_CERTIFICATE
 REQUEST_VERIFY
 RESOURCE_HANDLE_INVALID
@@ -23428,15 +22963,9 @@ RI_BombDefuserPackage
 RI_PlayerSoundContainer
 RM~]qY
 RO%s.
-ROLL_CREDITS
-ROLL_LATE_JOIN_LOGO
-ROLL_NONE
-ROLL_OUTTRO
-ROLL_STATS
 ROTATION_OFFSET
 ROUNDDOWNTIME
 RP;e!
-RP_UNPAUSE
 RSA Data Security, Inc.
 RSA Data Security, Inc. PKCS
 RSA PRIVATE KEY
@@ -24099,15 +23628,10 @@ SNMPv2
 SNtu
 SOCache
 SOFTWARE\Valve\Tournament
-SOLID_CYLINDER
 SONIC
 SOS: GetOpvar %s, %f\n
 SOURCE2 SAVE COMMENT
 SO~c
-SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES
-SPAWN_GROUP_CREATE_NEW_SCENE_WORLD
-SPAWN_GROUP_IS_INITIAL_SPAWN_GROUP
-SPAWN_GROUP_LOAD_ENTITIES_FROM_SAVE
 SQ8_d`\
 SRTP_AES128_CM_SHA1_32
 SRTP_AES128_CM_SHA1_80
@@ -24233,7 +23757,6 @@ SUITEB192
 SUPPRESS_REST
 SUWs
 SV:  CLoadingSpawnGroup::RestoreEntities destroying ignored precached entity:  %d %s [%s]\n
-SVC_Messages
 SXNET
 SXNETID
 SXNET_add_id_INTEGER
@@ -24983,7 +24506,6 @@ ShareMouse
 SharedObjectCache for %s (%d types):\n
 SharedRandomFloat
 Shark
-ShatterGlassEntityPoolState_t
 Sheep
 Shelter
 Shipped
@@ -25174,7 +24696,6 @@ Signature hook to fill out arguments for OnInterval
 Signature verification failed.
 Signed.\n
 Signing keys are set, will attempt to sign vpk.\n
-SignonState_t
 Simple Cubic
 SimpleContextMenu
 SimplePlaybackRate
@@ -25307,9 +24828,6 @@ Source1LegacyListenEvents_t
 Source2 HTML
 Source2EntitySystem
 Source2EntitySystemDeallocator
-Source2PlayStats_LowCardinalityString
-Source2PlayStats_SteamIDTrustBucket
-Source2PlayStats_SteamIDTrustBucketMin
 SourceAppID
 South
 SouthAmerica
@@ -25427,7 +24945,6 @@ Sqr Float
 Sqr Int
 Sqrt
 Square root
-Squat
 Sr89[
 St. Marc
 Stack part of OpenSSL 1.0.2j  26 Sep 2016
@@ -25492,11 +25009,6 @@ Stat_average_%d
 State: %s
 State=%s
 StateChanged
-State_01
-State_02
-State_03
-State_04
-State_05
 Static - MBOIT Pass %d
 Static AlphaTest Forward
 Static Opaque Forward
@@ -25672,7 +25184,6 @@ Sync Cycle To Time
 Sync Exit tag to next gesture Entry tag
 SyncToFollowingGesture
 SynchronizeDrawables
-Synchronous - Wait for this node to fully complete before proceeding.
 Synchronously spawn an entity group from a list of spawn tables.
 Synchronously spawns a single entity from a table
 System %s failed to init\n
@@ -25716,30 +25227,7 @@ TESmoke_GameEvent_t
 TESparks_GameEvent_t
 TEWorldDecal_GameEvent_t
 TEXTURE DETAIL\t %d    \t\t\t\t\t\n
-TE_ArmorRicochetId
-TE_BeamEntPointId
-TE_BeamEntsId
-TE_BeamPointsId
-TE_BeamRingId
-TE_BloodStreamId
-TE_BubbleTrailId
-TE_BubblesId
-TE_DecalId
-TE_DustId
-TE_EffectDispatchId
-TE_EnergySplashId
-TE_ExplosionId
-TE_FizzId
-TE_GlowSpriteId
-TE_ImpactId
-TE_LargeFunnelId
-TE_MuzzleFlashId
 TE_MuzzleFlash_client
-TE_PhysicsPropId
-TE_ShatterSurfaceId
-TE_SmokeId
-TE_SparksId
-TE_WorldDecalId
 TF_Unique_Prepend_Proper
 TGhost
 TIMEOUT
@@ -26007,7 +25495,6 @@ The entity team number
 The number of seconds remaining before we start playing counter sounds every second.
 Thera
 Thinking Entities:\n\n
-This NPC will take no damage or react to it
 This is an S/MIME signed message%s%s
 This is the overall duration. If -1 timer will continue forever. During this duration, we will fire a new child cursor at each Interval.
 Thread "%s" (ID %llu) failed to shut down
@@ -26199,7 +25686,6 @@ Tried to add game system %s twice!\n
 Tried to add unknown game system %s!\n
 Tried to load a polymorphic pointer with no '%s' key
 Tried to load resource reference '%s' from a value without a resource reference specific type.
-Trigger
 Trigger Name
 Trigger the relay, causing its OnTrigger output to fire if it is enabled.
 Trigger( hActivator, hCaller ) : Triggers the logic_relay
@@ -26329,57 +25815,6 @@ UI_dup_verify_string
 UI_get0_result
 UI_new_method
 UI_set_result
-UM_AchievementEvent
-UM_AmmoDenied
-UM_AnimGraphUpdate
-UM_AudioParameter
-UM_CameraTransition
-UM_CloseCaptionPlaceholder
-UM_ColoredText
-UM_CreditsMsg
-UM_CurrentTimescale
-UM_CustomGameEvent
-UM_DesiredTimescale
-UM_DiagnosticResponse
-UM_DllStatusResponse
-UM_ExtraUserData
-UM_Fade
-UM_GameTitle
-UM_HapticsManagerEffect
-UM_HapticsManagerPulse
-UM_HudError
-UM_HudMsg
-UM_HudText
-UM_InventoryResponse
-UM_ItemPickup
-UM_LagCompensationError
-UM_MAX_BASE
-UM_NotifyResponseFound
-UM_ParticleManager
-UM_PlayResponseConditional
-UM_RequestDiagnostic
-UM_RequestDllStatus
-UM_RequestInventory
-UM_RequestState
-UM_RequestUtilAction
-UM_ResetHUD
-UM_Rumble
-UM_SayText
-UM_SayText2
-UM_SayTextChannel
-UM_ScreenTilt
-UM_SendAudio
-UM_ServerFrameTime
-UM_Shake
-UM_ShakeDir
-UM_ShowMenu
-UM_TextMsg
-UM_UpdateCssClasses
-UM_UsageReport
-UM_UserSentBugBug
-UM_UtilActionResponse
-UM_VoiceMask
-UM_WaterShake
 UNASSIGNED
 UNCHANGED
 UNDEF
@@ -26652,7 +26087,6 @@ V8ParamToPanoramaType expected object type to convert, but got something else (%
 VAC banned
 VALV
 VALVw
-VDATA
 VDPr
 VData:%s
 VDataChoice( %s )
@@ -26688,9 +26122,6 @@ VPK directory for '%s' corrupt
 VPK: Check file %s Length %d MD5 %s \n
 VPK: Wrote file %s Length %d MD5 %s \n
 VRSceneID
-VR_HAND_HAPTIC_PULSE_LIGHT
-VR_HAND_HAPTIC_PULSE_MEDIUM
-VR_HAND_HAPTIC_PULSE_STRONG
 VSCRIPT: Started VScript virtual machine using script language '%s'\n
 VSMapPreviewPanel
 VScript error: Invalid entity handle passed to IsMarkedForDelete.\n 
@@ -26701,7 +26132,6 @@ V\rKk
 V\tV_iswspace
 V_a|I
 Valid options: 1 = Desktop, 2 = Classic.\n
-Validate consistency of delta-encoded user commands.  Requires server to have sv_cq_validate_encoded_svc_usercmds enabled.
 ValidateDirectChallengeCode
 Value 0-1 how far along duration (always 0 if duration is -1)
 Value set w/o name
@@ -26933,7 +26363,6 @@ Waiting for rendering to complete...\n
 Wake Cursors With Tag
 WakeDependentJobFinished
 WakeGotLock
-Walk
 WalkSpeed
 Wants Handshake
 Warden
@@ -27043,8 +26472,6 @@ Whale
 When specifying keyvalues to spawn or precache, you must specify a classname!\n
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
-While False
-While True
 While in a party we allow launching a warmup map.
 While open event 
 Whistle
@@ -28703,7 +28130,6 @@ activator
 active-graph
 active_frame
 active_hud_model_weapon
-active_motor
 active_section_id
 active_survey_id
 active_tournament_eventid
@@ -29058,7 +28484,6 @@ animclip_is_looping
 animclip_is_public
 animclip_public_name
 animdebugger
-animgraph
 animgraph2_clip
 animgraph2_editor
 animgraph2_graph
@@ -29352,7 +28777,6 @@ bJ*h
 bLocalize
 bN.l
 bPb:L7X)
-bSaveObject
 bSh&+
 bSkillgroupDataReady
 bValue
@@ -29365,7 +28789,6 @@ b\nP\t0
 b\n\fdescriptor_t
 b\vp\n0
 b]jY
-b_goal_completion_allowed
 b_switched_teams
 baboon
 back
@@ -29467,7 +28890,6 @@ bad write retry
 bad x509 filetype
 badger
 badges
-bake_bomb_damage_render_visualization
 baked_light_indexing
 bakedshadowindex
 bakespeculartocubemaps
@@ -30029,7 +29451,6 @@ catmullrom
 catmullrom_normalize
 catmullrom_normalize_x
 catmullrom_tangent
-cc_force_combine_chatter
 cc_noattenuate
 ccs received early
 cctoken
@@ -30170,14 +29591,12 @@ cl: Number of server hitboxes (%d) does not match client (%d)\n
 cl: ReadFrameInput - Presented data has no mod info\n
 cl_accountprivacysetting%d
 cl_accountprivacysetting1
-cl_bake_bomb_damage_debug
 cl_decryptdata_key
 cl_decryptdata_key "";\n
 cl_decryptdata_key %016llX;\n
 cl_decryptdata_key_pub
 cl_decryptdata_key_pub "";\n
 cl_decryptdata_key_pub %016llX;\n
-cl_ent_joint_filter_name
 cl_ent_setang used on server-authoritative entity %d\n
 cl_ent_setang: no entity %d\n
 cl_ent_setpos used on server-authoritative entity %d\n
@@ -30193,7 +29612,6 @@ cl_inv_volatile_limits = %s
 cl_inv_volatile_limits_rt
 cl_net_buffer_ticks=%d, setting cl_interp_ratio=%g, cl_clock_buffer_ticks=%g\n
 cl_obs_interp_pos_rate
-cl_playerslot_in_names
 cl_pred_track:  Unknown ent index %d\n
 cl_predictioncopy_describe:  no such entity %d\n
 cl_predictioncopy_print:  no such entity %d\n
@@ -30201,7 +29619,6 @@ cl_radar_fast_transforms 0
 cl_radar_fast_transforms 1
 cl_screenshotlocation
 cl_screenshotusertag
-cl_svc_usercmds_delta_validate
 cl_tablet_mapmode
 cl_track_aim_head_log_closest: %.3f was observed %.3f seconds ago\n
 cl_track_aim_head_log_closest: FIRE @ %.3f %.3f %.3f (T = %.3f)\n
@@ -30225,7 +29642,6 @@ classname is
 classname missing from entity!\n
 classname_global_index
 clay
-clc_VoiceData
 clean
 cleanup method function failed
 clear_group
@@ -30286,7 +29702,6 @@ cloth
 cloth_auto_effect
 cloth_collision
 cloth_ground_plane
-cloth_interp_rot
 cloth_sleep_enabled
 cloth_stiffness_on_ragdoll
 clothing
@@ -30737,7 +30152,6 @@ cryptocom
 cryptopro
 cs2_%d
 cs2_bomb_damage_debug
-cs2_bomb_damage_showdebugwindow
 cs2_bomb_defused
 cs2_bomb_exploded
 cs2_bomb_plant
@@ -31366,10 +30780,7 @@ description_format
 description_string
 description_tag
 desired
-desired_movement_gait
-desired_movement_gait_set
 desired_queue_size
-desired_speed
 desired_timescale
 desiredlayoutheight
 desiredlayoutwidth
@@ -31516,7 +30927,6 @@ display%d
 displayName
 displayNumber
 displayWindow
-display_convars_onscreen_in_big_text
 display_items_defidx
 display_limit
 display_names
@@ -31712,25 +31122,10 @@ eEventType
 eN.d\tA
 eNULL
 eODj
-eQueryCvarValueStatus_CvarNotFound
-eQueryCvarValueStatus_CvarProtected
-eQueryCvarValueStatus_ValueIntact
-eRollType
-eState01
-eState02
-eState03
-eState04
-eState05
 eTU\n
 eXQd
 e\tcCPtH
-e_action_handshake_body_authority_current
-e_action_handshake_body_authority_desired
-e_action_handshake_restart
 e_choreo_state
-e_movement_handshake_body_authority_current
-e_movement_handshake_body_authority_desired
-e_movement_handshake_restart
 eagle
 earned
 ease
@@ -32230,13 +31625,8 @@ fP;y
 fTimeScale
 fUnh\
 f\trixZ
-f_forward_strafing_angle_actual
-f_forward_strafing_angle_desired
 f_pose_weight_%s
 faceplayer
-facingServices
-facing_target
-facing_target_source
 facsimileTelephoneNumber
 facts
 fade_out
@@ -32837,7 +32227,6 @@ g_vColor
 g_vSticker%dOffset
 g_vSticker%dScale
 gainsboro
-gait_switch_blocked_reason
 galil
 galilar
 game mode is
@@ -33060,7 +32449,6 @@ global::
 globalSymbol
 global_start_index
 global_strings
-globalentitydatabase_t
 globname
 glock
 glove_
@@ -33080,7 +32468,6 @@ glyphsize
 gnat
 goal
 goal_direction_type
-goal_location
 goal_points
 goat
 gold
@@ -34335,7 +33722,6 @@ is_local_server
 is_muted
 is_pack_bundle
 is_pack_item
-is_pathcorner
 is_predicting_body_shot_fx
 is_predicting_head_shot_fx
 is_predicting_kill_ragdolls
@@ -34582,488 +33968,10 @@ kV'0
 kVV\t/
 k\n\fredirect_uri
 k^ZP
-k_ECSUsrMsg_DisconnectToLobby_Action_Default
-k_ECSUsrMsg_DisconnectToLobby_Action_GoQueue
-k_EClientReportingVersion_BetaVersion
-k_EClientReportingVersion_OldVersion
-k_EClientReportingVersion_SupportsTrustedMode
-k_ECommunityItemAttribute_CardBorder
-k_ECommunityItemAttribute_CommunityItemAppID
-k_ECommunityItemAttribute_CommunityItemType
-k_ECommunityItemAttribute_ExpiryTime
-k_ECommunityItemAttribute_Invalid
-k_ECommunityItemAttribute_IssueNumber
-k_ECommunityItemAttribute_Level
-k_ECommunityItemAttribute_ProfileModiferEnabled
-k_ECommunityItemAttribute_StorePackageID
-k_ECommunityItemAttribute_TradableTime
-k_ECommunityItemClass_Badge
-k_ECommunityItemClass_BoosterPack
-k_ECommunityItemClass_Consumable
-k_ECommunityItemClass_Emoticon
-k_ECommunityItemClass_GameCard
-k_ECommunityItemClass_GameGoo
-k_ECommunityItemClass_Invalid
-k_ECommunityItemClass_ProfileBackground
-k_ECommunityItemClass_ProfileModifier
-k_ECommunityItemClass_SalienItem
-k_ECommunityItemClass_Scene
-k_ECsgoSteamUserStat_MatchWinsCompetitive
-k_ECsgoSteamUserStat_SurvivedDangerZone
-k_ECsgoSteamUserStat_XpEarnedGames
-k_EGCItemCustomizationNotification_ActivateFanToken
-k_EGCItemCustomizationNotification_ActivateOperationCoin
-k_EGCItemCustomizationNotification_ApplyKeychain
-k_EGCItemCustomizationNotification_ApplyPatch
-k_EGCItemCustomizationNotification_ApplySticker
-k_EGCItemCustomizationNotification_CasketAdded
-k_EGCItemCustomizationNotification_CasketContents
-k_EGCItemCustomizationNotification_CasketInvFull
-k_EGCItemCustomizationNotification_CasketRemoved
-k_EGCItemCustomizationNotification_CasketTooFull
-k_EGCItemCustomizationNotification_ClientRedeemFreeReward
-k_EGCItemCustomizationNotification_ClientRedeemMissionReward
-k_EGCItemCustomizationNotification_EncapsulateSticker
-k_EGCItemCustomizationNotification_ExtractSticker
-k_EGCItemCustomizationNotification_GenerateSouvenir
-k_EGCItemCustomizationNotification_GraffitiUnseal
-k_EGCItemCustomizationNotification_NameBaseItem
-k_EGCItemCustomizationNotification_NameItem
-k_EGCItemCustomizationNotification_RemoveItemName
-k_EGCItemCustomizationNotification_RemoveKeychain
-k_EGCItemCustomizationNotification_RemovePatch
-k_EGCItemCustomizationNotification_RemoveSticker
-k_EGCItemCustomizationNotification_StatTrakSwap
-k_EGCItemCustomizationNotification_UnlockCrate
-k_EGCItemCustomizationNotification_XRayItemClaim
-k_EGCItemCustomizationNotification_XRayItemReveal
-k_EGCItemCustomizationNotification_XpShopAckTracks
-k_EGCItemCustomizationNotification_XpShopUseTicket
-k_EGCMsgAccountPhoneNumberChange
-k_EGCMsgAchievementAwarded
-k_EGCMsgAddFreeLicense
-k_EGCMsgAddFreeLicenseResponse
-k_EGCMsgAppInfoUpdated
-k_EGCMsgCheckFriendship
-k_EGCMsgCheckFriendshipResponse
-k_EGCMsgCommitUnfinalized
-k_EGCMsgConCommand
-k_EGCMsgDPPartnerMicroTxns
-k_EGCMsgDPPartnerMicroTxnsResponse
-k_EGCMsgDirectServiceMethod
-k_EGCMsgDirectServiceMethodResponse
-k_EGCMsgFailedToCreate
-k_EGCMsgFindAccounts
-k_EGCMsgGCAccountVacStatusChange
-k_EGCMsgGenericReply
-k_EGCMsgGetAccountDetails
-k_EGCMsgGetAccountDetailsResponse
-k_EGCMsgGetAccountDetails_DEPRECATED
-k_EGCMsgGetCommands
-k_EGCMsgGetCommandsResponse
-k_EGCMsgGetEmailTemplate
-k_EGCMsgGetEmailTemplateResponse
-k_EGCMsgGetGamePersonalDataCategoriesRequest
-k_EGCMsgGetGamePersonalDataCategoriesResponse
-k_EGCMsgGetGamePersonalDataEntriesRequest
-k_EGCMsgGetGamePersonalDataEntriesResponse
-k_EGCMsgGetIPLocation
-k_EGCMsgGetIPLocationResponse
-k_EGCMsgGetLicenses
-k_EGCMsgGetPartnerAccountLink
-k_EGCMsgGetPartnerAccountLinkResponse
-k_EGCMsgGetPersonaNames
-k_EGCMsgGetPersonaNamesResponse
-k_EGCMsgGetPurchaseTrustStatus
-k_EGCMsgGetPurchaseTrustStatusResponse
-k_EGCMsgGetSystemStats
-k_EGCMsgGetSystemStatsResponse
-k_EGCMsgGetUserGameStatsSchema
-k_EGCMsgGetUserGameStatsSchemaResponse
-k_EGCMsgGetUserStats
-k_EGCMsgGetUserStatsDEPRECATED
-k_EGCMsgGetUserStatsResponse
-k_EGCMsgGrantGuestPass
-k_EGCMsgGrantGuestPassResponse
-k_EGCMsgInvalid
-k_EGCMsgInviteUserToLobby
-k_EGCMsgLimitExceeded
-k_EGCMsgLookupAccountFromInput
-k_EGCMsgMasterSetClientMsgRouting
-k_EGCMsgMasterSetClientMsgRoutingResponse
-k_EGCMsgMasterSetDirectory
-k_EGCMsgMasterSetDirectoryResponse
-k_EGCMsgMasterSetWebAPIRouting
-k_EGCMsgMasterSetWebAPIRoutingResponse
-k_EGCMsgMemCachedDelete
-k_EGCMsgMemCachedGet
-k_EGCMsgMemCachedGetResponse
-k_EGCMsgMemCachedSet
-k_EGCMsgMemCachedStats
-k_EGCMsgMemCachedStatsResponse
-k_EGCMsgMulti
-k_EGCMsgMultiplexMsg
-k_EGCMsgMultiplexMsgResponse
-k_EGCMsgPostAlert
-k_EGCMsgPreTestSetup
-k_EGCMsgReceiveInterAppMessage
-k_EGCMsgRecordSupportAction
-k_EGCMsgRecurringSubscriptionStatusChange
-k_EGCMsgResponseDenied
-k_EGCMsgResponseInvalid
-k_EGCMsgResponseNoMatch
-k_EGCMsgResponseNotLoggedOn
-k_EGCMsgResponseOK
-k_EGCMsgResponseServerError
-k_EGCMsgResponseTimeout
-k_EGCMsgResponseUnknownError
-k_EGCMsgSendEmail
-k_EGCMsgSendEmailResponse
-k_EGCMsgSendHTTPRequest
-k_EGCMsgSendHTTPRequestResponse
-k_EGCMsgSetOptions
-k_EGCMsgSetOptionsResponse
-k_EGCMsgStartGameserver
-k_EGCMsgStartPlaying
-k_EGCMsgStopGameserver
-k_EGCMsgStopPlaying
-k_EGCMsgSystemBase
-k_EGCMsgSystemBase2
-k_EGCMsgSystemStatsSchema
-k_EGCMsgTerminateGamePersonalDataEntriesRequest
-k_EGCMsgTerminateGamePersonalDataEntriesResponse
-k_EGCMsgUpdateSession
-k_EGCMsgVacVerificationChange
-k_EGCMsgValidateSession
-k_EGCMsgValidateSessionResponse
-k_EGCMsgWGRequest
-k_EGCMsgWGResponse
-k_EGCMsgWebAPIJobRequest
-k_EGCMsgWebAPIJobRequestForwardResponse
-k_EGCMsgWebAPIJobRequestHttpResponse
-k_EGCMsgWebAPIRegisterInterfaces
-k_EGCToGCMsgMasterAck
-k_EGCToGCMsgMasterAckResponse
-k_EGCToGCMsgMasterStartupComplete
-k_EGCToGCMsgRouted
-k_EGCToGCMsgRoutedReply
-k_EInitSystemResult_Existing
-k_EInitSystemResult_FailedInit
-k_EInitSystemResult_FailedOpen
-k_EInitSystemResult_Invalid
-k_EInitSystemResult_Max
-k_EInitSystemResult_Mismatch
-k_EInitSystemResult_None
-k_EInitSystemResult_NotFound
-k_EInitSystemResult_Success
-k_EMsgGCAcknowledgeRentalExpiration
-k_EMsgGCAddItemToSocketResponse_DEPRECATED
-k_EMsgGCAddItemToSocket_DEPRECATED
-k_EMsgGCAddSocketToBaseItem_DEPRECATED
-k_EMsgGCAddSocketToItemResponse_DEPRECATED
-k_EMsgGCAddSocketToItem_DEPRECATED
-k_EMsgGCAdjustEquipSlotsManual
-k_EMsgGCAdjustEquipSlotsShuffle
-k_EMsgGCApplyConsumableEffects
-k_EMsgGCApplyEggEssence
-k_EMsgGCApplyPennantUpgrade
-k_EMsgGCApplySticker
-k_EMsgGCApplyStrangePart
-k_EMsgGCBackpackSortFinished
-k_EMsgGCBannedWordListRequest
-k_EMsgGCBannedWordListResponse
-k_EMsgGCBase
-k_EMsgGCCStrike15_ClientDeepStats
-k_EMsgGCCStrike15_StartAgreementSessionInGame
-k_EMsgGCCStrike15_v2_AccountPrivacySettings
-k_EMsgGCCStrike15_v2_Account_RequestCoPlays
-k_EMsgGCCStrike15_v2_AcknowledgePenalty
-k_EMsgGCCStrike15_v2_Base
-k_EMsgGCCStrike15_v2_BetaEnrollment
-k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest
-k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse
-k_EMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin
-k_EMsgGCCStrike15_v2_Client2GCStreamUnlock
-k_EMsgGCCStrike15_v2_Client2GCTextMsg
-k_EMsgGCCStrike15_v2_Client2GcAckXPShopTracks
-k_EMsgGCCStrike15_v2_ClientAccountBalance
-k_EMsgGCCStrike15_v2_ClientAuthKeyCode
-k_EMsgGCCStrike15_v2_ClientCommendPlayer
-k_EMsgGCCStrike15_v2_ClientCommendPlayerQuery
-k_EMsgGCCStrike15_v2_ClientCommendPlayerQueryResponse
-k_EMsgGCCStrike15_v2_ClientGCRankUpdate
-k_EMsgGCCStrike15_v2_ClientLogonFatalError
-k_EMsgGCCStrike15_v2_ClientNetworkConfig
-k_EMsgGCCStrike15_v2_ClientPartyJoinRelay
-k_EMsgGCCStrike15_v2_ClientPartyWarning
-k_EMsgGCCStrike15_v2_ClientPerfReport
-k_EMsgGCCStrike15_v2_ClientPlayerDecalSign
-k_EMsgGCCStrike15_v2_ClientPollState
-k_EMsgGCCStrike15_v2_ClientRedeemFreeReward
-k_EMsgGCCStrike15_v2_ClientRedeemMissionReward
-k_EMsgGCCStrike15_v2_ClientReportPlayer
-k_EMsgGCCStrike15_v2_ClientReportResponse
-k_EMsgGCCStrike15_v2_ClientReportServer
-k_EMsgGCCStrike15_v2_ClientRequestJoinFriendData
-k_EMsgGCCStrike15_v2_ClientRequestJoinServerData
-k_EMsgGCCStrike15_v2_ClientRequestOffers
-k_EMsgGCCStrike15_v2_ClientRequestPlayersProfile
-k_EMsgGCCStrike15_v2_ClientRequestSouvenir
-k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2
-k_EMsgGCCStrike15_v2_ClientSubmitSurveyVote
-k_EMsgGCCStrike15_v2_ClientToGCRequestElevate
-k_EMsgGCCStrike15_v2_ClientToGCRequestTicket
-k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo
-k_EMsgGCCStrike15_v2_DraftSummary
-k_EMsgGCCStrike15_v2_FantasyRequestClientData
-k_EMsgGCCStrike15_v2_FantasyUpdateClientData
-k_EMsgGCCStrike15_v2_GC2ClientGlobalStats
-k_EMsgGCCStrike15_v2_GC2ClientInitSystem
-k_EMsgGCCStrike15_v2_GC2ClientInitSystem_Response
-k_EMsgGCCStrike15_v2_GC2ClientNotifyXPShop
-k_EMsgGCCStrike15_v2_GC2ClientRefuseSecureMode
-k_EMsgGCCStrike15_v2_GC2ClientRequestValidation
-k_EMsgGCCStrike15_v2_GC2ClientTextMsg
-k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo
-k_EMsgGCCStrike15_v2_GC2ServerReservationUpdate
-k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket
-k_EMsgGCCStrike15_v2_GetEventFavorites_Request
-k_EMsgGCCStrike15_v2_GetEventFavorites_Response
-k_EMsgGCCStrike15_v2_GiftsLeaderboardRequest
-k_EMsgGCCStrike15_v2_GiftsLeaderboardResponse
-k_EMsgGCCStrike15_v2_GlobalChat
-k_EMsgGCCStrike15_v2_GlobalChat_Subscribe
-k_EMsgGCCStrike15_v2_GlobalChat_Unsubscribe
-k_EMsgGCCStrike15_v2_GotvSyncPacket
-k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
-k_EMsgGCCStrike15_v2_MatchEndRunRewardDrops
-k_EMsgGCCStrike15_v2_MatchList
-k_EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames
-k_EMsgGCCStrike15_v2_MatchListRequestFullGameInfo
-k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
-k_EMsgGCCStrike15_v2_MatchListRequestRecentUserGames
-k_EMsgGCCStrike15_v2_MatchListRequestTournamentGames
-k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions
-k_EMsgGCCStrike15_v2_MatchListTournamentOperatorMgmt
-k_EMsgGCCStrike15_v2_MatchListUploadTournamentPredictions
-k_EMsgGCCStrike15_v2_MatchmakingClient2GCHello
-k_EMsgGCCStrike15_v2_MatchmakingClient2ServerPing
-k_EMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon
-k_EMsgGCCStrike15_v2_MatchmakingGC2ClientHello
-k_EMsgGCCStrike15_v2_MatchmakingGC2ClientReserve
-k_EMsgGCCStrike15_v2_MatchmakingGC2ClientSearchStats
-k_EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate
-k_EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
-k_EMsgGCCStrike15_v2_MatchmakingServerReservationResponse
-k_EMsgGCCStrike15_v2_MatchmakingStart
-k_EMsgGCCStrike15_v2_MatchmakingStop
-k_EMsgGCCStrike15_v2_Party_Invite
-k_EMsgGCCStrike15_v2_Party_Register
-k_EMsgGCCStrike15_v2_Party_Search
-k_EMsgGCCStrike15_v2_Party_Unregister
-k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
-k_EMsgGCCStrike15_v2_PlayerOverwatchCaseStatus
-k_EMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate
-k_EMsgGCCStrike15_v2_PlayersProfile
-k_EMsgGCCStrike15_v2_PremierSeasonSummary
-k_EMsgGCCStrike15_v2_PrivateQueues
-k_EMsgGCCStrike15_v2_RecurringMissionSchema
-k_EMsgGCCStrike15_v2_RequestRecurringMissionSchedule
-k_EMsgGCCStrike15_v2_Server2GCClientValidate
-k_EMsgGCCStrike15_v2_ServerNotificationForUserPenalty
-k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
-k_EMsgGCCStrike15_v2_SetClanId
-k_EMsgGCCStrike15_v2_SetEventFavorite
-k_EMsgGCCStrike15_v2_SetMyActivityInfo
-k_EMsgGCCStrike15_v2_SetPlayerLeaderboardSafeName
-k_EMsgGCCStrike15_v2_VolatileItemClaimReward
-k_EMsgGCCStrike15_v2_VolatileShopSubscribe
-k_EMsgGCCStrike15_v2_WatchInfoUsers
-k_EMsgGCCasketItemAdd
-k_EMsgGCCasketItemExtract
-k_EMsgGCCasketItemLoadContents
-k_EMsgGCClientConnectToServer
-k_EMsgGCClientConnectionStatus
-k_EMsgGCClientDisplayNotification
-k_EMsgGCClientHello
-k_EMsgGCClientHelloPW
-k_EMsgGCClientHelloPartner
-k_EMsgGCClientHelloR2
-k_EMsgGCClientHelloR3
-k_EMsgGCClientHelloR4
-k_EMsgGCClientVersionUpdated
-k_EMsgGCClientWelcome
-k_EMsgGCCollectItem
-k_EMsgGCConVarUpdated
-k_EMsgGCConsumableExhausted
-k_EMsgGCCraft
-k_EMsgGCCraftResponse
-k_EMsgGCCustomizeItemTexture
-k_EMsgGCCustomizeItemTextureResponse
-k_EMsgGCDelete
-k_EMsgGCDeliverGift
-k_EMsgGCDeliverGiftResponseGiver
-k_EMsgGCDeliverGiftResponseReceiver
-k_EMsgGCDev_NewItemRequest
-k_EMsgGCDev_NewItemRequestResponse
-k_EMsgGCDev_PaintKitDropItem
-k_EMsgGCDev_SchemaReservationRequest
-k_EMsgGCError
-k_EMsgGCGameServerInfo
-k_EMsgGCGiftWrapItem
-k_EMsgGCGiftWrapItemResponse
-k_EMsgGCGiftedItems
-k_EMsgGCGiftedItems_DEPRECATED
-k_EMsgGCGoldenWrenchBroadcast
-k_EMsgGCInQueue
-k_EMsgGCInvitationCreated
-k_EMsgGCInviteToParty
-k_EMsgGCItemAcknowledged
-k_EMsgGCItemAcknowledged__DEPRECATED
-k_EMsgGCItemCustomizationNotification
-k_EMsgGCItemPreviewCheckStatus
-k_EMsgGCItemPreviewExpire
-k_EMsgGCItemPreviewExpireNotification
-k_EMsgGCItemPreviewItemBoughtNotification
-k_EMsgGCItemPreviewRequest
-k_EMsgGCItemPreviewRequestResponse
-k_EMsgGCItemPreviewStatusResponse
-k_EMsgGCKickFromParty
-k_EMsgGCLANServerAvailable
-k_EMsgGCLeaveParty
-k_EMsgGCLookupAccount
-k_EMsgGCLookupAccountName
-k_EMsgGCLookupAccountNameResponse
-k_EMsgGCLookupAccountResponse
-k_EMsgGCMOTDRequest
-k_EMsgGCMOTDRequestResponse
-k_EMsgGCModifyItemAttribute
-k_EMsgGCNameBaseItem
-k_EMsgGCNameBaseItemResponse
-k_EMsgGCNameEggEssenceResponse
-k_EMsgGCNameItem
-k_EMsgGCNameItemNotification
-k_EMsgGCOpenCrate
-k_EMsgGCPaintItem
-k_EMsgGCPaintItemResponse
-k_EMsgGCPaintKitBaseItem
-k_EMsgGCPaintKitItem
-k_EMsgGCPaintKitItemResponse
-k_EMsgGCPartyInviteResponse
-k_EMsgGCRecurringSubscriptionStatus
-k_EMsgGCRemoveCustomTexture
-k_EMsgGCRemoveCustomTextureResponse
-k_EMsgGCRemoveItemName
-k_EMsgGCRemoveItemPaint
-k_EMsgGCRemoveMakersMark
-k_EMsgGCRemoveMakersMarkResponse
-k_EMsgGCRemoveSocketItemResponse_DEPRECATED
-k_EMsgGCRemoveSocketItem_DEPRECATED
-k_EMsgGCRemoveUniqueCraftIndex
-k_EMsgGCRemoveUniqueCraftIndexResponse
-k_EMsgGCReplay_UploadedToYouTube
-k_EMsgGCReplicateConVars
-k_EMsgGCRequestAnnouncements
-k_EMsgGCRequestAnnouncementsResponse
-k_EMsgGCRequestPassportItemGrant
-k_EMsgGCSaxxyBroadcast
-k_EMsgGCServerAvailable
-k_EMsgGCServerBrowser_BlacklistServer
-k_EMsgGCServerBrowser_FavoriteServer
-k_EMsgGCServerConnectionStatus
-k_EMsgGCServerHello
-k_EMsgGCServerRentalsBase
-k_EMsgGCServerVersionUpdated
-k_EMsgGCServerWelcome
-k_EMsgGCSetItemPosition
-k_EMsgGCSetItemPositions
-k_EMsgGCSetItemStyle
-k_EMsgGCShowItemsPickedUp
-k_EMsgGCSortItems
-k_EMsgGCStatTrakSwap
-k_EMsgGCStoreGetUserData
-k_EMsgGCStoreGetUserDataResponse
-k_EMsgGCStorePurchaseCancel
-k_EMsgGCStorePurchaseCancelResponse
-k_EMsgGCStorePurchaseFinalize
-k_EMsgGCStorePurchaseFinalizeResponse
-k_EMsgGCStorePurchaseInit
-k_EMsgGCStorePurchaseInitResponse
-k_EMsgGCStorePurchaseInitResponse_DEPRECATED
-k_EMsgGCStorePurchaseInit_DEPRECATED
-k_EMsgGCStorePurchaseQueryTxn
-k_EMsgGCStorePurchaseQueryTxnResponse
-k_EMsgGCSystemMessage
-k_EMsgGCToGCBannedWordListBroadcast
-k_EMsgGCToGCBannedWordListUpdated
-k_EMsgGCToGCBroadcastConsoleCommand
-k_EMsgGCToGCDirtyMultipleSDOCache
-k_EMsgGCToGCDirtySDOCache
-k_EMsgGCToGCIsTrustedServer
-k_EMsgGCToGCIsTrustedServerResponse
-k_EMsgGCToGCUpdateSQLKeyValue
-k_EMsgGCToGCWebAPIAccountChanged
-k_EMsgGCTradingBase
-k_EMsgGCTrading_CancelSession
-k_EMsgGCTrading_ConfirmOffer
-k_EMsgGCTrading_InitiateTradeRequest
-k_EMsgGCTrading_InitiateTradeResponse
-k_EMsgGCTrading_ReadinessResponse
-k_EMsgGCTrading_RemoveItem
-k_EMsgGCTrading_SessionClosed
-k_EMsgGCTrading_SetItem
-k_EMsgGCTrading_SetReadiness
-k_EMsgGCTrading_StartSession
-k_EMsgGCTrading_TradeChatMsg
-k_EMsgGCTrading_TradeTypingChatMsg
-k_EMsgGCTrading_UpdateTradeInfo
-k_EMsgGCUnlockCrateResponse
-k_EMsgGCUnlockCrate_DEPRECATED
-k_EMsgGCUnlockItemStyle
-k_EMsgGCUnlockItemStyleResponse
-k_EMsgGCUnwrapGiftRequest
-k_EMsgGCUnwrapGiftResponse
-k_EMsgGCUpdateItemSchema
-k_EMsgGCUseItemRequest
-k_EMsgGCUseItemResponse
-k_EMsgGCUsedClaimCodeItem
-k_EMsgGCUserTrackTimePlayedConsecutively
-k_EMsgGCVerifyCacheSubscription
-k_EMsgGCVolatileItemLoadContents
-k_EMsgGC_GlobalGame_Play
-k_EMsgGC_GlobalGame_Subscribe
-k_EMsgGC_GlobalGame_Unsubscribe
-k_EMsgGC_IncrementKillCountAttribute
-k_EMsgGC_IncrementKillCountResponse
-k_EMsgGC_ReportAbuse
-k_EMsgGC_ReportAbuseResponse
-k_EMsgGC_RevolvingLootList_DEPRECATED
-k_EMsgRequestSessionIP
-k_EMsgRequestSessionIPResponse
-k_EMsgUpdateSessionIP
 k_ENotificationSettingAlways
 k_ENotificationSettingNever
-k_EProtoDebugVisibility_ValveServer
 k_EProtoExecutionSiteUnknown
 k_EProtoExecutionSiteUnknown:<\n
-k_EProtoObjectLobbyInvite
-k_EProtoObjectPartyInvite
-k_EQuestType_Operation
-k_EQuestType_RecurringMission
-k_ESOMsg_CacheSubscribed
-k_ESOMsg_CacheSubscriptionCheck
-k_ESOMsg_CacheSubscriptionRefresh
-k_ESOMsg_CacheUnsubscribed
-k_ESOMsg_Create
-k_ESOMsg_Destroy
-k_ESOMsg_Update
-k_ESOMsg_UpdateMultiple
-k_UnlockStyle_Failed_CantAfford
-k_UnlockStyle_Failed_CantAffordAttrib
-k_UnlockStyle_Failed_CantCommit
-k_UnlockStyle_Failed_CantLockCache
-k_UnlockStyle_Failed_PreReq
-k_UnlockStyle_Succeeded
 ka`O
 kangaroo
 karrigan
@@ -35249,7 +34157,6 @@ last_time_played
 last_valid_class
 last_valid_item_slot
 last_valid_item_slot not set!
-last_waypoint_pos
 lastactivate
 lastupdated
 latam
@@ -35560,6 +34467,9 @@ m_BaseClasses
 m_Classes
 m_DamageList.*
 m_DefaultKV3
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
+m_EvaluateConnection
 m_FieldTypeAliases
 m_HelpContextName
 m_Helpers
@@ -35569,12 +34479,8 @@ m_KV3Metadata
 m_LegacyDefaultStr
 m_LongName
 m_MetaData
-m_Metadata
 m_NewName
 m_OldName
-m_OnExternalChoreoGraphChanged
-m_OnLayerCycleUpdated
-m_OnTouchingChanged
 m_OutputName
 m_ParamType
 m_PlugType
@@ -35585,7 +34491,6 @@ m_RenamedSerializers
 m_RenamedTypes
 m_RequeuedMessages : %d entries: \n
 m_Retiming
-m_SequencePoint
 m_SerializerName
 m_Stops
 m_TagValue
@@ -35597,18 +34502,13 @@ m_bAmbientOcclusionProxyOverride
 m_bBumpWithTimeoutWhenLearned
 m_bCanOpenWhenDead
 m_bCanTimeoutWhileInactive
-m_bCharacterModeReset
 m_bChildCursorsShouldInherit
 m_bClientRagdoll
 m_bConditionValue
-m_bCreateMovableSurfaceGraph
 m_bCustom
-m_bDataStringLocalized
 m_bFirstEvaluate
 m_bHasPulseArguments
-m_bIgnoreParentOrientation
 m_bInvokePostDataUpdates
-m_bIsRunning
 m_bIsTickRateLockedToDisplayRate=%d
 m_bIsViewmodelCascade
 m_bMatchStartOfTypeOnly
@@ -35628,15 +34528,6 @@ m_bounds
 m_box
 m_capabilities
 m_capsule
-m_chainWeights
-m_channelIDs
-m_channelSettings
-m_compressedOffsets
-m_eChoreoState
-m_enabledNodeIdx
-m_endEffectorBoneID
-m_endEffectorForwardAxis
-m_endEffectorOffset
 m_fFloat1
 m_fFloat2
 m_fLockDuration
@@ -35655,10 +34546,6 @@ m_flAmbientOcclusionProxyStrength3
 m_flCommandQueueMaxDilationPercentage=%f
 m_flDelayedShow
 m_flIntroPlaybackRate
-m_flLastAccumulatedTime
-m_flLastCycle
-m_flLastJumpFromTime
-m_flLastJumpToTime
 m_flLoopPlaybackRate
 m_flMaxEyeWeight
 m_flMaxHeadWeight
@@ -35674,8 +34561,6 @@ m_flViewFrustumFOV
 m_flViewmodelSSTScale
 m_flWorldUnitsPerTexel
 m_flexWeight
-m_floatChannelData
-m_floatChannelSets
 m_hCursor
 m_hCursorOnOtherGraph
 m_hDef
@@ -35696,14 +34581,11 @@ m_iv_Transforms[ %d ]
 m_nCascade
 m_nChainLength > 1 && m_nChainLength < 8
 m_nClassType
-m_nCurrentMovementId
 m_nCurrentWakeIndex
 m_nCursorID
-m_nExernalChoreoGraphCount
 m_nGraphID
 m_nHeaderDimHeight
 m_nHeaderDimWidth
-m_nInitialMovementId
 m_nLegacyDefaultInt
 m_nLoopCount
 m_nMaxCPULevel
@@ -35721,19 +34603,15 @@ m_nVertCount
 m_nYieldToken
 m_pAnimGraph2Instance == nullptr && m_pAnimGraphInstanceOwner != nullptr
 m_pAsyncSaveCallQueue
-m_pComponentGraphController
 m_pController == NULL
 m_pItemSet
 m_pParticleSimJob
 m_params.m_nNumBonesInChain < 8
 m_rgbColor
-m_sActiveExternalChoreoGraphSlotID
-m_setID
 m_shadowViewToProj
 m_shadowWorldToView
 m_skeletonInstance\.m_vecOrigin\..*|
 m_sphere
-m_strDataString
 m_stringReplaceKey
 m_szBinding
 m_szCaptionColor
@@ -35747,16 +34625,10 @@ m_szLessonGroup
 m_szOffscreenIcon
 m_szOnscreenIcon
 m_szPanoramaLayoutFile
-m_szParticlePrecipitationPostEffect
-m_szParticlePrecipitationPuddleEffect
 m_szStartSound
 m_szString1
 m_szString2
-m_tChoreoExitWarp
-m_tChoreoTargetWarp
 m_unFrameFuncThreadID == unCurrentThread
-m_vDamagePosition
-m_vNormalOS
 ma\v\r01!
 mac absent
 mac generation error
@@ -36593,9 +35465,6 @@ moose
 mosquito
 motd
 moth
-motorServices
-motor_path
-motor_velocity
 mouse
 mouse sensitivity
 mouse%d
@@ -36625,7 +35494,6 @@ moveclass
 movedown
 movement
 movement keys
-movement_id
 moveparent: (%d) Name: %s (%s)\n
 moves
 movetype: %s\n
@@ -36634,7 +35502,6 @@ movie/%s/src.info
 movie/%s/src.tmp
 movieTime
 mp5sd
-mp_shoot_dropped_grenades
 mpkQ
 msCTLSign
 msCodeCom
@@ -36709,12 +35576,10 @@ nCRD
 nChangeOffset < INT16_MAX
 nChangeOffset > 0
 nDataSize > 0
-nDenominator
 nFormat
 nGeneratedMips == nMips
 nKillPriority
 nMaxElements
-nNumerator
 nObserverMode
 nPriority != NETWORK_FIELD_CHANGE_DEFAULT_PRIORITY
 nRemainderDigits
@@ -36731,7 +35596,6 @@ nValue
 nWakePriority
 n\r2S
 n_actions
-n_state_active_tick_count
 n`3i
 nadeCount
 namc
@@ -36759,7 +35623,6 @@ nametag_remove
 nametoken
 narwhal
 navajowhite
-navigator
 navlinkclass
 navy
 nbio connect error
@@ -36786,8 +35649,6 @@ nervous
 nested asn1 error
 nested asn1 string
 nesw-resize
-net_SetConVar
-net_StringCmd
 net_basic_impact_%s
 net_basic_ping
 net_detailed_impact_%s
@@ -37049,7 +35910,6 @@ nowatchinfo
 nowatchslots
 nowrap
 npc_ability_name
-npc_position
 npcclass
 ns-resize
 nsBaseUrl
@@ -37401,13 +36261,6 @@ p.tpBasis
 p08@H^$
 p0j0a
 p250
-p2p_FightingGame_Connection
-p2p_FightingGame_GameData
-p2p_Ping
-p2p_TextMessage
-p2p_VRAvatarPosition
-p2p_Voice
-p2p_WatchSynchronization
 p2p_ping could not convert "%s" to a CPeerToPeerAddress\n
 p2p_ping could not ping "%s" because they are an unknown peer\n
 p2p_ping requires a destination address\n
@@ -37748,7 +36601,6 @@ path_node
 path_parameter_string
 path_particle_rope
 path_particle_rope_clientside
-path_query
 path_simple
 path_uniqueid
 path_with_dynamic_nodes
@@ -38235,7 +37087,6 @@ premier season clrs
 premier_season_coin
 premium_only
 prepared
-prepend controller playerslot to names for debugging
 prereq
 present
 presentationAddress
@@ -38479,8 +37330,6 @@ r_2PassBuildDraw 0
 r_2PassBuildDraw 1
 r_csm_fast_path 0
 r_csm_fast_path 1
-r_decal_hit_confirmation
-r_gpu_debug_draw_freeze
 r_renderoverlaybatch 0
 r_renderoverlaybatch 1
 r_threaded_buildWRlist 0
@@ -38997,15 +37846,10 @@ sXuid
 s\n\tAddFriend
 s\tor
 s_PanelID
-s_arrival_movement_gait_set
 s_gametime_desc
 s_gametime_nextmap
 s_gametime_time
-s_last_task_end_location
-s_movement_id
-s_movement_serial_number
 s_pfnRtlGenRandom && s_pfnRtlGenRandom( buf, num )
-s_prev_schedule
 saJ!
 saco
 saddlebrown
@@ -39070,7 +37914,6 @@ scar20
 scene
 scene_id
 scenefilecache
-schedule_facing_priority
 schema_typename
 schemasystem
 school_account
@@ -39124,6 +37967,7 @@ scripts/npc_units.vdata
 scripts/physics_particles.vdata!
 scripts/propdata.vdata
 scripts/replay_compatability_settings.txt
+scripts/scenes.vdata
 scripts/soundscapes_
 scripts/soundscapes_manifest.txt
 scripts/surfaceproperties_explosion_debris_effects.txt
@@ -39582,8 +38426,6 @@ shot_camera
 shotids 
 should retry
 show
-show handshaking between AI and Animgraphs
-show path query processing
 show-graph
 show-ground-weapons
 show-honor
@@ -40250,8 +39092,6 @@ story_block
 strValue
 strafe
 strafe_mode
-strafing_enabled
-strafing_source
 strange
 strange_part_item_id
 strange_parts
@@ -40354,19 +39194,6 @@ sv_annotation_give_weapon %s
 sv_annotation_remove_weapon %s
 sv_tick_parallel_with_client=%d
 svalue
-svc_BSPDecal
-svc_ClassInfo
-svc_PeerList
-svc_Prefetch
-svc_Print
-svc_SetPause
-svc_SetView
-svc_Sounds
-svc_StopSound
-svc_UserCmds
-svc_VoiceData
-svc_VoiceInit
-svc_dummy
 svgfill
 svgfillopacity
 svgfillrule
@@ -42283,7 +41110,6 @@ xraymachine
 xsK;
 xuid, skillgroup
 xuidHost
-xxBEAM_HOSExxunused
 xxH}
 xzxv
 y axis
@@ -42354,7 +41180,6 @@ zoomwithuiscale
 zxNIjo
 zz2K
 { "limit": %d, "selected": %s, "choices": [  %s  { "limit": 0, "label": "#SFUI_Settings_Volatile_Limit_Unlimited" }  ] }
-{ item_factory = 'IntervalTimer' }
 {5`q@roz?
 {8w1
 {9d:c

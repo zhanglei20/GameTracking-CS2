@@ -1,0 +1,3 @@
+class CCSPlayerController_API
+{
+};

@@ -2195,7 +2195,6 @@ Abs Int
 Absolute value (float)
 Absolute value (int)
 Action Component
-Active
 Active Motor
 Active Motor Index
 Actual Target
@@ -2216,7 +2215,6 @@ AllocateAndLoad failed for '%s' (%s)\n
 AllocateAndLoad failed for '%s'\n
 And R%d <- R%d && R%d
 Anim Clip
-AnimGraph
 AnimGraph Choice Node failed to pick a new choice without repeating.  Check the weights on the Choice node.\n
 AnimGraphInstance
 AnimLayer:m_flCycle
@@ -2264,7 +2262,6 @@ AssetBrowse( %s )
 AssetBrowse()
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 Attempting to perform a global blend without a bone mask! This is not supported so falling back to a local blend!
 Attribute
 BLEND_PREALIGNED|
@@ -2279,7 +2276,6 @@ Bad reinterpret on ArrayInsert
 Bad reinterpret on ArrayRemoveElementMatching
 Base-10 logarithm
 Base-2 logarithm
-Basic string support.
 Begin testing a condition composed of Observable values. Continues checking until canceled.
 Begin testing a condition composed of Observable variable references. Continues checking until true.
 Blend (Masked): %.2f%%
@@ -2365,9 +2361,6 @@ CModelMaterialGroupName
 CMotionTransform
 CNmChainLookatNode::CDefinition::InstantiateNode
 CNmChainLookatTask::CNmChainLookatTask
-CNmFloatChannelData
-CNmFloatChannelData::ChannelSettings_t
-CNmFloatChannelSet_t
 CNmGraphDefinition::KV3TransferPostLoadFn failed to FindDeclaredClass( '%s' )
 CNmGraphInstance::CNmGraphInstance
 CNmGraphInstance::EvaluateGraph
@@ -2390,7 +2383,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -2419,7 +2411,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -2495,7 +2486,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -2504,7 +2494,6 @@ CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
-CREATE_CHILD_CURSOR_OUTFLOW
 CRelativeArray
 CResourceName
 CResourceNameTyped
@@ -2640,8 +2629,6 @@ Cursor Has Tag
 Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
 CycleControlClipNode
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 DOT_TO_MORPH
 Damped Value Component
 DampedPathAnimMotorInstance
@@ -2711,7 +2698,6 @@ Entity Attribute Base
 Entity Attribute Float
 Entity Attribute Int
 EntityName
-Enum support.
 Eq R%d <- R%d == R%d
 Error in SolveCubic\n
 Evaluate the curve at the specified input position
@@ -2754,7 +2740,6 @@ Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
 Find all the yielded cursors on this graph with the matching tag and wake them.
 Find first element 'a' which compare equal to 'element' and return its index.
-Fired
 Fixed Section
 Float Curve (%s)
 Float To Game Time
@@ -2906,12 +2891,9 @@ Look Pitch (World)
 Low LOD
 MAlternateSemanticName
 MAtomicTransfersAsPlainString
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MFgdHelper
 MIsStringAndTokenType
 MKV3TransferName
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MModelGameData
 MORPH
 MPropertyArrayElementNameKey
@@ -3047,7 +3029,6 @@ P08N
 P6pLb
 P6plb
 PARENT
-PF_TYPE_CONTROL_POINT_IS_SET
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 Packed data buffer overflow: %d > %d\n
@@ -3060,7 +3041,6 @@ Parameterized Selector: Failed to select a valid option!
 Parameters
 Parent
 Parent Map: %s\n
-Parent VData
 ParentAttachmentName()
 Particle (%s) (%s)
 Particle Binding
@@ -3081,18 +3061,15 @@ Position progress\t\t\t[%f]
 PrevActive
 Previous normal
 Prl Eval
-Proceed Immediately
 Process Selector
 Program has invalid instruction %i
 Program uses more temp variables than are supported. Needs %i, max is %i
 PropWorldOrigin
 Pulse domain which enables particle content to query leaf code to introspect game state.
-PulseDurationStringFormat_t
 QAngle
 Quaternion
 QuaternionStorage
 R Sqrt
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RESOURCE_TYPE_ANIMATION_GROUP_INTERNAL
 RESOURCE_TYPE_ANIMATION_INTERNAL
 RESOURCE_TYPE_NM_CLIP
@@ -3204,15 +3181,12 @@ String Length
 Strings Are Equal Case Sensitive
 Sub R%d <- R%d - R%d
 Symbol
-Synchronous - Wait for this node to fully complete before proceeding.
 TAG_
 THEM
 TILT_TWIST
 TWIST
 Tag Cursor
 Tag Self When Complete
-TagActionStatus
-TagStatus
 TanFrameQuat
 Tangent of angle. Input in radians, output in radians
 Target Position ( Rotation Pivot )
@@ -3243,12 +3217,6 @@ Turn a time in seconds into a display string. NOT localized.
 TurnHelperNode
 Two Bone IK
 TypeManager
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 Unable to parse AE_SV_DUSTTRAIL event "%s"\n
 Unknown Morph Control :: %s WeightList :: %s Model :: %s\n
 Unknown binary operator
@@ -3263,10 +3231,8 @@ Unnamed Tag
 Unsupported use of property accessor "%s.%s", property accessors can only be used variables
 Unsupported version %d for resource '%s' (Expected %d)\n
 UpdateContext
-UpscalerType_t
 Used to flag a test as having failed.
 V@jb
-VDATA
 VDataChoice( %s )
 VDataChoice()
 VPkb
@@ -3298,8 +3264,6 @@ Weight: %.2f%%
 Weights
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
-While False
-While True
 World Vector To Vector
 World space tilt normal
 Write Cached Pose
@@ -3373,6 +3337,8 @@ attachment_type_cp1
 attr_factory
 bInherit
 bValue
+b_action_restart
+b_movement_type_restart
 bentnormal
 biased
 binary
@@ -3689,8 +3655,6 @@ cycle
 deg2rad
 detach_from_owner
 domain_scope
-eCenteredCylinder
-eGroundCylinder
 e_action_desired_shared
 e_movement_type_desired_shared
 element
@@ -3771,16 +3735,15 @@ lerp
 log2
 lowprecisionuv
 lowprecisionuv1
-m_BoneMergeLinks
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
 m_EndEffectorFixedOffsetAttachment
+m_EvaluateConnection
 m_Format
 m_HingeAxis
-m_Metadata
 m_ParentJoint
 m_PoleVectorForAxis
-m_SequencePoint
 m_Stops
-m_TagStatus
 m_TagValue
 m_attachments
 m_bBakedTwoSided
@@ -3797,51 +3760,27 @@ m_bParentJointRequiresAlignment
 m_bUseCompressedNormalTangent
 m_bUseNewPoleVectorForAxis
 m_bUseShadowFastPath
-m_chainWeights
-m_channelIDs
-m_channelSettings
-m_compressedOffsets
 m_deltaTransform\t\t\t\t[%f] [%s]
 m_eRbfType
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_enabledNodeIdx
-m_endEffectorBoneID
-m_endEffectorForwardAxis
-m_endEffectorOffset
-m_fEmissiveFactor
 m_flMaxRadians
 m_flMinRadians
 m_flSlopeIncoming
 m_flSlopeOutgoing
-m_flTagStartAnimTime
-m_floatChannelData
-m_floatChannelSets
 m_hCursorOnOtherGraph
 m_hGraphDefinition->m_instanceRequiredMemory > 0
 m_hitboxsets
 m_influenceFlags
-m_materialGroupToken
 m_morphSet
 m_nChainLength > 1 && m_nChainLength < 8
-m_nChildNode
 m_nCurrStackSize
 m_nCurrentWakeIndex
 m_nCursorID
 m_nGraphID
-m_nParentHash
-m_nSrcDrawIndex
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_nYieldToken
 m_pIsHandshakeDisabled
 m_params.m_nNumBonesInChain < 8
 m_qFixupRotation
 m_rbfParameters
-m_rootBvhNodes
-m_setID
 m_stack
 matrix3x4_t
 matrix3x4a_t
@@ -3851,11 +3790,9 @@ missing all pose parameters\n
 model bone %d is out of bounds, probably attempting to use an animation from different model\n
 modellib
 morph_texture
-nDenominator
 nFormat
 nKillPriority
 nMaxElements
-nNumerator
 nRemainderDigits
 nRemainderNoiseDigits
 nValue
@@ -3945,7 +3882,6 @@ worldrelative
 zDconst char *__cdecl Reflection::Internal::GetFuncName<class CFootPinningPoseOperation>(void)
 z\tV_sind
 zero dir
-{ item_factory = 'IntervalTimer' }
 }\rPAb
 }\tV_sinhf
 ~0Mb

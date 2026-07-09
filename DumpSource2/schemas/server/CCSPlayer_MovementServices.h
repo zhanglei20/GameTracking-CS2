@@ -31,7 +31,6 @@ class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 	bool m_bMadeFootstepNoise;
 	int32 m_iFootsteps;
 	GameTime_t m_fStashGrenadeParameterWhen;
-	uint64 m_nButtonDownMaskPrev;
 	bool m_bUseFrictionStashedSpeed;
 	float32 m_flUseFrictionStashedSpeedUntilFrac;
 	float32 m_flFrictionStashedSpeed;
@@ -49,7 +48,6 @@ class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 	float32 m_flLastJumpVelocityZ;
 	bool m_bJumpApexPending;
 	float32 m_flTicksSinceLastSurfingDetected;
-	bool m_bWasSurfing;
 	Vector2D m_vecWalkWishVel;
 	bool m_bHasEverProcessedCommand;
 };

@@ -1,11 +1,11 @@
 class CBaseAnimGraph : public C_BaseModelEntity
 {
-	// MSaveOpsForField = "GetAnimGraphControllerManagerSaveRestoreOps"
 	CAnimGraphControllerManager m_graphControllerManager;
-	// MSaveOpsForField = "GetAnimGraphControllerPtrSaveRestoreOps"
-	CAnimGraphControllerBase* m_pMainGraphController;
+	CAnimGraphControllerPtr m_pMainGraphController;
 	bool m_bInitiallyPopulateInterpHistory;
 	bool m_bSuppressAnimEventSounds;
+	CEntityOutputTemplate< float32 > m_OnLayerCycleUpdated;
+	CEntityIOOutput m_OnExternalChoreoGraphChanged;
 	bool m_bAnimGraphUpdateEnabled;
 	// MNotSaved
 	bool m_bAnimationUpdateScheduled;

@@ -9984,7 +9984,6 @@ ActionsContextMenu
 Activate by mouseclick
 ActivateControl
 ActivationChange
-Active
 Active Titlebar
 ActiveWindowFocusReason
 AdBdCd
@@ -10803,7 +10802,6 @@ CuneiformScript
 Cura Sao
 CuraSao
 CurrencySymbols
-Current
 CursorChange
 CursorMoveStyle
 CursorShape
@@ -12439,7 +12437,6 @@ KeyboardModifier
 KeyboardModifierMask
 KeyboardModifiers
 KeypadModifier
-Keys
 KharoshthiScript
 Khitan_Small_Script
 KhmerScript
@@ -14622,7 +14619,6 @@ StartElement
 Starting
 StateMachineSignal
 StateMachineWrapped
-Status
 StatusTip
 StatusTipPropertyRole
 StatusTipRole

@@ -1,0 +1,3 @@
+class CBuyZone_API
+{
+};

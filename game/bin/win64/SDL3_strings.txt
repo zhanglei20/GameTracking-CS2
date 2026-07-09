@@ -733,6 +733,7 @@ ASTRO
 ASTRO Gaming
 AUDIO
 A`NI
+Abort
 Abort/Break/Retry/Ignore/AlwaysIgnore? [abriA] : 
 Acquiring DirectInput device
 Added HIDAPI device '%s' VID 0x%.4x, PID 0x%.4x, bluetooth %d, version %d, serial %s, interface %d, interface_class %d, interface_subclass %d, interface_protocol %d, usage page 0x%.4x, usage 0x%.4x, path = %s, driver = %s (%s)

@@ -1,7 +1,7 @@
 class CC4 : public CCSWeaponBase
 {
-	Vector m_vecLastValidPlayerHeldPosition;
-	Vector m_vecLastValidDroppedPosition;
+	VectorWS m_vecLastValidPlayerHeldPosition;
+	VectorWS m_vecLastValidDroppedPosition;
 	bool m_bDoValidDroppedPositionCheck;
 	bool m_bStartedArming;
 	GameTime_t m_fArmedTime;

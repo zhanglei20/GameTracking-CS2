@@ -6,7 +6,7 @@
 			name = "AdditiveFilterManifest"
 			group = "GameStartup"
 			source_file = "src/engine2/renderingworld.cpp"
-			source_line = 896
+			source_line = 903
 			resources = 
 			[
 				resource_name:"materials/dev/generalfilter_additive.vmat",
@@ -36,7 +36,7 @@
 			name = "LoopModeLevelLoad"
 			group = ""
 			source_file = "src/engine2/loopmodelevelload.cpp"
-			source_line = 93
+			source_line = 94
 			resources = 
 			[
 				resource_name:"materials/loading_background.vmat",

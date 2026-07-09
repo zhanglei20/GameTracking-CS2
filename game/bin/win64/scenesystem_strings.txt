@@ -2024,7 +2024,6 @@ Cucumber
 CullParams_t
 Culling: %s objects pre-cull (%s tested), %s passing culling\n
 Cumulative
-Current
 Current mouse cursor = %d: %s
 Currently all this does is to lift the 0..1 limits on dragging widgets.
 Curve Tessellation Tolerance
@@ -2292,7 +2291,6 @@ ERROR! Cannot load GpuLightBinnerManifest
 ERROR! Cannot load HairRendererManifest resource manifest!\n
 ERROR! Cannot load SubsurfaceProfilesManifest
 ERROR: Docking is not enabled! See Demo > Configuration.
-ESceneObjectMeshletVisualization
 Eacute
 Eacutesmall
 Earth
@@ -4326,9 +4324,6 @@ S%S?a
 S+S6
 S:%0.3f
 S:%3d
-SCENEOBJECT_MESHLET_VIS_CULLED
-SCENEOBJECT_MESHLET_VIS_MESHLET
-SCENEOBJECT_MESHLET_VIS_NONE
 SDBytes
 SETWIDTH_NAME
 SHADER_READ_BIT
@@ -4441,7 +4436,6 @@ SceneSystem/SupportsHybridInstancedFade
 SceneSystem/Tonemapping
 SceneSystem/TransformTextureRowCount
 SceneSystem/TransformTextureRowCountToolsMode
-SceneSystem/Visualize Base SceneObject Meshlets
 SceneSystem/VolumetricFog
 SceneSystem/WellKnownLightCookies
 SceneSystem/WindController
@@ -4461,7 +4455,6 @@ Scratch Keys
 Scratch Payload
 Screen-size: %.2f, alpha-fade %.2f, scale %.2f, fog scale %.2f 
 Scroll %.1f/%.1f %.1f/%.1f
-Scroll Offset
 Scroll To Pos
 Scroll from code
 Scroll in the plot area to zoom both X and Y axes.
@@ -5885,7 +5878,6 @@ dddd
 dear imgui says hello! (%s) (%d)
 dearimgui.com/faq
 debugmeshletdrawargs
-debugoverlay_circle_verts
 debugui
 decimal
 default-script
@@ -6613,16 +6605,9 @@ rupiah
 s&sg
 s1s:sHsX
 s_hScrambledHalton != GENERIC_DATA_HANDLE_INVALID
-sc_distancefield_visualize_atlas
 sc_dumpworld %d
 sc_dumpworld3d %d
-sc_mesh_gpu_occlusion_culling
-sc_mesh_gpu_volume_culling
-sc_mesh_mesh_shaders
-sc_mesh_shadows_batch_across_materials
-sc_mesh_use_pmb
 sc_setclassflags %s %d
-sc_visualize_sceneobjects_meshlets
 scaron
 scedilla
 scene_quadindexbuffer
@@ -6866,7 +6851,6 @@ vnvyv
 void_context
 volumetric fog
 volumetric_fog.vtex
-vt_sim_streaming_delay_ms
 wDwNwYw`wy
 wH>r
 warn

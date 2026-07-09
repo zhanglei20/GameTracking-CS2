@@ -950,7 +950,6 @@ ARRAY_MEMBERS_VIA_PARENT
 ARRAY_PARENT_ONLY
 AcceptIfItemPicked
 Accepted
-Active
 Already running on this machine. Only one instance at a time is allowed.
 AlternateBase
 AnimgraphPicker()
@@ -1414,7 +1413,6 @@ _fgd
 addoninfo
 alert_attr
 alert_func
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier

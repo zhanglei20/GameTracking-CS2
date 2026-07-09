@@ -140,7 +140,6 @@ ConvertOldIntrospectedResourceDataToKV3 - Bad arguments!\n
 ConvertOldIntrospectedResourceDataToKV3 - No introspection dictionary!\n
 ConvertOldIntrospectedResourceDataToKV3 - No root struct\n
 ConvertOldIntrospectedResourceDataToKV3 - Out-of-date source introspection dictionary\n
-DEPRECATED_FIELD_AI_SCHEDULE_BITS
 DegreeEuler
 ERROR: CResourceToKV3 failed to DeduceDerivedTypeFromDisk\n
 ERROR: CResourceToKV3 failed to resolve extref  %016llX\n
@@ -164,8 +163,6 @@ Enumerator Name
 Enumerator Value
 Exiting due to fatal schema validation errors, see log output\n
 ExternalReference
-FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTORWS
-FIELD_NETWORK_QUANTIZED_VECTORWS
 Failed to register '%s' - inconsistent with '%s' (hash=%d,%d)\n
 Fatal error: class '%s' has whitespace in its registration macro.\n
 Field

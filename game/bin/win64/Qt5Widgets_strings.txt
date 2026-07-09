@@ -13167,6 +13167,7 @@ A^?styles@QFontDatabase@@QEBA?AVQStringList@@AEBVQString@@@Z
 A`?translate@QPainter@@QEAAXAEBVQPoint@@@Z
 AaBbYyZz
 Ab$V%
+Abort
 About Qt
 AboutQtRole
 AboutRole

@@ -2763,7 +2763,6 @@ Asset
 Asset Browser
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attempting to register the command %s for context %s multiple times\n
 Autosaved %i
@@ -2799,7 +2798,6 @@ BaseEditor
 BaselineExposure
 BaselineNoise
 BaselineSharpness
-Basic string support.
 BayerGreenSplit
 Begin mouse capture [%i]: %s\n
 Begin testing a condition composed of Observable values. Continues checking until canceled.
@@ -2877,7 +2875,6 @@ CLightingControlRig
 CLightingControlRig::DestroyBackgroundMap
 CLightingControlRig::ReloadLightRigConfig
 CLightingPreviewPopupUI
-CLocalExposureLayer
 CModelPreviewAttachedModel
 CNewParticleEffect::DetectChanges
 COMMAND_TEXT_MODE_BUTTON
@@ -2902,7 +2899,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -2931,7 +2927,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -3007,7 +3002,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -3132,7 +3126,6 @@ CQVibranceToolWidget
 CQVignetteToolWidget
 CQWidgetDebugHighlight
 CQWidgetDebugger
-CREATE_CHILD_CURSOR_OUTFLOW
 CRenderOptionsPopupUI
 CStrongHandle
 CTSQueue<struct ParticleSoundQueueEntry_t *,0>::Push
@@ -3471,7 +3464,6 @@ Engine2/RenderingPipeline
 EnsureCapacity
 Enter
 EntityName
-Enum support.
 Eq R%d <- R%d == R%d
 Error (problem that prevents task success)
 Error converting image %1.
@@ -3777,7 +3769,6 @@ KeyState[%1]
 KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
-LAYER_TYPE_LOCAL_EXPOSURE
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -3862,8 +3853,6 @@ Lum Source: Diffuse<-->Pixel
 Luminosity:
 MAtomicTransfersAsPlainString
 MENU
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MMouse
 MMouseDoubleClick
 MPropertyFlattenIntoParentRow
@@ -4186,7 +4175,6 @@ PageNumber
 PanCamera3D
 PanelID
 Parent Map: %s\n
-Parent VData
 ParseEXRHeaderFromMemory failed! Error message: %s\n
 Particle Binding
 Particle Binding (Real)
@@ -4232,7 +4220,6 @@ PostProcessingEditor/supports_fog_scattering
 PostProcessingEditor/supports_local_contrast
 PostProcessingEditor/supports_local_exposure
 PostProcessingEditor/supports_vignette
-PostProcessingLocalExposureParameters_t
 Postprocessing Data (*.vpost);;
 Postprocessing Data (*.vpost);;Postprocessing Data Autosave (*.vpost_autosave);;All Files (*)
 Postprocessing Layers
@@ -4251,7 +4238,6 @@ PreviousSession
 PrimaryChromaticities
 Probable infinite loop detected! Terminating pulse cursor after %d consecutive instructions (%s)
 Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
-Proceed Immediately
 Process Selector
 PromptToSyncNewVersion
 PropWorldOrigin
@@ -4262,7 +4248,6 @@ Pull From Global Browser
 PullSelectionFromGlobalBrowser
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
-PulseDurationStringFormat_t
 Push To Global Browser
 PushSelectionToGlobalBrowser
 Q?map@QTransform@@QEBA?AVQPointF@@AEBV2@@Z
@@ -4613,7 +4598,6 @@ Sqrt
 Square root
 Start a timer with the specified duration, fire the OnInterval output 
 StartSendingCameraTo
-Status
 Status...
 StoNits
 Stop Waiting
@@ -4643,7 +4627,6 @@ SyncToHeadRevision - SyncFile failed: %s\n
 SyncUIToLayer
 Synced %d file(s).
 Synced %d file(s).  %d file(s) were not synced!
-Synchronous - Wait for this node to fully complete before proceeding.
 Syncing %d file(s).  Please wait...
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
@@ -4843,7 +4826,6 @@ V?redirected@QPaintDevice@@MEBAPEAV1@PEAVQPoint@@@Z
 V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VConsole
-VDATA
 VData:%s
 VNOTIFY_DISABLE
 VNotify
@@ -4922,8 +4904,6 @@ Water Depth Blur Radius
 Water Scale
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
-While False
-While True
 White Point
 WhiteLevel
 WhitePoint
@@ -5531,29 +5511,21 @@ mX?setBlueF@QColor@@QEAAXN@Z
 m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m_Bindings
 m_Context
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
+m_EvaluateConnection
 m_InputMacros
-m_Metadata
-m_SequencePoint
 m_Stops
 m_TagValue
 m_bChildCursorsShouldInherit
 m_bConditionValue
 m_bFirstEvaluate
-m_bHasLocalExposureParams
 m_bRemoveWhenOutOfScope
 m_bShutdown
-m_fBoostLocalContrast
-m_fHighlightOffsetEV
-m_fShadowOffsetEV
-m_fSigma
-m_fWaterDensity
-m_fWaterDepthBlurRadius
-m_fWaterScale
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_hCursorOnOtherGraph
 m_hDef
-m_localExposureParams
 m_nCurrentWakeIndex
 m_nCursorID
 m_nGraphID
@@ -5604,7 +5576,6 @@ n$Kx
 nAlpha
 nBlackPointVal
 nDelayInMS
-nDenominator
 nFormat
 nGammaSliderVal
 nKillPriority
@@ -5613,7 +5584,6 @@ nMode
 nModifiers
 nMouseButton
 nNewValue
-nNumerator
 nOpacity
 nRemainderDigits
 nRemainderNoiseDigits
@@ -5845,7 +5815,6 @@ z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 z\tV_sind
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
-{ item_factory = 'IntervalTimer' }
 {\n?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
 {\n?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
 |"?verticalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ

@@ -34198,6 +34198,7 @@ AVXFloat64Sub
 AWAIT
 AWAIT_CONTEXT_TYPE
 A\tA\nA\vA\fA\rA
+Abort
 Abort Descriptor
 Abort if code range is allocated further away than 4GB from the.text section
 AbortCSADcheck
@@ -38128,6 +38129,7 @@ I8x32UConvertI16x16
 IA32
 ICsAreEnabled
 IDENTIFIER
+IDLE
 IEDb
 ILLEGAL
 IMM#
@@ -43587,7 +43589,6 @@ Torque assert 'xSmi == 3' failed
 Total Loads: 
 Total size | Allocation count | Function id | id\n
 Total time spent in GC  : %.1f ms\n
-Trace
 Trace code range allocation process.
 Trace event category must be a string.
 Trace event id must be a number.

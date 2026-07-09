@@ -2489,11 +2489,11 @@
 //			]
 //		}
 //	},
-//	"m_flAlphaAdjustWithSizeAdjust":
+//	"m_flSubPixelAAScale":
 //	{
 //		"m_nType": "PF_TYPE_LITERAL",
 //		"m_nMapType": "PF_MAP_TYPE_DIRECT",
-//		"m_flLiteralValue": 0.000000,
+//		"m_flLiteralValue": 1.000000,
 //		"m_NamedValue": "",
 //		"m_nControlPoint": 0,
 //		"m_nScalarAttribute": 3,
@@ -4276,9 +4276,10 @@ class C_OP_RenderSprites : public CBaseRendererSource2
 	// MPropertyFriendlyName = "maximum visual screen size"
 	// MPropertySortPriority = 1000
 	CParticleCollectionRendererFloatInput m_flMaxSize;
-	// MPropertyFriendlyName = "Factor to map size adjustment to alpha"
+	// MPropertyFriendlyName = "sub-pixel AA scale"
+	// MPropertySuppressExpr = "mod != hlx"
 	// MPropertySortPriority = 1000
-	CParticleCollectionRendererFloatInput m_flAlphaAdjustWithSizeAdjust;
+	CParticleCollectionRendererFloatInput m_flSubPixelAAScale;
 	// MPropertyFriendlyName = "screen size to start fading"
 	// MPropertySortPriority = 1000
 	CParticleCollectionRendererFloatInput m_flStartFadeSize;

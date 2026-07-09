@@ -1,0 +1,3 @@
+class CCSPlayerPawn_API
+{
+};

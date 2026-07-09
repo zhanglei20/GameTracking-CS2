@@ -15667,7 +15667,6 @@ Actions
 Activate %s
 Activation Conditions
 Activation Distance
-Active
 Active By Default
 Active Motor
 Active Motor Index
@@ -15859,7 +15858,6 @@ AnimForceMorphValueRange [%s]
 AnimFrame
 AnimGameplayTiming
 AnimGesture
-AnimGraph
 AnimGraph Additive
 AnimGraph Choice Node failed to pick a new choice without repeating.  Check the weights on the Choice node.\n
 AnimGraph2
@@ -16035,7 +16033,6 @@ Associates a semantic identifier with an animgraph2 used by this model.
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
 Async Simulate Particles
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attach Point
 Attach to Morphing Base Mesh
@@ -16197,7 +16194,6 @@ BaseUnit "%s" in unit "%s" not found.\n
 BaselineExposure
 BaselineNoise
 BaselineSharpness
-Basic string support.
 BayerGreenSplit
 BeenSimplified
 Begin testing a condition composed of Observable values. Continues checking until canceled.
@@ -17048,7 +17044,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -17077,7 +17072,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -17154,7 +17148,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -17227,7 +17220,6 @@ CQStatsSelectDialog
 CQStatsSelectView
 CQTabbedStyle
 CQTreeTagItemDelegate
-CREATE_CHILD_CURSOR_OUTFLOW
 CRelativeArray
 CRenderMeshSimplifyParams
 CResourceNameTyped
@@ -18024,8 +18016,6 @@ Cycle Type
 CycleControlClipNode
 Cyclic samples provided are greater than the time per cycle. Expected: 
 Cylinder
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 Cylinder: %s
 D V"*$L"D&0
 D16_UNORM
@@ -18659,7 +18649,6 @@ Emissive Lighting Boost
 Emit Tag
 Emit Tag Action cannot find tag with ID %i
 Empty MeshID.
-Enable
 Enable Advanced Parameters
 Enable Collision With Parent
 Enable Empty Model
@@ -18698,7 +18687,6 @@ Entity: %s
 Entity: Unknown
 EntityName
 Entry Clearance
-Enum support.
 EnumArray
 Eq R%d <- R%d == R%d
 Equal to
@@ -19128,7 +19116,6 @@ Finger Chain
 Fingers
 Fingers_L
 Fingers_R
-Fired
 First Point
 Fit Transform to Model
 Fit Transform to Vertex Selection
@@ -19617,7 +19604,6 @@ If enabled the prefab will not be baked into the parent map during map compile, 
 If enabled writes the modified normals into a separate vertex stream to be used by the shader. Otherwise modifies meshes original normals.
 If enabled, any entity target names within the prefab will have a prefix applied to ensure they are unique. This prevents any issues with entities in two different prefabs having name collisions.
 If enabled, double clicking on the marker will re-orient the camera in addition to setting the workplane.
-If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 If enabled, there will be a point_prefab entity at runtime representing this prefab as an EntityIO target (requires Relays and a Target Name). Map Relay connections will not be baked, but will instead route through this entity.
 If enabled, transforming this node will transform the target node such that the relative offset is maintained, essentially locking the transform of the two objects together regardless of which one is edited. Normally when this is disabled, moving this object will not affect the target node and will instead update the pin offset values.
 If set, considers failure cases to be errors. Failures are warnings by default.
@@ -20191,14 +20177,11 @@ MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
 MD5 match on %s, loading from vcs\n
 MD5 mismatch on %s, will load from vfx instead.\n
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
 MIsStringAndTokenType
 MKV3TransferName
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MModelGameData
 MODES
 MORPH
@@ -21054,7 +21037,6 @@ PC_SM_5_0
 PC_SM_5_0_VULKAN
 PC_SM_6_0_VULKAN
 PF\n%d %d\n-1.000000\n
-PF_TYPE_CONTROL_POINT_IS_SET
 PLUS %d ADDITIONAL REFERENCES
 PLUS ADDITIONAL REFERENCES NOT LISTED HERE\n
 PLUS ONE ADDITIONAL REFERENCE
@@ -21115,7 +21097,6 @@ Parent Node
 Parent Node Name
 Parent Reaction
 Parent Rotation
-Parent VData
 Parent bone '%s' specified by define bone could not be found.
 Parent node type is not a valid node type for this node
 Parent of Chain Requires Alignment
@@ -21392,7 +21373,6 @@ Probe Radius
 Probe Type
 Procedural
 Procedural Hit Reactions
-Proceed Immediately
 Process Selector
 Processing %d files 
 Processing %d of %d files
@@ -21428,7 +21408,6 @@ Proxy Name
 Prune pieces < error threshold
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
-PulseDurationStringFormat_t
 Push Out
 Push mesh faces outward along their local normal. Optionally build shell geometry.
 PushBack
@@ -21520,7 +21499,6 @@ R?mapRect@QTransform@@QEBA?AVQRectF@@AEBV2@@Z
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RBF Based Anim Constraint
 REF NOT FOUND: 
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RIGID
 ROTATION
 RSDSZ
@@ -22464,7 +22442,6 @@ Swing Offset Angle
 Switch Threshold
 Symbol
 Symbol table:  %d entries %llu bytes\n
-Synchronous - Wait for this node to fully complete before proceeding.
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
 TAG_
@@ -22502,8 +22479,6 @@ Tag Cursor
 Tag Self When Complete
 Tag Value
 Tag missing from Tag condition on transition from "%s" to "%s" in state machine "%s"
-TagActionStatus
-TagStatus
 Tail Cycle
 Tail End of Rope
 Tail Frame
@@ -22859,7 +22834,6 @@ Tried to read a compound property from a non-compound:
 Tried to read a scalar property from a non-scalar: 
 Tried to read an array property from a non-array: 
 Tried to rename from '%s' to '%s', but '%s' already exists\n
-Trigger
 Tris
 Tris:
 Truncated header.
@@ -22893,12 +22867,6 @@ UI Background
 UI Camera Yaw/Pitch
 UICameraRotation
 UPAXIS
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 UScale
 UV Attribute Simplification Weight
 UV Map Box
@@ -23028,7 +22996,6 @@ UpdateTerrainElements
 UpdateVisibleRowData
 Updates the paramter of the active probe on the mix graph.
 Updating references to file: %s\n
-UpscalerType_t
 Use Best Size Match
 Use Block Solver
 Use Child Offset Attachment
@@ -23051,7 +23018,6 @@ Use Radius Culling
 Use RenderMesh List
 Use UV2 for Lightmap Charting
 Use VPhysics
-Use World Space Up
 Use a higher quality solver for this joint. Improves accuracy / stiffness but increases CPU cost.
 Use for faces
 UseBaseVertex
@@ -23078,7 +23044,6 @@ V oA
 V0HB
 V?redF@QColor@@QEBANXZ
 VCS3 %s Load Failure: Could not find DATA block\n
-VDATA
 VData:%s
 VDataChoice( %s )
 VDataChoice( %s!%s )
@@ -23320,9 +23285,7 @@ Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
 Which solver to use for positioning the IK chain.  Required.
 While Current
-While False
 While Fully Blended
-While True
 WhiteLevel
 WhiteOnBlack
 WhitePoint
@@ -23872,7 +23835,6 @@ animationSets
 animationTime
 animations
 animflags
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
@@ -24010,7 +23972,9 @@ bUseFixedUpDirection
 bUseProjectedDistance
 bValue
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
+b_action_restart
 b_movement_code_driven
+b_movement_type_restart
 b_override_timing
 backFacingAngle
 back_solve_influence_threshold
@@ -25212,10 +25176,8 @@ draw_wireframe
 durationTime
 duration_info
 dynamic_attributes
-eCenteredCylinder
 eFrameSelection
 eGenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!\n
-eGroundCylinder
 eLinearRootMotionBlendMode
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
@@ -26265,7 +26227,6 @@ m_ActiveValue
 m_AdditionalInputDependencies
 m_AdditionalRelatedFiles
 m_ArgumentDependencies
-m_BoneMergeLinks
 m_ChildResourceList
 m_ChoiceGroups
 m_ChoiceValues
@@ -26285,10 +26246,13 @@ m_DefaultTargetSettings.m_Bone
 m_DefaultTargetSettings.m_TargetSource
 m_Deformers
 m_DeltaTransform
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
 m_DrawCalls
 m_ElementPath
 m_EndEffectorFixedOffsetAttachment
 m_EnumArray
+m_EvaluateConnection
 m_ExtraStreams
 m_Format
 m_HingeAxis
@@ -26303,7 +26267,6 @@ m_LocatorConfig
 m_MaterialOverrideTables
 m_MaterialTintTables
 m_MeshResourceName
-m_Metadata
 m_NavAreas.Count() < CNavMarkerData::MAX_ELEMENTS
 m_Normals
 m_ParameterType
@@ -26320,7 +26283,6 @@ m_ResourceNames
 m_RootRelativePath
 m_SearchPath
 m_SearchableUserData
-m_SequencePoint
 m_Special
 m_SpecialDependencies
 m_SpecialInputDependencies
@@ -26330,7 +26292,6 @@ m_Streams
 m_String
 m_SubassetDefinitions
 m_SubassetReferences
-m_TagStatus
 m_TagValue
 m_TargetType
 m_TestEnum
@@ -26345,9 +26306,7 @@ m_argValueArray
 m_attachments
 m_attribIdx
 m_attributes
-m_bAllowDefinitions
 m_bAllowLayerOverride
-m_bAllowReferences
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
 m_bChildCursorsShouldInherit
@@ -26383,7 +26342,6 @@ m_bStaticCB
 m_bUseCompressedNormalTangent
 m_bUseNewPoleVectorForAxis
 m_bUseShadowFastPath
-m_bWorldSpaceOrientation
 m_baseMetrics
 m_byteCodeData
 m_byteCodeIndex
@@ -26401,10 +26359,7 @@ m_dynamicComboRuleArray
 m_dynamicComboVars
 m_dynamicComboVarsRef
 m_eRbfType
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
 m_expr
-m_fEmissiveFactor
 m_fMoveTo
 m_fileExt
 m_flDefault
@@ -26427,7 +26382,6 @@ m_flPathingDistanceRatio
 m_flProbeRadius
 m_flSlopeIncoming
 m_flSlopeOutgoing
-m_flTagStartAnimTime
 m_flUiStep
 m_hCursorOnOtherGraph
 m_hDef
@@ -26447,7 +26401,6 @@ m_intDefault
 m_intMax
 m_intMin
 m_iszNPC
-m_materialGroupToken
 m_materialsValues
 m_mipAlgorithm
 m_mipProcessingCommand
@@ -26460,7 +26413,6 @@ m_nByteCodeDataIdx
 m_nChannelCount
 m_nChannelDesc
 m_nChannelInfoIndex
-m_nChildNode
 m_nClusterIndex
 m_nComboIndexValue
 m_nCompareValue
@@ -26499,7 +26451,6 @@ m_nOffs
 m_nOutputDimensionReduce
 m_nOutputMaxDimension
 m_nOutputMinDimension
-m_nParentHash
 m_nProbeIndex
 m_nProbeIndexSource
 m_nProbeType
@@ -26509,16 +26460,11 @@ m_nRegisterOffset
 m_nResourceNameIndex
 m_nSelectedProbeType
 m_nSize
-m_nSrcDrawIndex
 m_nStackDepthWhenAdded
 m_nTypeSpecificBits
 m_nUserData
 m_nVariableBinding
 m_nVariableSourceMax
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_nYieldToken
 m_offs
 m_outputClearColor
@@ -26541,7 +26487,6 @@ m_rbfParameters
 m_registerType
 m_reverbScales
 m_reverbTimes
-m_rootBvhNodes
 m_ruleType
 m_sValue0
 m_shaderComboSourceType
@@ -26894,7 +26839,6 @@ nCompressedSize == nUncompressedSize
 nCoordinateSpace
 nCountMax
 nCountMin
-nDenominator
 nDetailObjectFadeLevel
 nDirectionSpace
 nDistributionMode
@@ -26906,7 +26850,6 @@ nLayoffState
 nLodLevel
 nMaxElements
 nNoHitResult
-nNumerator
 nOriginSpace
 nPathSpace
 nPickMode
@@ -28799,7 +28742,6 @@ z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 zero dir
 zero_unselected
 zip_line_node
-{ item_factory = 'IntervalTimer' }
 { uninitialized }
 {Hammer node %d} 
 {\n?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z

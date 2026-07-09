@@ -3,7 +3,6 @@ class C_BaseModelEntity : public C_BaseEntity
 	// MNotSaved
 	CRenderComponent* m_CRenderComponent;
 	CHitboxComponent m_CHitboxComponent;
-	// MPtrAutoallocate
 	CChoreoComponent* m_pChoreoComponent;
 	HitGroup_t m_nDestructiblePartInitialStateDestructed0;
 	HitGroup_t m_nDestructiblePartInitialStateDestructed1;
@@ -20,7 +19,6 @@ class C_BaseModelEntity : public C_BaseEntity
 	bool m_bDestructiblePartInitialStateDestructed2_GenerateBreakpieces;
 	bool m_bDestructiblePartInitialStateDestructed3_GenerateBreakpieces;
 	bool m_bDestructiblePartInitialStateDestructed4_GenerateBreakpieces;
-	// MPtrAutoallocate
 	CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent;
 	// MNotSaved
 	bool m_bInitModelEffects;
@@ -52,6 +50,6 @@ class C_BaseModelEntity : public C_BaseEntity
 	Color m_ClientOverrideTint;
 	// MNotSaved
 	bool m_bUseClientOverrideTint;
-	// MSaveOpsForField = "GetHitgroupDisableListSaveRestoreOps"
+	// MKV3TransferSaveOpsForField = "GetHitgroupDisableListSaveRestoreOps"
 	uint32[1] m_bvDisabledHitGroups;
 };

@@ -1863,7 +1863,6 @@ Account not verified
 Accounts not friends
 AchievementUnlocked
 Acrypto\asn1\tasn_new.c
-Active
 AdaptationSet
 AddClientConnectionBackToPool called, with no current map entry!
 AddedGameToWishlist
@@ -2691,6 +2690,7 @@ Can't dump heaps until you've walked them!\n
 Can't see w/o segment size
 Can't seek w/o init segment size
 Can't use datagrams with SSL connections, SSL requires reliability.
+Canceled
 Canceled by new transaction
 Cancelled by Admin
 Cancelled by Friendly Fraud Lock
@@ -5517,6 +5517,7 @@ Subject Information Access
 Submiting threaded work item for HTTP request to %s\n
 Subscribed
 Subscribers
+Succeeded
 Success! http%s://%s%s\n
 SuggestedFriend
 Suite B: cannot sign P-384 with P-256
@@ -10433,7 +10434,6 @@ k_EMsgGCHUpdateMultipleSessions
 k_EMsgGCHUpdateSession
 k_EMsgGCHVacVerificationChange
 k_EMsgGCInterAppMessage
-k_EMsgGCSystemMessage
 k_EMsgGMDRMSync
 k_EMsgGMGetServiceMethodRouting
 k_EMsgGMLoadActivationCodes

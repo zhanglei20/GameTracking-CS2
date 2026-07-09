@@ -3,6 +3,16 @@
 	resource_manifests = 
 	[
 		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/tools/hammer/waterplanehelper.cpp"
+			source_line = 19
+			resources = 
+			[
+				resource_name:"scripts/water_types.vdata",
+			]
+		},
+		{
 			name = "ToolLocatorGroup"
 			group = "ToolsStartup"
 			source_file = "src/tools/hammer/toollocator.cpp"
@@ -38,7 +48,7 @@
 			name = ""
 			group = "ToolsStartup_RayTracing"
 			source_file = "src/tools/hammer/qhammerpanecontainer.cpp"
-			source_line = 206
+			source_line = 209
 			resources = 
 			[
 				resource_name:"materials/dev/rtx/pathtracer.vmat",
@@ -49,7 +59,7 @@
 			name = "MapViewGroup"
 			group = "ToolsStartup"
 			source_file = "src/tools/hammer/mapview.cpp"
-			source_line = 85
+			source_line = 81
 			resources = 
 			[
 				resource_name:"materials/tools/selection_stencil_copy.vmat",
@@ -134,19 +144,9 @@
 		},
 		{
 			name = ""
-			group = "ToolsStartup_SM50"
-			source_file = "src/toolrenderutils/toolmatsysutils.cpp"
-			source_line = 161
-			resources = 
-			[
-				resource_name:"materials/tools/grid.vmat",
-			]
-		},
-		{
-			name = ""
 			group = "ToolsStartup"
 			source_file = "src/toolrenderutils/toolmatsysutils.cpp"
-			source_line = 125
+			source_line = 126
 			resources = 
 			[
 				resource_name:"materials/tools/wireframe_vertex_color.vmat",
@@ -173,6 +173,7 @@
 				resource_name:"materials/tools/handle_ring_translucent.vmat",
 				resource_name:"materials/tools/handle_square_ring_translucent.vmat",
 				resource_name:"materials/tools/handle_edged_circle_translucent.vmat",
+				resource_name:"materials/tools/grid.vmat",
 			]
 		},
 		{
@@ -232,7 +233,7 @@
 			name = ""
 			group = "ToolsStartup"
 			source_file = "src/mapdoclib/mapprefab.cpp"
-			source_line = 28
+			source_line = 30
 			resources = 
 			[
 				resource_name:"materials/editor/prefab_icon.vmat",
@@ -251,9 +252,9 @@
 		},
 		{
 			name = ""
-			group = "ToolsStartup_SM50"
+			group = "ToolsStartup"
 			source_file = "src/mapdoclib/windcontrollerhelper.cpp"
-			source_line = 26
+			source_line = 27
 			resources = 
 			[
 				resource_name:"materials/dev/wind_controller_visualize.vmat",

@@ -895,7 +895,6 @@ Close Tab
 Closed
 Container
 Containers
-Current
 D:\dev\thirdpartycode\lgpl\qt_ads\valve\x64\bin\RelWithDebInfo\qtadvanceddocking-qt5.pdb
 Detach
 Detach Group
@@ -906,7 +905,6 @@ DockOverlayCross
 DockWidget
 DockWidgetAreaLabel
 Dv~\vMf
-Enable
 FNTq*
 Floating
 FloatingWidget

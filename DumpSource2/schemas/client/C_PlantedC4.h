@@ -26,7 +26,7 @@ class C_PlantedC4 : public CBaseAnimGraph, public IHasAttributes
 	CHandle< C_CSPlayerPawn > m_pBombDefuser;
 	GameTime_t m_fLastDefuseTime;
 	CBasePlayerController* m_pPredictionOwner;
-	Vector m_vecC4ExplodeSpectatePos;
+	VectorWS m_vecC4ExplodeSpectatePos;
 	QAngle m_vecC4ExplodeSpectateAng;
 	float32 m_flC4ExplodeSpectateDuration;
 };

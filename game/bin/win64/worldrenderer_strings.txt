@@ -77,7 +77,6 @@ AggregateInstanceStream
 AggregateRTProxyDesc
 AggregateSceneObjectDesc
 AggregateVertexColorStream
-AggregateVertexEmissiveStreamOnDiskData_t
 AllocateAndLoad failed for '%s' (%s)\n
 AllocateAndLoad failed for '%s'\n
 AllocateResource: Cannot find DATA block in resource %s!\n
@@ -242,15 +241,8 @@ lightmaps
 lowprecisionuv
 lowprecisionuv1
 m_Format
-m_InstanceEmissiveData
 m_InstanceOrientations32
 m_VisClusterMemberBits
-m_emissiveFormat
-m_fEmissiveFactor
-m_nVertexEmissiveByteOffset
-m_nVertexEmissiveStreamOffset
-m_vertexEmissiveStream
-m_vertexEmissiveStreams
 mapUsageType
 maps/%s/world.vrman
 maps/%s/world.vwrld

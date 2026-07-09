@@ -218,7 +218,6 @@ C:\buildworker\csgo_rel_win64\build\_build_\navsystem\_vpc_navsystem\default\win
 C:\buildworker\csgo_rel_win64\build\src\navlib\nav_mesh.cpp
 C:\buildworker\csgo_rel_win64\build\src\navlib\nav_pathfind.cpp
 CNavMesh::GetGroundHeight
-CNavPathCost
 CNavSpaceBuilder
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
@@ -286,7 +285,6 @@ GetNearestNav: Success! Returning area [%d]
 GetNearestNav: [%d] Areas that failed poly test
 HeQyA
 Hide unless error/warning occurs
-INavPathCost
 IslandRemoval
 IslandRemoval - unable to find a poly near navlink location %g %g %g\n
 LadderConnect
@@ -450,19 +448,6 @@ lifespan
 loud
 lowprecisionuv
 lowprecisionuv1
-m_bAllowLadders
-m_bCanFly
-m_bCanSwim
-m_bOptimizeFlySpacePathfinds
-m_bStringPullFlySpacePathfinds
-m_bSupportsTransitions
-m_flFlyingTransitionTolerance
-m_flGroundToWaterMaxHeight
-m_flGroundToWaterTransitionDistance
-m_flTransitionPenalty
-m_flWaterToGroundMaxHeight
-m_flWaterToGroundTransitionDistance
-m_navHull
 medianFilterWalkableArea: Out of memory 'areas' (%d).
 medium
 mergeAndFilterLayerRegions: Out of memory 'regions' (%d).

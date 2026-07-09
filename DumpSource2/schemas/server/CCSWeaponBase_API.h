@@ -1,0 +1,3 @@
+class CCSWeaponBase_API
+{
+};

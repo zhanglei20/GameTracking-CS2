@@ -40,10 +40,9 @@ class C_CSPlayerPawn : public C_CSPlayerPawnBase
 	bool m_bMustSyncRagdollState;
 	int32 m_nRagdollDamageBone;
 	Vector m_vRagdollDamageForce;
-	Vector m_vRagdollDamagePosition;
 	char[64] m_szRagdollDamageWeaponName;
 	bool m_bRagdollDamageHeadshot;
-	Vector m_vRagdollServerOrigin;
+	VectorWS m_vRagdollServerOrigin;
 	GameTime_t m_lastLandTime;
 	bool m_bOnGroundLastTick;
 	CHandle< C_CS2HudModelArms > m_hHudModelArms;
@@ -81,11 +80,11 @@ class C_CSPlayerPawn : public C_CSPlayerPawnBase
 	bool m_bOldIsScoped;
 	bool m_bHasDeathInfo;
 	float32 m_flDeathInfoTime;
-	Vector m_vecDeathInfoOrigin;
+	VectorWS m_vecDeathInfoOrigin;
 	GameTime_t m_grenadeParameterStashTime;
 	bool m_bGrenadeParametersStashed;
 	QAngle m_angStashedShootAngles;
-	Vector m_vecStashedGrenadeThrowPosition;
+	VectorWS m_vecStashedGrenadeThrowPosition;
 	Vector m_vecStashedVelocity;
 	bool m_bShouldAutobuyDMWeapons;
 	GameTime_t m_fImmuneToGunGameDamageTime;

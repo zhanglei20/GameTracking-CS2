@@ -222,7 +222,6 @@ Async Call Method (Child Cursor) C%d:I%d
 Async Child1
 Async Child2
 Async Outflow (Child Cursor) C%d:I%d
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 Bad FLC data for resource '%s': %s\n
 Bad KV3 data for resource '%s': %s\n
 Bad count in ArraySetCount (%d)
@@ -233,7 +232,6 @@ Bad reinterpret on ArrayRemoveElementMatching
 Base-10 logarithm
 Base-2 logarithm
 Basic Function
-Basic string support.
 Begin testing a condition composed of Observable values. Continues checking until canceled.
 Begin testing a condition composed of Observable variable references. Continues checking until true.
 C:\buildworker\csgo_rel_win64\build\_build_\pulse_system\_vpc_pulse_system\default\win64\_msvc_\Retail\pulse_system.pdb
@@ -266,7 +264,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_ExampleCriteria::CheckRequirement
@@ -291,15 +288,10 @@ CPulseCell_Step_TestDomainCreateFakeEntity::Run
 CPulseCell_Step_TestDomainDestroyFakeEntity::Run
 CPulseCell_Step_TestDomainEntFire::Run
 CPulseCell_Step_TestDomainTracepoint::Run
-CPulseCell_TestEnums
 CPulseCell_TestEnums::CompareValues
-CPulseCell_TestWaitWithAutoTracepoints
 CPulseCell_TestWaitWithAutoTracepoints::Wait
-CPulseCell_TestWaitWithCursorState::InstanceState_t
 CPulseCell_TestWaitWithCursorState::Wait
-CPulseCell_TestYieldForever
 CPulseCell_TestYieldForever::Run
-CPulseCell_TestYieldWithObservables
 CPulseCell_TestYieldWithObservables::Run
 CPulseCell_Test_MultiInflow_NoDefault::InflowA
 CPulseCell_Test_MultiInflow_NoDefault::InflowB
@@ -330,7 +322,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -417,7 +408,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -478,7 +468,6 @@ CPulseTurtleGraphicsCursor::Turn
 CPulseTypeManager::Allocate( %s )\n
 CPulseTypeManager::Deallocate( %s, %p )\n
 CPulseTypeManager::DeallocateResource( %s, %s, dealloc=%p live=%p )\n
-CREATE_CHILD_CURSOR_OUTFLOW
 CStrongHandle
 CTestDomainDerived_Cursor::GetCursorValueA
 CTestDomainDerived_Cursor::GetCursorValueB
@@ -495,6 +484,7 @@ CUtlOrderedMap<class PulseSymbol_t,class IPulseBlackboardView *,class CDefLess<c
 CUtlVectorFixedGrowable
 Call C%d:I%d (%s)
 Called to invoke the graph
+Canceled
 Cannot allocate abstract class
 Cast of %s loses value information (returning %s) in %s on %s:%u\n
 Ceiling - round float up to nearest integer)
@@ -566,7 +556,6 @@ Element Access R%d <- R%d[R%d]
 EntFire,%s,%s,%s
 EntityName
 Enum flags '%s' invalid value '%s'
-Enum support.
 Enumeration '%s' does not have a value '%s'
 Eq R%d <- R%d == R%d
 Evaluate the curve at the specified input position
@@ -708,8 +697,6 @@ Log10
 Log2
 Lower pen.
 MAtomicTransfersAsPlainString
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MPropertyFlattenIntoParentRow
 MPropertyLeafSuggestionProviderFn
 MPulseEditorHeaderExpr
@@ -774,7 +761,6 @@ OnOut2
 OnYieldResume1
 OnYieldResume2
 Only wrote %d (of %d) values when saving map!
-Opens the specified pulse used in this map in the editor.\n\tArguments: <pulse_file>
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Or R%d <- R%d || R%d
 Out1
@@ -793,7 +779,6 @@ PanelID
 Parameters
 ParametersKV3
 Parent Map: %s\n
-Parent VData
 Pass Outflow
 Pen Down
 Pen Up
@@ -805,17 +790,13 @@ PrintStringWithEditorSuggestions: %s\n
 PrintStringWithLeafSuggestions: %s\n
 Probable infinite loop detected! Terminating pulse cursor after %d consecutive instructions (%s)
 Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
-Proceed Immediately
 Process Selector
 Pulse system: minimal vpulse definition loading enabled - graphs may be incomplete!\n
 Pulse: %s 
-PulseDurationStringFormat_t
 PulseSystemEventCursorResult_t
 PulseSystemEventObservableVariableListenerNotify_t
 PulseSystemEventObservableVariableSourceChanged_t
 PulseSystemEventYieldResume_t
-PulseTestEnumFlagsAlt_t
-PulseTestEnumFlags_t
 R Sqrt
 RESOURCE_TYPE_PULSE_GRAPH_DEF
 Rad2 Deg
@@ -853,13 +834,11 @@ Returns true if the World Vector is valid
 Returns up to the maximum requested elements. Never grows the array (unlike SetCount).
 Round - round float up or down to integer
 Round Float
-SECOND
 Saturate
 Saturate (clamps float between 0 and 1)
 Save a named value of any type on the cursor.
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
-Second
 Set And Get Int Value
 Set Cursor Value A
 Set Cursor Value B
@@ -924,8 +903,6 @@ Stop Waiting
 String Length
 Strings Are Equal Case Sensitive
 Sub R%d <- R%d - R%d
-Synchronous - Wait for this node to fully complete before proceeding.
-THIRD
 Tag Cursor
 Tag Self When Complete
 TagsRemoved
@@ -937,7 +914,6 @@ Test Compiled Params  After Type Changes
 Test Compiled Params  Before Type Changes
 Test Domain
 Test Domain Entity
-Test Enums
 Test Function Renamed   With Args  New
 Test Function Renamed  New
 Test Function Renamed  Old
@@ -965,7 +941,6 @@ TestFunctionRenamed_Old
 TestFunctionRenamed_WithArgs_New
 TestFunctionRenamed_WithArgs_Old
 The Target object. In code, this parameter is the API This() object for this Input.
-Third
 This is the description of the fake entity sub-domain
 This is the overall duration. If -1 timer will continue forever. During this duration, we will fire a new child cursor at each Interval.
 Time since the start of the timer
@@ -979,22 +954,18 @@ TurtleGraphics
 Unknown format type
 Unsupported version %d for resource '%s' (Expected %d)\n
 Used to flag a test as having failed.
-VDATA
 Value 0-1 how far along duration (always 0 if duration is -1)
 Vector To World Vector
 WARNING: Pulse failed to restore yielded cursor - error with cell state (%d:%s)\n
 WARNING: Pulse failed to restore yielded cursor - no yielding cell or landing pad (%d:%s)\n
 WARNING: Pulse failed to save yielded cursor - no yielding cell or landing pad (C%d:I%d)\n
 Wait Complete
-Wait and Trace
 Wake Cursors With Tag
 Wake Fail
 Watch For Float Value
 Watch For String Value
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
-While False
-While True
 World Vector To Vector
 X to the Y power
 Yield Resume1
@@ -1031,7 +1002,6 @@ allow_direct_return
 allowed_api_features
 allowed_requirements
 allowed_variable_keys_types
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
@@ -1042,7 +1012,6 @@ arg2
 arg3
 arg4
 attr_factory
-bFail
 bInAutoWakeList
 bInherit
 bValue
@@ -1154,6 +1123,9 @@ m_BlackboardResourceName
 m_Classes
 m_ClockScopeID
 m_DefaultKV3
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
+m_EvaluateConnection
 m_HelpContextName
 m_Helpers
 m_Inargs
@@ -1161,21 +1133,15 @@ m_Inputs
 m_Items
 m_KV3Metadata
 m_LegacyDefaultStr
-m_LiveFloatValue
-m_LiveStringValue
 m_LongName
 m_MetaData
-m_Metadata
 m_MissingRetvalDefault
 m_ParamType
 m_PlugType
 m_PreparedHook
 m_ResumePoint
-m_SequencePoint
 m_Stops
 m_TagValue
-m_TracePrefix
-m_WatchForStringValue
 m_bChildCursorsShouldInherit
 m_bConditionValue
 m_bCustom
@@ -1189,7 +1155,6 @@ m_curValue
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_flWakeTime
-m_flWatchForFloatValue
 m_hCursor
 m_hCursorOnOtherGraph
 m_hDef
@@ -1197,19 +1162,13 @@ m_hGraphInstance
 m_hInstance
 m_hListenerInstance
 m_hObserver
-m_hSelfCellInstance
-m_hSelfCellInstanceUntyped
-m_hSelfCursor
 m_iValue
 m_nCellID
 m_nClassType
 m_nCurrentWakeIndex
 m_nCursorID
-m_nDummy
 m_nGraphID
 m_nLegacyDefaultInt
-m_nReferenceColor
-m_nReferenceFlags
 m_nResult
 m_nStackDepthWhenAdded
 m_nSubject
@@ -1235,12 +1194,10 @@ modelgamedata
 modelstatechoices
 moveclass
 nAsyncRet1
-nDenominator
 nFormat
 nHandle
 nKillPriority
 nMaxElements
-nNumerator
 nParam
 nRemainderDigits
 nRemainderNoiseDigits
@@ -1266,7 +1223,6 @@ observable_true
 observer_cursors
 omni
 open_asset %s
-open_current_map_pulse_in_tool
 operator int
 outbound
 overrideclass
@@ -1373,4 +1329,3 @@ world_point
 world_transform
 yield_token
 z\tV_sind
-{ item_factory = 'IntervalTimer' }

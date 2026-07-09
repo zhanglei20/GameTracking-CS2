@@ -1,11 +1,11 @@
 class CBaseAnimGraph : public CBaseModelEntity
 {
-	// MSaveOpsForField = "GetAnimGraphControllerManagerSaveRestoreOps"
 	CAnimGraphControllerManager m_graphControllerManager;
-	// MSaveOpsForField = "GetAnimGraphControllerPtrSaveRestoreOps"
-	CAnimGraphControllerBase* m_pMainGraphController;
+	CAnimGraphControllerPtr m_pMainGraphController;
 	bool m_bInitiallyPopulateInterpHistory;
-	// MSaveOpsForField = "GetChoreoServicesSaveRestoreOps"
+	CEntityOutputTemplate< float32 > m_OnLayerCycleUpdated;
+	CEntityIOOutput m_OnExternalChoreoGraphChanged;
+	// MKV3TransferSaveOpsForField = "GetChoreoServicesSaveRestoreOps"
 	IChoreoServices* m_pChoreoServices;
 	bool m_bAnimGraphUpdateEnabled;
 	// MNotSaved

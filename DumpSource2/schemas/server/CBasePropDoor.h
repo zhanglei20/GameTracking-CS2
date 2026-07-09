@@ -8,7 +8,7 @@ class CBasePropDoor : public CDynamicProp
 	DoorState_t m_eDoorState;
 	bool m_bLocked;
 	bool m_bNoNPCs;
-	Vector m_closedPosition;
+	VectorWS m_closedPosition;
 	QAngle m_closedAngles;
 	CHandle< CBaseEntity > m_hBlocker;
 	bool m_bFirstBlocked;
@@ -16,16 +16,17 @@ class CBasePropDoor : public CDynamicProp
 	bool m_bForceClosed;
 	VectorWS m_vecLatchWorldPosition;
 	CHandle< CBaseEntity > m_hActivator;
-	CUtlSymbolLarge m_SoundMoving;
-	CUtlSymbolLarge m_SoundOpen;
-	CUtlSymbolLarge m_SoundClose;
-	CUtlSymbolLarge m_SoundLock;
-	CUtlSymbolLarge m_SoundUnlock;
-	CUtlSymbolLarge m_SoundLatch;
+	float32 m_flSpeed;
+	CGameSoundEventName m_SoundMoving;
+	CGameSoundEventName m_SoundOpen;
+	CGameSoundEventName m_SoundClose;
+	CGameSoundEventName m_SoundLock;
+	CGameSoundEventName m_SoundUnlock;
+	CGameSoundEventName m_SoundLatch;
 	// MNotSaved
-	CUtlSymbolLarge m_SoundPound;
-	CUtlSymbolLarge m_SoundJiggle;
-	CUtlSymbolLarge m_SoundLockedAnim;
+	CGameSoundEventName m_SoundPound;
+	CGameSoundEventName m_SoundJiggle;
+	CGameSoundEventName m_SoundLockedAnim;
 	// MNotSaved
 	int32 m_numCloseAttempts;
 	// MNotSaved

@@ -28066,6 +28066,7 @@ ARCHE
 A\tA\nA\vA\fA\rA
 AaBbzZ
 Aacute
+Abort
 Aborted from enter_block() callback.
 Aborted from enter_span() callback.
 Aborted from leave_block() callback.
@@ -28092,7 +28093,6 @@ ActionChanged
 ActionRole
 Activating Curse. Goodbye Cruel World.
 ActivationReason
-Active
 ActiveDescendantChanged
 Adapter %d: '%s' (vendor 0x%X device 0x%X flags 0x%X)
 Add Favorite
@@ -28428,7 +28428,6 @@ CubeMapPositiveY
 CubeMapPositiveZ
 Cubemap Array textures are not supported
 Cubemap texture cannot be multisample
-Current
 Cursive
 Cursor
 CursorShape
@@ -29300,7 +29299,6 @@ Keyboard Brightness Up
 Keyboard Light On/Off
 Keyboard Menu
 KeyboardModifiers
-Keys
 KindSteel
 Korean
 L L!L"L#L$L%L&L'L(L)L*L+L,L-L.L/L0L1L2L3L4L5L6L7L8L9L:L;L<L=L>L?L@LALBLCLDLELFLGLHLILJLKLLLMLNLOLPLQLRLSLTLULVLWLXLYLZL[L\L]L^L_L`LaLbLcLdLeLfLgLhLiLjLkLlLmLnLoLpLqLrLsLtLuLvLwLxLyLzL{L|L}L~L
@@ -31109,7 +31107,6 @@ Treble Down
 Treble Up
 Tree
 TreeItem
-Trigger
 Triggers the action
 TripleBuffer
 TrueSunset

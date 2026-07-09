@@ -1,0 +1,3 @@
+class CBaseEntity_SharedAPI
+{
+};

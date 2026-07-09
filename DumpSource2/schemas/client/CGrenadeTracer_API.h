@@ -1,0 +1,3 @@
+class CGrenadeTracer_API
+{
+};

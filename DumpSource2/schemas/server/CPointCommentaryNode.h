@@ -13,7 +13,7 @@ class CPointCommentaryNode : public CBaseAnimGraph
 	bool m_bUnderCrosshair;
 	bool m_bUnstoppable;
 	GameTime_t m_flFinishedTime;
-	Vector m_vecFinishOrigin;
+	VectorWS m_vecFinishOrigin;
 	QAngle m_vecOriginalAngles;
 	QAngle m_vecFinishAngles;
 	bool m_bPreventChangesWhileMoving;

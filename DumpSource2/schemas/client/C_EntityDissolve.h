@@ -17,9 +17,9 @@ class C_EntityDissolve : public C_BaseModelEntity
 	// MNotSaved
 	GameTime_t m_flNextSparkTime;
 	// MNotSaved
-	EntityDisolveType_t m_nDissolveType;
+	EntityDissolveType_t m_nDissolveType;
 	// MNotSaved
-	Vector m_vDissolverOrigin;
+	VectorWS m_vDissolverOrigin;
 	// MNotSaved
 	uint32 m_nMagnitude;
 	// MNotSaved

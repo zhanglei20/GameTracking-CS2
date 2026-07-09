@@ -1572,7 +1572,6 @@ CrlID
 CryptAcquireContextW
 CryptGenRandom
 CryptReleaseContext
-Current
 D"bu
 D#D)D;D?DEDKDQDSDYDeDoD
 D(n%6
@@ -3308,7 +3307,6 @@ Sd:z
 Secure Electronic Transactions
 Security
 Seed:
-Seek
 Selected Attribute Types
 Sending Steam API content notification\n
 Service

@@ -5,12 +5,13 @@ class CBaseButton : public CBaseToggle
 	bool m_fRotating;
 	// MNotSaved
 	locksound_t m_ls;
-	CUtlSymbolLarge m_sUseSound;
-	CUtlSymbolLarge m_sLockedSound;
-	CUtlSymbolLarge m_sUnlockedSound;
+	CGameSoundEventName m_sUseSound;
+	CGameSoundEventName m_sLockedSound;
+	CGameSoundEventName m_sUnlockedSound;
 	CUtlSymbolLarge m_sOverrideAnticipationName;
 	bool m_bLocked;
 	bool m_bDisabled;
+	float32 m_flSpeed;
 	GameTime_t m_flUseLockedTime;
 	bool m_bSolidBsp;
 	CEntityIOOutput m_OnDamaged;

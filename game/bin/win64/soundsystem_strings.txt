@@ -1440,9 +1440,7 @@ Band Desc
 BandPass
 Bass Freq
 Bass Mono
-Beat
 Beat Midi:\t%f : %i : %i\n
-Beat Pattern Library
 Beat float:\t%f : %f\n
 Beat:\t%f\n
 BeatPattern: Failed to load vdata: %s\n
@@ -1470,13 +1468,8 @@ CAudioMixThread::MixAudioFrame
 CFieldSelectionWordAllocator: Total number of array selection bytes on soundevent exceeded.\n\t%i required\n\t%i available\n
 CKV3Transfer_ToolsOnlyBlockingResourceLoad
 CKV3Transfer_ToolsOnlyBlockingResourceLoad::CKV3Transfer_ToolsOnlyBlockingResourceLoad
-CMD_SUBMIX_EXTRACTCONTAINER
 CONTINUE event %s | %s: elapsed time: %f, next sync time: %f, local elapsed: %f, local sync: %f\n
 CPiecewiseCurve
-CRandomPannerControls
-CSndBeatPattern
-CSndBeatPatternManager
-CSndBeatTrack
 CSosFieldDataVsnd constructed with empty vsnd\n
 CSosOPeratorGetOpVarInfo
 CSosOperatorAudibility::Execute
@@ -1567,13 +1560,7 @@ CVSoundStackScriptTypeManager::Allocate can't parse stack %s\n
 CVSoundStackScriptTypeManager::Allocate stack with empty name\n
 CVSoundTypeManager::CreateProceduralSfx
 CVSoundTypeManager::GetSfx
-CVoiceContainerLoopTriggerWithRandomPanner
 CVoiceContainerRandomSampler: Loaded %d grains into table Total of %lld samples, %f MB.\n
-CVoiceContainerVMixSnd
-CVoiceContainerVsndRadioButton
-CVoiceContainerVsndTrigger
-CVsndRadioButtonSlot
-CVsndTriggerSlot
 C\nw+C
 Can't find mix layer %s\n
 Can't find mixgroup name %s for submix\n
@@ -1594,7 +1581,6 @@ Cluster size: %u
 Connection Offset: %i\n
 Container has %d Arguments:\n
 Container has %d Parameters:\n
-Continuously retriggers a sound and optionally fades to the new instance. Sends a new Random panning value to a control input on each retrigger
 ControlInput_
 ControlOutput_
 ControlOutput_13
@@ -1657,7 +1643,6 @@ Delay Count
 Delay Gain
 Delay Scale
 Delay Type
-Denominator
 Denominator:\t%u\n
 Depth
 Depth Reflectivity
@@ -1685,8 +1670,6 @@ ERROR: Invalid Group Branch Index\n
 ERROR: Invalid Group Branch\n
 ERROR: missing enum name!
 ERROR: missing enum tokenset!
-EVsndPlaybackMode
-EVsndTriggerMode
 Edit Field
 Edit Stack %s Property Mismatch: member missing: %s in %s\n
 Edit Stack %s Property Mismatch: member types: %s in %s\n
@@ -1754,12 +1737,7 @@ Element.VMixShaperDesc_t
 Element.VMixSubgraphSwitchDesc_t
 Element.VMixUtilityDesc_t
 Element.VMixVocoderDesc_t
-Enable Endcap
 Enable Filter
-Enable Loopcap
-Enable Vsnd
-Endcap
-Endcap Vsnd (Stop)
 Engine client not found.
 EnsureCapacity
 Envelope Amount
@@ -1816,7 +1794,6 @@ FREEING MATCH ENTRY:\n
 FX Mix (1.0 == wet)
 Fade In
 Fade Out
-Fade Out (sec)
 Failed parsing mix modifier table %s: %s
 Failed to allocate an instance of a class of type '%s'
 Failed to allocate an instance of class '%s' (type '%s')
@@ -1861,7 +1838,6 @@ FoliageAnimation
 Follow user preference
 Force
 Forward Saw
-Forward Vector Stack Parameter Name
 Free
 Free ?: %s\n
 Freq Range End
@@ -1869,7 +1845,6 @@ Freq Range Start
 Gain
 GameChat
 GameInput
-Gate
 Generating TRASHSYNTH.\n
 GetContiguousSamples_Float
 GetSfx: NULL name\n
@@ -1920,11 +1895,6 @@ Invalid arg %s set for subvoice playing %s\n
 Invalid field type %s for field %s\n
 Is Oneshot
 KV3 Pointer
-Key Type
-Keyed Floats
-Keyed Midi
-Keyed Sound Events
-Keys
 Ksnd_enable_subgraph_log
 L?fff?
 LFO Amount
@@ -1933,15 +1903,10 @@ LFO Shape
 LFO Type
 LOG Fade in
 LOG fade out
-Launch Track
-Launch Track Beat/Bar/Phrase/Length Multiplier
-Launch Track Event Type
 LayerTriggers
-Length (beats)
 Length:\t%f\n
 LightmapUV
 LightmapUVW
-List all available beat patterns
 ListenerForwardVector
 LkV~
 LoadKV3Object error: %s\n
@@ -1950,9 +1915,6 @@ LoadVMixList
 Loading mapping from %s file.\n
 Loop End
 Loop Start
-LoopTriggerWithRandomPanner
-Loopcap
-Loopcap Vsnd (Loop)
 Loops:\t%s\n
 Low Cutoff Freq
 LowPass
@@ -1981,7 +1943,6 @@ Match Event Name: %s\n
 Match Event Type: %i\n
 Match SubString ?: %s\n
 Max Index
-Maximum Random Volume DB
 MidiSampler: Key Groups: %i\n
 MidiSampler: Max: %i\n
 MidiSampler: Min: %i\n
@@ -1996,7 +1957,6 @@ MidiSampler:\t\tMax: %i\n
 MidiSampler:\t\tSamples: %i\n
 MidiSampler:\t\t\tSample: %s\n
 Min Index
-Minimum Random Volume DB
 Mirror
 Mix (1.0 = wet)
 MixAudioFrame
@@ -2022,7 +1982,6 @@ Modulation Frequency
 Modulator Frequency
 NEW DSP NODE: size:(%.0f,%.0f) height:(%.0f) dif %.4f : refl %.4f : cobj: %.0f : sky %.0f \n
 NULL m_pSfx
-Namespace
 Never close the group automatically (used to indicate an error like the process exiting unexpectedly)
 No 'Mixers' member found in MixLayer in soundmixers.txt\n
 No DATA block for resource\n
@@ -2037,7 +1996,6 @@ Note: sound event %s operator %s has empty "match all" match settings\n
 Num Match groups: %i\n
 Number of materials not mapped = %d.\n
 Number of materials updated with new mapping = %d.\n
-Numerator
 Numerator:\t%u\n
 OPEN SIDED OUTDOOR AREA Detected \n
 OUTSIDE ALLEY Detected \n
@@ -2062,7 +2020,6 @@ OverlayProjectionDirection
 PARAM COUNT COMPARE FAIL: %s->%s\n
 PARAMDATA COMPARE FAIL: %s->%s : %s\n
 PARAMINFO COMPARE FAIL: %s->%s\n
-Panning Control Input Name
 Parallel
 Param Name: "%s" Type: %s
 Parameters: mix group name, [vol, mute, solo], value\n
@@ -2074,16 +2031,11 @@ Parsing LayerTriggers:\n
 Parsing MixGroups:\n
 Parsing MixLayers:\n
 Parsing SoundMixers:\n
-Pattern Launch Priority
-Pattern Launch Type
-Pattern Name
-Patterns
 Peak Amplitude
 PerVertexLighting
 Performing fixup on '%s'\n
 Phase
 Phase Invert
-Phrase
 Physics
 PhysicsSurfaceProperties
 Pitch Shift
@@ -2097,16 +2049,10 @@ Play Event Type: LENGTH\n
 Play Event Type: PHRASE\n
 Play Mult:\t%f\n
 Play Tail
-Play Track Beat/Bar/Phrase/Length Multiplier
-Play Track Event Type
 PlaySoundA
 PlayTime
 Playback Jitter
-Playback Track
 Playback Type: FWD\n
-Plays a vmix graph and its containers.
-Plays vsnds based on membership in a numbered index.
-Plays vsnds based on trigger parameter changes.
 Pre-Roll
 Prewview VMIX voice on the game graph, preview will be different!\n
 Priority volume scalar: %f
@@ -2134,12 +2080,10 @@ Processor Input
 Processor Sidechain
 ProcessorGenerate
 PropWorldOrigin
-Purge and reload all beat pattern data and files.
 PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown\n
 QUEUE event %s | %s : elapsed time: %f, next sync time: %f, length: %f\n
 QUEUE event %s\n
 Quality
-Queue
 RESOURCE_TYPE_SOUND
 RESOURCE_TYPE_SOUNDEVENTSCRIPT
 RESOURCE_TYPE_SOUNDSTACKSCRIPT
@@ -2148,8 +2092,6 @@ RMS Time MS
 ROOM Detected \n
 RSDSO
 Random Modulation
-Random Panner Control
-Random Sampler Container
 Random Sampler Voice Container Failed to load audio data for %s\n
 Random Sampler Voice Container referenced an audio asset (%s) that's too long (%d samples. Max supported: %d)\n
 Random Sampler Voice Container referenced too many audio assets (Referenced %d. Max supported: %d)\n
@@ -2179,7 +2121,6 @@ STACK FRAME: %f\n
 S_Init( finish )
 S_MixSampleFrames
 S_UpdateVoicesPerFrame
-Seek
 Select Tone
 Serialization failure: %s\n
 Set Blend
@@ -2193,7 +2134,6 @@ SetSoundEventDefinitionField: field not found on %s\n
 SetSoundEventDefinitionField: fieldData type does not match pOpFieldInfo data type on %s\n
 SetSoundEventDefinitionField: pOpFieldInfo Data type does not MATCH fieldData type on %s\n
 SetSoundEventDefinitionField: unable to add new static field on %s\n
-Sets a control input every time it's instantiated
 Setting MixLayer %s\n
 Setting Mixer %s: MixGroup %s: %s : %f\n
 Setting field %s to %s\n
@@ -2204,16 +2144,6 @@ Size Min
 Size in bytes
 Size of TRASHSYNTH instance on stack: %d\n
 Size of TRASHSYNTH on stack: %d\n
-SndBeatEventKeyedFloats_t
-SndBeatEventKeyedMidiNotes_t
-SndBeatEventKeyedSndEvts_t
-SndBeatEventKeys_t
-SndBeatEventType_t
-SndBeatKeyType_t
-SndBeatLaunchSyncType_t
-SndBeatMidiStatusType_t
-SndBeatTimeSignature_t
-SndBeatTrackPlaybackType_t
 SndOperators
 Something Weird ( check the BindInstanceParams implementation )
 SosBaseDataTypeDef_t: %i\n
@@ -2238,7 +2168,6 @@ SoundBugBugService001_Client
 SoundEvent %s, has invalid input_owner_entity_index, defaulting to 'neutral' perspective.\n
 SoundEvent %s, input_entity_index %i found but specified attachment %s was not\n
 SoundEvent %s, input_entity_index %i was valid but no longer is\n
-SoundEvent Name
 SoundEvent_error
 SoundMixer %s:\n
 SoundMixers
@@ -2285,20 +2214,14 @@ Start Op: QUEUED %s.\n
 Start Op: START FRAME %s.\n
 Start Op: STOP FRAME %s.\n
 Start Sound Event: %s\n
-Start recording to a desired wav.
 StartTime: %f\n
 Started to record into %s...\n
 Starts VSND: %s\nStarts Event(s): %s\n
-Status
 Status: \t%lld, %d (mix channels:%d)\n
 Steam Audio is not enabled.
-Step
-Stop recording all mic streams.
-Stop recording to a desired wav.
 Stop sound event: %s\n
 StopTime: %f\n
 Stopping All Sounds...\n
-Stops all currently playing patterns
 String Count: %i\n
 Subgraphs
 Sustain target amplitude
@@ -2309,7 +2232,6 @@ Sync Event Type: KEYS\n
 Sync Event Type: LENGTH\n
 Sync Event Type: PHRASE\n
 Sync Mult:\t%f\n
-Sync To Voice
 Sync Track: %s\n
 Sync Type: QUEUE\n
 Sync Type: RESET\n
@@ -2324,7 +2246,6 @@ TargetCastForModify
 The soundsystem requires the filesystem to run!\n
 Threshold dB
 Time Scale
-Time Signature
 Time: %f pattern: %f glob: %f\n
 Timed ?: %s\n
 Tokenset: %p\n
@@ -2351,9 +2272,6 @@ Total USED Stacks: %i\n
 Total soundevents %i\nTotal param bytes: %i\nTotal field bytes: %i\nTotal combined bytes: %i\n
 Total: %.2f MB\n
 Tracing soundscapes is only supported in the Server.\n
-Track Name
-Tracks
-Transpose
 Tried to load a polymorphic pointer with no '%s' key
 Tried to load resource reference '%s' from a value without a resource reference specific type.
 Tried to load the underlying audio data for procedural asset %s\n
@@ -2361,7 +2279,6 @@ Tried to load uncompiled asset %s\n
 Tried to load unknown asset %s\n
 Tried to play random sampler before the grain table finished loading. Will start playing late.\n
 Tried to play tone %d on an additive synth container that only has tones 0-%d
-Trigger
 Triggering %s with retrigger interval = %f; maximum distance = %f\n
 Triggers
 Trimming grain for %s from %f to %f seconds\n
@@ -2414,7 +2331,6 @@ VEM5
 VERTICAL SHAFT Detected \n
 VMIX %s switching to subgraph %s\n
 VMixEditTool001
-VMixSound
 VMixStartup
 VNOTIFY_DISABLE
 VNotify
@@ -2440,26 +2356,6 @@ Vmix Convolution node has not yet loaded IR vsnd, running pass thru.\n
 Voice Container Async Render Work
 Voice Containers: Attempted to set invalid param: %s\n
 Voice Elapsed Time: %f\n
-Volume Control Input Name
-Vsnd
-Vsnd 01
-Vsnd 02
-Vsnd 03
-Vsnd 04
-Vsnd 05
-Vsnd 06
-Vsnd 07
-Vsnd 08
-Vsnd 09
-Vsnd 10
-Vsnd 11
-Vsnd 12
-Vsnd 13
-Vsnd 14
-Vsnd 15
-Vsnd 16
-Vsnd Radio Button
-Vsnd Trigger
 WAIT event %s | %s: elapsed time: %f, next sync time: %f, local elapsed: %f, local sync: %f, length: %f, num loops: %i\n
 WARNING CSosOperatorSystem::OverwriteOpVarsParseKV3: Stack %s Operator %s: cannot find opfield : %s\n
 WARNING: Attempting to import existing public field %s in stack %s\n
@@ -2494,9 +2390,6 @@ Warning: sos_start_soundevent unable to read opvar %s for passing \n
 Warning: sos_start_soundevent unable to read opvar %s for passing from event %s\n
 Warning: track_queue: No track name specified on %s, playing without track features\n
 Wet Mix
-When visualizing dimensions data at runtime, draw the inside direction.
-When visualizing dimensions data at runtime, draw the outisde direction.
-When visualizing dimensions data at runtime, draw the size of the space.
 Windows Audio Device: %s\n
 Windows audio failed to initialize\n
 Won't age handle!\n
@@ -2723,23 +2616,6 @@ dsppreset
 duck_to_percent
 ducker_threshold
 dynamicEQScale
-eSndBeatEventTypeBar
-eSndBeatEventTypeBeat
-eSndBeatEventTypeInvalid
-eSndBeatEventTypeKeys
-eSndBeatEventTypeLength
-eSndBeatEventTypePhrase
-eSndBeatLaunchSyncTypeInvalid
-eSndBeatLaunchSyncTypeQueue
-eSndBeatLaunchSyncTypeReset
-eSndBeatLaunchSyncTypeSeek
-eSndBeatPatternTypeKeyedFloats
-eSndBeatPatternTypeKeyedMidi
-eSndBeatPatternTypeKeyedSndEvts
-eSndBeatPatternTypeKeys
-eSndBeatPatternTypeNone
-eSndBeatTrackPlaybackTypeFwd
-eSndBeatTrackPlaybackTypeStep
 ease_sin_out
 econ_replacement
 effectname
@@ -3296,12 +3172,8 @@ m_Submixes
 m_additionalOutputs
 m_audioMeters
 m_automaticControlInputs
-m_bEnableEndcap
-m_bEnableLoopcap
-m_bEnableVsnd
 m_bIsUnderwater
 m_bShouldPause
-m_bSyncToVoice
 m_controlInputArrays
 m_controlInputs
 m_controlMeters
@@ -3310,87 +3182,36 @@ m_controlPoints
 m_controlTransientInputs
 m_curves
 m_effectsPreview
-m_endcapVsnd
-m_fadeOut
-m_flFloat
-m_flKey
 m_flMasterVolume
 m_flMaxVolumeChangePerBuffer
-m_flPlayBeatMult
 m_flSeekTime
 m_flSend
 m_flSendFacingDSP
 m_flSendRoomDSP
 m_flSlopeIncoming
 m_flSlopeOutgoing
-m_flSyncBeatMult
-m_flSyncPriority
 m_flSystemVolumeFadeRate
 m_graphDesc
 m_graphName
 m_impulseResponseInputs
 m_impulseResponseValues
-m_keyType
-m_keyType != eSndBeatPatternTypeKeyedFloats
-m_keyType != eSndBeatPatternTypeKeyedMidi
-m_keyType != eSndBeatPatternTypeKeyedSndEvts
-m_keyType != eSndBeatPatternTypeKeys
-m_launchSyncEventType
-m_launchSyncEventType == eSndBeatPatternTypeKeys
-m_launchSyncType
-m_loopcapVsnd
 m_nChannelSelect
 m_nGuid
 m_nMemSize: %i -> %i\n
 m_nMixGroups
-m_nNote
 m_nStartSample
-m_nStatus
-m_nTranspose
-m_nVelocity
 m_nVoiceId
 m_nameInputMeters
 m_nameInputs
 m_pHandle
 m_pStack
 m_pVoice
-m_panningControlInputName
-m_playEventType
-m_playbackType
-m_randomPannerControls
 m_sendList
 m_sendName
-m_slot1
-m_slot10
-m_slot11
-m_slot12
-m_slot13
-m_slot14
-m_slot15
-m_slot16
-m_slot2
-m_slot3
-m_slot4
-m_slot5
-m_slot6
-m_slot7
-m_slot8
-m_slot9
 m_sources
-m_strSoundEventName
-m_strVectorStackParam
-m_timeSignature
 m_vHandLeft
 m_vHandRight
 m_valueArrays
-m_vecActiveTracks
-m_vecPatternFloats
-m_vecPatternKeys
-m_vecPatternMidi
-m_vecPatternSndEvts
-m_vecPatterns
-m_volumeControlInputName
-m_vsnd
 m_vsndInputs
 m_vsndName
 main
@@ -3502,9 +3323,7 @@ music
 mute
 mute: %3.2f\n
 muteTrackList
-nDenominator
 nNameSpaceIndex: %i -> %i\n
-nNumerator
 named
 namespace
 nband
@@ -3899,26 +3718,9 @@ single
 slerp
 slerp_bounce
 slow
-snd__beatpattern_stop_track
-snd_beatpattern_flush
-snd_beatpattern_print_activetracks
-snd_beatpattern_print_patterns
-snd_beatpattern_set_track_bpm
-snd_beatpattern_set_track_transpose
-snd_beatpattern_show_bpm
-snd_beatpattern_show_events
-snd_beatpattern_show_quantize_queue
-snd_beatpattern_stop_all_tracks
-snd_beatpattern_use_lookahead
 snd_print_soundevent %s
-snd_sos_beatpattern_show_operator_updates
-snd_sos_print_frametime
-snd_sos_tools_detailed_debugging
 snd_sos_update_server_message %s
 snd_soundmixer_setmixlayer_amount %s %f\n
-snd_steamaudio_display_dimension_data_inside
-snd_steamaudio_display_dimension_data_outside
-snd_steamaudio_display_dimension_data_size
 sndevt
 sndlvl_max
 sndlvl_min
@@ -3995,7 +3797,6 @@ startSubvoice
 startVoice
 start_group
 start_on_name_change
-start_rec_mic
 start_time%02d
 steamaudio_blend_ir
 steamaudio_compute_customdata
@@ -4009,8 +3810,6 @@ stop_oldest
 stop_previous
 stop_previous_on_name_change
 stop_queue
-stop_rec_mic
-stop_rec_mic_all
 stopped_includes_dependencies
 stopping_stops_current_events
 string0

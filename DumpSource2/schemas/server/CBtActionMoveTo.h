@@ -3,7 +3,7 @@ class CBtActionMoveTo : public CBtNode
 	CUtlString m_szDestinationInputKey;
 	CUtlString m_szHidingSpotInputKey;
 	CUtlString m_szThreatInputKey;
-	Vector m_vecDestination;
+	VectorWS m_vecDestination;
 	bool m_bAutoLookAdjust;
 	bool m_bComputePath;
 	float32 m_flDamagingAreasPenaltyCost;

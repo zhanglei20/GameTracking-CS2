@@ -6,7 +6,7 @@
 			name = "VPhysics2SurfacePropLoader"
 			group = "VPhysics2Startup"
 			source_file = "src/vphysics2/vphysics2.cpp"
-			source_line = 119
+			source_line = 185
 			resources = 
 			[
 				resource_name:"surfaceproperties/surfaceproperties.vsurf",
@@ -16,7 +16,7 @@
 			name = "PhysicsDebugMaterials"
 			group = "PhysicsDebugMaterials"
 			source_file = "src/vphysics2/vphys2_debug.cpp"
-			source_line = 38
+			source_line = 37
 			resources = 
 			[
 				resource_name:"materials/dev/debug_physics_noedges.vmat",

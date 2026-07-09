@@ -3,7 +3,6 @@ class CBaseModelEntity : public CBaseEntity
 	// MNotSaved
 	CRenderComponent* m_CRenderComponent;
 	CHitboxComponent m_CHitboxComponent;
-	// MPtrAutoallocate
 	CChoreoComponent* m_pChoreoComponent;
 	HitGroup_t m_nDestructiblePartInitialStateDestructed0;
 	HitGroup_t m_nDestructiblePartInitialStateDestructed1;
@@ -20,7 +19,6 @@ class CBaseModelEntity : public CBaseEntity
 	bool m_bDestructiblePartInitialStateDestructed2_GenerateBreakpieces;
 	bool m_bDestructiblePartInitialStateDestructed3_GenerateBreakpieces;
 	bool m_bDestructiblePartInitialStateDestructed4_GenerateBreakpieces;
-	// MPtrAutoallocate
 	CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent;
 	CEntityOutputTemplate< CBaseModelEntity::OnDamageLevelChangedArgs_t > m_OnDestructibleHitGroupDamageLevelChanged;
 	GameTime_t m_flDissolveStartTime;
@@ -42,6 +40,6 @@ class CBaseModelEntity : public CBaseEntity
 	uint8 m_nObjectCulling;
 	CUtlOrderedMap< CGlobalSymbol, int32 > m_bodyGroupChoices;
 	CNetworkViewOffsetVector m_vecViewOffset;
-	// MSaveOpsForField = "GetHitgroupDisableListSaveRestoreOps"
+	// MKV3TransferSaveOpsForField = "GetHitgroupDisableListSaveRestoreOps"
 	uint32[1] m_bvDisabledHitGroups;
 };

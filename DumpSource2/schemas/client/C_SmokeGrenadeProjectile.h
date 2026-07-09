@@ -4,7 +4,7 @@ class C_SmokeGrenadeProjectile : public C_BaseCSGrenadeProjectile
 	bool m_bDidSmokeEffect;
 	int32 m_nRandomSeed;
 	Vector m_vSmokeColor;
-	Vector m_vSmokeDetonationPos;
+	VectorWS m_vSmokeDetonationPos;
 	C_NetworkUtlVectorBase< uint8 > m_VoxelFrameData;
 	int32 m_nVoxelFrameDataSize;
 	int32 m_nVoxelUpdate;

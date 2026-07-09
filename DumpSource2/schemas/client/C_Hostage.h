@@ -10,13 +10,13 @@ class C_Hostage : public C_BaseCombatCharacter
 	bool m_bHandsHaveBeenCut;
 	CHandle< C_CSPlayerPawn > m_hHostageGrabber;
 	GameTime_t m_fLastGrabTime;
-	Vector m_vecGrabbedPos;
+	VectorWS m_vecGrabbedPos;
 	GameTime_t m_flRescueStartTime;
 	GameTime_t m_flGrabSuccessTime;
 	GameTime_t m_flDropStartTime;
 	GameTime_t m_flDeadOrRescuedTime;
 	CountdownTimer m_blinkTimer;
-	Vector m_lookAt;
+	VectorWS m_lookAt;
 	CountdownTimer m_lookAroundTimer;
 	bool m_isInit;
 	AttachmentHandle_t m_eyeAttachment;

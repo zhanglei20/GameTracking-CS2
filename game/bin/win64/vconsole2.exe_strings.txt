@@ -3197,7 +3197,6 @@ Absolute value (float)
 Absolute value (int)
 Accept
 AcceptColorInternal
-Active
 Active Window Widget
 ActiveArea
 Activity %s has %d sequences with a total weight of %d!\n
@@ -3258,7 +3257,6 @@ Assert True
 Asserts/Errors Only
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 At Whitespace
 AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attachment Text - Attachment Text - Attachment Text
@@ -3308,7 +3306,6 @@ Base-2 logarithm
 BaselineExposure
 BaselineNoise
 BaselineSharpness
-Basic string support.
 BayerGreenSplit
 Be%y9 
 Begin mouse capture [%i]: %s\n
@@ -3403,7 +3400,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -3432,7 +3428,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -3508,7 +3503,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -3630,7 +3624,6 @@ CQVerticalSpacerWidget
 CQWidgetDebugHighlight
 CQWidgetDebugger
 CQWindowDivider
-CREATE_CHILD_CURSOR_OUTFLOW
 CRenderOptionsPopupUI
 CResourceNameTyped
 CStackTranslationHelper_VSymbolModule::CanTranslatePointer
@@ -3990,7 +3983,6 @@ EndWheelSequence
 EnsureCapacity
 Enter
 EntityName
-Enum support.
 EnumWindows
 Eq R%d <- R%d == R%d
 Error (problem that prevents task success)
@@ -4477,8 +4469,6 @@ MAtomicTransfersAsPlainString
 MENU
 MESSAGE\nColor
 MIDAT8
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MMouse
 MMouseDoubleClick
 MPBPK
@@ -4979,7 +4969,6 @@ PageNumber
 PanCamera3D
 PanelID
 Parent Map: %s\n
-Parent VData
 ParseEXRHeaderFromMemory failed! Error message: %s\n
 ParseEXRHeaderFromMemory() failed! Error message: %s\n
 Particle Binding
@@ -5036,7 +5025,6 @@ Previous Match
 PrimaryChromaticities
 Probable infinite loop detected! Terminating pulse cursor after %d consecutive instructions (%s)
 Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
-Proceed Immediately
 Process Selector
 PropWorldOrigin
 Properties
@@ -5049,7 +5037,6 @@ PtZP
 PuG@
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
-PulseDurationStringFormat_t
 PwF@
 PyNn2FAh
 Pz1@
@@ -5509,7 +5496,6 @@ Success
 SupportsActivities
 SwitchToEngineWindow
 Sync may be disrupted! Restart from alternate location DISABLED (%1)
-Synchronous - Wait for this node to fully complete before proceeding.
 Syncing in progress! Auto Restart pending...
 Syntax error with array notation or invalid splitscreen slot in '%1'.\n
 SystemParametersInfoA
@@ -5716,7 +5702,6 @@ VConsole2%1
 VConsole2.exe
 VConsole2Tools
 VConsole_SubTool_001_
-VDATA
 VData:%s
 VJby4"
 VNOTIFY_DISABLE
@@ -5803,8 +5788,6 @@ Wfss
 Wh)a
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
-While False
-While True
 WhiteLevel
 WhitePoint
 Widget Debugger
@@ -6755,6 +6738,9 @@ m_AdditionalDependencies
 m_Bindings
 m_CommandString
 m_Context
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
+m_EvaluateConnection
 m_ExecutableArguments
 m_ExecutablePath
 m_InputMacros
@@ -6762,8 +6748,6 @@ m_Items
 m_LibraryPath
 m_MaterialSystemDependencies
 m_MenuString
-m_Metadata
-m_SequencePoint
 m_StatusBarTipString
 m_Stops
 m_SubToolIconPath
@@ -6853,7 +6837,6 @@ nAlpha
 nBottomValue
 nColumn
 nDelayInMS
-nDenominator
 nFormat
 nFromIndex
 nKillPriority
@@ -6864,7 +6847,6 @@ nMode
 nModifiers
 nMouseButton
 nNewFrame
-nNumerator
 nPostLines
 nPreLines
 nRemainderDigits
@@ -7371,7 +7353,6 @@ z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 zf1ZK
 zhh%
 z}AR
-{ item_factory = 'IntervalTimer' }
 {9VfMYU
 {G\fBa-E
 {Y?setFixedPitch@QFont@@QEAAX_N@Z

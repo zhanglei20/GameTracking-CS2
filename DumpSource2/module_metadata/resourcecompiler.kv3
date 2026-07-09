@@ -36,19 +36,9 @@
 		},
 		{
 			name = ""
-			group = "ToolsStartup_SM50"
-			source_file = "src/toolrenderutils/toolmatsysutils.cpp"
-			source_line = 161
-			resources = 
-			[
-				resource_name:"materials/tools/grid.vmat",
-			]
-		},
-		{
-			name = ""
 			group = "ToolsStartup"
 			source_file = "src/toolrenderutils/toolmatsysutils.cpp"
-			source_line = 125
+			source_line = 126
 			resources = 
 			[
 				resource_name:"materials/tools/wireframe_vertex_color.vmat",
@@ -75,6 +65,7 @@
 				resource_name:"materials/tools/handle_ring_translucent.vmat",
 				resource_name:"materials/tools/handle_square_ring_translucent.vmat",
 				resource_name:"materials/tools/handle_edged_circle_translucent.vmat",
+				resource_name:"materials/tools/grid.vmat",
 			]
 		},
 		{
@@ -87,6 +78,16 @@
 				resource_name:"materials/dev/texture_generators/texture_generator_positionmap.vmat",
 				resource_name:"materials/dev/texture_generators/texture_generator_objectspacenormal.vmat",
 				resource_name:"materials/dev/texture_generators/texture_generator_facevertexcolor.vmat",
+			]
+		},
+		{
+			name = ""
+			group = "ToolsStartup"
+			source_file = "src/mapdoclib/imageplanenode.cpp"
+			source_line = 29
+			resources = 
+			[
+				resource_name:"materials/tools/tools_imageplane.vmat",
 			]
 		},
 		{
@@ -123,16 +124,6 @@
 		{
 			name = ""
 			group = "ToolsStartup"
-			source_file = "src/mapdoclib/imageplanenode.cpp"
-			source_line = 29
-			resources = 
-			[
-				resource_name:"materials/tools/tools_imageplane.vmat",
-			]
-		},
-		{
-			name = ""
-			group = "ToolsStartup"
 			source_file = "src/mapdoclib/mapdeformer.cpp"
 			source_line = 19
 			resources = 
@@ -145,7 +136,7 @@
 			name = ""
 			group = "ToolsStartup"
 			source_file = "src/mapdoclib/mapprefab.cpp"
-			source_line = 28
+			source_line = 30
 			resources = 
 			[
 				resource_name:"materials/editor/prefab_icon.vmat",
@@ -163,9 +154,9 @@
 		},
 		{
 			name = ""
-			group = "ToolsStartup_SM50"
+			group = "ToolsStartup"
 			source_file = "src/mapdoclib/windcontrollerhelper.cpp"
-			source_line = 26
+			source_line = 27
 			resources = 
 			[
 				resource_name:"materials/dev/wind_controller_visualize.vmat",
@@ -187,37 +178,42 @@
 		"@lib:resourcecompiler.dll!CParticleBindingRealPulse" = 0
 		"@lib:resourcecompiler.dll!CParticleCollectionBindingInstance" = 11256737
 		"@lib:resourcecompiler.dll!CPulseArraylib" = 3172841818
+		"@lib:resourcecompiler.dll!CPulseCell_BaseLerp" = 0
+		"@lib:resourcecompiler.dll!CPulseCell_BaseState" = 0
+		"@lib:resourcecompiler.dll!CPulseCell_BaseYieldingInflow" = 3311802875
 		"@lib:resourcecompiler.dll!CPulseCell_BooleanSwitchState" = 1295793995
 		"@lib:resourcecompiler.dll!CPulseCell_CursorQueue" = 717294393
-		"@lib:resourcecompiler.dll!CPulseCell_FireCursors" = 3525151428
+		"@lib:resourcecompiler.dll!CPulseCell_FireCursors" = 824535693
 		"@lib:resourcecompiler.dll!CPulseCell_Inflow_EntOutputHandler" = 0
 		"@lib:resourcecompiler.dll!CPulseCell_Inflow_EventHandler" = 0
 		"@lib:resourcecompiler.dll!CPulseCell_Inflow_GraphHook" = 0
 		"@lib:resourcecompiler.dll!CPulseCell_Inflow_Method" = 0
 		"@lib:resourcecompiler.dll!CPulseCell_Inflow_ObservableVariableListener" = 0
-		"@lib:resourcecompiler.dll!CPulseCell_Inflow_Wait" = 4000015640
-		"@lib:resourcecompiler.dll!CPulseCell_Inflow_Yield" = 876467045
+		"@lib:resourcecompiler.dll!CPulseCell_Inflow_Wait" = 3452528170
+		"@lib:resourcecompiler.dll!CPulseCell_Inflow_Yield" = 955696098
 		"@lib:resourcecompiler.dll!CPulseCell_InlineNodeSkipSelector" = 2476493328
-		"@lib:resourcecompiler.dll!CPulseCell_IntervalTimer" = 119164720
+		"@lib:resourcecompiler.dll!CPulseCell_IntervalTimer" = 1789125561
 		"@lib:resourcecompiler.dll!CPulseCell_IsRequirementValid" = 931326599
 		"@lib:resourcecompiler.dll!CPulseCell_LimitCount" = 3165042484
 		"@lib:resourcecompiler.dll!CPulseCell_Outflow_CycleOrdered" = 4001330057
 		"@lib:resourcecompiler.dll!CPulseCell_Outflow_CycleRandom" = 4259677353
 		"@lib:resourcecompiler.dll!CPulseCell_Outflow_CycleShuffled" = 2434550510
 		"@lib:resourcecompiler.dll!CPulseCell_PickBestOutflowSelector" = 252227061
-		"@lib:resourcecompiler.dll!CPulseCell_Step_CallExternalMethod" = 253204677
+		"@lib:resourcecompiler.dll!CPulseCell_Step_CallExternalMethod" = 1549135810
 		"@lib:resourcecompiler.dll!CPulseCell_Step_DebugLog" = 3575830881
 		"@lib:resourcecompiler.dll!CPulseCell_Step_PublicOutput" = 861796290
-		"@lib:resourcecompiler.dll!CPulseCell_Timeline" = 1178222295
+		"@lib:resourcecompiler.dll!CPulseCell_Timeline" = 3988269055
 		"@lib:resourcecompiler.dll!CPulseCell_Value_Curve" = 975032352
 		"@lib:resourcecompiler.dll!CPulseCell_Value_Gradient" = 2092843331
 		"@lib:resourcecompiler.dll!CPulseCell_Value_RandomFloat" = 326640291
 		"@lib:resourcecompiler.dll!CPulseCell_Value_RandomInt" = 393431413
 		"@lib:resourcecompiler.dll!CPulseCell_WaitForCursorsWithTag" = 860342186
-		"@lib:resourcecompiler.dll!CPulseCell_WaitForObservable" = 2210056048
-		"@lib:resourcecompiler.dll!CPulseCursorFuncs" = 109602028
+		"@lib:resourcecompiler.dll!CPulseCell_WaitForObservable" = 1630411852
+		"@lib:resourcecompiler.dll!CPulseCursorFuncs" = 2994080292
+		"@lib:resourcecompiler.dll!CPulseEnumlib" = 1916837592
 		"@lib:resourcecompiler.dll!CPulseGraphInstance_SmartPropEval" = 362000811
-		"@lib:resourcecompiler.dll!CPulseMathlib" = 1084168616
+		"@lib:resourcecompiler.dll!CPulseMathlib" = 2237422034
+		"@lib:resourcecompiler.dll!CPulseStringlib" = 1521109281
 		"@lib:resourcecompiler.dll!CPulseTestScriptLib" = 1396807546
 		"@lib:resourcecompiler.dll!CSmartPropAPI" = 427769199
 		"@lib:resourcecompiler.dll!CSmartPropExprAPI" = 3805268226
@@ -242,6 +238,8 @@
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:ConfigurationHandleShape_t" = 1361074542
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:PickMode_t" = 637956512
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:PulseCursorCancelPriority_t" = 627611872
+		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:PulseCursorWakePriority_t" = 2889899724
+		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:PulseDurationStringFormat_t" = 1531666510
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:ScaleMode_t" = 160415312
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:SmartPropChoiceSelectionMode_t" = 1594422340
 		"@type:resourcecompiler.dll!PVAL_SCHEMA_ENUM:SmartPropColorSelectionMode_t" = 2587002397
@@ -1374,6 +1372,7 @@
 						expect_default_outflow = true
 						generic_node_category = 5
 						is_state_cell = false
+						standard_yielding_flow = true
 						pulse_outflows = 
 						[
 							{
@@ -1459,6 +1458,7 @@
 						expect_default_outflow = false
 						generic_node_category = 5
 						is_state_cell = true
+						standard_yielding_flow = true
 						header_icon = "tools/images/pulse_editor/inflow_statecell.png"
 						pulse_inflows = 
 						[
@@ -1533,6 +1533,7 @@
 						expect_default_outflow = true
 						generic_node_category = 5
 						is_state_cell = false
+						standard_yielding_flow = true
 						pulse_inflows = 
 						[
 							{
@@ -1583,6 +1584,7 @@
 						expect_default_outflow = false
 						generic_node_category = 5
 						is_state_cell = true
+						standard_yielding_flow = true
 						header_icon = "tools/images/pulse_editor/inflow_statecell.png"
 						supported_domains = 
 						{
@@ -1613,32 +1615,29 @@
 						[
 							{
 								field_name = "m_Condition"
-								attr_factory = "PulseObservableBoolExpression_t"
+								attr_factory = "CPulseObservableExpression"
 								friendly_name = "Observable"
 								description = "Condition to evaluate when any of its dependent values change."
+								args = 
+								{
+									expression_type = "PVAL_BOOL"
+								}
 							},
 						]
 						pulse_outflows = 
 						[
 							{
-								name = "m_Always"
-								is_default_outflow = false
-								backed_by_variable = true
-								friendly_name = "Always"
-								description = "Fired immediately when this node begins for chaining purposes."
-							},
-							{
 								name = "m_WhenTrue"
 								is_default_outflow = false
 								backed_by_variable = true
-								friendly_name = "When True"
+								friendly_name = "While True"
 								description = "Fired when the observable boolean is true, and killed when false."
 							},
 							{
 								name = "m_WhenFalse"
 								is_default_outflow = false
 								backed_by_variable = true
-								friendly_name = "When False"
+								friendly_name = "While False"
 								description = "Fired when the observable boolean is false, and killed when true."
 							},
 						]
@@ -1675,6 +1674,7 @@
 						expect_default_outflow = true
 						generic_node_category = 5
 						is_state_cell = false
+						standard_yielding_flow = true
 						editor_canvas_item_spec = 
 						{
 							className = "IsControlFlowNode"
@@ -1750,6 +1750,26 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
+				"CPulseCell_FireCursors::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
 				CPulseCell_Inflow_Wait = 
 				{
 					m_BaseClasses = 
@@ -1771,6 +1791,7 @@
 						expect_default_outflow = true
 						generic_node_category = 5
 						is_state_cell = false
+						standard_yielding_flow = true
 						supported_domains = 
 						{
 							BaseDomain = true
@@ -1801,22 +1822,6 @@
 								terminates = false
 								is_default_inflow = true
 							},
-							{
-								name = "ImmediateWake"
-								friendly_name = "Immediate Wake"
-								description = "Immediately reactivate any waiting cursors regardless of how long they have been waiting."
-								yields = false
-								terminates = true
-								is_default_inflow = false
-							},
-							{
-								name = "Abort"
-								friendly_name = "Abort"
-								description = "Cancel any waiting cursors."
-								yields = false
-								terminates = true
-								is_default_inflow = false
-							},
 						]
 						scope_to_dependency_name = 
 						{
@@ -1838,6 +1843,86 @@
 								description = ""
 							},
 						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Inflow_Wait::Abort" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Inflow_Wait::ImmediateWake" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_WakeImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Inflow_Yield::Abort" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Inflow_Yield::Resume" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_WakeImmediately"
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -1977,6 +2062,7 @@
 						expect_default_outflow = true
 						generic_node_category = 5
 						is_state_cell = false
+						standard_yielding_flow = true
 						supported_domains = 
 						{
 							BaseDomain = true
@@ -1986,7 +2072,7 @@
 							flDuration = 
 							{
 								friendly_name = "Duration"
-								description = "If -1 timer will continue forever"
+								description = "This is the overall duration. If -1 timer will continue forever. During this duration, we will fire a new child cursor at each Interval."
 								advanced_view = true
 								metadata = null
 								type = "PVAL_FLOAT"
@@ -2036,20 +2122,16 @@
 								terminates = false
 								is_default_inflow = true
 							},
-							{
-								name = "StopTimer"
-								friendly_name = "Stop Timer"
-								description = "Stop any active timers - the completed outflow will still fire"
-								yields = false
-								terminates = false
-								is_default_inflow = false
-							},
 						]
 						scope_to_dependency_name = 
 						{
 							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseCell_IntervalTimer"
 						}
 						header_icon = "tools/images/pulse_editor/node_timer.png"
+						editor_canvas_item_spec = 
+						{
+							item_factory = "IntervalTimer"
+						}
 						pulse_outflows = 
 						[
 							{
@@ -2096,6 +2178,26 @@
 								associated_outflow_name = "m_OnInterval"
 							}
 						}
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_IntervalTimer::StopTimer" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_WakeImmediately"
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -2186,6 +2288,306 @@
 							m_pItemSet = null
 						},
 					]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_ListenForAnimgraphTag::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_ListenForEntityOutput::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_NPCAccompanyEntity::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_NPCFollowTarget::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_NPCLeadPlayer::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_NPCScriptedIdle::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_NPCScriptedIdle::CancelElegantly" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelElegantly"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_NPCScriptedMoveTo::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_NPCUseScriptedAbility::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_PlaySequence::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_PlaySequence::CancelAtInterrupt" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelElegantly"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_PlayVCD::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_PlayVCD::CancelAtInterrupt" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelElegantly"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_PlayVOLine::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Outflow_ScriptedSequence::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
 					m_Inputs = [  ]
 					m_Outputs = [  ]
 					m_Helpers = [  ]
@@ -2297,6 +2699,66 @@
 							}
 						},
 					]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_PlaySequence::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Step_CallExternalMethod::StopWaiting" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelElegantly"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_Timeline::Stop" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
 					m_Inputs = [  ]
 					m_Outputs = [  ]
 					m_Helpers = [  ]
@@ -2489,7 +2951,7 @@
 					[
 						{
 							m_Name = "m_Gradient"
-							m_FullType = "kv3:Gradient()"
+							m_FullType = "kv3"
 							m_LongName = "Gradient"
 							m_Description = ""
 							m_bUsingLegacyDefault = false
@@ -2499,6 +2961,7 @@
 							}
 							m_KV3Metadata = 
 							{
+								editor = "Gradient()"
 								hidden = false
 							}
 							m_pItemSet = null
@@ -2725,6 +3188,7 @@
 						expect_default_outflow = true
 						generic_node_category = 5
 						is_state_cell = false
+						standard_yielding_flow = true
 						editor_canvas_item_spec = 
 						{
 							className = "IsControlFlowNode"
@@ -2854,7 +3318,7 @@
 									{
 										m_iValue = 0
 										m_Value = "CancelOnSucceeded"
-										m_FriendlyName = "Kill after current node."
+										m_FriendlyName = "Kill After."
 										m_bDefault = false
 										m_bCustom = false
 										m_Description = "Do not stop the current yielding node, but do not continue to the next node afterwards."
@@ -2862,7 +3326,7 @@
 									{
 										m_iValue = 0
 										m_Value = "SoftCancel"
-										m_FriendlyName = "Kill elegantly."
+										m_FriendlyName = "Kill Elegantly."
 										m_bDefault = false
 										m_bCustom = false
 										m_Description = "Request elegant wind-down of any associated work (e.g. vcd interrupt)."
@@ -2870,7 +3334,7 @@
 									{
 										m_iValue = 0
 										m_Value = "HardCancel"
-										m_FriendlyName = "Kill immediately."
+										m_FriendlyName = "Kill Immediately."
 										m_bDefault = false
 										m_bCustom = false
 										m_Description = "Stop without any wind-down."
@@ -2904,6 +3368,7 @@
 						expect_default_outflow = true
 						generic_node_category = 5
 						is_state_cell = false
+						standard_yielding_flow = true
 						editor_canvas_item_spec = 
 						{
 							className = "IsControlFlowNode"
@@ -2974,6 +3439,7 @@
 						expect_default_outflow = true
 						generic_node_category = 5
 						is_state_cell = false
+						standard_yielding_flow = true
 						supported_domains = 
 						{
 							BaseDomain = true
@@ -2989,14 +3455,6 @@
 								terminates = false
 								is_default_inflow = true
 							},
-							{
-								name = "Cancel"
-								friendly_name = "Cancel"
-								description = "Cancel observing."
-								yields = false
-								terminates = true
-								is_default_inflow = false
-							},
 						]
 						scope_to_dependency_name = 
 						{
@@ -3007,9 +3465,13 @@
 						[
 							{
 								field_name = "m_Condition"
-								attr_factory = "PulseObservableBoolExpression_t"
+								attr_factory = "CPulseObservableExpression"
 								friendly_name = "Observable"
 								description = "Condition to evaluate when any of its dependent values change."
+								args = 
+								{
+									expression_type = "PVAL_BOOL"
+								}
 							},
 						]
 						pulse_outflows = 
@@ -3022,6 +3484,26 @@
 								description = ""
 							},
 						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCell_WaitForObservable::Cancel" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = ""
+					m_Description = ""
+					m_MetaData = 
+					{
+						legacy_name_replacement = "CPulseCell_BaseYieldingInflow::BaseFlow_CancelImmediately"
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -3386,54 +3868,6 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CPulseCursorFuncs::KillThisCursorAndCancel" = 
-				{
-					m_BaseClasses = [  ]
-					m_FriendlyName = "Kill This Cursor And Cancel"
-					m_Description = "Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success."
-					m_MetaData = 
-					{
-						supported_domains = 
-						{
-							BaseDomain = true
-						}
-						scope_to_dependency_name = 
-						{
-							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseCursorFuncs"
-						}
-						header_icon = "tools/images/pulse_editor/cursor_kill.png"
-						pulse_inparams = null
-						generic_node_category = 5
-						is_pulse_library_method = true
-						pulse_inflows = 
-						[
-							{
-								name = "InDefault"
-								friendly_name = "Default In"
-								is_default_inflow = true
-							},
-						]
-						pulse_outflows = 
-						[
-							{
-								name = "OutDefault"
-								friendly_name = "Default Out"
-								is_default_outflow = true
-								allow_direct_return = true
-							},
-						]
-					}
-					m_HelpContextName = ""
-					m_nClassType = "vdata"
-					m_rgbColor = [ 220, 30, 220 ]
-					m_bmins = [ -8.0, -8.0, -8.0 ]
-					m_bmaxs = [ 8.0, 8.0, 8.0 ]
-					m_Tags = [  ]
-					m_Variables = [  ]
-					m_Inputs = [  ]
-					m_Outputs = [  ]
-					m_Helpers = [  ]
-				}
 				"CPulseCursorFuncs::RemoveTagFromCursor" = 
 				{
 					m_BaseClasses = [  ]
@@ -3604,6 +4038,438 @@
 								allow_direct_return = true
 							},
 						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseCursorFuncs::WakeCursorsWithTag" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Wake Cursors With Tag"
+					m_Description = "Find all the yielded cursors on this graph with the matching tag and wake them."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseCursorFuncs"
+						}
+						header_icon = "tools/images/pulse_editor/kill_cursor_with_tag.png"
+						pulse_inparams = 
+						{
+							pTagName = 
+							{
+								friendly_name = "Tag Name"
+								description = "A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them."
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "InDefault"
+							}
+							tagValue = 
+							{
+								friendly_name = "Tag Value"
+								description = "Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value."
+								advanced_view = true
+								metadata = null
+								type = "PVAL_VARIANT"
+								default_value = 
+								[
+									"PVAL_VARIANT",
+									[
+										"PVAL_STRING",
+										"",
+									],
+								]
+								associated_inflow_name = "InDefault"
+							}
+							nWakePriority = 
+							{
+								friendly_name = "Wake Priority"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_SCHEMA_ENUM:PulseCursorWakePriority_t"
+								default_value = 
+								[
+									"PVAL_SCHEMA_ENUM:PulseCursorWakePriority_t",
+									"WakeElegantly",
+								]
+								associated_inflow_name = "InDefault"
+							}
+						}
+						generic_node_category = 5
+						is_pulse_library_method = true
+						pulse_inflows = 
+						[
+							{
+								name = "InDefault"
+								friendly_name = "Default In"
+								is_default_inflow = true
+							},
+						]
+						pulse_outflows = 
+						[
+							{
+								name = "OutDefault"
+								friendly_name = "Default Out"
+								is_default_outflow = true
+								allow_direct_return = true
+							},
+						]
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseEnumlib::AddFlags" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Add Flags"
+					m_Description = "Add flags to the given value."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseEnumlib"
+						}
+						pulse_inparams = 
+						{
+							value = 
+							{
+								friendly_name = "value"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseEnumlib::AddFlags"
+							}
+							flags = 
+							{
+								friendly_name = "flags"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+									polymorphic_dependent_arg = "value:fulltype"
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseEnumlib::AddFlags"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+									polymorphic_dependent_arg = "value:fulltype"
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseEnumlib::AddFlags"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseEnumlib::HasAllFlags" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Has All Flags"
+					m_Description = "Whether value has ALL of the specified flags set (it may have other flags.)"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseEnumlib"
+						}
+						expr_alias = "allflags"
+						pulse_inparams = 
+						{
+							value = 
+							{
+								friendly_name = "value"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseEnumlib::HasAllFlags"
+							}
+							flags = 
+							{
+								friendly_name = "flags"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+									polymorphic_dependent_arg = "value:fulltype"
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseEnumlib::HasAllFlags"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_BOOL"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseEnumlib::HasAllFlags"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseEnumlib::HasAnyFlags" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Has Any Flags"
+					m_Description = "Whether value has ANY of the specified flags set (it may have other flags.)"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseEnumlib"
+						}
+						expr_alias = "anyflags"
+						pulse_inparams = 
+						{
+							value = 
+							{
+								friendly_name = "value"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseEnumlib::HasAnyFlags"
+							}
+							flags = 
+							{
+								friendly_name = "flags"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+									polymorphic_dependent_arg = "value:fulltype"
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseEnumlib::HasAnyFlags"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_BOOL"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseEnumlib::HasAnyFlags"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseEnumlib::RemoveFlags" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Remove Flags"
+					m_Description = "Remove flags from the given value."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseEnumlib"
+						}
+						pulse_inparams = 
+						{
+							value = 
+							{
+								friendly_name = "value"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseEnumlib::RemoveFlags"
+							}
+							flags = 
+							{
+								friendly_name = "flags"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+									polymorphic_dependent_arg = "value:fulltype"
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseEnumlib::RemoveFlags"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = 
+								{
+									polymorphic_arg = true
+									polymorphic_dependent_arg = "value:fulltype"
+								}
+								type = "PVAL_SCHEMA_ENUM"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseEnumlib::RemoveFlags"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -6309,6 +7175,70 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
+				"CPulseMathlib::MakeVectorFromAngle" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Make Vector From Angle"
+					m_Description = "Make a Vector from an Angle"
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseMathlib"
+						}
+						pulse_inparams = 
+						{
+							angles = 
+							{
+								friendly_name = "angles"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_QANGLE"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseMathlib::MakeVectorFromAngle"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_VEC3"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseMathlib::MakeVectorFromAngle"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
 				"CPulseMathlib::MakeWorldTransform" = 
 				{
 					m_BaseClasses = [  ]
@@ -8586,135 +9516,14 @@
 					m_Outputs = [  ]
 					m_Helpers = [  ]
 				}
-				"CPulseMathlib::StringLength" = 
-				{
-					m_BaseClasses = [  ]
-					m_FriendlyName = "String Length"
-					m_Description = "Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama."
-					m_MetaData = 
-					{
-						supported_domains = 
-						{
-							BaseDomain = true
-						}
-						scope_to_dependency_name = 
-						{
-							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseMathlib"
-						}
-						pulse_inparams = 
-						{
-							strValue = 
-							{
-								friendly_name = "Value"
-								description = ""
-								advanced_view = false
-								metadata = null
-								type = "PVAL_STRING"
-								default_value = 
-								[
-									"PVAL_VOID",
-								]
-								associated_inflow_name = "CPulseMathlib::StringLength"
-							}
-						}
-						pulse_outparams = 
-						{
-							retval = 
-							{
-								friendly_name = "Result"
-								description = ""
-								advanced_view = false
-								metadata = null
-								type = "PVAL_INT"
-								default_value = 
-								[
-									"PVAL_VOID",
-								]
-								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CPulseMathlib::StringLength"
-							}
-						}
-						generic_node_category = 4
-						is_pulse_library_method = true
-						has_observable_context = true
-						is_pure_value = true
-					}
-					m_HelpContextName = ""
-					m_nClassType = "vdata"
-					m_rgbColor = [ 220, 30, 220 ]
-					m_bmins = [ -8.0, -8.0, -8.0 ]
-					m_bmaxs = [ 8.0, 8.0, 8.0 ]
-					m_Tags = [  ]
-					m_Variables = [  ]
-					m_Inputs = [  ]
-					m_Outputs = [  ]
-					m_Helpers = [  ]
-				}
 				"CPulseMathlib::StringsAreEqualCaseSensitive" = 
 				{
 					m_BaseClasses = [  ]
-					m_FriendlyName = "Strings Are Equal Case Sensitive"
-					m_Description = "Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive"
+					m_FriendlyName = ""
+					m_Description = ""
 					m_MetaData = 
 					{
-						supported_domains = 
-						{
-							BaseDomain = true
-						}
-						scope_to_dependency_name = 
-						{
-							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseMathlib"
-						}
-						pulse_inparams = 
-						{
-							a = 
-							{
-								friendly_name = "a"
-								description = ""
-								advanced_view = false
-								metadata = null
-								type = "PVAL_STRING"
-								default_value = 
-								[
-									"PVAL_VOID",
-								]
-								associated_inflow_name = "CPulseMathlib::StringsAreEqualCaseSensitive"
-							}
-							b = 
-							{
-								friendly_name = "b"
-								description = ""
-								advanced_view = false
-								metadata = null
-								type = "PVAL_STRING"
-								default_value = 
-								[
-									"PVAL_VOID",
-								]
-								associated_inflow_name = "CPulseMathlib::StringsAreEqualCaseSensitive"
-							}
-						}
-						pulse_outparams = 
-						{
-							retval = 
-							{
-								friendly_name = "Result"
-								description = ""
-								advanced_view = false
-								metadata = null
-								type = "PVAL_BOOL"
-								default_value = 
-								[
-									"PVAL_VOID",
-								]
-								associated_outflow_name = "OutDefault"
-								direct_return_value_for = "CPulseMathlib::StringsAreEqualCaseSensitive"
-							}
-						}
-						generic_node_category = 4
-						is_pulse_library_method = true
-						has_observable_context = true
-						is_pure_value = true
+						legacy_name_replacement = "CPulseStringlib::StringsAreEqualCaseSensitive"
 					}
 					m_HelpContextName = ""
 					m_nClassType = "vdata"
@@ -8904,6 +9713,257 @@
 								direct_return_value_for = "CPulseMathlib::WorldVectorToVector"
 							}
 						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseStringlib::FormatDurationStringFromSeconds" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Format Duration String From Seconds"
+					m_Description = "Turn a time in seconds into a display string. NOT localized."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseStringlib"
+						}
+						pulse_inparams = 
+						{
+							flSeconds = 
+							{
+								friendly_name = "Seconds"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_FLOAT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseStringlib::FormatDurationStringFromSeconds"
+							}
+							nFormat = 
+							{
+								friendly_name = "Format"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_SCHEMA_ENUM:PulseDurationStringFormat_t"
+								default_value = 
+								[
+									"PVAL_SCHEMA_ENUM:PulseDurationStringFormat_t",
+									"MM_SS_LEADING_ZERO",
+								]
+								associated_inflow_name = "CPulseStringlib::FormatDurationStringFromSeconds"
+							}
+							nRemainderDigits = 
+							{
+								friendly_name = "Remainder Digits"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_INT",
+									0,
+								]
+								associated_inflow_name = "CPulseStringlib::FormatDurationStringFromSeconds"
+							}
+							nRemainderNoiseDigits = 
+							{
+								friendly_name = "Remainder Noise Digits"
+								description = "After the real remainder, how many additional digits should we continue to append to create additional visual movement?"
+								advanced_view = true
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_INT",
+									0,
+								]
+								associated_inflow_name = "CPulseStringlib::FormatDurationStringFromSeconds"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseStringlib::FormatDurationStringFromSeconds"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseStringlib::StringLength" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "String Length"
+					m_Description = "Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseStringlib"
+						}
+						pulse_inparams = 
+						{
+							strValue = 
+							{
+								friendly_name = "Value"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseStringlib::StringLength"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_INT"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseStringlib::StringLength"
+							}
+						}
+						generic_node_category = 4
+						is_pulse_library_method = true
+						has_observable_context = true
+						is_pure_value = true
+					}
+					m_HelpContextName = ""
+					m_nClassType = "vdata"
+					m_rgbColor = [ 220, 30, 220 ]
+					m_bmins = [ -8.0, -8.0, -8.0 ]
+					m_bmaxs = [ 8.0, 8.0, 8.0 ]
+					m_Tags = [  ]
+					m_Variables = [  ]
+					m_Inputs = [  ]
+					m_Outputs = [  ]
+					m_Helpers = [  ]
+				}
+				"CPulseStringlib::StringsAreEqualCaseSensitive" = 
+				{
+					m_BaseClasses = [  ]
+					m_FriendlyName = "Strings Are Equal Case Sensitive"
+					m_Description = "Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive."
+					m_MetaData = 
+					{
+						supported_domains = 
+						{
+							BaseDomain = true
+						}
+						scope_to_dependency_name = 
+						{
+							resourcecompiler.dll = "@lib:resourcecompiler.dll!CPulseStringlib"
+						}
+						pulse_inparams = 
+						{
+							a = 
+							{
+								friendly_name = "a"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseStringlib::StringsAreEqualCaseSensitive"
+							}
+							b = 
+							{
+								friendly_name = "b"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_STRING"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_inflow_name = "CPulseStringlib::StringsAreEqualCaseSensitive"
+							}
+						}
+						pulse_outparams = 
+						{
+							retval = 
+							{
+								friendly_name = "Result"
+								description = ""
+								advanced_view = false
+								metadata = null
+								type = "PVAL_BOOL"
+								default_value = 
+								[
+									"PVAL_VOID",
+								]
+								associated_outflow_name = "OutDefault"
+								direct_return_value_for = "CPulseStringlib::StringsAreEqualCaseSensitive"
+							}
+						}
+						legacy_names = 
+						[
+							"CPulseMathlib::StringsAreEqualCaseSensitive",
+						]
 						generic_node_category = 4
 						is_pulse_library_method = true
 						has_observable_context = true
@@ -10206,7 +11266,7 @@
 							}
 							replacementMaterial = 
 							{
-								friendly_name = "Replacement Material"
+								friendly_name = "New Material"
 								description = "New material to replace the original material with."
 								advanced_view = false
 								metadata = null
@@ -10945,7 +12005,7 @@
 							}
 							nNoHitResult = 
 							{
-								friendly_name = "No Hit Result"
+								friendly_name = "If No Surface Hit"
 								description = "Specifies the behavior when the trace does not hit a surface."
 								advanced_view = false
 								metadata = null
@@ -11592,7 +12652,7 @@
 							}
 							flMinAngle = 
 							{
-								friendly_name = "Min Angle"
+								friendly_name = "Minimum Angle"
 								description = "Specifies the minimum angle limit in degrees"
 								advanced_view = false
 								metadata = 
@@ -11609,7 +12669,7 @@
 							}
 							flMaxAngle = 
 							{
-								friendly_name = "Max Angle"
+								friendly_name = "Maximum Angle"
 								description = "Specifies the minimum angle limit in degrees"
 								advanced_view = false
 								metadata = 
@@ -12366,7 +13426,7 @@
 							}
 							nPointSpace = 
 							{
-								friendly_name = "Point Space"
+								friendly_name = "End point space"
 								description = "Specifies the coordinate space in which the end point values are specified."
 								advanced_view = false
 								metadata = null
@@ -12450,7 +13510,7 @@
 							}
 							nPickMode = 
 							{
-								friendly_name = "Pick Mode"
+								friendly_name = "Child Selection Mode"
 								description = "Specifies how scale is applied to each of the selected element in order to fit them to the line."
 								advanced_view = false
 								metadata = null
@@ -12627,7 +13687,7 @@
 							}
 							nSpecificChildIndex = 
 							{
-								friendly_name = "Specific Child Index"
+								friendly_name = "Specific Child"
 								description = "Specifies the index of the child to pick."
 								advanced_view = false
 								metadata = 
@@ -13085,7 +14145,7 @@
 							}
 							vPathOffset = 
 							{
-								friendly_name = "Path Offset"
+								friendly_name = "Offset from path"
 								description = "Offset to apply to the path, specifies a horizontal and vertical offset to apply relative to the up direction."
 								advanced_view = false
 								metadata = null
@@ -13099,7 +14159,7 @@
 							}
 							nPathSpace = 
 							{
-								friendly_name = "Path Space"
+								friendly_name = "Path Evaluation Space"
 								description = "Specifies the space in which the provided input path is to be evalauted.<br><br><b>World Space</b>: The input path will be evaluated in world space, such that child elements will be placed directly on the target path regardless of the transform of the smart prop object. <br><b>Object Space</b>: The world space transform of the input path will be ignored and instead the path will be evaluated relative to the transform of the smart prop object. <br><b>Element Space</b>: The world space transform of the input path will be ignored and instead the path will be evaluated relative to the transform of the current element within the smart prop. "
 								advanced_view = false
 								metadata = null
@@ -13468,7 +14528,7 @@
 							}
 							m_flMinLength = 
 							{
-								friendly_name = "Min Length"
+								friendly_name = "Minimum length"
 								description = "Minimum allowable length for the object. Must be <= length. If length is 100 and minimum length is 20, then the object may be assigned a scale in the rage [ 0.2, 1.0 ]."
 								advanced_view = false
 								metadata = 
@@ -13484,7 +14544,7 @@
 							}
 							m_flMaxLength = 
 							{
-								friendly_name = "Max Length"
+								friendly_name = "Maximum length"
 								description = "Maximum allowable length for the object. Must be >= length. If length is 100 and maximum length is 160, then the object may be assigned a scale in the rage [ 1.0, 1.6 ]."
 								advanced_view = false
 								metadata = 

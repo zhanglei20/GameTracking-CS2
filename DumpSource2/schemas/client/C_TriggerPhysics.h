@@ -10,7 +10,7 @@ class C_TriggerPhysics : public C_BaseTrigger
 	float32 m_flDampingRatio;
 	Vector m_vecLinearForcePointAt;
 	bool m_bCollapseToForcePoint;
-	Vector m_vecLinearForcePointAtWorld;
+	VectorWS m_vecLinearForcePointAtWorld;
 	Vector m_vecLinearForceDirection;
 	bool m_bConvertToDebrisWhenPossible;
 };
