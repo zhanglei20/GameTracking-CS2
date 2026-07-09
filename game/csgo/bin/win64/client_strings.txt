@@ -111,10 +111,7 @@
  (%ld unused bits)\n
  (+%d more due to usercommand delivery)
  (08@HPX`j
- (08@HPXb
  (08@HPZ
- (08@HR
- (0X`hpz
  (DEFAULT)
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
@@ -10983,7 +10980,6 @@ $taser_charge
 02V8[
 05=k
 08@HR
-08@J
 08bX
 09,h
 0;Q5[
@@ -11377,6 +11373,7 @@ $taser_charge
 5-\rGw
 50Q5
 51t&
+5248
 52pk
 5760
 5A10K
@@ -12842,7 +12839,7 @@ BloomVisualisation
 BlurBackground
 BlurOperationPanel
 BlurPopupPanel
-Bm_nEndMatchNextMapVote
+Bm_iCompetitiveRankingPredicted_Win
 BoX5
 Body Component Scriptdesc
 BodyGameSystem
@@ -14138,8 +14135,8 @@ CMS_stream
 CMS_uncompress
 CMS_verify
 CMapBombDamageGameSystem
-CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:440
-CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:459
+CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:448
+CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:467
 CMapInfo_API::FireWinCondition
 CMissionTemplate::BMakeQuestDefSchema
 CModel::GetBoneIndexForHitboxForMesh
@@ -14686,7 +14683,7 @@ CRenderGameSystem::OnClientPreOutputParallelWithServer
 CRenderGameSystem::OnClientPreOutputParallelWithServer(), C:\buildworker\csgo_rel_win64\build\src\game\shared\rendergamesystem.cpp:1245
 CRenderGameSystem::OnClientPreOutputParallelWithServer(1345): 
 CRenderingPipelineCS2Shadows
-CRenderingPipelineCsgo::AddLayersToView(10761): 
+CRenderingPipelineCsgo::AddLayersToView(10760): 
 CResourceName
 CResourceNameTyped
 CResourcePrecacherGameSystem
@@ -21873,8 +21870,6 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08J
 P08N$
 P1\t98"
 P2P Voice
@@ -36259,7 +36254,7 @@ p.ppBasis
 p.prime
 p.tpBasis
 p08@H^$
-p0j0a
+p0j0e
 p250
 p2p_ping could not convert "%s" to a CPeerToPeerAddress\n
 p2p_ping could not ping "%s" because they are an unknown peer\n

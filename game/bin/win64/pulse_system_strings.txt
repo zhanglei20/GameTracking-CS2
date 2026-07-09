@@ -169,6 +169,7 @@
 .?AVIPulseHost_YieldingCursor@@
 .?AVIPulseSystem@@
 .?AVIResourceTypeManager@@
+2\vpL
 ;1#INF
 <No Cell>
 <map_key>

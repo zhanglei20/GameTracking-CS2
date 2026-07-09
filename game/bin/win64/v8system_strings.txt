@@ -19,6 +19,7 @@
 .?AVISource2V8System@@
 .?AVV8ArrayBufferAllocator@@
 1?LowMemoryNotification@Isolate@v8@@QEAAXXZ
+2\vpL
 2\vp`9
 3?New@Isolate@v8@@SAPEAV12@AEBUCreateParams@12@@Z
 9?Reallocate@Allocator@ArrayBuffer@v8@@UEAAPEAXPEAX_K1@Z

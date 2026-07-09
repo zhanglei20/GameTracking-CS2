@@ -100,12 +100,10 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`j0
- (08@HPXb
- (08@HPZ0
- (08@HR
- (08@J0
- (0X`hpz
+ (08@HPX`j
+ (08@HPXb`
+ (08@HPZ
+ (0X`hpz`
  (Dirty Animation)
  (Disabled on Server)
  (INVALID PSS PARAMETERS)\n
@@ -124,6 +122,7 @@
  -8CKV
  -> %s '%s'\n
  -> Could not find an item definition named '%s'\n
+ .pMX
  0@NYa
  0Fa
  1CSc\t
@@ -2177,7 +2176,6 @@ $tH@T\tI
 -\n)GAME_PARTICLE_MANAGER_EVENT_DESTROY_NAMED
 -\n)GAME_PARTICLE_MANAGER_EVENT_UPDATE_OFFSET
 -\n)k_ECsgoSteamUserStat_MatchWinsCompetitive
--\n0TX
 -\n\fcommendation
 -\n\nconditions
 -\n\tAttribute
@@ -2242,9 +2240,7 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
-.0CX
-.0LX
-.0uX
+.0aX
 .0zX
 .4bb
 .97yY
@@ -8497,7 +8493,6 @@ $tH@T\tI
 .PEAVCPlayer_UseServices@@
 .PEAVCPlayer_WaterServices@@
 .PEAVCPlayer_WeaponServices@@
-.PPX
 .PlayerCommendationInfo
 .PlayerDecalDigitalSignature
 .PlayerDecalDigitalSignature":\n
@@ -8507,7 +8502,8 @@ $tH@T\tI
 .PlayerRankingInfo
 .PlayerRankingInfo"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
 .PlayerRankingInfo.PerMapRank
-.PuX
+.PyX
+.PzX
 .Q.Ol
 .ScoreLeaderboardData
 .ScoreLeaderboardData"S\n%CCSUsrMsg_PlayerDecalDigitalSignature
@@ -8797,10 +8793,9 @@ $tH@T\tI
 .dx_LV9
 .fatdem
 .lbN
-.pCX
-.pPX
 .pp@0
-.ppX
+.pyX
+.pzX
 .text$
 .vjs_c
 .vmap
@@ -8841,9 +8836,8 @@ $tH@T\tI
 0123456789
 02V8[
 05=k
-08@HR0
-08@J
-08B0
+08@HR
+08@J`
 08bX
 09,h
 0;Q5[
@@ -8958,7 +8952,6 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
-2\vp4
 2^pV
 2a"l
 2bT~
@@ -9037,6 +9030,7 @@ $tH@T\tI
 4\re4h#
 4\vU44
 4f h
+4t\nGV
 4tpD
 4zj@1;IJ
 4|2;#GameUI_Retake_Card_LightEmUp,1,1,rifle1,grenade0|2;#GameUI_Retake_Card_Kobe,1,1,rifle1,grenade2|1;#GameUI_Retake_Card_1g,1,1,rifle1,grenade3|1;#GameUI_Retake_Card_DisappearingAct,1,1,rifle1,grenade1|1;#GameUI_Retake_Card_EyesOnTarget,1,1,weapon_aug
@@ -9107,7 +9101,6 @@ $tH@T\tI
 6\n2GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
 6\n\nvariations
 6_wEX
-6`fX
 6afD
 6bX+
 6c&0|vvX
@@ -9115,8 +9108,6 @@ $tH@T\tI
 6l13
 6lkc
 6myY;
-6pJX
-6pgX
 6qo~
 6r-m_v
 6r1ij
@@ -9162,7 +9153,6 @@ $tH@T\tI
 8<pl
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
-8@J0
 8A6j
 8GZS
 8SIffK5W
@@ -9344,6 +9334,7 @@ $tH@T\tI
 >?SetClassName@FunctionTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@@Z
 >JRZ`c4DLV_c*8AN\c
 >KS[ac5>IU^c+0<LZc
+>PVX
 >Sem
 >WK6
 >\n9k_EGCItemCustomizationNotification_ClientRedeemFreeReward
@@ -9418,17 +9409,16 @@ $tH@T\tI
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N
 @0pp
 @333
 @333?
 @33s@
-@6`pX
+@6 zX
+@6@yX
 @?SlowGetAlignedPointerFromInternalField@Object@v8@@AEAAPEAXH@Z
 @Aff
 @BH]f
 @BoneSetup
-@HPX`hv
 @MfKZ
 @Pgl
 @Pu\rm
@@ -9443,7 +9433,6 @@ $tH@T\tI
 @\n\vserver_type
 @dKb]
 @fff>fff>fff>fff>
-@htp
 @i1V
 @m_bLeftHanded
 @m_zoomLevel
@@ -9467,6 +9456,7 @@ A<fP
 A>x8
 A@d0I
 AA Compromise
+AA:0
 AABB
 AABBDirection
 AACompromise
@@ -14498,7 +14488,6 @@ F9q'
 F<mb
 F?ToString@Value@v8@@QEBA?AV?$MaybeLocal@VString@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 F?ToUint32@Value@v8@@QEBA?AV?$MaybeLocal@VUint32@v8@@@2@V?$Local@VContext@v8@@@2@@Z
-F@aX
 FACE_EXIT
 FACE_LADDER
 FACE_TRAVERSAL_DIRECTION
@@ -14551,6 +14540,7 @@ F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
 F\rH'4
+F`eX
 Face %s
 Face Actor
 Face Entity
@@ -18039,8 +18029,7 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08N
+P08@J`
 P1\t98"
 P5[1
 P@33
@@ -18341,6 +18330,7 @@ Permanent Identifier
 Permanently removes the entity from the world.<br>Very similar to the 'Kill' input.<br>Keywords: remove kill erase delete eliminate
 Permit Responses
 Permitted
+Pf0cX
 Phys.GlassBreakLg
 Phys.GlassBreakMd
 Phys.GlassBreakSm
@@ -18505,6 +18495,7 @@ Please specify 0 or 1 with the -stream Parameter\n
 Please wait for broadcast to start ...
 Pm8A?
 PmR"H?
+Pn0dX
 Point entity.
 PointTemplate
 Policy Qualifier CPS
@@ -18845,7 +18836,6 @@ RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDS}
 RTime32
-R\fp4
 R\r1>Vp
 R\vp!y
 R]Di
@@ -21269,7 +21259,6 @@ Ut]<E
 Uv1t
 Uz_G3=
 V07;m
-V0IX
 V2I_ASIDENTIFIERS
 V2I_AUTHORITY_INFO_ACCESS
 V2I_AUTHORITY_KEYID
@@ -21780,7 +21769,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hr0
+X`hr
 Xd3h
 XfJ7
 XjfR
@@ -22813,6 +22802,7 @@ Z~wl
 \ri1I
 \rjwB\t
 \roKK
+\rpYX
 \rrCj
 \rusercmd.proto"\\n
 \sG7tPD
@@ -22838,6 +22828,7 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNone\n
+\tPXX
 \tPrivate script scope:
 \tPublic script scope:
 \tRead %s\t%s%s%s,\tOffs 0x%04x\n
@@ -22894,6 +22885,7 @@ Z~wl
 ]MSd
 ][LK~lO
 ^.om5r
+^0QX
 ^DnJ
 ^DqPt
 ^J_spY
@@ -22964,6 +22956,7 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
+`60}X
 `:zQF
 `D$daM-l
 `DZG
@@ -26794,6 +26787,7 @@ houseIdentifier
 hoverposeangles
 hoverposeflags
 hoverposeposition
+hpz`
 hr_H
 http request
 http$
@@ -26810,6 +26804,7 @@ h|gg
 i <= EVP_MAX_MD_SIZE
 i%YR
 i%|kB
+i0OP
 i2b_PVK_bio
 i2d ecpkparameters failure
 i2d_ASN1_SET
@@ -29267,14 +29262,13 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
+p0jP
 p250
 p2{l
 p4Z3
 p5Z3
 p5\nL,
 p618
-p6pZX
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
 pActivator
@@ -30145,7 +30139,6 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
-r\vp4
 rad2deg
 radio.go
 radio.letsgo
@@ -32236,6 +32229,7 @@ tournament_team_id
 tournament_teams
 tournamentinfo
 tpBasis
+tp\n0V
 tq}a
 trace
 traceHitboxes
@@ -33280,14 +33274,12 @@ zz2K
 }VKRZ
 }W70d
 }Xee+
-}\rpUX
 }gE3
 }n2W
 }}JSON_END\n
 ~9ob
 ~If D
 ~P2T
-~PIX
 ~R65Fu
 ~jLRG
 ~w]UG

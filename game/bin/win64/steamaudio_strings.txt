@@ -674,6 +674,7 @@ $hRh
 2Zq)
 2\fWQx
 2\rlhp
+2\vpL
 2\vpPK
 2\vpdY
 2^pV
@@ -3123,6 +3124,7 @@ RSA_verify_PKCS1_PSS_mgf1
 RSDS3z"
 R\fpPK
 R\r1>Vp
+R\vpL
 R]Di
 Rbg.E
 ReadConsoleInputW
