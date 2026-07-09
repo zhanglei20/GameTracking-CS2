@@ -11,10 +11,10 @@ class CBaseDoor : public CBaseToggle
 	bool m_bNoNPCs;
 	FuncDoorSpawnPos_t m_eSpawnPosition;
 	float32 m_flBlockDamage;
-	CUtlSymbolLarge m_NoiseMoving;
-	CUtlSymbolLarge m_NoiseArrived;
-	CUtlSymbolLarge m_NoiseMovingClosed;
-	CUtlSymbolLarge m_NoiseArrivedClosed;
+	CGameSoundEventName m_NoiseMoving;
+	CGameSoundEventName m_NoiseArrived;
+	CGameSoundEventName m_NoiseMovingClosed;
+	CGameSoundEventName m_NoiseArrivedClosed;
 	CUtlSymbolLarge m_ChainTarget;
 	CEntityIOOutput m_OnBlockedClosing;
 	CEntityIOOutput m_OnBlockedOpening;
@@ -27,6 +27,7 @@ class CBaseDoor : public CBaseToggle
 	CEntityIOOutput m_OnLockedUse;
 	bool m_bLoopMoveSound;
 	bool m_bCreateNavObstacle;
+	float32 m_flSpeed;
 	// MNotSaved
 	bool m_isChaining;
 	// MNotSaved

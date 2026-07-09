@@ -552,7 +552,6 @@ Catmull-Rom (Tangent)
 Chance
 Choreo Control State
 ChoreoScene:%s
-ChoreoStrafeMode_t
 Citadel
 Clip
 Close the group automatically after a short wait (good for 'success' messages)
@@ -561,7 +560,6 @@ CloseCaptionNoAttenuate
 Concept
 Copy Unbound Params From Actor
 Couldn't load KV3 for resource: %s
-DISABLE
 Data_Branch1xy
 Data_Branch1zBranch2x
 Data_Branch2yz
@@ -573,14 +571,12 @@ Dota
 DualHull
 Duplicate include: %s\n
 Dynamic Actor
-ENABLE
 ENTITYIO
 Ease In
 Ease In/Out
 Ease Out
 Embedded criteria Generated: rule '%s' pointing to response '%s'.\n
 Embedded response receiving name: '%s'.\n
-Enable
 End Time
 EndTime
 Error (problem that prevents task success)
@@ -965,6 +961,7 @@ m_Retiming
 m_Rules
 m_SoundEventScripts
 m_VcdLists
+m_actorName
 m_additionalTemplateResponseLines
 m_bApplyContextToWorld
 m_bCancelExisting

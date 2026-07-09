@@ -1,5 +1,6 @@
 class CBaseGrenade : public CBaseAnimGraph
 {
+	bool m_bDamageDetonating;
 	CEntityIOOutput m_OnPlayerPickup;
 	CEntityIOOutput m_OnExplode;
 	bool m_bHasWarnedAI;

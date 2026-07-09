@@ -1,0 +1,3 @@
+class CHostage_API
+{
+};

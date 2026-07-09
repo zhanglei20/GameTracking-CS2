@@ -482,7 +482,6 @@ Pixel Shader
 Pixel Shader Render State
 Polygon too large (%d points / max %d, %d indices / max %d), ignoring
 PostProcessing
-PostProcessingLocalExposureParameters_t
 PostProcessingSystemManifest
 Program MD5 is out of date with features! %s\n
 Programmer Error! Static combo not loaded!\n
@@ -919,7 +918,6 @@ m_attributes
 m_bAllowLayerOverride
 m_bDevShader
 m_bGlobalsBDA
-m_bHasLocalExposureParams
 m_bHasShaderProgram
 m_bIsLayerConstant
 m_bStaticCB
@@ -935,13 +933,6 @@ m_dynamicComboRuleArray
 m_dynamicComboVars
 m_dynamicComboVarsRef
 m_expr
-m_fBoostLocalContrast
-m_fHighlightOffsetEV
-m_fShadowOffsetEV
-m_fSigma
-m_fWaterDensity
-m_fWaterDepthBlurRadius
-m_fWaterScale
 m_flDefault
 m_flUiStep
 m_hash
@@ -954,7 +945,6 @@ m_inputProcessingCommand
 m_intDefault
 m_intMax
 m_intMin
-m_localExposureParams
 m_mipProcessingCommand
 m_modeArray
 m_nByteCodeDataIdx

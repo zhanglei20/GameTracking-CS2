@@ -8015,7 +8015,6 @@ Assigns all vertex weights to the specified bone.
 Associates a semantic identifier with an animgraph2 used by this model.
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attach Point
 Attach to Morphing Base Mesh
@@ -8142,7 +8141,6 @@ BaseTextureGenerator
 BaselineExposure
 BaselineNoise
 BaselineSharpness
-Basic string support.
 BayerGreenSplit
 BeenSimplified
 Begin testing a condition composed of Observable values. Continues checking until canceled.
@@ -8722,7 +8720,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -8751,7 +8748,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -8827,7 +8823,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -8836,7 +8831,6 @@ CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
-CREATE_CHILD_CURSOR_OUTFLOW
 CRenderMeshSimplifyParams
 CResourceArray< ModelReference_t >
 CResourceExtReference< CWeakHandle< InfoForResourceTypeCModel > >
@@ -9511,8 +9505,6 @@ Cycle Start Frame
 Cycle Type
 Cyclic samples provided are greater than the time per cycle. Expected: 
 Cylinder
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 Cylinder: %s
 D16_UNORM
 D24_UNORM_S8_UINT
@@ -9904,7 +9896,6 @@ EndAttachment
 EnsureCapacity
 Entity Class Override
 EntityName
-Enum support.
 EnumArray
 Eq R%d <- R%d == R%d
 Equal to
@@ -11060,14 +11051,11 @@ MATERIAL_ATTRIBUTE:%s_%i
 MAlternateSemanticName
 MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
 MIsStringAndTokenType
 MKV3TransferName
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MModelGameData
 MORPH
 MPropertyArrayElementNameKey
@@ -11698,7 +11686,6 @@ Overwriting existing wrinkle map data on mesh
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
 PARENT
 PF\n%d %d\n-1.000000\n
-PF_TYPE_CONTROL_POINT_IS_SET
 PHY Import: Invalid solid index %d in keyvalues\n
 PHY Import: Solid with index %d is defined twice!\n
 PHY file empty, zero hulls found: %s.
@@ -11734,7 +11721,6 @@ Parent Node
 Parent Node Name
 Parent Reaction
 Parent Rotation
-Parent VData
 Parent bone '%s' specified by define bone could not be found.
 Parent node type is not a valid node type for this node
 Parent of Chain Requires Alignment
@@ -11954,7 +11940,6 @@ Primitive Radius
 Primitive type to project vertex normals from.
 Prismatic joint.
 Procedural
-Proceed Immediately
 Process Selector
 Project From Primitive
 Project on Characters
@@ -11967,7 +11952,6 @@ Ptdn
 Ptzn
 Pull towards control point
 Pulse domain which enables particle content to query leaf code to introspect game state.
-PulseDurationStringFormat_t
 Push Out
 Push mesh faces outward along their local normal. Optionally build shell geometry.
 QAngle
@@ -12041,7 +12025,6 @@ R8_TYPELESS
 R8_UNORM
 R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RGB blend weight for sequence 0
 RGB blend weight for sequence 1
 ROTATION
@@ -12759,7 +12742,6 @@ Swing Limit
 Swing Offset Angle
 Switch Threshold
 Symbol table:  %d entries %llu bytes\n
-Synchronous - Wait for this node to fully complete before proceeding.
 T"?IsZero@FbxVector4@fbxsdk@@QEBA_NH@Z
 THEM
 TIFFAppendToStrip
@@ -13027,12 +13009,6 @@ UICameraRotation
 UL Offset in FLU local space
 UL control point number
 UPAXIS
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 UR Offset in FLU local space
 UR control point number
 UV Attribute Simplification Weight
@@ -13126,7 +13102,6 @@ Unsupported mix of opaque and translucent materials in thie groom group. Render 
 Up Type
 Up Vector
 UpdateLights
-UpscalerType_t
 Use Block Solver
 Use Child Offset Attachment
 Use Continuous Emission
@@ -13167,7 +13142,6 @@ Using compiled model parent '%s' for bone '%s'
 Using compiled skeleton for for bone '%s'
 Using compiled skeleton for parent '%s' for bone '%s'
 Using deprecated 'base=prefix' syntax for adding a prefix to a base class
-VDATA
 VDataChoice( %s )
 VDataChoice()
 VDataModelVersion001
@@ -13337,8 +13311,6 @@ Whether this distance field is a collider for certain effects such as hair simul
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
 Which solver to use for positioning the IK chain.  Required.
-While False
-While True
 WhiteLevel
 WhitePoint
 Width Target
@@ -13658,7 +13630,6 @@ animation_fit_lifetime
 animations
 animevents
 animflags
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
@@ -14282,8 +14253,6 @@ draw_wireframe
 durationTime
 duration_info
 dynamic_attributes
-eCenteredCylinder
-eGroundCylinder
 early exit while reading obj file containing embedded null\n
 ease_in_and_out
 ease_in_key
@@ -15027,7 +14996,6 @@ m_Animationname
 m_ArgumentDependencies
 m_AutoCreateSetName
 m_Bodies
-m_BoneMergeLinks
 m_ChildResourceList
 m_CollisionAttributes
 m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNameOrientation
@@ -15038,8 +15006,11 @@ m_DataString
 m_DefaultSolverSettings.m_nNumIterations
 m_DefaultTargetSettings.m_Bone
 m_DefaultTargetSettings.m_TargetSource
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
 m_EndEffectorFixedOffsetAttachment
 m_EnumArray
+m_EvaluateConnection
 m_Event
 m_Filepath
 m_Format
@@ -15053,7 +15024,6 @@ m_KeyValue
 m_Keywords
 m_LocalBindPose
 m_Loop
-m_Metadata
 m_MotionFrames
 m_MotionFramesRootBone
 m_ParameterType
@@ -15066,7 +15036,6 @@ m_RelativeFilename
 m_RootRelativePath
 m_SearchPath
 m_SearchableUserData
-m_SequencePoint
 m_Shapes
 m_Special
 m_SpecialDependencies
@@ -15120,6 +15089,7 @@ m_bConstraints
 m_bCreateFlare
 m_bCullUnSkinnedVerts
 m_bCyclepose
+m_bDebris
 m_bDeleted
 m_bDisable
 m_bDiscardRX
@@ -15241,9 +15211,6 @@ m_eOffset
 m_eParentBindRotation
 m_eRbfType
 m_eSlaveChannel
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_fEmissiveFactor
 m_fMoveTo
 m_fireInteractions
 m_flAddCurvature
@@ -15296,7 +15263,6 @@ m_influenceFlags
 m_influenceName
 m_influences
 m_lodGroups
-m_materialGroupToken
 m_materialList
 m_materialSearchPath
 m_meshFile
@@ -15310,7 +15276,6 @@ m_nCP1Parent
 m_nCP2Parent
 m_nCP3Parent
 m_nCP4Parent
-m_nChildNode
 m_nControlPoint0
 m_nControlPoint00
 m_nControlPoint01
@@ -15339,18 +15304,12 @@ m_nIterations
 m_nLoopRestart
 m_nNumCols
 m_nNumRows
-m_nParentHash
 m_nSerial
 m_nSmoothLoopEnd
 m_nSmoothLoopStart
-m_nSrcDrawIndex
 m_nSrcFrame
 m_nStartframe
 m_nUserData
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_nWidthTarget
 m_nYieldToken
 m_pAlignAnimation
@@ -15385,7 +15344,6 @@ m_poseParameterArray
 m_qFixupRotation
 m_rbfParameters
 m_reference
-m_rootBvhNodes
 m_sBindPoseReference
 m_sBoneMask
 m_sBonename
@@ -15646,12 +15604,10 @@ multilevelchannel
 must be either LogLUV or LogL
 mute
 n$Kx
-nDenominator
 nFormat
 nKillPriority
 nLayoffState
 nMaxElements
-nNumerator
 nRemainderDigits
 nRemainderNoiseDigits
 nValue
@@ -17153,7 +17109,6 @@ zero_unselected
 zfriction
 zmax
 zmin
-{ item_factory = 'IntervalTimer' }
 { uninitialized }
 {error}
 ~CModelInstance destructor: leaking softbody because physics world disappeared\n

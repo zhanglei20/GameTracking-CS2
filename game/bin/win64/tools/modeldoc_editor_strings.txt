@@ -14950,6 +14950,7 @@ A\n?document@QTextEdit@@QEBAPEAVQTextDocument@@XZ
 Abandon and delete newly created node?
 AbandonAnyModalBrowse
 Ability%d
+Abort
 Aborted!
 About...
 Abs Float
@@ -15052,7 +15053,6 @@ Add World Collision Radius
 Add a bone to the bindpose skeleton
 Add a hold to shorter animations in the blend to match frame counts on all blends
 Add a voronoi plane mesh primitive.
-Add an additional local space offset to the end effector to use for aiming the lookat
 Add an animation hold
 Add animations to the document by browsing for source file(s)
 Add box mesh primitive.
@@ -15428,7 +15428,6 @@ Assigns all vertex weights to the specified bone.
 Associates a semantic identifier with an animgraph2 used by this model.
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attach Point
 Attach To Bone ID
@@ -15622,10 +15621,10 @@ BaseUnit "%s" in unit "%s" not found.\n
 BaselineExposure
 BaselineNoise
 BaselineSharpness
-Basic string support.
 BayerGreenSplit
 BeenSimplified
 BeforeChange
+Begin
 Begin mouse capture [%i]: %s\n
 Begin testing a condition composed of Observable values. Continues checking until canceled.
 Begin testing a condition composed of Observable variable references. Continues checking until true.
@@ -16333,7 +16332,6 @@ CNmClipDocEvent_Particle::PerformValidation
 CNmClipDocEvent_RootMotion::PerformValidation
 CNmClipDocEvent_Sound::PerformValidation
 CNmClipDocEvent_TargetWarp::PerformValidation
-CNmFloatChannelSet_t
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::GetCurrentGraphTimingInfo
 CNmPose::DrawDebug
@@ -16359,7 +16357,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -16388,7 +16385,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -16464,7 +16460,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -16790,7 +16785,6 @@ CQWeightWidget
 CQWidgetDebugHighlight
 CQWidgetDebugger
 CQuickReplaceDialog
-CREATE_CHILD_CURSOR_OUTFLOW
 CRecomputeModelInstance
 CRenderMeshSimplifyParams
 CRenderOptionsPopupUI
@@ -17661,7 +17655,6 @@ Ctrl Soft Offset from
 Ctrl offset from
 Cu&t
 Cull Unskinned Verts
-Current
 Current Distance: %f, %f, %f\n
 Current Sync Event
 Current Sync Event ID
@@ -17699,8 +17692,6 @@ Cycle Start Frame
 Cycle Type
 CycleChanged
 Cylinder
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 Cylinder: %s
 D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D16_UNORM
@@ -18337,7 +18328,6 @@ Empty
 Empty MeshID.
 Empty import cloth
 Empty virtual parameter detected!
-Enable
 Enable Advanced Parameters
 Enable Collision With Parent
 Enable Crouch Speeds
@@ -18387,7 +18377,6 @@ EntityName
 Entry Overrides
 Entry State
 Entry State Conditions
-Enum support.
 EnumArray
 Epsilon
 Eq R%d <- R%d == R%d
@@ -19087,7 +19076,6 @@ Gradient()
 Graph
 Graph Event Condition
 Graph Events
-Graph IDs
 Graph Resaved: %s\n
 Graphs
 Gravity Multiplier
@@ -19239,7 +19227,6 @@ HostComputer
 HoverItemChanged
 How fast joint velocity is reduced
 How frequently this will show up relative to any of the other options
-How long should the blend in/out take
 How many contiguous 'stationary' frames are required to be considered a foot-plant (1 is good for fast humanoid motion, 2-3 is good for slower)
 How many iterations this solvers hould use. 
 How much the joint tries to drive back to bind pose
@@ -19971,7 +19958,6 @@ MAlternateSemanticName
 MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
 MENU
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
@@ -19979,8 +19965,6 @@ MISMATCHED BUFFERS\n
 MISMATCHED SIZE\n
 MIsStringAndTokenType
 MKV3TransferName
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MModelGameData
 MMouse
 MMouseDoubleClick
@@ -21652,7 +21636,6 @@ Parent Nodes [%d]
 Parent Reaction
 Parent Rotation
 Parent Tris [%d]
-Parent VData
 Parent bone '%s' specified by define bone could not be found.
 Parent node type is not a valid node type for this node
 Parent of Chain Requires Alignment
@@ -21982,7 +21965,6 @@ Probable infinite loop detected! Terminating pulse cursor after %d consecutive i
 Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
 Probe
 Probe[%u] %s
-Proceed Immediately
 Process Selector
 Processing.
 Project From Primitive
@@ -22006,7 +21988,6 @@ Pull From Global Browser
 PullSelectionFromGlobalBrowser
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
-PulseDurationStringFormat_t
 Push Out
 Push To Global Browser
 Push mesh faces outward along their local normal. Optionally build shell geometry.
@@ -22165,7 +22146,6 @@ R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RBF Based Anim Constraint
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RGBA\t
 RGBA\t%1\t%2\t%3\t%4
 RMouse
@@ -22907,7 +22887,6 @@ Should have eyes attachment
 Should have prop_data
 Should it be considered an error if this bone isn't found to rename?
 Should not have prop_data
-Should we check at compile time that this is an optional mask?
 ShouldPunchThroughPolymorphism
 Show Active Sequence Bounds
 Show Advanced Options
@@ -23219,10 +23198,8 @@ State Layer Data
 State Machine Layer
 Static Only
 Static Only Tolerance
-Status
 Status Effect Params CP ( Status Effect Flags / None / None )
 Status...
-Step
 Step Back
 Step Forward
 StepBack
@@ -23346,7 +23323,6 @@ SyncFileToHeadRevision
 SyncToHeadRevision - SyncFile failed: %s\n
 Synced %d file(s).
 Synced %d file(s).  %d file(s) were not synced!
-Synchronous - Wait for this node to fully complete before proceeding.
 Syncing %d file(s).  Please wait...
 SystemAttributes
 T -> x: %.3f, y: %.3f, z: %.3f
@@ -23486,7 +23462,6 @@ The animation to export.
 The autosave directory does not exist and could not be created.\nThe autosave feature will be disabled.
 The autosave feature will be disabled
 The autosave feature will be disabled.
-The axis that you want to point at the target
 The color format of the field
 The color to assign to the specified attribute when at full intensity. During fade in and fade out the value will blend from black to this value. Note that when the color value is provided to a material expression it will be in linear color space.
 The current autosave directory does not have an absolute path.\nThe autosave feature will be disabled.
@@ -23515,7 +23490,6 @@ The gameinfo.gi file is missing or incomplete!\n
 The index of the field, e.g. multiple texture coordinate fields
 The input bones and pose samples for the Rbf.  The input are the driver bones.
 The joint we're constraining.
-The length of the IK chain
 The local hinge axis for this constraint.
 The maximum degrees for this hinge constraint.
 The maximum value the controller can have, typically 1
@@ -23548,7 +23522,6 @@ The type of frame to get, first frame, last frame or a specific frame number.
 The type of primitive which will be rendered for this draw call
 The value to assign to the specified attribute when at full intensity. During fade in and fade out the value will blend from 0 to this value.
 The vertex attribute on the mesh which will indicate which vertices get a generated anchor bone.  It's expected to be a float value per-vertex.  A value of 0 leaves the vertex unaffected.  A non-zero value means an anchor bone will be generated for that vertex and the vertex will be skinned to that anchor bone.
-The weights from the tip of the chain to the base. 0 is the effector/tip of the chain weight, N is the base of the chain.
 There is a problem with the autosave directory: 
 There is already a Sound Event named '%1' in this mod.\nPlease choose another name.
 There is already another open editor session with this pathname.
@@ -23801,12 +23774,6 @@ UI Camera Yaw/Pitch
 UICameraRotation
 UIMatRTTexture.vtex
 UNKNOWN ENUM VALUE!
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 UV Attribute Simplification Weight
 UV Map Box
 UV Map Cylinder
@@ -23942,7 +23909,6 @@ Upload
 UploadJointPreset
 UploadPreset
 UpperEyelid( 
-UpscalerType_t
 Usage: phys_get_model_materials <all|none|empty|default|non-default|material-name> <optional:vmat>.\n
 Usage: phys_set_model_materials <diffmodels|diffmapping|set|overwrite|single> <mapping-file|material-name,material,...>\n
 Use Actual Elapsed Time In State For Timed Events
@@ -23988,7 +23954,6 @@ V?redirected@QPaintDevice@@MEBAPEAV1@PEAVQPoint@@@Z
 V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VConsole
-VDATA
 VData:%s
 VDataChoice
 VDataChoice( %s )
@@ -24225,8 +24190,6 @@ Whether to draw a 3d debug visualization of analysis (debug draw persists until 
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
 Which solver to use for positioning the IK chain.  Required.
-While False
-While True
 WhiteLevel
 WhitePoint
 Widget Debugger
@@ -24946,7 +24909,6 @@ animation constraint twist
 animation_name
 animdoclib
 animfilereference
-animgraph
 animgraph2_clip
 animgraph2_editor
 animgraph2_graph
@@ -25602,9 +25564,7 @@ duration_info
 dynamic_attributes
 e ?topLevelItem@QTreeWidget@@QEBAPEAVQTreeWidgetItem@@H@Z
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
-eCenteredCylinder
 eFixupResourceName: Illegal full path passed in ("%s")!\n
-eGroundCylinder
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
 e\tV_modfd
@@ -26478,7 +26438,6 @@ m_AntiTunnelGroups
 m_ArgumentDependencies
 m_Bindings
 m_Bodies
-m_BoneMergeLinks
 m_ChildResourceList
 m_CollisionAttributes
 m_Context
@@ -26489,8 +26448,11 @@ m_Data.m_bParentJointRequiresAlignment
 m_DefaultSolverSettings.m_nNumIterations
 m_DefaultTargetSettings.m_Bone
 m_DefaultTargetSettings.m_TargetSource
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
 m_EndEffectorFixedOffsetAttachment
 m_EnumArray
+m_EvaluateConnection
 m_FitInfluences
 m_Fx
 m_HingeAxis
@@ -26503,7 +26465,6 @@ m_Int
 m_IntArray
 m_Integrator
 m_LocalBindPose
-m_Metadata
 m_MissingDetailLayers
 m_ModelVertexSetName
 m_ParameterType
@@ -26516,7 +26477,6 @@ m_RelativeFilename
 m_RootRelativePath
 m_SearchPath
 m_SearchableUserData
-m_SequencePoint
 m_Shapes
 m_SoftParents
 m_SourceEdges
@@ -26575,7 +26535,6 @@ m_bImmovableHint
 m_bIsGameFile
 m_bIsLinearLimitEnabled
 m_bIsNotMatchedToMaterial
-m_bIsOptionalMask
 m_bIsSwingLimit1Enabled
 m_bIsSwingLimit2Enabled
 m_bIsTwistLimitEnabled
@@ -26611,20 +26570,10 @@ m_bUseShadowFastPath
 m_bVirtual
 m_bodyLocationDef
 m_capabilities
-m_chainWeights
-m_channelIDs
 m_eColorFormat
 m_eMaxBlendWeightsPerVertex
 m_eRbfType
 m_eRenderPrimitiveType
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_enabledNodeIdx
-m_endEffectorBoneID
-m_endEffectorBoneName
-m_endEffectorForwardAxis
-m_endEffectorOffset
-m_fEmissiveFactor
 m_flAddCurvature
 m_flAdditionalShearStretch
 m_flAntiShrink
@@ -26657,18 +26606,15 @@ m_flStrayRadiusInv
 m_flStrayRadiusRelaxationFactor
 m_flStretchiness
 m_flWorldFriction
-m_floatChannelSets
 m_hCursorOnOtherGraph
 m_hDef
 m_hitboxsets
 m_influenceFlags
-m_materialGroupToken
 m_morphSet
 m_nBone
 m_nBones
 m_nChainLength > 1 && m_nChainLength < 8
 m_nChildBone
-m_nChildNode
 m_nCurrentWakeIndex
 m_nCursorID
 m_nFileCRC
@@ -26680,22 +26626,15 @@ m_nLockLocalTranslation
 m_nMergePriority
 m_nNodes
 m_nParentBone
-m_nParentHash
 m_nRoleHint
 m_nRopeOptions
 m_nSerial
-m_nSrcDrawIndex
 m_nStackDepthWhenAdded
 m_nUserData
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_nYieldToken
 m_params.m_nNumBonesInChain < 8
 m_qFixupRotation
 m_rbfParameters
-m_rootBvhNodes
 m_sMDLFilename
 m_sMaterialName
 m_sSemanticName
@@ -26933,7 +26872,6 @@ nColumn
 nComponent
 nCopyFromSide
 nDelayInMS
-nDenominator
 nFormat
 nFrame
 nFrameCount
@@ -26949,7 +26887,6 @@ nNewCapturedAnimIndex
 nNewDesiredHeight
 nNewValue
 nNumItems
-nNumerator
 nParentFrames
 nPart
 nRemainderDigits
@@ -28721,7 +28658,6 @@ zero_unselected
 zoom_in_button
 zoom_out_button
 { EMPTY }
-{ item_factory = 'IntervalTimer' }
 { uninitialized }
 { unnamed %i } %s
 {X?setBottom@QIntValidator@@QEAAXH@Z

@@ -647,8 +647,6 @@ Create Flags
 CreatePhysicsBodySceneObject(310): 
 CreatePhysicsEdgeSceneObject(400): 
 Currently allocated agg data: {
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 DOT_TO_MORPH
 DWARF_SYMBOL_PATH
 Damping %.2f linear, %.2f angular\n
@@ -679,7 +677,6 @@ Failed to allocate mesh edges for mesh, maximum edge count %i has been reached.\
 Failed to apply FLC data to resource '%s': %s\n
 Failed to call CBaseIntrospectedToKV3TypeManager::Init
 Failed to load body %p\n
-FeBoneMergeLink_t
 FoliageAnimation
 For Hitbox Test
 FourVectors
@@ -746,7 +743,6 @@ LocalSpace
 Locked
 MAlternateSemanticName
 MAtomicTransfersAsPlainString
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MFgdHelper
 MIsStringAndTokenType
 MKV3TransferName
@@ -851,7 +847,6 @@ QuaternionStorage
 Query and shape in hierarchy id=%d
 Query ignored this shape by owner ID. query(%08x, %08x) shape owner:%08x, shape entity:%08x).\n
 Query is not part of shape target detail layer '%s'
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RESOURCE_TYPE_PHYSICSDATA_INTERNAL
 RESOURCE_TYPE_VPHYSX_SURFACE_PROPERTIES
 REVOLUTE_JOINT
@@ -870,9 +865,7 @@ Revolute Weld Fused
 RnAssertFatalWrapper
 RnCompoundClone
 RnCompoundCreate
-RnCompoundDesc_t
 RnCompoundDestroy
-RnCompound_t
 RnHullClone
 RnHullCreate
 RnHullCreateBox
@@ -953,19 +946,12 @@ Trace and Queries disabled on shape
 Triangle Cache: %d (%d)
 Tried to load a polymorphic pointer with no '%s' key
 Tried to load resource reference '%s' from a value without a resource reference specific type.
-Trigger
 Trigger <font color="cyan">Query</font>, common interaction flags
 Twist: %.1f, Swing: %.1f, Twist Lambda: %.1f, Swing Lambda: %.1f
 Two meshes may not have collision\n
 Two non-dynamics do NOT have a Trigger flag
 Two non-dynamics have a Trigger flag\n
 TypeManager
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 Unexpected Keyword %s\n
 Unexpected end of buffer @%p, payload %d bytes, %d extra bytes at the end\n
 Unsupported version %d for resource '%s' (Expected %d)\n
@@ -973,11 +959,9 @@ UpdatePhysicsBodySceneObject(375):
 UpdatePhysicsEdgeSceneObject(442): 
 UpdatePhysicsEdgeSceneObject(462): 
 UpdateShapeSceneObjects
-UpscalerType_t
 Usage: phys_debug_draw [options]:\n\t\tclient                    - draw client world(s)\n\t\tserver                    - draw server world(s)\n\t\tother                     - draw other world(s) - useful in tools\n\t\twireframe                 - draw wireframe\n\t\tsolid                     - draw solid (not wireframe, with tool textures)\n\t\tplain                     - draw solid (not wireframe, plain debug colors)\n\t\ttransparent 128           - draw transparent (0-255)\n\t\tnodraw | off              - draw nothing\n\t\t{collisionGroup, interactAs, interactWith, interactExclude, targetDetailLayer, includedDetailLayers} #FFFFFFFF\n\t\tlayer #401F or layer401F  - debug layer mask\n\t\tdebugName substring       - filter by substring in debug name\n\t\tstackFilter substring     - filter traces by callstack strings\n\t\tnot                       - invert filter\n\t\tsurface slipperymetal     - filter by surface names or (#41BC2B3D) hash\n\t\ttrigger|nav|clip          - draw corresponding tool materials\n\t\tcfFF                      - collision function mask\n
 Used %s
 VBphys
-VPhysEntityId_t
 VPhysics2Startup
 VPhysics2SurfacePropLoader
 VSYMMOD::%s( 0x%llX )\n
@@ -1081,8 +1065,6 @@ door_blocker
 dynamic_bodies
 e%d:%d, %g deg
 e:%d, %g deg
-eCenteredCylinder
-eGroundCylinder
 elephant
 enable_collision
 excludes
@@ -1155,7 +1137,6 @@ local_pivot2
 locomotive
 lowprecisionuv
 lowprecisionuv1
-m_BoneMergeLinks
 m_CollisionAttrib.m_nCollisionGroup
 m_CollisionAttrib.m_nEntityIdsToIgnore[ 0 ]
 m_CollisionAttrib.m_nEntityIdsToIgnore[ 1 ]
@@ -1167,13 +1148,8 @@ m_CollisionAttrib.m_nInteractsWith
 m_CollisionAttrib.m_nOwnerIdsToIgnore[ 0 ]
 m_CollisionAttrib.m_nOwnerIdsToIgnore[ 1 ]
 m_CollisionAttrib.m_nTargetDetailLayer
-m_Compound
 m_Format
-m_Hulls
-m_Id
-m_Meshes
 m_ObjectList
-m_Spheres
 m_Stops
 m_attachments
 m_bBakedTwoSided
@@ -1199,9 +1175,6 @@ m_bUseDirectDistanceConstraintSolver
 m_bUseShadowFastPath
 m_bUseTautLinePositionCache
 m_eRbfType
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_fEmissiveFactor
 m_flAngularDampingRatios
 m_flAngularFrequencies
 m_flBendingStiffness
@@ -1251,23 +1224,15 @@ m_flSteeringMotorTargetVelocity
 m_flSuspensionRestLoad
 m_hitboxsets
 m_influenceFlags
-m_materialGroupToken
 m_morphSet
 m_nAngularMotions
 m_nCallbackFlags
-m_nChildNode
 m_nGrabNode
 m_nIterations
 m_nLinearMotions
 m_nMotorMode
-m_nParentHash
-m_nSrcDrawIndex
 m_nSteeringMotorMode
 m_nSubsteps
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_orientation
 m_pBody1
 m_pBody2
@@ -1275,7 +1240,6 @@ m_qLocalBasis1
 m_qLocalBasis2
 m_qMotorTargetOrientation
 m_rbfParameters
-m_rootBvhNodes
 m_vEndpointAlignAxis[ 0 ]
 m_vEndpointAlignAxis[ 1 ]
 m_vGround1
@@ -1321,6 +1285,7 @@ morph_texture
 motiondisabled
 motor
 nJointType
+nObjects
 never
 nodraw
 nodraw 

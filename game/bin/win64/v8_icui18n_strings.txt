@@ -6367,7 +6367,6 @@ Regions
 Rounded
 RuleBasedTransliteratorIDs
 Rules
-Second
 SetThreadStackGuarantee
 Shift_JIS
 Short

@@ -166,7 +166,8 @@
 //				0.000000
 //			]
 //		}
-//	}
+//	},
+//	"m_bPrevious": false
 //}
 class C_OP_PointVectorAtNextParticle : public CParticleFunctionOperator
 {
@@ -175,4 +176,6 @@ class C_OP_PointVectorAtNextParticle : public CParticleFunctionOperator
 	ParticleAttributeIndex_t m_nFieldOutput;
 	// MPropertyFriendlyName = "Interpolation"
 	CPerParticleFloatInput m_flInterpolation;
+	// MPropertyFriendlyName = "Point at Previous instead of next"
+	bool m_bPrevious;
 };

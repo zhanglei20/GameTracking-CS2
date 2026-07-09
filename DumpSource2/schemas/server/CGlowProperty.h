@@ -1,3 +1,8 @@
+// MGetKV3ClassDefaults = {
+//	"_class": "CGlowProperty",
+//	"m_iGlowType": 0,
+//	"m_bEligibleForScreenHighlight": false
+//}
 class CGlowProperty
 {
 	// MNotSaved

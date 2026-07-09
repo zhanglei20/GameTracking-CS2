@@ -2,7 +2,6 @@
 //	"_class": "CCS2ChickenGraphController",
 //	"m_hExternalGraph": 4294967295,
 //	"m_action": null,
-//	"m_actionSubtype": null,
 //	"m_bActionReset": null,
 //	"m_idleVariation": null,
 //	"m_runVariation": null,
@@ -15,7 +14,6 @@
 class CCS2ChickenGraphController : public CAnimGraphControllerBase
 {
 	CAnimGraph2ParamOptionalRef< CGlobalSymbol > m_action;
-	CAnimGraph2ParamOptionalRef< CGlobalSymbol > m_actionSubtype;
 	CAnimGraph2ParamAutoResetOptionalRef m_bActionReset;
 	CAnimGraph2ParamOptionalRef< float32 > m_idleVariation;
 	CAnimGraph2ParamOptionalRef< float32 > m_runVariation;

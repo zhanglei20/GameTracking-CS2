@@ -16,7 +16,7 @@
 			name = "VModelError"
 			group = ""
 			source_file = "src/meshsystem/meshsystem.cpp"
-			source_line = 66
+			source_line = 67
 			resources = 
 			[
 				resource_name:"models/dev/error.vmdl",

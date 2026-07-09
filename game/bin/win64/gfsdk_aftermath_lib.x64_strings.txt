@@ -1110,6 +1110,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ 
 ABGR
 ABI alignment specification must be >0 for non-aggregate types
+ACTIVE
 ADAPTER_LUID
 ADAPTER_NAME
 ADAPTER_RESET
@@ -1133,7 +1134,6 @@ Acos
 Acosh
 Acquire
 AcquireRelease
-Active
 Active Warps
 ActiveThreadMask
 Adapter LUID
@@ -3848,7 +3848,6 @@ Qualcomm
 Quality
 QuantizeToF16
 QueryServiceConfigW
-Queue
 QueueFamily
 QueueFamilyKHR
 R11fG11fB10f
@@ -4315,7 +4314,6 @@ StartCounter
 Statements is empty
 Static texture heap
 StaticNumWorkgroupsAMDX
-Status
 StencilAttachmentReadEXT
 StencilExportEXT
 StencilRefGreaterBackAMD
@@ -4325,7 +4323,6 @@ StencilRefLessFrontAMD
 StencilRefReplacingEXT
 StencilRefUnchangedBackAMD
 StencilRefUnchangedFrontAMD
-Step
 StopCounter
 Stopped
 StorageBuffer
@@ -4624,7 +4621,6 @@ TranscribeCompileUnits() failed
 TranscribeDebugInfoSection() failed
 TranscribePtxTextSection() failed
 TransformFeedback
-Transpose
 TrueDualPortINTEL
 Trunc
 Trying to add an existing function

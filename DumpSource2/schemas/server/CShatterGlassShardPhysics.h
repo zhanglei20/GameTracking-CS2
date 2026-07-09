@@ -1,6 +1,7 @@
-class CShatterGlassShardPhysics : public CPhysicsProp
+class CShatterGlassShardPhysics : public CBaseModelEntity
 {
-	bool m_bDebris;
 	uint32 m_hParentShard;
 	shard_model_desc_t m_ShardDesc;
+	ShatterGlassEntityPoolState_t m_nPoolState;
+	bool m_bTouchedByPlayer;
 };

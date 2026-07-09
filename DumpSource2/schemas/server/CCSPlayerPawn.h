@@ -35,10 +35,9 @@ class CCSPlayerPawn : public CCSPlayerPawnBase
 	bool m_bNextSprayDecalTimeExpedited;
 	int32 m_nRagdollDamageBone;
 	Vector m_vRagdollDamageForce;
-	Vector m_vRagdollDamagePosition;
 	char[64] m_szRagdollDamageWeaponName;
 	bool m_bRagdollDamageHeadshot;
-	Vector m_vRagdollServerOrigin;
+	VectorWS m_vRagdollServerOrigin;
 	CEconItemView m_EconGloves;
 	uint8 m_nEconGlovesChanged;
 	QAngle m_qDeathEyeAngles;
@@ -91,13 +90,13 @@ class CCSPlayerPawn : public CCSPlayerPawnBase
 	int32 m_iDeathFlags;
 	bool m_bHasDeathInfo;
 	float32 m_flDeathInfoTime;
-	Vector m_vecDeathInfoOrigin;
+	VectorWS m_vecDeathInfoOrigin;
 	uint32[5] m_vecPlayerPatchEconIndices;
 	Color m_GunGameImmunityColor;
 	GameTime_t m_grenadeParameterStashTime;
 	bool m_bGrenadeParametersStashed;
 	QAngle m_angStashedShootAngles;
-	Vector m_vecStashedGrenadeThrowPosition;
+	VectorWS m_vecStashedGrenadeThrowPosition;
 	Vector m_vecStashedVelocity;
 	bool m_bCommittingSuicideOnTeamChange;
 	bool m_wasNotKilledNaturally;

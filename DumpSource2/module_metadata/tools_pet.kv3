@@ -61,19 +61,9 @@
 		},
 		{
 			name = ""
-			group = "ToolsStartup_SM50"
-			source_file = "src/toolrenderutils/toolmatsysutils.cpp"
-			source_line = 161
-			resources = 
-			[
-				resource_name:"materials/tools/grid.vmat",
-			]
-		},
-		{
-			name = ""
 			group = "ToolsStartup"
 			source_file = "src/toolrenderutils/toolmatsysutils.cpp"
-			source_line = 125
+			source_line = 126
 			resources = 
 			[
 				resource_name:"materials/tools/wireframe_vertex_color.vmat",
@@ -100,6 +90,7 @@
 				resource_name:"materials/tools/handle_ring_translucent.vmat",
 				resource_name:"materials/tools/handle_square_ring_translucent.vmat",
 				resource_name:"materials/tools/handle_edged_circle_translucent.vmat",
+				resource_name:"materials/tools/grid.vmat",
 			]
 		},
 		{

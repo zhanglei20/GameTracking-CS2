@@ -9001,7 +9001,6 @@ Accent Frame
 Accent frame of the gesture/posture, unused
 AclParameters
 Activation Distance
-Active
 Active By Default
 Active Window Widget
 ActiveArea
@@ -10344,8 +10343,6 @@ Cut Min
 Cycle Start Frame
 Cycle Type
 Cylinder
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 Cylinder: %s
 D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D [%.2f, %.2f] G [%.2f, %.2f]\n
@@ -11179,7 +11176,6 @@ If Lerp Type is Full Frame Range, this is the fixed scale value applied, the cur
 If animation has been subtracted in ModelDoc to create an additive animation to be used with AnimGraph, set this to true
 If any faces with a given material are selected, expand the selection to include ALL faces using those materials.
 If enabled writes the modified normals into a separate vertex stream to be used by the shader. Otherwise modifies meshes original normals.
-If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 If set, considers failure cases to be errors. Failures are warnings by default.
 If set, the offset of the extracted motion channels from the origin is removed and stored as a queryable value on the animation
 If set, this config will be active by default when the model open in the editor.
@@ -11581,7 +11577,6 @@ MAlternateSemanticName
 MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
 MENU
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
@@ -12531,7 +12526,6 @@ R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RBF Based Anim Constraint
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RMouse
 RMouseDoubleClick
 ROTATION
@@ -13327,12 +13321,6 @@ UICameraRotation
 UI\tf
 UM0'
 UN{J
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 UV Attribute Simplification Weight
 UV Map Box
 UV Map Cylinder
@@ -13416,7 +13404,6 @@ UpdateFilenames
 UpdateMenu
 UpdateSurfaceProperties
 UpperLine
-UpscalerType_t
 Usage: "%s R G B" where R, G, B are integers in the range [0,255]\n
 Usage: gfx_generate_ao_cone_response <cone-angle>\n
 Usage: gfx_generate_ao_sphere_response <resolution> <min> <exp> <cutoff> <cutoff-width>\n
@@ -13440,7 +13427,6 @@ Use Per-Node Local Force and Rotation
 Use Pole Vector for Axis
 Use RenderMesh List
 Use UV2 for Lightmap Charting
-Use World Space Up
 Use a higher quality solver for this joint. Improves accuracy / stiffness but increases CPU cost.
 Use for faces
 UseBaseVertex
@@ -14175,7 +14161,6 @@ animation constraint point
 animation constraint slave
 animation constraint tilt twist
 animation constraint twist
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
@@ -14727,9 +14712,7 @@ e0F$
 e0F$J
 e:8A
 e?RR
-eCenteredCylinder
 eDc?t
-eGroundCylinder
 eK6@
 eZQ9\
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
@@ -15547,7 +15530,6 @@ m_AdditionalInputDependencies
 m_AdditionalRelatedFiles
 m_ArgumentDependencies
 m_Bindings
-m_BoneMergeLinks
 m_ChildResourceList
 m_Context
 m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNameOrientation
@@ -15587,8 +15569,6 @@ m_TestEnum
 m_UserData
 m_WeakReferenceList
 m_attachments
-m_bAllowDefinitions
-m_bAllowReferences
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
 m_bDrawLast
@@ -15604,34 +15584,21 @@ m_bParentJointRequiresAlignment
 m_bUseCompressedNormalTangent
 m_bUseNewPoleVectorForAxis
 m_bUseShadowFastPath
-m_bWorldSpaceOrientation
 m_capabilities
 m_eRbfType
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_fEmissiveFactor
 m_flMaxRadians
 m_flMinRadians
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_hitboxsets
 m_influenceFlags
-m_materialGroupToken
 m_morphSet
-m_nChildNode
 m_nFileCRC
 m_nFingerprint
 m_nFingerprintDefault
-m_nParentHash
-m_nSrcDrawIndex
 m_nUserData
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_qFixupRotation
 m_rbfParameters
-m_rootBvhNodes
 magenta
 magpie
 make_two_sided

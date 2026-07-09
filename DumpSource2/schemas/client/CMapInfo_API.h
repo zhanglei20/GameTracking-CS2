@@ -1,0 +1,3 @@
+class CMapInfo_API
+{
+};

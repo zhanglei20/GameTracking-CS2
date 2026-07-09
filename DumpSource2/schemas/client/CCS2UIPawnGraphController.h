@@ -3,6 +3,7 @@
 //	"m_hExternalGraph": 4294967295,
 //	"m_nAnimationSeed": null,
 //	"m_characterMode": null,
+//	"m_bCharacterModeReset": null,
 //	"m_nTeamPreviewVariant": null,
 //	"m_nTeamPreviewRandom": null,
 //	"m_nTeamPreviewPosition": null,
@@ -19,6 +20,7 @@ class CCS2UIPawnGraphController : public CAnimGraphControllerBase
 {
 	CAnimGraph2ParamOptionalRef< float32 > m_nAnimationSeed;
 	CAnimGraph2ParamOptionalRef< CGlobalSymbol > m_characterMode;
+	CAnimGraph2ParamOptionalRef< bool > m_bCharacterModeReset;
 	CAnimGraph2ParamOptionalRef< float32 > m_nTeamPreviewVariant;
 	CAnimGraph2ParamOptionalRef< float32 > m_nTeamPreviewRandom;
 	CAnimGraph2ParamOptionalRef< float32 > m_nTeamPreviewPosition;

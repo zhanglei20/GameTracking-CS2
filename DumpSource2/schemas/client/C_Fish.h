@@ -1,7 +1,7 @@
 class C_Fish : public CBaseAnimGraph
 {
 	// MNotSaved
-	Vector m_pos;
+	VectorWS m_pos;
 	// MNotSaved
 	Vector m_vel;
 	// MNotSaved
@@ -21,11 +21,11 @@ class C_Fish : public CBaseAnimGraph
 	// MNotSaved
 	float32 m_wiggleRate;
 	// MNotSaved
-	Vector m_actualPos;
+	VectorWS m_actualPos;
 	// MNotSaved
 	QAngle m_actualAngles;
 	// MNotSaved
-	Vector m_poolOrigin;
+	VectorWS m_poolOrigin;
 	// MNotSaved
 	float32 m_waterLevel;
 	// MNotSaved

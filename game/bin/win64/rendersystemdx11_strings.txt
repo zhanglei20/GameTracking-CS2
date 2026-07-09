@@ -1303,15 +1303,8 @@ RDEFl
 RDEF|
 RDEF|\t
 RENDERDOC_GetAPI
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RESOURCE_MANIPULATION
 RESOURCE_TYPE_TEXTURE
-RS_CMP_CLOSER
-RS_CMP_CLOSER_EQUAL
-RS_CMP_CLOSER_FARTHER_FLAG
-RS_CMP_FARTHER
-RS_CMP_FARTHER_EQUAL
-RS_CMP_FUNC_MASK
 R\fp,d
 R_T5Y
 RawDataUniqueID
@@ -1554,12 +1547,6 @@ Trying to create a render target with invalid image format %s\n
 Trying to set dxlevel (%d) which is higher than the card can support (%d)!\n
 Trying to set dxlevel (%d) which is lower than the card can support (%d)!\n
 UNICODE_ESC
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 U\8h(
 Unable to create the DLSS feature : error code = 0x%08x, info: %s
 Unable to enumerate any DX11 adapters (hr = 0x%08X), this system may not support DX11.\n
@@ -1582,7 +1569,6 @@ Unknown encoding %d for LogLuv compression
 Unsatisfied dependency at present time = death!
 Unsupported PSD color mode!\n
 UpdateExternalTexture called on unknown external texture '%s'\n
-UpscalerType_t
 Usage: %s <window_name>
 UseSlangForDX11
 VB Size: %s (Count: %d)\n

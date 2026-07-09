@@ -1,0 +1,3 @@
+class CFootstepControl_API
+{
+};

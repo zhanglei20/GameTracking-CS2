@@ -19083,6 +19083,7 @@ A\rjW
 A\v?event@QGraphicsObject@@MEAA_NPEAVQEvent@@@Z
 AbW_
 AbandonAnyModalBrowse
+Abort
 AbortDrag
 AbortPinPlacement
 Aborted
@@ -19761,7 +19762,6 @@ Associates a semantic identifier with an animgraph2 used by this model.
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
 Async Simulate Particles
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 At least one edge must be selected.
 At least one face must be selected.
 At least two vertices must be selected.
@@ -20148,7 +20148,6 @@ BaselineExposure
 BaselineNoise
 BaselineSharpness
 Basic OCSP Response
-Basic string support.
 Basis Type: %s\n
 BasisNormal
 BasisOrigin
@@ -20744,7 +20743,6 @@ CLightingControlRig
 CLightingControlRig::DestroyBackgroundMap
 CLightingControlRig::ReloadLightRigConfig
 CLightingPreviewPopupUI
-CLocalExposureLayer
 CMAC
 CMAC_INIT
 CMB!
@@ -21366,7 +21364,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -21395,7 +21392,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -21472,7 +21468,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -21851,7 +21846,6 @@ CQWidgetDebugHighlight
 CQWidgetDebugger
 CQWorldRendererBuilderWidget
 CR&C
-CREATE_CHILD_CURSOR_OUTFLOW
 CRL Sign
 CRL has expired
 CRL is not yet valid
@@ -23338,8 +23332,6 @@ CycleSelectionTopLevelModes
 CycleViewDistance
 CycleViews
 Cylinder
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 Cylinder: %s
 D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D"bu
@@ -24638,7 +24630,6 @@ Empty Entity
 Empty MeshID.
 Empty entity of class type "%s"
 Empty variable names are not allowed.
-Enable
 Enable / Disable
 Enable / Disable Tiles
 Enable Advanced Parameters
@@ -24748,7 +24739,6 @@ EntityName
 EntityOutputWidget
 EntityReportDialog
 Entry Clearance
-Enum support.
 EnumArray
 EnumWindows
 EnvironmentMaps
@@ -26452,7 +26442,6 @@ If enabled the prefab will not be baked into the parent map during map compile, 
 If enabled writes the modified normals into a separate vertex stream to be used by the shader. Otherwise modifies meshes original normals.
 If enabled, any entity target names within the prefab will have a prefix applied to ensure they are unique. This prevents any issues with entities in two different prefabs having name collisions.
 If enabled, double clicking on the marker will re-orient the camera in addition to setting the workplane.
-If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 If enabled, there will be a point_prefab entity at runtime representing this prefab as an EntityIO target (requires Relays and a Target Name). Map Relay connections will not be baked, but will instead route through this entity.
 If enabled, transforming this node will transform the target node such that the relative offset is maintained, essentially locking the transform of the two objects together regardless of which one is edited. Normally when this is disabled, moving this object will not affect the target node and will instead update the pin offset values.
 If set, considers failure cases to be errors. Failures are warnings by default.
@@ -26992,7 +26981,6 @@ L5^x|S
 L<L7
 L@4T
 LAM\rhaI)|pL<
-LAYER_TYPE_LOCAL_EXPOSURE
 LBN6
 LESS
 LESS_OR_EQUAL
@@ -27394,7 +27382,6 @@ MEMORY_LOCK
 MEM_READ
 MEM_WRITE
 MENU
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MEntitySubclassScopeFile
 MFgdHelper
 MGF1
@@ -27407,8 +27394,6 @@ MIME-Version: 1.0%s
 MIXED: Some prefab instances are dynamic, some are not! %1
 MIsStringAndTokenType
 MKV3TransferName
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MModelGameData
 MMouse
 MMouseDoubleClick
@@ -29453,7 +29438,6 @@ PEM_read_bio_Parameters
 PEM_write
 PEM_write_bio
 PF\n%d %d\n-1.000000\n
-PF_TYPE_CONTROL_POINT_IS_SET
 PGr]
 PHAG2
 PHhn}Y
@@ -29700,7 +29684,6 @@ Parent Node
 Parent Node Name
 Parent Reaction
 Parent Rotation
-Parent VData
 Parent bone '%s' specified by define bone could not be found.
 Parent map entities will see this Input, a corresponding Output will be sent inside the Prefab.
 Parent node type is not a valid node type for this node
@@ -30066,7 +30049,6 @@ PostMessageA
 PostProcessDummy
 PostProcessingEnabled
 PostProcessingEnabledChanged
-PostProcessingLocalExposureParameters_t
 PosterSettings
 Posture
 Power scale for applying the supplemental ambient occlusion map.
@@ -30186,7 +30168,6 @@ Probe Type
 Proc-Type: 
 Proc-Type: 4,
 Procedural
-Proceed Immediately
 Process Selector
 ProcessIncrementKey
 ProcessNotifySelectionChanged
@@ -30243,7 +30224,6 @@ Pulled hierarchy keys from transform
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
 PulseCreateAndLinkAsset
-PulseDurationStringFormat_t
 PulseLinkAsset
 Push Out
 Push Pull
@@ -30484,7 +30464,6 @@ RE!r
 RE4\t
 READ_N
 REAL
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 REQUEST_CERTIFICATE
 REQUEST_VERIFY
 RFC 3779 resource not subset of parent's resources
@@ -32855,7 +32834,6 @@ Static prefab instances. %1
 StaticOverlay Selection Changed
 StaticPointManipulator
 Stats at %d samples:\n
-Status
 Status Effect Params CP ( Status Effect Flags / None / None )
 Status...
 Steam Audio
@@ -33013,7 +32991,6 @@ SyncFileToHeadRevision
 SyncToHeadRevision - SyncFile failed: %s\n
 Synced %d file(s).
 Synced %d file(s).  %d file(s) were not synced!
-Synchronous - Wait for this node to fully complete before proceeding.
 Syncing %d file(s).  Please wait...
 SystemFunction036
 T"?IsZero@FbxVector4@fbxsdk@@QEBA_NH@Z
@@ -33885,7 +33862,6 @@ Triangle batch size.
 Triangle count of hammer geometry
 Tried to load a polymorphic pointer with no '%s' key
 Tried to rename from '%s' to '%s', but '%s' already exists\n
-Trigger
 TriggerOnce
 Tris
 Truncated header.
@@ -33965,12 +33941,6 @@ UNDEF
 UNIV
 UNIVERSALSTRING
 UPAXIS
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 UR Offset in FLU local space
 UR control point number
 URI:%s
@@ -34258,7 +34228,6 @@ Updating procedural objects
 Updating raytrace environment
 Updating references to file: %s\n
 Updating window size to preserve settings for maximized window:\n
-UpscalerType_t
 Use Best Size Match
 Use Block Solver
 Use Child Offset Attachment
@@ -34291,7 +34260,6 @@ Use RenderMesh List
 Use UV Island
 Use UV2 for Lightmap Charting
 Use VPhysics
-Use World Space Up
 Use a higher quality solver for this joint. Improves accuracy / stiffness but increases CPU cost.
 Use additive blending
 Use distance to an infinite line instead of a finite line segment
@@ -34359,7 +34327,6 @@ V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VALVe SMD
 VConsole
-VDATA
 VDPr
 VData:%s
 VDataChoice
@@ -34795,8 +34762,6 @@ Whether to continue executing
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
 Which solver to use for positioning the IK chain.  Required.
-While False
-While True
 WhiteLevel
 WhiteOnBlack
 WhitePoint
@@ -36155,7 +36120,6 @@ animationTime
 animation_fit_lifetime
 animations
 animflags
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
@@ -36390,6 +36354,7 @@ b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
 b\vP\n0
 b\vp\nP
 b]jY
+b_movement_type_restart
 b_override_timing
 backFacingAngle
 back_solve_influence_threshold
@@ -37913,11 +37878,9 @@ e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 e+3E
 eBeL
 eC z
-eCenteredCylinder
 eContent
 eContentType
 eGenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!\n
-eGroundCylinder
 eN.d\tA
 eNULL
 eODj
@@ -40742,7 +40705,6 @@ m_AdditionalRelatedFiles
 m_ArgumentDependencies
 m_BaseClasses
 m_Bindings
-m_BoneMergeLinks
 m_ChildResourceList
 m_ChoiceGroups
 m_ChoiceValues
@@ -40765,10 +40727,13 @@ m_DefaultTargetSettings.m_Bone
 m_DefaultTargetSettings.m_TargetSource
 m_Deformers
 m_DeltaTransform
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
 m_DrawCalls
 m_ElementPath
 m_EndEffectorFixedOffsetAttachment
 m_EnumArray
+m_EvaluateConnection
 m_ExtraStreams
 m_Format
 m_HelpContextName
@@ -40792,7 +40757,6 @@ m_MaterialOverrideTables
 m_MaterialTintTables
 m_MeshResourceName
 m_MetaData
-m_Metadata
 m_NavAreas.Count() < CNavMarkerData::MAX_ELEMENTS
 m_Normals
 m_ParameterType
@@ -40810,7 +40774,6 @@ m_ResourceNames
 m_RootRelativePath
 m_SearchPath
 m_SearchableUserData
-m_SequencePoint
 m_Special
 m_SpecialDependencies
 m_SpecialInputDependencies
@@ -40829,8 +40792,6 @@ m_UserData
 m_WaterMaterial2
 m_WeakReferenceList
 m_attachments
-m_bAllowDefinitions
-m_bAllowReferences
 m_bAlpha
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
@@ -40847,7 +40808,6 @@ m_bFirstEvaluate
 m_bFlipFaces
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
-m_bHasLocalExposureParams
 m_bHiddenAssetFlag
 m_bHorizontalInterleaved
 m_bIsCordoning
@@ -40888,7 +40848,6 @@ m_bUseCompressedNormalTangent
 m_bUseNewPoleVectorForAxis
 m_bUseShadowFastPath
 m_bUsingLegacyDefault
-m_bWorldSpaceOrientation
 m_baseMetrics
 m_bmaxs
 m_bmins
@@ -40896,17 +40855,7 @@ m_capabilities
 m_colorSpace
 m_dstChannels
 m_eRbfType
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_fBoostLocalContrast
-m_fEmissiveFactor
-m_fHighlightOffsetEV
 m_fMoveTo
-m_fShadowOffsetEV
-m_fSigma
-m_fWaterDensity
-m_fWaterDepthBlurRadius
-m_fWaterScale
 m_fileExt
 m_flAddCurvature
 m_flAddNoise
@@ -40952,8 +40901,6 @@ m_imageProcessorArray
 m_influenceFlags
 m_inputTextureArray
 m_iszNPC
-m_localExposureParams
-m_materialGroupToken
 m_materialsValues
 m_meshFile
 m_meshList
@@ -40968,7 +40915,6 @@ m_nCP1Parent
 m_nCP2Parent
 m_nCP3Parent
 m_nCP4Parent
-m_nChildNode
 m_nClassType
 m_nClusterIndex
 m_nControlPoint0
@@ -41008,20 +40954,14 @@ m_nNumRows
 m_nOutputDimensionReduce
 m_nOutputMaxDimension
 m_nOutputMinDimension
-m_nParentHash
 m_nProbeIndex
 m_nProbeIndexSource
 m_nProbeType
 m_nReferenceID
 m_nResourceNameIndex
 m_nSelectedProbeType
-m_nSrcDrawIndex
 m_nStackDepthWhenAdded
 m_nUserData
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_nYieldToken
 m_outputClearColor
 m_outputColorSpace
@@ -41037,7 +40977,6 @@ m_rbfParameters
 m_reverbScales
 m_reverbTimes
 m_rgbColor
-m_rootBvhNodes
 m_sAnimGraphNavlinkType
 m_sHardwareModel
 m_sTemplateName
@@ -41594,7 +41533,6 @@ nCurrCol
 nCurrRow
 nDataSize > 0
 nDelayInMS
-nDenominator
 nDetailObjectFadeLevel
 nDirectionSpace
 nDistributionMode
@@ -41615,7 +41553,6 @@ nMouseButton
 nNewDesiredHeight
 nNoHitResult
 nNumSteps
-nNumerator
 nOption
 nOptionIndex
 nOriginSpace
@@ -43241,6 +43178,7 @@ scripts/npc_units.vdata
 scripts/physics_particles.vdata!%s
 scripts/population.txt
 scripts/propdata.txt
+scripts/scenes.vdata
 scripts/water_types.vdata
 scroll_widget
 scsv received when renegotiating
@@ -45671,7 +45609,6 @@ zlib compression
 zone
 zxNIjo
 zz2K
-{ item_factory = 'IntervalTimer' }
 { uninitialized }
 {5`q@roz?
 {8w1

@@ -14,4 +14,6 @@ class CPathMoverEntitySpawner : public CLogicalEntity
 	CUtlVector< CHandle< CFuncMover > > m_vecQueuedRemovals;
 	CEntityIOOutput m_OnTemplateSpawned;
 	CEntityIOOutput m_OnTemplateGroupSpawned;
+	CUtlSymbolLarge m_iszPathMoverName;
+	bool m_bPrepopulateOnSpawn;
 };

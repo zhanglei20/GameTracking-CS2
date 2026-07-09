@@ -1,3 +1,41 @@
+// MGetKV3ClassDefaults = {
+//	"m_nAnimationAlgorithm": "eInvalid",
+//	"m_nNextExternalGraphHandle": 0,
+//	"m_vecSecondarySkeletonSlotIDs":
+//	[
+//	],
+//	"m_vecSecondarySkeletons":
+//	[
+//	],
+//	"m_nSecondarySkeletonMasterCount": 0,
+//	"m_flSoundSyncTime": 0.000000,
+//	"m_nActiveIKChainMask": 0,
+//	"m_hSequence": -1,
+//	"m_flSeqStartTime": null,
+//	"m_flSeqFixedCycle": 0.000000,
+//	"m_nAnimLoopMode": "ANIM_LOOP_MODE_USE_SEQUENCE_SETTINGS",
+//	"m_flPlaybackRate": 1.000000,
+//	"m_nNotifyState": "eDoNotNotify",
+//	"m_bNetworkedAnimationInputsChanged": false,
+//	"m_bNetworkedSequenceChanged": false,
+//	"m_bLastUpdateSkipped": false,
+//	"m_bSequenceFinished": false,
+//	"m_nPrevAnimUpdateTick": null,
+//	"m_hGraphDefinitionAG2": "",
+//	"m_nServerGraphInstanceIteration": 0,
+//	"m_nServerSerializationContextIteration": 0,
+//	"m_primaryGraphId": 0,
+//	"m_vecExternalGraphIds":
+//	[
+//	],
+//	"m_vecExternalClipIds":
+//	[
+//	],
+//	"m_sAnimGraph2Identifier": "",
+//	"m_pGraphInstanceAG2": null,
+//	"m_vecExternalGraphs": null,
+//	"m_nPrevAnimationAlgorithm": "eNone"
+//}
 class CBaseAnimGraphController : public CSkeletonAnimationController
 {
 	AnimationAlgorithm_t m_nAnimationAlgorithm;
@@ -33,9 +71,7 @@ class CBaseAnimGraphController : public CSkeletonAnimationController
 	C_NetworkUtlVectorBase< ResourceId_t > m_vecExternalGraphIds;
 	C_NetworkUtlVectorBase< ResourceId_t > m_vecExternalClipIds;
 	CGlobalSymbol m_sAnimGraph2Identifier;
-	// MSaveOpsForField = "GetAnimGraph2SaveRestoreOps"
-	CNmGraphInstance* m_pGraphInstanceAG2;
-	// MSaveOpsForField = "GetExternalAnimGraphSaveRestoreOps"
-	CUtlVector< ExternalAnimGraph_t > m_vecExternalGraphs;
+	CAnimGraph2InstancePtr m_pGraphInstanceAG2;
+	CExternalAnimGraphList m_vecExternalGraphs;
 	AnimationAlgorithm_t m_nPrevAnimationAlgorithm;
 };

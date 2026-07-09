@@ -2547,7 +2547,6 @@ SmallerGrid
 Snap To Grid
 SnapToGrid
 Space
-Status
 Status...
 Stylesheet
 SubmitClicked

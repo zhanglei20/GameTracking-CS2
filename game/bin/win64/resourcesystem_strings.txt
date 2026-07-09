@@ -69,7 +69,6 @@
 <INVALID>
 <non-RTTI type>
 ?~~~~~~~~~~~~~~~~
-AABBWS_t
 An attempt was made to create a resource manifest with debug name "%s" while the resource system was shutting down.\n
 AsyncPreFinalize
 AsyncProcess
@@ -139,7 +138,6 @@ CVDataLocalizedToken
 CWeakHandle
 CWeakHandleVoid
 Couldn't load KV3 for resource: %s
-DEPRECATED_FIELD_AI_SCHEDULE_BITS
 DISABLED
 Deleting empty loading resource\n
 ERROR: %s resource %016llX is the wrong resource type!\n
@@ -154,8 +152,6 @@ Error loading resource "%s" (Invalid header version: %d != %d)\n
 Error loading resource "%s" file size %d > allocated buffer size %d\n
 Error loading resource manifest "%s" (No DATA block)\n
 FATAL ERROR: %s resource '%s' (%016llX) is the wrong resource type! (This is likely caused by a hash collision between the strings '%s' and '%s')\n
-FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTORWS
-FIELD_NETWORK_QUANTIZED_VECTORWS
 Failed loading resource "%s" (%s)\n
 Failed to allocate an instance of a class of type '%s'
 Failed to apply FLC data to resource '%s': %s\n

@@ -3057,7 +3057,6 @@ Katakana_Ext
 Katakana_Or_Hiragana
 Katakana_Phonetic_Extensions
 Kawi
-Keys
 Khaph
 Khar
 Khitan_Small_Script

@@ -29,7 +29,6 @@ class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 	Vector m_vecUp;
 	int32 m_nGameCodeHasMovedPlayerAfterCommand;
 	GameTime_t m_fStashGrenadeParameterWhen;
-	uint64 m_nButtonDownMaskPrev;
 	bool m_bUseFrictionStashedSpeed;
 	float32 m_flUseFrictionStashedSpeedUntilFrac;
 	float32 m_flFrictionStashedSpeed;

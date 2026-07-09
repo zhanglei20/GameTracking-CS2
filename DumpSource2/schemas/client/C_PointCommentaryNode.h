@@ -11,7 +11,6 @@ class C_PointCommentaryNode : public CBaseAnimGraph
 	int32 m_iNodeNumber;
 	int32 m_iNodeNumberMax;
 	bool m_bListenedTo;
-	// MSaveOpsForField = "GetSoundSaveRestoreOps"
 	CSoundPatch* m_sndCommentary;
 	CHandle< C_BaseEntity > m_hViewPosition;
 	// MNotSaved

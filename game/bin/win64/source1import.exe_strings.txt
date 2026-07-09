@@ -4099,7 +4099,6 @@ AssignSmoothingModeToEdges
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
 Async Simulate Particles
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attempted to add two format updaters with the same file format (%s)!\n
 Attempted to add two legacy updaters with the same file format (%s)!\n
@@ -4189,7 +4188,6 @@ BaseUnit "%s" in unit "%s" not found.\n
 BaselineExposure
 BaselineNoise
 BaselineSharpness
-Basic string support.
 BasisNormal
 BasisOrigin
 BasisU
@@ -4413,7 +4411,6 @@ CKV3MemberNameSet
 CKV3MemberNameWithStorage
 CLEAN_CONTENT
 CLEAN_GAME
-CLocalExposureLayer
 CManifestInstance
 CMapBox
 CMapCable
@@ -4570,7 +4567,6 @@ CPulseArraylib::ArrayRemoveIndex
 CPulseArraylib::ArrayRemoveInvalidElements
 CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
-CPulseBreakpointLocation
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Start
@@ -4599,7 +4595,6 @@ CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseCursorFuncs::WakeCursorsWithTag
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -4676,7 +4671,6 @@ CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -4685,7 +4679,6 @@ CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
-CREATE_CHILD_CURSOR_OUTFLOW
 CResourceArray< ModelReference_t >
 CResourceExtReference< CWeakHandle< InfoForResourceTypeCModel > >
 CResourceExtReference< CWeakHandle< InfoForResourceTypeCTextureBase > >
@@ -5622,7 +5615,6 @@ Entity: %s
 Entity: Unknown
 EntityName
 Entry Clearance
-Enum support.
 EnumArray
 Eq R%d <- R%d == R%d
 Error (problem that prevents task success)
@@ -6263,7 +6255,6 @@ If enabled the prefab will be loaded when it is the child of another prefab, if 
 If enabled the prefab will not be baked into the parent map during map compile, but instead will be dynamically loaded in the game. This requires the target map to be compiled separately. Additionally this requires support for dynamic loading of maps by the game, which may not be supported by all games and game systems. Do not use without checking to see if this is fully supported by the game you are working on.
 If enabled, any entity target names within the prefab will have a prefix applied to ensure they are unique. This prevents any issues with entities in two different prefabs having name collisions.
 If enabled, double clicking on the marker will re-orient the camera in addition to setting the workplane.
-If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 If enabled, there will be a point_prefab entity at runtime representing this prefab as an EntityIO target (requires Relays and a Target Name). Map Relay connections will not be baked, but will instead route through this entity.
 If enabled, transforming this node will transform the target node such that the relative offset is maintained, essentially locking the transform of the two objects together regardless of which one is edited. Normally when this is disabled, moving this object will not affect the target node and will instead update the pin offset values.
 If set, the contents of the prefab will not be included in visibility calculations.
@@ -6478,7 +6469,6 @@ Kochanek-Bartels Late
 L<L7
 L>Pause
 L@can't solve quadratic for light %f %f\n
-LAYER_TYPE_LOCAL_EXPOSURE
 LESS
 LESS_OR_EQUAL
 LINEAR
@@ -6673,8 +6663,6 @@ MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
 MKV3TransferName
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MParticleAdvancedField
 MParticleDomainTag
 MParticleInputOptional
@@ -7142,7 +7130,6 @@ PD5@
 PDo@
 PFP@
 PF\n%d %d\n-1.000000\n
-PF_TYPE_CONTROL_POINT_IS_SET
 PHY@
 PI8@
 PITCH_HIGH
@@ -7190,7 +7177,6 @@ Parameter '%s' corresponds to an entity target name, but is sent to input '%s' o
 Parameters
 ParametersKV3
 Parent Map: %s\n
-Parent VData
 ParseEXRHeaderFromMemory failed! Error message: %s\n
 ParseEntity
 ParseEntity: EOF without closing brace
@@ -7353,7 +7339,6 @@ PostLoadFromFile
 PostMapLoadCommands
 PostProcessDummy
 PostProcessingEnabled
-PostProcessingLocalExposureParameters_t
 PosterSettings
 Ppn@
 Pqm@
@@ -7390,7 +7375,6 @@ Probe Index
 Probe Radius
 Probe Type
 Procedural
-Proceed Immediately
 Process Selector
 ProcessIncludes: can't open "%s" in path "%s"\n
 ProcessSubrect: can't open "%s" in path "%s"\n
@@ -7427,7 +7411,6 @@ Pug@
 Pull towards control point
 Pulse domain which enables particle content to query leaf code to introspect game state.
 Pulse: %s 
-PulseDurationStringFormat_t
 PulseType
 Pvf@
 Pwa@
@@ -8151,7 +8134,6 @@ SurfacePropPicker()
 Svpcf66
 Symbol table:  %d entries %llu bytes\n
 SyncSource1ChangelistExceptions
-Synchronous - Wait for this node to fully complete before proceeding.
 Syncing source 1 mod files %s to head revision.\n
 Syncing source 1 mod files %s@%s\n
 SystemAttributes
@@ -8582,7 +8564,6 @@ Use Normals From Base Polygons
 Use Particle Count as Density Scale
 Use Radius Culling
 Use VPhysics
-Use World Space Up
 Use additive blending
 Use distance to an infinite line instead of a finite line segment
 Use max-luminance blending for sequence 0
@@ -8604,7 +8585,6 @@ Using 16-bit blend indices\n
 Using deprecated 'base=prefix' syntax for adding a prefix to a base class
 Using worldspawn entity targetname of 'worldspawn' will not have entity name fixup and might produce confusing results!\n
 UsingAnimgraph
-VDATA
 VData:%s
 VDataChoice( %s )
 VDataChoice( %s!%s )
@@ -8769,8 +8749,6 @@ When enabled, the normals of the final surface will use the normals from the bas
 Whether to continue executing
 Whether value has ALL of the specified flags set (it may have other flags.)
 Whether value has ANY of the specified flags set (it may have other flags.)
-While False
-While True
 WhiteLevel
 WhiteOnBlack
 WhitePoint
@@ -9403,7 +9381,6 @@ animationTime
 animation_fit_lifetime
 animations
 animflags
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
@@ -11150,8 +11127,11 @@ m_CurveSegmentMidpointPositions
 m_DefaultKV3
 m_Deformers
 m_DeltaTransform
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
 m_DrawCalls
 m_ElementPath
+m_EvaluateConnection
 m_ExtraStreams
 m_HelpContextName
 m_Helpers
@@ -11169,7 +11149,6 @@ m_MaterialOverrideTables
 m_MaterialTintTables
 m_MeshResourceName
 m_MetaData
-m_Metadata
 m_NavAreas.Count() < CNavMarkerData::MAX_ELEMENTS
 m_Normals
 m_Parts
@@ -11178,15 +11157,12 @@ m_Positions
 m_ReferencedMeshSnapshots
 m_ReplacementTable
 m_ResourceNames
-m_SequencePoint
 m_Stops
 m_Streams
 m_TagValue
 m_TargetType
 m_Texcoords
 m_TintTable
-m_bAllowDefinitions
-m_bAllowReferences
 m_bAlpha
 m_bChildCursorsShouldInherit
 m_bColor
@@ -11197,7 +11173,6 @@ m_bCordonsVisible
 m_bCustom
 m_bFirstEvaluate
 m_bFlipFaces
-m_bHasLocalExposureParams
 m_bHiddenAssetFlag
 m_bHorizontalInterleaved
 m_bIsCordoning
@@ -11228,20 +11203,12 @@ m_bShowCompressedIR
 m_bStiff
 m_bTriangulate
 m_bUsingLegacyDefault
-m_bWorldSpaceOrientation
 m_baseMetrics
 m_bmaxs
 m_bmins
 m_colorSpace
 m_dstChannels
-m_fBoostLocalContrast
-m_fHighlightOffsetEV
 m_fMoveTo
-m_fShadowOffsetEV
-m_fSigma
-m_fWaterDensity
-m_fWaterDepthBlurRadius
-m_fWaterScale
 m_fileExt
 m_flAddCurvature
 m_flAddNoise
@@ -11283,7 +11250,6 @@ m_iValue
 m_imageProcessorArray
 m_inputTextureArray
 m_iszNPC
-m_localExposureParams
 m_materialsValues
 m_mipAlgorithm
 m_n3DSliceCount
@@ -11648,7 +11614,6 @@ nCompressedSize == nUncompressedSize
 nCoordinateSpace
 nCountMax
 nCountMin
-nDenominator
 nDetailObjectFadeLevel
 nDirectionSpace
 nDistributionMode
@@ -11659,7 +11624,6 @@ nLayoffState
 nLodLevel
 nMaxElements
 nNoHitResult
-nNumerator
 nOriginSpace
 nPathSpace
 nPickMode
@@ -13231,7 +13195,6 @@ z>AlignedByteArray not properly aligned\n
 z\tV_sind
 zero_value
 zip_line_node
-{ item_factory = 'IntervalTimer' }
 {Hammer node %d} 
 {images}
 |Binvalid_hitbox

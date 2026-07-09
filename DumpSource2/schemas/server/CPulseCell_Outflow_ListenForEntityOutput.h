@@ -1,13 +1,19 @@
 // MGetKV3ClassDefaults = {
 //	"_class": "CPulseCell_Outflow_ListenForEntityOutput",
 //	"m_nEditorNodeID": -1,
-//	"m_OnFired":
+//	"m_BaseFlow_OnAfterCancel":
 //	{
 //		"m_SourceOutflowName": "",
 //		"m_nDestChunk": -1,
 //		"m_nInstruction": -1
 //	},
-//	"m_OnCanceled":
+//	"m_BaseFlow_WhileActive":
+//	{
+//		"m_SourceOutflowName": "",
+//		"m_nDestChunk": -1,
+//		"m_nInstruction": -1
+//	},
+//	"m_OnFired":
 //	{
 //		"m_SourceOutflowName": "",
 //		"m_nDestChunk": -1,
@@ -24,7 +30,6 @@
 class CPulseCell_Outflow_ListenForEntityOutput : public CPulseCell_BaseYieldingInflow
 {
 	SignatureOutflow_Resume m_OnFired;
-	CPulse_ResumePoint m_OnCanceled;
 	CGlobalSymbol m_strEntityOutput;
 	// MPropertyDescription = "Optional output value to match if applicable. Leave empty to match any possible value for the output param."
 	CUtlString m_strEntityOutputParam;

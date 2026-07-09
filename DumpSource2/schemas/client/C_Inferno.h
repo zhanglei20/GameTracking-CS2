@@ -6,8 +6,8 @@ class C_Inferno : public C_BaseModelEntity
 	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoOutlinePointsSnapshot;
 	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoClimbingOutlinePointsSnapshot;
 	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoDecalsSnapshot;
-	Vector[64] m_firePositions;
-	Vector[64] m_fireParentPositions;
+	VectorWS[64] m_firePositions;
+	VectorWS[64] m_fireParentPositions;
 	bool[64] m_bFireIsBurning;
 	Vector[64] m_BurnNormal;
 	int32 m_fireCount;
@@ -21,7 +21,7 @@ class C_Inferno : public C_BaseModelEntity
 	int32 m_nlosperiod;
 	float32 m_maxFireHalfWidth;
 	float32 m_maxFireHeight;
-	Vector m_minBounds;
-	Vector m_maxBounds;
+	VectorWS m_minBounds;
+	VectorWS m_maxBounds;
 	float32 m_flLastGrassBurnThink;
 };

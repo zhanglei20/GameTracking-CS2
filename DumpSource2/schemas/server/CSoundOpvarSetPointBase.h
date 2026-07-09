@@ -4,7 +4,7 @@ class CSoundOpvarSetPointBase : public CBaseEntity
 	CEntityHandle m_hSource;
 	CUtlSymbolLarge m_iszSourceEntityName;
 	// MNotSaved
-	Vector m_vLastPosition;
+	VectorWS m_vLastPosition;
 	float32 m_flRefreshTime;
 	CUtlSymbolLarge m_iszStackName;
 	CUtlSymbolLarge m_iszOperatorName;

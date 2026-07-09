@@ -181,8 +181,6 @@
 //	"m_flDebuggerBrokenMarkerSize": 18.000000,
 //	"m_DebuggerBreakpointImg": "tools/images/pulse_editor/debugger_breakpoint.png",
 //	"m_DebuggerBreakpointDisabledImg": "tools/images/pulse_editor/debugger_breakpoint_disabled.png",
-//	"m_flDebuggerBreakpointOffset": 2.000000,
-//	"m_flDebuggerBreakpointSize": 18.000000,
 //	"m_flYieldedCursorStackOffset": 8.000000,
 //	"m_GraphInstanceImg": "tools/images/pulse_editor/graph_instance.png",
 //	"m_flRecentExecTimeoutSec": 10.000000,
@@ -380,10 +378,6 @@ class CPulseEditorSettings
 	float32 m_flDebuggerBrokenMarkerSize;
 	CUtlString m_DebuggerBreakpointImg;
 	CUtlString m_DebuggerBreakpointDisabledImg;
-	// MPropertyAttributeRange = "0 32"
-	float32 m_flDebuggerBreakpointOffset;
-	// MPropertyAttributeRange = "0 32"
-	float32 m_flDebuggerBreakpointSize;
 	// MPropertyAttributeRange = "0 32"
 	float32 m_flYieldedCursorStackOffset;
 	CUtlString m_GraphInstanceImg;

@@ -9,11 +9,11 @@ class C_BasePropDoor : public C_DynamicProp
 	// MNotSaved
 	bool m_bNoNPCs;
 	// MNotSaved
-	Vector m_closedPosition;
+	VectorWS m_closedPosition;
 	// MNotSaved
 	QAngle m_closedAngles;
 	// MNotSaved
 	CHandle< C_BasePropDoor > m_hMaster;
 	// MNotSaved
-	Vector m_vWhereToSetLightingOrigin;
+	VectorWS m_vWhereToSetLightingOrigin;
 };

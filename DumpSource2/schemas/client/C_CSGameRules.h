@@ -63,8 +63,8 @@ class C_CSGameRules : public C_TeamplayRules
 	int32[30] m_iMatchStats_PlayersAlive_T;
 	float32[32] m_TeamRespawnWaveTimes;
 	GameTime_t[32] m_flNextRespawnWave;
-	Vector m_vMinimapMins;
-	Vector m_vMinimapMaxs;
+	VectorWS m_vMinimapMins;
+	VectorWS m_vMinimapMaxs;
 	float32[8] m_MinimapVerticalSectionHeights;
 	uint64 m_ullLocalMatchID;
 	int32[10] m_nEndMatchMapGroupVoteTypes;

@@ -3063,7 +3063,6 @@ ISSUING_DIST_POINT
 ITU-T
 IV block
 I\tHA\t981G'dc
-If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 Ij)s
 Ik\f`dub`D
 Images (%u):\n
@@ -3204,7 +3203,6 @@ MEDIUM
 MEMORY_LOCK
 MEM_READ
 MEM_WRITE
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MGF1
 MGrB
 MIC-CLEAR
@@ -3894,7 +3892,6 @@ RE!r
 RE4\t
 READ_N
 REAL
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 REQUEST_CERTIFICATE
 REQUEST_VERIFY
 RFC 3779 resource not subset of parent's resources
@@ -4380,12 +4377,6 @@ UI_set_result
 UNDEF
 UNIV
 UNIVERSALSTRING
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 URI:%s
 USERNOTICE
 UTCTIME
@@ -4422,9 +4413,7 @@ Unspecified
 Unsupported extension feature
 Unsupported texture version: %d
 Unused
-UpscalerType_t
 Usage: resourceinfo [-i <resource file name(s)>] [-v] [-q] [-diff_format]\n
-Use World Space Up
 Ut]<E
 Uv1t
 Uz_G3=
@@ -7181,12 +7170,9 @@ m_SubassetDefinitions
 m_SubassetReferences
 m_UserData
 m_WeakReferenceList
-m_bAllowDefinitions
-m_bAllowReferences
 m_bFileExists
 m_bIsGameFile
 m_bOptional
-m_bWorldSpaceOrientation
 m_fMoveTo
 m_nFileCRC
 m_nFingerprint

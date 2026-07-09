@@ -1,11 +1,11 @@
 class C_BaseCSGrenadeProjectile : public C_BaseGrenade
 {
-	Vector m_vInitialPosition;
+	VectorWS m_vInitialPosition;
 	Vector m_vInitialVelocity;
 	int32 m_nBounces;
 	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_nExplodeEffectIndex;
 	int32 m_nExplodeEffectTickBegin;
-	Vector m_vecExplodeEffectOrigin;
+	VectorWS m_vecExplodeEffectOrigin;
 	GameTime_t m_flSpawnTime;
 	Vector vecLastTrailLinePos;
 	GameTime_t flNextTrailLineTime;

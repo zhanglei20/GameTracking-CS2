@@ -241,8 +241,6 @@ Cannot deallocate abstract class
 Class does not allow allocation from its schema binding
 Class does not allow deallocation from its schema binding
 Control block error for '%s'\n
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 D16_UNORM
 D24_UNORM_S8_UINT
 D32_FLOAT
@@ -283,7 +281,6 @@ LoadModelSyncNoExtrefs - Model is incompatible version\n
 MATERIAL_ATTRIBUTE:
 MAlternateSemanticName
 MAtomicTransfersAsPlainString
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MFgdHelper
 MIsStringAndTokenType
 MKV3TransferName
@@ -387,7 +384,6 @@ R8_SNORM
 R8_TYPELESS
 R8_UNORM
 R9G9B9E5_SHAREDEXP
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 RESOURCE_TYPE_MODEL
 RESOURCE_TYPE_MORPHSET_INTERNAL
 RESOURCE_TYPE_RENDERMESH_INTERNAL
@@ -408,17 +404,10 @@ Tried to load resource reference '%s' from a value without a resource reference 
 Trying to override a material with an invalid draw call index\n
 Trying to override the same draw call with two different materials!\nOnly the last override will be set!\n
 TypeManager
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 USAGE: print_model_bind_pose <vmdl_name> [bone_name]\n
 Unable to load tools vb block (%s: %d)\n
 Unable to read resource file %s!\n
 Untested code path - Morph layers without morphset/flex rules. Will try to map model flex controllers directly to cloth morph layers
-UpscalerType_t
 VModelError
 VectorAligned
 VertexElementAnnotation
@@ -457,8 +446,6 @@ compressedtangentframe
 curvature
 data_block
 distancefield_data_block
-eCenteredCylinder
-eGroundCylinder
 embedded_animation
 embedded_distancefield
 embedded_meshes
@@ -478,7 +465,6 @@ interactive
 legacy_models_supported
 lowprecisionuv
 lowprecisionuv1
-m_BoneMergeLinks
 m_Format
 m_Stops
 m_attachments
@@ -499,32 +485,20 @@ m_bUseShadowFastPath
 m_bounds
 m_distanceFields
 m_eRbfType
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_fEmissiveFactor
 m_flGridCellSize
 m_flMaxQuantizedDistance
 m_flSurfaceBias
 m_hitboxsets
 m_influenceFlags
-m_materialGroupToken
 m_morphSet
 m_nBodyGroupChoice
 m_nBodyGroupIndex
-m_nChildNode
 m_nParentBoneNameHash
-m_nParentHash
 m_nResX
 m_nResY
 m_nResZ
-m_nSrcDrawIndex
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_quantizedData
 m_rbfParameters
-m_rootBvhNodes
 materialgroup_driven_morph_list
 materialgroup_name
 materials/tools/show_skeleton.vmat

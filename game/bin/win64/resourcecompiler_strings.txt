@@ -22029,7 +22029,6 @@ Activate %s
 Activation Conditions
 Activation Distance
 Activator
-Active
 Active By Default
 Active Motor
 Active Motor Index
@@ -22065,7 +22064,6 @@ Add World Collision Radius
 Add a bone to the bindpose skeleton
 Add a hold to shorter animations in the blend to match frame counts on all blends
 Add a voronoi plane mesh primitive.
-Add an additional local space offset to the end effector to use for aiming the lookat
 Add box mesh primitive.
 Add flags to the given value.
 Add node is missing a child.  Will use t-pose by default
@@ -22125,7 +22123,6 @@ After the node completes its work and the original cursor is killed, a new curso
 After the real remainder, how many additional digits should we continue to append to create additional visual movement?
 Ag*g*
 AggregateRenderMesh
-AggregateVertexEmissiveStreamOnDiskData_t
 Aggregated %i %s meshes into %i AggregateSceneObjects (%i fragments) [%i compression tweaks]\n
 Aggregation
 Aggressive
@@ -22310,7 +22307,6 @@ AnimForceMorphValueRange [%s]
 AnimFrame
 AnimGameplayTiming
 AnimGesture
-AnimGraph
 AnimGraph %s does not have a model.  AnimGraphs require a model to be set through the editor so they can be compiled\n
 AnimGraph %s references invalid file %s\n
 AnimGraph %s references missing file %s\n
@@ -22538,7 +22534,6 @@ Associates a semantic identifier with an animgraph2 used by this model.
 Async Call Method (Child Cursor) C%d:I%d
 Async Outflow (Child Cursor) C%d:I%d
 Async Simulate Particles
-Asynchronous - This node executes independently using a new Cursor. Formerly 'Fire and Forget'. Equivalent to scheduling using an additional 'Fire Child Cursors' node.
 AtlasToVolumeTextureConversion(3537): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attach Entity Scope
 Attach Location Name
@@ -22930,7 +22925,6 @@ BaselineExposure
 BaselineNoise
 BaselineSharpness
 Basic OCSP Response
-Basic string support.
 Basis Type: %s\n
 Bass Freq
 Bass Mono
@@ -22939,6 +22933,7 @@ BcT`
 Bd]U
 Be careful with looping animations!
 BeenSimplified
+Begin
 Begin Sequence
 Begin testing a condition composed of Observable values. Continues checking until canceled.
 Begin testing a condition composed of Observable variable references. Continues checking until true.
@@ -23381,46 +23376,7 @@ CAnimVariant
 CAssociateResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!\n
 CAssociateResourceBlockLoader::LoadInternal: Skipping compile of %s\n
 CAttachmentNameSymbolWithStorage
-CAudioAmpNodeDesc
-CAudioAutoFilterNodeDesc
-CAudioBlendDesc
-CAudioBoxverb2NodeDesc
-CAudioBoxverbNodeDesc
-CAudioConvolutionNodeDesc
-CAudioDelayNodeDesc
-CAudioDiffusorNodeDesc
-CAudioDualCompressorNodeDesc
-CAudioDynamics3BandNodeDesc
-CAudioDynamicsCompressorNodeDesc
-CAudioDynamicsLimiterNodeDesc
-CAudioDynamicsNodeDesc
-CAudioEQ8NodeDesc
-CAudioEffectChainNodeDesc
-CAudioEnvelopeNodeDesc
-CAudioFilterNodeDesc
-CAudioFlangerNodeDesc
-CAudioFreeverbNodeDesc
-CAudioMeterNodeDesc
-CAudioMixerNodeDesc
-CAudioModDelayNodeDesc
-CAudioOscNodeDesc
-CAudioOutputNodeDesc
-CAudioPannerNodeDesc
-CAudioPitchShiftNodeDesc
-CAudioPlateverbNodeDesc
-CAudioProcessorNodeDesc
-CAudioShaperNodeDesc
-CAudioSourceNodeDesc
 CAudioSourceWaveData::ParseDataChunk
-CAudioSplitterBlendDesc
-CAudioSplitterNodeDesc
-CAudioSteamAudioPathingNodeDesc
-CAudioSteamAudioSourceNodeDesc
-CAudioSubgraphNodeDesc
-CAudioSubgraphSwitchNodeDesc
-CAudioTrackNodeDesc
-CAudioUtilityNodeDesc
-CAudioVocoderNodeDesc
 CBI]6
 CBaseHelper
 CBaseKV3DataWithFGDClass
@@ -23434,7 +23390,6 @@ CBasePulseInparamPort
 CBasePulsePort::CMD_RESET_CANVAS_VISIBILITY
 CBasePulsePort::CMD_TOGGLE_CANVAS_VISIBILITY
 CBaseToolsModelInstance::CreateReversedIBs(4586): 
-CBlendVsndsToImpulseResponseNodeDesc
 CBodyGroupChoiceSymbolWithStorage
 CBufferString
 CBuilderEntityKeys
@@ -23509,16 +23464,6 @@ CCompressedStaticVector2D
 CCompressedStaticVector3
 CCompressedStaticVector4D
 CComputeBakedShadowAssignment::IncrementalUpdate(), C:\buildworker\csgo_rel_win64\build\src\mapdoclib\bakedshadowassignment.cpp:280
-CControlAutomaticNodeDesc
-CControlCrossfadeNodeDesc
-CControlCurveNodeDesc
-CControlInputArrayNodeDesc
-CControlInputNodeDesc
-CControlListenerNodeDesc
-CControlMeterNodeDesc
-CControlOutputNodeDesc
-CControlRemapNodeDesc
-CControlStackInputNodeDesc
 CCrypto::GenerateSHA256Digest
 CCrypto::HexDecode
 CCrypto::RSASign
@@ -23540,7 +23485,6 @@ CDataModel::Unserialize
 CDeformableSurfaceRemeshingContext - added %u func_deformable_density volumes\n
 CDeformableSurfaceRemeshingContext - checking %s against %u func_deformable_density volumes\n
 CDeformableSurfaceRemeshingContext::AddMeshForDensityModifier
-CDelayImpulseResponseNodeDesc
 CDependencyGraph::Cleanup
 CDependencyGraph::FindAttrNode
 CDependencyGraph::Reset
@@ -23593,7 +23537,6 @@ CERTIFICATE PAIR
 CERTIFICATE REQUEST
 CERTIFICATEPOLICIES
 CEdgeSelectionSetDataElement
-CEffectNameInputNodeDesc
 CEntityIndex
 CEntityNameString
 CFALayout
@@ -23625,7 +23568,6 @@ CIPulseInstanceLoadAPI
 CIconHelper::SetMaterialByName
 CImagePlaneNode
 CImagePlaneNode::RebuildRenderBuffers(357): 
-CImpulseResponseInputNodeDesc
 CIsosurfaceRayGrid pooled allocator
 CKV3MemberNameSet
 CKV3MemberNameWithStorage
@@ -23638,11 +23580,9 @@ CLIENT_HELLO
 CLIENT_MASTER_KEY
 CLNT
 CLOSECAPTION
-CLocalExposureLayer
 CMAC
 CMAC_INIT
 CMB!
-CMD_SUBMIX_EXTRACTCONTAINER
 CMLL_T4_INIT_KEY
 CMS routines
 CMS_ADD1_SIGNINGTIME
@@ -23850,11 +23790,6 @@ CMaterialSampler::AllocateVertexBuffers(176):
 CMaterialSampler::DrawMaterialSamplePoints(317): 
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)\n
 CMesh Cannot create packed input layout, too many blend weights per vertex %d, max %d\n
-CMixAudioSource
-CMixControlMaxNodeDesc
-CMixControlTransientInputDesc
-CMixEvelopeTriggerDesc
-CMixGroupBoxDesc
 CMixProcessor
 CMixSubmixTrack
 CModelAnimGraph2Identifier
@@ -24196,14 +24131,11 @@ CModelPreviewAttachedModel
 CMotionTransform
 CNavArea::PostLoad: Corrupt navigation data. Cannot connect Navigation Areas.\n
 CNavArea::PostLoad: Corrupt navigation ladder data. Cannot connect Navigation Areas.\n
-CNavAttribute
-CNavFlags
 CNavGenParams - Nav mesh requests project default generation parameters but actual parameters\n  used during construction differ from defaults. Please re-export the map.\n
 CNavMesh::AddNavArea - Adding nav area to mesh with no grid extents defined.
 CNavMesh::CreateArea
 CNavMesh::GetGroundHeight
 CNavMesh::Update
-CNavPathCost
 CNewParticleEffect::DetectChanges
 CNmChainLookatNode::CDefinition::InstantiateNode
 CNmChainLookatTask::CNmChainLookatTask
@@ -24216,9 +24148,6 @@ CNmClipDocEvent_Particle::PerformValidation
 CNmClipDocEvent_RootMotion::PerformValidation
 CNmClipDocEvent_Sound::PerformValidation
 CNmClipDocEvent_TargetWarp::PerformValidation
-CNmFloatChannelData
-CNmFloatChannelData::ChannelSettings_t
-CNmFloatChannelSet_t
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::GetCurrentGraphTimingInfo
 CNmPose::DrawDebug
@@ -24299,7 +24228,6 @@ CPulseArraylib::ArraySetCount
 CPulseArraylib::ArrayShuffle
 CPulseAttr_AnimEventOutflows
 CPulseAttr_PulseSelectorOutflowList_t
-CPulseBreakpointLocation
 CPulseCell_BaseYieldingInflow::%s
 CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
@@ -24315,7 +24243,6 @@ CPulseCell_IntervalTimer::Start
 CPulseCell_IsRequirementValid::CheckRequirement
 CPulseCell_LimitCount::CheckRequirement
 CPulseCell_LimitCount::CommitStep
-CPulseCell_Outflow_PlayDynamicVCD
 CPulseCell_PickBestOutflowSelector::ProcessSelector
 CPulseCell_Step_CallExternalMethod '%s'
 CPulseCell_Timeline::Start
@@ -24385,7 +24312,6 @@ CPulseEditableType
 CPulseEditableType::BROWSE_VARIABLE_TYPES
 CPulseEditableType::GetPrimaryTypeChoices
 CPulseEditableValue
-CPulseEnumlib
 CPulseEnumlib::AddFlags
 CPulseEnumlib::HasAllFlags
 CPulseEnumlib::HasAnyFlags
@@ -24463,7 +24389,6 @@ CPulseMathlib::VectorToWorldVector
 CPulseMathlib::WorldVectorToVector
 CPulseObservableExpression
 CPulseScriptedSequenceDataForEditor
-CPulseStringlib
 CPulseStringlib::FormatDurationStringFromSeconds
 CPulseStringlib::StringLength
 CPulseStringlib::StringsAreEqualCaseSensitive
@@ -24479,7 +24404,6 @@ CRC of "%s" (Failure: requires absolute path)\n
 CRC of "%s" (File does not exist? Err %d)\n
 CRC of "%s" (Unexpected failure %d)\n
 CRC of "%s" is 0x%08X (%lld bytes)\n
-CREATE_CHILD_CURSOR_OUTFLOW
 CRL Sign
 CRL has expired
 CRL is not yet valid
@@ -24495,9 +24419,7 @@ CRYPTO_get_ex_new_index
 CRYPTO_get_new_dynlockid
 CRYPTO_get_new_lockid
 CRYPTO_set_ex_data
-CRandomPannerControls
 CRelativeArray
-CRemapVsndToImpulseResponseNodeDesc
 CRenderMeshSimplifyParams
 CResourceCompilerContext::GenerateResourceFileBuffer
 CResourceCompilerContext::InputDependenciesUpToDate
@@ -24654,9 +24576,7 @@ CStaticLightingProcessor::BakeLighting
 CSteamAudioAmbisonicValues
 CSteamAudioBandValues
 CSteamAudioData
-CSteamAudioDirectNodeDesc
 CSteamAudioDirectNodeDesc::Compile
-CSteamAudioHybridReverbNodeDesc
 CSteamAudioHybridReverbNodeDesc::Compile
 CSteamAudioImportedProbeBoxNode
 CSteamAudioImportedProbeNode
@@ -24666,7 +24586,6 @@ CSteamAudioProbeExclusionVolume
 CSteamAudioProbeGenerationVolume
 CSteamAudioProbeNode
 CSteamAudioSignal
-CStereoDelayNodeDesc
 CStereoDelayNodeDesc::Compile
 CStoredCamera
 CStoredCameras
@@ -24985,12 +24904,9 @@ CUtlStringTokenWithStorage
 CUtlSymbol
 CUtlVectorFixedGrowable
 CUtlVectorSIMDPaddedVector
-CVAudioNodeBaseDesc
 CVClothProxyMeshOptions
-CVControlNodeBaseDesc
 CVDataCustomNode_Example
 CVDataEditorNode
-CVNodeTypeDesc
 CVcn
 CVertexListSceneObject
 CVertexSelectionSetDataElement
@@ -25004,14 +24920,7 @@ CVfxProgramData::FindOrCreateStaticComboDataInCache(4364): Error! Ref count !=0 
 CVfxStaticComboData::Decompress
 CVisibilityMeshMerger::MergeMeshes(), C:\buildworker\csgo_rel_win64\build\src\utils\resourcecompiler\mapbuilder\visdrivenclustering.cpp:613
 CVisibilityMgr
-CVoiceContainerLoopTriggerWithRandomPanner
 CVoiceContainerRandomSampler: Loaded %d grains into table Total of %lld samples, %f MB.\n
-CVoiceContainerVMixSnd
-CVoiceContainerVsndRadioButton
-CVoiceContainerVsndTrigger
-CVsndInputNodeDesc
-CVsndRadioButtonSlot
-CVsndTriggerSlot
 CW Limit
 CWeakHandle
 CWorldRendererBuilder::Build
@@ -25303,7 +25212,6 @@ Choreo Anchor Locator
 Choreo Control State
 Choreo Scene Version
 ChoreoNode
-ChoreoStrafeMode_t
 ChromaBlurRadius
 Chunk hash not found.
 Chunk%d - Appending Node %s (%s) : %s (%s)\n
@@ -25785,7 +25693,6 @@ Continue If
 Continue If Not
 Continue Playing Sound At Duration End
 Continuously reduce joint velocity and oppose gravity (Barn Door)
-Continuously retriggers a sound and optionally fades to the new instance. Sends a new Random panning value to a control input on each retrigger
 Continuously try to return to the bind-pose (Spring Loaded Door)
 Control Meter has output connected, but not input!\n
 Control Parameters
@@ -26011,8 +25918,6 @@ Cycle detected in skeleton for model "%s". Can't compile skeleton.\n
 CycleControlClipNode
 Cyclic Branch
 Cylinder
-Cylinder - Centered (SLOW PERF)
-Cylinder - Ground (SLOW PERF)
 Cylinder: %s
 D"bu
 D#D)D;D?DEDKDQDSDYDeDoD
@@ -26150,7 +26055,6 @@ DIRECTORYSTRING
 DIR_ADD
 DIR_CTRL
 DIR_LOAD
-DISABLE
 DISK
 DISPLAYTEXT
 DIST_POINT
@@ -27020,7 +26924,6 @@ EMPHASIS
 EMPHASIS\r\n
 EMPTY
 EN2 s/
-ENABLE
 ENCRYPTED
 ENCRYPTED PRIVATE KEY
 ENGINE lib
@@ -27163,8 +27066,6 @@ EVP_PKEY_verify_recover_init
 EVP_RIJNDAEL
 EVP_SignFinal
 EVP_VerifyFinal
-EVsndPlaybackMode
-EVsndTriggerMode
 EXIFIFDOffset
 EXP-DHE-DSS-DES-CBC-SHA
 EXP-DHE-RSA-DES-CBC-SHA
@@ -27679,22 +27580,18 @@ Empty import cloth
 Empty name not allowed
 Empty subgraph name in subgraph switch %s
 Empty virtual parameter detected!
-Enable
 Enable Advanced Parameters
 Enable Collision With Parent
 Enable Empty Model
-Enable Endcap
 Enable Filter
 Enable Limit
 Enable Limits
-Enable Loopcap
 Enable Phase Matching
 Enable Physics Sim
 Enable Steering Limit
 Enable Suspension Limit
 Enable Swing Limit
 Enable Twist Limit
-Enable Vsnd
 EnableSSAO
 Enabling Telemetry Level: %u\n
 Encipher Only
@@ -27725,9 +27622,7 @@ End Loop
 End Target
 End Time
 EndTime
-Endcap
 Endcap Age
-Endcap Vsnd (Stop)
 Engine2/LightmapQueries
 Engine2/RenderingPipeline
 Ensure on Nav Mesh On Finish
@@ -27767,7 +27662,6 @@ Entry point for when a variable's value has changed.
 Entry point that can be invoked from other parts of the graph, or be exposed to the public and called from outside the graph. Formerly called a 'method'
 Enum To Float Map
 Enum flags '%s' invalid value '%s'
-Enum support.
 EnumArray
 Enumeration '%s' does not have a value '%s'
 Envelope Amount
@@ -28251,7 +28145,6 @@ Fade In Time
 Fade Max Dist
 Fade Min Dist
 Fade Out
-Fade Out (sec)
 Fade Out Time
 Fade Start Distance
 Fade Time
@@ -28479,7 +28372,6 @@ FaxSubAddress
 FbxSystem
 Fconst char *__cdecl Reflection::Internal::GetFuncName<class CLODComponentUpdater>(void)
 FeAntiTunnel group is too large (%d), clamping to 16 bits\n
-FeBoneMergeLink_t
 FeEffectCompile: invalid Wind strength\n
 FeEffectCompile: unknown effect type %s\n
 FeEffectCompile: unknown effect type\n
@@ -28568,7 +28460,6 @@ Fire Public Output
 Fire at a specific entity referenced by the given handle.
 Fire at all entities with the desired name (standard Hammer behavior).
 FireAtName
-Fired
 Fires a series of child cursors at the specified times.
 Fires multiple child cursors simultaneously, and optionally waits for completion. Similar to Timeline or Parallel Branch. This will split execution into many simultaneous branches.
 First Enum
@@ -28761,7 +28652,6 @@ ForceUnweightedBindposeBonePositions
 Forced
 Format Duration String From Seconds
 Format error!
-Forward Vector Stack Parameter Name
 Forward axis may be x,y,z or empty (default is X). No other values are permitted.
 ForwardLayerOnly
 ForwardSpeedMax
@@ -28924,7 +28814,6 @@ GameFeatureSet
 GameInput
 Gameplay Identifier
 Gameplay Relevant Bones
-Gate
 Gather Geometry 
 Gathered RT Proxy Geometry from %i prop instances:\n
 General math expression for arithmetic and logic, using a c-style syntax.<br><br>Supports:<ul><li>bool, int, float, string types</li><li>basic math operators: + - * / %</li><li>boolean operators: ! || &&</li><li>comparison operators</li><li>some simple functions: pow, clamp, sin, cos, min, max</li><li>nested parenthesis</li><li>References to graph variables (by name)</li><li>References to blackboard variables (by graph_name::variable_name)</li><li>Exposing a parameter port by using a name with a dollar-sign prefix ($arg)</li><li>References to local params by using its name prefixed with an at-sign prefix (@MethodArg)</li></ul>
@@ -29082,7 +28971,6 @@ Grain Sample Count
 Graph
 Graph Event Condition
 Graph Events
-Graph IDs
 Graph Instance Img
 Graph Parameter Name
 Graph doc version isn't up to date, this should not occur as we upgrade it on load
@@ -29356,7 +29244,6 @@ HotspotPerFace
 HotspotTilingSelectionMode
 How fast joint velocity is reduced
 How frequently this will show up relative to any of the other options
-How long should the blend in/out take
 How many emitted values there should be, including start and stop.
 How many iterations this solvers hould use. 
 How much the joint tries to drive back to bind pose
@@ -29438,7 +29325,6 @@ INT_NEW_EX_DATA
 INT_RSA_VERIFY
 INT_TS_RESP_VERIFY_TOKEN
 INVALID SUBTYPE!
-INavPathCost
 INdK
 IOSRoot
 IP Address
@@ -29481,7 +29367,6 @@ If enabled the prefab will not be baked into the parent map during map compile, 
 If enabled writes the modified normals into a separate vertex stream to be used by the shader. Otherwise modifies meshes original normals.
 If enabled, any entity target names within the prefab will have a prefix applied to ensure they are unique. This prevents any issues with entities in two different prefabs having name collisions.
 If enabled, double clicking on the marker will re-orient the camera in addition to setting the workplane.
-If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model.
 If enabled, there will be a point_prefab entity at runtime representing this prefab as an EntityIO target (requires Relays and a Target Name). Map Relay connections will not be baked, but will instead route through this entity.
 If enabled, transforming this node will transform the target node such that the relative offset is maintained, essentially locking the transform of the two objects together regardless of which one is edited. Normally when this is disabled, moving this object will not affect the target node and will instead update the pin offset values.
 If left empty, will default to the owner entity of this scene, meaning that the relative position will actually be the world position
@@ -30161,7 +30046,6 @@ L<L7
 L@4T
 LAM\rhaI)|pL<
 LARGE MESH: '%s' with %u vertices.\n
-LAYER_TYPE_LOCAL_EXPOSURE
 LBN6
 LESS
 LESS_OR_EQUAL
@@ -30477,9 +30361,6 @@ Loop from a start to an end value, including ('through') that end value, divided
 Loop from a start to an end value, optionally including ('through') or excluding ('until') that end value. Equivalent to a for() loop in code.
 LoopCount
 LoopPlaybackRate
-LoopTriggerWithRandomPanner
-Loopcap
-Loopcap Vsnd (Loop)
 Looping Sequence!
 Loops over the elements in an array, optionally also provides the index.
 Low Cutoff Freq
@@ -30513,7 +30394,6 @@ MEDIUM
 MEMORY_LOCK
 MEM_READ
 MEM_WRITE
-MESH_BUFFER_USAGE_VERTEX_EMISSIVE
 MEntitySubclassScopeFile
 MFgdHelper
 MGF1
@@ -30526,8 +30406,6 @@ MIME-Version: 1.0%s
 MINUS
 MIsStringAndTokenType
 MKV3TransferName
-MM:SS with leading zeros
-MM_SS_LEADING_ZERO
 MModelGameData
 MODES
 MODULE_INIT
@@ -30814,7 +30692,6 @@ Maximum
 Maximum Degrees
 Maximum Error Percent
 Maximum Lightmap Resolution is %d in Map Properties, baking at %dx%d.
-Maximum Random Volume DB
 Maximum Size Scale
 Maximum Value
 Maximum distance at which individual parts of the prop will be visible. If 0 the setting on individual parts of the smart prop will be used.
@@ -30927,7 +30804,6 @@ Minimal Bend
 Minimum
 Minimum Degrees
 Minimum Lightmap Resolution is %d, baking at %dx%d.
-Minimum Random Volume DB
 Minimum Size Scale
 Minimum Value
 Minimum of two values (float)
@@ -31092,7 +30968,6 @@ MorphSetData_t
 MorphStereoControl
 Most active material around a probe.
 Motion Bias
-Motion Disabled
 Motion Graph %s has more than %i parameters
 Motion Item %s cannot find tag with ID %i
 Motion Matching node requires at least one metric to work
@@ -31185,29 +31060,6 @@ NAVGEN Gravity: Gravity mesh has no verts ( will only report once for this volum
 NAVGEN Gravity: No gravity meshes were provided.\n
 NAVGEN Gravity: Unable to find gravity mesh near %g %g %g ( will only report once for this volume ).\n
 NAVGEN: Cycle Detected with '%s'. See output for details.
-NAV_AREA_BOUNDARY
-NAV_AREA_CONNECTED_TO_NAV_LINK_IN
-NAV_AREA_CONNECTED_TO_NAV_LINK_OUT
-NAV_AREA_CREATED_BY_OBSTACLE_MGR
-NAV_AREA_DEFORMABLE
-NAV_AREA_DEFORMABLE_DOCK
-NAV_AREA_DOCK
-NAV_AREA_DOCKING_CANDIDATE
-NAV_AREA_EXTERNALLY_CREATED
-NAV_AREA_HAS_LADDERS
-NAV_AREA_HAS_TACTICAL_SEARCH_ANNOTATIONS
-NAV_AREA_LINK_AUTO_ADJUST
-NAV_AREA_MOVABLE
-NAV_AREA_NAV_LINK
-NAV_AREA_NAV_LINK_TERMINUS
-NAV_AREA_NONE
-NAV_AREA_SHOULD_BE_DESTROYED
-NAV_AREA_SPLIT_BY_OBSTACLE_MGR
-NAV_AREA_SPLIT_OBS_BASE_CONTAINED
-NAV_AREA_SPLIT_OBS_CONTAINED
-NAV_AREA_UNDER_WATER
-NAV_AREA_UNDER_WATER_DEEP
-NAV_MESH_NONE
 NCONF_dump_bio
 NCONF_dump_fp
 NCONF_get_number
@@ -31282,7 +31134,6 @@ Name of the bone this pose refers to
 Name: %s\n
 Name\t\t\t\t\tCount\t\tParticle Count\n
 NamedPaths
-Namespace
 Natural logarithm (base e)
 Nav mesh (v%d/%d) loaded with %u nav areas for %u hulls.\n
 Nav mesh Recast
@@ -31299,7 +31150,6 @@ NavAgentNumHulls
 NavAgentRadius_%d
 NavAgentShortHeightEnabled_%d
 NavAgentShortHeight_%d
-NavAttributeDynamicType
 NavCellHeight
 NavCellSize
 NavDetailSampleDistance
@@ -32061,7 +31911,6 @@ PEM_write
 PEM_write_bio
 PERCENT
 PF\n%d %d\n-1.000000\n
-PF_TYPE_CONTROL_POINT_IS_SET
 PGr]
 PHAG2
 PHRASE
@@ -32264,7 +32113,6 @@ Panel
 Panel '%s' (%s)
 Panel of type '%s' has duplicate definition for attribute '%s'.
 PanelID
-Panning Control Input Name
 Panorama Compiler Conditionals Fingerprint
 Panorama Dynamic Images Compiler Version
 Panorama Layout Compiler Version
@@ -32327,7 +32175,6 @@ Parent Node
 Parent Node Name
 Parent Reaction
 Parent Rotation
-Parent VData
 Parent and child are same body '%s'. This joint will be ignored.
 Parent body '%s' is controlled by child body '%s' in the skeleton hierarchy. Try right-click 'Flip Joint Maintaining Order...'
 Parent bone '%s' specified by define bone could not be found.
@@ -32547,9 +32394,6 @@ PlayerInputAnimMotorInstance
 Plays a Sequence on an actor/prop_dynamic and calls each of the trigger outflows when a corresponding anim event is fired.
 Plays a VCD and calls each of the trigger outflows when the corresponding trigger event fires.
 Plays a VCD that's specified externally
-Plays a vsnd container.
-Plays vsnds based on membership in a numbered index.
-Plays vsnds based on trigger parameter changes.
 Please add a mesh enclosing the player navigable space with toolslightmapres.vmat applied to it.\n
 Please make sure you deleted history on the mesh before exporting.\nThe mesh apparently has %d vertices, but %d blendWeights in field %s, while having %d weights per vertex\n
 Please move your current gameinfo.gi agent settings to a %s file and create a %s file with a 'default' entry containing all the nav nulls. Then add "NavHullsPreset" "default" to your gameinfo.gi file. For now we'll continue to load the agent settings but this path is deprecated ( antonioc@ ).
@@ -32616,7 +32460,6 @@ PostLoadFromFile
 PostMapLoadCommands
 PostProcessing
 PostProcessingEnabled
-PostProcessingLocalExposureParameters_t
 PosterSettings
 Posture
 Power scale for applying the supplemental ambient occlusion map.
@@ -32721,7 +32564,6 @@ Proc-Type: 4,
 Procedural
 Procedural Hit Reactions
 Proceed Elegantly
-Proceed Immediately
 Process Selector
 ProcessReceivedLightingPackets 
 ProcessReceivedLightingPackets failed.\n
@@ -32778,7 +32620,6 @@ PulseCycleMode_t::ORDERED
 PulseCycleMode_t::RANDOM
 PulseCycleMode_t::SHUFFLED
 PulseDocNode
-PulseDurationStringFormat_t
 PulseDynamicOutflowDef_t
 PulseEntFireMode_t::NAME
 PulseEvent_BrowseCombinedTypes_t
@@ -32934,7 +32775,6 @@ RE!r
 RE4\t
 READ_N
 REAL
-RENDER_BUFFER_DYNAMIC_ZERO_COPY
 REQUEST_CERTIFICATE
 REQUEST_VERIFY
 RESOURCECOMPILER_PERMISSIVE_PANORAMA_COMPILES
@@ -33075,9 +32915,7 @@ Random Int
 Random Material
 Random Offset
 Random Offset from %d (%g,%g,%g) - (%g,%g,%g) 
-Random Panner Control
 Random Rotation
-Random Sampler Container
 Random Sampler Voice Container Failed to load audio data for %s\n
 Random Sampler Voice Container referenced an audio asset (%s) that's too long (%d samples. Max supported: %d)\n
 Random Sampler Voice Container referenced too many audio assets (Referenced %d. Max supported: %d)\n
@@ -33492,8 +33330,6 @@ Rigid Constraint
 Rigid Edge Hinges
 Rigid Point Cloud must have at least 2 nodes. Non-trivial cluster would have 5+ nodes
 Rigid Weight to Bone
-RnCompoundDesc_t
-RnCompound_t
 RnSphere_t
 Rod node indices out of range, malformed node
 Room Size
@@ -33866,7 +33702,6 @@ Search Rule
 Search: All Events
 Search: Anim Events
 Search: State Events
-Second
 Second Enum
 Second Point
 Second Value
@@ -34055,7 +33890,6 @@ SetVarArrayElement1D V%d (%s) [ R%d ] <- R%d R%d
 SetVertexPositions
 SetVertexStreamDataFromPerFacePerVertexData
 SetWholeMeshOverrideMaterial
-Sets a control input every time it's instantiated
 Sets all elements in a vector (or float) stream to a single value
 Setting a bone to follow itself is likely not what you want!
 Setting a temporary variable is currently unsupported! Talk to Tom Bui.
@@ -34106,7 +33940,6 @@ Should baked lighting be generated for this object. If default is selected, the 
 Should have already been loaded via CVDataTypeManager::RegisterExtRefs
 Should it be considered an error if this bone isn't found to rename?
 Should the pin apply to the angles of this node. If disabled this node will only translate with the target node, its rotation will be unaffected by the rotation of node it is pinned to.
-Should we check at compile time that this is an optional mask?
 ShouldPunchThroughPolymorphism
 Show Clustered Probes Only
 Show Collision Model Enclosed Mesh Debug
@@ -34693,7 +34526,6 @@ Sync Exit tag to next gesture Entry tag
 Sync Group
 Sync Offset: %.2f
 SyncToFollowingGesture
-Synchronous - Wait for this node to fully complete before proceeding.
 SystemAttributes
 SystemFunction036
 T -> x: %.3f, y: %.3f, z: %.3f
@@ -34811,8 +34643,6 @@ Tag Cursor
 Tag Self When Complete
 Tag Value
 Tag missing from Tag condition on transition from "%s" to "%s" in state machine "%s"
-TagActionStatus
-TagStatus
 Tail Cycle
 Tail End of Rope
 Tail Frame
@@ -35031,7 +34861,6 @@ The animation from which to get a frame.
 The approximate number of vertices %i exceeded the maximum per deformable %i for %s mesh. New distance between vertices %.2f
 The array to loop over
 The array to read from
-The axis that you want to point at the target
 The case data is tested against the Input. If it matches, the corresponding Value will be returned as the Output.
 The client performs the evaluation of the node's logic itself.  No network synchronization is performed.  In order to work, all children of a ClientSimulate node are forced to also be ClientSimulate, regardless of what their actual setting is.  
 The color to assign to the specified attribute when at full intensity. During fade in and fade out the value will blend from black to this value. Note that when the color value is provided to a material expression it will be in linear color space.
@@ -35047,7 +34876,6 @@ The gameinfo.gi file is missing or incomplete.
 The index of the current element
 The input bones and pose samples for the Rbf.  The input are the driver bones.
 The joint we're constraining.
-The length of the IK chain
 The local hinge axis for this constraint.
 The map properties of this prefab's map specify a targetname of '%s', which is a classname! Please change to avoid using a classname.
 The maximum degrees for this hinge constraint.
@@ -35093,7 +34921,6 @@ The type of frame to get, first frame, last frame or a specific frame number.
 The value of this iteration of the loop
 The value to assign to the specified attribute when at full intensity. During fade in and fade out the value will blend from 0 to this value.
 The vertex attribute on the mesh which will indicate which vertices get a generated anchor bone.  It's expected to be a float value per-vertex.  A value of 0 leaves the vertex unaffected.  A non-zero value means an anchor bone will be generated for that vertex and the vertex will be skinned to that anchor bone.
-The weights from the tip of the chain to the base. 0 is the effector/tip of the chain weight, N is the base of the chain.
 ThenSimple rule generated in response '%s'.\n
 There are no child bones that map to cloth nodes. Chain is empty.
 These detail layers will NOT include the specified shapes.<br><br><em>(NOTE: The shapes will belong to all other non-exclusive detail layers, unless 'Included Detail Layers' is specified)</em>
@@ -35354,7 +35181,6 @@ Tried to load resource reference '%s' from a value without a resource reference 
 Tried to play random sampler before the grain table finished loading. Will start playing late.\n
 Tried to play tone %d on an additive synth container that only has tones 0-%d
 Tried to rename from '%s' to '%s', but '%s' already exists\n
-Trigger
 Trigger Mode
 Trigger Name
 Trigger an Entity I/O input on a particular entity or all entities of a given name.
@@ -35450,12 +35276,6 @@ UNICODE_ESC
 UNIV
 UNIVERSALSTRING
 UNKNOWN ENUM VALUE!
-UPSCALER_AMD_FSR2
-UPSCALER_AMD_FSR3
-UPSCALER_COUNT
-UPSCALER_INTEL_XESS
-UPSCALER_NONE
-UPSCALER_NVIDIA_DLSS
 URI:%s
 USERNOTICE
 UScale
@@ -35695,7 +35515,6 @@ UpdateNewEffects
 UpdateTerrainElements
 Updates the paramter of the active probe on the mix graph.
 Updating references to file: %s\n
-UpscalerType_t
 Usage: resourcecompiler <in resource file list>\n
 Use Actual Elapsed Time In State For Timed Events
 Use Best Size Match
@@ -35723,7 +35542,6 @@ Use RenderMesh List
 Use Start Value
 Use UV2 for Lightmap Charting
 Use VPhysics
-Use World Space Up
 Use a higher quality solver for this joint. Improves accuracy / stiffness but increases CPU cost.
 Use for faces
 UseBaseVertex
@@ -35780,7 +35598,6 @@ VALUES
 VCD File Name Param
 VCD: %s
 VCS3 %s Load Failure: Could not find DATA block\n
-VDATA
 VDATA_PROMOTE_AS_CHILD_NODE
 VDATA_PROMOTE_AS_COMPONENT_SET
 VDATA_PROMOTE_AS_DIRECT_CHILDREN
@@ -35835,7 +35652,6 @@ VMS_LOAD
 VMS_MERGER
 VMS_UNLOAD
 VMix Compiler Version
-VMix Source Audio Node
 VNOTIFY_DISABLE
 VNotify
 VNotify Abandoned (ActiveProtocolIsNewer)\n
@@ -36045,7 +35861,6 @@ Visual C++ CRT: Not enough memory to complete call to strerror.
 Visualize Values
 VisualizeWindSceneObject
 Vol:%d
-Volume Control Input Name
 Volume Matches Event Ramp
 Volume Random Minimum Scale - to randomize the amount of contents - 0 = none to full range
 Volume scale - to have more or less contents
@@ -36057,26 +35872,7 @@ Vortices
 Voxel volume (%i components)
 Vp>u
 Vrad3_Init_SearchPath
-Vsnd
-Vsnd 01
-Vsnd 02
-Vsnd 03
-Vsnd 04
-Vsnd 05
-Vsnd 06
-Vsnd 07
-Vsnd 08
-Vsnd 09
-Vsnd 10
-Vsnd 11
-Vsnd 12
-Vsnd 13
-Vsnd 14
-Vsnd 15
-Vsnd 16
 Vsnd Name
-Vsnd Radio Button
-Vsnd Trigger
 Vt_9
 V~~Vq
 W!Uf
@@ -36240,9 +36036,7 @@ Which solver to use for positioning the IK chain.  Required.
 While
 While Active
 While Current
-While False
 While Fully Blended
-While True
 Whilst we still can process lightmaps for this map, texel resolution of the lightmap will be sub-optimal.\n
 WhiteLevel
 WhiteOnBlack
@@ -37392,7 +37186,6 @@ animclip_is_public
 animclip_public_name
 animdoclib
 animflags
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
@@ -37694,7 +37487,9 @@ bV}TS
 bWantsFBCopyTexture
 b\fzUkm
 b]jY
+b_action_restart
 b_movement_code_driven
+b_movement_type_restart
 b_override_timing
 backFacingAngle
 back_solve_influence_threshold
@@ -39765,12 +39560,10 @@ dynlock
 e+3E
 eBeL
 eC z
-eCenteredCylinder
 eContent
 eContentType
 eFrameSelection
 eGenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!\n
-eGroundCylinder
 eLinearRootMotionBlendMode
 eN.d\tA
 eNULL
@@ -42242,7 +42035,6 @@ m_ArrayIndexPorts
 m_BadParseExprString
 m_BaseClasses
 m_BlackboardReference
-m_BoneMergeLinks
 m_CachedArgumentMetadata
 m_CachedEntityClass
 m_CachedOutputType
@@ -42259,7 +42051,6 @@ m_ClassVersions
 m_Classes
 m_Comparison
 m_Components
-m_Compound
 m_ConceptPriorities
 m_ContextMetadata
 m_ControlPointPositions
@@ -42277,6 +42068,8 @@ m_DefaultTargetSettings.m_Bone
 m_DefaultTargetSettings.m_TargetSource
 m_Deformers
 m_DeltaTransform
+m_DependentObservableBlackboardReferences
+m_DependentObservableVars
 m_DesiredOutputValueType
 m_DestinationSubType
 m_DrawCalls
@@ -42296,6 +42089,7 @@ m_Enum
 m_EnumArray
 m_EnumToFloatMap
 m_Enumerations
+m_EvaluateConnection
 m_ExitPortSyms
 m_ExpectedReturnType
 m_ExprPortVariables
@@ -42312,7 +42106,6 @@ m_GenericKeys
 m_HelpContextName
 m_Helpers
 m_HingeAxis
-m_Hulls
 m_IR
 m_ImageFileRelativePath
 m_In_Array
@@ -42328,7 +42121,6 @@ m_Inflow_Start
 m_InparamPort
 m_InputDependencies
 m_Inputs
-m_InstanceEmissiveData
 m_InstanceOrientations32
 m_Int
 m_IntArray
@@ -42350,9 +42142,7 @@ m_Luminaire
 m_MaterialOverrideTables
 m_MaterialTintTables
 m_MeshResourceName
-m_Meshes
 m_MetaData
-m_Metadata
 m_MirroredAncestorInparamName
 m_MirroredAncestorNodeID
 m_MixCommands
@@ -42400,7 +42190,6 @@ m_ScaledTangents
 m_SearchPath
 m_SearchableUserData
 m_SecondArg
-m_SequencePoint
 m_Sequences.Count() %d\n
 m_SingleParamType
 m_SoftParents
@@ -42411,7 +42200,6 @@ m_SourceNode
 m_Special
 m_SpecialDependencies
 m_SpecialInputDependencies
-m_Spheres
 m_StandardYieldingFlow_CancelAfter
 m_StandardYieldingFlow_CancelElegantly
 m_StandardYieldingFlow_CancelImmediately
@@ -42433,7 +42221,6 @@ m_StructArray
 m_SubassetDefinitions
 m_SubassetReferences
 m_Submixes
-m_TagStatus
 m_TagValue
 m_Tangents
 m_TargetGraph
@@ -42455,6 +42242,7 @@ m_VertexSet
 m_VisClusterMemberBits
 m_WeakReferenceList
 m_WhileInteracting
+m_actorName
 m_additionalOutputs
 m_additionalTemplateResponseLines
 m_allVars
@@ -42467,20 +42255,13 @@ m_attributes
 m_audioMeters
 m_automaticControlInputs
 m_bAddBoneToRenderMesh
-m_bAllowDefinitions
-m_bAllowLadders
 m_bAllowLayerOverride
-m_bAllowReferences
 m_bAnimRotation
-m_bAppliesToMainGraph
-m_bAppliesToVoiceGraph
 m_bApplyContextToWorld
 m_bBakedTwoSided
 m_bCachedShowActivatorByDefault
 m_bCachedShowCallerByDefault
 m_bCanBatchWithDynamicShaderConstants
-m_bCanFly
-m_bCanSwim
 m_bCancelExisting
 m_bChildCursorsShouldInherit
 m_bCondition
@@ -42493,9 +42274,6 @@ m_bDepleteBeforeRepeat
 m_bDevShader
 m_bDrawLast
 m_bDriveMeshesWithBacksolvedJointsOnly
-m_bEnableEndcap
-m_bEnableLoopcap
-m_bEnableVsnd
 m_bExplicitLength
 m_bFileExists
 m_bFirst
@@ -42507,25 +42285,17 @@ m_bGlobalsBDA
 m_bGoalDampedSpringIntegrator
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
-m_bHasLocalExposureParams
 m_bHasMassOverride
 m_bHasRigidRootBone
 m_bHasShaderProgram
 m_bHiddenAssetFlag
 m_bInterruptAndCancel
 m_bInterruptThenResume
-m_bIsAudioOutput
-m_bIsAudioTrack
-m_bIsControlInput
-m_bIsControlOutput
 m_bIsCordoning
 m_bIsFarFieldOnly
 m_bIsGameFile
 m_bIsLayerConstant
 m_bIsNotMatchedToMaterial
-m_bIsOptionalMask
-m_bIsSubgraph
-m_bIsSubgraphNode
 m_bIsTemplate
 m_bIsTwoSided
 m_bLast
@@ -42543,7 +42313,6 @@ m_bNodeSkip
 m_bNormalizeRange
 m_bNotCondition
 m_bOnlyShadow
-m_bOptimizeFlySpacePathfinds
 m_bOptional
 m_bOsOffset
 m_bParentJointRequiresAlignment
@@ -42560,8 +42329,6 @@ m_bShowCompressedIR
 m_bSpeakOnce
 m_bStaticCB
 m_bStopOnNonIdle
-m_bStringPullFlySpacePathfinds
-m_bSupportsTransitions
 m_bSuspenders
 m_bTwistPriority
 m_bUseCompressedNormalTangent
@@ -42573,7 +42340,6 @@ m_bUseSeparateEyeRamp
 m_bUseShadowFastPath
 m_bUsingLegacyDefault
 m_bVirtual
-m_bWorldSpaceOrientation
 m_baseMetrics
 m_bmaxs
 m_bmins
@@ -42582,12 +42348,8 @@ m_byteCodeData
 m_byteCodeIndex
 m_cachedParamValueType
 m_capabilities
-m_chainWeights
-m_channelIDs
-m_channelSettings
 m_colorSpace
 m_comboType
-m_compressedOffsets
 m_concept
 m_constantBufferBindingArray
 m_context
@@ -42614,27 +42376,9 @@ m_dynamicComboRuleArray
 m_dynamicComboVars
 m_dynamicComboVarsRef
 m_eRbfType
-m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
-m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder
 m_effectsPreview
-m_emissiveFormat
-m_enabledNodeIdx
-m_endEffectorBoneID
-m_endEffectorBoneName
-m_endEffectorForwardAxis
-m_endEffectorOffset
-m_endcapVsnd
 m_expr
-m_fBoostLocalContrast
-m_fEmissiveFactor
-m_fHighlightOffsetEV
 m_fMoveTo
-m_fShadowOffsetEV
-m_fSigma
-m_fWaterDensity
-m_fWaterDepthBlurRadius
-m_fWaterScale
-m_fadeOut
 m_fileExt
 m_flAntiShrink
 m_flBendStiffness
@@ -42649,13 +42393,10 @@ m_flEndcapAreaPercentage
 m_flEntryDistance
 m_flExtraStretch
 m_flFallbackEnvelope
-m_flFlyingTransitionTolerance
 m_flFollowWeight
 m_flFollowupDelay
 m_flGridCellSize
 m_flGroundFriction
-m_flGroundToWaterMaxHeight
-m_flGroundToWaterTransitionDistance
 m_flIdealHeight
 m_flInbaSwing
 m_flInbaTwist
@@ -42693,14 +42434,8 @@ m_flSlopeOutgoing
 m_flStrayRadiusInv
 m_flStrayRadiusRelaxationFactor
 m_flSurfaceBias
-m_flTagStartAnimTime
-m_flTransitionPenalty
 m_flUiStep
-m_flWaterToGroundMaxHeight
-m_flWaterToGroundTransitionDistance
 m_flWorldFriction
-m_floatChannelData
-m_floatChannelSets
 m_freeVariableValues
 m_graphDesc
 m_hCursorOnOtherGraph
@@ -42713,7 +42448,6 @@ m_horizontalRange
 m_iFeatureIndex
 m_iNode
 m_iValue
-m_iconName
 m_imageProcessorArray
 m_imageProcessorArray[%d] =\n
 m_imageProcessorArray[%d]:\n
@@ -42725,25 +42459,19 @@ m_indexAndRegisterOffsetStart
 m_influenceFlags
 m_input
 m_inputColorSpace
-m_inputNames
 m_inputProcessingCommand
 m_inputTextureArray
 m_inputTextureArray[%d] = %d\n
 m_inputTextureArray[%d] =\n
 m_inputTextureArray[%d]:\n
-m_inputTypeIds
 m_intDefault
 m_intMax
 m_intMin
 m_iszNPC
-m_kvContainer
-m_localExposureParams
-m_loopcapVsnd
 m_mFromClipSpace
 m_mToClipSpace
 m_matchExpr
 m_matchKey
-m_materialGroupToken
 m_materialsValues
 m_mipAlgorithm
 m_mipAlgorithm = NULL\n
@@ -42763,7 +42491,6 @@ m_nChannelCount
 m_nChannelDesc
 m_nChannelInfoIndex
 m_nChildCursors
-m_nChildNode
 m_nClassType
 m_nClusterIndex
 m_nComboIndexValue
@@ -42820,7 +42547,6 @@ m_nOutputDimensionReduce
 m_nOutputMaxDimension
 m_nOutputMinDimension
 m_nParentBoneNameHash
-m_nParentHash
 m_nProbeIndex
 m_nProbeIndexSource
 m_nProbeType
@@ -42838,7 +42564,6 @@ m_nRoleHint
 m_nRopeOptions
 m_nSelectedProbeType
 m_nSize
-m_nSrcDrawIndex
 m_nStackDepthWhenAdded
 m_nStandardYieldingFlow_CallMode
 m_nTypeSpecificBits
@@ -42846,16 +42571,9 @@ m_nUserData
 m_nUserVisibility
 m_nVariableBinding
 m_nVariableSourceMax
-m_nVertexEmissiveByteOffset
-m_nVertexEmissiveFormat
-m_nVertexEmissiveOffset
-m_nVertexEmissiveStreamOffset
-m_nVertexEmissiveStride
-m_nVertexEmissiveVB
 m_nYieldToken
 m_nameInputMeters
 m_nameInputs
-m_navHull
 m_notes
 m_odds
 m_offs
@@ -42866,9 +42584,7 @@ m_outputClearColor.y
 m_outputClearColor.z
 m_outputColorSpace
 m_outputFormat
-m_outputNames
 m_outputTextureFormat
-m_outputTypeIds
 m_outputTypeString
 m_pCompiledExpression
 m_pCompiledUIVisibilityExpression
@@ -42882,18 +42598,15 @@ m_pResponseFollowup
 m_pRoot
 m_pSourceString
 m_pVertexData
-m_panningControlInputName
 m_params.m_nNumBonesInChain < 8
 m_pathingCoeffs
 m_pathingEQ
 m_predelay.range
 m_predelay.start
-m_prefix
 m_programData
 m_programHashes
 m_qFixupRotation
 m_quantizedData
-m_randomPannerControls
 m_rbfParameters
 m_registerType
 m_reorderedBoneData.Count() == m_originalBoneData.Count()
@@ -42905,30 +42618,12 @@ m_responses
 m_reverbScales
 m_reverbTimes
 m_rgbColor
-m_rootBvhNodes
 m_ruleType
 m_sDynamicVCDFileParam
 m_sValue0
 m_selectedResponses
 m_selectedRules
-m_setID
 m_shaderComboSourceType
-m_slot1
-m_slot10
-m_slot11
-m_slot12
-m_slot13
-m_slot14
-m_slot15
-m_slot16
-m_slot2
-m_slot3
-m_slot4
-m_slot5
-m_slot6
-m_slot7
-m_slot8
-m_slot9
 m_sourceIndex
 m_sourceType
 m_sources
@@ -42947,7 +42642,6 @@ m_strEditorModel
 m_strNavMeshName
 m_strPhysicsMeshName
 m_strSuppressExpr
-m_strVectorStackParam
 m_stringArg
 m_stringArray
 m_suppressedTemplateResponseLines
@@ -42994,14 +42688,9 @@ m_vcdFilename
 m_vecAdditionalActorsData
 m_vecGameBlackboards
 m_vecNavLinkMovementNames
-m_vecPreviewWind
-m_vertexEmissiveStream
-m_vertexEmissiveStreams
 m_verticalRange
-m_volumeControlInputName
 m_vsInputSignatureArray
 m_vsInputSignatureIndexArray
-m_vsnd
 m_vsndInputs
 m_weapondelay.range
 m_weapondelay.start
@@ -43534,7 +43223,6 @@ nCoordinateSpace
 nCountMax
 nCountMin
 nDataSize > 0
-nDenominator
 nDetailObjectFadeLevel
 nDirectionSpace
 nDistributionMode
@@ -43550,7 +43238,6 @@ nLodLevel
 nMaxElements
 nNewParentIdx < nBoneIdx
 nNoHitResult
-nNumerator
 nOriginSpace
 nParentIdx != NM_INVALID_INDEX
 nPathSpace
@@ -47702,7 +47389,6 @@ zone
 zstd
 zxNIjo
 zz2K
-{ item_factory = 'IntervalTimer' }
 { uninitialized }
 {5`q@roz?
 {8w1

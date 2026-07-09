@@ -4,6 +4,7 @@
 //	"m_flWeight": 1.000000,
 //	"m_flStartFadeSize": 0.020000,
 //	"m_flEndFadeSize": 0.012500,
+//	"m_bWorldSpaceOrientation": false,
 //	"m_flOrientToSurface": 1.000000,
 //	"m_flMinSurfaceSlope": 0.000000,
 //	"m_flMaxSurfaceSlope": 180.000000,
@@ -50,6 +51,9 @@ class CDetailPropModel
 	// MPropertyFriendlyName = "Complete fade out size"
 	// MPropertyDescription = "Screen space size [ 0, 1 ] (where 1 is the whole screen) at which the model will be completely faded out. Anything smaller than this size will not be visible, anything larger will start fading in."
 	float32 m_flEndFadeSize;
+	// MPropertyFriendlyName = "Use World Space Up"
+	// MPropertyDescription = "If enabled, the up direction will be evaluated in world space, such that the object orientation does not affect the surface slope filtering. Additionally if Orient To Surface is 0, then and world space up is enabled, then the object orientation will not affect the rotation of detail model."
+	bool m_bWorldSpaceOrientation;
 	// MPropertyAttributeRange = "0.0 1.0"
 	// MPropertyDescription = "Value indicating if the model's up direction should be matched to the surface. Value should be in the [ 0, 1 ] range, where 0 means that the model up will be model (or object space) up and will ignore the surface direction, and 1 indicates that the model up will exactly match the surface normal."
 	float32 m_flOrientToSurface;

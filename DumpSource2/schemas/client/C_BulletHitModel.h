@@ -5,5 +5,5 @@ class C_BulletHitModel : public CBaseAnimGraph
 	CHandle< C_BaseEntity > m_hPlayerParent;
 	bool m_bIsHit;
 	float32 m_flTimeCreated;
-	Vector m_vecStartPos;
+	VectorWS m_vecStartPos;
 };

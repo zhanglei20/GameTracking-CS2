@@ -88,7 +88,6 @@
 @08NP
 @HPX`hvpA
 Adaptive border clusters (%.fs)\n
-AggregateVertexEmissiveStreamOnDiskData_t
 Aslow
 Assigned %d clusters in %.2f seconds\n
 AxialRays
@@ -259,15 +258,8 @@ los_errors
 lowprecisionuv
 lowprecisionuv1
 m_Format
-m_InstanceEmissiveData
 m_InstanceOrientations32
 m_VisClusterMemberBits
-m_emissiveFormat
-m_fEmissiveFactor
-m_nVertexEmissiveByteOffset
-m_nVertexEmissiveStreamOffset
-m_vertexEmissiveStream
-m_vertexEmissiveStreams
 matrix3x4_t
 medium
 oldvis
