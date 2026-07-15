@@ -340,7 +340,7 @@ panorama/images/map_icons/screenshots/1080p/de_eldorado_png.vmat_c CRC:00ad4de14
 panorama/images/map_icons/screenshots/1080p/de_eldorado_png.vtex_c CRC:0074e88011 size:3773508
 panorama/images/map_icons/screenshots/1080p/de_eldorado_png_png_b87d1bfa.vtex_c CRC:00a856519e size:2768388
 panorama/images/map_icons/screenshots/1080p/loadscreens.vdata_c CRC:00b9767c29 size:2481
-panorama/images/overheadmaps/de_eldorado_radar_tga.vtex_c CRC:0083234ec5 size:16779348
+panorama/images/overheadmaps/de_eldorado_radar_tga.vtex_c CRC:00b079c5f5 size:16779316
 panorama/images/overheadmaps/de_eldorado_radar_tga_dabd6972.vtex_c CRC:00f11de96c size:1400276
 panorama/images/overheadmaps/de_eldorado_v20_radar_tga.vtex_c CRC:00a630082f size:5594488
 postprocess/eldorado.vpost_c CRC:00b0916f5f size:133938

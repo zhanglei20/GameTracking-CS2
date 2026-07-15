@@ -101,9 +101,7 @@
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
  (08@HPX`j
- (08@HPXb`
  (08@HPZ
- (0X`hpz`
  (Dirty Animation)
  (Disabled on Server)
  (INVALID PSS PARAMETERS)\n
@@ -122,7 +120,6 @@
  -8CKV
  -> %s '%s'\n
  -> Could not find an item definition named '%s'\n
- .pMX
  0@NYa
  0Fa
  1CSc\t
@@ -2240,8 +2237,9 @@ $tH@T\tI
 ... and no start position
 ....................
 ..uR5&m
-.0aX
-.0zX
+.0DX
+.0QX
+.0qX
 .4bb
 .97yY
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
@@ -8468,6 +8466,7 @@ $tH@T\tI
 .P6AXAEBUSoundOpvarManagerSettableData_t@@PEAVCSoundOpvarSetPointStackCollection@@@Z
 .P6A_NAEBUCharacterDefn_t@CCStrike15ItemSchema@@@Z
 .PARTICLE_MESSAGE
+.PDX
 .PEAVCBodyComponent@@
 .PEAVCCSGameModeRules@@
 .PEAVCCSGameRules@@
@@ -8502,8 +8501,6 @@ $tH@T\tI
 .PlayerRankingInfo
 .PlayerRankingInfo"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
 .PlayerRankingInfo.PerMapRank
-.PyX
-.PzX
 .Q.Ol
 .ScoreLeaderboardData
 .ScoreLeaderboardData"S\n%CCSUsrMsg_PlayerDecalDigitalSignature
@@ -8793,9 +8790,8 @@ $tH@T\tI
 .dx_LV9
 .fatdem
 .lbN
+.pDX
 .pp@0
-.pyX
-.pzX
 .text$
 .vjs_c
 .vmap
@@ -8837,7 +8833,6 @@ $tH@T\tI
 02V8[
 05=k
 08@HR
-08@J`
 08bX
 09,h
 0;Q5[
@@ -9009,6 +9004,7 @@ $tH@T\tI
 3|rN>
 4)#bH
 4)m1
+4+$0YP
 474E4U4W4c4i4m4
 4<Td
 4@AA
@@ -9030,7 +9026,6 @@ $tH@T\tI
 4\re4h#
 4\vU44
 4f h
-4t\nGV
 4tpD
 4zj@1;IJ
 4|2;#GameUI_Retake_Card_LightEmUp,1,1,rifle1,grenade0|2;#GameUI_Retake_Card_Kobe,1,1,rifle1,grenade2|1;#GameUI_Retake_Card_1g,1,1,rifle1,grenade3|1;#GameUI_Retake_Card_DisappearingAct,1,1,rifle1,grenade1|1;#GameUI_Retake_Card_EyesOnTarget,1,1,weapon_aug
@@ -9074,16 +9069,20 @@ $tH@T\tI
 5s\nl
 5t?F
 5~EW
+6 gX
 6#6165676;6M6O6S6Y6a6k6m6
 6#RDP#
 6%vi
 6,2K
 6-zeZ
+60KX
+60hX
 62$|S)6f
 64CK\vH
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 6666666666666666m_Item
 67-s
+6@iX
 6H,N
 6O|T%
 6Qd=
@@ -9101,6 +9100,8 @@ $tH@T\tI
 6\n2GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
 6\n\nvariations
 6_wEX
+6`MX
+6`VX
 6afD
 6bX+
 6c&0|vvX
@@ -9334,7 +9335,6 @@ $tH@T\tI
 >?SetClassName@FunctionTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@@Z
 >JRZ`c4DLV_c*8AN\c
 >KS[ac5>IU^c+0<LZc
->PVX
 >Sem
 >WK6
 >\n9k_EGCItemCustomizationNotification_ClientRedeemFreeReward
@@ -9409,16 +9409,18 @@ $tH@T\tI
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
+@08ND
 @0pp
 @333
 @333?
 @33s@
-@6 zX
-@6@yX
+@6 qX
+@6PwX
 @?SlowGetAlignedPointerFromInternalField@Object@v8@@AEAAPEAXH@Z
 @Aff
 @BH]f
 @BoneSetup
+@HPX`hvp
 @MfKZ
 @Pgl
 @Pu\rm
@@ -9433,6 +9435,7 @@ $tH@T\tI
 @\n\vserver_type
 @dKb]
 @fff>fff>fff>fff>
+@ht0
 @i1V
 @m_bLeftHanded
 @m_zoomLevel
@@ -9456,7 +9459,6 @@ A<fP
 A>x8
 A@d0I
 AA Compromise
-AA:0
 AABB
 AABBDirection
 AACompromise
@@ -14540,7 +14542,6 @@ F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
 F\rH'4
-F`eX
 Face %s
 Face Actor
 Face Entity
@@ -18029,9 +18030,11 @@ P-224
 P-256
 P-384
 P-521
-P08@J`
+P08ND
 P1\t98"
 P5[1
+P6PXX
+P6PqX
 P@33
 PAGN_4
 PANIC
@@ -18330,7 +18333,6 @@ Permanent Identifier
 Permanently removes the entity from the world.<br>Very similar to the 'Kill' input.<br>Keywords: remove kill erase delete eliminate
 Permit Responses
 Permitted
-Pf0cX
 Phys.GlassBreakLg
 Phys.GlassBreakMd
 Phys.GlassBreakSm
@@ -18495,7 +18497,6 @@ Please specify 0 or 1 with the -stream Parameter\n
 Please wait for broadcast to start ...
 Pm8A?
 PmR"H?
-Pn0dX
 Point entity.
 PointTemplate
 Policy Qualifier CPS
@@ -22132,6 +22133,7 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
+\fp\vPh
 \ful2
 \fy&3Gl
 \l:ArR
@@ -22802,7 +22804,6 @@ Z~wl
 \ri1I
 \rjwB\t
 \roKK
-\rpYX
 \rrCj
 \rusercmd.proto"\\n
 \sG7tPD
@@ -22828,7 +22829,6 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNone\n
-\tPXX
 \tPrivate script scope:
 \tPublic script scope:
 \tRead %s\t%s%s%s,\tOffs 0x%04x\n
@@ -22885,11 +22885,11 @@ Z~wl
 ]MSd
 ][LK~lO
 ^.om5r
-^0QX
 ^DnJ
 ^DqPt
 ^J_spY
 ^Nij
+^PKX
 ^RB!r
 ^\n\ffloat_values
 ^`bbccX^`bccPW[_bc@IOW_c.7;ETc
@@ -22956,7 +22956,8 @@ _xU`u
 _}eOk
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`60}X
+`6@DX
+`6pxX
 `:zQF
 `D$daM-l
 `DZG
@@ -22985,6 +22986,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
+aBvD
 aD/x
 aDSS
 aECDH
@@ -25855,6 +25857,7 @@ fL\ri
 fLength
 fMaxLength
 fP;y
+fPAX
 fPitch
 fRoll
 fSpinDownTime
@@ -26787,7 +26790,6 @@ houseIdentifier
 hoverposeangles
 hoverposeflags
 hoverposeposition
-hpz`
 hr_H
 http request
 http$
@@ -26804,7 +26806,6 @@ h|gg
 i <= EVP_MAX_MD_SIZE
 i%YR
 i%|kB
-i0OP
 i2b_PVK_bio
 i2d ecpkparameters failure
 i2d_ASN1_SET
@@ -28702,6 +28703,7 @@ nKillPriority
 nMaxElements
 nMeshGroupMask
 nMode
+nPfX
 nPitch
 nPriority != NETWORK_FIELD_CHANGE_DEFAULT_PRIORITY
 nReason
@@ -29262,12 +29264,13 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0jP
+p08@H^D
 p250
 p2{l
 p4Z3
 p5Z3
 p5\nL,
+p60[X
 p618
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@0pqE5tsO?|1
@@ -29291,6 +29294,7 @@ pData->GetDataDescMap() == pTemplateDataMap
 pDefault
 pDescription
 pEntity
+pF@bX
 pFilter
 pG_*h
 pIp 
@@ -32229,7 +32233,6 @@ tournament_team_id
 tournament_teams
 tournamentinfo
 tpBasis
-tp\n0V
 tq}a
 trace
 traceHitboxes
@@ -33274,6 +33277,7 @@ zz2K
 }VKRZ
 }W70d
 }Xee+
+}\r0VX
 }gE3
 }n2W
 }}JSON_END\n

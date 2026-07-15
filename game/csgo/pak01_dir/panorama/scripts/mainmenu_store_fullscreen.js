@@ -196,7 +196,7 @@ var MainMenuStore;
             if (nTrack > 0) {
                 let nCount = MissionsAPI.GetSeasonalOperationRedeemableGoodsCount(nTrack);
                 for (let i = 0; i < nCount; i++) {
-                    if (nNewItemCount > 0) {
+                    if (nNewItemCount > 1) {
                         break;
                     }
                     let ShopEntry = {
