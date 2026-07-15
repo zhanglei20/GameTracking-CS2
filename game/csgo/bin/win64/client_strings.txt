@@ -11276,7 +11276,6 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
-2\vpd
 2^pV
 2a"l
 2bT~
@@ -11494,6 +11493,7 @@ $taser_charge
 8<pl
 8= zp
 8A6j
+8B z
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
 8GZS
@@ -11783,14 +11783,13 @@ $taser_charge
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N$
+@08Nd
 @0pp
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
 @C_Flashbang
 @DebugIndividualStyle
-@HPX`hv`
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11807,6 +11806,7 @@ $taser_charge
 @dKb]
 @fff>fff>fff>fff>
 @ffffff
+@ht0
 @i1V
 @icon_camera
 @icon_character
@@ -11831,6 +11831,7 @@ A9ur
 A<fP
 A>x8
 AA Compromise
+AA:P
 AAAA-
 AAAA-%.*s
 AABB
@@ -12062,6 +12063,7 @@ A\n\tweapon_id
 A\n\vdescriptors
 A\n\vdiagnostics
 A\rjW
+A\v:Px
 A_txt
 AbW_
 Abbey
@@ -17804,6 +17806,7 @@ Failed to find ui preference '%s'\n
 Failed to generate PNG buffer for %s.\n
 Failed to generate matchmaking data for quest %d (invalid gametype/map/mapgroup)\n
 Failed to generate new item: %s\n
+Failed to get details for subscribed file [%llu] @ %d (E:%d)\n
 Failed to get details for subscribed file\n
 Failed to get details for ugc map"%llu" with map (%d)\n
 Failed to get file size to process chunk file \n
@@ -20481,7 +20484,7 @@ LOG_MESSAGE
 LONG
 LONG_C2I
 LPVIndex
-LS&\nK8
+LS&\nKx
 LT[N
 LT_txt
 LXKQ
@@ -21870,7 +21873,7 @@ P-224
 P-256
 P-384
 P-521
-P08N$
+P08Nd
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
@@ -23049,7 +23052,6 @@ R\n\rincludekvtags
 R\r1>Vp
 R\tV_iswcntrl
 R\vp!y
-R\vpd
 R]Di
 Rad2 Deg
 Radar
@@ -27993,7 +27995,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
-aBv$
+aBvd
 aD/x
 aDSS
 aECDH
@@ -36253,8 +36255,9 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^$
-p0j0e
+p08@H^d
+p0jpe
+p2 z
 p250
 p2p_ping could not convert "%s" to a CPeerToPeerAddress\n
 p2p_ping could not ping "%s" because they are an unknown peer\n

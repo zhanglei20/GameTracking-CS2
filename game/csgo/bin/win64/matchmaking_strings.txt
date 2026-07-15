@@ -349,11 +349,10 @@ $tIJobs/Coroutines
 08@HR
 0\n,GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE
 0\n,k_ECommunityItemAttribute_CommunityItemAppID
-0v8,
 18446744073709551615
 1\n,k_EGCMsgGetGamePersonalDataCategoriesRequest
 2\n-k_EGCMsgGetGamePersonalDataCategoriesResponse
-2\vpt
+2\vp\5
 32:B\n
 3\n/k_ECommunityItemAttribute_ProfileModiferEnabled
 4Ccl_session
@@ -374,7 +373,8 @@ $tIJobs/Coroutines
 :upload
 <\n\ncategories
 >\n\tTypeCache
-@08N8,
+@HPX`hv@
+@HVP
 @\n\fSingleObject
 @workshop
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
@@ -711,7 +711,6 @@ OnlineSearch::StartSearchPass:\n
 Options/searchteamkey
 Options/server
 P08Jp
-P08N8,
 P\n\nattributes
 PartnerItemPaymentRule
 PlayerLocal::UpdateLeaderboardData for %s ...\n
@@ -721,6 +720,7 @@ PredictionDiffManager001
 QueueConnect
 RP for %s\n
 RSDSu
+R\fp\5
 Received %d search results.\n
 Received server_pre_shutdown notification - server is shutting down...\n
 Requested join data %.3f sec ago from xuid = %llx\n
@@ -879,7 +879,6 @@ X`hr
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 _remote_host
 _remote_xuidsrc
-aBv8,
 accepted
 access
 account_locked
@@ -1132,7 +1131,6 @@ options/sessionHostData
 options/sessionid
 options/sv_load_test
 outofdate_subscribed_caches
-p08@H^8,
 partner_accountbalance
 partner_accountflags
 partner_accountid
@@ -1149,7 +1147,6 @@ player_connect
 player_death
 player_disconnect
 players_humans
-pn8,
 practicesettings_
 prefix_item_name
 preview
@@ -1158,6 +1155,7 @@ public_inventory
 public_profile
 queue_position
 quickmatch
+r\vp\5
 random
 ratelimit
 ready

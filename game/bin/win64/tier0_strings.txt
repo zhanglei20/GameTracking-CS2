@@ -500,6 +500,7 @@ $xmm9
 -testscript
 -testscript requires -insecure
 -testscript_inline
+-testscript_inline requires -insecure
 .%0*llu
 .%x.%x.copy_tmp
 ............| 
@@ -792,6 +793,7 @@ $xmm9
 1wsHp
 2,THh
 28~v
+2\vp8
 2aNuE
 3 FB
 3+5<t
@@ -5305,6 +5307,8 @@ RPCRT4.dll
 RSDS&
 RUSSIAN
 RVfQp
+R\fp8
+R\vp8
 RaiseException
 RandomFloat
 RandomFloatExp
@@ -8470,6 +8474,7 @@ r9T6
 rNm>)
 rT+6ZNw
 r\tVr.>T
+r\vp8
 radius
 radius0
 radius1

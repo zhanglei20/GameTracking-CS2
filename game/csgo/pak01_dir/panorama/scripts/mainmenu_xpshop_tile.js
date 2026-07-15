@@ -1,6 +1,8 @@
 "use strict";
 /// <reference path="csgo.d.ts" />
 /// <reference path="common/licenseutil.ts" />
+/// <reference path="common/icon.ts" />
+/// <reference path="common/iteminfo.ts" />
 /// <reference path="common/store_items.ts" />
 /// <reference path="popups/popup_acknowledge_item.ts" />
 /// <reference path="xpshop_track.ts" />
@@ -11,7 +13,7 @@ var MainMenuXpShop;
     const _m_XpShopPanel = $.GetContextPanel();
     const m_passDefName = 'XpShopTicket1';
     const m_passId = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(InventoryAPI.GetItemDefinitionIndexFromDefinitionName(m_passDefName), 0);
-    let m_collageStarted = false;
+    let m_displayStarted = false;
     let m_nTrack;
     let m_scheduleHandleRepeatCollage = null;
     function _Init() {
@@ -30,9 +32,9 @@ var MainMenuXpShop;
             return;
         }
         _SetUpTracks();
-        if (!m_collageStarted) {
-            GetItemsForCollage();
-            m_collageStarted = true;
+        if (!m_displayStarted) {
+            _MakeStoreItemTiles(_GetItemsForDisplay());
+            m_displayStarted = true;
         }
         _m_XpShopPanel.SetHasClass('hidden', false);
     }
@@ -125,73 +127,58 @@ var MainMenuXpShop;
         }
     }
     let m_tilePreviouslyUpdated = null;
-    function GetItemsForCollage() {
+    function _GetItemsForDisplay() {
         let nCount = MissionsAPI.GetSeasonalOperationRedeemableGoodsCount(m_nTrack);
-        let aRedeemableGoods = [];
+        let aXpShopItems = [];
         let nNewItemCount = 0;
+        if (nCount < 1) {
+            return [];
+        }
         for (let i = 0; i < nCount; i++) {
-            let ShopEntry = {
-                item_name: "",
+            const ShopEntry = {
+                item_name: MissionsAPI.GetSeasonalOperationRedeemableGoodsSchema(m_nTrack, i, 'item_name'),
                 lootlist: [],
-                ui_show_new_tag: ""
+                ui_show_new_tag: MissionsAPI.GetSeasonalOperationRedeemableGoodsSchema(m_nTrack, i, 'ui_show_new_tag')
             };
-            ShopEntry.item_name = MissionsAPI.GetSeasonalOperationRedeemableGoodsSchema(m_nTrack, i, 'item_name');
-            ShopEntry.lootlist = _GetLootListForReward(ShopEntry.item_name);
-            ShopEntry.ui_show_new_tag = MissionsAPI.GetSeasonalOperationRedeemableGoodsSchema(m_nTrack, i, 'ui_show_new_tag');
-            aRedeemableGoods.push(ShopEntry);
-            if (XpShop.ShouldShowNewTagForShopEntry(ShopEntry)) {
-                nNewItemCount++;
-            }
+            const isNew = XpShop.ShouldShowNewTagForShopEntry(ShopEntry);
+            nNewItemCount = isNew ? nNewItemCount++ : nNewItemCount;
+            _GetLootListForReward(ShopEntry.item_name).forEach(itemId => {
+                aXpShopItems.push({
+                    item_name: InventoryAPI.GetItemName(itemId),
+                    itemId: itemId,
+                    ui_show_new_tag: isNew
+                });
+            });
         }
-        $.GetContextPanel().SetDialogVariableInt('new-count', nNewItemCount);
-        $.GetContextPanel().FindChildInLayoutFile('id-new-item-tag').SetHasClass('hide', nNewItemCount < 1);
-        let shuffledArray = aRedeemableGoods.sort((a, b) => 0.5 - Math.random());
-        let numImages = 16;
-        let longistDelay = numImages * 2;
-        let delay = 0;
-        let caseShown = false;
-        for (let i = 0; i < numImages; i++) {
-            let randomGood = shuffledArray[i % nCount];
-            if (randomGood.lootlist) {
-                let itemid = '';
-                if (randomGood.item_name.startsWith('crate_')) {
-                    if (!caseShown) {
-                        itemid = randomGood.lootlist[0];
-                        caseShown = true;
-                    }
-                    else {
-                        let good = shuffledArray[2];
-                        if (good.lootlist) {
-                            itemid = good.lootlist[randomIntFromInterval(0, randomGood.lootlist.length - 1)];
-                        }
-                    }
-                }
-                else {
-                    itemid = randomGood.lootlist[randomIntFromInterval(0, randomGood.lootlist.length - 1)];
-                }
-                if (!m_collageStarted) {
-                    $.GetContextPanel().FindChildInLayoutFile('collage-item-' + i).itemid = itemid;
-                }
-                else {
-                    $.Schedule((delay++) * 2, () => {
-                        let randomTile = $.GetContextPanel().FindChildInLayoutFile('collage-item-' + randomIntFromInterval(0, numImages - 1));
-                        if (randomTile !== m_tilePreviouslyUpdated) {
-                            m_tilePreviouslyUpdated = randomTile;
-                            randomTile.TriggerClass('update-tile');
-                            $.Schedule(1, () => { randomTile.itemid = itemid; });
-                        }
-                    });
-                }
-            }
+        const newItems = aXpShopItems.filter(item => item.ui_show_new_tag);
+        const oldItems = aXpShopItems.filter(item => !item.ui_show_new_tag);
+        const numItemsInCarousel = 12;
+        let aShuffleItems = [];
+        if (newItems.length > 0) {
+            const nMaxNewItems = Math.round(.6 * numItemsInCarousel);
+            const sampleSize = Math.min(newItems.length, nMaxNewItems);
+            aShuffleItems = _GetRandomSample([..._GetRandomSample(newItems, sampleSize), ..._GetRandomSample(oldItems, numItemsInCarousel - sampleSize)], numItemsInCarousel);
+            aShuffleItems.sort((a, b) => {
+                if (a.ui_show_new_tag && !b.ui_show_new_tag)
+                    return -1;
+                if (!a.ui_show_new_tag && b.ui_show_new_tag)
+                    return 1;
+                return 0;
+            });
         }
-        if (m_scheduleHandleRepeatCollage) {
-            $.CancelScheduled(m_scheduleHandleRepeatCollage);
-            m_scheduleHandleRepeatCollage = null;
+        else {
+            aShuffleItems = _GetRandomSample(oldItems, numItemsInCarousel);
         }
-        m_scheduleHandleRepeatCollage = $.Schedule(!m_collageStarted ? 0 : longistDelay, GetItemsForCollage);
+        return aShuffleItems;
     }
-    function randomIntFromInterval(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
+    function _GetRandomSample(items, sampleSize = 10) {
+        const size = Math.min(sampleSize, items.length);
+        const copy = [...items];
+        for (let i = 0; i < size; i++) {
+            const randomIndex = i + Math.floor(Math.random() * (copy.length - i));
+            [copy[i], copy[randomIndex]] = [copy[randomIndex], copy[i]];
+        }
+        return copy.slice(0, size);
     }
     function _GetLootListForReward(rewardId) {
         if (rewardId.startsWith('crate_')) {
@@ -213,6 +200,22 @@ var MainMenuXpShop;
         return itemsList;
     }
     ;
+    function _MakeStoreItemTiles(aItemsList) {
+        let elParent = $.GetContextPanel().FindChildInLayoutFile('id-mainmenu-xpshop-carousel');
+        for (let i = 0; i < aItemsList.length; i++) {
+            let elTile = elParent.FindChildInLayoutFile('id-mainmenu-xpshop-store-tile' + aItemsList[i].itemId);
+            if (!elTile) {
+                elTile = $.CreatePanel('Panel', elParent, 'id-mainmenu-xpshop-store-tile' + aItemsList[i].itemId);
+                elTile.BLoadLayoutSnippet('mainmenu-xpshop-itemtile');
+                elTile.FindChildInLayoutFile('id-item-image').itemid = aItemsList[i].itemId;
+                const setName = ItemInfo.GetSet(aItemsList[i].itemId);
+                const SetImage = elTile.FindChildInLayoutFile('id-item-set-image');
+                IconUtil.SetupFallbackItemSetIcon(SetImage, setName);
+                IconUtil.SetItemSetSVGImage(SetImage, setName);
+            }
+            elTile.SetHasClass('new', aItemsList[i].ui_show_new_tag);
+        }
+    }
     function _UpdateTile() {
         if (GameStateAPI.IsLocalPlayerPlayingMatch() || !_ShouldShow()) {
             return;
