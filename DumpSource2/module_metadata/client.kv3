@@ -473,7 +473,7 @@
 			name = "PrecacheSmokeVolumeAssets_client"
 			group = "GameSessionManifest_client"
 			source_file = "src/game/client/cstrike15/cs_smoke_volume_visual.cpp"
-			source_line = 25
+			source_line = 27
 			resources = 
 			[
 				resource_name:"materials/dev/smoke_volume.vmat",

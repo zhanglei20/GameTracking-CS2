@@ -16,11 +16,7 @@
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
  (08@HPX`j
- (08@HPXb0s
  (08@HPZ
- (08@HR0s
- (08@J0s
- (0X`hpz0s
  * Adding Bone :: < %10.4f %10.4f %10.4f >\n
  - (Additive)
  255
@@ -8804,8 +8800,6 @@ $modelname$_surface
 .webp
 /baked_bomb_damage.vdata
 08@HR
-08@J0s
-0Hy}
 0\r%0t
 1.0 - FractionalPart( A ) 
 1D Blend Has No Referenced Animations
@@ -8818,6 +8812,7 @@ $modelname$_surface
 2DBlend
 2DBlendEditor
 2DBlendFromAnimation
+2\vpX
 2_BONE_IK
 4\r54t
 5;FJ$,XEK4<
@@ -8825,6 +8820,7 @@ $modelname$_surface
 7T2,
 8"3hrf
 8&Kx
+8BP9
 969p
 9\tV_frexpf
 :: <NO TARGET BONE>
@@ -8850,8 +8846,9 @@ $modelname$_surface
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
+@HPX`hv`<
+@HVpJ
 @Integer overflow in %s
-@N08
 @m_nParticle
 @m_vNormal
 @unnamed_%d
@@ -9438,7 +9435,7 @@ CCITT Group 3
 CCITT Group 4
 CCITT RLE
 CCITT RLE/W
-CCS2BombDamageBaker::PopulateNodeDistancesFromBombsite(), C:\buildworker\csgo_rel_win64\build\src\game\modtools\csgo\mapcompile\mapcompile_modifier_bombdamage_bake.cpp:375
+CCS2BombDamageBaker::PopulateNodeDistancesFromBombsite(), C:\buildworker\csgo_rel_win64\build\src\game\modtools\csgo\mapcompile\mapcompile_modifier_bombdamage_bake.cpp:423
 CCW Limit
 CColorGradient
 CDualHullAgglomerator: Degenerate topology, %d faces removed\n
@@ -11970,13 +11967,11 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P08@J0s
-P20s
-P6 W
-P:0s
+P6P"
+P6`W
+P6p6
 PARENT
 PF\n%d %d\n-1.000000\n
-PHy}
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 PURH
@@ -12031,6 +12026,7 @@ Percentage Through Sync Event
 Perform a set of parametric mesh modification operations.
 Persistent
 Perturb vertex positions using sine waves.
+PfPX
 Pf\n%d %d\n-1.000000\n
 Phase
 Phase Condition
@@ -12273,6 +12269,7 @@ R8_UNORM
 R9G9B9E5_SHAREDEXP
 RBF Based Anim Constraint
 ROTATION
+R\fpX
 R\vp!y
 R_T5Y
 Radial Basis Function Type
@@ -13261,7 +13258,6 @@ XPosition
 XResolution
 XYZ, Luv
 X`hr
-Xf@I
 Y (Green / Left)
 Y - Left
 Y:%.2f P:%.2f R:%.2f
@@ -13325,7 +13321,6 @@ Zero input vector for info node!
 \t@@@@@@@@@@@@@@@@{N{N{N{N{N{N{N{N
 \tV_atan2d
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\vPHy}
 _CustomCommand
 _CustomCommand%d
 _InFrameSpine
@@ -13374,7 +13369,7 @@ _temp_tangent
 _volumeatlas_
 _wjb
 _zero
-`20s
+`6PT
 `\tV_logd
 absolute
 acceleration
@@ -14052,7 +14047,6 @@ group_id
 group_name
 grow_or_shrink
 guide_hair_count
-h+\nPLy
 hair_count
 halfEdges %d,%d faces %d,%d angle %.1f deg.
 halfgridsnap
@@ -14104,7 +14098,6 @@ hitgroupname
 hop_distance_range
 horizontal differencing 
 horizontal_pose_param_name
-hpz0s
 hullIvr-0.obj
 hullIvr-1.obj
 hullIvr-2.obj
@@ -14579,10 +14572,9 @@ overridesound
 overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
-p20s
-p6pR
+p2P9
+p6 H
 pEvent != nullptr
-pHy}
 pParentTrack != nullptr
 pPose != nullptr
 panorama_image
@@ -14721,6 +14713,7 @@ pseudo-
 pushout_strength
 quad_bend_tolerance
 quadratic
+r\vpX
 radius0_key
 radius1_key
 radius_key

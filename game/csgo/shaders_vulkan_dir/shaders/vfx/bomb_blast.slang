@@ -105,9 +105,15 @@ PS
 	float4 g_vBlastPosWSAndTime < Attribute("BlastPosWS"); UiType(VectorText); >;
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (5632 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (5612 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	static float4 _3;
+	
+	cbuffer _Globals_ : register(b0, space1)
+	{
+	    float4 _Globals_1_g_vBlastPosWSAndTime : packoffset(c0);
+	    float3 _Globals_1_g_vBlastPosSS : packoffset(c1);
+	};
 	
 	cbuffer PerViewConstantBuffer_t : register(b1, space1)
 	{
@@ -120,12 +126,6 @@ PS
 	    float PerViewConstantBuffer_t_1_m6 : packoffset(c23.y);
 	    float3 PerViewConstantBuffer_t_1_m7 : packoffset(c26);
 	    float3 PerViewConstantBuffer_t_1_m8 : packoffset(c28);
-	};
-	
-	cbuffer _Globals_ : register(b0, space1)
-	{
-	    float4 _Globals_1_g_vBlastPosWSAndTime : packoffset(c0);
-	    float3 _Globals_1_g_vBlastPosSS : packoffset(c1);
 	};
 	
 	cbuffer PerViewConstantBufferCsgo_t : register(b2, space1)
@@ -155,13 +155,13 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float _21646 = clamp(PerViewConstantBuffer_t_1_m1 - _Globals_1_g_vBlastPosWSAndTime.w, 0.0f, 10.0f);
+	    float _6552 = clamp(_Globals_1_g_vBlastPosWSAndTime.w, 0.0f, 10.0f);
 	    int2 _17364 = int2(gl_FragCoord.xy);
 	    int2 _11700 = int3(_17364, 0).xy;
 	    float3 _12686 = (-normalize(input_0.xyz)).xyz;
 	    float3 _13517 = (PerViewConstantBuffer_t_1_m7.xyz + (_12686 * (1.0f / (((clamp((g_tFramebufferDepth.Load(int3(_11700, 0)).x - PerViewConstantBuffer_t_1_m5) / (PerViewConstantBuffer_t_1_m6 - PerViewConstantBuffer_t_1_m5), 0.0f, 1.0f) * PerViewConstantBuffer_t_1_m0.z) + PerViewConstantBuffer_t_1_m0.w) * dot(PerViewConstantBuffer_t_1_m8.xyz, _12686))))).xyz;
 	    float _23870 = distance(PerViewConstantBuffer_t_1_m7, _13517);
-	    float _12116 = _21646 * 3000.0f;
+	    float _12116 = _6552 * 3000.0f;
 	    float _19346 = distance(_Globals_1_g_vBlastPosWSAndTime.xyz, _13517);
 	    float _3109 = smoothstep(_12116 + 40.0f, _12116, _19346) * pow(smoothstep(_12116 - 3000.0f, _12116, _19346), 2.0f);
 	    float2 _4328 = ((gl_FragCoord.xy - PerViewConstantBuffer_t_1_m3.xy).xy * PerViewConstantBuffer_t_1_m4.xy).xy * PerViewConstantBuffer_t_1_m2;
@@ -192,7 +192,8 @@ PS
 	    _20488.x = _22087.x;
 	    _20488.y = _22087.y;
 	    _20488.z = _22087.z;
-	    output_0 = float4(lerp(lerp(g_tFramebufferColor.Load(int3(_11700, 0)).xyz, _20488.xyz, ((_3109 * smoothstep(30.0f, 80.0f, _23870)) * smoothstep(6000.0f, 5000.0f, _23870)).xxx).xyz, float3(0.310000002384185791015625f, 0.300000011920928955078125f, 0.2899999916553497314453125f), (pow(smoothstep(_12116, _12116 - 5000.0f, distance(_Globals_1_g_vBlastPosWSAndTime.xyz, PerViewConstantBuffer_t_1_m7)), 2.0f) * 0.20000000298023223876953125f).xxx), smoothstep(10.0f, 3.0f, _21646));
+	    float3 _10910 = lerp(lerp(g_tFramebufferColor.Load(int3(_11700, 0)).xyz, _20488.xyz, ((_3109 * smoothstep(30.0f, 80.0f, _23870)) * smoothstep(6000.0f, 5000.0f, _23870)).xxx).xyz, float3(0.310000002384185791015625f, 0.300000011920928955078125f, 0.2899999916553497314453125f), (pow(smoothstep(_12116, _12116 - 5000.0f, distance(_Globals_1_g_vBlastPosWSAndTime.xyz, PerViewConstantBuffer_t_1_m7)), 2.0f) * 0.20000000298023223876953125f).xxx);
+	    output_0 = float4(_10910, smoothstep(10.0f, 3.0f, _6552));
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

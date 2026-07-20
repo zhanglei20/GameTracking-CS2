@@ -1946,9 +1946,9 @@ models/props_bldr/cliffs/sm_big_desert_rock_08.vmdl_c CRC:002c326bac size:256286
 models/props_bldr/cliffs/sm_stone_10a.vmdl_c CRC:00e93df7b3 size:65462
 models/props_bldr/cloth/bldr_church_curtain_1.vmdl_c CRC:008917f7c5 size:219742
 models/props_bldr/cloth/bldr_rugs_a.vmdl_c CRC:00834e6cf7 size:86229
-models/props_bldr/cloth/bldr_rugs_b.vmdl_c CRC:00cfa3fded size:24725
-models/props_bldr/cloth/bldr_rugs_c.vmdl_c CRC:003fc73688 size:25557
-models/props_bldr/cloth/bldr_rugs_d.vmdl_c CRC:008a31e358 size:82981
+models/props_bldr/cloth/bldr_rugs_b.vmdl_c CRC:000e3a3ca1 size:32261
+models/props_bldr/cloth/bldr_rugs_c.vmdl_c CRC:00c40eb7a6 size:29493
+models/props_bldr/cloth/bldr_rugs_d.vmdl_c CRC:005a248924 size:88325
 models/props_bldr/cloth/curtains_01a.vmdl_c CRC:00a08a9089 size:71162
 models/props_bldr/cloth/curtains_01b.vmdl_c CRC:0005935a9d size:58266
 models/props_bldr/cloth/curtains_01c.vmdl_c CRC:009e74a76d size:58230
@@ -2250,6 +2250,7 @@ models/props_bldr/ground/overlay_ground_04 (3).vmdl_c CRC:00e57afdb4 size:152055
 models/props_bldr/ground/overlay_ground_04 (4).vmdl_c CRC:00e57afdb4 size:152055
 models/props_bldr/ground/overlay_ground_04 (5).vmdl_c CRC:00370b7c25 size:150487
 models/props_bldr/ground/overlay_ground_04.vmdl_c CRC:0004ebc2df size:230713
+models/props_bldr/ground_bag/bldr_ground_bag_single_01.vmdl_c CRC:00cf61ea97 size:8690
 models/props_bldr/hay/haybale01.vmdl_c CRC:00c11add13 size:179441
 models/props_bldr/hay/haypile01.vmdl_c CRC:00f4e800ba size:7809
 models/props_bldr/hay/haypile02.vmdl_c CRC:004e9b528e size:23041
@@ -2582,7 +2583,7 @@ models/props_bldr/trims/set_d/trim_set_d_80.vmdl_c CRC:0043354257 size:23321
 models/props_bldr/trims/set_d/trim_set_d_96.vmdl_c CRC:000a44b73d size:27081
 models/props_bldr/trims/set_d/trim_set_d_edge_a.vmdl_c CRC:0088d71ad0 size:12222
 models/props_bldr/trims/set_d/trim_set_d_edge_b.vmdl_c CRC:00cefa9123 size:34014
-models/props_bldr/trims/set_d/trim_set_d_pillar_cup_32x32.vmdl_c CRC:005dc63f7d size:47171
+models/props_bldr/trims/set_d/trim_set_d_pillar_cup_32x32.vmdl_c CRC:0037d7a65c size:47267
 models/props_bldr/trims/set_d/trim_set_d_pillar_cup_36x26.vmdl_c CRC:0044512e7f size:46083
 models/props_bldr/trims/wall_deco/bldr_wall_deco_boards_16x128_01.vmdl_c CRC:005eda979f size:26972
 models/props_bldr/trims/wall_deco/bldr_wall_deco_boards_16x256_01.vmdl_c CRC:007e60870a size:44300

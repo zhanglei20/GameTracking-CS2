@@ -1832,6 +1832,7 @@
 #WinPanel_RoundWon
 #Workshop_Allow
 #Workshop_Deny
+#Workshop_Error
 #Workshop_annotation_error_file
 #Workshop_annotation_error_title
 #Workshop_annotation_ready
@@ -3104,7 +3105,6 @@ $taser_charge
 ,?IsUint32@Value@v8@@QEBA_NXZ
 ,ARu@y6
 ,I?Value@Number@v8@@QEBANXZ
-,N`4H
 ,Reason=
 ,Service for dealing with user-submitted logsB
 ,ShfPQ
@@ -11276,6 +11276,7 @@ $taser_charge
 2\n\nline_items
 2\n\vpreferences
 2\rlhp
+2\vpt
 2^pV
 2a"l
 2bT~
@@ -11493,9 +11494,9 @@ $taser_charge
 8<pl
 8= zp
 8A6j
-8B z
 8C:\buildworker\csgo_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 8Client ID for which to count the number of issued tokens"
+8F0\f
 8GZS
 8Gets the list of nicknames this user has for other users
 8If set, remove from ignore/block list instead of adding "\\n
@@ -11783,13 +11784,14 @@ $taser_charge
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08Nd
+@08N4
 @0pp
 @?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @BH]f
 @BoneSetup
 @C_Flashbang
 @DebugIndividualStyle
+@HPX`hvp
 @MfKZ
 @Pgl
 @Pu\rm
@@ -11806,7 +11808,6 @@ $taser_charge
 @dKb]
 @fff>fff>fff>fff>
 @ffffff
-@ht0
 @i1V
 @icon_camera
 @icon_character
@@ -11824,14 +11825,12 @@ A!A3A5A;A?AYAeAkAwA{A
 A%N_A
 A,uw"
 A.00h
-A1:"Desktop", 2:"Classic" 
 A2VPD
 A4Wn>
 A9ur
 A<fP
 A>x8
 AA Compromise
-AA:P
 AAAA-
 AAAA-%.*s
 AABB
@@ -11845,6 +11844,7 @@ AC2,h
 ACCESS_DESCRIPTION
 ACID
 ACPT_STATE
+ACSGOFrameUpdate
 ACTION_COMPLETED
 ACTIVATE_TYPE_DATAUPDATE_CREATION
 ACTIVATE_TYPE_INITIAL_CREATION
@@ -12063,7 +12063,6 @@ A\n\tweapon_id
 A\n\vdescriptors
 A\n\vdiagnostics
 A\rjW
-A\v:Px
 A_txt
 AbW_
 Abbey
@@ -12227,6 +12226,7 @@ All lootlists must have names.
 All-Star
 AllPlayersDuringFreezePeriodOrMatchEnd
 AllocGroundLink: failed to allocate groundlink_t.!!!\n
+Allow
 AllowOversized
 Alpha Test
 AlphaTest
@@ -12562,6 +12562,7 @@ BAscendantHasClass
 BAsyncSend
 BAsyncSendProto
 BC (default)
+BC_CSGameRules
 BCanSeeInParentScroll
 BCanvasReady
 BEOS_BIND_FUNC
@@ -12691,7 +12692,6 @@ BScrollParentToFitWhenFocused
 BSecureAllowed
 BSetProperty
 BSignedInToFriends
-BSource2ClientConfig001
 BT5f
 BTH)GTH)GTH)GTH)G
 BUCKSHOT
@@ -14137,8 +14137,8 @@ CMS_stream
 CMS_uncompress
 CMS_verify
 CMapBombDamageGameSystem
-CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:448
-CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:467
+CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:469
+CMapBombDamageRuntimeData::RenderVisualization(), C:\buildworker\csgo_rel_win64\build\src\game\shared\cstrike15\cs_bomb_damage.cpp:488
 CMapInfo_API::FireWinCondition
 CMissionTemplate::BMakeQuestDefSchema
 CModel::GetBoneIndexForHitboxForMesh
@@ -14752,7 +14752,6 @@ CSGOEndOfMatchSkillgroupPanel
 CSGOEndOfMatchVotingPanel
 CSGOEndOfMatchXpPanel
 CSGOFrameTimeSlider
-CSGOFrameUpdate
 CSGOGSyncHelpLinkActivated
 CSGOGameTimeLabel
 CSGOGenericButtonClicked
@@ -16596,6 +16595,7 @@ Data_Branch2yz
 Date Cell
 DbgTestEndOfMatch
 DcO/lcK+hSK
+Dcsgo_previewplayer
 Dd g4X3
 Deactivate
 Death
@@ -17036,7 +17036,6 @@ DropInputFocus
 DropdownMenuFocusChanged
 DroppedBomb
 DsBV
-Dsnd_report_c4_sounds
 Duck
 DumpScriptBindings()
 Dumping %i/%i largest CPhysAggregateData - %zu KB total\n
@@ -17808,6 +17807,7 @@ Failed to generate matchmaking data for quest %d (invalid gametype/map/mapgroup)
 Failed to generate new item: %s\n
 Failed to get details for subscribed file [%llu] @ %d (E:%d)\n
 Failed to get details for subscribed file\n
+Failed to get details for ugc map [%llu] (E:%d)\n
 Failed to get details for ugc map"%llu" with map (%d)\n
 Failed to get file size to process chunk file \n
 Failed to hit anything?
@@ -20484,7 +20484,7 @@ LOG_MESSAGE
 LONG
 LONG_C2I
 LPVIndex
-LS&\nKx
+LS&\nKH
 LT[N
 LT_txt
 LXKQ
@@ -21873,7 +21873,7 @@ P-224
 P-256
 P-384
 P-521
-P08Nd
+P08N4
 P1\t98"
 P2P Voice
 P2P ping to "%s". Timed out after %.2fms\n
@@ -23052,6 +23052,8 @@ R\n\rincludekvtags
 R\r1>Vp
 R\tV_iswcntrl
 R\vp!y
+R\vpl
+R\vpt
 R]Di
 Rad2 Deg
 Radar
@@ -27995,7 +27997,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
-aBvd
+aBv4
 aD/x
 aDSS
 aECDH
@@ -30238,7 +30240,6 @@ csgo_moveable
 csgo_opaque
 csgo_player_previewmodel
 csgo_previewmodel
-csgo_previewplayer
 csgo_team1
 csgo_team2
 csgo_thrown_grenade
@@ -30426,6 +30427,7 @@ d2i_TS_RESP
 d2i_X509_PKEY
 d35P
 d4\tp
+d4x#
 d7NSuLq2
 d=%-2d hl=%ld l=%4ld 
 d=%-2d hl=%ld l=inf  
@@ -31467,6 +31469,7 @@ error.vfx
 error:%08lX:%s:%s:%s
 error\n
 error_text
+errorcode
 errormsg
 es-419
 es_419
@@ -31523,6 +31526,7 @@ expected newline
 expected webvtt-cuetime-separator `-->'
 expected webvtt-timestamp
 expected whitespace
+expected-bomb-damage-active
 expected-bomb-damage-lethal
 expecting a boolean
 expecting a dh key
@@ -32855,8 +32859,8 @@ htmlescapednewlines
 http
 http request
 http://
-http://%s.steamcommunity.com/sharedfiles/filedetails/?id=%llu
-http://%s.steamcommunity.com/workshop/browse?appid=%u&requiredtags[]=CS2%s
+http://%s/sharedfiles/filedetails/?id=%llu
+http://%s/workshop/browse?appid=%u&requiredtags[]=CS2%s
 http://%ssteamcommunity.com/market/?viewMyItemListing#%u_%u_%llu
 http://%ssteamcommunity.com/profiles/%llu/inventory/?sellOnLoad=1#%u_%u_%llu
 http://api.twitch.tv/api/steam/%llu
@@ -36255,9 +36259,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^d
-p0jpe
-p2 z
+p08@H^4
+p0j@|
 p250
 p2p_ping could not convert "%s" to a CPeerToPeerAddress\n
 p2p_ping could not ping "%s" because they are an unknown peer\n
@@ -37209,8 +37212,10 @@ public key no rsa
 public key not rsa
 public-key:
 public.
+public.distance_multiplier
 public.distance_volume_mapping_curve
 public.other_prop_mass_input
+public.position
 public.source_soundscape
 publicExponent:
 publicKey
@@ -37321,6 +37326,7 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
+r\fpl
 r\n\vstart_index
 r\vDi
 r\vp!K
@@ -41043,6 +41049,7 @@ wrong type
 wrong version number
 wstats
 www.counter-strike.net
+www.steamcommunity.com
 wxT%
 w{Z0
 x axis
