@@ -111,14 +111,26 @@ PS
 	
 	
 	// SPIR-V reflection failed for backend HLSL:
-	// cbuffer ID 4023 (name: SmokeConstantBuffer_t), member index 6 (name: _m6) cannot be expressed with either HLSL packing layout or packoffset.
+	// cbuffer ID 4023 (name: SmokeConstantBuffer_t), member index 7 (name: _m7) cannot be expressed with either HLSL packing layout or packoffset.
 	//
 	// Re-attempting reflection with the GLSL backend.
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (12720 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
+	// SPIR-V source (13660 bytes), GLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	#version 460
+	#if defined(GL_EXT_control_flow_attributes)
+	#extension GL_EXT_control_flow_attributes : require
+	#define SPIRV_CROSS_FLATTEN [[flatten]]
+	#define SPIRV_CROSS_BRANCH [[dont_flatten]]
+	#define SPIRV_CROSS_UNROLL [[unroll]]
+	#define SPIRV_CROSS_LOOP [[dont_unroll]]
+	#else
+	#define SPIRV_CROSS_FLATTEN
+	#define SPIRV_CROSS_BRANCH
+	#define SPIRV_CROSS_UNROLL
+	#define SPIRV_CROSS_LOOP
+	#endif
 	#extension GL_EXT_samplerless_texture_functions : require
 	
 	struct _1570
@@ -138,19 +150,20 @@ PS
 	
 	float _4;
 	
-	struct _571
+	struct _1196
 	{
 	    _1570 _m0;
 	    _1570 _m1;
 	    _1570 _m2;
 	    _1570 _m3;
-	    _1696 _m4;
-	    _1822 _m5;
-	    float _m6;
-	    uint _m7;
+	    vec4 _m4;
+	    _1696 _m5;
+	    _1822 _m6;
+	    float _m7;
+	    uint _m8;
 	};
 	
-	layout(set = 1) uniform _571 SmokeConstantBuffer_t;
+	layout(set = 1) uniform _1196 SmokeConstantBuffer_t;
 	
 	struct _1340
 	{
@@ -340,7 +353,7 @@ PS
 	            {
 	                float _3914 = (_23381 + 0.300000011920928955078125) * clamp(SmokeConstantBuffer_t._m3._m0[_17017].z + (_3259 ? 0.5 : 0.0), 0.0, 1.0);
 	                uint _10837;
-	                vec3 _14747;
+	                vec3 _16210;
 	                if (_17133 == 0u)
 	                {
 	                    vec3 _13818 = (((_13139 * 20.0) - vec3(320.0)) + SmokeConstantBuffer_t._m2._m0[int(_17017)].xyz) + ((-input_1) * 5.0);
@@ -354,20 +367,21 @@ PS
 	                        _12683 = _13818;
 	                    }
 	                    _10837 = _17133 | (1u << (_17017 * 2u));
-	                    _14747 = _12683;
+	                    _16210 = _12683;
 	                }
 	                else
 	                {
 	                    _10837 = _17133;
-	                    _14747 = _17114;
+	                    _16210 = _17114;
 	                }
-	                int _12734 = int(_17017);
-	                float _11659;
-	                if (SmokeConstantBuffer_t._m7 > 0u)
+	                int _19776 = int(_17017);
+	                float _9716;
+	                vec3 _24878;
+	                if (SmokeConstantBuffer_t._m8 > 0u)
 	                {
 	                    vec3 _13140;
 	                    float _16326;
-	                    _13140 = _14747;
+	                    _13140 = _16210;
 	                    _16326 = 1.0;
 	                    uint _8896;
 	                    float _10913;
@@ -378,30 +392,30 @@ PS
 	                        bool _7956_ladder_break = false;
 	                        do
 	                        {
-	                            if (!(_17020 < SmokeConstantBuffer_t._m7))
+	                            if (!(_17020 < SmokeConstantBuffer_t._m8))
 	                            {
 	                                _7956_ladder_break = true;
 	                                break;
 	                            }
-	                            if ((uint(SmokeConstantBuffer_t._m5._m0[_17020 / 4u][_17020 % 4u]) & (1u << uint(SmokeConstantBuffer_t._m3._m0[_12734].w))) == 0u)
+	                            if ((uint(SmokeConstantBuffer_t._m6._m0[_17020 / 4u][_17020 % 4u]) & (1u << uint(SmokeConstantBuffer_t._m3._m0[_19776].w))) == 0u)
 	                            {
 	                                _10913 = _16326;
 	                                _17551 = _13140;
 	                                break;
 	                            }
-	                            float _10810 = SmokeConstantBuffer_t._m6 - SmokeConstantBuffer_t._m4._m0[_17020].w;
+	                            float _10810 = SmokeConstantBuffer_t._m7 - SmokeConstantBuffer_t._m5._m0[_17020].w;
 	                            float _13213;
 	                            vec3 _15671;
-	                            if (_10810 < (SmokeConstantBuffer_t._m3._m0[_12734].x - 0.4000000059604644775390625))
+	                            if (_10810 < (SmokeConstantBuffer_t._m3._m0[_19776].x - 0.4000000059604644775390625))
 	                            {
-	                                float _13668 = distance(_13140, SmokeConstantBuffer_t._m4._m0[_17020].xyz);
+	                                float _13668 = distance(_13140, SmokeConstantBuffer_t._m5._m0[_17020].xyz);
 	                                float _13212;
 	                                vec3 _15670;
 	                                if (_13668 < 250.0)
 	                                {
 	                                    float _16611 = pow(1.0 - smoothstep(0.0, 2.0, _10810), 128.0);
 	                                    _13212 = min(_16326, max(smoothstep(200.0, 240.0, _13668 + (_16611 * 250.0)) + pow(smoothstep(0.5, 5.0, _10810), 1.7999999523162841796875), 0.0));
-	                                    _15670 = mix(_13140, SmokeConstantBuffer_t._m4._m0[_17020].xyz, vec3(((1.0 - smoothstep(100.0, 250.0, _13668)) * step(_10810 * 1250.0, _13668)) * (1.0 - _16611)));
+	                                    _15670 = mix(_13140, SmokeConstantBuffer_t._m5._m0[_17020].xyz, vec3(((1.0 - smoothstep(100.0, 250.0, _13668)) * step(_10810 * 1250.0, _13668)) * (1.0 - _16611)));
 	                                }
 	                                else
 	                                {
@@ -430,21 +444,44 @@ PS
 	                        _17020 = _8896;
 	                        continue;
 	                    }
-	                    _11659 = mix(_3914 * 0.0199999995529651641845703125, _3914, _16326);
+	                    _9716 = mix(_3914 * 0.0199999995529651641845703125, _3914, _16326);
+	                    _24878 = _13140;
 	                }
 	                else
 	                {
-	                    _11659 = _3914;
+	                    _9716 = _3914;
+	                    _24878 = _16210;
+	                }
+	                float _11659;
+	                SPIRV_CROSS_BRANCH
+	                if (SmokeConstantBuffer_t._m4.w > 0.0)
+	                {
+	                    float _12501;
+	                    if (SmokeConstantBuffer_t._m4.w < SmokeConstantBuffer_t._m3._m0[_19776].x)
+	                    {
+	                        float _24666 = SmokeConstantBuffer_t._m4.w * 3000.0;
+	                        float _19000 = distance(_24878, SmokeConstantBuffer_t._m4.xyz);
+	                        _12501 = mix(_9716 * 0.0199999995529651641845703125, _9716, max(1.0 - (smoothstep(_24666, _24666 - 50.0, _19000) * smoothstep(_24666 - 20000.0, _24666 - 4000.0, _19000)), clamp((48.0 - distance(_16210, input_0 + (input_1 * _15132))) * 0.02083333395421504974365234375, 0.0, 1.0)));
+	                    }
+	                    else
+	                    {
+	                        _12501 = _9716;
+	                    }
+	                    _11659 = _12501;
+	                }
+	                else
+	                {
+	                    _11659 = _9716;
 	                }
 	                float _5523 = _13136 + mix(_11659, clamp((_11659 - 0.699999988079071044921875) * 10.0, 0.0, 1.0), SmokeConstantBuffer_t._m3._m0[_17017].z);
 	                if (_5523 > 1.0)
 	                {
 	                    _13143 = saturate(_5523);
-	                    _14880 = _14747;
+	                    _14880 = _16210;
 	                    _11056 = _10837;
 	                    break;
 	                }
-	                _13141 = _14747;
+	                _13141 = _16210;
 	                _16381 = _10837;
 	                _16479 = _5523;
 	            }

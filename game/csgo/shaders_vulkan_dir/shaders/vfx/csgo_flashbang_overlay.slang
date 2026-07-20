@@ -296,9 +296,7 @@ PS
 	CreateInputTexture2D(TextureColor, Srgb, 8, "", "_color", "Color/10", Default4(1, 1, 1, 0));
 	
 	// Source 2 Viewer - https://valveresourceformat.github.io
-	// SPIR-V source (2908 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
-	
-	static float4 _3;
+	// SPIR-V source (2480 bytes), HLSL reflection with SPIRV-Cross by KhronosGroup
 	
 	cbuffer PerViewConstantBuffer_t : register(b1, space1)
 	{
@@ -329,53 +327,29 @@ PS
 	
 	void MainPs_inner()
 	{
-	    float3 _15032 = _Globals_1_g_flFlashbangScreenshotAlpha.xxx.xyz;
+	    float _18570 = clamp(_Globals_1_g_flFlashbangScreenshotAlpha, 0.0f, 1.0f);
+	    float3 _11244 = _18570.xxx.xyz;
 	    float _21709;
-	    if (_Globals_1_g_flFlashbangScreenshotAlpha <= 0.040449999272823333740234375f)
+	    if (_18570 <= 0.040449999272823333740234375f)
 	    {
-	        _21709 = (_15032 * 0.077399380505084991455078125f.xxx).x;
+	        _21709 = (_11244 * 0.077399380505084991455078125f.xxx).x;
 	    }
 	    else
 	    {
-	        _21709 = pow((_15032 * 0.947867333889007568359375f.xxx) + 0.052132703363895416259765625f.xxx, 2.400000095367431640625f.xxx).x;
+	        _21709 = pow((_11244 * 0.947867333889007568359375f.xxx) + 0.052132703363895416259765625f.xxx, 2.400000095367431640625f.xxx).x;
 	    }
-	    float3 _15033 = _Globals_1_g_flFlashbangAlpha.xxx.xyz;
-	    float3 _10598 = _15033 * 0.077399380505084991455078125f.xxx;
-	    float3 _9358 = pow((_15033 * 0.947867333889007568359375f.xxx) + 0.052132703363895416259765625f.xxx, 2.400000095367431640625f.xxx);
-	    bool _17061 = _Globals_1_g_flFlashbangAlpha <= 0.040449999272823333740234375f;
-	    float _12885;
-	    if (_17061)
+	    float _18571 = clamp(_Globals_1_g_flFlashbangAlpha, 0.0f, 1.0f);
+	    float3 _11245 = _18571.xxx.xyz;
+	    float _20826;
+	    if (_18571 <= 0.040449999272823333740234375f)
 	    {
-	        _12885 = _10598.x;
+	        _20826 = (_11245 * 0.077399380505084991455078125f.xxx).x;
 	    }
 	    else
 	    {
-	        _12885 = _9358.x;
+	        _20826 = pow((_11245 * 0.947867333889007568359375f.xxx) + 0.052132703363895416259765625f.xxx, 2.400000095367431640625f.xxx).x;
 	    }
-	    float _12886;
-	    if (_17061)
-	    {
-	        _12886 = _10598.y;
-	    }
-	    else
-	    {
-	        _12886 = _9358.y;
-	    }
-	    float _19456;
-	    if (_17061)
-	    {
-	        _19456 = _10598.z;
-	    }
-	    else
-	    {
-	        _19456 = _9358.z;
-	    }
-	    float3 _13437 = (pow(clamp(g_tFlashbangFrame.SampleLevel(g_sPointClamp, (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy, 0.0f).xyz, 0.0f.xxx, 1.0f.xxx).xyz, 2.2000000476837158203125f.xxx).xyz * _21709).xyz * 4.0f;
-	    float4 _8673;
-	    _8673.x = _13437.x;
-	    _8673.y = _13437.y;
-	    _8673.z = _13437.z;
-	    output_0 = float4(_8673.xyz + float3(_12885, _12886, _19456), 0.0f);
+	    output_0 = float4(((pow(clamp(g_tFlashbangFrame.SampleLevel(g_sPointClamp, (gl_FragCoord.xy * PerViewConstantBuffer_t_1_m0.xy).xy, 0.0f).xyz, 0.0f.xxx, 1.0f.xxx).xyz, 2.2000000476837158203125f.xxx).xyz * _21709) * 4.0f) + _20826.xxx, 0.0f);
 	}
 	
 	PS_OUTPUT MainPs(PS_INPUT stage_input)

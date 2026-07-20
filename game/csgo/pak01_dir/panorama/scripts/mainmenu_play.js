@@ -854,7 +854,7 @@ var PlayMenu;
         for (let element of $('#GameModeSelectionRadios').Children()) {
             element.enabled = element.enabled && !isWorkshop && !_IsSearching() && LobbyAPI.BIsHost();
         }
-        $('#WorkshopVisitButton').visible = isWorkshop && !m_bPerfectWorld;
+        $('#WorkshopVisitButton').visible = isWorkshop;
         $('#WorkshopVisitButton').enabled = SteamOverlayAPI.IsEnabled();
         m_bDidShowActiveMapSelectionTab = true;
     }
